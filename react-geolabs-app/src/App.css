@@ -12,10 +12,10 @@ html, body {
 .container {
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Center contents vertically */
-  align-items: center; /* Center contents horizontally */
+  justify-content: center; 
+  align-items: center; 
   width: 100%;
-  height: 100vh; /* Take up full viewport height */
+  height: 100vh;
 }
 
 .header {
