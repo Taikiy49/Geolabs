@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './SearchFiles.css'; 
 
 const FileUpload = () => {
   const [selectedFiles, setSelectedFiles] = useState([]);
@@ -20,14 +21,16 @@ const FileUpload = () => {
       <input type="file" onChange={handleFileChange} multiple/>
       {selectedFiles.length > 0 && (
         <div>
+          <div className="search-files-container">
           {selectedFiles.map((file, index) => (
             <div key={index}>
-              <p>Selected file: {file.name}</p>
+              <p>{file.name}</p>
             </div>
           ))}
+          </div>
 
       
-          <button onClick={handleUpload}>Upload All</button>
+          <button onClick={handleUpload}>Upload</button>
         </div>
       )}
 

@@ -46,25 +46,28 @@ const App = () => {
       <SideMenu isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} />
       
       <div className="header">
-        <img src="/geolabs.png" className="geolab-image"></img>
+        <img src="/geolabs.png" className="geolab-image" alt="Geolabs Logo"></img>
         <h1>Geolabs Software</h1>
       </div>
 
       <div className="app_container">
         {step === 'start' && (
-          <div className="start-button">
+          <div className="start-button-container">
             <StartScreen onStart={handleStart} />
           </div>
         )}
         {step === 'select' && (
-          <SelectProgram
-            programs={programs}
-            onSelectProgram={handleSelectProgram}
-            onBack={handleBack}
-          />
+          <div className="select-program-container">
+            <SelectProgram
+              programs={programs}
+              onSelectProgram={handleSelectProgram}
+              onBack={handleBack}
+            />
+          </div>
         )}
-        {step === 'search_files' && <SearchFiles onBack={handleBack} />}
-
+        {step === 'search_files' && (
+          <SearchFiles onBack={handleBack} />
+        )}
       </div>
     </div>
   );
