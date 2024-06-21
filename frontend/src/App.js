@@ -1,26 +1,13 @@
 import React, { useState } from 'react';
-import axios from 'axios';
 import './App.css';
 import StartScreen from './StartScreen';
-import SelectProgram from './SelectProgram';
 import SearchFiles from './SearchFiles';
-import SideMenu from './SideMenu'; // Import SideMenu component
+import SideMenu from './SideMenu';
 
 const App = () => {
   const [step, setStep] = useState('start');
-  const [programs, setPrograms] = useState([]);
   const [selectedProgram, setSelectedProgram] = useState('');
   const [isMenuOpen, setMenuOpen] = useState(false);
-
-  const handleStart = async () => {
-    try {
-      const response = await axios.get('http://localhost:5000/programs');
-      setPrograms(response.data);
-      setStep('select');
-    } catch (error) {
-      console.error('There was an error fetching the programs!', error);
-    }
-  };
 
   const handleSelectProgram = (program) => {
     setSelectedProgram(program);
@@ -30,11 +17,7 @@ const App = () => {
   };
 
   const handleBack = () => {
-    if (step === 'search_files') {
-      setStep('select');
-    } else if (step === 'select') {
-      setStep('start');
-    }
+    setStep('start');
   };
 
   const toggleMenu = () => {
@@ -42,32 +25,21 @@ const App = () => {
   };
 
   return (
-    <div className="container">
-      <SideMenu isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} />
-      
-      <div className="header">
-        <img src="/geolabs.png" className="geolab-image" alt="Geolabs Logo"></img>
-        <h1>Geolabs Software</h1>
+    <div className="background">
+      <div className="top-container">
+        <SideMenu isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} />
       </div>
 
-      <div className="app_container">
-        {step === 'start' && (
-          <div className="start-button-container">
-            <StartScreen onStart={handleStart} />
-          </div>
-        )}
-        {step === 'select' && (
-          <div className="select-program-container">
-            <SelectProgram
-              programs={programs}
-              onSelectProgram={handleSelectProgram}
-              onBack={handleBack}
-            />
-          </div>
-        )}
-        {step === 'search_files' && (
-          <SearchFiles onBack={handleBack} />
-        )}
+      <div className="container">
+        <div className={`app_container ${isMenuOpen ? 'menu-open' : ''}`}>
+          {step === 'start' && (
+            <StartScreen onSelectProgram={handleSelectProgram} />
+          )}
+          {step === 'search_files' && (
+            <SearchFiles onBack={handleBack} />
+          )}
+        </div>
+        
       </div>
     </div>
   );

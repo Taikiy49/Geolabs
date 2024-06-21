@@ -1,23 +1,75 @@
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
-  }
-  
-input {
+.search-files-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.file-upload-section {
+  margin-bottom: 20px;
+}
+
+.search-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.input-field {
   margin-bottom: 10px;
   padding: 10px;
-  width: 200px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
-.fileUpload{
-  color: black;
+.submit-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
+.submit-button:hover {
+  background-color: #0056b3;
+}
 
-.search-files-container {
-  flex-direction: column;
-  max-height: 500px;
-  overflow-y: auto;
+.output-section {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.output-section h2 {
+  margin-bottom: 10px;
+}
+
+.output-section p {
+  padding: 10px;
+  background-color: #e9ecef;
+  border-radius: 5px;
+}
+
+.back-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.back-button:hover {
+  background-color: #5a6268;
 }

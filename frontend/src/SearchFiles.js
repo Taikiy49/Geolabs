@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import './SearchFiles.css'; // Import CSS
-import FileUpload from './FileUpload'
+import FileUpload from './FileUpload';
 
 const SearchFiles = ({ onBack }) => {
   const [input, setInput] = useState('');
@@ -18,7 +18,7 @@ const SearchFiles = ({ onBack }) => {
   };
 
   return (
-    <div className="container">
+    <div className="search-files-container">
       <div className="file-upload-section">
         <FileUpload />
       </div>
@@ -28,8 +28,9 @@ const SearchFiles = ({ onBack }) => {
           value={input}
           onChange={(e) => setInput(e.target.value)}
           placeholder="Enter query..."
+          className="input-field"
         />
-        <button type="submit">Submit</button>
+        <button type="submit" className="submit-button">Submit</button>
       </form>
 
       {output && (

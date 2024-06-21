@@ -1,29 +1,20 @@
 import React from 'react';
+import './SideMenu.css';
 
-
-const SideMenu = ({ isMenuOpen, toggleMenu }) => (
-    <div className={`side-menu ${isMenuOpen ? 'open' : ''}`}>
-        <div className="hamburger-background">
-            <img 
-                src="/hamburger-icon.png" 
-                className={`hamburger ${isMenuOpen ? 'no-background' : ''}`}
-                onClick={toggleMenu}
-                alt="Hamburger Icon"
-            />
+const SideMenu = ({ isMenuOpen, toggleMenu }) => {
+  return (
+        <div className={`side-menu ${isMenuOpen ? 'open' : ''}`}>
+        <div className="hamburger-background" onClick={toggleMenu}>
+            <img src="./hamburger-icon.png" alt="Menu" className="hamburger" />
         </div>
-
         <div className={`menu-container ${isMenuOpen ? 'open' : ''}`}>
-            <div className="menu"><p>About</p></div>
-            <div className="menu"><p>Help</p></div>
-            <div className="menu"><p>Contact</p></div>
-            <div className="menu"><p>TODO</p></div>
-            <div className="menu"><p>TODO</p></div>
-            <div className="menu"><p>TODO</p></div>
-            <div className="menu"><p>TODO</p></div>
-            <div className="menu"><p>TODO</p></div>
-            <div className="menu"><p>TODO</p></div>
+            <div className="menu">Services</div>
+            <div className="menu">About</div>
+            <div className="menu">Contact</div>
         </div>
-    </div>
-);
+        </div>
+        
+  );
+};
 
 export default SideMenu;
