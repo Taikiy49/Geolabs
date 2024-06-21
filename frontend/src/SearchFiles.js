@@ -27,18 +27,11 @@ const SearchFiles = ({ onBack }) => {
           type="text"
           value={input}
           onChange={(e) => setInput(e.target.value)}
-          placeholder="Enter query..."
+          placeholder="Start searching..."
           className="input-field"
         />
         <button type="submit" className="submit-button">Submit</button>
       </form>
-
-      {output && (
-        <div className="output-section">
-          <h2>Output from Python:</h2>
-          <p>{output}</p>
-        </div>
-      )}
       <button onClick={onBack} className="back-button">Back</button>
     </div>
   );

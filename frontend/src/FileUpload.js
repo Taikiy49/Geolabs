@@ -1,40 +1,44 @@
 import React, { useState } from 'react';
+import axios from 'axios';
 import './SearchFiles.css'; 
 
 const FileUpload = () => {
   const [selectedFiles, setSelectedFiles] = useState([]);
 
-  const handleFileChange = (event) => {
+  const handleFileChange = async (event) => {
     const files = Array.from(event.target.files);
-    setSelectedFiles((prevFiles) => [...prevFiles, ...files]);
-  };
+    setSelectedFiles(files);
 
-  const handleUpload = () => {
-    selectedFiles.forEach(file => {
-      console.log('File selected:', file);
+    const formData = new FormData();
+    files.forEach(file => {
+      formData.append('files', file);
     });
+
+    try {
+      const response = await axios.post('http://localhost:5000/upload', formData, {
+        headers: {
+          'Content-Type': 'multipart/form-data',
+        },
+      });
+      console.log('Files uploaded successfully', response.data);
+    } catch (error) {
+      console.error('There was an error uploading the files!', error);
+    }
   };
 
   return (
-    <>
-    
-      <input type="file" onChange={handleFileChange} multiple/>
+    <div className="file-upload-container">
+      <input type="file" onChange={handleFileChange} multiple />
       {selectedFiles.length > 0 && (
-        <div>
-          <div className="search-files-container">
+        <div className="file-list-container">
           {selectedFiles.map((file, index) => (
             <div key={index}>
               <p>{file.name}</p>
             </div>
           ))}
-          </div>
-
-      
-          <button onClick={handleUpload}>Upload</button>
         </div>
       )}
-
-    </>
+    </div>
   );
 };
 

@@ -4,12 +4,10 @@ import './StartScreen.css';
 const StartScreen = ({ onSelectProgram }) => {
   return (
     <div className="start-screen">
-      <header className="header">
-        <h1>Geolabs Software</h1>
-      </header>
+      <h1>Geolabs Software</h1>
       <div className="options-container">
         <div className="option-box" onClick={() => onSelectProgram('Search Files')}>
-          <h2>Query</h2>
+          <h2>Search</h2>
           <p>Read PDFs to find specific information</p>
         </div>
         <div className="option-box" onClick={() => onSelectProgram('Option 2')}>

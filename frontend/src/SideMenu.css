@@ -29,6 +29,7 @@
   }
   
   .menu {
+    background-color: rgba(71, 61, 139, 0.1);
     color: white;
     cursor: pointer;
     display: flex;
@@ -45,13 +46,14 @@
   
   .menu:hover {
     transform: scale(1.1);
+    background-color: rgba(100, 90, 170, 0.1);
   }
   
   .hamburger-background {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 60px;
+    height: 70px;
     cursor: pointer;
   }
   
@@ -61,7 +63,7 @@
   }
   
   .hamburger:hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
   }
   
 

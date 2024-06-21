@@ -10,6 +10,7 @@ const SideMenu = ({ isMenuOpen, toggleMenu }) => {
         <div className={`menu-container ${isMenuOpen ? 'open' : ''}`}>
             <div className="menu">Services</div>
             <div className="menu">About</div>
+            <div className="menu">Website</div>
             <div className="menu">Contact</div>
         </div>
         </div>
