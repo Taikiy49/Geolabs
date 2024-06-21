@@ -1,5 +1,6 @@
 .background{
-  background-image: url(background.jpg);
+  /* background-image: url(background.jpg); */
+  background-color: black;
   background-size: cover;
   background-position: center;
   height: 1000px;
