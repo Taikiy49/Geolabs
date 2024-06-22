@@ -1,16 +1,13 @@
 import React, { useState } from 'react';
 import './App.css';
-import StartScreen from './StartScreen';
+import ProgramSelection from './ProgramSelection';
 import SearchFiles from './SearchFiles';
-import SideMenu from './SideMenu';
 
 const App = () => {
   const [step, setStep] = useState('start');
   const [selectedProgram, setSelectedProgram] = useState('');
-  const [isMenuOpen, setMenuOpen] = useState(false);
 
   const handleSelectProgram = (program) => {
-    setSelectedProgram(program);
     if (program === 'Search Files') {
       setStep('search_files');
     }
@@ -20,28 +17,47 @@ const App = () => {
     setStep('start');
   };
 
-  const toggleMenu = () => {
-    setMenuOpen(!isMenuOpen);
-  };
 
   return (
-    <div className="background">
-      <div className="top-container">
-        <SideMenu isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} />
-      </div>
+    <div className="app-container">
 
-      <div className="container">
-        <div className={`app_container ${isMenuOpen ? 'menu-open' : ''}`}>
+      <header>
+        <div className='header-buttons'>
+          <button className='header-button'>About</button>
+          <button className='header-button'>About</button>
+          <button className='header-button'>About</button>
+        </div>
+
+        <div className='auth-buttons'>
+          <button className='auth-button'>Register</button>
+          <button className='auth-button'>Login</button>
+        </div>
+
+      </header>
+
+      <div className='title'>Geolabs, Inc.</div>
+      <div className='subtitle'>Private Software</div>
+      <div className='description'>Please connect to the VPN to use our software.</div>
+      <div className='description'>Use sofware at your own risk.</div>
+      <button className='info-button'>More Info</button>
+
+      <body>
+        <div className="container">
           {step === 'start' && (
-            <StartScreen onSelectProgram={handleSelectProgram} />
+            <ProgramSelection onSelectProgram={handleSelectProgram} />
           )}
           {step === 'search_files' && (
             <SearchFiles onBack={handleBack} />
           )}
         </div>
         
-      </div>
+        <img src='./construction.png' className='main-menu-img'></img>
+      </body>
+    
+      <footer><p>&copy; 2024 Geolabs, Inc. All rights reserved.</p></footer>
+
     </div>
+
   );
 };
 

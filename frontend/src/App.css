@@ -1,14 +1,87 @@
-.background{
-  /* background-image: url(background.jpg); */
+
+html {
   background-color: black;
-  background-size: cover;
-  background-position: center;
-  height: 1000px;
+  font-family: Arial, sans-serif;
+  color: white;
 }
 
-.container{
-  margin-top: 50px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+button {
+  cursor: pointer;
+  border: 2px solid white;
+  background-color: transparent;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
+
+button:hover {
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.6), 0 0 30px rgba(255, 255, 255, 0.4);
+  transform: scale(1.1);
+}
+
+button:active {
+  transform: scale(1.05);
+}
+
+
+.auth-buttons {
+  display: flex;
+  margin-left: auto; margin-right: 50px;
+}
+
+.header-buttons {
+  display: flex;
+  margin-right: auto; margin-left: 50px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+  gap: 500px;
+}
+
+button.header-button, button.auth-button {
+  margin-left: 20px;
+}
+
+.title{
+  font-size: 40px;
+  font-weight: bold;
+  margin-left: 50px; margin-top: 30px;
+}
+
+.subtitle{
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 70px; margin-top: 10px;
+}
+
+.description{
+  margin-top: 10px; margin-left: 70px;
+  font-size: 15px;
+}
+
+.info-button{
+  margin-top: 25px; margin-left: 70px; margin-bottom: 15px;
+}
+
+.main-menu-img{
+  width: 600px; height: 400px;
+  margin-left: auto; margin-top: 150px; margin-right: 120px;
+  border-radius: 10px;
+}
+
+body {
+  display: flex;
+}
+
+
+footer {
+  display: flex;
+  margin-top: auto; margin-left: 20px; margin-bottom: 20px;
+}
+
