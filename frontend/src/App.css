@@ -1,5 +1,5 @@
 html {
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   font-family: Arial, sans-serif;
   color: white;
 }
@@ -82,12 +82,12 @@ button.header-button, button.auth-button {
 }
 
 .info-button{
-  margin-top: 25px; margin-left: 70px; margin-bottom: 15px;
+  margin-top: 25px; margin-left: 70px; margin-bottom: 60px;
 }
 
 .main-menu-img-container{
   width: 0px;
-  margin-top: -850px;
+  margin-top: -850px; margin-left: 50px;
 }
 
 .main-menu-img1{
@@ -118,7 +118,7 @@ footer {
   background-color: rgba(0, 0, 255, 0.03);
   display: flex;
   width: 1000px;
-  margin-top: 30px; margin-left: 20px; margin-bottom: 20px;
+  margin-top: 60px; margin-left: 20px; margin-bottom: 20px;
   padding: 10px; padding-left: 50px; padding-right: 50px;
   border-radius: 20px;
 }
@@ -130,11 +130,11 @@ footer {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  width: 300px; padding: 10px; height: 700px;
+  width: 350px; padding: 10px; height: 700px;
   margin-right: auto; margin-left: 20px;
   overflow-y: auto;
   overflow-x: hidden;
-  border-radius: 20px;
+  border-radius: 50px;
   scrollbar-width: thin;
   scrollbar-color: rgba(0, 0, 255, 0.2) transparent;
 }
@@ -146,6 +146,7 @@ footer {
   align-items: center;
   width: 200px; height: 150px; padding: 20px;
   margin: 20px;
+  margin-left: 50px;
   border: 2px solid white;
   background-color: trasparent;
   border-radius: 20px;
