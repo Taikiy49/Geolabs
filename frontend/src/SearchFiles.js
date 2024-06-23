@@ -3,7 +3,7 @@ import axios from 'axios';
 import './SearchFiles.css'; // Import CSS
 import FileUpload from './FileUpload';
 
-const SearchFiles = ({ onBack }) => {
+const SearchFiles = () => {
   const [input, setInput] = useState('');
   const [output, setOutput] = useState('');
 
@@ -30,9 +30,8 @@ const SearchFiles = ({ onBack }) => {
           placeholder="Start searching..."
           className="input-field"
         />
-        <button type="submit" className="submit-button">Submit</button>
+        <button className="submit-button">Submit</button>
       </form>
-      <button onClick={onBack} className="back-button">Back</button>
     </div>
   );
 };
