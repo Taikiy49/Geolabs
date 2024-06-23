@@ -102,6 +102,11 @@ button.header-button, button.auth-button {
   border-radius: 50px;
 }
 
+.remove-link{
+  text-decoration: none;
+  color: inherit;
+}
+
 body {
   max-width: 1200px;
   margin: 0 auto;

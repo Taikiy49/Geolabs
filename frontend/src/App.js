@@ -38,22 +38,22 @@ const App = () => {
           <Route path="/" element={
             <div className="container">
               <div className="options-container">
-                <Link to="/search-files" className="option-box">
+                <Link to="/search-files" className="option-box remove-link">
                   <h2>Search</h2><p>Read PDFs to find specific information</p>
                 </Link>
-                <div className="option-box">
+                <div className="option-box remove-link">
                   <h2>Resume</h2><p>Build resume based on specific needs</p>
                 </div>
-                <div className="option-box">
+                <div className="option-box remove-link">
                   <h2>Section</h2><p>What will happen in this section...</p>
                 </div>
-                <div className="option-box">
+                <div className="option-box remove-link">
                   <h2>Section</h2><p>What will happen in this section...</p>
                 </div>
-                <div className="option-box">
+                <div className="option-box remove-link">
                   <h2>Section</h2><p>What will happen in this section...</p>
                 </div>
-                <div className="option-box">
+                <div className="option-box remove-link">
                   <h2>Section</h2><p>What will happen in this section...</p>
                 </div>
               </div>
