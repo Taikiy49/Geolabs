@@ -41,11 +41,27 @@ header {
   justify-content: space-between;
   align-items: center;
   margin-top: 30px;
-  gap: 500px;
+  gap: 400px;
+  max-width: 90%;
+  background-color: rgba(0, 0, 255, 0.05);
+  padding: 20px;
+  border-radius: 50px;
 }
 
 button.header-button, button.auth-button {
   margin-left: 20px;
+}
+
+.second-container{
+  margin: 0 auto;
+}
+
+.main-links{
+  margin-left: 550px;
+}
+
+.geolabs-link{
+  margin-left: 50px;
 }
 
 .title{
@@ -69,19 +85,31 @@ button.header-button, button.auth-button {
   margin-top: 25px; margin-left: 70px; margin-bottom: 15px;
 }
 
-.main-menu-img{
+.main-menu-img-container{
+  margin-top: -800px;
+}
+
+.main-menu-img1{
   width: 600px; height: 400px;
-  margin-left: auto; margin-top: 150px; margin-right: 120px;
-  border-radius: 10px;
+  margin-left: 450px; margin-right: 120px; margin-bottom: 30px;
+  border-radius: 50px;
+}
+
+.main-menu-img2{
+  width: 600px; height: 400px;
+  margin-left: 450px;
+  border-radius: 50px;
 }
 
 body {
-  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 
 footer {
   display: flex;
-  margin-top: auto; margin-left: 20px; margin-bottom: 20px;
+  margin-top: 50px; margin-left: 20px; margin-bottom: 20px;
 }
 

@@ -35,7 +35,15 @@ const App = () => {
 
       </header>
 
-      <div className='title'>Geolabs, Inc.</div>
+      <div className="second-container">
+        <div className='title'>Geolabs, Inc.</div>
+        <div className="main-links">
+          <button className='geolabs-link'></button> 
+          <button className='geolabs-link'></button>
+          <button className='geolabs-link'></button>
+        </div>
+      </div>
+
       <div className='subtitle'>Private Software</div>
       <div className='description'>Please connect to the VPN to use our software.</div>
       <div className='description'>Use sofware at your own risk.</div>
@@ -51,7 +59,11 @@ const App = () => {
           )}
         </div>
         
-        <img src='./construction.png' className='main-menu-img'></img>
+        <div className='main-menu-img-container'>
+          <img src='./construction.png' className='main-menu-img1'></img>
+          <img src='./construction2.png' className='main-menu-img2'></img>
+        </div>
+
       </body>
     
       <footer><p>&copy; 2024 Geolabs, Inc. All rights reserved.</p></footer>
