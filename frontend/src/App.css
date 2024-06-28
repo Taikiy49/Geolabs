@@ -24,7 +24,6 @@ button:active {
   transform: scale(1.05);
 }
 
-
 .auth-buttons {
   display: flex;
   margin-left: auto; margin-right: 50px;
@@ -136,7 +135,7 @@ footer {
   overflow-x: hidden;
   border-radius: 50px;
   scrollbar-width: thin;
-  scrollbar-color: rgba(0, 0, 255, 0.2) transparent;
+  scrollbar-color: rgba(255, 255, 255, 0.2) transparent;
 }
 
 .option-box {
