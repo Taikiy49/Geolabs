@@ -1,6 +1,7 @@
 import PyPDF4
 import os
 import sqlite3
+import json
 
 # Initialize the database
 def init_db():
@@ -52,3 +53,15 @@ if __name__ == "__main__":
     
     conn.commit()
     conn.close()
+
+    # Write all data to pdf_data.json
+    json_data = []
+    conn, cursor = init_db()
+    cursor.execute("SELECT filename, content FROM pdf_files")
+    rows = cursor.fetchall()
+    for row in rows:
+        json_data.append({"role": "user", "parts": [row[0]]})
+        json_data.append({"role": "model", "parts" : [row[1]]})
+    
+    with open("pdf_data_test.json", 'w', encoding='utf-8') as json_file:
+        json.dump(json_data, json_file, ensure_ascii=False, indent=4)
