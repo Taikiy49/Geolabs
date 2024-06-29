@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import './App.css';
-import SearchFiles from './SearchFiles';
+import SearchFiles from './UpdateDatabase';
 
 const App = () => {
   return (
@@ -38,14 +38,14 @@ const App = () => {
           <Route path="/" element={
             <div className="container">
               <div className="options-container">
-                <Link to="/search-files" className="option-box remove-link">
-                  <h2>Search</h2><p>Read PDFs to find specific information</p>
+                <Link to="/update-database" className="option-box remove-link">
+                  <h2>Update</h2><p>Updates the database in the system</p>
+                </Link>
+                <Link to="/search-database" className="option-box remove-link">
+                  <h2>Search</h2><p>Search through the database to find solutions</p>
                 </Link>
                 <div className="option-box remove-link">
-                  <h2>Resume</h2><p>Build resume based on specific needs</p>
-                </div>
-                <div className="option-box remove-link">
-                  <h2>Section</h2><p>What will happen in this section...</p>
+                  <h2>Section</h2><p>Build resume based on specific needs</p>
                 </div>
                 <div className="option-box remove-link">
                   <h2>Section</h2><p>What will happen in this section...</p>
@@ -63,7 +63,8 @@ const App = () => {
               </div>
             </div>
           } />
-          <Route path="/search-files" element={<SearchFiles />} />
+          <Route path="/update-database" element={<SearchFiles />} />
+          <Route path="/search-database" element={<SearchDatabase />} />
         </Routes>
 
         <footer><p>&copy; 2024 Geolabs, Inc. All rights reserved.</p></footer>

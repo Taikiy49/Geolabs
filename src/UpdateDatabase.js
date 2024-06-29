@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import './SearchFiles.css'; // Import CSS
+import './UpdateDatabase.css'; 
 import FileUpload from './FileUpload';
 
 const SearchFiles = () => {
