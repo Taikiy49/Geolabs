@@ -37,7 +37,8 @@ def return_pdf_list(directory):
 def save_to_db(cursor, filename, content):
     cursor.execute("INSERT OR IGNORE INTO pdf_files (filename, content) VALUES (?, ?)", (filename, content))
 
-if __name__ == "__main__":
+
+def run_program():
     directory = 'C:/Users/taiki/OneDrive/Desktop/Geolabs/test_files'  # for testing purposes
     pdf_list = return_pdf_list(directory)
     
@@ -54,7 +55,7 @@ if __name__ == "__main__":
     conn.commit()
     conn.close()
 
-    # Write all data to pdf_data.json
+
     json_data = []
     conn, cursor = init_db()
     cursor.execute("SELECT filename, content FROM pdf_files")

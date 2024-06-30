@@ -1,39 +1,45 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import './UpdateDatabase.css'; 
-import FileUpload from './FileUpload';
+import './DatabaseStyle.css'; 
 
-const SearchFiles = () => {
-  const [input, setInput] = useState('');
-  const [output, setOutput] = useState('');
+const UpdateDatabase = () => {
+  const [selectedFiles, setSelectedFiles] = useState([]);
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+  const handleFileChange = async (event) => {
+    const files = Array.from(event.target.files);
+    setSelectedFiles(files);
+
+    const formData = new FormData();
+    files.forEach(file => {
+      formData.append('files', file);
+    });
+
     try {
-      const response = await axios.post('http://localhost:5000/sendInput', { input });
-      setOutput(response.data);
+      const response = await axios.post('http://localhost:5000/update-database', formData, {
+        headers: {
+          'Content-Type': 'multipart/form-data',
+        },
+      });
+      console.log('Files uploaded successfully', response.data);
     } catch (error) {
-      console.error('There was an error sending the input to the server!', error);
+      console.error('There was an error uploading the files!', error);
     }
   };
 
   return (
-    <div className="search-files-container">
-      <div className="file-upload-section">
-        <FileUpload />
-      </div>
-      <form onSubmit={handleSubmit} className="search-form">
-        <input
-          type="text"
-          value={input}
-          onChange={(e) => setInput(e.target.value)}
-          placeholder="Start searching..."
-          className="input-field"
-        />
-        <button className="submit-button">Submit</button>
-      </form>
+    <div className="file-upload-container">
+      <input type="file" onChange={handleFileChange} multiple />
+      {selectedFiles.length > 0 && (
+        <div className="file-list-container">
+          {selectedFiles.map((file, index) => (
+            <div key={index}>
+              <p>{file.name}</p>
+            </div>
+          ))}
+        </div>
+      )}
     </div>
   );
 };
 
-export default SearchFiles;
+export default UpdateDatabase;

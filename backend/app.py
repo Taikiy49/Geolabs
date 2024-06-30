@@ -2,6 +2,7 @@ from flask import Flask, request, jsonify
 from flask_cors import CORS
 import os
 import tempfile
+from query import run_query
 
 
 app = Flask(__name__)
@@ -16,10 +17,11 @@ def get_programs():
 def send_input():
     data = request.get_json()
     user_input = data.get('input')
-    print(user_input)
+    run_query(user_input)
     return jsonify(f"Received input: {user_input}")
 
-@app.route('/upload', methods=['POST'])
+
+@app.route('/update-database', methods=['POST'])
 def upload_file():
     if 'files' not in request.files:
         return jsonify({'error': 'No files part in the request'}), 400
@@ -31,10 +33,8 @@ def upload_file():
         file_path = os.path.join(temp_dir, file.filename)
         file.save(file_path)
         file_paths.append(file_path)
-
-        with open(file_path, 'r') as f:
-            print('---', file_path, '---')
-            print(f.readlines())
+    
+    print(file_paths)
 
     return jsonify({'message': 'Files uploaded successfully', 'file_paths': file_paths}), 200
 

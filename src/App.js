@@ -1,7 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import './App.css';
-import SearchFiles from './UpdateDatabase';
+import SearchDatabase from './SearchDatabase';
+import UpdateDatabase from './UpdateDatabase';
 
 const App = () => {
   return (
@@ -63,7 +64,7 @@ const App = () => {
               </div>
             </div>
           } />
-          <Route path="/update-database" element={<SearchFiles />} />
+          <Route path="/update-database" element={<UpdateDatabase />} />
           <Route path="/search-database" element={<SearchDatabase />} />
         </Routes>
 
