@@ -67,8 +67,6 @@ const App = () => {
           <Route path="/update-database" element={<UpdateDatabase />} />
           <Route path="/search-database" element={<SearchDatabase />} />
         </Routes>
-
-        <footer><p>&copy; 2024 Geolabs, Inc. All rights reserved.</p></footer>
       </div>
     </Router>
   );

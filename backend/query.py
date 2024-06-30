@@ -28,10 +28,8 @@ def load_json_file(file_path):
 
 conversation_data = load_json_file('pdf_data_test.json')
 
-chat_session = model.start_chat(
-history=conversation_data
-)
+chat_session = model.start_chat(history=conversation_data)
 
 def run_query(prompt):
   response = chat_session.send_message("Given just all the information I fed you earlier" + prompt + "ONLY give me answers that are related to the topic and keep it short!")
-  print(response.text)
+  return response.text.strip()

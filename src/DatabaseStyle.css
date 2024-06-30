@@ -24,38 +24,58 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 20px; width: 1000px;
+  padding: 20px; width: 1000px; height: 500px;
   color: white;
   margin-top: -30px; margin-bottom: 50px;
-  
 }
 
 .search-form {
+  margin-top: auto; margin-bottom: -100px; margin-left: -120px; 
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 20px;
 }
 
-.input-field {
-  color: white;
-  margin-top: 30px;
+
+
+
+
+.chatbot-output-display {
+  max-width: 100%; 
+  overflow-wrap: break-word; 
+  word-wrap: break-word; 
+  white-space: pre-wrap;
+  font-size: 20px;
   padding: 10px;
-  width: 800px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+
+
+.input-field {
+  display: flex;
+  font-size: 15px;
+  width: 850px; height: 10px;
+  color: white;
+  padding: 15px;
+  margin-top: auto;
   border: 1px solid white;
   border-radius: 10px;
-  background-color: rgba(0, 0, 255, 0.03);
+  background-color: black;
 }
 
 .submit-button {
-  margin-top: 60px;
-  border: 1px solid white;
+  margin-top: -40px; margin-left: auto; margin-right: -110px;
+  font-size: 15px; font-weight: bold;
+  border: 1px solid white; border-radius: 50px;
   cursor: pointer;
 }
 
 .submit-button:hover {
   transform: scale(1.2);
 }
+
 
 .output-section {
   margin-top: 20px;
@@ -79,17 +99,3 @@
   margin: 0; 
 }
 
-.back-button {
-  margin-top: 20px;
-  padding: 10px 20px;
-  background-color: rgba(71, 61, 139, 0.1);
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.back-button:hover {
-  transform: scale(1.2);
-}
