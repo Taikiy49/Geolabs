@@ -6,47 +6,45 @@ import UpdateDatabase from './UpdateDatabase';
 
 const App = () => {
   const location = useLocation();
-
   const isMainPage = location.pathname === '/';
 
   return (
     <div className="app-container">
-      <header>
-        <div className='header-buttons'>
-          <button className='header-button'>About</button>
-          <button className='header-button'>Q&A</button>
-          <button className='header-button'>Contact</button>
-        </div>
-
-        <div className='auth-buttons'>
-          <button className='auth-button'>Register</button>
-          <button className='auth-button'>Login</button>
-        </div>
-      </header>
-
-      {isMainPage && (
-        <div className="second-container">
-          <div className='title'>Geolabs, Inc.</div>
-          <div className="main-links">
-            <img src='./discord.png' className='discord-button'></img>
-            <img src='./github.png' className='github-button'></img>
-            <img src='./microsoft.png' className='microsoft-button'></img>
+      <div className='top-container'>
+        <header>
+          <div className='header-buttons'>
+            <button className='header-button'>About</button>
+            <button className='header-button'>Q&A</button>
+            <button className='header-button'>Contact</button>
           </div>
-        </div>
-      )}
 
-      {isMainPage && (
-        <div className='main-text-container'>
-          <div className='subtitle'>Private Software</div>
-          <div className='description'>Please connect to the VPN to use our software.</div>
-          <div className='description'>Use software at your own risk.</div>
-          <button className='info-button'>More Info</button>
-          <div className='main-menu-img-container'>
-            <img src='./construction1.png' className='main-menu-img1' alt='Before Construction' />
-            <img src='./construction2.png' className='main-menu-img2' alt='After Construction' />
+          <div className='auth-buttons'>
+            <button className='auth-button'>Register</button>
+            <button className='auth-button'>Login</button>
           </div>
-        </div>
-      )}
+        </header>
+
+        {isMainPage && (
+          <div className="second-container">
+            <div className='title'>Geolabs, Inc.</div>
+            <div className="main-links">
+              <img src='./discord.png' className='discord-button' alt='Discord' />
+              <img src='./microsoft.png' className='microsoft-button' alt='Microsoft' />
+            </div>
+          </div>
+        )}
+
+        {isMainPage && (
+          <div className='main-menu-container'>
+            <div className='main-text-container'>
+              <div className='subtitle'>Private Software</div>
+              <div className='description'>Please connect to the VPN to use our software.</div>
+              <div className='description'>Use software at your own risk.</div>
+              <button className='info-button'>More Info</button>
+            </div>
+          </div>
+        )}
+      </div>
 
       <Routes>
         <Route path="/" element={
@@ -74,7 +72,12 @@ const App = () => {
         <Route path="/update-database" element={<UpdateDatabase />} />
         <Route path="/search-database" element={<SearchDatabase />} />
       </Routes>
+
+    <div className='bottom-container'>
     </div>
+    </div>
+
+   
   );
 };
 
