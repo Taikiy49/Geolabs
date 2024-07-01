@@ -1,11 +1,6 @@
 html {
-  background-image: url('background-img.jpg');
-  background-position: center;
-  background-repeat: no-repeat; 
-  background-size: cover; 
-
   font-family: Arial, sans-serif;
-  color: white;
+  color: black;
   max-width: 1080px;
   display: flex;
   flex-direction: column;
@@ -20,6 +15,7 @@ body {
   align-items: center;
 }
 
+
 header {
   display: flex;
   justify-content: space-between;
@@ -28,6 +24,7 @@ header {
   margin-top: 20px;
   padding: 20px;
   border-radius: 20px;
+  background-color: lightskyblue;
 }
 
 .header-buttons, .auth-buttons {
@@ -44,16 +41,13 @@ header {
 
 button {
   cursor: pointer;
-  background-color: white;
   padding: 10px 20px;
   font-size: 16px;
   border-radius: 5px;
-  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
   margin: 0 10px;
 }
 
 button:hover {
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.6), 0 0 30px rgba(255, 255, 255, 0.4);
   transform: scale(1.1);
 }
 
@@ -73,11 +67,6 @@ button:active {
   font-weight: bold;
   margin-top: 30px;
   padding: 20px;
-  text-shadow:
-    -1px -1px 0 #000,  
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-    1px 1px 0 #000;
 }
 
 
@@ -136,6 +125,7 @@ button:active {
 }
 
 .options-container {
+  background-color: lightskyblue;
   max-width: 1080px;
   display: flex;
   flex-direction: column;
