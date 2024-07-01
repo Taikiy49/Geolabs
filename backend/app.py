@@ -4,7 +4,6 @@ import os
 import tempfile
 from query import run_query
 
-
 app = Flask(__name__)
 CORS(app)
 
@@ -13,13 +12,12 @@ def get_programs():
     programs = ['Search Files', '...']
     return jsonify(programs)
 
-@app.route('/sendInput', methods=['POST'])
+@app.route('/search-database', methods=['POST'])
 def send_input():
     data = request.get_json()
     user_input = data.get('input')
-    run_query(user_input)
-    return jsonify(f"Received input: {user_input}")
-
+    output = run_query(user_input)
+    return jsonify(output)
 
 @app.route('/update-database', methods=['POST'])
 def upload_file():
@@ -33,8 +31,6 @@ def upload_file():
         file_path = os.path.join(temp_dir, file.filename)
         file.save(file_path)
         file_paths.append(file_path)
-    
-    print(file_paths)
 
     return jsonify({'message': 'Files uploaded successfully', 'file_paths': file_paths}), 200
 
