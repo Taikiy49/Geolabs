@@ -28,23 +28,24 @@ const App = () => {
         <div className="second-container">
           <div className='title'>Geolabs, Inc.</div>
           <div className="main-links">
-            <button className='geolabs-link'></button>
-            <button className='geolabs-link'></button>
-            <button className='geolabs-link'></button>
+            <img src='./discord.png' className='discord-button'></img>
+            <img src='./github.png' className='github-button'></img>
+            <img src='./microsoft.png' className='microsoft-button'></img>
           </div>
         </div>
       )}
 
       {isMainPage && (
-        <>
         <div className='main-text-container'>
           <div className='subtitle'>Private Software</div>
           <div className='description'>Please connect to the VPN to use our software.</div>
           <div className='description'>Use software at your own risk.</div>
           <button className='info-button'>More Info</button>
-          <img src='./construction1.png' className='main-menu-img1' alt='Before Construction'></img>
+          <div className='main-menu-img-container'>
+            <img src='./construction1.png' className='main-menu-img1' alt='Before Construction' />
+            <img src='./construction2.png' className='main-menu-img2' alt='After Construction' />
+          </div>
         </div>
-        </>
       )}
 
       <Routes>
@@ -53,36 +54,21 @@ const App = () => {
             <div className="options-container">
               <Link to="/update-database" className="option-box remove-link">
                 <h2>Update</h2>
+                <p>Updates the database in the system</p>
               </Link>
-              <p>Updates the database in the system</p>
-              <Link to="/search-database" className="option-box remove-link clip-right">
+              <Link to="/search-database" className="option-box remove-link">
                 <h2>Search</h2>
+                <p>Search through the database to find solutions</p>
               </Link>
-              <p className='clip-right'>Search through the database to find solutions</p>
-      
-              <div className="option-box remove-link">
+              <div className="option-box">
                 <h2>Resume</h2>
+                <p>Build resume based on specific needs</p>
               </div>
-              <p>Build resume based on specific needs</p>
-
-              <div className="option-box remove-link clip-right">
+              <div className="option-box">
                 <h2>Section</h2>
+                <p>What will happen in this section...</p>
               </div>
-              <p className='clip-right'>What will happen in this section...</p>
-              <div className="option-box remove-link">
-                <h2>Section</h2>
-              </div>
-              <p>What will happen in this section...</p>
-              <div className="option-box remove-link clip-right">
-                <h2>Section</h2>
-              </div>
-              <p className='clip-right'>What will happen in this section...</p>
             </div>
-
-            <div className='main-menu-img-container'>
-              <img src='./construction2.png' className='main-menu-img2' alt='After Construction'></img>
-              <img src='./construction1.png' className='main-menu-img1' alt='Before Construction'></img>
-            </div>vb
           </div>
         } />
         <Route path="/update-database" element={<UpdateDatabase />} />
