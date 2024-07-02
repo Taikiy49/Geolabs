@@ -27,17 +27,6 @@ html, body {
   position: relative;
 }
 
-.app-container::before, .app-container::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border: 2px solid rgba(255, 255, 255, 0.2); /* Cool border */
-  animation: border-animation 5s linear infinite;
-  z-index: 0; /* Ensure it's behind other content */
-}
 
 .app-header, .app-footer {
   width: 100%;
@@ -102,59 +91,8 @@ html, body {
   margin-bottom: -130px;
 }
 
-.hero-sections::before, .hero-sections::after {
-  content: ''; 
-  position: absolute;
-  width: auto;
-  height: auto;
-  background-color: white;
-  color: white; 
-  padding-top: 150px; padding-bottom: 150px; width: 5px;
-  font-size: 16px;
-  text-align: center;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-}
-.hero-sections::before {
-  top: 0;
-  left: -120px; 
-  animation: move-up-down-left 10s infinite linear alternate-reverse;
-}
-
-.hero-sections::after {
-  bottom: 0;
-  right: -120px;
-  margin-bottom: 50px;
-  animation: move-down-up-right 10s infinite linear alternate-reverse;
-}
-
-@keyframes move-up-down-left {
-  0% {
-    top: 0;
-  }
-  50% {
-    top: 550px;
-  }
-  100% {
-    top: 0;
-  }
-}
-
-@keyframes move-down-up-right {
-  0% {
-    bottom: 0;
-  }
-  50% {
-    bottom: 550px; /* Adjust this value to control the range of the animation */
-  }
-  100% {
-    bottom: 0;
-  }
-}
-
 .hero-section {
   text-align: center;
-  color: white;
   padding: 30px;
   border-radius: 20px;
   background-color: rgba(255, 255, 255, 0.1); 
@@ -190,7 +128,7 @@ html, body {
 }
 
 .hero-button {
-  background-color: rgba(255, 255, 255, 0.2); /* Transparent white */
+  background-color: rgba(255, 255, 255, 0.05);
   color: white;
   border: none;
   padding: 10px 20px;
@@ -198,26 +136,25 @@ html, body {
   border-radius: 20px;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Darker shadow */
-  border: 1px solid rgba(255, 255, 255, 0.3); /* Cool border */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .hero-button:hover {
-  background-color: rgba(255, 255, 255, 0.3); /* Slightly less transparent white */
-  transform: scale(1.05);
+  background-color: rgba(255, 255, 255, 0.3); 
   opacity: 1;
 }
 
 .footer-content {
   display: flex;
-  gap: 20px;
 }
 
 .footer-icon {
+  margin-left: 50px;
   width: 40px;
   height: 40px;
   cursor: pointer;
-  transition: opacity 0.3s ease, transform 0.3s ease;
+  border-radius: 100%;  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .footer-icon:hover {
@@ -225,3 +162,23 @@ html, body {
 }
 
 
+
+
+.stars {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200"><circle cx="10" cy="10" r="2" fill="white"/><circle cx="50" cy="50" r="2" fill="white"/><circle cx="100" cy="100" r="2" fill="white"/><circle cx="150" cy="150" r="2" fill="white"/><circle cx="200" cy="200" r="2" fill="white"/></svg>') repeat;
+  z-index: 0;
+  opacity: 0.6;
+  animation: moveStars 20s linear infinite;
+}
+
+@keyframes moveStars {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 200px 200px;
+  }
+}

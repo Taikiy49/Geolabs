@@ -12,6 +12,7 @@ const App = () => {
 
   return (
     <div className="app-container">
+      <div className='stars'></div>
       <header className="app-header">
         <div className="logo" onClick={() => navigate('/')}>Geolabs, Inc.</div>
         <nav className="nav-buttons">
