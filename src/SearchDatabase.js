@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import './DatabaseStyle.css'; 
+import './SearchDatabase.css'; 
 
 const SearchDatabase = () => {
   const [input, setInput] = useState('');
@@ -9,7 +9,7 @@ const SearchDatabase = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:5000/search-database', { input });
+      const response = await axios.post('http://localhost:5000/program-selection/search-database', { input });
       setOutput(response.data.replace(/\*/g, ''));
     } catch (error) {
       console.error('There was an error sending the input to the server!', error);

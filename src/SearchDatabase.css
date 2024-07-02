@@ -1,0 +1,82 @@
+.search-files-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.9) 0%, rgba(50, 50, 50, 0.9) 100%);
+    padding: 40px 20px;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .chatbot-output-container {
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 20px;
+  }
+  
+  .chatbot-output-display {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    font-size: 16px;
+    white-space: pre-wrap;
+  }
+  
+  .search-form {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .input-field {
+    flex: 1;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+  }
+  
+  .input-field::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .input-field:focus {
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  
+  .submit-button {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  
+  .submit-button:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    transform: scale(1.05);
+  }
+  
+  .send-button-image {
+    width: 20px;
+    height: 20px;
+  }
+  

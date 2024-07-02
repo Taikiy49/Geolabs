@@ -1,167 +1,227 @@
+/* General Styles */
 html, body {
   margin: 0;
   padding: 0;
   width: 100%;
   height: 100%;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #000000; /* Black background */
+  color: #ffffff; /* White text */
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   box-sizing: border-box;
 }
 
-.top-container{
-  background-image: url('background.jpeg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 800px;
+#root {
+  width: 100%;
+  height: 100%;
 }
 
-header {
-  width: 100vw;
+.app-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.app-container::before, .app-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 2px solid rgba(255, 255, 255, 0.2); /* Cool border */
+  animation: border-animation 5s linear infinite;
+  z-index: 0; /* Ensure it's behind other content */
+}
+
+.app-header, .app-footer {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.05); /* Transparent white */
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  color: white;
   box-sizing: border-box;
+  border: 2px solid rgba(255, 255, 255, 0.2); /* Cool border */
+  backdrop-filter: blur(5px);
+  z-index: 2;
 }
 
-.header-buttons, .auth-buttons {
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff; /* White text */
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Futuristic text shadow */
+}
+
+.nav-buttons, .auth-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-button, .auth-button {
+  background-color: rgba(255, 255, 255, 0.2); /* Transparent white */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+  border: 1px solid rgba(255, 255, 255, 0.3); 
+}
+
+.nav-button:hover, .auth-button:hover {
+  background-color: rgba(255, 255, 255, 0.3); 
+  transform: scale(1.05);
+  opacity: 1;
+}
+
+.main-content {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.9) 0%, rgba(50, 50, 50, 0.9) 100%); /* Dark gradient with transparency */
+  padding: 40px 20px;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1; 
+}
+
+.hero-sections {
+  position: relative;
+  margin-bottom: -130px;
+}
+
+.hero-sections::before, .hero-sections::after {
+  content: ''; 
+  position: absolute;
+  width: auto;
+  height: auto;
+  background-color: white;
+  color: white; 
+  padding-top: 150px; padding-bottom: 150px; width: 5px;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+.hero-sections::before {
+  top: 0;
+  left: -120px; 
+  animation: move-up-down-left 10s infinite linear alternate-reverse;
+}
+
+.hero-sections::after {
+  bottom: 0;
+  right: -120px;
+  margin-bottom: 50px;
+  animation: move-down-up-right 10s infinite linear alternate-reverse;
+}
+
+@keyframes move-up-down-left {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: 550px;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+@keyframes move-down-up-right {
+  0% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 550px; /* Adjust this value to control the range of the animation */
+  }
+  100% {
+    bottom: 0;
+  }
+}
+
+.hero-section {
+  text-align: center;
+  color: white;
+  padding: 30px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.1); 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); 
+  backdrop-filter: blur(10px); 
+  border: 2px solid rgba(255, 255, 255, 0.2); 
+  animation: pulse 5s infinite;
+  margin-bottom: 50px;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.hero-title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.3); /* Futuristic text shadow */
+}
+
+.hero-description {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.hero-button {
+  background-color: rgba(255, 255, 255, 0.2); /* Transparent white */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Darker shadow */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Cool border */
+}
+
+.hero-button:hover {
+  background-color: rgba(255, 255, 255, 0.3); /* Slightly less transparent white */
+  transform: scale(1.05);
+  opacity: 1;
+}
+
+.footer-content {
   display: flex;
   gap: 20px;
 }
 
-button {
-  background-color: transparent;
-  opacity: 0.7;
+.footer-icon {
+  width: 40px;
+  height: 40px;
   cursor: pointer;
-  padding: 10px 20px;
-  font-size: 16px;
-  font-weight: bold;
-  border-radius: 5px;
-  border: none;
-  color: white;
-  border: 1px solid white;
-  transition: all 0.3s ease;
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
-button:hover {
+.footer-icon:hover {
   transform: scale(1.1);
-  opacity: 1;
-}
-
-.discord-button, .microsoft-button {
-  width: 60px;
-  cursor: pointer;
-  opacity: 0.6; 
-  transition: opacity 0.3s ease; 
-}
-
-.discord-button:hover, .microsoft-button:hover {
-  transform: scale(1.1);
-  opacity: 1;
-}
-
-.second-container {
-  display: flex;
-  text-align: center;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.title {
-  opacity: 0.8;
-  display: flex;
-  margin-left: 50px; margin-top: 30px;
-  font-size: 30px;
-  font-weight: bold;
-  color: white;
-}
-
-.main-links {
-  margin-right: 40px; margin-top: 60px;
-  display: flex;
-  flex-direction: column;
-  margin-left: auto;
-  gap: 20px; 
-}
-
-.main-text-container {
-  opacity: 0.8;
-  color: white;
-  padding: 40px;
-  text-align: left;
-  width: 100%;
-  margin-top: -120px; margin-left: 15px;
-}
-
-.subtitle {
-  font-size: 15px; 
-  font-weight: bold;
-
-}
-
-.description {
-
-  font-size: 15px;
-  margin-top: 10px; 
-}
-
-.info-button {
-  color: white;
-  opacity: 0.8;
-  margin-top: 30px; margin-left: 280px;
-  align-self: flex-start;
-}
-
-.main-menu-img2 {
-  width: 100%;
-  max-width: 1440px;
-  height: auto;
-}
-
-.options-container {
-  background-color: rgba(172, 172, 172, 0.1);
-  padding: 40px;
-  width: 100%; height: 500px;
-  box-sizing: border-box;
-}
-
-.option-box {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  border-radius: 10px;
-  transition: all 0.3s ease;
-  cursor: pointer;
-}
-
-.option-box h2 {
-  margin: 0;
-  font-size: 22px;
-}
-
-.option-box p {
-  margin: 0;
-  font-size: 16px;
-  color: #666;
-}
-
-.option-box:hover {
-  transform: translateY(-2px);
 }
 
 
-
-
-
-
-.bottom-container{
-  background-image: url('background2.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 800px;
-}
