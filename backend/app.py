@@ -2,10 +2,29 @@ from flask import Flask, request, jsonify
 from flask_cors import CORS
 import os
 import tempfile
-from query import run_query
+import json
 
 app = Flask(__name__)
 CORS(app)
+
+def run_query(user_input):
+    file_path = 'pdf_data_test.json'
+    
+    # Check if the file exists
+    if not os.path.exists(file_path):
+        # Create an empty JSON file if it doesn't exist
+        with open(file_path, 'w') as f:
+            json.dump([], f)
+    
+    # Load the JSON data
+    with open(file_path, 'r') as f:
+        data = json.load(f)
+    
+    # Implement your query logic here, for now, let's just return the data
+    # filtered by user_input if it exists in any of the parts
+    result = [entry for entry in data if user_input.lower() in entry['parts'][0].lower()]
+    
+    return result
 
 @app.route('/programs', methods=['GET'])
 def get_programs():
