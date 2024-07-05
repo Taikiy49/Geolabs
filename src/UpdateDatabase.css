@@ -1,0 +1,88 @@
+/* General container styles */
+.file-upload-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.9) 0%, rgba(50, 50, 50, 0.9) 100%);
+    padding: 40px 20px;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* File input styles */
+  .upload-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .file-input {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .file-input:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    transform: scale(1.05);
+  }
+  
+  /* Upload button styles */
+  .upload-button-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .upload-button {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  
+  .upload-button:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    transform: scale(1.05);
+  }
+  
+  /* File list styles */
+  .file-list-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    margin-top: 20px;
+  }
+  
+  .file-item {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
+  }
+  

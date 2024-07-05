@@ -31,14 +31,15 @@ def get_programs():
     programs = ['Search Files', '...']
     return jsonify(programs)
 
-@app.route('/search-database', methods=['POST'])
+@app.route('/program-selection/search-database', methods=['POST'])
 def send_input():
+    print('test')
     data = request.get_json()
     user_input = data.get('input')
     output = run_query(user_input)
     return jsonify(output)
 
-@app.route('/update-database', methods=['POST'])
+@app.route('/program-selection/update-database', methods=['POST'])
 def upload_file():
     if 'files' not in request.files:
         return jsonify({'error': 'No files part in the request'}), 400

@@ -10,7 +10,7 @@ const SearchDatabase = () => {
     e.preventDefault();
     try {
       const response = await axios.post('http://localhost:5000/program-selection/search-database', { input });
-      setOutput(response.data.replace(/\*/g, ''));
+      setOutput(response.data);
     } catch (error) {
       console.error('There was an error sending the input to the server!', error);
     }
@@ -18,10 +18,9 @@ const SearchDatabase = () => {
 
   return (
     <div className="search-files-container">
-
       <div className="chatbot-output-container">
         {output && (
-          <pre className="chatbot-output-display">{output.split('\n').map((line, index) => (
+          <pre className="chatbot-output-display">{output.map((line, index) => (
             <React.Fragment key={index}>
               {line}
               <br />
@@ -29,7 +28,6 @@ const SearchDatabase = () => {
           ))}</pre>
         )}
       </div>
-
       <form onSubmit={handleSubmit} className="search-form">
         <input
           type="text"
@@ -38,10 +36,8 @@ const SearchDatabase = () => {
           placeholder="Start searching..."
           className="input-field"
         />
-
-        <button type="submit" className="submit-button"><img src='./send-button.png' className='send-button-image'></img></button>
+        <button type="submit" className="submit-button">Submit</button>
       </form>
-
     </div>
   );
 };

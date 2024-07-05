@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import './DatabaseStyle.css'; 
+import './UpdateDatabase.css'; 
 
 const UpdateDatabase = () => {
   const [selectedFiles, setSelectedFiles] = useState([]);
@@ -28,11 +28,16 @@ const UpdateDatabase = () => {
 
   return (
     <div className="file-upload-container">
-      <input type="file" onChange={handleFileChange} multiple />
+      <div className="upload-section">
+        <input type="file" onChange={handleFileChange} multiple className="file-input" />
+        <div className="upload-button-container">
+          <button className="upload-button">Upload Files</button>
+        </div>
+      </div>
       {selectedFiles.length > 0 && (
         <div className="file-list-container">
           {selectedFiles.map((file, index) => (
-            <div key={index}>
+            <div key={index} className="file-item">
               <p>{file.name}</p>
             </div>
           ))}

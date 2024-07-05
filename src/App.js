@@ -53,9 +53,9 @@ const App = () => {
 
         <Routes>
           <Route path="/" element={<div className="container" />} />
-          <Route path="/update-database" element={<UpdateDatabase />} />
-          <Route path="/search-database" element={<SearchDatabase />} />
           <Route path="/program-selection" element={<ProgramSelection />} />
+          <Route path="/program-selection/update-database" element={<UpdateDatabase />} />
+          <Route path="/program-selection/search-database" element={<SearchDatabase />} />
           <Route path="/about" element={<div>About Page</div>} />
           <Route path="/qa" element={<div>Q&A Page</div>} />
           <Route path="/contact" element={<div>Contact Page</div>} />

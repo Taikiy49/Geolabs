@@ -21,15 +21,15 @@ const ProgramSelection = () => {
           <h2>Resume</h2>
           <p>Build resume based on specific needs</p>
         </div>
-        <div className="option-box" onClick={() => navigate('/section-info')}>
+        <div className="option-box" onClick={() => navigate('/program-selection/section-info')}>
           <h2>Section</h2>
           <p>What will happen in this section...</p>
         </div>
-        <div className="option-box" onClick={() => navigate('/section-info')}>
+        <div className="option-box" onClick={() => navigate('/program-selection/section-info')}>
           <h2>Section</h2>
           <p>What will happen in this section...</p>
         </div>
-        <div className="option-box" onClick={() => navigate('/section-info')}>
+        <div className="option-box" onClick={() => navigate('/program-selection/section-info')}>
           <h2>Section</h2>
           <p>What will happen in this section...</p>
         </div>
