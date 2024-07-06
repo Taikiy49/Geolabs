@@ -5,12 +5,21 @@ import './SearchDatabase.css';
 const SearchDatabase = () => {
   const [input, setInput] = useState('');
   const [output, setOutput] = useState('');
+  const [submittedInput, setSubmittedInput] = useState('');
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setSubmittedInput(input);
     try {
-      const response = await axios.post('http://localhost:5000/program-selection/search-database', { input });
-      setOutput(response.data);
+      const response = await axios.post('http://127.0.0.1:5000/program-selection/search-database', { prompt: input });
+      // Replace ** with <strong> tags and add <li> for each bullet point
+      let formattedOutput = response.data
+        .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+        .replace(/^\s*\*\s*(.+)$/gm, '<li>$1</li>'); // Convert lines starting with * to list items
+
+      // Wrap the entire content with <ul> tags
+      formattedOutput = `<ul>${formattedOutput}</ul>`;
+      setOutput(formattedOutput);
     } catch (error) {
       console.error('There was an error sending the input to the server!', error);
     }
@@ -19,14 +28,13 @@ const SearchDatabase = () => {
   return (
     <div className="search-files-container">
       <div className="chatbot-output-container">
-        {output && (
-          <pre className="chatbot-output-display">{output.map((line, index) => (
-            <React.Fragment key={index}>
-              {line}
-              <br />
-            </React.Fragment>
-          ))}</pre>
+        {submittedInput && (
+          <div className="submitted-input-display">{submittedInput}</div>
         )}
+        <div
+          className="server-response"
+          dangerouslySetInnerHTML={{ __html: output }}
+        />
       </div>
       <form onSubmit={handleSubmit} className="search-form">
         <input

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import './UpdateDatabase.css'; 
+import './UpdateDatabase.css';
 
 const UpdateDatabase = () => {
   const [selectedFiles, setSelectedFiles] = useState([]);
@@ -15,7 +15,7 @@ const UpdateDatabase = () => {
     });
 
     try {
-      const response = await axios.post('http://localhost:5000/update-database', formData, {
+      const response = await axios.post('http://127.0.0.1:5000/program-selection/update-database', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },

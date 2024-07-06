@@ -5,10 +5,10 @@ import SearchDatabase from './SearchDatabase';
 import UpdateDatabase from './UpdateDatabase';
 import ProgramSelection from './ProgramSelection';
 
-const App = () => {
+const Main = () => {
   const location = useLocation();
-  const isMainPage = location.pathname === '/';
   const navigate = useNavigate();
+  const isMainPage = location.pathname === '/';
 
   return (
     <div className="app-container">
@@ -30,25 +30,24 @@ const App = () => {
         <div className="inner-borders"></div>
         {isMainPage && (
           <div className='hero-sections' data-before="Text for ::before" data-after="Text for ::after">
-          <div className="hero-section">
-            <h1 className="hero-title">Private Software</h1>
-            <p className="hero-description">Please connect to the VPN to use our software. Use software at your own risk.</p>
-            <button className="hero-button" onClick={() => navigate('/program-selection')}>Start</button>
+            <div className="hero-section">
+              <h1 className="hero-title">Private Software</h1>
+              <p className="hero-description">Please connect to the VPN to use our software. Use software at your own risk.</p>
+              <button className="hero-button" onClick={() => navigate('/program-selection')}>Start</button>
+            </div>
+          
+            <div className="hero-section">
+              <h1 className="hero-title">Features</h1>
+              <p className="hero-description">Our software offers a range of powerful features to enhance your productivity.</p>
+              <button className="hero-button" onClick={() => navigate('/features')}>Learn More</button>
+            </div>
+          
+            <div className="hero-section">
+              <h1 className="hero-title">FAQs</h1>
+              <p className="hero-description">Got questions? We might have answers to your question! Check out our FAQs.</p>
+              <button className="hero-button" onClick={() => navigate('/faq')}>View FAQs</button>
+            </div>
           </div>
-        
-          <div className="hero-section">
-            <h1 className="hero-title">Features</h1>
-            <p className="hero-description">Our software offers a range of powerful features to enhance your productivity.</p>
-            <button className="hero-button" onClick={() => navigate('/features')}>Learn More</button>
-          </div>
-        
-          <div className="hero-section">
-            <h1 className="hero-title">FAQs</h1>
-            <p className="hero-description">Got questions? We might have answers to your question! Check out our FAQs.</p>
-            <button className="hero-button" onClick={() => navigate('/faq')}>View FAQs</button>
-          </div>
-        </div>
-        
         )}
 
         <Routes>
@@ -74,10 +73,10 @@ const App = () => {
   );
 };
 
-const AppWrapper = () => (
+const App = () => (
   <Router>
-    <App />
+    <Main />
   </Router>
 );
 
-export default AppWrapper;
+export default App;

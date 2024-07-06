@@ -29,6 +29,7 @@ class ParseFile:
             for page_num in range(pdf_reader.getNumPages()):
                 page = pdf_reader.getPage(page_num)
                 sentence_list.append(page.extractText().replace('\n', ''))
+
         return sentence_list
 
 def return_pdf_list(directory):
@@ -38,8 +39,8 @@ def save_to_db(cursor, filename, content):
     cursor.execute("INSERT OR IGNORE INTO pdf_files (filename, content) VALUES (?, ?)", (filename, content))
 
 
-def run_program():
-    directory = 'C:/Users/taiki/OneDrive/Desktop/Geolabs/test_files'  # for testing purposes
+def run_update_database():
+    directory = '/Users/taikiyamashita/Desktop/Geolabs/test_files'  # TEMPORARILY HARDCODED
     pdf_list = return_pdf_list(directory)
     
     conn, cursor = init_db()
@@ -64,5 +65,7 @@ def run_program():
         json_data.append({"role": "user", "parts": [row[0]]})
         json_data.append({"role": "model", "parts" : [row[1]]})
     
+
     with open("pdf_data_test.json", 'w', encoding='utf-8') as json_file:
         json.dump(json_data, json_file, ensure_ascii=False, indent=4)
+
