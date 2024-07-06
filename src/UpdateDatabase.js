@@ -29,10 +29,10 @@ const UpdateDatabase = () => {
   return (
     <div className="file-upload-container">
       <div className="upload-section">
-        <input type="file" onChange={handleFileChange} multiple className="file-input" />
-        <div className="upload-button-container">
-          <button className="upload-button">Upload Files</button>
-        </div>
+        <input type="file" id="file-input" onChange={handleFileChange} multiple className="file-input" />
+        <button className="upload-button" onClick={() => document.getElementById('file-input').click()}>
+          <img src='../upload.png' alt="Upload" className="upload-icon" />
+        </button>
       </div>
       {selectedFiles.length > 0 && (
         <div className="file-list-container">

@@ -6,7 +6,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, rgba(0, 0, 0, 0.9) 0%, rgba(50, 50, 50, 0.9) 100%); /* Dark gradient with transparency */
   padding: 40px 20px;
   box-sizing: border-box;
   position: relative;

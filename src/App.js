@@ -4,6 +4,7 @@ import './App.css';
 import SearchDatabase from './SearchDatabase';
 import UpdateDatabase from './UpdateDatabase';
 import ProgramSelection from './ProgramSelection';
+import BackButton from './BackButton';
 
 const Main = () => {
   const location = useLocation();
@@ -65,10 +66,12 @@ const Main = () => {
 
       <footer className="app-footer">
         <div className="footer-content">
-          <img src='./discord.png' className='footer-icon' alt='Discord' />
-          <img src='./microsoft.png' className='footer-icon' alt='Microsoft' />
+          <img src='../discord.png' className='footer-icon' alt='Discord' />
+          <img src='../microsoft.png' className='footer-icon' alt='Microsoft' />
         </div>
       </footer>
+
+      <BackButton /> {/* Add the BackButton component here */}
     </div>
   );
 };

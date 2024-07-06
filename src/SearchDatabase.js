@@ -10,14 +10,14 @@ const SearchDatabase = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setSubmittedInput(input);
+    setInput('')
+    setOutput(''); 
     try {
       const response = await axios.post('http://127.0.0.1:5000/program-selection/search-database', { prompt: input });
-      // Replace ** with <strong> tags and add <li> for each bullet point
       let formattedOutput = response.data
         .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
         .replace(/^\s*\*\s*(.+)$/gm, '<li>$1</li>'); // Convert lines starting with * to list items
 
-      // Wrap the entire content with <ul> tags
       formattedOutput = `<ul>${formattedOutput}</ul>`;
       setOutput(formattedOutput);
     } catch (error) {
