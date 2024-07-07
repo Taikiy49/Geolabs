@@ -1,15 +1,10 @@
 from flask import Flask, request, jsonify
-from flask_cors import CORS
-import os
+import sqlite3
+import PyPDF4
 from query import run_query
-from update_database import run_update_database
+from update_database import init_db, ParseFile, save_to_db
 
 app = Flask(__name__)
-CORS(app)
-
-# Ensure the directory exists
-UPLOAD_FOLDER = 'test_files'
-os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 
 @app.route('/program-selection/search-database', methods=['POST'])
 def send_input():
@@ -20,18 +15,26 @@ def send_input():
 
 @app.route('/program-selection/update-database', methods=['POST'])
 def upload_file():
+    print('hi')
     if 'files' not in request.files:
-        return jsonify({'error': 'No files part in the request'}), 400
+        print('oh')
+        return jsonify({'error': 'No file part in the request'}), 400
 
     files = request.files.getlist('files')
-    file_paths = []
-    for file in files:
-        file_path = os.path.join(UPLOAD_FOLDER, file.filename)
-        file.save(file_path)
-        file_paths.append(file_path)
+    conn, cursor = init_db()
 
-    run_update_database()
-    return jsonify({'message': 'Files uploaded successfully', 'file_paths': file_paths}), 200
+    for file in files:
+        filename = file.filename
+        cursor.execute("SELECT COUNT(*) FROM pdf_files WHERE filename=?", (filename,))
+        if cursor.fetchone()[0] == 0:
+            sentences = ParseFile(file).generate_sentence_list()
+            content = " ".join(sentences)
+            save_to_db(cursor, filename, content)
+
+    conn.commit()
+    conn.close()
+
+    return jsonify({'message': 'Files uploaded and processed successfully'}), 200
 
 if __name__ == '__main__':
-    app.run(port=5000, debug=True)
+    app.run(debug=True)

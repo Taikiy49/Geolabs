@@ -26,9 +26,11 @@ def load_json_file(file_path):
         data = json.load(f)
     return data
 
-conversation_data = load_json_file('pdf_data_test.json')
-
-chat_session = model.start_chat(history=conversation_data)
+try:
+  conversation_data = load_json_file('pdf_data_test.json')
+  chat_session = model.start_chat(history=conversation_data)
+except FileNotFoundError:
+  print('json file does not exist! we can fix this later...')
 
 def run_query(prompt):
   response = chat_session.send_message("Given just all the information I fed you earlier" + prompt + "ONLY give me answers that are related to the topic and keep it short!")
