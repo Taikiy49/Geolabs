@@ -1,15 +1,34 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes, useNavigate, useLocation } from 'react-router-dom';
 import './App.css';
 import SearchDatabase from './SearchDatabase';
 import UpdateDatabase from './UpdateDatabase';
 import ProgramSelection from './ProgramSelection';
 import BackButton from './BackButton';
+import Login from './Login';
+import Register from './Register';
+import axios from 'axios';
 
 const Main = () => {
   const location = useLocation();
   const navigate = useNavigate();
   const isMainPage = location.pathname === '/';
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+
+  const handleLogout = async () => {
+    try {
+      const response = await axios.post('http://127.0.0.1:5000/logout');
+      if (response.status === 200) {
+        setIsAuthenticated(false);
+        navigate('/');
+      } else {
+        alert('Logout failed: ' + response.data.message);
+      }
+    } catch (error) {
+      console.error('Logout failed', error);
+      alert('Logout failed: ' + (error.response?.data?.message || error.message));
+    }
+  };
 
   return (
     <div className="app-container">
@@ -22,8 +41,14 @@ const Main = () => {
           <button className="nav-button" onClick={() => navigate('/contact')}>Contact</button>
         </nav>
         <div className="auth-buttons">
-          <button className="auth-button" onClick={() => navigate('/register')}>Register</button>
-          <button className="auth-button" onClick={() => navigate('/login')}>Login</button>
+          {!isAuthenticated ? (
+            <>
+              <button className="auth-button" onClick={() => navigate('/register')}>Register</button>
+              <button className="auth-button" onClick={() => navigate('/login')}>Login</button>
+            </>
+          ) : (
+            <button className="auth-button" onClick={handleLogout}>Logout</button>
+          )}
         </div>
       </header>
 
@@ -59,8 +84,8 @@ const Main = () => {
           <Route path="/about" element={<div>About Page</div>} />
           <Route path="/qa" element={<div>Q&A Page</div>} />
           <Route path="/contact" element={<div>Contact Page</div>} />
-          <Route path="/register" element={<div>Register Page</div>} />
-          <Route path="/login" element={<div>Login Page</div>} />
+          <Route path="/register" element={<Register setIsAuthenticated={setIsAuthenticated} />} />
+          <Route path="/login" element={<Login setIsAuthenticated={setIsAuthenticated} />} />
         </Routes>
       </main>
 
