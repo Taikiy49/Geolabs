@@ -4,31 +4,15 @@ import './App.css';
 import SearchDatabase from './SearchDatabase';
 import UpdateDatabase from './UpdateDatabase';
 import ProgramSelection from './ProgramSelection';
-import BackButton from './BackButton';
 import Login from './Login';
 import Register from './Register';
-import axios from 'axios';
+import PrivateRoute from './PrivateRoute'; 
 
 const Main = () => {
   const location = useLocation();
   const navigate = useNavigate();
   const isMainPage = location.pathname === '/';
   const [isAuthenticated, setIsAuthenticated] = useState(false);
-
-  const handleLogout = async () => {
-    try {
-      const response = await axios.post('http://127.0.0.1:5000/logout');
-      if (response.status === 200) {
-        setIsAuthenticated(false);
-        navigate('/');
-      } else {
-        alert('Logout failed: ' + response.data.message);
-      }
-    } catch (error) {
-      console.error('Logout failed', error);
-      alert('Logout failed: ' + (error.response?.data?.message || error.message));
-    }
-  };
 
   return (
     <div className="app-container">
@@ -41,21 +25,20 @@ const Main = () => {
           <button className="nav-button" onClick={() => navigate('/contact')}>Contact</button>
         </nav>
         <div className="auth-buttons">
-          {!isAuthenticated ? (
+          {!isAuthenticated && (
             <>
               <button className="auth-button" onClick={() => navigate('/register')}>Register</button>
               <button className="auth-button" onClick={() => navigate('/login')}>Login</button>
             </>
-          ) : (
-            <button className="auth-button" onClick={handleLogout}>Logout</button>
           )}
+        
         </div>
       </header>
 
       <main className="main-content">
         <div className="inner-borders"></div>
         {isMainPage && (
-          <div className='hero-sections' data-before="Text for ::before" data-after="Text for ::after">
+          <div className='hero-sections'>
             <div className="hero-section">
               <h1 className="hero-title">Private Software</h1>
               <p className="hero-description">Please connect to the VPN to use our software. Use software at your own risk.</p>
@@ -78,9 +61,9 @@ const Main = () => {
 
         <Routes>
           <Route path="/" element={<div className="container" />} />
-          <Route path="/program-selection" element={<ProgramSelection />} />
-          <Route path="/program-selection/update-database" element={<UpdateDatabase />} />
-          <Route path="/program-selection/search-database" element={<SearchDatabase />} />
+          <Route path="/program-selection" element={<PrivateRoute isAuthenticated={isAuthenticated}><ProgramSelection /></PrivateRoute>} />
+          <Route path="/program-selection/update-database" element={<PrivateRoute isAuthenticated={isAuthenticated}><UpdateDatabase /></PrivateRoute>} />
+          <Route path="/program-selection/search-database" element={<PrivateRoute isAuthenticated={isAuthenticated}><SearchDatabase /></PrivateRoute>} />
           <Route path="/about" element={<div>About Page</div>} />
           <Route path="/qa" element={<div>Q&A Page</div>} />
           <Route path="/contact" element={<div>Contact Page</div>} />
@@ -95,8 +78,6 @@ const Main = () => {
           <img src='../microsoft.png' className='footer-icon' alt='Microsoft' />
         </div>
       </footer>
-
-      <BackButton /> {/* Add the BackButton component here */}
     </div>
   );
 };

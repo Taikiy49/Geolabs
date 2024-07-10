@@ -1,7 +1,7 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 from flask_sqlalchemy import SQLAlchemy
-from flask_login import LoginManager, UserMixin, login_user, login_required, logout_user, current_user
+from flask_login import LoginManager, UserMixin, login_user, login_required, current_user
 from werkzeug.security import generate_password_hash, check_password_hash
 import os
 import json
@@ -119,16 +119,7 @@ def login():
         return jsonify({"message": "Logged in successfully"}), 200
     return jsonify({"message": "Invalid credentials"}), 401
 
-@app.route('/logout', methods=['POST'])
-@login_required
-def logout():
-    try:
-        logout_user()
-        return jsonify({"message": "Logged out successfully"}), 200
-    except Exception as e:
-        print(f"Error during logout: {e}")
-        return jsonify({"message": "Logout failed"}), 500
-        
+
 if __name__ == '__main__':
     with app.app_context():
         db.create_all()
