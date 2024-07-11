@@ -79,7 +79,6 @@ def load_user(user_id):
     return None
 
 @app.route('/program-selection/search-database', methods=['POST'])
-@login_required
 def send_input():
     data = request.get_json()
     prompt = data.get('prompt')
@@ -87,7 +86,6 @@ def send_input():
     return jsonify({"response": output})
 
 @app.route('/program-selection/update-database', methods=['POST'])
-@login_required
 def upload_file():
     files = request.files.getlist('files')
     init_json()
