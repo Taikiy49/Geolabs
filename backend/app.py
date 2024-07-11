@@ -1,18 +1,28 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
-from flask_sqlalchemy import SQLAlchemy
-from flask_login import LoginManager, UserMixin, login_user, login_required, current_user
+from flask_login import LoginManager, UserMixin, login_user, login_required, logout_user, current_user
 from werkzeug.security import generate_password_hash, check_password_hash
-import os
+from pymongo import MongoClient
+from bson.objectid import ObjectId
 import json
 import PyPDF4
+import os
 from query import run_query
+import secrets
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = 'your_secret_key'
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///users.db'
+app.config['SECRET_KEY'] = secrets.token_hex(24)
 CORS(app)
-db = SQLAlchemy(app)
+
+
+uri = "mongodb+srv://Taikiy49:Taikiy491354268097@geolabs.plekzlk.mongodb.net/?retryWrites=true&w=majority&appName=Geolabs"
+
+# Create a new client and connect to the server
+client = MongoClient(uri, tlsAllowInvalidCertificates=True)
+
+# Select the UserProfile database
+users_db = client['UserProfile']
+
 login_manager = LoginManager(app)
 login_manager.login_view = 'login'
 
@@ -56,14 +66,17 @@ def save_to_json(filename, content):
         json.dump(data, f, indent=4)
 
 # User model
-class User(UserMixin, db.Model):
-    id = db.Column(db.Integer, primary_key=True)
-    email = db.Column(db.String(150), unique=True, nullable=False)
-    password = db.Column(db.String(150), nullable=False)
+class User(UserMixin):
+    def __init__(self, user_id, email):
+        self.id = user_id
+        self.email = email
 
 @login_manager.user_loader
 def load_user(user_id):
-    return User.query.get(int(user_id))
+    user = users_db.users.find_one({"_id": ObjectId(user_id)})
+    if user:
+        return User(str(user["_id"]), user["email"])
+    return None
 
 @app.route('/program-selection/search-database', methods=['POST'])
 @login_required
@@ -101,11 +114,15 @@ def register():
     data = request.get_json()
     email = data['email']
     password = generate_password_hash(data['password'], method='pbkdf2:sha256')
-    if User.query.filter_by(email=email).first():
+
+    existing_users = users_db.users.find()
+    for user in existing_users:
+        print(f"Email: {user['email']}, Password: {user['password']}")
+    
+    if users_db.users.find_one({"email": email}):
         return jsonify({"message": "Email already registered"}), 400
-    new_user = User(email=email, password=password)
-    db.session.add(new_user)
-    db.session.commit()
+    
+    users_db.users.insert_one({"email": email, "password": password}).inserted_id
     return jsonify({"message": "User registered successfully"}), 200
 
 @app.route('/login', methods=['POST'])
@@ -113,14 +130,21 @@ def login():
     data = request.get_json()
     email = data['email']
     password = data['password']
-    user = User.query.filter_by(email=email).first()
-    if user and check_password_hash(user.password, password):
-        login_user(user)
+    user = users_db.users.find_one({"email": email})
+    if user and check_password_hash(user['password'], password):
+        login_user(User(str(user["_id"]), user["email"]))
         return jsonify({"message": "Logged in successfully"}), 200
     return jsonify({"message": "Invalid credentials"}), 401
 
+@app.route('/logout', methods=['POST'])
+@login_required
+def logout():
+    try:
+        logout_user()
+        return jsonify({"message": "Logged out successfully"}), 200
+    except Exception as e:
+        print(f"Error during logout: {e}")
+        return jsonify({"message": "Logout failed"}), 500
 
 if __name__ == '__main__':
-    with app.app_context():
-        db.create_all()
     app.run(debug=True)
