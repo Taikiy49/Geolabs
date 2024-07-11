@@ -39,7 +39,7 @@ const Login = ({ setIsAuthenticated }) => {
             onChange={(e) => setPassword(e.target.value)}
             className="login-input"
           />
-          <button type="submit" className="login-button">Login</button>
+          <button type="submit" className="login-button">Submit</button>
         </form>
       </div>
   );

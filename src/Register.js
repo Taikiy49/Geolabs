@@ -55,7 +55,7 @@ const Register = ({ setIsAuthenticated }) => {
             className="register-input"
             required
           />
-          <button type="submit" className="register-button">Register</button>
+          <button type="submit" className="register-button">Submit</button>
         </form>
       </div>
     </div>
