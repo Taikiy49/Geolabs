@@ -83,6 +83,7 @@ def send_input():
     data = request.get_json()
     prompt = data.get('prompt')
     output = run_query(prompt)
+    print(output)
     return jsonify({"response": output})
 
 @app.route('/program-selection/update-database', methods=['POST'])
