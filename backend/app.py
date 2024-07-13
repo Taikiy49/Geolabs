@@ -22,17 +22,10 @@ client = MongoClient(uri, tlsAllowInvalidCertificates=True)
 
 # Select the UserProfile database
 users_db = client['UserProfile']
+pdf_data_db = client['PDFData']
 
 login_manager = LoginManager(app)
 login_manager.login_view = 'login'
-
-JSON_FILE = 'pdf_data.json'
-
-# Initialize the JSON file
-def init_json():
-    if not os.path.exists(JSON_FILE):
-        with open(JSON_FILE, 'w') as f:
-            json.dump([], f)
 
 class ParseFile:
     def __init__(self, file):
@@ -46,24 +39,12 @@ class ParseFile:
             sentence_list.append(page.extractText().replace('\n', ''))
         return " ".join(sentence_list)
 
-def save_to_json(filename, content):
-    with open(JSON_FILE, 'r') as f:
-        data = json.load(f)
-
+def save_to_db(filename, content):
     entry = {
-        "role": "user",
-        "parts": [filename],
+        "filename": filename,
+        "content": content
     }
-    data.append(entry)
-
-    entry = {
-        "role": "model",
-        "parts": [content],
-    }
-    data.append(entry)
-
-    with open(JSON_FILE, 'w') as f:
-        json.dump(data, f, indent=4)
+    pdf_data_db.pdf_data.insert_one(entry)
 
 # User model
 class User(UserMixin):
@@ -83,26 +64,20 @@ def send_input():
     data = request.get_json()
     prompt = data.get('prompt')
     output = run_query(prompt)
-    print(output)
     return jsonify({"response": output})
 
 @app.route('/program-selection/update-database', methods=['POST'])
 def upload_file():
     files = request.files.getlist('files')
-    init_json()
 
-    # Read the existing data
-    with open(JSON_FILE, 'r') as f:
-        data = json.load(f)
-
-    processed_files = [entry['parts'][0] for entry in data if entry['role'] == 'user']
+    processed_files = [entry['filename'] for entry in pdf_data_db.pdf_data.find()]
 
     for file in files:
         filename = file.filename
 
         if filename not in processed_files:
             sentences = ParseFile(file).generate_sentence_list()
-            save_to_json(filename, sentences)
+            save_to_db(filename, sentences)
         else:
             print(f"File {filename} has already been processed.")
 
@@ -114,14 +89,10 @@ def register():
     email = data['email']
     password = generate_password_hash(data['password'], method='pbkdf2:sha256')
 
-    existing_users = users_db.users.find()
-    for user in existing_users:
-        print(f"Email: {user['email']}, Password: {user['password']}")
-    
     if users_db.users.find_one({"email": email}):
         return jsonify({"message": "Email already registered"}), 400
     
-    users_db.users.insert_one({"email": email, "password": password}).inserted_id
+    users_db.users.insert_one({"email": email, "password": password})
     return jsonify({"message": "User registered successfully"}), 200
 
 @app.route('/login', methods=['POST'])
