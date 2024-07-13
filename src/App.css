@@ -146,19 +146,13 @@ html, body {
   opacity: 1;
 }
 
-.footer-content {
-  display: flex;
+.app-footer {
+  justify-content: center;
+  gap: 50px;
 }
 
-.footer-icon {
-  margin-left: 50px;
-  width: 45px;
-  height: px;
-  cursor: pointer;
-}
-
-.footer-icon:hover {
-  transform: scale(1.1);
+.footer-content p {
+  margin: 5px;
 }
 
 
@@ -170,7 +164,7 @@ html, body {
   height: 100%;
   background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200"><circle cx="10" cy="10" r="2" fill="white"/><circle cx="50" cy="50" r="2" fill="white"/><circle cx="100" cy="100" r="2" fill="white"/><circle cx="150" cy="150" r="2" fill="white"/><circle cx="200" cy="200" r="2" fill="white"/></svg>') repeat;
   z-index: 0;
-  opacity: 0.6;
+  opacity: 0.2;
   animation: moveStars 20s linear infinite;
 }
 

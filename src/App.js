@@ -16,7 +16,6 @@ const Main = () => {
 
   return (
     <div className="app-container">
-      <div className='stars'></div>
       <header className="app-header">
         <div className="logo" onClick={() => navigate('/')}>Geolabs, Inc.</div>
         <nav className="nav-buttons">
@@ -36,6 +35,7 @@ const Main = () => {
       </header>
 
       <main className="main-content">
+        <div className='stars'></div>
         <div className="inner-borders"></div>
         {isMainPage && (
           <div className='hero-sections'>
@@ -73,10 +73,8 @@ const Main = () => {
       </main>
 
       <footer className="app-footer">
-        <div className="footer-content">
-          <img src='../discord.png' className='footer-icon' alt='Discord' />
-          <img src='../microsoft.png' className='footer-icon' alt='Microsoft' />
-        </div>
+          <p>© 2024 Geolabs, Inc. All Rights Reserved.</p>
+          <p>Designed by Taiki Owen Yamashita</p>
       </footer>
     </div>
   );

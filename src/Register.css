@@ -1,20 +1,24 @@
+.register-container{
+    display: flex;
+    width: 500px;
+    justify-content: center;
+}
+
 .register-box {
-    background-color: rgba(255, 255, 255, 0.05);
-    padding: 20px;
+    width: 80%;
+    background-color: rgb(15, 15, 15);
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(10px);
     border: 2px solid rgba(255, 255, 255, 0.2);
     text-align: center;
-    width: 90%;
-    max-width: 400px;
+
 }
 
 .register-title {
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 20px;
-    color: #ffffff;
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
   }
   
@@ -24,13 +28,14 @@
 }
 
 .register-input {
+    color: white;
+    margin-left: 50px; margin-right: 50px; margin-bottom: 15px;
+    justify-content: center;
     padding: 10px;
-    margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
     background-color: rgba(255, 255, 255, 0.1);
-    color: #ffffff;
     border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
@@ -40,7 +45,7 @@
 }
 
 .register-button {
-    padding: 10px;
+    padding: 10px; margin-bottom: 25px; margin-left: 50px; margin-right: 50px; margin-top: 15px;
     background-color: rgba(255, 255, 255, 0.05);
     color: white;
     border: none;
