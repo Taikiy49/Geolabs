@@ -20,7 +20,6 @@ const Main = () => {
         <div className="logo" onClick={() => navigate('/')}>Geolabs, Inc.</div>
         <nav className="nav-buttons">
           <button className="nav-button" onClick={() => navigate('/about')}>About</button>
-          <button className="nav-button" onClick={() => navigate('/qa')}>Q&A</button>
           <button className="nav-button" onClick={() => navigate('/contact')}>Contact</button>
         </nav>
         <div className="auth-buttons">
@@ -65,7 +64,6 @@ const Main = () => {
           <Route path="/program-selection/update-database" element={<PrivateRoute isAuthenticated={isAuthenticated}><UpdateDatabase /></PrivateRoute>} />
           <Route path="/program-selection/search-database" element={<PrivateRoute isAuthenticated={isAuthenticated}><SearchDatabase /></PrivateRoute>} />
           <Route path="/about" element={<div>About Page</div>} />
-          <Route path="/qa" element={<div>Q&A Page</div>} />
           <Route path="/contact" element={<div>Contact Page</div>} />
           <Route path="/register" element={<Register setIsAuthenticated={setIsAuthenticated} />} />
           <Route path="/login" element={<Login setIsAuthenticated={setIsAuthenticated} />} />
