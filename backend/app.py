@@ -1,52 +1,25 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
-from flask_login import LoginManager, UserMixin, login_user, login_required, logout_user, current_user
+from flask_login import LoginManager, UserMixin, login_user, login_required, logout_user
 from werkzeug.security import generate_password_hash, check_password_hash
 from pymongo import MongoClient
 from bson.objectid import ObjectId
-import json
 import PyPDF4
-import os
-from query import run_query
 import secrets
+from model_building import Model
+from model_functions import ParseFile, run_query, save_to_db
 
+# global variables (could fix this later for readability)
 app = Flask(__name__)
 app.config['SECRET_KEY'] = secrets.token_hex(24)
 CORS(app)
-
-
-uri = "mongodb+srv://Taikiy49:Taikiy491354268097@geolabs.plekzlk.mongodb.net/?retryWrites=true&w=majority&appName=Geolabs"
-
-# Create a new client and connect to the server
-client = MongoClient(uri, tlsAllowInvalidCertificates=True)
-
-# Select the UserProfile database
-users_db = client['UserProfile']
-pdf_data_db = client['PDFData']
-
 login_manager = LoginManager(app)
 login_manager.login_view = 'login'
+model = Model()
+chat_session = model.get_chat_session()
+client = model._client
+users_db, pdf_data_db = client['UserProfile'], client['PDFData']
 
-class ParseFile:
-    def __init__(self, file):
-        self._file = file
-
-    def generate_sentence_list(self):
-        sentence_list = []
-        pdf_reader = PyPDF4.PdfFileReader(self._file)
-        for page_num in range(pdf_reader.getNumPages()):
-            page = pdf_reader.getPage(page_num)
-            sentence_list.append(page.extractText().replace('\n', ''))
-        return " ".join(sentence_list)
-
-def save_to_db(filename, content):
-    entry = {
-        "filename": filename,
-        "content": content
-    }
-    pdf_data_db.pdf_data.insert_one(entry)
-
-# User model
 class User(UserMixin):
     def __init__(self, user_id, email):
         self.id = user_id
@@ -59,11 +32,15 @@ def load_user(user_id):
         return User(str(user["_id"]), user["email"])
     return None
 
+@app.route('/program-selection/build-resume', methods=['POST'])
+def build_resume():
+    data = request.get_json()
+
 @app.route('/program-selection/search-database', methods=['POST'])
 def send_input():
     data = request.get_json()
     prompt = data.get('prompt')
-    output = run_query(prompt)
+    output = run_query(chat_session, prompt)
     return jsonify({"response": output})
 
 @app.route('/program-selection/update-database', methods=['POST'])
@@ -88,12 +65,21 @@ def register():
     data = request.get_json()
     email = data['email']
     password = generate_password_hash(data['password'], method='pbkdf2:sha256')
+    
+    # THIS IS TEMMPORARY FOR TESTING PURPOSES
+    if email != "taikiy49@gmail.com" and email != "jason@geolabs.net" and email != "ryang@geolabs.net" and email != "lola@geolabs.net":
+        return jsonify({"message": "THIS PROGRAM IS CURRENTLY RESTRICTED TO TAIKI AND 3 OTHERS"}), 400
+
+    # REPLACE WITH THIS IN THE FUTURE
+    # if not email.endswith('@geolabs.net'):
+    #     return jsonify({"message": "Registration restricted to geolabs.net email addresses"}), 400
 
     if users_db.users.find_one({"email": email}):
         return jsonify({"message": "Email already registered"}), 400
     
     users_db.users.insert_one({"email": email, "password": password})
     return jsonify({"message": "User registered successfully"}), 200
+
 
 @app.route('/login', methods=['POST'])
 def login():
