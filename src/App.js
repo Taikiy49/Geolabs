@@ -73,6 +73,7 @@ const Main = () => {
       <footer className="app-footer">
           <p>© 2024 Geolabs, Inc. All Rights Reserved.</p>
           <p>Designed by Taiki Owen Yamashita</p>
+          <p>(808) 450-5767</p>
       </footer>
     </div>
   );
