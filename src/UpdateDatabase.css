@@ -1,34 +1,69 @@
 .file-upload-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-  }
-  
-  .upload-section {
-    position: relative;
-  }
-  
-  .file-input {
-    display: none;
-  }
-  
-  .upload-button {
-    background: none;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .upload-icon {
-    width: 50px; /* Adjust size as needed */
-    height: 50px; /* Adjust size as needed */
-  }
-  
-  .file-list-container {
-    margin-top: 20px;
-  }
-  
-  .file-item {
-    margin: 5px 0;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+}
+
+.upload-section {
+  position: relative;
+}
+
+.file-input {
+  display: none;
+}
+
+.upload-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.upload-icon {
+  width: 50px; 
+  height: 50px;
+}
+
+.file-list-container {
+  display: flex;
+  flex-direction: column;
+  overflow-x: auto;
+  max-height: 250px;
+}
+
+.file-item {
+  margin: 5px 0;
+}
+
+.confirm-button {
+  background-color: rgba(255, 255, 255, 0.01);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+  cursor: pointer;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 50px;
+  margin-top: 10px;
+}
+
+.confirm-button:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  transform: scale(1.03);
+  opacity: 1;
+}
+
+.loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+  z-index: 9999; /* Ensure it is above other elements */
+}

@@ -4,16 +4,21 @@ import './UpdateDatabase.css';
 
 const UpdateDatabase = () => {
   const [selectedFiles, setSelectedFiles] = useState([]);
+  const [isUploading, setIsUploading] = useState(false);
 
-  const handleFileChange = async (event) => {
+  const handleFileChange = (event) => {
     const files = Array.from(event.target.files);
     setSelectedFiles(files);
+    document.getElementById('file-input').value = ''; // Clear the file input
+  };
 
+  const handleUpload = async () => {
     const formData = new FormData();
-    files.forEach(file => {
+    selectedFiles.forEach(file => {
       formData.append('files', file);
     });
 
+    setIsUploading(true);
     try {
       const response = await axios.post('http://127.0.0.1:5000/program-selection/update-database', formData, {
         headers: {
@@ -23,6 +28,8 @@ const UpdateDatabase = () => {
       console.log('Files uploaded successfully', response.data);
     } catch (error) {
       console.error('There was an error uploading the files!', error);
+    } finally {
+      setIsUploading(false);
     }
   };
 
@@ -35,12 +42,22 @@ const UpdateDatabase = () => {
         </button>
       </div>
       {selectedFiles.length > 0 && (
-        <div className="file-list-container">
-          {selectedFiles.map((file, index) => (
-            <div key={index} className="file-item">
-              <p>{file.name}</p>
-            </div>
-          ))}
+        <>
+          <div className="file-list-container">
+            {selectedFiles.map((file, index) => (
+              <div key={index} className="file-item">
+                <p>{file.name}</p>
+              </div>
+            ))}
+          </div>
+          <button className="confirm-button" onClick={handleUpload}>
+            Confirm
+          </button>
+        </>
+      )}
+      {isUploading && (
+        <div className="loading-screen">
+          <p>Uploading files, please wait...</p>
         </div>
       )}
     </div>

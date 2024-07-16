@@ -1,17 +1,22 @@
-from flask import Flask, request, jsonify
+from datetime import timedelta
+from flask import Flask, request, jsonify, session
 from flask_cors import CORS
 from flask_login import LoginManager, UserMixin, login_user, login_required, logout_user
 from werkzeug.security import generate_password_hash, check_password_hash
 from pymongo import MongoClient
 from bson.objectid import ObjectId
-import PyPDF4
 import secrets
 from model_building import Model
-from model_functions import ParseFile, run_query, save_to_db
+from model_functions import ParseFile, run_query
+from flask_session import Session
 
 # global variables (could fix this later for readability)
 app = Flask(__name__)
 app.config['SECRET_KEY'] = secrets.token_hex(24)
+app.config['SESSION_TYPE'] = 'filesystem'  # Use filesystem session storage
+app.config['PERMANENT_SESSION_LIFETIME'] = timedelta(minutes=5)  # Session lifetime
+Session(app)  # Initialize the session extension
+
 CORS(app)
 login_manager = LoginManager(app)
 login_manager.login_view = 'login'
@@ -19,6 +24,13 @@ model = Model()
 chat_session = model.get_chat_session()
 client = model._client
 users_db, pdf_data_db = client['UserProfile'], client['PDFData']
+
+def save_to_db(filename, content):
+    entry = {
+        "filename": filename,
+        "content": content
+    }
+    pdf_data_db.pdf_data.insert_one(entry)
 
 class User(UserMixin):
     def __init__(self, user_id, email):
@@ -66,7 +78,7 @@ def register():
     email = data['email']
     password = generate_password_hash(data['password'], method='pbkdf2:sha256')
     
-    # THIS IS TEMMPORARY FOR TESTING PURPOSES
+    # THIS IS TEMPORARY FOR TESTING PURPOSES
     if email != "taikiy49@gmail.com" and email != "jason@geolabs.net" and email != "ryang@geolabs.net" and email != "lola@geolabs.net":
         return jsonify({"message": "THIS PROGRAM IS CURRENTLY RESTRICTED TO TAIKI AND 3 OTHERS"}), 400
 
@@ -80,7 +92,6 @@ def register():
     users_db.users.insert_one({"email": email, "password": password})
     return jsonify({"message": "User registered successfully"}), 200
 
-
 @app.route('/login', methods=['POST'])
 def login():
     data = request.get_json()
@@ -89,10 +100,15 @@ def login():
     user = users_db.users.find_one({"email": email})
     if user and check_password_hash(user['password'], password):
         login_user(User(str(user["_id"]), user["email"]))
-        return jsonify({"message": "Logged in successfully"}), 200
+        session.permanent = True  # Make the session permanent
+        return jsonify({"message": "Logged in successfully", "token": session['_id']}), 200
     return jsonify({"message": "Invalid credentials"}), 401
 
-
+@app.route('/logout', methods=['POST'])
+@login_required
+def logout():
+    logout_user()
+    return jsonify({"message": "Logged out successfully"}), 200
 
 if __name__ == '__main__':
     app.run(debug=True)

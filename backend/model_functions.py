@@ -1,14 +1,8 @@
+import PyPDF4
+
 def run_query(chat_session, prompt):
   response = chat_session.send_message("Given just all the information I fed you earlier" + prompt + "ONLY give me answers that are related to the topic and keep it short!")
   return response.text.strip()
-
-def save_to_db(filename, content):
-    entry = {
-        "filename": filename,
-        "content": content
-    }
-    pdf_data_db.pdf_data.insert_one(entry)
-
 
 class ParseFile:
     def __init__(self, file):

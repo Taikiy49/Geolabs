@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes, useNavigate, useLocation } from 'react-router-dom';
 import './App.css';
 import SearchDatabase from './SearchDatabase';
@@ -6,13 +6,26 @@ import UpdateDatabase from './UpdateDatabase';
 import ProgramSelection from './ProgramSelection';
 import Login from './Login';
 import Register from './Register';
-import PrivateRoute from './PrivateRoute'; 
+import PrivateRoute from './PrivateRoute';
 
 const Main = () => {
   const location = useLocation();
   const navigate = useNavigate();
   const isMainPage = location.pathname === '/';
   const [isAuthenticated, setIsAuthenticated] = useState(false);
+
+  useEffect(() => {
+    const token = localStorage.getItem('authToken');
+    if (token) {
+      setIsAuthenticated(true);
+    }
+  }, []);
+
+  const handleLogout = () => {
+    localStorage.removeItem('authToken');
+    setIsAuthenticated(false);
+    navigate('/');
+  };
 
   return (
     <div className="app-container">
@@ -23,13 +36,14 @@ const Main = () => {
           <button className="nav-button" onClick={() => navigate('/contact')}>Contact</button>
         </nav>
         <div className="auth-buttons">
-          {!isAuthenticated && (
+          {!isAuthenticated ? (
             <>
               <button className="auth-button" onClick={() => navigate('/register')}>Register</button>
               <button className="auth-button" onClick={() => navigate('/login')}>Login</button>
             </>
+          ) : (
+            <button className="auth-button" onClick={handleLogout}>Logout</button>
           )}
-        
         </div>
       </header>
 
@@ -43,13 +57,13 @@ const Main = () => {
               <p className="hero-description">Please connect to the VPN to use our software. Use software at your own risk.</p>
               <button className="hero-button" onClick={() => navigate('/program-selection')}>Start</button>
             </div>
-          
+
             <div className="hero-section">
               <h1 className="hero-title">Features</h1>
               <p className="hero-description">Our software offers a range of powerful features to enhance your productivity.</p>
               <button className="hero-button" onClick={() => navigate('/features')}>Learn More</button>
             </div>
-          
+
             <div className="hero-section">
               <h1 className="hero-title">FAQs</h1>
               <p className="hero-description">Got questions? We might have answers to your question! Check out our FAQs.</p>
@@ -61,8 +75,8 @@ const Main = () => {
         <Routes>
           <Route path="/" element={<div className="container" />} />
           <Route path="/program-selection" element={<PrivateRoute isAuthenticated={isAuthenticated}><ProgramSelection /></PrivateRoute>} />
-          <Route path="/program-selection/update-database" element={<PrivateRoute isAuthenticated={isAuthenticated}><UpdateDatabase /></PrivateRoute>} />
-          <Route path="/program-selection/search-database" element={<PrivateRoute isAuthenticated={isAuthenticated}><SearchDatabase /></PrivateRoute>} />
+          <Route path="/program-selection/update-database" element={<UpdateDatabase  />} />
+          <Route path="/program-selection/search-database" element={<SearchDatabase />} />
           <Route path="/about" element={<div>About Page</div>} />
           <Route path="/contact" element={<div>Contact Page</div>} />
           <Route path="/register" element={<Register setIsAuthenticated={setIsAuthenticated} />} />
@@ -71,9 +85,9 @@ const Main = () => {
       </main>
 
       <footer className="app-footer">
-          <p>© 2024 Geolabs, Inc. All Rights Reserved.</p>
-          <p>Designed by Taiki Owen Yamashita</p>
-          <p>(808) 450-5767</p>
+        <p>© 2024 Geolabs, Inc. All Rights Reserved.</p>
+        <p>Designed by Taiki Owen Yamashita</p>
+        <p>(808) 450-5767</p>
       </footer>
     </div>
   );

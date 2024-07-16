@@ -18,3 +18,7 @@ def get_generation_config():
 def get_uri(): # for security purposes
     load_dotenv('.env')
     return os.getenv('MONGO_URI')
+
+
+
+
