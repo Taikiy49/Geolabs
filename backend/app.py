@@ -1,4 +1,4 @@
-from datetime import timedelta
+from datetime import timedelta, datetime
 from flask import Flask, request, jsonify, session
 from flask_cors import CORS
 from flask_login import LoginManager, UserMixin, login_user, login_required, logout_user
@@ -9,8 +9,9 @@ import secrets
 from model_building import Model
 from model_functions import ParseFile, run_query
 from flask_session import Session
+from model_settings import get_uri
 
-# global variables (could fix this later for readability)
+# Global variables
 app = Flask(__name__)
 app.config['SECRET_KEY'] = secrets.token_hex(24)
 app.config['SESSION_TYPE'] = 'filesystem'  # Use filesystem session storage
@@ -20,15 +21,18 @@ Session(app)  # Initialize the session extension
 CORS(app)
 login_manager = LoginManager(app)
 login_manager.login_view = 'login'
-model = Model()
-chat_session = model.get_chat_session()
-client = model._client
+
+client = MongoClient(get_uri(), tlsAllowInvalidCertificates=True)
 users_db, pdf_data_db = client['UserProfile'], client['PDFData']
+
+chat_session = None  # Initialize chat_session as a global variable
+last_model_update = None  # Initialize last_model_update as a global variable
 
 def save_to_db(filename, content):
     entry = {
         "filename": filename,
-        "content": content
+        "content": content,
+        "last_updated": datetime.utcnow()
     }
     pdf_data_db.pdf_data.insert_one(entry)
 
@@ -50,6 +54,16 @@ def build_resume():
 
 @app.route('/program-selection/search-database', methods=['POST'])
 def send_input():
+    global chat_session  # Declare chat_session as global to access it
+    global last_model_update  # Declare last_model_update as global to access it
+
+    # this works for now. test to see if there are any changes that have to be made to this in the future
+    most_recent_update = pdf_data_db.pdf_data.find_one(sort=[("last_updated", -1)])
+    if not chat_session or not last_model_update or (most_recent_update and most_recent_update["last_updated"] > last_model_update):
+        model = Model()
+        chat_session = model.get_chat_session()
+        last_model_update = datetime.utcnow()  # Update the timestamp
+
     data = request.get_json()
     prompt = data.get('prompt')
     output = run_query(chat_session, prompt)
