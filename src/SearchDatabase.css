@@ -21,10 +21,9 @@
 }
 
 .chatbot-output-display {
-  background-color: rgba(255, 255, 255, 0.1);
   color: white;
   padding: 20px;
-  border-radius: 20px;
+  border-radius: 30px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(10px);
   border: 2px solid rgba(255, 255, 255, 0.2);
@@ -74,8 +73,8 @@
   border-radius: 20px;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Darker shadow */
-  border: 1px solid rgba(255, 255, 255, 0.3); /* Cool border */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+  border: 1px solid rgba(255, 255, 255, 0.3); 
 }
 
 .submit-button:hover {
@@ -92,9 +91,9 @@
 .submitted-input-display{
   font-weight: bold;
   background-color: rgba(128, 128, 128, 0.1);
-  padding: 10px; border-radius: 10px;
+  border-radius: 10px; 
+  padding-left: 20px; padding-right: 20px; padding-top: 10px; padding-bottom: 10px;
 }
-
 
 .server-response{
   color: white;

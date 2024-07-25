@@ -1,71 +1,41 @@
-from flask import Flask, request, jsonify
+from datetime import timedelta, datetime
+from flask import Flask, request, jsonify, session
 from flask_cors import CORS
-from flask_login import LoginManager, UserMixin, login_user, login_required, logout_user, current_user
+from flask_login import LoginManager, UserMixin, login_user, login_required, logout_user
 from werkzeug.security import generate_password_hash, check_password_hash
 from pymongo import MongoClient
 from bson.objectid import ObjectId
-import json
-import PyPDF4
-import os
-from query import run_query
 import secrets
+from model_building import Model
+from model_functions import ParseFile, run_query
+from flask_session import Session
+from model_settings import get_uri
 
+# Global variables
 app = Flask(__name__)
 app.config['SECRET_KEY'] = secrets.token_hex(24)
+app.config['SESSION_TYPE'] = 'filesystem'  # Use filesystem session storage
+app.config['PERMANENT_SESSION_LIFETIME'] = timedelta(minutes=5)  # Session lifetime
+Session(app)  # Initialize the session extension
+
 CORS(app)
-
-
-uri = "mongodb+srv://Taikiy49:Taikiy491354268097@geolabs.plekzlk.mongodb.net/?retryWrites=true&w=majority&appName=Geolabs"
-
-# Create a new client and connect to the server
-client = MongoClient(uri, tlsAllowInvalidCertificates=True)
-
-# Select the UserProfile database
-users_db = client['UserProfile']
-
 login_manager = LoginManager(app)
 login_manager.login_view = 'login'
 
-JSON_FILE = 'pdf_data.json'
+client = MongoClient(get_uri(), tlsAllowInvalidCertificates=True)
+users_db, pdf_data_db = client['UserProfile'], client['PDFData']
 
-# Initialize the JSON file
-def init_json():
-    if not os.path.exists(JSON_FILE):
-        with open(JSON_FILE, 'w') as f:
-            json.dump([], f)
+chat_session = None  # Initialize chat_session as a global variable
+last_model_update = None  # Initialize last_model_update as a global variable
 
-class ParseFile:
-    def __init__(self, file):
-        self._file = file
-
-    def generate_sentence_list(self):
-        sentence_list = []
-        pdf_reader = PyPDF4.PdfFileReader(self._file)
-        for page_num in range(pdf_reader.getNumPages()):
-            page = pdf_reader.getPage(page_num)
-            sentence_list.append(page.extractText().replace('\n', ''))
-        return " ".join(sentence_list)
-
-def save_to_json(filename, content):
-    with open(JSON_FILE, 'r') as f:
-        data = json.load(f)
-
+def save_to_db(filename, content):
     entry = {
-        "role": "user",
-        "parts": [filename],
+        "filename": filename,
+        "content": content,
+        "last_updated": datetime.utcnow()
     }
-    data.append(entry)
+    pdf_data_db.pdf_data.insert_one(entry)
 
-    entry = {
-        "role": "model",
-        "parts": [content],
-    }
-    data.append(entry)
-
-    with open(JSON_FILE, 'w') as f:
-        json.dump(data, f, indent=4)
-
-# User model
 class User(UserMixin):
     def __init__(self, user_id, email):
         self.id = user_id
@@ -78,31 +48,39 @@ def load_user(user_id):
         return User(str(user["_id"]), user["email"])
     return None
 
+@app.route('/program-selection/build-resume', methods=['POST'])
+def build_resume():
+    data = request.get_json()
+
 @app.route('/program-selection/search-database', methods=['POST'])
 def send_input():
+    global chat_session  # Declare chat_session as global to access it
+    global last_model_update  # Declare last_model_update as global to access it
+
+    # this works for now. test to see if there are any changes that have to be made to this in the future
+    most_recent_update = pdf_data_db.pdf_data.find_one(sort=[("last_updated", -1)])
+    if not chat_session or not last_model_update or (most_recent_update and most_recent_update["last_updated"] > last_model_update):
+        model = Model()
+        chat_session = model.get_chat_session()
+        last_model_update = datetime.utcnow()  # Update the timestamp
+
     data = request.get_json()
     prompt = data.get('prompt')
-    output = run_query(prompt)
-    print(output)
+    output = run_query(chat_session, prompt)
     return jsonify({"response": output})
 
 @app.route('/program-selection/update-database', methods=['POST'])
 def upload_file():
     files = request.files.getlist('files')
-    init_json()
 
-    # Read the existing data
-    with open(JSON_FILE, 'r') as f:
-        data = json.load(f)
-
-    processed_files = [entry['parts'][0] for entry in data if entry['role'] == 'user']
+    processed_files = [entry['filename'] for entry in pdf_data_db.pdf_data.find()]
 
     for file in files:
         filename = file.filename
 
         if filename not in processed_files:
             sentences = ParseFile(file).generate_sentence_list()
-            save_to_json(filename, sentences)
+            save_to_db(filename, sentences)
         else:
             print(f"File {filename} has already been processed.")
 
@@ -113,15 +91,19 @@ def register():
     data = request.get_json()
     email = data['email']
     password = generate_password_hash(data['password'], method='pbkdf2:sha256')
-
-    existing_users = users_db.users.find()
-    for user in existing_users:
-        print(f"Email: {user['email']}, Password: {user['password']}")
     
+    # THIS IS TEMPORARY FOR TESTING PURPOSES
+    if email != "taikiy49@gmail.com" and email != "jason@geolabs.net" and email != "ryang@geolabs.net" and email != "lola@geolabs.net":
+        return jsonify({"message": "THIS PROGRAM IS CURRENTLY RESTRICTED TO TAIKI AND 3 OTHERS"}), 400
+
+    # REPLACE WITH THIS IN THE FUTURE
+    # if not email.endswith('@geolabs.net'):
+    #     return jsonify({"message": "Registration restricted to geolabs.net email addresses"}), 400
+
     if users_db.users.find_one({"email": email}):
         return jsonify({"message": "Email already registered"}), 400
     
-    users_db.users.insert_one({"email": email, "password": password}).inserted_id
+    users_db.users.insert_one({"email": email, "password": password})
     return jsonify({"message": "User registered successfully"}), 200
 
 @app.route('/login', methods=['POST'])
@@ -132,18 +114,15 @@ def login():
     user = users_db.users.find_one({"email": email})
     if user and check_password_hash(user['password'], password):
         login_user(User(str(user["_id"]), user["email"]))
-        return jsonify({"message": "Logged in successfully"}), 200
+        session.permanent = True  # Make the session permanent
+        return jsonify({"message": "Logged in successfully", "token": session['_id']}), 200
     return jsonify({"message": "Invalid credentials"}), 401
 
 @app.route('/logout', methods=['POST'])
 @login_required
 def logout():
-    try:
-        logout_user()
-        return jsonify({"message": "Logged out successfully"}), 200
-    except Exception as e:
-        print(f"Error during logout: {e}")
-        return jsonify({"message": "Logout failed"}), 500
+    logout_user()
+    return jsonify({"message": "Logged out successfully"}), 200
 
 if __name__ == '__main__':
     app.run(debug=True)
