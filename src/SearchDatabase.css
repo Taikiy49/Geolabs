@@ -47,7 +47,7 @@
   font-size: 16px;
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.3);
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: rgba(0, 0, 0, 0.2);
   color: white;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
   transition: all 0.3s ease;
@@ -59,12 +59,12 @@
 
 .input-field:focus {
   outline: none;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 /* Button styles */
 .submit-button {
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: rgba(0, 0, 0, 0.2);
   color: white;
   font-weight: bold;
   border: none;
@@ -78,7 +78,7 @@
 }
 
 .submit-button:hover {
-  background-color: rgba(255, 255, 255, 0.3); /* Slightly less transparent white */
+  background-color: rgba(0, 0, 0, 0.5);
   transform: scale(1.05);
 }
 
@@ -90,8 +90,8 @@
 
 .submitted-input-display{
   font-weight: bold;
-  background-color: rgba(128, 128, 128, 0.1);
-  border-radius: 10px; 
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 5px; 
   padding-left: 20px; padding-right: 20px; padding-top: 10px; padding-bottom: 10px;
 }
 

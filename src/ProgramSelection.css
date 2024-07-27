@@ -16,7 +16,7 @@
   }
   
   .option-box {
-    background-color: rgba(255, 255, 255, 0.1); /* Transparent white */
+    background-color: rgba(0, 0, 0, 0.2); /* Transparent white */
     padding: 20px;
     border-radius: 20px;
     text-align: center;
@@ -29,7 +29,7 @@
   }
   
   .option-box:hover {
-    background-color: rgba(255, 255, 255, 0.2); /* Slightly less transparent white */
+    background-color: rgba(0, 0, 0, 0.5); 
     transform: scale(1.05);
   }
   
