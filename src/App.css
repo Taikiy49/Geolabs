@@ -41,7 +41,7 @@ html, body {
   align-items: center;
   padding: 20px;
   box-sizing: border-box;
-  border: 2px solid rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(5px);
   z-index: 2;
 }
@@ -64,11 +64,11 @@ html, body {
   border: none;
   padding: 10px 20px;
   font-size: 16px;
-  border-radius: 20px;
+  border-radius: 10px;
   cursor: pointer;
   transition: all 0.3s ease;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 2px solid rgba(255, 255, 255, 0.5);
 }
 
 .nav-button:hover, .auth-button:hover {
@@ -78,8 +78,8 @@ html, body {
 }
 
 .main-content {
-  border-left: 1px solid rgba(255, 255, 255, 0.3); 
-  border-right: 1px solid rgba(255, 255, 255, 0.3); 
+  border-left: 1px solid rgba(255, 255, 255, 0.5); 
+  border-right: 1px solid rgba(255, 255, 255, 0.5); 
   flex: 1;
   width: 100%;
   display: flex;
@@ -106,7 +106,7 @@ html, body {
   background-color: rgba(0, 0, 0, 0.2);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(10px);
-  border: 2px solid rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.5);
   animation: pulse 5s infinite;
   margin-bottom: 30px;
 }
@@ -141,11 +141,11 @@ html, body {
   border: none;
   padding: 10px 15px;
   font-size: 13px;
-  border-radius: 20px;
+  border-radius: 10px;
   cursor: pointer;
   transition: all 0.3s ease;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 2px solid rgba(255, 255, 255, 0.5);
 }
 
 .hero-button:hover {

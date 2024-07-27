@@ -18,7 +18,7 @@
   .option-box {
     background-color: rgba(0, 0, 0, 0.2); /* Transparent white */
     padding: 20px;
-    border-radius: 20px;
+    border-radius: 10px;
     text-align: center;
     color: white;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); /* Darker shadow */
