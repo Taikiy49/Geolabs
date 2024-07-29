@@ -54,22 +54,14 @@ def build_resume():
 
 @app.route('/program-selection/search-database', methods=['POST'])
 def send_input():
-    global chat_session  # Declare chat_session as global to access it
-    global last_model_update  # Declare last_model_update as global to access it
-
-    # this works for now. test to see if there are any changes that have to be made to this in the future
-    most_recent_update = pdf_data_db.pdf_data.find_one(sort=[("last_updated", -1)])
-    if not chat_session or not last_model_update or (most_recent_update and most_recent_update["last_updated"] > last_model_update):
-        model = Model()
-        chat_session = model.get_chat_session()
-        last_model_update = datetime.utcnow()  # Update the timestamp
-
+    model = Model()
+    chat_session = model.get_chat_session()
     data = request.get_json()
     prompt = data.get('prompt')
     output = run_query(chat_session, prompt)
     return jsonify({"response": output})
 
-@app.route('/program-selection/update-database', methods=['POST'])
+@app.route('/program-selection/add-files', methods=['POST'])
 def upload_file():
     files = request.files.getlist('files')
 
@@ -85,6 +77,21 @@ def upload_file():
             print(f"File {filename} has already been processed.")
 
     return jsonify({'message': 'Files uploaded and processed successfully'}), 200
+
+@app.route('/program-selection/list-files', methods=['GET'])
+def list_files():
+    files = list(pdf_data_db.pdf_data.find({}, {"filename": 1, "_id": 0}))
+    return jsonify(files), 200
+
+@app.route('/program-selection/remove-files', methods=['POST'])
+def remove_files():
+    filenames = request.json.get('filenames', [])
+    
+    result = pdf_data_db.pdf_data.delete_many({"filename": {"$in": filenames}})
+    if result.deleted_count > 0:
+        return jsonify({"message": f"{result.deleted_count} files removed successfully"}), 200
+    else:
+        return jsonify({"message": "No files were removed"}), 400
 
 @app.route('/register', methods=['POST'])
 def register():

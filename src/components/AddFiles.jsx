@@ -9,7 +9,7 @@ const AddFiles = () => {
   const handleFileChange = (event) => {
     const files = Array.from(event.target.files);
     setSelectedFiles(files);
-    document.getElementById('file-input').value = ''; // Clear the file input
+    document.getElementById('file-input').value = '';
   };
 
   const handleUpload = async () => {
@@ -20,7 +20,7 @@ const AddFiles = () => {
 
     setIsUploading(true);
     try {
-      const response = await axios.post('http://127.0.0.1:5000/program-selection/update-database', formData, {
+      const response = await axios.post('http://127.0.0.1:5000/program-selection/add-files', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },

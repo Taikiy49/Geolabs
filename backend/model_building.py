@@ -17,6 +17,7 @@ class Model:
       return self._data_list
   
   def get_chat_session(self):
+    print(self.load_data_from_db())
     return self._model.start_chat(history=self.load_data_from_db())
 
 
