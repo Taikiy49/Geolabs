@@ -1,3 +1,5 @@
+# THIS FILE IS DANGEROUS AS IT WILL RESET THE ENTIRE DATABASE FULL OF FILES AND ALL USER RECORDS
+
 from pymongo.mongo_client import MongoClient
 from pymongo.server_api import ServerApi
 from dotenv import load_dotenv

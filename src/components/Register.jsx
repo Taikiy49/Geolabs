@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
-import './Register.css';
+import '../styles/Register.css';
 
 const Register = ({ setIsAuthenticated }) => {
   const [email, setEmail] = useState('');

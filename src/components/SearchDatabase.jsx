@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import './SearchDatabase.css'; 
+import '../styles/SearchDatabase.css'; 
 
 const SearchDatabase = () => {
   const [input, setInput] = useState('');

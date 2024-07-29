@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import './UpdateDatabase.css';
+import '../styles/AddFiles.css'
 
-const UpdateDatabase = () => {
+const AddFiles = () => {
   const [selectedFiles, setSelectedFiles] = useState([]);
   const [isUploading, setIsUploading] = useState(false);
 
@@ -64,4 +64,4 @@ const UpdateDatabase = () => {
   );
 };
 
-export default UpdateDatabase;
+export default AddFiles;
