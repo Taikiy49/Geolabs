@@ -5,11 +5,13 @@ from flask_login import LoginManager, UserMixin, login_user, login_required, log
 from werkzeug.security import generate_password_hash, check_password_hash
 from pymongo import MongoClient
 from bson.objectid import ObjectId
+import gridfs
 import secrets
 from model_building import Model
-from model_functions import ParseFile, run_query
+from model_functions import run_query
 from flask_session import Session
 from model_settings import get_uri
+from model_functions import ParseFile  # Assuming the updated ParseFile class is in parse_file.py
 
 # Global variables
 app = Flask(__name__)
@@ -25,16 +27,11 @@ login_manager.login_view = 'login'
 client = MongoClient(get_uri(), tlsAllowInvalidCertificates=True)
 users_db, pdf_data_db = client['UserProfile'], client['PDFData']
 
+# Initialize GridFS
+fs = gridfs.GridFS(pdf_data_db)
+
 chat_session = None  # Initialize chat_session as a global variable
 last_model_update = None  # Initialize last_model_update as a global variable
-
-def save_to_db(filename, content):
-    entry = {
-        "filename": filename,
-        "content": content,
-        "last_updated": datetime.utcnow()
-    }
-    pdf_data_db.pdf_data.insert_one(entry)
 
 class User(UserMixin):
     def __init__(self, user_id, email):
@@ -47,6 +44,14 @@ def load_user(user_id):
     if user:
         return User(str(user["_id"]), user["email"])
     return None
+
+def save_to_db(filename, content):
+    entry = {
+        "filename": filename,
+        "content": content,
+        "last_updated": datetime.utcnow()
+    }
+    pdf_data_db.pdf_data.insert_one(entry)
 
 @app.route('/program-selection/build-resume', methods=['POST'])
 def build_resume():
@@ -64,15 +69,19 @@ def send_input():
 @app.route('/program-selection/add-files', methods=['POST'])
 def upload_file():
     files = request.files.getlist('files')
-
     processed_files = [entry['filename'] for entry in pdf_data_db.pdf_data.find()]
 
     for file in files:
         filename = file.filename
 
         if filename not in processed_files:
-            sentences = ParseFile(file).generate_sentence_list()
-            save_to_db(filename, sentences)
+            # Process file with ParseFile class
+            parser = ParseFile(file)
+            cleaned_text = parser.generate_sentence_list()
+            
+            # Save the cleaned text to GridFS
+            file_id = fs.put(cleaned_text.encode('utf-8'), filename=filename)
+            save_to_db(filename, cleaned_text)
         else:
             print(f"File {filename} has already been processed.")
 
@@ -86,6 +95,12 @@ def list_files():
 @app.route('/program-selection/remove-files', methods=['POST'])
 def remove_files():
     filenames = request.json.get('filenames', [])
+    
+    # Remove files from GridFS and the database
+    for filename in filenames:
+        file_entry = pdf_data_db.pdf_data.find_one({"filename": filename})
+        if file_entry:
+            fs.delete(file_entry["_id"])
     
     result = pdf_data_db.pdf_data.delete_many({"filename": {"$in": filenames}})
     if result.deleted_count > 0:
