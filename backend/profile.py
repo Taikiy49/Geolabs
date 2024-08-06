@@ -1,3 +1,6 @@
+""" THIS WILL BE HERE TEMPORARILY FOR READABILITY PURPOSES """
+
+
 @app.route('/register', methods=['POST'])
 def register():
     data = request.get_json()
