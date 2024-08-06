@@ -1,0 +1,9 @@
+flask
+flask_cors
+flask_login
+pymongo
+google.generativeai
+dotenv
+PyPDF4
+flask_session
+gridfs

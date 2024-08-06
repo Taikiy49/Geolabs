@@ -5,6 +5,7 @@ from flask_login import LoginManager, UserMixin, login_user, login_required, log
 from werkzeug.security import generate_password_hash, check_password_hash
 from pymongo import MongoClient, TEXT
 from bson.objectid import ObjectId
+import gridfs
 import secrets
 from model_building import Model
 from model_functions import ParseFile, run_query, return_keywords
@@ -27,6 +28,9 @@ login_manager.login_view = 'login'
 client = MongoClient(get_uri(), tlsAllowInvalidCertificates=True)
 users_db, pdf_data_db = client['UserProfile'], client['PDFData']
 
+# Initialize GridFS
+fs = gridfs.GridFS(pdf_data_db)
+
 chat_session = None  # Initialize chat_session as a global variable
 last_model_update = None  # Initialize last_model_update as a global variable
 
@@ -40,6 +44,7 @@ def save_to_db(filename, content):
         "last_updated": datetime.utcnow()
     }
     pdf_data_db.pdf_data.insert_one(entry)
+
 
 class User(UserMixin):
     def __init__(self, user_id, email):
@@ -61,6 +66,14 @@ def load_user(user_id):
     if user:
         return User(str(user["_id"]), user["email"])
     return None
+
+def save_to_db(filename, content):
+    entry = {
+        "filename": filename,
+        "content": content,
+        "last_updated": datetime.utcnow()
+    }
+    pdf_data_db.pdf_data.insert_one(entry)
 
 @app.route('/program-selection/build-resume', methods=['POST'])
 def build_resume():
@@ -106,6 +119,12 @@ def list_files():
 @app.route('/program-selection/remove-files', methods=['POST'])
 def remove_files():
     filenames = request.json.get('filenames', [])
+    
+    # Remove files from GridFS and the database
+    for filename in filenames:
+        file_entry = pdf_data_db.pdf_data.find_one({"filename": filename})
+        if file_entry:
+            fs.delete(file_entry["_id"])
     
     result = pdf_data_db.pdf_data.delete_many({"filename": {"$in": filenames}})
     if result.deleted_count > 0:
