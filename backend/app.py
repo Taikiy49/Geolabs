@@ -14,6 +14,8 @@ from model_settings import get_uri
 from functools import lru_cache
 from concurrent.futures import ThreadPoolExecutor
 
+"""6776-20"""
+
 # Global variables
 app = Flask(__name__)
 app.config['SECRET_KEY'] = secrets.token_hex(24)

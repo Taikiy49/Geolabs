@@ -29,18 +29,6 @@ class ParseFile:
     def __init__(self, file):
         self._file = file
 
-    def preprocess_text(self, text):
-        # Tokenize text
-        tokens = word_tokenize(text)
-        # Convert to lower case
-        tokens = [token.lower() for token in tokens]
-        # Remove punctuation and non-alphabetic tokens but keep numbers
-        tokens = [token for token in tokens if token.isalpha() or token.isnumeric()]
-        # Remove stop words
-        stop_words = set(stopwords.words('english'))
-        tokens = [token for token in tokens if token not in stop_words]
-        return ' '.join(tokens)
-
     def generate_sentence_list(self):
         sentence_list = []
         pdf_reader = PyPDF4.PdfFileReader(self._file)
