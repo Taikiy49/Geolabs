@@ -19,11 +19,12 @@ class Model:
         return self._data_list
   
     def get_chat_session(self):
-        return self._model.start_chat(history=self._data_list)
+        return self._model.start_chat(history=[])
 
     def train_model_with_documents(self, documents):
-        self._data_list = []
         for document in documents:
             self._data_list.append({"role": "user", "parts": [document['filename']]})
             self._data_list.append({"role": "model", "parts": [document['content']]})
+        
+        # Using the updated _data_list to start a new chat session
         return self._model.start_chat(history=self._data_list)

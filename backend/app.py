@@ -102,7 +102,7 @@ def upload_file():
         if filename not in processed_files:
             sentences = ParseFile(file).generate_sentence_list()
             save_to_db(filename, sentences)
-            print(filename + ' has been saved')
+            print(filename + '  has been saved')
         else:
             print(f"File {filename} has already been processed.")
 

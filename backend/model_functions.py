@@ -1,7 +1,5 @@
-import nltk
-from nltk.corpus import stopwords
-from nltk.tokenize import word_tokenize
 import PyPDF4
+import google.api_core.exceptions
 
 
 def return_keywords(chat_session, prompt):
@@ -10,8 +8,21 @@ def return_keywords(chat_session, prompt):
     return keywords.text.split()
 
 def run_query(chat_session, prompt):
-    response = chat_session.send_message("Given just all the information I fed you earlier" + prompt + "ONLY give me answers that are related to the topic and keep it short!")
-    return response.text.strip()
+    try:
+        response = chat_session.send_message(
+            "Given just all the information I fed you earlier" + prompt + 
+            "ONLY give me answers that are related to the topic and keep it short!"
+        )
+        return response
+    except google.api_core.exceptions.GoogleAPICallError as e:
+        # Log the error details for further investigation
+        print(f"API call error: {e}")
+        # Optionally, return a default response or raise a custom exception
+        return {"error": "API call failed"}
+    except Exception as e:
+        # Handle any other exceptions that may occur
+        print(f"Unexpected error: {e}")
+        return {"error": "An unexpected error occurred"}
 
 
 class ParseFile:
