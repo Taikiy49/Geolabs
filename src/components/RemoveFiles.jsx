@@ -12,7 +12,12 @@ const RemoveFiles = () => {
         const fetchFiles = async () => {
             try {
                 const response = await axios.get('http://127.0.0.1:5000/program-selection/list-files');
-                setFiles(response.data);
+                const sortedFiles = response.data.sort((a, b) => {
+                    const numA = a.filename.match(/\d+/);
+                    const numB = b.filename.match(/\d+/);
+                    return (numA ? parseInt(numA[0], 10) : 0) - (numB ? parseInt(numB[0], 10) : 0);
+                });
+                setFiles(sortedFiles);
             } catch (error) {
                 console.error('Error fetching files:', error);
             } finally {
@@ -62,7 +67,7 @@ const RemoveFiles = () => {
                             checked={selectedFiles.includes(file.filename)}
                             onChange={() => handleSelectFile(file.filename)}
                         />
-                        {file.filename}
+                        {`${index + 1}. ${file.filename}`}
                     </div>
                 ))}
             </div>

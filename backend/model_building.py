@@ -23,6 +23,7 @@ class Model:
 
     def train_model_with_documents(self, documents):
         for document in documents:
+            print(document)
             self._data_list.append({"role": "user", "parts": [document['filename']]})
             self._data_list.append({"role": "model", "parts": [document['content']]})
         
