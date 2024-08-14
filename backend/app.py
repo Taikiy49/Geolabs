@@ -8,7 +8,7 @@ from bson.objectid import ObjectId
 import gridfs
 import secrets
 from model_building import Model
-from model_functions import ParseFile, run_query, return_keywords
+from model_functions import ParseFile, return_keywords
 from flask_session import Session
 from model_settings import get_uri
 from functools import lru_cache
@@ -84,15 +84,16 @@ def build_resume():
 @app.route('/program-selection/search-database', methods=['POST'])
 def send_input():
     model = Model()
-    chat_session = model.get_chat_session() # initial prompt
     data = request.get_json()
     prompt = data.get('prompt')
-    keywords_list = return_keywords(chat_session, prompt)
-    # Fetch filtered documents using cached function
-    filtered_documents = get_filtered_documents(tuple(keywords_list))
-    chat_session = model.train_model_with_documents(filtered_documents)
-    output = run_query(chat_session, prompt)
-    return jsonify({"response": output})
+    filtered_documents = get_filtered_documents(['geolabs, construction', 'boring holes'])
+    history = model.create_chat_history(filtered_documents)
+    print(history)
+    chat_session = model.create_chat_session(history)
+    response = model.generate_response(chat_session, prompt)
+    return jsonify({"response": response.text})
+
+
 
 @app.route('/program-selection/add-files', methods=['POST'])
 def upload_file():

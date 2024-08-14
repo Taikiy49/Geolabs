@@ -7,24 +7,6 @@ def return_keywords(chat_session, prompt):
     chat_session.send_message(f'Completely disregard everything that I asked you earlier for future questions')
     return keywords.text.split()
 
-def run_query(chat_session, prompt):
-    try:
-        response = chat_session.send_message(
-            "Given just all the information I fed you earlier" + prompt + 
-            "ONLY give me answers that are related to the topic and keep it short!"
-        )
-        return response
-    except google.api_core.exceptions.GoogleAPICallError as e:
-        # Log the error details for further investigation
-        print(f"API call error: {e}")
-        # Optionally, return a default response or raise a custom exception
-        return {"error": "API call failed"}
-    except Exception as e:
-        # Handle any other exceptions that may occur
-        print(f"Unexpected error: {e}")
-        return {"error": "An unexpected error occurred"}
-
-
 class ParseFile:
     def __init__(self, file):
         self._file = file
