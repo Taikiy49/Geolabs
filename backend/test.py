@@ -1,37 +1,21 @@
-"""
-Install the Google AI Python SDK
+import spacy
 
-$ pip install google-generativeai
-"""
+# Load the pre-trained language model
+nlp = spacy.load("en_core_web_sm")
 
-import os
-import google.generativeai as genai
+# The prompt
+prompt = "projects in Halawa"
 
-GEMINI_API_KEY = 'AIzaSyCsaz0MN4twNH6g9m63Nr9pLZ9kt3weuVw'
-genai.configure(api_key=GEMINI_API_KEY)
+# Process the text using spaCy
+doc = nlp(prompt)
 
-# Create the model
-generation_config = {
-  "temperature": 1,
-  "top_p": 0.95,
-  "top_k": 64,
-  "max_output_tokens": 8192,
-  "response_mime_type": "text/plain",
-}
+# Extract entities (like locations, organizations) and keywords (like nouns, proper nouns)
+relevant_words = []
+for token in doc:
+    if token.pos_ in ["NOUN", "PROPN"]:  # Nouns and Proper Nouns
+        relevant_words.append(token.text)
+    elif token.ent_type_ in ["GPE", "LOC", "ORG"]:  # Locations, Geopolitical entities, Organizations
+        relevant_words.append(token.text)
 
-model = genai.GenerativeModel(
-  model_name="gemini-1.5-pro",
-  generation_config=generation_config,
-  # safety_settings = Adjust safety settings
-  # See https://ai.google.dev/gemini-api/docs/safety-settings
-)
-
-chat_session = model.start_chat(
-  history=[
-  ]
-)
-
-response = chat_session.send_message("hellooo")
-
-print(response.text)
-
+# Print relevant words
+print("Relevant Words:", relevant_words)

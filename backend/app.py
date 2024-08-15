@@ -13,8 +13,7 @@ from flask_session import Session
 from model_settings import get_uri
 from functools import lru_cache
 from concurrent.futures import ThreadPoolExecutor
-
-"""6776-20"""
+import spacy
 
 # Global variables
 app = Flask(__name__)
@@ -39,6 +38,8 @@ last_model_update = None  # Initialize last_model_update as a global variable
 # Create a text index on the 'content' field in MongoDB
 pdf_data_db.pdf_data.create_index([("content", TEXT)], default_language="english")
 
+nlp = spacy.load('en_core_web_sm')
+
 def save_to_db(filename, content):
     entry = {
         "filename": filename,
@@ -46,7 +47,6 @@ def save_to_db(filename, content):
         "last_updated": datetime.utcnow()
     }
     pdf_data_db.pdf_data.insert_one(entry)
-
 
 class User(UserMixin):
     def __init__(self, user_id, email):
@@ -81,18 +81,31 @@ def save_to_db(filename, content):
 def build_resume():
     data = request.get_json()
 
+def extract_relevant_words(prompt):
+    # Process the text using spaCy
+    doc = nlp(prompt)
+    relevant_words = []
+    for token in doc:
+        if token.pos_ in ["NOUN", "PROPN"]:  # Nouns and Proper Nouns
+            relevant_words.append(token.text)
+        elif token.ent_type_ in ["GPE", "LOC", "ORG"]:  # Locations, Geopolitical entities, Organizations
+            relevant_words.append(token.text)
+        elif token.like_num: 
+            relevant_words.append(token.text)
+    return relevant_words
+
 @app.route('/program-selection/search-database', methods=['POST'])
 def send_input():
     model = Model()
     data = request.get_json()
     prompt = data.get('prompt')
-    filtered_documents = get_filtered_documents(['geolabs, construction', 'boring holes'])
+    keywords_list = extract_relevant_words(prompt)
+    print(keywords_list)
+    filtered_documents = get_filtered_documents(keywords_list)
     history = model.create_chat_history(filtered_documents)
-    print(history)
     chat_session = model.create_chat_session(history)
     response = model.generate_response(chat_session, prompt)
     return jsonify({"response": response.text})
-
 
 
 @app.route('/program-selection/add-files', methods=['POST'])
