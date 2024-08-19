@@ -8,13 +8,12 @@ from bson.objectid import ObjectId
 import gridfs
 import secrets
 from model_building import Model
-from model_functions import ParseFile, run_query, return_keywords
+from model_functions import ParseFile, return_keywords
 from flask_session import Session
 from model_settings import get_uri
 from functools import lru_cache
 from concurrent.futures import ThreadPoolExecutor
-
-"""6776-20"""
+import spacy
 
 # Global variables
 app = Flask(__name__)
@@ -39,6 +38,8 @@ last_model_update = None  # Initialize last_model_update as a global variable
 # Create a text index on the 'content' field in MongoDB
 pdf_data_db.pdf_data.create_index([("content", TEXT)], default_language="english")
 
+nlp = spacy.load('en_core_web_sm')
+
 def save_to_db(filename, content):
     entry = {
         "filename": filename,
@@ -47,7 +48,6 @@ def save_to_db(filename, content):
     }
     pdf_data_db.pdf_data.insert_one(entry)
 
-
 class User(UserMixin):
     def __init__(self, user_id, email):
         self.id = user_id
@@ -55,7 +55,7 @@ class User(UserMixin):
 
 def get_filtered_documents(keywords_list):
     query = {"$text": {"$search": " ".join(keywords_list)}}
-    filtered_documents = pdf_data_db.pdf_data.find(query, {"score": {"$meta": "textScore"}}).sort("score", {"$meta": "textScore"}).limit(5)
+    filtered_documents = pdf_data_db.pdf_data.find(query, {"score": {"$meta": "textScore"}}).sort("score", {"$meta": "textScore"}).limit(1)
     documents = [{"filename": doc["filename"], "content": doc["content"]} for doc in filtered_documents]
     print("Top 5 matched files:")
     for doc in documents:
@@ -81,18 +81,32 @@ def save_to_db(filename, content):
 def build_resume():
     data = request.get_json()
 
+def extract_relevant_words(prompt):
+    # Process the text using spaCy
+    doc = nlp(prompt)
+    relevant_words = []
+    for token in doc:
+        if token.pos_ in ["NOUN", "PROPN"]:  # Nouns and Proper Nouns
+            relevant_words.append(token.text)
+        elif token.ent_type_ in ["GPE", "LOC", "ORG"]:  # Locations, Geopolitical entities, Organizations
+            relevant_words.append(token.text)
+        elif token.like_num: 
+            relevant_words.append(token.text)
+    return relevant_words
+
 @app.route('/program-selection/search-database', methods=['POST'])
 def send_input():
     model = Model()
-    chat_session = model.get_chat_session() # initial prompt
     data = request.get_json()
     prompt = data.get('prompt')
-    keywords_list = return_keywords(chat_session, prompt)
-    # Fetch filtered documents using cached function
-    filtered_documents = get_filtered_documents(tuple(keywords_list))
-    chat_session = model.train_model_with_documents(filtered_documents)
-    output = run_query(chat_session, prompt)
-    return jsonify({"response": output})
+    keywords_list = extract_relevant_words(prompt)
+    print(keywords_list)
+    filtered_documents = get_filtered_documents(keywords_list)
+    history = model.create_chat_history(filtered_documents)
+    chat_session = model.create_chat_session(history)
+    response = model.generate_response(chat_session, prompt)
+    return jsonify({"response": response.text})
+
 
 @app.route('/program-selection/add-files', methods=['POST'])
 def upload_file():
@@ -133,6 +147,42 @@ def remove_files():
         return jsonify({"message": f"{result.deleted_count} files removed successfully"}), 200
     else:
         return jsonify({"message": "No files were removed"}), 400
+
+
+
+@app.route('/register', methods=['POST'])
+def register():
+    data = request.get_json()
+    email = data['email']
+    password = generate_password_hash(data['password'], method='pbkdf2:sha256')
+    
+    # THIS IS TEMPORARY FOR TESTING PURPOSES
+    if email not in ["taikiy49@gmail.com", "jason@geolabs.net", "ryang@geolabs.net", "lola@geolabs.net"]:
+        return jsonify({"message": "THIS PROGRAM IS CURRENTLY RESTRICTED TO TAIKI AND 3 OTHERS"}), 400
+
+    if users_db.users.find_one({"email": email}):
+        return jsonify({"message": "Email already registered"}), 400
+    
+    users_db.users.insert_one({"email": email, "password": password})
+    return jsonify({"message": "User registered successfully"}), 200
+
+@app.route('/login', methods=['POST'])
+def login():
+    data = request.get_json()
+    email = data['email']
+    password = data['password']
+    user = users_db.users.find_one({"email": email})
+    if user and check_password_hash(user['password'], password):
+        login_user(User(str(user["_id"]), user["email"]))
+        session.permanent = True  # Make the session permanent
+        return jsonify({"message": "Logged in successfully", "token": session['_id']}), 200
+    return jsonify({"message": "Invalid credentials"}), 401
+
+@app.route('/logout', methods=['POST'])
+@login_required
+def logout():
+    logout_user()
+    return jsonify({"message": "Logged out successfully"}), 200
 
 if __name__ == '__main__':
     app.run(debug=True)

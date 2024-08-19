@@ -23,6 +23,11 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    max-height: 350px; 
+    overflow-y: auto;  
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 .remove-file-item {
@@ -47,11 +52,10 @@
     font-size: 16px;
 }
 
-.remove-button:enabled:hover{
+.remove-button:enabled:hover {
     transform: scale(1.05);
     background-color: rgba(255, 255, 255, 0.05);
 }
-
 
 .remove-button:disabled {
     cursor: not-allowed;
