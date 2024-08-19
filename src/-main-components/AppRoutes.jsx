@@ -7,6 +7,7 @@ import Login from '../components/Login';
 import Register from '../components/Register';
 import PrivateRoute from '../components/PrivateRoute';
 import RemoveFiles from '../components/RemoveFiles';
+import Relevancy from '../components/Relevancy';
 
 const AppRoutes = ({ isAuthenticated, setIsAuthenticated }) => (
   <Routes>
@@ -15,6 +16,7 @@ const AppRoutes = ({ isAuthenticated, setIsAuthenticated }) => (
     <Route path="/program-selection/add-files" element={<AddFiles />} />
     <Route path="/program-selection/search-database" element={<SearchDatabase />} />
     <Route path="/program-selection/remove-files" element={<RemoveFiles />} />
+    <Route path="/program-selection/relevancy" element ={<Relevancy />} />
     <Route path="/about" element={<div>About Page</div>} />
     <Route path="/contact" element={<div>Contact Page</div>} />
     <Route path="/register" element={<Register setIsAuthenticated={setIsAuthenticated} />} />

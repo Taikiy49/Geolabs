@@ -25,9 +25,9 @@ const ProgramSelection = () => {
           <h2>Remove</h2>
           <p>Remove files from the database in the system</p>
         </div>
-        <div className="option-box" onClick={() => navigate('/program-selection/section-info')}>
-          <h2>Section</h2>
-          <p>What will happen in this section...</p>
+        <div className="option-box" onClick={() => navigate('/program-selection/relevancy')}>
+          <h2>Relevancy</h2>
+          <p>Write a word or sentence and find relevant files</p>
         </div>
         <div className="option-box" onClick={() => navigate('/program-selection/section-info')}>
           <h2>Section</h2>

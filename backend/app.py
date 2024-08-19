@@ -1,3 +1,4 @@
+import csv
 from datetime import timedelta, datetime
 from flask import Flask, request, jsonify, session
 from flask_cors import CORS
@@ -55,7 +56,7 @@ class User(UserMixin):
 
 def get_filtered_documents(keywords_list):
     query = {"$text": {"$search": " ".join(keywords_list)}}
-    filtered_documents = pdf_data_db.pdf_data.find(query, {"score": {"$meta": "textScore"}}).sort("score", {"$meta": "textScore"}).limit(1)
+    filtered_documents = pdf_data_db.pdf_data.find(query, {"score": {"$meta": "textScore"}}).sort("score", {"$meta": "textScore"}).limit(20)
     documents = [{"filename": doc["filename"], "content": doc["content"]} for doc in filtered_documents]
     print("Top 5 matched files:")
     for doc in documents:
@@ -149,6 +150,49 @@ def remove_files():
         return jsonify({"message": "No files were removed"}), 400
 
 
+@app.route('/program-selection/search-filenames', methods=['POST'])
+def search_filenames():
+    data = request.get_json()
+    prompt = data.get('prompt')
+    keywords_list = extract_relevant_words(prompt)
+    filtered_documents = get_filtered_documents(keywords_list)
+    filenames = [doc["filename"] for doc in filtered_documents]
+    return jsonify({"filenames": filenames})
+
+
+@app.route('/program-selection/get-quick-view', methods=['POST'])
+def get_quick_view():
+    data = request.get_json()
+    filename = data.get('filename')
+    file_entry = pdf_data_db.pdf_data.find_one({"filename": filename})
+    
+    if file_entry:
+        content = file_entry.get('content', [])
+        prompt = request.json.get('prompt', '')
+        keywords = extract_relevant_words(prompt)
+
+        print(f"Extracted keywords: {keywords}")  # Debug: Show extracted keywords
+
+        relevant_sentences = []
+        sentences = content.split('.')  
+        i = 0
+        for keyword in keywords:
+            print(keyword)
+            if i > 3: break
+            for sentence in sentences:
+                if i > 3: break
+                if keyword in sentence.lower():
+                    relevant_sentences.append(sentence)
+                    i += 1
+
+        # Find sentences that contain any of the relevant keywords
+        print(f"Relevant sentences: {relevant_sentences}")  # Debug: Show relevant sentences
+
+        # Return the first 3 relevant sentences
+        quick_view_content = " ".join(relevant_sentences[:3])
+        return jsonify({"content": quick_view_content}), 200
+    else:
+        return jsonify({"message": "File not found"}), 404
 
 @app.route('/register', methods=['POST'])
 def register():

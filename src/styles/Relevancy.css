@@ -1,0 +1,211 @@
+/* Custom Scrollbar for Scrollable Containers */
+.filenames-list-container::-webkit-scrollbar,
+.remove-files-list::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+}
+
+.filenames-list-container::-webkit-scrollbar-track,
+.remove-files-list::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1); /* Background of the track */
+    border-radius: 10px;
+}
+
+.filenames-list-container::-webkit-scrollbar-thumb,
+.remove-files-list::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.3); /* Color of the thumb */
+    border-radius: 10px;
+    border: 3px solid rgba(0, 0, 0, 0.1); /* Creates padding around thumb */
+}
+
+.filenames-list-container::-webkit-scrollbar-thumb:hover,
+.remove-files-list::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(255, 255, 255, 0.5); /* Color on hover */
+}
+
+.filenames-list-container::-webkit-scrollbar-thumb:active,
+.remove-files-list::-webkit-scrollbar-thumb:active {
+    background-color: rgba(255, 255, 255, 0.7); /* Color when active */
+}
+
+
+/* General container styles */
+.relevancy-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
+}
+
+/* Submitted input display */
+.submitted-input-container {
+    color: white;
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 20px;
+}
+
+.submitted-input-display {
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+/* File names list styles */
+.filenames-list-container {
+    width: 100%;
+    max-width: 1000px;
+    margin-bottom: 20px;
+    max-height: 420px; /* Restrict the height */
+    overflow-x: auto; /* Make it scrollable */
+}
+
+.filenames-list {
+    list-style: none;
+    padding: 0;
+}
+
+.filename-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.rank-container {
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.rank-number {
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+}
+
+.filename-box {
+    flex-grow: 1;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+.filename-box:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    transform: scale(1.02);
+}
+
+.filename-text {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.view-button {
+    margin-left: 50px;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+    border: 1px solid rgba(255, 255, 255, 0.3); 
+}
+
+.view-button:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    transform: scale(1.05);
+}
+
+/* Relevant Sentences Display */
+.file-content-display {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    max-width: 800px;
+    margin-top: 20px;
+}
+
+.file-content-display h3 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+    padding-bottom: 10px;
+}
+
+.file-content-display p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.6;
+    white-space: pre-wrap; /* Preserve whitespace and line breaks */
+}
+
+/* Form styles */
+.relevancy-form {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    gap: 10px;
+    margin-top: auto;
+}
+
+.input-field {
+    flex: 1;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+}
+
+.input-field::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.input-field:focus {
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Button styles */
+.submit-button {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+    border: 1px solid rgba(255, 255, 255, 0.3); 
+}
+
+.submit-button:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    transform: scale(1.05);
+}
