@@ -15,7 +15,7 @@ const Relevancy = () => {
     setFileNames([]);
     setSelectedFileContent('');
     try {
-      const response = await axios.post('http://127.0.0.1:5000/program-selection/search-filenames', { prompt: input });
+      const response = await axios.post('http://13.56.252.100:8000/program-selection/search-filenames', { prompt: input });
       setFileNames(response.data.filenames);
     } catch (error) {
       console.error('There was an error retrieving the file names from the server!', error);
@@ -24,7 +24,7 @@ const Relevancy = () => {
 
   const handleViewClick = async (fileName) => {
     try {
-      const response = await axios.post('http://127.0.0.1:5000/program-selection/get-quick-view', {
+      const response = await axios.post('http://13.56.252.100:8000/program-selection/get-quick-view', {
         filename: fileName,
         prompt: submittedInput // Send the original query to find relevant sentences
       });

@@ -1,6 +1,4 @@
-import csv
-from datetime import timedelta, datetime
-from flask import Flask, request, jsonify, session
+from flask import Flask, send_from_directory, jsonify, request, session
 from flask_cors import CORS
 from flask_login import LoginManager, UserMixin, login_user, login_required, logout_user
 from werkzeug.security import generate_password_hash, check_password_hash
@@ -15,6 +13,8 @@ from model_settings import get_uri
 from functools import lru_cache
 from concurrent.futures import ThreadPoolExecutor
 import spacy
+import os
+from datetime import timedelta, datetime
 
 # Global variables
 app = Flask(__name__)
@@ -27,6 +27,7 @@ CORS(app)
 login_manager = LoginManager(app)
 login_manager.login_view = 'login'
 
+print(get_uri())
 client = MongoClient(get_uri(), tlsAllowInvalidCertificates=True)
 users_db, pdf_data_db = client['UserProfile'], client['PDFData']
 
@@ -69,14 +70,6 @@ def load_user(user_id):
     if user:
         return User(str(user["_id"]), user["email"])
     return None
-
-def save_to_db(filename, content):
-    entry = {
-        "filename": filename,
-        "content": content,
-        "last_updated": datetime.utcnow()
-    }
-    pdf_data_db.pdf_data.insert_one(entry)
 
 @app.route('/program-selection/build-resume', methods=['POST'])
 def build_resume():
@@ -159,7 +152,6 @@ def search_filenames():
     filenames = [doc["filename"] for doc in filtered_documents]
     return jsonify({"filenames": filenames})
 
-
 @app.route('/program-selection/get-quick-view', methods=['POST'])
 def get_quick_view():
     data = request.get_json()
@@ -229,4 +221,4 @@ def logout():
     return jsonify({"message": "Logged out successfully"}), 200
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=8000)

@@ -2,7 +2,7 @@ from dotenv import load_dotenv
 import os
 
 def get_api_key(): # for security purposes
-    load_dotenv('.env')
+    load_dotenv('../.env')
     return os.getenv('GEMINI_API_KEY')
 
 def get_generation_config():
@@ -16,7 +16,7 @@ def get_generation_config():
     return generation_config
 
 def get_uri(): # for security purposes
-    load_dotenv('.env')
+    load_dotenv('../.env')
     return os.getenv('MONGO_URI')
 
 

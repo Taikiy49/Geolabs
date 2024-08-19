@@ -11,7 +11,7 @@ const RemoveFiles = () => {
         // Fetch the list of files from the server
         const fetchFiles = async () => {
             try {
-                const response = await axios.get('http://127.0.0.1:5000/program-selection/list-files');
+                const response = await axios.get('http://13.56.252.100:8000/program-selection/list-files');
                 const sortedFiles = response.data.sort((a, b) => {
                     const numA = a.filename.match(/\d+/);
                     const numB = b.filename.match(/\d+/);
@@ -40,7 +40,7 @@ const RemoveFiles = () => {
 
     const handleRemoveFiles = async () => {
         try {
-            const response = await axios.post('http://127.0.0.1:5000/program-selection/remove-files', {
+            const response = await axios.post('http://127.0.0.1:8000/program-selection/remove-files', {
                 filenames: selectedFiles
             });
             alert(response.data.message);

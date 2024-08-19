@@ -62,7 +62,7 @@
     width: 100%;
     max-width: 1000px;
     margin-bottom: 20px;
-    max-height: 420px; /* Restrict the height */
+    max-height: 450px; /* Restrict the height */
     overflow-x: auto; /* Make it scrollable */
 }
 
@@ -166,7 +166,7 @@
     max-width: 800px;
     display: flex;
     gap: 10px;
-    margin-top: auto;
+    margin-top: auto; 
 }
 
 .input-field {
