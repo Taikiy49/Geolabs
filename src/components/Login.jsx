@@ -11,7 +11,7 @@ const Login = ({ setIsAuthenticated }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://13.56.252.100:8000/login', { email, password });
+      const response = await axios.post(`${process.env.REACT_APP_API_URL}/login`, { email, password });
       if (response.status === 200) {
         // Store the authentication token in localStorage
         localStorage.setItem('authToken', response.data.token);
@@ -48,4 +48,3 @@ const Login = ({ setIsAuthenticated }) => {
 };
 
 export default Login;
-
