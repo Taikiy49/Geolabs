@@ -13,10 +13,10 @@ const SearchDatabase = () => {
     setInput('');
     setOutput(''); 
     try {
-      const response = await axios.post(`${process.env.REACT_APP_API_URL}/program-selection/search-database`, { prompt: input });
+      const response = await axios.post(`http://13.56.252.100:8000/program-selection/search-database`, { prompt: input });
       let formattedOutput = response.data.response
         .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
-        .replace(/^\s*\*\s*(.+)$/gm, '<li>$1</li>'); // Convert lines starting with * to list items
+        .replace(/^\s*\*\s*(.+)$/gm, '<li>$1</li>'); 
 
       formattedOutput = `<ul>${formattedOutput}</ul>`;
       setOutput(formattedOutput);
