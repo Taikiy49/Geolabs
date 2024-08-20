@@ -24,7 +24,7 @@ const Relevancy = () => {
 
   const handleViewClick = async (fileName) => {
     try {
-      const response = await axios.post(`http://13.56.252.100:8000/program-selection/get-quick-view`, {
+      const response = await axios.post(`http://13.56.180.103:8000/program-selection/get-quick-view`, {
         filename: fileName,
         prompt: submittedInput // Send the original query to find relevant sentences
       });

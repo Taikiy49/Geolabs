@@ -20,7 +20,7 @@ const AddFiles = () => {
 
     setIsUploading(true);
     try {
-      const response = await axios.post(`http://13.56.252.100:8000/program-selection/add-files`, formData, {
+      const response = await axios.post(`http://13.56.180.103:8000/program-selection/add-files`, formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },

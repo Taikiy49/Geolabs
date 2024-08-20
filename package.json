@@ -1,7 +1,7 @@
 {
   "name": "react-geolabs-app",
   "version": "0.1.0",
-  "proxy": "http://13.56.252.100:8000",
+  "proxy": "http://13.56.180.103:8000",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
