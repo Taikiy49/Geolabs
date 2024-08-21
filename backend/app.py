@@ -23,7 +23,7 @@ app.config['SESSION_TYPE'] = 'filesystem'  # Use filesystem session storage
 app.config['PERMANENT_SESSION_LIFETIME'] = timedelta(minutes=5)  # Session lifetime
 Session(app)  # Initialize the session extension
 
-CORS(app, resources={r"/*": {"origins": "*"}})
+CORS(app, resources={r"/*": {"origins": "https://geolabs.vercel.app"}})
 login_manager = LoginManager(app)
 login_manager.login_view = 'login'
 

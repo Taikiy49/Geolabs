@@ -7,7 +7,7 @@ from model_settings import get_api_key, get_generation_config, get_uri
 class Model:
     def __init__(self):
         genai.configure(api_key=get_api_key())
-        self._model = genai.GenerativeModel(model_name="gemini-1.5-flash", generation_config=get_generation_config())
+        self._model = genai.GenerativeModel(model_name="gemini-1.5-pro", generation_config=get_generation_config())
         self._client = MongoClient(get_uri(), tlsAllowInvalidCertificates=True)
         self._pdf_data_db = self._client['PDFData']
         self._data_list = []
