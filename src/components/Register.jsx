@@ -16,7 +16,7 @@ const Register = ({ setIsAuthenticated }) => {
       return;
     }
     try {
-      const response = await axios.post(`http://127.0.0.1:8000/register`, { email, password });
+      const response = await axios.post(`http://13.56.180.103:8000/register`, { email, password });
       if (response.status === 200) {
         setIsAuthenticated(true);
         navigate('/');

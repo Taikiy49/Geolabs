@@ -15,7 +15,7 @@ const Relevancy = () => {
     setFileNames([]);
     setSelectedFileContent('');
     try {
-      const response = await axios.post(`http://13.56.252.100:8000/program-selection/search-filenames`, { prompt: input });
+      const response = await axios.post(`http://13.56.180.103:8000/program-selection/search-filenames`, { prompt: input });
       setFileNames(response.data.filenames);
     } catch (error) {
       console.error('There was an error retrieving the file names from the server!', error);

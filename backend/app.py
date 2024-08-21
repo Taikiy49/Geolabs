@@ -173,7 +173,7 @@ def get_quick_view():
             if i > 3: break
             for sentence in sentences:
                 if i > 3: break
-                if keyword in sentence.lower():
+                if keyword.lower() in sentence.lower():
                     relevant_sentences.append(sentence)
                     i += 1
 
