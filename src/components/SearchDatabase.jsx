@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import '../styles/SearchDatabase.css'; 
+import '../styles/SearchDatabase.css';
 
 const SearchDatabase = () => {
   const [input, setInput] = useState('');
@@ -13,10 +13,10 @@ const SearchDatabase = () => {
     setInput('');
     setOutput(''); 
     try {
-      const response = await axios.post('http://127.0.0.1:5000/program-selection/search-database', { prompt: input });
+      const response = await axios.post(`http://13.56.180.103:8000/program-selection/search-database`, { prompt: input });
       let formattedOutput = response.data.response
         .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
-        .replace(/^\s*\*\s*(.+)$/gm, '<li>$1</li>'); // Convert lines starting with * to list items
+        .replace(/^\s*\*\s*(.+)$/gm, '<li>$1</li>'); 
 
       formattedOutput = `<ul>${formattedOutput}</ul>`;
       setOutput(formattedOutput);

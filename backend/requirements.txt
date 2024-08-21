@@ -7,3 +7,4 @@ dotenv
 PyPDF4
 flask_session
 gridfs
+flask===3.0.0

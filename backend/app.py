@@ -1,5 +1,4 @@
-from datetime import timedelta, datetime
-from flask import Flask, request, jsonify, session
+from flask import Flask, send_from_directory, jsonify, request, session
 from flask_cors import CORS
 from flask_login import LoginManager, UserMixin, login_user, login_required, logout_user
 from werkzeug.security import generate_password_hash, check_password_hash
@@ -14,6 +13,8 @@ from model_settings import get_uri
 from functools import lru_cache
 from concurrent.futures import ThreadPoolExecutor
 import spacy
+import os
+from datetime import timedelta, datetime
 
 # Global variables
 app = Flask(__name__)
@@ -22,10 +23,11 @@ app.config['SESSION_TYPE'] = 'filesystem'  # Use filesystem session storage
 app.config['PERMANENT_SESSION_LIFETIME'] = timedelta(minutes=5)  # Session lifetime
 Session(app)  # Initialize the session extension
 
-CORS(app)
+CORS(app, resources={r"/*": {"origins": "*"}})
 login_manager = LoginManager(app)
 login_manager.login_view = 'login'
 
+print(get_uri())
 client = MongoClient(get_uri(), tlsAllowInvalidCertificates=True)
 users_db, pdf_data_db = client['UserProfile'], client['PDFData']
 
@@ -55,7 +57,7 @@ class User(UserMixin):
 
 def get_filtered_documents(keywords_list):
     query = {"$text": {"$search": " ".join(keywords_list)}}
-    filtered_documents = pdf_data_db.pdf_data.find(query, {"score": {"$meta": "textScore"}}).sort("score", {"$meta": "textScore"}).limit(1)
+    filtered_documents = pdf_data_db.pdf_data.find(query, {"score": {"$meta": "textScore"}}).sort("score", {"$meta": "textScore"}).limit(20)
     documents = [{"filename": doc["filename"], "content": doc["content"]} for doc in filtered_documents]
     print("Top 5 matched files:")
     for doc in documents:
@@ -68,14 +70,6 @@ def load_user(user_id):
     if user:
         return User(str(user["_id"]), user["email"])
     return None
-
-def save_to_db(filename, content):
-    entry = {
-        "filename": filename,
-        "content": content,
-        "last_updated": datetime.utcnow()
-    }
-    pdf_data_db.pdf_data.insert_one(entry)
 
 @app.route('/program-selection/build-resume', methods=['POST'])
 def build_resume():
@@ -149,6 +143,48 @@ def remove_files():
         return jsonify({"message": "No files were removed"}), 400
 
 
+@app.route('/program-selection/search-filenames', methods=['POST'])
+def search_filenames():
+    data = request.get_json()
+    prompt = data.get('prompt')
+    keywords_list = extract_relevant_words(prompt)
+    filtered_documents = get_filtered_documents(keywords_list)
+    filenames = [doc["filename"] for doc in filtered_documents]
+    return jsonify({"filenames": filenames})
+
+@app.route('/program-selection/get-quick-view', methods=['POST'])
+def get_quick_view():
+    data = request.get_json()
+    filename = data.get('filename')
+    file_entry = pdf_data_db.pdf_data.find_one({"filename": filename})
+    
+    if file_entry:
+        content = file_entry.get('content', [])
+        prompt = request.json.get('prompt', '')
+        keywords = extract_relevant_words(prompt)
+
+        print(f"Extracted keywords: {keywords}")  # Debug: Show extracted keywords
+
+        relevant_sentences = []
+        sentences = content.split('.')  
+        i = 0
+        for keyword in keywords:
+            print(keyword)
+            if i > 3: break
+            for sentence in sentences:
+                if i > 3: break
+                if keyword.lower() in sentence.lower():
+                    relevant_sentences.append(sentence)
+                    i += 1
+
+        # Find sentences that contain any of the relevant keywords
+        print(f"Relevant sentences: {relevant_sentences}")  # Debug: Show relevant sentences
+
+        # Return the first 3 relevant sentences
+        quick_view_content = " ".join(relevant_sentences[:3])
+        return jsonify({"content": quick_view_content}), 200
+    else:
+        return jsonify({"message": "File not found"}), 404
 
 @app.route('/register', methods=['POST'])
 def register():
@@ -185,4 +221,5 @@ def logout():
     return jsonify({"message": "Logged out successfully"}), 200
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=8000)
+
