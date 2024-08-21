@@ -67,7 +67,7 @@ const RemoveFiles = () => {
                             checked={selectedFiles.includes(file.filename)}
                             onChange={() => handleSelectFile(file.filename)}
                         />
-                        {`${index + 1}. ${file.filename}`}
+                        {`${file.filename}`}
                     </div>
                 ))}
             </div>
