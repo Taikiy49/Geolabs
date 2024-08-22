@@ -1,17 +1,19 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import getConfig from '../config';
 import '../styles/Login.css';
 
 const Login = ({ setIsAuthenticated }) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const navigate = useNavigate();
+  const { apiUrl } = getConfig();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post(`http://13.56.180.103:8000/login`, { email, password });
+      const response = await axios.post(`${apiUrl}/login`, { email, password });
       if (response.status === 200) {
         // Store the authentication token in localStorage
         localStorage.setItem('authToken', response.data.token);

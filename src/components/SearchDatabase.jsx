@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import '../styles/SearchDatabase.css';
+import getConfig from '../config';
 
 const SearchDatabase = () => {
   const [input, setInput] = useState('');
   const [output, setOutput] = useState('');
   const [submittedInput, setSubmittedInput] = useState('');
+  const { apiUrl } = getConfig();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -13,7 +15,7 @@ const SearchDatabase = () => {
     setInput('');
     setOutput(''); 
     try {
-      const response = await axios.post(`http://13.56.180.103:8000/program-selection/search-database`, { prompt: input });
+      const response = await axios.post(`${apiUrl}/program-selection/search-database`, { prompt: input });
       let formattedOutput = response.data.response
         .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
         .replace(/^\s*\*\s*(.+)$/gm, '<li>$1</li>'); 

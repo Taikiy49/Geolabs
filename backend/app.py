@@ -1,4 +1,4 @@
-from flask import Flask, send_from_directory, jsonify, request, session
+from flask import Flask, jsonify, request, session
 from flask_cors import CORS
 from flask_login import LoginManager, UserMixin, login_user, login_required, logout_user
 from werkzeug.security import generate_password_hash, check_password_hash
@@ -7,10 +7,9 @@ from bson.objectid import ObjectId
 import gridfs
 import secrets
 from model_building import Model
-from model_functions import ParseFile, return_keywords
+from model_functions import ParseFile
 from flask_session import Session
 from model_settings import get_uri
-from functools import lru_cache
 from concurrent.futures import ThreadPoolExecutor
 import spacy
 import os
@@ -23,7 +22,7 @@ app.config['SESSION_TYPE'] = 'filesystem'  # Use filesystem session storage
 app.config['PERMANENT_SESSION_LIFETIME'] = timedelta(minutes=5)  # Session lifetime
 Session(app)  # Initialize the session extension
 
-CORS(app, resources={r"/*": {"origins": "https://geolabs.vercel.app"}})
+CORS(app, resources={r"/*": {"origins": ["https://geolabs.vercel.app", "http://localhost:3000"]}})
 login_manager = LoginManager(app)
 login_manager.login_view = 'login'
 
@@ -31,7 +30,7 @@ print(get_uri())
 client = MongoClient(get_uri(), tlsAllowInvalidCertificates=True)
 users_db, pdf_data_db = client['UserProfile'], client['PDFData']
 
-# Initialize GridFS
+
 fs = gridfs.GridFS(pdf_data_db)
 
 chat_session = None  # Initialize chat_session as a global variable
@@ -76,13 +75,12 @@ def build_resume():
     data = request.get_json()
 
 def extract_relevant_words(prompt):
-    # Process the text using spaCy
     doc = nlp(prompt)
     relevant_words = []
     for token in doc:
-        if token.pos_ in ["NOUN", "PROPN"]:  # Nouns and Proper Nouns
+        if token.pos_ in ["NOUN", "PROPN"]: 
             relevant_words.append(token.text)
-        elif token.ent_type_ in ["GPE", "LOC", "ORG"]:  # Locations, Geopolitical entities, Organizations
+        elif token.ent_type_ in ["GPE", "LOC", "ORG"]: 
             relevant_words.append(token.text)
         elif token.like_num: 
             relevant_words.append(token.text)

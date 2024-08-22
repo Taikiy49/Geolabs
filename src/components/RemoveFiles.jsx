@@ -1,17 +1,19 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import '../styles/RemoveFiles.css';
+import getConfig from '../config';
 
 const RemoveFiles = () => {
     const [files, setFiles] = useState([]);
     const [selectedFiles, setSelectedFiles] = useState([]);
     const [loading, setLoading] = useState(true);
+    const { apiUrl } = getConfig();
 
     useEffect(() => {
         // Fetch the list of files from the server
         const fetchFiles = async () => {
             try {
-                const response = await axios.get(`http://13.56.180.103:8000/program-selection/list-files`);
+                const response = await axios.get(`${apiUrl}/program-selection/list-files`);
                 const sortedFiles = response.data.sort((a, b) => {
                     const numA = a.filename.match(/\d+/);
                     const numB = b.filename.match(/\d+/);
@@ -40,7 +42,7 @@ const RemoveFiles = () => {
 
     const handleRemoveFiles = async () => {
         try {
-            const response = await axios.post(`http://13.56.180.103:8000/program-selection/remove-files`, {
+            const response = await axios.post(`${apiUrl}/program-selection/remove-files`, {
                 filenames: selectedFiles
             });
             alert(response.data.message);

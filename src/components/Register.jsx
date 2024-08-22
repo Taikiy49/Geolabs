@@ -2,12 +2,14 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import '../styles/Register.css';
+import getConfig from '../config'
 
 const Register = ({ setIsAuthenticated }) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
   const navigate = useNavigate();
+  const { apiUrl } = getConfig();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -16,7 +18,7 @@ const Register = ({ setIsAuthenticated }) => {
       return;
     }
     try {
-      const response = await axios.post(`http://13.56.180.103:8000/register`, { email, password });
+      const response = await axios.post(`${apiUrl}/register`, { email, password });
       if (response.status === 200) {
         setIsAuthenticated(true);
         navigate('/');

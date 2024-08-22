@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import '../styles/Relevancy.css';
+import getConfig from '../config';
 
 const Relevancy = () => {
   const [input, setInput] = useState('');
   const [fileNames, setFileNames] = useState([]);
   const [submittedInput, setSubmittedInput] = useState('');
   const [selectedFileContent, setSelectedFileContent] = useState('');
+  const { apiUrl } = getConfig();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -15,7 +17,7 @@ const Relevancy = () => {
     setFileNames([]);
     setSelectedFileContent('');
     try {
-      const response = await axios.post(`http://13.56.180.103:8000/program-selection/search-filenames`, { prompt: input });
+      const response = await axios.post(`${apiUrl}/program-selection/search-filenames`, { prompt: input });
       setFileNames(response.data.filenames);
     } catch (error) {
       console.error('There was an error retrieving the file names from the server!', error);
@@ -24,7 +26,7 @@ const Relevancy = () => {
 
   const handleViewClick = async (fileName) => {
     try {
-      const response = await axios.post(`http://13.56.180.103:8000/program-selection/get-quick-view`, {
+      const response = await axios.post(`${apiUrl}/program-selection/get-quick-view`, {
         filename: fileName,
         prompt: submittedInput // Send the original query to find relevant sentences
       });

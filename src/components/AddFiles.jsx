@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import getConfig from '../config';
 import '../styles/AddFiles.css';
 
 const AddFiles = () => {
   const [selectedFiles, setSelectedFiles] = useState([]);
   const [isUploading, setIsUploading] = useState(false);
+  const { apiUrl } = getConfig();
 
   const handleFileChange = (event) => {
     const files = Array.from(event.target.files);
@@ -20,7 +22,7 @@ const AddFiles = () => {
 
     setIsUploading(true);
     try {
-      const response = await axios.post(`http://13.56.180.103:8000/program-selection/add-files`, formData, {
+      const response = await axios.post(`${apiUrl}/program-selection/add-files`, formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
