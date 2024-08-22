@@ -12,7 +12,6 @@ from flask_session import Session
 from model_settings import get_uri
 from concurrent.futures import ThreadPoolExecutor
 import spacy
-import os
 from datetime import timedelta, datetime
 
 # Global variables

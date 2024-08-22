@@ -59,7 +59,6 @@
     width: 70%;
     max-height: 450px; /* Restrict the height */
     overflow-y: auto; /* Make it scrollable */
-    overflow-x: hidden;
 }
 
 .filenames-list {
@@ -107,6 +106,8 @@
 .filename-text {
     color: white;
     font-size: 16px;
+    word-wrap: break-word; /* Break long words */
+    overflow-wrap: break-word; /* Provides better support across different browsers */
 }
 
 .view-button {
@@ -147,6 +148,8 @@
 }
 
 .file-content-display p {
+    word-wrap: break-word; /* Break long words */
+    overflow-wrap: break-word; /* Provides better support across different browsers */
     font-size: 16px;
     line-height: 1.6;
     white-space: pre-wrap; /* Preserve whitespace and line breaks */
