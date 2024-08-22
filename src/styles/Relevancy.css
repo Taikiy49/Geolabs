@@ -6,7 +6,7 @@
 
 .filenames-list-container::-webkit-scrollbar-track,
 .remove-files-list::-webkit-scrollbar-track {
-    background: rgba(0, 0, 0, 0.1); /* Background of the track */
+    background: #0000001a; /* Background of the track */
     border-radius: 10px;
 }
 
@@ -34,8 +34,6 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     padding: 40px 20px;
     box-sizing: border-box;
     position: relative;
@@ -45,25 +43,23 @@
 /* Submitted input display */
 .submitted-input-container {
     color: white;
-    width: 100%;
     max-width: 800px;
-    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-right: auto; margin-left: 200px;
 }
 
 .submitted-input-display {
-    font-weight: bold;
-    background-color: rgba(0, 0, 0, 0.2);
     border-radius: 5px;
     padding: 10px 20px;
 }
 
 /* File names list styles */
 .filenames-list-container {
-    width: 100%;
-    max-width: 1000px;
-    margin-bottom: 20px;
+    margin-bottom: 20px; margin-top: 20px; margin-right: auto; margin-left: 200px;
+    width: 70%;
     max-height: 450px; /* Restrict the height */
-    overflow-x: auto; /* Make it scrollable */
+    overflow-y: auto; /* Make it scrollable */
+    overflow-x: hidden;
 }
 
 .filenames-list {
@@ -86,7 +82,6 @@
 }
 
 .rank-number {
-    font-weight: bold;
     font-size: 18px;
     color: white;
 }
@@ -112,14 +107,12 @@
 .filename-text {
     color: white;
     font-size: 16px;
-    font-weight: bold;
 }
 
 .view-button {
     margin-left: 50px;
     background-color: rgba(0, 0, 0, 0.2);
     color: white;
-    font-weight: bold;
     border: none;
     padding: 10px 20px;
     font-size: 14px;
@@ -137,13 +130,13 @@
 
 /* Relevant Sentences Display */
 .file-content-display {
+    width: 70%;
     background-color: rgba(0, 0, 0, 0.3);
     color: white;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
-    max-width: 800px;
-    margin-top: 20px;
+    margin-top: 20px; margin-right: 200px;
 }
 
 .file-content-display h3 {
@@ -154,7 +147,6 @@
 }
 
 .file-content-display p {
-    margin: 0;
     font-size: 16px;
     line-height: 1.6;
     white-space: pre-wrap; /* Preserve whitespace and line breaks */
@@ -162,11 +154,11 @@
 
 /* Form styles */
 .relevancy-form {
+    margin-right: auto; margin-left: 200px;
     width: 100%;
-    max-width: 800px;
+    max-width: 250px;
     display: flex;
-    gap: 10px;
-    margin-top: auto; 
+    gap: 10px; 
 }
 
 .input-field {
@@ -194,7 +186,6 @@
 .submit-button {
     background-color: rgba(0, 0, 0, 0.2);
     color: white;
-    font-weight: bold;
     border: none;
     padding: 10px 20px;
     font-size: 16px;
@@ -208,4 +199,9 @@
 .submit-button:hover {
     background-color: rgba(0, 0, 0, 0.5);
     transform: scale(1.05);
+}
+
+.mini-container{
+    display: flex;
+    flex-direction: row;
 }

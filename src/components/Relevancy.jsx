@@ -39,43 +39,50 @@ const Relevancy = () => {
   
   return (
     <div className="relevancy-container">
-      <div className="submitted-input-container">
-        {submittedInput && (
-          <div className="submitted-input-display">{submittedInput}</div>
-        )}
-      </div>
-      <div className="filenames-list-container">
-        <ul className="filenames-list">
-          {fileNames.map((fileName, index) => (
-            <li key={index} className="filename-item">
-              <div className="rank-container">
-                <span className="rank-number">{index + 1}</span>
-              </div>
-              <div className="filename-box">
-                <span className="filename-text">{fileName}</span>
-                <button className="view-button" onClick={() => handleViewClick(fileName)}>Quick View</button>
-              </div>
-            </li>
-          ))}
-        </ul>
-      </div>
-      {selectedFileContent && (
-        <div className="file-content-display">
-          <h3>Relevant Sentences</h3>
-          <p>{selectedFileContent}</p>
-        </div>
-      )}
       <form onSubmit={handleSubmit} className="relevancy-form">
         <input
           type="text"
           value={input}
           onChange={(e) => setInput(e.target.value)}
-          placeholder="Enter your search query..."
+          placeholder="Type a word..."
           className="input-field"
         />
         <button type="submit" className="submit-button">Submit</button>
       </form>
-    </div>
+      <div className="submitted-input-container">
+        {submittedInput && (
+          <div className="submitted-input-display">Input: {submittedInput}</div>
+        )}
+      </div>
+      <div className="mini-container">
+        <div>
+          <div className="filenames-list-container">
+            <ul className="filenames-list">
+              {fileNames.map((fileName, index) => (
+                <li key={index} className="filename-item">
+                  <div className="rank-container">
+                    <span className="rank-number">{index + 1}</span>
+                  </div>
+                  <div className="filename-box">
+                    <span className="filename-text">{fileName}</span>
+                    <button className="view-button" onClick={() => handleViewClick(fileName)}>Quick View</button>
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+
+        <div>
+          {selectedFileContent && (
+            <div className="file-content-display">
+              <h3>Relevant Sentences</h3>
+              <p>{selectedFileContent}</p>
+            </div>
+          )}
+        </div>
+      </div>
+  </div>
   );
 };
 

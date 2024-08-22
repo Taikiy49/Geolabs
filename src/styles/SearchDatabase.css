@@ -89,8 +89,7 @@
 
 
 .submitted-input-display{
-  font-weight: bold;
-  background-color: rgba(0, 0, 0, 0.2);
+  font-weight: bold; font-size: 16px;
   border-radius: 5px; 
   padding-left: 20px; padding-right: 20px; padding-top: 10px; padding-bottom: 10px;
 }
