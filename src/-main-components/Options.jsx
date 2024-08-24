@@ -1,13 +1,34 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const Options = ({ isMainPage }) => {
   const navigate = useNavigate();
+  const [searchQuery, setSearchQuery] = useState('');
+
+  const handleSearch = (event) => {
+    event.preventDefault();
+    // Implement the search functionality here
+    console.log('Search Query:', searchQuery);
+    // Navigate to a search results page or handle the search query
+  };
 
   return (
     <div className="app-container">
+      <div className='split-containers'>
+        <div className='main-search'>
+          <form onSubmit={handleSearch}>
+            <input
+              type="text"
+              placeholder="Search..."
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              className="search-input"
+            />
+            <button type="submit" className="search-button">Search</button>
+          </form>
+        </div>
+      </div>
       <div className="inner-borders">
-        <div className="logo" onClick={() => navigate('/')}>Geolabs, Inc.</div>
         {isMainPage && (
           <div className="software-sections">
             <div className="software-section">
@@ -41,11 +62,11 @@ const Options = ({ isMainPage }) => {
                   <div className="add-remove-option-box" onClick={() => navigate('/program-selection/add-files')}>
                     <h2>Add Files</h2>
                   </div>
-                <div className="add-remove-option-box" onClick={() => navigate('/program-selection/remove-files')}>
-                  <h2>Remove Files</h2>
+                  <div className="add-remove-option-box" onClick={() => navigate('/program-selection/remove-files')}>
+                    <h2>Remove Files</h2>
+                  </div>
+                  <div className='add-remove-text'>Please be cautious when using this method, as it affects the shared database accessed by all users. Ensure to seek authorization before proceeding, as only authorized personnel are permitted to use these options</div>
                 </div>
-                <div className='add-remove-text'>Please be cautious when using this method, as it affects the shared database accessed by all users. Ensure to seek authorization before proceeding, as only authorized personnel are permitted to use these options</div>
-              </div>
               </div>
 
               <div className="another-section">

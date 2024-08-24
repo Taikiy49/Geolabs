@@ -21,13 +21,10 @@ html, body {
   height: 100%;
   display: flex;
   justify-content: center;
-  align-items: center; /* Center content within the container */
 }
 
 
 .app-header, .app-footer {
-  height: 100vh;
-  overflow: auto;
   background-color: rgba(0, 0, 0, 0.2);
   display: flex;
   justify-content: space-between;
@@ -37,7 +34,6 @@ html, body {
 }
 
 .app-header {
-  height: 100vh; /* Full height of the viewport */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -50,7 +46,7 @@ html, body {
 
 
 .logo {
-  margin-right: auto; margin-left: 40px; margin-top: 20px; margin-bottom: 20px;
+  margin-bottom: 20px; padding-left: 10px; padding-right: 10px;
   font-size: 25px;
   font-weight: bold;
   color: #ffffff;
@@ -68,6 +64,7 @@ html, body {
 }
 
 .nav-button, .auth-button {
+  margin-left: 10px;
   background: none;
   border: none;
   box-shadow: none;
@@ -114,7 +111,7 @@ html, body {
   background-color: rgba(0, 0, 0, 0.2);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(10px);
-  margin-bottom: 30px;
+  margin-bottom: 30px; margin-top: 30px;
   width: 100%;
   box-sizing: border-box;
   align-items: center; /* Center content within each section */
@@ -200,3 +197,44 @@ html, body {
   gap: 30px;
 
 }
+
+
+/* Search Bar Styles */
+.main-search {
+  width: 100%;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.search-input {
+  width: 60%;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #FFFFFF;
+  outline: none;
+  box-sizing: border-box;
+  margin-right: 10px;
+}
+
+.search-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #FFFFFF;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.search-button:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
