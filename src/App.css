@@ -1,23 +1,14 @@
 /* General Styles */
 html, body {
-  --image-gradient: linear-gradient(
-    to bottom left,
-    rgba(17, 16, 16, 0.3),
-    rgba(12, 10, 22, 0.3)
-  );
-
-  margin: 0;
-  padding: 0;
   width: 100%;
   height: 100%;
   font-family: sans-serif;
-  background-image: var(--image-gradient), url('background.jpg'); 
+  /* background-image: var(--image-gradient), url('background.jpg');  */
+  background-color: #10172a;
   color: #FFFFFF;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  box-sizing: border-box;/* Added transparency */
+  align-items: center; /* Center content vertically */
 }
 
 #root {
@@ -29,76 +20,93 @@ html, body {
   width: 100%;
   height: 100%;
   display: flex;
-  flex-direction: column;
-  position: relative;
+  justify-content: center;
+  align-items: center; /* Center content within the container */
 }
 
+
 .app-header, .app-footer {
+  height: 100vh;
+  overflow: auto;
   background-color: rgba(0, 0, 0, 0.2);
-  width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   padding: 20px;
   box-sizing: border-box;
-  border: 2px solid rgba(255, 255, 255, 0.5);
-  backdrop-filter: blur(5px);
   z-index: 2;
 }
 
+.app-header {
+  height: 100vh; /* Full height of the viewport */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  box-sizing: border-box;
+  z-index: 2;
+  overflow: hidden; /* Prevent content overflow */
+}
+
+
 .logo {
+  margin-right: auto; margin-left: 40px; margin-top: 20px; margin-bottom: 20px;
   font-size: 25px;
   font-weight: bold;
   color: #ffffff;
   text-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
+  cursor: pointer;
 }
 
 .nav-buttons, .auth-buttons {
   display: flex;
+  flex-direction: column;
+  width: 100%;
+  flex-grow: 1; /* Allow the container to grow and fill the remaining space */
   gap: 15px;
+  overflow-y: auto; /* Add scrolling if content exceeds the viewport height */
 }
 
 .nav-button, .auth-button {
-  background-color: rgba(0, 0, 0, 0.2);
-  color: white; text-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
-  padding: 10px 20px;
+  background: none;
+  border: none;
+  box-shadow: none;
+  text-decoration: none;
+  outline: none;
+  width: 100%;
+  color: white;
   font-size: 16px;
-  border-radius: 10px;
   cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-  border: 2px solid rgba(255, 255, 255, 0.5);
+  text-align: left;
+  padding: 10px 0; /* Add padding for some vertical space */
 }
 
 .nav-button:hover, .auth-button:hover {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(255, 255, 255, 0.2);
   transform: scale(1.05);
   opacity: 1;
 }
 
 .main-content {
-  
-  border-left: 1px solid rgba(255, 255, 255, 0.5); 
-  border-right: 1px solid rgba(255, 255, 255, 0.5); 
   flex: 1;
   width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   box-sizing: border-box;
   position: relative;
   z-index: 1; 
 }
 
-.hero-sections {
-  position: relative;
-  margin-top: 20px;
-  margin-bottom: -85px;
+.software-sections {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+  justify-content: center; /* Center content vertically */
+  margin-left: 20px; margin-right: 20px;
 }
 
-.hero-section {
-  text-align: center;
+.software-section {
+  display: flex;
+  flex-direction: column;
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 15px;
@@ -106,36 +114,26 @@ html, body {
   background-color: rgba(0, 0, 0, 0.2);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(10px);
-  border: 2px solid rgba(255, 255, 255, 0.5);
-  animation: pulse 5s infinite;
   margin-bottom: 30px;
+  width: 100%;
+  box-sizing: border-box;
+  align-items: center; /* Center content within each section */
+  text-align: center; /* Center text inside the section */
 }
 
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.05);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-.hero-title {
+.software-title {
   font-size: 25px;
   font-weight: bold;
   margin-bottom: 17px;
   text-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
 }
 
-.hero-description {
+.software-description {
   font-size: 15px;
   margin-bottom: 20px;
 }
 
-.hero-button {
+.software-button {
   background-color: rgba(0, 0, 0, 0.2);
   color: white;
   border: none;
@@ -148,9 +146,41 @@ html, body {
   border: 2px solid rgba(255, 255, 255, 0.5);
 }
 
-.hero-button:hover {
+.software-button:hover {
   background-color: rgba(0, 0, 0, 0.5);
   opacity: 1;
+}
+
+.database-section{
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 15px;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  margin-bottom: 30px;
+  width: 60%;
+  box-sizing: border-box;
+  margin-right: auto;
+}
+
+.another-section{
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 15px;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  margin-bottom: 30px;
+  width: 40%;
+  box-sizing: border-box;
+  margin-left: auto;
 }
 
 .app-footer {
@@ -158,21 +188,15 @@ html, body {
   gap: 50px;
 }
 
-.stars {
-  position: absolute;
+
+.inner-borders{
   width: 100%;
-  height: 100%;
-  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200"><circle cx="10" cy="10" r="2" fill="white"/><circle cx="50" cy="50" r="2" fill="white"/><circle cx="100" cy="100" r="2" fill="white"/><circle cx="150" cy="150" r="2" fill="white"/><circle cx="200" cy="200" r="2" fill="white"/></svg>') repeat;
-  z-index: 0;
-  opacity: 0.2;
-  animation: moveStars 20s linear infinite;
+  display: flex;
+  flex-direction: column;
 }
 
-@keyframes moveStars {
-  from {
-    background-position: 0 0;
-  }
-  to {
-    background-position: 200px 200px;
-  }
+.bottom-section{
+  display: flex;
+  gap: 30px;
+
 }

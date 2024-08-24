@@ -34,7 +34,7 @@ class Model:
     def generate_response(self, chat_session, prompt):
         response = chat_session.send_message(
             "Given just all the information I fed you earlier, " + prompt + 
-            " ONLY give me answers that are related to the topic"
+            "ONLY give me answers that are related to the topic",
         )
         return response
 

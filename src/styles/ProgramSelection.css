@@ -1,10 +1,9 @@
-.container {
+.program-selection-container {
     width: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
-    padding: 40px 20px;
     box-sizing: border-box;
+    flex-direction: column;
   }
   
   .options-container {
@@ -45,3 +44,32 @@
     text-shadow: 0 0 5px rgba(255, 255, 255, 0.2); /* Subtle text shadow */
   }
   
+
+.add-remove-container{
+  padding: 20px;
+  border-radius: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.2); 
+  display: flex;
+  margin-bottom: 100px;
+  gap: 20px;
+}
+
+.add-remove-option-box{
+  font-size: 10px;
+  padding-left: 10px; padding-right: 10px;
+  background-color: rgba(0, 0, 0, 0.2); /* Transparent white */
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); /* Darker shadow */
+  backdrop-filter: blur(10px); /* Frosted glass effect */
+  border: 2px solid rgba(255, 255, 255, 0.2); /* Cool border */
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.add-remove-text{
+  margin-top: 5px;
+  width: 100%;
+  max-width: 1000px;
+}

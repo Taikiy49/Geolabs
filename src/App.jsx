@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, useLocation } from 'react-router-dom';
 import './App.css';
 import Options from './-main-components/Options';
-import Header from './-main-components/Header';
+import LeftSidebar from './-main-components/LeftSidebar';
+import RightSidebar from './-main-components/RightSidebar';
 import AppRoutes from './-main-components/AppRoutes';
 import Footer from './-main-components/Footer';
 
@@ -19,12 +20,15 @@ const Main = () => {
   }, []);
 
   return (
-    <div className="app-container">
-      <Header isAuthenticated={isAuthenticated} setIsAuthenticated={setIsAuthenticated} />
-      <main className="main-content">
-        <Options isMainPage={isMainPage} />
-        <AppRoutes isAuthenticated={isAuthenticated} setIsAuthenticated={setIsAuthenticated} />
-      </main>
+    <div>
+      <div className="app-container">
+        <LeftSidebar isAuthenticated={isAuthenticated} setIsAuthenticated={setIsAuthenticated} />
+        <main className="main-content">
+          <Options isMainPage={isMainPage} />
+          <AppRoutes isAuthenticated={isAuthenticated} setIsAuthenticated={setIsAuthenticated} />
+        </main>
+        <RightSidebar isAuthenticated={isAuthenticated} setIsAuthenticated={setIsAuthenticated} />
+      </div>
       <Footer />
     </div>
   );
