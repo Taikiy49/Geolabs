@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import axios from 'axios';
+import debounce from 'lodash.debounce';
 import '../styles/Relevancy.css';
 import getConfig from '../config';
 
@@ -10,17 +11,20 @@ const Relevancy = () => {
   const [selectedFileContent, setSelectedFileContent] = useState('');
   const { apiUrl } = getConfig();
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setSubmittedInput(input);
-    setInput('');
-    setFileNames([]);
-    setSelectedFileContent('');
+  const searchFiles = async (query) => {
     try {
-      const response = await axios.post(`${apiUrl}/program-selection/search-filenames`, { prompt: input });
+      const response = await axios.post(`${apiUrl}/program-selection/search-filenames`, { prompt: query });
       setFileNames(response.data.filenames);
+      setSubmittedInput(query); // Store the latest query as the submitted input
     } catch (error) {
       console.error('There was an error retrieving the file names from the server!', error);
+    }
+  };
+
+  const handleKeyDown = (e) => {
+    if (e.key === 'Enter') {
+      e.preventDefault(); // Prevent the form from submitting
+      searchFiles(input);
     }
   };
 
@@ -30,24 +34,23 @@ const Relevancy = () => {
         filename: fileName,
         prompt: submittedInput // Send the original query to find relevant sentences
       });
-      console.log(response.data.content); // Log the content to see what is returned
       setSelectedFileContent(response.data.content);
     } catch (error) {
       console.error('There was an error retrieving the file content from the server!', error);
     }
   };
-  
+
   return (
     <div className="relevancy-container">
-      <form onSubmit={handleSubmit} className="relevancy-form">
+      <form onSubmit={(e) => e.preventDefault()} className="relevancy-form">
         <input
           type="text"
           value={input}
           onChange={(e) => setInput(e.target.value)}
+          onKeyDown={handleKeyDown} // Trigger search on Enter key press
           placeholder="Type a word..."
           className="input-field"
         />
-        <button type="submit" className="submit-button">Submit</button>
       </form>
       <div className="submitted-input-container">
         {submittedInput && (
@@ -82,7 +85,7 @@ const Relevancy = () => {
           )}
         </div>
       </div>
-  </div>
+    </div>
   );
 };
 

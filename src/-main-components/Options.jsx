@@ -93,21 +93,8 @@ const Options = ({ isMainPage }) => {
 
               <div className='bottom-section'>
                 <div className="database-section">
-                  <h1 className="database-title">Features</h1>
-                  <p className="database-description">Our software offers a range of powerful features to enhance your productivity.</p>
-
-                  {/* Scrollable list of files */}
-                  <div className="file-list-container">
-                    <h2>Total Files: {totalFiles}</h2>
-                    <div className="scrollable-file-list">
-                      {files.map((file, index) => (
-                        <div key={index} className="file-item">
-                          {file.filename}
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-
+                  <h1 className="database-title">Database</h1>
+                  <p className="database-description">View, add, and remove files from the private database.</p>
                   <div className='add-remove-container'>
                     {filteredBottomOptions
                       .filter(option => option.title === 'Add Files' || option.title === 'Remove Files')
@@ -122,6 +109,17 @@ const Options = ({ isMainPage }) => {
                       ))}
                     <div className='add-remove-text'>
                       Please be cautious when using this method, as it affects the shared database accessed by all users. Ensure to seek authorization before proceeding, as only authorized personnel are permitted to use these options.
+                    </div>
+                  </div>
+                  {/* Scrollable list of files */}
+                  <div className="file-list-container">
+                    <h2>Total Files: {totalFiles}</h2>
+                    <div className="scrollable-file-list">
+                      {files.map((file, index) => (
+                        <div key={index} className="file-item">
+                          {file.filename}
+                        </div>
+                      ))}
                     </div>
                   </div>
                 </div>

@@ -164,44 +164,9 @@
     gap: 10px; 
 }
 
-.input-field {
-    flex: 1;
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    background-color: rgba(0, 0, 0, 0.2);
-    color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    transition: all 0.3s ease;
-}
 
 .input-field::placeholder {
     color: rgba(255, 255, 255, 0.7);
-}
-
-.input-field:focus {
-    outline: none;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-/* Button styles */
-.submit-button {
-    background-color: rgba(0, 0, 0, 0.2);
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
-    border: 1px solid rgba(255, 255, 255, 0.3); 
-}
-
-.submit-button:hover {
-    background-color: rgba(0, 0, 0, 0.5);
-    transform: scale(1.05);
 }
 
 .mini-container{

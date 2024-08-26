@@ -5,7 +5,6 @@ import Options from './-main-components/Options';
 import LeftSidebar from './-main-components/LeftSidebar';
 import RightSidebar from './-main-components/RightSidebar';
 import AppRoutes from './-main-components/AppRoutes';
-import Footer from './-main-components/Footer';
 
 const Main = () => {
   const location = useLocation();
@@ -29,7 +28,6 @@ const Main = () => {
         </main>
         <RightSidebar isAuthenticated={isAuthenticated} setIsAuthenticated={setIsAuthenticated} />
       </div>
-      <Footer />
     </div>
   );
 };

@@ -9,8 +9,7 @@ const SearchDatabase = () => {
   const [submittedInput, setSubmittedInput] = useState('');
   const { apiUrl } = getConfig();
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+  const handleSubmit = async () => {
     setSubmittedInput(input);
     setInput('');
     setOutput(''); 
@@ -27,6 +26,13 @@ const SearchDatabase = () => {
     }
   };
 
+  const handleKeyDown = (e) => {
+    if (e.key === 'Enter') {
+      e.preventDefault(); // Prevent the form from submitting
+      handleSubmit();
+    }
+  };
+
   return (
     <div className="search-files-container">
       <div className="chatbot-output-container">
@@ -38,15 +44,15 @@ const SearchDatabase = () => {
           dangerouslySetInnerHTML={{ __html: output }}
         />
       </div>
-      <form onSubmit={handleSubmit} className="search-form">
+      <form onSubmit={(e) => e.preventDefault()} className="search-form">
         <input
           type="text"
           value={input}
           onChange={(e) => setInput(e.target.value)}
+          onKeyDown={handleKeyDown} // Trigger search on Enter key press
           placeholder="Start searching..."
           className="input-field"
         />
-        <button type="submit" className="submit-button">Submit</button>
       </form>
     </div>
   );

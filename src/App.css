@@ -4,16 +4,17 @@ html, body {
   height: 100%;
   font-family: sans-serif;
   /* background-image: var(--image-gradient), url('background.jpg');  */
-  background-color: #10172a;
+  background-color: #0d2741;
   color: #FFFFFF;
   display: flex;
   justify-content: center;
-  align-items: center; /* Center content vertically */
+  align-items: center; 
 }
 
 #root {
   width: 100%;
   height: 100%;
+  min-height: 100%;
 }
 
 .app-container {
@@ -25,8 +26,9 @@ html, body {
 
 
 .app-header, .app-footer {
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); /* Darker shadow */
-  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 2%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 1);
+  background-color: rgba(255, 255, 255, 0.05);
   display: flex;
   justify-content: space-between;
   padding: 20px;
@@ -34,11 +36,10 @@ html, body {
   z-index: 2;
 }
 
-.app-header {
+.app-header{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: rgba(0, 0, 0, 0.2);
   padding: 20px;
   box-sizing: border-box;
   z-index: 2;
@@ -86,6 +87,7 @@ html, body {
 }
 
 .main-content {
+  min-height: 100vh;
   flex: 1;
   width: 100%;
   display: flex;
@@ -109,10 +111,10 @@ html, body {
   padding-right: 20px;
   padding-bottom: 15px;
   border-radius: 20px;
-  background-color: rgba(0, 0, 0, 0.2);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); /* Darker shadow */
+  background-color: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 1);
   backdrop-filter: blur(10px);
-  margin-bottom: 30px; 
+  margin-bottom: 20px; 
   width: 100%;
   box-sizing: border-box;
   align-items: center; /* Center content within each section */
@@ -120,19 +122,16 @@ html, body {
 }
 
 .software-title {
-  font-size: 25px;
+  font-size: 25px; 
   font-weight: bold;
-  margin-bottom: 17px;
   text-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
 }
 
 .software-description {
   font-size: 15px;
-  margin-bottom: 20px;
 }
 
 .software-button {
-  background-color: rgba(0, 0, 0, 0.2);
   color: white;
   border: none;
   padding: 10px 15px;
@@ -141,7 +140,6 @@ html, body {
   cursor: pointer;
   transition: all 0.3s ease;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-  border: 2px solid rgba(255, 255, 255, 0.5);
 }
 
 .software-button:hover {
@@ -156,8 +154,8 @@ html, body {
   padding-right: 20px;
   padding-bottom: 15px;
   border-radius: 20px;
-  background-color: rgba(0, 0, 0, 0.2);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); /* Darker shadow */
+  background-color: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 1);
   backdrop-filter: blur(10px);
   margin-bottom: 30px;
   width: 60%;
@@ -172,9 +170,8 @@ html, body {
   padding-right: 20px;
   padding-bottom: 15px;
   border-radius: 20px;
-  background-color: rgba(0, 0, 0, 0.2);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); /* Darker shadow */
-  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 1);
   margin-bottom: 30px;
   width: 40%;
   box-sizing: border-box;
@@ -184,6 +181,7 @@ html, body {
 .app-footer {
   justify-content: center;
   gap: 50px;
+  
 }
 
 
@@ -215,10 +213,40 @@ html, body {
   font-size: 16px;
   border-radius: 10px;
   border: none;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 1);
   color: #FFFFFF;
   outline: none;
   box-sizing: border-box;
   margin-right: 10px;
 }
 
+
+.option-box {
+  background-color: rgba(255, 255, 255, 0.03);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 1); 
+  transition: all 0.3s ease;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.option-box:hover {
+  background-color: rgba(0, 0, 0, 0.5); 
+  transform: scale(1.05);
+}
+
+.option-box h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Futuristic text shadow */
+}
+
+.option-box p {
+  font-size: 16px;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.1); /* Subtle text shadow */
+}

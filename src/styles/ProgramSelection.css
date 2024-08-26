@@ -14,61 +14,27 @@
     max-width: 800px;
   }
   
-  .option-box {
-    background-color: #10172a;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    color: white;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); /* Darker shadow */
-    backdrop-filter: blur(10px); /* Frosted glass effect */
-    transition: all 0.3s ease;
-    cursor: pointer;
-  }
-  
-  .option-box:hover {
-    background-color: rgba(0, 0, 0, 0.5); 
-    transform: scale(1.05);
-  }
-  
-  .option-box h2 {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.3); /* Futuristic text shadow */
-  }
-  
-  .option-box p {
-    font-size: 16px;
-    text-shadow: 0 0 5px rgba(255, 255, 255, 0.2); /* Subtle text shadow */
-  }
-  
 
 .add-remove-container{
   padding: 20px;
   border-radius: 20px;
-  border: 2px solid rgba(255, 255, 255, 0.2); 
-  display: flex;
-  margin-bottom: 100px;
   gap: 20px;
 }
 
 .add-remove-option-box{
   font-size: 10px;
+  width: 20%; 
   padding-left: 10px; padding-right: 10px;
-  background-color: rgba(0, 0, 0, 0.2); /* Transparent white */
+  background-color: rgba(255, 255, 255, 0.02); /* Transparent white */
   border-radius: 10px;
   text-align: center;
   color: white;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); /* Darker shadow */
-  backdrop-filter: blur(10px); /* Frosted glass effect */
-  border: 2px solid rgba(255, 255, 255, 0.2); /* Cool border */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 1); /* Darker shadow */
   transition: all 0.3s ease;
   cursor: pointer;
 }
 
 .add-remove-text{
-  margin-top: 5px;
   width: 100%;
   max-width: 1000px;
 }
