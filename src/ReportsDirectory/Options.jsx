@@ -76,7 +76,7 @@ const Options = ({ isMainPage }) => {
           {isMainPage && (
             <div className="software-sections">
               <div className="main-search">
-                <button className="nav-button" onClick={goBack}>Back</button>
+                <div className="nav-button" onClick={goBack}>Back</div>
                 <input
                   type="text"
                   placeholder="Search..."
@@ -84,7 +84,7 @@ const Options = ({ isMainPage }) => {
                   onChange={(e) => setSearchQuery(e.target.value)}
                   className="search-input"
                 />
-                <button className="nav-button" onClick={goForward}>Forward</button>
+                <div className="nav-button" onClick={goForward}>Forward</div>
               </div>
               <div className="software-section">
                 <h1 className="software-title">Private Software</h1>
@@ -147,9 +147,9 @@ const Options = ({ isMainPage }) => {
                       <div key={index}>
                         <h1 className="another-title">{option.title}</h1>
                         <p className="another-description">{option.description}</p>
-                        <button className="another-button" onClick={() => navigate(option.path)}>
+                        <div className="another-button" onClick={() => navigate(option.path)}>
                           View FAQs
-                        </button>
+                        </div>
                       </div>
                     ))}
                 </div>

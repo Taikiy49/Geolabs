@@ -8,7 +8,7 @@ html, body {
   color: #FFFFFF;
   display: flex;
   justify-content: center;
-  align-items: center; 
+  align-items: stretch;
 }
 
 #root {
@@ -17,40 +17,43 @@ html, body {
   min-height: 100%;
 }
 
-/* Apply flex properties to the main container */
+/* Hide the scrollbar while allowing scrolling */
+.app-container, .nav-buttons, .auth-buttons, .main-content {
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For Internet Explorer and Edge */
+}
+
+.app-container::-webkit-scrollbar, 
+.nav-buttons::-webkit-scrollbar, 
+.auth-buttons::-webkit-scrollbar, 
+.main-content::-webkit-scrollbar {
+  display: none; 
+}
+
+
 .app-container {
   width: 100%;
   height: 100%;
   display: flex;
-  justify-content: center;
-  align-items: stretch; /* Ensure sidebars stretch to fill the height */
-}
-
-
-
-.app-header, .app-footer {
-  border-radius: 2%;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 1);
-  background-color: rgba(255, 255, 255, 0.05);
-  display: flex;
-  justify-content: space-between;
-  padding: 20px;
-  box-sizing: border-box;
-  z-index: 2;
+  justify-content: space-between; /* Space between left, center, and right sections */
+  align-items: stretch; /* Ensure all sections stretch to fill the height */
+  overflow-y: auto; /* Enable vertical scrolling */
 }
 
 .app-header {
+  width: 200px; /* Adjust the width as needed */
+  height: 100vh; /* Ensure the header takes the full height of the viewport */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 1);
+  background-color: rgba(255, 255, 255, 0.05);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-between; /* Space between header content */
   padding: 20px;
   box-sizing: border-box;
-  z-index: 2;
-  overflow: hidden; /* Prevent content overflow */
-  min-height: 100vh; /* Ensure the sidebar takes the full viewport height */
-  height: 100%; /* Allow the height to adapt */
-  max-height: 100vh; /* Ensure it doesn't exceed the viewport height */
+  position: sticky; 
+  top: 0; 
 }
+
 
 .logo {
   margin-bottom: 20px; padding-left: 10px; padding-right: 10px;
@@ -65,13 +68,12 @@ html, body {
   display: flex;
   flex-direction: column;
   width: 100%;
-  flex-grow: 1; /* Allow the container to grow and fill the remaining space */
+  flex-grow: 1;
   gap: 15px;
-  overflow-y: auto; /* Add scrolling if content exceeds the viewport height */
+  overflow-y: auto;
 }
 
 .nav-button, .auth-button {
-  margin-left: 10px;
   background: none;
   border: none;
   box-shadow: none;
@@ -82,7 +84,7 @@ html, body {
   font-size: 16px;
   cursor: pointer;
   text-align: left;
-  padding: 10px 0; /* Add padding for some vertical space */
+  padding: 5px;
 }
 
 .nav-button:hover, .auth-button:hover {
@@ -162,7 +164,6 @@ html, body {
   background-color: rgba(255, 255, 255, 0.05);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 1);
   backdrop-filter: blur(10px);
-  margin-bottom: 30px;
   width: 60%;
   box-sizing: border-box;
   margin-right: auto;
@@ -177,7 +178,6 @@ html, body {
   border-radius: 20px;
   background-color: rgba(255, 255, 255, 0.05);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 1);
-  margin-bottom: 30px;
   width: 40%;
   box-sizing: border-box;
   margin-left: auto;
