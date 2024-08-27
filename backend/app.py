@@ -11,31 +11,9 @@ from concurrent.futures import ThreadPoolExecutor
 import spacy
 from spacy.matcher import Matcher
 from datetime import timedelta, datetime
-import json
-from difflib import SequenceMatcher 
 import os
-
-CACHE_FILE_PATH = 'cache.json'
-CACHE_SIMILARITY_THRESHOLD = 0.8
-
-# Load cache from a file if it exists
-def load_cache_from_file():
-    if os.path.exists(CACHE_FILE_PATH):
-        with open(CACHE_FILE_PATH, 'r') as cache_file:
-            return json.load(cache_file)
-    return {}
-
-# Save cache to a file
-def save_cache_to_file():
-    with open(CACHE_FILE_PATH, 'w') as cache_file:
-        json.dump(cache, cache_file)
-
-# Initialize cache by loading from the file
-cache = load_cache_from_file()
-
-# Function to calculate similarity between two strings
-def is_similar(query1, query2):
-    return SequenceMatcher(None, query1, query2).ratio() > CACHE_SIMILARITY_THRESHOLD
+import functools
+from terms import oahu_cities, civil_engineering_terms
 
 # Initialize Flask app and configure session
 app = Flask(__name__)
@@ -86,13 +64,10 @@ def save_to_db(filename, content):
     conn.commit()
     conn.close()
 
-# Get filtered documents from SQLite
 def get_filtered_documents(keywords_list):
     conn = sqlite3.connect('data.db')
     cursor = conn.cursor()
 
-    # Build the query to search the content and prioritize based on specific patterns
-    # Assuming the first keyword in the list is the highest priority (e.g., a work order number)
     high_priority_keyword = f'%{keywords_list[0]}%'  # High-priority keyword
     other_keywords = keywords_list[1:]  # Other keywords
     
@@ -100,27 +75,19 @@ def get_filtered_documents(keywords_list):
     if other_keywords:
         query += " OR " + " OR ".join(["content LIKE ?" for _ in other_keywords])
     
-    # Prepare parameters
     params = [high_priority_keyword] + [f'%{keyword}%' for keyword in other_keywords]
 
-    # Prioritize high-priority keyword in ordering
     query += " ORDER BY CASE WHEN content LIKE ? THEN 1 ELSE 2 END, "
     query += " + ".join([f"(content LIKE ?)" for _ in keywords_list]) + " DESC"
-    query += " LIMIT 20"  # Limit to top 20 results
+    query += " LIMIT 5"
     
-    # Add high-priority keyword again to the parameters for ordering, then all keywords again
     params += [high_priority_keyword] + [f'%{keyword}%' for keyword in keywords_list]
 
     cursor.execute(query, params)
     documents = [{"filename": row[0], "content": row[1]} for row in cursor.fetchall()]
     conn.close()
 
-    print("Top 20 matched files:")
-    for doc in documents:
-        print(doc["filename"])
     return documents
-
-
 
 # Flask-Login User class and loader
 class User(UserMixin):
@@ -139,12 +106,18 @@ def load_user(user_id):
         return User(user[0], user[1])
     return None
 
-# Extract relevant words using Spacy
+# Define a simple cache using functools.lru_cache for summarization
+@functools.lru_cache(maxsize=100)
+def get_summary_from_model(work_order_number, combined_content):
+    model = Model()
+    chat_session = model.create_chat_session([])
+    summary = model.generate_summary(chat_session, combined_content)
+    return summary.text
+
 def extract_and_rank_keywords(prompt):
     doc = nlp(prompt)
     matcher = Matcher(nlp.vocab)
     
-    # Define patterns to capture key phrases
     patterns = [
         [{"POS": "PROPN"}], 
         [{"IS_DIGIT": True}, {"IS_PUNCT": True}, {"IS_DIGIT": True}],  # Work order pattern like "7860-00"
@@ -163,29 +136,26 @@ def extract_and_rank_keywords(prompt):
     
     # Rank phrases based on custom heuristics
     def rank_phrase(phrase):
-        # Prioritize work order numbers or similar important patterns
+        # Prioritize known location names
         if any(char.isdigit() for char in phrase) and '-' in phrase:
-            return (3, phrase)  # Highest priority
+            return (5, phrase)  # High priority for work orders
+        elif phrase in oahu_cities:
+            return (4, phrase)  # Highest priority for locations
+        elif phrase in civil_engineering_terms:
+            return (3, phrase)
         elif len(phrase.split()) > 1:
             return (2, phrase)  # Medium priority for multi-word phrases
         else:
             return (1, phrase)  # Lowest priority for single words
 
     ranked_phrases = sorted(relevant_phrases, key=rank_phrase, reverse=True)
-
     return ranked_phrases
 
-@app.route('/program-selection/search-database', methods=['POST'])
+@app.route('/reports/search-database', methods=['POST'])
 def send_input():
     model = Model()
     data = request.get_json()
     prompt = data.get('prompt')
-
-    # Check if a similar query is in the cache
-    for cached_prompt, cached_response in cache.items():
-        if is_similar(prompt, cached_prompt):
-            print("Returning cached response.")
-            return jsonify({"response": cached_response})
 
     # Process new query
     keywords_list = extract_and_rank_keywords(prompt)
@@ -195,13 +165,9 @@ def send_input():
     chat_session = model.create_chat_session(history)
     response = model.generate_response(chat_session, prompt).text
 
-    # Store the response in the cache
-    cache[prompt] = response
-    save_cache_to_file()  # Save the cache to the file after adding the new entry
-
     return jsonify({"response": response})
 
-@app.route('/program-selection/add-files', methods=['POST'])
+@app.route('/reports/add-files', methods=['POST'])
 def upload_file():
     files = request.files.getlist('files')
     conn = sqlite3.connect('data.db')
@@ -222,13 +188,9 @@ def upload_file():
     with ThreadPoolExecutor() as executor:
         executor.map(process_file, files)
 
-    # Invalidate the cache after adding new files
-    cache.clear()
-    save_cache_to_file()  # Save the cleared cache to the file
-
     return jsonify({'message': 'Files uploaded and processed successfully'}), 200
 
-@app.route('/program-selection/list-files', methods=['GET'])
+@app.route('/reports/list-files', methods=['GET'])
 def list_files():
     conn = sqlite3.connect('data.db')
     cursor = conn.cursor()
@@ -237,7 +199,7 @@ def list_files():
     conn.close()
     return jsonify(files), 200
 
-@app.route('/program-selection/remove-files', methods=['POST'])
+@app.route('/reports/remove-files', methods=['POST'])
 def remove_files():
     filenames = request.json.get('filenames', [])
     conn = sqlite3.connect('data.db')
@@ -247,33 +209,18 @@ def remove_files():
     conn.close()
     return jsonify({"message": f"{len(filenames)} files removed successfully"}), 200
 
-@app.route('/program-selection/search-filenames', methods=['POST'])
+@app.route('/reports/search-filenames', methods=['POST'])
 def search_filenames():
     data = request.get_json()
     prompt = data.get('prompt')
-
-    # Check cache for a similar query
-    for cached_prompt, cached_response in cache.items():
-        if is_similar(prompt, cached_prompt):
-            print("Returning cached filenames from cache.")
-            return jsonify({"filenames": cached_response})
 
     keywords_list = extract_and_rank_keywords(prompt)
     filtered_documents = get_filtered_documents(keywords_list)
     filenames = [doc["filename"] for doc in filtered_documents]
 
-    # Store the filenames in the cache
-    cache[prompt] = filenames
-    save_cache_to_file()  # Save the cache to the file after adding the new entry
-
     return jsonify({"filenames": filenames})
 
-# Save the cache before shutting down the app
-import atexit
-atexit.register(save_cache_to_file)
-
-
-@app.route('/program-selection/get-quick-view', methods=['POST'])
+@app.route('/reports/get-quick-view', methods=['POST'])
 def get_quick_view():
     data = request.get_json()
     filename = data.get('filename')
@@ -288,8 +235,6 @@ def get_quick_view():
         prompt = request.json.get('prompt', '')
         keywords = extract_and_rank_keywords(prompt)
 
-        print(f"Extracted keywords: {keywords}")
-
         relevant_sentences = []
         sentences = content.split('.')
         i = 0
@@ -300,8 +245,6 @@ def get_quick_view():
                 if keyword.lower() in sentence.lower():
                     relevant_sentences.append(sentence)
                     i += 1
-
-        print(f"Relevant sentences: {relevant_sentences}")
 
         quick_view_content = " ".join(relevant_sentences[:3])
         return jsonify({"content": quick_view_content}), 200
@@ -352,6 +295,35 @@ def logout():
     logout_user()
     return jsonify({"message": "Logged out successfully"}), 200
 
+
+@app.route('/reports/search-work-order', methods=['POST'])
+def search_work_order():
+    data = request.get_json()
+    work_order_number = data.get('workOrderNumber')  # Ensure this matches the key in React
+    print(f"Received work order number: {work_order_number}")
+
+    if not work_order_number:
+        return jsonify({"summary": "Work order number is required."}), 400
+
+    conn = sqlite3.connect('data.db')
+    cursor = conn.cursor()
+
+    # Query to find filenames that match the work order number
+    query = "SELECT filename, content FROM documents WHERE filename LIKE ?"
+    cursor.execute(query, (f'%{work_order_number}%',))
+    filtered_documents = [{"filename": row[0], "content": row[1]} for row in cursor.fetchall()]
+    conn.close()
+
+    if filtered_documents:
+        # Combine the content of all matched documents
+        combined_content = " ".join([doc["content"] for doc in filtered_documents])
+
+        # Check the cache first before generating a new summary
+        summary = get_summary_from_model(work_order_number, combined_content)
+
+        return jsonify({"summary": summary, "filenames": [doc["filename"] for doc in filtered_documents]})
+    else:
+        return jsonify({"summary": "No relevant documents found for this work order number."}), 404
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=8000)

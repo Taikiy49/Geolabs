@@ -17,12 +17,15 @@ html, body {
   min-height: 100%;
 }
 
+/* Apply flex properties to the main container */
 .app-container {
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
+  align-items: stretch; /* Ensure sidebars stretch to fill the height */
 }
+
 
 
 .app-header, .app-footer {
@@ -36,7 +39,7 @@ html, body {
   z-index: 2;
 }
 
-.app-header{
+.app-header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -44,8 +47,10 @@ html, body {
   box-sizing: border-box;
   z-index: 2;
   overflow: hidden; /* Prevent content overflow */
+  min-height: 100vh; /* Ensure the sidebar takes the full viewport height */
+  height: 100%; /* Allow the height to adapt */
+  max-height: 100vh; /* Ensure it doesn't exceed the viewport height */
 }
-
 
 .logo {
   margin-bottom: 20px; padding-left: 10px; padding-right: 10px;
@@ -221,6 +226,13 @@ html, body {
   margin-right: 10px;
 }
 
+.options-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 800px;
+}
 
 .option-box {
   background-color: rgba(255, 255, 255, 0.03);
@@ -250,3 +262,5 @@ html, body {
   font-size: 16px;
   text-shadow: 0 0 5px rgba(255, 255, 255, 0.1); /* Subtle text shadow */
 }
+
+

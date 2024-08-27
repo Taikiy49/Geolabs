@@ -21,8 +21,8 @@ class Model:
             self._data_list.append({"role": "model", "parts": [row[1]]})
         return self._data_list
   
-    def create_chat_session(self, _history):
-        return self._model.start_chat(history=_history)
+    def create_chat_session(self, history):
+        return self._model.start_chat(history=history)
 
     def create_chat_history(self, documents):
         history = []
@@ -33,12 +33,15 @@ class Model:
 
     def generate_response(self, chat_session, prompt):
         response = chat_session.send_message(
-            "Given just all the information I fed you earlier, " + prompt + 
-            "ONLY give me answers that are related to the topic",
+            prompt + " Please ensure the response is concise and relevant to the work order."
         )
+        return response
+
+    def generate_summary(self, chat_session, content):
+        response = chat_session.send_message(
+            content + " Given all this information, generate a concise and comprehensive summary of the text.")
         return response
 
     def close(self):
         # Close the SQLite connection when done
         self._conn.close()
-

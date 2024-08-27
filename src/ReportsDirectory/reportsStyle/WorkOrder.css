@@ -1,0 +1,85 @@
+.workorder-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    color: white;
+  }
+  
+  .workorder-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .workorder-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .workorder-input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+  }
+  
+  .workorder-input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .workorder-button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  }
+  
+  .workorder-button:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    transform: scale(1.05);
+  }
+  
+  .workorder-loading {
+    text-align: center;
+    font-size: 18px;
+  }
+  
+  .workorder-error {
+    text-align: center;
+    color: red;
+    font-size: 16px;
+  }
+  
+  .workorder-summary {
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  }
+  
+  .workorder-summary h2 {
+    margin-bottom: 10px;
+  }
+  
+  .workorder-summary p {
+    white-space: pre-wrap; /* Preserve whitespace and line breaks */
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
