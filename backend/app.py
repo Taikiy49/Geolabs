@@ -180,7 +180,9 @@ def upload_file():
         if filename not in processed_files:
             sentences = ParseFile(file).generate_sentence_list()
             save_to_db(filename, sentences)
+            print('--------------------')
             print(filename + ' has been saved')
+            print('--------------------')
         else:
             print(f"File {filename} has already been processed.")
 
@@ -206,7 +208,9 @@ def remove_files():
     cursor.executemany('DELETE FROM documents WHERE filename = ?', [(filename,) for filename in filenames])
     conn.commit()
     conn.close()
+    print(f"{len(filenames)} files were removed.")
     return jsonify({"message": f"{len(filenames)} files removed successfully"}), 200
+
 
 @app.route('/reports/search-filenames', methods=['POST'])
 def search_filenames():

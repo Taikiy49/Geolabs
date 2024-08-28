@@ -4,11 +4,9 @@ import { Route, Routes } from 'react-router-dom';
 import Reports from '../ReportsDirectory/ReportsMain';
 import EmployeeGuide from '../EmployeeDirectory/EmployeeMain';
 import Admin from '../AdminDirectory/AdminMain';
-import AddFiles from '../ReportsDirectory/reportsComponents/AddFiles';
 import Login from '../ReportsDirectory/reportsComponents/Login';
 import Register from '../ReportsDirectory/reportsComponents/Register';
-import RemoveFiles from '../ReportsDirectory/reportsComponents/RemoveFiles';
-import Relevancy from '../ReportsDirectory/reportsComponents/Relevancy';
+import Relevancy from '../ReportsDirectory/reportsComponents/Query';
 import WorkOrder from '../ReportsDirectory/reportsComponents/WorkOrder';
 
 const AppRoutes = ({ isAuthenticated, setIsAuthenticated }) => (
@@ -19,8 +17,6 @@ const AppRoutes = ({ isAuthenticated, setIsAuthenticated }) => (
     <Route path="/admin" element={<Admin />} />
     
     {/* Reports sub-routes */}
-    <Route path="/reports/add-files" element={<AddFiles />} />
-    <Route path="/reports/remove-files" element={<RemoveFiles />} />
     <Route path="/reports/relevancy" element={<Relevancy />} />
     <Route path="/reports/work-order" element={<WorkOrder />} />
     

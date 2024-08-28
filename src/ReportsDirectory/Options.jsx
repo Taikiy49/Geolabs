@@ -20,7 +20,6 @@ const softwareOptions = [
   },
 ];
 
-
 const bottomOptions = [
   { title: '+', description: '', path: '/reports/add-files' },
   { title: '-', description: '', path: '/reports/remove-files' },
@@ -34,6 +33,31 @@ const Options = ({ isMainPage }) => {
   const [filteredBottomOptions, setFilteredBottomOptions] = useState(bottomOptions);
   const [files, setFiles] = useState([]);
   const [totalFiles, setTotalFiles] = useState(0);
+  const [selectedFiles, setSelectedFiles] = useState([]);
+  const [uploading, setUploading] = useState(false);
+  const [loading, setLoading] = useState(true);
+
+  // Fetch and sort the list of files from the server
+  useEffect(() => {
+    const fetchFiles = async () => {
+      try {
+        const response = await axios.get(`${apiUrl}/reports/list-files`);
+        const sortedFiles = response.data.sort((a, b) => {
+          const numA = a.filename.match(/\d+/);
+          const numB = b.filename.match(/\d+/);
+          return (numA ? parseInt(numA[0], 10) : 0) - (numB ? parseInt(numB[0], 10) : 0);
+        });
+        setFiles(sortedFiles);
+        setTotalFiles(sortedFiles.length);
+      } catch (error) {
+        console.error('Error fetching files:', error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchFiles();
+  }, [apiUrl]);
 
   useEffect(() => {
     if (searchQuery) {
@@ -58,19 +82,63 @@ const Options = ({ isMainPage }) => {
     }
   }, [searchQuery]);
 
-  useEffect(() => {
-    axios.get(`${apiUrl}/reports/list-files`)
+  const handleFileSelect = (filename) => {
+    setSelectedFiles(prevSelected =>
+      prevSelected.includes(filename)
+        ? prevSelected.filter(file => file !== filename)
+        : [...prevSelected, filename]
+    );
+  };
+
+  const handleDeleteFiles = () => {
+    axios.post(`${apiUrl}/reports/remove-files`, { filenames: selectedFiles })
       .then(response => {
-        setFiles(response.data);
-        setTotalFiles(response.data.length);
+        setFiles(files.filter(file => !selectedFiles.includes(file.filename)));
+        setSelectedFiles([]);
+        setTotalFiles(totalFiles - selectedFiles.length);
       })
       .catch(error => {
-        console.error('There was an error fetching the files!', error);
+        console.error('Error deleting files:', error);
       });
-  }, [apiUrl]);
+  };
+
+  const handleFileUpload = (event) => {
+    setUploading(true);
+    const formData = new FormData();
+    for (let i = 0; i < event.target.files.length; i++) {
+      formData.append('files', event.target.files[i]);
+    }
+
+    axios.post(`${apiUrl}/reports/add-files`, formData)
+      .then(response => {
+        // Re-fetch the file list after upload
+        axios.get(`${apiUrl}/reports/list-files`)
+          .then(response => {
+            const sortedFiles = response.data.sort((a, b) => {
+              const numA = a.filename.match(/\d+/);
+              const numB = b.filename.match(/\d+/);
+              return (numA ? parseInt(numA[0], 10) : 0) - (numB ? parseInt(numB[0], 10) : 0);
+            });
+            setFiles(sortedFiles);
+            setTotalFiles(sortedFiles.length);
+            setUploading(false);
+          });
+      })
+      .catch(error => {
+        console.error('Error uploading files:', error);
+        setUploading(false);
+      });
+  };
+
+  if (loading) {
+    return <div>Loading files...</div>;
+  }
 
   return (
     <div className="reports-container">
+      <div className={`overlay ${uploading ? 'visible' : ''}`}>
+        <div className="loading-message">Uploading files, please wait...</div>
+      </div>
       <div className="inner-borders">
         {isMainPage && (
           <div className="software-sections">
@@ -87,7 +155,7 @@ const Options = ({ isMainPage }) => {
               </div>
             </div>
 
-            <div className='reports-mini-container'> 
+            <div className='reports-mini-container'>
               <div className="software-section">
                 <div className="options-container">
                   {filteredSoftwareOptions.map((option, index) => (
@@ -102,14 +170,19 @@ const Options = ({ isMainPage }) => {
                     </div>
                   ))}
                 </div>
-
               </div>
+
               <div className="file-actions-container">
-              <h2 className="file-list-title">Total Files: {totalFiles}</h2>
+                <h2 className="file-list-title">Total Files: {totalFiles}</h2>
                 <div className="file-list-container">
                   <div className="scrollable-file-list">
                     {files.map((file, index) => (
                       <div key={index} className="file-item">
+                        <input
+                          type="checkbox"
+                          checked={selectedFiles.includes(file.filename)}
+                          onChange={() => handleFileSelect(file.filename)}
+                        />
                         {file.filename}
                       </div>
                     ))}
@@ -117,15 +190,23 @@ const Options = ({ isMainPage }) => {
                 </div>
 
                 <div className="add-remove-container">
-                  {filteredBottomOptions.map((option, index) => (
-                    <div
-                      key={index}
-                      className="add-remove-option-box"
-                      onClick={() => navigate(option.path)}
-                    >
-                      <h2>{option.title}</h2>
-                    </div>
-                  ))}
+                  <button
+                    className="add-remove-option-box"
+                    onClick={handleDeleteFiles}
+                    disabled={selectedFiles.length === 0}
+                  >
+                    -
+                  </button>
+                  <label className="add-remove-option-box">
+                    +
+                    <input
+                      type="file"
+                      multiple
+                      onChange={handleFileUpload}
+                      style={{ display: 'none' }}
+                      disabled={uploading}
+                    />
+                  </label>
                 </div>
               </div>
             </div>

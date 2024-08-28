@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 import axios from 'axios';
-import '../reportsStyle/Relevancy.css';
+import '../reportsStyle/Query.css';
 import getConfig from '../../config';
 
 const Relevancy = () => {
