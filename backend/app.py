@@ -79,7 +79,6 @@ def get_filtered_documents(keywords_list):
 
     query += " ORDER BY CASE WHEN content LIKE ? THEN 1 ELSE 2 END, "
     query += " + ".join([f"(content LIKE ?)" for _ in keywords_list]) + " DESC"
-    query += " LIMIT 5"
     
     params += [high_priority_keyword] + [f'%{keyword}%' for keyword in keywords_list]
 
@@ -159,7 +158,7 @@ def send_input():
 
     # Process new query
     keywords_list = extract_and_rank_keywords(prompt)
-    print(keywords_list)
+
     filtered_documents = get_filtered_documents(keywords_list)
     history = model.create_chat_history(filtered_documents)
     chat_session = model.create_chat_session(history)
@@ -324,6 +323,42 @@ def search_work_order():
         return jsonify({"summary": summary, "filenames": [doc["filename"] for doc in filtered_documents]})
     else:
         return jsonify({"summary": "No relevant documents found for this work order number."}), 404
+
+@app.route('/reports/relevancy', methods=['POST'])
+def chatbot_request():
+    data = request.get_json()
+    filenames = data.get('filenames', [])
+    prompt = data.get('prompt', '')
+    use_file_selector = data.get('useFileSelector', True)
+
+    if not use_file_selector:
+        keywords_list = extract_and_rank_keywords(prompt)
+        documents = get_filtered_documents(keywords_list)
+        filenames = [doc["filename"] for doc in documents[:5]]  # Get top 5 files
+
+    if not filenames:
+        return jsonify({"response": "No files selected or found."}), 400
+
+    # Retrieve the content of the selected files
+    conn = sqlite3.connect('data.db')
+    cursor = conn.cursor()
+    cursor.execute(
+        f"SELECT content FROM documents WHERE filename IN ({','.join('?' * len(filenames))})",
+        filenames
+    )
+    documents = cursor.fetchall()
+    conn.close()
+
+    # Combine content for the chatbot
+    combined_content = " ".join([doc[0] for doc in documents])
+
+    # Create a chat session and generate a response
+    model = Model()
+    chat_session = model.create_chat_session([])
+    response = model.generate_response(chat_session, combined_content + ' ' + prompt).text
+
+    return jsonify({"response": response})
+
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=8000)

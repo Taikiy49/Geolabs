@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import '../App.css';
+import './Reports.css';
 import Options from './Options'
 import AppRoutes from '../-MainDirectory/AppRoutes';
 
@@ -18,7 +19,7 @@ const Reports = () => {
 
   return (
     <div>
-      <div className="app-container">
+      <div className="reports-container">
         <main className="main-content">
           <Options isMainPage={isMainPage} />
           <AppRoutes isAuthenticated={isAuthenticated} setIsAuthenticated={setIsAuthenticated} />

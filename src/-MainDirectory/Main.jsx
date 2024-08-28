@@ -1,9 +1,9 @@
 // Main.js
 import React, { useState, useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
-import '../App.css';
-import LeftSidebar from './LeftSidebar';
-import RightSidebar from './RightSidebar';
+import '../-MainDirectory/mainStyles/Header.css';
+import Header from './Header';
+import Footer from './Footer';
 import AppRoutes from './AppRoutes';
 
 const Main = () => {
@@ -24,7 +24,7 @@ const Main = () => {
 
   return (
     <div className="app-container">
-      <LeftSidebar isAuthenticated={isAuthenticated} setIsAuthenticated={setIsAuthenticated} />
+      <Header isAuthenticated={isAuthenticated} setIsAuthenticated={setIsAuthenticated} />
       <div className="main-content">
         {location.pathname === '/' ? (
           <div className="options-container">
@@ -39,7 +39,7 @@ const Main = () => {
           <AppRoutes isAuthenticated={isAuthenticated} setIsAuthenticated={setIsAuthenticated} />
         )}
       </div>
-      <RightSidebar isAuthenticated={isAuthenticated} setIsAuthenticated={setIsAuthenticated} />
+      <Footer />
     </div>
   );
 };

@@ -1,0 +1,227 @@
+/* Hide the scrollbar while allowing scrolling */
+  .reports-container, .nav-buttons, .auth-buttons, .main-content {
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none; /* For Internet Explorer and Edge */
+}
+  
+  .reports-container::-webkit-scrollbar, 
+  .nav-buttons::-webkit-scrollbar, 
+  .auth-buttons::-webkit-scrollbar, 
+  .main-content::-webkit-scrollbar {
+    display: none; 
+  }
+
+
+.scrollable-file-list::-webkit-scrollbar-thumb {
+    background-color: var(--primary-300); /* Scrollbar thumb color */
+    border-radius: 10px; /* Roundness of the scrollbar thumb */
+    border: 3px solid var(--primary-900); /* Space around thumb */
+}
+
+.scrollable-file-list::-webkit-scrollbar-track {
+    background-color: var(--neutral-800); /* Scrollbar track color */
+    border-radius: 10px; /* Roundness of the scrollbar track */
+}
+  
+  .app-container {
+    min-width: 100vw; height: 100%;
+    display: flex;
+    flex-direction: column; /* Change direction to column for vertical layout */
+    overflow-y: auto; /* Enable vertical scrolling */
+  }
+  .main-content-container {
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .main-content {
+    color: var(--primary-100);
+    background-color: black;
+    flex: 1;
+    display: flex;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1; 
+    min-width: 100vw;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  .title-search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    box-sizing: border-box;
+  }
+  
+  .add-remove-container { /* Adjusted container for buttons */
+    display: flex;
+    gap: 30px;
+    margin-left: auto;
+    font-size: 12px; margin-bottom: 30px;
+  }
+
+  .add-remove-option-box {
+    background-color: var(--neutral-800);
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    padding-left: 10px; padding-right: 10px;
+  }
+  
+  .add-remove-option-box:hover {
+    background-color: var(--neutral-700);
+    transform: scale(1.05);
+  }
+  
+  
+  .software-sections {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+  }
+
+  .software-section {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-sizing: border-box;
+  }
+  
+  .software-title {
+    font-size: 35px; margin-top: 20px;
+    margin-right: auto;
+    font-weight: bold;
+    color: var(--primary-100);
+  }
+  
+  
+  .software-description {
+    font-size: 15px;
+  }
+
+  .app-footer {
+    justify-content: center;
+    gap: 50px;
+  }
+  
+  .inner-borders {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Search Bar Styles */
+  .main-search {
+    display: flex;
+    margin-left: auto;
+    box-sizing: border-box;
+  }
+  
+  .search-input {
+    padding: 15px 20px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--primary-100);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 1);
+    outline: none;
+    box-sizing: border-box;
+    margin-left: auto;
+    width: 500px; 
+  }
+  
+  .options-container {
+    display: grid;
+    gap: 70px;
+  }
+  
+  .option-box {
+    max-width: 500px;
+    background-color: var(--neutral-900);
+    color: var(--primary-100);
+    padding: 20px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .option-box:hover {
+    transform: scale(1.05);
+    background-color: var(--neutral-800);
+  }
+  
+  .option-box h2 {
+    width: auto;
+    font-weight: bold; font-size: 30px;
+    padding: 5px; border-radius: 20px;
+  }
+  
+  .option-box p {
+    font-weight: normal;
+    font-size: 20px;
+  }
+
+  
+
+  .file-actions-container { /* New class to wrap file list and buttons */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-left: auto;
+  }
+  
+  .file-list-container { 
+    background-color: var(--neutral-900);
+    padding: 10px;
+    width: 700px; min-height: 50vh;
+    margin-left: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.file-list-title { /* New class for file list title */
+    font-size: 25px;
+    color: white;
+    margin-left: auto;
+}
+
+.scrollable-file-list { /* Updated scrollable file list */
+    background-color: transparent;
+    font-size: 20px;
+}
+
+  
+  .file-item { /* Updated file item styling */
+    padding: 8px;
+    border-radius: 5px;
+    color: white;
+    overflow-y: hidden;
+  }
+  
+
+  .reports-mini-container{
+    gap: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+  .option-logo {
+    width: 70px; /* Adjust the size as needed */
+    height: auto;
+    margin-bottom: 10px; /* Space between the logo and title */
+    display: block;
+    margin-right: auto;
+    filter: invert(100%);
+
+  }
+  
