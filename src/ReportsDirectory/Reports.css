@@ -59,7 +59,6 @@
   
   .add-remove-container { /* Adjusted container for buttons */
     display: flex;
-    gap: 30px;
     margin-left: auto;
     font-size: 30px; margin-top: -40px;
   }
@@ -88,12 +87,9 @@
     flex-direction: column;
     padding: 20px;
     border-radius: 20px;
-    backdrop-filter: blur(10px);
-    box-sizing: border-box;
   }
   
   .software-title {
-    font-size: 35px; margin-top: 20px;
     margin-right: auto;
     font-weight: bold;
     color: var(--primary-100);
@@ -101,7 +97,7 @@
   
   
   .software-description {
-    font-size: 15px;
+    font-size: 20px; font-weight: normal; width: 700px;
   }
 
   .app-footer {
@@ -114,36 +110,15 @@
     flex-direction: column;
   }
   
-  /* Search Bar Styles */
-  .main-search {
-    display: flex;
-    margin-left: auto;
-    box-sizing: border-box;
-  }
-  
-  .search-input {
-    padding: 15px 20px;
-    font-size: 16px;
-    border-radius: 10px;
-    border: none;
-    background-color: var(--neutral-300);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 1);
-    outline: none;
-    box-sizing: border-box;
-    margin-left: auto;
-    width: 500px; 
-  }
-  
   .options-container {
-    display: grid;
-    gap: 70px;
+    display: grid; gap: 20px;
   }
   
   .option-box {
-    max-width: 500px;
+    max-width: 300px;
     background-color: var(--neutral-900);
     color: var(--primary-100);
-    padding: 20px;
+    padding: 15px; padding-bottom: 0px;
     border-radius: 10px;
     transition: all 0.3s ease;
     cursor: pointer;
@@ -167,28 +142,52 @@
 
   
 
-  .file-actions-container { /* New class to wrap file list and buttons */
+  .file-actions-container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
     margin-left: auto;
+    position: relative;
+  }
+
+  .file-top-container{
+    display: flex;
+    gap: 250px;
+    
+
+  }
+  
+  .file-search-bar {
+    display: flex;
+    height: 50px;
+    align-items: center;
+  }
+
+  
+.file-list-title { /* New class for file list title */
+  font-size: 20px;
+  color: white;
+}
+  
+  .file-search-bar input {
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--neutral-300);
+    color: var(--primary-900);
+    width: 300px;
   }
   
   .file-list-container { 
     background-color: var(--neutral-900);
     padding: 10px;
-    width: 700px; max-height: 500px;
+    width: 700px; max-height: 750px;
     margin-left: auto;
     border-radius: 5px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     overflow-y: auto;
-}
-
-.file-list-title { /* New class for file list title */
-    font-size: 25px;
-    color: white;
-    margin-left: auto;
 }
 
 .scrollable-file-list { /* Updated scrollable file list */
@@ -206,7 +205,6 @@
   
 
   .reports-mini-container{
-    gap: 150px;
     display: flex;
     justify-content: center;
     align-items: center;

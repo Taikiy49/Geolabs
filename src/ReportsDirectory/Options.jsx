@@ -24,7 +24,6 @@ const bottomOptions = [
   { title: '+', description: '', path: '/reports/add-files' },
   { title: '-', description: '', path: '/reports/remove-files' },
 ];
-
 const Options = ({ isMainPage }) => {
   const { apiUrl } = getConfig();
   const navigate = useNavigate();
@@ -36,6 +35,7 @@ const Options = ({ isMainPage }) => {
   const [selectedFiles, setSelectedFiles] = useState([]);
   const [uploading, setUploading] = useState(false);
   const [loading, setLoading] = useState(true);
+  const [filteredFiles, setFilteredFiles] = useState([]);
 
   // Fetch and sort the list of files from the server
   useEffect(() => {
@@ -48,6 +48,7 @@ const Options = ({ isMainPage }) => {
           return (numA ? parseInt(numA[0], 10) : 0) - (numB ? parseInt(numB[0], 10) : 0);
         });
         setFiles(sortedFiles);
+        setFilteredFiles(sortedFiles);
         setTotalFiles(sortedFiles.length);
       } catch (error) {
         console.error('Error fetching files:', error);
@@ -59,28 +60,18 @@ const Options = ({ isMainPage }) => {
     fetchFiles();
   }, [apiUrl]);
 
+  // Handle search input changes
   useEffect(() => {
     if (searchQuery) {
-      const lowerCaseQuery = searchQuery.toLowerCase();
-      setFilteredSoftwareOptions(
-        softwareOptions.filter(
-          option =>
-            option.title.toLowerCase().includes(lowerCaseQuery) ||
-            option.description.toLowerCase().includes(lowerCaseQuery)
-        )
-      );
-      setFilteredBottomOptions(
-        bottomOptions.filter(
-          option =>
-            option.title.toLowerCase().includes(lowerCaseQuery) ||
-            option.description.toLowerCase().includes(lowerCaseQuery)
+      setFilteredFiles(
+        files.filter((file) =>
+          file.filename.toLowerCase().includes(searchQuery.toLowerCase())
         )
       );
     } else {
-      setFilteredSoftwareOptions(softwareOptions);
-      setFilteredBottomOptions(bottomOptions);
+      setFilteredFiles(files);
     }
-  }, [searchQuery]);
+  }, [searchQuery, files]);
 
   const handleFileSelect = (filename) => {
     setSelectedFiles(prevSelected =>
@@ -120,6 +111,7 @@ const Options = ({ isMainPage }) => {
               return (numA ? parseInt(numA[0], 10) : 0) - (numB ? parseInt(numB[0], 10) : 0);
             });
             setFiles(sortedFiles);
+            setFilteredFiles(sortedFiles);
             setTotalFiles(sortedFiles.length);
             setUploading(false);
           });
@@ -142,19 +134,10 @@ const Options = ({ isMainPage }) => {
       <div className="inner-borders">
         {isMainPage && (
           <div className="software-sections">
-            <div className="title-search-container">
+            <div className='report-text-container'>
               <h1 className="software-title">Project Reports</h1>
-              <div className="main-search">
-                <input
-                  type="text"
-                  placeholder="Search..."
-                  value={searchQuery}
-                  onChange={(e) => setSearchQuery(e.target.value)}
-                  className="search-input"
-                />
-              </div>
+              <p className='software-description'>Please note that this software is currently under development. Some features may be incomplete or not functioning at their full capacity at this time.</p>
             </div>
-
             <div className='reports-mini-container'>
               <div className="software-section">
                 <div className="options-container">
@@ -173,10 +156,20 @@ const Options = ({ isMainPage }) => {
               </div>
 
               <div className="file-actions-container">
-                <h2 className="file-list-title">Total Files: {totalFiles}</h2>
+                <div className='file-top-container'>
+                  <div className="file-search-bar">
+                    <input
+                      type="text"
+                      placeholder="Search files..."
+                      value={searchQuery}
+                      onChange={(e) => setSearchQuery(e.target.value)}
+                    />
+                  </div>
+                  <h2 className="file-list-title">Total Files: {totalFiles}</h2>
+                </div>
                 <div className="file-list-container">
                   <div className="scrollable-file-list">
-                    {files.map((file, index) => (
+                    {filteredFiles.map((file, index) => (
                       <div key={index} className="file-item">
                         <input
                           type="checkbox"
