@@ -1,26 +1,34 @@
 /* Hide the scrollbar while allowing scrolling */
-  .reports-container, .nav-buttons, .auth-buttons, .main-content {
-    scrollbar-width: none; /* For Firefox */
-    -ms-overflow-style: none; /* For Internet Explorer and Edge */
+.reports-container, .nav-buttons, .auth-buttons, .main-content {
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For Internet Explorer and Edge */
 }
-  
-  .reports-container::-webkit-scrollbar, 
-  .nav-buttons::-webkit-scrollbar, 
-  .auth-buttons::-webkit-scrollbar, 
-  .main-content::-webkit-scrollbar {
-    display: none; 
-  }
 
+.reports-container::-webkit-scrollbar, 
+.nav-buttons::-webkit-scrollbar, 
+.auth-buttons::-webkit-scrollbar, 
+.main-content::-webkit-scrollbar {
+  display: none; 
+}
+
+/* Improved scrollbar for the file list */
+.scrollable-file-list::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar */
+}
 
 .scrollable-file-list::-webkit-scrollbar-thumb {
-    background-color: var(--primary-300); /* Scrollbar thumb color */
-    border-radius: 10px; /* Roundness of the scrollbar thumb */
-    border: 3px solid var(--primary-900); /* Space around thumb */
+  background-color: var(--primary-300); /* Scrollbar thumb color */
+  border-radius: 10px; /* Roundness of the scrollbar thumb */
+  border: 2px solid var(--neutral-900); /* Space around thumb */
 }
 
 .scrollable-file-list::-webkit-scrollbar-track {
-    background-color: var(--neutral-800); /* Scrollbar track color */
-    border-radius: 10px; /* Roundness of the scrollbar track */
+  background-color: var(--neutral-900); /* Match scrollbar track color with background */
+  border-radius: 10px; /* Roundness of the scrollbar track */
+}
+
+.scrollable-file-list::-webkit-scrollbar-thumb:hover {
+  background-color: var(--primary-400); /* Darker color on hover */
 }
   
   .app-container {
@@ -29,6 +37,8 @@
     flex-direction: column; /* Change direction to column for vertical layout */
     overflow-y: auto; /* Enable vertical scrolling */
   }
+
+
   .main-content-container {
     display: flex;
     width: 100%;
@@ -53,21 +63,27 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 30px;
     box-sizing: border-box;
   }
   
   .add-remove-container { /* Adjusted container for buttons */
     display: flex;
-    margin-left: auto;
-    font-size: 30px; margin-top: -40px;
+    margin-left: auto; gap: 30px;
+    margin-top: 20px; margin-right: 20px;
+  }
+
+  .reports-remove-text, .reports-upload-text{
+    margin-top: 0px;
   }
 
   .add-remove-option-box {
     color: white;
-    border-radius: 10px;
     cursor: pointer;
-    text-align: center;
+
+  }
+
+  .add-remove-option-box.p{
+    color: blue;
   }
   
   .add-remove-option-box:hover {
@@ -78,7 +94,6 @@
   .software-sections {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     flex: 1;
   }
 
@@ -90,14 +105,15 @@
   }
   
   .software-title {
-    margin-right: auto;
+    margin-right: auto; 
     font-weight: bold;
-    color: var(--primary-100);
+    color: var(--neutral-100);
   }
   
   
   .software-description {
     font-size: 20px; font-weight: normal; width: 700px;
+    color: var(--neutral-200);
   }
 
   .app-footer {
@@ -105,10 +121,6 @@
     gap: 50px;
   }
   
-  .inner-borders {
-    display: flex;
-    flex-direction: column;
-  }
   
   .options-container {
     display: grid; gap: 20px;
@@ -130,14 +142,16 @@
   }
   
   .option-box h2 {
+    margin-top: 0px;
     width: auto;
     font-weight: bold; font-size: 30px;
     padding: 5px; border-radius: 20px;
   }
   
   .option-box p {
+    margin-top: -15px; margin-left: 5px;
     font-weight: normal;
-    font-size: 20px;
+    font-size: 20px; color: var(--neutral-200);
   }
 
   
@@ -167,7 +181,7 @@
   
 .file-list-title { /* New class for file list title */
   font-size: 20px;
-  color: white;
+  color: var(--neutral-100);
 }
   
   .file-search-bar input {
@@ -183,30 +197,43 @@
   .file-list-container { 
     background-color: var(--neutral-900);
     padding: 10px;
-    width: 700px; max-height: 750px;
+    width: 700px; max-height: 600px;
     margin-left: auto;
     border-radius: 5px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     overflow-y: auto;
 }
 
 .scrollable-file-list { /* Updated scrollable file list */
     background-color: transparent;
     font-size: 20px;
+
 }
 
   
-  .file-item { /* Updated file item styling */
-    padding: 8px;
-    border-radius: 5px;
-    color: white;
-    overflow-y: hidden;
-  }
+.file-item { /* Updated file item styling */
+  padding: 12px; font-weight: normal; user-select: none;
+  border-radius: 10px;
+  color: var(--neutral-200);
+  background-color: var(--neutral-900);
+  margin-bottom: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+
+.file-item.selected { /* Styling for selected file item */
+  background-color: var(--primary-300); /* Selected color */
+  transform: scale(1.03); /* Slightly enlarge the selected box */
+}
+
+.file-item:hover {
+  background-color: var(--neutral-800); /* Hover color */
+}
+
   
 
   .reports-mini-container{
     display: flex;
-    justify-content: center;
     align-items: center;
   }
   
@@ -214,7 +241,6 @@
   .option-logo {
     width: 70px; /* Adjust the size as needed */
     height: auto;
-    margin-bottom: 10px; /* Space between the logo and title */
     display: block;
     margin-right: auto;
     filter: invert(100%);
@@ -250,3 +276,7 @@
     color: white;
   }
   
+
+.reports-file-remove-button, .reports-file-upload-button{
+  width: 50px; color: white; filter: invert(1);
+}

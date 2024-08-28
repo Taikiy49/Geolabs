@@ -21,9 +21,10 @@ const softwareOptions = [
 ];
 
 const bottomOptions = [
-  { title: '+', description: '', path: '/reports/add-files' },
-  { title: '-', description: '', path: '/reports/remove-files' },
+  { title: 'Add Files', icon: 'fas fa-upload', path: '/reports/add-files' },
+  { title: 'Remove Files', icon: 'fas fa-trash-alt', path: '/reports/remove-files' },
 ];
+
 const Options = ({ isMainPage }) => {
   const { apiUrl } = getConfig();
   const navigate = useNavigate();
@@ -36,8 +37,9 @@ const Options = ({ isMainPage }) => {
   const [uploading, setUploading] = useState(false);
   const [loading, setLoading] = useState(true);
   const [filteredFiles, setFilteredFiles] = useState([]);
+  const [isDragging, setIsDragging] = useState(false);
+  const [draggingAdd, setDraggingAdd] = useState(true);
 
-  // Fetch and sort the list of files from the server
   useEffect(() => {
     const fetchFiles = async () => {
       try {
@@ -60,7 +62,6 @@ const Options = ({ isMainPage }) => {
     fetchFiles();
   }, [apiUrl]);
 
-  // Handle search input changes
   useEffect(() => {
     if (searchQuery) {
       setFilteredFiles(
@@ -73,12 +74,30 @@ const Options = ({ isMainPage }) => {
     }
   }, [searchQuery, files]);
 
-  const handleFileSelect = (filename) => {
+  const handleFileSelect = (filename, add) => {
     setSelectedFiles(prevSelected =>
-      prevSelected.includes(filename)
-        ? prevSelected.filter(file => file !== filename)
-        : [...prevSelected, filename]
+      add
+        ? [...prevSelected, filename]
+        : prevSelected.filter(file => file !== filename)
     );
+  };
+
+  const handleMouseDown = (index) => {
+    setIsDragging(true);
+    const fileSelected = selectedFiles.includes(filteredFiles[index].filename);
+    setDraggingAdd(!fileSelected); // If already selected, toggle to remove on drag
+
+    handleFileSelect(filteredFiles[index].filename, !fileSelected);
+  };
+
+  const handleMouseUp = () => {
+    setIsDragging(false);
+  };
+
+  const handleMouseEnter = (index) => {
+    if (isDragging) {
+      handleFileSelect(filteredFiles[index].filename, draggingAdd);
+    }
   };
 
   const handleDeleteFiles = () => {
@@ -102,7 +121,6 @@ const Options = ({ isMainPage }) => {
 
     axios.post(`${apiUrl}/reports/add-files`, formData)
       .then(response => {
-        // Re-fetch the file list after upload
         axios.get(`${apiUrl}/reports/list-files`)
           .then(response => {
             const sortedFiles = response.data.sort((a, b) => {
@@ -126,8 +144,10 @@ const Options = ({ isMainPage }) => {
     return <div>Loading files...</div>;
   }
 
+  const isSelected = (filename) => selectedFiles.includes(filename);
+
   return (
-    <div className="reports-container">
+    <div className="reports-container" onMouseUp={handleMouseUp}>
       <div className={`overlay ${uploading ? 'visible' : ''}`}>
         <div className="loading-message">Uploading files, please wait...</div>
       </div>
@@ -170,12 +190,12 @@ const Options = ({ isMainPage }) => {
                 <div className="file-list-container">
                   <div className="scrollable-file-list">
                     {filteredFiles.map((file, index) => (
-                      <div key={index} className="file-item">
-                        <input
-                          type="checkbox"
-                          checked={selectedFiles.includes(file.filename)}
-                          onChange={() => handleFileSelect(file.filename)}
-                        />
+                      <div
+                        key={index}
+                        className={`file-item ${isSelected(file.filename) ? 'selected' : ''}`}
+                        onMouseDown={() => handleMouseDown(index)}
+                        onMouseEnter={() => handleMouseEnter(index)}
+                      >
                         {file.filename}
                       </div>
                     ))}
@@ -183,15 +203,17 @@ const Options = ({ isMainPage }) => {
                 </div>
 
                 <div className="add-remove-container">
-                  <button
+                  <div
                     className="add-remove-option-box"
                     onClick={handleDeleteFiles}
                     disabled={selectedFiles.length === 0}
-                  >
-                    -
-                  </button>
+                  > 
+                    <img className='reports-file-remove-button' src='file-remove.svg' alt="SVG Icon" />
+                    <p className='reports-remove-text'>Remove</p>
+                  </div>
                   <label className="add-remove-option-box">
-                    +
+                    <img className='reports-file-upload-button' src='file-upload.svg' alt="SVG Icon" />
+                    <p div className='reports-upload-text'>Upload</p>
                     <input
                       type="file"
                       multiple
