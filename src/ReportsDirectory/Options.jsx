@@ -20,9 +20,10 @@ const softwareOptions = [
   },
 ];
 
+
 const bottomOptions = [
-  { title: 'Add Files', description: '', path: '/reports/add-files' },
-  { title: 'Remove Files', description: '', path: '/reports/remove-files' },
+  { title: '+', description: '', path: '/reports/add-files' },
+  { title: '-', description: '', path: '/reports/remove-files' },
 ];
 
 const Options = ({ isMainPage }) => {
@@ -68,30 +69,6 @@ const Options = ({ isMainPage }) => {
       });
   }, [apiUrl]);
 
-  const handleAddFiles = async () => {
-    const formData = new FormData();
-    // Add your file inputs to the formData object here
-    // Example: formData.append('files', selectedFile);
-    try {
-      await axios.post(`${apiUrl}/reports/add-files`, formData);
-      alert('Files added successfully!');
-    } catch (error) {
-      console.error('There was an error adding the files!', error);
-      alert('Failed to add files.');
-    }
-  };
-
-  const handleRemoveFiles = async () => {
-    const filenamesToRemove = files.map(file => file.filename); // You can change this to a specific selection
-    try {
-      await axios.post(`${apiUrl}/reports/remove-files`, { filenames: filenamesToRemove });
-      alert('Files removed successfully!');
-    } catch (error) {
-      console.error('There was an error removing the files!', error);
-      alert('Failed to remove files.');
-    }
-  };
-
   return (
     <div className="reports-container">
       <div className="inner-borders">
@@ -128,7 +105,7 @@ const Options = ({ isMainPage }) => {
 
               </div>
               <div className="file-actions-container">
-                <h2 className="file-list-title">Total Files: {totalFiles}</h2>
+              <h2 className="file-list-title">Total Files: {totalFiles}</h2>
                 <div className="file-list-container">
                   <div className="scrollable-file-list">
                     {files.map((file, index) => (
@@ -140,18 +117,15 @@ const Options = ({ isMainPage }) => {
                 </div>
 
                 <div className="add-remove-container">
-                  <div
-                    className="add-remove-option-box"
-                    onClick={handleAddFiles}  // Trigger add files
-                  >
-                    <h2>Add Files</h2>
-                  </div>
-                  <div
-                    className="add-remove-option-box"
-                    onClick={handleRemoveFiles}  // Trigger remove files
-                  >
-                    <h2>Remove Files</h2>
-                  </div>
+                  {filteredBottomOptions.map((option, index) => (
+                    <div
+                      key={index}
+                      className="add-remove-option-box"
+                      onClick={() => navigate(option.path)}
+                    >
+                      <h2>{option.title}</h2>
+                    </div>
+                  ))}
                 </div>
               </div>
             </div>

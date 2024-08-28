@@ -61,20 +61,17 @@
     display: flex;
     gap: 30px;
     margin-left: auto;
-    font-size: 12px; margin-bottom: 30px;
+    font-size: 30px; margin-top: -40px;
   }
 
   .add-remove-option-box {
-    background-color: var(--neutral-800);
     color: white;
     border-radius: 10px;
     cursor: pointer;
     text-align: center;
-    padding-left: 10px; padding-right: 10px;
   }
   
   .add-remove-option-box:hover {
-    background-color: var(--neutral-700);
     transform: scale(1.05);
   }
   
@@ -129,7 +126,7 @@
     font-size: 16px;
     border-radius: 10px;
     border: none;
-    background-color: var(--primary-100);
+    background-color: var(--neutral-300);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 1);
     outline: none;
     box-sizing: border-box;
