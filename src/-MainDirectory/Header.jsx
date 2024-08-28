@@ -14,7 +14,7 @@ const Header = ({ isAuthenticated, setIsAuthenticated }) => {
     <>
       <header className="app-header">
         <div className="logo" onClick={() => navigate('/')}>Geolabs, Inc.</div>
-        <img src='geolabs.png' className='geolabs-img'></img>
+        <a href='https://www.geolabs.net/'><img src='geolabs.png' className='geolabs-img'></img></a>
       </header>
       
       <div className="navbar">

@@ -185,7 +185,7 @@ const Options = ({ isMainPage }) => {
                       onChange={(e) => setSearchQuery(e.target.value)}
                     />
                   </div>
-                  <h2 className="file-list-title">Total Files: {totalFiles}</h2>
+                  <h2 className="file-list-title">File Count: {totalFiles}</h2>
                 </div>
                 <div className="file-list-container">
                   <div className="scrollable-file-list">

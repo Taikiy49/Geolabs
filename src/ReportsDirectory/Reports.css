@@ -48,7 +48,7 @@
 
   .main-content {
     color: var(--primary-100);
-    background-color: black;
+    background-color: rgb(10, 10, 10);
     flex: 1;
     display: flex;
     box-sizing: border-box;
@@ -80,7 +80,7 @@
     background-color: var(--neutral-900);
     padding-left: 10px; padding-right: 10px; padding-top: 10px;
     border-radius: 10px;
-    color: white; border: 0.5px solid var(--neutral-800);
+    box-shadow: 0 0 2px var(--neutral-700);
     cursor: pointer;
 
   }
@@ -107,15 +107,18 @@
   }
   
   .software-title {
-    margin-right: auto; 
+    text-align: center;
+    margin-right: auto;
     font-weight: bold;
     color: var(--neutral-100);
   }
   
   
   .software-description {
-    font-size: 20px; font-weight: normal; width: 700px;
+    text-align: center; width: 700px; margin: auto;
+    font-size: 20px; font-weight: normal;
     margin-top: -10px;
+    margin-bottom: 30px;
     color: var(--neutral-200);
   }
 
@@ -137,7 +140,7 @@
     border-radius: 10px;
     transition: all 0.3s ease;
     cursor: pointer;
-    border: 0.5px solid var(--neutral-800);
+    box-shadow: 0 0 2px var(--neutral-700);
   }
   
   .option-box:hover {
@@ -177,12 +180,12 @@
   .file-search-bar {
     display: flex;
     height: 50px;
-    align-items: center; margin-left: 10px;
+    align-items: center; margin-left: 10px; 
   }
 
   
 .file-list-title { /* New class for file list title */
-  font-size: 20px;
+  font-size: 20px; margin-left: -50px; font-weight: normal;
   color: var(--neutral-100);
 }
   
@@ -193,11 +196,12 @@
     border: none;
     background-color: var(--neutral-500);
     width: 300px;
+    box-shadow: 0 0 2px var(--neutral-400); outline: none;
   }
   
   .file-list-container { 
     padding: 10px; margin-top: -10px;
-    width: 700px; max-height: 600px; 
+    width: 700px; max-height: 600px; overflow-x: hidden;
     margin-left: auto;
     border-radius: 5px;
     overflow-y: auto;
@@ -212,12 +216,12 @@
   
 .file-item { 
   background-color: var(--neutral-900);
-  border: 0.5px solid var(--neutral-800);
+  box-shadow: 0 0 2px var(--neutral-700);
   padding: 12px; font-weight: normal; user-select: none;
   border-radius: 10px;
   color: var(--neutral-200);
   background-color: var(--neutral-900);
-  margin-bottom: 3px;
+  margin-bottom: 7px;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.3s ease;
 }

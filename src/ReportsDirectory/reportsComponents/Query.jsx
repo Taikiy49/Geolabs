@@ -3,25 +3,25 @@ import axios from 'axios';
 import '../reportsStyle/Query.css';
 import getConfig from '../../config';
 
-const Relevancy = () => {
+const Query = () => {
   const [input, setInput] = useState('');
   const [fileNames, setFileNames] = useState([]);
-  const [selectedFiles, setSelectedFiles] = useState([]); // Track selected files
-  const [isSelecting, setIsSelecting] = useState(false); // Track if the user is dragging
-  const [chatbotPrompt, setChatbotPrompt] = useState(''); // New prompt for the chatbot
-  const [chatbotResponse, setChatbotResponse] = useState(''); // Store chatbot response
-  const [submittedInput, setSubmittedInput] = useState(''); // Store submitted chatbot prompt
+  const [selectedFiles, setSelectedFiles] = useState([]);
+  const [isSelecting, setIsSelecting] = useState(false);
+  const [chatbotPrompt, setChatbotPrompt] = useState('');
+  const [chatbotResponse, setChatbotResponse] = useState('');
+  const [submittedInput, setSubmittedInput] = useState('');
   const [error, setError] = useState('');
-  const [useFileSelector, setUseFileSelector] = useState(true); // Toggle for file selector
+  const [useFileSelector, setUseFileSelector] = useState(false);
   const { apiUrl } = getConfig();
-  const listRef = useRef(null); // Reference to the list container
+  const listRef = useRef(null);
 
   const searchFiles = async (query) => {
     setError('');
     try {
       const response = await axios.post(`${apiUrl}/reports/search-filenames`, { prompt: query });
       setFileNames(response.data.filenames);
-      setInput(''); // Clear the input after searching
+      setInput('');
     } catch (error) {
       console.error('There was an error retrieving the file names from the server!', error);
       setError('An error occurred while searching for relevant files. Please try again.');
@@ -46,30 +46,6 @@ const Relevancy = () => {
     });
   };
 
-  const handleChatbotRequest = async () => {
-    setError('');
-    setChatbotResponse('');
-    setSubmittedInput(chatbotPrompt);
-
-    try {
-      const response = await axios.post(`${apiUrl}/reports/relevancy`, {
-        filenames: useFileSelector ? selectedFiles : [],
-        prompt: chatbotPrompt,
-        useFileSelector,
-      });
-
-      let formattedOutput = response.data.response
-        .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
-        .replace(/^\s*\*\s*(.+)$/gm, '<li>$1</li>');
-
-      formattedOutput = `<ul>${formattedOutput}</ul>`;
-      setChatbotResponse(formattedOutput);
-    } catch (error) {
-      console.error('There was an error sending the selected files to the chatbot!', error);
-      setError('An error occurred while processing your request. Please try again.');
-    }
-  };
-
   const handleMouseDown = (fileName) => {
     setIsSelecting(true);
     handleFileSelection(fileName);
@@ -92,54 +68,57 @@ const Relevancy = () => {
   const toggleFileSelector = () => {
     setUseFileSelector(!useFileSelector);
     setSelectedFiles([]);
+    setInput('');
+    setFileNames([]);
   };
 
   return (
-    <div className="relevancy-container" onMouseUp={handleMouseUp}>
-      <div className="file-selection-area">
-        <form onSubmit={(e) => e.preventDefault()} className="relevancy-form">
-          <input
-            type="text"
-            value={input}
-            onChange={(e) => setInput(e.target.value)}
-            onKeyDown={handleKeyDown}
-            placeholder="Type a word..."
-            className="input-field"
-          />
-        </form>
-        <div className="controls">
-          <label className="switch">
+    <div className="relevancy-page-container" onMouseUp={handleMouseUp}>
+      <div className="relevancy-file-section">
+        <div className="relevancy-controls">
+          <label className="relevancy-switch">
             <input type="checkbox" checked={useFileSelector} onChange={toggleFileSelector} />
-            <span className="slider"></span>
+            <span className="relevancy-slider"></span>
           </label>
-          <span>Use File Selector</span>
+          <span>File Selection</span>
         </div>
+
         {useFileSelector && (
           <>
+            <form onSubmit={(e) => e.preventDefault()} className="relevancy-form">
+              <input
+                type="text"
+                value={input}
+                onChange={(e) => setInput(e.target.value)}
+                onKeyDown={handleKeyDown}
+                placeholder="Type a word..."
+                className="relevancy-input-field"
+              />
+            </form>
             {error ? (
-              <p className="relevancy-error">{error}</p>
+              <p className="relevancy-error-message">{error}</p>
             ) : (
-              <div className="mini-container">
-                <div className="filenames-list-container" ref={listRef}>
-                  <ul className="filenames-list">
+              <div className="relevancy-mini-container">
+                <div className="relevancy-file-list-container" ref={listRef}>
+                  <ul className="relevancy-file-list">
                     {fileNames.map((fileName, index) => (
                       <li
                         key={index}
-                        className={`filename-item ${selectedFiles.includes(fileName) ? 'selected' : ''}`}
+                        className={`relevancy-file-item ${selectedFiles.includes(fileName) ? 'relevancy-selected' : ''}`}
                         onMouseDown={() => handleMouseDown(fileName)}
                         onMouseOver={() => handleMouseOver(fileName)}
                       >
-                        <div className="rank-container">
-                          <span className="rank-number">{index + 1}</span>
+                        <div className="relevancy-rank-container">
+                          <span className="relevancy-rank-number">{index + 1}</span>
                         </div>
-                        <div className="filename-box">
-                          <span className="filename-text">{fileName}</span>
+                        <div className="relevancy-filename-box">
+                          <span className="relevancy-filename-text">{fileName}</span>
                         </div>
                       </li>
                     ))}
                   </ul>
                 </div>
-                <button onClick={handleResetSelection} className="reset-button">
+                <button onClick={handleResetSelection} className="relevancy-reset-button">
                   Reset Selection
                 </button>
               </div>
@@ -148,27 +127,28 @@ const Relevancy = () => {
         )}
       </div>
 
-      <div className="chatbot-area">
-        <div className="chatbot-section">
+      <div className="relevancy-chatbot-section">
+        <div className="relevancy-chatbot-container">
           <textarea
             value={chatbotPrompt}
             onChange={(e) => setChatbotPrompt(e.target.value)}
             placeholder="Enter your query..."
-            className="chatbot-prompt-input"
+            className="relevancy-chatbot-input"
           />
-          <button onClick={handleChatbotRequest} className="chatbot-button">
-            Ask Chatbot ({selectedFiles.length} files selected)
-          </button>
+          
+          <div className="relevancy-file-count-text">
+            {selectedFiles.length} files selected
+          </div>
 
           {submittedInput && (
-            <div className="submitted-input-display">
+            <div className="relevancy-submitted-query">
               <p><strong>Your Query:</strong> {submittedInput}</p>
             </div>
           )}
 
           {chatbotResponse && (
             <div
-              className="chatbot-response"
+              className="relevancy-chatbot-response"
               dangerouslySetInnerHTML={{ __html: chatbotResponse }}
             />
           )}
@@ -178,4 +158,4 @@ const Relevancy = () => {
   );
 };
 
-export default Relevancy;
+export default Query;

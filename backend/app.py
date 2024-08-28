@@ -11,9 +11,9 @@ from concurrent.futures import ThreadPoolExecutor
 import spacy
 from spacy.matcher import Matcher
 from datetime import timedelta, datetime
-import os
 import functools
 from terms import oahu_cities, civil_engineering_terms
+
 
 # Initialize Flask app and configure session
 app = Flask(__name__)
@@ -150,6 +150,23 @@ def extract_and_rank_keywords(prompt):
     ranked_phrases = sorted(relevant_phrases, key=rank_phrase, reverse=True)
     return ranked_phrases
 
+def generate_all_forms(word):
+    forms = set()
+    doc = nlp(word)
+    forms.add(word)
+    lemma = doc[0].lemma_
+    forms.add(lemma)
+
+    if word.endswith('s') and not word.endswith('ss'):
+        singular = lemma if lemma.endswith('y') else word[:-1]
+        forms.add(singular)
+    else:
+        plural = lemma + 's'
+        forms.add(plural)
+    
+    return forms
+
+
 @app.route('/reports/search-database', methods=['POST'])
 def send_input():
     model = Model()
@@ -216,12 +233,15 @@ def remove_files():
 def search_filenames():
     data = request.get_json()
     prompt = data.get('prompt')
-
     keywords_list = extract_and_rank_keywords(prompt)
-    filtered_documents = get_filtered_documents(keywords_list)
+    all_keywords = set()
+    for keyword in keywords_list:
+        all_keywords.update(generate_all_forms(keyword))
+    print(all_keywords) 
+    filtered_documents = get_filtered_documents(list(all_keywords))
     filenames = [doc["filename"] for doc in filtered_documents]
-
     return jsonify({"filenames": filenames})
+
 
 @app.route('/reports/get-quick-view', methods=['POST'])
 def get_quick_view():
@@ -253,6 +273,8 @@ def get_quick_view():
         return jsonify({"content": quick_view_content}), 200
     else:
         return jsonify({"message": "File not found"}), 404
+    
+
 
 @app.route('/register', methods=['POST'])
 def register():
