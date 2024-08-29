@@ -12,6 +12,7 @@ import spacy
 from spacy.matcher import Matcher
 from datetime import timedelta, datetime
 import functools
+from werkzeug.utils import secure_filename
 from terms import oahu_cities, civil_engineering_terms
 
 
@@ -388,7 +389,49 @@ def chatbot_request():
 
     return jsonify({"response": response})
 
+"""----- EMPLOYEE SECTION HERE -----"""
+def init_employee_db():
+    conn = sqlite3.connect('employee.db')
+    cursor = conn.cursor()
+    cursor.execute('''
+        CREATE TABLE IF NOT EXISTS documents (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            filename TEXT,
+            content TEXT,
+            uploaded_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+        )
+    ''')
+    conn.commit()
+    conn.close()
 
+init_employee_db()
+
+# Route to handle file upload for employees
+@app.route('/employee/upload-files', methods=['POST'])
+def upload_employee_files():
+    files = request.files.getlist('files')
+    if not files:
+        return jsonify({"message": "No files provided"}), 400
+
+    conn = sqlite3.connect('employee.db')
+    cursor = conn.cursor()
+
+    for file in files:
+        filename = secure_filename(file.filename)
+        
+        # Convert the PDF to text directly
+        parsed_text = ParseFile(file).generate_sentence_list()  # Assuming this returns a list of sentences
+        
+        # Store the content in the database
+        cursor.execute('''
+            INSERT INTO documents (filename, content)
+            VALUES (?, ?)
+        ''', (filename, ' '.join(parsed_text)))
+
+    conn.commit()
+    conn.close()
+
+    return jsonify({"message": "Files uploaded and processed successfully"}), 200
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=8000)

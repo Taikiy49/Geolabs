@@ -102,86 +102,91 @@ const Query = () => {
 
   return (
     <div className="relevancy-page-container" onMouseUp={handleMouseUp}>
-      <div className="relevancy-file-section">
-        <div className="relevancy-controls">
-          <label className="relevancy-switch">
-            <input type="checkbox" checked={useFileSelector} onChange={toggleFileSelector} />
-            <span className="relevancy-slider"></span>
-          </label>
-          <span>File Selection</span>
-        </div>
-
-        {useFileSelector && (
-          <>
-            <form onSubmit={(e) => e.preventDefault()} className="relevancy-form">
-              <input
-                type="text"
-                value={input}
-                onChange={(e) => setInput(e.target.value)}
-                onKeyDown={handleKeyDown}
-                placeholder="Type a word..."
-                className="relevancy-input-field"
-              />
-            </form>
-            {error ? (
-              <p className="relevancy-error-message">{error}</p>
-            ) : (
-              <div className="relevancy-mini-container">
-                <div className="relevancy-file-list-container" ref={listRef}>
-                  <ul className="relevancy-file-list">
-                    {fileNames.map((fileName, index) => (
-                      <li
-                        key={index}
-                        className={`relevancy-file-item ${selectedFiles.includes(fileName) ? 'relevancy-selected' : ''}`}
-                        onMouseDown={() => handleMouseDown(fileName)}
-                        onMouseOver={() => handleMouseOver(fileName)}
-                      >
-                        <div className="relevancy-rank-container">
-                          <span className="relevancy-rank-number">{index + 1}</span>
-                        </div>
-                        <div className="relevancy-filename-box">
-                          <span className="relevancy-filename-text">{fileName}</span>
-                        </div>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-                <button onClick={handleResetSelection} className="relevancy-reset-button">
-                  Reset Selection
-                </button>
-              </div>
-            )}
-          </>
-        )}
-      </div>
-
-      <div className="relevancy-chatbot-section">
-        <div className="relevancy-chatbot-container">
-          <textarea
-            name="chatbot"
-            value={chatbotPrompt}
-            onChange={(e) => setChatbotPrompt(e.target.value)}
-            onKeyDown={handleKeyDown}
-            placeholder="Enter your query..."
-            className="relevancy-chatbot-input"
-          />
-          
-          <div className="relevancy-file-count-text">
-            {selectedFiles.length} files selected
+      <div className="query-centering-container">
+        <div className="relevancy-file-section">
+          <div className="relevancy-controls">
+            <label className="relevancy-switch">
+              <input type="checkbox" checked={useFileSelector} onChange={toggleFileSelector} />
+              <span className="relevancy-slider"></span>
+            </label>
+            <span>File Selection</span>
           </div>
 
-          {submittedInput && (
-            <div className="relevancy-submitted-query">
-              <p><strong>Your Query:</strong> {submittedInput}</p>
-            </div>
+          {useFileSelector && (
+            <>
+              <form onSubmit={(e) => e.preventDefault()} className="relevancy-form">
+                <input
+                  type="text"
+                  value={input}
+                  onChange={(e) => setInput(e.target.value)}
+                  onKeyDown={handleKeyDown}
+                  placeholder="Type a word..."
+                  className="relevancy-input-field"
+                />
+              </form>
+              {error ? (
+                <p className="relevancy-error-message">{error}</p>
+              ) : (
+                <div className="relevancy-mini-container">
+                  <div className="relevancy-file-list-container" ref={listRef}>
+                    <ul className="relevancy-file-list">
+                      {fileNames.map((fileName, index) => (
+                        <li
+                          key={index}
+                          className={`relevancy-file-item ${selectedFiles.includes(fileName) ? 'relevancy-selected' : ''}`}
+                          onMouseDown={() => handleMouseDown(fileName)}
+                          onMouseOver={() => handleMouseOver(fileName)}
+                        >
+                          <div className="relevancy-rank-container">
+                            <span className="relevancy-rank-number">{index + 1}</span>
+                          </div>
+                          <div className="relevancy-filename-box">
+                            <span className="relevancy-filename-text">{fileName}</span>
+                          </div>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  {selectedFiles.length > 0 && (
+                        <div onClick={handleResetSelection} className="relevancy-reset-button">
+                          <img className='reset-button-img' src='../reset-button.svg' />
+                          <p className='relevancy-reset-button-text'>Reset</p>
+                        </div>
+                      )}
+                </div>
+              )}
+            </>
           )}
+        </div>
 
-          {chatbotResponse && (
-            <div
-              className="relevancy-chatbot-response"
-              dangerouslySetInnerHTML={{ __html: chatbotResponse }}
+        <div className="relevancy-chatbot-section">
+          <div className="relevancy-chatbot-container">
+            <div className="relevancy-file-count-text">
+              {selectedFiles.length} files selected
+            </div>
+            <input
+              name="chatbot"
+              value={chatbotPrompt}
+              onChange={(e) => setChatbotPrompt(e.target.value)}
+              onKeyDown={handleKeyDown}
+              placeholder="Enter your query..."
+              className="relevancy-chatbot-input"
             />
-          )}
+          
+
+            {submittedInput && (
+              <div className="relevancy-submitted-query">
+                <p><strong></strong> {submittedInput}</p>
+              </div>
+            )}
+
+            {chatbotResponse && (
+              <div
+                className="relevancy-chatbot-response"
+                dangerouslySetInnerHTML={{ __html: chatbotResponse }}
+              />
+            )}
+          </div>
         </div>
       </div>
     </div>

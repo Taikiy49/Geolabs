@@ -207,13 +207,13 @@ const Options = ({ isMainPage }) => {
                     className="add-remove-option-box"
                     onClick={handleDeleteFiles}
                     disabled={selectedFiles.length === 0}
-                  > 
-                    <img className='reports-file-remove-button' src='file-remove.svg' alt="SVG Icon" />
+                  >
+                    <i className="fas fa-trash-alt"></i> {/* Font Awesome Trash Icon */}
                     <p className='reports-remove-text'>Remove</p>
                   </div>
                   <label className="add-remove-option-box">
-                    <img className='reports-file-upload-button' src='file-upload.svg' alt="SVG Icon" />
-                    <p div className='reports-upload-text'>Upload</p>
+                    <i className="fas fa-upload"></i> {/* Font Awesome Upload Icon */}
+                    <p className='reports-upload-text'>Upload</p>
                     <input
                       type="file"
                       multiple
@@ -223,6 +223,7 @@ const Options = ({ isMainPage }) => {
                     />
                   </label>
                 </div>
+
               </div>
             </div>
           </div>
