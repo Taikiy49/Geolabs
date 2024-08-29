@@ -1,0 +1,171 @@
+/* Container styles for Employee section */
+.employee-container {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto
+  }
+  
+  .employee-sections {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 20px;
+  }
+  
+  .employee-mini-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .employee-file-list-container { 
+    padding: 10px;
+    width: 700px;
+    max-height: 600px;
+    overflow-x: hidden;
+    margin-left: auto;
+    border-radius: 5px;
+    overflow-y: auto;
+  }
+
+  .employee-text-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column; text-align: center;
+  }
+  
+  /* Styling for title and description */
+  .employee-title {
+    text-align: center;
+    font-weight: bold;
+    color: var(--neutral-100);
+  }
+  
+  .employee-description {
+    text-align: center;
+    width: 700px;
+    margin: auto;
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 30px;
+    color: var(--neutral-200);
+  }
+  
+  /* Styling for remove and upload buttons */
+  .employee-remove-text, .employee-upload-text {
+    margin-top: 0px;
+    font-size: 12px;
+    text-align: center;
+  }
+  
+  .employee-file-remove-button, .employee-file-upload-button {
+    width: 40px;
+    color: white;
+    filter: invert(1);
+  }
+  
+  /* Additional containers and button hover effects */
+  .add-remove-container {
+    display: flex;
+    gap: 50px;
+    margin: 0 auto;
+    margin-top: 10px; 
+  }
+  
+  .add-remove-option-box {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .add-remove-option-box:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Option box styling */
+  .options-container {
+    display: grid;
+    gap: 20px;
+  }
+  
+  .option-box {
+    max-width: 300px;
+    background-color: var(--neutral-900);
+    color: var(--primary-100);
+    padding: 15px;
+    padding-bottom: 0px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .option-box:hover {
+    transform: scale(1.05);
+    background-color: var(--neutral-800);
+  }
+  
+  .option-box h2 {
+    margin-top: 0px;
+    width: auto;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 5px;
+    border-radius: 20px;
+  }
+  
+  .option-box p {
+    margin-top: -15px;
+    margin-left: 5px;
+    font-weight: normal;
+    font-size: 20px;
+    color: var(--neutral-200);
+  }
+  
+  /* Scrollbar styling for file list */
+  .scrollable-file-list {
+    background-color: transparent;
+    font-size: 20px;
+  }
+  
+  .scrollable-file-list::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  .scrollable-file-list::-webkit-scrollbar-thumb {
+    background-color: var(--primary-300);
+    border-radius: 10px;
+    border: 2px solid var(--neutral-900);
+  }
+  
+  .scrollable-file-list::-webkit-scrollbar-track {
+    background-color: var(--neutral-900);
+    border-radius: 10px;
+  }
+  
+  .scrollable-file-list::-webkit-scrollbar-thumb:hover {
+    background-color: var(--primary-400);
+  }
+  
+  /* Styling for file items */
+  .file-item { 
+    background-color: var(--neutral-900);
+    padding: 12px;
+    font-weight: normal;
+    user-select: none;
+    border-radius: 10px;
+    color: var(--neutral-300);
+    margin-bottom: 7px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .file-item.selected { 
+    background-color: var(--neutral-700); 
+    transform: scale(1.03); 
+  }
+  
+  .file-item:hover {
+    background-color: var(--neutral-800);
+  }
+  

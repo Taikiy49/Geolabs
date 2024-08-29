@@ -11,9 +11,10 @@ from concurrent.futures import ThreadPoolExecutor
 import spacy
 from spacy.matcher import Matcher
 from datetime import timedelta, datetime
-import os
 import functools
+from werkzeug.utils import secure_filename
 from terms import oahu_cities, civil_engineering_terms
+
 
 # Initialize Flask app and configure session
 app = Flask(__name__)
@@ -150,6 +151,23 @@ def extract_and_rank_keywords(prompt):
     ranked_phrases = sorted(relevant_phrases, key=rank_phrase, reverse=True)
     return ranked_phrases
 
+def generate_all_forms(word):
+    forms = set()
+    doc = nlp(word)
+    forms.add(word)
+    lemma = doc[0].lemma_
+    forms.add(lemma)
+
+    if word.endswith('s') and not word.endswith('ss'):
+        singular = lemma if lemma.endswith('y') else word[:-1]
+        forms.add(singular)
+    else:
+        plural = lemma + 's'
+        forms.add(plural)
+    
+    return forms
+
+
 @app.route('/reports/search-database', methods=['POST'])
 def send_input():
     model = Model()
@@ -216,12 +234,15 @@ def remove_files():
 def search_filenames():
     data = request.get_json()
     prompt = data.get('prompt')
-
     keywords_list = extract_and_rank_keywords(prompt)
-    filtered_documents = get_filtered_documents(keywords_list)
+    all_keywords = set()
+    for keyword in keywords_list:
+        all_keywords.update(generate_all_forms(keyword))
+    print(all_keywords) 
+    filtered_documents = get_filtered_documents(list(all_keywords))
     filenames = [doc["filename"] for doc in filtered_documents]
-
     return jsonify({"filenames": filenames})
+
 
 @app.route('/reports/get-quick-view', methods=['POST'])
 def get_quick_view():
@@ -253,6 +274,8 @@ def get_quick_view():
         return jsonify({"content": quick_view_content}), 200
     else:
         return jsonify({"message": "File not found"}), 404
+    
+
 
 @app.route('/register', methods=['POST'])
 def register():
@@ -339,6 +362,7 @@ def chatbot_request():
         keywords_list = extract_and_rank_keywords(prompt)
         documents = get_filtered_documents(keywords_list)
         filenames = [doc["filename"] for doc in documents[:5]]  # Get top 5 files
+        print(filenames)
 
     if not filenames:
         return jsonify({"response": "No files selected or found."}), 400
@@ -347,21 +371,102 @@ def chatbot_request():
     conn = sqlite3.connect('data.db')
     cursor = conn.cursor()
     cursor.execute(
-        f"SELECT content FROM documents WHERE filename IN ({','.join('?' * len(filenames))})",
+        f"SELECT filename, content FROM documents WHERE filename IN ({','.join('?' * len(filenames))})",
         filenames
     )
     documents = cursor.fetchall()
     conn.close()
 
-    # Combine content for the chatbot
-    combined_content = " ".join([doc[0] for doc in documents])
+    # Build chat history
+    model = Model()
+    history = model.create_chat_history([
+        {"filename": doc[0], "content": doc[1]} for doc in documents
+    ])
 
     # Create a chat session and generate a response
-    model = Model()
-    chat_session = model.create_chat_session([])
-    response = model.generate_response(chat_session, combined_content + ' ' + prompt).text
+    chat_session = model.create_chat_session(history)
+    response = model.generate_response(chat_session, prompt).text
 
     return jsonify({"response": response})
+
+"""----- EMPLOYEE SECTION HERE -----"""
+def init_employee_db():
+    conn = sqlite3.connect('employee.db')
+    cursor = conn.cursor()
+    cursor.execute('''
+        CREATE TABLE IF NOT EXISTS documents (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            filename TEXT,
+            content TEXT,
+            uploaded_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+        )
+    ''')
+    conn.commit()
+    conn.close()
+
+init_employee_db()
+
+# Route to handle file upload for employees
+@app.route('/employee-guide/upload-files', methods=['POST'])
+def upload_employee_files():
+    files = request.files.getlist('files')
+    if not files:
+        return jsonify({"message": "No files provided"}), 400
+
+    conn = sqlite3.connect('employee.db')
+    cursor = conn.cursor()
+
+    for file in files:
+        filename = secure_filename(file.filename)
+        
+        # Convert the PDF to text directly
+        parsed_text = ParseFile(file).generate_sentence_list()  # Assuming this returns a list of sentences
+        
+        # Store the content in the database
+        cursor.execute('''
+            INSERT INTO documents (filename, content)
+            VALUES (?, ?)
+        ''', (filename, ' '.join(parsed_text)))
+
+    conn.commit()
+    conn.close()
+
+    return jsonify({"message": "Files uploaded and processed successfully"}), 200
+
+@app.route('/employee-guide/handbook-query', methods=['POST'])
+def query_handbook():
+    model = Model()
+    data = request.get_json()
+    handbook_prompt = data.get('handbookPrompt')
+
+    if not handbook_prompt:
+        return jsonify({"response": "Query is required."}), 400
+
+    # Fetch documents from the employee database to print in the terminal
+    conn = sqlite3.connect('employee.db')
+    cursor = conn.cursor()
+    cursor.execute('SELECT filename, content FROM documents')
+    documents = cursor.fetchall()
+    conn.close()
+
+    # Print filenames and content in the terminal
+    for document in documents:
+        print(f"Filename: {document[0]}")
+        print(f"Content: {document[1]}\n")
+
+    # Correctly format the history for the chat session
+    history = [{"role": "user", "parts": [document[1]]} for document in documents]
+
+    # Add the user prompt as part of the history
+    history.append({"role": "user", "parts": [handbook_prompt]})
+
+    chat_session = model.create_chat_session(history)
+    response = model.generate_response(chat_session, handbook_prompt).text
+
+    return jsonify({"response": response})
+
+
+
 
 
 if __name__ == '__main__':

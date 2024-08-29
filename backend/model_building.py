@@ -5,7 +5,27 @@ from model_settings import get_api_key, get_generation_config
 class Model:
     def __init__(self):
         genai.configure(api_key=get_api_key())
-        self._model = genai.GenerativeModel(model_name="gemini-1.5-flash", generation_config=get_generation_config())
+        self._model = genai.GenerativeModel(
+            model_name="gemini-1.5-flash",
+            generation_config=get_generation_config(),
+            system_instruction=(
+                "You will be contextualized with up to 10 files relating to geotechnical projects. "
+                "The initial input for contextualization will include the filename of each report, "
+                "which contains the work order number. This work order number is a crucial identifier for each project. "
+                "The content of each report follows, providing detailed information about the project. "
+                "You are required to answer questions strictly based on the content of the files that have been contextualized to you. "
+                "\n\n"
+                "When responding to a user's query, follow these guidelines:\n"
+                "1. Ensure that your answer is accurate, concise, and directly references the information found in the reports.\n"
+                "2. Always cite the specific file and work order number where the information was sourced.\n"
+                "3. Use the following format for your responses:\n"
+                "\t- **Project Name (Work Order Number)**: 'Relevant content or findings from the report.'\n"
+                "4. If the information requested is not available in the provided reports, clearly state that the requested information cannot be found.\n"
+                "\n"
+                "Example response:\n"
+                "\t- **Foundation Analysis Report (WO-1234-56)**: 'The soil bearing capacity was determined to be 1500 psf based on the boring logs and lab tests.'"
+            ),
+        )
         self._data_list = []
         self._trained_data_list = []
 
@@ -32,9 +52,7 @@ class Model:
         return history
 
     def generate_response(self, chat_session, prompt):
-        response = chat_session.send_message(
-            prompt + " Please ensure the response is concise and relevant to the work order."
-        )
+        response = chat_session.send_message(prompt)
         return response
 
     def generate_summary(self, chat_session, content):

@@ -1,0 +1,106 @@
+/* Container for the handbook page */
+.handbook-page-container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Centering container for the handbook content */
+.handbook-centering-container {
+    width: 700px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* Handbook search section styling */
+.handbook-search-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* Controls and title styling */
+.handbook-controls {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.handbook-controls span {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: var(--neutral-100);
+}
+
+/* Input field styling */
+.handbook-form {
+    margin-bottom: 20px;
+}
+
+.handbook-input-field {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+    color: var(--neutral-100);
+    background-color: var(--neutral-800);
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.handbook-input-field:focus {
+    border: 2px solid var(--primary-400); /* Blue border on focus to highlight the active field */
+}
+
+/* Error message styling */
+.handbook-error-message {
+    color: red;
+    font-size: 16px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Response container styling */
+.handbook-response-container {
+    width: 100%;
+    margin-top: 20px;
+    padding: 20px;
+    color: var(--neutral-100);
+}
+
+/* Submitted query styling */
+.handbook-submitted-query {
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: var(--primary-100);
+}
+
+/* Handbook response text styling */
+.handbook-response {
+    font-size: 16px;
+    color: var(--neutral-100);
+    line-height: 1.5;
+}
+
+/* Handbook response list styling */
+.handbook-response ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.handbook-response li {
+    padding-left: 20px;
+    text-indent: -20px;
+    margin-bottom: 10px;
+    color: var(--neutral-100);
+}
