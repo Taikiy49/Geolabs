@@ -361,6 +361,7 @@ def chatbot_request():
         keywords_list = extract_and_rank_keywords(prompt)
         documents = get_filtered_documents(keywords_list)
         filenames = [doc["filename"] for doc in documents[:5]]  # Get top 5 files
+        print(filenames)
 
     if not filenames:
         return jsonify({"response": "No files selected or found."}), 400
@@ -369,21 +370,24 @@ def chatbot_request():
     conn = sqlite3.connect('data.db')
     cursor = conn.cursor()
     cursor.execute(
-        f"SELECT content FROM documents WHERE filename IN ({','.join('?' * len(filenames))})",
+        f"SELECT filename, content FROM documents WHERE filename IN ({','.join('?' * len(filenames))})",
         filenames
     )
     documents = cursor.fetchall()
     conn.close()
 
-    # Combine content for the chatbot
-    combined_content = " ".join([doc[0] for doc in documents])
+    # Build chat history
+    model = Model()
+    history = model.create_chat_history([
+        {"filename": doc[0], "content": doc[1]} for doc in documents
+    ])
 
     # Create a chat session and generate a response
-    model = Model()
-    chat_session = model.create_chat_session([])
-    response = model.generate_response(chat_session, combined_content + ' ' + prompt).text
+    chat_session = model.create_chat_session(history)
+    response = model.generate_response(chat_session, prompt).text
 
     return jsonify({"response": response})
+
 
 
 if __name__ == '__main__':

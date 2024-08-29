@@ -80,7 +80,6 @@
     background-color: var(--neutral-900);
     padding-left: 10px; padding-right: 10px; padding-top: 10px;
     border-radius: 10px;
-    box-shadow: 0 0 2px var(--neutral-700);
     cursor: pointer;
 
   }
@@ -140,7 +139,6 @@
     border-radius: 10px;
     transition: all 0.3s ease;
     cursor: pointer;
-    box-shadow: 0 0 2px var(--neutral-700);
   }
   
   .option-box:hover {
@@ -190,13 +188,13 @@
 }
   
   .file-search-bar input {
-    padding: 8px;
+    padding: 8px; color: white; 
     font-size: 16px;
     border-radius: 5px;
     border: none;
-    background-color: var(--neutral-500);
-    width: 300px;
-    box-shadow: 0 0 2px var(--neutral-400); outline: none;
+    background-color: var(--neutral-700);
+    width: 300px; margin-bottom: 5px;
+    outline: none;
   }
   
   .file-list-container { 
@@ -216,11 +214,9 @@
   
 .file-item { 
   background-color: var(--neutral-900);
-  box-shadow: 0 0 2px var(--neutral-700);
   padding: 12px; font-weight: normal; user-select: none;
   border-radius: 10px;
-  color: var(--neutral-200);
-  background-color: var(--neutral-900);
+  color: var(--neutral-300);
   margin-bottom: 7px;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.3s ease;

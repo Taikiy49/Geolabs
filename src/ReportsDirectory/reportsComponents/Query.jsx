@@ -31,7 +31,35 @@ const Query = () => {
   const handleKeyDown = (e) => {
     if (e.key === 'Enter') {
       e.preventDefault();
-      searchFiles(input);
+      if (e.target.name === 'chatbot') {
+        handleChatbotRequest(); // Submit the query when Enter is pressed in chatbot input
+      } else {
+        searchFiles(input);
+      }
+    }
+  };
+
+  const handleChatbotRequest = async () => {
+    setError('');
+    setChatbotResponse('');
+    setSubmittedInput(chatbotPrompt);
+
+    try {
+      const response = await axios.post(`${apiUrl}/reports/relevancy`, {
+        filenames: useFileSelector ? selectedFiles : [],
+        prompt: chatbotPrompt,
+        useFileSelector,
+      });
+
+      let formattedOutput = response.data.response
+        .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+        .replace(/^\s*\*\s*(.+)$/gm, '<li>$1</li>');
+
+      formattedOutput = `<ul>${formattedOutput}</ul>`;
+      setChatbotResponse(formattedOutput);
+    } catch (error) {
+      console.error('There was an error sending the selected files to the chatbot!', error);
+      setError('An error occurred while processing your request. Please try again.');
     }
   };
 
@@ -130,8 +158,10 @@ const Query = () => {
       <div className="relevancy-chatbot-section">
         <div className="relevancy-chatbot-container">
           <textarea
+            name="chatbot"
             value={chatbotPrompt}
             onChange={(e) => setChatbotPrompt(e.target.value)}
+            onKeyDown={handleKeyDown}
             placeholder="Enter your query..."
             className="relevancy-chatbot-input"
           />
