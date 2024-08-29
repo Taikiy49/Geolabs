@@ -407,7 +407,7 @@ def init_employee_db():
 init_employee_db()
 
 # Route to handle file upload for employees
-@app.route('/employee/upload-files', methods=['POST'])
+@app.route('/employee-guide/upload-files', methods=['POST'])
 def upload_employee_files():
     files = request.files.getlist('files')
     if not files:
@@ -432,6 +432,42 @@ def upload_employee_files():
     conn.close()
 
     return jsonify({"message": "Files uploaded and processed successfully"}), 200
+
+@app.route('/employee-guide/handbook-query', methods=['POST'])
+def query_handbook():
+    model = Model()
+    data = request.get_json()
+    handbook_prompt = data.get('handbookPrompt')
+
+    if not handbook_prompt:
+        return jsonify({"response": "Query is required."}), 400
+
+    # Fetch documents from the employee database to print in the terminal
+    conn = sqlite3.connect('employee.db')
+    cursor = conn.cursor()
+    cursor.execute('SELECT filename, content FROM documents')
+    documents = cursor.fetchall()
+    conn.close()
+
+    # Print filenames and content in the terminal
+    for document in documents:
+        print(f"Filename: {document[0]}")
+        print(f"Content: {document[1]}\n")
+
+    # Correctly format the history for the chat session
+    history = [{"role": "user", "parts": [document[1]]} for document in documents]
+
+    # Add the user prompt as part of the history
+    history.append({"role": "user", "parts": [handbook_prompt]})
+
+    chat_session = model.create_chat_session(history)
+    response = model.generate_response(chat_session, handbook_prompt).text
+
+    return jsonify({"response": response})
+
+
+
+
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=8000)
