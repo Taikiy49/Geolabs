@@ -14,7 +14,8 @@ from datetime import timedelta, datetime
 import functools
 from werkzeug.utils import secure_filename
 from terms import oahu_cities, civil_engineering_terms
-
+import os
+from file_handler import open_series_directories, handle_file_request
 
 # Initialize Flask app and configure session
 app = Flask(__name__)
@@ -109,7 +110,7 @@ def load_user(user_id):
 # Define a simple cache using functools.lru_cache for summarization
 @functools.lru_cache(maxsize=100)
 def get_summary_from_model(work_order_number, combined_content):
-    model = Model()
+    model = Model('reports')
     chat_session = model.create_chat_session([])
     summary = model.generate_summary(chat_session, combined_content)
     return summary.text
@@ -170,7 +171,7 @@ def generate_all_forms(word):
 
 @app.route('/reports/search-database', methods=['POST'])
 def send_input():
-    model = Model()
+    model = Model('reports')
     data = request.get_json()
     prompt = data.get('prompt')
 
@@ -378,7 +379,7 @@ def chatbot_request():
     conn.close()
 
     # Build chat history
-    model = Model()
+    model = Model('reports')
     history = model.create_chat_history([
         {"filename": doc[0], "content": doc[1]} for doc in documents
     ])
@@ -433,41 +434,61 @@ def upload_employee_files():
 
     return jsonify({"message": "Files uploaded and processed successfully"}), 200
 
+persistent_chat_session = None
+
 @app.route('/employee-guide/handbook-query', methods=['POST'])
 def query_handbook():
-    model = Model()
+    global persistent_chat_session  # Use the global chat session
+
+    model = Model('handbook')
     data = request.get_json()
     handbook_prompt = data.get('handbookPrompt')
 
     if not handbook_prompt:
         return jsonify({"response": "Query is required."}), 400
 
-    # Fetch documents from the employee database to print in the terminal
-    conn = sqlite3.connect('employee.db')
-    cursor = conn.cursor()
-    cursor.execute('SELECT filename, content FROM documents')
-    documents = cursor.fetchall()
-    conn.close()
+    # Initialize chat session if not already started
+    if persistent_chat_session is None:
+        # Fetch documents from the employee database
+        conn = sqlite3.connect('employee.db')
+        cursor = conn.cursor()
+        cursor.execute('SELECT filename, content FROM documents')
+        documents = cursor.fetchall()
+        conn.close()
 
-    # Print filenames and content in the terminal
-    for document in documents:
-        print(f"Filename: {document[0]}")
-        print(f"Content: {document[1]}\n")
+        # Create initial history
+        history = [{"role": "user", "parts": [document[1]]} for document in documents]
 
-    # Correctly format the history for the chat session
-    history = [{"role": "user", "parts": [document[1]]} for document in documents]
+        persistent_chat_session = model.create_chat_session(history)
+    else:
+        # Use existing chat session
+        persistent_chat_session.history.append({"role": "user", "parts": [handbook_prompt]})
 
-    # Add the user prompt as part of the history
-    history.append({"role": "user", "parts": [handbook_prompt]})
-
-    chat_session = model.create_chat_session(history)
-    response = model.generate_response(chat_session, handbook_prompt).text
+    # Generate response without restarting the session
+    response = model.generate_response(persistent_chat_session, handbook_prompt).text
 
     return jsonify({"response": response})
 
+@app.route('/reports/open-file', methods=['POST'])
+def open_file():
+    try:
+        # Get the filename from the request
+        data = request.get_json()
+        filename = data.get('filename')
 
+        # Print the filename to the terminal
+        print(f"Received filename: {filename}")
 
+        # Use the filename to open the series directories
+        network_path = r"\\geolabs.lan\fs\UserShare"
+        open_series_directories(network_path, filename)
 
+        # Respond back with a success message
+        return jsonify({'message': 'Filename processed successfully'}), 200
+
+    except Exception as e:
+        print(f"Error receiving filename: {e}")
+        return jsonify({'error': str(e)}), 500
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=8000)

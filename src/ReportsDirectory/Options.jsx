@@ -100,6 +100,17 @@ const Options = ({ isMainPage }) => {
     }
   };
 
+  const handleDoubleClick = (filename) => {
+    // Send the filename to the Flask backend
+    axios.post(`${apiUrl}/reports/open-file`, { filename })
+      .then(response => {
+        console.log('File sent to backend:', filename);
+      })
+      .catch(error => {
+        console.error('Error sending file to backend:', error);
+      });
+  };
+
   const handleDeleteFiles = () => {
     axios.post(`${apiUrl}/reports/remove-files`, { filenames: selectedFiles })
       .then(response => {
@@ -195,6 +206,7 @@ const Options = ({ isMainPage }) => {
                         className={`file-item ${isSelected(file.filename) ? 'selected' : ''}`}
                         onMouseDown={() => handleMouseDown(index)}
                         onMouseEnter={() => handleMouseEnter(index)}
+                        onDoubleClick={() => handleDoubleClick(file.filename)}
                       >
                         {file.filename}
                       </div>
@@ -208,11 +220,11 @@ const Options = ({ isMainPage }) => {
                     onClick={handleDeleteFiles}
                     disabled={selectedFiles.length === 0}
                   >
-                    <i className="fas fa-trash-alt"></i> {/* Font Awesome Trash Icon */}
+                    <i className="fas fa-trash-alt"></i>
                     <p className='reports-remove-text'>Remove</p>
                   </div>
                   <label className="add-remove-option-box">
-                    <i className="fas fa-upload"></i> {/* Font Awesome Upload Icon */}
+                    <i className="fas fa-upload"></i>
                     <p className='reports-upload-text'>Upload</p>
                     <input
                       type="file"

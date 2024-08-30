@@ -13,6 +13,7 @@ const Query = () => {
   const [submittedInput, setSubmittedInput] = useState('');
   const [error, setError] = useState('');
   const [useFileSelector, setUseFileSelector] = useState(false);
+  const [loading, setLoading] = useState(false); // State for loading animation
   const { apiUrl } = getConfig();
   const listRef = useRef(null);
 
@@ -40,9 +41,12 @@ const Query = () => {
   };
 
   const handleChatbotRequest = async () => {
+    if (!chatbotPrompt.trim()) return; // Prevent empty requests
+
     setError('');
     setChatbotResponse('');
     setSubmittedInput(chatbotPrompt);
+    setLoading(true); // Show loading UI
 
     try {
       const response = await axios.post(`${apiUrl}/reports/relevancy`, {
@@ -56,10 +60,22 @@ const Query = () => {
         .replace(/^\s*\*\s*(.+)$/gm, '<li>$1</li>');
 
       formattedOutput = `<ul>${formattedOutput}</ul>`;
-      setChatbotResponse(formattedOutput);
+
+      const animateResponse = (text, index = 0) => {
+        if (index < text.length) {
+          setChatbotResponse((prevResponse) => prevResponse + text[index]);
+          setTimeout(() => animateResponse(text, index + 1), 20); // Adjust speed of typing animation
+        } else {
+          setLoading(false); // Hide loading UI after response is fully typed
+        }
+      };
+
+      setChatbotResponse(''); // Reset chatbot response before animation
+      animateResponse(formattedOutput);
     } catch (error) {
       console.error('There was an error sending the selected files to the chatbot!', error);
       setError('An error occurred while processing your request. Please try again.');
+      setLoading(false);
     }
   };
 
@@ -173,10 +189,9 @@ const Query = () => {
               className="relevancy-chatbot-input"
             />
           
-
             {submittedInput && (
               <div className="relevancy-submitted-query">
-                <p><strong></strong> {submittedInput}</p>
+                <p><strong>{submittedInput}</strong></p>
               </div>
             )}
 
@@ -186,6 +201,7 @@ const Query = () => {
                 dangerouslySetInnerHTML={{ __html: chatbotResponse }}
               />
             )}
+            {loading && <div className="loading-spinner">...</div>} {/* Loading UI */}
           </div>
         </div>
       </div>

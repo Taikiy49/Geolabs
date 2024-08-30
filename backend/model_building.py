@@ -3,12 +3,11 @@ import sqlite3
 from model_settings import get_api_key, get_generation_config
 
 class Model:
-    def __init__(self):
+    def __init__(self, chatbot_type):
         genai.configure(api_key=get_api_key())
-        self._model = genai.GenerativeModel(
-            model_name="gemini-1.5-flash",
-            generation_config=get_generation_config(),
-            system_instruction=(
+
+        if chatbot_type == 'reports':
+            instructions = (
                 "You will be contextualized with up to 10 files relating to geotechnical projects. "
                 "The initial input for contextualization will include the filename of each report, "
                 "which contains the work order number. This work order number is a crucial identifier for each project. "
@@ -24,7 +23,27 @@ class Model:
                 "\n"
                 "Example response:\n"
                 "\t- **Foundation Analysis Report (WO-1234-56)**: 'The soil bearing capacity was determined to be 1500 psf based on the boring logs and lab tests.'"
-            ),
+            )
+
+        elif chatbot_type == 'handbook':
+            instructions = (
+                "You are GeoBot, an AI assistant in charge of answering questions about the employee handbook. "
+                "Introduce yourself as GeoBot whenever the user opens the handbook section, explaining that you can "
+                "answer any questions regarding the content and provide specific sections as references.\n\n"
+                "When responding to a user's query, follow these guidelines:\n"
+                "1. Provide concise, accurate answers based on the handbook content and cite the specific section where the information was found.\n"
+                "2. Use the following format for your responses:\n"
+                "   - **Section [Section Number]**: 'Relevant content or findings from the handbook.'\n"
+                "3. If the information requested is not available in the provided sections, clearly state that it cannot be found in the handbook.\n"
+                "\n"
+                "Example introduction:\n"
+                "'Hello! I’m GeoBot, your assistant for navigating the employee handbook. Feel free to ask me any questions, and I'll provide the information, citing the specific sections for reference.'"
+            )
+
+        self._model = genai.GenerativeModel(
+            model_name="gemini-1.5-flash",
+            generation_config=get_generation_config(),
+            system_instruction=instructions,
         )
         self._data_list = []
         self._trained_data_list = []
@@ -57,7 +76,8 @@ class Model:
 
     def generate_summary(self, chat_session, content):
         response = chat_session.send_message(
-            content + " Given all this information, generate a concise and comprehensive summary of the text.")
+            content + " Given all this information, generate a concise and comprehensive summary of the text."
+        )
         return response
 
     def close(self):

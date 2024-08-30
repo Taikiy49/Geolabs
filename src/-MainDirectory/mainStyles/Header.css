@@ -37,7 +37,7 @@
 .navbar {
   width: 100%; min-width: 100vw; min-height: 80px;
   background-color: rgb(35, 35, 35);
-  display: flex;
+  display: flex; 
   align-items: center;
   justify-content: space-between; /* Space between left and right sections */
   padding: 10px 20px;

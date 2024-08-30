@@ -1,65 +1,45 @@
 /* Container for the handbook page */
 .handbook-page-container {
     display: flex;
-    height: 100vh;
+    height: 100%;
     width: 100vw;
-    padding: 20px;
     flex-direction: column;
     align-items: center;
 }
 
-/* Centering container for the handbook content */
-.handbook-centering-container {
-    width: 700px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-}
 
 /* Handbook search section styling */
 .handbook-search-section {
     display: flex;
     flex-direction: column;
-    width: 100%;
-}
-
-/* Controls and title styling */
-.handbook-controls {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-}
-
-.handbook-controls span {
-    font-size: 1.5em;
-    font-weight: bold;
-    color: var(--neutral-100);
-}
-
-/* Input field styling */
-.handbook-form {
-    margin-bottom: 20px;
+    align-items: center;
+    width: 100vw;
 }
 
 .handbook-input-field {
-    width: 100%;
+    width: 500px;
+    height: 15px;
     padding: 12px;
     font-size: 16px;
     border-radius: 10px;
     border: none;
-    color: var(--neutral-100);
-    background-color: var(--neutral-800);
+    color: black;
     outline: none;
-    transition: border-color 0.2s;
 }
 
-.handbook-input-field:focus {
-    border: 2px solid var(--primary-400); /* Blue border on focus to highlight the active field */
+.handbook-form{
+    display: flex; flex-direction: column;
+    margin-top: auto;
+    align-items: center;
+    margin-bottom: 20px;
 }
+
+
+.handbook-chatbot-notice-text{
+    font-weight: normal; font-size: 13px; margin-top: 10px;
+}
+
+
 
 /* Error message styling */
 .handbook-error-message {
@@ -71,24 +51,10 @@
 
 /* Response container styling */
 .handbook-response-container {
-    width: 100%;
-    margin-top: 20px;
+    width: 1000px; 
+    font-weight: normal; overflow: auto;
     padding: 20px;
     color: var(--neutral-100);
-}
-
-/* Submitted query styling */
-.handbook-submitted-query {
-    margin-bottom: 15px;
-    font-weight: bold;
-    color: var(--primary-100);
-}
-
-/* Handbook response text styling */
-.handbook-response {
-    font-size: 16px;
-    color: var(--neutral-100);
-    line-height: 1.5;
 }
 
 /* Handbook response list styling */
@@ -103,4 +69,77 @@
     text-indent: -20px;
     margin-bottom: 10px;
     color: var(--neutral-100);
+}
+
+
+/* Loading spinner */
+.loading-spinner {
+    font-size: 16px;
+    color: var(--neutral-100);
+    margin-top: 10px;
+    text-align: center;
+    animation: blink 1s infinite; /* Blinking dots effect */
+  }
+  
+  @keyframes blink {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+  
+  /* User message styling */
+  .user-message {
+    align-self: flex-end;
+    background-color: var(--primary-500);
+    color: white;
+    padding: 8px;
+    border-radius: 10px;
+    margin: 5px 0;
+    max-width: 80%;
+    word-wrap: break-word;
+  }
+  
+  /* Model message styling */
+  .model-message {
+    align-self: flex-start;
+    background-color: var(--neutral-800);
+    color: white;
+    padding: 8px;
+    border-radius: 10px;
+    margin: 5px 0;
+    max-width: 80%;
+    word-wrap: break-word;
+  }
+  
+/* Loading spinner */
+.loading-spinner {
+    font-size: 16px;
+    color: var(--neutral-100);
+    margin-top: 10px;
+    text-align: center;
+    animation: blink 1s infinite; /* Blinking dots effect */
+}
+
+@keyframes blink {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+/* Message container for alternating alignment */
+.handbook-message {
+    border-radius: 10px;
+    word-wrap: break-word;
+}
+
+/* Messages aligned to the left */
+.right-message {
+    margin-left: auto; width: 300px; margin-top: 20px;
+    background-color: var(--neutral-800); padding: 15px;
+    color: white;
+}
+
+.left-message {
+    margin-right: auto; width:600px; margin-top: 20px; padding: 10px;
+    color: white; 
 }
