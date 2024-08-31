@@ -90,6 +90,47 @@ def get_filtered_documents(keywords_list):
 
     return documents
 
+def get_filtered_documents_with_logic(keywords_with_logic):
+    conn = sqlite3.connect('data.db')
+    cursor = conn.cursor()
+
+    query = "SELECT filename, content FROM documents WHERE "
+    query_parts = []
+    params = []
+
+    # Ensure the list does not start or end with "AND" or "OR"
+    if keywords_with_logic and (keywords_with_logic[0] in {"AND", "OR"}):
+        keywords_with_logic = keywords_with_logic[1:]
+    if keywords_with_logic and (keywords_with_logic[-1] in {"AND", "OR"}):
+        keywords_with_logic = keywords_with_logic[:-1]
+
+    # Build the SQL query dynamically based on "AND" and "OR" logic
+    for i, keyword in enumerate(keywords_with_logic):
+        if keyword == "AND":
+            query_parts.append("AND")
+        elif keyword == "OR":
+            query_parts.append("OR")
+        else:
+            # Add the LIKE condition with a placeholder
+            query_parts.append("content LIKE ?")
+            params.append(f'%{keyword}%')
+
+    # Join all parts to form the final query with proper spacing
+    final_query = query + ' '.join(query_parts)
+    print(f"Executing query: {final_query} with params {params}")
+
+    # Check for a valid query before execution
+    if "content LIKE ?" in final_query:
+        cursor.execute(final_query, params)
+        documents = [{"filename": row[0], "content": row[1]} for row in cursor.fetchall()]
+    else:
+        documents = []  # No valid content to search
+
+    conn.close()
+    return documents
+
+
+
 # Flask-Login User class and loader
 class User(UserMixin):
     def __init__(self, user_id, email):
@@ -151,6 +192,44 @@ def extract_and_rank_keywords(prompt):
 
     ranked_phrases = sorted(relevant_phrases, key=rank_phrase, reverse=True)
     return ranked_phrases
+
+def extract_keywords_with_logic(prompt):
+    # Clean the prompt and handle spaces around 'AND'/'OR'
+    parts = []
+    buffer = []
+    i = 0
+
+    while i < len(prompt):
+        if prompt[i:i + 3].upper() == "AND":
+            if buffer:
+                parts.append(''.join(buffer).strip())
+            parts.append("AND")
+            buffer = []
+            i += 3
+        elif prompt[i:i + 2].upper() == "OR":
+            if buffer:
+                parts.append(''.join(buffer).strip())
+            parts.append("OR")
+            buffer = []
+            i += 2
+        else:
+            buffer.append(prompt[i])
+            i += 1
+
+    if buffer:
+        parts.append(''.join(buffer).strip())
+
+    # Extract individual keywords and phrases
+    keywords_with_logic = []
+    for part in parts:
+        if part in {"AND", "OR"}:
+            keywords_with_logic.append(part)
+        else:
+            keywords_with_logic.extend(extract_and_rank_keywords(part))
+
+    return keywords_with_logic
+
+
 
 def generate_all_forms(word):
     forms = set()
@@ -235,14 +314,13 @@ def remove_files():
 def search_filenames():
     data = request.get_json()
     prompt = data.get('prompt')
-    keywords_list = extract_and_rank_keywords(prompt)
-    all_keywords = set()
-    for keyword in keywords_list:
-        all_keywords.update(generate_all_forms(keyword))
-    print(all_keywords) 
-    filtered_documents = get_filtered_documents(list(all_keywords))
+    # Extract keywords and handle "AND"/"OR" logic
+    keywords_with_logic = extract_keywords_with_logic(prompt)
+    # Get filtered documents based on extracted logic
+    filtered_documents = get_filtered_documents_with_logic(keywords_with_logic)
     filenames = [doc["filename"] for doc in filtered_documents]
     return jsonify({"filenames": filenames})
+
 
 
 @app.route('/reports/get-quick-view', methods=['POST'])

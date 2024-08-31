@@ -2,6 +2,7 @@
 .reports-container, .nav-buttons, .auth-buttons, .main-content {
   scrollbar-width: none; /* For Firefox */
   -ms-overflow-style: none; /* For Internet Explorer and Edge */
+  
 }
 
 .reports-container::-webkit-scrollbar, 
@@ -40,13 +41,14 @@
 
 
   .main-content-container {
-    display: flex;
+    display: flex; 
     width: 100%;
     padding: 20px;
     box-sizing: border-box;
   }
 
   .main-content {
+    
     color: var(--primary-100);
     background-color: rgb(10, 10, 10);
     flex: 1;

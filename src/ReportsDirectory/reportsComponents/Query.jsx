@@ -13,7 +13,8 @@ const Query = () => {
   const [submittedInput, setSubmittedInput] = useState('');
   const [error, setError] = useState('');
   const [useFileSelector, setUseFileSelector] = useState(false);
-  const [loading, setLoading] = useState(false); // State for loading animation
+  const [loading, setLoading] = useState(false);
+  const [lastSearchTerm, setLastSearchTerm] = useState(''); // Store the last search term
   const { apiUrl } = getConfig();
   const listRef = useRef(null);
 
@@ -22,7 +23,14 @@ const Query = () => {
     try {
       const response = await axios.post(`${apiUrl}/reports/search-filenames`, { prompt: query });
       setFileNames(response.data.filenames);
+      setLastSearchTerm(input); // Update the last search term
       setInput('');
+
+      if (response.data.filenames.length > 0) {
+        listRef.current.classList.add('active');
+      } else {
+        listRef.current.classList.remove('active');
+      }
     } catch (error) {
       console.error('There was an error retrieving the file names from the server!', error);
       setError('An error occurred while searching for relevant files. Please try again.');
@@ -33,20 +41,21 @@ const Query = () => {
     if (e.key === 'Enter') {
       e.preventDefault();
       if (e.target.name === 'chatbot') {
-        handleChatbotRequest(); // Submit the query when Enter is pressed in chatbot input
+        handleChatbotRequest();
       } else {
         searchFiles(input);
+        setInput(''); // Clear the input box after submitting
       }
     }
   };
 
   const handleChatbotRequest = async () => {
-    if (!chatbotPrompt.trim()) return; // Prevent empty requests
+    if (!chatbotPrompt.trim()) return;
 
     setError('');
     setChatbotResponse('');
     setSubmittedInput(chatbotPrompt);
-    setLoading(true); // Show loading UI
+    setLoading(true);
 
     try {
       const response = await axios.post(`${apiUrl}/reports/relevancy`, {
@@ -64,18 +73,20 @@ const Query = () => {
       const animateResponse = (text, index = 0) => {
         if (index < text.length) {
           setChatbotResponse((prevResponse) => prevResponse + text[index]);
-          setTimeout(() => animateResponse(text, index + 1), 20); // Adjust speed of typing animation
+          setTimeout(() => animateResponse(text, index + 1), 5);
         } else {
-          setLoading(false); // Hide loading UI after response is fully typed
+          setLoading(false);
         }
       };
 
-      setChatbotResponse(''); // Reset chatbot response before animation
+      setChatbotResponse('');
       animateResponse(formattedOutput);
     } catch (error) {
       console.error('There was an error sending the selected files to the chatbot!', error);
       setError('An error occurred while processing your request. Please try again.');
       setLoading(false);
+    } finally {
+      setChatbotPrompt(''); // Clear the chatbot input box after submitting
     }
   };
 
@@ -116,6 +127,21 @@ const Query = () => {
     setFileNames([]);
   };
 
+  const handleOpenFile = async (fileName) => {
+    try {
+      const response = await axios.post(`${apiUrl}/reports/open-file`, { filename: fileName });
+      if (response.status === 200) {
+        console.log(`File ${fileName} opened successfully.`);
+      } else {
+        console.error(`Error opening file: ${response.data.error}`);
+        setError('Error opening the file. Please try again.');
+      }
+    } catch (error) {
+      console.error('There was an error opening the file!', error);
+      setError('An error occurred while trying to open the file. Please try again.');
+    }
+  };
+
   return (
     <div className="relevancy-page-container" onMouseUp={handleMouseUp}>
       <div className="query-centering-container">
@@ -130,6 +156,7 @@ const Query = () => {
 
           {useFileSelector && (
             <>
+              {/* Display the last search term above the input box */}
               <form onSubmit={(e) => e.preventDefault()} className="relevancy-form">
                 <input
                   type="text"
@@ -144,12 +171,17 @@ const Query = () => {
                 <p className="relevancy-error-message">{error}</p>
               ) : (
                 <div className="relevancy-mini-container">
+                  {lastSearchTerm && (
+                      <p className="relevancy-last-search">Searched: {lastSearchTerm}</p>
+                    )}
                   <div className="relevancy-file-list-container" ref={listRef}>
+      
                     <ul className="relevancy-file-list">
                       {fileNames.map((fileName, index) => (
                         <li
                           key={index}
                           className={`relevancy-file-item ${selectedFiles.includes(fileName) ? 'relevancy-selected' : ''}`}
+                          onDoubleClick={() => handleOpenFile(fileName)}
                           onMouseDown={() => handleMouseDown(fileName)}
                           onMouseOver={() => handleMouseOver(fileName)}
                         >
@@ -164,11 +196,11 @@ const Query = () => {
                     </ul>
                   </div>
                   {selectedFiles.length > 0 && (
-                        <div onClick={handleResetSelection} className="relevancy-reset-button">
-                          <img className='reset-button-img' src='../reset-button.svg' />
-                          <p className='relevancy-reset-button-text'>Reset</p>
-                        </div>
-                      )}
+                    <div onClick={handleResetSelection} className="relevancy-reset-button">
+                      <img className="reset-button-img" src="../reset-button.svg" />
+                      <p className="relevancy-reset-button-text">Reset</p>
+                    </div>
+                  )}
                 </div>
               )}
             </>
@@ -188,7 +220,7 @@ const Query = () => {
               placeholder="Enter your query..."
               className="relevancy-chatbot-input"
             />
-          
+
             {submittedInput && (
               <div className="relevancy-submitted-query">
                 <p><strong>{submittedInput}</strong></p>
@@ -201,7 +233,7 @@ const Query = () => {
                 dangerouslySetInnerHTML={{ __html: chatbotResponse }}
               />
             )}
-            {loading && <div className="loading-spinner">...</div>} {/* Loading UI */}
+            {loading && <div className="loading-spinner">...</div>}
           </div>
         </div>
       </div>

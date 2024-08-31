@@ -48,7 +48,7 @@ const Handbook = () => {
               content: prevHistory[prevHistory.length - 1].content + text[index],
             },
           ]);
-          setTimeout(() => animateResponse(text, index + 1), 20); // Adjust speed of typing animation
+          setTimeout(() => animateResponse(text, index + 1), 5); // Adjust speed of typing animation
         } else {
           setLoading(false); // Hide loading UI after response is fully typed
         }
