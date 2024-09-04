@@ -1,48 +1,46 @@
-# THIS FILE IS DANGEROUS AS IT WILL RESET THE ENTIRE DATABASE FULL OF FILES AND ALL USER RECORDS
-
-from pymongo.mongo_client import MongoClient
-from pymongo.server_api import ServerApi
-from dotenv import load_dotenv
+import sqlite3
 import os
 
-# MongoDB connection URI
-load_dotenv('.env')
-uri = os.getenv('MONGO_URI')
+# Paths to your SQLite database files
+data_db_path = 'data.db'
+employee_db_path = 'employee.db'
 
-# Create a new client and connect to the server
-client = MongoClient(uri, server_api=ServerApi('1'), tlsAllowInvalidCertificates=True)
+def reset_database(db_path):
+    # Connect to the SQLite database
+    conn = sqlite3.connect(db_path)
+    cursor = conn.cursor()
+    
+    # Get all table names in the database
+    cursor.execute("SELECT name FROM sqlite_master WHERE type='table';")
+    tables = cursor.fetchall()
+    
+    # Delete all data from each table
+    for table_name in tables:
+        cursor.execute(f"DELETE FROM {table_name[0]}")
+        print(f"Deleted all records from table: {table_name[0]} in {db_path}")
+    
+    # Commit changes and close the connection
+    conn.commit()
+    conn.close()
 
-# Select the UserProfile and PDFData databases
-users_db = client['UserProfile']
-pdf_data_db = client['PDFData']
+# Reset data.db
+reset_database(data_db_path)
 
-# Delete all documents in the 'users' collection
-users_result = users_db.users.delete_many({})
-print(f'Deleted {users_result.deleted_count} user(s) from the UserProfile database.')
+# Reset employee.db
+reset_database(employee_db_path)
 
-# Insert some sample data into the 'users' collection
-users_db.users.insert_one({
-    'email': 'test_email', 'password': 'test_password'
-})
-print('Inserted sample user into the UserProfile database.')
+# Optionally, insert sample data into data.db and employee.db
+def insert_sample_data(db_path, table, data):
+    conn = sqlite3.connect(db_path)
+    cursor = conn.cursor()
+    
+    # Insert the sample data
+    cursor.execute(f"INSERT INTO {table} VALUES (?, ?)", data)
+    conn.commit()
+    conn.close()
 
-# Retrieve and print the users and passwords
-users = users_db.users.find({}, {'_id': 0, 'email': 1, 'password': 1})
-for user in users:
-    print(f"Email: {user['email']}, Password: {user['password']}")
-
-# Delete all documents in the 'pdf_data' collection
-pdf_data_result = pdf_data_db.pdf_data.delete_many({})
-print(f'Deleted {pdf_data_result.deleted_count} document(s) from the PDFData database.')
-
-# Optionally, insert some sample data into the 'pdf_data' collection
-pdf_data_db.pdf_data.insert_one({
-    'filename': 'sample_file.pdf',
-    'content': 'This is some sample content from a PDF file.'
-})
-print('Inserted sample PDF data into the PDFData database.')
-
-# Retrieve and print the PDF data
-pdf_data = pdf_data_db.pdf_data.find({}, {'_id': 0, 'filename': 1, 'content': 1})
-for data in pdf_data:
-    print(f"Filename: {data['filename']}, Content: {data['content']}")
+# Example to insert sample data
+# Insert sample data for demonstration purposes
+# Adjust table names and data according to your database schema
+insert_sample_data(data_db_path, 'users', ('test_email', 'test_password'))
+insert_sample_data(employee_db_path, 'employees', ('sample_employee', 'sample_position'))
