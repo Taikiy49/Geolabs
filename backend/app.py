@@ -18,6 +18,13 @@ import os
 from file_handler import open_series_directories, handle_file_request
 import re
 
+
+""" This is used to create the pyinstaller application
+
+    python -m PyInstaller --onefile --add-data "C:\\Users\\tyamashita\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\en_core_web_sm;en_core_web_sm" --add-data "backend/data.db;backend" backend/app.py
+
+"""
+
 # Initialize Flask app and configure session
 app = Flask(__name__)
 app.config['SECRET_KEY'] = secrets.token_hex(24)
@@ -31,10 +38,21 @@ login_manager.login_view = 'login'
 
 # Initialize Spacy
 nlp = spacy.load('en_core_web_sm')
+print(spacy.util.get_package_path('en_core_web_sm'))
+
+# SQLite Database Initialization
+import os
+import sqlite3
+
+# Get the base directory of the current script
+BASE_DIR = os.path.abspath(os.path.dirname(__file__))
+
+# Define the path to the database file relative to the script location
+DB_PATH = os.path.join(BASE_DIR, 'data.db')
 
 # SQLite Database Initialization
 def init_sqlite_db():
-    conn = sqlite3.connect('data.db')
+    conn = sqlite3.connect(DB_PATH)
     cursor = conn.cursor()
     cursor.execute('''
         CREATE TABLE IF NOT EXISTS users (
@@ -56,9 +74,12 @@ def init_sqlite_db():
 
 init_sqlite_db()
 
+# Similarly, update all other references to use DB_PATH instead of hardcoded strings
+
+
 # Save file content to SQLite
 def save_to_db(filename, content):
-    conn = sqlite3.connect('data.db')
+    conn = sqlite3.connect(DB_PATH)
     cursor = conn.cursor()
     cursor.execute('''
         INSERT INTO documents (filename, content, last_updated)
