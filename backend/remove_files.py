@@ -1,6 +1,6 @@
 from pymongo import MongoClient
 import gridfs
-from model_building import get_uri
+from backend.model import get_uri
 
 # Function to connect to the database and remove all files
 def remove_all_files_from_gridfs():

@@ -197,7 +197,7 @@ const Query = () => {
                   </div>
                   {selectedFiles.length > 0 && (
                     <div onClick={handleResetSelection} className="relevancy-reset-button">
-                      <img className="reset-button-img" src="../reset-button.svg" />
+                      <img className="reset-button-img" src="../reset-button.svg" alt='reset button for relevance'/>
                       <p className="relevancy-reset-button-text">Reset</p>
                     </div>
                   )}

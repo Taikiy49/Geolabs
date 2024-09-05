@@ -20,17 +20,12 @@ const softwareOptions = [
   },
 ];
 
-const bottomOptions = [
-  { title: 'Add Files', icon: 'fas fa-upload', path: '/reports/add-files' },
-  { title: 'Remove Files', icon: 'fas fa-trash-alt', path: '/reports/remove-files' },
-];
 
 const Options = ({ isMainPage }) => {
   const { apiUrl } = getConfig();
   const navigate = useNavigate();
   const [searchQuery, setSearchQuery] = useState('');
-  const [filteredSoftwareOptions, setFilteredSoftwareOptions] = useState(softwareOptions);
-  const [filteredBottomOptions, setFilteredBottomOptions] = useState(bottomOptions);
+  const [filteredSoftwareOptions] = useState(softwareOptions);
   const [files, setFiles] = useState([]);
   const [totalFiles, setTotalFiles] = useState(0);
   const [selectedFiles, setSelectedFiles] = useState([]);

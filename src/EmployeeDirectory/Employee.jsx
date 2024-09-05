@@ -26,20 +26,11 @@ const bottomOptions = [
 ];
 
 const Employee = () => {
-  const [searchQuery, setSearchQuery] = useState('');
-  const [filteredEmployeeOptions, setFilteredEmployeeOptions] = useState(employeeOptions);
-  const [filteredBottomOptions, setFilteredBottomOptions] = useState(bottomOptions);
-  const [uploading, setUploading] = useState(false);
+  const [filteredEmployeeOptions] = useState(employeeOptions);
+  const [filteredBottomOptions] = useState(bottomOptions);
+  const [setUploading] = useState(false);
   const navigate = useNavigate(); // Initialize the navigate function
 
-  const handleSearchChange = (e) => {
-    setSearchQuery(e.target.value);
-    setFilteredEmployeeOptions(
-      employeeOptions.filter(option =>
-        option.title.toLowerCase().includes(e.target.value.toLowerCase())
-      )
-    );
-  };
 
   const handleFileUpload = (event) => {
     setUploading(true);

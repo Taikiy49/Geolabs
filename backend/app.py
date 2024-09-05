@@ -4,12 +4,10 @@ from flask_login import LoginManager, UserMixin, login_user, login_required, log
 from werkzeug.security import generate_password_hash, check_password_hash
 import sqlite3
 import secrets
-from model_building import Model
-from model_functions import ParseFile
+from model import Model
+from parse_files import ParseFile
 from flask_session import Session
 from concurrent.futures import ThreadPoolExecutor
-import spacy
-from spacy.matcher import Matcher
 from datetime import timedelta, datetime
 import functools
 from werkzeug.utils import secure_filename
@@ -17,13 +15,10 @@ from terms import oahu_cities, civil_engineering_terms
 import os
 from file_handler import open_series_directories, handle_file_request
 import re
+import spacy
 
-
-""" This is used to create the pyinstaller application
-
-    python -m PyInstaller --onefile --add-data "C:\\Users\\tyamashita\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\en_core_web_sm;en_core_web_sm" --add-data "backend/data.db;backend" backend/app.py
-
-"""
+# Initialize spaCy model
+nlp = spacy.load("en_core_web_sm")
 
 # Initialize Flask app and configure session
 app = Flask(__name__)
@@ -36,125 +31,120 @@ CORS(app, resources={r"/*": {"origins": ["https://geolabs.vercel.app", "http://l
 login_manager = LoginManager(app)
 login_manager.login_view = 'login'
 
-# Initialize Spacy
-nlp = spacy.load('en_core_web_sm')
-print(spacy.util.get_package_path('en_core_web_sm'))
-
-# SQLite Database Initialization
-import os
-import sqlite3
-
-# Get the base directory of the current script
-BASE_DIR = os.path.abspath(os.path.dirname(__file__))
-
-# Define the path to the database file relative to the script location
-DB_PATH = os.path.join(BASE_DIR, 'data.db')
+# Function to extract dates from text content
+def extract_date(text):
+    date_patterns = [
+        r'(\d{1,2}[-/]\d{1,2}[-/]\d{2,4})',  
+        r'([A-Za-z]+\s+\d{1,2},\s*\d{4})',    
+        r'([A-Za-z]+\s+\d{1,2}[\s,\']+\d{4})' 
+    ]
+    for pattern in date_patterns:
+        match = re.search(pattern, text)
+        if match:
+            date_str = match.group(0)
+            try:
+                if re.match(r'\d{1,2}[-/]\d{1,2}[-/]\d{2,4}', date_str):
+                    date_obj = datetime.strptime(date_str, '%m/%d/%Y')
+                else:
+                    date_obj = datetime.strptime(date_str, '%B %d, %Y')
+                return date_obj.strftime('%m-%d-%Y')
+            except ValueError:
+                continue
+    return 'Unknown'
 
 # SQLite Database Initialization
 def init_sqlite_db():
-    conn = sqlite3.connect(DB_PATH)
-    cursor = conn.cursor()
-    cursor.execute('''
-        CREATE TABLE IF NOT EXISTS users (
-            id INTEGER PRIMARY KEY AUTOINCREMENT,
-            email TEXT UNIQUE NOT NULL,
-            password TEXT NOT NULL
-        )
-    ''')
-    cursor.execute('''
-        CREATE TABLE IF NOT EXISTS documents (
-            id INTEGER PRIMARY KEY AUTOINCREMENT,
-            filename TEXT,
-            content TEXT,
-            last_updated TIMESTAMP
-        )
-    ''')
-    conn.commit()
-    conn.close()
+    try:
+        conn = sqlite3.connect('data.db')
+        cursor = conn.cursor()
+        print("Creating tables...")
+
+        cursor.execute('''
+            CREATE TABLE IF NOT EXISTS users (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                email TEXT UNIQUE NOT NULL,
+                password TEXT NOT NULL
+            )
+        ''')
+
+        cursor.execute('''
+            CREATE TABLE IF NOT EXISTS documents (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                filename TEXT UNIQUE,
+                content TEXT,
+                date TEXT
+            )
+        ''')
+
+        conn.commit()
+        conn.close()
+        print("Tables created successfully!")
+    except sqlite3.Error as e:
+        print(f"An error occurred: {e}")
 
 init_sqlite_db()
 
-# Similarly, update all other references to use DB_PATH instead of hardcoded strings
-
-
-# Save file content to SQLite
 def save_to_db(filename, content):
-    conn = sqlite3.connect(DB_PATH)
+    submission_date = extract_date(content)
+    conn = sqlite3.connect('data.db')
     cursor = conn.cursor()
+    
+    cursor.execute('SELECT id FROM documents WHERE filename = ?', (filename,))
+    if cursor.fetchone() is not None:
+        print(f"{filename} has already been processed. Skipping...")
+        conn.close()
+        return
+
     cursor.execute('''
-        INSERT INTO documents (filename, content, last_updated)
+        INSERT INTO documents (filename, content, date)
         VALUES (?, ?, ?)
-    ''', (filename, content, datetime.utcnow()))
+    ''', (filename, content, submission_date))
     conn.commit()
     conn.close()
+    print(f"Saved: {filename} with date {submission_date} to the database.")
 
-# Function to check for an exact word match using regular expressions
-def match_exact_word(phrase, content):
-    pattern = r'\b' + re.escape(phrase) + r'\b'  # Use word boundaries for exact match
-    return re.search(pattern, content, re.IGNORECASE) is not None
+def process_all_files_in_folder(folder_path):
+    for filename in os.listdir(folder_path):
+        if filename.endswith('.txt'):
+            file_path = os.path.join(folder_path, filename)
+            try:
+                with open(file_path, 'r', encoding='utf-8', errors='ignore') as file:
+                    content = file.read()
+                save_to_db(filename, content)
+            except Exception as e:
+                print(f"Error processing file {file_path}: {e}")
+
+desktop_path = os.path.join(os.path.expanduser('~'), 'Desktop')
+ocr_reports_folder = os.path.join(desktop_path, 'OCR_REPORTS')
+
+# MAKE THIS LIKE A REFRESH BUTTON LATER COMMENTING OUT FOR NOW CUZ NO NEED
+# process_all_files_in_folder(ocr_reports_folder)
 
 def extract_and_rank_keywords(prompt):
     doc = nlp(prompt)
-    matcher = Matcher(nlp.vocab)
-
-    patterns = [
-        [{"POS": "PROPN"}],
-        [{"IS_DIGIT": True}, {"IS_PUNCT": True}, {"IS_DIGIT": True}],  # Work order pattern like "7860-00"
-        [{"POS": "ADJ"}, {"POS": "NOUN"}],  # Adjective + Noun (e.g., "boring holes")
-        [{"POS": "NOUN"}, {"POS": "NOUN"}],  # Noun + Noun (e.g., "project details")
-        [{"POS": "NOUN"}]  # Single Noun (e.g., "holes")
-    ]
-
-    matcher.add("KEY_PHRASES", patterns)
-    matches = matcher(doc)
-
-    relevant_phrases = []
-    for match_id, start, end in matches:
-        span = doc[start:end]
-        relevant_phrases.append(span.text)
-
-    # Rank phrases based on custom heuristics
-    def rank_phrase(phrase):
-        if any(char.isdigit() for char in phrase) and '-' in phrase:
-            return (5, phrase)  # High priority for work orders
-        elif phrase in oahu_cities:
-            return (4, phrase)  # Highest priority for locations
-        elif phrase in civil_engineering_terms:
-            return (3, phrase)
-        elif len(phrase.split()) > 1:
-            return (2, phrase)  # Medium priority for multi-word phrases
-        else:
-            return (1, phrase)  # Lowest priority for single words
-
-    ranked_phrases = sorted(relevant_phrases, key=rank_phrase, reverse=True)
-    return ranked_phrases
+    keywords = []
+    for token in doc:
+        if token.text in oahu_cities or token.text in civil_engineering_terms:
+            keywords.append(token.text)
+        elif token.pos_ in ['NOUN', 'PROPN', 'ADJ'] and len(token.text) > 2:
+            keywords.append(token.text)
+    return keywords
 
 def extract_keywords_with_logic(prompt):
+    doc = nlp(prompt)
     parts = []
     buffer = []
-    i = 0
-
-    while i < len(prompt):
-        if prompt[i:i + 3].upper() == "AND":
+    for token in doc:
+        if token.text.lower() in ['and', 'or']:
             if buffer:
-                parts.append(''.join(buffer).strip())
-            parts.append("AND")
+                parts.append(' '.join(buffer).strip())
+            parts.append(token.text.upper())
             buffer = []
-            i += 3
-        elif prompt[i:i + 2].upper() == "OR":
-            if buffer:
-                parts.append(''.join(buffer).strip())
-            parts.append("OR")
-            buffer = []
-            i += 2
         else:
-            buffer.append(prompt[i])
-            i += 1
-
+            buffer.append(token.text)
     if buffer:
-        parts.append(''.join(buffer).strip())
+        parts.append(' '.join(buffer).strip())
 
-    # Extract individual keywords and phrases
     keywords_with_logic = []
     for part in parts:
         if part in {"AND", "OR"}:
@@ -165,6 +155,10 @@ def extract_keywords_with_logic(prompt):
 
     return keywords_with_logic
 
+def match_exact_word(phrase, content):
+    pattern = r'\b' + re.escape(phrase) + r'\b'  # Use word boundaries for exact match
+    return re.search(pattern, content, re.IGNORECASE) is not None
+
 def get_filtered_documents(keywords_list):
     conn = sqlite3.connect('data.db')
     cursor = conn.cursor()
@@ -174,7 +168,6 @@ def get_filtered_documents(keywords_list):
     documents = [{"filename": row[0], "content": row[1]} for row in cursor.fetchall()]
     conn.close()
 
-    # Filter documents based on exact word matches
     filtered_documents = []
     for doc in documents:
         content = doc["content"]
@@ -191,13 +184,11 @@ def get_filtered_documents_with_logic(keywords_with_logic):
     query_parts = []
     params = []
 
-    # Ensure the list does not start or end with "AND" or "OR"
     if keywords_with_logic and (keywords_with_logic[0] in {"AND", "OR"}):
         keywords_with_logic = keywords_with_logic[1:]
     if keywords_with_logic and (keywords_with_logic[-1] in {"AND", "OR"}):
         keywords_with_logic = keywords_with_logic[:-1]
 
-    # Build the SQL query dynamically based on "AND" and "OR" logic
     for keyword in keywords_with_logic:
         if keyword == "AND":
             query_parts.append("AND")
@@ -244,16 +235,13 @@ def get_summary_from_model(work_order_number, combined_content):
 
 def generate_all_forms(word):
     forms = set()
-    doc = nlp(word)
     forms.add(word)
-    lemma = doc[0].lemma_
-    forms.add(lemma)
 
     if word.endswith('s') and not word.endswith('ss'):
-        singular = lemma if lemma.endswith('y') else word[:-1]
+        singular = word[:-1]
         forms.add(singular)
     else:
-        plural = lemma + 's'
+        plural = word + 's'
         forms.add(plural)
 
     return forms
