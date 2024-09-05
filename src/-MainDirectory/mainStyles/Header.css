@@ -2,10 +2,11 @@
   width: 100%; /* Full width */
   min-width: 100vw;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 1);
-  background-color: var(--neutral-900);
+  backdrop-filter: blur(12px);
+  background-color: rgba(0, 0, 0, .56);
   display: flex;
   align-items: center; /* Align items vertically centered */
-  justify-content: space-between; /* Space between logo and the rest */
+  justify-content: space-between; /* Distribute space between items */
   padding: 20px;
   box-sizing: border-box;
   position: sticky; 
@@ -14,60 +15,49 @@
   min-height: 120px;
 }
 
-.geolabs-img{
-  margin-right: 30px; cursor: pointer;
+.geolabs-img {
+  margin-left: 30px;
+  cursor: pointer;
   width: 70px;
 }
 
-.geolabs-img:hover{
+.geolabs-img:hover {
   transform: scale(1.05);
 }
 
 .logo {
-  font-size: 40px; margin-left: 10px;
+  font-size: 40px;
+  margin-left: 10px;
   font-weight: bold;
   color: white;
   cursor: pointer;
 }
 
-.logo:hover{
+.logo:hover {
   transform: scale(1.02);
 }
 
-.navbar {
-  width: 100%; min-width: 100vw; min-height: 80px;
-  background-color: rgb(35, 35, 35);
-  display: flex; 
-  align-items: center;
-  justify-content: space-between; /* Space between left and right sections */
-  padding: 10px 20px;
-  box-sizing: border-box;
-}
-
-.nav-buttons, .auth-buttons {
-  display: flex;
-  flex-direction: row; /* Display buttons in a row */
-  gap: 20px;
-  margin-top: 5px; 
-}
-
 .nav-buttons {
-  justify-content: flex-start; /* Align navigation buttons to the left */
-  margin-left: 10px;
+  display: flex;
+  gap: 15px;
+  margin: 0 auto;
+  flex: 1; /* Allows it to take available space in the middle */
+  justify-content: center; /* Center the navigation buttons horizontally */
 }
 
 .auth-buttons {
-  justify-content: flex-end; /* Align authentication buttons to the right */
-  margin-right: 10px;
+  display: flex;
+  gap: 15px;
+  margin-right: 60px;
+  gap: 20px;
 }
 
 .nav-button, .auth-button {
   text-decoration: none;
   outline: none;
-  background-color: var(--neutral-800);
   border: none;
-  border-radius: 20px;
-  color: var(--primary-100);
+  color: white;
+  background-color: #000;
   font-size: 22px;
   letter-spacing: 0.5px;
   cursor: pointer;
@@ -75,8 +65,17 @@
   padding: 5px 15px;
 }
 
-.nav-button:hover, .auth-button:hover {
-  background-color: var(--neutral-700);
-  transform: scale(1.05);
-  opacity: 1;
+.header-register-button {
+  background-color: white;
+  color: #000;
+}
+
+.header-register-button:hover {
+  background-color: #000;
+  color: white;
+  border: 0.5px solid white;
+}
+
+.header-login-button:hover {
+  color: gray;
 }

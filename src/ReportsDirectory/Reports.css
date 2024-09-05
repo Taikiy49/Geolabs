@@ -39,7 +39,6 @@
     overflow-y: auto; /* Enable vertical scrolling */
   }
 
-
   .main-content-container {
     display: flex; 
     width: 100%;
@@ -48,9 +47,7 @@
   }
 
   .main-content {
-    
-    color: var(--primary-100);
-    background-color: rgb(10, 10, 10);
+    color: white;
     flex: 1;
     display: flex;
     box-sizing: border-box;
@@ -104,8 +101,9 @@
   .software-title {
     text-align: center;
     margin-right: auto;
-    font-weight: bold;
-    color: var(--neutral-100);
+    font-weight: 400;
+    font-size: 5vw;
+    color: white;
   }
   
   
@@ -129,8 +127,7 @@
   
   .option-box {
     max-width: 300px;
-    background-color: var(--neutral-900);
-    color: var(--primary-100);
+    color: white;
     padding: 15px; padding-bottom: 0px;
     border-radius: 10px;
     transition: all 0.3s ease;
@@ -140,7 +137,6 @@
   
   .option-box:hover {
     transform: scale(1.05);
-    background-color: var(--neutral-800);
   }
   
   .option-box h2 {

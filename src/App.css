@@ -5,11 +5,11 @@ html, body {
   font-weight: bold;
   width: 100%;
   height: 100%;
-  font-family: "Arial";
-  color: var(--primary-900);
-  display: flex;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   justify-content: center;
   align-items: stretch;
+  background-color: #000;
+  background-size: cover;
 }
 
 :root {
@@ -37,15 +37,15 @@ html, body {
     --accent-900: #252600;
 
     /* Neutral */
-    --neutral-100: #FAFAFC;
-    --neutral-200: #E6E6ED;
-    --neutral-300: #D3D3DD;
-    --neutral-400: #C0C2CD;
-    --neutral-500: #AEB1BD;
-    --neutral-600: #8A8E97;
-    --neutral-700: #676A71;
-    --neutral-800: #45474C;
-    --neutral-900: #222426;
+    --neutral-100: #FAFAFCdd;
+    --neutral-200: #E6E6EDdd;
+    --neutral-300: #D3D3DDdd;
+    --neutral-400: #C0C2CDdd;
+    --neutral-500: #AEB1BDdd;
+    --neutral-600: #8A8E97dd;
+    --neutral-700: #676A71dd;
+    --neutral-800: #45474Cdd;
+    --neutral-900: #222426dd;
 }
 
 #root {
@@ -58,6 +58,5 @@ html, body {
 .app-footer{
   display: flex; font-weight: normal;
   min-width: 100vw; font-size: 20px;
-  background-color: var(--neutral-900);
-  color: var(--neutral-300);
+  color: white;
 }

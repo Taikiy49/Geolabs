@@ -88,39 +88,7 @@
     display: grid;
     gap: 20px;
   }
-  
-  .option-box {
-    max-width: 300px;
-    background-color: var(--neutral-900);
-    color: var(--primary-100);
-    padding: 15px;
-    padding-bottom: 0px;
-    border-radius: 10px;
-    transition: all 0.3s ease;
-    cursor: pointer;
-  }
-  
-  .option-box:hover {
-    transform: scale(1.05);
-    background-color: var(--neutral-800);
-  }
-  
-  .option-box h2 {
-    margin-top: 0px;
-    width: auto;
-    font-weight: bold;
-    font-size: 30px;
-    padding: 5px;
-    border-radius: 20px;
-  }
-  
-  .option-box p {
-    margin-top: -15px;
-    margin-left: 5px;
-    font-weight: normal;
-    font-size: 20px;
-    color: var(--neutral-200);
-  }
+
   
   /* Scrollbar styling for file list */
   .scrollable-file-list {

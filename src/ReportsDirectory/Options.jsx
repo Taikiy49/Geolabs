@@ -161,25 +161,10 @@ const Options = ({ isMainPage }) => {
         {isMainPage && (
           <div className="software-sections">
             <div className='report-text-container'>
-              <h1 className="software-title">Project Reports</h1>
+              <h1 className="software-title">REPORTS</h1>
               <p className='software-description'>Please note that this software is currently under development. Some features may be incomplete or not functioning at their full capacity at this time.</p>
             </div>
             <div className='reports-mini-container'>
-              <div className="software-section">
-                <div className="options-container">
-                  {filteredSoftwareOptions.map((option, index) => (
-                    <div
-                      key={index}
-                      className="option-box"
-                      onClick={() => navigate(option.path)}
-                    >
-                      <img src={option.logo} alt={`${option.title} logo`} className="option-logo" />
-                      <h2>{option.title}</h2>
-                      <p>{option.description}</p>
-                    </div>
-                  ))}
-                </div>
-              </div>
 
               <div className="file-actions-container">
                 <div className='file-top-container'>
@@ -230,6 +215,23 @@ const Options = ({ isMainPage }) => {
                     />
                   </label>
                 </div>
+
+
+              <div className="software-section">
+                <div className="options-container">
+                  {filteredSoftwareOptions.map((option, index) => (
+                    <div
+                      key={index}
+                      className="option-box"
+                      onClick={() => navigate(option.path)}
+                    >
+                      <img src={option.logo} alt={`${option.title} logo`} className="option-logo" />
+                      <h2>{option.title}</h2>
+                      <p>{option.description}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
 
               </div>
             </div>
