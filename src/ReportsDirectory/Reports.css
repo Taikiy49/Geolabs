@@ -1,84 +1,31 @@
-/* Hide the scrollbar while allowing scrolling */
-.reports-container, .nav-buttons, .auth-buttons, .main-content {
-  scrollbar-width: none; /* For Firefox */
-  -ms-overflow-style: none; /* For Internet Explorer and Edge */
-  
-}
 
-.reports-container::-webkit-scrollbar, 
-.nav-buttons::-webkit-scrollbar, 
-.auth-buttons::-webkit-scrollbar, 
-.main-content::-webkit-scrollbar {
-  display: none; 
-}
-
-/* Improved scrollbar for the file list */
-.scrollable-file-list::-webkit-scrollbar {
-  width: 12px; /* Width of the scrollbar */
-}
-
-.scrollable-file-list::-webkit-scrollbar-thumb {
-  background-color: var(--primary-300); /* Scrollbar thumb color */
-  border-radius: 10px; /* Roundness of the scrollbar thumb */
-  border: 2px solid var(--neutral-900); /* Space around thumb */
-}
-
-.scrollable-file-list::-webkit-scrollbar-track {
-  background-color: var(--neutral-900); /* Match scrollbar track color with background */
-  border-radius: 10px; /* Roundness of the scrollbar track */
-}
-
-.scrollable-file-list::-webkit-scrollbar-thumb:hover {
-  background-color: var(--primary-400); /* Darker color on hover */
-}
-  
   .app-container {
-    min-width: 100vw; height: 100%;
+    width: 100vw; height: 100%;
     display: flex;
     flex-direction: column; /* Change direction to column for vertical layout */
     overflow-y: auto; /* Enable vertical scrolling */
   }
 
-  .main-content-container {
-    display: flex; 
-    width: 100%;
-    padding: 20px;
-    box-sizing: border-box;
+  .reports-container{
+    display: flex;
+    justify-content: center;
   }
 
-  .main-content {
-    color: white;
-    flex: 1;
-    display: flex;
-    box-sizing: border-box;
-    position: relative;
-    z-index: 1; 
-    min-width: 100vw;
-    justify-content: center;
-    align-items: flex-start;
-  }
-  
-  .title-search-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
-  }
+
   
   .add-remove-container { /* Adjusted container for buttons */
-    display: flex;
-    gap: 150px;
-    margin: 0 auto; margin-top: 10px; 
+    display: flex; color: white;
+
   }
 
   .reports-remove-text, .reports-upload-text{
-    margin-top: 1px; font-size: 12px; text-align: center;
+    margin-top: 3px; font-size: 20px; text-align: center;
   }
 
   .add-remove-option-box {
     padding-left: 10px; padding-right: 10px; padding-top: 10px;
-    border-radius: 10px; text-align: center;
-    cursor: pointer; font-size: 30px; margin-bottom: 5px;
+    border-radius: 10px; text-align: center; margin-top: 30px;
+    cursor: pointer; font-size: 30px;
   }
 
   .add-remove-option-box:hover {
@@ -87,32 +34,70 @@
   
   
   .software-sections {
+    width: 100vw;
     display: flex;
     flex-direction: column;
   }
 
   .software-section {
+    margin-top: 200px;
     display: flex;
     flex-direction: column;
     padding: 20px;
     border-radius: 20px;
   }
+
+  .reports-software-section-title{
+    font-size: 60px; font-weight: 400;
+    color: white; margin-left: auto;
+  }
+
+  .reports-software-section-description{
+    color: white; font-size: 25px; margin-left: auto;
+  }
+
+  .reports-text-container{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+    justify-content: center;
+    align-items: center;
+
+  }
   
   .software-title {
+    margin: 0 auto;
     text-align: center;
     margin-right: auto;
     font-weight: 400;
-    font-size: 5vw;
+    font-size: 100px;
     color: white;
   }
   
-  
+  .desc-more-container{
+    display: flex; flex-direction: column;
+    justify-content: center;
+  }
+
   .software-description {
-    text-align: center; width: 700px; margin: auto;
-    font-size: 20px; font-weight: normal;
-    margin-top: -10px;
-    margin-bottom: 30px;
-    color: var(--neutral-200);
+    text-align: left; width: 1000px;
+    font-size: 25px; font-weight: normal; margin-top: 50px;
+    color: var(--primary-100);
+  }
+
+  .reports-more-button{
+    font-weight: normal;
+    background-color: white; width: 150px;
+    padding: 10px 15px; color: rgba(0, 0, 0, 0.9);
+    font-size: 18px; cursor: pointer;
+    margin-left: auto; margin-right: 30px; 
+  }
+
+  .reports-more-button:hover{
+    background-color: #000;
+    color: white;
+    border: 0.1px solid white;
   }
 
   .app-footer {
@@ -121,15 +106,19 @@
   }
   
   
-  .options-container {
-    display: grid; gap: 20px;
+  .reports-options-container {
+    display: flex; justify-content: center; margin-top: 100px;
+    margin-bottom: 300px;
+    gap: 200px;
   }
   
   .option-box {
     max-width: 300px;
     color: white;
-    padding: 15px; padding-bottom: 0px;
-    border-radius: 10px;
+    background-color: #151414;
+    border: 1px solid #2a2928;
+    padding: 50px; padding-bottom: 20px;
+    border-radius: 5px;
     transition: all 0.3s ease;
     cursor: pointer;
 
@@ -142,75 +131,117 @@
   .option-box h2 {
     margin-top: 0px;
     width: auto;
-    font-weight: bold; font-size: 30px;
+    font-weight: bold; font-size: 50px;
     padding: 5px; border-radius: 20px;
   }
   
   .option-box p {
     margin-top: -15px; margin-left: 5px;
     font-weight: normal;
-    font-size: 20px; color: var(--neutral-200);
+    font-size: 20px; color: white;
   }
 
+
+  .reports-database-title{
+    font-size: 60px; font-weight: 400; color: white;
+    display: flex;
+  }
+
+  .reports-database-description{
+    color: white; font-size: 25px;
+  }
   
 
   .file-actions-container {
+    margin-top: 100px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-left: auto;
-    position: relative;
   }
 
-  .file-top-container{
-    display: flex;
-    gap: 250px;
+  .reports-file-top-container{
+    display: flex; margin-top: 25px; margin-bottom: 50px;
+  }
+
+  .reports-file-count{
+    font-size: 25px;
+    margin-top: 25px;
+    margin-left: 30px;
+    
   }
   
   .file-search-bar {
     display: flex;
     height: 50px;
-    align-items: center; margin-left: 10px; 
+    align-items: center; margin-left: auto; margin-right: 50px;
+  } 
+
+  .reports-file-list-search-title{
+    color: white; font-size: 25px; margin-right: 20px;
   }
 
   
 .file-list-title { /* New class for file list title */
-  font-size: 20px; margin-left: -50px; font-weight: normal;
-  color: var(--neutral-100);
+  font-size: 20px; font-weight: normal; margin-left: auto;
+  color: white;
 }
   
   .file-search-bar input {
-    padding: 8px; color: black; 
+    padding: 10px; color: black; 
     font-size: 16px;
-    border-radius: 5px;
     border: none;
     background-color: white;
-    width: 300px; margin-bottom: 5px;
+    width: 300px; 
     outline: none;
   }
   
   .file-list-container { 
-    padding: 10px; margin-top: -10px;
-    width: 700px; max-height: 600px; overflow-x: hidden;
-    margin-left: auto;
-    border-radius: 5px;
-    overflow-y: auto;
+    padding-right: 30px;
+    width: 50vw; height: 800px; overflow-x: hidden;
+    overflow-y: auto; margin-right: 50px;
 }
 
-.scrollable-file-list { /* Updated scrollable file list */
-    background-color: transparent;
-    font-size: 20px;
-
+/* Hide scrollbar by default */
+.scrollable-file-list {
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For Internet Explorer and Edge */
+  overflow-y: scroll; /* Enable vertical scrolling */
 }
+
+/* Hide scrollbar in Webkit-based browsers (Chrome, Safari, etc.) */
+.scrollable-file-list::-webkit-scrollbar {
+  width: 0; /* Hide the scrollbar */
+}
+
+/* Show scrollbar on hover */
+.scrollable-file-list:hover::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar when hovering */
+}
+
+/* Improved scrollbar for the file list when visible */
+.scrollable-file-list:hover::-webkit-scrollbar-thumb {
+  background-color: var(--primary-300); /* Scrollbar thumb color */
+  border-radius: 10px; /* Roundness of the scrollbar thumb */
+  border: 2px solid var(--neutral-900); /* Space around thumb */
+}
+
+.scrollable-file-list:hover::-webkit-scrollbar-track {
+  background-color: var(--neutral-900); /* Match scrollbar track color with background */
+  border-radius: 10px; /* Roundness of the scrollbar track */
+}
+
+.scrollable-file-list:hover::-webkit-scrollbar-thumb:hover {
+  background-color: var(--primary-400); /* Darker color on hover */
+}
+
 
   
 .file-item { 
-  background-color: var(--neutral-900);
-  padding: 12px; font-weight: normal; user-select: none;
-  border-radius: 10px;
-  color: var(--neutral-300);
-  margin-bottom: 7px;
+  padding: 15px; font-weight: normal; user-select: none;
+  background-color: #151414;
+  border: 1px solid #2a2928;
+  border-radius: 5px;
+  color: white;
+  margin-bottom: 15px;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
@@ -218,7 +249,6 @@
 
 .file-item.selected { /* Styling for selected file item */
   background-color: var(--neutral-700); /* Selected color */
-  transform: scale(1.03); /* Slightly enlarge the selected box */
 }
 
 .file-item:hover {
@@ -229,8 +259,7 @@
 
   .reports-mini-container{
     display: flex;
-    align-items: center;
-    margin-top: -30px; margin-left: -20px;
+    justify-content: center;
   }
   
 

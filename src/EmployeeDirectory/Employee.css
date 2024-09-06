@@ -115,25 +115,3 @@
     background-color: var(--primary-400);
   }
   
-  /* Styling for file items */
-  .file-item { 
-    background-color: var(--neutral-900);
-    padding: 12px;
-    font-weight: normal;
-    user-select: none;
-    border-radius: 10px;
-    color: var(--neutral-300);
-    margin-bottom: 7px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-  }
-  
-  .file-item.selected { 
-    background-color: var(--neutral-700); 
-    transform: scale(1.03); 
-  }
-  
-  .file-item:hover {
-    background-color: var(--neutral-800);
-  }
-  

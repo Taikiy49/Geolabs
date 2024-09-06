@@ -18,7 +18,8 @@
 .geolabs-img {
   margin-left: 30px;
   cursor: pointer;
-  width: 70px;
+  margin-top: 5px;
+  width: 60px;
 }
 
 .geolabs-img:hover {
@@ -26,7 +27,7 @@
 }
 
 .logo {
-  font-size: 40px;
+  font-size: 35px;
   margin-left: 10px;
   font-weight: bold;
   color: white;
@@ -57,9 +58,9 @@
   outline: none;
   border: none;
   color: white;
-  background-color: #000;
+  background-color: rgba(0, 0, 0, .1);
   font-size: 22px;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.1px;
   cursor: pointer;
   text-align: center; 
   padding: 5px 15px;

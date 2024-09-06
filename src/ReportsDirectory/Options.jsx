@@ -157,18 +157,24 @@ const Options = ({ isMainPage }) => {
       <div className={`overlay ${uploading ? 'visible' : ''}`}>
         <div className="loading-message">Uploading files, please wait...</div>
       </div>
-      <div className="inner-borders">
+     
         {isMainPage && (
           <div className="software-sections">
-            <div className='report-text-container'>
+            <div className='reports-text-container'>
               <h1 className="software-title">REPORTS</h1>
-              <p className='software-description'>Please note that this software is currently under development. Some features may be incomplete or not functioning at their full capacity at this time.</p>
+              <div className='desc-more-container'>
+                <p className='software-description'>Please note that this software is currently under development. Some features may be incomplete or not functioning at their full capacity at this time.</p>
+                <button className='reports-more-button'>Learn more</button>
+              </div>
             </div>
             <div className='reports-mini-container'>
 
               <div className="file-actions-container">
-                <div className='file-top-container'>
+                <div className='reports-database-title'>Database<div className='reports-file-count'>{totalFiles} Files</div></div>
+                <p className='reports-database-description'>Add and remove files from an external private database</p>
+                <div className='reports-file-top-container'>
                   <div className="file-search-bar">
+                    <p className='reports-file-list-search-title'>Search:</p>
                     <input
                       type="text"
                       placeholder="Search files..."
@@ -176,7 +182,6 @@ const Options = ({ isMainPage }) => {
                       onChange={(e) => setSearchQuery(e.target.value)}
                     />
                   </div>
-                  <h2 className="file-list-title">File Count: {totalFiles}</h2>
                 </div>
                 <div className="file-list-container">
                   <div className="scrollable-file-list">
@@ -218,7 +223,9 @@ const Options = ({ isMainPage }) => {
 
 
               <div className="software-section">
-                <div className="options-container">
+                <div className='reports-software-section-title'>Features</div>
+                <p className='reports-software-section-description'>Features designed to enhance your productivity and streamline your workflow.</p>
+                <div className="reports-options-container">
                   {filteredSoftwareOptions.map((option, index) => (
                     <div
                       key={index}
@@ -238,7 +245,7 @@ const Options = ({ isMainPage }) => {
           </div>
         )}
       </div>
-    </div>
+  
   );
 };
 
