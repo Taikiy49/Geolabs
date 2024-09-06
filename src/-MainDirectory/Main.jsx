@@ -39,7 +39,7 @@ const Main = () => {
           <AppRoutes isAuthenticated={isAuthenticated} setIsAuthenticated={setIsAuthenticated} />
         )}
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };

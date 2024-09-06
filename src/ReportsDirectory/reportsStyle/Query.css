@@ -2,18 +2,27 @@
 .relevancy-page-container {
     display: flex;
     flex-direction: row;
-    padding: 20px; width: 100vw;
+    justify-content: center;
+    align-items: center; /* Align items vertically to center */
+    height: 80vh; /* Full viewport height */
+    padding: 20px; 
+    width: 100vw;
 }
 
 .query-centering-container {
     display: flex;
+    flex-direction: row;
     justify-content: center;
+    align-items: center;
     width: 100vw;
+    height: 100%; 
+    gap: 100px;
 }
 
 .relevancy-file-count-text {
-    font-weight: normal;
-    font-size: 17px;
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
     margin-bottom: 15px; margin-left: auto; margin-right: 10px;
 }
 
@@ -23,30 +32,34 @@
     margin-top: 20px;
     display: flex;
     flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
 }
 
-/* Chatbot section */
 .relevancy-chatbot-section {
-    margin-top: 30px;
-    padding-left: 20px;
     display: flex;
-    flex-direction: column;
+    margin-top: auto;
+    margin-bottom: 8vh;
+    
 }
 
 .relevancy-chatbot-container {
-    display: flex; width: 100%;
+    display: flex; 
+    width: 100%;
     flex-direction: column;
+
 }
+
 
 /* Input field styling */
 .relevancy-input-field {
-    padding: 10px; 
+    padding: 10px 15px;
     font-size: 16px;
-    border-radius: 10px;
+    border-radius: 5px;
     border: none;
     color: black;
     background-color: white;
-    width: 200px;
+    width: 400px;
     height: 15px;
     margin-bottom: 20px;
     outline: none;
@@ -74,6 +87,11 @@
     opacity: 0;
     width: 0;
     height: 0;
+}
+
+.relevancy-file-search-text{
+    color: white;
+
 }
 
 .relevancy-slider {
@@ -123,15 +141,13 @@
 
 /* File list and item styling */
 .relevancy-file-list-container {
-    width: 700px; margin-left: -10px;
-    max-height: 55vh;
-    overflow-y: auto;
-    border-radius: 10px;
+    padding-right: 30px;
+    height: 50vh;
     overflow-x: hidden;
-    padding: 10px;
-    display: none;
-    transition: opacity 0.3s ease;
-    opacity: 0;
+    overflow-y: scroll; /* Enable vertical scrolling */
+    scrollbar-width: thin; /* Thin scrollbar for Firefox */
+    scrollbar-color: white transparent; /* White thumb with transparent track */
+    scroll-behavior: smooth; /* Smooth scrolling */
 }
 
 .relevancy-file-list-container.active {
@@ -146,40 +162,43 @@
 }
 
 .relevancy-file-item {
-    display: flex;
-    font-weight: normal;
-    align-items: center;
-    user-select: none;
-    padding: 12px;
-    margin-bottom: 5px;
-    border-radius: 10px;
-    background-color: var(--neutral-900);
-    color: var(--neutral-100);
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: 30vw;
+    padding: 15px;
+    font-size: 20px;
+  font-weight: normal;
+  user-select: none;
+  background-color: #151414;
+  border: 1px solid #2a2928;
+  border-radius: 5px;
+  color: white;
+  margin-bottom: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
+
 .relevancy-file-item:hover {
-    background-color: var(--neutral-700);
-    transform: scale(1.02);
+    background-color: var(--neutral-800);
 }
 
 .relevancy-file-item.relevancy-selected {
-    background-color: var(--neutral-800);
-    transform: scale(1.02);
+    background-color: var(--neutral-700);
+}
+
+
+.relevancy-rank-filename-container{
+    display: flex;
 }
 
 .relevancy-rank-container {
-    width: 30px;
     display: flex;
-    justify-content: center;
-    align-items: center;
     margin-right: 10px;
 }
 
 .relevancy-rank-number {
-    font-size: 18px;
-    color: var(--neutral-100);
+    display: flex;
+    font-size: 20px;
+    color: white;
 }
 
 .relevancy-filename-box {
@@ -190,16 +209,16 @@
 }
 
 .reset-button-img {
-    height: 35px;
-    width: 40px;
+    height: 50px;
+    width: 55px;
     color: white;
-    margin: 0 auto;
+    margin: 0 auto; margin-top: 20px;
 }
 
 .relevancy-reset-button-text {
     font-weight: normal;
-    margin: 0 auto;
-    font-size: 15px;
+    margin: 0 auto; color: white;
+    font-size: 20px;
 }
 
 .relevancy-reset-button {
@@ -220,59 +239,125 @@
 
 /* Chatbot section input and button */
 .relevancy-chatbot-input {
-    width: 500px;
+    width: 650px;
     height: 15px;
     outline: none;
-    padding: 10px;
+    padding: 10px 15px;
     border: none;
-    border-radius: 10px;
+    border-radius: 5px;
     background-color: white;
     color: black;
     font-size: 16px;
-    margin-left: auto;
-    margin-bottom: 20px;
+    margin: 20px 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Disabled state styling */
+.relevancy-chatbot-input.disabled {
+    background-color: gray; /* Gray background when disabled */
+    color: #666; /* Light gray text when disabled */
+    cursor: not-allowed; /* Not allowed cursor */
 }
 
 /* Chatbot response section */
 .relevancy-chatbot-response {
-    height: 600px; margin-left: 120px; width: 600px;
+    height: 600px; width: 600px;
     overflow-y: auto;
-    font-weight: normal;
-    color: var(--neutral-100);
+    font-weight: 400;
+    font-size: 20px;
+    color: white;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
 }
 
 .relevancy-submitted-query p {
-    font-size: 17px; margin-left: 120px;
-    margin-bottom: 0px;
+    font-size: 22px; font-weight: 400;
     color: var(--primary-100);
 }
 
 .relevancy-chatbot-response ul {
     list-style: none;
-    padding: 0;
-    margin: 0;
 }
 
 .relevancy-chatbot-response li {
-    padding-left: 20px;
     text-indent: -20px;
     margin-bottom: 10px;
-    color: var(--neutral-100);
+    color: white;
 }
 
 .relevancy-filename-text {
-    margin-right: 10px; /* Add some margin to separate the text from other elements */
+    margin-left: auto;
 }
 
 
 .relevancy-last-search
 { 
-    font-weight: normal; margin-left: auto; margin-right: 50px;
+    color: white;
+    font-weight: 400; margin-left: auto; margin-right: 50px;
+    font-size: 20px;
 }
 
 .relevancy-form{
     display: row;
 }
+
+
+/* Centered prompt container */
+.relevancy-prompt-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    z-index: 1000;
+}
+  
+  /* Prompt text styling */
+  .relevancy-prompt-text {
+    font-size: 35px;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 50px;
+}
+  
+  /* Prompt buttons container */
+  .relevancy-prompt-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  /* Button styling */
+  .relevancy-prompt-button {
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    font-size: 22px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+
+  .relevancy-yes-button{
+    color: black;
+    background-color: white;
+  }
+
+  .relevancy-yes-button:hover{
+    background-color: #000;
+    color: white;
+    border: 0.5px solid white;
+  }
+
+  .relevancy-no-button{
+    color: white;
+    background-color: black;
+  }
+
+  .relevancy-no-button:hover{
+    color: gray;
+  }
+  

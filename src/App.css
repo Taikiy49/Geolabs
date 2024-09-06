@@ -9,7 +9,7 @@ html, body {
   justify-content: center;
   align-items: stretch;
   background-color: #000;
-  background-size: cover;
+  scroll-behavior: smooth;
 }
 
 :root {

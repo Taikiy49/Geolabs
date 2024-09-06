@@ -18,8 +18,10 @@ const Header = ({ isAuthenticated, setIsAuthenticated }) => {
 
 
         <nav className="nav-buttons">
-          <button className="nav-button" onClick={() => navigate('/about')}>About</button>
-          <button className="nav-button" onClick={() => navigate('/contact')}>Contact</button>
+          <button className="nav-button" onClick={() => navigate('/')}>Home</button>
+          <button className="nav-button" onClick={() => navigate('/reports')}>Reports</button>
+          <button className="nav-button" onClick={() => navigate('/employee-guide')}>Employee Guide</button>
+          <button className="nav-button" onClick={() => navigate('/admin')}>Admin</button>
         </nav>
 
         <div className="auth-buttons">

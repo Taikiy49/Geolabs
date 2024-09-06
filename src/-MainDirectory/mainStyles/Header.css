@@ -39,11 +39,15 @@
 }
 
 .nav-buttons {
-  display: flex;
+  display: flex; 
   gap: 15px;
   margin: 0 auto;
   flex: 1; /* Allows it to take available space in the middle */
-  justify-content: center; /* Center the navigation buttons horizontally */
+  justify-content: center; margin-right: 100px;
+}
+
+.nav-button:hover{
+  color: gray;
 }
 
 .auth-buttons {

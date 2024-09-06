@@ -20,7 +20,6 @@ const softwareOptions = [
   },
 ];
 
-
 const Options = ({ isMainPage }) => {
   const { apiUrl } = getConfig();
   const navigate = useNavigate();
@@ -154,61 +153,63 @@ const Options = ({ isMainPage }) => {
 
   return (
     <div className="reports-container" onMouseUp={handleMouseUp}>
-      <div className={`overlay ${uploading ? 'visible' : ''}`}>
-        <div className="loading-message">Uploading files, please wait...</div>
+      <div className={`reports-overlay ${uploading ? 'reports-visible' : ''}`}>
+        <div className="reports-loading-message">Uploading files, please wait...</div>
       </div>
      
         {isMainPage && (
-          <div className="software-sections">
-            <div className='reports-text-container'>
-              <h1 className="software-title">REPORTS</h1>
-              <div className='desc-more-container'>
-                <p className='software-description'>Please note that this software is currently under development. Some features may be incomplete or not functioning at their full capacity at this time.</p>
-                <button className='reports-more-button'>Learn more</button>
+          <div className="reports-software-sections">
+            <div className='reports-centering-text-container'>
+              <div className='reports-text-container'>
+                <h1 className="reports-software-title">REPORTS</h1>
+                <div className='reports-desc-more-container'>
+                  <p className='reports-software-description'>Please note that this software is currently under development. Some features may be incomplete or not functioning at their full capacity at this time.</p>
+                  <button className='reports-more-button'>Learn more</button>
+                </div>
               </div>
             </div>
             <div className='reports-mini-container'>
-
-              <div className="file-actions-container">
+              <div className="reports-file-actions-container">
                 <div className='reports-database-title'>Database<div className='reports-file-count'>{totalFiles} Files</div></div>
                 <p className='reports-database-description'>Add and remove files from an external private database</p>
-                <div className='reports-file-top-container'>
-                  <div className="file-search-bar">
-                    <p className='reports-file-list-search-title'>Search:</p>
-                    <input
-                      type="text"
-                      placeholder="Search files..."
-                      value={searchQuery}
-                      onChange={(e) => setSearchQuery(e.target.value)}
-                    />
+  
+                <div className='reports-centering-file-list-container'>
+                  <div className="reports-file-search-bar">
+                      <p className='reports-file-list-search-title'>Find:</p>
+                      <input
+                        type="text"
+                        placeholder="Enter filename..."
+                        value={searchQuery}
+                        onChange={(e) => setSearchQuery(e.target.value)}
+                      />
+                    </div>
+                  <div className="reports-file-list-container">
+                    <div className="reports-scrollable-file-list">
+                      {filteredFiles.map((file, index) => (
+                        <div
+                          key={index}
+                          className={`reports-file-item ${isSelected(file.filename) ? 'reports-selected' : ''}`}
+                          onMouseDown={() => handleMouseDown(index)}
+                          onMouseEnter={() => handleMouseEnter(index)}
+                          onDoubleClick={() => handleDoubleClick(file.filename)}
+                        >
+                          {file.filename}
+                        </div>
+                      ))}
+                    </div>
                   </div>
                 </div>
-                <div className="file-list-container">
-                  <div className="scrollable-file-list">
-                    {filteredFiles.map((file, index) => (
-                      <div
-                        key={index}
-                        className={`file-item ${isSelected(file.filename) ? 'selected' : ''}`}
-                        onMouseDown={() => handleMouseDown(index)}
-                        onMouseEnter={() => handleMouseEnter(index)}
-                        onDoubleClick={() => handleDoubleClick(file.filename)}
-                      >
-                        {file.filename}
-                      </div>
-                    ))}
-                  </div>
-                </div>
-
-                <div className="add-remove-container">
+                
+                <div className="reports-add-remove-container">
                   <div
-                    className="add-remove-option-box"
+                    className="reports-add-remove-option-box"
                     onClick={handleDeleteFiles}
                     disabled={selectedFiles.length === 0}
                   >
                     <i className="fas fa-trash-alt"></i>
                     <p className='reports-remove-text'>Remove</p>
                   </div>
-                  <label className="add-remove-option-box">
+                  <label className="reports-add-remove-option-box">
                     <i className="fas fa-upload"></i>
                     <p className='reports-upload-text'>Upload</p>
                     <input
@@ -221,18 +222,17 @@ const Options = ({ isMainPage }) => {
                   </label>
                 </div>
 
-
-              <div className="software-section">
+              <div className="reports-software-section">
                 <div className='reports-software-section-title'>Features</div>
                 <p className='reports-software-section-description'>Features designed to enhance your productivity and streamline your workflow.</p>
                 <div className="reports-options-container">
                   {filteredSoftwareOptions.map((option, index) => (
                     <div
                       key={index}
-                      className="option-box"
+                      className="reports-option-box"
                       onClick={() => navigate(option.path)}
                     >
-                      <img src={option.logo} alt={`${option.title} logo`} className="option-logo" />
+                      <img src={option.logo} alt={`${option.title} logo`} className="reports-option-logo" />
                       <h2>{option.title}</h2>
                       <p>{option.description}</p>
                     </div>
@@ -245,7 +245,6 @@ const Options = ({ isMainPage }) => {
           </div>
         )}
       </div>
-  
   );
 };
 

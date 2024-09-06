@@ -31,7 +31,6 @@ const Employee = () => {
   const [setUploading] = useState(false);
   const navigate = useNavigate(); // Initialize the navigate function
 
-
   const handleFileUpload = (event) => {
     setUploading(true);
     const formData = new FormData();
@@ -62,17 +61,24 @@ const Employee = () => {
 
   return (
     <div className="employee-container">
-      <div className="inner-borders">
+      <div className="employee-inner-borders">
         <div className="employee-sections">
-          <div className='employee-text-container'>
-            <h1 className="employee-title">Employee Handbook</h1>
-            <p className='employee-description'>Please note that this software is currently under development. Some features may be incomplete or not functioning at their full capacity at this time.</p>
+          <div className='employee-centering-text-container'>
+            <div className='employee-text-container'>
+              <h1 className="employee-title">EMPLOYEE GUIDE</h1>
+              <div className='employee-desc-more-container'>
+                <p className='employee-description'>
+                  Please note that this software is currently under development. Some features may be incomplete or not functioning at their full capacity at this time.
+                </p>
+                <button className='employee-more-button'>Learn more</button>
+              </div>
+            </div>
           </div>
           <div className='employee-mini-container'>
             <div className="employee-section">
-              <div className="options-container">
+              <div className="employee-options-container">
                 {filteredEmployeeOptions.map((option, index) => (
-                  <div key={index} className="option-box" onClick={() => handleOptionClick(option)}>
+                  <div key={index} className="employee-option-box" onClick={() => handleOptionClick(option)}>
                     <h2>{option.title}</h2>
                     <p>{option.description}</p>
                   </div>
@@ -80,10 +86,10 @@ const Employee = () => {
               </div>
             </div>
 
-            <div className="file-actions-container">
-              <div className="add-remove-container">
+            <div className="employee-file-actions-container">
+              <div className="employee-add-remove-container">
                 {filteredBottomOptions.map((option, index) => (
-                  <div key={index} className="add-remove-option-box" onClick={option.title === 'Upload' ? openFileDialog : null}>
+                  <div key={index} className="employee-add-remove-option-box" onClick={option.title === 'Upload' ? openFileDialog : null}>
                     <i className={option.icon}></i>
                     <p className='employee-remove-text'>{option.title}</p>
                   </div>
