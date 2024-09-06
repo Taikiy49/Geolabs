@@ -1,4 +1,4 @@
-from flask import Flask, jsonify, request, session
+from flask import Flask, jsonify, request, session, send_from_directory
 from flask_cors import CORS
 from flask_login import LoginManager, UserMixin, login_user, login_required, logout_user
 from werkzeug.security import generate_password_hash, check_password_hash
@@ -21,15 +21,29 @@ import spacy
 nlp = spacy.load("en_core_web_sm")
 
 # Initialize Flask app and configure session
-app = Flask(__name__)
+app = Flask(__name__, static_folder='build', static_url_path='')  # Serve the React build files correctly
 app.config['SECRET_KEY'] = secrets.token_hex(24)
 app.config['SESSION_TYPE'] = 'filesystem'
 app.config['PERMANENT_SESSION_LIFETIME'] = timedelta(minutes=5)
 Session(app)
 
-CORS(app, resources={r"/*": {"origins": ["https://geolabs.vercel.app", "http://localhost:3000"]}})
+CORS(app, resources={r"/*": {"origins": "*"}}) 
 login_manager = LoginManager(app)
 login_manager.login_view = 'login'
+
+@app.route('/', defaults={'path': ''})
+@app.route('/<path:path>')
+def serve_react_app(path):
+    """
+    Serve the React app from the build folder.
+    """
+    # Serve static files
+    if path and os.path.exists(os.path.join(app.static_folder, path)):
+        return send_from_directory(app.static_folder, path)
+    # Serve the index.html file for all other routes
+    return send_from_directory(app.static_folder, 'index.html')
+
+
 
 # Function to extract dates from text content
 def extract_date(text):
