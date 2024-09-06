@@ -171,7 +171,7 @@
   
   .file-search-bar {
     display: flex;
-    height: 50px;
+    height: 50px; 
     align-items: center; margin-left: auto; margin-right: 50px;
   } 
 
@@ -190,7 +190,7 @@
     font-size: 16px;
     border: none;
     background-color: white;
-    width: 300px; 
+    width: 300px;  border-radius: 5px;
     outline: none;
   }
   
