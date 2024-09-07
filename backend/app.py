@@ -13,12 +13,8 @@ import functools
 from werkzeug.utils import secure_filename
 from terms import oahu_cities, civil_engineering_terms
 import os
-from file_handler import open_series_directories, handle_file_request
+import webbrowser
 import re
-import spacy
-
-# Initialize spaCy model
-nlp = spacy.load("en_core_web_sm")
 
 # Initialize Flask app and configure session
 app = Flask(__name__, static_folder='build', static_url_path='')  # Serve the React build files correctly
@@ -34,16 +30,9 @@ login_manager.login_view = 'login'
 @app.route('/', defaults={'path': ''})
 @app.route('/<path:path>')
 def serve_react_app(path):
-    """
-    Serve the React app from the build folder.
-    """
-    # Serve static files
     if path and os.path.exists(os.path.join(app.static_folder, path)):
         return send_from_directory(app.static_folder, path)
-    # Serve the index.html file for all other routes
     return send_from_directory(app.static_folder, 'index.html')
-
-
 
 # Function to extract dates from text content
 def extract_date(text):
@@ -135,42 +124,32 @@ ocr_reports_folder = os.path.join(desktop_path, 'OCR_REPORTS')
 # process_all_files_in_folder(ocr_reports_folder)
 
 def extract_and_rank_keywords(prompt):
-    doc = nlp(prompt)
-    keywords = []
-    for token in doc:
-        if token.text in oahu_cities or token.text in civil_engineering_terms:
-            keywords.append(token.text)
-        elif token.pos_ in ['NOUN', 'PROPN', 'ADJ'] and len(token.text) > 2:
-            keywords.append(token.text)
+    """
+    Extracts and ranks keywords from the prompt based on a simple heuristic:
+    Matching city names or engineering terms or words longer than 2 letters.
+    """
+    words = re.findall(r'\b\w+\b', prompt)
+    keywords = [word for word in words if word.lower() in oahu_cities or word.lower() in civil_engineering_terms or len(word) > 2]
     return keywords
 
 def extract_keywords_with_logic(prompt):
-    doc = nlp(prompt)
-    parts = []
-    buffer = []
-    for token in doc:
-        if token.text.lower() in ['and', 'or']:
-            if buffer:
-                parts.append(' '.join(buffer).strip())
-            parts.append(token.text.upper())
-            buffer = []
-        else:
-            buffer.append(token.text)
-    if buffer:
-        parts.append(' '.join(buffer).strip())
-
+    """
+    Extracts keywords from the prompt and handles logical operators like AND/OR.
+    """
+    parts = re.split(r'\s+(and|or)\s+', prompt, flags=re.IGNORECASE)
     keywords_with_logic = []
+    
     for part in parts:
-        if part in {"AND", "OR"}:
-            keywords_with_logic.append(part)
+        if part.strip().lower() in {"and", "or"}:
+            keywords_with_logic.append(part.strip().upper())
         else:
             keywords = extract_and_rank_keywords(part)
             keywords_with_logic.extend(keywords)
-
+    
     return keywords_with_logic
 
 def match_exact_word(phrase, content):
-    pattern = r'\b' + re.escape(phrase) + r'\b'  # Use word boundaries for exact match
+    pattern = r'\b' + re.escape(phrase) + r'\b'
     return re.search(pattern, content, re.IGNORECASE) is not None
 
 def get_filtered_documents(keywords_list):
@@ -533,4 +512,6 @@ def open_file():
         return jsonify({'error': str(e)}), 500
 
 if __name__ == '__main__':
+    webbrowser.open("http://localhost:8000")
     app.run(host='0.0.0.0', port=8000)
+    
