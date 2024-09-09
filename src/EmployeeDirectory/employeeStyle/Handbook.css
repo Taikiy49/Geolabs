@@ -52,13 +52,14 @@
     border-radius: 10px;
     border: none;
     color: var(--neutral-100);
-    background-color: var(--neutral-800);
+    background-color: white;
+    color: black;
     outline: none;
     transition: border-color 0.2s;
 }
 
 .handbook-input-field:focus {
-    border: 2px solid var(--primary-400); /* Blue border on focus to highlight the active field */
+    border: 2px solid var(--neutral-400); /* Blue border on focus to highlight the active field */
 }
 
 /* Error message styling */

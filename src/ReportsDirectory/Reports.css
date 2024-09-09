@@ -187,7 +187,7 @@
     font-size: 16px;
     border-radius: 5px;
     border: none;
-    background-color: var(--neutral-500);
+    background-color: white;
     width: 300px; margin-bottom: 5px;
     outline: none;
   }

@@ -48,7 +48,7 @@
     border-radius: 10px;
     border: none;
     color: black;
-    background-color: var(--neutral-500);
+    background-color: white;
     width: 200px; height: 18px; margin-left: 10px;
     margin-bottom: 20px; outline: none; margin-top: 20px;
 }
@@ -202,7 +202,7 @@
     width: 500px; height: 18px; outline: none;
     padding: 10px; border: none; 
     border-radius: 10px;
-    background-color: var(--neutral-500);
+    background-color: white;
     color: black; 
     font-size: 16px;
     margin-left: auto;
