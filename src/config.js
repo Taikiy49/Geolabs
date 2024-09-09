@@ -3,7 +3,7 @@ const config = {
       apiUrl: 'http://localhost:8000',
     },
     production: {
-      apiUrl: 'http://13.56.180.103:8000',
+      apiUrl: 'http://localhost:8000',
     },
   };
   

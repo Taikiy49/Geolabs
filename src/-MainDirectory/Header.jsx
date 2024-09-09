@@ -13,27 +13,30 @@ const Header = ({ isAuthenticated, setIsAuthenticated }) => {
   return (
     <>
       <header className="app-header">
+        <a href='https://www.geolabs.net/'><img src='geolabs.png' className='geolabs-img' alt='geolabs website'></img></a>
         <div className="logo" onClick={() => navigate('/')}>Geolabs, Inc.</div>
-        <a href='https://www.geolabs.net/'><img src='geolabs.png' className='geolabs-img'></img></a>
-      </header>
-      
-      <div className="navbar">
+
+
         <nav className="nav-buttons">
-          <button className="nav-button" onClick={() => navigate('/about')}>About</button>
-          <button className="nav-button" onClick={() => navigate('/contact')}>Contact</button>
+          <button className="nav-button" onClick={() => navigate('/')}>Home</button>
+          <button className="nav-button" onClick={() => navigate('/reports')}>Reports</button>
+          <button className="nav-button" onClick={() => navigate('/employee-guide')}>Employee Guide</button>
+          <button className="nav-button" onClick={() => navigate('/admin')}>Admin</button>
         </nav>
 
         <div className="auth-buttons">
           {!isAuthenticated ? (
             <>
-              <button className="auth-button" onClick={() => navigate('/register')}>Register</button>
-              <button className="auth-button" onClick={() => navigate('/login')}>Login</button>
+              <button className="auth-button header-login-button" onClick={() => navigate('/login')}>Login</button>
+              <button className="auth-button header-register-button" onClick={() => navigate('/register')}>Register</button>
             </>
           ) : (
             <button className="auth-button" onClick={handleLogout}>Logout</button>
           )}
         </div>
-      </div>
+      
+      
+      </header>
     </>
   );
 };

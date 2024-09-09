@@ -1,181 +1,155 @@
-/* Hide the scrollbar while allowing scrolling */
-.reports-container, .nav-buttons, .auth-buttons, .main-content {
-  scrollbar-width: none; /* For Firefox */
-  -ms-overflow-style: none; /* For Internet Explorer and Edge */
+.reports-app-container {
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto; /* Enable vertical scrolling */
 }
 
-.reports-container::-webkit-scrollbar, 
-.nav-buttons::-webkit-scrollbar, 
-.auth-buttons::-webkit-scrollbar, 
-.main-content::-webkit-scrollbar {
-  display: none; 
+.reports-container {
+  display: flex;
+  justify-content: center;
 }
 
-/* Improved scrollbar for the file list */
-.scrollable-file-list::-webkit-scrollbar {
-  width: 12px; /* Width of the scrollbar */
+.reports-add-remove-container {
+  display: flex;
+  gap: 50px;
+  margin: 0 auto;
+  margin-top: 10px; 
+  color: white;
 }
 
-.scrollable-file-list::-webkit-scrollbar-thumb {
-  background-color: var(--primary-300); /* Scrollbar thumb color */
-  border-radius: 10px; /* Roundness of the scrollbar thumb */
-  border: 2px solid var(--neutral-900); /* Space around thumb */
+.reports-remove-text, .reports-upload-text {
+  margin-top: 3px;
+  font-size: 20px;
+  text-align: center;
 }
 
-.scrollable-file-list::-webkit-scrollbar-track {
-  background-color: var(--neutral-900); /* Match scrollbar track color with background */
-  border-radius: 10px; /* Roundness of the scrollbar track */
+.reports-add-remove-option-box {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 30px;
+  cursor: pointer;
+  font-size: 30px;
 }
 
-.scrollable-file-list::-webkit-scrollbar-thumb:hover {
-  background-color: var(--primary-400); /* Darker color on hover */
+.reports-add-remove-option-box:hover {
+  transform: scale(1.05);
 }
-  
-  .app-container {
-    min-width: 100vw; height: 100%;
-    display: flex;
-    flex-direction: column; /* Change direction to column for vertical layout */
-    overflow-y: auto; /* Enable vertical scrolling */
-  }
+
+/* Reports Section Container */
+.reports-software-sections {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center align all elements */
+}
+
+.reports-software-section {
+  margin-top: 300px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 20px;
+  align-items: center; /* Center align all elements */
+}
+
+/* Fade-in Effect for the Title */
+.reports-software-title {
+  font-size: 100px;
+  font-weight: 400;
+  color: white;
+  text-align: center;
+  opacity: 0; /* Start with opacity 0 */
+  animation: fadeIn 1s ease-out forwards; /* Fade-in animation */
+  margin-bottom: 10px; /* Adjust margin for spacing */
+}
+
+/* Fade-in Effect for the Description */
+.reports-software-description {
+  color: white;
+  font-size: 25px;
+  width: 1000px;
+  font-weight: normal;
+  margin-top: 50px;
+  text-align: center;
+  opacity: 0; /* Start with opacity 0 */
+  animation: fadeIn 1.5s ease-out forwards; /* Fade-in animation with delay */
+  animation-delay: 0.5s; /* Staggered delay after title */
+  color: var(--primary-100);
+}
 
 
-  .main-content-container {
-    display: flex;
-    width: 100%;
-    padding: 20px;
-    box-sizing: border-box;
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px); /* Optional: Slight upward movement */
   }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
-  .main-content {
-    color: var(--primary-100);
-    background-color: rgb(10, 10, 10);
-    flex: 1;
-    display: flex;
-    box-sizing: border-box;
-    position: relative;
-    z-index: 1; 
-    min-width: 100vw;
-    justify-content: center;
-    align-items: flex-start;
-  }
-  
-  .title-search-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
-  }
-  
-  .add-remove-container { /* Adjusted container for buttons */
-    display: flex;
-    gap: 150px;
-    margin: 0 auto; margin-top: 10px; 
-  }
+.reports-centering-text-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
 
-  .reports-remove-text, .reports-upload-text{
-    margin-top: 1px; font-size: 12px; text-align: center;
-  }
+.reports-text-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+  justify-content: center;
+  align-items: center;
+}
 
-  .add-remove-option-box {
-    padding-left: 10px; padding-right: 10px; padding-top: 10px;
-    border-radius: 10px; text-align: center;
-    cursor: pointer; font-size: 30px; margin-bottom: 5px;
-  }
+.reports-software-title {
+  margin: 0 auto;
+  text-align: center;
+  margin-right: auto;
+  font-weight: 400;
+  font-size: 100px;
+  color: white;
+}
 
-  .add-remove-option-box:hover {
-    transform: scale(1.05);
-  }
-  
-  
-  .software-sections {
-    display: flex;
-    flex-direction: column;
-  }
+.reports-desc-more-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
-  .software-section {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    border-radius: 20px;
-  }
-  
-  .software-title {
-    text-align: center;
-    margin-right: auto;
-    font-weight: bold;
-    color: var(--neutral-100);
-  }
-  
-  
-  .software-description {
-    text-align: center; width: 700px; margin: auto;
-    font-size: 20px; font-weight: normal;
-    margin-top: -10px;
-    margin-bottom: 30px;
-    color: var(--neutral-200);
-  }
+.reports-software-description {
+  text-align: left;
+  width: 1000px;
+  font-size: 25px;
+  font-weight: normal;
+  margin-top: 50px;
+  color: var(--primary-100);
+}
 
-  .app-footer {
-    justify-content: center;
-    gap: 50px;
-  }
-  
-  
-  .options-container {
-    display: grid; gap: 20px;
-  }
-  
-  .option-box {
-    max-width: 300px;
-    background-color: var(--neutral-900);
-    color: var(--primary-100);
-    padding: 15px; padding-bottom: 0px;
-    border-radius: 10px;
-    transition: all 0.3s ease;
-    cursor: pointer;
+.reports-more-button {
+  animation: fadeIn 1.5s ease-out forwards; 
+  font-weight: normal;
+  background-color: white;
+  width: 150px;
+  padding: 10px 15px;
+  color: rgba(0, 0, 0, 0.9);
+  font-size: 18px;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: 30px;
+  opacity: 0;
+  animation: fadeIn 2s ease-out forwards; /* Fade-in animation for the button */
+  animation-delay: 1s;
+}
 
-  }
-  
-  .option-box:hover {
-    transform: scale(1.05);
-    background-color: var(--neutral-800);
-  }
-  
-  .option-box h2 {
-    margin-top: 0px;
-    width: auto;
-    font-weight: bold; font-size: 30px;
-    padding: 5px; border-radius: 20px;
-  }
-  
-  .option-box p {
-    margin-top: -15px; margin-left: 5px;
-    font-weight: normal;
-    font-size: 20px; color: var(--neutral-200);
-  }
-
-  
-
-  .file-actions-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-left: auto;
-    position: relative;
-  }
-
-  .file-top-container{
-    display: flex;
-    gap: 250px;
-  }
-  
-  .file-search-bar {
-    display: flex;
-    height: 50px;
-    align-items: center; margin-left: 10px; 
-  }
-
+<<<<<<< HEAD
   
 .file-list-title { /* New class for file list title */
   font-size: 20px; margin-left: -50px; font-weight: normal;
@@ -198,85 +172,229 @@
     margin-left: auto;
     border-radius: 5px;
     overflow-y: auto;
+=======
+.reports-more-button:hover {
+  background-color: #000;
+  color: white;
+  border: 0.1px solid white;
+>>>>>>> 8ae52f076011422123cf49dd51627d5ea3a51096
 }
 
-.scrollable-file-list { /* Updated scrollable file list */
-    background-color: transparent;
-    font-size: 20px;
-
+.reports-app-footer {
+  justify-content: center;
+  gap: 50px;
 }
 
-  
-.file-item { 
-  background-color: var(--neutral-900);
-  padding: 12px; font-weight: normal; user-select: none;
-  border-radius: 10px;
-  color: var(--neutral-300);
-  margin-bottom: 7px;
+.reports-options-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 100px;
+  margin-bottom: 300px;
+  gap: 50px;
+}
+
+.reports-option-box {
+  color: white;
+  background-color: #161616;
+  padding: 50px;
+  padding-bottom: 20px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.reports-option-box:hover {
+  background-color: #2f2f2f;
+}
+
+.reports-option-box h2 {
+  margin-top: 0px;
+  width: auto;
+  font-weight: bold;
+  font-size: 50px;
+  padding: 5px;
+  border-radius: 20px; margin-top: 10px; 
+}
+
+.reports-option-box p {
+  margin-top: -15px;
+  margin-left: 5px;
+  font-weight: 400;
+  font-size: 24px;
+  color: rgb(240, 240, 240);
+}
+
+.reports-database-title {
+  font-size: 60px;
+  font-weight: 400;
+  color: white;
+  display: flex;
+}
+
+.reports-database-description {
+  color: white;
+  font-size: 25px;
+}
+
+.reports-file-actions-container {
+  display: flex;
+  flex-direction: column;
+  width: 60vw;
+}
+
+.reports-file-top-container {
+  display: flex;
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+.reports-file-count {
+  font-size: 25px;
+  margin-top: 25px;
+  margin-left: 30px;
+}
+
+.reports-file-search-bar {
+  display: flex;
+  height: 50px;
+  align-items: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: auto;
+  margin-right: 10vw;
+}
+
+.reports-file-list-search-title {
+  color: white;
+  font-size: 22px;
+  margin-right: 20px;
+}
+
+.reports-file-list-title {
+  font-size: 20px;
+  font-weight: normal;
+  margin-left: auto;
+  color: white;
+}
+
+.reports-file-search-bar input {
+  padding: 10px;
+  color: black;
+  font-size: 16px;
+  border: none;
+  background-color: rgb(255, 255, 255);
+  width: 300px;
+  border-radius: 5px;
+  outline: none;
+}
+
+.reports-centering-file-list-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reports-file-list-container {
+  padding-right: 30px;
+  width: 50vw;
+  height: 50vh;
+  overflow-x: hidden;
+  overflow-y: scroll; /* Enable vertical scrolling */
+  scrollbar-width: thin; /* Thin scrollbar for Firefox */
+  scrollbar-color: white transparent; /* White thumb with transparent track */
+  scroll-behavior: smooth; /* Smooth scrolling */
+}
+
+.reports-file-list-container::-webkit-scrollbar {
+  width: 12px; /* Thicker scrollbar */
+}
+
+.reports-file-list-container::-webkit-scrollbar-track {
+  background: transparent; /* Transparent background for track */
+}
+
+.reports-file-list-container::-webkit-scrollbar-thumb {
+  background-color: white; /* White scrollbar thumb */
+  border-radius: 20px; /* Fully rounded scrollbar (more oval shape) */
+  border: 3px solid transparent; /* Space around the thumb to enhance the oval effect */
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.3); /* Subtle shadow for a modern look */
+}
+
+.reports-file-list-container::-webkit-scrollbar-button {
+  display: none; /* Remove the up/down arrows */
+}
+
+.reports-scrollable-file-list {
+  font-size: 20px;
+  overflow: hidden;
+}
+
+.reports-file-item {
+  padding: 15px;
+  font-weight: normal;
+  user-select: none;
+  background-color: #151414;
+  border: 1px solid #2a2928;
+  border-radius: 5px;
+  color: white;
+  margin-bottom: 15px;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-
-.file-item.selected { /* Styling for selected file item */
+.reports-file-item.reports-selected {
   background-color: var(--neutral-700); /* Selected color */
-  transform: scale(1.03); /* Slightly enlarge the selected box */
 }
 
-.file-item:hover {
+.reports-file-item:hover {
   background-color: var(--neutral-800); /* Hover color */
 }
 
-  
-
-  .reports-mini-container{
-    display: flex;
-    align-items: center;
-    margin-top: -30px; margin-left: -20px;
-  }
-  
-
-  .option-logo {
-    width: 70px; /* Adjust the size as needed */
-    height: auto;
-    display: block;
-    margin-right: auto;
-    filter: invert(100%);
-
-  }
-  
-
-  .overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.2); /* Lightly dimmed background */
-    backdrop-filter: blur(10px); /* Blur effect */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-    visibility: hidden;
-    opacity: 0;
-    transition: visibility 0s, opacity 0.3s ease-in-out;
-  }
-  
-  .overlay.visible {
-    visibility: visible;
-    opacity: 1;
-  }
-  
-  .loading-message {
-    font-size: 24px;
-    font-weight: bold;
-    color: white;
-  }
-  
-
-.reports-file-remove-button, .reports-file-upload-button{
-  width: 40px; color: white; filter: invert(1);
+.reports-mini-container {
+  display: flex;
+  margin-top: 300px;
+  justify-content: center;
 }
 
+.reports-option-logo {
+  width: 70px;
+  height: auto;
+  display: block;
+  margin-right: auto;
+  filter: invert(100%);
+}
 
+.reports-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.3s ease-in-out;
+}
+
+.reports-overlay.reports-visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.reports-loading-message {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+.reports-file-remove-button, .reports-file-upload-button {
+  width: 40px;
+  color: white;
+  filter: invert(1);
+}

@@ -7,7 +7,7 @@ const softwareOptions = [
   { 
     title: 'Query', 
     description: 
-      'Use the AI model to ask questions about reports in the private database. Customize your search by selecting up to 10 specific files to ask the chatbot, ensuring you get the most relevant answers. Perfect for deep dives into specific project details or general inquiries.', 
+      'Interactively search and select files from the private database to tailor your AI model queries. Choose whether to use the smart file selector for precise results or let the AI analyze all available data, ensuring you receive the most relevant answers.', 
     path: '/reports/relevancy', 
     logo: '/query.png' 
   },
@@ -20,17 +20,11 @@ const softwareOptions = [
   },
 ];
 
-const bottomOptions = [
-  { title: 'Add Files', icon: 'fas fa-upload', path: '/reports/add-files' },
-  { title: 'Remove Files', icon: 'fas fa-trash-alt', path: '/reports/remove-files' },
-];
-
 const Options = ({ isMainPage }) => {
   const { apiUrl } = getConfig();
   const navigate = useNavigate();
   const [searchQuery, setSearchQuery] = useState('');
-  const [filteredSoftwareOptions, setFilteredSoftwareOptions] = useState(softwareOptions);
-  const [filteredBottomOptions, setFilteredBottomOptions] = useState(bottomOptions);
+  const [filteredSoftwareOptions] = useState(softwareOptions);
   const [files, setFiles] = useState([]);
   const [totalFiles, setTotalFiles] = useState(0);
   const [selectedFiles, setSelectedFiles] = useState([]);
@@ -100,6 +94,17 @@ const Options = ({ isMainPage }) => {
     }
   };
 
+  const handleDoubleClick = (filename) => {
+    // Send the filename to the Flask backend
+    axios.post(`${apiUrl}/reports/open-file`, { filename })
+      .then(response => {
+        console.log('File sent to backend:', filename);
+      })
+      .catch(error => {
+        console.error('Error sending file to backend:', error);
+      });
+  };
+
   const handleDeleteFiles = () => {
     axios.post(`${apiUrl}/reports/remove-files`, { filenames: selectedFiles })
       .then(response => {
@@ -148,71 +153,64 @@ const Options = ({ isMainPage }) => {
 
   return (
     <div className="reports-container" onMouseUp={handleMouseUp}>
-      <div className={`overlay ${uploading ? 'visible' : ''}`}>
-        <div className="loading-message">Uploading files, please wait...</div>
+      <div className={`reports-overlay ${uploading ? 'reports-visible' : ''}`}>
+        <div className="reports-loading-message">Uploading files, please wait...</div>
       </div>
-      <div className="inner-borders">
+     
         {isMainPage && (
-          <div className="software-sections">
-            <div className='report-text-container'>
-              <h1 className="software-title">Project Reports</h1>
-              <p className='software-description'>Please note that this software is currently under development. Some features may be incomplete or not functioning at their full capacity at this time.</p>
-            </div>
-            <div className='reports-mini-container'>
-              <div className="software-section">
-                <div className="options-container">
-                  {filteredSoftwareOptions.map((option, index) => (
-                    <div
-                      key={index}
-                      className="option-box"
-                      onClick={() => navigate(option.path)}
-                    >
-                      <img src={option.logo} alt={`${option.title} logo`} className="option-logo" />
-                      <h2>{option.title}</h2>
-                      <p>{option.description}</p>
-                    </div>
-                  ))}
+          <div className="reports-software-sections">
+            <div className='reports-centering-text-container'>
+              <div className='reports-text-container'>
+                <h1 className="reports-software-title">REPORTS</h1>
+                <div className='reports-desc-more-container'>
+                  <p className='reports-software-description'>Please note that this software is currently under development. Some features may be incomplete or not functioning at their full capacity at this time.</p>
+                  <button className='reports-more-button'>Learn more</button>
                 </div>
               </div>
-
-              <div className="file-actions-container">
-                <div className='file-top-container'>
-                  <div className="file-search-bar">
-                    <input
-                      type="text"
-                      placeholder="Search files..."
-                      value={searchQuery}
-                      onChange={(e) => setSearchQuery(e.target.value)}
-                    />
+            </div>
+            <div className='reports-mini-container'>
+              <div className="reports-file-actions-container">
+                <div className='reports-database-title'>Database<div className='reports-file-count'>{totalFiles} Files</div></div>
+                <p className='reports-database-description'>Add and remove files from an external private database</p>
+  
+                <div className='reports-centering-file-list-container'>
+                  <div className="reports-file-search-bar">
+                      <p className='reports-file-list-search-title'>Find:</p>
+                      <input
+                        type="text"
+                        placeholder="Enter filename..."
+                        value={searchQuery}
+                        onChange={(e) => setSearchQuery(e.target.value)}
+                      />
+                    </div>
+                  <div className="reports-file-list-container">
+                    <div className="reports-scrollable-file-list">
+                      {filteredFiles.map((file, index) => (
+                        <div
+                          key={index}
+                          className={`reports-file-item ${isSelected(file.filename) ? 'reports-selected' : ''}`}
+                          onMouseDown={() => handleMouseDown(index)}
+                          onMouseEnter={() => handleMouseEnter(index)}
+                          onDoubleClick={() => handleDoubleClick(file.filename)}
+                        >
+                          {file.filename}
+                        </div>
+                      ))}
+                    </div>
                   </div>
-                  <h2 className="file-list-title">File Count: {totalFiles}</h2>
                 </div>
-                <div className="file-list-container">
-                  <div className="scrollable-file-list">
-                    {filteredFiles.map((file, index) => (
-                      <div
-                        key={index}
-                        className={`file-item ${isSelected(file.filename) ? 'selected' : ''}`}
-                        onMouseDown={() => handleMouseDown(index)}
-                        onMouseEnter={() => handleMouseEnter(index)}
-                      >
-                        {file.filename}
-                      </div>
-                    ))}
-                  </div>
-                </div>
-
-                <div className="add-remove-container">
+                
+                <div className="reports-add-remove-container">
                   <div
-                    className="add-remove-option-box"
+                    className="reports-add-remove-option-box"
                     onClick={handleDeleteFiles}
                     disabled={selectedFiles.length === 0}
                   >
-                    <i className="fas fa-trash-alt"></i> {/* Font Awesome Trash Icon */}
+                    <i className="fas fa-trash-alt"></i>
                     <p className='reports-remove-text'>Remove</p>
                   </div>
-                  <label className="add-remove-option-box">
-                    <i className="fas fa-upload"></i> {/* Font Awesome Upload Icon */}
+                  <label className="reports-add-remove-option-box">
+                    <i className="fas fa-upload"></i>
                     <p className='reports-upload-text'>Upload</p>
                     <input
                       type="file"
@@ -224,12 +222,29 @@ const Options = ({ isMainPage }) => {
                   </label>
                 </div>
 
+              <div className="reports-software-section">
+                <div className='reports-software-section-title'>Features</div>
+                <p className='reports-software-section-description'>Features designed to enhance your productivity and streamline your workflow.</p>
+                <div className="reports-options-container">
+                  {filteredSoftwareOptions.map((option, index) => (
+                    <div
+                      key={index}
+                      className="reports-option-box"
+                      onClick={() => navigate(option.path)}
+                    >
+                      <img src={option.logo} alt={`${option.title} logo`} className="reports-option-logo" />
+                      <h2>{option.title}</h2>
+                      <p>{option.description}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
               </div>
             </div>
           </div>
         )}
       </div>
-    </div>
   );
 };
 

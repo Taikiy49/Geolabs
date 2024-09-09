@@ -1,38 +1,41 @@
-import spacy
+from PyPDF2 import PdfReader
+import re
 
-# Load spaCy's language model
-nlp = spacy.load("en_core_web_sm")
+months = ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december']
 
-# Function to generate all forms of a word
-def generate_all_forms(word):
-    forms = set()
-    
-    # Process the word with spaCy
-    doc = nlp(word)
-    
-    # Original word
-    forms.add(word)
-    
-    # Lemmatized word
-    lemma = doc[0].lemma_
-    forms.add(lemma)
-    
-    # Singular/Plural forms
-    if word.endswith('s') and not word.endswith('ss'):
-        singular = lemma if lemma.endswith('y') else word[:-1]
-        forms.add(singular)
-    else:
-        plural = lemma + 's'
-        forms.add(plural)
-    
-    return forms
+# Define a regex pattern to match common date formats
+date_pattern = re.compile(r'(\b(?:' + '|'.join(months) + r')\b[\s\.,]*\d{1,2}[\s\.,]*\d{2,4})|(\d{1,2}[\s\.,]*(?:' + '|'.join(months) + r')\b[\s\.,]*\d{2,4})', re.IGNORECASE)
 
-# Example list of keywords
-keywords_list = ["capacities", "running", "jumps", "fairly"]
+def read_dates_from_first_page(file_path):
+    """Reads dates from the first page of a PDF."""
+    try:
+        # Initialize PDF reader
+        reader = PdfReader(file_path)
 
-# Generate all forms for each keyword
-all_keywords = set()
-for keyword in keywords_list:
-    all_keywords.update(generate_all_forms(keyword))
+        # Read the first page
+        first_page = reader.pages[0]
+        text = first_page.extract_text()
 
-print(all_keywords)
+        # Find dates using regex if text is found
+        if text:
+            # Use regex to find all date matches
+            matches = date_pattern.findall(text)
+            # Flatten the list of matches
+            matched_dates = [match for group in matches for match in group if match]
+
+            if matched_dates:
+                print("Dates found on the first page:")
+                return matched_dates
+            else:
+                print("No dates found on the first page.")
+                return []
+        else:
+            print("No readable text found on the first page.")
+            return []
+    except Exception as e:
+        print(f"Error reading the PDF: {e}")
+        return []
+
+# Example Usage
+file_path = "6309-00.tk1.PJR.KamokilaBoulevardReconstruction-ocr.pdf"
+print(read_dates_from_first_page(file_path))

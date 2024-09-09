@@ -1,95 +1,208 @@
-from flask import Flask, jsonify, request, session
+from flask import Flask, jsonify, request, session, send_from_directory
 from flask_cors import CORS
 from flask_login import LoginManager, UserMixin, login_user, login_required, logout_user
 from werkzeug.security import generate_password_hash, check_password_hash
 import sqlite3
 import secrets
-from model_building import Model
-from model_functions import ParseFile
+from model import Model
+from parse_files import ParseFile
 from flask_session import Session
 from concurrent.futures import ThreadPoolExecutor
-import spacy
-from spacy.matcher import Matcher
 from datetime import timedelta, datetime
 import functools
 from werkzeug.utils import secure_filename
 from terms import oahu_cities, civil_engineering_terms
-
+import os
+import webbrowser
+import re
 
 # Initialize Flask app and configure session
-app = Flask(__name__)
+app = Flask(__name__, static_folder='build', static_url_path='')  # Serve the React build files correctly
 app.config['SECRET_KEY'] = secrets.token_hex(24)
 app.config['SESSION_TYPE'] = 'filesystem'
 app.config['PERMANENT_SESSION_LIFETIME'] = timedelta(minutes=5)
 Session(app)
 
-CORS(app, resources={r"/*": {"origins": ["https://geolabs.vercel.app", "http://localhost:3000"]}})
+CORS(app, resources={r"/*": {"origins": "*"}}) 
 login_manager = LoginManager(app)
 login_manager.login_view = 'login'
 
-# Initialize Spacy
-nlp = spacy.load('en_core_web_sm')
+@app.route('/', defaults={'path': ''})
+@app.route('/<path:path>')
+def serve_react_app(path):
+    if path and os.path.exists(os.path.join(app.static_folder, path)):
+        return send_from_directory(app.static_folder, path)
+    return send_from_directory(app.static_folder, 'index.html')
+
+# Function to extract dates from text content
+def extract_date(text):
+    date_patterns = [
+        r'(\d{1,2}[-/]\d{1,2}[-/]\d{2,4})',  
+        r'([A-Za-z]+\s+\d{1,2},\s*\d{4})',    
+        r'([A-Za-z]+\s+\d{1,2}[\s,\']+\d{4})' 
+    ]
+    for pattern in date_patterns:
+        match = re.search(pattern, text)
+        if match:
+            date_str = match.group(0)
+            try:
+                if re.match(r'\d{1,2}[-/]\d{1,2}[-/]\d{2,4}', date_str):
+                    date_obj = datetime.strptime(date_str, '%m/%d/%Y')
+                else:
+                    date_obj = datetime.strptime(date_str, '%B %d, %Y')
+                return date_obj.strftime('%m-%d-%Y')
+            except ValueError:
+                continue
+    return 'Unknown'
 
 # SQLite Database Initialization
 def init_sqlite_db():
-    conn = sqlite3.connect('data.db')
-    cursor = conn.cursor()
-    cursor.execute('''
-        CREATE TABLE IF NOT EXISTS users (
-            id INTEGER PRIMARY KEY AUTOINCREMENT,
-            email TEXT UNIQUE NOT NULL,
-            password TEXT NOT NULL
-        )
-    ''')
-    cursor.execute('''
-        CREATE TABLE IF NOT EXISTS documents (
-            id INTEGER PRIMARY KEY AUTOINCREMENT,
-            filename TEXT,
-            content TEXT,
-            last_updated TIMESTAMP
-        )
-    ''')
-    conn.commit()
-    conn.close()
+    try:
+        conn = sqlite3.connect('data.db')
+        cursor = conn.cursor()
+        print("Creating tables...")
+
+        cursor.execute('''
+            CREATE TABLE IF NOT EXISTS users (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                email TEXT UNIQUE NOT NULL,
+                password TEXT NOT NULL
+            )
+        ''')
+
+        cursor.execute('''
+            CREATE TABLE IF NOT EXISTS documents (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                filename TEXT UNIQUE,
+                content TEXT,
+                date TEXT
+            )
+        ''')
+
+        conn.commit()
+        conn.close()
+        print("Tables created successfully!")
+    except sqlite3.Error as e:
+        print(f"An error occurred: {e}")
 
 init_sqlite_db()
 
-# Save file content to SQLite
 def save_to_db(filename, content):
+    submission_date = extract_date(content)
     conn = sqlite3.connect('data.db')
     cursor = conn.cursor()
+    
+    cursor.execute('SELECT id FROM documents WHERE filename = ?', (filename,))
+    if cursor.fetchone() is not None:
+        print(f"{filename} has already been processed. Skipping...")
+        conn.close()
+        return
+
     cursor.execute('''
-        INSERT INTO documents (filename, content, last_updated)
+        INSERT INTO documents (filename, content, date)
         VALUES (?, ?, ?)
-    ''', (filename, content, datetime.utcnow()))
+    ''', (filename, content, submission_date))
     conn.commit()
     conn.close()
+    print(f"Saved: {filename} with date {submission_date} to the database.")
+
+def process_all_files_in_folder(folder_path):
+    for filename in os.listdir(folder_path):
+        if filename.endswith('.txt'):
+            file_path = os.path.join(folder_path, filename)
+            try:
+                with open(file_path, 'r', encoding='utf-8', errors='ignore') as file:
+                    content = file.read()
+                save_to_db(filename, content)
+            except Exception as e:
+                print(f"Error processing file {file_path}: {e}")
+
+desktop_path = os.path.join(os.path.expanduser('~'), 'Desktop')
+ocr_reports_folder = os.path.join(desktop_path, 'OCR_REPORTS')
+
+# MAKE THIS LIKE A REFRESH BUTTON LATER COMMENTING OUT FOR NOW CUZ NO NEED
+# process_all_files_in_folder(ocr_reports_folder)
+
+def extract_and_rank_keywords(prompt):
+    """
+    Extracts and ranks keywords from the prompt based on a simple heuristic:
+    Matching city names or engineering terms or words longer than 2 letters.
+    """
+    words = re.findall(r'\b\w+\b', prompt)
+    keywords = [word for word in words if word.lower() in oahu_cities or word.lower() in civil_engineering_terms or len(word) > 2]
+    return keywords
+
+def extract_keywords_with_logic(prompt):
+    """
+    Extracts keywords from the prompt and handles logical operators like AND/OR.
+    """
+    parts = re.split(r'\s+(and|or)\s+', prompt, flags=re.IGNORECASE)
+    keywords_with_logic = []
+    
+    for part in parts:
+        if part.strip().lower() in {"and", "or"}:
+            keywords_with_logic.append(part.strip().upper())
+        else:
+            keywords = extract_and_rank_keywords(part)
+            keywords_with_logic.extend(keywords)
+    
+    return keywords_with_logic
+
+def match_exact_word(phrase, content):
+    pattern = r'\b' + re.escape(phrase) + r'\b'
+    return re.search(pattern, content, re.IGNORECASE) is not None
 
 def get_filtered_documents(keywords_list):
     conn = sqlite3.connect('data.db')
     cursor = conn.cursor()
 
-    high_priority_keyword = f'%{keywords_list[0]}%'  # High-priority keyword
-    other_keywords = keywords_list[1:]  # Other keywords
-    
-    query = "SELECT filename, content FROM documents WHERE content LIKE ?"
-    if other_keywords:
-        query += " OR " + " OR ".join(["content LIKE ?" for _ in other_keywords])
-    
-    params = [high_priority_keyword] + [f'%{keyword}%' for keyword in other_keywords]
-
-    query += " ORDER BY CASE WHEN content LIKE ? THEN 1 ELSE 2 END, "
-    query += " + ".join([f"(content LIKE ?)" for _ in keywords_list]) + " DESC"
-    
-    params += [high_priority_keyword] + [f'%{keyword}%' for keyword in keywords_list]
-
-    cursor.execute(query, params)
+    query = "SELECT filename, content FROM documents"
+    cursor.execute(query)
     documents = [{"filename": row[0], "content": row[1]} for row in cursor.fetchall()]
     conn.close()
 
+    filtered_documents = []
+    for doc in documents:
+        content = doc["content"]
+        if any(match_exact_word(keyword, content) for keyword in keywords_list):
+            filtered_documents.append(doc)
+
+    return filtered_documents
+
+def get_filtered_documents_with_logic(keywords_with_logic):
+    conn = sqlite3.connect('data.db')
+    cursor = conn.cursor()
+
+    query = "SELECT filename, content FROM documents WHERE "
+    query_parts = []
+    params = []
+
+    if keywords_with_logic and (keywords_with_logic[0] in {"AND", "OR"}):
+        keywords_with_logic = keywords_with_logic[1:]
+    if keywords_with_logic and (keywords_with_logic[-1] in {"AND", "OR"}):
+        keywords_with_logic = keywords_with_logic[:-1]
+
+    for keyword in keywords_with_logic:
+        if keyword == "AND":
+            query_parts.append("AND")
+        elif keyword == "OR":
+            query_parts.append("OR")
+        else:
+            query_parts.append("content LIKE ?")
+            params.append(f'%{keyword}%')
+
+    final_query = query + ' '.join(query_parts)
+    print(f"Executing query: {final_query} with params {params}")
+
+    if "content LIKE ?" in final_query:
+        cursor.execute(final_query, params)
+        documents = [{"filename": row[0], "content": row[1]} for row in cursor.fetchall()]
+    else:
+        documents = []
+
+    conn.close()
     return documents
 
-# Flask-Login User class and loader
 class User(UserMixin):
     def __init__(self, user_id, email):
         self.id = user_id
@@ -106,82 +219,37 @@ def load_user(user_id):
         return User(user[0], user[1])
     return None
 
-# Define a simple cache using functools.lru_cache for summarization
 @functools.lru_cache(maxsize=100)
 def get_summary_from_model(work_order_number, combined_content):
-    model = Model()
+    model = Model('reports')
     chat_session = model.create_chat_session([])
     summary = model.generate_summary(chat_session, combined_content)
     return summary.text
 
-def extract_and_rank_keywords(prompt):
-    doc = nlp(prompt)
-    matcher = Matcher(nlp.vocab)
-    
-    patterns = [
-        [{"POS": "PROPN"}], 
-        [{"IS_DIGIT": True}, {"IS_PUNCT": True}, {"IS_DIGIT": True}],  # Work order pattern like "7860-00"
-        [{"POS": "ADJ"}, {"POS": "NOUN"}],    # Adjective + Noun (e.g., "boring holes")
-        [{"POS": "NOUN"}, {"POS": "NOUN"}],   # Noun + Noun (e.g., "project details")
-        [{"POS": "NOUN"}]                     # Single Noun (e.g., "holes")
-    ]
-    
-    matcher.add("KEY_PHRASES", patterns)
-    matches = matcher(doc)
-    
-    relevant_phrases = []
-    for match_id, start, end in matches:
-        span = doc[start:end]
-        relevant_phrases.append(span.text)
-    
-    # Rank phrases based on custom heuristics
-    def rank_phrase(phrase):
-        # Prioritize known location names
-        if any(char.isdigit() for char in phrase) and '-' in phrase:
-            return (5, phrase)  # High priority for work orders
-        elif phrase in oahu_cities:
-            return (4, phrase)  # Highest priority for locations
-        elif phrase in civil_engineering_terms:
-            return (3, phrase)
-        elif len(phrase.split()) > 1:
-            return (2, phrase)  # Medium priority for multi-word phrases
-        else:
-            return (1, phrase)  # Lowest priority for single words
-
-    ranked_phrases = sorted(relevant_phrases, key=rank_phrase, reverse=True)
-    return ranked_phrases
-
 def generate_all_forms(word):
     forms = set()
-    doc = nlp(word)
     forms.add(word)
-    lemma = doc[0].lemma_
-    forms.add(lemma)
 
     if word.endswith('s') and not word.endswith('ss'):
-        singular = lemma if lemma.endswith('y') else word[:-1]
+        singular = word[:-1]
         forms.add(singular)
     else:
-        plural = lemma + 's'
+        plural = word + 's'
         forms.add(plural)
-    
+
     return forms
 
-
+# Define routes
 @app.route('/reports/search-database', methods=['POST'])
 def send_input():
-    model = Model()
+    model = Model('reports')
     data = request.get_json()
     prompt = data.get('prompt')
-
-    # Process new query
     keywords_list = extract_and_rank_keywords(prompt)
-
     filtered_documents = get_filtered_documents(keywords_list)
     history = model.create_chat_history(filtered_documents)
     chat_session = model.create_chat_session(history)
     response = model.generate_response(chat_session, prompt).text
-
     return jsonify({"response": response})
 
 @app.route('/reports/add-files', methods=['POST'])
@@ -198,9 +266,7 @@ def upload_file():
         if filename not in processed_files:
             sentences = ParseFile(file).generate_sentence_list()
             save_to_db(filename, sentences)
-            print('--------------------')
-            print(filename + ' has been saved')
-            print('--------------------')
+            print(f'{filename} has been saved')
         else:
             print(f"File {filename} has already been processed.")
 
@@ -229,20 +295,14 @@ def remove_files():
     print(f"{len(filenames)} files were removed.")
     return jsonify({"message": f"{len(filenames)} files removed successfully"}), 200
 
-
 @app.route('/reports/search-filenames', methods=['POST'])
 def search_filenames():
     data = request.get_json()
     prompt = data.get('prompt')
-    keywords_list = extract_and_rank_keywords(prompt)
-    all_keywords = set()
-    for keyword in keywords_list:
-        all_keywords.update(generate_all_forms(keyword))
-    print(all_keywords) 
-    filtered_documents = get_filtered_documents(list(all_keywords))
+    keywords_with_logic = extract_keywords_with_logic(prompt)
+    filtered_documents = get_filtered_documents_with_logic(keywords_with_logic)
     filenames = [doc["filename"] for doc in filtered_documents]
     return jsonify({"filenames": filenames})
-
 
 @app.route('/reports/get-quick-view', methods=['POST'])
 def get_quick_view():
@@ -253,19 +313,20 @@ def get_quick_view():
     cursor.execute('SELECT content FROM documents WHERE filename = ?', (filename,))
     file_entry = cursor.fetchone()
     conn.close()
-    
+
     if file_entry:
         content = file_entry[0]
         prompt = request.json.get('prompt', '')
         keywords = extract_and_rank_keywords(prompt)
-
         relevant_sentences = []
         sentences = content.split('.')
         i = 0
         for keyword in keywords:
-            if i > 3: break
+            if i > 3:
+                break
             for sentence in sentences:
-                if i > 3: break
+                if i > 3:
+                    break
                 if keyword.lower() in sentence.lower():
                     relevant_sentences.append(sentence)
                     i += 1
@@ -274,8 +335,6 @@ def get_quick_view():
         return jsonify({"content": quick_view_content}), 200
     else:
         return jsonify({"message": "File not found"}), 404
-    
-
 
 @app.route('/register', methods=['POST'])
 def register():
@@ -321,32 +380,22 @@ def logout():
     logout_user()
     return jsonify({"message": "Logged out successfully"}), 200
 
-
 @app.route('/reports/search-work-order', methods=['POST'])
 def search_work_order():
     data = request.get_json()
-    work_order_number = data.get('workOrderNumber')  # Ensure this matches the key in React
-    print(f"Received work order number: {work_order_number}")
-
+    work_order_number = data.get('workOrderNumber')
     if not work_order_number:
         return jsonify({"summary": "Work order number is required."}), 400
 
     conn = sqlite3.connect('data.db')
     cursor = conn.cursor()
-
-    # Query to find filenames that match the work order number
-    query = "SELECT filename, content FROM documents WHERE filename LIKE ?"
-    cursor.execute(query, (f'%{work_order_number}%',))
+    cursor.execute("SELECT filename, content FROM documents WHERE filename LIKE ?", (f'%{work_order_number}%',))
     filtered_documents = [{"filename": row[0], "content": row[1]} for row in cursor.fetchall()]
     conn.close()
 
     if filtered_documents:
-        # Combine the content of all matched documents
         combined_content = " ".join([doc["content"] for doc in filtered_documents])
-
-        # Check the cache first before generating a new summary
         summary = get_summary_from_model(work_order_number, combined_content)
-
         return jsonify({"summary": summary, "filenames": [doc["filename"] for doc in filtered_documents]})
     else:
         return jsonify({"summary": "No relevant documents found for this work order number."}), 404
@@ -361,13 +410,11 @@ def chatbot_request():
     if not use_file_selector:
         keywords_list = extract_and_rank_keywords(prompt)
         documents = get_filtered_documents(keywords_list)
-        filenames = [doc["filename"] for doc in documents[:5]]  # Get top 5 files
-        print(filenames)
+        filenames = [doc["filename"] for doc in documents[:5]]
 
     if not filenames:
         return jsonify({"response": "No files selected or found."}), 400
 
-    # Retrieve the content of the selected files
     conn = sqlite3.connect('data.db')
     cursor = conn.cursor()
     cursor.execute(
@@ -377,19 +424,14 @@ def chatbot_request():
     documents = cursor.fetchall()
     conn.close()
 
-    # Build chat history
-    model = Model()
-    history = model.create_chat_history([
-        {"filename": doc[0], "content": doc[1]} for doc in documents
-    ])
-
-    # Create a chat session and generate a response
+    model = Model('reports')
+    history = model.create_chat_history([{"filename": doc[0], "content": doc[1]} for doc in documents])
     chat_session = model.create_chat_session(history)
     response = model.generate_response(chat_session, prompt).text
 
     return jsonify({"response": response})
 
-"""----- EMPLOYEE SECTION HERE -----"""
+# Employee Section
 def init_employee_db():
     conn = sqlite3.connect('employee.db')
     cursor = conn.cursor()
@@ -406,7 +448,6 @@ def init_employee_db():
 
 init_employee_db()
 
-# Route to handle file upload for employees
 @app.route('/employee-guide/upload-files', methods=['POST'])
 def upload_employee_files():
     files = request.files.getlist('files')
@@ -418,11 +459,7 @@ def upload_employee_files():
 
     for file in files:
         filename = secure_filename(file.filename)
-        
-        # Convert the PDF to text directly
-        parsed_text = ParseFile(file).generate_sentence_list()  # Assuming this returns a list of sentences
-        
-        # Store the content in the database
+        parsed_text = ParseFile(file).generate_sentence_list()
         cursor.execute('''
             INSERT INTO documents (filename, content)
             VALUES (?, ?)
@@ -433,41 +470,48 @@ def upload_employee_files():
 
     return jsonify({"message": "Files uploaded and processed successfully"}), 200
 
+persistent_chat_session = None
+
 @app.route('/employee-guide/handbook-query', methods=['POST'])
 def query_handbook():
-    model = Model()
+    global persistent_chat_session
+
+    model = Model('handbook')
     data = request.get_json()
     handbook_prompt = data.get('handbookPrompt')
 
     if not handbook_prompt:
         return jsonify({"response": "Query is required."}), 400
 
-    # Fetch documents from the employee database to print in the terminal
-    conn = sqlite3.connect('employee.db')
-    cursor = conn.cursor()
-    cursor.execute('SELECT filename, content FROM documents')
-    documents = cursor.fetchall()
-    conn.close()
+    if persistent_chat_session is None:
+        conn = sqlite3.connect('employee.db')
+        cursor = conn.cursor()
+        cursor.execute('SELECT filename, content FROM documents')
+        documents = cursor.fetchall()
+        conn.close()
+        history = [{"role": "user", "parts": [document[1]]} for document in documents]
+        persistent_chat_session = model.create_chat_session(history)
+    else:
+        persistent_chat_session.history.append({"role": "user", "parts": [handbook_prompt]})
 
-    # Print filenames and content in the terminal
-    for document in documents:
-        print(f"Filename: {document[0]}")
-        print(f"Content: {document[1]}\n")
-
-    # Correctly format the history for the chat session
-    history = [{"role": "user", "parts": [document[1]]} for document in documents]
-
-    # Add the user prompt as part of the history
-    history.append({"role": "user", "parts": [handbook_prompt]})
-
-    chat_session = model.create_chat_session(history)
-    response = model.generate_response(chat_session, handbook_prompt).text
+    response = model.generate_response(persistent_chat_session, handbook_prompt).text
 
     return jsonify({"response": response})
 
-
-
-
+@app.route('/reports/open-file', methods=['POST'])
+def open_file():
+    try:
+        data = request.get_json()
+        filename = data.get('filename')
+        print(f"Received filename: {filename}")
+        network_path = r"\\geolabs.lan\fs\UserShare"
+        open_series_directories(network_path, filename)
+        return jsonify({'message': 'Filename processed successfully'}), 200
+    except Exception as e:
+        print(f"Error receiving filename: {e}")
+        return jsonify({'error': str(e)}), 500
 
 if __name__ == '__main__':
+    webbrowser.open("http://localhost:8000")
     app.run(host='0.0.0.0', port=8000)
+    
