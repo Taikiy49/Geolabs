@@ -1,0 +1,122 @@
+.main-app-container {
+    width: 100vw;
+}
+
+.main-main-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main-options-container {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+
+/* Introduction Container Styles */
+.main-software-intro-container {
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+}
+
+.main-software-intro-text-container {
+    margin-bottom: 30vh;
+}
+
+.main-software-title {
+    font-weight: 400;
+    font-size: 100px;
+    color: white;
+    opacity: 0; /* Start with opacity 0 for fade-in effect */
+    animation: fadeIn 1.5s ease-out forwards; /* Apply fade-in animation */
+}
+
+.main-software-description {
+    font-size: 25px;
+    color: white;
+    max-width: 1200px;
+    margin: 0 auto;
+    opacity: 0; /* Start with opacity 0 for fade-in effect */
+    animation: fadeIn 2s ease-out forwards; /* Apply fade-in animation */
+    animation-delay: 1s; /* Delay the description animation for a staggered effect */
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px); /* Optional: Slight upward movement */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.main-options {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.main-button-style {
+    padding: 20px;
+    cursor: pointer;
+    color: white;
+    background-color: #161616;
+    font-size: 40px;
+    border-radius: 5px;
+    width: 20vw;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.main-button-style:hover {
+    background-color: #2f2f2f;
+}
+
+.main-button-description-style {
+    font-size: 20px;
+    color: rgb(240, 240, 240);
+    margin-top: 10px;
+}
+
+.main-reports-img {
+    width: 40vw; 
+}
+
+.main-employee-guide-img {
+    width: 30vw;
+}
+
+.main-reports-container,
+.main-employee-guide-container,
+.main-admin-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+    margin-bottom: 200px;
+}
+
+.main-employee-guide-container,
+.main-reports-container {
+    justify-content: center;
+}
+
+.main-admin-container {
+    justify-content: flex-end;
+}

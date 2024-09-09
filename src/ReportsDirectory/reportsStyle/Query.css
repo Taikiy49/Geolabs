@@ -272,7 +272,7 @@
 }
 
 .relevancy-submitted-query p {
-    font-size: 22px; font-weight: 400;
+    font-size: 22px; font-weight: 400; width: 850px;
     color: var(--primary-100);
 }
 
@@ -317,7 +317,7 @@
   
   /* Prompt text styling */
   .relevancy-prompt-text {
-    font-size: 35px;
+    font-size: 25px;
     font-weight: 400;
     color: white;
     margin-bottom: 50px;

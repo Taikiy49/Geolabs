@@ -7,7 +7,7 @@ const softwareOptions = [
   { 
     title: 'Query', 
     description: 
-      'Use the AI model to ask questions about reports in the private database. Customize your search by selecting up to 10 specific files to ask the chatbot, ensuring you get the most relevant answers. Perfect for deep dives into specific project details or general inquiries.', 
+      'Interactively search and select files from the private database to tailor your AI model queries. Choose whether to use the smart file selector for precise results or let the AI analyze all available data, ensuring you receive the most relevant answers.', 
     path: '/reports/relevancy', 
     logo: '/query.png' 
   },
