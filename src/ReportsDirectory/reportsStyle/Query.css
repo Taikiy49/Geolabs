@@ -59,16 +59,11 @@
     border: none;
     color: black;
     background-color: white;
-<<<<<<< HEAD
-    width: 200px; height: 18px; margin-left: 10px;
-    margin-bottom: 20px; outline: none; margin-top: 20px;
-=======
     width: 400px;
     height: 15px;
     margin-bottom: 20px;
     outline: none;
     margin-top: 10px; margin-right: 100px;
->>>>>>> 8ae52f076011422123cf49dd51627d5ea3a51096
 }
 
 .relevancy-controls {
@@ -244,13 +239,6 @@
 
 /* Chatbot section input and button */
 .relevancy-chatbot-input {
-<<<<<<< HEAD
-    width: 500px; height: 18px; outline: none;
-    padding: 10px; border: none; 
-    border-radius: 10px;
-    background-color: white;
-    color: black; 
-=======
     width: 650px;
     height: 15px;
     outline: none;
@@ -259,7 +247,6 @@
     border-radius: 5px;
     background-color: white;
     color: black;
->>>>>>> 8ae52f076011422123cf49dd51627d5ea3a51096
     font-size: 16px;
     margin: 20px 0;
     transition: background-color 0.3s ease, color 0.3s ease;
