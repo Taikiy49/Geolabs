@@ -96,6 +96,7 @@ def rank_documents_by_bm25(query, documents):
     return sorted(document_scores, key=lambda x: x['score'], reverse=True)
 
 
+
 def init_sqlite_db():
     try:
         conn = sqlite3.connect('data.db')
@@ -198,6 +199,7 @@ def get_filtered_documents(keywords_list):
     # Rank documents using BM25 after filtering
     ranked_documents = rank_documents_by_bm25(' '.join(keywords_list), documents)
     return ranked_documents
+
 
 
 
@@ -342,6 +344,7 @@ def search_filenames():
     filenames = [doc['filename'] for doc in ranked_documents]
 
     return jsonify({"filenames": filenames})
+
 
 
 

@@ -222,9 +222,6 @@ const Query = () => {
                 />
               )}
 
-            
-
-
               <div className="relevancy-file-count-text">
                 {selectedFiles.length} files selected
               </div>
