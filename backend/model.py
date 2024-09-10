@@ -70,8 +70,15 @@ class Model:
             history.append({"role": "model", "parts": [doc['content']]})
         return history
 
-    def generate_response(self, chat_session, prompt):
-        response = chat_session.send_message(prompt)
+    def generate_response(self, chat_session, prompt, filenames):
+        # Extract work order numbers from the provided filenames
+        filenames = [filename[:-4] for filename in filenames]
+        work_order_string = str(filenames)[1:-1]
+        updated_prompt = prompt + f" From the {len(filenames)} work order numbers, which are: {work_order_string}."
+        print(updated_prompt)
+
+        # Send the updated prompt to the chatbot
+        response = chat_session.send_message(updated_prompt)
         return response
 
     def generate_summary(self, chat_session, content):

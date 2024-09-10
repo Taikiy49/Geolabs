@@ -58,6 +58,8 @@ def open_series_directories(network_path, original_file_name):
 
                     # Always open the file from the REPORTS_PATH
                     report_file_path = os.path.join(REPORTS_PATH, original_file_name)
+                    report_file_path = report_file_path.replace('.txt', '.pdf')  # Convert .txt to .pdf
+
                     if os.path.exists(report_file_path):
                         print(f"Opening file from Reports: {report_file_path}")
                         open_file_or_directory(report_file_path)
@@ -73,6 +75,9 @@ def open_series_directories(network_path, original_file_name):
 def handle_file_request(filename):
     # Always open the specific directory from UserShare
     open_series_directories(USER_SHARE_PATH, filename)
+
+    # Adjust the filename to have the .pdf extension
+    filename = filename.replace('.txt', '.pdf')
 
     # Always attempt to open the specific file from the Reports path
     report_file_path = os.path.join(REPORTS_PATH, filename)

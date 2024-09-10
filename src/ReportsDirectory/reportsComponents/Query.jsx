@@ -55,25 +55,25 @@ const Query = () => {
 
   const handleChatbotRequest = async () => {
     if (!chatbotPrompt.trim()) return;
-
+  
     setError('');
     setChatbotResponse('');
     setSubmittedInput(chatbotPrompt);
     setLoading(true);
-
+  
     try {
       const response = await axios.post(`${apiUrl}/reports/relevancy`, {
-        filenames: useFileSelector ? selectedFiles : [],
+        filenames: selectedFiles, // Pass selectedFiles here
         prompt: chatbotPrompt,
         useFileSelector,
       });
-
+  
       let formattedOutput = response.data.response
         .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
         .replace(/^\s*\*\s*(.+)$/gm, '<li>$1</li>');
-
+  
       formattedOutput = `<ul>${formattedOutput}</ul>`;
-
+  
       const animateResponse = (text, index = 0) => {
         if (index < text.length) {
           setChatbotResponse((prevResponse) => prevResponse + text[index]);
@@ -82,7 +82,7 @@ const Query = () => {
           setLoading(false);
         }
       };
-
+  
       setChatbotResponse('');
       animateResponse(formattedOutput);
     } catch (error) {
@@ -93,7 +93,7 @@ const Query = () => {
       setChatbotPrompt('');
     }
   };
-
+  
   const handleFileSelection = (fileName) => {
     setSelectedFiles((prevSelected) => {
       if (prevSelected.includes(fileName)) {

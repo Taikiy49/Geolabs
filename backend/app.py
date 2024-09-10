@@ -15,6 +15,9 @@ from terms import oahu_cities, civil_engineering_terms
 import os
 import webbrowser
 import re
+from file_handler import open_series_directories
+import math
+
 
 # Initialize Flask app and configure session
 app = Flask(__name__, static_folder='build', static_url_path='')  # Serve the React build files correctly
@@ -55,13 +58,51 @@ def extract_date(text):
                 continue
     return 'Unknown'
 
-# SQLite Database Initialization
+
+def bm25_score(query, content, k1=1.5, b=0.75):
+    content_words = content.split()
+    query_words = query.split()
+
+    # Calculate document length and average document length
+    doc_length = len(content_words)
+    avg_doc_length = doc_length  # Assuming each content is a separate document for simplicity
+
+    # Calculate IDF for each query term
+    idf_scores = {}
+    for word in query_words:
+        n_qi = sum(1 for doc in content_words if word in doc)
+        idf_scores[word] = math.log((len(content_words) - n_qi + 0.5) / (n_qi + 0.5) + 1)
+
+    # Calculate BM25 score
+    score = 0
+    for word in query_words:
+        if word in content_words:
+            tf = content_words.count(word)
+            numerator = tf * (k1 + 1)
+            denominator = tf + k1 * (1 - b + b * (doc_length / avg_doc_length))
+            score += idf_scores[word] * numerator / denominator
+
+    return score
+
+def rank_documents_by_bm25(query, documents):
+    document_scores = []
+
+    for doc in documents:
+        # BM25 Score
+        bm25 = bm25_score(query, doc['content'])
+
+        document_scores.append({'filename': doc['filename'], 'content': doc['content'], 'score': bm25})
+
+    return sorted(document_scores, key=lambda x: x['score'], reverse=True)
+
+
 def init_sqlite_db():
     try:
         conn = sqlite3.connect('data.db')
         cursor = conn.cursor()
         print("Creating tables...")
 
+        # Create 'users' table if not exists
         cursor.execute('''
             CREATE TABLE IF NOT EXISTS users (
                 id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -70,12 +111,12 @@ def init_sqlite_db():
             )
         ''')
 
+        # Create FTS5 virtual table for documents
         cursor.execute('''
-            CREATE TABLE IF NOT EXISTS documents (
-                id INTEGER PRIMARY KEY AUTOINCREMENT,
-                filename TEXT UNIQUE,
-                content TEXT,
-                date TEXT
+            CREATE VIRTUAL TABLE IF NOT EXISTS documents USING fts5(
+                filename,
+                content,
+                date
             )
         ''')
 
@@ -85,14 +126,14 @@ def init_sqlite_db():
     except sqlite3.Error as e:
         print(f"An error occurred: {e}")
 
-init_sqlite_db()
+
 
 def save_to_db(filename, content):
     submission_date = extract_date(content)
     conn = sqlite3.connect('data.db')
     cursor = conn.cursor()
     
-    cursor.execute('SELECT id FROM documents WHERE filename = ?', (filename,))
+    cursor.execute('SELECT rowid FROM documents WHERE filename = ?', (filename,))
     if cursor.fetchone() is not None:
         print(f"{filename} has already been processed. Skipping...")
         conn.close()
@@ -106,22 +147,6 @@ def save_to_db(filename, content):
     conn.close()
     print(f"Saved: {filename} with date {submission_date} to the database.")
 
-def process_all_files_in_folder(folder_path):
-    for filename in os.listdir(folder_path):
-        if filename.endswith('.txt'):
-            file_path = os.path.join(folder_path, filename)
-            try:
-                with open(file_path, 'r', encoding='utf-8', errors='ignore') as file:
-                    content = file.read()
-                save_to_db(filename, content)
-            except Exception as e:
-                print(f"Error processing file {file_path}: {e}")
-
-desktop_path = os.path.join(os.path.expanduser('~'), 'Desktop')
-ocr_reports_folder = os.path.join(desktop_path, 'OCR_REPORTS')
-
-# MAKE THIS LIKE A REFRESH BUTTON LATER COMMENTING OUT FOR NOW CUZ NO NEED
-# process_all_files_in_folder(ocr_reports_folder)
 
 def extract_and_rank_keywords(prompt):
     """
@@ -149,59 +174,68 @@ def extract_keywords_with_logic(prompt):
     return keywords_with_logic
 
 def match_exact_word(phrase, content):
+    """
+    Matches exact words only.
+    """
     pattern = r'\b' + re.escape(phrase) + r'\b'
-    return re.search(pattern, content, re.IGNORECASE) is not None
+    return re.findall(pattern, content, re.IGNORECASE)
+
 
 def get_filtered_documents(keywords_list):
     conn = sqlite3.connect('data.db')
     cursor = conn.cursor()
 
-    query = "SELECT filename, content FROM documents"
-    cursor.execute(query)
+    # Use FTS5 MATCH syntax for fast full-text search
+    query = "SELECT filename, content FROM documents WHERE content MATCH ?"
+    query_string = ' OR '.join(f'"{kw}"' for kw in keywords_list)  # Properly quote each keyword for FTS5
+    cursor.execute(query, (query_string,))
     documents = [{"filename": row[0], "content": row[1]} for row in cursor.fetchall()]
     conn.close()
 
-    filtered_documents = []
-    for doc in documents:
-        content = doc["content"]
-        if any(match_exact_word(keyword, content) for keyword in keywords_list):
-            filtered_documents.append(doc)
+    if not documents:
+        return []
 
-    return filtered_documents
+    # Rank documents using BM25 after filtering
+    ranked_documents = rank_documents_by_bm25(' '.join(keywords_list), documents)
+    return ranked_documents
+
+
 
 def get_filtered_documents_with_logic(keywords_with_logic):
     conn = sqlite3.connect('data.db')
     cursor = conn.cursor()
 
-    query = "SELECT filename, content FROM documents WHERE "
-    query_parts = []
-    params = []
+    # Start the query
+    query = "SELECT filename, content FROM documents WHERE content MATCH ?"
+    
+    # Prepare FTS5 query with logical operators
+    query_string = ' '.join(keywords_with_logic)
+    
+    print(f"Executing FTS5 query: {query} with query_string: {query_string}")
 
-    if keywords_with_logic and (keywords_with_logic[0] in {"AND", "OR"}):
-        keywords_with_logic = keywords_with_logic[1:]
-    if keywords_with_logic and (keywords_with_logic[-1] in {"AND", "OR"}):
-        keywords_with_logic = keywords_with_logic[:-1]
+    cursor.execute(query, (query_string,))
+    documents = [{"filename": row[0], "content": row[1]} for row in cursor.fetchall()]
 
-    for keyword in keywords_with_logic:
-        if keyword == "AND":
-            query_parts.append("AND")
-        elif keyword == "OR":
-            query_parts.append("OR")
-        else:
-            query_parts.append("content LIKE ?")
-            params.append(f'%{keyword}%')
+    filtered_documents = []
+    for doc in documents:
+        content = doc["content"]
+        matches_found = False
 
-    final_query = query + ' '.join(query_parts)
-    print(f"Executing query: {final_query} with params {params}")
-
-    if "content LIKE ?" in final_query:
-        cursor.execute(final_query, params)
-        documents = [{"filename": row[0], "content": row[1]} for row in cursor.fetchall()]
-    else:
-        documents = []
+        for keyword in keywords_with_logic:
+            if keyword not in {"AND", "OR"}:
+                matches = match_exact_word(keyword, content)
+                if matches:
+                    matches_found = True
+                    for match in matches:
+                        content = re.sub(rf'\b{re.escape(match)}\b', f'<mark>{match}</mark>', content, flags=re.IGNORECASE)
+        
+        if matches_found:
+            filtered_documents.append({"filename": doc["filename"], "content": content})
 
     conn.close()
-    return documents
+    return filtered_documents
+
+
 
 class User(UserMixin):
     def __init__(self, user_id, email):
@@ -300,9 +334,17 @@ def search_filenames():
     data = request.get_json()
     prompt = data.get('prompt')
     keywords_with_logic = extract_keywords_with_logic(prompt)
-    filtered_documents = get_filtered_documents_with_logic(keywords_with_logic)
-    filenames = [doc["filename"] for doc in filtered_documents]
+    
+    # Perform the search for filenames using the updated filtering function
+    ranked_documents = get_filtered_documents(keywords_with_logic)
+    
+    # Extract filenames from the ranked documents
+    filenames = [doc['filename'] for doc in ranked_documents]
+
     return jsonify({"filenames": filenames})
+
+
+
 
 @app.route('/reports/get-quick-view', methods=['POST'])
 def get_quick_view():
@@ -403,11 +445,12 @@ def search_work_order():
 @app.route('/reports/relevancy', methods=['POST'])
 def chatbot_request():
     data = request.get_json()
-    filenames = data.get('filenames', [])
+    filenames = data.get('filenames', [])  # Get the selected filenames from the user's request
     prompt = data.get('prompt', '')
     use_file_selector = data.get('useFileSelector', True)
 
     if not use_file_selector:
+        # Use keyword extraction if file selector is not being used
         keywords_list = extract_and_rank_keywords(prompt)
         documents = get_filtered_documents(keywords_list)
         filenames = [doc["filename"] for doc in documents[:5]]
@@ -415,21 +458,32 @@ def chatbot_request():
     if not filenames:
         return jsonify({"response": "No files selected or found."}), 400
 
+    # Fetch content for selected filenames only
     conn = sqlite3.connect('data.db')
     cursor = conn.cursor()
     cursor.execute(
         f"SELECT filename, content FROM documents WHERE filename IN ({','.join('?' * len(filenames))})",
         filenames
     )
-    documents = cursor.fetchall()
+    documents = [{"filename": row[0], "content": row[1]} for row in cursor.fetchall()]
     conn.close()
 
-    model = Model('reports')
-    history = model.create_chat_history([{"filename": doc[0], "content": doc[1]} for doc in documents])
-    chat_session = model.create_chat_session(history)
-    response = model.generate_response(chat_session, prompt).text
+    # Rank documents using BM25
+    ranked_documents = rank_documents_by_bm25(prompt, documents)
 
-    return jsonify({"response": response})
+    # Create chat history based on ranked documents
+    model = Model('reports')
+    history = model.create_chat_history(ranked_documents)
+    chat_session = model.create_chat_session(history)
+
+    # Pass the sorted filenames (by relevance) to the generate_response method
+    response = model.generate_response(chat_session, prompt, [doc['filename'] for doc in ranked_documents]).text
+
+    # Sort filenames by their BM25 score in descending order
+    sorted_filenames = [doc['filename'] for doc in ranked_documents]
+
+    return jsonify({"response": response, "ranked_filenames": sorted_filenames})
+
 
 # Employee Section
 def init_employee_db():
@@ -501,15 +555,24 @@ def query_handbook():
 @app.route('/reports/open-file', methods=['POST'])
 def open_file():
     try:
+        # Retrieve the filename from the request
         data = request.get_json()
         filename = data.get('filename')
         print(f"Received filename: {filename}")
+
+        # Define the network path
         network_path = r"\\geolabs.lan\fs\UserShare"
+        
+        # Call the open_series_directories function
         open_series_directories(network_path, filename)
+
+        # Return success response
         return jsonify({'message': 'Filename processed successfully'}), 200
     except Exception as e:
+        # Print and return error response
         print(f"Error receiving filename: {e}")
         return jsonify({'error': str(e)}), 500
+
 
 if __name__ == '__main__':
     webbrowser.open("http://localhost:8000")

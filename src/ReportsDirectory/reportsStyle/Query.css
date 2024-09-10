@@ -263,7 +263,6 @@
 .relevancy-chatbot-response {
     height: 600px; width: 600px;
     overflow-y: auto;
-    font-weight: 400;
     font-size: 20px;
     color: white;
     padding: 20px;
