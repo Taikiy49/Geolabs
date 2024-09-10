@@ -178,6 +178,7 @@ def match_exact_word(phrase, content):
     """
     Matches exact words only.
     """
+    # Ensure that only exact matches of the word 'phrase' are found.
     pattern = r'\b' + re.escape(phrase) + r'\b'
     return re.findall(pattern, content, re.IGNORECASE)
 
@@ -196,8 +197,23 @@ def get_filtered_documents(keywords_list):
     if not documents:
         return []
 
+    # Exact word matching for filtering documents
+    filtered_documents = []
+    for doc in documents:
+        content = doc["content"]
+        matches_found = False
+
+        for keyword in keywords_list:
+            if match_exact_word(keyword, content):
+                matches_found = True
+                # Optionally, highlight matches in content
+                content = re.sub(rf'\b{re.escape(keyword)}\b', f'<mark>{keyword}</mark>', content, flags=re.IGNORECASE)
+        
+        if matches_found:
+            filtered_documents.append({"filename": doc["filename"], "content": content})
+
     # Rank documents using BM25 after filtering
-    ranked_documents = rank_documents_by_bm25(' '.join(keywords_list), documents)
+    ranked_documents = rank_documents_by_bm25(' '.join(keywords_list), filtered_documents)
     return ranked_documents
 
 
@@ -225,17 +241,17 @@ def get_filtered_documents_with_logic(keywords_with_logic):
 
         for keyword in keywords_with_logic:
             if keyword not in {"AND", "OR"}:
-                matches = match_exact_word(keyword, content)
-                if matches:
+                if match_exact_word(keyword, content):
                     matches_found = True
-                    for match in matches:
-                        content = re.sub(rf'\b{re.escape(match)}\b', f'<mark>{match}</mark>', content, flags=re.IGNORECASE)
+                    # Optionally, highlight matches in content
+                    content = re.sub(rf'\b{re.escape(keyword)}\b', f'<mark>{keyword}</mark>', content, flags=re.IGNORECASE)
         
         if matches_found:
             filtered_documents.append({"filename": doc["filename"], "content": content})
 
     conn.close()
     return filtered_documents
+
 
 
 

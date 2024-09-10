@@ -74,7 +74,7 @@ class Model:
         # Extract work order numbers from the provided filenames
         filenames = [filename[:-4] for filename in filenames]
         work_order_string = str(filenames)[1:-1]
-        updated_prompt = prompt + f" From the {len(filenames)} work order numbers, which are: {work_order_string}."
+        updated_prompt = prompt + f" From the {len(filenames)} work order numbers, which are: {work_order_string}. Format your response so that it is easy for the user to read."
         print(updated_prompt)
 
         # Send the updated prompt to the chatbot

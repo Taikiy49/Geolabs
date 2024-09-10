@@ -16,14 +16,14 @@
     align-items: center;
     width: 100vw;
     height: 100%; 
-    gap: 100px;
+    gap: 20px;
 }
 
 .relevancy-file-count-text {
     color: white;
     font-weight: 400;
     font-size: 20px;
-    margin-bottom: 15px; margin-left: auto; margin-right: 10px;
+    margin-bottom: 15px; margin-right: 10px; margin-top: 50px;
 }
 
 /* File selection section */
@@ -44,10 +44,15 @@
 }
 
 .relevancy-chatbot-container {
-    display: flex; 
-    width: 100%;
+    display: flex;
+    width: 700px;
+    overflow-x: hidden;
     flex-direction: column;
-
+    justify-content: flex-start; /* Ensure items are aligned to the top */
+    align-items: flex-start; /* Align items to the start (left side) */
+    gap: 15px; /* Add space between items */
+    padding: 10px; /* Padding around the container */
+    box-sizing: border-box; /* Include padding in the element's total width and height */
 }
 
 
@@ -144,12 +149,13 @@
     padding-right: 30px;
     height: 50vh;
     overflow-x: hidden;
-    overflow-y: scroll; /* Enable vertical scrolling */
-    scrollbar-width: thin; /* Thin scrollbar for Firefox */
-    scrollbar-color: white transparent; /* White thumb with transparent track */
-    scroll-behavior: smooth; /* Smooth scrolling */
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: white transparent;
+    scroll-behavior: smooth;
+    border-radius: 8px; /* Rounded corners */
+    padding: 10px; /* Padding inside the container */
 }
-
 .relevancy-file-list-container.active {
     display: block;
     opacity: 1;
@@ -261,28 +267,35 @@
 
 /* Chatbot response section */
 .relevancy-chatbot-response {
-    height: 600px; width: 600px;
-    overflow-y: auto;
     font-size: 20px;
+    height: 50vh;
+    overflow-y: auto;
     color: white;
-    padding: 20px;
+    padding: 10px;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
 }
 
 .relevancy-submitted-query p {
     font-size: 22px; font-weight: 400; width: 850px;
-    color: var(--primary-100);
+    color: white;
+}
+
+.relevancy-submitted-query {
+    align-self: flex-start; /* Align the submitted query to the top */
+    margin-bottom: 10px; /* Add space below the submitted query */
+    color: white;
 }
 
 .relevancy-chatbot-response ul {
-    list-style: none;
+    list-style: none; /* Remove default list styling */
+    padding: 0;
+    margin: 0;
 }
-
-.relevancy-chatbot-response li {
-    text-indent: -20px;
-    margin-bottom: 10px;
-    color: white;
+.relevancy-chatbot-response ul {
+    list-style: none; /* Remove default list styling */
+    padding: 0;
+    margin: 0;
 }
 
 .relevancy-filename-text {
@@ -360,3 +373,52 @@
     color: gray;
   }
   
+  .work-order-filter-section {
+    display: flex;
+    flex-wrap: wrap; /* Allows checkboxes to wrap in smaller screens */
+    justify-content: center; /* Center align the checkboxes */
+    margin-bottom: 20px; /* Space below the checkbox section */
+    padding: 10px; /* Padding around the checkbox container */
+    border-radius: 8px; /* Rounded corners for the checkbox container */
+}
+
+/* Individual checkbox label styling */
+.work-order-filter-section label {
+    color: white; /* White text color */
+    font-size: 16px; /* Font size for labels */
+    margin-right: 20px; /* Space between checkboxes */
+    margin-bottom: 10px; /* Space below each checkbox for wrapping */
+    display: flex; /* Flexbox for checkbox and label alignment */
+    align-items: center; /* Vertically center checkbox and label */
+}
+
+/* Checkbox input styling */
+.work-order-filter-section input[type="checkbox"] {
+    margin-right: 5px; /* Space between checkbox and label */
+    cursor: pointer; /* Pointer cursor on hover */
+    transform: scale(1.2); /* Make checkboxes slightly larger */
+    accent-color: var(--primary-400); /* Use primary theme color for checkboxes */
+}
+
+/* Checkbox hover effect */
+.work-order-filter-section input[type="checkbox"]:hover {
+    box-shadow: 0 0 5px 
+    var(--primary-400); /* Add glow effect on hover */
+}
+
+
+
+.normal-text {
+    font-weight: normal;
+    color: white;
+    line-height: 1.5; /* Line height for better readability */
+    margin-bottom: 10px; /* Spacing between paragraphs */
+}
+
+.relevancy-chatbot-response strong {
+    font-weight: bold; /* Bold text for headings */
+    color: white; /* Bold text color */
+    display: block; /* Ensure headings are on their own line */
+    margin-top: 10px; /* Add space above headings */
+    margin-bottom: 5px; /* Add space below headings */
+}

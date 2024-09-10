@@ -6,17 +6,21 @@ import getConfig from '../../config';
 const Query = () => {
   const [input, setInput] = useState('');
   const [fileNames, setFileNames] = useState([]);
+  const [filteredFileNames, setFilteredFileNames] = useState([]);
   const [selectedFiles, setSelectedFiles] = useState([]);
   const [isSelecting, setIsSelecting] = useState(false);
   const [chatbotPrompt, setChatbotPrompt] = useState('');
   const [chatbotResponse, setChatbotResponse] = useState('');
   const [submittedInput, setSubmittedInput] = useState('');
   const [error, setError] = useState('');
-  const [useFileSelector, setUseFileSelector] = useState(null); // Initialize to null for the prompt
+  const [useFileSelector, setUseFileSelector] = useState(null);
   const [loading, setLoading] = useState(false);
   const [lastSearchTerm, setLastSearchTerm] = useState('');
   const { apiUrl } = getConfig();
   const listRef = useRef(null);
+
+  const [selectedRanges, setSelectedRanges] = useState([]);
+  const [searchPerformed, setSearchPerformed] = useState(false); // New state to check if a search has been performed
 
   const handleChoice = (choice) => {
     setUseFileSelector(choice);
@@ -24,11 +28,14 @@ const Query = () => {
 
   const searchFiles = async (query) => {
     setError('');
+    setSearchPerformed(false); // Reset searchPerformed state
     try {
       const response = await axios.post(`${apiUrl}/reports/search-filenames`, { prompt: query });
       setFileNames(response.data.filenames);
+      setFilteredFileNames(response.data.filenames);
       setLastSearchTerm(input);
       setInput('');
+      setSearchPerformed(true); // Set searchPerformed to true after search is performed
 
       if (response.data.filenames.length > 0) {
         listRef.current.classList.add('active');
@@ -44,7 +51,7 @@ const Query = () => {
   const handleKeyDown = (e) => {
     if (e.key === 'Enter') {
       e.preventDefault();
-      if (e.target.name === 'chatbot' && selectedFiles.length > 0) { // Ensure user can't submit when no files are selected
+      if (e.target.name === 'chatbot' && selectedFiles.length > 0) {
         handleChatbotRequest();
       } else {
         searchFiles(input);
@@ -63,14 +70,16 @@ const Query = () => {
   
     try {
       const response = await axios.post(`${apiUrl}/reports/relevancy`, {
-        filenames: selectedFiles, // Pass selectedFiles here
+        filenames: selectedFiles,
         prompt: chatbotPrompt,
         useFileSelector,
       });
   
+      // Format response with specific HTML tags for headings and normal text
       let formattedOutput = response.data.response
-        .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
-        .replace(/^\s*\*\s*(.+)$/gm, '<li>$1</li>');
+        .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>') // Bold headings
+        .replace(/^\s*\*\s*(.+)$/gm, '<li>$1</li>') // List items
+        .replace(/\n/g, '<br>'); // Line breaks
   
       formattedOutput = `<ul>${formattedOutput}</ul>`;
   
@@ -93,6 +102,8 @@ const Query = () => {
       setChatbotPrompt('');
     }
   };
+  
+  
   
   const handleFileSelection = (fileName) => {
     setSelectedFiles((prevSelected) => {
@@ -139,6 +150,34 @@ const Query = () => {
     }
   };
 
+  const handleRangeChange = (range) => {
+    setSelectedRanges((prevRanges) => {
+      const newRanges = prevRanges.includes(range)
+        ? prevRanges.filter((r) => r !== range)
+        : [...prevRanges, range];
+
+      filterFilesByRange(newRanges);
+      return newRanges;
+    });
+  };
+
+  const filterFilesByRange = (ranges) => {
+    if (ranges.length === 0) {
+      setFilteredFileNames(fileNames);
+      return;
+    }
+
+    const filtered = fileNames.filter((fileName) => {
+      const workOrder = parseInt(fileName.slice(0, 4), 10);
+      return ranges.some((range) => {
+        const [start, end] = range.split('-').map(Number);
+        return workOrder >= start && workOrder <= end;
+      });
+    });
+
+    setFilteredFileNames(filtered);
+  };
+
   return (
     <div className="relevancy-page-container" onMouseUp={handleMouseUp}>
       {useFileSelector === null ? (
@@ -154,6 +193,8 @@ const Query = () => {
           <div className="relevancy-file-section">
             {useFileSelector && (
               <>
+
+
                 <form onSubmit={(e) => e.preventDefault()} className="relevancy-form">
                   <input
                     type="text"
@@ -164,6 +205,27 @@ const Query = () => {
                     className="relevancy-input-field"
                   />
                 </form>
+
+
+                {/* Checkbox Section for Work Order Ranges */}
+                <div className="work-order-filter-section">
+                  {[...Array(9)].map((_, index) => {
+                    const start = index * 1000;
+                    const end = start + 999;
+                    return (
+                      <label key={index}>
+                        <input
+                          type="checkbox"
+                          value={`${start}-${end}`}
+                          onChange={() => handleRangeChange(`${start}-${end}`)}
+                          checked={selectedRanges.includes(`${start}-${end}`)}
+                          disabled={!searchPerformed} /* Disable checkboxes until search is performed */
+                        />
+                        {`${start}s`}
+                      </label>
+                    );
+                  })}
+                </div>
                 {error ? (
                   <p className="relevancy-error-message">{error}</p>
                 ) : (
@@ -173,7 +235,7 @@ const Query = () => {
                     )}
                     <div className="relevancy-file-list-container" ref={listRef}>
                       <ul className="relevancy-file-list">
-                        {fileNames.map((fileName, index) => (
+                        {filteredFileNames.map((fileName, index) => (
                           <li
                             key={index}
                             className={`relevancy-file-item ${selectedFiles.includes(fileName) ? 'relevancy-selected' : ''}`}
@@ -207,26 +269,28 @@ const Query = () => {
 
           <div className="relevancy-chatbot-section">
             <div className="relevancy-chatbot-container">
-
-            {submittedInput && (
+              {/* Display the submitted input at the top */}
+              {submittedInput && (
                 <div className="relevancy-submitted-query">
                   <p><strong>{submittedInput}</strong></p>
                 </div>
               )}
 
-              {loading && <div className="loading-spinner">...</div>}
-              {chatbotResponse && (
-                <div
-                  className="relevancy-chatbot-response"
-                  dangerouslySetInnerHTML={{ __html: chatbotResponse }}
-                />
-              )}
+              {/* Chatbot response container */}
+              <div
+                className="relevancy-chatbot-response"
+                dangerouslySetInnerHTML={{ __html: chatbotResponse }}
+              />
 
+              {/* Loading spinner, if needed */}
+              {loading && <div className="loading-spinner">...</div>}
+
+              {/* Display file count text */}
               <div className="relevancy-file-count-text">
                 {selectedFiles.length} files selected
               </div>
-              
-              {/* Chatbot input box should be disabled and grayed out until at least one file is selected */}
+
+              {/* Chatbot input field */}
               <input
                 name="chatbot"
                 value={chatbotPrompt}
@@ -238,6 +302,7 @@ const Query = () => {
               />
             </div>
           </div>
+
         </div>
       )}
     </div>
