@@ -1,64 +1,69 @@
 import os
 import sqlite3
 
-# # Function to initialize the database with FTS5 (if it doesn't already exist)
-# def init_sqlite_db():
-#     try:
-#         conn = sqlite3.connect('data.db')
-#         cursor = conn.cursor()
 
-#         # Create FTS5 virtual table for documents
-#         cursor.execute('''
-#             CREATE VIRTUAL TABLE IF NOT EXISTS documents USING fts5(
-#                 filename,
-#                 content,
-#                 date
-#             )
-#         ''')
+# THIS WILL BE RUN TO CONVERT ALL THE TXT FILES AND INPUT THEM INTO THE DATABASE 
 
-#         conn.commit()
-#         conn.close()
-#         print("Database initialized successfully!")  # Debugging print statement
-#     except sqlite3.Error as e:
-#         print(f"An error occurred: {e}")  # Print any SQLite errors
+# Function to initialize the database with FTS5 (if it doesn't already exist)
+def init_sqlite_db():
+    try:
+        conn = sqlite3.connect('data.db')
+        cursor = conn.cursor()
 
-# # Function to save the file content to the SQLite database
-# def save_to_db(filename, content, date):
-#     try:
-#         conn = sqlite3.connect('data.db')
-#         cursor = conn.cursor()
-        
-#         # Check if the file already exists in the database
-#         cursor.execute('SELECT rowid FROM documents WHERE filename = ?', (filename,))
-#         if cursor.fetchone() is not None:
-#             print(f"File {filename} already exists in the database. Skipping...")  # If exists, skip the insertion
-#             conn.close()
-#             return
+        # Create FTS5 virtual table for documents
+        cursor.execute('''
+            CREATE VIRTUAL TABLE IF NOT EXISTS documents USING fts5(
+                filename,
+                content,
+                date
+            )
+        ''')
 
-#         cursor.execute('''
-#             INSERT INTO documents (filename, content, date)
-#             VALUES (?, ?, ?)
-#         ''', (filename, content, date))
-#         conn.commit()
-#         conn.close()
-#         print(f"Saved: {filename} to the database.")  # Confirmation print statement
-#     except sqlite3.Error as e:
-#         print(f"Error saving {filename} to the database: {e}")
+        # Create an index on the filename column for faster lookups
+        cursor.execute('CREATE INDEX IF NOT EXISTS idx_filename ON documents(filename)')
 
-# # Function to process all renamed files in the OCR_REPORTS folder
-# def process_all_files_in_folder(folder_path):
-#     for filename in os.listdir(folder_path):
-#         if filename.endswith('.txt'):  # Only process .txt files
-#             file_path = os.path.join(folder_path, filename)
-#             try:
-#                 with open(file_path, 'r', encoding='utf-8', errors='ignore') as file:
-#                     content = file.read()
+        conn.commit()
+        conn.close()
+        print("Database initialized successfully!")  # Debugging print statement
+    except sqlite3.Error as e:
+        print(f"An error occurred: {e}")  # Print any SQLite errors
 
-#                 # Use the entire filename including numbers and other parts
-#                 save_to_db(filename, content, filename.split('.')[0])  # Save the filename and extract the date
+# Function to save the file content to the SQLite database
+def save_to_db(conn, cursor, filename, content, date):
+    try:
+        # Check if the file already exists in the database using the indexed column
+        cursor.execute('SELECT rowid FROM documents WHERE filename = ?', (filename,))
+        if cursor.fetchone() is not None:
+            print(f"File {filename} already exists in the database. Skipping...")  # If exists, skip the insertion
+            return
 
-#             except Exception as e:
-#                 print(f"Error processing file {file_path}: {e}")
+        # Insert the new file content into the database
+        cursor.execute('''
+            INSERT INTO documents (filename, content, date)
+            VALUES (?, ?, ?)
+        ''', (filename, content, date))
+        conn.commit()
+        print(f"Saved: {filename} to the database.")  # Confirmation print statement
+    except sqlite3.Error as e:
+        print(f"Error saving {filename} to the database: {e}")
+
+# Function to process all renamed files in the OCR_REPORTS folder
+def process_all_files_in_folder(folder_path):
+    conn = sqlite3.connect('data.db')
+    cursor = conn.cursor()
+    for filename in os.listdir(folder_path):
+        if filename.endswith('.txt'):  # Only process .txt files
+            file_path = os.path.join(folder_path, filename)
+            try:
+                with open(file_path, 'r', encoding='utf-8', errors='ignore') as file:
+                    content = file.read()
+
+                # Use the entire filename including numbers and other parts
+                save_to_db(conn, cursor, filename, content, filename.split('.')[0])  # Save the filename and extract the date
+
+            except Exception as e:
+                print(f"Error processing file {file_path}: {e}")
+    conn.close()
 
 # Function to search documents using FTS5
 def search_documents(search_query):
@@ -79,16 +84,16 @@ def search_documents(search_query):
 
     return results
 
-# # Define the Path to the OCR_REPORTS Folder
-# desktop_path = os.path.join(os.path.expanduser('~'), 'Desktop')
-# ocr_reports_folder = os.path.join(desktop_path, 'OCR_REPORTS')
+# Define the Path to the OCR_REPORTS Folder
+desktop_path = os.path.join(os.path.expanduser('~'), 'Desktop')
+ocr_reports_folder = os.path.join(desktop_path, 'OCR_REPORTS')
 
-# # Initialize the database
-# init_sqlite_db()
+# Initialize the database
+init_sqlite_db()
 
-# # Process all renamed files in the OCR_REPORTS folder
-# process_all_files_in_folder(ocr_reports_folder)
+# Process all renamed files in the OCR_REPORTS folder
+process_all_files_in_folder(ocr_reports_folder)
 
 # Example search query
-search_query = "engineering AND oahu"
-search_results = search_documents(search_query)
+# search_query = "engineering AND oahu"
+# search_results = search_documents(search_query)
