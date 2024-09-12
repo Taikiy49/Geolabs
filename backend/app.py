@@ -301,7 +301,7 @@ def send_input():
     filtered_documents = get_filtered_documents(keywords_list)
     history = model.create_chat_history(filtered_documents)
     chat_session = model.create_chat_session(history)
-    response = model.generate_response(chat_session, prompt).text
+    response = model.generate_response_no_filenames(chat_session, prompt).text
     return jsonify({"response": response})
 
 @app.route('/reports/add-files', methods=['POST'])
@@ -567,7 +567,7 @@ def query_handbook():
     else:
         persistent_chat_session.history.append({"role": "user", "parts": [handbook_prompt]})
 
-    response = model.generate_response(persistent_chat_session, handbook_prompt).text
+    response = model.generate_response_no_filenames(persistent_chat_session, handbook_prompt).text
 
     return jsonify({"response": response})
 

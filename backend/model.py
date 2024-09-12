@@ -81,6 +81,11 @@ class Model:
         response = chat_session.send_message(updated_prompt)
         return response
 
+    def generate_response_no_filenames(self, chat_session, prompt):
+        # Send the prompt directly to the chatbot without using filenames
+        response = chat_session.send_message(prompt)
+        return response
+
     def generate_summary(self, chat_session, content):
         response = chat_session.send_message(
             content + " Given all this information, generate a concise and comprehensive summary of the text."
