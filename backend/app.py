@@ -20,7 +20,7 @@ import math
 
 
 # Initialize Flask app and configure session
-app = Flask(__name__, static_folder='build', static_url_path='')  # Serve the React build files correctly
+app = Flask(__name__)
 app.config['SECRET_KEY'] = secrets.token_hex(24)
 app.config['SESSION_TYPE'] = 'filesystem'
 app.config['PERMANENT_SESSION_LIFETIME'] = timedelta(minutes=5)
@@ -30,12 +30,12 @@ CORS(app, resources={r"/*": {"origins": "*"}})
 login_manager = LoginManager(app)
 login_manager.login_view = 'login'
 
-@app.route('/', defaults={'path': ''})
-@app.route('/<path:path>')
-def serve_react_app(path):
-    if path and os.path.exists(os.path.join(app.static_folder, path)):
-        return send_from_directory(app.static_folder, path)
-    return send_from_directory(app.static_folder, 'index.html')
+# @app.route('/', defaults={'path': ''})
+# @app.route('/<path:path>')
+# def serve_react_app(path):
+#     if path and os.path.exists(os.path.join(app.static_folder, path)):
+#         return send_from_directory(app.static_folder, path)
+#     return send_from_directory(app.static_folder, 'index.html')
 
 # Function to extract dates from text content
 def extract_date(text):
@@ -594,6 +594,6 @@ def open_file():
 
 
 if __name__ == '__main__':
-    webbrowser.open("http://localhost:8000")
+    # webbrowser.open("http://localhost:8000")
     app.run(host='0.0.0.0', port=8000)
     

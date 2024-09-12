@@ -8,3 +8,14 @@ PyPDF4
 flask_session
 gridfs
 flask===3.0.0
+
+
+#sudo lsof -i :8000
+#sudo kill -9 <PID>
+# cd geolabs, source venv/bin/activate
+
+
+#chmod 400 "Galena4pileus.pem"
+#ssh -i "Galena4pileus.pem" ubuntu@ec2-54-151-54-24.us-west-1.compute.amazonaws.com
+
+#scp -i "C:\Users\tyamashita\Downloads\Galena4pileus.pem" "C:\Users\tyamashita\Desktop\TAIKI_GEOLABS\backend\data.db" ubuntu@54.151.54.24:/home/ubuntu/
