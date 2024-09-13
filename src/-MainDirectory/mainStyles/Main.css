@@ -9,6 +9,7 @@
 }
 
 .main-options-container {
+    
     display: flex; 
     align-items: center;
     justify-content: center;
@@ -39,6 +40,7 @@
 
 .main-software-description {
     font-size: 25px;
+    line-height: 1.5;
     color: white;
     font-weight: normal;
     max-width: 1200px;
@@ -61,12 +63,15 @@
 }
 
 .main-options {
+    padding: 20px;
     display: flex;
+    gap: 5px;
     flex-direction: column;
-    gap: 100px;
-    padding: 100px 50px; 
-    width: 100vw;
-    background-color: whitesmoke;
+    background-color: rgba(0, 0, 255, 0.1);
+    border: 3px solid white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 1);
+    margin-top: 200px; margin-bottom: 200px;
+    border-radius: 5px;
 }
 
 .main-button-container {
@@ -78,7 +83,6 @@
   }
 
 .main-button-style {
-    position: relative;
     padding: 20px;
     cursor: pointer;
     color: white;
@@ -86,9 +90,9 @@
     border: 2px solid white;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 1);
     background-color: black;
-    border-radius: 20px;
+    border-radius: 10px;
     width: 20vw;
-    height: 20vh;
+    height: 30vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -111,14 +115,14 @@
 
 
 .main-reports-img {
-    width: 40vw; border-radius: 20px; display: flex;
+    width: 35vw; border-radius: 5px; display: flex;
     border: 2px solid white;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 1);
   
 }
 
 .main-employee-guide-img {
-    width: 30vw; border-radius: 20px; display: flex;
+    width: 25vw; border-radius: 5px; display: flex;
     border: 2px solid white;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 1);
     
@@ -130,15 +134,29 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 100px; /* Adjust spacing between elements */
+  gap: 10px; /* Adjust spacing between elements */
   padding: 20px;
 }
 
+
+
 .main-employee-guide-container,
 .main-reports-container {
-    justify-content: center;
+  justify-content: center;
+  position: relative;
 }
+
 
 .main-admin-container {
     justify-content: flex-end;
+}
+
+
+.main-reports-arrow{
+    width: 5vw;
+}
+
+.main-employee-arrow{
+    width: 5vw;
+    transform: scaleX(-1);
 }

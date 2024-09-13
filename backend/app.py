@@ -260,16 +260,6 @@ class User(UserMixin):
         self.id = user_id
         self.email = email
 
-@login_manager.user_loader
-def load_user(user_id):
-    conn = sqlite3.connect('data.db')
-    cursor = conn.cursor()
-    cursor.execute('SELECT id, email FROM users WHERE id = ?', (user_id,))
-    user = cursor.fetchone()
-    conn.close()
-    if user:
-        return User(user[0], user[1])
-    return None
 
 @functools.lru_cache(maxsize=100)
 def get_summary_from_model(work_order_number, combined_content):
@@ -397,25 +387,62 @@ def get_quick_view():
     else:
         return jsonify({"message": "File not found"}), 404
 
+
+def init_account_db():
+    conn = sqlite3.connect('account.db')
+    cursor = conn.cursor()
+    cursor.execute('''
+        CREATE TABLE IF NOT EXISTS users (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            email TEXT UNIQUE NOT NULL,
+            password TEXT NOT NULL
+        )
+    ''')
+    conn.commit()
+    conn.close()
+
+init_account_db()
+
+
+@login_manager.user_loader
+def load_user(user_id):
+    conn = sqlite3.connect('account.db')
+    cursor = conn.cursor()
+    cursor.execute('SELECT id, email FROM users WHERE id = ?', (user_id,))
+    user = cursor.fetchone()
+    conn.close()
+    if user:
+        return User(user[0], user[1])
+    return None
+
+
 @app.route('/register', methods=['POST'])
 def register():
     data = request.get_json()
     email = data['email']
+    
+    # Check if the email ends with '@geolabs.net'
+    if not email.endswith('@geolabs.net'):
+        return jsonify({"message": "Invalid email domain. Only @geolabs.net emails are allowed."}), 400
+
     password = generate_password_hash(data['password'], method='pbkdf2:sha256')
 
-    conn = sqlite3.connect('data.db')
+    # Use the correct database for accounts
+    conn = sqlite3.connect('account.db')
     cursor = conn.cursor()
+    cursor.execute('CREATE TABLE IF NOT EXISTS users (id INTEGER PRIMARY KEY AUTOINCREMENT, email TEXT UNIQUE NOT NULL, password TEXT NOT NULL)')
     cursor.execute('SELECT id FROM users WHERE email = ?', (email,))
+    
     if cursor.fetchone():
+        conn.close()
         return jsonify({"message": "Email already registered"}), 400
 
-    cursor.execute('''
-        INSERT INTO users (email, password)
-        VALUES (?, ?)
-    ''', (email, password))
+    cursor.execute('INSERT INTO users (email, password) VALUES (?, ?)', (email, password))
     conn.commit()
     conn.close()
     return jsonify({"message": "User registered successfully"}), 200
+
+
 
 @app.route('/login', methods=['POST'])
 def login():
@@ -423,7 +450,7 @@ def login():
     email = data['email']
     password = data['password']
 
-    conn = sqlite3.connect('data.db')
+    conn = sqlite3.connect('account.db')
     cursor = conn.cursor()
     cursor.execute('SELECT id, password FROM users WHERE email = ?', (email,))
     user = cursor.fetchone()

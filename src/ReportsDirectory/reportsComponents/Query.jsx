@@ -53,12 +53,14 @@ const Query = () => {
       e.preventDefault();
       if (e.target.name === 'chatbot' && selectedFiles.length > 0) {
         handleChatbotRequest();
+        setChatbotPrompt(''); // Clear the chatbot input after pressing Enter
       } else {
         searchFiles(input);
         setInput('');
       }
     }
   };
+  
 
   const handleChatbotRequest = async () => {
     if (!chatbotPrompt.trim()) return;
@@ -283,6 +285,7 @@ const Query = () => {
 
               {loading && <div className="loading-spinner">...</div>}
 
+            
               <div className="relevancy-file-count-text">
                 {selectedFiles.length} files selected
               </div>
@@ -296,6 +299,7 @@ const Query = () => {
                 className={`relevancy-chatbot-input ${selectedFiles.length === 0 ? 'disabled' : ''}`}
                 disabled={selectedFiles.length === 0}
               />
+            
             </div>
           </div>
 

@@ -40,6 +40,7 @@ const Main = () => {
               <div className="main-options">
                 <div className='main-reports-container'>
                   <img src='reports-img.png' className='main-reports-img' />
+                  <img src='arrow.png' className='main-reports-arrow'/>
                   <div className="main-button-container">
                     <div onClick={() => navigateTo('/reports')} className='main-button-style'>
                       Reports
@@ -52,7 +53,6 @@ const Main = () => {
 
                 <div className='main-employee-guide-container'>
                   <div className="main-button-container">
-                    <div className="main-arrow"></div> {/* White arrow between image and button */}
                     <div onClick={() => navigateTo('/employee-guide')} className='main-button-style'>
                       Employee Guide
                       <p className='main-button-description-style'>
@@ -60,7 +60,9 @@ const Main = () => {
                       </p>
                     </div>
                   </div>
+                  <img src='arrow.png' className='main-employee-arrow'/>
                   <img src='employee-guide-img.png' className='main-employee-guide-img' />
+                  
                 </div>
               </div>
             </div>
