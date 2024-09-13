@@ -26,14 +26,17 @@
 }
 
 .reports-add-remove-option-box {
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 15px;
   border-radius: 10px;
   text-align: center;
   margin-top: 30px;
   cursor: pointer;
   font-size: 30px;
+  background-color: black;
+  border: 2px solid white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 1);
 }
 
 .reports-add-remove-option-box:hover {
@@ -42,19 +45,16 @@
 
 /* Reports Section Container */
 .reports-software-sections {
-  width: 100vw;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center align all elements */
 }
 
 .reports-software-section {
-  margin-top: 300px;
   display: flex;
   flex-direction: column;
   padding: 20px;
   border-radius: 20px;
-  align-items: center; /* Center align all elements */
+  margin-top: 20vh;
 }
 
 /* Fade-in Effect for the Title */
@@ -162,17 +162,15 @@
 
 .reports-options-container {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-top: 100px;
-  margin-bottom: 300px;
   gap: 50px;
 }
 
 .reports-option-box {
-  width: 500px;
+  width: 300px;
   color: white;
-  background-color: #161616;
+  background-color: black;
+  border: 2px solid white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 1);
   padding: 50px;
   padding-bottom: 20px;
   border-radius: 5px;
@@ -201,22 +199,11 @@
   color: rgb(240, 240, 240);
 }
 
-.reports-database-title {
-  font-size: 60px;
-  font-weight: 400;
-  color: white;
-  display: flex;
-}
-
-.reports-database-description {
-  color: white;
-  font-size: 25px;
-}
 
 .reports-file-actions-container {
+
   display: flex;
   flex-direction: column;
-  width: 60vw;
 }
 
 .reports-file-top-container {
@@ -226,9 +213,8 @@
 }
 
 .reports-file-count {
-  font-size: 25px;
-  margin-top: 25px;
-  margin-left: 30px;
+  font-size: 25px; color: white; margin-left: 20px;
+  margin-right: auto;
 }
 
 .reports-file-search-bar {
@@ -237,8 +223,11 @@
   align-items: center;
   margin-top: 25px;
   margin-bottom: 25px;
-  margin-left: auto;
-  margin-right: 10vw;
+  gap: 300px; margin-right: 50px;
+  background-color: black;
+  border: 2px solid white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 1);
+  padding: 15px 20px;
 }
 
 .reports-file-list-search-title {
@@ -261,8 +250,8 @@
   border: none;
   background-color: rgb(255, 255, 255);
   width: 300px;
-  border-radius: 5px;
   outline: none;
+  margin-right: 50px;
 }
 
 .reports-centering-file-list-container {
@@ -274,12 +263,12 @@
 .reports-file-list-container {
   padding-right: 30px;
   width: 50vw;
-  height: 50vh;
+  height: 65vh;
   overflow-x: hidden;
   overflow-y: scroll; /* Enable vertical scrolling */
   scrollbar-width: thin; /* Thin scrollbar for Firefox */
-  scrollbar-color: white transparent; /* White thumb with transparent track */
-  scroll-behavior: smooth; /* Smooth scrolling */
+  scrollbar-color: black transparent; /* White thumb with transparent track */
+  scroll-behavior: smooth; 
 }
 
 .reports-file-list-container::-webkit-scrollbar {
@@ -291,7 +280,7 @@
 }
 
 .reports-file-list-container::-webkit-scrollbar-thumb {
-  background-color: white; /* White scrollbar thumb */
+  background-color: black; /* White scrollbar thumb */
   border-radius: 20px; /* Fully rounded scrollbar (more oval shape) */
   border: 3px solid transparent; /* Space around the thumb to enhance the oval effect */
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.3); /* Subtle shadow for a modern look */
@@ -304,18 +293,21 @@
 .reports-scrollable-file-list {
   font-size: 20px;
   overflow: hidden;
+  padding-left: 20px; padding-right: 20px;
 }
 
 .reports-file-item {
   padding: 15px;
   font-weight: normal;
   user-select: none;
-  background-color: #151414;
-  border: 1px solid #2a2928;
-  border-radius: 5px;
+  background-color: black;
+  border: 2px solid white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 1);
+  border-radius: 10px;
   color: white;
   margin-bottom: 15px;
   cursor: pointer;
+  
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
@@ -328,9 +320,11 @@
 }
 
 .reports-mini-container {
+  background-color: whitesmoke;
+  width: 100vw;
   display: flex;
   margin-top: 300px;
-  justify-content: center;
+  justify-content: center; padding-bottom: 100px; padding-top: 100px;
 }
 
 .reports-option-logo {

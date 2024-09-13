@@ -170,12 +170,9 @@ const Options = ({ isMainPage }) => {
             </div>
             <div className='reports-mini-container'>
               <div className="reports-file-actions-container">
-                <div className='reports-database-title'>Database<div className='reports-file-count'>{totalFiles} Files</div></div>
-                <p className='reports-database-description'>Add and remove files from an external private database</p>
-  
                 <div className='reports-centering-file-list-container'>
                   <div className="reports-file-search-bar">
-                      <p className='reports-file-list-search-title'>Find:</p>
+                    <div className='reports-file-count'>{totalFiles} Files</div>
                       <input
                         type="text"
                         placeholder="Enter filename..."
@@ -222,9 +219,8 @@ const Options = ({ isMainPage }) => {
                   </label>
                 </div>
 
+              </div>
               <div className="reports-software-section">
-                <div className='reports-software-section-title'>Features</div>
-                <p className='reports-software-section-description'>Features designed to enhance your productivity and streamline your workflow.</p>
                 <div className="reports-options-container">
                   {filteredSoftwareOptions.map((option, index) => (
                     <div
@@ -238,7 +234,6 @@ const Options = ({ isMainPage }) => {
                     </div>
                   ))}
                 </div>
-              </div>
 
               </div>
             </div>

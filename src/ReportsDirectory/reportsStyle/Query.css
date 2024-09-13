@@ -28,7 +28,10 @@
 
 /* File selection section */
 .relevancy-file-section {
-    padding-right: 20px;
+    background-color: black;
+    border: 2px solid white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 1);
+    padding-right: 30px; padding-left: 40px; padding-top: 20px; padding-bottom: 50px;
     margin-top: 20px;
     display: flex;
     flex-direction: column;
@@ -40,10 +43,16 @@
     display: flex;
     margin-top: auto;
     margin-bottom: 8vh;
+    background-color: black;
+    border: 2px solid white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 1);
+    padding: 30px;
+    border-radius: 10px;
     
 }
 
 .relevancy-chatbot-container {
+
     display: flex;
     width: 700px;
     overflow-x: hidden;
@@ -51,7 +60,7 @@
     justify-content: flex-start; /* Ensure items are aligned to the top */
     align-items: flex-start; /* Align items to the start (left side) */
     gap: 15px; /* Add space between items */
-    padding: 10px; /* Padding around the container */
+    padding: 30px; /* Padding around the container */
     box-sizing: border-box; /* Include padding in the element's total width and height */
 }
 
@@ -60,7 +69,6 @@
 .relevancy-input-field {
     padding: 10px 15px;
     font-size: 16px;
-    border-radius: 5px;
     border: none;
     color: black;
     background-color: white;
@@ -229,14 +237,13 @@
 
 .relevancy-reset-button {
     cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    margin-top: 15px; margin-right: auto;
+    margin-top: 250px;
+
 }
 
 .relevancy-mini-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 .relevancy-reset-button:hover {
@@ -245,7 +252,8 @@
 
 /* Chatbot section input and button */
 .relevancy-chatbot-input {
-    width: 650px;
+    width: 610px;
+    justify-content: center;
     height: 15px;
     outline: none;
     padding: 10px 15px;
@@ -254,7 +262,6 @@
     background-color: white;
     color: black;
     font-size: 16px;
-    margin: 20px 0;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -304,9 +311,9 @@
 
 
 .relevancy-last-search
-{ 
+{   
+    margin-right: 50px;
     color: white;
-    font-weight: 400; margin-left: auto; margin-right: 50px;
     font-size: 20px;
 }
 
@@ -317,11 +324,15 @@
 
 /* Centered prompt container */
 .relevancy-prompt-container {
+    background-color: black;
+    border: 2px solid white;
+    
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 1);
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 30px;
+    padding: 50px;
     border-radius: 10px;
     text-align: center;
     z-index: 1000;
@@ -373,14 +384,9 @@
     color: gray;
   }
   
-  .work-order-filter-section {
-    display: flex;
-    flex-wrap: wrap; /* Allows checkboxes to wrap in smaller screens */
-    justify-content: center; /* Center align the checkboxes */
-    margin-bottom: 20px; /* Space below the checkbox section */
-    padding: 10px; /* Padding around the checkbox container */
-    border-radius: 8px; /* Rounded corners for the checkbox container */
-}
+  .relevancy-left-menu{
+    gap: 50px;
+  }
 
 /* Individual checkbox label styling */
 .work-order-filter-section label {

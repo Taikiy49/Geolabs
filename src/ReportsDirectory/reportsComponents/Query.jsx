@@ -20,7 +20,7 @@ const Query = () => {
   const listRef = useRef(null);
 
   const [selectedRanges, setSelectedRanges] = useState([]);
-  const [searchPerformed, setSearchPerformed] = useState(false); // New state to check if a search has been performed
+  const [searchPerformed, setSearchPerformed] = useState(false);
 
   const handleChoice = (choice) => {
     setUseFileSelector(choice);
@@ -102,8 +102,6 @@ const Query = () => {
       setChatbotPrompt('');
     }
   };
-  
-  
   
   const handleFileSelection = (fileName) => {
     setSelectedFiles((prevSelected) => {
@@ -193,8 +191,6 @@ const Query = () => {
           <div className="relevancy-file-section">
             {useFileSelector && (
               <>
-
-
                 <form onSubmit={(e) => e.preventDefault()} className="relevancy-form">
                   <input
                     type="text"
@@ -206,33 +202,44 @@ const Query = () => {
                   />
                 </form>
 
-
-                {/* Checkbox Section for Work Order Ranges */}
-                <div className="work-order-filter-section">
-                  {[...Array(9)].map((_, index) => {
-                    const start = index * 1000;
-                    const end = start + 999;
-                    return (
-                      <label key={index}>
-                        <input
-                          type="checkbox"
-                          value={`${start}-${end}`}
-                          onChange={() => handleRangeChange(`${start}-${end}`)}
-                          checked={selectedRanges.includes(`${start}-${end}`)}
-                          disabled={!searchPerformed} /* Disable checkboxes until search is performed */
-                        />
-                        {`${start}s`}
-                      </label>
-                    );
-                  })}
-                </div>
                 {error ? (
                   <p className="relevancy-error-message">{error}</p>
                 ) : (
                   <div className="relevancy-mini-container">
-                    {lastSearchTerm && (
-                      <p className="relevancy-last-search">Searched: {lastSearchTerm}</p>
-                    )}
+                    <div className='relevancy-left-menu'>
+                      {lastSearchTerm && (
+                        <p className="relevancy-last-search">Searched: {lastSearchTerm}</p>
+                      )}
+                      
+                      {/* Display the work order filter section only if a search has been performed */}
+                      {searchPerformed && (
+                        <div className="work-order-filter-section">
+                          {[...Array(9)].map((_, index) => {
+                            const start = index * 1000;
+                            const end = start + 999;
+                            return (
+                              <label key={index}>
+                                <input
+                                  type="checkbox"
+                                  value={`${start}-${end}`}
+                                  onChange={() => handleRangeChange(`${start}-${end}`)}
+                                  checked={selectedRanges.includes(`${start}-${end}`)}
+                                />
+                                {`${start}s`}
+                              </label>
+                            );
+                          })}
+                        </div>
+                      )}
+                      
+                      {selectedFiles.length > 0 && (
+                        <div onClick={handleResetSelection} className="relevancy-reset-button">
+                          <img className="reset-button-img" src="../reset-button.svg" alt='reset button for relevance'/>
+                          <p className="relevancy-reset-button-text">Reset</p>
+                        </div>
+                      )}
+                    </div>
+
                     <div className="relevancy-file-list-container" ref={listRef}>
                       <ul className="relevancy-file-list">
                         {filteredFileNames.map((fileName, index) => (
@@ -243,24 +250,18 @@ const Query = () => {
                             onMouseDown={() => handleMouseDown(fileName)}
                             onMouseOver={() => handleMouseOver(fileName)}
                           >
-                          <div className='relevancy-rank-filename-container'>
-                            <div className="relevancy-rank-container">
-                              <div className="relevancy-rank-number">Rank {index + 1}</div>
+                            <div className='relevancy-rank-filename-container'>
+                              <div className="relevancy-rank-container">
+                                <div className="relevancy-rank-number">Rank {index + 1}</div>
+                              </div>
+                              <div className="relevancy-filename-box">
+                                <span className="relevancy-filename-text">{fileName}</span>
+                              </div>
                             </div>
-                            <div className="relevancy-filename-box">
-                              <span className="relevancy-filename-text">{fileName}</span>
-                            </div>
-                          </div>
                           </li>
                         ))}
                       </ul>
                     </div>
-                    {selectedFiles.length > 0 && (
-                      <div onClick={handleResetSelection} className="relevancy-reset-button">
-                        <img className="reset-button-img" src="../reset-button.svg" alt='reset button for relevance'/>
-                        <p className="relevancy-reset-button-text">Reset</p>
-                      </div>
-                    )}
                   </div>
                 )}
               </>
@@ -269,28 +270,23 @@ const Query = () => {
 
           <div className="relevancy-chatbot-section">
             <div className="relevancy-chatbot-container">
-              {/* Display the submitted input at the top */}
               {submittedInput && (
                 <div className="relevancy-submitted-query">
                   <p><strong>{submittedInput}</strong></p>
                 </div>
               )}
 
-              {/* Chatbot response container */}
               <div
                 className="relevancy-chatbot-response"
                 dangerouslySetInnerHTML={{ __html: chatbotResponse }}
               />
 
-              {/* Loading spinner, if needed */}
               {loading && <div className="loading-spinner">...</div>}
 
-              {/* Display file count text */}
               <div className="relevancy-file-count-text">
                 {selectedFiles.length} files selected
               </div>
 
-              {/* Chatbot input field */}
               <input
                 name="chatbot"
                 value={chatbotPrompt}
