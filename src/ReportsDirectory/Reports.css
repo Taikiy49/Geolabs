@@ -322,10 +322,13 @@
 }
 
 .reports-mini-container {
-  width: 100vw;
+  border: 3px solid white;
   display: flex;
-  margin-top: 300px;
-  justify-content: center; padding-bottom: 100px; padding-top: 100px; gap: 20px;
+  justify-content: center; gap: 20px;
+  padding: 20px;
+  padding-right: 3px;
+  border-radius: 5px;
+  margin-bottom: 200px;
 }
 
 .reports-option-logo {
