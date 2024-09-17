@@ -23,10 +23,19 @@ import math
 app = Flask(__name__)
 app.config['SECRET_KEY'] = secrets.token_hex(24)
 app.config['SESSION_TYPE'] = 'filesystem'
+app.config['SESSION_PERMANENT'] = True
 app.config['PERMANENT_SESSION_LIFETIME'] = timedelta(minutes=5)
+
+app.config['SESSION_COOKIE_SECURE'] = False  # Set to True if using HTTPS
+app.config['SESSION_COOKIE_HTTPONLY'] = True
+app.config['SESSION_COOKIE_SAMESITE'] = 'Lax'  # or 'Strict' or 'None'
+
+
+
+
 Session(app)
 
-CORS(app, resources={r"/*": {"origins": "*"}}) 
+CORS(app, resources={r"/*": {"origins": "*"}}, supports_credentials=True)
 login_manager = LoginManager(app)
 login_manager.login_view = 'login'
 
@@ -162,17 +171,19 @@ def extract_keywords_with_logic(prompt):
     """
     Extracts keywords from the prompt and handles logical operators like AND/OR.
     """
-    parts = re.split(r'\s+(and|or)\s+', prompt, flags=re.IGNORECASE)
+    parts = re.split(r'\s+(AND|OR)\s+', prompt, flags=re.IGNORECASE)
     keywords_with_logic = []
     
     for part in parts:
-        if part.strip().lower() in {"and", "or"}:
+        if part.strip().upper() in {"AND", "OR"}:
             keywords_with_logic.append(part.strip().upper())
         else:
             keywords = extract_and_rank_keywords(part)
-            keywords_with_logic.extend(keywords)
+            keywords_with_logic.append(f'"{part.strip()}"' if ' ' in part else part)  # Keep phrases intact
     
+    print(keywords_with_logic)
     return keywords_with_logic
+
 
 def match_exact_word(phrase, content):
     """
@@ -340,16 +351,40 @@ def remove_files():
 @app.route('/reports/search-filenames', methods=['POST'])
 def search_filenames():
     data = request.get_json()
-    prompt = data.get('prompt')
-    keywords_with_logic = extract_keywords_with_logic(prompt)
-    
-    # Perform the search for filenames using the updated filtering function
-    ranked_documents = get_filtered_documents(keywords_with_logic)
-    
-    # Extract filenames from the ranked documents
+    prompt = data.get('prompt', '')
+    range_start = int(data.get('rangeStart', 0))
+    range_end = int(data.get('rangeEnd', 9999))
+
+    # Determine if the prompt contains logical operators
+    if ' AND ' in prompt.upper() or ' OR ' in prompt.upper():
+        keywords_with_logic = extract_keywords_with_logic(prompt)
+        query_string = ' '.join(keywords_with_logic)
+    else:
+        # Handle exact phrase search
+        query_string = f'"{prompt}"' if ' ' in prompt else prompt  # Add quotes for phrase search
+
+    print(range_start, '-', range_end, query_string)
+
+    # Use the range to filter documents based on work order numbers
+    conn = sqlite3.connect('data.db')
+    cursor = conn.cursor()
+    query = """
+    SELECT filename, content 
+    FROM documents 
+    WHERE CAST(SUBSTR(filename, 1, 4) AS INTEGER) BETWEEN ? AND ? AND content MATCH ?
+    """
+    cursor.execute(query, (range_start, range_end, query_string))
+    documents = [{"filename": row[0], "content": row[1]} for row in cursor.fetchall()]
+    conn.close()
+
+    # Rank documents using BM25
+    ranked_documents = rank_documents_by_bm25(prompt, documents)
     filenames = [doc['filename'] for doc in ranked_documents]
 
-    return jsonify({"filenames": filenames})
+    # Return the filtered filenames and the range used
+    return jsonify({"filenames": filenames, "rangeStart": range_start, "rangeEnd": range_end})
+
+
 
 
 

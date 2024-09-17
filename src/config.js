@@ -1,11 +1,11 @@
 const config = {
     development: {
-      apiUrl: 'http://13.52.86.240:8000',
-      // apiUrl: 'http://localhost:8000',
+      // apiUrl: 'http://13.52.86.240:8000',
+      apiUrl: 'http://localhost:8000',
     },
     production: {
-      apiUrl: 'http://13.52.86.240:8000',
-      // apiUrl: 'http://localhost:8000',
+      // apiUrl: 'http://13.52.86.240:8000',
+      apiUrl: 'http://localhost:8000',
     },
   };
   

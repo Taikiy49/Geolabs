@@ -16,75 +16,98 @@ const Query = () => {
   const [useFileSelector, setUseFileSelector] = useState(null);
   const [loading, setLoading] = useState(false);
   const [lastSearchTerm, setLastSearchTerm] = useState('');
+  const [rangeStart, setRangeStart] = useState('');
+  const [rangeEnd, setRangeEnd] = useState('');
+  const [searchPerformed, setSearchPerformed] = useState(false);
   const { apiUrl } = getConfig();
   const listRef = useRef(null);
-
-  const [selectedRanges, setSelectedRanges] = useState([]);
-  const [searchPerformed, setSearchPerformed] = useState(false);
 
   const handleChoice = (choice) => {
     setUseFileSelector(choice);
   };
 
-  const searchFiles = async (query) => {
-    setError('');
-    setSearchPerformed(false); // Reset searchPerformed state
-    try {
-      const response = await axios.post(`${apiUrl}/reports/search-filenames`, { prompt: query });
-      setFileNames(response.data.filenames);
-      setFilteredFileNames(response.data.filenames);
-      setLastSearchTerm(input);
-      setInput('');
-      setSearchPerformed(true); // Set searchPerformed to true after search is performed
-
-      if (response.data.filenames.length > 0) {
-        listRef.current.classList.add('active');
-      } else {
-        listRef.current.classList.remove('active');
-      }
-    } catch (error) {
-      console.error('There was an error retrieving the file names from the server!', error);
-      setError('An error occurred while searching for relevant files. Please try again.');
+  const handleRangeChange = () => {
+    if (!rangeStart || !rangeEnd) {
+      setError('Please enter both start and end values for the range.');
+      return;
     }
+    
+    if (parseInt(rangeStart) > parseInt(rangeEnd)) {
+      setError('Start value should not be greater than end value.');
+      return;
+    }
+
+    setError(''); // Clear any previous errors
   };
+
+  const searchFiles = async () => {
+    handleRangeChange(); // Check the range validity
+
+    if (error) return; // If there's an error, stop the search
+
+    setError('');
+    setSearchPerformed(false);
+
+    try {
+        // Send the selected range and prompt (with logical operators) to the server
+        const response = await axios.post(`${apiUrl}/reports/search-filenames`, { 
+            prompt: input, 
+            rangeStart,
+            rangeEnd
+        });
+
+        setFileNames(response.data.filenames);
+        setFilteredFileNames(response.data.filenames);
+        setLastSearchTerm(input);
+        setInput('');
+        setSearchPerformed(true);
+
+        if (response.data.filenames.length > 0) {
+            listRef.current.classList.add('active');
+        } else {
+            listRef.current.classList.remove('active');
+        }
+    } catch (error) {
+        console.error('There was an error retrieving the file names from the server!', error);
+        setError('An error occurred while searching for relevant files. Please try again.');
+    }
+};
 
   const handleKeyDown = (e) => {
     if (e.key === 'Enter') {
-      e.preventDefault();
-      if (e.target.name === 'chatbot' && selectedFiles.length > 0) {
-        handleChatbotRequest();
-        setChatbotPrompt(''); // Clear the chatbot input after pressing Enter
-      } else {
-        searchFiles(input);
-        setInput('');
-      }
+        e.preventDefault();
+        if (e.target.name === 'chatbot' && selectedFiles.length > 0) {
+            handleChatbotRequest();
+            setChatbotPrompt('');
+        } else {
+            searchFiles();
+            setInput('');
+        }
     }
-  };
-  
+};
 
   const handleChatbotRequest = async () => {
     if (!chatbotPrompt.trim()) return;
-  
+
     setError('');
     setChatbotResponse('');
     setSubmittedInput(chatbotPrompt);
     setLoading(true);
-  
+
     try {
       const response = await axios.post(`${apiUrl}/reports/relevancy`, {
         filenames: selectedFiles,
         prompt: chatbotPrompt,
         useFileSelector,
       });
-  
-      // Format response with specific HTML tags for headings and normal text
+
       let formattedOutput = response.data.response
-        .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>') // Bold headings
-        .replace(/^\s*\*\s*(.+)$/gm, '<li>$1</li>') // List items
-        .replace(/\n/g, '<br>'); // Line breaks
-  
+        .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+        .replace(/^\s*\*\s*(.+)$/gm, '<li>$1</li>')
+        .replace(/\n/g, '<br>');
+
       formattedOutput = `<ul>${formattedOutput}</ul>`;
-  
+
       const animateResponse = (text, index = 0) => {
         if (index < text.length) {
           setChatbotResponse((prevResponse) => prevResponse + text[index]);
@@ -93,7 +116,7 @@ const Query = () => {
           setLoading(false);
         }
       };
-  
+
       setChatbotResponse('');
       animateResponse(formattedOutput);
     } catch (error) {
@@ -104,7 +127,7 @@ const Query = () => {
       setChatbotPrompt('');
     }
   };
-  
+
   const handleFileSelection = (fileName) => {
     setSelectedFiles((prevSelected) => {
       if (prevSelected.includes(fileName)) {
@@ -150,34 +173,6 @@ const Query = () => {
     }
   };
 
-  const handleRangeChange = (range) => {
-    setSelectedRanges((prevRanges) => {
-      const newRanges = prevRanges.includes(range)
-        ? prevRanges.filter((r) => r !== range)
-        : [...prevRanges, range];
-
-      filterFilesByRange(newRanges);
-      return newRanges;
-    });
-  };
-
-  const filterFilesByRange = (ranges) => {
-    if (ranges.length === 0) {
-      setFilteredFileNames(fileNames);
-      return;
-    }
-
-    const filtered = fileNames.filter((fileName) => {
-      const workOrder = parseInt(fileName.slice(0, 4), 10);
-      return ranges.some((range) => {
-        const [start, end] = range.split('-').map(Number);
-        return workOrder >= start && workOrder <= end;
-      });
-    });
-
-    setFilteredFileNames(filtered);
-  };
-
   return (
     <div className="relevancy-page-container" onMouseUp={handleMouseUp}>
       {useFileSelector === null ? (
@@ -193,6 +188,27 @@ const Query = () => {
           <div className="relevancy-file-section">
             {useFileSelector && (
               <>
+                {/* Input fields for range selection */}
+                <div className="range-input-container">
+                  <input
+                    type="number"
+                    value={rangeStart}
+                    onChange={(e) => setRangeStart(e.target.value)}
+                    placeholder="From (eg. 6000)"
+                    className="range-input"
+                  />
+                  <span className="range-dash">-</span> {/* Dash between inputs */}
+                  <input
+                    type="number"
+                    value={rangeEnd}
+                    onChange={(e) => setRangeEnd(e.target.value)}
+                    placeholder="To (e.g., 7000)"
+                    className="range-input"
+                  />
+                </div>
+
+
+                {/* Search form */}
                 <form onSubmit={(e) => e.preventDefault()} className="relevancy-form">
                   <input
                     type="text"
@@ -212,28 +228,6 @@ const Query = () => {
                       {lastSearchTerm && (
                         <p className="relevancy-last-search">Searched: {lastSearchTerm}</p>
                       )}
-                      
-                      {/* Display the work order filter section only if a search has been performed */}
-                      {searchPerformed && (
-                        <div className="work-order-filter-section">
-                          {[...Array(9)].map((_, index) => {
-                            const start = index * 1000;
-                            const end = start + 999;
-                            return (
-                              <label key={index}>
-                                <input
-                                  type="checkbox"
-                                  value={`${start}-${end}`}
-                                  onChange={() => handleRangeChange(`${start}-${end}`)}
-                                  checked={selectedRanges.includes(`${start}-${end}`)}
-                                />
-                                {`${start}s`}
-                              </label>
-                            );
-                          })}
-                        </div>
-                      )}
-                      
                       {selectedFiles.length > 0 && (
                         <div onClick={handleResetSelection} className="relevancy-reset-button">
                           <img className="reset-button-img" src="../reset-button.svg" alt='reset button for relevance'/>
@@ -285,7 +279,6 @@ const Query = () => {
 
               {loading && <div className="loading-spinner">...</div>}
 
-            
               <div className="relevancy-file-count-text">
                 {selectedFiles.length} files selected
               </div>
@@ -299,10 +292,8 @@ const Query = () => {
                 className={`relevancy-chatbot-input ${selectedFiles.length === 0 ? 'disabled' : ''}`}
                 disabled={selectedFiles.length === 0}
               />
-            
             </div>
           </div>
-
         </div>
       )}
     </div>

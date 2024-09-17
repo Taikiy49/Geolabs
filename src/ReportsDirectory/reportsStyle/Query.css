@@ -79,9 +79,8 @@
     height: 15px;
     margin-bottom: 20px;
     outline: none;
-    margin-left: auto;
-    
-    margin-top: 10px; margin-right: 100px;
+    margin-left: auto;  
+    margin-right: 100px;
 }
 
 .relevancy-controls {
@@ -447,4 +446,47 @@
     display: block; /* Ensure headings are on their own line */
     margin-top: 10px; /* Add space above headings */
     margin-bottom: 5px; /* Add space below headings */
+}
+
+.range-input-container {
+    display: flex;
+    gap: 10px; /* Space between the input boxes and the dash */
+    margin-bottom: 20px; /* Space below the input boxes */
+    align-items: center; /* Center items vertically */
+}
+
+/* Styling for the dash between inputs */
+.range-dash {
+    color: white; /* Match the text color to the input field color */
+    font-size: 20px; /* Slightly larger font for visibility */
+    padding: 0 5px; /* Padding on both sides for some space */
+    display: flex; /* Flex to align properly with inputs */
+    justify-content: center; /* Center the dash horizontally */
+    align-items: center; /* Center the dash vertically */
+}
+
+/* Individual range input styling */
+.range-input {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 2px solid white;
+    background-color: black;
+    border-radius: 5px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 1);
+    color: white;
+    outline: none; /* Remove default outline */
+    width: 150px; /* Width for the input boxes */
+    transition: background-color 0.3s ease, border-color 0.3s ease; /* Smooth transition for background and border */
+}
+
+/* Hover and focus effect for range input */
+.range-input:hover, .range-input:focus {
+    background-color: #1a1a1a; /* Darker background on hover and focus */
+    border-color: var(--primary-400); /* Use primary theme color on hover and focus */
+}
+
+/* Placeholder styling for range input */
+.range-input::placeholder {
+    color: gray; /* Lighter color for the placeholder text */
+    opacity: 0.8; /* Slight transparency */
 }
