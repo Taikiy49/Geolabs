@@ -86,10 +86,22 @@ class Model:
         response = chat_session.send_message(prompt)
         return response
 
-    def generate_summary(self, chat_session, content):
-        response = chat_session.send_message(
-            content + " Given all this information, generate a concise and comprehensive summary of the text."
+    def generate_summary(self, chat_session, content, options):
+        options_string = ''
+        for option in options:
+            options_string += f'{option} and'
+
+        
+        if options:
+            response = chat_session.send_message(
+            content + " Given all this information, generate a concise and comprehensive summary of the topics:" + options_string + "Format your response so that it is easy for the user to read."
         )
+        
+        else:
+            response = chat_session.send_message(
+                content + " Given all this information, generate a concise and comprehensive summary of the text. Format your response so that it is easy for the user to read."
+            )
+
         return response
 
     def close(self):

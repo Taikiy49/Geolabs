@@ -21,7 +21,7 @@ const WorkOrder = () => {
     'Pavement',
   ];
 
-  // Fetch work order suggestions as user types
+  // Fetch work order suggestions as the user types
   useEffect(() => {
     if (workOrderNumber.length > 1) {
       axios
@@ -37,6 +37,7 @@ const WorkOrder = () => {
     }
   }, [workOrderNumber]);
 
+  // This function is triggered when the form is submitted (by pressing enter)
   const handleSearch = async (e) => {
     e.preventDefault();
     if (!workOrderNumber) {
@@ -47,15 +48,17 @@ const WorkOrder = () => {
     setError('');
     setSummary('');
 
-    // Log selected options to the terminal
-    console.log('Selected options:', selectedOptions);
-
     try {
-      const response = await axios.post(`${apiUrl}/reports/search-work-order`, { workOrderNumber });
+      // Send work order number and selected options (checkboxes) to the backend
+      const response = await axios.post(`${apiUrl}/reports/search-work-order`, {
+        workOrderNumber,
+        selectedOptions, // Include selected options in the request
+      });
       if (response.data.summary) {
         let formattedSummary = response.data.summary
           .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
-          .replace(/^\s*\*\s*(.+)$/gm, '<li>$1</li>');
+          .replace(/^\s*\*\s*(.+)$/gm, '<li>$1</li>')
+          .replace(/\n/g, '<br>');
         formattedSummary = `<ul>${formattedSummary}</ul>`;
         setSummary(formattedSummary);
       } else {
@@ -69,6 +72,7 @@ const WorkOrder = () => {
     }
   };
 
+  // Handle checkbox selection (local state management)
   const handleCheckboxChange = (option) => {
     setSelectedOptions((prevSelected) =>
       prevSelected.includes(option)
@@ -79,8 +83,7 @@ const WorkOrder = () => {
 
   return (
     <div className="workorder-container">
-      <div className='workorder-left-menu'>
-
+      <div className="workorder-left-menu">
         {/* Render checkboxes */}
         {options.map((option, index) => (
           <label key={index} className="workorder-checkbox">
@@ -88,13 +91,13 @@ const WorkOrder = () => {
               type="checkbox"
               value={option}
               checked={selectedOptions.includes(option)}
-              onChange={() => handleCheckboxChange(option)}
+              onChange={() => handleCheckboxChange(option)} // Update state only
             />
             {option}
           </label>
         ))}
 
-        <p className='workorder-instructions-text'>Work order number:</p>
+        <p className="workorder-instructions-text">Work order number:</p>
         <form onSubmit={handleSearch} className="workorder-form">
           <input
             type="text"
@@ -114,7 +117,7 @@ const WorkOrder = () => {
           </ul>
         )}
       </div>
-      <div className='workorder-right-container'>
+      <div className="workorder-right-container">
         {loading && <p className="workorder-loading">Loading...</p>}
         {error && <p className="workorder-error">{error}</p>}
         {summary && (

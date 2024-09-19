@@ -22,9 +22,7 @@
   overflow: auto;
   
   }
-  .wordorder-suggestions{
-    color: white;
-  }
+
 
   .workorder-form {
     display: flex;
@@ -91,15 +89,17 @@
 
   }
 
-  .workorder-suggestions{
+  .workorder-suggestions {
     color: white;
-    overflow: auto;
-    max-height: 30vh;
     width: 20vw;
+    margin-top: 30px;
+    margin-right: 20px;
+    line-height: 1.25;
     overflow-x: hidden;
-    margin-top: 30px; margin-right: 20px;
-  
-  }
+    padding-right: 20px;
+    overflow-y: hidden;
+}
+
 
   .workorder-checkbox{
     display: flex;
@@ -107,8 +107,12 @@
 
   }
 
-  .workorder-left-menu{
+  .workorder-left-menu {
     margin-top: 20px;
     margin-left: 20px;
-  }
+    height: 95%; /* Make it take full height */
+    display: flex;
+    flex-direction: column; /* Ensure content stacks vertically */
+    overflow: hidden; /* Prevent content from leaking */
+}
 

@@ -38,7 +38,7 @@ Session(app)
 CORS(app, resources={r"/*": {"origins": "*"}}, supports_credentials=True)
 login_manager = LoginManager(app)
 login_manager.login_view = 'login'
-
+ 
 # @app.route('/', defaults={'path': ''})
 # @app.route('/<path:path>')
 # def serve_react_app(path):
@@ -273,10 +273,10 @@ class User(UserMixin):
 
 
 @functools.lru_cache(maxsize=100)
-def get_summary_from_model(work_order_number, combined_content):
+def get_summary_from_model(work_order_number, combined_content, selected_options):
     model = Model('reports')
     chat_session = model.create_chat_session([])
-    summary = model.generate_summary(chat_session, combined_content)
+    summary = model.generate_summary(chat_session, combined_content, selected_options)
     return summary.text
 
 def generate_all_forms(word):
@@ -507,9 +507,13 @@ def logout():
 def search_work_order():
     data = request.get_json()
     work_order_number = data.get('workOrderNumber')
+    selected_options = data.get('selectedOptions', [])  # Get selected options from the request
+
     if not work_order_number:
         return jsonify({"summary": "Work order number is required."}), 400
 
+
+    # The rest of your logic for handling the work order search...
     conn = sqlite3.connect('data.db')
     cursor = conn.cursor()
     cursor.execute("SELECT filename, content FROM documents WHERE filename LIKE ?", (f'%{work_order_number}%',))
@@ -518,10 +522,11 @@ def search_work_order():
 
     if filtered_documents:
         combined_content = " ".join([doc["content"] for doc in filtered_documents])
-        summary = get_summary_from_model(work_order_number, combined_content)
+        summary = get_summary_from_model(work_order_number, combined_content, tuple(selected_options))
         return jsonify({"summary": summary, "filenames": [doc["filename"] for doc in filtered_documents]})
     else:
         return jsonify({"summary": "No relevant documents found for this work order number."}), 404
+
 
 @app.route('/reports/relevancy', methods=['POST'])
 def chatbot_request():
