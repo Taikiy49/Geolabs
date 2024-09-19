@@ -11,8 +11,6 @@
 .query-centering-container {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
     gap: 20px;
     background-color: black;
   border: 2px solid white;
@@ -41,7 +39,6 @@
 
 .relevancy-chatbot-section {
     display: flex;
-    height: 80vh;
     background-color: rgba(0, 0, 255, 0.1);
     border: 2px solid white;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 1);
@@ -50,15 +47,14 @@
 }
 
 .relevancy-chatbot-container {
-
+    height: 80vh;
     display: flex;
-    width: 700px;
     overflow-x: hidden;
     flex-direction: column;
     justify-content: flex-start; /* Ensure items are aligned to the top */
     align-items: flex-start; /* Align items to the start (left side) */
-    gap: 15px; /* Add space between items */
-    padding: 30px; /* Padding around the container */
+    gap: 10px;
+    padding: 20px;
     box-sizing: border-box; /* Include padding in the element's total width and height */
 }
 
@@ -70,17 +66,15 @@
     padding: 10px 15px;
     font-size: 16px;
     border: none;
-    background-color: black;
+
     border: 2px solid white;
     border-radius: 5px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 1);
-    color: white;
-    width: 400px;
+    color: black;
+    width: 20vw;
     height: 15px;
-    margin-bottom: 20px;
     outline: none;
     margin-left: auto;  
-    margin-right: 100px;
 }
 
 .relevancy-controls {
@@ -158,8 +152,8 @@
 
 /* File list and item styling */
 .relevancy-file-list-container {
+    margin-top: 30px;
     padding-right: 30px;
-    height: 64.5vh;
     overflow-x: hidden;
     overflow-y: auto;
     scrollbar-width: thin;
@@ -167,6 +161,7 @@
     scroll-behavior: smooth;
     border-radius: 5px; /* Rounded corners */
     padding: 30px;
+    height: 62vh;
 }
 .relevancy-file-list-container.active {
     display: block;
@@ -184,21 +179,22 @@
 }
 
 .relevancy-file-item {
-    width: 30vw;
+    word-wrap: break-word;  /* Break long words within the item */
+    word-break: break-all;   /* Ensure long words break if needed */
+    white-space: normal;     /* Allow text to wrap to the next line */
+    width: 20vw;
     padding: 15px;
     font-size: 20px;
-  font-weight: normal;
-  user-select: none;
-  background-color: #151414;
-  border: 1px solid #2a2928;
-  background-color: black;
-  border: 1px solid white;
-  color: white;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 1);
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.3s ease;
+    font-weight: normal;
+    user-select: none;
+    background-color: #151414;
+    border: 1px solid #2a2928;
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 1);
+    cursor: pointer;
 }
-
 
 .relevancy-file-item:hover {
     background-color: var(--neutral-800);
@@ -244,8 +240,6 @@
 }
 
 .relevancy-reset-button {
-    margin-top: 220px;
-    margin-left: 100px;
     cursor: pointer;
 
 }
@@ -261,16 +255,17 @@
 
 /* Chatbot section input and button */
 .relevancy-chatbot-input {
-    width: 610px;
+    width: 25vw;
     justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
     height: 15px;
     outline: none;
     padding: 10px 15px;
     border: none;
     border-radius: 5px;
-    background-color: black;
     border: 2px solid white;
-    color: white;
+    color: black;
     font-size: 16px;
     transition: background-color 0.3s ease, color 0.3s ease;
     margin-top: auto;
@@ -287,8 +282,8 @@
 /* Chatbot response section */
 .relevancy-chatbot-response {
     font-size: 20px;
-    height: 100%;
-    width: 615px;
+    height: 80vh;
+    width: 40vw;
     overflow-y: auto;
     color: white;
     padding: 10px;
@@ -305,7 +300,6 @@
 
 .relevancy-submitted-query {
     align-self: flex-start; /* Align the submitted query to the top */
-    margin-bottom: 10px; /* Add space below the submitted query */
     color: white;
 }
 
@@ -328,9 +322,15 @@
 .relevancy-last-search
 {   
     margin-right: 50px;
+    margin-top: 30px;
     color: white;
     font-size: 20px;
-    margin-bottom: 100px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: black;
+    border: 1px solid white;
+
 }
 
 .relevancy-form{
@@ -401,6 +401,7 @@
   
   .relevancy-left-menu{
     gap: 50px;
+    height: 68vh;
   }
 
 /* Individual checkbox label styling */
@@ -450,6 +451,7 @@
 
 .range-input-container {
     display: flex;
+    margin-left: auto;
     gap: 10px; /* Space between the input boxes and the dash */
     margin-bottom: 20px; /* Space below the input boxes */
     align-items: center; /* Center items vertically */
@@ -470,20 +472,14 @@
     padding: 10px 15px;
     font-size: 16px;
     border: 2px solid white;
-    background-color: black;
     border-radius: 5px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 1);
-    color: white;
+    color: black;
     outline: none; /* Remove default outline */
-    width: 150px; /* Width for the input boxes */
+    width: 5vw; /* Width for the input boxes */
     transition: background-color 0.3s ease, border-color 0.3s ease; /* Smooth transition for background and border */
 }
 
-/* Hover and focus effect for range input */
-.range-input:hover, .range-input:focus {
-    background-color: #1a1a1a; /* Darker background on hover and focus */
-    border-color: var(--primary-400); /* Use primary theme color on hover and focus */
-}
 
 /* Placeholder styling for range input */
 .range-input::placeholder {

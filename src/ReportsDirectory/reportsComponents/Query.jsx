@@ -265,7 +265,6 @@ const Query = () => {
                 dangerouslySetInnerHTML={{ __html: chatbotResponse }}
               />
 
-              {loading && <div className="loading-spinner">...</div>}
 
               <div className="relevancy-file-count-text">
                 {selectedFiles.length} files selected

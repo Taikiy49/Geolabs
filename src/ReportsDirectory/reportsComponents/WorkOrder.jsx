@@ -6,10 +6,20 @@ import getConfig from '../../config';
 const WorkOrder = () => {
   const [workOrderNumber, setWorkOrderNumber] = useState('');
   const [summary, setSummary] = useState('');
-  const [suggestions, setSuggestions] = useState([]); // State to store work order suggestions
+  const [suggestions, setSuggestions] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
+  const [selectedOptions, setSelectedOptions] = useState([]); // State to store selected checkboxes
   const { apiUrl } = getConfig();
+
+  const options = [
+    'Subsurface Conditions',
+    'Project Considerations',
+    'Summary of Recommendations',
+    'Foundations',
+    'Earthwork',
+    'Pavement',
+  ];
 
   // Fetch work order suggestions as user types
   useEffect(() => {
@@ -37,6 +47,9 @@ const WorkOrder = () => {
     setError('');
     setSummary('');
 
+    // Log selected options to the terminal
+    console.log('Selected options:', selectedOptions);
+
     try {
       const response = await axios.post(`${apiUrl}/reports/search-work-order`, { workOrderNumber });
       if (response.data.summary) {
@@ -56,10 +69,32 @@ const WorkOrder = () => {
     }
   };
 
+  const handleCheckboxChange = (option) => {
+    setSelectedOptions((prevSelected) =>
+      prevSelected.includes(option)
+        ? prevSelected.filter((item) => item !== option)
+        : [...prevSelected, option]
+    );
+  };
+
   return (
     <div className="workorder-container">
       <div className='workorder-left-menu'>
-        <p className='workorder-instructions-text'>Enter work order:</p>
+
+        {/* Render checkboxes */}
+        {options.map((option, index) => (
+          <label key={index} className="workorder-checkbox">
+            <input
+              type="checkbox"
+              value={option}
+              checked={selectedOptions.includes(option)}
+              onChange={() => handleCheckboxChange(option)}
+            />
+            {option}
+          </label>
+        ))}
+
+        <p className='workorder-instructions-text'>Work order number:</p>
         <form onSubmit={handleSearch} className="workorder-form">
           <input
             type="text"
@@ -87,7 +122,7 @@ const WorkOrder = () => {
             <div dangerouslySetInnerHTML={{ __html: summary }} />
           </div>
         )}
-        </div>
+      </div>
     </div>
   );
 };
