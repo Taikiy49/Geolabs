@@ -175,19 +175,8 @@ const Query = () => {
 
   return (
     <div className="relevancy-page-container" onMouseUp={handleMouseUp}>
-      {useFileSelector === null ? (
-        <div className="relevancy-prompt-container">
-          <p className="relevancy-prompt-text">Would you like to use the relevancy file search?</p>
-          <div className="relevancy-prompt-buttons">
-            <button className="relevancy-prompt-button relevancy-yes-button" onClick={() => handleChoice(true)}>Yes</button>
-            <button className="relevancy-prompt-button relevancy-no-button" onClick={() => handleChoice(false)}>No</button>
-          </div>
-        </div>
-      ) : (
         <div className="query-centering-container">
           <div className="relevancy-file-section">
-            {useFileSelector && (
-              <>
                 {/* Input fields for range selection */}
                 <div className="range-input-container">
                   <input
@@ -260,8 +249,7 @@ const Query = () => {
                     </div>
                   </div>
                 )}
-              </>
-            )}
+  
           </div>
 
           <div className="relevancy-chatbot-section">
@@ -295,7 +283,6 @@ const Query = () => {
             </div>
           </div>
         </div>
-      )}
     </div>
   );
 };

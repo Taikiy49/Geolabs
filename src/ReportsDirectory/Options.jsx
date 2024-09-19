@@ -159,26 +159,18 @@ const Options = ({ isMainPage }) => {
      
         {isMainPage && (
           <div className="reports-software-sections">
-            <div className='reports-centering-text-container'>
-              <div className='reports-text-container'>
-                <h1 className="reports-software-title">REPORTS</h1>
-                <div className='reports-desc-more-container'>
-                  <p className='reports-software-description'>Please note that this software is currently under development. Some features may be incomplete or not functioning at their full capacity at this time.</p>
-                  <button className='reports-more-button'>Learn more</button>
-                </div>
-              </div>
-            </div>
             <div className='reports-mini-container'>
               <div className="reports-file-actions-container">
                 <div className='reports-centering-file-list-container'>
-                  <div className="reports-file-search-bar">
+                  <div className="reports-file-top-bar">
                     <div className='reports-file-count'>{totalFiles} Files</div>
-                      <input
-                        type="text"
-                        placeholder="Enter filename..."
-                        value={searchQuery}
-                        onChange={(e) => setSearchQuery(e.target.value)}
-                      />
+                    <input
+                      type="text"
+                      placeholder="Enter filename..."
+                      value={searchQuery}
+                      onChange={(e) => setSearchQuery(e.target.value)}
+                      className='reports-file-search-bar'
+                    />
                     </div>
                   <div className="reports-file-list-container">
                     <div className="reports-scrollable-file-list">

@@ -206,27 +206,28 @@
   margin-bottom: 50px;
 }
 
+.reports-file-top-bar{
+  display: flex;
+  gap: 100px; margin-top: 20px; margin-bottom: 20px;
+
+}
+
 .reports-file-count {
   font-size: 25px; color: white; margin-left: 20px;
-  margin-right: auto;
   background-color: black;
   border: 2px solid white;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 1);
   padding: 10px; border-radius: 5px;
+  width: 115px;
 }
 
 .reports-file-search-bar {
-  display: flex;
-  height: 50px;
-  align-items: center;
-  margin-top: 25px;
-  width: 48vw;
-
-
-  gap: 300px; 
-  margin-bottom: 10px;
-
-  padding: 15px 20px;
+  font-size: 20px; color: white; margin-left: 20px;
+  background-color: black;
+  border: 2px solid white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 1);
+  padding: 10px; border-radius: 5px;
+  width: 15vw;
 }
 
 .reports-file-list-search-title {
@@ -260,6 +261,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 50vw;
 }
 
 .reports-file-list-container {
@@ -328,7 +330,7 @@
   padding: 20px;
   padding-right: 3px;
   border-radius: 5px;
-  margin-bottom: 200px;
+  margin-top: 20px; margin-bottom: 20px;
 }
 
 .reports-option-logo {

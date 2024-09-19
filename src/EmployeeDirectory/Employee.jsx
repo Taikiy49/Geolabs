@@ -63,17 +63,6 @@ const Employee = () => {
     <div className="employee-container">
       <div className="employee-inner-borders">
         <div className="employee-sections">
-          <div className='employee-centering-text-container'>
-            <div className='employee-text-container'>
-              <h1 className="employee-title">EMPLOYEE GUIDE</h1>
-              <div className='employee-desc-more-container'>
-                <p className='employee-description'>
-                  Please note that this software is currently under development. Some features may be incomplete or not functioning at their full capacity at this time.
-                </p>
-                <button className='employee-more-button'>Learn more</button>
-              </div>
-            </div>
-          </div>
           <div className='employee-mini-container'>
             <div className="employee-section">
               <div className="employee-options-container">
@@ -81,17 +70,6 @@ const Employee = () => {
                   <div key={index} className="employee-option-box" onClick={() => handleOptionClick(option)}>
                     <h2>{option.title}</h2>
                     <p>{option.description}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            <div className="employee-file-actions-container">
-              <div className="employee-add-remove-container">
-                {filteredBottomOptions.map((option, index) => (
-                  <div key={index} className="employee-add-remove-option-box" onClick={option.title === 'Upload' ? openFileDialog : null}>
-                    <i className={option.icon}></i>
-                    <p className='employee-remove-text'>{option.title}</p>
                   </div>
                 ))}
               </div>
@@ -110,4 +88,17 @@ const Employee = () => {
   );
 };
 
+
+
+
+{/* <div className="employee-file-actions-container">
+              <div className="employee-add-remove-container">
+                {filteredBottomOptions.map((option, index) => (
+                  <div key={index} className="employee-add-remove-option-box" onClick={option.title === 'Upload' ? openFileDialog : null}>
+                    <i className={option.icon}></i>
+                    <p className='employee-remove-text'>{option.title}</p>
+                  </div>
+                ))}
+              </div>
+            </div> */}
 export default Employee;

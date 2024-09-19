@@ -655,6 +655,25 @@ def open_file():
         return jsonify({'error': str(e)}), 500
 
 
+@app.route('/reports/work-order-suggestions', methods=['GET'])
+def work_order_suggestions():
+    query = request.args.get('query', '')
+    if not query:
+        return jsonify({"suggestions": []})
+
+    conn = sqlite3.connect('data.db')
+    cursor = conn.cursor()
+
+    # Search for work order numbers that start with the query
+    cursor.execute("SELECT DISTINCT filename FROM documents WHERE filename LIKE ?", (f'{query}%',))
+    results = cursor.fetchall()
+    conn.close()
+
+    suggestions = [row[0] for row in results]
+
+    return jsonify({"suggestions": suggestions})
+
+
 if __name__ == '__main__':
     # webbrowser.open("http://localhost:8000")
     app.run(host='0.0.0.0', port=8000)

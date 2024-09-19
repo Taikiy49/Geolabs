@@ -1,18 +1,46 @@
 /* Container for the handbook page */
 .handbook-page-container {
     display: flex;
-    height: 100%;
+    height: 90vh;
     flex-direction: column;
     align-items: center;
+    
 }
 
+.handbook-chatbot-notice-text{
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 15px;
+    margin-top: auto;
+    margin-top: 5px;
+}
+
+.handbook-inside-container{
+    display: flex;
+    flex-direction: column;
+    height: 85vh;
+    margin-top: 20px;
+    background-color: rgba(0, 0, 255, 0.1);
+    border: 2px solid white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 1);
+}
+
+.handbook-form{
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    margin-bottom: 20px;
+}
 
 /* Handbook search section styling */
 .handbook-search-section {
+    
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100vw;
+
+  
 }
 
 .handbook-input-field {
@@ -22,13 +50,9 @@
     font-size: 16px;
     border-radius: 10px;
     border: none;
-    color: var(--neutral-100);
-    background-color: var(--neutral-800);
     outline: none;
-}
-
-.handbook-input-field:focus {
-    border: 2px solid var(--primary-400); /* Blue border on focus to highlight the active field */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Error message styling */
@@ -41,10 +65,17 @@
 
 /* Response container styling */
 .handbook-response-container {
-    width: 1000px; 
+    background-color: black;
+    width: 50vw;
+    border-radius: 5px;
+    height: 73.5vh;
+    margin-top: 15px; margin-left: 20px; margin-right: 20px; margin-bottom: 15px;
+    border: 2px solid white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 1);
     font-weight: normal; overflow: auto;
     padding: 20px;
-    color: var(--neutral-100);
+    color: white;
+    overflow: auto;
 }
 
 /* Handbook response list styling */
@@ -58,14 +89,14 @@
     padding-left: 20px;
     text-indent: -20px;
     margin-bottom: 10px;
-    color: var(--neutral-100);
+    color: white;
 }
 
 
 /* Loading spinner */
 .loading-spinner {
     font-size: 16px;
-    color: var(--neutral-100);
+    color: white;
     margin-top: 10px;
     text-align: center;
     animation: blink 1s infinite; /* Blinking dots effect */
@@ -80,7 +111,6 @@
   /* User message styling */
   .user-message {
     align-self: flex-end;
-    background-color: var(--primary-500);
     color: white;
     padding: 8px;
     border-radius: 10px;
@@ -92,7 +122,6 @@
   /* Model message styling */
   .model-message {
     align-self: flex-start;
-    background-color: var(--neutral-800);
     color: white;
     padding: 8px;
     border-radius: 10px;
@@ -104,7 +133,7 @@
 /* Loading spinner */
 .loading-spinner {
     font-size: 16px;
-    color: var(--neutral-100);
+    color: white;
     margin-top: 10px;
     text-align: center;
     animation: blink 1s infinite; /* Blinking dots effect */
@@ -124,12 +153,15 @@
 
 /* Messages aligned to the left */
 .right-message {
-    margin-left: auto; width: 300px; margin-top: 20px;
-    background-color: var(--neutral-800); padding: 15px;
+    margin-left: auto; width: 20vw; margin-top: 20px; margin-right: 2vw;
     color: white;
+    background-color: rgba(0, 0, 255, 0.1);
+    padding: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 1);
+    
 }
 
 .left-message {
-    margin-right: auto; width:600px; margin-top: 20px; padding: 10px;
+    margin-right: auto; width: 30vw; margin-top: 20px; 
     color: white; 
 }
