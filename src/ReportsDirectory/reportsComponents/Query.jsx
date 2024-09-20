@@ -224,7 +224,7 @@ const Query = () => {
     try {
       // Only use the selected files for generating the summary
       const response = await axios.post(`${apiUrl}/reports/generate-summary`, {
-        filenames: selectedFiles, // Only selected files
+        filenames: selectedFiles, // Pass all selected filenames
         selectedOptions, // Use the selected checkboxes/options
       });
   
@@ -246,6 +246,7 @@ const Query = () => {
       setLoading(false); // Re-enable the buttons
     }
   };
+  
   
   
 

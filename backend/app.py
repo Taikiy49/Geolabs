@@ -515,22 +515,29 @@ def generate_summary():
     # Fetch content for the selected files from the database
     conn = sqlite3.connect('data.db')
     cursor = conn.cursor()
-    cursor.execute(
-        f"SELECT filename, content FROM documents WHERE filename IN ({','.join('?' * len(filenames))})",
-        filenames
-    )
+
+    query = "SELECT filename, content FROM documents WHERE filename IN ({})".format(','.join(['?'] * len(filenames)))
+    cursor.execute(query, filenames)
     filtered_documents = [{"filename": row[0], "content": row[1]} for row in cursor.fetchall()]
     conn.close()
 
     if filtered_documents:
-        # Combine the content of the selected files
+        # Combine the content of all selected files
         combined_content = " ".join([doc["content"] for doc in filtered_documents])
 
-        # Generate summary using the selected options
-        summary = get_summary_from_model("Selected Files", combined_content, tuple(selected_options))
-        return jsonify({"summary": summary, "filenames": [doc["filename"] for doc in filtered_documents]})
+        # Generate summary using the combined content from all files and the selected options
+        model = Model('reports')
+        chat_session = model.create_chat_session([])
+        summary_response = model.generate_summary(chat_session, filenames, combined_content, tuple(selected_options))
+
+        # Extract the text from the summary response
+        summary_text = summary_response.text
+
+        # Return the summary and the filenames used
+        return jsonify({"summary": summary_text, "filenames": [doc["filename"] for doc in filtered_documents]})
     else:
         return jsonify({"summary": "No relevant documents found for the selected files."}), 404
+
 
 
 
@@ -539,13 +546,6 @@ def chatbot_request():
     data = request.get_json()
     filenames = data.get('filenames', [])  # Get the selected filenames from the user's request
     prompt = data.get('prompt', '')
-    use_file_selector = data.get('useFileSelector', True)
-
-    if not use_file_selector:
-        # Use keyword extraction if file selector is not being used
-        keywords_list = extract_and_rank_keywords(prompt)
-        documents = get_filtered_documents(keywords_list)
-        filenames = [doc["filename"] for doc in documents[:5]]
 
     if not filenames:
         return jsonify({"response": "No files selected or found."}), 400
@@ -553,12 +553,17 @@ def chatbot_request():
     # Fetch content for selected filenames only
     conn = sqlite3.connect('data.db')
     cursor = conn.cursor()
+
+    # Correctly format the query to fetch multiple files
     cursor.execute(
-        f"SELECT filename, content FROM documents WHERE filename IN ({','.join('?' * len(filenames))})",
+        "SELECT filename, content FROM documents WHERE filename IN ({})".format(','.join('?' for _ in filenames)),
         filenames
     )
     documents = [{"filename": row[0], "content": row[1]} for row in cursor.fetchall()]
     conn.close()
+
+    if not documents:
+        return jsonify({"response": "No relevant documents found for the selected files."}), 404
 
     # Rank documents using BM25
     ranked_documents = rank_documents_by_bm25(prompt, documents)
@@ -568,13 +573,12 @@ def chatbot_request():
     history = model.create_chat_history(ranked_documents)
     chat_session = model.create_chat_session(history)
 
-    # Pass the sorted filenames (by relevance) to the generate_response method
+    # Generate the response from the selected documents only
     response = model.generate_response(chat_session, prompt, [doc['filename'] for doc in ranked_documents]).text
 
-    # Sort filenames by their BM25 score in descending order
-    sorted_filenames = [doc['filename'] for doc in ranked_documents]
+    return jsonify({"response": response, "ranked_filenames": [doc['filename'] for doc in ranked_documents]})
 
-    return jsonify({"response": response, "ranked_filenames": sorted_filenames})
+
 
 
 # Employee Section
