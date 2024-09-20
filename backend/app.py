@@ -503,29 +503,35 @@ def logout():
     logout_user()
     return jsonify({"message": "Logged out successfully"}), 200
 
-@app.route('/reports/search-work-order', methods=['POST'])
-def search_work_order():
+@app.route('/reports/generate-summary', methods=['POST'])
+def generate_summary():
     data = request.get_json()
-    work_order_number = data.get('workOrderNumber')
+    filenames = data.get('filenames', [])  # Get selected filenames from the request
     selected_options = data.get('selectedOptions', [])  # Get selected options from the request
 
-    if not work_order_number:
-        return jsonify({"summary": "Work order number is required."}), 400
+    if not filenames:
+        return jsonify({"summary": "At least one file must be selected."}), 400
 
-
-    # The rest of your logic for handling the work order search...
+    # Fetch content for the selected files from the database
     conn = sqlite3.connect('data.db')
     cursor = conn.cursor()
-    cursor.execute("SELECT filename, content FROM documents WHERE filename LIKE ?", (f'%{work_order_number}%',))
+    cursor.execute(
+        f"SELECT filename, content FROM documents WHERE filename IN ({','.join('?' * len(filenames))})",
+        filenames
+    )
     filtered_documents = [{"filename": row[0], "content": row[1]} for row in cursor.fetchall()]
     conn.close()
 
     if filtered_documents:
+        # Combine the content of the selected files
         combined_content = " ".join([doc["content"] for doc in filtered_documents])
-        summary = get_summary_from_model(work_order_number, combined_content, tuple(selected_options))
+
+        # Generate summary using the selected options
+        summary = get_summary_from_model("Selected Files", combined_content, tuple(selected_options))
         return jsonify({"summary": summary, "filenames": [doc["filename"] for doc in filtered_documents]})
     else:
-        return jsonify({"summary": "No relevant documents found for this work order number."}), 404
+        return jsonify({"summary": "No relevant documents found for the selected files."}), 404
+
 
 
 @app.route('/reports/relevancy', methods=['POST'])

@@ -24,6 +24,8 @@
     font-size: 20px;
     margin-left: auto;
     margin-top: auto;
+    margin-top: 20px;
+    margin-right: 5px;
 }
 
 /* File selection section */
@@ -47,7 +49,7 @@
 }
 
 .relevancy-chatbot-container {
-    height: 80vh;
+    height: 82vh;
     display: flex;
     overflow-x: hidden;
     flex-direction: column;
@@ -66,12 +68,12 @@
     padding: 10px 15px;
     font-size: 16px;
     border: none;
-
+    background-color: black;
     border: 2px solid white;
     border-radius: 5px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 1);
-    color: black;
-    width: 20vw;
+    color: white;
+    width: 15vw;
     height: 15px;
     outline: none;
     margin-left: auto;  
@@ -228,6 +230,7 @@
 }
 
 .reset-button-img {
+
     height: 50px;
     width: 55px;
     color: white;
@@ -235,12 +238,15 @@
 
 .relevancy-reset-button-text {
     font-weight: normal;
-    margin: 0 auto; color: white;
-    font-size: 20px;
+    color: white;
+    font-size: 20px; margin-top: -10px;
+    margin-left: 5px;
 }
 
 .relevancy-reset-button {
     cursor: pointer;
+    margin-left: auto;
+    margin-right: 10px;
 
 }
 
@@ -254,6 +260,13 @@
 }
 
 /* Chatbot section input and button */
+.relevancy-chatbot-input-form{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
 .relevancy-chatbot-input {
     width: 25vw;
     justify-content: center;
@@ -265,18 +278,17 @@
     border: none;
     border-radius: 5px;
     border: 2px solid white;
-    color: black;
+    background-color: black;
+    color: white;
     font-size: 16px;
     transition: background-color 0.3s ease, color 0.3s ease;
-    margin-top: auto;
+
 }
 
 /* Disabled state styling */
 .relevancy-chatbot-input.disabled {
-    border: none;
-    background-color: black;/* Gray background when disabled */
     cursor: not-allowed; /* Not allowed cursor */
-    width: 1px;
+    opacity: 0.5;
 }
 
 /* Chatbot response section */
@@ -321,20 +333,19 @@
 
 .relevancy-last-search
 {   
-    margin-right: 50px;
-    margin-top: 30px;
     color: white;
     font-size: 20px;
     font-weight: bold;
     padding: 10px;
     border-radius: 10px;
-    background-color: black;
-    border: 1px solid white;
 
 }
 
 .relevancy-form{
-    display: row;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+
 }
 
 
@@ -399,10 +410,7 @@
     color: gray;
   }
   
-  .relevancy-left-menu{
-    gap: 50px;
-    height: 68vh;
-  }
+
 
 /* Individual checkbox label styling */
 .work-order-filter-section label {
@@ -432,7 +440,10 @@
     var(--primary-400); /* Add glow effect on hover */
 }
 
+.relevancy-file-top-menu{
+    display: flex;
 
+}
 
 .normal-text {
     font-weight: normal;
@@ -452,6 +463,8 @@
 .range-input-container {
     display: flex;
     margin-left: auto;
+    margin-right: auto;
+
     gap: 10px; /* Space between the input boxes and the dash */
     margin-bottom: 20px; /* Space below the input boxes */
     align-items: center; /* Center items vertically */
@@ -471,10 +484,11 @@
 .range-input {
     padding: 10px 15px;
     font-size: 16px;
+    background-color: black;
     border: 2px solid white;
     border-radius: 5px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 1);
-    color: black;
+    color: white;
     outline: none; /* Remove default outline */
     width: 5vw; /* Width for the input boxes */
     transition: background-color 0.3s ease, border-color 0.3s ease; /* Smooth transition for background and border */
@@ -486,3 +500,78 @@
     color: gray; /* Lighter color for the placeholder text */
     opacity: 0.8; /* Slight transparency */
 }
+
+.relevancy-summary-checkboxes-container{
+    color: white;
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px; margin-left: 20px;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+
+.relevancy-generate-summary-button{
+    color: black;
+    padding: 10px 5px;
+    background-color: white;
+    width: 100px;
+    border-radius: 10px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+}
+
+
+.relevancy-generate-summary-button:hover{
+    background-color: gray;
+}
+
+
+.relevancy-submit-button {
+    background-color: #ffffff;
+    color: black;
+    border: 2px solid white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 20px;
+
+  }
+  
+  .relevancy-submit-button:hover {
+    background-color: gray;
+  }
+  
+  .relevancy-submit-button:disabled {
+    color: transparent;
+    background-color: transparent;
+    border: none;
+    cursor: not-allowed;
+  }
+  
+  .relevancy-right-menu-container{
+    border-left: 2px solid white;
+  }
+
+
+  .relevancy-generated-summary{
+    color: white;
+  }
+
+
+  /* Disabled state styling for checkboxes and buttons */
+.relevancy-workorder-checkbox.disabled {
+    opacity: 0.5; /* Make checkboxes appear semi-transparent */
+    pointer-events: none; /* Disable interaction */
+  }
+  
+  .relevancy-generate-summary-button.disabled {
+    opacity: 0.5; /* Make button appear semi-transparent */
+    pointer-events: none; /* Disable interaction */
+    background-color: transparent; /* Or adjust color */
+    cursor: not-allowed; /* Change cursor to show it's disabled */
+  }
+  
