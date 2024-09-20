@@ -105,8 +105,26 @@ const Query = () => {
     setLoading(true);
   
     try {
+      let filenamesToUse = selectedFiles;
+  
+      // If no files have been selected and useFileSelector is false, perform keyword-based search
+      if (selectedFiles.length === 0 && !useFileSelector) {
+        const response = await axios.post(`${apiUrl}/reports/search-filenames`, {
+          prompt: chatbotPrompt,
+          rangeStart,
+          rangeEnd,
+        });
+        filenamesToUse = response.data.filenames.slice(0, 5); // Limit to the first 5 files
+      }
+  
+      if (filenamesToUse.length === 0) {
+        setError('No files selected or found.');
+        setLoading(false);
+        return;
+      }
+  
       const response = await axios.post(`${apiUrl}/reports/relevancy`, {
-        filenames: selectedFiles,
+        filenames: filenamesToUse,
         prompt: chatbotPrompt,
         useFileSelector,
       });
@@ -134,11 +152,12 @@ const Query = () => {
       setError('An error occurred while processing your request. Please try again.');
       setLoading(false);
     }
-    // No need to reset the chatbotPrompt, this ensures the input remains visible
   };
+  
   
 
   const handleFileSelection = (fileName) => {
+    setUseFileSelector(true); // Prioritize selected files
     setSelectedFiles((prevSelected) => {
       if (prevSelected.includes(fileName)) {
         return prevSelected.filter((name) => name !== fileName);
@@ -148,6 +167,7 @@ const Query = () => {
       return prevSelected;
     });
   };
+  
 
   const handleMouseDown = (fileName) => {
     setIsSelecting(true);
@@ -202,16 +222,18 @@ const Query = () => {
     setLoading(true); // This will also disable the buttons
   
     try {
+      // Only use the selected files for generating the summary
       const response = await axios.post(`${apiUrl}/reports/generate-summary`, {
-        filenames: selectedFiles,
-        selectedOptions,
+        filenames: selectedFiles, // Only selected files
+        selectedOptions, // Use the selected checkboxes/options
       });
   
       if (response.data.summary) {
         let formattedSummary = response.data.summary
-          .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
-          .replace(/^\s*\*\s*(.+)$/gm, '<li>$1</li>')
-          .replace(/\n/g, '<br>');
+          .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>') // Bold formatting
+          .replace(/^\s*\*\s*(.+)$/gm, '<li>$1</li>') // List formatting
+          .replace(/\n/g, '<br>'); // Line breaks
+  
         formattedSummary = `<ul>${formattedSummary}</ul>`;
         setChatbotResponse(formattedSummary); // Set the summary in the same box
       } else {
@@ -224,6 +246,7 @@ const Query = () => {
       setLoading(false); // Re-enable the buttons
     }
   };
+  
   
 
   return (
