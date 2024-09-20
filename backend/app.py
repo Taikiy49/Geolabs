@@ -35,7 +35,7 @@ app.config['SESSION_COOKIE_SAMESITE'] = 'Lax'  # or 'Strict' or 'None'
 
 Session(app)
 
-CORS(app, resources={r"/*": {"origins": "*"}}, supports_credentials=True)
+CORS(app, resources={r"/*": {"origins": "*"}})
 login_manager = LoginManager(app)
 login_manager.login_view = 'login'
  
