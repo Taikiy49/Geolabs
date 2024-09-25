@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import '../reportsStyle/WorkOrder.css';
 import getConfig from '../../config';
@@ -6,10 +6,38 @@ import getConfig from '../../config';
 const WorkOrder = () => {
   const [workOrderNumber, setWorkOrderNumber] = useState('');
   const [summary, setSummary] = useState('');
+  const [suggestions, setSuggestions] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
+  const [selectedOptions, setSelectedOptions] = useState([]); // State to store selected checkboxes
   const { apiUrl } = getConfig();
 
+  const options = [
+    'Subsurface Conditions',
+    'Project Considerations',
+    'Summary of Recommendations',
+    'Foundations',
+    'Earthwork',
+    'Pavement',
+  ];
+
+  // Fetch work order suggestions as the user types
+  useEffect(() => {
+    if (workOrderNumber.length > 1) {
+      axios
+        .get(`${apiUrl}/reports/work-order-suggestions?query=${workOrderNumber}`)
+        .then((response) => {
+          setSuggestions(response.data.suggestions);
+        })
+        .catch((err) => {
+          console.error(err);
+        });
+    } else {
+      setSuggestions([]);
+    }
+  }, [workOrderNumber]);
+
+  // This function is triggered when the form is submitted (by pressing enter)
   const handleSearch = async (e) => {
     e.preventDefault();
     if (!workOrderNumber) {
@@ -21,14 +49,16 @@ const WorkOrder = () => {
     setSummary('');
 
     try {
-      console.log('Sending work order number:', workOrderNumber); // Debugging line
-      const response = await axios.post(`${apiUrl}/reports/search-work-order`, { workOrderNumber });
+      // Send work order number and selected options (checkboxes) to the backend
+      const response = await axios.post(`${apiUrl}/reports/search-work-order`, {
+        workOrderNumber,
+        selectedOptions, // Include selected options in the request
+      });
       if (response.data.summary) {
-        // Apply similar formatting to the summary as done in SearchDatabase
         let formattedSummary = response.data.summary
           .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
-          .replace(/^\s*\*\s*(.+)$/gm, '<li>$1</li>');
-
+          .replace(/^\s*\*\s*(.+)$/gm, '<li>$1</li>')
+          .replace(/\n/g, '<br>');
         formattedSummary = `<ul>${formattedSummary}</ul>`;
         setSummary(formattedSummary);
       } else {
@@ -42,28 +72,60 @@ const WorkOrder = () => {
     }
   };
 
+  // Handle checkbox selection (local state management)
+  const handleCheckboxChange = (option) => {
+    setSelectedOptions((prevSelected) =>
+      prevSelected.includes(option)
+        ? prevSelected.filter((item) => item !== option)
+        : [...prevSelected, option]
+    );
+  };
+
   return (
     <div className="workorder-container">
-      <h1 className="workorder-title">Work Order Summary</h1>
-      <form onSubmit={handleSearch} className="workorder-form">
-        <input
-          type="text"
-          placeholder="Enter work order number..."
-          value={workOrderNumber}
-          onChange={(e) => setWorkOrderNumber(e.target.value)}
-          className="workorder-input"
-        />
-        <button type="submit" className="workorder-button">Search</button>
-      </form>
-      {loading && <p className="workorder-loading">Loading...</p>}
-      {error && <p className="workorder-error">{error}</p>}
-      {summary && (
-        <div className="workorder-summary">
-          <h2>Summary:</h2>
-          {/* Display formatted summary */}
-          <div dangerouslySetInnerHTML={{ __html: summary }} />
-        </div>
-      )}
+      <div className="workorder-left-menu">
+        {/* Render checkboxes */}
+        {options.map((option, index) => (
+          <label key={index} className="workorder-checkbox">
+            <input
+              type="checkbox"
+              value={option}
+              checked={selectedOptions.includes(option)}
+              onChange={() => handleCheckboxChange(option)} // Update state only
+            />
+            {option}
+          </label>
+        ))}
+
+        <p className="workorder-instructions-text">Work order number:</p>
+        <form onSubmit={handleSearch} className="workorder-form">
+          <input
+            type="text"
+            placeholder="####-##"
+            value={workOrderNumber}
+            onChange={(e) => setWorkOrderNumber(e.target.value)}
+            className="workorder-input"
+          />
+        </form>
+        {suggestions.length > 0 && (
+          <ul className="workorder-suggestions">
+            {suggestions.map((suggestion, index) => (
+              <li key={index} onClick={() => setWorkOrderNumber(suggestion)}>
+                {suggestion}
+              </li>
+            ))}
+          </ul>
+        )}
+      </div>
+      <div className="workorder-right-container">
+        {loading && <p className="workorder-loading">Loading...</p>}
+        {error && <p className="workorder-error">{error}</p>}
+        {summary && (
+          <div className="workorder-summary">
+            <div dangerouslySetInnerHTML={{ __html: summary }} />
+          </div>
+        )}
+      </div>
     </div>
   );
 };

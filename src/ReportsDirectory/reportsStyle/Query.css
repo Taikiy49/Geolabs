@@ -4,7 +4,6 @@
     flex-direction: row;
     justify-content: center;
     align-items: center; /* Align items vertically to center */
-    height: 80vh; /* Full viewport height */
     padding: 20px; 
     width: 100vw;
 }
@@ -12,58 +11,72 @@
 .query-centering-container {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 100%; 
-    gap: 100px;
+    gap: 20px;
+    background-color: black;
+  border: 2px solid white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 1);
+  padding: 20px;
+  border-radius: 5px;
 }
 
 .relevancy-file-count-text {
     color: white;
-    font-weight: 400;
     font-size: 20px;
-    margin-bottom: 15px; margin-left: auto; margin-right: 10px;
+    margin-left: auto;
+    margin-top: auto;
+    margin-top: 20px;
+    margin-right: 5px;
 }
 
 /* File selection section */
 .relevancy-file-section {
-    padding-right: 20px;
-    margin-top: 20px;
+    background-color: rgba(0, 0, 255, 0.1);
+    border: 2px solid white;
+    border-radius: 5px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 1);
+    padding-right: 30px; padding-left: 40px; padding-top: 20px; padding-bottom: 50px;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Center content vertically */
-    align-items: center; /* Center content horizontally */
 }
 
 .relevancy-chatbot-section {
     display: flex;
-    margin-top: auto;
-    margin-bottom: 8vh;
+    background-color: rgba(0, 0, 255, 0.1);
+    border: 2px solid white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 1);
+    border-radius: 5px;
     
 }
 
 .relevancy-chatbot-container {
-    display: flex; 
-    width: 100%;
+    height: 82vh;
+    display: flex;
+    overflow-x: hidden;
     flex-direction: column;
-
+    justify-content: flex-start; /* Ensure items are aligned to the top */
+    align-items: flex-start; /* Align items to the start (left side) */
+    gap: 10px;
+    padding: 20px;
+    box-sizing: border-box; /* Include padding in the element's total width and height */
 }
 
 
 /* Input field styling */
 .relevancy-input-field {
+    display: flex;
+
     padding: 10px 15px;
     font-size: 16px;
-    border-radius: 5px;
     border: none;
-    color: black;
-    background-color: white;
-    width: 400px;
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 5px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 1);
+    color: white;
+    width: 15vw;
     height: 15px;
-    margin-bottom: 20px;
     outline: none;
-    margin-top: 10px; margin-right: 100px;
+    margin-left: auto;  
 }
 
 .relevancy-controls {
@@ -141,41 +154,49 @@
 
 /* File list and item styling */
 .relevancy-file-list-container {
+    margin-top: 30px;
     padding-right: 30px;
-    height: 50vh;
     overflow-x: hidden;
-    overflow-y: scroll; /* Enable vertical scrolling */
-    scrollbar-width: thin; /* Thin scrollbar for Firefox */
-    scrollbar-color: white transparent; /* White thumb with transparent track */
-    scroll-behavior: smooth; /* Smooth scrolling */
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: white transparent;
+    scroll-behavior: smooth;
+    border-radius: 5px; /* Rounded corners */
+    padding: 30px;
+    height: 62vh;
 }
-
 .relevancy-file-list-container.active {
     display: block;
     opacity: 1;
+    background-color: black;
+    border: 2px solid white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 1);
 }
 
 .relevancy-file-list {
+    
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
 .relevancy-file-item {
-    width: 30vw;
+    word-wrap: break-word;  /* Break long words within the item */
+    word-break: break-all;   /* Ensure long words break if needed */
+    white-space: normal;     /* Allow text to wrap to the next line */
+    width: 20vw;
     padding: 15px;
     font-size: 20px;
-  font-weight: normal;
-  user-select: none;
-  background-color: #151414;
-  border: 1px solid #2a2928;
-  border-radius: 5px;
-  color: white;
-  margin-bottom: 15px;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.3s ease;
+    font-weight: normal;
+    user-select: none;
+    background-color: #151414;
+    border: 1px solid #2a2928;
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 1);
+    cursor: pointer;
 }
-
 
 .relevancy-file-item:hover {
     background-color: var(--neutral-800);
@@ -209,28 +230,29 @@
 }
 
 .reset-button-img {
+
     height: 50px;
     width: 55px;
     color: white;
-    margin: 0 auto; margin-top: 20px;
 }
 
 .relevancy-reset-button-text {
     font-weight: normal;
-    margin: 0 auto; color: white;
-    font-size: 20px;
+    color: white;
+    font-size: 20px; margin-top: -10px;
+    margin-left: 5px;
 }
 
 .relevancy-reset-button {
     cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    margin-top: 15px; margin-right: auto;
+    margin-left: auto;
+    margin-right: 10px;
+
 }
 
 .relevancy-mini-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 .relevancy-reset-button:hover {
@@ -238,52 +260,70 @@
 }
 
 /* Chatbot section input and button */
+.relevancy-chatbot-input-form{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
 .relevancy-chatbot-input {
-    width: 650px;
+    width: 25vw;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
     height: 15px;
     outline: none;
     padding: 10px 15px;
     border: none;
     border-radius: 5px;
-    background-color: white;
-    color: black;
+    border: 2px solid white;
+    background-color: black;
+    color: white;
     font-size: 16px;
-    margin: 20px 0;
     transition: background-color 0.3s ease, color 0.3s ease;
+
 }
 
 /* Disabled state styling */
 .relevancy-chatbot-input.disabled {
-    background-color: gray; /* Gray background when disabled */
-    color: #666; /* Light gray text when disabled */
     cursor: not-allowed; /* Not allowed cursor */
+    opacity: 0.5;
 }
 
 /* Chatbot response section */
 .relevancy-chatbot-response {
-    height: 600px; width: 600px;
-    overflow-y: auto;
-    font-weight: 400;
     font-size: 20px;
+    height: 80vh;
+    width: 40vw;
+    overflow-y: auto;
     color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+    background-color: black;
+    border: 2px solid white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 1);
 }
 
 .relevancy-submitted-query p {
-    font-size: 22px; font-weight: 400; width: 850px;
-    color: var(--primary-100);
+    font-size: 21px; overflow-y: auto;
+    color: white;
+}
+
+.relevancy-submitted-query {
+    align-self: flex-start; /* Align the submitted query to the top */
+    color: white;
 }
 
 .relevancy-chatbot-response ul {
-    list-style: none;
+    list-style: none; /* Remove default list styling */
+    padding: 0;
+    margin: 0;
 }
-
-.relevancy-chatbot-response li {
-    text-indent: -20px;
-    margin-bottom: 10px;
-    color: white;
+.relevancy-chatbot-response ul {
+    list-style: none; /* Remove default list styling */
+    padding: 0;
+    margin: 0;
 }
 
 .relevancy-filename-text {
@@ -292,25 +332,34 @@
 
 
 .relevancy-last-search
-{ 
+{   
     color: white;
-    font-weight: 400; margin-left: auto; margin-right: 50px;
     font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 10px;
+
 }
 
 .relevancy-form{
-    display: row;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+
 }
 
 
 /* Centered prompt container */
 .relevancy-prompt-container {
+    background-color: black;
+    border: 2px solid white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 1);
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 30px;
-    border-radius: 10px;
+    padding: 50px;
+    border-radius: 5px;
     text-align: center;
     z-index: 1000;
 }
@@ -359,5 +408,170 @@
 
   .relevancy-no-button:hover{
     color: gray;
+  }
+  
+
+
+/* Individual checkbox label styling */
+.work-order-filter-section label {
+    border: 2px solid white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 1);
+    padding-left: 20px; margin-right: 20px; border-radius: 5px;
+    padding: 10px;
+    color: white; /* White text color */
+    font-size: 16px; /* Font size for labels */
+    margin-right: 40px; /* Space between checkboxes */
+    margin-bottom: 10px; /* Space below each checkbox for wrapping */
+    display: flex; /* Flexbox for checkbox and label alignment */
+    align-items: center;
+}
+
+/* Checkbox input styling */
+.work-order-filter-section input[type="checkbox"] {
+    margin-right: 5px; /* Space between checkbox and label */
+    cursor: pointer; /* Pointer cursor on hover */
+    transform: scale(1.2); /* Make checkboxes slightly larger */
+    accent-color: var(--primary-400); /* Use primary theme color for checkboxes */
+}
+
+/* Checkbox hover effect */
+.work-order-filter-section input[type="checkbox"]:hover {
+    box-shadow: 0 0 5px 
+    var(--primary-400); /* Add glow effect on hover */
+}
+
+.relevancy-file-top-menu{
+    display: flex;
+
+}
+
+.normal-text {
+    font-weight: normal;
+    color: white;
+    line-height: 1.5; /* Line height for better readability */
+    margin-bottom: 10px; /* Spacing between paragraphs */
+}
+
+.relevancy-chatbot-response strong {
+    font-weight: bold; /* Bold text for headings */
+    color: white; /* Bold text color */
+    display: block; /* Ensure headings are on their own line */
+    margin-top: 10px; /* Add space above headings */
+    margin-bottom: 5px; /* Add space below headings */
+}
+
+.range-input-container {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+
+    gap: 10px; /* Space between the input boxes and the dash */
+    margin-bottom: 20px; /* Space below the input boxes */
+    align-items: center; /* Center items vertically */
+}
+
+/* Styling for the dash between inputs */
+.range-dash {
+    color: white; /* Match the text color to the input field color */
+    font-size: 20px; /* Slightly larger font for visibility */
+    padding: 0 5px; /* Padding on both sides for some space */
+    display: flex; /* Flex to align properly with inputs */
+    justify-content: center; /* Center the dash horizontally */
+    align-items: center; /* Center the dash vertically */
+}
+
+/* Individual range input styling */
+.range-input {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 5px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 1);
+    color: white;
+    outline: none; /* Remove default outline */
+    width: 5vw; /* Width for the input boxes */
+    transition: background-color 0.3s ease, border-color 0.3s ease; /* Smooth transition for background and border */
+}
+
+
+/* Placeholder styling for range input */
+.range-input::placeholder {
+    color: gray; /* Lighter color for the placeholder text */
+    opacity: 0.8; /* Slight transparency */
+}
+
+.relevancy-summary-checkboxes-container{
+    color: white;
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px; margin-left: 20px;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+
+.relevancy-generate-summary-button{
+    color: black;
+    padding: 10px 5px;
+    background-color: white;
+    width: 100px;
+    border-radius: 10px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+}
+
+
+.relevancy-generate-summary-button:hover{
+    background-color: gray;
+}
+
+
+.relevancy-submit-button {
+    background-color: #ffffff;
+    color: black;
+    border: 2px solid white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 20px;
+
+  }
+  
+  .relevancy-submit-button:hover {
+    background-color: gray;
+  }
+  
+  .relevancy-submit-button:disabled {
+    color: transparent;
+    background-color: transparent;
+    border: none;
+    cursor: not-allowed;
+  }
+  
+  .relevancy-right-menu-container{
+    border-left: 2px solid white;
+  }
+
+
+  .relevancy-generated-summary{
+    color: white;
+  }
+
+
+  /* Disabled state styling for checkboxes and buttons */
+.relevancy-workorder-checkbox.disabled {
+    opacity: 0.5; /* Make checkboxes appear semi-transparent */
+    pointer-events: none; /* Disable interaction */
+  }
+  
+  .relevancy-generate-summary-button.disabled {
+    opacity: 0.5; /* Make button appear semi-transparent */
+    pointer-events: none; /* Disable interaction */
+    background-color: transparent; /* Or adjust color */
+    cursor: not-allowed; /* Change cursor to show it's disabled */
   }
   

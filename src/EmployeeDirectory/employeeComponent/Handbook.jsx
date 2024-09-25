@@ -95,7 +95,7 @@ const Handbook = () => {
             </div>
           )}
           </div>
-        </div>
+
         <div className="handbook-form">
           <input
             type="text"
@@ -108,6 +108,7 @@ const Handbook = () => {
           <div className='handbook-chatbot-notice-text'>GeoBot can make mistakes. Please always verify important info.</div>
         </div>
       </div>
+    </div>
   );
 };
 

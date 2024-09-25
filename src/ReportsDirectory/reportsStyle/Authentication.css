@@ -1,0 +1,84 @@
+/* Container styles for both login and register */
+.login-container,
+.register-container {
+    display: flex;
+    width: 100vw; /* Adjusted to be consistent with the login container */
+    height: 90vh; /* Adjusted to match the height of login container */
+    justify-content: center;
+}
+
+/* Box styles for both login and register */
+.login-box,
+.register-box {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px; /* Consistent rounded corners */
+    border: 1px solid rgba(255, 255, 255, 1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    text-align: center;
+}
+
+/* Title styles for both login and register */
+.login-title,
+.register-title {
+    font-size: 40px;
+    font-weight: 400; /* Adjusted for consistency */
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+/* Form styles for both login and register */
+.login-form,
+.register-form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Input styles for both login and register */
+.login-input,
+.register-input {
+    margin-top: 10px;
+    padding: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 5px;
+    font-size: 18px;
+    width: 400px;
+    color: black;
+    border: none;
+}
+
+.login-input:focus,
+.register-input:focus {
+    border-color: white;
+    outline: none;
+}
+
+/* Button styles for both login and register */
+.login-button,
+.register-button {
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    margin-bottom: 25px; 
+    margin-top: 40px;
+    background-color: rgba(0, 0, 0);
+    color: white;
+    border: none;
+    font-size: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 1px solid white;
+}
+
+.login-button:hover,
+.register-button:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    transform: scale(1.05); /* Consistent hover effect */
+    opacity: 1;
+}

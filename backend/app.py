@@ -15,24 +15,36 @@ from terms import oahu_cities, civil_engineering_terms
 import os
 import webbrowser
 import re
+from file_handler import open_series_directories
+import math
+
 
 # Initialize Flask app and configure session
-app = Flask(__name__, static_folder='build', static_url_path='')  # Serve the React build files correctly
+app = Flask(__name__)
 app.config['SECRET_KEY'] = secrets.token_hex(24)
 app.config['SESSION_TYPE'] = 'filesystem'
+app.config['SESSION_PERMANENT'] = True
 app.config['PERMANENT_SESSION_LIFETIME'] = timedelta(minutes=5)
+
+app.config['SESSION_COOKIE_SECURE'] = False  # Set to True if using HTTPS
+app.config['SESSION_COOKIE_HTTPONLY'] = True
+app.config['SESSION_COOKIE_SAMESITE'] = 'Lax'  # or 'Strict' or 'None'
+
+
+
+
 Session(app)
 
-CORS(app, resources={r"/*": {"origins": "*"}}) 
+CORS(app, resources={r"/*": {"origins": "*"}})
 login_manager = LoginManager(app)
 login_manager.login_view = 'login'
-
-@app.route('/', defaults={'path': ''})
-@app.route('/<path:path>')
-def serve_react_app(path):
-    if path and os.path.exists(os.path.join(app.static_folder, path)):
-        return send_from_directory(app.static_folder, path)
-    return send_from_directory(app.static_folder, 'index.html')
+ 
+# @app.route('/', defaults={'path': ''})
+# @app.route('/<path:path>')
+# def serve_react_app(path):
+#     if path and os.path.exists(os.path.join(app.static_folder, path)):
+#         return send_from_directory(app.static_folder, path)
+#     return send_from_directory(app.static_folder, 'index.html')
 
 # Function to extract dates from text content
 def extract_date(text):
@@ -55,13 +67,52 @@ def extract_date(text):
                 continue
     return 'Unknown'
 
-# SQLite Database Initialization
+
+def bm25_score(query, content, k1=1.5, b=0.75):
+    content_words = content.split()
+    query_words = query.split()
+
+    # Calculate document length and average document length
+    doc_length = len(content_words)
+    avg_doc_length = doc_length  # Assuming each content is a separate document for simplicity
+
+    # Calculate IDF for each query term
+    idf_scores = {}
+    for word in query_words:
+        n_qi = sum(1 for doc in content_words if word in doc)
+        idf_scores[word] = math.log((len(content_words) - n_qi + 0.5) / (n_qi + 0.5) + 1)
+
+    # Calculate BM25 score
+    score = 0
+    for word in query_words:
+        if word in content_words:
+            tf = content_words.count(word)
+            numerator = tf * (k1 + 1)
+            denominator = tf + k1 * (1 - b + b * (doc_length / avg_doc_length))
+            score += idf_scores[word] * numerator / denominator
+
+    return score
+
+def rank_documents_by_bm25(query, documents):
+    document_scores = []
+
+    for doc in documents:
+        # BM25 Score
+        bm25 = bm25_score(query, doc['content'])
+
+        document_scores.append({'filename': doc['filename'], 'content': doc['content'], 'score': bm25})
+
+    return sorted(document_scores, key=lambda x: x['score'], reverse=True)
+
+
+
 def init_sqlite_db():
     try:
         conn = sqlite3.connect('data.db')
         cursor = conn.cursor()
         print("Creating tables...")
 
+        # Create 'users' table if not exists
         cursor.execute('''
             CREATE TABLE IF NOT EXISTS users (
                 id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -70,12 +121,12 @@ def init_sqlite_db():
             )
         ''')
 
+        # Create FTS5 virtual table for documents
         cursor.execute('''
-            CREATE TABLE IF NOT EXISTS documents (
-                id INTEGER PRIMARY KEY AUTOINCREMENT,
-                filename TEXT UNIQUE,
-                content TEXT,
-                date TEXT
+            CREATE VIRTUAL TABLE IF NOT EXISTS documents USING fts5(
+                filename,
+                content,
+                date
             )
         ''')
 
@@ -85,14 +136,14 @@ def init_sqlite_db():
     except sqlite3.Error as e:
         print(f"An error occurred: {e}")
 
-init_sqlite_db()
+
 
 def save_to_db(filename, content):
     submission_date = extract_date(content)
     conn = sqlite3.connect('data.db')
     cursor = conn.cursor()
     
-    cursor.execute('SELECT id FROM documents WHERE filename = ?', (filename,))
+    cursor.execute('SELECT rowid FROM documents WHERE filename = ?', (filename,))
     if cursor.fetchone() is not None:
         print(f"{filename} has already been processed. Skipping...")
         conn.close()
@@ -106,22 +157,6 @@ def save_to_db(filename, content):
     conn.close()
     print(f"Saved: {filename} with date {submission_date} to the database.")
 
-def process_all_files_in_folder(folder_path):
-    for filename in os.listdir(folder_path):
-        if filename.endswith('.txt'):
-            file_path = os.path.join(folder_path, filename)
-            try:
-                with open(file_path, 'r', encoding='utf-8', errors='ignore') as file:
-                    content = file.read()
-                save_to_db(filename, content)
-            except Exception as e:
-                print(f"Error processing file {file_path}: {e}")
-
-desktop_path = os.path.join(os.path.expanduser('~'), 'Desktop')
-ocr_reports_folder = os.path.join(desktop_path, 'OCR_REPORTS')
-
-# MAKE THIS LIKE A REFRESH BUTTON LATER COMMENTING OUT FOR NOW CUZ NO NEED
-# process_all_files_in_folder(ocr_reports_folder)
 
 def extract_and_rank_keywords(prompt):
     """
@@ -136,94 +171,112 @@ def extract_keywords_with_logic(prompt):
     """
     Extracts keywords from the prompt and handles logical operators like AND/OR.
     """
-    parts = re.split(r'\s+(and|or)\s+', prompt, flags=re.IGNORECASE)
+    parts = re.split(r'\s+(AND|OR)\s+', prompt, flags=re.IGNORECASE)
     keywords_with_logic = []
     
     for part in parts:
-        if part.strip().lower() in {"and", "or"}:
+        if part.strip().upper() in {"AND", "OR"}:
             keywords_with_logic.append(part.strip().upper())
         else:
             keywords = extract_and_rank_keywords(part)
-            keywords_with_logic.extend(keywords)
+            keywords_with_logic.append(f'"{part.strip()}"' if ' ' in part else part)  # Keep phrases intact
     
+    print(keywords_with_logic)
     return keywords_with_logic
 
+
 def match_exact_word(phrase, content):
+    """
+    Matches exact words only.
+    """
+    # Ensure that only exact matches of the word 'phrase' are found.
     pattern = r'\b' + re.escape(phrase) + r'\b'
-    return re.search(pattern, content, re.IGNORECASE) is not None
+    return re.findall(pattern, content, re.IGNORECASE)
+
 
 def get_filtered_documents(keywords_list):
     conn = sqlite3.connect('data.db')
     cursor = conn.cursor()
 
-    query = "SELECT filename, content FROM documents"
-    cursor.execute(query)
+    # Use FTS5 MATCH syntax for fast full-text search
+    query = "SELECT filename, content FROM documents WHERE content MATCH ?"
+    query_string = ' OR '.join(f'"{kw}"' for kw in keywords_list)  # Properly quote each keyword for FTS5
+    cursor.execute(query, (query_string,))
     documents = [{"filename": row[0], "content": row[1]} for row in cursor.fetchall()]
     conn.close()
 
+    if not documents:
+        return []
+
+    # Exact word matching for filtering documents
     filtered_documents = []
     for doc in documents:
         content = doc["content"]
-        if any(match_exact_word(keyword, content) for keyword in keywords_list):
-            filtered_documents.append(doc)
+        matches_found = False
 
-    return filtered_documents
+        for keyword in keywords_list:
+            if match_exact_word(keyword, content):
+                matches_found = True
+                # Optionally, highlight matches in content
+                content = re.sub(rf'\b{re.escape(keyword)}\b', f'<mark>{keyword}</mark>', content, flags=re.IGNORECASE)
+        
+        if matches_found:
+            filtered_documents.append({"filename": doc["filename"], "content": content})
+
+    # Rank documents using BM25 after filtering
+    ranked_documents = rank_documents_by_bm25(' '.join(keywords_list), filtered_documents)
+    return ranked_documents
+
+
+
 
 def get_filtered_documents_with_logic(keywords_with_logic):
     conn = sqlite3.connect('data.db')
     cursor = conn.cursor()
 
-    query = "SELECT filename, content FROM documents WHERE "
-    query_parts = []
-    params = []
+    # Start the query
+    query = "SELECT filename, content FROM documents WHERE content MATCH ?"
+    
+    # Prepare FTS5 query with logical operators
+    query_string = ' '.join(keywords_with_logic)
+    
+    print(f"Executing FTS5 query: {query} with query_string: {query_string}")
 
-    if keywords_with_logic and (keywords_with_logic[0] in {"AND", "OR"}):
-        keywords_with_logic = keywords_with_logic[1:]
-    if keywords_with_logic and (keywords_with_logic[-1] in {"AND", "OR"}):
-        keywords_with_logic = keywords_with_logic[:-1]
+    cursor.execute(query, (query_string,))
+    documents = [{"filename": row[0], "content": row[1]} for row in cursor.fetchall()]
 
-    for keyword in keywords_with_logic:
-        if keyword == "AND":
-            query_parts.append("AND")
-        elif keyword == "OR":
-            query_parts.append("OR")
-        else:
-            query_parts.append("content LIKE ?")
-            params.append(f'%{keyword}%')
+    filtered_documents = []
+    for doc in documents:
+        content = doc["content"]
+        matches_found = False
 
-    final_query = query + ' '.join(query_parts)
-    print(f"Executing query: {final_query} with params {params}")
-
-    if "content LIKE ?" in final_query:
-        cursor.execute(final_query, params)
-        documents = [{"filename": row[0], "content": row[1]} for row in cursor.fetchall()]
-    else:
-        documents = []
+        for keyword in keywords_with_logic:
+            if keyword not in {"AND", "OR"}:
+                if match_exact_word(keyword, content):
+                    matches_found = True
+                    # Optionally, highlight matches in content
+                    content = re.sub(rf'\b{re.escape(keyword)}\b', f'<mark>{keyword}</mark>', content, flags=re.IGNORECASE)
+        
+        if matches_found:
+            filtered_documents.append({"filename": doc["filename"], "content": content})
 
     conn.close()
-    return documents
+    return filtered_documents
+
+
+
 
 class User(UserMixin):
     def __init__(self, user_id, email):
         self.id = user_id
         self.email = email
 
-@login_manager.user_loader
-def load_user(user_id):
-    conn = sqlite3.connect('data.db')
-    cursor = conn.cursor()
-    cursor.execute('SELECT id, email FROM users WHERE id = ?', (user_id,))
-    user = cursor.fetchone()
-    conn.close()
-    if user:
-        return User(user[0], user[1])
-    return None
 
 @functools.lru_cache(maxsize=100)
-def get_summary_from_model(work_order_number, combined_content):
+def get_summary_from_model(work_order_number, combined_content, selected_options):
     model = Model('reports')
     chat_session = model.create_chat_session([])
-    summary = model.generate_summary(chat_session, combined_content)
+    summary = model.generate_summary(chat_session, combined_content, selected_options)
     return summary.text
 
 def generate_all_forms(word):
@@ -249,7 +302,7 @@ def send_input():
     filtered_documents = get_filtered_documents(keywords_list)
     history = model.create_chat_history(filtered_documents)
     chat_session = model.create_chat_session(history)
-    response = model.generate_response(chat_session, prompt).text
+    response = model.generate_response_no_filenames(chat_session, prompt).text
     return jsonify({"response": response})
 
 @app.route('/reports/add-files', methods=['POST'])
@@ -298,11 +351,44 @@ def remove_files():
 @app.route('/reports/search-filenames', methods=['POST'])
 def search_filenames():
     data = request.get_json()
-    prompt = data.get('prompt')
-    keywords_with_logic = extract_keywords_with_logic(prompt)
-    filtered_documents = get_filtered_documents_with_logic(keywords_with_logic)
-    filenames = [doc["filename"] for doc in filtered_documents]
-    return jsonify({"filenames": filenames})
+    prompt = data.get('prompt', '')
+    range_start = int(data.get('rangeStart', 0))
+    range_end = int(data.get('rangeEnd', 9999))
+
+    # Determine if the prompt contains logical operators
+    if ' AND ' in prompt.upper() or ' OR ' in prompt.upper():
+        keywords_with_logic = extract_keywords_with_logic(prompt)
+        query_string = ' '.join(keywords_with_logic)
+    else:
+        # Handle exact phrase search
+        query_string = f'"{prompt}"' if ' ' in prompt else prompt  # Add quotes for phrase search
+
+    print(range_start, '-', range_end, query_string)
+
+    # Use the range to filter documents based on work order numbers
+    conn = sqlite3.connect('data.db')
+    cursor = conn.cursor()
+    query = """
+    SELECT filename, content 
+    FROM documents 
+    WHERE CAST(SUBSTR(filename, 1, 4) AS INTEGER) BETWEEN ? AND ? AND content MATCH ?
+    """
+    cursor.execute(query, (range_start, range_end, query_string))
+    documents = [{"filename": row[0], "content": row[1]} for row in cursor.fetchall()]
+    conn.close()
+
+    # Rank documents using BM25
+    ranked_documents = rank_documents_by_bm25(prompt, documents)
+    filenames = [doc['filename'] for doc in ranked_documents]
+
+    # Return the filtered filenames and the range used
+    return jsonify({"filenames": filenames, "rangeStart": range_start, "rangeEnd": range_end})
+
+
+
+
+
+
 
 @app.route('/reports/get-quick-view', methods=['POST'])
 def get_quick_view():
@@ -336,25 +422,62 @@ def get_quick_view():
     else:
         return jsonify({"message": "File not found"}), 404
 
+
+def init_account_db():
+    conn = sqlite3.connect('account.db')
+    cursor = conn.cursor()
+    cursor.execute('''
+        CREATE TABLE IF NOT EXISTS users (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            email TEXT UNIQUE NOT NULL,
+            password TEXT NOT NULL
+        )
+    ''')
+    conn.commit()
+    conn.close()
+
+init_account_db()
+
+
+@login_manager.user_loader
+def load_user(user_id):
+    conn = sqlite3.connect('account.db')
+    cursor = conn.cursor()
+    cursor.execute('SELECT id, email FROM users WHERE id = ?', (user_id,))
+    user = cursor.fetchone()
+    conn.close()
+    if user:
+        return User(user[0], user[1])
+    return None
+
+
 @app.route('/register', methods=['POST'])
 def register():
     data = request.get_json()
     email = data['email']
+    
+    # Check if the email ends with '@geolabs.net'
+    if not email.endswith('@geolabs.net'):
+        return jsonify({"message": "Invalid email domain. Only @geolabs.net emails are allowed."}), 400
+
     password = generate_password_hash(data['password'], method='pbkdf2:sha256')
 
-    conn = sqlite3.connect('data.db')
+    # Use the correct database for accounts
+    conn = sqlite3.connect('account.db')
     cursor = conn.cursor()
+    cursor.execute('CREATE TABLE IF NOT EXISTS users (id INTEGER PRIMARY KEY AUTOINCREMENT, email TEXT UNIQUE NOT NULL, password TEXT NOT NULL)')
     cursor.execute('SELECT id FROM users WHERE email = ?', (email,))
+    
     if cursor.fetchone():
+        conn.close()
         return jsonify({"message": "Email already registered"}), 400
 
-    cursor.execute('''
-        INSERT INTO users (email, password)
-        VALUES (?, ?)
-    ''', (email, password))
+    cursor.execute('INSERT INTO users (email, password) VALUES (?, ?)', (email, password))
     conn.commit()
     conn.close()
     return jsonify({"message": "User registered successfully"}), 200
+
+
 
 @app.route('/login', methods=['POST'])
 def login():
@@ -362,7 +485,7 @@ def login():
     email = data['email']
     password = data['password']
 
-    conn = sqlite3.connect('data.db')
+    conn = sqlite3.connect('account.db')
     cursor = conn.cursor()
     cursor.execute('SELECT id, password FROM users WHERE email = ?', (email,))
     user = cursor.fetchone()
@@ -380,56 +503,83 @@ def logout():
     logout_user()
     return jsonify({"message": "Logged out successfully"}), 200
 
-@app.route('/reports/search-work-order', methods=['POST'])
-def search_work_order():
+@app.route('/reports/generate-summary', methods=['POST'])
+def generate_summary():
     data = request.get_json()
-    work_order_number = data.get('workOrderNumber')
-    if not work_order_number:
-        return jsonify({"summary": "Work order number is required."}), 400
+    filenames = data.get('filenames', [])  # Get selected filenames from the request
+    selected_options = data.get('selectedOptions', [])  # Get selected options from the request
 
+    if not filenames:
+        return jsonify({"summary": "At least one file must be selected."}), 400
+
+    # Fetch content for the selected files from the database
     conn = sqlite3.connect('data.db')
     cursor = conn.cursor()
-    cursor.execute("SELECT filename, content FROM documents WHERE filename LIKE ?", (f'%{work_order_number}%',))
+
+    query = "SELECT filename, content FROM documents WHERE filename IN ({})".format(','.join(['?'] * len(filenames)))
+    cursor.execute(query, filenames)
     filtered_documents = [{"filename": row[0], "content": row[1]} for row in cursor.fetchall()]
     conn.close()
 
     if filtered_documents:
+        # Combine the content of all selected files
         combined_content = " ".join([doc["content"] for doc in filtered_documents])
-        summary = get_summary_from_model(work_order_number, combined_content)
-        return jsonify({"summary": summary, "filenames": [doc["filename"] for doc in filtered_documents]})
+
+        # Generate summary using the combined content from all files and the selected options
+        model = Model('reports')
+        chat_session = model.create_chat_session([])
+        summary_response = model.generate_summary(chat_session, filenames, combined_content, tuple(selected_options))
+
+        # Extract the text from the summary response
+        summary_text = summary_response.text
+
+        # Return the summary and the filenames used
+        return jsonify({"summary": summary_text, "filenames": [doc["filename"] for doc in filtered_documents]})
     else:
-        return jsonify({"summary": "No relevant documents found for this work order number."}), 404
+        return jsonify({"summary": "No relevant documents found for the selected files."}), 404
+
+
+
 
 @app.route('/reports/relevancy', methods=['POST'])
 def chatbot_request():
     data = request.get_json()
-    filenames = data.get('filenames', [])
+    filenames = data.get('filenames', [])  # Get the selected filenames from the user's request
     prompt = data.get('prompt', '')
-    use_file_selector = data.get('useFileSelector', True)
-
-    if not use_file_selector:
-        keywords_list = extract_and_rank_keywords(prompt)
-        documents = get_filtered_documents(keywords_list)
-        filenames = [doc["filename"] for doc in documents[:5]]
 
     if not filenames:
         return jsonify({"response": "No files selected or found."}), 400
 
+    # Fetch content for selected filenames only
     conn = sqlite3.connect('data.db')
     cursor = conn.cursor()
+
+    # Correctly format the query to fetch multiple files
     cursor.execute(
-        f"SELECT filename, content FROM documents WHERE filename IN ({','.join('?' * len(filenames))})",
+        "SELECT filename, content FROM documents WHERE filename IN ({})".format(','.join('?' for _ in filenames)),
         filenames
     )
-    documents = cursor.fetchall()
+    documents = [{"filename": row[0], "content": row[1]} for row in cursor.fetchall()]
     conn.close()
 
-    model = Model('reports')
-    history = model.create_chat_history([{"filename": doc[0], "content": doc[1]} for doc in documents])
-    chat_session = model.create_chat_session(history)
-    response = model.generate_response(chat_session, prompt).text
+    if not documents:
+        return jsonify({"response": "No relevant documents found for the selected files."}), 404
 
-    return jsonify({"response": response})
+    # Rank documents using BM25
+    ranked_documents = rank_documents_by_bm25(prompt, documents)
+
+    # Create chat history based on ranked documents
+    model = Model('reports')
+    history = model.create_chat_history(ranked_documents)
+    chat_session = model.create_chat_session(history)
+
+    # Generate the response from the selected documents only
+    response = model.generate_response(chat_session, prompt, [doc['filename'] for doc in ranked_documents]).text
+
+    return jsonify({"response": response, "ranked_filenames": [doc['filename'] for doc in ranked_documents]})
+
+
+
 
 # Employee Section
 def init_employee_db():
@@ -494,24 +644,52 @@ def query_handbook():
     else:
         persistent_chat_session.history.append({"role": "user", "parts": [handbook_prompt]})
 
-    response = model.generate_response(persistent_chat_session, handbook_prompt).text
+    response = model.generate_response_no_filenames(persistent_chat_session, handbook_prompt).text
 
     return jsonify({"response": response})
 
 @app.route('/reports/open-file', methods=['POST'])
 def open_file():
     try:
+        # Retrieve the filename from the request
         data = request.get_json()
         filename = data.get('filename')
         print(f"Received filename: {filename}")
+
+        # Define the network path
         network_path = r"\\geolabs.lan\fs\UserShare"
+        
+        # Call the open_series_directories function
         open_series_directories(network_path, filename)
+
+        # Return success response
         return jsonify({'message': 'Filename processed successfully'}), 200
     except Exception as e:
+        # Print and return error response
         print(f"Error receiving filename: {e}")
         return jsonify({'error': str(e)}), 500
 
+
+@app.route('/reports/work-order-suggestions', methods=['GET'])
+def work_order_suggestions():
+    query = request.args.get('query', '')
+    if not query:
+        return jsonify({"suggestions": []})
+
+    conn = sqlite3.connect('data.db')
+    cursor = conn.cursor()
+
+    # Search for work order numbers that start with the query
+    cursor.execute("SELECT DISTINCT filename FROM documents WHERE filename LIKE ?", (f'{query}%',))
+    results = cursor.fetchall()
+    conn.close()
+
+    suggestions = [row[0] for row in results]
+
+    return jsonify({"suggestions": suggestions})
+
+
 if __name__ == '__main__':
-    webbrowser.open("http://localhost:8000")
+    # webbrowser.open("http://localhost:8000")
     app.run(host='0.0.0.0', port=8000)
     

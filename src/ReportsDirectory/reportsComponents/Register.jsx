@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
-import '../reportsStyle/Register.css';
+import  '../reportsStyle/Authentication.css'
 import getConfig from '../../config';
 
 const Register = ({ setIsAuthenticated }) => {

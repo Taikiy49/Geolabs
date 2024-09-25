@@ -13,9 +13,9 @@
 
 .reports-add-remove-container {
   display: flex;
-  gap: 50px;
-  margin: 0 auto;
-  margin-top: 10px; 
+  gap: 20x;
+  margin-left: auto;
+  margin-right: 100px;
   color: white;
 }
 
@@ -26,9 +26,9 @@
 }
 
 .reports-add-remove-option-box {
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 15px;
   border-radius: 10px;
   text-align: center;
   margin-top: 30px;
@@ -42,19 +42,15 @@
 
 /* Reports Section Container */
 .reports-software-sections {
-  width: 100vw;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center align all elements */
 }
 
 .reports-software-section {
-  margin-top: 300px;
   display: flex;
   flex-direction: column;
   padding: 20px;
   border-radius: 20px;
-  align-items: center; /* Center align all elements */
 }
 
 /* Fade-in Effect for the Title */
@@ -109,14 +105,7 @@
   margin-bottom: 60px;
 }
 
-.reports-software-title {
-  margin: 0 auto;
-  text-align: center;
-  margin-right: auto;
-  font-weight: 400;
-  font-size: 100px;
-  color: white;
-}
+
 
 .reports-desc-more-container {
   display: flex;
@@ -126,6 +115,7 @@
 
 .reports-software-description {
   text-align: left;
+  line-height: 1.5;
   width: 1000px;
   font-size: 25px;
   font-weight: normal;
@@ -162,21 +152,20 @@
 
 .reports-options-container {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-top: 100px;
-  margin-bottom: 300px;
-  gap: 50px;
+  gap: 50px; flex-direction: column;
+  margin-top: 5vh;
 }
 
 .reports-option-box {
-  width: 500px;
+  width: 300px;
+  height: 400px;
   color: white;
-  background-color: #161616;
-  padding: 50px;
-  padding-bottom: 20px;
+  background-color: rgba(0, 0, 255, 0.1);
+  border: 3px solid white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 1);
+  padding-bottom: 30px;
+  padding-top: 20px; padding-left: 30px; padding-right: 30px;
   border-radius: 5px;
-  transition: all 0.3s ease;
   cursor: pointer;
 }
 
@@ -185,38 +174,30 @@
 }
 
 .reports-option-box h2 {
-  margin-top: 0px;
   width: auto;
   font-weight: bold;
-  font-size: 50px;
+  font-size: 40px;
   padding: 5px;
-  border-radius: 20px; margin-top: 10px; 
+  border-radius: 20px; margin-top: 0px;
 }
 
 .reports-option-box p {
-  margin-top: -15px;
+  margin-top: -25px;
   margin-left: 5px;
-  font-weight: 400;
-  font-size: 25px;
+  font-size: 22px;
   color: rgb(240, 240, 240);
 }
 
-.reports-database-title {
-  font-size: 60px;
-  font-weight: 400;
-  color: white;
-  display: flex;
-}
-
-.reports-database-description {
-  color: white;
-  font-size: 25px;
-}
 
 .reports-file-actions-container {
   display: flex;
   flex-direction: column;
-  width: 60vw;
+  background-color: rgba(0, 0, 255, 0.1);
+  border: 3px solid white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 1);
+  padding-left: 40px; padding-bottom: 20px;
+  border-radius: 5px;
+
 }
 
 .reports-file-top-container {
@@ -225,20 +206,28 @@
   margin-bottom: 50px;
 }
 
+.reports-file-top-bar{
+  display: flex;
+  gap: 100px; margin-top: 20px; margin-bottom: 20px;
+
+}
+
 .reports-file-count {
-  font-size: 25px;
-  margin-top: 25px;
-  margin-left: 30px;
+  font-size: 25px; color: white; margin-left: 20px;
+  background-color: black;
+  border: 2px solid white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 1);
+  padding: 10px; border-radius: 5px;
+  width: 115px;
 }
 
 .reports-file-search-bar {
-  display: flex;
-  height: 50px;
-  align-items: center;
-  margin-top: 25px;
-  margin-bottom: 25px;
-  margin-left: auto;
-  margin-right: 10vw;
+  font-size: 20px; color: white; margin-left: 20px;
+  background-color: black;
+  border: 2px solid white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 1);
+  padding: 10px; border-radius: 5px;
+  width: 15vw;
 }
 
 .reports-file-list-search-title {
@@ -255,31 +244,35 @@
 }
 
 .reports-file-search-bar input {
-  padding: 10px;
-  color: black;
+  padding: 15px;
+  color: white;
   font-size: 16px;
   border: none;
-  background-color: rgb(255, 255, 255);
   width: 300px;
-  border-radius: 5px;
   outline: none;
+  margin-right: 50px;
+  border-radius: 5px;
+  background-color: black;
+  border: 2px solid white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 1);
 }
 
 .reports-centering-file-list-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 50vw;
 }
 
 .reports-file-list-container {
   padding-right: 30px;
   width: 50vw;
-  height: 50vh;
+  height: 65vh;
   overflow-x: hidden;
   overflow-y: scroll; /* Enable vertical scrolling */
   scrollbar-width: thin; /* Thin scrollbar for Firefox */
-  scrollbar-color: white transparent; /* White thumb with transparent track */
-  scroll-behavior: smooth; /* Smooth scrolling */
+  scrollbar-color: black transparent; /* White thumb with transparent track */
+  scroll-behavior: smooth; 
 }
 
 .reports-file-list-container::-webkit-scrollbar {
@@ -291,7 +284,7 @@
 }
 
 .reports-file-list-container::-webkit-scrollbar-thumb {
-  background-color: white; /* White scrollbar thumb */
+  background-color: black; /* White scrollbar thumb */
   border-radius: 20px; /* Fully rounded scrollbar (more oval shape) */
   border: 3px solid transparent; /* Space around the thumb to enhance the oval effect */
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.3); /* Subtle shadow for a modern look */
@@ -304,18 +297,21 @@
 .reports-scrollable-file-list {
   font-size: 20px;
   overflow: hidden;
+  background-color: black;
+  border: 2px solid white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 1);
 }
 
 .reports-file-item {
   padding: 15px;
   font-weight: normal;
   user-select: none;
-  background-color: #151414;
-  border: 1px solid #2a2928;
-  border-radius: 5px;
+  background-color: black;
+  border: 1px solid white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 1);
   color: white;
-  margin-bottom: 15px;
   cursor: pointer;
+  
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
@@ -328,9 +324,13 @@
 }
 
 .reports-mini-container {
+  border: 3px solid white;
   display: flex;
-  margin-top: 300px;
-  justify-content: center;
+  justify-content: center; gap: 20px;
+  padding: 20px;
+  padding-right: 3px;
+  border-radius: 5px;
+  margin-top: 20px; margin-bottom: 20px;
 }
 
 .reports-option-logo {

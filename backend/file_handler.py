@@ -6,14 +6,19 @@ REPORTS_PATH = r"\\geolabs.lan\fs\Reports"  # Path where the file will always be
 
 def open_file_or_directory(file_path):
     """Open a file or directory using the default associated application."""
-    if os.path.isfile(file_path):
-        print(f"Opening file: {file_path}")
-        # Open the file using the default associated application on Windows
-        os.startfile(file_path)
-    elif os.path.isdir(file_path):
-        print(f"Opening directory: {file_path}")
-        # Open the directory in a new file explorer window
-        os.startfile(file_path)
+    try:
+        if os.path.isfile(file_path):
+            print(f"Opening file: {file_path}")
+            # Attempt to open the file
+            os.startfile(file_path)
+        elif os.path.isdir(file_path):
+            print(f"Opening directory: {file_path}")
+            # Attempt to open the directory
+            os.startfile(file_path)
+        else:
+            print(f"Error: The path does not exist or is not accessible: {file_path}")
+    except Exception as e:
+        print(f"Error while opening the file or directory: {e}")
 
 def open_series_directories(network_path, original_file_name):
     try:
@@ -58,6 +63,8 @@ def open_series_directories(network_path, original_file_name):
 
                     # Always open the file from the REPORTS_PATH
                     report_file_path = os.path.join(REPORTS_PATH, original_file_name)
+                    report_file_path = report_file_path.replace('.txt', '.pdf')  # Convert .txt to .pdf
+
                     if os.path.exists(report_file_path):
                         print(f"Opening file from Reports: {report_file_path}")
                         open_file_or_directory(report_file_path)
@@ -69,17 +76,3 @@ def open_series_directories(network_path, original_file_name):
 
     except Exception as e:
         print(f"An error occurred: {e}")
-
-def handle_file_request(filename):
-    # Always open the specific directory from UserShare
-    open_series_directories(USER_SHARE_PATH, filename)
-
-    # Always attempt to open the specific file from the Reports path
-    report_file_path = os.path.join(REPORTS_PATH, filename)
-    if os.path.exists(report_file_path):
-        print(f"Success: File '{filename}' found in {REPORTS_PATH}.")
-        open_file_or_directory(report_file_path)
-        return {'message': f"File '{filename}' found and opened successfully."}, 200
-    else:
-        print(f"Error: File '{filename}' not found in {REPORTS_PATH}.")
-        return {'error': f"File '{filename}' not found."}, 404

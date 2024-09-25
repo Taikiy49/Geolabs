@@ -70,15 +70,56 @@ class Model:
             history.append({"role": "model", "parts": [doc['content']]})
         return history
 
-    def generate_response(self, chat_session, prompt):
+    def generate_response(self, chat_session, prompt, filenames):
+        # Extract work order numbers from the provided filenames
+        filenames = [filename[:-4] for filename in filenames]  # Strip file extensions from filenames
+        work_order_string = ", ".join(filenames)  # Combine filenames into a readable list
+        updated_prompt = (
+            f"{prompt} Based on the {len(filenames)} work orders: {work_order_string}, "
+            "please provide an accurate, concise response. "
+            "Reference each work order number and its content where applicable."
+        )
+
+        # Log the generated prompt
+        print(f"Generated prompt for chatbot: {updated_prompt}")
+
+        # Send the updated prompt to the chatbot
+        response = chat_session.send_message(updated_prompt)
+        return response
+
+    def generate_response_no_filenames(self, chat_session, prompt):
+        # Send the prompt directly to the chatbot without using filenames
         response = chat_session.send_message(prompt)
         return response
 
-    def generate_summary(self, chat_session, content):
-        response = chat_session.send_message(
-            content + " Given all this information, generate a concise and comprehensive summary of the text."
-        )
+    def generate_summary(self, chat_session, filenames, content, options):
+        # Combine file names for a better contextual prompt
+        filenames = [filename[:-4] for filename in filenames]  # Strip file extensions from filenames
+        work_order_string = ", ".join(filenames)  # Combine filenames into a readable list
+
+        options_string = ', '.join(options)
+
+        # Build the prompt for the summary
+        if options:
+            prompt = (
+                f"Based on the provided information from {len(filenames)} work orders: {work_order_string}, "
+                f"generate a concise and comprehensive summary covering the following topics: {options_string}. "
+                "Make sure the summary is easy to read and provides relevant insights."
+            )
+        else:
+            prompt = (
+                f"Based on the provided information from {len(filenames)} work orders: {work_order_string}, "
+                "generate a concise and comprehensive summary of the text. "
+                "Ensure the response is clear and easy to read."
+            )
+
+        # Log the generated prompt
+        print(f"Generated summary prompt: {prompt}")
+
+        # Send the prompt to the chatbot
+        response = chat_session.send_message(prompt)
         return response
+
 
     def close(self):
         # Close the SQLite connection when done

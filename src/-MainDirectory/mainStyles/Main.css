@@ -9,12 +9,11 @@
 }
 
 .main-options-container {
+    
     display: flex; 
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-bottom: 100px;
-    margin-top: 50px;
 }
 
 /* Introduction Container Styles */
@@ -31,21 +30,24 @@
 }
 
 .main-software-title {
-    font-weight: 400;
+    font-weight: normal;
+    letter-spacing: 2px;
     font-size: 100px;
     color: white;
     opacity: 0; /* Start with opacity 0 for fade-in effect */
-    animation: fadeIn 1.5s ease-out forwards; /* Apply fade-in animation */
+    animation: fadeIn 1s ease-out forwards; /* Apply fade-in animation */
 }
 
 .main-software-description {
     font-size: 25px;
+    line-height: 1.5;
     color: white;
+    font-weight: normal;
     max-width: 1200px;
     margin: 0 auto;
     opacity: 0; /* Start with opacity 0 for fade-in effect */
-    animation: fadeIn 2s ease-out forwards; /* Apply fade-in animation */
-    animation-delay: 1s; /* Delay the description animation for a staggered effect */
+    animation: fadeIn 1.5s ease-out forwards; /* Apply fade-in animation */
+    animation-delay: 0.5s; /* Delay the description animation for a staggered effect */
 }
 
 /* Fade-in Animation */
@@ -61,62 +63,100 @@
 }
 
 .main-options {
+    padding: 20px;
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    background-color: rgba(0, 0, 255, 0.1);
+    border: 3px solid white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 1);
+    margin-top: 200px; margin-bottom: 200px;
+    border-radius: 5px;
+}
+
+.main-button-container {
     display: flex;
     flex-direction: column;
-    gap: 50px;
-}
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
 
 .main-button-style {
     padding: 20px;
     cursor: pointer;
     color: white;
-    background-color: #161616;
     font-size: 40px;
-    border-radius: 5px;
-    width: 20vw;
-    height: 20vh;
+    border: 2px solid white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 1);
+    background-color: black;
+    border-radius: 10px;
+    width: 400px;
+    height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 10px;
     text-align: center;
-    transition: background-color 0.3s ease;
-}
+  }
+  
 
 .main-button-style:hover {
     background-color: #2f2f2f;
 }
 
 .main-button-description-style {
-    font-size: 20px;
-    color: rgb(240, 240, 240);
-    margin-top: 10px;
+    font-size: 25px;
+    color: white;
+    font-weight: normal;
+    margin-top: 30px;
 }
 
+
 .main-reports-img {
-    width: 40vw; 
+    width: 800px; border-radius: 5px; display: flex;
+    border: 2px solid white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 1);
+  
 }
 
 .main-employee-guide-img {
-    width: 30vw;
+    width: 700px; border-radius: 5px; display: flex;
+    border: 2px solid white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 1);
+    
 }
 
-.main-reports-container,
-.main-employee-guide-container,
-.main-admin-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 100px;
-    margin-bottom: 200px;
+.main-employee-guide-container, 
+.main-reports-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px; /* Adjust spacing between elements */
+  padding: 20px;
 }
+
+
 
 .main-employee-guide-container,
 .main-reports-container {
-    justify-content: center;
+  justify-content: center;
+  position: relative;
 }
+
 
 .main-admin-container {
     justify-content: flex-end;
+}
+
+
+.main-reports-arrow{
+    width: 5vw;
+}
+
+.main-employee-arrow{
+    width: 5vw;
+    transform: scaleX(-1);
 }
