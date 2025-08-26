@@ -1,97 +1,79 @@
 # reports_binder.py
 import os
 import sqlite3
-from typing import Tuple
+from datetime import datetime
 from flask import Blueprint, request, jsonify
 
 reports_binder_bp = Blueprint("reports_binder_bp", __name__, url_prefix="/api/reports-binder")
 
-# ---------- Paths ----------
 BASE_DIR = os.path.abspath(os.path.dirname(__file__))
 UPLOADS_DIR = os.path.join(BASE_DIR, "uploads")
 os.makedirs(UPLOADS_DIR, exist_ok=True)
 
 DB_PATH = os.path.join(UPLOADS_DIR, "reports_binder.db")
 
-# ---------- Sorting ----------
 SORTABLE_COLS = {
-    "id", "pdf_file", "page", "work_order",
-    "engineer_initials", "billing", "date_sent"
+    "id", "pdf_file", "date", "work_order",
+    "engineer_initials", "billing", "date_sent", "page_label"
 }
 
-def _bool_param(x) -> bool:
+# ---------- DB helpers ----------
+def get_conn():
+    return sqlite3.connect(DB_PATH)
+
+def init_reports_db():
+    with get_conn() as conn:
+        conn.execute("""
+        CREATE TABLE IF NOT EXISTS reports (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            pdf_file TEXT,
+            date TEXT,
+            work_order TEXT,
+            engineer_initials TEXT,
+            billing TEXT,
+            date_sent TEXT,
+            page_label TEXT
+        );
+        """)
+        conn.execute("CREATE INDEX IF NOT EXISTS idx_reports_wo ON reports(work_order);")
+        conn.execute("CREATE INDEX IF NOT EXISTS idx_reports_date ON reports(date);")
+        conn.execute("CREATE INDEX IF NOT EXISTS idx_reports_billing ON reports(billing);")
+        conn.commit()
+
+def _bool_param(x):
     if isinstance(x, bool):
         return x
     if x is None:
         return False
     return str(x).strip().lower() in {"1", "true", "yes", "y"}
 
-def _safe_sort(sort_by: str | None, sort_dir: str | None) -> Tuple[str, str]:
-    # Default to date_sent DESC for most-recent-first browsing
-    col = (sort_by or "date_sent").strip().lower()
-    col = col if col in SORTABLE_COLS else "date_sent"
+def _safe_sort(sort_by, sort_dir):
+    col = (sort_by or "date").strip().lower()
+    col = col if col in SORTABLE_COLS else "date"
     direction = "ASC" if str(sort_dir or "").upper() == "ASC" else "DESC"
     return col, direction
 
-def _row_to_obj(row: tuple) -> dict:
-    # matches SELECT order below
+def _row_to_obj(row):
     return {
         "id": row[0],
         "pdf_file": row[1],
-        "page": row[2],
-        "work_order": row[3],
-        "engineer_initials": row[4],
-        "billing": row[5],
-        "date_sent": row[6],
+        "page_label": row[2],
+        "date": row[3],
+        "work_order": row[4],
+        "engineer_initials": row[5],
+        "billing": row[6],
+        "date_sent": row[7],
     }
 
-# ---------- DB helpers ----------
-def get_conn():
-    # Use check_same_thread=False if you hit threading issues under WSGI
-    return sqlite3.connect(DB_PATH)
-
-def init_reports_db():
-    with get_conn() as conn:
-        # Schema aligned with OCR output
-        conn.execute("""
-        CREATE TABLE IF NOT EXISTS reports (
-            id INTEGER PRIMARY KEY AUTOINCREMENT,
-            pdf_file TEXT,
-            page INTEGER,
-            work_order TEXT,
-            engineer_initials TEXT,
-            billing TEXT,
-            date_sent TEXT
-        );
-        """)
-        # Helpful indexes
-        conn.execute("CREATE INDEX IF NOT EXISTS idx_reports_wo ON reports(work_order);")
-        conn.execute("CREATE INDEX IF NOT EXISTS idx_reports_page ON reports(page);")
-        conn.execute("CREATE INDEX IF NOT EXISTS idx_reports_billing ON reports(billing);")
-        conn.execute("CREATE INDEX IF NOT EXISTS idx_reports_date_sent ON reports(date_sent);")
-        conn.commit()
-
-# Ensure DB once when blueprint is registered
+# ---------- Ensure DB once when blueprint is registered ----------
 @reports_binder_bp.record_once
 def _on_register(setup_state):
+    # Runs exactly once when app.register_blueprint(...) is called
     init_reports_db()
 
 # ---------- Routes ----------
 @reports_binder_bp.route("", methods=["GET"])
 def list_reports():
-    """
-    Query params:
-      q            -> fuzzy across pdf_file, work_order, engineer_initials, billing
-      wo           -> work_order prefix match
-      eng          -> engineer_initials prefix (case-insensitive)
-      billing_only -> if true, only rows where billing is not empty
-      date_from    -> filter date_sent >= (YYYY-MM-DD or any sortable text)
-      date_to      -> filter date_sent <= (YYYY-MM-DD or any sortable text)
-      sort_by      -> one of SORTABLE_COLS (default date_sent)
-      sort_dir     -> ASC | DESC (default DESC)
-      page         -> 1-based page number (default 1)
-      page_size    -> results per page (1..500, default 25)
-    """
     q = (request.args.get("q") or "").strip()
     wo = (request.args.get("wo") or "").strip()
     eng = (request.args.get("eng") or "").strip()
@@ -129,11 +111,11 @@ def list_reports():
         where.append("(billing IS NOT NULL AND TRIM(billing) <> '')")
 
     if date_from:
-        where.append("(date_sent IS NOT NULL AND date_sent >= ?)")
+        where.append("(date IS NOT NULL AND date >= ?)")
         params.append(date_from)
 
     if date_to:
-        where.append("(date_sent IS NOT NULL AND date_sent <= ?)")
+        where.append("(date IS NOT NULL AND date <= ?)")
         params.append(date_to)
 
     where_sql = ("WHERE " + " AND ".join(where)) if where else ""
@@ -146,7 +128,7 @@ def list_reports():
         offset = (page - 1) * page_size
         cur.execute(
             f"""
-            SELECT id, pdf_file, page, work_order, engineer_initials, billing, date_sent
+            SELECT id, pdf_file, page_label, date, work_order, engineer_initials, billing, date_sent
             FROM reports
             {where_sql}
             ORDER BY {sort_by} {sort_dir}, id DESC
@@ -165,30 +147,27 @@ def create_report():
         return jsonify({"error": "work_order is required."}), 400
 
     pdf_file = (data.get("pdf_file") or "").strip()
-    # default page to 0 if omitted
-    try:
-        page = int(data.get("page") or 0)
-    except Exception:
-        page = 0
+    date = (data.get("date") or "").strip()
     work_order = (data.get("work_order") or "").strip().upper()
     engineer_initials = (data.get("engineer_initials") or "").strip().upper()
     billing = (data.get("billing") or "").strip()
     date_sent = (data.get("date_sent") or "").strip()
+    page_label = (data.get("page_label") or "").strip()
 
     with get_conn() as conn:
         cur = conn.cursor()
         cur.execute(
             """
-            INSERT INTO reports (pdf_file, page, work_order, engineer_initials, billing, date_sent)
-            VALUES (?, ?, ?, ?, ?, ?)
+            INSERT INTO reports (pdf_file, date, work_order, engineer_initials, billing, date_sent, page_label)
+            VALUES (?, ?, ?, ?, ?, ?, ?)
             """,
-            (pdf_file, page, work_order, engineer_initials, billing, date_sent),
+            (pdf_file, date, work_order, engineer_initials, billing, date_sent, page_label),
         )
         rid = cur.lastrowid
         conn.commit()
 
         cur.execute(
-            """SELECT id, pdf_file, page, work_order, engineer_initials, billing, date_sent
+            """SELECT id, pdf_file, page_label, date, work_order, engineer_initials, billing, date_sent
                FROM reports WHERE id = ?""",
             (rid,),
         )
@@ -208,22 +187,15 @@ def update_report(rid: int):
             params.append(transform(val))
 
     add("pdf_file", data.get("pdf_file"), lambda v: (v or "").strip())
-
-    # page can be int-like; ignore if not provided
-    if "page" in data:
-        try:
-            add("page", int(data.get("page")))
-        except Exception:
-            # if non-numeric, skip applying it
-            pass
-
+    add("date", data.get("date"), lambda v: (v or "").strip())
     add("work_order", data.get("work_order"), lambda v: (v or "").strip().upper())
     add("engineer_initials", data.get("engineer_initials"), lambda v: (v or "").strip().upper())
     add("billing", data.get("billing"), lambda v: (v or "").strip())
     add("date_sent", data.get("date_sent"), lambda v: (v or "").strip())
+    add("page_label", data.get("page_label"), lambda v: (v or "").strip())
 
     if not fields:
-        return jsonify({"error": "No fields to update."}), 400 
+        return jsonify({"error": "No fields to update."}), 400
 
     params.append(rid)
 
@@ -233,7 +205,7 @@ def update_report(rid: int):
         conn.commit()
 
         cur.execute(
-            """SELECT id, pdf_file, page, work_order, engineer_initials, billing, date_sent
+            """SELECT id, pdf_file, page_label, date, work_order, engineer_initials, billing, date_sent
                FROM reports WHERE id = ?""",
             (rid,),
         )

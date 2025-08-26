@@ -458,7 +458,8 @@ def get_upload_history():
                 "time": row[3]
             }
             for row in rows
-        ]  
+        ]
+
         return jsonify(history)
 
     except Exception as e:
