@@ -1,261 +1,281 @@
-// Reports.jsx
-import React, { useEffect, useState } from 'react';
-import axios from 'axios';
-import '../styles/Reports.css';
-import { useMsal } from '@azure/msal-react';
-import { FaArrowRight } from 'react-icons/fa';
-import API_URL from '../config';
-import ReactMarkdown from 'react-markdown';
+// src/components/Reports.jsx
+import React, { useEffect, useRef, useState } from "react";
+import axios from "axios";
+import "../styles/Reports.css";
+import API_URL from "../config";
 
+export default function Reports() {
+  // Resolve base URL: env in dev, prod URL otherwise. Fallback to localhost:5000.
+  const BASE = API_URL || "http://localhost:5000";
+  const API = `${BASE}/api/reports`;
 
-function Reports() {
-  const { accounts } = useMsal();
-  const userEmail = accounts[0]?.username || 'guest';
+  // Mode: 'upload' (pick files) or 'folder' (pick a folder)
+  const [mode, setMode] = useState("upload");
 
-  const [rankQuery, setRankQuery] = useState('');
-  const [questionQuery, setQuestionQuery] = useState('');
+  // Inputs
+  const [uploadFiles, setUploadFiles] = useState([]);
+  const [folderFiles, setFolderFiles] = useState([]);
 
-  const [query, setQuery] = useState('');
-  const [onlySelectedMode, setOnlySelectedMode] = useState(false);
-  const [submittedQuery, setSubmittedQuery] = useState('');
+  // Global flags (server uses fixed S3 prefix "reports/")
+  const [uploadToS3, setUploadToS3] = useState(true);
+  const [replaceIfExists, setReplaceIfExists] = useState(false);
+
+  // UI
+  const [busy, setBusy] = useState(false);
+  const [steps, setSteps] = useState([]);
+  const [stats, setStats] = useState({ files: 0, pages: 0, chunks: 0 });
   const [files, setFiles] = useState([]);
-  const [searchTerm, setSearchTerm] = useState('');
-  const [results, setResults] = useState(null);
-  const [chatHistory, setChatHistory] = useState([]);
-  const [selectedChat, setSelectedChat] = useState(null);
-  const [minWO, setMinWO] = useState('');
-  const [maxWO, setMaxWO] = useState('');
-  const [topK, setTopK] = useState(5);
-  const [loading, setLoading] = useState(false);
-  const [selectedFiles, setSelectedFiles] = useState([]);
-  const [quickView, setQuickView] = useState(null);
-  const [rankedOnly, setRankedOnly] = useState([]);
+  const [apiUp, setApiUp] = useState(true);
+  const logRef = useRef(null);
 
-  const clearSelectedFiles = () => setSelectedFiles([]);
+  const fileInputRef = useRef(null);
+  const folderInputRef = useRef(null);
+
+  const refresh = async () => {
+    try {
+      const [s1, s2] = await Promise.all([
+        axios.get(`${API}/stats`),
+        axios.get(`${API}/files`),
+      ]);
+      setStats(s1.data || { files: 0, pages: 0, chunks: 0 });
+      setFiles(s2.data?.files || []);
+      setApiUp(true);
+    } catch {
+      setApiUp(false);
+    }
+  };
 
   useEffect(() => {
-    axios.get(`${API_URL}/api/files`).then(res => setFiles(res.data));
-    axios.get(`${API_URL}/api/chat_history?user=${userEmail}`).then(res => setChatHistory(res.data));
-  }, [userEmail]);
+    refresh();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
-  const filteredFiles = files.filter(file => {
-    const matchName = file.toLowerCase().includes(searchTerm.toLowerCase());
-    const woMatch = file.match(/(\d{4,5})/);
-    const num = woMatch ? parseInt(woMatch[1]) : 0;
-    const min = minWO === '' ? -Infinity : parseInt(minWO);
-    const max = maxWO === '' ? Infinity : parseInt(maxWO);
-    return matchName && (num >= min && num <= max);
-  });
+  useEffect(() => {
+    if (logRef.current) {
+      logRef.current.scrollTop = logRef.current.scrollHeight;
+    }
+  }, [steps]);
 
-  const rankFiles = async (customQuery = query) => {
-    if (!customQuery.trim()) return;
-    setLoading(true);
-    setSelectedChat(null);
-    setResults(null);
-    setQuickView(null);
+  // Clear inputs when mode changes
+  useEffect(() => {
+    setUploadFiles([]);
+    setFolderFiles([]);
+    if (fileInputRef.current) fileInputRef.current.value = "";
+    if (folderInputRef.current) folderInputRef.current.value = "";
+  }, [mode]);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setBusy(true);
+    setSteps([]);
 
     try {
-      const res = await axios.post(`${API_URL}/api/rank_only`, {
-        query: customQuery,
-        min: minWO === '' ? 0 : parseInt(minWO),
-        max: maxWO === '' ? 99999 : parseInt(maxWO),
-        user: userEmail
-      });
-      setRankedOnly(res.data.ranked_files);
-      setSubmittedQuery(customQuery);
-    } catch (err) {
-      alert('\u274C Failed to rank files.');
-    }
-    setLoading(false);
-  };
+      const fd = new FormData();
 
-  const getAnswerFromFile = async (filename) => {
-    if (!submittedQuery || !filename) {
-      alert("\u274C Missing filename or question.");
-      return;
-    }
-
-    try {
-      const res = await axios.post(`${API_URL}/api/single_file_answer`, {
-        file: filename,
-        query: submittedQuery,
-        user: userEmail,
-      });
-
-      setResults({
-        ...res.data,
-        file: filename
-      });
-
-      const updated = await axios.get(`${API_URL}/api/chat_history?user=${userEmail}`);
-      setChatHistory(updated.data.reverse());
-    } catch (err) {
-      alert('\u274C Failed to get response from Gemini.');
-    }
-  };
-
-  const getQuickView = async (filename) => {
-    try {
-      const res = await axios.post(`${API_URL}/api/quick_view`, {
-        filename,
-        query,
-      });
-      setQuickView({ filename, snippets: res.data.snippets });
-    } catch (err) {
-      setQuickView(null);
-    }
-  };
-
-  const toggleFileSelection = (file) => {
-    setSelectedFiles(prev => {
-      const isAlreadySelected = prev.includes(file);
-      if (isAlreadySelected) return prev.filter(f => f !== file);
-      if (prev.length >= 20) {
-        alert("You can only select up to 20 files.");
-        return prev;
+      // Gather files selected by the user
+      let selection = [];
+      if (mode === "upload") {
+        selection = Array.from(uploadFiles || []);
+      } else {
+        selection = Array.from(folderFiles || []);
       }
-      return [...prev, file];
-    });
+
+      if (!selection.length) {
+        setSteps(["⚠️ No PDFs selected."]);
+        setBusy(false);
+        return;
+      }
+
+      // Only PDFs
+      const pdfs = selection.filter((f) =>
+        (f?.name || "").toLowerCase().endsWith(".pdf")
+      );
+
+      if (!pdfs.length) {
+        setSteps(["⚠️ No PDF files in the selection."]);
+        setBusy(false);
+        return;
+      }
+
+      pdfs.forEach((f) => fd.append("files", f)); // backend will parse per-file meta from filename
+      fd.append("upload_to_s3", String(uploadToS3));
+      fd.append("replace_if_exists", String(replaceIfExists));
+
+      const res = await axios.post(`${API}/bulk-index`, fd, {
+        headers: { "Content-Type": "multipart/form-data" },
+      });
+
+      setSteps(res.data?.steps || ["(no output)"]);
+      await refresh();
+    } catch (err) {
+      setSteps((prev) => [
+        ...prev,
+        `❌ Error: ${err?.response?.data?.error || err.message}`,
+      ]);
+      setApiUp(false);
+    } finally {
+      setBusy(false);
+    }
   };
 
   return (
-    <div className="chat-container">
-      <div className="chat-sidebar">
-        <div className="sidebar-title">Chat History</div>
-        <div className="chat-history">
-          {chatHistory.map((item, index) => (
-            <div
-              key={index}
-              className="chat-history-item"
-              onClick={() => {
-                setSubmittedQuery(item.query);
-                setResults({
-                  answer: item.answer,
-                  file: item.file
-                });
-              }}
-            >
-              {item.query}
-            </div>
-          ))}
-        </div>
-      </div>
-
-      <div className="file-selector-panel">
-        <div className="filter-section">
-          <input className='wo-input' type="number" value={minWO} onChange={e => setMinWO(e.target.value)} placeholder="Min WO#" />
-          <input className='wo-input' type="number" value={maxWO} onChange={e => setMaxWO(e.target.value)} placeholder="Max WO#" />
-          <input className='file-input' type="text" value={searchTerm} onChange={e => setSearchTerm(e.target.value)} placeholder="Search file name" />
-        </div>
-        <div className="file-list-scroll">
-          {filteredFiles.map((file, idx) => (
-            <div
-              key={idx}
-              className={`file-card-no-border ${selectedFiles.includes(file) ? 'selected-file' : ''}`}
-              onClick={() => {
-                toggleFileSelection(file);
-                getQuickView(file);
-              }}>
-              {file.replace(/\.txt$/, '')}
-            </div>
-          ))}
-        </div>
-      </div>
-
-      <div className="chat-panel">
-        <div className="chat-columns">
-          <div className="ai-answer-section">
-            <input
-              className="chatbot-keywords-input"
-              placeholder="Enter keywords to rank files..."
-              value={rankQuery}
-              onChange={e => setRankQuery(e.target.value)}
-              onKeyDown={(e) => {
-                if (e.key === 'Enter' && !e.shiftKey) {
-                  e.preventDefault();
-                  rankFiles(rankQuery.trim());
-                }
-              }}
-            />
-
-            <textarea
-              className="chatbot-input"
-              placeholder="Ask a question for a specific file..."
-              value={questionQuery}
-              onChange={e => setQuestionQuery(e.target.value)}
-              onKeyDown={async (e) => {
-                if (e.key === 'Enter' && !e.shiftKey) {
-                  e.preventDefault();
-                  const cleanQuestion = questionQuery.trim();
-                  const cleanKeyword = rankQuery.trim();
-                  const cleanQuery = cleanQuestion || cleanKeyword;
-
-                  if (!cleanQuery) return;
-
-
-                  const activeFile = selectedFiles[0] || results?.file;
-                  if (!activeFile) {
-                    alert("\u274C Please select a file first.");
-                    return;
-                  }
-
-                  try {
-                    const res = await axios.post(`${API_URL}/api/single_file_answer`, {
-                      file: activeFile,
-                      query: cleanQuery,
-                      user: userEmail,
-                    });
-
-                    setResults({
-                      answer: res.data.answer,
-                      file: activeFile,
-                    });
-                    setSubmittedQuery(cleanQuery);
-
-                    const updated = await axios.get(`${API_URL}/api/chat_history?user=${userEmail}`);
-                    setChatHistory(updated.data.reverse());
-                  } catch (err) {
-                    alert('\u274C Failed to get response.');
-                  }
-
-                  setQuestionQuery('');
-                }
-              }}
-            />
-            <div className="chat-output">
-  {submittedQuery && results?.answer ? (
-    <>
-      <div className="chat-question"><strong>Question:</strong> {submittedQuery}</div>
-      <div className="chat-answer"><strong>Answer:</strong> <ReactMarkdown>{results.answer}</ReactMarkdown></div>
-      <div className="chat-source"><strong>Source:</strong> {results.file}</div>
-    </>
-  ) : (
-    <div className="chat-placeholder">Select a ranked file and ask a question to see the answer...</div>
-  )}
-</div>
-
-
+    <div className="rep-container">
+      <div className="rep-header">
+        <h1>Reports Indexer</h1>
+        <div className="rep-subtitle">
+          <div>
+            <strong>Filename format:</strong>{" "}
+            <code>####-##(optionalLetter).ProjectName.pdf</code>
           </div>
+          <div>
+            <strong>Parsed automatically:</strong> Work order = before first{" "}
+            <code>.</code>, Project = between first <code>.</code> and{" "}
+            <code>.pdf</code>
+          </div>
+          <div>
+            <strong>S3 path:</strong> <code>reports/</code> (fixed on server)
+          </div>
+        </div>
+      </div>
 
-          <div className="ranked-files-side">
-            <div className="ranked-header">Ranked Files</div>
-            <div className="ranked-files-scroll">
-              {rankedOnly.map((item, idx) => (
-                <div
-                  key={idx}
-                  className="ranked-mini-item"
-                  onClick={() => getAnswerFromFile(item.file)}
-                >
-                  <div className="mini-filename">{item.file.replace(/\.txt$/, '')}</div>
-                  <div className="mini-score">{item.score.toFixed(2)}</div>
-                </div>
-              ))}
+      {!apiUp && (
+        <div className="rep-banner warn">
+          ⚠️ Couldn’t reach reports API at <code>{BASE}</code>. Check the Flask
+          server, CORS/OPTIONS, or your <code>REACT_APP_API_URL</code> setting.
+        </div>
+      )}
+
+      {/* Stats */}
+      <div className="rep-stats">
+        <div className="rep-stat">
+          <div className="rep-stat-num">{stats.files}</div>
+          <div className="rep-stat-label">Files</div>
+        </div>
+        <div className="rep-stat">
+          <div className="rep-stat-num">{stats.pages}</div>
+          <div className="rep-stat-label">Pages</div>
+        </div>
+        <div className="rep-stat">
+          <div className="rep-stat-num">{stats.chunks}</div>
+          <div className="rep-stat-label">Chunks</div>
+        </div>
+      </div>
+
+      {/* Global flags */}
+      <div className="rep-row rep-flags">
+        <label className="rep-checkbox">
+          <input
+            type="checkbox"
+            checked={uploadToS3}
+            onChange={(e) => setUploadToS3(e.target.checked)}
+          />
+          Upload original PDF to S3
+        </label>
+        <label className="rep-checkbox">
+          <input
+            type="checkbox"
+            checked={replaceIfExists}
+            onChange={(e) => setReplaceIfExists(e.target.checked)}
+          />
+          Replace if already indexed (same hash/S3 key)
+        </label>
+      </div>
+
+      {/* Mode selector */}
+      <div className="rep-form">
+        <div className="rep-section-title">Add Reports</div>
+
+        <div className="rep-row">
+          <label className="rep-label">Mode</label>
+          <select
+            className="rep-select"
+            value={mode}
+            onChange={(e) => setMode(e.target.value)}
+          >
+            <option value="upload">Upload PDFs (one or many)</option>
+            <option value="folder">Select Reports Folder</option>
+          </select>
+        </div>
+
+        {/* Conditionally render inputs */}
+        {mode === "upload" ? (
+          <div className="rep-row">
+            <label className="rep-label">PDFs</label>
+            <input
+              ref={fileInputRef}
+              type="file"
+              accept="application/pdf"
+              multiple
+              onChange={(e) => setUploadFiles(e.target.files || [])}
+            />
+          </div>
+        ) : (
+          <div className="rep-row">
+            <label className="rep-label">Reports Folder</label>
+            <input
+              ref={folderInputRef}
+              type="file"
+              // Folder selection (Chrome/Edge)
+              webkitdirectory="true"
+              directory="true"
+              multiple
+              onChange={(e) => setFolderFiles(e.target.files || [])}
+            />
+            <div className="rep-hint">
+              Select a folder; all PDFs inside (and subfolders) will be included.
             </div>
+          </div>
+        )}
+
+        <div className="rep-actions">
+          <button
+            className="rep-btn"
+            onClick={handleSubmit}
+            disabled={busy}
+            type="button"
+          >
+            {busy ? "Processing…" : "Index Selected"}
+          </button>
+        </div>
+      </div>
+
+      {/* Panels */}
+      <div className="rep-panels">
+        <div className="rep-panel">
+          <div className="rep-panel-title">Log</div>
+          <div className="rep-log" ref={logRef}>
+            {steps.length === 0 ? (
+              <div className="rep-muted">No recent actions.</div>
+            ) : (
+              steps.map((s, i) => (
+                <div key={i} className="rep-log-line">
+                  {s}
+                </div>
+              ))
+            )}
+          </div>
+        </div>
+
+        <div className="rep-panel">
+          <div className="rep-panel-title">Indexed Files</div>
+          <div className="rep-filelist">
+            {files.length === 0 ? (
+              <div className="rep-muted">No files indexed yet.</div>
+            ) : (
+              files.map((f) => (
+                <div key={f.file_id} className="rep-fileitem" title={f.file_name}>
+                  <div className="rep-filetitle">{f.file_name}</div>
+                  <div className="rep-filemeta">
+                    <span>WO: {f.work_order || "—"}</span>
+                    <span>Pages: {f.pages}</span>
+                    <span>Chunks: {f.chunks}</span>
+                  </div>
+                </div>
+              ))
+            )}
           </div>
         </div>
       </div>
     </div>
   );
 }
-
-export default Reports;

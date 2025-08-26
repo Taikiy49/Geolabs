@@ -19,10 +19,8 @@ import google.generativeai as genai
 # ===========================
 BASE_DIR = Path(__file__).resolve().parent
 
-# Input: a single PDF OR a folder of PDFs
+# Process the ENTIRE folder of PDFs
 PDF_INPUT_PATH = (BASE_DIR / "reports_binder_input_folder").resolve()
-# Example for a folder:
-# PDF_INPUT_PATH = (BASE_DIR / "reports_binder_input_folder").resolve()
 
 # Output DB
 OUTPUT_DB_PATH = (BASE_DIR / "reports_binder.db").resolve()
@@ -44,7 +42,6 @@ TAIL_ROWS_TO_SHOW = 3
 # Extract printed page label (bottom-right crop)
 EXTRACT_PAGE_LABEL = True
 PAGE_LABEL_CROP = (0.70, 0.88, 1.00, 1.00)  # (x1,y1,x2,y2) fraction of image
-
 
 # ===========================
 # Init Gemini
@@ -100,7 +97,7 @@ def normalize_initials(s: str) -> str:
     if not s:
         return ""
     s = s.upper().strip()
-    s = re.sub(r"[^A-Z:]", "", s)         # keep only letters and colons
+    s = re.sub(r"[^A-Z:]", "", s)            # keep only letters and colons
     s = re.sub(r":{2,}", ":", s).strip(":")  # collapse multiple colons, strip edges
     parts = [p for p in s.split(":") if 1 <= len(p) <= 4 and p.isalpha()]
     return ":".join(parts)
@@ -422,7 +419,7 @@ def process_pdf(pdf_path: Path):
 
 def process_input(pdf_path_or_dir: Path):
     if pdf_path_or_dir.is_dir():
-        pdfs = sorted([p for p in pdf_path_or_dir.glob("*.pdf")])
+        pdfs = sorted([p for p in pdf_path_or_dir.glob("*.pdf")], key=lambda p: p.name.lower())
     elif pdf_path_or_dir.is_file() and pdf_path_or_dir.suffix.lower() == ".pdf":
         pdfs = [pdf_path_or_dir]
     else:
@@ -431,6 +428,10 @@ def process_input(pdf_path_or_dir: Path):
     if not pdfs:
         log("⚠️ No PDFs found to process.")
         return
+
+    log(f"📚 Found {len(pdfs)} PDFs:")
+    for p in pdfs:
+        log(f"   • {p.name}")
 
     for p in pdfs:
         process_pdf(p)
@@ -454,8 +455,8 @@ def dump_summary(path: Path):
 
 def main():
     log(f"🔧 Running from: {Path.cwd()}")
-    log(f"📥 Input:     {PDF_INPUT_PATH}")
-    log(f"🗄️  Output DB: {OUTPUT_DB_PATH}")
+    log(f"📥 Input folder: {PDF_INPUT_PATH}")
+    log(f"🗄️  Output DB:   {OUTPUT_DB_PATH}")
     init_output_db(OUTPUT_DB_PATH)
     process_input(PDF_INPUT_PATH)
     dump_summary(OUTPUT_DB_PATH)

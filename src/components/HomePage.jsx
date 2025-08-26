@@ -55,7 +55,7 @@ const dedupeKeepOrder = (arr, keyFn) => {
     if (seen.has(k)) continue;
     seen.add(k);
     out.push(it);
-  }
+  } 
   return out;
 };
 
@@ -180,7 +180,7 @@ const HomePage = () => {
               value={search}
               onChange={(e) => setSearch(e.target.value)}
             />
-          </div>
+          </div> 
         </div>
       </div>
 
@@ -238,115 +238,61 @@ const HomePage = () => {
       )}
 
       {/* Main categories */}
-      <div className="homepage-list">
-        {filtered.slice(0, 2).map((item, idx) => (
-          <div
-            key={idx}
-            className={`homepage-row ${item.disabled ? 'homepage-row-disabled' : ''}`}
-            style={{ cursor: item.disabled ? 'not-allowed' : 'pointer', opacity: item.disabled ? 0.5 : 1 }}
-          >
-            <div className="homepage-row-left">
-              <div className="homepage-row-header">
-                <div className="homepage-icon">{item.icon}</div>
-                <div>
-                  <div className="homepage-title">
-                    {highlight(item.label, search)}{' '}
-                    {item.tag && <span className="homepage-badge">{item.tag}</span>}
-                  </div>
-                  <div className="homepage-sublabel">{highlight(item.sublabel, search)}</div>
-                </div>
-              </div>
-
-              <div className="homepage-description">{highlight(item.description, search)}</div>
-              <div className="homepage-updated">
-                {item.updated ? getDaysAgo(item.updated) : 'Updated recently'}
-              </div>
-
-              {item.subpages && item.subpages.length > 0 && (
-                <div className="homepage-subpages">
-                  {item.subpages.map((sub, i) => (
-                    <div key={i} className="homepage-subpage-link">
-                      <div
-                        className="homepage-subpage-link-header"
-                        onClick={() => handleSubClick(sub.path)}
-                        title={sub.name}
-                      >
-                        <div className="subpage-icon">{sub.icon}</div>
-                        <div className="subpage-info">{highlight(sub.name, search)}</div>
-                      </div>
-                      <div className="subpage-description">{highlight(sub.description, search)}</div>
-
-                      <button
-                        className="homepage-pin"
-                        onClick={() => toggleFavorite(sub.path)}
-                        title={isFavorited(sub.path) ? 'Unpin' : 'Pin'}
-                      >
-                        {isFavorited(sub.path) ? <FaStar /> : <FaRegStar />}
-                      </button>
-                    </div>
-                  ))}
-                </div>
-              )}
+      {/* Cards grid: render all filtered cards */}
+<div className="homepage-list">
+  {filtered.map((item, idx) => (
+    <div
+      key={idx}
+      className={`homepage-row ${item.disabled ? 'homepage-row-disabled' : ''}`}
+      style={{ cursor: item.disabled ? 'not-allowed' : 'pointer', opacity: item.disabled ? 0.5 : 1 }}
+      onClick={() => handleNavigate(item.path, item.disabled)}
+    >
+      <div className="homepage-row-left">
+        <div className="homepage-row-header">
+          <div className="homepage-icon">{item.icon}</div>
+          <div>
+            <div className="homepage-title">
+              {highlight(item.label, search)}{' '}
+              {item.tag && <span className="homepage-badge">{item.tag}</span>}
             </div>
+            <div className="homepage-sublabel">{highlight(item.sublabel, search)}</div>
           </div>
-        ))}
-      </div>
+        </div>
 
-      {/* Admin row (index 2) */}
-      <div className="homepage-contact-wrapper">
-        {homepageCards[2] && (
-          <div
-            className={`homepage-row ${homepageCards[2].disabled ? 'homepage-row-disabled' : ''}`}
-            style={{
-              cursor: homepageCards[2].disabled ? 'not-allowed' : 'pointer',
-              opacity: homepageCards[2].disabled ? 0.5 : 1,
-            }}
-            onClick={() => handleNavigate(homepageCards[2].path, homepageCards[2].disabled)}
-          >
-            <div className="homepage-row-left">
-              <div className="homepage-row-header">
-                <div className="homepage-icon">{homepageCards[2].icon}</div>
-                <div>
-                  <div className="homepage-title">
-                    {homepageCards[2].label}{' '}
-                    {homepageCards[2].tag && <span className="homepage-badge">{homepageCards[2].tag}</span>}
-                  </div>
-                  <div className="homepage-sublabel">{homepageCards[2].sublabel}</div>
+        <div className="homepage-description">{highlight(item.description, search)}</div>
+        <div className="homepage-updated">
+          {item.updated ? getDaysAgo(item.updated) : 'Updated recently'}
+        </div>
+
+        {item.subpages?.length > 0 && (
+          <div className="homepage-subpages" onClick={(e) => e.stopPropagation()}>
+            {item.subpages.map((sub, i) => (
+              <div key={i} className="homepage-subpage-link">
+                <div
+                  className="homepage-subpage-link-header"
+                  onClick={() => handleSubClick(sub.path)}
+                  title={sub.name}
+                >
+                  <div className="subpage-icon">{sub.icon}</div>
+                  <div className="subpage-info">{highlight(sub.name, search)}</div>
                 </div>
+                <div className="subpage-description">{highlight(sub.description, search)}</div>
+                <button
+                  className="homepage-pin"
+                  onClick={() => toggleFavorite(sub.path)}
+                  title={isFavorited(sub.path) ? 'Unpin' : 'Pin'}
+                >
+                  {isFavorited(sub.path) ? <FaStar /> : <FaRegStar />}
+                </button>
               </div>
-              <div className="homepage-description">{homepageCards[2].description}</div>
-            </div>
+            ))}
           </div>
         )}
       </div>
+    </div>
+  ))}
+</div>
 
-      {/* Contacts row (index 3) */}
-      <div className="homepage-contact-wrapper">
-        {homepageCards[3] && (
-          <div
-            className={`homepage-row ${homepageCards[3].disabled ? 'homepage-row-disabled' : ''}`}
-            style={{
-              cursor: homepageCards[3].disabled ? 'not-allowed' : 'pointer',
-              opacity: homepageCards[3].disabled ? 0.5 : 1,
-            }}
-            onClick={() => handleNavigate(homepageCards[3].path, homepageCards[3].disabled)}
-          >
-            <div className="homepage-row-left">
-              <div className="homepage-row-header">
-                <div className="homepage-icon">{homepageCards[3].icon}</div>
-                <div>
-                  <div className="homepage-title">
-                    {homepageCards[3].label}{' '}
-                    {homepageCards[3].tag && <span className="homepage-badge">{homepageCards[3].tag}</span>}
-                  </div>
-                  <div className="homepage-sublabel">{homepageCards[3].sublabel}</div>
-                </div>
-              </div>
-              <div className="homepage-description">{homepageCards[3].description}</div>
-            </div>
-          </div>
-        )}
-      </div>
     </div>
   );
 };

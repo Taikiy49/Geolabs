@@ -452,11 +452,16 @@ export default function Contacts() {
               )}
 
               {visibleCols.business && (
-                <td className="ct-col-business ct-nowrap" title={r.business}>
-                   <FaPhone className="ct-miniicon" />
-                  {r.business}
-                </td>
-              )}
+  <td className="ct-col-business">
+    <div className="ct-flex">
+      <FaPhone className="ct-miniicon" />
+      <span className="ct-nowrap" title={r.business}>
+        {r.business}
+      </span>
+    </div>
+  </td>
+)}
+
 
               {visibleCols.title && (
                 <td className="ct-col-title" title={r.title}>

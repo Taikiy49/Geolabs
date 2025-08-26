@@ -146,8 +146,10 @@ export default function Sidebar({ collapsed, setCollapsed, variant = "sb--slate"
           <Item to="/core-box-inventory" icon={FaBoxOpen} label="Core Box Inventory" />
         </div>
       )}
-
+      <Item to="/reports" icon={FaUserShield} label="Reports" key="reports" />
+      
       {/* Admin */}
+      
       <Item to="/admin" icon={FaUserShield} label="Admin" key="admin" />
 
       {/* Contacts */}

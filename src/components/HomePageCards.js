@@ -97,6 +97,17 @@ const homepageCards = [
   path: '/reports-binder',
   disabled: false,
 },
+{
+    label: 'Reports',
+    sublabel: 'Geotechnical Reports',
+    tag: 'Reports',
+    updated: '2025-08-13',
+    icon: <FaCogs size={40} />,
+    description:
+      'Manage user roles, monitor activity, and configure system settings. Owners/Admins only.',
+    path: '/reports',
+    disabled: false,
+  },
 
   // 2 — Admin (rendered by your “Admin Section” block)
   {

@@ -19,6 +19,9 @@
   box-sizing: border-box;
 }
 
+/* Prevent horizontal scrollbars anywhere on the page */
+html, body, #root, .cc-container, .cc-main { overflow-x: hidden; }
+
 .cc-main {
   flex: 1;
   display: flex;
@@ -83,6 +86,10 @@
   grid-template-columns: 1fr 220px;
   min-height: 0;
   flex: 1;
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 @media (max-width: 900px) {
@@ -97,6 +104,8 @@
   min-height: 0;
   padding: var(--pd-6);
   gap: var(--pd-6);
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 /* FAQ buttons */
@@ -104,7 +113,9 @@
   display: flex;
   flex-wrap: wrap;
   gap: var(--pd-4);
+  max-width: 100%;
 }
+
 .cc-faq-button {
   background: #161b22;
   color: #c9d1d9;
@@ -122,31 +133,38 @@
   flex: 1;
   min-height: 0;
   overflow-y: auto;
-  border: 1px solid #161b22;
   border-radius: 6px;
   padding: var(--pd-6);
   background: #0c1117;
+  max-width: 100%;
+  overflow-x: hidden;
 }
+
+.cc-user-bubble p{
+  font-size: 11px;
+}
+
 .cc-pair { margin-bottom: var(--pd-6); }
 
+/* User and bot bubbles – clean, no border/padding */
 .cc-user-bubble,
 .cc-bot-bubble {
-  border: 1px solid #30363d;
-  border-radius: 6px;
-  padding: var(--pd-6);
+  background: none;
+  border: none;
+  padding: 0;
+  max-width: 100%;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+  color: #c9d1d9;
 }
 
 .cc-user-bubble {
-  background: #0d1117;
   text-align: center;
-  font-size: var(--fs-12); /* mildly emphasized */
+  font-size: var(--fs-12);
   font-weight: 600;
 }
 
-.cc-bot-bubble {
-  background: #0d1117;
-  margin-top: var(--pd-4);
-}
+.cc-bot-bubble { margin-top: var(--pd-4); }
 
 /* Markdown sizing */
 .cc-bot-bubble h1,
@@ -155,7 +173,7 @@
 .cc-bot-bubble h4,
 .cc-bot-bubble h5,
 .cc-bot-bubble h6 {
-  font-size: var(--fs-12);
+  font-size: var(--fs-10);
   margin: var(--pd-4) 0 var(--pd-2);
 }
 .cc-bot-bubble p,
@@ -164,7 +182,9 @@
 
 /* Code blocks */
 .cc-code { background: #11161c; padding: 0 3px; border-radius: 3px; }
+
 .cc-codeblock { margin-top: var(--pd-4); }
+
 .cc-pre {
   background: #0a0f14;
   border: 1px solid #232a31;
@@ -172,7 +192,9 @@
   border-radius: 6px;
   overflow: auto;
   max-height: 40vh;
+  max-width: 100%;
   font-size: var(--fs-10);
+  white-space: pre;
 }
 
 /* Mini buttons (copy etc.) */
@@ -197,7 +219,7 @@
 
 .cc-composer {
   display: inline-flex;
-  align-items: stretch;
+  align-items: center;
   gap: var(--pd-4);
   width: 100%;
 }
@@ -215,9 +237,12 @@
 
 .cc-textarea {
   resize: none;
+  height: 22px;
   min-height: 22px;
-  max-height: 110px;
-  padding: var(--pd-4) var(--pd-6);
+  max-height: 22px;
+  padding: 0 var(--pd-6);
+  line-height: 22px;
+  box-sizing: border-box;
 }
 
 .cc-search-input:focus {

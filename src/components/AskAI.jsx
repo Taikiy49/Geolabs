@@ -332,9 +332,8 @@ export default function AskAI({ selectedDB, setSelectedDB }) {
                 >
                   {showAllFaqs ? "Show Less ▲" : "Show More ▼"}
                 </button>
-              )}
-            </div>
-
+              )} 
+            </div> 
             {/* Chat scroll */}
             <div className="cc-chat-scroll" ref={chatScrollRef}>
               {conversation.map((item, i) => {

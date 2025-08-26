@@ -67,3 +67,12 @@ non_app_related/
 # VS Code
 # ---------------------
 .vscode/
+
+# ---------------------
+# Uploads (ignore all uploaded/generated files)
+# ---------------------
+uploads/*
+
+# uploads (binary & temp stuff)
+pythonApp/uploads/**
+!pythonApp/uploads/.gitkeep
