@@ -36,7 +36,7 @@ def init_reports_db():
         );
         """)
         conn.execute("CREATE INDEX IF NOT EXISTS idx_reports_wo ON reports(work_order);")
-        conn.execute("CREATE INDEX IF NOT EXISTS idx_reports_date ON reports(date);")
+        conn.execute("CREATE INDEX IF NOT EXISTS idx_reports_date ON reports(report_date);")
         conn.execute("CREATE INDEX IF NOT EXISTS idx_reports_billing ON reports(billing);")
         conn.commit()
 
