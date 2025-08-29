@@ -244,7 +244,7 @@ export default function Admin() {
     const out = { Owner: 0, Admin: 0, User: 0 };
     (users || []).forEach(u => { if (out[u.role] !== undefined) out[u.role]++; });
     return out;
-  }, [users]);
+  }, [users, rolePriority]);
 
   if (loading) {
     return (

@@ -4,7 +4,6 @@ import ReactMarkdown from "react-markdown";
 import { useMsal } from "@azure/msal-react";
 import {
   FaPaperPlane,
-  FaDatabase,
   FaGlobe,
   FaBolt,
   FaSync,
