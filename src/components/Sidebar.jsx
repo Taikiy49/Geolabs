@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useMemo } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import {
   FaBars,
@@ -8,7 +8,6 @@ import {
   FaDatabase,
   FaCogs,
   FaTable,
-  FaFolderOpen,
   FaCloudUploadAlt,
   FaCloud,
   FaSearch,
@@ -18,26 +17,23 @@ import {
   FaBoxOpen,
   FaFileAlt,
   FaChartBar,
+  FaCircle,
 } from "react-icons/fa";
 import "../styles/Sidebar.css";
 
 function useIsMobile(breakpoint = 1024) {
-  const [isMobile, setIsMobile] = useState(window.innerWidth < breakpoint);
-  
+  const [isMobile, setIsMobile] = useState(typeof window !== "undefined" ? window.innerWidth < breakpoint : false);
   useEffect(() => {
-    const handleResize = () => setIsMobile(window.innerWidth < breakpoint);
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
+    const onResize = () => setIsMobile(window.innerWidth < breakpoint);
+    window.addEventListener("resize", onResize);
+    return () => window.removeEventListener("resize", onResize);
   }, [breakpoint]);
-  
   return isMobile;
 }
 
 export default function Sidebar({ collapsed, setCollapsed }) {
   const isMobile = useIsMobile();
   const location = useLocation();
-  const [sidebarOpen, setSidebarOpen] = useState(false);
-  
   const path = location.pathname || "/";
 
   // Navigation groups
@@ -45,237 +41,189 @@ export default function Sidebar({ collapsed, setCollapsed }) {
     {
       id: "main",
       label: "Main",
-      items: [
-        { to: "/", icon: FaHome, label: "Dashboard" }
-      ]
+      icon: FaHome,
+      items: [{ to: "/", icon: FaHome, label: "Dashboard" }],
     },
     {
       id: "documents",
       label: "Document Intelligence",
+      icon: FaDatabase,
       items: [
         { to: "/ask-ai", icon: FaRobot, label: "AI Assistant" },
         { to: "/db-viewer", icon: FaTable, label: "Database Viewer" },
-        { to: "/db-admin", icon: FaCogs, label: "Database Admin" }
-      ]
+        { to: "/db-admin", icon: FaCogs, label: "Database Admin" },
+      ],
     },
     {
       id: "projects",
       label: "Project Management",
+      icon: FaCloud,
       items: [
         { to: "/s3-viewer", icon: FaCloud, label: "S3 Browser" },
         { to: "/s3-admin", icon: FaCloudUploadAlt, label: "S3 Management" },
         { to: "/ocr-lookup", icon: FaSearch, label: "OCR Lookup" },
-        { to: "/core-box-inventory", icon: FaBoxOpen, label: "Core Inventory" }
-      ]
+        { to: "/core-box-inventory", icon: FaBoxOpen, label: "Core Inventory" },
+      ],
     },
     {
       id: "reports",
       label: "Reports & Analytics",
+      icon: FaChartBar,
       items: [
         { to: "/reports", icon: FaFileAlt, label: "Reports" },
-        { to: "/reports-binder", icon: FaChartBar, label: "Reports Binder" }
-      ]
+        { to: "/reports-binder", icon: FaChartBar, label: "Reports Binder" },
+      ],
     },
     {
       id: "admin",
       label: "Administration",
+      icon: FaUserShield,
       items: [
         { to: "/admin", icon: FaUserShield, label: "User Management" },
-        { to: "/contacts", icon: FaAddressBook, label: "Contacts" }
-      ]
-    }
+        { to: "/contacts", icon: FaAddressBook, label: "Contacts" },
+      ],
+    },
   ];
 
-  // Track which groups have active items
+  // Active group detection
   const activeGroups = useMemo(() => {
     const active = {};
-    navigationGroups.forEach(group => {
-      active[group.id] = group.items.some(item => 
-        item.to === path || (item.to !== "/" && path.startsWith(item.to))
-      );
+    navigationGroups.forEach((g) => {
+      active[g.id] = g.items.some((item) => item.to === path || (item.to !== "/" && path.startsWith(item.to)));
     });
     return active;
   }, [path, navigationGroups]);
 
-  // Manage dropdown states
+  // Expanded groups state
   const [expandedGroups, setExpandedGroups] = useState(() => {
     const initial = {};
-    navigationGroups.forEach(group => {
-      initial[group.id] = activeGroups[group.id] || group.id === "main";
+    navigationGroups.forEach((g) => {
+      initial[g.id] = g.id === "main" || activeGroups[g.id];
     });
     return initial;
   });
 
-  // Auto-expand groups with active items
+  // Auto-open active group
   useEffect(() => {
-    setExpandedGroups(prev => {
+    setExpandedGroups((prev) => {
       const updated = { ...prev };
-      Object.keys(activeGroups).forEach(groupId => {
-        if (activeGroups[groupId]) {
-          updated[groupId] = true;
-        }
+      Object.keys(activeGroups).forEach((id) => {
+        if (activeGroups[id]) updated[id] = true;
       });
       return updated;
     });
   }, [activeGroups]);
 
-  // Update CSS custom property for layout
+  // Mobile drawer
+  const [sidebarOpen, setSidebarOpen] = useState(false);
   useEffect(() => {
-    document.documentElement.setAttribute(
-      "data-sidebar",
-      collapsed ? "collapsed" : "expanded"
-    );
-  }, [collapsed]);
-
-  // Close mobile sidebar on route change
-  useEffect(() => {
-    if (isMobile) {
-      setSidebarOpen(false);
-    }
+    if (isMobile) setSidebarOpen(false);
   }, [location.pathname, isMobile]);
 
-  const toggleGroup = (groupId) => {
+  const toggleGroup = (id) => {
     if (collapsed) return;
-    setExpandedGroups(prev => ({
-      ...prev,
-      [groupId]: !prev[groupId]
-    }));
+    setExpandedGroups((prev) => ({ ...prev, [id]: !prev[id] }));
   };
 
-  const handleLinkClick = () => {
-    if (isMobile) {
-      setSidebarOpen(false);
-    }
-  };
-
-  // Mobile backdrop
-  const renderBackdrop = () => {
-    if (!isMobile || !sidebarOpen) return null;
-    return (
-      <div 
-        className="sidebar-backdrop"
-        onClick={() => setSidebarOpen(false)}
-        aria-hidden="true"
-      />
-    );
-  };
-
-  // Navigation item component
-  const NavItem = ({ to, icon: Icon, label, onClick }) => (
+  const NavItem = ({ to, icon: Icon, label }) => (
     <NavLink
       to={to}
-      className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`}
-      onClick={onClick || handleLinkClick}
+      className={({ isActive }) => `sb-link ${isActive ? "active" : ""}`}
       title={collapsed ? label : undefined}
+      end={to === "/"}
     >
-      <Icon className="nav-icon" />
-      <span className="nav-text">{label}</span>
+      <div className="sb-link-inner">
+        <Icon className="sb-icon" />
+        <span className="sb-text">{label}</span>
+      </div>
+      <FaCircle className="sb-dot" />
     </NavLink>
   );
 
+  const Group = ({ group }) => {
+    const GroupIcon = group.icon || FaDatabase;
+    const open = expandedGroups[group.id];
+
+    return (
+      <div className="sb-group">
+        {group.items.length > 1 ? (
+          <button
+            className={`sb-group-trigger ${open ? "open" : ""} ${activeGroups[group.id] ? "active" : ""}`}
+            onClick={() => toggleGroup(group.id)}
+            aria-expanded={open}
+            title={collapsed ? group.label : undefined}
+          >
+            <GroupIcon className="sb-icon" />
+            <span className="sb-text">{group.label}</span>
+            {!collapsed && <FaChevronDown className={`sb-chevron ${open ? "rot" : ""}`} />}
+          </button>
+        ) : (
+          // If only one item, render it directly as a top-level link
+          <NavItem {...group.items[0]} />
+        )}
+
+        {!collapsed && group.items.length > 1 && (
+          <div className={`sb-collapse ${open ? "expanded" : "collapsed"}`}>
+            {group.items.map((item) => (
+              <NavItem key={item.to} {...item} />
+            ))}
+          </div>
+        )}
+      </div>
+    );
+  };
+
+  // MOBILE
   if (isMobile) {
     return (
       <>
-        {renderBackdrop()}
-        <aside className={`sidebar ${sidebarOpen ? "open" : ""}`}>
-          <button
-            className="sidebar-toggle"
-            onClick={() => setSidebarOpen(false)}
-            aria-label="Close sidebar"
-          >
+        {sidebarOpen && <div className="sb-backdrop" onClick={() => setSidebarOpen(false)} aria-hidden="true" />}
+        <aside className={`sidebar modern ${sidebarOpen ? "open" : ""}`}>
+          <button className="sb-toggle top" onClick={() => setSidebarOpen(false)} aria-label="Close sidebar">
             <FaTimes />
           </button>
-          
-          <nav className="sidebar-nav" role="navigation" aria-label="Main navigation">
-            {navigationGroups.map(group => (
-              <div key={group.id} className="nav-group">
-                {group.items.length > 1 ? (
-                  <>
-                    <button
-                      className={`nav-group-trigger ${activeGroups[group.id] ? "active" : ""}`}
-                      onClick={() => toggleGroup(group.id)}
-                      aria-expanded={expandedGroups[group.id]}
-                    >
-                      <FaDatabase className="nav-icon" />
-                      <span className="nav-text">{group.label}</span>
-                      <FaChevronDown className={`nav-chevron ${expandedGroups[group.id] ? "expanded" : ""}`} />
-                    </button>
-                    <div className={`nav-dropdown ${expandedGroups[group.id] ? "expanded" : "collapsed"}`}>
-                      {group.items.map(item => (
-                        <NavItem key={item.to} {...item} />
-                      ))}
-                    </div>
-                  </>
-                ) : (
-                  group.items.map(item => (
-                    <NavItem key={item.to} {...item} />
-                  ))
-                )}
-              </div>
+
+          <nav className="sb-nav" role="navigation" aria-label="Main navigation">
+            {navigationGroups.map((group) => (
+              <Group key={group.id} group={group} />
             ))}
           </nav>
-          
-          <div className="sidebar-footer">
-            <div className="sidebar-footer-content">
-              <FaCogs />
-              <span>Geolabs v2.0</span>
-            </div>
+
+          <div className="sb-footer">
+            <span>Geolabs v2.0</span>
           </div>
         </aside>
+
+        {/* Small floating button to open drawer (can be placed in Header if preferred) */}
+        {!sidebarOpen && (
+          <button className="sb-fab" onClick={() => setSidebarOpen(true)} aria-label="Open sidebar">
+            <FaBars />
+          </button>
+        )}
       </>
     );
   }
 
+  // DESKTOP
   return (
-    <aside className={`sidebar ${collapsed ? "collapsed" : ""}`}>
+    <aside className={`sidebar modern ${collapsed ? "collapsed" : ""}`}>
       <button
-        className="sidebar-toggle"
+        className="sb-toggle"
         onClick={() => setCollapsed(!collapsed)}
         aria-label={collapsed ? "Expand sidebar" : "Collapse sidebar"}
-        title={collapsed ? "Expand sidebar" : "Collapse sidebar"}
+        title={collapsed ? "Expand" : "Collapse"}
       >
         {collapsed ? <FaBars /> : <FaTimes />}
       </button>
 
-      <nav className="sidebar-nav" role="navigation" aria-label="Main navigation">
-        {navigationGroups.map(group => (
-          <div key={group.id} className="nav-group">
-            {group.items.length > 1 ? (
-              <>
-                <button
-                  className={`nav-group-trigger ${activeGroups[group.id] ? "active" : ""}`}
-                  onClick={() => toggleGroup(group.id)}
-                  aria-expanded={expandedGroups[group.id]}
-                  title={collapsed ? group.label : undefined}
-                >
-                  <FaDatabase className="nav-icon" />
-                  <span className="nav-text">{group.label}</span>
-                  {!collapsed && (
-                    <FaChevronDown className={`nav-chevron ${expandedGroups[group.id] ? "expanded" : ""}`} />
-                  )}
-                </button>
-                {!collapsed && (
-                  <div className={`nav-dropdown ${expandedGroups[group.id] ? "expanded" : "collapsed"}`}>
-                    {group.items.map(item => (
-                      <NavItem key={item.to} {...item} />
-                    ))}
-                  </div>
-                )}
-              </>
-            ) : (
-              group.items.map(item => (
-                <NavItem key={item.to} {...item} />
-              ))
-            )}
-          </div>
+      <nav className="sb-nav" role="navigation" aria-label="Main navigation">
+        {navigationGroups.map((group) => (
+          <Group key={group.id} group={group} />
         ))}
       </nav>
 
-      <div className="sidebar-footer">
-        <div className="sidebar-footer-content">
-          <FaCogs />
-          <span>Geolabs v2.0</span>
-        </div>
+      <div className="sb-footer">
+        <span>Geolabs v2.0</span>
       </div>
     </aside>
   );

@@ -41,8 +41,14 @@ export default function Header() {
   const navigate = useNavigate();
   const location = useLocation();
 
-  const userEmail = accounts?.[0]?.username || accounts?.[0]?.idTokenClaims?.preferred_username || "";
-  const displayName = accounts?.[0]?.idTokenClaims?.name || accounts?.[0]?.idTokenClaims?.given_name || "";
+  const userEmail =
+    accounts?.[0]?.username ||
+    accounts?.[0]?.idTokenClaims?.preferred_username ||
+    "";
+  const displayName =
+    accounts?.[0]?.idTokenClaims?.name ||
+    accounts?.[0]?.idTokenClaims?.given_name ||
+    "";
   const userInitials = initialsFromEmailOrName(userEmail, displayName);
 
   // State
@@ -64,7 +70,10 @@ export default function Header() {
   }, [userEmail]);
 
   // Environment detection
-  const ENV = (import.meta && import.meta.env && import.meta.env.VITE_APP_ENV) || process.env.NODE_ENV || "development";
+  const ENV =
+    (import.meta && import.meta.env && import.meta.env.VITE_APP_ENV) ||
+    process.env.NODE_ENV ||
+    "development";
 
   // API Health Check
   const pingApi = async () => {
@@ -87,29 +96,22 @@ export default function Header() {
     setOpenDropdown(null);
   }, [location.pathname]);
 
-  // Close dropdowns on outside click
+  // Close dropdowns on outside click & keyboard helpers
   useEffect(() => {
     function handleClickOutside(event) {
       if (headerRef.current && !headerRef.current.contains(event.target)) {
         setOpenDropdown(null);
       }
     }
-
     function handleKeyDown(event) {
-      if (event.key === "Escape") {
-        setOpenDropdown(null);
-      }
-      // Focus search with "/"
+      if (event.key === "Escape") setOpenDropdown(null);
       if (event.key === "/" && !event.metaKey && !event.ctrlKey && !event.altKey) {
-        const activeElement = document.activeElement;
-        if (activeElement && (activeElement.tagName === "INPUT" || activeElement.tagName === "TEXTAREA")) {
-          return;
-        }
+        const ae = document.activeElement;
+        if (ae && (ae.tagName === "INPUT" || ae.tagName === "TEXTAREA")) return;
         event.preventDefault();
         searchRef.current?.focus();
       }
     }
-
     document.addEventListener("mousedown", handleClickOutside);
     document.addEventListener("keydown", handleKeyDown);
     return () => {
@@ -118,29 +120,23 @@ export default function Header() {
     };
   }, []);
 
-  // Authentication handlers
+  // Auth
   const handleSignIn = async () => {
     try {
-      await instance.loginPopup({
-        scopes: ["User.Read"],
-        prompt: "select_account"
-      });
+      await instance.loginPopup({ scopes: ["User.Read"], prompt: "select_account" });
     } catch (error) {
       console.error("Login failed:", error);
     }
   };
-
   const handleSignOut = async () => {
     try {
-      await instance.logoutPopup({
-        account: accounts[0]
-      });
+      await instance.logoutPopup({ account: accounts[0] });
     } catch (error) {
       console.error("Logout failed:", error);
     }
   };
 
-  // Search handler
+  // Search
   const handleSearch = (e) => {
     e.preventDefault();
     if (searchQuery.trim()) {
@@ -154,9 +150,7 @@ export default function Header() {
       await navigator.clipboard.writeText(userEmail);
       setCopied(true);
       setTimeout(() => setCopied(false), 2000);
-    } catch {
-      // Fallback for older browsers
-    }
+    } catch {}
   };
 
   const apiStatusPill = useMemo(() => {
@@ -178,86 +172,81 @@ export default function Header() {
     }
     return (
       <div className="status-pill">
-        <span>Checking...</span>
+        <span>Checking…</span>
       </div>
     );
   }, [apiHealthy]);
 
   return (
-    <header className="header" ref={headerRef}>
-      {/* Brand */}
-      <Link to="/" className="header-brand">
-        <img src="/geolabs_logo.jpg" alt="Geolabs" className="header-logo" />
-        <span className="header-title">Geolabs, Inc.</span>
+    <header className="header header-compact" ref={headerRef}>
+      {/* Brand (no-wrap) */}
+      <Link to="/" className="header-brand no-wrap">
+        <img src="/geolabs_logo.jpg" alt="Geolabs" className="header-logo compact" />
+        {/* Non-breaking space after comma keeps it one line */}
+        <span className="header-title no-wrap">Geolabs,&nbsp;Inc.</span>
       </Link>
 
-      {/* Navigation */}
-      <nav className="header-nav">
-        <NavLink to="/" className="nav-link" end>
+      {/* Nav — compact & horizontally scrollable if needed */}
+      <nav className="header-nav compact">
+        <NavLink to="/" className="nav-link compact" end>
           <FaHome />
           <span>Dashboard</span>
         </NavLink>
-        <NavLink to="/ask-ai" className="nav-link">
+        <NavLink to="/ask-ai" className="nav-link compact">
           <FaRobot />
           <span>AI Assistant</span>
         </NavLink>
-        <NavLink to="/db-viewer" className="nav-link">
+        <NavLink to="/db-viewer" className="nav-link compact">
           <FaDatabase />
           <span>Database</span>
         </NavLink>
-        <NavLink to="/reports" className="nav-link">
+        <NavLink to="/reports" className="nav-link compact">
           <FaFileAlt />
           <span>Reports</span>
         </NavLink>
       </nav>
 
-      {/* Search */}
-      <form className="header-search" onSubmit={handleSearch}>
+      {/* Search — shrinks intelligently, hides on very small widths */}
+      <form className="header-search compact" onSubmit={handleSearch}>
         <input
           ref={searchRef}
           type="text"
-          className="search-input"
-          placeholder="Search across all tools... (Press / to focus)"
+          className="search-input compact"
+          placeholder="Search… (/)"
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
         />
         <FaSearch className="search-icon" />
       </form>
 
-      {/* Status & Actions */}
-      <div className="header-status">
-        <div className="status-pill env">
-          <span>{ENV}</span>
-        </div>
+      {/* Status & Actions (compact) */}
+      <div className="header-status compact">
+        <div className="status-pill env compact"><span>{ENV}</span></div>
         {apiStatusPill}
       </div>
 
-      <div className="header-actions">
-        {/* New Menu */}
+      <div className="header-actions compact">
+        {/* New */}
         <div className="profile-menu">
           <button
-            className="action-btn"
+            className="action-btn compact"
             onClick={() => setOpenDropdown(openDropdown === "new" ? null : "new")}
             aria-expanded={openDropdown === "new"}
             aria-haspopup="menu"
-            title="Create new"
+            title="Create"
           >
             <FaPlus />
           </button>
-          
           {openDropdown === "new" && (
-            <div className="dropdown-menu">
+            <div className="dropdown-menu compact">
               <Link to="/db-admin" className="dropdown-item">
-                <FaPlus />
-                <span>Upload Documents</span>
+                <FaPlus /><span>Upload Documents</span>
               </Link>
               <Link to="/s3-admin" className="dropdown-item">
-                <FaPlus />
-                <span>Upload to S3</span>
+                <FaPlus /><span>Upload to S3</span>
               </Link>
               <Link to="/core-box-inventory" className="dropdown-item">
-                <FaPlus />
-                <span>Add Core Box</span>
+                <FaPlus /><span>Add Core Box</span>
               </Link>
             </div>
           )}
@@ -266,7 +255,7 @@ export default function Header() {
         {/* Notifications */}
         <div className="profile-menu">
           <button
-            className="action-btn"
+            className="action-btn compact"
             onClick={() => setOpenDropdown(openDropdown === "notifications" ? null : "notifications")}
             aria-expanded={openDropdown === "notifications"}
             aria-haspopup="menu"
@@ -275,34 +264,30 @@ export default function Header() {
             <FaBell />
             <span className="notification-badge" />
           </button>
-          
           {openDropdown === "notifications" && (
-            <div className="dropdown-menu">
+            <div className="dropdown-menu compact">
               <div className="dropdown-header">
                 <div className="dropdown-user-name">Notifications</div>
-                <div className="dropdown-user-email">Stay updated with system alerts</div>
+                <div className="dropdown-user-email">No new alerts</div>
               </div>
               <div className="dropdown-item">
-                <FaCheckCircle />
-                <span>No new notifications</span>
+                <FaCheckCircle /><span>All caught up</span>
               </div>
             </div>
           )}
         </div>
 
-        {/* Profile Menu */}
+        {/* Profile */}
         <div className="profile-menu">
           <button
-            className="profile-trigger"
+            className="profile-trigger compact"
             onClick={() => setOpenDropdown(openDropdown === "profile" ? null : "profile")}
             aria-expanded={openDropdown === "profile"}
             aria-haspopup="menu"
           >
-            <div className="profile-avatar">
-              {userInitials}
-            </div>
+            <div className="profile-avatar compact">{userInitials}</div>
             {isAuthed && (
-              <div className="profile-info">
+              <div className="profile-info clamp">
                 <div className="profile-name">{displayName || "User"}</div>
                 <div className="profile-email">{userEmail}</div>
               </div>
@@ -311,46 +296,41 @@ export default function Header() {
           </button>
 
           {openDropdown === "profile" && (
-            <div className="dropdown-menu">
+            <div className="dropdown-menu compact">
               {isAuthed ? (
                 <>
                   <div className="dropdown-header">
                     <div className="dropdown-user-name">{displayName || userEmail}</div>
                     <div className="dropdown-user-email">{userEmail}</div>
                   </div>
-                  
+
                   <button className="dropdown-item" onClick={copyEmail}>
-                    <FaCopy />
-                    <span>Copy Email</span>
+                    <FaCopy /><span>Copy Email</span>
                     {copied && <span className="copy-feedback">Copied!</span>}
                   </button>
-                  
+
                   <Link to="/admin" className="dropdown-item">
-                    <FaCog />
-                    <span>Admin Settings</span>
+                    <FaCog /><span>Admin Settings</span>
                   </Link>
-                  
+
                   <a
                     href="https://myaccount.microsoft.com/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="dropdown-item"
                   >
-                    <FaExternalLinkAlt />
-                    <span>Microsoft Account</span>
+                    <FaExternalLinkAlt /><span>Microsoft Account</span>
                   </a>
-                  
+
                   <div className="dropdown-divider" />
-                  
+
                   <button className="dropdown-item danger" onClick={handleSignOut}>
-                    <FaSignOutAlt />
-                    <span>Sign Out</span>
+                    <FaSignOutAlt /><span>Sign Out</span>
                   </button>
                 </>
               ) : (
                 <button className="dropdown-item" onClick={handleSignIn}>
-                  <FaSignInAlt />
-                  <span>Sign In with Microsoft</span>
+                  <FaSignInAlt /><span>Sign In with Microsoft</span>
                 </button>
               )}
             </div>
