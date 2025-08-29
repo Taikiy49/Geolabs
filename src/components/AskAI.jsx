@@ -409,7 +409,7 @@ export default function AskAI({ selectedDB, setSelectedDB }) {
                                 <ReactMarkdown
                                   components={{
                                     a: ({ node, children, ...props }) => (
-                                      <a {...props} target="_blank" rel="noopener noreferrer">{children}</a>
+                                      <a {...props} target="_blank" rel="noopener noreferrer" aria-label={props.href || 'Link'}>{children}</a>
                                     ),
                                     code: ({ inline, className, children, ...props }) => {
                                       if (inline) {

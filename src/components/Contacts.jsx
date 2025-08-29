@@ -3,9 +3,7 @@ import { useMsal } from "@azure/msal-react";
 import {
   FaSyncAlt,
   FaCloudDownloadAlt,
-  FaCopy,
   FaPhone,
-  FaEnvelope,
   FaBuilding,
   FaUserTie,
   FaFilter,
@@ -80,11 +78,11 @@ function normalizeMeContact(c) {
 }
 
 function toCSV(rows, cols) {
-  const escape = (v) =>
+  const csvEscape = (v) =>
     `"${String(v ?? "").replaceAll('"', '""').replace(/\r?\n/g, " ") }"`;
-  const header = cols.map((c) => escape(c.label)).join(",");
+  const header = cols.map((c) => csvEscape(c.label)).join(",");
   const lines = rows
-    .map((r) => cols.map((c) => escape(r[c.key])).join(","))
+    .map((r) => cols.map((c) => csvEscape(r[c.key])).join(","))
     .join("\n");
   return `${header}\n${lines}`;
 }
