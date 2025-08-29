@@ -1,3 +1,4 @@
+// src/components/Sidebar.jsx
 import React, { useEffect, useMemo, useState } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import {
@@ -21,9 +22,10 @@ import {
 } from "react-icons/fa";
 import "../styles/Sidebar.css";
 
-
 function useIsMobile(breakpoint = 1024) {
-  const [isMobile, setIsMobile] = useState(typeof window !== "undefined" ? window.innerWidth < breakpoint : false);
+  const [isMobile, setIsMobile] = useState(
+    typeof window !== "undefined" ? window.innerWidth < breakpoint : false
+  );
   useEffect(() => {
     const onResize = () => setIsMobile(window.innerWidth < breakpoint);
     window.addEventListener("resize", onResize);
@@ -37,102 +39,103 @@ export default function Sidebar({ collapsed, setCollapsed }) {
   const location = useLocation();
   const path = location.pathname || "/";
 
+  // ---- NAV GROUPS (aligned with HomePage) ----
+  const navigationGroups = useMemo(
+    () => [
+      {
+        id: "main",
+        label: "Main",
+        icon: FaHome,
+        items: [{ to: "/", icon: FaHome, label: "Dashboard" }],
+      },
 
-  
-  // Navigation groups
-  // 1) Make navigationGroups stable
-const navigationGroups = useMemo(() => ([
-  {
-    id: "main",
-    label: "Main",
-    items: [{ to: "/", icon: FaHome, label: "Dashboard" }]
-  },
-  {
-    id: "documents",
-    label: "Document Intelligence",
-    items: [
-      { to: "/ask-ai", icon: FaRobot, label: "AI Assistant" },
-      { to: "/db-viewer", icon: FaTable, label: "Database Viewer" },
-      { to: "/db-admin", icon: FaCogs, label: "Database Admin" }
-    ]
-  },
-  {
-    id: "projects",
-    label: "Project Management",
-    items: [
-      { to: "/s3-viewer", icon: FaCloud, label: "S3 Browser" },
-      { to: "/s3-admin", icon: FaCloudUploadAlt, label: "S3 Management" },
-      { to: "/ocr-lookup", icon: FaSearch, label: "OCR Lookup" },
-      { to: "/core-box-inventory", icon: FaBoxOpen, label: "Core Inventory" }
-    ]
-  },
-  {
-    id: "reports",
-    label: "Reports & Analytics",
-    items: [
-      { to: "/reports", icon: FaFileAlt, label: "Reports" },
-      { to: "/reports-binder", icon: FaChartBar, label: "Reports Binder" }
-    ]
-  },
-  {
-    id: "admin",
-    label: "Administration",
-    items: [
-      { to: "/admin", icon: FaUserShield, label: "User Management" },
-      { to: "/contacts", icon: FaAddressBook, label: "Contacts" }
-    ]
-  }
-]), []);
+      {
+        id: "ai",
+        label: "AI & Knowledge",
+        icon: FaRobot,
+        items: [
+          { to: "/ask-ai", icon: FaRobot, label: "Ask Geolabs AI" },
+        ],
+      },
 
-// unchanged: compute which groups are active for current path
-const activeGroups = useMemo(() => {
-  const active = {};
-  navigationGroups.forEach(group => {
-    active[group.id] = group.items.some(item =>
-      item.to === path || (item.to !== "/" && path.startsWith(item.to))
-    );
+      {
+        id: "data",
+        label: "Data & Indexing",
+        icon: FaDatabase,
+        items: [
+          { to: "/db-viewer", icon: FaTable, label: "Database Explorer" },
+          { to: "/db-admin", icon: FaCogs, label: "Index Manager" },
+        ],
+      },
+
+      {
+        id: "projects",
+        label: "Projects & Files",
+        icon: FaCloud,
+        items: [
+          { to: "/ocr-lookup", icon: FaSearch, label: "OCR Lookup" },
+          { to: "/s3-viewer", icon: FaFileAlt, label: "S3 Browser" },
+          { to: "/s3-admin", icon: FaCloudUploadAlt, label: "S3 Uploader" },
+          { to: "/core-box-inventory", icon: FaBoxOpen, label: "Core Inventory" },
+        ],
+      },
+
+      {
+        id: "reports",
+        label: "Reports & Analytics",
+        icon: FaChartBar,
+        items: [
+          { to: "/reports", icon: FaFileAlt, label: "Reports" },
+          { to: "/reports-binder", icon: FaChartBar, label: "Reports Binder" },
+        ],
+      },
+
+      {
+        id: "people",
+        label: "People & Admin",
+        icon: FaUserShield,
+        items: [
+          { to: "/contacts", icon: FaAddressBook, label: "Directory" },
+          { to: "/admin", icon: FaCogs, label: "Admin Console" },
+        ],
+      },
+    ],
+    []
+  );
+
+  // Which groups are active for current path
+  const activeGroups = useMemo(() => {
+    const active = {};
+    navigationGroups.forEach((group) => {
+      active[group.id] = group.items.some(
+        (item) => item.to === path || (item.to !== "/" && path.startsWith(item.to))
+      );
+    });
+    return active;
+  }, [path, navigationGroups]);
+
+  // Initial: open main and any active groups
+  const [expandedGroups, setExpandedGroups] = useState(() => {
+    const init = {};
+    navigationGroups.forEach((group) => {
+      init[group.id] = group.id === "main" || !!activeGroups[group.id];
+    });
+    return init;
   });
-  return active;
-}, [path, navigationGroups]);
 
-// initial state: open "main" and any active groups
-const [expandedGroups, setExpandedGroups] = useState(() => {
-  const init = {};
-  navigationGroups.forEach(group => {
-    init[group.id] = group.id === "main" || !!activeGroups[group.id];
-  });
-  return init;
-});
-
-// shallow compare helper
-const shallowEqual = (a, b) => {
-  const ka = Object.keys(a);
-  const kb = Object.keys(b);
-  if (ka.length !== kb.length) return false;
-  for (const k of ka) if (a[k] !== b[k]) return false;
-  return true;
-};
-
-// 2) Only update state if it actually changes
-useEffect(() => {
-  setExpandedGroups(prev => {
-    const next = { ...prev };
-    for (const id of Object.keys(activeGroups)) {
-      if (activeGroups[id]) next[id] = true;
-    }
-    return shallowEqual(prev, next) ? prev : next;
-  });
-}, [activeGroups]);
-
-
-  // Auto-open active group
+  // Only update expanded state when it actually changes (prevents nested update warning)
   useEffect(() => {
     setExpandedGroups((prev) => {
-      const updated = { ...prev };
-      Object.keys(activeGroups).forEach((id) => {
-        if (activeGroups[id]) updated[id] = true;
-      });
-      return updated;
+      const next = { ...prev };
+      for (const id of Object.keys(activeGroups)) {
+        if (activeGroups[id]) next[id] = true;
+      }
+      // shallow compare
+      const a = Object.keys(prev);
+      const b = Object.keys(next);
+      if (a.length !== b.length) return next;
+      for (const k of a) if (prev[k] !== next[k]) return next;
+      return prev;
     });
   }, [activeGroups]);
 
@@ -170,17 +173,20 @@ useEffect(() => {
       <div className="sb-group">
         {group.items.length > 1 ? (
           <button
-            className={`sb-group-trigger ${open ? "open" : ""} ${activeGroups[group.id] ? "active" : ""}`}
+            className={`sb-group-trigger ${open ? "open" : ""} ${
+              activeGroups[group.id] ? "active" : ""
+            }`}
             onClick={() => toggleGroup(group.id)}
             aria-expanded={open}
             title={collapsed ? group.label : undefined}
           >
             <GroupIcon className="sb-icon" />
             <span className="sb-text">{group.label}</span>
-            {!collapsed && <FaChevronDown className={`sb-chevron ${open ? "rot" : ""}`} />}
+            {!collapsed && (
+              <FaChevronDown className={`sb-chevron ${open ? "rot" : ""}`} />
+            )}
           </button>
         ) : (
-          // If only one item, render it directly as a top-level link
           <NavItem {...group.items[0]} />
         )}
 
@@ -199,9 +205,19 @@ useEffect(() => {
   if (isMobile) {
     return (
       <>
-        {sidebarOpen && <div className="sb-backdrop" onClick={() => setSidebarOpen(false)} aria-hidden="true" />}
+        {sidebarOpen && (
+          <div
+            className="sb-backdrop"
+            onClick={() => setSidebarOpen(false)}
+            aria-hidden="true"
+          />
+        )}
         <aside className={`sidebar modern ${sidebarOpen ? "open" : ""}`}>
-          <button className="sb-toggle top" onClick={() => setSidebarOpen(false)} aria-label="Close sidebar">
+          <button
+            className="sb-toggle top"
+            onClick={() => setSidebarOpen(false)}
+            aria-label="Close sidebar"
+          >
             <FaTimes />
           </button>
 
@@ -216,9 +232,12 @@ useEffect(() => {
           </div>
         </aside>
 
-        {/* Small floating button to open drawer (can be placed in Header if preferred) */}
         {!sidebarOpen && (
-          <button className="sb-fab" onClick={() => setSidebarOpen(true)} aria-label="Open sidebar">
+          <button
+            className="sb-fab"
+            onClick={() => setSidebarOpen(true)}
+            aria-label="Open sidebar"
+          >
             <FaBars />
           </button>
         )}
