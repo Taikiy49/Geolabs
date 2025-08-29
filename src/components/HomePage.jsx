@@ -289,7 +289,7 @@ export default function HomePage() {
 
         {/* Quick Access */}
         {(favorites.length > 0 || recents.length > 0) && (
-          <section className="quick-access compact animate-on-scroll">
+          <section className="quick-access compact visible">
             {favorites.length > 0 && (
               <div>
                 <h2 className="qa-title">
