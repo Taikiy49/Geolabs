@@ -6,9 +6,6 @@ import "../styles/ReportsBinder.css";
 
 const pageSizes = [10, 25, 50, 100];
 
-function Badge({ children, tone = "neutral" }) {
-  return <span className={`rpb-badge rpb-badge-${tone}`}>{children}</span>;
-}
 function IconBtn({ title, onClick, children, danger, disabled }) {
   return (
     <button
@@ -247,17 +244,14 @@ export default function ReportsBinder() {
 
   // CSV export (client-side)
   const toCSV = (list) => {
-    // replace the toCSV() 'cols' with this:
-    // toCSV() columns
-const cols = [
-  { key: "date", label: "Date" },
-  { key: "work_order", label: "Work Order" },
-  { key: "engineer_initials", label: "Initials" },
-  { key: "billing", label: "Billing" },
-  { key: "date_sent", label: "Date Sent" }
-];
-
-
+    const cols = [
+      { key: "date", label: "Date" },
+      { key: "work_order", label: "Work Order" },
+      { key: "engineer_initials", label: "Initials" },
+      { key: "billing", label: "Billing" },
+      { key: "date_sent", label: "Date Sent" }
+    ];
+    
     const escape = (v) => `"${String(v ?? "").replaceAll('"','""').replace(/\r?\n/g," ")}"`;
     const header = cols.map(c => escape(c.label)).join(",");
     const lines = list.map(r => cols.map(c => escape(r[c.key])).join(",")).join("\n");

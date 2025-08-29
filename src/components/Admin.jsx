@@ -13,6 +13,9 @@ import {
   FaCheckCircle,
 } from 'react-icons/fa';
 
+// Move rolePriority outside component to make it a true constant
+const rolePriority = { Owner: 0, Admin: 1, User: 2 };
+
 export default function Admin() {
   const { accounts } = useMsal();
   const currentUserEmail = accounts[0]?.username || '';
@@ -33,7 +36,6 @@ export default function Admin() {
   const [busy, setBusy] = useState(false); // blocks bulk ops
   const [statusMsg, setStatusMsg] = useState('');
 
-  const rolePriority = { Owner: 0, Admin: 1, User: 2 };
 
   const fetchUsers = async () => {
     setLoading(true);

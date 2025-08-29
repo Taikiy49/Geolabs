@@ -4,7 +4,6 @@ import ReactMarkdown from "react-markdown";
 import { useMsal } from "@azure/msal-react";
 import {
   FaPaperPlane,
-  FaDatabase,
   FaGlobe,
   FaBolt,
   FaSync,
@@ -409,8 +408,8 @@ export default function AskAI({ selectedDB, setSelectedDB }) {
                               <div className="message-content">
                                 <ReactMarkdown
                                   components={{
-                                    a: ({ node, ...props }) => (
-                                      <a {...props} target="_blank" rel="noopener noreferrer" />
+                                    a: ({ node, children, ...props }) => (
+                                      <a {...props} target="_blank" rel="noopener noreferrer" aria-label={props.href || 'Link'}>{children}</a>
                                     ),
                                     code: ({ inline, className, children, ...props }) => {
                                       if (inline) {

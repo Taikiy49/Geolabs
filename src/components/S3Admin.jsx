@@ -81,7 +81,7 @@ export default function S3Admin() {
   useEffect(() => {
     fetchFiles();
     fetchDbs();
-  }, []);
+  }, [fetchDbs]);
 
   useEffect(() => {
     if (historyOpen) fetchHistory();
@@ -91,7 +91,7 @@ export default function S3Admin() {
   const groupByPrefix = useMemo(() => {
     const out = {};
     for (const f of files) {
-      const [bucket, ...rest] = f.Key.split("/");
+      const [bucket] = f.Key.split("/");
       const top = bucket || "(root)";
       if (!out[top]) out[top] = [];
       out[top].push(f);
