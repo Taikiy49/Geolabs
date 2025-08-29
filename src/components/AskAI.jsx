@@ -12,7 +12,7 @@ import {
   FaCopy,
   FaRobot,
   FaTrash,
-  FaSparkles,
+  FaStar,
 } from "react-icons/fa";
 import API_URL from "../config";
 import "../styles/AskAI.css";
@@ -335,7 +335,7 @@ export default function AskAI({ selectedDB, setSelectedDB }) {
           {currentFaqs.length > 0 && (
             <div className="ai-faq">
               <h3 className="faq-title">
-                <FaSparkles />
+                <FaStar />
                 Suggested Questions
               </h3>
               <div className="faq-grid">
