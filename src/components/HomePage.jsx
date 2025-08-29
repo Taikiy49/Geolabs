@@ -1,300 +1,436 @@
-// src/components/HomePage.jsx
 import React, { useEffect, useMemo, useState } from 'react';
 import '../styles/HomePage.css';
 import homepageCards from './HomePageCards';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useSearchParams } from 'react-router-dom';
 import { useMsal } from '@azure/msal-react';
-import { FaStar, FaRegStar, FaClock, FaExternalLinkAlt } from 'react-icons/fa';
+import { 
+  FaStar, 
+  FaRegStar, 
+  FaClock, 
+  FaExternalLinkAlt, 
+  FaSearch,
+  FaCalendarAlt,
+  FaUsers,
+  FaChartLine
+} from 'react-icons/fa';
 
-const FAV_KEY = 'hp_favorites_v1';
-const RECENT_KEY = 'hp_recents_v1';
+const FAVORITES_KEY = 'geolabs_favorites_v2';
+const RECENTS_KEY = 'geolabs_recents_v2';
 const RECENT_MAX = 8;
 
-const norm = (s = '') => s.toLowerCase();
+const normalizeText = (text = '') => text.toLowerCase().trim();
 
-const matchAny = (term, ...fields) => {
-  const t = norm(term);
-  if (!t) return true;
-  return fields.some((f) => norm(f || '').includes(t));
+const matchesSearch = (searchTerm, ...fields) => {
+  const term = normalizeText(searchTerm);
+  if (!term) return true;
+  return fields.some(field => normalizeText(field || '').includes(term));
 };
 
-const highlight = (text, term) => {
-  if (!term) return text;
-  const safe = String(text ?? '');
+const highlightText = (text, searchTerm) => {
+  if (!searchTerm || !text) return text;
+  
   try {
-    const re = new RegExp(`(${term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')})`, 'ig');
-    const parts = safe.split(re);
-    return parts.map((p, i) =>
-      re.test(p) ? (
-        <mark key={i} className="homepage-mark">
-          {p}
+    const regex = new RegExp(`(${searchTerm.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')})`, 'gi');
+    const parts = String(text).split(regex);
+    
+    return parts.map((part, index) =>
+      regex.test(part) ? (
+        <mark key={index} className="search-highlight">
+          {part}
         </mark>
       ) : (
-        <span key={i}>{p}</span>
+        <span key={index}>{part}</span>
       )
     );
   } catch {
-    return safe;
+    return text;
   }
 };
 
-const findSubByPath = (cards, path) => {
-  for (const c of cards) {
-    for (const s of c.subpages || []) {
-      if (s.path === path) return { parent: c, sub: s };
+const findSubpageByPath = (cards, path) => {
+  for (const card of cards) {
+    for (const subpage of card.subpages || []) {
+      if (subpage.path === path) {
+        return { parent: card, subpage };
+      }
     }
   }
   return null;
 };
 
-const dedupeKeepOrder = (arr, keyFn) => {
+const deduplicateByKey = (array, keyFn) => {
   const seen = new Set();
-  const out = [];
-  for (const it of arr) {
-    const k = keyFn(it);
-    if (seen.has(k)) continue;
-    seen.add(k);
-    out.push(it);
-  } 
-  return out;
+  return array.filter(item => {
+    const key = keyFn(item);
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
 };
 
-const HomePage = () => {
+export default function HomePage() {
   const navigate = useNavigate();
+  const [searchParams, setSearchParams] = useSearchParams();
   const { accounts } = useMsal();
+  
   const fullName = accounts[0]?.name || 'User';
-  const userName = fullName.split(' ')[0];
+  const firstName = fullName.split(' ')[0];
+  const userEmail = accounts[0]?.username || '';
 
-  const [search, setSearch] = useState('');
+  const [searchQuery, setSearchQuery] = useState(searchParams.get('search') || '');
   const [favorites, setFavorites] = useState([]);
   const [recents, setRecents] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
 
+  // Load saved data
   useEffect(() => {
     try {
-      setFavorites(JSON.parse(localStorage.getItem(FAV_KEY) || '[]'));
-      setRecents(JSON.parse(localStorage.getItem(RECENT_KEY) || '[]'));
-    } catch {
+      const savedFavorites = JSON.parse(localStorage.getItem(FAVORITES_KEY) || '[]');
+      const savedRecents = JSON.parse(localStorage.getItem(RECENTS_KEY) || '[]');
+      setFavorites(savedFavorites);
+      setRecents(savedRecents);
+    } catch (error) {
+      console.error('Error loading saved data:', error);
       setFavorites([]);
       setRecents([]);
+    } finally {
+      setIsLoading(false);
     }
   }, []);
 
-  const saveFavorites = (next) => {
-    setFavorites(next);
-    try { localStorage.setItem(FAV_KEY, JSON.stringify(next)); } catch {}
-  };
-
-  const saveRecents = (next) => {
-    setRecents(next);
-    try { localStorage.setItem(RECENT_KEY, JSON.stringify(next)); } catch {}
-  };
-
-  const isFavorited = (path) => favorites.some((f) => f.path === path);
-
-  const toggleFavorite = (path) => {
-    const meta = findSubByPath(homepageCards, path);
-    if (!meta) return;
-    const entry = { path, name: meta.sub.name, parent: meta.parent.label };
-    if (isFavorited(path)) {
-      const next = favorites.filter((f) => f.path !== path);
-      saveFavorites(next);
+  // Update search params when query changes
+  useEffect(() => {
+    if (searchQuery) {
+      setSearchParams({ search: searchQuery });
     } else {
-      const next = dedupeKeepOrder([entry, ...favorites], (x) => x.path);
-      saveFavorites(next);
+      setSearchParams({});
+    }
+  }, [searchQuery, setSearchParams]);
+
+  const saveFavorites = (newFavorites) => {
+    setFavorites(newFavorites);
+    try {
+      localStorage.setItem(FAVORITES_KEY, JSON.stringify(newFavorites));
+    } catch (error) {
+      console.error('Error saving favorites:', error);
     }
   };
 
-  const handleNavigate = (path, disabled) => {
+  const saveRecents = (newRecents) => {
+    setRecents(newRecents);
+    try {
+      localStorage.setItem(RECENTS_KEY, JSON.stringify(newRecents));
+    } catch (error) {
+      console.error('Error saving recents:', error);
+    }
+  };
+
+  const isFavorited = (path) => favorites.some(fav => fav.path === path);
+
+  const toggleFavorite = (path) => {
+    const metadata = findSubpageByPath(homepageCards, path);
+    if (!metadata) return;
+
+    const entry = {
+      path,
+      name: metadata.subpage.name,
+      parent: metadata.parent.label,
+      timestamp: Date.now()
+    };
+
+    if (isFavorited(path)) {
+      const updated = favorites.filter(fav => fav.path !== path);
+      saveFavorites(updated);
+    } else {
+      const updated = deduplicateByKey([entry, ...favorites], item => item.path);
+      saveFavorites(updated);
+    }
+  };
+
+  const recordRecentVisit = (path) => {
+    const metadata = findSubpageByPath(homepageCards, path);
+    if (!metadata) return;
+
+    const entry = {
+      path,
+      name: metadata.subpage.name,
+      parent: metadata.parent.label,
+      timestamp: Date.now()
+    };
+
+    const updated = deduplicateByKey([entry, ...recents], item => item.path).slice(0, RECENT_MAX);
+    saveRecents(updated);
+  };
+
+  const handleNavigation = (path, disabled = false) => {
     if (!path || disabled) return;
+    recordRecentVisit(path);
     navigate(path);
   };
 
-  const recordRecent = (path) => {
-    const meta = findSubByPath(homepageCards, path);
-    if (!meta) return;
-    const entry = { path, name: meta.sub.name, parent: meta.parent.label, ts: Date.now() };
-    const next = dedupeKeepOrder([entry, ...recents], (x) => x.path).slice(0, RECENT_MAX);
-    saveRecents(next);
+  const getTimeAgo = (dateString) => {
+    if (!dateString) return 'Recently updated';
+    
+    try {
+      const date = new Date(dateString);
+      const now = new Date();
+      const diffInDays = Math.floor((now - date) / (1000 * 60 * 60 * 24));
+      
+      if (diffInDays === 0) return 'Updated today';
+      if (diffInDays === 1) return 'Updated yesterday';
+      if (diffInDays < 7) return `Updated ${diffInDays} days ago`;
+      if (diffInDays < 30) return `Updated ${Math.floor(diffInDays / 7)} weeks ago`;
+      return `Updated ${Math.floor(diffInDays / 30)} months ago`;
+    } catch {
+      return 'Recently updated';
+    }
   };
 
-  const handleSubClick = (path, disabled) => {
-    if (!path || disabled) return;
-    recordRecent(path);
-    navigate(path);
-  };
-
-  const getDaysAgo = (dateStr) => {
-    if (!dateStr) return 'Updated recently';
-    const lastUpdated = new Date(dateStr);
-    if (Number.isNaN(lastUpdated.getTime())) return 'Updated recently';
-    const diff = Math.floor((Date.now() - lastUpdated.getTime()) / (1000 * 60 * 60 * 24));
-    return diff === 0 ? 'Updated today' : `Updated ${diff} day${diff === 1 ? '' : 's'} ago`;
-  };
-
-  // Filter cards & subpages by search
-  const filtered = useMemo(() => {
-    const term = search.trim();
+  // Filter and search logic
+  const filteredCards = useMemo(() => {
+    const term = searchQuery.trim();
+    
     return homepageCards
-      .map((c) => {
-        const subFiltered = (c.subpages || []).filter((s) =>
-          matchAny(term, c.label, c.sublabel, c.description, s.name, s.description)
+      .map(card => {
+        const filteredSubpages = (card.subpages || []).filter(subpage =>
+          matchesSearch(term, card.label, card.sublabel, card.description, subpage.name, subpage.description)
         );
-        const cardMatches = matchAny(term, c.label, c.sublabel, c.description);
-        if (cardMatches || subFiltered.length) {
-          return { ...c, subpages: subFiltered.length || !term ? c.subpages : [] };
+        
+        const cardMatches = matchesSearch(term, card.label, card.sublabel, card.description);
+        
+        if (cardMatches || filteredSubpages.length > 0) {
+          return {
+            ...card,
+            subpages: filteredSubpages.length > 0 || !term ? card.subpages : []
+          };
         }
+        
         return null;
       })
       .filter(Boolean);
-  }, [search]);
+  }, [searchQuery]);
 
-  const resultsCount = useMemo(() => {
-    let n = 0;
-    for (const c of filtered) {
-      n += (c.subpages || []).length || 1;
-    }
-    return n;
-  }, [filtered]);
+  const currentTime = new Date();
 
-  const today = new Date();
-
-  return (
-    <div className="homepage-container">
-      <div className="homepage-top">
-        <div className="homepage-greeting-card">
-          <div className="homepage-greeting-left">
-            <h1>Welcome back, {userName}</h1>
-            <p>Let’s make today productive.</p>
-          </div>
-          <div className="homepage-greeting-right">
-            <span>{today.toLocaleDateString()}</span>
-            <span>{today.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}</span>
-          </div>
-        </div>
-
-        <div className="homepage-header">
-          <div className="homepage-search-wrap">
-            <input
-              className="homepage-search"
-              placeholder="Search tools and pages…"
-              value={search}
-              onChange={(e) => setSearch(e.target.value)}
-            />
-          </div> 
+  if (isLoading) {
+    return (
+      <div className="homepage">
+        <div className="homepage-loading">
+          <div className="loading-spinner" />
+          <div className="loading-text">Loading dashboard...</div>
         </div>
       </div>
+    );
+  }
 
-      {/* Quick Access: Favorites */}
-      {(favorites.length > 0 || recents.length > 0) && (
-        <div className="homepage-quick">
-          {favorites.length > 0 && (
-            <div className="homepage-quick-section">
-              <div className="homepage-quick-title">Favorites</div>
-              <div className="homepage-chips">
-                {favorites.map((f) => {
-                  const meta = findSubByPath(homepageCards, f.path);
-                  const icon = meta?.sub?.icon ?? <FaExternalLinkAlt size={10} />;
-                  return (
-                    <button
-                      key={f.path}
-                      className="homepage-chip"
-                      onClick={() => handleSubClick(f.path)}
-                      title={`${f.parent} → ${f.name}`}
-                    >
-                      <span className="homepage-chip-icon">{icon}</span>
-                      <span className="homepage-chip-text">{f.name}</span>
-                    </button>
-                  );
-                })}
+  return (
+    <div className="homepage">
+      <div className="homepage-container">
+        {/* Hero Section */}
+        <section className="homepage-hero">
+          <div className="hero-greeting animate-fade-in">
+            <h1 className="hero-title">
+              Welcome back, {firstName}
+            </h1>
+            <p className="hero-subtitle">
+              Your comprehensive geotechnical data management platform
+            </p>
+            <div className="hero-meta">
+              <div className="hero-meta-item">
+                <FaCalendarAlt />
+                <span>{currentTime.toLocaleDateString('en-US', { 
+                  weekday: 'long', 
+                  year: 'numeric', 
+                  month: 'long', 
+                  day: 'numeric' 
+                })}</span>
+              </div>
+              <div className="hero-meta-item">
+                <FaUsers />
+                <span>Geolabs Team</span>
+              </div>
+              <div className="hero-meta-item">
+                <FaChartLine />
+                <span>Analytics Ready</span>
               </div>
             </div>
-          )}
-
-          {recents.length > 0 && (
-            <div className="homepage-quick-section">
-              <div className="homepage-quick-title">
-                <FaClock className="homepage-inline-icon" /> Recent
-              </div>
-              <div className="homepage-chips">
-                {recents.map((r) => {
-                  const meta = findSubByPath(homepageCards, r.path);
-                  const icon = meta?.sub?.icon ?? <FaExternalLinkAlt size={10} />;
-                  return (
-                    <button
-                      key={r.path}
-                      className="homepage-chip"
-                      onClick={() => handleSubClick(r.path)}
-                      title={`${r.parent} → ${r.name}`}
-                    >
-                      <span className="homepage-chip-icon">{icon}</span>
-                      <span className="homepage-chip-text">{r.name}</span>
-                    </button>
-                  );
-                })}
-              </div>
-            </div>
-          )}
-        </div>
-      )}
-
-      {/* Main categories */}
-      {/* Cards grid: render all filtered cards */}
-<div className="homepage-list">
-  {filtered.map((item, idx) => (
-    <div
-      key={idx}
-      className={`homepage-row ${item.disabled ? 'homepage-row-disabled' : ''}`}
-      style={{ cursor: item.disabled ? 'not-allowed' : 'pointer', opacity: item.disabled ? 0.5 : 1 }}
-      onClick={() => handleNavigate(item.path, item.disabled)}
-    >
-      <div className="homepage-row-left">
-        <div className="homepage-row-header">
-          <div className="homepage-icon">{item.icon}</div>
-          <div>
-            <div className="homepage-title">
-              {highlight(item.label, search)}{' '}
-              {item.tag && <span className="homepage-badge">{item.tag}</span>}
-            </div>
-            <div className="homepage-sublabel">{highlight(item.sublabel, search)}</div>
           </div>
-        </div>
+        </section>
 
-        <div className="homepage-description">{highlight(item.description, search)}</div>
-        <div className="homepage-updated">
-          {item.updated ? getDaysAgo(item.updated) : 'Updated recently'}
-        </div>
+        {/* Search Section */}
+        <section className="homepage-search">
+          <div className="search-container">
+            <FaSearch className="search-icon-large" />
+            <input
+              type="text"
+              className="search-input-large"
+              placeholder="Search tools, documents, and features..."
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+            />
+          </div>
+        </section>
 
-        {item.subpages?.length > 0 && (
-          <div className="homepage-subpages" onClick={(e) => e.stopPropagation()}>
-            {item.subpages.map((sub, i) => (
-              <div key={i} className="homepage-subpage-link">
-                <div
-                  className="homepage-subpage-link-header"
-                  onClick={() => handleSubClick(sub.path)}
-                  title={sub.name}
-                >
-                  <div className="subpage-icon">{sub.icon}</div>
-                  <div className="subpage-info">{highlight(sub.name, search)}</div>
+        {/* Quick Access */}
+        {(favorites.length > 0 || recents.length > 0) && (
+          <section className="quick-access animate-fade-in">
+            {favorites.length > 0 && (
+              <div>
+                <h2 className="quick-access-title">
+                  <FaStar />
+                  Favorites
+                </h2>
+                <div className="quick-access-grid">
+                  {favorites.slice(0, 6).map(favorite => {
+                    const metadata = findSubpageByPath(homepageCards, favorite.path);
+                    if (!metadata) return null;
+                    
+                    return (
+                      <button
+                        key={favorite.path}
+                        className="quick-access-item"
+                        onClick={() => handleNavigation(favorite.path)}
+                        title={`${favorite.parent} → ${favorite.name}`}
+                      >
+                        <div className="quick-access-icon">
+                          {metadata.subpage.icon}
+                        </div>
+                        <div className="quick-access-content">
+                          <div className="quick-access-name">{favorite.name}</div>
+                          <div className="quick-access-desc">{favorite.parent}</div>
+                        </div>
+                      </button>
+                    );
+                  })}
                 </div>
-                <div className="subpage-description">{highlight(sub.description, search)}</div>
-                <button
-                  className="homepage-pin"
-                  onClick={() => toggleFavorite(sub.path)}
-                  title={isFavorited(sub.path) ? 'Unpin' : 'Pin'}
-                >
-                  {isFavorited(sub.path) ? <FaStar /> : <FaRegStar />}
-                </button>
               </div>
-            ))}
+            )}
+
+            {recents.length > 0 && (
+              <div>
+                <h2 className="quick-access-title">
+                  <FaClock />
+                  Recently Used
+                </h2>
+                <div className="quick-access-grid">
+                  {recents.slice(0, 6).map(recent => {
+                    const metadata = findSubpageByPath(homepageCards, recent.path);
+                    if (!metadata) return null;
+                    
+                    return (
+                      <button
+                        key={recent.path}
+                        className="quick-access-item"
+                        onClick={() => handleNavigation(recent.path)}
+                        title={`${recent.parent} → ${recent.name}`}
+                      >
+                        <div className="quick-access-icon">
+                          {metadata.subpage.icon}
+                        </div>
+                        <div className="quick-access-content">
+                          <div className="quick-access-name">{recent.name}</div>
+                          <div className="quick-access-desc">{recent.parent}</div>
+                        </div>
+                      </button>
+                    );
+                  })}
+                </div>
+              </div>
+            )}
+          </section>
+        )}
+
+        {/* Main Categories */}
+        <section className="categories-grid">
+          {filteredCards.map((card, index) => (
+            <article
+              key={index}
+              className={`category-card animate-on-scroll ${card.disabled ? 'disabled' : ''}`}
+              style={{ 
+                animationDelay: `${index * 100}ms`,
+                opacity: card.disabled ? 0.6 : 1,
+                cursor: card.disabled ? 'not-allowed' : 'pointer'
+              }}
+              onClick={() => !card.disabled && card.path && handleNavigation(card.path)}
+            >
+              <div className="category-header">
+                <div className="category-icon">
+                  {card.icon}
+                </div>
+                <div className="category-content">
+                  <h3 className="category-title">
+                    {highlightText(card.label, searchQuery)}
+                    {card.tag && (
+                      <span className="category-badge">{card.tag}</span>
+                    )}
+                  </h3>
+                  <p className="category-subtitle">
+                    {highlightText(card.sublabel, searchQuery)}
+                  </p>
+                  <p className="category-description">
+                    {highlightText(card.description, searchQuery)}
+                  </p>
+                </div>
+              </div>
+
+              {card.subpages && card.subpages.length > 0 && (
+                <div className="subpages-grid" onClick={(e) => e.stopPropagation()}>
+                  {card.subpages.map((subpage, subIndex) => (
+                    <div
+                      key={subIndex}
+                      className="subpage-item"
+                      onClick={() => handleNavigation(subpage.path, subpage.disabled)}
+                      style={{ 
+                        opacity: subpage.disabled ? 0.5 : 1,
+                        cursor: subpage.disabled ? 'not-allowed' : 'pointer'
+                      }}
+                    >
+                      <div className="subpage-header">
+                        <div className="subpage-icon">
+                          {subpage.icon}
+                        </div>
+                        <div className="subpage-name">
+                          {highlightText(subpage.name, searchQuery)}
+                        </div>
+                      </div>
+                      <p className="subpage-description">
+                        {highlightText(subpage.description, searchQuery)}
+                      </p>
+                      
+                      <button
+                        className={`favorite-btn ${isFavorited(subpage.path) ? 'active' : ''}`}
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          toggleFavorite(subpage.path);
+                        }}
+                        title={isFavorited(subpage.path) ? 'Remove from favorites' : 'Add to favorites'}
+                        aria-label={isFavorited(subpage.path) ? 'Remove from favorites' : 'Add to favorites'}
+                      >
+                        {isFavorited(subpage.path) ? <FaStar /> : <FaRegStar />}
+                      </button>
+                    </div>
+                  ))}
+                </div>
+              )}
+
+              <div className="category-updated">
+                {getTimeAgo(card.updated)}
+              </div>
+            </article>
+          ))}
+        </section>
+
+        {/* Empty State */}
+        {filteredCards.length === 0 && searchQuery && (
+          <div className="empty-state">
+            <FaSearch className="empty-state-icon" />
+            <h3 className="empty-state-title">No results found</h3>
+            <p className="empty-state-description">
+              Try adjusting your search terms or browse the available categories above.
+            </p>
           </div>
         )}
       </div>
     </div>
-  ))}
-</div>
-
-    </div>
   );
-};
-
-export default HomePage;
+}

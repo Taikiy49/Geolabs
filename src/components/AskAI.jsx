@@ -1,4 +1,3 @@
-// src/components/AskAI.jsx
 import React, { useEffect, useMemo, useRef, useState } from "react";
 import axios from "axios";
 import ReactMarkdown from "react-markdown";
@@ -11,239 +10,244 @@ import {
   FaSync,
   FaTimes,
   FaCopy,
+  FaRobot,
+  FaTrash,
+  FaStar,
 } from "react-icons/fa";
 import API_URL from "../config";
 import "../styles/AskAI.css";
 
-function titleCaseDb(db = "") {
-  return db
+function formatDatabaseName(dbName = "") {
+  return dbName
     .replace(/\.db$/i, "")
     .replace(/_/g, " ")
-    .replace(/\b\w/g, (c) => c.toUpperCase());
+    .replace(/\b\w/g, (char) => char.toUpperCase());
 }
 
 export default function AskAI({ selectedDB, setSelectedDB }) {
   const { accounts } = useMsal();
   const userEmail = accounts[0]?.username || "guest";
 
-  // Data
+  // Core state
   const [availableDBs, setAvailableDBs] = useState([]);
   const [history, setHistory] = useState([]);
-  const [faqList, setFaqList] = useState([]);
-
-  // Chat state
   const [conversation, setConversation] = useState([]);
   const [query, setQuery] = useState("");
+  const [loading, setLoading] = useState(false);
+
+  // Settings
   const [useWeb, setUseWeb] = useState(false);
   const [useCache, setUseCache] = useState(true);
-  const [loading, setLoading] = useState(false);
 
   // UI state
   const [showAllFaqs, setShowAllFaqs] = useState(false);
+  const [copyFeedback, setCopyFeedback] = useState("");
 
   // Refs
   const chatScrollRef = useRef(null);
   const inputRef = useRef(null);
-  const ctrlRef = useRef(null);
+  const abortControllerRef = useRef(null);
 
-  // Simple FAQ map
-  const faqMap = useMemo(
-    () => ({
-      "employee_handbook.db": [
-        "What is the company's PTO policy?",
-        "How do I request sick leave?",
-        "Where can I find the employee benefits information?",
-        "What is the dress code?",
-        "How do I submit my timesheet?",
-        "What are the working hours and break policies?",
-        "How do I report a workplace issue or concern?",
-        "What are the company’s policies on overtime pay?",
-        "What holidays does the company observe?",
-        "Where can I find the employee code of conduct?",
-        "How do I change my health insurance plan?",
-      ],
-      "esop.db": [
-        "What is the ESOP plan?",
-        "Who is eligible for the ESOP?",
-        "When do ESOP shares vest?",
-        "How is the ESOP payout calculated?",
-        "Can I cash out my ESOP early?",
-        "What happens to my ESOP when I leave the company?",
-        "Where can I read more about the ESOP rules?",
-      ],
-      "401k.db": [
-        "What is a 401(k) plan?",
-        "When can I start contributing to my 401(k)?",
-        "What is the company match for 401(k)?",
-        "How do I change my 401(k) contribution amount?",
-        "What investment options are available?",
-        "When can I withdraw from my 401(k)?",
-        "What happens to my 401(k) if I leave the company?",
-      ],
-    }),
-    []
-  );
+  // FAQ questions by database
+  const faqQuestions = useMemo(() => ({
+    "employee_handbook.db": [
+      "What is the company's PTO policy?",
+      "How do I request sick leave?",
+      "Where can I find employee benefits information?",
+      "What is the dress code policy?",
+      "How do I submit my timesheet?",
+      "What are the working hours and break policies?",
+      "How do I report a workplace issue?",
+      "What are the overtime pay policies?",
+      "What holidays does the company observe?",
+      "Where is the employee code of conduct?",
+      "How do I change my health insurance plan?",
+    ],
+    "esop.db": [
+      "What is the ESOP plan?",
+      "Who is eligible for the ESOP?",
+      "When do ESOP shares vest?",
+      "How is the ESOP payout calculated?",
+      "Can I cash out my ESOP early?",
+      "What happens to my ESOP when I leave?",
+      "Where can I read more about ESOP rules?",
+    ],
+    "401k.db": [
+      "What is a 401(k) plan?",
+      "When can I start contributing?",
+      "What is the company match?",
+      "How do I change my contribution amount?",
+      "What investment options are available?",
+      "When can I withdraw from my 401(k)?",
+      "What happens if I leave the company?",
+    ],
+  }), []);
 
-  // Load DB list
+  const currentFaqs = faqQuestions[selectedDB] || [];
+
+  // Load available databases
   useEffect(() => {
-    const load = async () => {
+    const loadDatabases = async () => {
       try {
-        const res = await axios.get(`${API_URL}/api/list-dbs`);
-        const filtered = (res.data.dbs || []).filter(
-          (db) =>
-            ![
-              "chat_history.db",
-              "reports.db",
-              "user_roles.db",
-              "pr_data.db",
-              "users.db",
-            ].includes(db)
+        const response = await axios.get(`${API_URL}/api/list-dbs`);
+        const filtered = (response.data.dbs || []).filter(
+          (db) => !["chat_history.db", "reports.db", "user_roles.db", "pr_data.db", "users.db"].includes(db)
         );
         setAvailableDBs(filtered);
-      } catch {
+        
+        // Auto-select first DB if none selected
+        if (!selectedDB && filtered.length > 0) {
+          setSelectedDB(filtered[0]);
+        }
+      } catch (error) {
+        console.error("Failed to load databases:", error);
         setAvailableDBs([]);
       }
     };
-    load();
-  }, []);
+    loadDatabases();
+  }, [selectedDB, setSelectedDB]);
 
-  // FAQ by DB
-  useEffect(() => {
-    setFaqList(faqMap[selectedDB] || []);
-  }, [selectedDB, faqMap]);
-
-  // Load history when DB changes
+  // Load chat history when database changes
   useEffect(() => {
     if (!selectedDB) return;
+    
     setConversation([]);
-    axios
-      .get(`${API_URL}/api/chat_history`, {
-        params: { user: userEmail, db: selectedDB },
-      })
-      .then((res) => {
-        const raw = res.data || [];
-        const pairs = raw.map((row) => ({
-          question: row.question,
-          answer: row.answer,
+    
+    const loadHistory = async () => {
+      try {
+        const response = await axios.get(`${API_URL}/api/chat_history`, {
+          params: { user: userEmail, db: selectedDB },
+        });
+        const historyData = response.data || [];
+        const formattedHistory = historyData.map((item) => ({
+          question: item.question,
+          answer: item.answer,
         }));
-        setHistory(pairs);
-      })
-      .catch(() => setHistory([]));
+        setHistory(formattedHistory);
+      } catch (error) {
+        console.error("Failed to load history:", error);
+        setHistory([]);
+      }
+    };
+    
+    loadHistory();
   }, [selectedDB, userEmail]);
 
-  // External event to load a pair into the chat (optional)
+  // Auto-scroll chat to bottom
   useEffect(() => {
-    const handleLoad = (e) => {
-      const { question, answer } = e.detail || {};
-      if (!question || !answer) return;
-      setConversation([
-        { role: "user", text: question },
-        { role: "assistant", text: answer },
-      ]);
-    };
-    window.addEventListener("loadChatHistory", handleLoad);
-    return () => window.removeEventListener("loadChatHistory", handleLoad);
-  }, []);
-
-  // Auto-scroll on conversation update
-  useEffect(() => {
-    chatScrollRef.current?.scrollTo({
-      top: chatScrollRef.current.scrollHeight,
-      behavior: "smooth",
-    });
+    if (chatScrollRef.current) {
+      chatScrollRef.current.scrollTo({
+        top: chatScrollRef.current.scrollHeight,
+        behavior: "smooth",
+      });
+    }
   }, [conversation]);
 
-  // Shortcut: Cmd/Ctrl+K focuses input
+  // Keyboard shortcuts
   useEffect(() => {
-    const onKey = (e) => {
-      if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === "k") {
-        e.preventDefault();
+    const handleKeyDown = (event) => {
+      // Cmd/Ctrl + K to focus input
+      if ((event.ctrlKey || event.metaKey) && event.key.toLowerCase() === "k") {
+        event.preventDefault();
         inputRef.current?.focus();
       }
     };
-    window.addEventListener("keydown", onKey);
-    return () => window.removeEventListener("keydown", onKey);
+
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
   }, []);
 
-  const ask = async (inputQuery, { forceNoCache = false } = {}) => {
+  const askQuestion = async (questionText, options = {}) => {
+    if (!selectedDB) {
+      alert("Please select a database first.");
+      return;
+    }
+
+    if (!questionText.trim()) return;
+
     setLoading(true);
     setConversation([
-      { role: "user", text: inputQuery },
+      { role: "user", text: questionText },
       { role: "assistant", text: "", loading: true },
     ]);
+
     try {
-      ctrlRef.current = new AbortController();
-      const res = await axios.post(
+      abortControllerRef.current = new AbortController();
+      
+      const response = await axios.post(
         `${API_URL}/api/question`,
         {
-          query: inputQuery,
+          query: questionText,
           user: userEmail,
-          use_cache: forceNoCache ? false : useCache,
+          use_cache: options.forceNoCache ? false : useCache,
           use_web: useWeb,
           db: selectedDB,
         },
-        { signal: ctrlRef.current.signal }
+        { signal: abortControllerRef.current.signal }
       );
 
       setConversation((prev) => {
-        const up = [...prev];
-        up[up.length - 1] = {
+        const updated = [...prev];
+        updated[updated.length - 1] = {
           role: "assistant",
-          text: res.data?.answer || "",
+          text: response.data?.answer || "No response received.",
         };
-        return up;
+        return updated;
       });
 
-      const histRes = await axios.get(`${API_URL}/api/chat_history`, {
+      // Refresh history
+      const historyResponse = await axios.get(`${API_URL}/api/chat_history`, {
         params: { user: userEmail, db: selectedDB },
       });
-      const pairs = (histRes.data || []).map((row) => ({
-        question: row.question,
-        answer: row.answer,
+      const historyData = historyResponse.data || [];
+      const formattedHistory = historyData.map((item) => ({
+        question: item.question,
+        answer: item.answer,
       }));
-      setHistory(pairs);
-    } catch (err) {
-      const canceled =
-        axios.isCancel?.(err) ||
-        err?.name === "CanceledError" ||
-        String(err?.message || "").includes("canceled");
+      setHistory(formattedHistory);
+    } catch (error) {
+      const isCanceled = axios.isCancel?.(error) || error?.name === "CanceledError";
+      
       setConversation((prev) => {
-        const up = [...prev];
-        up[up.length - 1] = {
+        const updated = [...prev];
+        updated[updated.length - 1] = {
           role: "assistant",
-          text: canceled ? "⏹️ Stopped." : "❌ Error: Failed to get a response.",
+          text: isCanceled ? "⏹️ Request stopped." : "❌ Failed to get response. Please try again.",
         };
-        return up;
+        return updated;
       });
     } finally {
       setLoading(false);
-      ctrlRef.current = null;
+      abortControllerRef.current = null;
     }
   };
 
-  const stop = () => {
-    try {
-      ctrlRef.current?.abort();
-    } catch {}
-  };
-
-  const regenerate = () => {
-    const lastUser = [...conversation].reverse().find((m) => m.role === "user");
-    if (lastUser?.text) ask(lastUser.text, { forceNoCache: true });
-  };
-
-  const handleSubmit = (e, optionalQuery) => {
-    e.preventDefault();
-    const inputQuery = optionalQuery || query;
-    if (!selectedDB) return;
-    if (!inputQuery.trim()) return;
+  const handleSubmit = (event, customQuery) => {
+    event.preventDefault();
+    const questionText = customQuery || query;
+    if (!questionText.trim()) return;
+    
     setQuery("");
-    ask(inputQuery);
+    askQuestion(questionText);
   };
 
-  const handleHistoryClick = (index) => {
+  const stopRequest = () => {
+    if (abortControllerRef.current) {
+      abortControllerRef.current.abort();
+    }
+  };
+
+  const regenerateResponse = () => {
+    const lastUserMessage = [...conversation].reverse().find((msg) => msg.role === "user");
+    if (lastUserMessage?.text) {
+      askQuestion(lastUserMessage.text, { forceNoCache: true });
+    }
+  };
+
+  const loadHistoryItem = (index) => {
     const item = history[index];
     if (!item) return;
+    
     setConversation([
       { role: "user", text: item.question },
       { role: "assistant", text: item.answer },
@@ -253,239 +257,313 @@ export default function AskAI({ selectedDB, setSelectedDB }) {
   const deleteHistoryItem = async (index) => {
     const item = history[index];
     if (!item) return;
+    
+    if (!window.confirm("Delete this conversation from history?")) return;
+    
     try {
       await axios.delete(`${API_URL}/api/delete-history`, {
         data: { user: userEmail, db: selectedDB, question: item.question },
       });
       setHistory((prev) => prev.filter((_, i) => i !== index));
-    } catch {
-      alert("Failed to delete.");
+    } catch (error) {
+      console.error("Failed to delete history item:", error);
+      alert("Failed to delete history item.");
     }
   };
 
-  const copyText = async (t) => {
+  const copyToClipboard = async (text) => {
     try {
-      await navigator.clipboard.writeText(t);
-    } catch {}
+      await navigator.clipboard.writeText(text);
+      setCopyFeedback("Copied!");
+      setTimeout(() => setCopyFeedback(""), 2000);
+    } catch (error) {
+      console.error("Failed to copy:", error);
+    }
   };
 
   return (
-    <div className="cc-container">
-      <div className="cc-main">
-        <div className="cc-topbar">
-          <div className="cc-db-header">
-            <FaDatabase className="cc-db-icon" />
+    <div className="ai-chat">
+      {/* Header */}
+      <div className="ai-header">
+        <div className="ai-header-left">
+          <h1 className="ai-title">
+            <FaRobot className="ai-title-icon" />
+            AI Assistant
+          </h1>
+          
+          <div className="database-selector">
             <select
-              className="cc-db-select"
+              className="database-select"
               value={selectedDB}
               onChange={(e) => setSelectedDB(e.target.value)}
-              title="Choose a database"
             >
-              <option value="">Select a DB</option>
+              <option value="">Select Database</option>
               {availableDBs.map((db) => (
                 <option key={db} value={db}>
-                  {titleCaseDb(db)}
+                  {formatDatabaseName(db)}
                 </option>
               ))}
             </select>
+          </div>
+        </div>
 
-            <div className="cc-toggles">
-              <div
-                className={`cc-icon-toggle ${useWeb ? "active" : ""}`}
-                onClick={() => setUseWeb((v) => !v)}
-                title="Allow general web knowledge"
-              >
-                <FaGlobe className="cc-icon-symbol" />
-                <div className="cc-icon-label">Web</div>
+        <div className="ai-settings">
+          <button
+            className={`setting-toggle ${useWeb ? "active" : ""}`}
+            onClick={() => setUseWeb(!useWeb)}
+            title="Enable web knowledge"
+          >
+            <FaGlobe className="setting-icon" />
+            <span className="setting-label">Web</span>
+          </button>
+          
+          <button
+            className={`setting-toggle ${useCache ? "active" : ""}`}
+            onClick={() => setUseCache(!useCache)}
+            title="Use cached responses"
+          >
+            <FaBolt className="setting-icon" />
+            <span className="setting-label">Cache</span>
+          </button>
+        </div>
+      </div>
+
+      <div className="ai-main">
+        {/* Chat Panel */}
+        <div className="ai-chat-panel">
+          {/* FAQ Section */}
+          {currentFaqs.length > 0 && (
+            <div className="ai-faq">
+              <h3 className="faq-title">
+                <FaStar />
+                Suggested Questions
+              </h3>
+              <div className="faq-grid">
+                {(showAllFaqs ? currentFaqs : currentFaqs.slice(0, 6)).map((faq, index) => (
+                  <button
+                    key={index}
+                    className="faq-button"
+                    onClick={(e) => handleSubmit(e, faq)}
+                    title={faq}
+                  >
+                    {faq}
+                  </button>
+                ))}
+                {currentFaqs.length > 6 && (
+                  <button
+                    className="faq-button faq-toggle"
+                    onClick={() => setShowAllFaqs(!showAllFaqs)}
+                  >
+                    {showAllFaqs ? "Show Less ▲" : `Show ${currentFaqs.length - 6} More ▼`}
+                  </button>
+                )}
               </div>
-              <div
-                className={`cc-icon-toggle ${useCache ? "active" : ""}`}
-                onClick={() => setUseCache((v) => !v)}
-                title="Use cached answers"
-              >
-                <FaBolt className="cc-icon-symbol" />
-                <div className="cc-icon-label">Cache</div>
+            </div>
+          )}
+
+          {/* Chat Messages */}
+          <div className="ai-chat-area">
+            <div className="chat-messages" ref={chatScrollRef}>
+              {conversation.length === 0 ? (
+                <div className="empty-chat">
+                  <FaRobot className="empty-icon" />
+                  <h2 className="empty-title">Ready to Help</h2>
+                  <p className="empty-description">
+                    Ask me anything about {selectedDB ? formatDatabaseName(selectedDB) : "your documents"}. 
+                    I can help you find information, explain policies, and answer questions.
+                  </p>
+                </div>
+              ) : (
+                conversation.map((message, index) => {
+                  if (message.role === "user") {
+                    const assistantMessage = conversation[index + 1];
+                    return (
+                      <div key={`pair-${index}`} className="message-pair">
+                        <div className="user-message">
+                          <ReactMarkdown>{message.text}</ReactMarkdown>
+                        </div>
+                        
+                        {assistantMessage && assistantMessage.role === "assistant" && (
+                          <div className="assistant-message">
+                            <div className="message-actions">
+                              <button
+                                className="message-action-btn"
+                                onClick={() => copyToClipboard(assistantMessage.text)}
+                                title="Copy response"
+                              >
+                                <FaCopy />
+                              </button>
+                            </div>
+                            
+                            {assistantMessage.loading ? (
+                              <div className="loading-message">
+                                <FaRobot />
+                                <span>Thinking</span>
+                                <div className="loading-dots">
+                                  <div className="loading-dot"></div>
+                                  <div className="loading-dot"></div>
+                                  <div className="loading-dot"></div>
+                                </div>
+                              </div>
+                            ) : (
+                              <div className="message-content">
+                                <ReactMarkdown
+                                  components={{
+                                    a: ({ node, ...props }) => (
+                                      <a {...props} target="_blank" rel="noopener noreferrer" />
+                                    ),
+                                    code: ({ inline, className, children, ...props }) => {
+                                      if (inline) {
+                                        return <code {...props}>{children}</code>;
+                                      }
+                                      
+                                      const text = String(children || "");
+                                      const language = className?.replace("language-", "") || "";
+                                      
+                                      return (
+                                        <div>
+                                          <div className="code-block-header">
+                                            <span className="code-language">{language || "code"}</span>
+                                            <button
+                                              className="message-action-btn"
+                                              onClick={() => copyToClipboard(text)}
+                                              title="Copy code"
+                                            >
+                                              <FaCopy />
+                                            </button>
+                                          </div>
+                                          <pre>
+                                            <code className={className} {...props}>
+                                              {children}
+                                            </code>
+                                          </pre>
+                                        </div>
+                                      );
+                                    },
+                                  }}
+                                >
+                                  {assistantMessage.text}
+                                </ReactMarkdown>
+                              </div>
+                            )}
+                          </div>
+                        )}
+                      </div>
+                    );
+                  }
+                  return null;
+                })
+              )}
+            </div>
+
+            {/* Input Area */}
+            <div className="ai-input-area">
+              <div className="input-container">
+                <form onSubmit={handleSubmit} className="input-form">
+                  <div className="input-wrapper">
+                    <textarea
+                      ref={inputRef}
+                      className="chat-input"
+                      placeholder={`Ask about ${selectedDB ? formatDatabaseName(selectedDB) : "your documents"}...`}
+                      value={query}
+                      onChange={(e) => setQuery(e.target.value)}
+                      onKeyDown={(e) => {
+                        if (e.key === "Enter" && !e.shiftKey) {
+                          e.preventDefault();
+                          handleSubmit(e);
+                        }
+                      }}
+                      rows={1}
+                      disabled={!selectedDB}
+                    />
+                    
+                    <div className="input-actions">
+                      {loading ? (
+                        <button
+                          type="button"
+                          className="input-action-btn"
+                          onClick={stopRequest}
+                          title="Stop generation"
+                        >
+                          <FaTimes />
+                        </button>
+                      ) : (
+                        <>
+                          <button
+                            type="button"
+                            className="input-action-btn"
+                            onClick={regenerateResponse}
+                            title="Regenerate last response"
+                            disabled={!conversation.some((msg) => msg.role === "user") || loading}
+                          >
+                            <FaSync />
+                          </button>
+                          <button
+                            type="submit"
+                            className="input-action-btn primary"
+                            disabled={!selectedDB || loading || !query.trim()}
+                            title="Send message"
+                          >
+                            <FaPaperPlane />
+                          </button>
+                        </>
+                      )}
+                    </div>
+                  </div>
+                </form>
+                
+                {copyFeedback && (
+                  <div className="copy-feedback">{copyFeedback}</div>
+                )}
               </div>
             </div>
           </div>
         </div>
 
-        <div className="cc-results-wrapper">
-          {/* Chat Panel */}
-          <div className="cc-chat-panel">
-            {/* FAQ */}
-            <div className="cc-faq-list">
-              {(showAllFaqs ? faqList : faqList.slice(0, 4)).map((faq) => (
-                <button
-                  key={faq}
-                  className="cc-faq-button"
-                  onClick={(e) => handleSubmit(e, faq)}
-                  title={faq}
-                >
-                  {faq}
-                </button>
-              ))}
-              {faqList.length > 6 && (
-                <button
-                  className="cc-faq-button cc-faq-toggle"
-                  onClick={() => setShowAllFaqs((v) => !v)}
-                >
-                  {showAllFaqs ? "Show Less ▲" : "Show More ▼"}
-                </button>
-              )} 
-            </div> 
-            {/* Chat scroll */}
-            <div className="cc-chat-scroll" ref={chatScrollRef}>
-              {conversation.map((item, i) => {
-                if (item.role === "user") {
-                  const answer = conversation[i + 1];
-                  return (
-                    <div key={`u-${i}`} className="cc-pair">
-                      <div className="cc-user-bubble">
-                        <ReactMarkdown>{item.text}</ReactMarkdown>
-                      </div>
-                      {answer && answer.role === "assistant" && (
-                        <div className="cc-bot-bubble">
-                          {answer.loading ? (
-                            <span className="cc-loading-text">Thinking...</span>
-                          ) : (
-                            <>
-                              <button
-                                className="cc-mini-btn cc-mini-btn-right"
-                                onClick={() => copyText(answer.text)}
-                                title="Copy answer"
-                              >
-                                <FaCopy />
-                              </button>
-                              <ReactMarkdown
-                                components={{
-                                  a({ node, ...props }) {
-                                    return (
-                                      <a
-                                        {...props}
-                                        target="_blank"
-                                        rel="noreferrer"
-                                      />
-                                    );
-                                  },
-                                  code({ inline, className, children, ...props }) {
-                                    if (inline) {
-                                      return (
-                                        <code className="cc-code" {...props}>
-                                          {children}
-                                        </code>
-                                      );
-                                    }
-                                    const text = String(children || "");
-                                    return (
-                                      <div className="cc-codeblock">
-                                        <button
-                                          className="cc-mini-btn cc-mini-btn-right"
-                                          onClick={() => copyText(text)}
-                                          title="Copy code"
-                                        >
-                                          <FaCopy />
-                                        </button>
-                                        <pre className="cc-pre">
-                                          <code className={className} {...props}>
-                                            {text}
-                                          </code>
-                                        </pre>
-                                      </div>
-                                    );
-                                  },
-                                }}
-                              >
-                                {answer.text}
-                              </ReactMarkdown>
-                            </>
-                          )}
-                        </div>
-                      )}
-                    </div>
-                  );
-                }
-                return null;
-              })}
-            </div>
-
-            {/* Composer */}
-            <div className="cc-search-bar-bottom">
-              <form
-                onSubmit={handleSubmit}
-                className="cc-composer"
-                autoComplete="off"
-              >
-                <textarea
-                  ref={inputRef}
-                  rows={1}
-                  className="cc-search-input cc-textarea"
-                  placeholder={`Ask something from ${
-                    selectedDB ? titleCaseDb(selectedDB) : "a database"
-                  }…`}
-                  value={query}
-                  onChange={(e) => setQuery(e.target.value)}
-                  onKeyDown={(e) => {
-                    if (e.key === "Enter" && !e.shiftKey) {
-                      e.preventDefault();
-                      handleSubmit(e);
-                    }
-                  }}
-                />
-                {loading ? (
-                  <button
-                    type="button"
-                    className="cc-search-button"
-                    onClick={stop}
-                    title="Stop"
-                  >
-                    <FaTimes />
-                  </button>
-                ) : (
-                  <>
-                    <button
-                      type="button"
-                      className="cc-search-button cc-alt"
-                      onClick={regenerate}
-                      title="Regenerate (no cache)"
-                      disabled={
-                        !conversation.some((m) => m.role === "user") || loading
-                      }
-                    >
-                      <FaSync />
-                    </button>
-                    <button
-                      type="submit"
-                      className="cc-search-button"
-                      disabled={loading}
-                      title="Send"
-                    >
-                      <FaPaperPlane />
-                    </button>
-                  </>
-                )}
-              </form>
-            </div>
+        {/* History Panel */}
+        <div className="ai-history-panel">
+          <div className="history-header">
+            <h3 className="history-title">Chat History</h3>
+            <p className="history-subtitle">
+              {selectedDB ? formatDatabaseName(selectedDB) : "Select a database"}
+            </p>
           </div>
-
-          {/* History Panel */}
-          <div className="cc-history-panel">
-            {history.map((item, index) => (
-              <div
-                key={index}
-                className="cc-history-item"
-                title={item.question}
-                onClick={() => handleHistoryClick(index)}
-                onContextMenu={(e) => {
-                  e.preventDefault();
-                  if (window.confirm("Delete this entry from history?")) {
-                    deleteHistoryItem(index);
-                  }
-                }}
-              >
-                {item.question}
+          
+          <div className="history-list">
+            {history.length === 0 ? (
+              <div className="empty-history">
+                <p>No chat history yet.</p>
+                <p>Start a conversation to see it here.</p>
               </div>
-            ))}
+            ) : (
+              history.map((item, index) => (
+                <div
+                  key={index}
+                  className="history-item"
+                  onClick={() => loadHistoryItem(index)}
+                  title="Click to load conversation"
+                >
+                  <div className="history-question">{item.question}</div>
+                  <div className="history-preview">
+                    {item.answer.slice(0, 100)}
+                    {item.answer.length > 100 ? "..." : ""}
+                  </div>
+                  
+                  <div className="history-actions">
+                    <button
+                      className="history-delete-btn"
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        deleteHistoryItem(index);
+                      }}
+                      title="Delete from history"
+                    >
+                      <FaTrash />
+                    </button>
+                  </div>
+                </div>
+              ))
+            )}
           </div>
         </div>
       </div>
