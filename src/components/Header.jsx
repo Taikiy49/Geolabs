@@ -2,7 +2,6 @@ import React, { useEffect, useMemo, useRef, useState } from "react";
 import {
   FaPlus,
   FaBell,
-  FaUserCircle,
   FaChevronDown,
   FaSearch,
   FaSignOutAlt,
@@ -12,6 +11,11 @@ import {
   FaExclamationTriangle,
   FaExternalLinkAlt,
   FaCog,
+  FaHome,
+  FaRobot,
+  FaDatabase,
+  FaFileAlt,
+  FaUsers,
 } from "react-icons/fa";
 import { NavLink, Link, useLocation, useNavigate } from "react-router-dom";
 import "../styles/Header.css";
@@ -42,7 +46,7 @@ export default function Header() {
   const displayName = accounts?.[0]?.idTokenClaims?.name || accounts?.[0]?.idTokenClaims?.given_name || "";
   const userInitials = initialsFromEmailOrName(userEmail, displayName);
 
-  // API Health Check
+  // State
   const [apiHealthy, setApiHealthy] = useState("unknown");
   const [searchQuery, setSearchQuery] = useState("");
   const [openDropdown, setOpenDropdown] = useState(null);
@@ -161,7 +165,7 @@ export default function Header() {
       return (
         <div className="status-pill api-ok">
           <FaCheckCircle />
-          <span>API Online</span>
+          <span>Online</span>
         </div>
       );
     }
@@ -169,13 +173,13 @@ export default function Header() {
       return (
         <div className="status-pill api-error">
           <FaExclamationTriangle />
-          <span>API Offline</span>
+          <span>Offline</span>
         </div>
       );
     }
     return (
       <div className="status-pill">
-        <span>API Checking...</span>
+        <span>Checking...</span>
       </div>
     );
   }, [apiHealthy]);
@@ -184,29 +188,32 @@ export default function Header() {
     <header className="header" ref={headerRef}>
       {/* Brand */}
       <Link to="/" className="header-brand">
-        <img src="/geolabs.png" alt="Geolabs" className="header-logo" />
-        <span className="header-title">Geolabs</span>
+        <img src="/geolabs_logo.jpg" alt="Geolabs" className="header-logo" />
+        <span className="header-title">Geolabs, Inc.</span>
       </Link>
 
       {/* Navigation */}
       <nav className="header-nav">
         <NavLink to="/" className="nav-link" end>
-          Dashboard
+          <FaHome />
+          <span>Dashboard</span>
         </NavLink>
         <NavLink to="/ask-ai" className="nav-link">
-          AI Assistant
+          <FaRobot />
+          <span>AI Assistant</span>
         </NavLink>
         <NavLink to="/db-viewer" className="nav-link">
-          Database
+          <FaDatabase />
+          <span>Database</span>
         </NavLink>
         <NavLink to="/reports" className="nav-link">
-          Reports
+          <FaFileAlt />
+          <span>Reports</span>
         </NavLink>
       </nav>
 
       {/* Search */}
       <form className="header-search" onSubmit={handleSearch}>
-        <FaSearch className="search-icon" />
         <input
           ref={searchRef}
           type="text"
@@ -215,6 +222,7 @@ export default function Header() {
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
         />
+        <FaSearch className="search-icon" />
       </form>
 
       {/* Status & Actions */}
@@ -233,6 +241,7 @@ export default function Header() {
             onClick={() => setOpenDropdown(openDropdown === "new" ? null : "new")}
             aria-expanded={openDropdown === "new"}
             aria-haspopup="menu"
+            title="Create new"
           >
             <FaPlus />
           </button>
@@ -262,6 +271,7 @@ export default function Header() {
             onClick={() => setOpenDropdown(openDropdown === "notifications" ? null : "notifications")}
             aria-expanded={openDropdown === "notifications"}
             aria-haspopup="menu"
+            title="Notifications"
           >
             <FaBell />
             <span className="notification-badge" />
