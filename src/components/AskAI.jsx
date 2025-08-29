@@ -408,8 +408,8 @@ export default function AskAI({ selectedDB, setSelectedDB }) {
                               <div className="message-content">
                                 <ReactMarkdown
                                   components={{
-                                    a: ({ node, ...props }) => (
-                                      <a {...props} target="_blank" rel="noopener noreferrer" />
+                                    a: ({ node, children, ...props }) => (
+                                      <a {...props} target="_blank" rel="noopener noreferrer">{children}</a>
                                     ),
                                     code: ({ inline, className, children, ...props }) => {
                                       if (inline) {

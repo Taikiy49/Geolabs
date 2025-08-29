@@ -286,12 +286,6 @@ export default function Contacts() {
     resetPaging();
   };
 
-  const copy = async (value) => {
-    try {
-      await navigator.clipboard.writeText(value || "");
-    } catch {}
-  };
-
   const exportCSV = () => {
     const cols = COLUMNS.filter((c) => visibleCols[c.key]);
     const csv = toCSV(sorted, cols);

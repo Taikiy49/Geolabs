@@ -5,7 +5,7 @@ import '../styles/DBAdmin.css';
 import API_URL from '../config';
 import {
   FaSyncAlt, FaTrashAlt, FaUpload, FaDownload, FaSearch, FaTimes, FaFilePdf,
-  FaPlus, FaCheckCircle, FaExclamationTriangle, FaList, FaCube, FaPlay, FaStop
+  FaCheckCircle, FaExclamationTriangle, FaList, FaCube, FaPlay, FaStop
 } from 'react-icons/fa';
 
 export default function DBAdmin() {
