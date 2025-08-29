@@ -133,8 +133,26 @@ export default function Header() {
     }
   };
 
-  const onSignIn = () => instance.loginRedirect();
-  const onSignOut = () => instance.logoutRedirect();
+  const onSignIn = async () => {
+    try {
+      await instance.loginPopup({
+        scopes: ["User.Read"],
+        prompt: "select_account"
+      });
+    } catch (error) {
+      console.error("Login failed:", error);
+    }
+  };
+  
+  const onSignOut = async () => {
+    try {
+      await instance.logoutPopup({
+        account: accounts[0]
+      });
+    } catch (error) {
+      console.error("Logout failed:", error);
+    }
+  };
 
   const apiBadge = useMemo(() => {
     if (apiHealthy === "ok") return <span className="hdr-pill ok"><FaCheckCircle /> API</span>;

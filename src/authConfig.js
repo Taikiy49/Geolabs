@@ -8,4 +8,10 @@ export const msalConfig = {
     cacheLocation: 'localStorage',
     storeAuthStateInCookie: false,
   },
+  system: {
+    allowNativeBroker: false, // Disables WAM Broker
+    windowHashTimeout: 60000,
+    iframeHashTimeout: 6000,
+    loadFrameTimeout: 0
+  }
 };
