@@ -7,10 +7,8 @@ import {
   FaStar, 
   FaRegStar, 
   FaClock, 
-  FaExternalLinkAlt, 
   FaSearch,
   FaCalendarAlt,
-  FaUsers,
   FaChartLine
 } from 'react-icons/fa';
 
@@ -75,7 +73,6 @@ export default function HomePage() {
   
   const fullName = accounts[0]?.name || 'User';
   const firstName = fullName.split(' ')[0];
-  const userEmail = accounts[0]?.username || '';
 
   const [searchQuery, setSearchQuery] = useState(searchParams.get('search') || '');
   const [favorites, setFavorites] = useState([]);

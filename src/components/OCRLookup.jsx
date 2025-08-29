@@ -5,7 +5,7 @@ import '../styles/OCRLookup.css';
 import {
   FiRotateCcw, FiUpload, FiCopy, FiDownload, FiSearch, FiArrowUp, FiArrowDown
 } from 'react-icons/fi';
-import { FaFolderOpen, FaPaperclip, FaImage, FaWrench } from 'react-icons/fa';
+import { FaPaperclip, FaImage, FaWrench } from 'react-icons/fa';
 
 export default function OCRLookUp() {
   const [image, setImage] = useState(null);

@@ -15,7 +15,6 @@ import {
   FaRobot,
   FaDatabase,
   FaFileAlt,
-  FaUsers,
 } from "react-icons/fa";
 import { NavLink, Link, useLocation, useNavigate } from "react-router-dom";
 import "../styles/Header.css";
