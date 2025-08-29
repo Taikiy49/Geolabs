@@ -27,6 +27,8 @@ From the given image of a table page, extract ONLY these columns for each row:
 - billing
 - date_sent
 
+
+
 If billing or date_sent are missing, leave blank. 
 Return STRICT JSON: [{"work_order": "...", "engineer_initials": "...", "billing": "...", "date_sent": "..."}]
 """
