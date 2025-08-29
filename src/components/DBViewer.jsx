@@ -2,6 +2,7 @@ import React, { useEffect, useMemo, useState } from "react";
 import axios from "axios";
 import API_URL from "../config";
 import {
+  FaDatabase,
   FaSync,
   FaCopy,
   FaExternalLinkAlt,
@@ -9,505 +10,864 @@ import {
   FaTimes,
   FaSearch,
   FaTrash,
-  FaChevronDown
+  FaChevronDown,
+  FaTable,
+  FaEye,
+  FaCheckSquare,
+  FaSquare,
 } from "react-icons/fa";
 import "../styles/DBViewer.css";
 
-const pageSizes = [10, 25, 50, 100];
+const PAGE_SIZES = [10, 25, 50, 100];
 
-function extOf(name = "") {
-  const i = name.lastIndexOf(".");
-  return i >= 0 ? name.slice(i + 1).toLowerCase() : "";
+function getFileExtension(fileName = "") {
+  const lastDot = fileName.lastIndexOf(".");
+  return lastDot >= 0 ? fileName.slice(lastDot + 1).toLowerCase() : "";
 }
 
-export default function FileSystem() {
-  // Global
-  const [dbs, setDbs] = useState([]);
-  const [loadingDbs, setLoadingDbs] = useState(true);
+export default function DBViewer() {
+  // Core state
+  const [databases, setDatabases] = useState([]);
+  const [loadingDatabases, setLoadingDatabases] = useState(true);
   const [error, setError] = useState("");
 
-  // DB list controls
-  const [qDb, setQDb] = useState("");
-  const [sortDbBy, setSortDbBy] = useState("name"); // name | files
-  const [sortDbDir, setSortDbDir] = useState("ASC");
-
-  // Expanded state
-  const [expanded, setExpanded] = useState(""); // which DB is open (single)
-  const [filesByDb, setFilesByDb] = useState({}); // { dbName: string[] }
+  // Database management
+  const [searchQuery, setSearchQuery] = useState("");
+  const [sortBy, setSortBy] = useState("name");
+  const [sortDirection, setSortDirection] = useState("asc");
+  const [expandedDb, setExpandedDb] = useState("");
+  const [filesByDatabase, setFilesByDatabase] = useState({});
   const [loadingFiles, setLoadingFiles] = useState(false);
 
-  // S3 signed URLs
-  const [s3PdfUrls, setS3PdfUrls] = useState({}); // { "db/file.pdf": url }
+  // S3 integration
+  const [s3Urls, setS3Urls] = useState({});
 
-  // File controls (per expanded DB)
-  const [qFile, setQFile] = useState("");
-  const [fileExt, setFileExt] = useState("");
-  const [sortFileBy, setSortFileBy] = useState("name"); // name | ext
-  const [sortFileDir, setSortFileDir] = useState("ASC");
-  const [page, setPage] = useState(1);
+  // File management
+  const [fileSearch, setFileSearch] = useState("");
+  const [fileTypeFilter, setFileTypeFilter] = useState("");
+  const [fileSortBy, setFileSortBy] = useState("name");
+  const [fileSortDirection, setFileSortDirection] = useState("asc");
+  const [currentPage, setCurrentPage] = useState(1);
   const [pageSize, setPageSize] = useState(25);
 
-  // Selection + preview + schema
-  const [selected, setSelected] = useState(new Set());
-  const [copiedKey, setCopiedKey] = useState("");
-  const [previewUrl, setPreviewUrl] = useState("");
-  const [previewMeta, setPreviewMeta] = useState({ name: "", ext: "" });
-  const [schema, setSchema] = useState(null); // { db, table-> {columns, sample_rows}}
+  // Selection and actions
+  const [selectedFiles, setSelectedFiles] = useState(new Set());
+  const [copyFeedback, setCopyFeedback] = useState("");
 
-  // Initial loads
+  // Modals
+  const [previewModal, setPreviewModal] = useState({ open: false, url: "", name: "", type: "" });
+  const [schemaModal, setSchemaModal] = useState({ open: false, data: null });
+
+  // Load initial data
   useEffect(() => {
-    const load = async () => {
+    const loadData = async () => {
       try {
-        setLoadingDbs(true);
-        const res = await axios.get(`${API_URL}/api/list-dbs`);
-        const filtered = (res.data.dbs || []).filter(d => d !== "chat_history.db");
-        setDbs(filtered);
-      } catch (e) {
-        setError("Failed to fetch DB list.");
+        setLoadingDatabases(true);
+        const [dbResponse, s3Response] = await Promise.all([
+          axios.get(`${API_URL}/api/list-dbs`),
+          axios.get(`${API_URL}/api/s3-db-pdfs`).catch(() => ({ data: { files: [] } }))
+        ]);
+
+        const filteredDbs = (dbResponse.data.dbs || []).filter(
+          db => db !== "chat_history.db"
+        );
+        setDatabases(filteredDbs);
+
+        // Build S3 URL mapping
+        const urlMap = {};
+        (s3Response.data.files || []).forEach(file => {
+          urlMap[file.Key] = file.url;
+        });
+        setS3Urls(urlMap);
+
+      } catch (err) {
+        console.error("Failed to load data:", err);
+        setError("Failed to load databases. Please try again.");
       } finally {
-        setLoadingDbs(false);
+        setLoadingDatabases(false);
       }
     };
-    const loadS3 = async () => {
-      try {
-        const res = await axios.get(`${API_URL}/api/s3-db-pdfs`);
-        const map = {};
-        for (const { Key, url } of res.data.files || []) map[Key] = url;
-        setS3PdfUrls(map);
-      } catch (e) {
-        // ignore: S3 may be optional
-      }
-    };
-    load();
-    loadS3();
+
+    loadData();
   }, []);
 
-  // Derived: DB list with search/sort
-  const filteredDbs = useMemo(() => {
-    const needle = qDb.trim().toLowerCase();
-    let arr = dbs;
-    if (needle) arr = dbs.filter(d => d.toLowerCase().includes(needle));
-    // add file counts if loaded
-    const withMeta = arr.map(d => ({
-      name: d,
-      files: (filesByDb[d] || []).length
+  // Database filtering and sorting
+  const processedDatabases = useMemo(() => {
+    let filtered = databases;
+
+    // Apply search filter
+    if (searchQuery.trim()) {
+      const query = searchQuery.toLowerCase();
+      filtered = filtered.filter(db => 
+        db.toLowerCase().includes(query)
+      );
+    }
+
+    // Add metadata
+    const withMetadata = filtered.map(db => ({
+      name: db,
+      fileCount: (filesByDatabase[db] || []).length,
+      displayName: db.replace(/\.db$/i, "").replace(/_/g, " "),
     }));
-    withMeta.sort((a, b) => {
-      let r =
-        sortDbBy === "files"
-          ? a.files - b.files
-          : a.name.localeCompare(b.name);
-      return sortDbDir === "ASC" ? r : -r;
+
+    // Apply sorting
+    withMetadata.sort((a, b) => {
+      let valueA, valueB;
+      
+      if (sortBy === "files") {
+        valueA = a.fileCount;
+        valueB = b.fileCount;
+      } else {
+        valueA = a.displayName.toLowerCase();
+        valueB = b.displayName.toLowerCase();
+      }
+
+      if (valueA < valueB) return sortDirection === "asc" ? -1 : 1;
+      if (valueA > valueB) return sortDirection === "asc" ? 1 : -1;
+      return 0;
     });
-    return withMeta;
-  }, [dbs, qDb, sortDbBy, sortDbDir, filesByDb]);
 
-  const toggleDbSort = (field) => {
-    if (sortDbBy === field) {
-      setSortDbDir(d => (d === "ASC" ? "DESC" : "ASC"));
+    return withMetadata;
+  }, [databases, searchQuery, sortBy, sortDirection, filesByDatabase]);
+
+  const toggleDatabaseSort = (field) => {
+    if (sortBy === field) {
+      setSortDirection(dir => dir === "asc" ? "desc" : "asc");
     } else {
-      setSortDbBy(field);
-      setSortDbDir("ASC");
+      setSortBy(field);
+      setSortDirection("asc");
     }
   };
 
-  const refreshDbs = async () => {
+  const refreshDatabases = async () => {
     try {
-      setLoadingDbs(true);
-      const res = await axios.get(`${API_URL}/api/list-dbs`);
-      const filtered = (res.data.dbs || []).filter(d => d !== "chat_history.db");
-      setDbs(filtered);
-    } catch {
-      setError("Failed to refresh DB list.");
+      setLoadingDatabases(true);
+      const response = await axios.get(`${API_URL}/api/list-dbs`);
+      const filtered = (response.data.dbs || []).filter(db => db !== "chat_history.db");
+      setDatabases(filtered);
+      setError("");
+    } catch (err) {
+      console.error("Failed to refresh databases:", err);
+      setError("Failed to refresh databases.");
     } finally {
-      setLoadingDbs(false);
+      setLoadingDatabases(false);
     }
   };
 
-  const openDb = async (db) => {
-    if (expanded === db) {
-      setExpanded("");
-      setSelected(new Set());
+  const toggleDatabase = async (dbName) => {
+    if (expandedDb === dbName) {
+      setExpandedDb("");
+      setSelectedFiles(new Set());
       return;
     }
-    setExpanded(db);
-    setSelected(new Set());
-    setQFile("");
-    setFileExt("");
-    setSortFileBy("name");
-    setSortFileDir("ASC");
-    setPage(1);
-    setPageSize(25);
 
-    if (!filesByDb[db]) {
+    setExpandedDb(dbName);
+    setSelectedFiles(new Set());
+    setFileSearch("");
+    setFileTypeFilter("");
+    setFileSortBy("name");
+    setFileSortDirection("asc");
+    setCurrentPage(1);
+
+    // Load files if not already loaded
+    if (!filesByDatabase[dbName]) {
       try {
         setLoadingFiles(true);
-        const res = await axios.post(`${API_URL}/api/list-files`, { db_name: db });
-        setFilesByDb(prev => ({ ...prev, [db]: res.data.files || [] }));
-      } catch (e) {
-        setFilesByDb(prev => ({ ...prev, [db]: [] }));
+        const response = await axios.post(`${API_URL}/api/list-files`, { db_name: dbName });
+        setFilesByDatabase(prev => ({
+          ...prev,
+          [dbName]: response.data.files || []
+        }));
+      } catch (err) {
+        console.error("Failed to load files:", err);
+        setFilesByDatabase(prev => ({
+          ...prev,
+          [dbName]: []
+        }));
       } finally {
         setLoadingFiles(false);
       }
     }
   };
 
-  const inspectDb = async (db) => {
+  const inspectDatabase = async (dbName) => {
     try {
-      const res = await axios.post(`${API_URL}/api/inspect-db`, { db_name: db });
-      setSchema({ db, ...res.data });
-    } catch {
-      setSchema({ db, error: "Failed to load schema." });
+      const response = await axios.post(`${API_URL}/api/inspect-db`, { db_name: dbName });
+      setSchemaModal({
+        open: true,
+        data: { database: dbName, ...response.data }
+      });
+    } catch (err) {
+      console.error("Failed to inspect database:", err);
+      setSchemaModal({
+        open: true,
+        data: { database: dbName, error: "Failed to load schema information." }
+      });
     }
   };
 
-  const deleteDb = async (db) => {
-    const txt = prompt(`Type EXACTLY: DELETE ${db}`);
-    if (!txt) return;
+  const deleteDatabase = async (dbName) => {
+    const confirmText = prompt(`Type "DELETE ${dbName}" to confirm deletion:`);
+    if (confirmText !== `DELETE ${dbName}`) {
+      return;
+    }
+
     try {
       await axios.post(`${API_URL}/api/delete-db`, {
-        db_name: db,
-        confirmation_text: txt
+        db_name: dbName,
+        confirmation_text: confirmText,
       });
-      setDbs(prev => prev.filter(d => d !== db));
-      setExpanded("");
-      setFilesByDb(prev => {
-        const n = { ...prev }; delete n[db]; return n;
+      
+      setDatabases(prev => prev.filter(db => db !== dbName));
+      setExpandedDb("");
+      setFilesByDatabase(prev => {
+        const updated = { ...prev };
+        delete updated[dbName];
+        return updated;
       });
-    } catch (e) {
-      alert("Deletion failed.");
+      
+      alert("Database deleted successfully.");
+    } catch (err) {
+      console.error("Failed to delete database:", err);
+      alert(err.response?.data?.error || "Failed to delete database.");
     }
   };
 
-  // Files (for expanded DB)
-  const files = filesByDb[expanded] || [];
-  const fileOptionsExt = useMemo(() => {
-    const s = new Set(files.map(extOf).filter(Boolean));
-    return Array.from(s).sort((a, b) => a.localeCompare(b));
-  }, [files]);
+  // File processing
+  const currentFiles = filesByDatabase[expandedDb] || [];
+  const fileExtensions = useMemo(() => {
+    const extensions = new Set(currentFiles.map(getFileExtension).filter(Boolean));
+    return Array.from(extensions).sort();
+  }, [currentFiles]);
 
-  const filteredFiles = useMemo(() => {
-    let arr = files.map(name => ({ name, ext: extOf(name) }));
-    if (qFile.trim()) {
-      const needle = qFile.toLowerCase();
-      arr = arr.filter(f => f.name.toLowerCase().includes(needle));
+  const processedFiles = useMemo(() => {
+    let filtered = currentFiles.map(fileName => ({
+      name: fileName,
+      extension: getFileExtension(fileName),
+      s3Key: `${expandedDb}/${fileName}`,
+      url: s3Urls[`${expandedDb}/${fileName}`]
+    }));
+
+    // Apply filters
+    if (fileSearch.trim()) {
+      const query = fileSearch.toLowerCase();
+      filtered = filtered.filter(file => 
+        file.name.toLowerCase().includes(query)
+      );
     }
-    if (fileExt) arr = arr.filter(f => f.ext === fileExt);
-    arr.sort((a, b) => {
-      const r = sortFileBy === "ext"
-        ? a.ext.localeCompare(b.ext)
-        : a.name.localeCompare(b.name);
-      return sortFileDir === "ASC" ? r : -r;
-    });
-    return arr;
-  }, [files, qFile, fileExt, sortFileBy, sortFileDir]);
 
-  const totalFiles = filteredFiles.length;
+    if (fileTypeFilter) {
+      filtered = filtered.filter(file => file.extension === fileTypeFilter);
+    }
+
+    // Apply sorting
+    filtered.sort((a, b) => {
+      let valueA, valueB;
+      
+      if (fileSortBy === "extension") {
+        valueA = a.extension;
+        valueB = b.extension;
+      } else {
+        valueA = a.name.toLowerCase();
+        valueB = b.name.toLowerCase();
+      }
+
+      if (valueA < valueB) return fileSortDirection === "asc" ? -1 : 1;
+      if (valueA > valueB) return fileSortDirection === "asc" ? 1 : -1;
+      return 0;
+    });
+
+    return filtered;
+  }, [currentFiles, fileSearch, fileTypeFilter, fileSortBy, fileSortDirection, expandedDb, s3Urls]);
+
+  // Pagination
+  const totalFiles = processedFiles.length;
   const totalPages = Math.max(1, Math.ceil(totalFiles / pageSize));
-  const pagedFiles = useMemo(() => {
-    const start = (page - 1) * pageSize;
-    return filteredFiles.slice(start, start + pageSize);
-  }, [filteredFiles, page, pageSize]);
+  const paginatedFiles = useMemo(() => {
+    const startIndex = (currentPage - 1) * pageSize;
+    return processedFiles.slice(startIndex, startIndex + pageSize);
+  }, [processedFiles, currentPage, pageSize]);
 
   const toggleFileSort = (field) => {
-    if (sortFileBy === field) {
-      setSortFileDir(d => (d === "ASC" ? "DESC" : "ASC"));
+    if (fileSortBy === field) {
+      setFileSortDirection(dir => dir === "asc" ? "desc" : "asc");
     } else {
-      setSortFileBy(field);
-      setSortFileDir("ASC");
+      setFileSortBy(field);
+      setFileSortDirection("asc");
     }
-    setPage(1);
+    setCurrentPage(1);
   };
 
-  const s3Url = (db, file) => s3PdfUrls[`${db}/${file}`];
+  // File actions
+  const getS3Url = (dbName, fileName) => s3Urls[`${dbName}/${fileName}`];
 
-  const copyUrl = async (db, file) => {
-    const url = s3Url(db, file);
-    if (!url) return alert("Signed URL not found.");
+  const copyFileUrl = async (dbName, fileName) => {
+    const url = getS3Url(dbName, fileName);
+    if (!url) {
+      alert("No URL available for this file.");
+      return;
+    }
+
     try {
       await navigator.clipboard.writeText(url);
-      setCopiedKey(`${db}/${file}`);
-      setTimeout(() => setCopiedKey(""), 1200);
-    } catch {}
+      setCopyFeedback(`${dbName}/${fileName}`);
+      setTimeout(() => setCopyFeedback(""), 2000);
+    } catch (err) {
+      console.error("Failed to copy URL:", err);
+    }
   };
 
-  const openPreview = (db, file) => {
-    const url = s3Url(db, file);
-    if (!url) return alert("Signed URL not found.");
-    setPreviewMeta({ name: file, ext: extOf(file) });
-    setPreviewUrl(url);
-  };
+  const openPreview = (dbName, fileName) => {
+    const url = getS3Url(dbName, fileName);
+    if (!url) {
+      alert("No preview available for this file.");
+      return;
+    }
 
-  const selectAllOnPage = (checked) => {
-    setSelected(prev => {
-      const next = new Set(prev);
-      pagedFiles.forEach(f =>
-        checked ? next.add(f.name) : next.delete(f.name)
-      );
-      return next;
+    setPreviewModal({
+      open: true,
+      url,
+      name: fileName,
+      type: getFileExtension(fileName)
     });
   };
-  const toggleSelect = (name) => {
-    setSelected(prev => {
-      const next = new Set(prev);
-      next.has(name) ? next.delete(name) : next.add(name);
-      return next;
+
+  // Selection management
+  const toggleFileSelection = (fileName) => {
+    setSelectedFiles(prev => {
+      const updated = new Set(prev);
+      if (updated.has(fileName)) {
+        updated.delete(fileName);
+      } else {
+        updated.add(fileName);
+      }
+      return updated;
     });
   };
-  const clearSelection = () => setSelected(new Set());
 
-  const bulkCopy = async () => {
-    const urls = [...selected]
-      .map(n => s3Url(expanded, n))
+  const toggleSelectAll = () => {
+    const allSelected = paginatedFiles.every(file => selectedFiles.has(file.name));
+    
+    setSelectedFiles(prev => {
+      const updated = new Set(prev);
+      
+      if (allSelected) {
+        paginatedFiles.forEach(file => updated.delete(file.name));
+      } else {
+        paginatedFiles.forEach(file => updated.add(file.name));
+      }
+      
+      return updated;
+    });
+  };
+
+  const clearSelection = () => setSelectedFiles(new Set());
+
+  const bulkCopyUrls = async () => {
+    const urls = Array.from(selectedFiles)
+      .map(fileName => getS3Url(expandedDb, fileName))
       .filter(Boolean)
       .join("\n");
-    if (!urls) return;
+
+    if (!urls) {
+      alert("No URLs available for selected files.");
+      return;
+    }
+
     try {
       await navigator.clipboard.writeText(urls);
-      setCopiedKey("@bulk");
-      setTimeout(() => setCopiedKey(""), 1200);
-    } catch {}
+      setCopyFeedback("@bulk");
+      setTimeout(() => setCopyFeedback(""), 2000);
+    } catch (err) {
+      console.error("Failed to copy URLs:", err);
+    }
   };
 
-  const bulkOpen = () => {
-    const urls = [...selected]
-      .map(n => s3Url(expanded, n))
+  const bulkOpenFiles = () => {
+    const urls = Array.from(selectedFiles)
+      .map(fileName => getS3Url(expandedDb, fileName))
       .filter(Boolean)
-      .slice(0, 10);
-    if (urls.length === 0) return;
-    urls.forEach(u => window.open(u, "_blank", "noopener,noreferrer"));
+      .slice(0, 10); // Limit to prevent browser issues
+
+    if (urls.length === 0) {
+      alert("No URLs available for selected files.");
+      return;
+    }
+
+    urls.forEach(url => window.open(url, "_blank", "noopener,noreferrer"));
   };
 
-  const exportCsv = () => {
-    const rows = filteredFiles.map(f => [expanded, f.name, f.ext.toUpperCase(), s3Url(expanded, f.name) || ""]);
-    const header = "database,file,ext,url\n";
-    const body = rows.map(r => r.map(x => `"${String(x).replace(/"/g, '""')}"`).join(",")).join("\n");
-    const blob = new Blob([header + body], { type: "text/csv" });
+  const exportFileList = () => {
+    const csvData = processedFiles.map(file => ({
+      database: expandedDb,
+      filename: file.name,
+      extension: file.extension.toUpperCase(),
+      url: file.url || ""
+    }));
+
+    const headers = ["Database", "Filename", "Type", "URL"];
+    const csvContent = [
+      headers.join(","),
+      ...csvData.map(row => 
+        Object.values(row).map(value => `"${String(value).replace(/"/g, '""')}"`).join(",")
+      )
+    ].join("\n");
+
+    const blob = new Blob([csvContent], { type: "text/csv;charset=utf-8" });
     const url = URL.createObjectURL(blob);
-    const a = document.createElement("a");
-    a.href = url; a.download = `${expanded}_files.csv`; a.click();
+    const link = document.createElement("a");
+    link.href = url;
+    link.download = `${expandedDb}_files.csv`;
+    link.click();
     URL.revokeObjectURL(url);
   };
 
   return (
-    <div className="fs-wrap">
-      <div className="fs-topbar">
-        <div className="fs-left">
-          <div className="fs-search">
-            <FaSearch className="fs-search-icon" />
+    <div className="db-viewer">
+      {/* Header */}
+      <div className="db-viewer-header">
+        <h1 className="db-viewer-title">
+          <FaDatabase className="db-viewer-title-icon" />
+          Database Viewer
+        </h1>
+        
+        <div className="db-viewer-controls">
+          <div className="search-container">
+            <FaSearch className="search-icon" />
             <input
-              className="fs-input"
-              placeholder="Search databases…"
-              value={qDb}
-              onChange={(e) => setQDb(e.target.value)}
+              type="text"
+              className="search-input"
+              placeholder="Search databases..."
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
             />
           </div>
-          <button className="fs-btn" onClick={refreshDbs} title="Refresh DB list">
-            <FaSync className="fs-ic" /> Refresh
+          
+          <button className="btn btn-secondary" onClick={refreshDatabases} disabled={loadingDatabases}>
+            <FaSync />
+            {loadingDatabases ? "Loading..." : "Refresh"}
           </button>
-        </div>
-        <div className="fs-right">
-          <span className="fs-muted">{filteredDbs.length} DBs</span>
         </div>
       </div>
 
-      <div className="fs-body">
-        <div className="fs-dbcol">
-          <div className="fs-listhead">
-            <button className="fs-link" onClick={() => toggleDbSort("name")}>
-              Name {sortDbBy === "name" ? (sortDbDir === "ASC" ? "▲" : "▼") : ""}
-            </button>
-            <button className="fs-link" onClick={() => toggleDbSort("files")}>
-              Files {sortDbBy === "files" ? (sortDbDir === "ASC" ? "▲" : "▼") : ""}
-            </button>
+      <div className="db-viewer-main">
+        {/* Database List */}
+        <div className="db-list-panel">
+          <div className="db-list-header">
+            <h2 className="db-list-title">Databases</h2>
+            <div className="db-list-count">{processedDatabases.length}</div>
           </div>
 
-          {loadingDbs ? (
-            <div className="fs-empty">Loading DBs…</div>
-          ) : error ? (
-            <div className="fs-empty">{error}</div>
-          ) : filteredDbs.length === 0 ? (
-            <div className="fs-empty">No databases.</div>
-          ) : (
-            <ul className="fs-dblist">
-              {filteredDbs.map(({ name, files }) => (
-                <li key={name} className={`fs-dbitem ${expanded === name ? "is-active" : ""}`}>
-                  <div className="fs-dbrow">
-                    <button className="fs-dbname" onClick={() => openDb(name)}>
-                      {name} <FaChevronDown className={`fs-caret ${expanded === name ? "is-open" : ""}`} />
-                    </button>
-                    <div className="fs-dbmeta">
-                      <span className="fs-chip">{files} files</span>
-                      <button className="fs-link" onClick={() => inspectDb(name)}>[Schema]</button>
-                      <button className="fs-link fs-danger" onClick={() => deleteDb(name)} title="Delete DB">
-                        <FaTrash /> Delete
+          <div className="db-list">
+            {loadingDatabases ? (
+              <div className="loading-container">
+                <div className="loading-spinner" />
+                <span className="loading-text">Loading databases...</span>
+              </div>
+            ) : error ? (
+              <div className="empty-state">
+                <FaDatabase className="empty-state-icon" />
+                <h3 className="empty-state-title">Error</h3>
+                <p className="empty-state-description">{error}</p>
+              </div>
+            ) : processedDatabases.length === 0 ? (
+              <div className="empty-state">
+                <FaDatabase className="empty-state-icon" />
+                <h3 className="empty-state-title">No Databases</h3>
+                <p className="empty-state-description">No databases found matching your search.</p>
+              </div>
+            ) : (
+              processedDatabases.map(db => (
+                <div
+                  key={db.name}
+                  className={`db-item ${expandedDb === db.name ? "active" : ""}`}
+                >
+                  <div className="db-item-header" onClick={() => toggleDatabase(db.name)}>
+                    <div className="db-item-info">
+                      <FaDatabase className="db-item-icon" />
+                      <div className="db-item-details">
+                        <div className="db-item-name">{db.displayName}</div>
+                        <div className="db-item-meta">{db.fileCount} files</div>
+                      </div>
+                    </div>
+                    
+                    <div className="db-item-actions" onClick={(e) => e.stopPropagation()}>
+                      <button
+                        className="db-action-btn"
+                        onClick={() => inspectDatabase(db.name)}
+                        title="View schema"
+                      >
+                        <FaTable />
+                      </button>
+                      <button
+                        className="db-action-btn danger"
+                        onClick={() => deleteDatabase(db.name)}
+                        title="Delete database"
+                      >
+                        <FaTrash />
                       </button>
                     </div>
-                  </div>
-                </li>
-              ))}
-            </ul>
-          )}
-        </div>
-
-        <div className="fs-filecol">
-          {expanded ? (
-            <>
-              <div className="fs-filehead">
-                <div className="fs-title">{expanded}</div>
-                <div className="fs-filters">
-                  <div className="fs-search">
-                    <FaSearch className="fs-search-icon" />
-                    <input
-                      className="fs-input"
-                      placeholder="Search files…"
-                      value={qFile}
-                      onChange={(e) => { setQFile(e.target.value); setPage(1); }}
+                    
+                    <FaChevronDown 
+                      className={`expand-icon ${expandedDb === db.name ? "expanded" : ""}`} 
                     />
                   </div>
-                  <select
-                    className="fs-select"
-                    value={fileExt}
-                    onChange={(e) => { setFileExt(e.target.value); setPage(1); }}
-                  >
-                    <option value="">Type: All</option>
-                    {fileOptionsExt.map(x => (
-                      <option key={x} value={x}>{x.toUpperCase()}</option>
-                    ))}
-                  </select>
-                  <button className="fs-btn" onClick={exportCsv}>Export CSV</button>
-                  <select
-                    className="fs-select"
-                    value={pageSize}
-                    onChange={(e) => { setPageSize(Number(e.target.value)); setPage(1); }}
-                  >
-                    {pageSizes.map(n => <option key={n} value={n}>{n}/page</option>)}
-                  </select>
+                </div>
+              ))
+            )}
+          </div>
+        </div>
+
+        {/* File Content Panel */}
+        <div className="file-content-panel">
+          {expandedDb ? (
+            <>
+              <div className="file-content-header">
+                <h2 className="file-content-title">{expandedDb.replace(/\.db$/i, "").replace(/_/g, " ")}</h2>
+                
+                <div className="file-content-actions">
+                  <div className="filter-group">
+                    <div className="search-container">
+                      <FaSearch className="search-icon" />
+                      <input
+                        type="text"
+                        className="search-input"
+                        placeholder="Search files..."
+                        value={fileSearch}
+                        onChange={(e) => {
+                          setFileSearch(e.target.value);
+                          setCurrentPage(1);
+                        }}
+                      />
+                    </div>
+                  </div>
+
+                  <div className="filter-group">
+                    <select
+                      className="filter-select"
+                      value={fileTypeFilter}
+                      onChange={(e) => {
+                        setFileTypeFilter(e.target.value);
+                        setCurrentPage(1);
+                      }}
+                    >
+                      <option value="">All Types</option>
+                      {fileExtensions.map(ext => (
+                        <option key={ext} value={ext}>{ext.toUpperCase()}</option>
+                      ))}
+                    </select>
+                  </div>
+
+                  <div className="filter-group">
+                    <select
+                      className="filter-select"
+                      value={pageSize}
+                      onChange={(e) => {
+                        setPageSize(Number(e.target.value));
+                        setCurrentPage(1);
+                      }}
+                    >
+                      {PAGE_SIZES.map(size => (
+                        <option key={size} value={size}>{size} per page</option>
+                      ))}
+                    </select>
+                  </div>
+
+                  <button className="btn btn-secondary" onClick={exportFileList}>
+                    <FaCloudDownloadAlt />
+                    Export CSV
+                  </button>
                 </div>
               </div>
 
-              <div className="fs-actions">
-                <label className="fs-checkrow">
-                  <input
-                    type="checkbox"
-                    checked={pagedFiles.length > 0 && pagedFiles.every(f => selected.has(f.name))}
-                    onChange={(e) => selectAllOnPage(e.target.checked)}
-                  />
-                  <span>Select page</span>
-                </label>
-                <button className="fs-btn" onClick={bulkCopy} disabled={selected.size === 0}>
-                  <FaCopy className="fs-ic" /> Copy URLs
-                </button>
-                <button className="fs-btn" onClick={bulkOpen} disabled={selected.size === 0}>
-                  <FaExternalLinkAlt className="fs-ic" /> Open (max 10)
-                </button>
-                {selected.size > 0 && (
-                  <button className="fs-btn fs-btn-ghost" onClick={clearSelection}>
-                    Clear ({selected.size})
+              {/* Bulk Actions */}
+              {selectedFiles.size > 0 && (
+                <div className="bulk-actions">
+                  <div className="selection-info">
+                    {selectedFiles.size} file{selectedFiles.size !== 1 ? "s" : ""} selected
+                  </div>
+                  
+                  <button className="bulk-action-btn" onClick={bulkCopyUrls}>
+                    <FaCopy />
+                    Copy URLs
                   </button>
-                )}
-                {(copiedKey === "@bulk") && <span className="fs-copied">Copied!</span>}
-              </div>
+                  
+                  <button className="bulk-action-btn" onClick={bulkOpenFiles}>
+                    <FaExternalLinkAlt />
+                    Open Files (max 10)
+                  </button>
+                  
+                  <button className="bulk-action-btn" onClick={clearSelection}>
+                    Clear Selection
+                  </button>
+                  
+                  {copyFeedback === "@bulk" && (
+                    <span style={{ color: var(--color-success), fontSize: "0.875rem" }}>
+                      URLs copied!
+                    </span>
+                  )}
+                </div>
+              )}
 
-              <div className="fs-tablewrap">
+              {/* File Table */}
+              <div className="file-table-container">
                 {loadingFiles ? (
-                  <div className="fs-empty">Loading files…</div>
+                  <div className="loading-container">
+                    <div className="loading-spinner" />
+                    <span className="loading-text">Loading files...</span>
+                  </div>
                 ) : totalFiles === 0 ? (
-                  <div className="fs-empty">No files.</div>
+                  <div className="empty-state">
+                    <FaTable className="empty-state-icon" />
+                    <h3 className="empty-state-title">No Files</h3>
+                    <p className="empty-state-description">
+                      No files found in this database matching your criteria.
+                    </p>
+                  </div>
                 ) : (
-                  <table className="fs-table">
+                  <table className="file-table">
                     <thead>
                       <tr>
-                        <th className="fs-th fs-th-check"></th>
-                        <th className="fs-th" onClick={() => toggleFileSort("name")}>
-                          File {sortFileBy === "name" ? (sortFileDir === "ASC" ? "▲" : "▼") : ""}
+                        <th style={{ width: "40px" }}>
+                          <input
+                            type="checkbox"
+                            className="selection-checkbox"
+                            checked={paginatedFiles.length > 0 && paginatedFiles.every(file => selectedFiles.has(file.name))}
+                            onChange={toggleSelectAll}
+                            title="Select all on page"
+                          />
                         </th>
-                        <th className="fs-th" onClick={() => toggleFileSort("ext")}>
-                          Type {sortFileBy === "ext" ? (sortFileDir === "ASC" ? "▲" : "▼") : ""}
+                        <th 
+                          className={`sortable ${fileSortBy === "name" ? `sorted-${fileSortDirection}` : ""}`}
+                          onClick={() => toggleFileSort("name")}
+                        >
+                          File Name
                         </th>
-                        <th className="fs-th fs-th-actions">Actions</th>
+                        <th 
+                          className={`sortable ${fileSortBy === "extension" ? `sorted-${fileSortDirection}` : ""}`}
+                          onClick={() => toggleFileSort("extension")}
+                        >
+                          Type
+                        </th>
+                        <th style={{ width: "200px" }}>Actions</th>
                       </tr>
                     </thead>
                     <tbody>
-                      {pagedFiles.map(({ name, ext }) => {
-                        const url = s3Url(expanded, name);
-                        const key = `${expanded}/${name}`;
-                        return (
-                          <tr key={name}>
-                            <td className="fs-td-check">
-                              <input
-                                type="checkbox"
-                                checked={selected.has(name)}
-                                onChange={() => toggleSelect(name)}
-                              />
-                            </td>
-                            <td className="fs-ellipsis" title={name}>{name}</td>
-                            <td className="fs-type">{ext ? ext.toUpperCase() : "-"}</td>
-                            <td className="fs-actions-cell">
-                              <button className="fs-iconbtn" title="Preview" onClick={() => openPreview(expanded, name)}>👁</button>
-                              {url ? (
+                      {paginatedFiles.map(file => (
+                        <tr key={file.name}>
+                          <td>
+                            <input
+                              type="checkbox"
+                              className="selection-checkbox"
+                              checked={selectedFiles.has(file.name)}
+                              onChange={() => toggleFileSelection(file.name)}
+                            />
+                          </td>
+                          <td>
+                            <div className="file-name" title={file.name}>
+                              {file.name}
+                            </div>
+                          </td>
+                          <td>
+                            {file.extension && (
+                              <span className="file-type">{file.extension}</span>
+                            )}
+                          </td>
+                          <td>
+                            <div className="file-actions">
+                              <button
+                                className="file-action-btn"
+                                onClick={() => openPreview(expandedDb, file.name)}
+                                title="Preview file"
+                              >
+                                <FaEye />
+                              </button>
+                              
+                              {file.url && (
                                 <>
-                                  <a className="fs-iconbtn" href={url} target="_blank" rel="noreferrer" title="Open"><FaExternalLinkAlt /></a>
-                                  <a className="fs-iconbtn" href={url} download={name} title="Download"><FaCloudDownloadAlt /></a>
-                                  <button className="fs-iconbtn" title="Copy URL" onClick={() => copyUrl(expanded, name)}><FaCopy /></button>
-                                  {copiedKey === key && <span className="fs-copied-inline">Copied</span>}
+                                  <a
+                                    href={file.url}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="file-action-btn"
+                                    title="Open in new tab"
+                                  >
+                                    <FaExternalLinkAlt />
+                                  </a>
+                                  
+                                  <a
+                                    href={file.url}
+                                    download={file.name}
+                                    className="file-action-btn"
+                                    title="Download file"
+                                  >
+                                    <FaCloudDownloadAlt />
+                                  </a>
+                                  
+                                  <button
+                                    className="file-action-btn"
+                                    onClick={() => copyFileUrl(expandedDb, file.name)}
+                                    title="Copy URL"
+                                  >
+                                    <FaCopy />
+                                  </button>
+                                  
+                                  {copyFeedback === `${expandedDb}/${file.name}` && (
+                                    <span style={{ color: var(--color-success), fontSize: "0.75rem", marginLeft: var(--space-2) }}>
+                                      Copied!
+                                    </span>
+                                  )}
                                 </>
-                              ) : (
-                                <span className="fs-muted">No URL</span>
                               )}
-                            </td>
-                          </tr>
-                        );
-                      })}
+                            </div>
+                          </td>
+                        </tr>
+                      ))}
                     </tbody>
                   </table>
                 )}
               </div>
 
-              <div className="fs-pager">
-                <button className="fs-btn" onClick={() => setPage(1)} disabled={page === 1}>⏮</button>
-                <button className="fs-btn" onClick={() => setPage(p => Math.max(1, p - 1))} disabled={page === 1}>◀</button>
-                <span className="fs-page">{page} / {totalPages}</span>
-                <button className="fs-btn" onClick={() => setPage(p => Math.min(totalPages, p + 1))} disabled={page === totalPages}>▶</button>
-                <button className="fs-btn" onClick={() => setPage(totalPages)} disabled={page === totalPages}>⏭</button>
-              </div>
+              {/* Pagination */}
+              {totalFiles > 0 && (
+                <div className="pagination">
+                  <button
+                    className="pagination-btn"
+                    onClick={() => setCurrentPage(1)}
+                    disabled={currentPage === 1}
+                    title="First page"
+                  >
+                    ⏮
+                  </button>
+                  <button
+                    className="pagination-btn"
+                    onClick={() => setCurrentPage(prev => Math.max(1, prev - 1))}
+                    disabled={currentPage === 1}
+                    title="Previous page"
+                  >
+                    ◀
+                  </button>
+                  
+                  <span className="pagination-info">
+                    Page {currentPage} of {totalPages}
+                  </span>
+                  
+                  <button
+                    className="pagination-btn"
+                    onClick={() => setCurrentPage(prev => Math.min(totalPages, prev + 1))}
+                    disabled={currentPage === totalPages}
+                    title="Next page"
+                  >
+                    ▶
+                  </button>
+                  <button
+                    className="pagination-btn"
+                    onClick={() => setCurrentPage(totalPages)}
+                    disabled={currentPage === totalPages}
+                    title="Last page"
+                  >
+                    ⏭
+                  </button>
+                  
+                  <select
+                    className="page-size-select"
+                    value={pageSize}
+                    onChange={(e) => {
+                      setPageSize(Number(e.target.value));
+                      setCurrentPage(1);
+                    }}
+                  >
+                    {PAGE_SIZES.map(size => (
+                      <option key={size} value={size}>{size} per page</option>
+                    ))}
+                  </select>
+                </div>
+              )}
             </>
           ) : (
-            <div className="fs-empty fs-full">Select a database to view files.</div>
+            <div className="empty-state">
+              <FaDatabase className="empty-state-icon" />
+              <h2 className="empty-state-title">Select a Database</h2>
+              <p className="empty-state-description">
+                Choose a database from the list to view its contents and manage files.
+              </p>
+            </div>
           )}
         </div>
       </div>
 
-      {/* Schema modal */}
-      {schema && (
-        <div className="fs-modal" onClick={() => setSchema(null)}>
-          <div className="fs-modal-card" onClick={(e) => e.stopPropagation()}>
-            <div className="fs-modal-head">
-              <div className="fs-title">Schema: {schema.db}</div>
-              <button className="fs-iconbtn" onClick={() => setSchema(null)} title="Close"><FaTimes /></button>
+      {/* Schema Modal */}
+      {schemaModal.open && (
+        <div className="modal-overlay" onClick={() => setSchemaModal({ open: false, data: null })}>
+          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+            <div className="modal-header">
+              <h3 className="modal-title">
+                Database Schema: {schemaModal.data?.database}
+              </h3>
+              <button
+                className="modal-close-btn"
+                onClick={() => setSchemaModal({ open: false, data: null })}
+                title="Close"
+              >
+                <FaTimes />
+              </button>
             </div>
-            <div className="fs-modal-body">
-              {schema.error ? (
-                <div className="fs-empty">{schema.error}</div>
+            
+            <div className="modal-body">
+              {schemaModal.data?.error ? (
+                <div className="empty-state">
+                  <FaTable className="empty-state-icon" />
+                  <h3 className="empty-state-title">Schema Error</h3>
+                  <p className="empty-state-description">{schemaModal.data.error}</p>
+                </div>
               ) : (
-                Object.entries(schema).map(([table, info]) => {
-                  if (table === "db") return null;
+                Object.entries(schemaModal.data || {}).map(([tableName, tableInfo]) => {
+                  if (tableName === "database") return null;
+                  
                   return (
-                    <div key={table} className="fs-schema-block">
-                      <div className="fs-schema-title">{table}</div>
-                      <div className="fs-schema-columns">Columns: {info.columns.join(", ")}</div>
-                      <div className="fs-schema-sample">Sample rows:</div>
-                      <div className="fs-sample-table">
-                        {(info.sample_rows || []).slice(0, 5).map((row, i) => (
-                          <div key={i} className="fs-sample-row">
-                            {(row || []).map((cell, j) => (
-                              <span key={j} className="fs-cell" title={String(cell)}>
-                                {typeof cell === "string" && cell.length > 60 ? (cell.slice(0, 60) + "…") : String(cell)}
-                              </span>
-                            ))}
-                          </div>
-                        ))}
+                    <div key={tableName} className="schema-section">
+                      <h4 className="schema-table-name">
+                        <FaTable />
+                        {tableName}
+                      </h4>
+                      
+                      <div className="schema-columns">
+                        <h5 className="schema-columns-title">Columns</h5>
+                        <div className="schema-columns-list">
+                          {(tableInfo.columns || []).map(column => (
+                            <span key={column} className="schema-column">{column}</span>
+                          ))}
+                        </div>
                       </div>
+
+                      {tableInfo.sample_rows && tableInfo.sample_rows.length > 0 && (
+                        <div className="schema-sample">
+                          <h5 className="schema-sample-title">Sample Data</h5>
+                          <table className="sample-table">
+                            <thead>
+                              <tr>
+                                {(tableInfo.columns || []).map(column => (
+                                  <th key={column}>{column}</th>
+                                ))}
+                              </tr>
+                            </thead>
+                            <tbody>
+                              {tableInfo.sample_rows.slice(0, 5).map((row, index) => (
+                                <tr key={index}>
+                                  {(row || []).map((cell, cellIndex) => (
+                                    <td key={cellIndex} title={String(cell)}>
+                                      {typeof cell === "string" && cell.length > 50
+                                        ? `${cell.slice(0, 50)}...`
+                                        : String(cell)
+                                      }
+                                    </td>
+                                  ))}
+                                </tr>
+                              ))}
+                            </tbody>
+                          </table>
+                        </div>
+                      )}
                     </div>
                   );
                 })
@@ -517,21 +877,42 @@ export default function FileSystem() {
         </div>
       )}
 
-      {/* Preview modal */}
-      {previewUrl && (
-        <div className="fs-modal" onClick={() => setPreviewUrl("")}>
-          <div className="fs-modal-card" onClick={(e) => e.stopPropagation()}>
-            <div className="fs-modal-head">
-              <div className="fs-title">{previewMeta.name}</div>
-              <button className="fs-iconbtn" onClick={() => setPreviewUrl("")} title="Close"><FaTimes /></button>
+      {/* Preview Modal */}
+      {previewModal.open && (
+        <div className="modal-overlay" onClick={() => setPreviewModal({ open: false, url: "", name: "", type: "" })}>
+          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+            <div className="modal-header">
+              <h3 className="modal-title">{previewModal.name}</h3>
+              <button
+                className="modal-close-btn"
+                onClick={() => setPreviewModal({ open: false, url: "", name: "", type: "" })}
+                title="Close preview"
+              >
+                <FaTimes />
+              </button>
             </div>
-            <div className="fs-modal-body">
-              {previewMeta.ext === "pdf" ? (
-                <iframe className="fs-frame" src={previewUrl} title="Preview" />
-              ) : ["png", "jpg", "jpeg", "webp", "gif"].includes(previewMeta.ext) ? (
-                <img className="fs-img" src={previewUrl} alt={previewMeta.name} />
+            
+            <div className="modal-body" style={{ padding: 0 }}>
+              {previewModal.type === "pdf" ? (
+                <iframe
+                  src={previewModal.url}
+                  title="File preview"
+                  style={{ width: "100%", height: "100%", border: "none" }}
+                />
+              ) : ["png", "jpg", "jpeg", "webp", "gif"].includes(previewModal.type) ? (
+                <img
+                  src={previewModal.url}
+                  alt={previewModal.name}
+                  style={{ width: "100%", height: "100%", objectFit: "contain" }}
+                />
               ) : (
-                <div className="fs-empty">No inline preview for .{previewMeta.ext}. Use Open/Download.</div>
+                <div className="empty-state">
+                  <FaEye className="empty-state-icon" />
+                  <h3 className="empty-state-title">Preview Not Available</h3>
+                  <p className="empty-state-description">
+                    No preview available for .{previewModal.type} files. Use the download or open button instead.
+                  </p>
+                </div>
               )}
             </div>
           </div>

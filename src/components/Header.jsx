@@ -10,12 +10,13 @@ import {
   FaCopy,
   FaCheckCircle,
   FaExclamationTriangle,
+  FaExternalLinkAlt,
+  FaCog,
 } from "react-icons/fa";
 import { NavLink, Link, useLocation, useNavigate } from "react-router-dom";
 import "../styles/Header.css";
 import axios from "axios";
 import API_URL from "../config";
-
 import { useMsal, useIsAuthenticated } from "@azure/msal-react";
 
 function initialsFromEmailOrName(email, name) {
@@ -37,17 +38,20 @@ export default function Header() {
   const navigate = useNavigate();
   const location = useLocation();
 
-  const userEmail =
-    accounts?.[0]?.username ||
-    accounts?.[0]?.idTokenClaims?.preferred_username ||
-    "";
-  const displayName =
-    accounts?.[0]?.idTokenClaims?.name ||
-    accounts?.[0]?.idTokenClaims?.given_name ||
-    "";
+  const userEmail = accounts?.[0]?.username || accounts?.[0]?.idTokenClaims?.preferred_username || "";
+  const displayName = accounts?.[0]?.idTokenClaims?.name || accounts?.[0]?.idTokenClaims?.given_name || "";
   const userInitials = initialsFromEmailOrName(userEmail, displayName);
 
-  // Set global header for API so backend can audit who did what
+  // API Health Check
+  const [apiHealthy, setApiHealthy] = useState("unknown");
+  const [searchQuery, setSearchQuery] = useState("");
+  const [openDropdown, setOpenDropdown] = useState(null);
+  const [copied, setCopied] = useState(false);
+
+  const headerRef = useRef(null);
+  const searchRef = useRef(null);
+
+  // Set API headers
   useEffect(() => {
     if (userEmail) {
       axios.defaults.headers.common["X-User"] = userEmail;
@@ -56,84 +60,63 @@ export default function Header() {
     }
   }, [userEmail]);
 
-  // ENV + API health
-  const ENV =
-    (import.meta && import.meta.env && import.meta.env.VITE_APP_ENV) ||
-    process.env.NODE_ENV ||
-    "development";
+  // Environment detection
+  const ENV = (import.meta && import.meta.env && import.meta.env.VITE_APP_ENV) || process.env.NODE_ENV || "development";
 
-  const [apiHealthy, setApiHealthy] = useState("unknown"); // 'ok' | 'down' | 'unknown'
+  // API Health Check
   const pingApi = async () => {
     try {
-      // Lightweight debug endpoint you already have
       await axios.get(`${API_URL}/api/core-boxes/_debug`, { timeout: 4000 });
       setApiHealthy("ok");
     } catch {
       setApiHealthy("down");
     }
   };
+
   useEffect(() => {
     pingApi();
-    const t = setInterval(pingApi, 60000);
-    return () => clearInterval(t);
+    const interval = setInterval(pingApi, 60000);
+    return () => clearInterval(interval);
   }, []);
 
-  // Search
-  const searchRef = useRef(null);
-  const [q, setQ] = useState("");
-  const doSearch = () => {
-    if (q.trim()) navigate(`/search?q=${encodeURIComponent(q.trim())}`);
-  };
-
-  // Menus
-  const [openMenu, setOpenMenu] = useState(null); // 'profile' | 'new' | 'notif' | null
-  const closeMenus = () => setOpenMenu(null);
-
-  // Close menus on route change
+  // Close dropdowns on route change
   useEffect(() => {
-    closeMenus();
+    setOpenDropdown(null);
   }, [location.pathname]);
 
-  // Close on outside click
-  const rootRef = useRef(null);
+  // Close dropdowns on outside click
   useEffect(() => {
-    function onDocClick(e) {
-      if (!rootRef.current) return;
-      if (!rootRef.current.contains(e.target)) closeMenus();
+    function handleClickOutside(event) {
+      if (headerRef.current && !headerRef.current.contains(event.target)) {
+        setOpenDropdown(null);
+      }
     }
-    function onEsc(e) {
-      if (e.key === "Escape") closeMenus();
-      // Keyboard shortcut: focus search on "/"
-      if (e.key === "/" && !e.metaKey && !e.ctrlKey && !e.altKey) {
-        e.preventDefault();
+
+    function handleKeyDown(event) {
+      if (event.key === "Escape") {
+        setOpenDropdown(null);
+      }
+      // Focus search with "/"
+      if (event.key === "/" && !event.metaKey && !event.ctrlKey && !event.altKey) {
+        const activeElement = document.activeElement;
+        if (activeElement && (activeElement.tagName === "INPUT" || activeElement.tagName === "TEXTAREA")) {
+          return;
+        }
+        event.preventDefault();
         searchRef.current?.focus();
       }
-      // Quick nav: g o (OCR), g c (Core Boxes)
-      if (e.key.toLowerCase() === "o" && (e.target.tagName || "").toLowerCase() !== "input" && e.ctrlKey) {
-        navigate("/ocr");
-      }
     }
-    document.addEventListener("click", onDocClick);
-    document.addEventListener("keydown", onEsc);
+
+    document.addEventListener("mousedown", handleClickOutside);
+    document.addEventListener("keydown", handleKeyDown);
     return () => {
-      document.removeEventListener("click", onDocClick);
-      document.removeEventListener("keydown", onEsc);
+      document.removeEventListener("mousedown", handleClickOutside);
+      document.removeEventListener("keydown", handleKeyDown);
     };
-  }, [navigate]);
+  }, []);
 
-  // Copy email toast
-  const [copied, setCopied] = useState(false);
-  const copyEmail = async () => {
-    try {
-      await navigator.clipboard.writeText(userEmail);
-      setCopied(true);
-      setTimeout(() => setCopied(false), 1200);
-    } catch {
-      /* noop */
-    }
-  };
-
-  const onSignIn = async () => {
+  // Authentication handlers
+  const handleSignIn = async () => {
     try {
       await instance.loginPopup({
         scopes: ["User.Read"],
@@ -143,8 +126,8 @@ export default function Header() {
       console.error("Login failed:", error);
     }
   };
-  
-  const onSignOut = async () => {
+
+  const handleSignOut = async () => {
     try {
       await instance.logoutPopup({
         account: accounts[0]
@@ -154,109 +137,211 @@ export default function Header() {
     }
   };
 
-  const apiBadge = useMemo(() => {
-    if (apiHealthy === "ok") return <span className="hdr-pill ok"><FaCheckCircle /> API</span>;
-    if (apiHealthy === "down") return <span className="hdr-pill danger"><FaExclamationTriangle /> API</span>;
-    return <span className="hdr-pill neutral">API</span>;
+  // Search handler
+  const handleSearch = (e) => {
+    e.preventDefault();
+    if (searchQuery.trim()) {
+      navigate(`/?search=${encodeURIComponent(searchQuery.trim())}`);
+    }
+  };
+
+  // Copy email
+  const copyEmail = async () => {
+    try {
+      await navigator.clipboard.writeText(userEmail);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    } catch {
+      // Fallback for older browsers
+    }
+  };
+
+  const apiStatusPill = useMemo(() => {
+    if (apiHealthy === "ok") {
+      return (
+        <div className="status-pill api-ok">
+          <FaCheckCircle />
+          <span>API Online</span>
+        </div>
+      );
+    }
+    if (apiHealthy === "down") {
+      return (
+        <div className="status-pill api-error">
+          <FaExclamationTriangle />
+          <span>API Offline</span>
+        </div>
+      );
+    }
+    return (
+      <div className="status-pill">
+        <span>API Checking...</span>
+      </div>
+    );
   }, [apiHealthy]);
 
   return (
-    <header className="hdr" ref={rootRef}>
-      {/* Left: Logo + Title */}
-      <Link to="/" className="hdr-left" aria-label="Go to dashboard">
-        <img src="/geolabs.png" alt="Geolabs logo" className="hdr-logo" />
-        <span className="hdr-title">Geolabs, Inc.</span>
+    <header className="header" ref={headerRef}>
+      {/* Brand */}
+      <Link to="/" className="header-brand">
+        <img src="/geolabs.png" alt="Geolabs" className="header-logo" />
+        <span className="header-title">Geolabs</span>
       </Link>
 
-      {/* Right: Status + Actions + Profile */}
-      <div className="hdr-right">
-        <div className="hdr-right-pills">
-          <span className="hdr-pill env" title={`Environment: ${ENV}`}>{String(ENV).toUpperCase()}</span>
-          {apiBadge}
-        </div>
+      {/* Navigation */}
+      <nav className="header-nav">
+        <NavLink to="/" className="nav-link" end>
+          Dashboard
+        </NavLink>
+        <NavLink to="/ask-ai" className="nav-link">
+          AI Assistant
+        </NavLink>
+        <NavLink to="/db-viewer" className="nav-link">
+          Database
+        </NavLink>
+        <NavLink to="/reports" className="nav-link">
+          Reports
+        </NavLink>
+      </nav>
 
-        {/* New menu */}
-        <div className="hdr-menu">
+      {/* Search */}
+      <form className="header-search" onSubmit={handleSearch}>
+        <FaSearch className="search-icon" />
+        <input
+          ref={searchRef}
+          type="text"
+          className="search-input"
+          placeholder="Search across all tools... (Press / to focus)"
+          value={searchQuery}
+          onChange={(e) => setSearchQuery(e.target.value)}
+        />
+      </form>
+
+      {/* Status & Actions */}
+      <div className="header-status">
+        <div className="status-pill env">
+          <span>{ENV}</span>
+        </div>
+        {apiStatusPill}
+      </div>
+
+      <div className="header-actions">
+        {/* New Menu */}
+        <div className="profile-menu">
           <button
-            className="hdr-iconbtn"
-            title="New"
-            onClick={() => setOpenMenu((m) => (m === "new" ? null : "new"))}
-            type="button"
+            className="action-btn"
+            onClick={() => setOpenDropdown(openDropdown === "new" ? null : "new")}
+            aria-expanded={openDropdown === "new"}
+            aria-haspopup="menu"
           >
             <FaPlus />
           </button>
           
-        </div>
-
-        {/* Notifications */}
-        <div className="hdr-menu">
-          <button
-            className="hdr-iconbtn"
-            title="Notifications"
-            onClick={() => setOpenMenu((m) => (m === "notif" ? null : "notif"))}
-            type="button"
-          >
-            <FaBell />
-            {/* example badge; wire to real count later */}
-            <span className="hdr-dot" aria-hidden="true" />
-          </button>
-          {openMenu === "notif" && (
-            <div className="hdr-dropdown hdr-dropdown-wide">
-              <div className="hdr-dd-empty">No new notifications.</div>
+          {openDropdown === "new" && (
+            <div className="dropdown-menu">
+              <Link to="/db-admin" className="dropdown-item">
+                <FaPlus />
+                <span>Upload Documents</span>
+              </Link>
+              <Link to="/s3-admin" className="dropdown-item">
+                <FaPlus />
+                <span>Upload to S3</span>
+              </Link>
+              <Link to="/core-box-inventory" className="dropdown-item">
+                <FaPlus />
+                <span>Add Core Box</span>
+              </Link>
             </div>
           )}
         </div>
 
-        {/* Profile */}
-        <div className="hdr-menu profile">
+        {/* Notifications */}
+        <div className="profile-menu">
           <button
-            className="hdr-profilebtn"
-            onClick={() => setOpenMenu((m) => (m === "profile" ? null : "profile"))}
+            className="action-btn"
+            onClick={() => setOpenDropdown(openDropdown === "notifications" ? null : "notifications")}
+            aria-expanded={openDropdown === "notifications"}
             aria-haspopup="menu"
-            aria-expanded={openMenu === "profile"}
-            type="button"
           >
-            <div className="hdr-avatar" aria-hidden="true">
-              <FaUserCircle className="hdr-avatar-fallback" />
-              <span className="hdr-avatar-initials">{userInitials}</span>
+            <FaBell />
+            <span className="notification-badge" />
+          </button>
+          
+          {openDropdown === "notifications" && (
+            <div className="dropdown-menu">
+              <div className="dropdown-header">
+                <div className="dropdown-user-name">Notifications</div>
+                <div className="dropdown-user-email">Stay updated with system alerts</div>
+              </div>
+              <div className="dropdown-item">
+                <FaCheckCircle />
+                <span>No new notifications</span>
+              </div>
             </div>
-            <span className="hdr-email" title={userEmail || "Not signed in"}>
-              {userEmail || "guest"}
-            </span>
-            <FaChevronDown className="hdr-caret" />
+          )}
+        </div>
+
+        {/* Profile Menu */}
+        <div className="profile-menu">
+          <button
+            className="profile-trigger"
+            onClick={() => setOpenDropdown(openDropdown === "profile" ? null : "profile")}
+            aria-expanded={openDropdown === "profile"}
+            aria-haspopup="menu"
+          >
+            <div className="profile-avatar">
+              {userInitials}
+            </div>
+            {isAuthed && (
+              <div className="profile-info">
+                <div className="profile-name">{displayName || "User"}</div>
+                <div className="profile-email">{userEmail}</div>
+              </div>
+            )}
+            <FaChevronDown className="profile-chevron" />
           </button>
 
-          {openMenu === "profile" && (
-            <div className="hdr-dropdown">
+          {openDropdown === "profile" && (
+            <div className="dropdown-menu">
               {isAuthed ? (
                 <>
-                  <div className="hdr-dd-id">
-                    <div className="hdr-dd-name" title={displayName || userEmail}>
-                      {displayName || userEmail || "Signed in"}
-                    </div>
-                    <div className="hdr-dd-mail">{userEmail}</div>
+                  <div className="dropdown-header">
+                    <div className="dropdown-user-name">{displayName || userEmail}</div>
+                    <div className="dropdown-user-email">{userEmail}</div>
                   </div>
-                  <button className="hdr-dd-item" onClick={copyEmail}>
+                  
+                  <button className="dropdown-item" onClick={copyEmail}>
                     <FaCopy />
-                    Copy email {copied && <span className="hdr-copied">Copied</span>}
+                    <span>Copy Email</span>
+                    {copied && <span className="copy-feedback">Copied!</span>}
                   </button>
+                  
+                  <Link to="/admin" className="dropdown-item">
+                    <FaCog />
+                    <span>Admin Settings</span>
+                  </Link>
+                  
                   <a
-                    className="hdr-dd-item"
                     href="https://myaccount.microsoft.com/"
                     target="_blank"
-                    rel="noreferrer"
+                    rel="noopener noreferrer"
+                    className="dropdown-item"
                   >
-                    Manage Microsoft Account
+                    <FaExternalLinkAlt />
+                    <span>Microsoft Account</span>
                   </a>
-                  <button className="hdr-dd-item danger" onClick={onSignOut}>
+                  
+                  <div className="dropdown-divider" />
+                  
+                  <button className="dropdown-item danger" onClick={handleSignOut}>
                     <FaSignOutAlt />
-                    Sign out
+                    <span>Sign Out</span>
                   </button>
                 </>
               ) : (
-                <button className="hdr-dd-item" onClick={onSignIn}>
+                <button className="dropdown-item" onClick={handleSignIn}>
                   <FaSignInAlt />
-                  Sign in with Microsoft
+                  <span>Sign In with Microsoft</span>
                 </button>
               )}
             </div>

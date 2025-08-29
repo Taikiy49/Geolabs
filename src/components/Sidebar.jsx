@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useMemo } from "react";
-import { NavLink, useLocation, useNavigate } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import {
   FaBars,
   FaTimes,
@@ -16,144 +16,267 @@ import {
   FaUserShield,
   FaAddressBook,
   FaBoxOpen,
+  FaFileAlt,
+  FaChartBar,
 } from "react-icons/fa";
 import "../styles/Sidebar.css";
 
-function useIsMobile(breakpoint = 768) {
+function useIsMobile(breakpoint = 1024) {
   const [isMobile, setIsMobile] = useState(window.innerWidth < breakpoint);
+  
   useEffect(() => {
-    const onResize = () => setIsMobile(window.innerWidth < breakpoint);
-    window.addEventListener("resize", onResize);
-    return () => window.removeEventListener("resize", onResize);
+    const handleResize = () => setIsMobile(window.innerWidth < breakpoint);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, [breakpoint]);
+  
   return isMobile;
 }
 
-export default function Sidebar({ collapsed, setCollapsed, variant = "sb--slate" }) {
+export default function Sidebar({ collapsed, setCollapsed }) {
   const isMobile = useIsMobile();
   const location = useLocation();
-  const navigate = useNavigate();
-
+  const [sidebarOpen, setSidebarOpen] = useState(false);
+  
   const path = location.pathname || "/";
 
-  const docChildren = ["/ask-ai", "/db-viewer", "/db-admin"];
-  const projChildren = ["/s3-viewer", "/s3-admin", "/ocr-lookup", "/core-box-inventory"];
+  // Navigation groups
+  const navigationGroups = [
+    {
+      id: "main",
+      label: "Main",
+      items: [
+        { to: "/", icon: FaHome, label: "Dashboard" }
+      ]
+    },
+    {
+      id: "documents",
+      label: "Document Intelligence",
+      items: [
+        { to: "/ask-ai", icon: FaRobot, label: "AI Assistant" },
+        { to: "/db-viewer", icon: FaTable, label: "Database Viewer" },
+        { to: "/db-admin", icon: FaCogs, label: "Database Admin" }
+      ]
+    },
+    {
+      id: "projects",
+      label: "Project Management",
+      items: [
+        { to: "/s3-viewer", icon: FaCloud, label: "S3 Browser" },
+        { to: "/s3-admin", icon: FaCloudUploadAlt, label: "S3 Management" },
+        { to: "/ocr-lookup", icon: FaSearch, label: "OCR Lookup" },
+        { to: "/core-box-inventory", icon: FaBoxOpen, label: "Core Inventory" }
+      ]
+    },
+    {
+      id: "reports",
+      label: "Reports & Analytics",
+      items: [
+        { to: "/reports", icon: FaFileAlt, label: "Reports" },
+        { to: "/reports-binder", icon: FaChartBar, label: "Reports Binder" }
+      ]
+    },
+    {
+      id: "admin",
+      label: "Administration",
+      items: [
+        { to: "/admin", icon: FaUserShield, label: "User Management" },
+        { to: "/contacts", icon: FaAddressBook, label: "Contacts" }
+      ]
+    }
+  ];
 
-  const parentActive = useMemo(
-    () => ({
-      doc: docChildren.some((p) => path.startsWith(p)),
-      proj: projChildren.some((p) => path.startsWith(p)),
-    }),
-    [path]
-  );
+  // Track which groups have active items
+  const activeGroups = useMemo(() => {
+    const active = {};
+    navigationGroups.forEach(group => {
+      active[group.id] = group.items.some(item => 
+        item.to === path || (item.to !== "/" && path.startsWith(item.to))
+      );
+    });
+    return active;
+  }, [path, navigationGroups]);
 
-  const [dropdowns, setDropdowns] = useState({ doc: true, proj: true });
+  // Manage dropdown states
+  const [expandedGroups, setExpandedGroups] = useState(() => {
+    const initial = {};
+    navigationGroups.forEach(group => {
+      initial[group.id] = activeGroups[group.id] || group.id === "main";
+    });
+    return initial;
+  });
+
+  // Auto-expand groups with active items
+  useEffect(() => {
+    setExpandedGroups(prev => {
+      const updated = { ...prev };
+      Object.keys(activeGroups).forEach(groupId => {
+        if (activeGroups[groupId]) {
+          updated[groupId] = true;
+        }
+      });
+      return updated;
+    });
+  }, [activeGroups]);
+
+  // Update CSS custom property for layout
   useEffect(() => {
     document.documentElement.setAttribute(
       "data-sidebar",
       collapsed ? "collapsed" : "expanded"
     );
   }, [collapsed]);
-  // Keep groups open if a child route is active
+
+  // Close mobile sidebar on route change
   useEffect(() => {
-    setDropdowns((d) => ({
-      doc: parentActive.doc || d.doc,
-      proj: parentActive.proj || d.proj,
+    if (isMobile) {
+      setSidebarOpen(false);
+    }
+  }, [location.pathname, isMobile]);
+
+  const toggleGroup = (groupId) => {
+    if (collapsed) return;
+    setExpandedGroups(prev => ({
+      ...prev,
+      [groupId]: !prev[groupId]
     }));
-  }, [parentActive.doc, parentActive.proj]);
+  };
 
-  const toggleDropdown = (key) =>
-    setDropdowns((d) => ({ ...d, [key]: !d[key] }));
+  const handleLinkClick = () => {
+    if (isMobile) {
+      setSidebarOpen(false);
+    }
+  };
 
-  const Item = ({ to, icon: Icon, label }) => (
+  // Mobile backdrop
+  const renderBackdrop = () => {
+    if (!isMobile || !sidebarOpen) return null;
+    return (
+      <div 
+        className="sidebar-backdrop"
+        onClick={() => setSidebarOpen(false)}
+        aria-hidden="true"
+      />
+    );
+  };
+
+  // Navigation item component
+  const NavItem = ({ to, icon: Icon, label, onClick }) => (
     <NavLink
       to={to}
-      className={({ isActive }) =>
-        `sidebar-link ${isActive ? "active" : ""}`
-      }
-      onClick={(e) => {
-        e.preventDefault();
-        navigate(to);
-      }}
-      title={label}
+      className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`}
+      onClick={onClick || handleLinkClick}
+      title={collapsed ? label : undefined}
     >
-      <Icon className="sidebar-link-icon" />
-      {!collapsed && <span className="sidebar-text">{label}</span>}
+      <Icon className="nav-icon" />
+      <span className="nav-text">{label}</span>
     </NavLink>
   );
 
-  if (isMobile) return null;
+  if (isMobile) {
+    return (
+      <>
+        {renderBackdrop()}
+        <aside className={`sidebar ${sidebarOpen ? "open" : ""}`}>
+          <button
+            className="sidebar-toggle"
+            onClick={() => setSidebarOpen(false)}
+            aria-label="Close sidebar"
+          >
+            <FaTimes />
+          </button>
+          
+          <nav className="sidebar-nav" role="navigation" aria-label="Main navigation">
+            {navigationGroups.map(group => (
+              <div key={group.id} className="nav-group">
+                {group.items.length > 1 ? (
+                  <>
+                    <button
+                      className={`nav-group-trigger ${activeGroups[group.id] ? "active" : ""}`}
+                      onClick={() => toggleGroup(group.id)}
+                      aria-expanded={expandedGroups[group.id]}
+                    >
+                      <FaDatabase className="nav-icon" />
+                      <span className="nav-text">{group.label}</span>
+                      <FaChevronDown className={`nav-chevron ${expandedGroups[group.id] ? "expanded" : ""}`} />
+                    </button>
+                    <div className={`nav-dropdown ${expandedGroups[group.id] ? "expanded" : "collapsed"}`}>
+                      {group.items.map(item => (
+                        <NavItem key={item.to} {...item} />
+                      ))}
+                    </div>
+                  </>
+                ) : (
+                  group.items.map(item => (
+                    <NavItem key={item.to} {...item} />
+                  ))
+                )}
+              </div>
+            ))}
+          </nav>
+          
+          <div className="sidebar-footer">
+            <div className="sidebar-footer-content">
+              <FaCogs />
+              <span>Geolabs v2.0</span>
+            </div>
+          </div>
+        </aside>
+      </>
+    );
+  }
 
   return (
-    <aside className={`sidebar ${collapsed ? "collapsed" : ""} ${variant}`}>
+    <aside className={`sidebar ${collapsed ? "collapsed" : ""}`}>
       <button
         className="sidebar-toggle"
         onClick={() => setCollapsed(!collapsed)}
-        aria-label={collapsed ? "Open sidebar" : "Collapse sidebar"}
-        title={collapsed ? "Open sidebar" : "Collapse sidebar"}
+        aria-label={collapsed ? "Expand sidebar" : "Collapse sidebar"}
+        title={collapsed ? "Expand sidebar" : "Collapse sidebar"}
       >
         {collapsed ? <FaBars /> : <FaTimes />}
       </button>
 
-      {/* Home */}
-      {!collapsed && <Item to="/" icon={FaHome} label="Home" key="home" />}
+      <nav className="sidebar-nav" role="navigation" aria-label="Main navigation">
+        {navigationGroups.map(group => (
+          <div key={group.id} className="nav-group">
+            {group.items.length > 1 ? (
+              <>
+                <button
+                  className={`nav-group-trigger ${activeGroups[group.id] ? "active" : ""}`}
+                  onClick={() => toggleGroup(group.id)}
+                  aria-expanded={expandedGroups[group.id]}
+                  title={collapsed ? group.label : undefined}
+                >
+                  <FaDatabase className="nav-icon" />
+                  <span className="nav-text">{group.label}</span>
+                  {!collapsed && (
+                    <FaChevronDown className={`nav-chevron ${expandedGroups[group.id] ? "expanded" : ""}`} />
+                  )}
+                </button>
+                {!collapsed && (
+                  <div className={`nav-dropdown ${expandedGroups[group.id] ? "expanded" : "collapsed"}`}>
+                    {group.items.map(item => (
+                      <NavItem key={item.to} {...item} />
+                    ))}
+                  </div>
+                )}
+              </>
+            ) : (
+              group.items.map(item => (
+                <NavItem key={item.to} {...item} />
+              ))
+            )}
+          </div>
+        ))}
+      </nav>
 
-      {/* Document Databases */}
-      <button
-        className={`sidebar-link ${parentActive.doc ? "active-parent" : ""}`}
-        onClick={() => toggleDropdown("doc")}
-        aria-expanded={dropdowns.doc}
-        aria-controls="doc-group"
-        title="Document Databases"
-      >
-        <FaDatabase className="sidebar-link-icon" />
-        {!collapsed && <span className="sidebar-text">Document Databases</span>}
-        {!collapsed && (
-          <FaChevronDown
-            className={`sidebar-link-chevron ${dropdowns.doc ? "rotate" : ""}`}
-          />
-        )}
-      </button>
-      {dropdowns.doc && !collapsed && (
-        <div className="sidebar-dropdown" id="doc-group">
-          <Item to="/ask-ai" icon={FaRobot} label="Ask AI" />
-          <Item to="/db-viewer" icon={FaTable} label="DB Viewer" />
-          <Item to="/db-admin" icon={FaCogs} label="DB Editor" />
+      <div className="sidebar-footer">
+        <div className="sidebar-footer-content">
+          <FaCogs />
+          <span>Geolabs v2.0</span>
         </div>
-      )}
-
-      {/* Project Finder */}
-      <button
-        className={`sidebar-link ${parentActive.proj ? "active-parent" : ""}`}
-        onClick={() => toggleDropdown("proj")}
-        aria-expanded={dropdowns.proj}
-        aria-controls="proj-group"
-        title="Project Finder"
-      >
-        <FaFolderOpen className="sidebar-link-icon" />
-        {!collapsed && <span className="sidebar-text">Project Finder</span>}
-        {!collapsed && (
-          <FaChevronDown
-            className={`sidebar-link-chevron ${dropdowns.proj ? "rotate" : ""}`}
-          />
-        )}
-      </button>
-      {dropdowns.proj && !collapsed && (
-        <div className="sidebar-dropdown" id="proj-group">
-          <Item to="/s3-viewer" icon={FaCloud} label="S3 Viewer" />
-          <Item to="/s3-admin" icon={FaCloudUploadAlt} label="S3 Editor" />
-          <Item to="/ocr-lookup" icon={FaSearch} label="OCR Lookup" />
-          <Item to="/core-box-inventory" icon={FaBoxOpen} label="Core Box Inventory" />
-        </div>
-      )}
-      <Item to="/reports" icon={FaUserShield} label="Reports" key="reports" />
-      
-      {/* Admin */}
-      
-      <Item to="/admin" icon={FaUserShield} label="Admin" key="admin" />
-
-      {/* Contacts */}
-      <Item to="/contacts" icon={FaAddressBook} label="Contacts" key="contacts" />
+      </div>
     </aside>
   );
 }
