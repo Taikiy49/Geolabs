@@ -188,23 +188,40 @@ export default function Header() {
 
       {/* Nav — compact & horizontally scrollable if needed */}
       <nav className="header-nav compact">
-        <NavLink to="/" className="nav-link compact" end>
-          <FaHome />
-          <span>Dashboard</span>
-        </NavLink>
-        <NavLink to="/ask-ai" className="nav-link compact">
-          <FaRobot />
-          <span>AI Assistant</span>
-        </NavLink>
-        <NavLink to="/db-viewer" className="nav-link compact">
-          <FaDatabase />
-          <span>Database</span>
-        </NavLink>
-        <NavLink to="/reports" className="nav-link compact">
-          <FaFileAlt />
-          <span>Reports</span>
-        </NavLink>
-      </nav>
+  <NavLink
+    to="/"
+    end
+    className={({ isActive }) => `nav-link compact ${isActive ? "active" : ""}`}
+  >
+    <FaHome />
+    <span>Dashboard</span>
+  </NavLink>
+
+  <NavLink
+    to="/ask-ai"
+    className={({ isActive }) => `nav-link compact ${isActive ? "active" : ""}`}
+  >
+    <FaRobot />
+    <span>AI Assistant</span>
+  </NavLink>
+
+  <NavLink
+    to="/db-viewer"
+    className={({ isActive }) => `nav-link compact ${isActive ? "active" : ""}`}
+  >
+    <FaDatabase />
+    <span>Database</span>
+  </NavLink>
+
+  <NavLink
+    to="/reports"
+    className={({ isActive }) => `nav-link compact ${isActive ? "active" : ""}`}
+  >
+    <FaFileAlt />
+    <span>Reports</span>
+  </NavLink>
+</nav>
+
 
       {/* Search — shrinks intelligently, hides on very small widths */}
       <form className="header-search compact" onSubmit={handleSearch}>

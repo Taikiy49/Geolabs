@@ -335,3 +335,8 @@
   outline: 2px solid var(--color-primary);
   outline-offset: 2px;
 }
+
+@media (max-width: 1024px) {
+  /* delete this if you want to always show the search */
+  .header-search { display: none; }
+}
