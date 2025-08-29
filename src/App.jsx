@@ -1,6 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
+import { MsalAuthenticationTemplate, useMsal } from '@azure/msal-react';
+import { InteractionType } from '@azure/msal-browser';
+import axios from 'axios';
 
+import API_URL from './config';
 import Header from './components/Header';
 import Sidebar from './components/Sidebar';
 import FileViewer from './components/DBViewer';
@@ -28,9 +32,34 @@ function ScrollToTop() {
   return null;
 }
 
+const CustomLoading = () => (
+  <div className="main-content" style={{ justifyContent: 'center', alignItems: 'center', display: 'flex' }}>
+    <h2>Loading...</h2>
+  </div>
+);
+
+const CustomError = ({ error }) => (
+  <div className="main-content" style={{ padding: '40px', color: 'red' }}>
+    <h2>Authentication Error</h2>
+    <pre>{error.message}</pre>
+  </div>
+);
+
 const AuthenticatedApp = () => {
   const [selectedDB, setSelectedDB] = useState('');
   const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
+
+  const { accounts } = useMsal();
+  const userEmail = accounts[0]?.username || 'guest';
+  const location = useLocation();
+  const showingAskAI = location.pathname === '/ask-ai';
+
+  // 🔁 Register user once on login
+  useEffect(() => {
+  if (!userEmail || userEmail === 'guest') return;
+  axios.post('/api/register-user', { email: userEmail })  // <— relative path
+    .catch(err => console.error('Failed to register user:', err));
+}, [userEmail]);
 
   return (
     <div className="app-container">
@@ -44,17 +73,21 @@ const AuthenticatedApp = () => {
         />
         <main className="main-content">
           <ScrollToTop />
+  
+
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route
-              path="/ask-ai"
-              element={
-                <AskAI
-                  selectedDB={selectedDB}
-                  setSelectedDB={setSelectedDB}
-                />
-              }
-            />
+  path="/ask-ai"
+  element={
+    <AskAI
+      selectedDB={selectedDB}
+      setSelectedDB={setSelectedDB}
+    />
+  }
+/>
+
+
             <Route path="/db-viewer" element={<DBViewer />} />
             <Route path="/db-admin" element={<DBAdmin />} />
             <Route path="/file-viewer" element={<FileViewer />} />
@@ -63,8 +96,10 @@ const AuthenticatedApp = () => {
             <Route path="/s3-viewer" element={<S3Viewer />} />
             <Route path="/contacts" element={<Contacts />} />
             <Route path="/reports" element={<Reports />} />
+
             <Route path="/core-box-inventory" element={<CoreBoxInventory />} />
-            <Route path="/reports-binder" element={<ReportsBinder />} />
+             <Route path="/reports-binder" element={<ReportsBinder />} />
+
             <Route path="/admin" element={<Admin />} />
           </Routes>
         </main>
@@ -74,5 +109,13 @@ const AuthenticatedApp = () => {
 };
 
 export default function App() {
-  return <AuthenticatedApp />;
+  return (
+    <MsalAuthenticationTemplate
+      interactionType={InteractionType.Redirect}
+      loadingComponent={CustomLoading}
+      errorComponent={CustomError}
+    >
+      <AuthenticatedApp />
+    </MsalAuthenticationTemplate>
+  );
 }

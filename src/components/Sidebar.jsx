@@ -21,6 +21,7 @@ import {
 } from "react-icons/fa";
 import "../styles/Sidebar.css";
 
+
 function useIsMobile(breakpoint = 1024) {
   const [isMobile, setIsMobile] = useState(typeof window !== "undefined" ? window.innerWidth < breakpoint : false);
   useEffect(() => {
@@ -36,72 +37,93 @@ export default function Sidebar({ collapsed, setCollapsed }) {
   const location = useLocation();
   const path = location.pathname || "/";
 
+
+  
   // Navigation groups
-  const navigationGroups = [
-    {
-      id: "main",
-      label: "Main",
-      icon: FaHome,
-      items: [{ to: "/", icon: FaHome, label: "Dashboard" }],
-    },
-    {
-      id: "documents",
-      label: "Document Intelligence",
-      icon: FaDatabase,
-      items: [
-        { to: "/ask-ai", icon: FaRobot, label: "AI Assistant" },
-        { to: "/db-viewer", icon: FaTable, label: "Database Viewer" },
-        { to: "/db-admin", icon: FaCogs, label: "Database Admin" },
-      ],
-    },
-    {
-      id: "projects",
-      label: "Project Management",
-      icon: FaCloud,
-      items: [
-        { to: "/s3-viewer", icon: FaCloud, label: "S3 Browser" },
-        { to: "/s3-admin", icon: FaCloudUploadAlt, label: "S3 Management" },
-        { to: "/ocr-lookup", icon: FaSearch, label: "OCR Lookup" },
-        { to: "/core-box-inventory", icon: FaBoxOpen, label: "Core Inventory" },
-      ],
-    },
-    {
-      id: "reports",
-      label: "Reports & Analytics",
-      icon: FaChartBar,
-      items: [
-        { to: "/reports", icon: FaFileAlt, label: "Reports" },
-        { to: "/reports-binder", icon: FaChartBar, label: "Reports Binder" },
-      ],
-    },
-    {
-      id: "admin",
-      label: "Administration",
-      icon: FaUserShield,
-      items: [
-        { to: "/admin", icon: FaUserShield, label: "User Management" },
-        { to: "/contacts", icon: FaAddressBook, label: "Contacts" },
-      ],
-    },
-  ];
+  // 1) Make navigationGroups stable
+const navigationGroups = useMemo(() => ([
+  {
+    id: "main",
+    label: "Main",
+    items: [{ to: "/", icon: FaHome, label: "Dashboard" }]
+  },
+  {
+    id: "documents",
+    label: "Document Intelligence",
+    items: [
+      { to: "/ask-ai", icon: FaRobot, label: "AI Assistant" },
+      { to: "/db-viewer", icon: FaTable, label: "Database Viewer" },
+      { to: "/db-admin", icon: FaCogs, label: "Database Admin" }
+    ]
+  },
+  {
+    id: "projects",
+    label: "Project Management",
+    items: [
+      { to: "/s3-viewer", icon: FaCloud, label: "S3 Browser" },
+      { to: "/s3-admin", icon: FaCloudUploadAlt, label: "S3 Management" },
+      { to: "/ocr-lookup", icon: FaSearch, label: "OCR Lookup" },
+      { to: "/core-box-inventory", icon: FaBoxOpen, label: "Core Inventory" }
+    ]
+  },
+  {
+    id: "reports",
+    label: "Reports & Analytics",
+    items: [
+      { to: "/reports", icon: FaFileAlt, label: "Reports" },
+      { to: "/reports-binder", icon: FaChartBar, label: "Reports Binder" }
+    ]
+  },
+  {
+    id: "admin",
+    label: "Administration",
+    items: [
+      { to: "/admin", icon: FaUserShield, label: "User Management" },
+      { to: "/contacts", icon: FaAddressBook, label: "Contacts" }
+    ]
+  }
+]), []);
 
-  // Active group detection
-  const activeGroups = useMemo(() => {
-    const active = {};
-    navigationGroups.forEach((g) => {
-      active[g.id] = g.items.some((item) => item.to === path || (item.to !== "/" && path.startsWith(item.to)));
-    });
-    return active;
-  }, [path, navigationGroups]);
-
-  // Expanded groups state
-  const [expandedGroups, setExpandedGroups] = useState(() => {
-    const initial = {};
-    navigationGroups.forEach((g) => {
-      initial[g.id] = g.id === "main" || activeGroups[g.id];
-    });
-    return initial;
+// unchanged: compute which groups are active for current path
+const activeGroups = useMemo(() => {
+  const active = {};
+  navigationGroups.forEach(group => {
+    active[group.id] = group.items.some(item =>
+      item.to === path || (item.to !== "/" && path.startsWith(item.to))
+    );
   });
+  return active;
+}, [path, navigationGroups]);
+
+// initial state: open "main" and any active groups
+const [expandedGroups, setExpandedGroups] = useState(() => {
+  const init = {};
+  navigationGroups.forEach(group => {
+    init[group.id] = group.id === "main" || !!activeGroups[group.id];
+  });
+  return init;
+});
+
+// shallow compare helper
+const shallowEqual = (a, b) => {
+  const ka = Object.keys(a);
+  const kb = Object.keys(b);
+  if (ka.length !== kb.length) return false;
+  for (const k of ka) if (a[k] !== b[k]) return false;
+  return true;
+};
+
+// 2) Only update state if it actually changes
+useEffect(() => {
+  setExpandedGroups(prev => {
+    const next = { ...prev };
+    for (const id of Object.keys(activeGroups)) {
+      if (activeGroups[id]) next[id] = true;
+    }
+    return shallowEqual(prev, next) ? prev : next;
+  });
+}, [activeGroups]);
+
 
   // Auto-open active group
   useEffect(() => {
