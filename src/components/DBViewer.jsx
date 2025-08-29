@@ -13,8 +13,6 @@ import {
   FaChevronDown,
   FaTable,
   FaEye,
-  FaCheckSquare,
-  FaSquare,
 } from "react-icons/fa";
 import "../styles/DBViewer.css";
 
@@ -65,21 +63,18 @@ export default function DBViewer() {
         setLoadingDatabases(true);
         const [dbResponse, s3Response] = await Promise.all([
           axios.get(`${API_URL}/api/list-dbs`),
-          axios.get(`${API_URL}/api/s3-db-pdfs`).catch(() => ({ data: { files: [] } }))
+          axios.get(`${API_URL}/api/s3-db-pdfs`).catch(() => ({ data: { files: [] } })),
         ]);
 
-        const filteredDbs = (dbResponse.data.dbs || []).filter(
-          db => db !== "chat_history.db"
-        );
+        const filteredDbs = (dbResponse.data.dbs || []).filter((db) => db !== "chat_history.db");
         setDatabases(filteredDbs);
 
         // Build S3 URL mapping
         const urlMap = {};
-        (s3Response.data.files || []).forEach(file => {
+        (s3Response.data.files || []).forEach((file) => {
           urlMap[file.Key] = file.url;
         });
         setS3Urls(urlMap);
-
       } catch (err) {
         console.error("Failed to load data:", err);
         setError("Failed to load databases. Please try again.");
@@ -98,13 +93,11 @@ export default function DBViewer() {
     // Apply search filter
     if (searchQuery.trim()) {
       const query = searchQuery.toLowerCase();
-      filtered = filtered.filter(db => 
-        db.toLowerCase().includes(query)
-      );
+      filtered = filtered.filter((db) => db.toLowerCase().includes(query));
     }
 
     // Add metadata
-    const withMetadata = filtered.map(db => ({
+    const withMetadata = filtered.map((db) => ({
       name: db,
       fileCount: (filesByDatabase[db] || []).length,
       displayName: db.replace(/\.db$/i, "").replace(/_/g, " "),
@@ -113,7 +106,7 @@ export default function DBViewer() {
     // Apply sorting
     withMetadata.sort((a, b) => {
       let valueA, valueB;
-      
+
       if (sortBy === "files") {
         valueA = a.fileCount;
         valueB = b.fileCount;
@@ -132,7 +125,7 @@ export default function DBViewer() {
 
   const toggleDatabaseSort = (field) => {
     if (sortBy === field) {
-      setSortDirection(dir => dir === "asc" ? "desc" : "asc");
+      setSortDirection((dir) => (dir === "asc" ? "desc" : "asc"));
     } else {
       setSortBy(field);
       setSortDirection("asc");
@@ -143,7 +136,7 @@ export default function DBViewer() {
     try {
       setLoadingDatabases(true);
       const response = await axios.get(`${API_URL}/api/list-dbs`);
-      const filtered = (response.data.dbs || []).filter(db => db !== "chat_history.db");
+      const filtered = (response.data.dbs || []).filter((db) => db !== "chat_history.db");
       setDatabases(filtered);
       setError("");
     } catch (err) {
@@ -174,15 +167,15 @@ export default function DBViewer() {
       try {
         setLoadingFiles(true);
         const response = await axios.post(`${API_URL}/api/list-files`, { db_name: dbName });
-        setFilesByDatabase(prev => ({
+        setFilesByDatabase((prev) => ({
           ...prev,
-          [dbName]: response.data.files || []
+          [dbName]: response.data.files || [],
         }));
       } catch (err) {
         console.error("Failed to load files:", err);
-        setFilesByDatabase(prev => ({
+        setFilesByDatabase((prev) => ({
           ...prev,
-          [dbName]: []
+          [dbName]: [],
         }));
       } finally {
         setLoadingFiles(false);
@@ -195,13 +188,13 @@ export default function DBViewer() {
       const response = await axios.post(`${API_URL}/api/inspect-db`, { db_name: dbName });
       setSchemaModal({
         open: true,
-        data: { database: dbName, ...response.data }
+        data: { database: dbName, ...response.data },
       });
     } catch (err) {
       console.error("Failed to inspect database:", err);
       setSchemaModal({
         open: true,
-        data: { database: dbName, error: "Failed to load schema information." }
+        data: { database: dbName, error: "Failed to load schema information." },
       });
     }
   };
@@ -217,15 +210,15 @@ export default function DBViewer() {
         db_name: dbName,
         confirmation_text: confirmText,
       });
-      
-      setDatabases(prev => prev.filter(db => db !== dbName));
+
+      setDatabases((prev) => prev.filter((db) => db !== dbName));
       setExpandedDb("");
-      setFilesByDatabase(prev => {
+      setFilesByDatabase((prev) => {
         const updated = { ...prev };
         delete updated[dbName];
         return updated;
       });
-      
+
       alert("Database deleted successfully.");
     } catch (err) {
       console.error("Failed to delete database:", err);
@@ -241,29 +234,27 @@ export default function DBViewer() {
   }, [currentFiles]);
 
   const processedFiles = useMemo(() => {
-    let filtered = currentFiles.map(fileName => ({
+    let filtered = currentFiles.map((fileName) => ({
       name: fileName,
       extension: getFileExtension(fileName),
       s3Key: `${expandedDb}/${fileName}`,
-      url: s3Urls[`${expandedDb}/${fileName}`]
+      url: s3Urls[`${expandedDb}/${fileName}`],
     }));
 
     // Apply filters
     if (fileSearch.trim()) {
       const query = fileSearch.toLowerCase();
-      filtered = filtered.filter(file => 
-        file.name.toLowerCase().includes(query)
-      );
+      filtered = filtered.filter((file) => file.name.toLowerCase().includes(query));
     }
 
     if (fileTypeFilter) {
-      filtered = filtered.filter(file => file.extension === fileTypeFilter);
+      filtered = filtered.filter((file) => file.extension === fileTypeFilter);
     }
 
     // Apply sorting
     filtered.sort((a, b) => {
       let valueA, valueB;
-      
+
       if (fileSortBy === "extension") {
         valueA = a.extension;
         valueB = b.extension;
@@ -290,7 +281,7 @@ export default function DBViewer() {
 
   const toggleFileSort = (field) => {
     if (fileSortBy === field) {
-      setFileSortDirection(dir => dir === "asc" ? "desc" : "asc");
+      setFileSortDirection((dir) => (dir === "asc" ? "desc" : "asc"));
     } else {
       setFileSortBy(field);
       setFileSortDirection("asc");
@@ -328,13 +319,13 @@ export default function DBViewer() {
       open: true,
       url,
       name: fileName,
-      type: getFileExtension(fileName)
+      type: getFileExtension(fileName),
     });
   };
 
   // Selection management
   const toggleFileSelection = (fileName) => {
-    setSelectedFiles(prev => {
+    setSelectedFiles((prev) => {
       const updated = new Set(prev);
       if (updated.has(fileName)) {
         updated.delete(fileName);
@@ -346,17 +337,17 @@ export default function DBViewer() {
   };
 
   const toggleSelectAll = () => {
-    const allSelected = paginatedFiles.every(file => selectedFiles.has(file.name));
-    
-    setSelectedFiles(prev => {
+    const allSelected = paginatedFiles.every((file) => selectedFiles.has(file.name));
+
+    setSelectedFiles((prev) => {
       const updated = new Set(prev);
-      
+
       if (allSelected) {
-        paginatedFiles.forEach(file => updated.delete(file.name));
+        paginatedFiles.forEach((file) => updated.delete(file.name));
       } else {
-        paginatedFiles.forEach(file => updated.add(file.name));
+        paginatedFiles.forEach((file) => updated.add(file.name));
       }
-      
+
       return updated;
     });
   };
@@ -365,7 +356,7 @@ export default function DBViewer() {
 
   const bulkCopyUrls = async () => {
     const urls = Array.from(selectedFiles)
-      .map(fileName => getS3Url(expandedDb, fileName))
+      .map((fileName) => getS3Url(expandedDb, fileName))
       .filter(Boolean)
       .join("\n");
 
@@ -385,7 +376,7 @@ export default function DBViewer() {
 
   const bulkOpenFiles = () => {
     const urls = Array.from(selectedFiles)
-      .map(fileName => getS3Url(expandedDb, fileName))
+      .map((fileName) => getS3Url(expandedDb, fileName))
       .filter(Boolean)
       .slice(0, 10); // Limit to prevent browser issues
 
@@ -394,23 +385,21 @@ export default function DBViewer() {
       return;
     }
 
-    urls.forEach(url => window.open(url, "_blank", "noopener,noreferrer"));
+    urls.forEach((url) => window.open(url, "_blank", "noopener,noreferrer"));
   };
 
   const exportFileList = () => {
-    const csvData = processedFiles.map(file => ({
+    const csvData = processedFiles.map((file) => ({
       database: expandedDb,
       filename: file.name,
       extension: file.extension.toUpperCase(),
-      url: file.url || ""
+      url: file.url || "",
     }));
 
     const headers = ["Database", "Filename", "Type", "URL"];
     const csvContent = [
       headers.join(","),
-      ...csvData.map(row => 
-        Object.values(row).map(value => `"${String(value).replace(/"/g, '""')}"`).join(",")
-      )
+      ...csvData.map((row) => Object.values(row).map((value) => `"${String(value).replace(/"/g, '""')}"`).join(",")),
     ].join("\n");
 
     const blob = new Blob([csvContent], { type: "text/csv;charset=utf-8" });
@@ -430,7 +419,7 @@ export default function DBViewer() {
           <FaDatabase className="db-viewer-title-icon" />
           Database Viewer
         </h1>
-        
+
         <div className="db-viewer-controls">
           <div className="search-container">
             <FaSearch className="search-icon" />
@@ -442,7 +431,7 @@ export default function DBViewer() {
               onChange={(e) => setSearchQuery(e.target.value)}
             />
           </div>
-          
+
           <button className="btn btn-secondary" onClick={refreshDatabases} disabled={loadingDatabases}>
             <FaSync />
             {loadingDatabases ? "Loading..." : "Refresh"}
@@ -477,11 +466,8 @@ export default function DBViewer() {
                 <p className="empty-state-description">No databases found matching your search.</p>
               </div>
             ) : (
-              processedDatabases.map(db => (
-                <div
-                  key={db.name}
-                  className={`db-item ${expandedDb === db.name ? "active" : ""}`}
-                >
+              processedDatabases.map((db) => (
+                <div key={db.name} className={`db-item ${expandedDb === db.name ? "active" : ""}`}>
                   <div className="db-item-header" onClick={() => toggleDatabase(db.name)}>
                     <div className="db-item-info">
                       <FaDatabase className="db-item-icon" />
@@ -490,27 +476,17 @@ export default function DBViewer() {
                         <div className="db-item-meta">{db.fileCount} files</div>
                       </div>
                     </div>
-                    
+
                     <div className="db-item-actions" onClick={(e) => e.stopPropagation()}>
-                      <button
-                        className="db-action-btn"
-                        onClick={() => inspectDatabase(db.name)}
-                        title="View schema"
-                      >
+                      <button className="db-action-btn" onClick={() => inspectDatabase(db.name)} title="View schema">
                         <FaTable />
                       </button>
-                      <button
-                        className="db-action-btn danger"
-                        onClick={() => deleteDatabase(db.name)}
-                        title="Delete database"
-                      >
+                      <button className="db-action-btn danger" onClick={() => deleteDatabase(db.name)} title="Delete database">
                         <FaTrash />
                       </button>
                     </div>
-                    
-                    <FaChevronDown 
-                      className={`expand-icon ${expandedDb === db.name ? "expanded" : ""}`} 
-                    />
+
+                    <FaChevronDown className={`expand-icon ${expandedDb === db.name ? "expanded" : ""}`} />
                   </div>
                 </div>
               ))
@@ -523,8 +499,10 @@ export default function DBViewer() {
           {expandedDb ? (
             <>
               <div className="file-content-header">
-                <h2 className="file-content-title">{expandedDb.replace(/\.db$/i, "").replace(/_/g, " ")}</h2>
-                
+                <h2 className="file-content-title">
+                  {expandedDb.replace(/\.db$/i, "").replace(/_/g, " ")}
+                </h2>
+
                 <div className="file-content-actions">
                   <div className="filter-group">
                     <div className="search-container">
@@ -552,8 +530,10 @@ export default function DBViewer() {
                       }}
                     >
                       <option value="">All Types</option>
-                      {fileExtensions.map(ext => (
-                        <option key={ext} value={ext}>{ext.toUpperCase()}</option>
+                      {fileExtensions.map((ext) => (
+                        <option key={ext} value={ext}>
+                          {ext.toUpperCase()}
+                        </option>
                       ))}
                     </select>
                   </div>
@@ -567,8 +547,10 @@ export default function DBViewer() {
                         setCurrentPage(1);
                       }}
                     >
-                      {PAGE_SIZES.map(size => (
-                        <option key={size} value={size}>{size} per page</option>
+                      {PAGE_SIZES.map((size) => (
+                        <option key={size} value={size}>
+                          {size} per page
+                        </option>
                       ))}
                     </select>
                   </div>
@@ -586,23 +568,23 @@ export default function DBViewer() {
                   <div className="selection-info">
                     {selectedFiles.size} file{selectedFiles.size !== 1 ? "s" : ""} selected
                   </div>
-                  
+
                   <button className="bulk-action-btn" onClick={bulkCopyUrls}>
                     <FaCopy />
                     Copy URLs
                   </button>
-                  
+
                   <button className="bulk-action-btn" onClick={bulkOpenFiles}>
                     <FaExternalLinkAlt />
                     Open Files (max 10)
                   </button>
-                  
+
                   <button className="bulk-action-btn" onClick={clearSelection}>
                     Clear Selection
                   </button>
-                  
+
                   {copyFeedback === "@bulk" && (
-                    <span style={{ color: var(--color-success), fontSize: "0.875rem" }}>
+                    <span style={{ color: "var(--color-success)", fontSize: "0.875rem" }}>
                       URLs copied!
                     </span>
                   )}
@@ -632,18 +614,18 @@ export default function DBViewer() {
                           <input
                             type="checkbox"
                             className="selection-checkbox"
-                            checked={paginatedFiles.length > 0 && paginatedFiles.every(file => selectedFiles.has(file.name))}
+                            checked={paginatedFiles.length > 0 && paginatedFiles.every((file) => selectedFiles.has(file.name))}
                             onChange={toggleSelectAll}
                             title="Select all on page"
                           />
                         </th>
-                        <th 
+                        <th
                           className={`sortable ${fileSortBy === "name" ? `sorted-${fileSortDirection}` : ""}`}
                           onClick={() => toggleFileSort("name")}
                         >
                           File Name
                         </th>
-                        <th 
+                        <th
                           className={`sortable ${fileSortBy === "extension" ? `sorted-${fileSortDirection}` : ""}`}
                           onClick={() => toggleFileSort("extension")}
                         >
@@ -653,7 +635,7 @@ export default function DBViewer() {
                       </tr>
                     </thead>
                     <tbody>
-                      {paginatedFiles.map(file => (
+                      {paginatedFiles.map((file) => (
                         <tr key={file.name}>
                           <td>
                             <input
@@ -668,11 +650,7 @@ export default function DBViewer() {
                               {file.name}
                             </div>
                           </td>
-                          <td>
-                            {file.extension && (
-                              <span className="file-type">{file.extension}</span>
-                            )}
-                          </td>
+                          <td>{file.extension && <span className="file-type">{file.extension}</span>}</td>
                           <td>
                             <div className="file-actions">
                               <button
@@ -682,7 +660,7 @@ export default function DBViewer() {
                               >
                                 <FaEye />
                               </button>
-                              
+
                               {file.url && (
                                 <>
                                   <a
@@ -694,7 +672,7 @@ export default function DBViewer() {
                                   >
                                     <FaExternalLinkAlt />
                                   </a>
-                                  
+
                                   <a
                                     href={file.url}
                                     download={file.name}
@@ -703,7 +681,7 @@ export default function DBViewer() {
                                   >
                                     <FaCloudDownloadAlt />
                                   </a>
-                                  
+
                                   <button
                                     className="file-action-btn"
                                     onClick={() => copyFileUrl(expandedDb, file.name)}
@@ -711,9 +689,16 @@ export default function DBViewer() {
                                   >
                                     <FaCopy />
                                   </button>
-                                  
+
+                                  {/* feedback is now inside the map so `file` is defined */}
                                   {copyFeedback === `${expandedDb}/${file.name}` && (
-                                    <span style={{ color: var(--color-success), fontSize: "0.75rem", marginLeft: var(--space-2) }}>
+                                    <span
+                                      style={{
+                                        color: "var(--color-success)",
+                                        fontSize: "0.75rem",
+                                        marginLeft: "var(--space-2)",
+                                      }}
+                                    >
                                       Copied!
                                     </span>
                                   )}
@@ -741,20 +726,18 @@ export default function DBViewer() {
                   </button>
                   <button
                     className="pagination-btn"
-                    onClick={() => setCurrentPage(prev => Math.max(1, prev - 1))}
+                    onClick={() => setCurrentPage((prev) => Math.max(1, prev - 1))}
                     disabled={currentPage === 1}
                     title="Previous page"
                   >
                     ◀
                   </button>
-                  
-                  <span className="pagination-info">
-                    Page {currentPage} of {totalPages}
-                  </span>
-                  
+
+                  <span className="pagination-info">Page {currentPage} of {totalPages}</span>
+
                   <button
                     className="pagination-btn"
-                    onClick={() => setCurrentPage(prev => Math.min(totalPages, prev + 1))}
+                    onClick={() => setCurrentPage((prev) => Math.min(totalPages, prev + 1))}
                     disabled={currentPage === totalPages}
                     title="Next page"
                   >
@@ -768,7 +751,7 @@ export default function DBViewer() {
                   >
                     ⏭
                   </button>
-                  
+
                   <select
                     className="page-size-select"
                     value={pageSize}
@@ -777,8 +760,10 @@ export default function DBViewer() {
                       setCurrentPage(1);
                     }}
                   >
-                    {PAGE_SIZES.map(size => (
-                      <option key={size} value={size}>{size} per page</option>
+                    {PAGE_SIZES.map((size) => (
+                      <option key={size} value={size}>
+                        {size} per page
+                      </option>
                     ))}
                   </select>
                 </div>
@@ -801,9 +786,7 @@ export default function DBViewer() {
         <div className="modal-overlay" onClick={() => setSchemaModal({ open: false, data: null })}>
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
             <div className="modal-header">
-              <h3 className="modal-title">
-                Database Schema: {schemaModal.data?.database}
-              </h3>
+              <h3 className="modal-title">Database Schema: {schemaModal.data?.database}</h3>
               <button
                 className="modal-close-btn"
                 onClick={() => setSchemaModal({ open: false, data: null })}
@@ -812,7 +795,7 @@ export default function DBViewer() {
                 <FaTimes />
               </button>
             </div>
-            
+
             <div className="modal-body">
               {schemaModal.data?.error ? (
                 <div className="empty-state">
@@ -823,19 +806,21 @@ export default function DBViewer() {
               ) : (
                 Object.entries(schemaModal.data || {}).map(([tableName, tableInfo]) => {
                   if (tableName === "database") return null;
-                  
+
                   return (
                     <div key={tableName} className="schema-section">
                       <h4 className="schema-table-name">
                         <FaTable />
                         {tableName}
                       </h4>
-                      
+
                       <div className="schema-columns">
                         <h5 className="schema-columns-title">Columns</h5>
                         <div className="schema-columns-list">
-                          {(tableInfo.columns || []).map(column => (
-                            <span key={column} className="schema-column">{column}</span>
+                          {(tableInfo.columns || []).map((column) => (
+                            <span key={column} className="schema-column">
+                              {column}
+                            </span>
                           ))}
                         </div>
                       </div>
@@ -846,7 +831,7 @@ export default function DBViewer() {
                           <table className="sample-table">
                             <thead>
                               <tr>
-                                {(tableInfo.columns || []).map(column => (
+                                {(tableInfo.columns || []).map((column) => (
                                   <th key={column}>{column}</th>
                                 ))}
                               </tr>
@@ -858,8 +843,7 @@ export default function DBViewer() {
                                     <td key={cellIndex} title={String(cell)}>
                                       {typeof cell === "string" && cell.length > 50
                                         ? `${cell.slice(0, 50)}...`
-                                        : String(cell)
-                                      }
+                                        : String(cell)}
                                     </td>
                                   ))}
                                 </tr>
@@ -891,20 +875,12 @@ export default function DBViewer() {
                 <FaTimes />
               </button>
             </div>
-            
+
             <div className="modal-body" style={{ padding: 0 }}>
               {previewModal.type === "pdf" ? (
-                <iframe
-                  src={previewModal.url}
-                  title="File preview"
-                  style={{ width: "100%", height: "100%", border: "none" }}
-                />
+                <iframe src={previewModal.url} title="File preview" style={{ width: "100%", height: "100%", border: "none" }} />
               ) : ["png", "jpg", "jpeg", "webp", "gif"].includes(previewModal.type) ? (
-                <img
-                  src={previewModal.url}
-                  alt={previewModal.name}
-                  style={{ width: "100%", height: "100%", objectFit: "contain" }}
-                />
+                <img src={previewModal.url} alt={previewModal.name} style={{ width: "100%", height: "100%", objectFit: "contain" }} />
               ) : (
                 <div className="empty-state">
                   <FaEye className="empty-state-icon" />

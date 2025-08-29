@@ -243,7 +243,6 @@ export default function HomePage() {
                 })}</span>
               </div>
               <div className="hero-meta-item">
-                <FaUsers />
                 <span>Geolabs Team</span>
               </div>
               <div className="hero-meta-item">
