@@ -16,15 +16,36 @@ import {
   FaCheckCircle,
   FaGripLines,
   FaExpandArrowsAlt,
+  FaGithub,
+  FaExternalLinkAlt,
+  FaCodeBranch,
+  FaEye,
+  FaTag,
 } from "react-icons/fa";
 
 const FAVORITES_KEY = "geolabs_favorites_v2";
 const RECENTS_KEY = "geolabs_recents_v2";
 const RECENT_MAX = 8;
 
-// NEW: layout + size prefs
+// Layout + size prefs
 const LAYOUT_ORDER_KEY = "geolabs_layout_order_v1"; // array of labels in order
-const CARD_SIZES_KEY   = "geolabs_card_sizes_v1";   // { [label]: 'n'|'w'|'t'|'b' }
+const CARD_SIZES_KEY = "geolabs_card_sizes_v1";     // { [label]: 'n'|'w'|'t'|'b' }
+
+// 🔗 LinkedIn post (live embed)
+const LINKEDIN_POST_URL =
+  "https://www.linkedin.com/posts/geolabs_celebrating-50-years-of-engineering-excellence-activity-7365988140722872320-3Ua8?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD5bZ5gBnaRS5zh8pZj6FBWwJfRKFtKF1gc";
+const getLinkedInEmbedSrc = (url) => {
+  if (!url) return null;
+  const m = url.match(/activity-(\d+)/);
+  if (!m) return null;
+  const id = m[1];
+  return `https://www.linkedin.com/embed/feed/update/urn:li:activity:${id}`;
+};
+
+// 🐙 GitHub repo: owner/repo
+const GITHUB_OWNER = "Taikiy49";
+const GITHUB_REPO = "Geolabs";
+const GITHUB_REPO_URL = `https://github.com/${GITHUB_OWNER}/${GITHUB_REPO}`;
 
 const normalizeText = (text = "") => text.toLowerCase().trim();
 const matchesSearch = (searchTerm, ...fields) => {
@@ -32,7 +53,6 @@ const matchesSearch = (searchTerm, ...fields) => {
   if (!term) return true;
   return fields.some((field) => normalizeText(field || "").includes(term));
 };
-
 const highlightText = (text, searchTerm) => {
   if (!searchTerm || !text) return text;
   try {
@@ -54,7 +74,6 @@ const highlightText = (text, searchTerm) => {
     return text;
   }
 };
-
 const findSubpageByPath = (cards, path) => {
   for (const card of cards) {
     for (const subpage of card.subpages || []) {
@@ -65,7 +84,6 @@ const findSubpageByPath = (cards, path) => {
   }
   return null;
 };
-
 const deduplicateByKey = (array, keyFn) => {
   const seen = new Set();
   return array.filter((item) => {
@@ -75,13 +93,29 @@ const deduplicateByKey = (array, keyFn) => {
     return true;
   });
 };
-
 const timeOfDay = () => {
   const h = new Date().getHours();
   if (h < 5) return "Good night";
   if (h < 12) return "Good morning";
   if (h < 18) return "Good afternoon";
   return "Good evening";
+};
+const timeAgo = (dateString) => {
+  if (!dateString) return "";
+  const date = new Date(dateString);
+  const now = new Date();
+  const diff = Math.floor((now - date) / 1000);
+  if (diff < 60) return `${diff}s ago`;
+  const m = Math.floor(diff / 60);
+  if (m < 60) return `${m}m ago`;
+  const h = Math.floor(m / 60);
+  if (h < 24) return `${h}h ago`;
+  const d = Math.floor(h / 24);
+  if (d < 30) return `${d}d ago`;
+  const mo = Math.floor(d / 30);
+  if (mo < 12) return `${mo}mo ago`;
+  const y = Math.floor(mo / 12);
+  return `${y}y ago`;
 };
 
 export default function HomePage() {
@@ -97,9 +131,9 @@ export default function HomePage() {
   const [recents, setRecents] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
 
-  // NEW: layout edit mode + state
+  // Edit layout
   const [editMode, setEditMode] = useState(false);
-  const [draggingId, setDraggingId] = useState(null); // label of the card being dragged
+  const [draggingId, setDraggingId] = useState(null);
 
   // default order: labels in homepageCards order
   const defaultOrder = useMemo(() => homepageCards.map((c) => c.label), []);
@@ -122,7 +156,7 @@ export default function HomePage() {
 
   const pageRef = useRef(null);
 
-  // Demo metrics (replace with real values when available)
+  // Demo metrics (replace with real)
   const demoMetrics = useMemo(
     () => ({
       docsIndexed: 12890,
@@ -133,6 +167,15 @@ export default function HomePage() {
     []
   );
   const weeklyDocs = useMemo(() => [8, 12, 10, 14, 9, 15, 13], []);
+
+  // GitHub repo state
+  const [ghLoading, setGhLoading] = useState(true);
+  const [ghError, setGhError] = useState("");
+  const [repo, setRepo] = useState(null);
+  const [commits, setCommits] = useState([]);
+  const [pulls, setPulls] = useState([]);
+  const [languages, setLanguages] = useState({});
+  const [latestRelease, setLatestRelease] = useState(null);
 
   // Load saved data
   useEffect(() => {
@@ -149,7 +192,7 @@ export default function HomePage() {
     }
   }, []);
 
-  // Update search params when query changes
+  // Update search params
   useEffect(() => {
     if (searchQuery) setSearchParams({ search: searchQuery });
     else setSearchParams({});
@@ -157,25 +200,95 @@ export default function HomePage() {
 
   // Persist layout & sizes
   useEffect(() => {
-    try { localStorage.setItem(LAYOUT_ORDER_KEY, JSON.stringify(layoutOrder)); } catch {}
+    try {
+      localStorage.setItem(LAYOUT_ORDER_KEY, JSON.stringify(layoutOrder));
+    } catch {}
   }, [layoutOrder]);
-
   useEffect(() => {
-    try { localStorage.setItem(CARD_SIZES_KEY, JSON.stringify(cardSizes)); } catch {}
+    try {
+      localStorage.setItem(CARD_SIZES_KEY, JSON.stringify(cardSizes));
+    } catch {}
   }, [cardSizes]);
+
+  // Fetch GitHub repo data
+  useEffect(() => {
+    let active = true;
+    (async () => {
+      try {
+        setGhLoading(true);
+        setGhError("");
+
+        const base = `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}`;
+        const [rRes, cRes, pRes, lRes, relRes] = await Promise.all([
+          fetch(base),
+          fetch(`${base}/commits?per_page=6`),
+          fetch(`${base}/pulls?state=open&per_page=6`),
+          fetch(`${base}/languages`),
+          fetch(`${base}/releases/latest`), // may 404 if no releases
+        ]);
+
+        if (!rRes.ok) throw new Error("Repo not found");
+        const repoJson = await rRes.json();
+        const commitsJson = cRes.ok ? await cRes.json() : [];
+        const pullsJson = pRes.ok ? await pRes.json() : [];
+        const langsJson = lRes.ok ? await lRes.json() : {};
+        let releaseJson = null;
+        if (relRes.ok) {
+          try { releaseJson = await relRes.json(); } catch {}
+        }
+
+        if (!active) return;
+        setRepo(repoJson);
+        setCommits(
+          (commitsJson || []).map((c) => ({
+            sha: c.sha,
+            url: c.html_url,
+            msg: c.commit?.message?.split("\n")[0] || "(no message)",
+            author:
+              c.author?.login ||
+              c.commit?.author?.name ||
+              c.commit?.committer?.name ||
+              "unknown",
+            date: c.commit?.author?.date || c.commit?.committer?.date,
+          }))
+        );
+        setPulls(
+          (pullsJson || []).map((p) => ({
+            number: p.number,
+            title: p.title,
+            url: p.html_url,
+            user: p.user?.login,
+            date: p.updated_at || p.created_at,
+          }))
+        );
+        setLanguages(langsJson || {});
+        setLatestRelease(releaseJson);
+      } catch (e) {
+        if (!active) return;
+        setGhError("Couldn’t load GitHub data.");
+      } finally {
+        if (active) setGhLoading(false);
+      }
+    })();
+    return () => {
+      active = false;
+    };
+  }, []);
 
   const saveFavorites = (newFavorites) => {
     setFavorites(newFavorites);
-    try { localStorage.setItem(FAVORITES_KEY, JSON.stringify(newFavorites)); } catch {}
+    try {
+      localStorage.setItem(FAVORITES_KEY, JSON.stringify(newFavorites));
+    } catch {}
   };
-
   const saveRecents = (newRecents) => {
     setRecents(newRecents);
-    try { localStorage.setItem(RECENTS_KEY, JSON.stringify(newRecents)); } catch {}
+    try {
+      localStorage.setItem(RECENTS_KEY, JSON.stringify(newRecents));
+    } catch {}
   };
 
   const isFavorited = (path) => favorites.some((fav) => fav.path === path);
-
   const toggleFavorite = (path) => {
     const metadata = findSubpageByPath(homepageCards, path);
     if (!metadata) return;
@@ -192,7 +305,6 @@ export default function HomePage() {
       saveFavorites(updated);
     }
   };
-
   const recordRecentVisit = (path) => {
     const metadata = findSubpageByPath(homepageCards, path);
     if (!metadata) return;
@@ -202,16 +314,17 @@ export default function HomePage() {
       parent: metadata.parent.label,
       timestamp: Date.now(),
     };
-    const updated = deduplicateByKey([entry, ...recents], (item) => item.path).slice(0, RECENT_MAX);
+    const updated = deduplicateByKey([entry, ...recents], (item) => item.path).slice(
+      0,
+      RECENT_MAX
+    );
     saveRecents(updated);
   };
-
   const handleNavigation = (path, disabled = false) => {
     if (!path || disabled) return;
     recordRecentVisit(path);
     navigate(path);
   };
-
   const getTimeAgo = (dateString) => {
     if (!dateString) return "Recently updated";
     try {
@@ -236,20 +349,26 @@ export default function HomePage() {
         const filteredSubpages = (card.subpages || []).filter((subpage) =>
           matchesSearch(
             term,
-            card.label, card.sublabel, card.description,
-            subpage.name, subpage.description
+            card.label,
+            card.sublabel,
+            card.description,
+            subpage.name,
+            subpage.description
           )
         );
         const cardMatches = matchesSearch(term, card.label, card.sublabel, card.description);
         if (cardMatches || filteredSubpages.length > 0) {
-          return { ...card, subpages: filteredSubpages.length > 0 || !term ? card.subpages : [] };
+          return {
+            ...card,
+            subpages: filteredSubpages.length > 0 || !term ? card.subpages : [],
+          };
         }
         return null;
       })
       .filter(Boolean);
   }, [searchQuery]);
 
-  // Apply saved order to filtered list
+  // Apply saved order
   const orderedCards = useMemo(() => {
     const indexOf = (label) => {
       const idx = layoutOrder.indexOf(label);
@@ -276,12 +395,11 @@ export default function HomePage() {
     if (fromLabel === toLabel) return arr;
     const next = [...arr];
     const from = next.indexOf(fromLabel);
-    const to   = next.indexOf(toLabel);
+    const to = next.indexOf(toLabel);
     if (from === -1 || to === -1) return arr;
     next.splice(to, 0, ...next.splice(from, 1));
     return next;
   };
-
   const onCardDragStart = (label) => (e) => {
     if (!editMode) return;
     setDraggingId(label);
@@ -329,22 +447,34 @@ export default function HomePage() {
         {/* Hero */}
         <section className="homepage-hero compact visible">
           <div className="hero-greeting">
-            <h1 className="hero-title">{timeOfDay()}, {firstName}</h1>
-            <p className="hero-subtitle">Your geotechnical data platform — fast, consistent, and organized</p>
+            <h1 className="hero-title">
+              {timeOfDay()}, {firstName}
+            </h1>
+            <p className="hero-subtitle">
+              Your geotechnical data platform — fast, consistent, and organized
+            </p>
             <div className="hero-meta">
               <div className="hero-meta-item">
                 <FaCalendarAlt />
                 <span>
                   {currentTime.toLocaleDateString("en-US", {
-                    weekday: "long", year: "numeric", month: "long", day: "numeric",
+                    weekday: "long",
+                    year: "numeric",
+                    month: "long",
+                    day: "numeric",
                   })}
                 </span>
               </div>
-              <div className="hero-meta-item"><span>Geolabs Team</span></div>
-              <div className="hero-meta-item"><FaChartLine /><span>Analytics Ready</span></div>
+              <div className="hero-meta-item">
+                <span>Geolabs Team</span>
+              </div>
+              <div className="hero-meta-item">
+                <FaChartLine />
+                <span>Analytics Ready</span>
+              </div>
             </div>
 
-            {/* NEW: layout controls */}
+            {/* Edit layout controls */}
             <div className="hero-actions">
               <button
                 className={`btn-edit ${editMode ? "on" : ""}`}
@@ -376,23 +506,29 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* KPI / At a glance */}
+        {/* KPIs */}
         <section className="kpi-grid animate-on-scroll visible">
           <div className="kpi-card">
-            <div className="kpi-icon"><FaFolderOpen /></div>
+            <div className="kpi-icon">
+              <FaFolderOpen />
+            </div>
             <div className="kpi-meta">
               <div className="kpi-label">Documents Indexed</div>
               <div className="kpi-value">{demoMetrics.docsIndexed.toLocaleString()}</div>
             </div>
             <div className="kpi-trend">
               <div className="kpi-bars">
-                {weeklyDocs.map((v, i) => (<span key={i} style={{ height: `${6 + v * 3}px` }} />))}
+                {weeklyDocs.map((v, i) => (
+                  <span key={i} style={{ height: `${6 + v * 3}px` }} />
+                ))}
               </div>
               <div className="kpi-hint">last 7 days</div>
             </div>
           </div>
           <div className="kpi-card">
-            <div className="kpi-icon"><FaBoxOpen /></div>
+            <div className="kpi-icon">
+              <FaBoxOpen />
+            </div>
             <div className="kpi-meta">
               <div className="kpi-label">Core Boxes</div>
               <div className="kpi-value">{demoMetrics.coreBoxes.toLocaleString()}</div>
@@ -400,7 +536,9 @@ export default function HomePage() {
             <div className="kpi-pill">Inventory</div>
           </div>
           <div className="kpi-card">
-            <div className="kpi-icon"><FaRobot /></div>
+            <div className="kpi-icon">
+              <FaRobot />
+            </div>
             <div className="kpi-meta">
               <div className="kpi-label">AI Answers (wk)</div>
               <div className="kpi-value">{demoMetrics.aiAnswersThisWeek}</div>
@@ -408,7 +546,9 @@ export default function HomePage() {
             <div className="kpi-pill kpi-pill--glow">↑ healthy</div>
           </div>
           <div className="kpi-card">
-            <div className="kpi-icon"><FaCheckCircle /></div>
+            <div className="kpi-icon">
+              <FaCheckCircle />
+            </div>
             <div className="kpi-meta">
               <div className="kpi-label">Open Tasks</div>
               <div className="kpi-value">{demoMetrics.openTasks}</div>
@@ -417,21 +557,122 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* Spotlight */}
-        <section className="spotlight animate-on-scroll visible">
-          <div className="spotlight-image">
-            <div className="img-ph">Project photo / map area (add yours)</div>
-          </div>
-          <div className="spotlight-content">
-            <h3 className="spotlight-title">Project Spotlight</h3>
-            <p className="spotlight-desc">
-              Drop a banner image here (e.g., core sample mosaic, site map, or recent field photo).
-              Use this space to pin a quick note or link to a report.
-            </p>
-            <button className="spotlight-cta" onClick={() => navigate("/reports")}>
-              Open Reports
-            </button>
-          </div>
+        {/* SPOTLIGHTS: LinkedIn + GitHub */}
+        <section className="spotlights animate-on-scroll visible">
+          {/* LinkedIn */}
+          <article className="spotlight-card">
+            <div className="spotlight-head">
+              <div className="spotlight-title">Latest on LinkedIn</div>
+              <button
+                className="spotlight-open"
+                onClick={() =>
+                  window.open(LINKEDIN_POST_URL, "_blank", "noopener,noreferrer")
+                }
+                title="Open on LinkedIn"
+              >
+                <FaExternalLinkAlt />
+              </button>
+            </div>
+            <div className="spotlight-embed">
+              {getLinkedInEmbedSrc(LINKEDIN_POST_URL) ? (
+                <iframe
+                  className="li-embed"
+                  src={getLinkedInEmbedSrc(LINKEDIN_POST_URL)}
+                  height="260"
+                  width="100%"
+                  frameBorder="0"
+                  allowFullScreen=""
+                  title="Geolabs LinkedIn post"
+                  loading="lazy"
+                />
+              ) : (
+                <div className="img-ph">LinkedIn post embed unavailable</div>
+              )}
+            </div>
+          </article>
+
+          {/* GitHub (repo-focused) */}
+          <article className="github-card">
+            <div className="gh-head">
+              <div className="gh-title">
+                <FaGithub /> {GITHUB_OWNER}/{GITHUB_REPO}
+              </div>
+              <a
+                className="gh-open"
+                href={GITHUB_REPO_URL}
+                target="_blank"
+                rel="noreferrer"
+                title="Open GitHub Repo"
+              >
+                <FaExternalLinkAlt />
+              </a>
+            </div>
+
+            {ghLoading ? (
+              <div className="gh-skeleton">
+                <div className="sk-row" />
+                <div className="sk-row" />
+                <div className="sk-row" />
+              </div>
+            ) : ghError ? (
+              <div className="gh-error">{ghError}</div>
+            ) : (
+              <>
+                {repo && (
+                  <>
+                    <div className="gh-top">
+                      <div className="gh-desc">
+                        {repo.description || "No description provided."}
+                      </div>
+                      <div className="gh-stats-row">
+                        <span className="gh-pill"><FaStar /> {repo.stargazers_count}</span>
+                        <span className="gh-pill"><FaCodeBranch /> {repo.forks_count}</span>
+                        <span className="gh-pill"><FaEye /> {repo.subscribers_count || repo.watchers_count}</span>
+                        <span className="gh-pill"><FaTag /> {repo.default_branch}</span>
+                      </div>
+                      {latestRelease?.tag_name && (
+                        <div className="gh-release">
+                          Latest release:{" "}
+                          <a href={latestRelease.html_url} target="_blank" rel="noreferrer">
+                            {latestRelease.tag_name}
+                          </a>{" "}
+                          <span className="gh-evt-time">{timeAgo(latestRelease.published_at)}</span>
+                        </div>
+                      )}
+                    </div>
+
+                    {/* Languages */}
+                    {languages && Object.keys(languages).length > 0 && (
+                      <div className="gh-langs">
+                        <div className="gh-section-title">Languages</div>
+                        <div className="lang-bar">
+                          {(() => {
+                            const total = Object.values(languages).reduce((a, b) => a + b, 0) || 1;
+                            return Object.entries(languages).map(([lang, bytes]) => {
+                              const pct = Math.round((bytes / total) * 100);
+                              return (
+                                <span key={lang} className="lang-chunk" style={{ width: `${pct}%` }} title={`${lang} ${pct}%`} />
+                              );
+                            });
+                          })()}
+                        </div>
+                        <div className="lang-legend">
+                          {Object.entries(languages).slice(0, 5).map(([lang, bytes]) => {
+                            const total = Object.values(languages).reduce((a, b) => a + b, 0) || 1;
+                            const pct = Math.round((bytes / total) * 100);
+                            return <span key={lang}>{lang} {pct}%</span>;
+                          })}
+                        </div>
+                      </div>
+                    )}
+                  </>
+                )}
+
+                {/* Commits */}
+  
+              </>
+            )}
+          </article>
         </section>
 
         {/* Quick Access */}
@@ -439,7 +680,10 @@ export default function HomePage() {
           <section className="quick-access compact visible">
             {favorites.length > 0 && (
               <div>
-                <h2 className="qa-title"><FaStar />Favorites</h2>
+                <h2 className="qa-title">
+                  <FaStar />
+                  Favorites
+                </h2>
                 <div className="qa-grid">
                   {favorites.slice(0, 6).map((favorite) => {
                     const metadata = findSubpageByPath(homepageCards, favorite.path);
@@ -465,7 +709,10 @@ export default function HomePage() {
 
             {recents.length > 0 && (
               <div>
-                <h2 className="qa-title"><FaClock />Recently Used</h2>
+                <h2 className="qa-title">
+                  <FaClock />
+                  Recently Used
+                </h2>
                 <div className="qa-grid">
                   {recents.slice(0, 6).map((recent) => {
                     const metadata = findSubpageByPath(homepageCards, recent.path);
@@ -491,7 +738,7 @@ export default function HomePage() {
           </section>
         )}
 
-        {/* Categories (now draggable + resizable in Edit mode) */}
+        {/* Categories (draggable + resizable in Edit mode) */}
         <section className="categories-grid compact">
           {orderedCards.map((card, index) => {
             const size = cardSizes[card.label] || "n";
@@ -500,7 +747,7 @@ export default function HomePage() {
             const editableClass = editMode ? "editable" : "";
 
             const go = () => {
-              if (editMode) return; // disable navigation while editing
+              if (editMode) return;
               if (!card.disabled && card.path) handleNavigation(card.path);
             };
 
@@ -508,11 +755,13 @@ export default function HomePage() {
               <article
                 key={card.label}
                 data-id={card.label}
-                className={`category-card animate-on-scroll ${sizeClass} ${editableClass} ${card.disabled ? "disabled" : ""}`}
+                className={`category-card animate-on-scroll ${sizeClass} ${editableClass} ${
+                  card.disabled ? "disabled" : ""
+                }`}
                 style={{
                   animationDelay: `${index * 70}ms`,
                   opacity: card.disabled ? 0.6 : 1,
-                  cursor: editMode ? "grab" : (card.disabled ? "not-allowed" : "pointer"),
+                  cursor: editMode ? "grab" : card.disabled ? "not-allowed" : "pointer",
                 }}
                 onClick={go}
                 draggable={editMode}
@@ -521,7 +770,6 @@ export default function HomePage() {
                 onDragOver={onCardDragOver(card.label)}
                 onDrop={(e) => e.preventDefault()}
               >
-                {/* drag handle + resize when editing */}
                 {editMode && (
                   <div className="card-tools">
                     <span className="drag-handle" title="Drag to reorder">
@@ -585,7 +833,9 @@ export default function HomePage() {
                         )}
 
                         <button
-                          className={`favorite-btn ${isFavorited(subpage.path) ? "active" : ""}`}
+                          className={`favorite-btn ${
+                            isFavorited(subpage.path) ? "active" : ""
+                          }`}
                           onClick={(e) => {
                             e.stopPropagation();
                             toggleFavorite(subpage.path);

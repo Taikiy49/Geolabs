@@ -1,13 +1,11 @@
 /* Compact Professional Homepage */
 :root {
-  /* Tight, consistent rhythm */
   --h-gap: 12px;
   --h-gap-lg: 16px;
   --card-pad: 18px;
   --radius: 14px;
-  --radius-lg: 16px; /* NEW: used by search & spotlight */
+  --radius-lg: 16px;
 
-  /* Colors (aligned w/ header/sidebar) */
   --bg-page: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
   --bg-card: rgba(23, 31, 50, 0.9);
   --bg-card-2: rgba(32, 41, 63, 0.9);
@@ -65,8 +63,8 @@
 .homepage-container.compact { padding-top: 16px; }
 
 /* Hero */
-.homepage-hero { margin-bottom: 22px; }        /* bumped from 18 */
-.homepage-hero.compact { margin-bottom: 18px; }/* bumped */
+.homepage-hero { margin-bottom: 22px; }
+.homepage-hero.compact { margin-bottom: 18px; }
 
 .hero-greeting {
   background: var(--bg-card);
@@ -78,7 +76,6 @@
   -webkit-backdrop-filter: blur(14px);
   position: relative;
 }
-
 .hero-greeting::before {
   content: "";
   position: absolute;
@@ -100,7 +97,6 @@
   margin: 0 0 6px 0;
   line-height: 1.2;
 }
-
 .hero-subtitle {
   font-size: var(--font-size-base);
   color: var(--text-secondary);
@@ -120,9 +116,39 @@
   gap: 8px;
 }
 
-/* Search (hero search) */
+/* Layout controls */
+.hero-actions {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  display: flex;
+  gap: 8px;
+}
+.btn-edit,
+.btn-reset {
+  padding: 6px 10px;
+  border-radius: 10px;
+  border: 1px solid var(--border-color);
+  background: rgba(30,41,59,0.85);
+  color: var(--text-primary);
+  font-size: 0.82rem;
+  cursor: pointer;
+  transition: transform .12s ease, border-color .12s ease, background .12s ease;
+}
+.btn-edit:hover,
+.btn-reset:hover {
+  transform: translateY(-1px);
+  border-color: var(--color-primary);
+  background: rgba(51,65,85,0.85);
+}
+.btn-edit.on {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.16) inset;
+}
+
+/* Search */
 .homepage-search {
-  margin-top: 10px;       /* NEW: nudges it farther from hero */
+  margin-top: 10px;
   margin-bottom: 18px;
 }
 .homepage-search.compact { margin-top: 10px; margin-bottom: 14px; }
@@ -133,7 +159,6 @@
   max-width: 640px;
   margin: 0 auto;
 }
-
 .search-input-lg {
   width: 100%;
   height: 44px;
@@ -145,14 +170,12 @@
   font-size: 0.95rem;
   transition: border-color 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
 }
-
 .search-input-lg:focus {
   outline: none;
   border-color: var(--color-primary);
   box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.12);
   background: rgba(30, 41, 59, 0.95);
 }
-
 .search-icon-lg {
   position: absolute;
   left: 0.8rem;
@@ -169,7 +192,6 @@
   gap: 12px;
   margin-bottom: 20px;
 }
-
 .kpi-card {
   position: relative;
   display: grid;
@@ -182,7 +204,6 @@
   border-radius: 12px;
   box-shadow: var(--shadow-md);
 }
-
 .kpi-icon {
   width: 40px; height: 40px;
   border-radius: 10px;
@@ -190,11 +211,8 @@
   color: white;
   background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
 }
-
-.kpi-meta {}
 .kpi-label { color: var(--text-muted); font-size: 0.78rem; margin-bottom: 2px; }
 .kpi-value { font-weight: 800; font-size: 1.15rem; color: var(--text-primary); }
-
 .kpi-pill {
   justify-self: end;
   padding: 4px 8px;
@@ -208,7 +226,6 @@
 }
 .kpi-pill--glow { background: rgba(16,185,129,0.14); color: var(--color-success); }
 .kpi-pill--warn { background: rgba(245,158,11,0.14); color: var(--color-warning); }
-
 .kpi-trend { grid-column: 1 / -1; display: flex; align-items: flex-end; gap: 8px; }
 .kpi-bars { display: flex; align-items: flex-end; gap: 4px; height: 64px; }
 .kpi-bars span {
@@ -217,50 +234,166 @@
 }
 .kpi-hint { font-size: 0.7rem; color: var(--text-muted); }
 
-/* Spotlight */
-.spotlight {
+/* =========================
+   SPOTLIGHTS (LinkedIn + GitHub)
+   ========================= */
+.spotlights {
   display: grid;
-  grid-template-columns: 1.2fr 1fr;
+  grid-template-columns: 1.3fr 1fr; /* side-by-side on wide */
   gap: 14px;
   margin-bottom: 20px;
 }
 
-.spotlight-image, .spotlight-content {
+.spotlight-card,
+.github-card {
   background: var(--bg-card);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-md);
+  overflow: hidden;
 }
 
-.spotlight-image { padding: 0; overflow: hidden; }
-.img-ph {
-  height: 180px;
-  display: grid; place-items: center;
-  color: var(--text-secondary);
-  background:
-    linear-gradient(135deg, rgba(96,165,250,0.15), transparent),
-    repeating-linear-gradient(45deg, rgba(255,255,255,0.04) 0 8px, rgba(255,255,255,0.02) 8px 16px),
-    rgba(23,31,50,0.9);
-  user-select: none;
-  font-weight: 700;
+/* LinkedIn card */
+.spotlight-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--border-color);
+  background: rgba(30,41,59,0.55);
+}
+.spotlight-title {
+  font-weight: 800;
   letter-spacing: .01em;
+  color: var(--text-primary);
+}
+.spotlight-open {
+  width: 30px; height: 30px;
+  display: grid; place-items: center;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  background: rgba(30,41,59,0.85);
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: transform .12s ease, border-color .12s ease, background .12s ease;
+}
+.spotlight-open:hover {
+  transform: translateY(-1px);
+  background: rgba(51,65,85,0.85);
+  border-color: var(--color-primary);
+}
+.spotlight-embed { padding: 0; overflow: hidden; }
+.spotlight-embed .li-embed {
+  width: 100%;
+  display: block;
+  border: 0;
 }
 
-.spotlight-content { padding: 14px; }
-.spotlight-title { margin: 0 0 6px 0; font-size: 1.05rem; font-weight: 800; color: var(--text-primary); }
-.spotlight-desc { margin: 0 0 10px 0; color: var(--text-secondary); font-size: var(--font-size-sm); line-height: 1.55; }
-.spotlight-cta {
-  display: inline-flex; align-items: center; justify-content: center;
-  padding: 8px 12px; border-radius: 10px; border: 1px solid var(--border-color);
-  background: rgba(30,41,59,0.85); color: var(--text-primary);
-  cursor: pointer; transition: transform .12s ease, border-color .12s ease, background .12s ease;
+/* GitHub card */
+.github-card { padding: 10px 12px; }
+.gh-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
 }
-.spotlight-cta:hover { transform: translateY(-1px); border-color: var(--color-primary); background: rgba(51,65,85,0.85); }
+.gh-title {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 800;
+  color: var(--text-primary);
+}
+.gh-open {
+  width: 30px; height: 30px;
+  display: grid; place-items: center;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  background: rgba(30,41,59,0.85);
+  color: var(--text-primary);
+  transition: transform .12s ease, border-color .12s ease, background .12s ease;
+}
+.gh-open:hover {
+  transform: translateY(-1px);
+  background: rgba(51,65,85,0.85);
+  border-color: var(--color-primary);
+}
+
+.gh-skeleton .sk-row {
+  height: 14px;
+  background: rgba(255,255,255,0.06);
+  border-radius: 8px;
+  margin: 8px 0;
+}
+.gh-error { color: #fca5a5; font-size: 0.9rem; }
+
+.gh-top { margin-bottom: 6px; }
+.gh-desc { color: var(--text-secondary); font-size: var(--font-size-sm); }
+
+.gh-stats-row {
+  display: flex; flex-wrap: wrap; gap: 8px;
+  margin-top: 8px;
+}
+.gh-pill {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 4px 8px; border-radius: 999px;
+  background: rgba(96,165,250,0.12);
+  color: var(--text-secondary);
+  font-size: 0.76rem;
+  border: 1px solid var(--border-color);
+}
+
+.gh-release { margin-top: 8px; font-size: var(--font-size-sm); color: var(--text-secondary); }
+.gh-release a { color: var(--color-primary); text-decoration: none; }
+.gh-release a:hover { text-decoration: underline; }
+
+.gh-langs { margin-top: 10px; }
+.lang-bar {
+  display: flex; height: 8px; border-radius: 999px; overflow: hidden;
+  background: rgba(255,255,255,0.06); border: 1px solid var(--border-color);
+}
+.lang-chunk { display: block; height: 100%; }
+.lang-legend { display: flex; gap: 12px; margin-top: 6px; color: var(--text-muted); font-size: var(--font-size-xs); }
+
+/* give chunks a subtle gradient without specific colors */
+.lang-chunk:nth-child(5n+1){ background: linear-gradient(180deg, rgba(96,165,250,.9), rgba(96,165,250,.35)); }
+.lang-chunk:nth-child(5n+2){ background: linear-gradient(180deg, rgba(167,139,250,.9), rgba(167,139,250,.35)); }
+.lang-chunk:nth-child(5n+3){ background: linear-gradient(180deg, rgba(16,185,129,.9), rgba(16,185,129,.35)); }
+.lang-chunk:nth-child(5n+4){ background: linear-gradient(180deg, rgba(245,158,11,.9), rgba(245,158,11,.35)); }
+.lang-chunk:nth-child(5n+5){ background: linear-gradient(180deg, rgba(248,113,113,.9), rgba(248,113,113,.35)); }
+
+.gh-section { padding-top: 10px; }
+.gh-section + .gh-section {
+  border-top: 1px dashed rgba(120, 140, 170, 0.25);
+  margin-top: 8px;
+}
+.gh-section-title {
+  font-weight: 750; color: var(--text-secondary); margin-bottom: 6px;
+}
+
+.gh-commits, .gh-prs { list-style: none; margin: 0; padding: 0; }
+.gh-commit { padding: 8px 0; }
+.gh-commit + .gh-commit { border-top: 1px dashed rgba(120,140,170,0.25); }
+.gh-commit-msg {
+  color: var(--text-primary); text-decoration: none; font-weight: 700;
+}
+.gh-commit-msg:hover { color: var(--color-primary); }
+.gh-commit-meta {
+  display: flex; gap: 8px; color: var(--text-muted);
+  font-size: var(--font-size-xs); margin-top: 2px; align-items: center;
+}
+.mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+
+.gh-pr { padding: 8px 0; }
+.gh-pr + .gh-pr { border-top: 1px dashed rgba(120,140,170,0.25); }
+.gh-pr-title { color: var(--text-primary); text-decoration: none; font-weight: 700; }
+.gh-pr-title:hover { color: var(--color-primary); }
+.gh-pr-meta { color: var(--text-muted); font-size: var(--font-size-xs); margin-top: 2px; }
+
+.gh-muted { color: var(--text-muted); font-size: var(--font-size-sm); }
 
 /* Quick Access */
 .quick-access { margin-bottom: 18px; }
-.quick-access.compact { margin-bottom: 14px; }
-
 .qa-title {
   font-size: 1.05rem;
   font-weight: 750;
@@ -270,7 +403,6 @@
   gap: 8px;
   color: var(--text-primary);
 }
-
 .qa-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -304,31 +436,27 @@
   flex-shrink: 0;
   box-shadow: 0 2px 10px rgba(96,165,250,0.18);
 }
-.qa-content { min-width: 0; }
 .qa-name {
   font-weight: 700;
   font-size: 0.9rem;
   color: var(--text-primary);
   line-height: 1.2;
 }
-.qa-desc {
-  font-size: var(--font-size-xs);
-  color: var(--text-muted);
-}
+.qa-desc { font-size: var(--font-size-xs); color: var(--text-muted); }
 
-/* Categories (unchanged from your version aside minor tweaks) */
+/* Categories */
 .categories-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
   gap: 14px;
+  grid-auto-flow: dense;
 }
-
 .category-card {
   background: var(--bg-card);
   border: 1px solid var(--border-color);
   border-radius: var(--radius);
   padding: var(--card-pad);
-  transition: transform var(--transition-normal), border-color var(--transition-fast), box-shadow var(--transition-normal);
+  transition: transform var(--transition-normal), border-color var(--transition-fast), box-shadow var(--transition-normal), opacity 140ms ease;
   position: relative;
   overflow: hidden;
   box-shadow: var(--shadow-md);
@@ -341,6 +469,40 @@
   border-color: var(--color-primary);
 }
 .category-card.disabled { pointer-events: none; }
+
+/* Edit affordances */
+.category-card.editable { outline: 1px dashed rgba(96,165,250,0.45); }
+.category-card.editable:active { cursor: grabbing; }
+.category-card.is-dragging { opacity: .6 !important; transform: scale(0.99) !important; }
+
+.card-tools {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: inline-flex;
+  gap: 6px;
+  z-index: 1;
+}
+.drag-handle,
+.size-btn {
+  width: 28px; height: 28px;
+  display: grid; place-items: center;
+  border-radius: 8px;
+  background: rgba(30,41,59,0.9);
+  border: 1px solid var(--border-color);
+  color: var(--text-secondary);
+  cursor: pointer;
+}
+.drag-handle:hover,
+.size-btn:hover {
+  background: rgba(51,65,85,0.85);
+  border-color: var(--color-primary);
+  color: var(--text-primary);
+}
+
+.category-card.size-wide { grid-column: span 2; }
+.category-card.size-tall { min-height: 320px; }
+.category-card.size-big  { grid-column: span 2; min-height: 320px; }
 
 .category-header {
   display: grid;
@@ -357,7 +519,6 @@
   font-size: 1.25rem;
   box-shadow: 0 2px 12px rgba(96,165,250,0.22);
 }
-
 .category-title {
   font-size: 1.15rem;
   font-weight: 800;
@@ -377,22 +538,9 @@
   text-transform: uppercase;
   letter-spacing: 0.04em;
 }
-.category-subtitle {
-  font-size: var(--font-size-sm);
-  color: var(--text-muted);
-  margin: 4px 0 6px 0;
-}
-.category-description {
-  font-size: var(--font-size-sm);
-  color: var(--text-secondary);
-  line-height: 1.55;
-  margin: 0;
-}
-.category-updated {
-  font-size: var(--font-size-xs);
-  color: var(--text-muted);
-  margin-top: 10px;
-}
+.category-subtitle { font-size: var(--font-size-sm); color: var(--text-muted); margin: 4px 0 6px 0; }
+.category-description { font-size: var(--font-size-sm); color: var(--text-secondary); line-height: 1.55; margin: 0; }
+.category-updated { font-size: var(--font-size-xs); color: var(--text-muted); margin-top: 10px; }
 
 /* Subpages */
 .subpages-grid {
@@ -418,11 +566,7 @@
   transform: translateY(-1px);
   box-shadow: 0 8px 20px rgba(30,45,70,0.25);
 }
-.subpage-header {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
+.subpage-header { display: flex; align-items: center; gap: 10px; }
 .subpage-icon {
   width: 28px; height: 28px;
   background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
@@ -432,17 +576,8 @@
   font-size: 0.82rem;
   flex-shrink: 0;
 }
-.subpage-name {
-  font-weight: 700;
-  font-size: 0.92rem;
-  color: var(--text-primary);
-}
-.subpage-description {
-  font-size: var(--font-size-xs);
-  color: var(--text-muted);
-  line-height: 1.35;
-  margin: 0;
-}
+.subpage-name { font-weight: 700; font-size: 0.92rem; color: var(--text-primary); }
+.subpage-description { font-size: var(--font-size-xs); color: var(--text-muted); line-height: 1.35; margin: 0; }
 
 /* Favorite button */
 .favorite-btn {
@@ -457,8 +592,7 @@
   color: var(--text-muted);
   cursor: pointer;
   transition: transform var(--transition-fast), background var(--transition-fast), color var(--transition-fast);
-  display: grid;
-  place-items: center;
+  display: grid; place-items: center;
   font-size: 0.78rem;
 }
 .favorite-btn:hover { background: var(--color-primary); color: white; transform: scale(1.06); }
@@ -520,18 +654,17 @@
   border-radius: 50%;
   animation: spin 1s linear infinite;
 }
-.loading-text {
-  color: var(--text-muted);
-  font-size: var(--font-size-sm);
-}
+.loading-text { color: var(--text-muted); font-size: var(--font-size-sm); }
 @keyframes spin { to { transform: rotate(360deg); } }
 
 /* Responsive */
 @media (max-width: 1200px) {
   .categories-grid { grid-template-columns: 1fr; }
 }
+@media (max-width: 1100px) {
+  .spotlights { grid-template-columns: 1fr; } /* stack LI + GH */
+}
 @media (max-width: 900px) {
-  .spotlight { grid-template-columns: 1fr; }
   .img-ph { height: 160px; }
 }
 @media (max-width: 768px) {
@@ -547,6 +680,7 @@
   .search-input-lg { height: 40px; font-size: 0.9rem; padding-left: 2.2rem; }
   .search-icon-lg { left: 0.7rem; font-size: 1rem; }
 }
+
 /* Reduced motion / High contrast */
 @media (prefers-reduced-motion: reduce) {
   .animate-on-scroll,
@@ -555,7 +689,8 @@
   .qa-item,
   .search-input-lg,
   .kpi-card,
-  .spotlight-cta { transition: none !important; }
+  .github-card,
+  .spotlight-card { transition: none !important; }
   .category-card:hover,
   .subpage-item:hover,
   .qa-item:hover { transform: none !important; }
@@ -564,112 +699,184 @@
   .category-card,
   .subpage-item,
   .qa-item,
-  .spotlight-content,
-  .spotlight-image { border-width: 2px; }
+  .github-card,
+  .spotlight-card { border-width: 2px; }
 }
 
-/* ... keep everything you already have above ... */
 
-/* =========================
-   EDIT LAYOUT: controls
-   ========================= */
-.hero-actions{
-  position: absolute;
-  right: 12px;
-  top: 12px;
+/* LinkedIn embed: no padding + taller viewport */
+.spotlight-image {
+  padding: 0 !important;   /* ensure zero padding around the iframe */
+  overflow: hidden;
+}
+
+.spotlight-image .li-embed {
+  width: 100%;
+  display: block;
+}
+
+/* When spotlight stacks on mobile, keep rounded corners correct */
+@media (max-width: 900px) {
+  .spotlight-image .li-embed {
+  }
+}
+
+/* === Compact Spotlight + GitHub cards === */
+
+/* Overall spacing + radius */
+:root{
+  --spot-pad: 8px;            /* card inner padding */
+  --spot-head-pad: 6px 10px;  /* header bar padding */
+  --spot-title: 0.95rem;      /* header title size */
+  --spot-embed-h: 360px;      /* LinkedIn iframe height */
+  --spot-gap: 10px;           /* gap between the two cards */
+  --spot-radius: 12px;        /* slightly smaller corners */
+}
+
+/* tighter grid & corners */
+.spotlights{ gap: var(--spot-gap); }
+.spotlight-card,
+.github-card{
+  border-radius: var(--spot-radius);
+}
+
+/* smaller headers */
+.spotlight-head,
+.gh-head{
+  padding: var(--spot-head-pad);
+}
+.spotlight-title,
+.gh-title{
+  font-size: var(--spot-title);
+}
+
+/* reduce card padding */
+.github-card{ padding: var(--spot-pad) var(--spot-pad); }
+
+/* make the LinkedIn embed shorter (you can drop to 320px if you want it even smaller) */
+.spotlight-image{ padding: 0 !important; overflow: hidden; }
+.spotlight-image .li-embed{
+  width: 100%;
+  height: var(--spot-embed-h);   /* ← adjust this number to taste */
+  display: block;
+  border: 0;
+}
+
+/* compact pills/rows in GitHub card */
+.gh-section{ padding-top: 8px; }
+.gh-section + .gh-section{ margin-top: 6px; }
+.gh-stats-row{ gap: 6px; margin-top: 6px; }
+.gh-pill{ padding: 3px 7px; font-size: 0.72rem; }
+
+/* keep commit list small; show a few and scroll the rest */
+.gh-commits{
+  max-height: 150px;     /* ≈ ~3 items; tweak to 120–180px as you like */
+  overflow: auto;
+  padding-right: 4px;
+}
+/* nice thin scrollbar */
+.gh-commits::-webkit-scrollbar{ width: 6px; }
+.gh-commits::-webkit-scrollbar-thumb{
+  background: rgba(148,163,184,0.35);
+  border-radius: 8px;
+}
+
+/* slightly smaller spacing per commit/PR row */
+.gh-commit{ padding: 6px 0; }
+.gh-pr{ padding: 6px 0; }
+
+/* optional: make the two cards a bit narrower relative to page width */
+@media (min-width: 1101px){
+  .spotlights{
+    grid-template-columns: 1fr 0.9fr; /* LinkedIn a hair wider; make both 0.9fr if you want both tighter */
+    justify-content: center;
+  }
+}
+
+
+/* === Make LinkedIn card match GitHub card height === */
+.spotlights { align-items: stretch; } /* grid items same row height */
+
+.spotlight-card,
+.github-card{
+  height: 100%;
   display: flex;
-  gap: 8px;
-}
-.btn-edit,
-.btn-reset{
-  padding: 6px 10px;
-  border-radius: 10px;
-  border: 1px solid var(--border-color);
-  background: rgba(30,41,59,0.85);
-  color: var(--text-primary);
-  font-size: 0.82rem;
-  cursor: pointer;
-  transition: transform .12s ease, border-color .12s ease, background .12s ease;
-}
-.btn-edit:hover,
-.btn-reset:hover{
-  transform: translateY(-1px);
-  border-color: var(--color-primary);
-  background: rgba(51,65,85,0.85);
-}
-.btn-edit.on{
-  border-color: var(--color-primary);
-  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.16) inset;
+  flex-direction: column;
 }
 
-/* =========================
-   Categories grid tweaks
-   ========================= */
-.categories-grid{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
-  gap: 14px;
-  grid-auto-flow: dense;      /* allows wide cards to pack nicely */
+/* header stays natural height, iframe takes the rest */
+.spotlight-head{ flex: 0 0 auto; }
+.spotlight-embed{
+  flex: 1 1 auto;
+  overflow: hidden;
+}
+.spotlight-embed .li-embed{
+  width: 100%;
+  height: 100% !important;     /* override earlier clamp/var-based height */
+  display: block;
+  border: 0;
 }
 
-/* Drag/resize UI inside the card (shown only in edit mode) */
-.category-card.editable{
-  outline: 1px dashed rgba(96,165,250,0.45);
-}
-.category-card.editable:active{
-  cursor: grabbing;
-}
-.category-card.is-dragging{
-  opacity: .6 !important;
-  transform: scale(0.99) !important;
+/* If they stack on mobile, go back to a sensible fixed-ish height */
+@media (max-width: 1100px){
+  .spotlight-card,
+  .github-card{ height: auto; }
+  .spotlight-embed{ min-height: 360px; }
 }
 
-.card-tools{
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  display: inline-flex;
-  gap: 6px;
-  z-index: 1;
+/* === LinkedIn card: perfect fit + skinny, styled scrollbar === */
+
+/* make sure the card clips its contents */
+.spotlight-card { overflow: hidden; }
+
+/* the iframe container fills remaining card space and uses a white bg
+   to hide any internal LI rounded corners so you don't see dark wedges */
+.spotlight-embed{
+  flex: 1 1 auto;
+  background: #fff;            /* matches LinkedIn post background */
+  padding: 0 !important;
+  overflow: hidden;            /* clip edges cleanly */
 }
-.drag-handle{
-  width: 28px; height: 28px;
-  display: grid; place-items: center;
+
+/* the actual LinkedIn iframe */
+.spotlight-embed .li-embed{
+  width: 100%;
+  height: 100% !important;     /* fill the card */
+  display: block;
+  border: 0;
+  outline: none;
+
+  /* clip to the card corners just in case the iframe renders smaller corners */
+  /* if you use a different radius var, swap it here */
+  clip-path: inset(0 round var(--radius-lg, 12px));
+
+  /* Firefox scrollbar */
+  scrollbar-width: thin;
+  scrollbar-color: rgba(148,163,184,0.55) transparent;
+}
+
+/* WebKit/Chromium scrollbar */
+.spotlight-embed .li-embed::-webkit-scrollbar{
+  width: 6px;                  /* skinny */
+  height: 6px;
+}
+.spotlight-embed .li-embed::-webkit-scrollbar-track{
+  background: linear-gradient(180deg, rgba(255,255,255,0), rgba(148,163,184,0.10));
   border-radius: 8px;
-  background: rgba(30,41,59,0.9);
-  border: 1px solid var(--border-color);
-  color: var(--text-secondary);
-  cursor: grab;
 }
-.drag-handle:active{ cursor: grabbing; }
-.size-btn{
-  width: 28px; height: 28px;
-  display: grid; place-items: center;
+.spotlight-embed .li-embed::-webkit-scrollbar-thumb{
+  background: rgba(148,163,184,0.55);
   border-radius: 8px;
-  background: rgba(30,41,59,0.9);
-  border: 1px solid var(--border-color);
-  color: var(--text-secondary);
-  cursor: pointer;
+  border: 1px solid rgba(255,255,255,0.5); /* subtle inner border for contrast */
 }
-.size-btn:hover,
-.drag-handle:hover{
-  background: rgba(51,65,85,0.85);
-  border-color: var(--color-primary);
-  color: var(--text-primary);
+.spotlight-embed .li-embed::-webkit-scrollbar-thumb:hover{
+  background: rgba(148,163,184,0.8);
+}
+.spotlight-embed .li-embed::-webkit-scrollbar-corner{
+  background: transparent;
 }
 
-/* Size variants */
-.category-card.size-wide{ grid-column: span 2; }
-.category-card.size-tall{ min-height: 320px; }
-.category-card.size-big{  grid-column: span 2; min-height: 320px; }
-
-/* Masonry-friendly on small screens */
-@media (max-width: 900px){
-  .categories-grid{ grid-template-columns: 1fr; }
-  .category-card.size-wide,
-  .category-card.size-big{ grid-column: auto; }
-}
-
-/* (Optional) nicer drop feel */
-.category-card{ transition: transform 220ms ease, border-color 140ms ease, box-shadow 220ms ease, opacity 140ms ease; }
-
+/* optional: if you still see any tiny corner halos, remove rounding on this one card */
+.spotlight-card { border-radius: var(--radius-lg, 12px); }
+.spotlight-embed,
+.spotlight-embed .li-embed { border-radius: 0; }
