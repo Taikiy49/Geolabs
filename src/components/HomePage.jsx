@@ -10,14 +10,23 @@ import {
   FaSearch,
   FaCalendarAlt,
   FaChartLine,
+  FaFolderOpen,
+  FaBoxOpen,
+  FaRobot,
+  FaCheckCircle,
+  FaGripLines,
+  FaExpandArrowsAlt,
 } from "react-icons/fa";
 
 const FAVORITES_KEY = "geolabs_favorites_v2";
 const RECENTS_KEY = "geolabs_recents_v2";
 const RECENT_MAX = 8;
 
-const normalizeText = (text = "") => text.toLowerCase().trim();
+// NEW: layout + size prefs
+const LAYOUT_ORDER_KEY = "geolabs_layout_order_v1"; // array of labels in order
+const CARD_SIZES_KEY   = "geolabs_card_sizes_v1";   // { [label]: 'n'|'w'|'t'|'b' }
 
+const normalizeText = (text = "") => text.toLowerCase().trim();
 const matchesSearch = (searchTerm, ...fields) => {
   const term = normalizeText(searchTerm);
   if (!term) return true;
@@ -28,7 +37,7 @@ const highlightText = (text, searchTerm) => {
   if (!searchTerm || !text) return text;
   try {
     const regex = new RegExp(
-      `(${searchTerm.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")})`,
+      `(${searchTerm.replace(/[.*+?^${}()|[\\]\\\\]/g, "\\$&")})`,
       "gi"
     );
     const parts = String(text).split(regex);
@@ -67,6 +76,14 @@ const deduplicateByKey = (array, keyFn) => {
   });
 };
 
+const timeOfDay = () => {
+  const h = new Date().getHours();
+  if (h < 5) return "Good night";
+  if (h < 12) return "Good morning";
+  if (h < 18) return "Good afternoon";
+  return "Good evening";
+};
+
 export default function HomePage() {
   const navigate = useNavigate();
   const [searchParams, setSearchParams] = useSearchParams();
@@ -80,7 +97,42 @@ export default function HomePage() {
   const [recents, setRecents] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
 
+  // NEW: layout edit mode + state
+  const [editMode, setEditMode] = useState(false);
+  const [draggingId, setDraggingId] = useState(null); // label of the card being dragged
+
+  // default order: labels in homepageCards order
+  const defaultOrder = useMemo(() => homepageCards.map((c) => c.label), []);
+  const [layoutOrder, setLayoutOrder] = useState(() => {
+    try {
+      const saved = JSON.parse(localStorage.getItem(LAYOUT_ORDER_KEY) || "[]");
+      if (Array.isArray(saved) && saved.length) return saved;
+    } catch {}
+    return defaultOrder;
+  });
+
+  // per-card sizes
+  const [cardSizes, setCardSizes] = useState(() => {
+    try {
+      const saved = JSON.parse(localStorage.getItem(CARD_SIZES_KEY) || "{}");
+      return typeof saved === "object" && saved ? saved : {};
+    } catch {}
+    return {};
+  });
+
   const pageRef = useRef(null);
+
+  // Demo metrics (replace with real values when available)
+  const demoMetrics = useMemo(
+    () => ({
+      docsIndexed: 12890,
+      coreBoxes: 412,
+      aiAnswersThisWeek: 76,
+      openTasks: 5,
+    }),
+    []
+  );
+  const weeklyDocs = useMemo(() => [8, 12, 10, 14, 9, 15, 13], []);
 
   // Load saved data
   useEffect(() => {
@@ -89,8 +141,7 @@ export default function HomePage() {
       const savedRecents = JSON.parse(localStorage.getItem(RECENTS_KEY) || "[]");
       setFavorites(savedFavorites);
       setRecents(savedRecents);
-    } catch (error) {
-      console.error("Error loading saved data:", error);
+    } catch {
       setFavorites([]);
       setRecents([]);
     } finally {
@@ -100,29 +151,27 @@ export default function HomePage() {
 
   // Update search params when query changes
   useEffect(() => {
-    if (searchQuery) {
-      setSearchParams({ search: searchQuery });
-    } else {
-      setSearchParams({});
-    }
+    if (searchQuery) setSearchParams({ search: searchQuery });
+    else setSearchParams({});
   }, [searchQuery, setSearchParams]);
+
+  // Persist layout & sizes
+  useEffect(() => {
+    try { localStorage.setItem(LAYOUT_ORDER_KEY, JSON.stringify(layoutOrder)); } catch {}
+  }, [layoutOrder]);
+
+  useEffect(() => {
+    try { localStorage.setItem(CARD_SIZES_KEY, JSON.stringify(cardSizes)); } catch {}
+  }, [cardSizes]);
 
   const saveFavorites = (newFavorites) => {
     setFavorites(newFavorites);
-    try {
-      localStorage.setItem(FAVORITES_KEY, JSON.stringify(newFavorites));
-    } catch (error) {
-      console.error("Error saving favorites:", error);
-    }
+    try { localStorage.setItem(FAVORITES_KEY, JSON.stringify(newFavorites)); } catch {}
   };
 
   const saveRecents = (newRecents) => {
     setRecents(newRecents);
-    try {
-      localStorage.setItem(RECENTS_KEY, JSON.stringify(newRecents));
-    } catch (error) {
-      console.error("Error saving recents:", error);
-    }
+    try { localStorage.setItem(RECENTS_KEY, JSON.stringify(newRecents)); } catch {}
   };
 
   const isFavorited = (path) => favorites.some((fav) => fav.path === path);
@@ -137,8 +186,7 @@ export default function HomePage() {
       timestamp: Date.now(),
     };
     if (isFavorited(path)) {
-      const updated = favorites.filter((fav) => fav.path !== path);
-      saveFavorites(updated);
+      saveFavorites(favorites.filter((fav) => fav.path !== path));
     } else {
       const updated = deduplicateByKey([entry, ...favorites], (item) => item.path);
       saveFavorites(updated);
@@ -154,10 +202,7 @@ export default function HomePage() {
       parent: metadata.parent.label,
       timestamp: Date.now(),
     };
-    const updated = deduplicateByKey([entry, ...recents], (item) => item.path).slice(
-      0,
-      RECENT_MAX
-    );
+    const updated = deduplicateByKey([entry, ...recents], (item) => item.path).slice(0, RECENT_MAX);
     saveRecents(updated);
   };
 
@@ -191,44 +236,82 @@ export default function HomePage() {
         const filteredSubpages = (card.subpages || []).filter((subpage) =>
           matchesSearch(
             term,
-            card.label,
-            card.sublabel,
-            card.description,
-            subpage.name,
-            subpage.description
+            card.label, card.sublabel, card.description,
+            subpage.name, subpage.description
           )
         );
         const cardMatches = matchesSearch(term, card.label, card.sublabel, card.description);
         if (cardMatches || filteredSubpages.length > 0) {
-          return {
-            ...card,
-            subpages: filteredSubpages.length > 0 || !term ? card.subpages : [],
-          };
+          return { ...card, subpages: filteredSubpages.length > 0 || !term ? card.subpages : [] };
         }
         return null;
       })
       .filter(Boolean);
   }, [searchQuery]);
 
-  // Reveal on scroll (smooth, minimal)
+  // Apply saved order to filtered list
+  const orderedCards = useMemo(() => {
+    const indexOf = (label) => {
+      const idx = layoutOrder.indexOf(label);
+      return idx === -1 ? Number.MAX_SAFE_INTEGER : idx;
+    };
+    return [...filteredCards].sort((a, b) => indexOf(a.label) - indexOf(b.label));
+  }, [filteredCards, layoutOrder]);
+
+  // Reveal on scroll
   useEffect(() => {
     const root = pageRef.current;
     if (!root) return;
     const items = root.querySelectorAll(".animate-on-scroll");
     const io = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((e) => {
-          if (e.isIntersecting) e.target.classList.add("visible");
-        });
-      },
+      (entries) => entries.forEach((e) => e.isIntersecting && e.target.classList.add("visible")),
       { threshold: 0.08 }
     );
     items.forEach((el) => io.observe(el));
     return () => io.disconnect();
   }, [filteredCards]);
 
-  const currentTime = new Date();
+  // Drag helpers
+  const reorder = (arr, fromLabel, toLabel) => {
+    if (fromLabel === toLabel) return arr;
+    const next = [...arr];
+    const from = next.indexOf(fromLabel);
+    const to   = next.indexOf(toLabel);
+    if (from === -1 || to === -1) return arr;
+    next.splice(to, 0, ...next.splice(from, 1));
+    return next;
+  };
 
+  const onCardDragStart = (label) => (e) => {
+    if (!editMode) return;
+    setDraggingId(label);
+    e.dataTransfer.effectAllowed = "move";
+    e.dataTransfer.setData("text/plain", label);
+    e.currentTarget.classList.add("is-dragging");
+  };
+  const onCardDragEnd = (e) => {
+    e.currentTarget.classList.remove("is-dragging");
+    setDraggingId(null);
+  };
+  const onCardDragOver = (overLabel) => (e) => {
+    if (!editMode) return;
+    e.preventDefault();
+    if (!draggingId || draggingId === overLabel) return;
+    setLayoutOrder((prev) => reorder(prev, draggingId, overLabel));
+  };
+  const cycleSize = (label) => {
+    setCardSizes((prev) => {
+      const cur = prev[label] || "n";
+      const next = cur === "n" ? "w" : cur === "w" ? "t" : cur === "t" ? "b" : "n";
+      return { ...prev, [label]: next };
+    });
+  };
+  const resetLayout = () => {
+    setLayoutOrder(defaultOrder);
+    setCardSizes({});
+  };
+
+  const currentTime = new Date();
   if (isLoading) {
     return (
       <div className="homepage">
@@ -246,29 +329,35 @@ export default function HomePage() {
         {/* Hero */}
         <section className="homepage-hero compact visible">
           <div className="hero-greeting">
-            <h1 className="hero-title">
-              Welcome back, {firstName}
-            </h1>
-            <p className="hero-subtitle">
-              Your geotechnical data platform — fast, consistent, and organized
-            </p>
+            <h1 className="hero-title">{timeOfDay()}, {firstName}</h1>
+            <p className="hero-subtitle">Your geotechnical data platform — fast, consistent, and organized</p>
             <div className="hero-meta">
               <div className="hero-meta-item">
                 <FaCalendarAlt />
                 <span>
                   {currentTime.toLocaleDateString("en-US", {
-                    weekday: "long",
-                    year: "numeric",
-                    month: "long",
-                    day: "numeric",
+                    weekday: "long", year: "numeric", month: "long", day: "numeric",
                   })}
                 </span>
               </div>
               <div className="hero-meta-item"><span>Geolabs Team</span></div>
-              <div className="hero-meta-item">
-                <FaChartLine />
-                <span>Analytics Ready</span>
-              </div>
+              <div className="hero-meta-item"><FaChartLine /><span>Analytics Ready</span></div>
+            </div>
+
+            {/* NEW: layout controls */}
+            <div className="hero-actions">
+              <button
+                className={`btn-edit ${editMode ? "on" : ""}`}
+                onClick={() => setEditMode((v) => !v)}
+                title="Reorder and resize cards"
+              >
+                {editMode ? "Done editing" : "Edit layout"}
+              </button>
+              {editMode && (
+                <button className="btn-reset" onClick={resetLayout} title="Reset order & sizes">
+                  Reset
+                </button>
+              )}
             </div>
           </div>
         </section>
@@ -287,15 +376,70 @@ export default function HomePage() {
           </div>
         </section>
 
+        {/* KPI / At a glance */}
+        <section className="kpi-grid animate-on-scroll visible">
+          <div className="kpi-card">
+            <div className="kpi-icon"><FaFolderOpen /></div>
+            <div className="kpi-meta">
+              <div className="kpi-label">Documents Indexed</div>
+              <div className="kpi-value">{demoMetrics.docsIndexed.toLocaleString()}</div>
+            </div>
+            <div className="kpi-trend">
+              <div className="kpi-bars">
+                {weeklyDocs.map((v, i) => (<span key={i} style={{ height: `${6 + v * 3}px` }} />))}
+              </div>
+              <div className="kpi-hint">last 7 days</div>
+            </div>
+          </div>
+          <div className="kpi-card">
+            <div className="kpi-icon"><FaBoxOpen /></div>
+            <div className="kpi-meta">
+              <div className="kpi-label">Core Boxes</div>
+              <div className="kpi-value">{demoMetrics.coreBoxes.toLocaleString()}</div>
+            </div>
+            <div className="kpi-pill">Inventory</div>
+          </div>
+          <div className="kpi-card">
+            <div className="kpi-icon"><FaRobot /></div>
+            <div className="kpi-meta">
+              <div className="kpi-label">AI Answers (wk)</div>
+              <div className="kpi-value">{demoMetrics.aiAnswersThisWeek}</div>
+            </div>
+            <div className="kpi-pill kpi-pill--glow">↑ healthy</div>
+          </div>
+          <div className="kpi-card">
+            <div className="kpi-icon"><FaCheckCircle /></div>
+            <div className="kpi-meta">
+              <div className="kpi-label">Open Tasks</div>
+              <div className="kpi-value">{demoMetrics.openTasks}</div>
+            </div>
+            <div className="kpi-pill kpi-pill--warn">priority</div>
+          </div>
+        </section>
+
+        {/* Spotlight */}
+        <section className="spotlight animate-on-scroll visible">
+          <div className="spotlight-image">
+            <div className="img-ph">Project photo / map area (add yours)</div>
+          </div>
+          <div className="spotlight-content">
+            <h3 className="spotlight-title">Project Spotlight</h3>
+            <p className="spotlight-desc">
+              Drop a banner image here (e.g., core sample mosaic, site map, or recent field photo).
+              Use this space to pin a quick note or link to a report.
+            </p>
+            <button className="spotlight-cta" onClick={() => navigate("/reports")}>
+              Open Reports
+            </button>
+          </div>
+        </section>
+
         {/* Quick Access */}
         {(favorites.length > 0 || recents.length > 0) && (
           <section className="quick-access compact visible">
             {favorites.length > 0 && (
               <div>
-                <h2 className="qa-title">
-                  <FaStar />
-                  Favorites
-                </h2>
+                <h2 className="qa-title"><FaStar />Favorites</h2>
                 <div className="qa-grid">
                   {favorites.slice(0, 6).map((favorite) => {
                     const metadata = findSubpageByPath(homepageCards, favorite.path);
@@ -321,10 +465,7 @@ export default function HomePage() {
 
             {recents.length > 0 && (
               <div>
-                <h2 className="qa-title">
-                  <FaClock />
-                  Recently Used
-                </h2>
+                <h2 className="qa-title"><FaClock />Recently Used</h2>
                 <div className="qa-grid">
                   {recents.slice(0, 6).map((recent) => {
                     const metadata = findSubpageByPath(homepageCards, recent.path);
@@ -350,94 +491,131 @@ export default function HomePage() {
           </section>
         )}
 
-        {/* Categories */}
+        {/* Categories (now draggable + resizable in Edit mode) */}
         <section className="categories-grid compact">
-          {filteredCards.map((card, index) => (
-            <article
-              key={index}
-              className={`category-card animate-on-scroll ${card.disabled ? "disabled" : ""}`}
-              style={{
-                animationDelay: `${index * 70}ms`,
-                opacity: card.disabled ? 0.6 : 1,
-                cursor: card.disabled ? "not-allowed" : "pointer",
-              }}
-              onClick={() => !card.disabled && card.path && handleNavigation(card.path)}
-            >
-              <div className="category-header">
-                <div className="category-icon">{card.icon}</div>
-                <div className="category-content">
-                  <h3 className="category-title">
-                    {highlightText(card.label, searchQuery)}
-                    {card.tag && <span className="category-badge">{card.tag}</span>}
-                  </h3>
-                  {card.sublabel && (
-                    <p className="category-subtitle">
-                      {highlightText(card.sublabel, searchQuery)}
-                    </p>
-                  )}
-                  {card.description && (
-                    <p className="category-description">
-                      {highlightText(card.description, searchQuery)}
-                    </p>
-                  )}
-                </div>
-              </div>
+          {orderedCards.map((card, index) => {
+            const size = cardSizes[card.label] || "n";
+            const sizeClass =
+              size === "w" ? "size-wide" : size === "t" ? "size-tall" : size === "b" ? "size-big" : "";
+            const editableClass = editMode ? "editable" : "";
 
-              {card.subpages && card.subpages.length > 0 && (
-                <div className="subpages-grid" onClick={(e) => e.stopPropagation()}>
-                  {card.subpages.map((subpage, subIndex) => (
-                    <div
-                      key={subIndex}
-                      className="subpage-item"
-                      onClick={() => handleNavigation(subpage.path, subpage.disabled)}
-                      style={{
-                        opacity: subpage.disabled ? 0.5 : 1,
-                        cursor: subpage.disabled ? "not-allowed" : "pointer",
+            const go = () => {
+              if (editMode) return; // disable navigation while editing
+              if (!card.disabled && card.path) handleNavigation(card.path);
+            };
+
+            return (
+              <article
+                key={card.label}
+                data-id={card.label}
+                className={`category-card animate-on-scroll ${sizeClass} ${editableClass} ${card.disabled ? "disabled" : ""}`}
+                style={{
+                  animationDelay: `${index * 70}ms`,
+                  opacity: card.disabled ? 0.6 : 1,
+                  cursor: editMode ? "grab" : (card.disabled ? "not-allowed" : "pointer"),
+                }}
+                onClick={go}
+                draggable={editMode}
+                onDragStart={onCardDragStart(card.label)}
+                onDragEnd={onCardDragEnd}
+                onDragOver={onCardDragOver(card.label)}
+                onDrop={(e) => e.preventDefault()}
+              >
+                {/* drag handle + resize when editing */}
+                {editMode && (
+                  <div className="card-tools">
+                    <span className="drag-handle" title="Drag to reorder">
+                      <FaGripLines />
+                    </span>
+                    <button
+                      className="size-btn"
+                      title="Resize (normal → wide → tall → big)"
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        cycleSize(card.label);
                       }}
                     >
-                      <div className="subpage-header">
-                        <div className="subpage-icon">{subpage.icon}</div>
-                        <div className="subpage-name">
-                          {highlightText(subpage.name, searchQuery)}
-                        </div>
-                      </div>
-                      {subpage.description && (
-                        <p className="subpage-description">
-                          {highlightText(subpage.description, searchQuery)}
-                        </p>
-                      )}
+                      <FaExpandArrowsAlt />
+                    </button>
+                  </div>
+                )}
 
-                      <button
-                        className={`favorite-btn ${isFavorited(subpage.path) ? "active" : ""}`}
-                        onClick={(e) => {
-                          e.stopPropagation();
-                          toggleFavorite(subpage.path);
-                        }}
-                        title={
-                          isFavorited(subpage.path)
-                            ? "Remove from favorites"
-                            : "Add to favorites"
-                        }
-                        aria-label={
-                          isFavorited(subpage.path)
-                            ? "Remove from favorites"
-                            : "Add to favorites"
-                        }
-                      >
-                        {isFavorited(subpage.path) ? <FaStar /> : <FaRegStar />}
-                      </button>
-                    </div>
-                  ))}
+                <div className="category-header">
+                  <div className="category-icon">{card.icon}</div>
+                  <div className="category-content">
+                    <h3 className="category-title">
+                      {highlightText(card.label, searchQuery)}
+                      {card.tag && <span className="category-badge">{card.tag}</span>}
+                    </h3>
+                    {card.sublabel && (
+                      <p className="category-subtitle">
+                        {highlightText(card.sublabel, searchQuery)}
+                      </p>
+                    )}
+                    {card.description && (
+                      <p className="category-description">
+                        {highlightText(card.description, searchQuery)}
+                      </p>
+                    )}
+                  </div>
                 </div>
-              )}
 
-              <div className="category-updated">{getTimeAgo(card.updated)}</div>
-            </article>
-          ))}
+                {card.subpages && card.subpages.length > 0 && (
+                  <div className="subpages-grid" onClick={(e) => e.stopPropagation()}>
+                    {card.subpages.map((subpage, subIndex) => (
+                      <div
+                        key={subIndex}
+                        className="subpage-item"
+                        onClick={() => handleNavigation(subpage.path, subpage.disabled)}
+                        style={{
+                          opacity: subpage.disabled ? 0.5 : 1,
+                          cursor: subpage.disabled ? "not-allowed" : "pointer",
+                        }}
+                      >
+                        <div className="subpage-header">
+                          <div className="subpage-icon">{subpage.icon}</div>
+                          <div className="subpage-name">
+                            {highlightText(subpage.name, searchQuery)}
+                          </div>
+                        </div>
+                        {subpage.description && (
+                          <p className="subpage-description">
+                            {highlightText(subpage.description, searchQuery)}
+                          </p>
+                        )}
+
+                        <button
+                          className={`favorite-btn ${isFavorited(subpage.path) ? "active" : ""}`}
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            toggleFavorite(subpage.path);
+                          }}
+                          title={
+                            isFavorited(subpage.path)
+                              ? "Remove from favorites"
+                              : "Add to favorites"
+                          }
+                          aria-label={
+                            isFavorited(subpage.path)
+                              ? "Remove from favorites"
+                              : "Add to favorites"
+                          }
+                        >
+                          {isFavorited(subpage.path) ? <FaStar /> : <FaRegStar />}
+                        </button>
+                      </div>
+                    ))}
+                  </div>
+                )}
+
+                <div className="category-updated">{getTimeAgo(card.updated)}</div>
+              </article>
+            );
+          })}
         </section>
 
         {/* Empty State */}
-        {filteredCards.length === 0 && searchQuery && (
+        {orderedCards.length === 0 && searchQuery && (
           <div className="empty-state animate-on-scroll">
             <FaSearch className="empty-state-icon" />
             <h3 className="empty-state-title">No results found</h3>

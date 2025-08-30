@@ -1,9 +1,6 @@
-// src/components/Sidebar.jsx
 import React, { useEffect, useMemo, useState } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import {
-  FaBars,
-  FaTimes,
   FaChevronDown,
   FaRobot,
   FaDatabase,
@@ -18,28 +15,56 @@ import {
   FaBoxOpen,
   FaFileAlt,
   FaChartBar,
-  FaCircle,
+  FaCircle
 } from "react-icons/fa";
 import "../styles/Sidebar.css";
 
-function useIsMobile(breakpoint = 1024) {
-  const [isMobile, setIsMobile] = useState(
-    typeof window !== "undefined" ? window.innerWidth < breakpoint : false
-  );
-  useEffect(() => {
-    const onResize = () => setIsMobile(window.innerWidth < breakpoint);
-    window.addEventListener("resize", onResize);
-    return () => window.removeEventListener("resize", onResize);
-  }, [breakpoint]);
-  return isMobile;
-}
+/**
+ * Overlay drawer sidebar:
+ * - Opens/closes via CustomEvent "geolabs:toggleSidebar"
+ *     • { detail: "toggle" }  -> toggles
+ *     • { detail: true/false } -> explicit open/close
+ * - Slides over content (no layout shift)
+ * - Closes on route change, backdrop click, or Esc
+ */
 
-export default function Sidebar({ collapsed, setCollapsed }) {
-  const isMobile = useIsMobile();
+export default function Sidebar() {
   const location = useLocation();
-  const path = location.pathname || "/";
+  const [open, setOpen] = useState(false);
 
-  // ---- NAV GROUPS (aligned with HomePage) ----
+  // Listen for header toggle (supports "toggle" or boolean)
+  useEffect(() => {
+    const handler = (e) => {
+      const d = e?.detail;
+      if (d === "toggle") setOpen((prev) => !prev);
+      else if (typeof d === "boolean") setOpen(d);
+      else setOpen((prev) => !prev);
+    };
+    window.addEventListener("geolabs:toggleSidebar", handler);
+    return () => window.removeEventListener("geolabs:toggleSidebar", handler);
+  }, []);
+
+  // Announce state so Header can morph icon (optional but nice)
+  useEffect(() => {
+    window.dispatchEvent(new CustomEvent("geolabs:sidebarChanged", { detail: { open } }));
+  }, [open]);
+
+  // Close on route change
+  useEffect(() => { setOpen(false); }, [location.pathname]);
+
+  // Close on ESC
+  useEffect(() => {
+    const onKey = (e) => { if (e.key === "Escape") setOpen(false); };
+    if (open) document.addEventListener("keydown", onKey);
+    return () => document.removeEventListener("keydown", onKey);
+  }, [open]);
+
+  // Prevent body scroll when open
+  useEffect(() => {
+    document.body.classList.toggle("sb-no-scroll", open);
+  }, [open]);
+
+  // Nav groups (aligned with your HomePage)
   const navigationGroups = useMemo(
     () => [
       {
@@ -48,16 +73,12 @@ export default function Sidebar({ collapsed, setCollapsed }) {
         icon: FaHome,
         items: [{ to: "/", icon: FaHome, label: "Dashboard" }],
       },
-
       {
         id: "ai",
         label: "AI & Knowledge",
         icon: FaRobot,
-        items: [
-          { to: "/ask-ai", icon: FaRobot, label: "Ask Geolabs AI" },
-        ],
+        items: [{ to: "/ask-ai", icon: FaRobot, label: "Ask Geolabs AI" }],
       },
-
       {
         id: "data",
         label: "Data & Indexing",
@@ -67,7 +88,6 @@ export default function Sidebar({ collapsed, setCollapsed }) {
           { to: "/db-admin", icon: FaCogs, label: "Index Manager" },
         ],
       },
-
       {
         id: "projects",
         label: "Projects & Files",
@@ -79,7 +99,6 @@ export default function Sidebar({ collapsed, setCollapsed }) {
           { to: "/core-box-inventory", icon: FaBoxOpen, label: "Core Inventory" },
         ],
       },
-
       {
         id: "reports",
         label: "Reports & Analytics",
@@ -89,7 +108,6 @@ export default function Sidebar({ collapsed, setCollapsed }) {
           { to: "/reports-binder", icon: FaChartBar, label: "Reports Binder" },
         ],
       },
-
       {
         id: "people",
         label: "People & Admin",
@@ -103,169 +121,84 @@ export default function Sidebar({ collapsed, setCollapsed }) {
     []
   );
 
-  // Which groups are active for current path
-  const activeGroups = useMemo(() => {
-    const active = {};
-    navigationGroups.forEach((group) => {
-      active[group.id] = group.items.some(
-        (item) => item.to === path || (item.to !== "/" && path.startsWith(item.to))
-      );
-    });
-    return active;
-  }, [path, navigationGroups]);
-
-  // Initial: open main and any active groups
-  const [expandedGroups, setExpandedGroups] = useState(() => {
+  // Expand/collapse per group (start expanded)
+  const [expanded, setExpanded] = useState(() => {
     const init = {};
-    navigationGroups.forEach((group) => {
-      init[group.id] = group.id === "main" || !!activeGroups[group.id];
-    });
+    navigationGroups.forEach((g) => (init[g.id] = true));
     return init;
   });
 
-  // Only update expanded state when it actually changes (prevents nested update warning)
-  useEffect(() => {
-    setExpandedGroups((prev) => {
-      const next = { ...prev };
-      for (const id of Object.keys(activeGroups)) {
-        if (activeGroups[id]) next[id] = true;
-      }
-      // shallow compare
-      const a = Object.keys(prev);
-      const b = Object.keys(next);
-      if (a.length !== b.length) return next;
-      for (const k of a) if (prev[k] !== next[k]) return next;
-      return prev;
-    });
-  }, [activeGroups]);
-
-  // Mobile drawer
-  const [sidebarOpen, setSidebarOpen] = useState(false);
-  useEffect(() => {
-    if (isMobile) setSidebarOpen(false);
-  }, [location.pathname, isMobile]);
-
-  const toggleGroup = (id) => {
-    if (collapsed) return;
-    setExpandedGroups((prev) => ({ ...prev, [id]: !prev[id] }));
-  };
+  const toggleGroup = (id) => setExpanded((p) => ({ ...p, [id]: !p[id] }));
 
   const NavItem = ({ to, icon: Icon, label }) => (
     <NavLink
       to={to}
       className={({ isActive }) => `sb-link ${isActive ? "active" : ""}`}
-      title={collapsed ? label : undefined}
+      onClick={() => setOpen(false)}
       end={to === "/"}
     >
-      <div className="sb-link-inner">
-        <Icon className="sb-icon" />
+      <div className="sb-row sb-row--sub">
+        <span className="sb-ico"><Icon /></span>
         <span className="sb-text">{label}</span>
+        <FaCircle className="sb-dot" />
       </div>
-      <FaCircle className="sb-dot" />
     </NavLink>
   );
 
   const Group = ({ group }) => {
     const GroupIcon = group.icon || FaDatabase;
-    const open = expandedGroups[group.id];
+    const isOpen = expanded[group.id];
 
     return (
       <div className="sb-group">
-        {group.items.length > 1 ? (
-          <button
-            className={`sb-group-trigger ${open ? "open" : ""} ${
-              activeGroups[group.id] ? "active" : ""
-            }`}
-            onClick={() => toggleGroup(group.id)}
-            aria-expanded={open}
-            title={collapsed ? group.label : undefined}
-          >
-            <GroupIcon className="sb-icon" />
-            <span className="sb-text">{group.label}</span>
-            {!collapsed && (
-              <FaChevronDown className={`sb-chevron ${open ? "rot" : ""}`} />
-            )}
-          </button>
-        ) : (
-          <NavItem {...group.items[0]} />
-        )}
+        <button
+          className={`sb-row sb-group-trigger sb-row--group ${isOpen ? "open" : ""}`}
+          onClick={() => toggleGroup(group.id)}
+          aria-expanded={isOpen}
+        >
+          <span className="sb-ico"><GroupIcon /></span>
+          <span className="sb-text">{group.label}</span>
+          <FaChevronDown className={`sb-chevron ${isOpen ? "rot" : ""}`} />
+        </button>
 
-        {!collapsed && group.items.length > 1 && (
-          <div className={`sb-collapse ${open ? "expanded" : "collapsed"}`}>
-            {group.items.map((item) => (
-              <NavItem key={item.to} {...item} />
-            ))}
-          </div>
-        )}
+        <div className={`sb-collapse ${isOpen ? "expanded" : "collapsed"}`}>
+          {group.items.map((item) => (
+            <NavItem key={item.to} {...item} />
+          ))}
+        </div>
       </div>
     );
   };
 
-  // MOBILE
-  if (isMobile) {
-    return (
-      <>
-        {sidebarOpen && (
-          <div
-            className="sb-backdrop"
-            onClick={() => setSidebarOpen(false)}
-            aria-hidden="true"
-          />
-        )}
-        <aside className={`sidebar modern ${sidebarOpen ? "open" : ""}`}>
-          <button
-            className="sb-toggle top"
-            onClick={() => setSidebarOpen(false)}
-            aria-label="Close sidebar"
-          >
-            <FaTimes />
-          </button>
-
-          <nav className="sb-nav" role="navigation" aria-label="Main navigation">
-            {navigationGroups.map((group) => (
-              <Group key={group.id} group={group} />
-            ))}
-          </nav>
-
-          <div className="sb-footer">
-            <span>Geolabs v2.0</span>
-          </div>
-        </aside>
-
-        {!sidebarOpen && (
-          <button
-            className="sb-fab"
-            onClick={() => setSidebarOpen(true)}
-            aria-label="Open sidebar"
-          >
-            <FaBars />
-          </button>
-        )}
-      </>
-    );
-  }
-
-  // DESKTOP
   return (
-    <aside className={`sidebar modern ${collapsed ? "collapsed" : ""}`}>
-      <button
-        className="sb-toggle"
-        onClick={() => setCollapsed(!collapsed)}
-        aria-label={collapsed ? "Expand sidebar" : "Collapse sidebar"}
-        title={collapsed ? "Expand" : "Collapse"}
+    <>
+      {/* Backdrop (starts below header) */}
+      <div
+        className={`sb-backdrop ${open ? "show" : ""}`}
+        onClick={() => setOpen(false)}
+        aria-hidden="true"
+      />
+
+      {/* Overlay Drawer */}
+      <aside
+        className={`sidebar-overlay ${open ? "open" : ""}`}
+        role="dialog"
+        aria-modal="true"
+        aria-label="Main navigation"
       >
-        {collapsed ? <FaBars /> : <FaTimes />}
-      </button>
+        {/* Header WITHOUT the X button */}
+        <div className="sb-header">
+          <div className="sb-title">Navigation</div>
+        </div>
 
-      <nav className="sb-nav" role="navigation" aria-label="Main navigation">
-        {navigationGroups.map((group) => (
-          <Group key={group.id} group={group} />
-        ))}
-      </nav>
+        <nav className="sb-nav" role="navigation">
+          {navigationGroups.map((group) => (
+            <Group key={group.id} group={group} />
+          ))}
+        </nav>
 
-      <div className="sb-footer">
-        <span>Geolabs v2.0</span>
-      </div>
-    </aside>
+        <div className="sb-footer">Geolabs v2.0</div>
+      </aside>
+    </>
   );
 }
