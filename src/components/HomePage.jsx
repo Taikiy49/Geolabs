@@ -492,19 +492,7 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* Search */}
-        <section className="homepage-search compact animate-on-scroll">
-          <div className="search-container-lg">
-            <FaSearch className="search-icon-lg" />
-            <input
-              type="text"
-              className="search-input-lg"
-              placeholder="Search tools, documents, and features…"
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-            />
-          </div>
-        </section>
+    
 
         {/* KPIs */}
         <section className="kpi-grid animate-on-scroll visible">
@@ -557,186 +545,86 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* SPOTLIGHTS: LinkedIn + GitHub */}
-        <section className="spotlights animate-on-scroll visible">
-          {/* LinkedIn */}
-          <article className="spotlight-card">
-            <div className="spotlight-head">
-              <div className="spotlight-title">Latest on LinkedIn</div>
-              <button
-                className="spotlight-open"
-                onClick={() =>
-                  window.open(LINKEDIN_POST_URL, "_blank", "noopener,noreferrer")
-                }
-                title="Open on LinkedIn"
-              >
-                <FaExternalLinkAlt />
-              </button>
-            </div>
-            <div className="spotlight-embed">
-              {getLinkedInEmbedSrc(LINKEDIN_POST_URL) ? (
-                <iframe
-                  className="li-embed"
-                  src={getLinkedInEmbedSrc(LINKEDIN_POST_URL)}
-                  height="260"
-                  width="100%"
-                  frameBorder="0"
-                  allowFullScreen=""
-                  title="Geolabs LinkedIn post"
-                  loading="lazy"
-                />
-              ) : (
-                <div className="img-ph">LinkedIn post embed unavailable</div>
-              )}
-            </div>
-          </article>
 
-          {/* GitHub (repo-focused) */}
-          <article className="github-card">
-            <div className="gh-head">
-              <div className="gh-title">
-                <FaGithub /> {GITHUB_OWNER}/{GITHUB_REPO}
-              </div>
-              <a
-                className="gh-open"
-                href={GITHUB_REPO_URL}
-                target="_blank"
-                rel="noreferrer"
-                title="Open GitHub Repo"
-              >
-                <FaExternalLinkAlt />
-              </a>
-            </div>
-
-            {ghLoading ? (
-              <div className="gh-skeleton">
-                <div className="sk-row" />
-                <div className="sk-row" />
-                <div className="sk-row" />
-              </div>
-            ) : ghError ? (
-              <div className="gh-error">{ghError}</div>
-            ) : (
-              <>
-                {repo && (
-                  <>
-                    <div className="gh-top">
-                      <div className="gh-desc">
-                        {repo.description || "No description provided."}
-                      </div>
-                      <div className="gh-stats-row">
-                        <span className="gh-pill"><FaStar /> {repo.stargazers_count}</span>
-                        <span className="gh-pill"><FaCodeBranch /> {repo.forks_count}</span>
-                        <span className="gh-pill"><FaEye /> {repo.subscribers_count || repo.watchers_count}</span>
-                        <span className="gh-pill"><FaTag /> {repo.default_branch}</span>
-                      </div>
-                      {latestRelease?.tag_name && (
-                        <div className="gh-release">
-                          Latest release:{" "}
-                          <a href={latestRelease.html_url} target="_blank" rel="noreferrer">
-                            {latestRelease.tag_name}
-                          </a>{" "}
-                          <span className="gh-evt-time">{timeAgo(latestRelease.published_at)}</span>
-                        </div>
-                      )}
-                    </div>
-
-                    {/* Languages */}
-                    {languages && Object.keys(languages).length > 0 && (
-                      <div className="gh-langs">
-                        <div className="gh-section-title">Languages</div>
-                        <div className="lang-bar">
-                          {(() => {
-                            const total = Object.values(languages).reduce((a, b) => a + b, 0) || 1;
-                            return Object.entries(languages).map(([lang, bytes]) => {
-                              const pct = Math.round((bytes / total) * 100);
-                              return (
-                                <span key={lang} className="lang-chunk" style={{ width: `${pct}%` }} title={`${lang} ${pct}%`} />
-                              );
-                            });
-                          })()}
-                        </div>
-                        <div className="lang-legend">
-                          {Object.entries(languages).slice(0, 5).map(([lang, bytes]) => {
-                            const total = Object.values(languages).reduce((a, b) => a + b, 0) || 1;
-                            const pct = Math.round((bytes / total) * 100);
-                            return <span key={lang}>{lang} {pct}%</span>;
-                          })}
-                        </div>
-                      </div>
-                    )}
-                  </>
-                )}
-
-                {/* Commits */}
-  
-              </>
-            )}
-          </article>
+        {/* Search */}
+        <section className="homepage-search compact animate-on-scroll">
+          <div className="search-container-lg">
+            <FaSearch className="search-icon-lg" />
+            <input
+              type="text"
+              className="search-input-lg"
+              placeholder="Search tools, documents, and features…"
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+            />
+          </div>
         </section>
 
-        {/* Quick Access */}
-        {(favorites.length > 0 || recents.length > 0) && (
-          <section className="quick-access compact visible">
-            {favorites.length > 0 && (
-              <div>
-                <h2 className="qa-title">
-                  <FaStar />
-                  Favorites
-                </h2>
-                <div className="qa-grid">
-                  {favorites.slice(0, 6).map((favorite) => {
-                    const metadata = findSubpageByPath(homepageCards, favorite.path);
-                    if (!metadata) return null;
-                    return (
-                      <button
-                        key={favorite.path}
-                        className="qa-item"
-                        onClick={() => handleNavigation(favorite.path)}
-                        title={`${favorite.parent} → ${favorite.name}`}
-                      >
-                        <div className="qa-icon">{metadata.subpage.icon}</div>
-                        <div className="qa-content">
-                          <div className="qa-name">{favorite.name}</div>
-                          <div className="qa-desc">{favorite.parent}</div>
-                        </div>
-                      </button>
-                    );
-                  })}
-                </div>
-              </div>
-            )}
+    
 
-            {recents.length > 0 && (
-              <div>
-                <h2 className="qa-title">
-                  <FaClock />
-                  Recently Used
-                </h2>
-                <div className="qa-grid">
-                  {recents.slice(0, 6).map((recent) => {
-                    const metadata = findSubpageByPath(homepageCards, recent.path);
-                    if (!metadata) return null;
-                    return (
-                      <button
-                        key={recent.path}
-                        className="qa-item"
-                        onClick={() => handleNavigation(recent.path)}
-                        title={`${recent.parent} → ${recent.name}`}
-                      >
-                        <div className="qa-icon">{metadata.subpage.icon}</div>
-                        <div className="qa-content">
-                          <div className="qa-name">{recent.name}</div>
-                          <div className="qa-desc">{recent.parent}</div>
-                        </div>
-                      </button>
-                    );
-                  })}
+        {/* Quick Access */}
+{(favorites.length > 0 || recents.length > 0) && (
+  <section className="quick-access compact visible">
+    {favorites.length > 0 && (
+      <div className="qa-section">
+        <h2 className="qa-title">
+          <FaStar />
+          Favorites
+        </h2>
+        <div className="qa-grid">
+          {favorites.slice(0, 6).map((favorite) => {
+            const metadata = findSubpageByPath(homepageCards, favorite.path);
+            if (!metadata) return null;
+            return (
+              <button
+                key={favorite.path}
+                className="qa-item"
+                onClick={() => handleNavigation(favorite.path)}
+                title={`${favorite.parent} → ${favorite.name}`}
+              >
+                <div className="qa-icon">{metadata.subpage.icon}</div>
+                <div className="qa-content">
+                  <div className="qa-name">{favorite.name}</div>
+                  <div className="qa-desc">{favorite.parent}</div>
                 </div>
-              </div>
-            )}
-          </section>
-        )}
+              </button>
+            );
+          })}
+        </div>
+      </div>
+    )}
+
+    {recents.length > 0 && (
+      <div className="qa-section">
+        <h2 className="qa-title">
+          <FaClock />
+          Recently Used
+        </h2>
+        <div className="qa-grid">
+          {recents.slice(0, 6).map((recent) => {
+            const metadata = findSubpageByPath(homepageCards, recent.path);
+            if (!metadata) return null;
+            return (
+              <button
+                key={recent.path}
+                className="qa-item"
+                onClick={() => handleNavigation(recent.path)}
+                title={`${recent.parent} → ${recent.name}`}
+              >
+                <div className="qa-icon">{metadata.subpage.icon}</div>
+                <div className="qa-content">
+                  <div className="qa-name">{recent.name}</div>
+                  <div className="qa-desc">{recent.parent}</div>
+                </div>
+              </button>
+            );
+          })}
+        </div>
+      </div>
+    )}
+  </section>
+)}
+
 
         {/* Categories (draggable + resizable in Edit mode) */}
         <section className="categories-grid compact">
@@ -862,6 +750,123 @@ export default function HomePage() {
               </article>
             );
           })}
+        </section>
+        {/* SPOTLIGHTS: LinkedIn + GitHub */}
+        <section className="spotlights animate-on-scroll visible">
+          {/* LinkedIn */}
+          <article className="spotlight-card">
+            <div className="spotlight-head">
+              <div className="spotlight-title">Latest on LinkedIn</div>
+              <button
+                className="spotlight-open"
+                onClick={() =>
+                  window.open(LINKEDIN_POST_URL, "_blank", "noopener,noreferrer")
+                }
+                title="Open on LinkedIn"
+              >
+                <FaExternalLinkAlt />
+              </button>
+            </div>
+            <div className="spotlight-embed">
+              {getLinkedInEmbedSrc(LINKEDIN_POST_URL) ? (
+                <iframe
+                  className="li-embed"
+                  src={getLinkedInEmbedSrc(LINKEDIN_POST_URL)}
+                  height="260"
+                  width="100%"
+                  frameBorder="0"
+                  allowFullScreen=""
+                  title="Geolabs LinkedIn post"
+                  loading="lazy"
+                />
+              ) : (
+                <div className="img-ph">LinkedIn post embed unavailable</div>
+              )}
+            </div>
+          </article>
+
+          {/* GitHub (repo-focused) */}
+          <article className="github-card">
+            <div className="gh-head">
+              <div className="gh-title">
+                <FaGithub /> {GITHUB_OWNER}/{GITHUB_REPO}
+              </div>
+              <a
+                className="gh-open"
+                href={GITHUB_REPO_URL}
+                target="_blank"
+                rel="noreferrer"
+                title="Open GitHub Repo"
+              >
+                <FaExternalLinkAlt />
+              </a>
+            </div>
+
+            {ghLoading ? (
+              <div className="gh-skeleton">
+                <div className="sk-row" />
+                <div className="sk-row" />
+                <div className="sk-row" />
+              </div>
+            ) : ghError ? (
+              <div className="gh-error">{ghError}</div>
+            ) : (
+              <>
+                {repo && (
+                  <>
+                    <div className="gh-top">
+                      <div className="gh-desc">
+                        {repo.description || "No description provided."}
+                      </div>
+                      <div className="gh-stats-row">
+                        <span className="gh-pill"><FaStar /> {repo.stargazers_count}</span>
+                        <span className="gh-pill"><FaCodeBranch /> {repo.forks_count}</span>
+                        <span className="gh-pill"><FaEye /> {repo.subscribers_count || repo.watchers_count}</span>
+                        <span className="gh-pill"><FaTag /> {repo.default_branch}</span>
+                      </div>
+                      {latestRelease?.tag_name && (
+                        <div className="gh-release">
+                          Latest release:{" "}
+                          <a href={latestRelease.html_url} target="_blank" rel="noreferrer">
+                            {latestRelease.tag_name}
+                          </a>{" "}
+                          <span className="gh-evt-time">{timeAgo(latestRelease.published_at)}</span>
+                        </div>
+                      )}
+                    </div>
+
+                    {/* Languages */}
+                    {languages && Object.keys(languages).length > 0 && (
+                      <div className="gh-langs">
+                        <div className="gh-section-title">Languages</div>
+                        <div className="lang-bar">
+                          {(() => {
+                            const total = Object.values(languages).reduce((a, b) => a + b, 0) || 1;
+                            return Object.entries(languages).map(([lang, bytes]) => {
+                              const pct = Math.round((bytes / total) * 100);
+                              return (
+                                <span key={lang} className="lang-chunk" style={{ width: `${pct}%` }} title={`${lang} ${pct}%`} />
+                              );
+                            });
+                          })()}
+                        </div>
+                        <div className="lang-legend">
+                          {Object.entries(languages).slice(0, 5).map(([lang, bytes]) => {
+                            const total = Object.values(languages).reduce((a, b) => a + b, 0) || 1;
+                            const pct = Math.round((bytes / total) * 100);
+                            return <span key={lang}>{lang} {pct}%</span>;
+                          })}
+                        </div>
+                      </div>
+                    )}
+                  </>
+                )}
+
+                {/* Commits */}
+  
+              </>
+            )}
+          </article>
         </section>
 
         {/* Empty State */}

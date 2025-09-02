@@ -292,3 +292,64 @@
   outline: 2px solid var(--color-primary);
   outline-offset: 2px;
 }
+
+
+/* === Layout edges: left hard-left, right hard-right === */
+.header {
+  grid-template-columns: auto 1fr auto; /* left cluster | flexible center | right cluster */
+  column-gap: 12px;                      /* a bit tighter by default */
+  padding: 0 14px;                       /* small edge padding */
+}
+
+.header-left  { justify-self: start; }   /* was end */
+.header-right { justify-self: end; }     /* was start */
+
+
+/* Large tablets/laptops: shrink gaps a bit */
+@media (max-width: 1280px) {
+  .header { column-gap: 10px; padding: 0 12px; }
+  .nav-link { padding: 6px 8px; }
+}
+
+/* <=1024px: we already hide the center search; also tighten spacing/buttons */
+@media (max-width: 1024px) {
+  .header { grid-template-columns: auto 1fr auto; column-gap: 8px; }
+  .header-menu-btn { width: 38px; height: 38px; font-size: 1.25rem; }
+  .header-logo { width: 32px; height: 32px; }
+  .header-title { font-size: 0.98rem; }
+  .action-btn { width: 34px; height: 34px; }
+  .profile-trigger { padding: 4px 6px; }
+}
+
+/* <=720px: hide non-essentials so everything fits on a single row */
+@media (max-width: 720px) {
+  /* Hide environment/API pills to free space */
+  .header-status { display: none; }
+
+  /* Keep brand but shorten it; keep nav minimal */
+  .nav-link span { display: none; }             /* hide "Dashboard" text, keep icon */
+  .nav-link { padding: 8px; gap: 4px; }
+
+  /* Tighten actions */
+  .action-btn { width: 32px; height: 32px; }
+  .profile-trigger { padding: 3px 6px; }
+  .profile-avatar { width: 24px; height: 24px; font-size: 0.78rem; }
+}
+
+/* <=560px: ultra-compact—ensure nothing overflows */
+@media (max-width: 560px) {
+  .header { padding: 0 8px; column-gap: 6px; }
+  .header-menu-btn { width: 34px; height: 34px; font-size: 1.15rem; }
+  .header-logo { width: 28px; height: 28px; border-radius: 8px; }
+  .action-btn { width: 30px; height: 30px; }
+  .profile-trigger { gap: 6px; }
+  .profile-chevron { display: none; }          /* avatar only */
+  .header-right { gap: 6px; }
+}
+
+/* <=420px: last-resort trims if you still feel cramped */
+@media (max-width: 420px) {
+  .header-right .profile-menu:nth-of-type(1) { display: none; } /* hide the "Create" (+) menu */
+  .header-right .profile-menu:nth-of-type(2) { display: none; } /* hide Notifications if needed */
+  /* You’ll still have: hamburger + logo (left) and profile (right) */
+}

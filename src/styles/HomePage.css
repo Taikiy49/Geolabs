@@ -880,3 +880,32 @@
 .spotlight-card { border-radius: var(--radius-lg, 12px); }
 .spotlight-embed,
 .spotlight-embed .li-embed { border-radius: 0; }
+
+/* --- Quick Access: spacing & anti-jump --- */
+.quick-access {
+  margin-top: 14px;          /* a little breathing room above */
+  margin-bottom: 22px;       /* more room before Categories/Spotlights */
+  overflow-anchor: none;     /* prevents scroll anchoring jumps when items are added/removed */
+}
+
+.quick-access .qa-section + .qa-section {
+  margin-top: 14px;          /* spacing between Favorites and Recently Used */
+}
+
+.qa-title {                  /* tighter title spacing that still reads well */
+  margin-bottom: 8px;
+}
+
+/* --- Categories to Spotlights: add top gap so they don't touch --- */
+.categories-grid { margin-bottom: 16px; }  /* extra space below the grid */
+
+.spotlights {
+  margin-top: 24px;          /* space above “Latest on LinkedIn / GitHub” */
+  margin-bottom: 24px;       /* and some space below, per your note */
+  gap: 16px;                 /* keep a comfortable gap between the two cards */
+}
+
+/* Optional: if you want just a hair more separation before spotlights on narrow screens */
+@media (max-width: 1100px) {
+  .spotlights { margin-top: 18px; margin-bottom: 26px; }
+}

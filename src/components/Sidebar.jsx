@@ -1,3 +1,4 @@
+// src/components/Sidebar.jsx
 import React, { useEffect, useMemo, useState } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import {
@@ -15,7 +16,11 @@ import {
   FaBoxOpen,
   FaFileAlt,
   FaChartBar,
-  FaCircle
+  FaCircle,
+  // ⬇️ NEW ICONS FOR IT ADMIN
+  FaUserCheck,
+  FaUserTimes,
+  FaTicketAlt
 } from "react-icons/fa";
 import "../styles/Sidebar.css";
 
@@ -115,6 +120,17 @@ export default function Sidebar() {
         items: [
           { to: "/contacts", icon: FaAddressBook, label: "Directory" },
           { to: "/admin", icon: FaCogs, label: "Admin Console" },
+        ],
+      },
+      // ⬇️ NEW: IT Administration group
+      {
+        id: "itadmin",
+        label: "IT Administration",
+        icon: FaUserShield, // change to FaCogs if you want it to look different from People & Admin
+        items: [
+          { to: "/it-onboarded", icon: FaUserCheck, label: "Onboarded Accounts" },
+          { to: "/it-terminated", icon: FaUserTimes, label: "Terminated Accounts" },
+          { to: "/it-tickets", icon: FaTicketAlt, label: "Ticket Requests" },
         ],
       },
     ],

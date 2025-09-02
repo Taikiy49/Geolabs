@@ -10,7 +10,11 @@ import {
   FaCloudUploadAlt,
   FaBoxOpen,
   FaEnvelopeOpenText,
-  FaShieldAlt
+  FaShieldAlt,
+  FaUserCheck,
+  FaUserTimes,
+  FaTicketAlt,
+  FaQuestionCircle
 } from "react-icons/fa";
 
 /**
@@ -166,6 +170,40 @@ const homepageCards = [
         path: "/admin",
         description:
           "Roles, activity, and system settings (owners/admins only)."
+      }
+    ]
+  },
+
+  // 6 — IT Administration
+  {
+    label: "IT Administration",
+    sublabel: "Onboarding, support & FAQs",
+    tag: "IT",
+    updated: "2025-09-02",
+    icon: <FaShieldAlt size={40} />,
+    description:
+      "Manage IT tasks for employees: onboarding, offboarding, tickets, and support resources.",
+    subpages: [
+      {
+        name: "Onboarded Accounts",
+        icon: <FaUserCheck />,
+        path: "/it-onboarded",
+        description:
+          "View and manage all currently onboarded employee accounts."
+      },
+      {
+        name: "Terminated Accounts",
+        icon: <FaUserTimes />,
+        path: "/it-terminated",
+        description:
+          "Review terminated accounts and confirm offboarding steps."
+      },
+      {
+        name: "Ticket Requests",
+        icon: <FaTicketAlt />,
+        path: "/it-tickets",
+        description:
+          "Submit and track IT support requests for hardware, software, and access."
       }
     ]
   }

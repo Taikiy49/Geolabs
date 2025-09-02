@@ -216,3 +216,25 @@
   outline: 2px solid var(--color-primary);
   outline-offset: 2px;
 }
+
+
+/* === Compact tweaks (global) === */
+.sb-nav { padding: 6px 6px; }
+.sb-group { margin: 4px 0; }
+
+.sb-link { margin: 2px 6px; }                 /* was 4px 6px */
+.sb-row--group {
+  padding: 10px 10px;                         /* was 12px 12px */
+  min-height: 40px;                           /* was 44px */
+  font-size: 0.92rem;                         /* was 0.95rem */
+}
+.sb-row--sub {
+  padding: 6px 8px;                           /* was 8px 10px */
+  min-height: 32px;                           /* was 36px */
+  font-size: 0.85rem;                         /* was 0.88rem */
+}
+.sb-ico { width: 20px; height: 20px; }        /* was 24px */
+.sb-collapse { margin-left: 6px; }            /* was 8px */
+
+.sb-header { padding: 8px 10px; }             /* tighter header */
+.sb-title { font-weight: 800; font-size: 0.98rem; }
