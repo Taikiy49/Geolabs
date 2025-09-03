@@ -1,7 +1,7 @@
 /* Header: 3-column grid so the search stays centered and
    the gaps to left/right are identical via column-gap */
 .header {
-  --header-h: 56px;
+  --header-h: 48px;
   --header-gap: 16px; /* controls equal spacing between left|center|right */
   position: sticky;
   top: 0;

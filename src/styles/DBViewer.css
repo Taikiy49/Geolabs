@@ -4,7 +4,7 @@
   flex-direction: column;
   height: 100vh;
   background: 
-    radial-gradient(circle at 20% 80%, rgba(79, 143, 247, 0.06) 0%, transparent 50%),
+  padding: var(--space-3);
     radial-gradient(circle at 80% 20%, rgba(124, 58, 237, 0.06) 0%, transparent 50%),
     var(--bg-primary);
   position: relative;
@@ -23,7 +23,7 @@
   align-items: center;
   justify-content: space-between;
   gap: var(--space-4);
-  flex-wrap: wrap;
+  padding: var(--space-3) var(--space-4);
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.25);
 }
 
@@ -637,7 +637,7 @@
 .empty-icon {
   font-size: 4rem;
   color: var(--text-muted);
-  margin-bottom: var(--space-6);
+  margin-bottom: var(--space-4);
   opacity: 0.5;
 }
 

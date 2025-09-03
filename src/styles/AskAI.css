@@ -18,7 +18,7 @@
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px);
   border-bottom: 1px solid var(--border-color);
-  padding: var(--space-4) var(--space-6);
+  padding: var(--space-3) var(--space-4);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -215,7 +215,7 @@
 .chat-messages {
   flex: 1;
   overflow-y: auto;
-  padding: var(--space-6);
+  padding: var(--space-4);
   background: var(--bg-primary);
   position: relative;
 }
@@ -233,7 +233,7 @@
 
 /* Message Pairs */
 .message-pair {
-  margin-bottom: var(--space-8);
+  margin-bottom: var(--space-5);
   animation: fadeIn 0.3s ease-out;
 }
 
@@ -266,7 +266,7 @@
   background: var(--bg-card);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-xl);
-  padding: var(--space-6);
+  padding: var(--space-4);
   box-shadow: var(--shadow-md);
   position: relative;
   backdrop-filter: blur(10px);
@@ -435,7 +435,7 @@
 .ai-input-area {
   background: var(--bg-secondary);
   border-top: 1px solid var(--border-color);
-  padding: var(--space-6);
+  padding: var(--space-4);
 }
 
 .input-container {
