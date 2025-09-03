@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import './App.css';
 import Header from './components/Header';
 import Sidebar from './components/Sidebar';
@@ -19,31 +19,29 @@ import S3Viewer from './components/S3Viewer';
 
 function App() {
   return (
-    <Router>
-      <div className="App">
-        <Header />
-        <div className="app-container">
-          <Sidebar />
-          <main className="main-content">
-            <Routes>
-              <Route path="/" element={<HomePage />} />
-              <Route path="/ask-ai" element={<AskAI />} />
-              <Route path="/reports" element={<Reports />} />
-              <Route path="/reports-binder" element={<ReportsBinder />} />
-              <Route path="/core-box-inventory" element={<CoreBoxInventory />} />
-              <Route path="/ocr-lookup" element={<OCRLookup />} />
-              <Route path="/contacts" element={<Contacts />} />
-              <Route path="/it-tickets" element={<ITTickets />} />
-              <Route path="/admin" element={<Admin />} />
-              <Route path="/db-admin" element={<DBAdmin />} />
-              <Route path="/db-viewer" element={<DBViewer />} />
-              <Route path="/s3-admin" element={<S3Admin />} />
-              <Route path="/s3-viewer" element={<S3Viewer />} />
-            </Routes>
-          </main>
-        </div>
+    <div className="App">
+      <Header />
+      <div className="app-container">
+        <Sidebar />
+        <main className="main-content">
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/ask-ai" element={<AskAI />} />
+            <Route path="/reports" element={<Reports />} />
+            <Route path="/reports-binder" element={<ReportsBinder />} />
+            <Route path="/core-box-inventory" element={<CoreBoxInventory />} />
+            <Route path="/ocr-lookup" element={<OCRLookup />} />
+            <Route path="/contacts" element={<Contacts />} />
+            <Route path="/it-tickets" element={<ITTickets />} />
+            <Route path="/admin" element={<Admin />} />
+            <Route path="/db-admin" element={<DBAdmin />} />
+            <Route path="/db-viewer" element={<DBViewer />} />
+            <Route path="/s3-admin" element={<S3Admin />} />
+            <Route path="/s3-viewer" element={<S3Viewer />} />
+          </Routes>
+        </main>
       </div>
-    </Router>
+    </div>
   );
 }
 
