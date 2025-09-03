@@ -62,13 +62,12 @@
 }
 
 /* ---------- Page ---------- */
-.homepage{
-  min-height: 100vh;
-  background: var(--bg-page);
+.homepage {
   position: relative;
-  overflow-x: hidden;
-  color: var(--text-primary);
+  z-index: 1;                   /* sit above the background layer */
+  min-height: 100%;
 }
+
 .homepage::before{
   content:"";
   position:absolute; inset:0;
@@ -80,13 +79,6 @@
     radial-gradient(circle at 70% 70%, rgba(34, 211, 238, 0.03) 0%, transparent 50%);
   pointer-events:none;
 }
-/* Extra breathing room under homepage cards */
-.homepage::after {
-  content: "";
-  display: block;
-  height: 45px; /* adjust once and done */
-}
-
 
 .homepage-container{
   position:relative; z-index:1;

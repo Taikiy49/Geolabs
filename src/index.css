@@ -11,23 +11,29 @@
 }
 
 html {
-  height: 100%;
   font-size: 16px;
 }
 
 body {
-  height: 100%;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: 
-    radial-gradient(circle at 20% 80%, rgba(0, 212, 255, 0.1) 0%, transparent 50%),
-    radial-gradient(circle at 80% 20%, rgba(139, 92, 246, 0.1) 0%, transparent 50%),
-    radial-gradient(circle at 40% 40%, rgba(6, 255, 165, 0.05) 0%, transparent 50%),
+overflow-x: hidden;
+  overflow-y: auto;            /* allow natural scroll (was hidden) */
+  padding-bottom: env(safe-area-inset-bottom);
+  background:
+    radial-gradient(circle at 20% 80%, rgba(0, 212, 255, 0.10) 0%, transparent 60%),
+    radial-gradient(circle at 80% 20%, rgba(139, 92, 246, 0.10) 0%, transparent 60%),
+    radial-gradient(circle at 50% 40%, rgba(6, 255, 165, 0.06) 0%, transparent 70%),
     linear-gradient(135deg, #0a0e1a 0%, #111827 50%, #1f2937 100%);
+  background-attachment: local; /* avoid iOS issues with fixed backgrounds */
   color: var(--text-primary);
-  overflow: hidden;
+}
+
+html, body {
+  height: auto;
+  min-height: 100dvh;         /* modern viewport unit = device viewport */
 }
 
 #root {
@@ -146,31 +152,22 @@ body {
 
 /* App Layout */
 .app-container {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  overflow: hidden;
   position: relative;
-  background: 
-    radial-gradient(circle at 25% 75%, rgba(0, 212, 255, 0.08) 0%, transparent 60%),
-    radial-gradient(circle at 75% 25%, rgba(139, 92, 246, 0.08) 0%, transparent 60%),
-    linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 50%, var(--bg-tertiary) 100%);
-  min-height: 100vh;
+  min-height: 100dvh;
+  isolation: isolate;           /* create a new stacking context */
+  background: transparent;      /* background is handled by body now */
 }
 
 .app-container::before {
   content: '';
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: 
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background:
     radial-gradient(circle at 15% 85%, rgba(0, 212, 255, 0.12) 0%, transparent 55%),
     radial-gradient(circle at 85% 15%, rgba(139, 92, 246, 0.12) 0%, transparent 55%),
     radial-gradient(circle at 50% 50%, rgba(6, 255, 165, 0.06) 0%, transparent 70%);
-  pointer-events: none;
-  z-index: -1;
 }
 
 .app-body {
