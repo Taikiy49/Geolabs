@@ -12,6 +12,7 @@ export const msalConfig = {
     allowNativeBroker: false, // Disables WAM Broker
     windowHashTimeout: 60000,
     iframeHashTimeout: 6000,
-    loadFrameTimeout: 0
+    loadFrameTimeout: 0,
+    allowRedirectInIframe: false // Prevent iframe redirects
   }
 };

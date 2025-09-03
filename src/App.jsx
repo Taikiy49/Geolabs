@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
 import { MsalAuthenticationTemplate, useMsal } from '@azure/msal-react';
-import { InteractionType } from '@azure/msal-browser';
+// import { InteractionType } from '@azure/msal-browser';
 import axios from 'axios';
 
 import API_URL from './config';
@@ -110,12 +110,13 @@ const AuthenticatedApp = () => {
 
 export default function App() {
   return (
-    <MsalAuthenticationTemplate
-      interactionType={InteractionType.Redirect}
-      loadingComponent={CustomLoading}
-      errorComponent={CustomError}
-    >
-      <AuthenticatedApp />
-    </MsalAuthenticationTemplate>
+    // <MsalAuthenticationTemplate
+    //   interactionType={InteractionType.Redirect}
+    //   loadingComponent={CustomLoading}
+    //   errorComponent={CustomError}
+    // >
+    //   <AuthenticatedApp />
+    // </MsalAuthenticationTemplate>
+    <AuthenticatedApp />
   );
 }
