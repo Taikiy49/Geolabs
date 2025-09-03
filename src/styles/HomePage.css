@@ -503,6 +503,133 @@
   .category-card,.subpage-item,.qa-item,.github-card,.spotlight-card{ border-width:2px; }
 }
 
+/* ---------- Footer ---------- */
+.homepage-footer {
+  margin-top: var(--space-8);
+  padding: var(--space-6) 0;
+  border-top: 1px solid var(--border-color);
+  background: 
+    linear-gradient(135deg, rgba(10, 14, 26, 0.95), rgba(17, 24, 39, 0.9)),
+    radial-gradient(circle at 50% 0%, rgba(0, 212, 255, 0.08), transparent 70%);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  position: relative;
+}
+
+.homepage-footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--color-primary), transparent);
+  opacity: 0.6;
+}
+
+.footer-content {
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 0 var(--space-4);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-6);
+  flex-wrap: wrap;
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.footer-logo {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  object-fit: cover;
+  border: 1px solid rgba(0, 212, 255, 0.3);
+  box-shadow: 0 0 15px rgba(0, 212, 255, 0.2);
+}
+
+.footer-title {
+  font-size: 1.125rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.footer-description {
+  font-size: var(--font-size-sm);
+  color: var(--text-muted);
+  margin: 0;
+  max-width: 300px;
+}
+
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  align-items: flex-end;
+}
+
+.footer-links {
+  display: flex;
+  gap: var(--space-4);
+}
+
+.footer-link {
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  transition: color var(--transition-fast);
+}
+
+.footer-link:hover {
+  color: var(--color-primary);
+  text-shadow: 0 0 8px rgba(0, 212, 255, 0.4);
+}
+
+.footer-meta {
+  display: flex;
+  gap: var(--space-3);
+  font-size: var(--font-size-xs);
+  color: var(--text-muted);
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: var(--space-4);
+  }
+  
+  .footer-right {
+    align-items: center;
+  }
+  
+  .footer-links {
+    flex-direction: column;
+    gap: var(--space-2);
+  }
+  
+  .footer-meta {
+    flex-direction: column;
+    gap: var(--space-1);
+  }
+}
+
 /* ---------- Extra-compact toggle (optional) ----------
    Add `density-compact` to <body> to shrink further by ~8–10% */
 body.density-compact :root{
