@@ -190,6 +190,7 @@ body {
   position: relative;
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
+  padding-bottom: var(--space-8);
 }
 
 .main-content::-webkit-scrollbar {

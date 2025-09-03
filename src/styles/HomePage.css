@@ -84,6 +84,7 @@
   max-width: 1360px;            /* wider so content feels smaller */
   margin:0 auto;
   padding: var(--space-4) var(--space-4) var(--space-5);
+  padding-bottom: var(--space-8);
 }
 .homepage-container.compact{ padding-top: var(--space-3); }
 
@@ -352,6 +353,8 @@
   transform: translateY(-2px);
   box-shadow: var(--shadow-lg); border-color: var(--color-primary);
   background: rgba(17,24,39,.98);
+  z-index: 10;
+  position: relative;
 }
 .category-card.disabled{ pointer-events:none; opacity:.6; }
 
