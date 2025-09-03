@@ -80,9 +80,17 @@
     radial-gradient(circle at 70% 70%, rgba(34, 211, 238, 0.03) 0%, transparent 50%);
   pointer-events:none;
 }
+/* Extra breathing room under homepage cards */
+.homepage::after {
+  content: "";
+  display: block;
+  height: 45px; /* adjust once and done */
+}
+
 
 .homepage-container{
   position:relative; z-index:1;
+
   max-width: 1360px;            /* wider so content feels smaller */
   margin:0 auto;
   padding: var(--space-4) var(--space-4) var(--space-5);
@@ -298,6 +306,8 @@
 
 /* ---------- Quick Access ---------- */
 .quick-access{ margin: var(--space-4) 0 var(--space-5); overflow-anchor: none; }
+
+.qa-section{ margin-bottom: var(--space-4);}
 .qa-title{
   font-size: 1rem; font-weight: 750; margin:0 0 var(--space-3) 0;
   display:inline-flex; align-items:center; gap: var(--space-2); color: var(--text-primary);
@@ -355,7 +365,6 @@
   opacity:.55;
 }
 .category-card:hover{
-  transform: translateY(-2px);
   box-shadow: 
     var(--shadow-lg), 
     0 0 20px rgba(0, 212, 255, 0.15),
