@@ -26,14 +26,14 @@
 
   /* color */
   --bg-page:
-    radial-gradient(circle at 20% 80%, rgba(0, 212, 255, 0.15) 0%, transparent 50%),
-    radial-gradient(circle at 80% 20%, rgba(139, 92, 246, 0.15) 0%, transparent 50%),
-    radial-gradient(circle at 40% 40%, rgba(6, 255, 165, 0.08) 0%, transparent 50%),
-    radial-gradient(circle at 60% 10%, rgba(255, 0, 128, 0.06) 0%, transparent 50%),
+    radial-gradient(circle at 20% 80%, rgba(0, 212, 255, 0.08) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(139, 92, 246, 0.08) 0%, transparent 50%),
+    radial-gradient(circle at 40% 40%, rgba(6, 255, 165, 0.04) 0%, transparent 50%),
+    radial-gradient(circle at 60% 10%, rgba(255, 0, 128, 0.03) 0%, transparent 50%),
     linear-gradient(135deg, #0f1629 0%, #1a2332 50%, #243447 100%);
   --bg-card: rgba(17, 24, 39, 0.94);
   --bg-card-2: rgba(31, 41, 55, 0.9);
-  --bg-hover: rgba(0, 212, 255, 0.18);
+  --bg-hover: rgba(0, 212, 255, 0.12);
 
   --text-primary: #eaf4ff;
   --text-secondary: #d9e7f7;
@@ -73,11 +73,11 @@
   content:"";
   position:absolute; inset:0;
   background:
-    radial-gradient(circle at 15% 85%, rgba(0, 212, 255, 0.18) 0%, transparent 60%),
-    radial-gradient(circle at 85% 15%, rgba(139, 92, 246, 0.18) 0%, transparent 60%),
-    radial-gradient(circle at 50% 50%, rgba(6, 255, 165, 0.12) 0%, transparent 70%),
-    radial-gradient(circle at 30% 30%, rgba(255, 0, 128, 0.08) 0%, transparent 50%),
-    radial-gradient(circle at 70% 70%, rgba(34, 211, 238, 0.06) 0%, transparent 50%);
+    radial-gradient(circle at 15% 85%, rgba(0, 212, 255, 0.10) 0%, transparent 60%),
+    radial-gradient(circle at 85% 15%, rgba(139, 92, 246, 0.10) 0%, transparent 60%),
+    radial-gradient(circle at 50% 50%, rgba(6, 255, 165, 0.06) 0%, transparent 70%),
+    radial-gradient(circle at 30% 30%, rgba(255, 0, 128, 0.04) 0%, transparent 50%),
+    radial-gradient(circle at 70% 70%, rgba(34, 211, 238, 0.03) 0%, transparent 50%);
   pointer-events:none;
 }
 
@@ -355,8 +355,8 @@
   transform: translateY(-2px);
   box-shadow: 
     var(--shadow-lg), 
-    0 0 30px rgba(0, 212, 255, 0.25),
-    inset 0 0 20px rgba(0, 212, 255, 0.08); 
+    0 0 20px rgba(0, 212, 255, 0.15),
+    inset 0 0 15px rgba(0, 212, 255, 0.05); 
   border-color: var(--color-primary);
   background: rgba(17,24,39,.98);
   z-index: 2;
@@ -398,9 +398,9 @@
   display:grid; place-items:center; color:#fff; font-size:.95rem;
   background: linear-gradient(135deg, var(--color-primary), var(--color-secondary), var(--color-tertiary));
   box-shadow: 
-    0 3px 14px rgba(0,212,255,.35), 
+    0 3px 12px rgba(0,212,255,.25), 
     inset 0 1px 0 rgba(255,255,255,.1),
-    0 0 20px rgba(0,212,255,.3);
+    0 0 15px rgba(0,212,255,.2);
   position:relative;
 }
 .category-icon::before{
