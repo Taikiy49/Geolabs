@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: column;
   height: 100vh;
+  overflow: hidden;
   background: 
     radial-gradient(circle at 20% 80%, rgba(79, 143, 247, 0.06) 0%, transparent 50%),
     radial-gradient(circle at 80% 20%, rgba(124, 58, 237, 0.06) 0%, transparent 50%),
@@ -278,6 +279,7 @@
   flex: 1;
   overflow-y: auto;
   padding: var(--space-4);
+  padding-bottom: var(--space-8);
 }
 
 .s3a-empty {
@@ -296,6 +298,8 @@
   overflow: hidden;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
+  position: relative;
+  z-index: 1;
 }
 
 .s3a-bucket-head {
@@ -311,6 +315,7 @@
 
 .s3a-bucket-head:hover {
   background: var(--bg-hover);
+  z-index: 2;
 }
 
 .s3a-caret {
@@ -363,6 +368,8 @@
 
 .s3a-table tbody tr:hover {
   background: rgba(79, 143, 247, 0.05);
+  position: relative;
+  z-index: 2;
 }
 
 .s3a-check-td {
@@ -408,6 +415,8 @@
   background: var(--bg-hover);
   color: var(--text-primary);
   border-color: var(--color-primary);
+  z-index: 3;
+  position: relative;
 }
 
 .s3a-icon.danger {
