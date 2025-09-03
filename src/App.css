@@ -77,11 +77,6 @@
   }
 }
 
-@media (max-width: 768px) {
-  .main-content {
-    padding: var(--space-4);
-  }
-}
 
 /* Animation Utilities */
 @keyframes fadeIn {

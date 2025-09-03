@@ -20,6 +20,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 overflow-x: hidden;
+  overflow-y: hidden;            /* allow natural scroll (was hidden) */
   padding-bottom: env(safe-area-inset-bottom);
   background:
     radial-gradient(circle at 20% 80%, rgba(0, 212, 255, 0.10) 0%, transparent 60%),
@@ -28,7 +29,6 @@ overflow-x: hidden;
     linear-gradient(135deg, #0a0e1a 0%, #111827 50%, #1f2937 100%);
   background-attachment: local; /* avoid iOS issues with fixed backgrounds */
   color: var(--text-primary);
-  
 }
 
 html, body {
@@ -153,6 +153,7 @@ html, body {
 
 /* App Layout */
 .app-container {
+  overflow-y: auto;
   position: relative;
   min-height: 100dvh;
   isolation: isolate;           /* create a new stacking context */
@@ -178,7 +179,6 @@ html, body {
 }
 
 .main-content {
-  overflow-y: auto;
   flex: 1;
   overflow-x: hidden;
   background: var(--bg-primary);
