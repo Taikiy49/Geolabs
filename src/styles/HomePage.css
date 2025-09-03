@@ -505,7 +505,6 @@
 
 /* ---------- Footer ---------- */
 .homepage-footer {
-  margin-top: var(--space-8);
   padding: var(--space-6) 0;
   border-top: 1px solid var(--border-color);
   background: 

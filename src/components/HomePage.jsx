@@ -766,7 +766,7 @@ export default function HomePage() {
       </div>
 
       {/* Footer */}
-      <footer className="homepage-footer animate-on-scroll">
+      <footer className="homepage-footer animate-on-scroll visible">
         <div className="footer-content">
           <div className="footer-left">
             <div className="footer-brand">
