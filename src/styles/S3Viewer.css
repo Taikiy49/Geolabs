@@ -3,12 +3,13 @@
   display: flex;
   flex-direction: column;
   height: 100vh;
-  background: 
   padding: var(--space-3);
+  background: 
     radial-gradient(circle at 80% 20%, rgba(124, 58, 237, 0.06) 0%, transparent 50%),
     var(--bg-primary);
   position: relative;
 }
+
 
 /* Header */
 .ai-header {
