@@ -61,6 +61,33 @@ const emptyTicket = {
   status: 'open'
 };
 
+// Helper functions
+const formatDate = (dateString) => {
+  return new Date(dateString).toLocaleDateString('en-US', {
+    month: 'short',
+    day: 'numeric',
+    year: 'numeric',
+    hour: '2-digit',
+    minute: '2-digit'
+  });
+};
+
+const getTypeIcon = (type) => {
+  const typeObj = TICKET_TYPES.find(t => t.value === type);
+  const Icon = typeObj?.icon || FaTools;
+  return <Icon />;
+};
+
+const getPriorityColor = (priority) => {
+  const priorityObj = PRIORITIES.find(p => p.value === priority);
+  return priorityObj?.color || 'var(--text-muted)';
+};
+
+const getStatusColor = (status) => {
+  const statusObj = STATUSES.find(s => s.value === status);
+  return statusObj?.color || 'var(--text-muted)';
+};
+
 export default function ITTickets() {
   const { accounts } = useMsal();
   const userEmail = accounts[0]?.username || 'guest';
@@ -216,32 +243,6 @@ export default function ITTickets() {
           }
         : ticket
     ));
-  };
-
-  const formatDate = (dateString) => {
-    return new Date(dateString).toLocaleDateString('en-US', {
-      month: 'short',
-      day: 'numeric',
-      year: 'numeric',
-      hour: '2-digit',
-      minute: '2-digit'
-    });
-  };
-
-  const getTypeIcon = (type) => {
-    const typeObj = TICKET_TYPES.find(t => t.value === type);
-    const Icon = typeObj?.icon || FaTools;
-    return <Icon />;
-  };
-
-  const getPriorityColor = (priority) => {
-    const priorityObj = PRIORITIES.find(p => p.value === priority);
-    return priorityObj?.color || 'var(--text-muted)';
-  };
-
-  const getStatusColor = (status) => {
-    const statusObj = STATUSES.find(s => s.value === status);
-    return statusObj?.color || 'var(--text-muted)';
   };
 
   return (
