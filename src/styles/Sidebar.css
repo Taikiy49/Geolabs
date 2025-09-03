@@ -13,12 +13,12 @@
 
   --color-primary: #00d4ff;
   --color-secondary: #8b5cf6;
-  --border-color: rgba(0, 212, 255, 0.2);
+  --border-color: rgba(59, 130, 246, 0.2);
 
   --radius-md: 12px;
   --shadow-xl: 
     0 24px 60px rgba(0,0,0,0.6),
-    0 0 80px rgba(0, 212, 255, 0.15);
+    0 0 60px rgba(59, 130, 246, 0.12);
 
   --t-fast: 140ms ease;
   --t-normal: 240ms cubic-bezier(.22,.61,.36,1);

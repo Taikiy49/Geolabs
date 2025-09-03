@@ -1,48 +1,62 @@
-/* Ultra-compact responsive styles */
+/* Professional Contacts Interface */
 .ct-wrap {
-  --fs-10: 10px;
-  --fs-12: 12px;
-
-  --pd-2: 1px;
-  --pd-4: 2px;
-  --pd-6: 4px;
-
   display: flex;
   flex-direction: column;
   height: 100%;
   width: 100%;
   max-width: 100%;
-  background: #0d1117;
-  color: #c9d1d9;
-  font-size: var(--fs-10);
-  line-height: 1.25;
-  overflow: hidden; /* no horizontal scroll on wrapper */
+  background: 
+    radial-gradient(circle at 20% 80%, rgba(59, 130, 246, 0.08) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(99, 102, 241, 0.08) 0%, transparent 50%),
+    var(--bg-primary);
+  color: var(--text-primary);
+  font-size: 0.875rem;
+  line-height: 1.4;
+  overflow: hidden;
 }
 
-/* Topbar */
 .ct-topbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: var(--pd-4);
-  padding: var(--pd-4) var(--pd-6);
-  border-bottom: 1px solid #30363d;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid var(--border-color);
+  background: 
+    linear-gradient(135deg, rgba(10, 14, 26, 0.95), rgba(17, 24, 39, 0.9)),
+    radial-gradient(circle at 50% 0%, rgba(59, 130, 246, 0.1), transparent 70%);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
   flex-wrap: wrap;
+  position: relative;
+}
+
+.ct-topbar::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--color-primary), transparent);
+  opacity: 0.6;
 }
 
 .ct-left,
 .ct-right {
   display: flex;
   align-items: center;
-  gap: var(--pd-4);
+  gap: 1rem;
   flex-wrap: wrap;
   min-width: 0;
 }
 
 .ct-heading {
-  font-size: var(--fs-12);
-  font-weight: 600;
-  color: #f0f6fc;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  text-shadow: 0 0 10px rgba(59, 130, 246, 0.3);
 }
 
 /* Inputs & selects */

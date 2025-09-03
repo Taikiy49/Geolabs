@@ -39,50 +39,50 @@ body {
 /* CSS Custom Properties */
 :root {
   /* Colors */
-  --color-primary: #00d4ff;
-  --color-primary-hover: #0099cc;
-  --color-primary-light: #e0f7ff;
-  --color-secondary: #8b5cf6;
-  --color-tertiary: #06ffa5;
-  --color-accent: #ff0080;
-  --color-cyber: #00ffff;
-  --color-neon: #39ff14;
-  --color-success: #00ff88;
-  --color-warning: #ffaa00;
-  --color-error: #ff3366;
-  --color-purple: #a855f7;
+  --color-primary: #4f8ff7;
+  --color-primary-hover: #3b7ce6;
+  --color-primary-light: #e1ecff;
+  --color-secondary: #7c3aed;
+  --color-tertiary: #14b8a6;
+  --color-accent: #f59e0b;
+  --color-cyber: #22d3ee;
+  --color-neon: #06ffa5;
+  --color-success: #10b981;
+  --color-warning: #f59e0b;
+  --color-error: #ef4444;
+  --color-purple: #8b5cf6;
   --color-pink: #ec4899;
   
   /* Backgrounds */
   --bg-primary: #0a0e1a;
   --bg-secondary: #111827;
   --bg-tertiary: #1f2937;
-  --bg-card: rgba(17, 24, 39, 0.95);
-  --bg-hover: rgba(31, 41, 55, 0.8);
-  --bg-active: rgba(55, 65, 81, 0.9);
-  --bg-glass: rgba(15, 23, 42, 0.85);
-  --bg-glow: rgba(0, 212, 255, 0.05);
+  --bg-card: rgba(17, 24, 39, 0.85);
+  --bg-hover: rgba(31, 41, 55, 0.6);
+  --bg-active: rgba(55, 65, 81, 0.7);
+  --bg-glass: rgba(15, 23, 42, 0.7);
+  --bg-glow: rgba(79, 143, 247, 0.04);
   
   /* Text */
-  --text-primary: #f0f9ff;
-  --text-secondary: #e0f2fe;
+  --text-primary: #f8fafc;
+  --text-secondary: #e2e8f0;
   --text-muted: #94a3b8;
   --text-inverse: #0a0e1a;
-  --text-glow: #00d4ff;
+  --text-glow: #4f8ff7;
   
   /* Borders */
-  --border-color: rgba(55, 65, 81, 0.6);
-  --border-hover: rgba(0, 212, 255, 0.4);
-  --border-focus: #00d4ff;
-  --border-glow: rgba(0, 212, 255, 0.3);
+  --border-color: rgba(55, 65, 81, 0.5);
+  --border-hover: rgba(79, 143, 247, 0.3);
+  --border-focus: #4f8ff7;
+  --border-glow: rgba(79, 143, 247, 0.25);
   
   /* Shadows */
   --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
-  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4), 0 0 20px rgba(0, 212, 255, 0.1);
-  --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.5), 0 0 40px rgba(0, 212, 255, 0.15);
-  --shadow-xl: 0 20px 40px rgba(0, 0, 0, 0.6), 0 0 60px rgba(0, 212, 255, 0.2);
-  --shadow-glow: 0 0 20px rgba(0, 212, 255, 0.4);
-  --shadow-neon: 0 0 30px rgba(57, 255, 20, 0.3);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4), 0 0 12px rgba(79, 143, 247, 0.06);
+  --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.5), 0 0 20px rgba(79, 143, 247, 0.08);
+  --shadow-xl: 0 20px 40px rgba(0, 0, 0, 0.6), 0 0 25px rgba(79, 143, 247, 0.1);
+  --shadow-glow: 0 0 12px rgba(79, 143, 247, 0.2);
+  --shadow-neon: 0 0 15px rgba(34, 211, 238, 0.15);
   
   /* Spacing */
   --space-1: 0.25rem;
