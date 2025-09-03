@@ -38,7 +38,7 @@ const homepageCards = [
     sublabel: "Ask, compare, cite",
     tag: "AI",
     updated: "2025-08-13",
-    icon: <FaRobot size={40} />,
+    icon: <FaRobot size={24} />,
     description:
       "Ask questions across your documents and data. Get concise, sourced answers for faster research.",
     subpages: [
@@ -58,7 +58,7 @@ const homepageCards = [
     sublabel: "Explore & manage datasets",
     tag: "Data",
     updated: "2025-08-13",
-    icon: <FaDatabase size={40} />,
+    icon: <FaDatabase size={24} />,
     description:
       "Browse database contents for audits and onboarding. Manage ingestion and indexing of new documents.",
     subpages: [
@@ -85,7 +85,7 @@ const homepageCards = [
     sublabel: "Search, browse, upload",
     tag: "Ops",
     updated: "2025-08-13",
-    icon: <FaFolderOpen size={40} />,
+    icon: <FaFolderOpen size={24} />,
     description:
       "Find work orders via OCR, browse S3 repositories, and maintain core inventory.",
     subpages: [
@@ -126,7 +126,7 @@ const homepageCards = [
     sublabel: "Review & edit extracted data",
     tag: "Analytics",
     updated: "2025-08-13",
-    icon: <FaTable size={40} />,
+    icon: <FaTable size={24} />,
     description:
       "Work with report tables and extracted rows. Filter, edit, and export data.",
     subpages: [
@@ -153,7 +153,7 @@ const homepageCards = [
     sublabel: "Directory & controls",
     tag: "Admin",
     updated: "2025-08-13",
-    icon: <FaShieldAlt size={40} />,
+    icon: <FaShieldAlt size={24} />,
     description:
       "Look up people and manage access, roles, and configuration.",
     subpages: [
@@ -180,7 +180,7 @@ const homepageCards = [
     sublabel: "Onboarding, support & FAQs",
     tag: "IT",
     updated: "2025-09-02",
-    icon: <FaShieldAlt size={40} />,
+    icon: <FaShieldAlt size={24} />,
     description:
       "Manage IT tasks for employees: onboarding, offboarding, tickets, and support resources.",
     subpages: [
