@@ -241,7 +241,6 @@
   display: grid;
   grid-template-columns: 1.3fr 1fr; /* side-by-side on wide */
   gap: 14px;
-  margin-bottom: 20px;
 }
 
 .spotlight-card,
@@ -897,15 +896,13 @@
 }
 
 /* --- Categories to Spotlights: add top gap so they don't touch --- */
-.categories-grid { margin-bottom: 16px; }  /* extra space below the grid */
 
 .spotlights {
   margin-top: 24px;          /* space above “Latest on LinkedIn / GitHub” */
-  margin-bottom: 24px;       /* and some space below, per your note */
   gap: 16px;                 /* keep a comfortable gap between the two cards */
 }
 
 /* Optional: if you want just a hair more separation before spotlights on narrow screens */
 @media (max-width: 1100px) {
-  .spotlights { margin-top: 18px; margin-bottom: 26px; }
+  .spotlights { margin-top: 18px; }
 }
