@@ -1,772 +1,899 @@
-/* Professional AI Chat Interface */
-.ai-chat {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  background: 
-    radial-gradient(circle at 20% 80%, rgba(79, 143, 247, 0.06) 0%, transparent 50%),
-    radial-gradient(circle at 80% 20%, rgba(124, 58, 237, 0.06) 0%, transparent 50%),
-    var(--bg-primary);
-  position: relative;
-}
-
-/* Header */
-.ai-header {
-  background: 
-    linear-gradient(135deg, rgba(10, 14, 26, 0.92), rgba(17, 24, 39, 0.88)),
-    radial-gradient(circle at 50% 0%, rgba(79, 143, 247, 0.08), transparent 70%);
-  backdrop-filter: blur(15px);
-  -webkit-backdrop-filter: blur(15px);
-  border-bottom: 1px solid var(--border-color);
-  padding: var(--space-4) var(--space-6);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: var(--space-4);
-  flex-wrap: wrap;
-}
-
-.ai-header-left {
-  display: flex;
-  align-items: center;
-  gap: var(--space-4);
-}
-
-.ai-title {
-  display: flex;
-  align-items: center;
-  gap: var(--space-3);
-  font-size: 1.25rem;
-  font-weight: 700;
-  color: var(--text-primary);
-  text-shadow: 0 0 10px rgba(59, 130, 246, 0.3);
-}
-
-.ai-title-icon {
-  color: var(--color-primary);
-  font-size: 1.5rem;
-  filter: drop-shadow(0 0 8px rgba(59, 130, 246, 0.4));
-}
-
-.database-selector {
-  min-width: 200px;
-}
-
-.database-select {
-  width: 100%;
-  padding: var(--space-3) var(--space-4);
-  background: var(--bg-secondary);
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-lg);
-  color: var(--text-primary);
-  font-size: 0.875rem;
-  cursor: pointer;
-  transition: all var(--transition-fast);
-}
-
-.database-select:focus {
-  outline: none;
-  border-color: var(--color-primary);
-  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
-}
-
-/* Settings Toggle */
-.ai-settings {
-  display: flex;
-  align-items: center;
-  gap: var(--space-4);
-}
-
-.setting-toggle {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: var(--space-1);
-  padding: var(--space-2);
-  background: transparent;
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-lg);
-  color: var(--text-muted);
-  cursor: pointer;
-  transition: all var(--transition-fast);
-  min-width: 60px;
-}
-
-.setting-toggle:hover {
-  background: var(--bg-hover);
-  border-color: var(--border-hover);
-  color: var(--text-secondary);
-}
-
-.setting-toggle.active {
-  background: var(--color-primary);
-  border-color: var(--color-primary);
-  color: white;
-}
-
-.setting-icon {
-  font-size: 1rem;
-}
-
-.setting-label {
-  font-size: 0.75rem;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-}
-
-/* Main Layout */
-.ai-main {
-  display: flex;
-  flex: 1;
-  min-height: 0;
-}
-
-.ai-chat-panel {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  min-height: 0;
-}
-
-.ai-history-panel {
-  width: 320px;
-  min-width: 320px;
-  background: var(--bg-secondary);
-  border-left: 1px solid var(--border-color);
-  display: flex;
-  flex-direction: column;
-}
-
-/* FAQ Section */
-.ai-faq {
-  padding: var(--space-6);
-  border-bottom: 1px solid var(--border-color);
-  background: var(--bg-secondary);
-}
-
-.faq-title {
-  font-size: 0.875rem;
-  font-weight: 600;
-  color: var(--text-primary);
-  margin-bottom: var(--space-4);
-}
-
-.faq-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: var(--space-3);
-}
-
-.faq-button {
-  padding: var(--space-3) var(--space-4);
-  background: var(--bg-primary);
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-lg);
-  color: var(--text-secondary);
-  font-size: 0.875rem;
-  text-align: left;
-  cursor: pointer;
-  transition: all var(--transition-fast);
-  line-height: 1.4;
-}
-
-.faq-button:hover {
-  background: var(--bg-hover);
-  border-color: var(--color-primary);
-  color: var(--text-primary);
-  transform: translateY(-1px);
-  box-shadow: var(--shadow-md);
-}
-
-.faq-toggle {
-  background: var(--color-primary);
-  color: white;
-  border-color: var(--color-primary);
-  font-weight: 600;
-  text-align: center;
-}
-
-.faq-toggle:hover {
-  background: var(--color-primary-hover);
-  border-color: var(--color-primary-hover);
-}
-
-/* Chat Area */
-.ai-chat-area {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  min-height: 0;
-}
-
-.chat-messages {
-  flex: 1;
-  overflow-y: auto;
-  padding: var(--space-6);
-  background: var(--bg-primary);
-  position: relative;
-}
-
-.chat-messages::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 20px;
-  background: linear-gradient(180deg, var(--bg-secondary), transparent);
-  pointer-events: none;
-}
-
-/* Message Pairs */
-.message-pair {
-  margin-bottom: var(--space-8);
-  animation: fadeIn 0.3s ease-out;
-}
-
-.user-message {
-  background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
-  color: white;
-  padding: var(--space-4) var(--space-6);
-  border-radius: var(--radius-xl);
-  margin-bottom: var(--space-4);
-  font-weight: 500;
-  box-shadow: var(--shadow-md);
-  position: relative;
-  max-width: 80%;
-  margin-left: auto;
-}
-
-.user-message::after {
-  content: '';
-  position: absolute;
-  bottom: -8px;
-  right: var(--space-4);
-  width: 0;
-  height: 0;
-  border-left: 8px solid transparent;
-  border-right: 8px solid transparent;
-  border-top: 8px solid var(--color-primary);
-}
-
-.assistant-message {
-  background: var(--bg-card);
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-xl);
-  padding: var(--space-6);
-  box-shadow: var(--shadow-md);
-  position: relative;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-}
-
-.assistant-message::before {
-  content: '';
-  position: absolute;
-  top: var(--space-4);
-  left: -8px;
-  width: 0;
-  height: 0;
-  border-top: 8px solid transparent;
-  border-bottom: 8px solid transparent;
-  border-right: 8px solid var(--bg-card);
-}
-
-/* Message Actions */
-.message-actions {
-  position: absolute;
-  top: var(--space-3);
-  right: var(--space-3);
-  display: flex;
-  gap: var(--space-2);
-  opacity: 0;
-  transition: opacity var(--transition-fast);
-}
-
-.assistant-message:hover .message-actions {
-  opacity: 1;
-}
-
-.message-action-btn {
-  width: 32px;
-  height: 32px;
-  background: var(--bg-secondary);
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-md);
-  color: var(--text-muted);
-  cursor: pointer;
-  transition: all var(--transition-fast);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 0.875rem;
-}
-
-.message-action-btn:hover {
-  background: var(--bg-hover);
-  color: var(--text-primary);
-  border-color: var(--border-hover);
-}
-
-/* Markdown Styling */
-.message-content {
-  color: var(--text-primary);
-  line-height: 1.7;
-}
-
-.message-content h1,
-.message-content h2,
-.message-content h3,
-.message-content h4,
-.message-content h5,
-.message-content h6 {
-  color: var(--text-primary);
-  font-weight: 700;
-  margin: var(--space-6) 0 var(--space-4) 0;
-}
-
-.message-content h1 { font-size: 1.5rem; }
-.message-content h2 { font-size: 1.25rem; }
-.message-content h3 { font-size: 1.125rem; }
-
-.message-content p {
-  margin: var(--space-4) 0;
-  color: var(--text-secondary);
-}
-
-.message-content ul,
-.message-content ol {
-  margin: var(--space-4) 0;
-  padding-left: var(--space-6);
-}
-
-.message-content li {
-  margin: var(--space-2) 0;
-  color: var(--text-secondary);
-}
-
-.message-content code {
-  background: var(--bg-secondary);
-  color: var(--color-primary);
-  padding: var(--space-1) var(--space-2);
-  border-radius: var(--radius-sm);
-  font-family: 'JetBrains Mono', 'Fira Code', monospace;
-  font-size: 0.875rem;
-}
-
-.message-content pre {
-  background: var(--bg-secondary);
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-lg);
-  padding: var(--space-4);
-  margin: var(--space-4) 0;
-  overflow-x: auto;
-  position: relative;
-}
-
-.message-content pre code {
-  background: none;
-  color: var(--text-primary);
-  padding: 0;
-}
-
-.code-block-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: var(--space-3);
-  padding-bottom: var(--space-2);
-  border-bottom: 1px solid var(--border-color);
-}
-
-.code-language {
-  font-size: 0.75rem;
-  color: var(--text-muted);
-  text-transform: uppercase;
-  font-weight: 600;
-  letter-spacing: 0.05em;
-}
-
-/* Loading State */
-.loading-message {
-  display: flex;
-  align-items: center;
-  gap: var(--space-3);
-  padding: var(--space-4) var(--space-6);
-  color: var(--text-muted);
-  font-style: italic;
-}
-
-.loading-dots {
-  display: flex;
-  gap: var(--space-1);
-}
-
-.loading-dot {
-  width: 6px;
-  height: 6px;
-  background: var(--color-primary);
-  border-radius: 50%;
-  animation: pulse 1.5s ease-in-out infinite;
-}
-
-.loading-dot:nth-child(2) { animation-delay: 0.2s; }
-.loading-dot:nth-child(3) { animation-delay: 0.4s; }
-
-@keyframes pulse {
-  0%, 80%, 100% { opacity: 0.3; }
-  40% { opacity: 1; }
-}
-
-/* Input Area */
-.ai-input-area {
-  background: var(--bg-secondary);
-  border-top: 1px solid var(--border-color);
-  padding: var(--space-6);
-}
-
-.input-container {
-  position: relative;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.input-form {
-  display: flex;
-  gap: var(--space-3);
-  align-items: flex-end;
-}
-
-.input-wrapper {
-  flex: 1;
-  position: relative;
-}
-
-.chat-input {
-  width: 100%;
-  min-height: 48px;
-  max-height: 120px;
-  padding: var(--space-4) var(--space-12) var(--space-4) var(--space-4);
-  background: var(--bg-primary);
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-xl);
-  color: var(--text-primary);
-  font-size: 1rem;
-  line-height: 1.5;
-  resize: none;
-  transition: all var(--transition-fast);
-  font-family: inherit;
-}
-
-.chat-input:focus {
-  outline: none;
-  border-color: var(--color-primary);
-  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
-}
-
-.chat-input::placeholder {
-  color: var(--text-muted);
-}
-
-.input-actions {
-  position: absolute;
-  right: var(--space-3);
-  bottom: var(--space-3);
-  display: flex;
-  gap: var(--space-2);
-}
-
-.input-action-btn {
-  width: 36px;
-  height: 36px;
-  background: var(--bg-secondary);
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-lg);
-  color: var(--text-muted);
-  cursor: pointer;
-  transition: all var(--transition-fast);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 0.875rem;
-}
-
-.input-action-btn:hover {
-  background: var(--bg-hover);
-  color: var(--text-primary);
-  border-color: var(--border-hover);
-}
-
-.input-action-btn.primary {
-  background: var(--color-primary);
-  border-color: var(--color-primary);
-  color: white;
-}
-
-.input-action-btn.primary:hover {
-  background: var(--color-primary-hover);
-  border-color: var(--color-primary-hover);
-}
-
-.input-action-btn:disabled {
-  opacity: 0.5;
-  cursor: not-allowed;
-}
-
-/* History Panel */
-.history-header {
-  padding: var(--space-6);
-  border-bottom: 1px solid var(--border-color);
-  background: var(--bg-tertiary);
-}
-
-.history-title {
-  font-size: 1rem;
-  font-weight: 600;
-  color: var(--text-primary);
-  margin-bottom: var(--space-2);
-}
-
-.history-subtitle {
-  font-size: 0.75rem;
-  color: var(--text-muted);
-}
-
-.history-list {
-  flex: 1;
-  overflow-y: auto;
-  padding: var(--space-4);
-}
-
-.history-item {
-  padding: var(--space-4);
-  border-radius: var(--radius-lg);
-  cursor: pointer;
-  transition: all var(--transition-fast);
-  margin-bottom: var(--space-2);
-  border: 1px solid transparent;
-  position: relative;
-}
-
-.history-item:hover {
-  background: var(--bg-hover);
-  border-color: var(--border-color);
-}
-
-.history-item:active {
-  transform: scale(0.98);
-}
-
-.history-question {
-  font-size: 0.875rem;
-  color: var(--text-primary);
-  font-weight: 500;
-  margin-bottom: var(--space-2);
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-
-.history-preview {
-  font-size: 0.75rem;
-  color: var(--text-muted);
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  line-height: 1.4;
-}
-
-.history-actions {
-  position: absolute;
-  top: var(--space-2);
-  right: var(--space-2);
-  opacity: 0;
-  transition: opacity var(--transition-fast);
-}
-
-.history-item:hover .history-actions {
-  opacity: 1;
-}
-
-.history-delete-btn {
-  width: 24px;
-  height: 24px;
-  background: var(--color-error);
-  border: none;
-  border-radius: 50%;
-  color: white;
-  cursor: pointer;
-  transition: all var(--transition-fast);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 0.75rem;
-}
-
-.history-delete-btn:hover {
-  background: #dc2626;
-  transform: scale(1.1);
-}
-
-/* Empty States */
-.empty-chat {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: var(--space-12);
-  text-align: center;
-}
-
-.empty-icon {
-  font-size: 4rem;
-  color: var(--text-muted);
-  margin-bottom: var(--space-6);
-  opacity: 0.5;
-}
-
-.empty-title {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--text-secondary);
-  margin-bottom: var(--space-3);
-}
-
-.empty-description {
-  font-size: 1rem;
-  color: var(--text-muted);
-  max-width: 400px;
-  line-height: 1.6;
-}
-
-.empty-history {
-  padding: var(--space-8);
-  text-align: center;
-  color: var(--text-muted);
-}
-
-/* Responsive Design */
-@media (max-width: 1024px) {
-  .ai-main {
-    flex-direction: column;
-  }
-  
-  .ai-history-panel {
-    width: 100%;
-    min-width: 100%;
-    max-height: 300px;
-    border-left: none;
-    border-top: 1px solid var(--border-color);
-  }
-  
-  .faq-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 768px) {
-  .ai-header {
-    flex-direction: column;
-    align-items: stretch;
-    gap: var(--space-4);
-  }
-  
-  .ai-header-left {
-    flex-direction: column;
-    align-items: stretch;
-    gap: var(--space-3);
-  }
-  
-  .ai-settings {
-    justify-content: center;
-  }
-  
-  .chat-messages {
-    padding: var(--space-4);
-  }
-  
-  .ai-input-area {
-    padding: var(--space-4);
-  }
-  
-  .user-message {
-    max-width: 90%;
-  }
-  
-  .message-actions {
-    position: static;
-    margin-top: var(--space-3);
-    opacity: 1;
-    justify-content: flex-end;
-  }
-}
-
-@media (max-width: 480px) {
-  .input-form {
-    flex-direction: column;
-    gap: var(--space-3);
-  }
-  
-  .input-actions {
-    position: static;
-    justify-content: center;
-    margin-top: var(--space-3);
-  }
-  
-  .chat-input {
-    padding-right: var(--space-4);
-  }
-}
-
-/* Accessibility */
-@media (prefers-reduced-motion: reduce) {
-  .message-pair,
-  .faq-button,
-  .history-item,
-  .input-action-btn,
-  .setting-toggle {
-    animation: none;
-    transition: none;
-  }
-  
-  .faq-button:hover,
-  .history-item:hover,
-  .user-message {
-    transform: none;
-  }
-}
-
-/* Focus States */
-.faq-button:focus-visible,
-.history-item:focus-visible,
-.input-action-btn:focus-visible,
-.setting-toggle:focus-visible {
-  outline: 2px solid var(--color-primary);
-  outline-offset: 2px;
-}
-
-/* Scrollbar Styling */
-.chat-messages::-webkit-scrollbar,
-.history-list::-webkit-scrollbar {
-  width: 8px;
-}
-
-.chat-messages::-webkit-scrollbar-track,
-.history-list::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-.chat-messages::-webkit-scrollbar-thumb,
-.history-list::-webkit-scrollbar-thumb {
-  background: var(--bg-tertiary);
-  border-radius: var(--radius-lg);
-}
-
-.chat-messages::-webkit-scrollbar-thumb:hover,
-.history-list::-webkit-scrollbar-thumb:hover {
-  background: var(--bg-hover);
+import React, { useEffect, useMemo, useState } from "react";
+import axios from "axios";
+import API_URL from "../config";
+import {
+  FaDatabase,
+  FaSync,
+  FaCopy,
+  FaExternalLinkAlt,
+  FaCloudDownloadAlt,
+  FaTimes,
+  FaSearch,
+  FaTrash,
+  FaChevronDown,
+  FaTable,
+  FaEye,
+} from "react-icons/fa";
+import "../styles/DBViewer.css";
+
+const PAGE_SIZES = [10, 25, 50, 100];
+
+function getFileExtension(fileName = "") {
+  const lastDot = fileName.lastIndexOf(".");
+  return lastDot >= 0 ? fileName.slice(lastDot + 1).toLowerCase() : "";
+}
+
+export default function DBViewer() {
+  // Core state
+  const [databases, setDatabases] = useState([]);
+  const [loadingDatabases, setLoadingDatabases] = useState(true);
+  const [error, setError] = useState("");
+
+  // Database management
+  const [searchQuery, setSearchQuery] = useState("");
+  const [sortBy, setSortBy] = useState("name");
+  const [sortDirection, setSortDirection] = useState("asc");
+  const [expandedDb, setExpandedDb] = useState("");
+  const [filesByDatabase, setFilesByDatabase] = useState({});
+  const [loadingFiles, setLoadingFiles] = useState(false);
+
+  // S3 integration
+  const [s3Urls, setS3Urls] = useState({});
+
+  // File management
+  const [fileSearch, setFileSearch] = useState("");
+  const [fileTypeFilter, setFileTypeFilter] = useState("");
+  const [fileSortBy, setFileSortBy] = useState("name");
+  const [fileSortDirection, setFileSortDirection] = useState("asc");
+  const [currentPage, setCurrentPage] = useState(1);
+  const [pageSize, setPageSize] = useState(25);
+
+  // Selection and actions
+  const [selectedFiles, setSelectedFiles] = useState(new Set());
+  const [copyFeedback, setCopyFeedback] = useState("");
+
+  // Modals
+  const [previewModal, setPreviewModal] = useState({ open: false, url: "", name: "", type: "" });
+  const [schemaModal, setSchemaModal] = useState({ open: false, data: null });
+
+  // Load initial data
+  useEffect(() => {
+    const loadData = async () => {
+      try {
+        setLoadingDatabases(true);
+        const [dbResponse, s3Response] = await Promise.all([
+          axios.get(`${API_URL}/api/list-dbs`),
+          axios.get(`${API_URL}/api/s3-db-pdfs`).catch(() => ({ data: { files: [] } })),
+        ]);
+
+        const filteredDbs = (dbResponse.data.dbs || []).filter((db) => db !== "chat_history.db");
+        setDatabases(filteredDbs);
+
+        // Build S3 URL mapping
+        const urlMap = {};
+        (s3Response.data.files || []).forEach((file) => {
+          urlMap[file.Key] = file.url;
+        });
+        setS3Urls(urlMap);
+      } catch (err) {
+        console.error("Failed to load data:", err);
+        setError("Failed to load databases. Please try again.");
+      } finally {
+        setLoadingDatabases(false);
+      }
+    };
+
+    loadData();
+  }, []);
+
+  // Database filtering and sorting
+  const processedDatabases = useMemo(() => {
+    let filtered = databases;
+
+    // Apply search filter
+    if (searchQuery.trim()) {
+      const query = searchQuery.toLowerCase();
+      filtered = filtered.filter((db) => db.toLowerCase().includes(query));
+    }
+
+    // Add metadata
+    const withMetadata = filtered.map((db) => ({
+      name: db,
+      fileCount: (filesByDatabase[db] || []).length,
+      displayName: db.replace(/\.db$/i, "").replace(/_/g, " "),
+    }));
+
+    // Apply sorting
+    withMetadata.sort((a, b) => {
+      let valueA, valueB;
+
+      if (sortBy === "files") {
+        valueA = a.fileCount;
+        valueB = b.fileCount;
+      } else {
+        valueA = a.displayName.toLowerCase();
+        valueB = b.displayName.toLowerCase();
+      }
+
+      if (valueA < valueB) return sortDirection === "asc" ? -1 : 1;
+      if (valueA > valueB) return sortDirection === "asc" ? 1 : -1;
+      return 0;
+    });
+
+    return withMetadata;
+  }, [databases, searchQuery, sortBy, sortDirection, filesByDatabase]);
+
+  const toggleDatabaseSort = (field) => {
+    if (sortBy === field) {
+      setSortDirection((dir) => (dir === "asc" ? "desc" : "asc"));
+    } else {
+      setSortBy(field);
+      setSortDirection("asc");
+    }
+  };
+
+  const refreshDatabases = async () => {
+    try {
+      setLoadingDatabases(true);
+      const response = await axios.get(`${API_URL}/api/list-dbs`);
+      const filtered = (response.data.dbs || []).filter((db) => db !== "chat_history.db");
+      setDatabases(filtered);
+      setError("");
+    } catch (err) {
+      console.error("Failed to refresh databases:", err);
+      setError("Failed to refresh databases.");
+    } finally {
+      setLoadingDatabases(false);
+    }
+  };
+
+  const toggleDatabase = async (dbName) => {
+    if (expandedDb === dbName) {
+      setExpandedDb("");
+      setSelectedFiles(new Set());
+      return;
+    }
+
+    setExpandedDb(dbName);
+    setSelectedFiles(new Set());
+    setFileSearch("");
+    setFileTypeFilter("");
+    setFileSortBy("name");
+    setFileSortDirection("asc");
+    setCurrentPage(1);
+
+    // Load files if not already loaded
+    if (!filesByDatabase[dbName]) {
+      try {
+        setLoadingFiles(true);
+        const response = await axios.post(`${API_URL}/api/list-files`, { db_name: dbName });
+        setFilesByDatabase((prev) => ({
+          ...prev,
+          [dbName]: response.data.files || [],
+        }));
+      } catch (err) {
+        console.error("Failed to load files:", err);
+        setFilesByDatabase((prev) => ({
+          ...prev,
+          [dbName]: [],
+        }));
+      } finally {
+        setLoadingFiles(false);
+      }
+    }
+  };
+
+  const inspectDatabase = async (dbName) => {
+    try {
+      const response = await axios.post(`${API_URL}/api/inspect-db`, { db_name: dbName });
+      setSchemaModal({
+        open: true,
+        data: { database: dbName, ...response.data },
+      });
+    } catch (err) {
+      console.error("Failed to inspect database:", err);
+      setSchemaModal({
+        open: true,
+        data: { database: dbName, error: "Failed to load schema information." },
+      });
+    }
+  };
+
+  const deleteDatabase = async (dbName) => {
+    const confirmText = prompt(`Type "DELETE ${dbName}" to confirm deletion:`);
+    if (confirmText !== `DELETE ${dbName}`) {
+      return;
+    }
+
+    try {
+      await axios.post(`${API_URL}/api/delete-db`, {
+        db_name: dbName,
+        confirmation_text: confirmText,
+      });
+
+      setDatabases((prev) => prev.filter((db) => db !== dbName));
+      setExpandedDb("");
+      setFilesByDatabase((prev) => {
+        const updated = { ...prev };
+        delete updated[dbName];
+        return updated;
+      });
+
+      alert("Database deleted successfully.");
+    } catch (err) {
+      console.error("Failed to delete database:", err);
+      alert(err.response?.data?.error || "Failed to delete database.");
+    }
+  };
+
+  // File processing
+  const currentFiles = filesByDatabase[expandedDb] || [];
+  const fileExtensions = useMemo(() => {
+    const extensions = new Set(currentFiles.map(getFileExtension).filter(Boolean));
+    return Array.from(extensions).sort();
+  }, [currentFiles]);
+
+  const processedFiles = useMemo(() => {
+    let filtered = currentFiles.map((fileName) => ({
+      name: fileName,
+      extension: getFileExtension(fileName),
+      s3Key: `${expandedDb}/${fileName}`,
+      url: s3Urls[`${expandedDb}/${fileName}`],
+    }));
+
+    // Apply filters
+    if (fileSearch.trim()) {
+      const query = fileSearch.toLowerCase();
+      filtered = filtered.filter((file) => file.name.toLowerCase().includes(query));
+    }
+
+    if (fileTypeFilter) {
+      filtered = filtered.filter((file) => file.extension === fileTypeFilter);
+    }
+
+    // Apply sorting
+    filtered.sort((a, b) => {
+      let valueA, valueB;
+
+      if (fileSortBy === "extension") {
+        valueA = a.extension;
+        valueB = b.extension;
+      } else {
+        valueA = a.name.toLowerCase();
+        valueB = b.name.toLowerCase();
+      }
+
+      if (valueA < valueB) return fileSortDirection === "asc" ? -1 : 1;
+      if (valueA > valueB) return fileSortDirection === "asc" ? 1 : -1;
+      return 0;
+    });
+
+    return filtered;
+  }, [currentFiles, fileSearch, fileTypeFilter, fileSortBy, fileSortDirection, expandedDb, s3Urls]);
+
+  // Pagination
+  const totalFiles = processedFiles.length;
+  const totalPages = Math.max(1, Math.ceil(totalFiles / pageSize));
+  const paginatedFiles = useMemo(() => {
+    const startIndex = (currentPage - 1) * pageSize;
+    return processedFiles.slice(startIndex, startIndex + pageSize);
+  }, [processedFiles, currentPage, pageSize]);
+
+  const toggleFileSort = (field) => {
+    if (fileSortBy === field) {
+      setFileSortDirection((dir) => (dir === "asc" ? "desc" : "asc"));
+    } else {
+      setFileSortBy(field);
+      setFileSortDirection("asc");
+    }
+    setCurrentPage(1);
+  };
+
+  // File actions
+  const getS3Url = (dbName, fileName) => s3Urls[`${dbName}/${fileName}`];
+
+  const copyFileUrl = async (dbName, fileName) => {
+    const url = getS3Url(dbName, fileName);
+    if (!url) {
+      alert("No URL available for this file.");
+      return;
+    }
+
+    try {
+      await navigator.clipboard.writeText(url);
+      setCopyFeedback(`${dbName}/${fileName}`);
+      setTimeout(() => setCopyFeedback(""), 2000);
+    } catch (err) {
+      console.error("Failed to copy URL:", err);
+    }
+  };
+
+  const openPreview = (dbName, fileName) => {
+    const url = getS3Url(dbName, fileName);
+    if (!url) {
+      alert("No preview available for this file.");
+      return;
+    }
+
+    setPreviewModal({
+      open: true,
+      url,
+      name: fileName,
+      type: getFileExtension(fileName),
+    });
+  };
+
+  // Selection management
+  const toggleFileSelection = (fileName) => {
+    setSelectedFiles((prev) => {
+      const updated = new Set(prev);
+      if (updated.has(fileName)) {
+        updated.delete(fileName);
+      } else {
+        updated.add(fileName);
+      }
+      return updated;
+    });
+  };
+
+  const toggleSelectAll = () => {
+    const allSelected = paginatedFiles.every((file) => selectedFiles.has(file.name));
+
+    setSelectedFiles((prev) => {
+      const updated = new Set(prev);
+
+      if (allSelected) {
+        paginatedFiles.forEach((file) => updated.delete(file.name));
+      } else {
+        paginatedFiles.forEach((file) => updated.add(file.name));
+      }
+
+      return updated;
+    });
+  };
+
+  const clearSelection = () => setSelectedFiles(new Set());
+
+  const bulkCopyUrls = async () => {
+    const urls = Array.from(selectedFiles)
+      .map((fileName) => getS3Url(expandedDb, fileName))
+      .filter(Boolean)
+      .join("\n");
+
+    if (!urls) {
+      alert("No URLs available for selected files.");
+      return;
+    }
+
+    try {
+      await navigator.clipboard.writeText(urls);
+      setCopyFeedback("@bulk");
+      setTimeout(() => setCopyFeedback(""), 2000);
+    } catch (err) {
+      console.error("Failed to copy URLs:", err);
+    }
+  };
+
+  const bulkOpenFiles = () => {
+    const urls = Array.from(selectedFiles)
+      .map((fileName) => getS3Url(expandedDb, fileName))
+      .filter(Boolean)
+      .slice(0, 10); // Limit to prevent browser issues
+
+    if (urls.length === 0) {
+      alert("No URLs available for selected files.");
+      return;
+    }
+
+    urls.forEach((url) => window.open(url, "_blank", "noopener,noreferrer"));
+  };
+
+  const exportFileList = () => {
+    const csvData = processedFiles.map((file) => ({
+      database: expandedDb,
+      filename: file.name,
+      extension: file.extension.toUpperCase(),
+      url: file.url || "",
+    }));
+
+    const headers = ["Database", "Filename", "Type", "URL"];
+    const csvContent = [
+      headers.join(","),
+      ...csvData.map((row) => Object.values(row).map((value) => `"${String(value).replace(/"/g, '""')}"`).join(",")),
+    ].join("\n");
+
+    const blob = new Blob([csvContent], { type: "text/csv;charset=utf-8" });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement("a");
+    link.href = url;
+    link.download = `${expandedDb}_files.csv`;
+    link.click();
+    URL.revokeObjectURL(url);
+  };
+
+  return (
+    <div className="db-viewer">
+      {/* Header */}
+      <div className="db-viewer-header">
+        <h1 className="db-viewer-title">
+          <FaDatabase className="db-viewer-title-icon" />
+          Database Viewer
+        </h1>
+
+        <div className="db-viewer-controls">
+          <div className="search-container">
+            <FaSearch className="search-icon" />
+            <input
+              type="text"
+              className="search-input"
+              placeholder="Search databases..."
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+            />
+          </div>
+
+          <button className="btn btn-secondary" onClick={refreshDatabases} disabled={loadingDatabases}>
+            <FaSync />
+            {loadingDatabases ? "Loading..." : "Refresh"}
+          </button>
+        </div>
+      </div>
+
+      <div className="db-viewer-main">
+        {/* Database List */}
+        <div className="db-list-panel">
+          <div className="db-list-header">
+            <h2 className="db-list-title">Databases</h2>
+            <div className="db-list-count">{processedDatabases.length}</div>
+          </div>
+
+          <div className="db-list">
+            {loadingDatabases ? (
+              <div className="loading-container">
+                <div className="loading-spinner" />
+                <span className="loading-text">Loading databases...</span>
+              </div>
+            ) : error ? (
+              <div className="empty-state">
+                <FaDatabase className="empty-state-icon" />
+                <h3 className="empty-state-title">Error</h3>
+                <p className="empty-state-description">{error}</p>
+              </div>
+            ) : processedDatabases.length === 0 ? (
+              <div className="empty-state">
+                <FaDatabase className="empty-state-icon" />
+                <h3 className="empty-state-title">No Databases</h3>
+                <p className="empty-state-description">No databases found matching your search.</p>
+              </div>
+            ) : (
+              processedDatabases.map((db) => (
+                <div key={db.name} className={`db-item ${expandedDb === db.name ? "active" : ""}`}>
+                  <div className="db-item-header" onClick={() => toggleDatabase(db.name)}>
+                    <div className="db-item-info">
+                      <FaDatabase className="db-item-icon" />
+                      <div className="db-item-details">
+                        <div className="db-item-name">{db.displayName}</div>
+                        <div className="db-item-meta">{db.fileCount} files</div>
+                      </div>
+                    </div>
+
+                    <div className="db-item-actions" onClick={(e) => e.stopPropagation()}>
+                      <button className="db-action-btn" onClick={() => inspectDatabase(db.name)} title="View schema">
+                        <FaTable />
+                      </button>
+                      <button className="db-action-btn danger" onClick={() => deleteDatabase(db.name)} title="Delete database">
+                        <FaTrash />
+                      </button>
+                    </div>
+
+                    <FaChevronDown className={`expand-icon ${expandedDb === db.name ? "expanded" : ""}`} />
+                  </div>
+                </div>
+              ))
+            )}
+          </div>
+        </div>
+
+        {/* File Content Panel */}
+        <div className="file-content-panel">
+          {expandedDb ? (
+            <>
+              <div className="file-content-header">
+                <h2 className="file-content-title">
+                  {expandedDb.replace(/\.db$/i, "").replace(/_/g, " ")}
+                </h2>
+
+                <div className="file-content-actions">
+                  <div className="filter-group">
+                    <div className="search-container">
+                      <FaSearch className="search-icon" />
+                      <input
+                        type="text"
+                        className="search-input"
+                        placeholder="Search files..."
+                        value={fileSearch}
+                        onChange={(e) => {
+                          setFileSearch(e.target.value);
+                          setCurrentPage(1);
+                        }}
+                      />
+                    </div>
+                  </div>
+
+                  <div className="filter-group">
+                    <select
+                      className="filter-select"
+                      value={fileTypeFilter}
+                      onChange={(e) => {
+                        setFileTypeFilter(e.target.value);
+                        setCurrentPage(1);
+                      }}
+                    >
+                      <option value="">All Types</option>
+                      {fileExtensions.map((ext) => (
+                        <option key={ext} value={ext}>
+                          {ext.toUpperCase()}
+                        </option>
+                      ))}
+                    </select>
+                  </div>
+
+                  <div className="filter-group">
+                    <select
+                      className="filter-select"
+                      value={pageSize}
+                      onChange={(e) => {
+                        setPageSize(Number(e.target.value));
+                        setCurrentPage(1);
+                      }}
+                    >
+                      {PAGE_SIZES.map((size) => (
+                        <option key={size} value={size}>
+                          {size} per page
+                        </option>
+                      ))}
+                    </select>
+                  </div>
+
+                  <button className="btn btn-secondary" onClick={exportFileList}>
+                    <FaCloudDownloadAlt />
+                    Export CSV
+                  </button>
+                </div>
+              </div>
+
+              {/* Bulk Actions */}
+              {selectedFiles.size > 0 && (
+                <div className="bulk-actions">
+                  <div className="selection-info">
+                    {selectedFiles.size} file{selectedFiles.size !== 1 ? "s" : ""} selected
+                  </div>
+
+                  <button className="bulk-action-btn" onClick={bulkCopyUrls}>
+                    <FaCopy />
+                    Copy URLs
+                  </button>
+
+                  <button className="bulk-action-btn" onClick={bulkOpenFiles}>
+                    <FaExternalLinkAlt />
+                    Open Files (max 10)
+                  </button>
+
+                  <button className="bulk-action-btn" onClick={clearSelection}>
+                    Clear Selection
+                  </button>
+
+                  {copyFeedback === "@bulk" && (
+                    <span style={{ color: "var(--color-success)", fontSize: "0.875rem" }}>
+                      URLs copied!
+                    </span>
+                  )}
+                </div>
+              )}
+
+              {/* File Table */}
+              <div className="file-table-container">
+                {loadingFiles ? (
+                  <div className="loading-container">
+                    <div className="loading-spinner" />
+                    <span className="loading-text">Loading files...</span>
+                  </div>
+                ) : totalFiles === 0 ? (
+                  <div className="empty-state">
+                    <FaTable className="empty-state-icon" />
+                    <h3 className="empty-state-title">No Files</h3>
+                    <p className="empty-state-description">
+                      No files found in this database matching your criteria.
+                    </p>
+                  </div>
+                ) : (
+                  <table className="file-table">
+                    <thead>
+                      <tr>
+                        <th style={{ width: "40px" }}>
+                          <input
+                            type="checkbox"
+                            className="selection-checkbox"
+                            checked={paginatedFiles.length > 0 && paginatedFiles.every((file) => selectedFiles.has(file.name))}
+                            onChange={toggleSelectAll}
+                            title="Select all on page"
+                          />
+                        </th>
+                        <th
+                          className={`sortable ${fileSortBy === "name" ? `sorted-${fileSortDirection}` : ""}`}
+                          onClick={() => toggleFileSort("name")}
+                        >
+                          File Name
+                        </th>
+                        <th
+                          className={`sortable ${fileSortBy === "extension" ? `sorted-${fileSortDirection}` : ""}`}
+                          onClick={() => toggleFileSort("extension")}
+                        >
+                          Type
+                        </th>
+                        <th style={{ width: "200px" }}>Actions</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {paginatedFiles.map((file) => (
+                        <tr key={file.name}>
+                          <td>
+                            <input
+                              type="checkbox"
+                              className="selection-checkbox"
+                              checked={selectedFiles.has(file.name)}
+                              onChange={() => toggleFileSelection(file.name)}
+                            />
+                          </td>
+                          <td>
+                            <div className="file-name" title={file.name}>
+                              {file.name}
+                            </div>
+                          </td>
+                          <td>{file.extension && <span className="file-type">{file.extension}</span>}</td>
+                          <td>
+                            <div className="file-actions">
+                              <button
+                                className="file-action-btn"
+                                onClick={() => openPreview(expandedDb, file.name)}
+                                title="Preview file"
+                              >
+                                <FaEye />
+                              </button>
+
+                              {file.url && (
+                                <>
+                                  <a
+                                    href={file.url}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="file-action-btn"
+                                    title="Open in new tab"
+                                  >
+                                    <FaExternalLinkAlt />
+                                  </a>
+
+                                  <a
+                                    href={file.url}
+                                    download={file.name}
+                                    className="file-action-btn"
+                                    title="Download file"
+                                  >
+                                    <FaCloudDownloadAlt />
+                                  </a>
+
+                                  <button
+                                    className="file-action-btn"
+                                    onClick={() => copyFileUrl(expandedDb, file.name)}
+                                    title="Copy URL"
+                                  >
+                                    <FaCopy />
+                                  </button>
+
+                                  {/* feedback is now inside the map so `file` is defined */}
+                                  {copyFeedback === `${expandedDb}/${file.name}` && (
+                                    <span
+                                      style={{
+                                        color: "var(--color-success)",
+                                        fontSize: "0.75rem",
+                                        marginLeft: "var(--space-2)",
+                                      }}
+                                    >
+                                      Copied!
+                                    </span>
+                                  )}
+                                </>
+                              )}
+                            </div>
+                          </td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                )}
+              </div>
+
+              {/* Pagination */}
+              {totalFiles > 0 && (
+                <div className="pagination">
+                  <button
+                    className="pagination-btn"
+                    onClick={() => setCurrentPage(1)}
+                    disabled={currentPage === 1}
+                    title="First page"
+                  >
+                    ⏮
+                  </button>
+                  <button
+                    className="pagination-btn"
+                    onClick={() => setCurrentPage((prev) => Math.max(1, prev - 1))}
+                    disabled={currentPage === 1}
+                    title="Previous page"
+                  >
+                    ◀
+                  </button>
+
+                  <span className="pagination-info">Page {currentPage} of {totalPages}</span>
+
+                  <button
+                    className="pagination-btn"
+                    onClick={() => setCurrentPage((prev) => Math.min(totalPages, prev + 1))}
+                    disabled={currentPage === totalPages}
+                    title="Next page"
+                  >
+                    ▶
+                  </button>
+                  <button
+                    className="pagination-btn"
+                    onClick={() => setCurrentPage(totalPages)}
+                    disabled={currentPage === totalPages}
+                    title="Last page"
+                  >
+                    ⏭
+                  </button>
+
+                  <select
+                    className="page-size-select"
+                    value={pageSize}
+                    onChange={(e) => {
+                      setPageSize(Number(e.target.value));
+                      setCurrentPage(1);
+                    }}
+                  >
+                    {PAGE_SIZES.map((size) => (
+                      <option key={size} value={size}>
+                        {size} per page
+                      </option>
+                    ))}
+                  </select>
+                </div>
+              )}
+            </>
+          ) : (
+            <div className="empty-state">
+              <FaDatabase className="empty-state-icon" />
+              <h2 className="empty-state-title">Select a Database</h2>
+              <p className="empty-state-description">
+                Choose a database from the list to view its contents and manage files.
+              </p>
+            </div>
+          )}
+        </div>
+      </div>
+
+      {/* Schema Modal */}
+      {schemaModal.open && (
+        <div className="modal-overlay" onClick={() => setSchemaModal({ open: false, data: null })}>
+          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+            <div className="modal-header">
+              <h3 className="modal-title">Database Schema: {schemaModal.data?.database}</h3>
+              <button
+                className="modal-close-btn"
+                onClick={() => setSchemaModal({ open: false, data: null })}
+                title="Close"
+              >
+                <FaTimes />
+              </button>
+            </div>
+
+            <div className="modal-body">
+              {schemaModal.data?.error ? (
+                <div className="empty-state">
+                  <FaTable className="empty-state-icon" />
+                  <h3 className="empty-state-title">Schema Error</h3>
+                  <p className="empty-state-description">{schemaModal.data.error}</p>
+                </div>
+              ) : (
+                Object.entries(schemaModal.data || {}).map(([tableName, tableInfo]) => {
+                  if (tableName === "database") return null;
+
+                  return (
+                    <div key={tableName} className="schema-section">
+                      <h4 className="schema-table-name">
+                        <FaTable />
+                        {tableName}
+                      </h4>
+
+                      <div className="schema-columns">
+                        <h5 className="schema-columns-title">Columns</h5>
+                        <div className="schema-columns-list">
+                          {(tableInfo.columns || []).map((column) => (
+                            <span key={column} className="schema-column">
+                              {column}
+                            </span>
+                          ))}
+                        </div>
+                      </div>
+
+                      {tableInfo.sample_rows && tableInfo.sample_rows.length > 0 && (
+                        <div className="schema-sample">
+                          <h5 className="schema-sample-title">Sample Data</h5>
+                          <table className="sample-table">
+                            <thead>
+                              <tr>
+                                {(tableInfo.columns || []).map((column) => (
+                                  <th key={column}>{column}</th>
+                                ))}
+                              </tr>
+                            </thead>
+                            <tbody>
+                              {tableInfo.sample_rows.slice(0, 5).map((row, index) => (
+                                <tr key={index}>
+                                  {(row || []).map((cell, cellIndex) => (
+                                    <td key={cellIndex} title={String(cell)}>
+                                      {typeof cell === "string" && cell.length > 50
+                                        ? `${cell.slice(0, 50)}...`
+                                        : String(cell)}
+                                    </td>
+                                  ))}
+                                </tr>
+                              ))}
+                            </tbody>
+                          </table>
+                        </div>
+                      )}
+                    </div>
+                  );
+                })
+              )}
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Preview Modal */}
+      {previewModal.open && (
+        <div className="modal-overlay" onClick={() => setPreviewModal({ open: false, url: "", name: "", type: "" })}>
+          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+            <div className="modal-header">
+              <h3 className="modal-title">{previewModal.name}</h3>
+              <button
+                className="modal-close-btn"
+                onClick={() => setPreviewModal({ open: false, url: "", name: "", type: "" })}
+                title="Close preview"
+              >
+                <FaTimes />
+              </button>
+            </div>
+
+            <div className="modal-body" style={{ padding: 0 }}>
+              {previewModal.type === "pdf" ? (
+                <iframe src={previewModal.url} title="File preview" style={{ width: "100%", height: "100%", border: "none" }} />
+              ) : ["png", "jpg", "jpeg", "webp", "gif"].includes(previewModal.type) ? (
+                <img src={previewModal.url} alt={previewModal.name} style={{ width: "100%", height: "100%", objectFit: "contain" }} />
+              ) : (
+                <div className="empty-state">
+                  <FaEye className="empty-state-icon" />
+                  <h3 className="empty-state-title">Preview Not Available</h3>
+                  <p className="empty-state-description">
+                    No preview available for .{previewModal.type} files. Use the download or open button instead.
+                  </p>
+                </div>
+              )}
+            </div>
+          </div>
+        </div>
+      )}
+    </div>
+  );
 }
