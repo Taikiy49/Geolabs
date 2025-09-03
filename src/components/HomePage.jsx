@@ -764,36 +764,6 @@ export default function HomePage() {
           </div>
         )}
       </div>
-
-      {/* Footer */}
-      <footer className="homepage-footer animate-on-scroll visible">
-        <div className="footer-content">
-          <div className="footer-left">
-            <div className="footer-brand">
-              <img src="/geolabs_logo.jpg" alt="Geolabs" className="footer-logo" />
-              <span className="footer-title">Geolabs, Inc.</span>
-            </div>
-            <p className="footer-description">
-              Leading geotechnical engineering solutions since 1975
-            </p>
-          </div>
-          
-          <div className="footer-right">
-            <div className="footer-links">
-              <a href="https://www.geolabs.net" target="_blank" rel="noopener noreferrer" className="footer-link">
-                Company Website
-              </a>
-              <a href="mailto:info@geolabs.net" className="footer-link">
-                Contact Us
-              </a>
-            </div>
-            <div className="footer-meta">
-              <span>© {currentTime.getFullYear()} Geolabs, Inc.</span>
-              <span>All rights reserved</span>
-            </div>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 }
