@@ -1,769 +1,783 @@
-import React, { useEffect, useMemo, useState, useRef } from "react";
-import "../styles/HomePage.css";
-import homepageCards from "./HomePageCards";
-import { useNavigate, useSearchParams } from "react-router-dom";
-import { useMsal } from "@azure/msal-react";
-import {
-  FaStar,
-  FaRegStar,
-  FaClock,
-  FaSearch,
-  FaCalendarAlt,
-  FaChartLine,
-  FaFolderOpen,
-  FaBoxOpen,
-  FaRobot,
-  FaCheckCircle,
-  FaGripLines,
-  FaExpandArrowsAlt,
-  FaGithub,
-  FaExternalLinkAlt,
-  FaCodeBranch,
-  FaEye,
-  FaTag,
-} from "react-icons/fa";
+/* Professional AI Chat Interface */
+.ai-chat {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background: 
+    radial-gradient(circle at 20% 80%, rgba(79, 143, 247, 0.06) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(124, 58, 237, 0.06) 0%, transparent 50%),
+    var(--bg-primary);
+  position: relative;
+}
 
-const FAVORITES_KEY = "geolabs_favorites_v2";
-const RECENTS_KEY = "geolabs_recents_v2";
-const RECENT_MAX = 8;
+/* Header */
+.ai-header {
+  background: 
+    linear-gradient(135deg, rgba(10, 14, 26, 0.92), rgba(17, 24, 39, 0.88)),
+    radial-gradient(circle at 50% 0%, rgba(79, 143, 247, 0.08), transparent 70%);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-bottom: 1px solid var(--border-color);
+  padding: var(--space-4) var(--space-6);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+}
 
-// Layout + size prefs
-const LAYOUT_ORDER_KEY = "geolabs_layout_order_v1"; // array of labels in order
-const CARD_SIZES_KEY = "geolabs_card_sizes_v1";     // { [label]: 'n'|'w'|'t'|'b' }
+.ai-header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--color-primary), transparent);
+  opacity: 0.6;
+}
 
-// 🔗 LinkedIn post (live embed)
-const LINKEDIN_POST_URL =
-  "https://www.linkedin.com/posts/geolabs_celebrating-50-years-of-engineering-excellence-activity-7365988140722872320-3Ua8?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD5bZ5gBnaRS5zh8pZj6FBWwJfRKFtKF1gc";
-const getLinkedInEmbedSrc = (url) => {
-  if (!url) return null;
-  const m = url.match(/activity-(\d+)/);
-  if (!m) return null;
-  const id = m[1];
-  return `https://www.linkedin.com/embed/feed/update/urn:li:activity:${id}`;
-};
+.ai-header-left {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+}
 
-// 🐙 GitHub repo: owner/repo
-const GITHUB_OWNER = "Taikiy49";
-const GITHUB_REPO = "Geolabs";
-const GITHUB_REPO_URL = `https://github.com/${GITHUB_OWNER}/${GITHUB_REPO}`;
+.ai-title {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  text-shadow: 0 0 10px rgba(59, 130, 246, 0.3);
+}
 
-const normalizeText = (text = "") => text.toLowerCase().trim();
-const matchesSearch = (searchTerm, ...fields) => {
-  const term = normalizeText(searchTerm);
-  if (!term) return true;
-  return fields.some((field) => normalizeText(field || "").includes(term));
-};
-const highlightText = (text, searchTerm) => {
-  if (!searchTerm || !text) return text;
-  try {
-    const regex = new RegExp(
-      `(${searchTerm.replace(/[.*+?^${}()|[\\]\\\\]/g, "\\$&")})`,
-      "gi"
-    );
-    const parts = String(text).split(regex);
-    return parts.map((part, index) =>
-      regex.test(part) ? (
-        <mark key={index} className="search-highlight">
-          {part}
-        </mark>
-      ) : (
-        <span key={index}>{part}</span>
-      )
-    );
-  } catch {
-    return text;
+.ai-title-icon {
+  color: var(--color-primary);
+  font-size: 1.5rem;
+  filter: drop-shadow(0 0 8px rgba(59, 130, 246, 0.4));
+}
+
+.database-selector {
+  min-width: 200px;
+}
+
+.database-select {
+  width: 100%;
+  padding: var(--space-3) var(--space-4);
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  color: var(--text-primary);
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.database-select:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+/* Settings Toggle */
+.ai-settings {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.setting-toggle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-1);
+  padding: var(--space-2);
+  background: transparent;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  min-width: 60px;
+}
+
+.setting-toggle:hover {
+  background: var(--bg-hover);
+  border-color: var(--border-hover);
+  color: var(--text-secondary);
+}
+
+.setting-toggle.active {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  color: white;
+}
+
+.setting-icon {
+  font-size: 1rem;
+}
+
+.setting-label {
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Main Layout */
+.ai-main {
+  display: flex;
+  flex: 1;
+  min-height: 0;
+}
+
+.ai-chat-panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+.ai-history-panel {
+  width: 320px;
+  min-width: 320px;
+  background: var(--bg-secondary);
+  border-left: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+}
+
+/* FAQ Section */
+.ai-faq {
+  padding: var(--space-6);
+  border-bottom: 1px solid var(--border-color);
+  background: var(--bg-secondary);
+}
+
+.faq-title {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: var(--space-4);
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--space-3);
+}
+
+.faq-button {
+  padding: var(--space-3) var(--space-4);
+  background: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  text-align: left;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  line-height: 1.4;
+}
+
+.faq-button:hover {
+  background: var(--bg-hover);
+  border-color: var(--color-primary);
+  color: var(--text-primary);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+}
+
+.faq-toggle {
+  background: var(--color-primary);
+  color: white;
+  border-color: var(--color-primary);
+  font-weight: 600;
+  text-align: center;
+}
+
+.faq-toggle:hover {
+  background: var(--color-primary-hover);
+  border-color: var(--color-primary-hover);
+}
+
+/* Chat Area */
+.ai-chat-area {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+.chat-messages {
+  flex: 1;
+  overflow-y: auto;
+  padding: var(--space-6);
+  background: var(--bg-primary);
+  position: relative;
+}
+
+.chat-messages::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 20px;
+  background: linear-gradient(180deg, var(--bg-secondary), transparent);
+  pointer-events: none;
+}
+
+/* Message Pairs */
+.message-pair {
+  margin-bottom: var(--space-8);
+  animation: fadeIn 0.3s ease-out;
+}
+
+.user-message {
+  background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+  color: white;
+  padding: var(--space-4) var(--space-6);
+  border-radius: var(--radius-xl);
+  margin-bottom: var(--space-4);
+  font-weight: 500;
+  box-shadow: var(--shadow-md);
+  position: relative;
+  max-width: 80%;
+  margin-left: auto;
+}
+
+.user-message::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  right: var(--space-4);
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid var(--color-primary);
+}
+
+.assistant-message {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-xl);
+  padding: var(--space-6);
+  box-shadow: var(--shadow-md);
+  position: relative;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.assistant-message::before {
+  content: '';
+  position: absolute;
+  top: var(--space-4);
+  left: -8px;
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-right: 8px solid var(--bg-card);
+}
+
+/* Message Actions */
+.message-actions {
+  position: absolute;
+  top: var(--space-3);
+  right: var(--space-3);
+  display: flex;
+  gap: var(--space-2);
+  opacity: 0;
+  transition: opacity var(--transition-fast);
+}
+
+.assistant-message:hover .message-actions {
+  opacity: 1;
+}
+
+.message-action-btn {
+  width: 32px;
+  height: 32px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.875rem;
+}
+
+.message-action-btn:hover {
+  background: var(--bg-hover);
+  color: var(--text-primary);
+  border-color: var(--border-hover);
+}
+
+/* Markdown Styling */
+.message-content {
+  color: var(--text-primary);
+  line-height: 1.7;
+}
+
+.message-content h1,
+.message-content h2,
+.message-content h3,
+.message-content h4,
+.message-content h5,
+.message-content h6 {
+  color: var(--text-primary);
+  font-weight: 700;
+  margin: var(--space-6) 0 var(--space-4) 0;
+}
+
+.message-content h1 { font-size: 1.5rem; }
+.message-content h2 { font-size: 1.25rem; }
+.message-content h3 { font-size: 1.125rem; }
+
+.message-content p {
+  margin: var(--space-4) 0;
+  color: var(--text-secondary);
+}
+
+.message-content ul,
+.message-content ol {
+  margin: var(--space-4) 0;
+  padding-left: var(--space-6);
+}
+
+.message-content li {
+  margin: var(--space-2) 0;
+  color: var(--text-secondary);
+}
+
+.message-content code {
+  background: var(--bg-secondary);
+  color: var(--color-primary);
+  padding: var(--space-1) var(--space-2);
+  border-radius: var(--radius-sm);
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  font-size: 0.875rem;
+}
+
+.message-content pre {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: var(--space-4);
+  margin: var(--space-4) 0;
+  overflow-x: auto;
+  position: relative;
+}
+
+.message-content pre code {
+  background: none;
+  color: var(--text-primary);
+  padding: 0;
+}
+
+.code-block-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-3);
+  padding-bottom: var(--space-2);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.code-language {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+/* Loading State */
+.loading-message {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-4) var(--space-6);
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+.loading-dots {
+  display: flex;
+  gap: var(--space-1);
+}
+
+.loading-dot {
+  width: 6px;
+  height: 6px;
+  background: var(--color-primary);
+  border-radius: 50%;
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+.loading-dot:nth-child(2) { animation-delay: 0.2s; }
+.loading-dot:nth-child(3) { animation-delay: 0.4s; }
+
+@keyframes pulse {
+  0%, 80%, 100% { opacity: 0.3; }
+  40% { opacity: 1; }
+}
+
+/* Input Area */
+.ai-input-area {
+  background: var(--bg-secondary);
+  border-top: 1px solid var(--border-color);
+  padding: var(--space-6);
+}
+
+.input-container {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.input-form {
+  display: flex;
+  gap: var(--space-3);
+  align-items: flex-end;
+}
+
+.input-wrapper {
+  flex: 1;
+  position: relative;
+}
+
+.chat-input {
+  width: 100%;
+  min-height: 48px;
+  max-height: 120px;
+  padding: var(--space-4) var(--space-12) var(--space-4) var(--space-4);
+  background: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-xl);
+  color: var(--text-primary);
+  font-size: 1rem;
+  line-height: 1.5;
+  resize: none;
+  transition: all var(--transition-fast);
+  font-family: inherit;
+}
+
+.chat-input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.chat-input::placeholder {
+  color: var(--text-muted);
+}
+
+.input-actions {
+  position: absolute;
+  right: var(--space-3);
+  bottom: var(--space-3);
+  display: flex;
+  gap: var(--space-2);
+}
+
+.input-action-btn {
+  width: 36px;
+  height: 36px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.875rem;
+}
+
+.input-action-btn:hover {
+  background: var(--bg-hover);
+  color: var(--text-primary);
+  border-color: var(--border-hover);
+}
+
+.input-action-btn.primary {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  color: white;
+}
+
+.input-action-btn.primary:hover {
+  background: var(--color-primary-hover);
+  border-color: var(--color-primary-hover);
+}
+
+.input-action-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* History Panel */
+.history-header {
+  padding: var(--space-6);
+  border-bottom: 1px solid var(--border-color);
+  background: var(--bg-tertiary);
+}
+
+.history-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: var(--space-2);
+}
+
+.history-subtitle {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.history-list {
+  flex: 1;
+  overflow-y: auto;
+  padding: var(--space-4);
+}
+
+.history-item {
+  padding: var(--space-4);
+  border-radius: var(--radius-lg);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  margin-bottom: var(--space-2);
+  border: 1px solid transparent;
+  position: relative;
+}
+
+.history-item:hover {
+  background: var(--bg-hover);
+  border-color: var(--border-color);
+}
+
+.history-item:active {
+  transform: scale(0.98);
+}
+
+.history-question {
+  font-size: 0.875rem;
+  color: var(--text-primary);
+  font-weight: 500;
+  margin-bottom: var(--space-2);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.history-preview {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  line-height: 1.4;
+}
+
+.history-actions {
+  position: absolute;
+  top: var(--space-2);
+  right: var(--space-2);
+  opacity: 0;
+  transition: opacity var(--transition-fast);
+}
+
+.history-item:hover .history-actions {
+  opacity: 1;
+}
+
+.history-delete-btn {
+  width: 24px;
+  height: 24px;
+  background: var(--color-error);
+  border: none;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+}
+
+.history-delete-btn:hover {
+  background: #dc2626;
+  transform: scale(1.1);
+}
+
+/* Empty States */
+.empty-chat {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-12);
+  text-align: center;
+}
+
+.empty-icon {
+  font-size: 4rem;
+  color: var(--text-muted);
+  margin-bottom: var(--space-6);
+  opacity: 0.5;
+}
+
+.empty-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+  margin-bottom: var(--space-3);
+}
+
+.empty-description {
+  font-size: 1rem;
+  color: var(--text-muted);
+  max-width: 400px;
+  line-height: 1.6;
+}
+
+.empty-history {
+  padding: var(--space-8);
+  text-align: center;
+  color: var(--text-muted);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .ai-main {
+    flex-direction: column;
   }
-};
-const findSubpageByPath = (cards, path) => {
-  for (const card of cards) {
-    for (const subpage of card.subpages || []) {
-      if (subpage.path === path) {
-        return { parent: card, subpage };
-      }
-    }
+  
+  .ai-history-panel {
+    width: 100%;
+    min-width: 100%;
+    max-height: 300px;
+    border-left: none;
+    border-top: 1px solid var(--border-color);
   }
-  return null;
-};
-const deduplicateByKey = (array, keyFn) => {
-  const seen = new Set();
-  return array.filter((item) => {
-    const key = keyFn(item);
-    if (seen.has(key)) return false;
-    seen.add(key);
-    return true;
-  });
-};
-const timeOfDay = () => {
-  const h = new Date().getHours();
-  if (h < 5) return "Good night";
-  if (h < 12) return "Good morning";
-  if (h < 18) return "Good afternoon";
-  return "Good evening";
-};
-const timeAgo = (dateString) => {
-  if (!dateString) return "";
-  const date = new Date(dateString);
-  const now = new Date();
-  const diff = Math.floor((now - date) / 1000);
-  if (diff < 60) return `${diff}s ago`;
-  const m = Math.floor(diff / 60);
-  if (m < 60) return `${m}m ago`;
-  const h = Math.floor(m / 60);
-  if (h < 24) return `${h}h ago`;
-  const d = Math.floor(h / 24);
-  if (d < 30) return `${d}d ago`;
-  const mo = Math.floor(d / 30);
-  if (mo < 12) return `${mo}mo ago`;
-  const y = Math.floor(mo / 12);
-  return `${y}y ago`;
-};
-
-export default function HomePage() {
-  const navigate = useNavigate();
-  const [searchParams, setSearchParams] = useSearchParams();
-  const { accounts } = useMsal();
-
-  const fullName = accounts?.[0]?.name || "User";
-  const firstName = fullName.split(" ")[0];
-
-  const [searchQuery, setSearchQuery] = useState(searchParams.get("search") || "");
-  const [favorites, setFavorites] = useState([]);
-  const [recents, setRecents] = useState([]);
-  const [isLoading, setIsLoading] = useState(true);
-
-  // Edit layout
-  const [editMode, setEditMode] = useState(false);
-  const [draggingId, setDraggingId] = useState(null);
-
-  // default order: labels in homepageCards order
-  const defaultOrder = useMemo(() => homepageCards.map((c) => c.label), []);
-  const [layoutOrder, setLayoutOrder] = useState(() => {
-    try {
-      const saved = JSON.parse(localStorage.getItem(LAYOUT_ORDER_KEY) || "[]");
-      if (Array.isArray(saved) && saved.length) return saved;
-    } catch {}
-    return defaultOrder;
-  });
-
-  // per-card sizes
-  const [cardSizes, setCardSizes] = useState(() => {
-    try {
-      const saved = JSON.parse(localStorage.getItem(CARD_SIZES_KEY) || "{}");
-      return typeof saved === "object" && saved ? saved : {};
-    } catch {}
-    return {};
-  });
-
-  const pageRef = useRef(null);
-
-  // Demo metrics (replace with real)
-  const demoMetrics = useMemo(
-    () => ({
-      docsIndexed: 12890,
-      coreBoxes: 412,
-      aiAnswersThisWeek: 76,
-      openTasks: 5,
-    }),
-    []
-  );
-  const weeklyDocs = useMemo(() => [8, 12, 10, 14, 9, 15, 13], []);
-
-  // GitHub repo state
-  const [ghLoading, setGhLoading] = useState(true);
-  const [ghError, setGhError] = useState("");
-  const [repo, setRepo] = useState(null);
-  const [commits, setCommits] = useState([]);
-  const [pulls, setPulls] = useState([]);
-  const [languages, setLanguages] = useState({});
-  const [latestRelease, setLatestRelease] = useState(null);
-
-  // Load saved data
-  useEffect(() => {
-    try {
-      const savedFavorites = JSON.parse(localStorage.getItem(FAVORITES_KEY) || "[]");
-      const savedRecents = JSON.parse(localStorage.getItem(RECENTS_KEY) || "[]");
-      setFavorites(savedFavorites);
-      setRecents(savedRecents);
-    } catch {
-      setFavorites([]);
-      setRecents([]);
-    } finally {
-      setIsLoading(false);
-    }
-  }, []);
-
-  // Update search params
-  useEffect(() => {
-    if (searchQuery) setSearchParams({ search: searchQuery });
-    else setSearchParams({});
-  }, [searchQuery, setSearchParams]);
-
-  // Persist layout & sizes
-  useEffect(() => {
-    try {
-      localStorage.setItem(LAYOUT_ORDER_KEY, JSON.stringify(layoutOrder));
-    } catch {}
-  }, [layoutOrder]);
-  useEffect(() => {
-    try {
-      localStorage.setItem(CARD_SIZES_KEY, JSON.stringify(cardSizes));
-    } catch {}
-  }, [cardSizes]);
-
-  // Fetch GitHub repo data
-  useEffect(() => {
-    let active = true;
-    (async () => {
-      try {
-        setGhLoading(true);
-        setGhError("");
-
-        const base = `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}`;
-        const [rRes, cRes, pRes, lRes, relRes] = await Promise.all([
-          fetch(base),
-          fetch(`${base}/commits?per_page=6`),
-          fetch(`${base}/pulls?state=open&per_page=6`),
-          fetch(`${base}/languages`),
-          fetch(`${base}/releases/latest`), // may 404 if no releases
-        ]);
-
-        if (!rRes.ok) throw new Error("Repo not found");
-        const repoJson = await rRes.json();
-        const commitsJson = cRes.ok ? await cRes.json() : [];
-        const pullsJson = pRes.ok ? await pRes.json() : [];
-        const langsJson = lRes.ok ? await lRes.json() : {};
-        let releaseJson = null;
-        if (relRes.ok) {
-          try { releaseJson = await relRes.json(); } catch {}
-        }
-
-        if (!active) return;
-        setRepo(repoJson);
-        setCommits(
-          (commitsJson || []).map((c) => ({
-            sha: c.sha,
-            url: c.html_url,
-            msg: c.commit?.message?.split("\n")[0] || "(no message)",
-            author:
-              c.author?.login ||
-              c.commit?.author?.name ||
-              c.commit?.committer?.name ||
-              "unknown",
-            date: c.commit?.author?.date || c.commit?.committer?.date,
-          }))
-        );
-        setPulls(
-          (pullsJson || []).map((p) => ({
-            number: p.number,
-            title: p.title,
-            url: p.html_url,
-            user: p.user?.login,
-            date: p.updated_at || p.created_at,
-          }))
-        );
-        setLanguages(langsJson || {});
-        setLatestRelease(releaseJson);
-      } catch (e) {
-        if (!active) return;
-        setGhError("Couldn’t load GitHub data.");
-      } finally {
-        if (active) setGhLoading(false);
-      }
-    })();
-    return () => {
-      active = false;
-    };
-  }, []);
-
-  const saveFavorites = (newFavorites) => {
-    setFavorites(newFavorites);
-    try {
-      localStorage.setItem(FAVORITES_KEY, JSON.stringify(newFavorites));
-    } catch {}
-  };
-  const saveRecents = (newRecents) => {
-    setRecents(newRecents);
-    try {
-      localStorage.setItem(RECENTS_KEY, JSON.stringify(newRecents));
-    } catch {}
-  };
-
-  const isFavorited = (path) => favorites.some((fav) => fav.path === path);
-  const toggleFavorite = (path) => {
-    const metadata = findSubpageByPath(homepageCards, path);
-    if (!metadata) return;
-    const entry = {
-      path,
-      name: metadata.subpage.name,
-      parent: metadata.parent.label,
-      timestamp: Date.now(),
-    };
-    if (isFavorited(path)) {
-      saveFavorites(favorites.filter((fav) => fav.path !== path));
-    } else {
-      const updated = deduplicateByKey([entry, ...favorites], (item) => item.path);
-      saveFavorites(updated);
-    }
-  };
-  const recordRecentVisit = (path) => {
-    const metadata = findSubpageByPath(homepageCards, path);
-    if (!metadata) return;
-    const entry = {
-      path,
-      name: metadata.subpage.name,
-      parent: metadata.parent.label,
-      timestamp: Date.now(),
-    };
-    const updated = deduplicateByKey([entry, ...recents], (item) => item.path).slice(
-      0,
-      RECENT_MAX
-    );
-    saveRecents(updated);
-  };
-  const handleNavigation = (path, disabled = false) => {
-    if (!path || disabled) return;
-    recordRecentVisit(path);
-    navigate(path);
-  };
-  const getTimeAgo = (dateString) => {
-    if (!dateString) return "Recently updated";
-    try {
-      const date = new Date(dateString);
-      const now = new Date();
-      const diffInDays = Math.floor((now - date) / (1000 * 60 * 60 * 24));
-      if (diffInDays === 0) return "Updated today";
-      if (diffInDays === 1) return "Updated yesterday";
-      if (diffInDays < 7) return `Updated ${diffInDays} days ago`;
-      if (diffInDays < 30) return `Updated ${Math.floor(diffInDays / 7)} weeks ago`;
-      return `Updated ${Math.floor(diffInDays / 30)} months ago`;
-    } catch {
-      return "Recently updated";
-    }
-  };
-
-  // Filter + search
-  const filteredCards = useMemo(() => {
-    const term = searchQuery.trim();
-    return homepageCards
-      .map((card) => {
-        const filteredSubpages = (card.subpages || []).filter((subpage) =>
-          matchesSearch(
-            term,
-            card.label,
-            card.sublabel,
-            card.description,
-            subpage.name,
-            subpage.description
-          )
-        );
-        const cardMatches = matchesSearch(term, card.label, card.sublabel, card.description);
-        if (cardMatches || filteredSubpages.length > 0) {
-          return {
-            ...card,
-            subpages: filteredSubpages.length > 0 || !term ? card.subpages : [],
-          };
-        }
-        return null;
-      })
-      .filter(Boolean);
-  }, [searchQuery]);
-
-  // Apply saved order
-  const orderedCards = useMemo(() => {
-    const indexOf = (label) => {
-      const idx = layoutOrder.indexOf(label);
-      return idx === -1 ? Number.MAX_SAFE_INTEGER : idx;
-    };
-    return [...filteredCards].sort((a, b) => indexOf(a.label) - indexOf(b.label));
-  }, [filteredCards, layoutOrder]);
-
-  // Reveal on scroll
-  useEffect(() => {
-    const root = pageRef.current;
-    if (!root) return;
-    const items = root.querySelectorAll(".animate-on-scroll");
-    const io = new IntersectionObserver(
-      (entries) => entries.forEach((e) => e.isIntersecting && e.target.classList.add("visible")),
-      { threshold: 0.08 }
-    );
-    items.forEach((el) => io.observe(el));
-    return () => io.disconnect();
-  }, [filteredCards]);
-
-  // Drag helpers
-  const reorder = (arr, fromLabel, toLabel) => {
-    if (fromLabel === toLabel) return arr;
-    const next = [...arr];
-    const from = next.indexOf(fromLabel);
-    const to = next.indexOf(toLabel);
-    if (from === -1 || to === -1) return arr;
-    next.splice(to, 0, ...next.splice(from, 1));
-    return next;
-  };
-  const onCardDragStart = (label) => (e) => {
-    if (!editMode) return;
-    setDraggingId(label);
-    e.dataTransfer.effectAllowed = "move";
-    e.dataTransfer.setData("text/plain", label);
-    e.currentTarget.classList.add("is-dragging");
-  };
-  const onCardDragEnd = (e) => {
-    e.currentTarget.classList.remove("is-dragging");
-    setDraggingId(null);
-  };
-  const onCardDragOver = (overLabel) => (e) => {
-    if (!editMode) return;
-    e.preventDefault();
-    if (!draggingId || draggingId === overLabel) return;
-    setLayoutOrder((prev) => reorder(prev, draggingId, overLabel));
-  };
-  const cycleSize = (label) => {
-    setCardSizes((prev) => {
-      const cur = prev[label] || "n";
-      const next = cur === "n" ? "w" : cur === "w" ? "t" : cur === "t" ? "b" : "n";
-      return { ...prev, [label]: next };
-    });
-  };
-  const resetLayout = () => {
-    setLayoutOrder(defaultOrder);
-    setCardSizes({});
-  };
-
-  const currentTime = new Date();
-  if (isLoading) {
-    return (
-      <div className="homepage">
-        <div className="homepage-loading">
-          <div className="loading-spinner" />
-          <div className="loading-text">Loading dashboard…</div>
-        </div>
-      </div>
-    );
+  
+  .faq-grid {
+    grid-template-columns: 1fr;
   }
+}
 
-  return (
-    <div className="homepage" ref={pageRef}>
-      <div className="homepage-container compact">
-        {/* Hero */}
-        <section className="homepage-hero compact visible">
-          <div className="hero-greeting">
-            <h1 className="hero-title">
-              {timeOfDay()}, {firstName}
-            </h1>
-            <p className="hero-subtitle">
-              Your geotechnical data platform — fast, consistent, and organized
-            </p>
-            <div className="hero-meta">
-              <div className="hero-meta-item">
-                <FaCalendarAlt />
-                <span>
-                  {currentTime.toLocaleDateString("en-US", {
-                    weekday: "long",
-                    year: "numeric",
-                    month: "long",
-                    day: "numeric",
-                  })}
-                </span>
-              </div>
-              <div className="hero-meta-item">
-                <span>Geolabs Team</span>
-              </div>
-              <div className="hero-meta-item">
-                <FaChartLine />
-                <span>Analytics Ready</span>
-              </div>
-            </div>
+@media (max-width: 768px) {
+  .ai-header {
+    flex-direction: column;
+    align-items: stretch;
+    gap: var(--space-4);
+  }
+  
+  .ai-header-left {
+    flex-direction: column;
+    align-items: stretch;
+    gap: var(--space-3);
+  }
+  
+  .ai-settings {
+    justify-content: center;
+  }
+  
+  .chat-messages {
+    padding: var(--space-4);
+  }
+  
+  .ai-input-area {
+    padding: var(--space-4);
+  }
+  
+  .user-message {
+    max-width: 90%;
+  }
+  
+  .message-actions {
+    position: static;
+    margin-top: var(--space-3);
+    opacity: 1;
+    justify-content: flex-end;
+  }
+}
 
-            {/* Edit layout controls */}
-            <div className="hero-actions">
-              <button
-                className={`btn-edit ${editMode ? "on" : ""}`}
-                onClick={() => setEditMode((v) => !v)}
-                title="Reorder and resize cards"
-              >
-                {editMode ? "Done editing" : "Edit layout"}
-              </button>
-              {editMode && (
-                <button className="btn-reset" onClick={resetLayout} title="Reset order & sizes">
-                  Reset
-                </button>
-              )}
-            </div>
-          </div>
-        </section>
+@media (max-width: 480px) {
+  .input-form {
+    flex-direction: column;
+    gap: var(--space-3);
+  }
+  
+  .input-actions {
+    position: static;
+    justify-content: center;
+    margin-top: var(--space-3);
+  }
+  
+  .chat-input {
+    padding-right: var(--space-4);
+  }
+}
 
-    
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .message-pair,
+  .faq-button,
+  .history-item,
+  .input-action-btn,
+  .setting-toggle {
+    animation: none;
+    transition: none;
+  }
+  
+  .faq-button:hover,
+  .history-item:hover,
+  .user-message {
+    transform: none;
+  }
+}
 
-        {/* KPIs */}
-        <section className="kpi-grid animate-on-scroll visible">
-          <div className="kpi-card">
-            <div className="kpi-icon">
-              <FaFolderOpen />
-            </div>
-            <div className="kpi-meta">
-              <div className="kpi-label">Documents Indexed</div>
-              <div className="kpi-value">{demoMetrics.docsIndexed.toLocaleString()}</div>
-            </div>
-            <div className="kpi-trend">
-              <div className="kpi-bars">
-                {weeklyDocs.map((v, i) => (
-                  <span key={i} style={{ height: `${6 + v * 3}px` }} />
-                ))}
-              </div>
-              <div className="kpi-hint">last 7 days</div>
-            </div>
-          </div>
-          <div className="kpi-card">
-            <div className="kpi-icon">
-              <FaBoxOpen />
-            </div>
-            <div className="kpi-meta">
-              <div className="kpi-label">Core Boxes</div>
-              <div className="kpi-value">{demoMetrics.coreBoxes.toLocaleString()}</div>
-            </div>
-            <div className="kpi-pill">Inventory</div>
-          </div>
-          <div className="kpi-card">
-            <div className="kpi-icon">
-              <FaRobot />
-            </div>
-            <div className="kpi-meta">
-              <div className="kpi-label">AI Answers (wk)</div>
-              <div className="kpi-value">{demoMetrics.aiAnswersThisWeek}</div>
-            </div>
-            <div className="kpi-pill kpi-pill--glow">↑ healthy</div>
-          </div>
-          <div className="kpi-card">
-            <div className="kpi-icon">
-              <FaCheckCircle />
-            </div>
-            <div className="kpi-meta">
-              <div className="kpi-label">Open Tasks</div>
-              <div className="kpi-value">{demoMetrics.openTasks}</div>
-            </div>
-            <div className="kpi-pill kpi-pill--warn">priority</div>
-          </div>
-        </section>
+/* Focus States */
+.faq-button:focus-visible,
+.history-item:focus-visible,
+.input-action-btn:focus-visible,
+.setting-toggle:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
 
+/* Scrollbar Styling */
+.chat-messages::-webkit-scrollbar,
+.history-list::-webkit-scrollbar {
+  width: 8px;
+}
 
-        {/* Search */}
-        <section className="homepage-search compact animate-on-scroll">
-          <div className="search-container-lg">
-            <FaSearch className="search-icon-lg" />
-            <input
-              type="text"
-              className="search-input-lg"
-              placeholder="Search tools, documents, and features…"
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-            />
-          </div>
-        </section>
+.chat-messages::-webkit-scrollbar-track,
+.history-list::-webkit-scrollbar-track {
+  background: transparent;
+}
 
-    
+.chat-messages::-webkit-scrollbar-thumb,
+.history-list::-webkit-scrollbar-thumb {
+  background: var(--bg-tertiary);
+  border-radius: var(--radius-lg);
+}
 
-        {/* Quick Access */}
-{(favorites.length > 0 || recents.length > 0) && (
-  <section className="quick-access compact visible">
-    {favorites.length > 0 && (
-      <div className="qa-section">
-        <h2 className="qa-title">
-          <FaStar />
-          Favorites
-        </h2>
-        <div className="qa-grid">
-          {favorites.slice(0, 6).map((favorite) => {
-            const metadata = findSubpageByPath(homepageCards, favorite.path);
-            if (!metadata) return null;
-            return (
-              <button
-                key={favorite.path}
-                className="qa-item"
-                onClick={() => handleNavigation(favorite.path)}
-                title={`${favorite.parent} → ${favorite.name}`}
-              >
-                <div className="qa-icon">{metadata.subpage.icon}</div>
-                <div className="qa-content">
-                  <div className="qa-name">{favorite.name}</div>
-                  <div className="qa-desc">{favorite.parent}</div>
-                </div>
-              </button>
-            );
-          })}
-        </div>
-      </div>
-    )}
-
-    {recents.length > 0 && (
-      <div className="qa-section">
-        <h2 className="qa-title">
-          <FaClock />
-          Recently Used
-        </h2>
-        <div className="qa-grid">
-          {recents.slice(0, 6).map((recent) => {
-            const metadata = findSubpageByPath(homepageCards, recent.path);
-            if (!metadata) return null;
-            return (
-              <button
-                key={recent.path}
-                className="qa-item"
-                onClick={() => handleNavigation(recent.path)}
-                title={`${recent.parent} → ${recent.name}`}
-              >
-                <div className="qa-icon">{metadata.subpage.icon}</div>
-                <div className="qa-content">
-                  <div className="qa-name">{recent.name}</div>
-                  <div className="qa-desc">{recent.parent}</div>
-                </div>
-              </button>
-            );
-          })}
-        </div>
-      </div>
-    )}
-  </section>
-)}
-
-
-        {/* Categories (draggable + resizable in Edit mode) */}
-        <section className="categories-grid compact">
-          {orderedCards.map((card, index) => {
-            const size = cardSizes[card.label] || "n";
-            const sizeClass =
-              size === "w" ? "size-wide" : size === "t" ? "size-tall" : size === "b" ? "size-big" : "";
-            const editableClass = editMode ? "editable" : "";
-
-            const go = () => {
-              if (editMode) return;
-              if (!card.disabled && card.path) handleNavigation(card.path);
-            };
-
-            return (
-              <article
-                key={card.label}
-                data-id={card.label}
-                className={`category-card animate-on-scroll ${sizeClass} ${editableClass} ${
-                  card.disabled ? "disabled" : ""
-                }`}
-                style={{
-                  animationDelay: `${index * 70}ms`,
-                  opacity: card.disabled ? 0.6 : 1,
-                  cursor: editMode ? "grab" : card.disabled ? "not-allowed" : "pointer",
-                }}
-                onClick={go}
-                draggable={editMode}
-                onDragStart={onCardDragStart(card.label)}
-                onDragEnd={onCardDragEnd}
-                onDragOver={onCardDragOver(card.label)}
-                onDrop={(e) => e.preventDefault()}
-              >
-                {editMode && (
-                  <div className="card-tools">
-                    <span className="drag-handle" title="Drag to reorder">
-                      <FaGripLines />
-                    </span>
-                    <button
-                      className="size-btn"
-                      title="Resize (normal → wide → tall → big)"
-                      onClick={(e) => {
-                        e.stopPropagation();
-                        cycleSize(card.label);
-                      }}
-                    >
-                      <FaExpandArrowsAlt />
-                    </button>
-                  </div>
-                )}
-
-                <div className="category-header">
-                  <div className="category-icon">{card.icon}</div>
-                  <div className="category-content">
-                    <h3 className="category-title">
-                      {highlightText(card.label, searchQuery)}
-                      {card.tag && <span className="category-badge">{card.tag}</span>}
-                    </h3>
-                    {card.sublabel && (
-                      <p className="category-subtitle">
-                        {highlightText(card.sublabel, searchQuery)}
-                      </p>
-                    )}
-                    {card.description && (
-                      <p className="category-description">
-                        {highlightText(card.description, searchQuery)}
-                      </p>
-                    )}
-                  </div>
-                </div>
-
-                {card.subpages && card.subpages.length > 0 && (
-                  <div className="subpages-grid" onClick={(e) => e.stopPropagation()}>
-                    {card.subpages.map((subpage, subIndex) => (
-                      <div
-                        key={subIndex}
-                        className="subpage-item"
-                        onClick={() => handleNavigation(subpage.path, subpage.disabled)}
-                        style={{
-                          opacity: subpage.disabled ? 0.5 : 1,
-                          cursor: subpage.disabled ? "not-allowed" : "pointer",
-                        }}
-                      >
-                        <div className="subpage-header">
-                          <div className="subpage-icon">{subpage.icon}</div>
-                          <div className="subpage-name">
-                            {highlightText(subpage.name, searchQuery)}
-                          </div>
-                        </div>
-                        {subpage.description && (
-                          <p className="subpage-description">
-                            {highlightText(subpage.description, searchQuery)}
-                          </p>
-                        )}
-
-                        <button
-                          className={`favorite-btn ${
-                            isFavorited(subpage.path) ? "active" : ""
-                          }`}
-                          onClick={(e) => {
-                            e.stopPropagation();
-                            toggleFavorite(subpage.path);
-                          }}
-                          title={
-                            isFavorited(subpage.path)
-                              ? "Remove from favorites"
-                              : "Add to favorites"
-                          }
-                          aria-label={
-                            isFavorited(subpage.path)
-                              ? "Remove from favorites"
-                              : "Add to favorites"
-                          }
-                        >
-                          {isFavorited(subpage.path) ? <FaStar /> : <FaRegStar />}
-                        </button>
-                      </div>
-                    ))}
-                  </div>
-                )}
-
-                <div className="category-updated">{getTimeAgo(card.updated)}</div>
-              </article>
-            );
-          })}
-        </section>
-        
-
-        {/* Empty State */}
-        {orderedCards.length === 0 && searchQuery && (
-          <div className="empty-state animate-on-scroll">
-            <FaSearch className="empty-state-icon" />
-            <h3 className="empty-state-title">No results found</h3>
-            <p className="empty-state-description">
-              Try adjusting your search terms or browse the available categories above.
-            </p>
-          </div>
-        )}
-      </div>
-    </div>
-  );
+.chat-messages::-webkit-scrollbar-thumb:hover,
+.history-list::-webkit-scrollbar-thumb:hover {
+  background: var(--bg-hover);
 }

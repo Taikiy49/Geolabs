@@ -1,356 +1,783 @@
-import React, { useEffect, useMemo, useRef, useState } from "react";
-import {
-  FaPlus,
-  FaBell,
-  FaChevronDown,
-  FaSearch,
-  FaSignOutAlt,
-  FaSignInAlt,
-  FaCopy,
-  FaCheckCircle,
-  FaExclamationTriangle,
-  FaExternalLinkAlt,
-  FaCog,
-  FaHome,
-  FaFileAlt,
-  FaBars,
-  FaTimes
-} from "react-icons/fa";
-import { NavLink, Link, useLocation, useNavigate } from "react-router-dom";
-import "../styles/Header.css";
-import axios from "axios";
-import API_URL from "../config";
-import { useMsal, useIsAuthenticated } from "@azure/msal-react";
-
-function initialsFromEmailOrName(email, name) {
-  if (name && typeof name === "string") {
-    const parts = name.split(" ").filter(Boolean);
-    if (parts.length >= 2) return (parts[0][0] + parts[1][0]).toUpperCase();
-    return parts[0].slice(0, 2).toUpperCase();
-  }
-  if (!email) return "??";
-  const handle = email.split("@")[0] || "";
-  const chunks = handle.replace(/[._-]+/g, " ").split(" ");
-  if (chunks.length >= 2) return (chunks[0][0] + chunks[1][0]).toUpperCase();
-  return handle.slice(0, 2).toUpperCase();
+/* Professional AI Chat Interface */
+.ai-chat {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background: 
+    radial-gradient(circle at 20% 80%, rgba(79, 143, 247, 0.06) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(124, 58, 237, 0.06) 0%, transparent 50%),
+    var(--bg-primary);
+  position: relative;
 }
 
-export default function Header() {
-  const isAuthed = useIsAuthenticated();
-  const { instance, accounts } = useMsal();
-  const navigate = useNavigate();
-  const location = useLocation();
+/* Header */
+.ai-header {
+  background: 
+    linear-gradient(135deg, rgba(10, 14, 26, 0.92), rgba(17, 24, 39, 0.88)),
+    radial-gradient(circle at 50% 0%, rgba(79, 143, 247, 0.08), transparent 70%);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-bottom: 1px solid var(--border-color);
+  padding: var(--space-4) var(--space-6);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+}
 
-  const userEmail =
-    accounts?.[0]?.username ||
-    accounts?.[0]?.idTokenClaims?.preferred_username ||
-    "";
-  const displayName =
-    accounts?.[0]?.idTokenClaims?.name ||
-    accounts?.[0]?.idTokenClaims?.given_name ||
-    "";
-  const userInitials = initialsFromEmailOrName(userEmail, displayName);
+.ai-header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--color-primary), transparent);
+  opacity: 0.6;
+}
 
-  const [apiHealthy, setApiHealthy] = useState("unknown");
-  const [searchQuery, setSearchQuery] = useState("");
-  const [openDropdown, setOpenDropdown] = useState(null);
-  const [copied, setCopied] = useState(false);
-  const [sidebarOpen, setSidebarOpen] = useState(false); // NEW
+.ai-header-left {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+}
 
-  const headerRef = useRef(null);
-  const searchRef = useRef(null);
+.ai-title {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  text-shadow: 0 0 10px rgba(59, 130, 246, 0.3);
+}
 
-  useEffect(() => {
-    if (userEmail) {
-      axios.defaults.headers.common["X-User"] = userEmail;
-    } else {
-      delete axios.defaults.headers.common["X-User"];
-    }
-  }, [userEmail]);
+.ai-title-icon {
+  color: var(--color-primary);
+  font-size: 1.5rem;
+  filter: drop-shadow(0 0 8px rgba(59, 130, 246, 0.4));
+}
 
-  const ENV =
-    (import.meta && import.meta.env && import.meta.env.VITE_APP_ENV) ||
-    process.env.NODE_ENV ||
-    "development";
+.database-selector {
+  min-width: 200px;
+}
 
-  const pingApi = async () => {
-    try {
-      await axios.get(`${API_URL}/api/core-boxes/_debug`, { timeout: 4000 });
-      setApiHealthy("ok");
-    } catch {
-      setApiHealthy("down");
-    }
-  };
+.database-select {
+  width: 100%;
+  padding: var(--space-3) var(--space-4);
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  color: var(--text-primary);
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
 
-  useEffect(() => {
-    pingApi();
-    const interval = setInterval(pingApi, 60000);
-    return () => clearInterval(interval);
-  }, []);
+.database-select:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
 
-  // close dropdowns on route change
-  useEffect(() => {
-    setOpenDropdown(null);
-  }, [location.pathname]);
+/* Settings Toggle */
+.ai-settings {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+}
 
-  // listen for sidebar state so button icon can morph (bars <-> X)
-  useEffect(() => {
-    const onSidebarChanged = (e) => {
-      const isOpen = !!e?.detail?.open;
-      setSidebarOpen(isOpen);
-    };
-    window.addEventListener("geolabs:sidebarChanged", onSidebarChanged);
-    return () => window.removeEventListener("geolabs:sidebarChanged", onSidebarChanged);
-  }, []);
+.setting-toggle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-1);
+  padding: var(--space-2);
+  background: transparent;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  min-width: 60px;
+}
 
-  useEffect(() => {
-    function handleClickOutside(event) {
-      if (headerRef.current && !headerRef.current.contains(event.target)) {
-        setOpenDropdown(null);
-      }
-    }
-    function handleKeyDown(event) {
-      if (event.key === "Escape") setOpenDropdown(null);
-      if (event.key === "/" && !event.metaKey && !event.ctrlKey && !event.altKey) {
-        const ae = document.activeElement;
-        if (ae && (ae.tagName === "INPUT" || ae.tagName === "TEXTAREA")) return;
-        event.preventDefault();
-        searchRef.current?.focus();
-      }
-    }
-    document.addEventListener("mousedown", handleClickOutside);
-    document.addEventListener("keydown", handleKeyDown);
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-      document.removeEventListener("keydown", handleKeyDown);
-    };
-  }, []);
+.setting-toggle:hover {
+  background: var(--bg-hover);
+  border-color: var(--border-hover);
+  color: var(--text-secondary);
+}
 
-  const handleSignIn = async () => {
-    try {
-      await instance.loginPopup({ scopes: ["User.Read"], prompt: "select_account" });
-    } catch (error) {
-      console.error("Login failed:", error);
-    }
-  };
-  const handleSignOut = async () => {
-    try {
-      await instance.logoutPopup({ account: accounts[0] });
-    } catch (error) {
-      console.error("Logout failed:", error);
-    }
-  };
+.setting-toggle.active {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  color: white;
+}
 
-  const handleSearch = (e) => {
-    e.preventDefault();
-    if (searchQuery.trim()) {
-      navigate(`/?search=${encodeURIComponent(searchQuery.trim())}`);
-    }
-  };
+.setting-icon {
+  font-size: 1rem;
+}
 
-  const copyEmail = async () => {
-    try {
-      await navigator.clipboard.writeText(userEmail);
-      setCopied(true);
-      setTimeout(() => setCopied(false), 2000);
-    } catch {}
-  };
+.setting-label {
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
 
-  const apiStatusPill = useMemo(() => {
-    if (apiHealthy === "ok") {
-      return (
-        <div className="status-pill api-ok">
-          <FaCheckCircle />
-          <span>Online</span>
-        </div>
-      );
-    }
-    if (apiHealthy === "down") {
-      return (
-        <div className="status-pill api-error">
-          <FaExclamationTriangle />
-          <span>Offline</span>
-        </div>
-      );
-    }
-    return (
-      <div className="status-pill">
-        <span>Checking…</span>
-      </div>
-    );
-  }, [apiHealthy]);
+/* Main Layout */
+.ai-main {
+  display: flex;
+  flex: 1;
+  min-height: 0;
+}
 
-  // Toggle overlay sidebar (morph icon + accessible state)
-  const toggleSidebar = () => {
-    window.dispatchEvent(new CustomEvent("geolabs:toggleSidebar", { detail: "toggle" }));
-    setSidebarOpen((prev) => !prev);
-  };
+.ai-chat-panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
 
-  return (
-    <header className="header" ref={headerRef}>
-      {/* LEFT: hamburger + brand + dashboard */}
-      <div className="header-left">
-        <button
-          className={`header-menu-btn ${sidebarOpen ? "is-open" : ""}`}
-          onClick={toggleSidebar}
-          aria-label={sidebarOpen ? "Close menu" : "Open menu"}
-          aria-expanded={sidebarOpen}
-          aria-pressed={sidebarOpen}
-          aria-controls="geolabs-sidebar"
-          title={sidebarOpen ? "Close menu" : "Open menu"}
-        >
-          {sidebarOpen ? <FaTimes /> : <FaBars />}
-        </button>
+.ai-history-panel {
+  width: 320px;
+  min-width: 320px;
+  background: var(--bg-secondary);
+  border-left: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+}
 
-        <Link to="/" className="header-brand no-wrap" title="Geolabs, Inc.">
-          <img src="/geolabs_logo.jpg" alt="Geolabs" className="header-logo" />
-          <span className="header-title no-wrap">Geolabs,&nbsp;Inc.</span>
-        </Link>
+/* FAQ Section */
+.ai-faq {
+  padding: var(--space-6);
+  border-bottom: 1px solid var(--border-color);
+  background: var(--bg-secondary);
+}
 
-        <nav className="header-nav">
-          <NavLink
-            to="/"
-            end
-            className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`}
-            title="Dashboard"
-          >
-            <FaHome />
-            <span>Dashboard</span>
-          </NavLink>
-        </nav>
-      </div>
+.faq-title {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: var(--space-4);
+}
 
-      {/* CENTER: search */}
-      <div className="header-center">
-        <form className="header-search" onSubmit={handleSearch}>
-          <input
-            ref={searchRef}
-            type="text"
-            className="search-input"
-            placeholder="Search… ( / )"
-            value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
-            aria-label="Search"
-          />
-          <FaSearch className="search-icon" aria-hidden />
-        </form>
-      </div>
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--space-3);
+}
 
-      {/* RIGHT: env + api status + actions/profile */}
-      <div className="header-right">
-        <div className="header-status">
-          <div className="status-pill env"><span>{ENV}</span></div>
-          {apiStatusPill}
-        </div>
+.faq-button {
+  padding: var(--space-3) var(--space-4);
+  background: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  text-align: left;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  line-height: 1.4;
+}
 
-        <div className="header-actions">
-          {/* New */}
-          <div className="profile-menu">
-            <button
-              className="action-btn"
-              onClick={() => setOpenDropdown(openDropdown === "new" ? null : "new")}
-              aria-expanded={openDropdown === "new"}
-              aria-haspopup="menu"
-              title="Create"
-            >
-              <FaPlus />
-            </button>
-            {openDropdown === "new" && (
-              <div className="dropdown-menu">
-                <Link to="/db-admin" className="dropdown-item">
-                  <FaPlus /><span>Upload Documents</span>
-                </Link>
-                <Link to="/s3-admin" className="dropdown-item">
-                  <FaPlus /><span>Upload to S3</span>
-                </Link>
-                <Link to="/core-box-inventory" className="dropdown-item">
-                  <FaPlus /><span>Add Core Box</span>
-                </Link>
-              </div>
-            )}
-          </div>
+.faq-button:hover {
+  background: var(--bg-hover);
+  border-color: var(--color-primary);
+  color: var(--text-primary);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+}
 
-          {/* Notifications */}
-          <div className="profile-menu">
-            <button
-              className="action-btn"
-              onClick={() => setOpenDropdown(openDropdown === "notifications" ? null : "notifications")}
-              aria-expanded={openDropdown === "notifications"}
-              aria-haspopup="menu"
-              title="Notifications"
-            >
-              <FaBell />
-              <span className="notification-badge" />
-            </button>
-            {openDropdown === "notifications" && (
-              <div className="dropdown-menu">
-                <div className="dropdown-header">
-                  <div className="dropdown-user-name">Notifications</div>
-                  <div className="dropdown-user-email">No new alerts</div>
-                </div>
-                <div className="dropdown-item">
-                  <FaCheckCircle /><span>All caught up</span>
-                </div>
-              </div>
-            )}
-          </div>
+.faq-toggle {
+  background: var(--color-primary);
+  color: white;
+  border-color: var(--color-primary);
+  font-weight: 600;
+  text-align: center;
+}
 
-          {/* Profile */}
-          <div className="profile-menu">
-            <button
-              className="profile-trigger"
-              onClick={() => setOpenDropdown(openDropdown === "profile" ? null : "profile")}
-              aria-expanded={openDropdown === "profile"}
-              aria-haspopup="menu"
-              title="Profile"
-            >
-              <div className="profile-avatar">{userInitials}</div>
-              <FaChevronDown className="profile-chevron" />
-            </button>
+.faq-toggle:hover {
+  background: var(--color-primary-hover);
+  border-color: var(--color-primary-hover);
+}
 
-            {openDropdown === "profile" && (
-              <div className="dropdown-menu">
-                {isAuthed ? (
-                  <>
-                    <div className="dropdown-header">
-                      <div className="dropdown-user-name">{displayName || userEmail}</div>
-                      <div className="dropdown-user-email">{userEmail}</div>
-                    </div>
+/* Chat Area */
+.ai-chat-area {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
 
-                    <button className="dropdown-item" onClick={copyEmail}>
-                      <FaCopy /><span>Copy Email</span>
-                      {copied && <span className="copy-feedback">Copied!</span>}
-                    </button>
+.chat-messages {
+  flex: 1;
+  overflow-y: auto;
+  padding: var(--space-6);
+  background: var(--bg-primary);
+  position: relative;
+}
 
-                    <Link to="/admin" className="dropdown-item">
-                      <FaCog /><span>Admin Settings</span>
-                    </Link>
+.chat-messages::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 20px;
+  background: linear-gradient(180deg, var(--bg-secondary), transparent);
+  pointer-events: none;
+}
 
-                    <a
-                      href="https://myaccount.microsoft.com/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="dropdown-item"
-                    >
-                      <FaExternalLinkAlt /><span>Microsoft Account</span>
-                    </a>
+/* Message Pairs */
+.message-pair {
+  margin-bottom: var(--space-8);
+  animation: fadeIn 0.3s ease-out;
+}
 
-                    <div className="dropdown-divider" />
+.user-message {
+  background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+  color: white;
+  padding: var(--space-4) var(--space-6);
+  border-radius: var(--radius-xl);
+  margin-bottom: var(--space-4);
+  font-weight: 500;
+  box-shadow: var(--shadow-md);
+  position: relative;
+  max-width: 80%;
+  margin-left: auto;
+}
 
-                    <button className="dropdown-item danger" onClick={handleSignOut}>
-                      <FaSignOutAlt /><span>Sign Out</span>
-                    </button>
-                  </>
-                ) : (
-                  <button className="dropdown-item" onClick={handleSignIn}>
-                    <FaSignInAlt /><span>Sign In with Microsoft</span>
-                  </button>
-                )}
-              </div>
-            )}
-          </div>
-        </div>
-      </div>
-    </header>
-  );
+.user-message::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  right: var(--space-4);
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid var(--color-primary);
+}
+
+.assistant-message {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-xl);
+  padding: var(--space-6);
+  box-shadow: var(--shadow-md);
+  position: relative;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.assistant-message::before {
+  content: '';
+  position: absolute;
+  top: var(--space-4);
+  left: -8px;
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-right: 8px solid var(--bg-card);
+}
+
+/* Message Actions */
+.message-actions {
+  position: absolute;
+  top: var(--space-3);
+  right: var(--space-3);
+  display: flex;
+  gap: var(--space-2);
+  opacity: 0;
+  transition: opacity var(--transition-fast);
+}
+
+.assistant-message:hover .message-actions {
+  opacity: 1;
+}
+
+.message-action-btn {
+  width: 32px;
+  height: 32px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.875rem;
+}
+
+.message-action-btn:hover {
+  background: var(--bg-hover);
+  color: var(--text-primary);
+  border-color: var(--border-hover);
+}
+
+/* Markdown Styling */
+.message-content {
+  color: var(--text-primary);
+  line-height: 1.7;
+}
+
+.message-content h1,
+.message-content h2,
+.message-content h3,
+.message-content h4,
+.message-content h5,
+.message-content h6 {
+  color: var(--text-primary);
+  font-weight: 700;
+  margin: var(--space-6) 0 var(--space-4) 0;
+}
+
+.message-content h1 { font-size: 1.5rem; }
+.message-content h2 { font-size: 1.25rem; }
+.message-content h3 { font-size: 1.125rem; }
+
+.message-content p {
+  margin: var(--space-4) 0;
+  color: var(--text-secondary);
+}
+
+.message-content ul,
+.message-content ol {
+  margin: var(--space-4) 0;
+  padding-left: var(--space-6);
+}
+
+.message-content li {
+  margin: var(--space-2) 0;
+  color: var(--text-secondary);
+}
+
+.message-content code {
+  background: var(--bg-secondary);
+  color: var(--color-primary);
+  padding: var(--space-1) var(--space-2);
+  border-radius: var(--radius-sm);
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  font-size: 0.875rem;
+}
+
+.message-content pre {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: var(--space-4);
+  margin: var(--space-4) 0;
+  overflow-x: auto;
+  position: relative;
+}
+
+.message-content pre code {
+  background: none;
+  color: var(--text-primary);
+  padding: 0;
+}
+
+.code-block-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-3);
+  padding-bottom: var(--space-2);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.code-language {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+/* Loading State */
+.loading-message {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-4) var(--space-6);
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+.loading-dots {
+  display: flex;
+  gap: var(--space-1);
+}
+
+.loading-dot {
+  width: 6px;
+  height: 6px;
+  background: var(--color-primary);
+  border-radius: 50%;
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+.loading-dot:nth-child(2) { animation-delay: 0.2s; }
+.loading-dot:nth-child(3) { animation-delay: 0.4s; }
+
+@keyframes pulse {
+  0%, 80%, 100% { opacity: 0.3; }
+  40% { opacity: 1; }
+}
+
+/* Input Area */
+.ai-input-area {
+  background: var(--bg-secondary);
+  border-top: 1px solid var(--border-color);
+  padding: var(--space-6);
+}
+
+.input-container {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.input-form {
+  display: flex;
+  gap: var(--space-3);
+  align-items: flex-end;
+}
+
+.input-wrapper {
+  flex: 1;
+  position: relative;
+}
+
+.chat-input {
+  width: 100%;
+  min-height: 48px;
+  max-height: 120px;
+  padding: var(--space-4) var(--space-12) var(--space-4) var(--space-4);
+  background: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-xl);
+  color: var(--text-primary);
+  font-size: 1rem;
+  line-height: 1.5;
+  resize: none;
+  transition: all var(--transition-fast);
+  font-family: inherit;
+}
+
+.chat-input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.chat-input::placeholder {
+  color: var(--text-muted);
+}
+
+.input-actions {
+  position: absolute;
+  right: var(--space-3);
+  bottom: var(--space-3);
+  display: flex;
+  gap: var(--space-2);
+}
+
+.input-action-btn {
+  width: 36px;
+  height: 36px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.875rem;
+}
+
+.input-action-btn:hover {
+  background: var(--bg-hover);
+  color: var(--text-primary);
+  border-color: var(--border-hover);
+}
+
+.input-action-btn.primary {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  color: white;
+}
+
+.input-action-btn.primary:hover {
+  background: var(--color-primary-hover);
+  border-color: var(--color-primary-hover);
+}
+
+.input-action-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* History Panel */
+.history-header {
+  padding: var(--space-6);
+  border-bottom: 1px solid var(--border-color);
+  background: var(--bg-tertiary);
+}
+
+.history-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: var(--space-2);
+}
+
+.history-subtitle {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.history-list {
+  flex: 1;
+  overflow-y: auto;
+  padding: var(--space-4);
+}
+
+.history-item {
+  padding: var(--space-4);
+  border-radius: var(--radius-lg);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  margin-bottom: var(--space-2);
+  border: 1px solid transparent;
+  position: relative;
+}
+
+.history-item:hover {
+  background: var(--bg-hover);
+  border-color: var(--border-color);
+}
+
+.history-item:active {
+  transform: scale(0.98);
+}
+
+.history-question {
+  font-size: 0.875rem;
+  color: var(--text-primary);
+  font-weight: 500;
+  margin-bottom: var(--space-2);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.history-preview {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  line-height: 1.4;
+}
+
+.history-actions {
+  position: absolute;
+  top: var(--space-2);
+  right: var(--space-2);
+  opacity: 0;
+  transition: opacity var(--transition-fast);
+}
+
+.history-item:hover .history-actions {
+  opacity: 1;
+}
+
+.history-delete-btn {
+  width: 24px;
+  height: 24px;
+  background: var(--color-error);
+  border: none;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+}
+
+.history-delete-btn:hover {
+  background: #dc2626;
+  transform: scale(1.1);
+}
+
+/* Empty States */
+.empty-chat {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-12);
+  text-align: center;
+}
+
+.empty-icon {
+  font-size: 4rem;
+  color: var(--text-muted);
+  margin-bottom: var(--space-6);
+  opacity: 0.5;
+}
+
+.empty-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+  margin-bottom: var(--space-3);
+}
+
+.empty-description {
+  font-size: 1rem;
+  color: var(--text-muted);
+  max-width: 400px;
+  line-height: 1.6;
+}
+
+.empty-history {
+  padding: var(--space-8);
+  text-align: center;
+  color: var(--text-muted);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .ai-main {
+    flex-direction: column;
+  }
+  
+  .ai-history-panel {
+    width: 100%;
+    min-width: 100%;
+    max-height: 300px;
+    border-left: none;
+    border-top: 1px solid var(--border-color);
+  }
+  
+  .faq-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .ai-header {
+    flex-direction: column;
+    align-items: stretch;
+    gap: var(--space-4);
+  }
+  
+  .ai-header-left {
+    flex-direction: column;
+    align-items: stretch;
+    gap: var(--space-3);
+  }
+  
+  .ai-settings {
+    justify-content: center;
+  }
+  
+  .chat-messages {
+    padding: var(--space-4);
+  }
+  
+  .ai-input-area {
+    padding: var(--space-4);
+  }
+  
+  .user-message {
+    max-width: 90%;
+  }
+  
+  .message-actions {
+    position: static;
+    margin-top: var(--space-3);
+    opacity: 1;
+    justify-content: flex-end;
+  }
+}
+
+@media (max-width: 480px) {
+  .input-form {
+    flex-direction: column;
+    gap: var(--space-3);
+  }
+  
+  .input-actions {
+    position: static;
+    justify-content: center;
+    margin-top: var(--space-3);
+  }
+  
+  .chat-input {
+    padding-right: var(--space-4);
+  }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .message-pair,
+  .faq-button,
+  .history-item,
+  .input-action-btn,
+  .setting-toggle {
+    animation: none;
+    transition: none;
+  }
+  
+  .faq-button:hover,
+  .history-item:hover,
+  .user-message {
+    transform: none;
+  }
+}
+
+/* Focus States */
+.faq-button:focus-visible,
+.history-item:focus-visible,
+.input-action-btn:focus-visible,
+.setting-toggle:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+/* Scrollbar Styling */
+.chat-messages::-webkit-scrollbar,
+.history-list::-webkit-scrollbar {
+  width: 8px;
+}
+
+.chat-messages::-webkit-scrollbar-track,
+.history-list::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.chat-messages::-webkit-scrollbar-thumb,
+.history-list::-webkit-scrollbar-thumb {
+  background: var(--bg-tertiary);
+  border-radius: var(--radius-lg);
+}
+
+.chat-messages::-webkit-scrollbar-thumb:hover,
+.history-list::-webkit-scrollbar-thumb:hover {
+  background: var(--bg-hover);
 }
