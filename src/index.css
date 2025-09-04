@@ -20,7 +20,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 overflow-x: hidden;
-  overflow-y: hidden;            /* allow natural scroll (was hidden) */
+overflow-y: auto;
   padding-bottom: env(safe-area-inset-bottom);
   background:
     radial-gradient(circle at 20% 80%, rgba(0, 212, 255, 0.10) 0%, transparent 60%),
@@ -29,6 +29,7 @@ overflow-x: hidden;
     linear-gradient(135deg, #0a0e1a 0%, #111827 50%, #1f2937 100%);
   background-attachment: local; /* avoid iOS issues with fixed backgrounds */
   color: var(--text-primary);
+  
 }
 
 html, body {
@@ -151,9 +152,9 @@ html, body {
   transition: all var(--transition-normal);
 }
 
+
 /* App Layout */
 .app-container {
-  overflow-y: auto;
   position: relative;
   min-height: 100dvh;
   isolation: isolate;           /* create a new stacking context */
@@ -174,38 +175,49 @@ html, body {
 
 .app-body {
   display: flex;
+
   flex: 1;
   min-height: 0;
 }
 
 .main-content {
+  
   flex: 1;
   overflow-x: hidden;
   background: var(--bg-primary);
   min-height: 0;
-  scrollbar-width: thin;
-  scrollbar-color: var(--bg-tertiary) transparent;
+
   position: relative;
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
 }
 
-.main-content::-webkit-scrollbar {
-  width: 8px;
+/* Cool glowing blue scrollbar just for body */
+body::-webkit-scrollbar {
+  width: 6px;   /* make it thin */
+  height: 6px;  /* horizontal scroll if needed */
 }
 
-.main-content::-webkit-scrollbar-track {
+body::-webkit-scrollbar-track {
+  background: linear-gradient(180deg, var(--bg-primary), var(--bg-secondary)); /* blue gradient */
+
+}
+
+body::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #3b82f6, #22d3ee); /* blue gradient */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(59, 130, 246, 0.6), 0 0 20px rgba(34, 211, 238, 0.4); /* glowing effect */
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #60a5fa, #06b6d4);
+  box-shadow: 0 0 15px rgba(96, 165, 250, 0.8), 0 0 25px rgba(6, 182, 212, 0.6);
+}
+
+body::-webkit-scrollbar-corner {
   background: transparent;
 }
 
-.main-content::-webkit-scrollbar-thumb {
-  background: var(--bg-tertiary);
-  border-radius: var(--radius-lg);
-}
-
-.main-content::-webkit-scrollbar-thumb:hover {
-  background: var(--bg-hover);
-}
 
 /* Form Elements */
 .form-input,
@@ -482,38 +494,6 @@ html, body {
   }
 }
 
-/* Improved Scrollbars */
-* {
-  scrollbar-width: thin;
-  scrollbar-color: rgba(0, 212, 255, 0.3) transparent;
-}
-
-*::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
-}
-
-*::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-*::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, var(--color-primary), var(--color-secondary));
-  border-radius: var(--radius-lg);
-  border: 2px solid transparent;
-  background-clip: content-box;
-  box-shadow: 0 0 10px rgba(0, 212, 255, 0.3);
-}
-
-*::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(180deg, var(--color-cyber), var(--color-purple));
-  background-clip: content-box;
-  box-shadow: 0 0 15px rgba(0, 212, 255, 0.5);
-}
-
-*::-webkit-scrollbar-corner {
-  background: transparent;
-}
 
 /* Futuristic Glow Effects */
 .glow-primary {
@@ -612,3 +592,4 @@ html, body {
   pointer-events: none;
   z-index: -1;
 }
+
