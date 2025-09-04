@@ -195,23 +195,23 @@ html, body {
 /* Cool glowing blue scrollbar just for body */
 body::-webkit-scrollbar {
   width: 6px;   /* make it thin */
-  height: 6px;  /* horizontal scroll if needed */
 }
 
 body::-webkit-scrollbar-track {
-  background: linear-gradient(180deg, var(--bg-primary), var(--bg-secondary)); /* blue gradient */
+  background: var(--bg-primary);
 
 }
 
 body::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, #3b82f6, #22d3ee); /* blue gradient */
+  background: linear-gradient(180deg, #3b82f6, #22d3ee);
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(59, 130, 246, 0.6), 0 0 20px rgba(34, 211, 238, 0.4); /* glowing effect */
-}
 
+  /* Add transparent top/bottom “caps” so the colored part is shorter */
+  background-clip: padding-box; /* keep color off the transparent caps */
+  box-shadow: 0 0 10px rgba(59,130,246,.6), 0 0 20px rgba(34,211,238,.4);
+}
 body::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(180deg, #60a5fa, #06b6d4);
-  box-shadow: 0 0 15px rgba(96, 165, 250, 0.8), 0 0 25px rgba(6, 182, 212, 0.6);
+  background: linear-gradie
 }
 
 body::-webkit-scrollbar-corner {
