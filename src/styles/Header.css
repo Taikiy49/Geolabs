@@ -1,7 +1,6 @@
 /* Header: 3-column grid so the search stays centered and
    the gaps to left/right are identical via column-gap */
 .header {
-  --header-h: 48px;
   --header-gap: 16px; /* controls equal spacing between left|center|right */
   position: sticky;
   top: 0;
@@ -72,7 +71,7 @@
 .header-brand {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
+  gap: 3px;
   text-decoration: none;
   color: var(--text-primary);
   font-weight: 700;
@@ -84,23 +83,25 @@
 .header-brand:hover { color: var(--color-primary); }
 
 .header-logo {
-  width: 35px;
-  height: 35px;
+  width: 30px;
+  height: 30px;
   border-radius: 10px;
   object-fit: cover;
-  border: 1px solid rgba(0, 212, 255, 0.4);
-  box-shadow: 
-    0 2px 12px rgba(0, 212, 255, 0.3),
-    0 0 20px rgba(0, 212, 255, 0.2);
+  /* Subtle, neutral shadow — removes neon glow */
+  border: 1px solid rgba(0, 212, 255, 0.22);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
 }
 .header-title {
-  background: linear-gradient(135deg, var(--color-primary), var(--color-secondary), var(--color-tertiary));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  /* Solid white for maximum readability */
+  color: #ffffff;
+  background: none;
+  -webkit-background-clip: initial;
+  -webkit-text-fill-color: initial;
+  background-clip: initial;
   font-weight: 800;
-  letter-spacing: -0.01em;
-  filter: drop-shadow(0 0 8px rgba(59, 130, 246, 0.3));
+  letter-spacing: -0.012em;
+  filter: none;
+  text-shadow: none;
 }
 
 /* Top nav (just Dashboard) */

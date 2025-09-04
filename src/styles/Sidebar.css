@@ -1,5 +1,5 @@
 :root {
-  --header-h: 56px;                 /* keep in sync with Header */
+  /* uses global --header-h from :root in index.css */
   --drawer-w: 320px;
   --drawer-w-max: 92vw;
 
@@ -53,7 +53,7 @@
   background: 
     linear-gradient(135deg, var(--bg-sidebar), rgba(17, 24, 39, 0.95)),
     radial-gradient(circle at 0% 50%, rgba(0, 212, 255, 0.08), transparent 70%);
-  border-right: 1px solid rgba(0, 212, 255, 0.3);
+  border-right: 1px solid rgba(0, 212, 255, 0.18); /* softer edge */
   box-shadow: var(--shadow-xl);
   transform: translateX(-100%);
   transition: transform var(--t-normal);
@@ -101,7 +101,8 @@
   font-weight: 800;
   color: var(--text-primary);
   letter-spacing: .01em;
-  text-shadow: 0 0 10px rgba(0, 212, 255, 0.3);
+  /* reduce neon; keep clean */
+  text-shadow: none;
 }
 
 /* Close button: icon only (no bg/padding) */
@@ -193,7 +194,8 @@
   display: grid; place-items: center;
   color: var(--color-primary);
   line-height: 0;
-  filter: drop-shadow(0 0 8px rgba(0, 212, 255, 0.3));
+  /* remove glow */
+  filter: none;
 }
 
 /* Links */
@@ -205,14 +207,16 @@
   margin: 4px 6px;
   transition: transform var(--t-fast), box-shadow var(--t-fast);
 }
-.sb-link:hover .sb-row { background: var(--bg-hover); color: var(--text-primary); }
+.sb-link:hover .sb-row { 
+  background: rgba(29, 41, 57, 0.6); 
+  color: var(--text-primary);
+  border-color: rgba(0, 212, 255, 0.22);
+}
 .sb-link.active .sb-row {
-  background: linear-gradient(135deg, rgba(0, 212, 255, 0.2), rgba(139, 92, 246, 0.15));
-  box-shadow: 
-    inset 0 0 0 1px rgba(0, 212, 255, 0.3),
-    inset 0 0 20px rgba(0, 212, 255, 0.1);
-  color: var(--color-primary);
-  text-shadow: 0 0 8px rgba(0, 212, 255, 0.4);
+  background: rgba(29, 41, 57, 0.75);
+  box-shadow: inset 0 0 0 1px rgba(0, 212, 255, 0.22);
+  color: var(--text-primary);
+  text-shadow: none;
 }
 
 /* Dot indicator */
@@ -238,8 +242,8 @@
 .sb-group-trigger:hover { color: var(--text-primary); }
 .sb-group-trigger.open .sb-row { background: rgba(96,165,250,0.08); }
 .sb-group-trigger.open .sb-row { 
-  background: rgba(0, 212, 255, 0.1);
-  box-shadow: inset 0 0 15px rgba(0, 212, 255, 0.05);
+  background: rgba(29, 41, 57, 0.65);
+  box-shadow: inset 0 0 0 1px rgba(0, 212, 255, 0.18);
 }
 
 .sb-chevron {
@@ -253,7 +257,7 @@
 .sb-collapse {
   overflow: hidden;
   margin-left: 8px;
-  border-left: 1px dashed rgba(0, 212, 255, 0.3);
+  border-left: 1px dashed rgba(148, 163, 184, 0.25); /* subtler guide */
   transition: max-height var(--t-normal), opacity var(--t-normal), transform var(--t-normal);
   position: relative;
 }
@@ -271,7 +275,7 @@
 }
 
 .sb-collapse.expanded::before {
-  opacity: 0.6;
+  opacity: 0.4;
 }
 .sb-collapse.collapsed { max-height: 0; opacity: 0; transform: translateY(-4px); }
 .sb-collapse.expanded { max-height: 500px; opacity: 1; transform: translateY(0); }
@@ -309,3 +313,10 @@
 
 .sb-header { padding: 8px 10px; }             /* tighter header */
 .sb-title { font-weight: 800; font-size: 0.98rem; }
+
+/* Subtle separators between groups */
+.sb-group + .sb-group { 
+  margin-top: 6px; 
+  padding-top: 6px; 
+  border-top: 1px dashed rgba(148, 163, 184, 0.18);
+}

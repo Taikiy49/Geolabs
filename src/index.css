@@ -23,10 +23,10 @@ overflow-x: hidden;
 overflow-y: auto;
   padding-bottom: env(safe-area-inset-bottom);
   background:
-    radial-gradient(circle at 20% 80%, rgba(0, 212, 255, 0.10) 0%, transparent 60%),
-    radial-gradient(circle at 80% 20%, rgba(139, 92, 246, 0.10) 0%, transparent 60%),
-    radial-gradient(circle at 50% 40%, rgba(6, 255, 165, 0.06) 0%, transparent 70%),
-    linear-gradient(135deg, #0a0e1a 0%, #111827 50%, #1f2937 100%);
+    radial-gradient(circle at 20% 80%, rgba(0, 212, 255, 0.06) 0%, transparent 60%),
+    radial-gradient(circle at 80% 20%, rgba(139, 92, 246, 0.06) 0%, transparent 60%),
+    radial-gradient(circle at 50% 40%, rgba(6, 255, 165, 0.04) 0%, transparent 70%),
+    linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 50%, var(--bg-tertiary) 100%);
   background-attachment: local; /* avoid iOS issues with fixed backgrounds */
   color: var(--text-primary);
   
@@ -61,14 +61,14 @@ html, body {
   --color-purple: #8b5cf6;
   --color-pink: #ec4899;
   
-  /* Backgrounds */
-  --bg-primary: #0a0e1a;
-  --bg-secondary: #111827;
-  --bg-tertiary: #1f2937;
-  --bg-card: rgba(17, 24, 39, 0.85);
-  --bg-hover: rgba(31, 41, 55, 0.6);
-  --bg-active: rgba(55, 65, 81, 0.7);
-  --bg-glass: rgba(15, 23, 42, 0.7);
+  /* Backgrounds (darkened for better contrast) */
+  --bg-primary: #05070f;
+  --bg-secondary: #0b1220;
+  --bg-tertiary: #121a26;
+  --bg-card: rgba(10, 14, 26, 0.92);
+  --bg-hover: rgba(24, 32, 48, 0.6);
+  --bg-active: rgba(40, 52, 75, 0.7);
+  --bg-glass: rgba(10, 16, 28, 0.78);
   --bg-glow: rgba(79, 143, 247, 0.04);
   
   /* Text */
@@ -112,7 +112,8 @@ html, body {
   /* Layout */
   --sidebar-width: 280px;
   --sidebar-width-collapsed: 80px;
-  --header-height: 52px;
+  --header-height: 48px;     /* keep in sync with --header-h */
+  --header-h: 48px;          /* canonical header height for layout offsets */
   
   /* Transitions */
   --transition-fast: 150ms ease;
@@ -123,9 +124,9 @@ html, body {
 /* Dark mode adjustments */
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg-primary: #0f172a;
-    --bg-secondary: #1e293b;
-    --bg-tertiary: #334155;
+    --bg-primary: #05070f;
+    --bg-secondary: #0b1220;
+    --bg-tertiary: #121a26;
   }
 }
 
@@ -168,9 +169,9 @@ html, body {
   z-index: 0;
   pointer-events: none;
   background:
-    radial-gradient(circle at 15% 85%, rgba(0, 212, 255, 0.12) 0%, transparent 55%),
-    radial-gradient(circle at 85% 15%, rgba(139, 92, 246, 0.12) 0%, transparent 55%),
-    radial-gradient(circle at 50% 50%, rgba(6, 255, 165, 0.06) 0%, transparent 70%);
+    radial-gradient(circle at 15% 85%, rgba(0, 212, 255, 0.08) 0%, transparent 55%),
+    radial-gradient(circle at 85% 15%, rgba(139, 92, 246, 0.08) 0%, transparent 55%),
+    radial-gradient(circle at 50% 50%, rgba(6, 255, 165, 0.04) 0%, transparent 70%);
 }
 
 .app-body {
@@ -184,38 +185,13 @@ html, body {
   
   flex: 1;
   overflow-x: hidden;
+  overflow-y: auto;                 /* make main content the scroll container */
   background: var(--bg-primary);
   min-height: 0;
 
   position: relative;
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-}
-
-/* Cool glowing blue scrollbar just for body */
-body::-webkit-scrollbar {
-  width: 6px;   /* make it thin */
-}
-
-body::-webkit-scrollbar-track {
-  background: var(--bg-primary);
-
-}
-
-body::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, #3b82f6, #22d3ee);
-  border-radius: 10px;
-
-  /* Add transparent top/bottom “caps” so the colored part is shorter */
-  background-clip: padding-box; /* keep color off the transparent caps */
-  box-shadow: 0 0 10px rgba(59,130,246,.6), 0 0 20px rgba(34,211,238,.4);
-}
-body::-webkit-scrollbar-thumb:hover {
-  background: linear-gradie
-}
-
-body::-webkit-scrollbar-corner {
-  background: transparent;
 }
 
 
@@ -593,3 +569,32 @@ body::-webkit-scrollbar-corner {
   z-index: -1;
 }
 
+
+/* Final Blue Scrollbar (overrides earlier rules) */
+body,
+.main-content {
+  scrollbar-width: thin; /* Firefox */ 
+  scrollbar-color: rgba(79,143,247,0.85) transparent;
+}
+body::-webkit-scrollbar,
+.main-content::-webkit-scrollbar { width: 8px; }
+body::-webkit-scrollbar-track,
+.main-content::-webkit-scrollbar-track { background: transparent; }
+body::-webkit-scrollbar-thumb,
+.main-content::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, var(--color-primary), var(--color-cyber));
+  border-radius: 8px;
+  background-clip: padding-box; /* leaves transparent edges so thumb floats */
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  border-top: 16px solid transparent;   /* short visible bar effect */
+  border-bottom: 16px solid transparent;/* short visible bar effect */
+  box-shadow: 0 0 8px rgba(79,143,247,0.45);
+}
+body::-webkit-scrollbar-thumb:hover,
+.main-content::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, var(--color-primary-hover), var(--color-cyber));
+  box-shadow: 0 0 10px rgba(79,143,247,0.6);
+}
+body::-webkit-scrollbar-corner,
+.main-content::-webkit-scrollbar-corner { background: transparent; }

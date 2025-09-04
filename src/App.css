@@ -31,14 +31,22 @@
 }
 
 /* App Container Enhancements */
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh; /* ensure app spans the viewport height */
+}
+
 .app-container {
   position: relative;
-  background: 
-    radial-gradient(circle at 20% 80%, rgba(0, 212, 255, 0.1) 0%, transparent 60%),
-    radial-gradient(circle at 80% 20%, rgba(139, 92, 246, 0.1) 0%, transparent 60%),
-    radial-gradient(circle at 50% 0%, rgba(6, 255, 165, 0.05) 0%, transparent 70%),
+  display: flex;           /* place Sidebar and main side-by-side */
+  flex: 1 1 auto;          /* take the remaining height under Header */
+  min-height: 0;           /* allow children to size/scroll correctly */
+  background:
+    radial-gradient(circle at 20% 80%, rgba(0, 212, 255, 0.06) 0%, transparent 60%),
+    radial-gradient(circle at 80% 20%, rgba(139, 92, 246, 0.06) 0%, transparent 60%),
+    radial-gradient(circle at 50% 0%, rgba(6, 255, 165, 0.03) 0%, transparent 70%),
     linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 50%, var(--bg-tertiary) 100%);
-  min-height: 100vh;
 }
 
 .app-container::before {
@@ -49,10 +57,10 @@
   right: 0;
   bottom: 0;
   background: 
-    radial-gradient(circle at 10% 90%, rgba(0, 212, 255, 0.15) 0%, transparent 60%),
-    radial-gradient(circle at 90% 10%, rgba(139, 92, 246, 0.15) 0%, transparent 60%),
-    radial-gradient(circle at 50% 50%, rgba(6, 255, 165, 0.08) 0%, transparent 80%),
-    radial-gradient(circle at 70% 30%, rgba(255, 0, 128, 0.05) 0%, transparent 50%);
+    radial-gradient(circle at 10% 90%, rgba(0, 212, 255, 0.08) 0%, transparent 60%),
+    radial-gradient(circle at 90% 10%, rgba(139, 92, 246, 0.08) 0%, transparent 60%),
+    radial-gradient(circle at 50% 50%, rgba(6, 255, 165, 0.05) 0%, transparent 80%),
+    radial-gradient(circle at 70% 30%, rgba(255, 0, 128, 0.03) 0%, transparent 50%);
   pointer-events: none;
   z-index: -1;
   animation: backgroundShift 20s ease-in-out infinite;
@@ -66,6 +74,8 @@
 /* Enhanced Main Content */
 .main-content {
   position: relative;
+  flex: 1 1 auto;          /* fill remaining horizontal space and stretch vertically */
+  min-height: 0;           /* prevent overflow issues in flex container */
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px);
 }
