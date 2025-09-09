@@ -12,7 +12,6 @@ import {
   FaExternalLinkAlt,
   FaCog,
   FaHome,
-  FaFileAlt,
   FaBars,
   FaTimes
 } from "react-icons/fa";
@@ -55,7 +54,7 @@ export default function Header() {
   const [searchQuery, setSearchQuery] = useState("");
   const [openDropdown, setOpenDropdown] = useState(null);
   const [copied, setCopied] = useState(false);
-  const [sidebarOpen, setSidebarOpen] = useState(false); // NEW
+  const [sidebarOpen, setSidebarOpen] = useState(false);
 
   const headerRef = useRef(null);
   const searchRef = useRef(null);
@@ -88,12 +87,10 @@ export default function Header() {
     return () => clearInterval(interval);
   }, []);
 
-  // close dropdowns on route change
   useEffect(() => {
     setOpenDropdown(null);
   }, [location.pathname]);
 
-  // listen for sidebar state so button icon can morph (bars <-> X)
   useEffect(() => {
     const onSidebarChanged = (e) => {
       const isOpen = !!e?.detail?.open;
@@ -159,7 +156,7 @@ export default function Header() {
   const apiStatusPill = useMemo(() => {
     if (apiHealthy === "ok") {
       return (
-        <div className="status-pill api-ok">
+        <div className="header-status-pill header-api-ok">
           <FaCheckCircle />
           <span>Online</span>
         </div>
@@ -167,20 +164,19 @@ export default function Header() {
     }
     if (apiHealthy === "down") {
       return (
-        <div className="status-pill api-error">
+        <div className="header-status-pill header-api-error">
           <FaExclamationTriangle />
           <span>Offline</span>
         </div>
       );
     }
     return (
-      <div className="status-pill">
+      <div className="header-status-pill">
         <span>Checking…</span>
       </div>
     );
   }, [apiHealthy]);
 
-  // Toggle overlay sidebar (morph icon + accessible state)
   const toggleSidebar = () => {
     window.dispatchEvent(new CustomEvent("geolabs:toggleSidebar", { detail: "toggle" }));
     setSidebarOpen((prev) => !prev);
@@ -191,7 +187,7 @@ export default function Header() {
       {/* LEFT: hamburger + brand + dashboard */}
       <div className="header-left">
         <button
-          className={`header-menu-btn ${sidebarOpen ? "is-open" : ""}`}
+          className={`header-menu-btn ${sidebarOpen ? "header-is-open" : ""}`}
           onClick={toggleSidebar}
           aria-label={sidebarOpen ? "Close menu" : "Open menu"}
           aria-expanded={sidebarOpen}
@@ -202,16 +198,16 @@ export default function Header() {
           {sidebarOpen ? <FaTimes /> : <FaBars />}
         </button>
 
-        <Link to="/" className="header-brand no-wrap" title="Geolabs, Inc.">
+        <Link to="/" className="header-brand header-no-wrap" title="Geolabs, Inc.">
           <img src="/geolabs_logo.jpg" alt="Geolabs" className="header-logo" />
-          <span className="header-title no-wrap">Geolabs,&nbsp;Inc.</span>
+          <span className="header-title header-no-wrap">Geolabs,&nbsp;Inc.</span>
         </Link>
 
         <nav className="header-nav">
           <NavLink
             to="/"
             end
-            className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`}
+            className={({ isActive }) => `header-nav-link ${isActive ? "header-active" : ""}`}
             title="Dashboard"
           >
             <FaHome />
@@ -226,28 +222,28 @@ export default function Header() {
           <input
             ref={searchRef}
             type="text"
-            className="search-input"
+            className="header-search-input"
             placeholder="Search… ( / )"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             aria-label="Search"
           />
-          <FaSearch className="search-icon" aria-hidden />
+          <FaSearch className="header-search-icon" aria-hidden />
         </form>
       </div>
 
       {/* RIGHT: env + api status + actions/profile */}
       <div className="header-right">
         <div className="header-status">
-          <div className="status-pill env"><span>{ENV}</span></div>
+          <div className="header-status-pill header-env"><span>{ENV}</span></div>
           {apiStatusPill}
         </div>
 
         <div className="header-actions">
           {/* New */}
-          <div className="profile-menu">
+          <div className="header-profile-menu">
             <button
-              className="action-btn"
+              className="header-action-btn"
               onClick={() => setOpenDropdown(openDropdown === "new" ? null : "new")}
               aria-expanded={openDropdown === "new"}
               aria-haspopup="menu"
@@ -256,14 +252,14 @@ export default function Header() {
               <FaPlus />
             </button>
             {openDropdown === "new" && (
-              <div className="dropdown-menu">
-                <Link to="/db-admin" className="dropdown-item">
+              <div className="header-dropdown-menu">
+                <Link to="/db-admin" className="header-dropdown-item">
                   <FaPlus /><span>Upload Documents</span>
                 </Link>
-                <Link to="/s3-admin" className="dropdown-item">
+                <Link to="/s3-admin" className="header-dropdown-item">
                   <FaPlus /><span>Upload to S3</span>
                 </Link>
-                <Link to="/core-box-inventory" className="dropdown-item">
+                <Link to="/core-box-inventory" className="header-dropdown-item">
                   <FaPlus /><span>Add Core Box</span>
                 </Link>
               </div>
@@ -271,24 +267,24 @@ export default function Header() {
           </div>
 
           {/* Notifications */}
-          <div className="profile-menu">
+          <div className="header-profile-menu">
             <button
-              className="action-btn"
+              className="header-action-btn"
               onClick={() => setOpenDropdown(openDropdown === "notifications" ? null : "notifications")}
               aria-expanded={openDropdown === "notifications"}
               aria-haspopup="menu"
               title="Notifications"
             >
               <FaBell />
-              <span className="notification-badge" />
+              <span className="header-notification-badge" />
             </button>
             {openDropdown === "notifications" && (
-              <div className="dropdown-menu">
-                <div className="dropdown-header">
-                  <div className="dropdown-user-name">Notifications</div>
-                  <div className="dropdown-user-email">No new alerts</div>
+              <div className="header-dropdown-menu">
+                <div className="header-dropdown-header">
+                  <div className="header-dropdown-user-name">Notifications</div>
+                  <div className="header-dropdown-user-email">No new alerts</div>
                 </div>
-                <div className="dropdown-item">
+                <div className="header-dropdown-item">
                   <FaCheckCircle /><span>All caught up</span>
                 </div>
               </div>
@@ -296,33 +292,33 @@ export default function Header() {
           </div>
 
           {/* Profile */}
-          <div className="profile-menu">
+          <div className="header-profile-menu">
             <button
-              className="profile-trigger"
+              className="header-profile-trigger"
               onClick={() => setOpenDropdown(openDropdown === "profile" ? null : "profile")}
               aria-expanded={openDropdown === "profile"}
               aria-haspopup="menu"
               title="Profile"
             >
-              <div className="profile-avatar">{userInitials}</div>
-              <FaChevronDown className="profile-chevron" />
+              <div className="header-profile-avatar">{userInitials}</div>
+              <FaChevronDown className="header-profile-chevron" />
             </button>
 
             {openDropdown === "profile" && (
-              <div className="dropdown-menu">
+              <div className="header-dropdown-menu">
                 {isAuthed ? (
                   <>
-                    <div className="dropdown-header">
-                      <div className="dropdown-user-name">{displayName || userEmail}</div>
-                      <div className="dropdown-user-email">{userEmail}</div>
+                    <div className="header-dropdown-header">
+                      <div className="header-dropdown-user-name">{displayName || userEmail}</div>
+                      <div className="header-dropdown-user-email">{userEmail}</div>
                     </div>
 
-                    <button className="dropdown-item" onClick={copyEmail}>
+                    <button className="header-dropdown-item" onClick={copyEmail}>
                       <FaCopy /><span>Copy Email</span>
-                      {copied && <span className="copy-feedback">Copied!</span>}
+                      {copied && <span className="header-copy-feedback">Copied!</span>}
                     </button>
 
-                    <Link to="/admin" className="dropdown-item">
+                    <Link to="/admin" className="header-dropdown-item">
                       <FaCog /><span>Admin Settings</span>
                     </Link>
 
@@ -330,19 +326,19 @@ export default function Header() {
                       href="https://myaccount.microsoft.com/"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="dropdown-item"
+                      className="header-dropdown-item"
                     >
                       <FaExternalLinkAlt /><span>Microsoft Account</span>
                     </a>
 
-                    <div className="dropdown-divider" />
+                    <div className="header-dropdown-divider" />
 
-                    <button className="dropdown-item danger" onClick={handleSignOut}>
+                    <button className="header-dropdown-item header-danger" onClick={handleSignOut}>
                       <FaSignOutAlt /><span>Sign Out</span>
                     </button>
                   </>
                 ) : (
-                  <button className="dropdown-item" onClick={handleSignIn}>
+                  <button className="header-dropdown-item" onClick={handleSignIn}>
                     <FaSignInAlt /><span>Sign In with Microsoft</span>
                   </button>
                 )}

@@ -1,18 +1,17 @@
-/* Header: 3-column grid so the search stays centered and
-   the gaps to left/right are identical via column-gap */
+/* Header: 3-column grid so the search stays centered and the gaps to left/right are identical via column-gap */
 .header {
   --header-gap: 16px; /* controls equal spacing between left|center|right */
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: 
+  background:
     linear-gradient(135deg, rgba(10, 14, 26, 0.98), rgba(17, 24, 39, 0.95)),
     radial-gradient(circle at 50% 0%, rgba(0, 212, 255, 0.1), transparent 70%);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border-bottom: 1px solid rgba(0, 212, 255, 0.2);
   height: var(--header-h);
-  box-shadow: 
+  box-shadow:
     0 3px 20px rgba(0, 0, 0, 0.3),
     0 0 40px rgba(0, 212, 255, 0.1);
 
@@ -39,45 +38,41 @@
 .header-center { justify-self: stretch; }
 .header-right  { display: flex; align-items: center; gap: 10px; justify-self: start; }
 
-/* Menu button: icon-only, no bg/padding/border */
 /* Menu button: icon-only, big tap target, morphs to X when open */
 .header-menu-btn {
-  width: 42px;              /* bigger */
-  height: 42px;             /* bigger */
+  width: 42px;
+  height: 42px;
   display: grid;
   place-items: center;
   border: none;
-  background: transparent;  /* no bg */
+  background: transparent;
   color: var(--text-primary);
   padding: 0;
   cursor: pointer;
-  font-size: 1.4rem;        /* larger icon */
+  font-size: 1.4rem;
   transition: color .12s ease, transform .12s ease, filter .12s ease;
 }
 .header-menu-btn:hover { color: var(--color-primary); transform: translateY(-1px); }
 .header-menu-btn:active { transform: scale(0.98); }
-
-/* When the sidebar is open, make it obvious (glow + primary color) */
-.header-menu-btn.is-open {
+.header-menu-btn.header-is-open {
   color: var(--color-primary);
   filter: drop-shadow(0 0 15px rgba(0, 212, 255, 0.6));
   text-shadow: 0 0 10px rgba(0, 212, 255, 0.8);
 }
-
 .header-menu-btn:hover { color: var(--color-primary); transform: translateY(-1px); }
 
 /* Brand */
-.no-wrap { white-space: nowrap; }
+.header-no-wrap { white-space: nowrap; }
 .header-brand {
   display: inline-flex;
   align-items: center;
-  gap: 3px;
+  gap: var(--space-1);
   text-decoration: none;
   color: var(--text-primary);
   font-weight: 700;
   font-size: 1.05rem;
   line-height: 1;
-  padding: 0;         /* no extra padding—keeps spacing tight near search */
+  padding: 0;
   flex-shrink: 0;
 }
 .header-brand:hover { color: var(--color-primary); }
@@ -87,21 +82,20 @@
   height: 30px;
   border-radius: 10px;
   object-fit: cover;
-  /* Subtle, neutral shadow — removes neon glow */
   border: 1px solid rgba(0, 212, 255, 0.22);
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
 }
 .header-title {
-  /* Solid white for maximum readability */
-  color: #ffffff;
-  background: none;
-  -webkit-background-clip: initial;
-  -webkit-text-fill-color: initial;
-  background-clip: initial;
+  background: linear-gradient(135deg, #e8fbff 0%, #b7e7ff 35%, #cfd4ff 65%, #e8fbff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-weight: 800;
   letter-spacing: -0.012em;
-  filter: none;
-  text-shadow: none;
+  font-size: 0.98rem;
+  text-shadow:
+    0 0 6px rgba(34, 211, 238, 0.18),
+    0 1px 10px rgba(0, 0, 0, 0.35);
 }
 
 /* Top nav (just Dashboard) */
@@ -113,7 +107,7 @@
   min-width: 0;
   overflow-x: hidden;
 }
-.nav-link {
+.header-nav-link {
   display: inline-flex;
   align-items: center;
   gap: 6px;
@@ -126,10 +120,10 @@
   transition: background 0.15s ease, color 0.15s ease, transform 0.15s ease;
   white-space: nowrap;
 }
-.nav-link:hover { color: var(--text-primary); background: rgba(51, 65, 85, 0.42); }
-.nav-link.active { color: var(--color-primary); background: rgba(59, 130, 246, 0.12); }
-.nav-link.active { 
-  color: var(--color-primary); 
+.header-nav-link:hover { color: var(--text-primary); background: rgba(51, 65, 85, 0.42); }
+.header-nav-link.header-active { color: var(--color-primary); background: rgba(59, 130, 246, 0.12); }
+.header-nav-link.header-active {
+  color: var(--color-primary);
   background: rgba(0, 212, 255, 0.15);
   box-shadow: inset 0 0 20px rgba(0, 212, 255, 0.1);
   text-shadow: 0 0 8px rgba(0, 212, 255, 0.5);
@@ -144,7 +138,7 @@
   display: flex;
   align-items: center;
 }
-.search-input {
+.header-search-input {
   width: 100%;
   height: 32px;
   padding: 0 12px 0 34px;
@@ -158,16 +152,16 @@
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
 }
-.search-input:focus {
+.header-search-input:focus {
   outline: none;
   border-color: var(--color-primary);
-  box-shadow: 
+  box-shadow:
     0 0 0 3px rgba(0, 212, 255, 0.2),
     0 0 20px rgba(0, 212, 255, 0.3);
   background: rgba(17, 24, 39, 0.95);
 }
-.search-input::placeholder { color: var(--text-muted); }
-.search-icon {
+.header-search-input::placeholder { color: var(--text-muted); }
+.header-search-icon {
   position: absolute;
   left: 10px;
   top: 50%;
@@ -179,7 +173,7 @@
 
 /* Status + actions on the right column */
 .header-status { display: flex; align-items: center; gap: 8px; }
-.status-pill {
+.header-status-pill {
   display: inline-flex;
   align-items: center;
   gap: 6px;
@@ -191,19 +185,19 @@
   letter-spacing: 0.04em;
   border: 1px solid transparent;
 }
-.status-pill.env {
+.header-status-pill.header-env {
   background: rgba(139, 92, 246, 0.15);
   color: var(--color-purple);
   border-color: rgba(139, 92, 246, 0.3);
   box-shadow: 0 0 10px rgba(139, 92, 246, 0.2);
 }
-.status-pill.api-ok {
+.header-status-pill.header-api-ok {
   background: rgba(0, 255, 136, 0.15);
   color: var(--color-success);
   border-color: rgba(0, 255, 136, 0.3);
   box-shadow: 0 0 10px rgba(0, 255, 136, 0.2);
 }
-.status-pill.api-error {
+.header-status-pill.header-api-error {
   background: rgba(255, 51, 102, 0.15);
   color: var(--color-error);
   border-color: rgba(255, 51, 102, 0.3);
@@ -211,7 +205,7 @@
 }
 
 .header-actions { display: flex; align-items: center; gap: 8px; }
-.action-btn {
+.header-action-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -226,14 +220,14 @@
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
 }
-.action-btn:hover {
+.header-action-btn:hover {
   background: var(--bg-hover);
   border-color: var(--color-primary);
   color: var(--text-primary);
   transform: translateY(-1px);
   box-shadow: var(--shadow-glow);
 }
-.notification-badge {
+.header-notification-badge {
   position: absolute;
   top: -2px;
   right: -2px;
@@ -245,8 +239,8 @@
 }
 
 /* Profile dropdown */
-.profile-menu { position: relative; }
-.profile-trigger {
+.header-profile-menu { position: relative; }
+.header-profile-trigger {
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -260,21 +254,21 @@
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
 }
-.profile-trigger:hover { 
-  background: var(--bg-hover); 
+.header-profile-trigger:hover {
+  background: var(--bg-hover);
   border-color: var(--color-primary);
   box-shadow: var(--shadow-glow);
 }
-.profile-avatar {
+.header-profile-avatar {
   width: 26px; height: 26px; border-radius: 8px;
   background: linear-gradient(135deg, var(--color-primary), var(--color-secondary), var(--color-tertiary));
   display: inline-flex; align-items: center; justify-content: center;
   color: white; font-weight: 800; font-size: 0.8rem; flex-shrink: 0;
   box-shadow: 0 0 15px rgba(0, 212, 255, 0.4);
 }
-.profile-chevron { color: var(--text-muted); font-size: 0.75rem; }
+.header-profile-chevron { color: var(--text-muted); font-size: 0.75rem; }
 
-.dropdown-menu {
+.header-dropdown-menu {
   position: absolute;
   top: calc(100% + 0.4rem);
   right: 0;
@@ -284,27 +278,27 @@
   -webkit-backdrop-filter: blur(20px);
   border: 1px solid rgba(0, 212, 255, 0.2);
   border-radius: 12px;
-  box-shadow: 
+  box-shadow:
     0 16px 40px rgba(0, 0, 0, 0.5),
     0 0 30px rgba(0, 212, 255, 0.2);
   padding: 0.5rem;
   z-index: 1050;
-  animation: dropdownFadeIn 0.16s ease-out;
+  animation: header-dropdownFadeIn 0.16s ease-out;
 }
-@keyframes dropdownFadeIn {
+@keyframes header-dropdownFadeIn {
   from { opacity: 0; transform: translateY(-6px) scale(0.98); }
   to   { opacity: 1; transform: translateY(0) scale(1); }
 }
-.dropdown-header {
+.header-dropdown-header {
   padding: 0.75rem;
   border-bottom: 1px solid rgba(0, 212, 255, 0.2);
   margin-bottom: 0.5rem;
   border-radius: 10px;
   background: rgba(0, 212, 255, 0.05);
 }
-.dropdown-user-name { font-size: 0.95rem; font-weight: 800; color: var(--text-primary); }
-.dropdown-user-email { font-size: 0.8rem; color: var(--text-muted); }
-.dropdown-item {
+.header-dropdown-user-name { font-size: 0.95rem; font-weight: 800; color: var(--text-primary); }
+.header-dropdown-user-email { font-size: 0.8rem; color: var(--text-muted); }
+.header-dropdown-item {
   display: flex; align-items: center; gap: 0.6rem;
   width: 100%; padding: 0.5rem 0.6rem;
   background: transparent; border: none; border-radius: 10px;
@@ -312,20 +306,20 @@
   text-align: left; cursor: pointer; transition: background 0.12s ease, color 0.12s ease, transform 0.12s ease;
   text-decoration: none; margin-bottom: 0.2rem;
 }
-.dropdown-item:hover { 
-  background: rgba(0, 212, 255, 0.1); 
-  color: var(--text-primary); 
+.header-dropdown-item:hover {
+  background: rgba(0, 212, 255, 0.1);
+  color: var(--text-primary);
   transform: translateX(2px);
   box-shadow: inset 0 0 20px rgba(0, 212, 255, 0.1);
 }
-.dropdown-item.danger { color: var(--color-error); }
-.dropdown-item.danger:hover { background: rgba(255, 51, 102, 0.15); }
-.dropdown-divider { 
-  height: 1px; 
-  background: linear-gradient(90deg, transparent, rgba(0, 212, 255, 0.3), transparent); 
-  margin: 0.5rem 0; 
+.header-dropdown-item.header-danger { color: var(--color-error); }
+.header-dropdown-item.header-danger:hover { background: rgba(255, 51, 102, 0.15); }
+.header-dropdown-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(0, 212, 255, 0.3), transparent);
+  margin: 0.5rem 0;
 }
-.copy-feedback { color: var(--color-success); font-size: 0.75rem; margin-left: 0.4rem; }
+.header-copy-feedback { color: var(--color-success); font-size: 0.75rem; margin-left: 0.4rem; }
 
 /* Responsive: collapse center search on small screens */
 @media (max-width: 1024px) {
@@ -338,15 +332,14 @@
 }
 
 /* Focus states */
-.nav-link:focus-visible,
-.action-btn:focus-visible,
-.profile-trigger:focus-visible,
-.dropdown-item:focus-visible,
+.header-nav-link:focus-visible,
+.header-action-btn:focus-visible,
+.header-profile-trigger:focus-visible,
+.header-dropdown-item:focus-visible,
 .header-menu-btn:focus-visible {
   outline: 2px solid var(--color-primary);
   outline-offset: 2px;
 }
-
 
 /* === Layout edges: left hard-left, right hard-right === */
 .header {
@@ -354,15 +347,13 @@
   column-gap: 12px;                      /* a bit tighter by default */
   padding: 0 14px;                       /* small edge padding */
 }
-
-.header-left  { justify-self: start; }   /* was end */
-.header-right { justify-self: end; }     /* was start */
-
+.header-left  { justify-self: start; }
+.header-right { justify-self: end; }
 
 /* Large tablets/laptops: shrink gaps a bit */
 @media (max-width: 1280px) {
   .header { column-gap: 10px; padding: 0 12px; }
-  .nav-link { padding: 6px 8px; }
+  .header-nav-link { padding: 6px 8px; }
 }
 
 /* <=1024px: we already hide the center search; also tighten spacing/buttons */
@@ -371,23 +362,18 @@
   .header-menu-btn { width: 38px; height: 38px; font-size: 1.25rem; }
   .header-logo { width: 32px; height: 32px; }
   .header-title { font-size: 0.98rem; }
-  .action-btn { width: 34px; height: 34px; }
-  .profile-trigger { padding: 4px 6px; }
+  .header-action-btn { width: 34px; height: 34px; }
+  .header-profile-trigger { padding: 4px 6px; }
 }
 
 /* <=720px: hide non-essentials so everything fits on a single row */
 @media (max-width: 720px) {
-  /* Hide environment/API pills to free space */
   .header-status { display: none; }
-
-  /* Keep brand but shorten it; keep nav minimal */
-  .nav-link span { display: none; }             /* hide "Dashboard" text, keep icon */
-  .nav-link { padding: 8px; gap: 4px; }
-
-  /* Tighten actions */
-  .action-btn { width: 32px; height: 32px; }
-  .profile-trigger { padding: 3px 6px; }
-  .profile-avatar { width: 24px; height: 24px; font-size: 0.78rem; }
+  .header-nav-link span { display: none; } /* hide "Dashboard" text, keep icon */
+  .header-nav-link { padding: 8px; gap: 4px; }
+  .header-action-btn { width: 32px; height: 32px; }
+  .header-profile-trigger { padding: 3px 6px; }
+  .header-profile-avatar { width: 24px; height: 24px; font-size: 0.78rem; }
 }
 
 /* <=560px: ultra-compact—ensure nothing overflows */
@@ -395,15 +381,14 @@
   .header { padding: 0 8px; column-gap: 6px; }
   .header-menu-btn { width: 34px; height: 34px; font-size: 1.15rem; }
   .header-logo { width: 28px; height: 28px; border-radius: 8px; }
-  .action-btn { width: 30px; height: 30px; }
-  .profile-trigger { gap: 6px; }
-  .profile-chevron { display: none; }          /* avatar only */
+  .header-action-btn { width: 30px; height: 30px; }
+  .header-profile-trigger { gap: 6px; }
+  .header-profile-chevron { display: none; } /* avatar only */
   .header-right { gap: 6px; }
 }
 
 /* <=420px: last-resort trims if you still feel cramped */
 @media (max-width: 420px) {
-  .header-right .profile-menu:nth-of-type(1) { display: none; } /* hide the "Create" (+) menu */
-  .header-right .profile-menu:nth-of-type(2) { display: none; } /* hide Notifications if needed */
-  /* You’ll still have: hamburger + logo (left) and profile (right) */
+  .header-right .header-profile-menu:nth-of-type(1) { display: none; } /* hide the "Create" (+) menu */
+  .header-right .header-profile-menu:nth-of-type(2) { display: none; } /* hide Notifications if needed */
 }

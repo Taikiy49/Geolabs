@@ -48,39 +48,42 @@ export default function AskAI({ selectedDB, setSelectedDB }) {
   const abortControllerRef = useRef(null);
 
   // FAQ questions by database
-  const faqQuestions = useMemo(() => ({
-    "employee_handbook.db": [
-      "What is the company's PTO policy?",
-      "How do I request sick leave?",
-      "Where can I find employee benefits information?",
-      "What is the dress code policy?",
-      "How do I submit my timesheet?",
-      "What are the working hours and break policies?",
-      "How do I report a workplace issue?",
-      "What are the overtime pay policies?",
-      "What holidays does the company observe?",
-      "Where is the employee code of conduct?",
-      "How do I change my health insurance plan?",
-    ],
-    "esop.db": [
-      "What is the ESOP plan?",
-      "Who is eligible for the ESOP?",
-      "When do ESOP shares vest?",
-      "How is the ESOP payout calculated?",
-      "Can I cash out my ESOP early?",
-      "What happens to my ESOP when I leave?",
-      "Where can I read more about ESOP rules?",
-    ],
-    "401k.db": [
-      "What is a 401(k) plan?",
-      "When can I start contributing?",
-      "What is the company match?",
-      "How do I change my contribution amount?",
-      "What investment options are available?",
-      "When can I withdraw from my 401(k)?",
-      "What happens if I leave the company?",
-    ],
-  }), []);
+  const faqQuestions = useMemo(
+    () => ({
+      "employee_handbook.db": [
+        "What is the company's PTO policy?",
+        "How do I request sick leave?",
+        "Where can I find employee benefits information?",
+        "What is the dress code policy?",
+        "How do I submit my timesheet?",
+        "What are the working hours and break policies?",
+        "How do I report a workplace issue?",
+        "What are the overtime pay policies?",
+        "What holidays does the company observe?",
+        "Where is the employee code of conduct?",
+        "How do I change my health insurance plan?",
+      ],
+      esop: [
+        "What is the ESOP plan?",
+        "Who is eligible for the ESOP?",
+        "When do ESOP shares vest?",
+        "How is the ESOP payout calculated?",
+        "Can I cash out my ESOP early?",
+        "What happens to my ESOP when I leave?",
+        "Where can I read more about ESOP rules?",
+      ],
+      "401k.db": [
+        "What is a 401(k) plan?",
+        "When can I start contributing?",
+        "What is the company match?",
+        "How do I change my contribution amount?",
+        "What investment options are available?",
+        "When can I withdraw from my 401(k)?",
+        "What happens if I leave the company?",
+      ],
+    }),
+    []
+  );
 
   const currentFaqs = faqQuestions[selectedDB] || [];
 
@@ -90,11 +93,17 @@ export default function AskAI({ selectedDB, setSelectedDB }) {
       try {
         const response = await axios.get(`${API_URL}/api/list-dbs`);
         const filtered = (response.data.dbs || []).filter(
-          (db) => !["chat_history.db", "reports.db", "user_roles.db", "pr_data.db", "users.db"].includes(db)
+          (db) =>
+            ![
+              "chat_history.db",
+              "reports.db",
+              "user_roles.db",
+              "pr_data.db",
+              "users.db",
+            ].includes(db)
         );
         setAvailableDBs(filtered);
-        
-        // Auto-select first DB if none selected
+
         if (!selectedDB && filtered.length > 0) {
           setSelectedDB(filtered[0]);
         }
@@ -109,9 +118,9 @@ export default function AskAI({ selectedDB, setSelectedDB }) {
   // Load chat history when database changes
   useEffect(() => {
     if (!selectedDB) return;
-    
+
     setConversation([]);
-    
+
     const loadHistory = async () => {
       try {
         const response = await axios.get(`${API_URL}/api/chat_history`, {
@@ -128,7 +137,7 @@ export default function AskAI({ selectedDB, setSelectedDB }) {
         setHistory([]);
       }
     };
-    
+
     loadHistory();
   }, [selectedDB, userEmail]);
 
@@ -145,7 +154,6 @@ export default function AskAI({ selectedDB, setSelectedDB }) {
   // Keyboard shortcuts
   useEffect(() => {
     const handleKeyDown = (event) => {
-      // Cmd/Ctrl + K to focus input
       if ((event.ctrlKey || event.metaKey) && event.key.toLowerCase() === "k") {
         event.preventDefault();
         inputRef.current?.focus();
@@ -172,7 +180,7 @@ export default function AskAI({ selectedDB, setSelectedDB }) {
 
     try {
       abortControllerRef.current = new AbortController();
-      
+
       const response = await axios.post(
         `${API_URL}/api/question`,
         {
@@ -194,7 +202,6 @@ export default function AskAI({ selectedDB, setSelectedDB }) {
         return updated;
       });
 
-      // Refresh history
       const historyResponse = await axios.get(`${API_URL}/api/chat_history`, {
         params: { user: userEmail, db: selectedDB },
       });
@@ -205,13 +212,16 @@ export default function AskAI({ selectedDB, setSelectedDB }) {
       }));
       setHistory(formattedHistory);
     } catch (error) {
-      const isCanceled = axios.isCancel?.(error) || error?.name === "CanceledError";
-      
+      const isCanceled =
+        axios.isCancel?.(error) || error?.name === "CanceledError";
+
       setConversation((prev) => {
         const updated = [...prev];
         updated[updated.length - 1] = {
           role: "assistant",
-          text: isCanceled ? "⏹️ Request stopped." : "❌ Failed to get response. Please try again.",
+          text: isCanceled
+            ? "⏹️ Request stopped."
+            : "❌ Failed to get response. Please try again.",
         };
         return updated;
       });
@@ -225,7 +235,7 @@ export default function AskAI({ selectedDB, setSelectedDB }) {
     event.preventDefault();
     const questionText = customQuery || query;
     if (!questionText.trim()) return;
-    
+
     setQuery("");
     askQuestion(questionText);
   };
@@ -237,7 +247,9 @@ export default function AskAI({ selectedDB, setSelectedDB }) {
   };
 
   const regenerateResponse = () => {
-    const lastUserMessage = [...conversation].reverse().find((msg) => msg.role === "user");
+    const lastUserMessage = [...conversation]
+      .reverse()
+      .find((msg) => msg.role === "user");
     if (lastUserMessage?.text) {
       askQuestion(lastUserMessage.text, { forceNoCache: true });
     }
@@ -246,7 +258,7 @@ export default function AskAI({ selectedDB, setSelectedDB }) {
   const loadHistoryItem = (index) => {
     const item = history[index];
     if (!item) return;
-    
+
     setConversation([
       { role: "user", text: item.question },
       { role: "assistant", text: item.answer },
@@ -256,9 +268,9 @@ export default function AskAI({ selectedDB, setSelectedDB }) {
   const deleteHistoryItem = async (index) => {
     const item = history[index];
     if (!item) return;
-    
+
     if (!window.confirm("Delete this conversation from history?")) return;
-    
+
     try {
       await axios.delete(`${API_URL}/api/delete-history`, {
         data: { user: userEmail, db: selectedDB, question: item.question },
@@ -281,18 +293,18 @@ export default function AskAI({ selectedDB, setSelectedDB }) {
   };
 
   return (
-    <div className="ai-chat">
+    <div className="ask-ai-chat">
       {/* Header */}
-      <div className="ai-header">
-        <div className="ai-header-left">
-          <h1 className="ai-title">
-            <FaRobot className="ai-title-icon" />
+      <div className="ask-ai-header">
+        <div className="ask-ai-header-left">
+          <h1 className="ask-ai-title">
+            <FaRobot className="ask-ai-title-icon" />
             AI Assistant
           </h1>
-          
-          <div className="database-selector">
+
+          <div className="ask-ai-database-selector">
             <select
-              className="database-select"
+              className="ask-ai-database-select"
               value={selectedDB}
               onChange={(e) => setSelectedDB(e.target.value)}
             >
@@ -306,54 +318,62 @@ export default function AskAI({ selectedDB, setSelectedDB }) {
           </div>
         </div>
 
-        <div className="ai-settings">
+        <div className="ask-ai-settings">
           <button
-            className={`setting-toggle ${useWeb ? "active" : ""}`}
+            className={`ask-ai-setting-toggle ${
+              useWeb ? "ask-ai-active" : ""
+            }`}
             onClick={() => setUseWeb(!useWeb)}
             title="Enable web knowledge"
           >
-            <FaGlobe className="setting-icon" />
-            <span className="setting-label">Web</span>
+            <FaGlobe className="ask-ai-setting-icon" />
+            <span className="ask-ai-setting-label">Web</span>
           </button>
-          
+
           <button
-            className={`setting-toggle ${useCache ? "active" : ""}`}
+            className={`ask-ai-setting-toggle ${
+              useCache ? "ask-ai-active" : ""
+            }`}
             onClick={() => setUseCache(!useCache)}
             title="Use cached responses"
           >
-            <FaBolt className="setting-icon" />
-            <span className="setting-label">Cache</span>
+            <FaBolt className="ask-ai-setting-icon" />
+            <span className="ask-ai-setting-label">Cache</span>
           </button>
         </div>
       </div>
 
-      <div className="ai-main">
+      <div className="ask-ai-main">
         {/* Chat Panel */}
-        <div className="ai-chat-panel">
+        <div className="ask-ai-chat-panel">
           {/* FAQ Section */}
           {currentFaqs.length > 0 && (
-            <div className="ai-faq">
-              <h3 className="faq-title">
+            <div className="ask-ai-faq">
+              <h3 className="ask-ai-faq-title">
                 <FaStar />
-                Suggested Questions
+                &nbsp;Suggested Questions
               </h3>
-              <div className="faq-grid">
-                {(showAllFaqs ? currentFaqs : currentFaqs.slice(0, 6)).map((faq, index) => (
-                  <button
-                    key={index}
-                    className="faq-button"
-                    onClick={(e) => handleSubmit(e, faq)}
-                    title={faq}
-                  >
-                    {faq}
-                  </button>
-                ))}
+              <div className="ask-ai-faq-grid">
+                {(showAllFaqs ? currentFaqs : currentFaqs.slice(0, 6)).map(
+                  (faq, index) => (
+                    <button
+                      key={index}
+                      className="ask-ai-faq-button"
+                      onClick={(e) => handleSubmit(e, faq)}
+                      title={faq}
+                    >
+                      {faq}
+                    </button>
+                  )
+                )}
                 {currentFaqs.length > 6 && (
                   <button
-                    className="faq-button faq-toggle"
+                    className="ask-ai-faq-button ask-ai-faq-toggle"
                     onClick={() => setShowAllFaqs(!showAllFaqs)}
                   >
-                    {showAllFaqs ? "Show Less ▲" : `Show ${currentFaqs.length - 6} More ▼`}
+                    {showAllFaqs
+                      ? "Show Less ▲"
+                      : `Show ${currentFaqs.length - 6} More ▼`}
                   </button>
                 )}
               </div>
@@ -361,15 +381,19 @@ export default function AskAI({ selectedDB, setSelectedDB }) {
           )}
 
           {/* Chat Messages */}
-          <div className="ai-chat-area">
-            <div className="chat-messages" ref={chatScrollRef}>
+          <div className="ask-ai-chat-area">
+            <div className="ask-ai-chat-messages" ref={chatScrollRef}>
               {conversation.length === 0 ? (
-                <div className="empty-chat">
-                  <FaRobot className="empty-icon" />
-                  <h2 className="empty-title">Ready to Help</h2>
-                  <p className="empty-description">
-                    Ask me anything about {selectedDB ? formatDatabaseName(selectedDB) : "your documents"}. 
-                    I can help you find information, explain policies, and answer questions.
+                <div className="ask-ai-empty-chat">
+                  <FaRobot className="ask-ai-empty-icon" />
+                  <h2 className="ask-ai-empty-title">Ready to Help</h2>
+                  <p className="ask-ai-empty-description">
+                    Ask me anything about{" "}
+                    {selectedDB
+                      ? formatDatabaseName(selectedDB)
+                      : "your documents"}
+                    . I can help you find information, explain policies, and
+                    answer questions.
                   </p>
                 </div>
               ) : (
@@ -377,76 +401,104 @@ export default function AskAI({ selectedDB, setSelectedDB }) {
                   if (message.role === "user") {
                     const assistantMessage = conversation[index + 1];
                     return (
-                      <div key={`pair-${index}`} className="message-pair">
-                        <div className="user-message">
+                      <div key={`pair-${index}`} className="ask-ai-message-pair">
+                        <div className="ask-ai-user-message">
                           <ReactMarkdown>{message.text}</ReactMarkdown>
                         </div>
-                        
-                        {assistantMessage && assistantMessage.role === "assistant" && (
-                          <div className="assistant-message">
-                            <div className="message-actions">
-                              <button
-                                className="message-action-btn"
-                                onClick={() => copyToClipboard(assistantMessage.text)}
-                                title="Copy response"
-                              >
-                                <FaCopy />
-                              </button>
-                            </div>
-                            
-                            {assistantMessage.loading ? (
-                              <div className="loading-message">
-                                <FaRobot />
-                                <span>Thinking</span>
-                                <div className="loading-dots">
-                                  <div className="loading-dot"></div>
-                                  <div className="loading-dot"></div>
-                                  <div className="loading-dot"></div>
-                                </div>
-                              </div>
-                            ) : (
-                              <div className="message-content">
-                                <ReactMarkdown
-                                  components={{
-                                    a: ({ node, children, ...props }) => (
-                                      <a {...props} target="_blank" rel="noopener noreferrer" aria-label={props.href || 'Link'}>{children}</a>
-                                    ),
-                                    code: ({ inline, className, children, ...props }) => {
-                                      if (inline) {
-                                        return <code {...props}>{children}</code>;
-                                      }
-                                      
-                                      const text = String(children || "");
-                                      const language = className?.replace("language-", "") || "";
-                                      
-                                      return (
-                                        <div>
-                                          <div className="code-block-header">
-                                            <span className="code-language">{language || "code"}</span>
-                                            <button
-                                              className="message-action-btn"
-                                              onClick={() => copyToClipboard(text)}
-                                              title="Copy code"
-                                            >
-                                              <FaCopy />
-                                            </button>
-                                          </div>
-                                          <pre>
-                                            <code className={className} {...props}>
-                                              {children}
-                                            </code>
-                                          </pre>
-                                        </div>
-                                      );
-                                    },
-                                  }}
+
+                        {assistantMessage &&
+                          assistantMessage.role === "assistant" && (
+                            <div className="ask-ai-assistant-message">
+                              <div className="ask-ai-message-actions">
+                                <button
+                                  className="ask-ai-message-action-btn"
+                                  onClick={() =>
+                                    copyToClipboard(assistantMessage.text)
+                                  }
+                                  title="Copy response"
                                 >
-                                  {assistantMessage.text}
-                                </ReactMarkdown>
+                                  <FaCopy />
+                                </button>
                               </div>
-                            )}
-                          </div>
-                        )}
+
+                              {assistantMessage.loading ? (
+                                <div className="ask-ai-loading-message">
+                                  <FaRobot />
+                                  <span>Thinking</span>
+                                  <div className="ask-ai-loading-dots">
+                                    <div className="ask-ai-loading-dot"></div>
+                                    <div className="ask-ai-loading-dot"></div>
+                                    <div className="ask-ai-loading-dot"></div>
+                                  </div>
+                                </div>
+                              ) : (
+                                <div className="ask-ai-message-content">
+                                  <ReactMarkdown
+                                    components={{
+                                      a: ({ node, children, ...props }) => (
+                                        <a
+                                          {...props}
+                                          target="_blank"
+                                          rel="noopener noreferrer"
+                                          aria-label={props.href || "Link"}
+                                        >
+                                          {children}
+                                        </a>
+                                      ),
+                                      code: ({
+                                        inline,
+                                        className,
+                                        children,
+                                        ...props
+                                      }) => {
+                                        if (inline) {
+                                          return (
+                                            <code {...props}>{children}</code>
+                                          );
+                                        }
+
+                                        const text = String(children || "");
+                                        const language =
+                                          className?.replace(
+                                            "language-",
+                                            ""
+                                          ) || "";
+
+                                        return (
+                                          <div>
+                                            <div className="ask-ai-code-block-header">
+                                              <span className="ask-ai-code-language">
+                                                {language || "code"}
+                                              </span>
+                                              <button
+                                                className="ask-ai-message-action-btn"
+                                                onClick={() =>
+                                                  copyToClipboard(text)
+                                                }
+                                                title="Copy code"
+                                              >
+                                                <FaCopy />
+                                              </button>
+                                            </div>
+                                            <pre>
+                                              <code
+                                                className={className}
+                                                {...props}
+                                              >
+                                                {children}
+                                              </code>
+                                            </pre>
+                                          </div>
+                                        );
+                                      },
+                                    }}
+                                  >
+                                    {assistantMessage.text}
+                                  </ReactMarkdown>
+                                </div>
+                              )}
+                            </div>
+                          )}
                       </div>
                     );
                   }
@@ -456,14 +508,18 @@ export default function AskAI({ selectedDB, setSelectedDB }) {
             </div>
 
             {/* Input Area */}
-            <div className="ai-input-area">
-              <div className="input-container">
-                <form onSubmit={handleSubmit} className="input-form">
-                  <div className="input-wrapper">
+            <div className="ask-ai-input-area">
+              <div className="ask-ai-input-container">
+                <form onSubmit={handleSubmit} className="ask-ai-input-form">
+                  <div className="ask-ai-input-wrapper">
                     <textarea
                       ref={inputRef}
-                      className="chat-input"
-                      placeholder={`Ask about ${selectedDB ? formatDatabaseName(selectedDB) : "your documents"}...`}
+                      className="ask-ai-chat-input"
+                      placeholder={`Ask about ${
+                        selectedDB
+                          ? formatDatabaseName(selectedDB)
+                          : "your documents"
+                      }...`}
                       value={query}
                       onChange={(e) => setQuery(e.target.value)}
                       onKeyDown={(e) => {
@@ -475,12 +531,12 @@ export default function AskAI({ selectedDB, setSelectedDB }) {
                       rows={1}
                       disabled={!selectedDB}
                     />
-                    
-                    <div className="input-actions">
+
+                    <div className="ask-ai-input-actions">
                       {loading ? (
                         <button
                           type="button"
-                          className="input-action-btn"
+                          className="ask-ai-input-action-btn"
                           onClick={stopRequest}
                           title="Stop generation"
                         >
@@ -490,16 +546,19 @@ export default function AskAI({ selectedDB, setSelectedDB }) {
                         <>
                           <button
                             type="button"
-                            className="input-action-btn"
+                            className="ask-ai-input-action-btn"
                             onClick={regenerateResponse}
                             title="Regenerate last response"
-                            disabled={!conversation.some((msg) => msg.role === "user") || loading}
+                            disabled={
+                              !conversation.some((msg) => msg.role === "user") ||
+                              loading
+                            }
                           >
                             <FaSync />
                           </button>
                           <button
                             type="submit"
-                            className="input-action-btn primary"
+                            className="ask-ai-input-action-btn ask-ai-primary"
                             disabled={!selectedDB || loading || !query.trim()}
                             title="Send message"
                           >
@@ -510,9 +569,9 @@ export default function AskAI({ selectedDB, setSelectedDB }) {
                     </div>
                   </div>
                 </form>
-                
+
                 {copyFeedback && (
-                  <div className="copy-feedback">{copyFeedback}</div>
+                  <div className="ask-ai-copy-feedback">{copyFeedback}</div>
                 )}
               </div>
             </div>
@@ -520,17 +579,17 @@ export default function AskAI({ selectedDB, setSelectedDB }) {
         </div>
 
         {/* History Panel */}
-        <div className="ai-history-panel">
-          <div className="history-header">
-            <h3 className="history-title">Chat History</h3>
-            <p className="history-subtitle">
+        <div className="ask-ai-history-panel">
+          <div className="ask-ai-history-header">
+            <h3 className="ask-ai-history-title">Chat History</h3>
+            <p className="ask-ai-history-subtitle">
               {selectedDB ? formatDatabaseName(selectedDB) : "Select a database"}
             </p>
           </div>
-          
-          <div className="history-list">
+
+          <div className="ask-ai-history-list">
             {history.length === 0 ? (
-              <div className="empty-history">
+              <div className="ask-ai-empty-history">
                 <p>No chat history yet.</p>
                 <p>Start a conversation to see it here.</p>
               </div>
@@ -538,19 +597,19 @@ export default function AskAI({ selectedDB, setSelectedDB }) {
               history.map((item, index) => (
                 <div
                   key={index}
-                  className="history-item"
+                  className="ask-ai-history-item"
                   onClick={() => loadHistoryItem(index)}
                   title="Click to load conversation"
                 >
-                  <div className="history-question">{item.question}</div>
-                  <div className="history-preview">
+                  <div className="ask-ai-history-question">{item.question}</div>
+                  <div className="ask-ai-history-preview">
                     {item.answer.slice(0, 100)}
                     {item.answer.length > 100 ? "..." : ""}
                   </div>
-                  
-                  <div className="history-actions">
+
+                  <div className="ask-ai-history-actions">
                     <button
-                      className="history-delete-btn"
+                      className="ask-ai-history-delete-btn"
                       onClick={(e) => {
                         e.stopPropagation();
                         deleteHistoryItem(index);

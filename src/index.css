@@ -23,9 +23,9 @@ overflow-x: hidden;
 overflow-y: auto;
   padding-bottom: env(safe-area-inset-bottom);
   background:
-    radial-gradient(circle at 20% 80%, rgba(0, 212, 255, 0.06) 0%, transparent 60%),
-    radial-gradient(circle at 80% 20%, rgba(139, 92, 246, 0.06) 0%, transparent 60%),
-    radial-gradient(circle at 50% 40%, rgba(6, 255, 165, 0.04) 0%, transparent 70%),
+    radial-gradient(circle at 20% 80%, rgba(0, 212, 255, 0.04) 0%, transparent 60%),
+    radial-gradient(circle at 80% 20%, rgba(139, 92, 246, 0.04) 0%, transparent 60%),
+    radial-gradient(circle at 50% 40%, rgba(6, 255, 165, 0.03) 0%, transparent 70%),
     linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 50%, var(--bg-tertiary) 100%);
   background-attachment: local; /* avoid iOS issues with fixed backgrounds */
   color: var(--text-primary);
@@ -61,14 +61,14 @@ html, body {
   --color-purple: #8b5cf6;
   --color-pink: #ec4899;
   
-  /* Backgrounds (darkened for better contrast) */
-  --bg-primary: #05070f;
-  --bg-secondary: #0b1220;
-  --bg-tertiary: #121a26;
-  --bg-card: rgba(10, 14, 26, 0.92);
-  --bg-hover: rgba(24, 32, 48, 0.6);
-  --bg-active: rgba(40, 52, 75, 0.7);
-  --bg-glass: rgba(10, 16, 28, 0.78);
+  /* Backgrounds (slightly darker overall) */
+  --bg-primary: #04060c;
+  --bg-secondary: #0a1020;
+  --bg-tertiary: #111a26;
+  --bg-card: rgba(8, 12, 22, 0.93);
+  --bg-hover: rgba(22, 30, 46, 0.6);
+  --bg-active: rgba(36, 48, 70, 0.7);
+  --bg-glass: rgba(8, 12, 22, 0.8);
   --bg-glow: rgba(79, 143, 247, 0.04);
   
   /* Text */
@@ -169,9 +169,9 @@ html, body {
   z-index: 0;
   pointer-events: none;
   background:
-    radial-gradient(circle at 15% 85%, rgba(0, 212, 255, 0.08) 0%, transparent 55%),
-    radial-gradient(circle at 85% 15%, rgba(139, 92, 246, 0.08) 0%, transparent 55%),
-    radial-gradient(circle at 50% 50%, rgba(6, 255, 165, 0.04) 0%, transparent 70%);
+    radial-gradient(circle at 15% 85%, rgba(0, 212, 255, 0.06) 0%, transparent 55%),
+    radial-gradient(circle at 85% 15%, rgba(139, 92, 246, 0.06) 0%, transparent 55%),
+    radial-gradient(circle at 50% 50%, rgba(6, 255, 165, 0.03) 0%, transparent 70%);
 }
 
 .app-body {
