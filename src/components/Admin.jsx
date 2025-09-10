@@ -36,7 +36,6 @@ export default function Admin() {
   const [busy, setBusy] = useState(false); // blocks bulk ops
   const [statusMsg, setStatusMsg] = useState('');
 
-
   const fetchUsers = async () => {
     setLoading(true);
     try {
@@ -185,11 +184,8 @@ export default function Admin() {
     try {
       for (const u of selectedUsers) {
         if (canEdit(u.email, u.role)) {
-          // safe-guard: don't let non-super owners assign Owner
           if (role === 'Owner' && currentUserEmail !== SUPER_OWNER_EMAIL) continue;
-          // same role? skip
           if (u.role === role) continue;
-          // do it
           // eslint-disable-next-line no-await-in-loop
           await updateRole(u.email, role);
         }
@@ -264,25 +260,25 @@ export default function Admin() {
           <div className="admin-heading">Admin</div>
 
           <div className="admin-stats">
-            <span className="pill owner">Owners: {roleCounts.Owner}</span>
-            <span className="pill admin">Admins: {roleCounts.Admin}</span>
-            <span className="pill user">Users: {roleCounts.User}</span>
+            <span className="admin-pill admin-owner">Owners: {roleCounts.Owner}</span>
+            <span className="admin-pill admin-admin">Admins: {roleCounts.Admin}</span>
+            <span className="admin-pill admin-user">Users: {roleCounts.User}</span>
           </div>
 
-          <button className="btn" onClick={fetchUsers} title="Refresh">
+          <button className="admin-btn" onClick={fetchUsers} title="Refresh">
             <FaSyncAlt /><span>Refresh</span>
           </button>
 
-          <button className="btn" onClick={exportCSV} title="Export CSV">
+          <button className="admin-btn" onClick={exportCSV} title="Export CSV">
             <FaDownload /><span>Export</span>
           </button>
         </div>
 
         <div className="admin-right">
-          <div className="inline">
-            <FaSearch className="mini" />
+          <div className="admin-inline">
+            <FaSearch className="admin-mini" />
             <input
-              className="input"
+              className="admin-input"
               placeholder="Search email/role…"
               value={search}
               onChange={(e) => { setSearch(e.target.value); setPage(1); }}
@@ -290,7 +286,7 @@ export default function Admin() {
           </div>
 
           <select
-            className="select"
+            className="admin-select"
             value={roleFilter}
             onChange={(e) => { setRoleFilter(e.target.value); setPage(1); }}
             title="Filter by role"
@@ -301,14 +297,14 @@ export default function Admin() {
             <option>Owner</option>
           </select>
 
-          <div className="inline add">
+          <div className="admin-inline admin-add">
             <input
-              className="input"
+              className="admin-input"
               placeholder="Add/register email…"
               value={newEmail}
               onChange={(e) => setNewEmail(e.target.value)}
             />
-            <button className="btn" onClick={addUser} title="Register user">
+            <button className="admin-btn" onClick={addUser} title="Register user">
               <FaPlus /><span>Add</span>
             </button>
           </div>
@@ -318,17 +314,24 @@ export default function Admin() {
       {/* Bulk bar */}
       <div className="admin-bulkbar">
         <span>{selectedCount} selected</span>
-        <div className="sep" />
-        <button className="btn ghost" disabled={!selectedCount || busy} onClick={() => bulkSetRole('User')}>→ User</button>
-        <button className="btn ghost" disabled={!selectedCount || busy} onClick={() => bulkSetRole('Admin')}>→ Admin</button>
-        <button className="btn ghost" disabled={!selectedCount || busy || currentUserEmail !== SUPER_OWNER_EMAIL} title={currentUserEmail === SUPER_OWNER_EMAIL ? '' : 'Super owner only'} onClick={() => bulkSetRole('Owner')}>→ Owner</button>
-        <div className="sep" />
-        <button className="btn danger" disabled={!selectedCount || busy} onClick={bulkDelete}>
+        <div className="admin-sep" />
+        <button className="admin-btn admin-ghost" disabled={!selectedCount || busy} onClick={() => bulkSetRole('User')}>→ User</button>
+        <button className="admin-btn admin-ghost" disabled={!selectedCount || busy} onClick={() => bulkSetRole('Admin')}>→ Admin</button>
+        <button
+          className="admin-btn admin-ghost"
+          disabled={!selectedCount || busy || currentUserEmail !== SUPER_OWNER_EMAIL}
+          title={currentUserEmail === SUPER_OWNER_EMAIL ? '' : 'Super owner only'}
+          onClick={() => bulkSetRole('Owner')}
+        >
+          → Owner
+        </button>
+        <div className="admin-sep" />
+        <button className="admin-btn admin-danger" disabled={!selectedCount || busy} onClick={bulkDelete}>
           <FaTrashAlt /><span>Delete</span>
         </button>
 
         {!!statusMsg && (
-          <span className="status"><FaCheckCircle className="mini ok" /> {statusMsg}</span>
+          <span className="admin-status"><FaCheckCircle className="admin-mini admin-ok" /> {statusMsg}</span>
         )}
       </div>
 
@@ -337,7 +340,7 @@ export default function Admin() {
         <table className="admin-table">
           <thead>
             <tr>
-              <th className="check">
+              <th className="admin-check">
                 <input
                   type="checkbox"
                   checked={allPageSelected}
@@ -345,14 +348,14 @@ export default function Admin() {
                   title="Select page"
                 />
               </th>
-              <th onClick={() => onSort('email')} className="th sort">
+              <th onClick={() => onSort('email')} className="admin-th admin-sort">
                 Email{sortBy === 'email' ? (sortDir === 'asc' ? ' ▲' : ' ▼') : ''}
               </th>
-              <th onClick={() => onSort('role')} className="th sort">
+              <th onClick={() => onSort('role')} className="admin-th admin-sort">
                 Role{sortBy === 'role' ? (sortDir === 'asc' ? ' ▲' : ' ▼') : ''}
               </th>
-              <th>Change Role</th>
-              <th>Actions</th>
+              <th className="admin-th">Change Role</th>
+              <th className="admin-th">Actions</th>
             </tr>
           </thead>
           <tbody>
@@ -363,8 +366,8 @@ export default function Admin() {
               const locked = !editable && !deletable;
 
               return (
-                <tr key={u.email} className={`row ${u.role.toLowerCase()}-row`}>
-                  <td className="check">
+                <tr key={u.email} className={`admin-row admin-${u.role.toLowerCase()}-row`}>
+                  <td className="admin-check">
                     {(editable || deletable) ? (
                       <input
                         type="checkbox"
@@ -372,20 +375,20 @@ export default function Admin() {
                         onChange={() => toggleSelect(u.email)}
                       />
                     ) : (
-                      <FaLock className="mini muted" title="Locked" />
+                      <FaLock className="admin-mini admin-muted" title="Locked" />
                     )}
                   </td>
-                  <td className="email">
+                  <td className="admin-email">
                     {u.email}
-                    {isSelf && <span className="you">(you)</span>}
+                    {isSelf && <span className="admin-you">(you)</span>}
                   </td>
                   <td>
-                    <span className={`badge ${u.role.toLowerCase()}`}>{u.role}</span>
+                    <span className={`admin-badge admin-${u.role.toLowerCase()}`}>{u.role}</span>
                   </td>
                   <td>
                     {editable ? (
                       <select
-                        className="select"
+                        className="admin-select"
                         value={u.role}
                         onChange={(e) => updateRole(u.email, e.target.value)}
                       >
@@ -394,13 +397,13 @@ export default function Admin() {
                         ))}
                       </select>
                     ) : (
-                      <span className="muted">{locked ? 'Locked' : u.role}</span>
+                      <span className="admin-muted">{locked ? 'Locked' : u.role}</span>
                     )}
                   </td>
                   <td>
                     {deletable ? (
                       <button
-                        className="btn danger"
+                        className="admin-btn admin-danger"
                         onClick={() => {
                           if (window.confirm(`Delete ${u.email}?`)) deleteUser(u.email);
                         }}
@@ -408,7 +411,7 @@ export default function Admin() {
                         <FaTrashAlt /><span>Delete</span>
                       </button>
                     ) : (
-                      <span className="muted">—</span>
+                      <span className="admin-muted">—</span>
                     )}
                   </td>
                 </tr>
@@ -416,7 +419,7 @@ export default function Admin() {
             })}
             {pageRows.length === 0 && (
               <tr>
-                <td className="empty" colSpan={5}>No results.</td>
+                <td className="admin-empty" colSpan={5}>No results.</td>
               </tr>
             )}
           </tbody>
@@ -425,14 +428,14 @@ export default function Admin() {
 
       {/* Pager */}
       <div className="admin-pager">
-        <button className="btn" onClick={() => setPage(1)} disabled={page === 1}>⏮</button>
-        <button className="btn" onClick={() => setPage(p => Math.max(1, p - 1))} disabled={page === 1}>◀</button>
-        <span className="page">{page} / {totalPages}</span>
-        <button className="btn" onClick={() => setPage(p => Math.min(totalPages, p + 1))} disabled={page === totalPages}>▶</button>
-        <button className="btn" onClick={() => setPage(totalPages)} disabled={page === totalPages}>⏭</button>
+        <button className="admin-btn" onClick={() => setPage(1)} disabled={page === 1}>⏮</button>
+        <button className="admin-btn" onClick={() => setPage(p => Math.max(1, p - 1))} disabled={page === 1}>◀</button>
+        <span className="admin-page">{page} / {totalPages}</span>
+        <button className="admin-btn" onClick={() => setPage(p => Math.min(totalPages, p + 1))} disabled={page === totalPages}>▶</button>
+        <button className="admin-btn" onClick={() => setPage(totalPages)} disabled={page === totalPages}>⏭</button>
 
         <select
-          className="select right"
+          className="admin-select admin-right"
           value={pageSize}
           onChange={(e) => { setPageSize(Number(e.target.value)); setPage(1); }}
         >
@@ -441,4 +444,4 @@ export default function Admin() {
       </div>
     </div>
   );
-}
+};

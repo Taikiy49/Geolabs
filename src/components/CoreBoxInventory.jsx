@@ -6,7 +6,7 @@ import "../styles/CoreBoxInventory.css";
 const pageSizes = [10, 25, 50, 100];
 
 function Badge({ children, tone = "neutral" }) {
-  return <span className={`cbi-badge cbi-badge-${tone}`}>{children}</span>;
+  return <span className={`cbi-badge cbi-badge--${tone}`}>{children}</span>;
 }
 
 function IconBtn({ title, onClick, children, danger, disabled }) {
@@ -14,7 +14,7 @@ function IconBtn({ title, onClick, children, danger, disabled }) {
     <button
       title={title}
       onClick={onClick}
-      className={`cbi-iconbtn ${danger ? "danger" : ""}`}
+      className={`cbi-iconbtn ${danger ? "cbi-iconbtn--danger" : ""}`}
       disabled={disabled}
       type="button"
     >
@@ -65,8 +65,8 @@ export default function CoreBoxInventory() {
 
   const [selected, setSelected] = useState(new Set());
   const allChecked = rows.length > 0 && rows.every(r => selected.has(r.id));
-  const [confirming, setConfirming] = useState(null); // id under hard confirm
-  const [toast, setToast] = useState(null); // { text, actionText, onAction }
+  const [confirming, setConfirming] = useState(null);
+  const [toast, setToast] = useState(null);
   const toastTimer = useRef(null);
 
   const [historyOpen, setHistoryOpen] = useState(false);
@@ -86,7 +86,7 @@ export default function CoreBoxInventory() {
     return () => { document.body.style.overflow = prev || ""; };
   }, [confirming, historyOpen]);
 
-  // global ESC handler: close edit/new/history/modal
+  // global ESC to close layers
   useEffect(() => {
     const onKey = (e) => {
       if (e.key === "Escape") {
@@ -131,7 +131,7 @@ export default function CoreBoxInventory() {
       const res = await axios.get(`${API_URL}/api/core-boxes`, { params });
       setRows(res.data.rows || []);
       setCount(res.data.total || 0);
-      setSelected(new Set()); // reset selection on load
+      setSelected(new Set());
     } catch (e) {
       console.error("Failed to fetch core boxes", e);
       setRows([]);
@@ -154,40 +154,21 @@ export default function CoreBoxInventory() {
     }
   };
 
-  useEffect(() => {
-    fetchOptions();
-  }, []);
-
-  useEffect(() => {
-    fetchRows();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [q, island, year, complete, keepOrDump, expiredOnly, sortBy, sortDir, page, pageSize]);
-
-  useEffect(() => {
-    if (historyOpen) fetchChanges();
-  }, [historyOpen]);
+  useEffect(() => { fetchOptions(); }, []);
+  useEffect(() => { fetchRows(); /* eslint-disable-next-line */ }, [q, island, year, complete, keepOrDump, expiredOnly, sortBy, sortDir, page, pageSize]);
+  useEffect(() => { if (historyOpen) fetchChanges(); }, [historyOpen]);
 
   const toggleSort = (col) => {
-    if (sortBy === col) {
-      setSortDir((d) => (d === "ASC" ? "DESC" : "ASC"));
-    } else {
-      setSortBy(col);
-      setSortDir("ASC");
-    }
+    if (sortBy === col) setSortDir((d) => (d === "ASC" ? "DESC" : "ASC"));
+    else { setSortBy(col); setSortDir("ASC"); }
     setPage(1);
   };
 
   const resetFilters = () => {
-    setQ("");
-    setIsland("");
-    setYear("");
-    setComplete("");
-    setKeepOrDump("");
+    setQ(""); setIsland(""); setYear(""); setComplete(""); setKeepOrDump("");
     setExpiredOnly(false);
-    setSortBy("report_submission_date");
-    setSortDir("DESC");
-    setPage(1);
-    setPageSize(25);
+    setSortBy("report_submission_date"); setSortDir("DESC");
+    setPage(1); setPageSize(25);
   };
 
   const formatDate = (s) => {
@@ -196,30 +177,24 @@ export default function CoreBoxInventory() {
     return isNaN(d) ? s : d.toLocaleDateString();
   };
 
-  // ------ add new ------
+  // add new
   const onNew = () => {
     setDraft({ ...emptyDraft, island: island || "", year: year || "" });
     setShowNew(true);
   };
-
   const saveNew = async () => {
-    if (!draft.work_order.trim()) {
-      alert("Work Order is required.");
-      return;
-    }
+    if (!draft.work_order.trim()) { alert("Work Order is required."); return; }
     try {
       await axios.post(`${API_URL}/api/core-boxes`, draft);
-      setShowNew(false);
-      setDraft(emptyDraft);
+      setShowNew(false); setDraft(emptyDraft);
       setToastTimed("✅ Added", null, null);
-      fetchRows();
-      if (historyOpen) fetchChanges();
+      fetchRows(); if (historyOpen) fetchChanges();
     } catch (e) {
       alert(e.response?.data?.error || "Failed to add.");
     }
   };
 
-  // ------ edit row ------
+  // edit row
   const startEdit = (r) => {
     setEditingId(r.id);
     setEditDraft({
@@ -234,48 +209,34 @@ export default function CoreBoxInventory() {
       year: r.year || ""
     });
   };
-
-  const cancelEdit = () => {
-    setEditingId(null);
-    setEditDraft(emptyDraft);
-  };
-
+  const cancelEdit = () => { setEditingId(null); setEditDraft(emptyDraft); };
   const saveEdit = async (id) => {
     try {
       await axios.put(`${API_URL}/api/core-boxes/${id}`, editDraft);
       setEditingId(null);
       setToastTimed("✅ Saved changes", null, null);
-      fetchRows();
-      if (historyOpen) fetchChanges();
+      fetchRows(); if (historyOpen) fetchChanges();
     } catch (e) {
       alert(e.response?.data?.error || "Failed to save changes.");
     }
   };
 
-  // ------ delete / bulk delete with confirm & undo ------
+  // delete / bulk delete
   const confirmDelete = (id) => setConfirming(id);
-
   const doDelete = async (id) => {
     setConfirming(null);
     try {
       const res = await axios.delete(`${API_URL}/api/core-boxes/${id}`);
       const changeId = res.data?.change_id;
-      setToastTimed(
-        "🗑️ Removed — undo?",
-        "Undo",
-        changeId ? () => restoreChange(changeId) : null
-      );
-      fetchRows();
-      if (historyOpen) fetchChanges();
+      setToastTimed("🗑️ Removed — undo?", "Undo", changeId ? () => restoreChange(changeId) : null);
+      fetchRows(); if (historyOpen) fetchChanges();
     } catch (e) {
       alert(e.response?.data?.error || "Failed to remove.");
     }
   };
-
   const bulkDelete = async () => {
     if (!selected.size) return;
     if (!window.confirm(`Delete ${selected.size} selected item(s)?\nOnly records marked "Dump" will be removed.`)) return;
-
     try {
       let lastChangeId = null;
       for (const id of selected) {
@@ -283,19 +244,14 @@ export default function CoreBoxInventory() {
         lastChangeId = res.data?.change_id || lastChangeId;
       }
       setSelected(new Set());
-      setToastTimed(
-        "🗑️ Removed — undo?",
-        "Undo",
-        lastChangeId ? () => restoreChange(lastChangeId) : null
-      );
-      fetchRows();
-      if (historyOpen) fetchChanges();
+      setToastTimed("🗑️ Removed — undo?", "Undo", lastChangeId ? () => restoreChange(lastChangeId) : null);
+      fetchRows(); if (historyOpen) fetchChanges();
     } catch (e) {
       alert(e.response?.data?.error || "Bulk delete failed.");
     }
   };
 
-  // ------ mark dumped & remove ------
+  // dump & remove
   const dumpAndRemove = async (r) => {
     const ok = window.confirm(`Mark "${r.work_order}" as Dump and remove from list?`);
     if (!ok) return;
@@ -304,20 +260,18 @@ export default function CoreBoxInventory() {
       const res = await axios.delete(`${API_URL}/api/core-boxes/${r.id}`);
       const changeId = res.data?.change_id;
       setToastTimed("🗑️ Dumped & removed — undo?", "Undo", () => restoreChange(changeId));
-      fetchRows();
-      if (historyOpen) fetchChanges();
+      fetchRows(); if (historyOpen) fetchChanges();
     } catch (e) {
       alert(e.response?.data?.error || "Failed to dump & remove.");
     }
   };
 
-  // ------ undo via restore ------
+  // undo via restore
   const restoreChange = async (changeId) => {
     try {
       await axios.post(`${API_URL}/api/core-boxes/restore`, { change_id: changeId });
       setToastTimed("↩️ Restored", null, null);
-      fetchRows();
-      if (historyOpen) fetchChanges();
+      fetchRows(); if (historyOpen) fetchChanges();
     } catch (e) {
       alert(e.response?.data?.error || "Undo failed.");
     }
@@ -330,13 +284,9 @@ export default function CoreBoxInventory() {
   }
 
   const toggleSelectAll = () => {
-    if (allChecked) {
-      setSelected(new Set());
-    } else {
-      setSelected(new Set(rows.map(r => r.id)));
-    }
+    if (allChecked) setSelected(new Set());
+    else setSelected(new Set(rows.map(r => r.id)));
   };
-
   const toggleRow = (id) => {
     const n = new Set(selected);
     if (n.has(id)) n.delete(id); else n.add(id);
@@ -350,38 +300,29 @@ export default function CoreBoxInventory() {
       value={value ?? ""}
       placeholder={placeholder}
       onChange={(e) => onChange(e.target.value)}
-      onKeyDown={(e) => {
-        if (e.key === "Escape") cancelEdit();
-      }}
+      onKeyDown={(e) => { if (e.key === "Escape") cancelEdit(); }}
     />
   );
 
   return (
-    <div className={`cbi-wrap ${historyOpen ? "drawer-open" : ""}`}>
+    <div className={`cbi-wrap ${historyOpen ? "cbi-drawer-open" : ""}`}>
       <div className="cbi-topbar">
         <div className="cbi-filters">
           <input
             className="cbi-input"
             placeholder="Search (WO / Project / Engineer)…"
             value={q}
-            onChange={(e) => {
-              setQ(e.target.value);
-              setPage(1);
-            }}
+            onChange={(e) => { setQ(e.target.value); setPage(1); }}
           />
 
           <select className="cbi-select" value={island} onChange={(e) => { setIsland(e.target.value); setPage(1); }}>
             <option value="">Island: All</option>
-            {islands.map((v) => (
-              <option key={v} value={v}>{v}</option>
-            ))}
+            {islands.map((v) => <option key={v} value={v}>{v}</option>)}
           </select>
 
           <select className="cbi-select" value={year} onChange={(e) => { setYear(e.target.value); setPage(1); }}>
             <option value="">Year: All</option>
-            {years.map((v) => (
-              <option key={v} value={v}>{v}</option>
-            ))}
+            {years.map((v) => <option key={v} value={v}>{v}</option>)}
           </select>
 
           <select className="cbi-select" value={complete} onChange={(e) => { setComplete(e.target.value); setPage(1); }}>
@@ -406,7 +347,7 @@ export default function CoreBoxInventory() {
             <span>Expired only</span>
           </label>
 
-          <button className="cbi-btn cbi-btn-ghost" onClick={resetFilters}>Reset</button>
+          <button className="cbi-btn cbi-btn--ghost" onClick={resetFilters}>Reset</button>
         </div>
 
         <div className="cbi-meta">
@@ -414,17 +355,17 @@ export default function CoreBoxInventory() {
             {historyOpen ? "Hide History" : "Show History"}
           </button>
           <button className="cbi-btn" onClick={onNew}>+ New</button>
-          <button className="cbi-btn" onClick={bulkDelete} disabled={!selected.size}>Delete Selected</button>
+          <button className="cbi-btn cbi-btn--danger" onClick={bulkDelete} disabled={!selected.size}>
+            Delete Selected
+          </button>
 
-          <span>{count} results</span>
+          <span className="cbi-count">{count} results</span>
           <select
             className="cbi-select"
             value={pageSize}
             onChange={(e) => { setPageSize(Number(e.target.value)); setPage(1); }}
           >
-            {pageSizes.map((n) => (
-              <option key={n} value={n}>{n}/page</option>
-            ))}
+            {pageSizes.map((n) => <option key={n} value={n}>{n}/page</option>)}
           </select>
         </div>
       </div>
@@ -451,7 +392,7 @@ export default function CoreBoxInventory() {
           <input className="cbi-input" placeholder="Island" value={draft.island} onChange={e=>setDraft({...draft, island:e.target.value})}/>
           <input className="cbi-input" placeholder="Year" value={draft.year} onChange={e=>setDraft({...draft, year:e.target.value})}/>
           <button className="cbi-btn" onClick={saveNew}>Save</button>
-          <button className="cbi-btn cbi-btn-ghost" onClick={()=>{setShowNew(false);setDraft(emptyDraft);}}>Cancel</button>
+          <button className="cbi-btn cbi-btn--ghost" onClick={()=>{setShowNew(false);setDraft(emptyDraft);}}>Cancel</button>
         </div>
       )}
 
@@ -614,13 +555,7 @@ export default function CoreBoxInventory() {
                       <>
                         <IconBtn title="Edit" onClick={() => startEdit(r)}>✎</IconBtn>
                         <IconBtn title="Mark Dumped & Remove" onClick={() => dumpAndRemove(r)}>🧹</IconBtn>
-                        <IconBtn
-                          title="Delete"
-                          onClick={() => confirmDelete(r.id)}
-                          danger
-                        >
-                          🗑
-                        </IconBtn>
+                        <IconBtn title="Delete" onClick={() => confirmDelete(r.id)} danger>🗑</IconBtn>
                       </>
                     )}
                   </td>
@@ -657,8 +592,8 @@ export default function CoreBoxInventory() {
               <div className="cbi-modal-note">Tip: Only items marked “Dump” are removable by policy.</div>
             </div>
             <div className="cbi-modal-actions">
-              <button className="cbi-btn cbi-btn-ghost" onClick={() => setConfirming(null)}>Cancel</button>
-              <button className="cbi-btn danger" onClick={() => doDelete(confirming)}>Remove</button>
+              <button className="cbi-btn cbi-btn--ghost" onClick={() => setConfirming(null)}>Cancel</button>
+              <button className="cbi-btn cbi-btn--danger" onClick={() => doDelete(confirming)}>Remove</button>
             </div>
           </div>
         </div>
@@ -680,7 +615,7 @@ export default function CoreBoxInventory() {
           <div className="cbi-history-head">
             <div className="cbi-history-title">Change History</div>
             <div className="cbi-history-actions">
-              <button className="cbi-btn cbi-btn-ghost" onClick={fetchChanges} disabled={changesLoading}>
+              <button className="cbi-btn cbi-btn--ghost" onClick={fetchChanges} disabled={changesLoading}>
                 {changesLoading ? "Loading…" : "Refresh"}
               </button>
               <button className="cbi-btn" onClick={() => setHistoryOpen(false)}>Close</button>

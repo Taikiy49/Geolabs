@@ -11,7 +11,7 @@ function IconBtn({ title, onClick, children, danger, disabled }) {
     <button
       title={title}
       onClick={onClick}
-      className={`rpb-iconbtn ${danger ? "danger" : ""}`}
+      className={`rb-iconbtn ${danger ? "danger" : ""}`}
       disabled={disabled}
       type="button"
     >
@@ -166,7 +166,7 @@ export default function ReportsBinder() {
     return isNaN(d) ? s : d.toLocaleDateString();
   };
 
-  // New row (POST /api/reports-binder)
+  // New row
   const onNew = () => {
     setDraft({ ...emptyDraft });
     setShowNew(true);
@@ -187,7 +187,7 @@ export default function ReportsBinder() {
     }
   };
 
-  // Edit (PUT /api/reports-binder/:id)
+  // Edit
   const startEdit = (r) => {
     setEditingId(r.id);
     setEditDraft({
@@ -215,7 +215,7 @@ export default function ReportsBinder() {
     }
   };
 
-  // Delete (DELETE /api/reports-binder/:id)
+  // Delete
   const confirmDelete = (id) => setConfirming(id);
   const doDelete = async (id) => {
     setConfirming(null);
@@ -228,7 +228,7 @@ export default function ReportsBinder() {
     }
   };
 
-  // Bulk delete (POST /api/reports-binder/bulk-delete)
+  // Bulk delete
   const bulkDelete = async () => {
     if (!selected.size) return;
     if (!window.confirm(`Delete ${selected.size} selected row(s)?`)) return;
@@ -251,7 +251,6 @@ export default function ReportsBinder() {
       { key: "billing", label: "Billing" },
       { key: "date_sent", label: "Date Sent" }
     ];
-    
     const escape = (v) => `"${String(v ?? "").replaceAll('"','""').replace(/\r?\n/g," ")}"`;
     const header = cols.map(c => escape(c.label)).join(",");
     const lines = list.map(r => cols.map(c => escape(r[c.key])).join(",")).join("\n");
@@ -287,7 +286,7 @@ export default function ReportsBinder() {
 
   const EditableCell = ({ value, onChange, type="text", placeholder }) => (
     <input
-      className="rpb-input rpb-input-inline"
+      className="rb-input rb-input-inline"
       type={type}
       value={value ?? ""}
       placeholder={placeholder}
@@ -297,28 +296,28 @@ export default function ReportsBinder() {
   );
 
   return (
-    <div className="rpb-wrap">
-      <div className="rpb-topbar">
-        <div className="rpb-filters">
+    <div className="rb-wrap">
+      <div className="rb-topbar">
+        <div className="rb-filters">
           <input
-            className="rpb-input"
+            className="rb-input"
             placeholder="Search (WO / Initials / Billing / PDF)…"
             value={q}
             onChange={(e) => { setQ(e.target.value); setPage(1); }}
           />
           <input
-            className="rpb-input"
+            className="rb-input"
             placeholder="WO (exact/prefix)…"
             value={wo}
             onChange={(e) => { setWo(e.target.value); setPage(1); }}
           />
           <input
-            className="rpb-input"
+            className="rb-input"
             placeholder="Initials (e.g. GS:AT)…"
             value={eng}
             onChange={(e) => { setEng(e.target.value.toUpperCase()); setPage(1); }}
           />
-          <label className="rpb-checkbox">
+          <label className="rb-checkbox">
             <input
               type="checkbox"
               checked={billingOnly}
@@ -327,30 +326,30 @@ export default function ReportsBinder() {
             <span>Has billing</span>
           </label>
           <input
-            className="rpb-input"
+            className="rb-input"
             type="date"
             title="Date from"
             value={dateFrom}
             onChange={(e) => { setDateFrom(e.target.value); setPage(1); }}
           />
           <input
-            className="rpb-input"
+            className="rb-input"
             type="date"
             title="Date to"
             value={dateTo}
             onChange={(e) => { setDateTo(e.target.value); setPage(1); }}
           />
-          <button className="rpb-btn rpb-btn-ghost" onClick={resetFilters}>Reset</button>
+          <button className="rb-btn rb-btn-ghost" onClick={resetFilters}>Reset</button>
         </div>
 
-        <div className="rpb-meta">
-          <button className="rpb-btn" onClick={onNew}>+ New</button>
-          <button className="rpb-btn" onClick={bulkDelete} disabled={!selected.size}>Delete Selected</button>
-          <button className="rpb-btn" onClick={exportCSV} disabled={!rows.length}>Export CSV</button>
+        <div className="rb-meta">
+          <button className="rb-btn" onClick={onNew}>+ New</button>
+          <button className="rb-btn" onClick={bulkDelete} disabled={!selected.size}>Delete Selected</button>
+          <button className="rb-btn" onClick={exportCSV} disabled={!rows.length}>Export CSV</button>
 
           <span>{loading ? "Loading…" : `${count} results`}</span>
           <select
-            className="rpb-select"
+            className="rb-select"
             value={pageSize}
             onChange={(e) => { setPageSize(Number(e.target.value)); setPage(1); }}
           >
@@ -361,180 +360,171 @@ export default function ReportsBinder() {
 
       {/* health banner */}
       {health && health.ok === false && (
-        <div className="rpb-health rpb-health-bad">
+        <div className="rb-health rb-health-bad">
           Reports Binder DB unavailable {health.db_path ? `(${health.db_path})` : ""}. Check the server logs.
         </div>
       )}
       {health && health.ok && health.db_exists === false && (
-        <div className="rpb-health rpb-health-warn">
+        <div className="rb-health rb-health-warn">
           Database file not found. The API will create it automatically on first insert.
         </div>
       )}
 
       {/* New row inline */}
       {showNew && (
-        <div className="rpb-newrow">
-          <input className="rpb-input" placeholder="PDF file" value={draft.pdf_file} onChange={e=>setDraft({...draft, pdf_file:e.target.value})}/>
-          <input className="rpb-input" type="date" title="Date" value={draft.date} onChange={e=>setDraft({...draft, date:e.target.value})}/>
-          <input className="rpb-input" placeholder="Work Order *" value={draft.work_order} onChange={e=>setDraft({...draft, work_order:e.target.value.toUpperCase()})}/>
-          <input className="rpb-input" placeholder="Initials (GS:AT:TT)" value={draft.engineer_initials} onChange={e=>setDraft({...draft, engineer_initials:e.target.value.toUpperCase()})}/>
-          <input className="rpb-input" placeholder="Billing (5-6 digits)" value={draft.billing} onChange={e=>setDraft({...draft, billing:e.target.value.replace(/[^0-9]/g,"")})}/>
-          <input className="rpb-input" type="date" title="Date Sent" value={draft.date_sent} onChange={e=>setDraft({...draft, date_sent:e.target.value})}/>
-          <input className="rpb-input" placeholder="Page Label" value={draft.page_label} onChange={e=>setDraft({...draft, page_label:e.target.value})}/>
-          <button className="rpb-btn" onClick={saveNew}>Save</button>
-          <button className="rpb-btn rpb-btn-ghost" onClick={()=>{setShowNew(false);setDraft(emptyDraft);}}>Cancel</button>
+        <div className="rb-newrow">
+          <input className="rb-input" placeholder="PDF file" value={draft.pdf_file} onChange={e=>setDraft({...draft, pdf_file:e.target.value})}/>
+          <input className="rb-input" type="date" title="Date" value={draft.date} onChange={e=>setDraft({...draft, date:e.target.value})}/>
+          <input className="rb-input" placeholder="Work Order *" value={draft.work_order} onChange={e=>setDraft({...draft, work_order:e.target.value.toUpperCase()})}/>
+          <input className="rb-input" placeholder="Initials (GS:AT:TT)" value={draft.engineer_initials} onChange={e=>setDraft({...draft, engineer_initials:e.target.value.toUpperCase()})}/>
+          <input className="rb-input" placeholder="Billing (5-6 digits)" value={draft.billing} onChange={e=>setDraft({...draft, billing:e.target.value.replace(/[^0-9]/g,"")})}/>
+          <input className="rb-input" type="date" title="Date Sent" value={draft.date_sent} onChange={e=>setDraft({...draft, date_sent:e.target.value})}/>
+          <input className="rb-input" placeholder="Page Label" value={draft.page_label} onChange={e=>setDraft({...draft, page_label:e.target.value})}/>
+          <button className="rb-btn" onClick={saveNew}>Save</button>
+          <button className="rb-btn rb-btn-ghost" onClick={()=>{setShowNew(false);setDraft(emptyDraft);}}>Cancel</button>
         </div>
       )}
 
-      <div className="rpb-table-wrap">
-        <table className="rpb-table">
+      <div className="rb-table-wrap">
+        <table className="rb-table">
           <thead>
-  <tr>
-    <th className="rpb-th">
-      <input type="checkbox" checked={allChecked} onChange={toggleSelectAll} />
-    </th>
-
-    <th className="rpb-th" onClick={() => toggleSort("date")}>
-      Date {sortBy==="date" ? (sortDir==="ASC"?"▲":"▼"):""}
-    </th>
-
-    <th className="rpb-th" onClick={() => toggleSort("work_order")}>
-      W.O. {sortBy==="work_order" ? (sortDir==="ASC"?"▲":"▼"):""}
-    </th>
-
-    <th className="rpb-th" onClick={() => toggleSort("engineer_initials")}>
-      Initials {sortBy==="engineer_initials" ? (sortDir==="ASC"?"▲":"▼"):""}
-    </th>
-
-    <th className="rpb-th" onClick={() => toggleSort("billing")}>
-      Billing {sortBy==="billing" ? (sortDir==="ASC"?"▲":"▼"):""}
-    </th>
-
-    <th className="rpb-th" onClick={() => toggleSort("date_sent")}>
-      Date Sent {sortBy==="date_sent" ? (sortDir==="ASC"?"▲":"▼"):""}
-    </th>
-
-    <th className="rpb-th">Actions</th>
-  </tr>
-</thead>
-
+            <tr>
+              <th className="rb-th">
+                <input type="checkbox" checked={allChecked} onChange={toggleSelectAll} />
+              </th>
+              <th className="rb-th" onClick={() => toggleSort("date")}>
+                Date {sortBy==="date" ? (sortDir==="ASC"?"▲":"▼"):""}
+              </th>
+              <th className="rb-th" onClick={() => toggleSort("work_order")}>
+                W.O. {sortBy==="work_order" ? (sortDir==="ASC"?"▲":"▼"):""}
+              </th>
+              <th className="rb-th" onClick={() => toggleSort("engineer_initials")}>
+                Initials {sortBy==="engineer_initials" ? (sortDir==="ASC"?"▲":"▼"):""}
+              </th>
+              <th className="rb-th" onClick={() => toggleSort("billing")}>
+                Billing {sortBy==="billing" ? (sortDir==="ASC"?"▲":"▼"):""}
+              </th>
+              <th className="rb-th" onClick={() => toggleSort("date_sent")}>
+                Date Sent {sortBy==="date_sent" ? (sortDir==="ASC"?"▲":"▼"):""}
+              </th>
+              <th className="rb-th">Actions</th>
+            </tr>
+          </thead>
 
           <tbody>
-  {rows.map((r) => {
-    const isEdit = editingId === r.id;
-    return (
-      <tr key={r.id} className={isEdit ? "rpb-editing" : ""}>
-        <td>
-          <input
-            type="checkbox"
-            checked={selected.has(r.id)}
-            onChange={() => toggleRow(r.id)}
-          />
-        </td>
+            {rows.map((r) => {
+              const isEdit = editingId === r.id;
+              return (
+                <tr key={r.id} className={isEdit ? "rb-editing" : ""}>
+                  <td>
+                    <input
+                      type="checkbox"
+                      checked={selected.has(r.id)}
+                      onChange={() => toggleRow(r.id)}
+                    />
+                  </td>
 
-        {/* Date */}
-        <td>
-          {isEdit ? (
-            <EditableCell
-              type="date"
-              value={editDraft.date}
-              onChange={(v)=>setEditDraft({...editDraft, date: v})}
-            />
-          ) : formatDate(r.date)}
-        </td>
+                  {/* Date */}
+                  <td>
+                    {isEdit ? (
+                      <EditableCell
+                        type="date"
+                        value={editDraft.date}
+                        onChange={(v)=>setEditDraft({...editDraft, date: v})}
+                      />
+                    ) : formatDate(r.date)}
+                  </td>
 
-        {/* Work Order */}
-        <td className="rpb-mono">
-          {isEdit ? (
-            <EditableCell
-              value={editDraft.work_order}
-              onChange={(v)=>setEditDraft({...editDraft, work_order: v.toUpperCase()})}
-              placeholder="WO"
-            />
-          ) : r.work_order}
-        </td>
+                  {/* Work Order */}
+                  <td className="rb-mono">
+                    {isEdit ? (
+                      <EditableCell
+                        value={editDraft.work_order}
+                        onChange={(v)=>setEditDraft({...editDraft, work_order: v.toUpperCase()})}
+                        placeholder="WO"
+                      />
+                    ) : r.work_order}
+                  </td>
 
-        {/* Initials */}
-        <td>
-          {isEdit ? (
-            <EditableCell
-              value={editDraft.engineer_initials}
-              onChange={(v)=>setEditDraft({...editDraft, engineer_initials: v.toUpperCase()})}
-              placeholder="GS:AT:TT"
-            />
-          ) : r.engineer_initials}
-        </td>
+                  {/* Initials */}
+                  <td>
+                    {isEdit ? (
+                      <EditableCell
+                        value={editDraft.engineer_initials}
+                        onChange={(v)=>setEditDraft({...editDraft, engineer_initials: v.toUpperCase()})}
+                        placeholder="GS:AT:TT"
+                      />
+                    ) : r.engineer_initials}
+                  </td>
 
-        {/* Billing */}
-        <td>
-          {isEdit ? (
-            <EditableCell
-              value={editDraft.billing}
-              onChange={(v)=>setEditDraft({...editDraft, billing: v.replace(/[^0-9]/g,"")})}
-              placeholder="12345"
-            />
-          ) : r.billing}
-        </td>
+                  {/* Billing */}
+                  <td>
+                    {isEdit ? (
+                      <EditableCell
+                        value={editDraft.billing}
+                        onChange={(v)=>setEditDraft({...editDraft, billing: v.replace(/[^0-9]/g,"")})}
+                        placeholder="12345"
+                      />
+                    ) : r.billing}
+                  </td>
 
-        {/* Date Sent */}
-        <td>
-          {isEdit ? (
-            <EditableCell
-              type="date"
-              value={editDraft.date_sent}
-              onChange={(v)=>setEditDraft({...editDraft, date_sent: v})}
-            />
-          ) : formatDate(r.date_sent)}
-        </td>
+                  {/* Date Sent */}
+                  <td>
+                    {isEdit ? (
+                      <EditableCell
+                        type="date"
+                        value={editDraft.date_sent}
+                        onChange={(v)=>setEditDraft({...editDraft, date_sent: v})}
+                      />
+                    ) : formatDate(r.date_sent)}
+                  </td>
 
-        {/* Actions */}
-        <td className="rpb-actions">
-          {isEdit ? (
-            <>
-              <IconBtn title="Save" onClick={() => saveEdit(r.id)}>💾</IconBtn>
-              <IconBtn title="Cancel" onClick={cancelEdit}>✖</IconBtn>
-            </>
-          ) : (
-            <>
-              <IconBtn title="Edit" onClick={() => startEdit(r)}>✎</IconBtn>
-              <IconBtn title="Delete" onClick={() => confirmDelete(r.id)} danger>🗑</IconBtn>
-            </>
-          )}
-        </td>
-      </tr>
-    );
-  })}
+                  {/* Actions */}
+                  <td className="rb-actions">
+                    {isEdit ? (
+                      <>
+                        <IconBtn title="Save" onClick={() => saveEdit(r.id)}>💾</IconBtn>
+                        <IconBtn title="Cancel" onClick={cancelEdit}>✖</IconBtn>
+                      </>
+                    ) : (
+                      <>
+                        <IconBtn title="Edit" onClick={() => startEdit(r)}>✎</IconBtn>
+                        <IconBtn title="Delete" onClick={() => confirmDelete(r.id)} danger>🗑</IconBtn>
+                      </>
+                    )}
+                  </td>
+                </tr>
+              );
+            })}
 
-  {rows.length === 0 && (
-    <tr>
-      <td colSpan="7" className="rpb-empty">{loading ? "Loading…" : "No results."}</td>
-    </tr>
-  )}
-</tbody>
-
-
+            {rows.length === 0 && (
+              <tr>
+                <td colSpan="7" className="rb-empty">{loading ? "Loading…" : "No results."}</td>
+              </tr>
+            )}
+          </tbody>
         </table>
       </div>
 
-      <div className="rpb-pager">
-        <button className="rpb-btn" onClick={() => setPage(1)} disabled={page === 1}>⏮</button>
-        <button className="rpb-btn" onClick={() => setPage((p) => Math.max(1, p - 1))} disabled={page === 1}>◀</button>
-        <span className="rpb-page">{page} / {totalPages}</span>
-        <button className="rpb-btn" onClick={() => setPage((p) => Math.min(totalPages, p + 1))} disabled={page === totalPages}>▶</button>
-        <button className="rpb-btn" onClick={() => setPage(totalPages)} disabled={page === totalPages}>⏭</button>
+      <div className="rb-pager">
+        <button className="rb-btn" onClick={() => setPage(1)} disabled={page === 1}>⏮</button>
+        <button className="rb-btn" onClick={() => setPage((p) => Math.max(1, p - 1))} disabled={page === 1}>◀</button>
+        <span className="rb-page">{page} / {totalPages}</span>
+        <button className="rb-btn" onClick={() => setPage((p) => Math.min(totalPages, p + 1))} disabled={page === totalPages}>▶</button>
+        <button className="rb-btn" onClick={() => setPage(totalPages)} disabled={page === totalPages}>⏭</button>
       </div>
 
       {/* Confirm delete modal */}
       {confirming && (
-        <div className="rpb-modal">
-          <div className="rpb-modal-card">
-            <div className="rpb-modal-title">Confirm removal</div>
-            <div className="rpb-modal-body">
+        <div className="rb-modal">
+          <div className="rb-modal-card">
+            <div className="rb-modal-title">Confirm removal</div>
+            <div className="rb-modal-body">
               This will remove the record from the binder list. You can re-import from OCR later if needed.
             </div>
-            <div className="rpb-modal-actions">
-              <button className="rpb-btn rpb-btn-ghost" onClick={() => setConfirming(null)}>Cancel</button>
-              <button className="rpb-btn danger" onClick={() => doDelete(confirming)}>Remove</button>
+            <div className="rb-modal-actions">
+              <button className="rb-btn rb-btn-ghost" onClick={() => setConfirming(null)}>Cancel</button>
+              <button className="rb-btn danger" onClick={() => doDelete(confirming)}>Remove</button>
             </div>
           </div>
         </div>
@@ -542,10 +532,10 @@ export default function ReportsBinder() {
 
       {/* Toast */}
       {toast && (
-        <div className="rpb-toast">
+        <div className="rb-toast">
           <span>{toast.text}</span>
           {toast.actionText && toast.onAction && (
-            <button className="rpb-btn" onClick={toast.onAction}>{toast.actionText}</button>
+            <button className="rb-btn" onClick={toast.onAction}>{toast.actionText}</button>
           )}
         </div>
       )}

@@ -54,7 +54,7 @@ export default function DBAdmin() {
   const fetchHistory = async () => {
     try {
       const res = await axios.get(`${API_URL}/api/upload-history`);
-      setUploadHistory(res.data || []);
+    setUploadHistory(res.data || []);
     } catch (e) {
       console.error('❌ Failed to load upload history:', e);
     }
@@ -297,82 +297,82 @@ export default function DBAdmin() {
   }, [rawTitle, mode]);
 
   return (
-    <div className="dba-wrap">
+    <div className="db-admin-wrap">
       {/* Top: uploader + controls */}
-      <div className="dba-top">
+      <div className="db-admin-top">
         {/* Drop zone + queue */}
-        <div className="dba-drop" ref={dropRef} onClick={() => document.getElementById('dbaFile').click()}>
+        <div className="db-admin-drop" ref={dropRef} onClick={() => document.getElementById('dbAdminFile').click()}>
           <input
-            id="dbaFile"
+            id="dbAdminFile"
             type="file"
             accept=".pdf"
             multiple
             style={{ display: 'none' }}
             onChange={(e) => addFiles(e.target.files)}
           />
-          <div className="dba-drop-head">
-            <FaUpload className="mini" /> <span className="strong">Add PDFs</span>
-            <span className="muted"> (click or drag & drop)</span>
+          <div className="db-admin-drop-head">
+            <FaUpload className="db-admin-mini" /> <span className="db-admin-strong">Add PDFs</span>
+            <span className="db-admin-muted"> (click or drag & drop)</span>
           </div>
 
           {queue.length === 0 ? (
-            <div className="dba-drop-empty">
-              <FaFilePdf className="big" />
-              <div className="muted">No files in queue</div>
+            <div className="db-admin-drop-empty">
+              <FaFilePdf className="db-admin-big" />
+              <div className="db-admin-muted">No files in queue</div>
             </div>
           ) : (
-            <div className="dba-queue">
+            <div className="db-admin-queue">
               {queue.map(item => (
-                <div key={item.name} className={`dba-qrow ${item.status}`}>
-                  <div className="dba-qname" title={item.name}>
-                    <FaFilePdf className="mini" />
-                    <span className="ellipsis">{item.name}</span>
-                    <span className="muted size">({(item.size/1024/1024).toFixed(2)} MB)</span>
+                <div key={item.name} className={`db-admin-qrow db-admin-${item.status}`}>
+                  <div className="db-admin-qname" title={item.name}>
+                    <FaFilePdf className="db-admin-mini" />
+                    <span className="db-admin-ellipsis">{item.name}</span>
+                    <span className="db-admin-muted db-admin-size">({(item.size/1024/1024).toFixed(2)} MB)</span>
                   </div>
-                  <div className="dba-qprog">
-                    <div className="bar"><div className="fill" style={{ width: `${item.progress || 0}%` }} /></div>
-                    <div className="muted">{item.status === 'ready' ? 'Ready' : item.status}</div>
+                  <div className="db-admin-qprog">
+                    <div className="db-admin-bar"><div className="db-admin-fill" style={{ width: `${item.progress || 0}%` }} /></div>
+                    <div className="db-admin-muted">{item.status === 'ready' ? 'Ready' : item.status}</div>
                   </div>
-                  <div className="dba-qactions">
+                  <div className="db-admin-qactions">
                     {item.status === 'uploading' && (
-                      <button className="btn danger" onClick={() => cancelItem(item.name)} title="Cancel">
+                      <button className="db-admin-btn db-admin-danger" onClick={() => cancelItem(item.name)} title="Cancel">
                         <FaTimes />
                       </button>
                     )}
                     {(item.status === 'ready' || item.status === 'error' || item.status === 'canceled') && (
-                      <button className="btn ghost" onClick={() => setQueue(prev => prev.map(q => q.name === item.name ? { ...q, status: 'ready', progress: 0 } : q))} title="Retry next run">
+                      <button className="db-admin-btn db-admin-ghost" onClick={() => setQueue(prev => prev.map(q => q.name === item.name ? { ...q, status: 'ready', progress: 0 } : q))} title="Retry next run">
                         <FaPlay />
                       </button>
                     )}
-                    <button className="btn ghost" onClick={() => removeFromQueue(item.name)} title="Remove">
+                    <button className="db-admin-btn db-admin-ghost" onClick={() => removeFromQueue(item.name)} title="Remove">
                       <FaTrashAlt />
                     </button>
                   </div>
                 </div>
               ))}
-              <div className="dba-qbar">
+              <div className="db-admin-qbar">
                 <span>{queue.length} in queue</span>
-                <div className="sp" />
-                <button className="btn ghost" onClick={clearQueue}><FaTimes /> <span>Clear</span></button>
-                <button className="btn" onClick={runUpload} title="Start"><FaPlay /> <span>Run</span></button>
-                <button className="btn ghost" onClick={stopAll} title="Stop"><FaStop /> <span>Stop</span></button>
+                <div className="db-admin-sp" />
+                <button className="db-admin-btn db-admin-ghost" onClick={clearQueue}><FaTimes /> <span>Clear</span></button>
+                <button className="db-admin-btn" onClick={runUpload} title="Start"><FaPlay /> <span>Run</span></button>
+                <button className="db-admin-btn db-admin-ghost" onClick={stopAll} title="Stop"><FaStop /> <span>Stop</span></button>
               </div>
             </div>
           )}
         </div>
 
         {/* Right controls */}
-        <div className="dba-controls">
-          <div className="dba-mode">
-            <label className={`radio ${mode === 'new' ? 'on' : ''}`}>
+        <div className="db-admin-controls">
+          <div className="db-admin-mode">
+            <label className={`db-admin-radio ${mode === 'new' ? 'db-admin-on' : ''}`}>
               <input type="radio" checked={mode === 'new'} onChange={() => setMode('new')} />
               New DB
             </label>
-            <label className={`radio ${mode === 'append' ? 'on' : ''}`}>
+            <label className={`db-admin-radio ${mode === 'append' ? 'db-admin-on' : ''}`}>
               <input type="radio" checked={mode === 'append'} onChange={() => setMode('append')} />
               Append
             </label>
-            <label className="chk">
+            <label className="db-admin-chk">
               <input type="checkbox" checked={generalMode} onChange={(e) => setGeneralMode(e.target.checked)} />
               General mode
             </label>
@@ -380,21 +380,21 @@ export default function DBAdmin() {
 
           {mode === 'new' ? (
             <>
-              <div className="lbl">Title</div>
+              <div className="db-admin-lbl">Title</div>
               <input
-                className="input"
+                className="db-admin-input"
                 placeholder="e.g. Employee Handbook"
                 value={rawTitle}
                 onChange={(e) => setRawTitle(e.target.value)}
               />
-              <div className="lbl">DB File</div>
-              <input className="input" value={dbName} onChange={(e) => setDbName(e.target.value)} placeholder="generated_name.db" />
-              <div className="hint"><FaExclamationTriangle className="mini" /> only letters, numbers, underscores</div>
+              <div className="db-admin-lbl">DB File</div>
+              <input className="db-admin-input" value={dbName} onChange={(e) => setDbName(e.target.value)} placeholder="generated_name.db" />
+              <div className="db-admin-hint"><FaExclamationTriangle className="db-admin-mini" /> only letters, numbers, underscores</div>
             </>
           ) : (
             <>
-              <div className="lbl">Select DB</div>
-              <select className="select" value={dbName} onChange={(e) => setDbName(e.target.value)}>
+              <div className="db-admin-lbl">Select DB</div>
+              <select className="db-admin-select" value={dbName} onChange={(e) => setDbName(e.target.value)}>
                 <option value="">-- choose --</option>
                 {filteredDbs.map((db) => (
                   <option key={db} value={db}>{formatDbName(db)}</option>
@@ -403,13 +403,13 @@ export default function DBAdmin() {
             </>
           )}
 
-          <div className="dba-status">
-            {statusLine ? <span className="ok"><FaCheckCircle className="mini" /> {statusLine}</span> : <span className="muted">Status</span>}
+          <div className="db-admin-status">
+            {statusLine ? <span className="db-admin-ok"><FaCheckCircle className="db-admin-mini" /> {statusLine}</span> : <span className="db-admin-muted">Status</span>}
           </div>
 
           {!!steps.length && (
-            <div className="dba-steps">
-              <div className="steps-head"><FaList className="mini" /> Steps</div>
+            <div className="db-admin-steps">
+              <div className="db-admin-steps-head"><FaList className="db-admin-mini" /> Steps</div>
               <ul>
                 {steps.map((s, i) => <li key={i}>{s}</li>)}
               </ul>
@@ -419,74 +419,74 @@ export default function DBAdmin() {
       </div>
 
       {/* Bottom: history + DBs */}
-      <div className="dba-bottom">
+      <div className="db-admin-bottom">
         {/* History */}
-        <div className="dba-panel">
-          <div className="panel-head">
-            <div className="title"><FaCube className="mini" /> Upload History</div>
-            <div className="panel-actions">
-              <div className="inline">
-                <FaSearch className="mini" />
-                <input className="input" placeholder="Search…" value={historySearch} onChange={(e)=>setHistorySearch(e.target.value)} />
+        <div className="db-admin-panel">
+          <div className="db-admin-panel-head">
+            <div className="db-admin-title"><FaCube className="db-admin-mini" /> Upload History</div>
+            <div className="db-admin-panel-actions">
+              <div className="db-admin-inline">
+                <FaSearch className="db-admin-mini" />
+                <input className="db-admin-input" placeholder="Search…" value={historySearch} onChange={(e)=>setHistorySearch(e.target.value)} />
               </div>
-              <button className="btn ghost" onClick={fetchHistory}><FaSyncAlt /><span>Refresh</span></button>
+              <button className="db-admin-btn db-admin-ghost" onClick={fetchHistory}><FaSyncAlt /><span>Refresh</span></button>
             </div>
           </div>
-          <ul className="hist-list">
+          <ul className="db-admin-hist-list">
             {groupedHistory.map((group, idx) => (
-              <li key={idx} className="hist-group">
-                <div className="hist-head">
-                  <strong>{group[0].user}</strong> → <span className="db">{formatDbName(group[0].db)}</span> · {group.length} file(s)
+              <li key={idx} className="db-admin-hist-group">
+                <div className="db-admin-hist-head">
+                  <strong>{group[0].user}</strong> → <span className="db-admin-db">{formatDbName(group[0].db)}</span> · {group.length} file(s)
                 </div>
-                <ul className="hist-sub">
+                <ul className="db-admin-hist-sub">
                   {group.map((g, j) => (
-                    <li key={j}><em>{g.file}</em> <span className="muted">{new Date(g.time).toLocaleString()}</span></li>
+                    <li key={j}><em>{g.file}</em> <span className="db-admin-muted">{new Date(g.time).toLocaleString()}</span></li>
                   ))}
                 </ul>
               </li>
             ))}
-            {groupedHistory.length === 0 && <li className="empty">No history.</li>}
+            {groupedHistory.length === 0 && <li className="db-admin-empty">No history.</li>}
           </ul>
         </div>
 
         {/* DBs */}
-        <div className="dba-panel">
-          <div className="panel-head">
-            <div className="title"><FaCube className="mini" /> Databases</div>
-            <div className="panel-actions">
-              <div className="inline">
-                <FaSearch className="mini" />
-                <input className="input" placeholder="Filter DBs…" value={dbSearch} onChange={(e)=>setDbSearch(e.target.value)} />
+        <div className="db-admin-panel">
+          <div className="db-admin-panel-head">
+            <div className="db-admin-title"><FaCube className="db-admin-mini" /> Databases</div>
+            <div className="db-admin-panel-actions">
+              <div className="db-admin-inline">
+                <FaSearch className="db-admin-mini" />
+                <input className="db-admin-input" placeholder="Filter DBs…" value={dbSearch} onChange={(e)=>setDbSearch(e.target.value)} />
               </div>
-              <button className="btn ghost" onClick={fetchDbs}><FaSyncAlt /><span>Refresh</span></button>
-              <button className="btn danger" onClick={bulkDelete} disabled={!Object.values(dbSelected).some(Boolean)}><FaTrashAlt /><span>Bulk Delete</span></button>
+              <button className="db-admin-btn db-admin-ghost" onClick={fetchDbs}><FaSyncAlt /><span>Refresh</span></button>
+              <button className="db-admin-btn db-admin-danger" onClick={bulkDelete} disabled={!Object.values(dbSelected).some(Boolean)}><FaTrashAlt /><span>Bulk Delete</span></button>
             </div>
           </div>
 
-          <div className="db-list">
+          <div className="db-admin-db-list">
             {filteredDbs.map(db => {
               const expanded = !!expandedDbs[db];
               const files = dbFiles[db] || [];
               const checked = !!dbSelected[db];
               return (
-                <div key={db} className="db-item">
-                  <div className="db-row">
+                <div key={db} className="db-admin-db-item">
+                  <div className="db-admin-db-row">
                     <input type="checkbox" checked={checked} onChange={(e)=>setDbSelected(prev => ({...prev, [db]: e.target.checked}))} />
-                    <span className="db-name" onClick={() => toggleDbFiles(db)}>
+                    <span className="db-admin-db-name" onClick={() => toggleDbFiles(db)}>
                       {formatDbName(db)} {expanded ? '▲' : '▼'}
                     </span>
-                    <div className="sp" />
-                    <button className="btn ghost" onClick={() => openSchema(db)}>[Schema]</button>
-                    <button className="btn ghost" onClick={() => exportSchemaJSON(db)} title="Export schema JSON"><FaDownload /></button>
-                    <button className="btn danger" onClick={() => deleteDb(db)}><FaTrashAlt /><span>Delete</span></button>
+                    <div className="db-admin-sp" />
+                    <button className="db-admin-btn db-admin-ghost" onClick={() => openSchema(db)}>[Schema]</button>
+                    <button className="db-admin-btn db-admin-ghost" onClick={() => exportSchemaJSON(db)} title="Export schema JSON"><FaDownload /></button>
+                    <button className="db-admin-btn db-admin-danger" onClick={() => deleteDb(db)}><FaTrashAlt /><span>Delete</span></button>
                   </div>
                   {expanded && (
-                    <div className="db-files">
-                      {files.length === 0 && <div className="muted">No file list or failed to load.</div>}
+                    <div className="db-admin-db-files">
+                      {files.length === 0 && <div className="db-admin-muted">No file list or failed to load.</div>}
                       {files.map((file, i) => (
-                        <div key={i} className="db-file">
+                        <div key={i} className="db-admin-db-file">
                           <span
-                            className="file-link"
+                            className="db-admin-file-link"
                             onClick={() => {
                               const key = `${db}/${file}`;
                               const url = s3PdfUrls[key];
@@ -503,22 +503,22 @@ export default function DBAdmin() {
                 </div>
               );
             })}
-            {filteredDbs.length === 0 && <div className="empty">No databases.</div>}
+            {filteredDbs.length === 0 && <div className="db-admin-empty">No databases.</div>}
           </div>
         </div>
       </div>
 
       {/* Schema popup */}
       {showSchemaPopup && dbStructure && (
-        <div className="dba-pop" onClick={()=>setShowSchemaPopup(false)}>
-          <div className="dba-pop-inner" onClick={(e)=>e.stopPropagation()}>
-            <button className="pop-close" onClick={()=>setShowSchemaPopup(false)}>✕</button>
-            <div className="pop-title">📊 {formatDbName(dbStructure.db)}</div>
+        <div className="db-admin-pop" onClick={()=>setShowSchemaPopup(false)}>
+          <div className="db-admin-pop-inner" onClick={(e)=>e.stopPropagation()}>
+            <button className="db-admin-pop-close" onClick={()=>setShowSchemaPopup(false)}>✕</button>
+            <div className="db-admin-pop-title">📊 {formatDbName(dbStructure.db)}</div>
             {Object.entries(dbStructure).map(([table, info]) =>
               table === 'db' ? null : (
-                <div key={table} className="schema-block">
-                  <div className="schema-name">{table}</div>
-                  <div className="schema-rows">
+                <div key={table} className="db-admin-schema-block">
+                  <div className="db-admin-schema-name">{table}</div>
+                  <div className="db-admin-schema-rows">
                     <div>Columns: {info.columns.join(', ')}</div>
                     <div>Sample rows:</div>
                     <ul>
@@ -538,9 +538,9 @@ export default function DBAdmin() {
 
       {/* PDF preview */}
       {activePdfUrl && (
-        <div className="dba-pop" onClick={()=>setActivePdfUrl('')}>
-          <div className="dba-pop-inner pdf" onClick={(e)=>e.stopPropagation()}>
-            <button className="pop-close" onClick={()=>setActivePdfUrl('')}>✕</button>
+        <div className="db-admin-pop" onClick={()=>setActivePdfUrl('')}>
+          <div className="db-admin-pop-inner db-admin-pdf" onClick={(e)=>e.stopPropagation()}>
+            <button className="db-admin-pop-close" onClick={()=>setActivePdfUrl('')}>✕</button>
             <iframe src={activePdfUrl} title="PDF" width="100%" height="100%" style={{ border: 'none' }} />
           </div>
         </div>

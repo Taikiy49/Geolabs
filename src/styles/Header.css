@@ -66,7 +66,7 @@
 .header-brand {
   display: inline-flex;
   align-items: center;
-  gap: var(--space-1);
+  gap: 2px;
   text-decoration: none;
   color: var(--text-primary);
   font-weight: 700;
@@ -78,13 +78,18 @@
 .header-brand:hover { color: var(--color-primary); }
 
 .header-logo {
-  width: 30px;
-  height: 30px;
-  border-radius: 10px;
+  width: 38px; height: 38px;
+  border-radius: 50%;
   object-fit: cover;
-  border: 1px solid rgba(0, 212, 255, 0.22);
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
+  object-position: 50% 50%;
+  display: block;
+
+  /* trims ~2% of the outermost pixels to kill any white ring */
+  -webkit-mask-image: radial-gradient(circle at 50% 50%, #000 98%, transparent 100%);
+          mask-image: radial-gradient(circle at 50% 50%, #000 98%, transparent 100%);
 }
+
+
 .header-title {
   background: linear-gradient(135deg, #e8fbff 0%, #b7e7ff 35%, #cfd4ff 65%, #e8fbff 100%);
   -webkit-background-clip: text;
@@ -92,7 +97,7 @@
   -webkit-text-fill-color: transparent;
   font-weight: 800;
   letter-spacing: -0.012em;
-  font-size: 0.98rem;
+  font-size: 1.08rem;
   text-shadow:
     0 0 6px rgba(34, 211, 238, 0.18),
     0 1px 10px rgba(0, 0, 0, 0.35);
@@ -360,7 +365,7 @@
 @media (max-width: 1024px) {
   .header { grid-template-columns: auto 1fr auto; column-gap: 8px; }
   .header-menu-btn { width: 38px; height: 38px; font-size: 1.25rem; }
-  .header-logo { width: 32px; height: 32px; }
+  .header-logo { width: 34px; height: 34px; }
   .header-title { font-size: 0.98rem; }
   .header-action-btn { width: 34px; height: 34px; }
   .header-profile-trigger { padding: 4px 6px; }
@@ -380,7 +385,7 @@
 @media (max-width: 560px) {
   .header { padding: 0 8px; column-gap: 6px; }
   .header-menu-btn { width: 34px; height: 34px; font-size: 1.15rem; }
-  .header-logo { width: 28px; height: 28px; border-radius: 8px; }
+  .header-logo { width: 30px; height: 30px;}
   .header-action-btn { width: 30px; height: 30px; }
   .header-profile-trigger { gap: 6px; }
   .header-profile-chevron { display: none; } /* avatar only */

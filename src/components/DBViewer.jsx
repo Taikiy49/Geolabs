@@ -90,20 +90,17 @@ export default function DBViewer() {
   const processedDatabases = useMemo(() => {
     let filtered = databases;
 
-    // Apply search filter
     if (searchQuery.trim()) {
       const query = searchQuery.toLowerCase();
       filtered = filtered.filter((db) => db.toLowerCase().includes(query));
     }
 
-    // Add metadata
     const withMetadata = filtered.map((db) => ({
       name: db,
       fileCount: (filesByDatabase[db] || []).length,
       displayName: db.replace(/\.db$/i, "").replace(/_/g, " "),
     }));
 
-    // Apply sorting
     withMetadata.sort((a, b) => {
       let valueA, valueB;
 
@@ -162,7 +159,6 @@ export default function DBViewer() {
     setFileSortDirection("asc");
     setCurrentPage(1);
 
-    // Load files if not already loaded
     if (!filesByDatabase[dbName]) {
       try {
         setLoadingFiles(true);
@@ -241,7 +237,6 @@ export default function DBViewer() {
       url: s3Urls[`${expandedDb}/${fileName}`],
     }));
 
-    // Apply filters
     if (fileSearch.trim()) {
       const query = fileSearch.toLowerCase();
       filtered = filtered.filter((file) => file.name.toLowerCase().includes(query));
@@ -251,7 +246,6 @@ export default function DBViewer() {
       filtered = filtered.filter((file) => file.extension === fileTypeFilter);
     }
 
-    // Apply sorting
     filtered.sort((a, b) => {
       let valueA, valueB;
 
@@ -378,7 +372,7 @@ export default function DBViewer() {
     const urls = Array.from(selectedFiles)
       .map((fileName) => getS3Url(expandedDb, fileName))
       .filter(Boolean)
-      .slice(0, 10); // Limit to prevent browser issues
+      .slice(0, 10);
 
     if (urls.length === 0) {
       alert("No URLs available for selected files.");
@@ -421,18 +415,18 @@ export default function DBViewer() {
         </h1>
 
         <div className="db-viewer-controls">
-          <div className="search-container">
-            <FaSearch className="search-icon" />
+          <div className="db-viewer-search-container">
+            <FaSearch className="db-viewer-search-icon" />
             <input
               type="text"
-              className="search-input"
+              className="db-viewer-search-input"
               placeholder="Search databases..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
             />
           </div>
 
-          <button className="btn btn-secondary" onClick={refreshDatabases} disabled={loadingDatabases}>
+          <button className="db-viewer-btn db-viewer-btn-secondary" onClick={refreshDatabases} disabled={loadingDatabases}>
             <FaSync />
             {loadingDatabases ? "Loading..." : "Refresh"}
           </button>
@@ -441,52 +435,52 @@ export default function DBViewer() {
 
       <div className="db-viewer-main">
         {/* Database List */}
-        <div className="db-list-panel">
-          <div className="db-list-header">
-            <h2 className="db-list-title">Databases</h2>
-            <div className="db-list-count">{processedDatabases.length}</div>
+        <div className="db-viewer-db-list-panel">
+          <div className="db-viewer-db-list-header">
+            <h2 className="db-viewer-db-list-title">Databases</h2>
+            <div className="db-viewer-db-list-count">{processedDatabases.length}</div>
           </div>
 
-          <div className="db-list">
+          <div className="db-viewer-db-list">
             {loadingDatabases ? (
-              <div className="loading-container">
-                <div className="loading-spinner" />
-                <span className="loading-text">Loading databases...</span>
+              <div className="db-viewer-loading-container">
+                <div className="db-viewer-loading-spinner" />
+                <span className="db-viewer-loading-text">Loading databases...</span>
               </div>
             ) : error ? (
-              <div className="empty-state">
-                <FaDatabase className="empty-state-icon" />
-                <h3 className="empty-state-title">Error</h3>
-                <p className="empty-state-description">{error}</p>
+              <div className="db-viewer-empty-state">
+                <FaDatabase className="db-viewer-empty-state-icon" />
+                <h3 className="db-viewer-empty-state-title">Error</h3>
+                <p className="db-viewer-empty-state-description">{error}</p>
               </div>
             ) : processedDatabases.length === 0 ? (
-              <div className="empty-state">
-                <FaDatabase className="empty-state-icon" />
-                <h3 className="empty-state-title">No Databases</h3>
-                <p className="empty-state-description">No databases found matching your search.</p>
+              <div className="db-viewer-empty-state">
+                <FaDatabase className="db-viewer-empty-state-icon" />
+                <h3 className="db-viewer-empty-state-title">No Databases</h3>
+                <p className="db-viewer-empty-state-description">No databases found matching your search.</p>
               </div>
             ) : (
               processedDatabases.map((db) => (
-                <div key={db.name} className={`db-item ${expandedDb === db.name ? "active" : ""}`}>
-                  <div className="db-item-header" onClick={() => toggleDatabase(db.name)}>
-                    <div className="db-item-info">
-                      <FaDatabase className="db-item-icon" />
-                      <div className="db-item-details">
-                        <div className="db-item-name">{db.displayName}</div>
-                        <div className="db-item-meta">{db.fileCount} files</div>
+                <div key={db.name} className={`db-viewer-db-item ${expandedDb === db.name ? "db-viewer-active" : ""}`}>
+                  <div className="db-viewer-db-item-header" onClick={() => toggleDatabase(db.name)}>
+                    <div className="db-viewer-db-item-info">
+                      <FaDatabase className="db-viewer-db-item-icon" />
+                      <div className="db-viewer-db-item-details">
+                        <div className="db-viewer-db-item-name">{db.displayName}</div>
+                        <div className="db-viewer-db-item-meta">{db.fileCount} files</div>
                       </div>
                     </div>
 
-                    <div className="db-item-actions" onClick={(e) => e.stopPropagation()}>
-                      <button className="db-action-btn" onClick={() => inspectDatabase(db.name)} title="View schema">
+                    <div className="db-viewer-db-item-actions" onClick={(e) => e.stopPropagation()}>
+                      <button className="db-viewer-db-action-btn" onClick={() => inspectDatabase(db.name)} title="View schema">
                         <FaTable />
                       </button>
-                      <button className="db-action-btn danger" onClick={() => deleteDatabase(db.name)} title="Delete database">
+                      <button className="db-viewer-db-action-btn db-viewer-danger" onClick={() => deleteDatabase(db.name)} title="Delete database">
                         <FaTrash />
                       </button>
                     </div>
 
-                    <FaChevronDown className={`expand-icon ${expandedDb === db.name ? "expanded" : ""}`} />
+                    <FaChevronDown className={`db-viewer-expand-icon ${expandedDb === db.name ? "db-viewer-expanded" : ""}`} />
                   </div>
                 </div>
               ))
@@ -495,21 +489,21 @@ export default function DBViewer() {
         </div>
 
         {/* File Content Panel */}
-        <div className="file-content-panel">
+        <div className="db-viewer-file-content-panel">
           {expandedDb ? (
             <>
-              <div className="file-content-header">
-                <h2 className="file-content-title">
+              <div className="db-viewer-file-content-header">
+                <h2 className="db-viewer-file-content-title">
                   {expandedDb.replace(/\.db$/i, "").replace(/_/g, " ")}
                 </h2>
 
-                <div className="file-content-actions">
-                  <div className="filter-group">
-                    <div className="search-container">
-                      <FaSearch className="search-icon" />
+                <div className="db-viewer-file-content-actions">
+                  <div className="db-viewer-filter-group">
+                    <div className="db-viewer-search-container">
+                      <FaSearch className="db-viewer-search-icon" />
                       <input
                         type="text"
-                        className="search-input"
+                        className="db-viewer-search-input"
                         placeholder="Search files..."
                         value={fileSearch}
                         onChange={(e) => {
@@ -520,9 +514,9 @@ export default function DBViewer() {
                     </div>
                   </div>
 
-                  <div className="filter-group">
+                  <div className="db-viewer-filter-group">
                     <select
-                      className="filter-select"
+                      className="db-viewer-filter-select"
                       value={fileTypeFilter}
                       onChange={(e) => {
                         setFileTypeFilter(e.target.value);
@@ -538,9 +532,9 @@ export default function DBViewer() {
                     </select>
                   </div>
 
-                  <div className="filter-group">
+                  <div className="db-viewer-filter-group">
                     <select
-                      className="filter-select"
+                      className="db-viewer-filter-select"
                       value={pageSize}
                       onChange={(e) => {
                         setPageSize(Number(e.target.value));
@@ -555,7 +549,7 @@ export default function DBViewer() {
                     </select>
                   </div>
 
-                  <button className="btn btn-secondary" onClick={exportFileList}>
+                  <button className="db-viewer-btn db-viewer-btn-secondary" onClick={exportFileList}>
                     <FaCloudDownloadAlt />
                     Export CSV
                   </button>
@@ -564,69 +558,67 @@ export default function DBViewer() {
 
               {/* Bulk Actions */}
               {selectedFiles.size > 0 && (
-                <div className="bulk-actions">
-                  <div className="selection-info">
+                <div className="db-viewer-bulk-actions">
+                  <div className="db-viewer-selection-info">
                     {selectedFiles.size} file{selectedFiles.size !== 1 ? "s" : ""} selected
                   </div>
 
-                  <button className="bulk-action-btn" onClick={bulkCopyUrls}>
+                  <button className="db-viewer-bulk-action-btn" onClick={bulkCopyUrls}>
                     <FaCopy />
                     Copy URLs
                   </button>
 
-                  <button className="bulk-action-btn" onClick={bulkOpenFiles}>
+                  <button className="db-viewer-bulk-action-btn" onClick={bulkOpenFiles}>
                     <FaExternalLinkAlt />
                     Open Files (max 10)
                   </button>
 
-                  <button className="bulk-action-btn" onClick={clearSelection}>
+                  <button className="db-viewer-bulk-action-btn" onClick={clearSelection}>
                     Clear Selection
                   </button>
 
                   {copyFeedback === "@bulk" && (
-                    <span style={{ color: "var(--color-success)", fontSize: "0.875rem" }}>
-                      URLs copied!
-                    </span>
+                    <span className="db-viewer-copy-feedback">URLs copied!</span>
                   )}
                 </div>
               )}
 
               {/* File Table */}
-              <div className="file-table-container">
+              <div className="db-viewer-file-table-container">
                 {loadingFiles ? (
-                  <div className="loading-container">
-                    <div className="loading-spinner" />
-                    <span className="loading-text">Loading files...</span>
+                  <div className="db-viewer-loading-container">
+                    <div className="db-viewer-loading-spinner" />
+                    <span className="db-viewer-loading-text">Loading files...</span>
                   </div>
                 ) : totalFiles === 0 ? (
-                  <div className="empty-state">
-                    <FaTable className="empty-state-icon" />
-                    <h3 className="empty-state-title">No Files</h3>
-                    <p className="empty-state-description">
+                  <div className="db-viewer-empty-state">
+                    <FaTable className="db-viewer-empty-state-icon" />
+                    <h3 className="db-viewer-empty-state-title">No Files</h3>
+                    <p className="db-viewer-empty-state-description">
                       No files found in this database matching your criteria.
                     </p>
                   </div>
                 ) : (
-                  <table className="file-table">
+                  <table className="db-viewer-file-table">
                     <thead>
                       <tr>
                         <th style={{ width: "40px" }}>
                           <input
                             type="checkbox"
-                            className="selection-checkbox"
+                            className="db-viewer-selection-checkbox"
                             checked={paginatedFiles.length > 0 && paginatedFiles.every((file) => selectedFiles.has(file.name))}
                             onChange={toggleSelectAll}
                             title="Select all on page"
                           />
                         </th>
                         <th
-                          className={`sortable ${fileSortBy === "name" ? `sorted-${fileSortDirection}` : ""}`}
+                          className={`db-viewer-sortable ${fileSortBy === "name" ? `db-viewer-sorted-${fileSortDirection}` : ""}`}
                           onClick={() => toggleFileSort("name")}
                         >
                           File Name
                         </th>
                         <th
-                          className={`sortable ${fileSortBy === "extension" ? `sorted-${fileSortDirection}` : ""}`}
+                          className={`db-viewer-sortable ${fileSortBy === "extension" ? `db-viewer-sorted-${fileSortDirection}` : ""}`}
                           onClick={() => toggleFileSort("extension")}
                         >
                           Type
@@ -640,21 +632,21 @@ export default function DBViewer() {
                           <td>
                             <input
                               type="checkbox"
-                              className="selection-checkbox"
+                              className="db-viewer-selection-checkbox"
                               checked={selectedFiles.has(file.name)}
                               onChange={() => toggleFileSelection(file.name)}
                             />
                           </td>
                           <td>
-                            <div className="file-name" title={file.name}>
+                            <div className="db-viewer-file-name" title={file.name}>
                               {file.name}
                             </div>
                           </td>
-                          <td>{file.extension && <span className="file-type">{file.extension}</span>}</td>
+                          <td>{file.extension && <span className="db-viewer-file-type">{file.extension}</span>}</td>
                           <td>
-                            <div className="file-actions">
+                            <div className="db-viewer-file-actions">
                               <button
-                                className="file-action-btn"
+                                className="db-viewer-file-action-btn"
                                 onClick={() => openPreview(expandedDb, file.name)}
                                 title="Preview file"
                               >
@@ -667,7 +659,7 @@ export default function DBViewer() {
                                     href={file.url}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="file-action-btn"
+                                    className="db-viewer-file-action-btn"
                                     title="Open in new tab"
                                   >
                                     <FaExternalLinkAlt />
@@ -676,31 +668,22 @@ export default function DBViewer() {
                                   <a
                                     href={file.url}
                                     download={file.name}
-                                    className="file-action-btn"
+                                    className="db-viewer-file-action-btn"
                                     title="Download file"
                                   >
                                     <FaCloudDownloadAlt />
                                   </a>
 
                                   <button
-                                    className="file-action-btn"
+                                    className="db-viewer-file-action-btn"
                                     onClick={() => copyFileUrl(expandedDb, file.name)}
                                     title="Copy URL"
                                   >
                                     <FaCopy />
                                   </button>
 
-                                  {/* feedback is now inside the map so `file` is defined */}
                                   {copyFeedback === `${expandedDb}/${file.name}` && (
-                                    <span
-                                      style={{
-                                        color: "var(--color-success)",
-                                        fontSize: "0.75rem",
-                                        marginLeft: "var(--space-2)",
-                                      }}
-                                    >
-                                      Copied!
-                                    </span>
+                                    <span className="db-viewer-copy-feedback">Copied!</span>
                                   )}
                                 </>
                               )}
@@ -715,9 +698,9 @@ export default function DBViewer() {
 
               {/* Pagination */}
               {totalFiles > 0 && (
-                <div className="pagination">
+                <div className="db-viewer-pagination">
                   <button
-                    className="pagination-btn"
+                    className="db-viewer-pagination-btn"
                     onClick={() => setCurrentPage(1)}
                     disabled={currentPage === 1}
                     title="First page"
@@ -725,7 +708,7 @@ export default function DBViewer() {
                     ⏮
                   </button>
                   <button
-                    className="pagination-btn"
+                    className="db-viewer-pagination-btn"
                     onClick={() => setCurrentPage((prev) => Math.max(1, prev - 1))}
                     disabled={currentPage === 1}
                     title="Previous page"
@@ -733,10 +716,10 @@ export default function DBViewer() {
                     ◀
                   </button>
 
-                  <span className="pagination-info">Page {currentPage} of {totalPages}</span>
+                  <span className="db-viewer-pagination-info">Page {currentPage} of {totalPages}</span>
 
                   <button
-                    className="pagination-btn"
+                    className="db-viewer-pagination-btn"
                     onClick={() => setCurrentPage((prev) => Math.min(totalPages, prev + 1))}
                     disabled={currentPage === totalPages}
                     title="Next page"
@@ -744,7 +727,7 @@ export default function DBViewer() {
                     ▶
                   </button>
                   <button
-                    className="pagination-btn"
+                    className="db-viewer-pagination-btn"
                     onClick={() => setCurrentPage(totalPages)}
                     disabled={currentPage === totalPages}
                     title="Last page"
@@ -753,7 +736,7 @@ export default function DBViewer() {
                   </button>
 
                   <select
-                    className="page-size-select"
+                    className="db-viewer-page-size-select"
                     value={pageSize}
                     onChange={(e) => {
                       setPageSize(Number(e.target.value));
@@ -770,10 +753,10 @@ export default function DBViewer() {
               )}
             </>
           ) : (
-            <div className="empty-state">
-              <FaDatabase className="empty-state-icon" />
-              <h2 className="empty-state-title">Select a Database</h2>
-              <p className="empty-state-description">
+            <div className="db-viewer-empty-state">
+              <FaDatabase className="db-viewer-empty-state-icon" />
+              <h2 className="db-viewer-empty-state-title">Select a Database</h2>
+              <p className="db-viewer-empty-state-description">
                 Choose a database from the list to view its contents and manage files.
               </p>
             </div>
@@ -783,12 +766,12 @@ export default function DBViewer() {
 
       {/* Schema Modal */}
       {schemaModal.open && (
-        <div className="modal-overlay" onClick={() => setSchemaModal({ open: false, data: null })}>
-          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-            <div className="modal-header">
-              <h3 className="modal-title">Database Schema: {schemaModal.data?.database}</h3>
+        <div className="db-viewer-modal-overlay" onClick={() => setSchemaModal({ open: false, data: null })}>
+          <div className="db-viewer-modal-content" onClick={(e) => e.stopPropagation()}>
+            <div className="db-viewer-modal-header">
+              <h3 className="db-viewer-modal-title">Database Schema: {schemaModal.data?.database}</h3>
               <button
-                className="modal-close-btn"
+                className="db-viewer-modal-close-btn"
                 onClick={() => setSchemaModal({ open: false, data: null })}
                 title="Close"
               >
@@ -796,29 +779,29 @@ export default function DBViewer() {
               </button>
             </div>
 
-            <div className="modal-body">
+            <div className="db-viewer-modal-body">
               {schemaModal.data?.error ? (
-                <div className="empty-state">
-                  <FaTable className="empty-state-icon" />
-                  <h3 className="empty-state-title">Schema Error</h3>
-                  <p className="empty-state-description">{schemaModal.data.error}</p>
+                <div className="db-viewer-empty-state">
+                  <FaTable className="db-viewer-empty-state-icon" />
+                  <h3 className="db-viewer-empty-state-title">Schema Error</h3>
+                  <p className="db-viewer-empty-state-description">{schemaModal.data.error}</p>
                 </div>
               ) : (
                 Object.entries(schemaModal.data || {}).map(([tableName, tableInfo]) => {
                   if (tableName === "database") return null;
 
                   return (
-                    <div key={tableName} className="schema-section">
-                      <h4 className="schema-table-name">
+                    <div key={tableName} className="db-viewer-schema-section">
+                      <h4 className="db-viewer-schema-table-name">
                         <FaTable />
                         {tableName}
                       </h4>
 
-                      <div className="schema-columns">
-                        <h5 className="schema-columns-title">Columns</h5>
-                        <div className="schema-columns-list">
+                      <div className="db-viewer-schema-columns">
+                        <h5 className="db-viewer-schema-columns-title">Columns</h5>
+                        <div className="db-viewer-schema-columns-list">
                           {(tableInfo.columns || []).map((column) => (
-                            <span key={column} className="schema-column">
+                            <span key={column} className="db-viewer-schema-column">
                               {column}
                             </span>
                           ))}
@@ -826,9 +809,9 @@ export default function DBViewer() {
                       </div>
 
                       {tableInfo.sample_rows && tableInfo.sample_rows.length > 0 && (
-                        <div className="schema-sample">
-                          <h5 className="schema-sample-title">Sample Data</h5>
-                          <table className="sample-table">
+                        <div className="db-viewer-schema-sample">
+                          <h5 className="db-viewer-schema-sample-title">Sample Data</h5>
+                          <table className="db-viewer-sample-table">
                             <thead>
                               <tr>
                                 {(tableInfo.columns || []).map((column) => (
@@ -863,12 +846,12 @@ export default function DBViewer() {
 
       {/* Preview Modal */}
       {previewModal.open && (
-        <div className="modal-overlay" onClick={() => setPreviewModal({ open: false, url: "", name: "", type: "" })}>
-          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-            <div className="modal-header">
-              <h3 className="modal-title">{previewModal.name}</h3>
+        <div className="db-viewer-modal-overlay" onClick={() => setPreviewModal({ open: false, url: "", name: "", type: "" })}>
+          <div className="db-viewer-modal-content" onClick={(e) => e.stopPropagation()}>
+            <div className="db-viewer-modal-header">
+              <h3 className="db-viewer-modal-title">{previewModal.name}</h3>
               <button
-                className="modal-close-btn"
+                className="db-viewer-modal-close-btn"
                 onClick={() => setPreviewModal({ open: false, url: "", name: "", type: "" })}
                 title="Close preview"
               >
@@ -876,16 +859,16 @@ export default function DBViewer() {
               </button>
             </div>
 
-            <div className="modal-body" style={{ padding: 0 }}>
+            <div className="db-viewer-modal-body" style={{ padding: 0 }}>
               {previewModal.type === "pdf" ? (
                 <iframe src={previewModal.url} title="File preview" style={{ width: "100%", height: "100%", border: "none" }} />
               ) : ["png", "jpg", "jpeg", "webp", "gif"].includes(previewModal.type) ? (
                 <img src={previewModal.url} alt={previewModal.name} style={{ width: "100%", height: "100%", objectFit: "contain" }} />
               ) : (
-                <div className="empty-state">
-                  <FaEye className="empty-state-icon" />
-                  <h3 className="empty-state-title">Preview Not Available</h3>
-                  <p className="empty-state-description">
+                <div className="db-viewer-empty-state">
+                  <FaEye className="db-viewer-empty-state-icon" />
+                  <h3 className="db-viewer-empty-state-title">Preview Not Available</h3>
+                  <p className="db-viewer-empty-state-description">
                     No preview available for .{previewModal.type} files. Use the download or open button instead.
                   </p>
                 </div>

@@ -103,7 +103,7 @@ export default function OCRLookUp() {
     return () => window.removeEventListener('paste', onPaste);
   }, []);
 
-  // ---------- API: Gemini OCR ----------
+  // ---------- API: OCR ----------
   const handleUpload = async () => {
     if (!image) return;
     const formData = new FormData();
@@ -141,7 +141,7 @@ export default function OCRLookUp() {
     }
   };
 
-  // ---------- API: Lookup Matches (after edits or initial OCR) ----------
+  // ---------- API: Lookup ----------
   const fetchProjects = async (woList) => {
     if (!woList.length) {
       setProjectMatches([]);
@@ -159,20 +159,17 @@ export default function OCRLookUp() {
     }
   };
 
-  // fetch when editedWOs changes (after OCR or user edits)
   useEffect(() => {
     if (step >= 2) fetchProjects(editedWOs);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [editedWOs, step]);
 
-  // re-run lookup (manual)
   const rerunLookup = () => fetchProjects(editedWOs);
 
   // ---------- Sorting / Filtering ----------
   const sortedFilteredMatches = useMemo(() => {
     let rows = [...projectMatches];
 
-    // filter text
     const f = filter.trim().toLowerCase();
     if (f) {
       rows = rows.filter(r =>
@@ -182,12 +179,10 @@ export default function OCRLookUp() {
       );
     }
 
-    // not found filter
     if (showNotFound) {
       rows = rows.filter(r => (r.project_wo || '').toLowerCase() === 'not found');
     }
 
-    // sorting
     const val = (r, key) => {
       if (key === 'original') return 0;
       if (key === 'work_order') return r.project_wo || '';
@@ -248,7 +243,6 @@ export default function OCRLookUp() {
   };
 
   const addManualWO = () => setEditedWOs(prev => [...prev, '']);
-
   const removeWO = (idx) => setEditedWOs(prev => prev.filter((_, i) => i !== idx));
 
   const resetAll = () => {
@@ -268,7 +262,7 @@ export default function OCRLookUp() {
       {/* STEP 1: upload */}
       {step === 1 && (
         <div className="ocr-center">
-          <div className="ocr-title imp">Work Order Recognition</div>
+          <div className="ocr-title ocr-imp">Work Order Recognition</div>
           <div className="ocr-subtle">Paste (Ctrl/Cmd+V), drag & drop, or choose an image.</div>
 
           <div className="ocr-drop" ref={dropRef} onClick={() => fileInputRef.current?.click()}>
@@ -279,7 +273,7 @@ export default function OCRLookUp() {
             </div>
             <input
               ref={fileInputRef}
-              id="upload"
+              id="ocr-upload"
               type="file"
               accept="image/*"
               onChange={onInputChange}
@@ -296,15 +290,23 @@ export default function OCRLookUp() {
           )}
 
           <div className="ocr-btn-row">
-            <button className={`btn primary ${!image ? 'disabled' : ''}`} onClick={handleUpload} disabled={!image}>
-              <FiUpload className="mr4" /> Upload & Extract
+            <button
+              className={`ocr-btn ${!image ? 'ocr-disabled' : 'ocr-primary'}`}
+              onClick={handleUpload}
+              disabled={!image}
+            >
+              <FiUpload className="ocr-mr4" /> Upload & Extract
             </button>
-            <button className="btn" onClick={resetAll}>
-              <FiRotateCcw className="mr4" /> Reset
+            <button className="ocr-btn" onClick={resetAll}>
+              <FiRotateCcw className="ocr-mr4" /> Reset
             </button>
           </div>
 
-          {loading && <div className="ocr-spinner">Processing<span className="d1">.</span><span className="d2">.</span><span className="d3">.</span></div>}
+          {loading && (
+            <div className="ocr-spinner">
+              Processing<span className="ocr-d1">.</span><span className="ocr-d2">.</span><span className="ocr-d3">.</span>
+            </div>
+          )}
           {error && <div className="ocr-error">{error}</div>}
         </div>
       )}
@@ -313,39 +315,42 @@ export default function OCRLookUp() {
       {step >= 2 && (
         <>
           <div className="ocr-toolbar">
-            <div className="left-tools">
-              <button className="btn" onClick={resetAll}><FiRotateCcw className="mr4" />New Image</button>
-              <button className="btn" onClick={rerunLookup}><FaWrench className="mr4" />Re-run Lookup</button>
-              <label className="lbl">
-                <input type="checkbox" checked={normalizeLetters} onChange={() => {
-                  setNormalizeLetters(v => !v);
-                  // re-apply normalization to edited list
-                  setEditedWOs(prev => prev.map(p => normalizeWO(p)));
-                }} />
+            <div className="ocr-left-tools">
+              <button className="ocr-btn" onClick={resetAll}><FiRotateCcw className="ocr-mr4" />New Image</button>
+              <button className="ocr-btn" onClick={rerunLookup}><FaWrench className="ocr-mr4" />Re-run Lookup</button>
+              <label className="ocr-lbl">
+                <input
+                  type="checkbox"
+                  checked={normalizeLetters}
+                  onChange={() => {
+                    setNormalizeLetters(v => !v);
+                    setEditedWOs(prev => prev.map(p => normalizeWO(p)));
+                  }}
+                />
                 Normalize letters → (A)
               </label>
             </div>
 
-            <div className="mid-tools">
-              <div className="count-badge">
-                <span className="imp">Found:</span> {foundCount} / {projectMatches.length}
+            <div className="ocr-mid-tools">
+              <div className="ocr-count-badge">
+                <span className="ocr-imp">Found:</span> {foundCount} / {projectMatches.length}
               </div>
-              <div className="search-box">
-                <FiSearch className="mr4" />
+              <div className="ocr-search-box">
+                <FiSearch className="ocr-mr4" />
                 <input
                   value={filter}
                   onChange={e => setFilter(e.target.value)}
                   placeholder="Filter client, project, PR, date…"
                 />
               </div>
-              <label className="lbl">
+              <label className="ocr-lbl">
                 <input type="checkbox" checked={showNotFound} onChange={() => setShowNotFound(v => !v)} />
                 Show not found only
               </label>
             </div>
 
-            <div className="right-tools">
-              <div className="sort-group">
+            <div className="ocr-right-tools">
+              <div className="ocr-sort-group">
                 <select value={sortBy} onChange={e => setSortBy(e.target.value)}>
                   <option value="original">Original</option>
                   <option value="date">Date</option>
@@ -354,68 +359,68 @@ export default function OCRLookUp() {
                   <option value="client">Client</option>
                   <option value="project">Project</option>
                 </select>
-                <button className="btn" onClick={() => setSortDir(d => (d === 'asc' ? 'desc' : 'asc'))} title="Toggle sort order">
+                <button className="ocr-btn" onClick={() => setSortDir(d => (d === 'asc' ? 'desc' : 'asc'))} title="Toggle sort order">
                   {sortDir === 'asc' ? <FiArrowUp /> : <FiArrowDown />}
                 </button>
               </div>
-              <button className="btn" onClick={copyExtracted}><FiCopy className="mr4" />Copy WOs</button>
-              <button className="btn" onClick={copyMatches}><FiCopy className="mr4" />Copy Matches</button>
-              <button className="btn" onClick={downloadCSV}><FiDownload className="mr4" />CSV</button>
+              <button className="ocr-btn" onClick={copyExtracted}><FiCopy className="ocr-mr4" />Copy WOs</button>
+              <button className="ocr-btn" onClick={copyMatches}><FiCopy className="ocr-mr4" />Copy Matches</button>
+              <button className="ocr-btn" onClick={downloadCSV}><FiDownload className="ocr-mr4" />CSV</button>
             </div>
           </div>
 
           {/* Editable WO list */}
-          <div className="wo-editor">
-            <div className="section-title imp">Extracted / Edited Work Orders</div>
-            <div className="wo-grid">
+          <div className="ocr-wo-editor">
+            <div className="ocr-section-title ocr-imp">Extracted / Edited Work Orders</div>
+            <div className="ocr-wo-grid">
               {editedWOs.map((wo, i) => (
-                <div className="wo-chip" key={`wo-${i}`}>
+                <div className="ocr-wo-chip" key={`wo-${i}`}>
                   <input
                     value={wo}
                     onChange={(e) => applyEditToIndex(i, e.target.value)}
-                    className="wo-input"
+                    className="ocr-wo-input"
                     placeholder="Enter WO…"
                   />
-                  <button className="chip-del" onClick={() => removeWO(i)}>✕</button>
+                  <button className="ocr-chip-del" onClick={() => removeWO(i)}>✕</button>
                 </div>
               ))}
-              <button className="btn add" onClick={addManualWO}>+ Add WO</button>
+              <button className="ocr-btn ocr-add" onClick={addManualWO}>+ Add WO</button>
             </div>
           </div>
 
           {/* Matches */}
-          <div className="matches">
-            <div className="section-title imp">Matches</div>
-            <div className="match-list">
+          <div className="ocr-matches">
+            <div className="ocr-section-title ocr-imp">Matches</div>
+            <div className="ocr-match-list">
               {sortedFilteredMatches.map((m, idx) => {
                 const notFound = (m.project_wo || '').toLowerCase() === 'not found';
                 return (
-                  <div className={`match-row ${notFound ? 'nf' : ''}`} key={`m-${idx}`}>
-                    <div className="col wo">
-                      <div className="k">Matched WO</div>
-                      <div className={`v ${notFound ? 'warn' : ''}`}>{m.project_wo || '—'}</div>
+                  <div className={`ocr-match-row ${notFound ? 'ocr-nf' : ''}`} key={`m-${idx}`}>
+                    <div className="ocr-col ocr-wo">
+                      <div className="ocr-k">Matched WO</div>
+                      <div className={`ocr-v ${notFound ? 'ocr-warn' : ''}`}>{m.project_wo || '—'}</div>
                     </div>
-                    <div className="col pr">
-                      <div className="k">PR</div>
-                      <div className="v">{m.pr || '—'}</div>
+                    <div className="ocr-col ocr-pr">
+                      <div className="ocr-k">PR</div>
+                      <div className="ocr-v">{m.pr || '—'}</div>
                     </div>
-                    <div className="col client">
-                      <div className="k">Client</div>
-                      <div className="v">{m.client || '—'}</div>
+                    <div className="ocr-col ocr-client">
+                      <div className="ocr-k">Client</div>
+                      <div className="ocr-v">{m.client || '—'}</div>
                     </div>
-                    <div className="col project">
-                      <div className="k">Project</div>
-                      <div className="v">{m.project || '—'}</div>
+                    <div className="ocr-col ocr-project">
+                      <div className="ocr-k">Project</div>
+                      <div className="ocr-v">{m.project || '—'}</div>
                     </div>
-                    <div className="col date">
-                      <div className="k">Date</div>
-                      <div className="v">{m.date || '—'}</div>
+                    <div className="ocr-col ocr-date">
+                      <div className="ocr-k">Date</div>
+                      <div className="ocr-v">{m.date || '—'}</div>
                     </div>
                   </div>
                 );
               })}
               {!sortedFilteredMatches.length && (
-                <div className="empty">No results. Adjust filters or try Re-run Lookup.</div>
+                <div className="ocr-empty">No results. Adjust filters or try Re-run Lookup.</div>
               )}
             </div>
           </div>

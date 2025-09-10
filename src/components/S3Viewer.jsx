@@ -105,9 +105,10 @@ export default function S3Viewer() {
     const arr = [...filtered];
     const cmp = (a, b, field) => a[field].localeCompare(b[field]);
     arr.sort((a, b) => {
-      const res = sortBy === "folder" ? cmp(a, b, "folder")
-        : sortBy === "ext" ? cmp(a, b, "ext")
-        : cmp(a, b, "name");
+      const res =
+        sortBy === "folder" ? cmp(a, b, "folder") :
+        sortBy === "ext"    ? cmp(a, b, "ext")    :
+                              cmp(a, b, "name");
       return sortDir === "ASC" ? res : -res;
     });
     return arr;
@@ -189,13 +190,13 @@ export default function S3Viewer() {
   };
 
   return (
-    <div className="s3v-wrap">
-      <div className="s3v-topbar">
-        <div className="s3v-filters">
-          <div className="s3v-search">
-            <FaSearch className="s3v-search-icon" />
+    <div className="s3-viewer-wrap">
+      <div className="s3-viewer-topbar">
+        <div className="s3-viewer-filters">
+          <div className="s3-viewer-search">
+            <FaSearch className="s3-viewer-search-icon" />
             <input
-              className="s3v-input"
+              className="s3-viewer-input"
               placeholder="Search name / key / folder…"
               value={q}
               onChange={(e) => {
@@ -206,7 +207,7 @@ export default function S3Viewer() {
           </div>
 
           <select
-            className="s3v-select"
+            className="s3-viewer-select"
             value={folder}
             onChange={(e) => {
               setFolder(e.target.value);
@@ -220,7 +221,7 @@ export default function S3Viewer() {
           </select>
 
           <select
-            className="s3v-select"
+            className="s3-viewer-select"
             value={ext}
             onChange={(e) => {
               setExt(e.target.value);
@@ -233,16 +234,16 @@ export default function S3Viewer() {
             ))}
           </select>
 
-          <button className="s3v-btn" onClick={resetFilters}>Reset</button>
+          <button className="s3-viewer-btn" onClick={resetFilters}>Reset</button>
         </div>
 
-        <div className="s3v-meta">
+        <div className="s3-viewer-meta">
           <span>{total} files</span>
-          <button className="s3v-btn" onClick={fetchFiles} title="Refresh">
-            <FaSync className="s3v-ic" /> Refresh
+          <button className="s3-viewer-btn" onClick={fetchFiles} title="Refresh">
+            <FaSync className="s3-viewer-ic" /> Refresh
           </button>
           <select
-            className="s3v-select"
+            className="s3-viewer-select"
             value={pageSize}
             onChange={(e) => {
               setPageSize(Number(e.target.value));
@@ -256,8 +257,8 @@ export default function S3Viewer() {
         </div>
       </div>
 
-      <div className="s3v-actions">
-        <label className="s3v-checkrow">
+      <div className="s3-viewer-actions">
+        <label className="s3-viewer-checkrow">
           <input
             type="checkbox"
             checked={paged.every((f) => selected.has(f.key)) && paged.length > 0}
@@ -265,48 +266,48 @@ export default function S3Viewer() {
           />
           <span>Select page</span>
         </label>
-        <button className="s3v-btn" onClick={bulkCopy} disabled={selected.size === 0}>
-          <FaCopy className="s3v-ic" /> Copy URLs
+        <button className="s3-viewer-btn" onClick={bulkCopy} disabled={selected.size === 0}>
+          <FaCopy className="s3-viewer-ic" /> Copy URLs
         </button>
-        <button className="s3v-btn" onClick={bulkOpen} disabled={selected.size === 0}>
-          <FaExternalLinkAlt className="s3v-ic" /> Open (max 10)
+        <button className="s3-viewer-btn" onClick={bulkOpen} disabled={selected.size === 0}>
+          <FaExternalLinkAlt className="s3-viewer-ic" /> Open (max 10)
         </button>
         {selected.size > 0 && (
-          <button className="s3v-btn s3v-btn-ghost" onClick={clearAll}>
+          <button className="s3-viewer-btn s3-viewer-btn-ghost" onClick={clearAll}>
             Clear ({selected.size})
           </button>
         )}
-        {copiedKey === "@bulk" && <span className="s3v-copied">Copied!</span>}
+        {copiedKey === "@bulk" && <span className="s3-viewer-copied">Copied!</span>}
       </div>
 
-      <div className="s3v-table-wrap">
+      <div className="s3-viewer-table-wrap">
         {loading ? (
-          <div className="s3v-empty">Loading…</div>
+          <div className="s3-viewer-empty">Loading…</div>
         ) : error ? (
-          <div className="s3v-empty">{error}</div>
+          <div className="s3-viewer-empty">{error}</div>
         ) : total === 0 ? (
-          <div className="s3v-empty">No files.</div>
+          <div className="s3-viewer-empty">No files.</div>
         ) : (
-          <table className="s3v-table">
+          <table className="s3-viewer-table">
             <thead>
               <tr>
-                <th className="s3v-th s3v-th-check"></th>
-                <th className="s3v-th" onClick={() => toggleSort("name")}>
+                <th className="s3-viewer-th s3-viewer-th-check"></th>
+                <th className="s3-viewer-th" onClick={() => toggleSort("name")}>
                   Name {sortBy === "name" ? (sortDir === "ASC" ? "▲" : "▼") : ""}
                 </th>
-                <th className="s3v-th" onClick={() => toggleSort("folder")}>
+                <th className="s3-viewer-th" onClick={() => toggleSort("folder")}>
                   Folder {sortBy === "folder" ? (sortDir === "ASC" ? "▲" : "▼") : ""}
                 </th>
-                <th className="s3v-th" onClick={() => toggleSort("ext")}>
+                <th className="s3-viewer-th" onClick={() => toggleSort("ext")}>
                   Type {sortBy === "ext" ? (sortDir === "ASC" ? "▲" : "▼") : ""}
                 </th>
-                <th className="s3v-th s3v-th-actions">Actions</th>
+                <th className="s3-viewer-th s3-viewer-th-actions">Actions</th>
               </tr>
             </thead>
             <tbody>
               {paged.map((f) => (
                 <tr key={f.key}>
-                  <td className="s3v-td-check">
+                  <td className="s3-viewer-td-check">
                     <input
                       type="checkbox"
                       checked={selected.has(f.key)}
@@ -314,31 +315,31 @@ export default function S3Viewer() {
                     />
                   </td>
                   <td title={f.key}>
-                    <div className="s3v-name">
-                      <FaFolder className="s3v-ic" />
-                      <span className="s3v-ellipsis">{f.name}</span>
+                    <div className="s3-viewer-name">
+                      <FaFolder className="s3-viewer-ic" />
+                      <span className="s3-viewer-ellipsis">{f.name}</span>
                     </div>
                   </td>
-                  <td className="s3v-ellipsis" title={f.folder}>{f.folder}</td>
-                  <td className="s3v-type">{f.ext ? f.ext.toUpperCase() : "-"}</td>
-                  <td className="s3v-actions-cell">
-                    <button className="s3v-iconbtn" title="Preview" onClick={() => openPreview(f)}>
+                  <td className="s3-viewer-ellipsis" title={f.folder}>{f.folder}</td>
+                  <td className="s3-viewer-type">{f.ext ? f.ext.toUpperCase() : "-"}</td>
+                  <td className="s3-viewer-actions-cell">
+                    <button className="s3-viewer-iconbtn" title="Preview" onClick={() => openPreview(f)}>
                       👁
                     </button>
-                    <a className="s3v-iconbtn" href={f.url} target="_blank" rel="noreferrer" title="Open">
+                    <a className="s3-viewer-iconbtn" href={f.url} target="_blank" rel="noreferrer" title="Open">
                       <FaExternalLinkAlt />
                     </a>
-                    <a className="s3v-iconbtn" href={f.url} download={f.name} title="Download">
+                    <a className="s3-viewer-iconbtn" href={f.url} download={f.name} title="Download">
                       <FaCloudDownloadAlt />
                     </a>
                     <button
-                      className="s3v-iconbtn"
+                      className="s3-viewer-iconbtn"
                       title="Copy URL"
                       onClick={() => copyUrl(f.url, f.key)}
                     >
                       <FaCopy />
                     </button>
-                    {copiedKey === f.key && <span className="s3v-copied-inline">Copied</span>}
+                    {copiedKey === f.key && <span className="s3-viewer-copied-inline">Copied</span>}
                   </td>
                 </tr>
               ))}
@@ -347,30 +348,30 @@ export default function S3Viewer() {
         )}
       </div>
 
-      <div className="s3v-pager">
-        <button className="s3v-btn" onClick={() => setPage(1)} disabled={page === 1}>⏮</button>
-        <button className="s3v-btn" onClick={() => setPage((p) => Math.max(1, p - 1))} disabled={page === 1}>◀</button>
-        <span className="s3v-page">{page} / {totalPages}</span>
-        <button className="s3v-btn" onClick={() => setPage((p) => Math.min(totalPages, p + 1))} disabled={page === totalPages}>▶</button>
-        <button className="s3v-btn" onClick={() => setPage(totalPages)} disabled={page === totalPages}>⏭</button>
+      <div className="s3-viewer-pager">
+        <button className="s3-viewer-btn" onClick={() => setPage(1)} disabled={page === 1}>⏮</button>
+        <button className="s3-viewer-btn" onClick={() => setPage((p) => Math.max(1, p - 1))} disabled={page === 1}>◀</button>
+        <span className="s3-viewer-page">{page} / {totalPages}</span>
+        <button className="s3-viewer-btn" onClick={() => setPage((p) => Math.min(totalPages, p + 1))} disabled={page === totalPages}>▶</button>
+        <button className="s3-viewer-btn" onClick={() => setPage(totalPages)} disabled={page === totalPages}>⏭</button>
       </div>
 
       {previewUrl && (
-        <div className="s3v-modal" onClick={() => setPreviewUrl(null)}>
-          <div className="s3v-modal-card" onClick={(e) => e.stopPropagation()}>
-            <div className="s3v-modal-head">
-              <div className="s3v-title">{previewMeta.name}</div>
-              <button className="s3v-iconbtn" onClick={() => setPreviewUrl(null)} title="Close">
+        <div className="s3-viewer-modal" onClick={() => setPreviewUrl(null)}>
+          <div className="s3-viewer-modal-card" onClick={(e) => e.stopPropagation()}>
+            <div className="s3-viewer-modal-head">
+              <div className="s3-viewer-title">{previewMeta.name}</div>
+              <button className="s3-viewer-iconbtn" onClick={() => setPreviewUrl(null)} title="Close">
                 <FaTimes />
               </button>
             </div>
-            <div className="s3v-modal-body">
+            <div className="s3-viewer-modal-body">
               {previewMeta.ext === "pdf" ? (
-                <iframe className="s3v-frame" src={previewUrl} title="Preview" />
+                <iframe className="s3-viewer-frame" src={previewUrl} title="Preview" />
               ) : isPreviewableImage(previewMeta.ext) ? (
-                <img className="s3v-img" src={previewUrl} alt={previewMeta.name} />
+                <img className="s3-viewer-img" src={previewUrl} alt={previewMeta.name} />
               ) : (
-                <div className="s3v-empty">No inline preview for .{previewMeta.ext}. Use Open/Download.</div>
+                <div className="s3-viewer-empty">No inline preview for .{previewMeta.ext}. Use Open/Download.</div>
               )}
             </div>
           </div>

@@ -27,11 +27,9 @@ const FAVORITES_KEY = "geolabs_favorites_v2";
 const RECENTS_KEY = "geolabs_recents_v2";
 const RECENT_MAX = 8;
 
-// Layout + size prefs
-const LAYOUT_ORDER_KEY = "geolabs_layout_order_v1"; // array of labels in order
-const CARD_SIZES_KEY = "geolabs_card_sizes_v1";     // { [label]: 'n'|'w'|'t'|'b' }
+const LAYOUT_ORDER_KEY = "geolabs_layout_order_v1";
+const CARD_SIZES_KEY = "geolabs_card_sizes_v1";
 
-// 🔗 LinkedIn post (live embed)
 const LINKEDIN_POST_URL =
   "https://www.linkedin.com/posts/geolabs_celebrating-50-years-of-engineering-excellence-activity-7365988140722872320-3Ua8?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD5bZ5gBnaRS5zh8pZj6FBWwJfRKFtKF1gc";
 const getLinkedInEmbedSrc = (url) => {
@@ -42,7 +40,6 @@ const getLinkedInEmbedSrc = (url) => {
   return `https://www.linkedin.com/embed/feed/update/urn:li:activity:${id}`;
 };
 
-// 🐙 GitHub repo: owner/repo
 const GITHUB_OWNER = "Taikiy49";
 const GITHUB_REPO = "Geolabs";
 const GITHUB_REPO_URL = `https://github.com/${GITHUB_OWNER}/${GITHUB_REPO}`;
@@ -63,7 +60,7 @@ const highlightText = (text, searchTerm) => {
     const parts = String(text).split(regex);
     return parts.map((part, index) =>
       regex.test(part) ? (
-        <mark key={index} className="search-highlight">
+        <mark key={index} className="homepage-search-highlight">
           {part}
         </mark>
       ) : (
@@ -131,11 +128,9 @@ export default function HomePage() {
   const [recents, setRecents] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
 
-  // Edit layout
   const [editMode, setEditMode] = useState(false);
   const [draggingId, setDraggingId] = useState(null);
 
-  // default order: labels in homepageCards order
   const defaultOrder = useMemo(() => homepageCards.map((c) => c.label), []);
   const [layoutOrder, setLayoutOrder] = useState(() => {
     try {
@@ -145,7 +140,6 @@ export default function HomePage() {
     return defaultOrder;
   });
 
-  // per-card sizes
   const [cardSizes, setCardSizes] = useState(() => {
     try {
       const saved = JSON.parse(localStorage.getItem(CARD_SIZES_KEY) || "{}");
@@ -156,7 +150,6 @@ export default function HomePage() {
 
   const pageRef = useRef(null);
 
-  // Demo metrics (replace with real)
   const demoMetrics = useMemo(
     () => ({
       docsIndexed: 12890,
@@ -168,7 +161,6 @@ export default function HomePage() {
   );
   const weeklyDocs = useMemo(() => [8, 12, 10, 14, 9, 15, 13], []);
 
-  // GitHub repo state
   const [ghLoading, setGhLoading] = useState(true);
   const [ghError, setGhError] = useState("");
   const [repo, setRepo] = useState(null);
@@ -177,7 +169,6 @@ export default function HomePage() {
   const [languages, setLanguages] = useState({});
   const [latestRelease, setLatestRelease] = useState(null);
 
-  // Load saved data
   useEffect(() => {
     try {
       const savedFavorites = JSON.parse(localStorage.getItem(FAVORITES_KEY) || "[]");
@@ -192,13 +183,11 @@ export default function HomePage() {
     }
   }, []);
 
-  // Update search params
   useEffect(() => {
     if (searchQuery) setSearchParams({ search: searchQuery });
     else setSearchParams({});
   }, [searchQuery, setSearchParams]);
 
-  // Persist layout & sizes
   useEffect(() => {
     try {
       localStorage.setItem(LAYOUT_ORDER_KEY, JSON.stringify(layoutOrder));
@@ -210,70 +199,6 @@ export default function HomePage() {
     } catch {}
   }, [cardSizes]);
 
-  // Fetch GitHub repo data
-  useEffect(() => {
-    let active = true;
-    (async () => {
-      try {
-        setGhLoading(true);
-        setGhError("");
-
-        const base = `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}`;
-        const [rRes, cRes, pRes, lRes, relRes] = await Promise.all([
-          fetch(base),
-          fetch(`${base}/commits?per_page=6`),
-          fetch(`${base}/pulls?state=open&per_page=6`),
-          fetch(`${base}/languages`),
-          fetch(`${base}/releases/latest`), // may 404 if no releases
-        ]);
-
-        if (!rRes.ok) throw new Error("Repo not found");
-        const repoJson = await rRes.json();
-        const commitsJson = cRes.ok ? await cRes.json() : [];
-        const pullsJson = pRes.ok ? await pRes.json() : [];
-        const langsJson = lRes.ok ? await lRes.json() : {};
-        let releaseJson = null;
-        if (relRes.ok) {
-          try { releaseJson = await relRes.json(); } catch {}
-        }
-
-        if (!active) return;
-        setRepo(repoJson);
-        setCommits(
-          (commitsJson || []).map((c) => ({
-            sha: c.sha,
-            url: c.html_url,
-            msg: c.commit?.message?.split("\n")[0] || "(no message)",
-            author:
-              c.author?.login ||
-              c.commit?.author?.name ||
-              c.commit?.committer?.name ||
-              "unknown",
-            date: c.commit?.author?.date || c.commit?.committer?.date,
-          }))
-        );
-        setPulls(
-          (pullsJson || []).map((p) => ({
-            number: p.number,
-            title: p.title,
-            url: p.html_url,
-            user: p.user?.login,
-            date: p.updated_at || p.created_at,
-          }))
-        );
-        setLanguages(langsJson || {});
-        setLatestRelease(releaseJson);
-      } catch (e) {
-        if (!active) return;
-        setGhError("Couldn’t load GitHub data.");
-      } finally {
-        if (active) setGhLoading(false);
-      }
-    })();
-    return () => {
-      active = false;
-    };
-  }, []);
 
   const saveFavorites = (newFavorites) => {
     setFavorites(newFavorites);
@@ -314,10 +239,7 @@ export default function HomePage() {
       parent: metadata.parent.label,
       timestamp: Date.now(),
     };
-    const updated = deduplicateByKey([entry, ...recents], (item) => item.path).slice(
-      0,
-      RECENT_MAX
-    );
+    const updated = deduplicateByKey([entry, ...recents], (item) => item.path).slice(0, RECENT_MAX);
     saveRecents(updated);
   };
   const handleNavigation = (path, disabled = false) => {
@@ -341,7 +263,6 @@ export default function HomePage() {
     }
   };
 
-  // Filter + search
   const filteredCards = useMemo(() => {
     const term = searchQuery.trim();
     return homepageCards
@@ -368,7 +289,6 @@ export default function HomePage() {
       .filter(Boolean);
   }, [searchQuery]);
 
-  // Apply saved order
   const orderedCards = useMemo(() => {
     const indexOf = (label) => {
       const idx = layoutOrder.indexOf(label);
@@ -377,20 +297,18 @@ export default function HomePage() {
     return [...filteredCards].sort((a, b) => indexOf(a.label) - indexOf(b.label));
   }, [filteredCards, layoutOrder]);
 
-  // Reveal on scroll
   useEffect(() => {
     const root = pageRef.current;
     if (!root) return;
-    const items = root.querySelectorAll(".animate-on-scroll");
+    const items = root.querySelectorAll(".homepage-animate-on-scroll");
     const io = new IntersectionObserver(
-      (entries) => entries.forEach((e) => e.isIntersecting && e.target.classList.add("visible")),
+      (entries) => entries.forEach((e) => e.isIntersecting && e.target.classList.add("homepage-visible")),
       { threshold: 0.08 }
     );
     items.forEach((el) => io.observe(el));
     return () => io.disconnect();
   }, [filteredCards]);
 
-  // Drag helpers
   const reorder = (arr, fromLabel, toLabel) => {
     if (fromLabel === toLabel) return arr;
     const next = [...arr];
@@ -405,10 +323,10 @@ export default function HomePage() {
     setDraggingId(label);
     e.dataTransfer.effectAllowed = "move";
     e.dataTransfer.setData("text/plain", label);
-    e.currentTarget.classList.add("is-dragging");
+    e.currentTarget.classList.add("homepage-is-dragging");
   };
   const onCardDragEnd = (e) => {
-    e.currentTarget.classList.remove("is-dragging");
+    e.currentTarget.classList.remove("homepage-is-dragging");
     setDraggingId(null);
   };
   const onCardDragOver = (overLabel) => (e) => {
@@ -434,8 +352,8 @@ export default function HomePage() {
     return (
       <div className="homepage">
         <div className="homepage-loading">
-          <div className="loading-spinner" />
-          <div className="loading-text">Loading dashboard…</div>
+          <div className="homepage-loading-spinner" />
+          <div className="homepage-loading-text">Loading dashboard…</div>
         </div>
       </div>
     );
@@ -443,18 +361,18 @@ export default function HomePage() {
 
   return (
     <div className="homepage" ref={pageRef}>
-      <div className="homepage-container compact">
+      <div className="homepage-container homepage-compact">
         {/* Hero */}
-        <section className="homepage-hero compact visible">
-          <div className="hero-greeting">
-            <h1 className="hero-title">
+        <section className="homepage-hero homepage-compact homepage-visible">
+          <div className="homepage-hero-greeting">
+            <h1 className="homepage-hero-title">
               {timeOfDay()}, {firstName}
             </h1>
-            <p className="hero-subtitle">
+            <p className="homepage-hero-subtitle">
               Your geotechnical data platform — fast, consistent, and organized
             </p>
-            <div className="hero-meta">
-              <div className="hero-meta-item">
+            <div className="homepage-hero-meta">
+              <div className="homepage-hero-meta-item">
                 <FaCalendarAlt />
                 <span>
                   {currentTime.toLocaleDateString("en-US", {
@@ -465,26 +383,26 @@ export default function HomePage() {
                   })}
                 </span>
               </div>
-              <div className="hero-meta-item">
+              <div className="homepage-hero-meta-item">
                 <span>Geolabs Team</span>
               </div>
-              <div className="hero-meta-item">
+              <div className="homepage-hero-meta-item">
                 <FaChartLine />
                 <span>Analytics Ready</span>
               </div>
             </div>
 
             {/* Edit layout controls */}
-            <div className="hero-actions">
+            <div className="homepage-hero-actions">
               <button
-                className={`btn-edit ${editMode ? "on" : ""}`}
+                className={`homepage-btn-edit ${editMode ? "homepage-on" : ""}`}
                 onClick={() => setEditMode((v) => !v)}
                 title="Reorder and resize cards"
               >
                 {editMode ? "Done editing" : "Edit layout"}
               </button>
               {editMode && (
-                <button className="btn-reset" onClick={resetLayout} title="Reset order & sizes">
+                <button className="homepage-btn-reset" onClick={resetLayout} title="Reset order & sizes">
                   Reset
                 </button>
               )}
@@ -492,67 +410,64 @@ export default function HomePage() {
           </div>
         </section>
 
-    
-
         {/* KPIs */}
-        <section className="kpi-grid animate-on-scroll visible">
-          <div className="kpi-card">
-            <div className="kpi-icon">
+        <section className="homepage-kpi-grid homepage-animate-on-scroll homepage-visible">
+          <div className="homepage-kpi-card">
+            <div className="homepage-kpi-icon">
               <FaFolderOpen />
             </div>
-            <div className="kpi-meta">
-              <div className="kpi-label">Documents Indexed</div>
-              <div className="kpi-value">{demoMetrics.docsIndexed.toLocaleString()}</div>
+            <div className="homepage-kpi-meta">
+              <div className="homepage-kpi-label">Documents Indexed</div>
+              <div className="homepage-kpi-value">{demoMetrics.docsIndexed.toLocaleString()}</div>
             </div>
-            <div className="kpi-trend">
-              <div className="kpi-bars">
+            <div className="homepage-kpi-trend">
+              <div className="homepage-kpi-bars">
                 {weeklyDocs.map((v, i) => (
                   <span key={i} style={{ height: `${6 + v * 3}px` }} />
                 ))}
               </div>
-              <div className="kpi-hint">last 7 days</div>
+              <div className="homepage-kpi-hint">last 7 days</div>
             </div>
           </div>
-          <div className="kpi-card">
-            <div className="kpi-icon">
+          <div className="homepage-kpi-card">
+            <div className="homepage-kpi-icon">
               <FaBoxOpen />
             </div>
-            <div className="kpi-meta">
-              <div className="kpi-label">Core Boxes</div>
-              <div className="kpi-value">{demoMetrics.coreBoxes.toLocaleString()}</div>
+            <div className="homepage-kpi-meta">
+              <div className="homepage-kpi-label">Core Boxes</div>
+              <div className="homepage-kpi-value">{demoMetrics.coreBoxes.toLocaleString()}</div>
             </div>
-            <div className="kpi-pill">Inventory</div>
+            <div className="homepage-kpi-pill">Inventory</div>
           </div>
-          <div className="kpi-card">
-            <div className="kpi-icon">
+          <div className="homepage-kpi-card">
+            <div className="homepage-kpi-icon">
               <FaRobot />
             </div>
-            <div className="kpi-meta">
-              <div className="kpi-label">AI Answers (wk)</div>
-              <div className="kpi-value">{demoMetrics.aiAnswersThisWeek}</div>
+            <div className="homepage-kpi-meta">
+              <div className="homepage-kpi-label">AI Answers (wk)</div>
+              <div className="homepage-kpi-value">{demoMetrics.aiAnswersThisWeek}</div>
             </div>
-            <div className="kpi-pill kpi-pill--glow">↑ healthy</div>
+            <div className="homepage-kpi-pill homepage-kpi-pill--glow">↑ healthy</div>
           </div>
-          <div className="kpi-card">
-            <div className="kpi-icon">
+          <div className="homepage-kpi-card">
+            <div className="homepage-kpi-icon">
               <FaCheckCircle />
             </div>
-            <div className="kpi-meta">
-              <div className="kpi-label">Open Tasks</div>
-              <div className="kpi-value">{demoMetrics.openTasks}</div>
+            <div className="homepage-kpi-meta">
+              <div className="homepage-kpi-label">Open Tasks</div>
+              <div className="homepage-kpi-value">{demoMetrics.openTasks}</div>
             </div>
-            <div className="kpi-pill kpi-pill--warn">priority</div>
+            <div className="homepage-kpi-pill homepage-kpi-pill--warn">priority</div>
           </div>
         </section>
 
-
         {/* Search */}
-        <section className="homepage-search compact animate-on-scroll">
-          <div className="search-container-lg">
-            <FaSearch className="search-icon-lg" />
+        <section className="homepage-search homepage-compact homepage-animate-on-scroll">
+          <div className="homepage-search-container-lg">
+            <FaSearch className="homepage-search-icon-lg" />
             <input
               type="text"
-              className="search-input-lg"
+              className="homepage-search-input-lg"
               placeholder="Search tools, documents, and features…"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
@@ -560,79 +475,76 @@ export default function HomePage() {
           </div>
         </section>
 
-    
-
         {/* Quick Access */}
-{(favorites.length > 0 || recents.length > 0) && (
-  <section className="quick-access compact visible">
-    {favorites.length > 0 && (
-      <div className="qa-section">
-        <h2 className="qa-title">
-          <FaStar />
-          Favorites
-        </h2>
-        <div className="qa-grid">
-          {favorites.slice(0, 6).map((favorite) => {
-            const metadata = findSubpageByPath(homepageCards, favorite.path);
-            if (!metadata) return null;
-            return (
-              <button
-                key={favorite.path}
-                className="qa-item"
-                onClick={() => handleNavigation(favorite.path)}
-                title={`${favorite.parent} → ${favorite.name}`}
-              >
-                <div className="qa-icon">{metadata.subpage.icon}</div>
-                <div className="qa-content">
-                  <div className="qa-name">{favorite.name}</div>
-                  <div className="qa-desc">{favorite.parent}</div>
+        {(favorites.length > 0 || recents.length > 0) && (
+          <section className="homepage-quick-access homepage-compact homepage-visible">
+            {favorites.length > 0 && (
+              <div className="homepage-qa-section">
+                <h2 className="homepage-qa-title">
+                  <FaStar />
+                  Favorites
+                </h2>
+                <div className="homepage-qa-grid">
+                  {favorites.slice(0, 6).map((favorite) => {
+                    const metadata = findSubpageByPath(homepageCards, favorite.path);
+                    if (!metadata) return null;
+                    return (
+                      <button
+                        key={favorite.path}
+                        className="homepage-qa-item"
+                        onClick={() => handleNavigation(favorite.path)}
+                        title={`${metadata.parent.label} → ${favorite.name}`}
+                      >
+                        <div className="homepage-qa-icon">{metadata.subpage.icon}</div>
+                        <div className="homepage-qa-content">
+                          <div className="homepage-qa-name">{favorite.name}</div>
+                          <div className="homepage-qa-desc">{metadata.parent.label}</div>
+                        </div>
+                      </button>
+                    );
+                  })}
                 </div>
-              </button>
-            );
-          })}
-        </div>
-      </div>
-    )}
+              </div>
+            )}
 
-    {recents.length > 0 && (
-      <div className="qa-section">
-        <h2 className="qa-title">
-          <FaClock />
-          Recently Used
-        </h2>
-        <div className="qa-grid">
-          {recents.slice(0, 6).map((recent) => {
-            const metadata = findSubpageByPath(homepageCards, recent.path);
-            if (!metadata) return null;
-            return (
-              <button
-                key={recent.path}
-                className="qa-item"
-                onClick={() => handleNavigation(recent.path)}
-                title={`${recent.parent} → ${recent.name}`}
-              >
-                <div className="qa-icon">{metadata.subpage.icon}</div>
-                <div className="qa-content">
-                  <div className="qa-name">{recent.name}</div>
-                  <div className="qa-desc">{recent.parent}</div>
+            {recents.length > 0 && (
+              <div className="homepage-qa-section">
+                <h2 className="homepage-qa-title">
+                  <FaClock />
+                  Recently Used
+                </h2>
+                <div className="homepage-qa-grid">
+                  {recents.slice(0, 6).map((recent) => {
+                    const metadata = findSubpageByPath(homepageCards, recent.path);
+                    if (!metadata) return null;
+                    return (
+                      <button
+                        key={recent.path}
+                        className="homepage-qa-item"
+                        onClick={() => handleNavigation(recent.path)}
+                        title={`${metadata.parent.label} → ${recent.name}`}
+                      >
+                        <div className="homepage-qa-icon">{metadata.subpage.icon}</div>
+                        <div className="homepage-qa-content">
+                          <div className="homepage-qa-name">{recent.name}</div>
+                          <div className="homepage-qa-desc">{metadata.parent.label}</div>
+                        </div>
+                      </button>
+                    );
+                  })}
                 </div>
-              </button>
-            );
-          })}
-        </div>
-      </div>
-    )}
-  </section>
-)}
+              </div>
+            )}
+          </section>
+        )}
 
-
-        {/* Categories (draggable + resizable in Edit mode) */}
-        <section className="categories-grid compact">
+        {/* Categories */}
+        <section className="homepage-categories-grid homepage-compact">
           {orderedCards.map((card, index) => {
             const size = cardSizes[card.label] || "n";
             const sizeClass =
-              size === "w" ? "size-wide" : size === "t" ? "size-tall" : size === "b" ? "size-big" : "";
-            const editableClass = editMode ? "editable" : "";
+              size === "w" ? "homepage-size-wide" : size === "t" ? "homepage-size-tall" : size === "b" ? "homepage-size-big" : "";
+            const editableClass = editMode ? "homepage-editable" : "";
 
             const go = () => {
               if (editMode) return;
@@ -643,8 +555,8 @@ export default function HomePage() {
               <article
                 key={card.label}
                 data-id={card.label}
-                className={`category-card animate-on-scroll ${sizeClass} ${editableClass} ${
-                  card.disabled ? "disabled" : ""
+                className={`homepage-category-card homepage-animate-on-scroll ${sizeClass} ${editableClass} ${
+                  card.disabled ? "homepage-disabled" : ""
                 }`}
                 style={{
                   animationDelay: `${index * 70}ms`,
@@ -659,12 +571,12 @@ export default function HomePage() {
                 onDrop={(e) => e.preventDefault()}
               >
                 {editMode && (
-                  <div className="card-tools">
-                    <span className="drag-handle" title="Drag to reorder">
+                  <div className="homepage-card-tools">
+                    <span className="homepage-drag-handle" title="Drag to reorder">
                       <FaGripLines />
                     </span>
                     <button
-                      className="size-btn"
+                      className="homepage-size-btn"
                       title="Resize (normal → wide → tall → big)"
                       onClick={(e) => {
                         e.stopPropagation();
@@ -676,20 +588,20 @@ export default function HomePage() {
                   </div>
                 )}
 
-                <div className="category-header">
-                  <div className="category-icon">{card.icon}</div>
-                  <div className="category-content">
-                    <h3 className="category-title">
+                <div className="homepage-category-header">
+                  <div className="homepage-category-icon">{card.icon}</div>
+                  <div className="homepage-category-content">
+                    <h3 className="homepage-category-title">
                       {highlightText(card.label, searchQuery)}
-                      {card.tag && <span className="category-badge">{card.tag}</span>}
+                      {card.tag && <span className="homepage-category-badge">{card.tag}</span>}
                     </h3>
                     {card.sublabel && (
-                      <p className="category-subtitle">
+                      <p className="homepage-category-subtitle">
                         {highlightText(card.sublabel, searchQuery)}
                       </p>
                     )}
                     {card.description && (
-                      <p className="category-description">
+                      <p className="homepage-category-description">
                         {highlightText(card.description, searchQuery)}
                       </p>
                     )}
@@ -697,32 +609,32 @@ export default function HomePage() {
                 </div>
 
                 {card.subpages && card.subpages.length > 0 && (
-                  <div className="subpages-grid" onClick={(e) => e.stopPropagation()}>
+                  <div className="homepage-subpages-grid" onClick={(e) => e.stopPropagation()}>
                     {card.subpages.map((subpage, subIndex) => (
                       <div
                         key={subIndex}
-                        className="subpage-item"
+                        className="homepage-subpage-item"
                         onClick={() => handleNavigation(subpage.path, subpage.disabled)}
                         style={{
                           opacity: subpage.disabled ? 0.5 : 1,
                           cursor: subpage.disabled ? "not-allowed" : "pointer",
                         }}
                       >
-                        <div className="subpage-header">
-                          <div className="subpage-icon">{subpage.icon}</div>
-                          <div className="subpage-name">
+                        <div className="homepage-subpage-header">
+                          <div className="homepage-subpage-icon">{subpage.icon}</div>
+                          <div className="homepage-subpage-name">
                             {highlightText(subpage.name, searchQuery)}
                           </div>
                         </div>
                         {subpage.description && (
-                          <p className="subpage-description">
+                          <p className="homepage-subpage-description">
                             {highlightText(subpage.description, searchQuery)}
                           </p>
                         )}
 
                         <button
-                          className={`favorite-btn ${
-                            isFavorited(subpage.path) ? "active" : ""
+                          className={`homepage-favorite-btn ${
+                            isFavorited(subpage.path) ? "homepage-active" : ""
                           }`}
                           onClick={(e) => {
                             e.stopPropagation();
@@ -746,19 +658,18 @@ export default function HomePage() {
                   </div>
                 )}
 
-                <div className="category-updated">{getTimeAgo(card.updated)}</div>
+                <div className="homepage-category-updated">{getTimeAgo(card.updated)}</div>
               </article>
             );
           })}
         </section>
-        
 
         {/* Empty State */}
         {orderedCards.length === 0 && searchQuery && (
-          <div className="empty-state animate-on-scroll">
-            <FaSearch className="empty-state-icon" />
-            <h3 className="empty-state-title">No results found</h3>
-            <p className="empty-state-description">
+          <div className="homepage-empty-state homepage-animate-on-scroll">
+            <FaSearch className="homepage-empty-state-icon" />
+            <h3 className="homepage-empty-state-title">No results found</h3>
+            <p className="homepage-empty-state-description">
               Try adjusting your search terms or browse the available categories above.
             </p>
           </div>

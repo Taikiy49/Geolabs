@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useRef, useState } from "react";
+import React, { useEffect, useMemo, useRef, useState, useCallback } from "react";
 import axios from "axios";
 import API_URL from "../config";
 import "../styles/S3Admin.css";
@@ -42,31 +42,34 @@ export default function S3Admin() {
   const [selectedKeys, setSelectedKeys] = useState(new Set());
 
   // ======= Fetchers =======
-  const fetchFiles = async () => {
-    setLoadingList(true);
-    try {
-      const res = await axios.get(`${API_URL}/api/s3/files`);
-      setFiles(res.data.files || []);
-    } catch (e) {
-      console.error("Failed to list S3 files", e);
-      setFiles([]);
-    } finally {
-      setLoadingList(false);
-      setSelectedKeys(new Set());
-    }
-  };
+const fetchFiles = useCallback(async () => {
 
-  const fetchDbs = async () => {
-    try {
-      const res = await axios.get(`${API_URL}/api/list-dbs`);
-      setDbs(res.data.dbs || []);
-      if (!selectedDb && res.data.dbs?.length) setSelectedDb(res.data.dbs[0]);
-    } catch (e) {
-      setDbs([]);
-    }
-  };
+  setLoadingList(true);
+  try {
+    const res = await axios.get(`${API_URL}/api/s3/files`);
+    setFiles(res.data.files || []);
+  } finally {
+    setLoadingList(false);
+    setSelectedKeys(new Set());
+  }
+}, []);
 
-  const fetchHistory = async () => {
+  const fetchDbs = useCallback(async () => {
+  try {
+    const res = await axios.get(`${API_URL}/api/list-dbs`);
+    setDbs(res.data.dbs || []);
+    setSelectedDb(prev => prev || res.data.dbs?.[0] || "");
+  } catch {
+    setDbs([]);
+  }
+}, []);
+
+useEffect(() => {
+  fetchFiles();
+  fetchDbs();
+}, [fetchFiles, fetchDbs]); // ✅ stable
+
+  const fetchHistory = useCallback(async () => {
     try {
       setHistoryLoading(true);
       const res = await axios.get(`${API_URL}/api/upload-history`);
@@ -76,7 +79,7 @@ export default function S3Admin() {
     } finally {
       setHistoryLoading(false);
     }
-  };
+  }, []);
 
   useEffect(() => {
     fetchFiles();

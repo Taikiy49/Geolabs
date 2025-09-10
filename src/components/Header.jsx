@@ -199,7 +199,7 @@ export default function Header() {
         </button>
 
         <Link to="/" className="header-brand header-no-wrap" title="Geolabs, Inc.">
-          <img src="/geolabs_logo.jpg" alt="Geolabs" className="header-logo" />
+          <img src="/transparent_50th.png" alt="Geolabs" className="header-logo" />
           <span className="header-title header-no-wrap">Geolabs,&nbsp;Inc.</span>
         </Link>
 
