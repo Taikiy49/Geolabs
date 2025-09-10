@@ -1,54 +1,20 @@
-/* =========================================================
-   Reports Binder (rb-): Futuristic UI aligned to homepage.css
-   Uses homepage tokens (colors, radii, glows) for a cohesive look
-   ========================================================= */
-
-/* If homepage tokens aren't loaded for some reason, provide safe fallbacks */
-:root{
-  --rb-radius: var(--radius, 12px);
-  --rb-radius-lg: var(--radius-lg, 14px);
-  --rb-gap-1: var(--space-2, 6px);
-  --rb-gap-2: var(--space-3, 8px);
-  --rb-gap-3: var(--space-4, 10px);
-
-  --rb-bg-page: var(--bg-page, linear-gradient(135deg,#0a0f1d,#141d2b,#1d2b3b));
-  --rb-bg-card: var(--bg-card, rgba(17,24,39,.94));
-  --rb-bg-card-2: var(--bg-card-2, rgba(31,41,55,.9));
-  --rb-bg-hover: var(--bg-hover, rgba(0,212,255,.12));
-
-  --rb-text-1: var(--text-primary, #eaf4ff);
-  --rb-text-2: var(--text-secondary, #d9e7f7);
-  --rb-text-3: var(--text-muted, #93a6bf);
-
-  --rb-c1: var(--color-primary, #00d4ff);
-  --rb-c2: var(--color-secondary, #8b5cf6);
-  --rb-c3: var(--color-tertiary, #06ffa5);
-  --rb-ok: var(--color-success, #00ff88);
-  --rb-warn: var(--color-warning, #ffaa00);
-
-  --rb-border: var(--border-color, rgba(59,130,246,.18));
-  --rb-shadow-md: var(--shadow-md, 0 6px 26px rgba(0,0,0,.34), 0 0 15px rgba(59,130,246,.12));
-
-  --rb-fs: var(--font-size-base, 0.88rem);
-  --rb-fs-sm: var(--font-size-sm, 0.80rem);
-  --rb-fs-xs: var(--font-size-xs, 0.70rem);
-}
+/* reports-binder.css
+   Reports Binder (rb-): Futuristic UI using app.css tokens
+   -------------------------------------------------------- */
 
 /* ---------- Layout wrapper ---------- */
 .rb-wrap{
   display:flex; flex-direction:column;
   min-height: 100%;
-  color: var(--rb-text-1);
+  color: var(--text-primary);
   position: relative;
 }
-
 .rb-wrap::before{
   content:"";
   position:absolute; inset:0; z-index:0;
-  background: var(--rb-bg-page);
+  background: var(--bg-page);
   pointer-events:none;
 }
-
 .rb-topbar,
 .rb-health,
 .rb-newrow,
@@ -60,73 +26,69 @@
 /* ---------- Top Bar ---------- */
 .rb-topbar{
   display:flex; align-items:center; justify-content:space-between;
-  gap: var(--rb-gap-2); padding: 10px 12px;
-  background: var(--rb-bg-card);
-  border-bottom: 1px solid var(--rb-border);
+  gap: var(--space-3); padding: var(--space-3) var(--space-4);
+  background: var(--bg-card);
+  border-bottom: 1px solid var(--border-color);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
 }
-
 .rb-filters,
 .rb-meta{
-  display:flex; align-items:center; flex-wrap:wrap; gap: var(--rb-gap-2);
+  display:flex; align-items:center; flex-wrap:wrap; gap: var(--space-3);
 }
 
 /* Inputs / Selects */
 .rb-input,
 .rb-select{
   height: 30px;
-  padding: 0 10px;
+  padding: 0 var(--space-3);
   background: rgba(17,24,39,.92);
-  color: var(--rb-text-1);
-  border: 1px solid var(--rb-border);
-  border-radius: 9px;
-  font-size: var(--rb-fs-sm);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+  border-radius: calc(var(--radius) - 3px);
+  font-size: var(--font-size-sm);
   outline: none;
-  transition: border-color .15s ease, box-shadow .15s ease, background .15s ease;
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast), background var(--transition-fast);
 }
 .rb-input:focus,
 .rb-select:focus{
-  border-color: var(--rb-c1);
+  border-color: var(--color-primary);
   box-shadow: 0 0 0 3px rgba(0,212,255,.18);
   background: rgba(17,24,39,.98);
 }
-.rb-input::placeholder{ color: var(--rb-text-3); }
-.rb-checkbox{ display:inline-flex; align-items:center; gap: 6px; color: var(--rb-text-2); font-size: var(--rb-fs-sm); }
+.rb-input::placeholder{ color: var(--text-muted); }
+.rb-checkbox{ display:inline-flex; align-items:center; gap: var(--space-2); color: var(--text-secondary); font-size: var(--font-size-sm); }
 
 /* Buttons */
 .rb-btn{
   height: 30px;
-  padding: 0 12px;
-  border-radius: 9px;
-  border: 1px solid var(--rb-border);
+  padding: 0 var(--space-4);
+  border-radius: calc(var(--radius) - 3px);
+  border: 1px solid var(--border-color);
   background: rgba(30,41,59,.85);
-  color: var(--rb-text-1);
-  font-size: var(--rb-fs-sm);
+  color: var(--text-primary);
+  font-size: var(--font-size-sm);
   cursor: pointer;
-  transition: transform .12s ease, border-color .12s ease, background .12s ease, box-shadow .12s ease;
+  transition: transform .12s ease, border-color var(--transition-fast), background var(--transition-fast), box-shadow var(--transition-fast);
 }
 .rb-btn:hover{
   transform: translateY(-1px);
-  border-color: var(--rb-c1);
+  border-color: var(--color-primary);
   background: rgba(51,65,85,.9);
   box-shadow: 0 0 12px rgba(0,212,255,.18);
 }
 .rb-btn.danger{ border-color: rgba(255,99,99,.35); color: #ffbcbc; }
 .rb-btn.danger:hover{ border-color: #ff6b6b; }
-
-.rb-btn-ghost{
-  background: transparent;
-}
+.rb-btn-ghost{ background: transparent; }
 
 /* ---------- Status / Health banners ---------- */
 .rb-health{
-  margin: 8px 12px 0;
-  padding: 8px 10px;
-  border-radius: 10px;
-  border: 1px dashed var(--rb-border);
+  margin: var(--space-3) var(--space-4) 0;
+  padding: var(--space-3) var(--space-4);
+  border-radius: var(--radius);
+  border: 1px dashed var(--border-color);
   background: rgba(17,24,39,.6);
-  font-size: var(--rb-fs-sm);
+  font-size: var(--font-size-sm);
 }
 .rb-health-warn{
   border-color: rgba(255,170,0,.45);
@@ -143,108 +105,99 @@
 .rb-newrow{
   display:grid;
   grid-template-columns: repeat(7, minmax(140px, 1fr)) auto auto;
-  gap: var(--rb-gap-2);
-  padding: 10px 12px;
-  background: var(--rb-bg-card);
-  border-top: 1px solid var(--rb-border);
-  border-bottom: 1px solid var(--rb-border);
+  gap: var(--space-3);
+  padding: var(--space-3) var(--space-4);
+  background: var(--bg-card);
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
 }
 .rb-input-inline{
   height: 28px;
-  font-size: var(--rb-fs-sm);
-  padding: 0 8px;
+  font-size: var(--font-size-sm);
+  padding: 0 var(--space-3);
 }
 
 /* ---------- Table ---------- */
 .rb-table-wrap{
   flex: 1 1 auto;
-  overflow: auto;             /* horizontal safety */
-  margin: 10px 12px;
-  background: var(--rb-bg-card);
-  border: 1px solid var(--rb-border);
-  border-radius: var(--rb-radius);
-  box-shadow: var(--rb-shadow-md);
+  overflow: auto;
+  margin: var(--space-4);
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-md);
 }
-
 .rb-table{
   width: 100%;
-  min-width: 780px;           /* ensure columns don’t crush; scroll if needed */
+  min-width: 780px;
   border-collapse: collapse;
-  table-layout: fixed;        /* stable column widths */
-  font-size: var(--rb-fs-sm);
+  table-layout: fixed;
+  font-size: var(--font-size-sm);
 }
-
 .rb-th{
   position: sticky; top: 0; z-index: 2;
   background: linear-gradient(180deg, rgba(30,41,59,.92), rgba(17,24,39,.92));
-  color: var(--rb-text-2);
-  padding: 8px;
+  color: var(--text-secondary);
+  padding: var(--space-3);
   text-align: left;
-  border-bottom: 1px solid var(--rb-border);
+  border-bottom: 1px solid var(--border-color);
   cursor: pointer;
   white-space: nowrap;
   font-weight: 800;
   letter-spacing: .01em;
 }
 .rb-table td{
-  padding: 8px;
+  padding: var(--space-3);
   border-bottom: 1px dashed rgba(120,140,170,.25);
-  color: var(--rb-text-1);
+  color: var(--text-primary);
   vertical-align: middle;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-
 .rb-editing td{
   background: rgba(0,212,255,.05);
   overflow: visible; white-space: normal;
 }
-
-/* monospace helper */
 .rb-mono{ font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
 
 /* row actions */
-.rb-actions{
-  display: inline-flex;
-  gap: 6px;
-  white-space: nowrap;
-}
+.rb-actions{ display: inline-flex; gap: var(--space-2); white-space: nowrap; }
 
 /* icon buttons */
 .rb-iconbtn{
   height: 26px;
-  padding: 0 8px;
-  border-radius: 8px;
-  border: 1px solid var(--rb-border);
+  padding: 0 var(--space-3);
+  border-radius: calc(var(--radius) - 4px);
+  border: 1px solid var(--border-color);
   background: rgba(30,41,59,.8);
-  color: var(--rb-text-1);
-  font-size: 0.86rem;
+  color: var(--text-primary);
+  font-size: .86rem;
   cursor: pointer;
-  transition: transform .12s ease, border-color .12s ease, background .12s ease, box-shadow .12s ease;
+  transition: transform .12s ease, border-color var(--transition-fast), background var(--transition-fast), box-shadow var(--transition-fast);
 }
 .rb-iconbtn:hover{
   transform: translateY(-1px);
-  border-color: var(--rb-c1);
+  border-color: var(--color-primary);
   background: rgba(51,65,85,.9);
   box-shadow: 0 0 10px rgba(0,212,255,.16);
 }
 .rb-iconbtn.danger{ color: #ffbcbc; border-color: rgba(255,99,99,.4); }
 .rb-iconbtn.danger:hover{ border-color: #ff6b6b; }
 
-/* empty state inside table */
+/* empty state */
 .rb-empty{
   text-align: center;
-  color: var(--rb-text-3);
-  padding: 14px 0;
+  color: var(--text-muted);
+  padding: var(--space-4) 0;
 }
 
 /* ---------- Pager ---------- */
 .rb-pager{
-  display:flex; align-items:center; justify-content:center; gap: 8px;
-  padding: 10px 0 14px;
+  display:flex; align-items:center; justify-content:center; gap: var(--space-3);
+  padding: var(--space-4) 0 var(--space-5);
 }
-.rb-page{ color: var(--rb-text-2); font-weight: 700; }
+.rb-page{ color: var(--text-secondary); font-weight: 700; }
 
 /* ---------- Modal ---------- */
 .rb-modal{
@@ -254,33 +207,33 @@
 }
 .rb-modal-card{
   width: 520px; max-width: calc(100vw - 32px);
-  background: var(--rb-bg-card);
-  border: 1px solid var(--rb-border);
-  border-radius: var(--rb-radius);
-  padding: 12px;
-  box-shadow: var(--rb-shadow-md);
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  padding: var(--space-4);
+  box-shadow: var(--shadow-md);
 }
 .rb-modal-title{
   font-weight: 850; letter-spacing: .01em;
-  margin-bottom: 8px; color: var(--rb-text-1);
+  margin-bottom: var(--space-3); color: var(--text-primary);
 }
-.rb-modal-body{ color: var(--rb-text-2); }
-.rb-modal-actions{ display:flex; justify-content:flex-end; gap: 8px; margin-top: 12px; }
+.rb-modal-body{ color: var(--text-secondary); }
+.rb-modal-actions{ display:flex; justify-content:flex-end; gap: var(--space-3); margin-top: var(--space-4); }
 
 /* ---------- Toast ---------- */
 .rb-toast{
   position: fixed; left: 50%; transform: translateX(-50%);
-  bottom: 16px; z-index: 9999;
+  bottom: var(--space-5); z-index: 9999;
   background: rgba(17,24,39,.92);
-  border: 1px solid var(--rb-border);
-  color: var(--rb-text-1);
-  border-radius: 10px;
-  padding: 8px 12px;
-  display: inline-flex; align-items:center; gap: 10px;
-  box-shadow: var(--rb-shadow-md);
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  border-radius: var(--radius);
+  padding: var(--space-3) var(--space-4);
+  display: inline-flex; align-items:center; gap: var(--space-3);
+  box-shadow: var(--shadow-md);
 }
 
-/* ---------- Compact density (optional) ---------- */
+/* ---------- Compact density ---------- */
 body.density-compact .rb-input,
 body.density-compact .rb-select,
 body.density-compact .rb-btn{ height: 28px; }
@@ -288,28 +241,26 @@ body.density-compact .rb-iconbtn{ height: 24px; }
 
 /* ---------- Responsive ---------- */
 @media (max-width: 900px){
-  .rb-topbar{ padding: 10px; gap: 8px; }
+  .rb-topbar{ padding: var(--space-3); gap: var(--space-2); }
   .rb-newrow{ grid-template-columns: repeat(2, minmax(140px, 1fr)); }
-  .rb-table-wrap{ margin: 10px; }
+  .rb-table-wrap{ margin: var(--space-3); }
 }
 
-/* ---------- Focus rings for accessibility ---------- */
+/* ---------- Focus rings ---------- */
 .rb-input:focus-visible,
 .rb-select:focus-visible,
 .rb-btn:focus-visible,
 .rb-iconbtn:focus-visible{
   outline: none;
   box-shadow: 0 0 0 3px rgba(0,212,255,.22), 0 0 18px rgba(0,212,255,.18);
-  border-color: var(--rb-c1);
+  border-color: var(--color-primary);
 }
 
-/* ---------- Header sheen (subtle) ---------- */
-.rb-th{
-  position: sticky;
-}
+/* ---------- Header sheen ---------- */
+.rb-th{ position: sticky; }
 .rb-th::after{
   content:"";
   position:absolute; left:8px; right:8px; top:0; height:1px;
-  background: linear-gradient(90deg, transparent, var(--rb-c1), var(--rb-c2), var(--rb-c1), transparent);
+  background: linear-gradient(90deg, transparent, var(--color-primary), var(--color-secondary), var(--color-primary), transparent);
   opacity:.45;
 }

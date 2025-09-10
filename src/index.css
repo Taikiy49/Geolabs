@@ -33,8 +33,8 @@ overflow-y: auto;
 }
 
 html, body {
-  height: auto;
-  min-height: 100dvh;         /* modern viewport unit = device viewport */
+  height: 100%;
+  margin: 0;        /* modern viewport unit = device viewport */
 }
 
 
