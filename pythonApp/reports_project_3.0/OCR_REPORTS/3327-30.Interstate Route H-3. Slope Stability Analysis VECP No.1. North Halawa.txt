@@ -1,0 +1,313 @@
+i ORIGINAL
+C W ASSOCIATES oy
+GEOLABS HAWATI
+Geotechnical Engineering Geology and Environmental Services
+W O 3327 30
+Mr Martin Miller
+Hawaiian Dredging Construction Company
+P O Box 4088
+Honolulu HI 96812 4088
+Dear Mr Miller
+Slope Stability Analysis
+VECP No 1
+Interstate Route H 3
+North Halawa Valley Highway Unit I
+North Halawa Valley Oahu Hawaii
+In accordance with your request we have performed geotechnical engineering
+analyses to evaluate the slope stability of the new embankment at the above
+referenced site in support of VECP No 1 The following is a summary of our
+engineering analyses performed
+Based on the information provided we understand that it is proposed to utilize
+the on site material to construct the new embankment in lieu of the imported borrow
+material originally required in the plans Due to the height of the new embankment
+and wet environment at the subject site it is desired to perform engineering analysis
+to evaluate the slope stability of the new embankment constructed using on site
+material In order to perform the slope stability analysis laboratory tests were
+performed on remolded samples of the stockpile soils to provide the shear strength
+parameters of the materials Details of the laboratory tests are provided in our letter
+dated The results of the unconsolidated undrained triaxial
+compression tests and direct shear tests performed are summarized in the following
+table
+2006 Kalihi St Honolulu Hawaii 96819
+Facsimile Phone
+wh
+Hawaiian Dredging Construction Company Page 2
+W O 3327 30
+Undrained Drained
+Condition Condition
+os in
+280
+ESiceee ete
+__ Stockpile
+Based on the results of our laboratory tests we believe that undrained shear
+strength parameter of Stockpile No 1 material and drained shear strength parameter
+of Stockpile No 3 material are most critical for our slope stability analysis under
+undrained and drained loading conditions In addition to accommodate the strength
+loss of the material due to creep a 20 percent reduction of the shear strength was
+considered in our analyses The soil strength of the compacted on site material after
+reduction are presented as follows
+Undrained Drained
+Condition Condition
+c c
+Material
+On Site Fill
+Based on the profiles and cross sections for the subject site the cross section
+at appears to be the most critical section for slope stability analyses For
+the stability analyses at the site the idealized soil profile is divided into 3 layers The
+soil parameters of the 3 layers used in the stability analyses are summarized as
+follows
+Undrained Strength Drained Strength
+ain
+eae
+Se Te
+in situ sol
+GEOLABS HAWAII
+Hawaiian Dredging Construction Company Page 3
+W O 3327 30
+The computer program PCSTABL5SM developed at Purdue University was used
+to perform the slope stability analyses The program PCSTABLSM is able to calculate
+slope stability using different methods including simplified Janbu simplified Bishop and
+Spencer s Method of Slices The Simplified Bishop Method was used in this case for
+both undrained and drained conditions Based on our engineering analyses and
+calculations the factor of safety for short term and long term stabilities of the new
+embankment constructed using compacted on site material at Station 484 00 were
+computed to be at least 1 5 as shown below The output files and plots of failure
+circles are attached for reference
+Factor of Safety
+Undrained Condition 1 56
+Drained Condition 1 98
+We appreciate this opportunity to be of service to you If you have questions or
+need additional information please contact our office
+Respectfully submitted
+C W ASSOCIATES INC
+By By
+Hongbo Xue P E Robin M Lim P E
+Project Engineer Vice President
+RML HBX sly
+Attachments Results of Slope Stability Analyses Plates il to 1 9
+GEOLABS HAWAII
+H 3 Unit 00 Undrained Condition Stockpile No 1
+171 88
+137 50
+34 36
+1 558 X Axis ft
+W O 1996 PLATE 1 1
+PCSTABL5M
+by
+Purdue University
+Slope Stability Analysis
+Simplified Janbu Simplified Bishop
+or Spencer s Method of Slices
+Run Date
+Time of Run 19 50
+Run By Max
+Input Data Filename 484a in
+Output Filename 484a out
+Plotted Output
+PROBLEM DESCRIPTION H 3 Unit 00 Undrained
+Condition Stockpile No 1
+BOUNDARY COORDINATES
+7 Top Boundaries
+12 Total Boundaries
+No ft Below Bnd
+ISOTROPIC SOIL PARAMETERS
+3 Type s of Soil
+Soil Total Saturated Cohesion Friction Pore Pressure Piez
+Type Unit Wt Unit Wt Intercept Angle Pressure Constant Surface
+No No
+W O 1996 PLATE 1 2
+0 1
+0 1
+Searching Routine Will Be Limited To An Area Defined By 1 Boundaries
+Of Which The First 0 Boundaries Will Deflect Surfaces Upward
+No ft
+A Critical Failure Surface Searching Method Using A Random
+Technique For Generating Circular Surfaces Has Been Specified
+Janbus Empirical Coef is being used for the case of c phi both 0
+600 Trial Surfaces Have Been Generated
+10 Surfaces Initiate From Each Of 60 Points Equally Spaced
+Along The Ground Surface Between X
+and X
+Each Surface Terminates Between X
+and X
+Unless Further Limitations Were Imposed The Minimum Elevation
+At Which A Surface Extends Is Y 00 ft
+Line Segments Define Each Trial Failure Surface
+Restrictions Have Been Imposed Upon The Angle Of Initiation
+The Angle Has Been Restricted Between The Angles Of 35 0
+And O deg
+Following Are Displayed The Ten Most Critical Of The Trial
+Failure Surfaces Examined They Are Ordered Most Critical
+First
+Safety Factors Are Calculated By The Modified Janbu Method
+Failure Surface Specified By 10 Coordinate Points
+W O 1996 PLATE 1 3
+Point
+No
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+kk
+x 00
+34 38
+A 68 75
+L 137 50
+S 171 88
+206 25
+W O 3327 30
+X Surf Y Surf
+ft ft
+50
+02
+29
+34
+14
+59
+56
+85
+24
+74
+A Xx I Ss F T
+L 4
+eee 07
+2
+1
+738
+O
+cece e cece 10
+gc we wees 520
+gee a veee 514
+832
+dw www ewe 6132
+cee we ee 8691424
+8 311
+we
+a ee 6
+JANUARY 1996 PLATE 1 4
+H 3 Unit 00 Drained Condition Stockpile No 3
+171 88
+137 50
+103 15
+Y Axis
+ft
+66 75
+34 38
+1 97 x Axis Ot
+W O 1996 PLATE 1 5
+PCSTABL5SM
+by
+Purdue University
+Slope Stability Analysis
+Simplified Janbu Simplified Bishop
+or Spencer s Method of Slices
+Run Date
+Time of Run 20 00
+Run By Max
+Input Data Filename 484f in
+Output Filename 484f out
+Plotted Output
+PROBLEM DESCRIPTION H 3 Unit 00 Drained
+Condition Stockpile No 3
+BOUNDARY COORDINATES
+7 Top Boundaries
+12 Total Boundaries
+No ft Below Bnd
+ISOTROPIC SOIL PARAMETERS
+3 Type s of Soil
+Soil Total Saturated Cohesion Friction Pore Pressure Piez
+Type Unit Wt Unit Wt Intercept Angie Pressure Constant Surface
+No No
+0 1
+WO 1996 PLATE 1 6
+Searching Routine Will Be Limited To An Area Defined By 1 Boundaries
+Of Which The First 0 Boundaries Will Deflect Surfaces Upward
+No ft
+A Critical Failure Surface Searching Method Using A Random
+Technique For Generating Circular Surfaces Has Been Specified
+Janbus Empirical Coef is being used for the case of c phi both 0
+500 Trial Surfaces Have Been Generated
+10 Surfaces Initiate From Each Of 50 Points Equally Spaced
+Along The Ground Surface Between X
+and X
+Each Surface Terminates Between X
+and X
+Unless Further Limitations Were Imposed The Minimum Elevation
+At Which A Surface Extends Is Y 0O ft
+Line Segments Define Each Trial Failure Surface
+Restrictions Have Been Imposed Upon The Angle Of Initiation
+The Angle Has Been Restricted Between The Angles Of 35 0
+And O deg
+Following Are Displayed The Ten Most Critical Of The Trial
+Failure Surfaces Examined They Are Ordered Most Critical
+First
+Safety Factors Are Calculated By The Modified Janbu Method
+Failure Surface Specified By 14 Coordinate Points
+Point X Surf Y Surf
+No ft ft
+W O 1996 PLATE 1 7
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+REX
+x 00
+34 38
+A 68 75
+x 103 13
+I 137 50
+Ss 171 88
+W
+50 00
+59 27
+68 98
+78 93
+88 92
+98 75
+108 22
+117 14
+125 33
+132 62
+138 86
+143 94
+147 74
+148 09
+28 00
+24 25
+21 86
+20 86
+21 29
+23 12
+26 34
+30 86
+36 60
+43 45
+51 26
+59 88
+69 12
+70 51
+75
+JANUARY 1996
+103 13
+88
+PLATE 1 8
+206 25
+F 240 63
+T 275 00 L
+W O 1996 PLATE 1 9

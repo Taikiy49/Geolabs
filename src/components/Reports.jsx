@@ -5,29 +5,23 @@ import "../styles/Reports.css";
 import API_URL from "../config";
 
 export default function Reports() {
-  // Resolve base URL: env in dev, prod URL otherwise. Fallback to localhost:5000.
   const BASE = API_URL || "http://localhost:5000";
   const API = `${BASE}/api/reports`;
 
-  // Mode: 'upload' (pick files) or 'folder' (pick a folder)
   const [mode, setMode] = useState("upload");
-
-  // Inputs
   const [uploadFiles, setUploadFiles] = useState([]);
   const [folderFiles, setFolderFiles] = useState([]);
 
-  // Global flags (server uses fixed S3 prefix "reports/")
   const [uploadToS3, setUploadToS3] = useState(true);
   const [replaceIfExists, setReplaceIfExists] = useState(false);
 
-  // UI
   const [busy, setBusy] = useState(false);
   const [steps, setSteps] = useState([]);
   const [stats, setStats] = useState({ files: 0, pages: 0, chunks: 0 });
   const [files, setFiles] = useState([]);
   const [apiUp, setApiUp] = useState(true);
-  const logRef = useRef(null);
 
+  const logRef = useRef(null);
   const fileInputRef = useRef(null);
   const folderInputRef = useRef(null);
 
@@ -45,73 +39,35 @@ export default function Reports() {
     }
   };
 
+  useEffect(() => { refresh(); /* eslint-disable-next-line */ }, []);
+  useEffect(() => { if (logRef.current) logRef.current.scrollTop = logRef.current.scrollHeight; }, [steps]);
   useEffect(() => {
-    refresh();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
-
-  useEffect(() => {
-    if (logRef.current) {
-      logRef.current.scrollTop = logRef.current.scrollHeight;
-    }
-  }, [steps]);
-
-  // Clear inputs when mode changes
-  useEffect(() => {
-    setUploadFiles([]);
-    setFolderFiles([]);
+    setUploadFiles([]); setFolderFiles([]);
     if (fileInputRef.current) fileInputRef.current.value = "";
     if (folderInputRef.current) folderInputRef.current.value = "";
   }, [mode]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setBusy(true);
-    setSteps([]);
+    setBusy(true); setSteps([]);
 
     try {
       const fd = new FormData();
+      let selection = mode === "upload" ? Array.from(uploadFiles || []) : Array.from(folderFiles || []);
+      if (!selection.length) { setSteps(["⚠️ No PDFs selected."]); setBusy(false); return; }
 
-      // Gather files selected by the user
-      let selection = [];
-      if (mode === "upload") {
-        selection = Array.from(uploadFiles || []);
-      } else {
-        selection = Array.from(folderFiles || []);
-      }
+      const pdfs = selection.filter((f) => (f?.name || "").toLowerCase().endsWith(".pdf"));
+      if (!pdfs.length) { setSteps(["⚠️ No PDF files in the selection."]); setBusy(false); return; }
 
-      if (!selection.length) {
-        setSteps(["⚠️ No PDFs selected."]);
-        setBusy(false);
-        return;
-      }
-
-      // Only PDFs
-      const pdfs = selection.filter((f) =>
-        (f?.name || "").toLowerCase().endsWith(".pdf")
-      );
-
-      if (!pdfs.length) {
-        setSteps(["⚠️ No PDF files in the selection."]);
-        setBusy(false);
-        return;
-      }
-
-      pdfs.forEach((f) => fd.append("files", f)); // backend will parse per-file meta from filename
+      pdfs.forEach((f) => fd.append("files", f));
       fd.append("upload_to_s3", String(uploadToS3));
       fd.append("replace_if_exists", String(replaceIfExists));
 
-      const res = await axios.post(`${API}/bulk-index`, fd, {
-        headers: { "Content-Type": "multipart/form-data" },
-      });
-
+      const res = await axios.post(`${API}/bulk-index`, fd, { headers: { "Content-Type": "multipart/form-data" }});
       setSteps(res.data?.steps || ["(no output)"]);
       await refresh();
     } catch (err) {
-      setSteps((prev) => [
-        ...prev,
-        `❌ Error: ${err?.response?.data?.error || err.message}`,
-      ]);
+      setSteps((prev) => [...prev, `❌ Error: ${err?.response?.data?.error || err.message}`]);
       setApiUp(false);
     } finally {
       setBusy(false);
@@ -119,10 +75,10 @@ export default function Reports() {
   };
 
   return (
-    <div className="rep-container">
-      <div className="rep-header">
-        <h1>Reports Indexer</h1>
-        <div className="rep-subtitle">
+    <div className="reports-container">
+      <div className="reports-header">
+        <h1 className="reports-title">Reports Indexer</h1>
+        <div className="reports-subtitle">
           <div>
             <strong>Filename format:</strong>{" "}
             <code>####-##(optionalLetter).ProjectName.pdf</code>
@@ -139,31 +95,31 @@ export default function Reports() {
       </div>
 
       {!apiUp && (
-        <div className="rep-banner warn">
+        <div className="reports-banner reports-warn">
           ⚠️ Couldn’t reach reports API at <code>{BASE}</code>. Check the Flask
           server, CORS/OPTIONS, or your <code>REACT_APP_API_URL</code> setting.
         </div>
       )}
 
       {/* Stats */}
-      <div className="rep-stats">
-        <div className="rep-stat">
-          <div className="rep-stat-num">{stats.files}</div>
-          <div className="rep-stat-label">Files</div>
+      <div className="reports-stats">
+        <div className="reports-stat">
+          <div className="reports-stat-num">{stats.files}</div>
+          <div className="reports-stat-label">Files</div>
         </div>
-        <div className="rep-stat">
-          <div className="rep-stat-num">{stats.pages}</div>
-          <div className="rep-stat-label">Pages</div>
+        <div className="reports-stat">
+          <div className="reports-stat-num">{stats.pages}</div>
+          <div className="reports-stat-label">Pages</div>
         </div>
-        <div className="rep-stat">
-          <div className="rep-stat-num">{stats.chunks}</div>
-          <div className="rep-stat-label">Chunks</div>
+        <div className="reports-stat">
+          <div className="reports-stat-num">{stats.chunks}</div>
+          <div className="reports-stat-label">Chunks</div>
         </div>
       </div>
 
       {/* Global flags */}
-      <div className="rep-row rep-flags">
-        <label className="rep-checkbox">
+      <div className="reports-row reports-flags">
+        <label className="reports-checkbox">
           <input
             type="checkbox"
             checked={uploadToS3}
@@ -171,7 +127,7 @@ export default function Reports() {
           />
           Upload original PDF to S3
         </label>
-        <label className="rep-checkbox">
+        <label className="reports-checkbox">
           <input
             type="checkbox"
             checked={replaceIfExists}
@@ -181,14 +137,14 @@ export default function Reports() {
         </label>
       </div>
 
-      {/* Mode selector */}
-      <div className="rep-form">
-        <div className="rep-section-title">Add Reports</div>
+      {/* Mode selector + inputs */}
+      <div className="reports-form">
+        <div className="reports-section-title">Add Reports</div>
 
-        <div className="rep-row">
-          <label className="rep-label">Mode</label>
+        <div className="reports-row">
+          <label className="reports-label">Mode</label>
           <select
-            className="rep-select"
+            className="reports-select"
             value={mode}
             onChange={(e) => setMode(e.target.value)}
           >
@@ -197,11 +153,11 @@ export default function Reports() {
           </select>
         </div>
 
-        {/* Conditionally render inputs */}
         {mode === "upload" ? (
-          <div className="rep-row">
-            <label className="rep-label">PDFs</label>
+          <div className="reports-row">
+            <label className="reports-label">PDFs</label>
             <input
+              className="reports-input"
               ref={fileInputRef}
               type="file"
               accept="application/pdf"
@@ -210,26 +166,26 @@ export default function Reports() {
             />
           </div>
         ) : (
-          <div className="rep-row">
-            <label className="rep-label">Reports Folder</label>
+          <div className="reports-row">
+            <label className="reports-label">Reports Folder</label>
             <input
+              className="reports-input"
               ref={folderInputRef}
-              type="file"
-              // Folder selection (Chrome/Edge)
               webkitdirectory="true"
               directory="true"
+              type="file"
               multiple
               onChange={(e) => setFolderFiles(e.target.files || [])}
             />
-            <div className="rep-hint">
+            <div className="reports-hint">
               Select a folder; all PDFs inside (and subfolders) will be included.
             </div>
           </div>
         )}
 
-        <div className="rep-actions">
+        <div className="reports-actions">
           <button
-            className="rep-btn"
+            className="reports-btn"
             onClick={handleSubmit}
             disabled={busy}
             type="button"
@@ -240,15 +196,15 @@ export default function Reports() {
       </div>
 
       {/* Panels */}
-      <div className="rep-panels">
-        <div className="rep-panel">
-          <div className="rep-panel-title">Log</div>
-          <div className="rep-log" ref={logRef}>
+      <div className="reports-panels">
+        <div className="reports-panel">
+          <div className="reports-panel-title">Log</div>
+          <div className="reports-log" ref={logRef}>
             {steps.length === 0 ? (
-              <div className="rep-muted">No recent actions.</div>
+              <div className="reports-muted">No recent actions.</div>
             ) : (
               steps.map((s, i) => (
-                <div key={i} className="rep-log-line">
+                <div key={i} className="reports-log-line">
                   {s}
                 </div>
               ))
@@ -256,16 +212,16 @@ export default function Reports() {
           </div>
         </div>
 
-        <div className="rep-panel">
-          <div className="rep-panel-title">Indexed Files</div>
-          <div className="rep-filelist">
+        <div className="reports-panel">
+          <div className="reports-panel-title">Indexed Files</div>
+          <div className="reports-filelist">
             {files.length === 0 ? (
-              <div className="rep-muted">No files indexed yet.</div>
+              <div className="reports-muted">No files indexed yet.</div>
             ) : (
               files.map((f) => (
-                <div key={f.file_id} className="rep-fileitem" title={f.file_name}>
-                  <div className="rep-filetitle">{f.file_name}</div>
-                  <div className="rep-filemeta">
+                <div key={f.file_id} className="reports-fileitem" title={f.file_name}>
+                  <div className="reports-filetitle">{f.file_name}</div>
+                  <div className="reports-filemeta">
                     <span>WO: {f.work_order || "—"}</span>
                     <span>Pages: {f.pages}</span>
                     <span>Chunks: {f.chunks}</span>

@@ -11,11 +11,15 @@ from admin import admin_bp
 from core_box_inventory import corebox_bp
 import boto3
 from reports_binder import reports_binder_bp
+from reports import reports_bp
+from rag_core import rag_bp
 
 app = Flask(__name__)
 app.register_blueprint(reports_binder_bp)
 app.register_blueprint(admin_bp)
 app.register_blueprint(corebox_bp)
+app.register_blueprint(rag_bp)  
+app.register_blueprint(reports_bp)
 CORS(app)
 
 BASE_DIR = os.path.abspath(os.path.dirname(__file__))

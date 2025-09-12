@@ -421,7 +421,7 @@ export default function OCRLookUp() {
               })}
               {!sortedFilteredMatches.length && (
                 <div className="ocr-empty">No results. Adjust filters or try Re-run Lookup.</div>
-              )}
+              )} 
             </div>
           </div>
         </>

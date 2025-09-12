@@ -1,0 +1,3877 @@
+GEOTECHNICAL ENGINEERING EXPLORATION 
+ARFF BURN PIT REPLACEMENT  
+KAHULUI AIRPORT (OGG) 
+KAHULUI, MAUI, HAWAII 
+W.O. 8766-00     MARCH 12, 2024 
+Prepared for 
+ENVIRONMENTAL SCIENCE INTERNATIONAL 
+GEOLABS, INC. 
+Geotechnical Engineering and Drilling Services 
+Geotechnical Engineering Report - 03/12/2023
+GEOTECHNICAL ENGINEERING EXPLORATION 
+ARFF BURN PIT REPLACEMENT 
+KAHULUI AIRPORT (OGG) 
+KAHULUI, MAUI, HAWAII 
+W.O. 8766-00    MARCH 12, 2024 
+Prepared for 
+ENVIRONMENTAL SCIENCE INTERNATIONAL 
+THIS WORK WAS PREPARED BY 
+ME OR UNDER MY SUPERVISION. 
+  4-30-24 
+SIGNATURE 
+ EXPIRATION DATE 
+OF THE LICENSE 
+GEOLABS, INC. 
+Geotechnical Engineering and Drilling Services 
+94-429 Koaki Street, Suite 200 • Waipahu, HI  96797 
+Hawaii • California 
+Geotechnical Engineering Report - 03/12/2023
+GEOLABS, INC. 
+Geotechnical Engineering and Drilling Services 
+94-429 Koaki Street, Suite 200 • Waipahu, Hawaii  96797 
+Telephone: (808) 841-5064  •  E-mail: hawaii@geolabs.net 
+Hawaii • California 
+March 12, 2024 
+W.O. 8766-00 
+Mr. Tod Deery, PMP 
+Environmental Science International 
+354 Uluniu Street, Suite 304 
+Kailua, HI 96734 
+Dear Mr. Deery: 
+Geolabs, Inc. is pleased to submit our report entitled "Geotechnical Engineering 
+Exploration, ARFF Burn Pit Replacement, Kahului Airport (OGG), Kahului, Maui, Hawaii,” 
+prepared in support of the design of the proposed project at Kahului Airport (OGG). 
+Our work was performed in general accordance with the scope of services outlined 
+in our fee proposal dated August 14, 2023. 
+Please note that the soil and rock core samples recovered during our field 
+exploration (remaining after testing) will be stored for a period of two months from the 
+date of this report. The samples will be discarded after that date unless special 
+arrangements are made for a longer sample storage period. Please contact our office for 
+alternative sample storage requirements, if appropriate. 
+Detailed discussion and specific design recommendations are contained in the 
+body of this report. If there are questions regarding the contents of this report, please 
+contact our office. 
+Very truly yours, 
+GEOLABS, INC. 
+       Robin M. Lim, P.E. 
+               President 
+RML:JS:RY:rl
+Geotechnical Engineering Report - 03/12/2023
+W.O. 8766-00 
+GEOLABS, INC. 
+Page i 
+Hawaii • California 
+GEOTECHNICAL ENGINEERING EXPLORATION 
+ARFF BURN PIT REPLACEMENT 
+KAHULUI AIRPORT (OGG) 
+KAHULUI, MAUI, HAWAII  
+W.O. 8766-00     MARCH 12, 2024 
+TABLE OF CONTENTS 
+ .......................................................................................................................... Page 
+SUMMARY OF FINDINGS AND RECOMMENDATIONS .............................................. iii 
+1. 
+GENERAL ............................................................................................................ 1 
+1.1 
+Project Considerations ............................................................................... 1 
+1.2 
+Purpose and Scope ................................................................................... 1 
+2. 
+SITE CHARACTERIZATION ................................................................................ 4 
+2.1 
+Regional Geology ...................................................................................... 4 
+2.2 
+Site Description .......................................................................................... 5 
+2.3 
+Subsurface Conditions ............................................................................... 8 
+2.4 
+Seismic Design Considerations ................................................................. 9 
+2.4.1 Earthquakes and Seismicity ........................................................... 9 
+2.4.2 Liquefaction Potential ................................................................... 10 
+2.4.3 Site Classification ......................................................................... 11 
+3. 
+DISCUSSION AND RECOMMENDATIONS ...................................................... 13 
+3.1 
+Shallow Foundations................................................................................ 14 
+3.2 
+Concrete Slabs-On-Grade ....................................................................... 16 
+3.3 
+Light Pole Foundations ............................................................................ 18 
+3.3.1 Lateral Load Resistance ............................................................... 19 
+3.3.2 Foundation Settlements ............................................................... 20 
+3.3.3 Drilled Shaft Construction Considerations .................................... 20 
+3.4 
+Pavement Design .................................................................................... 22 
+3.4.1 Traffic Mix ..................................................................................... 22 
+3.4.2 Methodology of Pavement Design ................................................ 23 
+3.4.3 Design Subgrade Conditions ........................................................ 23 
+3.4.4 Flexible Pavement Thickness Recommendations ........................ 23 
+3.4.5 Rigid Pavement Thickness Recommendations ............................ 24 
+3.4.6 Pavement Subgrade Preparation ................................................. 25 
+3.4.7 Drainage ....................................................................................... 26 
+3.5 
+Site Grading ............................................................................................. 27 
+3.5.1 Site Preparation ............................................................................ 27 
+3.5.2 Fills and Backfills .......................................................................... 28 
+3.5.3 Fill Placement and Compaction Requirements............................. 29 
+3.5.4 Excavations .................................................................................. 29 
+3.6 
+Utility Trenches ........................................................................................ 30 
+3.7 
+Design Review ......................................................................................... 31 
+3.8 
+Services During Construction .................................................................. 31 
+Geotechnical Engineering Report - 03/12/2023
+TABLE OF CONTENTS 
+Page 
+W.O. 8766-00 
+GEOLABS, INC. 
+Page ii 
+Hawaii • California 
+4. 
+LIMITATIONS ..................................................................................................... 32 
+CLOSURE ..................................................................................................................... 34 
+PLATES 
+Project Location Map ........................................................................................ Plate 1 
+Site Plan ........................................................................................................... Plate 2 
+Field Exploration ............................................................................ Pages A-1 and A-2 
+Soil Log Legend  ......................................................................................... Plate A-0.1 
+Soil Classification Log Key  ......................................................................... Plate A-0.2 
+Rock Log Legend  ....................................................................................... Plate A-0.3 
+Logs of Borings  ............................................................................. Plates A-1 thru A-4 
+Laboratory Tests ........................................................................................... Page B-1 
+Laboratory Test Data  .................................................................. Plates B-1 thru B-15 
+Photographs of Core Samples  ..................................................................... Plate C-1 
+Geotechnical Engineering Report - 03/12/2023
+W.O. 8766-00 
+GEOLABS, INC. 
+Page iii 
+Hawaii • California  
+GEOTECHNICAL ENGINEERING EXPLORATION 
+ARFF BURN PIT REPLACEMENT 
+KAHULUI AIRPORT (OGG) 
+KAHULUI, MAUI, HAWAII 
+W.O. 8766-00     MARCH 12, 2024 
+SUMMARY OF FINDINGS AND RECOMMENDATIONS 
+Our field exploration generally encountered 3 to 4 inches of asphaltic concrete 
+pavement overlying base material, residual soils, beach deposits, and lagoonal deposits 
+overlying alluvium, saprolite and basalt formation extending to the maximum depth 
+explored of about 37.25 feet below the existing ground surface. Groundwater was 
+encountered in the borings at depths ranging from approximately 6.5 to 8.0 feet below the 
+existing ground surface at the time of the field exploration. The measured groundwater 
+levels encountered corresponded to about Elevation +3.5 to +2.2 feet MSL. It should be 
+noted that groundwater levels likely will change due to rainfall, tidal fluctuations, seasonal 
+precipitation, surface runoff, seepage, and other factors considering the proximity of the 
+project site to the Pacific Ocean. 
+Based on the subsurface conditions encountered at the project site in the vicinity 
+of the existing burn pit and control shed, we believe new structures planned for the burn 
+pit, the control shed structure, and above grade utilities may be supported on shallow 
+foundations consisting of spread and/or continuous strip footings bearing on the 
+recompacted on-site soils or new compacted fills. An allowable bearing pressure of up to 
+2,000 psf may be used to design shallow foundations bearing on the recompacted on-site 
+soils or new compacted fills. This bearing value is for supporting dead-plus-live loads and 
+may be increased by one-third (1/3) for transient loads, such as those caused by wind or 
+seismic forces. 
+Based on the potentially liquefiable soil deposits encountered, seismically induced 
+ground settlements on the order of about 2 to 3 inches in the vicinity of the existing burn 
+pit and about 7.5 inches in the vicinity of the existing control shed may be anticipated due 
+to a strong seismic event in the control shed area. If the estimated seismically induced 
+ground settlements are not acceptable, consideration should be given to supporting the 
+proposed structures on a deep foundation system. If required, our office should be 
+contacted for supplemental recommendations for design of a deep foundation system. 
+Based on the structural loads provided and the dimensions of the light pole base 
+plate and anchor bolts, we recommend supporting new light poles on a single 24-inch 
+diameter drilled shaft extending down to a depth of about 25 feet below the ground 
+surface. The drilled shaft foundation would derive vertical support primarily from skin 
+friction between the drilled shaft and the surrounding materials. 
+Based on the estimated design ARFF traffic and the subgrade soil conditions 
+encountered at the site, the new rigid pavement section should consist of 5 inches of PCC 
+Geotechnical Engineering Report - 03/12/2023
+SUMMARY OF FINDINGS AND RECOMMENDATIONS 
+W.O. 8256-00 
+GEOLABS, INC. 
+Page iv 
+Hawaii • California 
+(Item P-501 or State Highways PCCP – Section 411) underlain by 6 inches of base course 
+(Item P-154) placed over a recompacted subgrade. The new flexible pavement section 
+should consist of 4 inches of AC (Item P-401) underlain by 6 inches of base course 
+(Item P-209) placed over a recompacted subgrade. 
+The text of this report should be referred to for detailed discussions and specific 
+design recommendations. 
+END OF SUMMARY OF FINDINGS AND RECOMMENDATIONS 
+Geotechnical Engineering Report - 03/12/2023
+W.O. 8766-00 
+GEOLABS, INC. 
+Page 1 
+Hawaii • California 
+SECTION 1.  GENERAL 
+This report presents the results of our geotechnical engineering exploration 
+performed for the proposed ARFF Burn Pit Replacement project at the Kahului Airport 
+(OGG) in Kahului on the Island of Maui, Hawaii. The project location and general vicinity 
+are shown on the Project Location Map, Plate 1. 
+This report summarizes the findings from our field exploration and laboratory 
+testing and presents our geotechnical recommendations derived from our analyses for 
+design of the proposed project. These recommendations are intended for the design of 
+the burn pit structure and control shed foundations, light pole foundations, earthwork, and 
+utilities only. The findings and recommendations presented herein are subject to the 
+limitations noted at the end of this report. 
+1.1 
+Project Considerations 
+The project site is located at the existing Kahului Airport (OGG) in Kahului on the 
+Island of Maui, Hawaii. Based on the information provided, we understand it is desired to 
+develop construction plans, specifications, and estimates (PS&E) for the replacement of 
+the existing Aircraft Rescue and Fire Fighters (ARFF) burn pit facility located north of and 
+adjacent to Runway 5-23 at OGG. The existing burn pit facility consists of a burn pit 
+structure and support systems consisting of a control shed, fuel tank and pump, fuel/water 
+separator, holding pond, and various underground fuel and water line utilities.  
+1.2 
+Purpose and Scope 
+The purpose of our field exploration was to obtain an overview of the surface and 
+subsurface conditions at the project site to develop a soil and/or rock data set to formulate 
+geotechnical recommendations for design of the replacement burn pit facility, light pole 
+foundations, earthwork, utilities, and pavements. In order to accomplish this scope, we 
+conducted an exploration program consisting of the following tasks and efforts: 
+1. 
+Application for FAA 7460 permits and One–Call utility clearance. 
+2. 
+Coordination of site access and underground utility toning by our engineer 
+and geologist. 
+Geotechnical Engineering Report - 03/12/2023
+SECTION 1. GENERAL 
+W.O. 8766-00 
+GEOLABS, INC. 
+Page 2 
+Hawaii • California 
+3. 
+Application for the required AOA (Airport Operations Area) security 
+clearance badges for our field personnel from the appropriate airport 
+agency. 
+4. 
+Provision of traffic control, including the required safety devices for closures 
+within the AOA. 
+5. 
+Provisions for safety devices including light beacons and safety flags for 
+vehicles during the drilling work. 
+6. 
+Provision of 55-gallon drums to contain the drill spoils and fluids generated 
+from the drilling and sampling operations. The drilled spoils and fluids were 
+drummed and marshalled to a designated staging area of the project site 
+for subsequent screening and disposal of the investigation derived wastes 
+(IDW) by Environmental Science International.  
+7. 
+Mobilization and demobilization of a truck-mounted drill rig and two 
+operators to the project site and back. 
+8. 
+Drilling and sampling of four borings extending to depths of about 22 to 
+37.25 feet below the existing ground surface for a total of approximately 
+117.75 linear feet of field exploration.  
+9. 
+Backfilling of the drilled borings with cement-bentonite grout upon 
+completion of each boring. 
+10. 
+Coordination of the field exploration and logging of the borings by our 
+geologist. 
+11. 
+Geotechnical laboratory testing of selected samples obtained during the 
+field exploration as an aid in classifying the materials and evaluating their 
+engineering properties. 
+12. 
+Analyses of the field and laboratory data to formulate geotechnical 
+recommendations for the design of the project.  
+13. 
+Preparation of this geotechnical engineering report summarizing our work 
+on the project and presenting our findings and recommendations. 
+14. 
+Coordination of our overall work on the project by our engineer. 
+15. 
+Quality assurance of our work and client/design team consultation by our 
+principal engineer. 
+16. 
+Miscellaneous work efforts, such as drafting, word processing, and clerical 
+support. 
+Geotechnical Engineering Report - 03/12/2023
+SECTION 1. GENERAL 
+W.O. 8766-00 
+GEOLABS, INC. 
+Page 3 
+Hawaii • California 
+Detailed descriptions of our field exploration methodology and the Logs of Borings 
+are presented in Appendix A. Results of the laboratory tests performed on selected soil 
+and rock core samples obtained from our field exploration are presented in Appendix B. 
+Photographs of the core samples retrieved from our field exploration are presented in 
+Appendix C. 
+END OF GENERAL 
+Geotechnical Engineering Report - 03/12/2023
+W.O. 8766-00 
+GEOLABS, INC. 
+Page 4 
+Hawaii • California 
+SECTION 2.  SITE CHARACTERIZATION 
+Of interest to our geotechnical engineering analysis are the subsurface materials 
+encountered at the project site, the engineering properties of the materials encountered, 
+and the variability of the subsurface conditions across the project site. Therefore, the 
+following subsections provide a description of the geologic setting of the project site, the 
+surface and subsurface conditions encountered at the site, and a discussion on the items 
+needed for seismic design, such as the seismicity, soil liquefaction, and soil profile 
+characteristics for seismic analysis. 
+2.1 
+Regional Geology 
+The Island of Maui was built by two major volcanoes, the older West Maui (Tertiary 
+Epoch) and the more recent East Maui, also known as Haleakala, (Pleistocene Epoch). 
+The Isthmus of Maui is a narrow, gently sloping plain located between these two 
+volcanoes. The project site is located on the northern portion of this gently sloping plain. 
+The Isthmus of Maui was created by lava flows from Haleakala ponding on and 
+against West Maui. It is comprised of alluvium washed from the slopes of West Maui and 
+East Maui (Haleakala). The erosional processes were dominated by the detachment of 
+soil and rock masses from the mountain walls, and the soil materials were transported 
+downslope toward the Isthmus primarily by gravity as colluvium. Once these materials 
+reached the stream in the central portion of a valley, alluvial processes became dominant, 
+and the sediments were transported and deposited as alluvium. 
+In general, stream flows in Hawaii are intermittent and flashy, such that the stream 
+flows transmit large volumes of water for a very short duration. Because of this situation, 
+the transport of sediments is intermittent, and the bulk of the stream's hydraulic load 
+consists of a poorly-sorted mixture of boulders, cobbles, gravel, sands, and fines. When 
+the erosional base levels change, these sediment loads are left as deposits. 
+When deposits are left in-place for long periods of time, chemical processes begin 
+to alter the materials simultaneously causing a breakdown or weathering of the materials. 
+Chemical processes also cause induration, or cementation, of the coarse-grained portion 
+Geotechnical Engineering Report - 03/12/2023
+SECTION 2. SITE CHARACTERIZATION  
+W.O. 8766-00 
+GEOLABS, INC. 
+Page 5 
+Hawaii • California 
+of the sediment into a poorly-consolidated sedimentary rock or conglomerate. 
+Simultaneously, erosion continues in the areas above the valley floors and upstream in 
+headwaters. This continued erosion generates materials, which are transported 
+downslope covering the older alluvial soil deposits. Depending on the local base level and 
+rate of transport, these newer sediments are generally transient in terms of geologic time. 
+In addition, their consistency and density are generally less than those of the older, 
+partially consolidated deposits.  
+Underlying the alluvial soil deposits are overlapping lava flows from the West Maui 
+and East Maui Volcanoes. The bulk of the Haleakala shield was built during the late 
+Pliocene and early Pleistocene Epoch by thinly bedded basaltic lava flows of the 
+Honomanu Volcanic Series. During the Pleistocene Epoch, the characteristics of the lava 
+changed to very hard, thickly bedded flows of andesitic composition. These lava flows 
+have been grouped as the Kula Volcanic Series. Typically, the basalt rock formation 
+consists of thinly to thickly bedded a’a and pahoehoe type lava flows. Development of 
+areas surrounding Kahului in the past several decades has brought the project site to its 
+present conditions. 
+2.2 
+Site Description 
+The project site is located at the existing Kahului Airport (OGG) in Kahului on the 
+Island of Maui, Hawaii. The project site is approximately bounded by Amala Place to the 
+north, Kahului Airport runway to the south, and existing undeveloped land to the east and 
+west. The project location is shown on the Site Plan, Plate 2. 
+The existing burn pit is circular with a radius of approximately 150 feet and is 
+surrounded by a perimeter concrete curb. Based on our observations, the interior of the 
+burn pit was lined with 1 to 2-inch diameter basalt rock pieces grouted in place. The grout 
+appeared to be deteriorating; therefore, loose rock was observed throughout the burn pit. 
+A large, corrugated metal structure (mock-up aircraft) was observed to be mounted on 
+H-beams supported on shallow foundations. The corrugated metal structure appeared to 
+be corroded and in poor condition with holes observed throughout. A utility corridor 
+covered by a concrete lid was observed connecting the burn pit to the control shed area. 
+Geotechnical Engineering Report - 03/12/2023
+SECTION 2. SITE CHARACTERIZATION  
+W.O. 8766-00 
+GEOLABS, INC. 
+Page 6 
+Hawaii • California 
+Above ground utilities mounted on precast concrete footings were observed at the control 
+shed and holding pond area.  
+Based on our field observations, the project site generally is covered by asphaltic 
+concrete pavement. At the time of our site visit, the existing asphaltic concrete pavement 
+in the vicinity of the burn pit and connecting utility corridor appeared to be in good 
+condition. However, the approximate 6-foot wide asphaltic concrete swale surrounding 
+the burn pit and asphaltic concrete pavement located in the control shed and holding pond 
+areas appeared to be raveling and in poor condition.  
+Based on the available as-built plans provided, the existing ground surface 
+elevations at the project site range from about +10.2 to +11.5 feet Mean Sea Level (MSL). 
+Photographs of the burn pit, utility corridor, control shed, and holding pond are provided 
+in the photographs below.  
+Photograph No. 1 – Existing Burn Pit and Utility Corridor. 
+Geotechnical Engineering Report - 03/12/2023
+SECTION 2. SITE CHARACTERIZATION  
+W.O. 8766-00 
+GEOLABS, INC. 
+Page 7 
+Hawaii • California 
+Photograph No. 2 – Existing Control Shed and Above-Grade Utilities.  
+Photograph No. 3 – Existing Holding Pond.  
+Geotechnical Engineering Report - 03/12/2023
+SECTION 2. SITE CHARACTERIZATION  
+W.O. 8766-00 
+GEOLABS, INC. 
+Page 8 
+Hawaii • California 
+2.3 
+Subsurface Conditions 
+Our field exploration consisted of drilling and sampling four borings, designated as 
+Boring Nos. 1 through 4, extending down to a maximum depth of about 37.25 feet below 
+the existing ground surface. The approximate boring locations are shown on the 
+Site Plan, Plate 2. 
+Based on the results obtained from our field exploration, the project site generally 
+was underlain by 3 to 4 inches of asphaltic concrete overlying base materials consisting 
+of medium dense silty sands and medium stiff to stiff sandy and gravelly silts extending 
+to depths of approximately 0.5 to 1.5 feet below the existing ground surface. The base 
+material was underlain by residual soils extending to depths of about 4.5 to 8.5 feet below 
+the existing ground surface. The residual soils generally consisted of medium dense silty 
+sands and medium stiff to very stiff sandy silts and sandy clays. 
+The residual soils generally were underlain by alternating layers of beach deposits 
+and lagoonal deposits extending to depths of about 22 to 33 feet below the existing 
+ground surface. The beach deposits generally consisted of loose to medium dense silty 
+sands, and the lagoonal deposits generally consisted of very loose to dense silty sands.  
+The beach and lagoonal deposits generally were underlain by alluvium and 
+saprolite in Boring No. 2 at depths between 28 and 37 feet below the existing ground 
+surface and by basalt formation in Boring No. 4 at depths of about 33 feet below the 
+existing ground surface. The alluvial deposits and saprolite generally consisted of soft 
+sandy clays and soft clayey silts, respectively. The basalt formation encountered 
+generally was medium hard and slightly weathered, and the basalt formation extended to 
+the maximum depth explored of about 37.25 feet below the existing ground surface. 
+Groundwater was encountered in the borings at depths ranging from about 6.5 to 
+8.0 feet below the existing ground surface at the time of the field exploration. The 
+groundwater levels encountered corresponded to about Elevation +3.5 to +2.2 feet MSL. 
+It should be noted that groundwater levels are subject to change due to rainfall, tidal 
+fluctuations, seasonal precipitation, surface runoff, seepage, and other factors 
+considering the proximity of the project site to the Pacific Ocean. 
+Geotechnical Engineering Report - 03/12/2023
+SECTION 2. SITE CHARACTERIZATION  
+W.O. 8766-00 
+GEOLABS, INC. 
+Page 9 
+Hawaii • California 
+Detailed descriptions of the field exploration methodology and graphic 
+representations of the materials encountered in the borings are presented on the Logs of 
+Borings in Appendix A. We performed laboratory tests on selected samples obtained 
+during our field exploration, and the test results are presented in Appendix B. 
+Photographs of the core samples retrieved during our field exploration are presented in 
+Appendix C. 
+2.4 
+Seismic Design Considerations 
+Based on the International Building Code, 2018 Edition (IBC 2018), the project site 
+may be subjected to seismic activity, and seismic design considerations will need to be 
+addressed. The following sections provide discussions on the seismicity, soil profile type 
+for seismic design, and the potential for liquefaction at the project site. 
+2.4.1 Earthquakes and Seismicity 
+In general, earthquakes that occur throughout the world are caused by shifts in the 
+tectonic plates. In contrast, earthquake activity in Hawaii is linked primarily to 
+volcanic activity. Therefore, earthquake activity in Hawaii generally occurs before 
+or during volcanic eruptions. In addition, earthquakes may result from the 
+underground movement of magma that comes close to the surface but does not 
+erupt. The Island of Hawaii experiences thousands of earthquakes each year, but 
+most of the earthquakes are so small that they can be detected only by sensitive 
+instruments. However, some of the earthquakes are strong enough to be felt, and 
+a few cause minor to moderate damage. 
+In general, earthquakes associated with volcanic activity are most common on the 
+Island of Hawaii. Earthquakes directly associated with the movement of magma 
+are concentrated beneath the active Kilauea and Mauna Loa Volcanoes on the 
+Island of Hawaii. Because the majority of the earthquakes in Hawaii 
+(over 90 percent) are related to volcanic activity, the risk of seismic activity and 
+degree of ground shaking diminishes with increased distance from the Island of 
+Hawaii. 
+Geotechnical Engineering Report - 03/12/2023
+SECTION 2. SITE CHARACTERIZATION  
+W.O. 8766-00 
+GEOLABS, INC. 
+Page 10 
+Hawaii • California 
+The Island of Hawaii has experienced numerous earthquakes greater than 
+Magnitude 5 (M5+); however, earthquakes are not confined only to the Island of 
+Hawaii. To a lesser degree, the Island of Maui also has experienced earthquakes 
+greater than M5+. Therefore, moderate to strong earthquakes have occurred in 
+the County of Maui. 
+In the last 150 years of recorded history, we are not aware of earthquakes greater 
+than Magnitude 6 that have occurred on the Island of Oahu. An earthquake of 
+Magnitude 4.8 to 5.9 occurred along the Diamond Head Fault in 1948 on the Island 
+of Oahu. The moderate tremor resulted in broken store windows, rupture building 
+walls, and broken underground water mains. 
+2.4.2 Liquefaction Potential 
+Based on the International Building Code (2018 Edition), the project site may be 
+subjected to seismic activity and should be evaluated for potential soil liquefaction. 
+Soil liquefaction is a condition where saturated cohesionless soils near the ground 
+surface undergo a substantial loss of strength due to the build-up of excess pore 
+water pressures resulting from cyclic stress applications induced by earthquakes. 
+In this process, when the loose saturated sand deposit is subjected to vibration 
+(such as during an earthquake), the soil tends to densify and decrease in volume 
+causing an increase in pore water pressure. If drainage is unable to occur rapidly 
+enough to dissipate the build-up of pore water pressure, the effective stress 
+(internal strength) of the soil is reduced. Under sustained vibrations, the pore water 
+pressure build-up could equal the overburden pressure, essentially reducing the 
+soil shear strength to zero and causing it to behave as a viscous fluid. During 
+liquefaction, the soil acquires sufficient mobility to permit both horizontal and 
+vertical movements, and if not confined, will result in significant deformations. 
+Soils most susceptible to liquefaction are loose, uniformly graded, fine-grained 
+sands and loose silts with little cohesion. The major factors affecting the 
+liquefaction characteristics of a soil deposit are as follows: 
+Geotechnical Engineering Report - 03/12/2023
+SECTION 2. SITE CHARACTERIZATION  
+W.O. 8766-00 
+GEOLABS, INC. 
+Page 11 
+Hawaii • California 
+FACTORS 
+LIQUEFACTION SUSCEPTIBILITY 
+Grain Size Distribution 
+Fine and uniform sands and silts are more 
+susceptible to liquefaction than coarse or 
+well-graded sands. 
+Initial Relative Density 
+Loose sands and silts are most susceptible to 
+liquefaction.  Liquefaction potential is inversely 
+proportional to relative density. 
+Magnitude and Duration 
+of Vibration 
+Liquefaction potential is directly proportional to the 
+magnitude and duration of the earthquake. 
+We evaluated the liquefaction potential of the saturated granular soils at the project 
+site using the computer software program LiquefyPro (Version 5.8n) by CivilTech 
+Software. Our analyses were performed on the drilled borings based on a seismic 
+event of Magnitude 6 with an associated peak ground acceleration of 0.45g 
+(corresponding to Site Class “D”). Based on our analysis, the very loose to medium 
+dense lagoonal deposits and beach deposits encountered at the project site 
+generally are susceptible to liquefaction when subjected to a peak ground 
+acceleration of 0.45g associated with a Magnitude 6 earthquake event. 
+In the event of soil liquefaction caused by a peak ground acceleration associated 
+with the Maximum Considered Earthquake (MCE) of 0.45g, the estimated seismic 
+induced ground settlement due to soil liquefaction range from about 2 to 3 inches 
+along the existing burn pit (B-1 thru B-3) and about 7.5 inches in the vicinity of the 
+existing control shed (B-4). The seismically induced settlement estimates are 
+based on the simplified procedures outlined by Tokimatsu and Seed (1987). 
+2.4.3 Site Classification 
+Based on the subsurface materials encountered at the project site, the geologic 
+setting of the area, and the sporadic zones of liquefiable soils, the project may be 
+classified from a seismic analysis standpoint as being a “Stiff Soil” site 
+corresponding to a Site Class D soil profile type based on Table No. 20.3-1 of the 
+American Society of Civil Engineers (ASCE) Minimum Design Loads for Buildings 
+and Other Structures, 2016 Edition (ASCE 7-16), referenced by the International 
+Building Code, 2018 Edition. 
+Geotechnical Engineering Report - 03/12/2023
+SECTION 2. SITE CHARACTERIZATION  
+W.O. 8766-00 
+GEOLABS, INC. 
+Page 12 
+Hawaii • California 
+However, in accordance with Chapter 20, Site Classification Procedure for Seismic 
+Design contained in ASCE 7-16 (Minimum Design Loads for Buildings and Other 
+Structures), a site response analysis is not required to determine the spectral 
+accelerations for liquefiable soils for structures having fundamental periods of 
+vibration equal to or less than 0.5 seconds. Rather, a site class is permitted to be 
+determined in accordance with Section 20.3 and the corresponding values of Fa 
+and Fv determined from Tables 11.4-1 and 11.4-2. Based on Site Class D, the 
+following seismic design parameters were estimated and may be used for seismic 
+analysis of the project.  
+SEISMIC DESIGN PARAMETERS (IBC 2018) 
+Parameter 
+Value 
+MCE Peak Bedrock Acceleration, PBA (Site Class B) 
+0.365g 
+Mapped MCE Spectral Response Acceleration, SS 
+1.000g 
+Mapped MCE Spectral Response Acceleration, S1 
+0.255g 
+Site Class 
+“D” 
+Site Coefficient, FPGA 
+1.235 
+Site Coefficient, Fa 
+1.100 
+Site Coefficient, Fv 
+2.090 
+MCE Peak Ground Acceleration, PGAM (Site Class D) 
+0.451g 
+Design Spectral Response Acceleration, SDS 
+0.733g 
+Design Spectral Response Acceleration, SD1 
+0.355g 
+END OF SITE CHARACTERIZATION 
+Geotechnical Engineering Report - 03/12/2023
+W.O. 8766-00 
+GEOLABS, INC. 
+Page 13 
+Hawaii • California 
+SECTION 3.  DISCUSSION AND RECOMMENDATIONS 
+Our field exploration generally encountered 3 to 4 inches of asphaltic concrete, 
+base material, residual soils, beach deposits, and lagoonal deposits overlying alluvium, 
+saprolite, and basalt formation extending to the maximum depth explored of 
+approximately 37.25 feet below the existing ground surface. The residual soils generally 
+consisted of medium dense silty sands and medium stiff to very stiff sandy silts and sandy 
+clays. The beach deposits generally consisted of loose to medium dense silty sands, and 
+the lagoonal deposits generally consisted of very loose to dense silty sands. The alluvial 
+deposits and saprolite generally consisted of soft sandy clays and soft clayey silts, 
+respectively. The basalt formation encountered generally was medium hard and slightly 
+weathered. 
+Groundwater was encountered in the borings at depths ranging from 
+approximately 6.5 to 8.0 feet below the existing ground surface at the time of the field 
+exploration. The measured groundwater levels encountered corresponded to about 
+Elevation +3.5 to +2.2 feet MSL. It should be noted that groundwater levels likely will 
+change due to rainfall, tidal fluctuations, seasonal precipitation, surface runoff, seepage, 
+and other factors considering the proximity of the project site to the Pacific Ocean. 
+Based on the subsurface conditions encountered at the project site, and the 
+anticipated structural loads, we believe that the structures for the project may be 
+supported on shallow foundations consisting of spread and/or continuous strip footings 
+bearing on the recompacted in-situ soils or new compacted fills. As an alternative, a 
+thickened-edge slab footing bearing on the recompacted in-situ soils or new compacted 
+fills also may be used to support the new structures. 
+Based on the structural loads provided and the dimensions of the light pole base 
+plate and anchor bolts, we recommend supporting each new light pole on a single 24-inch 
+diameter drilled shaft extending down to a depth of about 25 feet below the ground 
+surface. The drilled shaft foundation would derive vertical support primarily from skin 
+friction between the drilled shaft and the surrounding materials. 
+Geotechnical Engineering Report - 03/12/2023
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 8766-00 
+GEOLABS, INC. 
+Page 14 
+Hawaii • California 
+Detailed discussions of our geotechnical recommendations for design of the 
+project are presented in the following sections of this report. 
+3.1 
+Shallow Foundations 
+We understand a new free-standing control shed building, new structures within 
+the burn pit (mock-up aircraft), and above grade utilities will be constructed for the project. 
+Details of the proposed structures and structural loading information were not available 
+at the time this report was prepared. Generally, we anticipate the proposed structures will 
+be similar to the existing structures and should be lightly loaded. 
+Based on the potentially liquefiable soil deposits encountered, seismically induced 
+ground settlements on the order of about 2 to 3 inches may be anticipated in the vicinity 
+of the existing burn pit and up to about 7.5 inches may be experienced in the vicinity of 
+the existing control shed due to a strong seismic event. If the estimated seismically 
+induced ground settlements are not acceptable, consideration should be given to 
+supporting the proposed structures on a deep foundation system. If required, our office 
+should be contacted to provide supplemental geotechnical recommendations for design 
+of a deep foundation system. 
+Based on the subsurface conditions encountered at the project site, we believe 
+that shallow spread and/or continuous strip footings bearing on the recompacted in-situ 
+soils or new compacted fills may be used to support the new control shed facility or above 
+grade utilities. As an alternative, a thickened-edge slab footing bearing on the 
+recompacted in-situ soils or new compacted fills also may be used to support the new 
+building structure. An allowable bearing pressure of up to 2,000 pounds per square foot 
+(psf) may be used for the design of footings bearing on the recompacted in-situ soils 
+and/or new compacted fills needed to achieve the design finished grades. This bearing 
+value is for supporting dead-plus-live loads and may be increased by one-third (1/3) for 
+transient loads, such as those caused by wind or seismic forces. 
+For footings bearing on the recompacted on-site soils and/or new compacted fills, 
+the bottom of the footing excavations should be recompacted to at least 90 percent 
+relative compaction to provide a relatively firm and smooth bearing surface prior to the 
+Geotechnical Engineering Report - 03/12/2023
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 8766-00 
+GEOLABS, INC. 
+Page 15 
+Hawaii • California 
+placement of reinforcing steel and/or concrete. If soft and/or loose materials are 
+encountered at the bottom of the footing excavations, they should be over-excavated to 
+expose the underlying firm materials. The over-excavation may be backfilled with select 
+granular materials, moisture-conditioned to above the optimum moisture content, placed 
+in level lifts not exceeding 8 inches in loose thickness, and compacted to a minimum of 
+90 percent relative compaction, or the bottom of footing may be extended down to bear 
+directly on the underlying competent materials. 
+In general, the bottom of footings should be embedded a minimum of 18 inches 
+below the lowest adjacent finished grade, and footings should have a minimum width of 
+12 inches. Footings located adjacent to slopes or on slopes should be embedded to a 
+sufficient depth to provide a minimum horizontal setback distance of at least 6 feet 
+measured from the outside edge of the footing to the face of the slope. Foundations 
+located next to utility trenches or easements should be embedded below a one horizontal 
+to one vertical (1H:1V) imaginary plane extending upward from the bottom edge of the 
+utility trench, or the footing should be extended to a depth as deep as the inverts of the 
+utility lines. This requirement is necessary to avoid surcharging adjacent below-grade 
+structures with additional structural loads and to reduce the potential for appreciable 
+foundation settlement. 
+If the foundations are designed and constructed as recommended herein, we 
+estimate total settlements of footings supported on the recompacted on-site soils and/or 
+new compacted fills to be about 1 inch or less (under static conditions). Differential 
+settlements between adjacent footings supported on similar materials should be on the 
+order of about 0.5 inches or less. 
+Lateral loads acting on the structure may be resisted by a combination of frictional 
+resistance between the base of the foundation and the bearing materials and by passive 
+earth pressure developed against the near-vertical faces of the embedded portion of the 
+footings. A coefficient of friction of 0.30 may be used for footings bearing on the 
+recompacted on-site soils and/or new compacted fills. Resistance due to passive earth 
+pressure may be estimated using an equivalent fluid pressure of 250 pounds per square 
+foot per foot of depth (pcf). The passive earth pressure value assumes the concrete 
+Geotechnical Engineering Report - 03/12/2023
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 8766-00 
+GEOLABS, INC. 
+Page 16 
+Hawaii • California 
+footings will be cast neat against the competent on-site soils or new compacted fills. 
+Otherwise, the soils around the footings should be well compacted (minimum of 
+90 percent relative compaction). Unless covered by pavements or slabs, the passive 
+pressure resistance in the upper 12 inches below the finished grade should be neglected. 
+A Geolabs representative should observe the footing excavations prior to placing 
+reinforcing steel or concrete to confirm the foundation bearing conditions and the required 
+embedment depths. 
+3.2 
+Concrete Slabs-On-Grade 
+We understand concrete slabs-on-grade may be used for the new control shed 
+building for the project. Our laboratory tests indicate the near-surface clayey and silty soils 
+exhibit a slight shrink/swell potential when subjected to moisture fluctuations. Unless 
+slabs-on-grade constructed above these potentially expansive soils are properly 
+designed, there is a potential for future distress to the lightly loaded slabs-on-grade 
+resulting from shrinking and swelling of the cohesive soils due to changes in the moisture 
+content. 
+To reduce the potential for appreciable structural distress resulting from swelling 
+of the subgrade soils, we recommend properly preparing the subgrade soils prior to fill 
+placement. In addition, we recommend providing a minimum of 12 inches of 
+non-expansive select granular fill below the slab cushion to support the concrete slabs-
+on-grade. The non-expansive, select granular fill (capping layer) also should extend 
+beyond the perimeter of the building a minimum of 24 inches (or extend to the outside 
+edge of the sidewalks or concrete aprons surrounding the building, where provided). 
+Select granular fill should consist of non-expansive granular material such as 
+crushed coralline and/or basaltic materials. The material should be well-graded from 
+coarse to fine with particles no larger than 3 inches in the largest dimension. The material 
+should also contain between 10 and 30 percent fines (particles passing the No. 200 
+sieve). Select granular fill should have a laboratory CBR value of 20 or more and should 
+have a maximum swell of 1 percent of less when tested in accordance with ASTM D1883. 
+Geotechnical Engineering Report - 03/12/2023
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 8766-00 
+GEOLABS, INC. 
+Page 17 
+Hawaii • California 
+Subgrade soils should be scarified to a depth of about 8 inches, moisture-
+conditioned to at least 2 percent above optimum moisture content, and recompacted to 
+at least 90 percent relative compaction. Select granular fill materials should be moisture-
+conditioned to above the optimum moisture, placed in level lifts not exceeding 8 inches in 
+loose thickness, and compacted to a minimum of 90 percent relative compaction. The 
+subgrade soils and the select granular fill should be wetted (if needed) and kept moist 
+until the final placement of slab concrete. Where shrinkage cracks are observed after 
+compaction of the subgrade, we recommend preparing the soils again as recommended 
+above. Saturation and subsequent yielding of the exposed subgrade due to inclement 
+weather and poor drainage may require over-excavation of the soft areas and 
+replacement with well-compacted fill. 
+For interior building slabs, we recommend placing a minimum 4-inch thick layer of 
+cushion fill consisting of open-graded gravel (ASTM C33, No. 67 gradation) below the 
+slabs. The 4-inch gravel cushion is in addition to the 12-inch non-expansive capping layer 
+as recommended above. The open-graded gravel cushion fill would provide uniform 
+support of the slabs and would serve as a capillary moisture break. To reduce the 
+potential for future moisture infiltration through the slab and subsequent damage to floor 
+coverings, an impervious moisture barrier is recommended on top of the gravel cushion 
+fill layer. 
+Exterior flatwork, such as walkways, required for the project should be underlain 
+by a minimum 12-inch thick layer of non-expansive, select granular material or aggregate 
+subbase. The subgrade soils below the flatwork should be scarified to a minimum depth 
+of about 8 inches, moisture-conditioned to at least 2 percent above the optimum content, 
+and recompacted to a minimum of 90 percent relative compaction. The non-expansive, 
+select granular material (or aggregate subbase) should be compacted to a minimum of 
+90 percent relative compaction. To reduce the potential for substantial shrinkage cracks 
+developing in the slabs, control joints should be provided at intervals equal to the width 
+of the walkways with expansion joints at right-angle intersections. It should be 
+emphasized that the areas adjacent to the walkway should be backfilled tightly against 
+the slab edges with low expansion, relatively impervious soils. These areas also should 
+Geotechnical Engineering Report - 03/12/2023
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 8766-00 
+GEOLABS, INC. 
+Page 18 
+Hawaii • California 
+be graded to divert water away from the slabs and to reduce the potential for excessive 
+water ponding around the slabs and foundations. 
+3.3 
+Light Pole Foundations 
+We understand a new light pole will be installed for the project. Based on the 
+subsurface conditions encountered in our field exploration and our analyses, the 
+foundation for the new light pole at the ARFF Burn Pit facility should consist of a single 
+drilled shaft extending down to a depth of about 25 feet below the existing ground surface. 
+In general, drilled shaft foundations are constructed by drilling a hole down into the 
+bearing strata, placing reinforcing steel, and then pumping high slump concrete to fill up 
+the hole. The result is a cast-in-place concrete drilled shaft for foundation support. Based 
+on the subsurface conditions encountered at the project site, we envision the drilled shaft 
+foundation would derive vertical support primarily from skin friction between the drilled 
+shaft and the surrounding materials. In general, the end-bearing component of the drilled 
+shaft has been discounted in our analysis due to difficulties associated with obtaining a 
+clean bottom during construction in the drilled shaft. The following table summarizes the 
+recommended size and length of the drilled shaft foundation. 
+SUMMARY OF DRILLED SHAFT FOUNDATIONS 
+Location 
+Drilled Shaft Diameter 
+(inches) 
+Drilled Shaft Length 
+(feet below ground) 
+ARFF Burn Pit Facility 
+24 
+25 
+For the design of the drilled shaft foundations, we have assumed that a minimum 
+concrete compressive strength of 5,000 psi (with a water cement ratio of 0.40 or lower) 
+will be specified and a nominal longitudinal reinforcing steel of about 2 percent of the 
+cross-sectional area of the drilled shaft will be used in the reinforcing cage. 
+The load bearing capacities of the drilled shaft will depend largely on the relative 
+density of the soils within the bearing strata. Because local variations in the subsurface 
+materials likely will occur, it is imperative that our representative is present during the 
+shaft drilling operations to confirm the subsurface conditions encountered during the 
+Geotechnical Engineering Report - 03/12/2023
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 8766-00 
+GEOLABS, INC. 
+Page 19 
+Hawaii • California 
+drilled shaft construction and to observe installation of the drilled shaft. In addition, 
+contract documents should include provisions (unit prices) for additional drilling and 
+extension of the drilled shaft during construction to account for unforeseen subsurface 
+conditions. 
+Based on our evaluation of the subsurface conditions and the foundation design 
+parameters, we anticipate that the drilled shaft installation for the project will require an 
+experienced drilled shaft subcontractor to install the drilled shaft foundations. Therefore, 
+consideration should be given to requiring pre-qualification of the drilled shaft 
+subcontractor for this project. The subsequent subsections address the design and 
+construction of the drilled shaft foundation, which include the following: 
+Lateral Load Resistance 
+Foundation Settlements 
+Drilled Shaft Construction Considerations 
+3.3.1 Lateral Load Resistance 
+Lateral loads imposed on the light pole foundation may be resisted by the lateral 
+load capacity of the drilled shaft. In general, the lateral load resistance of the drilled 
+shaft is a function of the stiffness of the surrounding soil, the stiffness of the drilled 
+shaft, allowable deflection at the top of shaft, and induced moment in the shaft. 
+The lateral load analysis was performed using the program LPILE-plus for 
+Windows, which is a microcomputer adaptation of a finite difference, laterally 
+loaded drilled shaft program originally developed at the University of Texas at 
+Austin. The program solves for deflection and bending moment along a drilled shaft 
+under lateral loads as a function of depth. The analysis was carried out with the 
+use of non-linear “p-y” curves to represent soil moduli. The lateral deflection was 
+then computed using the appropriate soil moduli at various depths. 
+Based on the structural loads provided, the following table summarizes the 
+anticipated lateral deflection and induced moment for the new light pole drilled 
+shaft foundation. 
+Geotechnical Engineering Report - 03/12/2023
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 8766-00 
+GEOLABS, INC. 
+Page 20 
+Hawaii • California 
+SUMMARY OF LATERAL LOAD ANALYSES 
+Location 
+Lateral Deflection 
+(inches) 
+Max. Induced 
+Moment 
+(kip-feet) 
+Depth to Max. 
+Moment 
+(feet) 
+ARFF Burn Pit 
+Facility 
+0.03 
+12.1 
+2.6 
+NOTE:  Analyses based on concrete compressive strength of 5,000 psi and a minimum of 2% 
+longitudinal steel reinforcement. 
+3.3.2 Foundation Settlements 
+Settlement of the drilled shaft foundation will result from elastic compression of the 
+shaft and subgrade response of the foundation embedded in the subsurface soils. 
+Total settlement of the 25-foot-long drilled shaft is estimated to be on the order of 
+less than 0.5 inches. We believe that a significant portion of the settlement is 
+elastic and should occur as the loads are applied.  
+3.3.3 Drilled Shaft Construction Considerations 
+In general, the performance of drilled shafts depends significantly upon the 
+contractor's method of installation and construction procedures. The following 
+conditions would have a significant effect on the effectiveness and cost of the 
+drilled shaft foundation. 
+The load bearing capacities of drilled shaft depend, to a significant extent, on the 
+frictional resistance between the shaft and the surrounding soils. Therefore, proper 
+construction techniques especially during the drilling operations are important. The 
+contractor should exercise care in drilling the shaft hole and in placing concrete 
+into the drilled hole. 
+The subsurface materials consist of fills, residual soils, lagoonal, and beach 
+deposits. The fill materials also may contain cobbles and boulders. In addition, 
+beach deposits may contain some localized hard zones. Therefore, some difficult 
+drilling conditions may be encountered and should be expected. 
+Based on our field exploration, fills and lagoonal deposits consisting of silty sands 
+and gravelly sands are present at the site within the proposed drilled shaft 
+excavation depth. Due to the presence of granular soil deposits, caving-in and/or 
+Geotechnical Engineering Report - 03/12/2023
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 8766-00 
+GEOLABS, INC. 
+Page 21 
+Hawaii • California 
+sloughing of these materials likely will occur during the drilling operations. To 
+reduce the potential for caving-in of the drilled hole, temporary casing of the drilled 
+hole may be required during the drilled shaft installation to maintain the integrity of 
+the drilled hole. 
+Drilling by methods utilizing drilling fluids may have a significant effect on the 
+supporting capacity of the drilled shaft; therefore, use of drilling fluids for the drilling 
+operations of the drilled shaft should be specifically accepted by Geolabs upon 
+evaluation of the type of drilling fluids proposed. 
+A low-shrink concrete mix with a high slump (7 to 9-inch slump range) should be 
+used to provide close contact between the drilled shaft and the surrounding soils. 
+The concrete should be placed in a suitable manner to reduce the potential for 
+segregation of the aggregates from the concrete mix. In addition, the concrete 
+should be placed promptly after drilling (within 24 hours after drilling of the holes) 
+to reduce the potential for softening of the sides of the drilled hole. 
+Based on our experience with drilled shaft foundations, the actual volume of 
+concrete required to fill the shaft may be appreciably more than the theoretical 
+concrete volume. Based on our experience with drilled shafts in similar subsurface 
+conditions (coralline deposits), we envision that an average grout factor on the 
+order of about 30 to 50 percent over the theoretical concrete volume may need to 
+be accounted for the drilled shaft. 
+It is imperative for a Geolabs representative to be present at the project site to 
+observe the drilling and installation of the drilled shaft during construction. Although 
+the drilled shaft is designed based primarily on skin friction, the bottom of the drilled 
+hole should be relatively free of loose materials prior to placement of concrete. 
+Therefore, it is necessary for Geolabs to observe the drilled shaft installation 
+operations to confirm the assumed subsurface conditions and should be 
+designated a “Special Inspection” item in accordance with Section 1705 of the 
+International Building Code (2018 Edition). 
+Geotechnical Engineering Report - 03/12/2023
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 8766-00 
+GEOLABS, INC. 
+Page 22 
+Hawaii • California 
+3.4 
+Pavement Design 
+Based on the information provided to us at the time this report was prepared, we 
+understand that new pavements will be required around the immediate perimeter of the 
+burn pit. In addition, we understand the new pavements will be subjected to ARFF and 
+passenger vehicles only. Items of the pavement design that are addressed in the 
+subsequent subsections include the following: 
+1. 
+Traffic Mix 
+2. 
+Methodology of Pavement Design 
+3. 
+Design Subgrade Conditions 
+4. 
+Flexible Pavement Thickness Recommendations 
+5. 
+Rigid Pavement Thickness Recommendations 
+6. 
+Pavement Subgrade Preparation 
+7. 
+Drainage 
+3.4.1 Traffic Mix 
+Based on the information provided, we understand that only the immediate 
+perimeter of the burn pit will be repaved, and the new pavement will be subjected 
+to ARFF and passenger vehicles only. Detailed traffic information was not available 
+at the time this report was prepared. Therefore, a mixture of the 1,500-gallon and 
+3,000-gallon ARFF vehicles was included in the pavement analysis. New Asphaltic 
+Concrete pavement and PCC pavement sections were based on a design period 
+of 20 years. The design traffic parameters are summarized in the table below. 
+ESTIMATED DESIGN TRAFFIC PARAMETERS 
+Aircraft 
+Gear Type 
+Gross 
+Weight 
+(lbs.) 
+Average 
+Annual 
+Passes 
+Total 
+Repetition or 
+Passes 
+ARFF Vehicle 
+(1,500-gallon) 
+Two Axle 
+58,000 
+104 
+2,080 
+ARFF Vehicle 
+(3,000-gallon) 
+Single and 
+Tandem Axle 
+83,000 
+104 
+2,080 
+Geotechnical Engineering Report - 03/12/2023
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 8766-00 
+GEOLABS, INC. 
+Page 23 
+Hawaii • California 
+3.4.2 Methodology of Pavement Design 
+The pavement structural sections presented herein were determined based on the 
+methodology described in Chapter 3 – Pavement Design of the Advisory Circular 
+No. 150/5320-6G. The design procedure is based on a layered elastic design and 
+3-dimensional finite element-based structural analysis. This design method is 
+computationally intense and is, therefore, in the form of a computer program called 
+FAARFIELD. 
+3.4.3 Design Subgrade Conditions 
+Based on our borings, the pavement subgrades at the existing ARFF Burn Pit and 
+the existing control shed would consist of silty sand soils. We performed CBR tests 
+on bulk samples of the on-site soils obtained during our field exploration. The CBR 
+test results are presented in the table below. 
+SUMMARY OF LABORATORY CBR TEST RESULTS 
+Location 
+Sample 
+Identification 
+CBR Value 
+CBR Swell 
+(%) 
+Existing ARFF Burn Pit 
+Bulk-1 
+13.9 
+0.59 
+Existing Control Shed 
+Bulk-2 
+4.8 
+0.04 
+We understand that new pavements will be provided in the vicinity of the existing 
+burn pit only. Therefore, a design subgrade CBR value of 13.9 was adopted in our 
+pavement analyses for the new pavements around the ARFF Burn Pit facility. 
+Based on the relatively competent laboratory CBR test results obtained from the 
+on-site soils located at the existing ARFF Burn Pit, we adopted a modulus of 
+subgrade reaction (k-value) of 200 pounds per square inch per inch of deflection 
+(psi/in) for the rigid pavement design. 
+3.4.4 Flexible Pavement Thickness Recommendations 
+In accordance with the design guidelines provided in the Advisory Circular 
+mentioned above, the flexible pavement structural section for the ARFF Burn Pit 
+Geotechnical Engineering Report - 03/12/2023
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 8766-00 
+GEOLABS, INC. 
+Page 24 
+Hawaii • California 
+and facility should be designed based on the following traffic design parameters 
+and pavement materials: 
+DESIGN PAVEMENT PARAMETERS 
+Traffic 
+See Estimated Design Traffic 
+Assumption Above 
+Hot Mix Asphalt Surface 
+Item P-401 (Hot-Mix Asphalt) 
+Base Course 
+Item P-209 (Crushed Aggregate) 
+Design Subgrade CBR 
+14 
+These input parameters were used in the computer program FAARFIELD and the 
+results of the pavement design are provided in the following table. 
+FLEXIBLE PAVEMENT DESIGN THICKNESS 
+FOR ARFF BURN PIT FACILITY 
+Material 
+Design Thickness 
+(inches) 
+Hot Mix Asphalt Surface (Item P-401) 
+4 
+Base Course (Item P-209) 
+6 
+Hot Mix Asphalt Surface (HMA) should meet the requirements of Specification 
+Section P-401. The subgrade (minimum 7 inches thick) below the base course 
+section and the base course should be compacted to at least 100 percent relative 
+compaction per ASTM D1557. 
+3.4.5 Rigid Pavement Thickness Recommendations 
+In accordance with the design guidelines provided in the Advisory Circular 
+mentioned above, the rigid pavement structural section for the ARFF Burn Pit 
+facility should be designed based on the following vehicular parameters and 
+pavement materials: 
+Geotechnical Engineering Report - 03/12/2023
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 8766-00 
+GEOLABS, INC. 
+Page 25 
+Hawaii • California 
+DESIGN PAVEMENT PARAMETERS 
+Vehicular Traffic 
+See Estimated Design Traffic 
+Assumption Above 
+Concrete Flexural Strength 
+700 pounds per square inch (psi) 
+PCC Surface 
+Item P-501 (PCC Surface) or 
+State Highways PCCP – Section 411 
+Base Course 
+Item P-154 (Crushed Aggregate) 
+Modulus of Subgrade Reaction (k) 
+200 pounds per square inch per inch 
+of deflection (pci) 
+The design input parameters were used in the computer program FAARFIELD 
+Version 2.1.1, and the results of the pavement design are presented in the 
+following table. 
+FLEXIBLE PAVEMENT DESIGN THICKNESS 
+FOR ARFF BURN PIT FACILITY 
+Material 
+Design Thickness 
+(inches) 
+Portland Cement Concrete Surface 
+(Item P-501) or  
+State Highways PCCP – Section 411 
+5 
+Base Course (Item P-154) 
+6 
+Portland Cement Concrete (PCC) should meet the requirements of Item P-501 
+(Portland Cement Concrete Pavement) or State Highways Section 411 (Portland 
+Cement Concrete Pavement) and should have a minimum flexural strength of 700 
+psi at 28 days. The subgrade (minimum 6 inches thick) below the base course 
+section (Item P-154) should be compacted to at least 95 percent relative 
+compaction. 
+3.4.6 Pavement Subgrade Preparation 
+In accordance with the subgrade compaction requirements presented in the 
+Advisory Circular, the subgrade soils below the flexible and rigid pavements should 
+be compacted to the following minimum dry densities based on the traffic mix for 
+the project. Considering the existing pavement around the burn pit will be replaced, 
+Geotechnical Engineering Report - 03/12/2023
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 8766-00 
+GEOLABS, INC. 
+Page 26 
+Hawaii • California 
+we believe the existing subgrade soils below the pavement subgrade likely has 
+been compacted to at least 95 percent relative compaction. New fill and backfill 
+materials placed within the pavement reconstruction areas will be subjected to the 
+requirements presented below. 
+SUBGRADE COMPACTION REQUIREMENTS 
+FOR FLEXIBLE PAVEMENTS 
+Depth Below 
+Finished Pavement Subgrade 
+(inches) 
+Degree of 
+Compaction 
+(percent) 
+0 – 17 
+100 
+7 – 16 
+95 
+SUBGRADE COMPACTION REQUIREMENTS 
+FOR RIGID PAVEMENTS 
+Depth Below 
+Finished Pavement Subgrade 
+(inches) 
+Degree of 
+Compaction 
+(percent) 
+0 – 6 
+95 
+6 - 20 
+90 
+Relative compaction or degree of compaction refers to the in-place dry density of 
+soil expressed as a percentage of the maximum dry density of the same soil 
+established in accordance with ASTM D1557. Optimum moisture is the water 
+content (percentage by dry weight) corresponding to the maximum dry density. 
+Soft and yielding subgrades encountered during the excavation operations will 
+need to be over-excavated (on the order of up to about 3 feet thick) and backfilled 
+with granular fill materials compacted to at least 95 percent relative compaction. 
+This condition will need to be determined on a case-by-case basis in the field by a 
+Geolabs field representative during earthwork construction. 
+3.4.7 Drainage 
+Finished grades should be sloped to shed water away from the runway and taxiway 
+pavements to reduce the potential for ponding water. The pavement surface 
+should be sloped adequately to drain, and drainage gradients should be 
+maintained to carry surface water off the pavement to appropriate drainage 
+Geotechnical Engineering Report - 03/12/2023
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 8766-00 
+GEOLABS, INC. 
+Page 27 
+Hawaii • California 
+structures. Surface water ponding should not be allowed during or after 
+construction. 
+3.5 
+Site Grading 
+Based on the grading plan provided, we anticipate minor cuts and fills of about 
+2 feet or less will be required to achieve the finished grades. Items of site grading that are 
+addressed in the subsequent subsections include the following:  
+1. 
+Site Preparation 
+2. 
+Fills and Backfills  
+3. 
+Fill Placement and Compaction Requirements 
+4. 
+Excavations  
+5. 
+Drainage 
+A Geolabs representative should monitor the site grading operations to observe 
+whether undesirable materials are encountered during the excavation and scarification 
+process and to confirm whether the exposed subsurface conditions are similar to those 
+encountered in our field exploration.  
+3.5.1 Site Preparation 
+At the on-set of earthworks, the area within the contract grading limits should be 
+cleared thoroughly. Surface vegetation, deleterious materials, and other unsuitable 
+materials should be removed and disposed of properly off-site to reduce the potential 
+for contaminating the excavated materials to be used as fill materials. Soft and 
+yielding areas encountered during clearing below areas designated to receive fill 
+and/or future improvements should be over-excavated to expose firm material and 
+the resulting excavation should be backfilled with well-compacted fill. The excavated 
+soft soils should be properly disposed of off-site and/or used in landscape areas, 
+where appropriate. 
+After clearing and grubbing, the exposed subgrades in areas to receive fill and 
+finished subgrades in cut areas should be scarified to a depth of about 8 inches, 
+moisture-conditioned to at least 2 percent above the optimum moisture, and 
+recompacted to a minimum of 90 percent relative compaction. The compaction 
+requirements for finished subgrades subjected to vehicular traffic, such as the 
+Geotechnical Engineering Report - 03/12/2023
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 8766-00 
+GEOLABS, INC. 
+Page 28 
+Hawaii • California 
+pavement subgrades, should be increased to a minimum of 95 or 100 percent 
+relative compaction as discussed in Subsection 3.4.6 of this report. Relative 
+compaction refers to the in-place dry density of soil expressed as a percentage of the 
+maximum dry density of the same soil established in accordance with ASTM D1557. 
+Optimum moisture is the water content (percentage by dry weight) corresponding to 
+the maximum dry density. 
+Soft and/or loose, weak or yielding areas disclosed during site preparation operations 
+should be over-excavated to expose firm ground, and the resulting excavation should 
+be backfilled with select granular fill materials, moisture-conditioned to above the 
+optimum moisture content, placed in maximum 8-inch loose lifts and compacted to a 
+minimum 90 percent relative compaction. 
+Where shrinkage cracks are observed after the subgrade compaction, we 
+recommend preparing the subgrade soil again as recommended above. Saturation 
+and subsequent yielding of the exposed subgrade due to inclement weather and poor 
+drainage may require over-excavating the soft areas and replacing these areas with 
+engineered fill. A Geolabs field representative should evaluate the need for 
+over-excavation due to soft subgrade soil conditions. 
+3.5.2 Fills and Backfills 
+In general, the on-site materials generated from the excavations may be reused as 
+a source of general fill materials, provided that the materials are screened of over-
+sized materials (greater than 3 inches in maximum dimension) and are free of 
+deleterious materials. It should be noted that the excavated clayey soils (or other 
+cohesive soils) should not be used as a source of select granular fill material due to 
+the slightly expansive nature of the soils. 
+Imported materials required for site filling should consist of select granular fill 
+material, such as crushed coralline and/or basaltic materials. The materials should 
+be well-graded from coarse to fine with particles no greater than 3 inches in largest 
+dimension. In addition, the materials also should contain between 10 and 30 percent 
+particles passing the No. 200 sieve. The materials should have a California Bearing 
+Geotechnical Engineering Report - 03/12/2023
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 8766-00 
+GEOLABS, INC. 
+Page 29 
+Hawaii • California 
+Ratio (CBR) value of 20 or higher and a swell potential of 1 percent or less when 
+tested in accordance with ASTM D1883.  
+Imported fill materials should be tested for conformance with these recommendations 
+at least 7 days prior to delivery to the project site for the intended use. Geolabs (or 
+an accredited laboratory) should test and evaluate the imported fill materials for 
+conformance with these recommendations prior to being transported to the project 
+site for the intended use. 
+3.5.3 Fill Placement and Compaction Requirements 
+Fill materials consisting of the on-site soils should be moisture-conditioned to at least 
+about 2 percent above the optimum moisture, placed in level lifts not exceeding 
+8 inches in loose thickness, and compacted to a minimum of 90 percent relative 
+compaction. Relative compaction refers to the in-place dry density of soil expressed 
+as a percentage of the maximum dry density of the same soil established in 
+accordance with ASTM D1557. Optimum moisture is the water content (percentage 
+by weight) corresponding to the maximum dry density. 
+Imported fill materials should be moisture-conditioned to above the optimum moisture 
+content, placed in level lifts of about 8 inches in loose thickness, and compacted to a 
+minimum of 90 or 95 percent relative compaction, as appropriate. Aggregate base 
+course should be moisture-conditioned to above the optimum moisture content, 
+placed in level lifts not exceeding 8 inches in loose thickness, and compacted to a 
+minimum of 95 percent relative compaction. 
+Compaction should be accomplished by sheepsfoot rollers or other types of 
+acceptable compaction equipment. Water tamping, jetting, or ponding should not be 
+allowed to compact the fills. Where compaction is less than required, additional 
+compactive effort should be applied with adjustment of moisture content, as 
+necessary, to obtain the specified compaction. 
+3.5.4 Excavations 
+Based on our field exploration, the project site generally is underlain by relatively stiff 
+fill material and residual soils. It is anticipated that the near-surface fills and residual 
+Geotechnical Engineering Report - 03/12/2023
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 8766-00 
+GEOLABS, INC. 
+Page 30 
+Hawaii • California 
+soils may be excavated readily with normal heavy excavation equipment, such as 
+excavators and ripping with large bulldozers. However, there is a potential for 
+encountering cobbles/boulders at unpredictable depths. Therefore, there is a 
+potential to encounter hard cobbles and/or boulders in the excavations that may 
+require the use of hoerams or chipping. 
+The above discussions regarding the rippability of the surface materials are based 
+on the subsurface conditions encountered at the project site and our experience in 
+the project vicinity. Contractors bidding on this project should be encouraged to 
+review and understand the geologic environment of the project site and to examine 
+the site conditions and soil data to make their own interpretation. 
+3.6 
+Utility Trenches 
+We envision new underground utilities, such as fuel and water lines, likely will be 
+required for the project. In general, we recommend providing granular bedding consisting 
+of 6 inches of free-draining materials, such as bedding sand or open-graded gravel 
+(ASTM C33, No. 67 gradation), below the pipes for uniform support. 
+If loose and/or soft soils are encountered at the proposed inverts, an additional 
+12 to 18 inches of open-graded gravel (ASTM C33, No. 67 gradation) wrapped in a 
+non-woven geotextile fabric (Mirafi 180N or equivalent) may be necessary below the 
+bedding material to form a bridging layer. Free-draining granular materials, such as 
+bedding sand or open-graded gravel (ASTM C33, No. 67 gradation), also should be used 
+for the initial trench backfill (pipe cover) up to about 12 inches above the crown of the 
+pipes or 12 inches above the top of the groundwater level to provide adequate support 
+around the pipes and to reduce the need for substantial effort in compacting the backfill, 
+thus reducing the potential for damage to the pipes. 
+The trench backfill above the pipe cover or groundwater to the finished subgrade 
+or finished grade may consist of the excavated on-site soils with a maximum particle size 
+of 3 inches. The backfill should be moisture-conditioned to above the optimum moisture 
+content, placed in maximum 8-inch level loose lifts, and mechanically compacted to not 
+less than 90 percent relative compaction to reduce the potential for appreciable future 
+Geotechnical Engineering Report - 03/12/2023
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 8766-00 
+GEOLABS, INC. 
+Page 31 
+Hawaii • California 
+ground subsidence. Where trenches are located in the pavement areas, the upper 3 feet 
+of the trench backfill below the pavement grade should be compacted to at least 
+95 percent relative compaction. 
+3.7 
+Design Review 
+Preliminary and final drawings and specifications for the project should be 
+forwarded to Geolabs for review and comment prior to solicitation for construction bids. 
+This review is necessary to evaluate the conformance of the plans and specifications with 
+the intent of the foundation and earthwork recommendations provided herein. If this 
+review is not made, Geolabs cannot be held responsible for misinterpretation of our 
+recommendations. 
+3.8 
+Services During Construction 
+Geolabs should provide geotechnical services during construction for the project 
+as required per the building code. Some of the critical items of construction monitoring 
+that require "Special Inspection" in accordance with Section 1705 of the 2018 IBC include 
+the following: 
+Observation of drilled shaft excavation; 
+Observation of drilled shaft concrete placement; 
+Observation of foundation excavation and preparation; 
+Observation of subgrade preparation; and 
+Observation of fill/backfill placement and compaction. 
+In addition, a Geolabs representative should monitor the other aspects of 
+earthwork construction to observe compliance with the intent of the design concepts, 
+specifications, or recommendations and to expedite suggestions for design changes that 
+may be required in the event that subsurface conditions differ from those anticipated at 
+the time this report was prepared. The recommendations provided in this report are 
+contingent upon such observations. If the actual exposed subsurface conditions 
+encountered during construction are different from those assumed or considered in this 
+report, then appropriate modifications to the design should be made. 
+END OF DISCUSSION AND RECOMMENDATIONS 
+Geotechnical Engineering Report - 03/12/2023
+W.O. 8766-00 
+GEOLABS, INC. 
+Page 32 
+Hawaii • California 
+SECTION 4.  LIMITATIONS 
+The analyses and recommendations presented in this report are based, in part, 
+upon information obtained from the borings drilled as part of our geotechnical exploration 
+efforts. Variations of the subsurface conditions between and beyond the borings drilled 
+may occur, and the nature and extent of these variations may not become evident until 
+construction is underway. If variations then appear evident, it will be necessary to 
+re-evaluate the recommendations provided in this report. 
+The boring locations indicated in this report are approximate, having been obtained 
+using a hand-held Global Positioning System (GPS) device. Elevations noted on the 
+borings were estimated based on elevations indicated on the As-Built Recorded Drawings 
+dated August 3, 1995. The physical locations and elevations of the borings should be 
+considered accurate only to the degree implied by the methods used. 
+The stratification lines shown on the graphic representations of the borings depict 
+the approximate boundaries between the soil and/or rock types and, as such, may denote 
+a gradual transition. Water level data from the borings were measured at the times shown 
+on the graphic representations and/or presented in the text of this report. These data have 
+been reviewed and interpretations made in the formulation of this report. It should be 
+noted that groundwater fluctuations may occur due to variation in tides, rainfall, 
+temperature, and other factors. 
+This report has been prepared for the exclusive use of Environmental Science 
+International for specific application to the design of the proposed ARFF Burn Pit 
+Replacement project located at the existing Kahului Airport (OGG) in Kahului on the 
+Island of Maui, Hawaii, in accordance with generally accepted geotechnical engineering 
+principles and practices. No warranty is expressed or implied. 
+The owner/client should be aware that unanticipated soil and/or rock conditions 
+are encountered commonly during construction. Unforeseen subsurface conditions, such 
+as soft deposits, hard layers, cavities, or perched groundwater, may occur in localized 
+areas and may require additional probing or corrections in the field (which may result in 
+Geotechnical Engineering Report - 03/12/2023
+SECTION 4. LIMITATIONS 
+W.O. 8766-00 
+GEOLABS, INC. 
+Page 33 
+Hawaii • California 
+construction delays) to attain a properly constructed project. Therefore, a sufficient 
+contingency fund is recommended to accommodate these possible extra costs. 
+This geotechnical exploration conducted at the project site was not intended to 
+investigate the potential for the presence of hazardous materials existing at the site. It 
+should be noted that the equipment, techniques, and personnel used to conduct a 
+geo-environmental exploration differ substantially from those applied in geotechnical 
+engineering. 
+END OF LIMITATIONS 
+Geotechnical Engineering Report - 03/12/2023
+W.O. 8766-00 
+GEOLABS, INC. 
+Page 34 
+Hawaii • California 
+CLOSURE 
+The following plates and appendices are attached and complete this report: 
+Project Location Map .............................................................................................. Plate 1 
+Site Plan ................................................................................................................. Plate 2 
+Field Exploration ............................................................................................. Appendix A 
+Laboratory Tests ............................................................................................. Appendix B 
+Photographs of Core Samples ........................................................................ Appendix C 
+------ 
+Respectfully submitted, 
+GEOLABS, INC. 
+By ________________________ 
+            Jason Seidman, P.E. 
+                Project Engineer 
+By 
+            Robin M. Lim, P.E. 
+                    President 
+RML:JS:RY:rl 
+b:\8700_Series\8766-00.js3 
+Geotechnical Engineering Report - 03/12/2023
+PLATES 
+Geotechnical Engineering Report - 03/12/2023
+KAHULUI, MAUI, HAWAII
+KAHULUI AIRPORT (OGG)
+GRAPHIC SCALE
+1000
+2000
+2000
+0
+FT.
+PROJECT LOCATION
+GENERAL PROJECT LOCATION
+NOVEMBER 2023
+1" = 2,000'
+Geotechnical Engineering
+GEOLABS, INC.
+DATE
+SCALE
+1
+8766-00
+DRAWN BY
+KHN
+W.O.
+PLATE
+N
+N
+PROJECT LOCATION MAP
+ARFF BURN PIT REPLACEMENT
+ISLAND MAP
+NO SCALE
+LAHAINA
+LAHAINA
+WAILUKU
+KAHULUI
+WAILUKU
+PACIFIC      OCEAN
+PUKALANI
+MAKAWAO
+KIHEI
+HANA
+HANA
+CAD User: KIM  File Last Updated: November 07, 2023 9:17:17pm  Plot Date:  November 07, 2023 - 9:58:35pm
+File: T:\Drafting\Working\8766-00_ARFF_Burn_Pit_Replacement\8766-00PLM.dwg\1
+Plotter: DWG To PDF-GEO.pc3  Plotstyle: GEO-No-Dither-RBGC-HEAVY.ctb
+REFERENCE: MAP CREATED WITH TOPO!® ©2010 NATIONAL
+GEOGRAPHIC; ©2007 TELE ATLAS, REL. 1/2007.
+Geotechnical Engineering Report - 03/12/2023
+B-2&BULK-1
+B-3&BULK-1
+B-4&BULK-2
+B-1&BULK-1
+HOLDING POND
+BURN PIT
+RUNWAY  5 - 23
+CONTROL SHED
+APPROXIMATE BORING LOCATION
+LEGEND:
+N
+APPROXIMATE BULK SAMPLE LOCATION
+GEOLABS, INC.
+Geotechnical Engineering
+8766-00
+DRAWN BY
+KHN
+1" = 100'
+JANUARY 2024
+SCALE
+DATE
+W.O.
+2
+PLATE
+GRAPHIC SCALE
+50
+0
+100
+200
+300 FT.
+CAD User: KIM  File Last Updated: November 08, 2023 9:42:29pm  Plot Date:  January 30, 2024 - 6:03:06pm
+File: T:\Drafting\Working\8766-00_ARFF_Burn_Pit_Replacement\8766-00SitePlan.dwg\2
+Plotter: DWG To PDF-GEO.pc3  Plotstyle: GEO-No-Dither-RBGC-HEAVY.ctb
+REFERENCE:  GOOGLE EARTH™ PRO. ©2023 GOOGLE, INC.
+IMAGERY DATED JUNE 15, 2019.
+KAHULUI, MAUI, HAWAII
+KAHULUI AIRPORT (OGG)
+SITE PLAN
+ARFF BURN PIT REPLACEMENT
+Geotechnical Engineering Report - 03/12/2023
+Geotechnical Engineering Report - 03/12/2023
+W.O. 8766-00 
+GEOLABS, INC. 
+MARCH 2024    Page A-1 
+Hawaii • California 
+A P P E N D I X   A 
+Field Exploration 
+The subsurface conditions at the project site were explored by drilling and 
+sampling four borings, designated as Boring Nos. 1 and 4, each extending to depths 
+ranging from about 22 to 37.25 feet below the existing ground surface. The borings were 
+drilled with a truck-mounted drill rig equipped with continuous flight augers and coring 
+tools. The borings were drilled at the approximate locations shown on the Site Plan, 
+Plate 2. 
+Our geologist classified the materials encountered in the borings by visual and 
+textural examination in the field in general accordance with ASTM D2488, Standard 
+Practice for Description and Identification of Soils, and monitored the drilling operations 
+on a near-continuous basis. These classifications were further reviewed visually and by 
+testing in the laboratory. Soils were classified in general accordance with ASTM D2487, 
+Standard Practice for Classification of Soils for Engineering Purposes (Unified Soil 
+Classification System), as shown on the Soil Log Legend (Plate A-0.1). Deviations made 
+to the soil classification in accordance with ASTM D2487 are described on the Soil 
+Classification Log Key (Plate A-0.2). Graphic representations of the materials 
+encountered are presented on the Logs of Borings, Plates A-1 thru A-4. 
+Relatively “undisturbed” soil samples were obtained in general accordance with 
+ASTM D3550, Ring-Lined Barrel Sampling of Soils, by driving a 3-inch OD Modified 
+California sampler with a 140-pound hammer falling 30 inches. In addition, some samples 
+were obtained from the borings in general accordance with ASTM D1586, Penetration 
+Test and Split-Barrel Sampling of Soils, by driving a 2-inch OD standard penetration 
+sampler using the same hammer and drop. The blow counts needed to drive the sampler 
+the second and third 6 inches of an 18-inch drive are shown as the “Penetration 
+Resistance” on the Logs of Borings at the appropriate sample depths. 
+Pocket penetrometer tests were performed on selected cohesive soil samples 
+retrieved in the field. The pocket penetrometer test provides an indication of the 
+unconfined compressive strength of the sample. Pocket penetrometer test results are 
+summarized on the Logs of Borings at the appropriate sample depths. 
+Core samples of the rock materials encountered at the project site were obtained 
+by using diamond core drilling techniques in general accordance with ASTM D2113, 
+Diamond Core Drilling for Site Investigation. Core drilling is a rotary drilling method that 
+uses a hollow bit to cut into the rock formation. The rock material left in the hollow core of 
+the bit is mechanically recovered for examination and description. Rock cores were 
+described in general accordance with the Rock Description System, as shown on the 
+Rock Log Legend (Plate A-0.3). The Rock Description System is based on the publication 
+“Suggested Methods for the Quantitative Description of Discontinuities in Rock Masses” 
+by the International Society for Rock Mechanics (March 1977). 
+Geotechnical Engineering Report - 03/12/2023
+Appendix A 
+Field Exploration 
+W.O. 8766-00 
+GEOLABS, INC. 
+MARCH 2024    Page A-2 
+Hawaii • California 
+Recovery (REC) may be used as a subjective guide to the interpretation of the 
+relative quality of rock masses, where appropriate. Recovery is defined as the actual 
+length of material recovered from a coring attempt versus the length of the core attempt. 
+For example, if 3.7 feet of material is recovered from a 5.0-foot core run, the recovery 
+would be 74 percent and would be shown on the Logs of Borings as REC = 74%. 
+The Rock Quality Designation (RQD) is also a subjective guide to the relative 
+quality of rock masses. RQD is defined as the percentage of the total core run in rock that 
+is sound material in excess of 4 inches in length without any discontinuities, discounting 
+any drilling, mechanical, and handling induced fractures or breaks. If 2.5 feet of sound 
+material is recovered from a 5.0-foot core run in rock, the RQD would be 50 percent and 
+would be shown on the Logs of Borings as RQD = 50%. Generally, the following is used 
+to describe the relative quality of the rock based on the "Practical Handbook of Physical 
+Properties of Rocks and Minerals” by Robert S. Carmichael (1989). 
+Rock Quality 
+RQD 
+(%) 
+Very Poor 
+0 – 25 
+Poor 
+25 – 50 
+Fair 
+50 – 75 
+Good 
+75 – 90 
+Excellent 
+90 – 100 
+The excavation characteristic of a rock mass is a function of the relative hardness 
+of the rock, its relative quality, brittleness, and fissile characteristics. A dense rock 
+formation with a high RQD value would be very difficult to excavate and probably would 
+require more arduous methods of excavation. 
+Geotechnical Engineering Report - 03/12/2023
+A-0.1
+UNCONSOLIDATED UNDRAINED TRIAXIAL
+COMPRESSION (ksf)
+MORE THAN 50%
+OF COARSE
+FRACTION
+RETAINED ON
+NO. 4 SIEVE
+50% OR MORE OF
+COARSE FRACTION
+PASSING
+THROUGH NO. 4
+SIEVE
+MORE THAN 50%
+OF MATERIAL
+RETAINED ON NO.
+200  SIEVE
+50% OR MORE OF
+MATERIAL PASSING
+THROUGH NO. 200
+SIEVE
+TORVANE SHEAR (tsf)
+(2-INCH) O.D. STANDARD PENETRATION TEST
+(3-INCH) O.D. MODIFIED CALIFORNIA SAMPLE
+INORGANIC SILTS AND VERY FINE SANDS,
+ROCK FLOUR, SILTY OR CLAYEY FINE SANDS
+OR CLAYEY SILTS WITH SLIGHT PLASTICITY
+POORLY-GRADED GRAVELS, GRAVEL-SAND
+MIXTURES, LITTLE OR NO FINES
+CLAYEY GRAVELS, GRAVEL-SAND-CLAY
+MIXTURES
+WELL-GRADED SANDS, GRAVELLY SANDS,
+LITTLE OR NO FINES
+POORLY-GRADED SANDS, GRAVELLY
+SANDS, LITTLE OR NO FINES
+SILTY SANDS, SAND-SILT MIXTURES
+CLAYEY SANDS, SAND-CLAY MIXTURES
+LIQUID LIMIT
+50 OR MORE
+CH
+NOTE: DUAL SYMBOLS ARE USED TO INDICATE BORDERLINE SOIL CLASSIFICATIONS
+MH
+SILTS
+AND
+CLAYS
+SILTS
+AND
+CLAYS
+LIQUID LIMIT
+LESS THAN 50
+USCS
+TYPICAL
+DESCRIPTIONS
+GW
+MORE THAN 12%
+FINES
+WATER LEVEL OBSERVED IN BORING OVERNIGHT
+HIGHLY ORGANIC SOILS
+SILTY GRAVELS, GRAVEL-SAND-SILT
+MIXTURES
+OL
+PEAT, HUMUS, SWAMP SOILS WITH HIGH
+ORGANIC CONTENTS
+INORGANIC CLAYS OF LOW TO MEDIUM
+PLASTICITY, GRAVELLY CLAYS, SANDY
+CLAYS, SILTY CLAYS, LEAN CLAYS
+Soil Log Legend
+ORGANIC CLAYS OF MEDIUM TO HIGH
+PLASTICITY, ORGANIC SILTS
+SC
+Plate
+GM
+FINE-
+GRAINED
+SOILS
+COARSE-
+GRAINED
+SOILS
+CLEAN SANDS
+SANDS WITH
+FINES
+SP
+SANDS
+GRAVELS
+WELL-GRADED GRAVELS,  GRAVEL-SAND
+MIXTURES, LITTLE OR NO FINES
+ML
+CL
+OH
+LESS THAN 5%
+FINES
+GRAVELS WITH
+FINES
+CLEAN
+GRAVELS
+GRAB SAMPLE
+PLASTICITY INDEX (NP=NON-PLASTIC)
+TV
+LEGEND
+WATER LEVEL OBSERVED IN BORING AT TIME OF
+DRILLING
+WATER LEVEL OBSERVED IN BORING AFTER DRILLING
+SM
+MAJOR DIVISIONS
+GP
+MORE THAN 12%
+FINES
+PT
+LESS THAN 5%
+FINES
+UNIFIED SOIL CLASSIFICATION SYSTEM (USCS)
+ORGANIC SILTS AND ORGANIC SILTY
+CLAYS OF LOW PLASTICITY
+SW
+GC
+INORGANIC SILT, MICACEOUS OR
+DIATOMACEOUS FINE SAND OR SILTY
+SOILS
+INORGANIC CLAYS OF HIGH PLASTICITY
+PI
+LL
+TXUU
+UNCONFINED COMPRESSION
+OR UNIAXIAL COMPRESSIVE STRENGTH
+CORE SAMPLE
+SHELBY TUBE SAMPLE
+LIQUID LIMIT (NP=NON-PLASTIC)
+UC
+GEOLABS, INC.
+Geotechnical Engineering
+LOG LEGEND FOR SOIL  8766-00.GPJ  GEOLABS.GDT  12/17/23
+Geotechnical Engineering Report - 03/12/2023
+A-0.2
+7 - 18
+18 - 55
+55 - 91
+> 91
+Medium Dense
+Coarse Sand
+(with deviations from ASTM D2488)
+Soil Classification Log Key
+*Soil descriptions are based on ASTM D2488-09a, Visual-Manual Procedure, with the
+above modifications by Geolabs, Inc. to the Unified Soil Classification System (USCS).
+accessory descriptions compose of the following:
+with some: >12%
+with a little: 5 - 12%
+with traces of: <5%
+accessory descriptions are lower cased and follow the
+Primary and Secondary Constituents
+(i.e., SILTY GRAVEL with a little sand)
+Dry:    Absence of moisture, dry to the touch
+Moist: Damp but no visible water
+Wet:   Visible free water
+Medium Sand
+Fine Sand
+#4 to #200 (4.75-mm to 0.075-mm)
+#4 to #10 (4.75-mm to 2-mm)
+> 12 inches (305-mm)
+3-inch to #4 (75-mm to 4.75-mm)
+Sieve Number and / or Size
+Gravel
+#10 to #40 (2-mm to 0.425-mm)
+#40 to #200 (0.425-mm to 0.075-mm)
+3 to 12 inches (75-mm to 305-mm)
+Description
+PP Readings
+(tsf)
+2.0 - 4.0
+> 4.0
+N-Value (Blows/Foot)
+MCS
+0 - 4
+RELATIVE DENSITY / CONSISTENCY
+GRAIN SIZE DEFINITION
+ABBREVIATIONS
+N-Value (Blows/Foot)
+0 - 7
+WOH:  Weight of Hammer
+WOR:  Weight of Drill Rods
+SPT:    Standard Penetration Test Split-Spoon Sampler
+MCS:   Modified California Sampler
+PP:      Pocket Penetrometer
+4 - 7
+7 - 15
+15 - 27
+27 - 55
+SPT
+0 - 2
+> 55
+> 30
+4 - 8
+15 - 30
+MOISTURE CONTENT DEFINITIONS
+SPT
+0 - 4
+4 - 10
+10 - 30
+30 - 50
+> 50
+MCS
+Loose
+EXAMPLE: Soil Containing 60% Gravel, 25% Sand, 15% Fines. Described as: SILTY GRAVEL with some sand
+Plate
+GRANULAR SOIL (- #200 <50%)
+2 - 4
+8 - 15
+Relative
+Density
+Very Loose
+Dense
+Very Dense
+COHESIVE SOIL (- #200    50%)
+PRIMARY constituents are composed of the largest
+percent of the soil mass. Primary constituents are
+capitalized and bold (i.e., GRAVEL, SAND)
+PRIMARY constituents are based on plasticity. Primary
+constituents are capitalized and bold (i.e., CLAY, SILT)
+SECONDARY constituents are composed of a
+percentage less than the primary constituent. If the soil
+mass consists of 12 percent or more fines content, a
+cohesive constituent is used (SILTY or CLAYEY);
+otherwise, a granular constituent is used (GRAVELLY
+or SANDY) provided that the secondary constituent
+consists of 20 percent or more of the soil mass.
+Secondary constituents are capitalized and bold (i.e.,
+SANDY GRAVEL, CLAYEY SAND) and precede the
+primary constituent.
+SECONDARY constituents are composed of a
+percentage less than the primary constituent, but more
+than 20 percent of the soil mass. Secondary constituents
+are capitalized and bold (i.e., SANDY CLAY, SILTY
+CLAY, CLAYEY SILT) and precede the primary
+constituent.
+Sand
+Boulders
+Cobbles
+Coarse Gravel
+3-inch to 3/4-inch (75-mm to 19-mm)
+Fine Gravel
+3/4-inch to #4 (19-mm to 4.75-mm)
+GEOLABS, INC. CLASSIFICATION*
+Granular Soils
+Cohesive Soils
+Consistency
+accessory descriptions compose of the following:
+with some: >12%
+with a little: 5 - 12%
+with traces of: <5%
+accessory descriptions are lower cased and follow the
+Primary and Secondary Constituents
+(i.e., SILTY CLAY with some sand)
+Very Soft
+Soft
+Medium Stiff
+Stiff
+Very Stiff
+Hard
+< 0.5
+0.5 - 1.0
+1.0 - 2.0
+SOIL_CLASS_LOG_KEY  8766-00.GPJ  GEOLABS.GDT  12/17/23
+GEOLABS, INC.
+Geotechnical Engineering
+Geotechnical Engineering Report - 03/12/2023
+A-0.3
+ROCK DESCRIPTIONS
+Plate
+BRECCIA
+CLINKER
+COBBLES
+CORAL
+BASALT
+ROCK DESCRIPTION SYSTEM
+Greater than 24 inches apart
+12 to 24 inches apart
+6 to 12 inches apart
+3 to 6 inches apart
+Less than 3 inches apart
+Rock shows no sign of discoloration or loss of strength.
+Slight discoloration inwards from open fractures.
+Discoloration throughout and noticeably weakened though not able to break by hand.
+Most minerals decomposed with some corestones present in residual soil mass. Can be broken by hand.
+Saprolite. Mineral residue completely decomposed to soil but fabric and structure preserved.
+The following terms describe general fracture spacing of a rock:
+The following terms describe the chemical weathering of a rock:
+ROCK FRACTURE CHARACTERISTICS
+DEGREE OF WEATHERING
+HARDNESS
+BOULDERS
+VOID/CAVITY
+TUFF
+SILTSTONE
+LIMESTONE
+Unweathered:
+Slightly Weathered:
+Moderately Weathered:
+Highly Weathered:
+Extremely Weathered:
+Very Hard:
+Hard:
+Medium Hard:
+Soft:
+Very Soft:
+SANDSTONE
+Massive:
+Slightly Fractured:
+Moderately Fractured:
+Closely Fractured:
+Severely Fractured:
+Rock Log Legend
+The following terms describe the resistance of a rock to indentation or scratching:
+Specimen breaks with difficulty after several "pinging" hammer blows.
+Example: Dense, fine grain volcanic rock
+Specimen breaks with some difficulty after several hammer blows.
+Example: Vesicular, vugular, coarse-grained rock
+Specimen can be broked by one hammer blow. Cannot be scraped by knife. SPT may penetrate by
+~25 blows per inch with bounce.
+Example: Porous rock such as clinker, cinder, and coral reef
+Can be indented by one hammer blow. Can be scraped or peeled by knife. SPT can penetrate by
+~100 blows per foot.
+Example: Weathered rock, chalk-like coral reef
+Crumbles under hammer blow. Can be peeled and carved by knife. Can be indented by finger
+pressure.
+Example: Saprolite
+CONGLOMERATE
+GEOLABS, INC.
+Geotechnical Engineering
+LOG LEGEND FOR ROCK  8766-00.GPJ  GEOLABS.GDT  12/17/23
+Geotechnical Engineering Report - 03/12/2023
+28
+12
+73
+31
+30
+93
+52
+100
+SM
+ML
+SM
+SM
+SP-
+SM
+2.5
+12
+17
+11
+5
+23
+100
+12
+0
+0
+Direct
+Shear
+Sieve
+- #200 =
+66.6%
+Sieve
+- #200 =
+18.7%
+Sieve
+- #200 =
+37.0%
+Sieve
+- #200 =
+14.7%
+Sieve
+- #200 =
+9.8%
+4-inch ASPHALTIC CONCRETE
+Reddish brown SILTY SAND (BASALTIC) with
+some gravel (basaltic), medium dense, dry (base
+material)
+Reddish brown SANDY SILT with traces of
+gravel (basaltic), medium stiff, dry (residual soil)
+Reddish brown SILTY SAND with some gravel
+(basaltic), medium dense, dry (residual soil)
+Tannish gray SILTY SAND (CORALLINE) with
+traces of gravel, loose (lagoonal deposit)
+Tan GRAVELLY SAND (CORALLINE) with a
+little silt, medium dense (beach deposit)
+ Boring terminated at 22 feet
+ * Elevations obtained from As-Built Recorded
+Drawings dated August 3, 1995.
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-45C TRUCK
+4" Solid-Stem Auger & PQ Coring
+140 lb. wt., 30 in. drop
+5
+10
+15
+20
+25
+30
+35
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation (feet MSL): 11.5 *
+Sample
+Moisture
+Content (%)
+1
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 1
+(Energy Transfer Ratio = 86.4%)
+October 26, 2023
+October 26, 2023
+N. Mc Clean
+22 feet
+8766-00
+GEOLABS, INC.
+Geotechnical Engineering
+ARFF BURN PIT REPLACEMENT
+KAHULUI AIRPORT (OGG)
+KAHULUI, MAUI, HAWAII
+BORING_LOG  8766-00.GPJ  GEOLABS.GDT  1/22/24
+8.0 ft.   10/26/2023 1012 HRS
+Geotechnical Engineering Report - 03/12/2023
+32
+7
+2
+25
+19
+51
+44
+53
+93
+67
+117
+53
+68
+ML
+CL
+SM
+SP-
+SM
+GM
+GP-
+GM
+CL
+ML
+2.0
+0.5
+27
+6
+75
+25
+18
+6
+7
+5
+41
+0
+14
+0
+38
+76
+LL=44
+PI=19
+Direct
+Shear
+Sieve
+- #200 =
+5.6%
+Sieve
+- #200 =
+19.6%
+Sieve
+- #200 =
+8.4%
+LL=50
+PI=32
+TXUU
+Su=0.3 ksf
+3-inch ASPHALTIC CONCRETE
+Gray SANDY SILT with some gravel (basaltic),
+stiff, dry (base material)
+Reddish brown SANDY CLAY with traces of
+gravel (basaltic) and tree bark, medium stiff to
+stiff, moist (residual soil)
+grades to hard
+Tannish gray SILTY SAND (CORALLINE) with a
+little gravel (coralline), medium dense (beach
+deposit)
+Tan GRAVELLY SAND (CORALLINE) with a
+little silt, medium dense (beach deposit)
+Tan SILTY GRAVEL (CORALLINE) with some
+sand (coralline), loose (beach deposit)
+Tan SANDY GRAVEL (CORALLINE) with a little
+silt, loose (beach deposit)
+Reddish brown SANDY CLAY with a little gravel
+(coralline), soft (alluvium with coral debris)
+Brown with multi-color mottling CLAYEY SILT,
+soft (saprolite)
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-45C TRUCK
+4" Solid-Stem Auger & PQ Coring
+140 lb. wt., 30 in. drop
+5
+10
+15
+20
+25
+30
+35
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation (feet MSL): 11.5 *
+Sample
+Moisture
+Content (%)
+2
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 2.1
+(Energy Transfer Ratio = 86.4%)
+October 25, 2023
+October 25, 2023
+N. Mc Clean
+37.25 feet
+8766-00
+GEOLABS, INC.
+Geotechnical Engineering
+ARFF BURN PIT REPLACEMENT
+KAHULUI AIRPORT (OGG)
+KAHULUI, MAUI, HAWAII
+BORING_LOG  8766-00.GPJ  GEOLABS.GDT  1/22/24
+6.5 ft.   10/25/2023 1341 HRS
+Geotechnical Engineering Report - 03/12/2023
+ML
+13/6"
+ +50/3"
+grades to hard
+ Boring terminated at 37.25 feet
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-45C TRUCK
+4" Solid-Stem Auger & PQ Coring
+140 lb. wt., 30 in. drop
+40
+45
+50
+55
+60
+65
+70
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Sample
+Moisture
+Content (%)
+2
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+(Continued from previous plate)
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 2.2
+(Energy Transfer Ratio = 86.4%)
+October 25, 2023
+October 25, 2023
+N. Mc Clean
+37.25 feet
+8766-00
+GEOLABS, INC.
+Geotechnical Engineering
+ARFF BURN PIT REPLACEMENT
+KAHULUI AIRPORT (OGG)
+KAHULUI, MAUI, HAWAII
+BORING_LOG  8766-00.GPJ  GEOLABS.GDT  1/22/24
+6.5 ft.   10/25/2023 1341 HRS
+Geotechnical Engineering Report - 03/12/2023
+30
+18
+18
+55
+35
+32
+91
+104
+81
+ML
+CL
+SM
+SM
+SM
+2.0
+8
+16
+83
+6
+23
+5
+LL=44
+PI=19
+Sieve
+- #200 =
+15.6%
+Sieve
+- #200 =
+18.0%
+4-inch ASPHALTIC CONCRETE
+Reddish brown SANDY SILT with a little gravel
+(basaltic), medium stiff, dry (base material)
+Reddish brown SANDY CLAY, medium stiff to
+very stiff, dry (residual soil)
+Tan SILTY SAND (CORALLINE), dense, dry
+(beach deposit)
+Light gray SILTY SAND with a little gravel,
+dense, moist (lagoonal deposit)
+grades to loose
+grades to medium dense
+Grayish tan SILTY SAND (CORALLINE) with
+some gravel (coralline), medium dense (beach
+deposit)
+grades to loose
+ Boring terminated at 23 feet
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-45C TRUCK
+4" Solid-Stem Auger & PQ Coring
+140 lb. wt., 30 in. drop
+5
+10
+15
+20
+25
+30
+35
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation (feet MSL): 11.5 *
+Sample
+Moisture
+Content (%)
+3
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 3
+(Energy Transfer Ratio = 86.4%)
+October 26, 2023
+October 26, 2023
+N. Mc Clean
+23 feet
+8766-00
+GEOLABS, INC.
+Geotechnical Engineering
+ARFF BURN PIT REPLACEMENT
+KAHULUI AIRPORT (OGG)
+KAHULUI, MAUI, HAWAII
+BORING_LOG  8766-00.GPJ  GEOLABS.GDT  1/22/24
+8.5 ft.   10/26/2023 1414 HRS
+Geotechnical Engineering Report - 03/12/2023
+16
+24
+44
+26
+22
+50
+103
+93
+68
+ML
+CL
+SM
+SM
+SP-
+SM
+SM
+SP-
+SM
+GP-
+GM
+0
+3.5
+2.5
+11
+12
+14
+6
+6
+28
+5
+4
+5
+0
+0
+0
+0
+71
+LL=29
+PI=14
+Direct
+Shear
+Sieve
+- #200 =
+13.4%
+Consol.
+Sieve
+- #200 =
+7.6%
+Sieve
+- #200 =
+8.4%
+Sieve
+- #200 =
+9.2%
+3-inch ASPHALTIC CONCRETE
+Brown GRAVELLY SILT with some sand and
+clay, medium stiff, dry (base material)
+Reddish brown SANDY CLAY with some gravel
+(basaltic), medium stiff, dry (residual soil)
+grades to stiff
+Tan SILTY SAND (CORALLINE), medium
+dense, moist (beach deposit)
+Tannish gray SILTY SAND (CORALLINE) with a
+little gravel (coralline), very loose (lagoonal
+deposit)
+grades to loose
+Light tan GRAVELLY SAND (CORALLINE) with
+a little silt and traces of gravel (basaltic), medium
+dense (beach deposit)
+Bluish gray SILTY SAND (CORALLINE) with a
+little gravel (coralline), medium dense (lagoonal
+deposit)
+Light gray GRAVELLY SAND (CORALLINE) with
+a little silt, loose (beach deposit)
+grades to tannish brown, very loose
+Tannish brown SANDY GRAVEL (CORALLINE)
+with a little silt, loose (beach deposit)
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-45C TRUCK
+4" Solid-Stem Auger & PQ Coring
+140 lb. wt., 30 in. drop
+5
+10
+15
+20
+25
+30
+35
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation (feet MSL): 11.5 *
+Sample
+Moisture
+Content (%)
+4
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 4.1
+(Energy Transfer Ratio = 86.4%)
+October 26, 2023
+October 27, 2023
+N. Mc Clean
+35.5 feet
+8766-00
+GEOLABS, INC.
+Geotechnical Engineering
+ARFF BURN PIT REPLACEMENT
+KAHULUI AIRPORT (OGG)
+KAHULUI, MAUI, HAWAII
+BORING_LOG  8766-00.GPJ  GEOLABS.GDT  1/22/24
+8.0 ft.   10/27/2023 1033 HRS
+Geotechnical Engineering Report - 03/12/2023
+Gray vesicular BASALT, moderately fractured,
+slightly weathered, medium hard (basalt
+formation)
+ Boring terminated at 35.5 feet
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-45C TRUCK
+4" Solid-Stem Auger & PQ Coring
+140 lb. wt., 30 in. drop
+40
+45
+50
+55
+60
+65
+70
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Sample
+Moisture
+Content (%)
+4
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+(Continued from previous plate)
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 4.2
+(Energy Transfer Ratio = 86.4%)
+October 26, 2023
+October 27, 2023
+N. Mc Clean
+35.5 feet
+8766-00
+GEOLABS, INC.
+Geotechnical Engineering
+ARFF BURN PIT REPLACEMENT
+KAHULUI AIRPORT (OGG)
+KAHULUI, MAUI, HAWAII
+BORING_LOG  8766-00.GPJ  GEOLABS.GDT  1/22/24
+8.0 ft.   10/27/2023 1033 HRS
+Geotechnical Engineering Report - 03/12/2023
+Geotechnical Engineering Report - 03/12/2023
+W.O. 8766-00 
+GEOLABS, INC. 
+MARCH 2024     Page B-1 
+Hawaii • California 
+A P P E N D I X   B 
+Laboratory Tests 
+Moisture Content (ASTM D2216) and Unit Weight (ASTM D7263) determinations 
+were performed on selected soil samples as an aid in the classification and evaluation of 
+soil properties. The test results are presented on the Logs of Borings at the appropriate 
+sample depths. 
+Four Atterberg Limits tests (ASTM D4318) were performed on selected soil 
+samples to evaluate the liquid and plastic limits and to aid in soil classification. The results 
+are summarized on the Logs of Borings at the appropriate sample depths, and graphic 
+presentations of the test results are provided on Plate B-1. 
+Sixteen Sieve Analysis tests (ASTM D6913) were performed on selected soil 
+samples to evaluate the gradation characteristics of the soils and to aid in soil 
+classification. Graphic presentations of the grain size distributions are provided on 
+Plates B-2 thru B-5. 
+Three strain-controlled, consolidated-drained Direct Shear tests were performed 
+to evaluate the shear strength characteristics of the in-situ soils. Direct Shear tests were 
+performed on the in-situ soil samples in accordance with ASTM D3080. The test results 
+are presented on Plates B-6 thru B-8. 
+One Unconsolidated Undrained Triaxial Compression test was performed on a 
+selected in-situ soil sample in accordance with ASTM D2850. The approximate in-situ 
+effective overburden pressure was used as the applied confining pressure for the 
+“undisturbed” sample. The test results and the stress-strain curve are presented on 
+Plate B-9. 
+One Consolidation test was performed on selected soil samples to evaluate the 
+compressibility characteristics of the on-site soils. The tests were performed in 
+accordance with ASTM D2435, and the test results are presented on Plate B-10. 
+Three sets of pH (ASTM G51) and Minimum Resistivity (ASTM G57) tests were 
+performed by our office, and three sets of Chloride (EPA 300) and Sulfate Content (EPA 
+300) tests were performed by CERCO Analytical. The test results are presented on 
+Plate B-11. 
+Two Modified Proctor compaction tests (ASTM D1557) were performed on bulk 
+samples of the near-surface soils to evaluate the dry density and moisture content 
+relationships. The test results are presented on Plates B-12 and B-13. 
+Two laboratory California Bearing Ratio Tests (ASTM D1883) were performed on 
+bulk samples of the near-surface soils to evaluate the pavement support characteristics. 
+The test results are presented on Plates B-14 and B-15. 
+Geotechnical Engineering Report - 03/12/2023
+0
+10
+20
+30
+40
+50
+60
+70
+80
+90
+100
+0
+20
+40
+60
+80
+100
+120
+ML or OL
+CL-ML
+CL or OL
+CH or OH
+B - 1
+MH or OH
+LIQUID LIMIT
+PLASTICITY INDEX
+ATTERBERG LIMITS TEST RESULTS - ASTM D4318
+B-2
+B-2
+B-3
+B-4
+44
+50
+44
+29
+0.5-2.0
+31.0-32.5
+0.5-2.0
+2.0-3.5
+25
+18
+25
+15
+NP = NON-PLASTIC
+4
+7
+19
+32
+19
+14
+Sample
+Depth (ft)
+LL
+PL
+PI
+Reddish brown sandy clay (CL) with traces of gravel
+Reddish brown sandy clay (CL) with a little gravel
+Reddish brown sandy clay (CL)
+Reddish brown sandy clay (CL) with some gravel
+Description
+Plate
+W.O. 8766-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+ARFF BURN PIT REPLACEMENT
+KAHULUI AIRPORT (OGG)
+KAHULUI, MAUI, HAWAII
+G_ATTERBERG_PI-100_LL-120  8766-00.GPJ  GEOLABS.GDT  12/17/23
+Geotechnical Engineering Report - 03/12/2023
+0
+5
+10
+15
+20
+25
+30
+35
+40
+45
+50
+55
+60
+65
+70
+75
+80
+85
+90
+95
+100
+0.001
+0.01
+0.1
+1
+10
+100
+3.118
+0.183
+0.33
+3.84
+B - 2
+coarse
+1
+1.5
+3
+2
+0.077
+40
+Depth (ft)
+%Gravel
+1.4
+33.9
+2.0
+0.8
+35.9
+32.0
+47.4
+61.0
+84.5
+54.3
+%Sand
+COBBLES
+Sample
+D30 (mm)
+140
+20
+0.8
+49.9
+HYDROMETER
+3
+GRAIN SIZE IN MILLIMETERS
+PERCENT FINER BY WEIGHT
+100
+coarse
+1/2
+Sample
+0.273
+0.133
+0.476
+Cu
+GRAVEL
+U.S. SIEVE NUMBERS
+D10 (mm)
+16
+fine
+19
+19
+19
+19
+37.5
+Cc
+3/4
+fine
+SILT OR CLAY
+medium
+GRAIN SIZE DISTRIBUTION - ASTM D6913
+SAND
+%Fine
+60
+4
+30
+200
+4
+6
+66.6
+18.7
+37.0
+14.7
+9.8
+Depth (ft)
+LL
+Reddish brown sandy silt (ML) with traces of gravel
+Reddish brown silty sand (SM) with some gravel
+Tannish gray silty sand (SM) with traces of gravel
+Tannish gray silty sand (SM) with traces of gravel
+Tan gravelly sand (SP-SM) with a little silt
+810 14
+50
+U.S. SIEVE OPENING IN INCHES
+6
+D60 (mm)
+D100 (mm)
+B-1
+B-1
+B-1
+B-1
+B-1
+0.5-2.0
+2.0-3.5
+10.5-12.0
+15.5-17.0
+20.5-22.0
+0.5-2.0
+2.0-3.5
+10.5-12.0
+15.5-17.0
+20.5-22.0
+B-1
+B-1
+B-1
+B-1
+B-1
+3/8
+PL PI
+Description
+Plate
+W.O. 8766-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+ARFF BURN PIT REPLACEMENT
+KAHULUI AIRPORT (OGG)
+KAHULUI, MAUI, HAWAII
+G_GRAIN_SIZE_MOD  8766-00.GPJ  GEOLABS.GDT  12/17/23
+Geotechnical Engineering Report - 03/12/2023
+0
+5
+10
+15
+20
+25
+30
+35
+40
+45
+50
+55
+60
+65
+70
+75
+80
+85
+90
+95
+100
+0.001
+0.01
+0.1
+1
+10
+100
+2.7
+5.767
+11.996
+0.26
+2.781
+B - 3
+coarse
+1
+1.5
+3
+2
+0.106
+0.096
+40
+Depth (ft)
+%Gravel
+33.0
+44.0
+69.4
+6.0
+34.7
+61.5
+36.4
+22.2
+78.4
+47.2
+%Sand
+COBBLES
+Sample
+D30 (mm)
+140
+20
+0.7
+16.4
+25.4
+124.8
+HYDROMETER
+3
+GRAIN SIZE IN MILLIMETERS
+PERCENT FINER BY WEIGHT
+100
+coarse
+1/2
+Sample
+0.455
+0.177
+4.346
+0.113
+0.174
+Cu
+GRAVEL
+U.S. SIEVE NUMBERS
+D10 (mm)
+16
+fine
+37.5
+25
+37.5
+19
+25
+Cc
+3/4
+fine
+SILT OR CLAY
+medium
+GRAIN SIZE DISTRIBUTION - ASTM D6913
+SAND
+%Fine
+60
+4
+30
+200
+4
+6
+5.6
+19.6
+8.4
+15.6
+18.0
+Depth (ft)
+LL
+Tan gravelly sand (SP-SM) with a little silt
+Tan silty gravel (GM) with some sand
+Tan sandy gravel (GP-GM) with a little silt
+Light gray silty sand (SM) with a little gravel
+Grayish tan silty sand (SM) with some gravel
+810 14
+50
+U.S. SIEVE OPENING IN INCHES
+6
+D60 (mm)
+D100 (mm)
+B-2
+B-2
+B-2
+B-3
+B-3
+16.0-17.5
+21.0-22.5
+26.0-27.5
+10.0-11.5
+20.0-21.5
+16.0-17.5
+21.0-22.5
+26.0-27.5
+10.0-11.5
+20.0-21.5
+B-2
+B-2
+B-2
+B-3
+B-3
+3/8
+PL PI
+Description
+Plate
+W.O. 8766-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+ARFF BURN PIT REPLACEMENT
+KAHULUI AIRPORT (OGG)
+KAHULUI, MAUI, HAWAII
+G_GRAIN_SIZE_MOD  8766-00.GPJ  GEOLABS.GDT  12/17/23
+Geotechnical Engineering Report - 03/12/2023
+0
+5
+10
+15
+20
+25
+30
+35
+40
+45
+50
+55
+60
+65
+70
+75
+80
+85
+90
+95
+100
+0.001
+0.01
+0.1
+1
+10
+100
+0.407
+0.607
+14.17
+14.959
+0.37
+B - 4
+coarse
+1
+1.5
+3
+2
+0.089
+0.093
+0.081
+40
+Depth (ft)
+%Gravel
+6.2
+11.9
+44.2
+64.4
+15.1
+80.4
+80.5
+47.4
+26.4
+42.5
+%Sand
+COBBLES
+Sample
+D30 (mm)
+140
+20
+1.0
+0.3
+5.4
+6.8
+152.5
+183.7
+HYDROMETER
+3
+GRAIN SIZE IN MILLIMETERS
+PERCENT FINER BY WEIGHT
+100
+coarse
+1/2
+Sample
+0.164
+0.23
+0.632
+2.557
+Cu
+GRAVEL
+U.S. SIEVE NUMBERS
+D10 (mm)
+16
+fine
+19
+25
+75
+37.5
+37.5
+Cc
+3/4
+fine
+SILT OR CLAY
+medium
+GRAIN SIZE DISTRIBUTION - ASTM D6913
+SAND
+%Fine
+60
+4
+30
+200
+4
+6
+13.4
+7.6
+8.4
+9.2
+42.4
+Depth (ft)
+LL
+Tannish gray silty sand (SM) with a little gravel
+Light tan gravelly sand (SP-SM) with a little silt
+Light tan gravelly sand (SP-SM) with a little silt
+Tannish brown sandy gravel (GP-GM) with a little silt
+Brown silty sand (SM) with some gravel
+810 14
+50
+U.S. SIEVE OPENING IN INCHES
+6
+D60 (mm)
+D100 (mm)
+B-4
+B-4
+B-4
+B-4
+10.0-11.5
+15.5-17.0
+20.5-22.0
+30.5-32.0
+0.0-2.0
+10.0-11.5
+15.5-17.0
+20.5-22.0
+30.5-32.0
+0.0-2.0
+B-4
+B-4
+B-4
+B-4
+3/8
+PI
+PL
+Description
+Plate
+W.O. 8766-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+ARFF BURN PIT REPLACEMENT
+KAHULUI AIRPORT (OGG)
+KAHULUI, MAUI, HAWAII
+G_GRAIN_SIZE_MOD  8766-00.GPJ  GEOLABS.GDT  12/17/23
+BULK-1
+BULK-1
+Geotechnical Engineering Report - 03/12/2023
+0
+5
+10
+15
+20
+25
+30
+35
+40
+45
+50
+55
+60
+65
+70
+75
+80
+85
+90
+95
+100
+0.001
+0.01
+0.1
+1
+10
+100
+4.114
+B - 5
+coarse
+1
+1.5
+3
+2
+40
+Depth (ft)
+%Gravel
+42.6
+38.2
+%Sand
+COBBLES
+Sample
+D30 (mm)
+140
+20
+HYDROMETER
+3
+GRAIN SIZE IN MILLIMETERS
+PERCENT FINER BY WEIGHT
+100
+coarse
+1/2
+Sample
+0.268
+Cu
+GRAVEL
+U.S. SIEVE NUMBERS
+D10 (mm)
+16
+fine
+50
+Cc
+3/4
+fine
+SILT OR CLAY
+medium
+GRAIN SIZE DISTRIBUTION - ASTM D6913
+SAND
+%Fine
+60
+4
+30
+200
+4
+6
+19.2
+Depth (ft)
+LL
+Brown silty sand (SM) with some gravel
+810 14
+50
+U.S. SIEVE OPENING IN INCHES
+6
+D60 (mm)
+D100 (mm)
+0.5-4.5
+0.5-4.5
+3/8
+PI
+PL
+Description
+Plate
+W.O. 8766-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+ARFF BURN PIT REPLACEMENT
+KAHULUI AIRPORT (OGG)
+KAHULUI, MAUI, HAWAII
+G_GRAIN_SIZE_MOD  8766-00.GPJ  GEOLABS.GDT  12/17/23
+ BULK-2
+ BULK-2
+Geotechnical Engineering Report - 03/12/2023
+0
+500
+1,000
+1,500
+2,000
+2,500
+3,000
+0
+500
+1,000
+1,500
+2,000
+2,500
+3,000
+NORMAL STRESS, psf
+SHEAR STRESS, psf
+INITIAL
+Moisture Content, %
+Moisture Content, %
+Dry Density, pcf
+530 psf
+30 degrees
+1066
+1799
+2237
+0.0024
+0.0021
+0.0023
+2.42
+2.42
+2.42
+91.3
+96.8
+94.7
+93.1
+92.6
+91.4
+Cohesion:
+0.43
+0.41
+0.41
+1.020
+0.957
+0.966
+Height, inches
+Diameter, inches
+Peak Shear Stress, psf
+Shear Displacement, inches
+Reddish brown sandy silt
+(ML) with traces of gravel
+1.00
+1.00
+1.00
+Height, inches
+B - 6
+33.9
+33.5
+32.7
+FINAL
+Dry Density, pcf
+Normal Stress, psf
+Sample:
+B-1
+0.5 - 2.0 feet
+Depth:
+Description:
+27.8
+31.0
+35.3
+Sample
+#1
+Sample
+#2
+Sample
+#3
+Deformation Rate, inch/minute
+Friction Angle:
+1000
+2000
+3000
+DIRECT SHEAR TEST -  ASTM D3080
+Plate
+W.O. 8766-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+ARFF BURN PIT REPLACEMENT
+KAHULUI AIRPORT (OGG)
+KAHULUI, MAUI, HAWAII
+G_DIRECT_SHEAR  8766-00.GPJ  GEOLABS.GDT  12/17/23
+Geotechnical Engineering Report - 03/12/2023
+0
+500
+1,000
+1,500
+2,000
+2,500
+3,000
+0
+500
+1,000
+1,500
+2,000
+2,500
+3,000
+NORMAL STRESS, psf
+SHEAR STRESS, psf
+INITIAL
+Moisture Content, %
+Moisture Content, %
+Dry Density, pcf
+993 psf
+26 degrees
+1548
+1834
+2525
+0.0025
+0.0021
+0.0024
+2.42
+2.42
+2.42
+89.6
+95.0
+97.2
+93.3
+92.7
+93.7
+Cohesion:
+0.43
+0.41
+0.41
+1.041
+0.976
+0.963
+Height, inches
+Diameter, inches
+Peak Shear Stress, psf
+Shear Displacement, inches
+Reddish brown sandy clay
+(CL) with traces of gravel
+1.00
+1.00
+1.00
+Height, inches
+B - 7
+36.2
+34.8
+34.3
+FINAL
+Dry Density, pcf
+Normal Stress, psf
+Sample:
+B-2
+0.5 - 2.0 feet
+Depth:
+Description:
+31.8
+33.0
+32.8
+Sample
+#1
+Sample
+#2
+Sample
+#3
+Deformation Rate, inch/minute
+Friction Angle:
+1000
+2000
+3000
+DIRECT SHEAR TEST -  ASTM D3080
+Plate
+W.O. 8766-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+ARFF BURN PIT REPLACEMENT
+KAHULUI AIRPORT (OGG)
+KAHULUI, MAUI, HAWAII
+G_DIRECT_SHEAR  8766-00.GPJ  GEOLABS.GDT  12/17/23
+Geotechnical Engineering Report - 03/12/2023
+0
+500
+1,000
+1,500
+2,000
+2,500
+3,000
+3,500
+4,000
+0
+500
+1,000
+1,500
+2,000
+2,500
+3,000
+3,500
+4,000
+NORMAL STRESS, psf
+SHEAR STRESS, psf
+INITIAL
+Moisture Content, %
+Moisture Content, %
+Dry Density, pcf
+756 psf
+42 degrees
+1780
+2364
+3607
+0.0024
+0.0021
+0.0024
+2.42
+2.42
+2.42
+99.4
+95.2
+108.4
+102.5
+93.7
+107.8
+Cohesion:
+0.43
+0.40
+0.40
+1.032
+0.984
+0.995
+Height, inches
+Diameter, inches
+Peak Shear Stress, psf
+Shear Displacement, inches
+Reddish brown sandy clay
+(CL) with some gravel
+1.00
+1.00
+1.00
+Height, inches
+B - 8
+21.8
+28.5
+17.8
+FINAL
+Dry Density, pcf
+Normal Stress, psf
+Sample:
+B-4
+2.0 - 3.5 feet
+Depth:
+Description:
+15.6
+25.6
+13.3
+Sample
+#1
+Sample
+#2
+Sample
+#3
+Deformation Rate, inch/minute
+Friction Angle:
+1000
+2000
+3000
+DIRECT SHEAR TEST -  ASTM D3080
+Plate
+W.O. 8766-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+ARFF BURN PIT REPLACEMENT
+KAHULUI AIRPORT (OGG)
+KAHULUI, MAUI, HAWAII
+G_DIRECT_SHEAR  8766-00.GPJ  GEOLABS.GDT  12/17/23
+Geotechnical Engineering Report - 03/12/2023
+0
+0.1
+0.2
+0.3
+0.4
+0.5
+0.6
+0.7
+0
+4
+8
+12
+16
+Location:
+Sample Diameter (inches)
+Sample Height (inches)
+DEVIATOR STRESS, ksf
+Max. Deviator Stress (ksf):
+Confining Stress (ksf):
+AXIAL STRAIN, %
+1.8
+0.7
+Dry Density (pcf)
+Moisture (%)
+Axial Strain at Failure (%)
+Strain Rate (% / minute)
+53.3
+67.6
+14.8
+Reddish brown sandy clay (CL) with a little gravel
+31.0 - 32.5 feet
+Description:
+Depth:
+B-2
+TRIAXIAL UU COMPRESSION TEST - ASTM D2850
+Test Date:
+5.033
+2.413
+0.70
+B - 9
+11/28/2023
+Plate
+W.O. 8766-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+ARFF BURN PIT REPLACEMENT
+KAHULUI AIRPORT (OGG)
+KAHULUI, MAUI, HAWAII
+G_TXUU  8766-00.GPJ  GEOLABS.GDT  12/17/23
+Geotechnical Engineering Report - 03/12/2023
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+0.1
+1
+10
+100
+B - 10
+26.6
+28.0
+98.2
+90.7
+Sample Height, inches
+N/A
+N/A
+CONSOLIDATION TEST -  ASTM D2435
+1.0000
+Initial
+Final
+Dry Density, pcf:
+79.7
+0.9200
+100.0
+0.939
+0.790
+Degree of Saturation, %
+Void Ratio
+Water Content, %
+Sample:
+B-4
+Depth:
+15.5 - 17.0 feet
+Description: Light tan gravelly sand (SP-SM) with
+a little silt
+Liquid Limit =
+Plasticity Index =
+CONSOLIDATION %
+NORMAL PRESSURE, ksf
+Plate
+W.O. 8766-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+ARFF BURN PIT REPLACEMENT
+KAHULUI AIRPORT (OGG)
+KAHULUI, MAUI, HAWAII
+G_CONSOL  8766-00.GPJ  GEOLABS.GDT  1/30/24
+Geotechnical Engineering Report - 03/12/2023
+7.48
+0.5 - 2.0
+B-3
+3100
+ND
+ND
+8.19
+5.0 - 6.5
+B-3
+3000
+28
+ND
+8.96
+2.0 - 3.5
+B-4
+3600
+ND
+ND
+SUMMARY OF CORROSIVITY TESTS
+B - 11
+(mg/kg)
+(mg/kg)
+(ohm-cm)
+SM 2510B
+Minimum Resistivity
+pH Value
+EPA 300.0
+Minimum Resistivity
+ASTM G57
+Method 9045C
+pH Value
+ASTM G51
+TEST METHODS (by Geolabs, Inc.)*
+Sulfate Content
+Chloride Content
+Minimum Resistivity
+pH Value
+ND: Not Detected Within Reporting Limits
+EPA 300.0
+Sulfate Content
+Depth
+Location
+(feet)
+N/A
+Sulfate Content
+Chloride Content
+N/A
+Chloride Content
+Plate
+W.O. 8766-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+ARFF BURN PIT REPLACEMENT
+KAHULUI AIRPORT (OGG)
+KAHULUI, MAUI, HAWAII
+G_SUMMARY_OF_CORROSIVITY_TESTS  8766-00.GPJ  GEOLABS.GDT  12/17/23
+TEST METHODS (by CERCO Analytical)
+Geotechnical Engineering Report - 03/12/2023
+75
+80
+85
+90
+95
+100
+105
+110
+115
+120
+125
+130
+135
+0
+10
+20
+30
+40
+122.5
+13.5
+DRY DENSITY, pcf
+Optimum Moisture Content:
+Sample:
+Depth:
+TEST RESULTS
+MOISTURE CONTENT, %
+Description:
+pcf
+Maximum Dry Density:
+Brown silty sand (SM) with some gravel
+B - 12
+3.20
+3.10
+3.00
+2.90
+2.80
+2.70
+2.60
+0.0 - 2.0 feet
+BULK-1
+MOISTURE-DENSITY RELATIONSHIP - ASTM D1557 A
+Test Date:
+November 14, 2023
+Plate
+W.O. 8766-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+ARFF BURN PIT REPLACEMENT
+KAHULUI AIRPORT (OGG)
+KAHULUI, MAUI, HAWAII
+G_COMPACTION  8766-00.GPJ  GEOLABS.GDT  12/17/23
+Geotechnical Engineering Report - 03/12/2023
+75
+80
+85
+90
+95
+100
+105
+110
+115
+120
+125
+130
+135
+0
+10
+20
+30
+40
+133.0
+8.0
+DRY DENSITY, pcf
+Optimum Moisture Content:
+Sample:
+Depth:
+TEST RESULTS
+MOISTURE CONTENT, %
+Description:
+pcf
+Maximum Dry Density:
+Brown silty sand (SM) with some gravel
+B - 13
+3.20
+3.10
+3.00
+2.90
+2.80
+2.70
+2.60
+0.5 - 4.5 feet
+BULK-2
+MOISTURE-DENSITY RELATIONSHIP - ASTM D1557 C
+Test Date:
+November 13, 2023
+Plate
+W.O. 8766-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+ARFF BURN PIT REPLACEMENT
+KAHULUI AIRPORT (OGG)
+KAHULUI, MAUI, HAWAII
+G_COMPACTION  8766-00.GPJ  GEOLABS.GDT  12/17/23
+Geotechnical Engineering Report - 03/12/2023
+0
+20
+40
+60
+80
+100
+120
+140
+160
+180
+200
+220
+240
+260
+280
+300
+0
+0.10
+0.20
+0.30
+0.40
+0.50
+0.60
+Sample:
+Corr. CBR @ 0.1"
+Depth:
+Corr. CBR @ 0.2"
+No. of Layers
+CALIFORNIA BEARING RATIO - ASTM D1883
+Description:
+Days Soaked
+4
+BULK-1
+Swell (%)
+0.59
+12.4
+13.9
+Molding Dry Density (pcf)
+STRESS, psi
+0.0 - 2.0 feet
+No. of Blows
+14.0
+107.7
+Molding Moisture (%)
+Hammer Wt. (lbs)
+Hammer Drop (inches)
+PENETRATION, inches
+Brown silty sand (SM) with some gravel
+18
+56
+10
+5
+Aggregate
+B - 14
+3/4 inch minus
+Plate
+W.O. 8766-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+ARFF BURN PIT REPLACEMENT
+KAHULUI AIRPORT (OGG)
+KAHULUI, MAUI, HAWAII
+G_CBR  8766-00.GPJ  GEOLABS.GDT  12/17/23
+Geotechnical Engineering Report - 03/12/2023
+0
+20
+40
+60
+80
+100
+120
+140
+160
+180
+200
+220
+240
+260
+280
+300
+0
+0.10
+0.20
+0.30
+0.40
+0.50
+0.60
+Sample:
+Corr. CBR @ 0.1"
+Depth:
+Corr. CBR @ 0.2"
+No. of Layers
+CALIFORNIA BEARING RATIO - ASTM D1883
+Description:
+Days Soaked
+4
+BULK-2
+Swell (%)
+0.04
+6.8
+4.8
+Molding Dry Density (pcf)
+STRESS, psi
+0.5 - 4.5 feet
+No. of Blows
+13.3
+122.1
+Molding Moisture (%)
+Hammer Wt. (lbs)
+Hammer Drop (inches)
+PENETRATION, inches
+Brown silty sand (SM) with some gravel
+18
+56
+10
+5
+Aggregate
+B - 15
+3/4 inch minus
+Plate
+W.O. 8766-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+ARFF BURN PIT REPLACEMENT
+KAHULUI AIRPORT (OGG)
+KAHULUI, MAUI, HAWAII
+G_CBR  8766-00.GPJ  GEOLABS.GDT  12/17/23
+Geotechnical Engineering Report - 03/12/2023
+Geotechnical Engineering Report - 03/12/2023
+ARFF BURN PIT REPLACEMENT  
+KAHULUI AIRPORT (OGG) 
+KAHULUI, MAUI, HAWAII  
+W.O. 8766-00 
+GEOLABS, INC. 
+PLATE C-1 
+Hawaii • California 
+B-1     
+4.5’ TO 20.5’ 
+B-2     
+6.5’ TO 36.0’ 
+B-4     
+32.0’ TO 35.5’ 
+       4.5’ 
+          6.5’ 
+32.0’ 
+20.5’ 
+36.0’ 
+35.5’ 
+Geotechnical Engineering Report - 03/12/2023

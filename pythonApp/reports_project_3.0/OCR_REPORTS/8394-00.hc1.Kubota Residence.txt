@@ -1,0 +1,5642 @@
+GEOTECHNICAL ENGINEERING EXPLORATION 
+KUBOTA RESIDENCE 
+HONOLULU, OAHU, HAWAII 
+W.O. 8394-00     JANUARY 21, 2022 
+Prepared for 
+BOWERS + KUBOTA CONSULTING 
+GEOLABS, INC. 
+Geotechnical Engineering and Drilling Services 
+GEOTECHNICAL ENGINEERING EXPLORATION
+KUBOTA RESIDENCE
+HONOLULU, OAHU, HAWAII
+W.O. 8394-00 JANUARY 21, 2022
+Prepared for
+BOWERS + KUBOTA CONSULTING
+THIS WORK WAS PREPARED BY
+ME OR UNDER MY SUPERVISION.
+SIGNATU XPIRATION DATE
+OF THE LICENSE
+GEOLABS, INC.
+Geotechnical Engineering and Drilling Services
+94-429 Koaki Street, Suite 200 e Waipahu, HI 96797
+Hawaii ° California
+GEOLABS, INC.
+Geotechnical Engineering and Drilling Services
+January 21, 2022
+W.O. 8394-00
+Mr. Dexter Kubota
+Bowers + Kubota Consulting
+94-408 Akoki Street, Suite 201A
+Waipahu, HI 96797
+Dear Mr. Kubota:
+Geolabs, Inc. is pleased to submit our report entitled "Geotechnical Engineering
+Exploration, Kubota Residence, Honolulu, Oahu, Hawaii," prepared for the design of the
+project.
+Our work was performed in general accordance with the scope of services outlined
+in our revised fee proposal dated November 1, 2021.
+Please note that the soil samples recovered during our field exploration (remaining
+after testing) will be stored for a period of two months from the date of this report. The
+samples will be discarded after that date unless arrangements are made for a longer sample
+storage period. Please contact our office for alternative sample storage requirements, if
+appropriate.
+Detailed discussion and specific design recommendations are contained in the body
+of this report. If there is any point that is not clear, please contact our office.
+Very truly yours,
+GEOLABS, INC.
+Gerald Y. Seki, P.E.
+Vice President
+GS:HC:lf
+94-429 Koaki Street, Suite 200 e Waipahu, Hawaii 96797
+Telephone: (808) 841-5064 ¢ E-mail: hawaii @geolabs.net
+Hawaii ¢ California
+W.O. 8394-00 
+GEOLABS, INC. 
+Page i 
+Hawaii • California 
+GEOTECHNICAL ENGINEERING EXPLORATION 
+KUBOTA RESIDENCE 
+HONOLULU, OAHU, HAWAII 
+W.O. 8394-00     JANUARY 21, 2022 
+TABLE OF CONTENTS 
+                                                                                                                                       Page 
+SUMMARY OF FINDINGS AND RECOMMENDATIONS .............................................. iii 
+1. 
+GENERAL ............................................................................................................ 1 
+1.1 
+Project Considerations ............................................................................... 1 
+1.2 
+Purpose and Scope ................................................................................... 2 
+2. 
+SITE CHARACTERIZATION ................................................................................ 3 
+2.1 
+Regional Geology ...................................................................................... 3 
+2.2 
+Existing Site Conditions ............................................................................. 3 
+2.3 
+Subsurface Conditions ............................................................................... 4 
+2.4 
+Seismic Design Considerations ................................................................. 5 
+2.4.1 Earthquakes and Seismicity ............................................................. 5 
+2.4.2 Soil Profile Type for Seismic Design ................................................. 6 
+2.4.3 Liquefaction Potential ....................................................................... 7 
+3. 
+DISCUSSION AND RECOMMENDATIONS ........................................................ 9 
+3.1 
+Building Foundations ................................................................................. 9 
+3.2 
+Slabs-On-Grade ....................................................................................... 11 
+3.3 
+Retaining Structures ................................................................................ 12 
+3.3.1 Retaining Wall Foundations .......................................................... 12 
+3.3.2 Lateral Earth Pressures ................................................................ 13 
+3.3.3 Drainage ....................................................................................... 14 
+3.4 
+Swimming Pool ........................................................................................ 14 
+3.5 
+Site Grading ............................................................................................. 15 
+3.5.1 Site Preparation ............................................................................ 15 
+3.5.2 Fills and Backfills ........................................................................... 16 
+3.5.3 Fill Placement and Compaction Requirements ............................. 17 
+3.5.4 Excavations ................................................................................... 17 
+3.6 
+Pavement Design .................................................................................... 18 
+3.7 
+Utility Trenches ........................................................................................ 19 
+3.8 
+Drainage .................................................................................................. 20 
+3.9 
+Design Review ......................................................................................... 21 
+3.10 
+Post-Design Services/Services During Construction ............................... 21 
+4. 
+LIMITATIONS ..................................................................................................... 23 
+CLOSURE ..................................................................................................................... 25 
+TABLE OF CONTENTS 
+                                                                                                                                   Page 
+W.O. 8394-00 
+GEOLABS, INC. 
+Page ii 
+Hawaii • California 
+PLATES 
+Project Location Map ................................................................................... Plate 1 
+Site Plan ...................................................................................................... Plate 2 
+APPENDIX  A 
+Field Exploration ...................................................................................... Page A-1 
+Logs of DCP ....................................................................... Plates A-1.0 thru A-5.1 
+APPENDIX  B 
+Laboratory Tests ...................................................................................... Page B-1 
+Laboratory Test Data  ............................................................... Plates B-1 thru B-3 
+W.O. 8394-00 
+GEOLABS, INC. 
+Page iii 
+Hawaii • California 
+GEOTECHNICAL ENGINEERING EXPLORATION 
+KUBOTA RESIDENCE 
+HONOLULU, OAHU, HAWAII 
+W.O. 8394-00     JANUARY 21, 2022 
+SUMMARY OF FINDINGS AND RECOMMENDATIONS 
+Due to restrictive access to perform borings, our field exploration was limited to 
+conducting five Dynamic Cone Penetration (DCP) tests extended to depths of about 6.1 to 
+10.7 feet below the existing ground surface to explore the general consistency of the 
+subsurface soil conditions. In addition, two bulk surface samples were collected for grain 
+size distribution and California Bearing Ratio (CBR) tests. In general, our field exploration 
+encountered a cinder deposit extending down to the maximum depth explored of about 10.7 
+feet below the existing ground surface. The cinder deposit generally consisted of medium 
+dense to dense cinder sand with some gravel and traces of silt. We did not encounter 
+groundwater at the time of our field exploration. However, it should be noted that 
+groundwater levels are subject to change due to rainfall, time of year, seasonal precipitation, 
+surface water runoff, and other factors. 
+Based on the field exploration, we recommend supporting the proposed residential 
+building structure on a shallow foundation system consisting of spread and/or continuous 
+footings. An allowable bearing pressure of up to 2,500 psf may be used in the design of 
+foundations bearing on new compacted fill or recompacted on-site soils. The bottom of the 
+footings should be embedded a minimum of 18 inches below the lowest adjacent finished 
+grades. Footings adjacent to existing and/or planned retaining walls should be embedded 
+deep enough to avoid surcharging the adjacent retaining wall foundations. The soils 
+encountered at the bottom of footing excavations should be compacted to a minimum of 90 
+percent relative compaction to provide a firm and unyielding surface. 
+The text of this report should be referred to for detailed discussions and specific 
+geotechnical recommendations. 
+END OF SUMMARY OF FINDINGS AND RECOMMENDATIONS 
+W.O. 8394-00 
+GEOLABS, INC. 
+Page 1 
+Hawaii • California 
+SECTION 1.  GENERAL 
+This report presents the results of our geotechnical engineering exploration 
+performed for the Kubota Residence project in the Honolulu District on the Island of Oahu, 
+Hawaii. The project location and general vicinity are shown on the Project Location Map, 
+Plate 1. 
+This report summarizes the findings and geotechnical recommendations resulting 
+from our field exploration, laboratory testing, and engineering analyses for the project. 
+These findings and geotechnical recommendations are intended for the design of building 
+foundations, slabs-on-grade, retaining structures, swimming pool, site grading, and 
+pavements only. The findings and recommendations presented herein are subject to the 
+limitations noted at the end of this report. 
+1.1 
+Project Considerations 
+The project involves a planned single-family residence at 2111 Mauna Place in the 
+upper Makiki area of Honolulu on the Island of Oahu, Hawaii. Based on the information 
+provided, we understand the existing house will be demolished, and a new two-story 
+residential structure with a garage and swimming pool will be constructed. The residential 
+lot is on a sloping terrain that will require the installation of several retaining walls. 
+Due to restrictive access to perform borings, we proposed to perform Dynamic 
+Cone Penetration (DCP) testing at selected locations at the project site. A total of 
+five DCP tests were conducted and extended to depths of about 6.1 to 10.7 feet below 
+the existing ground surface or refusal. The DCP tests were used to determine the general 
+consistency of the subsurface materials. In addition, two bulk surface samples were 
+collected for laboratory testing. 
+A grading plan was not available at the time this report was prepared; however, 
+we anticipate grading will be required to achieve the design finished grades at the project 
+site, with anticipated cuts and fills on the order of about 10 feet thick or less. The project 
+site is shown on the Site Plan, Plate 2.  
+SECTION 1. GENERAL 
+W.O. 8394-00 
+GEOLABS, INC. 
+Page 2 
+Hawaii • California 
+1.2 
+Purpose and Scope 
+The purpose of our exploration was to obtain an overview of the surface and 
+subsurface conditions at the site to formulate geotechnical engineering recommendations 
+for the design of the project. The work was performed in general accordance with our 
+revised fee proposal dated November 1, 2021. The scope of work for this exploration 
+included the following tasks and work efforts: 
+1. 
+Research and review available subsurface information near the project 
+vicinity. 
+2. 
+DCP location stakeout and utility clearances by our field geologist. 
+3. 
+Mobilization/demobilization of DCP equipment and two operators to and 
+from the project site. 
+4. 
+Performance of five DCP testing at selected locations extending to depths 
+of 6.1 to 10.7 feet below the existing ground surface (or upon refusal) by 
+our field engineer and helpers. 
+5. 
+Coordination of the field exploration, including logging of the probings by 
+our field engineer. 
+6. 
+Laboratory testing of bulk surface samples obtained during the field 
+exploration as an aid in classifying the materials and evaluating their 
+engineering properties. 
+7. 
+Analyses of the field and laboratory data to formulate geotechnical 
+engineering recommendations for the project. 
+8. 
+Preparation of a formal report summarizing our work on the project and 
+presenting our findings and recommendations. 
+9. 
+Coordination of our overall work on the project by our project manager. 
+10. 
+Quality assurance of our work and client/design team consultation by our 
+principal engineer. 
+11. 
+Miscellaneous work efforts, such as drafting, word processing, and clerical 
+support. 
+Detailed descriptions of our field exploration and results of the laboratory tests 
+performed are presented in Appendices A and B, respectively. 
+END OF GENERAL 
+W.O. 8394-00 
+GEOLABS, INC. 
+Page 3 
+Hawaii • California 
+SECTION 2.  SITE CHARACTERIZATION 
+2.1 
+Regional Geology 
+The Island of Oahu was built by the extrusion of basalt and basaltic lava from 
+two shield volcanoes, Waianae and Koolau. The older volcano, Waianae, is estimated to 
+be of middle to late Pliocene in age, and Koolau is estimated to be of late Pliocene to 
+early Pleistocene in age. After a long period of volcanic inactivity, during which time 
+erosion incised deep valleys into the Koolau shield, volcanic activity returned with a series 
+of lava flows followed by cinder and tuff cone formations. These series are referred to as 
+the Honolulu Volcanic Series. 
+The project site is located near the eastern flank of Punchbowl Hill. The Punchbowl 
+Hill (Puowaina) is a tuff and cinder cone near the center of Honolulu built against the end 
+of a spur of the Koolau Range. The tuff is mostly brown palagonitized vitric ash and lapilli 
+with scattered fragments of coral limestone and Koolau basalt. 
+During the Pleistocene Epoch (Ice Age), sea levels fluctuated in response to the 
+cycles of continental glaciation. As the glaciers grew and advanced, less water was 
+available to fill the oceanic basins such that sea levels fell below the present stands of 
+the sea. When the glaciers melted and receded, an excess of water became available 
+such that the sea levels rose to above the present sea level. 
+The processes of erosion and deposition were affected by these glacio-eustatic 
+sea level fluctuations. When the sea level was low, the erosional base level was 
+correspondingly lower, and valleys were carved to depths below the present sea level. 
+When the sea level was high, the erosional base level was raised such that sediments 
+accumulated at higher elevations.   
+2.2 
+Existing Site Conditions 
+The project site is located at 2111 Mauna Place in the upper Makiki area of 
+Honolulu on the Island of Oahu, Hawaii. The lot is currently occupied with a two-story 
+wooden house structure with a front covered carport. The existing ground surface is on 
+terraces, sloping downwards westerly, with elevations of about +100 Mean Sea Level 
+(MSL) at the front driveway. It should be noted that the elevations are referenced to a 
+SECTION 2. SITE CHARACTERIZATION  
+W.O. 8394-00 
+GEOLABS, INC. 
+Page 4 
+Hawaii • California 
+nearby temporary benchmark with an assumed elevation of +100 feet MSL.  Several 
+retaining walls were built to provide grade separations. The back yard is well maintained, 
+nicely grassed and relatively level area with elevation at about +61 feet MSL and is 
+bounded by a chain-link fence on top of a concrete rubble masonry (CRM) retaining wall 
+of about 6 feet high along the western property limit. Majority of the northern property line 
+is bounded by a concrete masonry unit (CMU) wall, while the southern property line is 
+bounded by a tall CRM wall that is in fair conditions with deteriorated and missing grouts. 
+2.3 
+Subsurface Conditions 
+Our field exploration at the project site consisted of conducting five DCP tests, 
+designated as DCP Nos. 1 through 5. The DCP tests extended to depths of about 6.1 to 
+10.7 feet below the existing ground surface. In addition, two bulk samples of the 
+near-surface soils, designated as Bulk-1 and Bulk-2, were obtained to evaluate the 
+subgrade characteristics of the near-surface soils. The approximate DCP test and bulk 
+sample locations are shown on the Site Plan, Plate 2. 
+Dynamic Cone Penetrometer (DCP) was used for probing by driving an 8-mm 
+diameter 60° steel cone tip with an 8-kg hammer falling 575-mm in vertical height. The 
+probe penetrations were recorded per every 5 blows and converted to standard 
+penetration resistance (SPT, ASTM D1586) using the correlation between Penetration 
+Index (PI) and SPT, developed by Sowers and Hedges and later Livneh and Ishai. Both 
+PI and SPT blow counts are shown on the Logs of DCP at the appropriate depths. 
+Based on our field exploration and our experience in the area, the subsurface 
+conditions at the project site generally consisted of medium dense to dense cinder sands 
+with some gravel and traces of silt extending to the maximum depth explored of about 
+10.7 feet below the existing ground surface. Detailed results of the DCP testing are 
+presented on the Logs of DCP, Plates A-1.0 through A-5.1. 
+We did not encounter groundwater in the DCP locations at the time of our field 
+exploration. However, it should be noted that groundwater levels are subject to change 
+due to rainfall, time of year, seasonal precipitation, surface water runoff, and other factors. 
+SECTION 2. SITE CHARACTERIZATION  
+W.O. 8394-00 
+GEOLABS, INC. 
+Page 5 
+Hawaii • California 
+Detailed descriptions of our field exploration methodology and the Logs of DCP 
+are presented in Appendix A. Results of the laboratory tests performed on selected soil 
+samples are presented in Appendix B.  
+2.4 
+Seismic Design Considerations 
+Based on the International Building Code (2012 Edition), the project site may be 
+subject to seismic activity, and seismic design considerations will need to be addressed. 
+The following subsections provide discussions on the seismicity, soil profile type for 
+seismic design, and the potential for liquefaction at the project site. 
+2.4.1 Earthquakes and Seismicity 
+In general, earthquakes throughout the world are caused by shifts in the tectonic 
+plates. In contrast, earthquake activity in Hawaii is linked primarily to volcanic activity; 
+therefore, earthquake activity in Hawaii generally occurs before or during volcanic 
+eruptions. In addition, earthquakes may result from the underground movement of 
+magma that comes close to the surface but does not erupt. The Island of Hawaii 
+experiences thousands of earthquakes each year, but most are so small that they 
+can only be detected by sensitive instruments. However, some of the earthquakes 
+are strong enough to be felt, and a few cause minor to moderate damage. 
+In general, earthquakes associated with volcanic activity are most common on the 
+Island of Hawaii. Earthquakes that are directly associated with the movement of 
+magma are concentrated beneath the active Kilauea and Mauna Loa Volcanoes on 
+the Island of Hawaii.  Because the majority of earthquakes in Hawaii (over 
+90 percent) are related to volcanic activity, the risk of seismic activity and degree of 
+ground shaking diminishes with increased distance from the Island of Hawaii. The 
+Island of Hawaii has experienced numerous earthquakes greater than Magnitude 5 
+(M5+); however, earthquakes are not confined only to the Island of Hawaii. 
+To a lesser degree, the Island of Maui has experienced several earthquakes greater 
+than Magnitude 5. Therefore, moderate to strong earthquakes have occurred in the 
+County of Maui. The effects of earthquakes occurring on the Islands of Hawaii and 
+Maui may be felt on the Island of Oahu. For example, small landslides occurred on 
+SECTION 2. SITE CHARACTERIZATION  
+W.O. 8394-00 
+GEOLABS, INC. 
+Page 6 
+Hawaii • California 
+the Island of Oahu as a result of the Maui Earthquake of 1938 (M6.8). Some houses 
+on the Island of Oahu were reportedly damaged as a result of the Lanai Earthquake 
+of 1871 (M7+). 
+In the last 150 years of recorded history, we are not aware of earthquakes greater 
+than Magnitude 6 that have occurred on the Island of Oahu. An earthquake of 
+Magnitude 4.8 to 5.0 occurred along the Diamond Head Fault in 1948 on the Island 
+of Oahu. The moderate tremor resulted in broken store windows, ruptured building 
+walls, and broken underground water mains. 
+2.4.2 Soil Profile Type for Seismic Design 
+Based on the subsurface materials anticipated at the project site and the geologic 
+setting of the area, we anticipate the project site may be classified from a seismic 
+analysis standpoint as being a “Stiff Soil Profile”. Therefore, we believe the seismic 
+design of the building structure may be designed based on a Site Class D soil profile 
+based on the International Building Code, 2012 Edition. 
+When seismic waves propagate through a soil profile, often the seismic shear waves 
+get intensified and amplified (or attenuated) depending on the thickness and 
+properties of the soils. Based on a Site Class D soil profile, the following seismic 
+design parameters were estimated and may be used for the seismic analysis of the 
+project site.   
+SEISMIC DESIGN PARAMETERS 
+INTERNATIONAL BUILDING CODE 
+2012 EDITION 
+Parameter 
+Value 
+MCE Peak Bedrock Acceleration, PBA (Site Class B)   
+0.267g 
+Spectral Response Acceleration (Site Class B), SS  
+0.58g 
+Spectral Response Acceleration (Site Class B), S1  
+0.17g 
+Site Class  
+“D” 
+Site Coefficient, Fa  
+1.336 
+Site Coefficient, Fv  
+2.121 
+SECTION 2. SITE CHARACTERIZATION  
+W.O. 8394-00 
+GEOLABS, INC. 
+Page 7 
+Hawaii • California 
+SEISMIC DESIGN PARAMETERS 
+INTERNATIONAL BUILDING CODE 
+2012 EDITION 
+Parameter 
+Value 
+Site Coefficient, Fpga   
+1.266 
+MCE Peak Ground Acceleration, PGA (Site Class D)  
+0.338g 
+Design Spectral Response Acceleration, SDS  
+0.516g 
+Design Spectral Response Acceleration, SD1  
+0.24g 
+2.4.3 Liquefaction Potential 
+Based on the International Building Code (2012 Edition), the project site should be 
+evaluated for the potential for soil liquefaction. Soil liquefaction is a condition where 
+saturated cohesionless soils near the ground surface undergo a substantial loss of 
+strength due to the build-up of excess pore water pressures resulting from cyclic 
+stress applications induced by earthquakes. In this process, when the loose 
+saturated sand deposit is subjected to vibration (such as during an earthquake), the 
+soil tends to densify and decrease in volume, causing an increase in pore water 
+pressure. If drainage is unable to occur rapidly enough to dissipate the build-up of 
+pore water pressure, the effective stress (internal strength) of the soil is reduced. 
+Under sustained vibrations, the pore water pressure build-up could equal the 
+overburden pressure, essentially reducing the soil shear strength to zero and causing 
+it to behave as a viscous fluid. During liquefaction, the soil acquires a mobility 
+sufficient to permit both horizontal and vertical movements, and if not confined, will 
+result in significant deformations. 
+Soils most susceptible to liquefaction are loose, uniformly graded, fine-grained sands 
+and loose silts with little cohesion. The major factors affecting the liquefaction 
+characteristics of a soil deposit are as follows: 
+FACTORS 
+LIQUEFACTION SUSCEPTIBILITY 
+Grain Size Distribution 
+Fine and uniform sands and silts are 
+more susceptible to liquefaction than 
+coarse or well-graded sands. 
+SECTION 2. SITE CHARACTERIZATION  
+W.O. 8394-00 
+GEOLABS, INC. 
+Page 8 
+Hawaii • California 
+FACTORS 
+LIQUEFACTION SUSCEPTIBILITY 
+Initial Relative Density 
+Loose sands and silts are most 
+susceptible to liquefaction. Liquefaction 
+potential is inversely proportional to 
+relative density. 
+Magnitude and Duration of Vibration 
+Liquefaction potential is directly 
+proportional to the magnitude and 
+duration of the earthquake. 
+Based on the subsurface conditions encountered, the phenomenon of soil 
+liquefaction is not a design consideration for this project site. The risk for potential 
+liquefaction is non-existent at this project site based on the subsurface conditions 
+encountered. 
+END OF SITE CHARACTERIZATION 
+W.O. 8394-00 
+GEOLABS, INC. 
+Page 9 
+Hawaii • California 
+SECTION 3.  DISCUSSION AND RECOMMENDATIONS 
+Our field exploration generally encountered a cinder deposit consisting of medium 
+dense to dense cinder sand with some gravel and traces of silt extending to the maximum 
+depth explored of approximately 10.7 feet below the existing ground surface. We did not 
+encounter groundwater in the DCP test locations at the time of our field exploration. 
+Based on the generally dense subsurface conditions, we recommend using 
+shallow spread and/or continuous strip footings to support the proposed new single-family 
+residence. An allowable bearing pressure of up to 2,500 pounds per square foot (psf) may 
+be used for the design of shallow foundations bearing on the recompacted on-site soils 
+and/or new compacted fills needed to achieve the design finished grades. For footings 
+bearing on the recompacted on-site soils and/or new compacted fills, the bottom of the 
+footing excavations should be recompacted to at least 90 percent relative compaction to 
+provide a relatively firm and smooth bearing surface prior to the placement of reinforcing 
+steel and/or concrete. 
+After clearing and demolition, cut subgrades and areas designated to receive fills 
+should be scarified to a depth of about 8 inches, moisture-conditioned to above the 
+optimum moisture content, and recompacted to a minimum of 90 percent relative 
+compaction. The compaction requirement for finished subgrades subjected to vehicular 
+traffic should be increased to a minimum of 95 percent relative compaction. 
+Detailed discussions and recommendations for the design of foundations, 
+slab-on-grade, retaining structures, swimming pool, site grading, pavements, and other 
+geotechnical aspects of the project are presented in the following sections.  
+3.1 
+Building Foundations 
+Based on the subsurface conditions anticipated at the project site, we recommend 
+utilizing shallow spread and/or continuous footings for foundation support of the new 
+residential structure planned at the site. An allowable bearing pressure of up to 
+2,500 pounds per square foot (psf) may be utilized for the design of building foundations 
+bearing on properly compacted fill or recompacted medium dense to dense on-site soils. 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 8394-00 
+GEOLABS, INC. 
+Page 10 
+Hawaii • California 
+This bearing value is for supporting dead-plus-live loads and may be increased by 
+one-third (⅓) for transient loads, such as those caused by wind or seismic forces.  
+Footing subgrades should be recompacted to at least 90 percent relative 
+compaction to provide a relatively firm and unyielding surface prior to the placement of 
+reinforcing steel or concrete. Soft and/or loose materials encountered at the bottom of 
+footing excavations should be over-excavated to expose the underlying firm materials. 
+The over-excavation should be backfilled with general fill materials compacted to a 
+minimum of 90 percent relative compaction, or the footing may be deepened to bear on 
+the underlying firm materials. 
+In general, the bottom of the footings should be embedded a minimum of 18 inches 
+below the lowest adjacent finished grade. Footings constructed near the tops of slopes 
+or on the sloping ground should be embedded deep enough to provide a minimum 
+horizontal set-back distance of 6 feet measured from the bottom outside edge of the 
+footings to the slope face.  
+Footings adjacent to existing and/or planned retaining walls should be embedded 
+deep enough to avoid surcharging the adjacent retaining wall foundations. It appears that 
+the proposed swimming pool will be located near the existing retaining wall along the 
+western property line. Therefore, deep footing embedment extending below one 
+horizontal to one vertical (1H:1V) imaginary plane extending upward from the bottom of 
+the existing retaining wall may be required for the western swimming pool wall. 
+Foundations next to utility trenches or easements should be embedded below a 
+1H:1V imaginary plane extending upward from the bottom edge of the utility trench, or the 
+footings should be embedded to a depth as deep as the inverts of the utility lines. This 
+requirement is necessary to avoid surcharging adjacent below-grade structures with 
+additional structural loads and to reduce the potential for appreciable foundation 
+settlement. 
+If foundations are designed and constructed in strict accordance with the 
+recommendations presented herein, we estimate the total settlements of the foundations 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 8394-00 
+GEOLABS, INC. 
+Page 11 
+Hawaii • California 
+to be less than 1 inch. Differential settlements between adjacent footings supported on 
+similar materials may be on the order of about 0.5 inches or less. 
+Lateral loads acting on the structures may be resisted by friction between the base 
+of the foundation and the bearing materials and by passive earth pressure developed 
+against the near-vertical faces of the embedded portion of foundations. A coefficient of 
+friction of 0.30 may be used for footings bearing directly on new compacted fills or the 
+recompacted on-site sandy soils. Resistance due to passive earth pressure may be 
+estimated using an equivalent fluid pressure of 300 pounds per square foot per foot of 
+depth (pcf), assuming that the soils around the footings are well-compacted. Unless 
+covered by pavements or slabs, the passive pressure resistance in the upper 12 inches 
+below the finished grade should be neglected.  
+3.2 
+Slabs-On-Grade 
+We anticipate concrete slabs-on-grade will be used for the ground floor of the new 
+single-family residence. For interior building slabs (not subjected to vehicular traffic or 
+machinery vibration), we recommend placing a minimum 4-inch thick layer of cushion fill 
+consisting of open-graded gravel (ASTM C33, No. 67 gradation) below the slabs. The 
+open-graded gravel cushion fill would serve as a capillary moisture break and would provide 
+uniform support of the slabs. To reduce the potential for excessive future moisture infiltration 
+through the slab and subsequent damage to floor coverings, an impervious moisture barrier 
+is recommended on top of the gravel cushion fill layer. Flexible floor coverings, such as 
+carpet or sheet vinyl, should be considered because they can better mask minor slab 
+cracking. Interior walls should be designed to incorporate some flexibility to accommodate 
+a small amount of possible ground movements.  
+Where the slabs will be subjected to vehicular traffic, we recommend proving a 
+6-inch layer of aggregate subbase below the slabs in lieu of the 4-inch thick gravel cushion 
+layer. The moisture barrier may be omitted for these slabs. The aggregate subbase 
+should consist of crushed basaltic aggregates compacted to a minimum of 95 percent 
+relative compaction. 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 8394-00 
+GEOLABS, INC. 
+Page 12 
+Hawaii • California 
+For the design of slabs supported on 6 inches of aggregate subbase, a modulus 
+of subgrade reaction of about 200 pounds per square inch per inch of deflection (pci) may 
+be used for the compacted aggregate subbase. Where slabs are intended to function as 
+rigid pavements, a minimum slab thickness of 6 inches may be used for preliminary 
+design purposes. Provisions should be made for proper load transfer across the slab 
+joints that will be subject to vehicular traffic.  
+Exterior concrete slabs, such as walkways, also may be required for the project. 
+In general, we recommend providing a minimum 4-inch thick cushion fill layer consisting 
+of select borrow subbase below exterior concrete slabs that will not be subjected to 
+vehicular traffic. Select borrow subbase should be compacted to at least 90 percent 
+relative compaction. To reduce the potential for significant slab cracking due to concrete 
+shrinkage, crack control joints should be provided at intervals equal to the width of the 
+walkways with expansion joints at right-angle intersections. 
+The thickened edges of slabs adjacent to unpaved areas should be embedded at 
+least 12 inches below the lowest adjacent grade. It should be emphasized that the areas 
+adjacent to the slab edges should be backfilled tightly against the edges of the slabs with 
+relatively impervious soils. These areas should also be graded to divert water away from 
+the slabs and to reduce the potential for water ponding around the slabs. 
+3.3 
+Retaining Structures 
+We anticipate retaining walls may be planned for grade separation at the project 
+site. In addition, we anticipate a swimming pool may be planned along the western portion 
+of the site. Based on the subsurface conditions encountered, the following general 
+guidelines may be used for the design of the retaining walls at the project site.  
+3.3.1 Retaining Wall Foundations 
+In general, we believe retaining wall foundations may be designed in accordance with 
+the recommendations and parameters presented in the “Building Foundations” 
+section herein. In addition, retaining wall foundations should be at least 18 inches 
+wide and should be embedded a minimum of 24 inches below the lowest adjacent 
+finished grades. For sloping ground conditions, the footing should extend deeper to 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 8394-00 
+GEOLABS, INC. 
+Page 13 
+Hawaii • California 
+obtain a minimum 6-foot setback distance measured horizontally from the bottom 
+outside edge of the footing to the face of the slope. Wall footings oriented parallel to 
+the direction of the slope should be constructed in stepped footings. 
+3.3.2 Lateral Earth Pressures 
+Retaining structures should be designed to resist lateral earth pressures due to the 
+adjacent soils and surcharge effects caused by loads adjacent to the walls. The 
+recommended lateral earth pressures for the design of the retaining structures, 
+expressed in equivalent fluid pressures of pounds per square foot per foot of 
+depth (pcf), are presented in the following table. 
+LATERAL EARTH PRESSURES FOR 
+DESIGN OF RETAINING STRUCTURES 
+Backfill 
+Condition 
+Earth Pressure 
+Component 
+Active 
+(pcf) 
+At-Rest 
+(pcf) 
+Level 
+Backfill 
+Horizontal 
+40 
+60 
+Vertical 
+None 
+None 
+Maximum 2H:1V 
+Sloping Backfill 
+Horizontal 
+64 
+80 
+Vertical 
+32 
+40 
+It is assumed that the backfill behind the retaining structures will be compacted to 
+between 90 and 95 percent relative compaction per ASTM D1557. Over-compaction 
+of the retaining structure backfill should be avoided.  
+In general, an active condition may be used only for gravity walls or walls that are 
+free to deflect by as much as 0.5 percent of the structure height. If the tops of 
+structures are not free to deflect beyond this degree, or are restrained such as spa 
+pool walls, the structures should be designed for the at-rest condition. These lateral 
+earth pressures do not include hydrostatic pressures that might be caused by 
+groundwater trapped behind the structures. 
+Surcharge stresses due to areal surcharges, line loads, and point loads within a 
+horizontal distance equal to the depth of the structure should be considered in the 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 8394-00 
+GEOLABS, INC. 
+Page 14 
+Hawaii • California 
+design. For uniform surcharge stresses imposed on the loaded side of the structure, 
+a rectangular distribution with a uniform pressure equal to 36 percent of the vertical 
+surcharge pressure acting over the entire height of the wall, which is free to deflect 
+(cantilever), may be used in the design. For walls that are restrained, a rectangular 
+distribution equal to 53 percent of the vertical surcharge pressure acting over the 
+entire height of the structure may be used for design. Additional analyses during 
+design may be needed to evaluate the surcharge effects of point loads and line loads.  
+3.3.3 Drainage 
+The retaining walls should be well-drained to reduce the potential for build-up of 
+hydrostatic pressures. A typical drainage system would consist of a 12-inch wide 
+zone of permeable material, such as No. 3 Fine gravel (ASTM C33, No. 67 
+gradation), placed directly around a perforated pipe (perforations facing down) at the 
+base of the wall discharging to an appropriate outlet or weep holes. As an alternative, 
+a prefabricated drainage product, such as MiraDrain or EnkaDrain, may be used 
+instead of the drainage material. The prefabricated drainage product also should be 
+hydraulically connected to a perforated pipe at the base of the wall. 
+The backfill from the bottom of the wall to the bottom of the perforated pipe or weep 
+hole should consist of relatively impervious materials to reduce the potential for 
+significant water infiltration into the subsurface. In addition, the upper 12 inches of 
+the retaining structure backfill should consist of relatively impervious materials to 
+reduce the potential for significant water infiltration behind the retaining structure 
+unless covered by concrete slabs at the surface. 
+3.4 
+Swimming Pool 
+In general, we believe the swimming pool foundations and swimming pool walls 
+may be designed in accordance with the recommendations and parameters presented in 
+the “Building Foundations” and “Retaining Structures” sections, respectively. Concrete 
+pool decks should be designed in general accordance with the recommendations 
+presented in the “Slabs-On-Grade” section presented herein.  Due to the nature of the 
+pool deck, the moisture barrier may be omitted under the pool deck slab.  
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 8394-00 
+GEOLABS, INC. 
+Page 15 
+Hawaii • California 
+We recommend placing a minimum 12-inch layer of non-expansive select granular 
+fill material below the pool bottom slab to provide uniform support. Prior to placing the 
+12-inch layer of select granular fill material, the subgrade soils should be scarified to a 
+depth of about 8 inches, moisture-conditioned to above the optimum moisture, and 
+compacted to a minimum of 90 percent relative compaction. It should be noted that the 
+subgrade soils should be kept moist until covered with the select granular fill material.  
+Soft and yielding areas encountered in the subgrade soils should be 
+over-excavated to expose firm material, and the resulting excavation should be backfilled 
+with well-compacted fill. Where shrinkage cracks are observed after compaction of the 
+subgrade, we recommend thoroughly moistening the soil to close the cracks or preparing 
+again as recommended above. 
+3.5 
+Site Grading 
+A grading plan was not available at the time this report was prepared; however, 
+we anticipate grading will be required to achieve the design finished grades at the project 
+site, with anticipated cuts and fills on the order of about 10 feet thick or less. Items of site 
+grading that are addressed in the subsequent subsections include the following: 
+1. 
+Site Preparation 
+2. 
+Fills and Backfills 
+3. 
+Fill Placement and Compaction Requirements 
+4. 
+Excavations 
+A Geolabs representative should monitor site grading operations to observe 
+whether undesirable materials are encountered during the excavation and scarification 
+process, and to confirm whether the exposed soil conditions are similar to those assumed 
+in this report. 
+3.5.1 Site Preparation 
+At the on-set of earthwork, the area within the contract grading limits should be 
+cleared and grubbed thoroughly. Vegetation, debris, deleterious materials, and other 
+unsuitable materials should be removed and disposed of properly off-site or in a 
+designated area to reduce the potential for contamination of the excavated materials. 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 8394-00 
+GEOLABS, INC. 
+Page 16 
+Hawaii • California 
+Soft and yielding areas encountered during clearing and grubbing below areas 
+designated to receive fill and/or future improvements should be over-excavated to 
+expose firm material, and the resulting excavation should be backfilled with 
+well-compacted fill. The excavated soft soils should not be reused as fill materials 
+and should be properly disposed of off-site or in landscaped areas, if appropriate. 
+After clearing and grubbing, areas to receive fills and finished subgrades in cut areas 
+should be scarified to a depth of 8 inches, moisture-conditioned to above the optimum 
+moisture content, and compacted to a minimum of 90 percent relative compaction. 
+The compaction requirements for finished subgrades subjected to vehicular traffic, 
+such as the pavement subgrade, should be increased to a minimum of 95 percent 
+relative compaction. Relative compaction refers to the in-place dry density of soil 
+expressed as a percentage of the maximum dry density of the same soil established 
+in accordance with ASTM D1557. Optimum moisture is the water content 
+(percentage by dry weight) corresponding to the maximum dry density.  
+Where shrinkage cracks are observed after the subgrade compaction, we 
+recommend preparing the subgrade soil again as recommended above. Saturation 
+and subsequent yielding of the exposed subgrade due to inclement weather and poor 
+drainage may require over-excavating the soft areas and replacing these areas with 
+engineered fill. A Geolabs representative in the field should evaluate the need for 
+over-excavation due to soft subgrade soil conditions. 
+3.5.2 Fills and Backfills 
+In general, the on-site soils may be reused as a source of general fill material, 
+provided they are free of vegetation, deleterious materials, and rock fragments 
+greater than 3 inches in maximum dimension. Imported fill materials should consist 
+of crushed basalt or coral. The select granular fill should be well-graded from coarse 
+to fine with particles no larger than 3 inches in largest dimension and should contain 
+between 10 and 30 percent particles passing the No. 200 sieve. The material should 
+have a laboratory California Bearing Ratio (CBR) value of 20 or more and should 
+have a maximum swell of less than 1 percent when tested in accordance with 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 8394-00 
+GEOLABS, INC. 
+Page 17 
+Hawaii • California 
+ASTM D1883. Geolabs should test imported fill materials a minimum of 7 days prior 
+to being transported to the project site for the intended use. 
+Aggregate subbase course should meet the material requirements for Select Borrow 
+for Subbase Course as specified in Section 30 of the Standard Specifications for 
+Public Works Construction, City and County of Honolulu, September 1986. 
+3.5.3 Fill Placement and Compaction Requirements 
+General fill materials should be placed in level lifts not exceeding 8 inches in loose 
+thickness, moisture-conditioned to above the optimum moisture content, and 
+compacted to at least 90 percent relative compaction. The non-expansive select 
+granular fill materials should be placed in level lifts of about 8 inches in loose 
+thickness, moisture-conditioned to above the optimum moisture, and compacted to 
+at least 90 percent relative compaction.  
+Aggregate subbase course materials should be moisture-conditioned to above the 
+optimum moisture content, placed in level lifts not exceeding 8 inches in loose 
+thickness, and compacted to a minimum of 95 percent relative compaction.  
+Relative compaction refers to the in-place dry density of soil expressed as a 
+percentage of the maximum dry density of the same soil established in accordance 
+with ASTM D1557. Optimum moisture is the water content (percentage by weight) 
+corresponding to the maximum dry density.  
+Compaction should be accomplished by sheepsfoot rollers, vibratory rollers or other 
+types of acceptable compaction equipment. Water tamping, jetting, or ponding 
+should not be allowed to compact the fills. 
+Where compaction is less than required, additional compactive effort should be 
+applied with adjustment of moisture content as necessary to obtain the specified 
+compaction. 
+3.5.4 Excavations 
+Based on the anticipated grading, excavations for this project will generally consist 
+of excavations for foundations and infrastructure installation. We anticipate these 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 8394-00 
+GEOLABS, INC. 
+Page 18 
+Hawaii • California 
+excavations likely will encounter the medium dense to dense cinder sand soils 
+encountered during our field exploration. Deep footing excavation and temporary 
+shoring may be required for footings located adjacent to existing and/or planned 
+retaining walls.  In addition, excavation in stages may be required.  The contractor 
+should determine the method and equipment to be used for footing excavation, 
+subject to practical limits and safety considerations. In addition, the excavations 
+should comply with the applicable federal, state, and local safety requirements. The 
+contractor should be responsible for excavation shoring design and installation. 
+However, our past experience in the project area indicates that cemented cinder 
+sand layers could be encountered in the cinder deposits. Therefore, the contractor 
+should anticipate the possibility of encountering cemented cinder sand layers. It is 
+anticipated that most of the material may be excavated with normal heavy excavation 
+equipment. However, deep excavations, excavations into cemented cinder sand may 
+require the use of hoerams.  
+The above discussions regarding the rippability of the subsurface materials are 
+based on field data from the field exploration and our experience in the area. 
+Contractors should be encouraged to examine the site conditions and the subsurface 
+data to make their own reasonable and prudent interpretation. 
+3.6 
+Pavement Design 
+We anticipate rigid Portland cement concrete pavement will be used for the new 
+driveway. In general, we anticipate vehicle loading for the new pavement will primarily 
+consist of passenger vehicles with some light trucks. Based on the CBR test results 
+obtained for the on-site sandy soils, the following pavement section may be used for the 
+design of the driveway:  
+Rigid Pavements 
+  6.0-Inch Portland Cement Concrete 
+  6.0-Inch Aggregate Subbase (95 Percent Relative Compaction) 
+12.0-Inch Total Pavement Thickness on Moist Compacted Subgrade 
+The pavement subgrade soils should be scarified to a minimum depth of about 
+8 inches, moisture-conditioned to above the optimum moisture content, and compacted 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 8394-00 
+GEOLABS, INC. 
+Page 19 
+Hawaii • California 
+to no less than 95 percent relative compaction. The subgrade soils should be thoroughly 
+moistened and kept moist until covered by the pavement structural section. We 
+recommend performing CBR and density tests on the actual subgrade soils encountered 
+during pavement construction to confirm the adequacy of the above section. The 
+recommended section also assumes that adequate drainage will be provided for the 
+paved areas. 
+Where minor shrinkage cracks are observed after subgrade preparation, we 
+recommend thoroughly moistening the soil to close the cracks prior to recompacting. 
+Saturation and subsequent yielding of the exposed subgrade due to inclement weather 
+and poor drainage may require over-excavation of the soft areas and replacement with 
+well-compacted fill. 
+Aggregate subbase course should be compacted to at least 95 percent relative 
+compaction and meet the material requirements for Select Borrow for Subbase Course 
+as specified in Section 30 of the Standard Specifications for Public Works Construction, 
+City and County of Honolulu, September 1986.  
+Paved areas should be sloped and drainage gradients maintained to carry surface 
+water off-site. Surface water ponding should not be allowed on-site during or after 
+construction. When concrete curbs are used to isolate landscaping in or adjacent to the 
+pavement areas, we recommend extending the curbs a minimum of 2 inches into the soils 
+below the aggregate subbase layer to reduce the potential for migration of excessive 
+landscape water into the pavement section. Alternatively, a subdrain system could be 
+constructed to collect excess water from landscaping irrigation. For long-term 
+performance, we recommend constructing a subdrain system adjacent to the 
+paved/landscaped areas.  
+3.7 
+Utility Trenches 
+We anticipate that underground utilities may be required for the project. In general, 
+good construction practices should be utilized for the installation and backfilling of the 
+trenches for the new utilities. The contractor should determine the method and equipment 
+to be used for trench excavation, subject to practical limits and safety considerations. In 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 8394-00 
+GEOLABS, INC. 
+Page 20 
+Hawaii • California 
+addition, the excavations should comply with the applicable federal, state, and local safety 
+requirements. The contractor should be responsible for trench shoring design and 
+installation. 
+In general, we recommend providing granular bedding consisting of 6 inches of 
+open-graded gravel, such as No. 3 Fine gravel (ASTM C33, No. 67 gradation), under the 
+pipes for uniform support. Free-draining granular materials, such as open-graded 
+No. 3 Fine gravel (ASTM C33, No. 67 gradation), also should be used for the initial trench 
+backfill up to about 12 inches above the pipes to provide adequate support around the 
+pipes. It is critical to use this free-draining material to reduce the potential for formation of 
+voids below the haunches of pipes and to provide adequate support for the sides of the 
+pipes. Improper trench backfill could result in backfill settlement and pipe damage. 
+The upper portion of the trench backfill from the level 12 inches above the pipes to 
+the top of the subgrade or finished grade may consist of on-site soils or select granular 
+fill material. The backfill should be placed in maximum 8-inch level loose lifts and 
+mechanically compacted to no less than 90 percent relative compaction to reduce the 
+potential for appreciable future ground subsidence. The upper 3 feet below the finished 
+grade in areas subjected to vehicular traffic should be compacted to a minimum of 
+95 percent relative compaction. Relative compaction refers to the in-place dry density of 
+soil expressed as a percentage of the maximum dry density of the same soil determined 
+in accordance with ASTM D1557.   
+3.8 
+Drainage 
+Finished grades outside the new structures should be sloped to shed water away 
+from the slabs and foundations and to reduce the potential for ponding around the 
+structures. In addition, it is advised to install roof gutter systems around the buildings and 
+to divert the discharge away from the slab and foundation areas. Excessive landscape 
+watering near the slabs and foundations also should be avoided. Planters next to 
+foundations should be avoided or have concrete bottoms and drains to reduce the 
+potential for excessive water infiltration into the subsurface. 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 8394-00 
+GEOLABS, INC. 
+Page 21 
+Hawaii • California 
+These drainage requirements are essential for the proper performance of the 
+above foundation recommendations because ponded water could cause subsurface soil 
+saturation and subsequent heaving or loss of strength. The foundation excavations 
+should be properly backfilled against the walls or slab edges immediately after setting of 
+the concrete to reduce the potential for excessive water infiltration into the subsurface. 
+Drainage swales should be provided as soon as possible and should be maintained to 
+drain surface water runoff away from the slabs and foundations. 
+3.9 
+Design Review 
+Preliminary and final drawings and specifications for the project should be 
+forwarded to Geolabs for review and written comments prior to bid solicitation for 
+construction. This review is necessary to evaluate the conformance of the plans and 
+specifications with the intent of the foundation and earthwork recommendations provided 
+herein. If this review is not made, Geolabs cannot be responsible for misinterpretation of 
+our recommendations. 
+3.10 Post-Design Services/Services During Construction 
+Geolabs should be retained to provide geotechnical engineering services during 
+construction. The critical items of construction monitoring that require "Special 
+Inspections" include the following: 
+Observation of subgrade preparation 
+Observation of fill and backfill placement 
+Observation of the shallow foundation excavations 
+A Geolabs representative also should monitor other aspects of earthwork 
+construction to observe compliance with the design concepts, specifications, or 
+recommendations and to expedite suggestions for design changes that may be required 
+in the event that subsurface conditions differ from those anticipated at the time this report 
+was prepared. Geolabs should be accorded the opportunity to provide geotechnical 
+engineering services during construction to confirm our assumptions in providing the 
+recommendations presented herein.  
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 8394-00 
+GEOLABS, INC. 
+Page 22 
+Hawaii • California 
+If the actual exposed subsurface conditions encountered during construction differ 
+from those assumed or considered herein, Geolabs should be contacted to review and/or 
+revise the geotechnical recommendations presented herein. 
+END OF DISCUSSION AND RECOMMENDATIONS 
+W.O. 8394-00 
+GEOLABS, INC. 
+Page 23 
+Hawaii • California 
+SECTION 4.  LIMITATIONS 
+The analyses and recommendations submitted herein are based in part upon 
+information obtained from the field DCP testing and bulk samples. Variations of the 
+subsurface conditions between and beyond the field data points may occur, and the 
+nature and extent of these variations may not become evident until construction is 
+underway. If variations then appear evident, it will be necessary to re-evaluate the 
+recommendations presented herein. 
+The DCP test and bulk sample locations indicated herein are approximate, having 
+been estimated by referenced to visible features shown on the Existing Site Plan prepared 
+by Peter Vincent Architects dated June 9, 2021. The DCP test and bulk sample locations 
+should be considered accurate only to the degree implied by the methods used. 
+We did not encounter groundwater at the time of our field exploration. However, it 
+must be noted that fluctuation may occur due to variation in seasonal rainfall, and other 
+factors.  
+This report has been prepared for the exclusive use of Bowers + Kubota Consulting 
+and their project consultants for specific application to the design of the Kubota Residence 
+project in accordance with generally accepted geotechnical engineering principles and 
+practices. No warranty is expressed or implied. 
+This report has been prepared solely for the purpose of assisting the design 
+engineers and architect in the design of the proposed project. Therefore, this report may 
+not contain sufficient data, or the proper information, to serve as a basis for detailed 
+construction cost estimates.  
+The owner/client should be aware that unanticipated soil conditions are commonly 
+encountered. Unforeseen subsurface conditions, such as perched groundwater, soft 
+deposits, hard layers or cavities, may occur in localized areas and may require additional 
+probing or corrections in the field (which may result in construction delays) to attain a 
+properly constructed project. Therefore, a sufficient contingency fund is recommended to 
+accommodate these possible extra costs. 
+SECTION 4. LIMITATIONS  
+W.O. 8394-00 
+GEOLABS, INC. 
+Page 24 
+Hawaii • California 
+This geotechnical engineering exploration conducted at the project site was not 
+intended to investigate the potential presence of hazardous materials existing at the 
+project site. It should be noted that the equipment, techniques, and personnel used to 
+conduct a geo-environmental exploration differ substantially from those applied in 
+geotechnical engineering. 
+END OF LIMITATIONS 
+CLOSURE
+The following plates and appendices are attached and complete this report:
+Propecl LO@atON Ma Dicer com scm ammaexcimn soos ers cme gare ones ange emer wes cERReemeeenes emu MEAMERINE INE An AEH HH Plate 1
+SS PIA ene mnnce vines meristsitsnonnadhnifis aman Suns csi nami sniim mn na cor meh sini Cs smmacnnbsioni i ils ER Plate 2
+a=) (0 I =0.4 0) (0) c= 110) 9 creer Appendix A
+Ligeret@ry TSS ons aces css meme aeRO RRNA Ms RNR RI ee SUNN. Appendix B
+-QQQ0000900-
+Respectfully submitted,
+GEOLABS, INC.
+By .
+Herbert Y.F. Chu, P.E.
+Associates/Senior Project Engineer
+GS:HC:If
+h:\8300Series\8394-00.hc1
+W.O. 8394-00 GEOLABS, INC. Page 25
+Hawaii ¢ California
+PLATES 
+KUBOTA RESIDENCE
+PROJECT LOCATION MAP
+GRAPHIC SCALE
+1000
+2000
+2000
+0
+FT.
+PROJECT LOCATION
+GENERAL PROJECT LOCATION
+N
+WAHIAWA
+WAIKIKI
+HONOLULU
+AIEA
+PEARL CITY
+WAIPAHU
+EWA
+BARBERS POINT
+NANAKULI
+WAIANAE
+WAIALUA
+HALEIWA
+KAHUKU
+POINT
+DIAMOND
+HEAD
+HAWAII
+KAI
+WAIMANALO
+KAILUA
+KANEOHE
+KAHALUU
+PUNALUU
+HAUULA
+KAENA POINT
+ISLAND MAP
+NO SCALE
+HONOLULU, OAHU, HAWAII
+JANUARY 2022
+1" = 2,000'
+Geotechnical Engineering
+GEOLABS, INC.
+DATE
+SCALE
+1
+8394-00
+DRAWN BY
+HYC
+W.O.
+PLATE
+N
+PACIFIC      OCEAN
+CAD User: HENRY  File Last Updated: January 18, 2022 8:59:37am  Plot Date:  January 18, 2022 - 9:29:22am
+File: A:\Drafting\Drafting\Working\8394-00_Kubota_Residence\8394-00PLM.dwg\1
+Plotter: DWG To PDF-GEO.pc3  Plotstyle: GEO-No-Dithering-Blue-Boring.ctb
+REFERENCE: MAP CREATED WITH TOPO!® ©2010 NATIONAL
+GEOGRAPHIC; ©2007 TELE ATLAS, REL. 1/2007.
+APPROXIMATE DCP TEST LOCATION
+LEGEND:
+N
+APPROXIMATE BULK SAMPLE LOCATION
+KUBOTA RESIDENCE
+HONOLULU, OAHU, HAWAII
+GEOLABS, INC.
+Geotechnical Engineering
+8394-00
+DRAWN BY
+HYC
+1" = 20'
+JANUARY 2022
+SCALE
+DATE
+W.O.
+SITE PLAN
+2
+PLATE
+GRAPHIC SCALE
+10
+0
+20
+40
+60 FT.
+CAD User: HENRY  File Last Updated: January 18, 2022 9:28:28am  Plot Date:  January 18, 2022 - 9:29:31am
+File: A:\Drafting\Drafting\Working\8394-00_Kubota_Residence\8394-00SitePlan.dwg\2
+Plotter: DWG To PDF-GEO.pc3  Plotstyle: GEO-No-Dithering-Blue-Boring.ctb
+REFERENCE: EXISTING SITE PLAN/TOPOGRAPHY DATED JUNE 9, 2021
+PREPARED BY PETER VINCENT ARCHITECTS.
+2111 MAUNA PLACE
+DCP-5
+DCP-4
+DCP-3
+DCP-1
+DCP-2
+BULK-1
+BULK-2
+APPENDIX  A  
+W.O. 8394-00 
+GEOLABS, INC. 
+JANUARY 2022     Page A-1 
+Hawaii • California 
+A P P E N D I X   A 
+Field Exploration 
+We explored the subsurface conditions at the project site by performing five 
+Dynamic Cone Penetration (DCP) testing, designated as DCP Nos. 1 through 5, 
+extending to depths of about 6.1 to 10.7 feet below the existing ground surface.  In 
+addition, two bulk samples of the near-surface soils, designated as Bulk-1 and Bulk-2, 
+were obtained to evaluate the subgrade characteristics of the near-surface soils. The 
+approximate DCP test and bulk sample locations are shown on the Site Plan, Plate 2.  
+The procedures used in our DCP tests are in general accordance with ASTM D6951, 
+Standard Test Method for Use of the Dynamic Cone Penetrometer in Shallow Pavement 
+Applications. The DCP apparatus consists of a 5/8-inch diameter steel rod with a 60-degree 
+conical tip. The rod is topped with an anvil that is connected to a second steel rod. This rod 
+is used as a guide to allow a 17.6-lb hammer to be repeatedly raised and dropped from a 
+height of 22.6 inches. The connection between the two rods consists of an anvil to allow for 
+quick connections between the rods and for efficient energy transfer from the falling weight 
+to the penetrating rod. 
+Once the test apparatus is assembled, the DCP is placed at the test location and the 
+initial penetration of the rod is recorded to provide a zeroing scale. While holding the rod 
+vertically, the weight is raised to the top of the rod (22.6 inches above the anvil) and dropped. 
+The penetration of the rod is measured after each five-drop increment. 
+In the DCP tests conducted by Geolabs, the same equipment described above was 
+used to record the depth of penetration per hammer drop, as shown in the field logs provided 
+on the Logs of DCP, Plates A-1.0 through A-5.1. 
+Log of
+DCP                          
+1 
+No. of 
+Blows
+Penetration 
+Reading
+Depth of 
+Penetration 
+(mm)
+Depth of 
+Penetration 
+(inches)
+Elevation of 
+Penetration 
+(feet MSL)
+Penetration 
+Index 
+(mm/blow)
+Correlated 
+SPT Index 
+(mm/blow)
+SPT Blow 
+Count 
+(blow/foot)
+5
+109
+109
+4.3
+21.8
+14.5
+21
+5
+164
+164
+6.5
+11.0
+10.5
+29
+5
+203
+203
+8.0
+7.8
+8.9
+34
+5
+228
+228
+9.0
+5.0
+7.2
+42
+5
+250
+250
+9.8
+4.4
+6.8
+45
+5
+288
+288
+11.3
+7.6
+8.8
+35
+5
+300
+300
+11.8
+2.4
+5.1
+60
+5
+323
+323
+12.7
+4.6
+6.9
+44
+5
+342
+342
+13.5
+3.8
+6.3
+48
+5
+363
+363
+14.3
+4.2
+6.6
+46
+5
+383
+383
+15.1
+4.0
+6.5
+47
+5
+393
+393
+15.5
+2.0
+4.6
+66
+5
+410
+410
+16.1
+3.4
+6.0
+51
+5
+425
+425
+16.7
+3.0
+5.6
+54
+5
+438
+438
+17.2
+2.6
+5.3
+58
+5
+452
+452
+17.8
+2.8
+5.5
+56
+5
+467
+467
+18.4
+3.0
+5.6
+54
+5
+481
+481
+18.9
+2.8
+5.5
+56
+5
+494
+494
+19.4
+2.6
+5.3
+58
+5
+508
+508
+20.0
+2.8
+5.5
+56
+5
+519
+519
+20.4
+2.2
+4.9
+63
+5
+532
+532
+20.9
+2.6
+5.3
+58
+5
+546
+546
+21.5
+2.8
+5.5
+56
+5
+559
+559
+22.0
+2.6
+5.3
+58
+5
+572
+572
+22.5
+2.6
+5.3
+58
+5
+584
+584
+23.0
+2.4
+5.1
+60
+5
+598
+598
+23.5
+2.8
+5.5
+56
+5
+612
+612
+24.1
+2.8
+5.5
+56
+5
+620
+620
+24.4
+1.6
+4.2
+73
+5
+633
+633
+24.9
+2.6
+5.3
+58
+5
+648
+648
+25.5
+3.0
+5.6
+54
+5
+660
+660
+26.0
+2.4
+5.1
+60
+5
+673
+673
+26.5
+2.6
+5.3
+58
+5
+688
+688
+27.1
+3.0
+5.6
+54
+5
+702
+702
+27.6
+2.8
+5.5
+56
+5
+713
+713
+28.1
+2.2
+4.9
+63
+Date Started:
+12/8/2021
+Water Level:
+Not Encountered
+Date Completed:
+12/8/2021
+Logged By:
+A.Taeb
+Probing Equipment:
+DCP H-4219
+Total Depth:
+9.8'
+Size of Cone Tip:
+8 mm dia. with 60° cone
+Work Order:
+8394-00
+Driving Energy:
+8 kg weight 575 mm drop
+Plate                
+A-1.0
+GEOLABS, INC.                                                                                         
+Kubota Residence
+Honolulu, Oahu, Hawaii
+Geotechnical Engineering  
+Log of
+DCP                          
+1 
+No. of 
+Blows
+Penetration 
+Reading
+Depth of 
+Penetration 
+(mm)
+Depth of 
+Penetration 
+(inches)
+Elevation of 
+Penetration 
+(feet MSL)
+Penetration 
+Index 
+(mm/blow)
+Correlated 
+SPT Index 
+(mm/blow)
+SPT Blow 
+Count 
+(blow/foot)
+5
+727
+727
+28.6
+2.8
+5.5
+56
+5
+739
+739
+29.1
+2.4
+5.1
+60
+5
+751
+751
+29.6
+2.4
+5.1
+60
+5
+763
+763
+30.0
+2.4
+5.1
+60
+5
+777
+777
+30.6
+2.8
+5.5
+56
+5
+790
+790
+31.1
+2.6
+5.3
+58
+5
+804
+804
+31.7
+2.8
+5.5
+56
+5
+815
+815
+32.1
+2.2
+4.9
+63
+5
+830
+830
+32.7
+3.0
+5.6
+54
+5
+846
+846
+33.3
+3.2
+5.8
+52
+5
+860
+860
+33.9
+2.8
+5.5
+56
+5
+874
+874
+34.4
+2.8
+5.5
+56
+5
+891
+891
+35.1
+3.4
+6.0
+51
+5
+905
+905
+35.6
+2.8
+5.5
+56
+5
+920
+920
+36.2
+3.0
+5.6
+54
+5
+933
+933
+36.7
+2.6
+5.3
+58
+5
+944
+944
+37.2
+2.2
+4.9
+63
+5
+958
+958
+37.7
+2.8
+5.5
+56
+5
+971
+971
+38.2
+2.6
+5.3
+58
+5
+986
+986
+38.8
+3.0
+5.6
+54
+5
+1000
+1000
+39.4
+2.8
+5.5
+56
+5
+1015
+1015
+40.0
+3.0
+5.6
+54
+5
+1029
+1029
+40.5
+2.8
+5.5
+56
+5
+1043
+1043
+41.1
+2.8
+5.5
+56
+5
+1055
+1055
+41.5
+2.4
+5.1
+60
+5
+1069
+1069
+42.1
+2.8
+5.5
+56
+5
+1082
+1082
+42.6
+2.6
+5.3
+58
+5
+1095
+1095
+43.1
+2.6
+5.3
+58
+5
+1109
+1109
+43.7
+2.8
+5.5
+56
+5
+1123
+1123
+44.2
+2.8
+5.5
+56
+5
+1136
+1136
+44.7
+2.6
+5.3
+58
+5
+1150
+1150
+45.3
+2.8
+5.5
+56
+5
+1163
+1163
+45.8
+2.6
+5.3
+58
+5
+1175
+1175
+46.3
+2.4
+5.1
+60
+5
+1190
+1190
+46.9
+3.0
+5.6
+54
+5
+1204
+1204
+47.4
+2.8
+5.5
+56
+Date Started:
+12/8/2021
+Water Level:
+Not Encountered
+Date Completed:
+12/8/2021
+Logged By:
+A.Taeb
+Probing Equipment:
+DCP H-4219
+Total Depth:
+9.8'
+Size of Cone Tip:
+8 mm dia. with 60° cone
+Work Order:
+8394-00
+Driving Energy:
+8 kg weight 575 mm drop
+Plate                
+A-1.1
+GEOLABS, INC.                                                                                         
+Kubota Residence
+Honolulu, Oahu, Hawaii
+Geotechnical Engineering  
+Log of
+DCP                          
+1 
+No. of 
+Blows
+Penetration 
+Reading
+Depth of 
+Penetration 
+(mm)
+Depth of 
+Penetration 
+(inches)
+Elevation of 
+Penetration 
+(feet MSL)
+Penetration 
+Index 
+(mm/blow)
+Correlated 
+SPT Index 
+(mm/blow)
+SPT Blow 
+Count 
+(blow/foot)
+5
+1220
+1220
+48.0
+3.2
+5.8
+52
+5
+1234
+1234
+48.6
+2.8
+5.5
+56
+5
+1249
+1249
+49.2
+3.0
+5.6
+54
+5
+1260
+1260
+49.6
+2.2
+4.9
+63
+5
+1273
+1273
+50.1
+2.6
+5.3
+58
+5
+1288
+1288
+50.7
+3.0
+5.6
+54
+5
+1301
+1301
+51.2
+2.6
+5.3
+58
+5
+1314
+1314
+51.7
+2.6
+5.3
+58
+5
+1327
+1327
+52.2
+2.6
+5.3
+58
+5
+1340
+1340
+52.8
+2.6
+5.3
+58
+5
+1354
+1354
+53.3
+2.8
+5.5
+56
+5
+1367
+1367
+53.8
+2.6
+5.3
+58
+5
+1380
+1380
+54.3
+2.6
+5.3
+58
+5
+1395
+1395
+54.9
+3.0
+5.6
+54
+5
+1410
+1410
+55.5
+3.0
+5.6
+54
+5
+1425
+1425
+56.1
+3.0
+5.6
+54
+5
+1437
+1437
+56.6
+2.4
+5.1
+60
+5
+1450
+1450
+57.1
+2.6
+5.3
+58
+5
+1463
+1463
+57.6
+2.6
+5.3
+58
+5
+1474
+1474
+58.0
+2.2
+4.9
+63
+5
+1485
+1485
+58.5
+2.2
+4.9
+63
+5
+1499
+1499
+59.0
+2.8
+5.5
+56
+5
+1510
+1510
+59.4
+2.2
+4.9
+63
+5
+1522
+1522
+59.9
+2.4
+5.1
+60
+5
+1535
+1535
+60.4
+2.6
+5.3
+58
+5
+1547
+1547
+60.9
+2.4
+5.1
+60
+5
+1559
+1559
+61.4
+2.4
+5.1
+60
+5
+1571
+1571
+61.9
+2.4
+5.1
+60
+5
+1585
+1585
+62.4
+2.8
+5.5
+56
+5
+1597
+1597
+62.9
+2.4
+5.1
+60
+5
+1608
+1608
+63.3
+2.2
+4.9
+63
+5
+1620
+1620
+63.8
+2.4
+5.1
+60
+5
+1635
+1635
+64.4
+3.0
+5.6
+54
+5
+1645
+1645
+64.8
+2.0
+4.6
+66
+5
+1657
+1657
+65.2
+2.4
+5.1
+60
+5
+1670
+1670
+65.7
+2.6
+5.3
+58
+Date Started:
+12/8/2021
+Water Level:
+Not Encountered
+Date Completed:
+12/8/2021
+Logged By:
+A.Taeb
+Probing Equipment:
+DCP H-4219
+Total Depth:
+9.8'
+Size of Cone Tip:
+8 mm dia. with 60° cone
+Work Order:
+8394-00
+Driving Energy:
+8 kg weight 575 mm drop
+Plate                
+A-1.2
+GEOLABS, INC.                                                                                         
+Kubota Residence
+Honolulu, Oahu, Hawaii
+Geotechnical Engineering  
+Log of
+DCP                          
+1 
+No. of 
+Blows
+Penetration 
+Reading
+Depth of 
+Penetration 
+(mm)
+Depth of 
+Penetration 
+(inches)
+Elevation of 
+Penetration 
+(feet MSL)
+Penetration 
+Index 
+(mm/blow)
+Correlated 
+SPT Index 
+(mm/blow)
+SPT Blow 
+Count 
+(blow/foot)
+5
+1681
+1681
+66.2
+2.2
+4.9
+63
+5
+1693
+1693
+66.7
+2.4
+5.1
+60
+5
+1705
+1705
+67.1
+2.4
+5.1
+60
+5
+1716
+1716
+67.6
+2.2
+4.9
+63
+5
+1728
+1728
+68.0
+2.4
+5.1
+60
+5
+1740
+1740
+68.5
+2.4
+5.1
+60
+5
+1751
+1751
+68.9
+2.2
+4.9
+63
+5
+1757
+1757
+69.2
+1.2
+3.6
+84
+5
+1769
+1769
+69.6
+2.4
+5.1
+60
+5
+1780
+1780
+70.1
+2.2
+4.9
+63
+5
+1788
+1788
+70.4
+1.6
+4.2
+73
+5
+1799
+1799
+70.8
+2.2
+4.9
+63
+5
+1809
+1809
+71.2
+2.0
+4.6
+66
+5
+1819
+1819
+71.6
+2.0
+4.6
+66
+5
+1827
+1827
+71.9
+1.6
+4.2
+73
+5
+1838
+1838
+72.4
+2.2
+4.9
+63
+5
+1844
+1844
+72.6
+1.2
+3.6
+84
+5
+1852
+1852
+72.9
+1.6
+4.2
+73
+5
+1862
+1862
+73.3
+2.0
+4.6
+66
+5
+1869
+1869
+73.6
+1.4
+3.9
+78
+5
+1883
+1883
+74.1
+2.8
+5.5
+56
+5
+1899
+1899
+74.8
+3.2
+5.8
+52
+5
+1909
+1909
+75.2
+2.0
+4.6
+66
+5
+1920
+1920
+75.6
+2.2
+4.9
+63
+5
+1929
+1929
+75.9
+1.8
+4.4
+69
+5
+1936
+1936
+76.2
+1.4
+3.9
+78
+5
+1943
+1943
+76.5
+1.4
+3.9
+78
+5
+1954
+1954
+76.9
+2.2
+4.9
+63
+5
+1959
+1959
+77.1
+1.0
+3.3
+91
+5
+1967
+1967
+77.4
+1.6
+4.2
+73
+5
+1972
+1972
+77.6
+1.0
+3.3
+91
+5
+1984
+1984
+78.1
+2.4
+5.1
+60
+5
+1997
+1997
+78.6
+2.6
+5.3
+58
+5
+2004
+2004
+78.9
+1.4
+3.9
+78
+5
+2015
+2015
+79.3
+2.2
+4.9
+63
+5
+2029
+2029
+79.9
+2.8
+5.5
+56
+Date Started:
+12/8/2021
+Water Level:
+Not Encountered
+Date Completed:
+12/8/2021
+Logged By:
+A.Taeb
+Probing Equipment:
+DCP H-4219
+Total Depth:
+9.8'
+Size of Cone Tip:
+8 mm dia. with 60° cone
+Work Order:
+8394-00
+Driving Energy:
+8 kg weight 575 mm drop
+Plate                
+A-1.3
+GEOLABS, INC.                                                                                         
+Kubota Residence
+Honolulu, Oahu, Hawaii
+Geotechnical Engineering  
+Log of
+DCP                          
+1 
+No. of 
+Blows
+Penetration 
+Reading
+Depth of 
+Penetration 
+(mm)
+Depth of 
+Penetration 
+(inches)
+Elevation of 
+Penetration 
+(feet MSL)
+Penetration 
+Index 
+(mm/blow)
+Correlated 
+SPT Index 
+(mm/blow)
+SPT Blow 
+Count 
+(blow/foot)
+5
+2039
+2039
+80.3
+2.0
+4.6
+66
+5
+2049
+2049
+80.7
+2.0
+4.6
+66
+5
+2054
+2054
+80.9
+1.0
+3.3
+91
+5
+2061
+2061
+81.1
+1.4
+3.9
+78
+5
+2070
+2070
+81.5
+1.8
+4.4
+69
+5
+2079
+2079
+81.9
+1.8
+4.4
+69
+5
+2088
+2088
+82.2
+1.8
+4.4
+69
+5
+2096
+2096
+82.5
+1.6
+4.2
+73
+5
+2104
+2104
+82.8
+1.6
+4.2
+73
+5
+2112
+2112
+83.1
+1.6
+4.2
+73
+5
+2115
+2115
+83.3
+0.6
+2.6
+117
+5
+2124
+2124
+83.6
+1.8
+4.4
+69
+5
+2134
+2134
+84.0
+2.0
+4.6
+66
+5
+2141
+2141
+84.3
+1.4
+3.9
+78
+5
+2149
+2149
+84.6
+1.6
+4.2
+73
+5
+2157
+2157
+84.9
+1.6
+4.2
+73
+5
+2166
+2166
+85.3
+1.8
+4.4
+69
+5
+2174
+2174
+85.6
+1.6
+4.2
+73
+5
+2184
+2184
+86.0
+2.0
+4.6
+66
+5
+2193
+2193
+86.3
+1.8
+4.4
+69
+5
+2202
+2202
+86.7
+1.8
+4.4
+69
+5
+2212
+2212
+87.1
+2.0
+4.6
+66
+5
+2221
+2221
+87.4
+1.8
+4.4
+69
+5
+2229
+2229
+87.8
+1.6
+4.2
+73
+5
+2235
+2235
+88.0
+1.2
+3.6
+84
+5
+2246
+2246
+88.4
+2.2
+4.9
+63
+5
+2256
+2256
+88.8
+2.0
+4.6
+66
+5
+2269
+2269
+89.3
+2.6
+5.3
+58
+5
+2279
+2279
+89.7
+2.0
+4.6
+66
+5
+2284
+2284
+89.9
+1.0
+3.3
+91
+5
+2294
+2294
+90.3
+2.0
+4.6
+66
+5
+2301
+2301
+90.6
+1.4
+3.9
+78
+5
+2314
+2314
+91.1
+2.6
+5.3
+58
+5
+2324
+2324
+91.5
+2.0
+4.6
+66
+5
+2333
+2333
+91.9
+1.8
+4.4
+69
+5
+2341
+2341
+92.2
+1.6
+4.2
+73
+Date Started:
+12/8/2021
+Water Level:
+Not Encountered
+Date Completed:
+12/8/2021
+Logged By:
+A.Taeb
+Probing Equipment:
+DCP H-4219
+Total Depth:
+9.8'
+Size of Cone Tip:
+8 mm dia. with 60° cone
+Work Order:
+8394-00
+Driving Energy:
+8 kg weight 575 mm drop
+Plate                
+A-1.4
+GEOLABS, INC.                                                                                         
+Kubota Residence
+Honolulu, Oahu, Hawaii
+Geotechnical Engineering  
+Log of
+DCP                          
+1 
+No. of 
+Blows
+Penetration 
+Reading
+Depth of 
+Penetration 
+(mm)
+Depth of 
+Penetration 
+(inches)
+Elevation of 
+Penetration 
+(feet MSL)
+Penetration 
+Index 
+(mm/blow)
+Correlated 
+SPT Index 
+(mm/blow)
+SPT Blow 
+Count 
+(blow/foot)
+5
+2351
+2351
+92.6
+2.0
+4.6
+66
+5
+2359
+2359
+92.9
+1.6
+4.2
+73
+5
+2366
+2366
+93.1
+1.4
+3.9
+78
+5
+2374
+2374
+93.5
+1.6
+4.2
+73
+5
+2381
+2381
+93.7
+1.4
+3.9
+78
+5
+2389
+2389
+94.1
+1.6
+4.2
+73
+5
+2395
+2395
+94.3
+1.2
+3.6
+84
+5
+2402
+2402
+94.6
+1.4
+3.9
+78
+5
+2411
+2411
+94.9
+1.8
+4.4
+69
+5
+2417
+2417
+95.2
+1.2
+3.6
+84
+5
+2426
+2426
+95.5
+1.8
+4.4
+69
+5
+2436
+2436
+95.9
+2.0
+4.6
+66
+5
+2447
+2447
+96.3
+2.2
+4.9
+63
+5
+2458
+2458
+96.8
+2.2
+4.9
+63
+5
+2466
+2466
+97.1
+1.6
+4.2
+73
+5
+2477
+2477
+97.5
+2.2
+4.9
+63
+5
+2487
+2487
+97.9
+2.0
+4.6
+66
+5
+2496
+2496
+98.3
+1.8
+4.4
+69
+5
+2506
+2506
+98.7
+2.0
+4.6
+66
+5
+2511
+2511
+98.9
+1.0
+3.3
+91
+5
+2521
+2521
+99.3
+2.0
+4.6
+66
+5
+2532
+2532
+99.7
+2.2
+4.9
+63
+5
+2551
+2551
+100.4
+3.8
+6.3
+48
+5
+2566
+2566
+101.0
+3.0
+5.6
+54
+5
+2576
+2576
+101.4
+2.0
+4.6
+66
+5
+2586
+2586
+101.8
+2.0
+4.6
+66
+5
+2596
+2596
+102.2
+2.0
+4.6
+66
+5
+2602
+2602
+102.4
+1.2
+3.6
+84
+5
+2612
+2612
+102.8
+2.0
+4.6
+66
+5
+2626
+2626
+103.4
+2.8
+5.5
+56
+5
+2636
+2636
+103.8
+2.0
+4.6
+66
+5
+2656
+2656
+104.6
+4.0
+6.5
+47
+5
+2668
+2668
+105.0
+2.4
+5.1
+60
+5
+2678
+2678
+105.4
+2.0
+4.6
+66
+5
+2691
+2691
+105.9
+2.6
+5.3
+58
+5
+2706
+2706
+106.5
+3.0
+5.6
+54
+Date Started:
+12/8/2021
+Water Level:
+Not Encountered
+Date Completed:
+12/8/2021
+Logged By:
+A.Taeb
+Probing Equipment:
+DCP H-4219
+Total Depth:
+9.8'
+Size of Cone Tip:
+8 mm dia. with 60° cone
+Work Order:
+8394-00
+Driving Energy:
+8 kg weight 575 mm drop
+Plate                
+A-1.5
+GEOLABS, INC.                                                                                         
+Kubota Residence
+Honolulu, Oahu, Hawaii
+Geotechnical Engineering  
+Log of
+DCP                          
+1 
+No. of 
+Blows
+Penetration 
+Reading
+Depth of 
+Penetration 
+(mm)
+Depth of 
+Penetration 
+(inches)
+Elevation of 
+Penetration 
+(feet MSL)
+Penetration 
+Index 
+(mm/blow)
+Correlated 
+SPT Index 
+(mm/blow)
+SPT Blow 
+Count 
+(blow/foot)
+5
+2717
+2717
+107.0
+2.2
+4.9
+63
+5
+2734
+2734
+107.6
+3.4
+6.0
+51
+5
+2751
+2751
+108.3
+3.4
+6.0
+51
+5
+2764
+2764
+108.8
+2.6
+5.3
+58
+5
+2777
+2777
+109.3
+2.6
+5.3
+58
+5
+2791
+2791
+109.9
+2.8
+5.5
+56
+5
+2799
+2799
+110.2
+1.6
+4.2
+73
+5
+2812
+2812
+110.7
+2.6
+5.3
+58
+5
+2826
+2826
+111.3
+2.8
+5.5
+56
+5
+2836
+2836
+111.7
+2.0
+4.6
+66
+5
+2853
+2853
+112.3
+3.4
+6.0
+51
+5
+2869
+2869
+113.0
+3.2
+5.8
+52
+5
+2878
+2878
+113.3
+1.8
+4.4
+69
+5
+2886
+2886
+113.6
+1.6
+4.2
+73
+5
+2898
+2898
+114.1
+2.4
+5.1
+60
+5
+2911
+2911
+114.6
+2.6
+5.3
+58
+5
+2916
+2916
+114.8
+1.0
+3.3
+91
+5
+2933
+2933
+115.5
+3.4
+6.0
+51
+5
+2947
+2947
+116.0
+2.8
+5.5
+56
+5
+2956
+2956
+116.4
+1.8
+4.4
+69
+5
+2974
+2974
+117.1
+3.6
+6.1
+50
+5
+2984
+2984
+117.5
+2.0
+4.6
+66
+5
+2986
+2986
+117.6
+0.4
+2.2
+141
+10
+2986.1
+2986.1
+117.6
+0.0
+0.4
+820
+Date Started:
+12/8/2021
+Water Level:
+Not Encountered
+Date Completed:
+12/8/2021
+Logged By:
+A.Taeb
+Probing Equipment:
+DCP H-4219
+Total Depth:
+9.8'
+Size of Cone Tip:
+8 mm dia. with 60° cone
+Work Order:
+8394-00
+Driving Energy:
+8 kg weight 575 mm drop
+Plate                
+A-1.6
+GEOLABS, INC.                                                                                         
+Kubota Residence
+Honolulu, Oahu, Hawaii
+Geotechnical Engineering  
+Log of
+DCP                          
+2 
+No. of 
+Blows
+Penetration 
+Reading
+Depth of 
+Penetration 
+(mm)
+Depth of 
+Penetration 
+(inches)
+Elevation of 
+Penetration 
+(feet MSL)
+Penetration 
+Index 
+(mm/blow)
+Correlated 
+SPT Index 
+(mm/blow)
+SPT Blow 
+Count 
+(blow/foot)
+5
+210
+210
+8.3
+42.0
+19.8
+15
+5
+375
+375
+14.8
+33.0
+17.7
+17
+5
+554
+554
+21.8
+35.8
+18.4
+17
+5
+645
+645
+25.4
+18.2
+13.3
+23
+5
+689
+689
+27.1
+8.8
+9.4
+32
+5
+728
+728
+28.7
+7.8
+8.9
+34
+5
+765
+765
+30.1
+7.4
+8.7
+35
+5
+805
+805
+31.7
+8.0
+9.0
+34
+5
+844
+844
+33.2
+7.8
+8.9
+34
+5
+875
+875
+34.4
+6.2
+8.0
+38
+5
+901
+901
+35.5
+5.2
+7.3
+42
+5
+925
+925
+36.4
+4.8
+7.0
+43
+5
+947
+947
+37.3
+4.4
+6.8
+45
+5
+972
+972
+38.3
+5.0
+7.2
+42
+5
+991
+991
+39.0
+3.8
+6.3
+48
+5
+1015
+1015
+40.0
+4.8
+7.0
+43
+5
+1035
+1035
+40.7
+4.0
+6.5
+47
+5
+1054
+1054
+41.5
+3.8
+6.3
+48
+5
+1076
+1076
+42.4
+4.4
+6.8
+45
+5
+1095
+1095
+43.1
+3.8
+6.3
+48
+5
+1113
+1113
+43.8
+3.6
+6.1
+50
+5
+1132
+1132
+44.6
+3.8
+6.3
+48
+5
+1150
+1150
+45.3
+3.6
+6.1
+50
+5
+1167
+1167
+45.9
+3.4
+6.0
+51
+5
+1186
+1186
+46.7
+3.8
+6.3
+48
+5
+1206
+1206
+47.5
+4.0
+6.5
+47
+5
+1223
+1223
+48.1
+3.4
+6.0
+51
+5
+1240
+1240
+48.8
+3.4
+6.0
+51
+5
+1255
+1255
+49.4
+3.0
+5.6
+54
+5
+1272
+1272
+50.1
+3.4
+6.0
+51
+5
+1287
+1287
+50.7
+3.0
+5.6
+54
+5
+1303
+1303
+51.3
+3.2
+5.8
+52
+5
+1317
+1317
+51.9
+2.8
+5.5
+56
+5
+1335
+1335
+52.6
+3.6
+6.1
+50
+5
+1353
+1353
+53.3
+3.6
+6.1
+50
+5
+1365
+1365
+53.7
+2.4
+5.1
+60
+Date Started:
+12/8/2021
+Water Level:
+Not Encountered
+Date Completed:
+12/8/2021
+Logged By:
+A.Taeb
+Probing Equipment:
+DCP H-4219
+Total Depth:
+6.1'
+Size of Cone Tip:
+8 mm dia. with 60° cone
+Work Order:
+8394-00
+Driving Energy:
+8 kg weight 575 mm drop
+Plate                
+A-2.0
+GEOLABS, INC.                                                                                         
+Kubota Residence
+Honolulu, Oahu, Hawaii
+Geotechnical Engineering  
+Log of
+DCP                          
+2 
+No. of 
+Blows
+Penetration 
+Reading
+Depth of 
+Penetration 
+(mm)
+Depth of 
+Penetration 
+(inches)
+Elevation of 
+Penetration 
+(feet MSL)
+Penetration 
+Index 
+(mm/blow)
+Correlated 
+SPT Index 
+(mm/blow)
+SPT Blow 
+Count 
+(blow/foot)
+5
+1383
+1383
+54.4
+3.6
+6.1
+50
+5
+1395
+1395
+54.9
+2.4
+5.1
+60
+5
+1410
+1410
+55.5
+3.0
+5.6
+54
+5
+1425
+1425
+56.1
+3.0
+5.6
+54
+5
+1445
+1445
+56.9
+4.0
+6.5
+47
+5
+1450
+1450
+57.1
+1.0
+3.3
+91
+5
+1459
+1459
+57.4
+1.8
+4.4
+69
+5
+1475
+1475
+58.1
+3.2
+5.8
+52
+5
+1490
+1490
+58.7
+3.0
+5.6
+54
+5
+1504
+1504
+59.2
+2.8
+5.5
+56
+5
+1518
+1518
+59.8
+2.8
+5.5
+56
+5
+1532
+1532
+60.3
+2.8
+5.5
+56
+5
+1547
+1547
+60.9
+3.0
+5.6
+54
+5
+1560
+1560
+61.4
+2.6
+5.3
+58
+5
+1575
+1575
+62.0
+3.0
+5.6
+54
+5
+1585
+1585
+62.4
+2.0
+4.6
+66
+5
+1606
+1606
+63.2
+4.2
+6.6
+46
+5
+1624
+1624
+63.9
+3.6
+6.1
+50
+5
+1651
+1651
+65.0
+5.4
+7.5
+41
+5
+1672
+1672
+65.8
+4.2
+6.6
+46
+5
+1685
+1685
+66.3
+2.6
+5.3
+58
+5
+1696
+1696
+66.8
+2.2
+4.9
+63
+5
+1705
+1705
+67.1
+1.8
+4.4
+69
+5
+1733
+1733
+68.2
+5.6
+7.6
+40
+5
+1742
+1742
+68.6
+1.8
+4.4
+69
+5
+1755
+1755
+69.1
+2.6
+5.3
+58
+5
+1765
+1765
+69.5
+2.0
+4.6
+66
+5
+1780
+1780
+70.1
+3.0
+5.6
+54
+5
+1793
+1793
+70.6
+2.6
+5.3
+58
+5
+1801
+1801
+70.9
+1.6
+4.2
+73
+5
+1816
+1816
+71.5
+3.0
+5.6
+54
+5
+1835
+1835
+72.2
+3.8
+6.3
+48
+5
+1847
+1847
+72.7
+2.4
+5.1
+60
+5
+1860
+1860
+73.2
+2.6
+5.3
+58
+5
+1869
+1869
+73.6
+1.8
+4.4
+69
+10
+1869.1
+1869.1
+73.6
+0.0
+0.4
+820
+Date Started:
+12/8/2021
+Water Level:
+Not Encountered
+Date Completed:
+12/8/2021
+Logged By:
+A.Taeb
+Probing Equipment:
+DCP H-4219
+Total Depth:
+6.1'
+Size of Cone Tip:
+8 mm dia. with 60° cone
+Work Order:
+8394-00
+Driving Energy:
+8 kg weight 575 mm drop
+Plate                
+A-2.1
+GEOLABS, INC.                                                                                         
+Kubota Residence
+Honolulu, Oahu, Hawaii
+Geotechnical Engineering  
+Log of
+DCP                          
+3 
+No. of 
+Blows
+Penetration 
+Reading
+Depth of 
+Penetration 
+(mm)
+Depth of 
+Penetration 
+(inches)
+Elevation of 
+Penetration 
+(feet MSL)
+Penetration 
+Index 
+(mm/blow)
+Correlated 
+SPT Index 
+(mm/blow)
+SPT Blow 
+Count 
+(blow/foot)
+5
+169
+169
+6.7
+33.8
+17.9
+17
+5
+190
+190
+7.5
+4.2
+6.6
+46
+5
+265
+265
+10.4
+15.0
+12.1
+25
+5
+312
+312
+12.3
+9.4
+9.7
+31
+5
+365
+365
+14.4
+10.6
+10.3
+30
+5
+420
+420
+16.5
+11.0
+10.5
+29
+5
+488
+488
+19.2
+13.6
+11.6
+26
+5
+590
+590
+23.2
+20.4
+14.0
+22
+5
+735
+735
+28.9
+29.0
+16.6
+18
+5
+840
+840
+33.1
+21.0
+14.2
+21
+5
+933
+933
+36.7
+18.6
+13.4
+23
+5
+983
+983
+38.7
+10.0
+10.0
+30
+5
+1026
+1026
+40.4
+8.6
+9.3
+33
+5
+1063
+1063
+41.9
+7.4
+8.7
+35
+5
+1103
+1103
+43.4
+8.0
+9.0
+34
+5
+1135
+1135
+44.7
+6.4
+8.1
+38
+5
+1166
+1166
+45.9
+6.2
+8.0
+38
+5
+1194
+1194
+47.0
+5.6
+7.6
+40
+5
+1223
+1223
+48.1
+5.8
+7.7
+40
+5
+1250
+1250
+49.2
+5.4
+7.5
+41
+5
+1282
+1282
+50.5
+6.4
+8.1
+38
+5
+1308
+1308
+51.5
+5.2
+7.3
+42
+5
+1328
+1328
+52.3
+4.0
+6.5
+47
+5
+1352
+1352
+53.2
+4.8
+7.0
+43
+5
+1378
+1378
+54.3
+5.2
+7.3
+42
+5
+1405
+1405
+55.3
+5.4
+7.5
+41
+5
+1516
+1516
+59.7
+22.2
+14.6
+21
+5
+1540
+1540
+60.6
+4.8
+7.0
+43
+5
+1560
+1560
+61.4
+4.0
+6.5
+47
+5
+1585
+1585
+62.4
+5.0
+7.2
+42
+5
+1608
+1608
+63.3
+4.6
+6.9
+44
+5
+1629
+1629
+64.1
+4.2
+6.6
+46
+5
+1655
+1655
+65.2
+5.2
+7.3
+42
+5
+1680
+1680
+66.1
+5.0
+7.2
+42
+5
+1708
+1708
+67.2
+5.6
+7.6
+40
+5
+1735
+1735
+68.3
+5.4
+7.5
+41
+Date Started:
+12/8/2021
+Water Level:
+Not Encountered
+Date Completed:
+12/8/2021
+Logged By:
+A.Taeb
+Probing Equipment:
+DCP H-4219
+Total Depth:
+10.7'
+Size of Cone Tip:
+8 mm dia. with 60° cone
+Work Order:
+8128-00
+Driving Energy:
+8 kg weight 575 mm drop
+Plate                
+A-3.0
+GEOLABS, INC.                                                                                         
+Kubota Residence
+Honolulu, Oahu, Hawaii
+Geotechnical Engineering  
+Log of
+DCP                          
+3 
+No. of 
+Blows
+Penetration 
+Reading
+Depth of 
+Penetration 
+(mm)
+Depth of 
+Penetration 
+(inches)
+Elevation of 
+Penetration 
+(feet MSL)
+Penetration 
+Index 
+(mm/blow)
+Correlated 
+SPT Index 
+(mm/blow)
+SPT Blow 
+Count 
+(blow/foot)
+5
+1760
+1760
+69.3
+5.0
+7.2
+42
+5
+1786
+1786
+70.3
+5.2
+7.3
+42
+5
+1848
+1848
+72.8
+12.4
+11.1
+28
+5
+1855
+1855
+73.0
+1.4
+3.9
+78
+5
+1900
+1900
+74.8
+9.0
+9.5
+32
+5
+1930
+1930
+76.0
+6.0
+7.8
+39
+5
+1959
+1959
+77.1
+5.8
+7.7
+40
+5
+1985
+1985
+78.1
+5.2
+7.3
+42
+5
+2010
+2010
+79.1
+5.0
+7.2
+42
+5
+2045
+2045
+80.5
+7.0
+8.4
+36
+5
+2070
+2070
+81.5
+5.0
+7.2
+42
+5
+2093
+2093
+82.4
+4.6
+6.9
+44
+5
+2111
+2111
+83.1
+3.6
+6.1
+50
+5
+2135
+2135
+84.1
+4.8
+7.0
+43
+5
+2157
+2157
+84.9
+4.4
+6.8
+45
+5
+2180
+2180
+85.8
+4.6
+6.9
+44
+5
+2205
+2205
+86.8
+5.0
+7.2
+42
+5
+2230
+2230
+87.8
+5.0
+7.2
+42
+5
+2252
+2252
+88.7
+4.4
+6.8
+45
+5
+2276
+2276
+89.6
+4.8
+7.0
+43
+5
+2302
+2302
+90.6
+5.2
+7.3
+42
+5
+2326
+2326
+91.6
+4.8
+7.0
+43
+5
+2353
+2353
+92.6
+5.4
+7.5
+41
+5
+2377
+2377
+93.6
+4.8
+7.0
+43
+5
+2405
+2405
+94.7
+5.6
+7.6
+40
+5
+2430
+2430
+95.7
+5.0
+7.2
+42
+5
+2453
+2453
+96.6
+4.6
+6.9
+44
+5
+2475
+2475
+97.4
+4.4
+6.8
+45
+5
+2499
+2499
+98.4
+4.8
+7.0
+43
+5
+2521
+2521
+99.3
+4.4
+6.8
+45
+5
+2545
+2545
+100.2
+4.8
+7.0
+43
+5
+2567
+2567
+101.1
+4.4
+6.8
+45
+5
+2593
+2593
+102.1
+5.2
+7.3
+42
+5
+2615
+2615
+103.0
+4.4
+6.8
+45
+5
+2640
+2640
+103.9
+5.0
+7.2
+42
+5
+2664
+2664
+104.9
+4.8
+7.0
+43
+Date Started:
+12/8/2021
+Water Level:
+Not Encountered
+Date Completed:
+12/8/2021
+Logged By:
+A.Taeb
+Probing Equipment:
+DCP H-4219
+Total Depth:
+10.7'
+Size of Cone Tip:
+8 mm dia. with 60° cone
+Work Order:
+8128-00
+Driving Energy:
+8 kg weight 575 mm drop
+Plate                
+A-3.1
+GEOLABS, INC.                                                                                         
+Kubota Residence
+Honolulu, Oahu, Hawaii
+Geotechnical Engineering  
+Log of
+DCP                          
+3 
+No. of 
+Blows
+Penetration 
+Reading
+Depth of 
+Penetration 
+(mm)
+Depth of 
+Penetration 
+(inches)
+Elevation of 
+Penetration 
+(feet MSL)
+Penetration 
+Index 
+(mm/blow)
+Correlated 
+SPT Index 
+(mm/blow)
+SPT Blow 
+Count 
+(blow/foot)
+5
+2686
+2686
+105.7
+4.4
+6.8
+45
+5
+2707
+2707
+106.6
+4.2
+6.6
+46
+5
+2726
+2726
+107.3
+3.8
+6.3
+48
+5
+2746
+2746
+108.1
+4.0
+6.5
+47
+5
+2770
+2770
+109.1
+4.8
+7.0
+43
+5
+2795
+2795
+110.0
+5.0
+7.2
+42
+5
+2826
+2826
+111.3
+6.2
+8.0
+38
+5
+2856
+2856
+112.4
+6.0
+7.8
+39
+5
+2889
+2889
+113.7
+6.6
+8.2
+37
+5
+2922
+2922
+115.0
+6.6
+8.2
+37
+5
+2954
+2954
+116.3
+6.4
+8.1
+38
+5
+2989
+2989
+117.7
+7.0
+8.4
+36
+5
+3025
+3025
+119.1
+7.2
+8.6
+36
+5
+3061
+3061
+120.5
+7.2
+8.6
+36
+5
+3091
+3091
+121.7
+6.0
+7.8
+39
+5
+3121
+3121
+122.9
+6.0
+7.8
+39
+5
+3148
+3148
+123.9
+5.4
+7.5
+41
+5
+3172
+3172
+124.9
+4.8
+7.0
+43
+5
+3191
+3191
+125.6
+3.8
+6.3
+48
+5
+3206
+3206
+126.2
+3.0
+5.6
+54
+5
+3216
+3216
+126.6
+2.0
+4.6
+66
+5
+3226
+3226
+127.0
+2.0
+4.6
+66
+5
+3236
+3236
+127.4
+2.0
+4.6
+66
+5
+3242
+3242
+127.6
+1.2
+3.6
+84
+5
+3251
+3251
+128.0
+1.8
+4.4
+69
+5
+3264
+3264
+128.5
+2.6
+5.3
+58
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+Date Started:
+12/8/2021
+Water Level:
+Not Encountered
+Date Completed:
+12/8/2021
+Logged By:
+A.Taeb
+Probing Equipment:
+DCP H-4219
+Total Depth:
+10.7'
+Size of Cone Tip:
+8 mm dia. with 60° cone
+Work Order:
+8128-00
+Driving Energy:
+8 kg weight 575 mm drop
+Plate                
+A-3.2
+GEOLABS, INC.                                                                                         
+Kubota Residence
+Honolulu, Oahu, Hawaii
+Geotechnical Engineering  
+Log of
+DCP                          
+4 
+No. of 
+Blows
+Penetration 
+Reading
+Depth of 
+Penetration 
+(mm)
+Depth of 
+Penetration 
+(inches)
+Elevation of 
+Penetration 
+(feet MSL)
+Penetration 
+Index 
+(mm/blow)
+Correlated 
+SPT Index 
+(mm/blow)
+SPT Blow 
+Count 
+(blow/foot)
+5
+895
+895
+35.2
+179.0
+39.6
+8
+5
+1463
+1463
+57.6
+113.6
+31.8
+10
+5
+1718
+1718
+67.6
+51.0
+21.7
+14
+5
+1903
+1903
+74.9
+37.0
+18.7
+16
+5
+2029
+2029
+79.9
+25.2
+15.5
+20
+5
+2152
+2152
+84.7
+24.6
+15.4
+20
+5
+2253
+2253
+88.7
+20.2
+14.0
+22
+5
+2329
+2329
+91.7
+15.2
+12.2
+25
+5
+2388
+2388
+94.0
+11.8
+10.8
+28
+5
+2443
+2443
+96.2
+11.0
+10.5
+29
+5
+2500
+2500
+98.4
+11.4
+10.6
+29
+5
+2550
+2550
+100.4
+10.0
+10.0
+30
+5
+2600
+2600
+102.4
+10.0
+10.0
+30
+5
+2647
+2647
+104.2
+9.4
+9.7
+31
+5
+2701
+2701
+106.3
+10.8
+10.4
+29
+5
+2760
+2760
+108.7
+11.8
+10.8
+28
+5
+2812
+2812
+110.7
+10.4
+10.2
+30
+5
+2854
+2854
+112.4
+8.4
+9.2
+33
+5
+2892
+2892
+113.9
+7.6
+8.8
+35
+5
+2927
+2927
+115.2
+7.0
+8.4
+36
+5
+2957
+2957
+116.4
+6.0
+7.8
+39
+5
+2988
+2988
+117.6
+6.2
+8.0
+38
+5
+3024
+3024
+119.1
+7.2
+8.6
+36
+5
+3057
+3057
+120.4
+6.6
+8.2
+37
+5
+3092
+3092
+121.7
+7.0
+8.4
+36
+5
+3127
+3127
+123.1
+7.0
+8.4
+36
+5
+3162
+3162
+124.5
+7.0
+8.4
+36
+5
+3208
+3208
+126.3
+9.2
+9.6
+32
+5
+3257
+3257
+128.2
+9.8
+9.9
+31
+5
+5
+5
+5
+5
+5
+5
+Date Started:
+12/8/2021
+Water Level:
+Not Encountered
+Date Completed:
+12/8/2021
+Logged By:
+A.Taeb
+Probing Equipment:
+DCP H-4219
+Total Depth:
+10.7'
+Size of Cone Tip:
+8 mm dia. with 60° cone
+Work Order:
+8128-00
+Driving Energy:
+8 kg weight 575 mm drop
+Plate                
+A-4.0
+GEOLABS, INC.                                                                                         
+Kubota Residence
+Honolulu, Oahu, Hawaii
+Geotechnical Engineering  
+Log of
+DCP                          
+5 
+No. of 
+Blows
+Penetration 
+Reading
+Depth of 
+Penetration 
+(mm)
+Depth of 
+Penetration 
+(inches)
+Elevation of 
+Penetration 
+(feet MSL)
+Penetration 
+Index 
+(mm/blow)
+Correlated 
+SPT Index 
+(mm/blow)
+SPT Blow 
+Count 
+(blow/foot)
+5
+236
+236
+9.3
+47.2
+21.0
+15
+5
+348
+348
+13.7
+22.4
+14.7
+21
+5
+395
+395
+15.6
+9.4
+9.7
+31
+5
+435
+435
+17.1
+8.0
+9.0
+34
+5
+472
+472
+18.6
+7.4
+8.7
+35
+5
+505
+505
+19.9
+6.6
+8.2
+37
+5
+535
+535
+21.1
+6.0
+7.8
+39
+5
+573
+573
+22.6
+7.6
+8.8
+35
+5
+601
+601
+23.7
+5.6
+7.6
+40
+5
+630
+630
+24.8
+5.8
+7.7
+40
+5
+660
+660
+26.0
+6.0
+7.8
+39
+5
+685
+685
+27.0
+5.0
+7.2
+42
+5
+712
+712
+28.0
+5.4
+7.5
+41
+5
+740
+740
+29.1
+5.6
+7.6
+40
+5
+769
+769
+30.3
+5.8
+7.7
+40
+5
+797
+797
+31.4
+5.6
+7.6
+40
+5
+822
+822
+32.4
+5.0
+7.2
+42
+5
+847
+847
+33.3
+5.0
+7.2
+42
+5
+875
+875
+34.4
+5.6
+7.6
+40
+5
+905
+905
+35.6
+6.0
+7.8
+39
+5
+934
+934
+36.8
+5.8
+7.7
+40
+5
+962
+962
+37.9
+5.6
+7.6
+40
+5
+994
+994
+39.1
+6.4
+8.1
+38
+5
+1022
+1022
+40.2
+5.6
+7.6
+40
+5
+1053
+1053
+41.5
+6.2
+8.0
+38
+5
+1077
+1077
+42.4
+4.8
+7.0
+43
+5
+1095
+1095
+43.1
+3.6
+6.1
+50
+5
+1119
+1119
+44.1
+4.8
+7.0
+43
+5
+1147
+1147
+45.2
+5.6
+7.6
+40
+5
+1172
+1172
+46.1
+5.0
+7.2
+42
+5
+1202
+1202
+47.3
+6.0
+7.8
+39
+5
+1227
+1227
+48.3
+5.0
+7.2
+42
+5
+1253
+1253
+49.3
+5.2
+7.3
+42
+5
+1277
+1277
+50.3
+4.8
+7.0
+43
+5
+1302
+1302
+51.3
+5.0
+7.2
+42
+5
+1332
+1332
+52.4
+6.0
+7.8
+39
+Date Started:
+12/8/2021
+Water Level:
+Not Encountered
+Date Completed:
+12/8/2021
+Logged By:
+A.Taeb
+Probing Equipment:
+DCP H-4219
+Total Depth:
+6.2'
+Size of Cone Tip:
+8 mm dia. with 60° cone
+Work Order:
+8128-00
+Driving Energy:
+8 kg weight 575 mm drop
+Plate                
+A-5.0
+GEOLABS, INC.                                                                                         
+Kubota Residence
+Honolulu, Oahu, Hawaii
+Geotechnical Engineering  
+Log of
+DCP                          
+5 
+No. of 
+Blows
+Penetration 
+Reading
+Depth of 
+Penetration 
+(mm)
+Depth of 
+Penetration 
+(inches)
+Elevation of 
+Penetration 
+(feet MSL)
+Penetration 
+Index 
+(mm/blow)
+Correlated 
+SPT Index 
+(mm/blow)
+SPT Blow 
+Count 
+(blow/foot)
+5
+1365
+1365
+53.7
+6.6
+8.2
+37
+5
+1398
+1398
+55.0
+6.6
+8.2
+37
+5
+1429
+1429
+56.3
+6.2
+8.0
+38
+5
+1458
+1458
+57.4
+5.8
+7.7
+40
+5
+1488
+1488
+58.6
+6.0
+7.8
+39
+5
+1496
+1496
+58.9
+1.6
+4.2
+73
+5
+1524
+1524
+60.0
+5.6
+7.6
+40
+5
+1548
+1548
+60.9
+4.8
+7.0
+43
+5
+1573
+1573
+61.9
+5.0
+7.2
+42
+5
+1599
+1599
+63.0
+5.2
+7.3
+42
+5
+1618
+1618
+63.7
+3.8
+6.3
+48
+5
+1638
+1638
+64.5
+4.0
+6.5
+47
+5
+1657
+1657
+65.2
+3.8
+6.3
+48
+5
+1668
+1668
+65.7
+2.2
+4.9
+63
+5
+1673
+1673
+65.9
+1.0
+3.3
+91
+5
+1675
+1675
+65.9
+0.4
+2.2
+141
+5
+1713
+1713
+67.4
+7.6
+8.8
+35
+5
+1736
+1736
+68.3
+4.6
+6.9
+44
+5
+1751
+1751
+68.9
+3.0
+5.6
+54
+5
+1762
+1762
+69.4
+2.2
+4.9
+63
+5
+1768
+1768
+69.6
+1.2
+3.6
+84
+5
+1774
+1774
+69.8
+1.2
+3.6
+84
+5
+1794
+1794
+70.6
+4.0
+6.5
+47
+5
+1808
+1808
+71.2
+2.8
+5.5
+56
+5
+1820
+1820
+71.7
+2.4
+5.1
+60
+5
+1843
+1843
+72.6
+4.6
+6.9
+44
+5
+1865
+1865
+73.4
+4.4
+6.8
+45
+5
+1872
+1872
+73.7
+1.4
+3.9
+78
+5
+1877
+1877
+73.9
+1.0
+3.3
+91
+5
+1877.1
+1877.1
+73.9
+0.0
+0.5
+589
+Date Started:
+12/8/2021
+Water Level:
+Not Encountered
+Date Completed:
+12/8/2021
+Logged By:
+A.Taeb
+Probing Equipment:
+DCP H-4219
+Total Depth:
+6.2'
+Size of Cone Tip:
+8 mm dia. with 60° cone
+Work Order:
+8128-00
+Driving Energy:
+8 kg weight 575 mm drop
+Plate                
+A-5.1
+GEOLABS, INC.                                                                                         
+Kubota Residence
+Honolulu, Oahu, Hawaii
+Geotechnical Engineering  
+APPENDIX  B  
+W.O. 8394-00 
+GEOLABS, INC. 
+JANUARY 2022     Page B-1 
+Hawaii • California 
+A P P E N D I X   B 
+Laboratory Tests 
+Two Sieve Analysis tests (ASTM D6913) were performed on selected soil samples 
+to evaluate the gradation characteristics of the soils and to aid in soil classification. Graphic 
+presentations of the grain size distributions are provided on Plate B-1. 
+Two laboratory California Bearing Ratio tests (ASTM D1883) were performed on bulk 
+samples of the near-surface soils to evaluate the engineering characteristics of the soils. 
+The test results are presented on Plates B-2 and B-3. 
+0
+5
+10
+15
+20
+25
+30
+35
+40
+45
+50
+55
+60
+65
+70
+75
+80
+85
+90
+95
+100
+0.001
+0.01
+0.1
+1
+10
+100
+2.291
+1.634
+B - 1
+coarse
+1
+1.5
+3
+2
+0.445
+0.455
+40
+Depth (ft)
+%Gravel
+25.1
+6.2
+71.8
+91.3
+%Sand
+COBBLES
+Sample
+D30 (mm)
+140
+20
+1.1
+1.3
+5.1
+3.6
+HYDROMETER
+3
+GRAIN SIZE IN MILLIMETERS
+PERCENT FINER BY WEIGHT
+100
+coarse
+1/2
+Sample
+1.079
+0.971
+Cu
+GRAVEL
+U.S. SIEVE NUMBERS
+D10 (mm)
+16
+fine
+50
+19
+Cc
+3/4
+fine
+SILT OR CLAY
+medium
+GRAIN SIZE DISTRIBUTION - ASTM D6913
+SAND
+%Fine
+60
+4
+30
+200
+4
+6
+3.1
+2.5
+Depth (ft)
+LL
+Grayish brown gravelly sand (SP) with traces of silt
+Grayish brown sand (SP) with a little gravel and traces of silt
+810 14
+50
+U.S. SIEVE OPENING IN INCHES
+6
+D60 (mm)
+D100 (mm)
+Bulk-1
+Bulk-2
+0.0-2.0
+0.0-2.0
+0.0-2.0
+0.0-2.0
+Bulk-1
+Bulk-2
+3/8
+PL PI
+Description
+Plate
+W.O. 8394-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+KUBOTA RESIDENCE
+HONOLULU, OAHU, HAWAII
+G_GRAIN_SIZE_MOD  8394-00.GPJ  GEOLABS.GDT  1/17/22
+0
+100
+200
+300
+400
+500
+600
+700
+800
+900
+1,000
+1,100
+1,200
+0
+0.10
+0.20
+0.30
+0.40
+0.50
+0.60
+Sample:
+Corr. CBR @ 0.1"
+Depth:
+Corr. CBR @ 0.2"
+No. of Layers
+CALIFORNIA BEARING RATIO - ASTM D1883
+Description:
+Days Soaked
+5
+Bulk-1
+Swell (%)
+0.00
+37.1
+28.1
+Molding Dry Density (pcf)
+STRESS, psi
+0.0 - 2.0 feet
+No. of Blows
+21.0
+104.5
+Molding Moisture (%)
+Hammer Wt. (lbs)
+Hammer Drop (inches)
+PENETRATION, inches
+Grayish brown gravelly sand (SP) with traces of silt
+18
+56
+10
+5
+Aggregate
+B - 2
+3/4 inch minus
+Plate
+W.O. 8394-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+KUBOTA RESIDENCE
+HONOLULU, OAHU, HAWAII
+G_CBR  8394-00.GPJ  GEOLABS.GDT  1/17/22
+0
+100
+200
+300
+400
+500
+600
+700
+800
+900
+1,000
+1,100
+1,200
+0
+0.10
+0.20
+0.30
+0.40
+0.50
+0.60
+Sample:
+Corr. CBR @ 0.1"
+Depth:
+Corr. CBR @ 0.2"
+No. of Layers
+CALIFORNIA BEARING RATIO - ASTM D1883
+Description:
+Days Soaked
+3
+Bulk-2
+Swell (%)
+0.00
+11.4
+8.8
+Molding Dry Density (pcf)
+STRESS, psi
+0.0 - 2.0 feet
+No. of Blows
+20.4
+84.2
+Molding Moisture (%)
+Hammer Wt. (lbs)
+Hammer Drop (inches)
+PENETRATION, inches
+Grayish brown sand (SP) with a little gravel and
+traces of silt
+18
+56
+10
+5
+Aggregate
+B - 3
+3/4 inch minus
+Plate
+W.O. 8394-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+KUBOTA RESIDENCE
+HONOLULU, OAHU, HAWAII
+G_CBR  8394-00.GPJ  GEOLABS.GDT  1/17/22

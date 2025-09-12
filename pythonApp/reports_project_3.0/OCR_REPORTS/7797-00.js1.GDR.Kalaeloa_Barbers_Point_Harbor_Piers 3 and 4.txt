@@ -1,0 +1,7967 @@
+GEOTECHNICAL DATA REPORT 
+FUEL PIER & TERMINAL IMPROVEMENTS 
+KALAELOA BARBERS POINT HARBOR 
+PIERS 3 & 4 
+JOB H.C. 10621 
+KALAELOA, OAHU, HAWAII 
+W.O. 7797‐00     AUGUST 5, 2020 
+Prepared for 
+MITSUNAGA & ASSOCIATES, INC. 
+and 
+STATE OF HAWAII 
+DEPARTMENT OF TRANSPORTATION 
+HARBORS DIVISION 
+GEOLABS, INC. 
+Geotechnical Engineering and Drilling Services 
+DRAFT  REPORT FOR REVIEW AND COMMENT
+GEOTECHNICAL DATA REPORT 
+FUEL PIER & TERMINAL IMPROVEMENTS 
+KALAELOA BARBERS POINT HARBOR 
+PIERS 3 & 4 
+JOB H.C. 10621 
+KALAELOA, OAHU, HAWAII 
+W.O. 7797‐00     AUGUST 5, 2020 
+Prepared for 
+MITSUNAGA & ASSOCIATES, INC. 
+and 
+STATE OF HAWAII 
+DEPARTMENT OF TRANSPORTATION 
+HARBORS DIVISION 
+THIS WORK WAS PREPARED BY 
+ME OR UNDER MY SUPERVISION. 
+DRAFT 
+4-30-22 
+SIGNATURE 
+EXPIRATION DATE 
+OF THE LICENSE 
+GEOLABS, INC. 
+Geotechnical Engineering and Drilling Services 
+94‐429 Koaki Street, Suite 200 • Waipahu, HI  96797 
+Hawaii • California 
+DRAFT  REPORT FOR REVIEW AND COMMENT
+GEOLABS, INC. 
+Geotechnical Engineering and Drilling Services 
+94‐429 Koaki Street, Suite 200 • Waipahu, Hawaii 96797 
+Telephone: (808) 841‐5064  •  E‐mail: hawaii@geolabs.net 
+Hawaii • California 
+August 5, 2020 
+W.O. 7797‐00 
+Mr. Chad McDonald 
+Mitsunaga & Associates, Inc. 
+747 Amana Street, Suite 216 
+Honolulu, HI  96814 
+Dear Mr. McDonald: 
+This  geotechnical  data  report  (GDR)  presents  the  results  of  our  field  exploration  and 
+laboratory  testing  program  performed  for  the  Fuel  Pier  &  Terminal  Improvements  project, 
+located at Piers 3 and 4 within the Kalaeloa Barbers Point Harbor on the Island of Oahu, Hawaii. 
+Our work was performed in general accordance with the scope of services outlined in our 
+revised fee proposal dated December 12, 2017. 
+If you have questions or need additional information, please contact our office. 
+Very truly yours, 
+GEOLABS, INC. 
+                    DRAFT 
+By ________________________ 
+              Robin M. Lim, P.E. 
+                        President 
+RML:TK:JS:sh 
+DRAFT  REPORT FOR REVIEW AND COMMENT
+W.O. 7797‐00 
+GEOLABS, INC. 
+Page i 
+GEOTECHNICAL DATA REPORT 
+FUEL PIER & TERMINAL IMPROVEMENTS 
+KALAELOA BARBERS POINT HARBOR 
+PIERS 3 & 4 
+JOB H.C. 10621 
+KALAELOA, OAHU, HAWAII 
+W.O. 7797‐00     AUGUST 5, 2020 
+TABLE OF CONTENTS 
+1. 
+PROJECT CONSIDERATIONS ..................................................................................... 1 
+2. 
+SCOPE OF WORK .................................................................................................... 2 
+3. 
+SITE CHARACTERIZATION ........................................................................................ 4 
+3.1 
+Regional Geology ................................................................................................... 4 
+3.2 
+Subsurface Characteristics ..................................................................................... 5 
+3.2.1  Recent Fill (Rf) ................................................................................... 5 
+3.2.2  Recent Alluvium (Ra) .......................................................................... 6 
+3.2.3  Coral Limestone (Qls) ......................................................................... 6 
+3.2.4  Older Alluvium (Qa) ........................................................................... 8 
+3.2.5  Groundwater .................................................................................... 8 
+4. 
+GEOTECHNICAL EXPLORATION PROGRAM .............................................................. 11 
+4.1 
+Soil Borings, Rock Coring, and Associated Field Testing ...................................... 11 
+4.2 
+Laboratory Testing ............................................................................................... 12 
+4.3 
+Field Infiltration Tests .......................................................................................... 12 
+5. 
+LIMITATIONS ........................................................................................................ 14 
+PLATES 
+Project Location Map  ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙ Plate 1 
+Boring Location Plan ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  Plate 2 
+Geology Map ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙  Plate 3 
+APPENDIX A 
+Test Boring Exploration  ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙ Pages A‐1 and A‐2 
+Soil Log Legend  ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙ Plate A‐0.1 
+Soil Classification Log Key  ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙ Plate A‐0.2 
+Rock Log Legend  ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙ Plate A‐0.3 
+Logs of Borings  ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙ Plates A‐1.1 thru A‐17 
+APPENDIX B 
+Laboratory Tests  ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙ Pages B‐1 and B‐2 
+Laboratory Test Data  ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙ Plates B‐1 thru B‐17 
+DRAFT  REPORT FOR REVIEW AND COMMENT
+TABLE OF CONTENTS 
+Page  
+W.O. 7797‐00 
+GEOLABS, INC. 
+Page ii 
+Hawaii  California 
+APPENDIX C 
+Field Infiltration Tests  ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙ Page C‐1 
+Infiltration Test Data  ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙ Plates C‐1 thru C‐4 
+APPENDIX D 
+Photographs of Core Samples  ∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙ Plates D‐1 thru D‐18 
+DRAFT  REPORT FOR REVIEW AND COMMENT
+W.O. 7797‐00 
+GEOLABS, INC. 
+Page 1 
+Hawaii  California 
+SECTION 1.  
+PROJECT CONSIDERATIONS 
+The proposed project site is located at Piers 3 and 4 within the Kalaeloa Barbers Point 
+Harbor on the Island of Oahu, Hawaii. The project location and general vicinity are shown on the 
+Project Location Map, Plate 1. Based on the information provided, we understand improvements to 
+both Piers 3 and 4 are planned. It should be noted that Pier 3 improvements are not in the Mitsunaga 
+& Associates, Inc. design teams’ current scope of work. The following summarizes the improvements 
+planned for the project:  
+1. 
+Pier 3 Improvements (Improvements not in current scope of work) 
+a. Relocation of the existing Marisco drydock 105 feet northwest. 
+b. Installation of new drydock anchors to support the relocated drydock structure. 
+c. Shoreline hardening along Pier 3. 
+d. Pier cut‐back (haul out) adjacent to Pier 4. 
+2. 
+Pier 4 Improvements 
+a. Construction  of  a  new  pier  about  400  feet  in  length  supported  on  pre‐cast, 
+prestressed concrete piles, and sheet pile bulkhead. 
+b. New fuel lines, pipe racks, and other appurtenances. 
+c. New heavy industrial pavements constructed along the landside of Pier 4, extending 
+to the existing Pier 5. 
+A design‐level field exploration and laboratory testing program consisting of both land 
+and water borings was undertaken to assist in the design of the project. This geotechnical data 
+report addresses the field exploration and laboratory testing program for both the land and water 
+boring work. 
+Detailed  information  and  discussions  for  each  specific  work  item  are  provided  in  the 
+respective appendices of this geotechnical data report. The  as‐drilled investigation locations are 
+shown on the Boring Location Plan, Plate 2. 
+END OF PROJECT CONSIDERATIONS 
+DRAFT  REPORT FOR REVIEW AND COMMENT
+W.O. 7797‐00 
+GEOLABS, INC. 
+Page 2 
+Hawaii  California 
+SECTION 2.  
+SCOPE OF WORK 
+The purpose of our field exploration and laboratory testing program was to obtain an 
+overview of the surface and subsurface conditions at Piers 3 and 4 in support of the design of the 
+new fuel pier and terminal improvement project. 
+Our work was performed in general accordance with the scope of services outlined in our 
+revised fee proposal dated December 12, 2017.  In order to accomplish this, we conducted a field 
+exploration and laboratory testing program consisting of the following tasks and efforts: 
+1. 
+Research and review of in‐house geologic and soils information in the project 
+vicinity. 
+2. 
+Site reconnaissance to review the boring locations and access considerations for 
+drilling. 
+3. 
+Application for excavation permits, including the Nationwide Permit No. 6 from 
+the U.S. Army Corps of Engineers (USACE) and One‐Call utility clearance.  
+4. 
+Coordination of site access and underground utility toning by our engineer and 
+geologist. 
+5. 
+Mobilization and demobilization of a truck‐mounted drill rig and water truck (for 
+drilling the on‐land borings) and a truck‐mounted drill rig on a barge (for drilling 
+the off‐shore borings), and operators to and from the project site. 
+6. 
+Drilling and sampling four off‐shore borings extending to depths ranging from   
+about  119.9  to  139.3  feet  below  the  water  surface,  and  13  on‐land  borings 
+extending to depths ranging from about 5 to 103 feet below the existing ground 
+surface. 
+7. 
+Collection of four bulk samples of the near‐surface soils for laboratory testing in 
+support of the pavement analyses. 
+8. 
+Coordination  of  the  field  exploration  and  logging  of  the  borings  by  our  field 
+engineer/geologist. 
+9. 
+Performance  of  four  field  infiltration  tests  to  evaluate  the  infiltration 
+characteristics of the subsurface materials. 
+10. 
+Laboratory  testing  of  selected  soil  and  core  samples  retrieved  from  our  field 
+exploration as an aid in classifying the materials and evaluating their engineering 
+properties. 
+DRAFT  REPORT FOR REVIEW AND COMMENT
+SECTION 2. SCOPE OF WORK 
+W.O. 7797‐00 
+GEOLABS, INC. 
+Page 3 
+Hawaii  California 
+11. 
+Preparation  of  this  geotechnical  data  report  presenting  the  results  of  the 
+geotechnical data review, subsurface exploration, groundwater observations, and 
+laboratory tests. 
+12. 
+Coordination of our overall work on the project by our engineers. 
+13. 
+Quality assurance of our work on the project by our principal engineer. 
+14. 
+Miscellaneous work efforts such as drafting, word processing, and clerical support. 
+END OF SCOPE OF WORK 
+DRAFT  REPORT FOR REVIEW AND COMMENT
+W.O. 7797‐00 
+GEOLABS, INC. 
+Page 4 
+Hawaii  California 
+SECTION 3.  
+SITE CHARACTERIZATION 
+3.1 
+Regional Geology 
+The  Island  of  Oahu  was  built  by  the  extrusion  of  basalt  and  basaltic  lavas  from  the 
+Waianae and Koolau shield volcanoes. The older Waianae Volcano is estimated to be middle to 
+late Pliocene in age, and the younger Koolau Volcano is estimated to be late Pliocene to early 
+Pleistocene in age. As volcanic activity in the Waianae Volcano ceased, lava flows from the Koolau 
+Volcano banked against its eroded eastern slope forming a broad plateau, now known as the 
+Schofield Plateau. The project site is on the southwestern flank of the Waianae Volcano. 
+Physical  and  chemical  weathering,  followed  by  erosion  of  the  Schofield  Plateau, 
+generated sediments, which were transported to the coast. In the project site vicinity and to the 
+south, these sediments accumulated and interbedded with marine sediments and coral/algal reef 
+formations to form a sedimentary wedge. The thickness of the sedimentary wedge ranges from 
+zero in the area of the Interstate Route H‐1 Highway to over 1,000 feet at Ewa Beach. This wedge 
+forms the Ewa Plain and serves as the confining formation, or "caprock," over the artesian basal 
+aquifers of southern Oahu. Deposition of sediments has continued from earlier geologic time 
+through the present. 
+During  the  Pleistocene  Epoch,  sea  levels  fluctuated  in  response  to  the  cycles  of 
+continental glaciation. As the glaciers grew and advanced, less water was available to fill the 
+oceanic basins such that sea levels fell below the present stands of the sea. When the glaciers 
+melted and receded, an excess of water became available such that the sea levels rose to above 
+the present sea level. 
+The  higher  sea  level  stands  caused  the  formation  of  deltas  and  fans  of  accumulated 
+terrigenous sediments in the heads of old bays, accumulated reef deposits at correspondingly 
+higher elevations, and deposited lagoonal/marine sediments in the quiet waters protected by 
+fringing reefs. The lower sea stands caused streams to carve valleys in the sediments and reef 
+deposits. Subaerial exposure of the sediments and calcareous materials caused consolidation of 
+the lagoonal deposits and induration of the calcareous reef materials. Placement of man‐made 
+DRAFT  REPORT FOR REVIEW AND COMMENT
+SECTION 3. SITE CHARACTERIZATION  
+W.O. 7797‐00 
+GEOLABS, INC. 
+Page 5 
+Hawaii  California 
+fills and commercial development of the area within the last 30 years have brought the project 
+area to its present form. 
+3.2 
+Subsurface Characteristics 
+In  general,  we  observed  four  main  stratigraphic  units  across  the  project  area.  The 
+stratigraphic units consist of soil and rock materials of varying characteristics and engineering 
+properties. The four main stratigraphic units are listed below in the general order of geologic age, 
+beginning with the younger unit and ending with the older unit: 
+1. 
+Recent Fill (Rf) 
+2. 
+Recent Alluvium (Ra) 
+3. 
+Coral Limestone (Qls) 
+4. 
+Older Alluvium (Qa) 
+It should be noted that the surface fills are generally underlain by interbedded layers of 
+recent  alluvium,  coralline  detritus,  coral/sandstone  formations,  and  older  alluvium  w/  coral 
+debris.  The following sections briefly describe the general characteristics of each of the above 
+stratigraphic units based on our literature research, experience with similar materials, and the 
+field  exploration  and  laboratory  testing  program  conducted  at  selected  locations  across  the 
+project site. The approximate delineation of these stratigraphic units at the ground surface of the 
+project vicinity is presented on the Geology Map, Plate 3. 
+3.2.1 Recent Fill (Rf) 
+This stratigraphic unit represents low‐lying areas that were filled during urbanization. The 
+majority of these low‐lying areas are underlain at relatively shallow depths by recent 
+alluvium and were originally marsh areas. Small parts of the filled lands are underlain by 
+older alluvial soil deposits. In areas underlain by the recent alluvium, the fill materials 
+generally consist of clayey silts and sandy silts with stiff to hard consistencies. 
+The quality and composition of the fill materials are variable. These fills were frequently 
+placed without proper compaction control. Therefore, it is difficult to make any general 
+statement regarding their engineering properties or construction in these areas. 
+DRAFT  REPORT FOR REVIEW AND COMMENT
+SECTION 3. SITE CHARACTERIZATION  
+W.O. 7797‐00 
+GEOLABS, INC. 
+Page 6 
+Hawaii  California 
+3.2.2 Recent Alluvium (Ra) 
+These soils generally are the result of sedimentation in a very low energy environment 
+such as an estuary or bay. Frequently, the soils assigned to this unit accumulated very 
+rapidly  under  water  and  might  not  have  been  exposed  to  air.  Therefore,  there  is  a 
+tendency to encounter under‐consolidated sediments, which settle under the weight of 
+minimal overburden or structural loading. Recent alluvium generally is found within some 
+stream channels and bordering some stream banks, at the mouths (outlets) of streams, 
+and within broad valley floors and basin features surrounded by hills. These soils also may 
+be found in proximity to swamp and tidal flat environments. 
+The soils assigned to this unit generally are considered poorly to very poorly suited for 
+use as support for foundation loads, due to their low in‐situ strength characteristics and 
+the tendency for excessive settlement to occur in structures overlying soils of this unit.  
+The recent alluvium also contains marsh and/or estuarine deposits consisting of dark gray 
+and brown silts and clays with fibrous organic materials in a very soft to soft consistency. 
+The marsh and/or estuarine deposits also contain traces of fine to medium grained sands. 
+They are characterized by a moderate to strong organic odor and may contain small 
+fragile mollusk shells. 
+3.2.3 Coral Limestone (Qls) 
+This unit consists of fossil remnants of coral‐algal reefs and their related detrital debris 
+deposits. In Hawaii, the detrital deposits tend to be the dominant portion of any coralline 
+rock assemblage. The detrital deposits are weakly to strongly cemented coralline debris 
+consisting of gravel, sand, and silt‐sized clastic fragments. Some of the coralline fragments 
+were dissolved, and the solution cavities were filled with cemented and/or uncemented 
+fine sands and silts. The following subunits are used in this geotechnical data report. 
+Coralline Detritus 
+This subunit consists of granular detritus broken from reef formations. The soils 
+generally consist of medium dense to dense sandy gravel and gravelly sands. Silts 
+DRAFT  REPORT FOR REVIEW AND COMMENT
+SECTION 3. SITE CHARACTERIZATION  
+W.O. 7797‐00 
+GEOLABS, INC. 
+Page 7 
+Hawaii  California 
+and clays are only present in minor or trace amounts. Detritus also may be weakly 
+cemented with occasional moderate to strong cementation. 
+Coral Formation 
+This subunit is composed of coral and calcareous algae in their original growth 
+positions or detrital deposits, which have become moderately to well cemented. 
+Sandstone 
+Sandstone  is  a  sedimentary  rock  composed  mainly  of  cemented  sand‐sized 
+particles  (clasts)  consisting  of  individual  mineral  particles  or  grains  of  the 
+weathered  parent  rock.  The  sedimentary  particles  comprising  of  sandstone 
+typically are derived from the breakdown of parent material into sedimentary 
+particles. The sedimentary particles typically are eroded, transported and sorted 
+by water or air, and deposited as layers of sedimentary materials. Over time, the 
+sediments may be buried by other sediments or geologic layers, and the burial 
+pressure  combined  with  a  cementing  agent  act  to  consolidate  the  grains  and 
+cement the pore space between the grains to form hardened sandstone. Typical 
+cementing  agents  may  be  calcium  carbonate  (common  in  calcareous  sand 
+deposits of Hawaii) or silica and some clays.  
+Most sandstones in Hawaii are light brown in color and calcareous being derived 
+from  the  breakdown  of  parent  coralline  and  reef  materials  into  sand‐sized 
+particles. The cementing agent in most calcareous sandstone is calcium carbonate. 
+Inclusions of basaltic rock fragments, marine shells, and other fragments of broken 
+coral may be cemented in the sandstone layers. Sandstones containing such clast 
+inclusions commonly are referred to as beachrock in Hawaii, having been derived 
+from available shoreline geologic materials.  
+The strength (hardness) of sandstone generally depends on the grain size, degree 
+of  sorting,  and  degree  of  cementation  of  the  sedimentary  materials.  The 
+weathering and decomposition of calcareous sandstone may be accelerated by 
+exposure to acidic water, which attacks the calcareous cement binding the sand 
+DRAFT  REPORT FOR REVIEW AND COMMENT
+SECTION 3. SITE CHARACTERIZATION  
+W.O. 7797‐00 
+GEOLABS, INC. 
+Page 8 
+Hawaii  California 
+grains  and  causes  a  slow  exfoliation  of  the  outermost  exposed  layers  of  the 
+sandstone  outcropping.  Sandstone  may  or  may  not  contain  visible  bedding 
+surfaces. Aeolian (wind derived) sandstone may exhibit cross‐bedding structures 
+that developed during the initial deposition of the sand layers. 
+3.2.4 Older Alluvium (Qa) 
+Older alluvial deposits are generally very stiff to hard silty and clayey soils that originally 
+were deposited in alluvial environments, buried over long periods of time by more recent 
+deposits  to  become  consolidated,  and  then  subsequently  uncovered  at  the  ground 
+surface by erosion or other geologic processes. This unit generally overlies the Koolau 
+Basalt and consists of terrigenous sediments, which have been transported by stream 
+action from the upper reaches of the streams.  
+Gravel lenses representing buried stream channels are sometimes encountered. Portions 
+of the Older Alluvium unit contain some weathered basaltic cobbles and boulders. These 
+coarse‐grained parts of the unit also may contain artesian groundwater from the basal 
+freshwater system or as a sub‐aquifer. The deposits may resemble saprolite soil deposits, 
+but  they  are  clearly  differentiable  by  the  layered  characteristics.  Frequently,  these 
+materials show a moderate to high shrink/swell potential when subjected to fluctuations 
+in moisture. 
+3.2.5 Groundwater 
+Groundwater level measurements were taken during the advancement of the boreholes 
+drilled  for  the  project  during  our  field  exploration  program.  We  encountered 
+groundwater in the drilled land borings at depths ranging from about 6.4 to 11.5 feet 
+below  the  existing  ground  surface.  The  groundwater  levels  measured  generally 
+correspond to about Elevations +0.5 to +4 feet Mean Lower Low Water (MLLW). It should 
+be noted that groundwater levels are subject to change due to tidal fluctuations, storm surge 
+conditions, rainfall, time of year, seasonal precipitation, surface water runoff, and other 
+factors. 
+DRAFT  REPORT FOR REVIEW AND COMMENT
+SECTION 3. SITE CHARACTERIZATION  
+W.O. 7797‐00 
+GEOLABS, INC. 
+Page 9 
+Hawaii  California 
+We explored the subsurface conditions across the project site by drilling and sampling 
+four off‐shore borings (Boring Nos. 101 through 104) to depths of approximately 119.8 to 139.3 feet 
+below the water surface, and 13 land borings (Boring Nos. 105 through 113, and I‐1 through I‐4) to 
+depths of approximately 5 to 103 feet below the existing ground surface.  Four bulk samples of the 
+near‐surface soils, designated as Bulk‐110, 111, 112, and 113, were obtained to evaluate the 
+pavement support characteristics of the soils. The approximate boring and bulk sample locations 
+are shown on the Boring Location Plan, Plate 2. The approximate drilled boring locations and 
+pertinent information are summarized in the following table. 
+SUMMARY OF BORING EXPLORATION 
+Boring 
+No. 
+Type 
+Location  
+Ground/Datum 
+Elevation 
+Mudline 
+Elevation 
+Boring Depth 
+(feet MLLW) 
+(feet MLLW) 
+(feet) 
+101 
+Off‐Shore 
+Pier 3 
++0.0 
+‐38.5 
+120.5 
+102 
+Pier 3 
++0.0 
+‐37.5 
+119.9 
+103 
+Pier 3 
++0.0 
+‐39.5 
+119.8 
+104 
+Pier 4 
++0.0 
+‐38.0 
+139.3 
+105 
+Land Boring 
+Pier 3 
++12.0 
+N/A 
+83 
+106 
+Pier 3 
++11.0 
+N/A 
+83 
+107 
+Pier 3 
++11.0 
+N/A 
+83 
+108 
+Pier 4 
++8.5 
+N/A 
+103 
+109 
+Pier 4 
++9.0 
+N/A 
+83 
+110 
+Pier 3 
++10.5 
+N/A 
+31.5 
+111 
+Pier 3 
++10.5 
+N/A 
+32.3 
+112 
+Pier 4 
++10.0 
+N/A 
+31.5 
+113 
+Pier 4 
++10.5 
+N/A 
+31.9 
+I‐1 
+Infiltration 
+Borings 
+Pier 3 
++10.5 
+N/A 
+5 
+I‐2 
+Pier 3 
++9.5 
+N/A 
+5 
+I‐3 
+Pier 3 
++9.5 
+N/A 
+5 
+I‐4 
+Pier 4 
++10.0 
+N/A 
+5 
+DRAFT  REPORT FOR REVIEW AND COMMENT
+SECTION 3. SITE CHARACTERIZATION  
+W.O. 7797‐00 
+GEOLABS, INC. 
+Page 10 
+Hawaii  California 
+In general, the subsurface conditions encountered in the land borings consisted of 6 to 
+14 inches of concrete (B‐105, B‐106, B‐107, B‐110, B‐111, and I‐2, I‐3, and I‐4), and 3 to 9 inches 
+of asphaltic concrete (B‐106, B‐108, and B‐109) overlying fill materials consisting of soft to hard 
+clayey silts, and medium dense to very dense silty sands, silty gravel, sandy gravel, and cobbles 
+and boulders extending to depths of about 1 to 11.3 feet below the existing ground surface. The 
+fills were underlain by interbedded layers of coralline deposits and alluvium with coral debris. 
+The alluvium with coral debris generally consisted of medium stiff to very stiff clayey silts and 
+sandy silts.  The coralline deposits generally consisted of loose to dense coralline detritus and 
+weathered  sandstone,  and  soft  to  hard  sandstone  and  coral  formations  extending  to  the 
+maximum depth explored of about 103 feet below the existing ground surface. 
+The  off‐shore  borings  drilled  generally  encountered  very  soft  to  soft  harbor  deposits 
+consisting of silty clays and sandy silts with various thicknesses ranging between approximately 
+2 to 10.5 feet thick. The water depths to mudline encountered ranged from 37.5 to 39.5 feet 
+deep. Below the harbor deposits, interbedded layers of coralline detritus, weathered sandstone, 
+alluvium with coral debris, sandstone and coral formations were encountered extending to the 
+maximum depth explored in the respective borings of about 139.3 feet below the water surface. 
+The coralline detritus and weathered sandstone generally consisted of very loose to dense sands, 
+silty sands, and silty gravel. The alluvium with coral debris consisted of stiff to very stiff silty clays. 
+The sandstone and coral formations encountered were generally variable and closely to slightly 
+fractured, slightly to moderately weathered, and soft to hard. 
+Detailed descriptions of our field exploration methodology and the Logs of Borings are 
+presented in Appendix A. Results of the laboratory tests performed on selected soil samples and 
+rock cores are presented in Appendix B. Photographs of the core samples retrieved from our field 
+exploration are presented in Appendix D. 
+END OF SITE CHARACTERIZATION 
+DRAFT  REPORT FOR REVIEW AND COMMENT
+W.O. 7797‐00 
+GEOLABS, INC. 
+Page 11 
+Hawaii  California 
+SECTION 4.  
+GEOTECHNICAL EXPLORATION PROGRAM 
+The  geotechnical  exploration  program  conducted  for  the  fuel  pier  and  terminal 
+improvement project generally consisted of the following field and laboratory work components. 
+A brief description of each work component is presented below. Detailed discussions, findings, 
+and test results of the various components are provided in the respective appendices herein. 
+4.1 
+Soil Borings, Rock Coring, and Associated Field Testing 
+ The field exploration program consisted of drilling and sampling four off‐shore borings 
+extending to depths ranging from about 119.8 to 139.3 feet below the existing water surface, 
+and 13 on‐land borings extending to depths ranging from about 5 to 103 feet below the existing 
+ground surface. The following discussion provides an overview of the methods and procedures. 
+The field exploration is described in more details in the introduction to Appendix A. 
+Typically, soil borings were advanced with 4‐inch diameter continuous‐flight solid‐stem 
+augers (SSA) to the first encounter with groundwater and then continued with PQ‐size wireline 
+coring methods to advance the PQ‐size casing from the ground surface. In general, auger drilling 
+was used in areas where stiff to hard cohesive soils (older alluvium) exist and in locations where 
+rock coring was not anticipated. Additionally, SSA drilling was switched over to the wireline coring 
+method when hard clays, boulders, and/or rock formation were encountered or when soft and/or 
+loose soils that caved in were encountered. 
+Sampling of the soils was performed using AWJ drill rods (1.75 OD/1.25 ID) at about 
+5 to 10‐foot  intervals.  Drive  samples  were  obtained  using  the  modified  California  sampler 
+(ASTM D3550) and the Standard Penetration Test (SPT) split‐spoon sampler (ASTM D1586). 
+Where the borehole was advanced utilizing the PQ core barrel in the soil formations, 
+samples of the soils recovered from the PQ core barrel were also retained in core boxes for visual 
+observation.  For intervals where the borehole was advanced utilizing the PQ casing only as a 
+rotary wash drilling method, there were no soil samples collected. The borings were advanced 
+into the rock formations with the PQ‐size wireline coring methods. The PQ‐size wireline coring 
+methods produce rock core samples of 3.35 inches (85 mm) in diameter. 
+DRAFT  REPORT FOR REVIEW AND COMMENT
+SECTION 4. GEOTECHNICAL EXPLORATION PROGRAM  
+W.O. 7797‐00 
+GEOLABS, INC. 
+Page 12 
+Hawaii  California 
+In‐situ testing of the subsurface materials in the borings included the SPT, which was 
+performed in accordance with ASTM D1586. Standard Penetration Test (SPT) sampling provides 
+a measure of the resistance or consistency of a soil and is reported as the uncorrected N‐value, 
+which  is  defined  as  the  number  of  blows  required  to  drive  a  standard  split‐spoon  sampler 
+12 inches with a 140‐lb. hammer, after 6 inches of initial seating. The penetration resistance of 
+the Modified California Sampler was recorded in a similar manner, and the Modified California 
+Sampler  blows  per  12 inches  can  be  approximately  related  to  the  SPT N‐value  through 
+correlation. 
+Rock core recovery (REC) and rock quality designation (RQD) were measured as described 
+in Appendix A. ASTM D6032 ‐ Standard Test Method for Determining Rock Quality Designation 
+(RQD) of Rock Core states that “Core sizes from BQ to PQ with core diameters of 36.5 mm 
+(1.44 in.) to 85 mm (3.35 in.), respectively, are normally acceptable for measuring RQD as long as 
+proper drilling techniques are used that do not cause excessive core breakage or poor recovery, 
+or both. The NX‐size (54.7 mm [2.16 in.]) and NQ‐size (47.5 mm [1.87 in.]) are the optimal core 
+sizes for measuring RQD. The RQD is also useful for large core diameters provided the core 
+diameter is clearly stated.” The rock core photographs are included in Appendix D for information 
+and reference. 
+4.2 
+Laboratory Testing 
+Laboratory testing was performed on soil and rock samples to determine the physical and 
+engineering  properties.  Laboratory  tests  performed  included  moisture  content,  unit  weight, 
+Atterberg Limits, grain size distribution, unconfined compression of soil, uniaxial compressive 
+strength of rock, Direct Shear, Modified Proctor, California Bearing Ratio (CBR), and corrosion 
+potential tests (pH, minimum resistivity, chloride content, and sulfate content). The laboratory 
+test results are provided in Appendix B. 
+4.3 
+Field Infiltration Tests 
+Four infiltration tests were performed in the vicinity of Piers 3 & 4 to determine the 
+infiltration characteristics of the underlying subsurface materials. These tests were performed in 
+general  accordance  with  the  procedures  outlined  in  Appendix  D  of  the  State  of  Maryland 
+DRAFT  REPORT FOR REVIEW AND COMMENT
+SECTION 4. GEOTECHNICAL EXPLORATION PROGRAM  
+W.O. 7797‐00 
+GEOLABS, INC. 
+Page 13 
+Hawaii  California 
+Department  of  the  Environment  “Stormwater Design  Manual,  Volumes  I  and  II”  (rev.  2009). 
+These procedures are consistent with other states’ procedures and generally may be considered 
+an industry standard. 
+The field infiltration tests were performed by drilling a borehole with continuous flight 
+augers and coring tools to the selected test depth. Upon reaching the test depth and cleaning 
+out the borehole of soil cuttings, a 4‐inch diameter PVC solid casing was set to the bottom of the 
+drilled hole to allow infiltration only through the soil exposed at the bottom of the boring. The 
+cased  boreholes  were  then  pre‐soaked  prior  to  performing  the  infiltration  test.  The  field 
+infiltration test results are provided in Appendix C. 
+END OF GEOTECHNICAL EXPLORATION PROGRAM 
+DRAFT  REPORT FOR REVIEW AND COMMENT
+W.O. 7797‐00 
+GEOLABS, INC. 
+Page 14 
+Hawaii  California 
+SECTION 5.  
+LIMITATIONS 
+The geotechnical field and laboratory test data submitted in this geotechnical data report 
+are based upon information obtained from the field exploration points. The coordinates and 
+elevations of the as‐drilled boring locations indicated herein were obtained using a hand‐held 
+Global Positioning System (GPS) device. Elevations noted on the Logs of Borings were obtained 
+from the Topographic Survey Map transmitted by Mitsunaga & Associates, Inc. on July 15, 2020. 
+The  stratification  lines  shown  on  the  graphic  representations  of  the  field  exploration 
+points depict the approximate boundaries between soil and rock types and, as such, may denote 
+a gradual transition. Water level data presented on the logs of borings in this report were based 
+on measurements recorded in the borings at the times shown on the graphic representations. It 
+should be noted that fluctuation of the water level may occur due to variation in tides, rainfall, 
+temperature, and other factors. 
+This report has been prepared for the exclusive use of Mitsunaga & Associates, Inc., their 
+client,  State  of  Hawaii  ‐  Department  of  Transportation,  Harbors  Division,  and  their  project 
+consultants for specific application to the Fuel Pier & Terminal Improvements, Kalaeloa Barbers 
+Point Harbor, Piers 3 & 4, Job H.C. 10621, Kalaeloa, Oahu, Hawaii project in accordance with 
+generally accepted geotechnical engineering principles and practices. No warranty is expressed 
+or implied.  
+This geotechnical data report was not intended to investigate the potential presence of 
+hazardous  materials  existing  at  the  project  site.  It  should  be  noted  that  the  equipment, 
+techniques, and personnel used to conduct a geo‐environmental exploration differ substantially 
+from those applied in geotechnical engineering. 
+END OF LIMITATIONS 
+DRAFT  REPORT FOR REVIEW AND COMMENT
+PLATES 
+DRAFT  REPORT FOR REVIEW AND COMMENT
+GRAPHIC SCALE
+1000
+2000
+2000
+0
+FT.
+PROJECT LOCATION
+GENERAL PROJECT LOCATION
+N
+WAHIAWA
+WAIKIKI
+HONOLULU
+AIEA
+PEARL CITY
+WAIPAHU
+EWA
+BARBERS POINT
+NANAKULI
+WAIANAE
+WAIALUA
+HALEIWA
+KAHUKU
+POINT
+DIAMOND
+HEAD
+HAWAII
+KAI
+WAIMANALO
+KAILUA
+KANEOHE
+KAHALUU
+PUNALUU
+HAUULA
+KAENA POINT
+ISLAND MAP
+NO SCALE
+JULY 2020
+1" = 2,000'
+Geotechnical Engineering
+GEOLABS, INC.
+DATE
+SCALE
+1
+7797-00
+DRAWN BY
+KHN
+W.O.
+PLATE
+N
+PACIFIC      OCEAN
+CAD User: KIM  File Last Updated: July 27, 2020 4:34:05pm  Plot Date:  July 27, 2020 - 4:34:49pm
+File: T:\Drafting\Working\7797-00_Fuel_Pier_Terminal_Improvements_Kalaeloa_Harbor\7797-00PLMs.dwg\1 - piers 3 and 4
+Plotter: DWG To PDF-GEO.pc3  Plotstyle: GEO-No-Dithering-Blue-Boring.ctb
+REFERENCE: MAP CREATED WITH TOPO!® ©2010 NATIONAL
+GEOGRAPHIC; ©2007 TELE ATLAS, REL. 1/2007.
+KALAELOA BARBERS POINT HARBOR
+PIERS 3 & 4
+FUEL PIER & TERMINAL IMPROVEMENTS
+PROJECT LOCATION MAP
+KALAELOA, OAHU, HAWAII
+JOB H.C. 10621
+DRAFT  REPORT FOR REVIEW AND COMMENT
+W
+W
+W
+W
+W
+W
+W
+W
+W
+W
+W
+W
+W
+W
+X
+F
+F
+F
+F
+F
+F
+F
+F
+F
+F
+W
+W
+W
+W
+W
+W
+W
+W
+W
+F
+F
+F
+F
+F
+F
+F
+F
+F
+F
+F
+F
+F
+F
+F
+F
+F
+F
+F
+F
+F
+F
+F
+F
+F
+F
+F
+F
+X
+X
+X
+X
+X
+X
+X
+X
+X
+X
+X
+X
+X
+X
+X
+X
+X
+X
+X
+X
+X
+APPROXIMATE BORING LOCATION
+LEGEND:
+APPROXIMATE INFILTRATION TEST LOCATION
+GEOLABS, INC.
+Geotechnical Engineering
+7797-00
+DRAWN BY
+HYC
+1" = 150'
+JULY 2020
+SCALE
+DATE
+W.O.
+2
+PLATE
+GRAPHIC SCALE
+0
+75
+0
+150
+300
+450 FT.
+CAD User: HENRY  File Last Updated: July 28, 2020 10:15:50pm  Plot Date:  July 28, 2020 - 10:16:54pm
+File: A:\Drafting\Drafting\Working\7797-00_Fuel_Pier_Terminal_Improvements_Kalaeloa_Harbor\7797-00SitePlan.dwg\PIERS_3&4
+Plotter: DWG To PDF-GEO.pc3  Plotstyle: CPSnew-STD Half.ctb
+REFERENCE: TOPOGRAPHIC SURVEY MAP TRANSMITTED BY
+MITSUNAGA & ASSOCIATES, INC. ON JULY 15, 2020.
+APPROXIMATE BULK SAMPLE LOCATION
+KALAELOA BARBERS POINT HARBOR
+PIERS 3 & 4
+FUEL PIER & TERMINAL IMPROVEMENTS
+BORING LOCATION PLAN
+JOB H.C. 10621
+KALAELOA, OAHU, HAWAII
+N
+B-101
+B-105
+B-106
+B-102
+B-107
+I-1
+B-103
+B-108
+B-109
+B-104
+B-113 & BULK-113
+B-112 & BULK-112
+B-111 & BULK-111
+I-3
+I-4
+I-2
+KALAELOA BARBERS
+POINT HARBOR
+B-110 & BULK-110
+DRAFT  REPORT FOR REVIEW AND COMMENT
+Rs
+Qls
+Rs
+Qls
+Ra
+Twb
+Qls
+Twp
+Twb
+Twp
+Qa
+Twp
+Twb
+Qls
+Qls
+Qa
+Qls
+Ra
+Qls
+Ra
+Rs
+Rs
+Qls
+GRAPHIC SCALE
+1000
+2000
+2000
+0
+FT.
+PROJECT LOCATIONS
+N
+JULY 2020
+1" = 2,000'
+Geotechnical Engineering
+GEOLABS, INC.
+DATE
+SCALE
+3
+7797-00
+DRAWN BY
+KHN
+W.O.
+PLATE
+CAD User: KIM  File Last Updated: July 27, 2020 6:12:06pm  Plot Date:  July 27, 2020 - 6:42:04pm
+File: T:\Drafting\Working\7797-00_Fuel_Pier_Terminal_Improvements_Kalaeloa_Harbor\7797-00GeologyMaps.dwg\3 - piers 3 and 4
+Plotter: DWG To PDF-GEO.pc3  Plotstyle: GEO-No-Dithering-Blue-Boring.ctb
+KALAELOA BARBERS POINT HARBOR
+PIERS 3 & 4
+FUEL PIER & TERMINAL IMPROVEMENTS
+GEOLOGY MAP
+KALAELOA, OAHU, HAWAII
+REFERENCE: MAP CREATED WITH TOPO!® ©2010 NATIONAL
+GEOGRAPHIC (WWW.NATIONALGEOGRAPHIC.COM/TOPO) AND THE
+GEOLOGICAL SURVEY CONTROL BY USGS, USC&GS, AND HAWAIIAN
+TERRITORIAL SURVEY.
+LEGEND:
+Twb
+Twp
+Qa
+Qls
+Ra
+Rs
+TERTIARY WAIANAE BASALT
+TERTIARY WAIANAE PYROCLASTIC
+OLDER ALLUVIUM
+LIMESTONE (CORAL)
+RECENT ALLUVIUM
+RECENT SAND
+JOB H.C. 10621
+DRAFT  REPORT FOR REVIEW AND COMMENT
+APPENDIX A  
+DRAFT  REPORT FOR REVIEW AND COMMENT
+W.O. 7797‐00 
+GEOLABS, INC. 
+     Page A‐1 
+Hawaii  California 
+A P P E N D I X   A 
+Test Boring Exploration 
+We explored the subsurface conditions across the project site by drilling and sampling 
+four off‐shore borings (Boring Nos. 101 through 104) to depths of approximately 119.8 to 139.3 feet 
+below the water surface, and 13 land borings (Boring Nos. 105 through 113, and I‐1 through I‐4) to 
+depths of approximately 5 to 103 feet below the existing ground surface. The borings were drilled 
+using truck‐mounted drill rigs equipped with continuous‐flight augers and rotary coring tools. The 
+field exploration was conducted from April 1, 2019 through March 30, 2020. In addition, four bulk 
+samples of the near‐surface soils, designated as Bulk‐110, 111, 112, and 113, were obtained for 
+laboratory testing.  The approximate boring and bulk sample locations are shown on the Boring 
+Location Plan, Plate 2. 
+ Land borings were advanced with 4‐inch diameter continuous‐flight solid‐stem augers 
+(SSA) to the first encounter with groundwater and then continued with PQ‐size wireline coring 
+methods to advance the PQ‐size casing from the ground surface. In general, auger drilling was 
+used in areas where stiff to hard cohesive soils (older alluvium) exist and in locations where rock 
+coring  is  not  anticipated.  Additionally,  SSA  drilling  was  switched  over  to  the  wireline  coring 
+method when hard clays, boulders, and/or rock formation were encountered or when soft and/or 
+loose soils that caved in were encountered. 
+The  overwater  work  was  conducted  from  a  twin‐screw  workboat,  named  Huki  Pau, 
+provided by our subcontractor, Sea Engineering, Inc.  The vessel has an overall length of 74 feet, 
+a beam of 21 feet, and a light draft of 4 feet 3 inches, and is stabilized with a 4‐point anchor 
+system.  Our truck‐mounted drill rig was driven onto the workboat, from which all the drilling 
+was conducted.  The vessel has a wet well near the bow from which the drill string extended to 
+the mudline. The size of the water borehole was on the order of about 6 inches in diameter, 
+including an outer casing.  Borings typically were advanced with PQ‐size wireline coring methods 
+to advance the PQ‐size casing. 
+Our engineer/geologist classified the materials encountered in the borings by visual and 
+textural examination in the field in general accordance with ASTM D2488, Standard Practice for 
+Description  and  Identification  of  Soils,  and  monitored  the  drilling  operations  on  a 
+near‐continuous basis. These classifications were further reviewed visually and by testing in the 
+laboratory. Soils were classified in general accordance with ASTM D2487, Standard Practice for 
+Classification of Soils for Engineering Purposes (Unified Soil Classification System), as shown on 
+the Soil Log Legend, Plate A‐0.1. Deviations made to the soil classification in accordance with 
+ASTM D2487 are described on the Soil Classification Log Key, Plate A‐0.2. Graphic representations 
+of the materials encountered and other observations, such as groundwater levels,  are presented 
+on the Logs of Borings, Plates A‐1.1 through A‐17. 
+Relatively “undisturbed” soil samples were obtained from the borings drilled in general 
+accordance with ASTM D3550, Standard Practice for Thick Wall, Ring‐Lined, Spilt Barrel, Drive 
+DRAFT  REPORT FOR REVIEW AND COMMENT
+Appendix A 
+Test Boring Exploration 
+W.O. 7797‐00 
+GEOLABS, INC. 
+     Page A‐2 
+Hawaii • California 
+Sampling of Soils, by driving a 3‐inch OD modified California sampler with a 140‐pound hammer 
+falling 30 inches. In addition, some samples were obtained from the borings drilled in general 
+accordance  with  ASTM D1586,  Standard  Test  Method  for  Penetration  Test  and  Split‐Barrel 
+Sampling of Soils, by driving a 2‐inch OD standard penetration sampler using the same hammer 
+and drop. The blow counts needed to drive the sampler the second and third 6 inches of an 
+18‐inch drive are shown as the “Penetration Resistance” on the Logs of Borings at the appropriate 
+sample depths. 
+Core samples of the rock materials encountered at the project site were obtained by using 
+diamond core drilling techniques, consisting of a PQ wireline coring system with double tube core 
+barrel (core size of 3.35 inches), in general accordance with ASTM D2113, Diamond Core Drilling 
+for Site Investigation. Core drilling is a rotary drilling method that uses a hollow bit to cut into the 
+rock formation. The rock material left in the hollow core of the bit is mechanically recovered for 
+examination and description. Rock cores were described in general accordance with the Rock 
+Description System, as shown on the Rock Log Legend, Plate A‐0.3. The Rock Description System 
+is based generally on the publication “Suggested Methods for the Quantitative Description of 
+Discontinuities in Rock Masses” by the International Society for Rock Mechanics (March 1977). 
+Recovery (REC) is defined as the actual length of material recovered from a coring attempt 
+versus the length of the core attempt. For example, if 3.7 feet of material is recovered from a 
+5.0‐foot core run, the recovery would be 74 percent and would be shown on the Logs of Borings 
+as REC = 74%. 
+The Rock Quality Designation (RQD) is also a subjective guide to the relative quality of 
+rock masses. RQD is defined as the percentage of the total core run in rock that is sound material 
+in excess of 4 inches in length without any discontinuities, discounting any drilling, mechanical, 
+and  handling  induced  fractures  or  breaks.  If  2.5  feet  of  sound  material  is  recovered  from  a 
+5.0‐foot core run in rock, the RQD would be 50 percent and would be shown on the Logs of 
+Borings as RQD = 50%. Generally, the following is used to describe the relative quality of the rock 
+based  on  the  "Practical  Handbook  of  Physical  Properties  of  Rocks  and  Minerals”  by 
+Robert S. Carmichael (1989). 
+Rock Quality 
+RQD 
+(%) 
+Very Poor 
+0 – 25 
+Poor 
+25 – 50 
+Fair 
+50 – 75 
+Good 
+75 – 90 
+Excellent 
+90 – 100 
+DRAFT  REPORT FOR REVIEW AND COMMENT
+A-0.1
+UNCONSOLIDATED UNDRAINED TRIAXIAL
+COMPRESSION (ksf)
+MORE THAN 50%
+OF COARSE
+FRACTION
+RETAINED ON
+NO. 4 SIEVE
+50% OR MORE OF
+COARSE FRACTION
+PASSING
+THROUGH NO. 4
+SIEVE
+MORE THAN 50%
+OF MATERIAL
+RETAINED ON NO.
+200  SIEVE
+50% OR MORE OF
+MATERIAL PASSING
+THROUGH NO. 200
+SIEVE
+TORVANE SHEAR (tsf)
+(2-INCH) O.D. STANDARD PENETRATION TEST
+(3-INCH) O.D. MODIFIED CALIFORNIA SAMPLE
+INORGANIC SILTS AND VERY FINE SANDS,
+ROCK FLOUR, SILTY OR CLAYEY FINE SANDS
+OR CLAYEY SILTS WITH SLIGHT PLASTICITY
+POORLY-GRADED GRAVELS, GRAVEL-SAND
+MIXTURES, LITTLE OR NO FINES
+CLAYEY GRAVELS, GRAVEL-SAND-CLAY
+MIXTURES
+WELL-GRADED SANDS, GRAVELLY SANDS,
+LITTLE OR NO FINES
+POORLY-GRADED SANDS, GRAVELLY
+SANDS, LITTLE OR NO FINES
+SILTY SANDS, SAND-SILT MIXTURES
+CLAYEY SANDS, SAND-CLAY MIXTURES
+LIQUID LIMIT
+50 OR MORE
+CH
+NOTE: DUAL SYMBOLS ARE USED TO INDICATE BORDERLINE SOIL CLASSIFICATIONS
+MH
+SILTS
+AND
+CLAYS
+SILTS
+AND
+CLAYS
+LIQUID LIMIT
+LESS THAN 50
+USCS
+TYPICAL
+DESCRIPTIONS
+GW
+MORE THAN 12%
+FINES
+WATER LEVEL OBSERVED IN BORING OVERNIGHT
+HIGHLY ORGANIC SOILS
+SILTY GRAVELS, GRAVEL-SAND-SILT
+MIXTURES
+OL
+PEAT, HUMUS, SWAMP SOILS WITH HIGH
+ORGANIC CONTENTS
+INORGANIC CLAYS OF LOW TO MEDIUM
+PLASTICITY, GRAVELLY CLAYS, SANDY
+CLAYS, SILTY CLAYS, LEAN CLAYS
+Soil Log Legend
+ORGANIC CLAYS OF MEDIUM TO HIGH
+PLASTICITY, ORGANIC SILTS
+SC
+Plate
+GM
+FINE-
+GRAINED
+SOILS
+COARSE-
+GRAINED
+SOILS
+CLEAN SANDS
+SANDS WITH
+FINES
+SP
+SANDS
+GRAVELS
+WELL-GRADED GRAVELS,  GRAVEL-SAND
+MIXTURES, LITTLE OR NO FINES
+ML
+CL
+OH
+LESS THAN 5%
+FINES
+GRAVELS WITH
+FINES
+CLEAN
+GRAVELS
+GRAB SAMPLE
+PLASTICITY INDEX (NP=NON-PLASTIC)
+TV
+LEGEND
+WATER LEVEL OBSERVED IN BORING AT TIME OF
+DRILLING
+WATER LEVEL OBSERVED IN BORING AFTER DRILLING
+SM
+MAJOR DIVISIONS
+GP
+MORE THAN 12%
+FINES
+PT
+LESS THAN 5%
+FINES
+UNIFIED SOIL CLASSIFICATION SYSTEM (USCS)
+ORGANIC SILTS AND ORGANIC SILTY
+CLAYS OF LOW PLASTICITY
+SW
+GC
+INORGANIC SILT, MICACEOUS OR
+DIATOMACEOUS FINE SAND OR SILTY
+SOILS
+INORGANIC CLAYS OF HIGH PLASTICITY
+PI
+LL
+TXUU
+UNCONFINED COMPRESSION
+OR UNIAXIAL COMPRESSIVE STRENGTH
+CORE SAMPLE
+SHELBY TUBE SAMPLE
+LIQUID LIMIT (NP=NON-PLASTIC)
+UC
+GEOLABS, INC.
+Geotechnical Engineering
+LOG LEGEND FOR SOIL  7797-00.GPJ  GEOLABS.GDT  7/23/20
+DRAFT  REPORT FOR REVIEW AND COMMENT
+A-0.2
+Medium Sand
+Fine Sand
+#4 to #200 (4.75-mm to 0.075-mm)
+#4 to #10 (4.75-mm to 2-mm)
+> 12 inches (305-mm)
+3-inch to #4 (75-mm to 4.75-mm)
+Sieve Number and / or Size
+Gravel
+#10 to #40 (2-mm to 0.425-mm)
+#40 to #200 (0.425-mm to 0.075-mm)
+3 to 12 inches (75-mm to 305-mm)
+Description
+PP Readings
+(tsf)
+2.0 - 4.0
+> 4.0
+N-Value (Blows/Foot)
+MCS
+0 - 4
+RELATIVE DENSITY / CONSISTENCY
+GRAIN SIZE DEFINITION
+ABBREVIATIONS
+N-Value (Blows/Foot)
+0 - 7
+WOH:  Weight of Hammer
+WOR:  Weight of Drill Rods
+SPT:    Standard Penetration Test Split-Spoon Sampler
+MCS:   Modified California Sampler
+PP:      Pocket Penetrometer
+4 - 7
+7 - 15
+15 - 27
+27 - 55
+SPT
+0 - 2
+> 55
+> 30
+4 - 8
+15 - 30
+MOISTURE CONTENT DEFINITIONS
+SPT
+0 - 4
+4 - 10
+10 - 30
+30 - 50
+> 50
+MCS
+Loose
+EXAMPLE: Soil Containing 60% Gravel, 25% Sand, 15% Fines. Described as: SILTY GRAVEL with some sand
+Plate
+GRANULAR SOIL (- #200 <50%)
+2 - 4
+8 - 15
+Relative
+Density
+Very Loose
+Dense
+Very Dense
+COHESIVE SOIL (- #200    50%)
+PRIMARY constituents are composed of the largest
+percent of the soil mass. Primary constituents are
+capitalized and bold (i.e., GRAVEL, SAND)
+PRIMARY constituents are based on plasticity. Primary
+constituents are capitalized and bold (i.e., CLAY, SILT)
+SECONDARY constituents are composed of a
+percentage less than the primary constituent. If the soil
+mass consists of 12 percent or more fines content, a
+cohesive constituent is used (SILTY or CLAYEY);
+otherwise, a granular constituent is used (GRAVELLY
+or SANDY) provided that the secondary constituent
+consists of 20 percent or more of the soil mass.
+Secondary constituents are capitalized and bold (i.e.,
+SANDY GRAVEL, CLAYEY SAND) and precede the
+primary constituent.
+SECONDARY constituents are composed of a
+percentage less than the primary constituent, but more
+than 20 percent of the soil mass. Secondary constituents
+are capitalized and bold (i.e., SANDY CLAY, SILTY
+CLAY, CLAYEY SILT) and precede the primary
+constituent.
+Sand
+Boulders
+Cobbles
+Coarse Gravel
+3-inch to 3/4-inch (75-mm to 19-mm)
+Fine Gravel
+3/4-inch to #4 (19-mm to 4.75-mm)
+GEOLABS, INC. CLASSIFICATION*
+Granular Soils
+Cohesive Soils
+Consistency
+accessory descriptions compose of the following:
+with some: >12%
+with a little: 5 - 12%
+with traces of: <5%
+accessory descriptions are lower cased and follow the
+Primary and Secondary Constituents
+(i.e., SILTY CLAY with some sand)
+Very Soft
+Soft
+Medium Stiff
+Stiff
+Very Stiff
+Hard
+< 0.5
+0.5 - 1.0
+1.0 - 2.0
+7 - 18
+18 - 55
+55 - 91
+> 91
+Medium Dense
+Coarse Sand
+(with deviations from ASTM D2488)
+Soil Classification Log Key
+*Soil descriptions are based on ASTM D2488-09a, Visual-Manual Procedure, with the
+above modifications by Geolabs, Inc. to the Unified Soil Classification System (USCS).
+accessory descriptions compose of the following:
+with some: >12%
+with a little: 5 - 12%
+with traces of: <5%
+accessory descriptions are lower cased and follow the
+Primary and Secondary Constituents
+(i.e., SILTY GRAVEL with a little sand)
+Dry:    Absence of moisture, dry to the touch
+Moist: Damp but no visible water
+Wet:   Visible free water
+SOIL_CLASS_LOG_KEY  7797-00.GPJ  GEOLABS.GDT  7/23/20
+GEOLABS, INC.
+Geotechnical Engineering
+DRAFT  REPORT FOR REVIEW AND COMMENT
+A-0.3
+ROCK DESCRIPTIONS
+Plate
+BRECCIA
+CLINKER
+COBBLES
+CORAL
+BASALT
+ROCK DESCRIPTION SYSTEM
+Greater than 24 inches apart
+12 to 24 inches apart
+6 to 12 inches apart
+3 to 6 inches apart
+Less than 3 inches apart
+Rock shows no sign of discoloration or loss of strength.
+Slight discoloration inwards from open fractures.
+Discoloration throughout and noticeably weakened though not able to break by hand.
+Most minerals decomposed with some corestones present in residual soil mass. Can be broken by hand.
+Saprolite. Mineral residue completely decomposed to soil but fabric and structure preserved.
+The following terms describe general fracture spacing of a rock:
+The following terms describe the chemical weathering of a rock:
+ROCK FRACTURE CHARACTERISTICS
+DEGREE OF WEATHERING
+HARDNESS
+BOULDERS
+VOID/CAVITY
+TUFF
+SILTSTONE
+LIMESTONE
+Unweathered:
+Slightly Weathered:
+Moderately Weathered:
+Highly Weathered:
+Extremely Weathered:
+Very Hard:
+Hard:
+Medium Hard:
+Soft:
+Very Soft:
+SANDSTONE
+Massive:
+Slightly Fractured:
+Moderately Fractured:
+Closely Fractured:
+Severely Fractured:
+Rock Log Legend
+The following terms describe the resistance of a rock to indentation or scratching:
+Specimen breaks with difficulty after several "pinging" hammer blows.
+Example: Dense, fine grain volcanic rock
+Specimen breaks with some difficulty after several hammer blows.
+Example: Vesicular, vugular, coarse-grained rock
+Specimen can be broked by one hammer blow. Cannot be scraped by knife. SPT may penetrate by
+~25 blows per inch with bounce.
+Example: Porous rock such as clinker, cinder, and coral reef
+Can be indented by one hammer blow. Can be scraped or peeled by knife. SPT can penetrate by
+~100 blows per foot.
+Example: Weathered rock, chalk-like coral reef
+Crumbles under hammer blow. Can be peeled and carved by knife. Can be indented by finger
+pressure.
+Example: Saprolite
+CONGLOMERATE
+GEOLABS, INC.
+Geotechnical Engineering
+LOG LEGEND FOR ROCK  7797-00.GPJ  GEOLABS.GDT  7/23/20
+DRAFT  REPORT FOR REVIEW AND COMMENT
+WATER
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-75DR
+4" Casing & PQ Coring
+140 lb. wt., 30 in. drop
+5
+10
+15
+20
+25
+30
+35
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation (feet MLLW): 0 *
+Sample
+Moisture
+Content (%)
+101
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+March 30, 2020
+March 30, 2020
+S. Latronic
+120.5 feet
+7797-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 1.1
+(Energy Transfer Ratio = 71.4%)
+GEOLABS, INC.
+Geotechnical Engineering
+FUEL PIER & TERMINAL IMPROVEMENTS
+KALAELOA BARBERS POINT HARBOR
+PIERS 3 & 4
+ JOB H.C. 10621
+KALAELOA, OAHU, HAWAII
+BORING_LOG  7797-00_PIERS_3&4.GPJ  GEOLABS.GDT  7/29/20
+0.0 ft.   03/30/2020 1000 HRS
+DRAFT  REPORT FOR REVIEW AND COMMENT
+43
+16
+16
+22
+17
+93
+102
+CL
+SP
+GP-
+GM
+0
+0
+0
+22
+50/4"
+53
+34
+30
+19
+44
+0
+0
+Sieve
+- #200 =
+6.9%
+(Mudline at 38.5 feet)
+Tannish gray SANDY CLAY, very soft (harbor
+deposit)
+Light tan SAND (CORALLINE) with a little gravel,
+medium dense (weathered sandstone)
+Light tan to tannish white SANDSTONE,
+severely fractured, moderately to highly
+weathered, soft to medium hard (sandstone)
+grades with uncemented sand and gravel pockets
+locally
+Light tan SANDY GRAVEL (CORALLINE) with a
+little silt, medium dense (coralline detritus)
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-75DR
+4" Casing & PQ Coring
+140 lb. wt., 30 in. drop
+40
+45
+50
+55
+60
+65
+70
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Sample
+Moisture
+Content (%)
+101
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+(Continued from previous plate)
+March 30, 2020
+March 30, 2020
+S. Latronic
+120.5 feet
+7797-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 1.2
+(Energy Transfer Ratio = 71.4%)
+GEOLABS, INC.
+Geotechnical Engineering
+FUEL PIER & TERMINAL IMPROVEMENTS
+KALAELOA BARBERS POINT HARBOR
+PIERS 3 & 4
+ JOB H.C. 10621
+KALAELOA, OAHU, HAWAII
+BORING_LOG  7797-00_PIERS_3&4.GPJ  GEOLABS.GDT  7/29/20
+0.0 ft.   03/30/2020 1000 HRS
+DRAFT  REPORT FOR REVIEW AND COMMENT
+26
+18
+25
+23
+28
+23
+28
+99
+100
+97
+93
+GP-
+GM
+GM
+SM
+SM
+SM
+56
+0
+42
+39
+38
+28
+33
+9
+36
+24
+0
+60
+0
+0
+17
+0
+Direct
+Shear
+Sieve
+- #200 =
+46.8%
+UC=
+350 psi
+Sieve
+- #200 =
+32.6%
+grades with a little brown clayey silt
+Tan with some brown SILTY GRAVEL
+(CORALLINE) with some sand, medium dense
+(coralline detritus)
+grades to dense
+grades to slightly cemented
+Tan with some brown SANDSTONE, moderately
+to closely fractured, moderately weathered, soft
+to medium hard (sandstone)
+grades with limestone cobbles
+Light tannish white SILTY SAND (CORALLINE)
+with some gravel, medium dense (coralline
+detritus)
+Light grayish white SILTY SAND with some
+gravel, loose (coralline detritus)
+Light tannish white SILTY SAND (CORALLINE)
+with some gravel, medium dense (coralline
+detritus)
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-75DR
+4" Casing & PQ Coring
+140 lb. wt., 30 in. drop
+75
+80
+85
+90
+95
+100
+105
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Sample
+Moisture
+Content (%)
+101
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+(Continued from previous plate)
+March 30, 2020
+March 30, 2020
+S. Latronic
+120.5 feet
+7797-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 1.3
+(Energy Transfer Ratio = 71.4%)
+GEOLABS, INC.
+Geotechnical Engineering
+FUEL PIER & TERMINAL IMPROVEMENTS
+KALAELOA BARBERS POINT HARBOR
+PIERS 3 & 4
+ JOB H.C. 10621
+KALAELOA, OAHU, HAWAII
+BORING_LOG  7797-00_PIERS_3&4.GPJ  GEOLABS.GDT  7/29/20
+0.0 ft.   03/30/2020 1000 HRS
+DRAFT  REPORT FOR REVIEW AND COMMENT
+24
+26
+23
+95
+SM
+SM
+14
+30
+12
+0
+0
+10
+Light tannish white SILTY SAND (CORALLINE)
+with some gravel and a little sandstone cobbles,
+medium dense (coralline detritus)
+ Boring terminated at 120.5 feet
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-75DR
+4" Casing & PQ Coring
+140 lb. wt., 30 in. drop
+110
+115
+120
+125
+130
+135
+140
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Sample
+Moisture
+Content (%)
+101
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+(Continued from previous plate)
+March 30, 2020
+March 30, 2020
+S. Latronic
+120.5 feet
+7797-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 1.4
+(Energy Transfer Ratio = 71.4%)
+GEOLABS, INC.
+Geotechnical Engineering
+FUEL PIER & TERMINAL IMPROVEMENTS
+KALAELOA BARBERS POINT HARBOR
+PIERS 3 & 4
+ JOB H.C. 10621
+KALAELOA, OAHU, HAWAII
+BORING_LOG  7797-00_PIERS_3&4.GPJ  GEOLABS.GDT  7/29/20
+0.0 ft.   03/30/2020 1000 HRS
+DRAFT  REPORT FOR REVIEW AND COMMENT
+WATER
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-75DR
+4" Casing & PQ Coring
+140 lb. wt., 30 in. drop
+5
+10
+15
+20
+25
+30
+35
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation (feet MLLW): 0 *
+Sample
+Moisture
+Content (%)
+102
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+March 26, 2020
+March 26, 2020
+S. Latronic
+119.9 feet
+7797-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 2.1
+(Energy Transfer Ratio = 71.4%)
+GEOLABS, INC.
+Geotechnical Engineering
+FUEL PIER & TERMINAL IMPROVEMENTS
+KALAELOA BARBERS POINT HARBOR
+PIERS 3 & 4
+ JOB H.C. 10621
+KALAELOA, OAHU, HAWAII
+BORING_LOG  7797-00_PIERS_3&4.GPJ  GEOLABS.GDT  7/29/20
+0.0 ft.   03/26/2020 1120 HRS
+DRAFT  REPORT FOR REVIEW AND COMMENT
+41
+17
+16
+23
+26
+24
+113
+105
+103
+CL
+ML
+SM
+SM
+0
+0
+0
+60
+22
+59
+78
+28
+25
+27
+0
+0
+21
+19
+71
+Sieve
+- #200 =
+69.8%
+UC=
+500 psi
+(Mudline at 37.5 feet)
+Tannish gray SANDY CLAY with traces of gravel
+(coralline), very soft (harbor deposit)
+Light tannish white SANDY SILT (CORALLINE)
+with traces of gravel, very stiff (coralline detritus)
+Light tan and white CORAL, severely fractured,
+moderately to highly weathered, soft to medium
+hard (coral formation)
+Tan SILTY SAND (CORALLINE) with some
+gravel, medium dense (coralline detritus)
+grades with brown clayey silt pockets locally
+grades with cobbles (coralline)
+Light tannish white CORAL, slightly fractured,
+slightly weathered, medium hard to hard (coral
+formation)
+Tan SILTY SAND (CORALLINE) with some
+gravel, medium dense (coralline detritus)
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-75DR
+4" Casing & PQ Coring
+140 lb. wt., 30 in. drop
+40
+45
+50
+55
+60
+65
+70
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Sample
+Moisture
+Content (%)
+102
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+(Continued from previous plate)
+March 26, 2020
+March 26, 2020
+S. Latronic
+119.9 feet
+7797-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 2.2
+(Energy Transfer Ratio = 71.4%)
+GEOLABS, INC.
+Geotechnical Engineering
+FUEL PIER & TERMINAL IMPROVEMENTS
+KALAELOA BARBERS POINT HARBOR
+PIERS 3 & 4
+ JOB H.C. 10621
+KALAELOA, OAHU, HAWAII
+BORING_LOG  7797-00_PIERS_3&4.GPJ  GEOLABS.GDT  7/29/20
+0.0 ft.   03/26/2020 1120 HRS
+DRAFT  REPORT FOR REVIEW AND COMMENT
+34
+22
+29
+18
+18
+29
+22
+102
+100
+98
+SM
+CL
+GM
+SM
+0
+24
+0
+0
+13
+31
+14
+50/5"
+16
+31
+15
+0
+26
+26
+45
+49
+0
+17
+LL=46
+PI=30
+Sieve
+- #200 =
+13.2%
+UC=
+260 psi
+Brown with some tan SANDY CLAY with some
+gravel (coralline), stiff (alluvium w/ coral debris)
+Light grayish white SILTY GRAVEL
+(CORALLINE) with some sand and a little
+cobbles, medium dense (coralline detritus)
+grades with thin stiff clayey silt pockets locally
+Light tan to tannish white SANDSTONE,
+moderately to closely fractured, slightly to
+moderately weathered, medium hard to hard
+(sandstone)
+grades with uncemented poorly graded medium
+dense sand pockets locally
+Light tannish white SILTY SAND (CORALLINE)
+with some gravel, medium dense (weathered
+sandstone)
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-75DR
+4" Casing & PQ Coring
+140 lb. wt., 30 in. drop
+75
+80
+85
+90
+95
+100
+105
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Sample
+Moisture
+Content (%)
+102
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+(Continued from previous plate)
+March 26, 2020
+March 26, 2020
+S. Latronic
+119.9 feet
+7797-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 2.3
+(Energy Transfer Ratio = 71.4%)
+GEOLABS, INC.
+Geotechnical Engineering
+FUEL PIER & TERMINAL IMPROVEMENTS
+KALAELOA BARBERS POINT HARBOR
+PIERS 3 & 4
+ JOB H.C. 10621
+KALAELOA, OAHU, HAWAII
+BORING_LOG  7797-00_PIERS_3&4.GPJ  GEOLABS.GDT  7/29/20
+0.0 ft.   03/26/2020 1120 HRS
+DRAFT  REPORT FOR REVIEW AND COMMENT
+19
+20
+24
+110
+97
+SM
+0
+0
+0
+56
+24
+56
+57
+31
+45
+grades with medium stiff clayey silt pockets
+Light tannish white to white SANDSTONE,
+closely to severely fractured, slightly to
+moderately weathered, medium hard to hard
+(sandstone)
+grades with uncemented poorly graded medium
+dense sand pockets locally
+White CORAL, closely to severely fractured,
+slightly weathered, medium hard to hard (coral
+formation)
+ Boring terminated at 119.9 feet
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-75DR
+4" Casing & PQ Coring
+140 lb. wt., 30 in. drop
+110
+115
+120
+125
+130
+135
+140
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Sample
+Moisture
+Content (%)
+102
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+(Continued from previous plate)
+March 26, 2020
+March 26, 2020
+S. Latronic
+119.9 feet
+7797-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 2.4
+(Energy Transfer Ratio = 71.4%)
+GEOLABS, INC.
+Geotechnical Engineering
+FUEL PIER & TERMINAL IMPROVEMENTS
+KALAELOA BARBERS POINT HARBOR
+PIERS 3 & 4
+ JOB H.C. 10621
+KALAELOA, OAHU, HAWAII
+BORING_LOG  7797-00_PIERS_3&4.GPJ  GEOLABS.GDT  7/29/20
+0.0 ft.   03/26/2020 1120 HRS
+DRAFT  REPORT FOR REVIEW AND COMMENT
+WATER
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-75DR
+4" Casing & PQ Coring
+140 lb. wt., 30 in. drop
+5
+10
+15
+20
+25
+30
+35
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation (feet MLLW): 0 *
+Sample
+Moisture
+Content (%)
+103
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+March 25, 2020
+March 25, 2020
+S. Latronic
+119.75 feet
+7797-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 3.1
+(Energy Transfer Ratio = 71.4%)
+GEOLABS, INC.
+Geotechnical Engineering
+FUEL PIER & TERMINAL IMPROVEMENTS
+KALAELOA BARBERS POINT HARBOR
+PIERS 3 & 4
+ JOB H.C. 10621
+KALAELOA, OAHU, HAWAII
+BORING_LOG  7797-00_PIERS_3&4.GPJ  GEOLABS.GDT  7/29/20
+0.0 ft.   03/25/2020 0930 HRS
+DRAFT  REPORT FOR REVIEW AND COMMENT
+28
+20
+25
+14
+26
+25
+104
+109
+96
+ML
+GM
+SM
+CH
+SM
+0
+26
+61
+17
+33
+67
+44/6"
+ +50/5"
+23
+35
+13
+48
+71
+42
+31
+Sieve
+- #200 =
+22.0%
+UC=
+470 psi
+UC=
+590 psi
+LL=55
+PI=37
+(Mudline at 39.5 feet)
+Tannish gray SANDY SILT with traces of gravel
+(coralline), very soft (harbor deposit)
+Light tannish white SILTY GRAVEL
+(CORALLINE) with some sand, medium dense
+(coralline detritus)
+Light tan to light tannish white SANDSTONE,
+moderately to closely fractured, slightly to
+moderately weathered, medium hard to hard
+(sandstone)
+Light tannish white CORAL, moderately
+fractured, slightly weathered, hard (coral
+formation)
+Tan SILTY SAND (CORALLINE) with some
+gravel, medium dense (coralline detritus)
+Tannish brown SILTY CLAY with some gravel
+(coralline), stiff to very stiff (alluvium w/ coral
+debris)
+Tan SILTY SAND (CORALLINE) with some
+gravel and a little cobbles, medium dense
+(coralline detritus)
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-75DR
+4" Casing & PQ Coring
+140 lb. wt., 30 in. drop
+40
+45
+50
+55
+60
+65
+70
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Sample
+Moisture
+Content (%)
+103
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+(Continued from previous plate)
+March 25, 2020
+March 25, 2020
+S. Latronic
+119.75 feet
+7797-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 3.2
+(Energy Transfer Ratio = 71.4%)
+GEOLABS, INC.
+Geotechnical Engineering
+FUEL PIER & TERMINAL IMPROVEMENTS
+KALAELOA BARBERS POINT HARBOR
+PIERS 3 & 4
+ JOB H.C. 10621
+KALAELOA, OAHU, HAWAII
+BORING_LOG  7797-00_PIERS_3&4.GPJ  GEOLABS.GDT  7/29/20
+0.0 ft.   03/25/2020 0930 HRS
+DRAFT  REPORT FOR REVIEW AND COMMENT
+21
+19
+21
+27
+20
+26
+106
+98
+SM
+SM
+GM
+SM
+SM
+17
+0
+17
+45
+14
+22
+1
+23
+5
+57
+17
+0
+0
+0
+0
+0
+UC=
+160 psi
+Sieve
+- #200 =
+14.2%
+Sieve
+- #200 =
+33.8%
+Brownish tan SANDSTONE, closely fractured,
+moderately to highly weathered, soft to medium
+hard (sandstone)
+Tan and brown SILTY SAND (CORALLINE) with
+a little gravel, medium dense (coralline detritus)
+Light tannish white SILTY GRAVEL
+(CORALLINE) with some sand, medium dense
+(coralline detritus)
+grades with some clay locally
+Light tannish white SILTY SAND (CORALLINE)
+with some gravel, very loose (coralline detritus)
+Light tannish white SILTY SAND (CORALLINE)
+with some gravel, medium dense (coralline
+detritus)
+grades with loose pockets locally
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-75DR
+4" Casing & PQ Coring
+140 lb. wt., 30 in. drop
+75
+80
+85
+90
+95
+100
+105
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Sample
+Moisture
+Content (%)
+103
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+(Continued from previous plate)
+March 25, 2020
+March 25, 2020
+S. Latronic
+119.75 feet
+7797-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 3.3
+(Energy Transfer Ratio = 71.4%)
+GEOLABS, INC.
+Geotechnical Engineering
+FUEL PIER & TERMINAL IMPROVEMENTS
+KALAELOA BARBERS POINT HARBOR
+PIERS 3 & 4
+ JOB H.C. 10621
+KALAELOA, OAHU, HAWAII
+BORING_LOG  7797-00_PIERS_3&4.GPJ  GEOLABS.GDT  7/29/20
+0.0 ft.   03/25/2020 0930 HRS
+DRAFT  REPORT FOR REVIEW AND COMMENT
+21
+20
+20
+108
+107
+SM
+SM
+0
+10
+0
+111
+17
+20
+55
+64
+12
+White to light tan SANDSTONE, closely
+fractured, slightly to moderately weathered,
+medium hard (sandstone)
+Light tannish white SILTY SAND (CORALLINE)
+with some gravel and a little cobbles, medium
+dense (coralline detritus)
+ Boring terminated at 119.75 feet
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-75DR
+4" Casing & PQ Coring
+140 lb. wt., 30 in. drop
+110
+115
+120
+125
+130
+135
+140
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Sample
+Moisture
+Content (%)
+103
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+(Continued from previous plate)
+March 25, 2020
+March 25, 2020
+S. Latronic
+119.75 feet
+7797-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 3.4
+(Energy Transfer Ratio = 71.4%)
+GEOLABS, INC.
+Geotechnical Engineering
+FUEL PIER & TERMINAL IMPROVEMENTS
+KALAELOA BARBERS POINT HARBOR
+PIERS 3 & 4
+ JOB H.C. 10621
+KALAELOA, OAHU, HAWAII
+BORING_LOG  7797-00_PIERS_3&4.GPJ  GEOLABS.GDT  7/29/20
+0.0 ft.   03/25/2020 0930 HRS
+DRAFT  REPORT FOR REVIEW AND COMMENT
+WATER
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-75DR
+4" Casing & PQ Coring
+140 lb. wt., 30 in. drop
+5
+10
+15
+20
+25
+30
+35
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation (feet MLLW): 0 *
+Sample
+Moisture
+Content (%)
+104
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+March 11, 2020
+March 13, 2020
+S. Latronic
+139.3 feet
+7797-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 4.1
+(Energy Transfer Ratio = 71.4%)
+GEOLABS, INC.
+Geotechnical Engineering
+FUEL PIER & TERMINAL IMPROVEMENTS
+KALAELOA BARBERS POINT HARBOR
+PIERS 3 & 4
+ JOB H.C. 10621
+KALAELOA, OAHU, HAWAII
+BORING_LOG  7797-00_PIERS_3&4.GPJ  GEOLABS.GDT  7/29/20
+0.0 ft.   03/11/2020 0855 HRS
+DRAFT  REPORT FOR REVIEW AND COMMENT
+19
+16
+9
+99
+ML
+SM
+89
+77
+70
+56
+0
+10
+94
+88
+1
+54
+50/5"
+81
+100
+100
+100
+100
+50
+100
+100
+UC=
+580 psi
+UC=
+440 psi
+UC=
+380 psi
+UC=
+340 psi
+UC=
+290 psi
+(Mudline at 38 feet)
+Light tannish gray SANDY SILT with a little
+gravel (coralline), soft (harbor deposit)
+Tan SILTY SAND (CORALLINE) with some
+gravel, loose to medium dense (coralline
+detritus)
+Light tannish white CORAL, moderately
+fractured, slightly weathered, hard (coral
+formation)
+grades to closely fractured
+Light tannish white SANDSTONE, slightly
+fractured, slightly weathered, medium hard to
+hard (sandstone)
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-75DR
+4" Casing & PQ Coring
+140 lb. wt., 30 in. drop
+40
+45
+50
+55
+60
+65
+70
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Sample
+Moisture
+Content (%)
+104
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+(Continued from previous plate)
+March 11, 2020
+March 13, 2020
+S. Latronic
+139.3 feet
+7797-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 4.2
+(Energy Transfer Ratio = 71.4%)
+GEOLABS, INC.
+Geotechnical Engineering
+FUEL PIER & TERMINAL IMPROVEMENTS
+KALAELOA BARBERS POINT HARBOR
+PIERS 3 & 4
+ JOB H.C. 10621
+KALAELOA, OAHU, HAWAII
+BORING_LOG  7797-00_PIERS_3&4.GPJ  GEOLABS.GDT  7/29/20
+0.0 ft.   03/11/2020 0855 HRS
+DRAFT  REPORT FOR REVIEW AND COMMENT
+23
+24
+22
+27
+26
+17
+24
+90
+97
+115
+GP
+SM
+SM
+0
+0
+17
+24
+28
+42
+19
+40
+22
+60
+26
+0
+21
+31
+38
+48
+24
+83
+Sieve
+- #200 =
+16.8%
+White with some brown SANDY GRAVEL
+(CORALLINE) with a little silt, medium dense
+(coralline detritus)
+Tan SILTY SAND (CORALLINE) with some
+gravel, medium dense (coralline detritus)
+grades to CLAYEY SAND
+White CORAL, closely fractured, slightly to
+moderately weathered, medium hard (coral
+formation)
+Light tannish white SILTY SAND (CORALLINE)
+with some gravel, medium dense (coralline
+detritus)
+grades to CLAYEY SAND
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-75DR
+4" Casing & PQ Coring
+140 lb. wt., 30 in. drop
+75
+80
+85
+90
+95
+100
+105
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Sample
+Moisture
+Content (%)
+104
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+(Continued from previous plate)
+March 11, 2020
+March 13, 2020
+S. Latronic
+139.3 feet
+7797-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 4.3
+(Energy Transfer Ratio = 71.4%)
+GEOLABS, INC.
+Geotechnical Engineering
+FUEL PIER & TERMINAL IMPROVEMENTS
+KALAELOA BARBERS POINT HARBOR
+PIERS 3 & 4
+ JOB H.C. 10621
+KALAELOA, OAHU, HAWAII
+BORING_LOG  7797-00_PIERS_3&4.GPJ  GEOLABS.GDT  7/29/20
+0.0 ft.   03/11/2020 0855 HRS
+DRAFT  REPORT FOR REVIEW AND COMMENT
+14
+16
+16
+17
+18
+19
+24
+102
+119
+89
+102
+SM
+0
+0
+52
+0
+0
+0
+87
+27
+115
+33
+54/6"
+ +50/4"
+44
+76
+24
+64
+95
+33
+18
+19
+UC=
+510 psi
+Light tannish white to white CORAL, severely
+fractured, moderately weathered, soft to medium
+hard (coral formation)
+interbeds with sandstone locally
+Light tannish white SANDSTONE, moderately to
+closely fractured, slightly weathered, medium
+hard to hard (sandstone)
+grades with uncemented sand and gravel locally
+Tannish white SILTY SAND (CORALLINE) with
+some gravel, dense (coralline detritus)
+ Boring terminated at 139.3 feet
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-75DR
+4" Casing & PQ Coring
+140 lb. wt., 30 in. drop
+110
+115
+120
+125
+130
+135
+140
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Sample
+Moisture
+Content (%)
+104
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+(Continued from previous plate)
+March 11, 2020
+March 13, 2020
+S. Latronic
+139.3 feet
+7797-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 4.4
+(Energy Transfer Ratio = 71.4%)
+GEOLABS, INC.
+Geotechnical Engineering
+FUEL PIER & TERMINAL IMPROVEMENTS
+KALAELOA BARBERS POINT HARBOR
+PIERS 3 & 4
+ JOB H.C. 10621
+KALAELOA, OAHU, HAWAII
+BORING_LOG  7797-00_PIERS_3&4.GPJ  GEOLABS.GDT  7/29/20
+0.0 ft.   03/11/2020 0855 HRS
+DRAFT  REPORT FOR REVIEW AND COMMENT
+4
+7
+17
+23
+17
+7
+19
+96
+103
+77
+MH
+SM
+GP
+SM
+SM
+SW-
+SM
+0
+33
+28
+0
+0
+21
+19
+46
+39
+9
+33
+6
+33
+76
+97
+33
+36
+Sieve
+- #200 =
+17.8%
+Sieve
+- #200 =
+10.3%
+8-inch CONCRETE
+Brown CLAYEY SILT with a little gravel, very
+stiff, moist (fill)
+Light tan BOULDERS (CORALLINE), very
+dense, moist (fill)
+Light tan SILTY SAND (CORALLINE) with some
+gravel, medium dense to dense, moist to wet
+(fill)
+Tan CORAL, severely fractured, slightly
+weathered, hard (coral formation)
+Tan with some white SANDY GRAVEL
+(CORALLINE) with traces of silt, medium
+dense (coralline detritus)
+Light tannish white SILTY SAND (CORALLINE)
+with some gravel, medium dense (coralline
+detritus)
+White CORAL, closely fractured, moderately to
+highly weathered, soft to medium hard (coral
+formation)
+Tannish white SILTY SAND (CORALLINE) with
+some gravel, medium dense (coralline detritus)
+Light tannish white CORAL, moderately to
+closely fractured, moderately to highly
+weathered, soft to medium hard (coral formation)
+Light tan GRAVELLY SAND (CORALLINE) with
+a little silt, loose to medium dense (weathered
+sandstone)
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-75DG2
+4 Solid Stem Auger & PQ Coring
+140 lb. wt., 30 in. drop
+5
+10
+15
+20
+25
+30
+35
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation (feet MLLW): 12 *
+Sample
+Moisture
+Content (%)
+105
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+April 1, 2019
+April 2, 2019
+S. Latronic
+83 feet
+7797-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 5.1
+(Energy Transfer Ratio = 91.5%)
+GEOLABS, INC.
+Geotechnical Engineering
+FUEL PIER & TERMINAL IMPROVEMENTS
+KALAELOA BARBERS POINT HARBOR
+PIERS 3 & 4
+ JOB H.C. 10621
+KALAELOA, OAHU, HAWAII
+BORING_LOG  7797-00_PIERS_3&4.GPJ  GEOLABS.GDT  7/29/20
+10.2 ft.   04/01/2019 1605 HRS
+DRAFT  REPORT FOR REVIEW AND COMMENT
+15
+14
+22
+17
+17
+24
+19
+86
+107
+89
+129
+SP
+SM
+7
+0
+16
+19
+61
+20/0"
+ Ref.
+50
+27
+11
+25
+15
+50/5"
+76
+39
+43
+0
+48
+58
+83
+Direct
+Shear
+UC=
+310 psi
+Tan SANDSTONE, closely fractured, moderately
+weathered, medium hard (sandstone)
+grades to severely fractured and highly weathered
+Light tan SAND (CORALLINE) with a little
+sandstone gravel, medium dense (weathered
+sandstone)
+Light tannish white SANDSTONE, closely
+fractured, moderately to highly weathered, soft to
+medium hard (sandstone)
+White SILTY SAND (CORALLINE) with a little
+gravel, medium dense (coralline detritus)
+White CORAL, moderately fractured, slightly to
+moderately weathered, medium hard to hard
+(coral formation)
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-75DG2
+4 Solid Stem Auger & PQ Coring
+140 lb. wt., 30 in. drop
+40
+45
+50
+55
+60
+65
+70
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Sample
+Moisture
+Content (%)
+105
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+(Continued from previous plate)
+April 1, 2019
+April 2, 2019
+S. Latronic
+83 feet
+7797-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 5.2
+(Energy Transfer Ratio = 91.5%)
+GEOLABS, INC.
+Geotechnical Engineering
+FUEL PIER & TERMINAL IMPROVEMENTS
+KALAELOA BARBERS POINT HARBOR
+PIERS 3 & 4
+ JOB H.C. 10621
+KALAELOA, OAHU, HAWAII
+BORING_LOG  7797-00_PIERS_3&4.GPJ  GEOLABS.GDT  7/29/20
+10.2 ft.   04/01/2019 1605 HRS
+DRAFT  REPORT FOR REVIEW AND COMMENT
+22
+21
+29
+95
+SM
+SP
+GP-
+GM
+16
+29
+19
+56
+50
+Light tannish white with some brown SILTY
+SAND (CORALLINE) with some gravel,
+medium dense (coralline detritus)
+Light tannish white SAND (CORALLINE) with a
+little gravel, medium dense (weathered
+sandstone)
+White to light tan SANDY GRAVEL
+(CORALLINE) with a little silt, medium dense
+(coralline detritus)
+ Boring terminated at 83 feet
+ * Elevations estimated from Topographic Survey
+Map transmitted by Mitsunaga & Associates,
+Inc. on July 15, 2020.
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-75DG2
+4 Solid Stem Auger & PQ Coring
+140 lb. wt., 30 in. drop
+75
+80
+85
+90
+95
+100
+105
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Sample
+Moisture
+Content (%)
+105
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+(Continued from previous plate)
+April 1, 2019
+April 2, 2019
+S. Latronic
+83 feet
+7797-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 5.3
+(Energy Transfer Ratio = 91.5%)
+GEOLABS, INC.
+Geotechnical Engineering
+FUEL PIER & TERMINAL IMPROVEMENTS
+KALAELOA BARBERS POINT HARBOR
+PIERS 3 & 4
+ JOB H.C. 10621
+KALAELOA, OAHU, HAWAII
+BORING_LOG  7797-00_PIERS_3&4.GPJ  GEOLABS.GDT  7/29/20
+10.2 ft.   04/01/2019 1605 HRS
+DRAFT  REPORT FOR REVIEW AND COMMENT
+14
+6
+48
+25
+16
+8
+16
+95
+87
+110
+SM
+GP
+MH
+SM
+SM
+SM
+50
+100
+0
+21
+40
+27
+23
+2
+14
+16
+71
+97
+86
+83
+0
+60
+86
+Sieve
+- #200 =
+4.0%
+UC=
+730 psi
+7-inch CONCRETE
+8-inch ASPHALTIC CONCRETE
+Tan SILTY SAND (CORALLINE) with some
+gravel, medium dense, moist (fill)
+Tan SANDY GRAVEL with traces of silt, medium
+dense, moist (fill)
+grades with cobbles (coralline) at 6 feet
+Brown with some tan CLAYEY SILT with a little
+gravel (coralline), soft, moist to wet (fill)
+Light tannish white CORAL, moderately
+fractured, moderately weathered, soft to medium
+hard (coral formation)
+White SILTY SAND (CORALLINE) with traces of
+gravel, medium dense (coralline detritus)
+Light tannish white to white CORAL, moderately
+fractured, moderately to highly weathered, soft to
+medium hard (coral formation)
+Light tannish white SILTY SAND (CORALLINE)
+with some gravel, medium dense (coralline
+detritus)
+White CORAL, closely fractured, slightly to
+moderately weathered, medium hard to hard
+(coral formation)
+Tan SILTY SAND (CORALLINE) with some
+gravel, medium dense (coralline detritus)
+White CORAL, slightly to moderately fractured,
+slightly weathered, hard (coral formation)
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-75DG2
+4 Solid Stem Auger & PQ Coring
+140 lb. wt., 30 in. drop
+5
+10
+15
+20
+25
+30
+35
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation (feet MLLW): 11 *
+Sample
+Moisture
+Content (%)
+106
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+April 2, 2019
+April 2, 2019
+S. Latronic
+83 feet
+7797-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 6.1
+(Energy Transfer Ratio = 91.5%)
+GEOLABS, INC.
+Geotechnical Engineering
+FUEL PIER & TERMINAL IMPROVEMENTS
+KALAELOA BARBERS POINT HARBOR
+PIERS 3 & 4
+ JOB H.C. 10621
+KALAELOA, OAHU, HAWAII
+BORING_LOG  7797-00_PIERS_3&4.GPJ  GEOLABS.GDT  7/29/20
+8.8 ft.   04/02/2019 1520 HRS
+DRAFT  REPORT FOR REVIEW AND COMMENT
+8
+11
+9
+23
+13
+14
+10
+66
+92
+59
+122
+SM
+GW
+MH
+MH
+78
+0
+57
+81
+63
+0
+50/3"
+50/5"
+67
+28
+14
+30/1"
+93
+84
+14
+71
+6
+100
+91
+21
+UC=
+820 psi
+UC=
+530 psi
+UC=
+760 psi
+grades to limestone locally
+Tannish white SILTY SAND (CORALLINE) with a
+little gravel, medium dense (coralline detritus)
+White CORAL, moderately fractured, slightly to
+moderately weathered, medium hard to hard
+(coral formation)
+Light tan SANDY GRAVEL (CORALLINE),
+medium dense (coralline detritus)
+Brown with some tan CLAYEY SILT with some
+gravel (coralline), medium stiff to stiff (alluvium
+w/ coral debris)
+Light tannish white SANDSTONE, moderately
+fractured, slightly weathered, hard (sandstone)
+White CORAL, closely fractured, slightly
+weathered, hard (coral formation)
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-75DG2
+4 Solid Stem Auger & PQ Coring
+140 lb. wt., 30 in. drop
+40
+45
+50
+55
+60
+65
+70
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Sample
+Moisture
+Content (%)
+106
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+(Continued from previous plate)
+April 2, 2019
+April 2, 2019
+S. Latronic
+83 feet
+7797-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 6.2
+(Energy Transfer Ratio = 91.5%)
+GEOLABS, INC.
+Geotechnical Engineering
+FUEL PIER & TERMINAL IMPROVEMENTS
+KALAELOA BARBERS POINT HARBOR
+PIERS 3 & 4
+ JOB H.C. 10621
+KALAELOA, OAHU, HAWAII
+BORING_LOG  7797-00_PIERS_3&4.GPJ  GEOLABS.GDT  7/29/20
+8.8 ft.   04/02/2019 1520 HRS
+DRAFT  REPORT FOR REVIEW AND COMMENT
+16
+18
+17
+94
+MH
+SM
+0
+0
+40
+41
+16
+42
+0
+Brown CLAYEY SILT with some gravel
+(coralline), stiff to very stiff (alluvium w/ coral
+debris)
+White CORAL, severely fractured, slightly
+weathered, medium hard to hard (coral
+formation)
+Tan CORAL, closely to severely fractured,
+moderately to highly weathered, soft to medium
+hard (coral formation)
+Tan with some white SILTY SAND
+(CORALLINE) with a little gravel, medium
+dense (coralline detritus)
+ Boring terminated at 83 feet
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-75DG2
+4 Solid Stem Auger & PQ Coring
+140 lb. wt., 30 in. drop
+75
+80
+85
+90
+95
+100
+105
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Sample
+Moisture
+Content (%)
+106
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+(Continued from previous plate)
+April 2, 2019
+April 2, 2019
+S. Latronic
+83 feet
+7797-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 6.3
+(Energy Transfer Ratio = 91.5%)
+GEOLABS, INC.
+Geotechnical Engineering
+FUEL PIER & TERMINAL IMPROVEMENTS
+KALAELOA BARBERS POINT HARBOR
+PIERS 3 & 4
+ JOB H.C. 10621
+KALAELOA, OAHU, HAWAII
+BORING_LOG  7797-00_PIERS_3&4.GPJ  GEOLABS.GDT  7/29/20
+8.8 ft.   04/02/2019 1520 HRS
+DRAFT  REPORT FOR REVIEW AND COMMENT
+6
+23
+17
+15
+11
+14
+8
+98
+93
+122
+SM
+0
+0
+44
+38
+0
+0
+22
+50/3"
+45/6"
+ +50/5"
+41
+52
+37
+70
+50/5"
+83
+46
+92
+95
+50
+40
+69
+UC=
+440 psi
+UC=
+790 psi
+9-inch CONCRETE
+Tan SILTY SAND (CORALLINE) with some
+gravel, dense, moist (fill)
+Pinkish white to light tannish white CORAL,
+closely to severely fractured, moderately
+weathered, medium hard to hard (coral
+formation)
+interbeds with sandstone locally
+grades to moderately fractured locally
+grades with sand and gravel pockets locally
+grades to limestone locally
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-75DG2
+4 Solid Stem Auger & PQ Coring
+140 lb. wt., 30 in. drop
+5
+10
+15
+20
+25
+30
+35
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation (feet MLLW): 11 *
+Sample
+Moisture
+Content (%)
+107
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+April 10, 2019
+April 10, 2019
+S. Latronic
+83 feet
+7797-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 7.1
+(Energy Transfer Ratio = 91.5%)
+GEOLABS, INC.
+Geotechnical Engineering
+FUEL PIER & TERMINAL IMPROVEMENTS
+KALAELOA BARBERS POINT HARBOR
+PIERS 3 & 4
+ JOB H.C. 10621
+KALAELOA, OAHU, HAWAII
+BORING_LOG  7797-00_PIERS_3&4.GPJ  GEOLABS.GDT  7/29/20
+8.9 ft.   04/10/2019 1135 HRS
+DRAFT  REPORT FOR REVIEW AND COMMENT
+16
+11
+11
+14
+12
+9
+8
+100
+76
+128
+SM
+SM
+SM
+19
+69
+16
+74
+78
+27
+10
+63
+30
+8
+20/0"
+ Ref.
+50/5"
+71
+48
+100
+48
+14
+100
+92
+31
+UC=
+550 psi
+UC=
+860 psi
+UC=
+1200 psi
+Light tannish white SILTY SAND (CORALLINE)
+with some gravel, loose to medium dense
+(coralline detritus)
+White SANDSTONE, moderately fractured,
+slightly weathered, medium hard to hard
+(sandstone)
+grades with uncemented sand locally
+Tannish white SILTY SAND (CORALLINE) with
+some gravel, loose to medium dense (coralline
+detritus)
+White SANDSTONE, moderately fractured,
+slightly weathered, medium hard to hard
+(sandstone)
+Light tannish white CORAL, moderately
+fractured, slightly weathered, medium hard to
+hard (coral formation)
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-75DG2
+4 Solid Stem Auger & PQ Coring
+140 lb. wt., 30 in. drop
+40
+45
+50
+55
+60
+65
+70
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Sample
+Moisture
+Content (%)
+107
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+(Continued from previous plate)
+April 10, 2019
+April 10, 2019
+S. Latronic
+83 feet
+7797-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 7.2
+(Energy Transfer Ratio = 91.5%)
+GEOLABS, INC.
+Geotechnical Engineering
+FUEL PIER & TERMINAL IMPROVEMENTS
+KALAELOA BARBERS POINT HARBOR
+PIERS 3 & 4
+ JOB H.C. 10621
+KALAELOA, OAHU, HAWAII
+BORING_LOG  7797-00_PIERS_3&4.GPJ  GEOLABS.GDT  7/29/20
+8.9 ft.   04/10/2019 1135 HRS
+DRAFT  REPORT FOR REVIEW AND COMMENT
+22
+25
+38
+102
+SM
+MH
+SM
+ML
+20
+22
+8
+0
+36
+Light tannish white SILTY SAND (CORALLINE)
+with a little gravel, medium dense (coralline
+detritus)
+Brown CLAYEY SILT with traces of gravel
+(coralline), very stiff (alluvium w/ coral debris)
+Light tan SILTY SAND (CORALLINE) with some
+gravel, medium dense (coralline detritus)
+Brown with some tan SANDY SILT with traces of
+gravel, stiff (alluvium w/ coral debris)
+ Boring terminated at 83 feet
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-75DG2
+4 Solid Stem Auger & PQ Coring
+140 lb. wt., 30 in. drop
+75
+80
+85
+90
+95
+100
+105
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Sample
+Moisture
+Content (%)
+107
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+(Continued from previous plate)
+April 10, 2019
+April 10, 2019
+S. Latronic
+83 feet
+7797-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 7.3
+(Energy Transfer Ratio = 91.5%)
+GEOLABS, INC.
+Geotechnical Engineering
+FUEL PIER & TERMINAL IMPROVEMENTS
+KALAELOA BARBERS POINT HARBOR
+PIERS 3 & 4
+ JOB H.C. 10621
+KALAELOA, OAHU, HAWAII
+BORING_LOG  7797-00_PIERS_3&4.GPJ  GEOLABS.GDT  7/29/20
+8.9 ft.   04/10/2019 1135 HRS
+DRAFT  REPORT FOR REVIEW AND COMMENT
+9
+13
+20
+25
+13
+10
+16
+102
+97
+120
+SM
+MH
+SC
+43
+51
+11
+0
+25
+0
+50/4"
+50/5"
+15
+30
+37/6"
+ +50/4"
+52
+11
+79
+89
+75
+33
+63
+50
+31
+UC=
+1600 psi
+UC=
+2050 psi
+3-inch ASPHALTIC CONCRETE
+Tan with some white SILTY SAND
+(CORALLINE) with some gravel, medium
+dense, moist (fill)
+Light tan CORAL, moderately fractured, slightly
+weathered, medium hard to hard (coral
+formation)
+Light tan SANDSTONE, severely fractured,
+moderately to highly weathered, soft to medium
+hard (sandstone)
+Light tannish white CORAL, closely fractured,
+slightly to moderately weathered, medium hard
+to hard (coral formation)
+Light tan SANDSTONE, severely fractured,
+moderately to highly weathered, soft to medium
+hard (sandstone)
+Light tannish white to white CORAL, moderately
+fractured, slightly to moderately weathered,
+medium hard to hard (coral formation)
+Light tan CORAL, closely to severely fractured,
+moderately weathered, medium hard to hard
+(coral formation)
+Light tan SANDSTONE, severely fractured,
+moderately to highly weathered, soft to medium
+hard (sandstone)
+Brown CLAYEY SILT with traces of gravel
+(coralline), stiff (alluvium w/ coral debris)
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-75DG2
+4 Solid Stem Auger & PQ Coring
+140 lb. wt., 30 in. drop
+5
+10
+15
+20
+25
+30
+35
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation (feet MLLW): 8.5 *
+Sample
+Moisture
+Content (%)
+108
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+April 3, 2019
+April 4, 2019
+S. Latronic
+103 feet
+7797-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 8.1
+(Energy Transfer Ratio = 91.5%)
+GEOLABS, INC.
+Geotechnical Engineering
+FUEL PIER & TERMINAL IMPROVEMENTS
+KALAELOA BARBERS POINT HARBOR
+PIERS 3 & 4
+ JOB H.C. 10621
+KALAELOA, OAHU, HAWAII
+BORING_LOG  7797-00_PIERS_3&4.GPJ  GEOLABS.GDT  7/29/20
+6.4 ft.   04/04/2019 1030 HRS
+DRAFT  REPORT FOR REVIEW AND COMMENT
+19
+12
+12
+21
+17
+19
+9
+112
+71
+80
+115
+SC
+GW
+SM
+SP
+SM
+75
+94
+0
+15
+12
+9
+9
+9
+8
+48
+43
+0
+26
+47
+0
+39
+7
+LL=67
+PI=50
+Sieve
+- #200 =
+2.9%
+UC=
+680 psi
+Tannish brown CLAYEY SAND (CORALLINE)
+with a little gravel, medium dense (coralline
+detritus)
+grades to clayey silt
+Light tannish white SANDY GRAVEL
+(CORALLINE) with traces of silt, loose to
+medium dense (coralline detritus)
+grades with more gravel locally
+White CORAL, closely fractured, moderately
+weathered, soft to medium hard (coral formation)
+Light tannish white SILTY SAND (CORALLINE)
+with some gravel, loose to medium dense
+(coralline detritus)
+White SAND (CORALLINE) with a little
+sandstone gravel, medium dense (weathered
+sandstone)
+White SANDSTONE, moderately fractured,
+slightly to moderately weathered, medium hard
+(sandstone)
+White SILTY SAND (CORALLINE) with a little
+gravel, medium dense (coralline detritus)
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-75DG2
+4 Solid Stem Auger & PQ Coring
+140 lb. wt., 30 in. drop
+40
+45
+50
+55
+60
+65
+70
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Sample
+Moisture
+Content (%)
+108
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+(Continued from previous plate)
+April 3, 2019
+April 4, 2019
+S. Latronic
+103 feet
+7797-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 8.2
+(Energy Transfer Ratio = 91.5%)
+GEOLABS, INC.
+Geotechnical Engineering
+FUEL PIER & TERMINAL IMPROVEMENTS
+KALAELOA BARBERS POINT HARBOR
+PIERS 3 & 4
+ JOB H.C. 10621
+KALAELOA, OAHU, HAWAII
+BORING_LOG  7797-00_PIERS_3&4.GPJ  GEOLABS.GDT  7/29/20
+6.4 ft.   04/04/2019 1030 HRS
+DRAFT  REPORT FOR REVIEW AND COMMENT
+42
+20
+22
+26
+23
+23
+22
+93
+104
+105
+SM
+MH
+GP
+ML
+SM
+12
+47
+17
+28
+25
+18
+13
+36
+48
+86
+0
+53
+0
+Sieve
+- #200 =
+29.0%
+Brownish tan CLAYEY SILT with a little gravel
+(coralline), very stiff (alluvium w/ coral debris)
+Tan SANDY GRAVEL (CORALLINE) with some
+cobbles, medium dense (coralline detritus)
+grades to gravelly sand locally
+Tan SANDY SILT (CORALLINE) with traces of
+gravel, very stiff (coralline detritus)
+White SILTY SAND (CORALLINE) with some
+gravel, medium dense (coralline detritus)
+grades with more gravel locally
+ Boring terminated at 103 feet
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-75DG2
+4 Solid Stem Auger & PQ Coring
+140 lb. wt., 30 in. drop
+75
+80
+85
+90
+95
+100
+105
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Sample
+Moisture
+Content (%)
+108
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+(Continued from previous plate)
+April 3, 2019
+April 4, 2019
+S. Latronic
+103 feet
+7797-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 8.3
+(Energy Transfer Ratio = 91.5%)
+GEOLABS, INC.
+Geotechnical Engineering
+FUEL PIER & TERMINAL IMPROVEMENTS
+KALAELOA BARBERS POINT HARBOR
+PIERS 3 & 4
+ JOB H.C. 10621
+KALAELOA, OAHU, HAWAII
+BORING_LOG  7797-00_PIERS_3&4.GPJ  GEOLABS.GDT  7/29/20
+6.4 ft.   04/04/2019 1030 HRS
+DRAFT  REPORT FOR REVIEW AND COMMENT
+4
+10
+14
+7
+21
+12
+11
+113
+90
+SM
+MH
+52
+12
+0
+26
+33
+0
+0
+50/2"
+32
+28
+20/0"
+ Ref.
+13
+21
+25/6"
+ +20/0"
+ Ref.
+92
+43
+69
+63
+83
+43
+38
+UC=
+1160 psi
+UC=
+490 psi
+9-inch ASPHALTIC CONCRETE
+Light tannish white SILTY SAND (CORALLINE)
+with some gravel, dense, moist (fill)
+Brown CLAYEY SILT with traces of gravel
+(coralline), stiff, moist (fill)
+Light tannish white to white CORAL, moderately
+to closely fractured, slightly to moderately
+weathered, medium hard to hard (coral
+formation)
+interbeds with sandstone locally
+grades with limestone locally
+grades to light grayish white and highly weathered
+locally
+grades with limestone locally
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-75DG2
+4 Solid Stem Auger & PQ Coring
+140 lb. wt., 30 in. drop
+5
+10
+15
+20
+25
+30
+35
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation (feet MLLW): 9 *
+Sample
+Moisture
+Content (%)
+109
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+April 11, 2019
+April 11, 2019
+S. Latronic
+83 feet
+7797-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 9.1
+(Energy Transfer Ratio = 91.5%)
+GEOLABS, INC.
+Geotechnical Engineering
+FUEL PIER & TERMINAL IMPROVEMENTS
+KALAELOA BARBERS POINT HARBOR
+PIERS 3 & 4
+ JOB H.C. 10621
+KALAELOA, OAHU, HAWAII
+BORING_LOG  7797-00_PIERS_3&4.GPJ  GEOLABS.GDT  7/29/20
+7.4 ft.   04/12/2019 1145 HRS
+DRAFT  REPORT FOR REVIEW AND COMMENT
+8
+12
+10
+16
+14
+14
+13
+129
+119
+92
+100
+SW-
+SM
+GM
+17
+24
+0
+53
+57
+0
+41
+20/0"
+ Ref.
+65
+34
+25/3"
+35
+26
+64
+70
+38
+100
+92
+33
+31
+UC=
+550 psi
+Sieve
+- #200 =
+9.1%
+UC=
+610 psi
+grades to very hard locally
+Tannish white GRAVELLY SAND (CORALLINE)
+with a little silt, medium dense to dense
+(weathered sandstone)
+VOID
+Light tan SANDSTONE, moderately fractured,
+slightly weathered, medium hard to hard
+(sandstone)
+Light tannish white CORAL, moderately
+fractured, slightly weathered, medium hard to
+hard (coral formation)
+Tan with some brown SILTY GRAVEL
+(CORALLINE) with a little sand, medium dense
+(coralline detritus)
+grades with cobbles (coralline)
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-75DG2
+4 Solid Stem Auger & PQ Coring
+140 lb. wt., 30 in. drop
+40
+45
+50
+55
+60
+65
+70
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Sample
+Moisture
+Content (%)
+109
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+(Continued from previous plate)
+April 11, 2019
+April 11, 2019
+S. Latronic
+83 feet
+7797-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 9.2
+(Energy Transfer Ratio = 91.5%)
+GEOLABS, INC.
+Geotechnical Engineering
+FUEL PIER & TERMINAL IMPROVEMENTS
+KALAELOA BARBERS POINT HARBOR
+PIERS 3 & 4
+ JOB H.C. 10621
+KALAELOA, OAHU, HAWAII
+BORING_LOG  7797-00_PIERS_3&4.GPJ  GEOLABS.GDT  7/29/20
+7.4 ft.   04/12/2019 1145 HRS
+DRAFT  REPORT FOR REVIEW AND COMMENT
+20
+14
+19
+73
+GM
+SM
+22
+71
+10
+57/6"
+ +20/0"
+ Ref.
+9
+42
+83
+UC=
+3370 psi
+grades to gravelly silt locally
+Light tannish white SANDSTONE, moderately to
+closely fractured, slightly to moderately
+weathered, medium hard to hard (sandstone)
+White CORAL, slightly fractured, slightly
+weathered, hard (coral formation)
+Tan SILTY SAND (CORALLINE) with a little
+gravel, medium dense to loose (coralline
+detritus)
+ Boring terminated at 83 feet
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-75DG2
+4 Solid Stem Auger & PQ Coring
+140 lb. wt., 30 in. drop
+75
+80
+85
+90
+95
+100
+105
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Sample
+Moisture
+Content (%)
+109
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+(Continued from previous plate)
+April 11, 2019
+April 11, 2019
+S. Latronic
+83 feet
+7797-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 9.3
+(Energy Transfer Ratio = 91.5%)
+GEOLABS, INC.
+Geotechnical Engineering
+FUEL PIER & TERMINAL IMPROVEMENTS
+KALAELOA BARBERS POINT HARBOR
+PIERS 3 & 4
+ JOB H.C. 10621
+KALAELOA, OAHU, HAWAII
+BORING_LOG  7797-00_PIERS_3&4.GPJ  GEOLABS.GDT  7/29/20
+7.4 ft.   04/12/2019 1145 HRS
+DRAFT  REPORT FOR REVIEW AND COMMENT
+21
+25
+18
+14
+16
+14
+14
+85
+70
+91
+GM
+ML
+GP-
+GM
+67
+0
+14
+53
+60
+60/6"
+Ref.
+60/3"
+Ref.
+9
+13
+14
+17
+100
+14
+36
+40
+UC=0.5
+ksf
+LL=29
+PI=NP
+UC=
+750 psi
+Sieve
+- #200 =
+11.1%
+14-inch CONCRETE
+Light gray SILTY GRAVEL (BASALTIC) with
+some sand (basaltic), medium dense, moist
+(base material)
+Light brown SANDY SILT with some gravel
+(coralline) and cobbles (coralline), hard, moist
+(fill)
+Light tan CORAL, closely to slightly fractured,
+slightly to moderately weathered, medium hard
+to hard (coral formation)
+Light tan CORAL, closely fractured, moderately
+weathered, medium hard to hard (coral
+formation)
+Tan SANDY GRAVEL (CORALLINE) with a little
+silt, loose (coralline detritus)
+Light tan CORAL, severely to closely fractured,
+moderately weathered, medium hard to hard
+(coral formation)
+ Boring terminated at 31.5 feet
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-45C TRUCK
+4 Solid Stem Auger & PQ Coring
+140 lb. wt., 30 in. drop
+5
+10
+15
+20
+25
+30
+35
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation (feet MLLW): 10.5 *
+Sample
+Moisture
+Content (%)
+110
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+April 15, 2019
+April 16, 2019
+K. Gerstnecker
+31.5 feet
+7797-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 10
+(Energy Transfer Ratio = 78%)
+GEOLABS, INC.
+Geotechnical Engineering
+FUEL PIER & TERMINAL IMPROVEMENTS
+KALAELOA BARBERS POINT HARBOR
+PIERS 3 & 4
+ JOB H.C. 10621
+KALAELOA, OAHU, HAWAII
+BORING_LOG  7797-00_PIERS_3&4.GPJ  GEOLABS.GDT  7/29/20
+6.5 ft.   04/15/2019 1432 HRS
+DRAFT  REPORT FOR REVIEW AND COMMENT
+13
+26
+14
+20
+16
+13
+108
+103
+116
+SM
+67
+56
+38
+56
+0
+36
+32/6"
+ +20/0"
+ Ref.
+31
+56
+13/6"
+ +50/5"
+30
+29
+21/6"
+ +25/3"
+93
+97
+100
+100
+57
+81
+UC=
+1110 psi
+UC=
+340 psi
+UC=
+810 psi
+UC=
+360 psi
+8-inch CONCRETE
+Tan with some white SILTY SAND
+(CORALLINE) with some gravel, medium
+dense, moist (fill)
+Light tannish white CORAL, moderately
+fractured, slightly to moderately weathered,
+medium hard to hard (coral formation)
+interbeds with sandstone locally
+grades to severely fractured and highly weathered
+locally
+ Boring terminated at 32.25 feet
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-75DG2
+4 Solid Stem Auger & PQ Coring
+140 lb. wt., 30 in. drop
+5
+10
+15
+20
+25
+30
+35
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation (feet MLLW): 10.5 *
+Sample
+Moisture
+Content (%)
+111
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+April 8, 2019
+April 8, 2019
+S. Latronic
+32.25 feet
+7797-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 11
+(Energy Transfer Ratio = 91.5%)
+GEOLABS, INC.
+Geotechnical Engineering
+FUEL PIER & TERMINAL IMPROVEMENTS
+KALAELOA BARBERS POINT HARBOR
+PIERS 3 & 4
+ JOB H.C. 10621
+KALAELOA, OAHU, HAWAII
+BORING_LOG  7797-00_PIERS_3&4.GPJ  GEOLABS.GDT  7/29/20
+9.9 ft.   04/08/2019 1005 HRS
+DRAFT  REPORT FOR REVIEW AND COMMENT
+7
+17
+23
+13
+14
+29
+10
+15
+105
+100
+84
+123
+GW
+SM
+SM
+15
+0
+25
+0
+10
+32
+10/6"
+ +50/3"
+25/6"
+ +25/3"
+29
+30/2"
+13
+54
+25/0"
+ Ref.
+74
+69
+81
+47
+0
+74
+UC=
+280 psi
+Light tan with white SANDY GRAVEL
+(CORALLINE) with some cobbles, dense, moist
+(fill)
+Tan SILTY SAND (CORALLINE) with some
+gravel, medium dense, moist (fill)
+Light tannish white to tan CORAL, closely
+fractured, slightly to moderately weathered,
+medium hard to hard (coral formation)
+grades with silty sand and gravel pockets locally
+Light tan SANDSTONE, closely to severely
+fractured, moderately to highly weathered, soft to
+medium hard (sandstone)
+Light tannish white CORAL, closely fractured,
+slightly to moderately weathered, medium hard
+to hard (coral formation)
+Tan SILTY SAND (CORALLINE) with some
+gravel, medium dense (weathered sandstone)
+Light tannish white CORAL, closely fractured,
+slightly weathered, medium hard to hard (coral
+formation)
+ Boring terminated at 31.5 feet
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-75DG2
+4 Solid Stem Auger & PQ Coring
+140 lb. wt., 30 in. drop
+5
+10
+15
+20
+25
+30
+35
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation (feet MLLW): 10 *
+Sample
+Moisture
+Content (%)
+112
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+April 4, 2019
+April 4, 2019
+S. Latronic
+31.5 feet
+7797-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 12
+(Energy Transfer Ratio = 91.5%)
+GEOLABS, INC.
+Geotechnical Engineering
+FUEL PIER & TERMINAL IMPROVEMENTS
+KALAELOA BARBERS POINT HARBOR
+PIERS 3 & 4
+ JOB H.C. 10621
+KALAELOA, OAHU, HAWAII
+BORING_LOG  7797-00_PIERS_3&4.GPJ  GEOLABS.GDT  7/29/20
+8.3 ft.   04/04/2019 1530 HRS
+DRAFT  REPORT FOR REVIEW AND COMMENT
+12
+17
+6
+23
+15
+17
+111
+61
+102
+SM
+SP
+42
+30
+53
+0
+0
+0
+37
+25/0"
+ Ref.
+50/5"
+34
+20/0"
+ Ref.
+22
+50/5"
+67
+89
+100
+39
+48
+43
+UC=
+1070 psi
+UC=
+360 psi
+Tan SILTY SAND (CORALLINE) with some
+gravel, medium dense, moist (fill)
+White COBBLES (CORALLINE), dense, moist
+(fill)
+Light tannish white CORAL, moderately
+fractured, slightly to moderately weathered,
+medium hard to hard (coral formation)
+grades with very hard limestone locally
+interbeds with sandstone locally
+Light tan SAND (CORALLINE) with a little
+sandstone gravel, slightly cemented, medium
+dense (weathered sandstone)
+Light tannish white CORAL, closely to severely
+fractured, moderately weathered, medium hard
+to hard (coral formation)
+grades to soft and highly weathered locally
+ Boring terminated at 31.9 feet
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-75DG2
+4 Solid Stem Auger & PQ Coring
+140 lb. wt., 30 in. drop
+5
+10
+15
+20
+25
+30
+35
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation (feet MLLW): 10.5 *
+Sample
+Moisture
+Content (%)
+113
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+April 8, 2019
+April 8, 2019
+S. Latronic
+31.9 feet
+7797-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 13
+(Energy Transfer Ratio = 91.5%)
+GEOLABS, INC.
+Geotechnical Engineering
+FUEL PIER & TERMINAL IMPROVEMENTS
+KALAELOA BARBERS POINT HARBOR
+PIERS 3 & 4
+ JOB H.C. 10621
+KALAELOA, OAHU, HAWAII
+BORING_LOG  7797-00_PIERS_3&4.GPJ  GEOLABS.GDT  7/29/20
+8.9 ft.   04/08/2019 1440 HRS
+DRAFT  REPORT FOR REVIEW AND COMMENT
+12
+SM
+50/5
+Ref.
+6-inch CONCRETE
+Tan SILTY SAND (CORALLINE) with some
+gravel, medium dense, moist (fill)
+Light tannish white CORAL, slightly to
+moderately weathered, medium hard to hard
+(coral formation)
+ Boring terminated at 5 feet
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-75DG2
+4 Solid Stem Auger
+140 lb. wt., 30 in. drop
+5
+10
+15
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation (feet MLLW): 10.5 *
+Sample
+Moisture
+Content (%)
+I-1
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+April 9, 2019
+April 9, 2019
+S. Latronic
+5 feet
+7797-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 14
+(Energy Transfer Ratio = 91.5%)
+GEOLABS, INC.
+Geotechnical Engineering
+FUEL PIER & TERMINAL IMPROVEMENTS
+KALAELOA BARBERS POINT HARBOR
+PIERS 3 & 4
+ JOB H.C. 10621
+KALAELOA, OAHU, HAWAII
+BORING_LOG  7797-00_PIERS_3&4.GPJ  GEOLABS.GDT  7/29/20
+Not Encountered
+DRAFT  REPORT FOR REVIEW AND COMMENT
+22
+96
+GM
+MH
+19/6
++39/5
+Ref.
+30/1
+Ref.
+13-inch CONCRETE
+Light gray SILTY GRAVEL (BASALTIC) with
+some sand, medium dense, moist (base
+material)
+Light brown CLAYEY SILT with some gravel
+(coralline), hard, moist (fill)
+ Boring terminated at 5 feet
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-45C TRUCK
+4 Solid Stem Auger
+140 lb. wt., 30 in. drop
+5
+10
+15
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation (feet MLLW): 9.5 *
+Sample
+Moisture
+Content (%)
+I-2
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+April 15, 2019
+April 15, 2019
+K. Gerstnecker
+5 feet
+7797-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 15
+(Energy Transfer Ratio = 78%)
+GEOLABS, INC.
+Geotechnical Engineering
+FUEL PIER & TERMINAL IMPROVEMENTS
+KALAELOA BARBERS POINT HARBOR
+PIERS 3 & 4
+ JOB H.C. 10621
+KALAELOA, OAHU, HAWAII
+BORING_LOG  7797-00_PIERS_3&4.GPJ  GEOLABS.GDT  7/29/20
+Not Encountered
+DRAFT  REPORT FOR REVIEW AND COMMENT
+7
+11
+GM
+MH
+40/3
+Ref.
+70/5
+Ref.
+14-inch CONCRETE
+Light gray to light brown SILTY GRAVEL
+(BASALTIC) with some gravel (coralline), very
+dense, moist (base material)
+Light brown CLAYEY SILT with some cobbles
+and gravel (coralline), hard, moist (fill)
+ Boring terminated at 5 feet
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-45C TRUCK
+4 Solid Stem Auger
+140 lb. wt., 30 in. drop
+5
+10
+15
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation (feet MLLW): 9.5 *
+Sample
+Moisture
+Content (%)
+I-3
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+April 15, 2019
+April 15, 2019
+K. Gerstnecker
+5 feet
+7797-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 16
+(Energy Transfer Ratio = 78%)
+GEOLABS, INC.
+Geotechnical Engineering
+FUEL PIER & TERMINAL IMPROVEMENTS
+KALAELOA BARBERS POINT HARBOR
+PIERS 3 & 4
+ JOB H.C. 10621
+KALAELOA, OAHU, HAWAII
+BORING_LOG  7797-00_PIERS_3&4.GPJ  GEOLABS.GDT  7/29/20
+Not Encountered
+DRAFT  REPORT FOR REVIEW AND COMMENT
+9
+SM
+19
+Tan with some white SILTY SAND
+(CORALLINE) with some gravel, medium
+dense, moist (fill)
+Light tannish white CORAL, slightly to
+moderately weathered, medium hard to hard
+(coral formation)
+ Boring terminated at 5 feet
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-75DG2
+4 Solid Stem Auger
+140 lb. wt., 30 in. drop
+5
+10
+15
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation (feet MLLW): 10 *
+Sample
+Moisture
+Content (%)
+I-4
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+April 9, 2019
+April 9, 2019
+S. Latronic
+5 feet
+7797-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 17
+(Energy Transfer Ratio = 91.5%)
+GEOLABS, INC.
+Geotechnical Engineering
+FUEL PIER & TERMINAL IMPROVEMENTS
+KALAELOA BARBERS POINT HARBOR
+PIERS 3 & 4
+ JOB H.C. 10621
+KALAELOA, OAHU, HAWAII
+BORING_LOG  7797-00_PIERS_3&4.GPJ  GEOLABS.GDT  7/29/20
+Not Encountered
+DRAFT  REPORT FOR REVIEW AND COMMENT
+APPENDIX B  
+DRAFT  REPORT FOR REVIEW AND COMMENT
+W.O. 7797‐00 
+GEOLABS, INC. 
+     Page B‐1 
+Hawaii  California 
+A P P E N D I X   B 
+Laboratory Tests 
+Samples recovered from our field exploration program performed for the project were 
+visually examined and classified in our laboratory in Honolulu, Hawaii. Selected samples were 
+tested  to  evaluate  the  physical  characteristics  and  engineering  properties  of  the  soils 
+encountered.  
+The laboratory tests performed included determination of natural moisture content, dry 
+density, Atterberg Limits, sieve analysis, unconfined compression (soil samples and rock cores), 
+direct  shear,  Modified  Proctor,  CBR,  and  corrosion  tests.  Results  of  the  tests  performed  are 
+presented on Plates B‐1 through B‐17. Detailed descriptions of the various tests performed for 
+this exploration are presented below. 
+Moisture and Density 
+Moisture Content and Unit Weight tests were performed on selected soil samples to aid 
+in defining the interface between the various soil layers encountered and correlating the layers 
+between test borings. The moisture content and unit weight tests were performed in general 
+accordance with ASTM D2216 and ASTM D7263, respectively. The test results are presented on 
+the Logs of Borings at the appropriate sample depths. 
+Atterberg Limits 
+Four Atterberg Limits tests were performed on selected soil samples to evaluate the liquid 
+limit (LL), plastic limit (PL), and plasticity index (PI), as an aid in classifying the soils. The Atterberg 
+Limits  tests  were  performed  in  general  accordance  with  ASTM D4318.  The  test  results  are 
+summarized on the Logs of Borings at the appropriate sample depths. Graphic presentation of 
+the test results is provided on Plate B‐1. 
+Sieve Analysis 
+To  provide  information  on  the  particle  size  distribution  of  the  soils  encountered, 
+20 Sieve Analysis tests were performed to evaluate the gradation characteristics and to aid in soil 
+classification. The tests were performed in accordance with ASTM D6913. Graphic presentations 
+of the test results are provided on Plates B‐2 through B‐5. 
+Unconfined Compression – Soil Samples 
+To  evaluate  the  unconfined  compressive  strength  of  the  on‐site  clayey  soils, 
+one Unconfined Compression test was performed on a selected in‐situ sample in accordance with 
+ASTM D2166. The test results are shown on the Logs of Borings at the appropriate sample depth. 
+Individual stress‐strain curve of the unconfined compression test is presented on Plate B‐6. 
+DRAFT  REPORT FOR REVIEW AND COMMENT
+Appendix B 
+Laboratory Tests 
+W.O. 7797‐00 
+GEOLABS, INC. 
+     Page B‐2 
+Hawaii  California 
+Uniaxial Compressive Strength – Rock Cores 
+Thirty‐eight Uniaxial Compressive Strength tests were performed on selected rock cores 
+to evaluate their unconfined compressive strength of the rock formation in general accordance 
+with ASTM D7012 (Method C). Uniaxial compressive strength test results for the selected rock 
+cores are presented on the Logs of Borings at the appropriate sample depths and presented on 
+Plates B‐7 and B‐8. 
+Direct Shear 
+Two  Direct  Shear  tests  (ASTM  D3080)  were  performed  on  selected  soil  samples  to 
+evaluate the shear strength characteristics of the materials tested. The test results are presented 
+on Plates B‐9 and B‐10. 
+Modified Proctor 
+Two Modified Proctor compaction tests (ASTM D1557) were performed on selected bulk 
+samples of the near‐surface soils to evaluate the dry density and moisture content relationships. 
+The test results are presented on Plates B‐11 and B‐12. 
+California Bearing Ratio (CBR) 
+Four laboratory soaked California Bearing Ratio tests (ASTM D1883) were performed on 
+the bulk soil samples collected to evaluate the pavement support characteristics of the soils. The 
+test results are presented on Plates B‐13 through B‐16. 
+Chemical Analyses and Soil Resistivity 
+Three pH (ASTM G51), Minimum Resistivity (ASTM G57), Chloride (EPA 300) and Sulfate 
+(EPA 300) Content tests were performed by our office or Eurofins TestAmerica on selected soil 
+samples obtained from our field exploration. The test results are presented on Plate B‐17. 
+DRAFT  REPORT FOR REVIEW AND COMMENT
+0
+10
+20
+30
+40
+50
+60
+70
+80
+90
+100
+0
+20
+40
+60
+80
+100
+120
+ML or OL
+CL-ML
+CL or OL
+CH or OH
+B - 1
+MH or OH
+LIQUID LIMIT
+PLASTICITY INDEX
+ATTERBERG LIMITS TEST RESULTS - ASTM D4318
+PI
+Depth (ft)
+Sample
+LL
+PL
+Description
+B-102
+B-103
+B-108
+B-110
+73.4-74.9
+63.3-64.8
+36.0-37.5
+3.0-4.5
+46
+55
+67
+29
+16
+18
+17
+29
+30
+37
+50
+NP
+Brown with some tan sandy clay (CL) with some gravel
+Tannish brown silty clay (CH) with some gravel
+Tannish brown clayey sand (SC) with a little gravel
+Light brown sandy silt (ML) with some gravel
+NP = NON-PLASTIC
+4
+7
+Plate
+W.O. 7797-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+FUEL PIER & TERMINAL IMPROVEMENTS
+KALAELOA BARBERS POINT HARBOR
+PIERS 3 & 4
+ JOB H.C. 10621
+KALAELOA, OAHU, HAWAII
+G_ATTERBERG_PI-100_LL-120  7797-00_PIERS_3&4.GPJ  GEOLABS.GDT  7/27/20
+DRAFT  REPORT FOR REVIEW AND COMMENT
+0
+5
+10
+15
+20
+25
+30
+35
+40
+45
+50
+55
+60
+65
+70
+75
+80
+85
+90
+95
+100
+0.001
+0.01
+0.1
+1
+10
+100
+9.93
+2.642
+1.573
+9.685
+B - 2
+coarse
+1
+1.5
+3
+2
+0.184
+40
+Depth (ft)
+%Gravel
+60.7
+35.5
+24.1
+7.4
+56.4
+32.4
+17.8
+43.3
+22.8
+30.4
+%Sand
+COBBLES
+Sample
+D30 (mm)
+140
+20
+3.3
+54.1
+HYDROMETER
+3
+GRAIN SIZE IN MILLIMETERS
+PERCENT FINER BY WEIGHT
+100
+coarse
+1/2
+Sample
+2.471
+1.588
+Cu
+GRAVEL
+U.S. SIEVE NUMBERS
+D10 (mm)
+16
+fine
+50
+37.5
+19
+25
+50
+Cc
+3/4
+fine
+SILT OR CLAY
+medium
+GRAIN SIZE DISTRIBUTION - ASTM C117 & C136
+SAND
+%Fine
+60
+4
+30
+200
+4
+6
+6.9
+46.8
+32.6
+69.8
+13.2
+Depth (ft)
+LL
+Light tan sandy gravel (GP-GM) with a little silt
+Tan with some brown silty gravel (GM) with some sand
+Light grayish white silty sand (SM) with some gravel
+Light tannish white sandy silt (ML) with traces of gravel
+Light grayish white silty gravel (GM) with some sand
+810 14
+50
+U.S. SIEVE OPENING IN INCHES
+6
+D60 (mm)
+D100 (mm)
+B-101
+B-101
+B-101
+B-102
+B-102
+63.5-65.0
+78.5-80.0
+98.5-100.0
+43.4-44.9
+78.4-79.9
+63.5-65.0
+78.5-80.0
+98.5-100.0
+43.4-44.9
+78.4-79.9
+B-101
+B-101
+B-101
+B-102
+B-102
+3/8
+PL PI
+Description
+Plate
+W.O. 7797-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+FUEL PIER & TERMINAL IMPROVEMENTS
+KALAELOA BARBERS POINT HARBOR
+PIERS 3 & 4
+ JOB H.C. 10621
+KALAELOA, OAHU, HAWAII
+G_GRAIN_SIZE_MOD  7797-00_PIERS_3&4.GPJ  GEOLABS.GDT  7/27/20
+DRAFT  REPORT FOR REVIEW AND COMMENT
+0
+5
+10
+15
+20
+25
+30
+35
+40
+45
+50
+55
+60
+65
+70
+75
+80
+85
+90
+95
+100
+0.001
+0.01
+0.1
+1
+10
+100
+9.083
+7.975
+2.687
+2.832
+2.118
+B - 3
+coarse
+1
+1.5
+3
+2
+40
+Depth (ft)
+%Gravel
+50.8
+54.8
+31.7
+29.3
+12.1
+27.2
+31.1
+34.5
+53.9
+70.1
+%Sand
+COBBLES
+Sample
+D30 (mm)
+140
+20
+HYDROMETER
+3
+GRAIN SIZE IN MILLIMETERS
+PERCENT FINER BY WEIGHT
+100
+coarse
+1/2
+Sample
+0.329
+1.323
+0.509
+0.36
+Cu
+GRAVEL
+U.S. SIEVE NUMBERS
+D10 (mm)
+16
+fine
+37.5
+37.5
+25
+25
+19
+Cc
+3/4
+fine
+SILT OR CLAY
+medium
+GRAIN SIZE DISTRIBUTION - ASTM C117 & C136
+SAND
+%Fine
+60
+4
+30
+200
+4
+6
+22.0
+14.2
+33.8
+16.8
+17.8
+Depth (ft)
+LL
+Light tannish white silty gravel (GM) with some sand
+Light tannish white silty gravel (GM) wth some sand
+Light tannish white silty sand (SM) with some gravel
+Tan silty sand (SM) with some gravel
+Light tan silty sand (SM) with some gravel
+810 14
+50
+U.S. SIEVE OPENING IN INCHES
+6
+D60 (mm)
+D100 (mm)
+B-103
+B-103
+B-103
+B-104
+B-105
+43.8-45.8
+88.3-89.8
+93.3-95.3
+82.8-84.3
+5.0-6.5
+43.8-45.8
+88.3-89.8
+93.3-95.3
+82.8-84.3
+5.0-6.5
+B-103
+B-103
+B-103
+B-104
+B-105
+3/8
+PL PI
+Description
+Plate
+W.O. 7797-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+FUEL PIER & TERMINAL IMPROVEMENTS
+KALAELOA BARBERS POINT HARBOR
+PIERS 3 & 4
+ JOB H.C. 10621
+KALAELOA, OAHU, HAWAII
+G_GRAIN_SIZE_MOD  7797-00_PIERS_3&4.GPJ  GEOLABS.GDT  7/27/20
+DRAFT  REPORT FOR REVIEW AND COMMENT
+0
+5
+10
+15
+20
+25
+30
+35
+40
+45
+50
+55
+60
+65
+70
+75
+80
+85
+90
+95
+100
+0.001
+0.01
+0.1
+1
+10
+100
+2.636
+54.594
+15.913
+1.827
+4.86
+B - 4
+coarse
+1
+1.5
+3
+2
+0.576
+1.262
+0.093
+40
+Depth (ft)
+%Gravel
+34.4
+78.9
+77.6
+24.5
+40.4
+55.3
+17.1
+19.4
+46.5
+50.6
+%Sand
+COBBLES
+Sample
+D30 (mm)
+140
+20
+2.5
+12.6
+1.8
+1.2
+37.5
+94.9
+12.6
+52.5
+HYDROMETER
+3
+GRAIN SIZE IN MILLIMETERS
+PERCENT FINER BY WEIGHT
+100
+coarse
+1/2
+Sample
+0.676
+19.907
+6.072
+0.089
+0.749
+Cu
+GRAVEL
+U.S. SIEVE NUMBERS
+D10 (mm)
+16
+fine
+37.5
+62.5
+37.5
+25
+37.5
+Cc
+3/4
+fine
+SILT OR CLAY
+medium
+GRAIN SIZE DISTRIBUTION - ASTM C117 & C136
+SAND
+%Fine
+60
+4
+30
+200
+4
+6
+10.3
+4.0
+2.9
+29.0
+9.1
+Depth (ft)
+LL
+Light tan gravelly sand (SW-SM) with a little silt
+Tan sandy gravel (GP) with traces of silt
+Light tannish white sandy gravel (GW) with traces of silt
+White silty sand (SM) with some gravel
+Tannish white gravelly sand (SW-SM) with a little silt
+810 14
+50
+U.S. SIEVE OPENING IN INCHES
+6
+D60 (mm)
+D100 (mm)
+B-105
+B-106
+B-108
+B-108
+B-109
+31.0-33.0
+5.0-6.5
+46.0-47.5
+91.0-93.0
+51.0-53.0
+31.0-33.0
+5.0-6.5
+46.0-47.5
+91.0-93.0
+51.0-53.0
+B-105
+B-106
+B-108
+B-108
+B-109
+3/8
+PL PI
+Description
+Plate
+W.O. 7797-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+FUEL PIER & TERMINAL IMPROVEMENTS
+KALAELOA BARBERS POINT HARBOR
+PIERS 3 & 4
+ JOB H.C. 10621
+KALAELOA, OAHU, HAWAII
+G_GRAIN_SIZE_MOD  7797-00_PIERS_3&4.GPJ  GEOLABS.GDT  7/27/20
+DRAFT  REPORT FOR REVIEW AND COMMENT
+LL
+Tan sandy gravel (GP-GM) with a little silt
+Tannish gray silty sand (SM) with some gravel
+Grayish brown silty sand (SM) with some gravel
+Tan silty gravel (GM) with some sand
+Tan silty gravel (GM) with some sand
+810 14
+50
+U.S. SIEVE OPENING IN INCHES
+6
+D60 (mm)
+D100 (mm)
+B-110
+20.0-21.5
+1.5-3.0
+1.0-2.0
+0.0-2.0
+0.0-1.0
+20.0-21.5
+1.5-3.0
+1.0-2.0
+0
+5
+10
+15
+20
+25
+30
+35
+40
+45
+50
+55
+60
+65
+70
+75
+80
+85
+90
+95
+100
+0.001
+0.01
+0.1
+1
+10
+100
+7.181
+0.446
+2.191
+6.18
+4.347
+B - 5
+coarse
+1
+1.5
+3
+2
+40
+Depth (ft)
+%Gravel
+50.2
+13.3
+26.4
+44.8
+39.0
+38.6
+46.4
+51.7
+38.5
+37.8
+%Sand
+COBBLES
+Sample
+D30 (mm)
+140
+20
+7.1
+176.8
+HYDROMETER
+3
+GRAIN SIZE IN MILLIMETERS
+PERCENT FINER BY WEIGHT
+100
+coarse
+1/2
+Sample
+1.444
+0.21
+0.467
+0.216
+Cu
+GRAVEL
+U.S. SIEVE NUMBERS
+D10 (mm)
+16
+fine
+37.5
+37.5
+50
+62.5
+50
+Cc
+3/4
+fine
+SILT OR CLAY
+medium
+GRAIN SIZE DISTRIBUTION - ASTM C117 & C136
+SAND
+%Fine
+60
+4
+30
+200
+4
+6
+11.1
+40.3
+21.9
+16.7
+23.2
+Depth (ft)
+0.0-2.0
+0.0-1.0
+B-110
+3/8
+PL PI
+Description
+Plate
+W.O. 7797-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+FUEL PIER & TERMINAL IMPROVEMENTS
+KALAELOA BARBERS POINT HARBOR
+PIERS 3 & 4
+ JOB H.C. 10621
+KALAELOA, OAHU, HAWAII
+G_GRAIN_SIZE_MOD  7797-00_PIERS_3&4.GPJ  GEOLABS.GDT  7/27/20
+Bulk-110
+Bulk-111
+Bulk-112
+Bulk-113
+Bulk-110
+Bulk-111
+Bulk-112
+Bulk-113
+DRAFT  REPORT FOR REVIEW AND COMMENT
+0
+0.05
+0.10
+0.15
+0.20
+0.25
+0.30
+0.35
+0.40
+0.45
+0.50
+0.55
+0
+1.0
+2.0
+3.0
+4.0
+UNCONFINED COMPRESSION TEST - ASTM D2166
+Location:
+AXIAL STRAIN, %
+1.5 - 3.0 feet
+Description:
+Depth:
+COMPRESSIVE STRESS, ksf
+B-110
+Light brown sandy silt with some gravel
+Axial Strain at Failure (%):
+Unconfined Compressive Strength (ksf):
+Dry Density (pcf)
+Moisture (%)
+85.2
+20.9
+Sample Diameter (inches)
+Sample Height (inches)
+Strain Rate (% / minute):
+3.4
+0.52
+Test Date:
+7/2/2019
+5.300
+2.420
+B - 6
+1.00
+Plate
+W.O. 7797-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+FUEL PIER & TERMINAL IMPROVEMENTS
+KALAELOA BARBERS POINT HARBOR
+PIERS 3 & 4
+ JOB H.C. 10621
+KALAELOA, OAHU, HAWAII
+G_UC  7797-00_PIERS_3&4.GPJ  GEOLABS.GDT  7/27/20
+DRAFT  REPORT FOR REVIEW AND COMMENT
+B-101
+79.5 - 83.5
+6.850
+3.210
+2.13
+103.4
+2,820
+350
+B-102
+66 - 68.4
+6.830
+3.210
+2.13
+108.9
+4,060
+500
+B-102
+89.3 - 93.4
+6.810
+3.210
+2.12
+90.6
+2,130
+260
+B-103
+54.75 - 58.25
+6.790
+3.190
+2.13
+106.5
+3,770
+470
+B-103
+59.65 - 63.25
+6.850
+3.230
+2.12
+105.6
+4,870
+590
+B-103
+69.75 - 73.25
+5.240
+3.180
+1.65
+86.0
+1,310
+160
+B-104
+41.5 - 43.8
+6.800
+3.240
+2.10
+115.3
+4,760
+580
+B-104
+43.8 - 48.8
+6.860
+3.210
+2.14
+113.8
+3,550
+440
+B-104
+51.3 - 52.8
+5.720
+3.220
+1.78
+99.4
+3,060
+380
+B-104
+59.3 - 62.8
+4.040
+3.200
+1.26
+93.9
+2,700
+340
+B-104
+67.8 - 72.8
+6.630
+3.220
+2.06
+95.7
+2,370
+290
+B-104
+119.3 - 122.8
+6.780
+3.240
+2.09
+116.8
+4,210
+510
+B-105
+66.9 - 71
+6.800
+3.130
+2.17
+102.3
+2,400
+310
+B-106
+12.5 - 16
+6.800
+3.200
+2.13
+113.6
+5,858
+730
+B-106
+36.75 - 41
+6.850
+3.200
+2.14
+119.3
+6,560
+820
+B-106
+47.5 - 51
+6.910
+3.200
+2.16
+103.0
+4,280
+530
+B-106
+61.6 - 66
+6.750
+3.250
+2.09
+118.8
+6,238
+760
+B-107
+13 - 16
+6.830
+3.230
+2.11
+97.6
+3,570
+440
+B-107
+27.5 - 31
+7.050
+3.230
+2.18
+126.7
+6,450
+790
+B-107
+43 - 46
+6.880
+3.210
+2.14
+110.6
+4,440
+550
+B-107
+56.5 - 61
+6.860
+3.180
+2.16
+120.5
+6,870
+860
+B-107
+61.4 - 66
+6.860
+3.230
+2.12
+120.8
+9,830
+1,200
+B-108
+2.3 - 6
+6.870
+3.220
+2.13
+127.7
+13,050
+1,600
+B-108
+6.9 - 11
+6.910
+3.220
+2.15
+136.7
+16,700
+2,050
+B-108
+63 - 66
+6.940
+3.180
+2.18
+107.1
+5,430
+680
+B-109
+2 - 6
+6.890
+3.220
+2.14
+119.8
+9,450
+1,160
+B-109
+16.5 - 21
+6.910
+3.220
+2.15
+95.9
+4,020
+490
+B - 7
+Depth
+Location
+Length
+Diameter
+Length/
+Diameter
+Ratio
+(feet)
+(inches)
+(inches)
+(pcf)
+(psi)
+Density
+Compressive
+Strength
+Load
+UNIAXIAL COMPRESSIVE STRENGTH TEST
+ASTM D7012 (METHOD C)
+(lbs)
+Plate
+W.O. 7797-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+FUEL PIER & TERMINAL IMPROVEMENTS
+KALAELOA BARBERS POINT HARBOR
+PIERS 3 & 4
+ JOB H.C. 10621
+KALAELOA, OAHU, HAWAII
+G_ROCK_UC_TEST_PORTRAIT  7797-00_PIERS_3&4.GPJ  GEOLABS.GDT  7/27/20
+DRAFT  REPORT FOR REVIEW AND COMMENT
+B-109
+41.5 - 46
+6.840
+3.210
+2.13
+115.8
+4,490
+550
+B-109
+53 - 56
+6.900
+3.210
+2.15
+104.0
+4,900
+610
+B-109
+77 - 81
+6.780
+3.230
+2.10
+145.2
+27,580
+3,370
+B-110
+10.25 - 15
+6.880
+3.210
+2.14
+112.7
+6,080
+750
+B-111
+3.5 - 6
+6.700
+3.220
+2.08
+117.7
+9,000
+1,110
+B-111
+11 - 12.5
+6.940
+3.160
+2.20
+86.6
+2,700
+340
+B-111
+12.5 - 16
+6.100
+3.180
+1.92
+94.4
+6,420
+810
+B-111
+17.4 - 21
+6.750
+3.230
+2.09
+90.2
+2,930
+360
+B-112
+13 - 16
+6.620
+3.190
+2.08
+84.2
+2,250
+280
+B-113
+3 - 6
+6.910
+3.230
+2.14
+122.7
+8,740
+1,070
+B-113
+11.4 - 16
+6.860
+3.200
+2.14
+105.8
+2,890
+360
+B - 8
+Depth
+Location
+Length
+Diameter
+Length/
+Diameter
+Ratio
+(feet)
+(inches)
+(inches)
+(pcf)
+(psi)
+Density
+Compressive
+Strength
+Load
+UNIAXIAL COMPRESSIVE STRENGTH TEST
+ASTM D7012 (METHOD C)
+(lbs)
+Plate
+W.O. 7797-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+FUEL PIER & TERMINAL IMPROVEMENTS
+KALAELOA BARBERS POINT HARBOR
+PIERS 3 & 4
+ JOB H.C. 10621
+KALAELOA, OAHU, HAWAII
+G_ROCK_UC_TEST_PORTRAIT  7797-00_PIERS_3&4.GPJ  GEOLABS.GDT  7/27/20
+DRAFT  REPORT FOR REVIEW AND COMMENT
+0
+1,000
+2,000
+3,000
+4,000
+5,000
+6,000
+0
+1,000
+2,000
+3,000
+4,000
+5,000
+6,000
+NORMAL STRESS, psf
+SHEAR STRESS, psf
+INITIAL
+Moisture Content, %
+Moisture Content, %
+Dry Density, pcf
+1441 psf
+48 degrees
+2258
+4309
+4509
+0.0025
+0.0020
+0.0022
+2.42
+2.42
+2.42
+98.7
+92.9
+94.8
+93.8
+91.7
+94.6
+Cohesion:
+0.43
+0.39
+0.39
+0.951
+0.987
+0.998
+Height, inches
+Diameter, inches
+Peak Shear Stress, psf
+Shear Displacement, inches
+Tan with some brown silty
+gravel (GM) with some sand
+1.00
+1.00
+1.00
+Height, inches
+B - 9
+28.7
+28.6
+26.4
+FINAL
+Dry Density, pcf
+Normal Stress, psf
+Sample:
+B-101
+73.5 - 75.0 feet
+Depth:
+Description:
+28.9
+33.6
+32.0
+Sample
+#1
+Sample
+#2
+Sample
+#3
+Deformation Rate, inch/minute
+Friction Angle:
+1000
+2000
+3000
+DIRECT SHEAR TEST -  ASTM D3080
+Plate
+W.O. 7797-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+FUEL PIER & TERMINAL IMPROVEMENTS
+KALAELOA BARBERS POINT HARBOR
+PIERS 3 & 4
+ JOB H.C. 10621
+KALAELOA, OAHU, HAWAII
+G_DIRECT_SHEAR  7797-00_PIERS_3&4.GPJ  GEOLABS.GDT  7/27/20
+DRAFT  REPORT FOR REVIEW AND COMMENT
+0
+500
+1,000
+1,500
+2,000
+2,500
+3,000
+3,500
+0
+500
+1,000
+1,500
+2,000
+2,500
+3,000
+3,500
+NORMAL STRESS, psf
+SHEAR STRESS, psf
+INITIAL
+Moisture Content, %
+Moisture Content, %
+Dry Density, pcf
+2736 psf
+11 degrees
+3025
+2963
+3427
+0.0025
+0.0022
+0.0022
+2.42
+2.42
+2.42
+68.9
+80.9
+89.9
+68.2
+82.1
+91.9
+Cohesion:
+0.43
+0.40
+0.40
+0.991
+1.015
+1.022
+Height, inches
+Diameter, inches
+Peak Shear Stress, psf
+Shear Displacement, inches
+Light tan sand (SP) with a
+little sandstone gravel
+1.00
+1.00
+1.00
+Height, inches
+B - 10
+24.5
+21.2
+22.8
+FINAL
+Dry Density, pcf
+Normal Stress, psf
+Sample:
+B-105
+56.0 - 57.5 feet
+Depth:
+Description:
+26.7
+24.8
+26.1
+Sample
+#1
+Sample
+#2
+Sample
+#3
+Deformation Rate, inch/minute
+Friction Angle:
+1000
+2000
+3000
+DIRECT SHEAR TEST -  ASTM D3080
+Plate
+W.O. 7797-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+FUEL PIER & TERMINAL IMPROVEMENTS
+KALAELOA BARBERS POINT HARBOR
+PIERS 3 & 4
+ JOB H.C. 10621
+KALAELOA, OAHU, HAWAII
+G_DIRECT_SHEAR  7797-00_PIERS_3&4.GPJ  GEOLABS.GDT  7/27/20
+DRAFT  REPORT FOR REVIEW AND COMMENT
+75
+80
+85
+90
+95
+100
+105
+110
+115
+120
+125
+130
+135
+0
+10
+20
+30
+40
+110.0
+17.0
+DRY DENSITY, pcf
+Optimum Moisture Content:
+Sample:
+Depth:
+TEST RESULTS
+MOISTURE CONTENT, %
+Description:
+pcf
+Maximum Dry Density:
+Tannish gray silty sand (SM) with some
+gravel
+B - 11
+3.20
+3.10
+3.00
+2.90
+2.80
+2.70
+2.60
+1.5 - 3.0 feet
+Bulk-110
+MOISTURE-DENSITY RELATIONSHIP - ASTM D1557 A
+Test Date:
+June 27, 2019
+Plate
+W.O. 7797-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+FUEL PIER & TERMINAL IMPROVEMENTS
+KALAELOA BARBERS POINT HARBOR
+PIERS 3 & 4
+ JOB H.C. 10621
+KALAELOA, OAHU, HAWAII
+G_COMPACTION  7797-00_PIERS_3&4.GPJ  GEOLABS.GDT  7/27/20
+DRAFT  REPORT FOR REVIEW AND COMMENT
+75
+80
+85
+90
+95
+100
+105
+110
+115
+120
+125
+130
+135
+0
+10
+20
+30
+40
+128.0
+8.0
+DRY DENSITY, pcf
+Optimum Moisture Content:
+Sample:
+Depth:
+TEST RESULTS
+MOISTURE CONTENT, %
+Description:
+pcf
+Maximum Dry Density:
+Tan silty gravel (GM) with some sand
+B - 12
+3.20
+3.10
+3.00
+2.90
+2.80
+2.70
+2.60
+0.0 - 1.0 feet
+Bulk-113
+MOISTURE-DENSITY RELATIONSHIP - ASTM D1557 C
+Test Date:
+June 25, 2019
+Plate
+W.O. 7797-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+FUEL PIER & TERMINAL IMPROVEMENTS
+KALAELOA BARBERS POINT HARBOR
+PIERS 3 & 4
+ JOB H.C. 10621
+KALAELOA, OAHU, HAWAII
+G_COMPACTION  7797-00_PIERS_3&4.GPJ  GEOLABS.GDT  7/27/20
+DRAFT  REPORT FOR REVIEW AND COMMENT
+0
+200
+400
+600
+800
+1,000
+1,200
+1,400
+1,600
+1,800
+2,000
+2,200
+0
+0.10
+0.20
+0.30
+0.40
+0.50
+0.60
+Sample:
+Corr. CBR @ 0.1"
+Depth:
+Corr. CBR @ 0.2"
+No. of Layers
+CALIFORNIA BEARING RATIO - ASTM D1883
+Description:
+Days Soaked
+4
+Bulk-110
+Swell (%)
+0.02
+69.3
+53.7
+Molding Dry Density (pcf)
+STRESS, psi
+1.5 - 3.0 feet
+No. of Blows
+16.7
+112.6
+Molding Moisture (%)
+Hammer Wt. (lbs)
+Hammer Drop (inches)
+PENETRATION, inches
+Tannish gray silty sand (SM) with some gravel
+18
+56
+10
+5
+Aggregate
+B - 13
+3/4 inch minus
+Plate
+W.O. 7797-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+FUEL PIER & TERMINAL IMPROVEMENTS
+KALAELOA BARBERS POINT HARBOR
+PIERS 3 & 4
+ JOB H.C. 10621
+KALAELOA, OAHU, HAWAII
+G_CBR  7797-00_PIERS_3&4.GPJ  GEOLABS.GDT  7/27/20
+DRAFT  REPORT FOR REVIEW AND COMMENT
+0
+200
+400
+600
+800
+1,000
+1,200
+1,400
+1,600
+1,800
+2,000
+2,200
+0
+0.10
+0.20
+0.30
+0.40
+0.50
+0.60
+Sample:
+Corr. CBR @ 0.1"
+Depth:
+Corr. CBR @ 0.2"
+No. of Layers
+CALIFORNIA BEARING RATIO - ASTM D1883
+Description:
+Days Soaked
+3
+Bulk-111
+Swell (%)
+0.00
+64.9
+47.7
+Molding Dry Density (pcf)
+STRESS, psi
+1.0 - 2.0 feet
+No. of Blows
+12.6
+123.3
+Molding Moisture (%)
+Hammer Wt. (lbs)
+Hammer Drop (inches)
+PENETRATION, inches
+Grayish brown silty sand (SM) with some gravel
+18
+56
+10
+5
+Aggregate
+B - 14
+3/4 inch minus
+Plate
+W.O. 7797-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+FUEL PIER & TERMINAL IMPROVEMENTS
+KALAELOA BARBERS POINT HARBOR
+PIERS 3 & 4
+ JOB H.C. 10621
+KALAELOA, OAHU, HAWAII
+G_CBR  7797-00_PIERS_3&4.GPJ  GEOLABS.GDT  7/27/20
+DRAFT  REPORT FOR REVIEW AND COMMENT
+0
+200
+400
+600
+800
+1,000
+1,200
+1,400
+1,600
+1,800
+2,000
+2,200
+0
+0.10
+0.20
+0.30
+0.40
+0.50
+0.60
+Sample:
+Corr. CBR @ 0.1"
+Depth:
+Corr. CBR @ 0.2"
+No. of Layers
+CALIFORNIA BEARING RATIO - ASTM D1883
+Description:
+Days Soaked
+3
+Bulk-112
+Swell (%)
+0.00
+24.5
+16.1
+Molding Dry Density (pcf)
+STRESS, psi
+0.0 - 2.0 feet
+No. of Blows
+9.3
+127.2
+Molding Moisture (%)
+Hammer Wt. (lbs)
+Hammer Drop (inches)
+PENETRATION, inches
+Tan silty gravel (GM) with some sand
+18
+56
+10
+5
+Aggregate
+B - 15
+3/4 inch minus
+Plate
+W.O. 7797-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+FUEL PIER & TERMINAL IMPROVEMENTS
+KALAELOA BARBERS POINT HARBOR
+PIERS 3 & 4
+ JOB H.C. 10621
+KALAELOA, OAHU, HAWAII
+G_CBR  7797-00_PIERS_3&4.GPJ  GEOLABS.GDT  7/27/20
+DRAFT  REPORT FOR REVIEW AND COMMENT
+0
+200
+400
+600
+800
+1,000
+1,200
+1,400
+1,600
+1,800
+2,000
+2,200
+0
+0.10
+0.20
+0.30
+0.40
+0.50
+0.60
+Sample:
+Corr. CBR @ 0.1"
+Depth:
+Corr. CBR @ 0.2"
+No. of Layers
+CALIFORNIA BEARING RATIO - ASTM D1883
+Description:
+Days Soaked
+5
+Bulk-113
+Swell (%)
+0.00
+43.3
+29.8
+Molding Dry Density (pcf)
+STRESS, psi
+0.0 - 1.0 feet
+No. of Blows
+9.6
+127.9
+Molding Moisture (%)
+Hammer Wt. (lbs)
+Hammer Drop (inches)
+PENETRATION, inches
+Tan silty gravel (GM) with some sand
+18
+56
+10
+5
+Aggregate
+B - 16
+3/4 inch minus
+Plate
+W.O. 7797-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+FUEL PIER & TERMINAL IMPROVEMENTS
+KALAELOA BARBERS POINT HARBOR
+PIERS 3 & 4
+ JOB H.C. 10621
+KALAELOA, OAHU, HAWAII
+G_CBR  7797-00_PIERS_3&4.GPJ  GEOLABS.GDT  7/27/20
+DRAFT  REPORT FOR REVIEW AND COMMENT
+1.0 - 2.5
+7.73
+240
+1500
+290
+Bulk-110
+1.5 - 3.0
+12.33
+900
+180
+130
+Bulk-113
+0.0 - 1.0
+7.47
+49
+12000
+1700
+SUMMARY OF CORROSIVITY TESTS
+B - 17
+(ohm-cm)
+(mg/kg)
+(mg/kg)
+SM 2510B
+Minimum Resistivity
+pH Value
+EPA 300.0
+Minimum Resistivity
+ASTM G57
+pH Value
+Method 9045C
+ASTM G51
+TEST METHODS (by Geolabs, Inc.)*
+pH Value
+Minimum Resistivity Chloride Content
+Sulfate Content
+ND: Not Detected Within Reporting Limits
+Sulfate Content
+EPA 300.0
+Location
+Depth
+(feet)
+Sulfate Content
+N/A
+Chloride Content
+Chloride Content
+N/A
+TEST METHODS (by Eurofins TestAmerica)
+Plate
+W.O. 7797-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+FUEL PIER & TERMINAL IMPROVEMENTS
+KALAELOA BARBERS POINT HARBOR
+PIERS 3 & 4
+ JOB H.C. 10621
+KALAELOA, OAHU, HAWAII
+G_SUMMARY_OF_CORROSIVITY_TESTS  7797-00_PIERS_3&4.GPJ  GEOLABS.GDT  7/27/20
+B-112
+DRAFT  REPORT FOR REVIEW AND COMMENT
+APPENDIX  C 
+DRAFT  REPORT FOR REVIEW AND COMMENT
+W.O. 7797-00 
+GEOLABS, INC. 
+     Page C-1 
+Hawaii • California 
+A P P E N D I X   C 
+Field Infiltration Tests 
+Falling  head  infiltration  tests  were  performed  at  four  locations  within  the  vicinity  of 
+Piers 3 & 4 to determine the infiltration rates of the underlying subsurface materials. In general, 
+each test consisted of four trials of filling the casing with about 24 inches of water and taking 
+periodic readings over a 1‐hour trial period. The infiltration rates were then calculated based on 
+the results of the fourth and last trial for each test location. The calculated infiltration rates at 
+each  test  location  are  summarized  in  the  following  table.  Field  infiltration  test  results  are 
+presented in Appendix C, Plates C‐1 through C‐4. 
+FIELD INFILTRATION TEST RESULTS 
+Test Location 
+Test Depth  
+(feet) 
+Test Elevation 
+(feet Mean Sea Level) 
+Infiltration Rate 
+(inches/hour) 
+Piers 3 & 4 
+I‐1 
+5 
++5.5 
+3.2 
+I‐2 
+5 
++4.5 
+0 
+I‐3 
+5 
++4.5 
+0 
+I‐4 
+5 
++5.0 
+0.85 
+The results of the infiltration testing indicated that the infiltration rates in the vicinity of 
+Piers 3 & 4 could vary from 0 to 3.2 inches per hour.  We anticipate that the overall coralline 
+detritus/coral formation should exhibit relatively good infiltration rates; however, zones of hard, 
+near‐surface coral formation and localized clayey soils encountered at the site may provide a semi‐
+impervious barrier that would prevent the rapid percolation of stormwater into the substrata during 
+a storm event in localized areas.  
+DRAFT  REPORT FOR REVIEW AND COMMENT
+Project:
+Fuel Pier & Terminal Improvements
+Kalaeloa Barbers Point Harbor
+Kalaeloa, Oahu, Hawaii
+W.O.:
+7797-00
+Boring No.:
+I-1
+Date of Testing:
+4/10/2019
+Method of Testing: LID
+Source of Water:
+Bucket
++10.5
+feet, MSL
+N/A
+feet
+Datum, a (above ground):
+0.2
+feet
+Depth (feet)
+Depth of Boring (from ground):
+5.0
+feet
+0-0.5
+Length, L (from datum):
+5.2
+feet
+0.5-2.25
+Open Hole Length, l:
+0
+feet
+2.25-5.0
+Test Depth Elevation:
++5.5
+feet, MSL
+N/A
+inches
+4
+inches
+Elapsed Time
+Pumping Rate
+(hours:minutes)
+(gpm)
+Trial 1
+0:00
+N/A
+0:15
+0:30
+0:45
+1:00
+Trial 2
+0:00
+N/A
+0:15
+0:30
+0:45
+1:00
+Trial 3
+0:00
+N/A
+0:15
+0:30
+0:45
+1:00
+Trial 4
+0:00
+N/A
+0:15
+0:30
+0:45
+1:00
+40.10
+40.80
+37.60
+38.50
+3.20
+39.25
+38.10
+39.00
+39.75
+40.50
+41.20
+3.10
+38.90
+39.60
+40.60
+41.25
+3.25
+40.50
+41.25
+3.50
+38.00
+38.70
+Diameter of Casing, d (I.D.):
+Depth to Water         
+(measured from datum)
+Infiltration Rate
+(inches)
+39.60
+Light tannish white CORAL
+37.75
+(inches per hour)
+Diameter of Open Hole, D:
+INFILTRATION TEST RECORD
+Existing Ground Surface Elev.
+GW level, b (from ground):
+Generalized Soil/Rock Description
+Concrete
+Tan SILTY SAND (SM) with some gravel
+GW
+Ground
+Datum
+d
+a
+b
+L
+D
+l
+W.O. 7797-00
+GEOLABS, INC.
+Hawaii • California
+     PLATE C-1
+DRAFT  REPORT FOR REVIEW AND COMMENT
+Project:
+Fuel Pier & Terminal Improvements
+Kalaeloa Barbers Point Harbor
+Kalaeloa, Oahu, Hawaii
+W.O.:
+7797-00
+Boring No.:
+I-2
+Date of Testing:
+4/10/2019
+Method of Testing: LID
+Source of Water:
+Bucket
++9.5
+feet, MSL
+N/A
+feet
+Datum, a (above ground):
+0.0
+feet
+Depth (feet)
+Depth of Boring (from ground):
+5.0
+feet
+0-1.1
+Length, L (from datum):
+5.0
+feet
+1.1-2.0
+Open Hole Length, l:
+0
+feet
+2.0-5.0
+Test Depth Elevation:
++4.5
+feet, MSL
+N/A
+inches
+4
+inches
+Elapsed Time
+Pumping Rate
+(hours:minutes)
+(gpm)
+Trial 1
+0:00
+N/A
+0:15
+0:30
+0:45
+1:00
+Trial 2
+0:00
+N/A
+0:15
+0:30
+0:45
+1:00
+Trial 3
+0:00
+N/A
+0:15
+0:30
+0:45
+1:00
+Trial 4
+0:00
+N/A
+0:15
+0:30
+0:45
+1:00
+36.0
+36.0
+36.0
+36.0
+0.0
+36.0
+0.0
+36.0
+36.0
+36.0
+36.0
+36.0
+36.0
+36.0
+36.0
+36.0
+36.0
+0.0
+36.0
+36.0
+36.0
+36.0
+0.0
+(inches)
+(inches per hour)
+36.0
+Light brown CLAYEY SILT (MH) with some gravel
+Diameter of Open Hole, D:
+Diameter of Casing, d (I.D.):
+Depth to Water         
+(measured from datum)
+Infiltration Rate
+INFILTRATION TEST RECORD
+Existing Ground Surface Elev.
+GW level, b (from ground):
+Generalized Soil/Rock Description
+Concrete
+Light gray SILTY GRAVEL (GM) with some sand
+GW
+Ground
+Datum
+d
+a
+b
+L
+D
+l
+W.O. 7797-00
+GEOLABS, INC.
+Hawaii • California
+     PLATE C-2
+DRAFT  REPORT FOR REVIEW AND COMMENT
+Project:
+Fuel Pier & Terminal Improvements
+Kalaeloa Barbers Point Harbor
+Kalaeloa, Oahu, Hawaii
+W.O.:
+7797-00
+Boring No.:
+I-3
+Date of Testing:
+4/16/2019
+Method of Testing: LID
+Source of Water:
+Bucket
++9.5
+feet, MSL
+N/A
+feet
+Datum, a (above ground):
+0.0
+feet
+Depth (feet)
+Depth of Boring (from ground):
+5.0
+feet
+0-1.17
+Length, L (from datum):
+5.0
+feet
+1.17-2.5
+Open Hole Length, l:
+0
+feet
+2.5-5.0
+Test Depth Elevation:
++4.5
+feet, MSL
+N/A
+inches
+4
+inches
+Elapsed Time
+Pumping Rate
+(hours:minutes)
+(gpm)
+Trial 1
+0:00
+N/A
+0:15
+0:30
+0:45
+1:00
+Trial 2
+0:00
+N/A
+0:15
+0:30
+0:45
+1:00
+Trial 3
+0:00
+N/A
+0:15
+0:30
+0:45
+1:00
+Trial 4
+0:00
+N/A
+0:15
+0:30
+0:45
+1:00
+36.0
+36.0
+36.0
+36.0
+0.0
+36.0
+0.0
+36.0
+36.0
+36.0
+36.0
+36.0
+36.0
+36.0
+36.0
+36.0
+36.0
+0.0
+36.0
+36.0
+36.0
+36.0
+0.0
+(inches)
+(inches per hour)
+36.0
+Light brown CLAYEY SILT with some gravel 
+and cobbles 
+Diameter of Open Hole, D:
+Diameter of Casing, d (I.D.):
+Depth to Water         
+(measured from datum)
+Infiltration Rate
+INFILTRATION TEST RECORD
+Existing Ground Surface Elev.
+GW level, b (from ground):
+Generalized Soil/Rock Description
+Concrete
+Light gray to light brown SILTY GRAVEL (GM)
+GW
+Ground
+Datum
+d
+a
+b
+L
+D
+l
+W.O. 7797-00
+GEOLABS, INC.
+Hawaii • California
+     PLATE C-3
+DRAFT  REPORT FOR REVIEW AND COMMENT
+Project:
+Fuel Pier & Terminal Improvements
+Kalaeloa Barbers Point Harbor
+Kalaeloa, Oahu, Hawaii
+W.O.:
+7797-00
+Boring No.:
+I-4
+Date of Testing:
+4/10/2019
+Method of Testing: LID
+Source of Water:
+Bucket
++10.0
+feet, MSL
+N/A
+feet
+Datum, a (above ground):
+0.2
+feet
+Depth (feet)
+Depth of Boring (from ground):
+5.0
+feet
+0-3.1
+Length, L (from datum):
+5.2
+feet
+3.1-5.0
+Open Hole Length, l:
+0
+feet
+Test Depth Elevation:
++5.0
+feet, MSL
+N/A
+inches
+4
+inches
+Elapsed Time
+Pumping Rate
+(hours:minutes)
+(gpm)
+Trial 1
+0:00
+N/A
+0:15
+0:30
+0:45
+1:00
+Trial 2
+0:00
+N/A
+0:15
+0:30
+0:45
+1:00
+Trial 3
+0:00
+N/A
+0:15
+0:30
+0:45
+1:00
+Trial 4
+0:00
+N/A
+0:15
+0:30
+0:45
+1:00
+38.15
+38.35
+38.55
+38.70
+0.85
+38.55
+38.75
+0.85
+37.85
+37.90
+38.10
+38.30
+38.00
+38.25
+38.40
+38.60
+38.80
+0.80
+37.45
+37.60
+37.85
+38.00
+0.75
+(inches)
+(inches per hour)
+37.25
+Diameter of Open Hole, D:
+Diameter of Casing, d (I.D.):
+Depth to Water         
+(measured from datum)
+Infiltration Rate
+INFILTRATION TEST RECORD
+Existing Ground Surface Elev.
+GW level, b (from ground):
+Generalized Soil/Rock Description
+Tan SILTY SAND (SM) with some gravel 
+Light tannish white CORAL
+GW
+Ground
+Datum
+d
+a
+b
+L
+D
+l
+W.O. 7797-00
+GEOLABS, INC.
+Hawaii • California
+     PLATE C-4
+DRAFT  REPORT FOR REVIEW AND COMMENT
+APPENDIX  D 
+DRAFT  REPORT FOR REVIEW AND COMMENT
+FUEL PIER & TERMINAL IMPROVEMENTS  
+KALAELOA BARBERS POINT HARBOR 
+PIERS 3 & 4 – JOB H.C. 10621 
+KALAELOA, OAHU, HAWAII 
+W.O. 7797‐00 
+GEOLABS, INC. 
+PLATE D‐1 
+Hawaii • California 
+                                             B‐101     50.0’ TO 118.5’     
+                            50.0’ 
+                          80.0’    
+          73.5’ 
+           118.5’ 
+50.0’
+53.5’
+58.5’
+70’
+54.3’
+73.5’
+80.0’
+83.5’
+95.0’
+98.5’
+115’
+118.5’
+DRAFT  REPORT FOR REVIEW AND COMMENT
+FUEL PIER & TERMINAL IMPROVEMENTS  
+KALAELOA BARBERS POINT HARBOR 
+PIERS 3 & 4 – JOB H.C. 10621 
+KALAELOA, OAHU, HAWAII 
+W.O. 7797‐00 
+GEOLABS, INC. 
+PLATE D‐2 
+Hawaii • California 
+                                  B‐102     54.9’ TO 118.3’ 
+              54.9’ 
+          74.9’ 
+     90.4’ 
+  110.4’ 
+68.4’ 
+90.4’ 
+                            110.4’            118.3’ 
+54.9’
+58.1’
+59.9’
+63.4’
+64.9’
+68.4’
+74.9’
+78.4’
+84.9’
+79.9’
+83.4’
+88.4’
+89.3’
+90.4’
+90.4’
+93.4’
+99.9’
+103.4’
+104.9’
+108.4’
+109.9’
+110.4’
+110.4’
+113.4’
+114.9’
+118.3’
+DRAFT  REPORT FOR REVIEW AND COMMENT
+FUEL PIER & TERMINAL IMPROVEMENTS  
+KALAELOA BARBERS POINT HARBOR 
+PIERS 3 & 4 – JOB H.C. 10621 
+KALAELOA, OAHU, HAWAII 
+W.O. 7797‐00 
+GEOLABS, INC. 
+PLATE D‐3 
+Hawaii • California 
+                                               B‐103     45.75’ TO 118.3’ 
+              45.75’ 
+         59.7’ 
+     74.8’ 
+  112.3’ 
+58.3’ 
+73.3’ 
+                            112.3’                  118.3’ 
+45.75’ 
+48.3’
+49.8’
+53.3’
+54.8’
+58.3’
+59.7’
+63.3’
+64.8’
+68.3’
+69.8’
+73.3’
+74.8’
+78.3’
+98.8’
+108.3’
+109.8’
+112.3’
+112.3’
+113.3’
+114.8’
+118.3’
+DRAFT  REPORT FOR REVIEW AND COMMENT
+FUEL PIER & TERMINAL IMPROVEMENTS  
+KALAELOA BARBERS POINT HARBOR 
+PIERS 3 & 4 – JOB H.C. 10621 
+KALAELOA, OAHU, HAWAII 
+W.O. 7797‐00 
+GEOLABS, INC. 
+PLATE D‐4 
+Hawaii • California 
+B‐104     40.8’ TO 68.8’ 
+  40.8’ 
+  46.3’ 
+  51.3’ 
+  56.3’ 
+  64.3’
+48.5’   
+53.5’ 
+56.3’   
+    64.3’ 
+68.8’ 
+52.8’
+40.8’
+43.8’
+48.5’
+46.3’
+48.8’
+53.5’
+51.3’
+56.3’
+57.8’
+56.3’
+59.3’
+62.8’
+63.2’
+64.3’
+64.3’
+67.8’
+DRAFT  REPORT FOR REVIEW AND COMMENT
+FUEL PIER & TERMINAL IMPROVEMENTS  
+KALAELOA BARBERS POINT HARBOR 
+PIERS 3 & 4 – JOB H.C. 10621 
+KALAELOA, OAHU, HAWAII 
+W.O. 7797‐00 
+GEOLABS, INC. 
+PLATE D‐5 
+Hawaii • California 
+                                                                                       B‐104     68.8’ TO 137.8’ 
+              68.8’ 
+              84.3’ 
+              99.3’ 
+              114.3’ 
+119.3’ 
+129.1’ 
+                      82.8’                                97.8’                          112.8’            117.8’     
+137.8’ 
+68.8’
+72.8’
+79.3’
+82.8’
+84.3’
+87.8’
+89.3’
+92.8’
+94.3’
+97.8’
+99.3’
+102.8’
+104.3’
+107.8’
+109.3’
+112.8’
+114.3’
+117.8’
+119.3’
+122.3’
+122.8’
+46.3’
+124.3’
+127.8’
+129.1’
+132.8’
+134.3’
+137.8’
+DRAFT  REPORT FOR REVIEW AND COMMENT
+FUEL PIER & TERMINAL IMPROVEMENTS  
+KALAELOA BARBERS POINT HARBOR 
+PIERS 3 & 4 – JOB H.C. 10621 
+KALAELOA, OAHU, HAWAII 
+W.O. 7797‐00 
+GEOLABS, INC. 
+PLATE D‐6 
+Hawaii • California 
+                                                                                                   B‐105     12.0’ TO 81.0’ 
+ 12.0’ 
+    23.0’ 
+    33.0’ 
+    43.0’ 
+    63.0’ 
+    69.5’ 
+                         21.0’ 
+                       31.0’ 
+                        41.0’ 
+                     61.0’ 
+                   69.5’ 
+                            81.0’ 
+DRAFT  REPORT FOR REVIEW AND COMMENT
+FUEL PIER & TERMINAL IMPROVEMENTS  
+KALAELOA BARBERS POINT HARBOR 
+PIERS 3 & 4 – JOB H.C. 10621 
+KALAELOA, OAHU, HAWAII 
+W.O. 7797‐00 
+GEOLABS, INC. 
+PLATE D‐7 
+Hawaii • California 
+                                        B‐106     12.5’ TO 51.0’ 
+               12.5’ 
+     34.0’ 
+   39.5’ 
+20.0’                              34.0’ 
+                       39.5’                                 51.0’ 
+DRAFT  REPORT FOR REVIEW AND COMMENT
+FUEL PIER & TERMINAL IMPROVEMENTS  
+KALAELOA BARBERS POINT HARBOR 
+PIERS 3 & 4 – JOB H.C. 10621 
+KALAELOA, OAHU, HAWAII 
+W.O. 7797‐00 
+GEOLABS, INC. 
+PLATE D‐8 
+Hawaii • California 
+  B‐106     53.0’ TO 76.0’ 
+                    53.0’ 
+          61.6’ 
+      73.0’ 
+  61.0’ 
+    71.0’ 
+                 76.0’           
+DRAFT  REPORT FOR REVIEW AND COMMENT
+FUEL PIER & TERMINAL IMPROVEMENTS  
+KALAELOA BARBERS POINT HARBOR 
+PIERS 3 & 4 – JOB H.C. 10621 
+KALAELOA, OAHU, HAWAII 
+W.O. 7797‐00 
+GEOLABS, INC. 
+PLATE D‐9 
+Hawaii • California 
+                                                           B‐107      2.0’ TO 36.0’ 
+        2.0’ 
+          8.5’ 
+18.5’ 
+         28.5' 
+                        8.5’ 
+                   18.5’                   28.5’  
+                                  36.0’ 
+DRAFT  REPORT FOR REVIEW AND COMMENT
+FUEL PIER & TERMINAL IMPROVEMENTS  
+KALAELOA BARBERS POINT HARBOR 
+PIERS 3 & 4 – JOB H.C. 10621 
+KALAELOA, OAHU, HAWAII 
+W.O. 7797‐00 
+GEOLABS, INC. 
+PLATE D‐10 
+Hawaii • California 
+                                                         B‐107      37.5’ TO 81.0’ 
+        37.5’ 
+          47.5’ 
+58.5’ 
+         63.5' 
+                       46.0’ 
+                      58.5’                                63.5’                                   81.0’ 
+DRAFT  REPORT FOR REVIEW AND COMMENT
+FUEL PIER & TERMINAL IMPROVEMENTS  
+KALAELOA BARBERS POINT HARBOR 
+PIERS 3 & 4 – JOB H.C. 10621 
+KALAELOA, OAHU, HAWAII 
+W.O. 7797‐00 
+GEOLABS, INC. 
+PLATE D‐11 
+Hawaii • California 
+                                                       B‐108     2.3’ TO 41.0’ 
+               2.3’ 
+       8.5’ 
+     17.5’ 
+   27.5’ 
+   8.5’                              16.0’ 
+                       26.0’                                 41.0’ 
+DRAFT  REPORT FOR REVIEW AND COMMENT
+FUEL PIER & TERMINAL IMPROVEMENTS  
+KALAELOA BARBERS POINT HARBOR 
+PIERS 3 & 4 – JOB H.C. 10621 
+KALAELOA, OAHU, HAWAII 
+W.O. 7797‐00 
+GEOLABS, INC. 
+PLATE D‐12 
+Hawaii • California 
+B‐108     47.5’ TO 96.0’ 
+                    47.5’ 
+          73.0’ 
+       85.0’ 
+  71.0’ 
+    85.0’ 
+                                96.0’   
+DRAFT  REPORT FOR REVIEW AND COMMENT
+FUEL PIER & TERMINAL IMPROVEMENTS  
+KALAELOA BARBERS POINT HARBOR 
+PIERS 3 & 4 – JOB H.C. 10621 
+KALAELOA, OAHU, HAWAII 
+W.O. 7797‐00 
+GEOLABS, INC. 
+PLATE D‐13 
+Hawaii • California 
+                                             B‐109     2.0’ TO 41.0’ 
+               2.0’ 
+       8.5’ 
+     18.0’ 
+   28.0’ 
+   8.5’                              18.0’ 
+                       28.0’                                 41.0’ 
+DRAFT  REPORT FOR REVIEW AND COMMENT
+FUEL PIER & TERMINAL IMPROVEMENTS  
+KALAELOA BARBERS POINT HARBOR 
+PIERS 3 & 4 – JOB H.C. 10621 
+KALAELOA, OAHU, HAWAII 
+W.O. 7797‐00 
+GEOLABS, INC. 
+PLATE D‐14 
+Hawaii • California 
+                                             B‐109     41.5’ TO 81.0’ 
+               41.5’ 
+       53.0’ 
+     58.5’ 
+   73.0’ 
+   51.0’                              58.5’ 
+                         71.0’                               81.0’ 
+DRAFT  REPORT FOR REVIEW AND COMMENT
+FUEL PIER & TERMINAL IMPROVEMENTS  
+KALAELOA BARBERS POINT HARBOR 
+PIERS 3 & 4 – JOB H.C. 10621 
+KALAELOA, OAHU, HAWAII 
+W.O. 7797‐00 
+GEOLABS, INC. 
+PLATE D‐15 
+Hawaii • California 
+                                           B‐110     10.25’ TO 30.0’     
+                           10.25’ 
+                           16.5’ 
+              15.0’ 
+              30.0’ 
+DRAFT  REPORT FOR REVIEW AND COMMENT
+FUEL PIER & TERMINAL IMPROVEMENTS  
+KALAELOA BARBERS POINT HARBOR 
+PIERS 3 & 4 – JOB H.C. 10621 
+KALAELOA, OAHU, HAWAII 
+W.O. 7797‐00 
+GEOLABS, INC. 
+PLATE D‐16 
+Hawaii • California 
+                                                          B‐111      3.5’ TO 31.0’ 
+    3.5’ 
+   11.0’ 
+  17.4’ 
+  23.5’ 
+                            10.5’ 
+                        16.0’ 
+                   23.5’ 
+           31.0’ 
+DRAFT  REPORT FOR REVIEW AND COMMENT
+FUEL PIER & TERMINAL IMPROVEMENTS  
+KALAELOA BARBERS POINT HARBOR 
+PIERS 3 & 4 – JOB H.C. 10621 
+KALAELOA, OAHU, HAWAII 
+W.O. 7797‐00 
+GEOLABS, INC. 
+PLATE D‐17 
+Hawaii • California 
+  B‐112     3.75’ TO 31.0’ 
+                  3.75’ 
+          13.0’ 
+       27.5’ 
+  11.0’ 
+    21.0’ 
+                                31.0’   
+DRAFT  REPORT FOR REVIEW AND COMMENT
+FUEL PIER & TERMINAL IMPROVEMENTS  
+KALAELOA BARBERS POINT HARBOR 
+PIERS 3 & 4 – JOB H.C. 10621 
+KALAELOA, OAHU, HAWAII 
+W.O. 7797‐00 
+GEOLABS, INC. 
+PLATE D‐18 
+Hawaii • California 
+                                                                B‐113      3.0’ TO 31.0’ 
+    3.0’ 
+     9.5’ 
+  14.5’ 
+                        9.5’ 
+                     14.5’ 
+                      25.0’ 
+             31.0’ 
+DRAFT  REPORT FOR REVIEW AND COMMENT

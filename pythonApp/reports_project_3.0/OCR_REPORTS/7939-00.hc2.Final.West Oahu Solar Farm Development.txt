@@ -1,0 +1,6831 @@
+GEOTECHNICAL ENGINEERING EXPLORATION 
+WEST OAHU SOLAR FARM DEVELOPMENT 
+KAPOLEI, OAHU, HAWAII 
+W.O. 7939-00     NOVEMBER 12, 2019 
+Prepared for 
+AES CORPORATION 
+GEOLABS, INC. 
+Geotechnical Engineering and Drilling Services 
+GEOTECHNICAL ENGINEERING EXPLORATION
+WEST OAHU SOLAR FARM DEVELOPMENT
+KAPOLEI, OAHU, HAWAII
+W.O. 7939-00 NOVEMBER 12, 2019
+Prepared for
+AES CORPORATION
+LICENSED
+PROFESSIONAL
+ENGINEER
+No. 10029-C
+THIS WORK WAS PREPARED BY
+ME OR UNDER MY SUPERVISION.
+eb ow
+4-30-20
+SIGNATURE EXPIRATION DATE
+OF THE LICENSE
+GEOLABS, INC.
+Geotechnical Engineering and Drilling Services
+2006 Kalihi Street e Honolulu, Hl 96819
+Hawaii ¢ California
+GEOLABS, INC.
+Geotechnical Engineering and Drilling Services
+November 12, 2019
+W.O. 7939-00
+Mr. Nick Molinari
+AES Corporation
+4875 Pearl East Circle, Suite 200
+Boulder, CO 80301
+Dear Mr. Molinari:
+Geolabs, Inc. is pleased to submit our report entitled "Geotechnical Engineering
+Exploration, West Oahu Solar Farm Development, Kapolei, Oahu, Hawaii,” prepared for
+the design of the project.
+Our work was performed in general accordance with the scope of services
+outlined in our fee proposals dated June 5, 2019 and August 13, 2019.
+Please note that the soil samples recovered during our field exploration
+(remaining after testing) will be stored for a period of two months from the date of this
+report. The samples will be discarded after that date unless arrangements are made for
+a longer sample storage period. Please contact our office for alternative sample storage
+requirements, if appropriate.
+Detailed discussion and specific design recommendations are contained in the
+body of this report. If there is any point that is unclear, please contact our office.
+Very truly yours,
+GEOLABS, INC.
+Hd Y.L. Chen, P.E.
+Vice President
+JC:HC:c}
+2006 Kalihi Street * Honolulu, Hawaii 96819
+Phone: (808) 841-5064 + Facsimile: (808) 847-1749 »* E-mail: hawaii@geolabs.net
+Hawaii « California
+W.O. 7939-00 
+GEOLABS, INC. 
+Page i 
+Hawaii • California 
+GEOTECHNICAL ENGINEERING EXPLORATION 
+WEST OAHU SOLAR FARM DEVELOPMENT 
+KAPOLEI, OAHU, HAWAII 
+W.O. 7939-00     NOVEMBER 12, 2019 
+TABLE OF CONTENTS 
+                                                                                                                                    Page 
+SUMMARY OF FINDINGS AND RECOMMENDATIONS .............................................. iii 
+1. 
+GENERAL ............................................................................................................ 1 
+1.1 
+Project Considerations ............................................................................... 1 
+1.2 
+Purpose and Scope ................................................................................... 1 
+2. 
+SITE CHARACTERIZATION ................................................................................ 4 
+2.1 
+Regional Geology ...................................................................................... 4 
+2.2 
+Site Description .......................................................................................... 4 
+2.3 
+Subsurface Conditions ............................................................................... 5 
+3. 
+DISCUSSION AND RECOMMENDATIONS ........................................................ 7 
+3.1 
+Solar Array Foundations ............................................................................ 8 
+3.1.1 Lateral Load Resistance ............................................................... 10 
+3.1.2 Micropile Construction Considerations ......................................... 10 
+3.1.3 Micropile Load Test Program ....................................................... 11 
+3.2 
+Building Foundations ............................................................................... 12 
+3.3 
+Slabs-On-Grade ....................................................................................... 14 
+3.4 
+Retaining Structures ................................................................................ 15 
+3.4.1 Retaining Structure Foundations .................................................. 15 
+3.4.2 Lateral Earth Pressures ................................................................ 15 
+3.5 
+Site Grading ............................................................................................. 16 
+3.5.1 Site Preparation ............................................................................ 17 
+3.5.2 Fills and Backfills .......................................................................... 18 
+3.5.3 Fill Placement and Compaction Requirements............................. 18 
+3.5.4 Excavations .................................................................................. 19 
+3.6 
+Pavement Design .................................................................................... 19 
+3.7 
+Utility Trenches ........................................................................................ 23 
+3.8 
+Infiltration Tests ....................................................................................... 23 
+3.9 
+Corrosion Potential .................................................................................. 25 
+3.10 
+Design Review ......................................................................................... 26 
+3.11 
+Post-Design Services/Services During Construction ............................... 27 
+4. 
+LIMITATIONS ..................................................................................................... 28 
+CLOSURE ..................................................................................................................... 30 
+TABLE OF CONTENTS  
+Page 
+W.O. 7939-00 
+GEOLABS, INC. 
+Page ii 
+Hawaii • California 
+PLATES 
+Project Location Map ................................................................................... Plate 1 
+Site Plan ...................................................................................................... Plate 2 
+APPENDIX A 
+Field Exploration ...................................................................................... Page A-1 
+Soil Log Legend ..................................................................................... Plate A-0.1 
+Soil Classification Log Key .................................................................... Plate A-0.2 
+Rock Log Legend .................................................................................. Plate A-0.3 
+Logs of Borings ....................................................................... Plates A-1 thru A-17 
+APPENDIX B 
+Laboratory Tests ........................................................................ Pages B-1and B-2 
+Laboratory Test Data .............................................................. Plates B-1 thru B-19 
+APPENDIX C 
+Field Infiltration Tests .............................................................................. Page C-1 
+Field Infiltration Test Results .................................................... Plates C-1 thru C-3 
+APPENDIX D 
+Field Resistivity Surveys .......................................................................... Page D-1 
+Field Resistivity Survey Data .................................................... Plates D-1 and D-2 
+APPENDIX E 
+Corrosion Tests Report .......................................................................... 29 Sheets 
+APPENDIX F 
+Thermal Resistivity Tests Report .............................................................. 3 Sheets 
+W.O. 7939-00 
+GEOLABS, INC. 
+Page iii 
+Hawaii • California 
+GEOTECHNICAL ENGINEERING EXPLORATION 
+WEST OAHU SOLAR FARM DEVELOPMENT 
+KAPOLEI, OAHU, HAWAII 
+W.O. 7939-00     NOVEMBER 12, 2019 
+SUMMARY OF FINDINGS AND RECOMMENDATIONS 
+Our field exploration generally encountered a thin mantle of residual and/or 
+saprolitic soils underlain by weathered clinker and basalt formation extending to the 
+maximum depth drilled of approximately 16.5 feet below the ground surface.  We did not 
+encounter groundwater in the borings drilled at the time of our field exploration. 
+However, it should be noted that water levels may vary with seasonal rainfall, time of 
+year, and other environmental factors. 
+Since weathered clinker and basalt formation were encountered at shallow depths, 
+driven pile foundation for the solar panel array structures is unlikely feasible.  To provide 
+sufficient uplift and compressive/lateral support, the solar panel array structures may be 
+supported on a deep foundation system consisting of micropiles. Based on the subsurface 
+conditions encountered, we recommend using an ultimate skin friction of 0.85 ksf for the 
+residual and saprolitic soils encountered at the site to determine the ultimate compressive 
+and uplift load capacities. Due to the potential for tension crack developing between the 
+pile and the surrounding soil at the ground surface, we recommend ignoring the top 2 feet 
+of soil resistance when determining the ultimate compressive and uplift load capacities. 
+Based on the anticipated light structural loads and the generally stiff subsurface 
+conditions, we recommend using shallow spread and/or continuous strip footings to 
+support the proposed solar substation building.  An allowable bearing pressure of up to 
+3,000 psf may be used for the design of shallow foundations bearing on the 
+recompacted on-site soils and/or new compacted fills needed to achieve the design 
+finished grades. For footings bearing on the recompacted on-site soils and/or new 
+compacted fills, the bottom of the footing excavations should be scarified at least 
+8 inches and recompacted to at least 90 percent relative compaction to provide a 
+relatively firm and smooth bearing surface prior to the placement of reinforcing steel 
+and/or concrete. 
+Based on our laboratory tests, the on-site clayey soils exhibit slight to moderate 
+swelling and shrinkage potential when subjected to moisture fluctuations. To reduce the 
+potential for future distress to the lightly loaded slabs-on-grade resulting from shrinking 
+and swelling of the clayey soils, we recommend capping the slab subgrades with at 
+least 6 inches of non-expansive select granular fill materials compacted to a minimum of 
+90 percent relative compaction. 
+The text of this report should be referred to for detailed discussion and 
+recommendations. 
+END OF SUMMARY OF FINDINGS AND RECOMMENDATIONS 
+W.O. 7939-00 
+GEOLABS, INC. 
+Page 1 
+Hawaii • California 
+SECTION 1.  GENERAL 
+This report presents the results of our geotechnical engineering exploration 
+conducted for the proposed West Oahu Solar Farm Development project in the Kapolei 
+area on the Island of Oahu, Hawaii.  The project location and general vicinity are shown 
+on the Project Location Map, Plate 1. 
+This report summarizes the findings and geotechnical recommendations resulting 
+from our field exploration, laboratory testing, and engineering analyses for the project. 
+These findings and geotechnical recommendations are intended for the design of 
+foundations, slabs-on-grade, retaining structures, site grading, and pavements only. The 
+findings and recommendations presented herein are subject to the limitations noted at 
+the end of this report. 
+1.1 
+Project Considerations 
+The project site is located off the Interstate Route H-1 Freeway to the east of 
+Makakilo Ridge in the Kapolei area on the Island of Oahu, Hawaii. The general vicinity of 
+the West Oahu Solar Farm Development is presented on the Project Location Map, 
+Plate 1.  We understand it is desired to develop a 12.5 MW of solar photovoltaic power 
+plus  50-MWh battery energy storage plant located in Kapolei.  The plant will be constructed 
+on approximately 80 acres of open land and will consist of solar panels installed on 
+ground-mounted systems, various pads for electrical equipment, such as switchgear, 
+transformers and inverters, and overhead or underground electrical circuits. 
+Based on the information provided, we understand that detailed foundation 
+support for the solar array will be designed by the vendor. Detailed information 
+pertaining to the project layouts were not available at the time this report was prepared. 
+However, we understand that the solar panels will be mounted on a fixed tilt system with 
+no moving parts and no equipment higher than 10 feet tall.  
+1.2 
+Purpose and Scope 
+The purpose of our geotechnical engineering exploration was to obtain an 
+overview of the surface and subsurface conditions to develop an idealized soil/rock data 
+set to formulate geotechnical engineering recommendations for the project design. The 
+SECTION 1. GENERAL 
+W.O. 7939-00 
+GEOLABS, INC. 
+Page 2 
+Hawaii • California 
+work was performed in general accordance with the scope of services outlined in our 
+fee proposals dated June 5, 2019 and August 13, 2019. The scope of work for this 
+exploration included the following tasks and work efforts: 
+1. 
+Research and review of available in-house soils and boring data in the 
+project vicinity. 
+2. 
+Coordination of boring stakeout and underground utility toning and 
+clearances by our engineer. 
+3. 
+Mobilization and demobilization of a backhoe with an operator to conduct 
+trail clearing. 
+4. 
+Mobilization and demobilization of a track-mounted drill rig and 
+two operators to the project site and back. 
+5. 
+Drilling and sampling of 14 boreholes to depths of approximately 14 to 
+16.5 feet below the existing ground surface. 
+6. 
+Coordination of the field exploration and logging of the boreholes by our 
+geologist. 
+7. 
+Performance of in-situ soil resistivity surveys at five locations using the 
+Wenner 4-Pin Method at 2.5, 5, 10, and 20-foot spacings in general 
+accordance with ASTM G57 to evaluate the subsurface resistivity 
+characteristics for the design of grounding grids by others. 
+8. 
+Performance of infiltration testing in three shallow borings about 5 feet 
+below the ground surface, to determine the general infiltration 
+characteristics of the underlying ground surface. 
+9. 
+Laboratory testing of selected soil samples obtained during the field 
+exploration as an aid in classifying the materials and evaluating their 
+engineering properties. 
+10. 
+Collection and shipping of bulk samples to GeoTherm USA for thermal 
+resistivity testing and to TestAmerica for redox potential testing, as well as 
+other corrosivity testing. 
+11. 
+Analyses of the field and laboratory data to formulate geotechnical 
+engineering recommendations for the proposed project. 
+12. 
+Preparation of this geotechnical engineering report summarizing our work 
+on the project and presenting our findings and recommendations. 
+13. 
+Coordination of our overall work on the project by our engineer. 
+SECTION 1. GENERAL 
+W.O. 7939-00 
+GEOLABS, INC. 
+Page 3 
+Hawaii • California 
+14. 
+Quality assurance of our work and client/design team consultation by our 
+principal engineer. 
+15. 
+Miscellaneous work efforts, such as drafting, word processing, clerical 
+support, and reproductions. 
+Detailed descriptions of our field exploration methodology and the Logs of 
+Borings are presented in Appendix A. Results of the laboratory tests performed on 
+selected soil samples are presented in Appendix B. Results of the field infiltration tests 
+performed at selected locations are presented in Appendix C. Results of the field 
+resistivity surveys performed at selected locations are presented in Appendix D. Results 
+of the corrosion tests performed by TestAmerica Laboratories, Inc. are presented in 
+Appendix E.  Results of the thermal resistivity tests performed by Geotherm USA are 
+presented in Appendix F. 
+END OF GENERAL 
+W.O. 7939-00 
+GEOLABS, INC. 
+Page 4 
+Hawaii • California 
+SECTION 2.  SITE CHARACTERIZATION 
+2.1 
+Regional Geology 
+The Island of Oahu was built by the extrusion of basaltic lavas from the Waianae 
+and Koolau Shield Volcanoes.  The older Waianae Volcano is estimated to be middle to 
+late Pliocene in age and forms the bulk of the western third of the island.  The younger 
+Koolau Volcano is estimated to be late Pliocene to early Pleistocene (Ice Age) in age 
+and forms the majority of the eastern two-thirds of the island.  Waianae became extinct 
+while Koolau was still active, and its eastern flank was partially buried below Koolau 
+lavas banking against its eastern flank.  These banked or ponded lavas formed a broad 
+plateau referred to as the Schofield Plateau. 
+During the later stage of its activity, the composition of the lavas from Waianae 
+shifted towards andesitic or trachytic basalts.  A series of events along the southerly rift 
+zone formed several composite cinder and lava cones, including Puu Makakilo and 
+Puu Kapuai.  Lavas in these cones are typically very dense with a platy structure 
+resulting from horizontal jointing.  The project site is situated on the southern facing 
+slope of Puu Kapuai.  Previous exploration in the vicinity of the project site indicates that 
+subsurface conditions generally consist of a relatively thin mantle of residual soil 
+overlying basaltic rock formation. 
+2.2 
+Site Description 
+The project site is located on the northern side of the H-1 Freeway and Kualakai 
+Parkway in the Kapolei area on the Island of Oahu, Hawaii.  A general site plan showing 
+the project layout is provided as Plate 2.   
+The project site generally slopes downward from north to south.  Based on 
+Google Earth Pro, the existing ground surface elevations range from about +600 to 
++300 feet Mean Sea Level (MSL).  The ground surface consisted of reddish brown silty 
+clay and was covered with grasses and shrubs.  An old irrigation ditch system, 
+apparently abandoned, traverses approximately through the middle of the project site 
+was observed.  Currently, the project site is being used as ranch lands. 
+SECTION 2. SITE CHARACTERIZATION 
+W.O. 7939-00 
+GEOLABS, INC. 
+Page 5 
+Hawaii • California 
+2.3   
+Subsurface Conditions 
+The subsurface conditions were explored by drilling and sampling 14 borings, 
+designated as Boring Nos. 1 through 14, extending to depths of approximately 14 to 
+16.5 feet below the existing ground surface. In addition, four bulk samples of the 
+near-surface soils, designated as Bulk-1 through Bulk-4, were collected for laboratory 
+California Bearing Ratio (CBR), R-value, Redox Potential and Thermal Resistivity 
+testing to evaluate the pavement support characteristics, corrosivity and heat transfer 
+characteristics of the near-surface soils. The approximate locations of borings drilled 
+and bulk samples collected are shown on the Site Plan, Plate 2. 
+The project site is generally underlain by residual soils over saprolite and 
+weathered basalt formation.  The residual soils, consisting of stiff to hard silty and 
+clayey soils, were encountered with variable thicknesses primarily between about 1 and 
+8.5 feet, however, in localized areas extended to the maximum depth drilled of about 
+16.5 feet below the existing ground surface. Saprolite soils (completed weathered basalt 
+rock), consisting of stiff to hard sandy and silty soils or dense sandy and gravelly soils, 
+were encountered primarily from about 6.5 to 9.5 feet, however, in localized areas 
+extended to the maximum depth drilled of approximately 16.5 feet below the existing 
+ground surface. 
+Weathered clinker and basalt formation were encountered at relatively shallow 
+depths of about 1 to 4 feet below the existing ground surface in three borings (Boring 
+Nos. 3 through 5).  In other areas (Boring Nos. 8, 10, 11, 12 and 14), the weathered 
+basalt formation including clinker was encountered at depths of about 6.5 to 9.5 feet, 
+extending to the maximum depth drilled of about 16.5 feet below the ground surface. 
+We did not encounter groundwater in the drilled borings at the time of our field 
+exploration. However, it should be noted groundwater levels are subject to change due 
+to rainfall, time of year, seasonal precipitation, surface water runoff, and other factors. 
+Detailed descriptions of the field exploration methodology are presented in 
+Appendix A. Descriptions and graphic representations of the materials encountered in 
+the borings are presented on the Logs of Borings in Appendix A. Laboratory tests were 
+SECTION 2. SITE CHARACTERIZATION 
+W.O. 7939-00 
+GEOLABS, INC. 
+Page 6 
+Hawaii • California 
+performed on selected soil samples and the test results are presented in Appendix B. 
+Results of the field infiltration tests performed at selected locations are presented in 
+Appendix C. Results of the field resistivity surveys are presented in Appendix D. 
+Corrosion tests were conducted on the near-surface soils obtained from the bulk 
+samples by TestAmerica Laboratories, Inc. and the test results are presented in 
+Appendix E.   Thermal resistivity tests were conducted on the near-surface soils 
+obtained from the bulk samples by Geotherm USA and the test results are presented in 
+Appendix F. 
+END OF SITE CHARACTERIZATION 
+W.O. 7939-00 
+GEOLABS, INC. 
+Page 7 
+Hawaii • California 
+SECTION 3.  DISCUSSION AND RECOMMENDATIONS 
+Our field exploration generally encountered a thin mantle of residual and/or 
+saprolitic soils underlain by weathered clinker and basalt formation extending to the 
+maximum depth drilled of approximately 16.5 feet below the ground surface. We did not 
+encounter groundwater in the borings drilled at the time of our field exploration. 
+However, it should be noted that water levels may vary with seasonal rainfall, time of 
+year, and other environmental factors. 
+We recommend supporting the solar panel array structures on a micropile system 
+to provide sufficient uplift and compressive/lateral support. Based on the subsurface 
+conditions encountered, we recommend using an ultimate skin friction of 0.85 kips per 
+square foot (ksf) for the residual and saprolitic soils encountered at the site to determine 
+the ultimate compressive and uplift load capacity. Due to the potential for tension crack 
+developing between the pile and the surrounding soil at the ground surface, we 
+recommend ignoring the upper 2 feet of soil resistance when determining the ultimate 
+compressive and uplift load capacities. 
+Based on the anticipated light structural loads and competent subsurface 
+conditions encountered, we recommend using shallow spread and/or continuous strip 
+footings to support the proposed solar substation building structure.  An allowable 
+bearing pressure of up to 3,000 pounds per square foot (psf) may be used for the 
+design of shallow foundations bearing on the recompacted on-site soils and/or new 
+compacted fills needed to achieve the design finished grades. For footings bearing on 
+the recompacted on-site soils and/or new compacted fills, the bottom of the footing 
+excavations should be recompacted to at least 90 percent relative compaction to 
+provide a relatively firm and smooth bearing surface prior to the placement of reinforcing 
+steel and/or concrete. 
+Based on our laboratory tests, the on-site clayey soils exhibit slight to moderate 
+swelling and shrinkage potential when subjected to moisture fluctuations. To reduce the 
+potential for future distress to the lightly loaded slabs-on-grade resulting from shrinking 
+and swelling of the clayey soils, we recommend capping the slab subgrades with at 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 7939-00 
+GEOLABS, INC. 
+Page 8 
+Hawaii • California 
+least 6 inches of non-expansive select granular fill materials compacted to a minimum of 
+90 percent relative compaction. 
+The design of metallic substructures, such as metallic piping, should consider the 
+effects of the corrosive environment on the substructure.  Based on the results of the field 
+resistivity survey, the subsurface soils at the project site have resistivity values ranging 
+from about 6,800 to 12,800 ohm-cm, corresponding to corrosion ratings of 4 to 5, 
+respectively. It should be noted that the resistivity values of the subsurface soils varied 
+substantially with depth and location across the project area; therefore, special attention 
+should be given by the corrosion engineer when using the resistivity results provided in 
+this report. 
+Detailed discussions and recommendations for the design of foundations, 
+retaining structures, site grading, pavements, and other geotechnical aspects of the 
+project are presented in the following sections.  
+3.1 
+Solar Array Foundations 
+We understand tracker systems supported on driven wide flange beams are 
+usually planned for the support of the solar arrays for the project.  However, based on 
+the subsoil conditions encountered, driving the wide flange beams will be very difficult to 
+penetrate the very stiff residual/saprolite soils and weathered rock formation. An 
+alternate foundation system, such as micropiles, may be considered.  Based on 
+experience with other similar projects, we understand the structural loads of the 
+ground-mounted tracker systems are relatively light with dead weight and wind forces 
+governing the foundation design. To develop the required bearing, uplift, and lateral 
+load resistances, we envision that the solar panel array structures may be supported by 
+a micropile system consisting of a small diameter (typically 5.5 or 7 inches in diameter 
+as local availability) drilled and grouted pile with center bar reinforcing. 
+The micropile would derive vertical support principally from skin friction between 
+the micropile and the surrounding soil/rock. Based on the subsurface conditions 
+encountered, we recommend using an ultimate skin friction of 0.85 kips per square foot 
+(ksf) for the residual and saprolitic soils encountered at the site to determine the 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 7939-00 
+GEOLABS, INC. 
+Page 9 
+Hawaii • California 
+ultimate compressive load capacity.  A factor of safety of 2.0 should be used to 
+determine the allowable compressive load capacity of the micropiles.  The allowable 
+compressive load capacity is for supporting dead-plus-live loads and may be increased 
+by one-third (⅓) for transient loads, such as those caused by wind or seismic forces. 
+Uplift loads imposed on the micropiles may be resisted by a combination of the 
+dead weight of the micropile and shear between the micropile surface and the adjacent 
+soils.  An ultimate uplift skin friction of 0.85 ksf for the residual and saprolitic soils may 
+be used to achieve the uplift load capacity for transient loading.  The uplift load 
+capacities should not be further increased for transient load applications.  For sustained 
+uplift loads, we recommend reducing the uplift load capacity by 50 percent to resist 
+sustained uplift loads.  The project structural engineer should check the capacity of the 
+micropile in tension. 
+It should be noted that the clayey and silty materials encountered at the site may 
+be susceptible to tension cracking near the ground surface due to soil moisture 
+fluctuations and lateral movements of the solar array micropile foundation system. The 
+tension crack would result in the development of a gap between the micropile and the 
+surrounding soil extending from the ground surface down into the subsurface. 
+Therefore, we recommend that the upper 2 feet of soil resistance be ignored when 
+calculating the compressive and upload load capacities of the solar array micropile 
+system. 
+The load bearing capacities of the micropiles will depend largely on the 
+consistency of the soils and the contractor's method of installation and construction 
+procedures. Because local variations in the subsurface materials likely will occur, it is 
+imperative that Geolabs representative is present during the micropile installation 
+operations to confirm the subsurface conditions encountered and to observe the 
+installation of the micropiles. Contract documents should include provisions (unit prices) 
+for extension of the micropiles during construction to account for unforeseen subsurface 
+conditions. The subsequent subsections address the design and construction of the 
+micropile foundations, which include the following: 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 7939-00 
+GEOLABS, INC. 
+Page 10 
+Hawaii • California 
+1. 
+Lateral Load Resistance 
+2. 
+Micropile Construction Considerations 
+3. 
+Micropile Load Test Program 
+3.1.1 Lateral Load Resistance 
+Lateral loads imposed on the solar panel arrays may be resisted by the lateral 
+load capacity of the micropiles. The lateral load resistance of the micropile 
+foundations is a function of the stiffness of the surrounding soil, the stiffness of 
+the micropile, allowable deflection at the top of the micropile, and the induced 
+moment in the micropile.  We understand the lateral load resistance will be 
+determined by the solar panel array vendor engineer. We recommend the 
+following lateral load analysis parameters for the design of the micropile 
+foundations.  
+SUMMARY OF PILE LATERAL LOAD PARAMETERS 
+Undrained Shear 
+Strength 
+(psf) 
+Subgrade Reaction 
+Modulus 
+(pci) 
+Strain (50) 
+1,500 
+150 
+0.01 
+3.1.2 Micropile Construction Considerations 
+It should be noted that the bond stress between the grout bulb and the soil is highly 
+dependent on the drilling procedures and the grouting methods employed by the 
+contractor to install the micropile.  Therefore, the bond stress between the grout 
+bulb and the soil may vary considerably between different contractors and micropile 
+foundation systems. 
+Installation of the micropiles should be performed by a specialty contractor 
+experienced in the construction of a micropile foundation system, with a minimum 
+of five projects in the last three years.  Due to the specialized nature of the 
+micropile foundation construction, observation and testing of the micropile 
+foundation system should be designated as a “Special Inspection” item.  Therefore, 
+we recommend that a representative from Geolabs (Special Inspector) be present 
+to observe the geotechnical aspects of the micropile foundation construction and 
+testing. 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 7939-00 
+GEOLABS, INC. 
+Page 11 
+Hawaii • California 
+3.1.3 Micropile Load Test Program 
+It should be noted that the micropile load capacity is highly dependent on the 
+drilling procedures and the grouting methods employed by the contractor to install 
+the micropile.  Therefore, the micropile load capacity may vary considerably 
+between different contractors and micropile foundation systems.  In order to 
+determine whether the contractor’s methods of micropile installation are adequate 
+and to determine the ultimate load capacity, we recommend performing 
+one pre-production load test.  In general, the purpose of the pre-production load 
+test on a sacrificial micropile is to fulfill the following objectives: 
+To examine the adequacy of the methods and equipment proposed 
+by the contractor to install the micropiles to the depths required 
+To assess the contractor’s method of drilling and grouting 
+To develop criteria for determination of the bonded zone and evaluate 
+the ultimate bonded stress 
+In general, the pre-production load test should be performed in accordance with 
+ASTM Test Designation D3689 (Procedure A - Quick Test).  Based on experience, 
+we believe that the load test should be conducted at least 7 days after completion 
+of the micropile installation to allow the grout adequate time to cure.  The loading 
+apparatus should consider the reaction mechanism to support the tensile testing 
+load.  
+The load test micropile should be loaded gradually to a maximum testing load of at 
+least 200 percent of the allowable design load in tension and reaching a failure load 
+or a rebar yielding load, whichever is smaller.  To facilitate greater testing loads, we 
+recommend that the pre-production load test micropile be reinforced by a rebar with 
+the design size and grade determined based on the maximum testing load 
+conforming to ASTM A615. 
+In addition to the pre-production load test, we also recommend performing proof 
+test on selected micropiles during construction to confirm the load carrying capacity 
+of the installed micropiles.  Based on the micropile drilling and grouting records, 
+Geolabs should select test micropiles after completion of the production micropile 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 7939-00 
+GEOLABS, INC. 
+Page 12 
+Hawaii • California 
+installation.  We recommend testing a minimum 5 percent of the total number of 
+micropiles for proof test.  The proof test should consist of subjecting the micropile to 
+at least 150 percent of the allowable design load.  The micropile should be loaded 
+in 12.5 percent design load increments, and each load should be held for at least 
+5 minutes.  The maximum test load should be held for a minimum of 60 minutes. 
+Micropile load test program consisting of installing and testing pre-production 
+micropiles and proof testing production micropiles are integral parts of the design of 
+the micropile foundation system.  Therefore, we recommend that the micropile test 
+program be conducted under the observation of a representative from Geolabs. 
+3.2 
+Building Foundations 
+We understand that a new solar power generating facility is planned. Details of the 
+PV facility layout plans and structural loading information were not available at the time 
+this report was prepared.  
+Based on the anticipated structural loads and the subsurface conditions 
+encountered, we believe that the new buildings may be supported on a shallow foundation 
+system, consisting of spread and strip footings. An allowable bearing pressure of up to 
+3,000 pounds per square foot (psf) may be used for the design of the footings bearing on 
+the recompacted on-site soils and/or new compacted fills needed to achieve the design 
+finished grades. The bearing value recommended is for dead-plus-live loads and may be 
+increased by one-third (⅓) for transient loads, such as those caused by wind or seismic 
+forces. 
+Soft and/or loose materials encountered at the bottom of footing excavations should 
+be over-excavated until stiff/dense materials or to a maximum of 2 feet deep in the footing 
+excavation. The over-excavation may be backfilled with select granular materials 
+moisture-conditioned to above the optimum moisture content and compacted to a 
+minimum of 90 percent relative compaction in accordance with ASTM D1557. Relative 
+compaction refers to the in-place dry density of soil expressed as a percentage of the 
+maximum dry density of the same soil established in accordance with ASTM D1557. 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 7939-00 
+GEOLABS, INC. 
+Page 13 
+Hawaii • California 
+Optimum moisture is the water content (percentage by dry weight) corresponding to the 
+maximum dry density. 
+In general, the bottom of footings should be embedded a minimum of 18 inches 
+below the lowest adjacent finished grade. The footing subgrade should be scarified to a 
+depth of about 8 inches, moisture conditioned to at least 2 percent above the optimum 
+moisture, and compacted to a minimum of 90 percent relative compaction in accordance 
+with ASTM D1557.  Footings located adjacent to slopes or on slopes should be embedded 
+to a sufficient depth to provide a minimum horizontal setback distance of at least 6 feet 
+measured from the outside edge of the bottom of footing to the face of the slope. 
+Foundations located next to utility trenches or easements should be embedded below a 
+45-degree imaginary plane extending upward from the bottom edge of the utility trench, or 
+the footings should be extended to a depth as deep as the inverts of the utility lines. 
+If the foundations are designed and constructed as recommended herein, we 
+estimate total settlements of footings supported on the recompacted on-site soils and/or 
+new compacted fills to be on the order of about 1 inch or less. Differential settlements 
+between adjacent footings supported on similar materials should be on the order of about 
+0.5 inches or less. 
+Lateral loads acting on the structure may be resisted by a combination of frictional 
+resistance between the base of the foundation and the bearing materials and by passive 
+earth pressure developed against the near-vertical faces of the embedded portion of the 
+footings. A coefficient of friction of 0.35 may be used for footings bearing on the 
+recompacted on-site soils and/or new compacted fills. Resistance due to passive earth 
+pressure may be estimated using an equivalent fluid pressure of 350 pounds per square 
+foot per foot of depth (pcf). The passive earth pressure value assumes the concrete 
+footings will be cast neatly against the stiff on-site soils or new compacted fills. Otherwise, 
+the soils around the footings should be well compacted (minimum of 90 percent relative 
+compaction). Unless covered by pavements or slabs, the passive pressure resistance in 
+the upper 12 inches below the finished grade should be neglected. 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 7939-00 
+GEOLABS, INC. 
+Page 14 
+Hawaii • California 
+3.3 
+Slabs-On-Grade 
+We anticipate that the subsurface clayey silt soils may exhibit a slight to 
+moderate potential for shrinking and swelling when subjected to moisture fluctuations. 
+To reduce the potential for future distress to the lightly loaded slab-on-grade resulting 
+from shrinking and swelling of the near-surface clayey and/or silty soils, we recommend 
+embedding the thickened-edge footings a minimum of 12 inches below the lowest 
+adjacent grade. 
+We recommend properly preparing the slab-on-grade subgrades by scarifying to 
+a depth of about 8 inches, moisture conditioning to at least 2 percent above the 
+optimum moisture, and compacting to a minimum of 90 percent relative compaction. 
+Where shrinkage cracks are noted after compaction of the subgrade, we recommend 
+thoroughly moistening the soils to close the cracks or preparing the subgrades again. 
+Saturation and subsequent yielding of the exposed subgrade due to inclement weather 
+and poor drainage may require over-excavation of the soft areas and replacement with 
+well-compacted fill. 
+In addition, the slab subgrade area should be capped with at least 6 inches of 
+non-expansive select granular fill materials. The non-expansive select granular fill 
+materials should be compacted to a minimum of 90 percent relative compaction. The 
+non-expansive select granular fill materials should be placed as soon as possible after 
+the subgrade soils are prepared in accordance with the recommendations presented in 
+the above discussions. The non-expansive select granular fill materials and the 
+underlying subgrade soils should be wetted and kept moist until the final placement of 
+concrete and/or cushion fills. It should be noted that the non-expansive select granular 
+material does not need to extend below the building foundations. 
+Where the slabs-on-grade will be subjected to equipment vibration and/or 
+vehicular traffic, such as forklifts, we recommend placing the floor slab over 6 inches of 
+aggregate subbase compacted to a minimum of 95 percent relative compaction. Where 
+slabs are intended to function as rigid pavements, a minimum slab thickness of 6 inches 
+may be used for preliminary design purposes. Provisions should be made for proper 
+load transfer across the slab joints that will be subject to vehicular traffic.  
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 7939-00 
+GEOLABS, INC. 
+Page 15 
+Hawaii • California 
+It should be emphasized that the areas adjacent to the slab edges should be 
+backfilled tightly against the edges of the slabs with relatively impervious soils. These 
+areas should also be graded to divert water away from the slabs and to reduce the 
+potential for water ponding around the slabs. 
+3.4 
+Retaining Structures 
+We envision that retaining structures may be required for the proposed 
+development. Based on our field exploration results, the following guidelines may be 
+used for design of retaining structures planned. 
+3.4.1 Retaining Structure Foundations 
+In general, we believe retaining wall foundations may be designed in accordance 
+with the recommendations presented in the “Building Foundations” section herein. 
+In addition, retaining wall foundations should be at least 18 inches wide and should 
+be embedded a minimum of 24 inches below the lowest adjacent finished grades. 
+For sloping ground conditions, the footing should extend deeper to obtain a 
+minimum 6-foot setback distance measured horizontally from the outside edge of 
+the bottom of footing to the face of the slope. Wall footings oriented parallel to the 
+direction of the slope should be constructed in stepped footings. 
+3.4.2 Lateral Earth Pressures 
+Retaining structures should be designed to resist the lateral earth pressures due to 
+the adjacent soils and surcharge effects. The recommended lateral earth pressures, 
+expressed in equivalent fluid pressures of pcf, are presented in the following table. 
+LATERAL EARTH PRESSURES 
+FOR DESIGN OF RETAINING STRUCTURES 
+Backfill  
+Condition 
+Earth Pressure 
+Component 
+Active 
+(pcf) 
+At-Rest 
+(pcf) 
+Level Backfill 
+Horizontal 
+34 
+52 
+Vertical 
+None 
+None 
+Maximum 2H:1V 
+Sloping Backfill 
+Horizontal 
+45 
+60 
+Vertical 
+22 
+30 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 7939-00 
+GEOLABS, INC. 
+Page 16 
+Hawaii • California 
+The values provided above assume that on-site soils or select granular fill will be 
+used to backfill behind the walls. It is assumed that the backfill behind retaining 
+walls will be compacted to between 90 and 95 percent relative compaction. 
+Over-compaction of the retaining wall backfill should be avoided. In general, an 
+active condition may be used for gravity retaining walls and walls that are free to 
+deflect by as much as 0.5 percent of the wall height. If the tops of the walls are 
+not free to deflect beyond this degree, or are restrained, the walls should be 
+designed for the at-rest condition. These lateral earth pressures do not include 
+hydrostatic pressures that might be caused by groundwater trapped behind the 
+walls. 
+Surcharge stresses due to areal surcharges, line loads, and point loads within a 
+horizontal distance equal to the depth of the wall should be considered in the 
+design. For uniform surcharge stresses imposed on the loaded side of the wall, a 
+rectangular distribution with a uniform pressure equal to 30 percent of the vertical 
+surcharge pressure acting on the entire height of the wall, which is free to deflect 
+(cantilever), may be used in the design. For walls that are restrained, a 
+rectangular distribution equal to 44 percent of the vertical surcharge pressure 
+acting over the entire height of the wall may be used for the design. Additional 
+analyses during design may be needed to evaluate the surcharge effects of point 
+loads and line loads. 
+3.5 
+Site Grading 
+A grading plan was not available at the time this report was prepared. However, 
+based on the existing topography of the area, we envision general cut and fill heights my 
+be up to 10 feet in height. Items of site grading that are addressed in the subsequent 
+subsections include the following: 
+1. 
+Site Preparation 
+2. 
+Fills and Backfills 
+3. 
+Fill Placement and Compaction Requirements 
+4. 
+Excavations 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 7939-00 
+GEOLABS, INC. 
+Page 17 
+Hawaii • California 
+A Geolabs representative should monitor site grading operations to observe 
+whether undesirable materials are encountered during the excavation and scarification 
+process and to confirm whether the exposed soil conditions are similar to those 
+assumed in this report. 
+3.5.1 Site Preparation 
+At the on-set of earthwork, the area within the contract grading limits should be 
+cleared thoroughly. Surface vegetation and other unsuitable materials should be 
+removed and disposed of properly off-site. Soft and yielding areas encountered 
+during clearing below areas designated to receive fill and/or future improvements 
+should be over-excavated to expose firm material and the resulting excavation 
+should be backfilled with well-compacted fill. The excavated soft soils should be 
+properly disposed of off-site and/or used in landscape areas, where appropriate. 
+After clearing, the exposed subgrades should be scarified to a depth of about 
+8 inches, moisture-conditioned to at least 2 percent above the optimum moisture, 
+and recompacted to a minimum of 90 percent relative compaction. The compaction 
+requirements for finished subgrades subjected to vehicular traffic, such as the 
+pavement subgrades, should be increased to a minimum of 95 percent relative 
+compaction. Relative compaction refers to the in-place dry density of soil expressed 
+as a percentage of the maximum dry density of the same soil established in 
+accordance with ASTM D1557. Optimum moisture is the water content (percentage 
+by dry weight) corresponding to the maximum dry density.  
+If the subgrade soils are pumping during subgrade preparation, the subgrade may 
+be proof-rolled and a woven geotextile fabric, such as Mirafi 500X or equivalent, 
+should be placed on the subgrade prior to placement of subsequent lifts of fill. 
+Alternatively, 
+the 
+material 
+may 
+be 
+over-excavated 
+and 
+replaced 
+with 
+well-compacted select granular fill (discussed in the following subsection, “Fills and 
+Backfills”). 
+Where shrinkage cracks are observed after the subgrade compaction, we 
+recommend preparing the subgrade soil again as recommended above. 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 7939-00 
+GEOLABS, INC. 
+Page 18 
+Hawaii • California 
+Saturation and subsequent yielding of the exposed subgrade due to inclement 
+weather and poor drainage may require over-excavating the soft areas and 
+replacing these areas with engineered fill. A Geolabs field representative should 
+evaluate the need for over-excavation due to soft subgrade soil conditions. 
+3.5.2 Fills and Backfills 
+In general, the excavated on-site soils should be suitable for use as general fill 
+materials provided that the maximum particle size is less than 6 inches in largest 
+dimension. The on-site materials generated from the excavations may be used as a 
+source of general fill or backfill materials provided that they are screened of the 
+over-sized materials and/or processed to meet the above gradation requirements 
+(less than 6 inches in largest dimension). 
+Imported materials required for site filling should consist of select granular fill 
+material, such as crushed coralline and/or basaltic materials. The materials should 
+be well graded from coarse to fine with particles no greater than 3 inches in largest 
+dimension. In addition, the materials also should contain between 10 and 
+30 percent particles passing the No. 200 sieve. The materials should have a CBR 
+value of 20 or higher, and a swell potential of 1 percent or less when tested in 
+accordance with ASTM D1883. Geolabs should test imported fill materials a 
+minimum of 7 days prior to being transported to the project site for the intended 
+use.  
+3.5.3 Fill Placement and Compaction Requirements 
+Fill materials consisting of the on-site soils should be moisture-conditioned to at 
+least 2 percent above the optimum moisture, placed in level lifts not exceeding 
+8 inches in loose thickness, and compacted to a minimum of 90 percent relative 
+compaction. Relative compaction refers to the in-place dry density of soil expressed 
+as a percentage of the maximum dry density of the same soil established in 
+accordance with ASTM D1557. Optimum moisture is the water content (percentage 
+by weight) corresponding to the maximum dry density. 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 7939-00 
+GEOLABS, INC. 
+Page 19 
+Hawaii • California 
+Imported fill materials should be moisture-conditioned to above the optimum 
+moisture content, placed in level lifts of about 8 inches in loose thickness, and 
+compacted to a minimum of 90 or 95 percent relative compaction, as appropriate. 
+Aggregate base course and subbase materials should be moisture-conditioned to 
+above the optimum moisture content, placed in level lifts not exceeding 8 inches in 
+loose thickness, and compacted to a minimum of 95 percent relative compaction. 
+Compaction should be accomplished by sheepsfoot rollers or other types of 
+acceptable compaction equipment. Water tamping, jetting, or ponding should not 
+be allowed to compact the fills.  Where compaction is less than required, additional 
+compactive effort should be applied with adjustment of moisture content, as 
+necessary, to obtain the specified compaction. 
+3.5.4 Excavations 
+It is anticipated that the on-site residual and saprolite soils encountered in our 
+borings may be excavated with normal heavy excavation equipment. However, 
+there is a potential for encountering harder cobble/boulder and/or less weathered 
+zones of basalt rock within the excavation depth. The contractor for the project 
+should be cautioned that these hard cobble/boulders and/or dense basalt rock 
+zones could be encountered in the excavations and may require chipping and/or 
+the use of hoerams to excavate the materials. 
+The above discussions regarding the rippability of the surface materials are based 
+on the anticipated subsurface at the project site and our experience in the 
+project vicinity. Contractors bidding on this project should be encouraged to review 
+and understand the geologic environment of the project site and to examine the site 
+conditions and soil data to make their own interpretation. 
+3.6 
+Pavement Design 
+We anticipate that both flexible and rigid pavements may be considered for the 
+access roads planned to serve the solar farm facility. We understand that aggregate 
+surfaced pavement (gravel road) may also be considered as an alternative pavement 
+option.  However, it should be noted that the project site is located at a mountainous 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 7939-00 
+GEOLABS, INC. 
+Page 20 
+Hawaii • California 
+terrain and flash flood is common in Oahu.  With steep terrain and high intensity 
+rainfalls, high potential with significant damages to gravel road is anticipated.  Efforts of 
+maintenance and/or replacement of the gravel roadway should be anticipated.  
+In general, we anticipate that after the initial heavy loading with delivery truck 
+loads of transformer and other heavy equipment, the vehicle loading will consist of 
+passenger vehicles, pick-up trucks, and occasional light maintenance trucks.  Details of 
+design traffic loading conditions were not available at the time this report was prepared. 
+We understand that the transformer delivery truck with a total payload of 72,000 pounds 
+is required to be considered. In addition, other three-axle delivery trailers and fire trucks 
+should also be considered with approximate 25,000 to 30,000 pounds per axle. The 
+pavement design procedures are based on the “Guide for Design of Pavement 
+Structures” (1993) developed by the American Association of State Highway and 
+Transportation Officials (AASHTO). The following assumed design traffic parameters 
+were used in the pavement design analyses. 
+DESIGN TRAFFIC PARAMETERS 
+Design Period 
+30 Years 
+Average Daily Traffic (ADT) 
+111 
+Annual Increase Rate (%) 
+0.01 
+Type of Axle 
+Traffic Count Per Day 
+2-axle 
+50 
+3-axle 
+50 
+4-axle 
+0 
+5-axle 
+4 
+6-axle 
+6 
+9-axle 
+1 
+Total ESAL in 30 Years 
+127,565 
+Based on a design period of 30 years and the assumed traffic volume, a Traffic 
+Index (TI) value of 7.0 has been determined for the proposed facility access roadway. 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 7939-00 
+GEOLABS, INC. 
+Page 21 
+Hawaii • California 
+We have assumed the pavement subgrade soils will be similar to the clayey and 
+silty soils generally encountered during our field exploration. Based on results of the soil 
+laboratory testing, we anticipate that the subsurface clayey and silty soils may have a 
+CBR value of 11 with exhibiting potential for shrinking and swelling when subjected to 
+moisture fluctuations. On this basis, we recommend using the following pavement 
+designs for this project. 
+Flexible Pavement 
+  2.0-Inch Asphaltic Concrete 
+  6.0-Inch Aggregate Base Course (95% Relative Compaction) 
+  6.0-Inch Aggregate Subbase Course (95% Relative Compaction) 
+14.0-Inch Total Pavement Thickness on Moist Compacted Subgrade 
+Rigid Pavement 
+  6.0-Inch Portland Cement Concrete 
+  6.0-Inch Aggregate Subbase (95% Relative Compaction) 
+12.0-Inch Total Pavement Thickness on Moist Compacted Subgrade 
+Aggregate Surfaced Pavement 
+12.0-Inch Aggregate Base Course (95% Relative Compaction) 
+  6.0-Inch Aggregate Subbase Course (95% Relative Compaction) 
+18.0-Inch Total Pavement Thickness on Moist Compacted Subgrade 
+California Bearing Ratio and field density tests should be performed on the actual 
+subgrade soils encountered during construction to confirm the adequacy of the above 
+sections.  The subgrade soil under the pavement area should be moisture-conditioned 
+to about 2 percent above the optimum moisture and compacted to at least 95 percent 
+relative compaction. The subgrade should be kept moist prior to placement of aggregate 
+subbase and aggregate base course.  
+Aggregate base course and subbase course should meet the material 
+requirements for Base Course and Subbase Course as specified in Sections 31 and 30, 
+respectively, of the Standard Specifications for Public Works Construction, City & 
+County of Honolulu, September 1986. Geolabs should test imported fill materials for 
+conformance with these recommendations prior to delivery to the project site for the 
+intended use.  
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 7939-00 
+GEOLABS, INC. 
+Page 22 
+Hawaii • California 
+Relative compaction refers to the in-place dry density of soil expressed as a 
+percentage of the maximum dry density of the same soil established in accordance with 
+ASTM D1557. Optimum moisture is the water content (percentage by weight) 
+corresponding to the maximum dry density. 
+As an additional effort for stability and uniform compaction, we recommend 
+proof-rolling the non-expansive, select granular fill material prior to placing the 
+aggregate base course (for flexible pavement section) or the aggregate subbase course 
+(for rigid pavement section) materials using a pneumatic-tired vehicle with a gross 
+vehicle weight of at least 30,000 pounds, such as a fully-loaded water truck. The 
+equipment used for proof-rolling should be operated at a speed of about 300 feet per 
+minute (about 3 miles per hour) and make at least two passes over each area 
+designated for proof-rolling. Proof-rolling should also be performed on successive lifts of 
+aggregate base course or subbase course materials. Areas with excessive rutting 
+and/or pumping should be over-excavated to expose firm material, and the resulting 
+excavation should be backfilled with either well-compacted fill or aggregate 
+base/subbase material. 
+Where minor shrinkage cracks are observed after subgrade preparation, we 
+recommend thoroughly moistening the soil to close the cracks prior to re-compacting. 
+Saturation and subsequent yielding of the exposed subgrade due to inclement weather 
+and poor drainage may require over-excavation of the soft areas and replacement with 
+well-compacted fill. 
+Paved areas should be sloped and drainage gradients should be maintained to 
+carry surface water off-site. Surface water ponding should not be allowed on-site during 
+or after construction. Where concrete curbs are used to isolate landscaping in or 
+adjacent to the pavement areas, we recommend extending the curbs a minimum of 
+2 inches into the soils below the aggregate base course layer to reduce the potential for 
+migration of landscape water into the pavement section. Alternatively, a subdrain 
+system could be constructed to collect the excess water from landscaping irrigation. For 
+long-term performance, we recommend constructing a subdrain system adjacent to the 
+paved/landscaped areas. 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 7939-00 
+GEOLABS, INC. 
+Page 23 
+Hawaii • California 
+3.7 
+Utility Trenches 
+We anticipate that underground utility connections will be required for the project. 
+In general, good construction practices should be utilized for the installation and 
+backfilling of the trenches for the new utilities. The contractor should determine the 
+method and equipment to be used for trench excavation, subject to practical limits and 
+safety considerations. In addition, the excavations should comply with the applicable 
+federal, state, and local safety requirements. The contractor should be responsible for 
+trench shoring design and installation. 
+In general, we recommend using granular bedding consisting of 6 inches of 
+open-graded gravel (ASTM C33, No. 67 gradation) for support of the utility lines. The 
+initial trench backfill up to about 12 inches above the pipes should consist of 
+free-draining backfills, such as open-graded gravel, to reduce the potential for damaging 
+the pipes from compaction of the backfill. It is critical to use a free-draining granular 
+material to reduce the potential for formation of voids below the haunches of pipes and 
+to provide adequate support for the sides of the pipes. The use of on-site clayey soils as 
+backfill directly around the utility pipes is not recommended and should not be allowed. 
+The upper portion of the trench backfill from the level 12 inches above the pipes 
+to the finished subgrade may consist of approved on-site soils or select granular fill 
+material. The granular or on-site soil backfill materials should be moisture-conditioned to 
+above the optimum moisture content or between 2 and 4 percent above the optimum 
+moisture content, respectively, placed in level lifts not exceeding 8 inches in loose 
+thickness, and compacted to a minimum of 90 percent relative compaction to reduce the 
+potential for appreciable future ground subsidence. The finished subgrade of the trench 
+backfill below the pavement grade should be compacted to no less than 95 percent 
+relative compaction. 
+3.8 
+Infiltration Tests 
+We envision that the project may require on-site stormwater runoff management, 
+including detention basins, dry wells or bioswales.  
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 7939-00 
+GEOLABS, INC. 
+Page 24 
+Hawaii • California 
+In order to obtain subsurface infiltration information in support of the planning of 
+such system, we conducted falling head infiltration tests at three selected locations to 
+evaluate the infiltration characteristics of the subsurface materials encountered. The 
+infiltration tests were performed in locations designated as I-1 through I-3, at the 
+approximate locations shown on the Site Plan, Plate 2. The infiltration tests were 
+performed in general accordance with the procedures in Appendix D of the State of 
+Maryland, Department of the Environment “Stormwater Design Manual, Volumes I and 
+II” (rev. 2009). These procedures are consistent with other state’s procedures and may 
+generally be considered an industry standard. 
+The field infiltration tests were performed by drilling boreholes utilizing a 4-inch 
+solid-stem auger to a depth of about 5 feet below the existing ground surface. Upon 
+reaching the test depth, a 4-inch diameter PVC solid pipe was set to the bottom of the 
+drilled borehole as a casing to allow infiltration only through the soil exposed on the bottom 
+of the borehole. Falling head infiltration tests were performed to determine the average 
+infiltration rates of the underlying subsurface materials. Each test consisted of four trials of 
+filling the casing with 24 inches of water and taking periodic readings over a one-hour trial 
+period. The infiltration rates are then calculated based on the result of the fourth and last 
+trial for each test location. The calculated infiltration rates at each test location are 
+summarized in the table below. Details of our field infiltration test results are presented on 
+Plates C-1 to C-3 of Appendix C. 
+FIELD INFILTRATION TEST RESULTS 
+Location 
+Depth 
+Final Measured  
+Infiltration Rate 
+(feet) 
+(inches/hour) 
+I-1 
+5.0 
+6.0 
+I-2 
+5.0 
+13.8 
+I-3 
+5.0 
+15.4 
+Site Average 
+11.7 
+It should be noted that the infiltration values presented above are the rates of 
+infiltration through the soil exposed at the bottom of the tested borehole. Based on the 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 7939-00 
+GEOLABS, INC. 
+Page 25 
+Hawaii • California 
+results of the field infiltration testing, the average infiltration rates at these locations 
+indicate that an infiltration/detention system and similar methods of storm water 
+management would be feasible for this facility. Due to the variability of the subsurface 
+conditions, the absorption capacity of the disposal system should be confirmed by 
+conducting additional infiltration tests during construction. A Geolabs representative should 
+observe the excavation for the detention/infiltration chambers and/or detention basins to 
+confirm the anticipated infiltration substrata conditions. 
+3.9 
+Corrosion Potential 
+Design of metallic substructures, such as electrical conduits or other metallic 
+piping, should consider the effects of the corrosive environment on the substructure.  
+Resistivity is generally recognized as one of the most significant soil characteristics 
+regarding the corrosivity of the soil to buried metallic objects. In general, the lower the 
+resistivity, the greater the potential for corrosion of the buried metallic structure. 
+Conversely, the higher the resistivity, the less likely the soil will contribute to corrosion of 
+metallic objects. 
+A total of five field resistivity surveys were conducted at a maximum of about 
+20-foot intervals at five locations, designated as R-1 to R-5, using the in-situ Wenner 
+4-Pin Method and a Nilsson Model 400 resistance meter manufactured by Nilsson 
+Electrical Laboratory, Inc. Locations of the resistivity tests are presented in the Site 
+Plan, Plate 2. The method utilizes four surface probes or pins (electrodes) to evaluate 
+the average resistivity (an indication of corrosivity) of the underlying soil mass. The field 
+resistivity survey was used to evaluate the average resistivity values of the soil mass at 
+the approximate survey locations. Results of the field resistivity surveys are presented 
+in Appendix D. It should be noted that the field resistivity survey may be influenced by 
+temperature, weather conditions, soil moisture, existing underground utilities and other 
+factors. 
+Based on the results of our field resistivity survey, the subsurface soils at the 
+project site have resistivity values ranging from about 6,800 to 12,800 ohm-cm, 
+corresponding to corrosion ratings of 4 to 5, respectively. It should be noted that the 
+resistivity values of the subsurface soils varied substantially with depth and location 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 7939-00 
+GEOLABS, INC. 
+Page 26 
+Hawaii • California 
+across the project area. Therefore, special attention should be given by the corrosion 
+engineer when using the resistivity results provided in this report. 
+Three sets of corrosivity testing, including pH (ASTM G51), Minimum Resistivity 
+(ASTM G57), Chloride Content (EPA 300.0), and Sulfate Content (EPA 300.0), were 
+performed by our office and TestAmerica Laboratories, Inc. on selected soil samples 
+obtained from our field exploration.  In addition, two Oxidation Reduction (Redox) 
+potentials tests were also performed by TestAmerica Laboratories, Inc. on bulk samples 
+obtained from our field exploration.  A summary of the corrosivity tests is presented in 
+Appendix B, Plate B-9.  A full report of the tests performed by TestAmerica 
+Laboratories, Inc. is presented in Appendix E. 
+Based on the relatively low values of the chloride and sulfate content tested on 
+the in-situ near-surface clayey and silty soils, we believe that either Type I or Type II 
+(Type I/II) cement may be used for the concrete in contact with the ground planned. 
+We envision that electrical duct lines will be installed underground. Geotherm 
+USA, our subcontractor, conducted laboratory soil thermal resistivity testing to evaluate 
+the thermal characteristics of the in-situ near-surface clayey and silty soils encountered 
+at the site. The sample was remolded to approximately 90 percent relative density 
+according to ASTM D1557, Standard Test Methods for Laboratory Compaction 
+Characteristics of Soil Using Modified Effort. Detailed discussions and test results are 
+provided in the report entitled “Thermal Analysis of Native Soil Samples, West Oahu 
+Solar Farm Development – Kapolei, Oahu, Hawaii,” dated August 2, 2019, as included 
+in Appendix F. 
+3.10 Design Review 
+Preliminary and final drawings and specifications for the project should be 
+forwarded to Geolabs for review and written comments prior to bid solicitation for 
+construction. This review is necessary to evaluate conformance of the plans and 
+specifications with the intent of the foundation and earthwork recommendations 
+provided herein. If this review is not made, Geolabs cannot be responsible for 
+misinterpretation of our recommendations. 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 7939-00 
+GEOLABS, INC. 
+Page 27 
+Hawaii • California 
+3.11 Post-Design Services/Services During Construction 
+Geolabs should be retained to provide geotechnical engineering services during 
+construction. The critical items of construction monitoring that require "Special 
+Inspection" include the following: 
+1. 
+Observation of the micropile foundation installation  
+2. 
+Observation of the shallow foundation excavations 
+3. 
+Observation of general fill placement and compaction 
+4. 
+Observation of select granular fill placement and compaction 
+5. 
+Observation of pavement construction 
+6. 
+Observation and verification of subsurface soil infiltration  
+A Geolabs representative also should monitor other aspects of earthwork 
+construction to observe compliance with the design concepts, specifications, or 
+recommendations and to expedite suggestions for design changes that may be required 
+in the event that subsurface conditions differ from those anticipated at the time this 
+report was prepared. Geolabs should be accorded the opportunity to provide 
+geotechnical engineering services during construction to confirm our assumptions in 
+providing the recommendations presented herein.  
+If the actual exposed subsurface conditions encountered during construction 
+differ from those assumed or considered herein, Geolabs should be contacted to review 
+and/or revise the geotechnical recommendations presented herein. 
+END OF DISCUSSION AND RECOMMENDATIONS 
+W.O. 7939-00 
+GEOLABS, INC. 
+Page 28 
+Hawaii • California 
+SECTION 4.  LIMITATIONS 
+The analyses and recommendations submitted herein are based in part upon 
+information obtained from our test borings. Variations of the subsurface conditions 
+between and beyond the test borings may occur and the nature and extent of these 
+variations may not become evident until construction is underway. If variations then 
+appear evident, it will be necessary to re-evaluate the recommendations presented 
+herein. 
+The test boring, bulk sample, infiltration testing, and field resistivity locations 
+indicated herein have been estimated using a hand-held GPS device. These field 
+sampling and testing locations should be considered accurate only to the degree 
+implied by the methods used. 
+The stratification breaks represented on the Logs of Borings show the 
+approximate boundaries between soil types and, as such, may denote a gradual 
+transition. We did not encounter groundwater in the borings at the time of our field 
+exploration. However, it must be noted that fluctuation may occur due to variation in 
+seasonal rainfall and other factors. These data have been reviewed and interpretations 
+made in the formulation of this report. 
+This report has been prepared for the exclusive use of AES Corporation for 
+specific application to the proposed West Oahu Solar Farm Development project as 
+described herein in accordance with generally accepted geotechnical engineering 
+principles and practices. No warranty is expressed or implied. 
+This report has been prepared solely for the purpose of assisting the design 
+engineers for the purpose of project planning. Therefore, this report may not contain 
+sufficient data, or the proper information, to serve as a basis for detailed construction 
+cost estimates.  
+The owner/client should be aware that unanticipated soil conditions are commonly 
+encountered. Unforeseen subsurface conditions, such as perched groundwater, soft 
+deposits, or hard layers may occur in localized areas and may require additional 
+SECTION 4. LIMITATIONS 
+W.O. 7939-00 
+GEOLABS, INC. 
+Page 29 
+Hawaii • California 
+corrections in the field (which may result in construction delays) to attain a properly 
+constructed project. Therefore, a sufficient contingency fund is recommended to 
+accommodate these possible extra costs. 
+This geotechnical engineering exploration conducted at the project site was not 
+intended to investigate the potential presence of hazardous materials existing at the 
+project site. It should be noted that the equipment, techniques, and personnel used to 
+conduct a geo-environmental exploration differ substantially from those applied in 
+geotechnical engineering. 
+END OF LIMITATIONS 
+CLOSURE
+The following plates and appendices are attached and complete this report:
+FRIESE LRIGEIONE BARD a as saa sec as Siai sacha Teameekatecsinecssauajassdaevahanda tise vases py geseaadeargratsed eed Plate 1
+SEES FETs an oStees eaietheuhG herchsalact eats meaecn ened yeria dats aai voldeauclaveke h Qdapbdvistase Soztd dcarascnaccisevies Plate 2
+PH EXOT a accssisicavctascsdscassacasaasanatoactonanppasgcerionnsasvade ss zsvarsigastidvaneenearnesss Appendix A
+LBOERRORY TIASEG A 20s tiveinesisvensvoweucrsireennstes auiseeye aah rubindseadenhdcebaans aneoaecahceaticnnadeeas Appendix B
+FIGS IPM ANON TOStS., ws icssiississaastszecczeceavsctvussscassgsaxaspadvbieedscssensaenvseesteasanipiais Appendix C
+PIQIG FIGSIGUVIBY SUPVOYG 5 50:5 srzscecsigeaszscssacinstedssiashacsusiveddsetbsonuianVerepaiedgesdeyedsdeds Appendix D
+CASEECUGTT DEES seh tra sich oostevo edieeaiocd des dee saasnaseueoyaOusndy ddgp bids eaves asasacécasetandta Appendix E
+Thermal. ROSIStivitY TOSts. inca secacecacssassarscsconassusaaanspagneantesoiasedssstavendsosssanspsscavess Appendix F
+-DQQOQQO0000-
+Respectfully submitted,
+(Re
+n Y.L. Chen, P.E.
+Vice President
+GEOLABS, INC.
+By
+He~
+JC:HC:cfas
+h:\7900Series\7939-00.he1
+W.O. 7939-00 GEOLABS, INC. Page 30
+Hawaii ° California
+PLATES 
+WEST OAHU SOLAR FARM DEVELOPMENT
+PROJECT LOCATION MAP
+GRAPHIC SCALE
+1000
+2000
+2000
+0
+FT.
+PROJECT LOCATION
+GENERAL PROJECT LOCATION
+N
+WAHIAWA
+WAIKIKI
+HONOLULU
+AIEA
+PEARL CITY
+WAIPAHU
+EWA
+BARBERS POINT
+NANAKULI
+WAIANAE
+WAIALUA
+HALEIWA
+KAHUKU
+POINT
+DIAMOND
+HEAD
+HAWAII
+KAI
+WAIMANALO
+KAILUA
+KANEOHE
+KAHALUU
+PUNALUU
+HAUULA
+KAENA POINT
+ISLAND MAP
+NO SCALE
+KAPOLEI, OAHU, HAWAII
+AUGUST 2019
+1" = 2,000'
+Geotechnical Engineering
+GEOLABS, INC.
+DATE
+SCALE
+1
+7939-00
+DRAWN BY
+KHN
+W.O.
+PLATE
+N
+PACIFIC      OCEAN
+CAD User: KIM  File Last Updated: August 21, 2019 6:48:35pm  Plot Date:  August 21, 2019 - 7:21:15pm
+File: T:\Drafting\Working\7939-00_West_Oahu_Solar_Farm_Development\7939-00PLM.dwg\1
+Plotter: DWG To PDF-GEO.pc3  Plotstyle: GEO-No-Dither-RBGC-HEAVY.ctb
+REFERENCE: MAP CREATED WITH TOPO!® ©2010 NATIONAL
+GEOGRAPHIC; ©2007 TELE ATLAS, REL. 1/2007.
+B-1
+B-2&I-1
+B-3
+B-4&BULK-1
+B-5
+B-6
+B-7&BULK-2
+B-8&I-2
+B-9
+B-10&BULK-3
+B-11
+I-3
+B-13
+B-14&BULK-4
+B-12
+R-5
+R-4
+R-3
+R-2
+R-1
+APPROXIMATE BORING LOCATION
+LEGEND:
+N
+APPROXIMATE BULK SAMPLE LOCATION
+WEST OAHU SOLAR FARM DEVELOPMENT
+KAPOLEI, OAHU, HAWAII
+GEOLABS, INC.
+Geotechnical Engineering
+7939-00
+DRAWN BY
+KHN
+1" = 300'
+SEPTEMBER 2019
+SCALE
+DATE
+W.O.
+SITE PLAN
+2
+PLATE
+GRAPHIC SCALE
+150
+0
+300
+600
+900 FT.
+CAD User: KIM  File Last Updated: September 05, 2019 8:32:27pm  Plot Date:  September 06, 2019 - 2:22:13pm
+File: T:\Drafting\Working\7939-00_West_Oahu_Solar_Farm_Development\7939-00SitePlan.dwg\2
+Plotter: DWG To PDF-GEO.pc3  Plotstyle: GEO-No-Dither-RBGC-HEAVY.ctb
+REFERENCE: OVERALL SITE PLAN TRANSMITTED
+BY AES CORPORATION ON MAY 1, 2019.
+APPROXIMATE INFILTRATION TEST LOCATION
+APPROXIMATE RESISTIVITY TEST LOCATION
+APPENDIX A  
+W.O. 7939-00 
+GEOLABS, INC. 
+NOVEMBER 2019     Page A-1 
+Hawaii • California 
+A P P E N D I X   A 
+Field Exploration 
+We explored the subsurface conditions at the project site by drilling and sampling 
+17 boreholes, designated as Boring Nos. 1 through 14 and I-1 through I-3, extending to 
+depths of approximately 5 to 16.5 feet below the existing ground surface. The approximate 
+boring locations are shown on the Site Plan, Plate 2. The borings were drilled using a 
+track-mounted drill rig equipped with continuous flight augers.  
+Our geologist classified the materials encountered in the borings by visual and 
+textural examination in the field in general accordance with ASTM D2488, Standard 
+Practice for Description and Identification of Soils, and monitored the drilling operations on 
+a near-continuous (full-time) basis. These classifications were further reviewed visually 
+and by testing in the laboratory. Soils were classified in general accordance with 
+ASTM D2487, Standard Practice for Classification of Soils for Engineering Purposes 
+(Unified Soil Classification System), as shown on the Soil Log Legend, Plate A-0.1. 
+Deviations made to the soil classification in accordance with ASTM D2487 are described 
+on the Soil Classification Log Key, Plate A-0.2.  Rock formations were described in general 
+accordance with the Rock Description System, as shown on the Rock Log Legend, 
+Plate A-0.3.  Graphic representations of the materials encountered are presented on the 
+Logs of Borings, Plates A-1 through A-17. 
+Relatively “undisturbed” soil samples were obtained in general accordance with 
+ASTM D3550, Ring-Lined Barrel Sampling of Soils, by driving a 3-inch OD Modified 
+California sampler with a 140-pound hammer falling 30 inches. In addition, some 
+samples were obtained from the drilled borings in general accordance with 
+ASTM D1586, Penetration Test and Split-Barrel Sampling of Soils, by driving a 
+2-inch OD standard penetration sampler using the same hammer and drop. The blow 
+counts needed to drive the sampler the second and third 6 inches of an 18-inch drive 
+are shown as the “Penetration Resistance” on the Logs of Borings at the appropriate 
+sample depths. The penetration resistance shown on the Logs of Borings indicates the 
+number of blows required for the specific sampler type used. The blow counts may need 
+to be factored to obtain the Standard Penetration Test (SPT) blow counts.  
+Pocket penetrometer tests were performed on selected cohesive soil samples 
+retrieved in the field. The pocket penetrometer test provides an indication of the 
+unconfined compressive strength of the sample. Pocket penetrometer test results are 
+summarized on the Logs of Borings at the appropriate sample depths. 
+A-0.1
+UNCONSOLIDATED UNDRAINED TRIAXIAL
+COMPRESSION (ksf)
+MORE THAN 50%
+OF COARSE
+FRACTION
+RETAINED ON
+NO. 4 SIEVE
+50% OR MORE OF
+COARSE FRACTION
+PASSING
+THROUGH NO. 4
+SIEVE
+MORE THAN 50%
+OF MATERIAL
+RETAINED ON NO.
+200  SIEVE
+50% OR MORE OF
+MATERIAL PASSING
+THROUGH NO. 200
+SIEVE
+TORVANE SHEAR (tsf)
+(2-INCH) O.D. STANDARD PENETRATION TEST
+(3-INCH) O.D. MODIFIED CALIFORNIA SAMPLE
+INORGANIC SILTS AND VERY FINE SANDS,
+ROCK FLOUR, SILTY OR CLAYEY FINE SANDS
+OR CLAYEY SILTS WITH SLIGHT PLASTICITY
+POORLY-GRADED GRAVELS, GRAVEL-SAND
+MIXTURES, LITTLE OR NO FINES
+CLAYEY GRAVELS, GRAVEL-SAND-CLAY
+MIXTURES
+WELL-GRADED SANDS, GRAVELLY SANDS,
+LITTLE OR NO FINES
+POORLY-GRADED SANDS, GRAVELLY
+SANDS, LITTLE OR NO FINES
+SILTY SANDS, SAND-SILT MIXTURES
+CLAYEY SANDS, SAND-CLAY MIXTURES
+LIQUID LIMIT
+50 OR MORE
+CH
+NOTE: DUAL SYMBOLS ARE USED TO INDICATE BORDERLINE SOIL CLASSIFICATIONS
+MH
+SILTS
+AND
+CLAYS
+SILTS
+AND
+CLAYS
+LIQUID LIMIT
+LESS THAN 50
+USCS
+TYPICAL
+DESCRIPTIONS
+GW
+MORE THAN 12%
+FINES
+WATER LEVEL OBSERVED IN BORING OVERNIGHT
+HIGHLY ORGANIC SOILS
+SILTY GRAVELS, GRAVEL-SAND-SILT
+MIXTURES
+OL
+PEAT, HUMUS, SWAMP SOILS WITH HIGH
+ORGANIC CONTENTS
+INORGANIC CLAYS OF LOW TO MEDIUM
+PLASTICITY, GRAVELLY CLAYS, SANDY
+CLAYS, SILTY CLAYS, LEAN CLAYS
+Soil Log Legend
+ORGANIC CLAYS OF MEDIUM TO HIGH
+PLASTICITY, ORGANIC SILTS
+SC
+Plate
+GM
+FINE-
+GRAINED
+SOILS
+COARSE-
+GRAINED
+SOILS
+CLEAN SANDS
+SANDS WITH
+FINES
+SP
+SANDS
+GRAVELS
+WELL-GRADED GRAVELS,  GRAVEL-SAND
+MIXTURES, LITTLE OR NO FINES
+ML
+CL
+OH
+LESS THAN 5%
+FINES
+GRAVELS WITH
+FINES
+CLEAN
+GRAVELS
+GRAB SAMPLE
+PLASTICITY INDEX (NP=NON-PLASTIC)
+TV
+LEGEND
+WATER LEVEL OBSERVED IN BORING AT TIME OF
+DRILLING
+WATER LEVEL OBSERVED IN BORING AFTER DRILLING
+SM
+MAJOR DIVISIONS
+GP
+MORE THAN 12%
+FINES
+PT
+LESS THAN 5%
+FINES
+UNIFIED SOIL CLASSIFICATION SYSTEM (USCS)
+ORGANIC SILTS AND ORGANIC SILTY
+CLAYS OF LOW PLASTICITY
+SW
+GC
+INORGANIC SILT, MICACEOUS OR
+DIATOMACEOUS FINE SAND OR SILTY
+SOILS
+INORGANIC CLAYS OF HIGH PLASTICITY
+PI
+LL
+TXUU
+UNCONFINED COMPRESSION
+OR UNIAXIAL COMPRESSIVE STRENGTH
+CORE SAMPLE
+SHELBY TUBE SAMPLE
+LIQUID LIMIT (NP=NON-PLASTIC)
+UC
+GEOLABS, INC.
+Geotechnical Engineering
+LOG LEGEND FOR SOIL  7939-00.GPJ  GEOLABS.GDT  8/20/19
+A-0.2
+Medium Sand
+Fine Sand
+#4 to #200 (4.75-mm to 0.075-mm)
+#4 to #10 (4.75-mm to 2-mm)
+> 12 inches (305-mm)
+3-inch to #4 (75-mm to 4.75-mm)
+Sieve Number and / or Size
+Gravel
+#10 to #40 (2-mm to 0.425-mm)
+#40 to #200 (0.425-mm to 0.075-mm)
+3 to 12 inches (75-mm to 305-mm)
+Description
+PP Readings
+(tsf)
+2.0 - 4.0
+> 4.0
+N-Value (Blows/Foot)
+MCS
+0 - 4
+RELATIVE DENSITY / CONSISTENCY
+GRAIN SIZE DEFINITION
+ABBREVIATIONS
+N-Value (Blows/Foot)
+0 - 7
+WOH:  Weight of Hammer
+WOR:  Weight of Drill Rods
+SPT:    Standard Penetration Test Split-Spoon Sampler
+MCS:   Modified California Sampler
+PP:      Pocket Penetrometer
+4 - 7
+7 - 15
+15 - 27
+27 - 55
+SPT
+0 - 2
+> 55
+> 30
+4 - 8
+15 - 30
+MOISTURE CONTENT DEFINITIONS
+SPT
+0 - 4
+4 - 10
+10 - 30
+30 - 50
+> 50
+MCS
+Loose
+EXAMPLE: Soil Containing 60% Gravel, 25% Sand, 15% Fines. Described as: SILTY GRAVEL with some sand
+Plate
+GRANULAR SOIL (- #200 <50%)
+2 - 4
+8 - 15
+Relative
+Density
+Very Loose
+Dense
+Very Dense
+COHESIVE SOIL (- #200    50%)
+PRIMARY constituents are composed of the largest
+percent of the soil mass. Primary constituents are
+capitalized and bold (i.e., GRAVEL, SAND)
+PRIMARY constituents are based on plasticity. Primary
+constituents are capitalized and bold (i.e., CLAY, SILT)
+SECONDARY constituents are composed of a
+percentage less than the primary constituent. If the soil
+mass consists of 12 percent or more fines content, a
+cohesive constituent is used (SILTY or CLAYEY);
+otherwise, a granular constituent is used (GRAVELLY
+or SANDY) provided that the secondary constituent
+consists of 20 percent or more of the soil mass.
+Secondary constituents are capitalized and bold (i.e.,
+SANDY GRAVEL, CLAYEY SAND) and precede the
+primary constituent.
+SECONDARY constituents are composed of a
+percentage less than the primary constituent, but more
+than 20 percent of the soil mass. Secondary constituents
+are capitalized and bold (i.e., SANDY CLAY, SILTY
+CLAY, CLAYEY SILT) and precede the primary
+constituent.
+Sand
+Boulders
+Cobbles
+Coarse Gravel
+3-inch to 3/4-inch (75-mm to 19-mm)
+Fine Gravel
+3/4-inch to #4 (19-mm to 4.75-mm)
+GEOLABS, INC. CLASSIFICATION*
+Granular Soils
+Cohesive Soils
+Consistency
+accessory descriptions compose of the following:
+with some: >12%
+with a little: 5 - 12%
+with traces of: <5%
+accessory descriptions are lower cased and follow the
+Primary and Secondary Constituents
+(i.e., SILTY CLAY with some sand)
+Very Soft
+Soft
+Medium Stiff
+Stiff
+Very Stiff
+Hard
+< 0.5
+0.5 - 1.0
+1.0 - 2.0
+7 - 18
+18 - 55
+55 - 91
+> 91
+Medium Dense
+Coarse Sand
+(with deviations from ASTM D2488)
+Soil Classification Log Key
+*Soil descriptions are based on ASTM D2488-09a, Visual-Manual Procedure, with the
+above modifications by Geolabs, Inc. to the Unified Soil Classification System (USCS).
+accessory descriptions compose of the following:
+with some: >12%
+with a little: 5 - 12%
+with traces of: <5%
+accessory descriptions are lower cased and follow the
+Primary and Secondary Constituents
+(i.e., SILTY GRAVEL with a little sand)
+Dry:    Absence of moisture, dry to the touch
+Moist: Damp but no visible water
+Wet:   Visible free water
+SOIL_CLASS_LOG_KEY  7939-00.GPJ  GEOLABS.GDT  8/20/19
+GEOLABS, INC.
+Geotechnical Engineering
+A-0.3
+ROCK DESCRIPTIONS
+Plate
+BRECCIA
+CLINKER
+COBBLES
+CORAL
+BASALT
+ROCK DESCRIPTION SYSTEM
+Greater than 24 inches apart
+12 to 24 inches apart
+6 to 12 inches apart
+3 to 6 inches apart
+Less than 3 inches apart
+Rock shows no sign of discoloration or loss of strength.
+Slight discoloration inwards from open fractures.
+Discoloration throughout and noticeably weakened though not able to break by hand.
+Most minerals decomposed with some corestones present in residual soil mass. Can be broken by hand.
+Saprolite. Mineral residue completely decomposed to soil but fabric and structure preserved.
+The following terms describe general fracture spacing of a rock:
+The following terms describe the chemical weathering of a rock:
+ROCK FRACTURE CHARACTERISTICS
+DEGREE OF WEATHERING
+HARDNESS
+BOULDERS
+VOID/CAVITY
+TUFF
+SILTSTONE
+LIMESTONE
+Unweathered:
+Slightly Weathered:
+Moderately Weathered:
+Highly Weathered:
+Extremely Weathered:
+Very Hard:
+Hard:
+Medium Hard:
+Soft:
+Very Soft:
+SANDSTONE
+Massive:
+Slightly Fractured:
+Moderately Fractured:
+Closely Fractured:
+Severely Fractured:
+Rock Log Legend
+The following terms describe the resistance of a rock to indentation or scratching:
+Specimen breaks with difficulty after several "pinging" hammer blows.
+Example: Dense, fine grain volcanic rock
+Specimen breaks with some difficulty after several hammer blows.
+Example: Vesicular, vugular, coarse-grained rock
+Specimen can be broked by one hammer blow. Cannot be scraped by knife. SPT may penetrate by
+~25 blows per inch with bounce.
+Example: Porous rock such as clinker, cinder, and coral reef
+Can be indented by one hammer blow. Can be scraped or peeled by knife. SPT can penetrate by
+~100 blows per foot.
+Example: Weathered rock, chalk-like coral reef
+Crumbles under hammer blow. Can be peeled and carved by knife. Can be indented by finger
+pressure.
+Example: Saprolite
+CONGLOMERATE
+GEOLABS, INC.
+Geotechnical Engineering
+LOG LEGEND FOR ROCK  7939-00.GPJ  GEOLABS.GDT  8/20/19
+20
+17
+19
+11
+8
+90
+72
+MH
+MH
+ML
+4.0
+2.5
+24
+15
+25
+8
+20/1"
+LL=52
+PI=22
+Reddish brown CLAYEY SILT, very stiff to hard,
+moist (residual soil)
+Brown with some gray CLAYEY SILT with some
+sand (basaltic) and decomposed gravel, very
+stiff, moist (residual soil)
+Brownish gray SANDY SILT with some
+decomposed gravel, stiff, moist (saprolite)
+Gray vesicular BASALT, moderately fractured,
+moderately weathered, medium hard to hard
+(pahoehoe basalt)
+ Boring terminated at 15.6 feet
+ * Elevations estimated from ©2019
+GOOGLE™EARTH. Imagery date February 18,
+2018.
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-45CY TRACK
+4" Solid Stem Auger
+140 lb. wt., 30 in. drop
+5
+10
+15
+20
+25
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation (feet MSL): 600 *
+Sample
+Moisture
+Content (%)
+1
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+July 6, 2019
+July 6, 2019
+S. Latronic
+15.6 feet
+7939-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 1
+GEOLABS, INC.
+Geotechnical Engineering
+WEST OAHU SOLAR FARM DEVELOPMENT
+KAPOLEI, OAHU, HAWAII
+BORING_LOG  7939-00.GPJ  GEOLABS.GDT  9/5/19
+Not Encountered
+24
+17
+14
+11
+8
+90
+96
+MH
+ML
+4.5
+3.5
+47
+33
+29
+41
+50/2"
+TXUU
+Su=1.4 ksf
+Reddish brown CLAYEY SILT, very stiff to hard,
+moist (residual soil)
+Brownish gray to gray SANDY SILT, very stiff,
+moist (saprolite)
+grades to hard
+Gray vesicular BASALT, moderately fractured,
+slightly to moderately weathered, medium hard
+to hard (pahoehoe basalt)
+ Boring terminated at 15.2 feet
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-45CY TRACK
+4" Solid Stem Auger
+140 lb. wt., 30 in. drop
+5
+10
+15
+20
+25
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation (feet MSL): 597 *
+Sample
+Moisture
+Content (%)
+2
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+July 6, 2019
+July 6, 2019
+S. Latronic
+15.2 feet
+7939-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 2
+GEOLABS, INC.
+Geotechnical Engineering
+WEST OAHU SOLAR FARM DEVELOPMENT
+KAPOLEI, OAHU, HAWAII
+BORING_LOG  7939-00.GPJ  GEOLABS.GDT  9/5/19
+Not Encountered
+19
+21
+14
+18
+13
+99
+79
+CH
+GM
+4.0
+43
+21
+50/5"
+10
+9
+LL=57
+PI=31
+Reddish brown SILTY CLAY, very stiff to hard,
+moist (residual soil)
+grades with decomposed gravel
+Gray vugular BASALT, moderately fractured,
+slightly weathered, hard (a'a basalt)
+Brownish gray subangular SILTY GRAVEL
+(BASALTIC) with some sand, medium dense,
+moist (weathered clinker)
+grades with cobbles (basaltic)
+ Boring terminated at 16.5 feet
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-45CY TRACK
+4" Solid Stem Auger
+140 lb. wt., 30 in. drop
+5
+10
+15
+20
+25
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation (feet MSL): 522 *
+Sample
+Moisture
+Content (%)
+3
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+July 6, 2019
+July 6, 2019
+S. Latronic
+16.5 feet
+7939-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 3
+GEOLABS, INC.
+Geotechnical Engineering
+WEST OAHU SOLAR FARM DEVELOPMENT
+KAPOLEI, OAHU, HAWAII
+BORING_LOG  7939-00.GPJ  GEOLABS.GDT  9/5/19
+Not Encountered
+10
+5
+13
+11
+12
+87
+65
+68
+MH
+ML
+46
+24
+33
+7
+39
+Brown CLAYEY SILT, very stiff, moist (residual
+soil)
+Gray COBBLES (BASALTIC), dense, dry
+(weathered basalt)
+Brownish gray vesicular BASALT, severely
+fractured, moderately to highly weathered, soft to
+medium hard (pahoehoe basalt)
+Brownish gray SANDY SILT with some
+decomposed gravel, medium stiff to stiff, moist
+(saprolite)
+Brownish gray vesicular BASALT, severely
+fractured, moderately to highly weathered, soft to
+medium hard (pahoehoe basalt)
+ Boring terminated at 16.5 feet
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-45CY TRACK
+4" Solid Stem Auger
+140 lb. wt., 30 in. drop
+5
+10
+15
+20
+25
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation (feet MSL): 493 *
+Sample
+Moisture
+Content (%)
+4
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+July 6, 2019
+July 6, 2019
+S. Latronic
+16.5 feet
+7939-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 4
+GEOLABS, INC.
+Geotechnical Engineering
+WEST OAHU SOLAR FARM DEVELOPMENT
+KAPOLEI, OAHU, HAWAII
+BORING_LOG  7939-00.GPJ  GEOLABS.GDT  9/5/19
+Not Encountered
+18
+15
+7
+70
+MH
+SM
+GW
+5
+10/6"
+ +25/1"
+25/1"
+Sieve
+- #200 =
+31.9%
+Brown CLAYEY SILT with some cobbles
+(basaltic), very stiff, moist (fill)
+Brownish gray to gray vugular BASALT,
+moderately fractured, slightly weathered, hard
+(a'a basalt)
+Brownish gray SILTY SAND (BASALTIC) with
+some gravel, loose to medium dense, moist
+(clinker)
+Brownish gray to gray vugular BASALT,
+moderately fractured, slightly weathered, hard
+(a'a basalt)
+Brownish gray SANDY GRAVEL (BASALTIC),
+medium dense, moist (clinker)
+Gray vugular BASALT, moderately fractured,
+slightly weathered, hard to very hard (a'a basalt)
+ Boring terminated at 14 feet
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-45CY TRACK
+4" Solid Stem Auger
+140 lb. wt., 30 in. drop
+5
+10
+15
+20
+25
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation (feet MSL): 439 *
+Sample
+Moisture
+Content (%)
+5
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+June 21, 2019
+June 21, 2019
+S. Latronic
+14 feet
+7939-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 5
+GEOLABS, INC.
+Geotechnical Engineering
+WEST OAHU SOLAR FARM DEVELOPMENT
+KAPOLEI, OAHU, HAWAII
+BORING_LOG  7939-00.GPJ  GEOLABS.GDT  9/5/19
+Not Encountered
+23
+11
+11
+13
+7
+89
+79
+MH
+ML
+GM
+16
+59
+50/3"
+42
+70
+Sieve
+- #200 =
+13.6%
+Reddish brown CLAYEY SILT with a little sand
+(basaltic), stiff, moist (residual soil)
+Dark brown SANDY SILT, stiff, moist (residual
+soil)
+Gray with multi-color mottling SILTY GRAVEL
+(BASALTIC) with some sand, dense, moist
+(saprolite)
+grades with some cobbles
+ Boring terminated at 16.5 feet
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-45C TRACK
+4" Solid Stem Auger
+140 lb. wt., 30 in. drop
+5
+10
+15
+20
+25
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation (feet MSL): 332 *
+Sample
+Moisture
+Content (%)
+6
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+July 12, 2019
+July 12, 2019
+B. Aiu
+16.5 feet
+7939-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 6
+(Energy Transfer Ratio = 74.3%)
+GEOLABS, INC.
+Geotechnical Engineering
+WEST OAHU SOLAR FARM DEVELOPMENT
+KAPOLEI, OAHU, HAWAII
+BORING_LOG  7939-00.GPJ  GEOLABS.GDT  9/5/19
+Not Encountered
+9
+6
+19
+18
+81
+73
+MH
+SM
+14/6"
+ +50/3"
+15/0"
+ Ref.
+25/1"
+25
+55/3"
+Sieve
+- #200 =
+14.7%
+Brown CLAYEY SILT with a little sand, stiff,
+moist (residual soil)
+Gray BOULDERS (BASALTIC), very dense
+Brownish gray with multi-color mottling SILTY
+SAND with some gravel (basaltic), dense,
+moist (saprolite)
+ Boring terminated at 15.8 feet
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-45CY TRACK
+4" Solid Stem Auger
+140 lb. wt., 30 in. drop
+5
+10
+15
+20
+25
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation (feet MSL): 360 *
+Sample
+Moisture
+Content (%)
+7
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+July 12, 2019
+July 12, 2019
+B. Aiu
+15.8 feet
+7939-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 7
+GEOLABS, INC.
+Geotechnical Engineering
+WEST OAHU SOLAR FARM DEVELOPMENT
+KAPOLEI, OAHU, HAWAII
+BORING_LOG  7939-00.GPJ  GEOLABS.GDT  9/5/19
+Not Encountered
+19
+12
+8
+7
+19
+89
+86
+MH
+ML
+GP
+SM
+4.5
+38
+25
+78
+40/4"
+36
+Sieve
+- #200 =
+21.2%
+Reddish brown CLAYEY SILT with a little sand,
+very stiff, dry (residual soil)
+Gray SANDY SILT, very stiff, dry (saprolite)
+grades to hard
+Brownish gray SANDY GRAVEL (BASALTIC)
+with a little silt, very dense, dry (weathered
+basalt)
+Light purplish gray SILTY SAND (BASALTIC)
+with some gravel, medium dense, dry
+(weathered clinker)
+ Boring terminated at 16.5 feet
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-45CY TRACK
+4" Solid Stem Auger
+140 lb. wt., 30 in. drop
+5
+10
+15
+20
+25
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation (feet MSL): 324 *
+Sample
+Moisture
+Content (%)
+8
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+July 13, 2019
+July 13, 2019
+D. Gremminger
+16.5 feet
+7939-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 8
+GEOLABS, INC.
+Geotechnical Engineering
+WEST OAHU SOLAR FARM DEVELOPMENT
+KAPOLEI, OAHU, HAWAII
+BORING_LOG  7939-00.GPJ  GEOLABS.GDT  9/5/19
+Not Encountered
+16
+15
+18
+18
+18
+90
+89
+86
+CL
+34
+9
+69
+98
+45/6"
+ +50/3"
+LL=43
+PI=21
+TXUU
+Su=3.1 ksf
+Reddish brown SANDY CLAY, very stiff to hard,
+moist (residual soil)
+grades with gray mottling locally
+grades with remnant rock structure
+ Boring terminated at 16.3 feet
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-45CY TRACK
+4" Solid Stem Auger
+140 lb. wt., 30 in. drop
+5
+10
+15
+20
+25
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation (feet MSL): 329 *
+Sample
+Moisture
+Content (%)
+9
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+June 21, 2019
+June 21, 2019
+S. Latronic
+16.3 feet
+7939-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 9
+GEOLABS, INC.
+Geotechnical Engineering
+WEST OAHU SOLAR FARM DEVELOPMENT
+KAPOLEI, OAHU, HAWAII
+BORING_LOG  7939-00.GPJ  GEOLABS.GDT  9/5/19
+Not Encountered
+21
+10
+18
+69
+97
+CL
+GP
+2.0
+4.5
+5
+3
+76
+25/2"
+20/0"
+ Ref.
+TXUU
+Su=0.5 ksf
+LL=45
+PI=20
+Reddish brown SANDY CLAY, soft, dry (residual
+soil)
+grades to hard
+Gray SANDY GRAVEL (BASALTIC) with a little
+silt, very dense, dry (weathered basalt)
+ Boring terminated at 15 feet
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-45CY TRACK
+4" Solid Stem Auger
+140 lb. wt., 30 in. drop
+5
+10
+15
+20
+25
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation (feet MSL): 322 *
+Sample
+Moisture
+Content (%)
+10
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+July 13, 2019
+July 13, 2019
+D. Gremminger
+15 feet
+7939-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 10
+GEOLABS, INC.
+Geotechnical Engineering
+WEST OAHU SOLAR FARM DEVELOPMENT
+KAPOLEI, OAHU, HAWAII
+BORING_LOG  7939-00.GPJ  GEOLABS.GDT  9/5/19
+Not Encountered
+18
+17
+21
+91
+97
+CL
+ML
+GP
+4.5
+4.5
+66
+40
+111
+25/1"
+20/0"
+ Ref.
+LL=47
+PI=23
+TXUU
+Su=1.9 ksf
+Reddish brown SANDY CLAY, hard, dry
+(residual soil)
+Brown SANDY SILT with some clay and gravel,
+hard, dry (saprolite)
+Gray SANDY GRAVEL, very dense, dry
+(weathered basalt)
+ Boring terminated at 15 feet
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-45CY TRACK
+4" Solid Stem Auger
+140 lb. wt., 30 in. drop
+5
+10
+15
+20
+25
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation (feet MSL): 338 *
+Sample
+Moisture
+Content (%)
+11
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+July 13, 2019
+July 13, 2019
+D. Gremminger
+15 feet
+7939-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 11
+GEOLABS, INC.
+Geotechnical Engineering
+WEST OAHU SOLAR FARM DEVELOPMENT
+KAPOLEI, OAHU, HAWAII
+BORING_LOG  7939-00.GPJ  GEOLABS.GDT  9/5/19
+Not Encountered
+23
+16
+11
+71
+83
+MH
+SM
+GP
+4.5
+43
+32
+59
+35/2"
+20/0"
+ Ref.
+Reddish brown CLAYEY SILT with some sand,
+stiff, dry (residual soil)
+Brownish gray SILTY SAND with some clay and
+gravel, very dense, dry (saprolite)
+Light gray SANDY GRAVEL (BASALTIC) with
+some silt, very dense, dry (weathered basalt)
+ Boring terminated at 15 feet
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-45CY TRACK
+4" Solid Stem Auger
+140 lb. wt., 30 in. drop
+5
+10
+15
+20
+25
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation (feet MSL): 312 *
+Sample
+Moisture
+Content (%)
+12
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+July 13, 2019
+July 13, 2019
+D. Gremminger
+15 feet
+7939-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 12
+GEOLABS, INC.
+Geotechnical Engineering
+WEST OAHU SOLAR FARM DEVELOPMENT
+KAPOLEI, OAHU, HAWAII
+BORING_LOG  7939-00.GPJ  GEOLABS.GDT  9/5/19
+Not Encountered
+17
+16
+16
+19
+24
+94
+102
+98
+MH
+50
+52
+46/6"
+ +50/4"
+44
+50/4"
+TXUU
+Su=0.9 ksf
+Reddish brown CLAYEY SILT, very stiff to hard,
+moist (residual soil)
+grades to purplish brown
+ Boring terminated at 15.8 feet
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-45CY TRACK
+4" Solid Stem Auger
+140 lb. wt., 30 in. drop
+5
+10
+15
+20
+25
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation (feet MSL): 388 *
+Sample
+Moisture
+Content (%)
+13
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+June 21, 2019
+June 21, 2019
+S. Latronic
+15.8 feet
+7939-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 13
+GEOLABS, INC.
+Geotechnical Engineering
+WEST OAHU SOLAR FARM DEVELOPMENT
+KAPOLEI, OAHU, HAWAII
+BORING_LOG  7939-00.GPJ  GEOLABS.GDT  9/5/19
+Not Encountered
+22
+20
+24
+90
+81
+MH
+SM
+49
+33
+97
+10/0"
+ Ref.
+10/0"
+ Ref.
+Reddish brown CLAYEY SILT with a little sand
+(basaltic), very stiff, moist (residual soil)
+Gray with multi-color mottling SILTY SAND
+(BASALTIC) with some gravel, very dense,
+moist (saprolite)
+Gray WEATHERED BASALT, moderately
+weathered, hard (basalt formation)
+ Boring terminated at 15 feet
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-45C TRACK
+4" Solid Stem Auger
+140 lb. wt., 30 in. drop
+5
+10
+15
+20
+25
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation (feet MSL): 323 *
+Sample
+Moisture
+Content (%)
+14
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+July 12, 2019
+July 12, 2019
+B. Aiu
+15 feet
+7939-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 14
+(Energy Transfer Ratio = 74.3%)
+GEOLABS, INC.
+Geotechnical Engineering
+WEST OAHU SOLAR FARM DEVELOPMENT
+KAPOLEI, OAHU, HAWAII
+BORING_LOG  7939-00.GPJ  GEOLABS.GDT  9/5/19
+Not Encountered
+MH
+Reddish brown CLAYEY SILT (residual soil)
+ Boring terminated at 5 feet
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-45C TRUCK
+4" Solid Stem Auger
+140 lb. wt., 30 in. drop
+5
+10
+15
+20
+25
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation (feet MSL): 597 *
+Sample
+Moisture
+Content (%)
+I-1
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+July 17, 2019
+July 17, 2019
+B. Aiu
+5 feet
+7939-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 15
+(Energy Transfer Ratio = 78%)
+GEOLABS, INC.
+Geotechnical Engineering
+WEST OAHU SOLAR FARM DEVELOPMENT
+KAPOLEI, OAHU, HAWAII
+BORING_LOG  7939-00.GPJ  GEOLABS.GDT  9/5/19
+Not Encountered
+MH
+ML
+Reddish brown CLAYEY SILT with a little sand
+(residual soil)
+Gray SANDY SILT with a little gravel (saprolite)
+ Boring terminated at 5 feet
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-45C TRUCK
+4" Solid Stem Auger
+140 lb. wt., 30 in. drop
+5
+10
+15
+20
+25
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation (feet MSL): 324 *
+Sample
+Moisture
+Content (%)
+I-2
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+July 17, 2019
+July 17, 2019
+B. Aiu
+5 feet
+7939-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 16
+(Energy Transfer Ratio = 78%)
+GEOLABS, INC.
+Geotechnical Engineering
+WEST OAHU SOLAR FARM DEVELOPMENT
+KAPOLEI, OAHU, HAWAII
+BORING_LOG  7939-00.GPJ  GEOLABS.GDT  9/5/19
+Not Encountered
+MH
+ML
+Reddish brown CLAYEY SILT with a little sand
+(residual soil)
+Gray SANDY SILT with a little gravel (saprolite)
+ Boring terminated at 5 feet
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-45C TRUCK
+4" Solid Stem Auger
+140 lb. wt., 30 in. drop
+5
+10
+15
+20
+25
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation (feet MSL): 338 *
+Sample
+Moisture
+Content (%)
+I-3
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+July 17, 2019
+July 17, 2019
+B. Aiu
+5 feet
+7939-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 17
+(Energy Transfer Ratio = 78%)
+GEOLABS, INC.
+Geotechnical Engineering
+WEST OAHU SOLAR FARM DEVELOPMENT
+KAPOLEI, OAHU, HAWAII
+BORING_LOG  7939-00.GPJ  GEOLABS.GDT  9/5/19
+Not Encountered
+APPENDIX B  
+W.O. 7939-00 
+GEOLABS, INC. 
+NOVEMBER 2019     Page B-1 
+Hawaii • California 
+A P P E N D I X   B 
+Laboratory Tests 
+Moisture Content (ASTM D2216) and Unit Weight (ASTM D2937) determinations 
+were performed on selected samples as an aid in the classification and evaluation of 
+soil properties. The test results are presented on the Logs of Borings at the appropriate 
+sample depths. 
+Four Sieve Analysis tests (ASTM C117 & C136) were performed on selected soil 
+samples to evaluate the gradation characteristics of the soil and to aid in soil 
+classification. Graphic presentation of the grain size distribution is provided on 
+Plate B-1. 
+Five Atterberg Limits tests (ASTM D4318) were performed on selected soil 
+samples to evaluate the liquid and plastic limits. The test results are summarized on the 
+Logs of Borings at the appropriate sample depths. Graphic presentation of the test 
+results are provided on Plate B-2. 
+Eight one-inch Ring Swell tests were performed on relatively undisturbed and/or 
+remolded samples to evaluate the swelling potential of the near-surface soils.  The test 
+results are summarized on Plate B-3. 
+Five 
+Unconsolidated 
+Undrained 
+Triaxial 
+Compression 
+(TXUU) 
+tests 
+(ASTM D2850) were performed on selected soil samples to evaluate the undrained 
+shear strength of the clayey and silty soils encountered.  The approximate in-situ 
+effective overburden pressure was used as the applied confining pressure for the 
+relatively “undisturbed” soil sample.  The test results and the stress-strain curves are 
+presented on Plates B-4 through B-8. 
+Three sets of Corrosivity tests, including pH Value (ASTM G51), Minimum 
+Resistivity (ASTM G57), Chloride Content (EPA 300.0) and Sulfate Content 
+(EPA 300.0), were performed on selected soil samples obtained from our field 
+exploration. Two Oxidation Reduction (Redox) potential tests (SM 2580B) were 
+performed on bulk samples of the near-surface soil samples obtained from our field 
+exploration.  The test results are summarized on Plate B-9. 
+Four Modified Proctor compaction tests (ASTM D1557) were performed on bulk 
+samples of the near-surface soils to evaluate the relationship between the moisture 
+content and the dry density of the near-surface soils as fill materials.  The test results 
+are presented on Plates B-10 through B-13. 
+Four laboratory California Bearing Ratio tests (ASTM D1883) were performed on 
+bulk samples of the near-surface soils to evaluate the pavement support characteristics 
+of the soils.  The test results are presented on Plates B-14 through B-17. 
+Appendix B 
+Laboratory Tests 
+W.O. 7939-00 
+GEOLABS, INC. 
+NOVEMBER 2019     Page B-2 
+Hawaii • California 
+Two laboratory Resistance Value (R-value) tests (ASTM D2844) were performed 
+on bulk samples of the near-surface soils to evaluate the pavement support 
+characteristics of the soils.  The test results are presented on Plates B-18 and B-19. 
+0
+5
+10
+15
+20
+25
+30
+35
+40
+45
+50
+55
+60
+65
+70
+75
+80
+85
+90
+95
+100
+0.001
+0.01
+0.1
+1
+10
+100
+1.925
+6.306
+4.222
+3.074
+B - 1
+coarse
+1
+1.5
+3
+2
+40
+Depth (ft)
+%Gravel
+28.4
+45.7
+37.9
+32.8
+39.7
+40.7
+47.4
+46.0
+%Sand
+COBBLES
+Sample
+D30 (mm)
+140
+20
+HYDROMETER
+3
+GRAIN SIZE IN MILLIMETERS
+PERCENT FINER BY WEIGHT
+100
+coarse
+1/2
+Sample
+0.856
+0.585
+0.255
+Cu
+GRAVEL
+U.S. SIEVE NUMBERS
+D10 (mm)
+16
+fine
+25
+37.5
+25
+37.5
+Cc
+3/4
+fine
+SILT OR CLAY
+medium
+GRAIN SIZE DISTRIBUTION - ASTM C117 & C136
+SAND
+%Fine
+60
+4
+30
+200
+4
+6
+31.9
+13.6
+14.7
+21.2
+Depth (ft)
+LL
+Brownish gray silty sand (SM) with some gravel
+Gray with multi-color mottling silty gravel (GM) with some sand
+Brownish gray w/ multi-color mott. silty sand (SM) w/ some gravel
+Light purplish gray silty sand (SM) with some gravel
+810 14
+50
+U.S. SIEVE OPENING IN INCHES
+6
+D60 (mm)
+D100 (mm)
+B-5
+B-6
+B-7
+B-8
+3.5-5.0
+10.0-11.5
+10.0-11.5
+15.0-16.5
+3.5-5.0
+10.0-11.5
+10.0-11.5
+15.0-16.5
+B-5
+B-6
+B-7
+B-8
+3/8
+PL PI
+Description
+Plate
+W.O. 7939-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+WEST OAHU SOLAR FARM DEVELOPMENT
+KAPOLEI, OAHU, HAWAII
+G_GRAIN_SIZE_MOD  7939-00.GPJ  GEOLABS.GDT  9/5/19
+0
+10
+20
+30
+40
+50
+60
+70
+80
+90
+100
+0
+20
+40
+60
+80
+100
+120
+ML or OL
+CL-ML
+CL or OL
+CH or OH
+B - 2
+MH or OH
+LIQUID LIMIT
+PLASTICITY INDEX
+ATTERBERG LIMITS TEST RESULTS - ASTM D4318
+PI
+Depth (ft)
+Sample
+LL
+PL
+Description
+B-1
+B-3
+B-9
+B-10
+B-11
+5.0-6.5
+1.0-2.5
+3.0-5.0
+2.5-4.0
+2.5-4.0
+52
+57
+43
+45
+47
+30
+26
+22
+25
+24
+22
+31
+21
+20
+23
+Brown with some gray clayey silt (MH) with a little sand
+Reddish brown silty clay (CH)
+Reddish brown sandy clay (CL)
+Reddish brown sandy clay (CL)
+Reddish brown sandy clay (CL)
+NP = NON-PLASTIC
+4
+7
+Plate
+W.O. 7939-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+WEST OAHU SOLAR FARM DEVELOPMENT
+KAPOLEI, OAHU, HAWAII
+G_ATTERBERG_PI-100_LL-120  7939-00.GPJ  GEOLABS.GDT  9/5/19
+B-1
+1.0 - 2.5
+Reddish brown clayey silt
+96.5
+22.1
+17.4
+30.9
+2.0
+B-3
+1.0 - 2.5
+Reddish brown silty clay (CH)
+94.1
+20.2
+16.4
+33.5
+2.5
+B-6
+1.0 - 2.5
+Reddish brown clayey silt with a little sand
+100.1
+24.8
+20.9
+28.1
+3.4
+B-8
+1.0 - 2.5
+Reddish brown clayey silt with a little sand
+98.7
+23.3
+18.4
+31.6
+5.7
+B-9
+1.0 - 2.5
+Reddish brown sandy clay
+82.8
+17.3
+13.7
+42.2
+1.1
+B-10
+1.0 - 2.5
+Reddish brown sandy clay
+77.6
+21.8
+17.4
+41.8
+0.0
+B-11
+1.0 - 2.5
+Reddish brown sandy clay
+82.1
+19.3
+16.3
+39.2
+0.3
+B-14
+1.0 - 2.5
+Reddish brown clayey silt with a little sand
+83.2
+22.5
+19.1
+40.6
+2.1
+Moisture Contents
+Location
+SUMMARY OF RING SWELL TESTS
+B - 3
+NOTE:
+Relatively Undisturbed
+Remolded
+Samples tested were either relatively undisturbed or remolded in 2.4-inch diameter by 1-inch high rings.
+They were air-dried overnight and then saturated for 24 hours under a surcharge pressure of 55 psf.
+Depth
+(feet)
+Soil Description
+(%)
+Initial
+Air-Dried
+Final
+Ring
+Swell
+(pcf)
+(%)
+(%)
+(%)
+Dry
+Density
+Plate
+W.O. 7939-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+WEST OAHU SOLAR FARM DEVELOPMENT
+KAPOLEI, OAHU, HAWAII
+G_RING_SWELL_TEST  7939-00.GPJ  GEOLABS.GDT  9/5/19
+0
+0.5
+1.0
+1.5
+2.0
+2.5
+3.0
+3.5
+0
+4
+8
+12
+16
+20
+Location:
+Sample Diameter (inches)
+Sample Height (inches)
+DEVIATOR STRESS, ksf
+Max. Deviator Stress (ksf):
+Confining Stress (ksf):
+AXIAL STRAIN, %
+0.2
+2.9
+Dry Density (pcf)
+Moisture (%)
+Axial Strain at Failure (%)
+Strain Rate (% / minute)
+23.9
+89.8
+15.0
+Reddish brown clayey silt
+1.0 - 2.5 feet
+Description:
+Depth:
+B-2
+TRIAXIAL UU COMPRESSION TEST - ASTM D2850
+Test Date:
+5.167
+2.403
+1.00
+B - 4
+7/24/2019
+Plate
+W.O. 7939-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+WEST OAHU SOLAR FARM DEVELOPMENT
+KAPOLEI, OAHU, HAWAII
+G_TXUU  7939-00.GPJ  GEOLABS.GDT  9/5/19
+0
+0.5
+1.0
+1.5
+2.0
+2.5
+3.0
+3.5
+4.0
+4.5
+5.0
+5.5
+6.0
+6.5
+0
+2
+4
+6
+8
+10
+Location:
+Sample Diameter (inches)
+Sample Height (inches)
+DEVIATOR STRESS, ksf
+Max. Deviator Stress (ksf):
+Confining Stress (ksf):
+AXIAL STRAIN, %
+0.5
+6.2
+Dry Density (pcf)
+Moisture (%)
+Axial Strain at Failure (%)
+Strain Rate (% / minute)
+18.0
+88.5
+2.7
+Reddish brown sandy clay
+5.0 - 6.5 feet
+Description:
+Depth:
+B-9
+TRIAXIAL UU COMPRESSION TEST - ASTM D2850
+Test Date:
+5.133
+2.413
+0.99
+B - 5
+7/26/2019
+Plate
+W.O. 7939-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+WEST OAHU SOLAR FARM DEVELOPMENT
+KAPOLEI, OAHU, HAWAII
+G_TXUU  7939-00.GPJ  GEOLABS.GDT  9/5/19
+0
+0.1
+0.2
+0.3
+0.4
+0.5
+0.6
+0.7
+0.8
+0.9
+1.0
+0
+4
+8
+12
+16
+20
+Location:
+Sample Diameter (inches)
+Sample Height (inches)
+DEVIATOR STRESS, ksf
+Max. Deviator Stress (ksf):
+Confining Stress (ksf):
+AXIAL STRAIN, %
+0.2
+0.9
+Dry Density (pcf)
+Moisture (%)
+Axial Strain at Failure (%)
+Strain Rate (% / minute)
+22.0
+75.0
+12.7
+Reddish brown sandy clay
+1.0 - 2.5 feet
+Description:
+Depth:
+B-10
+TRIAXIAL UU COMPRESSION TEST - ASTM D2850
+Test Date:
+5.133
+2.397
+1.00
+B - 6
+7/25/2019
+Plate
+W.O. 7939-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+WEST OAHU SOLAR FARM DEVELOPMENT
+KAPOLEI, OAHU, HAWAII
+G_TXUU  7939-00.GPJ  GEOLABS.GDT  9/5/19
+0
+0.5
+1.0
+1.5
+2.0
+2.5
+3.0
+3.5
+4.0
+0
+4
+8
+12
+16
+20
+Location:
+Sample Diameter (inches)
+Sample Height (inches)
+DEVIATOR STRESS, ksf
+Max. Deviator Stress (ksf):
+Confining Stress (ksf):
+AXIAL STRAIN, %
+0.5
+3.8
+Dry Density (pcf)
+Moisture (%)
+Axial Strain at Failure (%)
+Strain Rate (% / minute)
+21.1
+97.5
+15.0
+Brown sandy silt with some clay and gravel
+5.0 - 6.5 feet
+Description:
+Depth:
+B-11
+TRIAXIAL UU COMPRESSION TEST - ASTM D2850
+Test Date:
+5.133
+2.397
+1.01
+B - 7
+7/26/2019
+Plate
+W.O. 7939-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+WEST OAHU SOLAR FARM DEVELOPMENT
+KAPOLEI, OAHU, HAWAII
+G_TXUU  7939-00.GPJ  GEOLABS.GDT  9/5/19
+0
+0.2
+0.4
+0.6
+0.8
+1.0
+1.2
+1.4
+1.6
+1.8
+2.0
+0
+4
+8
+12
+16
+20
+Location:
+Sample Diameter (inches)
+Sample Height (inches)
+DEVIATOR STRESS, ksf
+Max. Deviator Stress (ksf):
+Confining Stress (ksf):
+AXIAL STRAIN, %
+0.2
+1.7
+Dry Density (pcf)
+Moisture (%)
+Axial Strain at Failure (%)
+Strain Rate (% / minute)
+16.8
+93.6
+5.0
+Reddish brown clayey silt
+1.0 - 2.5 feet
+Description:
+Depth:
+B-13
+TRIAXIAL UU COMPRESSION TEST - ASTM D2850
+Test Date:
+5.067
+2.400
+1.00
+B - 8
+7/25/2019
+Plate
+W.O. 7939-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+WEST OAHU SOLAR FARM DEVELOPMENT
+KAPOLEI, OAHU, HAWAII
+G_TXUU  7939-00.GPJ  GEOLABS.GDT  9/5/19
+B-2
+2.5 - 4.0
+7.24*
+2900*
+24
+66
+B-9
+1.0 - 2.5
+7.54*
+2800*
+16
+28
+B-12
+5.0 - 6.5
+7.39*
+1000*
+98
+58
+BULK-3
+0.0 - 1.0
+-
+-
+-
+-
+BULK-4
+0.0 - 1.0
+-
+-
+-
+-
+SUMMARY OF CORROSIVITY TESTS
+B - 9
+SM 2510B
+Minimum Resistivity
+pH Value
+EPA 300.0
+Minimum Resistivity
+ASTM G57
+pH Value
+Method 9045C
+ASTM G51
+TEST METHODS (by TestAmerica Laboratories, Inc.)
+TEST METHODS (by Geolabs, Inc.)*
+ND: Not Detected Within Reporting Limits
+Sulfate Content
+EPA 300.0
+Sulfate Content
+N/A
+Chloride Content
+Chloride Content
+N/A
+Plate
+W.O. 7939-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+WEST OAHU SOLAR FARM DEVELOPMENT
+KAPOLEI, OAHU, HAWAII
+G_SUMMARY_OF_CORROSIVITY_TESTS  7939-00.GPJ  GEOLABS.GDT  9/5/19
+Redox Potential
+SM 2580B
+(ohm-cm)
+(mg/kg)
+(mg/kg)
+pH Value
+Minimum Resistivity
+Chloride Content
+Sulfate Content
+Location
+Depth
+(feet)
+-
+-
+-
+460
+460
+(millivolts)
+Redox Potential
+75
+80
+85
+90
+95
+100
+105
+110
+115
+120
+125
+130
+135
+0
+10
+20
+30
+40
+105.0
+22.5
+DRY DENSITY, pcf
+Optimum Moisture Content:
+Sample:
+Depth:
+TEST RESULTS
+MOISTURE CONTENT, %
+Description:
+pcf
+Maximum Dry Density:
+Reddish brown clayey silt with a little organic
+matter
+B - 10
+3.20
+3.10
+3.00
+2.90
+2.80
+2.70
+2.60
+0.0 - 1.0 feet
+BULK-1
+MOISTURE-DENSITY RELATIONSHIP - ASTM D1557 A
+Test Date:
+July 19, 2019
+Plate
+W.O. 7939-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+WEST OAHU SOLAR FARM DEVELOPMENT
+KAPOLEI, OAHU, HAWAII
+G_COMPACTION  7939-00.GPJ  GEOLABS.GDT  9/5/19
+75
+80
+85
+90
+95
+100
+105
+110
+115
+120
+125
+130
+135
+0
+10
+20
+30
+40
+109.0
+21.0
+DRY DENSITY, pcf
+Optimum Moisture Content:
+Sample:
+Depth:
+TEST RESULTS
+MOISTURE CONTENT, %
+Description:
+pcf
+Maximum Dry Density:
+Reddish brown silty clay with a little organic
+matter
+B - 11
+3.20
+3.10
+3.00
+2.90
+2.80
+2.70
+2.60
+0.0 - 1.0 feet
+BULK-2
+MOISTURE-DENSITY RELATIONSHIP - ASTM D1557 A
+Test Date:
+July 18, 2019
+Plate
+W.O. 7939-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+WEST OAHU SOLAR FARM DEVELOPMENT
+KAPOLEI, OAHU, HAWAII
+G_COMPACTION  7939-00.GPJ  GEOLABS.GDT  9/5/19
+75
+80
+85
+90
+95
+100
+105
+110
+115
+120
+125
+130
+135
+0
+10
+20
+30
+40
+108.0
+21.5
+DRY DENSITY, pcf
+Optimum Moisture Content:
+Sample:
+Depth:
+TEST RESULTS
+MOISTURE CONTENT, %
+Description:
+pcf
+Maximum Dry Density:
+Brown clayey silt
+B - 12
+3.20
+3.10
+3.00
+2.90
+2.80
+2.70
+2.60
+0.0 - 1.0 feet
+BULK-3
+MOISTURE-DENSITY RELATIONSHIP - ASTM D1557 A
+Test Date:
+July 17, 2019
+Plate
+W.O. 7939-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+WEST OAHU SOLAR FARM DEVELOPMENT
+KAPOLEI, OAHU, HAWAII
+G_COMPACTION  7939-00.GPJ  GEOLABS.GDT  9/5/19
+75
+80
+85
+90
+95
+100
+105
+110
+115
+120
+125
+130
+135
+0
+10
+20
+30
+40
+105.0
+23.0
+DRY DENSITY, pcf
+Optimum Moisture Content:
+Sample:
+Depth:
+TEST RESULTS
+MOISTURE CONTENT, %
+Description:
+pcf
+Maximum Dry Density:
+Reddish brown silty clay with little organic
+matter (rootlets)
+B - 13
+3.20
+3.10
+3.00
+2.90
+2.80
+2.70
+2.60
+0.0 - 1.0 feet
+BULK-4
+MOISTURE-DENSITY RELATIONSHIP - ASTM D1557 A
+Test Date:
+July 17, 2019
+Plate
+W.O. 7939-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+WEST OAHU SOLAR FARM DEVELOPMENT
+KAPOLEI, OAHU, HAWAII
+G_COMPACTION  7939-00.GPJ  GEOLABS.GDT  9/5/19
+0
+50
+100
+150
+200
+250
+300
+350
+400
+450
+500
+550
+0
+0.10
+0.20
+0.30
+0.40
+0.50
+0.60
+Sample:
+Corr. CBR @ 0.1"
+Depth:
+Corr. CBR @ 0.2"
+No. of Layers
+CALIFORNIA BEARING RATIO - ASTM D1883
+Description:
+Days Soaked
+7
+BULK-1
+Swell (%)
+0.68
+17.8
+11.0
+Molding Dry Density (pcf)
+STRESS, psi
+0.0 - 1.0 feet
+No. of Blows
+23.4
+106.4
+Molding Moisture (%)
+Hammer Wt. (lbs)
+Hammer Drop (inches)
+PENETRATION, inches
+Reddish brown clayey silt with a little organic
+matter
+18
+56
+10
+5
+Aggregate
+B - 14
+3/4 inch minus
+Plate
+W.O. 7939-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+WEST OAHU SOLAR FARM DEVELOPMENT
+KAPOLEI, OAHU, HAWAII
+G_CBR  7939-00.GPJ  GEOLABS.GDT  9/5/19
+0
+50
+100
+150
+200
+250
+300
+350
+400
+450
+500
+550
+0
+0.10
+0.20
+0.30
+0.40
+0.50
+0.60
+Sample:
+Corr. CBR @ 0.1"
+Depth:
+Corr. CBR @ 0.2"
+No. of Layers
+CALIFORNIA BEARING RATIO - ASTM D1883
+Description:
+Days Soaked
+5
+BULK-2
+Swell (%)
+1.48
+13.1
+14.8
+Molding Dry Density (pcf)
+STRESS, psi
+0.0 - 1.0 feet
+No. of Blows
+20.4
+111.1
+Molding Moisture (%)
+Hammer Wt. (lbs)
+Hammer Drop (inches)
+PENETRATION, inches
+Reddish brown silty clay with a little organic matter
+18
+56
+10
+5
+Aggregate
+B - 15
+3/4 inch minus
+Plate
+W.O. 7939-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+WEST OAHU SOLAR FARM DEVELOPMENT
+KAPOLEI, OAHU, HAWAII
+G_CBR  7939-00.GPJ  GEOLABS.GDT  9/5/19
+0
+50
+100
+150
+200
+250
+300
+350
+400
+450
+500
+550
+0
+0.10
+0.20
+0.30
+0.40
+0.50
+0.60
+Sample:
+Corr. CBR @ 0.1"
+Depth:
+Corr. CBR @ 0.2"
+No. of Layers
+CALIFORNIA BEARING RATIO - ASTM D1883
+Description:
+Days Soaked
+5
+BULK-3
+Swell (%)
+0.74
+19.7
+20.8
+Molding Dry Density (pcf)
+STRESS, psi
+0.0 - 1.0 feet
+No. of Blows
+22.8
+110.6
+Molding Moisture (%)
+Hammer Wt. (lbs)
+Hammer Drop (inches)
+PENETRATION, inches
+Brown clayey silt
+18
+56
+10
+5
+Aggregate
+B - 16
+3/4 inch minus
+Plate
+W.O. 7939-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+WEST OAHU SOLAR FARM DEVELOPMENT
+KAPOLEI, OAHU, HAWAII
+G_CBR  7939-00.GPJ  GEOLABS.GDT  9/5/19
+0
+50
+100
+150
+200
+250
+300
+350
+400
+450
+500
+550
+0
+0.10
+0.20
+0.30
+0.40
+0.50
+0.60
+Sample:
+Corr. CBR @ 0.1"
+Depth:
+Corr. CBR @ 0.2"
+No. of Layers
+CALIFORNIA BEARING RATIO - ASTM D1883
+Description:
+Days Soaked
+5
+BULK-4
+Swell (%)
+1.55
+12.8
+15.0
+Molding Dry Density (pcf)
+STRESS, psi
+0.0 - 1.0 feet
+No. of Blows
+22.6
+106.3
+Molding Moisture (%)
+Hammer Wt. (lbs)
+Hammer Drop (inches)
+PENETRATION, inches
+Reddish brown silty clay with little organic matter
+(rootlets)
+18
+56
+10
+5
+Aggregate
+B - 17
+3/4 inch minus
+Plate
+W.O. 7939-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+WEST OAHU SOLAR FARM DEVELOPMENT
+KAPOLEI, OAHU, HAWAII
+G_CBR  7939-00.GPJ  GEOLABS.GDT  9/5/19
+TEST SPECIMEN
+a
+b
+c
+MOISTURE AT COMPACTION, %
+28.4
+28.9
+29.4
+HEIGHT OF SAMPLE, inches
+2.44
+2.46
+2.56
+DRY DENSITY, pcf
+108.7
+102.1
+101.8
+COMPACTOR AIR PRESSURE, psi
+50
+50
+50
+EXUDATION PRESSURE, psi
+337
+297
+268
+EXPANSION, inches x 10exp-4
+0
+0
+0
+STABILITY Ph 2,000 lbs (160 psi)
+64
+70
+76
+TURNS DISPLACEMENT
+4.39
+4.38
+4.44
+R-VALUE UNCORRECTED
+46
+42
+38
+R-VALUE CORRECTED
+46
+42
+38
+DESIGN CALCULATION DATA
+a
+b
+c
+0.86
+0.93
+0.99
+TRAFFIC INDEX
+STABILOMETER THICKNESS, ft.
+0.50
+0.54
+0.58
+EXPANSION PRESSURE THICKNESS, ft.
+0.00
+0.00
+0.00
+R-VALUE BY EXPANSION:
+NOT APPLICABLE
+R-VALUE BY EXUDATION:
+42
+BULK #3
+7939-00
+42
+PERFORMED IN GENERAL ACCORDANCE WITH ASTM D 2844/CT 301
+                             EXPANSION PRESSURE CHART
+                                           EXUDATION PRESSURE CHART
+GRAVEL EQUIVALENT NEEDED, ft.
+Description
+Sandy SILT
+Sample Location
+Job No.
+Equilibrium
+R-Value
+5.0
+0.00
+0.50
+1.00
+1.50
+2.00
+2.50
+3.00
+3.50
+4.00
+0.00
+0.50
+1.00
+1.50
+2.00
+2.50
+3.00
+3.50
+4.00
+COVER THICKNESS BY STABILOMETER in feet
+COVER THICKNESS BY EXPANSION in feet
+0
+10
+20
+30
+40
+50
+60
+70
+80
+90
+0
+100
+200
+300
+400
+500
+600
+700
+800
+R-VALUE
+EXUDATION PRESSURE (psi)
+R-VALUE TEST RESULTS
+WEST OAHU SOLAR FARM
+GEOLABS, INC.
+108026001  9/19
+101672
+W.O. 7939-00
+PLATE B-18
+TEST SPECIMEN
+a
+b
+c
+MOISTURE AT COMPACTION, %
+29.6
+30.1
+30.6
+HEIGHT OF SAMPLE, inches
+2.54
+2.54
+2.56
+DRY DENSITY, pcf
+102.6
+100.2
+100.4
+COMPACTOR AIR PRESSURE, psi
+50
+50
+50
+EXUDATION PRESSURE, psi
+342
+306
+270
+EXPANSION, inches x 10exp-4
+0
+0
+0
+STABILITY Ph 2,000 lbs (160 psi)
+66
+71
+78
+TURNS DISPLACEMENT
+4.51
+4.56
+4.59
+R-VALUE UNCORRECTED
+44
+41
+36
+R-VALUE CORRECTED
+44
+41
+36
+DESIGN CALCULATION DATA
+a
+b
+c
+0.90
+0.94
+1.02
+TRAFFIC INDEX
+STABILOMETER THICKNESS, ft.
+0.52
+0.55
+0.60
+EXPANSION PRESSURE THICKNESS, ft.
+0.00
+0.00
+0.00
+R-VALUE BY EXPANSION:
+NOT APPLICABLE
+R-VALUE BY EXUDATION:
+40
+BULK #4
+7939-00
+40
+PERFORMED IN GENERAL ACCORDANCE WITH ASTM D 2844/CT 301
+5.0
+Description
+Sandy SILT
+Sample Location
+Job No.
+Equilibrium
+R-Value
+                             EXPANSION PRESSURE CHART
+                                           EXUDATION PRESSURE CHART
+GRAVEL EQUIVALENT NEEDED, ft.
+0.00
+0.50
+1.00
+1.50
+2.00
+2.50
+3.00
+3.50
+4.00
+0.00
+0.50
+1.00
+1.50
+2.00
+2.50
+3.00
+3.50
+4.00
+COVER THICKNESS BY STABILOMETER in feet
+COVER THICKNESS BY EXPANSION in feet
+0
+10
+20
+30
+40
+50
+60
+70
+80
+90
+0
+100
+200
+300
+400
+500
+600
+700
+800
+R-VALUE
+EXUDATION PRESSURE (psi)
+R-VALUE TEST RESULTS
+WEST OAHU SOLAR FARM
+GEOLABS, INC.
+108026001  9/19
+100673
+W.O. 7939-00
+  PLATE B-19
+APPENDIX C  
+W.O. 7939-00 
+GEOLABS, INC. 
+NOVEMBER 2019     Page C-1 
+Hawaii • California 
+A P P E N D I X   C 
+Field Infiltration Tests 
+Three field infiltration tests were conducted at the site to evaluate the infiltration 
+characteristics of the subsurface materials encountered. The infiltration tests were 
+performed at locations designated as I-1 through I-3 as shown on the Site Plan, Plate 2. 
+These tests were performed in general accordance with the procedures in Appendix D 
+of the State of Maryland, Department of the Environment “Stormwater Design Manual, 
+Volumes I and II” (rev. 2009). These procedures are consistent with other state’s 
+procedures and may generally be considered an industry standard. 
+The field infiltration tests were performed by drilling boreholes utilizing 4-inch 
+solid-stem auger to a depth of about 5 feet below the existing ground surface. Upon 
+reaching the test depth, a solid PVC casing was set to the bottom of the drilled hole to 
+allow infiltration only through the soil exposed on the bottom of the boring. Falling head 
+infiltration tests were performed to determine the infiltration rate of the underlying 
+subsurface materials. Each test consisted of four trials of filling the casing with 
+24 inches of water and taking periodic readings over a one-hour trial period. The test 
+results are presented on Plates C-1 through C-3. 
+Project:
+W.O.:
+Test No.:
+Date of Testing:
+Method of Testing:
+BMP Falling Head
+(Flush Bottom)
+Source of Water:
+Water Truck
+GW level, b (from ground):
+N/A
+feet
+Datum, a (above ground):
+0.0
+feet
+Depth of Boring:
+5.0
+feet
+Length, L (from datum):
+5.0
+feet
+Diameter of Casing, d (I.D.):
+4.0
+inches
+Elapsed Time
+Time
+(minutes)
+(hh:mm)
+Trial 1
+0
+15
+30
+45
+60
+Trial 2
+0
+15
+30
+45
+60
+Trial 3
+0
+15
+30
+45
+60
+Trial 4
+0
+15
+30
+45
+60
+Testing 
+Trial
+Depth to Water              
+(measured from datum)
+Percolation Rate
+(inches)
+(inches per hour)
+36.00
+INFILTRATION TEST RECORD
+West Oahu Solar Farm
+Development
+7939-00
+I-1
+7/19/2019
+42.00
+6.00
+37.50
+39.50
+41.00
+41.00
+42.00
+6.00
+36.00
+37.50
+39.50
+39.50
+41.00
+42.00
+6.00
+36.00
+37.50
+37.50
+39.50
+41.00
+36.00
+42.00
+6.00
+GW
+Ground
+Datum
+d
+a
+b
+L
+W.O. 7939-00
+GEOLABS, INC. 
+Hawaii ● California
+PLATE C-1
+Project:
+W.O.:
+Test No.:
+Date of Testing:
+Method of Testing:
+BMP Falling Head
+(Flush Bottom)
+Source of Water:
+Water Truck
+GW level, b (from ground):
+N/A
+feet
+Datum, a (above ground):
+0.0
+feet
+Depth of Boring:
+5.0
+feet
+Length, L (from datum):
+5.0
+feet
+Diameter of Casing, d (I.D.):
+4.0
+inches
+Elapsed Time
+Time
+(minutes)
+(hh:mm)
+Trial 1
+0
+15
+30
+45
+60
+Trial 2
+0
+15
+30
+45
+60
+Trial 3
+0
+15
+30
+45
+60
+Trial 4
+0
+15
+30
+45
+60
+49.75
+13.75
+40.25
+44.13
+47.00
+36.00
+44.13
+47.13
+49.88
+13.88
+36.00
+40.38
+47.00
+50.13
+14.13
+36.00
+40.00
+43.50
+51.13
+15.13
+40.50
+44.50
+48.00
+Testing 
+Trial
+Depth to Water              
+(measured from datum)
+Percolation Rate
+(inches)
+(inches per hour)
+36.00
+INFILTRATION TEST RECORD
+West Oahu Solar Farm
+Development
+7939-00
+I-2
+7/19/2019
+GW
+Ground
+Datum
+d
+a
+b
+L
+W.O. 7939-00
+GEOLABS, INC. 
+Hawaii ● California
+PLATE C-2
+Project:
+W.O.:
+Test No.:
+Date of Testing:
+Method of Testing:
+BMP Falling Head
+(Flush Bottom)
+Source of Water:
+Water Truck
+GW level, b (from ground):
+N/A
+feet
+Datum, a (above ground):
+0.0
+feet
+Depth of Boring:
+5.0
+feet
+Length, L (from datum):
+5.0
+feet
+Diameter of Casing, d (I.D.):
+4.0
+inches
+Elapsed Time
+Time
+(minutes)
+(hh:mm)
+Trial 1
+0
+15
+30
+45
+60
+Trial 2
+0
+15
+30
+45
+60
+Trial 3
+0
+15
+30
+45
+60
+Trial 4
+0
+15
+30
+45
+60
+51.38
+15.38
+41.00
+45.25
+48.63
+36.00
+45.13
+48.63
+51.38
+15.38
+36.00
+41.00
+48.75
+51.63
+15.63
+36.00
+41.00
+45.25
+53.00
+17.00
+41.25
+45.88
+49.75
+Testing 
+Trial
+Depth to Water              
+(measured from datum)
+Percolation Rate
+(inches)
+(inches per hour)
+36.00
+INFILTRATION TEST RECORD
+West Oahu Solar Farm
+Development
+7939-00
+I-3
+7/19/2019
+GW
+Ground
+Datum
+d
+a
+b
+L
+W.O. 7939-00
+GEOLABS, INC. 
+Hawaii ● California
+PLATE C-3
+APPENDIX D  
+W.O. 7939-00 
+GEOLABS, INC. 
+NOVEMBER 2019     Page D-1 
+Hawaii • California 
+A P P E N D I X   D 
+Field Resistivity Surveys 
+Geophysical survey equipment (i.e. resistance meter) was mobilized to the project 
+site on July 17, 2019 for the field resistivity survey.  Five soil resistivity surveys were 
+conducted at locations designated as R-1 through R-5, using the in-situ Wenner 4-Pin 
+Method and a Nilsson Model 400 resistance meter manufactured by Nilsson Electrical 
+Laboratory, Inc. The method utilizes four surface probes or pins (electrodes) to evaluate 
+the average resistivity of the underlying soil mass. The average resistivity values of the soil 
+mass, extending from the existing ground surface to the test depth, were assessed by 
+using this method at the approximate survey locations shown on the Site Plan, Plate 2. 
+The soil resistivity surveys were performed along the existing ground surface at the 
+approximate survey locations shown on the site plan. The average soil resistance along 
+the proposed alignment was evaluated at each survey location with the electrodes aligned 
+at equal spacing of generally 2.5, 5, 10, and 20 feet. The depth of penetration of a 
+resistivity sounding is a function of the electrode spacing. 
+The resistance meter (Nilsson Model 400) provides a voltage between the outer 
+electrodes, causing an electrical current to flow between them. The voltage drop between 
+the inner electrodes is then measured by a sensitive, built-in voltmeter. As a result, the soil 
+resistance (in ohms) is obtained from the voltmeter dial reading. The soil resistivity 
+(in ohm-cm), which is directly related to both resistance and spacing, can then be 
+computed. The evaluated soil resistances and computed resistivity values are presented 
+on Plate D-1. In addition, the computed resistivity values with pin spacing at the test 
+locations are presented in the graphs on Plate D-2. At the time of resistivity surveying, the 
+temperature was about 85º to 90º F. The existing ground surface was damp to moist. It 
+should be noted that the soil resistivity may be influenced by temperature, weather 
+conditions, existing underground utilities and other factors. 
+PROJECT:
+W.O.
+TESTING DATE:
+BY:
+TEST 
+NO.
+Location 
+(Latitude
+Longitude)
+RESISTANCE      
+(OHMS)
+RESISTIVITY 
+(OHMS-CM)
+CORROSION 
+RATING
+2.5
+21.5
+10972
+5
+N 21.37254
+5
+10.3
+9984
+4
+W 158.06926
+10
+4.5
+8636
+4
+20
+2.4
+9230
+4
+2.5
+24.2
+12350
+5
+N 21.371989
+5
+11.2
+10909
+5
+W 158.066662
+10
+6.0
+11560
+5
+20
+2.4
+9154
+4
+2.5
+25.1
+12809
+5
+N 21.37268
+5
+10.1
+9789
+4
+W 158.064433
+10
+6.5
+12426
+5
+20
+3.4
+12831
+5
+2.5
+30.6
+15616
+5
+N 21.376202
+5
+21.1
+20553
+5
+W 158.063385
+10
+7.4
+14272
+5
+20
+3.1
+11988
+5
+2.5
+20.3
+10360
+5
+N 21.376797
+5
+7.9
+7666
+4
+W 158.060896
+10
+3.7
+7175
+4
+20
+1.8
+6817
+4
+Anticipated Corrosion Activity
+Extremely Corrosive
+Very Corrosive
+Corrosive
+Moderately Corrosive
+Mildly Corrosive
+5
+4
+2
+1,001-3,000
+3,001-5,000
+5,001-10,000
+Over 10,001
+3
+1
+R-4
+N/A
+R-1
+PIN 
+SPACING    
+(FEET)
+0-1,000
+APPROX. 
+SURFACE 
+ELEVATION 
+(FEET, MSL)
+Resistivity Range
+(ohm-cm)
+R-3
+West Oahu Solar Farm Development
+7939-00
+N/A
+7/17/2019
+B. Aiu
+Corrosion 
+Rating
+SOIL RESISTIVITY
+N/A
+R-5
+N/A
+R-2
+N/A
+W.O. 7939-00
+GEOLABS, INC.
+PLATE D-1
+PROJECT:
+W.O.
+TESTING DATE:
+BY:
+5,001-10,000
+Anticipated Corrosion Activity
+7/17/2019
+Mildly Corrosive
+4
+2
+3
+Extremely Corrosive
+Very Corrosive
+7939-00
+West Oahu Solar Farm Development
+3,001-5,000
+Over 10,001
+Resistivity Range
+(ohm-cm)
+5
+B. Aiu
+Corrosive
+Moderately Corrosive
+0-1,000
+1,001-3,000
+Corrosion 
+Rating
+1
+100
+1,000
+10,000
+100,000
+R-0
+R-1
+R-2
+R-3
+R-4
+R-5
+R-6
+SOIL RESISTIVITY (OHMS-CM)
+FIELD RESISTIVITY TEST LOCATIONS
+2.5' Pin Spacing
+5' Pin Spacing
+10' Pin Spacing
+20' Pin Spacing
+W.O. 7939-00
+GEOLABS, INC.
+PLATE D-2
+APPENDIX E  
+ANALYTICAL REPORT
+Eurofins TestAmerica, Irvine
+17461 Derian Ave
+Suite 100
+Irvine, CA 92614-5817
+Tel: (949)261-1022
+Laboratory Job ID: 440-246696-1
+Laboratory Sample Delivery Group: 7939-00
+Client Project/Site: Solar Farm
+For:
+GeoLabs Inc
+2006 Kalihi St.
+Honolulu, Hawaii 96819
+Attn: Steven Asato
+Authorized for release by:
+7/30/2019 11:39:35 AM
+Sheri Fama, Project Manager I
+(949)260-3274
+sheri.fama@testamericainc.com
+The test results in this report meet all 2003 NELAC and 2009 TNI requirements for accredited
+parameters, exceptions are noted in this report. This report may not be reproduced except in full,
+and with written approval from the laboratory. For questions please contact the Project Manager
+at the e-mail address or telephone number listed on this page.
+This report has been electronically signed and authorized by the signatory. Electronic signature is
+intended to be the legally binding equivalent of a traditionally handwritten signature.
+Results relate only to the items tested and the sample(s) as received by the laboratory.
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+Table of Contents
+Client: GeoLabs Inc
+Project/Site: Solar Farm
+Laboratory Job ID: 440-246696-1
+SDG: 7939-00
+Page 2 of 13
+Eurofins TestAmerica, Irvine
+7/30/2019
+Cover Page . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+1
+Table of Contents . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+2
+Sample Summary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+3
+Case Narrative . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+4
+Client Sample Results . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+5
+Method Summary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+6
+Lab Chronicle . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+7
+QC Sample Results . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+8
+QC Association Summary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+9
+Definitions/Glossary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+10
+Certification Summary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+11
+Chain of Custody . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+12
+Receipt Checklists . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+13
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+Sample Summary
+Job ID: 440-246696-1
+Client: GeoLabs Inc
+SDG: 7939-00
+Project/Site: Solar Farm
+Lab Sample ID
+Client Sample ID
+Received
+Collected
+Matrix
+Asset ID
+440-246696-1
+B2 SPT2 2.4-4ft
+Solid
+07/06/19 10:00
+07/26/19 10:45
+440-246696-2
+B9 RS1 1-2.5ft
+Solid
+06/21/19 10:00
+07/26/19 10:45
+440-246696-3
+B12 RS3 5-6.5ft
+Solid
+07/13/19 10:00
+07/26/19 10:45
+Eurofins TestAmerica, Irvine
+Page 3 of 13
+7/30/2019
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+Case Narrative
+Client: GeoLabs Inc
+Job ID: 440-246696-1
+Project/Site: Solar Farm
+SDG: 7939-00
+Job ID: 440-246696-1
+Laboratory: Eurofins TestAmerica, Irvine
+Narrative
+Job Narrative
+440-246696-1
+Comments
+No additional comments. 
+Receipt 
+The samples were received on 7/26/2019 10:45 AM; the samples arrived in good condition.  The temperature of the cooler at receipt was 
+27.2º C.
+Method 300.0: The following sample was received outside of holding time: B9 RS1 1-2.5ft (440-246696-2).
+Receipt Exceptions
+The following samples were received at the laboratory outside the required temperature criteria: B2 SPT2 2.4-4ft (440-246696-1), B9 RS1 
+1-2.5ft (440-246696-2) and B12 RS3 5-6.5ft (440-246696-3).  There was no cooling media present in the cooler.  Samples were received 
+at 27.2 deg C.
+The Field Sampler was not listed on the Chain of Custody.
+HPLC/IC 
+Method 300.0: The following sample was received outside of holding time: B9 RS1 1-2.5ft (440-246696-2).
+No additional analytical or quality issues were noted, other than those described above or in the Definitions/Glossary page.
+General Chemistry 
+No analytical or quality issues were noted, other than those described in the Definitions/Glossary page.
+Eurofins TestAmerica, Irvine
+Page 4 of 13
+7/30/2019
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+Client Sample Results
+Job ID: 440-246696-1
+Client: GeoLabs Inc
+SDG: 7939-00
+Project/Site: Solar Farm
+Lab Sample ID: 440-246696-1
+Client Sample ID: B2 SPT2 2.4-4ft
+Matrix: Solid
+Date Collected: 07/06/19 10:00
+Date Received: 07/26/19 10:45
+Method: 300.0 - Anions, Ion Chromatography - Soluble
+RL
+Chloride
+24
+5.0
+mg/Kg
+07/27/19 01:12
+1
+Analyte
+Dil Fac
+Analyzed
+Prepared
+Unit
+D
+Result Qualifier
+5.0
+mg/Kg
+07/27/19 01:12
+1
+Sulfate
+66
+Lab Sample ID: 440-246696-2
+Client Sample ID: B9 RS1 1-2.5ft
+Matrix: Solid
+Date Collected: 06/21/19 10:00
+Date Received: 07/26/19 10:45
+Method: 300.0 - Anions, Ion Chromatography - Soluble
+RL
+Chloride
+16 H H3
+5.0
+mg/Kg
+07/27/19 01:29
+1
+Analyte
+Dil Fac
+Analyzed
+Prepared
+Unit
+D
+Result Qualifier
+5.0
+mg/Kg
+07/27/19 01:29
+1
+Sulfate
+28 H H3
+Lab Sample ID: 440-246696-3
+Client Sample ID: B12 RS3 5-6.5ft
+Matrix: Solid
+Date Collected: 07/13/19 10:00
+Date Received: 07/26/19 10:45
+Method: 300.0 - Anions, Ion Chromatography - Soluble
+RL
+Chloride
+98
+5.0
+mg/Kg
+07/27/19 01:45
+1
+Analyte
+Dil Fac
+Analyzed
+Prepared
+Unit
+D
+Result Qualifier
+5.0
+mg/Kg
+07/27/19 01:45
+1
+Sulfate
+58
+Eurofins TestAmerica, Irvine
+Page 5 of 13
+7/30/2019
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+Method Summary
+Job ID: 440-246696-1
+Client: GeoLabs Inc
+SDG: 7939-00
+Project/Site: Solar Farm
+Method
+Method Description
+Laboratory
+Protocol
+MCAWW
+300.0
+Anions, Ion Chromatography
+TAL IRV
+ASTM
+DI Leach
+Deionized Water Leaching Procedure
+TAL IRV
+Protocol References:
+ASTM = ASTM International
+MCAWW = "Methods For Chemical Analysis Of Water And Wastes", EPA-600/4-79-020, March 1983 And Subsequent Revisions.
+Laboratory References:
+TAL IRV = Eurofins TestAmerica, Irvine, 17461 Derian Ave, Suite 100, Irvine, CA 92614-5817, TEL (949)261-1022
+Eurofins TestAmerica, Irvine
+Page 6 of 13
+7/30/2019
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+Lab Chronicle
+Client: GeoLabs Inc
+Job ID: 440-246696-1
+Project/Site: Solar Farm
+SDG: 7939-00
+Client Sample ID: B2 SPT2 2.4-4ft
+Lab Sample ID: 440-246696-1
+Matrix: Solid
+Date Collected: 07/06/19 10:00
+Date Received: 07/26/19 10:45
+Leach
+DI Leach
+NTN
+07/26/19 22:42
+TAL IRV
+559930
+Type
+Batch
+Method
+Batch
+Prep Type
+Lab
+Analyst
+Run
+Prepared
+or Analyzed
+Initial
+Amount
+Amount
+Final
+Batch
+Number
+Factor
+Dil
+Soluble
+4.04 g
+40 mL
+Analysis
+300.0
+1
+559769
+07/27/19 01:12 NTN
+TAL IRV
+Soluble
+Client Sample ID: B9 RS1 1-2.5ft
+Lab Sample ID: 440-246696-2
+Matrix: Solid
+Date Collected: 06/21/19 10:00
+Date Received: 07/26/19 10:45
+Leach
+DI Leach
+NTN
+07/26/19 22:42
+TAL IRV
+559930
+Type
+Batch
+Method
+Batch
+Prep Type
+Lab
+Analyst
+Run
+Prepared
+or Analyzed
+Initial
+Amount
+Amount
+Final
+Batch
+Number
+Factor
+Dil
+Soluble
+4.02 g
+40 mL
+Analysis
+300.0
+1
+559769
+07/27/19 01:29 NTN
+TAL IRV
+Soluble
+Client Sample ID: B12 RS3 5-6.5ft
+Lab Sample ID: 440-246696-3
+Matrix: Solid
+Date Collected: 07/13/19 10:00
+Date Received: 07/26/19 10:45
+Leach
+DI Leach
+NTN
+07/26/19 22:42
+TAL IRV
+559930
+Type
+Batch
+Method
+Batch
+Prep Type
+Lab
+Analyst
+Run
+Prepared
+or Analyzed
+Initial
+Amount
+Amount
+Final
+Batch
+Number
+Factor
+Dil
+Soluble
+4.00 g
+40 mL
+Analysis
+300.0
+1
+559769
+07/27/19 01:45 NTN
+TAL IRV
+Soluble
+Laboratory References:
+TAL IRV = Eurofins TestAmerica, Irvine, 17461 Derian Ave, Suite 100, Irvine, CA 92614-5817, TEL (949)261-1022
+Eurofins TestAmerica, Irvine
+Page 7 of 13
+7/30/2019
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+QC Sample Results
+Job ID: 440-246696-1
+Client: GeoLabs Inc
+SDG: 7939-00
+Project/Site: Solar Farm
+Method: 300.0 - Anions, Ion Chromatography
+Client Sample ID: Method Blank
+Lab Sample ID: MB 440-559930/1-A
+Matrix: Solid
+Prep Type: Soluble
+Analysis Batch: 559775
+RL
+Chloride
+ND
+5.0
+mg/Kg
+07/27/19 00:43
+1
+MB MB
+Analyte
+Dil Fac
+Analyzed
+Prepared
+D
+Unit
+Result Qualifier
+ND
+5.0
+mg/Kg
+07/27/19 00:43
+1
+Sulfate
+Client Sample ID: Lab Control Sample
+Lab Sample ID: LCS 440-559930/2-A
+Matrix: Solid
+Prep Type: Soluble
+Analysis Batch: 559775
+Chloride
+50.0
+47.6
+mg/Kg
+95
+90 - 110
+Analyte
+LCS LCS
+D
+Unit
+Result Qualifier
+%Rec
+Spike
+Added
+%Rec.
+Limits
+Sulfate
+50.0
+49.1
+mg/Kg
+98
+90 - 110
+Client Sample ID: Matrix Spike
+Lab Sample ID: 320-52210-A-1-B MS
+Matrix: Solid
+Prep Type: Soluble
+Analysis Batch: 559775
+Chloride
+ND
+49.9
+50.7
+mg/Kg
+102
+80 - 120
+Analyte
+MS MS
+D
+Unit
+Result Qualifier
+%Rec
+Spike
+Added
+Sample
+Result
+Sample
+Qualifier
+%Rec.
+Limits
+Sulfate
+ND
+49.9
+52.0
+mg/Kg
+96
+80 - 120
+Client Sample ID: Matrix Spike Duplicate
+Lab Sample ID: 320-52210-A-1-C MSD
+Matrix: Solid
+Prep Type: Soluble
+Analysis Batch: 559775
+Chloride
+ND
+49.5
+48.5
+mg/Kg
+98
+80 - 120
+4
+20
+Analyte
+MSD MSD
+D
+Unit
+Result Qualifier
+%Rec
+Spike
+Added
+Sample
+Result
+Sample
+Qualifier
+%Rec.
+Limits
+Limit
+RPD
+RPD
+Sulfate
+ND
+49.5
+49.5
+mg/Kg
+92
+80 - 120
+5
+20
+Eurofins TestAmerica, Irvine
+Page 8 of 13
+7/30/2019
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+QC Association Summary
+Job ID: 440-246696-1
+Client: GeoLabs Inc
+SDG: 7939-00
+Project/Site: Solar Farm
+HPLC/IC
+Analysis Batch: 559769
+Lab Sample ID
+Client Sample ID
+Prep Type
+Matrix
+Method
+Prep Batch
+Solid
+300.0
+559930
+440-246696-1
+B2 SPT2 2.4-4ft
+Soluble
+Solid
+300.0
+559930
+440-246696-2
+B9 RS1 1-2.5ft
+Soluble
+Solid
+300.0
+559930
+440-246696-3
+B12 RS3 5-6.5ft
+Soluble
+Analysis Batch: 559775
+Lab Sample ID
+Client Sample ID
+Prep Type
+Matrix
+Method
+Prep Batch
+Solid
+300.0
+559930
+MB 440-559930/1-A
+Method Blank
+Soluble
+Solid
+300.0
+559930
+LCS 440-559930/2-A
+Lab Control Sample
+Soluble
+Solid
+300.0
+559930
+320-52210-A-1-B MS
+Matrix Spike
+Soluble
+Solid
+300.0
+559930
+320-52210-A-1-C MSD
+Matrix Spike Duplicate
+Soluble
+Leach Batch: 559930
+Lab Sample ID
+Client Sample ID
+Prep Type
+Matrix
+Method
+Prep Batch
+Solid
+DI Leach
+440-246696-1
+B2 SPT2 2.4-4ft
+Soluble
+Solid
+DI Leach
+440-246696-2
+B9 RS1 1-2.5ft
+Soluble
+Solid
+DI Leach
+440-246696-3
+B12 RS3 5-6.5ft
+Soluble
+Solid
+DI Leach
+MB 440-559930/1-A
+Method Blank
+Soluble
+Solid
+DI Leach
+LCS 440-559930/2-A
+Lab Control Sample
+Soluble
+Solid
+DI Leach
+320-52210-A-1-B MS
+Matrix Spike
+Soluble
+Solid
+DI Leach
+320-52210-A-1-C MSD
+Matrix Spike Duplicate
+Soluble
+Eurofins TestAmerica, Irvine
+Page 9 of 13
+7/30/2019
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+Definitions/Glossary
+Job ID: 440-246696-1
+Client: GeoLabs Inc
+SDG: 7939-00
+Project/Site: Solar Farm
+Qualifiers
+HPLC/IC
+Qualifier Description
+H
+Sample was prepped or analyzed beyond the specified holding time
+Qualifier
+H3
+Sample was received and analyzed past holding time.
+Glossary
+These commonly used abbreviations may or may not be present in this report.
+Listed under the "D" column to designate that the result is reported on a dry weight basis
+Abbreviation
+%R
+Percent Recovery
+CFL
+Contains Free Liquid
+CNF
+Contains No Free Liquid
+DER
+Duplicate Error Ratio (normalized absolute difference)
+Dil Fac
+Dilution Factor
+DL
+Detection Limit (DoD/DOE)
+DL, RA, RE, IN
+Indicates a Dilution, Re-analysis, Re-extraction, or additional Initial metals/anion analysis of the sample
+DLC
+Decision Level Concentration (Radiochemistry)
+EDL
+Estimated Detection Limit (Dioxin)
+LOD
+Limit of Detection (DoD/DOE)
+LOQ
+Limit of Quantitation (DoD/DOE)
+MDA
+Minimum Detectable Activity (Radiochemistry)
+MDC
+Minimum Detectable Concentration (Radiochemistry)
+MDL
+Method Detection Limit
+ML
+Minimum Level (Dioxin)
+NC
+Not Calculated
+ND
+Not Detected at the reporting limit (or MDL or EDL if shown)
+PQL
+Practical Quantitation Limit
+QC
+Quality Control
+RER
+Relative Error Ratio (Radiochemistry)
+RL
+Reporting Limit or Requested Limit (Radiochemistry)
+RPD
+Relative Percent Difference, a measure of the relative difference between two points
+TEF
+Toxicity Equivalent Factor (Dioxin)
+TEQ
+Toxicity Equivalent Quotient (Dioxin)
+Eurofins TestAmerica, Irvine
+Page 10 of 13
+7/30/2019
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+Accreditation/Certification Summary
+Client: GeoLabs Inc
+Job ID: 440-246696-1
+Project/Site: Solar Farm
+SDG: 7939-00
+Laboratory: Eurofins TestAmerica, Irvine
+Unless otherwise noted, all analytes for this laboratory were covered under each accreditation/certification below.
+Authority
+Program
+EPA Region
+Identification Number
+Expiration Date
+Hawaii
+N/A
+9
+State Program
+01-29-20
+The following analytes are included in this report, but the laboratory is not certified by the governing authority.  This list may include analytes for which 
+the agency does not offer certification.  
+Analysis Method
+Prep Method
+Matrix
+Analyte
+300.0
+Solid
+Chloride
+300.0
+Solid
+Sulfate
+Laboratory: Eurofins TestAmerica, Honolulu
+All accreditations/certifications held by this laboratory are listed.  Not all accreditations/certifications are applicable to this report.
+Authority
+Program
+EPA Region
+Identification Number
+Expiration Date
+Hawaii
+N/A
+9
+State Program
+06-28-10 *
+USDA
+Federal
+P330-17-00296
+08-30-20
+Eurofins TestAmerica, Irvine
+* Accreditation/Certification renewal pending - accreditation/certification considered valid.
+Page 11 of 13
+7/30/2019
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+Page 12 of 13
+7/30/2019
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+Login Sample Receipt Checklist
+Client: GeoLabs Inc
+Job Number: 440-246696-1
+SDG Number: 7939-00
+Login Number: 246696
+Question
+Answer
+Comment
+Creator: Skinner, Alma D
+List Source: Eurofins TestAmerica, Irvine
+List Number: 1
+True
+Radioactivity wasn't checked or is </= background as measured by a survey 
+meter.
+N/A
+The cooler's custody seal, if present, is intact.
+Not present
+N/A
+Sample custody seals, if present, are intact.
+Not Present
+True
+The cooler or samples do not appear to have been compromised or 
+tampered with.
+False
+Samples were received on ice.
+Refer to Job Narrative for details.
+False
+Cooler Temperature is acceptable.
+Cooler temperature outside required temperature 
+criteria.
+True
+Cooler Temperature is recorded.
+True
+COC is present.
+True
+COC is filled out in ink and legible.
+True
+COC is filled out with all pertinent information.
+False
+Is the Field Sampler's name present on COC?
+Refer to Job Narrative for details.
+True
+There are no discrepancies between the containers received and the COC.
+False
+Samples are received within Holding Time (excluding tests with immediate 
+HTs)
+Refer to Job Narrative for details.
+True
+Sample containers have legible labels.
+True
+Containers are not broken or leaking.
+True
+Sample collection date/times are provided.
+True
+Appropriate sample containers are used.
+True
+Sample bottles are completely filled.
+N/A
+Sample Preservation Verified.
+True
+There is sufficient vol. for all requested analyses, incl. any requested 
+MS/MSDs
+True
+Containers requiring zero headspace have no headspace or bubble is 
+<6mm (1/4").
+True
+Multiphasic samples are not present.
+True
+Samples do not require splitting or compositing.
+N/A
+Residual Chlorine Checked.
+Eurofins TestAmerica, Irvine
+Page 13 of 13
+7/30/2019
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+ANALYTICAL REPORT
+Eurofins TestAmerica, Irvine
+17461 Derian Ave
+Suite 100
+Irvine, CA 92614-5817
+Tel: (949)261-1022
+Laboratory Job ID: 440-248318-1
+Laboratory Sample Delivery Group: 7939-00
+Client Project/Site: West Oahu Solar Farm
+For:
+GeoLabs Inc
+2006 Kalihi St.
+Honolulu, Hawaii 96819
+Attn: Steven Asato
+Authorized for release by:
+8/22/2019 2:28:49 PM
+Saman Taeidi, Project Manager I
+(949)260-3215
+saman.taeidi@testamericainc.com
+Designee for
+Sheri Fama, Project Manager I
+(949)260-3274
+sheri.fama@testamericainc.com
+The test results in this report meet all 2003 NELAC and 2009 TNI requirements for accredited
+parameters, exceptions are noted in this report. This report may not be reproduced except in full,
+and with written approval from the laboratory. For questions please contact the Project Manager
+at the e-mail address or telephone number listed on this page.
+This report has been electronically signed and authorized by the signatory. Electronic signature is
+intended to be the legally binding equivalent of a traditionally handwritten signature.
+Results relate only to the items tested and the sample(s) as received by the laboratory.
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+Table of Contents
+Client: GeoLabs Inc
+Project/Site: West Oahu Solar Farm
+Laboratory Job ID: 440-248318-1
+SDG: 7939-00
+Page 2 of 16
+Eurofins TestAmerica, Irvine
+8/22/2019
+Cover Page . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+1
+Table of Contents . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+2
+Sample Summary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+3
+Case Narrative . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+4
+Client Sample Results . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+5
+Method Summary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+6
+Lab Chronicle . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+7
+QC Sample Results . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+8
+QC Association Summary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+9
+Definitions/Glossary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+10
+Certification Summary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+11
+Chain of Custody . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+12
+Receipt Checklists . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+16
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+Sample Summary
+Job ID: 440-248318-1
+Client: GeoLabs Inc
+SDG: 7939-00
+Project/Site: West Oahu Solar Farm
+Lab Sample ID
+Client Sample ID
+Received
+Collected
+Matrix
+Asset ID
+440-248318-1
+Bulk-3 0-1FT
+Solid
+07/18/19 10:00
+08/19/19 09:30
+440-248318-2
+Bulk-4 0-1FT
+Solid
+07/18/19 10:00
+08/19/19 09:30
+Eurofins TestAmerica, Irvine
+Page 3 of 16
+8/22/2019
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+Case Narrative
+Client: GeoLabs Inc
+Job ID: 440-248318-1
+Project/Site: West Oahu Solar Farm
+SDG: 7939-00
+Job ID: 440-248318-1
+Laboratory: Eurofins TestAmerica, Irvine
+Narrative
+Job Narrative
+440-248318-1
+Receipt 
+The samples were received on 8/19/2019 9:30 AM; the samples arrived in good condition, properly preserved. The temperature of the 
+cooler at receipt was 17.1º C.
+Receipt Exceptions
+The following samples were received at the laboratory outside the required temperature criteria: Bulk-3 0-1FT (440-248318-1) and Bulk-4 
+0-1FT (440-248318-2).  Samples were received at 17.1 deg C.
+The Field Sampler was not listed on the Chain of Custody.
+The Chain-of-Custody (COC) was incomplete as received and/or improperly completed.  COC was not relinquished. 
+The following samples were received outside of holding time: Bulk-3 0-1FT (440-248318-1) and Bulk-4 0-1FT (440-248318-2).
+General Chemistry 
+No analytical or quality issues were noted, other than those described in the Definitions/Glossary page.
+Eurofins TestAmerica, Irvine
+Page 4 of 16
+8/22/2019
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+Client Sample Results
+Job ID: 440-248318-1
+Client: GeoLabs Inc
+SDG: 7939-00
+Project/Site: West Oahu Solar Farm
+Lab Sample ID: 440-248318-1
+Client Sample ID: Bulk-3 0-1FT
+Matrix: Solid
+Date Collected: 07/18/19 10:00
+Date Received: 08/19/19 09:30
+General Chemistry - Soluble
+RL
+Oxidation Reduction Potential
+460
+0.10
+millivolts
+08/21/19 13:26
+1
+Analyte
+Dil Fac
+Analyzed
+Prepared
+Unit
+D
+Result Qualifier
+Lab Sample ID: 440-248318-2
+Client Sample ID: Bulk-4 0-1FT
+Matrix: Solid
+Date Collected: 07/18/19 10:00
+Date Received: 08/19/19 09:30
+General Chemistry - Soluble
+RL
+Oxidation Reduction Potential
+460
+0.10
+millivolts
+08/21/19 13:26
+1
+Analyte
+Dil Fac
+Analyzed
+Prepared
+Unit
+D
+Result Qualifier
+Eurofins TestAmerica, Irvine
+Page 5 of 16
+8/22/2019
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+Method Summary
+Job ID: 440-248318-1
+Client: GeoLabs Inc
+SDG: 7939-00
+Project/Site: West Oahu Solar Farm
+Method
+Method Description
+Laboratory
+Protocol
+SM
+SM 2580B
+Reduction-Oxidation (REDOX) Potential
+TAL IRV
+ASTM
+DI Leach
+Deionized Water Leaching Procedure
+TAL IRV
+Protocol References:
+ASTM = ASTM International
+SM = "Standard Methods For The Examination Of Water And Wastewater"
+Laboratory References:
+TAL IRV = Eurofins TestAmerica, Irvine, 17461 Derian Ave, Suite 100, Irvine, CA 92614-5817, TEL (949)261-1022
+Eurofins TestAmerica, Irvine
+Page 6 of 16
+8/22/2019
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+Lab Chronicle
+Client: GeoLabs Inc
+Job ID: 440-248318-1
+Project/Site: West Oahu Solar Farm
+SDG: 7939-00
+Client Sample ID: Bulk-3 0-1FT
+Lab Sample ID: 440-248318-1
+Matrix: Solid
+Date Collected: 07/18/19 10:00
+Date Received: 08/19/19 09:30
+Leach
+DI Leach
+HZ
+08/21/19 11:50
+TAL IRV
+564594
+Type
+Batch
+Method
+Batch
+Prep Type
+Lab
+Analyst
+Run
+Prepared
+or Analyzed
+Initial
+Amount
+Amount
+Final
+Batch
+Number
+Factor
+Dil
+Soluble
+19.98 g
+20 mL
+Analysis
+SM 2580B
+1
+564626
+08/21/19 13:26 HZ
+TAL IRV
+Soluble
+Client Sample ID: Bulk-4 0-1FT
+Lab Sample ID: 440-248318-2
+Matrix: Solid
+Date Collected: 07/18/19 10:00
+Date Received: 08/19/19 09:30
+Leach
+DI Leach
+HZ
+08/21/19 11:50
+TAL IRV
+564594
+Type
+Batch
+Method
+Batch
+Prep Type
+Lab
+Analyst
+Run
+Prepared
+or Analyzed
+Initial
+Amount
+Amount
+Final
+Batch
+Number
+Factor
+Dil
+Soluble
+19.99 g
+20 mL
+Analysis
+SM 2580B
+1
+564626
+08/21/19 13:26 HZ
+TAL IRV
+Soluble
+Laboratory References:
+TAL IRV = Eurofins TestAmerica, Irvine, 17461 Derian Ave, Suite 100, Irvine, CA 92614-5817, TEL (949)261-1022
+Eurofins TestAmerica, Irvine
+Page 7 of 16
+8/22/2019
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+QC Sample Results
+Job ID: 440-248318-1
+Client: GeoLabs Inc
+SDG: 7939-00
+Project/Site: West Oahu Solar Farm
+Method: SM 2580B - Reduction-Oxidation (REDOX) Potential
+Client Sample ID: Bulk-3 0-1FT
+Lab Sample ID: 440-248318-1 DU
+Matrix: Solid
+Prep Type: Soluble
+Analysis Batch: 564626
+Oxidation Reduction Potential
+460
+462
+millivolts
+1
+5
+Analyte
+DU DU
+D
+Unit
+Result Qualifier
+Sample
+Result
+Sample
+Qualifier
+Limit
+RPD
+RPD
+Eurofins TestAmerica, Irvine
+Page 8 of 16
+8/22/2019
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+QC Association Summary
+Job ID: 440-248318-1
+Client: GeoLabs Inc
+SDG: 7939-00
+Project/Site: West Oahu Solar Farm
+General Chemistry
+Leach Batch: 564594
+Lab Sample ID
+Client Sample ID
+Prep Type
+Matrix
+Method
+Prep Batch
+Solid
+DI Leach
+440-248318-1
+Bulk-3 0-1FT
+Soluble
+Solid
+DI Leach
+440-248318-2
+Bulk-4 0-1FT
+Soluble
+Solid
+DI Leach
+440-248318-1 DU
+Bulk-3 0-1FT
+Soluble
+Analysis Batch: 564626
+Lab Sample ID
+Client Sample ID
+Prep Type
+Matrix
+Method
+Prep Batch
+Solid
+SM 2580B
+564594
+440-248318-1
+Bulk-3 0-1FT
+Soluble
+Solid
+SM 2580B
+564594
+440-248318-2
+Bulk-4 0-1FT
+Soluble
+Solid
+SM 2580B
+564594
+440-248318-1 DU
+Bulk-3 0-1FT
+Soluble
+Eurofins TestAmerica, Irvine
+Page 9 of 16
+8/22/2019
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+Definitions/Glossary
+Job ID: 440-248318-1
+Client: GeoLabs Inc
+SDG: 7939-00
+Project/Site: West Oahu Solar Farm
+Glossary
+These commonly used abbreviations may or may not be present in this report.
+Listed under the "D" column to designate that the result is reported on a dry weight basis
+Abbreviation
+%R
+Percent Recovery
+CFL
+Contains Free Liquid
+CNF
+Contains No Free Liquid
+DER
+Duplicate Error Ratio (normalized absolute difference)
+Dil Fac
+Dilution Factor
+DL
+Detection Limit (DoD/DOE)
+DL, RA, RE, IN
+Indicates a Dilution, Re-analysis, Re-extraction, or additional Initial metals/anion analysis of the sample
+DLC
+Decision Level Concentration (Radiochemistry)
+EDL
+Estimated Detection Limit (Dioxin)
+LOD
+Limit of Detection (DoD/DOE)
+LOQ
+Limit of Quantitation (DoD/DOE)
+MDA
+Minimum Detectable Activity (Radiochemistry)
+MDC
+Minimum Detectable Concentration (Radiochemistry)
+MDL
+Method Detection Limit
+ML
+Minimum Level (Dioxin)
+NC
+Not Calculated
+ND
+Not Detected at the reporting limit (or MDL or EDL if shown)
+PQL
+Practical Quantitation Limit
+QC
+Quality Control
+RER
+Relative Error Ratio (Radiochemistry)
+RL
+Reporting Limit or Requested Limit (Radiochemistry)
+RPD
+Relative Percent Difference, a measure of the relative difference between two points
+TEF
+Toxicity Equivalent Factor (Dioxin)
+TEQ
+Toxicity Equivalent Quotient (Dioxin)
+Eurofins TestAmerica, Irvine
+Page 10 of 16
+8/22/2019
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+Accreditation/Certification Summary
+Client: GeoLabs Inc
+Job ID: 440-248318-1
+Project/Site: West Oahu Solar Farm
+SDG: 7939-00
+Laboratory: Eurofins TestAmerica, Irvine
+Unless otherwise noted, all analytes for this laboratory were covered under each accreditation/certification below.
+Authority
+Program
+Identification Number
+Expiration Date
+Hawaii
+N/A
+State Program
+01-29-20
+The following analytes are included in this report, but the laboratory is not certified by the governing authority.  This list may include analytes for which 
+the agency does not offer certification.  
+Analysis Method
+Prep Method
+Matrix
+Analyte
+SM 2580B
+Solid
+Oxidation Reduction Potential
+Laboratory: Eurofins TestAmerica, Honolulu
+All accreditations/certifications held by this laboratory are listed.  Not all accreditations/certifications are applicable to this report.
+Authority
+Program
+Identification Number
+Expiration Date
+Hawaii
+N/A
+State Program
+06-28-10 *
+USDA
+Federal
+P330-17-00296
+08-30-20
+Eurofins TestAmerica, Irvine
+* Accreditation/Certification renewal pending - accreditation/certification considered valid.
+Page 11 of 16
+8/22/2019
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+Page 12 of 16
+8/22/2019
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+1
+Taeidi, Saman
+From:
+Herbert Chu <hchu@geolabs.net>
+Sent:
+Thursday, August 22, 2019 2:13 PM
+To:
+Mouton, Alain; Aaron Wong; Gerald Y. Seki; Jason Seidman; John Y L Chen; Melchor 
+Nolasco; Nicholas Kam; Robin M. Lim; Steven Asato; Teddy S.T. Kwok
+Cc:
+Fama, Sheri M; Taeidi, Saman
+Subject:
+RE: Eurofins TestAmerica Sample Login Confirmation files from 440-248318 West Oahu 
+Solar Farm
+-External Email- 
+Hi Alain, 
+This is to confirm that the samples were collected on 7/18/19.  Thanks. 
+Herbert Chu, P.E. 
+Geolabs, Inc.  
+2006 Kalihi Street 
+Honolulu, HI 96819 
+Phone: (808) 913-5136 
+www.geolabs.net 
+From: Mouton, Alain <Alain.Mouton@testamericainc.com>  
+Sent: Thursday, August 22, 2019 9:39 AM 
+To: Aaron Wong <aaron@geolabs.net>; Gerald Y. Seki <gerald@geolabs.net>; Herbert Chu <hchu@geolabs.net>; Jason 
+Seidman <jason@geolabs.net>; John Y L Chen <johnc@geolabs.net>; Melchor Nolasco <mel@geolabs.net>; Nicholas 
+Kam <nick_k@geolabs.net>; Robin M. Lim <robin@geolabs.net>; Steven Asato <steven_a@geolabs.net>; Teddy S.T. 
+Kwok <teddy@geolabs.net> 
+Cc: Fama, Sheri M <Sheri.Fama@testamericainc.com>; Taeidi, Saman <Saman.Taeidi@testamericainc.com> 
+Subject: RE: Eurofins TestAmerica Sample Login Confirmation files from 440-248318 West Oahu Solar Farm 
+Hi All, 
+The samples were logged in with a collection date on 08/18/2019, but the samples were indicated as collected on 
+07/18/19 on the COC.  Could you please confirm the time of collection for these two samples before we finalize your 
+report?  Thank you. 
+SHIPPING ALERT:  Labor Day, Monday September 2nd 2019 
+For the upcoming Labor Day holiday (observed Monday, September 2nd) Eurofins TestAmerica will be closed. 
+FedEx and UPS will not have scheduled service on Monday September 2nd. 
+If you have BOD samples or any short hold samples arriving Friday AUGUST 30th or on the weekend, we ask that 
+you contact your Project Manager in advance to ensure your samples meet all holding time criteria. 
+We are thankful for your business and hope that you have a wonderful and safe holiday! 
+Page 13 of 16
+8/22/2019
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+2
+Alain Mouton 
+Project Management Assistant 
+Eurofins TestAmerica   
+17461 Derian Avenue, Suite 100 
+Irvine, CA 92614 
+USA 
+Phone: (1) 949-261-1022 
+Direct Line: (1) 949-260-3275  
+E-mail: Alain.Mouton@testamericainc.com  
+www.EurofinsUS.com | www.TestAmericainc.com 
+Please check with your PM before submitting short hold samples after 5pm or on Saturday. 
+Please let us know if we met your expectations by rating the service you received from TestAmerica on this project by 
+visiting our website at : Project Feedback https://www.surveymonkey.com/s/TAProjectFeedback 
+CONFIDENTIALITY NOTICE: This e-mail communication, including any attachments, may contain privileged or 
+confidential information for the use of the recipient(s) named above and is protected by law. If you are not the intended 
+recipient(s), you are hereby notified that any dissemination, distribution or copying of this communication is strictly 
+prohibited and you should delete this message and its attachments from your computer without retaining any copies. If 
+you have received this communication in error, please reply to the sender immediately. We appreciate your cooperation. 
+From: Mouton, Alain  
+Sent: Tuesday, August 20, 2019 11:06 AM 
+To: Aaron Wong; Gerald Seki; Herbert Chu; Jason Seidman; John Chen; Mel Nolasco; Nick Kam; Robin Lim; Steven 
+Asato; Teddy Kwok 
+Cc: Fama, Sheri M 
+Subject: Eurofins TestAmerica Sample Login Confirmation files from 440-248318 West Oahu Solar Farm 
+Hello, 
+Attached, please find the Sample Confirmation files for job 440-248318; West Oahu Solar Farm. 
+The following samples were received at the laboratory outside the required temperature criteria: Bulk-3 0-1 FT 
+(440-248318-1) and Bulk-4 0-1FT (440-248318-2). Samples were received at 16.9/17.1 deg C on melted ice. 
+Results will be reported with the appropriate qualifier, unless you want to cancel the job. Please let us know. 
+The Chain-of-Custody (COC) was incomplete as received and/or improperly completed: COC was not 
+relinquished. Please do not forget to sign the COC when you are relinquishing your samples. Thank you. 
+Please indicates the Sampler's name in print in the appropriate box. Thank you. 
+Please feel free to contact me or your PM, Sheri Fama, if you have any questions. 
+Page 14 of 16
+8/22/2019
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+3
+Thank you. 
+Alain Mouton 
+Project Manager Assistant 
+Eurofins TestAmerica, Irvine 
+E-mail: alain.mouton@testamericainc.com 
+www.eurofinsus.com | www.testamericainc.com 
+Reference: [440-545947] 
+Attachments: 3 
+Please let us know if we met your expectations by rating the service you received from 
+Eurofins TestAmerica on this project by visiting our website at: Project Feedback 
+Page 15 of 16
+8/22/2019
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+Login Sample Receipt Checklist
+Client: GeoLabs Inc
+Job Number: 440-248318-1
+SDG Number: 7939-00
+Login Number: 248318
+Question
+Answer
+Comment
+Creator: Skinner, Alma D
+List Source: Eurofins TestAmerica, Irvine
+List Number: 1
+True
+Radioactivity wasn't checked or is </= background as measured by a survey 
+meter.
+N/A
+The cooler's custody seal, if present, is intact.
+Not present
+N/A
+Sample custody seals, if present, are intact.
+Not Present
+True
+The cooler or samples do not appear to have been compromised or 
+tampered with.
+True
+Samples were received on ice.
+Water present in cooler; indicates evidence of 
+melted ice.
+False
+Cooler Temperature is acceptable.
+Cooler temperature outside required temperature 
+criteria.
+True
+Cooler Temperature is recorded.
+True
+COC is present.
+True
+COC is filled out in ink and legible.
+False
+COC is filled out with all pertinent information.
+COC not relinquished.
+False
+Is the Field Sampler's name present on COC?
+Refer to Job Narrative for details.
+True
+There are no discrepancies between the containers received and the COC.
+False
+Samples are received within Holding Time (excluding tests with immediate 
+HTs)
+Refer to Job Narrative for details.
+True
+Sample containers have legible labels.
+True
+Containers are not broken or leaking.
+True
+Sample collection date/times are provided.
+True
+Appropriate sample containers are used.
+True
+Sample bottles are completely filled.
+N/A
+Sample Preservation Verified.
+True
+There is sufficient vol. for all requested analyses, incl. any requested 
+MS/MSDs
+True
+Containers requiring zero headspace have no headspace or bubble is 
+<6mm (1/4").
+True
+Multiphasic samples are not present.
+True
+Samples do not require splitting or compositing.
+N/A
+Residual Chlorine Checked.
+Eurofins TestAmerica, Irvine
+Page 16 of 16
+8/22/2019
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+APPENDIX F  
+4370 Contractors Common
+Livermore, CA 94551
+wy
+Se Tel: 925-999-9232
+7a Fax: 925-999-8837
+AWS USA info@geothermusa.com
+www.geothermusa.com
+August 2, 2019
+Geolabs, Inc.
+2006 Kalihi Street
+Honolulu, HI 96819
+Attn: Herbert Chu
+Re: Thermal Analysis of Native Soil Samples
+West Oahu Solar Farm Development — Kapolei, Oahu, Hawaii (Project No. 7939-00)
+The following is the report of thermal dryout characterization tests conducted on the four
+(4) native soil samples sent to our laboratory.
+Thermal Resistivity Tests: The samples were tested at the ‘as received’ moisture
+content and 90% of the MDD provided by Geolabs. The tests were conducted in
+accordance with the IEEE standard 442-2017. The results are tabulated below and the
+thermal dryout curves are presented in Figure 1.
+Sample ID, Description, Thermal Resistivity, Moisture Content and Densit
+5 ti Thermal Resistivity | Moisture Dry
+Sample ID eccbbay °C- week aro Content | Density
+ag a
+Reddish brown clayey silt with a
+Bulk-1
+little organics
+Reddish brown clayey silt with a
+COOL SOLUTIONS FOR UNDERGROUND POWER CABLES
+THERMAL SURVEYS, CORRECTIVE BACKFILLS & INSTRUMENTATION
+Serving the electric power industry since 1978
+wy
+7 Geotherm
+‘pe USA
+Comments: The thermal characteristic depicted in the dryout curve applies for the soils
+at their respective test dry density.
+Please contact us if you have any questions or if we can be of further assistance.
+Geotherm USA
+Warf
+Nimesh Patel
+Ss WY Ye
+7s Geotherm
+- USA
+THERMAL DRYOUT CURVE
+350
+ao I
+N
+3
+Native Soil
+Bulk #1
+Bulk #2
+Bulk #3
+Bulk #4
+N
+8
+THERMAL RESISTIVITY (°C-cm/W)
+3
+t
+50 +++ +
+10
+15
+25 30
+MOISTURE CONTENT (% DRY WEIGHT)
+Geolabs, Inc. (Project No. 7939-00)
+Thermal Analysis of Native Soil
+West Oahu Solar Farm Development -— Kapolei, Oahu, Hawaii
+August 2019
+Figure 1

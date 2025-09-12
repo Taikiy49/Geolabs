@@ -1,0 +1,3463 @@
+FINAL SUBMISSION 
+PRELIMINARY GEOTECHNICAL ENGINEERING EXPLORATION 
+KAWAIHAE ROAD – WAIAKA BRIDGE REPLACEMENT AND 
+REALIGNMENT OF APPROACHES 
+DISTRICT OF SOUTH KOHALA, ISLAND OF HAWAII 
+W.O. 8190-00     MARCH 8, 2023 
+Prepared for 
+WSP 
+and 
+STATE OF HAWAII 
+DEPARTMENT OF TRANSPORTATION 
+HIGHWAYS DIVISION 
+GEOLABS, INC. 
+Geotechnical Engineering and Drilling Services 
+FINAL SUBMISSION
+PRELIMINARY GEOTECHNICAL ENGINEERING EXPLORATION
+KAWAIHAE ROAD —- WAIAKA BRIDGE REPLACEMENT AND
+REALIGNMENT OF APPROACHES
+DISTRICT OF SOUTH KOHALA, ISLAND OF HAWAII
+W.O. 8190-00 MARCH 8, 2023
+Prepared for
+WSP
+and
+STATE OF HAWAII
+DEPARTMENT OF TRANSPORTATION
+HIGHWAYS DIVISION
+LICENSED
+PROFESSIONAL
+ENGINEER
+No. 5635-C
+THIS WORK WAS: PREPARED BY
+ME OR UNDER MY SUPERVISION.
+° 4-30-24
+SIGNATURE EXPIRATION DATE
+OF THE LICENSE
+GEOLABS, INC.
+Geotechnical Engineering and Drilling Services
+94-429 Koaki Street, Suite 200 e Waipahu, HI 96797
+Hawaii ¢ California
+GEOLABS, INC.
+Geotechnical Engineering and Drilling Services
+March 8, 2023
+W.O. 8190-00
+Mr. Darin Chinen
+WSP
+American Savings Bank Tower
+Honolulu, HI 96813
+Dear Mr. Chinen:
+Geolabs, Inc. is pleased to submit our report entitled "Preliminary Geotechnical
+Engineering Exploration, Kawaihae Road — Waiaka Bridge Replacement and
+Realignment of Approaches, District of South Kohala, Island of Hawaii," prepared for the
+design of the project.
+Our work was performed in general accordance with the scope of services outlined
+in our fee proposal dated December 21, 2018.
+Please note that the soil and rock samples recovered during our field exploration
+(remaining after testing) will be stored for a period of two months from the date of this
+report. The samples will be discarded after that date unless arrangements are made for
+a longer sample storage period. Please contact our office for alternative sample storage
+requirements, if appropriate.
+Detailed discussion and specific preliminary design recommendations are
+contained in the body of this report. If there is any point that is not clear, please contact
+our Office.
+Very truly yours,
+GEOLABS, INC.
+Gerald Y. Seki, P.E.
+Vice President
+GS:GB:If
+94-429 Koaki Street, Suite 200 * Waipahu, Hawaii 96797
+Telephone: (808) 841-5064 e E-mail: hawaii @geolabs.net
+Hawaii ¢ California
+W.O. 8190-00 
+GEOLABS, INC. 
+Page i 
+Hawaii • California 
+PRELIMINARY GEOTECHNICAL ENGINEERING EXPLORATION 
+KAWAIHAE ROAD – WAIAKA BRIDGE REPLACEMENT AND 
+REALIGNMENT OF APPROACHES 
+DISTRICT OF SOUTH KOHALA, ISLAND OF HAWAII 
+W.O. 8190-00       MARCH 8, 2023 
+TABLE OF CONTENTS 
+ Page 
+SUMMARY OF FINDINGS AND RECOMMENDATIONS .............................................. iii 
+1. 
+GENERAL ............................................................................................................ 1 
+1.1 
+Project Considerations ............................................................................... 1 
+1.2 
+Purpose and Scope ................................................................................... 2 
+2. 
+SITE CHARACTERIZATION ................................................................................ 4 
+2.1 
+Regional Geology ...................................................................................... 4 
+2.2 
+Site Description .......................................................................................... 5 
+2.3 
+Subsurface Conditions ............................................................................... 5 
+2.4 
+Seismic Design Parameters ....................................................................... 7 
+2.4.1 Earthquakes and Seismicity ............................................................ 7 
+2.4.2 Soil Profile Type for Seismic Design ............................................... 8 
+2.4.3 Liquefaction Potential ...................................................................... 9 
+3. 
+DISCUSSION AND RECOMMENDATIONS ...................................................... 11 
+3.1 
+Scour Potential ........................................................................................ 12 
+3.2 
+Bridge Foundations .................................................................................. 13 
+3.3 
+Foundation Probing ................................................................................. 14 
+3.4 
+Geosynthetic Reinforced Soil (GRS) Abutment Walls ............................. 15 
+3.5 
+Site Grading ............................................................................................. 17 
+3.6 
+Cut and Fill Slopes ................................................................................... 18 
+3.7 
+Excavation ............................................................................................... 19 
+3.8 
+Pavement Design .................................................................................... 20 
+3.8.1 Design Traffic Loading Conditions/Traffic Index ............................ 20 
+3.8.2 Design Subgrade Conditions ........................................................ 21 
+3.8.3 Design Pavement Section ............................................................. 22 
+3.9 
+Underground Utilities ............................................................................... 23 
+3.10 
+Additional Services During Design ........................................................... 24 
+4. 
+LIMITATIONS ..................................................................................................... 25 
+CLOSURE ..................................................................................................................... 27 
+TABLE OF CONTENTS 
+                                                                                                                                   Page 
+W.O. 8190-00 
+GEOLABS, INC. 
+Page ii 
+Hawaii • California 
+PLATES 
+Project Location Map ................................................................................... Plate 1 
+Site Plan ...................................................................................................... Plate 2 
+APPENDIX  A 
+Field Exploration ···························································· Pages A-1 and A-2 
+Soil Log Legend ······································································· Plate A-0.1 
+Soil Classification Log Key ·························································· Plate A-0.2 
+Rock Log Legend ····································································· Plate A-0.3 
+Logs of Borings ··························································· Plates A-1.1 thru A-4 
+APPENDIX  B 
+Laboratory Tests ...................................................................................... Page B-1 
+Laboratory Test Data  ............................................................... Plates B-1 thru B-6 
+APPENDIX  C 
+Photographs of Core Samples .................................................. Plates C-1 thru C-4 
+APPENDIX  D 
+Pavement Analysis ................................................................... Plates D-1 thru D-8 
+W.O. 8190-00 
+GEOLABS, INC. 
+Page iii 
+Hawaii • California 
+PRELIMINARY GEOTECHNICAL ENGINEERING EXPLORATION 
+KAWAIHAE ROAD – WAIAKA BRIDGE REPLACEMENT AND 
+REALIGNMENT OF APPROACHES 
+DISTRICT OF SOUTH KOHALA, ISLAND OF HAWAII 
+W.O. 8190-00     MARCH 8, 2023 
+SUMMARY OF FINDINGS AND RECOMMENDATIONS 
+The two borings drilled at the bridge location generally encountered fill materials 
+extending to depths of about 1 and 9 feet below the existing ground/pavement surface. The 
+fill materials consisted of medium dense to dense silty gravel and gravelly cobbles with some 
+boulders.  Below the fill materials, volcanic ash consisting of very stiff sandy silt extending 
+to a depth of about 3 feet below the existing ground surface and clinker extending to a depth 
+of about 9 feet below the existing ground surface were encountered at the east side of the 
+bridge.  The fill materials and clinker were underlain by hard to very hard basalt formation 
+interbedded with clinker (medium dense sandy gravel) extending to the maximum depth 
+explored of about 51.5 feet below the existing ground surface. We did not encounter 
+groundwater at the time of our field exploration. 
+Based on the materials encountered in the two borings drilled for the replacement 
+bridge, high quality basalt rock formation was encountered at a depth of about 9 feet below 
+the existing ground/pavement surface, which corresponds to an elevation of about +2,409 
+feet MSL. Since the basalt rock has a Rock Quality Designation (RQD) of more than 
+50 percent, the rock may be considered a “non-erodible” surface and should not be affected 
+by scour. Therefore, we believe the replacement bridge may be supported on shallow 
+foundations provided that the bottom of the foundations extends down to slightly to 
+moderately fractured basalt rock formation encountered at an elevation of about +2,409 feet 
+MSL or deeper.  The following bearing capacity values may be used to evaluate the bearing 
+support of the planned replacement bridge structure based on Load and Resistance Factor 
+Design (LRFD) methods.  
+Extreme Event Limit State = 60,000 psf 
+Strength Limit State = 27,000 psf 
+Service Limit State = 20,000 psf 
+Voids and/or cavities commonly exist in basalt formation. Therefore, a program of 
+cavity probing and grouting at the bridge abutment foundation locations should be 
+conducted during construction to reduce the potential for loss of foundation support resulting 
+from the collapse of cavities below the foundation.  The text of this report should be referred 
+to for detailed discussions and specific geotechnical recommendations. 
+END OF SUMMARY OF FINDINGS AND RECOMMENDATIONS 
+W.O. 8190-00 
+GEOLABS, INC. 
+Page 1 
+Hawaii • California 
+SECTION 1.  GENERAL 
+This report presents the results of our preliminary geotechnical engineering 
+exploration performed for the proposed Kawaihae Road – Waiaka Bridge Replacement 
+and Realignment of Approaches project, located in the District of South Kohala on the 
+Island of Hawaii. The project location and general vicinity are shown on the Project 
+Location Map, Plate 1. 
+This 
+report 
+summarizes 
+the 
+findings 
+and 
+preliminary 
+geotechnical 
+recommendations based on data from our borings and laboratory testing performed for 
+the proposed project. The findings and preliminary recommendations presented herein 
+are subject to the limitations noted at the end of this report. 
+1.1 
+Project Considerations 
+The project site is located at the intersection of Kawaihae Road and Kohala 
+Mountain Road in the District of South Kohala on the Island of Hawaii.  Waiaka Bridge is 
+located to the east of this intersection. 
+We understand that the project consists of improvements to the intersection and 
+the replacement of Waiaka Bridge. Based on the information provided, the existing 
+approaches at the intersection of Kawaihae Road and Kohala Mountain Road provides 
+limited site distance for the southbound approach of Kohala Mountain Road and the 
+eastbound left turn from Kawaihae Road.  Therefore, the improvements would consist of 
+realigning the approaches to provide better site distance. 
+In addition, the improvements would consist of replacing the existing bridge due to 
+the bridge having a National Bridge Inventory Standards inspection rating of 26, which 
+corresponds to a functionally obsolete bridge.  Waiaka Bridge does not have adequate 
+lane and shoulder widths resulting in traffic congestion and delays.  The replacement 
+bridge will be designed to current State and Federal design standards to reduce traffic 
+congestion and delays.  We understand that the new bridge will be a single-span bridge 
+supported by abutments located on the stream banks. 
+SECTION 1. GENERAL 
+W.O. 8190-00 
+GEOLABS, INC. 
+Page 2 
+Hawaii • California 
+1.2 
+Purpose and Scope 
+The purpose of our exploration is to obtain an overview of the subsurface 
+conditions at the site to develop a soil/rock data set to formulate preliminary geotechnical 
+engineering recommendations for the proposed bridge project.  The work was performed 
+in general accordance with our fee proposal dated December 21, 2018.  In order to 
+accomplish this, we conducted the following tasks and work efforts: 
+1. 
+Research and review of available subsurface and geologic information in the 
+project vicinities. 
+2. 
+Application for excavation permits from the applicable agencies by our 
+engineer. 
+3. 
+Marking boring locations and utility clearances by our engineer. 
+4. 
+Coordination of boring stakeout and utility clearances by our engineer.   
+5. 
+Develop traffic control plans and provide traffic control and safety devices 
+during our field exploration. 
+6. 
+Preparation of a Safety Plan and a Quality Control Plan for the project. 
+7. 
+Mobilization/demobilization of our drilling rig currently on the Island of Hawaii, 
+water truck, and two operators from Honolulu to the project site and back.  
+8. 
+Drilling and sampling four borings extending to depths of about 10.1 to 
+51.5 feet below the existing ground surface. Obtaining two bulk samples for 
+R-Value testing. 
+9. 
+Coordination of the field exploration and logging of the borings by our 
+geologist. 
+10. 
+Laboratory testing of selected samples obtained during the field exploration 
+as an aid in classifying the materials and evaluating their engineering 
+properties. 
+11. 
+Analyses of the field and laboratory data to formulate preliminary geotechnical 
+recommendations for the proposed bridge project. 
+12. 
+Preparation of a formal report summarizing our work on the project and 
+presenting our findings and preliminary recommendations. 
+13. 
+Coordination of our overall work on the project by our project engineer. 
+SECTION 1. GENERAL 
+W.O. 8190-00 
+GEOLABS, INC. 
+Page 3 
+Hawaii • California 
+14. 
+Quality assurance of our work and client/design team consultation by our 
+principal engineer. 
+15. 
+Miscellaneous work efforts, such as drafting, word processing, and clerical 
+support. 
+Detailed descriptions of our field exploration and Logs of Borings are provided in 
+Appendix A. Results of the laboratory tests performed on selected soil samples are 
+presented in Appendix B.  Photographs of the core samples retrieved from our field 
+exploration are presented in Appendix C. The pavement analyses are presented in 
+Appendix D. 
+END OF GENERAL 
+W.O. 8190-00 
+GEOLABS, INC. 
+Page 4 
+Hawaii • California 
+SECTION 2.  SITE CHARACTERIZATION 
+2.1 
+Regional Geology 
+The Island of Hawaii is the largest island in the Hawaiian Archipelago and covers 
+an area of approximately 4,000 square miles. The island was formed by the activity of the 
+following five shield volcanoes: Kohala (long extinct), Mauna Kea (activity during recent 
+geologic time), Hualalai (last erupted in 1801 – 1803), and Mauna Loa and Kilauea (both 
+still active). 
+The project site is situated on the southern flank of Kohala Mountain, which has 
+formed the northern portion of the island.  The site is underlain by basaltic lava flows of 
+the Hawi Volcanic Series of Kohala Mountain, which were deposited during the 
+Pleistocene Epoch (Stearns and Macdonald, 1946).  The Hawi Volcanic Series typically 
+is composed of basaltic lava flows that are overlain by a relatively thin layer of 
+palagonitized ash, locally referred to as Pahala Ash.  The volcanic ash soil at the project 
+site differs from Pahala Ash found in other portions of the Island of Hawaii in that the 
+in-situ moisture content is generally lower, and the soil exists in a dry friable state.   
+The lava formation at the project site appears to be of a’a and pahoehoe basalt 
+type flows, which spread and ponded as they approached the ocean.  A'a lava typically 
+is characterized by a porous, rough, and irregular flow surface resembling a jagged 
+accumulation of rock fragments, including cobbles and boulders.  Typically, a more dense 
+and layered lava rock material is contained within the lava flow core.  Pahoehoe lava is 
+characterized by a smooth, rope-like or billowy surface and an internal structure of 
+vesicular (porous) rock.  Cavities are commonly encountered in pahoehoe lavas.  These 
+cavities were formed when the lava was still in a molten state and represented both lava 
+tubes (intra-flow cavities) and blisters and pockets (inter-flow cavities).  Lava tubes are 
+formed when molten lava drains from the cooling flow, leaving a hollow tube-like structure, 
+which may extend for a large distance longitudinally along the flow.  Inter-flow cavities are 
+generally smaller in horizontal extent. 
+SECTION 2. SITE CHARACTERIZATION  
+W.O. 8190-00 
+GEOLABS, INC. 
+Page 5 
+Hawaii • California 
+2.2 
+Site Description 
+The project site is located at the intersection of Kawaihae Road and Kohala 
+Mountain Road in the District of South Kohala on the Island of Hawaii.  To the east of this 
+intersection is Waiaka Bridge, which crosses Keanuiomano Stream.  The approximate 
+location of the project site is shown on the Site Plan, Plate 2. 
+The existing intersection is a three-way intersection with Kohala Mountain Road 
+(Route 250) aligned in the north-south direction and Kawaihae Road (Route 19) aligned 
+in the east-west direction.  Kohala Mountain Road terminates at the intersection.   
+Kohala Mountain is a two-lane, undivided roadway consisting of asphaltic concrete 
+pavement.  The existing pavement surface elevations of Kohala Mountain Road within 
+the project limits range from about +2,416 (at the intersection) to +2,425 feet Mean Sea 
+Level (MSL) (at the northern project limits). 
+Kawaihae Road is a two-lane, undivided roadway consisting of asphaltic concrete 
+pavement.  The existing pavement surface elevations of Kohala Mountain Road within 
+the project limits range from about +2,408 (at the western project limits) to +2,423 feet 
+MSL (at the eastern project limits). 
+The existing Waiaka Bridge crosses over Keanuiomano Stream.  In general, most 
+of the stream area was dry at the time of our field exploration.  Based on our observations, 
+the stream bed surface consisted of basalt rock.  Waiaka Bridge is a two-span bridge 
+supported by abutments at a center pier.  A wooden pedestrian walkway was observed 
+on the north side of Waiaka Bridge.  Utility pipes were observed hanging on the south 
+side of the bridge. 
+2.3 
+Subsurface Conditions 
+The subsurface conditions at the project site were explored by drilling and 
+sampling four borings, designated as Boring Nos. 1 through 4, extending to depths 
+ranging from about 10.1 to 51.5 feet below the existing pavement/ground surface. The 
+approximate boring locations are shown on the Site Plan, Plate 2. 
+SECTION 2. SITE CHARACTERIZATION  
+W.O. 8190-00 
+GEOLABS, INC. 
+Page 6 
+Hawaii • California 
+Boring Nos. 1 and 2 were drilled near the abutments of the existing bridge 
+structure. Boring No. 1 was drilled near the west abutment (on the roadway), and Boring 
+No. 2 was drilled near the east abutment (off the roadway).  In general, the boring drilled 
+on the roadway encountered 10 inches of asphaltic concrete overfill materials extending 
+to a depth of about 9 feet below the existing pavement surface. The fill materials consisted 
+of medium dense to dense gravelly cobbles with some boulders.  Below the fill materials, 
+hard to very hard basalt formation interbedded with clinker (medium dense sandy gravel) 
+was encountered in the boring extending to the bottom of the boring corresponding to 
+about 50 feet below the existing pavement surface. 
+Boring No. 2, drilled off the roadway, encountered a layer of fill about one-foot thick 
+consisting of medium dense silty gravel.  The layer of fill was underlain by volcanic ash 
+consisting of very stiff sandy silt extending to a depth of about 3 feet below the existing 
+ground surface.  We encountered clinker (dense to very dense silty gravel with some 
+cobbles) below the volcanic ash extending to a depth of about 9 feet below the existing 
+ground surface.  Below the clinker, hard to very hard basalt formation interbedded with 
+clinker (medium dense sandy gravel) was encountered in the boring, extending to a depth 
+of about 51.5 feet below the existing ground surface.  
+Two shallow borings, designated as Boring Nos. 3 and 4, were drilled to obtain 
+subsurface information for the design of the new roadway pavement section. In general, 
+the borings encountered 12 inches of asphaltic concrete over volcanic ash extending to 
+depths of about 5 to 6 feet below the existing ground/pavement surface. The volcanic ash 
+consisted of very stiff to hard sandy silt and very dense silty sand. The borings 
+encountered clinker consisting of very dense gravelly cobbles extending to depths of 
+about 10.1 to 10.25 feet below the existing ground/pavement surface. 
+We did not encounter groundwater at the time of our field exploration. However, it 
+should be noted that water levels may vary with stream flow conditions, seasonal rainfall, 
+time of year, and other environmental factors. 
+Detailed descriptions of our field exploration methodology and the Logs of Borings 
+are presented in Appendix A. Results of the laboratory tests performed on selected soil 
+SECTION 2. SITE CHARACTERIZATION  
+W.O. 8190-00 
+GEOLABS, INC. 
+Page 7 
+Hawaii • California 
+samples obtained from our field exploration are presented in Appendix B. Photographs of 
+the core samples retrieved from our field exploration are presented in Appendix C. 
+2.4 
+Seismic Design Parameters 
+Based on the Load and Resistance Factor Design (LRFD) Bridge Design 
+Specifications, 9th Edition (2020), the project site may be subject to seismic activity and 
+seismic design considerations will need to be addressed. The following subsections 
+provide discussions on the seismicity, soil profile type for seismic design, and the potential 
+for liquefaction at the project site. 
+2.4.1 Earthquakes and Seismicity 
+Generally, earthquakes that occur throughout the world are caused by shifts in the 
+tectonic plates. In contrast, earthquake activity in Hawaii is linked primarily to volcanic 
+activity. Therefore, earthquake activity in Hawaii generally occurs before or during 
+volcanic eruptions. In addition, earthquakes may result from the underground 
+movement of magma that comes close to the surface but does not erupt. The Island 
+of Hawaii experiences thousands of earthquakes each year, but most are so small 
+that they can only be detected by sensitive instruments. However, some of the 
+earthquakes are strong enough to be felt, and a few causes minor to moderate 
+damage. 
+In general, earthquakes associated with volcanic activity are most common on the 
+Island of Hawaii. Earthquakes that are directly associated with the movement of 
+magma are concentrated beneath the active Kilauea and Mauna Loa Volcanoes on 
+the Island of Hawaii. Because the majority of the earthquakes in Hawaii (over 
+90 percent) are related to volcanic activity, the risk of seismic activity and degree of 
+ground shaking diminishes with increased distance from the active volcanoes located 
+in the southern portion of the Island of Hawaii. 
+The Island of Hawaii has experienced numerous earthquakes greater than 
+Magnitude 6 (M6+), including the October 15, 2006 earthquakes. Based on 
+information obtained from the United States Geological Survey (USGS) Bulletin 
+SECTION 2. SITE CHARACTERIZATION  
+W.O. 8190-00 
+GEOLABS, INC. 
+Page 8 
+Hawaii • California 
+2006, the following is a list of some destructive earthquakes that have occurred on 
+the Island of Hawaii since 1868. 
+DATE 
+LOCATION 
+MAGNITUDE 
+March 28, 1868 
+South Hawaii 
+7.0 
+April 2, 1868 
+South Hawaii 
+7.9 
+October 5, 1929 
+Hualalai 
+6.5 
+August 21, 1951 
+Kona 
+6.9 
+April 26, 1973 
+North Hilo 
+6.2 
+November 29, 1975 
+Kalapana 
+7.2 
+November 16, 1983 
+Kaoiki 
+6.7 
+June 25, 1989 
+Kalapana 
+6.2 
+October 15, 2006 
+Kiholo Bay/Hawi 
+6.7 / 6.0 
+May 4, 2018 
+Leilani Estates 
+6.9 
+October 10, 2021 
+Naalehu 
+6.2 
+It should be noted that several of the significant earthquakes on the Island of Hawaii 
+have occurred on the north and west sides in the past 100 years, including 
+two earthquakes greater than Magnitude 6 in 1929 and 1951. In addition, the 
+October 15, 2006 earthquakes occurred in the northwestern portion of the island. 
+Therefore, it may be concluded that the western side of the Island of Hawaii could 
+experience moderate to severe earthquakes and associated ground shaking, 
+depending on the earthquake’s origin. 
+2.4.2 Soil Profile Type for Seismic Design 
+Based on the subsurface information obtained from our borings and the geologic 
+setting of the area, the project site may be classified from a seismic analysis 
+standpoint as being a “Very Dense Soil and Soft Rock” site corresponding to a 
+Site Class C soil profile type based on AASHTO 2020 LRFD Bridge Design 
+Specifications, 9th Edition. 
+Based on the AASHTO 2020 LRFD Bridge Design Specifications, the seismic 
+retrofitted bridge structure will need to be designed based on an earthquake return 
+period of 1,000 years. Based on a 1,000-year return period and the anticipated Site 
+SECTION 2. SITE CHARACTERIZATION  
+W.O. 8190-00 
+GEOLABS, INC. 
+Page 9 
+Hawaii • California 
+Class, the following seismic design parameters were estimated and may be used for 
+the seismic analysis of the bridge structure planned for the project. 
+SEISMIC DESIGN PARAMETERS 
+WAIAKA BRIDGE 
+AASHTO 2020 LRFD BRIDGE DESIGN SPECIFICATIONS 
+1,000-YEAR RETURN PERIOD 
+(~7% PROBABILITY OF EXCEEDANCE IN 75 YEARS) 
+Parameter 
+Value 
+Peak Bedrock Acceleration, PBA (Site Class B)   
+0.433g 
+Spectral Response Acceleration (Site Class B), SS 
+0.879g 
+Spectral Response Acceleration (Site Class B), S1 
+0.346g 
+Site Class  
+“C” 
+Site Coefficient, Fpga  
+1.00 
+Site Coefficient, Fa  
+1.05 
+Site Coefficient, Fv  
+1.45 
+MCE Peak Ground Acceleration, PGA (Site Class C) or As 
+0.433g 
+Design Spectral Response Acceleration, SDS  
+0.921g 
+Design Spectral Response Acceleration, SD1  
+0.503g 
+Seismic Design Category 
+“D” 
+2.4.3 Liquefaction Potential 
+Soil liquefaction is a condition where saturated cohesionless soils located near the 
+ground surface undergo a substantial loss of strength due to the build-up of excess 
+pore water pressures resulting from cyclic stress applications induced by 
+earthquakes. In this process, when the loose saturated sand deposit is subjected 
+to vibration (such as during an earthquake), the soil tends to densify and decrease 
+in volume causing an increase in pore water pressure. If drainage is unable to 
+occur rapidly enough to dissipate the build-up of pore water pressure, the effective 
+stress (internal strength) of the soil is reduced. Under sustained vibrations, the 
+pore water pressure build-up could equal the overburden pressure, essentially 
+reducing the soil shear strength to zero and causing it to behave as a viscous fluid. 
+During liquefaction, the soil acquires sufficient mobility to permit both horizontal 
+and vertical movements, and if not confined, will result in significant deformations. 
+SECTION 2. SITE CHARACTERIZATION  
+W.O. 8190-00 
+GEOLABS, INC. 
+Page 10 
+Hawaii • California 
+Soils most susceptible to liquefaction are loose, uniformly graded, fine-grained 
+sands and loose silts with little cohesion. The major factors affecting the 
+liquefaction characteristics of a soil deposit are as follows: 
+FACTORS 
+LIQUEFACTION SUSCEPTIBILITY 
+Grain Size Distribution 
+Fine and uniform sands and silts are 
+more susceptible to liquefaction than 
+coarse or well-graded sands. 
+Initial Relative Density 
+Loose sands and silts are most 
+susceptible to liquefaction. Liquefaction 
+potential is inversely proportional to 
+relative density. 
+Magnitude and Duration of Vibration 
+Liquefaction potential is directly 
+proportional to the magnitude and 
+duration of the earthquake. 
+Based on the subsurface conditions encountered, the phenomenon of soil 
+liquefaction is not a design consideration for this project site. The risk for potential 
+liquefaction is low based on the subsurface conditions encountered (medium dense 
+to dense fill, dense to very dense clinker, and very stiff volcanic ash overlying hard to 
+very hard basalt rock formation within the depths of our borings). 
+END OF SITE CHARACTERIZATION 
+W.O. 8190-00 
+GEOLABS, INC. 
+Page 11 
+Hawaii • California 
+SECTION 3.  DISCUSSION AND RECOMMENDATIONS 
+The two borings drilled to obtain subsurface information for the design of the 
+replacement bridge generally encountered fill materials extending to depths of about 1 
+and 9 feet below the existing ground/pavement surface. The fill materials consisted of 
+medium dense to dense silty gravel and gravelly cobbles with some boulders.  Below the 
+fill materials, volcanic ash consisting of very stiff sandy silt extending to a depth of about 
+3 feet below the existing ground surface and clinker extending to a depth of about 9 feet 
+below the existing ground surface were encountered at the east side of the bridge.  The 
+fill materials and clinker were underlain by hard to very hard basalt formation interbedded 
+with clinker (medium dense sandy gravel) extending to the maximum depth explored of 
+about 51.5 feet below the existing ground surface.  
+Two shallow borings drilled to obtain subsurface information for the design of the 
+new roadway pavement section generally encountered 12 inches of asphaltic concrete 
+over volcanic ash extending to depths of about 4.5 to 5 feet below the existing 
+ground/pavement surface.  Clinker consisting of dense to very dense gravelly cobbles 
+extending to depths of about 10.1 to 10.25 feet below the existing ground/pavement 
+surface was encountered below the volcanic ash.  We did not encounter groundwater in 
+the borings at the time of our field exploration. 
+Based on the materials encountered at the site, high quality basalt rock formation 
+was encountered at a depth of about 9 feet below the existing ground surface, which 
+corresponds to an elevation of about +2,409 feet MSL. Since the basalt rock has a Rock 
+Quality Designation (RQD) of more than 50 percent, the rock may be considered a 
+“non-erodible” surface and should not be affected by scour. Therefore, we believe the 
+replacement bridge may be supported on shallow foundations provided that the bottom 
+of the foundations extends down to the slightly to moderately fractured basalt rock 
+formation encountered at an elevation of about +2,409 feet MSL or deeper.   
+Voids and/or cavities commonly exist in the basalt formation. Therefore, a program 
+of cavity probing and grouting at the bridge abutment foundation locations should be 
+conducted during construction to reduce the potential for loss of foundation support 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 8190-00 
+GEOLABS, INC. 
+Page 12 
+Hawaii • California 
+resulting from the collapse of cavities below a footing.  We recommend drilling a 3-inch 
+diameter probe hole extending to a depth of at least 10 feet below the planned bottom of 
+footing elevation for every 100 square feet of foundation area or at 10 feet on center along 
+the abutment foundations. We recommend utilizing a low strength sand-cement grout 
+mixture or Controlled Low Strength Material (CLSM) with a slump range of 6 to 9 inches 
+to backfill the probe holes and cavities discovered at the site.  The grout/CLSM should be 
+injected at low to moderate pressures. 
+Detailed discussions of these items and our geotechnical recommendations for the 
+planning and preliminary design of the project are presented in the following sections. 
+3.1 
+Scour Potential 
+Scour is the result of the erosive action of flowing water, excavating and carrying 
+away material from the bed and banks of the stream.  Total scour over a period of time 
+generally consists of three components. 
+1. 
+Aggregation and Degradation 
+2. 
+Contraction Scour 
+3. 
+Local Scour 
+The rates of scour depend on a number of factors such as the shape and 
+dimensions of a pier or abutment, depth of flow, velocity of approach flow, size and 
+gradation of stream bed material, and bed configuration. 
+One of the factors affecting the scour depth is the grain size characteristic of the 
+stream bed material.  The median diameter of the stream bed material (D50) in conjunction 
+with the depth of flow and flow velocity, is used to calculate the fall velocity of stream bed 
+materials in scour analysis.  Based on the materials encountered in the two borings drilled 
+for the replacement bridge, it is anticipated that high quality basalt rock formation will be 
+encountered at a depth of about 9 feet below the existing ground surface, which 
+corresponds to an elevation of about +2,409 feet MSL.  Based on the guidelines on scour 
+potential by the Federal Highway Administration, the basalt rock formation starting at this 
+elevation may be considered a “non-erodible” surface since its rock classification has a 
+Rock Quality Designation (RQD) of more than 50 percent and, therefore, should not be 
+affected by scour. 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 8190-00 
+GEOLABS, INC. 
+Page 13 
+Hawaii • California 
+As a result of the high quality rock formation encountered at the site, we believe 
+that countermeasures to reduce the potential for scour would not be required for the 
+replacement bridge foundations provided that the bridge foundations bear directly on the 
+high quality basalt rock formation encountered in the borings.   
+It should be noted that areas exposing on-site or new fills, volcanic ash, or clinker 
+may be subjected to scour and may require countermeasures to reduce the potential for 
+scour. 
+3.2 
+Bridge Foundations 
+Based on the design criteria provided by the State of Hawaii, Department of 
+Transportation, Highways Division, the replacement bridge foundations will be designed 
+based on the LRFD method.  
+As mentioned previously, the replacement bridge will be a single-span bridge 
+supported on two abutments.  Based on our field exploration results, we believe that the 
+replacement bridge may be supported on shallow foundations provided that the bottom 
+of the foundations extends down to the slightly to moderately fractured basalt rock 
+formation encountered at an elevation of about +2,409 feet MSL or deeper.  The following 
+bearing capacity values may be used to evaluate the bearing support of the planned 
+replacement bridge structure based on LRFD methods.   
+ESTIMATED BEARING CAPACITIES FOR BRIDGE FOUNDATION DESIGN 
+Subgrade Material 
+Limit State 
+Bearing Capacity 
+(psf) 
+Basalt Formation 
+Extreme Events 
+60,000 
+Strength 
+27,000 
+Service 
+20,000 
+Foundations next to utility trenches or easements should be embedded below a 
+45-degree imaginary plane extending upward from the bottom edge of the utility trench, 
+or the footings should extend to a depth as deep as the inverts of the utility lines. This 
+requirement is necessary to avoid surcharging adjacent below-grade structures with 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 8190-00 
+GEOLABS, INC. 
+Page 14 
+Hawaii • California 
+additional structural loads and to reduce the potential for appreciable foundation 
+settlement. 
+Soft and/or loose materials encountered at the bottom of footing excavations 
+should be over-excavated to expose the underlying hard basalt formation. The 
+over-excavation should be backfilled with concrete, or the bottom of the footing may be 
+extended deeper to bear directly on the hard basalt rock surface. 
+Based on a service limit state bearing pressure of 20,000 psf, we estimate 
+foundation settlements under the anticipated design loads for footings bearing directly on 
+the basalt rock formation, as recommended herein, to be less than 0.5 inches. Differential 
+settlements between the abutment footings supported on the basalt formation or hard 
+alluvium should be on the order of about 0.25 inches. 
+Lateral loads acting on the bridge structure may be resisted by friction developed 
+between the bottom of the foundation and the bearing materials and by passive earth 
+pressure acting against the near-vertical faces of the foundation system. A coefficient of 
+friction of 0.70 and 0.56 may be used to evaluate the sliding resistance of foundations 
+bearing on the hard basalt rock for the extreme event limit state and strength limit state, 
+respectively. Resistance due to passive earth pressure for footings embedded in the very 
+dense silty gravel and hard basalt rock may be estimated using an equivalent fluid 
+pressure of 450 pounds per square foot per foot of depth (pcf) for the extreme event limit 
+state. Passive earth pressure with an equivalent fluid pressure of 225 pcf may be used 
+for the strength limit state of footings embedded basalt rock formation. 
+The above values assume that the footings are cast neat against the basalt rock 
+formation or that the space around the footings is backfilled with Class B concrete.  Unless 
+covered by pavements or slabs, the passive resistance in the upper 12 inches should be 
+neglected.   
+3.3 
+Foundation Probing 
+Based on our experience in the area, voids and/or cavities commonly exist in the 
+basalt formation in the vicinity. To reduce the potential for loss of foundation support 
+resulting from the collapse of cavities below a footing, we recommend implementing a 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 8190-00 
+GEOLABS, INC. 
+Page 15 
+Hawaii • California 
+program of cavity probing and grouting at the bridge abutment foundation locations during 
+construction. 
+For estimating purposes, we recommend drilling a probe hole for every 100 square 
+feet of foundation area or at 10 feet on center along the abutment foundations. The probe 
+holes should be at least 3 inches in diameter and should extend to a depth of at least 10 
+feet below the planned bottom of footing elevation. If cavities and/or voids are 
+encountered or suspected during the probing operation, additional probe holes should be 
+drilled at closer spacing to aid in delineating the vertical and lateral extent of the cavity 
+and/or void. The probe holes and cavities discovered should be backfilled with 
+sand-cement grout injected at low to moderate pressures. We recommend utilizing a low 
+strength sand-cement grout mixture with a slump range of 6 to 9 inches for the grouting 
+operations. As an alternative to sand-cement grout, CLSM with a slump range of 6 to 
+9 inches also may be used for the grouting operations. 
+3.4 
+Geosynthetic Reinforced Soil (GRS) Abutment Walls 
+To reduce the dynamic lateral earth forces that will be induced on the bridge 
+abutment wall structures due to seismic loading, geosynthetic reinforced soil (GRS) wall 
+structures behind the bridge abutments and wing walls are desired. 
+The GRS abutments are constructed utilizing high-density polyethylene 
+reinforcement or other geosynthetic reinforcing elements with layers of compacted 
+granular fill. The reinforcing elements are installed to reinforce the backfill zone and 
+improve the shear strength of the reinforced soil zone. This composite system essentially 
+forms a gravity structure with the ability to tolerate significant total and differential 
+settlements. The GRS structures are desirable due to the ease and quickness of 
+construction, high load-carrying capacity, and cost savings. 
+We believe that the recommended values presented in the “Bridge Foundations” 
+section may be used to evaluate the bearing support, sliding resistance, and passive 
+pressure resistance of the GRS wall foundations. Soft and/or loose materials encountered 
+at the bottom of the structure excavations should be over-excavated to expose the 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 8190-00 
+GEOLABS, INC. 
+Page 16 
+Hawaii • California 
+underlying basalt rock.  The over-excavation may be backfilled with Class B concrete or 
+the bottom of the footing may be extended down to the underlying basalt rock. 
+Based on our preliminary analyses, the reinforcing geotextiles should have a 
+minimum ultimate tensile strength of 4,800 pounds per foot (lb/ft).  The reinforcing 
+geotextiles should be spaced at 8-inch vertical spacing.  To create a bearing zone directly 
+below the beam seat, the reinforcing vertical spacing should be reduced to 4 inches 
+directly under the beam seat and extended down a minimum of 5 geotextile layers.  The 
+bottom reinforcing should have a minimum length equal to a base width to wall height 
+ratio of at least 0.3.  The retained soils behind the GRS system should be sloped back at 
+one and one-half horizontal to one vertical (1.5H:1V) inclination. The reinforcements 
+should then increase in length following the cut slope line of about 1.5H:1V. 
+We believe that the reinforced fill material for the GRS structure should consist of 
+imported aggregate base course material.  The reinforced fill material should have an 
+angle of internal friction of at least 34 degrees when tested by the standard direct shear 
+test in accordance with AASHTO T-236 Test Methods (ASTM D3080) and using rock 
+correction procedures. The tested sample should be compacted to 95 percent relative 
+compaction at moisture contents above the optimum. 
+Reinforced fill materials should be placed in level loose lifts not exceeding 8 inches 
+in loose thickness and compacted to at least 95 percent of the maximum dry density 
+established in accordance with AASHTO T-180 (ASTM D1557) at moisture contents 
+above the optimum. 
+The abutment walls should be well-drained to reduce the potential for build-up of 
+hydrostatic pressures.  Geocomposite drains along the excavation slope connected to 
+drain pipes extending to the wall face may be considered. 
+The use of CLSM as backfill behind the abutments up to the stable cut slopes may 
+also be considered to reduce the lateral loading to the abutment structures after the CLSM 
+hardens. 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 8190-00 
+GEOLABS, INC. 
+Page 17 
+Hawaii • California 
+3.5 
+Site Grading 
+At the on-set of earthwork, areas within the contract grading limits should be 
+cleared and grubbed thoroughly. Vegetation, debris, deleterious materials, existing 
+structures to be demolished, and other unsuitable materials should be removed and 
+disposed of properly off-site to reduce the potential for contaminating the excavated 
+materials. 
+Soft and yielding areas encountered during clearing and grubbing below areas 
+designated to receive fill and/or future improvements should be over-excavated to expose 
+firm natural material, and the resulting excavation should be backfilled with well-
+compacted fill. The excavated soft soils should not be reused as fill materials and should 
+be properly disposed of off-site.  
+After clearing and grubbing, the exposed subgrades and areas designated to 
+receive fills should be scarified to a depth of about 8 inches, moisture-conditioned to 
+above the optimum moisture content, and recompacted to a minimum of 90 percent 
+relative compaction. Relative compaction refers to the in-place dry density of soil 
+expressed as a percentage of the maximum dry density as determined by ASTM D1557. 
+Optimum moisture is the water content (percentage by dry weight) corresponding to the 
+maximum dry density. 
+Prior to fill placement and in areas where the cut subgrades expose basalt rock, 
+the subgrades should be proof-rolled with a minimum 10-ton vibratory roller or similar 
+heavy construction equipment for a minimum of 6 passes to help detect and collapse 
+near-surface cavities. Loose areas or cavities disclosed during proof-rolling operations 
+should be opened, cleaned of debris, and backfilled with properly compacted fill or 
+concrete. 
+In general, the excavated on-site materials should be suitable for use as general 
+fill materials, provided that the maximum particle size is less than 6 inches in largest 
+dimension. The excavated volcanic ash may be used as general fill provided that the 
+volcanic ash is combined with granular/rocky material resulting in a material that contains 
+less than 30 percent (by dry weight) particles passing the No. 200 sieve.  General fills 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 8190-00 
+GEOLABS, INC. 
+Page 18 
+Hawaii • California 
+and backfills should be moisture-conditioned to above the optimum moisture content, 
+placed in level lifts not exceeding 12 inches in loose thickness, and compacted to at least 
+95 percent relative compaction. 
+Imported materials, if required, should consist of select granular fill such as 
+crushed basalt. The select granular fill should be well-graded from coarse to fine with no 
+particles larger than 3 inches in largest dimension. The material should have a California 
+Bearing Ratio (CBR) value of 20 or higher and a swell potential of 1 percent or less when 
+tested in accordance with AASHTO T193 (ASTM D1883). The material should also 
+contain between 10 and 30 percent particles passing the No. 200 sieve. Imported fill 
+materials should be tested for conformance with these recommendations prior to delivery 
+to the project site for the intended use. Select granular fills should be moisture-
+conditioned to above the optimum moisture content, placed in level lifts not exceeding 8 
+inches in loose thickness, and compacted to at least 95 percent relative compaction.  
+Imported fill materials should be tested and approved prior to delivery to the project site 
+for the intended use. 
+For backfill behind the abutment structure, the backfill material should consist of 
+well-graded, granular fill material conforming to Type A Structure Backfill Material of 
+Section 703.20 of the HSS.  The material should be moisture-conditioned to above the 
+optimum moisture content, placed in level loose lifts not exceeding 8 inches, and 
+compacted to not less than 95 percent relative compaction. 
+3.6 
+Cut and Fill Slopes 
+Based on the subsurface conditions encountered in the borings, it appears that 
+permanent cut slopes near the existing ground surface (within 9 feet of the existing ground 
+surface) would expose the soil-like materials (granular fills, volcanic ash, and clinker).  In 
+general, permanent cut slopes exposing the soil-like materials may be designed with a 
+slope inclination of 2H:1V or flatter.  Where cut slopes expose the dense basalt formation, 
+the cut slope may be steepened to a slope inclination as steep as 0.5H:1V, if desired.  
+Cavities that may be exposed on the cut slope face should be backfilled and grouted. We 
+recommend that cut slopes exposing soil-like materials be immediately protected by 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 8190-00 
+GEOLABS, INC. 
+Page 19 
+Hawaii • California 
+appropriate slope planting or other means to reduce the potential for erosion of the 
+exposed soils. 
+Permanent fill slopes constructed with either general fill materials or imported fill 
+materials may be designed with a slope inclination of 2H:1V or flatter.  Fills placed on 
+slopes steeper than 5H:1V should be keyed and benched into the existing slope to provide 
+stability for the new fill against sliding.  The filling operations should start at the lowest 
+point and continue up in level horizontal compacted layers in accordance with the above 
+fill placement recommendations.  Fill slopes should be constructed by overfilling and 
+cutting back to the design slope ratio to obtain a well-compacted slope face.  Water should 
+be diverted away from the tops of slopes, and slope planting should be provided as soon 
+as possible to reduce the potential for significant erosion of the finished slopes. 
+3.7 
+Excavation 
+We anticipate site grading work consisting of deep cuts will be required for 
+construction of the bridge at each abutment location. Where deep excavations (greater 
+than 5 feet in depth) are planned, temporary shoring or sloping and benching should be 
+implemented for the excavations. Based on the competent subsurface conditions 
+encountered in the borings, we believe that temporary cut slopes for open-cut excavations 
+may be feasible. However, trench walls cut near vertical would require the use of 
+temporary shoring during construction. The contractor should determine the method and 
+equipment to be used for excavation, subject to practical limits and applicable local safety 
+requirements. Shoring design and installation should be the responsibility of the 
+contractor. 
+Based on our field exploration, the on-site fills, volcanic and clinker materials may 
+be excavated with normal heavy excavation equipment, such as backhoes and ripping 
+with bulldozers. Our laboratory testing indicated that the unconfined compressive strength 
+of the basalt rock formation encountered at the site ranges from about 5,400 to 33,460 
+pounds per square inch (psi).  Based on the unconfined compressive strength of the 
+basalt rock formation at the site, we believe that excavations into the basalt rock formation 
+may require the use of hoerams or chipping.   
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 8190-00 
+GEOLABS, INC. 
+Page 20 
+Hawaii • California 
+The above discussions regarding the rippability of the materials are based on our 
+experience with basalt rock formations in the area. We recommend encouraging 
+contractors to examine the site conditions and the subsurface data to make their own 
+reasonable and prudent interpretation. 
+3.8 
+Pavement Design 
+Two types of pavement structural sections (flexible and rigid pavements) were 
+considered in the pavement analyses. The flexible pavement section presented herein 
+was generally determined based on the methodology described in Chapter 3 of the 
+revised Pavement Design Manual dated March 2002 prepared by the State of Hawaii - 
+Department of Transportation, Highways Division, Material Testing and Research 
+Branch. The pavement design methodology is based on the Hveem Stabilometer method 
+developed and used by the California Department of Transportation (Caltrans). 
+The design procedures for the rigid pavement section are generally based on the 
+design procedures described in the Portland Cement Association “Thickness Design for 
+Concrete Highway and Street Pavements.” The following subsections provide discussion 
+of the areas necessary for pavement analyses and design: 
+Design Traffic Loading Conditions/Traffic Index 
+Design Subgrade Conditions 
+Design Pavement Section 
+3.8.1 Design Traffic Loading Conditions/Traffic Index 
+Based on the design guidelines from the revised Pavement Design Manual dated 
+March 2002, we believe that the roadway may be classified as a “High Volume Rural” 
+roadway. Therefore, the pavement will need to be designed for a pavement life of 
+30 years. Traffic information was provided by WSP on September 3, 2021.   
+We have assumed that completion of the roadway would be in the Year 2023.  A 
+growth rate of about 0.5 percent was assumed in our traffic analysis. The following 
+table summarizes the design traffic parameters used in our pavement analyses. 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 8190-00 
+GEOLABS, INC. 
+Page 21 
+Hawaii • California 
+DESIGN TRAFFIC PARAMETERS 
+Design Period 
+30 Years 
+Average Daily Traffic 
+(ADT) 
+Year 2023 
+Year 2053 
+Vehicles per day 
+10,265 
+11,775 
+24-Hour Truck Traffic 
+5.9% 
+Type of Axle 
+Truck Traffic Distribution 
+2-axle 
+67.84% 
+3-axle 
+10.39% 
+4-axle 
+2.55% 
+5-axle 
+18.71% 
+6-axle 
+0.49% 
+7-axle 
+0.01% 
+Based on a design period of 30 years, the traffic volume, and the truck distribution 
+information assumed, A Traffic Index (TI) of 11.0 has been determined for the project.  
+Detailed analyses on the TI determination are provided on Plate D-1 in Appendix D. 
+3.8.2 Design Subgrade Conditions 
+Based on our field exploration, we anticipate that the pavement subgrade soils would 
+consist of very stiff sandy silt (volcanic ash).  Laboratory Resistance (R) value tests 
+performed on near-surface soils obtained from our field exploration indicated that the 
+materials exhibited R-values of approximately 44 and 47. Based on the test results, 
+a design R-value of 46 was adopted in our pavement analyses for the subgrade 
+materials. If site grading exposes soils other than those assumed, additional tests 
+should be performed to confirm and/or revise the recommended pavement sections 
+for actual field conditions. 
+Based on a design R-value of 46 adopted for the pavement subgrade soils as 
+described above, a corresponding K-value of 125 pounds per square inch per inch 
+of deflection (pci) is obtained from Figure 1-1 of the Pavement Design Manual 
+prepared by the State of Hawaii - Department of Transportation, Highways Division, 
+Material Testing and Research Branch. Based on a total thickness of 6 inches of 
+aggregate subbase, the design “Subgrade/Subbase K” value may be increased to 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 8190-00 
+GEOLABS, INC. 
+Page 22 
+Hawaii • California 
+150 pci in accordance with Figure 1-2 of the Pavement Design Manual. It should be 
+noted that 150 pci is the maximum K-value allowed by the Pavement Design Manual.   
+3.8.3 Design Pavement Section 
+We understand that an existing drainage system is not present at the project site; 
+Therefore, we do not recommend incorporating a permeable drainage layer into the 
+pavement section design since there is no practical way to drain the water that would 
+collect in the subdrains.  We have only considered pavement structural sections 
+without permeable drainage layers in our analyses.   
+Based on the relatively high traffic volume (greater than 10,000 vehicles per day) 
+anticipated along Kawaihae Road at Waiaka Stream Bridge, we believe asphalt 
+concrete base (ACB) should be used as the base material for the flexible pavement 
+section.  Therefore, we did not consider pavement sections utilizing untreated 
+aggregate base courses in the flexible pavement in our pavement design analyses. 
+For the purposes of rigid pavement design, concrete modulus of rupture (MR) of 
+650 psi was used for the project.  In addition, we have assumed aggregate interlock 
+at the concrete pavement joints.  Based on the assumptions presented above, we 
+considered the following two pavement structural sections for use as the new 
+pavements for the project.  Detailed analyses and calculations of the pavement 
+design options are presented in Plates D-2 through D-5. 
+Flexible Pavement  
+  4.0-Inch Asphaltic Concrete 
+  7.0-Inch Asphalt Concrete Base 
+  6.0-Inch Aggregate Subbase (95 Percent Relative Compaction) 
+17.0-Inch Total Pavement Thickness on Compacted Subgrade 
+Rigid Pavement 
+10.0-Inch Portland Cement Concrete 
+  6.0-Inch Aggregate Subbase (95 Percent Relative Compaction) 
+16.0-Inch Total Pavement Thickness on Compacted Subgrade 
+An economic analysis was performed on the two pavement design options presented 
+above to evaluate the construction costs of the pavement sections.  The results of 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 8190-00 
+GEOLABS, INC. 
+Page 23 
+Hawaii • California 
+the economic analyses are presented on Plates D-6 through D-8.  Based on our cost 
+comparison of the pavement design options, it appears that a rigid pavement 
+structural section consisting of 10 inches of PCC over 6 inches of ASB would result 
+in the most economical pavement design for the design life considered.   
+However, if it is desired to keep the roadway open during construction and not affect 
+traffic flow for an extended period, we recommend utilizing a flexible pavement 
+section for the new pavement. Therefore, the recommended pavement design 
+section is summarized below.   
+Recommended Pavement Design Section 
+  4.0-Inch Asphaltic Concrete 
+  7.0-Inch Asphalt Concrete Base 
+  6.0-Inch Aggregate Subbase (95 Percent Relative Compaction) 
+17.0-Inch Total Pavement Thickness on Compacted Subgrade 
+3.9 
+Underground Utilities 
+We envision underground utility lines may need to be relocated due to the 
+realignment of the approaches. We anticipate most of the trenches for the utility lines will 
+be excavated in the fill, volcanic ash, and clinker.  Basalt rock formation may be 
+encountered in the trench excavations where utilities are required to extend to deeper 
+depths. 
+In general, granular bedding consisting of 6 inches of open-graded gravel 
+(ASTM C33, No. 67 gradation) should be provided below the pipes for uniform bearing 
+support. Free-draining granular materials, such as open-graded gravel (ASTM C33, 
+No. 67 gradation), should be used for the initial trench backfill up to about 12 inches above 
+the pipes. It is critical to use this free-draining material to reduce the potential for the 
+formation of voids below the haunches of pipes and to provide adequate support for the 
+sides of the pipes. The improper backfill material around the pipes and improper 
+placement of the backfill could result in backfill settlement and pipe damage. 
+As an alternative, the granular bedding and the initial trench backfill (up to about 
+12 inches above the top of the pipes) may consist of 1-inch minus well-graded granular 
+materials (aggregate base materials). Where the 1-inch minus, well-graded granular 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 8190-00 
+GEOLABS, INC. 
+Page 24 
+Hawaii • California 
+materials are used, the granular bedding and the initial trench backfill should be 
+moisture-conditioned and compacted to no less than 90 percent relative compaction. 
+The upper portion of the trench backfill from the level 12 inches above the pipes to 
+the top of the subgrade or finished grade should consist of well-graded granular materials 
+less than 6 inches in maximum particle size. The backfill should be moisture-conditioned 
+to above the optimum moisture content, placed in about 8-inch level loose lifts, and 
+mechanically compacted to at least 90 percent relative compaction. Where trenches are 
+located in paved areas, the upper 3 feet of the trench backfill below the pavement grade 
+should be compacted to no less than 95 percent relative compaction. 
+If the utility installation involves excavation in the basaltic rock formation and will 
+require hard ripping or the use of hoerams, the contractor must exercise care to avoid 
+over-ripping, which would disrupt the structure of the rock formation and result in a 
+potential loss of bearing strength for footings in its vicinity. 
+3.10 Additional Services During Design 
+The findings and preliminary recommendations provided in this preliminary 
+geotechnical engineering report are based on limited boring information. Additional 
+geotechnical evaluation and field exploration should be conducted to confirm and/or 
+modify 
+the 
+preliminary 
+recommendations 
+provided 
+herein. 
+The 
+preliminary 
+recommendations provided in this report are contingent upon such additional services.  
+The preliminary recommendations provided are intended for planning and preliminary 
+design purposes only.  The recommendations provided are not intended for detailed 
+design and/or construction purposes. 
+END OF DISCUSSION AND RECOMMENDATIONS 
+W.O. 8190-00 
+GEOLABS, INC. 
+Page 25 
+Hawaii • California 
+SECTION 4.  LIMITATIONS 
+The analyses and preliminary recommendations submitted herein are based in 
+part upon information obtained from our field borings and laboratory testing.  Variations 
+of the subsurface conditions between and beyond the field data points may occur, and 
+the nature and extent of these variations may not become evident until additional field 
+exploration is underway. If variations then appear evident, it will be necessary to 
+re-evaluate the preliminary recommendations presented herein. 
+The field boring locations indicated herein are approximate, having been estimated 
+by using a hand-held Global Positioning System (GPS) device in the field. Elevations of 
+the field borings were interpolated between the contour lines and spot elevations shown 
+on the draft Conceptual Plan, prepared by WSP on April 20, 2022. The physical locations 
+and elevations of the borings should be considered accurate only to the degree implied 
+by the methods used. 
+The stratification lines shown on the graphic representations of the borings depict 
+the approximate boundaries between soil types and, as such, may denote a gradual 
+transition. Water level data from the borings were measured at the times shown on the 
+graphic representations and/or presented in the text herein. These data have been 
+reviewed and interpretations made in the formulation of this report. However, it must be 
+noted that fluctuation may occur due to variation in rainfall, tides, temperature, and other 
+factors. 
+This report has been prepared for the exclusive use of WSP and their client, the 
+State of Hawaii, Department of Transportation, Highways Division, for specific application 
+to the proposed Kawaihae Road – Waiaka Bridge Replacement and Realignment of 
+Approaches project in accordance with generally accepted geotechnical engineering 
+principles and practices. No warranty is expressed or implied. 
+This report has been prepared solely for the purpose of assisting the design 
+engineers in the planning and preliminary design of the project. Therefore, this report may 
+not contain sufficient data, or the proper information, to serve as a basis for detailed 
+design, preparation of construction cost estimates, or contract bidding.  A detailed field 
+SECTION 4. LIMITATIONS  
+W.O. 8190-00 
+GEOLABS, INC. 
+Page 26 
+Hawaii • California 
+exploration program should be implemented to obtain additional information pertaining to 
+the final design of the replacement bridge project. 
+The owner/client should be aware that unanticipated soil conditions are commonly 
+encountered. Unforeseen subsurface conditions, such as perched groundwater, soft 
+deposits, hard layers, or cavities, may occur in localized areas and may require additional 
+probing or corrections in the field (which may result in construction delays) to attain a 
+properly constructed project. Therefore, a sufficient contingency fund is recommended to 
+accommodate these possible extra costs. 
+This preliminary geotechnical engineering exploration conducted at the project site 
+was not intended to investigate the potential presence of hazardous materials existing at 
+the project site. The equipment, techniques, and personnel used to conduct a 
+geo-environmental exploration differ substantially from those applied in geotechnical 
+engineering. 
+END OF LIMITATIONS 
+i CLOSURE
+The following plates and appendices are attached and complete this report:
+Project Location Map............::ssccccceccececeseeseeeeeeeeeeesseeeeesceseceeeeesseeueceeeeeeeeeessssssaaaeeeees Plate 1
+le ee Plate 2
+aa (=)(6 =>, 40) (0) = 10) Appendix A
+= oe) ¢- 10) aa = 5) 5 Appendix B
+Piptegrmiphs of COre Sani PllS ccc: accu cmwncumsm mnmmammnmcmamnmcmmmeewmnn exon exe semmenmaanmnt Appendix C
+Pavement AnallySisS.........cccccccccccecceeeeeeceeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeaneseneeeeeeneeeess Appendix D
+QOQOQQOQONOOO-
+Respectfully submitted,
+GEOLABS, INC.
+Gerald / Seki, P.E.
+Vice President
+GS:GB:If)
+h:\8100Series\8190-00.gb1
+W.O. 8190-00 GEOLABS, INC. Page 27
+Hawaii ¢ California
+PLATES 
+GRAPHIC SCALE
+1000
+2000
+2000
+0
+FT.
+PROJECT LOCATION
+GENERAL PROJECT LOCATION
+MAY 2022
+1" = 2,000'
+Geotechnical Engineering
+GEOLABS, INC.
+N
+DATE
+SCALE
+1
+8190-00
+DRAWN BY
+KHN
+W.O.
+PLATE
+N
+HONAUNAU
+KAILUA-KONA
+KALAOA
+KONA
+HOLUALOA
+CAPTAIN
+COOK
+KA'U
+MAUNA LOA
+PAHALA
+VOLCANO
+PUNA
+MOUNTAIN
+VIEW
+HILO
+HILO
+MAUNA KEA
+KAWAIHAE KOHALA
+HAWI
+HONOKAA
+WAIMEA
+HONOMU
+PAPAIKOU
+NAALEHU
+ISLAND MAP
+NO SCALE
+PACIFIC      OCEAN
+CAD User: KIM  File Last Updated: May 20, 2022 5:30:07pm  Plot Date:  May 27, 2022 - 5:02:36pm
+File: T:\Drafting\Working\8190-00_Waiaka_Stream_Bridge_Replacement\8190-00PLM.dwg\1
+Plotter: DWG To PDF-GEO.pc3  Plotstyle: GEO-No-Dither-RBGC-HEAVY.ctb
+REFERENCE: MAP CREATED WITH TOPO!® ©2010 NATIONAL
+GEOGRAPHIC; ©2007 TELE ATLAS, REL. 1/2007.
+PROJECT LOCATION MAP
+AND REALIGNMENT OF APPROACHES
+DISTRICT OF SOUTH KOHALA, ISLAND OF HAWAII
+KAWAIHAE ROAD - WAIAKA BRIDGE REPLACEMENT
+B-3 & BULK-1
+B-1
+B-2
+B-4 & BULK-2
+APPROXIMATE BORING LOCATION
+LEGEND:
+N
+APPROXIMATE BULK SAMPLE LOCATION
+AND REALIGNMENT OF APPROACHES
+DISTRICT OF SOUTH KOHALA, ISLAND OF HAWAII
+GEOLABS, INC.
+Geotechnical Engineering
+8190-00
+DRAWN BY
+KHN
+KAWAIHAE ROAD - WAIAKA BRIDGE REPLACEMENT
+1" = 60'
+MAY 2022
+SCALE
+DATE
+W.O.
+SITE PLAN
+2
+PLATE
+GRAPHIC SCALE
+0
+60
+120
+180 FT.
+40
+20
+CAD User: KIM  File Last Updated: May 20, 2022 7:53:30pm  Plot Date:  May 27, 2022 - 4:56:13pm
+File: T:\Drafting\Working\8190-00_Waiaka_Stream_Bridge_Replacement\8190-00SitePlan.dwg\2
+Plotter: DWG To PDF-GEO.pc3  Plotstyle: GEO-No-Dither-RBGC-HEAVY.ctb
+REFERENCE: DRAFT CONCEPTUAL PLAN BY WSP DATED
+APRIL 20, 2022.
+APPENDIX  A  
+W.O. 8190-00 
+GEOLABS, INC. 
+MARCH 2023    Page A-1 
+Hawaii • California 
+A P P E N D I X   A 
+Field Exploration 
+We explored the subsurface conditions at the project site by drilling and sampling 
+four borings, designated as Boring Nos. 1 through 4, extending to depths of about 10.1 
+to 51.5 feet below the existing ground/pavement surface. The approximate boring 
+locations are shown on the Site Plan, Plate 2. The borings were drilled using a 
+truck-mounted drill rig with continuous flight augers and coring tools.  
+Our geologists classified the materials encountered in the borings by visual and 
+textural examination in the field in general accordance with ASTM D2488, Standard 
+Practice for Description and Identification of Soils, and monitored the drilling operations 
+on a near-continuous (full-time) basis. These classifications were further reviewed visually 
+and by testing in the laboratory. Soils were classified in general accordance with 
+ASTM D2487, Standard Practice for Classification of Soils for Engineering Purposes 
+(Unified Soil Classification System), as shown on the Soil Log Legend, Plate A-0.1. 
+Deviations made to the soil classification in accordance with ASTM D2487 are described 
+on the Soil Classification Log Key, Plate A-0.2. Rock cores were described in general 
+accordance with the Rock Description System, as shown on the Rock Log Legend, 
+Plate A-0.3. The Rock Description System is based on the publication “Suggested Methods 
+for the Quantitative Description of Discontinuities in Rock Masses” by the International 
+Society for Rock Mechanics (March 1977). Graphic representations of the materials 
+encountered are presented on the Logs of Borings, Plates A-1.1 through A-4. 
+Relatively “undisturbed” soil samples were obtained in general accordance with 
+ASTM D3550, Ring-Lined Barrel Sampling of Soils, by driving a 3-inch OD Modified 
+California sampler with a 140-pound hammer falling 30 inches. In addition, some samples 
+were obtained from the drilled borings in general accordance with ASTM D1586, 
+Penetration Test and Split-Barrel Sampling of Soils, by driving a 2-inch OD standard 
+penetration sampler using the same hammer and drop. The blow counts needed to drive 
+the sampler the second and third 6 inches of an 18-inch drive are shown as the 
+“Penetration Resistance” on the Logs of Borings at the appropriate sample depths. The 
+penetration resistance shown on the Logs of Borings indicates the number of blows 
+required for the specific sampler type used. The blow counts may need to be factored in 
+to obtain the Standard Penetration Test (SPT) blow counts.  
+Core samples of the rock materials encountered at the project site were obtained 
+by using diamond core drilling techniques in general accordance with ASTM D2113, 
+Diamond Core Drilling for Site Investigation. Core drilling is a rotary drilling method that 
+uses a hollow bit to cut into the rock formation. The rock material left in the hollow core of 
+the bit is mechanically recovered for examination and description.  
+Recovery (REC) is used as a subjective guide to the interpretation of the relative 
+quality of rock masses. Recovery is defined as the actual length of material recovered 
+from a coring attempt versus the length of the core attempt. For example, if 3.7 feet of 
+Appendix A 
+Field Exploration 
+W.O. 8190-00 
+GEOLABS, INC. 
+MARCH 2023    Page A-2 
+Hawaii • California 
+material is recovered from a 5.0-foot core run, the recovery would be 74 percent and 
+would be shown on the Logs of Borings as REC = 74%. 
+The Rock Quality Designation (RQD) is also a subjective guide to the relative 
+quality of rock masses. RQD is defined as the percentage of the core run in rock that is 
+sound material in excess of 4 inches in length without discontinuities, discounting drilling 
+induced fractures or breaks. If 2.5 feet of sound material is recovered from a 5.0-foot core 
+run in rock, the RQD would be 50 percent and would be shown on the Logs of Borings as 
+RQD = 50%. Generally, the following is used to describe the relative quality of the rock, 
+based on the "Practical Handbook of Physical Properties of Rocks and Minerals." 
+Rock Quality 
+RQD 
+(%) 
+Very Poor 
+0 – 25 
+Poor 
+25 – 50 
+Fair 
+50 – 75 
+Good 
+75 – 90 
+Excellent 
+90 – 100 
+The rippability of a rock mass is a function of the relative hardness of the rock, its 
+relative quality, brittleness, and fissile characteristics. A dense basalt with a high RQD 
+value would be very difficult to rip and would probably require more arduous methods of 
+excavation. 
+A-0.1
+UNCONSOLIDATED UNDRAINED TRIAXIAL
+COMPRESSION (ksf)
+MORE THAN 50%
+OF COARSE
+FRACTION
+RETAINED ON
+NO. 4 SIEVE
+50% OR MORE OF
+COARSE FRACTION
+PASSING
+THROUGH NO. 4
+SIEVE
+MORE THAN 50%
+OF MATERIAL
+RETAINED ON NO.
+200  SIEVE
+50% OR MORE OF
+MATERIAL PASSING
+THROUGH NO. 200
+SIEVE
+TORVANE SHEAR (tsf)
+(2-INCH) O.D. STANDARD PENETRATION TEST
+(3-INCH) O.D. MODIFIED CALIFORNIA SAMPLE
+INORGANIC SILTS AND VERY FINE SANDS,
+ROCK FLOUR, SILTY OR CLAYEY FINE SANDS
+OR CLAYEY SILTS WITH SLIGHT PLASTICITY
+POORLY-GRADED GRAVELS, GRAVEL-SAND
+MIXTURES, LITTLE OR NO FINES
+CLAYEY GRAVELS, GRAVEL-SAND-CLAY
+MIXTURES
+WELL-GRADED SANDS, GRAVELLY SANDS,
+LITTLE OR NO FINES
+POORLY-GRADED SANDS, GRAVELLY
+SANDS, LITTLE OR NO FINES
+SILTY SANDS, SAND-SILT MIXTURES
+CLAYEY SANDS, SAND-CLAY MIXTURES
+LIQUID LIMIT
+50 OR MORE
+CH
+NOTE: DUAL SYMBOLS ARE USED TO INDICATE BORDERLINE SOIL CLASSIFICATIONS
+MH
+SILTS
+AND
+CLAYS
+SILTS
+AND
+CLAYS
+LIQUID LIMIT
+LESS THAN 50
+USCS
+TYPICAL
+DESCRIPTIONS
+GW
+MORE THAN 12%
+FINES
+WATER LEVEL OBSERVED IN BORING OVERNIGHT
+HIGHLY ORGANIC SOILS
+SILTY GRAVELS, GRAVEL-SAND-SILT
+MIXTURES
+OL
+PEAT, HUMUS, SWAMP SOILS WITH HIGH
+ORGANIC CONTENTS
+INORGANIC CLAYS OF LOW TO MEDIUM
+PLASTICITY, GRAVELLY CLAYS, SANDY
+CLAYS, SILTY CLAYS, LEAN CLAYS
+Soil Log Legend
+ORGANIC CLAYS OF MEDIUM TO HIGH
+PLASTICITY, ORGANIC SILTS
+SC
+Plate
+GM
+FINE-
+GRAINED
+SOILS
+COARSE-
+GRAINED
+SOILS
+CLEAN SANDS
+SANDS WITH
+FINES
+SP
+SANDS
+GRAVELS
+WELL-GRADED GRAVELS,  GRAVEL-SAND
+MIXTURES, LITTLE OR NO FINES
+ML
+CL
+OH
+LESS THAN 5%
+FINES
+GRAVELS WITH
+FINES
+CLEAN
+GRAVELS
+GRAB SAMPLE
+PLASTICITY INDEX (NP=NON-PLASTIC)
+TV
+LEGEND
+WATER LEVEL OBSERVED IN BORING AT TIME OF
+DRILLING
+WATER LEVEL OBSERVED IN BORING AFTER DRILLING
+SM
+MAJOR DIVISIONS
+GP
+MORE THAN 12%
+FINES
+PT
+LESS THAN 5%
+FINES
+UNIFIED SOIL CLASSIFICATION SYSTEM (USCS)
+ORGANIC SILTS AND ORGANIC SILTY
+CLAYS OF LOW PLASTICITY
+SW
+GC
+INORGANIC SILT, MICACEOUS OR
+DIATOMACEOUS FINE SAND OR SILTY
+SOILS
+INORGANIC CLAYS OF HIGH PLASTICITY
+PI
+LL
+TXUU
+UNCONFINED COMPRESSION
+OR UNIAXIAL COMPRESSIVE STRENGTH
+CORE SAMPLE
+SHELBY TUBE SAMPLE
+LIQUID LIMIT (NP=NON-PLASTIC)
+UC
+GEOLABS, INC.
+Geotechnical Engineering
+LOG LEGEND FOR SOIL  8190-00.GPJ  GEOLABS.GDT  10/26/21
+A-0.2
+7 - 18
+18 - 55
+55 - 91
+> 91
+Medium Dense
+Coarse Sand
+(with deviations from ASTM D2488)
+Soil Classification Log Key
+*Soil descriptions are based on ASTM D2488-09a, Visual-Manual Procedure, with the
+above modifications by Geolabs, Inc. to the Unified Soil Classification System (USCS).
+accessory descriptions compose of the following:
+with some: >12%
+with a little: 5 - 12%
+with traces of: <5%
+accessory descriptions are lower cased and follow the
+Primary and Secondary Constituents
+(i.e., SILTY GRAVEL with a little sand)
+Dry:    Absence of moisture, dry to the touch
+Moist: Damp but no visible water
+Wet:   Visible free water
+Medium Sand
+Fine Sand
+#4 to #200 (4.75-mm to 0.075-mm)
+#4 to #10 (4.75-mm to 2-mm)
+> 12 inches (305-mm)
+3-inch to #4 (75-mm to 4.75-mm)
+Sieve Number and / or Size
+Gravel
+#10 to #40 (2-mm to 0.425-mm)
+#40 to #200 (0.425-mm to 0.075-mm)
+3 to 12 inches (75-mm to 305-mm)
+Description
+PP Readings
+(tsf)
+2.0 - 4.0
+> 4.0
+N-Value (Blows/Foot)
+MCS
+0 - 4
+RELATIVE DENSITY / CONSISTENCY
+GRAIN SIZE DEFINITION
+ABBREVIATIONS
+N-Value (Blows/Foot)
+0 - 7
+WOH:  Weight of Hammer
+WOR:  Weight of Drill Rods
+SPT:    Standard Penetration Test Split-Spoon Sampler
+MCS:   Modified California Sampler
+PP:      Pocket Penetrometer
+4 - 7
+7 - 15
+15 - 27
+27 - 55
+SPT
+0 - 2
+> 55
+> 30
+4 - 8
+15 - 30
+MOISTURE CONTENT DEFINITIONS
+SPT
+0 - 4
+4 - 10
+10 - 30
+30 - 50
+> 50
+MCS
+Loose
+EXAMPLE: Soil Containing 60% Gravel, 25% Sand, 15% Fines. Described as: SILTY GRAVEL with some sand
+Plate
+GRANULAR SOIL (- #200 <50%)
+2 - 4
+8 - 15
+Relative
+Density
+Very Loose
+Dense
+Very Dense
+COHESIVE SOIL (- #200    50%)
+PRIMARY constituents are composed of the largest
+percent of the soil mass. Primary constituents are
+capitalized and bold (i.e., GRAVEL, SAND)
+PRIMARY constituents are based on plasticity. Primary
+constituents are capitalized and bold (i.e., CLAY, SILT)
+SECONDARY constituents are composed of a
+percentage less than the primary constituent. If the soil
+mass consists of 12 percent or more fines content, a
+cohesive constituent is used (SILTY or CLAYEY);
+otherwise, a granular constituent is used (GRAVELLY
+or SANDY) provided that the secondary constituent
+consists of 20 percent or more of the soil mass.
+Secondary constituents are capitalized and bold (i.e.,
+SANDY GRAVEL, CLAYEY SAND) and precede the
+primary constituent.
+SECONDARY constituents are composed of a
+percentage less than the primary constituent, but more
+than 20 percent of the soil mass. Secondary constituents
+are capitalized and bold (i.e., SANDY CLAY, SILTY
+CLAY, CLAYEY SILT) and precede the primary
+constituent.
+Sand
+Boulders
+Cobbles
+Coarse Gravel
+3-inch to 3/4-inch (75-mm to 19-mm)
+Fine Gravel
+3/4-inch to #4 (19-mm to 4.75-mm)
+GEOLABS, INC. CLASSIFICATION*
+Granular Soils
+Cohesive Soils
+Consistency
+accessory descriptions compose of the following:
+with some: >12%
+with a little: 5 - 12%
+with traces of: <5%
+accessory descriptions are lower cased and follow the
+Primary and Secondary Constituents
+(i.e., SILTY CLAY with some sand)
+Very Soft
+Soft
+Medium Stiff
+Stiff
+Very Stiff
+Hard
+< 0.5
+0.5 - 1.0
+1.0 - 2.0
+SOIL_CLASS_LOG_KEY  8190-00.GPJ  GEOLABS.GDT  10/26/21
+GEOLABS, INC.
+Geotechnical Engineering
+A-0.3
+ROCK DESCRIPTIONS
+Plate
+BRECCIA
+CLINKER
+COBBLES
+CORAL
+BASALT
+ROCK DESCRIPTION SYSTEM
+Greater than 24 inches apart
+12 to 24 inches apart
+6 to 12 inches apart
+3 to 6 inches apart
+Less than 3 inches apart
+Rock shows no sign of discoloration or loss of strength.
+Slight discoloration inwards from open fractures.
+Discoloration throughout and noticeably weakened though not able to break by hand.
+Most minerals decomposed with some corestones present in residual soil mass. Can be broken by hand.
+Saprolite. Mineral residue completely decomposed to soil but fabric and structure preserved.
+The following terms describe general fracture spacing of a rock:
+The following terms describe the chemical weathering of a rock:
+ROCK FRACTURE CHARACTERISTICS
+DEGREE OF WEATHERING
+HARDNESS
+BOULDERS
+VOID/CAVITY
+TUFF
+SILTSTONE
+LIMESTONE
+Unweathered:
+Slightly Weathered:
+Moderately Weathered:
+Highly Weathered:
+Extremely Weathered:
+Very Hard:
+Hard:
+Medium Hard:
+Soft:
+Very Soft:
+SANDSTONE
+Massive:
+Slightly Fractured:
+Moderately Fractured:
+Closely Fractured:
+Severely Fractured:
+Rock Log Legend
+The following terms describe the resistance of a rock to indentation or scratching:
+Specimen breaks with difficulty after several "pinging" hammer blows.
+Example: Dense, fine grain volcanic rock
+Specimen breaks with some difficulty after several hammer blows.
+Example: Vesicular, vugular, coarse-grained rock
+Specimen can be broked by one hammer blow. Cannot be scraped by knife. SPT may penetrate by
+~25 blows per inch with bounce.
+Example: Porous rock such as clinker, cinder, and coral reef
+Can be indented by one hammer blow. Can be scraped or peeled by knife. SPT can penetrate by
+~100 blows per foot.
+Example: Weathered rock, chalk-like coral reef
+Crumbles under hammer blow. Can be peeled and carved by knife. Can be indented by finger
+pressure.
+Example: Saprolite
+CONGLOMERATE
+GEOLABS, INC.
+Geotechnical Engineering
+LOG LEGEND FOR ROCK  8190-00.GPJ  GEOLABS.GDT  10/26/21
+39
+14
+45
+GW
+0
+55
+80
+55
+88
+67
+0
+50/2"
+48
+95
+100
+100
+100
+100
+30
+UC=
+5400 psi
+UC=
+22120 psi
+UC=
+33460 psi
+UC=
+32290 psi
+UC=
+19000 psi
+10-inch ASPHALTIC CONCRETE
+Gray with brown mottling GRAVELLY COBBLES
+(BASALTIC) with some boulders and a little
+sand and silt, medium dense to dense, dry to
+moist (fill)
+grades to very dense
+Gray vugular BASALT, slightly to moderately
+fractured, unweathered to slightly weathered,
+hard to very hard (a'a basalt)
+grades to dense
+Gray subangular SANDY GRAVEL (BASALTIC)
+with a little cobbles, medium dense, moist
+(clinker)
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+MOBILE B-53.1
+4" Solid-Stem Auger & HQ Coring
+140 lb. wt., 30 in. drop
+5
+10
+15
+20
+25
+30
+35
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation (feet MSL): 2418 *
+Sample
+Moisture
+Content (%)
+1
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 1.1
+(Energy Transfer Ratio = 42.9%)
+July 28, 2021
+July 28, 2021
+S. Latronic
+50 feet
+8190-00
+GEOLABS, INC.
+Geotechnical Engineering
+KAWAIHAE ROAD - WAIAKA BRIDGE REPLACEMENT
+AND REALIGNMENT OF APPROACHES
+DISTRICT OF SOUTH KOHALA, ISLAND OF HAWAII
+BORING_LOG  8190-00.GPJ  GEOLABS.GDT  2/21/23
+Not Encountered
+GW
+93
+80
+83
+100
+100
+100
+Reddish gray to gray vugular BASALT,
+moderately fractured, unweathered to slightly
+weathered, hard to very hard (a'a basalt)
+ Boring terminated at 50 feet
+ * Elevations estimated from Draft Conceptual
+Plan by WSP dated April 20, 2022.
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+MOBILE B-53.1
+4" Solid-Stem Auger & HQ Coring
+140 lb. wt., 30 in. drop
+40
+45
+50
+55
+60
+65
+70
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Sample
+Moisture
+Content (%)
+1
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+(Continued from previous plate)
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 1.2
+(Energy Transfer Ratio = 42.9%)
+July 28, 2021
+July 28, 2021
+S. Latronic
+50 feet
+8190-00
+GEOLABS, INC.
+Geotechnical Engineering
+KAWAIHAE ROAD - WAIAKA BRIDGE REPLACEMENT
+AND REALIGNMENT OF APPROACHES
+DISTRICT OF SOUTH KOHALA, ISLAND OF HAWAII
+BORING_LOG  8190-00.GPJ  GEOLABS.GDT  2/21/23
+Not Encountered
+20
+17
+67
+GM
+ML
+GM
+GW
+23
+95
+100
+98
+33
+107
+49/6"
+ +50/5"
+69
+100
+100
+100
+72
+27
+Sieve
+- #200 =
+62.0%
+Sieve
+- #200 =
+24.9%
+UC=
+7660 psi
+UC=
+8390 psi
+UC=
+9710 psi
+UC=
+12700 psi
+UC=
+25660 psi
+Gray with brown mottling angular SILTY
+GRAVEL (BASALTIC), medium dense, dry (fill)
+Brown SANDY SILT with a little gravel, very stiff,
+dry (volcanic ash)
+Gray with brown mottling SILTY GRAVEL
+(BASALTIC) with some sand and cobbles,
+dense to very dense, dry to moist (clinker)
+grades to welded clinker
+Gray vugular BASALT, slightly to moderately
+fractured, unweathered to slightly weathered,
+hard to very hard (a'a basalt)
+grades to dense and massive locally
+Gray with reddish brown mottling subangular
+SANDY GRAVEL (BASALTIC) with a little
+cobbles, medium dense, moist (clinker)
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+MOBILE B-53.1
+4" Solid-Stem Auger & HQ Coring
+140 lb. wt., 30 in. drop
+5
+10
+15
+20
+25
+30
+35
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation (feet MSL): 2418 *
+Sample
+Moisture
+Content (%)
+2
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 2.1
+(Energy Transfer Ratio = 42.9%)
+July 27, 2021
+July 28, 2021
+S. Latronic
+51.5 feet
+8190-00
+GEOLABS, INC.
+Geotechnical Engineering
+KAWAIHAE ROAD - WAIAKA BRIDGE REPLACEMENT
+AND REALIGNMENT OF APPROACHES
+DISTRICT OF SOUTH KOHALA, ISLAND OF HAWAII
+BORING_LOG  8190-00.GPJ  GEOLABS.GDT  2/21/23
+Not Encountered
+GW
+35
+88
+72
+75
+100
+100
+grades to welded clinker
+Gray vugular BASALT, slightly to moderately
+fractured, unweathered to slightly weathered,
+hard to very hard (a'a basalt)
+ Boring terminated at 51.5 feet
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+MOBILE B-53.1
+4" Solid-Stem Auger & HQ Coring
+140 lb. wt., 30 in. drop
+40
+45
+50
+55
+60
+65
+70
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Sample
+Moisture
+Content (%)
+2
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+(Continued from previous plate)
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 2.2
+(Energy Transfer Ratio = 42.9%)
+July 27, 2021
+July 28, 2021
+S. Latronic
+51.5 feet
+8190-00
+GEOLABS, INC.
+Geotechnical Engineering
+KAWAIHAE ROAD - WAIAKA BRIDGE REPLACEMENT
+AND REALIGNMENT OF APPROACHES
+DISTRICT OF SOUTH KOHALA, ISLAND OF HAWAII
+BORING_LOG  8190-00.GPJ  GEOLABS.GDT  2/21/23
+Not Encountered
+5
+20
+16
+9
+ML
+50/1"
+43
+50/4"
+50/1"
+12-inch ASPHALTIC CONCRETE
+Brown SANDY SILT with some gravel (basaltic),
+hard, dry to moist (volcanic ash)
+grades with cobbles (basaltic)
+Gray and brown GRAVELLY COBBLES
+(BASALTIC) in a sandy silt matrix, very dense,
+dry to moist (clinker)
+grades to welded clinker
+ Boring terminated at 10.1 feet
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+MOBILE B-53.1
+4" Solid-Stem Auger
+140 lb. wt., 30 in. drop
+5
+10
+15
+20
+25
+30
+35
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation (feet MSL): 2408 *
+Sample
+Moisture
+Content (%)
+3
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 3
+(Energy Transfer Ratio = 42.9%)
+July 26, 2021
+July 26, 2021
+S. Latronic
+10.1 feet
+8190-00
+GEOLABS, INC.
+Geotechnical Engineering
+KAWAIHAE ROAD - WAIAKA BRIDGE REPLACEMENT
+AND REALIGNMENT OF APPROACHES
+DISTRICT OF SOUTH KOHALA, ISLAND OF HAWAII
+BORING_LOG  8190-00.GPJ  GEOLABS.GDT  2/21/23
+Not Encountered
+29
+20
+24
+15
+53
+ML
+SM
+ML
+42
+25/6"
+ +50/3"
+58
+50/3"
+Sieve
+- #200 =
+76.1%
+Sieve
+- #200 =
+45.8%
+Sieve
+- #200 =
+53.9%
+Brown SANDY SILT with traces of gravel
+(basaltic), very stiff, dry to moist (volcanic ash)
+Brown SILTY SAND with some gravel, very
+dense, moist (volcanic ash)
+Brown SANDY SILT with some gravel, hard,
+moist (volcanic ash)
+Gray and brown GRAVELLY COBBLES
+(BASALTIC) in a sandy silt matrix, very dense,
+dry to moist (clinker)
+ Boring terminated at 10.3 feet
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+MOBILE B-53.1
+4" Solid-Stem Auger
+140 lb. wt., 30 in. drop
+5
+10
+15
+20
+25
+30
+35
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation (feet MSL): 2423 *
+Sample
+Moisture
+Content (%)
+4
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 4
+(Energy Transfer Ratio = 42.9%)
+July 26, 2021
+July 26, 2021
+S. Latronic
+10.3 feet
+8190-00
+GEOLABS, INC.
+Geotechnical Engineering
+KAWAIHAE ROAD - WAIAKA BRIDGE REPLACEMENT
+AND REALIGNMENT OF APPROACHES
+DISTRICT OF SOUTH KOHALA, ISLAND OF HAWAII
+BORING_LOG  8190-00.GPJ  GEOLABS.GDT  2/21/23
+Not Encountered
+APPENDIX  B  
+W.O. 8190-00 
+GEOLABS, INC. 
+MARCH 2023    Page B-1 
+Hawaii • California 
+A P P E N D I X   B 
+Laboratory Tests 
+Moisture Content (ASTM D2216) and Unit Weight (ASTM D2937) determinations 
+were performed on selected samples as an aid in the classification and evaluation of soil 
+properties. The test results are presented on the Logs of Borings at the appropriate 
+sample depths. 
+Five Sieve Analysis tests (ASTM D6913) were performed on selected soil samples 
+to evaluate the gradation characteristics of the soils and to aid in soil classification. 
+Graphic presentations of the grain size distributions are provided on Plate B-1. 
+Ten Uniaxial Compressive Strength tests (ASTM D7012, Method C) were 
+performed on selected intact core runs to evaluate the unconfined compressive strength 
+of the basalt formation encountered.  The test results are presented on Plate B-2. 
+Two laboratory California Bearing Ratio tests (ASTM D1883) were performed on 
+bulk samples of the near-surface soils to evaluate the pavement support characteristics 
+and swell potential of the soils. The test results are presented on Plates B-3 and B-4. 
+Two laboratory Resistance (R) value tests (ASTM D2844) were performed by 
+Ninyo & Moore on bulk samples of the near-surface soils to evaluate the pavement 
+support characteristics of the soils. The test results are presented on Plates B-5 and B-6. 
+0
+5
+10
+15
+20
+25
+30
+35
+40
+45
+50
+55
+60
+65
+70
+75
+80
+85
+90
+95
+100
+0.001
+0.01
+0.1
+1
+10
+100
+5.079
+0.708
+0.452
+B - 1
+coarse
+1
+1.5
+3
+2
+40
+Depth (ft)
+%Gravel
+11.2
+41.0
+3.7
+23.1
+21.6
+26.8
+34.1
+20.2
+31.1
+24.5
+%Sand
+COBBLES
+Sample
+D30 (mm)
+140
+20
+HYDROMETER
+3
+GRAIN SIZE IN MILLIMETERS
+PERCENT FINER BY WEIGHT
+100
+coarse
+1/2
+Sample
+0.204
+Cu
+GRAVEL
+U.S. SIEVE NUMBERS
+D10 (mm)
+16
+fine
+19
+37.5
+19
+25
+37.5
+Cc
+3/4
+fine
+SILT OR CLAY
+medium
+GRAIN SIZE DISTRIBUTION - ASTM D6913
+SAND
+%Fine
+60
+4
+30
+200
+4
+6
+62.0
+24.9
+76.1
+45.8
+53.9
+Depth (ft)
+LL
+Brown sandy silt (ML) with a little gravel
+Gray with brown mottling silty gravel (GM) with some sand
+Brown sandy silt (ML) with traces of gravel
+Brown silty sand (SM) with some gravel
+Brown sandy silt (ML) with some gravel
+810 14
+50
+U.S. SIEVE OPENING IN INCHES
+6
+D60 (mm)
+D100 (mm)
+B-2
+B-2
+B-4
+B-4
+B-4
+2.0-3.5
+5.0-6.5
+2.0-3.5
+3.5-4.3
+5.0-6.5
+2.0-3.5
+5.0-6.5
+2.0-3.5
+3.5-4.3
+5.0-6.5
+B-2
+B-2
+B-4
+B-4
+B-4
+3/8
+PL PI
+Description
+Plate
+W.O. 8190-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+KAWAIHAE ROAD - WAIAKA BRIDGE REPLACEMENT
+AND REALIGNMENT OF APPROACHES
+DISTRICT OF SOUTH KOHALA, ISLAND OF HAWAII
+G_GRAIN_SIZE_MOD  8190-00.GPJ  GEOLABS.GDT  5/20/22
+B-1
+9 - 10
+5.000
+2.400
+2.08
+160.7
+24,419
+5,400
+B-1
+11.5 - 12.5
+4.990
+2.400
+2.08
+177.0
+100,080
+22,120
+B-1
+13.5 - 14.5
+4.990
+2.400
+2.08
+181.2
+151,360
+33,460
+B-1
+19.5 - 20.5
+4.960
+2.410
+2.06
+181.5
+147,280
+32,290
+B-1
+23 - 24
+5.000
+2.400
+2.08
+179.2
+85,940
+19,000
+B-2
+10.2 - 11.25
+5.020
+2.400
+2.09
+162.9
+34,650
+7,660
+B-2
+11.5 - 12.5
+5.000
+2.410
+2.07
+159.0
+38,280
+8,390
+B-2
+15 - 16
+4.990
+2.400
+2.08
+165.5
+43,920
+9,710
+B-2
+17 - 18
+4.980
+2.400
+2.08
+172.6
+57,460
+12,700
+B-2
+19.5 - 20.25
+4.970
+2.410
+2.06
+175.4
+117,040
+25,660
+B - 2
+Depth
+Location
+Length
+Diameter
+Length/
+Diameter
+Ratio
+(feet)
+(inches)
+(inches)
+(pcf)
+(psi)
+Density
+Compressive
+Strength
+Load
+UNIAXIAL COMPRESSIVE STRENGTH TEST
+(lbs)
+ASTM D7012 (METHOD C)
+Note: Samples were not prepared in accordance with ASTM D4543. Therefore, results reported may differ from results obtained from a test speciment that meets the requirements of
+Practice D4543
+Plate
+W.O. 8190-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+KAWAIHAE ROAD - WAIAKA BRIDGE REPLACEMENT
+AND REALIGNMENT OF APPROACHES
+DISTRICT OF SOUTH KOHALA, ISLAND OF HAWAII
+G_ROCK_UC_TEST_PORTRAIT  8190-00.GPJ  GEOLABS.GDT  5/20/22
+0
+50
+100
+150
+200
+250
+300
+350
+400
+450
+500
+0
+0.10
+0.20
+0.30
+0.40
+0.50
+0.60
+Sample:
+Corr. CBR @ 0.1"
+Depth:
+Corr. CBR @ 0.2"
+No. of Layers
+CALIFORNIA BEARING RATIO - ASTM D1883
+Description:
+Days Soaked
+5
+BULK-1
+Swell (%)
+1.18
+19.6
+17.4
+Molding Dry Density (pcf)
+STRESS, psi
+1.0 - 5.0 feet
+No. of Blows
+22.2
+92.7
+Molding Moisture (%)
+Hammer Wt. (lbs)
+Hammer Drop (inches)
+PENETRATION, inches
+Brown sandy silt with some gravel
+18
+56
+10
+5
+Aggregate
+B - 3
+3/4 inch minus
+Plate
+W.O. 8190-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+KAWAIHAE ROAD - WAIAKA BRIDGE REPLACEMENT
+AND REALIGNMENT OF APPROACHES
+DISTRICT OF SOUTH KOHALA, ISLAND OF HAWAII
+G_CBR  8190-00.GPJ  GEOLABS.GDT  5/20/22
+0
+50
+100
+150
+200
+250
+300
+350
+400
+450
+500
+0
+0.10
+0.20
+0.30
+0.40
+0.50
+0.60
+Sample:
+Corr. CBR @ 0.1"
+Depth:
+Corr. CBR @ 0.2"
+No. of Layers
+CALIFORNIA BEARING RATIO - ASTM D1883
+Description:
+Days Soaked
+5
+BULK-2
+Swell (%)
+2.57
+5.9
+4.5
+Molding Dry Density (pcf)
+STRESS, psi
+0.0 - 5.0 feet
+No. of Blows
+20.3
+83.4
+Molding Moisture (%)
+Hammer Wt. (lbs)
+Hammer Drop (inches)
+PENETRATION, inches
+Brown sandy silt with traces of gravel
+18
+56
+10
+5
+Aggregate
+B - 4
+3/4 inch minus
+Plate
+W.O. 8190-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+KAWAIHAE ROAD - WAIAKA BRIDGE REPLACEMENT
+AND REALIGNMENT OF APPROACHES
+DISTRICT OF SOUTH KOHALA, ISLAND OF HAWAII
+G_CBR  8190-00.GPJ  GEOLABS.GDT  5/20/22
+TEST SPECIMEN
+a
+b
+c
+MOISTURE AT COMPACTION, %
+42.2
+43.1
+43.6
+HEIGHT OF SAMPLE, inches
+2.48
+2.55
+2.54
+DRY DENSITY, pcf
+68.0
+67.9
+64.0
+COMPACTOR AIR PRESSURE, psi
+50
+50
+50
+EXUDATION PRESSURE, psi
+334
+291
+267
+EXPANSION, inches x 10exp-4
+0
+0
+0
+STABILITY Ph 2,000 lbs (160 psi)
+55
+57
+59
+TURNS DISPLACEMENT
+5.59
+5.68
+5.71
+R-VALUE UNCORRECTED
+46
+44
+43
+R-VALUE CORRECTED
+46
+44
+43
+DESIGN CALCULATION DATA
+a
+b
+c
+0.86
+0.90
+0.91
+TRAFFIC INDEX
+STABILOMETER THICKNESS, ft.
+0.50
+0.52
+0.53
+EXPANSION PRESSURE THICKNESS, ft.
+0.00
+0.00
+0.00
+R-VALUE BY EXPANSION:
+NOT APPLICABLE
+R-VALUE BY EXUDATION:
+44
+BULK-1  B3 @ 1.0-5.0'
+8190-00
+44
+PERFORMED IN GENERAL ACCORDANCE WITH ASTM D 2844/CT 301
+5.0
+Description
+Sandy SILT
+Sample Location
+Job No.
+Equilibrium
+R-Value
+                             EXPANSION PRESSURE CHART
+                                           EXUDATION PRESSURE CHART
+GRAVEL EQUIVALENT NEEDED, ft.
+0.00
+0.50
+1.00
+1.50
+2.00
+2.50
+3.00
+3.50
+4.00
+0.00
+0.50
+1.00
+1.50
+2.00
+2.50
+3.00
+3.50
+4.00
+COVER THICKNESS BY STABILOMETER in feet
+COVER THICKNESS BY EXPANSION in feet
+0
+10
+20
+30
+40
+50
+60
+70
+80
+90
+0
+100
+200
+300
+400
+500
+600
+700
+800
+R-VALUE
+EXUDATION PRESSURE (psi)
+R-VALUE TEST RESULTS
+GEOLABS INC
+WAIAKA BRIDGE
+108026001  8/21
+139963
+W.O. 8190-00
+GEOLABS, INC.
+PLATE B-5
+TEST SPECIMEN
+a
+b
+c
+MOISTURE AT COMPACTION, %
+42.9
+43.4
+44.0
+HEIGHT OF SAMPLE, inches
+2.48
+2.55
+2.56
+DRY DENSITY, pcf
+73.8
+73.7
+71.5
+COMPACTOR AIR PRESSURE, psi
+50
+50
+50
+EXUDATION PRESSURE, psi
+346
+302
+275
+EXPANSION, inches x 10exp-4
+0
+0
+0
+STABILITY Ph 2,000 lbs (160 psi)
+50
+52
+54
+TURNS DISPLACEMENT
+5.72
+5.77
+5.81
+R-VALUE UNCORRECTED
+49
+47
+46
+R-VALUE CORRECTED
+49
+47
+46
+DESIGN CALCULATION DATA
+a
+b
+c
+0.82
+0.85
+0.86
+TRAFFIC INDEX
+STABILOMETER THICKNESS, ft.
+0.48
+0.49
+0.50
+EXPANSION PRESSURE THICKNESS, ft.
+0.00
+0.00
+0.00
+R-VALUE BY EXPANSION:
+NOT APPLICABLE
+R-VALUE BY EXUDATION:
+47
+BULK-2 B4 @ 0.0-5.0'
+8190-00
+47
+PERFORMED IN GENERAL ACCORDANCE WITH ASTM D 2844/CT 301
+                             EXPANSION PRESSURE CHART
+                                           EXUDATION PRESSURE CHART
+GRAVEL EQUIVALENT NEEDED, ft.
+Description
+Sandy SILT
+Sample Location
+Job No.
+Equilibrium
+R-Value
+5.0
+0.00
+0.50
+1.00
+1.50
+2.00
+2.50
+3.00
+3.50
+4.00
+0.00
+0.50
+1.00
+1.50
+2.00
+2.50
+3.00
+3.50
+4.00
+COVER THICKNESS BY STABILOMETER in feet
+COVER THICKNESS BY EXPANSION in feet
+0
+10
+20
+30
+40
+50
+60
+70
+80
+90
+0
+100
+200
+300
+400
+500
+600
+700
+800
+R-VALUE
+EXUDATION PRESSURE (psi)
+R-VALUE TEST RESULTS
+GEOLABS INC.
+WAIAKA BRIDGE
+108026001  8/21
+139964
+W.O. 8190-00
+GEOLABS, INC.
+PLATE B-6
+APPENDIX  C  
+KAWAIHAE ROAD – WAIAKA BRIDGE REPLACEMENT AND 
+REALIGNMENT OF APPROACHES 
+DISTRICT OF SOUTH KOHALA, ISLAND OF HAWAII 
+W.O. 8190-00 
+GEOLABS, INC. 
+PLATE C-1 
+Hawaii • California 
+                        B-1     3.0’ TO 36.5’ 
+ 3.0’ 
+  14.5’                                                                              24.0’ 
+                                                               14.5’ 
+                                                                       24.0’                                                                             36.5’   
+KAWAIHAE ROAD – WAIAKA BRIDGE REPLACEMENT AND 
+REALIGNMENT OF APPROACHES 
+DISTRICT OF SOUTH KOHALA, ISLAND OF HAWAII 
+W.O. 8190-00 
+GEOLABS, INC. 
+PLATE C-2 
+Hawaii • California 
+                                                     B-1     36.5’ TO 50.0’ 
+   36.5’                                                                              45.5’ 
+                                                                                                   45.5’         
+                              50.0’        
+KAWAIHAE ROAD – WAIAKA BRIDGE REPLACEMENT AND 
+REALIGNMENT OF APPROACHES 
+DISTRICT OF SOUTH KOHALA, ISLAND OF HAWAII 
+W.O. 8190-00 
+GEOLABS, INC. 
+PLATE C-3 
+Hawaii • California 
+                                                                         B-2    6.4’ TO 26.0’ 
+        6.4’                                                                                  16.5’ 
+                                                                                                                       16.5’                                                                                 26.0’    
+KAWAIHAE ROAD – WAIAKA BRIDGE REPLACEMENT AND 
+REALIGNMENT OF APPROACHES 
+DISTRICT OF SOUTH KOHALA, ISLAND OF HAWAII 
+W.O. 8190-00 
+GEOLABS, INC. 
+PLATE C-4 
+Hawaii • California 
+                                                                           B-2    26.0’ TO 51.5’ 
+        26.0’                                                                               41.5’                            
+                                                                                                                    41.5’                                                                                                  51.5’ 
+APPENDIX  D  
+Project: 
+Street Name:
+Kawaihae Road
+(1)
+Design Period (years)
+30
+(2)
+Current Average Daily Traffic (ADT) Per Direction
+5802
+(3)
+Future Average Daily Traffic (ADT) Per Direction
+6660
+(4)
+Average ADT Per Direction Over Design Period
+6231
+(5)
+Design Lane Factor
+1
+Number of Lanes
+Design Lane
+In One Direction
+Factor
+1
+1
+2
+1
+3
+0.8
+4
+0.75
+(6)
+24-Hour Truck Traffic, T24 (%)
+5.9
+Truck Traffic Distribution :
+2-axle   =
+67.84%
+3-axle   =
+10.39%
+4-axle   =
+2.55%
+5-axle   =
+18.71%
+6-axle   =
+0.49%
+7-axle   =
+0.01%
+(7)
+Average Daily Truck Traffic Per Direction, ADTT
+368
+(8)
+Equivalent 18-kip Single Axle Loads, ESAL
+2-axle : % of 2-axle trucks  x No. trucks  x 65 
+16211
+3-axle : % of 3-axle trucks  x No. trucks  x 525
+20053
+4-axle : % of 4-axle trucks  x No. trucks  x 1162
+10893
+5-axle : % of 5-axle trucks  x No. trucks  x 1462
+100561
+6-axle : % of 6-axle trucks  x No. trucks  x 968
+1779
+Annual ESAL :
+149,497
+Total ESAL For Design Period
+4,484,913
+TRAFFIC INDEX (TI) = 9 (ESAL/1,000,000)EXP(0.119)
+10.76
+SAY
+11.0
+W.O. 8190-00
+GEOLABS, INC.
+PLATE D-1
+TRAFFIC INDEX DETERMINATION
+Kawaihae Road - Waiaka Bridge Replacement and
+Realignment of Approaches
+District of South Kohala, Island of Hawaii
+Project:
+Street:
+Kawaihae Road
+Design Parameters
+Traffic Index
+11.0
+R value of ACB
+90
+R value of ASB
+60
+R value of Subgrade
+46
+Pavement Section using Asphalt Concrete Base and Aggregate Subbase
+Trial Thickness of AC + ACB
+11
+Inches
+(1)
+Asphalt Concrete (AC)
+GE required
+0.352
+GE with Tolerance =
+0.352
+0.240
+0.592
+Gf of AC
+2.051
+GE/Gf   
+3.46
+SAY
+3.500
+Inches
+USE
+4.000
+Inches
+(min. 2.5")
+(2)
+Asphalt Concrete Base (ACB)
+GE required 
+1.408
+GE of  AC 
+0.444
+GE required of ACB
+0.964
+Gf of ACB
+1.948
+GE/Gf   
+5.94
+SAY
+6.00
+Inches
+USE
+7.00
+Inches
+(min. 4")
+(3)
+Calculate New Gf of AC
+Thickness of AC + Thickness of ACB
+0.917
+New Gf of AC
+2.051
+New Gf of ACB
+1.948
+(4)
+Aggregate Subbase (ASB)
+GE required 
+1.918
+GE of  AC 
+0.444
+GE of  ACB 
+1.137
+GE required of ASB
+0.338
+GE less tolerance
+0.098
+Gf of ASB
+1.000
+GE/Gf   
+1.18
+SAY
+6.00
+Inches
+USE
+6.00
+Inches
+(min. 6")
+   Design Pavement Section
+4.0
+Inches
+AC
+7.0
+Inches
+ACB
+6.0
+Inches
+ASB
+17.0
+Inches
+Total Thickness
+W.O. 8190-00
+GEOLABS, INC.
+PLATE D-2
+Kawaihae Road - Waiaka Bridge Replacement and
+Realignment of Approaches
+District of South Kohala, Island of Hawaii
+Design Period =
+30 years
+(One-Way Traffic)
+2 Axles
+3 Axles
+4 Axles
+5 Axles
+6 Axles
+Single Axle
+ADTT= 250
+ADTT= 38
+ADTT= 9
+ADTT= 69
+ADTT= 2
+ADTT=
+368
+Loads (kips)
+Factors Repetition Factors Repetition Factors Repetition Factors Repetition Factors Repetition
+20-22
+103.5
+25875
+183.75
+6983
+1063.8
+9574.2 2,273.10
+156844
+1933.05
+3866.1
+203142
+22-24
+72.15
+18038
+26.85
+1020
+1339.5
+12055.5
+646.35
+44598
+3464.1
+6928.2
+82640
+24-26
+52.2
+13050
+11.25
+428
+909.45
+8185.05
+51
+3519
+651.15
+1302.3
+26484
+26-28
+10.05
+2513
+8.4
+319
+345.15
+3106.35
+9
+621
+6559
+28-30
+10.05
+2513
+8.1
+308
+343.8
+3094.2
+9
+621
+6536
+30-32
+7.35
+279
+64.2
+577.8
+857
+32-34
+7.35
+279
+63
+567
+846
+34-36
+7.35
+279
+63
+567
+846
+Tandem Axle
+Loads (kips)
+30-32
+761.1
+28922
+609.15
+5482.35
+272.85
+18827
+651.15
+1302.3
+54533
+32-34
+555.6
+21113
+439.8
+3958.2
+312.15
+21538
+46609
+34-36
+156.9
+5962
+561.15
+5050.35
+199.65
+13776
+24788
+36-38
+156.9
+5962
+188.1
+1692.9
+278.7
+19230
+26885
+38-40
+100.2
+3808
+125.85
+1132.65
+112.95
+7794
+12734
+40-42
+44.4
+1687
+83.7
+753.3
+60.15
+4150
+6591
+42-44
+83.7
+753.3
+38.4
+2650
+3403
+44-46
+40.8
+367.2
+49.65
+3426
+3793
+46-48
+5.7
+217
+37.5
+2588
+2804
+48-50
+5.7
+217
+37.5
+2588
+2804
+REPETITIONS
+TOTAL
+W.O. 8190-00
+GEOLABS, INC.
+PLATE D-3
+Kawaihae Road - Waiaka Bridge Replacement and 
+Realignment of Approaches
+District of South Kohala, Island of Hawaii
+W.O. 8190-00 
+GEOLABS, INC. 
+PLATE
+D-4
+Kawaihae Road - Waiaka Bridge Replacement and 
+Realignment of Approaches
+District of South Kohala, Island of Hawaii
+W.O. 8190-00 
+GEOLABS, INC. 
+PLATE
+D-5
+Kawaihae Road - Waiaka Bridge Replacement and 
+Realignment of Approaches
+District of South Kohala, Island of Hawaii
+ECONOMIC JUSTIFICATION
+PROJECT:
+Unit Prices:
+In-Place Costs
+1
+Asphalt Concrete Pavement (AC) - per ton
+200.00
+2
+Asphalt Concrete Base (ACB) - per ton
+185.00
+3
+Asphalt Treated Permeable Base (ATPB) - per ton
+185.00
+4
+Cement Treated Permeable Base (CTPB) - per cubic yard
+140.00
+5
+Untreated Permeable Base (UTPB) - per cubic yard
+100.00
+6
+Aggregate Base (AB) - per cubic yard 
+100.00
+7
+Aggregate Subbase (ASB) - per cubic yard 
+80.00
+8
+Portland Cement Concrete Pavement (PCC) - per cubic yard
+450.00
+9
+Roadway Excavation - per cubic yard
+50.00
+10
+Cold Planing of Existing AC - per cubic yard
+72.00
+11
+AC Overlay - per ton
+215.00
+12
+Retexturing of Concrete Pavement - per square yard
+30.00
+Assumptions/Limitations:
+1.  The new pavement sections are based on the current HDOT design guidelines
+2.  HDOT Conversion Factors:
+Asphalt Concrete Pavement (Mix IV):
+2.07 Tons/cubic yard
+Asphalt Concrete Base:
+2.12 Tons/cubic yard
+Asphalt Treated Permeable Base:
+2.19 Tons/cubic yard
+3.  Assume cold-plane and overlay 2.0 inches of AC every 7 to 8 years for AC pavement with untreated bases
+     Assume cold-plane and overlay 2.0 inches of AC every 10 to 12 years for AC pavement with treated bases
+     Assume retexturing PCC pavements every 30 years
+4.  Economic analysis based on excavated pavement sections.
+5.  Assume rate of inflation at
+6
+percent per year.
+6.  Assume rate of discount at
+6
+percent per year.
+W.O. 8190-00
+GEOLABS, INC.
+PLATE D-6
+Kawaihae Road - Waiaka Bridge Replacement and
+Realignment of Approaches
+District of South Kohala, Island of Hawaii
+A. 
+AC Pavement Section with ACB over ASB
+New Pavement Section: 4.0" AC, 7.0" ACB, 6.0" ASB
+Initial Cost
+Items
+Thickness
+Quantity
+Unit Price
+Cost Per
+(inches)
+(cy/sy)
+Square Yard
+AC
+4
+0.11
+200.00
+46.00
+ACB
+7
+0.19
+185.00
+76.26
+ATPB
+0
+0.00
+185.00
+-
+CTPB
+0
+0.00
+140.00
+-
+UTPB
+0
+0.00
+100.00
+-
+AB
+0
+0.00
+100.00
+-
+ASB
+6
+0.17
+80.00
+13.33
+Roadway Excavation
+17
+0.47
+50.00
+23.61
+Total Initial Cost
+159.21
+Maintenance Cost
+Year
+Items  
+Thickness
+Quantity
+Present
+Inflated
+Inflated Cost Present Cost
+(inches)
+(cy/sy)
+Unit Price Unit Price
+Per Sq. Yd.
+Per Sq. Yd.
+10
+Cold-Planing
+2.0
+0.06
+72.00
+128.94
+7.16
+4.00
+AC Overlay
+2.0
+0.06
+215.00
+385.03
+44.28
+24.73
+20
+Cold-Planing
+2.0
+0.06
+72.00
+230.91
+12.83
+4.00
+AC Overlay
+2.0
+0.06
+215.00
+689.53
+79.30
+24.73
+Number of Overlay =
+4
+Total Maint. Cost
+57.45
+OPTION A:
+TOTAL COST
+216.66
+W.O. 8190-00
+GEOLABS, INC.
+PLATE D-7
+B.
+PCC Pavement (650 psi flexural strenth) 
+New Pavement Section: 10.0" PCC over 6.0" ASB
+Initial Cost
+Items
+Thickness Quantity Unit Price
+Cost Per
+(inches)
+(cy/sy)
+Square Yard
+PCC
+10
+0.28
+450.00
+125.00
+ACB
+0
+0.00
+185.00
+-
+ATPB
+0
+0.00
+185.00
+-
+CTPB
+0
+0.00
+140.00
+-
+UTPB
+0
+0.00
+100.00
+-
+AB
+0
+0.00
+100.00
+-
+ASB
+6
+0.17
+80.00
+13.33
+Roadway Excavation
+16
+0.44
+50.00
+22.22
+Total Cost
+160.56
+Maintenance Cost
+Year
+Items
+Inflated Cost
+Present Cost
+Per Sq. Yd.
+Per Sq. Yd.
+20
+Re-Texturing of Concrete Pavement
+96.21
+30.00
+.
+OPTION B:
+TOTAL COST
+190.56
+Pavement Cost Comparison
+OPTION A:
+216.66
+OPTION B:
+190.56
+W.O. 8190-00
+GEOLABS, INC.
+PLATE D-8

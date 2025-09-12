@@ -1,0 +1,3909 @@
+GEOTECHNICAL ENGINEERING EXPLORATION 
+RELOCATED WEST KAUAI ENERGY SUBSTATION 
+KEKAHA, KAUAI, HAWAII 
+W.O. 8364-10     DECEMBER 29, 2023 
+Prepared for 
+AES CLEAN ENERGY 
+GEOLABS, INC. 
+Geotechnical Engineering and Drilling Services 
+GEOTECHNICAL ENGINEERING EXPLORATION 
+RELOCATED WEST KAUAI ENERGY SUBSTATION 
+KEKAHA, KAUAI, HAWAII 
+W.O. 8367-10     DECEMBER 29, 2023 
+Prepared for 
+AES CLEAN ENERGY 
+LICENSED
+PROFESSIONAL
+ENGINEER
+No. 10029-C
+THIS WORK WAS PREPARED BY 
+ME OR UNDER MY SUPERVISION. 
+4-30-24 
+SIGNATURE 
+         EXPIRATION DATE 
+ OF THE LICENSE 
+GEOLABS, INC. 
+Geotechnical Engineering and Drilling Services 
+94-429 Koaki Street, Suite 200 • Waipahu, HI  96797 
+Hawaii • California 
+GEOLABS, INC. 
+Geotechnical Engineering and Drilling Services 
+94-429 Koaki Street, Suite 200 • Waipahu, Hawaii 96797 
+Telephone: (808) 841-5064  •  E-mail: hawaii@geolabs.net 
+Hawaii • California 
+December 29, 2023 
+W.O. 8364-10 
+Mr. Michael Jenkinson 
+AES Clean Energy 
+282 Century Place, Suite 2000 
+Louisville, CO  80027 
+Dear Mr. Jenkinson: 
+Geolabs, Inc. is pleased to submit our report entitled "Geotechnical Engineering 
+Exploration, Relocated West Kauai Energy Substation, Kekaha, Kauai, Hawaii," prepared 
+for the proposed project. 
+Our work was performed in general accordance with the scope of services outlined 
+in our fee proposal dated March 16, 2022. 
+Please note that the soil and rock samples recovered during our field exploration 
+(remaining after testing) will be stored for a period of two months from the date of this 
+report. The samples will be discarded after that date unless arrangements are made for 
+a longer sample storage period. Please contact our office for alternative sample storage 
+requirements, if appropriate. 
+Detailed discussion and specific design recommendations are contained in the 
+body of this report. If there is any point that is not clear, please contact our office. 
+Very truly yours, 
+GEOLABS, INC. 
+      John Y.L. Chen, P.E. 
+          Vice President 
+JC:TO 
+W.O. 8364-10 
+GEOLABS, INC. 
+Page i 
+Hawaii • California 
+GEOTECHNICAL ENGINEERING EXPLORATION 
+RELOCATED WEST KAUAI ENERGY SUBSTATION 
+KEKAHA, KAUAI, HAWAII 
+W.O. 8364-10     DECEMBER 29, 2023 
+TABLE OF CONTENTS 
+                                                                                                                                    Page 
+SUMMARY OF FINDINGS AND RECOMMENDATIONS .............................................. iii 
+SECTION 1. GENERAL ................................................................................................. 1 
+1.1 
+Project Considerations ............................................................................... 1 
+1.2 
+Purpose and Scope ................................................................................... 1 
+SECTION 2. SITE CHARACTERIZATION ..................................................................... 4 
+2.1 
+Regional Geology ...................................................................................... 4 
+2.2 
+Existing Site Conditions ............................................................................. 5 
+2.3 
+Subsurface Conditions ............................................................................... 6 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS ............................................. 7 
+3.1 
+Pile Foundations ........................................................................................ 8 
+3.1.1 Lateral Load Resistance ................................................................. 9 
+3.1.2 Foundation Settlement ................................................................. 10 
+3.1.3 Pile Hammer Selection ................................................................. 10 
+3.1.4 Pile Driving Construction Considerations ..................................... 11 
+3.2 
+Slabs-On-Grade ....................................................................................... 11 
+3.3 
+Site Grading ............................................................................................. 13 
+3.3.1 Site Preparation ............................................................................ 13 
+3.3.2 Fills and Backfills .......................................................................... 14 
+3.3.3 Fill Placement and Compaction Requirements............................. 15 
+3.3.4 Excavations .................................................................................. 16 
+3.4 
+Infiltration Tests ....................................................................................... 16 
+3.5 
+Pavement Design .................................................................................... 17 
+3.6 
+Corrosion Potential .................................................................................. 19 
+3.6.1 Laboratory Corrosivity Testing...................................................... 19 
+3.6.2 Laboratory Thermal Resistivity Testing ........................................ 20 
+3.7 
+Utility Trenches ........................................................................................ 20 
+3.8 
+Design Review ......................................................................................... 21 
+3.9 
+Construction Monitoring ........................................................................... 22 
+SECTION 4. LIMITATIONS .......................................................................................... 23 
+CLOSURE ..................................................................................................................... 25 
+TABLE OF CONTENTS  
+Page 
+W.O. 8364-10 
+GEOLABS, INC. 
+Page ii 
+Hawaii • California 
+PLATES 
+Project Location Map ................................................................................... Plate 1 
+Site Plan ...................................................................................................... Plate 2 
+APPENDIX A 
+Field Exploration ....................................................................... Plates A-1 and A-2 
+Soil Log Legend ..................................................................................... Plate A-0.1 
+Soil Classification Log Key .................................................................... Plate A-0.2 
+Rock Log Legend .................................................................................. Plate A-0.3 
+Logs of Borings ......................................................................... Plates A-1 thru A-6 
+APPENDIX B 
+Laboratory Tests ...................................................................................... Page B-1 
+Laboratory Test Data .............................................................. Plates B-1 thru B-11 
+APPENDIX C  
+Infiltration Test Results ............................................................................ Plate C-1 
+APPENDIX D 
+Eurofins TestAmerica Analytical Report (14 Sheets) 
+APPENDIX E 
+Thermal Resistivity Test Report (2 Sheets) 
+W.O. 8364-10 
+GEOLABS, INC. 
+Page iii 
+Hawaii • California 
+GEOTECHNICAL ENGINEERING EXPLORATION 
+RELOCATED WEST KAUAI ENERGY SUBSTATION 
+KEKAHA, KAUAI, HAWAII 
+W.O. 8364-10     DECEMBER 29, 2023 
+SUMMARY OF FINDINGS AND RECOMMENDATIONS 
+Our field exploration generally encountered stiff to hard alluvial soils. We did not 
+encounter groundwater in the borings at the time of our field exploration. However, it should 
+be noted that groundwater levels are subject to change due to rainfall, time of year, seasonal 
+precipitation, surface water runoff, and other factors. 
+It is desired to support the proposed substation on a deep foundation system 
+consisting of driven pipe piles. Based on the subsurface conditions encountered, we 
+recommend using an ultimate skin friction of 1.0 kips per square foot (ksf) and end bearing 
+of 22 ksf for the stiff alluvial deposits encountered at the site to determine the ultimate 
+compressive load capacity. Due to the potential for tension crack developing between the 
+pile and the surrounding soil at the ground surface, we recommend ignoring the top 2 feet 
+of soil resistance when determining the ultimate compressive load capacities. 
+Based on our laboratory tests, the on-site clayey soils exhibit a high to very high 
+shrink/swell potential when subjected to moisture fluctuations. To reduce the potential for 
+future distress to the lightly loaded slabs on grade resulting from shrinking and swelling of 
+the clayey soils, we recommend providing a minimum of 3 feet of non-expansive, select 
+granular fill material below the slabs-on-grade footings, to reduce the potential for 
+appreciable structural distress resulting from expansive clayey soils. The non-expansive 
+select granular fill should extend a minimum of 3 feet beyond the edge of the structures. 
+A field infiltration test was performed at a depth of about 5 feet below the existing 
+ground surface. Based on the results of the field infiltration testing, the average infiltration 
+rate was generally less than 0.5 inches per hour, indicating that an infiltration/detention 
+system and similar methods of stormwater management would not be feasible for this 
+facility. Due to the variability of the subsurface conditions, the absorption capacity of the 
+selected stormwater disposal system should be confirmed by conducting additional 
+infiltration tests during construction. 
+The design of metallic substructures, such as metallic piping, should consider the 
+effects of the corrosive environment on the substructure. Based on the results of laboratory 
+corrosivity tests, the subsurface soils at the project site have resistivity values ranging from 
+about 200 to 300 ohm-cm, corresponding to corrosion rating of 1. Therefore, we recommend 
+properly designing near-surface metallic substructures (such as piping) for protection 
+against the potential for corrosion. 
+The text of this report should be referred to for detailed discussions and specific 
+geotechnical recommendations. 
+END OF SUMMARY OF FINDINGS AND RECOMMENDATIONS
+W.O. 8364-10 
+GEOLABS, INC. 
+Page 1 
+Hawaii • California 
+SECTION 1.  GENERAL 
+This report presents the results of our geotechnical engineering exploration 
+performed for the Relocated West Kauai Energy Substation project in the Kekaha area 
+on the Island of Kauai, Hawaii. The project location and general vicinity are shown on the 
+Project Location Map, Plate 1. 
+This report summarizes the findings and geotechnical recommendations resulting 
+from our field exploration, laboratory testing, and engineering analyses for the project. 
+These findings and geotechnical recommendations are intended for the design of 
+foundations, slabs-on-grade, retaining structures, site grading, and pavements only. The 
+findings and recommendations presented herein are subject to the limitations noted at 
+the end of this report. 
+1.1 
+Project Considerations 
+We understand it is proposed to develop a 56 MW DC, 35 MW AC, and a 
+photovoltaic power plant with a substation as a part of the West Kauai Energy project in 
+the Kekaha area on the Island of Kauai, Hawaii. The development will be constructed on 
+approximately 285 acres of open land, consisting of ground-mounted solar panels, 
+underground and overhead electric circuits, and various pads for electrical equipment 
+such as switchgear, transformers, and inverters. A subsurface investigation was 
+completed recently. 
+Based on the information provided, we understand that it is desired to relocate the 
+substation adjacent to the proposed Mana Reservoir. Details of the site grading plans 
+were not available at the time this report was prepared. Based on Google Earth™, the 
+existing ground surface was relatively flat with elevations ranging from about +41 feet to 
++44 feet Mean Sea Level (MSL) at the southern and northern portions of the project site, 
+respectively. 
+1.2 
+Purpose and Scope 
+The purpose of our exploration was to obtain an overview of the surface and 
+subsurface conditions to develop an idealized soil and/or rock data set to formulate 
+geotechnical engineering recommendations for the design of the project. The work was 
+SECTION 1. GENERAL 
+W.O. 8364-10 
+GEOLABS, INC. 
+Page 2 
+Hawaii • California 
+performed in general accordance with our fee proposal dated March 16, 2022. The scope 
+of work for this exploration included the following tasks and work efforts: 
+1. 
+Research and review of available in-house subsurface and geologic 
+information related to the project area. 
+2. 
+Coordination of a mechanical trail clearing, boring stakeout, underground 
+utility clearance (one-call), and site access by our engineer. 
+3. 
+Mobilization and demobilization of a truck-mounted drill rig, water truck, and 
+two operators to the project site and back. 
+4. 
+Drilling and sampling of five borings to depths of approximately 21.5 to 
+30 feet below the existing ground surface. 
+5. 
+Coordination of the field exploration and logging of the borings by our field 
+engineer/geologist. 
+6. 
+Infiltration testing in one 5-foot boring to determine the infiltration 
+characteristics of the underlying ground surface. 
+7. 
+Laboratory testing of selected samples obtained during the field exploration 
+as an aid in classifying the materials and evaluating their engineering 
+properties and near-surface soil corrosivity. 
+8. 
+Collection and shipping of one bulk sample to GeoTherm for thermal 
+resistivity testing. 
+9. 
+Preparation of this formal report (one electronic pdf file) summarizing our 
+work on the project and presenting our findings and geotechnical 
+engineering recommendations. 
+10. 
+Coordination of our overall work on the project by our engineer. 
+11. 
+Quality assurance of our work and client/design team consultation by our 
+principal engineer. 
+12. 
+Miscellaneous work efforts, such as drafting, word processing, and clerical 
+support. 
+Detailed descriptions of our field exploration methodology and the Logs of Borings 
+are presented in Appendix A. Results of the laboratory tests performed on selected soil 
+samples are presented in Appendix B. Results of the field infiltration testing performed at 
+selected locations are presented in Appendix C. Results of the corrosion tests performed 
+SECTION 1. GENERAL 
+W.O. 8364-10 
+GEOLABS, INC. 
+Page 3 
+Hawaii • California 
+by Eurofins TestAmerica Laboratories, Inc. are presented in Appendix D. Results of the 
+thermal resistivity test performed by Geotherm USA is presented in Appendix E. 
+END OF GENERAL 
+W.O. 8364-10 
+GEOLABS, INC. 
+Page 4 
+Hawaii • California 
+SECTION 2. SITE CHARACTERIZATION 
+2.1 
+Regional Geology 
+The Island of Kaua`i is a dissected basaltic dome that was initially formed by a 
+single large shield volcano, which has subsequently been deeply eroded and partially 
+covered with later (younger) volcanic materials. The Island of Kaua`i is the oldest of the 
+main Hawaiian Islands and today encompasses approximately 1,456 square kilometers 
+(562 square miles) in area with a maximum elevation of about 1,569 meters (5,148 feet) 
+above Mean Sea Level (MSL) at Mt. Wai’ale’ale near the center of the island. It is believed 
+that during the Tertiary Period (about 5 to 6 million years ago in the Pliocene Epoch), 
+basaltic lavas belonging to the Waimea Canyon Volcanic Series built a roughly circular 
+island volcano from the ocean floor that was estimated to have been about 6,100 meters 
+(20,000 feet) deep at the time. Near the end of the Pliocene Epoch, this main shield 
+building volcanic phase came to a halt. 
+Following a long period of erosion and island mass subsidence, volcanism was 
+renewed during the early Pleistocene Epoch (about 1.5 million years ago) with the 
+eruption of the Koloa Volcanic Series from multiple vents throughout the island. This post-
+erosional volcanic activity laid a veneer of fresh lava and interbedded volcanic sediments 
+over the older deposits of the Waimea Canyon Volcanic Series. Because of the long 
+period of erosion between the eruption of the Waimea Canyon Volcanic Series and the 
+Koloa Volcanic Series, deposits of the Koloa Volcanic Series typically filled the erosional 
+valleys and depressions that existed at that time. Consequently, the basaltic rocks of the 
+Koloa Volcanic Series are commonly found overlying thick residual soil and alluvial 
+deposits. 
+The dominant geologic processes of weathering, landform erosion, and sediment 
+re-deposition followed during the late Pleistocene and Recent Epochs. Combined with 
+the erosional and depositional effects of the Pleistocene sea-level fluctuations, which 
+occurred in response to the worldwide advance and retreat of the continental ice sheets, 
+the Island of Kaua`i has evolved to its present form. 
+SECTION 2. SITE CHARACTERIZATION 
+W.O. 8364-10 
+GEOLABS, INC. 
+Page 5 
+Hawaii • California 
+The project site is on a low-lying coastal area of Mana Plain on the western side 
+of the island. Mana Plain was below sea level during the Pleistocene Epoch and is 
+characterized by both terrigenous alluvium and marine sediments. The marine sediments 
+have continued to accumulate in a low energy lagoonal environment resulting in thick 
+deposits of soft and/or loose sediments along the coast in areas that were formerly valleys 
+and drainage ways. 
+2.2 
+Existing Site Conditions 
+The project site is generally an empty lot located in the Kehaka area on the Island 
+of Kauai, Hawaii. The project site is bounded by undeveloped land just northeast of Mana 
+Road. 
+At the time of our field exploration, the site was blanked with dry grasses and 
+shrubs, as shown below in Photo No. 1. It should be noted that boring access required 
+trail clearing operation conducted by AES Clean Energy. 
+Based on Google Earth™, the existing ground surface was relatively flat with 
+elevations ranging from about +41 feet to +44 feet MSL at the southern and northern 
+portions of the project site, respectively. 
+Photo No. 1 – Existing Empty Lot Site Conditions 
+SECTION 2. SITE CHARACTERIZATION 
+W.O. 8364-10 
+GEOLABS, INC. 
+Page 6 
+Hawaii • California 
+2.3 
+Subsurface Conditions 
+We explored the subsurface conditions by drilling and sampling five borings, 
+designated as Boring Nos. 101 through 105, extending to depths of about 21.5 to 30 feet 
+below the existing ground surface. Two bulk samples of the near-surface soils were 
+obtained to evaluate the pavement support characteristics of the near-surface soils. In 
+addition, one borehole, designated as I-101, was drilled to a depth of about 5 feet below 
+the existing ground surface for infiltration testing. The approximate boring locations are 
+shown on the Site Plan, Plate 2. 
+Based on our field exploration, the project site was generally underlain by alluvial 
+soils. The relocated substation area was generally underlain by stiff to hard silty/clayey 
+soils interbedded with medium dense to dense sands/gravels extending to depths of 
+about 21.5 to 28.5 feet below the existing ground surface. It should be noted that 
+weathered basalt formation was encountered in Boring No. 103 underlying the alluvial 
+soils and extended to the maximum depth explored of 30 feet below the existing ground 
+surface. 
+We did not encounter groundwater in the borings at the time of our field exploration. 
+However, it should be noted that groundwater levels are subject to change due to rainfall, 
+time of year, seasonal precipitation, surface water runoff, and other factors. 
+Detailed descriptions of the field exploration methodology are presented in 
+Appendix A. Descriptions and graphic representations of the materials encountered in the 
+borings are presented on the Logs of Borings in Appendix A. Results of the field infiltration 
+testing performed at selected locations are presented in Appendix C. 
+END OF SITE CHARACTERIZATION 
+W.O. 8364-10 
+GEOLABS, INC. 
+Page 7 
+Hawaii • California 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+Based on our field exploration, the project site was generally underlain by alluvial 
+soils overlying weathered basalt at deeper depths. We did not encounter groundwater in 
+the borings at the time of our field exploration. However, it should be noted that 
+groundwater levels are subject to change due to rainfall, time of year, seasonal 
+precipitation, surface water runoff, and other factors. 
+We understand that it may be desired to support the proposed substation on a 
+deep foundation system consisting of driven pipe piles. Based on the subsurface 
+conditions encountered, we recommend using an ultimate skin friction of 1.0 kips per 
+square foot (ksf) and end bearing of 22 ksf for the stiff alluvial deposits encountered at 
+the site to determine the ultimate compressive load capacity. Due to the potential for 
+tension cracks developing between the pile and the surrounding soil at the ground 
+surface, we recommend ignoring the top 2 feet of soil resistance when determining the 
+ultimate compressive load capacities. 
+Based on our laboratory tests, the on-site clayey soils exhibit a high to very high 
+shrink/swell potential when subjected to moisture fluctuations. To reduce the potential for 
+future distress to the lightly loaded slabs on grade resulting from shrinking and swelling 
+of the clayey soils, we recommend providing a minimum of 3 feet of non-expansive, select 
+granular fill material below the slabs-on-grade footings, to reduce the potential for 
+appreciable structural distress resulting from expansive clayey soils. The non-expansive 
+select granular fill should extend a minimum of 3 feet beyond the edge of the structures. 
+The design of metallic substructures, such as metallic piping, should consider the 
+effects of the corrosive environment on the substructure. Based on the results of 
+laboratory corrosivity tests, the subsurface soils at the project site have resistivity values 
+ranging from about 200 to 300 ohm-cm, corresponding to a corrosion rating of 1. 
+Therefore, we recommend properly designing near-surface metallic substructures (such 
+as piping) for protection against the potential for corrosion. 
+Detailed discussions and recommendations for these items and other geotechnical 
+aspects of the project are presented in the following sections. 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 8364-10 
+GEOLABS, INC. 
+Page 8 
+Hawaii • California 
+3.1 
+Pile Foundations 
+Based on the information provided, we understand that it may be desired to 
+support the proposed substation on a deep foundation system consisting of driven piles. 
+We recommend using steel pipe piles to support the proposed substation at the relocated 
+site. 
+Based on our preliminary analyses, the driving pipe pile foundation supporting the 
+proposed substation may be considered using 14, 20, 24, or 30-inch diameter steel pipe 
+piles. In general, to avoid reduction in the vertical compressive load capacity and to 
+facilitate pile driving operation, the steel pipe piles should have a minimum center-to-
+center spacing of three times the pile diameter. Our preliminary recommendations 
+pertaining to the steel pipe pile capacities are presented in the following table. 
+PRELIMINARY STEEL PIPE PILE FOUNDATIONS 
+Pile Outside 
+Diameter 
+(inches) 
+Pile Length 
+(feet) 
+Pile Wall 
+Thickness 
+(inches) 
+Allowable Compressive 
+Load Capacity  
+(kips) 
+14 
+20 
+0.375 
+45 
+20 
+20 
+0.375 
+70 
+24 
+20 
+0.500 
+90 
+30 
+20 
+0.625 
+120 
+The steel pipe piles would derive vertical support from combination of skin friction 
+and end bearing between the steel pipe pile and the surrounding soils. Based on the 
+subsurface conditions encountered, we recommend using an ultimate skin friction of 1.0 
+kips per square foot (ksf) and end bearing of 22 ksf for the stiff alluvial deposits 
+encountered at the site to determine the ultimate compressive load capacity. A factor of 
+safety of 2.0 was used in arriving at the allowable compressive load capacities provided 
+above. The allowable compressive load capacity is for dead-plus-live loads and may be 
+increased by one-third (⅓) for transient loads, such as those caused by wind force. 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 8364-10 
+GEOLABS, INC. 
+Page 9 
+Hawaii • California 
+It should be noted that the clayey/silty materials encountered at the site may be 
+susceptible to tension cracking at the ground surface due to soil moisture fluctuations and 
+lateral movements of the steel pipe pile foundation system. The tension crack would result 
+in the development of a gap between the pile and the surrounding soil extending from the 
+ground surface down into the subsurface. Therefore, we recommend that the upper 2 feet 
+of soil resistance be ignored when calculating the compressive and upload load capacities 
+of the steel pipe pile system. 
+The load bearing capacities of the piles will depend largely on the consistency of 
+the soils and the contractor's method of installation and construction procedures. 
+Because local variations in the subsurface materials likely will occur, it is imperative that 
+our representative is present during the pile driving operations to confirm the subsurface 
+conditions encountered during the pile construction and to observe the installation of the 
+piles. Contract documents should include provisions (unit prices) for the extension of the 
+piles during construction to account for unforeseen subsurface conditions. The 
+subsequent subsections address the design and construction of the pile foundations, 
+which include the following: 
+Lateral Load Resistance 
+Pile Construction Considerations 
+3.1.1 Lateral Load Resistance 
+Lateral loads imposed on the proposed substation may be resisted by the lateral 
+load capacity of the piles. The lateral load resistance of the pile foundations is a 
+function of the stiffness of the surrounding soil, the stiffness of the pile, allowable 
+deflection at the top of the pile, and the induced moment in the pile.  
+The lateral load analyses were performed using the program LPILE-plus for 
+Windows, which is a microcomputer adaptation of a finite difference, laterally 
+loaded pile program originally developed at the University of Texas at Austin.  
+The allowable lateral load is provided as one-half (½) of the lateral load that 
+produces the lateral deflection of 1 inch. The following table summarizes the 
+allowable lateral load capacities of the steel pipe pile foundations. 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 8364-10 
+GEOLABS, INC. 
+Page 10 
+Hawaii • California 
+ALLOWABLE LATERAL LOAD CAPACITIES 
+Pile Outside 
+Diameter 
+(inches) 
+Pile Head 
+Condition 
+Allowable 
+Lateral Load 
+Capacity per Pile 
+(kips) 
+14 
+Free 
+21 
+Fixed 
+35 
+20 
+Free 
+17 
+Fixed 
+33 
+24 
+Free 
+20 
+Fixed 
+43 
+30 
+Free 
+24 
+Fixed 
+61 
+3.1.2 Foundation Settlement 
+Settlement of the driven pipe pile will result from elastic compression of the pile 
+and subgrade response of the foundation embedded in the soils encountered at 
+the site. The total settlement of the pipe pile is estimated to be less than 0.5 inch. 
+We believe that a significant portion of the settlement will be elastic and should 
+occur as the loads are applied. 
+3.1.3 Pile Hammer Selection 
+Based on our experience, we recommend using a pile driving hammer having a 
+rated energy of about 60,000 to 80,000 foot-pounds, such as a Delmag D30 diesel 
+hammer, or a Junttan HHK 7A hydraulic impact hammer, or similar pile driving 
+hammers, to install the piles. Wave equation analysis should be performed to 
+demonstrate that the proposed pile driving hammer and systems are capable of 
+driving the piles to the design tip elevations without overstressing or damaging the 
+piles. 
+Determination of driving equipment to be used for this project should take into 
+consideration the “matching” of the pile hammer with the weight of the piles to be 
+driven. This will result in the pile hammer efficiently delivering the required energy 
+to the top of the pile and also reducing damage to the piles. Geolabs should review 
+the pile driving equipment proposed to evaluate if the equipment is capable of 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 8364-10 
+GEOLABS, INC. 
+Page 11 
+Hawaii • California 
+installing the piles to the recommended capacity. The contractor should forward 
+pile and driving equipment data forms to Geolabs prior to construction for 
+evaluation. Geolabs should review the information and assess the drivability of 
+piles with the use of the selected hammer. 
+3.1.4 Pile Driving Construction Considerations 
+In general, the performance of piles will depend significantly upon the contractor’s 
+method of installation and construction procedures. To examine the driveability of 
+the piles with the use of the selected hammer and pile driving criteria, which will 
+be used or modified during the production pile installation, we recommend 
+implementing a test pile program. The test program may consist of installing test 
+piles at selected locations and instrumenting them for monitoring by a pile driving 
+analyzer (PDA) to observe the stresses developed and confirm the design 
+capacity. Instrumentation and monitoring of a pile by a pile driving analyzer is also 
+known as “dynamic load testing”. It should be noted that the compressive load 
+capacities presented above were computed assuming the production pile length 
+will be verified or modified based on dynamic load testing performed in the pile test 
+program. We also assume that the compressive load capacities for the production 
+piles will be further verified by using bearing graphs from the wave equation 
+analysis. 
+A Geolabs representative should be present to observe the installation of the test 
+and production piles and the dynamic load tests. In addition, Geolabs should be 
+consulted for the selection of the test pile location when the final foundation plans 
+are available. 
+3.2 
+Slabs-On-Grade 
+Based on the results of our field exploration, the on-site material has a high to very 
+high expansion potential when subjected to moisture fluctuations. We recommend 
+providing a minimum of 3 feet of non-expansive, select granular fill material below the 
+lightly loaded slabs-on-grade footings, to reduce the potential for appreciable structural 
+distress resulting from expansive clayey soils. 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 8364-10 
+GEOLABS, INC. 
+Page 12 
+Hawaii • California 
+Prior to placing the non-expansive select granular fill material, the clayey subgrade 
+soils should be scarified to a depth of 12 inches, moisture-conditioned to about 2 to 
+4 percent above the optimum moisture content, and recompacted to 90 percent relative 
+compaction. The non-expansive select granular fill should extend beyond the perimeter 
+of the slab-on-grade a minimum of 3 feet (or extend to the outside edge of the concrete 
+sidewalk surrounding the slab-on-grade, if applicable). 
+For interior building slabs (not subjected to vehicular traffic or machinery vibration), 
+we recommend placing a minimum 4-inch thick layer of cushion fill consisting of 
+open-graded gravel (ASTM C33, No. 67 gradation) below the slabs. The open-graded 
+gravel cushion fill would provide uniform support for the slabs and would serve as a 
+capillary moisture break. To reduce the potential for appreciable future moisture infiltration 
+through the slab and subsequent damage to floor coverings, we recommend placing an 
+impervious moisture barrier on top of the open-graded gravel cushion fill layer. Flexible 
+floor coverings, such as carpet or sheet vinyl, should be considered because they can 
+better mask minor slab cracking. In addition, we recommend designing interior walls to 
+incorporate some flexibility in accommodating a small amount of possible ground 
+movements. 
+Where the slabs will be subjected to vehicular traffic (such as driveways) or 
+machinery vibration, we recommend providing a 6-inch layer of aggregate subbase below 
+the slabs in lieu of the 4-inch thick gravel cushion fill layer. The moisture barrier also may 
+be omitted for these slabs. The aggregate subbase should consist of crushed basaltic 
+aggregates compacted to a minimum of 95 percent relative compaction. Where slabs are 
+intended to function as rigid pavements, a minimum slab thickness of 5 inches may be 
+used for preliminary design purposes. Provisions should be made for proper load transfer 
+across the slab joints that will be subject to vehicular traffic. The thickened edges of slabs 
+adjacent to unpaved areas should be embedded at least 12 inches below the lowest 
+adjacent grade. 
+It should be emphasized that the areas adjacent to the slabs should be backfilled 
+tightly against the slab edges with low expansion, relatively impervious soils, or cast neat 
+against the vertical cut face without requiring backfilling. It is critical to maintain proper 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 8364-10 
+GEOLABS, INC. 
+Page 13 
+Hawaii • California 
+grade adjacent to the concrete slab, to divert water away from the slabs, and to reduce 
+the potential for water ponding around the slabs and foundations. 
+A Geolabs representative should monitor slab-on-grade foundation excavations 
+prior to placing the reinforcing steel and/or concrete to confirm the foundation bearing 
+conditions and the required embedment depths and observe backfill placement to 
+evaluate the compaction quality of the fill material. Observation of the foundation 
+excavations should be designated a “Special Inspection” item in accordance with 
+International Building Code (2018). 
+3.3 
+Site Grading 
+Detailed site grading plans were not available at the time this report was prepared. 
+However, based on the relatively flat topography of the site, we envision cuts and fills 
+generally less than 5 feet thick will be required to achieve the design finished grades for 
+the project. Based on the observed ground conditions at the existing ground surface, we 
+recommend implementing the following site preparation procedures during the earthwork 
+construction. 
+Items of site grading that are addressed in the subsequent subsections include the 
+following: 
+1. 
+Site Preparation 
+2. 
+Fills and Backfills 
+3. 
+Fill Placement and Compaction Requirements 
+4. 
+Excavations 
+A Geolabs representative should monitor the site grading operations to observe 
+whether undesirable materials are encountered during the excavation and scarification 
+process and to confirm whether the exposed soil conditions are similar to those assumed 
+in this report. 
+3.3.1 Site Preparation 
+At the on-set of earthwork, the area within the contract grading limits should be 
+cleared and grubbed thoroughly. Surface vegetation and other unsuitable 
+materials should be removed and disposed of properly off-site. Soft and yielding 
+areas encountered during clearing and grubbing below areas designated to 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 8364-10 
+GEOLABS, INC. 
+Page 14 
+Hawaii • California 
+receive fill and/or future improvements should be over-excavated to expose firm 
+material and the resulting excavation should be backfilled with well-compacted fill. 
+The excavated soft soils should be properly disposed of off-site and/or used in 
+landscape areas, where appropriate. 
+After clearing, the exposed subgrades should be scarified to a depth of about 
+12 inches, moisture-conditioned to at least 2 to 4 percent above the optimum 
+moisture, and recompacted to a minimum of 90 percent relative compaction. The 
+compaction requirements for finished subgrades subjected to vehicular traffic, 
+such as the pavement subgrades, should be increased to a minimum of 95% 
+relative compaction. Relative compaction refers to the in-place dry density of soil 
+expressed as a percentage of the maximum dry density of the same soil 
+established in accordance with ASTM D1557. Optimum moisture is the water 
+content (percentage by dry weight) corresponding to the maximum dry density. 
+If the subgrade soils are pumping during subgrade preparation, the subgrade may 
+be proof-rolled and a woven geotextile fabric, such as Mirafi 500X or equivalent, 
+should be placed on the subgrade prior to placement of subsequent lifts of fill. 
+Alternatively, the material may be over excavated and replaced with well-
+compacted select granular fill (discussed in the following section, “Fills and 
+Backfills”). 
+Where shrinkage cracks are observed after the subgrade compaction, we 
+recommend preparing the subgrade soil again as recommended above. Saturation 
+and subsequent yielding of the exposed subgrade due to inclement weather and 
+poor drainage may require over-excavating the soft areas and replacing these 
+areas with engineered fill. A Geolabs field representative should evaluate the need 
+for over-excavation due to soft subgrade soil conditions. 
+3.3.2 Fills and Backfills 
+In general, the excavated on-site soils should be suitable for use as general fill 
+materials provided that the maximum particle size is less than 3 inches in the 
+largest dimension. The on-site materials generated from the excavations may be 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 8364-10 
+GEOLABS, INC. 
+Page 15 
+Hawaii • California 
+used as a source of general fill or backfill materials provided that they are screened 
+of the over-sized materials, free of vegetation debris, and/or processed to meet the 
+above gradation requirements (less than 3 inches in largest dimension). 
+Imported materials required for site filling should consist of select granular fill 
+material, such as crushed coralline and/or basaltic materials. The materials should 
+be well graded from coarse to fine with particles no greater than 3 inches in the 
+largest dimension. In addition, the materials also should contain between 10 and 
+30 percent particles passing the No. 200 sieve. The materials should have a CBR 
+value of 20 or higher, and a swell potential of 1 percent or less when tested in 
+accordance with ASTM D1883. Geolabs should test imported fill materials a 
+minimum of 7 days prior to being transported to the project site for the intended 
+use. 
+3.3.3 Fill Placement and Compaction Requirements 
+Fill materials consisting of the on-site soils should be moisture-conditioned to at 
+least 2 to 4 percent above the optimum moisture, placed in level lifts not exceeding 
+8 inches in loose thickness, and compacted to a minimum of 90 percent relative 
+compaction. Relative compaction refers to the in-place dry density of soil 
+expressed as a percentage of the maximum dry density of the same soil 
+established in accordance with ASTM D1557. Optimum moisture is the water 
+content (percentage by weight) corresponding to the maximum dry density. 
+Imported fill materials should be moisture-conditioned to above the optimum 
+moisture content, placed in level lifts of about 8 inches in loose thickness, and 
+compacted to a minimum of 90%, as appropriate. Aggregate base course and 
+subbase materials should be moisture-conditioned to above the optimum moisture 
+content, placed in level lifts not exceeding 8 inches in loose thickness, and 
+compacted to a minimum of 95% relative compaction. 
+Compaction should be accomplished by sheepsfoot rollers or other types of 
+acceptable compaction equipment. Water tamping, jetting, or ponding should not 
+be allowed to compact the fills. Where compaction is less than required, additional 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 8364-10 
+GEOLABS, INC. 
+Page 16 
+Hawaii • California 
+compactive effort should be applied with adjustment of moisture content, as 
+necessary, to obtain the specified compaction. 
+3.3.4 Excavations 
+It is anticipated that the on-site silty and clayey soils encountered in our borings 
+may be excavated with normal heavy excavation equipment. However, there is a 
+potential for encountering harder cobbles/boulders at unpredictable depths 
+beneath the on-site soils. The contractor for the project should be cautioned that 
+these hard cobble/boulders could be encountered in the excavations and may 
+require chipping and/or the use of hoerams to excavate the materials. 
+The above discussions regarding the rippability of the surface materials are based 
+on the available subsurface information, our laboratory testing, and our experience 
+in the project vicinity. The contractors should be encouraged to examine the site 
+conditions and the subsurface data to make their own reasonable and prudent 
+interpretation. 
+3.4 
+Infiltration Tests 
+We envision that the project may require on-site stormwater runoff management. We 
+conducted a falling head infiltration test at a selected location in the vicinity of drilled borings 
+at the site to evaluate the infiltration characteristics of the subsurface materials encountered. 
+The test was performed in general accordance with the procedures in Appendix D of the 
+State of Maryland, Department of the Environment “Stormwater Design Manual, Volumes I 
+and II” (rev. 2009). These procedures are consistent with other state’s procedures and may 
+generally be considered an industry standard. 
+The field infiltration test was performed by drilling a borehole utilizing a 4-inch solid 
+stem auger to a selected test depth of about 5 feet below the existing ground surface. Upon 
+reaching the test depth, a 4-inch diameter PVC solid casing was set to the bottom of the 
+drilled borehole to allow infiltration only through the soil exposed on the bottom of the 
+borehole. A falling head infiltration test was performed to determine the average infiltration 
+rate of the underlying subsurface materials. The test consisted of four trials of filling the 
+casing with 24 inches of water and taking periodic readings until the water drained out or up 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 8364-10 
+GEOLABS, INC. 
+Page 17 
+Hawaii • California 
+to one hour. The infiltration rate is then calculated based on the results of the fourth and/or 
+last trial. The calculated infiltration rate is summarized in the table below. Results of the field 
+infiltration testing performed at selected locations are presented in Appendix C. 
+FIELD INFILTRATION TESTING RESULTS 
+Testing Location 
+Testing Depth 
+Average Measured 
+Infiltration Rate 
+(feet) 
+(inches/hour) 
+I-101 
+5.0 
+0.13 
+It should be noted that the infiltration value presented above is the rate of infiltration 
+through the soil exposed at the bottom of the tested borehole, which may not represent 
+the actual infiltration condition within a typical infiltration chamber footprint or an open 
+basin. Based on the results of the field infiltration testing, the average infiltration rate was 
+generally less than 0.5 inches per hour, indicating that an infiltration/detention system and 
+similar methods of stormwater management would not be feasible for this facility. Due to 
+the high variability of the subsurface conditions, the absorption capacity of the selected 
+stormwater disposal system should be confirmed by conducting additional infiltration tests 
+during construction. A Geolabs representative should observe the excavation for the 
+detention/infiltration chambers and/or detention basins to confirm the anticipated 
+infiltration substrata conditions. 
+3.5 
+Pavement Design 
+We envision flexible pavements will be used for the driveway and parking areas 
+planned for the project. Details of the design traffic information were not available at the 
+time this report was prepared. In general, we anticipate the vehicle loading for the 
+driveways and parking areas for this project will consist of primarily passenger vehicles 
+with some light trucks and occasional heavy trucks only. Therefore, we assumed 
+generally light traffic loading conditions for the pavement design. 
+Based on a design period of 25 years, generally light traffic volume, and the 
+assumed truck traffic distribution, a Traffic Index (TI) of 7.5 has been determined for the 
+design of the pavements. The design traffic parameters used in our pavement analysis 
+for the driveway and parking areas are summarized in the table below. 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 8364-10 
+GEOLABS, INC. 
+Page 18 
+Hawaii • California 
+Based on our field exploration, the pavement subgrades are generally underlain 
+by stiff to hard clays/silts. Laboratory testing performed on the surface clayey soils at the 
+project site generally indicated the on-site clayey soils exhibit poor pavement support 
+characteristics. Therefore, we recommend placing the pavement sections on a minimum 
+24-inch thick layer of non-expansive, select granular fill material. 
+The select granular fill material should have a laboratory CBR value of 20 or more 
+and a maximum swell of 1 percent or less when tested in accordance with ASTM D1883. 
+Therefore, a design CBR value of 20 and a maximum swell of less than 1 percent with a 
+subgrade of resilient modulus (MR) of 17,380 pounds per square inch (psi) were adopted 
+in our pavement analyses for the select granular fill subgrade conditions. 
+Based on the above assumptions, we recommend using the following flexible 
+section for design purposes: 
+Flexible Pavement Section (Driveways and Parking Areas) 
+2.0-Inch Asphaltic Concrete 
+6.0-Inch Aggregate Base Course (95 Percent Relative Compaction) 
+8.0-Inch Total Pavement Thickness on Moist Compacted Subgrade 
+The subgrade soils under pavement areas should be scarified to a minimum depth 
+of at least 12 inches, moisture conditioning to about 2 to 4 percent above the optimum 
+moisture content, and recompacting to at least 90 percent relative compaction. The non-
+expansive select granular fill materials should be placed in level lifts of about 8 inches in 
+loose thickness, moisture-conditioned to above the optimum moisture content, and 
+compacted to at least 95 percent relative compaction. The aggregate base course should 
+consist of crushed basaltic aggregates compacted to a minimum of 95 percent relative 
+compaction. 
+Aggregate base course and subbase course should meet the material 
+requirements for Base Course and Subbase Course as specified in Sections 31 and 30, 
+respectively, of the Standard Specifications for Public Works Construction, Kauai County, 
+September 1986. Geolabs should test imported fill materials for conformance with these 
+recommendations prior to delivery to the project site for the intended use. 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 8364-10 
+GEOLABS, INC. 
+Page 19 
+Hawaii • California 
+In general, paved areas should be sloped, and drainage gradients should be 
+maintained to carry the surface water off the site. Surface water ponding should not be 
+allowed on the site during or after construction. Where concrete curbs are used to isolate 
+landscaping in or adjacent to the pavement areas, we recommend extending the curbs a 
+minimum of 2 inches into the soils below the aggregate base course and aggregate 
+subbase layers to reduce the potential for migration of landscape water into the pavement 
+section. Alternatively, a subdrain system could be constructed to collect excess water 
+from landscaping irrigation. For long-term performance, we suggest constructing a 
+subdrain system adjacent to the paved/landscaped areas. 
+3.6 
+Corrosion Potential 
+Design of metallic substructures, such as electrical conduits or other metallic 
+piping, should consider the effects of the corrosive environment on the substructure. 
+Resistivity is generally recognized as one of the most significant soil characteristics 
+regarding the corrosivity of the soil to buried metallic objects. In general, the lower the 
+resistivity, the greater the potential for corrosion of the buried metallic structure. 
+Conversely, the higher the resistivity, the less likely the soil will contribute to the corrosion 
+of metallic objects. Items of corrosion potential that are addressed in the subsequent 
+subsections include the following: 
+Laboratory Corrosivity Testing 
+Laboratory Thermal Resistivity Testing 
+3.6.1 Laboratory Corrosivity Testing 
+Two sets of corrosivity tests, including pH (ASTM G51), Minimum Resistivity 
+(ASTM G57), Chloride Content (EPA 300.0), and Sulfate Content (EPA 300.0) were 
+performed by our office and Eurofins TestAmerica Laboratories, Inc on selected 
+near-surface soil samples obtained from our field exploration. A summary of the 
+corrosivity tests is presented in Plate B-11 of Appendix B. Detailed discussions and 
+test results of Chloride and Sulfate are provided in the report entitled “Analytical 
+Report, Relocated West Kauai Energy Project (Laboratory Job ID: 320-87651-1),” 
+dated May 31, 2022, as included in Appendix D. 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 8364-10 
+GEOLABS, INC. 
+Page 20 
+Hawaii • California 
+Based on the results of laboratory corrosivity tests, the near-surface soils at the 
+project site exhibit a minimum resistivity value of approximately 200 to 300 ohm-cm, 
+indicating that the near-surface soils are extremely corrosive (Corrosion Rating of 1) 
+to buried metallic structures. Therefore, we recommend properly designing 
+near-surface metallic substructures (such as piping) for protection against the 
+potential for corrosion. 
+The method used to control the corrosion of underground concrete structures is 
+dependent on the pH, chloride content, and sulfate content found in the soil. In 
+general, soils with a chloride content of less than 500 parts per million (ppm), sulfate 
+content of less than 2,000 ppm, and a pH of greater than 5.0 may be considered "non 
+corrosive" to underground concrete pipelines and structures. 
+Based on the values of the chloride and sulfate content tests on the in-situ 
+near-surface soils, we believe that either Type I or Type II (Type I/II) cement may be 
+used for the concrete in contact with the ground planned. 
+3.6.2 Laboratory Thermal Resistivity Testing 
+We envision that electrical duct lines will be installed underground for the project. 
+Geotherm USA, our subcontracting laboratory, conducted laboratory soil thermal 
+resistivity testing to evaluate the thermal characteristics of the in-situ near-surface 
+soils encountered at the site. Each sample was remolded to approximately 
+90 percent relative density according to ASTM D1557, Standard Test Methods for 
+Laboratory Compaction Characteristics of Soil Using Modified Effort. Detailed 
+discussions and test results are provided in the report entitled “Thermal Analysis 
+of Native Soil Samples, Relocated West Kauai Energy Project Substation – 
+Kekaha, Kauai, HI (Project No. 3867),” dated May 6, 2022, as included in 
+Appendix E. 
+3.7 
+Utility Trenches 
+We anticipate that underground utility connections will be required for the project. 
+In general, good construction practices should be utilized for the installation and 
+backfilling of the trenches for the new utilities. The contractor should determine the 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 8364-10 
+GEOLABS, INC. 
+Page 21 
+Hawaii • California 
+method and equipment to be used for trench excavation, subject to practical limits and 
+safety considerations. In addition, the excavation should comply with all applicable local, 
+state, and federal safety requirements. The contractor should be responsible for trench 
+shoring design and installation. Trench shoring and bracing should conform to the 
+appropriate health and safety requirements. 
+In general, we recommend using granular bedding consisting of 6 inches of 
+open-graded gravel (ASTM C33, No. 67 gradation) under the pipes for uniform support. 
+The initial trench backfill up to about 12 inches above the pipes should consist of 
+free-draining backfills, such as open-graded gravel, to reduce the potential for damaging 
+the pipes from compaction of the backfill. It is critical to use a free-draining granular 
+material to reduce the potential for formation of voids below the haunches of pipes and to 
+provide adequate support for the sides of the pipes. Improper trench backfill could result 
+in backfill settlement and pipe damage. The use of on-site clayey soils as backfill directly 
+around the utility pipes is not recommended and should not be allowed. 
+The upper portion of the trench backfill from the level 12 inches above the pipes to 
+the finished subgrade may consist of approved on-site soils or select granular fill material. 
+The backfill material should be moisture-conditioned to above the optimum moisture 
+content, placed in maximum 8-inch level loose lifts, and mechanically compacted to at 
+least 90% relative compaction. In areas where trenches will be in paved areas, the upper 
+3 feet of the trench backfill below the pavement finished grade should be compacted to 
+no less than 95% relative compaction. Mechanical compaction equipment should be used 
+to compact the backfill materials. Compaction efforts by water tamping, jetting, or ponding 
+should not be allowed. 
+3.8 
+Design Review 
+Preliminary and final drawings and specifications for the proposed construction 
+should be forwarded to Geolabs for review and written comments prior to bid 
+advertisement and/or construction. This review is needed to evaluate the conformance of 
+the plans and specifications with the intent of the earthwork and foundation 
+recommendations provided herein. If this review is not made, Geolabs cannot assume 
+responsibility for misinterpretation of our recommendations. 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 8364-10 
+GEOLABS, INC. 
+Page 22 
+Hawaii • California 
+3.9 
+Construction Monitoring 
+Due to the variability of the subsurface conditions, it is recommended to retain 
+Geolabs for geotechnical engineering services during construction of the project. The 
+following are critical items of construction monitoring that require "Special Inspection": 
+Observation of pile foundation installation 
+Observation of general fill placement and compaction 
+Observation of select granular fill placement and compaction 
+Observation and testing of pavement subgrade preparation 
+A Geolabs representative should monitor other aspects of earthwork construction 
+to observe compliance with the intent of the design concepts, specifications, and/or 
+recommendations and to expedite suggestions for design changes that may be required 
+in the event that subsurface conditions differ from those anticipated at the time this report 
+was prepared. The recommendations presented herein are contingent upon such 
+observations. 
+If the actual exposed subsurface soil conditions encountered during construction 
+differ from those assumed or considered in this report, Geolabs should be contacted to 
+review and/or revise the geotechnical recommendations presented herein. 
+END OF DISCUSSION AND RECOMMENDATIONS 
+W.O. 8364-10 
+GEOLABS, INC. 
+Page 23 
+Hawaii • California 
+SECTION 4. LIMITATIONS 
+The analyses and recommendations submitted herein are based in part upon 
+information obtained from the field borings and bulk samples. Variations of the subsurface 
+conditions between and beyond the field borings and bulk samples may occur, and the 
+nature and extent of these variations may not become evident until construction is 
+underway. If variations then appear evident, it will be necessary to re-evaluate the 
+recommendations presented herein. 
+The field boring locations indicated herein are approximate, having been estimated 
+by using a handheld Global Positioning System (GPS) to field-locate selected locations from 
+referenced points shown on the Site Plan transmitted by AES Clean Energy in March 2022. 
+Elevations of the borings were estimated from contours and spot elevations on the same 
+plan. The field boring locations and elevations should be considered accurate only to the 
+degree implied by the methods used. 
+The stratification breaks shown on the graphic representations of the borings 
+depict the approximate boundaries between soil types and, as such, may denote a 
+gradual transition. We did not encounter groundwater in the borings at the time of our 
+field exploration. It must be noted that fluctuations may occur due to variation in rainfall, 
+temperature, and other factors. 
+This report has been prepared for the exclusive use of AES Clean Energy and their 
+project consultants for specific application to the design of the Relocated West Kauai 
+Energy Substation project in accordance with generally accepted geotechnical 
+engineering principles and practices. No warranty is expressed or implied. 
+This report has been prepared solely for the purpose of assisting the architect and 
+engineers in the design of the proposed project. Therefore, this report may not contain 
+sufficient data, or the proper information, to serve as a basis for detailed construction cost 
+estimates.  
+The owner/client should be aware that unanticipated soil conditions are commonly 
+encountered. Unforeseen subsurface conditions, such as perched groundwater, soft 
+SECTION 4. LIMITATIONS 
+W.O. 8364-10 
+GEOLABS, INC. 
+Page 24 
+Hawaii • California 
+deposits, hard layers or cavities, may occur in localized areas and may require additional 
+probing or corrections in the field (which may result in construction delays) to attain a 
+properly constructed project. Therefore, a sufficient contingency fund is recommended to 
+accommodate these possible extra costs. 
+This geotechnical engineering exploration conducted at the project site was not 
+intended to investigate the potential presence of hazardous materials existing at the 
+project site. It should be noted that the equipment, techniques, and personnel used to 
+conduct a geo-environmental exploration differ substantially from those applied in 
+geotechnical engineering. 
+END OF LIMITATIONS 
+W.O. 8364-10 
+GEOLABS, INC. 
+Page 25 
+Hawaii • California 
+CLOSURE 
+The following plates and appendices are attached and complete this report: 
+Project Location Map .............................................................................................. Plate 1 
+Site Plan ................................................................................................................. Plate 2 
+Field Exploration ............................................................................................. Appendix A 
+Laboratory Tests ............................................................................................. Appendix B 
+Infiltration Test Results .................................................................................... Appendix C 
+TestAmerica Analytical Report ........................................................................ Appendix D 
+Thermal Resistivity Test Report ...................................................................... Appendix E 
+-ΩΩΩΩΩΩΩΩΩ- 
+Respectfully submitted, 
+GEOLABS, INC. 
+By ________________________ 
+            John Y.L. Chen, P.E. 
+                 Vice President 
+JC:TO:jc 
+h:\8300Series\834-10.to1 
+PLATES 
+KEKAHA, KAUAI, HAWAII
+RELOCATED WEST KAUAI ENERGY SUBSTATION
+PROJECT LOCATION MAP
+GRAPHIC SCALE
+1000
+2000
+2000
+0
+FT.
+PROJECT LOCATION
+GENERAL PROJECT LOCATION
+N
+MAY 2022
+1" = 2,000'
+Geotechnical Engineering
+GEOLABS, INC.
+DATE
+SCALE
+1
+8364-10
+DRAWN BY
+HYC
+W.O.
+PLATE
+MT. WAIALEALE
+PACIFIC OCEAN
+MANA
+KEKAHA
+ISLAND MAP
+NO SCALE
+WAIMEA
+HANAPEPE
+HANALEI
+PRINCEVILLE
+KILAUEA
+MOLOAA
+ANAHOLA
+KAPAA
+LIHUE
+KOLOA
+N
+CAD User: HENRY  File Last Updated: May 27, 2022 2:06:22pm  Plot Date:  May 27, 2022 - 2:51:26pm
+File: A:\Drafting\Drafting\Working\8364-10_Relocated_West_Kauai_Energy_Substation\8364-10PLM.dwg\2
+Plotter: DWG To PDF-GEO.pc3  Plotstyle: GEO-No-Dithering-Blue-Boring.ctb
+REFERENCE: MAP CREATED WITH TOPO!® ©2010 NATIONAL
+GEOGRAPHIC; ©2007 TELE ATLAS, REL. 1/2007.
+DECEMBER 2023
+APPROXIMATE BORING LOCATION
+LEGEND:
+N
+APPROXIMATE INFILTRATION TEST LOCATION
+RELOCATED WEST KAUAI ENERGY SUBSTATION
+KEKAHA, OAHU, HAWAII
+GEOLABS, INC.
+Geotechnical Engineering
+8364-10
+DRAWN BY
+HYC
+1" = 100'
+MAY 2022
+SCALE
+DATE
+W.O.
+SITE PLAN
+2
+PLATE
+GRAPHIC SCALE
+50
+0
+100
+200
+300 FT.
+CAD User: HENRY  File Last Updated: May 27, 2022 3:48:18pm  Plot Date:  May 27, 2022 - 3:50:25pm
+File: A:\Drafting\Drafting\Working\8364-10_Relocated_West_Kauai_Energy_Substation\8364-10SitePlan.dwg\2
+Plotter: DWG To PDF-GEO.pc3  Plotstyle: GEO-No-Dithering-Blue-Boring.ctb
+REFERENCE: SITE PLAN TRANSMITTED BY AES CLEAN
+ENERGY IN MARCH 2022.
+B-102
+B-104
+B-101
+B-103
+B-105
+BULK-1
+BULK-2
+APPROXIMATE BULK SAMPLE LOCATION
+I-101
+DECEMBER 2023
+APPENDIX A  
+W.O. 8364-10 
+GEOLABS, INC. 
+DECEMBER 2023     Page A-1 
+Hawaii • California 
+A P P E N D I X   A 
+Field Exploration 
+We explored the subsurface conditions at the project site by drilling and sampling 
+five borings, designated as Boring Nos. 101 through 105, extending to depths of about 21.5 
+to 30 feet below the existing ground surface. Two bulk samples of the near-surface soils 
+were obtained to evaluate the pavement support characteristics of the near-surface soils. In 
+addition, one borehole, designated as I-101, was drilled to a depth of about 5 feet below the 
+existing ground surface for the access of the infiltration testing. The approximate boring 
+locations are shown on the Site Plan, Plate 2. The borings were drilled using a 
+truck-mounted drill rig equipped with continuous flight augers. 
+Our geologist classified the materials encountered in the borings by visual and 
+textural examination in the field in general accordance with ASTM D2488, Standard Practice 
+for Description and Identification of Soils, and monitored the drilling operations on a 
+near-continuous (full-time) basis. These classifications were further reviewed visually and 
+by testing in the laboratory. Soils were classified in general accordance with ASTM D2487, 
+Standard Practice for Classification of Soils for Engineering Purposes (Unified Soil 
+Classification System), as shown on the Soil Log Legend, Plate A-0.1. Deviations made to 
+the soil classification in accordance with ASTM D2487 are described on the Soil 
+Classification Log Key, Plate A-0.2. Rock samples were described in general accordance 
+with the Rock Description System, as shown on the Rock Log Legend, Plate A-0.3. Graphic 
+representations of the materials encountered are presented on the Logs of Borings, Plates 
+A-1 through A-6.  
+Relatively “undisturbed” soil samples were obtained in general accordance with 
+ASTM D3550, Ring-Lined Barrel Sampling of Soils, by driving a 3-inch OD Modified 
+California sampler with a 140-pound hammer falling 30 inches. In addition, some samples 
+were obtained from the drilled borings in general accordance with ASTM D1586, 
+Penetration Test and Split-Barrel Sampling of Soils, by driving a 2-inch OD standard 
+penetration sampler using the same hammer and drop. The blow counts needed to drive 
+the sampler the second and third 6 inches of an 18-inch drive are shown as the 
+“Penetration Resistance” on the Logs of Borings at the appropriate sample depths. The 
+penetration resistance shown on the Logs of Borings indicates the number of blows 
+required for the specific sampler type used. The blow counts may need to be factored to 
+obtain the Standard Penetration Test (SPT) blow counts. 
+Pocket penetrometer tests were performed on selected cohesive soil samples 
+retrieved in the field. The pocket penetrometer test provides an indication of the 
+unconfined compressive strength of the sample. Pocket penetrometer test results are 
+summarized on the Logs of Borings at the appropriate sample depths. 
+A-0.1
+UNCONSOLIDATED UNDRAINED TRIAXIAL
+COMPRESSION (ksf)
+MORE THAN 50%
+OF COARSE
+FRACTION
+RETAINED ON
+NO. 4 SIEVE
+50% OR MORE OF
+COARSE FRACTION
+PASSING
+THROUGH NO. 4
+SIEVE
+MORE THAN 50%
+OF MATERIAL
+RETAINED ON NO.
+200  SIEVE
+50% OR MORE OF
+MATERIAL PASSING
+THROUGH NO. 200
+SIEVE
+TORVANE SHEAR (tsf)
+(2-INCH) O.D. STANDARD PENETRATION TEST
+(3-INCH) O.D. MODIFIED CALIFORNIA SAMPLE
+INORGANIC SILTS AND VERY FINE SANDS,
+ROCK FLOUR, SILTY OR CLAYEY FINE SANDS
+OR CLAYEY SILTS WITH SLIGHT PLASTICITY
+POORLY-GRADED GRAVELS, GRAVEL-SAND
+MIXTURES, LITTLE OR NO FINES
+CLAYEY GRAVELS, GRAVEL-SAND-CLAY
+MIXTURES
+WELL-GRADED SANDS, GRAVELLY SANDS,
+LITTLE OR NO FINES
+POORLY-GRADED SANDS, GRAVELLY
+SANDS, LITTLE OR NO FINES
+SILTY SANDS, SAND-SILT MIXTURES
+CLAYEY SANDS, SAND-CLAY MIXTURES
+LIQUID LIMIT
+50 OR MORE
+CH
+NOTE: DUAL SYMBOLS ARE USED TO INDICATE BORDERLINE SOIL CLASSIFICATIONS
+MH
+SILTS
+AND
+CLAYS
+SILTS
+AND
+CLAYS
+LIQUID LIMIT
+LESS THAN 50
+USCS
+TYPICAL
+DESCRIPTIONS
+GW
+MORE THAN 12%
+FINES
+WATER LEVEL OBSERVED IN BORING OVERNIGHT
+HIGHLY ORGANIC SOILS
+SILTY GRAVELS, GRAVEL-SAND-SILT
+MIXTURES
+OL
+PEAT, HUMUS, SWAMP SOILS WITH HIGH
+ORGANIC CONTENTS
+INORGANIC CLAYS OF LOW TO MEDIUM
+PLASTICITY, GRAVELLY CLAYS, SANDY
+CLAYS, SILTY CLAYS, LEAN CLAYS
+Soil Log Legend
+ORGANIC CLAYS OF MEDIUM TO HIGH
+PLASTICITY, ORGANIC SILTS
+SC
+Plate
+GM
+FINE-
+GRAINED
+SOILS
+COARSE-
+GRAINED
+SOILS
+CLEAN SANDS
+SANDS WITH
+FINES
+SP
+SANDS
+GRAVELS
+WELL-GRADED GRAVELS,  GRAVEL-SAND
+MIXTURES, LITTLE OR NO FINES
+ML
+CL
+OH
+LESS THAN 5%
+FINES
+GRAVELS WITH
+FINES
+CLEAN
+GRAVELS
+GRAB SAMPLE
+PLASTICITY INDEX (NP=NON-PLASTIC)
+TV
+LEGEND
+WATER LEVEL OBSERVED IN BORING AT TIME OF
+DRILLING
+WATER LEVEL OBSERVED IN BORING AFTER DRILLING
+SM
+MAJOR DIVISIONS
+GP
+MORE THAN 12%
+FINES
+PT
+LESS THAN 5%
+FINES
+UNIFIED SOIL CLASSIFICATION SYSTEM (USCS)
+ORGANIC SILTS AND ORGANIC SILTY
+CLAYS OF LOW PLASTICITY
+SW
+GC
+INORGANIC SILT, MICACEOUS OR
+DIATOMACEOUS FINE SAND OR SILTY
+SOILS
+INORGANIC CLAYS OF HIGH PLASTICITY
+PI
+LL
+TXUU
+UNCONFINED COMPRESSION
+OR UNIAXIAL COMPRESSIVE STRENGTH
+CORE SAMPLE
+SHELBY TUBE SAMPLE
+LIQUID LIMIT (NP=NON-PLASTIC)
+UC
+GEOLABS, INC.
+Geotechnical Engineering
+LOG LEGEND FOR SOIL  8364-10.GPJ  GEOLABS.GDT  5/27/22
+A-0.2
+7 - 18
+18 - 55
+55 - 91
+> 91
+Medium Dense
+Coarse Sand
+(with deviations from ASTM D2488)
+Soil Classification Log Key
+*Soil descriptions are based on ASTM D2488-09a, Visual-Manual Procedure, with the
+above modifications by Geolabs, Inc. to the Unified Soil Classification System (USCS).
+accessory descriptions compose of the following:
+with some: >12%
+with a little: 5 - 12%
+with traces of: <5%
+accessory descriptions are lower cased and follow the
+Primary and Secondary Constituents
+(i.e., SILTY GRAVEL with a little sand)
+Dry:    Absence of moisture, dry to the touch
+Moist: Damp but no visible water
+Wet:   Visible free water
+Medium Sand
+Fine Sand
+#4 to #200 (4.75-mm to 0.075-mm)
+#4 to #10 (4.75-mm to 2-mm)
+> 12 inches (305-mm)
+3-inch to #4 (75-mm to 4.75-mm)
+Sieve Number and / or Size
+Gravel
+#10 to #40 (2-mm to 0.425-mm)
+#40 to #200 (0.425-mm to 0.075-mm)
+3 to 12 inches (75-mm to 305-mm)
+Description
+PP Readings
+(tsf)
+2.0 - 4.0
+> 4.0
+N-Value (Blows/Foot)
+MCS
+0 - 4
+RELATIVE DENSITY / CONSISTENCY
+GRAIN SIZE DEFINITION
+ABBREVIATIONS
+N-Value (Blows/Foot)
+0 - 7
+WOH:  Weight of Hammer
+WOR:  Weight of Drill Rods
+SPT:    Standard Penetration Test Split-Spoon Sampler
+MCS:   Modified California Sampler
+PP:      Pocket Penetrometer
+4 - 7
+7 - 15
+15 - 27
+27 - 55
+SPT
+0 - 2
+> 55
+> 30
+4 - 8
+15 - 30
+MOISTURE CONTENT DEFINITIONS
+SPT
+0 - 4
+4 - 10
+10 - 30
+30 - 50
+> 50
+MCS
+Loose
+EXAMPLE: Soil Containing 60% Gravel, 25% Sand, 15% Fines. Described as: SILTY GRAVEL with some sand
+Plate
+GRANULAR SOIL (- #200 <50%)
+2 - 4
+8 - 15
+Relative
+Density
+Very Loose
+Dense
+Very Dense
+COHESIVE SOIL (- #200    50%)
+PRIMARY constituents are composed of the largest
+percent of the soil mass. Primary constituents are
+capitalized and bold (i.e., GRAVEL, SAND)
+PRIMARY constituents are based on plasticity. Primary
+constituents are capitalized and bold (i.e., CLAY, SILT)
+SECONDARY constituents are composed of a
+percentage less than the primary constituent. If the soil
+mass consists of 12 percent or more fines content, a
+cohesive constituent is used (SILTY or CLAYEY);
+otherwise, a granular constituent is used (GRAVELLY
+or SANDY) provided that the secondary constituent
+consists of 20 percent or more of the soil mass.
+Secondary constituents are capitalized and bold (i.e.,
+SANDY GRAVEL, CLAYEY SAND) and precede the
+primary constituent.
+SECONDARY constituents are composed of a
+percentage less than the primary constituent, but more
+than 20 percent of the soil mass. Secondary constituents
+are capitalized and bold (i.e., SANDY CLAY, SILTY
+CLAY, CLAYEY SILT) and precede the primary
+constituent.
+Sand
+Boulders
+Cobbles
+Coarse Gravel
+3-inch to 3/4-inch (75-mm to 19-mm)
+Fine Gravel
+3/4-inch to #4 (19-mm to 4.75-mm)
+GEOLABS, INC. CLASSIFICATION*
+Granular Soils
+Cohesive Soils
+Consistency
+accessory descriptions compose of the following:
+with some: >12%
+with a little: 5 - 12%
+with traces of: <5%
+accessory descriptions are lower cased and follow the
+Primary and Secondary Constituents
+(i.e., SILTY CLAY with some sand)
+Very Soft
+Soft
+Medium Stiff
+Stiff
+Very Stiff
+Hard
+< 0.5
+0.5 - 1.0
+1.0 - 2.0
+SOIL_CLASS_LOG_KEY  8364-10.GPJ  GEOLABS.GDT  5/27/22
+GEOLABS, INC.
+Geotechnical Engineering
+A-0.3
+ROCK DESCRIPTIONS
+Plate
+BRECCIA
+CLINKER
+COBBLES
+CORAL
+BASALT
+ROCK DESCRIPTION SYSTEM
+Greater than 24 inches apart
+12 to 24 inches apart
+6 to 12 inches apart
+3 to 6 inches apart
+Less than 3 inches apart
+Rock shows no sign of discoloration or loss of strength.
+Slight discoloration inwards from open fractures.
+Discoloration throughout and noticeably weakened though not able to break by hand.
+Most minerals decomposed with some corestones present in residual soil mass. Can be broken by hand.
+Saprolite. Mineral residue completely decomposed to soil but fabric and structure preserved.
+The following terms describe general fracture spacing of a rock:
+The following terms describe the chemical weathering of a rock:
+ROCK FRACTURE CHARACTERISTICS
+DEGREE OF WEATHERING
+HARDNESS
+BOULDERS
+VOID/CAVITY
+TUFF
+SILTSTONE
+LIMESTONE
+Unweathered:
+Slightly Weathered:
+Moderately Weathered:
+Highly Weathered:
+Extremely Weathered:
+Very Hard:
+Hard:
+Medium Hard:
+Soft:
+Very Soft:
+SANDSTONE
+Massive:
+Slightly Fractured:
+Moderately Fractured:
+Closely Fractured:
+Severely Fractured:
+Rock Log Legend
+The following terms describe the resistance of a rock to indentation or scratching:
+Specimen breaks with difficulty after several "pinging" hammer blows.
+Example: Dense, fine grain volcanic rock
+Specimen breaks with some difficulty after several hammer blows.
+Example: Vesicular, vugular, coarse-grained rock
+Specimen can be broked by one hammer blow. Cannot be scraped by knife. SPT may penetrate by
+~25 blows per inch with bounce.
+Example: Porous rock such as clinker, cinder, and coral reef
+Can be indented by one hammer blow. Can be scraped or peeled by knife. SPT can penetrate by
+~100 blows per foot.
+Example: Weathered rock, chalk-like coral reef
+Crumbles under hammer blow. Can be peeled and carved by knife. Can be indented by finger
+pressure.
+Example: Saprolite
+CONGLOMERATE
+GEOLABS, INC.
+Geotechnical Engineering
+LOG LEGEND FOR ROCK  8364-10.GPJ  GEOLABS.GDT  5/27/22
+27
+27
+16
+10
+23
+32
+32
+30
+81
+84
+79
+88
+CH
+GP
+CL
+CH
+>4.0
+>4.0
+>4.0
+24
+19
+20
+21
+25
+29
+46
+41
+Sieve
+- #200 =
+9.5%
+TXUU
+Su=2.5 ksf
+Dark brown to brown SILTY CLAY, stiff, moist
+(alluvium)
+grades to very stiff
+Light brown with blackish mottling SANDY
+GRAVEL with a little silt, medium dense, moist
+(alluvium)
+Brown with grayish mottling SANDY CLAY, stiff
+to very stiff, moist (alluvium)
+Brown with blackish mottling SILTY CLAY, very
+stiff, moist (alluvium)
+ Boring terminated at 21.5 feet
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-55D
+4" Solid-Stem Auger
+140 lb. wt., 30 in. drop
+5
+10
+15
+20
+25
+30
+35
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation : N/A
+Sample
+Moisture
+Content (%)
+B-101
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+April 13, 2022
+April 13, 2022
+S. Leong
+21.5 feet
+8364-10
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 1
+(Energy Transfer Ratio = 77.2%)
+GEOLABS, INC.
+Geotechnical Engineering
+RELOCATED WEST KAUAI ENERGY SUBSTATION
+KEKAHA, KAUAI, HAWAII
+BORING_LOG  8364-10.GPJ  GEOLABS.GDT  5/27/22
+Not Encountered
+25
+27
+24
+29
+12
+22
+33
+31
+81
+79
+97
+84
+CH
+CH
+GM
+CH
+>4.0
+>4.0
+19
+13
+19
+24
+64
+15/6"
+ +50/3"
+52/6"
+44
+Consol.
+LL=71
+PI=45
+Sieve
+- #200 =
+24.8%
+Dark brown to brown SILTY CLAY, stiff, moist
+(alluvium)
+Brown with grayish mottling SILTY CLAY, stiff to
+very stiff, moist (alluvium)
+grades with a little gravel
+Light brown with grayish mottling SILTY
+GRAVEL with some sand, dense to very dense,
+moist (alluvium)
+grades with a little cobbles
+Brown with blackish mottling SILTY CLAY, hard,
+moist (alluvium)
+ Boring terminated at 21.5 feet
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-55D
+4" Solid-Stem Auger
+140 lb. wt., 30 in. drop
+5
+10
+15
+20
+25
+30
+35
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation : N/A
+Sample
+Moisture
+Content (%)
+B-102
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+April 13, 2022
+April 13, 2022
+S. Leong
+21.5 feet
+8364-10
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 2
+(Energy Transfer Ratio = 77.2%)
+GEOLABS, INC.
+Geotechnical Engineering
+RELOCATED WEST KAUAI ENERGY SUBSTATION
+KEKAHA, KAUAI, HAWAII
+BORING_LOG  8364-10.GPJ  GEOLABS.GDT  5/27/22
+Not Encountered
+26
+26
+50
+29
+31
+32
+34
+33
+44
+91
+77
+88
+83
+71
+CH
+CL
+>4.0
+>4.0
+>4.0
+>4.0
+>4.0
+23
+21
+35
+19
+44
+28
+39
+31
+46
+10/0"
+ Ref.
+TXUU
+Su=6.6 ksf
+LL=82
+PI=62
+TXUU
+Su=6.7 ksf
+Dark brown to brown SILTY CLAY, stiff to very
+stiff, moist (alluvium)
+grades with traces of sand
+Light brown with orangish mottling SANDY
+CLAY, hard, moist (alluvium)
+grades to very stiff
+Gray BASALT, moderately weathered, hard to
+very hard (basalt formation)
+ Boring terminated at 30 feet
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-55D
+4" Solid-Stem Auger
+140 lb. wt., 30 in. drop
+5
+10
+15
+20
+25
+30
+35
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation : N/A
+Sample
+Moisture
+Content (%)
+B-103
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+April 14, 2022
+April 14, 2022
+S. Leong
+30 feet
+8364-10
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 3
+(Energy Transfer Ratio = 77.2%)
+GEOLABS, INC.
+Geotechnical Engineering
+RELOCATED WEST KAUAI ENERGY SUBSTATION
+KEKAHA, KAUAI, HAWAII
+BORING_LOG  8364-10.GPJ  GEOLABS.GDT  5/27/22
+Not Encountered
+28
+28
+18
+23
+31
+27
+8
+29
+89
+95
+82
+107
+CH
+SM
+CH
+GP
+CH
+>4.0
+>4.0
+22
+14
+42
+28
+36
+28
+52/6"
+39
+LL=66
+PI=44
+Sieve
+- #200 =
+11.0%
+Dark brown to brown SILTY CLAY, stiff, moist
+(alluvium)
+Light brown with grayish mottling SILTY SAND
+with a little gravel, medium dense, moist
+(alluvium)
+Brown with grayish mottling SILTY CLAY, very
+stiff, moist (alluvium)
+Light brown with orangish mottling SANDY
+GRAVEL with a little silt, very dense, moist
+(alluvium)
+Brown with blackish mottling SILTY CLAY, hard,
+moist (alluvium)
+ Boring terminated at 21.5 feet
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-55D
+4" Solid-Stem Auger
+140 lb. wt., 30 in. drop
+5
+10
+15
+20
+25
+30
+35
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation : N/A
+Sample
+Moisture
+Content (%)
+B-104
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+April 13, 2022
+April 13, 2022
+S. Leong
+21.5 feet
+8364-10
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 4
+(Energy Transfer Ratio = 77.2%)
+GEOLABS, INC.
+Geotechnical Engineering
+RELOCATED WEST KAUAI ENERGY SUBSTATION
+KEKAHA, KAUAI, HAWAII
+BORING_LOG  8364-10.GPJ  GEOLABS.GDT  5/27/22
+Not Encountered
+23
+24
+35
+29
+30
+32
+31
+31
+92
+88
+87
+89
+CH
+CH
+CH
+>4.0
+>4.0
+>4.0
+>4.0
+30
+21
+44
+29
+33
+29
+36
+28
+TXUU
+Su=10.1
+ksf
+LL=90
+PI=64
+Dark brown to brown SILTY CLAY, very stiff,
+moist (alluvium)
+Brown with grayish mottling SILTY CLAY, very
+stiff, moist (alluvium)
+Brown with blackish mottling SILTY CLAY with a
+little sand, very stiff, moist (alluvium)
+grades to less sand
+ Boring terminated at 21.5 feet
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-55D
+4" Solid-Stem Auger
+140 lb. wt., 30 in. drop
+5
+10
+15
+20
+25
+30
+35
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation : N/A
+Sample
+Moisture
+Content (%)
+B-105
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+April 14, 2022
+April 14, 2022
+S. Leong
+21.5 feet
+8364-10
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 5
+(Energy Transfer Ratio = 77.2%)
+GEOLABS, INC.
+Geotechnical Engineering
+RELOCATED WEST KAUAI ENERGY SUBSTATION
+KEKAHA, KAUAI, HAWAII
+BORING_LOG  8364-10.GPJ  GEOLABS.GDT  5/27/22
+Not Encountered
+21
+25
+93
+CL
+>4.0
+30
+11
+Dark brown to brown SILTY CLAY, very stiff,
+moist (alluvium)
+grades with traces of sand
+ Boring terminated at 5 feet
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-55D
+4" Solid-Stem Auger
+140 lb. wt., 30 in. drop
+5
+10
+15
+20
+25
+30
+35
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation : N/A
+Sample
+Moisture
+Content (%)
+I-101
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+April 14, 2022
+April 14, 2022
+S. Leong
+5 feet
+8364-10
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 6
+(Energy Transfer Ratio = 77.2%)
+GEOLABS, INC.
+Geotechnical Engineering
+RELOCATED WEST KAUAI ENERGY SUBSTATION
+KEKAHA, KAUAI, HAWAII
+BORING_LOG  8364-10.GPJ  GEOLABS.GDT  5/27/22
+Not Encountered
+APPENDIX B  
+W.O. 8364-10 
+GEOLABS, INC. 
+DECEMBER 2023     Page B-1 
+Hawaii • California 
+A P P E N D I X   B 
+Laboratory Tests 
+Moisture Content (ASTM D2216) and Unit Weight (ASTM D2937) determinations 
+were performed on selected samples as an aid in the classification and evaluation of soil 
+properties. The test results are presented on the Logs of Borings at the appropriate 
+sample depths. 
+Four Atterberg Limits tests (ASTM D4318) were performed on selected soil samples 
+to evaluate the liquid and plastic limits.  The test results are summarized on the Logs of 
+Borings at the appropriate sample depths.  Graphic presentation of the test results are 
+provided on Plate B-1. 
+Three Sieve Analysis tests (ASTM D6913) were performed on selected soil samples 
+to evaluate the gradation characteristics of the soils and to aid in soil classification. Graphic 
+presentation of the grain size distributions are provided on Plate B-2. 
+Four one-inch ring swell tests were performed on relatively undisturbed and 
+remolded samples to evaluate the swelling potential of the near-surface soils under different 
+surcharge loads.  The results of these tests are summarized on Plates B-3. 
+Four Unconsolidated Undrained Triaxial Compression tests (ASTM D2850) were 
+performed on selected soil samples to evaluate the undrained shear strength of the in-
+situ soils. The approximate in-situ effective overburden pressure was used as the applied 
+confining pressure for the relatively “undisturbed” soil sample. The test results and the 
+stress-strain curves are presented on Plates B-4 through B-7. 
+One consolidation test with time rates (ASTM D 2435) was performed on a sample 
+of the potentially compressible soils to evaluate the compressibility characteristics of the 
+materials encountered.  Results of the consolidation test are presented on Plate B-8. 
+Two laboratory California Bearing Ratio tests (ASTM D1883) were performed on 
+bulk samples of the near-surface soils to evaluate the pavement support characteristics 
+of the soils. The test results are presented on Plates B-9 and B-10. 
+Two sets of Corrosion tests, including pH (ASTM G51), Minimum Resistivity 
+(ASTM G57), Chloride Content (EPA 300.0), and Sulfate Content (EPA 300.0), were 
+performed by our office and Eurofins TestAmerica Laboratories, Inc. on selected soil 
+samples obtained from our field exploration. The test results are summarized on 
+Plate B-11. 
+0
+10
+20
+30
+40
+50
+60
+70
+80
+90
+100
+0
+20
+40
+60
+80
+100
+120
+ML or OL
+CL-ML
+CL or OL
+CH or OH
+B - 1
+MH or OH
+LIQUID LIMIT
+PLASTICITY INDEX
+ATTERBERG LIMITS TEST RESULTS - ASTM D4318
+B-102
+B-103
+B-104
+B-105
+71
+82
+66
+90
+6.5-8.0
+6.5-8.0
+11.5-13.0
+11.5-13.0
+26
+20
+22
+26
+NP = NON-PLASTIC
+4
+7
+45
+62
+44
+64
+Sample
+Depth (ft)
+LL
+PL
+PI
+Brown with grayish mottling silty clay (CH)
+Brown silty clay (CH) with traces of sand
+Brown with grayish mottling silty clay (CH)
+Brown with blackish mottling silty clay (CH) with a little sand
+Description
+Plate
+W.O. 8364-10
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+RELOCATED WEST KAUAI ENERGY SUBSTATION
+KEKAHA, KAUAI, HAWAII
+G_ATTERBERG_PI-100_LL-120  8364-10.GPJ  GEOLABS.GDT  5/27/22
+0
+5
+10
+15
+20
+25
+30
+35
+40
+45
+50
+55
+60
+65
+70
+75
+80
+85
+90
+95
+100
+0.001
+0.01
+0.1
+1
+10
+100
+11.233
+16.453
+23.915
+B - 2
+coarse
+1
+1.5
+3
+2
+0.09
+40
+Depth (ft)
+%Gravel
+57.5
+59.1
+78.1
+33.0
+16.0
+11.0
+%Sand
+COBBLES
+Sample
+D30 (mm)
+140
+20
+3.3
+67.6
+124.4
+653.7
+HYDROMETER
+3
+GRAIN SIZE IN MILLIMETERS
+PERCENT FINER BY WEIGHT
+100
+coarse
+1/2
+Sample
+1.838
+0.612
+7.692
+Cu
+GRAVEL
+U.S. SIEVE NUMBERS
+D10 (mm)
+16
+fine
+37.5
+50
+62.5
+Cc
+3/4
+fine
+SILT OR CLAY
+medium
+GRAIN SIZE DISTRIBUTION - ASTM D6913
+SAND
+%Fine
+60
+4
+30
+200
+4
+6
+9.5
+24.8
+11.0
+Depth (ft)
+LL
+Light brown w/ blackish mottling sandy gravel (GP) w/ a little silt
+Light brown with grayish motting silty gravel (GM) with some sand
+Light brown w/ orangish mottling sandy gravel (GP) w/ a little silt
+810 14
+50
+U.S. SIEVE OPENING IN INCHES
+6
+D60 (mm)
+D100 (mm)
+B-101
+B-102
+B-104
+6.5-8.0
+10.0-11.5
+15.0-16.0
+6.5-8.0
+10.0-11.5
+15.0-16.0
+B-101
+B-102
+B-104
+3/8
+PL PI
+Description
+Plate
+W.O. 8364-10
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+RELOCATED WEST KAUAI ENERGY SUBSTATION
+KEKAHA, KAUAI, HAWAII
+G_GRAIN_SIZE_MOD  8364-10.GPJ  GEOLABS.GDT  5/27/22
+B-101
+1.0 - 2.5
+Brown silty clay
+89.5
+27.6
+23.4
+46.6
+21.1
+B-102
+2.5 - 4.0
+Brown silty clay
+91.9
+27.8
+24.5
+51.8
+32.0
+B-104
+1.0 - 2.5
+Brown silty clay
+90.8
+27.9
+24.7
+47.5
+21.5
+B-105
+2.5 - 4.0
+Brown with grayish mottling silty clay
+93.1
+26.1
+22.8
+53.1
+35.3
+Air-Dried
+Final
+Ring
+Swell
+(pcf)
+(%)
+(%)
+(%)
+Dry
+Density
+Moisture Contents
+Location
+SUMMARY OF RING SWELL TESTS
+B - 3
+NOTE:
+Relatively Undisturbed
+Remolded
+Samples tested were either relatively undisturbed or remolded in 2.4-inch diameter by 1-inch high rings.
+They were air-dried overnight and then saturated for 24 hours under a surcharge pressure of 55 psf.
+Depth
+(feet)
+Soil Description
+(%)
+Initial
+Plate
+W.O. 8364-10
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+RELOCATED WEST KAUAI ENERGY SUBSTATION
+KEKAHA, KAUAI, HAWAII
+G_RING_SWELL_TEST  8364-10.GPJ  GEOLABS.GDT  5/27/22
+0
+0.5
+1.0
+1.5
+2.0
+2.5
+3.0
+3.5
+4.0
+4.5
+5.0
+5.5
+0
+4
+8
+12
+16
+Location:
+Sample Diameter (inches)
+Sample Height (inches)
+DEVIATOR STRESS, ksf
+Max. Deviator Stress (ksf):
+Confining Stress (ksf):
+AXIAL STRAIN, %
+1.2
+5.0
+Dry Density (pcf)
+Moisture (%)
+Axial Strain at Failure (%)
+Strain Rate (% / minute)
+21.8
+80.0
+6.3
+Brown with grayish mottling sandy clay
+10.0 - 11.5 feet
+Description:
+Depth:
+B-101
+TRIAXIAL UU COMPRESSION TEST - ASTM D2850
+Test Date:
+5.100
+2.413
+0.71
+B - 4
+5/3/2022
+Plate
+W.O. 8364-10
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+RELOCATED WEST KAUAI ENERGY SUBSTATION
+KEKAHA, KAUAI, HAWAII
+G_TXUU  8364-10.GPJ  GEOLABS.GDT  5/27/22
+0
+2
+4
+6
+8
+10
+12
+14
+0
+4
+8
+12
+16
+Location:
+Sample Diameter (inches)
+Sample Height (inches)
+DEVIATOR STRESS, ksf
+Max. Deviator Stress (ksf):
+Confining Stress (ksf):
+AXIAL STRAIN, %
+0.6
+13.2
+Dry Density (pcf)
+Moisture (%)
+Axial Strain at Failure (%)
+Strain Rate (% / minute)
+25.9
+92.7
+6.0
+Brown silty clay with traces of sand
+5.0 - 6.5 feet
+Description:
+Depth:
+B-103
+TRIAXIAL UU COMPRESSION TEST - ASTM D2850
+Test Date:
+4.533
+2.413
+0.70
+B - 5
+5/3/2022
+Plate
+W.O. 8364-10
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+RELOCATED WEST KAUAI ENERGY SUBSTATION
+KEKAHA, KAUAI, HAWAII
+G_TXUU  8364-10.GPJ  GEOLABS.GDT  5/27/22
+0
+2
+4
+6
+8
+10
+12
+14
+0
+4
+8
+12
+16
+Location:
+Sample Diameter (inches)
+Sample Height (inches)
+DEVIATOR STRESS, ksf
+Max. Deviator Stress (ksf):
+Confining Stress (ksf):
+AXIAL STRAIN, %
+2.8
+13.4
+Dry Density (pcf)
+Moisture (%)
+Axial Strain at Failure (%)
+Strain Rate (% / minute)
+31.8
+79.0
+8.2
+Light brown with orangish mottling sandy clay
+25.0 - 26.5 feet
+Description:
+Depth:
+B-103
+TRIAXIAL UU COMPRESSION TEST - ASTM D2850
+Test Date:
+5.033
+2.413
+0.71
+B - 6
+5/3/2022
+Plate
+W.O. 8364-10
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+RELOCATED WEST KAUAI ENERGY SUBSTATION
+KEKAHA, KAUAI, HAWAII
+G_TXUU  8364-10.GPJ  GEOLABS.GDT  5/27/22
+0
+2
+4
+6
+8
+10
+12
+14
+16
+18
+20
+22
+0
+4
+8
+12
+16
+Location:
+Sample Diameter (inches)
+Sample Height (inches)
+DEVIATOR STRESS, ksf
+Max. Deviator Stress (ksf):
+Confining Stress (ksf):
+AXIAL STRAIN, %
+0.6
+20.2
+Dry Density (pcf)
+Moisture (%)
+Axial Strain at Failure (%)
+Strain Rate (% / minute)
+28.9
+93.3
+4.4
+Brown with blackish mottling silty clay with a little sand
+5.0 - 6.5 feet
+Description:
+Depth:
+B-105
+TRIAXIAL UU COMPRESSION TEST - ASTM D2850
+Test Date:
+5.100
+2.413
+0.71
+B - 7
+5/2/2022
+Plate
+W.O. 8364-10
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+RELOCATED WEST KAUAI ENERGY SUBSTATION
+KEKAHA, KAUAI, HAWAII
+G_TXUU  8364-10.GPJ  GEOLABS.GDT  5/27/22
+0
+5
+10
+15
+20
+25
+30
+0.1
+1
+10
+100
+B - 8
+24.9
+38.9
+94.7
+75.0
+Sample Height, inches
+N/A
+N/A
+CONSOLIDATION TEST -  ASTM D2435
+1.0000
+Initial
+Final
+Dry Density, pcf:
+44.4
+0.7900
+100.0
+2.078
+1.437
+Degree of Saturation, %
+Void Ratio
+Water Content, %
+Sample:
+B-102
+Depth:
+5.0 - 6.5 feet
+Description: Brown with grayish motting silty
+clay
+Liquid Limit =
+Plasticity Index =
+CONSOLIDATION %
+NORMAL PRESSURE, ksf
+Plate
+W.O. 8364-10
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+RELOCATED WEST KAUAI ENERGY SUBSTATION
+KEKAHA, KAUAI, HAWAII
+G_CONSOL  8364-10.GPJ  GEOLABS.GDT  5/27/22
+0
+5
+10
+15
+20
+25
+30
+0
+0.10
+0.20
+0.30
+0.40
+0.50
+0.60
+Sample:
+Corr. CBR @ 0.1"
+Depth:
+Corr. CBR @ 0.2"
+No. of Layers
+CALIFORNIA BEARING RATIO - ASTM D1883
+Description:
+Days Soaked
+5
+Bulk-1
+Swell (%)
+11.08
+0.7
+0.8
+Molding Dry Density (pcf)
+STRESS, psi
+1.0 - 3.0 feet
+No. of Blows
+20.2
+95.9
+Molding Moisture (%)
+Hammer Wt. (lbs)
+Hammer Drop (inches)
+PENETRATION, inches
+Brown silty clay
+18
+56
+10
+5
+Aggregate
+B - 9
+3/4 inch minus
+Plate
+W.O. 8364-10
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+RELOCATED WEST KAUAI ENERGY SUBSTATION
+KEKAHA, KAUAI, HAWAII
+G_CBR  8364-10.GPJ  GEOLABS.GDT  5/27/22
+0
+5
+10
+15
+20
+25
+30
+0
+0.10
+0.20
+0.30
+0.40
+0.50
+0.60
+Sample:
+Corr. CBR @ 0.1"
+Depth:
+Corr. CBR @ 0.2"
+No. of Layers
+CALIFORNIA BEARING RATIO - ASTM D1883
+Description:
+Days Soaked
+5
+Bulk-2
+Swell (%)
+10.54
+1.4
+1.7
+Molding Dry Density (pcf)
+STRESS, psi
+1.0 - 3.0 feet
+No. of Blows
+21.8
+98.5
+Molding Moisture (%)
+Hammer Wt. (lbs)
+Hammer Drop (inches)
+PENETRATION, inches
+Brown silty clay
+18
+56
+10
+5
+Aggregate
+B - 10
+3/4 inch minus
+Plate
+W.O. 8364-10
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+RELOCATED WEST KAUAI ENERGY SUBSTATION
+KEKAHA, KAUAI, HAWAII
+G_CBR  8364-10.GPJ  GEOLABS.GDT  5/27/22
+B-103
+1.0 - 2.5
+8.39
+300
+ND
+71
+B-104
+1.0 - 2.5
+8.29
+200
+ND
+ND
+SUMMARY OF CORROSIVITY TESTS
+B - 11
+(ohm-cm)
+(mg/kg)
+(mg/kg)
+SM 2510B
+Minimum Resistivity
+pH Value
+EPA 300.0
+Minimum Resistivity
+ASTM G57
+pH Value
+Method 9045C
+ASTM G51
+TEST METHODS (by Geolabs, Inc.)*
+pH Value
+Minimum Resistivity
+Chloride Content
+Sulfate Content
+ND: Not Detected Within Reporting Limits
+Sulfate Content
+EPA 300.0
+Location
+Depth
+(feet)
+Sulfate Content
+N/A
+TEST METHODS (by Eurofins TestAmerica Laboratories, Inc.)
+Chloride Content
+Chloride Content
+N/A
+Plate
+W.O. 8364-10
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+RELOCATED WEST KAUAI ENERGY SUBSTATION
+KEKAHA, KAUAI, HAWAII
+G_SUMMARY_OF_CORROSIVITY_TESTS  8364-10.GPJ  GEOLABS.GDT  7/20/22
+APPENDIX C  
+Project:
+W.O.:
+Test No.:
+Date of Testing:
+Method of Testing:
+BMP Falling Head
+(Flush Bottom)
+Source of Water:
+Bucket
+GW level, b (from ground):
+N/A
+feet
+Datum, a (above ground):
+0.0
+feet
+Depth of Boring:
+5.0
+feet
+Length, L (from datum):
+5.0
+feet
+Diameter of Casing, d (I.D.):
+3.0
+inches
+Time
+Elapsed Time
+(hh:mm)
+(minutes)
+0
+Trial 1
+0:15
+15
+0:30
+30
+0:45
+45
+1:00
+60
+0
+Trial 2
+0:15
+15
+0:30
+30
+0:45
+45
+1:00
+60
+0
+Trial 3
+0:15
+15
+0:30
+30
+0:45
+45
+1:00
+60
+0
+Trial 4
+0:15
+15
+0:30
+30
+0:45
+45
+1:00
+60
+0.13
+36.13
+36.06
+36.13
+36.13
+36.00
+36.13
+36.19
+0.19
+36.19
+36.00
+36.06
+36.19
+0.19
+36.19
+36.00
+36.06
+36.13
+0.25
+36.25
+36.06
+36.13
+36.19
+Testing 
+Trial
+Depth to Water                                 
+(measured from datum)
+Percolation Rate
+(inches per hour)
+(inches)
+36.00
+INFILTRATION TEST RECORD
+West Kauai Substation
+8364-10
+I-101
+4/15/2022
+GW
+Ground
+Datum
+d
+a
+b
+L
+W.O. 8364-10
+GEOLABS, INC. 
+Hawaii ● California
+PLATE C-1
+APPENDIX D  
+ANALYTICAL REPORT
+Eurofins Sacramento
+880 Riverside Parkway
+West Sacramento, CA 95605
+Tel: (916)373-5600
+Laboratory Job ID: 320-87651-1
+Laboratory Sample Delivery Group: 8364-10
+Client Project/Site: Relocated West Kauai Energy Project
+For:
+GeoLabs Inc
+94-429 Koaki Street Suite 200
+Waipahu, Hawaii 96797
+Attn: Chriztalee Calpito
+Authorized for release by:
+5/31/2022 6:05:19 PM
+Justinn Gonzales, Project Manager I
+(916)374-4344
+Justinn.Gonzales@et.eurofinsus.com
+The test results in this report meet all 2003 NELAC, 2009 TNI, and 2016 TNI
+requirements for accredited parameters, exceptions are noted in this report. This
+report may not be reproduced except in full, and with written approval from the
+laboratory. For questions please contact the Project Manager at the e-mail address or
+telephone number listed on this page.
+This report has been electronically signed and authorized by the signatory. Electronic
+signature is intended to be the legally binding equivalent of a traditionally handwritten
+signature.
+Results relate only to the items tested and the sample(s) as received by the laboratory.
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+Table of Contents
+Client: GeoLabs Inc
+Project/Site: Relocated West Kauai Energy Project
+Laboratory Job ID: 320-87651-1
+SDG: 8364-10
+Page 2 of 14
+Eurofins Sacramento
+5/31/2022
+Cover Page . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+1
+Table of Contents . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+2
+Definitions/Glossary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+3
+Case Narrative . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+4
+Detection Summary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+5
+Client Sample Results . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+6
+QC Sample Results . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+7
+QC Association Summary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+8
+Lab Chronicle . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+9
+Certification Summary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+10
+Method Summary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+11
+Sample Summary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+12
+Chain of Custody . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+13
+Receipt Checklists . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+14
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+Definitions/Glossary
+Job ID: 320-87651-1
+Client: GeoLabs Inc
+SDG: 8364-10
+Project/Site: Relocated West Kauai Energy Project
+Qualifiers
+HPLC/IC
+Qualifier Description
+4
+MS, MSD: The analyte present in the original sample is greater than 4 times the matrix spike concentration; therefore, control limits are not 
+applicable.
+Qualifier
+H
+Sample was prepped or analyzed beyond the specified holding time
+Glossary
+These commonly used abbreviations may or may not be present in this report.
+Listed under the "D" column to designate that the result is reported on a dry weight basis
+Abbreviation
+%R
+Percent Recovery
+CFL
+Contains Free Liquid
+CFU
+Colony Forming Unit
+CNF
+Contains No Free Liquid
+DER
+Duplicate Error Ratio (normalized absolute difference)
+Dil Fac
+Dilution Factor
+DL
+Detection Limit (DoD/DOE)
+DL, RA, RE, IN
+Indicates a Dilution, Re-analysis, Re-extraction, or additional Initial metals/anion analysis of the sample
+DLC
+Decision Level Concentration (Radiochemistry)
+EDL
+Estimated Detection Limit (Dioxin)
+LOD
+Limit of Detection (DoD/DOE)
+LOQ
+Limit of Quantitation (DoD/DOE)
+MCL
+EPA recommended "Maximum Contaminant Level"
+MDA
+Minimum Detectable Activity (Radiochemistry)
+MDC
+Minimum Detectable Concentration (Radiochemistry)
+MDL
+Method Detection Limit
+ML
+Minimum Level (Dioxin)
+MPN
+Most Probable Number
+MQL
+Method Quantitation Limit
+NC
+Not Calculated
+ND
+Not Detected at the reporting limit (or MDL or EDL if shown)
+NEG
+Negative / Absent
+POS
+Positive / Present
+PQL
+Practical Quantitation Limit
+PRES
+Presumptive
+QC
+Quality Control
+RER
+Relative Error Ratio (Radiochemistry)
+RL
+Reporting Limit or Requested Limit (Radiochemistry)
+RPD
+Relative Percent Difference, a measure of the relative difference between two points
+TEF
+Toxicity Equivalent Factor (Dioxin)
+TEQ
+Toxicity Equivalent Quotient (Dioxin)
+TNTC
+Too Numerous To Count
+Eurofins Sacramento
+Page 3 of 14
+5/31/2022
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+Case Narrative
+Client: GeoLabs Inc
+Job ID: 320-87651-1
+Project/Site: Relocated West Kauai Energy Project
+SDG: 8364-10
+Job ID: 320-87651-1
+Laboratory: Eurofins Sacramento
+Narrative
+Job Narrative
+320-87651-1
+Comments
+No additional comments. 
+Receipt 
+The samples were received on 5/9/2022 9:35 AM.  Unless otherwise noted below, the samples arrived in good condition, and where 
+required, properly preserved and on ice.  The temperature of the cooler at receipt was 20.6º C.
+Receipt Exceptions
+Cooler received out of acceptable temperature. No cooling media was packed with samples. B103 RS1 1-2.5ft (320-87651-1) and B104 
+RS1/SPT2 1-4ft (320-87651-2).
+The container labels for both samples list the sample ID as 8364-10. The information listed on the COC is listed in other sections of the 
+container label, ie "location" and "sampled by" sections. Distinguished samples using this information. Logged and labeled according to 
+COC. B103 RS1 1-2.5ft (320-87651-1) and B104 RS1/SPT2 1-4ft (320-87651-2).
+General Chemistry 
+Method 300.0: The following samples in preparation batch 320-586861 and analytical batch 320-587002  were diluted due to the nature of 
+the sample matrix (the samples were very difficult to filter) and to protect instrumentation : B103 RS1 1-2.5ft (320-87651-1) and B104 
+RS1/SPT2 1-4ft (320-87651-2).  Elevated reporting limits (RLs) are provided.
+Method 300.0: The following sample in analytical batch 320-587002 was analyzed outside of analytical holding time.  It was received with 
+less than 2 days remaining on a 28 day holding time: B104 RS1/SPT2 1-4ft (320-87651-2).
+No additional analytical or quality issues were noted, other than those described above or in the Definitions/Glossary page.
+Eurofins Sacramento
+Page 4 of 14
+5/31/2022
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+Detection Summary
+Job ID: 320-87651-1
+Client: GeoLabs Inc
+SDG: 8364-10
+Project/Site: Relocated West Kauai Energy Project
+Client Sample ID: B103 RS1 1-2.5ft
+Lab Sample ID: 320-87651-1
+Sulfate
+RL
+50
+mg/Kg
+Analyte
+Result Qualifier
+Unit
+Dil Fac D Method
+Prep Type
+Soluble
+10
+71
+300.0
+Client Sample ID: B104 RS1/SPT2 1-4ft
+Lab Sample ID: 320-87651-2
+ No Detections.
+Eurofins Sacramento
+This Detection Summary does not include radiochemical test results.
+Page 5 of 14
+5/31/2022
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+Client Sample Results
+Job ID: 320-87651-1
+Client: GeoLabs Inc
+SDG: 8364-10
+Project/Site: Relocated West Kauai Energy Project
+Lab Sample ID: 320-87651-1
+Client Sample ID: B103 RS1 1-2.5ft
+Matrix: Solid
+Date Collected: 04/14/22 10:00
+Date Received: 05/09/22 09:35
+Method: 300.0 - Anions, Ion Chromatography - Soluble
+RL
+Chloride
+ND
+50
+mg/Kg
+05/11/22 23:48
+10
+Analyte
+Dil Fac
+Analyzed
+Prepared
+Unit
+D
+Result Qualifier
+50
+mg/Kg
+05/11/22 23:48
+10
+Sulfate
+71
+Lab Sample ID: 320-87651-2
+Client Sample ID: B104 RS1/SPT2 1-4ft
+Matrix: Solid
+Date Collected: 04/13/22 10:00
+Date Received: 05/09/22 09:35
+Method: 300.0 - Anions, Ion Chromatography - Soluble
+RL
+Chloride
+ND H
+250
+mg/Kg
+05/12/22 00:07
+50
+Analyte
+Dil Fac
+Analyzed
+Prepared
+Unit
+D
+Result Qualifier
+250
+mg/Kg
+05/12/22 00:07
+50
+Sulfate
+ND H
+Eurofins Sacramento
+Page 6 of 14
+5/31/2022
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+QC Sample Results
+Job ID: 320-87651-1
+Client: GeoLabs Inc
+SDG: 8364-10
+Project/Site: Relocated West Kauai Energy Project
+Method: 300.0 - Anions, Ion Chromatography
+Client Sample ID: Method Blank
+Lab Sample ID: MB 320-586861/1-A
+Matrix: Solid
+Prep Type: Soluble
+Analysis Batch: 587002
+RL
+Chloride
+ND
+5.0
+mg/Kg
+05/11/22 21:50
+1
+MB MB
+Analyte
+Dil Fac
+Analyzed
+Prepared
+D
+Unit
+Result Qualifier
+ND
+5.0
+mg/Kg
+05/11/22 21:50
+1
+Sulfate
+Client Sample ID: Lab Control Sample
+Lab Sample ID: LCS 320-586861/2-A
+Matrix: Solid
+Prep Type: Soluble
+Analysis Batch: 587002
+Chloride
+37.5
+36.8
+mg/Kg
+98
+85 - 115
+Analyte
+LCS LCS
+D
+Unit
+Result Qualifier
+%Rec
+Spike
+Added
+%Rec
+Limits
+Sulfate
+37.5
+34.4
+mg/Kg
+92
+85 - 115
+Client Sample ID: Matrix Spike
+Lab Sample ID: 320-87652-A-2-B MS
+Matrix: Solid
+Prep Type: Soluble
+Analysis Batch: 587002
+Chloride
+100
+24.8
+127 4
+mg/Kg
+97
+85 - 115
+Analyte
+MS MS
+D
+Unit
+Result Qualifier
+%Rec
+Spike
+Added
+Sample
+Result
+Sample
+Qualifier
+%Rec
+Limits
+Sulfate
+76
+24.8
+98.9
+mg/Kg
+92
+85 - 115
+Client Sample ID: Matrix Spike Duplicate
+Lab Sample ID: 320-87652-A-2-C MSD
+Matrix: Solid
+Prep Type: Soluble
+Analysis Batch: 587002
+Chloride
+100
+24.8
+122 4
+mg/Kg
+77
+85 - 115
+4
+15
+Analyte
+MSD MSD
+D
+Unit
+Result Qualifier
+%Rec
+Spike
+Added
+Sample
+Result
+Sample
+Qualifier
+%Rec
+Limits
+Limit
+RPD
+RPD
+Sulfate
+76
+24.8
+98.1
+mg/Kg
+88
+85 - 115
+1
+15
+Eurofins Sacramento
+Page 7 of 14
+5/31/2022
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+QC Association Summary
+Job ID: 320-87651-1
+Client: GeoLabs Inc
+SDG: 8364-10
+Project/Site: Relocated West Kauai Energy Project
+HPLC/IC
+Leach Batch: 586861
+Lab Sample ID
+Client Sample ID
+Prep Type
+Matrix
+Method
+Prep Batch
+Solid
+DI Leach
+320-87651-1
+B103 RS1 1-2.5ft
+Soluble
+Solid
+DI Leach
+320-87651-2
+B104 RS1/SPT2 1-4ft
+Soluble
+Solid
+DI Leach
+MB 320-586861/1-A
+Method Blank
+Soluble
+Solid
+DI Leach
+LCS 320-586861/2-A
+Lab Control Sample
+Soluble
+Solid
+DI Leach
+320-87652-A-2-B MS
+Matrix Spike
+Soluble
+Solid
+DI Leach
+320-87652-A-2-C MSD
+Matrix Spike Duplicate
+Soluble
+Analysis Batch: 587002
+Lab Sample ID
+Client Sample ID
+Prep Type
+Matrix
+Method
+Prep Batch
+Solid
+300.0
+586861
+320-87651-1
+B103 RS1 1-2.5ft
+Soluble
+Solid
+300.0
+586861
+320-87651-2
+B104 RS1/SPT2 1-4ft
+Soluble
+Solid
+300.0
+586861
+MB 320-586861/1-A
+Method Blank
+Soluble
+Solid
+300.0
+586861
+LCS 320-586861/2-A
+Lab Control Sample
+Soluble
+Solid
+300.0
+586861
+320-87652-A-2-B MS
+Matrix Spike
+Soluble
+Solid
+300.0
+586861
+320-87652-A-2-C MSD
+Matrix Spike Duplicate
+Soluble
+Eurofins Sacramento
+Page 8 of 14
+5/31/2022
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+Lab Chronicle
+Client: GeoLabs Inc
+Job ID: 320-87651-1
+Project/Site: Relocated West Kauai Energy Project
+SDG: 8364-10
+Client Sample ID: B103 RS1 1-2.5ft
+Lab Sample ID: 320-87651-1
+Matrix: Solid
+Date Collected: 04/14/22 10:00
+Date Received: 05/09/22 09:35
+Leach
+DI Leach
+CFR
+05/11/22 10:19
+TAL SAC
+586861
+Type
+Batch
+Method
+Batch
+Prep Type
+Lab
+Analyst
+Run
+Prepared
+or Analyzed
+Initial
+Amount
+Amount
+Final
+Batch
+Number
+Factor
+Dil
+Soluble
+10.03 g
+50.00 mL
+Analysis
+300.0
+10
+587002
+05/11/22 23:48
+Y1S
+TAL SAC
+Soluble
+10 mL
+10 mL
+Client Sample ID: B104 RS1/SPT2 1-4ft
+Lab Sample ID: 320-87651-2
+Matrix: Solid
+Date Collected: 04/13/22 10:00
+Date Received: 05/09/22 09:35
+Leach
+DI Leach
+CFR
+05/11/22 10:19
+TAL SAC
+586861
+Type
+Batch
+Method
+Batch
+Prep Type
+Lab
+Analyst
+Run
+Prepared
+or Analyzed
+Initial
+Amount
+Amount
+Final
+Batch
+Number
+Factor
+Dil
+Soluble
+10.04 g
+50.00 mL
+Analysis
+300.0
+50
+587002
+05/12/22 00:07 Y1S
+TAL SAC
+Soluble
+10 mL
+10 mL
+Laboratory References:
+TAL SAC = Eurofins Sacramento, 880 Riverside Parkway, West Sacramento, CA 95605, TEL (916)373-5600
+Eurofins Sacramento
+Page 9 of 14
+5/31/2022
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+Accreditation/Certification Summary
+Client: GeoLabs Inc
+Job ID: 320-87651-1
+Project/Site: Relocated West Kauai Energy Project
+SDG: 8364-10
+Laboratory: Eurofins Sacramento
+Unless otherwise noted, all analytes for this laboratory were covered under each accreditation/certification below.
+Authority
+Program
+Identification Number
+Expiration Date
+Hawaii
+State
+<cert No.>
+01-29-23
+The following analytes are included in this report, but the laboratory is not certified by the governing authority.  This list may include analytes for which 
+the agency does not offer certification.  
+Analysis Method
+Prep Method
+Matrix
+Analyte
+300.0
+Solid
+Chloride
+300.0
+Solid
+Sulfate
+Eurofins Sacramento
+Page 10 of 14
+5/31/2022
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+Method Summary
+Job ID: 320-87651-1
+Client: GeoLabs Inc
+SDG: 8364-10
+Project/Site: Relocated West Kauai Energy Project
+Method
+Method Description
+Laboratory
+Protocol
+MCAWW
+300.0
+Anions, Ion Chromatography
+TAL SAC
+ASTM
+DI Leach
+Deionized Water Leaching Procedure
+TAL SAC
+Protocol References:
+ASTM = ASTM International
+MCAWW = "Methods For Chemical Analysis Of Water And Wastes", EPA-600/4-79-020, March 1983 And Subsequent Revisions.
+Laboratory References:
+TAL SAC = Eurofins Sacramento, 880 Riverside Parkway, West Sacramento, CA 95605, TEL (916)373-5600
+Eurofins Sacramento
+Page 11 of 14
+5/31/2022
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+Sample Summary
+Client: GeoLabs Inc
+Job ID: 320-87651-1
+SDG: 8364-10
+Project/Site: Relocated West Kauai Energy Project
+Lab Sample ID
+Client Sample ID
+Matrix
+Collected
+Received
+320-87651-1
+B103 RS1 1-2.5ft
+Solid
+04/14/22 10:00
+05/09/22 09:35
+320-87651-2
+B104 RS1/SPT2 1-4ft
+Solid
+04/13/22 10:00
+05/09/22 09:35
+Eurofins Sacramento
+Page 12 of 14
+5/31/2022
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+Page 13 of 14
+5/31/2022
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+Login Sample Receipt Checklist
+Client: GeoLabs Inc
+Job Number: 320-87651-1
+SDG Number: 8364-10
+Login Number: 87651
+Question
+Answer
+Comment
+Creator: Cahill, Nicholas P
+List Source: Eurofins Sacramento
+List Number: 1
+True
+Radioactivity wasn't checked or is </= background as measured by a survey 
+meter.
+N/A
+The cooler's custody seal, if present, is intact.
+N/A
+Sample custody seals, if present, are intact.
+True
+The cooler or samples do not appear to have been compromised or 
+tampered with.
+False
+Samples were received on ice.
+False
+Cooler Temperature is acceptable.
+Cooler temperature outside required temperature 
+criteria.
+True
+Cooler Temperature is recorded.
+True
+COC is present.
+True
+COC is filled out in ink and legible.
+True
+COC is filled out with all pertinent information.
+False
+Is the Field Sampler's name present on COC?
+False
+There are no discrepancies between the containers received and the COC.
+Refer to Job Narrative for details.
+True
+Samples are received within Holding Time (excluding tests with immediate 
+HTs)
+True
+Sample containers have legible labels.
+True
+Containers are not broken or leaking.
+True
+Sample collection date/times are provided.
+True
+Appropriate sample containers are used.
+True
+Sample bottles are completely filled.
+N/A
+Sample Preservation Verified.
+True
+There is sufficient vol. for all requested analyses, incl. any requested 
+MS/MSDs
+True
+Containers requiring zero headspace have no headspace or bubble is 
+<6mm (1/4").
+True
+Multiphasic samples are not present.
+True
+Samples do not require splitting or compositing.
+N/A
+Residual Chlorine Checked.
+Eurofins Sacramento
+Page 14 of 14
+5/31/2022
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+APPENDIX E  
+COOL SOLUTIONS FOR UNDERGROUND POWER CABLES 
+THERMAL SURVEYS, CORRECTIVE BACKFILLS & INSTRUMENTATION 
+Serving the electric power industry since 1978 
+21239 FM529 Rd., Bldg. F 
+Cypress, TX 77433 
+Tel:     281-985-9344 
+Fax:   832-427-1752 
+info@geothermusa.com 
+http://www.geothermusa.com 
+May 6, 2022 
+Geolabs, Inc.  
+94-429 Koaki Street, Suite 200 
+Waipahu, HI 96797 
+Attn: Taylor Onizuka 
+Sample 
+ID 
+Depth 
+(ft) 
+Description 
+(Geolabs) 
+Thermal Resistivity 
+(°C-cm/W) 
+Moisture 
+Content 
+ (%) 
+Dry 
+Density 
+(lb/ft3) 
+Wet 
+Dry 
+Bulk-2 
+1 - 3 
+Brown silty clay 
+135 
+243 
+29 
+86 
+Please contact us if you have any questions or if we can be of further assistance. 
+Geotherm USA 
+Nimesh Patel
+W.O. 8364-10
+PLATE E-1
+Re:
+Thermal Analysis
+of
+Native
+Soil
+Sample
+(Project No.
+3867)
+Relocated West Kauai Energy Project Substation
+Kekaha, Kauai, HI
+The following
+is
+the
+report
+of thermal dryout
+characterization tests 
+conducted 
+on
+one
+(1)
+native
+soil
+sample
+from the referenced project
+sent to our laboratory.
+Thermal 
+Resistivity 
+Tests:
+The
+sample
+was
+tested
+at
+the
+‘optimum’
+moisture 
+content
+and
+90%
+of
+the
+modified
+Proctor 
+dry
+density
+provided 
+by
+Geolabs.
+The 
+tests 
+were
+conducted 
+in 
+accordance 
+with
+the
+IEEE 
+standard 
+442-2017.
+The 
+results 
+are 
+tabulated
+below and the thermal dryout curve
+is
+presented in
+Figure
+1.
+Sample ID, Description, Thermal Resistivity, Moisture Content and
+Density
+2 
+W.O. 8364-10
+PLATE E-2

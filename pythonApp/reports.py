@@ -93,6 +93,7 @@ def ensure_schema(db_path: str):
         c.execute("CREATE INDEX IF NOT EXISTS idx_reports_sha ON reports(sha256);")
         conn.commit()
 
+
 # ---------------------- HELPERS ----------------------
 def safe_sent_tokenize(text: str): return _punkt.tokenize(text)
 
@@ -275,7 +276,7 @@ def index_pdf_at_path(local_pdf_path: str, file_name: str, *, work_order="", pro
     return {"skipped": False, "file_id": file_id, "sha256": sha256_of_file(local_pdf_path)}
 
 # ---------------------- ROUTES ----------------------
-@reports_bp.route("/api/reports/index", methods=["POST", "OPTIONS"])
+@reports_bp.route("/api/reports/index", methods=["POST"])
 def index_report_upload():
     steps = []; track = lambda m: (steps.append(m), print(m))
     try:
@@ -331,7 +332,7 @@ def add_cors_headers(resp):
     resp.headers["Access-Control-Allow-Methods"] = "GET, POST, OPTIONS"
     return resp
 
-@reports_bp.route("/api/reports/bulk-index", methods=["POST", "OPTIONS"])
+@reports_bp.route("/api/reports/bulk-index", methods=["POST"])
 def bulk_index_reports():
     """
     Accept multiple PDFs in one request.
@@ -449,3 +450,134 @@ def parse_filename(file_name: str):
         work_order, project = parts[0], ""
     return work_order.strip(), project.strip()
 
+# --- Add near top (after BGE model loads) ---
+from typing import List, Dict, Any
+import math
+
+def encode_queries_bge(texts, batch_size=16):
+    out = []
+    with torch.no_grad():
+        for i in range(0, len(texts), batch_size):
+            batch = [f"query: {t}" for t in texts[i:i+batch_size]]  # <-- query prefix for BGE
+            inputs = _tokenizer(batch, padding=True, truncation=True, max_length=128, return_tensors="pt").to(DEVICE)
+            outputs = _model(**inputs)
+            vecs = outputs.last_hidden_state[:, 0]
+            vecs = torch.nn.functional.normalize(vecs, p=2, dim=1)
+            out.append(vecs.cpu().numpy())
+    return np.concatenate(out, axis=0)
+
+def cosine(a, b):
+    return float(np.dot(a, b))  # both already L2-normalized
+
+# --- Add new routes ---
+@reports_bp.route("/api/reports/search", methods=["GET"])
+def search_reports():
+    """
+    q: query string
+    k: top results (default 8)
+    """
+    q = (request.args.get("q") or "").strip()
+    k = int(request.args.get("k") or 8)
+    if not q:
+        return jsonify({"matches": []})
+
+    ensure_schema(REPORTS_DB)
+    # 1) grab FTS candidates (cheap & broad)
+    with sqlite3.connect(REPORTS_DB) as conn:
+        conn.row_factory = sqlite3.Row
+        cur = conn.cursor()
+        cur.execute("""
+            SELECT f.text, f.file_id, f.page, f.chunk_id, bm25(chunks_fts) AS bm25
+            FROM chunks_fts f
+            WHERE chunks_fts MATCH ?
+            ORDER BY bm25 LIMIT 200
+        """, (q,))
+        fts_rows = cur.fetchall()
+
+        # 2) fetch embeddings for those candidates
+        if not fts_rows:
+            return jsonify({"matches": []})
+
+        # Build in-memory candidate table
+        keys = [(r["file_id"], r["page"], r["chunk_id"]) for r in fts_rows]
+        cur.execute(f"""
+            SELECT c.file_id, c.page, c.chunk_id, c.start_char, c.end_char, c.text, c.embedding,
+                   r.file_name, r.work_order, r.pages, r.s3_key
+            FROM chunks c
+            JOIN reports r ON r.file_id = c.file_id
+            WHERE ({' OR '.join(['(c.file_id=? AND c.page=? AND c.chunk_id=?)']*len(keys))})
+        """, [x for triple in keys for x in triple])
+        cand_rows = cur.fetchall()
+
+    # 3) vector score with BGE (query)
+    qvec = encode_queries_bge([q])[0]
+    scored: List[Dict[str, Any]] = []
+    for row in cand_rows:
+        emb = np.frombuffer(row["embedding"], dtype=np.float32)
+        sim = cosine(qvec, emb)
+        # bm25 from fts_rows: map by (file_id, page, chunk_id)
+        bm = next((fr["bm25"] for fr in fts_rows if fr["file_id"]==row["file_id"] and fr["page"]==row["page"] and fr["chunk_id"]==row["chunk_id"]), None)
+        # normalize bm25: smaller is better; turn into [0..1] score
+        bm_norm = 0.0
+        if bm is not None:
+            # crude normalization
+            bm_min = min(fr["bm25"] for fr in fts_rows)
+            bm_max = max(fr["bm25"] for fr in fts_rows)
+            bm_norm = 1.0 - ((bm - bm_min) / (bm_max - bm_min + 1e-9))
+
+        final = 0.65 * sim + 0.35 * bm_norm
+        scored.append({
+            "score": final,
+            "vector": float(sim),
+            "bm25": float(bm_norm),
+            "file_id": row["file_id"],
+            "file_name": row["file_name"],
+            "work_order": row["work_order"],
+            "page": row["page"],
+            "text": row["text"],
+            "start_char": row["start_char"],
+            "end_char": row["end_char"],
+            "s3_key": row["s3_key"],
+        })
+
+    scored.sort(key=lambda x: x["score"], reverse=True)
+    return jsonify({"matches": scored[:k]})
+
+@reports_bp.route("/api/reports/ask", methods=["POST"])
+def ask_reports():
+    """
+    JSON: { "q": "question", "k": 8 }
+    Returns: { answer, matches: [...] }
+    """
+    data = request.get_json(force=True, silent=True) or {}
+    q = (data.get("q") or "").strip()
+    k = int(data.get("k") or 8)
+    if not q:
+        return jsonify({"answer": "", "matches": []})
+
+    # reuse search
+    with reports_bp.test_request_context(f"/api/reports/search?q={q}&k={k}"):
+        search_resp = search_reports().json
+    ctx = search_resp.get("matches", [])
+
+    # --- Compose an answer with strict citations (LLM call stub) ---
+    # You can plug any LLM provider here. Keep prompt short & grounded.
+    context_blocks = []
+    for i, m in enumerate(ctx, 1):
+        context_blocks.append(f"[{i}] {m['file_name']} p.{m['page']}\n{m['text']}\n")
+    prompt = (
+        "You are a helpful technical assistant. Answer the question using ONLY the context snippets.\n"
+        "Cite sources like [1], [2] that map to the numbered snippets.\n"
+        f"Question: {q}\n\n"
+        "Context:\n" + "\n".join(context_blocks) + "\n"
+        "Answer:"
+    )
+
+    # TODO: replace with actual LLM call
+    # answer = call_llm(prompt)
+    # For now, return top snippets as a pseudo-answer:
+    answer = "Here are the most relevant excerpts:\n" + "\n".join(
+        [f"[{i+1}] {m['file_name']} p.{m['page']}: {m['text'][:300]}..." for i, m in enumerate(ctx)]
+    )
+
+    return jsonify({"answer": answer, "matches": ctx})

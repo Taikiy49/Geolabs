@@ -1,0 +1,226 @@
+/* RagCore.css
+   Compact console UI for RAG.
+   Uses your site's CSS variables when available; has sensible fallbacks. */
+
+.rag-wrap {
+  --rag-bg: var(--bg-card, #0b1220);
+  --rag-panel-bg: var(--bg-card, #0f172a);
+  --rag-border: var(--border-color, #1f2a44);
+  --rag-text: var(--text-primary, #e5e7eb);
+  --rag-muted: var(--text-muted, #94a3b8);
+  --rag-secondary: var(--text-secondary, #cbd5e1);
+  --rag-primary: var(--color-primary, #00d4ff);
+  --rag-secondary-accent: var(--color-secondary, #8b5cf6);
+
+  max-width: 1100px;
+  margin: 24px auto 48px;
+  padding: 0 16px;
+  color: var(--rag-text);
+}
+
+.rag-title {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 800;
+  background: linear-gradient(135deg, var(--rag-primary), var(--rag-secondary-accent));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 0 8px rgba(0,212,255,.25));
+}
+
+.rag-header {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.rag-row {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.rag-row-stack .rag-input {
+  min-width: 260px;
+}
+
+.rag-label {
+  font-size: 13px;
+  color: var(--rag-muted);
+}
+
+.rag-input {
+  flex: 1;
+  min-width: 240px;
+  height: 36px;
+  padding: 8px 12px;
+  border: 1px solid var(--rag-border);
+  border-radius: 10px;
+  background: rgba(17,24,39,.92);
+  color: var(--rag-text);
+  font-size: 14px;
+  outline: none;
+  transition: border-color .15s ease, box-shadow .15s ease, background .15s ease;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+.rag-input:focus {
+  border-color: var(--rag-primary);
+  box-shadow: 0 0 0 3px rgba(0,212,255,.18), 0 0 18px rgba(0,212,255,.2);
+  background: rgba(17,24,39,.97);
+}
+
+.rag-grow { flex: 1; }
+
+.rag-k {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 10px;
+  border: 1px dashed var(--rag-border);
+  border-radius: 10px;
+}
+.rag-k-label {
+  color: var(--rag-secondary);
+  font-size: 13px;
+}
+.rag-k-input {
+  width: 70px;
+  height: 32px;
+  padding: 6px 8px;
+  border: 1px solid var(--rag-border);
+  border-radius: 8px;
+  background: rgba(17,24,39,.92);
+  color: var(--rag-text);
+}
+
+.rag-btn {
+  background: rgba(17,24,39,.95);
+  color: var(--rag-text);
+  border: 1px solid var(--rag-border);
+  padding: 9px 14px;
+  border-radius: 10px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform .12s ease, border-color .12s ease, background .12s ease, box-shadow .12s ease;
+}
+.rag-btn:hover {
+  transform: translateY(-1px);
+  border-color: var(--rag-primary);
+  background: rgba(37,51,79,.92);
+  box-shadow: 0 10px 20px -15px rgba(2, 6, 23, 0.5), 0 0 18px rgba(0,212,255,.15);
+}
+.rag-btn:disabled {
+  opacity: .6;
+  cursor: not-allowed;
+}
+
+.rag-btn-ghost {
+  background: transparent;
+  color: var(--rag-secondary);
+}
+.rag-btn-ghost:hover {
+  background: rgba(15,23,42,.6);
+  border-color: var(--rag-primary);
+  color: var(--rag-text);
+}
+
+.rag-chip {
+  background: rgba(0,212,255,.12);
+  color: var(--rag-primary);
+  border: 1px solid rgba(0,212,255,.35);
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+}
+
+.rag-panel {
+  background: var(--rag-panel-bg);
+  border: 1px solid var(--rag-border);
+  border-radius: 16px;
+  padding: 16px;
+  margin-top: 16px;
+  box-shadow: 0 10px 20px -15px rgba(2, 6, 23, 0.6);
+}
+.rag-panel.rag-nested {
+  background: rgba(17,24,39,.7);
+}
+
+.rag-h2 {
+  margin: 4px 0 12px;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.rag-subtitle {
+  font-weight: 700;
+  color: var(--rag-secondary);
+  margin: 6px 0 10px;
+}
+
+.rag-results {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  margin-top: 12px;
+}
+@media (min-width: 900px) {
+  .rag-results { grid-template-columns: 1fr 1fr; }
+}
+
+.rag-card {
+  border: 1px solid var(--rag-border);
+  border-radius: 14px;
+  padding: 12px;
+  background: rgba(8,13,27,.85);
+  backdrop-filter: blur(10px);
+}
+.rag-card-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  align-items: baseline;
+  margin-bottom: 6px;
+}
+.rag-file {
+  font-weight: 800;
+  font-size: 14px;
+  color: var(--rag-text);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.rag-score { font-size: 12px; color: var(--rag-muted); }
+.rag-chunk { font-size: 12px; color: var(--rag-secondary); }
+.rag-snippet { margin: 6px 0 0; font-size: 14px; line-height: 1.45; color: var(--rag-text); white-space: pre-wrap; }
+
+.rag-empty { padding: 12px; color: var(--rag-muted); }
+
+.rag-answer {
+  margin-top: 12px;
+  border: 1px solid var(--rag-border);
+  border-radius: 14px;
+  padding: 12px;
+  background: rgba(15,23,42,.7);
+}
+.rag-answer-title { font-weight: 800; margin-bottom: 6px; }
+.rag-answer-body { white-space: pre-wrap; line-height: 1.5; color: var(--rag-text); }
+
+.rag-error {
+  margin: 10px 0;
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: rgba(253, 88, 120, 0.08);
+  color: #fecaca;
+  border: 1px solid rgba(248, 113, 113, 0.35);
+}
+
+/* Work Order controls */
+.rag-wo-row { align-items: flex-end; justify-content: space-between; }
+.rag-wo-group { display: flex; flex-direction: column; gap: 6px; flex: 1; min-width: 280px; }
+.rag-wo-inputs { display: flex; gap: 8px; align-items: center; }
+.rag-wo-sep { color: var(--rag-muted); }
+.rag-wo-hint { color: var(--rag-muted); font-size: 12px; }

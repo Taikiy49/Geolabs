@@ -1,0 +1,1172 @@
+conf
+‘ae Earth Mechanics, Inc.
+; Geotechnical & Earthquake Engineering
+April 21, 2014
+EMI Project No. 13-104
+Moffatt & Nichol
+733 Bishop Street, Suite 1740
+Honolulu, Hawaii
+Attention: Mr. Dean Kokubun, P.E.
+Project Manager
+Subject: Final Seismic Study Report for The New Kapalama Container Terminal Wharf
+and Dredging Project, Honolulu Harbor, Oahu, Hawaii
+Dear Mr. Kokubun:
+Attached please find our Final Seismic Study Report for the New Kapalama Container Terminal
+Wharf and Dredging Project. This report contains the background information, methodology and
+findings of our seismic study for the project site. It also provides recommendations for seismic
+design criteria for the project site.
+Please submit this final report to the State of Hawaii Department of Transportation (H-DOT) and
+any other agencies.
+We appreciate the opportunity to work with you on this project. Please let us know if you have
+any questions.
+Sincerely,
+EARTH MECHANICS, INC.
+Aone C Co Af —
+Amir Zand, GE 3029 (California) Eric Brown, PE 15258 (Hawaii)
+Senior Project Engineer Senior Engineer
+(Arul) K. Arulmoli, PhD, GE 2090 (California)
+Project Manager
+17800 Newhope Street, Suite B, Fountain Valley, California 92708 = Tel: (714) 751-3826 — Fax: (714) 751-3928
+FINAL SEISMIC STUDY REPORT FOR THE NEW KAPALAMA
+CONTAINER TERMINAL WHARF AND DREDGING PROJECT
+HONOLULU HARBOR, OAHU, HAWAII
+Prepared For:
+Moffatt & Nichol
+733 Bishop Street, Suite 1740
+Honolulu, Hawaii
+Prepared By:
+Earth Mechanics, Inc.
+17800 Newhope Street, Suite B
+Fountain Valley, California 92708
+EMI Project No. 13-104
+April 21, 2014
+4a, Earth Mechanics, Inc.
+‘ E Geotechnical & Earthquake Engineering
+TABLE OF CONTENTS
+Section Page
+1.0 INTRODUCTION .0........ccscscsccccsscsscsssecssesssssecsescscsecencssnsnssssssocssnsscescsssssscssanescesessnsessenseaseenense 1
+2.0 PROJECT LOCATION AND SEISMICITY ............cccccsssssssssescesssscsecsscecsesecessencesseneeeneesens 1
+3.0 SEISMIC HAZARD ANALYSI...........ccccsscsssssssssssescssscscssccsssseccsssssrssssssssscnsesencsccsensessessnees 5
+3.1 Recommended Seismic Design Criteria 0.0.0... cece essesscscescesseeseeessessesssessseseseeseesseesas 5
+3.2 Probabilistic Seismic Hazard Analysis .............:ccccsccescessecneeeseeesceeeeeseeessessesessceeeseaseeesses 6
+3.2.1 Earthquake SOurceS......... ec esseesecseeecseeseceeesereseesassssssesusssssesssessessssesessseseseeseseeneesesngs 6
+3.2.2 Frequency-Magnitude Distribution... cece ceceseeeeeseeecescsseeeeeeeseceeseseseaeeseees 10
+3.2.3 Site Classification for Ground Motion... eee eseeseeessesecesseessecneesseesesseeessneseseeeaes 13
+3.2.4 Ground Motion Prediction Equations ............::cccseceesccesseeesseeeseseesecessasessesesneneseeenees 13
+3.2.5 Probability Computation and PSHA Results 2000... ec ceecesscsseeseecseeessesseseseesseessnenee 15
+3.2.6 Deaggregation of Seismic Hazard 0.0.0... eee esceseesseessssesssssessessesessessaeessseneseaee 17
+3.3 Deterministic MCE ARS .........ccccccscesccestecesseenseceseersneeesaeesacerscecensesssresesaeessesoesaseesssaess 17
+3.4 Site-Specific MCE ARS o... ee e eee eeceeeseeeseeeseceseseceesecesessuessessesssseuesrsssescaesessesseenseenass 20
+3.5 Site-Specific Design Earthquake ARS... eee cc cssceeescsesesseceneeeensecseeseeesessesseenesees 20
+3.6 Seismic Hazard Levels per IBC 2012.00... eee eeeeeseeeeereteseeeeseeeseseeseeeessenensserseseeseeess 23
+4.0 CONCLUSIONS AND RECOMMENDATIONS ...........csssosssosscvsscvssscssscnssssecssenenersserenees 24
+5.0 REFERENCES .00.........cccssscscsscssssscecssscsscssssssssessessscssesncesscscsessssssnssscssscnscssassesessssasensesensensenes 27
+APPENDIX A. PSHA DEAGGREGATION RESULTS
+ii
+LIST OF FIGURES
+Figure Title Page
+Figure 1. Site Location Map.............sssscssscssccsssssessesreescsesssccssssnssssnensassssnsescnssensssoneneccsescessossosenes 3
+Figure 2. Locations of Large Historic Earthquakes in Hawaii (Source: USGS
+Database) .......cscsccsssssssccscsencseseccsecccssssosccssscsenenssonscsenecsescssesereserenssessssesnssnnsssnssnssssnsess 4
+Figure 3. Seismic Sources in Hawaill...........ccscscrescssssssssscssssscsssssccnssssonssssssscseesesssssessossscenesoess 8
+Figure 4. Frequency Magnitude Distribution of the NW Region, Based on 1868-2013
+Catalog with Aftershocks Removed. ..........sccscccsscssesssssssersnessenssecsssssssssscrsessessseseoneness 13
+Figure 5. Comparison of Acceleration Response for Shallow (h < 20 km) and Deep (h
+> 35 km) Hawaiian Earthquakes from Atkinson (2010) GMPE, to that of
+Western US (Boore and Atkinson, 2008). The Comparison is for a M 7.0
+Event, at Distance Rj, = 10 Kim ..........scccscescesenssnssessensscssersssssssencssessssscssssessessesenees 15
+Figure 6. Probabilistic Acceleration Response Spectra for 72-yr. (OLE), 475-yr.
+(CLE), and 2,475-yr. Return Periods............scccccccssssescssnesecssccsenscssensssnsenssesssonsooss 16
+Figure 7. Acceleration Response Spectra for Median Deterministic Earthquake (M
+7.0 at Close Distance to the Site)..............ssscssssscscsescssconsceescccereresssesscsssscencseessensees 18
+Figure 8. Probabilistic, Deterministic and Site-Specific MCE Spectra..........scscssssecssesereroee 19
+Figure 9. Acceleration Response Spectra for Site Class D per ASCE 7-05.........sssssssssseesee 21
+Figure 10.Comparison Between Two-Thirds of MCE ARS and 80% of Site D Code
+Level Spectra for Determining Design ARS per ASCE 7-05 ........scsccsscssesssssessesers 22
+Figure 11. Recommended OLE, CLE, and DE ARS Curves for the Project ..........csssssssee 25
+Figure 12.Recommended OLE, CLE, and DE Displacement Response Spectra
+Curves for the Project ............cccssscssscsssescsscscocessssccesssesssarenccssesenscensensssasesssessrensoess 26
+LIST OF TABLES
+Table Title Page
+Table 1. Seismic Source Model Overview.............s.cscsscocscsssssscsssccsscccnsscesesccenseasessnssesensssssssees 7
+Table 2. Summary of Seismic Source Parameters (Modified After Klein et al., 2001)......11
+ili
+1.0 INTRODUCTION
+Earth Mechanics, Inc. (EMI) has performed a site-specific ground motion study for the New
+Kapalama Container Terminal Wharf and Dredging Project in Honolulu Harbor, Hawaii. This
+report documents the findings of the study and provides recommendations for seismic design of
+the project.
+A detailed seismic study was carried out for the project. The main objectives of this study were
+as follows:
+« Develop a site-specific seismic design criteria based on subsurface soil conditions
+" Incorporate the next generation attenuation (NGA) ground motion prediction equations
+« Evaluate the impact of the most recent seismic activity on the seismic hazard criteria
+Based on the ASCE Seismic Standards for Piers and Wharves (ASCE 61-14) (ASCE, 2014), a
+three-level seismic design criteria was developed for the project site. The criteria are based on
+both probabilistic and deterministic seismic hazard evaluations. The analyses used the latest
+available seismic source models and NGA relationships available for Hawaii.
+The recommended seismic design criteria are presented as 5% damped acceleration response
+spectra (ARS), adjusted for anticipated site soil conditions. In addition, peak ground acceleration
+(PGA) values are estimated for each earthquake level. These values will be used in geotechnical
+evaluations such as liquefaction potential, seismic settlement, lateral earth pressure, and seismic
+slope deformations.
+In addition to using three level seismic design criteria, the proposed bulkhead structures as part
+of this project was also designed for the 2012 International Building Code (IBC 2012), as
+directed by H-DOT. IBC 2012 is based on ASCE 7-10 (ASCE, 2011).
+The seismic hazard analysis for the project is discussed in detail in the following section.
+2.0 PROJECT LOCATION AND SEISMICITY
+As part of The New Kapalama Container Terminal Project, the proposed improvements will
+redevelop the former Kapalama Military Reservation property at Honolulu Harbor into a new
+shipping container terminal to handle current and projected cargo volumes. The project site is
+located in the Honolulu Harbor, on the south end of the island of Oahu. The approximately 90-
+acre Kapalama site is bounded on the west by Sand Island Access Road, on the north by Auiki
+Street, on the east by Young Brothers’ inter-island barge terminal, and on the south by the harbor
+waters Kapalama Basin. Existing vehicular access is via Sand Island Access Road and Auiki
+Street. Site coordinates are 21.3182° N, 157.8830° W, measured from Google Earth. Figure 1
+shows the site location.
+The project site is in a region with high seismic activity. The magnitude and rate of occurrence of
+earthquakes in some parts of Hawaii Islands are comparable to the areas close to the largest
+Geotechnical & Earthquake Engineering
+faults in California. However, the mechanism of the earthquakes in Hawaii is different. The
+largest earthquakes occur due to mobile active flanks of the volcanos on the island of Hawaii.
+The south side of the island has the highest seismic/volcanic activity.
+Historical earthquake epicenter maps show widespread seismicity throughout the Hawaii Islands.
+The largest historical earthquakes in the islands were two earthquakes in 1868 with intensity-area
+magnitude M; of 7.0 and 7.9, and a 1975 earthquake with teleseismic surface wave magnitude
+Msg of 7.2. Figure 2 shows the locations of the largest earthquakes in the region. Since 1868
+approximately fifty earthquakes with moment magnitude M,, of 6 or larger have been recorded.
+Most of M,, 6 and larger earthquakes occurred on the south side of the island of Hawaii.
+Seismicity decreases considerably along the island chain toward northwest of the island of
+Hawaii.
+As part of the National Seismic Hazard Map program, the United States Geological Survey
+(USGS) has published seismic hazard estimates for various regions in the United States since
+1996 (Frankel et al., 1996). The hazard maps are based on probabilistic seismic hazard analysis
+(PSHA) methodology. Seismic hazard maps for the 48 conterminous states have been published
+in 1996, and updated in 2002 and 2008 (Petersen et al., 2008). The latest update in 2008
+incorporates NGA models in PSHA. For Hawaii, the maps were initially published in 1998
+(Klein et al., 1998), and have not been updated since. The 1998 maps provide estimated peak
+ground acceleration (PGA) and spectral accelerations at 0.2, 0.3, and 1.0 second, for 475- and
+2,475-yr return periods. These maps were developed for firm-rock site condition, equivalent to
+an average shear wave velocity in top 30 m (V,30) of 760 m/s.
+Klein et al. (2001) paper on seismic hazard in Hawaii includes detailed discussion on seismic
+source model, earthquake catalog and attenuation relationships used by USGS for developing
+1998 maps. This study was performed using an earthquake catalog spanning from 1868 to 1997,
+and mainly relied on attenuation equations from 1997 USGS national seismic hazard study.
+The current study is based on the general methodology and the source model described by Klein
+et al. (2001), however it incorporates a more recent earthquake catalog and the latest ground
+motion prediction equations (GMPE) in the analyses.
+PROJECT
+Heel | OCATION
+Koolauloa .
+7 ialua Tay
+. Waialua " Beige Rg
+North Shore
+Wahiaw’
+tay
+Waipio
+Acres
+Kunia Camp
+Mililani ey
+- . GAhu
+\ Keaiwa Heiau
+. ; State Park roy et ee
+i " me i @y “" “Kaneohe é .
+i: - ; itil - A \: wef
+{ oo 4
+a : Sc, Moanalua |. Maunawili ee
+Makakito’
+A
+(
+a a [e- KAPALAMA \"
+CG CONTAINER
+INS TERMINAL
+woo Katako'outana
+a sand Makauca
+Q island
+Site Location Map
+Figure 1
+Date: 11/25/2013
+elozsz/tL = 838 =| pore, “ON Yeforg | joolo1g Bulbpeig pue peu jeulWe! JouleJuOD ewejedey MeN eUL
+Zz ainbi-j
+Fuysoussuq eXEnbyyey wy TeayUyIa}00
+(aseqeyeq SOSN :e01NosS) HeMeH ul
+seyenbypyey oWO}siH abe] Jo suoe907
+Fy O0@]D "VON ‘AABN sa WYON ONS 218G
+SOO)
+VYON JSN BIqUNjOD-O3ad) Bed
+9
+e ®@
+SpUT}S| UBLIEME}
+SMBIO,OYRY
+ong - 005
+INELA 005 - o0€
+@ Bue] 00E - OST
+ast-o2 °-
+0f-£E @
+I BHOIO aan
+LexOojO|\ (wy) indea
+z
+E
+3
+g
+opnyubey
+Ne ULIN
+3.0 SEISMIC HAZARD ANALYSIS
+3.1 Recommended Seismic Design Criteria
+The recommended design ground motion criteria for this project are consistent with the three
+level seismic criteria specified in ASCE Standards for Seismic Design of Piers and Wharves
+(ASCE, 2014), which is presently under preparation. The three earthquake levels are: Operating
+Level Earthquake (OLE), Contingency Level Earthquake (CLE), and Design Earthquake (DE).
+OLE and CLE are based on a probabilistic criteria; OLE has a 50% probability of exceedance in
+50 years (72-yr. return period), and CLE has a 10% probability of exceedance in 50 years (475-
+yr. return period). DE is consistent with ASCE 7-05 (ASCE, 2006), which is adopted in IBC
+2009, the code adopted by the City and County of Honolulu.
+DE response spectra for Site Class A to E conditions can be based on either the mapped
+acceleration parameters or site-specific hazard evaluations. Mapped acceleration parameters are
+determined from the 0.2 sec. and 1.0 sec. spectral accelerations provided in maps for the entire
+U.S. in Chapter 22 of ASCE 7-05 (ASCE, 2006). However, ARS for Site Class F must be based
+on site-specific evaluations, per Section 11.4.7 of ASCE 7-05 (ASCE, 2006). For this study, a
+site-specific procedure in accordance with Chapter 21 of the ASCE 7-05 (ASCE, 2006) is used.
+The procedure for developing DE ARS is as follows:
+The site-specific DE ARS is defined as two-thirds of the Maximum Considered Earthquake
+(MCE) spectral response acceleration, but not less than 80% of the acceleration response
+determined for the same site class in accordance with Section 11.4.5 of the ASCE 7-05 (ASCE,
+2006). The MCE response acceleration at each period is the lesser of probabilistic and
+deterministic MCE response accelerations. The probabilistic MCE response acceleration
+corresponds to a 5 percent damped acceleration response spectrum having a 2 percent probability
+of exceedance within a 50-yr. period (2,475-yr. return period). The deterministic MCE response
+acceleration at each period is 150% of the largest median 5 percent damped spectral response
+acceleration calculated at that period for characteristic earthquake on all known active faults
+within the region, but not less than the deterministic lower limit on the MCE ARS determined in
+accordance with Figure 21.2-1 of the ASCE 7-05 (ASCE, 2006).
+The recommendations in this study are based on a site-specific PSHA for the site. Seismic hazard
+is evaluated as a 5% damped ARS at 72-yr., 475-yr., and 2,475-yr. return periods, adjusted for
+site soil conditions. The 72-yr. and 475-yr. ARS are recommended for OLE and CLE levels,
+respectively. The 2,475-yr. ARS is used as probabilistic MCE ARS, as defined in Chapter 21 of
+the ASCE 7-05 (ASCE, 2006). The DE spectra was determined using the combination of
+deterministic MCE ARS and ASCE lower limit ARS.
+3.2. Probabilistic Seismic Hazard Analysis
+The PSHA follows the standard approach first developed by Cornell (1968). This approach has
+been expanded to more fully treat both the randomness (aleatory variability) and the scientific
+uncertainty (epistemic uncertainty). The methodology used in this study is similar to the
+procedure previously used by USGS (Klein et al., 1998 and 2001), with updated ground motion
+prediction equations and earthquake catalog. .
+The PSHA was performed using the computer program HAZ43, developed by Dr. Norm
+Abrahamson (2013). The input parameters to PSHA, including earthquake sources, frequency-
+magnitude distribution, site soil conditions, and GMPEs are discussed in this section.
+3.2.1 Earthquake Sources
+Earthquake sources in Hawaii are discussed in detail in Klein et al (1998 and 2001). Earthquakes
+on Hawaii Islands are mainly generated by the following two mechanisms:
+" Mobile flanks of the active volcanos Kilauea, Mauna Loa, and Hualalai: These volcanos
+grow due to lava flow from caldera and rift zones and expand toward the sea. Mobile
+flanks adjacent to active rift zones store the energy in form of compressive stress and
+release it in seaward slips. These sources generate the largest earthquakes on Hawaii
+Islands.
+« Flexure of the lithosphere and volcanic pile under volcanic load: the entire island chain
+produces earthquakes in this manner. Seismicity decreases with aging of volcano and
+decrease in volcanic activity.
+Using the earthquake catalog and aftershock data in combination with geometry of the flanks,
+Klein et al. (1998 and 2001) developed a model for tectonic source zones on the islands. In this
+model seismic sources are modeled as area sources with uniform or smoothed seismicity. Several
+types of area sources have been used in this model, as shown in Table 1. The geographical
+location of these area sources are shown on Figure 3.
+Table 1. Seismic Source Model Overview
+Depth of ‘ s gsth gs : (1)
+Source Type Earthquakes Frequency-Magnitude Distribution Region Codes
+Active Volcano Flank <20km Linear or Bi-Linear Exponential with SFL, KAO, HLE, KON,
+Zones Uniform a- and b-Values HUA
+Kilauea Caldera and Rift Linear or Bi-Linear Exponential with
+Zones (Shallow <20 km P CAL, SWR, ERZ
+vee Uniform a- and b-Values
+Seismicity)
+<20km
+> 20 km
+Generally < 20 | Linear Exponential with Determined
+km b-Value and Smoothed a-Value
+Kilauea Caldera and Rift
+Zones (Smoothed
+Shallow Seismicity)
+Linear or Bi-Linear Exponential with
+Determined b-Value and Smoothed
+a-Value”
+sl, s2, s3, s4, s5, 86, s7
+Kilauea Caldera and Rift
+Zones (Smoothed Deep
+Seismicity)
+Linear or Bi-Linear Exponential with
+Determined b-Value and Smoothed
+a-Value”
+dl, d2, d3, d4, d5, d6
+Northwest Source Zone
+for Hawaii State
+(Smoothed Seismicity) ©
+NW (smoothed seismicity)
+Northwest Source Zone
+for Hawaii State
+(Ramped Seismicity) ©
+Generally < 20
+km
+Linear Exponential with Determined
+b-Value and Ramped a-Value NW (ramped seismicity)
+See Figures 3-a to 3-d for geographic location of regions.
+(2) Klein et al. (2001) used smoothed seismicity for these regions. In current study, however, a uniform a-
+values is used due to distance of these sources from the project site.
+(3) The smoothed and ramped seismicity models for NW region are weighted equally (50% each) in the
+analyses.
+(4) In current study ramped seismicity is implemented through 10 area sources with identical b-values and
+decreasing a-values from southeast to northwest.
+The New
+-NAB.752
+apalama Container Terminal Wharf
+and Dredging Project
+Seismic Sources in Hawaii
+Figure 3
+Project No. 13-104 Date: = 11/25/2013
+Seismic Sources in Hawaii (continued)
+Figure 3
+3.2.2 Frequency-Magnitude Distribution
+In order to perform a PSHA, the frequency-magnitude distribution of earthquakes in each
+seismic source must be determined. Unlike shallow crustal earthquakes that follow a
+characteristic distribution, the frequency-magnitude of earthquakes on Hawaii Island area
+sources follows the Gutenberg-Richter distribution:
+log(N) = a-—bM
+where N is the number of earthquakes of magnitude greater than or equal to M. a- and b-values
+for each region are estimated based on the number of previous earthquakes in that region. A
+maximum likelihood or least square regression method is used to determine a- and b-values.
+The frequency of larger earthquakes in some flank regions is larger than that predicted by a
+linear Gutenberg-Richter magnitude distribution. In these regions, a bi-linear or kinked
+magnitude-frequency distribution have been used, where each magnitude range has a different
+set of a- and b-values. More details on this topic can be found in Klein et al. (2001).
+For current study, the source parameters are generally identical to the values used by Klein et al.
+(2001). Source parameters used in this study are shown in Table 2. Since the project site is
+located within the NW region and the second closest source is more than 150 km away, it is
+expected that the hazard is dominated by shallow earthquakes in NW region, and other sources
+will have only minimal impact at the site. Therefore, for this analysis, source parameters for NW
+region has been revised using the latest earthquake data, while for other regions source
+parameters are identical to Klein et al. (2001) model with some simplifications. The revisions to
+the source model of Klein et al. are as follows:
+= a- and b-values for NW region are revised using an extended earthquake catalog. The 2001
+model relies on 1868-1997 events. In this study 1868-2013 events were included.
+= Ramped seismicity is implemented by dividing NW to 10 area sources with identical b-
+values and decreasing a-values from southeast to northwest. These sources are identified
+as R1 (southeast end) to R10 (northwest end) in the analyses.
+" For other areas with smoothed seismicity in 2001 model (s1 to s7, and dl to d6), uniform
+seismicity is used. This is due to distance of these sources from the site, which makes
+consideration for variation of seismicity in these regions unnecessary. The a-values for
+the whole region as reported by Klein et al. have been used in the analyses.
+10
+Geotechnical & Earthquake Engineering
+Table 2. Summary of Seismic Source Parameters (Modified After Klein et al., 2001)
+Volcanic and Flank Zones with Uniform a- and b-Values“
+EE Tintin sane] Ts [at
+Code (assumed) | Years used (observed) Notes
+pcak | 2 | 30 | 65 | ig70-1997 | 4.a307 [113 | 47 |
+| swe [| ~2 | 34 | 65 | 1970-1997 | 6.0750 [ise] 47 |
+PeRZ | ~2 | 22 | 65 [ 1970-1997 | a4eae [148] 390 |
+[sre | 20 | 20 | 49 [19591997 | 44804 |ose | 72 |
+5.0
+| Kao | 23 | 23 | 47 | 1959-1997 | 4.sor2 [iio] 67 |
+| ouE [| 22 | 30 | 5a | igs9-1997 | 3.3813 [oss] 56 |
+| Kon [| 25 | 25 | 42 | igs9-1997 | 4.1039 [a7 | 5a |
+| Kon [| ~4 | 43 | 75 | 1932-1997 | 0343 [os] 69 |
+| HUA [| ~4 | 50 | 70 | 1904-1997 | 26318 [0.73 | 65 |
+Regions with Determined b-Values, Smoothed a-Values”
+Region Minax Minax
+Code Main | (assumed) | Years used a® (observed) Notes
+2.5 0.86
+121
+0.81
+ee rar Par [70 | 970-1997 | 3.7490 [123 | ar |
+1.36
+0389
+1.07
+| de | 25 | 25 | 70 [1959-1997 | 3.2977 | 0.91
+(ramped)
+11
+Geotechnical & Earthquake Engineering
+ocean
+Table 2. Summary of Seismic Source Parameters (Modified After Klein et al., 2001)
+(Continued)
+. The Region code refers to the geographic regions shown on Figure 3. Meomp is the magnitude above which the
+sample of earthquakes appears complete from the linearity of the magnitude distribution. Min is the minimum
+magnitude used to fit the linear magnitude distribution. Mma, (assumed) is the maximum modeled earthquake
+allowed in the hazard calculation. The minimum modeled earthquake for the hazard calculation is 5.0 in all
+regions. Mma (observed) is the largest earthquake observed in the zone during the time period. The depth range
+for earthquakes in each of the flank, volcanic, and s zones is 0-20 km. The depth range for the d zones is 20-60
+km.
+2. b-value determined by KAO + HLE + SFL region as a whole. a-value found from the rate of M > 5 in each
+zone: log(N7/T) = a - 0.5713 x My. SFL: Ne= 6, T = 37.75, Mp = 5.2; KAO: Ne = 10, T = 94.5, Mr = 5.0; HLE:
+Nr=5, T = 130.5, Mp = 5.5.
+3. Least-squares fit because of small number of events.
+4. The a-values listed are for the whole region. Due to distance of these models from the site in current study, this
+uniform a-value is used in analyses rather than the smoothed a-value used in Klein et al. (2001).
+5. This distribution is linear but might be incompletely sampled.
+6. NW is the box enclosing the islands of the state of Hawaii northwest of Hawaii Island. This region uses a
+ramped a-value with 50% weight.
+7. This region uses smoothed a-value with 50% weight. The magnitude-frequency distribution parameters for NW
+(smoothed seismicity) are re-evaluated for this study and are different than values used by Klein et al. (2001).
+For NW region, both smoothed a-values and ramped a-values have been used. Each model has
+been given a weight of 50% in analyses. In order to evaluate a- and b-values for NW region,
+earthquake catalog used in 2001 has been augmented with events between 1997 and 2013 from
+USGS earthquake database. Aftershocks have been removed from the catalog using USGS
+cluster2000 (USGS, 2013) program. This program identifies earthquake clusters (aftershocks) in
+an earthquake catalog and replaces them with an equivalent event. Magnitude recurrence
+distribution parameters have been determined using maximum likelihood method for M > 4.0
+events between 1868 and 2013. Figure 4 shows the frequency-magnitude distribution of 1868-
+2013 events for NW zone. Based on this distribution a b-value of 0.62 and average a-value of
+2.3533.
+Based on the calculated b-value, spatially smoothed a-values have been calculated for NW
+region in a 0.2 degree grid using USGS program agridMLsm. The smoothing was performed at
+half-width of 50 km.
+For NW source with ramped seismicity, the model in Klein et al. (2001) was used. This model
+divides the NW region to 30 km bins in southeast-northwest direction. The activity in each bin is
+calculated by counting the number of M >= 4.0 events in that bin. According to Klein et al.
+(2001) the number of M >= 4.0 earthquakes in each bin can be estimated from the following
+equation:
+a= 1.26-—0.0044 x D
+Where D is the distance measured from southeast to northwest along the NW box and a is the log
+of the number of M >= 4.0 earthquakes per 3.0 km bin.
+12
+Number of Mag >= M Events/Yr.
+Magnitede, M
+Figure 4. Frequency Magnitude Distribution of the NW Region, Based on 1868-2013
+Catalog with Aftershocks Removed
+3.2.3 Site Classification for Ground Motion
+Site soils are classified as surface fill, lagoonal deposits,and coralline deposits. Liquefaction
+hazard assessment at the site indicates that shallower granular soils at the site have potential for
+liquefaction under CLE and DE conditions. However, ground improvement will be performed at
+the container wharf site to mitigate liquefaction potential. Therefore, the site has been classified
+for improved ground conditions, using SPT blowcounts. The average measured N-value in the
+top 100-ft is about 30.
+Therefore, for improved ground conditions, the site is classified as Type D with average shear
+wave velocities of 270 m/sec (~900 ft/sec) over a depth of 30 m (#100 ft). This shear wave
+velocity value was used in the PSHA.
+3.2.4 Ground Motion Prediction Equations
+The 1997 and 2001 PSHA for Hawaii were performed using a number of GMPEs which were
+developed for other regions. At the time there was no GMPE specific to Hawaii region. The only
+GMPE which included Hawaii data in empirical regression was by Munson and Thurber (1997).
+Klein et al. (2001) used the following GMPEs in their analyses:
+13
+= Shallow events between M 5.0 and 7.0: GMPEs by Boore et al. (1997), Sadigh et al.
+(1997), Campbell (1997), and Munson and Thurber (1997), each weighted equally were
+used to estimate PGA. For spectral accelerations at 0.2-sec., they used Boore et al.
+(1997), Sadigh et al. (1997), and Munson and Thurber (1997) PGA relation multiplied by
+2.2 to convert PGA to 0.2-sec. spectral acceleration (SA), again weighted equally. For
+1.0-sec. SA, they used Boore et al. (1997) and Sadigh et al. (1997).
+= Shallow events from M 7.0 to 8.2: For PGA and 0.2-sec. SA, the used GMPEs by Sadigh
+et al. (1997) and Munson and Thurber (1997), each weighted equally. For 1.0-sec. SA
+they used Sadigh et al. (1997) exclusively. Other GMPEs were not applicable to these
+events for various reasons, and Munson and Thurber (1997) had to be modified.
+" Deep earthquakes: The GMPE by Youngs et al. (1997) for intermediate depth earthquakes
+in subduction zones was used.
+Since the USGS study, the PEER/Lifelines Next Generation Attenuation (NGA) project has
+resulted in four new GMPEs by Abrahamson and Silva (2008), Chiou and Youngs (2008),
+Campbell and Bozorgnia (2008), and Boore and Atkinson (2008). These new models are based
+on a greatly expanded and improved empirical database. In particular, there is a great increase in
+the number of recordings from large magnitude earthquakes resulting from the 1999 Kocaeli
+(M7.5), 1999 Chi-Chi (M7.6), 1999 Duzce (M7.1), 2000 Hector Mine (M7.1), and 2002 Denali
+(M7.9) events. Nowadays these NGA equations are widely used for shallow crustal earthquakes.
+Atkinson (2010) evaluated the applicability of Boore and Atkinson (2008) equation to Hawaii
+earthquakes. This study appears to be the most recent research on the subject of GMPEs for
+Hawaii region. Atkinson developed a modified GMPE based on Boore and Atkinson (2008) for
+both shallow and deep Hawaii earthquakes, and concluded that NGA equations for shallow
+crustal earthquakes are applicable to shallow earthquakes, but deep events in Hawaii generally
+have higher SA amplitudes than what predicted by NGA equations. Figure 5 compares the ARS
+for shallow (h < 20 km) and deep (h > 35 km) events from Atkinson 2010 Hawaii GMPE to that
+of NGA western US (Boore and Atkinson, 2008). The comparison is for a M 7.0 event, at
+Joyner-Boore distance (Rj») of 10 km.
+Based on this research, the following GMPEs have been used in the current project:
+= Shallow sources (h < 20 km): The Hawaii GMPE by Atkinson (2010), as well as NGA
+GMPEs by Abrahamson and Silva (2008), Chiou and Youngs (2008), and Campbell and
+Bozorgnia (2008) are used. The Atkinson (2010) GMPE has a weight of 40%, and the
+rest have a weight of 20% each.
+= Deep sources (h > 20 km): The GMPE by Atkinson (2010) for deep earthquakes in Hawaii
+is used exclusively.
+14
+Response Spectra for M7.0 at Rjb=10 km
+1000
+200
+100
+PSA (cm/s‘2)
+e-—e Hawaii-deep
+o-—-© Hawaii-shallow
+4 A WNA (BA08)
+04 1 10 100
+Frequency (Hz)
+Figure 5. Comparison of Acceleration Response for Shallow (h < 20 km) and Deep (h > 35
+km) Hawaiian Earthquakes from Atkinson (2010) GMPE, to that of Western US (Boore
+and Atkinson, 2008). The Comparison is for a M 7.0 Event, at Distance R;, = 10 km
+3.2.5 Probability Computation and PSHA Results
+The OLE, CLE, and probabilistic MCE events were identified as having a 50%, 10%, and 2%
+probability of exceedance in 50 years (72-, 475-, and 2,475-yr. return period), respectively.
+The seismic hazard is computed at 10 spectral periods from 0.03 to 5 seconds. The computed
+spectral amplitudes for 5% damping and for return periods of 72-, 475-, and 2,475-yr. for the
+improved site condition are shown on Figure 6.
+e ‘ 15
+Geotechnical & Earthquake Engineering
+1.0
+——72-yr. (OLE) Spectral Response Acceleration
+~~. »475-yr, (CLE) Spectral Response Acceleration
+=== 2,475-yr. (MCE) Spectral Response Acceleration
+5% Damping
+V 39 = 270 m/s
+Spectral Acceleration (g)
+72-yr. (OLE) Spectral
+Response Acceleration
+Period (sec.)
+475-yr. (CLE) Spectral
+Response Acceleration
+2,475-yr. (MCE) Spectral
+Response Acceleration
+a a
+a a a
+a es a
+es rr
+a ee a a
+a rr a
+Earth Mechanics, Inc.
+Geotechnical and Earthquake Engineering
+Probabilistic Acceleration Response Spectra
+for 72-yr. (OLE), 475-yr. (CLE), ,475-yr.
+The New Kapalama Container Terminal Wharf and or 72-yr. ( ), A7S-yr. ( ), and 2,475-yr
+Dredging Project
+EMI Project No: 13-104 Date: 11/25/2013
+Return Periods
+Figure 6
+3.2.6 Deaggregation of Seismic Hazard
+Probabilistic seismic hazard deaggregation results are provided in Appendix A. For PGA, there
+is a wide range of events that contribute to the hazard. For the 72-yr return period, the dominant
+sources are M 5.0—7.0 earthquakes at distances of 10 to 500 km. For the 475-yr return period, the
+hazard is dominated by M 5.0~—7.0 earthquakes at distances of 10 to 100 km. For the 2,475-yr
+return period, the hazard is dominated by M 5.0—7.0 earthquakes at distances of 5 to 50 km.
+Deaggregation results for T = 0.5 and T = 2.0 sec. spectral accelerations for the 72-, 475-, and
+2,475-yr. return periods are provided in Appendix A. For longer periods (T > 0.5 sec.) the
+seismic hazard is mainly dominated by large magnitude flank zones of the island of Hawaii.
+3.3 Deterministic MCE ARS
+The deterministic MCE response acceleration at each period is 150% of the largest median 5
+percent damped spectral response acceleration calculated at that period for characteristic
+earthquake on all known active faults within the region, but not less than the deterministic lower
+limit on the MCE ARS determined in accordance with Figure 21.2-1 of the ASCE 7-05 (ASCE,
+2006).
+Using the model developed in Section 3.2.1, the controlling source for the deterministic MCE is
+the NW region. The characteristic earthquake in this region is a shallow M 7.0 event at close
+distance to the site. The acceleration response spectra for this event have been estimated using
+the spectra option of HAZ43 computer program. The analyses have been carried out using a V,30
+of 270 m/s, corresponding to the improved ground site condition. The four GMPEs from
+probabilistic procedure have been used for deterministic analyses [Atkinson (2010) for Hawaii
+weighted 40%, NGA GMPEs by Abrahamson and Silva (2008), Chiou and Youngs (2008), and
+Campbell and Bozorgnia (2008), weighted 20% each]. The computed spectral amplitudes for 5%
+damping are shown on Figure 7.
+The deterministic MCE is 150% of the ARS shown in Figure 7, but not less than the
+deterministic lower limit determined using the following parameters: short period, S, = 1.5, at 1
+sec period, S, = 0.6, F, = 1.0, and F, = 1.5, where F, and Fy are site coefficients. F, and F, are
+determined from Tables 11.4-1 and 11.4-2 of ASCE 7-05 for Site Class D. The ASCE 7-05
+deterministic lower limit and deterministic MCE ARS are shown on Figure 8.
+17
+5% Damping
+V 30 = 270 m/s
+Spectral Acceleration (g)
+EMI Project No: 13-104
+Earth Mechanics, Inc.
+f Geotechnical and Earthquake Engineering
+The New Kapalama Container Terminal Wharf and
+Dredging Project
+Period (sec.)
+Acceleration Response
+Spectra for Median
+Deterministic Earthquake
+Period (sec)
+5.000 0. 138
+Date: 11/25/2013
+Deterministic Earthquake
+(M 7.0 at Close Distance to the Site)
+Acceleration Response Spectra for Median
+Figure 7
+Probabisiltic MCE Spectrum (2,475 Year ARP)
+= Deterministic MCE Spectrum (150% of Characteristic EQ)
+=== ASCE 7-05 Deterministic Lower Limit on MCE Response Spectrum
+—= = Deterministic MCE ARS w/ ASCE 7-05 Lower Limit
+= «= Site-Specific MCE Spectrum (Lesser of Probabilistic and Deterministic MCE)
+Z ave 5% Damping
+Spectral Acceleration (g)
+2.0
+Period (sec.)
+Site-Specific MCE Spectrum
+(Lesser of Probabilistic and
+Deterministic MCE)
+Period (sec) |__ SA(g)__|| Period(sec) | __ SA(a)__|
+0.636 0.020 1.500 0.030 0.349
+Probabisiltic MCE Spectrum || Deterministic MCE Spectrum Deterministic MCE ARS w/
+(2,475 Year ARP) (150% of Characteristic EQ) ASCE 7-05 Lower Limit
+Period (ser)
+0.020
+0.030
+0.050
+0.075
+0.100
+0.160
+0.200
+0.260
+0.300
+0.400
+0.500
+0.671 0.030 | 0.050 | 0.413
+0.739
+0.867 0.075
+1.009 0.100
+1.226 0.150
+1.347 0.200
+1.461 0.250
+1.513 0.300
+1.563 0.400 ee
+1.528 0.500
+ASCE 7-05 Deterministic 0.750 1.343 0.600
+Lower Limit on MCE 1.000 1.094 0.750
+Response Spectrum 1.500 0.72 1.000
+0.678 1.500
+0.371 2.000
+0.265 3.000
+0.207 4.000
+| 5.000 a
+Probabilistic, Deterministic and
+Site-Specific MCE Spectra
+Figure 8
+EMI Project No: 13-104 Date: 11/25/2013
+3.4 Site-Specific MCE ARS
+The site-specific MCE spectrum for the site is shown in Figure 8. It is the lesser of probabilistic
+MCE ARS (Figure 6) and deterministic MCE ARS as shown in Figure 8.
+3.5 Site-Specific Design Earthquake ARS
+The design ARS is defined as the two-thirds of the site-specific MCE ARS, but not less than
+80% of the acceleration response determined for the same site class in accordance with Section
+11.4.5 of the ASCE 7-05 (ASCE, 2006). All ARS curves are developed for 5 percent damping.
+The lower limit for DE acceleration response has been calculated according to the Section 11.4.5
+of ASCE 7-05 using the following parameters:
+= S,= 0.612 g (from ASEC 7-05 Figure 22-10)
+= §; =0.177 g (from ASEC 7-05 Figure 22-10)
+« F,= 1.310 (interpolated for Site Class D and S, = 0.612 g from ASEC 7-05 Table 11-4.1)
+« F,=2.092 (interpolated for Site Class D and S; = 0.177 g from ASEC 7-05 Table 11-4.2)
+The ARS for Site Class D per ASCE 7-05 is shown on Figure 9. The recommended site-specific
+DE ARS for Site Class D (larger of the two-thirds of the site-specific MCE from Figure 8 and
+80% of the ASCE 7-05 ARS for Site Class D from Figure 9) is shown on Figure 10.
+20
+lan
+1.0
+on
+_|5% Damping
+Site Class D
+S, = 0.612 g
+S,=0.177g
+F, = 1.310
+F, = 2.092
+Sms = 0.802 g
+Sma = 9.3708
+Spgs = 0.535 g
+Sp; = 0.247 g
+Spectral Acceleration (g)
+0.0
+Geotechnical and Earthquake Engineering
+The New Kapalama Container Terminal Wharf and
+Period (sec.)
+Acceleration Response
+Spectra for Site Class D per
+ASCE 7-05
+[Pei see) [Sag] |
+Dredging Project
+EMI Project No: 13-104
+Date: 11/25/2013
+Acceleration Response Spectra for
+Site Class D per ASCE 7-05
+Figure 9
+ee
+oy
+Hi
+poe
+0.5
+i i
+vss 80% of Site D Code Level Earthquake (ASCE7 Lower Limit)
+= - Design Response Spectrum
+Two-Thirds of MCE Spectral Response Acceleration
+Spectral Acceleration (g)
+0.0
+0.0
+Two-Thirds of MCE Spectral
+Response Acceleration
+| Period (sec) | SA(g)_|
+| 5.000 | 0.024
+EMI Project No: 13-104
+1.0
+Earth Mechanics, Inc.
+Geotechnical and Earthquake Engineering
+The New Kapalama Container Terminal Wharf and
+Dredging Project
+H j ]
+5% Damping
+— i ee | sominee
+2.0 3.0
+Period (sec.)
+80% of Site D Code Level
+Earthquake (ASCE7 Lower
+Limit)
+| Period (sec) | SA(g)__|
+Date: 11/25/2013
+Design Response Spectrum
+| Period (sec) | SA(g)
+Comparison Between Two-Thirds of MCE ARS and
+80% of Site D Code Level Spectra for Determining
+Design ARS
+Figure 10
+3.6 Seismic Hazard Levels per IBC 2012
+In addition to using IBC 2009, the proposed bulkhead structures as part of this project were also
+designed for IBC 2012, as directed by H-DOT. IBC 2012 is based on ASCE 7-10 (ASCE, 2011).
+Per Section 11.8.3.1 of ASCE 7-10 (ASCE, 2011), if the site is improved to eliminate
+liquefaction under MCE level earthquake, DE ground motion can be used in the determination of
+dynamic seismic lateral earth pressure on bulkhead structures. However, if liquefaction is not
+mitigated, the effects of liquefaction under MCE level earthquake must be accommodated in the
+design.
+Per Section 11.8.3.2 of ASCE 7-10 (ASCE, 2011), PGA values should be determined based on
+either (1) a site-specific study or (2) the PGA adjusted for site class effects using site coefficient
+provided in Table 11.8-1 in ASCE 7-10 (ASCE, 2011). Using the adequate site coefficient, the
+PGA for improved ground conditions for MCE level is recommended to be 0.359g.
+Corresponding equivalent earthquake magnitude is 7.5.
+As defined, DE is two-third of MCE and the corresponding PGA for DE level based on ASCE 7-
+10 (ASCE, 2011) is 0.239g. However, since the PGA for DE level based on ASCE 61-14
+(ASCE, 2014) is 0.255g, we recommend using this value, instead of 0.239g, for the project as a
+conservative measure.
+: 23
+4a}, Larth Mechanics, Inc.
+: Geotechnical & Earthquake Engineering
+4.0 CONCLUSIONS AND RECOMMENDATIONS
+1.
+The recommended three level design ground motion criteria for this project is based on
+the ASCE Standards for Seismic Design of Piers and Wharves (ASCE, 2014).
+The three earthquake levels are: Operating Level Earthquake (OLE) with 50% probability
+of exceedance in 50 years (72-yr. return period), Contingency Level Earthquake (CLE)
+with 10% probability of exceedance in 50 years (475-yr. return period), and Design
+Earthquake (DE), in accordance with ASCE 7-05 (ASCE, 2006) and IBC 2009.
+The recommended seismic design criteria for container wharf design in this report are
+based on improved ground soil conditions. Site classification for improved ground
+conditions is Type D with a V,39 of 270 m/s.
+The recommended OLE, CLE, and DE acceleration response spectra corresponding to 5
+percent damping for improved ground conditions and corresponding spectral acceleration
+ordinates are provided in Figure 11.
+The recommended OLE, CLE, and DE displacement response spectra corresponding to 5
+percent damping for improved ground conditions and corresponding spectral
+displacement ordinates are provided in Figure 12.
+. The recommended PGA for improved ground conditions for OLE, CLE, and DE are
+0.065g, 0.182g, and 0.255g, respectively. Corresponding equivalent earthquake
+magnitudes are 6.5, 7.0, and 7.0, respectively.
+In addition to using IBC 2009, the proposed bulkhead structures as part of this project
+were also designed for IBC 2012, as directed by H-DOT. IBC 2012 is based on ASCE 7-
+10 (ASCE, 2011).
+The recommended PGA for improved ground conditions for MCE level is 0.359g.
+Corresponding equivalent earthquake magnitude 1s 7.5.
+As a conservative measure, the PGA for DE based on ASCE 61-14 (ASCE, 2014) is
+recommended for the project for geotechnical evaluations, instead of PGA for DE based
+on ASCE 7-10 (ASCE, 2011).
+age, Earth Mechanics, Inc. 24
+ee Geotechnical & Earthquake Engineering
+== OLE (72-yr. Return Period) ARS
+oss CLE (475-yr. Return Period) ARS
+=——=DE ARS
+5% Damping |...
+Spectral Acceleration (g)
+| 0.0 1.0 4.0 5.0
+Period (sec.)
+OLE (72-yr. Return Period) CLE (475-yr. Return Period)
+a ARS ARS
+Recommended OLE, CLE, and DE ARS
+Curves for the Project
+% si a Geotechnical and Earthquake Engincering
+_, |The New Kapalama Container Terminal Wharf and
+Dredging Project
+EMI Project No: 13-104 Date: 11/25/2013
+Figure 11
+Qo
+Lod
+10.0
+—— OLE (72-yr. Return Period) Relative rn a 5% Damping
+Displacement Response Spectrum t
+-see*CLE (475-yr. Return Period) Relative aa pore aa
+Displacement Response Spectrum !
+0
+ro)
+=——DE Relative Displacement Response
+Spectrum
+i
+fos)
+oO
+Relative Displacement (in.)
+N
+ro)
+0.0 1.0 2.0 3.0 4.0 5.0
+Period (sec.)
+OLE (72-yr. Return Period) CLE (475-yr. Return Period)
+Relative Displacement
+Response Spectrum
+DE Relative Displacement
+Relative Displacement
+Response Spectrum
+Response Spectrum
+Fo0s0 | 0.00 | F003 | 000 |
+es
+es
+es
+es
+of
+es
+es
+Recommended OLE, CLE, and DE Relative
+Displacement Response Spectra Curves
+The New Kapalama Container Terminal Wharf and
+Dredging Project
+EMI Project No: 13-104 Date: 11/25/2013
+Figure 12
+a)
+5.0 REFERENCES
+Abrahamson, N. A., Haz43 Seismic Hazard Program, Version July 2013.
+Abrahamson, N. A. and Silva, W. J. “Summary of the Abrahamson and Silva NGA Ground-
+Motion,” Earthquake Spectra, Volume 24, No. 1, February 2008.
+American Society of Civil Engineers (ASCE), “Seismic Design of Pile-Supported Piers and
+Wharves, Under Preparation, 2014.
+ASCE, 2011, ASCE 7-10, Standard, Minimum Design Loads for Buildings and Other Structures.
+ASCE 7-05, “Minimum Design Loads for Building and Other Structures,” ASCE Standard,
+2006.
+Atkinson, G. M., “Ground-Motion Prediction Equations for Hawaii from a Referenced Empirical
+Approach,” Bulletin of the Seismological Society of America, Vol. 100, No. 2, pp. 751-761,
+April 2010.
+Boore, D. M. and Atkinson, G. M., “Ground-Motion Prediction Equations for the Average
+Horizontal Component of PGA, PGV, and 5%-Damped PSA at Spectral Periods between 0.01 s
+and 10.0 s,” Earthquake Spectra, Volume 24, No. 1, February 2008.
+Boore, D.M., Joyner, W.B., and Fumal, T.E, “Equations for Estimating Horizontal Response
+Spectra and Peak Acceleration from Western North American Earthquakes: a Summary a Recent
+work,” Seismological Research Letters, Vol. 68, No. 1, January/February 1997.
+Campbell, K. W., “Empirical Near-Source Attenuation Relationships for Horizontal and Vertical
+Components of Peak ground Acceleration, Peak Ground Velocity, and Pseudo-Absolute
+Acceleration Response Spectra,” Seismological Research Letters, Vol. 68, No. 1, pp.154-179,
+1997.
+Campbell, K. W. and Bozorgnia, Y., “NGA Ground Motion Model for the Geometric Mean
+Horizontal Component of PGA, PGV, and PGD and 5% Damped Linear Elastic Response
+Spectra for Periods ranging from 0.01 s to 10.0 s,” Earthquake Spectra, Volume 24, No. 1,
+February 2008.
+Chiou, B. S-J. and Youngs, R. R., “An NGA Model for the Average Horizontal Component of
+Peak Ground Motion and Response Spectra,” Earthquake Spectra, Volume 24, No. 1, February
+2008.
+Cornell, C.A., “Engineering seismic risk analysis,” Seismological Society of America Bulletin,
+v. 58, p. 1583-1606, 1968.
+27
+‘ia, Earth Mechanics, Inc.
+Geotechnical & Earthquake Engineering
+Frankel, A., Mueller, C., Barnhard, T., Perkins, D., Leyendecker, E. V., Dickman, N., Hanson,
+S., and Hopper, M., “National Seismic Hazard Maps: Documentation,” USGS Open File Report
+96-532, June 1996.
+International Code Council, International Building Code (IBC), 2012.
+International Code Council, International Building Code (IBC), 2009.
+Klein, F., Frankel, A., Mueller, C., Wesson, R., and Okubo, P., “Seismic Hazard in Hawaii, High
+Rate of Large Earthquakes and Probabilistic Ground-Motion Maps,” Bulletin of the
+Seismological Society of America, 91, 3, pp. 479-498, June 2001.
+Klein, F., Frankel, A., Mueller, C., Wesson, R., and Okubo, P., “Documentation for Draft
+Seismic-Hazard Maps for the State of Hawaii,” U.S. Geological Survey, March 9, 1998.
+Munson, C., and C. Thurber, “Analysis of the Attenuation of Strong Ground Motion on the
+Island of Hawaii,” Bulletin of the Seismological Society of America, 87, 945-960, 1997.
+Petersen, M. D., Frankel, A. D., Harmsen, S. C., Mueller, C. S., Haller, K, M., Wheeler, R. L.,
+Wesson, R. L., Zeng, Y., Boyd, O. S., Perkins, D. M., Luco, N, Field, D. H., Wills, C. J., and
+Rukstales, K. S., “Documentation for the 2008 Update of the United States National Seismic
+Hazard Maps,” USGS Open-File Report 2008-1128, May 2008.
+Port of Long Beach (POLB), “Wharf Design Criteria, Version 3.0,” Port of Long Beach,
+February 2012.
+Port of Los Angeles (POLA), “Code for Seismic Design, Upgrade and Repair of Container
+Wharves,” City of Los Angeles Harbor Department, May 2010.
+Sadigh, K., Chang K.-Y., Egan, J.A., Makdisi, F., and Youngs, R.R., “Attenuation relationships
+for shallow crustal earthquakes based on California strong motion data,” Seismological Research
+Letters, Vol. 68, No. 1, January/February 1997.
+United States Geology Survey (USGS), “Program Clusater2000X: Recognize Clusters in Space-
+Time in an Earthquake Catalog,” downloaded from
+http://earthquake.usgs.gov/research/software/#CLUSTER, September 2013.
+Youngs, R., S. Chiou, W. Silva, and J. Humphrey, “Strong Motion Attenuation for Subduction
+Zone Earthquakes,” Seismological Research Letters, 68, 58-73, 1997.
+28
+APPENDIX A
+PSHA DEAGGREGATION RESULTS
+-
+oy
+i=]
+c
+i]
+a]
+i)
+7)
+Qe
+be
+ou
+cra
+2
+i
+2
+(2)
+a
+i]
+4
+1.00E+00
+=———= Total Hazard
+ome NW (Gridded Seismicity)
+ome NW (Ramped Seismicity)
+KAO+HLE+SFL
+oe SFL
+oe KON
+oe e Other Sources
+1.00E-03
+1.00E-04
+Spectral Acceleration at 0.03 Second (g)
+Figure A-1. T = 0.03 Second (PGA) Spectral Acceleration Hazard by Source
+wo
+LS]
+c
+co
+no]
+3)
+7)
+Ls)
+pray
+ra
+2
+oc
+a2
+[s)
+i
+[-¥
+is]
+c
+c
+1.00E+00 — SSE <I : ae
+- = aa ee Sala om Total Hazard fm
+—— NW (Gridded Seismicity) [|
+ome \W (Ramped Seismicity)
+1.00E-01 = : ~ mmm KAQ+HLE+SFL
+KON
+= « Other Sources
+1.00E-02
+1.00E-04
+0.10
+Spectral Acceleration at 0.5 Second (g)
+Figure A-2. T = 0.5 Second Spectral Acceleration Hazard by Source
+: oom Total Hazard
+emmeee NW (Gridded Seismicity)
+oemee NW (Ramped Seismicity)
+1.00E-01 - = —} KAO+HLE+SFL
+KON
+= (Other Sources
+cH
+ue
+co
+ao]
+3)
+3)
+1S)
+ui
+s)
+2
+2
+c
+2
+(=)
+he
+a
+Ls]
+c
+S
+1.00E-04
+Spectral Acceleration at 2.0 Second (g)
+Figure A-3. T = 2.0 Second Spectral Acceleration Hazard by Source
+cs
+re
+N
+Lj
+ie]
+-
+i
+2
+-
+Pj
+2
+‘S
+o
+UV
+8.00 - 8.50
+7.00 - 7.50
+6.00 -6.50 Magnitude
+07° 5-10 49_ 99 ,
+kM km 20 - 30 39.59 5.00 - 5.50
+km 50-75 70 _
+km m 75
+km 100
+km
+Distance
+Figure A-4, Deaggregation of Seismic Hazard for T = 0.03 Second (PGA) for 72-yr Return Period (OLE)
+foes
+as)
+id
+N
+Lo)
+x=
+2
+2
+2
+3
+2
+5
+c
+)
+cs)
+8.00 - 8.50
+7.00 - 7.50
+6.00 -6.50 Magnitude
+5.00 - 5.50
+Distance
+Figure A-5. Deaggregation of Seismic Hazard for T = 0.5 Second for 72-yr Return Period (OLE)
+3
+Ps
+oc
+N
+Li
+x=
+-—
+2
+C=
+PJ
+2
+s
+&
+c)
+oO
+8.00 - 8.50
+7.00 - 7.50
+6.00 - 6.50 Magnitude
+5.00 - 5.50
+Distance
+Figure A-6. Deaggregation of Seismic Hazard for T = 2.0 Second for 72-yr Return Period (OLE)
+G
+Pw
+o
+N
+6
+is]
+-
+2
+PJ
+2
+S
+P*)
+o
+1S)
+Figure A-7
+Magnitude
+Distance
+. Deaggregation of Seismic Hazard for T = 0.03 Second (PGA) for 475-yr Return Period (CLE)
+Cee
+ss
+P=
+Lys]
+N
+&
+o
+Par]
+c
+6
+5
+2
+o
+oO
+8.00 - 8.50
+7.00 - 7.50
+6.00-6.50 Magnitude
+0-5
+5-10
+10 - 5.00 - 5.50
+Distance
+Figure A-8. Deaggregation of Seismic Hazard for T = 0.5 Second for 475-yr Return Period (CLE)
+po
+Ss
+-
+o
+N
+Pa
+2
+r=]
+2
+r=)
+c
+o
+Lo)
+Figure A-9.
+7.00 - 7.50
+6.00 -6.50 Magnitude
+5.00 - 5.50
+Distance
+Deaggregation of Seismic Hazard for T = 2.0 Second for 475-yr Return Period (CLE)
+on
+ro
+Li
+0.14
+0.12
+z
+S 0.10
+Ls]
+2 0.08
+S
+B 0.06
+= a
+2
+8 0.04 =
+me mw J 8.00-8.50
+0.02
+ee om [700-750
+0.00 a 6.00 - 6.50 Magnitude
+= a7 . .
+km 20-30 3959 aw / 5.00-5.50
+mM km 50-75 75.
+m
+k 100 “E49
+km km
+Distance
+Figure A-10. Deaggregation of Seismic Hazard for T = 0.03 Second (PGA) for 2,475-yr Return Period
+(MCE)
+oon
+ao]
+pws
+N
+fs
+x
+o
+s
+2
+P=]
+o
+1S)
+8.00 - 8.50
+7.00 - 7.50
+6.00 - 6.50 Magnitude
+5-10 19-20
+20-30
+km 30-50
+5.00 - 5.50
+100 -
+500
+km
+km 400
+km
+Distance
+Figure A-11. Deaggregation of Seismic Hazard for T = 0.5 Second for 2,475-yr Return Period (MCE)
+a
+mo]
+i]
+N
+6
+is]
+2
+2
+a]
+c
+1S)
+Magnitude
+Distance
+Figure A-12. Deaggregation of Seismic Hazard for T = 2.0 Second for 2,475-yr Return Period (MCE)

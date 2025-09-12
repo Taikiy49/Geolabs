@@ -1,0 +1,4513 @@
+GEOTECHNICAL ENGINEERING EXPLORATION
+REPAIR QUAYWALLS $14A, S16A AND S18A
+DESIGN-BUILD PROJECT
+JOINT BASE PEARL HARBOR-HICKAM HAWAII
+PEARL HARBOR, OAHU, HAWAII
+W.O. 7104-00 SEPTEMBER 24, 2015
+Prepared for
+MOFFATT & NICHOL
+LICENSED
+PROFESSIONAL
+ENGINEER
+No. 10029-C
+THIS WORK WAS PREPARED BY
+ME OR UNDER MY SUPERVISION.
+SIGNATURE EXPIRATION DATE
+OF THE LICENSE
+GEOLABS, INC.
+Geotechnical Engineering and Drilling Services
+2006 Kalihi Street * Honolulu, HI 96819
+Hawaii ¢ California
+GEOLABS, INC.
+Geotechnical Engineering and Drilling Services
+September 24, 2015
+W.O. 7104-00
+Mr. Dean Kokubun
+Moffatt & Nichol
+1132 Bishop Street, Suite 1595
+Honolulu, HI 96813
+Dear Mr. Kokubun:
+Geolabs, Inc. is pleased to submit our final report entitled "Geotechnical
+Engineering Exploration, Repair Quaywalls S14A, S16A and S18A, Design-Build
+Project, Joint Base Pearl Harbor-Hickam Hawaii, Pearl Harbor, Oahu, Hawaii" prepared
+in support of the design of the proposed project. This final report reflects revised
+structural loads provided on August 10, 2015 and addresses review comments for
+100% DB Design Submittal from NAVFAC PAC received on August 7, 2015.
+Our work was performed in general accordance with the scope of services
+outlined in our fee proposal dated August 15, 2014.
+Please note that the soil and rock core samples recovered during our field
+exploration (remaining after testing) will be stored for a period of two months from the
+date of this report. The samples will be discarded after that date unless arrangements
+are made for a longer sample storage period. Please contact our office for alternative
+sample storage requirements, if appropriate.
+Detailed discussion and specific design recommendations are contained in the
+body of this report. If there is any point that is not clear, please contact our office.
+Very truly yours,
+GEOLABS, INC.
+C
+Clayton S. Mimura, P.E.
+President
+CSM:JC:mj
+2006 Kalihi Street e Honolulu, Hawaii 96819
+Phone: (808) 841-5064 ¢ Facsimile: (808) 847-1749 e E-mail: hawaii@geolabs.net
+Hawaii ¢ California
+W.O. 7104-00 
+GEOLABS, INC. 
+Page i 
+Hawaii • California 
+GEOTECHNICAL ENGINEERING EXPLORATION 
+REPAIR QUAYWALLS S14A, S16A AND S18A 
+DESIGN-BUILD PROJECT 
+JOINT BASE PEARL HARBOR-HICKAM HAWAII 
+PEARL HARBOR, OAHU, HAWAII 
+W.O. 7104-00     SEPTEMBER 24, 2015 
+TABLE OF CONTENTS 
+                                                                                                                                       Page 
+SUMMARY OF FINDINGS AND RECOMMENDATIONS .............................................. iii 
+1. 
+GENERAL ............................................................................................................ 1 
+1.1 
+Introduction ................................................................................................ 1 
+1.2 
+Project Considerations ............................................................................... 1 
+1.3 
+Purpose and Scope ................................................................................... 2 
+2. 
+SITE CHARACTERIZATION ................................................................................ 4 
+2.1 
+Regional Geology ...................................................................................... 4 
+2.2 
+Subsurface Conditions ............................................................................... 5 
+2.3 
+Seismic Design Considerations ................................................................. 6 
+3. 
+DISCUSSION AND RECOMMENDATIONS ........................................................ 8 
+3.1 
+Pile Foundations ........................................................................................ 8 
+3.1.1  Predrilling ...................................................................................... 10 
+3.1.2  Lateral Load Resistance of Pile Group Foundation ....................... 11 
+3.1.3  Uplift Load Resistance .................................................................. 12 
+3.1.4  Pile Foundation Settlements ......................................................... 13 
+3.1.5  Pile Hammer Selection .................................................................. 13 
+3.1.6  Pile Driving Criteria ....................................................................... 14 
+3.1.7  Test Pile Program ......................................................................... 14 
+3.2 
+Existing Foundation Capacity and Stiffness Analyses ............................. 15 
+3.3 
+Corrosion Protection ................................................................................ 17 
+3.4 
+Design Review ......................................................................................... 18 
+3.5 
+Construction Monitoring ........................................................................... 18 
+4. 
+LIMITATIONS ..................................................................................................... 20 
+CLOSURE ..................................................................................................................... 22 
+PLATES 
+Project Location Map ................................................................................... Plate 1 
+Site Plan ...................................................................................................... Plate 2 
+Typical Existing Pile Foundation .................................................................. Plate 3 
+Lateral Spring Stiffness of Existing Pile Foundation ........................ Plates 4 thru 7 
+TABLE OF CONTENTS 
+                                                                                                                                       Page 
+W.O. 7104-00 
+GEOLABS, INC. 
+Page ii 
+Hawaii • California 
+APPENDIX A 
+Field Exploration ...................................................................................... Page A-1 
+Soil Log Legend ..................................................................................... Plate A-0.1 
+Soil Classification Log Key .................................................................... Plate A-0.2 
+Rock Log Legend .................................................................................. Plate A-0.3 
+Logs of Borings ................................................................... Plates A-1.1 thru A-4.3 
+APPENDIX B 
+Laboratory Tests ...................................................................................... Page B-1 
+Laboratory Test Data ................................................................ Plates B-1 thru B-9 
+APPENDIX C 
+Laboratory Tests by TestAmerica Laboratories Inc. ............................. (13 Sheets) 
+APPENDIX D 
+Previous Boring Logs ............................................................................. (5 Sheets) 
+W.O. 7104-00 
+GEOLABS, INC. 
+Page iii 
+Hawaii • California 
+GEOTECHNICAL ENGINEERING EXPLORATION 
+REPAIR QUAYWALLS S14A, S16A AND S18A 
+DESIGN-BUILD PROJECT 
+JOINT BASE PEARL HARBOR-HICKAM HAWAII 
+PEARL HARBOR, OAHU, HAWAII 
+W.O. 7104-00     SEPTEMBER 24, 2015 
+SUMMARY OF FINDINGS AND RECOMMENDATIONS 
+Our geotechnical exploration consisted of drilling and sampling four borings 
+extending to depths of approximately 82.5 to 114 feet below the top of deck.  Mudline was 
+encountered at depths of about 10 to 14 feet below the existing wharf deck.  Our borings 
+encountered a layer of soft/loose harbor and lagoonal deposit overlying stiff alluvial soils.  
+Below the stiff alluvial materials, we encountered weathered volcanic tuff formation and/or 
+coralline deposits. 
+We believe that the loose granular harbor deposits at the project site have factors 
+of safety of less than 1.0 against liquefaction based on the design earthquake magnitude.  
+Therefore, the sandy harbor deposits are susceptible to soil liquefaction during the design 
+earthquake event.  Due to the soil liquefaction, the effect of the settlement would induce a 
+downdrag load imposed on the new concrete piles.  However, the effect of lateral 
+spreading onto the new concrete piles may be ignored due to loose consistency of the 
+liquefied soil profile. 
+We recommend using 20-inch square precast, prestressed concrete piles to 
+support the new Building 797.  To achieve an allowable compressive load capacity of 
+150 kips, we recommend extending the concrete piles to a tip elevation of approximately 
+-77.5 feet MLLW, bearing on the competent soil/rock stratum.  The concrete piles should 
+be spaced a minimum of 5 feet from center-to-center, to avoid reduction in the vertical 
+compressive load capacity. 
+Existing composite piles consisting of 18-inch square concrete piles and 18-inch 
+timber piles installed in 1942 support the existing quaywall structures.  We believe that the 
+existing composite piles may be capable of providing an ultimate compressive load 
+capacity of 50 kips (25 tons), as indicated in the RFP documents without considering the 
+downdrag force induced by the soil liquefaction.  Lateral load capacity of the existing 
+composite piles was analyzed in the group model for the lateral spring stiffness, to support 
+the structural evaluation. 
+The text of this report should be referred to for detailed discussions and specific 
+design recommendations. 
+END OF SUMMARY OF FINDINGS AND RECOMMENDATIONS 
+W.O. 7104-00 
+GEOLABS, INC. 
+Page 1 
+Hawaii • California 
+SECTION 1.  GENERAL 
+1.1 
+Introduction 
+This report presents the results of our geotechnical engineering exploration 
+performed for the Repair Quaywalls S14A, S16A and S18A project in the Pearl Harbor 
+area on the Island of Oahu, Hawaii.  The project location and general vicinity are shown 
+on the Project Location Map, Plate 1. This report summarizes the findings from our field 
+exploration and presents our geotechnical recommendations for design of the proposed 
+waterfront improvements. 
+The recommendations provided herein are intended for design of new 
+foundations and evaluation of existing foundations only. The findings and 
+recommendations presented herein are subject to the limitations noted at the end of this 
+report. 
+1.2 
+Project Considerations 
+The design-build project for repair Quaywalls S14A, S16A and S18A is located at 
+the head of Magazine Loch between Wharf S-14 and Wharf S-19 in the Pearl Harbor 
+area on the Island of Oahu, Hawaii.  The existing quaywalls S14A, S16A and S18A (also 
+designated as Boat Landings 1, 2 and 3) were originally constructed in 1942 and 1953. 
+The three boat landing wharves are approximately 165 feet long by 13 feet wide, 
+supported on a total of 98 vertical and 44 battered composite piles. 
+The project will require demolishing and reconstructing the entire existing decks, 
+inboard walls/guardrails, fender systems, landing shelter, Building 797 and other 
+utilities.  Based on the RFP requirements, the new quaywalls will be supported on the 
+existing composite piles except the new Building 797 will be supported on new concrete 
+piles. 
+We understand that the new concrete pile foundation supporting Building 797 
+requires engineering evaluation for bearing capacity, liquefaction and slope stability 
+analyses.  However, the existing composite pile foundation supporting the new quaywall 
+structures requires bearing capacity analyses only.  Seismic analysis for the new 
+quaywall structures is not required. 
+SECTION 1. GENERAL 
+W.O. 7104-00 
+GEOLABS, INC. 
+Page 2 
+Hawaii • California 
+1.3 
+Purpose and Scope 
+The purpose of our field exploration was to obtain an overview of the surface and 
+subsurface conditions to develop a soil and/or rock data set to formulate geotechnical 
+recommendations for the design of pile foundations only.  In order to accomplish this, 
+we conducted an exploration program consisting of the following tasks and efforts: 
+1. 
+Application for excavation permits from the applicable agencies within the 
+Pearl Harbor Naval Complex and coordination of site access and 
+underground utility toning clearance. 
+2. 
+Preparation and submittal of an accident prevention plan with activity 
+hazard analysis in support of our field exploration. 
+3. 
+Mobilization 
+and 
+demobilization 
+of 
+one 
+truck-mounted 
+and 
+one track-mounted drill rigs and four operators to the project site and 
+back. 
+4. 
+Mobilization and demobilization of a truck-mounted crane and operator for 
+lifting the drill rigs onto the quaywall decks. 
+5. 
+Drilling and sampling four borings extending to depths of about 82.5 to 
+114 feet below the existing concrete deck. 
+6. 
+Coordination of the field exploration and logging of the borings by our 
+geologists. 
+7. 
+Laboratory testing of selected samples obtained during the field 
+exploration as an aid in classifying the materials and evaluating their 
+engineering properties. 
+8. 
+Analyses of the field data to formulate geotechnical recommendations for 
+the proposed design-build project. 
+9. 
+Preparation of this report summarizing our work on the project and 
+presenting our findings and recommendations. 
+10. 
+Coordination of our overall work on the project by our engineer. 
+11. 
+Quality assurance of our work and client/design team consultation by our 
+principal engineer. 
+12. 
+Miscellaneous work efforts such as drafting, word processing, and clerical 
+support. 
+SECTION 1. GENERAL 
+W.O. 7104-00 
+GEOLABS, INC. 
+Page 3 
+Hawaii • California 
+Detailed descriptions of our field exploration methodology and the Logs of 
+Borings are presented in Appendix A. Results of the laboratory tests performed on 
+selected soil and rock core samples are presented in Appendix B.  Results of the 
+corrosivity tests performed by others on selected soil samples are presented in 
+Appendix C.  Previous boring logs as part of the RFP documents are included in 
+Appendix D. 
+END OF GENERAL 
+W.O. 7104-00 
+GEOLABS, INC. 
+Page 4 
+Hawaii • California 
+SECTION 2.  SITE CHARACTERIZATION 
+2.1 
+Regional Geology 
+The Island of Oahu was built by the extrusion of basaltic lavas from the Waianae 
+and Koolau Shield Volcanoes.  The older Waianae Volcano is estimated to be middle to 
+late Pliocene in age and forms the bulk of the western one-third of the island.  The 
+younger Koolau Volcano is estimated to be late Pliocene to early Pleistocene (Ice Age) 
+in age and forms the majority of the eastern two-thirds of the island.  Waianae Volcano 
+became extinct while Koolau Volcano was still active, and its eastern flank was partially 
+buried below Koolau lavas banking against its eastern flank.  The Koolau Volcano 
+reached the end of its main shield-building phase about 2 million years ago. 
+The geologic conditions underlying the project site are the result of a complex 
+series of deposition and erosional events brought on by glacio-eustatic sea level 
+changes and post-erosional volcanic activities during the Pleistocene Epoch. Following 
+the cessation of activity of the Koolau Volcano, alluvial soil materials were deposited in 
+a deltaic or estuarine environment in the Pearl Harbor area. 
+The sea level fluctuated several times, receding perhaps 300 feet below and 
+rising about 100 feet above the present sea level. Concurrent with a rise in sea level 
+during the late Pleistocene era, eruption of the Salt Lake-Makalapa member of the 
+Honolulu Volcanic Series mantled the older alluvium with thick deposits of volcanic ash, 
+which consolidated to form volcanic tuff (locally known as “mudrock”) layers. 
+Subsequent erosion dissected and thinned mantles of volcanic tuff. 
+The magazine loch of Pearl Harbor represents tributary stream valleys.  During 
+the recent epoch, as sea level rose to its current stand, soft/loose harbor sediments 
+were deposited underlain by recent alluvium.  Pearl Harbor Naval Base was developed 
+during the middle portion of this century, comprising removing some of harbor 
+sediments by dredging and placing man-made fill to create reclaimed land.  The project 
+site is generally located near stream valleys, underlain by thick compressible harbor 
+sediments and recent alluviums overlying highly weathered volcanic tuff materials. 
+SECTION 2. SITE CHARACTERIZATION  
+W.O. 7104-00 
+GEOLABS, INC. 
+Page 5 
+Hawaii • California 
+2.2 
+Subsurface Conditions 
+Our field exploration consisted of drilling and sampling four borings, designated 
+as Boring Nos. 101 through 104, extending to depths of about 82.5 to 114 feet below 
+the existing wharf deck.  The approximate boring locations are shown on the Site Plan, 
+Plate 2.  In addition, previous borings drilled in the vicinity of the project site are also 
+shown on the Site Plan for reference. 
+Mudline was encountered at depths of about 10 to 14 feet below the existing 
+wharf deck.  In general, the subsurface conditions at the site consisted of about 40 to 
+70 feet of soft/loose harbor deposit and lagoonal deposit overlying stiff alluvium and 
+weathered volcanic tuff formation, as summarized in the table below for ease of 
+reference.  The harbor deposit consisted of loose sandy soils, while the lagoonal 
+deposit comprised of soft clayey/silty soils.  Below the stiff alluvial materials, we 
+encountered weathered volcanic tuff formation and/or coralline deposits. 
+SUMMARY OF SUBSURFACE CONDITIONS 
+Boring 
+Nos. 
+Location 
+Mudline 
+Thickness of Substratum (feet) 
+(feet below 
+top of deck) 
+Harbor 
+Deposit 
+Lagoonal 
+Deposit 
+Alluvium 
+B-101 
+S14A 
+13.5 
+14.0 
+19.5 
+30.5 
+B-102 
+S16A 
+12.5 
+20.0 
+40.5 
+41.0 
+B-103 
+S16A 
+10.5 
+19.0 
+50.0 
+33.0 
+B-104 
+S18A 
+13.5 
+15.5 
+34.5 
+N/A 
+It should be noted that the thickness of the soft/loose harbor and lagoonal 
+deposits varies significantly, increasing to about 60 to 70 feet thick in the area below 
+S16A, while decreasing to about 40 feet at S14A and about 50 feet at S18A.  A thin 
+layer of the volcanic tuff rock about 5 feet thick was encountered at a depth of about 
+27 feet below the deck at Boring No. 101 drilled at S14A. 
+We encountered water (sea level) at depths of about 2.3 to 2.9 feet below the top 
+of the concrete deck, corresponding to elevations from +0.6 to +1.2 feet Mean Lower 
+SECTION 2. SITE CHARACTERIZATION  
+W.O. 7104-00 
+GEOLABS, INC. 
+Page 6 
+Hawaii • California 
+Low Water (MLLW), at the time of our field exploration.  It should be noted that water 
+levels at the site are subject to change due to tidal fluctuations, seasonal precipitation, 
+storm surge conditions, and other factors. 
+Detailed descriptions of the field exploration methodology and graphic 
+representations of the materials encountered in the borings are presented on the 
+Logs of Borings in Appendix A.  We performed laboratory tests on selected soil and rock 
+samples obtained during our field exploration and the test results are presented in 
+Appendix B.  Results of the laboratory corrosivity tests performed by others on selected 
+soil samples retrieved from our field exploration are presented in Appendix C.  Previous 
+boring logs are included in Appendix D. 
+2.3 
+Seismic Design Considerations 
+Based on the ASCE 7-10, the project site may be subjected to seismic activity, 
+and seismic design considerations will need to be addressed for the project. 
+Based on the RFP documents, a site-specific ground motion study is not 
+required.  The RFP documents also require Site Class “E” (Soft Soil Profile) to be used 
+from a seismic analysis standpoint.  Based on Site Class E, the following spectral 
+response parameters may be used for the seismic analysis.  In addition, we understand 
+that seismic analysis and liquefaction assessment are not required, except for 
+Building 797 at S14A, as specified in the Amendment 0002 to RFP for Task Order. 
+The peak ground acceleration (PGA) using Maximum Considered Earthquake 
+(MCE) for Site Class E is determined to be approximately 0.36g in accordance with 
+ASCE 7-10 for 2 percent probability of exceedance in 50 years (2,475 years return 
+period).  Based on the subsurface conditions encountered and the design peak ground 
+acceleration, liquefaction may occur resulting in appreciable settlements at the ground 
+surface (mudline).  Therefore, the effects of potential liquefaction should be taken into 
+consideration in the design of the Building 797. 
+SECTION 2. SITE CHARACTERIZATION  
+W.O. 7104-00 
+GEOLABS, INC. 
+Page 7 
+Hawaii • California 
+SEISMIC DESIGN PARAMETERS 
+Parameter 
+Value 
+Mapped MCE Peak Bedrock Acceleration, PBA (“B”)= 
+0.26 
+Mapped MCE Spectral Response Acceleration, SS(“B”) = 
+0.61 
+Mapped MCE Spectral Response Acceleration, S1(“B”) = 
+0.17 
+Site Class = 
+“E” 
+Site Coefficient, Fpga = 
+1.39 
+Site Coefficient, Fa = 
+1.49 
+Site Coefficient, Fv = 
+3.28 
+Design Peak Ground Acceleration, PGA(“E”)= 
+0.24 
+Design Spectral Response Acceleration, SDS(“E”) = 
+0.60 
+Design Spectral Response Acceleration, SD1(“E”) = 
+0.38 
+Based on our analysis, it appears that the loose granular harbor deposits at the 
+project site have factors of safety of about 0.7 (less than 1.0) against liquefaction during 
+the design earthquake event.  Therefore, the sandy harbor deposits are susceptible to 
+soil liquefaction during the design earthquake event.  Effects of the liquefaction, such as 
+downdrag from settlement associated with liquefaction should be considered for 
+evaluation of the pile foundations.  Based on the sloping topographic mudline surface 
+across the site (in transverse direction), we believe lateral spreading associated with 
+liquefaction may be a design consideration.  However, the effect of lateral spreading 
+due to the liquefaction onto the concrete driven piles may be ignored due to loose 
+consistency of the liquefied soil profile. 
+END OF SITE CHARACTERIZATION 
+W.O. 7104-00 
+GEOLABS, INC. 
+Page 8 
+Hawaii • California 
+SECTION 3.  DISCUSSION AND RECOMMENDATIONS 
+Our borings encountered mudline at depths of about 10 to 14 feet below the 
+concrete deck.  The subsurface conditions consisted of about 40 to 70 feet of soft/loose 
+harbor/lagoonal deposits over stiff alluvium and weathered volcanic tuff formation and/or 
+coralline deposits extending to the maximum depth explored of about 114 feet below the 
+deck.  Thickness of the soft/loose harbor/lagoonal deposits varied significantly from 
+60 to 70 feet at S16A, to 40 to 50 feet at S14A and S18A.  A thin layer of volcanic tuff 
+rock about 5 feet thick was encountered at a depth of about 27 feet below the deck at 
+S14A. 
+We recommend installing 20-inch square precast prestressed concrete piles to 
+support the new Building 797.  The driven pile would derive its support from end bearing 
+on the very stiff alluvium or weathered volcanic tuff formation and from skin friction 
+between the pile and the surrounding stiff alluvial deposits.  We recommend extending 
+the driven piles to a tip elevation of about -77.5 feet MLLW, to achieve an allowable 
+bearing compressive load capacity of up to 150 kips. 
+Based on the subsurface conditions encountered in the borings and as-built 
+information included in the RFP documents, it is our opinion that the existing composite 
+piles consisting of 18-inch square precast concrete pile over 18-inch timber pile may be 
+capable of providing an ultimate compressive load capacity of 25 tons (50 kips), 
+excluding the downdrag force induced by the soil liquefaction. 
+Detailed discussions and specific design recommendations for the waterfront 
+improvement project are presented in the following sections. 
+3.1 
+Pile Foundations 
+Based on the revised preliminary structural loads dated August 10, 2015 and the 
+subsurface conditions encountered at Quaywall S14A, we recommend using a deep 
+foundation system consisting of driven piles to support the new Building 797.  We 
+recommend using 20-inch square precast, prestressed concrete piles to support the 
+building structure.  The driven piles would derive support from end bearing on the very 
+stiff alluvium or weathered volcanic tuff formation and from skin friction between the pile 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 7104-00 
+GEOLABS, INC. 
+Page 9 
+Hawaii • California 
+and the surrounding stiff alluvial deposits.  The structural loading combinations are 
+provided and summarized in the table below. 
+SUMMARY OF LOADS APPLIED ON CENTRAL PILE GROUP 
+Case 
+Strength and Allowable 
+Loading Combination 
+V (vertical) 
+L (lateral) 
+(kips) 
+1 
+1.13D + 0.1L + EQ 
+432 
+114 
+2 
+1.2D + L + EQ 
+745 
+114 
+3 
+D + 0.7EQ 
+354 
+80 
+4 
+D + 0.75 L + 0.525EQ 
+594 
+60 
+Based on the subsurface conditions at the site, we believe that an allowable 
+compressive load capacity of up to 150 kips may be used for the 20-inch square 
+precast, prestressed concrete piles with a factor of safety of 2.5 in accordance with 
+UFC 3-220-01.  The allowable compressive load capacity is for dead-plus-live loads and 
+may be increased by one-third (1/3) for transient loads, such as those caused by wind or 
+seismic forces.  To avoid reduction in the vertical compressive load capacity and to 
+facilitate pile driving in groups, we recommend that the 20-inch square piles be spaced 
+a minimum of 5 feet from center-to-center. 
+In order to achieve the recommended allowable compressive load capacity, the 
+estimated pile length may be approximately 80 feet, extending to a tip elevation of about 
+-77.5 feet MLLW.  Detailed recommendations for the driven pile foundations are 
+presented in the following table. It should be noted that only one boring (B-101) was 
+drilled within proximity of the new building footprint. Therefore, the following pile tip 
+elevation was estimated based on the subsurface conditions encountered in Boring 
+No. 101. 
+PRECAST PRESTRESSED CONCRETE PILE FOUNDATIONS 
+Location 
+Ultimate 
+Compressive 
+Load Capacity 
+Approximate 
+Pile Length 
+Estimated Pile 
+Tip Elevation 
+Minimum 
+Center-to-Center 
+Pile Spacing 
+(kips) 
+(feet) 
+(feet MLLW) 
+(feet) 
+Building 797 
+375 
+80 
+-77.5 
+5.0 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 7104-00 
+GEOLABS, INC. 
+Page 10 
+Hawaii • California 
+Considering the potential liquefaction occurring within the upper loose harbor 
+deposit during the design earthquake event, ground settlement may occur at the site 
+inducing ground downward movement relative to the pile. The downward movement will 
+result in negative skin friction, generally known as downdrag forces, acting on the pile 
+shaft.  The magnitude of the downdrag force depends on the thickness of the liquefiable 
+soil layer, magnitude of the earthquake, and the pile size. 
+Based on our foundation analyses, we estimate that the downdrag loads 
+imposed on the vertical piles due to the potential liquefaction may be on the order of 
+about 25 kips per pile.  It should be noted that the ultimate compressive load capacity of 
+the piles (375 kips) is a net value; therefore, the ultimate compressive load capacity has 
+already been reduced by the expected downdrag loads in the pile foundation analyses. 
+Based on review of the RFP documents, we anticipate significant variation of the 
+weathered volcanic tuff rock under Building 797.  The tuff rock may be present at 
+elevations between -40 and -80 feet MLLW based on the subsurface conditions 
+encountered in the vicinity of Quaywall S14A.  Consideration may be given to designing 
+the concrete pile reinforcing to account for this variation. 
+We recommend conducting a test pile program consisting of driving test piles and 
+dynamic load testing during the test pile installation to establish the actual production 
+pile lengths and to confirm the design pile compressive load capacity.  Due to possible 
+variation in the length of the piles, unit prices should be obtained during bidding for 
+add-ons, shorter piles, etc. 
+3.1.1 Predrilling 
+We recommend predrilling each pile location to an elevation of about -30 feet 
+MLLW, to facilitate the pile driving operations and to clear the pile driving path from 
+obstruction and/or shallow volcanic tuff rock, as encountered in Boring No. 101 at 
+S14A.  The predrilled holes should have a diameter of no more than 28 inches for 
+the 20-inch square piles.  The required predrilling size and depth should be verified 
+and/or modified by Geolabs during the test pile driving operation based on the 
+conditions encountered and pile driving equipment used. 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 7104-00 
+GEOLABS, INC. 
+Page 11 
+Hawaii • California 
+3.1.2 Lateral Load Resistance of Pile Group Foundation 
+Based on the structural loading combinations provided, we envision a pile group 
+consisting of ten 20-inch square concrete piles may be designed to resist the 
+structural loads of the new building. 
+The lateral load resistance of driven piles is a function of the stiffness of the 
+surrounding soil, the stiffness of the pile, the geometry of the pile group, allowable 
+deflection at the top of the pile, and the induced moment in the pile.  The lateral 
+load analyses were performed using the computer program GROUP. The pile 
+group geometry, pile properties, soil properties, and loading conditions were input 
+into the GROUP program based on subsurface conditions encountered in the 
+borings, structural loads provided by the project structural engineer, and our 
+experience.  Lateral load analyses were performed by modeling the lateral loads 
+applied along the longitudinal (parallel to the waterfront face) and the transverse 
+direction (perpendicular to the waterfront face), to assess the pile reactions in axial 
+compressive force, shear force and induced bending moment. 
+It should be noted that the structural loads were transferred to the central pile group 
+at the bottom of the pile cap near the top of the pile (assumed at about 2 feet below 
+the top of the cap).  Therefore, it would be critical to increase rigidity of the pile cap 
+structures, so that the horizontal forces could be distributed across the structure 
+onto the piles. 
+The program solves for deflection and bending moment along each pile under 
+vertical and lateral loads as a function of depth.  The analysis was carried out with 
+the use of non-linear “p-y” curves to represent soil moduli.  The lateral deflection 
+was then computed using the appropriate soil moduli at various depths. 
+Results of the lateral load analyses are summarized in the table below, presenting 
+the pile reactions including lateral deflection, maximum axial compressive force, 
+maximum induced bending moment, flexural length, and maximum shear force 
+under each load combination.  The analyses were performed assuming either 
+fixed-head or pinned-head boundary conditions between each pile and concrete 
+pile cap. 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 7104-00 
+GEOLABS, INC. 
+Page 12 
+Hawaii • California 
+SUMMARY OF LATERAL LOAD ANALYSES 
+Case 
+Lateral Load 
+Direction 
+Lateral 
+Deflection 
+Max. Axial 
+Compressive 
+Force 
+Max. Induced 
+Bending 
+Moment 
+Flexural 
+Length 
+Max. 
+Shear 
+Force 
+(inches) 
+(kips) 
+(ft-kip) 
+(feet) 
+(kips) 
+Fixed-Head Boundary Condition 
+1 
+Longitudinal 
+0.75 
+64 
+160 
+31.5 
+11.5 
+Transverse 
+0.88 
+80 
+174 
+31.5 
+12.5 
+2 
+Longitudinal 
+0.76 
+100 
+162 
+31.5 
+11.5 
+Transverse 
+0.90 
+115 
+175 
+31.5 
+12.5 
+3 
+Longitudinal 
+0.48 
+50 
+110 
+31.5 
+8.0 
+Transverse 
+0.56 
+60 
+118 
+31.5 
+9.0 
+4 
+Longitudinal 
+0.34 
+75 
+80 
+30.5 
+6.0 
+Transverse 
+0.40 
+82 
+88 
+30.5 
+6.6 
+Pinned-Head Boundary Condition 
+1 
+Longitudinal 
+3.5 
+50 
+234 
+30.5 
+11.5 
+Transverse 
+4.0 
+50 
+264 
+30.5 
+12.5 
+2 
+Longitudinal 
+3.5 
+85 
+242 
+30.5 
+11.5 
+Transverse 
+4.0 
+85 
+274 
+30.5 
+12.5 
+3 
+Longitudinal 
+2.2 
+40 
+160 
+30.0 
+8.0 
+Transverse 
+2.5 
+40 
+178 
+30.0 
+9.0 
+4 
+Longitudinal 
+1.5 
+68 
+120 
+30.0 
+6.0 
+Transverse 
+1.8 
+68 
+134 
+30.0 
+6.6 
+It should be noted that flexural length is the length of the pile from the first point of 
+zero lateral deflection to the bottom of the pile cap or grade beam. 
+3.1.3 Uplift Load Resistance 
+Uplift loads imposed on the pile foundation may be resisted by a combination of the 
+weight of the driven pile and by shear resistance acting along the pile surface and 
+the adjacent soils.  Based on our estimate, an ultimate uplift load capacity of 
+250 kips per pile may be used for the 20-inch square piles driven to the tip elevation 
+of about -77.5 feet MLLW supporting the Building 797. 
+It should be noted that the above estimated uplift load capacities are based on 
+shear resistance distributed on the entire pile length.  Therefore, mechanical 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 7104-00 
+GEOLABS, INC. 
+Page 13 
+Hawaii • California 
+splicing should be used if the pile is spliced to achieve the design tip elevation.  The 
+project structural engineer should check the tensile capacity of the pile member. 
+Based on our lateral load analyses, the piles supporting Building 797 do not have 
+axial tensile force developed under the structural loading combinations.  
+3.1.4 Pile Foundation Settlements 
+Settlement of pile foundations will result primarily from elastic compression of the 
+pile member and the subgrade response.  We estimate that the total settlement of 
+the pile-supported foundation to be less than 0.5 inches.  Differential settlements 
+between adjacent piles should not exceed about one-half of the total foundation 
+settlement.  We believe that these settlements are essentially elastic and should 
+occur as the loads are applied. 
+3.1.5 Pile Hammer Selection 
+The piles should be driven with a hammer capable of delivering energies in the 
+range of about 60,000 to 80,000 foot-pounds in the field.  The hammer should be 
+equipped with an energy control level such that driving within the soft and/or loose 
+soils could be controlled at a lower hammer energy setting to reduce the potential 
+for tensile stress development within the piles, which could damage or cause 
+cracking of the piles. 
+Determination of driving equipment to be used for this project should take into 
+consideration the "matching" of the pile hammer with the weight of the piles to be 
+driven.  This will result in the pile hammer efficiently delivering the required energy 
+to the top of the pile and also reducing potential damage to the piles.  Geolabs 
+should review the proposed pile driving equipment to evaluate whether the 
+equipment is capable of installing the piles to the recommended capacity. 
+The contractor should forward pile and driving equipment data forms to Geolabs for 
+review prior to construction.  Geolabs should review the submittal and assess the 
+driveability of the piles with the use of the selected hammer.  A wave equation 
+analysis should be performed after selection of the pile driving equipment to assess 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 7104-00 
+GEOLABS, INC. 
+Page 14 
+Hawaii • California 
+the driveability of the piles and to establish the preliminary pile driving criteria for the 
+test pile program. 
+3.1.6 Pile Driving Criteria 
+For preliminary design of the 20-inch square, prestressed precast concrete piles, 
+pile driving may be terminated when aggregate blow counts are at least 60 blows 
+per foot for the last foot or 6 blows per inch for the last 6 inches.  The above 
+preliminary driving criteria should be confirmed and/or modified after selection of 
+the pile driving equipment and performance of wave equation analyses. 
+Each pile should be driven continuously without interruption.  A pile may be rejected 
+or its design capacity may be reduced when the pile driving is interrupted for more 
+than 4 hours and the pile cannot be driven to the required depth.  During soft 
+driving, such as when the pile tip is within soft soils, the hammer stroke (or energy) 
+should be carefully controlled such that significant tensile stresses do not develop 
+within the pile during the pile driving operation. 
+Because variations in soil strength characteristics are likely to exist in the bearing 
+soils, the supporting capacity of each pile must be confirmed in the field by a 
+Geolabs representative during pile driving.  It should be noted that the pile design 
+was developed from our pile analysis using the field exploration data.  Therefore, a 
+test pile program should be carried out to confirm our preliminary pile design and to 
+establish the pile driving criteria.  The production pile driving criteria may be revised 
+based on the test pile program. 
+3.1.7 Test Pile Program 
+We recommend undertaking a test pile program, which includes installing test piles 
+at selected locations and performing load tests to confirm the design capacity and 
+the driveability.  It is difficult and costly to perform conventional static pile load test 
+due to narrow construction access.  Therefore, we recommend performing dynamic 
+pile load tests on each test pile to fulfill the following objectives. 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 7104-00 
+GEOLABS, INC. 
+Page 15 
+Hawaii • California 
+1. 
+To examine the driveability of the piles with the use of the selected 
+hammer. 
+2. 
+To estimate the production pile lengths. 
+3. 
+To assess the test pile driving criteria, that may be modified for use 
+as the production pile driving criteria. 
+The test piles may be incorporated into the actual foundation system upon 
+evaluation of the dynamic load test results.  When the final foundation plan is 
+available, Geolabs should be consulted for selection of the test pile locations.  Test 
+piles should be cast at least 10 feet longer than the preliminary pile length 
+recommended above, to account for potential variations.  Re-striking of all the test 
+piles at 3-day and 7-day should be required as part of the test pile program.  The 
+dynamic pile load test should be performed in general accordance with 
+ASTM D4945. 
+As mentioned previously, the ultimate pile capacity was estimated to be 375 kips 
+including an expected downdrag force of 25 kips.  Therefore, the test piles should 
+be installed and confirmed by PDA testing with a minimum compressive load 
+capacity of 400 kips. 
+A Geolabs representative should be present during pile driving operations to 
+observe the actual driving behavior and to further evaluate the field performance.  It 
+should be noted that the pile design and driving criteria recommended were 
+developed from our pile analysis using the field exploration data and available 
+information.  Therefore, observation of the pile driving operations by a Geolabs 
+representative is necessary to confirm our design assumptions, and should be 
+designated as a “Special Inspection” item in accordance with Section 1704 of the 
+International Building Code (2012). 
+3.2 
+Existing Foundation Capacity and Stiffness Analyses 
+In order to evaluate the lateral load resistance of the existing quaywall structure, 
+foundation capacities and stiffness modeling parameters were estimated based on the 
+subsurface conditions encountered in the drilled borings and the as-built information 
+provided by the RFP documents. 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 7104-00 
+GEOLABS, INC. 
+Page 16 
+Hawaii • California 
+SUMMARY OF EXISTING PILE FOUNDATION 
+Location 
+Typical Pile Foundation 
+Ultimate Pile 
+Capacity 
+(tons) 
+S14A 
+Composite Piles  
+(30’ long 18” SQ concrete pile + 50’ long 18” diameter timber pile) 
+25 
+S16A 
+Composite Piles  
+(48’ long 18” SQ concrete pile + 50’ long 18” diameter timber pile) 
+25 
+S18A 
+Composite Piles  
+(48’ long 18” SQ concrete pile + 50’ long 18” diameter timber pile) 
+25 
+Concrete Bearing Piles 
+(58’ long 18” SQ concrete pile) 
+40 
+Based on the as-built drawings in the RFP documents, we understand that the 
+existing quaywall structure is about 165 feet long by about 13 feet wide boat landing 
+wharf.  The concrete decks of the boat landing wharves are supported on either 
+composite piles and concrete bearing piles with specified ultimate pile capacities of 
+25 tons and 40 tons, respectively, as summarized in the above table. 
+The pile foundations consist of two rows of vertical piles (inboard and outboard) 
+alternating with one row of batter pile (inboard), spacing at about 10 or 16 feet center to 
+center, as shown on the Typical Existing Pile Foundation, Plate 3.  The batter inclination 
+is about four horizontal to twelve vertical (4H:12V). 
+Based on the subsurface conditions encountered in the borings drilled and the 
+existing pile as-built plans in the RFP documents, it is our opinion that the existing 
+composite piles and concrete piles are capable of providing the ultimate capacities of 
+25 and 40 tons, respectively, considering relatively lower strength of the timber pile and 
+uncertainty of the splicing connection between the concrete pile and timber pile. 
+The lateral load resistance of the existing pile foundation was analyzed using the 
+computer program GROUP.  The group geometry, pile properties, soil properties, and 
+loading conditions were input into the GROUP program based on available information, 
+anticipated structural loads, and our experience.3 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 7104-00 
+GEOLABS, INC. 
+Page 17 
+Hawaii • California 
+The individual existing concrete piles were assumed to have cracked due to age 
+of the structure, and a reduced modulus of elasticity (50 percent) was used in our 
+analyses.  The foundation analyses included lateral deflection and lateral stiffness in the 
+transverse direction (perpendicular to the waterfront facing). 
+The pile group model was established with three vertical inboard piles, 
+three vertical outboard piles and two batter piles, to assess the pile group lateral spring 
+stiffness as a function of lateral deflection.  Results of the lateral analyses are presented 
+on Plates 4 through 7 for each pile group configuration. 
+Due to the non-linear stress-strain relationship of soils, the lateral stiffness 
+springs at the foundation level will vary depending on the axial load, lateral load, and 
+moment imposed on the foundation.  Therefore, the lateral stiffness provided herein 
+should be used for initial estimation of the lateral stiffness of the pile supporting the boat 
+landing wharf.  If the structural loads acting on the boat landing wharf change, Geolabs 
+should perform additional analyses and provide updated lateral stiffness springs based 
+on the updated structural loads. 
+3.3 
+Corrosion Protection 
+One set of laboratory corrosion tests, including pH, minimum resistivity, chloride 
+content, and sulfate content, was performed by TestAmerica Laboratories, Inc. to 
+evaluate the corrosivity of the on-site soils encountered.  Levels of the chloride content 
+of the on-site soils encountered near the existing mudline are moderately high on the 
+order of 2,500 parts per million (ppm), while the sulfate content is relatively low, less 
+than 15 ppm.  Based on the chloride and sulfate content tests performed on the on-site 
+soils, we believe that either Type I or Type II cement may be used for the concrete in 
+contact with the ground planned for the project.  However, considerations should be 
+given to increasing concrete cover of the pile and/or specifying 28-day concrete strength 
+of 5,000 pounds per square inch (psi) with water-cement ratio of 0.4 in accordance with 
+ACI 318, since the pile foundation would be installed in the sea water environment.  It 
+may be appropriate to consult with a professional corrosion engineer to review the test 
+results and provide detailed recommendations for corrosion protection. 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 7104-00 
+GEOLABS, INC. 
+Page 18 
+Hawaii • California 
+The resistivity value of the near-surface soil sample tested generally was on the 
+order of 65 ohm-cm (based on the soluble soil sample prepared in accordance with 
+Standard Methods for the Examination of Water and Wastewater SM 2510B).  The 
+minimum resistivity value corresponds to Corrosion Rating of 1 (extremely corrosive) 
+based on the guidelines provided by the City & County of Honolulu – Board of Water 
+Supply. 
+3.4 
+Design Review 
+Preliminary and final drawings and specifications for the proposed Repair 
+Quaywalls S14A, S16A and S18A should be forwarded to Geolabs for review and 
+written comments prior to solicitation for construction bids.  This review is necessary to 
+evaluate conformance of the plans and specifications with the intent of the foundation 
+recommendations provided herein.  If this review is not made, Geolabs cannot be 
+responsible for misinterpretation of our recommendations. 
+3.5 
+Construction Monitoring 
+Geolabs should be retained to provide geotechnical services during construction 
+of the proposed project.  The critical items of construction monitoring that require 
+"Special Inspections" include the following. 
+Review of the proposed pile driving equipment 
+Performance of wave equation analyses based on the pile driving 
+equipment 
+Observation of the test pile driving and dynamic pile load test 
+Observation of the production pile driving operations 
+A Geolabs representative should monitor the construction to observe compliance 
+with the intent of the design concepts, specifications, or recommendations and to 
+expedite suggestions for design changes that may be required in the event that 
+subsurface conditions differ from those anticipated at the time this report was prepared. 
+The recommendations provided herein are contingent upon such observations. 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 7104-00 
+GEOLABS, INC. 
+Page 19 
+Hawaii • California 
+If the actual subsurface conditions encountered during construction are different 
+from those assumed or considered in this report, then appropriate design modifications 
+should be made. 
+END OF DISCUSSION AND RECOMMENDATIONS 
+W.O. 7104-00 
+GEOLABS, INC. 
+Page 20 
+Hawaii • California 
+SECTION 4.  LIMITATIONS 
+The analyses and recommendations submitted herein are based, in part, upon 
+information obtained from the drilled borings and RFP documents.  Variations of the 
+subsurface conditions between and beyond the drilled borings may occur, and the 
+nature and extent of these variations may not become evident until construction is 
+underway.  If variations then appear evident, it will be necessary to reevaluate the 
+recommendations provided herein. 
+The boring locations indicated herein are approximate, having been taped from 
+visible features at the project site.  Elevations noted on the borings were based on 
+interpolation between the spot elevations and contour lines shown on the plan 
+transmitted by Moffatt and Nichol on May 9, 2015.  The physical locations and 
+elevations of the borings should be considered accurate only to the degree implied by 
+the methods used. 
+The stratification lines shown on the graphic representations of the borings depict 
+the approximate boundaries between soil and/or rock types and, as such, may denote a 
+gradual transition.  Water level data from the borings were measured at the times 
+shown on the graphic representations and/or presented in the text herein.  These data 
+have been reviewed and interpretations made in the formulation of this report.  It should 
+be noted that groundwater fluctuations may occur due to variation in tides, rainfall, 
+temperature, and other factors. 
+This report has been prepared for the exclusive use of Moffatt & Nichol for 
+specific application to the Repair Quaywalls S14A, S16A and S18A design-build project 
+in accordance with generally accepted geotechnical engineering principles and 
+practices.  No warranty is expressed or implied. 
+This report has been prepared solely for the purpose of assisting the design 
+engineers in the design of the proposed project.  Therefore, this report may not contain 
+sufficient data, or the proper information, to serve as the basis for preparation of 
+construction cost estimates. 
+SECTION 4. LIMITATIONS  
+W.O. 7104-00 
+GEOLABS, INC. 
+Page 21 
+Hawaii • California 
+The owner/client should be aware that unanticipated soil conditions are commonly 
+encountered.  Unforeseen soil conditions, such as perched groundwater, soft deposits, 
+hard layers or cavities, may occur in localized areas and may require additional probing or 
+corrections in the field (which may result in construction delays) to attain a properly 
+constructed project.  Therefore, a sufficient contingency fund is recommended to 
+accommodate these possible extra costs. 
+This geotechnical engineering evaluation conducted at the project site was not 
+intended to investigate the potential presence of hazardous materials and/or 
+archeological features existing at the site.  It should be noted that the equipment, 
+techniques, and personnel used to conduct a geo-environmental exploration differ 
+substantially from those applied in geotechnical engineering. 
+END OF LIMITATIONS 
+CLOSURE
+The following plates and appendices are attached and complete this report:
+Project Location Map ..........:: ccc nn nn nn nn nn nnn ini iniiieeeeneeeeeeee Plate 1
+SITS PHAN scserececenss anes cmmsmeucenes au even oe estes suemmeenmemeenemmustremme nme mealcetea Gia Sha mae Ui wien ea MaRS Om Plate 2
+Typical Existing Pile Foundation ............00:::: ci lll i nn nin niin Plate 3
+Lateral Spring Stiffness of Existing Pile Foundation ..........eeeeeeseeeeees Plates 4 thru 7
+Figle ESGlOGAtION ssa ccs ccinansanscs ean mins mat easonnnas nan. cnin tan am eat MO Mean MRE eS SNR HO = Appendix A
+=| of) £- 110) a VAN A >\~) | Appendix B
+Laboratory Tests by TestAmerica Laboratories INC. ..............::::eceeeeeeeeeeeeeeeeees Appendix C
+PrevioUS Boring LOGS .........::::sseeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeesanaaaneeneenenens Appendix D
+“QOQQQOQOOO-
+Respectfully submitted,
+GEOLABS, INC.
+os Chen, P.E.
+Senior Project Engineer
+CSM:JC:nif—
+h:\7100Series\7104-00.jc2
+W.O. 7104-00 GEOLABS, INC. Page 22
+Hawaii ° California
+PLATES 
+REPAIR QUAYWALLS S14A, S16A AND S18A
+PROJECT LOCATION MAP
+GRAPHIC SCALE
+1000
+2000
+2000
+0
+FT.
+PROJECT LOCATION
+GENERAL PROJECT LOCATION
+N
+WAHIAWA
+WAIKIKI
+HONOLULU
+AIEA
+PEARL CITY
+WAIPAHU
+EWA
+BARBERS POINT
+NANAKULI
+WAIANAE
+WAIALUA
+HALEIWA
+KAHUKU
+POINT
+DIAMOND
+HEAD
+HAWAII
+KAI
+WAIMANALO
+KAILUA
+KANEOHE
+KAHALUU
+PUNALUU
+HAUULA
+KAENA POINT
+ISLAND MAP
+NO SCALE
+PEARL HARBOR, OAHU, HAWAII
+SEPTEMBER 2015
+1" = 2,000'
+DATE
+SCALE
+1
+7104-00
+DRAWN BY
+ASP
+W.O.
+PLATE
+N
+PACIFIC      OCEAN
+CAD User: ASPASIONJR  File Last Updated: September 24, 2015 8:54:43am  Plot Date:  September 24, 2015 - 8:55:31am
+File: T:\Drafting\Working\7104-00RepairQuaywallsJBPearlHarborHickam\_7104-00PLM.dwg\PLM
+Plotter: DWG To PDF.pc3  Plotstyle: GEO-No-Dithering.ctb
+REFERENCE: MAP CREATED WITH TOPO!1$7,21$/
+*(2*5$3+,&7(/($7/$65(/
+S18A
+S14A
+APPROXIMATE BORING LOCATION
+LEGEND:
+REPAIR QUAYWALLS S14A, S16A AND S18A
+PEARL HARBOR, OAHU, HAWAII
+7104-00
+DRAWN BY
+ASP
+1" = 50'
+SEPTEMBER 2015
+SCALE
+DATE
+W.O.
+SITE PLAN
+2
+PLATE
+GRAPHIC SCALE
+0
+50
+100
+150 FT.
+CAD User: ASPASIONJR  File Last Updated: September 24, 2015 10:43:51am  Plot Date:  September 24, 2015 - 10:51:28am
+File: T:\Drafting\Working\7104-00RepairQuaywallsJBPearlHarborHickam\_7104-00SitePlan.dwg\SitePlan
+Plotter: DWG To PDF.pc3  Plotstyle: GEO-No-Dithering-Blue-Boring.ctb
+REFERENCE: TOPOGRAPHIC SURVEY MAP TRANSMITTED BY MOFFATT AND
+NICHOL ON MAY 9, 2015.
+APPROXIMATE PREVIOUS BORING LOCATION
+B-104
+B-103
+B-102
+B-101
+5 (PGE 06
+7 (Navy 42)
+6 (Navy 42)
+5 (Navy 42)
+4 (PGE 04)
+BORING NO. (EXISTING)
+4 (PGE 04)
+5 (Navy 42)
+6 (Navy 42)
+7 (Navy 42)
+10 (Navy 42)
+BORING NO. (NEW)
+5 (PGE 06)
+COORDINATES
+B-101
+B-102
+B-103
+B-104
+COORDINATES
+69,791  N
+1,660,628  E
+69,889  N
+1,660,545  E
+70,169  N
+1,660,191  E
+69,980  N
+1,660,435  E
+69,920  N
+1,660,507  E
+70,032  N
+1,360,373  E
+70,005  N
+1,660,405 E
+70,109  N
+1,660,282  E
+70,125  N
+1,660,262  E
+70,186  N
+1,660,194  E
+REPAIR QUAYWALLS S14A, S16A AND S18A
+PEARL HARBOR, OAHU, HAWAII
+7104-00
+DRAWN BY
+ASP
+NOT  TO  SCALE
+SEPTEMBER 2015
+SCALE
+DATE
+W.O.
+3
+PLATE
+CAD User: ASPASIONJR  File Last Updated: June 08, 2015 10:40:36am  Plot Date:  June 08, 2015 - 10:40:36am
+File: C:\Users\aspasionjr\Documents\Drawing1.dwg\TypicalPileFoundationPlan&Section
+Plotter: DWG To PDF.pc3  Plotstyle: GEO-No-Dithering.ctb
+REFERENCE: RFP DRAWING, SPECIAL PROJECT RM12-06, REPAIR QUAYWALLS S14A, S16S & S18A
+AND BLDG. 797, NAVFAC DRAWING NO. 19047312, SHEET S-105 (NEW QUAYWALL S16A PLAN).
+TYPICAL PILE FOUNDATION LAYOUT PLAN
+ NOT TO SCALE
+SECTION A-A' - TYPICAL PILE FOUNDATION SECTION
+ NOT TO SCALE
+A
+A'
+50
+60
+70
+80
+90
+100
+oading (kips)
+EXISTING PILE GROUP TRANSVERSE LATERAL LOAD ANALYSIS
+(Seaward Direction at Pier S14A)
+Pier S14A Existing Pile Group
+W.O. 7104-00
+GEOLABS, INC.
+Hawaii • California
+PLATE 4
+0
+10
+20
+30
+40
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0
+1.2
+1.4
+Lateral Lo
+Lateral Deflection (inches)
+Existing Composite Pile Group Model          
+Three Vertical In‐Bound Piles (10' Spacing)
+Three Vertical Out‐Bound Piles (10' Spacing)       
+Two Batter (4H:12V) Piles (10' Spacing)              
+Existing Composite Pile
+Pinned Pile Head Condition                          
+30‐foot 18" SQ Concrete Pile (E=2,000 kci)                             
+50‐foot 18" Timber Pile (E=1,500 kci)                                    
+25‐ton Compressive Capacity
+50
+60
+70
+80
+90
+100
+oading (kips)
+EXISTING PILE GROUP TRANSVERSE LATERAL LOAD ANALYSIS
+(Seaward Direction at Pier S16A)
+Pier S16A Existing Pile Group
+W.O. 7104-00
+GEOLABS, INC.
+Hawaii • California
+PLATE 5
+0
+10
+20
+30
+40
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0
+1.2
+1.4
+Lateral Lo
+Lateral Deflection (inches)
+Existing Composite Pile Group Model          
+Three Vertical In‐Bound Piles (10' Spacing)
+Three Vertical Out‐Bound Piles (10' Spacing)       
+Two Batter (4H:12V) Piles (10' Spacing)              
+Existing Composite Pile
+Pinned Pile Head Condition                                
+48‐foot 18" SQ Concrete Pile  (E=2,000 kci)
+50‐foot 18" Timber Pile  (E=1,500 kci)
+25‐ton Compressive Capacity
+50
+60
+70
+80
+90
+100
+oading (kips)
+EXISTING PILE GROUP TRANSVERSE LATERAL LOAD ANALYSIS
+(Seaward Direction at Pier S18A East)
+Pier 18A(East) Existing Pile 
+Group
+W.O. 7104-00
+GEOLABS, INC.
+Hawaii • California
+PLATE 6
+0
+10
+20
+30
+40
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0
+1.2
+1.4
+Lateral Lo
+Lateral Deflection (inches)
+Existing Composite Pile Group Model          
+Three Vertical In‐Bound Piles (10' Spacing)
+Three Vertical Out‐Bound Piles (10' Spacing)       
+Two Batter (4H:12V) Piles (10' Spacing)              
+Existing Composite Pile
+Pinned Pile Head Condition                                 
+48‐foot 18" SQ Concrete Pile  (E=2,000 kci)
+50‐foot 18" Timber Pile  (E=1,500 kci)
+25‐ton Compressive Capacity
+50
+60
+70
+80
+90
+100
+oading (kips)
+EXISTING PILE GROUP TRANSVERSE LATERAL LOAD ANALYSIS
+(Seaward Direction at Pier S18A West)
+Pier 18A(West) Existing Pile 
+Group
+W.O. 7104-00
+GEOLABS, INC.
+Hawaii • California
+PLATE 7
+0
+10
+20
+30
+40
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0
+1.2
+1.4
+Lateral Lo
+Lateral Deflection (inches)
+Existing Concrete Pile Group Model          
+Three Vertical In‐Bound Piles (16' Spacing)
+Three Vertical Out‐Bound Piles (16' Spacing)       
+Two Batter (4H:12V) Piles (16' Spacing)              
+Existing Concrete Pile
+Pinned Pile Head Condition                                  
+58‐foot 18" SQ Concrete Pile  (E=2,000 kci)
+40‐ton Compressive Capacity
+APPENDIX A 
+W.O. 7104-00 
+GEOLABS, INC. 
+SEPTEMBER 2015     Page A-1 
+Hawaii • California  
+A P P E N D I X   A 
+Field Exploration 
+We explored the subsurface conditions at the project site by drilling and sampling 
+four borings, designated as Boring Nos. 101 through 104, extending to depths of about 
+82.5 to 114 feet below the top of deck.  The borings were drilled with a truck-mounted or 
+a track-mounted drill rig equipped with continuous flight augers and rotary coring tools.  
+The approximate boring locations are shown on the Site Plan, Plate 2. 
+Our geologist classified the materials encountered in the borings by visual and 
+textural examination in the field and monitored the drilling operations on a 
+near-continuous basis.  Soils, where encountered, were classified in general 
+conformance with the Unified Soil Classification System, as shown on the Soil Log 
+Legend, Plate A-0.1.  Symbols and abbreviations used in the boring logs are also 
+described on the Soil Log Legend.  Deviations made to the soil classification in 
+accordance with ASTM D2487 are described in the Soil Classification Log Key, 
+Plate A-0.2.  Graphic representations of the materials encountered are presented on the 
+Logs of Borings, Plates A-1.1 through A-4.3. 
+Relatively “undisturbed” soil samples were obtained in general accordance with 
+ASTM D3550, Ring-Lined Barrel Sampling of Soils, by driving a 3-inch OD Modified 
+California sampler with a 140-pound hammer falling 30 inches.  In addition, we obtained 
+some samples from the drilled borings in general accordance with ASTM D1586, 
+Penetration Test and Split-Barrel Sampling of Soils, by driving a 2-inch OD standard 
+penetration sampler using the same hammer and drop.  The blow counts needed to 
+drive the sampler the second and third 6 inches of an 18-inch drive are shown as the 
+“Penetration Resistance” on the Logs of Borings at the appropriate sample depths. 
+Core samples of the rock materials encountered at the project site were obtained 
+by using diamond core drilling techniques in general accordance with ASTM D2113, 
+Diamond Core Drilling for Site Investigation. Core drilling is a rotary drilling method that 
+uses a hollow bit to cut into the rock formation. The rock material left in the hollow core 
+of the bit is mechanically recovered for examination and description. Rock cores were 
+described in general accordance with the Rock Description System as shown on the 
+Rock Log Legend, Plate A-0.3. 
+Recovery (REC) is used as a subjective guide to the interpretation of the relative 
+quality of rock masses. Recovery is defined as the actual length of material recovered 
+from a coring attempt versus the length of the core attempt. For example, if 3.7 feet of 
+material is recovered from a 5.0-foot core run, the recovery would be 74 percent and 
+would be shown on the Logs of Borings as REC = 74%. 
+The Rock Quality Designation (RQD) is also a subjective guide to the relative 
+quality of rock masses. RQD is defined as the percentage of the core run in rock that is 
+sound material in excess of 4 inches in length without any discontinuities, discounting 
+Appendix A 
+Field Exploration 
+W.O. 7104-00 
+GEOLABS, INC. 
+SEPTEMBER 2015     Page A-2 
+Hawaii • California  
+any drilling induced fractures or breaks. If 2.5 feet of sound material is recovered from a 
+5.0-foot core run in rock, the RQD would be 50 percent and would be shown on the 
+Logs of Borings as RQD = 50%. Generally, the following is used to describe the relative 
+quality of the rock based on the "Practical Handbook of Physical Properties of Rocks 
+and Minerals." 
+Rock Quality 
+RQD 
+(%) 
+Very Poor 
+0 – 25 
+Poor 
+25 – 50 
+Fair 
+50 – 75 
+Good 
+75 – 90 
+Excellent 
+90 – 100 
+The rippability (or excavation characteristics) of a rock mass is a function of the 
+relative hardness of the rock, its relative quality, brittleness, and fissile characteristics. 
+Dense basalt formations with high RQD values would be very difficult to rip and would 
+probably require more arduous methods of excavation. 
+MORE THAN 50%
+OF COARSE
+FRACTION
+RETAINED ON
+NO. 4 SIEVE
+50% OR MORE OF
+COARSE FRACTION
+PASSING
+THROUGH NO. 4
+SIEVE
+MORE THAN 50%
+OF MATERIAL
+RETAINED ON NO.
+200  SIEVE
+50% OR MORE OF
+MATERIAL PASSING
+THROUGH NO. 200
+SIEVE
+TORVANE SHEAR (tsf)
+(2-INCH) O.D. STANDARD PENETRATION TEST
+POCKET PENETROMETER (tsf)
+(3-INCH) O.D. MODIFIED CALIFORNIA SAMPLE
+UNCONFINED COMPRESSION (ksf)
+A-0.1
+UNCONSOLIDATED UNDRAINED
+TRIAXIAL COMPRESSION (ksf)
+INORGANIC SILTS AND VERY FINE SANDS,
+ROCK FLOUR, SILTY OR CLAYEY FINE SANDS
+OR CLAYEY SILTS WITH SLIGHT PLASTICITY
+POORLY-GRADED GRAVELS, GRAVEL-SAND
+MIXTURES, LITTLE OR NO FINES
+CLAYEY GRAVELS, GRAVEL-SAND-CLAY
+MIXTURES
+WELL-GRADED SANDS, GRAVELLY SANDS,
+LITTLE OR NO FINES
+POORLY-GRADED SANDS, GRAVELLY
+SANDS, LITTLE OR NO FINES
+SC
+Plate
+GM
+FINE-
+GRAINED
+SOILS
+COARSE-
+GRAINED
+SOILS
+CLEAN SANDS
+SANDS WITH
+FINES
+SP
+SANDS
+GRAVELS
+WELL-GRADED GRAVELS,  GRAVEL-SAND
+MIXTURES, LITTLE OR NO FINES
+ML
+CL
+OH
+LESS THAN 5%
+FINES
+GRAVELS WITH
+FINES
+CLEAN
+GRAVELS
+GRAB SAMPLE
+PLASTICITY INDEX (NP=NON-PLASTIC)
+UC
+TV
+PEN
+LEGEND
+WATER LEVEL OBSERVED IN BORING AT TIME OF
+DRILLING
+WATER LEVEL OBSERVED IN BORING AFTER DRILLING
+SM
+MAJOR DIVISIONS
+GP
+MORE THAN 12%
+FINES
+PT
+LESS THAN 5%
+FINES
+UNIFIED SOIL CLASSIFICATION SYSTEM (USCS)
+ORGANIC SILTS AND ORGANIC SILTY
+CLAYS OF LOW PLASTICITY
+SW
+GC
+INORGANIC SILT, MICACEOUS OR
+DIATOMACEOUS FINE SAND OR SILTY
+SOILS
+INORGANIC CLAYS OF HIGH PLASTICITY
+PI
+LL
+CORE SAMPLE
+SHELBY TUBE SAMPLE
+LIQUID LIMIT (NP=NON-PLASTIC)
+TXUU
+SILTY SANDS, SAND-SILT MIXTURES
+CLAYEY SANDS, SAND-CLAY MIXTURES
+LIQUID LIMIT
+50 OR MORE
+CH
+NOTE: DUAL SYMBOLS ARE USED TO INDICATE BORDERLINE SOIL CLASSIFICATIONS
+MH
+SILTS
+AND
+CLAYS
+SILTS
+AND
+CLAYS
+LIQUID LIMIT
+LESS THAN 50
+USCS
+TYPICAL
+DESCRIPTIONS
+GW
+MORE THAN 12%
+FINES
+WATER LEVEL OBSERVED IN BORING OVERNIGHT
+HIGHLY ORGANIC SOILS
+SILTY GRAVELS, GRAVEL-SAND-SILT
+MIXTURES
+OL
+PEAT, HUMUS, SWAMP SOILS WITH HIGH
+ORGANIC CONTENTS
+INORGANIC CLAYS OF LOW TO MEDIUM
+PLASTICITY, GRAVELLY CLAYS, SANDY
+CLAYS, SILTY CLAYS, LEAN CLAYS
+Soil Log Legend
+ORGANIC CLAYS OF MEDIUM TO HIGH
+PLASTICITY, ORGANIC SILTS
+GEOLABS, INC.
+Geotechnical Engineering
+LOG LEGEND FOR SOIL  7104-00.GPJ  GEOLABS.GDT  6/5/15
+A-0.2
+Medium Sand
+Fine Sand
+#4 to #200 (4.75-mm to 0.075-mm)
+#4 to #10 (4.75-mm to 2-mm)
+> 12 inches (305-mm)
+3-inch to #4 (75-mm to 4.75-mm)
+Sieve Number and / or Size
+Gravel
+#10 to #40 (2-mm to 0.425-mm)
+#40 to #200 (0.425-mm to 0.075-mm)
+3 to 12 inches (75-mm to 305-mm)
+Description
+PP Readings
+(tsf)
+2.0 - 4.0
+> 4.0
+N-Value (Blows/Foot)
+MCS
+0 - 4
+RELATIVE DENSITY / CONSISTENCY
+GRAIN SIZE DEFINITION
+ABBREVIATIONS
+N-Value (Blows/Foot)
+0 - 7
+Dry:    Absence of moisture, dry to the touch
+Moist: Damp but no visible water
+Wet:   Visible free water, usually soil is below water table
+WOH:  Weight of Hammer
+WOR:  Weight of Drill Rods
+SPT:    Standard Penetration Test Split-Spoon Sampler
+MCS:   Modified California Sampler
+PP:      Pocket Penetrometer
+4 - 7
+7 - 15
+15 - 27
+27 - 55
+SPT
+0 - 2
+> 55
+> 30
+4 - 8
+15 - 30
+MOISTURE CONTENT DEFINITIONS
+SPT
+0 - 4
+4 - 10
+10 - 30
+30 - 50
+> 50
+MCS
+Loose
+EXAMPLE: Soil Containing 60% Gravel, 25% Sand, 15% Fines. Described as: SILTY GRAVEL with some sand
+Plate
+GRANULAR SOIL (- #200 <50%)
+2 - 4
+8 - 15
+Relative
+Density
+Very Loose
+Dense
+Very Dense
+COHESIVE SOIL (- #200    50%)
+PRIMARY constituents are composed of the largest
+percent of the soil mass. Primary constituents are
+capitalized and bold (i.e., GRAVEL, SAND)
+accessory descriptions compose of the following:
+with some: >12%
+with a little: 5 - 12%
+with traces of: <5%
+accessory descriptions are lower cased and follow the
+Primary and Secondary Constituents
+(i.e., SILTY GRAVEL with a little sand)
+accessory descriptions compose of the following:
+with some: >12%
+with a little: 5 - 12%
+with traces of: <5%
+accessory descriptions are lower cased and follow the
+Primary and Secondary Constituents
+(i.e., SILTY CLAY with some sand)
+PRIMARY constituents are based on plasticity. Primary
+constituents are capitalized and bold (i.e., CLAY, SILT)
+SECONDARY constituents are composed of a
+percentage less than the primary constituent. If the soil
+mass consists of 12 percent or more fines content, a
+cohesive constituent is used (SILTY or CLAYEY);
+otherwise, a granular constituent is used (GRAVELLY
+or SANDY) provided that the secondary constituent
+consists of 20 percent or more of the soil mass.
+Secondary constituents are capitalized and bold (i.e.,
+SANDY GRAVEL, CLAYEY SAND) and precede the
+primary constituent.
+SECONDARY constituents are composed of a
+percentage less than the primary constituent, but more
+than 20 percent of the soil mass. Secondary constituents
+are capitalized and bold (i.e., SANDY CLAY, SILTY
+CLAY, CLAYEY SILT) and precede the primary
+constituent.
+Sand
+Boulders
+Cobbles
+Coarse Gravel
+3-inch to 3/4-inch (75-mm to 19-mm)
+Fine Gravel
+3/4-inch to #4 (19-mm to 4.75-mm)
+GEOLABS, INC. CLASSIFICATION*
+Granular Soils
+Cohesive Soils
+Consistency
+Very Soft
+Soft
+Medium Stiff
+Stiff
+Very Stiff
+Hard
+< 0.5
+0.5 - 1.0
+1.0 - 2.0
+7 - 18
+18 - 55
+55 - 91
+> 91
+Medium Dense
+Coarse Sand
+(with deviations from ASTM D2488)
+Soil Classification Log Key
+*Soil descriptions are based on ASTM D2488-09a, Visual-Manual Procedure, with the
+above modifications by Geolabs, Inc. to the Unified Soil Classification System (USCS).
+SOIL.CLASS.LOG.KEY  7104-00.GPJ  GEOLABS.GDT  6/5/15
+GEOLABS, INC.
+Geotechnical Engineering
+A-0.3
+ROCK DESCRIPTIONS
+Plate
+BRECCIA
+CLINKER
+COBBLES
+CORAL
+BASALT
+ROCK DESCRIPTION SYSTEM
+Greater than 24 inches apart
+12 to 24 inches apart
+6 to 12 inches apart
+3 to 6 inches apart
+Less than 3 inches apart
+Rock shows no sign of discoloration or loss of strength.
+Slight discoloration inwards from open fractures.
+Discoloration throughout and noticeably weakened though not able to break by hand.
+Most minerals decomposed with some corestones present in residual soil mass. Can be broken by hand.
+Saprolite. Mineral residue completely decomposed to soil but fabric and structure preserved.
+The following terms describe general fracture spacing of a rock:
+The following terms describe the chemical weathering of a rock:
+ROCK FRACTURE CHARACTERISTICS
+DEGREE OF WEATHERING
+HARDNESS
+BOULDERS
+VOID/CAVITY
+TUFF
+SILTSTONE
+LIMESTONE
+FINGER CORAL
+Unweathered:
+Slightly Weathered:
+Moderately Weathered:
+Highly Weathered:
+Extremely Weathered:
+Very Hard:
+Hard:
+Medium Hard:
+Soft:
+Very Soft:
+SANDSTONE
+Massive:
+Slightly Fractured:
+Moderately Fractured:
+Closely Fractured:
+Severely Fractured:
+Rock Log Legend
+The following terms describe the resistance of a rock to indentation or scratching:
+Specimen breaks with difficulty after several "pinging" hammer blows.
+Example: Dense, fine grain volcanic rock
+Specimen breaks with some difficulty after several hammer blows.
+Example: Vesicular, vugular, coarse-grained rock
+Specimen can be broked by one hammer blow. Cannot be scraped by knife. SPT may penetrate by
+~25 blows per inch with bounce.
+Example: Porous rock such as clinker, cinder, and coral reef
+Can be indented by one hammer blow. Can be scraped or peeled by knife. SPT can penetrate by
+~100 blows per foot.
+Example: Weathered rock, chalk-like coral reef
+Crumbles under hammer blow. Can be peeled and carved by knife. Can be indented by finger
+pressure.
+Example: Saprolite
+GEOLABS, INC.
+Geotechnical Engineering
+LOG LEGEND FOR ROCK  7104-00.GPJ  GEOLABS.GDT  6/5/15
+22
+9
+17
+29
+45
+192
+109
+SW
+CL
+CH
+40
+2
+11
+21
+38
+9
+0
+0
+0
+60
+0
+13-inch CONCRETE SLAB
+WATER
+Dark gray GRAVELLY SAND with some cobbles,
+very loose (harbor deposit)
+grades to medium dense
+Brownish gray SANDY CLAY with some gravel,
+and cobbles, very stiff (weathered volcanic tuff)
+Grayish brown bedded TUFF, severely to
+moderately fractured, moderately weathered,
+hard (volcanic tuff)
+Dark gray inorganic SILTY CLAY with some fine
+sand, medium stiff (lagoonal deposit)
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-45C TRUCK
+ & PQ Coring
+140 lb. wt., 30 in. drop
+5
+10
+15
+20
+25
+30
+35
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation (feet ): 3.5 *
+Sample
+Moisture
+Content (%)
+101
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+March 16, 2015
+March 17, 2015
+David Gremminger
+84 feet
+7104-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 1.1
+(Energy Transfer Ratio = 76.6%)
+GEOLABS, INC.
+Geotechnical Engineering
+REPAIR QUAYWALLS S14A, S16A AND S18A
+PEARL HARBOR, OAHU, HAWAII
+BORING_LOG  7104-00.GPJ  GEOLABS.GDT  6/9/15
+2.6 ft. (at sea level)
+60
+62
+43
+68
+64
+62
+48
+62
+75
+60
+73
+CH
+MH
+MH
+<0.3
+<0.3
+1.5
+4
+WOH
+3
+2
+2
+5
+18
+0
+0
+0
+0
+0
+0
+0
+LL=59
+PI=31
+LL=78
+PI=36
+LL=70
+PI=29
+TXUU
+Su=1.1 ksf
+grades to soft
+grades to very soft with a little shells
+Dark gray SANDY SILT with some gravel and
+shells, very soft (lagoonal deposit)
+Brownish tan with gray mottling CLAYEY SILT
+with some sand, very soft (alluvium)
+grades to brown, soft
+grades to very stiff with some sand and gravel
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-45C TRUCK
+ & PQ Coring
+140 lb. wt., 30 in. drop
+40
+45
+50
+55
+60
+65
+70
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Sample
+Moisture
+Content (%)
+101
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+(Continued from previous plate)
+March 16, 2015
+March 17, 2015
+David Gremminger
+84 feet
+7104-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 1.2
+(Energy Transfer Ratio = 76.6%)
+GEOLABS, INC.
+Geotechnical Engineering
+REPAIR QUAYWALLS S14A, S16A AND S18A
+PEARL HARBOR, OAHU, HAWAII
+BORING_LOG  7104-00.GPJ  GEOLABS.GDT  6/9/15
+2.6 ft. (at sea level)
+42
+35
+40
+MH
+SM
+17
+39
+54
+29
+40
+grades to hard with some volcanic tuff gravel and
+cobbles
+Brownish gray SILTY SAND with some gravel,
+dense (weathered volcanic tuff)
+ Boring terminated at 84 feet
+ * Elevations estimated from Topographic Survey
+Map transmitted by Moffatt and Nichol on May 9,
+2015.
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-45C TRUCK
+ & PQ Coring
+140 lb. wt., 30 in. drop
+75
+80
+85
+90
+95
+100
+105
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Sample
+Moisture
+Content (%)
+101
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+(Continued from previous plate)
+March 16, 2015
+March 17, 2015
+David Gremminger
+84 feet
+7104-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 1.3
+(Energy Transfer Ratio = 76.6%)
+GEOLABS, INC.
+Geotechnical Engineering
+REPAIR QUAYWALLS S14A, S16A AND S18A
+PEARL HARBOR, OAHU, HAWAII
+BORING_LOG  7104-00.GPJ  GEOLABS.GDT  6/9/15
+2.6 ft. (at sea level)
+12
+4
+17
+39
+72
+73
+87
+55
+SW
+SM
+CH
+<0.3
+6
+21
+21
+4
+3
+0
+0
+0
+0
+0
+Sieve
+- #200 =
+25.6%
+13-inch CONCRETE SLAB
+WATER
+Dark gray GRAVELLY SAND, loose (harbor
+deposit)
+grades with some cobbles
+Dark gray SILTY SAND with a little gravel, loose
+(harbor deposit)
+Dark gray SILTY CLAY with a little fine sand,
+very soft (lagoonal deposit)
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-45C TRUCK
+ & PQ Coring
+140 lb. wt., 30 in. drop
+5
+10
+15
+20
+25
+30
+35
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation (feet ): 3.5 *
+Sample
+Moisture
+Content (%)
+102
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+March 18, 2015
+March 19, 2015
+David Gremminger
+114 feet
+7104-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 2.1
+(Energy Transfer Ratio = 76.6%)
+GEOLABS, INC.
+Geotechnical Engineering
+REPAIR QUAYWALLS S14A, S16A AND S18A
+PEARL HARBOR, OAHU, HAWAII
+BORING_LOG  7104-00.GPJ  GEOLABS.GDT  6/9/15
+2.3 ft. (at sea level)
+63
+65
+74
+78
+91
+91
+67
+59
+52
+46
+CH
+<0.3
+<0.3
+WOH
+WOH
+WOH
+WOH
+WOH
+3
+2
+0
+0
+0
+0
+0
+0
+0
+LL=86
+PI=49
+grades with a little shell fragments
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-45C TRUCK
+ & PQ Coring
+140 lb. wt., 30 in. drop
+40
+45
+50
+55
+60
+65
+70
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Sample
+Moisture
+Content (%)
+102
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+(Continued from previous plate)
+March 18, 2015
+March 19, 2015
+David Gremminger
+114 feet
+7104-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 2.2
+(Energy Transfer Ratio = 76.6%)
+GEOLABS, INC.
+Geotechnical Engineering
+REPAIR QUAYWALLS S14A, S16A AND S18A
+PEARL HARBOR, OAHU, HAWAII
+BORING_LOG  7104-00.GPJ  GEOLABS.GDT  6/9/15
+2.3 ft. (at sea level)
+51
+55
+60
+40
+40
+46
+68
+68
+CH
+ML
+MH
+SM
+SM
+0
+24
+6
+14
+30
+30
+56/6"
+Ref.
+23
+0
+0
+0
+0
+0
+0
+0
+Sieve
+- #200 =
+28.4%
+TXUU
+Su=0.9 ksf
+Brownish gray SANDY SILT with some clay, and
+gravel, very stiff (alluvium)
+Brown CLAYEY SILT with some sand, medium
+stiff (alluvium)
+Brown SILTY SAND with some gravel, medium
+stiff (alluvium)
+grades to hard
+Grayish brown bedded TUFF, severely fractured,
+highly weathered, hard to medium hard (volcanic
+tuff)
+Brown SILTY SAND with some clay, grades with
+gravel, medium dense (alluvium)
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-45C TRUCK
+ & PQ Coring
+140 lb. wt., 30 in. drop
+75
+80
+85
+90
+95
+100
+105
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Sample
+Moisture
+Content (%)
+102
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+(Continued from previous plate)
+March 18, 2015
+March 19, 2015
+David Gremminger
+114 feet
+7104-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 2.3
+(Energy Transfer Ratio = 76.6%)
+GEOLABS, INC.
+Geotechnical Engineering
+REPAIR QUAYWALLS S14A, S16A AND S18A
+PEARL HARBOR, OAHU, HAWAII
+BORING_LOG  7104-00.GPJ  GEOLABS.GDT  6/9/15
+2.3 ft. (at sea level)
+36
+70
+80
+SM
+CH
+76
+21
+0
+grades to very dense
+Brown with gray mottling SILTY CLAY, very stiff
+(alluvium)
+ Boring terminated at 114 feet
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-45C TRUCK
+ & PQ Coring
+140 lb. wt., 30 in. drop
+110
+115
+120
+125
+130
+135
+140
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Sample
+Moisture
+Content (%)
+102
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+(Continued from previous plate)
+March 18, 2015
+March 19, 2015
+David Gremminger
+114 feet
+7104-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 2.4
+(Energy Transfer Ratio = 76.6%)
+GEOLABS, INC.
+Geotechnical Engineering
+REPAIR QUAYWALLS S14A, S16A AND S18A
+PEARL HARBOR, OAHU, HAWAII
+BORING_LOG  7104-00.GPJ  GEOLABS.GDT  6/9/15
+2.3 ft. (at sea level)
+28
+11
+11
+38
+76
+GP
+SM
+MH
+3
+7
+17
+6
+1
+LL=72
+PI=37
+10-inch CONCRETE SLAB
+WATER
+Black with brown mottling SANDY
+TUFFACEOUS GRAVEL with tuffaceous
+cobbles and traces of silt, very loose (harbor
+deposit)
+grades to loose
+Gray with black and white mottling SILTY SAND
+with some tuffaceous gravel, loose (harbor
+deposit)
+Dark gray CLAYEY SILT, very soft (lagoonal
+deposit)
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-45C TRACK
+ & PQ Wash Boring
+140 lb. wt., 30 in. drop
+5
+10
+15
+20
+25
+30
+35
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation (feet ): 3.5 *
+Sample
+Moisture
+Content (%)
+103
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+March 18, 2015
+March 19, 2015
+T. Roy
+112.5 feet
+7104-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 3.1
+(Energy Transfer Ratio = 80.7%)
+GEOLABS, INC.
+Geotechnical Engineering
+REPAIR QUAYWALLS S14A, S16A AND S18A
+PEARL HARBOR, OAHU, HAWAII
+BORING_LOG  7104-00.GPJ  GEOLABS.GDT  6/9/15
+2.6 ft. (at sea level)
+201
+66
+79
+87
+91
+74
+55
+51
+56
+MH
+6
+WOH
+2
+WOH
+WOH
+WOH
+WOH
+TXUU
+Su=0.4 ksf
+grades with some wood debris, soft
+grades with traces of wood debris, very soft
+grades with traces of shells, no wood debris
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-45C TRACK
+ & PQ Wash Boring
+140 lb. wt., 30 in. drop
+40
+45
+50
+55
+60
+65
+70
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Sample
+Moisture
+Content (%)
+103
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+(Continued from previous plate)
+March 18, 2015
+March 19, 2015
+T. Roy
+112.5 feet
+7104-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 3.2
+(Energy Transfer Ratio = 80.7%)
+GEOLABS, INC.
+Geotechnical Engineering
+REPAIR QUAYWALLS S14A, S16A AND S18A
+PEARL HARBOR, OAHU, HAWAII
+BORING_LOG  7104-00.GPJ  GEOLABS.GDT  6/9/15
+2.6 ft. (at sea level)
+57
+61
+57
+54
+32
+49
+65
+71
+69
+MH
+MH
+0.8
+0.5
+0.8
+0.5
+WOH
+7
+7
+26
+36
+36
+18
+LL=75
+PI=40
+TXUU
+Su=0.5 ksf
+LL=58
+PI=18
+TXUU
+Su=1.2 ksf
+grades with some tuffaceous gravel, soft to
+medium stiff
+Gray with brown mottling CLAYEY SILT, medium
+stiff (alluvium)
+grades to stiff
+grades with some tuffaceous gravel
+grades to very stiff
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-45C TRACK
+ & PQ Wash Boring
+140 lb. wt., 30 in. drop
+75
+80
+85
+90
+95
+100
+105
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Sample
+Moisture
+Content (%)
+103
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+(Continued from previous plate)
+March 18, 2015
+March 19, 2015
+T. Roy
+112.5 feet
+7104-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 3.3
+(Energy Transfer Ratio = 80.7%)
+GEOLABS, INC.
+Geotechnical Engineering
+REPAIR QUAYWALLS S14A, S16A AND S18A
+PEARL HARBOR, OAHU, HAWAII
+BORING_LOG  7104-00.GPJ  GEOLABS.GDT  6/9/15
+2.6 ft. (at sea level)
+57
+81
+63
+MH
+>4.5
+2.5
+40
+11
+grades to brown with orange and purple mottling,
+with some tuffaceous sand and gravel
+grades to stiff
+ Boring terminated at 112.5 feet
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-45C TRACK
+ & PQ Wash Boring
+140 lb. wt., 30 in. drop
+110
+115
+120
+125
+130
+135
+140
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Sample
+Moisture
+Content (%)
+103
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+(Continued from previous plate)
+March 18, 2015
+March 19, 2015
+T. Roy
+112.5 feet
+7104-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 3.4
+(Energy Transfer Ratio = 80.7%)
+GEOLABS, INC.
+Geotechnical Engineering
+REPAIR QUAYWALLS S14A, S16A AND S18A
+PEARL HARBOR, OAHU, HAWAII
+BORING_LOG  7104-00.GPJ  GEOLABS.GDT  6/9/15
+2.6 ft. (at sea level)
+42
+ML
+SM
+SM
+ML
+5
+21
+19
+1
+9.5-inch CONCRETE SLAB
+WATER
+Dark grayish brown with white and red mottling
+SANDY SILT, soft (harbor deposit)
+Dark grayish brown with white mottling SILTY
+TUFFACEOUS SAND with traces of cobbles
+(basaltic) and sand (coralline) and tuffaceous
+gravel, medium dense (possible dredge debris
+with harbor)
+Gray with white and black mottling SILTY SAND
+(CORALLINE) with some tuffaceous sand,
+medium dense (harbor deposit)
+Brownish gray SANDY SILT with shells, very soft
+(lagoonal deposit)
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-45C TRACK
+ & PQ Wash Boring & Coring
+140 lb. wt., 30 in. drop
+5
+10
+15
+20
+25
+30
+35
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation (feet ): 3.5 *
+Sample
+Moisture
+Content (%)
+104
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+March 16, 2015
+March 17, 2015
+T. Roy
+82.5 feet
+7104-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 4.1
+(Energy Transfer Ratio = 80.7%)
+GEOLABS, INC.
+Geotechnical Engineering
+REPAIR QUAYWALLS S14A, S16A AND S18A
+PEARL HARBOR, OAHU, HAWAII
+BORING_LOG  7104-00.GPJ  GEOLABS.GDT  6/9/15
+2.9 ft. (at sea level)
+42
+54
+44
+44
+50
+41
+69
+73
+ML
+CL
+16
+58
+0.5
+0.1
+0.8
+WOH
+WOH
+WOH
+WOH
+WOH
+4
+100
+100
+LL=47
+PI=17
+LL=42
+PI=19
+UC=
+2130 psi
+grades to gray
+Brownish gray CLAYEY SILT with a little gravel
+(coralline), very soft (lagoonal deposit)
+grades with some gravel (coralline)
+grades to soft to medium stiff
+Brown TUFF, severely fractured, moderately
+weathered, hard
+grades to moderately fractured
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-45C TRACK
+ & PQ Wash Boring & Coring
+140 lb. wt., 30 in. drop
+40
+45
+50
+55
+60
+65
+70
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Sample
+Moisture
+Content (%)
+104
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+(Continued from previous plate)
+March 16, 2015
+March 17, 2015
+T. Roy
+82.5 feet
+7104-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 4.2
+(Energy Transfer Ratio = 80.7%)
+GEOLABS, INC.
+Geotechnical Engineering
+REPAIR QUAYWALLS S14A, S16A AND S18A
+PEARL HARBOR, OAHU, HAWAII
+BORING_LOG  7104-00.GPJ  GEOLABS.GDT  6/9/15
+2.9 ft. (at sea level)
+33
+26
+92
+98
+MH
+GC
+14
+78
+34
+24
+29
+Brown with gray mottling CLAYEY SILT with
+some tuffaceous sand, hard (alluvium)
+Yellowish white with orangish brown mottling
+CLAYEY GRAVEL with some sand (coralline),
+medium dense (completely weathered
+limestone)
+ Boring terminated at 82.5 feet
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-45C TRACK
+ & PQ Wash Boring & Coring
+140 lb. wt., 30 in. drop
+75
+80
+85
+90
+95
+100
+105
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Sample
+Moisture
+Content (%)
+104
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+(Continued from previous plate)
+March 16, 2015
+March 17, 2015
+T. Roy
+82.5 feet
+7104-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 4.3
+(Energy Transfer Ratio = 80.7%)
+GEOLABS, INC.
+Geotechnical Engineering
+REPAIR QUAYWALLS S14A, S16A AND S18A
+PEARL HARBOR, OAHU, HAWAII
+BORING_LOG  7104-00.GPJ  GEOLABS.GDT  6/9/15
+2.9 ft. (at sea level)
+APPENDIX  B 
+W.O. 7104-00 
+GEOLABS, INC. 
+SEPTEMBER 2015     Page B-1 
+Hawaii • California 
+A P P E N D I X   B 
+Laboratory Tests 
+Moisture Content (ASTM D2216) and Unit Weight (ASTM D2937) determinations 
+were performed on selected samples as an aid in the classification and evaluation of 
+soil properties.  The test results are presented on the Logs of Borings at the appropriate 
+sample depths. 
+Nine (9) Atterberg Limits tests (ASTM D4318) were performed on selected soil 
+samples to evaluate the liquid limit (LL), plastic limit (PL), and plasticity index (PI), as an 
+aid in classifying the soils. The test results are summarized on the Logs of Borings at 
+the appropriate sample depths.  Graphic presentation of the test results are provided on 
+Plate B-1. 
+Two (2) Sieve Analysis tests (ASTM C117 and C136) were performed to 
+evaluate the gradation characteristics and to aid in soil classification. Graphic 
+presentation of the test results are provided on Plate B-2. 
+Five (5) Unconsolidated Undrained Triaxial Compression (TXUU) tests 
+(ASTM D2850) were performed on selected soil samples to evaluate the undrained 
+shear strength of the silty and clayey soils encountered. The approximate in-situ 
+effective overburden pressure was used as the applied confining pressure for the 
+relatively “undisturbed” soil sample. The test results and the stress-strain curves are 
+presented on Plates B-3 through B-7. 
+One Unconfined Compression test (ASTM D7012) was performed on a selected 
+rock core sample to evaluate the unconfined compressive strength of the rock formation 
+encountered.  The test results are presented on Plate B-8. 
+One set of Corrosion tests, including one pH (SW 9045C), Minimum Resistivity 
+(SM 2510B), Chloride Content (EPA 300.0), and Sulfate Content (EPA 300.0) tests, 
+were performed by TestAmerica Laboratory, Inc. on a selected soil sample obtained 
+from our field exploration.  The test results are summarized on Plate B-9 and in 
+Appendix C. 
+0
+10
+20
+30
+40
+50
+60
+70
+80
+90
+100
+0
+20
+40
+60
+80
+100
+120
+PI
+Depth (ft)
+Sample
+LL
+PL
+Description
+59
+78
+70
+86
+72
+75
+58
+47
+42
+42.5-44.0
+52.5-54.0
+62.5-64.0
+47.5-49.0
+31.0-32.5
+71.0-72.5
+81.0-82.5
+37.0-38.5
+51.0-51.5
+ML or OL
+CL-ML
+CL or OL
+CH or OH
+28
+42
+41
+37
+35
+35
+40
+30
+23
+Dark gray silty clay (CH)
+Brownish tan with gray mottling clayey silt (MH)
+Brown clayey silt (MH)
+Dark gray silty clay (CH)
+Dark gray clayey silt (MH)
+Dark gray clayey silt (MH)
+Gray with brown mottling clayey silt (MH)
+Brownish gray sandy silt (ML)
+Brownish gray clayey silt (CL)
+B - 1
+MH or OH
+31
+36
+29
+49
+37
+40
+18
+17
+19
+LIQUID LIMIT
+PLASTICITY INDEX
+B-101
+B-101
+B-101
+B-102
+B-103
+B-103
+B-103
+B-104
+B-104
+ATTERBERG LIMITS TEST RESULTS - ASTM D4318
+Plate
+W.O. 7104-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+REPAIR QUAYWALLS S14A, S16A AND S18A
+PEARL HARBOR, OAHU, HAWAII
+G_ATTERBERG_PI-100_LL-120  7104-00.GPJ  GEOLABS.GDT  6/9/15
+0
+5
+10
+15
+20
+25
+30
+35
+40
+45
+50
+55
+60
+65
+70
+75
+80
+85
+90
+95
+100
+0.001
+0.01
+0.1
+1
+10
+100
+3/8
+HYDROMETER
+3
+GRAIN SIZE IN MILLIMETERS
+PERCENT FINER BY WEIGHT
+100
+coarse
+1/2
+Sample
+0.097
+0.114
+0.314
+1.625
+B - 2
+PI
+LL
+PL
+coarse
+1
+1.5
+3
+2
+40
+Depth (ft)
+%Gravel
+8.2
+25.1
+66.2
+46.5
+%Sand
+COBBLES
+Sample
+D30 (mm)
+140
+20
+Description
+Cu
+GRAVEL
+U.S. SIEVE NUMBERS
+D10 (mm)
+Dark gray silty sand (SM) with a little gravel
+Brown silty sand (SM) with some gravel
+16
+fine
+19
+25
+Cc
+3/4
+fine
+SILT OR CLAY
+medium
+GRAIN SIZE DISTRIBUTION - ASTM C117 & C136
+SAND
+%Fine
+60
+4
+30
+200
+4
+6
+25.6
+28.4
+Depth (ft)
+810 14
+50
+U.S. SIEVE OPENING IN INCHES
+6
+D60 (mm)
+D100 (mm)
+B-102
+B-102
+27.5-29.0
+87.5-89.0
+27.5-29.0
+87.5-89.0
+B-102
+B-102
+Plate
+W.O. 7104-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+REPAIR QUAYWALLS S14A, S16A AND S18A
+PEARL HARBOR, OAHU, HAWAII
+G_GRAIN_SIZE  7104-00.GPJ  GEOLABS.GDT  6/5/15
+0
+0.2
+0.4
+0.6
+0.8
+1.0
+1.2
+1.4
+1.6
+1.8
+2.0
+2.2
+2.4
+0
+4
+8
+12
+16
+Location:
+Sample Diameter (inches)
+Sample Height (inches)
+DEVIATOR STRESS, ksf
+Max. Deviator Stress (ksf):
+Confining Stress (ksf):
+AXIAL STRAIN, %
+1.6
+2.3
+Dry Density (pcf)
+Moisture (%)
+Axial Strain at Failure (%)
+Strain Rate (% / minute)
+47.7
+73.1
+15.0
+Brown clayey silt (MH)
+67.5 - 69.0 feet
+Description:
+Depth:
+B-101
+TRIAXIAL UU COMPRESSION TEST - ASTM D2850
+Test Date:
+4.983
+2.407
+0.99
+B - 3
+4/22/2015
+Plate
+W.O. 7104-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+REPAIR QUAYWALLS S14A, S16A AND S18A
+PEARL HARBOR, OAHU, HAWAII
+G_TXUU  7104-00.GPJ  GEOLABS.GDT  6/9/15
+0
+0.2
+0.4
+0.6
+0.8
+1.0
+1.2
+1.4
+1.6
+1.8
+2.0
+0
+4
+8
+12
+16
+20
+Location:
+Sample Diameter (inches)
+Sample Height (inches)
+DEVIATOR STRESS, ksf
+Max. Deviator Stress (ksf):
+Confining Stress (ksf):
+AXIAL STRAIN, %
+2.8
+1.8
+Dry Density (pcf)
+Moisture (%)
+Axial Strain at Failure (%)
+Strain Rate (% / minute)
+59.1
+66.4
+15.0
+Brown silty sand (SM)
+92.5 - 94.0 feet
+Description:
+Depth:
+B-102
+TRIAXIAL UU COMPRESSION TEST - ASTM D2850
+Test Date:
+4.950
+2.393
+1.02
+B - 4
+4/17/2015
+Plate
+W.O. 7104-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+REPAIR QUAYWALLS S14A, S16A AND S18A
+PEARL HARBOR, OAHU, HAWAII
+G_TXUU  7104-00.GPJ  GEOLABS.GDT  6/9/15
+0
+0.1
+0.2
+0.3
+0.4
+0.5
+0.6
+0.7
+0.8
+0
+2
+4
+6
+8
+10
+12
+14
+16
+Location:
+Sample Diameter (inches)
+Sample Height (inches)
+DEVIATOR STRESS, ksf
+Max. Deviator Stress (ksf):
+Confining Stress (ksf):
+AXIAL STRAIN, %
+1.5
+0.8
+Dry Density (pcf)
+Moisture (%)
+Axial Strain at Failure (%)
+Strain Rate (% / minute)
+86.7
+51.3
+8.0
+Dark gray clayey silt (MH)
+56.0 - 57.5 feet
+Description:
+Depth:
+B-103
+TRIAXIAL UU COMPRESSION TEST - ASTM D2850
+Test Date:
+4.990
+2.420
+1.01
+B - 5
+4/22/2015
+Plate
+W.O. 7104-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+REPAIR QUAYWALLS S14A, S16A AND S18A
+PEARL HARBOR, OAHU, HAWAII
+G_TXUU  7104-00.GPJ  GEOLABS.GDT  6/9/15
+0
+0.1
+0.2
+0.3
+0.4
+0.5
+0.6
+0.7
+0.8
+0.9
+1.0
+1.1
+0
+4
+8
+12
+16
+Location:
+Sample Diameter (inches)
+Sample Height (inches)
+DEVIATOR STRESS, ksf
+Max. Deviator Stress (ksf):
+Confining Stress (ksf):
+AXIAL STRAIN, %
+2.1
+1.0
+Dry Density (pcf)
+Moisture (%)
+Axial Strain at Failure (%)
+Strain Rate (% / minute)
+61.5
+64.5
+15.0
+Dark gray clayey silt (MH)
+76.0 - 77.5 feet
+Description:
+Depth:
+B-103
+TRIAXIAL UU COMPRESSION TEST - ASTM D2850
+Test Date:
+5.030
+2.393
+1.01
+B - 6
+4/17/2015
+Plate
+W.O. 7104-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+REPAIR QUAYWALLS S14A, S16A AND S18A
+PEARL HARBOR, OAHU, HAWAII
+G_TXUU  7104-00.GPJ  GEOLABS.GDT  6/9/15
+0
+0.2
+0.4
+0.6
+0.8
+1.0
+1.2
+1.4
+1.6
+1.8
+2.0
+2.2
+2.4
+0
+4
+8
+12
+16
+Location:
+Sample Diameter (inches)
+Sample Height (inches)
+DEVIATOR STRESS, ksf
+Max. Deviator Stress (ksf):
+Confining Stress (ksf):
+AXIAL STRAIN, %
+2.4
+2.4
+Dry Density (pcf)
+Moisture (%)
+Axial Strain at Failure (%)
+Strain Rate (% / minute)
+54.4
+70.6
+15.0
+Gray with brown mottling clayey silt (MH)
+86.0 - 87.5 feet
+Description:
+Depth:
+B-103
+TRIAXIAL UU COMPRESSION TEST - ASTM D2850
+Test Date:
+5.000
+2.400
+1.01
+B - 7
+4/17/2015
+Plate
+W.O. 7104-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+REPAIR QUAYWALLS S14A, S16A AND S18A
+PEARL HARBOR, OAHU, HAWAII
+G_TXUU  7104-00.GPJ  GEOLABS.GDT  6/9/15
+B-104
+66 - 71
+6.390
+3.250
+1.97
+122.1
+17,670
+2,130
+B - 8
+Depth
+Location
+Length
+Diameter
+Length/
+Diameter
+Ratio
+(feet)
+(inches)
+(inches)
+(pcf)
+(psi)
+Density
+Compressive
+Strength
+Load
+(lbs.)
+UNIAXIAL COMPRESSIVE STRENGTH TEST
+ASTM D7012 (METHOD C)
+Plate
+W.O. 7104-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+REPAIR QUAYWALLS S14A, S16A AND S18A
+PEARL HARBOR, OAHU, HAWAII
+G_ROCK_UC_TEST_PORTRAIT  7104-00.GPJ  GEOLABS.GDT  6/5/15
+B-101
+37.5 - 39.0
+7.48
+65
+2500
+13
+SUMMARY OF CORROSIVITY TESTS
+B - 9
+Location
+(feet)
+Depth
+(ohm-cm)
+(mg/kg)
+(mg/kg)
+SM 2510B
+Minimum Resistivity
+pH Value
+EPA 300.0
+Minimum Resistivity
+ASTM G57
+pH Value
+Method 9045C
+ASTM G51
+TEST METHODS (by TestAmerica Laboratories, Inc.)
+TEST METHODS (by Geolabs, Inc.)*
+pH Value
+Minimum Resistivity Chloride Content
+Sulfate Content
+ND: Not Detected Within Reporting Limits
+Sulfate Content
+EPA 300.0
+Sulfate Content
+N/A
+Chloride Content
+Chloride Content
+N/A
+Plate
+W.O. 7104-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+REPAIR QUAYWALLS S14A, S16A AND S18A
+PEARL HARBOR, OAHU, HAWAII
+G_SUMMARY OF CORROSIVITY TESTS  7104-00.GPJ  GEOLABS.GDT  6/5/15
+APPENDIX  C 
+ANALYTICAL REPORT
+TestAmerica Laboratories, Inc.
+TestAmerica Irvine
+17461 Derian Ave
+Suite 100
+Irvine, CA 92614-5817
+Tel: (949)261-1022
+TestAmerica Job ID: 440-105809-1
+Client Project/Site: Repair Quay Walls
+For:
+GeoLabs Inc
+2006 Kalihi St.
+Honolulu, Hawaii 96819
+Attn: John Chen
+Authorized for release by:
+4/10/2015 3:31:42 PM
+Craig Pilialoha, Project Manager I
+(808)486-5227
+craig.pilialoha@testamericainc.com
+The test results in this report meet all 2003 NELAC and 2009 TNI requirements for accredited
+parameters, exceptions are noted in this report. This report may not be reproduced except in full,
+and with written approval from the laboratory. For questions please contact the Project Manager
+at the e-mail address or telephone number listed on this page.
+This report has been electronically signed and authorized by the signatory. Electronic signature is
+intended to be the legally binding equivalent of a traditionally handwritten signature.
+Results relate only to the items tested and the sample(s) as received by the laboratory.
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+Table of Contents
+Client: GeoLabs Inc
+Project/Site: Repair Quay Walls
+TestAmerica Job ID: 440-105809-1
+Page 2 of 13
+TestAmerica Irvine
+4/10/2015
+Cover Page . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+1
+Table of Contents . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+2
+Sample Summary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+3
+Case Narrative . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+4
+Client Sample Results . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+5
+Method Summary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+6
+Lab Chronicle . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+7
+QC Sample Results . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+8
+QC Association Summary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+9
+Definitions/Glossary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+10
+Certification Summary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+11
+Chain of Custody . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+12
+Receipt Checklists . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+13
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+Sample Summary
+TestAmerica Job ID: 440-105809-1
+Client: GeoLabs Inc
+Project/Site: Repair Quay Walls
+Lab Sample ID
+Client Sample ID
+Received
+Collected
+Matrix
+440-105809-1
+B101 37.5-39'
+Solid
+03/17/15 00:01
+04/01/15 10:10
+TestAmerica Irvine
+Page 3 of 13
+4/10/2015
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+Case Narrative
+Client: GeoLabs Inc
+TestAmerica Job ID: 440-105809-1
+Project/Site: Repair Quay Walls
+Job ID: 440-105809-1
+Laboratory: TestAmerica Irvine
+Narrative
+Job Narrative
+440-105809-1
+Comments
+No additional comments. 
+Receipt 
+The samples were received on 4/1/2015 10:10 AM; the samples arrived in good condition, properly preserved and, where required, on ice.  
+The temperatures of the 3 coolers at receipt time were 4.0º C, 4.1º C and 4.4º C.
+HPLC/IC 
+Method(s) 300.0: Due to the high concentration of chloride, the matrix spike / matrix spike duplicate (MS/MSD) for batch 247362 could not 
+be evaluated for accuracy and precision.  The associated laboratory control sample (LCS) met acceptance criteria.B101 37.5-39' 
+(440-105809-1)
+No additional analytical or quality issues were noted, other than those described above or in the Definitions/Glossary page.
+General Chemistry 
+No analytical or quality issues were noted, other than those described in the Definitions/Glossary page.
+TestAmerica Irvine
+Page 4 of 13
+4/10/2015
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+Client Sample Results
+TestAmerica Job ID: 440-105809-1
+Client: GeoLabs Inc
+Project/Site: Repair Quay Walls
+Lab Sample ID: 440-105809-1
+Client Sample ID: B101 37.5-39'
+Matrix: Solid
+Date Collected: 03/17/15 00:01
+Date Received: 04/01/15 10:10
+Method: 300.0 - Anions, Ion Chromatography - Soluble
+RL
+Chloride
+2500
+100
+mg/Kg
+04/08/15 03:35
+20
+Analyte
+Dil Fac
+Analyzed
+Prepared
+Unit
+D
+Result
+Qualifier
+5.0
+mg/Kg
+04/08/15 02:50
+1
+Sulfate
+13
+TestAmerica Irvine
+Page 5 of 13
+4/10/2015
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+Method Summary
+TestAmerica Job ID: 440-105809-1
+Client: GeoLabs Inc
+Project/Site: Repair Quay Walls
+Method
+Method Description
+Laboratory
+Protocol
+MCAWW
+300.0
+Anions, Ion Chromatography
+TAL IRV
+Protocol References:
+MCAWW = "Methods For Chemical Analysis Of Water And Wastes", EPA-600/4-79-020, March 1983 And Subsequent Revisions.
+Laboratory References:
+TAL IRV = TestAmerica Irvine, 17461 Derian Ave, Suite 100, Irvine, CA 92614-5817, TEL (949)261-1022
+TestAmerica Irvine
+Page 6 of 13
+4/10/2015
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+Lab Chronicle
+Client: GeoLabs Inc
+TestAmerica Job ID: 440-105809-1
+Project/Site: Repair Quay Walls
+Client Sample ID: B101 37.5-39'
+Lab Sample ID: 440-105809-1
+Matrix: Solid
+Date Collected: 03/17/15 00:01
+Date Received: 04/01/15 10:10
+Leach
+DI Leach
+SP
+04/07/15 17:53
+TAL IRV
+247504
+Type
+Batch
+Method
+Batch
+Prep Type
+Lab
+Analyst
+Run
+Prepared
+or Analyzed
+Initial
+Amount
+Amount
+Final
+Batch
+Number
+Factor
+Dil
+Soluble
+4.02 g
+40 mL
+Analysis
+300.0
+1
+247362
+04/08/15 02:50
+NN
+TAL IRV
+Soluble
+5 mL
+1.0 mL
+Leach
+DI Leach
+247504
+04/07/15 17:53
+SP
+TAL IRV
+Soluble
+4.02 g
+40 mL
+Analysis
+300.0
+20
+247362
+04/08/15 03:35
+NN
+TAL IRV
+Soluble
+5 mL
+Laboratory References:
+TAL IRV = TestAmerica Irvine, 17461 Derian Ave, Suite 100, Irvine, CA 92614-5817, TEL (949)261-1022
+TestAmerica Irvine
+Page 7 of 13
+4/10/2015
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+QC Sample Results
+TestAmerica Job ID: 440-105809-1
+Client: GeoLabs Inc
+Project/Site: Repair Quay Walls
+Method: 300.0 - Anions, Ion Chromatography
+Client Sample ID: Method Blank
+Lab Sample ID: MB 440-247504/1-A
+Matrix: Solid
+Prep Type: Soluble
+Analysis Batch: 247362
+RL
+Chloride
+ND
+5.0
+mg/Kg
+04/08/15 02:21
+1
+MB
+MB
+Analyte
+Dil Fac
+Analyzed
+Prepared
+D
+Unit
+Result
+Qualifier
+ND
+5.0
+mg/Kg
+04/08/15 02:21
+1
+Sulfate
+Client Sample ID: Lab Control Sample
+Lab Sample ID: LCS 440-247504/2-A
+Matrix: Solid
+Prep Type: Soluble
+Analysis Batch: 247362
+Chloride
+49.9
+46.4
+mg/Kg
+93
+90 - 110
+Analyte
+LCS
+LCS
+D
+Unit
+Result
+Qualifier
+%Rec
+Spike
+Added
+%Rec.
+Limits
+Sulfate
+49.9
+50.0
+mg/Kg
+100
+90 - 110
+Client Sample ID: B101 37.5-39'
+Lab Sample ID: 440-105809-1 MS
+Matrix: Solid
+Prep Type: Soluble
+Analysis Batch: 247362
+Sulfate
+13
+49.8
+59.2
+mg/Kg
+93
+80 - 120
+Analyte
+MS
+MS
+D
+Unit
+Result
+Qualifier
+%Rec
+Spike
+Added
+Sample
+Result
+Sample
+Qualifier
+%Rec.
+Limits
+Client Sample ID: B101 37.5-39'
+Lab Sample ID: 440-105809-1 MSD
+Matrix: Solid
+Prep Type: Soluble
+Analysis Batch: 247362
+Sulfate
+13
+49.6
+59.6
+mg/Kg
+94
+80 - 120
+1
+20
+Analyte
+MSD
+MSD
+D
+Unit
+Result
+Qualifier
+%Rec
+Spike
+Added
+Sample
+Result
+Sample
+Qualifier
+%Rec.
+Limits
+Limit
+RPD
+RPD
+TestAmerica Irvine
+Page 8 of 13
+4/10/2015
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+QC Association Summary
+TestAmerica Job ID: 440-105809-1
+Client: GeoLabs Inc
+Project/Site: Repair Quay Walls
+HPLC/IC
+Analysis Batch: 247362
+Lab Sample ID
+Client Sample ID
+Prep Type
+Matrix
+Method
+Prep Batch
+Solid
+300.0
+247504
+440-105809-1
+B101 37.5-39'
+Soluble
+Solid
+300.0
+247504
+440-105809-1
+B101 37.5-39'
+Soluble
+Solid
+300.0
+247504
+440-105809-1 MS
+B101 37.5-39'
+Soluble
+Solid
+300.0
+247504
+440-105809-1 MSD
+B101 37.5-39'
+Soluble
+Solid
+300.0
+247504
+LCS 440-247504/2-A
+Lab Control Sample
+Soluble
+Solid
+300.0
+247504
+MB 440-247504/1-A
+Method Blank
+Soluble
+Leach Batch: 247504
+Lab Sample ID
+Client Sample ID
+Prep Type
+Matrix
+Method
+Prep Batch
+Solid
+DI Leach
+440-105809-1
+B101 37.5-39'
+Soluble
+Solid
+DI Leach
+440-105809-1 MS
+B101 37.5-39'
+Soluble
+Solid
+DI Leach
+440-105809-1 MSD
+B101 37.5-39'
+Soluble
+Solid
+DI Leach
+LCS 440-247504/2-A
+Lab Control Sample
+Soluble
+Solid
+DI Leach
+MB 440-247504/1-A
+Method Blank
+Soluble
+TestAmerica Irvine
+Page 9 of 13
+4/10/2015
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+Definitions/Glossary
+TestAmerica Job ID: 440-105809-1
+Client: GeoLabs Inc
+Project/Site: Repair Quay Walls
+Glossary
+These commonly used abbreviations may or may not be present in this report.
+Listed under the "D" column to designate that the result is reported on a dry weight basis
+Abbreviation
+%R
+Percent Recovery
+CFL
+Contains Free Liquid
+CNF
+Contains no Free Liquid
+DER
+Duplicate error ratio (normalized absolute difference)
+Dil Fac
+Dilution Factor
+DL, RA, RE, IN
+Indicates a Dilution, Re-analysis, Re-extraction, or additional Initial metals/anion analysis of the sample
+DLC
+Decision level concentration
+MDA
+Minimum detectable activity
+EDL
+Estimated Detection Limit
+MDC
+Minimum detectable concentration
+MDL
+Method Detection Limit
+ML
+Minimum Level (Dioxin)
+NC
+Not Calculated
+ND
+Not detected at the reporting limit (or MDL or EDL if shown)
+PQL
+Practical Quantitation Limit
+QC
+Quality Control
+RER
+Relative error ratio
+RL
+Reporting Limit or Requested Limit (Radiochemistry)
+RPD
+Relative Percent Difference, a measure of the relative difference between two points
+TEF
+Toxicity Equivalent Factor (Dioxin)
+TEQ
+Toxicity Equivalent Quotient (Dioxin)
+TestAmerica Irvine
+Page 10 of 13
+4/10/2015
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+Certification Summary
+Client: GeoLabs Inc
+TestAmerica Job ID: 440-105809-1
+Project/Site: Repair Quay Walls
+Laboratory: TestAmerica Irvine
+All certifications held by this laboratory are listed.  Not all certifications are applicable to this report.
+Authority
+Program
+EPA Region
+Certification ID
+Expiration Date
+Alaska
+CA01531
+10
+State Program
+06-30-15
+Arizona
+State Program
+9
+AZ0671
+10-13-15
+California
+LA Cty Sanitation Districts
+9
+10256
+01-31-16 *
+California
+State Program
+9
+2706
+06-30-16
+Guam
+State Program
+9
+Cert. No. 12.002r
+01-23-16
+Hawaii
+State Program
+9
+N/A
+01-29-16
+Nevada
+State Program
+9
+CA015312007A
+07-31-15
+New Mexico
+State Program
+6
+N/A
+01-29-15 *
+Northern Mariana Islands
+State Program
+9
+MP0002
+01-29-15 *
+Oregon
+NELAP
+10
+4005
+01-29-16
+USDA
+Federal
+P330-09-00080
+06-06-15
+TestAmerica Irvine
+* Certification renewal pending - certification considered valid.
+Page 11 of 13
+4/10/2015
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+Page 12 of 13
+4/10/2015
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+Login Sample Receipt Checklist
+Client: GeoLabs Inc
+Job Number: 440-105809-1
+Login Number: 105809
+Question
+Answer
+Comment
+Creator: Blocker, Kristina M
+List Source: TestAmerica Irvine
+List Number: 1
+True
+Radioactivity wasn't checked or is </= background as measured by a survey 
+meter.
+True
+The cooler's custody seal, if present, is intact.
+True
+Sample custody seals, if present, are intact.
+True
+The cooler or samples do not appear to have been compromised or 
+tampered with.
+True
+Samples were received on ice.
+True
+Cooler Temperature is acceptable.
+True
+Cooler Temperature is recorded.
+True
+COC is present.
+True
+COC is filled out in ink and legible.
+False
+COC is filled out with all pertinent information.
+No sampling time on COC or sample containers
+False
+Is the Field Sampler's name present on COC?
+Incorrect information
+True
+There are no discrepancies between the containers received and the COC.
+True
+Samples are received within Holding Time.
+True
+Sample containers have legible labels.
+True
+Containers are not broken or leaking.
+False
+Sample collection date/times are provided.
+No sampling time on COC or sample containers
+True
+Appropriate sample containers are used.
+True
+Sample bottles are completely filled.
+N/A
+Sample Preservation Verified.
+True
+There is sufficient vol. for all requested analyses, incl. any requested 
+MS/MSDs
+True
+Containers requiring zero headspace have no headspace or bubble is 
+<6mm (1/4").
+True
+Multiphasic samples are not present.
+True
+Samples do not require splitting or compositing.
+N/A
+Residual Chlorine Checked.
+TestAmerica Irvine
+Page 13 of 13
+4/10/2015
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+APPENDIX D 
+ete ed ot ee ee ee ee ee eee eee Cy aces Dt
+4
+aie
+ib Fi 4 68 — o9
+i
+i | Liweawene Corn!
+H Soase writ tele’ Limesore, Oded
+; | éease and sol Ay
+i i Meek 7
+i, { ee Limestne Graf \ | Cray oe bare
+a coe Charrsie, Scare Brows Compact SROSECT WM 23-225 \)
+4 j Soil and Saft (nud \
+a | ewes Compact
+i “ {| 5o\—
+g Meare! 5 —— if
+4 % By oscanie roth i
+ba Cher, rower, Compact 4
+ExiSTING Guay WALL LLLLLL LOVE ELLIOT) o*
+lercanie ruff LZ : an
+z 5 Voleania taté eel lemme
+rower, Meret
+lekernc Puff
+ter
+pe
+fl Sti wre, Compert
+Mote 79 | ieee eer Clay “10 +3. # 015 ie
+100 — CELW- | Gray, Scridey 00 fe ti —- fee" feo = feo =
+An Jnéefer =36 | | 97 Weer :
+ay :
+Lacon
+36 |— Clery, Compact 48 Hie Py ee Bate
+Brawn, bard “God
+Sos a es band Sheds
+| 7 ae : EG Sond J Shells |
+-62 72 Fine
+| 5 | seals Corea
+Clay Sora /4 el ial zi : ial Chey ae Chay cams
+2c . A?
+Here z rare, Cempac rc)
+2 lVokcanic JHE sz, 3 57 3 3
+Cheieg ‘
+row
+isl ae bebo Tel foloarve Toll \ | Yoleanne Teh | -| telearte Toff
+43 |
+Clay eae 38
+| Shee, hard 7%
+32 b+ “L,
+ys ed Brawn eer A Browd io f Brover
+(gees 4, [__| feese Core,
+Volcanic FAtf 25 cay
+"s A Clee Sar, if Ee) fo 20
+48 — Ct Farad BK Brower ey
+Bed COR,OGCR teed
+yilhard  * RS
+CONTRACTORS
+PACIFIC NAVAL AIR BASES
+CONTRACTS NOv 3550 ano NOr 6173
+Jo8 Additienal Cyav hés
+oA Pertierra &
+aires 78ST LOEING:
+RECOMMENDED B Pe :
+MENORD.BY SAGA EVE LOCH
+AnH, ENG, Mech, Ewe___|
+‘STAUCT,ENG..__ ELEeT.eve__|
+NTE ENG, Pao, ENG.
+Cay
+beatae
+= H erty
+APPROVED parE scace ricaf /E
+NAVY PROJECT MANAGER
+tar 8.
+, DRAWING NO.
+" PPROVED DATE:
+} (CPFICER-IN-CHARGE Oy 3550
+| Nov 73
+9. @ DRAWING [’
+NUMBER
+PROJECT _fepair Wharves 513/Si4 JOB No, 2198-026 BORING 4 (Page| of 2
+LOCATION fave! Subtese, Pear! Harber ORAWN BY
+SURFACE ELEVATION 7/06 +
+DATUM “LL assumed as
+MOISTURE
+CONTENT %
+ORY
+DENSITY
+(pcf}
+CORE TYPE
+BLOWS/FT.
+SAMPLES
+GRAPHIC LOG
+SOIL CLASS
+DESCRIPTION
+itt concrete
+i
+5 Very iocse, With
+and gravel, moist
+(Water level at 0
+grades wilnout corgiine sand and g
+Dark grayish brown silly cor railing. gravel, Inose, with sang and
+snells, saturaled (harbor ceposit}
+ary loose and with increasing shells
+or on ane hp rr pn arpa
+graces dark brownish aray
+IM - 2-inen outside diam
+8
+at
+test sample (spit spoon $
+pier)
+core Pacific Geotechni
+nistursed sampia Core run | acific Geotechnical
+DRIVING ENERGY: 140-l. dresping 30 ine Engineers, Inc.
+pee
+DIG toSt Guring extraction
+PROJECT f2psi wharves 513/514 JOB No. _2/98-026 BORING 4 (Page 2 of 2)
+LAB DATA CORE INFO _ © 6
+e @ w © 6
+ge | = |e} z & |/f4]els
+oo f-| = | & ae re) 7 & ba 3
+ar EGopo Zee jase 3 eS = m
+a> |os*|# 13° |2°2| 2 |h | £48
+25), o]}8)8 ~ a 6 | ° DESCRIPTION
+6M
+5? 4
+brown lo Slack volcanic tuff reck, very soll,
+a7 AC
+60/4"
+i , 7 Pacific Geotechnical
+¥! 40-ib. dropping 39 inches Engineers, Inc.
+HES
+[ee
+PROJECT _fepair Whar? SIQ | SOB No, 2626-0168 BORING 5 (Page | of 2)
+LOCATION _feer! Harbor, Oahu, Hawaii DRAWN BY _fa/
+LAB DATA CORE INFO MUDLINE ELEVATION 795.0 4 Feet
+- DATUM _MLLW assumed as +100 fi.
+MOISTURE
+CONTENT &
+CORE TYPE
+BLOWS/FT
+DEPTH (feet)
+SAMPLES
+GRAPHIC LOG
+SOIL CLASS
+Mudline DESCRIPTION
+Dark gray to black elastic sit, very soft, with some
+tuffaceous gravel and shells, saturated, with moderate
+hydrocarbon odor (herbor deposit}
+iwffaceous cobbles, saturated, with slight hydrocarbon odor
+{possible dredge debris with harbor deposit)
+Dark gray fat clay, medium stiff, with tuffaceous gravel and
+cobbles, and shells, saturated (lagoonal deposit with possible
+dredge debris)
+Gark gray silty coralline gravel, very loose, with sand and
+shéils, saturated (lagoonal deposit)
+subrounded tuffaceous gravel, saturated (lagoonal deposit}
+Dark gray to black organic clay, medium stiff, with some
+cecomposed wood and trace of shells, suprounded tuffaceous
+Gravel, saturated (marsh deposit)
+MH Brown elastic sit, very stil, focally moderalely cemented,
+shells, saturated
+NOTES: ~ cae a ; PLATE
+E S 3.3-inch oviside diam. relatively 2-uneh oulside diam. standard penetration L OG OF BORING
+* ndisturbe mple ~~ lest sample (split-spoon sampler}
+a 38
+B - visturbed sample To - Core run Pacific Geotechnical
+[] — Sample lost during extraction GRIVING ENERGY: 140-10. cropping 30 inches et Engineers, Inc. A-154
+eam
+PROJECT Repair Wharf SIQ JOB No, 2826-016 BORING 5 (Page 2 of 2)
+CORE INFO
+MOISTURE
+CONTENT %
+CORE TYPE
+BLOWS/FT.
+DEPTH (feet)
+SAMPLES
+GRAPHIC LOG
+SOIL CLASS
+DESCRIPTION
+I MH
+Ai 94 grades hard and with some tuffaceous sand and gravel,
+and trace of shells
+fri SM Dark grayish brown silly iuffaceaus gravel, dense, with
+tuffeceous sand, saturated
+45
+38 86 95 E i
+50-| (irl
+I grades very dense and with tuffaceous cobbles
+23 14 I
+Boring completed at 52.5 feet below mudline on O8~21-04.
+“a 3.3+inch outside diam. relatively IA - 2-inch outsioe diam, standard penetration L OG OF BORING
+aa
+test sample (split~spocon sampler
+undisturbed samole i P p pier}
+. PGE Pacific Geotechnical
+. ~ Core run
+i - Dist a z .
+x - sample ost twine extraction ORTVING ENERGY: 140-1b, dropping 30 inches Engineers, Inc,

@@ -1,0 +1,2241 @@
+SEISMIC SITE RESPONSE STUDY
+HOSPITAL REPLACEMENT P 223
+U S NAVAL HOSPITAL
+SUBIC BAY LUZON REPUBLIC OF THE PHILIPPINES
+CONTRACT NO N62742 85 C 0063
+W MARCH 7 1986
+PREPARED FOR
+BOBROW THOMAS ASSOCIATES INC
+GHOLABS E AVAIL
+Foundation
+2006 KALIH STREET
+96819
+TABLE OF CONTENTS
+INTRODUCTION OOF ERECT ESHEETS STF E ERE OD
+PURPOSE AND SCOPE SHES
+GEOLOGY AND SEISMICITY OF SUBIC BAY
+NO
+General cecccccccccccccccccccccccccccccceccecccsccccceccccce
+Regional Geology cccccccccccccccccccccccccsesveccsccesevces
+Local GEOLOGY cccenccasccnsesnessssueee
+Swampy Low Ground Area Elevation 3 to 6 Feet csseeees
+Stiff High Ground Area Elevation 10 to 100 Feet
+Landfill Area Elevation 6 to 30 Feet crssecscccccccccecs
+SEISMIC SITE RESPONSE ANALYSTS
+Son W
+Design EBarthquake Level ccccccccccccccsccsccccscssccseseee Ll
+Earthquake Acceleration Time Record sscccevccccesscevess 13
+Scaling Factors cescencessccccccenscscccsccsccsccssccesecee 15
+Subsurface Soil Condition occcscceccsceccccvcsvesesesccsees 16
+Soil Profiles for AnalySiS rcccccecscevecsccscccevsvseoes 16
+Development of Response Spectra
+Definition of Response Spectrum ceocsescscccavcsvesscsseses L7
+Program SHAKE sascenscoenccescsevescccsenesssesaeseessesee LB
+Proposed Acceleration Response Spectra cecescocesccveceses 18
+CONCLUSIONS cccccccccaccssscccccccccccesecescssescesscvesoues LY
+INVESTIGATION LIMITATIONS weccccccccccnsccccvsccccssssccsccses AU
+APPENDIX A
+Evaluation of Predominant Period for Earthquake and
+Predominant Period for Maximum Acceleration in Rock e e Plate A 1l
+APPENDIX B
+Program SHAKE and Variation of Dynamic Shear Moduli Plates B l1
+and Damping Ratio with Shear Strain wssccccccscscccseccesse thru B 4
+Output from Program SHARE ese sae see oaseseevoeeave Plates B 5
+thru B 13
+APPENDIX C
+Development of Proposed Response Spectra and Plates C 1
+Normalized Acceleration Response Spectra ssecceseececsess thru C 3
+GEOLABS HAWAII
+19 944
+Table of Contents continued 2
+PROJECT LOCATION MAP ceccccscccvccccccscccccsesccssevessoves Plate 1
+SITE PLAN cccascccccccccvccccccccccccssscccceccsescccecesess Plate 2
+LOCATIONS OF MAJOR EARTHQUAKE FAULTS cccceccecccccecccesess Plate 3
+SEISMIC ACTIVITY OF FAULTS ccccacceccuccccccscsccccsecscese Plate 4
+GENERALIZED CROSS SECTIONS ccccccccccnccsccccccsscccccecee Plates 5 6
+FLOW CHART FOR SITE RESPONSE ANALYSIS cccccesccccscsccesees Plate 7
+SEISMIC RISK EVALUATION cccccccccvccccvcccsscccecseseccecces Plate 8
+EARTHQUAKE ATTENUATION CURVES csccecocsvccvcccscccsvcsseseee Plate 9
+EARTHQUAKE TIME RECORDS FROM JAPAN cccssccccccccecvesescees Plate 10
+ACCELERATION TIME HISTORY ecccscccsccsccccsscccscseceeacceee Plate ll
+IDEALIZED SOIL PROFILE FOR SEISMIC RESPONSE ANALYSIS Plate 12
+PROPOSED ACCELERATION RESPONSE SPECTRA FOR SOIL SITE Plate 13
+PROPOSED ACCELERATION RESPONSE SPECTRA FOR ROCK SITE Plate 14
+GEOLABS HAWAII
+SEISMIC SITE RESPONSE STUDY
+HOSPITAL REPLACEMENT P 223
+U S NAVAL HOSPITAL
+SUBIC BAY LUZON PHILIPPINES
+CONTRACT NO N62742 85 C 0063
+W O 1551 10 MARCH 7 1985
+INTRODUCTION
+This report presents the results of a seismic site response study
+for the proposed Hospital Replacement P 223 U S Naval Hospital at Subic
+Bay on the island of Luzon in the Republic of the Philippines It
+incorporates the findings from the geotechnical engineering investigation
+performed by Geolabs Hawaii for the referenced project during the period
+from June to August of 1985 as well as up dated information from an
+additional geotechnical engineering investigation which is currently
+being performed for the final location of the proposed hospital
+12 246
+W O 1551 10 Page 2
+Attached to this report are three appendices Appendix A presents
+the methods of evaluating predominant period of an earthquake In
+Appendix B details of the computer program SHAKE which was used for
+this site response study are discussed Appendix C presents a
+comparison between the results obtained for this analysis and those
+obtained from analysis carried out in Japan and in the U S A Also
+discussed in this appendix is the developnent of the proposed response
+spectra
+The general location of the project site and its vicinity are shown
+on the Project Location Map Plate 1 The layout of the hospital complex
+is shown on the Site Plan Plate 2
+PURPOSE AND SCOPE
+The purpose of this study is to develop suitable set s of response
+spectrum for the earthquake resistance design of the proposed Hospital
+Replacement project The scope of work for this study which was carried
+out in accordance to our proposals of May 15 and
+included literature review of the geology and seismicity of the Subic Bay
+area interpretation of available soil data at the site and the
+development of the proposed design response spectra
+GEOLABS HAWAII
+iZ 2ge7
+W O 1551 10 Page 3
+GEOLOGY AND SEISMICITY OF SUBIC BAY
+General
+The following sections constitute an assessment of the geologic and
+seismic characteristics of Subic Bay They include an evaluation of the
+regional geology seismology local geology and soil conditions
+As the study of the seismology and the past historical earthquake
+data in the project area were not included in our scope of work we have
+utilized existing reports obtained from the Naval Civil Engineering
+Laboratory in California References 1 and 12 as reference for the above
+information
+Regional Geology
+The geology of Luzon are well published by various geological
+journals in the Philippines The geologic information obtained from
+these sources indicates that Central Luzon may be divided into seven
+geologic provinces based on lithologic variations or structural
+developnent Western Margin Province Western Ultramaphic Metamorphic
+Province Western Volcanic Intrusive Province Central Volcanic Province
+Central Plain Eastern Volcanic Province Eastern Margin Province and the
+Cordillera Central Province
+GEOLABS HAWAITI
+i 2 AY
+W O 1551 10 Page 4
+The site is located in the western Ultramaphic Metamorphic Province
+and is underlain by four major rock types volcanic including lava
+flows and pyroclastic rocks sedimentary metamorphic and intrusive
+Major structural features of central Luzon can be divided into two
+groups Large scale structures associated with the Manila Trench
+subduction zone system are in all geologic provinces of Central Luzon
+Smaller scale structures are related to individual processes of
+emplacement or deformation in distinct geologic areas of Central Luzon
+Central Luzon is composed of two mountain ranges separated by a
+deep intermontane basin The southern Sierra Madre Range forms the
+eastern segment consisting of metamorphic and sedimentary rocks
+Faulting is common throughout the range The margins of the Central
+Valley consist of folded Tertiary sedimentary units The entire basin
+fill has been folded and faulted into broad synclines and anticlines
+Faulting is also found along the boundary of the Central Valley and the
+southern Sierra Madre Range The Central Valley is bounded to the north
+by the Philippine Fault a major tectonic feature that forms the southern
+boundary of the Cordillera Central and Carballo Mountains and separates
+the northern and southern segments of the Sierra Madre
+Central Luzon is mainly the product of volcanic constructional
+processes Many major structural stratigraphic and lithographic
+GEOLABS HAWAII
+16 94a
+W O 1551 10 Page 5
+features of Central Luzon are typical of subduction zone volcanic arc
+systems The eastern margin of central Luzon is formed by the Sierra
+Madre range a block of metamorphic sedimentary and volcanic rocks
+formed before and during westward subduction of the Philippine Sea Plate
+in the Eocene During the Oligocene and Miocene a shift of active
+subduction from beneath the Sierra Madre to the west coast caused
+emplacement of the ultramafic Zambales block as well as subsidence in
+the area of the Central Valley and development of an associated
+volcanic arc complex
+The West Luzon Trough is a fault bounded basin 6 km deep filled
+with 4 km of horizontal sediments of unknown age The east side of the
+West Luzon Trough is fault bounded against a mass of ultramafic rock
+similar to that exposed in the Zambales Range to the north The southern
+extension of the Central Valley lies to the east beneath Manila Bay
+This fault bounded basin is more than 7 km deep in the center and filled
+with thick sequences of Tertiary deep water mainly clastic rocks
+overlain by younger marine sediments terrigenous clastic deposits and
+volcanic rocks
+The locations of the major earthquake faults and the largest
+historical earthquakes from the faults are indicated on Plates 3 and 4
+respectively
+GEOLABS HAWAII
+19 954
+W O 1551 10 Page 6
+Local Geology
+The project site is located within the Western Volcanic Intrusive
+Province of Luzon and comprised of Recent to Pliocene Quaternary Volcanic
+deposits The E W Trending San Antonio Fracture Zone is probably the
+closest identified major Fault zone about 8 to 10 miles northerly of the
+site
+At the project site the volcanic deposits are primarily of
+pyroclastic origin and consist of lithic tuffs volcanic breccia
+agglomerate and volcanic mudflows lahar believed to have been
+generated by explosive eruptions from Mount Natib Mount Santa Rita and
+Mount Balakibok three of the major volcanic centers which comprises the
+Zamoales Bataan Volcanic Highlands
+Examination of the geonorphology of the area leads to the
+conjecture that the site is located on a marine deltaic flat located at
+the toe of a rugged mountain terrain The lowlying area was cut during
+low stands of the sea by streams originating in the mountainous areas to
+the east of the site
+Numerous glacial eustatic sea level variations caused the emergence
+and submergence of the land mass which subsequently produced soil
+deposits at various levels both above and below the present sea level
+GEOLABS HAWAII
+19 981
+W O 1551 10 Page 7
+The site investigation revealed that the subsurface materials in
+the lowlying portins of the study area are mainly of a low energy
+depositional estuarine or lagoonal environment which would be encountered
+in a sheltered bay area such as Subic Bay
+Owing to the low energy estuarine or deltaic environment of
+deposition these soft and highly compressible sediments would tend to be
+coaser sand and gravel deposits close to the hillside and grade to poorly
+consolidated clays and silts containing traces of organic matter away
+from the hillside The soft deposits are underlain at depths by deposits
+of ash flow tuffs and mudflow debris from the eruption of Mount Natib
+The upper soft deposits were probably contemporaneous with the
+Pleistocene sea level changes
+Based on the drilled borings the soil conditions at the project
+site can generally be divided into the following three areas
+Swampy Low Ground Area Elevation 3 to 6 Feet
+This condition encompasses most of the site The soils consist of
+very loose silty sand which grades to very soft silts and clays
+with increasing distance from the hillside This compressive layer
+is as deep as 95 feet along Binictican Drive and thins out to 10 to
+20 feet along the base of the hillside The loose and soft soil
+were underlain by stiff saprolite tuff to about 20 to 115 foot
+depths Below this was rock formation consisting of very dense
+tuff agglomerate
+GEOLABS HAWAIi
+FO om BES
+W O 1551 10 Page 8
+Stiff High Ground Area Elevation 10 to 100 Feet
+Above the swamp near the edge of the higher ground our borings
+encountered little to 15 feet of alluvial fills underlain by dense
+tuff agglomerate
+Landfill Area Elevation 6 to 30 Feet
+Borings drilled on the sanitary landfill at the northwest corner of
+the site encountered about 18 feet of miscellaneous rubbish
+underlain by over 70 feet of soft organic clays and silts Below
+this was stiff saprolite tuff followed by dense tuff agglomerate to
+126 feet the maximum depth drilled in the borings
+Generalized cross sections illustrating the subsurface conditions
+are presented on Plates 5 and 6
+SEISMIC SITE RESPONSE ANALYSIS
+General
+Subic Bay is located in one of the most active seismic zones of the
+world It has been categorized in the Navy Design Manual NAVFAC P 355 as
+a Seismic Zone 4 area on a 0 to 4 zone scale indicating the potential for
+great damage due to earthquake Therefore seismic responses of the site
+and the proposed buildings during anticipated earthquakes should be
+analyzed so that appropriate strengthening measures can be included in
+the design of the building
+GEOLABS HAWAII
+27 93a
+The purpose of our analysis was to develop a response spectra for
+the site for use in the structural earthquake resistant design of the
+buildings
+A detailed analysis of the soil structure interaction problem would
+involve a determination of the response of a structure when it is
+subjected to earthquake ground motions which vary from point to point in
+the soil and rock around and underlying the structure and travel in some
+unknown way across the base of the structure This admittedly complex
+problem is usually idealized for purpose of analysis so that motions in
+the vicinity of the structure are considered to be due to vertical
+propagation of body waves from the underlying stiffer formation to the
+ground surface Reference 9
+The procedure which was followed for our analysis is illustrated on
+the flow chart on Plate 7 and can be further generalized into four
+general tasks as described below
+l A Design Earthquake Level must be selected Based on
+historical earthquake data and empirical relationships between
+the length of fault and the maximum possible earthquake
+generated a statistical analysis can be performed to
+determine the risk probabilities for the occurrence of various
+sizes of earthquakes within 200 miles from the site and their
+attenuation to the site From this analysis a specific size
+of earthquake with a corresponding risk level e g 10
+probability of occurrence in 100 years can be selected by the
+user
+GEOLABS HAWAII
+19 Sees
+The design earthquake risk level was selected in accordance
+with Construction Criteria Manual Once this
+risk level was selected the design earthquake level was then
+determined based on previous research and analysis by the
+Naval Civil Engineering Laboratory Port Huenene California
+A design earthquake record or control motion of the site must
+be obtained From actual earthquake records an earthquake
+with similar magnitude distance from the site predominant
+period and site characteristics should be selected The
+maximum acceleration and predominant period of the earthquake
+record can then be scaled up or down to exactly match the
+design earthquake characteristics
+The soil profile at the site must be determined The
+important elements are the depth to rock and the type and
+consistency of the overburden soil sandy clay soft stiff
+etc
+The site response can be determined by wave propagation theory
+utilizing the design earthquake record Step 2 and soil
+conditions Step 3
+The above tasks are described in detail in subsequent sections of
+this report
+GEOLABS HAWAII
+W O 1551 10 Page ll
+It is our understanding that the hospital replacement will consist
+of a one story Hardened and a two story Conventional Buildings
+The Hardened Building which is heavily reinforced will be partly
+supported by shallow spread footing and partly by short piles both
+bearing on tuff rock formation For the two story Conventional Building
+which is located on the lowlying swampy area the foundation system will
+consist of piles penetrating through the soft swampy material and bearing
+on the underlying tuff rock layer
+Since the site responses during an earthquake are dependent on the
+subsurface soil conditions separate analyses should be performed for
+building sites underlain by different soil conditions For the current
+study analyses for two soil conditions namely one underlain by rock at
+shallow depth and the other underlain by a thick soil deposit overlying
+rock will be presented As a result of the two separate analyses two
+sets of response spectra were obtained Recommendation on the
+application of these proposed response spectra to the Hospital
+Replacement project are presented
+Design Earthquake Level
+According to Construction Criteria Manual the
+seismic design for new construction of health facilities located in
+seismic zones 3 and 4 and designed for complete continuity of operation
+GEOLABS HAWAII
+LP mF fn
+W O 1551 10 Page 12
+should be based on a maximum earthquake occuring at the site with a 10
+per cent probability of exceedance in a 100 year period The design
+earthquake meeting this requirement was obtained from previous analyses
+performed by the Naval Civil Engineering Laboratory Reference 1
+Basically the seismic probability analyses performed by the NCEL
+consisted of
+a compiling historical earthquake data in the area
+6 determining the site acceleration for these earthquakes based
+on empirical relationship between attennation and distance
+from the earthquake source
+c determining relationship between the earthquake magnitude and
+recurrence coefficient utilizing statistical analysis
+d using poisson distribution to compute a probability
+distribution and
+e determining the probability of not exceeding various levels of
+accelerations in the time period specified
+The total risk to the site as shown on Plate 8 were determined
+from the analysis The results indicate that in order to fullfill the
+design criteria as listed in the DOD Manual an earthquake with a maximum
+acceleration on rock of 0 37g at the site should be used
+GEOLABS HAWAII
+wW O 1551 10 Page 13
+By projecting the maximum magnitude of each major fault and their
+minimum distance from the project site both shown on Plate 4 onto the
+attenuation curves shown on Plate 9 it can be seen that the design
+earthquake occurring at the site with a 10 per cent probability of
+exceedance in a 100 year period is more likely to occur at the San
+Antonio Fracture Zone This earthquake will have a magnitude of 7 6 on
+the Richter Scale and the return period is expected to be about 1000
+years
+The predominant period of the design earthquake at the site depends
+on the magnitude of the earthquake and the distance of the site from the
+causative fault Based on empirical relationship for a site at a
+distance of 10 to 20 miles away from the source San Antonio Fracture
+the predominant period of the design earthquake is about 0 26 seconds
+Detailed deduction of the predominant period is presented on Appendix A
+Based on the above the design earthquake with a 10 percent
+probability of exceedance in 100 years would have a magnitude of 7 6 on
+the Richter Scale a maximum acceleration of 0 37g on rock at the site
+and a predominant period of 0 26 seconds
+Earthquake Acceleration Time Record
+In order to carry out the site response analysis by the use of the
+computer program SHAKE the acceleration time history of the design
+earthquake is required Ideally if the design earthquake had previously
+occurred and a recording of the acceleration time history were made at
+GEOLABS HAWAII
+W O 1551 10 Page 14
+the project site then that record would provide a highly accurate
+representation of the earthquake for the analysis However neither such
+hypothetical record nor any other strong motion earthquake records were
+available for earthquakes occurring in the Philippines Therefore
+records of representative earthquakes with similar characteristics from
+other countries had to be obtained
+One of the most important factors controlling the characteristics
+of earthquakes is the geological structure of the earthquake zone
+Unlike those earthquakes occurring in California which are of a
+spreading zone type the earthquakes that occur in the project site or
+in the Philippines as a whole are believed to be of the subduction zone
+type which bears close resemblance to those occurring in Japan
+The representative earthquake preferably recorded on rock should
+be comparable to the design earthquake in the following characteristics
+l Type of earthquake Subduction Type
+2 Magnitude 7 6 on the Richter Scale
+3 Maximum Ground Acceleration 0 37g
+4 Distance from Causative Fault 10 to 20 Miles
+Following an extensive literature research and consultation with a
+seismologist Reference 2 an acceleration time history which was
+recorded at a rock site on the island of Honshu Japan with a magnitude
+of 7 4 and maximum horizontal acceleration of 0 23g was selected
+GEOLABS HAWAII
+9 9G
+W O 1551 10 Page 15
+The records of acceleration velocity and displacement time
+history of this earthquake is shown on Plate 10
+The predominant period for the above earthquake was calculated by
+performing a Fourier Series Analysis and was found to be 0 425 seconds
+Details of the analysis are shown in Appendix A
+Scaling Factors
+A i i Sm Sm
+Two scaling factors one for the maximum acceleration and the other
+for the predominant period were used to modify the
+acceleration time history of the representative earthquakes to
+match the Design Earthquake
+The acceleration factor is used to scale the amplitude of the
+acceleration function of the representative earthquakes up or
+down to produce a maximum acceleration of 0 37g on rock to match
+the design earthquake The predominant period factor is used to
+increase or decrease the time interval of the recorded acceleration
+data of the representative earthquakes so that an exact match of
+predominant periods between the design and the representative
+earthquakes can be obtained
+GEOLABS HAWAII
+IP m Blo
+W O 1551 10 Page 16
+The modified acceleration time history of the design earthquake
+which has a duration of 24 4 seconds is shown on Plate li This
+record represents the characteristics of an earthquake of magnitude
+7 6 occurring near the site and producing a maximum acceleration on
+rock at the site of 0 37g
+Subsurface Soil Condition
+Subsurface soil condition at the site has been presented in our
+earlier report Ref 3
+In brief the subsurface materials at the 2 story Conventional
+Building and southern portion of the Hardened Building sites consist of
+poorly consolidated clays and sands which are soft and highly
+compressible estuarine or detaic sediments containing traces of organic
+matter underlain at depths of 30 to 75 feet by highly weathered tuff
+rock formation
+Near the higher ground at the northern portion of the Hardened
+Building dense and highly weathered tuff agglomerate was encountered at
+the finished grade level of the building
+Soil Profiles for Analysis
+a sn as a mi mt ee a
+To account for their influence on the seismic site response two
+subsurface soil profiles were selected for the analysis These
+idealized soil profiles and the properties of the soil layers are
+presented on Plate 12
+GEOLABS HAWAIi
+LP m Ofnt
+W O 1551 10 Page 17
+It is proposed to raise the site to an elevation of 15 feet above
+MSL by the placement of compacted fill In the idealized profile
+for the soil site it is assumed that complete primary
+consolidation of the soft and loose material under the new fill
+probably with the use of vertical drains has occurred and that the
+soft and loose material have increased in shear strength due to
+consolidation
+Development of Response Spectra
+Definition of Response Spectrum
+Because of its geometry and composition each structure possesses
+unigue values of fundamental period and damping factor If we
+consider a group of different structures with different fundamental
+periods and damping factors excited by the same ground motion
+during an earthquake then the combined influence of the amplitude
+of ground accelerations and their frequency components will create
+different responses in terms of accelerations velocities
+displacement stresses strains bending moments shears and other
+parameters on each of these structures Graphs showing the maximum
+responses induced in the entire range of such structures i e
+different fundamental periods and damping factors are called
+response spectra
+In the present analysis much of the attention was directed to the
+development of the acceleration response spectra
+GEOLABS HAWAII
+1D me 9
+W O 1551 10 Page 13
+Program SHAKE
+8 mS mi Se ne ma
+Program SHAKE computes the responses in a system of homogeneous
+visco elastic horizontal layers subjected to vertically travelling
+shear waves The program incorporates the average non linear
+relationships between the dynamic shear moduli and damping ratios
+of various soils as functions of shear strain and static
+properties Thus by inputting the static properties of the soils
+into the program the dynamic properties can be established by
+these functions with a sufficient degree of accuracy
+The program can compute the responses anywhere in the system from a
+selected design motion given also anywhere in the system In the
+current analyses the selected ground motion from the represen
+tative earthquake is applied at the rock surface and the responses
+are computed for the final finished grade of the project site
+A more detailed description of the program SHAKE and an output from
+a program run are shown in Appendix B
+Proposed Acceleration Response Spectra
+at SNR ON ANNA A
+The proposed acceleration Response Spectra for the two subsurface
+conditions at the hospital replacement site are presented on Plates
+13 and 14 These response spectra represent the maximum seismic
+responses induced by the design earthquake which may occur at a
+distance between 10 to 20 miles from the hospital site along the
+San Antonio Fracture Zone
+GEOLABS HAWAII
+ID ae OSD
+W O 1551 10 Page 19
+The response spectra for the site underlain by a soil rock system
+presented on Plate 13 were modified from those obtained directly
+from the program SHAKE The modification procedure which is
+discussed in detail in Appendix C was used to eliminate the effect
+of a peculiar portion of the single selected earthquake motion
+The modification procedure was not applied to the spectra for the
+rock site because it was believed that the shape of the response
+spectra for rock site was less sensitive to the characteristics of
+the applied ground motion
+Plate 13 indicates that for the soil site the maximum spectral
+acceleration at 5 critical damping is about 0 8q The range of
+period at which the spectral acceleration exceed 0 5g was found to
+be between 0 15 and 0 9 seconds For the rock site the maximum
+spectral acceleration at 5 critical damping is about l lg The
+range of period at which the spectral acceleration exceeded 0 5g
+was found to be between 0 1 and 0 35 seconds Spectral values at
+other periods and critical damping ratio can be read directly or
+interpolated from the response spectra shown on Plates 13 and 14
+CONCLUSIONS
+For an earthquake magnitude of to 20 miles from the
+causative fault it is estimated the motion in rock will have maximum
+acceleration of 0 37g and a predominant period of 0 26 seconds at site
+Modifications of a subduction type earthquake from Japan gave the desired
+characteristics for the motion in an outcropping rock formation at the
+Subic Bay site
+GEOLABS HAWAII
+1D AA
+W O 1551 10 Page 20
+By considering the responses associated with vertical propagation
+of shear waves through the linear viscoelastic system the response
+spectra recommended earlier may be adopted as the base control motion for
+the soil structure interaction systems under earthquake
+We recommend that the Subic Bay response spectrum for the rock
+site as provided herein be used for the Hardened Building Soil
+Interaction System especially at locations towards the north and
+northeast sides The Subic Bay response spectra for the soil site as
+shown in Plate 13 should be used for the two story hospital building
+Soil Interaction System and the south and southwest portions of the
+Hardened Building which are over soft soil
+The preceding sections presented the results of the site response
+analysis carried out with the use of one Japanese strong motion
+earthquake record for the Hospital Replacement at Subic Bay The
+analysis shows clear differences in spectral shapes for different soils
+and geologic conditions indicating the need for consideration of these
+effects in selecting earthquake resistant design criteria
+INVESTIGATION LIMITATIONS
+Our services consist of professional opinions and recommendations
+made in accordance with generally accepted soil and foundation
+engineering principles and practices This warranty is in lieu of all
+other warranties either expressed or implied
+GEOLABS HAWAII
+oa
+W O 1551 10
+Page 21
+The analysis and recommendations submitted in this report are based
+on our site reconnaissance soil information from boring and laboratory
+tests obtained from this soil investigation
+Although the subsurface conditions interpreted from the borings are
+generally correct at the boring locations some variation may be
+encountered during construction
+This report has been prepared in order to assist the engineer in
+the earthquake resistance design of the proposed project
+The following plates and appendices are attached and complete this
+reports
+Appendix A
+Plate A l
+Appendix B
+Plates B l
+thru B 4
+Plates B 5
+thru B 13
+Appendix C
+Plates C 1
+thru C 3
+Evaluation of Predominant Period
+for Earthquake
+Predominant Period for Maximum
+Acceleration in Rock
+Program SHAKE
+Variation of Dynamic Shear Moduli
+and Damping Ratio with Shear Strain
+Output from Program SHAKE
+Development of Proposed Response Spectra
+Normalized Acceleration Response Spectra
+GEOLABS HAWAII
+1 te
+W O 1551 10 Page 22
+Plate 1 Project Location Map
+Plate 2 Site Plan
+Plate 3 Locations of Major Earthquake Faults
+Plate 4 Seismic Activity of Faults
+Plates 5and6 Generalized Cross Sect ions
+Plate 7 Flow Chart for Site Response Analysis
+Plate 8 Seismic Risk Evaluation
+Plate 9 Earthquake Attenuation Curves
+Plate 10 Earthquake Time Records from Japan
+Plate li Acceleration Time History
+Plate 12 Idealized Soil Profile for Seismic
+Response Analysis
+Plate 13 Proposed Acceleration Response
+Spectra for Soil Site
+Plate 14 Proposed Acceleration Response
+Spectra for Rock Site
+000000000000
+Respectfully submitted
+C W ASSOCIATES INC
+cw
+GEOLABS HAWAII
+LOS we Ap of
+10
+ll
+12
+REFERENCES
+FERRITIO J M 1984
+Site Seismicity Study Clark Air Force Base Republic of the
+Philippines Technical Memorandum Naval Civil Engineering
+Laboratory Port Hueneme California
+FURUMOTO A S 1985
+Parameters for Design Earthquake at Naval Hospital Site in Subic
+Bay Philippine Islands A report submitted to Geolabs Hawaii
+Geotechnical Engineering Investigation Hospital Replacement MCON
+P 223 U S Naval Hospital Subic Bay Luzon Republic of the
+Philippines Contract No N62742 85 C 0063
+GEOTECHNICAL SOFTWARE SERVICES 1985
+PC SHAKE a computer program for Earthquake Response Analysis of
+Horizontally Layered Site
+PRAKASH S 1981
+Soil Dynamics McGraw Hill Book Co New York
+MATLOCK H MARTIN G R LAM I P AND TSAI C F 1981
+Soil Pile Interaction in Liquefiable Cohesionless Soils during
+Earthquake Loading Proc International Conference on Recent
+Advances in Geotechnical Earthquake Engineering and Soil Dynamics
+University of
+SCHNABEL P B LYSMER J AND SEED H B
+SHAKE a computer program for Earthquake Response Analysis of
+Horizontally Layered Site Report No Earthquake
+Engineering Research Center University of California Berkeley
+SEED H B AND IDRISS I M 1970
+Soil Moduli and Damping Factors for Dynamic Response Analyses
+Report No Earthquake Engineering Research Center
+University of California Berkeley
+SEED H B AND LYSMER J 1977
+Soil Structure Interaction Analyses by Finite Elements State of
+the Act Fourth SMIRT Conference San Francisco
+SEED H B VGAS C AND
+Site Dependent Spectra for Earthquake Resistant Design Report
+No Earthquake Engineering Research Center University
+of California Berkeley
+SEED H B IDRISS I M AND KIEFER F W 1969
+Characteristics of Rock Motions During Earthquakes Proc of the
+American Society of Civil Engineers Journal of the Soil Mechanics
+and Foundation Division September 1969
+TAKAHASHT S K AND CHELAPATI C V 1984
+Farthquake Hazard Reduction Program at Naval Facilities Public
+Works Center Subic Bay P I Phase I Naval Civil Engineering
+Laboratory Port Hueneme California
+GEOLABS HAWAII
+i g wy oe
+APPEND I X A
+Evaluation of Predominant Period of Earthquake
+SA SO A ES SES SH N NS S N
+From Existing Time Acceleration Record
+The predominant period of a recorded earthquake can be determined
+by performing a Fourier Series Analysis on the recorded data The
+analysis transforms the earthquake time acceleration record into a series
+of equivalent periodic functions The period of the function which has
+the largest amplitude is then determined and taken as the predominant
+period
+For Design Earthquake
+The relationship between magnitude of earthquake distance from
+causative fault and the predominant periods for maximum acceleration in
+rock as shown on Plate A 1 is available for earthquakes occurring in
+the Western United States Ref 11 Such relationship however are not
+available for the Japanese or Philippine earthquakes which are typically
+of the subduction type
+In the present analysis an attempt was made to plot the calculated
+predominant periods of 5 recorded Japanese earthquakes using the method
+mentioned above onto the graph shown on Plate A 1l The plotting as
+shown by the points on Plate A l reveals that for distant earthquakes
+distance from causative fault in excess of 40 km there is a consistent
+difference of about 0 12 seconds between the predominant period of the
+Western United States and Japanese earthquakes For close earthquake
+distance from causative fault less than 40 km the difference is found
+to be reduced to about 0 1 second
+Therefore using the above derived relationship between predominant
+period magnitude and distance the predominant for the design earthquake
+was found to be about 0 26 seconds
+W O 1986
+GEOLABS HAWAII
+PREDOMINANT PERIOD seconds
+320 360
+DISTANCE FROM CAUSATIVE FAULT km
+bnccnatimnieemneaaeetionannrsamednnmnneinnnsanenthnniniansneemnameintnniemmmuanienntinmannecaennmmmealinsnsisssinnanvinnndbeesmnaminsmnmebnvanasiimninioned
+25 50 re oO t25 SO
+DISTANCE FROM CAUSATIVE FAULT miles
+PREDOMINANT PERIODS FOR MAXIMUM ACCELERATIONS IN ROCK
+CFOR WESTERN U S
+LEGEND
+e DATA FROM JAPANESE EARTHQUAKE
+4 WITH MAGNITUDE OF 7 0
+PLATE A 1
+FROM REFERENCE NO 11
+GOL ABS 1AWAII
+Geclogy
+are
+FEBRUARY 1986
+APPENDIX B
+Program Shake
+en et ome
+The program SHAKE was developed by Schnabel Lysmer and Seed at the
+University of California at Berkeley The PC version of this program
+PC SHAKE developed and distributed by Geotechnical Software Services
+was used to perform the current seismic site response analysis
+PC SHAKE offers the same options of the main frame program SHAKE
+which includes the built in relationship between the dynamic moduli and
+damping ratios of soils as a function of shear strain and static
+properties These built in relationships for sand and saturated clay are
+shown on Plates B 1 through B 4 Using these established relationships
+Program SHAKE can be used to perform the response analysis with an in put
+of static properties of the soil layers The strain dependence of
+modulis and damping is accounted for by an equivalent linear procedure
+based on an average effective strain level computed for each layer
+Program SHAKE computes the responses in a system of homogeneous
+viscoelastic layer of horizontal extent subjected to vertically
+travelling waves The program is based on the continuous solution to the
+wave equation adapted for use with transient motions through the Fast
+Fourier Transform Algorithym The design motion can be given anywhere in
+the system and new motions can be computed in any other layer
+An output from a PC SHAKE run for the analysis on rock site is
+presented from Plates B 5 through B 13
+W O 1986
+GEOLABS HAWAII
+AA am OF i
+CLE Zl
+aLV1d
+30 000
+Wilson and Dietrich 1960
+A
+X Thiers 1965
+A Idriss I966
+1967
+Shannon and Wilson 1967
+ZZ Shannon and Wilson 1967
+and Seed 1968
+MUU Hardin and Black 1968
+t 1Aisiks and Tarshansky 1968
+TiSeed and Idriss 1970
+1000 SSSTsai and Housner 1970
+a a
+u Pe
+300 i
+100
+x
+30 ft
+10
+io 4 lo 2 1o7
+Sheor Strain percent eee
+IN SITU SHEAR MODULI FOR i
+FROM REFERENCE NO 8 SATURATED CLAYS ee cis
+1551 1
+FEBRUARY 1986
+ELZ ZI
+40
+35
+30
+25
+Damping Ratios percent
+nm
+d OoDpocead
+Taylor and Menzies 1963
+Taylor and Hughes 1965
+Idriss 1966
+Krizek and Franklin 1967
+Thiers and Seed 1968
+Kovacs 1968
+Donovan 1969
+Taylor and Bacchus 1969
+Taylor and Bacchus 1969
+Hardin and Ornevich 1970
+678 S3LWid
+lo 197 io
+Shear Strain percent verti
+POP OURAN OR eS OL Oe mere Chews leary
+DAMPING RATIOS FOR SATURATED CLAYS
+FROM REFERENCE NO
+Ae TEEN ee
+PLZ 7Z
+pst
+p 36
+3 10
+Shear Strain percent
+SHEAR MODULI OF SANDS AT
+DIFFERENT VOID RATIOS
+FROM REFERENCE NO 8 DATE WO Oe
+10
+Poundation e611 Engineering Geology
+SLE ZI
+q G alVd
+Damping Ratio percent
+28
+Weissman and Hart 1961
+Hardin 1965
+Drnevich Hall and Richart 1966
+Kyo I967
+Silver and Seed 1969
+Donovan 1969
+Hardin and Drnevich 1970
+Kishida and Tokano 1970
+24
+Oo
+q reTO gD
+o
+PO
+O
+lio 4
+Sheor Strain percent
+GHOLABS FiAVWATI
+Foundation Soil sr
+FROM REFERENCE NO 8 DAMPING RATIOS FOR SANDS cae Wo
+FEBRUARY 1986
+W O 1551 10
+U S NAVAL HOSPITAL REPLACEMENT
+SITE RESPONSE ANALYSIS
+GEOLABS HAWAIT
+HONOLULU HI 96819
+FEBRUARY 1986
+GEOLABS HAWAII
+IP PFs
+PLATE B 5
+KER
+SITE RESPONSE ANALYSIS W O BAY HOSPITAL FEBRUARY 1986
+RIKKI KI IRI IK
+OPTION 1
+earthquake FILE173
+2000 acceleration values at time interval 0122
+trailing zeros are added to give a total of 2048 values
+maximum acceleration 222 11800
+at time
+the values will be multiplied by a factor 002
+to give a new maximum acceleration 370
+mean square frequency 11 02 c sec
+OPTION 2
+soil profile no 1 site SUBIC BAY ROCK PROFILE FILE 173
+number of layers 2 depth to bedrock 100 00
+number of first submerged layer 1 depth to water level 290
+layer type g thickness depth eff modulus damping unit shear
+fac fac press wt vel
+2 base 8000
+period 05
+average velocity 8000
+GEOLABS HAWAII PLATE B 6
+i2 2977
+KKKEREKKRKKREEREKERE ERE KERR EK
+SITE RESPONSE ANALYSIS W O BAY HOSPITAL
+KAKA RRREERERRERE
+OPTION 3
+stress and strain properties
+OPTION 4
+assign object motion
+object motion in layer number loutcropping
+OPTION 5
+compute strain compatible properties
+maximum number of iterations 5
+maximum error in percent 5 00
+factor for effective strain 65
+iteration number Ll
+layer type depth eff new damp error
+strain damp used
+new
+g
+g
+used
+FEBRUARY 1986
+Srrocr
+values in time domain
+layer type thickness depth max stain
+ft ft
+00087
+GEOCLABS HAWAII
+max stress
+psf
+40 34
+time
+sec
+6 44
+PLATE B 7
+SITE RESPONSE ANALYSIS W O BAY HOSPITAL FEBRUARY 1986
+KHAKI ERK
+iteration number 2
+layer type depth eff new damp error new g error
+strain damp used g used
+values in time domain
+layer type thickness depth max stain max stress time
+sec
+iteration number 3
+layer type depth eff new damp error new g error
+strain damp used g used
+values in time domain
+layer type thickness depth max stain max stress time
+sec
+period 44
+average velocity 919
+PLATE B 8
+GEOLABS HAWAIi
+KEKEKEKKREK ERE
+SITE RESPONSE ANALYSIS W O BAY HOSPITAL FEBRUARY 1986
+FICK IIA KI RII
+OPTION 6
+compute maximum acceleration in selected layers
+layer depth MAX acc time mean ratio
+Et g sec c sec quiet zone
+02 107
+OPTION 7
+compute response spectrum of object motion
+spectral values for plotting are stored in file B SUBIC3 P
+damping ratio 01
+36823
+30446
+41746
+226677
+235986
+PLATE B 9
+GEOLABS HAWAIl
+KKREKEKEKEE REAR RK K
+SITE RESPONSE ANALYSIS
+FAIR K RRR I KIKI REE
+09305
+11878
+15634
+15404
+14546
+14069
+13876
+12138
+212254
+12643
+13650
+16746
+17603
+18861
+20119
+221215
+23149
+225391
+28251
+damping ratio 02
+no period rel disp
+W O 1551 10
+1 42542
+1 29029
+1 902692
+74047
+62434
+85341
+92420
+79704
+72706
+73409
+74281
+74438
+71340
+69243
+68627
+265094
+74748
+75975
+72794
+70105
+69620
+70837
+72665
+rel vel
+00003
+61191
+90568
+97365
+1 61560
+1 28876
+1 18914
+89322
+65348
+78571
+99809
+1 04875
+1 14860
+1 21543
+1 27839
+SUBIC BAY HOSPITAL
+1 37258
+1 20028
+096719
+64703
+58464
+67845
+81859
+74450
+65283
+58931
+254491
+44861
+242775
+41810
+42881
+46763
+4424
+43094
+42138
+41014
+041557
+242542
+44376
+P S V
+00189
+052748
+094212
+092969
+1 50649
+1 99098
+1 21500
+79210
+53377
+285897
+1 01712
+1 97486
+1 01572
+1 20219
+1 30962
+GEOLABS HAWAII
+2 2
+233479
+227571
+20993
+213283
+11400
+212045
+13326
+11177
+99105
+07681
+06659
+205149
+04640
+04295
+04185
+04058
+293454
+93058
+02743
+92464
+92318
+002216
+202166
+abs acc
+36930
+1 23263
+1 22345
+91117
+1 17825
+70966
+67656
+38779
+23146
+33531
+36214
+234949
+30460
+33562
+34076
+FEBRUARY 1986
+33479
+027554
+20970
+13290
+11408
+12035
+13311
+211175
+09099
+07666
+06646
+05149
+04637
+04294
+04184
+04056
+93453
+03058
+202741
+002462
+002317
+202214
+92165
+P S A
+36911
+1 22440
+1 22557
+90705
+1 17585
+79961
+67738
+38641
+23146
+233522
+36085
+34956
+30492
+33512
+34073
+PLATE B 10
+SITE RESPONSE ANALYSIS
+ERE AINA
+08932
+11256
+14518
+14385
+13799
+13449
+13284
+11839
+12082
+212525
+13470
+16262
+17838
+219251
+220421
+22307
+24385
+26233
+damping ratio 05
+no period rel disp
+W O 1551 10
+1 31065
+1 14013
+97660
+73908
+61845
+81209
+86692
+76761
+69158
+69766
+71966
+272633
+70251
+68398
+67603
+64386
+73429
+74924
+72301
+69956
+69518
+70606
+72256
+rel vel
+00003
+240492
+72704
+74938
+1 01120
+299936
+87337
+74516
+254717
+61853
+84250
+88737
+99219
+97126
+99390
+SUBIC BAY HOSPITAL
+1 23789
+1 09174
+88245
+262496
+56120
+64297
+76014
+69525
+61928
+56335
+252165
+43755
+242173
+241418
+42317
+45412
+242777
+40755
+240319
+39479
+40046
+40858
+41207
+P S V
+00189
+46434
+79083
+70671
+92700
+82748
+86763
+65962
+46724
+70940
+80836
+087581
+83425
+98924
+1 05929
+GEOLABS HAWAII
+iF o Ho
+30181
+25070
+19126
+12844
+10969
+11412
+12380
+10449
+08638
+07355
+06396
+05048
+94592
+94266
+04132
+03954
+03349
+92894
+292630
+02378
+92236
+202134
+02013
+abs acc
+36998
+90223
+1 03894
+69751
+72152
+54497
+48740
+232529
+20317
+27976
+28890
+28563
+25146
+27727
+27795
+FEBRUARY 1986
+30194
+25062
+19132
+12837
+10951
+11406
+12360
+10436
+98631
+07328
+06362
+205022
+04572
+204254
+94129
+03938
+03339
+92892
+292622
+02370
+92233
+092126
+92010
+P S A
+36947
+90606
+1 02876
+68951
+72354
+253822
+43372
+32178
+20260
+27685
+223679
+28483
+25044
+27576
+27560
+PALTE B 11
+KKKKEKEKKEKRKEKKERERRERKRKKRK KKK
+SITE RESPONSE ANALYSIS
+16
+damping ratio
+NO
+OO O HA Om Whe
+be et et
+dm WNF O
+80
+85
+99
+095
+1 00
+1 10
+1 20
+1 30
+1 40
+1 50
+1 60
+1 70
+1 80
+1 90
+2 00
+2 25
+2 50
+2 75
+3 00
+3 25
+3 50
+3 75
+4 00
+period rel disp
+00
+210
+15
+20
+225
+230
+235
+40
+045
+250
+255
+60
+65
+70
+212045
+11454
+09741
+08316
+207945
+09746
+11854
+11773
+11842
+11863
+11785
+11047
+11547
+12095
+12887
+14995
+15499
+15248
+16974
+18192
+19924
+21637
+22379
+10
+00000
+00570
+01512
+01790
+02551
+02882
+03386
+03243
+93046
+04317
+05270
+06161
+06457
+08269
+W O 1551 10
+1 09717
+99346
+84018
+71626
+64065
+70800
+72893
+71349
+64730
+60506
+66054
+67696
+66842
+65636
+64606
+62401
+69974
+72044
+79762
+69309
+69043
+69850
+71093
+rel vel
+00003
+31062
+54622
+254281
+62646
+70991
+60877
+58722
+48775
+52574
+67611
+70377
+80893
+280705
+SUBIC BAY HOSPITAL
+94602
+84667
+68002
+55003
+49920
+55668
+62066
+56903
+53148
+49692
+46281
+40828
+40307
+239997
+40485
+41873
+38952
+34839
+35549
+35171
+35768
+36253
+235153
+P S V
+00189
+35788
+63337
+056221
+64102
+60351
+60734
+250942
+242535
+254244
+60207
+64515
+62414
+74222
+GEOLABS HAWAIIi
+23210
+19549
+14822
+11442
+09805
+09910
+10204
+08594
+07471
+06597
+295795
+04814
+04501
+204234
+04062
+93686
+03084
+02500
+92343
+02138
+92020
+291922
+01734
+abs acc
+37005
+70596
+85010
+255284
+251198
+40041
+34577
+25567
+18855
+222086
+22082
+21517
+18985
+21235
+FEBRUARY 1986
+23075
+19436
+14744
+11298
+09741
+09875
+10092
+08541
+97408
+06464
+05644
+04686
+94369
+94108
+03950
+03631
+93040
+002472
+92312
+02112
+01994
+91886
+201715
+P S A
+36903
+69834
+82393
+254852
+50033
+239254
+33888
+24851
+18444
+21169
+21360
+20981
+18737
+20690
+PLATE B 12
+KAKI RRR ERE RIKER K
+SITE RESPONSE ANALYSIS
+KI IRA
+75
+80
+085
+90
+095
+1 00
+1 10
+1 20
+1 30
+1 40
+1 50
+1 60
+1 70
+1 80
+1 90
+2 00
+2225
+2250
+2 75
+3 00
+3 25
+3 50
+3 75
+4 00
+09378
+09098
+08083
+07553
+06823
+06834
+07841
+08887
+09346
+09397
+09852
+09836
+09990
+10660
+211252
+11882
+13323
+213507
+213406
+13880
+15003
+16484
+217792
+219077
+76874
+85926
+82789
+73540
+264676
+62041
+262665
+63974
+3712
+58786
+53761
+58561
+60811
+61251
+60822
+59917
+59478
+265455
+67999
+68156
+267779
+67845
+68441
+9260
+SUBIC BAY HOSPITAL
+78562
+71453
+59753
+52732
+45126
+42942
+44788
+46533
+45169
+242172
+041269
+38628
+36924
+37211
+37209
+37329
+237205
+33948
+30629
+29071
+29005
+29592
+29810
+29966
+GEOLABS HAWAII
+3 90
+21193
+18085
+14083
+e11757
+09581
+08590
+08160
+07887
+07024
+06099
+95755
+05171
+04588
+04391
+94200
+04029
+03576
+02937
+92296
+201980
+01799
+01741
+01645
+01609
+PEBRUARY 1986
+20440
+17428
+13717
+211433
+99269
+08379
+07945
+07567
+06780
+05878
+05369
+04711
+04238
+04034
+0382
+03642
+93227
+02650
+02173
+201891
+01741
+01650
+01551
+201462
+PLATE B 13
+APPENDIX Cc
+Development of Proposed Response Spectra
+0 NA A SS SA A A tl nt ON Ss nN aR a
+The response spectra for the current analysis are computed by using
+one Japanese Strong Motion Earthquake record In order to study the
+effect due to localized peculiarities of this record on the computed
+response spectra comparisons with published results were made
+Normalized Acceleration Response Spectra
+For purposes of comparison the acceleration response spectra at
+5 critical damping are normalized with respect to maximum ground
+acceleration To convert the normalized spectra back to the usual
+spectra each point on the normalized spectra has to be multiplied by the
+maximum ground acceleration i e spectral acceleration at zero period
+Three comparisons as shown on Plates C 1 through C 3 were made
+They include comparison between
+l Spectra for the soft soil and rock site at Subic Bay area
+i e vesults for the current analyses
+2 spectra for the soft soil site at Subic Bay area the average
+spectrum for a large number of very loose soil site in Japan
+and the average spectrum for 15 soft soil sites in the U S
+Japan and Turkey and
+3 spectrum for the rock site at Subic Bay area the average
+spectrum for 28 rock sites in the United States U C
+Berkeley and the average spectrum for very dense soil in
+Japan
+Discussion on the Comparisons
+1 Although the comparisons were limited to spectra determined
+for 5 damping it could readily be extended to include other
+values of damping if found appropriate
+GEOLABS HAWAII
+i 9 oe
+Appendix C Cont d Page 2
+2 It is clear from the comparisons shown on Plates C 1 through
+C 3 that spectral shapes are site dependent For period
+values of above 0 3 seconds spectral amplifications are much
+higher for soil deposits than for rock as shown on Plate
+C1
+3 The spectral shapes for both rock and soil for Subic Bay are
+in general agreement with those for Japan and the United
+States For the soil site however a dip in the Subic Bay
+spectrum is noted at period of 0 4 seconds
+4 The peak normalized spectral values fron the present analysis
+for the soil site appears to be higher than those from the
+spectra chosen for comparison It is probably due to the fact
+that very strong and close earthquakes were considered for the
+current analysis while for these average spectra both strong
+and medium strong earthquakes were considered
+Proposed Response Spectra for Subic Bay
+Due to the limited earthquake motion records available to represent
+the site control motion localized peculiarities in a particular record
+may be accentuated and therefore we recommend that the earthquake
+response spectra obtained from SHAKE using only one Japanese Strong
+Motion Record be modified to reflect the trends of the average of a large
+number of response spectra for both soil and rock sites
+As shown on Plate C2 the response on rock generally follows the
+average trend Therefore we proposed that no modification be made for
+the computed result However for the spectra obtained for the soil
+site we proposed that modification for the period between 0 25 to 0 8
+seconds be made so that the spectral shape of the proposed response
+spectra may be compatible to those of the average spectra
+The proposed acceleration response spectra for both rock and soil
+site at Subic Bay are shown on Plates 13 and 14
+W FEBRUARY 1986
+GEOLABS HAWAII
+Lae 2
+NORMALIZED SPECTRAL ACCELERATION g
+3 5
+3 0
+NORMALIZED ACCELERATION RESPONSE SPECTRA
+COMPARISON OF SOIL SITES
+on MES BAY
+woe WORLD AVERAGE 415 RECORDS
+PERIOD SEC
+Foundation
+PLATE C 1
+ALB 21
+NORMALIZED SPECTRAL ACCELERATION g
+NORMALIZED ACCELERATION RESPONSE SPECTRA
+COMPARISON OF ROCK SITES
+3 5
+wore SES TO BAY
+wee WLS AVERAGE 826 RECORDS
+HAP AMEE YER Qs
+SPECTRA AT 5 0 DAMPING
+PERIOD SEC
+Foundation Soil Mng ineerimzge Cero sr
+2 Z
+NORMALIZED SPECTRAL ACCELERATION g
+3 5
+3 0
+0 5
+NORMALIZED ACCELERATION RESPONSE SPECTRA
+COMPARISON OF SOIL SITES
+one SEE OG BAY
+wwe WORLD AVERAGE 49 RECORDS
+SPECTRA AT 5 0 DAMPING
+0
+Foundation Soil Mugineoring Geology
+PLATE C 3
+i MAVRAIRA POINT it
+Pagudp agers
+Cabug
+Magsingal 7
+t F
+Viga Pinukpuk
+Die POINT ens Lacgh
+na juyong
+sont
+Narvacan
+Santa Maria
+Mount
+Posonys
+sao
+Mount Cauithe
+CANDON POINT
+Cando
+Luna
+BARIGAYOS POINT
+San Juan
+San Fermandog
+SANLAGO
+Bulinas Bavgunbe
+Acingay i Banha
+CABARMTAN
+11 AND
+My As ay pig Tayuy
+Bugallon San Quint
+San Chis Vite e alan
+HER KANA taarcre farted Deany
+ace cu So Pautdag
+SEC Mae race pier Oren K agree wan Ban ane
+an pcan a
+Candelaria an Boraee Cu
+s te
+SALVADOR SLANG Banjag
+aM é P Cahanatuan
+Patavig my ne A clahalee an
+r Se
+yt Tinka
+f yo ana
+we
+San Felipe
+San Marcle a
+an Marcel A
+ngat fy
+San
+Blo inode one
+i wom gg
+SUgIC in ra ad si
+TA
+146
+Quezon bi
+Abulug
+Efi ted
+i PALALE ISLAND
+Batiesteras
+PHILIPPINE
+SEA
+i PALANAN POINT
+Ethague
+don a
+Jones
+Ne 90 Agusta
+wR yoni inate 7b
+é i i
+DHOMAN POINT t
+f 35 Catiguian i
+gan ROEONSG
+PENINSULA
+ts
+CAPE SAN HOU ORIO
+om GENERAL PROJECT LOCATION
+POLLO
+ISLANDS
+NILA am Antipolo 4
+mr Yee if ytay x
+ey finer bay TRUAGA
+fu 7 i
+Subic Bay Hoor VAN Tainan ISLAND
+Si ANY i
+ae dope ot i
+oF uban pf rag Pon Hi
+a cs G ROINT
+a bs i a 4 woh Gey Ry er Oe i ap BUT joe He
+q oh Fa Pandan
+Me 8a rabid eer i Be Leshan
+4 vm Bay t PN
+MIND PANG sea
+Ne penieng Cage A kd 4 h
+Lubariggm arab oa a 2 Rosaridl ai rue TANDAUAL
+w Fy
+wwnaia Say Mk hes pee 1 bs
+PUB ANG ere a saat re 4 on PANTGU POINT vow N Perunct at le hae ni
+ISLANDS ce manna NE a if he im
+me seal og Vie WAND pay evince
+Mananac eh ANB pANGAS AL macs nie
+an
+care one 4 JANN ah i AGN Meat
+ret Mera ISLAND S AM us Bolangutg TABOO cess cannes
+wo HAPS 4 SH 43 eu
+RK ANUS Pag
+aks a ae Buamvieta Re ori
+Victoria
+es
+fy
+na t
+Nae ts
+Sablayand
+DONGON POINT
+SAPO ALEE
+ny
+wy
+HAL PANS
+morse Ramon
+bat i so RAPU RAP
+Ligag S Pa
+he SEAN
+re ieee stew
+Pe esfinpines
+prone ManiN am Nagar sove er POH
+by Vey ban Pasc oh aaa in Nh i ort g Prato Die
+Pe 0 ie
+fang
+QDMA Stee UP gQ ay Gubat
+CAMPO 154 AN Hance Scan i ewe Barcelona
+wea Bivigwian
+SIMGRA TM AND agahorne
+Rorantora iad e i trosing isan
+Suite fe lan i TACHAS gy
+Nef i AONE ie an ig 1s pe
+i Togo
+DUTBGAN BONY pb cael w nant
+t aes en BIg Rott tee ie S u San Jachin s cee Levedmer
+PROJECT LOCATION MAP
+REFERENCE PHILIPPINE MAP CPAGES 98
+99 OBTAINED FROM READER S DIGEST
+WIDE WORLD ATLAS BY READER S DIGEST
+ASSOCIATION DATED 1979
+PLATE 1
+GHROLABS HAVVAIL
+Foundation Soil Engineering Geology
+DATE
+FEBRUARY 1986
+SCALE
+IN
+DRAWN BY
+KHN
+W 0
+1551 10
+i
+i Scale in Kilometers
+sx
+oko
+Bs I
+ik
+i 1
+Pad
+BR
+wei
+ge
+yeah
+ayo
+12
+EXPLANATION
+MAJOR FRACTURES
+fem awww ane SEISMIC CROSS SECTIONS
+mamma CONTOURS OF DEPTH TO
+TOP OF SUBDUCTING SLASS1
+DASHED WHERE INFERRED
+LOCATION OF MAJOR EARTHQUAKE FAULTS
+GHOLABS H AVAIL
+Foundation Soil Hnuginecring Geology
+DATE
+FEBRUARY 1986
+12 24 PLATE 3
+FROM REFERENCE NO 1
+262 Zl
+SEISMIC ACTIVITY OF FAULTS
+Minimum Largest
+Distance Historical Maximum
+Rupture From Earthquake Possible
+Fault Length Length Site Magnitude Earthquake Type of Fault
+San Antonio Fracture Zone 6 High angle normal
+West Luzon Trough 3 Thrust
+Manila Trench 8 Thrust
+Manila Bay Fracture Zone 5 Unknown
+Verde Island Passage Strike slip
+Philippine Trench 3 Thrust
+Taal Fracture Zone 8 1 Normal
+Iba Fracture Zone 4 Normal
+Richter Scale Largest calculated value using the greatest of various magnitude versus
+rupture length relationships and historical seismicity
+From Reference No 10 W O 1986
+Plate 4
+CONVENTIONAL BUILDING HARDENED BUILDING
+i
+40 B 19
+PROPOSED FINISHED GRADE Sie
+Jorojected TRIAS
+SAPROLITE
+5 EXISTING PARKING LOT 9
+i i Wel f
+BINICTICAN GROUND ro o eee B 16 B 12
+ere
+7 p
+a 5 PROPOSED FILL B 26 B 23 B 20 LOOSE SILTY SANDI
+FILL a OL PRAT RAE Toe
+o ttt SOFT ORGANIC CLAY 7
+a ms aan 4
+SE SILTY F S jpa
+1 LOOSE SILTY FINE SAND 4
+_ 2 SAND AND _1
+29 4 CLAY SEAMS a 1 GRAVEL HIGHLY WEATHERED LITHIC TUFF
+ia C 4
+yt 1 SOFT CLAYEY 2
+SAND AND a
+je 2 Y GRAVEL f
+az 40
+ke
+SOFT SILTY CLAY Or
+in _Loose Sani
+ANDTGRAVEL
+i
+1 2
+SAPROLITE
+80
+_ HIGHLY WEATHERED LITHIC TUFF GENERALIZED SUBSURFACE
+i00 CROSS SECTION A A
+rn HOSPITAL REPLACEMENT P 223
+CONTRACT N62742 85 C 0063
+U S NAVAL HOSPITAL
+120 SUBIC BAY LUZON PHILIPPINES
+PLATE 5
+GHOL ABS HAVWVATI
+Foundation Soil Bngineering Geology
+Toate DRAWN BY E
+MARCH 1986 KHN
+SCALE H 80 WO
+BV Ms
+12 292
+OBTAINED FROM PREVIOUS GEOTECHNICAL
+ENGINEERING INVESTIGATION REPORT BY
+GEOLABS HAWAI DATED
+W
+fo
+80
+60
+EXISTING GROUND me
+i
+40
+CONVENTIONAL BUILDING Hi
+PROPOSED
+RIPRAPPED PROPOSED FINISHED GRADE y
+20 CHANNEL ae
+PROPOSED FILL
+pease AOE ceca
+sUNULL semen neem monies mee
+Ee SOF T ORGANIC CL AY
+Li Om
+liu
+ho
+LOOSE SILTY FINE SAND
+2 t
+oo
+9
+ommemer
+i LOOSE SANDY silt 7 FZ
+t
+1
+4
+40 SOFT SILTY CLAY
+LOOSE CLAYEY
+SAND AND GRAVEL
+1
+a GENERALIZED SUBSURFACE
+60 CROSS SECTION B B
+SAPROLITE HOSPITAL REPLACEMENT P 223
+2 er CONTRACT N62742 85 C 0063
+pr U S NAVAL HOSPITAL
+80 SUBIC BAY LUZON PHILIPPINES
+HIGHLY WEATHERED LITHIC TUFF
+PLATE 6
+Foundation Se0il Engineering Geology
+DATE
+MARCH
+Hlustrated between
+are based on geclogical interare
+Valle these are bei
+7 A
+ieved fo be
+1986
+From laboratory testing determine
+static properties of soil at the
+site
+Check if any earthquake record
+at or close to the site is
+available
+By literature review and consult
+ation with seismologists obtain
+the record of an earthquake similar
+te that of the Design Earthquake
+Yes
+Using a Fourier Series Analysis
+obtain the predominant period of
+the representative earthquake
+Obtain scaling factors to scale
+the representative earthquake up
+or down so that it has similar
+characteristics as the Design
+Earthquake
+Input the scaled record cf the
+representative earthquake the
+soil profile and soil properties
+into the computor program SHAKE
+Use a one dimensional wave
+propagation method to calculate
+the response spectra
+W O 1551 00 AUGUST 1985
+GEOLABS HAWAII Plate 7
+OD LF poo
+SEISMIC RISK EVALUATION
+PROBABILITY NOT PROBABILITY NOT
+RETURN ACCELERATION BEING EXCEEDED BEING EXCEEDED
+TIME CG IN 50 YEARS IN 100 YEARS
+CYR
+90 81
+80 64
+63 40
+38 14
+FROM REFERENCE NO 1
+W O 1986
+GEOLABS HAWAITI PLATE 8
+17 946
+LEG Z
+6 SLVid
+0 8
+0 7
+SANANTON IO
+FRACTURE ZO
+o
+o
+Oo
+ei
+ES
+ts
+Moximum Acceleration 9g
+o
+nN
+0
+Distance from Causative Foult miles
+EARTHQUAKE ATTENUATION CURVES GEOL ABS
+4
+Foundation soit RE Wr
+FROM REFERENCE NO
+FEBRUARY 1986
+4
+RECORD S STATION THO19 SOIL 1
+DATE DEPTH 40 KM EPIC
+ACCELEROGRAM BAND PASS FILTERED BETWEEN
+PEAK VALUES CM S S VEL
+00
+G 103
+z
+ACCELERATION
+03 13 AND
+S CM
+bed
+e
+ft
+a8
+Wwod
+wo
+Si
+x
+Ga
+és
+Ps
+Py
+on
+5
+peed
+Ss
+my
+i
+o
+oy
+a
+od
+o
+a
+i
+ol
+m2
+re4
+t
+Be
+zs
+roy
+wy
+S
+Ze
+ann
+wal
+a
+i
+co
+TIME SEC
+REFERENCE ACCELEROGRAM DATA CPAGE 249 OBTAINED
+FROM REPORT SE 29 STRONG MOTION DATA FROM
+JAPANESE EARTHQUAKES PUBLISHED BY WORLD DATA
+CENTER A FOR SOLID EARTH GEOPHYSICS DATED
+DECEMBER 1981
+emt
+en ae y
+EARTHQUAKE TIME RECORDS
+FROM JAPAN
+Foundation 7
+MARCH
+PLATE 10
+Elevation SOIL SITE ROCK SITE
+Feet
+15
+is a ae
+0 p s f
+Gen
+Clay Su 3000 p s f
+Mee Mee A ee Me a
+potent TTT Sign tad Lt
+Eee
+oo
+makes 2 AIL 2 ee
+Rock Vs
+PLATE 42
+IDEALIZED SOIL PROFILE FOR
+SEISMIC RESPONSE ANALYSIS
+GHOLABS HAVZAII
+Foundation Soil Mngineering Geclogy
+DATE W O
+10
+12 300
+1oe S
+PROPOSED ACCELERATION RESPONSE SPECTRA FOR SOIL SITE
+SUBIC BAY HOSPITAL W O 1986
+2 5
+wee DAMPING 0 0
+woe DAMPING SOX
+_ DAMPING
+SPECTRAL ACCELERATION g
+PERIOD SEC
+Gexelhoese
+BZIE ZI
+PROPOSED ACCELERATION RESPONSE SPECTRA FOR ROCK SITE
+SPECTRAL ACCELERATION g
+SUBIC BAY HOSPITAL W FEB 1986
+2 0
+a DAMPING 0 0
+DAMPING 2 0
+DAMPING
+women DAMPING 40 0
+PERIOD SEC
+GROLABS HAWAII
+Foundation Goll Hngineering Geology

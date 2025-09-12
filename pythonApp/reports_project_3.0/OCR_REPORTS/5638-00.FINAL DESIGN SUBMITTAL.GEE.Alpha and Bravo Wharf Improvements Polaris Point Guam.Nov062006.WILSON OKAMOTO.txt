@@ -1,0 +1,4876 @@
+FINAL DESIGN SUBMITTAL 
+GEOTECHNICAL ENGINEERING EXPLORATION 
+FY06 MCON - PROJECT P-431 
+ALPHA AND BRAVO WHARF IMPROVEMENTS 
+POLARIS POINT, GUAM 
+W.O. 5638-00      NOVEMBER 6, 2006 
+Prepared for 
+WILSON OKAMOTO CORPORATION 
+and 
+BLACK CONSTRUCTION CORPORATION 
+THIS WORK WAS PREPARED BY 
+ME OR UNDER MY SUPERVISION. 
+4-30-08
+SIGNATURE 
+EXPIRATION DATE
+OF THE LICENSE
+GEOLABS, INC. 
+Geotechnical Engineering and Drilling Services 
+2006 Kalihi Street • Honolulu, HI  96819 
+Hawaii • California 
+GEOLABS, INC. 
+Geotechnical Engineering and Drilling Services 
+2006 Kalihi Street • Honolulu, Hawaii 96819 
+Phone: (808) 841-5064 •  Facsimile: (808) 847-1749 •  E-mail: hawaii@geolabs.net 
+Hawaii • California 
+November 6, 2006 
+W.O. 5638-00 
+Mr. Myron Okubo 
+Wilson Okamoto Corporation 
+1907 South Beretania Street, Suite 400 
+Honolulu, HI  96826 
+Dear Mr. Okubo:  
+Geolabs, Inc. is pleased to submit our report entitled "Geotechnical Engineering 
+Exploration, FY06 MCON – Project P-431, Alpha and Bravo Wharf Improvements, 
+Polaris Point, Guam” prepared in support of the design of the proposed Bravo Wharf 
+Extension project. 
+Our work was performed in general accordance with the scope of services 
+outlined in the Subconsultant Agreement of Services entered into on June 27, 2006. 
+Please note that the soil samples recovered during our field exploration (remaining 
+after testing) will be stored for a period of two months from the date of this report.  The 
+samples will be discarded after that date unless arrangements are made for a longer 
+sample storage period. Please contact our office for alternative sample storage 
+requirements, if appropriate. 
+Detailed discussion and specific design recommendations are contained in the 
+body of this report. If there is any point that is not clear, please contact our office. 
+Very truly yours, 
+GEOLABS, INC. 
+       Robin M. Lim, P.E. 
+           Vice President 
+RML:as 
+(h:\5600 Series\5638-00.rl2 – p2) 
+W.O. 5638-00 
+GEOLABS, INC. 
+Page i 
+FINAL DESIGN SUBMITTAL 
+GEOTECHNICAL ENGINEERING EXPLORATION 
+FY06 MCON - PROJECT P-431 
+ALPHA AND BRAVO WHARF IMPROVEMENTS 
+POLARIS POINT, GUAM 
+W.O. 5638-00     NOVEMBER 6, 2006 
+TABLE OF CONTENTS 
+                                                                                                                                       Page 
+SUMMARY OF FINDINGS AND RECOMMENDATIONS ................................................ iii 
+1.0  
+GENERAL ......................................................................................................... 
+1 
+1.1 
+Introduction............................................................................................. 
+1 
+1.2 
+Project Considerations ........................................................................... 
+1 
+1.2.1 Bravo Wharf Extension ............................................................... 
+1 
+1.2.2 Generator Building ...................................................................... 
+2 
+1.2.3 Fire Pump Building...................................................................... 
+2 
+1.3 
+Purpose and Scope................................................................................ 
+2 
+2.0  
+SITE CHARACTERIZATION............................................................................ 
+5 
+2.1 
+Regional Geology................................................................................... 
+5 
+2.2 
+Existing Site Conditions.......................................................................... 
+6 
+2.3 
+Subsurface Conditions ........................................................................... 
+6 
+2.3.1 Bravo Wharf Extension ............................................................... 
+6 
+2.3.2 New Generator Building.............................................................. 
+7 
+2.3.3 New Fire Pump Building ............................................................. 
+8 
+2.4 
+Earthquakes and Seismicity................................................................... 
+8 
+2.5 
+Seismic Design Considerations ............................................................. 
+9 
+3.0  
+DISCUSSION AND RECOMMENDATIONS.................................................... 
+13 
+3.1 
+Sheet Pile Bulkhead ............................................................................... 
+15 
+3.1.1 Lateral Earth Pressures .............................................................. 
+16 
+3.1.2 Tie-Rods and Deadman Anchors ............................................... 
+17 
+3.1.3 Overall Slope Stability................................................................. 
+19 
+3.1.4 Construction Considerations....................................................... 
+20 
+3.2 
+Slab-On-Grade Foundations.................................................................. 
+20 
+3.3 
+Light Pole Foundations........................................................................... 
+22 
+3.4 
+Earthwork................................................................................................ 
+23 
+3.4.1 Site Preparation........................................................................... 
+23 
+3.4.2 Dredging...................................................................................... 
+24 
+3.4.3 Fills and Backfills......................................................................... 
+25 
+3.4.4 Fill Placement and Compaction Requirements.......................... 
+26 
+3.5 
+Settlement Monitoring............................................................................. 
+27 
+3.6 
+Excavations ............................................................................................ 
+27 
+3.6.1 Excavation Method...................................................................... 
+28 
+3.6.2 Excavation Support..................................................................... 
+28 
+TABLE OF CONTENTS  
+W.O. 5638-00 
+GEOLABS, INC. 
+Page ii 
+3.7 
+Leach Field Design................................................................................. 
+29 
+3.8 
+Pavement Design ................................................................................... 
+30 
+3.9 
+Pavement Joints..................................................................................... 
+31 
+3.9.1 Crack Control Joints (Contraction Joints) ................................... 
+32 
+3.9.2 Expansion Joints (Isolation Joints) ............................................. 
+32 
+3.9.3 Construction Joints...................................................................... 
+33 
+3.10 
+Utility Trenches....................................................................................... 
+33 
+3.11 
+Design Review........................................................................................ 
+34 
+3.12 
+Construction Monitoring ......................................................................... 
+34 
+4.0  
+LIMITATIONS.................................................................................................... 
+35 
+5.0  
+REFERENCES .................................................................................................. 
+37 
+LIST OF PLATES 
+Plate 1 
+Project Location Map 
+Plate 2 
+General Site Plan 
+Plates 3.1 
+Site Plans 
+    thru 3.3 
+Plates 4.1 
+Lateral Pressures for Design for –40 Feet Dredged Depth 
+    thru 4.3 
+Plates 5.1 
+Lateral Pressures for Design for –30 Feet Dredged Depth 
+    thru 5.3 
+Plates 6.1 
+Lateral Pressures for Design for –20 Feet Dredged Depth 
+    thru 6.3 
+Plates 7.1 
+Lateral Pressures for Design for –10 Feet Dredged Depth 
+    thru 7.3 
+Plate 8 
+Summary of Lateral Load Analyses 
+Plate 9 
+Typical Settlement Gauge 
+LIST OF APPENDICES 
+Appendix A Field Exploration 
+Appendix B Laboratory Testing 
+Appendix C Field Percolation Testing 
+W.O. 5638-00 
+GEOLABS, INC. 
+Page iii 
+FINAL DESIGN SUBMITTAL 
+GEOTECHNICAL ENGINEERING EXPLORATION 
+FY06 MCON - PROJECT P-431 
+ALPHA AND BRAVO WHARF IMPROVEMENTS 
+POLARIS POINT, GUAM 
+W.O. 5638-00     NOVEMBER 6, 2006 
+SUMMARY OF FINDINGS AND RECOMMENDATIONS 
+Our field exploration at the proposed new wharf extension and bulkhead alignment 
+generally encountered coralline detritus deposits, consisting of loose to medium silty sands 
+and gravel grading to loose clayey sands with gravel, overlying limestone formation.  The 
+limestone formation was encountered between about Elevation –60 feet to -70 feet MLLW 
+datum. Due to the presence of some fines content and the normally erratic nature of the 
+coralline detritus deposits, the relative density of the coralline detritus deposits varies 
+considerably from loose to medium dense, and up to refusal conditions in some cases. 
+The new generator and fire pump building sites generally are underlain by competent 
+near-surface soils consisting of medium dense to dense silty sands and gravel.  
+Based on the information provided, we understand that steel sheet pile bulkheads 
+augmented with king piles (single or double) with tie-rods and deadman anchors will be 
+used for the wharf extension design. The area behind the new bulkhead should be 
+backfilled with free-draining granular fill materials up to about 12 inches or more above the 
+water level. In general, relatively clean, free-draining granular fill materials, such as surge 
+rock fill or drain rock (2-inch maximum size granular materials), should be used to backfill 
+the space behind the sheet pile bulkhead to about the water level or up to about 
+Elevation +2 feet MLLW. The free-draining granular fill may extend to the bottom of the 
+deadman anchor to provide for uniform bearing support.  In addition, a layer of non-woven 
+geotextile fabric (Mirafi 180N, Pro Pex 4553, or equivalent), should be provided between 
+the underlying free-draining granular fill materials and the well-graded granular backfill 
+material above and also between Elevation +3 feet and -3 feet MLLW (6 feet vertical 
+height) for the full length along the shoreline between the new fills and the existing on-site 
+soils. 
+The loose coralline detritus deposits encountered at the project site are potentially 
+compressible and will consolidate under the new fill loads. Therefore, pavement 
+construction and other improvements in the fill (such as underground utilities) should be 
+delayed as much as practical to allow the existing ground to settle and adjust to the new fill 
+loads. Based on our evaluation, we believe that a settlement waiting period on the order of 
+about 6 to 8 weeks after completion of the filling operations would be sufficient to allow the 
+filled ground to achieve equilibrium. 
+SUMMARY OF FINDINGS AND RECOMMENDATIONS 
+FINAL DESIGN SUBMITTAL 
+W.O. 5638-00 
+GEOLABS, INC. 
+Page iv 
+Based on the competent subsurface conditions encountered in our field exploration, 
+we envision that slab-on-grade foundations with thickened-edge footings may be used to 
+support the proposed new generator and fire pump buildings.  An allowable bearing 
+pressure of up to 3,000 psf may be used for the design of shallow foundations bearing on 
+the recompacted on-site soils or select granular fill materials. 
+Based on our field exploration and field percolation test results, we believe that the 
+sandy soils in the upper 5 feet may be considered relatively permeable with percolation 
+rates ranging from about 1.8 to 3.2 minutes per inch. Therefore, we believe that a 
+percolation rate on the order of approximately 5 minutes per inch may be used for design 
+of the proposed leach field at the new fire pump building site. 
+For the rigid pavement design at the new wharf operations area, we recommend 
+using a pavement structural section consisting of 16 inches of Portland Cement Concrete 
+placed over 8 inches of aggregate base course for the design. New flexible pavements 
+subjected to similar traffic loading may consist of 6 inches of asphaltic concrete placed 
+over 22 inches of aggregate base course. Light duty pavements planned for the service 
+roads at the new generator and fire pump buildings may consist of 2 inches of asphaltic 
+concrete over 6 inches of aggregate base course. 
+The text of this report should be referred to for detailed discussion and specific 
+design recommendations. 
+END OF SUMMARY OF FINDINGS AND RECOMMENDATIONS 
+FINAL DESIGN SUBMITTAL 
+W.O. 5638-00 
+GEOLABS, INC. 
+Page 1 
+SECTION 1.0 - GENERAL 
+1.1 
+Introduction 
+This report presents the results of our geotechnical engineering exploration 
+performed for the proposed Bravo Wharf Extension located adjacent to the Alpha & 
+Bravo Wharf Improvements project in the Polaris Point area of Guam. The general 
+location and vicinity of the project site are shown on the Project Location Map, Plate 1.  
+This report summarizes the findings from our field exploration and laboratory 
+testing and presents our geotechnical recommendations derived from our analyses for 
+the proposed Bravo Wharf Extension (and other performance based portions of the 
+project) only. These recommendations are intended for the design of the sheet pile 
+bulkhead and deadman anchor system, building slab-on-grade foundations, light pole 
+foundations, earthwork requirements, leach field, pavements, and infrastructure 
+installation only. The findings and recommendations presented herein are subject to the 
+limitations noted at the end of this report.  
+1.2 
+Project Considerations 
+The proposed Bravo Wharf Extension project is located adjacent to the Alpha 
+and Bravo Wharf Improvements site in the Polaris Point area of Guam. The project 
+location and general vicinity are shown on the Project Location Map, Plate 1. Based on 
+the information provided, the proposed project will generally include the following 
+improvements and construction (performance based portions of the project) as shown 
+on the General Site Plan, Plate 2. 
+1.2.1 Bravo Wharf Extension 
+Based on the information provided, the project will include construction of an 
+extension to the existing Bravo Wharf. The new wharf operations area will measure 
+approximately 172 feet long by 92 feet wide and will be supported by steel sheet 
+pile bulkheads augmented with king piles (single or double) with tie-rods and 
+deadman anchors. The proposed wharf extension will have a finished surface 
+elevation of approximately +10 feet Mean Lower Low Water (MLLW) datum.  
+SECTION 1 – GENERAL 
+FINAL DESIGN SUBMITTAL 
+W.O. 5638-00 
+GEOLABS, INC. 
+Page 2 
+The area in front of the new wharf extension will be dredged to an elevation of 
+approximately –40 feet MLLW in order to accommodate the future docking of naval 
+vessels. In addition, as the return sheet pile bulkhead progresses along the 
+northern end of the wharf extension area, the sheet pile dredged depth will 
+decrease from –40 feet MLLW to daylight at the ground surface above the water 
+level. The area behind the new bulkhead will be backfilled to the design finished 
+grades after the bulkhead installation to support the new wharf operations area. 
+Based on the information provided, we understand that new rigid pavements 
+subjected to truck traffic, forklift traffic and 100-ton mobile crane will be required for 
+the new wharf operations area behind the sheet pile bulkhead.  In addition, flexible 
+pavements subjected to similar traffic loading may be used for the areas behind the 
+Alpha and Bravo Wharves. New utilities, including water lines and lighting, also are 
+planned to serve the project. 
+1.2.2 Generator Building 
+We understand that a new generator building will be constructed to serve the Alpha 
+& Bravo Wharf Improvements project including the Bravo Wharf Extension. We 
+envision that the new generator building will be a one-story structure with 
+slab-on-grade construction. In addition, an asphaltic concrete paved driveway will 
+be constructed to serve the new generator building. 
+1.2.3 Fire Pump Building 
+Based on the information provided, an off-site fire pump building is planned as part 
+of the Alpha & Bravo Wharf Improvements project. We envision the new fire pump 
+building will be a one-story structure with slab-on-grade construction. We also 
+understand that leach field for disposal of used water from the pump building will be 
+constructed adjacent to the new building. An asphaltic concrete paved driveway 
+also will be constructed to serve the new fire pump building. 
+1.3 
+Purpose and Scope 
+The purpose of our field exploration was to obtain an overview of the surface and 
+subsurface conditions to develop a soil and/or rock data set to formulate geotechnical 
+SECTION 1 – GENERAL 
+FINAL DESIGN SUBMITTAL 
+W.O. 5638-00 
+GEOLABS, INC. 
+Page 3 
+recommendations pertaining to the design of the wharf extension including liquefaction 
+assessment, sheet pile bulkhead and deadman anchor system, building slab-on-grade 
+foundations, light pole foundations, earthwork requirements, leach field, and pavements. 
+In order to accomplish this, we conducted an exploration program consisting of the 
+following tasks and efforts: 
+1. 
+Research and review of in-house soils and geologic data in the project 
+vicinity, including the soils boring data and reports prepared by 
+Geo-Engineering and Testing and Earth Mechanics, Inc. (Government 
+furnished information). 
+2. 
+Preparation and submittal of an accident prevention plan with activity 
+hazard analysis in support of the field exploration activities. 
+3. 
+Mobilization and demobilization of a skid-mounted drill rig placed on a 
+raised platform and drilling crew to and from the offshore boring locations. 
+4. 
+Drilling and sampling of three offshore borings (B-101 through B-103) 
+extending to depths ranging from about 67 to 82 feet below the mudline at 
+the Bravo Wharf Extension for a total of approximately 217.5 lineal feet of 
+field exploration. 
+5. 
+Mobilization and demobilization of a truck-mounted drill rig and drilling 
+crew for the on-land boring locations. 
+6. 
+Drilling and sampling of four on-land borings (B-104 through B-107) 
+extending to depths ranging from about 26.5 to 130 feet below the existing 
+ground surface at the Bravo Wharf Extension and the new building 
+structures for a total of approximately 328 lineal feet of field exploration. 
+7. 
+Performance of field percolation tests at two selected locations (P-1 and P-2) 
+to 
+evaluate 
+the 
+subsoil 
+infiltration 
+characteristics 
+to 
+formulate 
+recommendations pertaining to the design of the leach field site. 
+8. 
+Geotechnical laboratory testing of selected soil samples obtained during 
+the field exploration as an aid in classifying the materials and evaluating 
+their engineering properties. 
+9. 
+Analyses of the field and laboratory data to develop geotechnical 
+recommendations pertaining to liquefaction assessment, sheet pile 
+bulkhead 
+and 
+deadman 
+anchor 
+system, 
+building 
+slab-on-grade 
+foundations, light pole foundations, earthwork requirements, leach field, 
+and pavements for the Bravo Wharf Extension and other performance 
+based components of the project. 
+SECTION 1 – GENERAL 
+FINAL DESIGN SUBMITTAL 
+W.O. 5638-00 
+GEOLABS, INC. 
+Page 4 
+10. 
+Preparation of this report summarizing our work on the project and 
+presenting our findings and geotechnical recommendations. 
+11. 
+Miscellaneous work efforts such as drafting, word processing, clerical 
+support, and report reproductions. 
+12. 
+Attendance of design review meetings by our principal engineer. 
+Detailed descriptions of our field exploration methodology and the Logs of 
+Borings are presented in Appendix A. Results of the laboratory tests performed on 
+selected soil samples obtained from our field exploration are presented in Appendix B. 
+Results of the field percolation tests conducted at the proposed leach field site are 
+presented in Appendix C. 
+END OF GENERAL 
+FINAL DESIGN SUBMITTAL 
+W.O. 5638-00 
+GEOLABS, INC. 
+Page 5 
+SECTION 2.0 - SITE CHARACTERIZATION 
+2.1 
+Regional Geology 
+The Island of Guam is the largest and southernmost of the Mariana Island 
+archipelago, which is an island arc parallel to the trend of the subduction zone forming 
+the Mariana Trench. The Mariana Trench is part of a belt of trenches, which extend from 
+Japan to the Palau Islands and include the Japan Trench, Mariana Trench, Yap Trench, 
+and Palau Trench. 
+The Island of Guam can be broadly divided into three geologic provinces:  
+the southern mountains, the central mountains, and the northern plateau.  The island 
+formation started during the Eocene Epoch by the eruption of basaltic rhyolite lavas.  The 
+mountainous central portion of the island is composed of these Eocene volcanic rocks and 
+conglomerates, tuffs, and limestones of the Eocene and Oligocene Epochs.   
+Lava flows and limestone formations of Miocene Epoch make up the majority of the 
+southern one-third of the island.  The plateaus of the northern portion of the island were 
+formed while this part of the island was still beneath the sea level.  During the Oligocene 
+and Miocene Epochs, a complex series of coral and algal reefs formed an elongated 
+platform of limestones and related deposits.  Tectonic activity has lifted these coral-algal 
+limestones above sea level to form the northern Guam Plateau. 
+The central portion of the island consists of the transition from the volcanic 
+materials of the southern mountains to the limestone formations of the northern plateau.  
+The project site at the Polaris Point area is located in the south-central portion of the 
+island.  The local geology is dominated by the volcanic materials and associated materials 
+of the southern mountains.  Due to surface drainage courses of the southern mountain 
+terrain, the near surface soils in the area consist of Holocene age alluvium and associated 
+deposits, such as coralline detritus and lagoonal deposits.  These younger unconsolidated 
+soil deposits are generally more susceptible to liquefaction and slope stability issues, 
+especially around the shoreline areas. 
+SECTION 2 – SITE CHARACTERIZATION  
+FINAL DESIGN SUBMITTAL 
+W.O. 5638-00 
+GEOLABS, INC. 
+Page 6 
+2.2 
+Existing Site Conditions 
+The project site is located to the north of the existing Alpha & Bravo Wharf at 
+Polaris Point in Guam. The project site is generally an open area and is approximately 
+bounded by the existing Bravo Wharf to the south, an asphaltic concrete paved parking 
+area to the east, and open water to the north and west, as shown on the Site Plan, 
+Plate 3.1. 
+Based on the topographic survey, the paved parking lot to the east of the Bravo 
+Wharf Extension is relatively level with ground elevations ranging from about +7 to 
++9 feet MLLW.  The harbor floor in the wharf extension area generally is under water 
+and slopes gently down seaward until the mudline reaches an elevation of 
+approximately -25 to -30 feet MLLW at the new sheet pile bulkhead location.  
+The new generator and fire pump building sites are generally open land with a 
+sparse cover of vegetation. Based on the topographic survey provided, the existing 
+ground surface elevations are on the order of about +11 feet and +10 feet MLLW at the 
+new generator and fire pump building sites, respectively (please refer to Site Plans, 
+Plates 3.2 and 3.3). 
+2.3 
+Subsurface Conditions 
+The subsurface conditions at the Bravo Wharf Extension site were explored 
+further by drilling and sampling three additional offshore borings, designated as 
+Boring Nos. 101 through 103, and two on-land borings, designated as Boring Nos. 104 
+and 105, at the approximate locations shown on the Site Plan (Plate 3.1). In addition, 
+two on-land borings, designated as Boring Nos. 106 and 107, were drilled at the new 
+generator building and fire pump building locations, respectively, as shown on the 
+Site Plans, Plates 3.2 and 3.3.  The following subsections provide a brief description of 
+the subsurface materials encountered in the borings drilled at the three primary 
+locations where new structures will be constructed. 
+2.3.1 Bravo Wharf Extension 
+The offshore borings (B-101 through B-103) were extended to depths ranging from 
+about 67 to 82 feet below the mudline at selected locations of the Bravo Wharf 
+SECTION 2 – SITE CHARACTERIZATION  
+FINAL DESIGN SUBMITTAL 
+W.O. 5638-00 
+GEOLABS, INC. 
+Page 7 
+Extension area. The mudline at the three additional boring locations ranged from 
+about 7.5 to 25 feet below the water surface at the time the borings were drilled. 
+The three additional borings drilled were used to supplement the Government 
+furnished information (Boring Nos. E-1 through E-4). The distribution of the drilled 
+borings is described as follows. 
+LOCATION 
+APPLICABLE BORINGS 
+Northern End Return 
+Sheet Pile Bulkhead 
+Boring Nos. 101 and E-4 
+Sheet Pile Bulkhead 
+Along Wharf Extension 
+Boring Nos. 102, 103, and E-4 
+Deadman Anchor 
+(Anchor Block Nos. 32 and 33) 
+Boring Nos. 104 and 105 
+In general, the subsurface conditions at the new wharf extension site consist of 
+loose to medium dense coralline detritus deposits overlying limestone formation. 
+The coralline detritus deposits encountered in the borings drilled generally consist 
+of loose to medium dense silty sands and gravel grading to loose clayey sands with 
+gravel. Due to the presence of some fines content and the erratic nature of the 
+coralline detritus deposits, the relative density of the coralline detritus deposits 
+varies considerably from loose to medium dense. In some cases, the penetration 
+resistance of the soils may range up to refusal conditions when advanced with a 
+Standard Penetration Test (SPT) split-spoon sampler. The depths to the limestone 
+formation encountered in the borings drilled generally vary from about 
+Elevation -60 feet to -70 feet MLLW datum. 
+2.3.2 New Generator Building 
+The boring (Boring No. 106) drilled at the new generator building site generally 
+encountered medium dense to dense silty sands and gravel extending to a depth of 
+approximately 20 feet below the existing ground surface. Loose clayey sands 
+SECTION 2 – SITE CHARACTERIZATION  
+FINAL DESIGN SUBMITTAL 
+W.O. 5638-00 
+GEOLABS, INC. 
+Page 8 
+overlying dense coral fingers then were encountered and extended to the maximum 
+depth explored of approximately 41.5 feet below the ground surface.  
+2.3.3 New Fire Pump Building 
+Our field exploration (Boring No. 107) disclosed that the new fire pump building site 
+generally was underlain by medium dense to very dense silty sands, gravelly 
+sands, and coralline gravel extending to the maximum depth explored of 
+approximately 26.5 feet below the ground surface. It should be noted that a 
+relatively thin layer of soft clayey silt was encountered between depths of about 
+9 and 11 feet below the existing ground surface. 
+Groundwater was encountered in the land borings drilled at depths ranging from 
+about 5.9 to 7.9 feet below the existing ground surface at the time of our field 
+exploration. The groundwater levels encountered generally correspond to about 
+Elevations +0.0 to +4.3 feet MLLW. Due to the proximity of the project site to the harbor 
+and the Pacific Ocean, groundwater levels are expected to vary with tidal fluctuations. It 
+should be noted that groundwater levels also may vary with seasonal precipitation, 
+storm surge conditions, and other factors.  
+Detailed descriptions of the materials encountered from our field exploration are 
+presented on the Logs of Borings, Plates A-1 through A-7 in Appendix A.  Results of the 
+laboratory tests performed on selected soil samples obtained from our field exploration 
+are presented in Appendix B.  
+2.4 
+Earthquakes and Seismicity 
+Guam is situated adjacent to the subduction zone that forms the Mariana Trench. 
+The island is tectonically active and has experienced approximately 20 earthquakes 
+exceeding a magnitude of 7.0 since 1902. Of these events, fifteen occurred prior to 
+1950 and five have occurred subsequent to that date. Several of the larger faults and 
+fault zones that traverse the Island of Guam include the following:  Pago Bay - Adelup 
+Point Fault, Santa Rita - Talofofo River Valley Fault Zone, and Tamuning - Barrigada 
+Fault.  In addition to the larger faults, several faults and fault zones within proximity to 
+SECTION 2 – SITE CHARACTERIZATION  
+FINAL DESIGN SUBMITTAL 
+W.O. 5638-00 
+GEOLABS, INC. 
+Page 9 
+the project site include the Cabras Fault (southeast of site) and Cocos Fault (south of 
+site). 
+The proximity of the project site to faults and fault zones is a major consideration 
+when evaluating seismic hazards.  Of the substantial faults and fault zones mentioned 
+above, the Santa Rita - Talofofo River Valley Fault Zone and the Cabras Fault lie 
+closest to the project site to the southwest and southeast, respectively. 
+2.5 
+Seismic Design Considerations 
+The project site will be subjected to seismic activity and should be evaluated for 
+the potential for soil liquefaction.  We understand that the design peak ground 
+acceleration associated with the Level 1 (50% probability of exceedance in 50 years) 
+and Level 2 (10% probability of exceedance in 50 years) design earthquakes are 0.21g 
+and 0.38g, respectively.  We also understand that the probable magnitudes of the 
+earthquakes associated with the Level 1 and Level 2 design earthquakes are 
+Magnitude 6.0 and Magnitude 6.5 seismic events.  Based on the design peak ground 
+accelerations and the design magnitude earthquakes, we conducted a liquefaction 
+potential assessment of the saturated granular soils at the Bravo Wharf Extension site. 
+Soil liquefaction is a condition where saturated cohesionless soils located near 
+the ground surface undergo a substantial loss of strength due to the build-up of excess 
+pore water pressures resulting from cyclic stress applications induced by earthquakes.  
+In this process, when the loose saturated sand deposit is subjected to vibration (such as 
+during an earthquake), the soil tends to densify and decrease in volume causing an 
+increase in pore water pressure.  If drainage is unable to occur rapidly enough to 
+dissipate the build-up of pore water pressure, the effective stress (internal strength) of 
+the soil is reduced.  Under sustained vibrations, the pore water pressure build-up could 
+equal the overburden pressure, essentially reducing the soil shear strength to zero and 
+causing it to behave as a viscous fluid.  During liquefaction, the soil acquires sufficient 
+mobility to permit both horizontal and vertical movements, and if not confined, will result 
+in significant deformations. 
+SECTION 2 – SITE CHARACTERIZATION  
+FINAL DESIGN SUBMITTAL 
+W.O. 5638-00 
+GEOLABS, INC. 
+Page 10 
+Soils most susceptible to liquefaction are loose, uniformly graded, fine-grained 
+sands and loose silts with little cohesion.  The major factors affecting the liquefaction 
+characteristics of a soil deposit are as follows: 
+1. 
+Grain Size Distribution - Fine and uniform sands and silts are more 
+susceptible to liquefaction than coarse or well-graded sands. 
+2. 
+Initial Relative Density - Loose sands and silts are most susceptible to 
+liquefaction.  Liquefaction potential is inversely proportional to relative 
+density. 
+3. 
+Magnitude and Duration of Vibration - Liquefaction potential is directly 
+proportional to the magnitude and duration of the earthquake. 
+We evaluated the liquefaction potential of the saturated granular soils at the 
+Bravo Wharf Extension site based on the procedures outlined by Seed and Idriss (1982) 
+and Seed, Idriss and Arango (1983) and updated by the National Center for Earthquake 
+Engineering Research (NCEER) in 1997.  In general, the field SPT N-values obtained 
+from the five new borings (Boring Nos. 101 through 105) was normalized for the 
+standard corrections, such as overburden pressure, fines content, and design 
+earthquake magnitude, in the liquefaction potential assessment.  The five new borings 
+were drilled utilizing approximately 4-inch diameter rotary wash methods. 
+In general, the subsurface information obtained from the borings indicates that 
+coralline detritus deposits and limestone formation underlie the project site.  It should be 
+noted that the relative density of the coralline detritus deposits encountered at the Bravo 
+Wharf Extension site is highly variable ranging from loose silty sands with gravel and 
+cobbles to medium dense silty sands and gravel.  In some cases, refusal conditions 
+(based on SPT sampler penetration resistance) were encountered indicating highly 
+variable and erratic conditions at the project site. 
+Some of the coralline detritus deposits consist of loose silty sands with some 
+cohesion, which may be considered as potentially liquefiable during seismic events.  
+Based on the subsurface conditions encountered and a design peak ground acceleration 
+of 0.21g (Level 1 EQ), a portion of the subsurface profile may be susceptible to 
+SECTION 2 – SITE CHARACTERIZATION  
+FINAL DESIGN SUBMITTAL 
+W.O. 5638-00 
+GEOLABS, INC. 
+Page 11 
+liquefaction.  For the Level 2 EQ with a design peak ground acceleration of 0.38g, a larger 
+portion of the subsurface profile may be susceptible to liquefaction.  Therefore, the effects 
+of potential liquefaction should be taken into account in the design of the proposed 
+improvements. 
+Results of our liquefaction potential assessment of the new borings drilled and 
+the seismically induced settlement estimates of the soil profile in the borings are 
+summarized in the following table.  The seismically induced settlement estimates are 
+based generally on the simplified procedures outlined by Tokimatsu and Seed (1987). 
+Approximate Elevation of  
+Liquefiable Zone 
+(feet MLLW) 
+Seismically Induced 
+Settlement Estimates 
+(inches) 
+Boring 
+Location 
+Level 1 EQ 
+Level 2 EQ 
+Level 1 EQ 
+Level 2 EQ 
+B-101 
+-27 to -62 
+-22 to -62 
+12 
+15 
+B-102 
+-25 to -36 
+-25 to -36  
+& -40 to -55 
+4 
+7 
+B-103 
+-10 to -21,  
+-26 to -35,  
+& -40 to -50 
+-10 to -21  
+& -26 to -55 
+9 
+12 
+B-104 
+-6 to -12.5,  
+-16 to -24,  
+& -27 to -41 
+-5 to -65 
+10 
+18 
+B-105 
+-10 to -55 
+-4 to -65 
+13 
+18 
+E-4 
+-48 to -64 
+-24 to -64 
+5 
+12 
+It should be noted that we did not include the subsurface information from Boring 
+Nos. E-1, E-2, and E-3 in our liquefaction potential assessment because these three 
+borings were drilled using hollow-stem augers (not rotary wash drilling methods).  
+Because there is the potential that the subsurface materials may have been disturbed 
+from the hollow stem auger drilling, the SPT N-values obtained from the borings 
+advanced utilizing hollow-stem auger drilling methods may not represent the actual 
+conditions.  However, we did include the data from Boring No. E-4 in our analyses 
+SECTION 2 – SITE CHARACTERIZATION  
+FINAL DESIGN SUBMITTAL 
+W.O. 5638-00 
+GEOLABS, INC. 
+Page 12 
+because it was drilled utilizing rotary wash drilling method, which is the recommended 
+drilling method for liquefaction potential assessments. 
+END OF SITE CHARACTERIZATION 
+FINAL DESIGN SUBMITTAL 
+W.O. 5638-00 
+GEOLABS, INC. 
+Page 13 
+SECTION 3.0 - DISCUSSION AND RECOMMENDATIONS 
+Our field exploration at the Bravo Wharf Extension and sheet pile bulkhead 
+alignment generally encountered coralline detritus deposits, consisting of loose to 
+medium dense silty sands and gravel grading to loose clayey sands with gravel, 
+overlying limestone formation.  The limestone formation was encountered in the borings 
+between about Elevation –60 feet to –70 feet MLLW datum.  Due to the presence of 
+some fines content and the normally erratic nature of the coralline detritus deposits, the 
+relative density of the coralline detritus deposits varies considerably from loose to 
+medium dense, and even up to refusal conditions in some cases. The new generator 
+and fire pump building sites generally are underlain by competent near-surface soils 
+consisting of medium dense to dense silty sands and gravel. 
+A steel sheet pile bulkhead is planned along the proposed wharf extension to 
+retain the new fills for the wharf operation area. Based on the information provided, we 
+understand that steel sheet pile bulkheads augmented with king piles (single or double) 
+with tie-rods and deadman anchors will be used for the wharf extension design. The 
+sheet pile bulkhead should be designed for lateral earth pressures due to the on-site 
+soils, which would include the new fills and the underlying loose coralline detritus 
+deposits. Based on the current design concept, dredging on the seaward side of the 
+sheet piles will remove some of the coralline detritus exposing the remaining loose to 
+medium dense coralline materials and underlying dense limestone, which will provide 
+passive pressure resistance to the sheet piles (and king piles). In addition, we envision 
+that one level of tie-rods with deadman anchors will be required to provide the 
+necessary lateral restraint for the sheet pile bulkhead. To facilitate installation of the 
+tie-rods without the need for deep excavations and significant dewatering, it is advisable 
+to place the tie-rods and anchors above the groundwater level or at about +1 foot MLLW 
+or higher. 
+Prior to installation of the sheet piles, the new bulkhead alignment should be 
+cleared of boulders and other obstructions that may impede the installation of the steel 
+sheet piling. In addition, the area behind the new sheet pile bulkhead should be 
+SECTION 3 – DISCUSSION AND RECOMMENDATIONS  
+FINAL DESIGN SUBMITTAL 
+W.O. 5638-00 
+GEOLABS, INC. 
+Page 14 
+backfilled with free-draining granular fill materials up to about 12 inches or more above 
+the water level. In general, relatively clean, free-draining granular fill materials, such as 
+surge rock fill and/or drain rock (2-inch maximum size granular materials), should be 
+used to backfill the space behind the sheet pile bulkhead to about the water level or up 
+to the bottom of the deadman anchor to provide for uniform bearing support. A layer of 
+non-woven geotextile fabric (Mirafi 180N, Pro Pex 4553, or equivalent) should be 
+provided between the underlying open-graded fill materials and the well-graded granular 
+backfill material above.  In addition, a layer of non-woven geotextile fabric also should 
+be provided between the on-site soils and the granular backfill materials between about 
+Elevation +3 feet MLLW and –3 feet MLLW (6 feet vertical height) for the full length 
+along the shoreline to reduce the potential for migration of fines due to tidal action. 
+Based on our experience in the area, the subsoils at the site may be considered 
+to be corrosive. Because of the high corrosion potential of the subsoils, special attention 
+should be given to corrosion protection of the steel sheet piles, tie-rods, and other 
+metallic substructures (such as ductile iron water lines) in contact with the soils.  
+The loose coralline detritus encountered at the site are potentially compressible 
+and will consolidate under the new fill loads placed behind the sheet pile bulkhead. As a 
+result, ground surface settlements should be expected at the site as a result of the filling 
+operations. Therefore, pavement construction and other improvements planned on or 
+within the fills (including utilities embedded in the backfills directly behind the sheet pile 
+bulkhead) should be delayed as much as practical to allow the existing ground to settle 
+and adjust to the new fill loads. Based on the amount of fill to be placed, the subsurface 
+soil conditions, and our experience with similar materials, we do not anticipate the 
+settlement waiting period to be significantly more than about 6 to 8 weeks. The actual 
+ground settlements should be monitored during construction. 
+It should be noted that the project requirements (Request for Proposal, RFP) 
+state that we do not need to consider the potential for liquefaction and lateral spreading 
+in our design of foundations for the small building structures, such as the generator and 
+fire pump buildings.  Based on the competent subsurface conditions near the existing 
+SECTION 3 – DISCUSSION AND RECOMMENDATIONS  
+FINAL DESIGN SUBMITTAL 
+W.O. 5638-00 
+GEOLABS, INC. 
+Page 15 
+ground surface encountered in our field exploration, we envision that slab-on-grade 
+foundations with thickened-edge footings may be used to support the proposed new 
+generator and fire pump buildings. 
+New rigid pavements subjected to truck traffic, forklift traffic, and 100-ton mobile 
+crane will be required for the new wharf operations area behind the sheet pile bulkhead. 
+In addition, flexible pavements subjected to similar traffic loading may be used for the 
+areas behind the Alpha and Bravo Wharves. For the pavement design of the new wharf 
+operation area, we recommend using a rigid pavement structural section consisting of 
+16 inches of Portland Cement Concrete placed over 8 inches of aggregate base course 
+for preliminary design purposes.  Flexible pavements subjected to similar traffic loading 
+may consist of 6 inches of asphaltic concrete placed on 22 inches of aggregate base 
+course. Light duty pavements, such as the new driveways planned at the generator and 
+fire pump buildings, may consist of 2 inches of asphaltic concrete placed over 6 inches 
+of aggregate base course. Detailed discussion of these items and our geotechnical 
+recommendations for design of the project are presented in the following sections of this 
+report. 
+3.1 
+Sheet Pile Bulkhead 
+Based on the information provided, we understand that steel sheet pile 
+bulkheads augmented with king piles (single or double) with tie-rods and deadman 
+anchors will be used for the wharf extension design. The sheet pile bulkhead along the 
+wharf extension generally will serve two purposes:  (1) to provide lateral support for the 
+existing soils and new fills; and (2) to maintain stability of the soil mass resulting from 
+the dredging operation in front of the bulkhead. 
+Design of the sheet pile bulkhead will need to consider both overturning stability 
+and overall slope stability. Geotechnical design parameters to evaluate these stability 
+conditions are presented in the following subsections.  The design engineer will need to 
+evaluate the overturning stability. We have evaluated the overall slope stability for the 
+proposed sheet pile bulkhead, and the results are presented in a following subsection. 
+SECTION 3 – DISCUSSION AND RECOMMENDATIONS  
+FINAL DESIGN SUBMITTAL 
+W.O. 5638-00 
+GEOLABS, INC. 
+Page 16 
+New fill materials will be needed to raise the grades of the wharf extension area 
+from the current mudline to the design finished grades of +10 feet MLLW. For the 
+portion of the fill materials extending from the mudline to about the sea level, we 
+anticipate using a relatively free-draining granular material, such as surge rock or drain 
+rock for backfill. The surge rock or drain rock fill below the sea level will likely consist of 
+materials with particle sizes up to about 2 inches in dimension.  By using free-draining 
+materials up to about +2 feet MLLW and controlled placement of the backfill materials, 
+these materials would be considered “non-liquefiable” during seismic events. We 
+envision that compacted granular fill would be used above the surge rock and/or drain 
+rock fill to the finished subgrades at the wharf extension area. 
+3.1.1 Lateral Earth Pressures 
+The sheet pile bulkhead should be designed to resist the lateral earth pressures 
+due to the adjacent soils and surcharge effects. We recommend that the sheet pile 
+bulkhead be designed for lateral earth pressures due to the on-site soils, which 
+include the new fill and the underlying loose coralline detritus deposits. Based on 
+the current design concept, dredging on the seaward side of the sheet piles to 
+-40 feet MLLW will remove some of the coralline detritus exposing the remaining 
+coralline materials and underlying limestone formation, which will provide passive 
+pressure resistance to the sheet pile bulkhead. 
+Based on the borings drilled, the coralline detritus deposits extend to approximately 
+-58 feet MLLW near the bulkhead locations. Based on these conditions, the 
+recommended lateral earth pressures for design of the sheet pile bulkhead under 
+static loading conditions are presented on Plate 4.1 of this report. We also have 
+presented the idealized soil profile used in generating the apparent lateral earth 
+pressures for design on Plate 4.1 for reference. For design of the sheet pile 
+bulkhead subjected to seismic forces under the Level 1 and Level 2 design 
+earthquakes, we have presented the lateral pressures for design of the sheet pile 
+bulkhead (dredged to -40 feet MLLW) on Plates 4.2 and 4.3, respectively. 
+SECTION 3 – DISCUSSION AND RECOMMENDATIONS  
+FINAL DESIGN SUBMITTAL 
+W.O. 5638-00 
+GEOLABS, INC. 
+Page 17 
+As the return sheet pile bulkhead progresses along the northern end of the wharf 
+extension area, the sheet pile dredged depth decreases from -40 feet MLLW to 
+daylight at the ground surface above the water level. For ease of description, we 
+have separated this area into three distinct zones for design purposes. Each zone 
+steps up in dredged depth from -40 feet MLLW to -30, -20 and -10 feet MLLW. For 
+design of the return sheet pile bulkhead along the northern end of the wharf 
+extension (static condition, Level 1 EQ, and Level 2 EQ), please refer to the lateral 
+pressures presented on Plates 5.1 through 7.3 of this report. 
+Surcharge stresses due to areal surcharges, line loads, and point loads within a 
+horizontal distance equal to the depth of the sheet pile bulkhead should be 
+considered in the design. For uniform surcharge stresses imposed on the loaded 
+side of the bulkhead, a rectangular distribution with uniform pressure equal to 
+24 percent of the vertical surcharge pressure may be used in the design. Additional 
+analyses during design may be needed to evaluate the surcharge effects of point 
+loads and line loads. 
+3.1.2 Tie-Rods and Deadman Anchors 
+Tie-rods and deadman anchors will be required to provide the necessary lateral 
+restraint for the sheet pile bulkhead augmented with single and double king piles. 
+We understand that the tie-rods and deadman anchors currently are planned near 
+the sea level elevation.  To reduce the potential for imposing the lateral forces from 
+the deadman anchor on the sheet pile bulkhead, we recommend setting back the 
+deadman anchor from the face of the sheet pile bulkhead by at least 70 feet. 
+To avoid the need for deep excavations and significant dewatering, we recommend 
+placing the tie-rods and anchors above the water level or at about 
+Elevation +3 feet MLLW or higher. Based on the anticipated location of the tie-rod 
+and deadman anchor, we envision that the deadman anchor will be located in the 
+new fill layer.  Due to the presence of potentially liquefiable subsurface conditions 
+below the fill materials, the deadman anchors will be supported on deep 
+foundations consisting of steel H-piles. Because the deadman anchors supported 
+SECTION 3 – DISCUSSION AND RECOMMENDATIONS  
+FINAL DESIGN SUBMITTAL 
+W.O. 5638-00 
+GEOLABS, INC. 
+Page 18 
+on steel H-piles are designed to provide lateral support, we recommend that the 
+steel H-piles be battered to form an “A-frame” with compression legs and tension 
+legs. The spacing between the front compression leg and the rear tension leg of the 
+“A-frame” piles should be at least 5 feet on center. 
+Based on the borings drilled near the deadman anchor location (Boring Nos. 104 
+and 105), the subsurface soils between about Elevation +2 feet and –5 feet MLLW 
+are potentially non-liquefiable subjected to the design earthquakes.  Because these 
+“non-liquefiable” soils provide a large portion of the lateral load resistance to the 
+battered H-piles supporting the deadman anchor, we recommend removing these 
+materials and replacing with surge rock or drain rock fill to provide a higher degree 
+of assurance that the materials between Elevation +2 and -5 feet MLLW will not 
+liquefy during the design earthquakes selected for the project.  The extent of 
+over-excavation and replacement with surge rock or drain rock fill should extend 
+directly below the edges of the deadman anchor and between Elevation +2 and 
+-5 feet MLLW. 
+Based on the normally available steel H-piles and the adjacent Alpha & Bravo 
+Wharf Improvements project, we have selected HP14x89 as the steel H-pile section 
+for the wharf extension area. In general, we recommend steel HP14x89 piles 
+battered in the compression leg and also in the tension leg to provide the lateral 
+restraint for the deadman anchor support. Then, we conducted detailed lateral load 
+analyses of the “A-frame” piles and the deadman anchor utilizing the computer 
+program GROUP 3D (2003) to evaluate the lateral deflection and reactions of the 
+steel H-piles. The program was developed to compute the distribution of loads 
+(vertical, lateral, and overturning moment in up to three orthogonal axes) from the 
+pile cap to piles arranged in a group. The program solves the non-linear response 
+of each pile under combined loadings and assures compatibility of geometry and 
+equilibrium of forces between the applied external loads and the reactions of each 
+pile head. The group geometry, pile properties, soil properties, and loading 
+conditions were input into the GROUP 3D program based on available information, 
+structural loads provided by the project design engineer, and our experience. 
+SECTION 3 – DISCUSSION AND RECOMMENDATIONS  
+FINAL DESIGN SUBMITTAL 
+W.O. 5638-00 
+GEOLABS, INC. 
+Page 19 
+Based on discussions with the project design engineer (Wilson Okamoto 
+Corporation) and the Contractor (Black Construction Corporation), we have 
+selected the batter angles for the compression and tension legs of the battered 
+piles for the A-frame. In general, the compression leg of the A-frame is battered at 
+two horizontal to five vertical (2H:5V), and the tension leg of the A-frame is battered 
+at 1H:3V, 1H:9V and 1H:24V, depending on the location of the tension piles.  
+In general, the steel HP14x89 piles (A-frame) would be able to provide about 
+150 kips of lateral load resistance for the Level 2 EQ condition. For the static 
+condition and the Level 1 EQ condition, the lateral load demand on the deadman 
+anchor would be less and the corresponding pile reactions are less. The results of 
+our lateral load analyses for the A-frame piles are summarized on Plate 8 of this 
+report for ease of reference. It should be noted that we accounted for the group 
+action of the closely spaced steel H-piles (2 and 3 feet on center) by including 
+reduction factors in the soil resistance (p-y curves) for the pile-soil-pile interaction. 
+The steel H-piles will develop the bearing capacity from a combination of friction 
+and end bearing in the limestone formation.  In order to develop the necessary 
+compression and tension load capacity to support the deadman anchors, we 
+recommend that the steel H-piles extend to at least a tip elevation of -90 feet MLLW 
+for the compression leg and a tip elevation of –110 feet MLLW for the tension leg.  
+Based on a tip elevation of -90 feet MLLW and over 20 feet of embedment into the 
+limestone formation, we believe that an ultimate compression load capacity of up to 
+380 kips per pile may be achieved with an ultimate tension capacity of 
+approximately 200 kips per pile.  It should be noted that the ultimate compression 
+capacity provided above (380 kips per pile) includes about 60 kips per pile for 
+downdrag forces imposed on the stationary steel H-piles embedded in the 
+limestone formation by the liquefied soil layer. 
+3.1.3 Overall Slope Stability 
+We have evaluated the overall slope stability of the proposed sheet pile bulkhead. 
+Slope stability analyses consisting of two-dimensional slope cross sections using 
+SECTION 3 – DISCUSSION AND RECOMMENDATIONS  
+FINAL DESIGN SUBMITTAL 
+W.O. 5638-00 
+GEOLABS, INC. 
+Page 20 
+Bishop’s simplified method of limit equilibrium analysis were performed on the 
+sheet pile bulkhead structure. Based on our analyses, the factors of safety for 
+overall slope stability of the sheet pile bulkhead are at least 1.5, which is the 
+minimum factor of safety normally recommended for the static condition. 
+3.1.4 Construction Considerations 
+Our field exploration indicated that some cobbles and/or hard zones of coralline 
+materials may be present along the sheet pile bulkhead alignments, especially near 
+the shoreline area. The potential for the presence of cobbles and/or hard zones of 
+coralline materials may pose some difficulties to the contractor to maintain the 
+plumbness of the sheet piles and king piles. To facilitate installation of the sheet 
+pile, consideration may be given to perform a boulder sweep (including nested 
+cobbles) along the sheet pile bulkhead alignment.  After removal of the cobbles 
+and/or hard zones of coralline materials, the sheet piles and king piles then may be 
+installed to the desired depth without significant resistance due to obstructions. 
+Some dewatering of the excavations may be necessary for installation of the 
+tie-rods and deadman anchors. Otherwise, concrete placement in wet conditions 
+should be allowed for the deadman anchor construction. Subsequently, the area 
+surrounding the deadman anchors should be properly backfilled in accordance with 
+the recommendations presented in the “Fill Placement and Compaction 
+Requirements” subsection of this report. 
+3.2 
+Slab-On-Grade Foundations 
+We envision that slab-on-grade foundations with thickened-edge footings will be 
+used to support the proposed new generator and fire pump buildings.  Based on our 
+field exploration, an allowable bearing pressure of up to 3,000 pounds per square foot 
+(psf) may be used for the design of shallow foundations bearing on the recompacted 
+on-site soils or select granular fill materials.  This bearing value is for dead-plus-live 
+loads and may be increased by one-third (1/3) for transient loads, such as those caused 
+by wind or seismic forces. In general, thickened-edge footings should be embedded a 
+minimum of 12 inches below the lowest adjacent grade. 
+SECTION 3 – DISCUSSION AND RECOMMENDATIONS  
+FINAL DESIGN SUBMITTAL 
+W.O. 5638-00 
+GEOLABS, INC. 
+Page 21 
+We recommend the bottom of footings bear on firm and unyielding near-surface 
+soils. The bottom of the footing excavations should be recompacted to at least 
+95 percent relative compaction to provide a relatively firm and unyielding bearing 
+surface prior to placement of reinforcing steel or concrete. Soft and/or loose materials 
+encountered at the bottom of footing excavations should be over-excavated to expose 
+firm materials. The over-excavation should be backfilled with granular material 
+compacted to a minimum of 95 percent relative compaction, or the bottom of footing 
+should be extended down to the underlying competent material. Relative compaction 
+refers to the in-place dry density of soil expressed as a percentage of the maximum dry 
+density of the same soil established in accordance with procedures described in 
+ASTM Test Designation D 1557. 
+Foundations located next to utility trenches or easements should be embedded 
+below a 45-degree imaginary plane extending upward from the bottom edge of the utility 
+trench, or the footings should extend to a depth as deep as the inverts of the utility lines. 
+This requirement is necessary to avoid surcharging adjacent below-grade structures 
+with additional structural loads and to reduce the potential for appreciable foundation 
+settlement. If foundations are designed and constructed in accordance with our 
+recommendations, we estimate total settlements (under static loading conditions) to be 
+less than 1 inch with differential settlements (static conditions) on the order of about 
+0.5 inches. 
+Lateral loads acting on the structures may be resisted by frictional resistance 
+developed between the bottom of the foundation and the bearing soil and by passive 
+earth pressure acting against the near-vertical faces of the foundation system. A 
+coefficient of friction of 0.35 may be used for footings bearing on the recompacted 
+on-site soils or select granular fill materials. Resistance due to passive earth pressure 
+may be estimated using an equivalent fluid pressure of 350 pounds per square foot per 
+foot of depth (pcf). This assumes that the soil around the footings is well compacted or 
+undisturbed. Unless covered by pavements or slabs, the passive resistance in the upper 
+12 inches of soil should be neglected. 
+SECTION 3 – DISCUSSION AND RECOMMENDATIONS  
+FINAL DESIGN SUBMITTAL 
+W.O. 5638-00 
+GEOLABS, INC. 
+Page 22 
+In general, we envision that the building slabs will be subjected to equipment 
+vibrations, such as the electrical generators and fire pumps. Therefore, we recommend 
+that a 6-inch layer of aggregate subbase be provided below the slabs in lieu of the 
+conventional 4-inch thick gravel cushion fill layer. The aggregate subbase should 
+consist of crushed limestone aggregates compacted to a minimum of 95 percent relative 
+compaction. For design of structural slabs supported on 6 inches of aggregate subbase, 
+a modulus of subgrade reaction of about 200 pounds per square inch per inch of 
+deflection (pci) may be used for the compacted aggregate subbase. Where slabs are 
+intended to function as rigid pavements for fire engines, a minimum slab thickness of 
+6 inches may be used for preliminary design purposes. Provisions should be made for 
+proper load transfer across the slab joints that will be subjected to vehicular traffic. 
+The subgrade soils supporting the slabs-on-grade should be scarified to a depth 
+of about 8 inches, moisture-conditioned to above the optimum moisture content, and 
+compacted to at least 95 percent relative compaction. The slab subgrades should be 
+firm and unyielding prior to the placement of the cushion fill. Subgrade preparation and 
+footing excavations should be observed by a qualified engineer prior to placement of 
+reinforcing steel or concrete. 
+3.3 
+Light Pole Foundations 
+We understand that new light poles up to about 60 and 100 feet high are planned 
+for the Alpha & Bravo Wharf Improvements project.  Based on the information provided 
+by the project structural engineer, we understand that each light pole will be supported 
+on a pile cap with four piles per cap.  At this time, we envision that the piles supporting 
+the cap for the light poles may consist of either steel H-piles (HP14x89) or 16.5-inch 
+octagonal precast, prestressed concrete piles. 
+Based on our liquefaction potential assessment, we anticipate that the potentially 
+liquefiable soil layer extends down to as deep as about -65 feet MLLW based on the 
+Level 2 design earthquake.  Therefore, we anticipate light pole pile foundations will 
+need to extend below about -65 feet MLLW in order to penetrate the liquefiable soil 
+SECTION 3 – DISCUSSION AND RECOMMENDATIONS  
+FINAL DESIGN SUBMITTAL 
+W.O. 5638-00 
+GEOLABS, INC. 
+Page 23 
+layer.  In addition, the piles will be subjected to downdrag forces of approximately 
+60 kips per pile in addition to the structural load demands due to the liquefied soil layer. 
+We understand that the maximum compression load and tension load acting on 
+the individual piles are on the order of about 30 kips and 15 kips per pile, respectively.  
+Based on these load demands, we believe that steel H-piles (HP14x89) extending to at 
+least a tip elevation of -75 feet MLLW should be capable of supporting the load 
+demands on the light pole foundations.  For the 16.5-inch octagonal precast, 
+prestressed concrete pile alternative, we believe that a tip elevation of -70 feet MLLW 
+should be capable of supporting the load demands on the light pole foundations. 
+3.4 
+Earthwork 
+Based on the current design concept and existing topography, we anticipate that 
+the majority of the earthwork will involve the dredging of the harbor floor along the 
+seaward side of the new wharf extension and backfilling behind the steel sheet pile 
+bulkhead. Items of earthwork that are addressed in the following subsections include 
+the following:  (1) Site Preparation; (2) Dredging; (3) Fills and Backfills; and (4) Fill 
+Placement and Compaction Requirements. 
+A Geolabs representative or a qualified engineer should observe the earthwork 
+operations for the project. It is important that one of our representatives or qualified 
+technical personnel observe the site preparation to evaluate whether undesirable 
+materials are encountered during the excavation and filling process, and whether the 
+exposed soil and/or rock conditions are similar to those encountered and assumed in 
+the design. 
+3.4.1 Site Preparation 
+At the on-set of earthwork, areas (above the water level) within the contract grading 
+limits should be thoroughly cleared. Vegetation, debris, and other unsuitable 
+materials should be removed and disposed properly off-site to reduce the potential 
+for contamination of the excavated materials. If soft or wet soils are encountered 
+during clearing, over-excavation should be required to remove the soft or wet soils 
+SECTION 3 – DISCUSSION AND RECOMMENDATIONS  
+FINAL DESIGN SUBMITTAL 
+W.O. 5638-00 
+GEOLABS, INC. 
+Page 24 
+to expose firm soils. The resulting over-excavation should be backfilled with 
+compacted select granular fill material. 
+Slabs and foundations of existing structures to be demolished should be completely 
+removed. Over-excavation resulting from the demolition should be backfilled with 
+lean concrete or compacted select granular fill material. Existing utilities to be 
+abandoned should be removed, and the resulting excavation should be properly 
+backfilled with select granular fill material placed in 8-inch loose lifts and compacted 
+to a minimum of 95 percent relative compaction. 
+After demolition and clearing, the exposed subgrade should be scarified to a 
+minimum depth of 8 inches, moisture-conditioned to above the optimum moisture 
+content, and compacted to a minimum of 95 percent relative compaction. Relative 
+compaction refers to the in-place dry density of soil expressed as a percentage of 
+the maximum dry density of the same soil determined in accordance with ASTM 
+D 1557. Optimum moisture is the water content (percentage by dry weight) 
+corresponding to the maximum dry density. 
+3.4.2 Dredging 
+Based on the information provided, we understand that the existing harbor floor 
+along the new wharf extension will be dredged to an elevation of approximately 
+-40 feet MLLW. Based on the geotechnical explorations, we anticipate that the 
+proposed dredging operation will involve excavation into the loose coralline detritus 
+deposits, which extend to about Elevation –58 feet MLLW. We believe that a 
+dredged slope inclination of up to 1.75H:1V or flatter with riprap protection may be 
+used for the design of the dredged slope along the shoreline beyond the northern 
+end of the return sheet pile bulkhead. 
+Our review of the boring information does not indicate the presence of soft clayey 
+sediments at the existing harbor floor. However, in the event that soft clayey 
+sediments are encountered on the harbor floor during backfilling, we recommend 
+the soft clayey sediments be dredged to expose the granular coralline detritus 
+deposits prior to the backfilling operations behind the new sheet pile bulkhead. 
+SECTION 3 – DISCUSSION AND RECOMMENDATIONS  
+FINAL DESIGN SUBMITTAL 
+W.O. 5638-00 
+GEOLABS, INC. 
+Page 25 
+Dredged materials should not be stockpiled closer than 40 feet away from the 
+planned bulkhead location to reduce the potential for additional lateral loads acting 
+on the bulkhead structure. 
+3.4.3 Fills and Backfills 
+In general, the excavated on-site granular soils may be re-used as a source of 
+structural fill materials above +2 feet MLLW provided that they meet the 
+requirements stated below. The wet and soft soils generated from excavations into 
+soft clayey sediments, if encountered, from the dredging operations should not be 
+used as fills or backfills and should be disposed of properly in accordance with the 
+project requirements. Care should be exercised in separating the unusable soft 
+clayey sediments, if encountered, from the underlying usable coralline materials 
+during the dredging operations, if allowed by the project requirements. 
+Because of the relatively shallow water table and proximity to the shoreline, drying 
+or aeration of the excavated materials may be required prior to their use as 
+compacted fills. Therefore, a dewatering area should be designated for the 
+stockpiling of the usable excavated coralline materials. Due to the porous nature of 
+the coralline deposits, we believe that the time required for the aeration of the 
+excavated materials should be relatively short, on the order of about one week, 
+depending on the weather and the thickness of the stockpile. Some aeration of the 
+stockpile material will be necessary in order to re-use the excavated materials as 
+compacted fills. 
+Excavated on-site or imported materials to be used as structural fill and backfill 
+should consist of crushed limestone and/or coral. The material should be well 
+graded from coarse to fine with particles no larger than 3 inches in largest 
+dimension. In addition, the fill material should contain between 10 and 30 percent 
+particles passing the No. 200 sieve. The material should have a CBR value of 20 or 
+more and a swell value of 1 percent or less when tested in accordance with 
+ASTM D 1883. 
+SECTION 3 – DISCUSSION AND RECOMMENDATIONS  
+FINAL DESIGN SUBMITTAL 
+W.O. 5638-00 
+GEOLABS, INC. 
+Page 26 
+In general, surge rock or drain rock fill consisting of relatively clean, free-draining 
+granular fill materials (2-inch maximum size granular materials) should be used to 
+backfill the space behind the sheet pile bulkhead up to Elevation +2 or +3 feet 
+MLLW. The surge rock or drain rock fill may extend to the bottom of the deadman 
+anchor to provide for uniform bearing support. A layer of non-woven geotextile 
+fabric (Mirafi 180N, Pro Pex 4553, or equivalent) should be provided between the 
+underlying open-graded fill materials and the well-graded granular backfill material 
+above. In addition, a layer of non-woven geotextile fabric also should be provided 
+between the on-site soils and the granular backfill materials between about 
+Elevation +3 feet MLLW and –3 feet MLLW (6 feet vertical height) for the full length 
+along the shoreline to reduce the potential for migration of fines due to tidal action. 
+Where imported fill material will be required, the imported fill material should 
+conform to the requirements presented above for fill and backfill and should be 
+tested and approved prior to delivery to the site to confirm that it is suitable for the 
+intended purpose. 
+3.4.4 Fill Placement and Compaction Requirements 
+As indicated previously, fills or backfills below the water level should consist of 
+free-draining granular materials, such as the surge rock or drain rock fill, as 
+recommended above. Mechanical compaction of these materials will not be 
+required during placement. However, densification by pounding the material with 
+the bucket of a backhoe or by other acceptable means should be done in a 
+consistent manner during placement. The last lift of the material above the water 
+level should be proof-rolled a minimum of 6 to 8 passes with the use of a minimum 
+15-ton vibratory drum roller or similar equipment prior to the placement of the 
+non-woven geotextile fabric, such as Mirafi 180N, Pro Pex 4553, or equivalent, and 
+capping with the compacted granular fill to the finished subgrade. 
+Granular fills and backfills above the water level should be placed in level lifts not 
+exceeding 8 inches in loose thickness, moisture-conditioned to above the optimum 
+moisture content, and compacted to a minimum of 95 percent relative compaction. 
+SECTION 3 – DISCUSSION AND RECOMMENDATIONS  
+FINAL DESIGN SUBMITTAL 
+W.O. 5638-00 
+GEOLABS, INC. 
+Page 27 
+Relative compaction refers to the in-place dry density of soil expressed as a 
+percentage of the maximum dry density of the same soil determined in accordance 
+with ASTM Test Designation D 1557. Optimum moisture is the water content 
+(percentage by dry weight) corresponding to the maximum dry density. 
+3.5 
+Settlement Monitoring 
+To allow the underlying soils to reach equilibrium under the new fill loads and to 
+reduce the potential for adverse effects of post-construction settlements, the actual 
+settlement rate resulting from the new fill placement should be monitored. Based on our 
+experience and engineering judgment, we believe that a settlement waiting period on 
+the order of about 6 to 8 weeks after completion of the filling operations to the design 
+finished subgrades would be sufficient to achieve equilibrium. Construction of the 
+pavements and improvements above and in the fills should not commence until the 
+survey readings from the settlement waiting period indicate that the fills have achieved 
+equilibrium or are near equilibrium. A proper contingency plan should be devised to 
+accommodate the potential delay in construction schedule and the possible extra costs 
+that may be involved, if a longer settlement waiting period is required. 
+To monitor the actual settlement rate, we recommend installing a minimum of 
+12 settlement gauges across the site. A typical settlement gauge detail is provided on 
+Plate 9 for reference. The gauges should be read optically by a professional surveyor, 
+and the readings should be transmitted to Geolabs for review in a timely manner. The 
+settlement gauges should be established on the partially filled ground surface (at about 
++3 feet MLLW) prior to subsequent filling operations. A baseline elevation of the gauges 
+should be established by two surveyed readings taken a minimum of 24 hours apart. 
+Subsequently, readings should be taken once a week until the settlement rate has 
+stabilized. 
+3.6 
+Excavations 
+Based on the current design concept, we anticipate that excavations will be 
+needed for the installation of utility lines and deadman anchors at the proposed wharf 
+SECTION 3 – DISCUSSION AND RECOMMENDATIONS  
+FINAL DESIGN SUBMITTAL 
+W.O. 5638-00 
+GEOLABS, INC. 
+Page 28 
+extension site. Based on our field exploration, excavations for these substructures for 
+the project likely will encounter groundwater and, possibly, soft soil conditions. 
+3.6.1 Excavation Method 
+In general, the method and equipment to be used for excavation should be 
+determined by the contractor, subject to practical limits and safety considerations. 
+Based on our field exploration, the existing fill materials and loose coralline deposits 
+encountered in the borings may be excavated with normal excavators and/or 
+backhoes. However, hard ripping or special excavating methods may be required to 
+remove hard zones of coralline materials present in the subsurface.  
+3.6.2 Excavation Support 
+Excavation for installation of utility lines may need to be adequately shored to 
+reduce the potential for adjacent ground movement. The excavated materials 
+should not be stockpiled adjacent to the planned excavation within a horizontal 
+distance equal to the depth of the excavation to reduce the potential for ground 
+movement. The excavation support and shoring system used are the responsibility 
+of the contractor and must comply with all applicable safety requirements. 
+The contractor should be solely responsible for the adequacy and safety of the 
+shoring installation. Therefore, it is recommended that a qualified engineer be 
+retained by the contractor to design and evaluate the shoring system used. His/her 
+representative, who would be present on site during excavation and construction 
+work, will have the best opportunity to promptly observe changing conditions during 
+construction, such as unforeseen subsoils, unexpectedly high groundwater table, 
+inappropriate construction sequence or techniques, etc., which may affect shoring 
+stability. However, it must be noted that some minor movements of the shoring 
+system and the adjacent ground still may occur due to changes in earth stresses 
+during excavation. Due to the complexity of the stress changes, it is difficult to 
+accurately estimate the magnitude of movement. The magnitude also depends 
+greatly upon workmanship such as how quickly and tightly the shoring and bracing 
+SECTION 3 – DISCUSSION AND RECOMMENDATIONS  
+FINAL DESIGN SUBMITTAL 
+W.O. 5638-00 
+GEOLABS, INC. 
+Page 29 
+supports are installed, the subsoil conditions, the size of the excavation, and the 
+rate of excavation. 
+It is important to realize that the excavation shoring should be installed properly 
+and as early as practical and that the adjacent ground should be continuously 
+monitored for cracks, dips and/or other indications of movements with 
+instruments. 
+3.7 
+Leach Field Design 
+We understand that on-site disposal of water by leach field is planned at the new 
+fire pump building. Therefore, we have conducted field percolation tests to obtain data 
+pertaining to the preliminary design of the water disposal system at the proposed leach 
+field site. Field percolation tests were performed at a depth of about 4 feet each at 
+two selected locations across the proposed leach field site. The approximate locations 
+of the field percolation tests, designated as P-1 and P-2, are shown on the Site Plan, 
+Plate 3.3. 
+Field percolation tests were performed to evaluate the infiltration characteristics of 
+the subsurface soils for disposal of water.  The percolation tests were performed by 
+excavating test pits measuring about 4 to 5 feet wide and about 4 feet below the existing 
+ground surface.  During testing, the pits were filled with water to a depth of about 
+12 inches above the bottom of the pit.  The time intervals and water drops were then 
+recorded to provide data upon which calculation of the percolation tests were based. 
+Based on our field exploration and field percolation test results, we believe that 
+the near-surface sandy soils in the upper 5 feet may be considered relatively permeable 
+with percolation rates ranging from about 1.8 to 3.2 minutes per inch.  Therefore, we 
+recommend using a percolation rate on the order of approximately 5 minutes per inch 
+for design of the leach field at the new fire pump building site.  Results of the individual 
+percolation tests are presented in Appendix C. 
+SECTION 3 – DISCUSSION AND RECOMMENDATIONS  
+FINAL DESIGN SUBMITTAL 
+W.O. 5638-00 
+GEOLABS, INC. 
+Page 30 
+3.8 
+Pavement Design 
+Based on the information provided, we understand that new rigid pavements 
+subjected to truck traffic, forklift traffic, and 100-ton mobile crane will be required for the 
+new wharf operations area behind the sheet pile bulkhead. In addition, flexible 
+pavements subjected to similar traffic may be used for the areas behind the Alpha and 
+Bravo Wharves. The design procedures used in determining the new rigid pavement 
+section is based on the “Design of Heavy Industrial Concrete Pavements” developed by 
+the Portland Cement Association. The design procedures used in determining the 
+flexible pavement section is based on the “Thickness Design - Asphalt Pavements for 
+Heavy Wheel Loads” developed by The Asphalt Institute. Based on the information 
+provided in the RFP documents, we used the following parameters for our pavement 
+analyses. 
+• HS 20-44 Trucks – 20 passes per day, 5 days a week, 52 weeks per year 
+• 100-ton Mobile Crane – 5 passes per day, 5 days a week, 52 weeks per year 
+• 20-ton Fork Lift – 20 passes per day, 5 days a week, 52 weeks per year 
+Our pavement design assumed that the pavement subgrade soil will consist of 
+compacted granular fills placed behind the new sheet pile bulkhead with a minimum 
+CBR value of 20 and a swell value of 1 percent or less. Based on the above 
+assumptions and a properly prepared subgrade, we recommend using the following 
+rigid and flexible pavement sections for design. 
+Heavy Industrial Concrete Pavement Section 
+16.0-Inch Portland Cement Concrete (Minimum Flexural Strength of 650 psi) 
+  8.0-Inch Aggregate Base Course (100% Relative Compaction) 
+24.0-Inch Total Pavement Thickness on Compacted Granular Fill 
+Heavy Industrial Asphalt Concrete Pavement Section 
+  6.0-Inch Asphaltic Concrete 
+22.0-Inch Aggregate Base Course (100% Relative Compaction)  
+28.0-Inch Total Pavement Thickness on Compacted Granular Fill 
+SECTION 3 – DISCUSSION AND RECOMMENDATIONS  
+FINAL DESIGN SUBMITTAL 
+W.O. 5638-00 
+GEOLABS, INC. 
+Page 31 
+For light-duty pavements (such as parking lots) subjected to vehicular traffic 
+consisting primarily of passenger cars and trucks with occasional heavy trucks, the 
+following flexible pavement section may be used for preliminary design purposes. 
+Light-Duty Flexible Pavement Section 
+  2.0-Inch Asphaltic Concrete 
+  6.0-Inch Aggregate Base Course (95 Percent Relative Compaction) 
+  8.0-Inch Total Pavement Thickness on a Compacted Granular Fill 
+The pavement subgrade soils should be scarified to a depth of at least 8 inches, 
+moisture-conditioned to above the optimum moisture content, and compacted to not 
+less than 95 percent relative compaction. Relative compaction refers to the in-place dry 
+density of soil expressed as a percentage of the maximum dry density of the same soil 
+determined in accordance with ASTM D 1557. Optimum moisture is the water content 
+(percentage by dry weight) corresponding to the maximum dry density. 
+The Portland Cement Concrete should have a minimum flexural strength of 
+650 pounds per square inch (psi) when tested in accordance with ASTM C 78. We 
+recommend performing CBR and field density tests on the actual pavement subgrade 
+materials during construction to confirm the adequacy of the recommended pavement 
+sections.  The pavement structural sections provided are designed for the vehicular 
+traffic as required by the RFP documents.  The structural engineer should check the 
+adequacy of the rigid pavement section subjected to the point loads imposed by the 
+outriggers of the mobile crane as required in the RFP documents. 
+3.9 
+Pavement Joints 
+Due to the rigidity of the Portland Cement Concrete (PCC) pavements, significant 
+stresses may develop in the concrete from variations in temperature and moisture 
+content. In order to relieve the high level of stress and to reduce the potential for 
+significant cracking, adequate joints should be provided in the PCC pavement. In 
+addition to the jointing requirements, the perimeter joint around the edge of the rigid 
+pavements should be doweled to reduce the potential for slab separation along the joint 
+SECTION 3 – DISCUSSION AND RECOMMENDATIONS  
+FINAL DESIGN SUBMITTAL 
+W.O. 5638-00 
+GEOLABS, INC. 
+Page 32 
+due to stop and go traffic. The following describes the various types of joints and 
+general guidelines that should be implemented in the design of concrete pavements. 
+3.9.1 Crack Control Joints (Contraction Joints) 
+In general, decreases in temperature or moisture content, such as that during 
+concrete curing, will cause the concrete to contract and possibly crack. Crack 
+control joints are used to provide controlled cracking due to volume changes and 
+relieve the stresses caused by curling or warping. Crack control joints, such as saw 
+cut joints or formed grooves, are provided to a depth of generally one-fourth (¼) the 
+slab thickness. These saw cut joints or formed grooves (crack control joints) 
+provide a weakened plane, which likely will crack through the full depth as the 
+concrete shrinks during the curing process. 
+In general, the spacing of crack control joints should be limited to a maximum of 
+20 feet. Smaller joint spacing should be used if the concrete pavement will be 
+subjected to extreme temperature gradients during the placement and/or life span 
+of the pavement. The crack control joints should be provided in both longitudinal 
+and transverse directions. The transverse joint spacing should not vary from the 
+longitudinal joint spacing by more than 25 percent. 
+3.9.2 Expansion Joints (Isolation Joints) 
+Expansion joints typically are used to relieve compressive stresses developed at 
+critical locations due to fluctuations in temperature. Expansion joints are cut to the 
+full depth of the concrete slab and compressible filler materials are placed in the 
+cut. These joints allow for isolated lateral movement of the slabs and reduce the 
+potential for damage to the adjoining concrete (spalling of the edges of the concrete 
+slabs). 
+Expansion joints should be used at pavement intersections and at intersections of 
+pavements with fixed structures, such as the light poles, mooring bollards, etc. 
+Because expansion joints generally do not provide for load transfer across the joint, 
+placement of dowels with lubrication on one end of the dowel should be considered 
+for load transfer across the expansion joint, where required. 
+SECTION 3 – DISCUSSION AND RECOMMENDATIONS  
+FINAL DESIGN SUBMITTAL 
+W.O. 5638-00 
+GEOLABS, INC. 
+Page 33 
+3.9.3 Construction Joints 
+Construction joints generally are required when two abutting slabs are placed at 
+different times. Therefore, construction joints usually form the edges of each day’s 
+work. For the relatively thick concrete slab (16 inches) planned for this project, the 
+construction joints should consist of a keyed or butted joint. In general, construction 
+joints should be aligned with the crack control or expansion joints to reduce the 
+number of pavement joints required. 
+3.10 
+Utility Trenches 
+We envision that new utility lines, such as water lines, will be required for the 
+project. In general, we recommend providing granular bedding consisting of 6 inches of 
+free-draining materials, such as bedding sand or open-graded gravel (ASTM C 33, 
+No. 67 gradation), below the pipes for uniform support. If soft and/or loose soils are 
+encountered at the proposed pipe inverts, an additional 18 inches of open-graded 
+gravel (ASTM C 33, No. 67 gradation) wrapped in a non-woven geotextile fabric 
+(Mirafi 180N, Pro Pex 4553, or equivalent) should be provided below the bedding layer 
+for uniform support. Free-draining granular materials, such as bedding sand or 
+open-graded gravel (ASTM C 33, No. 67 gradation), should be used for the initial trench 
+backfill up to about 12 inches above the pipes or groundwater level to provide adequate 
+support around the pipes and to reduce the need for substantial effort in compaction of 
+the backfill, thus reducing the potential for damage to the pipes. 
+The upper portion of the trench backfill from the level 12 inches above the pipes 
+or groundwater to the finished subgrade or finished grade may consist of the excavated 
+on-site soils or select granular fill material. The backfill should be moisture-conditioned 
+to above the optimum moisture content, placed in maximum 8-inch level loose lifts, and 
+mechanically compacted to not less than 90 percent relative compaction to reduce the 
+potential for appreciable future ground subsidence. Where trenches are below 
+pavement areas, the upper 3 feet of the trench backfill below the pavement grade 
+should be compacted to at least 95 percent relative compaction. 
+SECTION 3 – DISCUSSION AND RECOMMENDATIONS  
+FINAL DESIGN SUBMITTAL 
+W.O. 5638-00 
+GEOLABS, INC. 
+Page 34 
+3.11 Design Review 
+Preliminary and final drawings and specifications for the project should be 
+forwarded to Geolabs for review and written comments prior to construction. This review 
+is necessary to evaluate conformance of the plans and specifications with the intent of 
+the geotechnical recommendations provided herein. If this review is not made, Geolabs 
+cannot be responsible for misinterpretation of our recommendations. 
+3.12 Construction Monitoring 
+It is recommended that Geolabs provide geotechnical engineering services 
+during construction. The critical items of construction monitoring that require "Special 
+Inspection" include the following: 
+Observation of sheet pile bulkhead and deadman anchor construction 
+Observation of the anchor pile installation 
+Observation of backfill placement and compaction 
+Review of the settlement gauge readings 
+A Geolabs representative also should observe other aspects of the earthwork 
+construction. This is to observe compliance with the intent of the design concepts, 
+specifications, or recommendations and to expedite suggestions for design changes 
+that may be required in the event that subsurface conditions differ from those 
+anticipated at the time this report was prepared. The recommendations provided in this 
+report are contingent upon such observations. 
+If the actual exposed subsurface conditions encountered during construction are 
+different from those assumed or considered in this report, then appropriate 
+modifications to the design should be made. 
+END OF DISCUSSION AND RECOMMENDATIONS 
+FINAL DESIGN SUBMITTAL 
+W.O. 5638-00 
+GEOLABS, INC. 
+Page 35 
+SECTION 4.0 - LIMITATIONS 
+The analyses and recommendations submitted in this report are based, in part, 
+upon information obtained from the borings drilled. Variations of the subsurface 
+conditions between and beyond the borings drilled may occur, and the nature and 
+extent of these variations may not become evident until construction is underway. If 
+variations then appear evident, it will be necessary to re-evaluate the recommendations 
+provided in this report. 
+The boring locations indicated in this report are approximate, having been taped 
+from visible features at the project site. Elevations noted on the borings were based on 
+interpolation between the contour lines shown on the Topographic Survey Map 
+transmitted by Wilson Okamoto Corporation. The physical locations and elevations of 
+the borings should be considered accurate only to the degree implied by the methods 
+used. 
+The stratification lines shown on the graphic representations of the borings depict 
+the approximate boundaries between the soil and/or rock types and, as such, may 
+denote a gradual transition. Water level data from the borings were measured at the 
+times shown on the graphic representations and/or presented in the text of this report. 
+These data have been reviewed and interpretations made in the formulation of this 
+report. It should be noted that groundwater fluctuations may occur due to variation in 
+tides, rainfall, temperature, and other factors. 
+This report has been prepared for the exclusive use by Wilson Okamoto 
+Corporation and Black Construction Corporation for specific application to the design of 
+the proposed Bravo Wharf Extension project located at the existing Alpha and Bravo 
+Wharves in Polaris Point on the Island of Guam in accordance with generally accepted 
+geotechnical engineering principles and practices. No warranty is expressed or implied. 
+This report has been prepared solely for the purpose of assisting the design 
+engineers in the design of the proposed project. Therefore, this report may not contain 
+SECTION 4 – LIMITATIONS  
+FINAL DESIGN SUBMITTAL 
+W.O. 5638-00 
+GEOLABS, INC. 
+Page 36 
+sufficient data, or the proper information, to serve as the basis for preparation of 
+construction cost estimates.  
+The owner/client should be aware that unanticipated soil and/or rock conditions 
+are encountered commonly during construction. Unforeseen subsurface conditions, 
+such as soft deposits, hard layers, cavities, or perched groundwater, may occur in 
+localized areas and may require additional probing or corrections in the field (which may 
+result in construction delays) to attain a properly constructed project. Therefore, a 
+sufficient contingency fund is recommended to accommodate these possible extra 
+costs. 
+The geotechnical engineering exploration conducted at the project site was not 
+intended to investigate the potential for presence of hazardous materials existing at the 
+project site. It should be noted that the equipment, techniques, and personnel used to 
+conduct a geo-environmental exploration differ substantially from those applied in 
+geotechnical engineering. 
+END OF LIMITATIONS
+FINAL DESIGN SUBMITTAL 
+W.O. 5638-00 
+GEOLABS, INC. 
+Page 37 
+SECTION 5.0 - REFERENCES 
+Earth Mechanics Inc. (2005a), “Final Seismicity Study Report, MCON-P431, Alpha & Bravo 
+Wharf Improvements, COMNAVREG MARIANAS, Polaris Point, Guam” June 30, 2005. 
+Earth Mechanics Inc. (2005b), “Final Liquefaction Evaluation Report, MCON-P431, 
+Alpha & Bravo Wharf Improvements, COMNAVREG MARIANAS, Polaris Point, Guam,” 
+June 30, 2005. 
+Ensoft, Inc. (2003), “GROUP 6.0 for Windows.” 
+Geo-Engineering & Testing Inc. Guam (2005a), “Geotechnical Investigation, Evaluation and 
+Strengthening of Existing Sheet Pile Bulkheads, MCON Project P-431, Alpha and Bravo 
+Wharf Improvements, COMNAVREG MARIANAS, Polaris Point, Guam,” August 19, 2005. 
+Geo-Engineering & Testing Inc. Guam (2005b), “Subsurface Explorations and 
+Laboratory Testing, Bravo Wharf Extension, Entrance Channel and Turning Basin 
+Dredging, and Alpha and Bravo Water Transmission Line, MCON Project P-431, Alpha 
+and Bravo Wharf Improvements, COMNAVREG MARIANAS, Polaris Point, Guam,” 
+August 19, 2005. 
+NCEER (1997), “Proceedings of the NCEER Workshop on Evaluation of Liquefaction 
+Resistance of Soils,” T.L. Youd and I.M. Idriss (Editors), Technical Report 
+NCEER-97-0022, NCEER, Buffalo, NY. 
+Seed, R.B. and Harder, L.F., Jr., (1990), “SPT-Based Analysis of Cyclic Pore Pressure 
+Generation and Undrained Residual Strength,” in Proceedings, H. Bolton Seed 
+Memorial Symposium, BiTech Publishers, Ltd., pp. 351-376. 
+Seed, H.B., Idriss, I.M. (1982), “Ground Motions and Soil Liquefaction During 
+Earthquakes,” Earthquake Engineering Research Institute Monograph. 
+Seed, H.B., Idriss, I.M., and Arango, I. (1983), “Evaluation of Liquefaction Potential 
+Using Field Performance Data,” Journal of Geotechnical Engineering, ASCE, Vol. 109, 
+No. 3, pp. 458-482. 
+Tokimatsu, K., and Seed, H.B. (1987), “Evaluation of Settlements in Sands Due to 
+Earthquake Shaking,” Journal of Geotechnical Engineering, ASCE, Vol. 113, No. 8, 
+pp. 861-878. 
+Youd, T.L. et al. (2001), “Liquefaction Resistance of Soils: Summary Report from the 
+1996 NCEER and 1998 NCEER/NSF Workshops on Evaluation of Liquefaction 
+Resistance of Soils,” Journal of Geotechnical and Geo-Environmental Engineering, 
+ASCE, Vol. 127, No. 10, October. 
+FINAL DESIGN SUBMITTAL
+CLOSURE
+The following plates and appendices are attached and complete this report:
+Plate 1 - Project Location Map
+Plate 2 - General Site Plan
+Plates 3.1 - Site Plans
+thru 3.3
+Plates 4.1 - Lateral Pressures for Design for
+thru 4.3 -40 Feet Dredged Depth
+Plates 5.1 - Lateral Pressures for Design for
+thru 5.3 -30 Feet Dredged Depth
+Plates 6.1 - Lateral Pressures for Design for
+thru 6.3 -20 Feet Dredged Depth
+Plates 7.1 - Lateral Pressures for Design for
+thru 7.3 -10 Feet Dredged Depth
+Plate 8 - Summary of Lateral Load Analyses
+Plate 9 - Typical Settlement Gauge
+Appendix A - Field Exploration
+Plate A - Boring Log Legend
+Plates A-1 - Logs of Borings
+thru A-7
+Appendix B - Laboratory Testing
+Plates B-1 - Laboratory Test Data
+thru B-7
+Appendix C - Field Percolation Testing
+Plates C-1 - Field Percolation Data
+and C-2
+-0000000000000000000-
+Respectfully submitted,
+GEOLABS, INC.
+By =
+Robin M. Lim, P.E.
+Vice President
+RML:as
+(h:\5600 Series\5638-00.n12 — p44)
+W.O. 5638-00 GEOLABS, INC. Page 38
+PLATES 
+Ss AR FORE
+Q
+i) BASE,
+OCEANVIEW
+ra i
+< aes HAGATNA val
+(Sp DO
+GAT A
+a a
+UMATAG i
+ISLAND»
+ISLAND MAP
+NO SCALE
+GENERAL PROJECT LOCATION >
+ay
+PROJECT LOCATIONS »
+PROJECT LOCATION MAP
+FY06 MCON - PROJECT P-431
+ALPHA & BRAVO WHARF IMPROVEMENTS
+POLARIS POINT, GUAM
+2000 1000 0 2000 FT. 5 GEOLABS, INC.
+a > Geotechnical Engineering
+GRAPHIC SCALE
+DATE DRAWN BY PLATE
+SEPTEMBER 2006 HYC
+SCALE W.0.
+1 = 2,000! 5638-00 1
+REFERENCE: MAP CREATED WITH TOPO!® ©2001 NATIONAL
+GEOGRAPHIC (WWW.NATIONALGEOGRAPHIC.COM/TOPO).
+User: HENRY File Created: September 06, 2006 File Last Updated: September 11, 2006 2:20:46pm
+File: F:\Drafting-9904\Working\5638-00AlphaBravoWharfExtension5638-00PLM.dwo\PLM (COLOR)
+User: HENRY File Created: January 22, 2005 File Last Updated: November 07, 2006 1:44:10pm
+OUTERAPRAHARBOR eee — REFERENCE: TOPOGRAPHIC SURVEY & SITE PLAN TRANSMITTED BY
+a WILSON OKAMOTO CORPORATION.
+\ _ FIRE PUMP BUILDING
+eo | (SEE PLATE 3.3)
+SHORELINE ——>} |
+GENERATOR BUILDING €
+(SEE PLATE 3.2), ce > POLARIS POINT
+POLARIS aaa SECURITY GATE
+HANDBALL | & POINT Gop
+COURTS w a,
+AREA
+ALPHA & BRAVO WHAR \\
+(SEE PLATE 3.1) l ; x
+. oO
+---- a. N
+| \j u ©
+| 5 lf 2
+Speer EP
+Sfeil - jj 0 VE
+ao f ih ee Z
+i bor ff _ __ =>
+K TEEPE PPPS TPP TE 7
+l » : : | meee
+I | J
+|, (EBD) ee) =,
+| \ ail 4 ] ; Siig
+5 an GENERAL SITE PLAN
+{1 UI i FY06 MCON - PROJECT P-431
+ay | oh WW WL; ee _ 7 ALPHA & BRAVO WHARF IMPROVEMENTS
+at HE uu Ja ma oe ana — POLARIS POINT, GUAM
+/ fic! = rt =i Kg — SHORELINE _
+2 HBC TILiTit i ae =a INNER APRA HARBOR \ _GEOLABS, INC.
+a THT LE HHI : Ht / Geotechnical Engineering
+| 2 (Ritu : 0 50 100 150 200 250 m / DATE DRAWN EY SLATE
+— gpm a ae /
+- ere sone / 2
+PA 1: 2500 5638-00
+; | \ MU MOM WW > '== ‘yy ppb". ™ S . | “ep \ 7 — ; = a
+\ ee y ) \ Nw i we. oto NS et LL a) |
+\ go XO! , oP ly =
+le ol A ~. aw) | fe =" ||| \ \
+Wee — | ie ( |
+_ t + *| \ \ \
+| ea) TL \ \ \
+cel | Cs) | i} \ \ NL
+"7 A x \ \ { A i SA ~
+& ® 8 es &@ 8 5s 8 a s @ a aa! ee ‘ | | | af x \ H
+Fi * | \ Z| ! \ \
+° = \ S| = =
+é | S : 5 = 5 7 ee s Az == , / \
+- _ i a oN “| a i : : : / i \
+ke ae A T Nie ~~ OCs = = tS 3 ° @ ‘ | = i ee ea f- . __ ‘| e \
+% a sae Nae - =——SS “RL . | = R = a - i
+: $ + a ‘ Ww “a , < es a y — E = : ED o » i 1 / ind | )
+Wo) tes 4 . | F : qt ® ‘i apie: 8 | “
+aig _ :* ; ERR | PS ‘) I i | LD | 1 4
+ry [PEE or | cl! ; z \ |
+ao WR SR , iENe LE ef
+| i a ~ EN é y i@ z 3 > \ \
+| i BN BS ‘ : \ is, \= be 2 : : 1 yt
+i ” oe ye 8 a XY —_ - / i |
+i | i ~ ad x _ « I
+i \ | 3 — | a ~*~ a, — 4 /
+\ | I Nee - 3 es 3 —~ | x i —_- a roy /
+LJ ! \ | E-3 a oe | ) a ae a a3 __. < =|3 ' | /
+| \ | B-104 [= E-2 B-105 ~~ | x ay f (
+¢4__--ANCHOR BLOCK 3+ : —— \ 4 aaa iV ty
+7 NO. 33--- $ Fee VY a a WON i | = a . ——— sia , ( \
+— —— a - —S 8 E-1 ‘Tes —< he I io een ee Sa HR
+a ~ Bp ————— ig B-4 |= B-2 | ee Oe SO
+cee : 3 ee br felord (2) by : = = ia _. = 7M ' \
+- ig = fs ' a tot 8 = : = omer : Le A-6 Ne 2
+NORTH RETURN, APES ae Saati PNG e+ AAA °
+~----------- SHEET PILE_-__----—F'B-101 SEE AH iL ay — x SUP TAN
+722222555522 BULKHEAD —""—"="== =o Sn | B-1 | BS B33 | |
+eee ee TT re AS B-103 A | ti 4 | aa z : oN
+ee ae ma RS SLM B-1 02 nn We: race | \ : | \ | |_| I | = ; = = SL |
+—--------------- ae i ta eA Al = = = : ae 2 = / <_<
+- eS NS i ne — SS = ES Ue
+3 \ <> \\ T+ oO —— in i ico, CSP? SY OI
+it / : BRAVO WHARF EXTENSION a \ \ A OH BRAVOWHARF =.” NF SS vA
+z 20N ra _ oA & ) \ y
+=! yee ~ SHEET PILE _- . Nea oo
+: ANCHOR BLOCK \ BULKHEAD (“ \ G >
+NO. 32 ae | co? on
+i a " ! \ SITE PLAN
+g “ “ i FY06 MCON - PROJECT P-431
+z i ALPHA & BRAVO WHARF IMPROVEMENTS
+3 LEGEND: POLARIS POINT, GUAM
+gq LESSEN.
+: ALPHA & BRAVO WHARF
+5 @ APPROXIMATE BORING LOCATION _GEOLABS, INC. _
+: : Geotechnical Engineering
+s APPROXIMATE BORING LOCATION (GOVERNMENT FURNISHED DATE DRAWN BY TE
+. ¢ ( ) 0 10 20 30 40 50 60 70 80m NOVEMBER 2006]  HYC PLA
+zi a a |
+& 6 | REFERENCE: TOPOGRAPHIC SURVEY & SITE PLAN TRANSMITTED BY SCALE W.0.
+Ba WILSON OKAMOTO CORPORATION. GRAPHIC SCALE 1: 800 5638-00 3.1
+CAD User: HENRY File Last Updated: November 07, 2006 12:01:33pm Plot Date: November 07, 2006 - 12:02:45pm
+File: F:\Drafting-9904\Working\5638-00AlphaBravoWharfextension\5638-00SitePlan.dwa\Plate 3.2
+GENERATOR BUILDING
+CONTAINER VANS
+(STORAGE)
+—-@- GAT
+LEGEND:
+APPROXIMATE BORING
+LOCATION
+REFERENCE: TOPOGRAPHIC SURVEY & SITE PLAN TRANSMITTED BY
+WILSON OKAMOTO CORPORATION. GRAPHIC SCALE
+cE OD
+(Vehicle) GATE
+SITE PLAN
+FY06 MCON - PROJECT P-431
+ALPHA & BRAVO WHARF IMPROVEMENTS
+POLARIS POINT, GUAM
+GEOLABS, INC.
+Geotechnical Engineering
+DATE DRAWN BY PLATE
+NOVEMBER 2006 HYC
+SCALE W.O.
+1: 400 5638-00 3 2
+CAD User: HENRY File Last Updated: November 07, 2006 12:04:14pm Plot Date: November 07, 2006 - 12:04:24pm
+File: F:\Drafting-9904\Working\5638-00AlphaBravoWharfextension\5638-00SitePlan.dwg\Plate 3.3
+FIRE PUMP
+BUILDING
+SITE PLAN
+FY06 MCON - PROJECT P-431
+ALPHA & BRAVO WHARF IMPROVEMENTS
+POLARIS POINT, GUAM
+LEGEND:
+APPROXIMATE BORING fea * GEOLABS, INC.
+LOCATION Geotechnical Engineering
+APPROXIMATE PERCOLATION e DATE DRAWN BY PLATE
+TEST LOCATION ma NOVEMBER 2006 HYC
+REFERENCE: TOPOGRAPHIC SURVEY & SITE PLAN TRANSMITTED BY SCALE WO.
+WILSON OKAMOTO CORPORATION. GRAPHIC SCALE ay 5638-00 3.3
+CAD User: HENRY File Last Updated: September 08, 2006 3:55:25pm Plot Date: September 08, 2006 - 6:09:59pm
+File: F:\Drafting-9904\Working\5638-00AlphaBravoWharfExtension\5638-00PressureDiagrams.dwg\Plate 4.1
+(DREDGED BOTTOM AT -40 FEET) STATIC CONDITION
+COMPACTED @=40° Ka = 0.202
+FILL ¥ = 135 pef
+FREE
+DRAINING
+FILL
+© = 36°
+¥ = 130 pef
+NON- @ = 32°
+LIQUEFIABLE ¥ =115 pef
+SOILS
+ELEVATION (FT)
+LIQUEFIABLE
+AT LEVEL 2
+NON- @ = 34°
+LIQUEFIABLE ¥ = 125 pef
+SOILS
+LIMESTONE @ = 42°
+¥ = 130 pef
+_GEOLABS, INC.
+Geotechnical Engineering
+LATERAL EARTH PRESSURE ore a re
+Note: ALPHA & BRAVO WHARF IMPROVEMENTS
+All values are in units of lbs/ft? unless FY06 MCON - PROJECT P-431 SCALE W.0.
+noted otherwise POLARIS POINT, GUAM 4.1
+CAD User: HENRY File Last Updated: September 08, 2006 3:55:25pm Plot Date: September 08, 2006 - 6:10:06pm
+File: F:\Drafting-9904\Working\5638-00AlphaBravoWharfExtension\5638-00PressureDiagrams.dwg\Plate 4.2
+GROUND SURFACE DREDGED BOTTOM AT -40 FEET (LEVEL 1
+VARA
+ELEVATION (FT)
+HYDRODYNAMIC FORCE
+(in Ibs/ft)
+DYNAMIC COMPONENT (ACTIVE)
+(Total dynamic incremental active earth
+pressure component = 61.6 kips/ft acting at
+h = 30 ft from ground surface)
+TOTAL PASSIVE RESISTANCE STATIC COMPONENT (ACTIVE)
+GEOLABS, INC.
+Geotechnical Engineering
+SEISMIC & EARTH LATERAL PRESSURES DATE DRAWNBY
+Note: ALPHA & BRAVO WHARF IMPROVEMENTS nN JULY 2006 PLATE
+All values are in units of Ibs/ft? unless FY06 MCON - PROJECT P-431 Y SCALE
+noted otherwise POLARIS POINT, GUAM i 4.2
+CAD User: HENRY File Last Updated: September 08, 2006 3:55:25pm Plot Date: September 08, 2006 - 6:10:12pm
+File: F:\Drafting-9904\Working\5638-00AlphaBravoWharfExtension\5638-00PressureDiagrams.dwg\Plate 4.3
+GROUND SURFACE DREDGED BOTTOM AT -40 FEET (LEVEL 2
+CARA
+ELEVATION (FT)
+HYDRODYNAMIC FORCE
+(in Ibs/ft)
+DYNAMIC COMPONENT (ACTIVE
+(Total dynamic incremental active earth
+pressure component = 73.4 kips/ft acting
+at h = 30 ft from ground surface)
+TOTAL PASSIVE RESISTANCE STATIC COMPONENT (ACTIVE)
+GEOLABS, INC.
+Geotechnical Engineering
+SEISMIC & EARTH LATERAL PRESSURES | DATE DRAWNBY
+Note: ALPHA & BRAVO WHARF IMPROVEMENTS S< JULY 2006 PLATE
+All values are in units of lbs/ft* unless FY06 MCON - PROJECT P-431 SCALE
+noted otherwise POLARIS POINT, GUAM 4.3
+CAD User: HENRY File Last Updated: September 08, 2006 3:55:25pm Plot Date: September 08, 2006 - 6:10:18pm
+File: F:\Drafting-9904\Working\5638-00AlphaBravoWharfExtension\5638-00PressureDiagrams.dwg\Plate 5.1
+(DREDGED BOTTOM AT -30 FEET)
+ELEVATION (FT)
+Note:
+All values are in units of Ibs/ft? unless
+noted otherwise
+COMPACTED @=40° Ka = 0.202
+FILL ¥ = 135 pof
+FREE
+DRAINING
+FILL
+@ = 36°
+¥ = 130 pef
+NON-
+LIQUEFIABLE
+SOILS
+@ = 34°
+¥ = 125 pcf
+LIQUEFIABLE @ = 32°
+SOILS ¥ = 115 pef
+LIMESTONE @ = 42°
+¥ = 130 pef
+LATERAL EARTH PRESSURE
+ALPHA & BRAVO WHARF IMPROVEMENTS
+FY06 MCON - PROJECT P-431
+POLARIS POINT, GUAM
+STATIC CONDITION
+_GEOLABS, INC._
+Geotechnical Engineering
+DATE DRAWN BY PLATE
+JULY 2006
+SCALE
+5638-00
+CAD User: HENRY File Last Updated: September 08, 2006 3:55:25pm Plot Date: September 08, 2006 - 6:10:27pm
+File: F:\Drafting-9904\Working\5638-00A!phaBravoWharfExtension\5638-00PressureDiagrams.dwg\Plate 5.2
+GROUND SURFACE DREDGED BOTTOM AT -30 FEET (LEVEL 1
+HYDRODYNAMIC FORCE
+(in Ibs/ft)
+ELEVATION (FT)
+DYNAMIC COMPONENT (ACTIVE
+(Total dynamic incremental active earth
+pressure component = 54.8 kips/ft acting at
+h = 30 ft from ground surface)
+TOTAL PASSIVE RESISTANCE STATIC COMPONENT (ACTIVE)
+GEOLABS, INC.
+Geotechnical Engineering
+SEISMIC & EARTH LATERAL PRESSURES DATE DRAWN BY
+Note: ALPHA & BRAVO WHARF IMPROVEMENTS nN JULY 2006 PLATE
+All values are in units of lbs/ft? unless FY06 MCON - PROJECT P-431 , SCALE W
+noted otherwise POLARIS POINT, GUAM 2 5.2
+CAD User: HENRY File Last Updated: September 08, 2006 3:55:25pm Plot Date: September 08, 2006 - 6:10:33pm
+File: F:\Drafting-9904\Working\5638-00AlphaBravoWharfExtension\5638-00PressureDiagrams.dwg\Plate 5.3
+GROUND SURFACE DREDGED BOTTOM AT -30 FEET (LEVEL 2
+HYDRODYNAMIC FORCE
+(in Ibs/ft)
+ELEVATION (FT)
+DYNAMIC COMPONENT (ACTIVE)
+(Total dynamic incremental active earth
+pressure component = 66.7 kips/ft acting at
+h = 30 ft from ground surface)
+TOTAL PASSIVE RESISTANCE STATIC COMPONENT (ACTIVE)
+GEOLABS, INC.
+Geotechnical Engineering
+SEISMIC & EARTH LATERAL PRESSURES y x Saar
+Note: ALPHA & BRAVO WHARF IMPROVEMENTS HYC
+All values are in units of Ibs/ft? unless FY06 MCON - PROJECT P-431 ’ SCALE WO.
+noted otherwise POLARIS POINT, GUAM NTS. 5638-00 5.3
+CAD User: HENRY File Last Updated: September 08, 2006 3:55:25pm Plot Date: September 08, 2006 - 6:10:39pm
+File: F:\Drafting-9904\Working\5638-00AlphaBravoWharfExtension\5638-00PressureDiagrams.dwg\Plate 6.1
+ELEVATION (FT)
+Note:
+All values are in units of lbs/ft? unless
+noted otherwise
+(DREDGED BOTTOM AT -20 FEET)
+COMPACTED
+FILL
+FREE
+DRAINING
+FILL
+NON-
+LIQUEFIABLE
+SOILS
+LIQUEFIABLE
+SOILS
+LIMESTONE
+@ = 40° Ka = 0.202
+¥ = 135 pef
+@ = 36°
+¥ = 130 pef
+@ = 34° Ka = 0.259
+v =125 pcef Krp=5.9
+@ = 32°
+¥ =115 pcf
+@ = 42°
+¥ = 130 pef
+LATERAL EARTH PRESSURE
+ALPHA & BRAVO WHARF IMPROVEMENTS
+FY06 MCON - PROJECT P-431
+POLARIS POINT, GUAM
+STATIC CONDITION
+_GEOLABS, INC.
+Geotechnical Engineering
+DRAWN BY PLATE
+HYC
+SCALE W.O.
+DATE
+JULY 2006
+CAD User: HENRY File Last Updated: September 08, 2006 3:55:25pm Plot Date: September 08, 2006 - 6:10:47pm
+File: F:\Drafting-9904\Working\5638-00AlphaBravoWharfExtension\5638-00PressureDiagrams.dwg\Plate 6.2
+GROUND SURFACE DREDGED BOTTOM AT -20 FEET (LEVEL 1
+KER
+I
+= HYDRODYNAMIC FORCE
+(in Ibs/ft)
+ELEVATION (FT)
+DYNAMIC COMPONENT (ACTIVE
+(Total dynamic incremental active earth
+pressure component = 54.8 kips/ft acting at
+h = 30 ft from ground surface)
+TOTAL PASSIVE RESISTANCE STATIC COMPONENT (ACTIVE)
+GEOLABS, INC.
+Geotechnical Engineering
+SEISMIC & EARTH LATERAL PRESSURES ont a
+Note: ALPHA & BRAVO WHARF IMPROVEMENTS
+All values are in units of Ibs/ft? unless FY06 MCON - PROJECT P-431 SCALE WO.
+noted otherwise POLARIS POINT, GUAM 6.2
+CAD User: HENRY File Last Updated: September 08, 2006 3:55:25pm Plot Date: September 08, 2006 - 6:10:52pm
+File: F:\Drafting-9904\Working\5638-00AlphaBravoWharfExtension\5638-00PressureDiagrams.dwg\Plate 6.3
+GROUND SURFACE DREDGED BOTTOM AT -20 FEET (LEVEL 2
+os HYDRODYNAMIC FORCE
+(in Ibs/ft)
+ELEVATION (FT)
+DYNAMIC COMPONENT (ACTIVE)
+(Total dynamic incremental active earth
+32880 pressure component = 66.7 kips/ft acting at
+h = 30 ft from ground surface)
+TOTAL PASSIVE RESISTANCE STATIC COMPONENT (ACTIVE)
+_GEOLABS, INC.
+/ Geotechnical Engineering
+SEISMIC & EARTH LATERAL PRESSURES ov hone Ca re
+Note: ALPHA & BRAVO WHARF IMPROVEMENTS
+All values are in units of Ibs/ft? unless FY06 MCON - PROJECT P-431 4 SCALE W.O.
+noted otherwise POLARIS POINT, GUAM : 6.3
+CAD User: HENRY File Last Updated: September 08, 2006 3:55:25pm Plot Date: September 08, 2006 - 6:10:59pm
+File: F:\Drafting-9904\Working\5638-00AlphaBravoWharfExtension\5638-00PressureDiagrams.dwg\Plate 7.1
+(DREDGED BOTTOM AT -10 FEET)
+ELEVATION (FT)
+Note:
+All values are in units of Ibs/ft? unless
+noted otherwise
+COMPACTED @ = 40° Ka = 0.202
+FILL ¥ = 135 pef
+FREE
+DRAINING
+FILL
+@ = 36°
+¥ = 130 pcf
+NON-
+LIQUEFIABLE
+SOILS
+@ = 34° Ka = 0.259
+¥ =125 pcf Ke=5.9
+LIQUEFIABLE @ = 32° Ka = 0.280
+SOILS ¥=115pcef Ke=5.3
+LIMESTONE @ = 42° Ka = 0.185
+¥ =130pcf Krp=9.6
+LATERAL EARTH PRESSURE
+ALPHA & BRAVO WHARF IMPROVEMENTS
+FY06 MCON - PROJECT P-431
+POLARIS POINT, GUAM
+STATIC CONDITION
+GEOLABS, INC.
+Geotechnical Engineering
+DATE DRAWNBY ~ PLATE
+JULY 2006 HYC
+SCALE W.O.
+CAD User: HENRY File Last Updated: September 08, 2006 3:55:25pm Plot Date: September 08, 2006 - 6:11:10pm
+File: F:\Drafting-9904\Working\5638-00AlphaBravoWharfExtension\5638-00PressureDiagrams.dwg\Plate 7.2
+GROUND SURFACE DREDGED BOTTOM AT -10 FEET (LEVEL 1
+4
+765 6
+cava +
+HYDRODYNAMIC FORCE
+(in Ibs/ft)
+ELEVATION (FT)
+DYNAMIC COMPONENT (ACTIVE)
+(Total dynamic incremental active earth
+38160 pressure component = 54.8 kips/ft acting at
+h = 30 ft from ground surface)
+TOTAL PASSIVE RESISTANCE STATIC COMPONENT (ACTIVE)
+GEOLABS, INC.
+Geotechnical Engineering
+SEISMIC & EARTH LATERAL PRESSURES | “QA. [az Sea
+x
+PLATE
+Note: ALPHA & BRAVO WHARF IMPROVEMENTS HYC
+All values are in units of Ibs/ft? unless FY06 MCON - PROJECT P-431 ’ SCALE WO.
+noted otherwise POLARIS POINT, GUAM L N.T.S. 5638-00 7.2
+CAD User: HENRY File Last Updated: September 08, 2006 3:55:25pm Plot Date: September 08, 2006 - 6:11:19pm
+File: F:\Drafting-9904\Working\5638-00A!phaBravoWharfExtension\5638-00PressureDiagrams.dwg\Plate 7.3
+GROUND SURFACE DREDGED BOTTOM AT -10 FEET (LEVEL 2
+_4t
+875 6
+nL aa}
+HYDRODYNAMIC FORCE
+(in Ibs/ft)
+ELEVATION (FT)
+DYNAMIC COMPONENT (ACTIVE)
+(Total dynamic incremental active earth
+pressure component = 66.7 kips/ft acting at
+h = 30 ft from ground surface)
+TOTAL PASSIVE RESISTANCE STATIC COMPONENT (ACTIVE)
+7 Geotechnical Engineerin
+SEISMIC & EARTH LATERAL PRESSURES DATE i ——
+Note: ALPHA & BRAVO WHARF IMPROVEMENTS cA JULY 2006
+All values are in units of Ibs/ft? unless FY06 MCON - PROJECT P-431 Y SCALE
+noted otherwise POLARIS POINT, GUAM 7.3
+FY06 MCON - PROJECT P-431
+ALPHA & BRAVO WHARF IMPROVEMENTS
+POLARIS POINT, GUAM
+Condition
+Lateral Load on 
+Deadman 
+Perpendicular
+Lateral 
+Displacement
+Max. Pile 
+Compression
+Max. Pile 
+Tension
+Max. Pile 
+Moment
+Max. Shear 
+Force       
+Perpendicular
+(kips/foot)
+(inches)
+(kips)
+(kips)
+(kip-feet)
+(kips)
+Static
+31
+0.1
+108
+36
+64
+31
+Level 1 EQ
+66
+0.2
+208
+94
+135
+63
+Level 2 EQ
+104
+0.4
+315
+157
+223
+99
+Note:  
+Condition
+Lateral Load on 
+Deadman 
+Perpendicular/Parallel
+Lateral 
+Displacement
+Max. Pile 
+Compression
+Max. Pile 
+Tension
+Max. Pile 
+Moment
+Max. Shear 
+Force       
+Perpendicular
+(kips/foot)
+(inches)
+(kips)
+(kips)
+(kip-feet)
+(kips)
+Static
+18 / 4
+0.1
+74
+38
+43
+18
+Level 1 EQ
+39 / 8
+0.2
+143
+92
+106
+44
+Level 2 EQ
+61 / 13
+0.4
+211
+154
+178
+68
+Note:  
+Lateral Load Analysis Model is Based on Twelve Compression and Twelve Tension piles 
+spaced at 2 feet on center with two additional Compression piles at both ends of the 
+deadman between the Compression Leg and Tension Leg.  Therefore, results of the 
+analyses are for 26 piles.  Typical Lateral Distance from Front Compression Leg to Rear 
+Tension Leg is 5 feet.
+2H:5V Compression Leg and 1H:9V & 1H:24V Tension Leg
+Deadman Anchor Supported by HP14x89 Piles
+2H:5V Compression Leg and 1H:9V Tension Leg
+Summary of Lateral Load Analyses of Pile Supported Deadman Anchor
+Deadman Anchor Supported by HP14x89 Piles
+For Bravo Wharf Extension Deadman (E-W Loading Direction )
+For North Return Wharf Deadman (N-S Loading Direction)
+Lateral Load Analysis Model is Based on Eight Compression (spaced at 2' or 4' on 
+center) & Twelve Tension  piles (spaced at 2' on center).  Therefore, results of the 
+analyses are  for 20 piles.  Lateral Distance from Front Compression Leg to Rear Tension 
+Leg is 5 feet.
+W.O. 5638-00
+GEOLABS, INC.
+PLATE 8
+> aa FLAG AND PROTECT PIPE. FILL
+AROUND PIPE SHOULD BE TAMPED
+WITH SMALL EQUIPMENT.
+TOP OF FILL
+File: F:\Drafting-9904\Working\5638-00AIphaBravoWharfextension\5638-00SettlementGauge.dwg\Model
+User: HENRY File Created: January 21, 1998 File Last Updated: September 08, 2006
+(THREADED AT BOTH ENDS)
+BURY BASE BOLT PIPE CONNECTION
+1-FOOT MINIMUM TO BASE
+PLYWOOD BASE
+(2'X2'X3/4")
+EXISTING SURFACE
+TYPICAL SETTLEMENT GAUGE
+FY06 MCON - PROJECT P-431
+ALPHA & BRAVO WHARF IMPROVEMENTS
+POLARIS POINT, GUAM
+GEOLABS, INC.
+Geotechnical Engineering
+DATE DRAWN BY PLATE
+SEPTEMBER 2006 HYC
+SCALE W.O.
+NOT TO SCALE 5638-00 9
+APPENDIX A 
+Field Exploration 
+FINAL DESIGN SUBMITTAL 
+W.O. 5638-00 
+GEOLABS, INC. 
+NOVEMBER 2006     Page A-1 
+A P P E N D I X   A 
+Field Exploration 
+The subsurface conditions at the project site were explored by drilling and sampling 
+seven borings, designated as Boring Nos. 101 through 107, extending to depths ranging 
+from about 26.5 to 130 feet below the mudline or existing ground surface. The offshore 
+borings (B-101 through B-103) were drilled with a skid-mounted drill rig placed on a raised 
+platform equipped with rotary wash drilling equipment. The on-land borings (B-104 through 
+B-107) were drilled with a truck-mounted drill rig equipped with rotary wash drilling method 
+or hollow-stem augers. The seven borings were drilled at the approximate locations shown 
+on the Site Plans, Plates 3.1 through 3.3. 
+The materials encountered in the borings were classified by visual and textural 
+examination in the field by a technician, who monitored the drilling operations. These field 
+classifications were further reviewed visually and by testing in the laboratory. Soils were 
+classified in general conformance with the Unified Soil Classification System, as shown on 
+Plate A. Graphic representations of the materials encountered are provided on the Logs of 
+Borings, Plates A-1 through A-7.  Please note that the Logs of Borings are presented in 
+metric. 
+The majority of the soil samples were obtained from the borings drilled in general 
+accordance with ASTM D 1586, Penetration Test and Split-Barrel Sampling of Soils, by 
+driving a 2-inch OD standard penetration sampler using a 140-pound (63.5-kg) hammer 
+falling 30 inches (450 mm). In addition, some relatively “undisturbed” soil samples were 
+obtained in general accordance with ASTM D 3550, Ring-Lined Barrel Sampling of Soils, 
+by driving a 3-inch OD Modified California sampler with the same hammer and drop. The 
+blow counts needed to drive the sampler the second and third 6 inches of an 18-inch drive 
+are shown as the “Penetration Resistance” on the Logs of Borings at the appropriate 
+sample depths. 
+(h:\5600 Series\5638-00.rl2 – p47) 
+PEAT, HUMUS, SWAMP SOILS WITH HIGH
+ORGANIC CONTENTS
+PEN
+LIQUID LIMIT
+LL
+SILTS
+AND
+CLAYS
+LIQUID LIMIT
+LESS THAN 50
+INORGANIC SILT, MICACEOUS OR
+DIATOMACEOUS FINE SAND OR SILTY SOILS
+INORGANIC CLAYS OF HIGH PLASTICITY
+CH
+MH
+SILTY GRAVELS, GRAVEL-SAND-SILT
+MIXTURES
+A
+WELL-GRADED SANDS, GRAVELLY SANDS,
+LITTLE OR NO FINES
+TYPICAL
+DESCRIPTIONS
+USCS
+CLAYEY SANDS, SAND-CLAY MIXTURES
+OL
+POORLY-GRADED SANDS, GRAVELLY SANDS,
+LITTLE OR NO FINES
+CLAYEY GRAVELS, GRAVEL-SAND-CLAY
+MIXTURES
+SILTS
+AND
+CLAYS
+POORLY-GRADED GRAVELS, GRAVEL-SAND
+MIXTURES, LITTLE OR NO FINES
+INORGANIC SILTS AND VERY FINE SANDS, ROCK
+FLOUR, SILTY OR CLAYEY FINE SANDS OR
+CLAYEY SILTS WITH SLIGHT PLASTICITY
+SILTY SANDS, SAND-SILT MIXTURES
+50% OR MORE OF
+COARSE FRACTION
+PASSING THROUGH
+NO. 4 (4.76 mm)
+SIEVE
+GC
+HIGHLY ORGANIC SOILS
+MORE THAN 12%
+FINES
+GW
+MORE THAN 50% OF
+MATERIAL
+RETAINED ON NO.
+200 (0.074 mm)
+SIEVE
+MORE THAN 50% OF
+COARSE FRACTION
+RETAINED ON NO. 4
+(4.76 mm) SIEVE
+UNCONFINED COMPRESSION (kPa)
+(75-mm)  O.D. MODIFIED CALIFORNIA SAMPLE
+(50-mm) O.D. STANDARD PENETRATION TEST
+POCKET PENETROMETER (kPa)
+TORVANE SHEAR (kPa)
+50% OR MORE OF
+MATERIAL PASSING
+THROUGH NO. 200
+(0.074 mm) SIEVE
+GRAB SAMPLE
+CORE SAMPLE
+ORGANIC SILTS AND ORGANIC SILTY CLAYS
+OF LOW PLASTICITY
+UNIFIED SOIL CLASSIFICATION SYSTEM (USCS)
+LESS THAN 5%
+FINES
+GP
+SW
+LEGEND
+MAJOR DIVISIONS
+TV
+PI
+SM
+NOTE: DUAL SYMBOLS ARE USED TO INDICATE BORDERLINE SOIL CLASSIFICATIONS
+MORE THAN 12%
+FINES
+GM
+COARSE-
+GRAINED
+SOILS
+LIQUID LIMIT
+50 OR MORE
+UC
+WATER LEVEL OBSERVED IN BORING
+Plate
+FINE-
+GRAINED
+SOILS
+GEOLABS, INC.
+SC
+Log Legend
+SANDS WITH
+FINES
+CLEAN SANDS
+SHELBY TUBE SAMPLE
+Geotechnical Engineering
+WELL-GRADED GRAVELS,  GRAVEL-SAND
+MIXTURES, LITTLE OR NO FINES
+GRAVELS
+SANDS
+CL
+INORGANIC CLAYS OF LOW TO MEDIUM
+PLASTICITY, GRAVELLY CLAYS, SANDY
+CLAYS, SILTY CLAYS, LEAN CLAYS
+OH
+PT
+PLASTICITY INDEX
+LOG LEGEND  5638-00.GPJ  GEOLABS.GDT  11/7/06
+SP
+ML
+ORGANIC CLAYS OF MEDIUM TO HIGH
+PLASTICITY, ORGANIC SILTS
+CLEAN
+GRAVELS
+GRAVELS WITH
+FINES
+LESS THAN 5%
+FINES
+-#200
+= 4.3%
+-#200
+= 45%
+LL=37
+PI=17
+Dry Density
+(kg/m
+3)
+Skid-Mounted Drill on Raised Platform
+100-mm Rotary Wash
+63.5 kg wt., 0.76 m drop
+12
+101
+Pocket Pen.
+(kPa)
+GM
+12
+10
+5
+2
+3
+7
+GM
+SC
+Light gray and white GRAVELLY SAND with
+fragments of seashells, medium dense
+Brownish yellow SILTY GRAVEL (CORALLINE)
+with sand and coral fingers, medium dense
+Light grayish blue and white SILTY GRAVEL
+(CORALLINE) with sand, loose
+grades with cobbles
+Light gray and white CLAYEY SAND with gravel
+and coral fingers, loose to very loose
+Approximate Ground Surface
+Elevation (meters MSL): -2.3 *
+GW
+FY06 MCON - PROJECT P-431
+ALPHA & BRAVO WHARF IMPROVEMENTS
+POLARIS POINT, GUAM
+Graphic
+BORING_LOG  5638-00.GPJ  GEOLABS.GDT  11/7/06
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Log of
+Boring
+Core
+Recovery (%)
+April 23, 2006
+April 23, 2006
+G. E. & T.
+20.9 meters
+5638-00
+Field
+A - 1.1
+GEOLABS, INC.
+Description
+Water Level:
+Depth (meters)
+Plate
+USCS
+Moisture
+Content (%)
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+RQD (%)
+Other Tests
+Geotechnical Engineering
+Laboratory
+Penetration
+Resistance
+(blows/0.30m)
+Sample
+USCS
+101
+Pocket Pen.
+(kPa)
+Log of
+Boring
+RQD (%)
+Moisture
+Content (%)
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+3
+Plate
+6
+52
+SC
+grades with fragments of seashells and coral
+fingers, loose
+Yellowish brown and white LIMESTONE, dense
+Core
+Recovery (%)
+LL=32
+PI=11
+Dry Density
+(kg/m
+3)
+Skid-Mounted Drill on Raised Platform
+100-mm Rotary Wash
+63.5 kg wt., 0.76 m drop
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Water Level:
+BORING_LOG  5638-00.GPJ  GEOLABS.GDT  11/7/06
+GEOLABS, INC.
+Geotechnical Engineering
+Penetration
+Resistance
+(blows/0.30m)
+Sample
+Laboratory
+Description
+Graphic
+Other Tests
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Field
+April 23, 2006
+April 23, 2006
+G. E. & T.
+20.9 meters
+5638-00
+Depth (meters)
+A - 1.2
+FY06 MCON - PROJECT P-431
+ALPHA & BRAVO WHARF IMPROVEMENTS
+POLARIS POINT, GUAM
+(Continued from previous plate)
+(Continued from previous plate)
+Plate
+USCS
+Moisture
+Content (%)
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+RQD (%)
+Other Tests
+* Elevations estimated from
+Topographic Survey transmitted by Wilson
+Okamoto Corporation.
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+Boring terminated at 20.9 meters
+Dry Density
+(kg/m
+3)
+Log of
+Boring
+Skid-Mounted Drill on Raised Platform
+100-mm Rotary Wash
+63.5 kg wt., 0.76 m drop
+Laboratory
+Core
+Recovery (%)
+101
+Pocket Pen.
+(kPa)
+Water Level:
+GEOLABS, INC.
+Geotechnical Engineering
+BORING_LOG  5638-00.GPJ  GEOLABS.GDT  11/7/06
+Field
+Penetration
+Resistance
+(blows/0.30m)
+Sample
+Drill Rig:
+Drilling Method:
+Driving Energy:
+April 23, 2006
+April 23, 2006
+G. E. & T.
+20.9 meters
+5638-00
+Depth (meters)
+A - 1.3
+FY06 MCON - PROJECT P-431
+ALPHA & BRAVO WHARF IMPROVEMENTS
+POLARIS POINT, GUAM
+Description
+Graphic
+Approximate Ground Surface
+Elevation (meters MSL): -7.6 *
+-#200
+= 38%
+-#200
+= 11%
+-#200
+= 20%
+Dry Density
+(kg/m
+3)
+Skid-Mounted Drill on Raised Platform
+100-mm Rotary Wash
+63.5 kg wt., 0.76 m drop
+USCS
+3
+Pocket Pen.
+(kPa)
+Log of
+Boring
+Plate
+Core
+Recovery (%)
+Light gray and white SILTY CLAYEY SAND with
+gravel and fragments of seashells, medium dense
+2/
+450-mm
+15
+10
+12
+18
+27
+SM
+Light gray and white SILTY SAND, loose
+grades to silty gravel (GP-GM) with sand
+grades to silty sand (SM) with gravel
+SM-
+SC
+Geotechnical Engineering
+A - 2.1
+GEOLABS, INC.
+Moisture
+Content (%)
+102
+BORING_LOG  5638-00.GPJ  GEOLABS.GDT  11/7/06
+Water Level:
+Description
+Laboratory
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+RQD (%)
+Other Tests
+Depth (meters)
+FY06 MCON - PROJECT P-431
+ALPHA & BRAVO WHARF IMPROVEMENTS
+POLARIS POINT, GUAM
+Penetration
+Resistance
+(blows/0.30m)
+Sample
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Field
+May 9, 2006
+May 11, 2006
+G. E. & T.
+20.4 meters
+5638-00
+USCS
+102
+Pocket Pen.
+(kPa)
+Log of
+Boring
+RQD (%)
+Moisture
+Content (%)
+22
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Plate
+27
+57
+SM-
+SC
+Light brown, white, and yellow LIMESTONE,
+medium dense to dense
+Core
+Recovery (%)
+-#200
+= 13%
+Dry Density
+(kg/m
+3)
+Skid-Mounted Drill on Raised Platform
+100-mm Rotary Wash
+63.5 kg wt., 0.76 m drop
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+Water Level:
+BORING_LOG  5638-00.GPJ  GEOLABS.GDT  11/7/06
+GEOLABS, INC.
+Geotechnical Engineering
+Penetration
+Resistance
+(blows/0.30m)
+Sample
+Laboratory
+Description
+Graphic
+Other Tests
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Field
+May 9, 2006
+May 11, 2006
+G. E. & T.
+20.4 meters
+5638-00
+Depth (meters)
+A - 2.2
+FY06 MCON - PROJECT P-431
+ALPHA & BRAVO WHARF IMPROVEMENTS
+POLARIS POINT, GUAM
+(Continued from previous plate)
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Laboratory
+USCS
+Moisture
+Content (%)
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+Log of
+Boring
+RQD (%)
+Other Tests
+Core
+Recovery (%)
+Boring terminated at 20.4 meters
+Dry Density
+(kg/m
+3)
+Plate
+102
+Pocket Pen.
+(kPa)
+Skid-Mounted Drill on Raised Platform
+100-mm Rotary Wash
+63.5 kg wt., 0.76 m drop
+(Continued from previous plate)
+Water Level:
+GEOLABS, INC.
+Geotechnical Engineering
+BORING_LOG  5638-00.GPJ  GEOLABS.GDT  11/7/06
+Field
+Penetration
+Resistance
+(blows/0.30m)
+Sample
+Drill Rig:
+Drilling Method:
+Driving Energy:
+May 9, 2006
+May 11, 2006
+G. E. & T.
+20.4 meters
+5638-00
+Depth (meters)
+A - 2.3
+FY06 MCON - PROJECT P-431
+ALPHA & BRAVO WHARF IMPROVEMENTS
+POLARIS POINT, GUAM
+Description
+Graphic
+Approximate Ground Surface
+Elevation (meters MSL): -2.9 *
+-#200
+= 27%
+-#200
+= 21%
+-#200
+= 21%
+Dry Density
+(kg/m
+3)
+Skid-Mounted Drill on Raised Platform
+100-mm Rotary Wash
+63.5 kg wt., 0.76 m drop
+USCS
+3
+Pocket Pen.
+(kPa)
+Log of
+Boring
+Plate
+Core
+Recovery (%)
+Light gray and white SILTY CLAYEY SAND with
+gravel and cobbles (coralline), loose to medium
+dense
+1/
+450-mm
+10/
+0-mm
+6
+11
+4
+SM-
+SC
+Light gray and white SILTY CLAYEY SAND with
+gravel (coralline) and fragments of seashells,
+loose
+grades to medium dense
+SM-
+SC
+BORING_LOG  5638-00.GPJ  GEOLABS.GDT  11/7/06
+Geotechnical Engineering
+Moisture
+Content (%)
+GEOLABS, INC.
+103
+Description
+FY06 MCON - PROJECT P-431
+ALPHA & BRAVO WHARF IMPROVEMENTS
+POLARIS POINT, GUAM
+Depth (meters)
+Water Level:
+Laboratory
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+RQD (%)
+Other Tests
+A - 3.1
+Penetration
+Resistance
+(blows/0.30m)
+Sample
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Field
+April 25, 2006
+April 25, 2006
+G. E. & T.
+25.0 meters
+5638-00
+Dry Density
+(kg/m
+3)
+Skid-Mounted Drill on Raised Platform
+100-mm Rotary Wash
+63.5 kg wt., 0.76 m drop
+Core
+Recovery (%)
+Pocket Pen.
+(kPa)
+-#200
+= 16%
+Log of
+Boring
+23
+Moisture
+Content (%)
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+103
+Yellowish brown and white LIMESTONE, dense
+13/
+0-mm
+38
+GM
+GM
+Light gray and white SILTY GRAVEL, loose
+grades to very dense
+-#200
+= 7%
+USCS
+Light gray and white SILTY GRAVEL AND
+COBBLES with sand and coral fingers, medium
+dense
+Plate
+Geotechnical Engineering
+FY06 MCON - PROJECT P-431
+ALPHA & BRAVO WHARF IMPROVEMENTS
+POLARIS POINT, GUAM
+A - 3.2
+Water Level:
+BORING_LOG  5638-00.GPJ  GEOLABS.GDT  11/7/06
+GEOLABS, INC.
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+RQD (%)
+Other Tests
+(Continued from previous plate)
+Laboratory
+Description
+Penetration
+Resistance
+(blows/0.30m)
+Sample
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Field
+April 25, 2006
+April 25, 2006
+G. E. & T.
+25.0 meters
+5638-00
+Depth (meters)
+Log of
+Boring
+Plate
+USCS
+Moisture
+Content (%)
+Pocket Pen.
+(kPa)
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+RQD (%)
+37
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+Skid-Mounted Drill on Raised Platform
+100-mm Rotary Wash
+63.5 kg wt., 0.76 m drop
+Boring terminated at 25.0 meters
+Core
+Recovery (%)
+103
+(Continued from previous plate)
+Dry Density
+(kg/m
+3)
+Other Tests
+Water Level:
+Laboratory
+GEOLABS, INC.
+Geotechnical Engineering
+BORING_LOG  5638-00.GPJ  GEOLABS.GDT  11/7/06
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/0.30m)
+Sample
+Graphic
+Field
+April 25, 2006
+April 25, 2006
+G. E. & T.
+25.0 meters
+5638-00
+Depth (meters)
+A - 3.3
+FY06 MCON - PROJECT P-431
+ALPHA & BRAVO WHARF IMPROVEMENTS
+POLARIS POINT, GUAM
+Description
+Approximate Ground Surface
+Elevation (meters MSL): 2.4 *
+Light gray and white SILTY GRAVEL with sand
+and cobbles, dense
+Light gray and white CLAYEY SAND with gravel,
+coral fingers, and cobbles, medium dense
+grades with coral fingers, loose
+33
+-#200
+= 14%
+Dry Density
+(kg/m
+3)
+Truck-Mounted Drill Rig
+100-mm Rotary Wash
+63.5 kg wt., 0.76 m drop
+Core
+Recovery (%)
+22
+32
+13
+5
+18
+6
+59
+grades to loose
+36
+26
+36
+21
+GM
+SM
+SC
+GM
+38-mm ASPHALTIC CONCRETE
+Light brown and white SILTY GRAVEL with sand,
+dense, moist
+grades to medium dense
+grades to saturated
+Light gray and white SILTY SAND with gravel,
+medium dense
+19
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Description
+FY06 MCON - PROJECT P-431
+ALPHA & BRAVO WHARF IMPROVEMENTS
+POLARIS POINT, GUAM
+A - 4.1
+Depth (meters)
+Field
+Graphic
+Sample
+September 1, 2006
+September 5, 2006
+G. E. & T.
+39.6 meters
+5638-00
+BORING_LOG  5638-00.GPJ  GEOLABS.GDT  11/7/06
+Geotechnical Engineering
+GEOLABS, INC.
+2.4 m. 9/5/06 1108 HRS
+Water Level:
+Plate
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+Penetration
+Resistance
+(blows/0.30m)
+Laboratory
+USCS
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Moisture
+Content (%)
+RQD (%)
+Log of
+Boring
+Pocket Pen.
+(kPa)
+Other Tests
+104
+-#200
+= 24%
+-#200
+= 50%
+Dry Density
+(kg/m
+3)
+11
+Truck-Mounted Drill Rig
+100-mm Rotary Wash
+63.5 kg wt., 0.76 m drop
+Core
+Recovery (%)
+104
+Pocket Pen.
+(kPa)
+22
+4
+5
+57
+21
+24
+31
+26
+22
+24
+GM
+SC
+GM
+SM
+Light gray and white CLAYEY SAND with gravel
+and cobbles, medium dense
+grades with coral fingers, loose
+Light gray and white SILTY GRAVEL with sand,
+dense to very dense
+grades with coral fingers and cobbles, medium
+dense
+Light gray and white SILTY SAND with gravel,
+medium dense
+29
+Depth (meters)
+Penetration
+Resistance
+(blows/0.30m)
+Sample
+BORING_LOG  5638-00.GPJ  GEOLABS.GDT  11/7/06
+2.4 m. 9/5/06 1108 HRS
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Field
+A - 4.2
+FY06 MCON - PROJECT P-431
+ALPHA & BRAVO WHARF IMPROVEMENTS
+POLARIS POINT, GUAM
+Description
+Water Level:
+September 1, 2006
+September 5, 2006
+G. E. & T.
+39.6 meters
+5638-00
+Log of
+Boring
+Plate
+USCS
+Moisture
+Content (%)
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+RQD (%)
+Other Tests
+(Continued from previous plate)
+Laboratory
+Geotechnical Engineering
+GEOLABS, INC.
+104
+-#200
+= 47%
+Dry Density
+(kg/m
+3)
+Truck-Mounted Drill Rig
+100-mm Rotary Wash
+63.5 kg wt., 0.76 m drop
+Core
+Recovery (%)
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+1385
+Pocket Pen.
+(kPa)
+15
+Plate
+USCS
+Moisture
+Content (%)
+Yellow brown and white LIMESTONE, medium
+dense
+21
+76/
+150-mm
++15/
+.0-mm
+Ref.
+147
+37
+9
+8
+15
+SM
+1578
+grades to hard (refusal)
+grades to light brown, yellow, and white
+19
+BORING_LOG  5638-00.GPJ  GEOLABS.GDT  11/7/06
+Description
+Geotechnical Engineering
+Log of
+Boring
+GEOLABS, INC.
+FY06 MCON - PROJECT P-431
+ALPHA & BRAVO WHARF IMPROVEMENTS
+POLARIS POINT, GUAM
+A - 4.3
+Water Level:
+2.4 m. 9/5/06 1108 HRS
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+RQD (%)
+Other Tests
+(Continued from previous plate)
+Laboratory
+Penetration
+Resistance
+(blows/0.30m)
+Sample
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Field
+September 1, 2006
+September 5, 2006
+G. E. & T.
+39.6 meters
+5638-00
+Depth (meters)
+Plate
+Core
+Recovery (%)
+104
+Pocket Pen.
+(kPa)
+Log of
+Boring
+USCS
+Moisture
+Content (%)
+85/
+150-mm
++15/
+.0-mm
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+80/
+150-mm
++35/
+30-mm
+83/
+150-mm
++15/
+.0-mm
+45/
+51-mm
+18
+17
+5
+grades to yellowish brown and white
+Truck-Mounted Drill Rig
+100-mm Rotary Wash
+63.5 kg wt., 0.76 m drop
+1775
+1863
+Boring terminated at 39.6 meters
+Dry Density
+(kg/m
+3)
+BORING_LOG  5638-00.GPJ  GEOLABS.GDT  11/7/06
+RQD (%)
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+Water Level:
+2.4 m. 9/5/06 1108 HRS
+GEOLABS, INC.
+Geotechnical Engineering
+Graphic
+Penetration
+Resistance
+(blows/0.30m)
+Sample
+Description
+Laboratory
+Other Tests
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Field
+September 1, 2006
+September 5, 2006
+G. E. & T.
+39.6 meters
+5638-00
+Depth (meters)
+A - 4.4
+FY06 MCON - PROJECT P-431
+ALPHA & BRAVO WHARF IMPROVEMENTS
+POLARIS POINT, GUAM
+(Continued from previous plate)
+Light gray and white SILTY GRAVEL with sand,
+coral fingers, and cobbles, medium dense
+-#200
+= 15%
+-#200
+= 38%
+48
+Truck-Mounted Drill Rig
+100-mm Rotary Wash
+63.5 kg wt., 0.76 m drop
+Core
+Recovery (%)
+Approximate Ground Surface
+Elevation (meters MSL): 2.6 *
+40
+10
+17
+11
+6
+9
+10
+28
+Light gray and white CLAYEY SAND with coral
+fingers, loose
+32
+29
+37
+33
+GM
+GM
+GM
+SC
+25-mm ASPHALTIC CONCRETE
+White SILTY GRAVEL with sand, dense, moist
+(fill)
+Light brown and white SILTY GRAVEL
+(CORALLINE), loose, saturated
+Dry Density
+(kg/m
+3)
+17
+Field
+Description
+FY06 MCON - PROJECT P-431
+ALPHA & BRAVO WHARF IMPROVEMENTS
+POLARIS POINT, GUAM
+A - 5.1
+Depth (meters)
+August 29, 2006
+August 31, 2006
+G. E. & T.
+39.6 meters
+5638-00
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Graphic
+Sample
+LL=34
+Penetration
+Resistance
+(blows/0.30m)
+BORING_LOG  5638-00.GPJ  GEOLABS.GDT  11/7/06
+Geotechnical Engineering
+GEOLABS, INC.
+Approximately 2 m
+Water Level:
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+USCS
+RQD (%)
+Plate
+Log of
+Boring
+Pocket Pen.
+(kPa)
+105
+Moisture
+Content (%)
+Other Tests
+Laboratory
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+-#200
+= 42%
+-#200
+= 49%
+Dry Density
+(kg/m
+3)
+12
+Truck-Mounted Drill Rig
+100-mm Rotary Wash
+63.5 kg wt., 0.76 m drop
+Core
+Recovery (%)
+105
+Pocket Pen.
+(kPa)
+PI=15
+30
+9
+7
+12
+14
+8
+37
+29
+30
+23
+SC
+SC
+GC
+GP-
+GM
+Light gray and white CLAYEY SAND, medium
+dense
+grades to loose
+Light gray and white CLAYEY GRAVEL with sand,
+medium dense
+Light gray and white GRAVEL with silt and sand,
+loose
+23
+Depth (meters)
+Sample
+BORING_LOG  5638-00.GPJ  GEOLABS.GDT  11/7/06
+Approximately 2 m
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Field
+Graphic
+Penetration
+Resistance
+(blows/0.30m)
+A - 5.2
+FY06 MCON - PROJECT P-431
+ALPHA & BRAVO WHARF IMPROVEMENTS
+POLARIS POINT, GUAM
+Description
+Water Level:
+August 29, 2006
+August 31, 2006
+G. E. & T.
+39.6 meters
+5638-00
+Log of
+Boring
+Plate
+USCS
+Moisture
+Content (%)
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+RQD (%)
+Other Tests
+(Continued from previous plate)
+Laboratory
+Geotechnical Engineering
+GEOLABS, INC.
+Pocket Pen.
+(kPa)
+Dry Density
+(kg/m
+3)
+Truck-Mounted Drill Rig
+100-mm Rotary Wash
+63.5 kg wt., 0.76 m drop
+Core
+Recovery (%)
+-#200
+= 12%
+105
+Log of
+Boring
+16
+Moisture
+Content (%)
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+Light  brown and white LIMESTONE, hard
+99
+119
+65
+45/
+30-mm
+19
+11
+grades to medium dense
+USCS
+grades to very hard
+grades to hard
+grades to very hard (refusal)
+GP-
+GM
+BORING_LOG  5638-00.GPJ  GEOLABS.GDT  11/7/06
+Description
+Geotechnical Engineering
+Plate
+GEOLABS, INC.
+FY06 MCON - PROJECT P-431
+ALPHA & BRAVO WHARF IMPROVEMENTS
+POLARIS POINT, GUAM
+A - 5.3
+Water Level:
+Approximately 2 m
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+RQD (%)
+Other Tests
+(Continued from previous plate)
+Laboratory
+Penetration
+Resistance
+(blows/0.30m)
+Sample
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Field
+August 29, 2006
+August 31, 2006
+G. E. & T.
+39.6 meters
+5638-00
+Depth (meters)
+USCS
+105
+Pocket Pen.
+(kPa)
+Log of
+Boring
+RQD (%)
+Moisture
+Content (%)
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+37/
+150-mm
++60/
+60-mm
+Plate
+68/
+90-mm
++15/
+.0-mm
+Ref.
+15/
+.0-mm
+17
+21
+grades to hard
+Core
+Recovery (%)
+1940
+Boring terminated at 39.6 meters
+Dry Density
+(kg/m
+3)
+Truck-Mounted Drill Rig
+100-mm Rotary Wash
+63.5 kg wt., 0.76 m drop
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+BORING_LOG  5638-00.GPJ  GEOLABS.GDT  11/7/06
+Water Level:
+Approximately 2 m
+GEOLABS, INC.
+Geotechnical Engineering
+Other Tests
+Penetration
+Resistance
+(blows/0.30m)
+Laboratory
+(Continued from previous plate)
+Description
+Sample
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Field
+August 29, 2006
+August 31, 2006
+G. E. & T.
+39.6 meters
+5638-00
+Depth (meters)
+A - 5.4
+FY06 MCON - PROJECT P-431
+ALPHA & BRAVO WHARF IMPROVEMENTS
+POLARIS POINT, GUAM
+1513
+1423
+1309
+Approximate Ground Surface
+Elevation (meters MSL): 3.4 *
+1452
+grades with coral fingers
+1432
+1712
+74
+Dry Density
+(kg/m
+3)
+Truck-Mounted Drill Rig
+200-mm Hollow-Stem Auger
+63.5 kg wt., 0.76 m drop
+Core
+Recovery (%)
+1248
+28
+55
+44
+32
+68
+3
+8
+9
+12
+14
+30
+32
+23
+GM
+SM
+SM
+Light to dark brown and white SILTY GRAVEL with
+sand, medium dense, moist
+grades to light brown and white, dense
+grades to medium dense
+Light gray and white SILTY SAND with gravel,
+medium dense
+grades with fragments of seashells, dense
+Light gray and white SILTY SAND with gravel,
+loose
+-#200
+= 35%
+16
+Drill Rig:
+Drilling Method:
+Driving Energy:
+BORING_LOG  5638-00.GPJ  GEOLABS.GDT  11/7/06
+2.3 m. 8/28/06 1200 HRS
+Water Level:
+Penetration
+Resistance
+(blows/0.30m)
+Sample
+Laboratory
+Graphic
+Field
+August 25, 2006
+August 25, 2006
+G. E. & T.
+12.6 meters
+5638-00
+Depth (meters)
+A - 6.1
+FY06 MCON - PROJECT P-431
+ALPHA & BRAVO WHARF IMPROVEMENTS
+POLARIS POINT, GUAM
+Description
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+106
+Pocket Pen.
+(kPa)
+Log of
+Boring
+Plate
+USCS
+Moisture
+Content (%)
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+Geotechnical Engineering
+GEOLABS, INC.
+RQD (%)
+Other Tests
+Log of
+Boring
+Core
+Recovery (%)
+106
+Pocket Pen.
+(kPa)
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Dry Density
+(kg/m
+3)
+Plate
+USCS
+Moisture
+Content (%)
+59
+62
+26
+22
+SM
+GP
+Light gray and white CORAL FINGERS with clay
+and cobbles, dense
+Truck-Mounted Drill Rig
+200-mm Hollow-Stem Auger
+63.5 kg wt., 0.76 m drop
+1095
+1716
+Boring terminated at 12.6 meters
+BORING_LOG  5638-00.GPJ  GEOLABS.GDT  11/7/06
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+Water Level:
+Description
+2.3 m. 8/28/06 1200 HRS
+GEOLABS, INC.
+Geotechnical Engineering
+Sample
+RQD (%)
+Other Tests
+(Continued from previous plate)
+Laboratory
+Penetration
+Resistance
+(blows/0.30m)
+FY06 MCON - PROJECT P-431
+ALPHA & BRAVO WHARF IMPROVEMENTS
+POLARIS POINT, GUAM
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Field
+August 25, 2006
+August 25, 2006
+G. E. & T.
+12.6 meters
+5638-00
+Depth (meters)
+A - 6.2
+1334
+Light grayish blue and white CORAL FINGERS
+with silty sand and cobbles, dense
+Dry Density
+(kg/m
+3)
+1302
+1492
+34
+984
+1352
+Light gray and white GRAVEL (CORALLINE) with
+sand and cobbles, very dense
+65
+28
+42
+69
+45/
+60-mm
++15/
+.0-mm
+Ref.
+80/
+90-mm
++15/
+.0-mm
+Ref.
+44
+17
+MH
+Dark gray and blue GRAVELLY SAND with silt
+and fragments of seahells, dense
+Light gray with green mottling CLAYEY SILT, soft
+Light brown, white, and gray GRAVEL
+(CORALLINE) with sand and cobbles, medium
+dense, saturated
+Dark to light brown and white SILTY SAND with
+gravel, medium dense, moist
+GP
+10
+SP
+26
+GP
+SM
+26
+21
+39
+Boring terminated at 8.1 meters
+GP
+Other Tests
+FY06 MCON - PROJECT P-431
+ALPHA & BRAVO WHARF IMPROVEMENTS
+POLARIS POINT, GUAM
+A - 7
+Depth (meters)
+August 25, 2006
+August 25, 2006
+G. E. & T.
+8.1 meters
+5638-00
+Field
+Graphic
+Sample
+Penetration
+Resistance
+(blows/0.30m)
+1309
+Truck-Mounted Drill Rig
+200-mm Hollow-Stem Auger
+63.5 kg wt., 0.76 m drop
+Drill Rig:
+Drilling Method:
+Driving Energy:
+1.8 m. 8/25/06 1334 HRS
+Geotechnical Engineering
+GEOLABS, INC.
+Description
+BORING_LOG  5638-00.GPJ  GEOLABS.GDT  11/7/06
+Laboratory
+Water Level:
+Pocket Pen.
+(kPa)
+USCS
+Plate
+Log of
+Boring
+Moisture
+Content (%)
+107
+Approximate Ground Surface
+Elevation (meters MSL): 3.0 *
+Core
+Recovery (%)
+RQD (%)
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+APPENDIX  B 
+Laboratory Testing 
+FINAL DESIGN SUBMITTAL 
+W.O. 5638-00 
+GEOLABS, INC. 
+NOVEMBER 2006     Page B-1 
+A P P E N D I X   B 
+Laboratory Testing 
+Moisture Content (ASTM D 2216) and Unit Weight (ASTM D 2937) determinations 
+were performed on selected soil samples as an aid in the classification and evaluation of 
+soil properties. The test results are presented on the Logs of Borings at the appropriate 
+sample depths. 
+Three Atterberg Limits tests (ASTM D 4318) were performed on selected soil 
+samples to evaluate the liquid and plastic limits and to aid in soil classification. The test 
+results are summarized on the Logs of Borings at the appropriate sample depths, and 
+graphic presentations of the test results are provided on Plate B-1. 
+Twenty-three Sieve Analysis tests (ASTM C 117 & C 136) were performed on 
+selected soil samples to evaluate the gradation characteristics of the soils and to aid in 
+soil classification. The fines content of the sample tested (percent particles passing the 
+No. 200 sieve) is indicated on the Logs of Borings at the appropriate sample depths.  
+Graphic presentation of the grain size distribution is provided on Plates B-2 through B-6. 
+One Unconsolidated Undrained Triaxial Compression test (ASTM D 2850) was 
+performed on a selected in-situ soil sample to evaluate the undrained shear strength of 
+the soils.  The approximate in-situ effective overburden pressure was used as the 
+applied confining pressures for the relatively “undisturbed” soil sample.  The test results 
+and the stress-strain curve are presented on Plate B-7. 
+(h:\5600 Series\5638-00.rl2 – p49) 
+20
+120
+Light gray and white clayey sand (SC)
+ATTERBERG LIMITS TEST RESULTS - ASTM D 4318
+21
+100
+19
+50
+0
+10
+20
+20
+40
+80
+60
+70
+80
+90
+100
+0
+40
+60
+30
+Plate
+Light gray and white clayey sand (SC)
+Light gray and white clayey sand (SC)
+Description
+37
+32
+34
+CL-ML
+9.3-9.4
+15.4-15.7
+W.O. 5638-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+FY06 MCON - PROJECT P-431
+ALPHA & BRAVO WHARF IMPROVEMENTS
+POLARIS POINT, GUAM
+9.8-10.2
+G_ATTERBERG  5638-00.GPJ  GEOLABS.GDT  11/7/06
+PI
+PLASTICITY INDEX
+15
+Depth (m)
+Sample
+LL
+B - 1
+PL
+B-101
+B-101
+B-105
+17
+11
+LIQUID LIMIT
+ML or OL
+CH or OH
+CL or OL
+MH or OL
+3
+2
+20.4
+COBBLES
+%Sand
+41.6
+56.7
+51.2
+35.8
+11.0
+13.8
+11.8
+59.8
+%Gravel
+Depth (m)
+40
+0.201
+42.9
+50
+1
+0.1
+0.01
+0.001
+D30 (mm)
+20
+140
+25
+30
+35
+45
+15
+55
+60
+65
+70
+75
+80
+85
+90
+95
+100
+40
+10
+100
+0
+5
+10
+8
+4.3
+45.4
+35.0
+32.3
+38.0
+Depth (m)
+10 14
+Sample
+PL
+0.641
+1.168
+1.289
+0.583
+B - 2
+PI
+6
+LL
+coarse
+1
+1.5
+200
+4
+W.O. 5638-00
+50
+0.0-0.2
+7.8-8.1
+12.4-12.7
+18.3-18.6
+5.2-5.7
+Plate
+18.3-18.6
+12.4-12.7
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+FY06 MCON - PROJECT P-431
+ALPHA & BRAVO WHARF IMPROVEMENTS
+POLARIS POINT, GUAM
+B-101
+U.S. SIEVE OPENING IN INCHES
+6
+D60 (mm)
+D100 (mm)
+B-101
+5.2-5.7
+B-101
+1.789
+B-102
+B-101
+B-101
+B-101
+B-101
+B-102
+0.0-0.2
+7.8-8.1
+B-101
+37.5
+11.843
+fine
+16
+19
+25
+19
+25
+Cc
+3/4
+fine
+20
+Description
+GRAVEL
+U.S. SIEVE NUMBERS
+D10 (mm)
+Light gray and white sandy gravel (GW)
+Light clayey sand (SC) w/ gravel
+Light clayey sand (SC) w/ gravel
+Brownish gray limestone
+Light gray and white clayey sand (SC) w/ gravel
+Cu
+1.3
+58.9
+HYDROMETER
+3
+SILT OR CLAY
+PERCENT FINER BY WEIGHT
+100
+coarse
+1/2
+Sample
+G_GRAIN_SIZE  5638-00.GPJ  GEOLABS.GDT  11/7/06
+GRAIN SIZE IN MILLIMETERS
+GRAIN SIZE DISTRIBUTION - ASTM C 117 & C 136
+SAND
+%Fine
+3/8
+60
+4
+30
+medium
+%Sand
+51.8
+Sample
+50.2
+64.8
+D30 (mm)
+140
+69.4
+40
+COBBLES
+43.7
+14.1
+21.0
+36.4
+10.1
+45.6
+%Gravel
+Depth (m)
+2
+3
+0.001
+100
+60
+65
+70
+75
+80
+85
+95
+45
+0.01
+0.1
+1
+10
+90
+10
+55
+5
+50
+15
+20
+25
+30
+35
+40
+100
+0
+20
+6
+10.7
+20.5
+13.4
+27.2
+21.1
+Depth (m)
+4
+810 14
+LL
+5.871
+1.449
+4.039
+0.776
+1.317
+B - 3
+PI
+PL
+coarse
+1
+1.5
+200
+W.O. 5638-00
+6.9-7.0
+6.7-7.0
+8.2-8.7
+13.1-13.3
+2.3-2.4
+6.9-7.0
+Plate
+50
+8.2-8.7
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+FY06 MCON - PROJECT P-431
+ALPHA & BRAVO WHARF IMPROVEMENTS
+POLARIS POINT, GUAM
+B-102
+0.089
+U.S. SIEVE OPENING IN INCHES
+6
+D60 (mm)
+D100 (mm)
+2.3-2.4
+B-102
+13.1-13.3
+B-103
+B-103
+B-102
+B-102
+B-102
+B-103
+B-103
+6.7-7.0
+B-102
+25
+37.5
+GRAIN SIZE DISTRIBUTION - ASTM C 117 & C 136
+25
+19
+Cc
+3/4
+fine
+SILT OR CLAY
+medium
+19
+G_GRAIN_SIZE  5638-00.GPJ  GEOLABS.GDT  11/7/06
+Description
+Cu
+GRAVEL
+U.S. SIEVE NUMBERS
+D10 (mm)
+Light silty gravel (GP-GM) w/ sand
+Light gray silty sand (SM) w/ gravel
+Gray silty sand (SM) w/ gravel
+Light gray clayey sand (SM-SC) w/ gravel
+Light gray and white silty clayey sand (SM-SC) w/ gravel
+16
+fine
+SAND
+HYDROMETER
+3
+GRAIN SIZE IN MILLIMETERS
+PERCENT FINER BY WEIGHT
+100
+coarse
+1/2
+Sample
+1.315
+0.383
+0.668
+%Fine
+60
+93.2
+4.7
+30
+3/8
+0.191
+4
+45
+5
+10
+15
+20
+25
+30
+40
+50
+55
+60
+65
+70
+75
+35
+B-104
+0
+90
+1
+15.8-16.0
+12.8-13.3
+9.8-10.2
+14.3
+0.001
+80
+0.1
+10
+100
+9.8
+15.8-16.0
+12.8-13.3
+9.8-10.2
+0.01
+GEOLABS, INC.
+95
+100
+FY06 MCON - PROJECT P-431
+ALPHA & BRAVO WHARF IMPROVEMENTS
+POLARIS POINT, GUAM
+9.8
+14.3
+GEOTECHNICAL ENGINEERING
+W.O. 5638-00
+Plate
+85
+%Fine
+60
+SAND
+30
+4
+37.5
+37.5
+37.5
+37.5
+Cc
+3/4
+fine
+SILT OR CLAY
+medium
+GRAIN SIZE DISTRIBUTION - ASTM C 117 & C 136
+3/8
+25
+B-103
+Light gray and white silty gravel (GM) w/ sand
+Light gray and white clayey sand (SC) w/ gravel
+16
+fine
+3
+Gray silty gravel (GM) w/ sand
+2.4
+135.4
+D30 (mm)
+B-104
+20
+Description
+Light gray silty gravel (GW-GM) w/ sand
+Gray silty gravel (GM) w/ sand
+Cu
+GRAVEL
+U.S. SIEVE NUMBERS
+D10 (mm)
+LL
+17.984
+13.62
+0.39
+B - 4
+PI
+HYDROMETER
+PL
+coarse
+1
+1.5
+1/2
+GRAIN SIZE IN MILLIMETERS
+PERCENT FINER BY WEIGHT
+100
+5.901
+coarse
+5.012
+Sample
+0.278
+0.66
+2.388
+1.887
+Sample
+14
+10
+6.6
+Depth (m)
+49.5
+14.3
+140
+8
+D60 (mm)
+B-103
+B-103
+B-104
+B-104
+B-103
+B-103
+D100 (mm)
+50
+6
+U.S. SIEVE OPENING IN INCHES
+16.1
+B-103
+30.6
+44.2
+52.7
+61.0
+19.9
+38.1
+39.7
+G_GRAIN_SIZE  5638-00.GPJ  GEOLABS.GDT  11/7/06
+24.7
+%Sand
+COBBLES
+40.6
+3
+20.8
+6
+4
+200
+41.1
+%Gravel
+2
+0.133
+40
+Depth (m)
+51.1
+%Sand
+31.6
+39.2
+33.6
+30.0
+18.6
+22.5
+23.0
+57.8
+%Gravel
+Depth (m)
+40
+2
+3
+19.3
+40
+0
+5
+10
+Sample
+15
+20
+25
+0.01
+35
+0.1
+45
+50
+55
+60
+65
+70
+75
+80
+100
+95
+90
+30
+0.001
+85
+100
+10
+1
+6
+23.6
+46.9
+15.4
+38.3
+49.1
+Depth (m)
+4
+810 14
+LL
+COBBLES
+0.364
+7.281
+0.56
+0.209
+B - 5
+PI
+PL
+coarse
+1
+1.5
+200
+W.O. 5638-00
+11.3-11.7
+15.8
+20.4
+5.2-5.3
+8.2-8.5
+11.3-11.7
+Plate
+50
+20.4
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+FY06 MCON - PROJECT P-431
+ALPHA & BRAVO WHARF IMPROVEMENTS
+POLARIS POINT, GUAM
+B-105
+0.372
+U.S. SIEVE OPENING IN INCHES
+6
+D60 (mm)
+D100 (mm)
+8.2-8.5
+B-104
+5.2-5.3
+B-105
+B-105
+B-104
+B-104
+B-105
+B-105
+B-105
+15.8
+B-104
+9.317
+fine
+Light gray and white clayey sand (SC) w/ gravel
+Light gray and white clayey sand (SC) w/ gravel
+37.5
+19
+37.5
+37.5
+37.5
+Cc
+Cu
+D30 (mm)
+140
+20
+Description
+16
+SILT OR CLAY
+GRAVEL
+U.S. SIEVE NUMBERS
+D10 (mm)
+Light gray and white silty gravel (GM) w/ sand
+Light gray and white silty sand (SM) w/ gravel
+Light gray and white silty gravel (GM) w/ sand
+3/8
+HYDROMETER
+3
+3/4
+PERCENT FINER BY WEIGHT
+100
+coarse
+1/2
+Sample
+0.564
+GRAIN SIZE IN MILLIMETERS
+G_GRAIN_SIZE  5638-00.GPJ  GEOLABS.GDT  11/7/06
+medium
+GRAIN SIZE DISTRIBUTION - ASTM C 117 & C 136
+SAND
+%Fine
+60
+4
+30
+fine
+Sample
+28.0
+32.2
+48.9
+%Sand
+COBBLES
+16.0
+55.9
+29.9
+%Gravel
+Depth (m)
+40
+2
+1
+3
+100
+0
+60
+10
+20
+0.1
+0.01
+0.001
+100
+95
+90
+85
+80
+75
+65
+55
+50
+45
+40
+35
+30
+25
+20
+15
+10
+5
+70
+Depth (m)
+200
+4
+6
+42.1
+35.1
+810 14
+D30 (mm)
+11.9
+Sample
+1.326
+1.135
+9.102
+0.388
+B - 6
+PI
+1.5
+LL
+PL
+coarse
+1
+15.8-16.5
+21.9-22.4
+7.8-7.9
+Plate
+W.O. 5638-00
+15.8-16.5
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+FY06 MCON - PROJECT P-431
+ALPHA & BRAVO WHARF IMPROVEMENTS
+POLARIS POINT, GUAM
+D100 (mm)
+50
+U.S. SIEVE OPENING IN INCHES
+7.8-7.9
+D60 (mm)
+21.9-22.4
+B-105
+B-105
+B-106
+B-105
+B-105
+B-106
+coarse
+6
+25
+Light gray and white silty sand (SM) w/ gravel
+37.5
+25
+Cc
+3/4
+fine
+SILT OR CLAY
+GRAVEL
+G_GRAIN_SIZE  5638-00.GPJ  GEOLABS.GDT  11/7/06
+Description
+fine
+Cu
+16
+U.S. SIEVE NUMBERS
+D10 (mm)
+Light gray and white clayey gravel (GC) w/ sand
+Light gray and white gravel (GP-GM) w/ silt and sand
+GRAIN SIZE DISTRIBUTION - ASTM C 117 & C 136
+medium
+3/8
+3.8
+178.9
+HYDROMETER
+GRAIN SIZE IN MILLIMETERS
+PERCENT FINER BY WEIGHT
+100 140
+3
+1/2
+SAND
+%Fine
+60
+4
+30
+UNCONSOLIDATED UNDRAINED COMPRESSIVE STRENGTH OF COHESIVE
+SOILS IN TRIAXIAL COMPRESSION - ASTM D 2850
+300
+250
+200
+150
+Deviator Stress, kPa
+100
+50
+(@) 1 2 3 4 5 6 7 8 9 10 11 12
+Axial Strain, %
+LOCATION: B-105
+DEPTH : 26.7 - 26.8 meters
+DESCRIPTION: Light brown and white silty gravel w/ sand
+DRY DENSITY: 1858 kg/cu.m SAMPLE DIAMETER: 59.87 mm
+MOISTURE CONTENT: 17.0 % SAMPLE HEIGHT: 134.80 mm
+AT FAILURE
+STRAIN RATE = 0.95 %/min.
+CONFINING PRESSURE = 215.6 kPa
+MAX. DEVIATOR STRESS = 316.9 kPa @ 7.0 % STRAIN
+UNDRAINED COMPRESSION TEST
+GEOLABS, INC.
+Geotechnical Engineering
+Oct 06 5638-00
+PLATE B-7
+PROJECT:
+FYO6 MCON - PROJECT P-431
+ALPHA & BRAVO WHARF IMPROVEMENTS
+POLARIS POINT, GUAM
+APPENDIX  C 
+Field Percolation Testing 
+FINAL DESIGN SUBMITTAL 
+W.O. 5638-00 
+GEOLABS, INC. 
+NOVEMBER 2006     Page C-1 
+A P P E N D I X   C 
+Field Percolation Testing 
+The field percolation rates of the on-site soils at the proposed leach field site were 
+estimated by performing falling-head percolation tests in excavated pits, designated as P-1 
+and P-2. Field percolation tests were performed to evaluate the permeability of the 
+subsurface soils for wastewater disposal. The test results are presented on Plates C-1 and 
+C-2. 
+The percolation tests were performed by excavating a pit of approximately 4 to 
+5 feet wide to a depth of approximately 4 feet below the existing ground surface.  During 
+testing, the pit was filled with water to approximately 12 inches above the bottom of the 
+pit. The time intervals and water drops were then recorded to provide data upon which 
+calculation of the percolation tests were based. 
+(h:\5600 Series\5638-00.rl2 – p51) 
+W.O. 5638-00 
+GEOLABS, INC. NOVEMBER 2006    PLATE C-1 
+PERCOLATION TEST RESULTS 
+FY06 MCON - Project P-431 
+Alpha & Bravo Wharf Improvements 
+Polaris Point, Guam 
+Test Location: 
+P-1 (Approximately 4 feet wide) 
+Depth:  
+4 feet (measured from the existing ground surface) 
+Date:  
+September 1, 2006 
+Measured Depth of Head Drop 
+Elapsed Time 
+(in) 
+(minutes) 
+20 
+0 
+Start Test 
+19 
+0.15 
+18 
+0.40 
+17 
+0.59 
+16 
+1.33 
+15 
+2.05 
+14 
+2.47 
+13 
+3.30 
+12 
+4.20 
+11 
+5.20 
+10 
+6.23 
+9 
+7.30 
+8 
+8.24 
+7 
+9.35 
+6 
+10.42 
+5 
+14.00 
+4 
+17.25 
+3 
+20.55 
+End Test 
+Estimated Rate of Percolation: 
+1.8 
+minutes per inch 
+W.O. 5638-00 
+GEOLABS, INC. NOVEMBER 2006    PLATE C-2 
+PERCOLATION TEST RESULTS 
+FY06 MCON - Project P-431 
+Alpha & Bravo Wharf Improvements 
+Polaris Point, Guam 
+Test Location: 
+P-2 (Approximately 5.5 feet wide) 
+Depth:  
+4 feet (measured from the existing ground surface) 
+Date:  
+September 1, 2006 
+Measured Depth of Head Drop 
+Elapsed Time 
+(in) 
+(minutes) 
+13 
+0 
+Start Test 
+12 
+2.50 
+11 
+5.15 
+10 
+8.09 
+9 
+10.45 
+8 
+13.38 
+7 
+16.26 
+6 
+19.05 
+5 
+21.23 
+4 
+24.04 
+3 
+27.23 
+2 
+31.40 
+End Test 
+Estimated Rate of Percolation: 
+3.2 
+minutes per inch 

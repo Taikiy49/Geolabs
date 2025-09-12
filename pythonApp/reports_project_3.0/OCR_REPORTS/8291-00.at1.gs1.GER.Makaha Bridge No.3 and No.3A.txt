@@ -1,0 +1,2698 @@
+GEOTECHNICAL ENGINEERING REPORT 
+FARRINGTON HIGHWAY 
+MAKAHA BRIDGE NOS. 3 AND 3A 
+MAKAHA, OAHU, HAWAII 
+W.O. 8291-00     SEPTEMBER 3, 2021 
+Prepared for 
+GRACE PACIFIC, LLC 
+and 
+STATE OF HAWAII 
+DEPARTMENT OF TRANSPORTATION 
+HIGHWAYS DIVISION 
+GEOLABS, INC. 
+Geotechnical Engineering and Drilling Services 
+GEOTECHNICAL ENGINEERING REPORT
+FARRINGTON HIGHWAY
+MAKAHA BRIDGE NOS. 3 AND 3A
+MAKAHA, OAHU, HAWAII
+W.O. 8291-00 SEPTEMBER 3, 2021
+Prepared for
+GRACE PACIFIC, LLC
+and
+STATE OF HAWAII
+DEPARTMENT OF TRANSPORTATION
+HIGHWAYS DIVISION
+LICENSED
+PROFESSIONAL
+ENGINEER
+No. 5635-C
+THIS WORK WAS PREPARED BY
+ME OR UNDER MY SUPERVISION.
+4-30-22
+SIGNATURE XPIRATION DATE
+OF THE LICENSE
+GEOLABS, INC.
+Geotechnical Engineering and Drilling Services
+94-429 Koaki Street, Suite 200 e Waipahu, HI 96797
+Hawaii e California
+GEOLABS, INC.
+Geotechnical Engineering and Drilling Services
+September 3, 2021
+W.O. 8291-00
+Mr. Myles Mizokami
+Grace Pacific, LLC.
+949 Kamokila Boulevard, Suite 200
+Kapolei, Hl 96707
+Dear Mr. Mizokami:
+Geolabs, Inc. is pleased to submit our report entitled “Geotechnical Engineering
+Report, Farrington Highway, Makaha Bridge Nos. 3 and 3A, Makaha, Oahu, Hawaii,”
+prepared in support of the design of the project.
+Detailed discussion and recommendations are contained in the body of this
+report. If there is any point that is not clear, please contact our office.
+Very truly yours,
+GEOLABS, INC.
+layly
+Gerald Y. Seki, P.E.
+Vice President
+GS:AT:cj
+94-429 Koaki Street, Suite 200 e Waipahu, Hawaii 96797
+Telephone: (808) 841-5064 ° E-mail: hawaii@ geolabs.net
+W.O. 8291-00 
+GEOLABS, INC. 
+Page i 
+Hawaii • California 
+GEOTECHNICAL ENGINEERING REPORT 
+FARRINGTON HIGHWAY 
+MAKAHA BRIDGE NOS. 3 AND 3A 
+MAKAHA, OAHU, HAWAII 
+W.O. 8291-00    SEPTEMBER 3, 2021 
+TABLE OF CONTENTS 
+Page 
+SUMMARY OF FINDINGS AND RECOMMENDATIONS .............................................. iii 
+1. 
+GENERAL ............................................................................................................ 1 
+1.1 
+Introduction ................................................................................................ 1 
+1.2 
+Project Considerations ............................................................................... 1 
+2. 
+SITE CHARACTERIZATION ................................................................................ 3 
+2.1 
+Regional Geology ...................................................................................... 3 
+2.2 
+Existing Site Conditions ............................................................................. 4 
+2.3 
+Subsurface Conditions ............................................................................... 4 
+3. 
+DISCUSSION AND RECOMMENDATIONS ........................................................ 6 
+3.1 
+Replacement Bridge Foundations .............................................................. 6 
+3.1.1 Lateral Load Resistance ................................................................. 7 
+3.1.2 Foundation Settlements .................................................................. 8 
+3.1.3 Drilled Shaft Construction Considerations ....................................... 8 
+3.1.4 Test Shaft Program ....................................................................... 10 
+3.1.5 Non-Destructive Integrity Testing .................................................. 11 
+3.2 
+Structural Approach Slabs ....................................................................... 13 
+3.3 
+Retaining Walls ........................................................................................ 13 
+3.3.1 Shallow Retaining Wall Foundations ............................................. 14 
+3.3.2 Static Lateral Earth Pressures....................................................... 15 
+3.3.3 Dynamic Lateral Earth Pressures .................................................. 16 
+3.3.4 Drainage ....................................................................................... 17 
+3.4 
+Site Grading ............................................................................................. 17 
+3.5 
+Utility Trenches ........................................................................................ 19 
+3.6 
+Design Review ......................................................................................... 20 
+3.7 
+Post-Design Services/Services During Construction ............................... 20 
+4. 
+LIMITATIONS ..................................................................................................... 22 
+CLOSURE ..................................................................................................................... 23 
+TABLE OF CONTENTS 
+Page 
+W.O. 8291-00 
+GEOLABS, INC. 
+Page ii 
+Hawaii • California 
+PLATES 
+Project Location Map ................................................................................... Plate 1 
+Site Plan ...................................................................................................... Plate 2 
+Lateral Load Analysis .......................................................... Plates 3.1.1 thru 3.4.2 
+Drilled Shaft Load Test Detail .................................................... Plates 4.1 and 4.2 
+W.O. 8291-00 
+GEOLABS, INC. 
+Page iii 
+Hawaii • California 
+GEOTECHNICAL ENGINEERING REPORT 
+FARRINGTON HIGHWAY 
+MAKAHA BRIDGE NOS. 3 AND 3A 
+MAKAHA, OAHU, HAWAII 
+W.O. 8291-00      SEPTEMBER 3, 2021 
+SUMMARY OF FINDINGS AND RECOMMENDATIONS 
+Near the existing Makaha Bridge No. 3 abutment structure, the available borings 
+generally encountered a surface fill layer about 5 to 8 feet thick consisting of medium stiff 
+to very stiff silty clay and clayey silt with some sand and gravel. The surface fill layer was 
+underlain by coralline detritus consisting of very loose to medium dense silty/clayey sand 
+with coral fragments extending to depths of about 43 to 49 feet below the ground surface. 
+Below the coralline detritus, dense to very dense coralline gravel was encountered, 
+extending to a maximum depth explored of about 99.5 feet below the ground surface. 
+Near the existing Makaha Bridge No. 3A abutment structure, the available borings 
+generally encountered a surface fill layer about 6 to 14 feet thick consisting of medium stiff 
+to stiff clayey silt with sand, gravel and cobbles. The surface fill layer was underlain by 
+deposits of coralline detritus, alluvium, and coral rubblestone extending to a maximum 
+depth explored of about 110.5 feet below the ground surface. The coralline detritus 
+generally consisted of medium dense to dense silty/clayey sand and silty gravel. The 
+alluvium generally consisted of very soft to stiff clayey silt. The coral rubblestone was 
+dense to medium hard.  
+Groundwater was encountered in the drilled borings at depths ranging from 8.7 to 
+11.6 feet below the existing ground surface, corresponding to approximate elevations 
+ranging from -0.6 to +3.8 feet Mean Sea Level (MSL). It should be noted that groundwater 
+levels may vary with tidal fluctuations, seasonal rainfall, time of year, and other factors.  
+Based on the subsurface information and the foundation loads provided, we believe 
+that a deep foundation system consisting of drilled shafts embedded into the underlying 
+coralline detritus, alluvium, and coral formation may be used to support the abutment 
+structures for the new Acrow steel bridges. A minimum shaft diameter of 4 feet should be 
+used with minimum shaft lengths of about 68 and 54 feet below the planned 
+bottom-of-footing elevations for Bridge Nos. 3 and 3A, respectively. For the lateral load 
+analysis for the drilled shafts, stiffness modeling parameters consisting of non-linear p-y 
+curves were provided.  
+A test shaft program consisting of the construction of two load test shafts is 
+recommended for the project with one load test shaft at each bridge structure. Due to the 
+high capacities recommended for the drilled shafts, a conventional load test would not be 
+practicable.  Therefore, we recommend conducting a bi-directional axial load test on the 
+reinforced load test shafts using an expandable base load cell (Osterberg Load Cell). 
+SUMMARY OF FINDINGS AND RECOMMENDATIONS 
+W.O. 8291-00 
+GEOLABS, INC. 
+Page iv 
+Hawaii • California 
+The text of this report should be referred to for detailed discussion and specific 
+recommendations for the design of the replacement bridge project. 
+END OF SUMMARY OF FINDINGS AND RECOMMENDATIONS 
+W.O. 8291-00 
+GEOLABS, INC. 
+Page 1 
+Hawaii • California 
+SECTION 1.  GENERAL 
+1.1 
+Introduction 
+This geotechnical engineering report presents the results of our analyses and 
+geotechnical recommendations for the Farrington Highway, Makaha Bridge Nos. 3 and 
+3A project in Makaha on the Island of Oahu, Hawaii. The project location and general 
+vicinity are shown on the Project Location Map, Plate 1. 
+This report presents our geotechnical engineering recommendations derived 
+from our analyses for the design of bridge foundations, retaining structures, and site 
+grading only. The findings and recommendations presented herein are subject to the 
+limitations noted at the end of this report. 
+1.2 
+Project Considerations 
+The Makaha Bridge Nos. 3 and 3A project is along Farrington Highway and 
+spans across Makaha Stream and West Makaha Stream on the Island of Oahu, Hawaii. 
+The project site is located near the intersection of Farrington Highway and Kili Drive. We 
+understand that redesigning the bridges utilizing Acrow bridge structures is desired for 
+the project. The bridge locations are shown on the Site Plan, Plate 2. 
+The existing Makaha Bridge No. 3 is a three-span bridge about 60 feet in length 
+and about 33 feet wide. The existing bridge is supported on spread footings, and the 
+stream slopes at the bridge are lined with Concrete Rubble Masonry (CRM) paving. 
+The existing Makaha Bridge No. 3A is a four-span bridge about 79 feet in length 
+and about 20 feet wide. The existing bridge is supported on spread footings with the 
+bottoms of the pier footings extending down to the underlying coral bed at 
+Elevations -1.17 to -1.25 feet Mean Sea Level (MSL). The stream banks at the bridge 
+are lined with CRM paving. 
+Based on the information provided, we understand that the new bridge 
+foundations for the Acrow bridges will consist of reinforced concrete abutments, each 
+supported on two cast-in-place concrete drilled shaft foundations. We understand that 
+Bridge Nos. 3 and 3A will be 42 feet wide by 130 feet and 100 feet long, respectively. 
+SECTION 1. GENERAL 
+W.O. 8291-00 
+GEOLABS, INC. 
+Page 2 
+Hawaii • California 
+For Makaha Bridge No. 3, a concrete invert slab will be constructed at the stream 
+bottom and side slopes at the bridge location. Beyond the bridge location, dumped 
+riprap about 4 feet thick will be installed upstream and downstream of the new bridge.  
+For Makaha Bridge No. 3A, dumped riprap about 2 feet thick will be placed along 
+the stream side slopes and portions of the stream bottom.  
+Previous subsurface information is provided in the report by Hirata & Associates, 
+Inc. entitled “Geotechnical Investigation, Farrington Highway, Makaha Bridge No. 3 and 
+No. 3A Replacement, Makaha, Oahu, Hawaii,” dated July 2, 2020, and addendum dated 
+July 21, 2020. In addition, a pavement justification report, dated January 6, 2009, was 
+done for the project. 
+END OF GENERAL 
+W.O. 8291-00 
+GEOLABS, INC. 
+Page 3 
+Hawaii • California 
+SECTION 2.  SITE CHARACTERIZATION 
+2.1 
+Regional Geology 
+The Island of Oahu was built by the extrusion of basaltic lava from the 
+Waianae and Koolau shield volcanoes. The older Waianae Volcano is estimated to be 
+middle to late Pliocene in age and forms the bulk of the western third of the island. The 
+younger Koolau Volcano is estimated to be late Pliocene to early Pleistocene in age 
+(Ice Age) and forms the majority of the eastern two-thirds of the island. Waianae 
+became extinct while Koolau was still active, and its eastern flank was partially buried 
+below Koolau lava banking against its eastern flank. 
+The Waianae and Koolau volcanic shields were built during the late Pliocene and 
+early Pleistocene Epoch by thinly-bedded basaltic lava flows. The main shield-building 
+activities ceased approximately 3.5 to 2.5 million years ago. Evidence from drilled wells 
+indicates that the island of Oahu has subsided as much as 1,200 feet since the 
+cessation of this early volcanic activity (Macdonald and Abbott, 1970). 
+During that period of subsidence, coral-algal reefs began to grow on the southern 
+coast of Oahu, forming broad bays with barrier reefs across its mouth. The growth of the 
+reefs essentially kept pace with the rate of subsidence. A series of lagoons formed 
+behind the barrier reefs and both terrigenous and marine sediments accumulated in the 
+lagoons (Macdonald and Abbott, 1970). 
+During the late Pleistocene Epoch (Ice Age), many sea level changes occurred 
+as a result of widespread glaciation in the continental areas of the world. As the great 
+continental glaciers advanced, the level of the ocean fell since less water was available 
+to fill the oceanic basins. Conversely, as the glaciers receded or melted, global sea 
+levels rose because more water was available. The land mass of Oahu remained 
+essentially stable during these changes, and the fluctuations were eustatic in nature. 
+These glacio-eustatic fluctuations resulted in stands of the sea, which were both higher 
+and lower relative to the present sea level on Oahu. 
+The higher sea level stands caused the accumulation of deltas and fans of 
+terrigenous sediments in the heads of the old bays, accumulation of reef deposits at 
+SECTION 2. SITE CHARACTERIZATION 
+W.O. 8291-00 
+GEOLABS, INC. 
+Page 4 
+Hawaii • California 
+correspondingly higher elevations, and lagoonal/marine sediments in the quiet waters 
+protected by fringing reefs. The concurrent growth of reefs and lagoonal sediments may 
+have also resulted in deposits of coral/algal limestone and marls within the 
+predominantly lagoonal sedimentary units. The project site is located near the shoreline 
+in the Makaha area and is underlain by calcareous reef deposits, alluvium, and coral.  
+2.2 
+Existing Site Conditions 
+Makaha Bridge Nos. 3 and 3A project is located along Farrington Highway in the 
+vicinity of the Kili Drive intersection. Based on available drawings, the existing bridges 
+consist of wooden bridge decks supported on concrete abutment footings and center 
+piers. Bridge No. 3 is about 60 feet long and 33 feet wide. Bridge No. 3A is about 
+79 feet long and 20 feet wide. In addition, the road surface elevations at the project site 
+generally range between +12 to +12.5 feet MSL. 
+Within the project limits, Farrington Highway is a two-lane thoroughfare 
+consisting of one traffic lane and a shoulder in each direction. The existing roadway is 
+covered by asphaltic concrete pavement. 
+The existing ground surface along the roadway is fairly level with ground 
+elevations ranging from about Elevations +13 to +14 feet MSL. Below the bridge 
+structure, existing stream surface elevations range from about +4 feet MSL at Bridge 
+No. 3 to about +0 feet MSL at Bridge No. 3A. 
+2.3 
+Subsurface Conditions 
+The subsurface conditions at the project site were explored by Hirata & 
+Associates, Inc. for the original design of the project by drilling and sampling 
+ten borings, designated as Boring Nos. 1 through 10, extending to depths ranging from 
+about 23.5 to 110.5 feet below the existing ground surface. The boring information and 
+the results of the laboratory testing performed are provided in Hirata & Associates, Inc. 
+report entitled “Geotechnical Investigation, Farrington Highway, Makaha Bridge No. 3 
+and No. 3A Replacement, Makaha, Oahu, Hawaii,” dated July 2, 2020. The results of 
+the field exploration performed by Hirata & Associates, Inc. were used in the 
+development of our geotechnical engineering recommendations. 
+SECTION 2. SITE CHARACTERIZATION 
+W.O. 8291-00 
+GEOLABS, INC. 
+Page 5 
+Hawaii • California 
+Near the existing Bridge No. 3 structure, the available borings generally 
+encountered a surface fill layer about 5 to 8 feet thick consisting of medium stiff to very 
+stiff silty clay and clayey silt with some sand and gravel. The surface fill layer was 
+underlain by coralline detritus consisting of very loose to medium dense silty/clayey 
+sand with coral fragments extending to depths of about 43 to 49 feet below the ground 
+surface. Below the coralline detritus layer, dense to very dense coralline gravel was 
+encountered, extending to the maximum depth explored of about 99.5 feet below the 
+existing ground surface. 
+Near the existing Bridge No. 3A structure, the available borings generally 
+encountered a surface fill layer about 6 to 14 feet thick consisting of medium stiff to stiff 
+clayey silt with sand, gravel and cobbles, and medium dense sand. The surface fill layer 
+was underlain by deposits of coralline detritus, alluvium, and coral rubblestone 
+extending to the maximum depth explored of about 110.5 feet below the existing ground 
+surface. The coralline detritus generally consisted of medium dense to dense 
+silty/clayey sand and silty gravel.  The alluvium generally consisted of very soft to stiff 
+clayey silt. The coral rubblestone was dense to medium hard. 
+Groundwater was encountered in the drilled borings at depths ranging from 8.7 to 
+11.6 feet below the existing ground surface, corresponding to approximate elevations of 
+-0.6 to +3.8 feet MSL. It should be noted that groundwater levels may vary with tidal 
+fluctuations, seasonal rainfall, time of year, and other factors.  
+END OF SITE CHARACTERIZATION 
+W.O. 8291-00 
+GEOLABS, INC. 
+Page 6 
+Hawaii • California 
+SECTION 3.  DISCUSSION AND RECOMMENDATIONS 
+The available field exploration information generally encountered surface fill, 
+coralline detritus, alluvium, and coral rubblestone extending to the maximum depths 
+explored of about 99.5 and 110.5 feet below the ground surface for Bridge Nos. 3 and 
+3A, respectively. Groundwater was encountered in the borings at depths ranging from 
+about 8.7 to 11.6 feet below the existing ground surface. The groundwater levels 
+correspond to about Elevations -0.6 to +3.8 feet MSL. 
+Based on the subsurface information and the foundation loads provided, we 
+recommend using deep foundations consisting of drilled shafts for foundation support of 
+the abutment structures for the proposed Makaha Bridge Nos. 3 and 3A replacement 
+bridge structures. Based on the subsurface conditions encountered, the drilled shaft 
+foundations would derive support principally from adhesion between the drilled shaft 
+and the underlying coralline deposits, alluvium, and coral formation. Detailed 
+discussions of these items and our geotechnical recommendations for the design of the 
+project are presented in the following sections. 
+3.1 
+Replacement Bridge Foundations 
+In general, we understand that the new replacement bridge structures will be 
+about 42 feet wide and 130 and 100 feet long for Bridge Nos. 3 and 3A, respectively. 
+Based on the information provided, the new bridges will be one-span steel Acrow bridge 
+structures supported by reinforced cast-in-place concrete abutments at both ends. 
+Based on the subsurface conditions encountered, estimated scour depth 
+elevation at Bridge No. 3A, and the foundation loads presented above, we recommend 
+using drilled shaft foundations with a nominal diameter of 4 feet to support the proposed 
+replacement bridge structures. The drilled shaft foundations would derive support 
+principally from adhesion between the drilled shaft and the coralline detritus, alluvium 
+and coral formation encountered in the borings. The contribution from end-bearing of 
+the drilled shafts has been discounted in our analyses due to the difficulties of obtaining 
+a clean bottom for end-bearing shafts in these subsurface conditions during 
+construction. 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 8291-00 
+GEOLABS, INC. 
+Page 7 
+Hawaii • California 
+Based on our engineering analyses and the above assumptions, we recommend 
+using drilled shafts with the following compressive load capacities for the extreme event 
+and strength limit states based on Load and Resistance Factor Design (LRFD) methods 
+for the design of highway bridges. For the strength limit state, a resistance factor of 0.70 
+has been applied to the extreme event limit state capacities for the design of the drilled 
+shaft foundations. Based on the spacing of the drilled shafts (11.5 diameters 
+center-to-center), an efficiency factor of 1 was applied to the extreme event and 
+strength limit state capacities for the drilled shafts presented in the following table.  
+Bottom of footing elevations of +5.5 and +5.3 feet MSL were used in the analysis for 
+Bridge Nos. 3 and 3A, respectively.  
+FOUNDATION LAYOUT AND DRILLED SHAFT CAPACITIES 
+Bridge No. 
+Abutment 
+Identification 
+Shaft 
+Diameter 
+(feet) 
+Drilled 
+Shaft Tip 
+Elev. 
+(feet MSL) 
+Compressive Load Capacity 
+Per Drilled Shaft 
+(kips) 
+Unfactored 
+Single 
+Shaft 
+Capacity 
+Extreme 
+Event 
+Limit 
+State 
+Strength 
+Limit 
+State 
+3 
+Keana 
+4 
+-62.5 
+1,080 
+1,045 
+730 
+ 3 
+Waianae 
+4 
+-62.5 
+1,170 
+1,130 
+790 
+3A 
+Keana 
+4 
+-48.7 
+1,110 
+1,110 
+770 
+3A 
+Waianae 
+4 
+-48.7 
+930 
+930 
+650 
+3.1.1 Lateral Load Resistance 
+In general, lateral load resistance for the drilled shaft is a function of the stiffness of 
+the surrounding soil/rock, the stiffness of the shaft, allowable deflection at the top of 
+the shaft, and induced moment in the shaft. To evaluate the lateral load resistance 
+of the new bridge structures, stiffness modeling parameters were estimated based 
+on the subsurface conditions encountered in the drilled borings. The stiffness 
+modeling parameters were obtained using the program LPILE 2019 for Windows, 
+which is a microcomputer adaptation of a finite difference, laterally loaded pile 
+program.  The analysis was carried out to generate non-linear “p-y” curves to 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 8291-00 
+GEOLABS, INC. 
+Page 8 
+Hawaii • California 
+represent soil moduli at various depths. Results of the generated non-linear “p-y” 
+curves are summarized and presented on Plates 3.1.1 through 3.4.2. 
+3.1.2 Foundation Settlements 
+Settlement of the drilled shaft foundation will result from elastic compression of the 
+drilled shaft and subgrade response of the foundation embedded in the coral 
+detritus and older alluvium. Total settlements of the drilled shafts are estimated to 
+be on the order of about 0.5 inches with differential settlements between the drilled 
+shafts not exceeding about one-half that amount. We believe that these settlements 
+are essentially elastic and should occur as the loads are applied. 
+3.1.3 Drilled Shaft Construction Considerations 
+In general, the performance of drilled shafts depends significantly upon the 
+contractor's method of installation and construction procedures. The following 
+conditions would have a significant effect on the effectiveness and cost of the drilled 
+shaft foundations. 
+The load-bearing capacities of drilled shafts depend, to a significant extent, on the 
+friction between the shaft and the surrounding soils and/or formation. Therefore, 
+proper construction techniques, especially during the drilling operations, are 
+important. The contractor should exercise care in drilling the shaft holes and in 
+placing concrete into the drilled holes. 
+Based on the anticipated subsurface conditions described above, some of the 
+geotechnical considerations associated with drilled shaft foundations are discussed 
+below. 
+3.1.3.a Obstructions, Boulders, and Coral Formation 
+Where obstructions, boulders, and/or coral formation are anticipated, 
+some difficult drilling conditions will likely be encountered and should be 
+expected. The drilled shaft subcontractor will need to have the appropriate 
+equipment and tools to drill through these types of natural or man-made 
+obstructions where encountered. The drilled shaft subcontractor will need 
+to demonstrate that the proposed drilling equipment (and coring tools, 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 8291-00 
+GEOLABS, INC. 
+Page 9 
+Hawaii • California 
+where appropriate) will be capable of installing the drilled shafts to the 
+recommended depths and dimensions. 
+It should be noted that cavities and voids may be encountered in the 
+subsurface materials. Therefore, the actual volume of concrete required to 
+fill the drilled shaft foundation may be appreciably more than the 
+theoretical concrete volume. 
+3.1.3.b Shallow Groundwater Conditions 
+Groundwater is anticipated within the depths of the drilled shaft 
+excavations; therefore, concrete placement by tremie methods will be 
+required during drilled shaft construction. The concrete should be placed 
+in a suitable manner by displacing the water in an upward fashion from the 
+bottom of the drilled hole. A low-shrink concrete mix with high slump (7 to 
+9 inches slump range) should be used to provide close contact between 
+the drilled shafts and the surrounding soils. The concrete should be placed 
+in a suitable manner to reduce the potential for segregation of the 
+aggregates from the concrete mix. 
+In addition, the concrete should be placed promptly after drilling (within 
+24 hours after substantial completion of the holes) to reduce the potential 
+for softening of the sides of the drilled holes.  
+It is imperative for a Geolabs representative to be present during 
+construction to observe the drilling and installation of drilled shafts. 
+Although the drilled shaft designs are primarily based on skin friction, the 
+bottom of the drilled hole should be relatively free of loose materials prior 
+to the placement of concrete. Therefore, Geolabs’ observation of the 
+drilled shaft installation operations is necessary to confirm the assumed 
+subsurface conditions.  
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 8291-00 
+GEOLABS, INC. 
+Page 10 
+Hawaii • California 
+3.1.4 Test Shaft Program 
+A test shaft program is normally required and highly recommended for bridge 
+foundation projects. Considering the diameter and structural load capacities of the 
+drilled shafts, we recommend performing a test shaft program, including the 
+performance of an instrumented load test at each bridge site, to fulfill the following 
+objectives: 
+To examine the adequacy of the methods and equipment proposed 
+by the contractor to install the high-capacity drilled shafts into the 
+existing subsurface soil deposits. 
+To confirm or modify the estimated tip elevations of the drilled 
+shafts. 
+To assess the contractor’s method of placing and extracting the 
+temporary casing for the drilled shaft. 
+To assess the contractor’s method of concrete placement. 
+To achieve these objectives, we recommend that the test shaft program consists of 
+drilling one 4-foot diameter test shaft extending to depths of about 91 and 70 feet 
+below the existing ground surface for Bridge Nos. 3 and 3A, respectively. The 
+locations of the test shafts should be near, but outside of, the planned abutment 
+foundation locations. The recommended load test shaft locations are shown on the 
+Site Plan, Plate 2. In general, the load test shafts should be structurally reinforced 
+and instrumented with embedment strain gauges for load testing purposes. The 
+embedment strain gauges should be placed starting from an elevation of about 
+5 feet above and below the load cell and subsequently at the pre-determined 
+intervals, as shown on the Drilled Shaft Load Test Detail, Plates 4.1 and 4.2. 
+Due to the high capacities recommended for the drilled shafts, a conventional load 
+test would not be practical and would be costly to conduct. Therefore, we 
+recommend conducting a bi-directional axial load test on the reinforced load test 
+shaft using an expandable base load cell (Osterberg Load Cell). The expandable 
+base load cell will need to be installed within the load test shaft reinforcing cage 
+prior to lowering the cage in place.  
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 8291-00 
+GEOLABS, INC. 
+Page 11 
+Hawaii • California 
+The drilled shaft load test should be performed in general accordance with the 
+Quick Load Test Method of ASTM D1143. In general, the load test shaft should be 
+loaded at increments of about 50 to 100 kips and should be held for a minimum of 
+12 hours at or near failure to evaluate the potential for creep effects. The load test 
+shaft should be loaded to failure to evaluate the ultimate side shear resistance of 
+the shaft. Installation of the expandable base load cell and embedment strain 
+gauges, the performance of the bi-directional axial load test, and analyses of the 
+load test data should be performed by a qualified professional experienced in these 
+types of load testing procedures. 
+Considering the specialized nature of the test shaft program, we recommend that a 
+Geolabs representative be present during the test shaft program to evaluate the 
+contractor’s method of drilled shaft installation and to evaluate the subsurface 
+materials encountered. In addition, Geolabs should observe the instrumented load 
+test on the reinforced load test shafts. It should be noted that the drilled shaft 
+design was developed from our analysis using the available field exploration data 
+provided by others. Therefore, observation of the drilled shaft installation operations 
+by Geolabs is a vital part of the foundation design to confirm our design 
+assumptions. 
+3.1.5 Non-Destructive Integrity Testing 
+Based on the critical nature of the drilled shaft foundations for the replacement 
+bridge structure, we recommend conducting non-destructive integrity testing on the 
+production drilled shafts for the project. Crosshole Sonic Logging (CSL) is one of 
+the non-destructive integrity testing methods that has gained widespread use and 
+acceptance for integrity testing of drilled shafts. 
+Crosshole Sonic Logging techniques are based on the propagation of sound waves 
+through concrete. In general, the actual velocity of sound wave propagation in 
+concrete is dependent on the concrete material properties, geometry of the 
+element, and wavelength of the sound waves. When ultrasonic frequencies are 
+generated, Pressure (P) waves and Shear (S) waves travel through the concrete. If 
+anomalies are contained in the concrete, the anomalies will reduce the P-wave 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 8291-00 
+GEOLABS, INC. 
+Page 12 
+Hawaii • California 
+travel velocity in the concrete. Anomalies in the drilled shaft concrete may include 
+soil particles, gravel, water, voids, contaminated concrete, and highly segregated 
+constituent particles. 
+The transit time of an ultrasonic P-wave signal may be measured between an 
+ultrasonic transmitter and receiver in two parallel water-filled access tubes placed 
+into the concrete during construction. The P-wave velocity can be obtained by 
+dividing the measured transit time from the distance between the transmitter and 
+receiver. Therefore, anomalies may be detected (if they exist). 
+In general, the access tubes should be securely attached to the interior of the 
+reinforcing cage as near to parallel as possible in the drilled shaft. We recommend 
+casting a minimum of four access tubes into the concrete of the 4-foot diameter 
+drilled shafts. 
+In addition, the access tubes should extend from the bottom of the drilled shaft 
+reinforcing cage to at least 3.5 feet above the top of the shaft. It is imperative that 
+joints required to achieve the full length of the access tubes should be watertight. 
+The contractor is responsible for taking extra care to prevent damage to the access 
+tubes during the placement of the reinforcing cage into the drilled hole. The tubes 
+should be filled with potable water as soon as possible after concrete placement, 
+but water filling of the access tubes should not be later than 4 hours after the 
+concrete placement. Subsequently, the top of the access tubes should be capped 
+with watertight caps. 
+The Crosshole Sonic Logging (CSL) test of drilled shafts should be conducted after 
+at least 7 days of curing time, but no later than 28 days after concrete placement. In 
+addition, the CSL test of drilled shafts should be performed in general accordance 
+with ASTM D6760. In the event that a drilled shaft is found to have significant 
+anomalies and/or is suspected to be defective based on the CSL testing and/or field 
+observations, the drilled shaft should be cored to evaluate the integrity of the 
+concrete in the drilled shaft. The coring location within the drilled shaft should be 
+determined by our representative, who should be present to observe the installation 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 8291-00 
+GEOLABS, INC. 
+Page 13 
+Hawaii • California 
+of the drilled shafts. After completion of the crosshole sonic logging of the drilled 
+shafts, all the access tubes should be filled with grout of the same strength as the 
+drilled shaft concrete. 
+3.2 
+Structural Approach Slabs 
+To reduce the potential for appreciable abrupt differential settlements between 
+the drilled shaft supported bridge structure and the compacted backfills behind the 
+abutment structures, we recommend providing structure approach slabs at the 
+abutment locations. In general, the structure approach slabs should be at least 20 feet 
+long. 
+The structure approach slabs should be supported on a minimum of 8 inches of 
+aggregate subbase course placed on a prepared subgrade. The subgrade should be 
+scarified to a depth of about 8 inches, moisture-conditioned to above the optimum 
+moisture content, and compacted to no less than 95 percent relative compaction. The 
+aggregate subbase course should also be moisture-conditioned to above the optimum 
+moisture content and compacted to at least 95 percent relative compaction. Relative 
+compaction refers to the in-place dry density of soil expressed as a percentage of the 
+maximum dry density of the same soil established in accordance with AASHTO T-180 
+(or ASTM D1557). Optimum moisture is the water content (percentage by dry weight) 
+corresponding to the maximum dry density. 
+3.3 
+Retaining Walls 
+In general, retaining structures, including the abutment wall and wing walls, 
+should be designed to resist the lateral earth pressures due to the adjacent soils and 
+surcharge effects. Parameters for the design of foundations for the abutment walls 
+supported on drilled shafts have been provided in the “Replacement Bridge 
+Foundations” section herein. Design of foundations for the retaining walls and other 
+walls (not structurally connected to the bridge structure) should be based on the 
+parameters presented in the following subsections. 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 8291-00 
+GEOLABS, INC. 
+Page 14 
+Hawaii • California 
+3.3.1 Shallow Retaining Wall Foundations 
+Based on the information provided, we understand that retaining walls of up to 
+about 9 feet high may be required for the wing walls of the new bridge structures. In 
+general, we anticipate that shallow foundations bearing on fill consisting of stiff to 
+very stiff clays and silts with sand and gravel encountered at the project site may be 
+utilized for support of the planned retaining walls. Based on our field exploration, we 
+believe that the following values may be used to evaluate the bearing support, 
+sliding resistance, and passive pressure resistance of the planned retaining walls 
+based on LRFD design methods. 
+RETAINING WALL FOUNDATIONS 
+Description 
+Extreme Event 
+Limit State 
+Strength  
+Limit State 
+Service  
+Limit State 
+Bearing Pressure 
+12,000 psf 
+6,000 psf 
+4,000 psf 
+Coefficient of 
+Sliding Friction 
+0.40 
+0.34 
+0.4 
+Passive Pressure 
+Resistance 
+330 pcf 
+165 pcf 
+330 pcf 
+In general, foundations should be embedded a minimum of 2 feet below the lowest 
+adjacent finished grades. Foundations next to utility trenches or easements should 
+be embedded below a 45-degree imaginary plane extending upward from the 
+bottom edge of the utility trench, or they should extend to a depth as deep as the 
+inverts of the utility lines. This requirement is necessary to avoid surcharging 
+adjacent below-grade structures with additional structural loads and to reduce the 
+potential for appreciable foundation settlement. 
+For sloping ground conditions, the footing should extend deeper to obtain a 
+minimum 6-foot setback distance measured horizontally from the outside edge of 
+the footing to the face of the slope. Wall footings oriented parallel to the direction of 
+the slope should be constructed in stepped footings. 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 8291-00 
+GEOLABS, INC. 
+Page 15 
+Hawaii • California 
+Based on a service limit state bearing pressure of 4,000 pounds per square 
+foot (psf), we estimate that foundation settlements under the anticipated design 
+loads for foundations bearing on the stiff to very stiff fill to be less than 1 inch. 
+Lateral loads acting on the structure may be resisted by frictional resistance 
+between the base of the foundation and the bearing soil and by passive earth 
+pressure developed against the near-vertical faces of the embedded portion of the 
+foundation. The values presented in the table above, expressed in pounds per 
+square foot per foot of embedment (pcf), may be used to evaluate the passive 
+pressure resistance for footings embedded and bearing on the stiff to very hard fill 
+and alluvium. Unless covered by pavements or slabs, the passive resistance in the 
+upper 12 inches should be neglected. 
+3.3.2 Static Lateral Earth Pressures 
+Retaining structures, including the abutment walls and wing walls, should be 
+designed to resist the lateral earth pressures due to the adjacent soils and 
+surcharge effects caused by loads adjacent to the retaining structures. The 
+recommended lateral earth pressures for design of retaining structures, expressed 
+in equivalent fluid pressures, are presented in the following table. 
+LATERAL EARTH PRESSURES FOR 
+DESIGN OF RETAINING STRUCTURES 
+Backfill 
+Condition 
+Earth Pressure 
+Component 
+Active 
+(pcf) 
+At-Rest 
+(pcf) 
+Level 
+Backfill 
+Horizontal 
+37 
+55 
+Vertical 
+None 
+None 
+Maximum 2H:1V 
+Sloping Backfill 
+Horizontal 
+53 
+69 
+Vertical 
+26 
+35 
+The values provided above assume that Type A Structure Backfill Material 
+conforming to Section 703.20 of the Hawaii Standard Specifications for Road and 
+Bridge Construction, 2005 (HSS) will be used to backfill behind the retaining 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 8291-00 
+GEOLABS, INC. 
+Page 16 
+Hawaii • California 
+structures. It is assumed that the backfill behind retaining structures will be 
+compacted to at least 90 percent relative compaction. In general, an active 
+condition may be used for gravity retaining walls or walls that are free to deflect by 
+as much as 0.5 percent of the wall height.  If the tops of walls are not free to deflect 
+beyond this degree or are restrained, the walls should be designed for the at-rest 
+condition. These lateral earth pressures do not include hydrostatic pressures that 
+might be caused by groundwater trapped behind the walls. 
+Surcharge stresses due to areal surcharges, line loads, and point loads within a 
+horizontal distance equal to the depth of the wall should be considered in the 
+design. For uniform surcharge stresses imposed on the loaded side of the wall, a 
+rectangular distribution with uniform pressure equal to 33 percent of the vertical 
+surcharge pressure acting over the entire height of the wall, which is free to deflect 
+(cantilever), may be used in the design. For walls that are restrained, a rectangular 
+distribution equal to 50 percent of the vertical surcharge pressure acting over the 
+entire height of the wall may be used for design. Additional analyses during design 
+may be needed to evaluate the surcharge effects of point loads and line loads. 
+3.3.3 Dynamic Lateral Earth Pressures 
+Dynamic lateral earth forces due to seismic loading (amax= 0.32g) may be estimated 
+by using 5.5H2 pounds per lineal foot of wall length for level backfill conditions, 
+where H is the height of the wall in feet. It should be noted that the dynamic lateral 
+earth forces provided assume that the wall will be allowed to move laterally by up to 
+about 3 inches in the event of an earthquake. The resultant force should be 
+assumed to act through the mid-height of the wall. An appropriately reduced factor 
+of safety may be used when dynamic lateral earth forces are accounted for in the 
+design of the retaining structures. 
+If the estimated amount of lateral movement is not acceptable, the retaining 
+structure should be designed with higher dynamic lateral forces for a restrained 
+condition. For a restrained condition (less than 0.5 inches of lateral movement), 
+dynamic lateral forces due to seismic loading may be estimated using 23H2 pounds 
+per lineal foot of wall (H measured in feet) for level backfill conditions. 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 8291-00 
+GEOLABS, INC. 
+Page 17 
+Hawaii • California 
+3.3.4 Drainage 
+Retaining walls should be well-drained to reduce the potential for the build-up of 
+hydrostatic pressures. A typical drainage system would consist of a 12-inch wide 
+zone of permeable material, such as drain rock (AASHTO M43 Size No. 67), 
+directly adjacent to the wall with a perforated pipe (perforations facing down) at the 
+base of the wall discharging to an appropriate outlet or weepholes. As an 
+alternative, a prefabricated drainage product, such as MiraDrain or EnkaDrain, may 
+be used instead of the drainage material. The prefabricated drainage product 
+should also be hydraulically connected to a perforated pipe at the base of the wall.  
+Backfill behind the permeable drainage zone should consist of Type A Structure 
+Backfill Material conforming to Section 703.20 of the HSS (a minimum of 95 percent 
+relative compaction).  Unless covered by concrete slabs or pavements, the upper 
+12 inches of backfill should consist of relatively impervious material to reduce the 
+potential for water infiltration behind the walls. In addition, the backfill below the 
+drainage outlet (or weepholes) should consist of the relatively impervious material 
+to reduce the potential for water infiltration into the footing subgrade. The relatively 
+impervious material should be compacted to no less than 90 percent relative 
+compaction. 
+3.4 
+Site Grading 
+We anticipate that the grading work for the project will generally consist of cuts 
+and fills on the order of about 3 feet or less in thickness relative to the existing ground 
+surface. In addition, we anticipate that relatively substantial excavations of about 10 feet 
+deep, followed by subsequent backfilling will be required to construct each abutment 
+structure for the new replacement bridges. In general, grading work should conform to 
+Section 200 of the Hawaii Standard Specifications for Road and Bridge Construction 
+(2005) and the site-specific recommendations contained in this report. 
+A Geolabs representative should monitor site grading operations to observe 
+whether undesirable materials are encountered during the excavation process and to 
+confirm whether the exposed soil conditions are similar to those encountered in our field 
+exploration. 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 8291-00 
+GEOLABS, INC. 
+Page 18 
+Hawaii • California 
+In general, areas to receive fills should be cleared of vegetation and deleterious 
+materials. The resulting grub/spoil materials should be disposed of properly off-site. 
+Soft, weak, or yielding areas disclosed during clearing operations should be 
+over-excavated to expose firm or dense ground, and the resulting excavation should be 
+backfilled with general fill materials moisture-conditioned to above the optimum moisture 
+content and compacted to a minimum of 90 percent relative compaction. After clearing 
+and grubbing, the exposed subgrades should be scarified to a minimum depth of 
+8 inches, moisture-conditioned to above the optimum moisture content, and compacted 
+to a minimum of 90 percent relative compaction. Relative compaction refers to the 
+in-place dry density of soil expressed as a percentage of the maximum dry density of 
+the same soil established in accordance with AASHTO T-180 (or ASTM D1557). 
+Optimum moisture is the water content (percentage by dry weight) corresponding to the 
+maximum dry density. 
+In general, the excavated on-site materials may be reused as a source of general 
+fill and backfill materials provided that they are free of organic materials and contain no 
+lumps or rock fragments greater than 3 inches in largest dimension. It should be noted 
+that the excavated soft materials should not be used as a source of general fill and 
+backfill. Where used as general fill and backfill materials, the on-site materials should be 
+moisture-conditioned to above the optimum moisture content, placed in level lifts not 
+exceeding 8 inches in loose thickness, and compacted to a minimum of 90 percent 
+relative compaction.  
+Imported material should consist of "select granular fill," such as crushed coral or 
+basalt. Select granular fill materials should be well graded from coarse to fine with 
+particles no larger than 3 inches in largest dimension. Select granular fill should have a 
+laboratory CBR value of 20 or more with a maximum swell value of 1 percent or less 
+when tested in accordance with AASHTO T-193 (or ASTM D1883). In addition, select 
+granular fill material should contain between 10 and 30 percent particles passing the 
+No. 200 sieve. Imported materials should be brought to above the optimum moisture 
+content and compacted to a minimum of 95 percent relative compaction. Surfaces 
+should be finished to create smooth, unyielding subgrades and should be kept moist 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 8291-00 
+GEOLABS, INC. 
+Page 19 
+Hawaii • California 
+until covered by concrete slabs or pavements. Imported materials should be tested and 
+approved prior to delivery to the project site for its intended use. 
+For backfill behind the abutment structure, the backfill material should consist of 
+well-graded, granular fill material conforming to Type A Structure Backfill Material of 
+Section 703.20 of the HSS. The material should be moisture-conditioned to above the 
+optimum moisture content, placed in level loose lifts not exceeding 8 inches, and 
+compacted to a minimum of 90 percent relative compaction. For backfill below the 
+groundwater level, free-draining granular material, such as AASHTO M43, No. 67 
+gradation, wrapped on all sides with non-woven filter fabric should be used. This 
+free-draining granular material should be used up to a level of about 12 inches above 
+groundwater level to facilitate compaction of the backfill materials. 
+3.5 
+Utility Trenches 
+We anticipate that new utility lines will be installed for the project. It is anticipated 
+that the trench for the underground waterline generally will be excavated in the 
+near-surface fills consisting of stiff to very stiff silts and clays with sand and gravel. In 
+general, we recommend providing granular bedding consisting of 6 inches of 
+free-draining granular materials (AASHTO M43 Size No. 67 gradation) below the pipes. 
+If soft and/or loose soils are exposed at or near the invert of the pipes, an additional 
+24 inches of free-draining gravel wrapped in a non-woven filter fabric (Mirafi 180N or 
+equivalent) should be provided below the bedding layer for uniform support. 
+Free-draining granular materials, such as AASHTO M43, No. 67 gradation, also 
+should be used for the initial trench backfill up to about 12 inches above the pipes or 
+about 12 inches above the groundwater level to provide adequate support around the 
+pipes. It is critical to use free-draining materials to reduce the potential for the formation 
+of voids below the haunches of pipes and to provide adequate support around the sides 
+of the pipes. Improper trench backfill could result in backfill settlement and pipe 
+damage. 
+The upper portion of the trench backfill from the level 12 inches above the pipes 
+(or groundwater level) to the top of the subgrade may consist of the excavated on-site 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 8291-00 
+GEOLABS, INC. 
+Page 20 
+Hawaii • California 
+soils with a maximum particle size of 6 inches. The backfill material should be 
+moisture-conditioned to above the optimum moisture content, placed in maximum 
+8-inch level loose lifts, and mechanically compacted to a minimum of 90 percent relative 
+compaction to reduce the potential for significant future ground subsidence. Where 
+trenches are below pavement areas, the upper 3 feet of the trench backfill below the 
+pavement grade should be compacted to a minimum of 95 percent relative compaction. 
+3.6 
+Design Review 
+Preliminary and final drawings and specifications for the proposed project should 
+be forwarded to Geolabs for review and written comments prior to construction pricing. 
+This review is necessary to evaluate the general conformance of the plans and 
+specifications with the intent of the geotechnical recommendations provided herein. If 
+this review is not made, Geolabs cannot be responsible for misinterpretation of our 
+recommendations.  
+3.7 
+Post-Design Services/Services During Construction 
+Geolabs should be retained to provide geotechnical engineering services during 
+the construction of this project. The following are critical items of construction monitoring 
+that require "Special Inspection": 
+Review of the geotechnical aspects of the contractor submittals 
+Observation of the test shaft and load test program 
+Observation of the production drilled shaft foundation installation 
+Observation of subgrade soil preparation 
+Observation of fill placement and compaction 
+A Geolabs representative should also monitor other aspects of the earthwork 
+construction to observe compliance with the design concepts, specifications, or 
+recommendations and to expedite suggestions for design changes that may be required 
+in the event that subsurface conditions differ from those anticipated at the time this 
+report was prepared. Geolabs should be accorded the opportunity to provide 
+construction observation services to confirm the assumptions made in formulating the 
+recommendations presented herein.  
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 8291-00 
+GEOLABS, INC. 
+Page 21 
+Hawaii • California 
+If the actual exposed subsurface conditions encountered during construction are 
+different from those considered in this report, then appropriate modifications to the 
+design should be made. 
+END OF DISCUSSION AND RECOMMENDATIONS 
+W.O. 8291-00 
+GEOLABS, INC. 
+Page 22 
+Hawaii • California 
+SECTION 4.   LIMITATIONS 
+The analyses and recommendations submitted herein are based, in part, upon 
+information obtained from in-house literature research and available field exploration. 
+Variations of subsurface conditions between and beyond the field exploration points 
+may occur, and the nature and extent of these variations may not become evident until 
+construction is underway. If variations then appear evident, it will be necessary to 
+re-evaluate the recommendations presented herein. 
+This report has been prepared for the exclusive use of Grace Pacific, LLC and 
+their client, State of Hawaii – Department of Transportation, Highways Division, for 
+specific application to the Farrington Highway Makaha Bridge Nos. 3 and 3A project in 
+accordance with generally accepted geotechnical engineering principles and practices. 
+No warranty is expressed or implied. 
+The owner/client should be aware that unanticipated soil conditions are 
+commonly encountered. Unforeseen soil conditions, such as perched groundwater, soft 
+deposits, hard layers, or cavities may occur in localized areas and may require 
+additional probing or corrections in the field (which may result in construction delays) to 
+attain a properly constructed project. Therefore, a sufficient contingency fund is 
+recommended to accommodate these possible extra costs. 
+END OF LIMITATIONS 
+CLOSURE
+The following plates and appendices are attached and complete this report:
+Project Location Map............cccccscssssecccececeeeeeeesseseesensneeeeeeeeeeeeseeeeneccaaeaeeeeeeeeneeetenenegs Plate 1
+Site PLAN .........csccssssssssssssssssssssssssecssseesssssecceceeeseeeeeeeeeeeeceeeeeeeeeeeeeeseeteneeteneeenneaaaaaaaaaea Plate 2
+Lateral Load AnalySiS...........ccccccccceeseeseeeeeeeeeeeeeeeeeeeeennneeeeneeeneeeeeeees Plates 3.1.1 thru 3.4.2
+Drilled Shaft Load Test Detail... cessssseseseeeeeeeeeeeeeseeeeeeeeceeeeeereeees Plates 4.1 and 4.2
+QOOQQKOODO0-
+Respectfully submitted,
+GEOLABS, INC.
+py (awpl-
+Gerald Y. Seki, P.E.
+Vice President
+GS:AT:cjP)
+h:\8200Series\8291-00.at1
+W.O. 8291-00 GEOLABS, INC. Page 23
+Hawaii ¢ California
+PLATES 
+FARRINGTION HIGHWAY, MAKAHA BRIDGE NOS. 3 AND 3
+PROJECT LOCATION MAP
+GRAPHIC SCALE
+1000
+2000
+2000
+0
+FT.
+PROJECT LOCATION
+GENERAL PROJECT LOCATION
+N
+WAHIAWA
+WAIKIKI
+HONOLULU
+AIEA
+PEARL CITY
+WAIPAHU
+EWA
+BARBERS POINT
+NANAKULI
+WAIANAE
+WAIALUA
+HALEIWA
+KAHUKU
+POINT
+DIAMOND
+HEAD
+HAWAII
+KAI
+WAIMANALO
+KAILUA
+KANEOHE
+KAHALUU
+PUNALUU
+HAUULA
+KAENA POINT
+ISLAND MAP
+NO SCALE
+MAKAHA, OAHU, HAWAII
+AUGUST 2021
+1" = 2,000'
+Geotechnical Engineering
+GEOLABS, INC.
+DATE
+SCALE
+1
+8291-00
+DRAWN BY
+ASP
+W.O.
+PLATE
+N
+PACIFIC      OCEAN
+CAD User: ASPASIONJR  File Last Updated: August 31, 2021 10:35:16am  Plot Date:  September 01, 2021 - 11:01:16am
+File: T:\Drafting\Working\8291-00_Makaha_Bridge_Rails\8291-00PLM.dwg\1.0 PLM
+Plotter: DWG To PDF-GEO.pc3  Plotstyle: GEO-No-Dithering.ctb
+REFERENCE: MAP CREATED WITH TOPO!® ©2010 NATIONAL
+GEOGRAPHIC; ©2007 TELE ATLAS, REL. 1/2007.
+RECOMMENDED LOAD TEST SHAFT LOCATION
+LEGEND:
+FARRINGTON HIGHWAY, MAKAHA BRIDGE NOS. 3 AND 3A
+MAKAHA, OAHU, HAWAII
+GEOLABS, INC.
+Geotechnical Engineering
+8291-00
+DRAWN BY
+ASP
+1" = 50'
+AUGUST 2021
+SCALE
+DATE
+W.O.
+SITE PLAN
+2
+PLATE
+GRAPHIC SCALE
+0
+50
+100
+150 FT.
+40
+30
+20
+10
+CAD User: ASPASIONJR  File Last Updated: September 01, 2021 9:31:17am  Plot Date:  September 01, 2021 - 1:14:16pm
+File: T:\Drafting\Working\8291-00_Makaha_Bridge_Rails\8291-00SitePlan.dwg\2.0 SitePlan
+Plotter: DWG To PDF-GEO.pc3  Plotstyle: GEO-No-Dithering-Blue-Boring.ctb
+REFERENCE: PRELIMINARY DRAWINGS TRANSMITTED BY KSF, INC. ON JUNE 24, 2021.
+N
+LT-2
+LT-1
+LATERAL LOAD ANALYSIS FOR BRIDGE NO.3 KAENA ABUTMENT
+Value Engineering
+Farrington Highway, Makaha Bridge Nos. 3 and 3A
+Makaha, Oahu, Hawaii
+y
+p
+y
+p
+y
+p
+y
+p
+y
+p
+(inch)
+(pounds/inch)
+(inch)
+(pounds/inch)
+(inch)
+(pounds/inch)
+(inch)
+(pounds/inch)
+(inch)
+(pounds/inch)
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.1
+369.9
+0.1
+563.9
+0.0
+232.8
+0.0
+127.7
+0.0
+457.2
+0.2
+427.6
+0.1
+695.3
+0.1
+666.6
+0.1
+740.2
+0.1
+1627.1
+0.2
+471.4
+0.2
+791.3
+0.2
+917.1
+0.1
+1108.9
+0.2
+2385.3
+0.3
+507.4
+0.3
+869.0
+0.2
+1113.9
+0.2
+1410.7
+0.2
+3011.1
+0.4
+538.3
+0.3
+935.4
+0.3
+1281.5
+0.3
+1675.5
+0.3
+3562.1
+0.4
+565.6
+0.4
+993.9
+0.4
+1430.2
+0.4
+1915.5
+0.4
+4062.7
+0.5
+590.1
+0.5
+1046.4
+0.4
+1565.3
+0.4
+2137.6
+0.4
+4526.3
+0.5
+612.5
+0.5
+1094.3
+0.5
+1689.8
+0.5
+2345.6
+0.5
+4961.1
+0.6
+633.1
+0.6
+1138.6
+0.6
+1806.1
+0.6
+2542.4
+0.6
+5372.5
+0.7
+652.3
+0.7
+1179.8
+0.7
+1915.5
+0.7
+2729.8
+0.7
+5764.6
+0.7
+670.2
+0.7
+1218.4
+0.7
+2019.1
+0.7
+2909.2
+0.7
+6140.2
+0.8
+687.1
+0.8
+1254.8
+0.8
+2117.9
+0.8
+3081.8
+0.8
+6501.5
+1.3
+816.7
+1.3
+1524.7
+1.3
+2790.1
+1.3
+4252.9
+1.3
+8972.0
+1.8
+946.3
+1.8
+1794.7
+1.8
+3462.3
+1.8
+5423.9
+1.8
+11442.6
+2.2
+946.3
+2.2
+1794.7
+2.2
+3462.3
+2.2
+5423.9
+2.2
+11442.6
+2.5
+946.3
+2.5
+1794.7
+2.5
+3462.3
+2.5
+5423.9
+2.5
+11442.6
+y
+p
+y
+p
+y
+p
+y
+p
+(inch)
+(pounds/inch)
+(inch)
+(pounds/inch)
+(inch)
+(pounds/inch)
+(inch)
+(pounds/inch)
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.1
+3012.5
+0.1
+3012.5
+0.1
+3012.5
+0.1
+3012.5
+0.1
+4260.3
+0.1
+4260.3
+0.1
+4260.3
+0.1
+4260.3
+0.2
+4963.4
+0.2
+4963.4
+0.2
+4963.4
+0.2
+4963.4
+0.3
+5419.9
+0.3
+5419.9
+0.3
+5419.9
+0.3
+5419.9
+0.4
+5731.8
+0.4
+5731.8
+0.4
+5731.8
+0.4
+5731.8
+0.4
+5940.1
+0.4
+5940.1
+0.4
+5940.1
+0.4
+5940.1
+0.5
+6068.4
+0.5
+6068.4
+0.5
+6068.4
+0.5
+6068.4
+0.6
+6131.9
+0.6
+6131.9
+0.6
+6131.9
+0.6
+6131.9
+0.6
+6141.1
+0.6
+6141.1
+0.6
+6141.1
+0.6
+6141.1
+0.7
+6103.9
+0.7
+6103.9
+0.7
+6103.9
+0.7
+6103.9
+0.8
+6026.0
+0.8
+6026.0
+0.8
+6026.0
+0.8
+6026.0
+0.9
+5912.1
+0.9
+5912.1
+0.9
+5912.1
+0.9
+5912.1
+1.4
+4264.5
+1.4
+4264.5
+1.4
+4264.5
+1.4
+4264.5
+2.0
+2614.5
+2.0
+2614.5
+2.0
+2614.5
+2.0
+2614.5
+2.6
+964.5
+2.6
+964.5
+2.6
+964.5
+2.6
+964.5
+2.7
+964.5
+2.7
+964.5
+2.7
+964.5
+2.7
+964.5
+15 feet
+20 feet
+30 feet
+40 feet
+50 feet
+68 feet
+5 feet
+60 feet
+10 feet
+W.O. 8291-00
+GEOLABS, INC.
+Hawaii • California
+PLATE 3.1.1
+LATERAL LOAD ANALYSIS FOR BRIDGE NO.3 KAENA ABUTMENT
+Value Engineering
+Farrington Highway, Makaha Bridge Nos. 3 and 3A
+Makaha, Oahu, Hawaii
+0
+2000
+4000
+6000
+8000
+10000
+12000
+14000
+0.0
+0.5
+1.0
+1.5
+2.0
+2.5
+3.0
+p (pounds/inch)
+y (inch)
+P-Y Curves
+5 feet
+10 feet
+15 feet
+20 feet
+30 feet
+40 feet
+50 feet
+60 feet
+68 feet
+W.O. 8291-00
+GEOLABS, INC.
+Hawaii • California
+PLATE 3.1.2
+LATERAL LOAD ANALYSIS FOR BRIDGE NO.3 WAIANAE ABUTMENT
+Value Engineering
+Farrington Highway, Makaha Bridge Nos. 3 and 3A
+Makaha, Oahu, Hawaii
+y
+p
+y
+p
+y
+p
+y
+p
+y
+p
+(inch)
+(pounds/inch)
+(inch)
+(pounds/inch)
+(inch)
+(pounds/inch)
+(inch)
+(pounds/inch)
+(inch)
+(pounds/inch)
+0.00
+0.00
+0.00
+0.00
+0.00
+0.00
+0.00
+0.00
+0.00
+0.00
+0.20
+236.01
+0.15
+364.33
+0.14
+1004.16
+0.00
+27.25
+0.00
+67.89
+0.25
+254.19
+0.21
+407.87
+0.29
+1420.09
+0.07
+321.19
+0.07
+724.53
+0.31
+269.79
+0.27
+444.00
+0.43
+1654.46
+0.15
+472.34
+0.15
+1097.45
+0.36
+283.53
+0.33
+475.25
+0.58
+1806.65
+0.22
+592.39
+0.22
+1401.33
+0.42
+295.89
+0.39
+503.01
+0.72
+1910.59
+0.29
+695.82
+0.29
+1667.43
+0.47
+307.16
+0.45
+528.13
+0.86
+1980.03
+0.36
+788.41
+0.36
+1908.52
+0.53
+317.54
+0.51
+551.15
+1.01
+2022.80
+0.44
+873.18
+0.44
+2131.36
+0.58
+327.19
+0.56
+572.48
+1.15
+2043.96
+0.51
+951.95
+0.51
+2340.07
+0.64
+336.23
+0.62
+592.39
+1.30
+2047.05
+0.58
+1025.93
+0.58
+2537.41
+0.69
+344.74
+0.68
+611.10
+1.44
+2034.63
+0.65
+1095.96
+0.65
+2725.31
+0.75
+352.78
+0.74
+628.77
+1.58
+2008.66
+0.73
+1162.65
+0.73
+2905.20
+0.80
+360.42
+0.80
+645.55
+1.73
+1970.70
+0.80
+1226.48
+0.80
+3078.17
+1.30
+428.41
+1.30
+784.42
+2.88
+1421.51
+1.30
+1656.83
+1.30
+4247.87
+1.80
+496.39
+1.80
+923.29
+4.03
+871.51
+1.80
+2087.18
+1.80
+5417.58
+2.16
+496.39
+2.16
+923.29
+5.18
+321.51
+2.16
+2087.18
+2.16
+5417.58
+2.52
+496.39
+2.52
+923.29
+5.47
+321.51
+2.52
+2087.18
+2.52
+5417.58
+y
+p
+y
+p
+y
+p
+y
+p
+(inch)
+(pounds/inch)
+(inch)
+(pounds/inch)
+(inch)
+(pounds/inch)
+(inch)
+(pounds/inch)
+0.00
+0.00
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.00
+228.58
+0.0
+974.1
+0.1
+3012.5
+0.1
+3012.5
+0.08
+1412.72
+0.1
+3042.3
+0.1
+4260.3
+0.1
+4260.3
+0.15
+2120.29
+0.2
+4417.0
+0.2
+4963.4
+0.2
+4963.4
+0.22
+2698.94
+0.2
+5556.0
+0.3
+5419.9
+0.3
+5419.9
+0.29
+3206.38
+0.3
+6560.4
+0.4
+5731.8
+0.4
+5731.8
+0.37
+3666.48
+0.4
+7473.9
+0.4
+5940.1
+0.4
+5940.1
+0.44
+4091.97
+0.4
+8320.4
+0.5
+6068.4
+0.5
+6068.4
+0.51
+4490.64
+0.5
+9114.6
+0.6
+6131.9
+0.6
+6131.9
+0.58
+4867.67
+0.6
+9866.4
+0.6
+6141.1
+0.6
+6141.1
+0.66
+5226.73
+0.7
+10583.0
+0.7
+6103.9
+0.7
+6103.9
+0.73
+5570.53
+0.7
+11269.5
+0.8
+6026.0
+0.8
+6026.0
+0.80
+5901.17
+0.8
+11930.1
+0.9
+5912.1
+0.9
+5912.1
+1.30
+8143.61
+1.3
+16463.6
+1.4
+4264.5
+1.4
+4264.5
+1.80
+10386.05
+1.8
+20997.0
+2.0
+2614.5
+2.0
+2614.5
+2.16
+10386.05
+2.2
+20997.0
+2.6
+964.5
+2.6
+964.5
+2.52
+10386.05
+2.5
+20997.0
+2.7
+964.5
+2.7
+964.5
+40 feet
+50 feet
+60 feet
+68 feet
+5 feet
+10 feet
+15 feet
+20 feet
+30 feet
+W.O. 8291-00
+GEOLABS, INC.
+Hawaii • California
+PLATE 3.2.1
+LATERAL LOAD ANALYSIS FOR BRIDGE NO.3 WAIANAE ABUTMENT
+Value Engineering
+Farrington Highway, Makaha Bridge Nos. 3 and 3A
+Makaha, Oahu, Hawaii
+0
+5000
+10000
+15000
+20000
+25000
+0.00
+1.00
+2.00
+3.00
+4.00
+5.00
+6.00
+p (pounds/inch)
+y (inch)
+P-Y Curves
+5 feet
+10 feet
+15 feet
+20 feet
+30 feet
+40 feet
+50 feet
+60 feet
+68 feet
+W.O. 8291-00
+GEOLABS, INC.
+Hawaii • California
+PLATE 3.2.2
+LATERAL LOAD ANALYSIS FOR BRIDGE NO.3A 25% SCOUR
+Value Engineering
+Farrington Highway, Makaha Bridge Nos. 3 and 3A
+Makaha, Oahu, Hawaii
+y
+p
+y
+p
+y
+p
+y
+p
+y
+p
+(inch)
+(pounds/inch)
+(inch)
+(pounds/inch)
+(inch)
+(pounds/inch)
+(inch)
+(pounds/inch)
+(inch)
+(pounds/inch)
+0.00
+0.00
+0.00
+0.00
+0.00
+0.00
+0.00
+0.00
+0.00
+0.00
+0.01
+0.16
+0.02
+22.69
+0.07
+332.59
+0.08
+692.62
+0.03
+316.51
+0.08
+0.35
+0.09
+32.77
+0.14
+385.69
+0.15
+802.55
+0.10
+607.46
+0.15
+0.43
+0.16
+37.88
+0.20
+421.53
+0.21
+880.83
+0.17
+800.27
+0.22
+0.49
+0.23
+41.52
+0.27
+449.25
+0.28
+943.00
+0.24
+955.64
+0.30
+0.54
+0.30
+44.42
+0.34
+472.13
+0.34
+995.17
+0.31
+1089.52
+0.37
+0.58
+0.38
+46.86
+0.40
+491.75
+0.41
+1040.46
+0.38
+1208.97
+0.44
+0.62
+0.45
+48.97
+0.47
+509.02
+0.47
+1080.68
+0.45
+1317.87
+0.51
+0.65
+0.52
+50.85
+0.54
+524.49
+0.54
+1116.99
+0.52
+1418.62
+0.58
+0.68
+0.59
+52.54
+0.60
+538.55
+0.60
+1150.18
+0.59
+1512.82
+0.66
+0.70
+0.66
+54.09
+0.67
+551.46
+0.67
+1180.81
+0.66
+1601.61
+0.73
+0.73
+0.73
+55.52
+0.73
+563.41
+0.73
+1209.31
+0.73
+1685.83
+0.80
+0.75
+0.80
+56.85
+0.80
+574.56
+0.80
+1235.98
+0.80
+1766.14
+1.30
+0.91
+1.30
+65.94
+1.30
+656.01
+1.30
+1434.66
+1.30
+2324.64
+1.80
+1.06
+1.80
+75.02
+1.80
+737.46
+1.80
+1633.33
+1.80
+2883.14
+2.16
+1.06
+2.16
+75.02
+2.16
+737.46
+2.16
+1633.33
+2.16
+2883.14
+2.52
+1.06
+2.52
+75.02
+2.52
+737.46
+2.52
+1633.33
+2.52
+2883.14
+y
+p
+y
+p
+y
+p
+y
+p
+(inch)
+(pounds/inch)
+(inch)
+(pounds/inch)
+(inch)
+(pounds/inch)
+(inch)
+(pounds/inch)
+0.00
+0.00
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.07
+1254.04
+0.0
+1122.3
+0.0
+1122.3
+0.1
+2401.1
+0.13
+1754.39
+0.1
+2052.6
+0.1
+2052.6
+0.1
+3356.0
+0.20
+2133.47
+0.1
+2803.3
+0.1
+2803.3
+0.2
+4079.9
+0.27
+2450.62
+0.1
+3387.8
+0.1
+3387.8
+0.3
+4685.7
+0.33
+2728.50
+0.1
+3820.6
+0.1
+3820.6
+0.3
+5216.6
+0.40
+2978.65
+0.2
+4117.7
+0.2
+4117.7
+0.4
+5694.5
+0.47
+3207.86
+0.2
+4297.6
+0.2
+4297.6
+0.5
+6132.4
+0.53
+3420.57
+0.2
+4381.9
+0.2
+4381.9
+0.5
+6538.9
+0.60
+3619.83
+0.3
+4400.0
+0.3
+4400.0
+0.6
+6919.6
+0.67
+3807.86
+0.3
+4381.9
+0.3
+4381.9
+0.7
+7278.9
+0.73
+3986.33
+0.3
+4297.6
+0.3
+4297.6
+0.7
+7619.9
+0.80
+4156.54
+0.4
+4117.7
+0.4
+4117.7
+0.8
+7945.2
+1.30
+5403.50
+0.6
+2891.7
+0.6
+2891.7
+1.3
+10328.7
+1.80
+6650.46
+0.8
+1665.0
+0.8
+1665.0
+1.8
+12712.2
+2.16
+6650.46
+1.1
+438.2
+1.1
+438.2
+2.2
+12712.2
+2.52
+6650.46
+1.1
+438.2
+1.1
+438.2
+2.5
+12712.2
+30 feet
+40 feet
+50 feet
+54 feet
+3.6 feet
+5 feet
+10 feet
+15 feet
+20 feet
+W.O. 8291-00
+GEOLABS, INC.
+Hawaii • California
+PLATE 3.3.1
+LATERAL LOAD ANALYSIS FOR BRIDGE NO.3A 25% SCOUR
+Value Engineering
+Farrington Highway, Makaha Bridge Nos. 3 and 3A
+Makaha, Oahu, Hawaii
+0
+2000
+4000
+6000
+8000
+10000
+12000
+14000
+0.00
+0.50
+1.00
+1.50
+2.00
+2.50
+3.00
+p (pounds/inch)
+y (inch)
+P-Y Curves
+3.6 feet
+5 feet
+10 feet
+15 feet
+20 feet
+30 feet
+40 feet
+50 feet
+54 feet
+W.O. 8291-00
+GEOLABS, INC.
+Hawaii • California
+PLATE 3.3.2
+LATERAL LOAD ANALYSIS FOR BRIDGE NO.3A NO SCOUR
+Value Engineering
+Farrington Highway, Makaha Bridge Nos. 3 and 3A
+Makaha, Oahu, Hawaii
+y
+p
+y
+p
+y
+p
+y
+p
+y
+p
+(inch)
+(pounds/inch)
+(inch)
+(pounds/inch)
+(inch)
+(pounds/inch)
+(inch)
+(pounds/inch)
+(inch)
+(pounds/inch)
+0.00
+0.00
+0.00
+0.00
+0.00
+0.00
+0.00
+0.00
+0.00
+0.00
+0.12
+480.95
+0.07
+3343.52
+0.24
+872.56
+0.14
+695.98
+0.34
+2439.83
+0.24
+680.16
+0.14
+4728.45
+0.29
+934.98
+0.20
+841.48
+0.38
+2619.14
+0.36
+788.32
+0.21
+5506.66
+0.34
+990.86
+0.26
+968.88
+0.42
+2790.85
+0.48
+855.55
+0.28
+6010.42
+0.39
+1041.72
+0.32
+1083.92
+0.46
+2956.00
+0.59
+898.90
+0.35
+6353.13
+0.45
+1088.56
+0.38
+1189.78
+0.51
+3115.40
+0.71
+925.15
+0.43
+6580.64
+0.50
+1132.13
+0.44
+1288.49
+0.55
+3269.71
+0.83
+938.17
+0.50
+6719.11
+0.55
+1172.94
+0.50
+1381.40
+0.59
+3419.46
+0.95
+940.46
+0.57
+6785.46
+0.60
+1211.41
+0.56
+1469.49
+0.63
+3565.09
+1.07
+933.76
+0.64
+6791.42
+0.65
+1247.86
+0.62
+1553.48
+0.67
+3706.99
+1.19
+919.33
+0.71
+6745.60
+0.70
+1282.53
+0.68
+1633.94
+0.72
+3845.46
+1.31
+898.14
+0.78
+6654.54
+0.75
+1315.64
+0.74
+1711.30
+0.76
+3980.79
+1.43
+870.96
+0.85
+6523.38
+0.80
+1347.36
+0.80
+1785.91
+0.80
+4113.22
+2.38
+632.12
+1.42
+4708.68
+1.30
+1653.75
+1.30
+2401.80
+1.30
+5676.25
+3.33
+392.85
+1.99
+2891.25
+1.80
+1960.14
+1.80
+3017.68
+1.80
+7239.27
+4.28
+153.58
+2.55
+1073.83
+2.16
+1960.14
+2.16
+3017.68
+2.16
+7239.27
+4.51
+153.58
+2.69
+1073.83
+2.52
+1960.14
+2.52
+3017.68
+2.52
+7239.27
+y
+p
+y
+p
+y
+p
+(inch)
+(pounds/inch)
+(inch)
+(pounds/inch)
+(inch)
+(pounds/inch)
+0.00
+0.00
+0.0
+0.0
+0.0
+0.0
+0.07
+4016.63
+0.1
+4016.6
+0.0
+1031.4
+0.14
+5680.38
+0.1
+5680.4
+0.1
+2266.5
+0.22
+6617.85
+0.2
+6617.8
+0.2
+3158.5
+0.29
+7226.60
+0.3
+7226.6
+0.2
+3910.1
+0.36
+7642.38
+0.4
+7642.4
+0.3
+4578.0
+0.43
+7920.11
+0.4
+7920.1
+0.4
+5188.1
+0.50
+8091.19
+0.5
+8091.2
+0.4
+5755.0
+0.58
+8175.85
+0.6
+8175.9
+0.5
+6287.9
+0.65
+8188.19
+0.6
+8188.2
+0.6
+6793.1
+0.72
+8138.51
+0.7
+8138.5
+0.7
+7275.2
+0.79
+8034.66
+0.8
+8034.7
+0.7
+7737.5
+0.86
+7882.78
+0.9
+7882.8
+0.8
+8182.7
+1.44
+5686.02
+1.4
+5686.0
+1.3
+11292.1
+2.02
+3486.02
+2.0
+3486.0
+1.8
+14401.5
+2.59
+1286.02
+2.6
+1286.0
+2.2
+14401.5
+2.74
+1286.02
+2.7
+1286.0
+2.5
+14401.5
+40 feet
+50 feet
+54 feet
+5 feet
+10 feet
+15 feet
+20 feet
+30 feet
+W.O. 8291-00
+GEOLABS, INC.
+Hawaii • California
+PLATE 3.4.1
+LATERAL LOAD ANALYSIS FOR BRIDGE NO.3A NO SCOUR
+Value Engineering
+Farrington Highway, Makaha Bridge Nos. 3 and 3A
+Makaha, Oahu, Hawaii
+0
+2000
+4000
+6000
+8000
+10000
+12000
+14000
+16000
+0.00
+0.50
+1.00
+1.50
+2.00
+2.50
+3.00
+3.50
+4.00
+4.50
+5.00
+p (pounds/inch)
+y (inch)
+P-Y Curves
+5 feet
+10 feet
+15 feet
+20 feet
+30 feet
+40 feet
+50 feet
+54 feet
+W.O. 8291-00
+GEOLABS, INC.
+Hawaii • California
+PLATE 3.4.2
+58 FEET
+4 FEET
+PRESSURE LINE TO
+BASE LOAD CELL
+A
+A'
+DRILLED SHAFT
+EXPANDABLE BASE
+LOAD CELL (GROUTED)
+STRAIN 
+TO FULL LOAD TEST
+SPIRAL AT 8-INCH PITCH
+5 FEET
+10 FEET
+SHAFT LENGTH
+APPROXIMATE EXISTING GROUND ELEVATION
+EMBEDMENT 
+10 FEET (TYP.)
+33 FEET
+PLUG
+BOTTOM
+5 FEET
+10 FEET
+GAUGES
+(TYP.)
+48-INCH
+FOUR STEEL ACCESS
+TUBES (2-INCH DIAMETER
+STANDARD PIPE)
+SECTION A-A'
+CONCRETE
+STRUCTURAL
+90° TYP.
+REINFORCING STEEL 
+(EQUALLY SPACED)
+(TYP.)
+FARRINGTON HIGHWAY, MAKAHA BRIDGE NOS. 3 AND 3A
+MAKAHA, OAHU, HAWAII
+GEOLABS, INC.
+Geotechnical Engineering
+8291-00
+DRAWN BY
+ASP
+NOT TO SCALE
+AUGUST 2021
+SCALE
+DATE
+W.O.
+MAKAHA BRIDGE NO. 3
+4.1
+PLATE
+CAD User: ASPASIONJR  File Last Updated: September 01, 2021 1:29:02pm  Plot Date:  September 01, 2021 - 5:21:02pm
+File: T:\Drafting\Working\8291-00_Makaha_Bridge_Rails\8291-00DrilledShaftLoadTestDetails.dwg\4.1
+Plotter: DWG To PDF-GEO.pc3  Plotstyle: GEO-No-Dithering.ctb
+DRILLED SHAFT LOAD TEST DETAIL-
+42 FEET
+4 FEET
+PRESSURE LINE TO
+BASE LOAD CELL
+A
+A'
+DRILLED SHAFT
+EXPANDABLE BASE
+LOAD CELL (GROUTED)
+STRAIN 
+TO FULL LOAD TEST
+SPIRAL AT 8-INCH PITCH
+5 FEET
+10 FEET
+SHAFT LENGTH
+APPROXIMATE EXISTING GROUND ELEVATION
+EMBEDMENT 
+10 FEET (TYP.)
+28 FEET
+GAUGES
+(TYP.)
+48-INCH
+SECTION A-A'
+CONCRETE
+STRUCTURAL
+90° TYP.
+REINFORCING STEEL 
+(EQUALLY SPACED)
+FOUR STEEL ACCESS
+TUBES (2-INCH DIAMETER
+STANDARD PIPE)
+PLUG
+BOTTOM
+5 FEET
+10 FEET
+(TYP.)
+FARRINGTON HIGHWAY, MAKAHA BRIDGE NOS. 3 AND 3A
+MAKAHA, OAHU, HAWAII
+GEOLABS, INC.
+Geotechnical Engineering
+8291-00
+DRAWN BY
+ASP
+NOT TO SCALE
+AUGUST 2021
+SCALE
+DATE
+W.O.
+MAKAHA BRIDGE NO. 3A
+4.2
+PLATE
+CAD User: ASPASIONJR  File Last Updated: September 01, 2021 1:29:02pm  Plot Date:  September 01, 2021 - 5:20:32pm
+File: T:\Drafting\Working\8291-00_Makaha_Bridge_Rails\8291-00DrilledShaftLoadTestDetails.dwg\4.2
+Plotter: DWG To PDF-GEO.pc3  Plotstyle: GEO-No-Dithering.ctb
+DRILLED SHAFT LOAD TEST DETAIL-

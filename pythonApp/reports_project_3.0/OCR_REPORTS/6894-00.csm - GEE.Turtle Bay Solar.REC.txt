@@ -1,0 +1,1502 @@
+GEOTECHNICAL ENGINEERING EXPLORATION
+TURTLE BAY RESORT SOLAR SYSTEMS
+KAHUKU, OAHU, HAWAII
+W.O. 6894-00 OCTOBER 4, 2013
+Prepared for
+REC SOLAR, INC.
+LICENSED
+PROFESSIONAL
+ENGINEER
+No. 4176-C
+THIS WORK WAS PREPARED BY
+ME OR UNDER MY SUPERVISION.
+UAA—4.30-14
+SIGNATURE EXPIRATION DATE
+OF THE LICENSE
+GEOLABS, INC.
+Geotechnical Engineering and Drilling Services
+2006 Kalihi Street e Honolulu, HI 96819
+Hawaii ° California
+GEOLABS, INC.
+Geotechnical Engineering and Drilling Services
+October 4, 2013
+W.O. 6894-00
+Mr. Bryce Halford
+REC Solar, Inc.
+775 Fiero Lane, Suite 200
+San Luis Obispo, CA 93401
+Dear Mr. Halford:
+Geolabs, Inc. is pleased to submit our report entitled "Geotechnical Engineering
+Exploration, Turtle Bay Resort Solar Systems, Kahuku, Oahu, Hawaii” prepared for the
+design and construction of a solar concentrating power facility.
+Our work was performed in general accordance with the scope of services outlined
+in our fee proposal dated July 11, 2013.
+Please note that the soil and rock samples recovered during our field exploration
+(remaining after testing) will be stored for a period of two months from the date of this
+report. The samples will be discarded after that date unless arrangements are made for
+a longer sample storage period. Please contact our office for alternative sample storage
+requirements, if appropriate.
+Detailed discussion and recommendations are contained in the body of this report.
+If there is any point that is not clear, please contact our office.
+Very truly yours,
+GEOLABS, INC.
+n S. Mimura, P.E.
+President
+CSM:DEF:mj
+2006 Kalihi Street e Honolulu, Hawaii 96819
+Phone: (808) 841-5064 ¢ Facsimile: (808) 847-1749 ¢ E-mail: hawaii@ geolabs.net
+Hawaii ° California
+W.O. 6894-00 
+GEOLABS, INC. 
+Page i 
+Hawaii  California 
+GEOTECHNICAL ENGINEERING EXPLORATION 
+TURTLE BAY RESORT SOLAR SYSTEMS 
+KAHUKU, OAHU, HAWAII 
+W.O. 6894-00     OCTOBER 4, 2013 
+TABLE OF CONTENTS 
+             Page 
+SUMMARY OF FINDINGS AND RECOMMENDATIONS.............................................. iii 
+1. 
+GENERAL ............................................................................................................ 1 
+1.1 
+Introduction................................................................................................ 1 
+1.2 
+Project Considerations............................................................................... 1 
+1.3 
+Purpose and Scope ................................................................................... 2 
+2. 
+SITE CHARACTERIZATION................................................................................ 3 
+2.1 
+Regional Geology ...................................................................................... 3 
+2.2 
+Project Site Geology .................................................................................. 3 
+2.3 
+Existing Site Conditions ............................................................................. 4 
+2.3.1 Turtle Bay Wastewater Treatment Site ........................................... 4 
+2.3.2 Fazio Golf Course Maintenance Site............................................... 4 
+2.3.3 Agricultural Irrigation Well and Pump Site....................................... 4 
+2.4 
+Subsurface Conditions............................................................................... 5 
+2.4.1 Wastewater Treatment Plant Site.................................................... 5 
+2.4.2 Fazio Golf Course Maintenance Site............................................... 5 
+2.4.3 Agricultural Irrigation Well and Pump Site....................................... 6 
+3. 
+DISCUSSION AND RECOMMENDATIONS ........................................................ 7 
+3.1 
+Solar Panel Foundations............................................................................ 7 
+3.1.1 Cast-In-Place Concrete Drilled Shaft Construction Consideration .. 8 
+3.2 
+Shallow Foundations.................................................................................. 9 
+3.3 
+Concrete Slabs-On-Grade ....................................................................... 10 
+3.3.1 Foundation Probing....................................................................... 11 
+3.4 
+Site Grading............................................................................................. 12 
+3.4.1 Site Preparation ............................................................................ 12 
+3.4.2 Fills and Backfills........................................................................... 13 
+3.4.3 Compaction Requirements............................................................ 14 
+3.4.4 Cavities and Voids ........................................................................ 15 
+3.5 
+Coral Excavation...................................................................................... 16 
+3.6 
+Utility Trenches and Pits .......................................................................... 16 
+3.7 
+Design Review......................................................................................... 17 
+3.8 
+Construction Monitoring........................................................................... 18 
+4. 
+LIMITATIONS..................................................................................................... 19 
+CLOSURE..................................................................................................................... 21 
+PLATES 
+TABLE OF CONTENTS 
+Page 
+W.O. 6894-00 
+GEOLABS, INC. 
+Page ii 
+Hawaii  California 
+Project Location Map................................................................................... Plate 1 
+Site Plan ...................................................................................................... Plate 2 
+APPENDIX A 
+Field Exploration...................................................................................... Page A-1 
+Logs of Test Pits ...................................................................... Plates A-1 thru A-6 
+APPENDIX B 
+Laboratory Tests...................................................................................... Page B-1 
+Laboratory Test Data ............................................................... Plates B-1 thru B-3 
+W.O. 6894-00 
+GEOLABS, INC. 
+Page iii 
+Hawaii  California 
+GEOTECHNICAL ENGINEERING EXPLORATION 
+TURTLE BAY RESORT SOLAR SYSTEMS 
+KAHUKU, OAHU, HAWAII 
+W.O. 6894-00     OCTOBER 4, 2013 
+SUMMARY OF FINDINGS AND RECOMMENDATIONS 
+Our field exploration at the Wastewater Treatment Plant site generally encountered 
+very stiff to hard silty clay soils with a significant content of boulders and cobbles.  The 
+Agricultural Irrigation and Golf Maintenance sites generally encountered a relatively thin 
+surface layer of stiff to hard silty clay over dense to very dense coralline deposits at shallow 
+depths. Groundwater was encountered in the test pits on the dates and at the times noted 
+in the Logs of Test Pits. 
+Based on the subsurface conditions encountered, cast-in-place concrete drilled 
+piers may be used to support the solar panel structures.  The drilled piers are designed to 
+be embedded into the stiff clayey soils or coral encountered in the test pits.  Some cobbles 
+and boulders and hard coral should be expected given the geologic conditions at the site.  
+Therefore, the drilling contractor will need to provide drilling equipment (and coring tools) 
+that will be capable of drilling through the cobbles, boulders and coral.  
+For rigid shafts or piles, the lateral resistance due to passive earth pressure may be 
+estimated using an equivalent fluid pressure of 350 pcf.  For flexible shafts or piles, a 
+coefficient of lateral subgrade reaction of 200 pci of deflection may be used.  In general, the 
+drilled piers should have a minimum center-to center spacing of 8.0 times the shaft/pile 
+diameter to avoid reduction in the lateral load capacity of the shaft/pile. 
+Shallow spread and/or continuous footings may be used to support the relatively 
+light structures planned at the site.  We recommend using an allowable bearing pressure of 
+up to 3,000 pounds per square foot (psf) to design shallow foundations bearing on the in-
+situ soils. This bearing value is for dead-plus-live loads and may be increased by one-third 
+(1/3) for transient loads, such as those caused by wind or seismic forces. 
+The text of this report should be referred to for more detailed discussions and 
+specific design recommendations. 
+END OF SUMMARY OF FINDINGS AND RECOMMENDATIONS 
+W.O. 6894-00 
+GEOLABS, INC. 
+Page 1 
+Hawaii  California 
+SECTION 1.  GENERAL 
+1.1 
+Introduction 
+This report presents the results of our geotechnical engineering exploration 
+performed for the proposed “Turtle Bay Resort Solar Systems” solar power generating 
+project at the Turtle Bay Resort complex in the Kahuku area on the Island of Oahu, 
+Hawaii. The project location and general vicinity are shown on the Project Location 
+Map, Plate 1. 
+This 
+report 
+summarizes 
+our 
+findings 
+and 
+geotechnical 
+engineering 
+recommendations derived from our field exploration, laboratory testing, and engineering 
+analyses. These recommendations are intended for the design of foundations and site 
+preparation only.  The findings and recommendations presented herein are subject to 
+the limitations noted at the end of this report. 
+1.2 
+Project Considerations 
+The project involves the design and construction of three photo-voltaic solar 
+electric generating systems within the Turtle Bay Resort complex in the Kahuku area on 
+the Island of Oahu, Hawaii.  Based on information provided to us, the solar facilities will 
+be comprised of three separate sites, as follows: 
+Turtle Bay Wastewater Treatment Plant site 
+Agricultural Irrigation Well And Pump site 
+Fazio Golf Course maintenance site. 
+Our geotechnical engineering exploration focused on the subsurface ground 
+conditions for foundation support of the solar panels.  A total of 12 test pits were 
+excavated and sampled at the three sites to depths ranging between 1.6 and 10.0 feet 
+below the existing ground surface (BGS) using a Case 580 Extendahoe combination 
+backhoe-loader.  Soil samples were collected as grab samples from selected locations 
+at the sites.  
+SECTION 1.  GENERAL 
+W.O. 6894-00 
+GEOLABS, INC. 
+Page 2 
+Hawaii  California 
+1.3 
+Purpose and Scope 
+The purpose of our field exploration was to obtain an overview of the surface and 
+subsurface conditions at the project site to develop an idealized soil/rock data set to 
+formulate geotechnical engineering recommendations pertaining to the design of 
+foundations and site preparation for the project.  The work was performed in general 
+accordance with our fee proposal dated July 11, 2013.  Our scope of work included the 
+following tasks and work efforts: 
+1. 
+Mobilization 
+and 
+demobilization 
+of 
+a 
+subcontracted 
+combination 
+loader-backhoe and operator to and from the project site. 
+2. 
+Excavation and sampling 12 test pits to depths ranging between 1.6 and 
+10.0 feet below the existing ground surface (BGS).  
+3. 
+Coordination of the field exploration and logging of the test pits by our  
+engineer/geologist. 
+4. 
+Laboratory testing of selected soil samples obtained during the field 
+exploration as an aid in classifying the materials and evaluating their 
+engineering properties. 
+5. 
+Analyses of the field and laboratory data to formulate geotechnical 
+engineering recommendations for the foundation and site grading design for 
+the project.  
+6. 
+Preparation of this report summarizing our work and presenting our findings 
+and recommendations. 
+7. 
+Coordination of our overall work on the project by our project engineer. 
+8. 
+Quality assurance of our work and client/design team consultation by our 
+principal engineer. 
+9. 
+Miscellaneous work efforts such as drafting, word processing, and clerical 
+support. 
+Detailed descriptions of our field exploration and Logs of Borings are presented 
+in Appendix A. Results of the laboratory tests performed on selected soil samples are 
+presented in Appendix B. 
+END OF GENERAL 
+W.O. 6894-00 
+GEOLABS, INC. 
+Page 3 
+Hawaii  California 
+SECTION 2.  SITE CHARACTERIZATION 
+2.1 
+Regional Geology 
+The Island of Oahu is comprised largely of the weathered remnants of the 
+Waianae and Koolau shield volcanoes.  The older Waianae Volcano forms the bulk of 
+the western third of the island while the younger Koolau Volcano forms the majority of 
+the eastern two-thirds of the island.  It is believed that Waianae became extinct while 
+Koolau was still active, and its eastern flank is partially buried below Koolau lavas in 
+central Oahu. 
+During the Pleistocene Epoch, sea levels fluctuated in response to the cycles of 
+continental glaciation.  As the glaciers grew and advanced, less water was available to 
+fill the oceanic basins such that sea levels fell below the present stands of the sea.  
+When the glaciers melted and receded, an excess of water became available such that 
+the sea levels rose to above the present sea level. 
+The higher sea level stands caused the formation of deltas and fans of 
+accumulated terrigenous sediments in the heads of old bays, accumulated reef deposits 
+at correspondingly higher elevations, and lagoonal/marine sediments in the quiet waters 
+protected by fringing reefs.  The lower sea stands caused streams to carve valleys in 
+the sediments and reef deposits.  Subaerial exposure of the sediments and calcareous 
+materials caused consolidation of the soft deltaic materials and lagoonal deposits and 
+induration of the calcareous reef materials.  
+2.2 
+Project Site Geology 
+The project site lies on the Kahuku Coastal Plain and the pediment of the 
+northern end of the Koolau Mountain Range. The project area is generally classified 
+from a geological standpoint as ‘Qa’ for Quaternary Alluvium (Sinton, et.al.) which 
+consists of alluvial soils deposited since the Pleistocene Epoch.  Experience at the 
+Turtle Bay Resort complex indicates that this alluvial material forms a thin mantle over 
+residuum from Koolau Basalt at the southern side of the resort and over coralline and 
+dune sand deposits to the north of Kamehameha Highway. 
+SECTION 2.  SITE CHARACTERIZATION 
+W.O. 6894-00 
+GEOLABS, INC. 
+Page 4 
+Hawaii  California 
+2.3 
+Existing Site Conditions 
+The project sites are located at separate portions of the Turtle Bay Resort 
+property.  The following provide brief descriptions of each location. 
+2.3.1 Turtle Bay Wastewater Treatment Site 
+The treatment plant site is situated to the south of Kamehameha Highway across 
+from the entrance to Kuilima Drive.  The plant consists of four aeration ponds that 
+were constructed at the base of the northern end of the Koolau Range.  Archival 
+records indicate that the southern portion of the plant was graded by cutting into the 
+lower slopes to generate fill material for the northern portion of the site.  The 
+proposed solar system is situated on the north facing embankment slope of the 
+treatment plant facility with ground surface elevations ranging from about +10 to 
+about +20 feet above Mean Sea Level (MSL).  This slope area is open lawn space 
+covered with grass. 
+2.3.2 Fazio Golf Course Maintenance Site 
+This site is situated in the west central portion of the resort complex to the north of 
+the existing Fazio Golf Course maintenance building, between the building and a 
+golf course water feature.  The site is a level open lawn area with a ground surface 
+elevation on the order of about +10 feet MSL.  
+2.3.3 Agricultural Irrigation Well and Pump Site 
+The pump house site is situated to the north of Kamehameha Highway in the 
+eastern portion of the resort complex.  This site was originally developed as a 
+potable water well site by the now defunct Kahuku Plantation.  Until recently, the site 
+was heavily overgrown with haole koa (leucaena sp.) and other subtropical 
+vegetation.  It was cleared shortly before our exploration. 
+At present, the site is occupied by an old chlorinator house, an abandoned concrete 
+slab and well pump equipment enclosed by a chain link fence.  The site is generally 
+level with a ground surface elevation on the order of about + 5 to 10 feet MSL. 
+SECTION 2.  SITE CHARACTERIZATION 
+W.O. 6894-00 
+GEOLABS, INC. 
+Page 5 
+Hawaii  California 
+2.4 
+Subsurface Conditions  
+Based on our field exploration, the subsurface conditions are unique for each of 
+the three sites.  The following provide a brief synopsis of the materials encountered at 
+each of the individual sites. 
+2.4.1 Wastewater Treatment Plant Site 
+Our exploration at this site consisted of the excavation of five test pits with two pits 
+situated in the upper area along the paved treatment plant road and another three 
+pits in the lower area along the plant boundary fence.  The test pits were identified 
+as Test Pits WWTP-1 through WWTP-5, inclusive.   
+The test pits in the upper area (WWTP-1 and WWTP-2) penetrated embankment fill 
+that was placed when the treatment plant was constructed.  This embankment fill 
+generally consisted of very stiff to hard silty clay with a significant portion of cobbles 
+and boulders in the soil matrix.  It is estimated that the matrix consisted of about five 
+percent each of cobbles and boulders, or an estimated total of 10 percent of coarse 
+material.  The embankment fill extended, at a minimum, to 10 feet below the 
+existing ground surface (BGS), the maximum depth explored.  It should be noted 
+that one of the pits was terminated at the shallower depth of 8.5 feet BGS when a 
+large boulder was encountered. 
+The test pits excavated in the lower portion of the treatment plant site (WWTP-3 
+through WWTP-5) generally encountered about a foot of the same fill material.  In 
+two of the pits, coralline materials were encountered below the fill.  One of the 
+coralline horizons encountered was cemented dune sand which presented refusal 
+conditions at a depth of about 8.0 feet BGS.  Another of the test pits encountered 
+what appeared to be weathered basalt rock formation at the depth of about 8 feet 
+BGS.  This weathered rock formation was also noted to contain ground water. 
+2.4.2 Fazio Golf Course Maintenance Site  
+Subsurface conditions at the Fazio Golf Course maintenance area were explored by 
+the excavation of three test pits.  The pits, identified as Test Pits Golf-1 through 
+Golf-3, penetrated a surface fill layer about 2.5 feet in thickness of brown clayey silt 
+SECTION 2.  SITE CHARACTERIZATION 
+W.O. 6894-00 
+GEOLABS, INC. 
+Page 6 
+Hawaii  California 
+with some gravel and occasional cobbles.  It was estimated that the cobbles 
+comprise about five percent of the entire soil mass.  Under the surface fill, the test 
+pits generally encountered about a foot of medium dense dune sand which 
+transitioned with depth to either sandstone or hard coralline limestone.  In Test Pit 
+“Golf–1”, the excavation broke through this limestone and encountered loose to 
+medium dense silty gravel which appeared to be reef detritus filling a possible 
+cavity. 
+2.4.3 Agricultural Irrigation Well and Pump Site 
+At this site, our exploration consisted of the excavation of four test pits to depths 
+ranging between about 1.6 and 8.0 feet BGS.  These test pits were designated as 
+AG-1 through AG-4, inclusive. 
+All of the pits encountered a surface fill layer of brown clayey silt with some cobbles 
+and boulders to a depth of about 2.5 feet BGS.  In general, below the fill the test pits 
+encountered various coralline and associated deposits.  It should be noted that 
+refusal conditions were encountered in all but one of the pits excavated at this site.  
+It should also be noted that the strength characteristics of coralline deposits can be 
+highly variable. The depositional nature of coral materials may create localized 
+areas of hard; crystalline coral formation intermixed with soft, severely fractured 
+detritus (debris). 
+Groundwater was encountered in some of the test pits at the times and depths 
+indicated on the Logs of Test Pits in Appendix A. 
+Detailed descriptions of the materials encountered in the test pits are presented 
+on the Logs of Test Pits, as shown on Plates A-1 through A-6 of Appendix A.  Results of 
+the laboratory tests performed on selected soil samples are presented in Appendix B. 
+END OF SITE CHARACTERIZATION 
+W.O. 6894-00 
+GEOLABS, INC. 
+Page 7 
+Hawaii  California 
+SECTION 3.  DISCUSSION AND RECOMMENDATIONS 
+Our field exploration at the Wastewater Treatment Plant site generally 
+encountered very stiff to hard silty clay soils with a significant content of boulders and 
+cobbles.  The Agricultural Irrigation and Golf Maintenance sites generally encountered a 
+relatively thin surface layer of stiff to hard silty clay over dense to very dense coralline 
+deposits at shallow depths. Groundwater was encountered in the test pits on the dates 
+and at the times noted in the Logs of Test Pits. 
+Structural loading information for the solar panel structures was not available at 
+the time this report was prepared. Based on the limited available space and 
+assumptions of the foundation load demand, we envision that the solar panel structures 
+will be supported on cast-in-place concrete drilled piers. A small reinforced concrete 
+slab with thickened-edge footings may also be required to support solar equipment and 
+accessories. Detailed discussions and recommendations for foundation design are 
+presented in the following sections. 
+3.1 
+Solar Panel Foundations 
+It is our understanding that the vertical loads for solar panel systems are minimal 
+and the primary concerns are uplift and overturning due to wind loads on the panels.  
+Generally, there are several options available to support solar panel arrays.  One typical 
+support system is the use of H-beam or pipe posts driven about 10 feet below the 
+existing ground surface. However, the presence of boulders, cobbles and hard coralline 
+materials at the three sites would generally constrain this support system since these 
+materials would most likely present refusal conditions to driven posts. 
+Based on the subsurface conditions encountered, we recommend using an 
+ultimate skin friction of 2.0 kip per square foot (ksf) for the stiff to hard silty clay at the 
+WWTP and dense coralline materials at the other two sites.  A factor of safety of 2.0 
+should be used to determine the allowable compressive load capacity of the 
+cast-in-place drilled piers.  The allowable compressive load capacity is for supporting 
+dead-plus-live loads and may be increased by one-third (1/3) for transient loads, such as 
+those caused by wind or seismic forces.  
+SECTION 3.  DISCUSSION AND RECOMMENDATIONS 
+W.O. 6894-00 
+GEOLABS, INC. 
+Page 8 
+Hawaii  California 
+Uplift loads imposed on the drilled piers may be resisted by a combination of the 
+dead weight of the drilled shaft or pile and shear along the shaft or pile surface and the 
+adjacent soils.  An ultimate uplift skin friction of 2.0 ksf may be used to determine the 
+uplift load capacity for transient loading.  The uplift load capacities should not be further 
+increased for transient load applications.  For sustained uplift loads, we recommend 
+reducing the uplift load capacity by 50 percent to resist sustained uplift loads.  The 
+project structural engineer should check the capacity of the drilled shaft or driven steel 
+pile member in tension. 
+Lateral loads imposed on the solar panel structures may be resisted by the 
+lateral load capacity of the drilled piers.  The lateral load resistance of the drilled shaft or 
+steel piles is a function of the stiffness of the surrounding soil, the stiffness of the shaft 
+or pile, allowable deflection at the top of the shaft or pile, and the induced moment in the 
+shaft or pile.  
+For rigid shafts or piles, the lateral resistance due to passive earth pressure may 
+be estimated using an equivalent fluid pressure of 350 pounds per square foot per foot 
+of depth (pcf).  For flexible shafts or piles, a coefficient of lateral subgrade reaction of 
+200 pounds per square inch per inch (pci) of deflection may be used.  In general, the 
+drilled shafts or driven steel piles should have a minimum center-to center spacing of 
+8.0 times the shaft/pile diameter to avoid reduction in the lateral load capacity of the 
+shaft/pile. 
+A Geolabs representative should be present to observe the solar panel 
+foundation installation during construction. Geolabs observation of the foundation 
+installation operations is necessary to confirm the assumed subsurface conditions. 
+3.1.1 Cast-In-Place Concrete Drilled Shaft Construction Consideration 
+In general, the performance of drilled piers will depend significantly upon the 
+contractor’s method of installation and construction procedures.  The following 
+conditions would have a significant effect on the effectiveness and cost of the drilled 
+shaft foundations. 
+SECTION 3.  DISCUSSION AND RECOMMENDATIONS 
+W.O. 6894-00 
+GEOLABS, INC. 
+Page 9 
+Hawaii  California 
+The load bearing capacities of the drilled shafts depend, to a large extent, on the 
+friction between the shaft and the surrounding soils.  Therefore, proper construction 
+techniques are important.  The contractor should exercise care in drilling the shaft 
+holes and in placing concrete into the drilled holes.  The drilled shafts are designed 
+to be embedded into the stiff clayey soils or dense coral encountered in the test pits.  
+Some boulders should be expected in the clayey soil horizon given the geologic 
+conditions at the site.  The drilled shaft contractor will need to provide drilling 
+equipment (and coring tools) that will be capable of drilling through boulders and 
+cobbles and hard coral. 
+If groundwater is encountered in the drilled holes, then concrete should be placed 
+by tremie methods.  A low shrink, high slump (7 to 9-inch slump range) concrete mix 
+should be used to provide close contact between the drilled shafts and the 
+surrounding soils.  The concrete should be placed promptly after drilling (within 
+24 hours) to reduce the potential for softening of the sides of the drilled holes. 
+3.2 
+Shallow Foundations 
+For relatively light structures planned at the site, we recommend using an 
+allowable bearing pressure of up to 3,000 pounds per square foot (psf) to design 
+shallow foundations bearing on the in-situ soils. This bearing value is for dead-plus-live 
+loads and may be increased by one-third (1/3) for transient loads, such as those caused 
+by wind or seismic forces. 
+In general, footings should be embedded a minimum of 18 inches below the 
+lowest adjacent finished grades. The bottom of the footing excavations should be 
+recompacted to a minimum of 90 percent relative compaction (ASTM D 1557) prior to 
+placing reinforcing steel or concrete. 
+Foundations located next to utility trenches or easements should be embedded 
+below a one horizontal to one vertical (1H:1V) imaginary plane extending upward from 
+the bottom edge of the utility trench or as deep as the inverts of the utility lines. This 
+requirement is necessary to avoid surcharging adjacent below-grade structures with 
+SECTION 3.  DISCUSSION AND RECOMMENDATIONS 
+W.O. 6894-00 
+GEOLABS, INC. 
+Page 10 
+Hawaii  California 
+additional structural loads and to reduce the potential for appreciable foundation 
+settlement. 
+If the foundations are designed and constructed in accordance with our 
+recommendations, we estimate that total settlements of footings bearing on the 
+recompacted in-situ clayey soils may be on the order of less than 1 inch. We estimate 
+that the differential settlements between adjacent foundations to be on the order of 
+about 0.5 inch.  
+Lateral loads acting on the structures may be resisted by friction developed 
+between the bottom of the foundation and the bearing soil and by passive earth 
+pressure acting against the near-vertical faces of the foundation system. A coefficient of 
+friction of 0.35 may be used for footings bearing on the recompacted in-situ soils. 
+Resistance due to passive earth pressure may be estimated using an equivalent fluid 
+pressure of 350 pcf. This assumes that the soils around the footings are well 
+compacted. Unless covered by pavements or slabs, the passive resistance in the upper 
+12 inches of soil should be neglected.  
+A Geolabs representative should observe footing excavations prior to placement 
+of reinforcing steel or concrete to confirm the foundation bearing conditions and the 
+required embedment depths. 
+3.3 
+Concrete Slabs-On-Grade 
+Based on our field exploration, moderately expansive clayey soils blanket the 
+three project sites at the existing ground surface. Unless slabs-on-grade constructed 
+above these expansive soils are properly designed, there is a potential for future 
+distress to the lightly loaded slabs-on-grade resulting from shrinking and swelling of the 
+clayey soils due to changes in the moisture content. To reduce the potential for 
+structural distress resulting from swelling of the subgrade soils, we recommend properly 
+preparing the subgrade soils prior to fill placement. In addition, we recommend 
+providing a minimum 2 feet of non-expansive, select granular fill materials below the 
+building slab areas. The non-expansive, select granular fill also should extend beyond 
+SECTION 3.  DISCUSSION AND RECOMMENDATIONS 
+W.O. 6894-00 
+GEOLABS, INC. 
+Page 11 
+Hawaii  California 
+the perimeter of the building a minimum of 24 inches (or extend to the edge of the 
+concrete sidewalk surrounding the building). 
+Where the concrete slabs-on-grade will be subjected to future vehicular traffic, 
+machinery vibrations such as at loading zones or equipment pads, a minimum of 6-inch 
+layer of aggregate subbase is recommended below the slabs. The aggregate subbase 
+should consist of crushed basalt aggregate compacted to a minimum of 95 percent 
+relative compaction.   
+For design of structural slabs, a modulus of subgrade reaction of 200  pci may be 
+used for the compacted aggregate subbase.  Where slabs are intended to function as 
+rigid pavements, a minimum slab thickness of 6 inches may be used for preliminary 
+design purposes. Provisions should be made for proper load transfer across the slab 
+joints which are subjected to vehicular traffic.  The thickened edges of slabs adjacent to 
+unpaved areas should be embedded at least 12 inches below the lowest adjacent grade. 
+Areas adjacent to the slab should be backfilled tightly against the slab with relatively 
+impervious soils (on-site soils) and graded to divert water away from the slab to reduce 
+the potential for water ponding around foundations. 
+3.3.1 Foundation Probing 
+Our experience suggests that cavities and/or voids are commonly encountered in 
+coral formations. To reduce the potential for loss of foundation support resulting 
+from the collapse of cavities and/or sinkholes below foundations supported on the 
+native coralline materials and/or coral formations, a program of cavity probing and 
+grouting at the foundation locations during construction is generally recommended. 
+However, since no obvious cavities were encountered at the time of our field 
+exploration, it is likely that the risk of cavities under the site is minimal.  If the owner 
+is willing to accept the risk, the probing operation may be omitted for the solar farm 
+area. Similarly, the foundation probing and grouting program may also be omitted 
+for buildings and pads supported on 5 feet or more of compacted fill or on clayey 
+soils, if the level of risk is acceptable. 
+SECTION 3.  DISCUSSION AND RECOMMENDATIONS 
+W.O. 6894-00 
+GEOLABS, INC. 
+Page 12 
+Hawaii  California 
+3.4 
+Site Grading 
+Based on the existing topography at the three locations, we envision the majority 
+of the grading work will generally consist of cuts and fills of less than about 3 feet thick 
+relative to the existing grades except at the Wastewater Treatment Plant site, where 
+cuts and fills on the order of about 5 feet or more may be required.  
+Generally, a Geolabs representative should monitor the site grading operations 
+to observe whether undesirable materials are encountered during the scarification 
+process and to confirm whether the exposed soil and/or rock conditions are similar to 
+those encountered in our field exploration. Items of grading addressed in the 
+subsequent subsections include the following:  
+Site Preparation 
+Fills and Backfills 
+Compaction Requirements 
+Cavities and Voids 
+3.4.1 Site Preparation 
+At the on-set of earthwork, the area within the contract grading limits should be 
+cleared and grubbed thoroughly. Vegetation, debris, deleterious and other 
+unsuitable materials should be removed and disposed of properly off-site. Soft 
+and/or yielding areas encountered during clearing and grubbing below areas 
+designated to receive fill should be over-excavated to expose firm material, and the 
+resulting excavation should be backfilled with well-compacted fills. Excavated soft 
+and/or organic soils should be properly disposed of off-site and/or used in 
+landscape areas, where appropriate. We anticipate the clearing and grubbing effort 
+will be a lot less for areas of the site exposing the native coralline materials at the 
+ground surface. Contract documents should include additive and deductive unit 
+prices for over-excavation and compacted fill placement to account for variations in 
+the over-excavation quantities. 
+After clearing and grubbing, finished subgrades and areas designated to receive fills 
+should be scarified to a depth of about 12 inches, moisture-conditioned to about 
+2 percent above the optimum moisture, and recompacted to a minimum of 
+SECTION 3.  DISCUSSION AND RECOMMENDATIONS 
+W.O. 6894-00 
+GEOLABS, INC. 
+Page 13 
+Hawaii  California 
+90 percent relative compaction. The compaction requirements for finished 
+subgrades subjected to vehicular traffic, such as the pavement subgrade, should be 
+increased to a minimum of 95 percent relative compaction. Relative compaction 
+refers to the in-place dry density of soil expressed as a percentage of the maximum 
+dry density of the same soil established in accordance with ASTM D 1557. Optimum 
+moisture is the water content (percentage by dry weight) corresponding to the 
+maximum dry density. 
+If native coralline materials and/or coral formation are exposed at the subgrade 
+level, the subgrade should be proof-rolled with a large vibratory drum roller 
+(minimum 10 tons static weight) a minimum of eight passes to help detect and 
+collapse near-surface cavities and/or voids. The vibratory drum roller should be 
+operated at a speed of about 300 feet per minute. Yielding areas, loose areas, or 
+cavities disclosed during clearing and proof-rolling operations should be 
+over-excavated and backfilled with compacted fill materials. 
+Where shrinkage cracks are observed at the ground surface after compaction of the 
+subgrade, we recommend preparing the subgrade soil again as recommended 
+above. Saturation and subsequent yielding of the exposed subgrade due to 
+inclement weather and poor drainage may require over-excavation of the soft areas 
+and replacement with well-compacted fill. A Geolabs representative should evaluate 
+the need for over-excavation due to soft subgrade soil conditions. 
+3.4.2 Fills and Backfills 
+In general, we believe the excavated on-site clayey soils (without deleterious 
+materials and/or over-sized materials) may be reused as a source of non-structural 
+fill materials. If required, imported general fill materials should consist of materials 
+with particle sizes of 6 inches or less in maximum dimension and should be free of 
+deleterious materials. The material should have a laboratory California Bearing 
+Ratio (CBR) value of 8 or higher and a swell potential of 2 percent or less when 
+tested in accordance with ASTM D 1883.  
+SECTION 3.  DISCUSSION AND RECOMMENDATIONS 
+W.O. 6894-00 
+GEOLABS, INC. 
+Page 14 
+Hawaii  California 
+Non-expansive, select granular fill materials (structural fill) may be required under 
+building slabs, exterior flatwork, and pavement sections. The excavated on-site 
+coralline materials, where encountered, may be reused as a source of 
+non-expansive, select granular fill materials, if they are processed to meet the 
+above requirements. Geolabs should test the imported fill materials a minimum of 
+seven days prior to being transported to the project site for the intended use. If 
+required, imported materials, such as crushed coral or basalt, may be used for 
+structural fill. The material should be well graded from coarse to fine with particles 
+no greater than 3 inches in largest dimension. The material should contain between 
+10 and 30 percent particles passing the No. 200 sieve. In addition, the material 
+should have a laboratory CBR value of 20 or higher and a swell potential of not 
+more than 1 percent when tested in accordance with ASTM D 1883. 
+3.4.3 Compaction Requirements 
+General fill materials should be placed in level lifts not exceeding 8 inches in loose 
+thickness, moisture-conditioned to about 2 percent above the optimum moisture 
+content, and compacted to at least 90 percent relative compaction. The compaction 
+requirements for finished subgrades subjected to vehicular traffic, such as the 
+pavement subgrade, should be increased to a minimum of 95 percent relative 
+compaction. The structural fill materials should be placed in level lifts of about 
+8 inches in loose thickness, moisture-conditioned to above the optimum moisture, 
+and compacted to at least 90 percent relative compaction.  
+Aggregate base course materials should be moisture-conditioned to above the 
+optimum moisture content, placed in level lifts not exceeding 8 inches in loose 
+thickness, and compacted to a minimum of 95 percent relative compaction.  
+Relative compaction refers to the in-place dry density of soil expressed as a 
+percentage of the maximum dry density of the same soil established in accordance 
+with ASTM D 1557. Optimum moisture is the water content (percentage by weight) 
+corresponding to the maximum dry density. Compaction should be accomplished by 
+using sheepsfoot rollers, vibratory rollers, or other types of acceptable compaction 
+equipment. 
+SECTION 3.  DISCUSSION AND RECOMMENDATIONS 
+W.O. 6894-00 
+GEOLABS, INC. 
+Page 15 
+Hawaii  California 
+Because moisture conditioning and compaction of the clayey subgrade soils and 
+general fill materials are critical elements of the earthwork, Geolabs should perform 
+observations and soil density tests during site grading operations to assist the 
+contractor in obtaining the required degree of compaction and the proper moisture 
+content on each fill lift. Where compaction is less than required, additional 
+compactive effort should be applied with adjustment of moisture content as 
+necessary, to obtain the specified compaction. It should be noted that the moisture 
+requirement of the on-site fills and subgrades (at least 2 percent above the optimum 
+moisture) is an important requirement considering the moderately expansive nature 
+of the on-site clayey soils. 
+3.4.4 Cavities and Voids 
+Native coralline materials and coral formations generally are highly variable in terms 
+of hardness, weathering, and fracturing. In addition, cavities and/or voids are 
+commonly encountered in coral formations. In many cases, cavities and voids in the 
+coral formation may be filled with loose coralline deposits and/or clayey alluvial soils. 
+In areas where coralline formation is anticipated near the ground surface, special 
+attention should be given to the subgrade preparation to reduce the potential for 
+distress to the future improvements. 
+In areas where the excavated subgrade exposes coral formation, the excavated 
+subgrade should be proof-rolled with a minimum 10-ton vibratory drum roller to 
+detect the presence of potential near-surface cavities, sinkholes, or loose zones. 
+The vibratory drum roller should be operated at a speed of about 300 feet per 
+minute. The proof-rolling operations should be performed in the presence of a 
+Geolabs representative. If the proof-rolling operations detect a near-surface cavity 
+or loose zones, the area should be ripped open, cleaned of the debris, and then 
+backfilled with compacted fill materials or lean concrete. Therefore, contract 
+documents should include additive and deductive unit prices for over-excavation 
+and compacted fill placement to account for variations in the over-excavation 
+quantities.  
+SECTION 3.  DISCUSSION AND RECOMMENDATIONS 
+W.O. 6894-00 
+GEOLABS, INC. 
+Page 16 
+Hawaii  California 
+3.5 
+Coral Excavation 
+The coral formation in the project area appears to be moderately weathered and 
+medium hard to hard in nature. It is anticipated that the majority of the coral formation 
+may be excavated with heavy excavation equipment, such as the large backhoe 
+excavator. However, coral formations typically contain localized hard and crystallized 
+zones. Therefore, we anticipate some difficult excavation conditions may arise in 
+localized areas during construction. It is possible that the excavation for a portion of the 
+utility line trenches will require the use of hoerams or chipping. The contractor must 
+exercise care to avoid over-ripping, which would disrupt the structure of the coral 
+formation, resulting in a potential loss of bearing strength for improvements in the 
+vicinity. 
+The above discussions regarding the rippability of the materials are based on our 
+visual observation of the existing coral formation and field and laboratory data from the 
+borings drilled. We recommend encouraging contractors to examine the site conditions 
+and the subsurface data to make their own reasonable and prudent interpretation. 
+3.6 
+Utility Trenches and Pits  
+We envision that new utility connections will be required for the project.  In 
+general, good construction practices should be utilized for the installation and backfilling 
+of the trenches for the proposed utilities.  The contractor should determine the method 
+and equipment to be used for excavation, subject to practical limits and safety 
+considerations.  The excavation should comply with the applicable local, state, and 
+federal safety requirements.  The contractor should be responsible for trench shoring 
+design and installation.  Trench shoring and bracing should also conform to the 
+appropriate health and safety requirements. 
+Granular bedding consisting of 6 inches of No. 3B Fine gravel (ASTM C 33, 
+No. 67 gradation) is recommended under the pipes.  Free-draining granular materials 
+such as No. 3B Fine gravel should also be used for the trench backfill up to about 
+12 inches above the pipes to provide adequate support around the pipes and to reduce 
+the compaction effort on the backfill, thus reducing the possibility of damaging the pipes. 
+It is critical to use this free-draining material to reduce the potential for formation of 
+SECTION 3.  DISCUSSION AND RECOMMENDATIONS 
+W.O. 6894-00 
+GEOLABS, INC. 
+Page 17 
+Hawaii  California 
+voids below the haunches of pipes and to provide adequate support for the sides of the 
+pipes. Improper backfill material and placement could result in backfill settlement and 
+pipe damage. 
+The upper portion of the trench backfill from the level 12 inches above the pipes 
+to the top of the subgrade or finished grade should consist of on-site soils or select 
+granular fill material.  The backfill should be placed in maximum 8-inch level loose lifts 
+and mechanically compacted to not less than 90 percent relative compaction to reduce 
+the potential for future ground subsidence.  Where trenches are below pavement areas, 
+the upper 3 feet of the trench backfill below the pavement subgrade should be 
+compacted to a minimum of 95 percent relative compaction. 
+Based on our field exploration, the project site is generally underlain by dense to 
+very dense coralline deposits near the existing ground surface.  Therefore, excavations 
+for underground utility installation will involve cuts into the underlying dense to very 
+dense coralline deposits.  It is anticipated that excavation near the existing ground 
+surface may be accomplished with normal heavy excavation equipment, such as ripping 
+with large bulldozers.  Deeper excavations into the hard coral formation may require the 
+use of backhoe excavators, or a trench excavator. 
+The above discussions regarding the rippability of the materials are based on our 
+visual observation of the existing site and field data from the borings drilled at the site. 
+Contractors proposing to bid on this project are encouraged to examine the site 
+conditions and the boring data to make their own interpretation. 
+3.7 
+Design Review 
+Final drawings and specifications for the construction of the Turtle Bay Resort 
+Solar Systems project should be forwarded to Geolabs for review and written comments 
+prior to bid advertisement.  This review is needed to evaluate conformance of the plans 
+and specifications with the intent of the foundation and earthwork recommendations 
+provided herein. If this review is not made, Geolabs cannot be responsible for 
+misinterpretation of our recommendations. 
+SECTION 3.  DISCUSSION AND RECOMMENDATIONS 
+W.O. 6894-00 
+GEOLABS, INC. 
+Page 18 
+Hawaii  California 
+3.8 
+Construction Monitoring 
+Geolabs should be retained to provide geotechnical engineering services during 
+construction of the Turtle Bay Resort Solar Systems project.  The critical items of 
+construction monitoring that require "Special Inspection" include the following: 
+drilling and concrete placement for drilled pier foundations 
+proof-rolling and subgrade preparation 
+foundation excavation and base preparation 
+select granular fill placement and compaction 
+A Geolabs representative should monitor other aspects of earthwork construction 
+to observe compliance with the intent of the design concepts, specifications, and/or 
+recommendations, and to expedite suggestions for design changes that may be 
+required in the event that subsurface conditions differ from those anticipated at the time 
+this report was prepared.  The recommendations presented in this report are contingent 
+upon such observations.  If the actual exposed soil conditions encountered during 
+construction differ from those assumed or considered in this report, Geolabs should be 
+contacted to review and/or revise the geotechnical engineering recommendations 
+presented herein. 
+END OF DISCUSSION AND RECOMMENDATIONS 
+W.O. 6894-00 
+GEOLABS, INC. 
+Page 19 
+Hawaii  California 
+SECTION 4.  LIMITATIONS 
+The analyses and recommendations submitted in this report are based in part 
+upon information obtained from the field borings and bulk samples.  Variations of 
+subsoil conditions between and beyond the field borings and bulk samples may occur, 
+and the nature and extent of these variations may not become evident until construction 
+is underway.  If variations then appear evident, Geolabs should be contacted to 
+re-evaluate the recommendations presented in this report. 
+The stratification lines shown on the graphic representations of the borings depict 
+the approximate boundaries between the soil types, and as such, may denote a gradual 
+transition. We did not encounter groundwater in the borings at the time of our 
+exploration, and therefore, groundwater is not shown on the graphic representations 
+and/or in the text of this report. However, it must be noted that groundwater level 
+conditions could change due to one or a combination of factors, such as tidal 
+fluctuations, storm surge, and variation in rainfall, temperature changes and other 
+factors. These data have been reviewed and interpretations made in the formulation of 
+this report 
+This report has been prepared for the exclusive use of REC Solar, Inc. and their 
+project consultants for specific application to the Turtle Bay Resort Solar Systems 
+project in accordance with generally accepted geotechnical engineering principles and 
+practices.  No warranty is expressed or implied. 
+This report has been prepared solely for the purpose of assisting the design 
+engineers in the design of the proposed project.  Therefore, this report may not contain 
+sufficient data, or the proper information, to serve as the basis for preparation of 
+construction cost estimates nor for bidding purposes.  A contractor wishing to bid on this 
+project should retain a competent geotechnical engineer to assist in the interpretation of 
+this report and/or in the performance of additional site specific exploration for bid 
+estimating purposes. 
+SECTION 4. LIMITATIONS 
+W.O. 6894-00 
+GEOLABS, INC. 
+Page 20 
+Hawaii  California 
+The owner/client should be aware that unanticipated soil conditions are 
+commonly encountered. Unforeseen soil conditions, such as perched groundwater, soft 
+deposits, hard layers, or cavities, may occur in localized areas and may require 
+corrections in the field (which may result in construction delays) to attain a properly 
+constructed project. Therefore, a sufficient contingency fund is recommended to 
+accommodate these possible extra costs. 
+This geotechnical engineering exploration conducted at the project site was not 
+intended to investigate the potential presence of hazardous materials existing at the 
+site.  It should be noted that the equipment, techniques, and personnel used to conduct 
+a geo-environmental exploration differ substantially from those applied in geotechnical 
+engineering. 
+END OF LIMITATIONS 
+CLOSURE
+The following plates and appendices are attached and complete this report:
+Project LOCation Map ........ceeeeccecssscecsscecseeesseecsseeessuecccuueceueseseseaeessneseneesenseesereseess Plate 1
+DIES! PLANS smncesuenmomemarenes waensttienne sane onan uous eoorneurean nem rye yang es apse He anesiaEEE Reset Kes em Plate 2
+(=) (0 =>. (9) (0) ¢- (0) 6 ee Appendix A
+IME oe) ¢-\ 0) gV A <>) Appendix B
+-QONQOQQOOO-
+Respectfully submitted,
+GEOLABS, INC.
+President
+CSM:DEF:mj
+H:\6600Series\6894-00.df1
+W.O. 6894-00 GEOLABS, INC. Page 21
+Hawaii e California
+PLATES 
+PROJECT LOCATION MAP
+GRAPHIC SCALE
+1000
+2000
+2000
+0
+FT.
+PROJECT LOCATIONS
+GENERAL PROJECT LOCATION
+N
+WAHIAWA
+WAIKIKI
+HONOLULU
+AIEA
+PEARL CITY
+WAIPAHU
+EWA
+BARBERS POINT
+NANAKULI
+WAIANAE
+WAIALUA
+HALEIWA
+KAHUKU
+POINT
+DIAMOND
+HEAD
+HAWAII
+KAI
+WAIMANALO
+KAILUA
+KANEOHE
+KAHALUU
+PUNALUU
+HAUULA
+KAENA POINT
+ISLAND MAP
+NO SCALE
+SEPTEMBER 2013
+1" = 2,000'
+DATE
+SCALE
+1
+6894-00
+DRAWN BY
+JRP
+W.O.
+PLATE
+N
+PACIFIC      OCEAN
+CAD User: JJP  File Last Updated: October 01, 2013 11:37:37am  Plot Date:  October 03, 2013 - 2:13:04pm
+File: T:\Drafting-9904\Working\6894-00TurtelBaySolarSystems\6894-00PLM.dwg\PLM
+Plotter: GEO-DWG-TO-PDF.pc3  Plotstyle: GEO-No-Dithering-Blue-Boring.ctb
+REFERENCE: MAP CREATED WITH TOPO!1$7,21$/
+*(2*5$3+,&7(/($7/$65(/
+KAHUKU, OAHU, HAWAII
+TURTLE BAY SOLAR SYSTEMS
+WWTP-3
+WWTP-4
+WWTP-5
+WWTP-2
+WWTP-1
+N
+6894-00
+DRAWN BY
+JRP
+1" = 40'
+SEPTEMBER 2013
+SCALE
+DATE
+W.O.
+2.1
+PLATE
+CAD User: JJP  File Last Updated: October 03, 2013 1:54:52pm  Plot Date:  October 03, 2013 - 2:16:53pm
+File: T:\Drafting-9904\Working\6894-00TurtelBaySolarSystems\6894-00SitePlan.dwg\SP-2.1
+Plotter: GEO-DWG-TO-PDF.pc3  Plotstyle: GEO-No-Dithering-Blue-Boring.ctb
+REFERENCE: TURTLE BAY RESORT - WWTP PHOTOVOLTAIC SYSTEM
+LAYOUT TRANSMITTED BY REC SOLAR ON JULY 30, 2013.
+KAHUKU, OAHU, HAWAII
+SITE PLAN
+TURTLE BAY SOLAR SYSTEMS
+GRAPHIC SCALE
+20
+0
+40
+80
+120 FT.
+APPROXIMATE TEST PIT LOCATION
+LEGEND:
+GOLF-3
+GOLF-2
+GOLF-1
+N
+6894-00
+DRAWN BY
+JRP
+1" = 40'
+SEPTEMBER 2013
+SCALE
+DATE
+W.O.
+2.2
+PLATE
+CAD User: JJP  File Last Updated: October 03, 2013 1:54:52pm  Plot Date:  October 03, 2013 - 2:17:15pm
+File: T:\Drafting-9904\Working\6894-00TurtelBaySolarSystems\6894-00SitePlan.dwg\SP-2.2
+Plotter: GEO-DWG-TO-PDF.pc3  Plotstyle: GEO-No-Dithering-Blue-Boring.ctb
+KAHUKU, OAHU, HAWAII
+SITE PLAN
+TURTLE BAY SOLAR SYSTEMS
+GRAPHIC SCALE
+20
+0
+40
+80
+120 FT.
+REFERENCE: TURTLE BAY RESORT - AG PHOTOVOLTAIC SYSTEM
+LAYOUT TRANSMITTED BY REC SOLAR ON JULY 30, 2013.
+IRRIG-2
+IRRIG-1
+IRRIG-4
+IRRIG-3
+N
+6894-00
+DRAWN BY
+JRP
+1" = 40'
+SEPTEMBER 2013
+SCALE
+DATE
+W.O.
+2.3
+PLATE
+CAD User: JJP  File Last Updated: October 03, 2013 1:54:52pm  Plot Date:  October 03, 2013 - 2:17:59pm
+File: T:\Drafting-9904\Working\6894-00TurtelBaySolarSystems\6894-00SitePlan.dwg\SP-2.3
+Plotter: GEO-DWG-TO-PDF.pc3  Plotstyle: GEO-No-Dithering-Blue-Boring.ctb
+KAHUKU, OAHU, HAWAII
+SITE PLAN
+TURTLE BAY SOLAR SYSTEMS
+GRAPHIC SCALE
+20
+0
+40
+80
+120 FT.
+REFERENCE: TURTLE BAY RESORT - GOLF 1 PHOTOVOLTAIC SYSTEM
+LAYOUT TRANSMITTED BY REC SOLAR ON JULY 30, 2013.
+APPENDIX  A 
+W.O. 6894-00 
+GEOLABS, INC. 
+OCTOBER 2013  Page A-1 
+Hawaii  California 
+A P P E N D I X   A 
+Field Exploration 
+The subsurface conditions at the project site were explored by excavating and 
+sampling 12 test pits (designated as WWTP-1 through WWTP-5, IRRG-1 through 
+IRRG-4 and GOLF-1 through GOLF-3) extending to depths of about 1.2 to 10.0 feet 
+below the existing ground surface.  The approximate boring locations are shown on the 
+Site Plans, Plates 2.1 through 2.3.  The test pits were excavated using a Case 580 
+Extendahoe combination loader-backhoe subcontracted from C. Fujimoto Contracting. 
+The materials encountered in the test pits were classified by visual and textural 
+examination in the field by our geologist, who monitored the excavation operations on a 
+near-continuous basis.  These classifications were further reviewed visually and by 
+testing in the laboratory.  Soils were classified in general conformance with the Unified 
+Soil Classification System.  Verbal descriptions of the materials encountered in the 
+borings are presented on the Logs of Test Pits, Plates A-1 through A-6. 
+W.O. 6894-00 
+GEOLABS, INC. 
+PLATE A-1 
+Hawaii  California 
+LOGS OF TEST PITS 
+Turtle Bay Solar Systems 
+Kahuku, Oahu, Hawaii 
+Approx. 
+      Test Pit  
+Depth Below 
+No. 
+Surface 
+Description 
+(feet) 
+Wastewater Treatment Plant Site 
+0 - 3.0 
+Dark brown CLAY (CH) with some Gravel, 
+occasional Cobbles (~5%) and Boulders (~5%), 
+hard, damp (FILL) 
+3.0 - 10.0  
+Dark brown CLAY (CH) with some Gravel, 
+occasional Cobbles (~5%) and Boulders (~5%), 
+very stiff to hard, moist (FILL) 
+Test pit terminated at 10.0 feet below ground 
+surface on August 28, 2013 
+Groundwater was not encountered. 
+WWTP-1 
+Approx. Elev. 
++15± feet MSL* 
+0 - 8.5 
+Dark brown CLAY (CH) with some Gravel, 
+occasional Cobbles (~5%) and Boulders (~5%), 
+very stiff to hard, dry to damp, friable (FILL)  
+Refusal on large boulder at 8.5 feet  
+Test pit terminated at 8.5 feet below ground 
+surface on August 28, 2013 
+Groundwater was not encountered. 
+WWTP-2 
+Approx. Elev. 
++15± feet MSL 
+Notes: 
+*Elevations estimated from Google Earth™. 
+Test pits excavated using a Case 580 loader-backhoe provided by Chuck 
+Fujimoto Co. 
+LOGS OF TEST PITS 
+Approx. 
+Test Pit 
+Depth Below 
+No. 
+Surface 
+Description 
+(feet) 
+W.O. 6894-00 
+GEOLABS, INC. 
+PLATE A-2 
+Hawaii  California 
+0 - 2.0 
+Dark brown CLAY (CH) with some Gravel, 
+occasional Cobbles (~5%) and Boulders (~5%), 
+very stiff to hard, dry to damp, friable (FILL)  
+2.0 - 6.0 
+Reddish brown Clayey SILT (MH), very stiff, moist, 
+plastic (ALLUVIUM)  
+6.0 - 8.0 
+Tan 
+to 
+light 
+brown 
+SANDSTONE, 
+hard 
+(CEMENTED DUNE SAND) 
+Refusal at 8.0 feet 
+Test pit terminated at 8.0 feet below ground 
+surface on August 28, 2013 
+. 
+Groundwater was not encountered. 
+WWTP-3 
+Approx. Elev. 
++10.0 feet MSL 
+0 - 1.0 
+Dark brown CLAY (CH) with some Gravel, 
+occasional Cobbles (~5%) and Boulders (~5%), 
+very stiff to hard, dry to damp, friable (FILL)  
+1.0 - 10.0 
+Dark tan to tan Clayey SAND (SC) with gravel, 
+medium dense to dense, moist (Weathered Coral 
+Formation)  
+Test pit terminated at 10.0 feet below ground 
+surface on August 28, 2013. 
+Groundwater was not encountered. 
+WWTP-4 
+Approx. Elev. 
++10.0 feet MSL 
+LOGS OF TEST PITS 
+Approx. 
+Test Pit 
+Depth Below 
+No. 
+Surface 
+Description 
+(feet) 
+W.O. 6894-00 
+GEOLABS, INC. 
+PLATE A-3 
+Hawaii  California 
+0 - 2.0 
+Dark brown CLAY (CH) with some Gravel, 
+occasional Cobbles (~5%) and Boulders (~5%), 
+very stiff to hard, dry, friable (FILL)  
+2.0 - 8.0  
+Dark brown CLAY (CH), very stiff, moist to wet, 
+plastic (ALLUVIUM)  
+8.0 - 10.0 
+Brown and tan mottled GRAVEL (GP) with 
+Cobbles, dense, wet (WEATHERED BASALT 
+ROCK FORMATION 
+Test pit terminated at 10.0 feet below ground 
+surface on August 28, 2013. 
+Groundwater observed at 9.0 feet at 0956 on 
+August 28, 2013. 
+WWTP-5 
+Approx. Elev. 
++10.0 feet MSL 
+AG Irrigation Site 
+0 - 2.0 
+Dark brown Clayey SILT (MH) with occasional 
+boulders (~5 %) and cobbles (~5 %), hard, dry, 
+friable (FILL) 
+2.0 - 3.0 
+Tan SANDSTONE, medium hard, weathered 
+(CEMENTED SAND DUNE) 
+Refusal at 3.0 feet 
+Test pit terminated at 3.0 feet below ground 
+surface on August 28, 2013 
+Groundwater was not encountered. 
+IRRG-1 
+Approx. Elev. 
++5.0 feet MSL 
+LOGS OF TEST PITS 
+Approx. 
+Test Pit 
+Depth Below 
+No. 
+Surface 
+Description 
+(feet) 
+W.O. 6894-00 
+GEOLABS, INC. 
+PLATE A-4 
+Hawaii  California 
+0 - 2.0 
+Dark brown Silty CLAY (CH), very stiff, dry to 
+damp, friable (FILL) 
+2.0 - 3.0  
+Gray COBBLES, with some Boulders and 
+miscellaneous construction debris, loose to 
+medium dense, dry, friable (RUBBISH FILL) 
+3.0 - 4.5 
+Light gray Sandy SILT with some gravel, stiff, wet 
+(MARSH DEPOSIT) 
+4.5 - 5.0 
+Tan to white CORAL ALGAL LIMESTONE, hard, 
+moderately weathered (REEF FORMATION) 
+Test pit terminated at 5.0 feet below ground 
+surface on August 28, 2013. 
+Groundwater observed at 4.5 feet at 1150 on 
+August 28, 2013. 
+IRRG-2 
+Approx. Elev. 
++5.0± feet MSL 
+0 - 1.0 
+Dark brown Clayey SILT (MH) with occasional 
+boulders (~5 %) and cobbles (~5 %), hard, dry, 
+friable (FILL) 
+1.0 - 3.0 
+Dark gray organic SILT, soft to medium still, wet 
+(MARSH DEPOSIT) 
+3.0 - 8.0 
+Tan to gray Silty GRAVEL with Sand, medium 
+dense to dense, saturated  (FINGER CORAL 
+FORMATION) 
+Test pit terminated at 8.0 feet below ground 
+surface on August 28, 2013. 
+Groundwater observed at 5.0 feet at 1132 on 
+August 28, 2013. 
+IRRG-3 
+Approx. Elev. 
++9.1± feet MSL 
+LOGS OF TEST PITS 
+Approx. 
+Test Pit 
+Depth Below 
+No. 
+Surface 
+Description 
+(feet) 
+W.O. 6894-00 
+GEOLABS, INC. 
+PLATE A-5 
+Hawaii  California 
+0 - 1.2 
+Dark brown Clayey SILT (MH) with occasional 
+boulders (~5 %) and cobbles (~5 %), hard, dry, 
+friable (FILL) 
+1.2 - 1.6  
+Gray CONCRETE 
+Refusal at 1.6 feet 
+Test pit terminated at 1.6 feet below ground 
+surface on August 28, 2013. 
+Groundwater was not encountered. 
+IRRG-4 
+Approx. Elev. 
++8.5± feet MSL 
+Golf Maintenance Site 
+0 - 2.5 
+Dark brown Clayey SILT (MH) with Gravel and 
+occasional and cobbles (~5 %), very stiff to hard, 
+dry to damp, friable (FILL) 
+2.5 - 3.5 
+Reddish tan SAND, medium dense, moist (DUNE 
+SAND). 
+3.5 - 4.0 
+Light gray CORAL ALGAL LIMESTONE, hard, 
+slightly weathered (REEF FORMATION) 
+4.0 - 8.0 
+Light gray Gravelly SAND, loose to medium 
+dense, saturated (REEF DETRITUS) 
+Test pit terminated at 8.0 feet below ground 
+surface on August 28, 2013. 
+Groundwater observed at 7.0 feet at 1415 on 
+August 28, 2013. 
+GOLF-1 
+Approx. Elev. 
++10.0± feet MSL 
+LOGS OF TEST PITS 
+Approx. 
+Test Pit 
+Depth Below 
+No. 
+Surface 
+Description 
+(feet) 
+W.O. 6894-00 
+GEOLABS, INC. 
+PLATE A-6 
+Hawaii  California 
+0 - 2.5 
+Dark brown Clayey SILT (MH) with Gravel and 
+occasional and cobbles (~5 %), very stiff to hard, 
+dry to damp, friable (FILL) 
+2.5 - 3.5 
+Reddish tan SAND, medium dense, moist (DUNE 
+SAND) 
+3.5 - 4.0 
+Tan SANDSTONE, hard, slightly weathered 
+(CEMENTED DUNE SAND) 
+Refusal at 4.0 feet 
+Test pit terminated at 4.0 feet below ground 
+surface on August 28, 2013. 
+Groundwater was not encountered. 
+GOLF-2 
+Approx. Elev. 
++10.0± feet MSL 
+0 - 2.5 
+Dark brown Clayey SILT (MH) with Gravel and 
+occasional and cobbles (~5 %), very stiff to hard, 
+dry to damp, friable (FILL) 
+2.5 - 3.5 
+Reddish tan SAND, medium dense, moist (DUNE 
+SAND) 
+3.5 - 4.0 
+Tan SANDSTONE, hard, slightly weathered 
+(CEMENTED DUNE SAND) 
+Refusal at 4.0 feet 
+Test pit terminated at 4.0 feet below ground 
+surface on August 28, 2013. 
+Groundwater was not encountered. 
+GOLF-3 
+Approx. Elev. 
++10.0± feet MSL 
+APPENDIX  B 
+W.O. 6894-00 
+GEOLABS, INC. 
+OCTOBER 2013  Page B-1 
+Hawaii  California 
+A P P E N D I X   B 
+Laboratory Tests 
+Two Atterberg Limits test (ASTM D 4318) were performed on selected soil 
+samples to measure the liquid and plastic limits of the near-surface soils and to aid in 
+the soil classification and identification. It also provides an indication of the shrink and 
+swell potential of the surface soils from changes in moisture content. The test results 
+are presented on Plate B-1. 
+One Sieve Analysis test (ASTM C117 & C 136) was performed on a selected soil 
+sample to evaluate the gradation characteristics of the soils and to aid in soil 
+classification. The test result is presented on Plate B-2. 
+Three pH (ASTM G51) tests and minimum resistivity (ASTM G57) tests were 
+performed on selected soil samples. The test results are presented on Plate B-3. 
+0
+10
+20
+30
+40
+50
+60
+70
+80
+90
+100
+0
+20
+40
+60
+80
+100
+120
+PI
+Depth (ft)
+Sample
+LL
+PL
+Description
+70
+99
+3.0-10.0
+7.5-8.0
+ML or OL
+CL-ML
+CL or OL
+CH or OH
+26
+25
+ATTERBERG LIMITS TEST RESULTS - ASTM D 4318
+Dark brown clay (CH) with little sand and gravel
+Dark brown clay (CH)  with traces of gravel and sand
+B - 1
+MH or OH
+44
+74
+LIQUID LIMIT
+PLASTICITY INDEX
+WWTP-1
+WWTP-5
+Plate
+W.O. 6894-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+TURTLE BAY SOLAR SYSTEMS
+KAHUKU, OAHU, HAWAII
+G_ATTERBERG  6894-00.GPJ  GEOLABS.GDT  10/7/13
+0
+5
+10
+15
+20
+25
+30
+35
+40
+45
+50
+55
+60
+65
+70
+75
+80
+85
+90
+95
+100
+0.001
+0.01
+0.1
+1
+10
+100
+3/8
+0.7
+3.9
+HYDROMETER
+3
+GRAIN SIZE IN MILLIMETERS
+PERCENT FINER BY WEIGHT
+100
+coarse
+1/2
+Sample
+0.273
+0.624
+B - 2
+PI
+LL
+PL
+coarse
+1
+1.5
+3
+2
+0.162
+40
+Depth (ft)
+%Gravel
+19.7
+76.7
+%Sand
+COBBLES
+Sample
+D30 (mm)
+140
+20
+Description
+Cu
+GRAVEL
+U.S. SIEVE NUMBERS
+D10 (mm)
+Orangish tan sand (SP) with a little gravel
+16
+fine
+37.5
+Cc
+3/4
+fine
+SILT OR CLAY
+medium
+GRAIN SIZE DISTRIBUTION - ASTM C 117 & C 136
+SAND
+%Fine
+60
+4
+30
+200
+4
+6
+3.6
+Depth (ft)
+810 14
+50
+U.S. SIEVE OPENING IN INCHES
+6
+D60 (mm)
+D100 (mm)
+G1
+2.5-4.0
+2.5-4.0
+G1
+Plate
+W.O. 6894-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+TURTLE BAY SOLAR SYSTEMS
+KAHUKU, OAHU, HAWAII
+G_GRAIN_SIZE  6894-00.GPJ  GEOLABS.GDT  10/3/13
+G1
+2.5 - 4.0
+7.31
+5,700
+WWTP-1
+3.0 - 10.0
+7.35
+2,600
+WWTP-5
+7.5 - 8.0
+7.23
+2,400
+SUMMARY OF CORROSIVITY TESTS
+B - 3
+Location
+pH Value
+(feet)
+Depth
+(ohm-cm)
+Minimum Resistivity Chloride Content
+(mg/kg)
+(mg/kg)
+Sulfate Content
+Chloride and Sulfate Content Tests Performed by TestAmerica Laboratories, Inc.
+TEST METHODS
+ASTM G51
+pH Value
+ASTM G57
+Minimum Resistivity
+Chloride Content
+EPA 300.0
+Sulfate Content
+EPA 300.0
+ND: Not Detected Within Reporting Limits
+Plate
+W.O. 6894-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+TURTLE BAY SOLAR SYSTEMS
+KAHUKU, OAHU, HAWAII
+G_SUMMARY OF CORROSIVITY TESTS  6894-00.GPJ  GEOLABS.GDT  10/3/13

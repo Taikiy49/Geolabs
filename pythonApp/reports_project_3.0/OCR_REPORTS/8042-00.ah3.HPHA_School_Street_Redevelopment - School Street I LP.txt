@@ -1,0 +1,8056 @@
+GEOTECHNICAL ENGINEERING EXPLORATION 
+HPHA SCHOOL STREET REDEVELOPMENT 
+HONOLULU, OAHU, HAWAII 
+W.O. 8042-00    AUGUST 3, 2022 
+Prepared for 
+SCHOOL STREET I, LP 
+GEOLABS, INC. 
+Geotechnical Engineering and Drilling Services 
+GEOTECHNICAL ENGINEERING EXPLORATION
+HPHA SCHOOL STREET REDEVELOPMENT
+HONOLULU, OAHU, HAWAII
+W.O. 8042-00 AUGUST 3, 2022
+Prepared for
+SCHOOL STREET I, LP
+LICENSED
+PROFESSIONAL
+ENGINEER
+THIS WORK WAS PREPARED BY
+ME OR UNDER MY SUPERVISION.
+4-30-24
+SIGNATURE EXPIRATION DATE
+OF THE LICENSE
+GEOLABS, INC.
+Geotechnical Engineering and Drilling Services
+94-429 Koaki Street, Suite 200 © Waipahu, HI 96797
+Hawaii © California
+GEOLABS, INC.
+Geotechnical Engineering and Drilling Services
+August 3, 2022
+W.O. 8042-00
+Mr. Mohannad H. Mohanna
+School Street I, LP
+330 W. Victoria Street
+Gardena, CA 90248
+Dear Mr. Mohanna:
+Geolabs, Inc. is pleased to submit our report entitled “Geotechnical Engineering
+Exploration, HPHA School Street Redevelopment, Honolulu, Oahu, Hawaii,” prepared in
+support of the design of the new redevelopment. This report was previously prepared for
+Retirement Housing Foundation and is re-addressed to School Street |, LP as requested
+by Hawaii Public Housing Authority (HPHA).
+Our work for this geotechnical engineering exploration was performed in general
+accordance with the scope of services outlined in our geotechnical engineering services
+fee proposal to Retirement Housing Foundation dated February 22, 2019 and the
+technical requirements contained in the Consultant Agreement entered into on
+February 19, 2020.
+Please note that the soil and rock samples recovered during our field exploration
+(remaining after testing) will be stored for a period of two months from the date of this
+report. The samples will be discarded after that date unless arrangements are made for
+a longer sample storage period. Please contact our office for alternative sample storage
+requirements, if appropriate.
+Detailed discussion and specific design recommendations are contained in the
+body of the report. If there is any point that is not clear, please contact our office.
+Very truly yours,
+GEOLABS, INC.
+,
+Robin M. Lim, P.E.
+President
+RML:GB:AH:rl
+94-429 Koaki Street, Suite 200 * Waipahu, Hawaii 96797
+Telephone: (808) 841-5064 ¢ E-mail: hawaii@geolabs.net
+Hawaii © California
+W.O. 8042-00 
+GEOLABS, INC. 
+Page i  
+Hawaii • California 
+GEOTECHNICAL ENGINEERING EXPLORATION 
+HPHA SCHOOL STREET REDEVELOPMENT 
+HONOLULU, OAHU, HAWAII 
+W.O. 8042-00    AUGUST 3, 2022 
+TABLE OF CONTENTS 
+SUMMARY OF FINDINGS AND RECOMMENDATIONS .............................................. iii 
+1. 
+GENERAL ............................................................................................................ 1 
+1.1 
+Project Considerations ............................................................................... 1 
+1.2 
+Purpose and Scope ................................................................................... 2 
+2. 
+SITE CHARACTERIZATION ................................................................................ 4 
+2.1 
+Regional Geology ...................................................................................... 4 
+2.2 
+Site Description .......................................................................................... 5 
+2.3 
+Subsurface Conditions ............................................................................... 5 
+2.4 
+Seismic Design Considerations ................................................................. 7 
+2.4.1 Earthquakes and Seismicity ............................................................ 7 
+2.4.2 Liquefaction Potential ...................................................................... 8 
+2.4.3 Soil Profile ....................................................................................... 9 
+3. 
+DISCUSSION AND RECOMMENDATIONS ...................................................... 11 
+3.1 
+Building Foundations (Phase 1A and Phase 1B) ..................................... 11 
+3.2 
+Foundation Probing (Phase 1A and Phase 1B) ....................................... 14 
+3.3 
+Building Foundations (Phase 2 and Phase 3) .......................................... 15 
+3.3.1 Drilled Shaft Foundations .............................................................. 16 
+3.3.2 Micropile Foundations ................................................................... 17 
+3.4 
+Slabs-On-Grade ....................................................................................... 17 
+3.5 
+Retaining Structures ................................................................................ 19 
+3.5.1 Retaining Structure Foundations ................................................... 19 
+3.5.2 Static Lateral Earth Pressures....................................................... 20 
+3.5.3 Drainage ....................................................................................... 21 
+3.6 
+Soil/Rock Nail Retaining Wall .................................................................. 21 
+3.6.1 Soil/Rock Nails .............................................................................. 22 
+3.6.2 Soil Nail Installation ....................................................................... 23 
+3.6.3 Soil Nail Testing ............................................................................ 23 
+3.6.4 Shotcrete Facing ........................................................................... 24 
+3.6.5 Drainage ....................................................................................... 24 
+3.7 
+Site Grading ............................................................................................. 24 
+3.7.1 Site Preparation ............................................................................ 25 
+3.7.2 Fills and Backfills ........................................................................... 26 
+3.7.3 Fill Placement and Compaction Requirements ............................. 27 
+3.7.4 Cut and Fill Slopes ........................................................................ 27 
+3.8 
+Excavation ............................................................................................... 28 
+3.9 
+Field Infiltration Testing ............................................................................ 29 
+3.10 
+Pavements ............................................................................................... 30 
+TABLE OF CONTENTS 
+Page 
+W.O. 8042-00 
+GEOLABS, INC. 
+Page ii 
+Hawaii • California 
+3.11 
+Underground Utility Lines ......................................................................... 32 
+3.12 
+Corrosion Potential .................................................................................. 33 
+3.13 
+Design Review ......................................................................................... 34 
+3.14 
+Post-Design Services/Services During Construction ............................... 34 
+4. 
+LIMITATIONS ..................................................................................................... 35 
+CLOSURE ..................................................................................................................... 37 
+PLATES 
+Project Location Map ................................................................................... Plate 1 
+Existing Conditions Plan .............................................................................. Plate 2 
+Site Plan ...................................................................................................... Plate 3 
+APPENDIX A 
+Field Exploration ....................................................................... Pages A-1 and A-2 
+Soil Log Legend ..................................................................................... Plate A-0.1 
+Soil Classification Log Key .................................................................... Plate A-0.2 
+Rock Log Legend .................................................................................. Plate A-0.3 
+Logs of Borings ....................................................................... Plates A-1 thru A-18 
+APPENDIX B 
+Seismic Shear Wave Velocity Tests ........................................................ Page B-1 
+Shear Wave Velocity Test Data .......................................... Plates B-1.1 thru B-1.4 
+APPENDIX C 
+Laboratory Tests ....................................................................... Pages C-1 and C-2 
+Laboratory Test Data .............................................................. Plates C-1 thru C-15 
+APPENDIX D 
+Field Infiltration Tests .............................................................................. Page D-1 
+Field Infiltration Test Data ......................................................... Plates D-1 thru D-8 
+APPENDIX E 
+Photographs of Core Samples ................................................ Plates E-1 thru E-23 
+W.O. 8042-00 
+GEOLABS, INC. 
+Page iii 
+Hawaii • California 
+GEOTECHNICAL ENGINEERING EXPLORATION 
+HPHA SCHOOL STREET REDEVELOPMENT 
+HONOLULU, OAHU, HAWAII 
+W.O. 8042-00    AUGUST 3, 2022 
+SUMMARY OF FINDINGS AND RECOMMENDATIONS 
+Based on our field exploration, the subsurface conditions at the project site are 
+variable and quite complex. generally encountered fills placed over alluvial and colluvial 
+soil deposits overlying saprolites and basalt formation extending to the maximum depth 
+explored of about 101 feet below the existing ground surface. We encountered 
+groundwater in the drilled borings at depths ranging from about 19.2 to 28.6 feet below 
+the existing ground surface. The groundwater levels encountered generally correspond 
+to between about Elevations +19.5 and +26.5 feet MSL at the time of our field exploration. 
+It should be noted that groundwater levels are subject to change due to rainfall, time of 
+year, seasonal precipitation, surface water runoff, and other factors. 
+Our field exploration generally encountered basalt formation at variable depths 
+below the existing ground surface across the project site. Basalt formation was 
+encountered at or very near the existing ground surface and sloping down from the north 
+toward the south; therefore, the top of the basalt rock formation extends deeper toward 
+the southern portion of the redevelopment site. Based on the subsurface conditions at the 
+site and anticipated structural loads per structure, we envision the proposed structures 
+may be supported on varying foundation systems consisting of mat foundations, shallow 
+foundations, and drilled shafts foundations depending on each structure’s location and 
+loading. Anticipated foundation systems per phase of the redevelopment is provided 
+below. 
+1. 
+Phase 1A – Shallow Foundations 
+2. 
+Phase 1B – Shallow Foundations 
+3. 
+Phase 2 – Drilled Shaft Foundations or Micropile Foundations 
+4. 
+Phase 3 – Drilled Shaft Foundations or Micropile Foundations 
+The text of this report should be referred to for detailed discussion and specific 
+design recommendations. 
+END OF SUMMARY OF FINDINGS AND RECOMMENDATIONS 
+W.O. 8042-00 
+GEOLABS, INC. 
+Page 1 
+Hawaii • California  
+SECTION 1.  GENERAL 
+This report presents the results of our geotechnical engineering exploration and 
+engineering analyses performed in support of the design of the HPHA School Street 
+Redevelopment project at 1002 North School Street in the Kalihi area of Honolulu on the 
+Island of Oahu, Hawaii. The project location and general vicinity are shown on the Project 
+Location Map, Plate 1. 
+This 
+report 
+summarizes 
+the 
+findings 
+and 
+presents 
+our 
+geotechnical 
+recommendations based on our field exploration, laboratory testing, and engineering 
+analyses. The recommendations presented herein are intended for the design of building 
+foundations, slabs-on-grade, retaining structures, site grading, pavements, and 
+underground utility lines only. The findings and recommendations presented herein are 
+subject to the limitations noted at the end of this report. 
+1.1 
+Project Considerations 
+Based on the information provided, the proposed redevelopment project includes 
+the construction of low and high-rise building structures for the HPHA Administrative 
+Office Building, senior housing dwelling units, commercial space for lease, and senior 
+community/flex multi-use space. The redevelopment project will encompass 
+approximately 6.5 acres of the approximately 12-acre lot and will be divided into 
+four phases, designated as Phases 1A, 1B, 2, and 3. The available details for each phase 
+are provided below. 
+Phase 
+Proposed Development 
+1A 
+17-story, L-shaped residential building with abutting multi-story parking 
+structure 
+1B 
+Low-rise HPHA Administrative Office Building with abutting parking 
+structure 
+2 
+17-story, L-shaped commercial and residential building with abutting 
+multi-story parking structure 
+3 
+17-story, S-shaped commercial and residential building with abutting 
+multi-story parking structure 
+SECTION 1. GENERAL 
+W.O. 8042-00 
+GEOLABS, INC. 
+Page 2 
+Hawaii • California 
+The overall project site is located to the northwest of the intersection between 
+School Street and Lanakila Avenue in the Kalihi area of Honolulu on the Island of Oahu, 
+Hawaii. It is bounded, in a clockwise direction from the north, by a housing complex (to 
+the north and northeast), Lanakila Avenue (to the southeast), School Street (southwest), 
+and private residences (northwest). The proposed low-rise and high-rise building 
+structures on the project site are shown on the Site Plan (Plate 2). 
+The project site currently is occupied by one-story portable building structures, 
+offices, and garages. Ahiahi Street traverses the project site generally in a north-south 
+direction. Based on the grading plans provided by Hida, Okamoto & Associates, Inc., we 
+understand Ahiahi Street will be redirected along the eastern boundary of the project site. 
+In addition, we anticipate a stormwater runoff disposal system would be needed to 
+meet the drainage requirements for Low Impact Development (LID) and/or Green 
+Infrastructure. 
+1.2 
+Purpose and Scope 
+The purpose of our field exploration was to obtain an overview of the surface and 
+subsurface conditions to develop a generalized subsurface data set to formulate 
+geotechnical recommendations for design of the project. The scope of work for this 
+exploration included the following tasks and work efforts: 
+1. 
+Research and review of the available plans and in-house soil and geologic 
+information related to the project area. 
+2. 
+Coordination of boring stakeout and underground utility clearance by our 
+engineer. 
+3. 
+Mobilization and demobilization of a truck-mounted drill rig and 
+two operators to the project site and back. 
+4. 
+Drilling and sampling of ten boreholes extending to depths ranging from 
+about 30.5 to 101 feet below the existing ground surface. In addition, we 
+also conducted drilling and sampling of eight boreholes each extending to 
+a depth of about 5 feet below the existing ground surface for infiltration 
+testing. A total of 692.5 lineal feet of drilling and sampling was performed 
+as part of our of field exploration. 
+SECTION 1. GENERAL 
+W.O. 8042-00 
+GEOLABS, INC. 
+Page 3 
+Hawaii • California 
+5. 
+Performance of seismic shear wave velocity testing within one of the 
+borings drilled to a depth of about 101 feet below the existing pavement 
+surface. 
+6. 
+Performance of eight infiltration tests at the project site to evaluate the 
+subsurface infiltration characteristics to provide information in support of the 
+design of the stormwater runoff disposal system. 
+7. 
+Coordination of the field exploration, logging of the borings, and infiltration 
+testing by our geologist. 
+8. 
+Laboratory testing of selected soil and rock core samples obtained during 
+the field exploration as an aid in classifying the materials encountered and 
+evaluating their engineering properties. 
+9. 
+Analyses of the field and laboratory test data to formulate geotechnical 
+recommendations in support of the design of foundations, slabs on-grade, 
+retaining structures, site grading, and pavements for the proposed 
+redevelopment project. 
+10. 
+Preparation of this formal report summarizing our work and presenting our 
+findings and geotechnical recommendations. 
+11. 
+Coordination of our overall work on the project by our senior engineer. 
+12. 
+Consultation and attendance of meetings by our principal engineer and our 
+project engineer. 
+13. 
+Quality 
+assurance 
+and 
+client/design 
+team 
+consultation 
+by 
+our 
+principal engineer. 
+14. 
+Miscellaneous work efforts such as drafting, word processing, clerical 
+support, and reproductions. 
+Detailed descriptions of our field exploration methodology and the Logs of Borings 
+are presented in Appendix A. Results of the seismic shear wave velocity testing are 
+presented in Appendix B. Results of the laboratory tests performed on selected soil and 
+rock core samples obtained from our field exploration are presented in Appendix C. 
+Results of the infiltration tests performed at selected locations are presented in 
+Appendix D, and photographs of the core samples are presented in Appendix E. 
+END OF GENERAL 
+W.O. 8042-00 
+GEOLABS, INC. 
+Page 4 
+Hawaii • California  
+SECTION 2.  SITE CHARACTERIZATION 
+Of interest to our geotechnical analysis for foundation design of the low-rise and 
+high-rise buildings planned for this project are the subsurface materials encountered at 
+the project site, the engineering properties of the materials encountered, and the 
+variability of the subsurface conditions across the project site. Therefore, the following 
+subsections provide a description of the geologic setting of the project site, the surface 
+and subsurface conditions encountered at the site, and a discussion on the items needed 
+for seismic design. 
+2.1 
+Regional Geology 
+The Island of Oahu was built by the extrusion of basaltic lavas from the Waianae 
+and Koolau Shield Volcanoes. The older Waianae Volcano is estimated to be middle to 
+late Pliocene in age and the younger Koolau Volcano is estimated to be late Pliocene to 
+early Pleistocene in age. After a long period of volcanic inactivity, during which time 
+erosion incised deep valleys into the Koolau Shield, volcanic activity returned with a series 
+of lava flows followed by cinder and tuff cone formations. These younger volcanic series 
+are referred to as the Honolulu Volcanic Series. 
+The project area is located on the southern flank of the elongated Koolau Volcanic 
+Range, which forms the southern portion of the Island of Oahu. The range was formed 
+from basalt lava flows originated from a rift zone roughly paralleling the existing mountain 
+trends. During the late Tertiary and Pleistocene Epoch (Ice Age), deep valleys including 
+the Nuuanu Valley were eroded by streams. During higher stands of the sea level in the 
+Pleistocene Epoch, the valleys were in-filled with alluvial sediments to the high sea level 
+stands.  
+Underlying these alluvial sediments is the older volcanic lava rock formation. In 
+situ chemical weathering of the Koolau lava flows has occurred for the last 1 to 2 million 
+years. The weathering process has formed a mantle of residual and saprolitic soils. In 
+general, saprolite is composed mainly of silty material while residual soils are more 
+clayey. Both residual and saprolitic soils are typical of the in-situ weathering of volcanic 
+rocks. The residual and saprolitic soils grade to basaltic rock formation with increased 
+SECTION 2. SITE CHARACTERIZATION 
+W.O. 8042-00 
+GEOLABS, INC. 
+Page 5 
+Hawaii • California 
+depth. Fills placed during the initial development of the land may underlie the ground 
+surface at portions of the project site. 
+2.2 
+Site Description 
+The overall project site is situated at the north corner of the intersection between 
+School Street and Lanakila Avenue in the Kalihi area of Honolulu on the Island of Oahu, 
+Hawaii. The site is bounded, in a clockwise direction from the north, by a housing complex 
+(to the north and northeast), Lanakila Avenue (to the southeast), School Street 
+(southwest), and private residences (northwest). The proposed low-rise and high-rise 
+building structures on the project site are shown on the Site Plan (Plate 2). 
+The property, designated as TMK: 1-6-009: 003, is generally oblong shaped and 
+encompasses approximately 12 acres in land area. The project site currently is occupied 
+by one-story portable building structures, offices, garages, and open paved parking areas. 
+Access to the existing building structures is via Ahiahi Street off Lanakila Avenue. 
+Ahiahi Street traverses the project site generally in a north-south direction.  
+Based on the topographic survey map, the lowest point on the project site appears 
+to be at about +40 feet MSL (Mean Sea Level datum) near the intersection of School 
+Street and Lanakila Avenue. The project site slopes up to the northwest through northeast 
+portions of the project site to about +70 feet MSL.   
+2.3 
+Subsurface Conditions 
+Our field exploration consisted of drilling and sampling eighteen borings to develop 
+a generalized soil and/or rock data set at the project site. Ten borings, designated as 
+Boring Nos. 1 through 10, were drilled and sampled to depths between about 30.5 and 
+101 feet below the existing ground surface. Eight shallow borings, designated as borings 
+LID-1 through LID-8, were drilled to a depth of approximately 5 feet below the existing 
+ground surface to perform infiltration tests to obtain subsurface infiltration information in 
+support of the planning of a stormwater runoff disposal system. 
+Based on the results obtained from our field exploration, the project site generally 
+is underlain by fills, alluvial soil deposits and colluvial soil deposits overlying saprolites 
+and basalt formation. The fill materials generally consisted of sandy gravel and stiff to 
+SECTION 2. SITE CHARACTERIZATION 
+W.O. 8042-00 
+GEOLABS, INC. 
+Page 6 
+Hawaii • California 
+very stiff silty and sandy clays extending to depths between about 0.5 and 4 feet below 
+the existing ground surface. The fill materials were underlain by alluvial and colluvial soil 
+deposits generally consisting of stiff to very stiff silty clays and very dense 
+cobbles/boulders extending to depths between about 1 and 48 feet below the existing 
+ground surface. 
+Beneath the alluvial and colluvial soil deposits, our borings encountered saprolitic 
+materials consisting of very stiff to hard clayey silts and medium dense silty sands 
+extending to depths between approximately 5.5 and 20.5 feet below the existing ground 
+surface. Underlying the saprolites, our borings encountered soft to very hard basalt 
+formation extending to the maximum depth explored of about 101 feet below the existing 
+ground surface. It should be noted that intermittent clinker layers, consisting of sands and 
+gravels, and some voids were encountered within the basalt formation in our borings at 
+various depths. 
+The subsurface conditions at the project site are variable and highly complex. The 
+basalt formation was encountered at variable depths across the project site. Based on 
+our field exploration, basalt formation was encountered near the ground surface at the 
+northwestern area of the site while basalt formation was encountered at a depth of about 
+48 feet below the existing ground surface at the southeastern area of the site.  In general, 
+the depth to basalt formation increases in the easterly to southeasterly direction.  
+We encountered groundwater in the drilled borings at depths ranging from about 
+19 to 28.6 feet below the existing ground surface. The groundwater levels encountered 
+in the borings generally correspond to about Elevations +19.5 and +26.5 feet MSL at the 
+time of our field exploration. The groundwater levels encountered appears to be a 
+perched groundwater condition. It should be noted that groundwater levels are subject to 
+change due to rainfall, time of year, seasonal precipitation, surface water runoff, and other 
+factors. 
+Detailed descriptions of the field exploration methodology and graphic 
+representations of the materials encountered in the borings are presented on the Logs of 
+Borings in Appendix A. We performed laboratory tests on selected soil and rock core 
+SECTION 2. SITE CHARACTERIZATION 
+W.O. 8042-00 
+GEOLABS, INC. 
+Page 7 
+Hawaii • California 
+samples obtained during our field exploration, and the test results are presented in 
+Appendix C. Results of the infiltration tests performed at selected locations are presented 
+in Appendix D, and photographs of the core samples are presented in Appendix E. 
+2.4 
+Seismic Design Considerations 
+The project will be designed in accordance with the requirements of the 
+International Building Code, 2018 Edition (IBC 2018) with the pending Honolulu 
+Amendments. Based on the IBC 2018, the project site may be subject to seismic activity, 
+and seismic design considerations will need to be addressed. The following sections 
+provide discussions on the seismicity, the potential for liquefaction, and soil profile for 
+seismic design at the project site. 
+2.4.1 Earthquakes and Seismicity 
+In general, earthquakes that occur throughout the world are caused solely by shifts 
+in the tectonic plates. In contrast, earthquake activity in Hawaii is linked primarily 
+to volcanic activity. Therefore, earthquake activity in Hawaii generally occurs 
+before or during volcanic eruptions. In addition, earthquakes may result from the 
+underground movement of magma that comes close to the surface but does not 
+erupt. The Island of Hawaii experiences thousands of earthquakes each year, but 
+most of the earthquakes are so small that they can only be detected by sensitive 
+instruments. However, some of the earthquakes are strong enough to be felt, and 
+a few cause minor to moderate damage. 
+In general, earthquakes (associated with volcanic activity) are most common on 
+the Island of Hawaii. Earthquakes that are directly associated with the movement 
+of magma are concentrated beneath the active Kilauea and Mauna Loa Volcanoes 
+on the Island of Hawaii. Because the majority of the earthquakes in Hawaii 
+(over 90 percent of earthquakes) are related to volcanic activity, the risk of high 
+seismic activity and degree of ground shaking diminishes with increased distance 
+from the Island of Hawaii. The Island of Hawaii has experienced numerous 
+earthquakes greater than Magnitude 5 (M5+); however, earthquakes are not 
+confined only to the Island of Hawaii. 
+SECTION 2. SITE CHARACTERIZATION 
+W.O. 8042-00 
+GEOLABS, INC. 
+Page 8 
+Hawaii • California 
+To a lesser degree, the Island of Maui has experienced numerous earthquakes 
+greater than Magnitude 5. Therefore, moderate to strong earthquakes have 
+occurred in the County of Maui. The effects of earthquakes occurring on the 
+Islands of Hawaii and Maui may be felt on the Island of Oahu. For example, several 
+small landslides occurred on the Island of Oahu as a result of the Maui Earthquake 
+of 1938 (M6.8). In addition, some houses on the Island of Oahu were reportedly 
+damaged as a result of the Lanai Earthquake of 1871 (M7+). 
+Due to the relatively short period of documented earthquake monitoring in the 
+State of Hawaii, information pertaining to earthquakes that were felt on the Island 
+of Oahu may not be complete. In general, over the last 150 years of recorded 
+history, we are not aware of reported earthquakes greater than Magnitude 6 
+occurring on the Island of Oahu. Based on available information, we understand 
+an earthquake of about Magnitude 5.6 occurred on June 28, 1948 in the vicinity of 
+the Island of Oahu, possibly along the hypothesized and controversial Diamond 
+Head Fault feature.  
+The Diamond Head Fault feature is believed to extend northeasterly away from the 
+southeastern tip of the Island of Oahu. The Diamond Head Fault feature may be 
+related to the widely documented Molokai Fracture Zone located on the sea floor 
+in the vicinity of the Hawaiian Islands. Despite only the moderate tremor intensity, 
+the resulting damage was reportedly widespread and included broken windows, 
+ruptured masonry building walls, and a broken underground water main. In 
+addition, some areas on the Island of Oahu, including the Tantalus, Iwilei, and 
+Tripler areas, reported more intense ground shaking, severe enough to have 
+cracked reinforced concrete. 
+2.4.2 Liquefaction Potential 
+Soil liquefaction is a condition where saturated cohesionless soils near the ground 
+surface undergo a substantial loss of strength due to the build-up of excess pore 
+water pressures resulting from cyclic stress applications induced by earthquakes. 
+Soils most susceptible to liquefaction are loose, uniformly graded, fine-grained 
+sands and loose silts with little cohesion. 
+SECTION 2. SITE CHARACTERIZATION 
+W.O. 8042-00 
+GEOLABS, INC. 
+Page 9 
+Hawaii • California 
+Based on the subsurface conditions encountered in our field exploration, the 
+geology in the area, and our engineering analyses, the potential for soil liquefaction 
+at the project site is non-existent due to the presence of stiff and/or dense soils 
+underlain by basalt formation extending to the maximum depth explored. 
+Therefore, the potential for liquefaction is not a design consideration at this project 
+site. 
+2.4.3 Soil Profile 
+Seismic shear wave velocity profiling using seismic cone penetration testing 
+(SCPT) equipment was performed in an effort to closely analyze the seismic 
+design considerations at the site. Shear wave velocity testing using the seismic 
+cone penetration test method was performed at Boring No. 6. 
+To analyze the subsurface soil parameters for seismic design considerations, the 
+shear wave velocity profiling was performed at discrete intervals extending to 
+approximately 100 feet below the existing ground surface. Based on the shear 
+wave velocity profiling, the weighted average shear wave velocity for the 
+subsurface materials within the upper 100 feet of the profile at the Boring No. 6 
+location is on the order of about 2,476 feet per second.  
+The Phase 1A and Phase 1B portion of the proposed redevelopment generally 
+encountered basalt formation at depths of about 10 feet or less below the existing 
+ground surface. Therefore, we believe the Phase 1A and Phase 1B portion of the 
+redevelopment project may be classified from a seismic analysis standpoint as 
+being a “Rock” site corresponding to a Site Class “B” soil profile based on 
+Section 20.3 (Table 20.3-1) of the American Society of Civil Engineers (ASCE) 
+Minimum Design Loads for Buildings and Other Structures, 2016 Edition 
+(ASCE 7-16). It should be noted that we anticipate the footings for the Phase 1A 
+and Phase 1B buildings will be placed at an elevation that is within 10 feet of the 
+top of the basalt formation. 
+Based on the shear wave velocity test results, we believe the Phase 2 and Phase 3 
+portion of the redevelopment project may be classified from a seismic analysis 
+SECTION 2. SITE CHARACTERIZATION 
+W.O. 8042-00 
+GEOLABS, INC. 
+Page 10 
+Hawaii • California 
+standpoint as being a “Very Dense Soil and Soft Rock” site corresponding to a Site 
+Class “C” soil profile based on ASCE 7-16.  
+The following seismic design parameters were estimated and may be used for 
+seismic analysis for Phase 1A and Phase 1B (Site Class “B”) structures and 
+Phase 2 and Phase 3 (Site Class “C”) structures of the project. 
+SEISMIC DESIGN PARAMETERS 
+Parameter 
+Phases 
+1A & 1B 
+Phases 
+2 & 3 
+MCE Peak Bedrock Acceleration, PBA (Site Class B) 
+0.266g 
+0.266g 
+MCE Spectral Response Acceleration (Site Class B), SS 
+0.577g 
+0.577g 
+MCE Spectral Response Acceleration (Site Class B), S1 
+0.168g 
+0.168g 
+Site Class 
+"B" 
+"C" 
+Site Coefficient, Fpga 
+0.9 
+1.2 
+Site Coefficient, Fa 
+0.9 
+1.269 
+Site Coefficient, Fv 
+0.8 
+1.5 
+MCE Peak Ground Acceleration, PGAM 
+0.239g 
+0.319g 
+Design Spectral Response Acceleration, SDS 
+0.346g 
+0.488g 
+Design Spectral Response Acceleration, SD1 
+0.090g 
+0.168g 
+END OF SITE CHARACTERIZATION 
+W.O. 8042-00 
+GEOLABS, INC. 
+Page 11 
+Hawaii • California  
+SECTION 3.  DISCUSSION AND RECOMMENDATIONS 
+Our field exploration generally encountered fills placed over alluvial and colluvial 
+soil deposits overlying saprolites and basalt formation extending to the maximum depth 
+explored of about 101 feet below the existing ground surface. We encountered 
+groundwater in the drilled borings at depths ranging from about 19.2 to 28.6 feet below 
+the existing ground surface. The groundwater levels encountered generally correspond 
+to between about Elevations +19.5 and +26.5 feet MSL at the time of our field exploration. 
+It should be noted that groundwater levels are subject to change due to rainfall, time of 
+year, seasonal precipitation, surface water runoff, and other factors. 
+The subsurface conditions at the project site are variable and quite complex. Our 
+field exploration generally encountered basalt formation at variable depths below the 
+existing ground surface across the project site. Basalt formation was encountered at or 
+very near the existing ground surface and sloping down from the north toward the south; 
+therefore, the top of the basalt rock formation extends deeper toward the southern portion 
+of the redevelopment site. Based on the subsurface conditions at the site and anticipated 
+structural loads per structure, we envision the proposed structures may be supported on 
+varying foundation systems consisting of mat foundations, shallow foundations, and 
+drilled shafts foundations depending on each structure’s location and loading. The 
+anticipated foundation systems per phase of the redevelopment is provided below. 
+1. 
+Phase 1A – Shallow Foundations 
+2. 
+Phase 1B – Shallow Foundations 
+3. 
+Phase 2 – Drilled Shaft Foundations or Micropile Foundations 
+4. 
+Phase 3 – Drilled Shaft Foundations or Micropile Foundations 
+Detailed discussions and our recommendations for design of foundations, 
+slabs-on-grade, retaining structures, site grading, and other geotechnical aspects of the 
+project are presented in the following sections. 
+3.1 
+Building Foundations (Phase 1A and Phase 1B) 
+Based on the subsurface conditions encountered at the northern and western 
+portions of the redevelopment, we envision the proposed 17-story residential high-rise 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 8042-00 
+GEOLABS, INC. 
+Page 12 
+Hawaii • California 
+structure (Phase 1A), the HPHA Administrative Office Building (Phase 1B), and one-story 
+low-rise structures may be supported on shallow foundations consisting of spread 
+footings, continuous strip footings, and/or mat foundations bearing on the basalt formation 
+provided probing and grouting is implemented at the foundation locations.  
+The basalt formation was encountered at the northern portion of the 
+redevelopment site (at the Phase 1A and Phase 1B building structures) at depths varying 
+from about 1 foot to about 10 feet below the existing ground surface. Based on the 
+proposed finished floor elevations for the Phase 1A structures (+50 and +44 feet MSL) 
+and Phase 1B structures (+55.75 and +45 feet MSL), we anticipate basalt formation may 
+be encountered at or near the bottom of footing elevations. Along the south side of 
+Phase 1A, we anticipate that the basalt formation would be within about 3 to 4 feet from 
+the bottom of footing elevations. If soils are encountered at the bottom of footing 
+elevations, we recommend over-excavating the soils to a minimum depth of 2 feet below 
+bottom of footing. The over-excavation also should extend a minimum of 2 feet beyond 
+the perimeter of the footings. The resulting over-excavation should be backfilled with 
+select granular fill compacted to a minimum of 95 percent relative compaction. 
+An allowable bearing pressure of up to 6,000 pounds per square foot (psf) may be 
+used for the design of footings bearing on the basalt formation and/or the 2-foot thick 
+compacted select granular fill layer (minimum 95 percent relative compaction). This 
+bearing value is for sizing the footings to support dead plus-live loads and may be 
+increased by one-third (⅓) for transient loads, such as those caused by wind or seismic 
+forces.  
+In general, the bottom of footings should be embedded a minimum of 30 inches 
+below the lowest adjacent finished grade unless the footing is bearing directly on the 
+basalt formation. For footings bearing on competent basalt formation, the footing 
+embedment depth may be reduced to a minimum of 18 inches below the lowest adjacent 
+grade. Footings constructed near tops of slopes or on sloping ground should be 
+embedded deep enough to provide a minimum horizontal setback distance of 6 feet 
+measured from the outside edge of the footings to the face of the slope. Foundations next 
+to other subsurface structures, including but not limited to, existing foundations, utility 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 8042-00 
+GEOLABS, INC. 
+Page 13 
+Hawaii • California 
+trenches, and/or easements, should be embedded below a 45-degree imaginary plane 
+extending upward from the bottom edge of the subsurface structure, or the proposed 
+footings should extend to a depth as deep as the inverts of the utility lines. This 
+requirement is necessary to avoid surcharging adjacent subsurface structures with 
+additional structural loads and to reduce the potential for appreciable foundation 
+settlement. 
+The bottom of the footing excavations in the compacted select granular fill layer 
+should be moisture-conditioned to above the optimum moisture and recompacted to at 
+least 95 percent relative compaction to provide a relatively firm and smooth bearing 
+surface prior to the placement of reinforcing steel or concrete. If soft and/or loose 
+materials are encountered at the bottom of footing excavations, the soft and/or loose 
+materials should be over-excavated until dense materials are exposed in the footing 
+excavations. The over-excavation should be backfilled with select granular fill materials 
+moisture-conditioned to above the optimum moisture content and compacted to a 
+minimum of 95 percent relative compaction.  
+If the foundations for the proposed structures are designed and constructed in strict 
+accordance with our recommendations, the total settlement of the foundations is 
+estimated to be approximately 1.5 inches or less with differential settlements on the order 
+of about 0.75 inches. 
+Lateral loads acting on the structures may be resisted by friction between the base 
+of the foundation and the bearing materials and by passive earth pressure developed 
+against the near-vertical faces of the embedded portion of the foundation. An allowable 
+coefficient of friction of 0.50 may be used for foundations bearing on the basalt formation 
+and/or select granular fill materials. The coefficient of friction should be reduced to 0.35 
+for shallow foundations in Phases 2 and 3, which are bearing on recompacted on-site 
+soils. Resistance to lateral loads due to passive earth pressure may be calculated using 
+an equivalent fluid pressure of 350 pcf for foundations embedded in the on-site soils 
+and/or compacted fill materials. The passive earth pressure value assumes that the 
+concrete for the footings is cast neat against dense and/or stiff on-site materials. 
+Otherwise, the soils around the footings should be well compacted (minimum of 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 8042-00 
+GEOLABS, INC. 
+Page 14 
+Hawaii • California 
+90 percent relative compaction). Unless covered by pavements or slabs, the passive 
+pressure resistance in the upper 12 inches below the finished grade should be neglected. 
+Resistance to uplift loads may be mobilized by the dead weight of the structure 
+and the shallow foundations. In addition, the weight of the soil between the ground floor 
+slab-on-grade and the shallow foundation may be used to resist uplift loads. Contribution 
+of dead weight from the soil above the shallow foundation may be estimated using a unit 
+weight of 120 pounds per cubic foot (pcf). 
+3.2 
+Foundation Probing (Phase 1A and Phase 1B) 
+Based on our field exploration and our experience in similar basalt formations, 
+cavities and/or voids are commonly encountered in the basalt formations underlying the 
+project site. To reduce the potential for loss of foundation support resulting from the 
+collapse of cavities and/or lava tubes below shallow foundations supported on the basalt 
+formations, we recommend implementing a program of cavity probing and grouting at the 
+foundation locations during construction. 
+Generally, we recommend drilling probe holes at each isolated spread footing 
+location (one probe hole for every 50 square feet of footing area), at 10 feet on-center 
+along wall foundations or continuous strip footings, and one probe hole for every 
+50 square feet of mat foundation area. The probe holes should be at least 3 inches in 
+diameter and should extend to at least 10 and 20 feet below the planned bottom of 
+foundation elevation for the Phase 1A and Phase 1B building structures, respectively. 
+If cavities and/or voids are encountered or suspected during the probing operation, 
+additional probe holes should be drilled at closer spacing to aid in delineating the vertical 
+and lateral extent of the cavity and/or void. The probe holes and cavities discovered 
+should be backfilled with sand-cement grout or pumpable controlled low strength 
+materials (CLSM) injected (pumped) at low to moderate pressures. We recommend 
+utilizing a low strength sand-cement grout or pumpable controlled low strength materials 
+with a slump range of 7 to 10 inches for the grouting operations.  
+Because of the potential for encountering cavities and/or voids at the project site, 
+we recommend obtaining unit prices for additional probing and grouting during bidding. 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 8042-00 
+GEOLABS, INC. 
+Page 15 
+Hawaii • California 
+In addition, the probe drill should be available on-site until the probing and grouting 
+operations are completed. The contractor should be made aware that a longer lag time 
+between probing/grouting operations and foundation construction might be required in the 
+construction schedule. 
+The probing and grouting program should be conducted under the observation of 
+a Geolabs representative. This would allow our firm to monitor the presence of cavities 
+and/or voids and to allow additional recommendations to be made if excess grout take 
+and/or changed conditions are observed. Observation of the probing and grouting 
+operations during construction should be designated a full-time “Special Inspection” item.  
+3.3 
+Building Foundations (Phase 2 and Phase 3) 
+The subsurface conditions at the Phase 2 and Phase 3 building structures are 
+variable and highly complex. The basalt formation encountered at the project site varies 
+in depth from about 6 to 15 feet below the Phase 2 finished floor elevation, and the basalt 
+formation encountered varies in depth from about 1 to 48 feet below the existing ground 
+surface (or 0 to 49 feet below the Phase 3 finished floor elevation). We anticipate the new 
+residential buildings will have column loads (dead-plus-live loads) of about 1,000 to 
+1,400 kips per column.  
+Due to the significant difference in depth to basalt formation (primary foundation 
+bearing material) and the moderate to high structural load demands on the new high-rise 
+building foundations, supporting the high-rise building structures in Phases 2 and 3 on 
+shallow foundations bearing on both basalt and alluvial/colluvial soil deposits would result 
+in significant differential settlements. Therefore, we recommend supporting the new 
+high-rise buildings on a deep foundation system consisting of cast-in-place concrete 
+drilled shafts or micropiles. The drilled shafts would derive vertical support from both skin 
+friction between the drilled shaft and surrounding basalt formation and end bearing on 
+basalt formation. The micropiles would derive vertical support primarily from skin friction 
+between the micropiles and surrounding basalt formation. 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 8042-00 
+GEOLABS, INC. 
+Page 16 
+Hawaii • California 
+3.3.1 Drilled Shaft Foundations 
+In general, drilled shaft foundations are constructed by drilling a larger diameter 
+hole down into the bearing strata, placing reinforcing steel, and then pumping high 
+slump concrete to fill up the hole. The result is a larger diameter cast-in-place 
+concrete drilled shaft for foundation support. Based on the subsurface soil 
+conditions generally encountered at the project site, we envision that the drilled 
+shaft foundations would derive vertical support primarily from skin friction between 
+the drilled shaft and the basalt formation encountered at depths of about 1 to 
+48 feet below the existing ground surface. The end-bearing component of the 
+drilled shafts has been included in our analysis, therefore obtaining a clean bottom 
+(less than 0.5 inches of sediment at the bottom of the excavation) prior to concrete 
+placement will be required. 
+We anticipate the new residential buildings will have typical column loads 
+(dead-plus-live loads) of about 1,000 to 1,400 kips per column. Generally, it would 
+be ideal to support each building column with one single drilled shaft of 
+approximately 36 to 42 inches in diameter. In order to achieve the design load 
+resistances imposed on the drilled shaft foundations, the drilled shafts would need 
+to extend to about 20 to 75 feet below the bottom of the foundation cap elevations. 
+The allowable compressive load capacities of the drilled shaft foundations would 
+range from about 1,000 to 1,400 kips per drilled shaft depending on the size, depth, 
+and location.  
+It should be noted that the top of the hard basalt formation was encountered in our 
+drilled borings at depths ranging from about 1 to 48 feet below the existing ground 
+surface. The drilled shaft lengths will be largely dependent on the socketing length 
+into the hard basalt formation. The socketing depth required will depend on the 
+design drilled shaft capacity and the quality of the materials encountered along the 
+shaft length and should be evaluated by a Geolabs field representative on a shaft 
+specific basis during the foundation installation work. 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 8042-00 
+GEOLABS, INC. 
+Page 17 
+Hawaii • California 
+3.3.2 Micropile Foundations 
+Based on the subsurface conditions encountered in the borings and the structural 
+load demands on the new high-rise building foundations, we also recommend 
+supporting the new high-rise building on a deep foundation system consisting of 
+micropiles with a diameter of 7.625 inches as an alternative to the drilled shafts. 
+We recommend casing the upper 10 to 30 feet of the micropiles (permanent 
+casing) below the bottom of the foundation cap elevations. The permanent casing 
+should have an OD of at least 7.625 inches (same as the grout bulb size), and the 
+permanent casing should extend 3 feet into the alluvial and/or colluvial soil 
+deposits. The micropiles would derive vertical support primarily from skin friction 
+between the foundation element and surrounding supporting geo-materials (basalt 
+formation). In order to achieve an allowable compressive load capacity of 250 kips 
+per micropile, the cased micropiles would need to extend to about 20 and 70 feet 
+below the bottom of the foundation cap elevations. 
+Additional evaluation and consultation in conjunction with the project Structural 
+Engineer will be required to determine the optimum foundation system for support 
+of the Phase 2 and Phase 3 building structures once more details are available to 
+advance to concept development. 
+3.4 
+Slabs-On-Grade 
+Generally, the project site is underlain by highly expansive clayey soils. Concrete 
+slabs-on-grade constructed above these expansive soils should be properly designed and 
+constructed to reduce the risk of structural distress to the lightly loaded conventional 
+concrete slabs-on-grade resulting from shrinking and swelling of the clayey soils due to 
+changes in the moisture content.  
+For the conventional slab-on-grade foundation, we recommend providing a 
+minimum of 3 feet of non-expansive, select granular fill material below the slab, to reduce 
+the potential for appreciable structural distress resulting from expansive clayey soils. Prior 
+to placing the non-expansive select granular fill material, the clayey subgrade soils should 
+be scarified to a depth of 12 inches, moisture conditioned to about 2 to 5 percent above 
+the optimum moisture content, and recompacted to a minimum of 85 percent relative 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 8042-00 
+GEOLABS, INC. 
+Page 18 
+Hawaii • California 
+compaction. The non-expansive select granular fill should extend beyond the perimeter 
+of the slab on-grade a minimum of 3 feet (or extend to the outside edge of the concrete 
+sidewalk surrounding the slab on grade, if applicable).  
+For interior building slabs (not subjected to vehicular traffic or machinery vibration), 
+we recommend placing a minimum 4-inch thick layer of cushion fill consisting of open 
+graded gravel (ASTM C33, No. 67 gradation) below the slabs. The open graded gravel 
+cushion fill would provide uniform support of the slabs and would serve as a capillary 
+moisture break. To reduce the potential for appreciable future moisture infiltration through 
+the slab and subsequent damage to floor coverings, we recommend placing an 
+impervious vapor barrier on top of the open graded gravel cushion fill layer. Flexible floor 
+coverings, such as carpet or sheet vinyl, should be considered because they can better 
+mask minor slab cracking. In addition, we recommend designing interior walls to 
+incorporate some flexibility in accommodating a small amount of possible ground 
+movements. 
+In areas where slabs will be subject to vehicular traffic (such as driveways) or 
+machinery vibration, we recommend providing a 6-inch layer of aggregate subbase below 
+the slabs in lieu of the 4-inch thick gravel cushion fill layer. The vapor barrier also may be 
+omitted for these slabs. The aggregate subbase should consist of crushed basaltic 
+aggregates compacted to a minimum of 95 percent relative compaction. Where slabs are 
+intended to function as rigid pavements, a minimum slab thickness of 5 inches may be 
+used for preliminary design purposes. Provisions should be made for proper load transfer 
+across the slab joints that will be subject to vehicular traffic. The thickened edges of slabs 
+adjacent to unpaved areas should be embedded at least 12 inches below the lowest 
+adjacent grade. 
+It should be emphasized that the areas adjacent to the slabs should be backfilled 
+tightly against the slab edges with low expansion, relatively impervious soils. It is critical 
+to maintain proper grade adjacent to the concrete slab, to divert water away from the 
+slabs and to reduce the potential for water ponding around the slabs and foundations. 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 8042-00 
+GEOLABS, INC. 
+Page 19 
+Hawaii • California 
+3.5 
+Retaining Structures 
+Based on the grading plan provided and the topography of the project site, we 
+anticipate new retaining walls will be required at the site for grade separation along the 
+northern perimeter of the proposed redevelopment project site. The new retaining walls 
+will have substantial heights along the northwestern and northern perimeters of the site. 
+As these substantially tall retaining walls will be constructed in a cut condition with 
+generally competent subsurface conditions behind the retaining walls, we recommend 
+using a soil/rock nail retaining wall system along the northern and northwestern 
+perimeters of the project site. Detailed discussions and recommendations for the soil/rock 
+nail retaining wall system are provided in the “Soil/Rock Nail Retaining Wall” section of 
+this report. 
+Due to the sloping ground condition along the northern portion of the site and the 
+anticipated finished floor elevations, we anticipate that some of the building walls may 
+need to be designed as retaining structures. In addition, the elevator pit walls will need to 
+be designed as retaining structures. For these retaining structures and short retaining 
+walls planned along the northeastern portion of the project site, the following general 
+guidelines are provided and may be used for design of these retaining structures at the 
+project site. 
+3.5.1 Retaining Structure Foundations 
+For the high-rise buildings located in Phase 2 and Phase 3, design of the 
+foundations for retaining structures that are structurally connected to (or abutting) 
+the new high-rise buildings should be designed in accordance with the “Building 
+Foundations (Phase 2 and Phase 3)” section herein. In general, these retaining 
+structures should be supported on deep foundations. 
+For the other high-rise building and the HPHA Administrative Office Building, we 
+believe that retaining structure foundations may be designed in accordance with 
+the recommendations and parameters presented in the “Building Foundations 
+(Phase 1A and Phase 1B)” section herein.   
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 8042-00 
+GEOLABS, INC. 
+Page 20 
+Hawaii • California 
+3.5.2 Static Lateral Earth Pressures 
+Retaining structures, such as the elevator pits, should be designed to resist the 
+lateral earth pressures due to the adjacent soils and surcharge effects. The 
+recommended lateral earth pressures for design of retaining structures, expressed 
+in equivalent fluid pressures of pcf, are presented in the following table. 
+LATERAL EARTH PRESSURES 
+FOR DESIGN OF RETAINING STRUCTURES 
+Backfill 
+Condition 
+Earth Pressure 
+Component 
+Active 
+(pcf) 
+At-Rest 
+(pcf) 
+Level Backfill 
+Horizontal 
+34 
+53 
+Vertical 
+None 
+None 
+Maximum 2H:1V 
+Sloping Backfill 
+Horizontal 
+44 
+61 
+Vertical 
+22 
+30 
+The values provided above assume that granular soils with a maximum particle 
+size of 3 inches or less or select granular fill materials will be used to backfill behind 
+the retaining structures. It is assumed that the backfill behind retaining structures 
+will be compacted to between 90 and 95 percent relative compaction. Over-
+compaction of the retaining structure backfill should be avoided. 
+In general, an active condition may be used for gravity walls and retaining walls 
+that are free to deflect by as much as 0.5 percent of the wall height. If the tops of 
+the walls are not free to deflect beyond this degree, or are restrained, the walls 
+should be designed for the at-rest condition.  
+Surcharge stresses due to areal surcharges, line loads, and point loads within a 
+horizontal distance equal to the depth of the wall should be considered in the design. 
+For uniform surcharge stresses imposed on the loaded side of the wall, a rectangular 
+distribution with a uniform pressure equal to 28 percent of the vertical surcharge 
+pressure acting over the entire height of the wall, which is free to deflect (cantilever), 
+may be used in design. For walls that are restrained, a rectangular distribution equal 
+to 44 percent of the vertical surcharge pressure acting over the entire height of the 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 8042-00 
+GEOLABS, INC. 
+Page 21 
+Hawaii • California 
+wall may be used for design. Additional analyses during design may be needed to 
+evaluate the surcharge effects of point loads and line loads. 
+Retaining structures should be well drained to reduce the build-up of hydrostatic 
+pressures.  A typical drainage system would consist of a 12-inch wide zone of 
+permeable material, such as No. 3B Fine gravel (ASTM C33, No. 67 gradation), 
+placed directly around a perforated pipe (perforations facing down) at the base of 
+the wall discharging to an appropriate outlet or weepholes.  As an alternative, a 
+prefabricated drainage product, such as MiraDrain or EnkaDrain, may be used 
+instead of the drainage material.  The prefabricated drainage product should also 
+be connected hydraulically to a perforated pipe at the base of the structure. 
+3.5.3 Drainage 
+The backfill from the bottom of the retaining structure to the bottom of the weephole 
+should consist of relatively impervious materials to reduce the potential for significant 
+water infiltration into the subsurface.  In addition, the upper 12 inches of the retaining 
+structure backfill should consist of relatively impervious materials to reduce the 
+potential for significant water infiltration behind the retaining structure unless covered 
+by concrete slabs at the surface. 
+3.6 
+Soil/Rock Nail Retaining Wall 
+Based on the information provided, the northwestern and northern perimeters of 
+the site will need to be cut down to achieve the design finished grades; therefore, a 
+retaining structure will be required along the northwestern and northern perimeters of the 
+site adjacent to the roadway for grade separation. The retaining structure height generally 
+ranges from about 5 to 15 feet high with some portions of the retaining wall extending up 
+to about 18 feet high. We understand the existing grades behind the new retaining 
+structure have slope inclinations of about two horizontal to one vertical (2H:1V) behind 
+the structure. Because the retaining structure will be constructed in a cut condition with 
+generally competent subsurface conditions behind the retaining structure, we recommend 
+using a soil/rock nail retaining wall system for this retaining structure. It should be noted 
+that a soil/rock nail retaining wall retaining system is practical in cut conditions only. 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 8042-00 
+GEOLABS, INC. 
+Page 22 
+Hawaii • California 
+Placing fill at the top of the structure to increase the height of the wall will complicate 
+construction of the retaining wall and likely will increase construction costs appreciably. 
+The soil/rock nail retaining wall system consists of a series of individual reinforcing 
+bars grouted into drilled holes to stabilize the slope behind the new wall. A shotcrete 
+facing generally is applied to the cut face of the reinforced slope behind the new wall. The 
+reinforcing bars provide both additional tensile and shear strengths to the retained soil 
+and/or rock and reinforce the sidewall of the slope. The reinforced soil/rock mass behaves 
+in a manner similar to a gravity retaining wall but lacks a footing.  
+Construction of the permanent soil/rock nail retaining wall system should be 
+performed by a specialty contractor experienced in the construction of soil/rock nail 
+retaining walls and/or soil/rock nail slopes. Due to the specialized nature of the soil/rock 
+nail retaining wall construction, a Geolabs representative should be present to observe 
+the geotechnical aspects of the nail and wall construction and testing of the nails.  
+3.6.1 Soil/Rock Nails 
+Design of the soil/rock nail wall system will need to consider both the internal and 
+external stability of the reinforced mass. Design of the internal stability includes 
+establishing the size, spacing, orientation, and length of the grouted reinforcing 
+bars. The external stability includes global slope stability of the reinforced mass. 
+The soil/rock nails should be installed by drilling a minimum 6-inch diameter hole 
+with an inclination of approximately 15 to 20 degrees from horizontal. The soil/rock 
+nail bar should have a minimum yield stress of 75 kips per square inch (ksi) and 
+consists of a solid threaded bar with minimum bar diameter of 1.125 inches (#9). 
+We recommend using a double corrosion protection system for the nails. Epoxy 
+coated or galvanized bars surrounded by neat cement grout or sand-cement 
+mixture with a minimum 28-day compressive strength of 4,000 pounds per square 
+inch (psi) may be considered. 
+Based on our soil nail analysis of the retaining wall with heights ranging from about 
+14 to 18 feet high, we recommend the soil nails have a minimum length of 8 feet 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 8042-00 
+GEOLABS, INC. 
+Page 23 
+Hawaii • California 
+and a horizontal spacing of 6 feet in a square pattern. The first nail should be 
+installed about 3 feet below the top of the wall. 
+Based on our soil nail analysis of the retaining wall with heights less than 14 feet 
+high, we recommend the soil nails have a minimum length of 7 feet and a horizontal 
+spacing of 6 feet in a square pattern. The first nail should be installed about 3 feet 
+below the top of the wall. 
+3.6.2 Soil Nail Installation 
+Based on the borings drilled at the site, we anticipate that a layer of colluvial soils 
+underlain by basalt rock formation likely will be encountered along the soil/rock nail 
+retaining wall alignment. Potentially difficult drilling conditions may be encountered 
+during the installation of the soil/rock nails due to the potential for presence of 
+colluvial soils and basalt formation at the project site. 
+3.6.3 Soil Nail Testing 
+Based on the subsurface conditions anticipated, we recommend performing one 
+pre-production verification test on a sacrificial soil/rock nail for a wall height of 
+14 feet or higher. In addition, we recommend proof testing be performed on at least 
+8 percent of the production soil/rock nails during construction to confirm the bond 
+stresses used in the design. 
+The verification test should be conducted on a #11 (Grade 75) reinforcing bar and 
+should be loaded gradually to 150 percent of the design load of 40 kips for the 
+creep test and subsequently to the maximum test load of about 200 percent of the 
+design load. In addition, the load at every loading increment should be held for at 
+least 10 minutes, and the creep test should be held for at least 60 minutes. The 
+upsized reinforcing bar is only needed for the verification test, not for the proof 
+tests.  
+The proof tests should consist of subjecting the soil/rock nail to at least 150 percent 
+of the design load (40 kips), and the load should be held for at least 10 minutes 
+(until stable). The test nails may be incorporated into the permanent soil/rock nail 
+retaining wall provided the nail satisfy the test criteria. 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 8042-00 
+GEOLABS, INC. 
+Page 24 
+Hawaii • California 
+Pullout tests and creep tests on the soil/rock nails are integral parts of the design 
+of the soil/rock nail retaining wall system. Therefore, a Geolabs representative 
+should observe performance of the pullout tests and creep tests by the contractor. 
+3.6.4 Shotcrete Facing 
+Shotcrete placement should be performed by an experienced nozzleman certified 
+as a nozzleman for shotcrete placement by the American Concrete Institute (ACI). 
+Prior to production shotcrete placement, we recommend constructing unreinforced 
+shotcrete test panels (4-foot by 4-foot size by 4-inch thick panels) for inspection. 
+We understand the shotcrete facing likely will not be sculptured. 
+3.6.5 Drainage 
+The soil/rock nail retaining wall should be well drained to reduce the potential for 
+the build-up of hydrostatic pressures. A drainage system for the soil nailed 
+retaining wall consists of 2-foot wide strips of a prefabricated drainage product, 
+such as Sitedrain C-184 or equivalent, placed on the face of the cut between the 
+soil/rock nails may be considered. The prefabricated drainage product should 
+extend from the top to the base of the cut and should be hydraulically connected 
+to a weephole at or near the base of the retaining wall.  
+3.7 
+Site Grading 
+Based on the schematic grading plan, cuts on the order of about 8 to 15 feet are 
+planned along the north and west areas of the site.  Fills on the order of about 3 feet or 
+less are planned at the east and southeast areas of the site. The following grading items 
+are addressed in the subsequent subsections:  
+1. 
+Site Preparation 
+2. 
+Fill Materials 
+3. 
+Fill Placement and Compaction Requirements 
+4. 
+Cut and Fill Slopes 
+5. 
+Excavation 
+A Geolabs representative should monitor the site grading operations to observe 
+whether undesirable materials are encountered during the excavation and scarification 
+process and to confirm whether the exposed soil conditions are similar to those 
+encountered in our field exploration. 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 8042-00 
+GEOLABS, INC. 
+Page 25 
+Hawaii • California 
+3.7.1 Site Preparation 
+At the on-set of earthwork, the area within the contract grading limits should be 
+cleared and grubbed thoroughly. Vegetation, debris, deleterious materials, 
+asphaltic concrete, and other unsuitable materials should be removed and 
+disposed properly off-site. Soft and/or yielding areas encountered during clearing 
+and grubbing below areas designated to receive fill should be over-excavated to 
+expose firm materials, and the resulting excavation should be backfilled with 
+well-compacted fills. The excavated soft and/or organic soils should be properly 
+disposed off-site and/or used in landscape areas, where appropriate. Contract 
+documents should include additive and deductive unit prices for over-excavation 
+and compacted fill placement to account for variations in the over-excavation 
+quantities. 
+After clearing and grubbing, we recommend proof-rolling the cut subgrades that 
+expose basalt rock formation with a minimum 10-ton vibratory drum roller or similar 
+heavy equipment for a minimum of eight passes to help detect the presence of 
+potential near-surface cavities and/or voids. Cavities and/or voids disclosed during 
+proof-rolling operations should be exposed and backfilled with well-compacted fill 
+materials. 
+Where soils are exposed in areas to receive fill or finished subgrades in cut areas, 
+these areas should be scarified to a depth of about 8 inches, moisture-conditioned 
+to at least 2 percent above the optimum moisture content, and compacted to a 
+minimum of 90 percent relative compaction. The compaction requirement should 
+be increased to 95 percent relative compaction in areas subjected to vehicular 
+traffic. Relative compaction refers to the in-place dry density of soil expressed as 
+a percentage of the maximum dry density of the same soil established in 
+accordance with ASTM D 1557 test procedures. Optimum moisture is the water 
+content (percentage by dry weight) corresponding to the maximum dry density. 
+Where shrinkage cracks develop in the subgrade soil after compaction, we 
+recommend preparing the subgrade soil again as recommended above. Saturation 
+and subsequent yielding of the exposed subgrade due to inclement weather and 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 8042-00 
+GEOLABS, INC. 
+Page 26 
+Hawaii • California 
+poor drainage may require over-excavation of the soft areas and replacement with 
+well-compacted fill. The need for over-excavation due to soft subgrade soil 
+conditions should be evaluated in the field by our representative. 
+In general, a Geolabs representative should monitor the site preparation 
+operations to observe whether undesirable materials are encountered during the 
+scarification process and to confirm whether the exposed soil conditions are similar 
+to those encountered in our field exploration. 
+3.7.2 Fills and Backfills 
+The on-site materials generated from the excavations may be used as a source of 
+general fill or backfill materials provided that they are free of vegetation, rubbish or 
+deleterious materials and screened of the over-sized materials and/or processed 
+to meet the above gradation requirements (less than 3 inches in largest 
+dimension).  However, the high plasticity grayish silty clays that are generated from 
+the excavations should not be used as general fill or backfill materials since these 
+soils have a high swell potential.   
+Imported materials to be used as select granular fill should be non-expansive 
+granular material, such as crushed coral or basalt. The select granular fill should 
+be well-graded from coarse to fine with particles no larger than 3 inches in largest 
+dimension. The material should have a California Bearing Ratio (CBR) value of 
+20 or higher and a swell potential of 1 percent or less when tested in accordance 
+with ASTM D1883. The material also should contain between 10 and 30 percent 
+particles passing the No. 200 sieve. Imported fill materials should be tested for 
+conformance with these recommendations prior to delivery to the project site for 
+the intended use. 
+Aggregate base and subbase courses required for the project should consist of 
+crushed basaltic aggregates and should meet the requirements of Sections 31 and 
+30 of the City and County Standard Specifications (September 1986), respectively. 
+Imported fill materials should be tested for conformance with these 
+recommendations prior to delivery to the project site for the intended use. 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 8042-00 
+GEOLABS, INC. 
+Page 27 
+Hawaii • California 
+3.7.3 Fill Placement and Compaction Requirements 
+In general, fills and backfills should be moisture-conditioned to above the optimum 
+moisture content, placed in level lifts not exceeding 8 inches in loose thickness, 
+and compacted to at least 90 percent relative compaction. The compaction 
+requirement for the top 12 inches of fill (finished subgrade) below areas subjected 
+to vehicular traffic should be increased to at least 95 percent relative compaction.  
+Relative compaction refers to the in-place dry density of soil expressed as a 
+percentage of the maximum dry density as determined by ASTM D1557. Optimum 
+moisture is the water content (percentage by dry weight) corresponding to the 
+maximum dry density. Compaction should be accomplished by sheepsfoot rollers, 
+vibratory rollers, or other types of acceptable compaction equipment. Water 
+tamping, jetting, or ponding should not be allowed to compact the fills. 
+3.7.4 Cut and Fill Slopes 
+Based on the subsurface conditions encountered in our field exploration, we 
+believe the planned cut slopes will expose stiff clayey soils and/or basalt formation.  
+In general, the cut slopes exposed in soil conditions may be designed with a slope 
+inclination of two horizontal to one vertical (2H:1V) or flatter. Slope inclination for 
+the cut sloped exposing basalt formation may be steepened to 1H:1V or flatter. 
+Permanent fill slopes constructed using the approved on-site materials (or 
+imported select granular fill materials) may also be designed with a slope 
+inclination of 2H:1V or flatter. Fills placed on slopes steeper than 5H:1V should be 
+keyed and benched into the existing slope to provide stability of the new fill against 
+sliding. The filling operations should start at the lowest point and continue up in 
+level horizontal compacted layers in accordance with the above fill placement 
+recommendations.  Fill slopes should be constructed by overfilling and cutting back 
+to the design slope ratio to obtain a well-compacted slope face.  In addition, slope 
+planting should be provided as soon as possible to reduce the potential for erosion 
+of the finished slopes. 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 8042-00 
+GEOLABS, INC. 
+Page 28 
+Hawaii • California 
+3.8 
+Excavation 
+Based on our field exploration, the northern and western areas of the project site 
+are generally underlain by fill, colluvial soil deposits, and saprolite over basalt formation 
+encountered at about 1 to 10 feet below the existing ground surface. The eastern and 
+southeastern areas of the project site are underlain by alluvial and colluvial soil deposits, 
+and saprolite over basalt formation encountered at deeper depths of about 20 to 48 feet 
+below the existing ground surface. Uniaxial compressive strength tests were performed 
+on selected rock cores obtained from our field exploration to evaluate the uniaxial 
+compressive strength of the basalt formation. In general, the uniaxial compressive 
+strength of the basalt formation range from about 570 to 11,330 pounds per square inch 
+(psi). The uniaxial compressive strength test results are presented in Appendix C. 
+Generally, we anticipate that the severely to moderately fractured basalt rock 
+formation encountered at shallow depths may be ripped with large bulldozers and 
+excavated with normal heavy excavation equipment, such as excavators. However, some 
+of the deeper excavations into the dense basalt may require the use of hoerams or 
+chipping. It should be noted that the hard basalt formation with uniaxial compressive 
+strengths on the order of 8,000 psi or higher were encountered in the borings.  
+The above discussions regarding the rippability of the surface materials are based 
+on our visual observation of the field and laboratory data from the borings drilled. 
+Contractors should be encouraged to examine the site conditions and the subsurface 
+data to make their own reasonable and prudent interpretation. 
+Excavation for construction of the retaining structures may require adequate 
+shoring to reduce the potential for adjacent ground movement. The excavation support 
+and shoring system used are the responsibility of the contractor and must comply with all 
+applicable safety requirements. 
+The contractor should be solely responsible for the adequacy and safety of the 
+shoring installation. His/her representative, who should be required to be continuously 
+present on-site during excavation and construction work, will have the best opportunity to 
+promptly observe changing conditions during construction, such as unforeseen subsoils, 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 8042-00 
+GEOLABS, INC. 
+Page 29 
+Hawaii • California 
+unexpectedly high groundwater table, inappropriate construction sequence or 
+techniques, etc., which may affect shoring stability. 
+However, it must be noted that some minor movements of the shoring system and 
+the adjacent ground may still occur due to changes in earth stresses during excavation.  
+Due to the complexity of the stress changes, it is difficult to accurately estimate the 
+magnitude of movement.  The magnitude also depends greatly upon workmanship, such 
+as how quickly and tightly the shoring and bracing supports are installed, on the subsoil 
+conditions, the size of the excavation, and the rate of excavation. 
+Therefore, it is important to realize that the excavation shoring should be installed 
+properly and as early as practical, and if necessary, the adjacent ground should be 
+continuously monitored for cracks, dips, and/or other indications of movements with 
+instruments. 
+3.9 
+Field Infiltration Testing 
+We envision the project may require on-site storm water runoff management, such 
+as detention basins or bioswales, in order to meet the drainage requirements for Low 
+Impact Development (LID). In order to obtain subsurface infiltration information in support 
+of the planning of such systems, we conducted falling head infiltration tests at eight 
+shallow borings, designated as LID-1 through LID-8, to evaluate the infiltration 
+characteristics of the subsurface materials encountered at the project site. These tests 
+were performed in general accordance with the procedures in Appendix D of the State of 
+Maryland, Department of the Environment “Stormwater Design Manual, Volumes I and II” 
+(rev. 2009). These procedures are consistent with other state’s procedures and may 
+generally be considered an industry standard. 
+The field infiltration tests were performed by augering boreholes to a selected test 
+depth of about 5 feet below the existing ground surface. Upon reaching the test depth, a 
+4-inch diameter PVC solid casing was set to the bottom of the drilled borehole to allow 
+infiltration only through the soil/rock exposed on the bottom of the borehole. The falling 
+head infiltration test was performed to determine the average infiltration rate of the 
+underlying subsurface materials. The test consisted of four trials of filling the casing with 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 8042-00 
+GEOLABS, INC. 
+Page 30 
+Hawaii • California 
+24 inches of water and taking periodic readings over a one-hour trial period. The 
+infiltration rate is then calculated based on the result of the fourth and last trial. The 
+calculated infiltration rate at each test location is summarized in the table below. Detailed 
+testing data and results are presented on Plates D-1 through D-8.  
+FIELD INFILTRATION TEST RESULTS 
+Testing Location 
+Test Depth 
+(feet) 
+Final Measured 
+Infiltration Rate 
+(inches/hour) 
+Boring LID-1 
+Approx. southern corner of Phase 1B 
+5.0 
+22.7 
+Boring LID-2 
+Approx. eastern corner of Phase 1A 
+5.0 
+1.7 
+Boring LID-3 
+Approx. northern portion of Phase 3 
+5.0 
+1.4 
+Boring LID-4 
+Approx. southern corner of Phase 2 
+5.0 
+0.1 
+Boring LID-5 
+Approx. northeast portion of Phase 3 
+5.0 
+5.8 
+Boring LID-6 
+Approx. eastern portion of Phase 3 
+5.0 
+0.0 
+Boring LID-7 
+Approx. center of Phase 3 
+5.0 
+0.1 
+Boring LID-8 
+Approx. southern corner of Phase 3 
+5.0 
+6.1 
+It should be noted that the infiltration values presented above are the rate of 
+infiltration through the soil or basalt formation exposed at the bottom of a 4-inch diameter 
+borehole, which may not represent the actual infiltration condition within a typical 
+infiltration chamber footprint or an open basin. Due to the variability of the subsurface 
+conditions, the absorption capacity of the selected stormwater disposal system should be 
+confirmed by conducting additional infiltration tests during construction. 
+3.10 Pavements 
+We envision that flexible pavements will be used for the driveways and parking 
+areas and the realigned of Ahiahi Street. In general, we anticipate the vehicle loading for 
+the driveways and parking areas and the realigned Ahiahi Street would consist of primarily 
+passenger vehicles with some light trucks and occasional heavy trucks and buses. We 
+believe the new pavements will be subjected low volume traffic. 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 8042-00 
+GEOLABS, INC. 
+Page 31 
+Hawaii • California 
+We have assumed the pavement subgrade soils at the driveway and parking areas 
+and the realigned Ahiahi Street between Phase 1A and Phase 2 will be similar to the 
+clayey soils encountered during our field exploration. We anticipate the pavement 
+subgrade for the realigned Ahiahi Street along the northern perimeter of the site likely 
+would consist of basalt formation. On this basis, we recommend using the following 
+preliminary pavement design sections: 
+Driveway and Parking Areas 
+  2.0-Inch Asphaltic Concrete 
+  6.0-Inch Aggregate Base Course (95 Percent Relative Compaction) 
+ 18.0-Inch Aggregate Subbase Course (95 Percent Relative Compaction) 
+26.0-Inch Total Pavement Thickness on Moist Compacted Subgrade 
+Realigned Ahiahi Street (Between Phase 1A and Phase 2) 
+  2.0-Inch Asphaltic Concrete 
+  4.0-Inch Asphalt Treaded Base Course 
+ 12.0-Inch Aggregate Base Course (95 Percent Relative Compaction) 
+18.0-Inch Total Pavement Thickness on Moist Compacted Subgrade 
+Realigned Ahiahi Street (Northern Perimeter) 
+  2.0-Inch Asphaltic Concrete 
+ 3.0-Inch Asphalt Treaded Base Course 
+  6.0-Inch Aggregate Base Course (95 Percent Relative Compaction) 
+11.0-Inch Total Pavement Thickness on Moist Compacted Subgrade 
+The pavement subgrades should be scarified to a depth of about 8 inches, 
+moisture-conditioned to above the optimum moisture, and compacted to a minimum of 
+95 percent relative compaction. Where the pavement subgrade exposes basalt formation, 
+we recommend proof-rolling the pavement subgrades that expose basalt formation with 
+a minimum 10-ton vibratory drum roller or similar heavy equipment for a minimum of 
+eight passes to help detect the presence of potential near-surface cavities and/or voids. 
+Cavities and/or voids disclosed during proof-rolling operations should be exposed and 
+backfilled with well-compacted fill materials. 
+The aggregate base course and aggregate subbase materials should consist of 
+crushed basaltic aggregates compacted to no less than 95 percent relative compaction. 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 8042-00 
+GEOLABS, INC. 
+Page 32 
+Hawaii • California 
+CBR and field density tests should be performed on the actual subgrade soils 
+encountered during construction to confirm the adequacy of the above sections. 
+Paved areas should be sloped, and drainage gradients should be maintained to 
+carry surface water off-site. Surface water ponding should not be allowed on-site during 
+or after construction. Where concrete curbs are used to isolate landscaping in or adjacent 
+to the pavement areas, we recommend extending the curbs a minimum of 2 inches into 
+the soils below the aggregate subbase course layer to reduce the potential for migration 
+of landscape water into the pavement section. Alternatively, a subdrain system could be 
+constructed to collect excess water from landscaping irrigation. For long-term 
+performance, we recommend constructing a subdrain system adjacent to the 
+paved/landscaped areas. 
+3.11 Underground Utility Lines 
+We envision new utility lines and/or utility connections will be required for the 
+project. We envision most of the new utility lines and/or utility connections for the project 
+will be relatively shallow.  
+We anticipate most of the trenches for utilities will be excavated in the fills, colluvial 
+and alluvial soil deposits, and basalt formation. In general, we recommend using granular 
+bedding consisting of 6 inches of free-draining granular materials (ASTM C33, No. 67 
+gradation) below the pipes for uniform support. Free-draining granular materials, such as 
+open-graded gravel (ASTM C33, No. 67 gradation), also should be used for the initial 
+trench backfill up to about 12 inches above the pipes.  
+It is critical to use this free-draining material to reduce the potential for formation 
+of voids below the haunches of the pipes and to provide adequate support for the sides 
+of the pipes. Improper backfill material around the pipes and improper placement of the 
+backfill could result in backfill settlement and pipe damage.  
+The upper portion of the trench backfill from a level of 12 inches above the pipes 
+to the top of the subgrade or finished grade select granular fill materials. The backfill 
+material should be moisture-conditioned to above the optimum moisture content, placed 
+in maximum 8-inch level loose lifts, and mechanically compacted to at least 90 percent 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 8042-00 
+GEOLABS, INC. 
+Page 33 
+Hawaii • California 
+relative compaction. In areas where trenches will be in paved areas, the upper 3 feet of 
+the trench backfill below the pavement finished grade should be compacted to no less 
+than 95 percent relative compaction. 
+3.12 Corrosion Potential 
+Design of metallic substructures, such as water line pipes or other metallic piping, 
+should consider the effects of the corrosive environment on the substructure. Laboratory 
+corrosivity tests, including pH (ASTM G51), Minimum Resistivity (ASTM G57), Chloride 
+Content (EPA 300.0), and Sulfate Content (EPA 300.0), were performed by our office and 
+Eurofins TestAmerica Laboratories, Inc. on selected near-surface soil samples obtained 
+from our field exploration for corrosivity evaluation. The test results are presented in 
+Appendix C. 
+Resistivity generally is recognized as one of the most significant soil characteristics 
+with regard to the corrosivity of the soil to buried metallic objects. Generally, a lower 
+resistivity value results in a greater potential for corrosion of buried metallic objects. 
+Conversely, a higher resistivity value means the soil is less likely to contribute to the 
+corrosion of metallic objects. Based on the test results, the near-surface clayey soils at 
+the project site exhibit minimum resistivity values of about 610 and 1,700 ohm-cm, 
+indicating that the subsurface soils are corrosive to severely corrosive to buried metallic 
+structures based on the Board of Water Supply, City and County of Honolulu Water 
+System External Corrosion Control Standards dated 2021. 
+The method used to control the corrosion of underground concrete structures is 
+dependent on the pH, chloride content, and sulfate content found in the soil. In general, 
+soils with a chloride content of less than 500 parts per million (ppm), sulfate content of 
+less than 2,000 ppm, and a pH of greater than 5.0 may be considered "non corrosive" to 
+underground concrete pipelines and structures. 
+Based on the values of the chloride and sulfate content tests conducted on the 
+in-situ near-surface soils, we believe that either Type I or Type II (Type I/II) cement may 
+be used for the concrete in contact with the ground. It may be appropriate to consult with 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 8042-00 
+GEOLABS, INC. 
+Page 34 
+Hawaii • California 
+a professional corrosion engineer to review the test results and provide detailed 
+recommendations for corrosion protection. 
+3.13 Design Review 
+Final drawings and specifications for the proposed construction should be 
+forwarded to Geolabs for review and written comments prior to solicitation for bids. This 
+review is necessary to evaluate conformance of the plans and specifications with the 
+intent of the foundation and earthwork recommendations provided herein. If this review is 
+not made, Geolabs cannot assume responsibility for misinterpretation of the 
+recommendations presented herein.  
+3.14 Post-Design Services/Services During Construction 
+It is highly recommended to retain Geolabs for geotechnical engineering support 
+and continued services during construction. The following are critical items of construction 
+monitoring that require "Special Inspections":  
+1. 
+Review of drilled shaft/micropile installation submittals 
+2. 
+Observation of the load test(s) shaft or micropile installation 
+3. 
+Observation of the drilled shaft/micropile load testing 
+4. 
+Observation of the production drilled shaft/micropile installation 
+5. 
+Observation of the subgrade soil preparation 
+6. 
+Observation of fill placement and compaction 
+A Geolabs representative should monitor other aspects of the earthwork 
+construction. This is to observe compliance with the intent of the design concepts, 
+specifications, or recommendations and to expedite suggestions for design changes that 
+may be required in the event that subsurface conditions differ from those anticipated at 
+the time this report was prepared. The recommendations provided herein are contingent 
+upon such observations. If the actual subsurface conditions encountered during 
+construction are different from those assumed or considered in this report, then 
+appropriate modifications to the design should be made. 
+END OF DISCUSSION AND RECOMMENDATIONS 
+W.O. 8042-00 
+GEOLABS, INC. 
+Page 35 
+Hawaii • California  
+SECTION 4.  LIMITATIONS 
+The analyses and recommendations presented herein are based, in part, upon 
+information obtained from the borings drilled and bulk sample collected. Variations of the 
+subsurface conditions between and beyond the field data points may occur, and the 
+nature and extent of these variations may not become evident until construction is 
+underway. If variations then appear evident, it will be necessary to re-evaluate the 
+recommendations provided herein. 
+The locations of the field borings indicated in this report are approximate, having 
+been estimated by taping from visible features shown on the Topographic Survey for the 
+Proposed Residential Tower (HPHA School Street Redevelopment) prepared by Austin 
+Tsutsumi & Associates, Inc. dated November 6, 2019. Elevations of the borings were 
+interpolated based on the spot elevations shown on the same plan. The locations and 
+elevations of the field borings should be considered accurate only to the degree implied 
+by the methods used. 
+The stratification breaks shown on the graphic representations of the borings 
+depict the approximate boundaries between soil and/or rock types and, as such, may 
+denote a gradual transition. Water level data from the borings were measured at the times 
+shown on the graphic representations and/or presented in the text of this report. These 
+data have been reviewed and interpretations made in the formulation of this report. 
+However, it must be noted that fluctuation may occur due to variation in tides, rainfall, 
+perched groundwater conditions, groundwater withdrawal, and other factors. 
+This report has been prepared for the exclusive use of School Street I, LP and their 
+project consultants for specific application to HPHA School Street Redevelopment project 
+in Honolulu on the Island of Oahu as described herein in accordance with generally 
+accepted geotechnical engineering principles and practices. No warranty is expressed or 
+implied. 
+This report has been prepared solely for the purpose of assisting the architects 
+and engineers in the preparation of the design documents for the new residential high-rise 
+building project. Therefore, this report may not contain sufficient data, or the proper 
+SECTION 4. LIMITATIONS 
+W.O. 8042-00 
+GEOLABS, INC. 
+Page 36 
+Hawaii • California 
+information, for use to form the basis for preparation of construction cost estimates or 
+contract bidding. A contractor wishing to bid on this project should retain a competent 
+geotechnical engineer to assist in the interpretation of this report and/or performance of 
+site-specific exploration for bid estimating purposes. 
+The owner/client should be aware that unanticipated soil conditions are commonly 
+encountered. Unforeseen subsurface conditions, such as perched groundwater, soft 
+deposits, hard layers or cavities, may occur in localized areas and may require additional 
+probing or corrections in the field (which may result in construction delays) to attain a 
+properly constructed project. Therefore, a sufficient contingency fund is recommended to 
+accommodate these possible extra costs. 
+This geotechnical engineering exploration conducted at the project site was not 
+intended to investigate the potential presence of hazardous materials existing at the 
+project site. It should be noted that the equipment, techniques, and personnel used to 
+conduct a geo-environmental exploration differ substantially from those applied in 
+geotechnical engineering. 
+END OF LIMITATIONS 
+CLOSURE
+The following plates and appendices are attached and complete this report:
+PYOIGC! LOCBUON, MO ci scccicsscsrscsnscnmsnnmananinsinnaiaaniermnaeensenennNeiest Plate 1
+Existing Conditions PION isissiiccsssccssscascsreantusmancnmnmannna cena Plate 2
+Site PLAN 2... cceeceecsneeeeeeeeeeeeeeeeeeeeeeeeeeeseeaeeeeeseeeeaeaeesseeneaeeeeseeeaeuuaaaeeeeeeeeeeeseneeeees Plate 3
+Field Exploration ..............cccccccccceeeeeeeeeeeeeeeeeeeaeaanaeaeaeeeeaeaaaaeeeeseaeeseeeeaneneeeeeeeees Appendix A
+Seismic: Sheer Wave Velocity Test ccsiccssccccensssssisnsnccccnmencncnnnnecnaniencenavense Appendix B
+LOY TS cv irsccersnsvrennmenanccrnnceureccccicnnsisnsscastemseceuentirasicenemmanieneies Appendix C
+PRI (ATT TOBNB os sriisenirsicmnsnurnnnnencemnnunmaicean acumen Appendix D
+Photographs of Cole Samples «..sisiinccncnnecicnnnnicucnnonnnmamunn Appendix E
+-ODOQOQO2O000-
+Respectfully submitted,
+GEOLABS, INC.
+he hag— , @dakh
+By By
+Glenn Barut, P.E. Robin M. Lim, P.E.
+Senior Project Engineer President
+RML:GB:AH:rl
+h:\8000 Series\8042-00.ah3
+W.O. 8042-00 GEOLABS, INC. Page 37
+Hawaii © California
+PLATES 
+HPHA SCHOOL STREET REDEVELOPMENT
+PROJECT LOCATION MAP
+GRAPHIC SCALE
+1000
+2000
+2000
+0
+FT.
+PROJECT LOCATION
+GENERAL PROJECT LOCATION
+N
+WAHIAWA
+WAIKIKI
+HONOLULU
+AIEA
+PEARL CITY
+WAIPAHU
+EWA
+BARBERS POINT
+NANAKULI
+WAIANAE
+WAIALUA
+HALEIWA
+KAHUKU
+POINT
+DIAMOND
+HEAD
+HAWAII
+KAI
+WAIMANALO
+KAILUA
+KANEOHE
+KAHALUU
+PUNALUU
+HAUULA
+KAENA POINT
+ISLAND MAP
+NO SCALE
+HONOLULU, OAHU, HAWAII
+SEPTEMBER 2020
+1" = 2,000'
+Geotechnical Engineering
+GEOLABS, INC.
+DATE
+SCALE
+1
+8042-00
+DRAWN BY
+ASP
+W.O.
+PLATE
+N
+PACIFIC      OCEAN
+CAD User: KIM  File Last Updated: March 31, 2020 4:27:17pm  Plot Date:  September 24, 2020 - 5:51:14pm
+File: T:\Drafting\Working\8042-00_HPHA_School_Street_Redevelopment\8042-00PLM.dwg\1
+Plotter: DWG To PDF-GEO.pc3  Plotstyle: GEO-No-Dithering.ctb
+REFERENCE: MAP CREATED WITH TOPO!® ©2010 NATIONAL
+GEOGRAPHIC; ©2007 TELE ATLAS, REL. 1/2007.
+B-1
+LID-1
+B-3
+LID-8
+LID-7
+LID-6
+LID-4
+LID-3
+LID-2
+B-10
+B-9
+B-8
+B-7
+B-6
+B-5
+B-4
+LID-5 & BULK-2
+B-2 & BULK-1
+APPROXIMATE BORING LOCATION
+LEGEND:
+N
+APPROXIMATE BULK SAMPLE LOCATION
+HPHA SCHOOL STREET REDEVELOPMENT
+HONOLULU, OAHU, HAWAII
+GEOLABS, INC.
+Geotechnical Engineering
+8042-00
+DRAWN BY
+ASP
+1" = 80'
+AUGUST 2022
+SCALE
+DATE
+W.O.
+EXISTING CONDITIONS PLAN
+2
+PLATE
+GRAPHIC SCALE
+40
+0
+80
+160
+240 FT.
+CAD User: ASPASIONJR  File Last Updated: August 03, 2022 3:00:41pm  Plot Date:  August 04, 2022 - 12:54:42pm
+File: T:\Drafting\Working\8042-00_HPHA_School_Street_Redevelopment\8042-00SitePlans.dwg\2.0 ExistingConditions
+Plotter: DWG To PDF-GEO.pc3  Plotstyle: GEO-No-Dithering-Blue-Boring.ctb
+REFERENCE: TOPOGRAPHIC SURVEY MAP TRANSMITTED BY HIDA, OKAMOTO & ASSOCIATES, INC. ON AUGUST 2, 2022.
+G2
+ED18
+ES8
+ED18
+ED12
+ED18
+ED12
+ED18
+ES6
+ES8
+D18
+ED24
+ED24
+ES8
+D12
+D12
+D12
+D12
+ED18
+S4
+D18
+ES8
+EG2
+EG1
+EG1
+UP
+DN
+UP
+UP
+UP
+B-1
+LID-1
+B-3
+LID-8
+LID-7
+LID-6
+LID-4
+LID-3
+LID-2
+B-10
+B-9
+B-8
+B-7
+B-6
+B-5
+B-4
+LID-5 & BULK-2
+B-2 & BULK-1
+N E W   B U I L D I N G
+APPROXIMATE BORING LOCATION
+LEGEND:
+N
+APPROXIMATE BULK SAMPLE LOCATION
+HPHA SCHOOL STREET REDEVELOPMENT
+HONOLULU, OAHU, HAWAII
+GEOLABS, INC.
+Geotechnical Engineering
+8042-00
+DRAWN BY
+ASP
+1" = 80'
+AUGUST 2022
+SCALE
+DATE
+W.O.
+SITE PLAN
+3
+PLATE
+GRAPHIC SCALE
+40
+0
+80
+160
+240 FT.
+CAD User: ASPASIONJR  File Last Updated: August 04, 2022 1:05:24pm  Plot Date:  August 04, 2022 - 2:20:56pm
+File: T:\Drafting\Working\8042-00_HPHA_School_Street_Redevelopment\8042-00SitePlans.dwg\3.0 SitePlan
+Plotter: DWG To PDF-GEO.pc3  Plotstyle: GEO-No-Dithering-Blue-Boring.ctb
+REFERENCE: SITE PLAN TRANSMITTED BY HIDA, OKAMOTO & ASSOCIATES, INC. ON AUGUST 2, 2022.
+APPENDIX A  
+W.O. 8042-00 
+GEOLABS, INC. 
+AUGUST 2022    Page A-1 
+Hawaii • California 
+A P P E N D I X   A 
+Field Exploration 
+We explored the subsurface conditions at the project site by drilling and sampling 
+eighteen borings, designated as Boring Nos. 1 through 10 and LID-1 through LID-8, 
+extending to depths between about 5 and 101 feet below the existing ground surface. The 
+approximate boring locations are shown on the Existing Conditions Plan (Plate 2) and the 
+Site Plan (Plate 3). The borings were drilled using a truck-mounted drill rig equipped with 
+continuous flight augers and rotary coring tools. 
+Our geologists classified the materials encountered in the borings by visual and 
+textural examination in the field in general accordance with ASTM D2488, Standard 
+Practice for Description and Identification of Soils, and monitored the drilling operations 
+on a near-continuous (full-time) basis. These classifications were further reviewed visually 
+and by testing in the laboratory. Soils were classified in general accordance with 
+ASTM D2487, Standard Practice for Classification of Soils for Engineering Purposes 
+(Unified Soil Classification System), as shown on the Soil Log Legend, Plate A-0.1. 
+Deviations made to the soil classification in accordance with ASTM D2487 are described 
+on the Soil Classification Log Key, Plate A-0.2. Graphic representations of the materials 
+encountered are presented on the Logs of Borings, Plates A-1 through A-18. 
+Relatively “undisturbed” soil samples were obtained in general accordance with 
+ASTM D 3550, Ring-Lined Barrel Sampling of Soils, by driving a 3-inch OD Modified 
+California sampler with a 140-pound hammer falling 30 inches. In addition, some samples 
+were obtained from the drilled borings in general accordance with ASTM D1586, 
+Penetration Test and Split-Barrel Sampling of Soils, by driving a 2-inch OD standard 
+penetration sampler using the same hammer and drop. The blow counts needed to drive 
+the sampler the second and third 6 inches of an 18-inch drive are shown as the 
+“Penetration Resistance” on the Logs of Borings at the appropriate sample depths. The 
+penetration resistance shown on the logs of borings indicates the number of blows 
+required for the specific sampler type used. The blow counts may need to be factored to 
+obtain the Standard Penetration Test (SPT) blow counts. 
+Pocket penetrometer tests were performed on selected cohesive soil samples in 
+the field. The pocket penetrometer test provides an indication of the unconfined 
+compressive strength of the sample. Results of the pocket penetrometer tests are 
+summarized on the Logs of Borings at the appropriate sample depths. 
+Core samples of the rock materials encountered at the project site were obtained 
+by using diamond core drilling techniques in general accordance with ASTM D2113, 
+Diamond Core Drilling for Site Investigation. Core drilling is a rotary drilling method that 
+uses a hollow bit to cut into the rock formation. The rock material left in the hollow core of 
+the bit is mechanically recovered for examination and description. Rock cores were 
+described in general accordance with the Rock Description System, as shown on the 
+Rock Log Legend, Plate A-0.3. The Rock Description System is based on the publication 
+Appendix A 
+Field Exploration 
+W.O. 8042-00 
+GEOLABS, INC. 
+AUGUST 2022    Page A-2 
+Hawaii • California 
+“Suggested Methods for the Quantitative Description of Discontinuities in Rock Masses” 
+by the International Society for Rock Mechanics (March 1977). 
+Recovery (REC) may be used as a subjective guide to the interpretation of the 
+relative quality of rock masses, where appropriate. Recovery is defined as the actual 
+length of material recovered from a coring attempt versus the length of the core attempt. 
+For example, if 3.7 feet of material is recovered from a 5.0-foot core run, the recovery 
+would be 74 percent and would be shown on the Logs of Borings as REC = 74%. 
+The Rock Quality Designation (RQD) is also a subjective guide to the relative 
+quality of rock masses. RQD is defined as the percentage of the core run in rock that is 
+sound material in excess of 4 inches in length without any discontinuities, discounting any 
+drilling, mechanical, and handling induced fractures or breaks. If 2.5 feet of sound material 
+is recovered from a 5.0-foot core run in rock, the RQD would be 50 percent and would be 
+shown on the Logs of Borings as RQD = 50%. Generally, the following is used to describe 
+the relative quality of the rock based on the "Practical Handbook of Physical Properties 
+of Rocks and Minerals” by Robert S. Carmichael (1989). 
+Rock Quality 
+RQD 
+(%) 
+Very Poor 
+0 – 25 
+Poor 
+25 – 50 
+Fair 
+50 – 75 
+Good 
+75 – 90 
+Excellent 
+90 – 100 
+The excavation characteristic of a rock mass is a function of the relative hardness 
+of the rock, its relative quality, brittleness, and fissile characteristics. A dense rock 
+formation with a high RQD value would be very difficult to excavate and probably would 
+require more arduous methods of excavation. 
+A-0.1
+UNCONSOLIDATED UNDRAINED TRIAXIAL
+COMPRESSION (ksf)
+MORE THAN 50%
+OF COARSE
+FRACTION
+RETAINED ON
+NO. 4 SIEVE
+50% OR MORE OF
+COARSE FRACTION
+PASSING
+THROUGH NO. 4
+SIEVE
+MORE THAN 50%
+OF MATERIAL
+RETAINED ON NO.
+200  SIEVE
+50% OR MORE OF
+MATERIAL PASSING
+THROUGH NO. 200
+SIEVE
+TORVANE SHEAR (tsf)
+(2-INCH) O.D. STANDARD PENETRATION TEST
+(3-INCH) O.D. MODIFIED CALIFORNIA SAMPLE
+INORGANIC SILTS AND VERY FINE SANDS,
+ROCK FLOUR, SILTY OR CLAYEY FINE SANDS
+OR CLAYEY SILTS WITH SLIGHT PLASTICITY
+POORLY-GRADED GRAVELS, GRAVEL-SAND
+MIXTURES, LITTLE OR NO FINES
+CLAYEY GRAVELS, GRAVEL-SAND-CLAY
+MIXTURES
+WELL-GRADED SANDS, GRAVELLY SANDS,
+LITTLE OR NO FINES
+POORLY-GRADED SANDS, GRAVELLY
+SANDS, LITTLE OR NO FINES
+SILTY SANDS, SAND-SILT MIXTURES
+CLAYEY SANDS, SAND-CLAY MIXTURES
+LIQUID LIMIT
+50 OR MORE
+CH
+NOTE: DUAL SYMBOLS ARE USED TO INDICATE BORDERLINE SOIL CLASSIFICATIONS
+MH
+SILTS
+AND
+CLAYS
+SILTS
+AND
+CLAYS
+LIQUID LIMIT
+LESS THAN 50
+USCS
+TYPICAL
+DESCRIPTIONS
+GW
+MORE THAN 12%
+FINES
+WATER LEVEL OBSERVED IN BORING OVERNIGHT
+HIGHLY ORGANIC SOILS
+SILTY GRAVELS, GRAVEL-SAND-SILT
+MIXTURES
+OL
+PEAT, HUMUS, SWAMP SOILS WITH HIGH
+ORGANIC CONTENTS
+INORGANIC CLAYS OF LOW TO MEDIUM
+PLASTICITY, GRAVELLY CLAYS, SANDY
+CLAYS, SILTY CLAYS, LEAN CLAYS
+Soil Log Legend
+ORGANIC CLAYS OF MEDIUM TO HIGH
+PLASTICITY, ORGANIC SILTS
+SC
+Plate
+GM
+FINE-
+GRAINED
+SOILS
+COARSE-
+GRAINED
+SOILS
+CLEAN SANDS
+SANDS WITH
+FINES
+SP
+SANDS
+GRAVELS
+WELL-GRADED GRAVELS,  GRAVEL-SAND
+MIXTURES, LITTLE OR NO FINES
+ML
+CL
+OH
+LESS THAN 5%
+FINES
+GRAVELS WITH
+FINES
+CLEAN
+GRAVELS
+GRAB SAMPLE
+PLASTICITY INDEX (NP=NON-PLASTIC)
+TV
+LEGEND
+WATER LEVEL OBSERVED IN BORING AT TIME OF
+DRILLING
+WATER LEVEL OBSERVED IN BORING AFTER DRILLING
+SM
+MAJOR DIVISIONS
+GP
+MORE THAN 12%
+FINES
+PT
+LESS THAN 5%
+FINES
+UNIFIED SOIL CLASSIFICATION SYSTEM (USCS)
+ORGANIC SILTS AND ORGANIC SILTY
+CLAYS OF LOW PLASTICITY
+SW
+GC
+INORGANIC SILT, MICACEOUS OR
+DIATOMACEOUS FINE SAND OR SILTY
+SOILS
+INORGANIC CLAYS OF HIGH PLASTICITY
+PI
+LL
+TXUU
+UNCONFINED COMPRESSION
+OR UNIAXIAL COMPRESSIVE STRENGTH
+CORE SAMPLE
+SHELBY TUBE SAMPLE
+LIQUID LIMIT (NP=NON-PLASTIC)
+UC
+GEOLABS, INC.
+Geotechnical Engineering
+LOG LEGEND FOR SOIL  8042-00.GPJ  GEOLABS.GDT  9/24/20
+A-0.2
+Medium Sand
+Fine Sand
+#4 to #200 (4.75-mm to 0.075-mm)
+#4 to #10 (4.75-mm to 2-mm)
+> 12 inches (305-mm)
+3-inch to #4 (75-mm to 4.75-mm)
+Sieve Number and / or Size
+Gravel
+#10 to #40 (2-mm to 0.425-mm)
+#40 to #200 (0.425-mm to 0.075-mm)
+3 to 12 inches (75-mm to 305-mm)
+Description
+PP Readings
+(tsf)
+2.0 - 4.0
+> 4.0
+N-Value (Blows/Foot)
+MCS
+0 - 4
+RELATIVE DENSITY / CONSISTENCY
+GRAIN SIZE DEFINITION
+ABBREVIATIONS
+N-Value (Blows/Foot)
+0 - 7
+WOH:  Weight of Hammer
+WOR:  Weight of Drill Rods
+SPT:    Standard Penetration Test Split-Spoon Sampler
+MCS:   Modified California Sampler
+PP:      Pocket Penetrometer
+4 - 7
+7 - 15
+15 - 27
+27 - 55
+SPT
+0 - 2
+> 55
+> 30
+4 - 8
+15 - 30
+MOISTURE CONTENT DEFINITIONS
+SPT
+0 - 4
+4 - 10
+10 - 30
+30 - 50
+> 50
+MCS
+Loose
+EXAMPLE: Soil Containing 60% Gravel, 25% Sand, 15% Fines. Described as: SILTY GRAVEL with some sand
+Plate
+GRANULAR SOIL (- #200 <50%)
+2 - 4
+8 - 15
+Relative
+Density
+Very Loose
+Dense
+Very Dense
+COHESIVE SOIL (- #200    50%)
+PRIMARY constituents are composed of the largest
+percent of the soil mass. Primary constituents are
+capitalized and bold (i.e., GRAVEL, SAND)
+PRIMARY constituents are based on plasticity. Primary
+constituents are capitalized and bold (i.e., CLAY, SILT)
+SECONDARY constituents are composed of a
+percentage less than the primary constituent. If the soil
+mass consists of 12 percent or more fines content, a
+cohesive constituent is used (SILTY or CLAYEY);
+otherwise, a granular constituent is used (GRAVELLY
+or SANDY) provided that the secondary constituent
+consists of 20 percent or more of the soil mass.
+Secondary constituents are capitalized and bold (i.e.,
+SANDY GRAVEL, CLAYEY SAND) and precede the
+primary constituent.
+SECONDARY constituents are composed of a
+percentage less than the primary constituent, but more
+than 20 percent of the soil mass. Secondary constituents
+are capitalized and bold (i.e., SANDY CLAY, SILTY
+CLAY, CLAYEY SILT) and precede the primary
+constituent.
+Sand
+Boulders
+Cobbles
+Coarse Gravel
+3-inch to 3/4-inch (75-mm to 19-mm)
+Fine Gravel
+3/4-inch to #4 (19-mm to 4.75-mm)
+GEOLABS, INC. CLASSIFICATION*
+Granular Soils
+Cohesive Soils
+Consistency
+accessory descriptions compose of the following:
+with some: >12%
+with a little: 5 - 12%
+with traces of: <5%
+accessory descriptions are lower cased and follow the
+Primary and Secondary Constituents
+(i.e., SILTY CLAY with some sand)
+Very Soft
+Soft
+Medium Stiff
+Stiff
+Very Stiff
+Hard
+< 0.5
+0.5 - 1.0
+1.0 - 2.0
+7 - 18
+18 - 55
+55 - 91
+> 91
+Medium Dense
+Coarse Sand
+(with deviations from ASTM D2488)
+Soil Classification Log Key
+*Soil descriptions are based on ASTM D2488-09a, Visual-Manual Procedure, with the
+above modifications by Geolabs, Inc. to the Unified Soil Classification System (USCS).
+accessory descriptions compose of the following:
+with some: >12%
+with a little: 5 - 12%
+with traces of: <5%
+accessory descriptions are lower cased and follow the
+Primary and Secondary Constituents
+(i.e., SILTY GRAVEL with a little sand)
+Dry:    Absence of moisture, dry to the touch
+Moist: Damp but no visible water
+Wet:   Visible free water
+SOIL_CLASS_LOG_KEY  8042-00.GPJ  GEOLABS.GDT  9/24/20
+GEOLABS, INC.
+Geotechnical Engineering
+A-0.3
+ROCK DESCRIPTIONS
+Plate
+BRECCIA
+CLINKER
+COBBLES
+CORAL
+BASALT
+ROCK DESCRIPTION SYSTEM
+Greater than 24 inches apart
+12 to 24 inches apart
+6 to 12 inches apart
+3 to 6 inches apart
+Less than 3 inches apart
+Rock shows no sign of discoloration or loss of strength.
+Slight discoloration inwards from open fractures.
+Discoloration throughout and noticeably weakened though not able to break by hand.
+Most minerals decomposed with some corestones present in residual soil mass. Can be broken by hand.
+Saprolite. Mineral residue completely decomposed to soil but fabric and structure preserved.
+The following terms describe general fracture spacing of a rock:
+The following terms describe the chemical weathering of a rock:
+ROCK FRACTURE CHARACTERISTICS
+DEGREE OF WEATHERING
+HARDNESS
+BOULDERS
+VOID/CAVITY
+TUFF
+SILTSTONE
+LIMESTONE
+Unweathered:
+Slightly Weathered:
+Moderately Weathered:
+Highly Weathered:
+Extremely Weathered:
+Very Hard:
+Hard:
+Medium Hard:
+Soft:
+Very Soft:
+SANDSTONE
+Massive:
+Slightly Fractured:
+Moderately Fractured:
+Closely Fractured:
+Severely Fractured:
+Rock Log Legend
+The following terms describe the resistance of a rock to indentation or scratching:
+Specimen breaks with difficulty after several "pinging" hammer blows.
+Example: Dense, fine grain volcanic rock
+Specimen breaks with some difficulty after several hammer blows.
+Example: Vesicular, vugular, coarse-grained rock
+Specimen can be broked by one hammer blow. Cannot be scraped by knife. SPT may penetrate by
+~25 blows per inch with bounce.
+Example: Porous rock such as clinker, cinder, and coral reef
+Can be indented by one hammer blow. Can be scraped or peeled by knife. SPT can penetrate by
+~100 blows per foot.
+Example: Weathered rock, chalk-like coral reef
+Crumbles under hammer blow. Can be peeled and carved by knife. Can be indented by finger
+pressure.
+Example: Saprolite
+CONGLOMERATE
+GEOLABS, INC.
+Geotechnical Engineering
+LOG LEGEND FOR ROCK  8042-00.GPJ  GEOLABS.GDT  9/24/20
+15
+48
+29
+MH
+ML
+CH
+MH
+0
+50
+60
+83
+65
+8
+51
+55/6"
+ +20/0"
+ Ref.
+0
+85
+94
+100
+97
+LL=65
+PI=28
+UC=
+3250 psi
+4-inch ASPHALTIC CONCRETE
+Dark brown CLAYEY SILT with some gravel
+(coralline), very stiff, moist (fill)
+Grayish brown SANDY SILT with some gravel
+(basaltic), stiff, moist (fill)
+Grayish brown SILTY CLAY with a little gravel
+(basaltic), stiff to very stiff, moist (colluvium)
+Reddish brown with gray motttling CLAYEY SILT
+with some sand (basaltic) and remnant vesicular
+structure, hard, moist (saprolite)
+Brownish gray vesicular BASALT, moderately
+fractured, slightly to moderately weathered,
+medium hard to hard (basalt formation)
+grades to gray at 12.5 feet
+grades to highly weathered, soft locally
+grades to vugular, very hard
+grades to highly weathered, soft
+grades to moderately weathered, medium hard
+ Boring terminated at 30.5 feet
+ * Elevations estimated from Schematic Grading
+Plan for Phase 1A, 1B and Phase 2 & 3
+transmitted by Hida, Okamoto & Associates, Inc.
+on August 3, 2020.
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-75DG2
+4" Solid-Stem Auger & PQ Coring
+140 lb. wt., 30 in. drop
+5
+10
+15
+20
+25
+30
+35
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation (feet ): 52.5 *
+Sample
+Moisture
+Content (%)
+B-1
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+May 11, 2020
+May 11, 2020
+S. Latronic
+30.5 feet
+8042-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 1
+(Energy Transfer Ratio = 91.5%)
+GEOLABS, INC.
+Geotechnical Engineering
+HPHA SCHOOL STREET REDEVELOPMENT
+HONOLULU, OAHU, HAWAII
+BORING_LOG  8042-00.GPJ  GEOLABS.GDT  9/24/20
+26.0 ft.   05/11/2020 1150 HRS
+30
+66
+MH
+SC
+14
+67
+85
+100
+85
+65
+30/1"
+83
+100
+100
+100
+100
+100
+UC=
+900 psi
+UC=
+5670 psi
+Brown CLAYEY SILT with some gravel (basaltic)
+and a little construction debris, moist (fill)
+Brownish gray CLAYEY SAND with some gravel
+(basaltic), moist (colluvium)
+Reddish brown vesicular BASALT, closely
+fractured, moderately to highly weathered,
+medium hard (basalt formation)
+grades to moderately fractured
+Gray BASALT, moderately fractured, slightly
+weathered, hard (basalt formation)
+grades to massive
+grades to highly weathered, soft locally
+grades to closely fractured
+ Boring terminated at 31.5 feet
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-45C TRUCK
+4" Solid-Stem Auger & PQ Coring
+140 lb. wt., 30 in. drop
+5
+10
+15
+20
+25
+30
+35
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation (feet ): 59 *
+Sample
+Moisture
+Content (%)
+B-2
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+April 17, 2020
+April 17, 2020
+S. Latronic
+31.5 feet
+8042-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 2
+(Energy Transfer Ratio = 78%)
+GEOLABS, INC.
+Geotechnical Engineering
+HPHA SCHOOL STREET REDEVELOPMENT
+HONOLULU, OAHU, HAWAII
+BORING_LOG  8042-00.GPJ  GEOLABS.GDT  9/24/20
+Not Encountered
+32
+70
+GM
+MH
+CH
+SM
+100
+60
+50
+82
+38
+57
+43
+14
+10/6"
+ +25/0"
+ Ref.
+100
+95
+100
+100
+100
+93
+92
+Ring
+Swell
+UC=
+3490 psi
+2-inch ASPHALTIC CONCRETE
+Brownish gray SILTY GRAVEL (BASALTIC),
+moist (fill)
+Brown with tan mottling CLAYEY SILT with some
+sand and a little gravel, moist (fill)
+Grayish brown SILTY CLAY, stiff, moist
+(alluvium)
+Brownish gray SILTY SAND (BASALTIC) with
+some decomposed gravel, medium dense, moist
+(saprolite)
+Gray with brown mottling vesicular BASALT,
+moderately fractured, moderately weathered,
+medium hard to hard (basalt formation)
+grades to closely fractured, soft locally at 9 feet
+grades to highly weathered, soft locally
+Gray vugular BASALT, massive, unweathered,
+very hard (basalt formation)
+Reddish brown BASALT, closely fractured, highly
+weathered, medium hard (basalt formation)
+grades to gray with orange mottling
+grades to slightly weathered, hard
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-45C TRUCK
+4" Solid-Stem Auger & PQ Coring
+140 lb. wt., 30 in. drop
+5
+10
+15
+20
+25
+30
+35
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation (feet ): 46 *
+Sample
+Moisture
+Content (%)
+B-3
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+May 7, 2020
+May 7, 2020
+S. Latronic
+71.5 feet
+8042-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 3.1
+(Energy Transfer Ratio = 78%)
+GEOLABS, INC.
+Geotechnical Engineering
+HPHA SCHOOL STREET REDEVELOPMENT
+HONOLULU, OAHU, HAWAII
+BORING_LOG  8042-00.GPJ  GEOLABS.GDT  9/24/20
+23.1 ft.   05/07/2020 1710 HRS
+22.8 ft.   05/07/2020 1740 HRS
+47
+53
+88
+85
+87
+75
+90
+42
+100
+100
+100
+100
+100
+UC=
+570 psi
+UC=
+5380 psi
+Reddish brown with multi-color mottling
+cemented BASALT, closely to severely
+fractured, highly weathered, soft (welded clinker)
+grades to moderately fractured locally
+Brown GRAVELLY COBBLES (BASALTIC) with
+some sand (clinker)
+Gray BASALT, closely fractured, moderately
+weathered, very hard (basalt formation)
+Gray BASALT, massive, slightly weathered, very
+hard (basalt formation)
+grades to moderately fractured locally
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-45C TRUCK
+4" Solid-Stem Auger & PQ Coring
+140 lb. wt., 30 in. drop
+40
+45
+50
+55
+60
+65
+70
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Sample
+Moisture
+Content (%)
+B-3
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+(Continued from previous plate)
+May 7, 2020
+May 7, 2020
+S. Latronic
+71.5 feet
+8042-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 3.2
+(Energy Transfer Ratio = 78%)
+GEOLABS, INC.
+Geotechnical Engineering
+HPHA SCHOOL STREET REDEVELOPMENT
+HONOLULU, OAHU, HAWAII
+BORING_LOG  8042-00.GPJ  GEOLABS.GDT  9/24/20
+23.1 ft.   05/07/2020 1710 HRS
+22.8 ft.   05/07/2020 1740 HRS
+ Boring terminated at 71.5 feet
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-45C TRUCK
+4" Solid-Stem Auger & PQ Coring
+140 lb. wt., 30 in. drop
+75
+80
+85
+90
+95
+100
+105
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Sample
+Moisture
+Content (%)
+B-3
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+(Continued from previous plate)
+May 7, 2020
+May 7, 2020
+S. Latronic
+71.5 feet
+8042-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 3.3
+(Energy Transfer Ratio = 78%)
+GEOLABS, INC.
+Geotechnical Engineering
+HPHA SCHOOL STREET REDEVELOPMENT
+HONOLULU, OAHU, HAWAII
+BORING_LOG  8042-00.GPJ  GEOLABS.GDT  9/24/20
+23.1 ft.   05/07/2020 1710 HRS
+22.8 ft.   05/07/2020 1740 HRS
+MH
+GW
+GP
+19
+58
+45
+32
+70
+68
+33
+100
+100
+87
+78
+100
+100
+75
+UC=
+4450 psi
+UC=
+2520 psi
+2-inch ASPHALTIC CONCRETE
+Dark brown CLAYEY SILT with some sand
+(coralline) and a little gravel (basaltic), stiff, moist
+(fill)
+Brownish gray vesicular BASALT, closely to
+severely fractured, moderately weathered,
+medium hard (basalt formation)
+grades to moderately fractured, slightly weathered
+grades to highly weathered
+Brownish gray SANDY GRAVEL (BASALTIC),
+moist (clinker)
+Grayish brown cemented BASALT, closely
+fractured, highly weathered, soft to medium hard
+(welded clinker)
+Gray BASALT, moderately fractured, slightly
+weathered, very hard (basalt formation)
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-45C TRUCK
+4" Solid-Stem Auger & PQ Coring
+140 lb. wt., 30 in. drop
+5
+10
+15
+20
+25
+30
+35
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation (feet ): 49.5 *
+Sample
+Moisture
+Content (%)
+B-4
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+May 12, 2020
+May 13, 2020
+S. Latronic
+71 feet
+8042-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 4.1
+(Energy Transfer Ratio = 78%)
+GEOLABS, INC.
+Geotechnical Engineering
+HPHA SCHOOL STREET REDEVELOPMENT
+HONOLULU, OAHU, HAWAII
+BORING_LOG  8042-00.GPJ  GEOLABS.GDT  9/24/20
+25.1 ft.   05/12/2020 1540 HRS
+24.8 ft.   05/13/2020 1045 HRS
+GP
+GP
+GP
+GP
+27
+25
+50
+10
+58
+28
+35
+83
+67
+90
+40
+98
+85
+97
+UC=
+2600 psi
+Reddish gray SANDY GRAVEL (BASALTIC) with
+some cobbles (clinker)
+Gray BASALT, closely to moderately fractured,
+slightly to moderately weathered, hard to very
+hard (basalt formation)
+grades with thin clinker zones locally
+Brownish gray SANDY GRAVEL (BASALTIC)
+with some cobbles (clinker)
+Gray BASALT, moderately fractured, moderately
+to slightly weathered, very hard (basalt
+formation)
+grades with large vugs and clinker locally
+Reddish gray with orange mottling SANDY
+GRAVEL (BASALTIC) (clinker)
+Gray vugular BASALT, moderately fractured,
+slightly weathered, very hard (basalt formation)
+Brownish gray SANDY GRAVEL (BASALTIC)
+with some cobbles, medium dense to dense
+(clinker)
+Brownish gray vesicular BASALT, moderately to
+closely fractured, slightly to moderately
+weathered, medium hard to hard (basalt
+formation)
+grades to severely fractured at 65 feet
+grades to highly weathered locally
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-45C TRUCK
+4" Solid-Stem Auger & PQ Coring
+140 lb. wt., 30 in. drop
+40
+45
+50
+55
+60
+65
+70
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Sample
+Moisture
+Content (%)
+B-4
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+(Continued from previous plate)
+May 12, 2020
+May 13, 2020
+S. Latronic
+71 feet
+8042-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 4.2
+(Energy Transfer Ratio = 78%)
+GEOLABS, INC.
+Geotechnical Engineering
+HPHA SCHOOL STREET REDEVELOPMENT
+HONOLULU, OAHU, HAWAII
+BORING_LOG  8042-00.GPJ  GEOLABS.GDT  9/24/20
+25.1 ft.   05/12/2020 1540 HRS
+24.8 ft.   05/13/2020 1045 HRS
+ Boring terminated at 71 feet
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-45C TRUCK
+4" Solid-Stem Auger & PQ Coring
+140 lb. wt., 30 in. drop
+75
+80
+85
+90
+95
+100
+105
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Sample
+Moisture
+Content (%)
+B-4
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+(Continued from previous plate)
+May 12, 2020
+May 13, 2020
+S. Latronic
+71 feet
+8042-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 4.3
+(Energy Transfer Ratio = 78%)
+GEOLABS, INC.
+Geotechnical Engineering
+HPHA SCHOOL STREET REDEVELOPMENT
+HONOLULU, OAHU, HAWAII
+BORING_LOG  8042-00.GPJ  GEOLABS.GDT  9/24/20
+25.1 ft.   05/12/2020 1540 HRS
+24.8 ft.   05/13/2020 1045 HRS
+37
+59
+66
+MH
+CH
+42
+25
+45
+45
+33
+42
+12
+13
+78
+67
+65
+92
+93
+100
+LL=122
+PI=99
+Direct
+Shear
+Consol.
+UC=
+2600 psi
+4-inch ASPHALTIC CONCRETE
+Dark brown with gray mottling CLAYEY SILT with
+some sand and a little gravel (basaltic), stiff to
+very stiff, moist (fill)
+Brownish gray SILTY CLAY with traces of gravel
+(basaltic), stiff, moist (colluvium)
+Brownish gray vesicular BASALT, moderately
+fractured, slightly to moderately weathered,
+medium hard to hard (basalt formation)
+grades with highly weathered soft zones locally
+grades with small voids locally
+grades with soft, friable zones locally
+grades to highly weathered locally
+grades to closely fractured, moderately weathered
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-45C TRUCK
+4" Solid-Stem Auger & PQ Coring
+140 lb. wt., 30 in. drop
+5
+10
+15
+20
+25
+30
+35
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation (feet ): 44 *
+Sample
+Moisture
+Content (%)
+B-5
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+May 13, 2020
+May 14, 2020
+S. Latronic
+71.5 feet
+8042-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 5.1
+(Energy Transfer Ratio = 78%)
+GEOLABS, INC.
+Geotechnical Engineering
+HPHA SCHOOL STREET REDEVELOPMENT
+HONOLULU, OAHU, HAWAII
+BORING_LOG  8042-00.GPJ  GEOLABS.GDT  9/24/20
+20.4 ft.   05/13/2020 1530 HRS
+21.2 ft.   05/14/2020 0820 HRS
+GP
+GP
+37
+32
+13
+7
+15
+68
+100
+60
+23
+98
+23
+80
+100
+grades to severely fractured locally
+Brownish gray SANDY GRAVEL (BASALTIC)
+with some cobbles (clinker)
+Gray vugular BASALT, closely fractured, slightly
+weathered, very hard (basalt formation)
+Grayish brown SANDY GRAVEL (BASALTIC)
+with a little cobbles (clinker)
+grades with some cobbles
+Gray vugular BASALT, moderately fractured,
+unweathered, very hard (basalt formation)
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-45C TRUCK
+4" Solid-Stem Auger & PQ Coring
+140 lb. wt., 30 in. drop
+40
+45
+50
+55
+60
+65
+70
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Sample
+Moisture
+Content (%)
+B-5
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+(Continued from previous plate)
+May 13, 2020
+May 14, 2020
+S. Latronic
+71.5 feet
+8042-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 5.2
+(Energy Transfer Ratio = 78%)
+GEOLABS, INC.
+Geotechnical Engineering
+HPHA SCHOOL STREET REDEVELOPMENT
+HONOLULU, OAHU, HAWAII
+BORING_LOG  8042-00.GPJ  GEOLABS.GDT  9/24/20
+20.4 ft.   05/13/2020 1530 HRS
+21.2 ft.   05/14/2020 0820 HRS
+ Boring terminated at 71.5 feet
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-45C TRUCK
+4" Solid-Stem Auger & PQ Coring
+140 lb. wt., 30 in. drop
+75
+80
+85
+90
+95
+100
+105
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Sample
+Moisture
+Content (%)
+B-5
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+(Continued from previous plate)
+May 13, 2020
+May 14, 2020
+S. Latronic
+71.5 feet
+8042-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 5.3
+(Energy Transfer Ratio = 78%)
+GEOLABS, INC.
+Geotechnical Engineering
+HPHA SCHOOL STREET REDEVELOPMENT
+HONOLULU, OAHU, HAWAII
+BORING_LOG  8042-00.GPJ  GEOLABS.GDT  9/24/20
+20.4 ft.   05/13/2020 1530 HRS
+21.2 ft.   05/14/2020 0820 HRS
+14
+27
+21
+MH
+SM
+43
+32
+18
+30
+50/5"
+14
+15/6"
+ +25/0"
+ Ref.
+68
+100
+100
+100
+UC=
+1070 psi
+2-inch ASPHALTIC CONCRETE
+Brown with gray mottling CLAYEY SILT with
+some gravel (basaltic), very stiff, moist (fill)
+Gray COBBLES (BASALTIC), dense, moist (fill)
+grades with voids at 3.5 feet
+Gray with brown mottling COBBLY BOULDERS
+(BASALTIC) with a little clay, very dense, moist
+(colluvium)
+Grayish brown SILTY SAND (BASALTIC) with
+some gravel and remnant vesicular structure,
+medium dense, moist (saprolite)
+Brownish gray vesicular BASALT, soft (basalt
+formation)
+Brownish gray vesicular BASALT, moderately
+fractured, moderately weathered, medium hard
+to hard (basalt formation)
+grades with highly weathered zones locally
+grades to closely fractured
+grades to severely fractured, highly weathered
+locally
+grades to slightly fractured
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-45C TRUCK
+4" Solid-Stem Auger & PQ Coring
+140 lb. wt., 30 in. drop
+5
+10
+15
+20
+25
+30
+35
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation (feet ): 40.5 *
+Sample
+Moisture
+Content (%)
+B-6
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+April 20, 2020
+April 22, 2020
+S. Latronic
+101 feet
+8042-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 6.1
+(Energy Transfer Ratio = 78%)
+GEOLABS, INC.
+Geotechnical Engineering
+HPHA SCHOOL STREET REDEVELOPMENT
+HONOLULU, OAHU, HAWAII
+BORING_LOG  8042-00.GPJ  GEOLABS.GDT  9/24/20
+3.5 ft.   04/20/2020 0925 HRS
+19.2 ft.   04/22/2020 1425 HRS
+26
+SM
+0
+0
+45
+67
+77
+62
+20
+59
+45
+48
+100
+90
+100
+93
+80
+Sieve
+- #200 =
+15.3%
+UC=
+11330 psi
+Brown with multi-color mottling BASALT,
+severely to closely fractured, highly weathered,
+soft (basalt formation)
+Brown with gray mottling SILTY SAND
+(BASALTIC) with some gravel and a little
+cobbles, very dense (weathered clinker)
+Reddish brown with gray mottling BASALT,
+moderately fractured, moderately to highly
+weathered, medium hard (welded clinker)
+grades to hard
+Gray BASALT, slightly to moderately fractured,
+unweathered, very hard (basalt formation)
+grades to severely fractured locally
+grades to closely fractured
+grades to vugular
+Brown SANDY GRAVEL (BASALTIC) with a little
+cobbles (clinker)
+Gray with red mottling vesicular BASALT, closely
+to severely fractured, moderately weathered,
+medium hard to hard (basalt formation)
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-45C TRUCK
+4" Solid-Stem Auger & PQ Coring
+140 lb. wt., 30 in. drop
+40
+45
+50
+55
+60
+65
+70
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Sample
+Moisture
+Content (%)
+B-6
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+(Continued from previous plate)
+April 20, 2020
+April 22, 2020
+S. Latronic
+101 feet
+8042-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 6.2
+(Energy Transfer Ratio = 78%)
+GEOLABS, INC.
+Geotechnical Engineering
+HPHA SCHOOL STREET REDEVELOPMENT
+HONOLULU, OAHU, HAWAII
+BORING_LOG  8042-00.GPJ  GEOLABS.GDT  9/24/20
+3.5 ft.   04/20/2020 0925 HRS
+19.2 ft.   04/22/2020 1425 HRS
+GP
+GP
+GP
+28
+52
+33
+58
+0
+67
+65
+92
+80
+90
+45
+97
+UC=
+4960 psi
+Grayish brown SANDY GRAVEL (BASALTIC)
+with some cobbles (clinker)
+Gray vugular BASALT, moderately fractured,
+slightly weathered, very hard (basalt formation)
+Brown SANDY GRAVEL (BASALTIC) (clinker)
+Reddish brown to gray vesicular BASALT,
+closely fractured, highly to moderately
+weathered, medium hard (basalt formation)
+grades to slightly fractured, very hard
+Brown with gray mottling SANDY GRAVEL
+(BASALTIC) with some cobbles (clinker)
+Gray vugular BASALT, closely fractured, slightly
+weathered, very hard (basalt formation)
+Reddish brown to gray vesicular BASALT,
+moderately fractured, slightly to moderately
+weathered, medium hard to hard (basalt
+formation)
+ Boring terminated at 101 feet
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-45C TRUCK
+4" Solid-Stem Auger & PQ Coring
+140 lb. wt., 30 in. drop
+75
+80
+85
+90
+95
+100
+105
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Sample
+Moisture
+Content (%)
+B-6
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+(Continued from previous plate)
+April 20, 2020
+April 22, 2020
+S. Latronic
+101 feet
+8042-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 6.3
+(Energy Transfer Ratio = 78%)
+GEOLABS, INC.
+Geotechnical Engineering
+HPHA SCHOOL STREET REDEVELOPMENT
+HONOLULU, OAHU, HAWAII
+BORING_LOG  8042-00.GPJ  GEOLABS.GDT  9/24/20
+3.5 ft.   04/20/2020 0925 HRS
+19.2 ft.   04/22/2020 1425 HRS
+27
+4
+GM
+CH
+ML
+39
+40
+55
+62
+47
+47
+7
+43
+25/1"
+96
+92
+100
+93
+95
+100
+45
+LL=94
+PI=67
+UC=
+1400 psi
+UC=
+1850 psi
+3-inch ASPHALTIC CONCRETE
+Brownish gray SILTY GRAVEL (BASALTIC),
+moist (fill)
+Brown SILTY CLAY with some gravel (basaltic),
+very stiff, moist (colluvium)
+Brown with gray mottling CLAYEY SILT with
+some decomposed gravel and remnant vesicular
+structure, very stiff, moist (weathered basalt)
+Brownish gray to gray vesicular BASALT,
+moderately to closely fractured, moderately to
+closely weathered, medium hard to hard (basalt
+formation)
+grades with highly weathered, soft zones locally
+grades to highly weathered, soft locally
+grades to highly weathered
+grades to moderately weathered
+Reddish brown BASALT, closely fractured,
+moderately to highly weathered, medium hard
+(basalt formation)
+grades to gray locally
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-45C TRUCK
+4" Solid-Stem Auger & PQ Coring
+140 lb. wt., 30 in. drop
+5
+10
+15
+20
+25
+30
+35
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation (feet ): 49.5 *
+Sample
+Moisture
+Content (%)
+B-7
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+May 4, 2020
+May 5, 2020
+S. Latronic
+71.5 feet
+8042-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 7.1
+(Energy Transfer Ratio = 78%)
+GEOLABS, INC.
+Geotechnical Engineering
+HPHA SCHOOL STREET REDEVELOPMENT
+HONOLULU, OAHU, HAWAII
+BORING_LOG  8042-00.GPJ  GEOLABS.GDT  10/17/20
+27.5 ft.   05/05/2020 0835 HRS
+27.4 ft.   05/05/2020 1055 HRS
+GP
+80
+43
+28
+32
+7
+12
+57
+97
+100
+100
+85
+72
+50
+100
+UC=
+820 psi
+grades to severely fractured with several small
+voids locally
+Brown with multi-color mottling BASALT,
+moderately to slightly fractured, moderately
+weathered, hard (basalt formation)
+grades to unweathered, very hard
+grades to closely fractured, highly weathered
+locally
+grades to closely fractured
+grades to vugular
+Gray and brown cemented BASALT, moderately
+fractured, moderately to highly weathered,
+medium hard (welded clinker)
+Gray vugular BASALT, moderately fractured,
+slightly weathered, very hard (basalt formation)
+Brown and gray SANDY GRAVEL (BASALTIC)
+with some cobbles (clinker)
+Brownish gray to gray vugular BASALT, severely
+to closely fractured, highly weathered, medium
+hard (basalt formation)
+Brownish gray GRAVELLY COBBLES
+(BASALTIC) with some sand (clinker)
+Gray vesicular BASALT, moderately fractured,
+slightly weathered, hard (basalt formation)
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-45C TRUCK
+4" Solid-Stem Auger & PQ Coring
+140 lb. wt., 30 in. drop
+40
+45
+50
+55
+60
+65
+70
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Sample
+Moisture
+Content (%)
+B-7
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+(Continued from previous plate)
+May 4, 2020
+May 5, 2020
+S. Latronic
+71.5 feet
+8042-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 7.2
+(Energy Transfer Ratio = 78%)
+GEOLABS, INC.
+Geotechnical Engineering
+HPHA SCHOOL STREET REDEVELOPMENT
+HONOLULU, OAHU, HAWAII
+BORING_LOG  8042-00.GPJ  GEOLABS.GDT  10/17/20
+27.5 ft.   05/05/2020 0835 HRS
+27.4 ft.   05/05/2020 1055 HRS
+ Boring terminated at 71.5 feet
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-45C TRUCK
+4" Solid-Stem Auger & PQ Coring
+140 lb. wt., 30 in. drop
+75
+80
+85
+90
+95
+100
+105
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Sample
+Moisture
+Content (%)
+B-7
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+(Continued from previous plate)
+May 4, 2020
+May 5, 2020
+S. Latronic
+71.5 feet
+8042-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 7.3
+(Energy Transfer Ratio = 78%)
+GEOLABS, INC.
+Geotechnical Engineering
+HPHA SCHOOL STREET REDEVELOPMENT
+HONOLULU, OAHU, HAWAII
+BORING_LOG  8042-00.GPJ  GEOLABS.GDT  10/17/20
+27.5 ft.   05/05/2020 0835 HRS
+27.4 ft.   05/05/2020 1055 HRS
+39
+49
+36
+47
+37
+75
+66
+51
+MH
+CH
+CH
+SM
+83
+62
+33
+1.5
+1.5
+16
+12
+27
+33
+25/6"
+ +50/2"
+100
+100
+100
+LL=91
+PI=67
+TXUU
+Su=1.5 ksf
+Consol.
+Sieve
+- #200 =
+15.2%
+UC=
+2910 psi
+Brown CLAYEY SILT with a little sand and traces
+of construction debris, moist (fill)
+Grayish brown SILTY CLAY with traces of sand,
+stiff, moist (alluvium)
+Gray with brown mottling SILTY CLAY with some
+cobbles (basaltic), very stiff, moist (alluvium)
+Yellowish brown with gray mottling SILTY SAND
+(BASALTIC) with traces of gravel, medium
+dense, moist (saprolite)
+grades with clayey silt
+Brownish gray to gray vesicular BASALT,
+moderately fractured, slightly weathered, hard to
+very hard (basalt formation)
+grades to closely fractured, moderately weathered
+grades to highly weathered locally
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-45C TRUCK
+4" Solid-Stem Auger & PQ Coring
+140 lb. wt., 30 in. drop
+5
+10
+15
+20
+25
+30
+35
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation (feet ): 44 *
+Sample
+Moisture
+Content (%)
+B-8
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+April 16, 2020
+April 16, 2020
+S. Latronic
+62 feet
+8042-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 8.1
+(Energy Transfer Ratio = 78%)
+GEOLABS, INC.
+Geotechnical Engineering
+HPHA SCHOOL STREET REDEVELOPMENT
+HONOLULU, OAHU, HAWAII
+BORING_LOG  8042-00.GPJ  GEOLABS.GDT  9/24/20
+23.0 ft.   04/16/2020 1530 HRS
+40
+28
+55
+50
+40
+95
+100
+100
+100
+93
+grades to severely fractured
+grades to slightly fractured locally
+grades to slightly to moderately fractured
+ Boring terminated at 62 feet
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-45C TRUCK
+4" Solid-Stem Auger & PQ Coring
+140 lb. wt., 30 in. drop
+40
+45
+50
+55
+60
+65
+70
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Sample
+Moisture
+Content (%)
+B-8
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+(Continued from previous plate)
+April 16, 2020
+April 16, 2020
+S. Latronic
+62 feet
+8042-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 8.2
+(Energy Transfer Ratio = 78%)
+GEOLABS, INC.
+Geotechnical Engineering
+HPHA SCHOOL STREET REDEVELOPMENT
+HONOLULU, OAHU, HAWAII
+BORING_LOG  8042-00.GPJ  GEOLABS.GDT  9/24/20
+23.0 ft.   04/16/2020 1530 HRS
+GW
+63
+47
+12
+0
+82
+47
+62
+88
+87
+93
+20
+100
+97
+98
+UC=
+5260 psi
+UC=
+1330 psi
+4-inch ASPHALTIC CONCRETE
+Gray angular SANDY GRAVEL (BASALTIC),
+moist (base course)
+Gray vesicular BASALT, slightly to moderately
+fractured, slightly weathered, very hard (basalt
+formation)
+Grayish brown BASALT, closely to moderately
+fractured, moderately weathered, medium hard
+(basalt formation)
+grades to severely fracture, soft
+VOID
+Gray to brownish gray vesicular BASALT, slightly
+to moderately fractured, slightly weathered, very
+hard (basalt formation)
+Reddish brown to gray vesicular BASALT,
+closely fractured, moderately to highly
+weathered, soft to medium hard (basalt
+formation)
+grades to vugular, hard locally
+Brownish gray to gray vesicular BASALT,
+moderately fractured, moderately weathered,
+medium hard to hard (basalt formation)
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-45C TRUCK
+4" Solid-Stem Auger & PQ Coring
+140 lb. wt., 30 in. drop
+5
+10
+15
+20
+25
+30
+35
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation (feet ): 51 *
+Sample
+Moisture
+Content (%)
+B-9
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+May 6, 2020
+May 7, 2020
+S. Latronic
+72 feet
+8042-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 9.1
+(Energy Transfer Ratio = 78%)
+GEOLABS, INC.
+Geotechnical Engineering
+HPHA SCHOOL STREET REDEVELOPMENT
+HONOLULU, OAHU, HAWAII
+BORING_LOG  8042-00.GPJ  GEOLABS.GDT  9/24/20
+28.5 ft.   05/06/2020 1545 HRS
+28.6 ft.   05/06/2020 1615 HRS
+45
+8
+50
+70
+63
+45
+58
+100
+82
+100
+100
+88
+100
+100
+UC=
+18260 psi
+grades with severely fractured zones locally
+Gray with brown mottling cemented BASALT,
+moderately fractured, moderately weathered,
+medium hard (welded clinker)
+Gray dense BASALT, moderately fractured,
+slightly weathered, hard (basalt formation)
+Orangish brown and gray cemented BASALT,
+severely fractured, highly weathered, medium
+hard (welded clinker)
+Gray BASALT, moderately fractured, slightly
+weathered, very hard (basalt formation)
+grades to highly weathered locally
+Gray with some brown cemented BASALT,
+moderately fractured, moderately weathered,
+medium hard (welded clinker)
+grades with boulders (basaltic), dense, very hard
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-45C TRUCK
+4" Solid-Stem Auger & PQ Coring
+140 lb. wt., 30 in. drop
+40
+45
+50
+55
+60
+65
+70
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Sample
+Moisture
+Content (%)
+B-9
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+(Continued from previous plate)
+May 6, 2020
+May 7, 2020
+S. Latronic
+72 feet
+8042-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 9.2
+(Energy Transfer Ratio = 78%)
+GEOLABS, INC.
+Geotechnical Engineering
+HPHA SCHOOL STREET REDEVELOPMENT
+HONOLULU, OAHU, HAWAII
+BORING_LOG  8042-00.GPJ  GEOLABS.GDT  9/24/20
+28.5 ft.   05/06/2020 1545 HRS
+28.6 ft.   05/06/2020 1615 HRS
+ Boring terminated at 72 feet
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-45C TRUCK
+4" Solid-Stem Auger & PQ Coring
+140 lb. wt., 30 in. drop
+75
+80
+85
+90
+95
+100
+105
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Sample
+Moisture
+Content (%)
+B-9
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+(Continued from previous plate)
+May 6, 2020
+May 7, 2020
+S. Latronic
+72 feet
+8042-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 9.3
+(Energy Transfer Ratio = 78%)
+GEOLABS, INC.
+Geotechnical Engineering
+HPHA SCHOOL STREET REDEVELOPMENT
+HONOLULU, OAHU, HAWAII
+BORING_LOG  8042-00.GPJ  GEOLABS.GDT  9/24/20
+28.5 ft.   05/06/2020 1545 HRS
+28.6 ft.   05/06/2020 1615 HRS
+31
+42
+46
+36
+65
+63
+73
+73
+63
+CH
+CH
+CH
+CH
+1.8
+2.0
+15
+12
+7
+22
+18
+19
+95
+63
+14
+43
+0
+Ring
+Swell
+LL=107
+PI=83
+TXUU
+Su=2.3 ksf
+Consol.
+Brown SILTY CLAY with some sand and traces
+of gravel, stiff, moist (fill)
+Grayish brown SILTY CLAY with a little gravel,
+stiff, moist (alluvium)
+Gray and brown COBBLY BOULDERS
+(BASALTIC) in a clayey matrix, dense, moist
+(colluvium)
+grades with more clay
+Brownish gray SILTY CLAY with a little cobbles
+(basaltic), very stiff, moist (older alluvium)
+Grayish brown SILTY CLAY with a little sand
+(basaltic), stiff to very stiff (older alluvium)
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-45C TRUCK
+4" Solid-Stem Auger & PQ Coring
+140 lb. wt., 30 in. drop
+5
+10
+15
+20
+25
+30
+35
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation (feet ): 44 *
+Sample
+Moisture
+Content (%)
+B-10
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+April 14, 2020
+April 15, 2020
+S. Latronic
+70 feet
+8042-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 10.1
+(Energy Transfer Ratio = 78%)
+GEOLABS, INC.
+Geotechnical Engineering
+HPHA SCHOOL STREET REDEVELOPMENT
+HONOLULU, OAHU, HAWAII
+BORING_LOG  8042-00.GPJ  GEOLABS.GDT  9/24/20
+24.5 ft.   04/15/2020 0905 HRS
+50
+51
+47
+71
+CH
+48
+83
+52
+73
+33
+20
+23
+50/4"
+21
+29
+97
+100
+93
+100
+100
+LL=73
+PI=45
+LL=61
+PI=44
+TXUU
+Su=0.5 ksf
+UC=
+2190 psi
+UC=
+6200 psi
+grades with less sand
+grades with more silt
+Gray vugular BASALT, moderately fractured,
+slightly weathered, very hard (basalt formation)
+Brownish gray vesicular BASALT, slightly to
+moderately fractured, slightly to moderately
+weathered, hard to very hard (basalt formation)
+grades to highly weathered locally at 51.5 feet
+Grayish brown vesicular BASALT, moderately
+fractured, moderately weathered, medium hard
+to hard (basalt formation)
+grades to gray
+grades to slightly weathered, very hard locally
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-45C TRUCK
+4" Solid-Stem Auger & PQ Coring
+140 lb. wt., 30 in. drop
+40
+45
+50
+55
+60
+65
+70
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Sample
+Moisture
+Content (%)
+B-10
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+(Continued from previous plate)
+April 14, 2020
+April 15, 2020
+S. Latronic
+70 feet
+8042-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 10.2
+(Energy Transfer Ratio = 78%)
+GEOLABS, INC.
+Geotechnical Engineering
+HPHA SCHOOL STREET REDEVELOPMENT
+HONOLULU, OAHU, HAWAII
+BORING_LOG  8042-00.GPJ  GEOLABS.GDT  9/24/20
+24.5 ft.   04/15/2020 0905 HRS
+ Boring terminated at 70 feet
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-45C TRUCK
+4" Solid-Stem Auger & PQ Coring
+140 lb. wt., 30 in. drop
+75
+80
+85
+90
+95
+100
+105
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Sample
+Moisture
+Content (%)
+B-10
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+(Continued from previous plate)
+April 14, 2020
+April 15, 2020
+S. Latronic
+70 feet
+8042-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 10.3
+(Energy Transfer Ratio = 78%)
+GEOLABS, INC.
+Geotechnical Engineering
+HPHA SCHOOL STREET REDEVELOPMENT
+HONOLULU, OAHU, HAWAII
+BORING_LOG  8042-00.GPJ  GEOLABS.GDT  9/24/20
+24.5 ft.   04/15/2020 0905 HRS
+4
+MH
+ML
+25/1"
+4-inch ASPHALTIC CONCRETE
+Dark brown CLAYEY SILT with some sand and a
+little gravel (coralline), moist (fill)
+Reddish brown with gray mottling CLAYEY SILT
+with some sand (basaltic) and a little
+decomposed gravel, moist (saprolite)
+Brownish gray to gray vesicular BASALT,
+medium hard (basalt formation)
+ Boring terminated at 5 feet
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-75DG2
+4" Solid-Stem Auger
+140 lb. wt., 30 in. drop
+5
+10
+15
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation (feet ): 47.5 *
+Sample
+Moisture
+Content (%)
+LID-1
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+May 11, 2020
+May 11, 2020
+S. Latronic
+5 feet
+8042-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 11
+(Energy Transfer Ratio = 91.5%)
+GEOLABS, INC.
+Geotechnical Engineering
+HPHA SCHOOL STREET REDEVELOPMENT
+HONOLULU, OAHU, HAWAII
+BORING_LOG  8042-00.GPJ  GEOLABS.GDT  9/24/20
+Not Encountered
+MH
+CH
+2-inch ASPHALTIC CONCRETE
+Dark brown CLAYEY SILT with a little gravel
+(coralline), moist (fill)
+Brownish gray SILTY CLAY, moist (colluvium)
+Brownish gray vesicular BASALT (basalt
+formation)
+ Boring terminated at 5 feet
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-45C TRUCK
+4" Solid-Stem Auger
+140 lb. wt., 30 in. drop
+5
+10
+15
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation (feet ): 50.5 *
+Sample
+Moisture
+Content (%)
+LID-2
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+May 12, 2020
+May 12, 2020
+S. Latronic
+5 feet
+8042-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 12
+(Energy Transfer Ratio = 78%)
+GEOLABS, INC.
+Geotechnical Engineering
+HPHA SCHOOL STREET REDEVELOPMENT
+HONOLULU, OAHU, HAWAII
+BORING_LOG  8042-00.GPJ  GEOLABS.GDT  9/24/20
+Not Encountered
+40
+MH
+CH
+24/6"
+ +50/3"
+3-inch ASPHALTIC CONCRETE
+Brown CLAYEY SILT with some gravel
+(coralline) and a little sand, moist (fill)
+Grayish brown SILTY CLAY with some cobbles
+(basaltic), stiff, moist (colluvium)
+Orangish brown to gray vesicular BASALT, soft
+to medium hard (basalt formation)
+ Boring terminated at 5 feet
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-45C TRUCK
+4" Solid-Stem Auger
+140 lb. wt., 30 in. drop
+5
+10
+15
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation (feet ): 53.5 *
+Sample
+Moisture
+Content (%)
+LID-3
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+May 5, 2020
+May 5, 2020
+S. Latronic
+5 feet
+8042-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 13
+(Energy Transfer Ratio = 78%)
+GEOLABS, INC.
+Geotechnical Engineering
+HPHA SCHOOL STREET REDEVELOPMENT
+HONOLULU, OAHU, HAWAII
+BORING_LOG  8042-00.GPJ  GEOLABS.GDT  9/24/20
+Not Encountered
+37
+39
+MH
+CH
+7
+15
+Brown CLAYEY SILT with a little sand (coralline),
+stiff, moist (fill)
+Brownish gray SILTY CLAY with traces of gravel
+(basaltic), stiff to very stiff, moist (alluvium)
+ Boring terminated at 5 feet
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-45C TRUCK
+4" Solid-Stem Auger
+140 lb. wt., 30 in. drop
+5
+10
+15
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation (feet ): 44 *
+Sample
+Moisture
+Content (%)
+LID-4
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+April 15, 2020
+April 15, 2020
+S. Latronic
+5 feet
+8042-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 14
+(Energy Transfer Ratio = 78%)
+GEOLABS, INC.
+Geotechnical Engineering
+HPHA SCHOOL STREET REDEVELOPMENT
+HONOLULU, OAHU, HAWAII
+BORING_LOG  8042-00.GPJ  GEOLABS.GDT  9/24/20
+Not Encountered
+29
+41
+GW
+SC
+CH
+MH
+13
+24
+LL=94
+PI=64
+2-inch ASPHALTIC CONCRETE
+Gray angular SANDY GRAVEL (BASALTIC),
+moist (base course)
+Brown CLAYEY SAND with some gravel
+(basaltic), moist (fill)
+Grayish brown SILTY CLAY with a little gravel,
+stiff, moist (colluvium)
+Light gray with multi-color mottling CLAYEY SILT
+with some sand (basaltic), very stiff, moist
+(saprolite)
+ Boring terminated at 5 feet
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-45C TRUCK
+4" Solid-Stem Auger
+140 lb. wt., 30 in. drop
+5
+10
+15
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation (feet ): 51.5 *
+Sample
+Moisture
+Content (%)
+LID-5
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+May 5, 2020
+May 5, 2020
+S. Latronic
+5 feet
+8042-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 15
+(Energy Transfer Ratio = 78%)
+GEOLABS, INC.
+Geotechnical Engineering
+HPHA SCHOOL STREET REDEVELOPMENT
+HONOLULU, OAHU, HAWAII
+BORING_LOG  8042-00.GPJ  GEOLABS.GDT  9/24/20
+Not Encountered
+41
+37
+MH
+MH
+CH
+10
+13
+2-inch ASPHALTIC CONCRETE
+Brown with gray mottling CLAYEY SILT with
+some sand and a little gravel (basaltic), moist
+(fill)
+Brown CLAYEY SILT with some fine sand, stiff,
+moist (alluvium)
+Dark brown with gray mottling SILTY CLAY with
+some cobbles (basaltic), stiff to very stiff, moist
+(alluvium)
+ Boring terminated at 5 feet
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-45C TRUCK
+4" Solid-Stem Auger
+140 lb. wt., 30 in. drop
+5
+10
+15
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation (feet ): 48 *
+Sample
+Moisture
+Content (%)
+LID-6
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+May 5, 2020
+May 5, 2020
+S. Latronic
+5 feet
+8042-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 16
+(Energy Transfer Ratio = 78%)
+GEOLABS, INC.
+Geotechnical Engineering
+HPHA SCHOOL STREET REDEVELOPMENT
+HONOLULU, OAHU, HAWAII
+BORING_LOG  8042-00.GPJ  GEOLABS.GDT  9/24/20
+Not Encountered
+41
+42
+SM
+MH
+CH
+7
+6
+Ring
+Swell
+3-inch ASPHALTIC CONCRETE
+Tan SILTY SAND (CORALLINE) with some
+gravel, moist (fill)
+Brown CLAYEY SILT with some gravel
+(coralline), stiff, moist (fill)
+Dark grayish brown SILTY CLAY, stiff, moist
+(alluvium)
+ Boring terminated at 5 feet
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-45C TRUCK
+4" Solid-Stem Auger
+140 lb. wt., 30 in. drop
+5
+10
+15
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation (feet ): 47 *
+Sample
+Moisture
+Content (%)
+LID-7
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+May 5, 2020
+May 5, 2020
+S. Latronic
+5 feet
+8042-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 17
+(Energy Transfer Ratio = 78%)
+GEOLABS, INC.
+Geotechnical Engineering
+HPHA SCHOOL STREET REDEVELOPMENT
+HONOLULU, OAHU, HAWAII
+BORING_LOG  8042-00.GPJ  GEOLABS.GDT  9/24/20
+Not Encountered
+28
+25
+MH
+20
+15
+Dark brown to brown CLAYEY SILT with a little
+cobbles (basaltic), stiff to very stiff, moist (fill)
+grades more cobbly
+ Boring terminated at 5 feet
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-45C TRUCK
+4" Solid-Stem Auger
+140 lb. wt., 30 in. drop
+5
+10
+15
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation (feet ): 43 *
+Sample
+Moisture
+Content (%)
+LID-8
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+April 14, 2020
+April 14, 2020
+S. Latronic
+5 feet
+8042-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 18
+(Energy Transfer Ratio = 78%)
+GEOLABS, INC.
+Geotechnical Engineering
+HPHA SCHOOL STREET REDEVELOPMENT
+HONOLULU, OAHU, HAWAII
+BORING_LOG  8042-00.GPJ  GEOLABS.GDT  9/24/20
+Not Encountered
+APPENDIX B  
+W.O. 8042-00 
+GEOLABS, INC. 
+AUGUST 2022    Page B-1 
+Hawaii • California 
+A P P E N D I X   B 
+Seismic Shear Wave Velocity Test 
+Seismic shear wave velocity profiling of the subsurface materials at the project site 
+was performed using Seismic Cone Penetration Testing (SCPT) equipment. The purpose 
+of the seismic shear wave velocity profiling of the subsurface materials was to analyze 
+the seismic design considerations more closely for the project. Shear wave velocity 
+testing using seismic cone penetration test equipment was performed at a selected boring 
+location, designated as B-6(SW), as shown on the Site Plan (Plate 3). The seismic shear 
+wave velocity profiling was performed at various depths extending to a depth of about 
+100 feet below the existing pavement surface. 
+In order to conduct the seismic shear wave velocity test in the boring, the test 
+boring was advanced utilizing rotary coring methods to the maximum depth of the boring. 
+Log of the materials encountered in the boring are presented on the Logs of Borings in 
+Appendix A. After the boring was advanced to the maximum depth of the borehole, the 
+bored hole was backfilled with 0.25-inch diameter coated bentonite pellets. The temporary 
+casing from the coring operations was used as a tremie pipe to place the bentonite pellets 
+starting from the bottom and advancing upward. When the bentonite pellets are in contact 
+with the groundwater in the borehole, the pellets start to hydrate slowly. As the bentonite 
+pellets hydrate, they swell and soften. The probe was then pushed through the softened 
+bentonite extending to a depth of about 100 feet below the existing pavement surface 
+using seismic cone testing equipment (SCPT). 
+The seismic shear wave velocity test consists of hydraulically pushing a 10-ton 
+steel electronic subtraction cone with an apex angle of 60 degrees and a projected 
+surface area of 1.55 square inches (10 square centimeters) into the bored hole. The cone 
+carries a uniaxial horizontal accelerator geophone to detect the arrival of a shear wave 
+generated and propagated from the ground surface. The seismic measurements were 
+made when the SCPT had stopped and a shear wave was sent into the subsurface. 
+A shear wave was generated at the surface by striking a loaded plank with a switched 
+hammer. The propagation time of the wave from the hammer blow to the cone was 
+measured at each discrete depth interval. The vector difference of these depths divided 
+by the time difference for the shear wave to arrive at the various depths provided the 
+average shear wave velocity over the depth interval. 
+The seismic shear wave velocities measured and the weighted average seismic 
+shear wave velocity calculated for the top 100 feet of the soil and rock profile at the 
+selected boring location are presented on Plate B-1.1 through B-1.4 in Appendix B. The 
+weighted average shear wave velocity was calculated based on the average shear wave 
+velocity method described in Section 20.4.1 of ASCE 7-16. 
+68
+100
+100
+100
+770
+710
+9070
+12890
+5560
+8080
+8740
+6300
+25540
+29430
+15410
+50/5"
+14
+15/6"
+ +25/0"
+ Ref.
+MH
+SM
+2-inch ASPHALTIC CONCRETE
+Brown with gray mottling CLAYEY SILT with
+some gravel (basaltic), very stiff, moist (fill)
+Gray COBBLES (BASALTIC), dense, moist (fill)
+grades with voids at 3.5 feet
+Gray with brown mottling COBBLY BOULDERS
+(BASALTIC) with a little clay, very dense, moist
+(colluvium)
+Grayish brown SILTY SAND (BASALTIC) with
+some gravel and remnant vesicular structure,
+medium dense, moist (saprolite)
+Brownish gray vesicular BASALT, soft (basalt
+formation)
+Brownish gray vesicular BASALT, moderately
+fractured, moderately weathered, medium hard
+to hard (basalt formation)
+grades with highly weathered zones locally
+grades to closely fractured
+grades to severely fractured, highly weathered
+locally
+grades to slightly fractured
+B - 1.1
+Approximate Ground Surface
+Elevation (feet ): 40.5 *
+Description
+Penetration
+Resistance
+(blows/foot)
+Sample
+Graphic
+1000
+2000
+3000
+4000
+Data Plot of
+Boring
+B-6
+Plate
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Drill Rig:
+Drilling Method:
+Driving Energy:
+April 20, 2020
+April 22, 2020
+S. Latronic
+101 feet
+8042-00
+Water Level:
+Depth (feet)
+Pocket Pen.
+(tsf)
+SHEAR WAVE
+VELOCITY
+(feet/sec)
+Core
+Recovery (%)
+CME-45C TRUCK
+4" Solid-Stem Auger & PQ Coring
+140 lb. wt., 30 in. drop
+USCS
+5
+10
+15
+20
+25
+30
+35
+3.5 ft.   04/20/2020 0925 HRS
+19.2 ft.   04/22/2020 1425 HRS
+GEOLABS, INC.
+Geotechnical Engineering
+HPHA SCHOOL STREET REDEVELOPMENT
+HONOLULU, OAHU, HAWAII
+SHEAR_WAVE_PLOT  8042-00.GPJ  GEOLABS.GDT  9/24/20
+45
+48
+100
+90
+100
+93
+80
+27090
+13310
+3830
+1710
+4140
+9480
+4950
+7150
+4030
+1390
+4640
+59
+SM
+Brown with multi-color mottling BASALT,
+severely to closely fractured, highly weathered,
+soft (basalt formation)
+Brown with gray mottling SILTY SAND
+(BASALTIC) with some gravel and a little
+cobbles, very dense (weathered clinker)
+Reddish brown with gray mottling BASALT,
+moderately fractured, moderately to highly
+weathered, medium hard (welded clinker)
+grades to hard
+Gray BASALT, slightly to moderately fractured,
+unweathered, very hard (basalt formation)
+grades to severely fractured locally
+grades to closely fractured
+grades to vugular
+Brown SANDY GRAVEL (BASALTIC) with a little
+cobbles (clinker)
+Gray with red mottling vesicular BASALT, closely
+to severely fractured, moderately weathered,
+medium hard to hard (basalt formation)
+(Continued from previous plate)
+B - 1.2
+Description
+Penetration
+Resistance
+(blows/foot)
+Sample
+Graphic
+1000
+2000
+3000
+4000
+Data Plot of
+Boring
+B-6
+Plate
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Drill Rig:
+Drilling Method:
+Driving Energy:
+April 20, 2020
+April 22, 2020
+S. Latronic
+101 feet
+8042-00
+Water Level:
+Depth (feet)
+Pocket Pen.
+(tsf)
+SHEAR WAVE
+VELOCITY
+(feet/sec)
+Core
+Recovery (%)
+CME-45C TRUCK
+4" Solid-Stem Auger & PQ Coring
+140 lb. wt., 30 in. drop
+USCS
+40
+45
+50
+55
+60
+65
+70
+3.5 ft.   04/20/2020 0925 HRS
+19.2 ft.   04/22/2020 1425 HRS
+GEOLABS, INC.
+Geotechnical Engineering
+HPHA SCHOOL STREET REDEVELOPMENT
+HONOLULU, OAHU, HAWAII
+SHEAR_WAVE_PLOT  8042-00.GPJ  GEOLABS.GDT  9/24/20
+65
+92
+80
+90
+45
+97
+5950
+7610
+4430
+5660
+6070
+3010
+3750
+3120
+3990
+4750
+GP
+GP
+GP
+Grayish brown SANDY GRAVEL (BASALTIC)
+with some cobbles (clinker)
+Gray vugular BASALT, moderately fractured,
+slightly weathered, very hard (basalt formation)
+Brown SANDY GRAVEL (BASALTIC) (clinker)
+Reddish brown to gray vesicular BASALT,
+closely fractured, highly to moderately
+weathered, medium hard (basalt formation)
+grades to slightly fractured, very hard
+Brown with gray mottling SANDY GRAVEL
+(BASALTIC) with some cobbles (clinker)
+Gray vugular BASALT, closely fractured, slightly
+weathered, very hard (basalt formation)
+Reddish brown to gray vesicular BASALT,
+moderately fractured, slightly to moderately
+weathered, medium hard to hard (basalt
+formation)
+ Boring terminated at 101 feet
+(Continued from previous plate)
+B - 1.3
+Description
+Penetration
+Resistance
+(blows/foot)
+Sample
+Graphic
+1000
+2000
+3000
+4000
+Data Plot of
+Boring
+B-6
+Plate
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Drill Rig:
+Drilling Method:
+Driving Energy:
+April 20, 2020
+April 22, 2020
+S. Latronic
+101 feet
+8042-00
+Water Level:
+Depth (feet)
+Pocket Pen.
+(tsf)
+SHEAR WAVE
+VELOCITY
+(feet/sec)
+Core
+Recovery (%)
+CME-45C TRUCK
+4" Solid-Stem Auger & PQ Coring
+140 lb. wt., 30 in. drop
+USCS
+75
+80
+85
+90
+95
+100
+105
+3.5 ft.   04/20/2020 0925 HRS
+19.2 ft.   04/22/2020 1425 HRS
+GEOLABS, INC.
+Geotechnical Engineering
+HPHA SCHOOL STREET REDEVELOPMENT
+HONOLULU, OAHU, HAWAII
+SHEAR_WAVE_PLOT  8042-00.GPJ  GEOLABS.GDT  9/24/20
+SHEAR WAVE VELOCITY TEST RESULTS
+HPHA SCHOOL STREET REDEVELOPMENT
+HONOLULU, OAHU, HAWAII
+Depth
+Depth
+Layer Thickness
+Estimated Shear 
+Wave Velocity
+Average Travel 
+Time
+(From)
+(To)
+(d i )
+(V si )
+(d i /V si )
+(feet)
+(feet)
+(feet)
+(feet/second)
+(milliseconds)
+0.0
+2.3
+2.3
+1,414
+1.60
+2.3
+5.5
+3.2
+959
+3.35
+5.5
+12.2
+6.7
+1,579
+4.26
+12.2
+15.4
+3.2
+1,019
+3.16
+15.4
+21.9
+6.5
+3,202
+2.02
+21.9
+28.3
+6.4
+12,306
+0.52
+28.3
+34.6
+6.3
+17,872
+0.35
+34.6
+41.1
+6.5
+14,980
+0.43
+41.1
+44.3
+3.2
+5,070
+0.63
+44.3
+53.7
+9.4
+1,222
+7.65
+53.7
+60.1
+6.4
+2,522
+2.55
+60.1
+63.5
+3.3
+4,277
+0.78
+63.5
+70.1
+6.7
+6,297
+1.06
+70.1
+76.6
+6.5
+7,537
+0.86
+76.6
+83.1
+6.4
+4,584
+1.40
+83.1
+86.3
+3.2
+1,305
+2.46
+86.3
+92.8
+6.5
+2,031
+3.21
+92.8
+99.1
+6.3
+1,783
+3.51
+99.1
+100.0
+0.9
+1,668
+0.55
+TOTAL
+100.0
+40.38
+Standard Weighted Average
+5,391
+feet/second
+Computed Vs100' Using IBC Formula
+2,476
+feet/second
+W.O. 8042-00
+GEOLABS, INC.
+PLATE B-1.4
+Hawaii l California
+B-6
+APPENDIX C  
+W.O. 8042-00 
+GEOLABS, INC. 
+AUGUST 2022    Page C-1 
+Hawaii • California 
+A P P E N D I X   C 
+Laboratory Tests 
+Moisture Content (ASTM D2216) and Unit Weight (ASTM D2937) determinations 
+were performed on selected soil samples as an aid in the classification and evaluation of 
+soil properties. The test results are presented on the Logs of Borings at the appropriate 
+sample depths. 
+Eight Atterberg Limits tests (ASTM D4318) were performed on selected soil 
+samples to evaluate the liquid and plastic limits. The test results are summarized on the 
+Logs of Borings at the appropriate sample depths. Graphic presentation of the test results 
+is provided on Plate C-1. 
+Two Sieve Analysis tests (ASTM C117 & C136) were performed on selected soil 
+samples to evaluate the gradation characteristics of the soils and to aid in soil 
+classification. Graphic presentations of the grain size distributions are provided on 
+Plate C-2. 
+Three one-inch Ring Swell tests were performed on relatively undisturbed and 
+remolded samples to evaluate the swelling potential of the on-site soils. The test results 
+are summarized on Plate C-3. 
+One Direct Shear test (ASTM D3080) was performed on a selected sample to 
+evaluate the shear strength characteristics of the material tested. The test results are 
+presented on Plate C-4. 
+Two Unconsolidated Undrained Triaxial Compression tests (ASTM D2850) were 
+performed on selected soil samples to evaluate the undrained shear strength of the in-situ 
+soils. The approximate in-situ effective overburden pressure was used as the applied 
+confining pressure for each relatively “undisturbed” soil sample. The test results and the 
+stress-strain curves are presented on Plates C-5 and C-6. 
+Three Consolidation tests with time rates (ASTM D2435) were performed on 
+samples of the potentially compressible soils to evaluate the compressibility 
+characteristics of the materials encountered. Results of the consolidation tests are 
+presented on Plates C-7 through C-9. 
+Twenty-two Compression tests (ASTM D7012, Method C) were performed on 
+selected core runs to evaluate the uniaxial compressive strength of the rock core samples 
+obtained. The test results are presented on Plate C-10. 
+Two laboratory California Bearing Ratio tests (ASTM D1883) were performed on 
+bulk samples of the near-surface soils to evaluate the pavement support characteristics 
+of the soils. The test results are presented on Plates C-11 and C-12. 
+Appendix C 
+Laboratory Tests 
+W.O. 8042-00 
+GEOLABS, INC. 
+AUGUST 2022    Page C-2 
+Hawaii • California 
+Two Modified Proctor compaction tests (ASTM D1557) were performed on bulk 
+samples of the near-surface soils to evaluate the dry density and moisture content 
+relationships. The test results are presented on Plates C-13 and C-14. 
+Two sets of Corrosion tests, including pH (ASTM G51), Minimum Resistivity 
+(ASTM G57), Chloride Content (EPA 300.0), and Sulfate Content (EPA 300.0) tests, were 
+performed by our office and Eurofins TestAmerica on selected soil samples obtained from 
+our field exploration. The test results are summarized on Plate C-15. 
+0
+10
+20
+30
+40
+50
+60
+70
+80
+90
+100
+110
+120
+130
+0
+20
+40
+60
+80
+100
+120
+140
+160
+C - 1
+LIQUID LIMIT
+PLASTICITY INDEX
+ATTERBERG LIMITS TEST RESULTS - ASTM D4318
+PI
+Depth (ft)
+Sample
+LL
+PL
+Description
+B-1
+B-5
+B-7
+B-8
+B-10
+B-10
+B-10
+LID-5
+5.0-6.5
+5.0-6.5
+2.0-3.5
+2.0-3.5
+5.5-7.0
+37.0-38.5
+42.0-43.5
+1.5-3.5
+65
+122
+94
+91
+107
+73
+61
+94
+37
+23
+27
+24
+24
+28
+17
+30
+28
+99
+67
+67
+83
+45
+44
+64
+Reddish brown w/ gray mottling clayey silt (MH) with some sand
+Brownish gray silty clay (CH) with traces of gravel
+Brown silty clay (CH) with some gravel
+Grayish brown silty clay (CH) with traces of sand
+Grayish brown silty clay (CH) with a little gravel
+Grayish brown silty clay (CH) with a little sand
+Grayish brown silty clay (CH)
+Grayish brown silty clay (CH) with a little gravel
+NP = NON-PLASTIC
+7
+4
+Plate
+W.O. 8042-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+HPHA SCHOOL STREET REDEVELOPMENT
+HONOLULU, OAHU, HAWAII
+G_ATTERBERG_PI-130_LL-160  8042-00.GPJ  GEOLABS.GDT  8/9/20
+CH or OH
+CL-ML
+MH or OH
+ML or OL
+CL or OL
+0
+5
+10
+15
+20
+25
+30
+35
+40
+45
+50
+55
+60
+65
+70
+75
+80
+85
+90
+95
+100
+0.001
+0.01
+0.1
+1
+10
+100
+3.747
+0.672
+C - 2
+coarse
+1
+1.5
+3
+2
+40
+Depth (ft)
+%Gravel
+35.2
+3.9
+49.5
+80.9
+%Sand
+COBBLES
+Sample
+D30 (mm)
+140
+20
+HYDROMETER
+3
+GRAIN SIZE IN MILLIMETERS
+PERCENT FINER BY WEIGHT
+100
+coarse
+1/2
+Sample
+0.679
+0.244
+Cu
+GRAVEL
+U.S. SIEVE NUMBERS
+D10 (mm)
+16
+fine
+25
+19
+Cc
+3/4
+fine
+SILT OR CLAY
+medium
+GRAIN SIZE DISTRIBUTION - ASTM C117 & C136
+SAND
+%Fine
+60
+4
+30
+200
+4
+6
+15.3
+15.2
+Depth (ft)
+LL
+Brown with gray mottling silty sand (SM) with some gravel
+Yellowish brown w/ gray mottling silty sand (SM) w/traces of gravel
+810 14
+50
+U.S. SIEVE OPENING IN INCHES
+6
+D60 (mm)
+D100 (mm)
+B-6
+B-8
+41.0-42.5
+15.0-16.5
+41.0-42.5
+15.0-16.5
+B-6
+B-8
+3/8
+PL PI
+Description
+Plate
+W.O. 8042-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+HPHA SCHOOL STREET REDEVELOPMENT
+HONOLULU, OAHU, HAWAII
+G_GRAIN_SIZE_MOD  8042-00.GPJ  GEOLABS.GDT  6/7/21
+B-3
+1.5 - 3.5
+Grayish brown silty clay
+88.2
+27.9
+23.1
+58.4
+34.5
+B-10
+1.5 - 3.0
+Brown silty clay with some sand and traces
+of gravel
+77.2
+36.7
+29.1
+44.2
+2.8
+LID-7
+3.5 - 5.0
+Dark grayish brown silty clay
+88.6
+27.7
+22.9
+57.3
+30.7
+Moisture Contents
+Location
+SUMMARY OF RING SWELL TESTS
+C - 3
+NOTE:
+Relatively Undisturbed
+Remolded
+Samples tested were either relatively undisturbed or remolded in 2.4-inch diameter by 1-inch high rings.
+They were air-dried overnight and then saturated for 24 hours under a surcharge pressure of 55 psf.
+Depth
+(feet)
+Soil Description
+(%)
+Initial
+Air-Dried
+Final
+Ring
+Swell
+(pcf)
+(%)
+(%)
+(%)
+Dry
+Density
+Plate
+W.O. 8042-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+HPHA SCHOOL STREET REDEVELOPMENT
+HONOLULU, OAHU, HAWAII
+G_RING_SWELL_TEST  8042-00.GPJ  GEOLABS.GDT  9/24/20
+0
+500
+1,000
+1,500
+2,000
+2,500
+3,000
+0
+500
+1,000
+1,500
+2,000
+2,500
+3,000
+NORMAL STRESS, psf
+SHEAR STRESS, psf
+INITIAL
+Moisture Content, %
+Moisture Content, %
+Dry Density, pcf
+135 psf
+12 degrees
+393
+494
+830
+0.0025
+0.0023
+0.0025
+2.42
+2.42
+2.42
+63.1
+65.8
+67.0
+63.9
+64.3
+66.3
+Cohesion:
+0.43
+0.42
+0.43
+1.013
+0.976
+0.989
+Height, inches
+Diameter, inches
+Peak Shear Stress, psf
+Shear Displacement, inches
+Brownish gray silty clay (CH)
+with traces of gravel
+1.00
+1.00
+1.00
+Height, inches
+C - 4
+67.1
+62.5
+58.3
+FINAL
+Dry Density, pcf
+Normal Stress, psf
+Sample:
+B-5
+5.0 - 6.5 feet
+Depth:
+Description:
+58.5
+59.5
+57.1
+Sample
+#1
+Sample
+#2
+Sample
+#3
+Deformation Rate, inch/minute
+Friction Angle:
+1000
+2000
+3000
+DIRECT SHEAR TEST -  ASTM D3080
+Plate
+W.O. 8042-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+HPHA SCHOOL STREET REDEVELOPMENT
+HONOLULU, OAHU, HAWAII
+G_DIRECT_SHEAR  8042-00.GPJ  GEOLABS.GDT  8/9/20
+0
+0.5
+1.0
+1.5
+2.0
+2.5
+3.0
+0
+4
+8
+12
+16
+Location:
+Sample Diameter (inches)
+Sample Height (inches)
+DEVIATOR STRESS, ksf
+Max. Deviator Stress (ksf):
+Confining Stress (ksf):
+AXIAL STRAIN, %
+0.2
+2.9
+Dry Density (pcf)
+Moisture (%)
+Axial Strain at Failure (%)
+Strain Rate (% / minute)
+103.6
+74.8
+3.8
+Grayish brown silty clay (CH) with traces of sand
+2.0 - 3.5 feet
+Description:
+Depth:
+B-8
+TRIAXIAL UU COMPRESSION TEST - ASTM D2850
+Test Date:
+5.067
+2.407
+0.70
+C - 5
+6/15/2020
+Plate
+W.O. 8042-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+HPHA SCHOOL STREET REDEVELOPMENT
+HONOLULU, OAHU, HAWAII
+G_TXUU  8042-00.GPJ  GEOLABS.GDT  6/7/21
+0
+0.5
+1.0
+1.5
+2.0
+2.5
+3.0
+3.5
+4.0
+4.5
+5.0
+0
+4
+8
+12
+16
+20
+Location:
+Sample Diameter (inches)
+Sample Height (inches)
+DEVIATOR STRESS, ksf
+Max. Deviator Stress (ksf):
+Confining Stress (ksf):
+AXIAL STRAIN, %
+0.6
+4.5
+Dry Density (pcf)
+Moisture (%)
+Axial Strain at Failure (%)
+Strain Rate (% / minute)
+41.7
+72.7
+1.6
+Grayish brown silty clay (CH) with a little gravel
+5.5 - 7.0 feet
+Description:
+Depth:
+B-10
+TRIAXIAL UU COMPRESSION TEST - ASTM D2850
+Test Date:
+5.067
+2.413
+0.69
+C - 6
+6/17/2020
+Plate
+W.O. 8042-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+HPHA SCHOOL STREET REDEVELOPMENT
+HONOLULU, OAHU, HAWAII
+G_TXUU  8042-00.GPJ  GEOLABS.GDT  6/7/21
+0
+5
+10
+15
+20
+25
+30
+35
+40
+0.1
+1
+10
+100
+C - 7
+41.6
+39.2
+113.7
+95.1
+Sample Height, inches
+122
+99
+CONSOLIDATION TEST -  ASTM D2435
+1.0000
+Initial
+Final
+Dry Density, pcf:
+83.3
+0.8400
+100.0
+3.195
+2.508
+Degree of Saturation, %
+Void Ratio
+Water Content, %
+Sample:
+B-5
+Depth:
+5.0 - 6.5 feet
+Description: Brownish gray silty clay (CH) with
+traces of gravel
+Liquid Limit =
+Plasticity Index =
+CONSOLIDATION %
+NORMAL PRESSURE, ksf
+Plate
+W.O. 8042-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+HPHA SCHOOL STREET REDEVELOPMENT
+HONOLULU, OAHU, HAWAII
+G_CONSOL  8042-00.GPJ  GEOLABS.GDT  6/7/21
+0
+5
+10
+15
+20
+25
+30
+35
+40
+0.1
+1
+10
+100
+C - 8
+31.3
+37.1
+110.8
+102.5
+Sample Height, inches
+N/A
+N/A
+CONSOLIDATION TEST -  ASTM D2435
+1.0000
+Initial
+Final
+Dry Density, pcf:
+75.1
+0.9200
+100.0
+2.175
+1.937
+Degree of Saturation, %
+Void Ratio
+Water Content, %
+Sample:
+B-8
+Depth:
+5.0 - 6.5 feet
+Description: Grayish brown silty clay with traces
+of sand
+Liquid Limit =
+Plasticity Index =
+CONSOLIDATION %
+NORMAL PRESSURE, ksf
+Plate
+W.O. 8042-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+HPHA SCHOOL STREET REDEVELOPMENT
+HONOLULU, OAHU, HAWAII
+G_CONSOL  8042-00.GPJ  GEOLABS.GDT  6/7/21
+0
+5
+10
+15
+20
+25
+30
+35
+40
+0.1
+1
+10
+100
+C - 9
+38.2
+36.6
+114.6
+98.6
+Sample Height, inches
+N/A
+N/A
+CONSOLIDATION TEST -  ASTM D2435
+1.0000
+Initial
+Final
+Dry Density, pcf:
+84.0
+0.8600
+100.0
+2.549
+2.055
+Degree of Saturation, %
+Void Ratio
+Water Content, %
+Sample:
+B-10
+Depth:
+32.0 - 33.5 feet
+Description: Grayish brown silty clay with a little
+sand
+Liquid Limit =
+Plasticity Index =
+CONSOLIDATION %
+NORMAL PRESSURE, ksf
+Plate
+W.O. 8042-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+HPHA SCHOOL STREET REDEVELOPMENT
+HONOLULU, OAHU, HAWAII
+G_CONSOL  8042-00.GPJ  GEOLABS.GDT  6/7/21
+B-1
+11.5 - 16.5
+6.700
+3.200
+2.09
+126.6
+26,170
+3,250
+B-2
+6.5 - 11.5
+7.100
+3.300
+2.15
+98.4
+7,730
+900
+B-2
+11.5 - 21.5
+7.200
+3.300
+2.18
+133.6
+48,490
+5,670
+B-3
+6.5 - 11.5
+7.200
+3.300
+2.18
+1356.1
+29,820
+3,490
+B-3
+36.5 - 41.5
+7.200
+3.200
+2.25
+127.5
+4,560
+570
+B-3
+46.5 - 51.5
+6.400
+3.200
+2.00
+168.1
+43,280
+5,380
+B-4
+6 - 11
+7.100
+3.200
+2.22
+149.6
+35,820
+4,450
+B-4
+21 - 26
+7.100
+3.300
+2.15
+142.2
+21,580
+2,520
+B-4
+61 - 66
+6.200
+3.100
+2.00
+157.1
+19,590
+2,600
+B-5
+6.5 - 11.5
+7.200
+3.300
+2.18
+126.2
+22,220
+2,600
+B-6
+26 - 31
+7.100
+3.200
+2.22
+132.0
+8,570
+1,070
+B-6
+56 - 61
+7.100
+3.300
+2.15
+171.5
+96,940
+11,330
+B-6
+86 - 91
+7.100
+3.300
+2.15
+144.6
+42,430
+4,960
+B-7
+6.5 - 11.5
+7.100
+3.200
+2.22
+108.6
+11,260
+1,400
+B-7
+16.5 - 21.5
+7.100
+3.300
+2.15
+121.5
+15,840
+1,850
+B-7
+66.5 - 71.5
+7.000
+3.300
+2.12
+95.3
+7,030
+820
+B-8
+23.5 - 27
+7.100
+3.300
+2.15
+120.6
+24,850
+2,910
+B-9
+2 - 7
+7.200
+3.300
+2.18
+138.9
+44,980
+5,260
+B-9
+7 - 12
+7.100
+3.100
+2.29
+129.0
+10,050
+1,330
+B-9
+57 - 62
+7.100
+3.300
+2.15
+165.0
+156,170
+18,260
+B-10
+47.8 - 52
+7.000
+3.300
+2.12
+105.6
+18,756
+2,190
+B-10
+52 - 57
+7.000
+3.300
+2.12
+141.7
+53,010
+6,200
+C - 10
+Depth
+Location
+Length
+Diameter
+Length/
+Diameter
+Ratio
+(feet)
+(inches)
+(inches)
+(pcf)
+(psi)
+Density
+Compressive
+Strength
+Load
+UNIAXIAL COMPRESSIVE STRENGTH TEST
+(lbs)
+ASTM D7012 (METHOD C)
+Note: Samples were not prepared in accordance with ASTM D4543. Therefore, results reported may differ from results obtained from a test speciment that meets the requirements of
+Practice D4543
+Plate
+W.O. 8042-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+HPHA SCHOOL STREET REDEVELOPMENT
+HONOLULU, OAHU, HAWAII
+G_ROCK_UC_TEST_PORTRAIT  8042-00.GPJ  GEOLABS.GDT  6/7/21
+0
+50
+100
+150
+200
+250
+300
+350
+400
+450
+0
+0.10
+0.20
+0.30
+0.40
+0.50
+0.60
+Sample:
+Corr. CBR @ 0.1"
+Depth:
+Corr. CBR @ 0.2"
+No. of Layers
+CALIFORNIA BEARING RATIO - ASTM D1883
+Description:
+Days Soaked
+5
+BULK-1
+Swell (%)
+6.98
+3.3
+4.1
+Molding Dry Density (pcf)
+STRESS, psi
+0.0 - 2.0 feet
+No. of Blows
+16.5
+109.8
+Molding Moisture (%)
+Hammer Wt. (lbs)
+Hammer Drop (inches)
+PENETRATION, inches
+Grayish brown clayey sand with some gravel
+18
+56
+10
+5
+Aggregate
+C - 11
+3/4 inch minus
+Plate
+W.O. 8042-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+HPHA SCHOOL STREET REDEVELOPMENT
+HONOLULU, OAHU, HAWAII
+G_CBR  8042-00.GPJ  GEOLABS.GDT  6/7/21
+0
+50
+100
+150
+200
+250
+300
+350
+400
+450
+0
+0.10
+0.20
+0.30
+0.40
+0.50
+0.60
+Sample:
+Corr. CBR @ 0.1"
+Depth:
+Corr. CBR @ 0.2"
+No. of Layers
+CALIFORNIA BEARING RATIO - ASTM D1883
+Description:
+Days Soaked
+6
+BULK-2
+Swell (%)
+1.92
+23.0
+24.2
+Molding Dry Density (pcf)
+STRESS, psi
+0.0 - 2.0 feet
+No. of Blows
+13.1
+120.4
+Molding Moisture (%)
+Hammer Wt. (lbs)
+Hammer Drop (inches)
+PENETRATION, inches
+Brown clayey sand with some gravel
+18
+56
+10
+5
+Aggregate
+C - 12
+3/4 inch minus
+Plate
+W.O. 8042-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+HPHA SCHOOL STREET REDEVELOPMENT
+HONOLULU, OAHU, HAWAII
+G_CBR  8042-00.GPJ  GEOLABS.GDT  6/7/21
+75
+80
+85
+90
+95
+100
+105
+110
+115
+120
+125
+130
+135
+0
+10
+20
+30
+40
+115.0
+14.0
+DRY DENSITY, pcf
+Optimum Moisture Content:
+Sample:
+Depth:
+TEST RESULTS
+MOISTURE CONTENT, %
+Description:
+pcf
+Maximum Dry Density:
+Grayish brown clayey sand with some gravel
+C - 13
+3.20
+3.10
+3.00
+2.90
+2.80
+2.70
+2.60
+0.0 - 2.0 feet
+BULK-1
+MOISTURE-DENSITY RELATIONSHIP - ASTM D1557 C
+Test Date:
+June 17, 2020
+Plate
+W.O. 8042-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+HPHA SCHOOL STREET REDEVELOPMENT
+HONOLULU, OAHU, HAWAII
+G_COMPACTION  8042-00.GPJ  GEOLABS.GDT  6/7/21
+75
+80
+85
+90
+95
+100
+105
+110
+115
+120
+125
+130
+135
+0
+10
+20
+30
+40
+125.0
+13.0
+DRY DENSITY, pcf
+Optimum Moisture Content:
+Sample:
+Depth:
+TEST RESULTS
+MOISTURE CONTENT, %
+Description:
+pcf
+Maximum Dry Density:
+Brown clayey sand with some gravel
+C - 14
+3.20
+3.10
+3.00
+2.90
+2.80
+2.70
+2.60
+0.0 - 2.0 feet
+BULK-2
+MOISTURE-DENSITY RELATIONSHIP - ASTM D1557 C
+Test Date:
+June 10, 2020
+Plate
+W.O. 8042-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+HPHA SCHOOL STREET REDEVELOPMENT
+HONOLULU, OAHU, HAWAII
+G_COMPACTION  8042-00.GPJ  GEOLABS.GDT  6/7/21
+BULK-1
+0.0 - 2.0
+8.55
+1700
+10
+29
+LID-6
+2.0 - 3.5
+8.39
+610
+76
+200
+SUMMARY OF CORROSIVITY TESTS
+C - 15
+(ohm-cm)
+(mg/kg)
+(mg/kg)
+SM 2510B
+Minimum Resistivity
+pH Value
+EPA 300.0
+Minimum Resistivity
+ASTM G57
+pH Value
+Method 9045C
+ASTM G51
+TEST METHODS (by Geolabs, Inc.)*
+pH Value
+Minimum Resistivity Chloride Content
+Sulfate Content
+ND: Not Detected Within Reporting Limits
+Sulfate Content
+EPA 300.0
+Location
+Depth
+(feet)
+Sulfate Content
+N/A
+TEST METHODS (by Eurofins TestAmerica Laboratories, Inc.)
+Chloride Content
+Chloride Content
+N/A
+Plate
+W.O. 8042-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+HPHA SCHOOL STREET REDEVELOPMENT
+HONOLULU, OAHU, HAWAII
+G_SUMMARY_OF_CORROSIVITY_TESTS  8042-00.GPJ  GEOLABS.GDT  6/7/21
+APPENDIX D  
+W.O. 8042-00 
+GEOLABS, INC. 
+AUGUST 2022    Page D-1 
+Hawaii • California 
+A P P E N D I X   D 
+Field Infiltration Tests 
+Eight field infiltration tests, designated as Boring Nos. LID-1 through LID-8, were 
+conducted at the site to evaluate the infiltration characteristics of the subsurface materials 
+encountered at the test locations. The infiltration test locations are shown on the 
+Site Plan, Plate 2. These tests were performed in general accordance with the 
+procedures in Appendix D of the State of Maryland Department of the Environment 
+“Stormwater Design Manual, Volumes I and II” (rev. 2009). These procedures are 
+consistent with other state’s procedures and generally may be considered an industry 
+standard. 
+The field infiltration tests were performed by augering a boring to the selected test 
+depth, generally about 5 feet below the existing ground surface. Upon reaching the test 
+depth, a 4-inch inside diameter PVC solid casing was set to the bottom of the drilled hole 
+to allow infiltration only through the soil exposed at the bottom of the boring. Falling head 
+infiltration tests were performed to determine the average infiltration rates of the 
+underlying subsurface materials. Each test consisted of four trials of filling the casing with 
+24 inches of water and taking periodic readings over a 1-hour trial period. The infiltration 
+rates are then calculated based on the results of the fourth and last trial for each test 
+location. The calculated infiltration rates at the test locations are summarized on 
+Plates D-1 through D-8. 
+Project:
+Honolulu, Oahu, Hawaii
+W.O.:
+8042-00
+Boring No.:
+LID-1
+Date of Testing:
+5/12/2020
+Method of Testing: LID
+Source of Water:
+5-gallon buckets
+47.5
+feet, MSL
+N/A
+feet
+Datum, a (above ground):
+0.2
+feet
+Depth (feet)
+Depth of Boring: (from ground)
+5.0
+feet
+0.0 - 0.3
+Length, L (from datum):
+5.2
+feet
+0.3 - 2.5
+Open Hole Length, l:
+0.0
+feet
+2.5 - 3.3
+Casing Depth Elevation:
+42.5
+feet, MSL
+4.5
+inches
+3.3 - 5.0
+4.0
+inches
+Time
+Elapsed Time
+Pumping Rate
+(HH:MM)
+(hh:mm)
+(gpm)
+Trial 1
+6:05
+0:00
+N/A
+6:20
+0:15
+6:35
+0:30
+6:50
+0:45
+7:05
+1:00
+Trial 2
+7:06
+0:00
+N/A
+7:21
+0:15
+7:36
+0:30
+7:51
+0:45
+8:06
+1:00
+Trial 3
+8:07
+0:00
+N/A
+8:22
+0:15
+8:37
+0:30
+8:52
+0:45
+9:07
+1:00
+Trial 4
+9:08
+0:00
+N/A
+9:23
+0:15
+9:38
+0:30
+9:53
+0:45
+10:08
+1:00
+61.1
+22.7
+59.9
+60.5
+60.8
+61.1
+22.7
+38.4
+60.0
+60.5
+60.8
+61.2
+22.8
+38.4
+60.0
+60.5
+60.9
+61.3
+22.9
+38.4
+60.1
+60.7
+61.0
+(inches)
+(inches per hour)
+38.4
+Reddish brown w/ gray mottling clayey silt
+with some sand and a little gravel
+Diameter of Open Hole, D:
+Brownish gray to gray vesicular basalt
+Diameter of Casing, d (I.D.):
+Depth to Water            
+(measured from datum)
+Infiltration Rate
+INFILTRATION TEST RECORD
+Existing Ground Surface Elev.
+GW level, b (from ground):
+Generalized Soil/Rock Description
+4-inch asphaltic concrete
+Dark brown clayey silt w/ sand & gravel
+HPHA School Street Redevelopment
+GW
+Ground
+Datum
+d
+a
+b
+L
+D
+l
+W.O. 8042-00 
+GEOLABS, INC.
+Hawaii • California
+PLATE D-1 
+Project:
+Honolulu, Oahu, Hawaii
+W.O.:
+8042-00
+Boring No.:
+LID-2
+Date of Testing:
+5/13/2020
+Method of Testing: LID
+Source of Water:
+5-gallon buckets
+50.5
+feet, MSL
+N/A
+feet
+Datum, a (above ground):
+0.2
+feet
+Depth (feet)
+Depth of Boring: (from ground)
+5.0
+feet
+0.0 - 0.2
+Length, L (from datum):
+5.2
+feet
+0.2 - 0.8
+Open Hole Length, l:
+0.0
+feet
+0.8 - 1.8
+Casing Depth Elevation:
+45.5
+feet, MSL
+1.8 - 5.0
+4.5
+inches
+4.0
+inches
+Time
+Elapsed Time
+Pumping Rate
+(HH:MM)
+(hh:mm)
+(gpm)
+Trial 1
+6:39
+0:00
+N/A
+6:54
+0:15
+7:09
+0:30
+7:24
+0:45
+7:39
+1:00
+Trial 2
+7:40
+0:00
+N/A
+7:55
+0:15
+8:10
+0:30
+8:25
+0:45
+8:40
+0:60
+Trial 3
+8:41
+0:00
+N/A
+8:56
+0:15
+9:11
+0:30
+9:26
+0:45
+9:41
+1:00
+Trial 4
+9:42
+0:00
+N/A
+9:57
+0:15
+10:12
+0:30
+10:27
+0:45
+10:42
+1:00
+40.1
+1.7
+38.9
+39.3
+39.8
+40.3
+1.9
+38.4
+38.9
+39.4
+39.9
+40.2
+1.8
+38.4
+38.9
+39.3
+39.8
+40.2
+1.8
+38.4
+38.9
+39.4
+39.8
+(inches)
+(inches per hour)
+38.4
+Brownish gray silty clay
+Brownish gray vesicular basalt
+Diameter of Open Hole, D:
+Diameter of Casing, d (I.D.):
+Depth to Water            
+(measured from datum)
+Infiltration Rate
+INFILTRATION TEST RECORD
+Existing Ground Surface Elev.
+GW level, b (from ground):
+Generalized Soil/Rock Description
+2-inch asphaltic concrete
+Dark brown clayey silt with a little gravel
+HPHA School Street Redevelopment
+GW
+Ground
+Datum
+d
+a
+b
+L
+D
+l
+W.O. 8042-00 
+GEOLABS, INC.
+Hawaii • California
+PLATE D-2 
+Project:
+Honolulu, Oahu, Hawaii
+W.O.:
+8042-00
+Boring No.:
+LID-3
+Date of Testing:
+5/6/2020
+Method of Testing: LID
+Source of Water:
+5-gallon buckets
+53.5
+feet, MSL
+N/A
+feet
+Datum, a (above ground):
+0.2
+feet
+Depth (feet)
+Depth of Boring: (from ground)
+5.0
+feet
+0.0 - 0.3
+Length, L (from datum):
+5.2
+feet
+0.3 - 2.0
+Open Hole Length, l:
+0.0
+feet
+2.0 - 3.0
+Casing Depth Elevation:
+48.5
+feet, MSL
+3.0 - 5.0
+4.5
+inches
+4.0
+inches
+Time
+Elapsed Time
+Pumping Rate
+(HH:MM)
+(hh:mm)
+(gpm)
+Trial 1
+10:04
+0:00
+N/A
+10:19
+0:15
+10:34
+0:30
+10:49
+0:45
+11:04
+1:00
+Trial 2
+11:04
+0:00
+N/A
+11:19
+0:15
+11:34
+0:30
+11:49
+0:45
+12:04
+1:00
+Trial 3
+12:04
+0:00
+N/A
+12:19
+0:15
+12:34
+0:30
+12:49
+0:45
+13:04
+1:00
+Trial 4
+13:04
+0:00
+N/A
+13:19
+0:15
+13:34
+0:30
+13:49
+0:45
+14:04
+1:00
+INFILTRATION TEST RECORD
+Existing Ground Surface Elev.
+GW level, b (from ground):
+Generalized Soil/Rock Description
+3-inch asphaltic concrete
+Brown clayey silt with some gravel
+HPHA School Street Redevelopment
+Grayish brown silty clay with some cobbles
+Orangish brown to gray vesicular basalt
+Diameter of Open Hole, D:
+Diameter of Casing, d (I.D.):
+Depth to Water            
+(measured from datum)
+Infiltration Rate
+(inches)
+(inches per hour)
+38.0
+38.8
+39.3
+39.5
+40.0
+2.0
+38.0
+38.3
+38.5
+38.8
+39.3
+1.3
+38.0
+38.3
+38.8
+39.0
+39.4
+1.4
+38.0
+39.4
+1.4
+38.3
+38.8
+39.1
+GW
+Ground
+Datum
+d
+a
+b
+L
+D
+l
+W.O. 8042-00 
+GEOLABS, INC.
+Hawaii • California
+PLATE D-3 
+Project:
+Honolulu, Oahu, Hawaii
+W.O.:
+8042-00
+Boring No.:
+LID-4
+Date of Testing:
+4/16/2020
+Method of Testing: LID
+Source of Water:
+5-gallon buckets
+44
+feet, MSL
+N/A
+feet
+Datum, a (above ground):
+0.2
+feet
+Depth (feet)
+Depth of Boring: (from ground)
+5.0
+feet
+0.0 - 2.8
+Length, L (from datum):
+5.2
+feet
+2.8 - 5.0
+Open Hole Length, l:
+0.0
+feet
+Casing Depth Elevation:
+39.0
+feet, MSL
+4.5
+inches
+4.0
+inches
+Time
+Elapsed Time
+Pumping Rate
+(HH:MM)
+(hh:mm)
+(gpm)
+Trial 1
+6:24
+0:00
+N/A
+6:39
+0:15
+6:54
+0:30
+7:09
+0:45
+7:24
+1:00
+Trial 2
+7:24
+0:00
+N/A
+4:39
+-2:45
+7:54
+0:30
+8:09
+0:45
+8:24
+1:00
+Trial 3
+8:24
+0:00
+N/A
+8:39
+0:15
+8:54
+0:30
+9:09
+0:45
+9:24
+1:00
+Trial 4
+9:24
+0:00
+N/A
+9:39
+0:15
+9:54
+0:30
+10:09
+0:45
+10:24
+1:00
+38.5
+0.1
+38.4
+38.5
+38.5
+38.5
+0.1
+38.4
+38.5
+38.5
+38.5
+38.5
+0.1
+38.4
+38.4
+38.5
+38.5
+38.6
+0.2
+38.4
+38.5
+38.5
+38.6
+(inches)
+(inches per hour)
+38.4
+Diameter of Open Hole, D:
+Diameter of Casing, d (I.D.):
+Depth to Water            
+(measured from datum)
+Infiltration Rate
+INFILTRATION TEST RECORD
+Existing Ground Surface Elev.
+GW level, b (from ground):
+Generalized Soil/Rock Description
+Brown clayey silt with a little sand
+Brownish gray silty clay w/ traces of gravel
+HPHA School Street Redevelopment
+GW
+Ground
+Datum
+d
+a
+b
+L
+D
+l
+W.O. 8042-00 
+GEOLABS, INC.
+Hawaii • California
+PLATE D-4 
+Project:
+Honolulu, Oahu, Hawaii
+W.O.:
+8042-00
+Boring No.:
+LID-5
+Date of Testing:
+5/6/2020
+Method of Testing: LID
+Source of Water:
+5-gallon buckets
+51.5
+feet, MSL
+N/A
+feet
+Datum, a (above ground):
+1.7
+feet
+Depth (feet)
+Depth of Boring: (from ground)
+5.0
+feet
+0.0 - 0.2
+Length, L (from datum):
+6.7
+feet
+0.2 - 0.7
+Open Hole Length, l:
+0.0
+feet
+0.7 - 1.8
+Casing Depth Elevation:
+46.5
+feet, MSL
+1.8 - 3.5
+4.5
+inches
+3.5 - 5.0
+4.0
+inches
+Time
+Elapsed Time
+Pumping Rate
+(HH:MM)
+(hh:mm)
+(gpm)
+Trial 1
+6:20
+0:00
+N/A
+6:35
+0:15
+6:50
+0:30
+7:05
+0:45
+7:20
+1:00
+Trial 2
+7:21
+0:00
+N/A
+7:36
+0:15
+7:51
+0:30
+8:06
+0:45
+8:21
+1:00
+Trial 3
+8:22
+0:00
+N/A
+8:37
+0:15
+8:52
+0:30
+9:07
+0:45
+9:22
+1:00
+Trial 4
+9:23
+0:00
+N/A
+9:38
+0:15
+9:53
+0:30
+10:08
+0:45
+10:23
+1:00
+61.8
+5.8
+6.1
+59.0
+60.4
+61.7
+5.7
+56.0
+57.5
+58.9
+60.4
+61.9
+5.9
+56.0
+57.6
+59.1
+60.5
+62.1
+6.1
+56.0
+57.8
+59.4
+60.9
+(inches)
+(inches per hour)
+56.0
+Brown clayey sand with some gravel
+Grayish brown silty clay with a little gravel
+Diameter of Open Hole, D:
+Light gray w/multi-color mottling clayey silt
+Diameter of Casing, d (I.D.):
+Depth to Water            
+(measured from datum)
+Infiltration Rate
+INFILTRATION TEST RECORD
+Existing Ground Surface Elev.
+GW level, b (from ground):
+Generalized Soil/Rock Description
+2-inch asphaltic concrete
+Gray angular sandy gravel
+HPHA School Street Redevelopment
+GW
+Ground
+Datum
+d
+a
+b
+L
+D
+l
+W.O. 8042-00 
+GEOLABS, INC.
+Hawaii • California
+PLATE D-5 
+Project:
+Honolulu, Oahu, Hawaii
+W.O.:
+8042-00
+Boring No.:
+LID-6
+Date of Testing:
+5/6/2020
+Method of Testing: LID
+Source of Water:
+5-gallon buckets
+48
+feet, MSL
+N/A
+feet
+Datum, a (above ground):
+0.2
+feet
+Depth (feet)
+Depth of Boring: (from ground)
+5.0
+feet
+0.0 - 0.2
+Length, L (from datum):
+5.2
+feet
+0.2 - 2.0
+Open Hole Length, l:
+0.0
+feet
+Casing Depth Elevation:
+43.0
+feet, MSL
+2.0 - 3.0
+4.5
+inches
+3.0 - 5.0
+4.0
+inches
+Time
+Elapsed Time
+Pumping Rate
+(HH:MM)
+(hh:mm)
+(gpm)
+Trial 1
+10:00
+0:00
+N/A
+10:15
+0:15
+10:30
+0:30
+10:45
+0:45
+11:00
+1:00
+Trial 2
+11:00
+0:00
+N/A
+11:15
+0:15
+11:30
+0:30
+11:45
+0:45
+12:00
+1:00
+Trial 3
+12:00
+0:00
+N/A
+12:15
+0:15
+12:30
+0:30
+12:45
+0:45
+13:00
+1:00
+Trial 4
+13:00
+0:00
+N/A
+13:15
+0:15
+13:30
+0:30
+13:45
+0:45
+14:00
+1:00
+0.1
+0.0
+0.0
+38.0
+38.0
+38.0
+38.0
+0.0
+38.0
+38.0
+38.0
+38.0
+38.0
+38.0
+38.0
+38.0
+38.1
+38.1
+38.0
+Depth to Water            
+(measured from datum)
+Infiltration Rate
+INFILTRATION TEST RECORD
+Existing Ground Surface Elev.
+GW level, b (from ground):
+Generalized Soil/Rock Description
+2-inch asphaltic concrete
+Brown with gray mottling clayey silt
+HPHA School Street Redevelopment
+(inches)
+(inches per hour)
+with some sand and a little gravel
+Brown clayey silt with some fine sand
+Diameter of Open Hole, D:
+Dark brown silty clay with cobbles
+Diameter of Casing, d (I.D.):
+38.0
+38.0
+38.0
+38.0
+38.0
+GW
+Ground
+Datum
+d
+a
+b
+L
+D
+l
+W.O. 8042-00 
+GEOLABS, INC.
+Hawaii • California
+PLATE D-6 
+Project:
+Honolulu, Oahu, Hawaii
+W.O.:
+8042-00
+Boring No.:
+LID-7
+Date of Testing:
+5/6/2020
+Method of Testing: LID
+Source of Water:
+5-gallon buckets
+47
+feet, MSL
+N/A
+feet
+Datum, a (above ground):
+0.2
+feet
+Depth (feet)
+Depth of Boring: (from ground)
+5.0
+feet
+0.0 - 0.3
+Length, L (from datum):
+5.2
+feet
+0.3 - 0.8
+Open Hole Length, l:
+0.0
+feet
+0.8 - 2.5
+Casing Depth Elevation:
+42.0
+feet, MSL
+2.5 - 5.0
+4.5
+inches
+4.0
+inches
+Time
+Elapsed Time
+Pumping Rate
+(HH:MM)
+(hh:mm)
+(gpm)
+Trial 1
+10:02
+0:00
+N/A
+10:17
+0:15
+10:32
+0:30
+10:47
+0:45
+11:02
+1:00
+Trial 2
+11:02
+0:00
+N/A
+11:17
+0:15
+11:32
+0:30
+11:47
+0:45
+12:02
+1:00
+Trial 3
+12:02
+0:00
+N/A
+12:17
+0:15
+12:32
+0:30
+12:47
+0:45
+13:02
+1:00
+Trial 4
+13:02
+0:00
+N/A
+13:17
+0:15
+13:32
+0:30
+13:47
+0:45
+14:02
+1:00
+INFILTRATION TEST RECORD
+Existing Ground Surface Elev.
+GW level, b (from ground):
+Generalized Soil/Rock Description
+3-inch asphaltic concrete
+Tan silty sand with some gravel
+HPHA School Street Redevelopment
+Brown clayey silt with some gravel
+Dark grayish brown silty clay
+Diameter of Open Hole, D:
+Diameter of Casing, d (I.D.):
+Depth to Water            
+(measured from datum)
+Infiltration Rate
+(inches)
+(inches per hour)
+38.0
+38.0
+38.0
+38.1
+38.1
+0.1
+38.0
+38.0
+38.0
+38.1
+38.1
+0.1
+38.0
+38.0
+38.0
+38.0
+38.1
+0.1
+38.0
+38.1
+0.1
+38.0
+38.0
+38.0
+GW
+Ground
+Datum
+d
+a
+b
+L
+D
+l
+W.O. 8042-00 
+GEOLABS, INC.
+Hawaii • California
+PLATE D-7 
+Project:
+Honolulu, Oahu, Hawaii
+W.O.:
+8042-00
+Boring No.:
+LID-8
+Date of Testing:
+4/15/2020
+Method of Testing: LID
+Source of Water:
+5-gallon buckets
+43
+feet, MSL
+N/A
+feet
+Datum, a (above ground):
+0.2
+feet
+Depth (feet)
+Depth of Boring: (from ground)
+5.0
+feet
+0.0 - 0.5
+Length, L (from datum):
+5.2
+feet
+Open Hole Length, l:
+0.0
+feet
+Casing Depth Elevation:
+38.0
+feet, MSL
+4.5
+inches
+4.0
+inches
+Time
+Elapsed Time
+Pumping Rate
+(HH:MM)
+(hh:mm)
+(gpm)
+Trial 1
+6:53
+0:00
+N/A
+7:08
+0:15
+7:23
+0:30
+7:38
+0:45
+7:53
+1:00
+Trial 2
+7:54
+0:00
+N/A
+8:09
+0:15
+8:24
+0:30
+8:39
+0:45
+8:54
+1:00
+Trial 3
+8:55
+0:00
+N/A
+9:10
+0:15
+9:25
+0:30
+9:40
+0:45
+9:55
+1:00
+Trial 4
+9:56
+0:00
+N/A
+10:11
+0:15
+10:26
+0:30
+10:41
+0:45
+10:56
+1:00
+44.5
+6.1
+40.3
+41.8
+43.2
+44.6
+6.2
+38.4
+40.3
+41.9
+43.3
+45.0
+6.6
+38.4
+40.5
+42.3
+43.7
+46.0
+7.6
+38.4
+41.2
+43.1
+44.7
+(inches)
+(inches per hour)
+38.4
+Diameter of Open Hole, D:
+Diameter of Casing, d (I.D.):
+Depth to Water            
+(measured from datum)
+Infiltration Rate
+INFILTRATION TEST RECORD
+Existing Ground Surface Elev.
+GW level, b (from ground):
+Generalized Soil/Rock Description
+Dark brown to brown clayey silt w/ cobbles
+HPHA School Street Redevelopment
+GW
+Ground
+Datum
+d
+a
+b
+L
+D
+l
+W.O. 8042-00 
+GEOLABS, INC.
+Hawaii • California
+PLATE D-8 
+APPENDIX E  
+HPHA SCHOOL STREET REDEVELOPMENT 
+HONOLULU, OAHU, HAWAII  
+W.O. 8042‐00 
+GEOLABS, INC. 
+PLATE E‐1 
+Hawaii • California 
+B‐1 
+11.5’ TO 30.5’ 
+        11.5’ 
+         16.5’ 
+         21.5’ 
+      26.25’ 
+16.5’ 
+           21.5’ 
+           26.25’ 
+30.5’ 
+HPHA SCHOOL STREET REDEVELOPMENT 
+HONOLULU, OAHU, HAWAII  
+W.O. 8042‐00 
+GEOLABS, INC. 
+PLATE E‐2 
+Hawaii • California 
+B‐2 
+3.0’ TO 31.5’ 
+3.0’ 
+           8.5’ 
+           12.5’ 
+       17.0’ 
+    21.5’  
+26.5’ 
+8.5’ 
+   12.5’   
+             17.0’ 
+        21.5’ 
+     26.5’  
+    31.5’ 
+HPHA SCHOOL STREET REDEVELOPMENT 
+HONOLULU, OAHU, HAWAII  
+W.O. 8042‐00 
+GEOLABS, INC. 
+PLATE E‐3 
+Hawaii • California 
+B‐3 
+6.0’ TO 33.0’ 
+          6.0’ 
+         11.0’ 
+        15.5’ 
+         19.5’ 
+    23.5’  
+  28.5’ 
+11.0’ 
+15.5’ 
+19.5’ 
+     21.5’             23.5’ 
+           28.5’ 
+      33.0’ 
+HPHA SCHOOL STREET REDEVELOPMENT 
+HONOLULU, OAHU, HAWAII  
+W.O. 8042‐00 
+GEOLABS, INC. 
+PLATE E‐4 
+Hawaii • California 
+B‐3 
+33.0’ TO 63.5’ 
+33.0’ 
+38.0’ 
+         50.0’ 
+       54.5’ 
+      58.5’ 
+38.0’ 
+45.5’ 
+50.0’ 
+54.5’ 
+            58.5’ 
+        63.5’ 
+HPHA SCHOOL STREET REDEVELOPMENT 
+HONOLULU, OAHU, HAWAII  
+W.O. 8042‐00 
+GEOLABS, INC. 
+PLATE E‐5 
+Hawaii • California 
+B‐3 
+63.5’ TO 71.5’ 
+       63.5’ 
+       67.0’ 
+              67.0’ 
+         71.5’ 
+HPHA SCHOOL STREET REDEVELOPMENT 
+HONOLULU, OAHU, HAWAII  
+W.O. 8042‐00 
+GEOLABS, INC. 
+PLATE E‐6 
+Hawaii • California 
+B‐4 
+2.5’ TO 31.0’ 
+2.5’ 
+6.5’ 
+           11.0’ 
+         16.5’ 
+       22.0’ 
+ 26.25’ 
+6.5’ 
+11.0’ 
+16.5’ 
+22.0’ 
+       26.25’ 
+       31.0’ 
+HPHA SCHOOL STREET REDEVELOPMENT 
+HONOLULU, OAHU, HAWAII  
+W.O. 8042‐00 
+GEOLABS, INC. 
+PLATE E‐7 
+Hawaii • California 
+B‐4 
+31.0’ TO 66.0’ 
+            31.0’ 
+        37.0’ 
+       42.0’ 
+        48.5’ 
+     56.0’  
+    60.5’ 
+37.0’ 
+            42.0’ 
+      46.0’           48.5’ 
+      51.0’          56.0’ 
+          60.5’ 
+         66.0’ 
+HPHA SCHOOL STREET REDEVELOPMENT 
+HONOLULU, OAHU, HAWAII  
+W.O. 8042‐00 
+GEOLABS, INC. 
+PLATE E‐8 
+Hawaii • California 
+B‐4 
+66.0’ TO 71.0’ 
+   66.0’ 
+     71.0’ 
+HPHA SCHOOL STREET REDEVELOPMENT 
+HONOLULU, OAHU, HAWAII  
+W.O. 8042‐00 
+GEOLABS, INC. 
+PLATE E‐9 
+Hawaii • California 
+B‐5 
+6.5’ TO 38.5’ 
+          6.5’ 
+        12.0’ 
+      20.0’ 
+     25.0’  
+     29.5’  
+     34.5’ 
+12.0’ 
+          20.0’ 
+          25.0’ 
+         29.5’ 
+           34.5’ 
+         38.5’ 
+HPHA SCHOOL STREET REDEVELOPMENT 
+HONOLULU, OAHU, HAWAII  
+W.O. 8042‐00 
+GEOLABS, INC. 
+PLATE E‐10 
+Hawaii • California 
+B‐5 
+38.5’ TO 71.5’ 
+  38.5’   
+  42.5’   
+   53.0’   
+61.5’ 
+           67.0’ 
+         42.5’ 
+       53.0’ 
+       61.5’ 
+   67.0’   
+71.5’ 
+HPHA SCHOOL STREET REDEVELOPMENT 
+HONOLULU, OAHU, HAWAII  
+W.O. 8042‐00 
+GEOLABS, INC. 
+PLATE E‐11 
+Hawaii • California 
+B‐6 
+16.0’ TO 51.0’ 
+           16.0’ 
+        22.0’ 
+        27.0’ 
+      31.5’ 
+    36.0’             42.5’ 
+   46.0’ 
+22.0’ 
+27.0’ 
+31.5’ 
+          36.0’ 
+    41.0’           46.0’ 
+        51.0’ 
+HPHA SCHOOL STREET REDEVELOPMENT 
+HONOLULU, OAHU, HAWAII  
+W.O. 8042‐00 
+GEOLABS, INC. 
+PLATE E‐12 
+Hawaii • California 
+B‐6 
+51.0’ TO 82.5’ 
+           51.0’ 
+         56.0’ 
+         60.5’ 
+      65.5’ 
+    71.0’  
+    77.0’ 
+56.0’ 
+60.5’ 
+            65.5’ 
+         71.0’ 
+         77.0’ 
+         82.5’ 
+HPHA SCHOOL STREET REDEVELOPMENT 
+HONOLULU, OAHU, HAWAII  
+W.O. 8042‐00 
+GEOLABS, INC. 
+PLATE E‐13 
+Hawaii • California 
+B‐6 
+82.5’ TO 101.0’ 
+  82.5’   
+88.0’ 
+96.0’ 
+         88.0’ 
+91.0’ 
+    96.0’  
+    101.0’ 
+HPHA SCHOOL STREET REDEVELOPMENT 
+HONOLULU, OAHU, HAWAII  
+W.O. 8042‐00 
+GEOLABS, INC. 
+PLATE E‐14 
+Hawaii • California 
+B‐7 
+4.6’ TO 36.5’ 
+4.6’ 
+9.5’ 
+            14.0’ 
+         19.0’ 
+       24.0’ 
+    29.0’ 
+   9.5’ 
+14.0’ 
+           16.5’ 
+19.0’ 
+         21.5’ 
+24.0’ 
+       26.5’          29.0’ 
+          36.5’ 
+HPHA SCHOOL STREET REDEVELOPMENT 
+HONOLULU, OAHU, HAWAII  
+W.O. 8042‐00 
+GEOLABS, INC. 
+PLATE E‐15 
+Hawaii • California 
+B‐7 
+36.5’ TO 69.0’ 
+           36.5’ 
+           41.5’ 
+          46.0’ 
+         50.5’ 
+          55.0’ 
+       61.5’ 
+41.5’ 
+46.0’ 
+50.5’ 
+55.0’ 
+             61.5’ 
+       66.5’ 
+69.0’ 
+HPHA SCHOOL STREET REDEVELOPMENT 
+HONOLULU, OAHU, HAWAII  
+W.O. 8042‐00 
+GEOLABS, INC. 
+PLATE E‐16 
+Hawaii • California 
+B‐7 
+69.0’ TO 71.5’ 
+69.0’ 
+      71.5’ 
+HPHA SCHOOL STREET REDEVELOPMENT 
+HONOLULU, OAHU, HAWAII  
+W.O. 8042‐00 
+GEOLABS, INC. 
+PLATE E‐17 
+Hawaii • California 
+B‐8 
+23.5’ TO 52.0’ 
+            23.5’ 
+             28.0’ 
+         33.0’ 
+       37.0’ 
+    42.0’  
+    47.0’ 
+28.0’ 
+  33.0’   
+37.0’ 
+          42.0’ 
+         47.0’ 
+       52.0’ 
+HPHA SCHOOL STREET REDEVELOPMENT 
+HONOLULU, OAHU, HAWAII  
+W.O. 8042‐00 
+GEOLABS, INC. 
+PLATE E‐18 
+Hawaii • California 
+B‐8 
+52.0’ TO 62.0’ 
+        52.0’ 
+       57.0’ 
+             57.0’ 
+62.0’ 
+HPHA SCHOOL STREET REDEVELOPMENT 
+HONOLULU, OAHU, HAWAII  
+W.O. 8042‐00 
+GEOLABS, INC. 
+PLATE E‐19 
+Hawaii • California 
+B‐9 
+2.0’ TO 33.5’ 
+          2.0’ 
+        7.0’ 
+        12.0’ 
+       17.0’ 
+       24.5’ 
+      29.0’ 
+7.0’ 
+12.0’ 
+17.0’ 
+             24.5’ 
+             29.0’ 
+            33.5’ 
+HPHA SCHOOL STREET REDEVELOPMENT 
+HONOLULU, OAHU, HAWAII  
+W.O. 8042‐00 
+GEOLABS, INC. 
+PLATE E‐20 
+Hawaii • California 
+B‐8 
+33.5’ TO 62.0’ 
+33.5’ 
+       38.0’ 
+       42.0’ 
+      47.5’ 
+     52.0’  
+57.0’ 
+38.0’ 
+42.0’ 
+47.5’ 
+         52.0’ 
+       57.0’ 
+    62.0’ 
+HPHA SCHOOL STREET REDEVELOPMENT 
+HONOLULU, OAHU, HAWAII  
+W.O. 8042‐00 
+GEOLABS, INC. 
+PLATE E‐21 
+Hawaii • California 
+B‐9 
+62.0’ TO 72.0’ 
+        62.0’ 
+     67.0’ 
+67.0’ 
+            72.0’ 
+HPHA SCHOOL STREET REDEVELOPMENT 
+HONOLULU, OAHU, HAWAII  
+W.O. 8042‐00 
+GEOLABS, INC. 
+PLATE E‐22 
+Hawaii • California 
+B‐10 
+13.5’ TO 65.5’ 
+            13.5’ 
+18.5’ 
+28.5’ 
+43.5’ 
+51.5’ 
+56.0’ 
+61.0’ 
+18.5’ 
+          27.0’ 
+42.0’ 
+            51.5’ 
+         56.0’ 
+        61.0’ 
+      65.5’ 
+HPHA SCHOOL STREET REDEVELOPMENT 
+HONOLULU, OAHU, HAWAII  
+W.O. 8042‐00 
+GEOLABS, INC. 
+PLATE E‐23 
+Hawaii • California 
+B‐10 
+65.5’ TO 70.0’ 
+65.5’ 
+   70.0’ 

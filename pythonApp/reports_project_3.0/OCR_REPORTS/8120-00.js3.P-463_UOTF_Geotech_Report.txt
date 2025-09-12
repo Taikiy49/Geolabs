@@ -1,0 +1,6924 @@
+GEOTECHNICAL ENGINEERING EXPLORATION 
+FY20 MILCON PROJECT P-463 
+SOF UNDERSEA OPERATIONAL TRAINING FACILITY 
+PEARL CITY PENINSULA, JBPHH, OAHU, HAWAII 
+W.O. 8120-00     OCTOBER 29, 2020 
+Prepared for 
+HENSEL PHELPS CONSTRUCTION COMPANY 
+GEOLABS, INC. 
+Geotechnical Engineering and Drilling Services 
+Final Design Submittal (IFC) - 10/29/2020
+GEOTECHNICAL ENGINEERING EXPLORATION 
+FY20 MILCON PROJECT P-463 
+SOF UNDERSEA OPERATIONAL TRAINING FACILITY 
+PEARL CITY PENINSULA, JBPHH, OAHU, HAWAII 
+W.O. 8120-00    OCTOBER 29, 2020 
+Prepared for 
+HENSEL PHELPS CONSTRUCTION COMPANY 
+THIS WORK WAS PREPARED BY 
+ME OR UNDER MY SUPERVISION. 
+4-30-22 
+SIGNATURE 
+EXPIRATION DATE  
+OF THE LICENSE 
+GEOLABS, INC. 
+Geotechnical Engineering and Drilling Services 
+94‐429 Koaki Street, Suite 200 • Waipahu, HI  96797 
+Hawaii • California 
+Final Design Submittal (IFC) - 10/29/2020
+GEOLABS, INC. 
+Geotechnical Engineering and Drilling Services 
+94‐429 Koaki Street, Suite 200 • Waipahu, Hawaii 96797 
+Telephone: (808) 841‐5064  •  E‐mail: hawaii@geolabs.net 
+Hawaii • California 
+October 29, 2020 
+W.O. 8120-00 
+Mr. Peter Mercuris 
+Hensel Phelps Construction Company 
+841 Bishop Street, Suite 2001 
+Honolulu, HI  96813 
+Dear Mr. Mercuris: 
+Geolabs, Inc. is pleased to submit our report entitled "Geotechnical Engineering 
+Exploration, FY20 MILCON Project P-463, SOF Undersea Operational Training Facility” 
+prepared in support of the design-build effort for the proposed project at the Pearl City 
+Peninsula on the Island of Oahu, Hawaii. 
+Our work was performed in general accordance with the scope of services outlined 
+in the Subcontract for Professional Services with Hensel Phelps Construction Company 
+dated April 23, 2020. 
+To the best of our knowledge, the subsurface conditions encountered in the 
+additional borings conducted by Geolabs for this project appear to be in reasonable 
+agreement with the Government provided boring logs included in the RFP documents 
+with some minor variations. Therefore, we believe the geotechnical and pavement related 
+recommendations to be implemented for the project would not be considered a changed 
+condition to the requirements of the RFP documents. 
+Please note that the soil and rock samples recovered during our field exploration 
+(remaining after testing) will be stored for a period of two months from the date of this 
+report. The samples will be discarded after that date unless special arrangements are 
+made for a longer sample storage period. Please contact our office for alternative sample 
+storage requirements, if appropriate. 
+Detailed discussion and specific design recommendations are contained in the 
+body of this report. If there are questions regarding the contents of this report, please 
+contact our office. 
+Very truly yours, 
+GEOLABS, INC. 
+       Robin M. Lim, P.E. 
+               President 
+RML:JS:as 
+Final Design Submittal (IFC) - 10/29/2020
+W.O. 8120-00 
+GEOLABS, INC. 
+Page i 
+Hawaii • California 
+GEOTECHNICAL ENGINEERING EXPLORATION 
+FY20 MILCON PROJECT P-463 
+SOF UNDERSEA OPERATIONAL TRAINING FACILITY 
+PEARL CITY PENINSULA, JBPHH, OAHU, HAWAII 
+W.O. 8120-00     OCTOBER 29, 2020 
+TABLE OF CONTENTS 
+ .......................................................................................................................... Page 
+SUMMARY OF FINDINGS AND RECOMMENDATIONS .............................................. iii 
+1. 
+GENERAL ............................................................................................................ 1 
+1.1 
+Project Considerations ............................................................................... 1 
+1.2 
+Purpose and Scope ................................................................................... 2 
+ 2. 
+SITE CHARACTERIZATION ................................................................................ 4 
+2.1 
+Regional Geology ...................................................................................... 4 
+2.2 
+Existing Site Conditions ............................................................................. 6 
+2.3 
+Subsurface Conditions ............................................................................... 6 
+2.4 
+Seismic Design Considerations ................................................................. 7 
+2.4.1 Earthquakes and Seismicity ........................................................... 7 
+2.4.2 Liquefaction Potential ..................................................................... 8 
+2.4.3 Site Classification ........................................................................... 9 
+3. 
+DISCUSSION AND RECOMMENDATIONS ...................................................... 11 
+3.1 
+Pile Foundations ...................................................................................... 12 
+3.1.1 Axial Pile Capacity ........................................................................ 12 
+3.1.2 Lateral Load Resistance ............................................................... 14 
+3.1.3 Pile Foundation Settlements......................................................... 15 
+3.1.4 Predrilling ..................................................................................... 15 
+3.1.5 Pile Hammer Selection ................................................................. 16 
+3.1.6 Pile Driving Criteria ....................................................................... 16 
+3.1.7 Test Pile Program (Indicator Probe Pile Program) ....................... 17 
+3.2 
+Building Floor Slabs ................................................................................. 18 
+3.3 
+Ancillary Structure Foundations ............................................................... 19 
+3.4 
+Concrete Slabs-On-Grade ....................................................................... 20 
+3.5 
+Lift Station Foundation ............................................................................. 21 
+3.6 
+Retaining Structures ................................................................................ 21 
+3.6.1 Retaining Structure Foundations .................................................. 21 
+3.6.2 Static Lateral Earth Pressures ...................................................... 22 
+3.6.3 Dynamic Lateral Earth Pressures ................................................. 24 
+3.6.4 Drainage ....................................................................................... 24 
+3.7 
+Combat Training Tank Temporary Shoring .............................................. 25 
+3.8 
+Earthwork ................................................................................................. 26 
+3.8.1 Site Preparation ............................................................................ 27 
+3.8.2 Fills and Backfills .......................................................................... 27 
+3.8.3 Fill Placement and Compaction Requirements............................. 28 
+Final Design Submittal (IFC) - 10/29/2020
+TABLE OF CONTENTS 
+Page 
+W.O. 8120-00 
+GEOLABS, INC. 
+Page ii 
+Hawaii • California 
+3.9 
+Utility Trenches ........................................................................................ 29 
+3.10 
+Instrumentation and Monitoring ............................................................... 29 
+3.11 
+Pavement Design .................................................................................... 30 
+3.12 
+Design Review ......................................................................................... 31 
+3.13 
+Services During Construction .................................................................. 31 
+4. 
+LIMITATIONS ..................................................................................................... 33 
+REFERENCES .............................................................................................................. 35 
+CLOSURE ..................................................................................................................... 36 
+PLATES 
+Project Location Map ................................................................................... Plate 1 
+Site Plan ...................................................................................................... Plate 2 
+Geology Map ............................................................................................... Plate 3 
+Summary of Lateral Load Analyses for Precast Piles .................................. Plate 4 
+Instrumentation Plans ................................................................ Plates 5.1 thru 5.6 
+APPENDIX A 
+Field Exploration ....................................................................... Pages A-1 and A-2 
+Soil Log Legend  .................................................................................... Plate A-0.1 
+Soil Classification Log Key  ................................................................... Plate A-0.2 
+Rock Log Legend  ................................................................................. Plate A-0.3 
+Logs of Borings  ........................................................................ Plates A-1 thru A-3 
+APPENDIX B 
+Laboratory Tests ...................................................................................... Page B-1 
+Laboratory Test Data  ............................................................. Plates B-1 thru B-21 
+APPENDIX C 
+Photographs of Core Samples  ................................................. Plates C-1 thru C-3 
+APPENDIX D 
+Geotechnical Information from RFP Documents ..................................... 21 Pages 
+Final Design Submittal (IFC) - 10/29/2020
+W.O. 8120-00 
+GEOLABS, INC. 
+Page iii 
+Hawaii • California  
+GEOTECHNICAL ENGINEERING EXPLORATION 
+FY20 MCON PROJECT P-463 
+SOF UNDERSEA OPERATIONAL TRAINING FACILITY 
+PEARL CITY PENINSULA, JBPHH, OAHU, HAWAII 
+W.O. 8120-00     OCTOBER 29, 2020 
+SUMMARY OF FINDINGS AND RECOMMENDATIONS 
+Based on the subsurface information contained in the RFP documents and our 
+geotechnical exploration, the subsurface conditions at the project site generally consists 
+of asphaltic concrete pavement overlying surface fills and lagoonal deposits. The lagoonal 
+deposits consist of very loose to loose clayey gravel, silty gravel, sandy gravel, clayey 
+sands, and silty sands, and very soft to medium stiff sandy silts and silty clays extending 
+to depths between about 20 and 65 feet below the existing ground surface. Below the 
+lagoonal deposits, weathered volcanic tuff, coralline detritus, weathered siltstone, and 
+older alluvium were encountered in the borings, extending to the maximum depth 
+explored of about 112.5 feet below the existing ground surface. A lens of medium hard to 
+hard volcanic tuff was encountered in Boring No. 103 at depths between about 26 and 
+32.5 feet below the existing ground surface. 
+Groundwater was encountered in the borings at depths of about 2.5 to 5 feet below 
+the ground surface at the time of the field exploration, corresponding to about 
+Elevation +1.7 to -0.7 feet MSL. However, groundwater levels likely will change due to 
+tidal fluctuations, seasonal precipitation, surface water runoff, and other factors. 
+It should be noted that the very loose to loose lagoonal deposits at the project site 
+are susceptible to soil liquefaction when subjected to the design earthquake. Based on 
+the subsurface conditions encountered in the borings and the presence of potentially 
+liquefiable lagoonal deposits, we recommend using a deep foundation system consisting 
+of driven precast, prestressed concrete piles to support the new facility. The driven 
+precast, prestressed concrete piles would derive axial load support primarily from skin 
+friction between the pile and the surrounding soils with some contribution from end 
+bearing within the alluvial soil deposit. Generally, we recommend using 16.5-inch 
+octagonal precast, prestressed concrete piles with an allowable compressive load 
+capacity of 85 tons (170 kips) per pile to support the new building structure and 100 tons 
+(200 kips) per pile to support the new combat training tank (CTT). To develop the 
+recommended pile capacities of 85 tons (170 kips) and 100 tons (200 kips), we anticipate 
+pile embedment depths of approximately 80 feet below the bottom of the new building 
+structure pile cap and 65 feet below the bottom of the combat training tank. As required 
+in the Project Program, the ground floor slab will need to be structurally supported on pile 
+foundations due to the potential for seismically induced ground settlements of about 4 to 
+10 inches based on the design earthquake. 
+We recommend an indicator probe pile program consisting of installing a minimum 
+of 15 to 20 piles for the project. The indicator probe piles may be incorporated into the 
+Final Design Submittal (IFC) - 10/29/2020
+SUMMARY OF FINDINGS AND RECOMMENDATIONS 
+W.O. 8120-00 
+GEOLABS, INC. 
+Page iv 
+Hawaii • California 
+actual foundation system upon the evaluation of the load test results. The indicator probe 
+pile program should provide flexibility to allow for the addition or relocation of the probe 
+piles, as may be deemed necessary by our office, to suit the conditions encountered 
+during the indicator probe pile driving. 
+Re-striking of all the indicator probe piles will be required as part of the indicator 
+probe pile program after completion of the static load tests. We also recommend 
+conducting static load tests on two selected indicator probe piles for the project. The static 
+pile load tests should be performed in general accordance with ASTM D1143, loading the 
+test pile to 275 percent of the design load (85 tons) and holding the load for up to 4 hours. 
+The text of this report should be referred to for detailed discussion and specific 
+design recommendations. 
+END OF SUMMARY OF FINDINGS AND RECOMMENDATIONS 
+Final Design Submittal (IFC) - 10/29/2020
+W.O. 8120-00 
+GEOLABS, INC. 
+Page 1 
+Hawaii • California 
+SECTION 1.  GENERAL 
+This report presents the results of our geotechnical engineering exploration 
+performed for the proposed SOF Undersea Operational Training Facility project 
+(FY20 MILCON Project P-463) at the Pearl City Peninsula in Pearl City on the Island of 
+Oahu, Hawaii. The project location and general vicinity are shown on the Project Location 
+Map, Plate 1. 
+This report summarizes the findings from our field exploration and laboratory 
+testing and presents our geotechnical recommendations derived from our analyses for 
+design of the proposed project. These recommendations are intended for the design of 
+foundations, floor slabs, retaining structures, earthwork, utilities, and pavements only. The 
+findings and recommendations presented herein are subject to the limitations noted at 
+the end of this report. 
+1.1 
+Project Considerations 
+The proposed “Design-Build” project involves the design and construction of an 
+undersea operational training facility within the Joint Base Pearl Harbor-Hickam (JBPHH) 
+at the Pearl City Peninsula on the Island of Oahu, Hawaii. The proposed facility will be a 
+two-story concrete structure. The building structure and the ground floor slab will be 
+supported on a deep foundation system consisting of driven precast, prestressed 
+concrete piles. The proposed facility will include a combat training tank, which also will be 
+supported on driven precast, prestressed concrete piles. The facility will include a 
+submersible operator workspace, electronic technician workspace, various storage 
+rooms, offices, restrooms, equipment rooms, and locker rooms. Ancillary structures and 
+equipment pads located at the exterior of the building structure will include a chiller yard, 
+propane tank enclosure, pool equipment, and transformer pad. 
+The new building will have a finished floor elevation of +6.85 feet Mean Sea Level 
+(MSL). Based on the relatively level ground surface conditions at the site, we envision 
+only minor site grading consisting of cuts and fills of about 0.5 to 2 feet will be required to 
+achieve the design finished grades. The combat training tank will be located near the 
+center of the building structure within the high-bay area. The tank is approximately 
+Final Design Submittal (IFC) - 10/29/2020
+SECTION 1. GENERAL 
+W.O. 8120-00 
+GEOLABS, INC. 
+Page 2 
+Hawaii • California 
+25.5 feet wide by 56.3 feet long and extends approximately 22.75 feet below the finished 
+floor elevation, corresponding to a bottom of tank elevation of -15.4 feet MSL. 
+Underground utilities, such as sewer, drainage, water, and electrical lines, will be 
+provided to service the facility. Installation of a new 6-inch gravity sewer, a 4-inch sewer 
+force main, and a new 88-GPM (gallons per minute) duplex sewer lift station will be 
+constructed to service the new facility. 
+1.2 
+Purpose and Scope 
+The purpose of our field exploration was to obtain an overview of the surface and 
+subsurface conditions at the project site to develop a soil/rock data set to formulate 
+geotechnical recommendations for design of the foundations, floor slabs, retaining 
+structures, earthwork, utilities, and pavements. In order to accomplish this scope, we 
+conducted an exploration program consisting of the following tasks and efforts: 
+1. 
+Research and review of available in-house soils and geologic information 
+pertaining to the project site and its vicinity. 
+2. 
+Application for excavation permits from the applicable agencies and 
+coordination of site access and underground utility toning. 
+3. 
+Preparation and submittal of an Activity Hazard Analysis in support of our 
+field exploration activities and briefing of our field personnel. 
+4. 
+Mobilization and demobilization of a truck-mounted drill rig, work support 
+truck, water truck, and operators to the project site and back. 
+5. 
+Drilling and sampling of three exploratory borings at the building site 
+extending to depths of about 102 to 111.5 feet below the existing ground 
+surface for a total of 325 linear feet of exploration. 
+6. 
+Coordination of the field exploration and logging of the borings by our 
+geologist. 
+7. 
+Laboratory testing of selected soil samples obtained during the field 
+exploration as an aid in classifying the materials and evaluating their 
+engineering properties. 
+8. 
+Analyses of the field and laboratory data to formulate geotechnical 
+recommendations for design of the project. 
+Final Design Submittal (IFC) - 10/29/2020
+SECTION 1. GENERAL 
+W.O. 8120-00 
+GEOLABS, INC. 
+Page 3 
+Hawaii • California 
+9. 
+Preparation of this geotechnical engineering report summarizing our work 
+on 
+the 
+project 
+and 
+presenting 
+our 
+findings 
+and 
+geotechnical 
+recommendations for design of the project. 
+10. 
+Miscellaneous work efforts, such as drafting, word processing, and clerical 
+support. 
+11. 
+Coordination of our overall work on the project by our engineers. 
+12. 
+Quality assurance of our work and client/design team consultation by our 
+principal engineer. 
+Detailed descriptions of our field exploration methodology and the Logs of Borings 
+are presented in Appendix A. Results of the laboratory tests performed on selected soil 
+and rock samples obtained from our field exploration are presented in Appendix B. 
+Photographs of the core samples retrieved from our field exploration are presented in 
+Appendix C. The logs of borings and laboratory test results from the soil data package 
+report contained in the Request for Proposal (RFP) documents are included in 
+Appendix D for ease of reference. 
+END OF GENERAL 
+Final Design Submittal (IFC) - 10/29/2020
+W.O. 8120-00 
+GEOLABS, INC. 
+Page 4 
+Hawaii • California 
+SECTION 2.  SITE CHARACTERIZATION 
+Of interest to our geotechnical engineering analysis are the subsurface materials 
+encountered at the project site, the engineering properties of the materials encountered, 
+and the variability of the subsurface conditions across the project site. Therefore, the 
+following subsections provide a description of the geologic setting of the project site, the 
+surface and subsurface conditions encountered at the site, and a discussion on the items 
+needed for seismic design, such as the seismicity, soil liquefaction, and the soil profile 
+characteristics for seismic analysis. 
+2.1 
+Regional Geology 
+The Island of Oahu was built by the extrusion of basaltic lava from the Waianae 
+and Koolau Shield Volcanoes. The older Waianae Volcano is estimated to be middle to 
+late Pliocene in age, and the Koolau Volcano is estimated to be late Pliocene to early 
+Pleistocene in age. As volcanic activity at the Waianae Volcano ceased, lava flows from 
+the Koolau Volcano banked against its eroded eastern slope forming the Schofield 
+Plateau. 
+The Koolau Volcanic Shield was built during the late Pliocene Epoch and early 
+Pleistocene Epoch by the extrusion of successive thinly-bedded lava flows. The main 
+shield-building stage ceased approximately 2.5 million years ago. Evidence from historic 
+drilled wells indicates that the Island of Oahu has subsided by as much as 1,200 feet 
+since the cessation of the early volcanic activity (Macdonald and Abbott, 1970). During 
+the period of island subsidence, coral-algal reefs began to grow along the southern coast 
+of Oahu forming embayments protected by barrier reefs. A series of lagoons formed 
+behind the barrier reefs and both terrigenous and marine sediments accumulated in the 
+lagoons (Macdonald and Abbott, 1970). 
+During the Pleistocene Epoch (Ice Age), many sea level changes occurred as a 
+result of widespread glaciation in the continental areas of the world. As the great 
+continental glaciers accumulated, the level of the oceans fell because there was less 
+water available to fill the oceanic basins. Conversely, as the glaciers receded (melted), 
+global sea levels rose because the volume of water increased. The land mass comprising 
+Final Design Submittal (IFC) - 10/29/2020
+SECTION 2. SITE CHARACTERIZATION  
+W.O. 8120-00 
+GEOLABS, INC. 
+Page 5 
+Hawaii • California 
+the Island of Oahu remained essentially stable during these water level changes, and the 
+fluctuations were eustatic in nature. These glacio-eustatic fluctuations resulted in stands 
+of the sea that were both higher and lower relative to present sea level on the Island of 
+Oahu.  
+The higher sea level stands caused landform changes including the accumulation 
+of deltas and alluvial fans composed of terrigenous sediments in the heads of the old 
+bays, the development of reef deposits at correspondingly higher elevations, and the 
+deposition of lagoonal and/or marine sediments in the quiet lagoonal waters protected by 
+barrier reefs. The concurrent growth of reefs and the accumulation of lagoonal sediments 
+also resulted in the deposition of coral-algal limestone and marl materials within the 
+predominantly lagoonal sedimentary unit. 
+The lower sea level stands caused streams to carve drainages into the coastal 
+plain platforms composed of sedimentary and coral reef deposits. In addition, subaerial 
+exposure of the calcareous sediments caused consolidation of the soft deltaic materials 
+and lagoonal deposits and the induration of calcareous reef materials. In addition, 
+renewed sub-aerial erosion of the upper areas of the volcanic dome deposited terrigenous 
+alluvial soils under relatively high-energy conditions. During periods of no significant sea 
+level changes, continued meandering stream action extended the alluvial deltas and fans 
+seaward and deposited alluvial materials overlying the marine-lagoonal sediments.  
+The project site is located on the Southern Oahu Coastal Plain near the shoreline 
+of the East Loch of Pearl Harbor at the Pearl City Peninsula. In general, the subsurface 
+materials underlying the project site consist of fills, lagoonal deposits, volcanic tuff, 
+coralline detritus, weathered siltstone and alluvial soils extending to the maximum depths 
+explored. Based on available historic USGS topographic maps, the project site was 
+underwater previously and covered with oyster beds. Land development and reclamation 
+projects have added man-made fills along the shoreline, bringing the site to its present 
+configuration. A geologic map of the project site and the surrounding area with the 
+approximate location of the shoreline in 1873 is presented on Plate 3. 
+Final Design Submittal (IFC) - 10/29/2020
+SECTION 2. SITE CHARACTERIZATION  
+W.O. 8120-00 
+GEOLABS, INC. 
+Page 6 
+Hawaii • California 
+2.2 
+Existing Site Conditions 
+The project site is located near the southern tip of the Pearl City Peninsula on the 
+Island of Oahu, Hawaii. The project site is bounded by Building 987 to the north, paved 
+grounds to the east, Victor Wharf (V-2) to the south, and Building 989 to the west. Based 
+on our field observations, the proposed project site generally is covered by asphaltic 
+concrete pavement. An existing 40-foot wide concrete pavement roadway (Loke Way) 
+traverses through the proposed building site in a north-south orientation. The project site 
+is currently used as a parking lot and storage area with numerous shipping containers. 
+Based on available topographic data, the project site is generally level with existing 
+ground surface elevations between about Elevation +4 and +5 feet MSL. 
+2.3 
+Subsurface Conditions 
+Our field exploration consisted of drilling and sampling three borings, designated 
+as Boring Nos. 101 through 103, extending to depths of about 102 to 111.5 feet below 
+the existing ground surface. In addition, two bulk soil samples, designated as Bulk-1 and 
+Bulk-2, were obtained from near the ground surface to evaluate the pavement support 
+characteristics of the near-surface soils. The approximate boring and bulk soil sample 
+locations are shown on the Site Plan, Plate 2. In addition, borings drilled in support of the 
+RFP documents also are shown on the Site Plan for ease of reference. 
+Based on the available subsurface information contained in the RFP documents 
+and our geotechnical exploration, the subsurface conditions at the project site generally 
+consist of 3 to 4 inches of asphaltic concrete pavement underlain by 5.5 to 7 feet of fill 
+materials consisting of loose to medium dense silty sands, clayey gravel, and sandy 
+gravel, and stiff clayey silts. The fills were underlain by lagoonal deposits consisting of 
+very loose to loose clayey gravel, silty gravel, sandy gravel, clayey sands, and silty sands, 
+and very soft to medium stiff sandy silts and silty clays extending to depths between about 
+20 and 65 feet below the existing ground surface. The lagoonal deposits generally were 
+underlain by weathered volcanic tuff, coralline detritus, weathered siltstone, and older 
+alluvium extending to the maximum depth explored of about 112.5 feet below the existing 
+ground surface. It should be noted that medium hard to hard volcanic tuff was 
+encountered in Boring No. 103 between depths of about 26 and 32.5 feet below the 
+existing ground surface. 
+Final Design Submittal (IFC) - 10/29/2020
+SECTION 2. SITE CHARACTERIZATION  
+W.O. 8120-00 
+GEOLABS, INC. 
+Page 7 
+Hawaii • California 
+The coralline detritus generally consisted of medium dense silty gravel with some 
+loose pockets embedded within the formation. The weathered siltstone and older alluvium 
+generally consisted of medium stiff to hard sandy clays, silty clays, clayey silts, and sandy 
+silts, and loose to medium dense silty sands. 
+Groundwater was encountered in the borings at depths of about 2.5 to 5 feet below 
+the ground surface at the time of the field exploration, corresponding to about 
+Elevation +1.7 to -0.7 feet MSL. However, groundwater levels likely will change due to 
+tidal fluctuations, seasonal precipitation, surface water runoff, and other factors. 
+2.4 
+Seismic Design Considerations 
+The project site will be subjected to seismic activity and should be evaluated for 
+potential soil liquefaction. Seismic design of the project will be based on the Unified 
+Facilities Criteria “Structural Engineering” (UFC 3-301-01), which references the 2018 
+International Building Code (IBC 2018) and American Society of Civil Engineers (ASCE) 
+7-16, Minimum Design Loads for Buildings and Other Structures, 2016 Edition. 
+2.4.1 Earthquakes and Seismicity 
+In general, earthquakes throughout the world are caused by shifts in the tectonic 
+plates. In contrast, earthquake activity in Hawaii is linked primarily to volcanic 
+activity; therefore, earthquake activity in Hawaii generally occurs before or during 
+volcanic eruptions. In addition, earthquakes may result from the underground 
+movement of magma that comes close to the surface but does not erupt. The 
+Island of Hawaii experiences thousands of earthquakes each year, but most are 
+so small that only sensitive instruments can detect them. However, some of the 
+earthquakes are strong enough to be felt, and a few cause minor to moderate 
+damage. 
+In general, earthquakes associated with volcanic activity are most common on the 
+Island of Hawaii. Earthquakes that are directly associated with the movement of 
+magma are concentrated beneath the active Kilauea and Mauna Loa Volcanoes 
+on the Island of Hawaii. Because the majority of earthquakes in Hawaii 
+(over 90 percent) are related to volcanic activity, the risk of seismic activity and 
+Final Design Submittal (IFC) - 10/29/2020
+SECTION 2. SITE CHARACTERIZATION  
+W.O. 8120-00 
+GEOLABS, INC. 
+Page 8 
+Hawaii • California 
+degree of ground shaking diminishes with increased distance from the Island of 
+Hawaii. The Island of Hawaii has experienced numerous earthquakes greater than 
+Magnitude 5 (M5+); however, earthquakes are not confined only to the Island of 
+Hawaii. 
+To a lesser degree, the Island of Maui has experienced several earthquakes 
+greater than Magnitude 5. Therefore, moderate to strong earthquakes have 
+occurred in the County of Maui. The effects of earthquakes occurring on the 
+Islands of Hawaii and Maui may be felt on the Island of Oahu. For example, small 
+landslides occurred on the Island of Oahu as a result of the Maui Earthquake of 
+1938 (M6.8). Some houses on the Island of Oahu were reportedly damaged as a 
+result of the Lanai Earthquake of 1871 (M7+). 
+In the last 150 years of recorded history, we are not aware of earthquakes greater 
+than Magnitude 6 that have occurred on the Island of Oahu. An earthquake of 
+Magnitude 4.8 to 5.0 occurred along the Diamond Head Fault in 1948 on the Island 
+of Oahu. The moderate tremor resulted in broken store windows, ruptured building 
+walls, and broken underground water mains. 
+2.4.2 Liquefaction Potential 
+Based on the International Building Code (2018 Edition), the project site may be 
+subjected to seismic activity and should be evaluated for potential soil liquefaction. 
+Soil liquefaction is a condition where saturated cohesionless soils near the ground 
+surface undergo a substantial loss of strength due to the build-up of excess pore 
+water pressures resulting from cyclic stress applications induced by earthquakes. 
+In this process, when the loose saturated sand deposit is subjected to vibration 
+(such as during an earthquake), the soil tends to densify and decrease in volume 
+causing an increase in pore water pressure. If drainage is unable to occur rapidly 
+enough to dissipate the build-up of pore water pressure, the effective stress 
+(internal strength) of the soil is reduced. Under sustained vibrations, the pore water 
+pressure build-up could equal the overburden pressure, essentially reducing the 
+soil shear strength to zero and causing it to behave as a viscous fluid. During 
+Final Design Submittal (IFC) - 10/29/2020
+SECTION 2. SITE CHARACTERIZATION  
+W.O. 8120-00 
+GEOLABS, INC. 
+Page 9 
+Hawaii • California 
+liquefaction, the soil acquires sufficient mobility to permit both horizontal and 
+vertical movements, and if not confined, will result in significant deformations. 
+Soils most susceptible to liquefaction are loose, uniformly graded, fine-grained 
+sands and loose silts with little cohesion. The major factors affecting the 
+liquefaction characteristics of a soil deposit are as follows: 
+FACTORS 
+LIQUEFACTION SUSCEPTIBILITY 
+Grain Size Distribution 
+Fine and uniform sands and silts are more 
+susceptible to liquefaction than coarse or 
+well-graded sands. 
+Initial Relative Density 
+Loose sands and silts are most susceptible 
+to liquefaction.  Liquefaction potential is 
+inversely proportional to relative density. 
+Magnitude and Duration of 
+Vibration 
+Liquefaction potential is directly proportional 
+to the magnitude and duration of the 
+earthquake. 
+We evaluated the liquefaction potential of the saturated granular soils at the 
+building site using the computer software program LiquefyPro (Version 5.8n) by 
+CivilTech Software. Our analyses were performed on the drilled borings based on 
+a seismic event of Magnitude 6 with an associated peak ground acceleration of 
+0.36g. Based on our analysis, the very loose lagoonal deposits encountered at the 
+project site (between depths of about 5 feet and 20 feet except for some more 
+resistant zones with some cementation of the subsurface materials) generally are 
+susceptible to liquefaction when subjected to a peak ground acceleration of 0.36g 
+associated with a Magnitude 6 earthquake. In the event of soil liquefaction caused 
+by a peak ground acceleration associated with the Maximum Considered 
+Earthquake (MCE) of 0.36g, the estimated seismically induced ground settlement 
+due to soil liquefaction range from about 4 to 10 inches with an average of about 
+5 inches. The seismically induced settlement estimates are based on the simplified 
+procedures outlined by Tokimatsu and Seed (1987). 
+2.4.3 Site Classification 
+In accordance with FC 1-300-09N Navy and Marine Corps Design Procedures, we 
+understand NAVFAC has the ultimate authority on site class determination for 
+Final Design Submittal (IFC) - 10/29/2020
+SECTION 2. SITE CHARACTERIZATION  
+W.O. 8120-00 
+GEOLABS, INC. 
+Page 10 
+Hawaii • California 
+design. Based on information contained in the Project Program, we understand the 
+project site is classified from a seismic analysis standpoint as a “Soft Clay Profile.” 
+Therefore, we believe seismic design of the structure may be designed based on 
+a Site Class E soil profile in accordance with the International Building Code, 
+2018 Edition. 
+Because the project site is underlain by liquefiable soils, the project site should be 
+classified from a seismic analysis standpoint as being Site Class “F” in accordance 
+with Chapter 20, Site Classification Procedure for Seismic Design contained in 
+ASCE 7-16 (Minimum Design Loads for Buildings and Other Structures). In 
+accordance with ASCE7-16, Chapter 20, a site response analysis is not required 
+to determine the spectral accelerations for liquefiable soils for structures having 
+fundamental periods of vibration equal to or less than 0.5 seconds. Rather, a site 
+class is permitted to be determined in accordance with Section 20.3 and the 
+corresponding values of Fa and Fv determined from Tables 11.4-1 and 11.4-2. 
+Based on Site Class E, the following seismic design parameters were estimated 
+and may be used for the seismic analysis of this project. 
+SEISMIC DESIGN PARAMETERS (ASCE 7-16) 
+Parameter 
+Value 
+MCE Peak Bedrock Acceleration, PBA (Site Class B) 
+0.26g 
+Mapped MCE Spectral Response Acceleration, SS 
+0.56g 
+Mapped MCE Spectral Response Acceleration, S1 
+0.16g 
+Site Class 
+E 
+Site Coefficient, FPGA 
+1.397 
+Site Coefficient, Fa 
+1.569 
+Site Coefficient, Fv 
+3.316 
+MCE Design Peak Ground Acceleration, PGAm (Site Class E) 
+0.36g 
+Design Spectral Response Acceleration, SDS 
+0.59g 
+Design Spectral Response Acceleration, SD1 
+0.36g 
+END OF SITE CHARACTERIZATION 
+Final Design Submittal (IFC) - 10/29/2020
+W.O. 8120-00 
+GEOLABS, INC. 
+Page 11 
+Hawaii • California 
+SECTION 3.  DISCUSSION AND RECOMMENDATIONS 
+Our field exploration generally encountered surface fills placed over lagoonal 
+deposits, weathered volcanic tuff, coralline detritus, weathered siltstone, and older alluvial 
+soil deposits. Lagoonal deposits consisting of very loose to loose clayey gravel, silty 
+gravel, sandy gravel, clayey sands, and silty sands, and very soft to medium stiff sandy 
+silts and silty clays were encountered below the surface fills. The very loose to loose 
+lagoonal deposits are susceptible to soil liquefaction when subjected to the design 
+earthquake ground motions. Groundwater was encountered in the borings at depths of 
+about 2.5 to 5 feet below the ground surface at the time of the field exploration. The 
+groundwater levels measured corresponded to about Elevations +1.7 to -0.7 feet MSL; 
+however, groundwater levels likely will change due to tidal fluctuations, seasonal 
+precipitation, surface water runoff, and other factors. 
+Based on the subsurface conditions encountered in our borings and the presence 
+of potentially liquefiable lagoonal deposits, we recommend using a deep foundation 
+system consisting of driven precast, prestressed concrete piles deriving axial load support 
+from a combination of skin friction and end bearing within the alluvial deposits to support 
+the new building structure and the combat training tank. Due to the potential for 
+seismically induced ground settlements of about 4 to 10 inches, the ground floor slab also 
+should be structurally supported on driven precast, prestressed concrete piles in 
+accordance with the Project Program requirements.  
+Generally, we recommend using 16.5-inch octagonal precast, prestressed 
+concrete piles with an allowable compressive load capacity of 85 tons (170 kips) per pile 
+to support the new building structure and 100 tons (200 kips) per pile to support the new 
+combat training tank. We anticipate pile embedment depths of approximately 80 feet 
+below the bottom of the new building structure pile cap and 65 feet below the bottom of 
+the combat training tank cap likely will be required to develop the recommended pile 
+capacities of 85 tons (170 kips) and 100 tons (200 kips), respectively. 
+Final Design Submittal (IFC) - 10/29/2020
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 8120-00 
+GEOLABS, INC. 
+Page 12 
+Hawaii • California 
+In addition, we anticipate the driven piles will be subjected to lateral loads, and the 
+piles will need to be structurally reinforced to provide the proper bending strength to 
+withstand the lateral load and moment demands acting on the foundation elements. 
+Detailed discussions of our geotechnical recommendations for design of the 
+project are presented in the following sections of this report. 
+3.1 
+Pile Foundations 
+The new building will consist of a two-story concrete structure with a finished floor 
+elevation at the ground level of about +6.85 feet MSL. In addition, the bottom of the 
+combat training tank is set at an elevation of -15.4 feet MSL. Based on the moderately 
+heavy structural loads and the presence of potentially liquefiable lagoonal deposits at the 
+site, we recommend using driven precast, prestressed concrete pile foundations deriving 
+support from a combination of skin friction and/or end-bearing in the alluvial soil deposits 
+to support the new building structure and combat training tank. Based on the subsurface 
+conditions encountered, piles extending through the upper fill soils and potentially 
+liquefiable lagoonal deposits and embedded in the stiff older alluvial soil deposits will be 
+required to derive their axial and lateral load supporting capacity.  
+3.1.1 Axial Pile Capacity 
+Based on available subsurface information contained in the RFP documents and 
+our engineering analysis, we recommend using 16.5-inch octagonal precast, 
+prestressed concrete piles with an allowable compressive load capacity of 85 tons 
+(170 kips) per pile to support the new building structure and 100 tons (200 kips) 
+per pile to support the new combat training tank. The allowable compressive load 
+capacity is for supporting dead-plus-live loads based on allowable stress design 
+methods and may be increased by an additional one-third (33%) for transient 
+loads, such as those caused by wind or seismic forces. 
+The piles would derive load supporting capacity primarily from friction between the 
+pile shaft and surrounding soils with some contribution from end-bearing in the 
+alluvial soil deposits. To develop the recommended allowable compressive load 
+pile capacities of 85 and 100 tons, pile embedment depths of approximately 80 feet 
+Final Design Submittal (IFC) - 10/29/2020
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 8120-00 
+GEOLABS, INC. 
+Page 13 
+Hawaii • California 
+below the bottom of the new building structure pile cap and 65 feet below the 
+bottom of the combat training tank likely will be required. The recommended pile 
+embedment 
+depths 
+correspond 
+to 
+estimated 
+pile 
+tips 
+of 
+about 
+Elevation -76 and -85 feet MSL for the building structure and combat training tank, 
+respectively. For piles installed in a cluster, a minimum pile spacing of 2.5 times 
+the width center-to-center is recommended to avoid reduction in pile capacity due 
+to group action and to facilitate installation of the displacement piles in groups. 
+Uplift loads may be resisted by a combination of the dead weight of the driven pile 
+and shear along the pile surface and the adjacent soils. The uplift load capacities 
+are provided in the table below and include the weight of the pile. The uplift load 
+capacity of the piles provided is intended to resist sustained load applications. The 
+capacity of the pile member in tension should be checked by the project structural 
+engineer. The following table summarizes the pile foundation recommendations 
+for the new building. 
+SUMMARY OF PILE FOUNDATIONS 
+16.5-INCH OCTAGONAL 
+PRECAST, PRESTRESSED CONCRETE PILES 
+Location 
+Estimated 
+Pile 
+Length 
+(feet) 
+Estimated 
+Tip 
+Elevation 
+(feet MSL) 
+Allowable 
+Compressive 
+Load Capacity 
+(tons) 
+Allowable 
+Uplift Load 
+Capacity 
+(tons) 
+New Building 
+Structure 
+80 
+-76 
+85 
+50 
+Combat Training 
+Tank 
+65 
+-85 
+100 
+65 
+Note: It is assumed that a static load test will be conducted to confirm the pile compressive 
+load capacity. Therefore, a factor of safety of 2.0 was used to arrive at the estimated tip 
+elevations of the pile foundations. 
+As indicated above, the loose lagoonal deposits at the project site are susceptible 
+to liquefaction during a seismic event at the project site. Due to the potential for 
+soil liquefaction of the loose lagoonal deposits at the project site, settlement of the 
+loose lagoonal deposits will result in downdrag loading of the deep foundations 
+extending through the potentially liquefiable materials. Therefore, the allowable 
+compressive load capacity of the driven piles has been reduced by the expected 
+downdrag load in the pile foundation analyses. Based on our foundation analyses, 
+Final Design Submittal (IFC) - 10/29/2020
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 8120-00 
+GEOLABS, INC. 
+Page 14 
+Hawaii • California 
+we estimate the downdrag load imposed on the driven piles due to liquefaction of 
+the lagoonal deposits may be on the order of about 55 kips per pile. We believe 
+the downdrag load imposed on the pile foundations due to soil liquefaction may be 
+considered a transient load. It should be noted that the downdrag loading would 
+not affect the combat training tank piles as the pile cutoff elevation at the combat 
+training tank is below the liquefiable zone. 
+3.1.2 Lateral Load Resistance 
+Lateral loads imposed on the foundations may be resisted by a combination of the 
+resistance of the pile-soil system to deflect and passive pressure resistance on the 
+front side of pile caps and grade beams. Passive earth pressure against the near-
+vertical faces of the building foundation caps and/or grade beams may be 
+estimated using an equivalent fluid pressure of 400 pounds per square foot per 
+foot of depth (pcf) and 175 pcf for above and below groundwater conditions, 
+respectively. For the design of lateral load resistance of the new structure, the 
+static groundwater level may be assumed at an elevation of +3 feet MSL.  
+Lateral loads imposed on the combat training tank may be resisted by a 
+combination of the resistance of the pile-soil system to deflect and passive 
+pressure resistance on the front side of the combat training tank walls. Passive 
+pressures along the combat training tank walls may be estimated using a reaction 
+of 5 kips per linear foot along the length of the combat training tank walls. 
+Lateral load analyses were performed using the program LPILE-plus for Windows, 
+which is a microcomputer adaptation of a finite difference, laterally loaded pile 
+program originally developed at the University of Texas at Austin. The program 
+solves for deflection and bending moment along a pile under lateral loads as a 
+function of depth. The analysis was carried out with the use of non-linear “p-y” 
+curves to represent soil moduli. The lateral deflection was then computed using 
+the appropriate soil moduli at various depths. 
+The lateral loads acting at the top of the pile, the maximum induced moments, the 
+depths at which the maximum moments occur, and the point of zero curvature of 
+Final Design Submittal (IFC) - 10/29/2020
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 8120-00 
+GEOLABS, INC. 
+Page 15 
+Hawaii • California 
+the piles are presented on the Summary of Lateral Load Analyses for 16.5-Inch 
+Precast Prestressed Concrete Piles, Plate 4. The allowable lateral load is provided 
+as one-half (50%) of the lateral load that produces a lateral deflection of 1 inch. 
+The lateral load analyses were conducted based on two boundary conditions, 
+where the tops of the piles are either free or fixed against rotation. 
+The effect of group action was considered in our lateral load analysis for driven 
+piles with more than one pile per foundation cap by including an efficiency factor 
+in the direction of loading. The values for pile groups assume that the piles are 
+spaced a minimum of 2.5 times the pile diameter from center-to-center. 
+3.1.3 Pile Foundation Settlements 
+Settlements of the pile foundations will result primarily from elastic compression of 
+the pile member and subgrade response. We estimate the total static settlement 
+of the pile-supported foundations to be less than 0.5 inches with differential 
+settlements between pile supported points not exceeding about 0.25 inches. We 
+believe that these settlements are essentially elastic and should occur as the loads 
+are applied. 
+3.1.4 Predrilling 
+Based on the subsurface conditions encountered, we do not anticipate the need 
+for predrilling at the pile locations to install the piles to the design tip elevations. 
+However, we anticipate some minor predrilling of the surface fill materials may be 
+needed to assist in setting the piles. Therefore, we recommend predrilling the pile 
+locations (if necessary) to a depth not deeper than 20 feet to facilitate seating of 
+the piles only. The required predrilling depths should be verified and/or modified 
+by Geolabs during the pile installation program, depending on the subsurface 
+conditions encountered and pile driving equipment used. 
+We wish to emphasize that the diameter of the predrilled holes should be limited 
+to approximately 20 inches or less to provide the driven piles with sufficient soil 
+contact for lateral load resistance. If an over-sized predrilled hole is encountered 
+during construction, the annular space between the piles and predrilled holes 
+Final Design Submittal (IFC) - 10/29/2020
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 8120-00 
+GEOLABS, INC. 
+Page 16 
+Hawaii • California 
+should be backfilled with pea gravel or grouted with tremie concrete (or flowable 
+fill) to provide the recommended lateral load capacity. 
+3.1.5 Pile Hammer Selection 
+Based on our experience, we recommend using a pile driving hammer having a 
+rated energy of about 60,000 to 80,000 foot-pounds, such as a Delmag D30 diesel 
+hammer, or a Junttan HHK 7A hydraulic impact hammer, or similar pile driving 
+hammers, to install the piles. Wave equation analysis should be performed to 
+demonstrate that the proposed pile driving hammer and systems are capable of 
+driving the piles to the design tip elevations without overstressing or damaging the 
+piles. To avoid overstressing the piles during driving, plywood cushions with an 
+uncompacted (fresh) thickness of about 8 to 12 inches or some other equivalent 
+cushion blocks should be used at all times. 
+The hammer should be equipped with an energy level control such that driving 
+within the loose and/or soft soils may be controlled at a lower energy to reduce 
+tensile stress development, which could damage or cause cracking of the piles. 
+Determination of driving equipment to be used for this project should take into 
+consideration the “matching” of the pile hammer with the weight of the piles to be 
+driven. This will result in the pile hammer efficiently delivering the required energy 
+to the top of the pile and also reducing damage to the piles. Geolabs should review 
+the pile driving equipment proposed to evaluate if the equipment is capable of 
+installing the piles to the recommended capacity. The contractor should forward 
+pile and driving equipment data forms to Geolabs prior to construction for 
+evaluation. Geolabs should review the information and assess the driveability of 
+piles with the use of the selected hammer. 
+3.1.6 Pile Driving Criteria 
+In general, the 16.5-inch octagonal precast, prestressed concrete piles should be 
+driven full depth to the estimated tip elevations of -76 feet MSL or -85 feet MSL, or 
+to a termination refusal criteria. Pile termination criteria will be determined based 
+on the pile driving conditions and the actual hammer used for the project. The 
+Final Design Submittal (IFC) - 10/29/2020
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 8120-00 
+GEOLABS, INC. 
+Page 17 
+Hawaii • California 
+acceptability of piles reaching refusal above the design tip elevations will need to 
+be assessed on an individual basis during the pile driving. 
+In general, each pile should be driven continuously without interruption. A pile may 
+be rejected or its design capacity may be reduced when the driving resistance is 
+interrupted for more than 4 hours and the pile cannot be driven to the required 
+depth and/or meeting the pile driving criteria. During soft driving, such as when the 
+pile tip is within loose and/or soft soils, the hammer stroke (or energy) should be 
+carefully controlled such that significant tensile stresses do not develop within the 
+pile. 
+Because variations in soil strength characteristics are likely to exist in the bearing 
+soils, the supporting capacity of each pile should be confirmed in the field by a 
+representative from our office during driving. It should be noted that the pile design 
+was developed from our pile analysis using the field exploration data. A test pile 
+(or indicator probe pile) program should be carried out to confirm our pile design 
+and to establish pile driving criteria. The production pile driving criteria may be 
+revised based on the indicator probe pile program. 
+3.1.7 Test Pile Program (Indicator Probe Pile Program) 
+As part of the pre-construction activities, we recommend conducting two static load 
+tests at the proposed project site. In addition, we recommend undertaking a test 
+pile (or indicator probe pile) program to fulfill the following objectives. 
+1. 
+To examine the driveability of piles with the use of the selected 
+hammer 
+2. 
+To estimate the production pile lengths 
+3. 
+To assess the test pile driving criteria, which may be modified for use 
+as the production pile driving criteria 
+4. 
+To confirm the recommended predrilling depths at the pile locations 
+To achieve these objectives, we recommend the indicator probe pile program 
+consist of installing a minimum of 15 to 20 piles for the project. The test piles may 
+be incorporated into the actual foundation system upon the evaluation of the load 
+Final Design Submittal (IFC) - 10/29/2020
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 8120-00 
+GEOLABS, INC. 
+Page 18 
+Hawaii • California 
+test results. The indicator probe pile program should provide flexibility to allow for 
+addition or relocation of the test piles, as may be deemed necessary by our office, 
+to suit the conditions encountered during the indicator probe pile driving. 
+Re-striking of all the indicator probe piles will be required as part of the test pile 
+program after at least 14 days following the end of impact driving. Re-striking 
+criteria will be developed after the completion of the static pile load test. 
+As part of the pre-construction activities, we recommend conducting static load 
+tests on two selected test piles at the project site. The pile load tests should be 
+performed in general accordance with ASTM D1143, loading the test pile to 
+275 percent of the design load of 85 tons and holding the load for up to 4 hours. 
+The loading schedule for the static pile load test may be modified in the field by 
+Geolabs depending on the conditions encountered.  
+3.2 
+Building Floor Slabs 
+Based on the potentially liquefiable lagoonal deposits encountered, seismically 
+induced ground settlements on the order of about 4 to 10 inches may be anticipated due 
+to the design seismic event. Due to the potential for seismically induced ground 
+settlements, we recommend structurally supporting the ground floor slabs of the proposed 
+structures on driven pile foundations to reduce the impact of the seismically induced 
+ground settlements on the ground floor slabs, as required by the Project Program. 
+Because the ground floor slabs will be structurally supported, the underlying slab 
+subgrade below the ground floor slab would serve only as a form for placement of the 
+concrete slab. To provide a stable subgrade to serve as a form for the reinforced concrete 
+floor slab, we recommend scarifying the subgrade soil to a depth of about 8 inches, 
+moisture conditioned to above the optimum moisture content, and recompacted to at least 
+90 percent relative compaction (per ASTM D1557). 
+For the underslab support, we recommend placing a minimum 4-inch thick layer of 
+cushion fill consisting of open-graded gravel (ASTM C33, No. 67 gradation) below the 
+slabs. The open-graded gravel cushion fill would serve as a capillary moisture break. To 
+reduce the potential for excessive future moisture infiltration through the slab and 
+Final Design Submittal (IFC) - 10/29/2020
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 8120-00 
+GEOLABS, INC. 
+Page 19 
+Hawaii • California 
+subsequent damage to floor coverings, an impervious moisture barrier should be provided 
+on top of the open-graded gravel cushion fill layer.  
+Exterior concrete walkways may be required for the proposed project. We 
+recommend providing a minimum 4-inch thick cushion layer of aggregate subbase course 
+below the slabs unless the slab subgrade exposes the existing granular fill. The aggregate 
+subbase course should consist of crushed aggregates compacted to at least 90 percent 
+relative compaction. Construction joints should be provided at intervals equal to the width 
+of the walkways with expansion joints at right-angle intersections. 
+3.3 
+Ancillary Structure Foundations 
+An allowable bearing pressure of up to 1,500 pounds per square foot (psf) may be 
+used for design of the ancillary structure foundations bearing on the recompacted on-site 
+materials. This bearing value is for supporting dead-plus-live loads and may be increased 
+by one third (⅓) when considering transient loads, such as those caused by wind or 
+seismic forces. In general, the bottom of the footings should be embedded a minimum of 
+12 inches below the lowest adjacent exterior grade. Foundations located next to retaining 
+walls, other foundations, utility trenches, or easements should be embedded below a 
+45-degree imaginary plane extending upward from the bottom edge of the utility trench. 
+Alternatively, the footings should be extended to a depth as deep as the inverts of the 
+utility lines. 
+Lateral loads acting on the structure may be resisted by friction between the base 
+of the foundation and the bearing materials and by passive earth pressure developed 
+against the near-vertical faces of the embedded portion of footings. The following table 
+presents coefficient of frictions and passive earth pressures (equivalent fluid pressure) 
+versus loading conditions for footings bearing on compacted fill. 
+Final Design Submittal (IFC) - 10/29/2020
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 8120-00 
+GEOLABS, INC. 
+Page 20 
+Hawaii • California 
+LATERAL LOAD RESISTANCE 
+Description 
+Static 
+Condition 
+Seismic 
+Condition 
+Nominal 
+Value 
+Coefficient of Friction 
+0.23 
+0.42 
+0.46 
+Passive Earth Pressure 
+(pcf) 
+175 
+320 
+350 
+NOTE:  Factors of Safety of 2.0 and 1.1 required for the static and seismic conditions, as stipulated in 
+UFC 3-220-01 (dated November 1, 2012). 
+Unless covered by pavements or slabs, the passive pressure resistance in the 
+upper 12 inches below finished grades should be neglected. 
+3.4 
+Concrete Slabs-On-Grade 
+Ancillary structures, such as a chiller yard, propane tank enclosure, pool 
+equipment pad, and transformer pad, will require concrete slabs-on-grade. Based on the 
+subsurface conditions and the minimal grading work anticipated, we envision the new 
+concrete slabs-on-grade likely will bear on the compacted on-site fills and/or imported 
+select granular fill materials; therefore, we believe a conventional slab-on-grade design 
+may be utilized for the on-grade structures. However, if loose soils are encountered at the 
+subgrade level, these soils should be over-excavated and replaced with select granular 
+fill materials compacted to a minimum of 95 percent relative compaction. 
+Where the slabs will be subjected to equipment vibration, we recommend placing 
+the slab over 6 inches of aggregate subbase. The aggregate subbase should consist of 
+crushed basaltic aggregates compacted to a minimum of 95 percent relative compaction. 
+For the design of structural slabs supported on the aggregate subbase, a modulus of 
+subgrade reaction of 200 pci (pounds per square inch per inch of deflection) may be used 
+for the compacted aggregate subbase. The bottom of thickened edges of slabs adjacent 
+to unpaved areas should be embedded at least 12 inches below the lowest adjacent 
+grade. 
+It should be emphasized that the areas adjacent to the slabs should be backfilled 
+tightly against the edges of the slabs with low expansion, relatively impervious soils. 
+These areas also should be graded to divert water away from the slabs and to reduce the 
+potential for water ponding around the slabs and foundations. 
+Final Design Submittal (IFC) - 10/29/2020
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 8120-00 
+GEOLABS, INC. 
+Page 21 
+Hawaii • California 
+3.5 
+Lift Station Foundation 
+Based on the information provided, we understand that a sewer lift station will be 
+constructed adjacent to the northeast corner of the proposed undersea operational 
+training facility structure. The lift station will include a wet well with a planned floor 
+elevation of approximately -6 feet MSL. Therefore, the wet well excavation will extend 
+below the groundwater elevation through the surface fill and into the very loose to loose 
+clayey gravel and sands and very soft to soft silty clay lagoonal deposits. Due to the 
+presence of groundwater and loose and/or soft materials anticipated, we recommend 
+providing a stabilization layer at the bottom of the wet well structure. 
+The stabilization layer should be constructed by over-excavating the subsurface 
+materials to a minimum depth of 3 feet below the bottom of the wet well structure 
+elevation. The over-excavation should extend beyond the outside edges of the wet well 
+perimeter a minimum of 1.5 feet. The over-excavation should be backfilled with a 
+stabilization layer consisting of open-graded gravel (ASTM C33, No. 67 gradation) 
+wrapped in a non-woven geotextile fabric (Mirafi 180N or equivalent). 
+3.6 
+Retaining Structures 
+We believe retaining structures, such as the combat training tank walls and site 
+retaining walls, will be required for the project. Parameters for design of foundations for 
+the retaining structures that are structurally connected to (or abutting) the proposed 
+building structure should be designed in accordance with the “Pile Foundations” section 
+herein. Design of foundations for the other walls (not structurally connected to or abutting 
+the proposed building structure) may be based on the parameters presented in the 
+following “Retaining Structure Foundations” subsection herein. Items of retaining 
+structures that are addressed in the subsequent subsections include the following: 
+1. 
+Retaining Structure Foundations 
+2. 
+Static Lateral Earth Pressures 
+3. 
+Dynamic Lateral Earth Pressures 
+4. 
+Drainage 
+3.6.1 Retaining Structure Foundations 
+In general, we believe retaining structure foundations may be designed in 
+accordance with the recommendations and parameters presented in the “Ancillary 
+Final Design Submittal (IFC) - 10/29/2020
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 8120-00 
+GEOLABS, INC. 
+Page 22 
+Hawaii • California 
+Structure Foundations” section herein. In addition, retaining structure foundations 
+should be at least 18 inches wide and the bottom should be embedded a minimum 
+of 24 inches below the lowest adjacent finished grades. 
+Foundations next to utility trenches or easements should be embedded below a 
+45-degree imaginary plane extending upward from the bottom edge of the utility 
+trench, or they should extend to a depth as deep as the inverts of the utility lines. 
+This requirement is necessary to avoid surcharging adjacent below-grade 
+structures with additional structural loads and to reduce the potential for 
+appreciable foundation settlement. For sloping ground conditions, the footing 
+should extend deeper to obtain a minimum 6-foot setback distance measured 
+horizontally from the outside edge of the footing (base of footing) to the face of the 
+slope. Wall footings oriented parallel to the direction of the slope should be 
+constructed in stepped footings. 
+The bottom of footing excavations should be recompacted to a minimum of 
+90 percent relative compaction to provide a relatively firm and smooth bearing 
+surface prior to the placement of reinforcing steel or concrete. Soft and/or loose 
+materials encountered at the bottom of footing excavations should be 
+over-excavated to expose the underlying firm and/or dense materials. The 
+over-excavation may be backfilled with on-site soils compacted to a minimum of 
+90 percent relative compaction, or the footing bottom may be extended down to 
+bear directly on the underlying competent materials. 
+3.6.2 Static Lateral Earth Pressures 
+Retaining structures should be designed to resist the lateral earth pressures due 
+to the adjacent soils and surcharge effects. The recommended lateral earth 
+pressures for design of retaining structures, expressed in equivalent fluid 
+pressures of pcf, are presented in the following table. 
+Final Design Submittal (IFC) - 10/29/2020
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 8120-00 
+GEOLABS, INC. 
+Page 23 
+Hawaii • California 
+LATERAL EARTH PRESSURES 
+FOR DESIGN OF RETAINING STRUCTURES 
+Level Backfill 
+Condition 
+Water 
+Condition 
+Active 
+(pcf) 
+At-Rest 
+(pcf) 
+Above 
+Groundwater 
+Without Hydrostatic 
+Pressure 
+38 
+56 
+Below 
+Groundwater 
+With Hydrostatic 
+Pressure 
+80 
+85 
+Without Hydrostatic 
+Pressure 
+17 
+23 
+The values provided above assume that the on-site soils with a maximum particle 
+size of 3 inches or less or select granular fill materials will be used to backfill behind 
+the walls. It is assumed that the backfill behind retaining structures will be 
+compacted to between 90 and 95 percent relative compaction. Over-compaction 
+of the retaining structure backfill should be avoided. 
+In general, an active condition may be used for gravity walls and retaining walls 
+that are free to deflect by as much as 0.5 percent of the wall height. If the tops of 
+the walls are not free to deflect beyond this degree, or are restrained, the walls 
+should be designed for the at-rest condition. The lateral earth pressures presented 
+for the above groundwater conditions do not include hydrostatic pressures that 
+might be caused by groundwater trapped behind the walls. 
+Surcharge stresses due to areal surcharges, line loads, and point loads within a 
+horizontal distance equal to the depth of the wall should be considered in the 
+design. For uniform surcharge stresses imposed on the loaded side of the wall, a 
+rectangular distribution with uniform pressure equal to 33 percent of the vertical 
+surcharge pressure acting over the entire height of the wall, which is free to deflect 
+(cantilever), may be used in design. For walls that are restrained, a rectangular 
+distribution equal to 50 percent of the vertical surcharge pressure acting over the 
+entire height of the wall may be used for design. Additional analyses during design 
+may be needed to evaluate the surcharge effects of point loads and line loads. 
+Final Design Submittal (IFC) - 10/29/2020
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 8120-00 
+GEOLABS, INC. 
+Page 24 
+Hawaii • California 
+3.6.3 Dynamic Lateral Earth Pressures 
+Dynamic lateral earth forces due to seismic loading will need to be considered in 
+the design of retaining structures, such as the combat training tank walls and site 
+retaining walls. For design in accordance with the 2018 IBC, the force due to 
+dynamic lateral earth pressures associated with seismic loading (PGA = 0.364g) 
+may be estimated using 6.9H2 pounds per linear foot of wall length for level backfill 
+conditions where H is the height of the wall in feet. It should be noted that the 
+dynamic lateral earth forces provided assume that the wall will be allowed to move 
+laterally by up to about 1 to 2 inches in the event of an earthquake. 
+If the estimated amount of lateral movement is not attainable or the retaining 
+structure is restrained, the retaining structure should be designed with higher 
+dynamic lateral forces for a restrained condition. For a restrained condition (less 
+than 0.5 inches of lateral movement), dynamic lateral forces due to seismic loading 
+may be estimated using 17.3H2 pounds per linear foot of wall (H measured in feet) 
+for level backfill conditions. 
+The resultant force should be assumed to act through the mid-height of the wall. 
+The above dynamic lateral earth forces are in addition to the static lateral earth 
+pressures provided above. An appropriately reduced factor of safety may be used 
+when dynamic lateral earth pressures are accounted for in the design of the 
+retaining structure. 
+3.6.4 Drainage 
+Retaining walls should be well-drained to reduce the potential for the build-up of 
+hydrostatic pressures (above the groundwater level). A typical drainage system 
+should consist of permeable material, such as ASTM C33, No. 67 gradation 
+material, placed directly around a perforated pipe (perforations facing down) at the 
+base of the wall discharging to an appropriate outlet or weepholes. As an 
+alternative, a prefabricated drainage product, such as MiraDrain or EnkaDrain, 
+may be used instead of the drainage material. The prefabricated drainage product 
+also should be hydraulically connected to a perforated pipe at the base of the wall. 
+Final Design Submittal (IFC) - 10/29/2020
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 8120-00 
+GEOLABS, INC. 
+Page 25 
+Hawaii • California 
+Unless covered by concrete slabs or pavements, the upper 12 inches of backfill 
+should consist of relatively impervious material to reduce the potential for water 
+infiltration behind the walls. In addition, the backfill below the drainage outlet (or 
+weepholes) should consist of relatively impervious material to reduce the potential 
+for water infiltration into the footing subgrade. The relatively impervious material 
+should be compacted to no less than 90 percent relative compaction. 
+3.7 
+Combat Training Tank Temporary Shoring 
+Based on the information provided, we understand the combat training tank will be 
+located near the center of the building structure within the high-bay area. The tank is 
+approximately 25.5 feet wide by 56.3 feet long and extends approximately 22.75 feet 
+below the finished floor elevation, corresponding to a bottom of tank elevation of -15.4 feet 
+MSL. Based on an existing ground surface elevation of +5 feet MSL, excavations to 
+depths of at least 21 feet below the existing ground surface will be required.  
+Based on available subsurface information, we envision the combat training tank 
+excavation will extend below the groundwater elevation through very loose to loose clayey 
+gravel and clayey sands and very soft to soft silty clay lagoonal deposits. Based on the 
+subsurface conditions and the groundwater conditions, temporary shoring of the combat 
+training tank excavation will be required.  
+It is anticipated that the granular lagoonal deposits encountered are relatively 
+permeable. Therefore, dewatering of the excavation may involve moderate to large 
+volumes of water. Dewatering by means of a well point system along the outside of the 
+excavations is not recommended. The resultant areal depression of the natural 
+groundwater table could induce consolidation of the compressible subsoils resulting in 
+potential ground settlements, which could affect the existing structures and utility lines. 
+The potential impact of the dewatering system selected on depressing the natural 
+groundwater table must be carefully evaluated by the contractor prior to dewatering. 
+It is our opinion that a cut-off wall system, such as interlocking sheet piles, may be 
+considered to retain the loose lagoonal deposits and to aid in dewatering the excavation. 
+However, sumps will be needed to collect water that percolates up into the base of the 
+Final Design Submittal (IFC) - 10/29/2020
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 8120-00 
+GEOLABS, INC. 
+Page 26 
+Hawaii • California 
+excavation or infiltrates through the sheet piles. The sheet piles would need to be driven 
+to a sufficient depth to reduce the potential for areal ground subsidence and to reduce 
+the amount of dewatering within the excavations in areas underlain by granular subsoils 
+with generally high permeability. Use of an interlocking sheet pile shoring support system 
+with tremie concrete plug is relatively watertight, which should allow the groundwater 
+levels outside the excavations to be maintained close to the original pre-construction 
+levels. 
+In lieu of interlocking sheet piles and tremie concrete bottom plug, we believe that 
+ground freezing will be implemented at this project site for temporary shoring. Ground 
+freezing typically involves drilling and installing a series of freeze pipes. Refrigerator 
+coolant is circulated through the freeze pipes, extracting heat from the ground, converting 
+ground water and soil pore water to ice. Some of the benefits of soil freezing include 
+eliminating the need for dewatering and increasing the strength of the lagoonal deposits 
+to provide temporary ground improvement and stability of the deep excavations. 
+3.8 
+Earthwork 
+Based on the current design concept and the existing topography, with the 
+exception of deep excavations required for the combat training tank, we anticipate only 
+minor site grading and earthwork consisting of cuts and fills of about 2 feet or less would 
+be required for construction of the project. In addition, utility trench excavation and 
+backfilling of up to about 5 to 8 feet may be required. Items of earthwork that are 
+addressed in the following subsections include the following: 
+1. 
+Site Preparation; 
+2. 
+Fills and Backfills; and 
+3. 
+Fill Placement and Compaction Requirements. 
+A Geolabs representative or a qualified geotechnical engineer experienced with 
+the local soil materials should observe the earthwork construction for the project. It is 
+important that our representative or qualified geotechnical engineer observe the site 
+preparation to evaluate whether undesirable materials are encountered during the 
+excavation and filling process and whether the exposed soil conditions are similar to those 
+encountered and assumed in the design. 
+Final Design Submittal (IFC) - 10/29/2020
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 8120-00 
+GEOLABS, INC. 
+Page 27 
+Hawaii • California 
+3.8.1 Site Preparation 
+At the on-set of earthwork, areas within the contract grading limits should be 
+thoroughly cleared. Vegetation, existing pavements, debris, and other unsuitable 
+materials should be removed and disposed properly off-site to reduce the potential 
+for contamination of the excavated materials designated to be reused as fill and/or 
+backfill. If soft or wet soils are encountered during clearing, over-excavation may 
+be required to remove the soft or wet materials to expose firm and/or dense soils. 
+The resulting over-excavation should be backfilled with compacted fill materials. 
+Existing utilities to be abandoned should be removed, and the resulting excavation 
+should be properly backfilled with granular fill material placed in 8-inch loose lifts 
+and compacted to a minimum of 90 percent relative compaction. 
+After demolition and site clearing, the exposed subgrade should be scarified to a 
+minimum depth of 8 inches, moisture-conditioned to above the optimum moisture 
+content, and compacted to a minimum of 90 percent relative compaction. Relative 
+compaction refers to the in-place dry density of soil expressed as a percentage of 
+the maximum dry density of the same soil determined in accordance with 
+ASTM D1557. Optimum moisture is the water content (percentage by dry weight) 
+corresponding to the maximum dry density. 
+3.8.2 Fills and Backfills 
+In general, the excavated on-site granular soils may be reused as a source of fill 
+materials above the groundwater level, provided that deleterious materials such as 
+vegetation and/or organic matter are removed and over-sized materials greater 
+than 3 inches in maximum dimension are screened. 
+Excavated on-site or imported materials to be used as fill and backfill should 
+consist of crushed basalt and/or coral. The material should be well-graded from 
+coarse to fine with particles no larger than 3 inches in largest dimension. In 
+addition, the fill material should contain 10 to 30 percent fines (particles passing 
+the No. 200 sieve). The material should have a California Bearing Ratio 
+Final Design Submittal (IFC) - 10/29/2020
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 8120-00 
+GEOLABS, INC. 
+Page 28 
+Hawaii • California 
+(CBR) value of 20 or more, and a swell value of 1 percent or less when tested in 
+accordance with ASTM D1883. 
+In general, drain rock fill consisting of relatively clean, free-draining granular fill 
+material (2-inch maximum size granular materials or ASTM C33, No. 67 gradation) 
+wrapped in a non-woven geotextile fabric (Mirafi 180N or equivalent) should be 
+used for backfill placed below the groundwater unless efforts are made to dewater 
+the excavations to enable compaction of standard backfill materials. 
+Where imported fill material will be required, the imported fill material should 
+conform to the requirements presented above for fill and backfill and should be 
+tested to confirm that it is suitable for the intended purpose prior to delivery to the 
+site. 
+3.8.3 Fill Placement and Compaction Requirements 
+As indicated above, fills and/or backfills below the water level should consist of 
+free-draining granular materials, such as ASTM C33, No. 67 gradation, as 
+recommended above. Mechanical compaction of these materials will not be 
+required during placement. However, densification by pounding the material with 
+the bucket of a backhoe, track-walking or by other acceptable means should be 
+done in a consistent manner during placement. The last lift of the material above 
+the water level should be proof-rolled a minimum of eight passes with the use of a 
+vibratory plate or similar vibratory equipment prior to the placement of the 
+non-woven geotextile fabric, such as Mirafi 180N or equivalent, and capping with 
+compacted fill to the finished subgrade. 
+Granular fills and backfills above the water level should be placed in relatively level 
+lifts not exceeding 8 inches in loose thickness, moisture-conditioned to above the 
+optimum moisture content, and compacted to a minimum of 95 percent relative 
+compaction. Relative compaction refers to the in-place dry density of soil 
+expressed as a percentage of the maximum dry density of the same soil 
+determined in accordance with ASTM D1557. Optimum moisture is the water 
+content (percentage by dry weight) corresponding to the maximum dry density. 
+Final Design Submittal (IFC) - 10/29/2020
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 8120-00 
+GEOLABS, INC. 
+Page 29 
+Hawaii • California 
+3.9 
+Utility Trenches 
+We envision new underground utilities, such as sewer, drainage, water, and 
+electrical lines, likely will be required for the project. In general, we recommend providing 
+granular bedding consisting of 6 inches of free-draining materials, such as bedding sand 
+or open-graded gravel (ASTM C33, No. 67 gradation), below the pipes for uniform 
+support.  
+If loose and/or soft soils are encountered at the proposed inverts, an additional 
+12 to 18 inches of open-graded gravel (ASTM C33, No. 67 gradation) wrapped in a 
+non-woven geotextile fabric (Mirafi 180N or equivalent) may be necessary below the 
+bedding material to form a bridging layer. Free-draining granular materials, such as 
+bedding sand or open-graded gravel (ASTM C33, No. 67 gradation), also should be used 
+for the initial trench backfill (pipe cover) up to about 12 inches above the crown of the 
+pipes or the top of the groundwater level to provide adequate support around the pipes 
+and to reduce the need for substantial effort in compacting the backfill, thus reducing the 
+potential for damage to the pipes. 
+The trench backfill above the pipe cover or groundwater to the finished subgrade 
+or finished grade may consist of the excavated on-site granular soils with a maximum 
+particle size of 3 inches. The backfill should be moisture-conditioned to above the 
+optimum moisture content, placed in maximum 8-inch level loose lifts, and mechanically 
+compacted to not less than 90 percent relative compaction to reduce the potential for 
+appreciable future ground subsidence. Where trenches are located in the pavement 
+areas, the upper 3 feet of the trench backfill below the pavement grade should be 
+compacted to at least 95 percent relative compaction. 
+3.10 Instrumentation and Monitoring 
+As required in the project’s RFP documents, the contractor shall implement a 
+monitoring program to monitor structure and ground settlement, ground movement, 
+groundwater levels, and vibration during site construction. The purpose of the monitoring 
+program is to monitor structure and ground settlement, ground movements, groundwater 
+level, and vibrations in the vicinity of the new undersea operational training facility building 
+to ensure that ground movements, drawdown of the groundwater level, and vibrations 
+Final Design Submittal (IFC) - 10/29/2020
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 8120-00 
+GEOLABS, INC. 
+Page 30 
+Hawaii • California 
+during construction do not result in adverse building, structure, and utility settlement and 
+distress. Based on our review of the subsurface conditions and the major work elements 
+for the project, we recommend settlement monitoring, vibration monitoring, and 
+groundwater monitoring at the locations presented on the Instrumentation Plans, 
+Plates 5.1 through 5.6. Some of these monitoring locations may be adjusted in the field 
+based on consultation with Geolabs.  
+3.11 Pavement Design 
+We understand new flexible and rigid pavements will be utilized for the project. 
+Based on the vehicle loading information and anticipated daily traffic information 
+contained in RFI No. 2, the anticipated traffic for pavement design over a design life of 
+20 years is as follows: 
+Vehicle Type 
+Gross Vehicle Weight 
+(pounds) 
+Number of Passes 
+Marine Straddle Lift 
+220,000 
+26,000 
+Land Transport Vehicle (LTV) 
+180,000 
+5,000 
+3,000 kg Forklift 
+18,000 (loaded) 
+80,000 
+The pavement analysis for this project was performed in general accordance with 
+the U.S. Army Corps of Engineer’s pavement design software, Pavement-Transportation 
+Computer Assisted Structural Engineering (PCASE). The results of the flexible and rigid 
+pavement designs are as follows: 
+Flexible Pavement Section Subjected to the Marine Straddle Lift 
+  4.0-Inch Asphaltic Concrete 
+12.0-Inch Aggregate Base Course (100 Percent Relative Compaction) 
+16.0-Inch Total Pavement Thickness on Moist Compacted Subgrade 
+Flexible Pavement Section Subjected to the Land Transport Vehicle and Forklift 
+  4.0-Inch Asphaltic Concrete 
+  6.0-Inch Aggregate Base Course (100 Percent Relative Compaction) 
+10.0-Inch Total Pavement Thickness on Moist Compacted Subgrade 
+Final Design Submittal (IFC) - 10/29/2020
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 8120-00 
+GEOLABS, INC. 
+Page 31 
+Hawaii • California 
+Rigid Pavement Section Subjected to the Marine Straddle Lift 
+  8.0-Inch Portland Cement Concrete (700 psi flexural strength) 
+  6.0-Inch Aggregate Subbase Course (100 Percent Relative Compaction) 
+14.0-Inch Total Pavement Thickness on Moist Compacted Subgrade 
+In general, the pavement subgrades should be scarified to a depth of about 
+8 inches, moisture-conditioned to above the optimum moisture, and compacted to a 
+minimum of 95 percent relative compaction. The aggregate base course (minimum CBR 
+value of 80) should consist of crushed basaltic aggregates compacted to 100 percent 
+relative compaction. California Bearing Ratio and field density tests should be performed 
+on the actual subgrade soils encountered during construction to confirm the adequacy of 
+the above sections. 
+Paved areas should be sloped, and drainage gradients should be maintained to 
+carry surface water off-site. Surface water ponding should not be allowed on-site during 
+or after construction. Where concrete curbs are used to isolate landscaping in or adjacent 
+to the pavement areas, we suggest the curbs extend a minimum of 2 inches into the 
+subgrade soil below the aggregate base course or aggregate subbase course layer to 
+reduce the potential for migration of excessive landscape water into the pavement 
+section. 
+3.12 Design Review 
+Preliminary and final drawings and specifications for the project should be 
+forwarded to Geolabs for review and comment prior to construction. This review is 
+necessary to evaluate conformance of the plans and specifications with the intent of the 
+geotechnical recommendations provided herein. If this review is not made, Geolabs 
+cannot be held responsible for misinterpretation of our recommendations. 
+3.13 Services During Construction 
+Geolabs should provide geotechnical services during construction. The critical 
+items of construction monitoring that require "Special Inspection" in accordance with 
+Section 1705.7 of the 2018 IBC include the following: 
+Final Design Submittal (IFC) - 10/29/2020
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 8120-00 
+GEOLABS, INC. 
+Page 32 
+Hawaii • California 
+Observation of indicator probe pile installation program; 
+Observation of production pile installation; 
+Observation of the subgrade preparation and fill placement; and  
+Observation of the shoring installation and excavation. 
+In addition, a Geolabs representative should monitor the other aspects of 
+earthwork construction to observe compliance with the intent of the design concepts, 
+specifications, or recommendations and to expedite suggestions for design changes that 
+may be required in the event that subsurface conditions differ from those anticipated at 
+the time this report was prepared. The recommendations provided in this report are 
+contingent upon such observations. 
+If the actual exposed subsurface conditions encountered during construction are 
+different from those assumed or considered in this report, then appropriate modifications 
+to the design should be made. 
+END OF DISCUSSION AND RECOMMENDATIONS 
+Final Design Submittal (IFC) - 10/29/2020
+W.O. 8120-00 
+GEOLABS, INC. 
+Page 33 
+Hawaii • California 
+SECTION 4.  LIMITATIONS 
+The analyses and recommendations presented in this report are based, in part, 
+upon information obtained from the borings contained in the project’s RFP documents 
+and from the borings drilled as part of our geotechnical exploration efforts. Variations of 
+the subsurface conditions between and beyond the borings drilled may occur, and the 
+nature and extent of these variations may not become evident until construction is 
+underway. If variations then appear evident, it will be necessary to re-evaluate the 
+recommendations provided in this report. 
+The boring locations indicated in this report are approximate, having been taped 
+from existing visible features at the project site. Elevations noted on the borings were 
+based on interpolation between the contour lines shown on the topographic survey map. 
+The physical location and elevation of the borings should be considered accurate only to 
+the degree implied by the methods used. 
+The stratification lines shown on the graphic representations of the borings depict 
+the approximate boundaries between the soil and/or rock types and, as such, may denote 
+a gradual transition. Water level data from the borings were measured at the times shown 
+on the graphic representations and/or presented in the text of this report. These data have 
+been reviewed and interpretations made in the formulation of this report. It should be 
+noted that groundwater fluctuations may occur due to variation in tides, rainfall, 
+temperature, and other factors. 
+This report has been prepared for the exclusive use of Hensel Phelps Construction 
+Company for specific application to the design of the proposed SOF Undersea 
+Operational Training Facility within the Joint Base Pearl Harbor-Hickam at the Pearl City 
+Peninsula on the Island of Oahu, Hawaii, in accordance with generally accepted 
+geotechnical engineering principles and practices. No warranty is expressed or implied. 
+The owner/client should be aware that unanticipated soil and/or rock conditions 
+are encountered commonly during construction. Unforeseen subsurface conditions, such 
+as soft deposits, hard layers, cavities, or perched groundwater, may occur in localized 
+areas and may require additional probing or corrections in the field (which may result in 
+Final Design Submittal (IFC) - 10/29/2020
+SECTION 4. LIMITATIONS 
+W.O. 8120-00 
+GEOLABS, INC. 
+Page 34 
+Hawaii • California 
+construction delays) to attain a properly constructed project. Therefore, a sufficient 
+contingency fund is recommended to accommodate these possible extra costs. 
+This geotechnical engineering exploration conducted at the project site was not 
+intended to investigate the potential for presence of hazardous materials existing at the 
+site. It should be noted that the equipment, techniques, and personnel used to conduct a 
+geo-environmental exploration differ substantially from those applied in geotechnical 
+engineering. 
+END OF LIMITATIONS
+Final Design Submittal (IFC) - 10/29/2020
+W.O. 8120-00 
+GEOLABS, INC. 
+Page 35 
+Hawaii • California 
+REFERENCES 
+American Society of Civil Engineers Standard ASCE 7-16 (2016), “Minimum Design 
+Loads for Buildings and Other Structures” 
+Andrews, D. C. A. and Martin, G. R. (2000), “Criteria for Liquefaction of Silty Soils,” 
+12th World Congress on Earthquake Engineering, Auckland, New Zealand 
+International Code Council (2018), International Building Code. 
+NCEER (1997), “Proceedings of the NCEER Workshop on Evaluation of Liquefaction 
+Resistance of Soils,” T.L. Youd and I.M. Idriss (Editors), Technical Report 
+NCEER-97-0022, NCEER, Buffalo, NY. 
+Pacific Geotechnical Engineers, Inc. (2019), “Final Report, Soil Data Package, PGE Job 
+No. 0044-001 for Moffatt & Nichol/Design Partners Incorporated Joint Venture, FY20 SOF 
+P-463, Undersea Operational Training Facility, Pearl City Peninsula, JBPHH, Hawaii, 
+Contract No. N62742-18-D-0001”. 
+Reese, L.C., Wang, S.T., Isenhower, W.M., and Arrellaga, J.A. (2011).  LPILE 2019.11.05 
+for Windows:  A Program for the Analyzing Stress and Deformation of Individual Piles and 
+Drilled Shafts Under Lateral Loads.  Ensoft, Inc., Austin, Texas. 
+US Department of Defense (2012). Geotechnical Engineering, UFC 3-220-01, November. 
+US Department of Defense (2005).  Soil Mechanics, UFC 3-220-10N, June. 
+US Department of Defense (2010).  Low Impact Development, UFC 3-210-10, November. 
+US Department of Defense (2019).  Structural Engineering, UFC 3-301-01, October. 
+US Army Construction Engineering Research Library (2018), Pavement-Transportation 
+Computer Assisted Structural Engineering (PCASE v2.09) 
+Youd, T.L. et al. (2001), “Liquefaction Resistance of Soils: Summary Report from the 1996 
+NCEER and 1998 NCEER/NSF Workshops on Evaluation of Liquefaction Resistance of 
+Soils,” Journal of Geotechnical and Geo-Environmental Engineering, ASCE, Vol. 127, 
+No. 10, October. 
+Final Design Submittal (IFC) - 10/29/2020
+W.O. 8120-00 
+GEOLABS, INC. 
+Page 36 
+Hawaii • California 
+CLOSURE 
+The following plates and appendices are attached and complete this report: 
+Project Location Map .............................................................................................. Plate 1 
+Site Plan ................................................................................................................. Plate 2 
+Geology Map .......................................................................................................... Plate 3 
+Summary of Lateral Load Analysis for Precast Piles .............................................. Plate 4  
+Instrumentation Plans ........................................................................... Plates 5.1 thru 5.6  
+Field Exploration ............................................................................................. Appendix A 
+Laboratory Tests  ............................................................................................ Appendix B 
+Photographs of Core Samples  ....................................................................... Appendix C 
+Geotechnical Information from RFP Documents  ............................................ Appendix D 
+-- 
+Respectfully submitted, 
+GEOLABS, INC. 
+By ________________________ 
+            Jason Seidman, P.E. 
+                Project Engineer 
+By 
+            Robin M. Lim, P.E. 
+                    President 
+RML:JS:as 
+z:\8120-00 Series\...Final Design…Stamped\8120-00.js2 
+Final Design Submittal (IFC) - 10/29/2020
+PLATES 
+Final Design Submittal (IFC) - 10/29/2020
+SOF UNDERSEA OPERATIONAL TRAINING FACILITY
+FY20 MILCON PROJECT P-463
+PROJECT LOCATION MAP
+GRAPHIC SCALE
+1000
+2000
+2000
+0
+FT.
+PROJECT LOCATION
+GENERAL PROJECT LOCATION
+N
+WAHIAWA
+WAIKIKI
+HONOLULU
+AIEA
+PEARL CITY
+WAIPAHU
+EWA
+BARBERS POINT
+NANAKULI
+WAIANAE
+WAIALUA
+HALEIWA
+KAHUKU
+POINT
+DIAMOND
+HEAD
+HAWAII
+KAI
+WAIMANALO
+KAILUA
+KANEOHE
+KAHALUU
+PUNALUU
+HAUULA
+KAENA POINT
+ISLAND MAP
+NO SCALE
+PEARL CITY PENINSULA, JBPHH, OAHU, HAWAII
+JUNE 2020
+1" = 2,000'
+Geotechnical Engineering
+GEOLABS, INC.
+DATE
+SCALE
+1
+8120-00
+DRAWN BY
+KHN
+W.O.
+PLATE
+N
+PACIFIC      OCEAN
+CAD User: KIM  File Last Updated: June 21, 2020 8:06:02pm  Plot Date:  June 21, 2020 - 8:06:32pm
+File: T:\Drafting\Working\8120-00_Pearl_City_Pensula_SOF\8120-00PLM.dwg\1
+Plotter: DWG To PDF-GEO.pc3  Plotstyle: GEO-No-Dither-RBGC-HEAVY.ctb
+REFERENCE: MAP CREATED WITH TOPO!® ©2010 NATIONAL
+GEOGRAPHIC; ©2007 TELE ATLAS, REL. 1/2007.
+Final Design Submittal (IFC) - 10/29/2020
+APPROXIMATE BORING LOCATION
+LEGEND:
+N
+APPROXIMATE BORING LOCATION (RFP BORING DRILLED BY OTHERS)
+GEOLABS, INC.
+Geotechnical Engineering
+8120-00
+DRAWN BY
+KHN
+1" = 50'
+AUGUST 2020
+SCALE
+DATE
+W.O.
+2
+PLATE
+GRAPHIC SCALE
+0
+50
+100
+150 FT.
+40
+30
+20
+10
+CAD User: KIM  File Last Updated: June 22, 2020 5:10:58pm  Plot Date:  August 04, 2020 - 6:27:20pm
+File: T:\Drafting\Working\8120-00_Pearl_City_Peninsula_SOF\8120-00SitePlan.dwg\2
+Plotter: DWG To PDF-GEO.pc3  Plotstyle: GEO-No-Dither-RBGC-HEAVY.ctb
+REFERENCE: OVERALL FIRST FLOOR PLAN (BASE BID), SHEET A-101
+CONTAINED IN THE RFP ORIGINAL SOLICITATION DOCUMENTS.
+SOF UNDERSEA OPERATIONAL TRAINING FACILITY
+FY20 MILCON PROJECT P-463
+SITE PLAN
+PEARL CITY PENINSULA, JBPHH, OAHU, HAWAII
+B-102
+B-3
+B-103
+B-1
+B-101
+B-2
+Final Design Submittal (IFC) - 10/29/2020
+Ra
+Qa
+Ra
+Qa
+Ra
+Rf
+Qa
+Rf
+OLD POND
+APPROXIMATE
+1873 SHORELINE
+SOF UNDERSEA OPERATIONAL TRAINING FACILITY
+FY20 MILCON PROJECT P-463
+GEOLOGY MAP
+GRAPHIC SCALE
+500
+1000
+1000 FT.
+0
+PROJECT LOCATION
+N
+PEARL CITY PENINSULA, JBPHH, OAHU, HAWAII
+JUNE 2020
+1" = 1,000'
+Geotechnical Engineering
+GEOLABS, INC.
+DATE
+SCALE
+3
+8120-00
+DRAWN BY
+KHN
+W.O.
+PLATE
+CAD User: KIM  File Last Updated: June 25, 2020 4:40:40pm  Plot Date:  June 25, 2020 - 4:40:59pm
+File: T:\Drafting\Working\8120-00_Pearl_City_Pensula_SOF\8120-00GeologyMap.dwg\3
+Plotter: DWG To PDF-GEO.pc3  Plotstyle: GEO-No-Dither-RBGC-HEAVY.ctb
+REFERENCE: MAP CREATED WITH TOPO!® ©2010 NATIONAL GEOGRAPHIC
+(WWW.NATIONALGEOGRAPHIC.COM/TOPO) AND THE GEOLOGICAL SURVEY
+CONTROL BY USGS, USC&GS, AND HAWAIIAN TERRITORIAL SURVEY.
+NOTE: 1873 SHORELINE AND OLD POND SHOWN ARE BASED ON MAP ENTITLED:
+PEARL LOCHS AND PUULOA ENTRANCE, EWA, OAHU BY LYONS, C.J. AND
+LIDGATE, J.
+LEGEND:
+OLDER ALLUVIUM
+RECENT ALLUVIUM
+RECENT FILL
+Qa
+Ra
+Rf
+Final Design Submittal (IFC) - 10/29/2020
+SUMMARY OF LATERAL LOAD ANALYSIS
+ FOR 16.5-INCH PRECAST PRESTRESSED CONCRETE PILES
+BUILDING PAD PILES
+FY20 MILCON Project P-463
+SOF Undersea Operational Training Facility
+Pearl City Peninsula, JBPHH, Oahu, Hawaii
+Pile Size:
+16.5
+inches
+Pile Length:
+80
+feet
+Axial Load:
+400
+kips
+Concrete Compressive Strength:
+6,000
+psi
+Reinforcing Steel Content: (8) - 1/2" 7-wire, 270 ksi
+No. Piles in 
+Direction of 
+Lateral 
+Loading
+Group 
+Reduction 
+Factor      
+Case No. 
+Lateral      
+Load          
+(kips)
+Pile Head               
+Connection                         
+Lateral 
+Deflection 
+(inches)
+Maximum     
+Induced 
+Moment     
+(kip-feet)
+Depth to      
+Maximum     
+Moment    
+(feet)
+Point of 
+Zero 
+Curvature    
+(feet)
+1
+16
+0.4
+52
+6.4
+28.0
+2
+21
+0.5
+72
+6.4
+30.0
+3
+33
+1.0
+126
+6.4
+30.0
+4
+29
+0.3
+116
+0.0
+30.0
+5
+44
+0.5
+163
+0.0
+32.0
+6
+59
+1.0
+185
+0.0
+32.0
+7
+14
+0.4
+50
+6.4
+28.0
+8
+17
+0.5
+62
+6.0
+30.0
+9
+27
+1.0
+113
+6.0
+30.0
+10
+25
+0.3
+107
+0.0
+30.0
+11
+37
+0.5
+143
+0.0
+32.0
+12
+51
+1.0
+179
+0.0
+32.0
+Note:
+2
+0.72
+Free
+Fixed
+Allowable lateral load of pile is one-half of lateral load that produces lateral deflection of 1 inch and are 
+highlighted in yellow
+Fixed
+1
+1.0
+Free
+Lateral Load Analyses
+W.O. 8120-00
+GEOLABS, INC.
+Hawaii • California
+PLATE 4
+Final Design Submittal (IFC) - 10/29/2020
+APPROXIMATE SETTLEMENT MARKER LOCATION
+N
+APPROXIMATE PIEZOMETER LOCATION
+GEOLABS, INC.
+Geotechnical Engineering
+8120-00
+DRAWN BY
+KHN
+1" = 50'
+SEPTEMBER 2020
+SCALE
+DATE
+W.O.
+INSTRUMENTATION PLAN-1
+5.1
+PLATE
+GRAPHIC SCALE
+0
+50
+100
+150 FT.
+40
+30
+20
+10
+CAD User: KIM  File Last Updated: October 18, 2020 7:08:33pm  Plot Date:  October 18, 2020 - 7:21:55pm
+File: T:\Drafting\Working\8120-00_Pearl_City_Peninsula_SOF\8120-00InstrumentationPlans.dwg\5.1
+Plotter: DWG To PDF-GEO.pc3  Plotstyle: GEO-No-Dither-RBGC-HEAVY.ctb
+NOTE: INSTRUMENTATION LOCATIONS ARE APPROXIMATE AND FIELD ADJUSTMENTS MAY BE REQUIRED.
+APPROXIMATE VIBRATION MONITOR LOCATION
+S-1
+V-4
+S-2
+S-3
+V-3
+S-4
+S-5
+V-2
+S-6
+S-7
+V-1
+P-1
+S-8
+P-2
+S-9L
+S-9R
+S-10R
+S-10L
+S-11L
+LEGEND:
+REFERENCE: 100% PREFINAL SITE DESIGN (DP-1) DATED AUGUST 2020.
+SOF UNDERSEA OPERATIONAL TRAINING FACILITY
+FY20 MILCON PROJECT P-463
+PEARL CITY PENINSULA, JBPHH, OAHU, HAWAII
+Final Design Submittal (IFC) - 10/29/2020
+APPROXIMATE SETTLEMENT MARKER LOCATION
+N
+APPROXIMATE PIEZOMETER LOCATION
+GEOLABS, INC.
+Geotechnical Engineering
+8120-00
+DRAWN BY
+KHN
+1" = 50'
+SEPTEMBER 2020
+SCALE
+DATE
+W.O.
+INSTRUMENTATION PLAN-2
+5.2
+PLATE
+GRAPHIC SCALE
+0
+50
+100
+150 FT.
+40
+30
+20
+10
+CAD User: KIM  File Last Updated: October 18, 2020 7:08:33pm  Plot Date:  October 18, 2020 - 7:22:13pm
+File: T:\Drafting\Working\8120-00_Pearl_City_Peninsula_SOF\8120-00InstrumentationPlans.dwg\5.2
+Plotter: DWG To PDF-GEO.pc3  Plotstyle: GEO-No-Dither-RBGC-HEAVY.ctb
+APPROXIMATE VIBRATION MONITOR LOCATION
+S-9L
+S-9R
+S-10R
+S-10L
+S-11R
+S-11L
+S-12R
+S-12L
+S-13R
+S-13L
+P-3
+S-14L
+S-14R
+S-15R
+S-15L
+S-16R
+S-16L
+S-17R
+S-17L
+S-18R
+S-18L
+S-19R
+S-19L
+S-20R
+S-20L
+S-21R
+S-21L
+S-22R
+S-22L
+S-23R
+S-23L
+NOTE: INSTRUMENTATION LOCATIONS ARE APPROXIMATE AND FIELD ADJUSTMENTS MAY BE REQUIRED.
+LEGEND:
+REFERENCE: 100% PREFINAL SITE DESIGN (DP-1) DATED AUGUST 2020.
+SOF UNDERSEA OPERATIONAL TRAINING FACILITY
+FY20 MILCON PROJECT P-463
+PEARL CITY PENINSULA, JBPHH, OAHU, HAWAII
+Final Design Submittal (IFC) - 10/29/2020
+APPROXIMATE SETTLEMENT MARKER LOCATION
+N
+APPROXIMATE PIEZOMETER LOCATION
+GEOLABS, INC.
+Geotechnical Engineering
+8120-00
+DRAWN BY
+KHN
+1" = 50'
+SEPTEMBER 2020
+SCALE
+DATE
+W.O.
+INSTRUMENTATION PLAN-3
+5.3
+PLATE
+GRAPHIC SCALE
+0
+50
+100
+150 FT.
+40
+30
+20
+10
+CAD User: KIM  File Last Updated: October 18, 2020 7:08:33pm  Plot Date:  October 18, 2020 - 7:22:33pm
+File: T:\Drafting\Working\8120-00_Pearl_City_Peninsula_SOF\8120-00InstrumentationPlans.dwg\5.3
+Plotter: DWG To PDF-GEO.pc3  Plotstyle: GEO-No-Dither-RBGC-HEAVY.ctb
+APPROXIMATE VIBRATION MONITOR LOCATION
+S-22L
+S-22R
+S-23R
+S-23L
+S-24R
+S-24L
+P-4
+S-25L
+S-25R
+S-26R
+S-26L
+S-27R
+S-27L
+S-28R
+S-28L
+S-29L
+S-29R
+S-30R
+S-30L
+S-31R
+S-31L
+NOTE: INSTRUMENTATION LOCATIONS ARE APPROXIMATE AND FIELD ADJUSTMENTS MAY BE REQUIRED.
+LEGEND:
+REFERENCE: 100% PREFINAL SITE DESIGN (DP-1) DATED AUGUST 2020.
+SOF UNDERSEA OPERATIONAL TRAINING FACILITY
+FY20 MILCON PROJECT P-463
+PEARL CITY PENINSULA, JBPHH, OAHU, HAWAII
+Final Design Submittal (IFC) - 10/29/2020
+APPROXIMATE SETTLEMENT MARKER LOCATION
+N
+APPROXIMATE PIEZOMETER LOCATION
+GEOLABS, INC.
+Geotechnical Engineering
+8120-00
+DRAWN BY
+KHN
+1" = 50'
+SEPTEMBER 2020
+SCALE
+DATE
+W.O.
+INSTRUMENTATION PLAN-4
+5.4
+PLATE
+GRAPHIC SCALE
+0
+50
+100
+150 FT.
+40
+30
+20
+10
+CAD User: KIM  File Last Updated: October 18, 2020 7:08:33pm  Plot Date:  October 18, 2020 - 7:22:51pm
+File: T:\Drafting\Working\8120-00_Pearl_City_Peninsula_SOF\8120-00InstrumentationPlans.dwg\5.4
+Plotter: DWG To PDF-GEO.pc3  Plotstyle: GEO-No-Dither-RBGC-HEAVY.ctb
+APPROXIMATE VIBRATION MONITOR LOCATION
+S-29R
+S-29L
+S-30R
+S-30L
+S-31R
+S-31L
+S-32R
+S-32L
+S-33R
+S-33L
+S-34R
+S-34L
+S-35R
+S-35L
+S-36L
+P-5
+S-36R
+S-37R
+S-37L
+S-38L
+S-38R
+S-39L
+S-39R
+S-40L
+S-40R
+S-41L
+S-41R
+S-42L
+S-42R
+S-43L
+S-43R
+S-44L
+S-44R
+NOTE: INSTRUMENTATION LOCATIONS ARE APPROXIMATE AND FIELD ADJUSTMENTS MAY BE REQUIRED.
+LEGEND:
+REFERENCE: 100% PREFINAL SITE DESIGN (DP-1) DATED AUGUST 2020.
+SOF UNDERSEA OPERATIONAL TRAINING FACILITY
+FY20 MILCON PROJECT P-463
+PEARL CITY PENINSULA, JBPHH, OAHU, HAWAII
+Final Design Submittal (IFC) - 10/29/2020
+APPROXIMATE SETTLEMENT MARKER LOCATION
+N
+APPROXIMATE PIEZOMETER LOCATION
+GEOLABS, INC.
+Geotechnical Engineering
+8120-00
+DRAWN BY
+KHN
+1" = 50'
+SEPTEMBER 2020
+SCALE
+DATE
+W.O.
+INSTRUMENTATION PLAN-5
+5.5
+PLATE
+GRAPHIC SCALE
+0
+50
+100
+150 FT.
+40
+30
+20
+10
+CAD User: KIM  File Last Updated: October 18, 2020 7:08:33pm  Plot Date:  October 18, 2020 - 7:23:08pm
+File: T:\Drafting\Working\8120-00_Pearl_City_Peninsula_SOF\8120-00InstrumentationPlans.dwg\5.5
+Plotter: DWG To PDF-GEO.pc3  Plotstyle: GEO-No-Dither-RBGC-HEAVY.ctb
+APPROXIMATE VIBRATION MONITOR LOCATION
+S-44L
+S-44R
+S-45L
+S-45R
+S-46L
+S-46R
+S-47L
+S-47R
+S-48L
+S-48R
+S-49L
+S-49R
+P-6
+S-50L
+S-50R
+S-51L
+S-51R
+S-52L
+S-52R
+S-53L
+S-53R
+S-54L
+S-54R
+S-55L
+S-55R
+S-56L
+S-56R
+S-57L
+S-57R
+S-58L
+S-58R
+NOTE: INSTRUMENTATION LOCATIONS ARE APPROXIMATE AND FIELD ADJUSTMENTS MAY BE REQUIRED.
+LEGEND:
+REFERENCE: 100% PREFINAL SITE DESIGN (DP-1) DATED AUGUST 2020.
+SOF UNDERSEA OPERATIONAL TRAINING FACILITY
+FY20 MILCON PROJECT P-463
+PEARL CITY PENINSULA, JBPHH, OAHU, HAWAII
+Final Design Submittal (IFC) - 10/29/2020
+APPROXIMATE SETTLEMENT MARKER LOCATION
+N
+APPROXIMATE PIEZOMETER LOCATION
+GEOLABS, INC.
+Geotechnical Engineering
+8120-00
+DRAWN BY
+KHN
+1" = 50'
+SEPTEMBER 2020
+SCALE
+DATE
+W.O.
+INSTRUMENTATION PLAN-6
+5.6
+PLATE
+GRAPHIC SCALE
+0
+50
+100
+150 FT.
+40
+30
+20
+10
+CAD User: KIM  File Last Updated: October 18, 2020 7:08:33pm  Plot Date:  October 18, 2020 - 7:23:26pm
+File: T:\Drafting\Working\8120-00_Pearl_City_Peninsula_SOF\8120-00InstrumentationPlans.dwg\5.6
+Plotter: DWG To PDF-GEO.pc3  Plotstyle: GEO-No-Dither-RBGC-HEAVY.ctb
+APPROXIMATE VIBRATION MONITOR LOCATION
+S-57L
+S-57R
+S-58L
+S-58R
+S-59L
+S-59R
+S-60L
+S-60R
+S-61L
+S-61R
+S-62L
+S-62R
+S-63R
+P-7
+S-63L
+NOTE: INSTRUMENTATION LOCATIONS ARE APPROXIMATE AND FIELD ADJUSTMENTS MAY BE REQUIRED.
+LEGEND:
+REFERENCE: 100% PREFINAL SITE DESIGN (DP-1) DATED AUGUST 2020.
+SOF UNDERSEA OPERATIONAL TRAINING FACILITY
+FY20 MILCON PROJECT P-463
+PEARL CITY PENINSULA, JBPHH, OAHU, HAWAII
+Final Design Submittal (IFC) - 10/29/2020
+APPENDIX A  
+Final Design Submittal (IFC) - 10/29/2020
+W.O. 8120-00 
+GEOLABS, INC. 
+OCTOBER 2020     Page A-1 
+Hawaii • California 
+A P P E N D I X   A 
+Field Exploration 
+The subsurface conditions at the project site were explored further by drilling and 
+sampling three deep borings, designated as Boring Nos. 101 through 103, extending to 
+depths of about 102 to 111.5 feet below the existing ground surface. The borings were 
+drilled with a truck-mounted drill rig equipped with continuous flight augers and coring 
+tools. The borings were drilled at the approximate locations shown on the Site Plan, 
+Plate 2. 
+Our geologist classified the materials encountered in the borings by visual and 
+textural examination in the field in general accordance with ASTM D2488, Standard Practice 
+for Description and Identification of Soils, and monitored the drilling operations on a 
+near-continuous basis. These classifications were further reviewed visually and by testing 
+in the laboratory. Soils were classified in general accordance with ASTM D2487, Standard 
+Practice for Classification of Soils for Engineering Purposes (Unified Soil Classification 
+System), as shown on the Soil Log Legend, Plate A-0.1. Deviations made to the soil 
+classification in accordance with ASTM D2487 are described on the Soil Classification Log 
+Key, Plate A-0.2. Graphic representations of the materials encountered are presented on 
+the Logs of Borings, Plates A-1 through A-3. 
+Relatively “undisturbed” soil samples were obtained in general accordance with 
+ASTM D3550, Ring-Lined Barrel Sampling of Soils, by driving a 3-inch OD Modified 
+California sampler with a 140-pound hammer falling 30 inches. In addition, some samples 
+were obtained from the borings in general accordance with ASTM D1586, Penetration Test 
+and Split-Barrel Sampling of Soils, by driving a 2-inch OD standard penetration sampler 
+using the same hammer and drop. The blow counts needed to drive the sampler the second 
+and third 6 inches of an 18-inch drive are shown as the “Penetration Resistance” on the 
+Logs of Borings at the appropriate sample depths. 
+Core samples of the rock materials encountered at the project site were obtained 
+by using diamond core drilling techniques in general accordance with ASTM D2113, 
+Diamond Core Drilling for Site Investigation. Core drilling is a rotary drilling method that 
+uses a hollow bit to cut into the rock formation. The rock material left in the hollow core of 
+the bit is mechanically recovered for examination and description. Rock cores were 
+described in general accordance with the Rock Description System, as shown on the 
+Rock Log Legend, Plate A-0.3. The Rock Description System is based on the publication 
+“Suggested Methods for the Quantitative Description of Discontinuities in Rock Masses” 
+by the International Society for Rock Mechanics (March 1977). 
+Recovery (REC) may be used as a subjective guide to the interpretation of the 
+relative quality of rock masses, where appropriate. Recovery is defined as the actual 
+length of material recovered from a coring attempt versus the length of the core attempt. 
+For example, if 3.7 feet of material is recovered from a 5.0-foot core run, the recovery 
+would be 74 percent and would be shown on the Logs of Borings as REC = 74%. 
+Final Design Submittal (IFC) - 10/29/2020
+Appendix A 
+Field Exploration 
+W.O. 8120-00 
+GEOLABS, INC. 
+OCTOBER 2020     Page A-2 
+Hawaii • California 
+The Rock Quality Designation (RQD) is also a subjective guide to the relative 
+quality of rock masses. RQD is defined as the percentage of the total core run in rock that 
+is sound material in excess of 4 inches in length without any discontinuities, discounting 
+any drilling, mechanical, and handling induced fractures or breaks. If 2.5 feet of sound 
+material is recovered from a 5.0-foot core run in rock, the RQD would be 50 percent and 
+would be shown on the Logs of Borings as RQD = 50%. Generally, the following is used 
+to describe the relative quality of the rock based on the "Practical Handbook of Physical 
+Properties of Rocks and Minerals” by Robert S. Carmichael (1989). 
+Rock Quality 
+RQD 
+(%) 
+Very Poor 
+0 – 25 
+Poor 
+25 – 50 
+Fair 
+50 – 75 
+Good 
+75 – 90 
+Excellent 
+90 – 100 
+The excavation characteristic of a rock mass is a function of the relative hardness 
+of the rock, its relative quality, brittleness, and fissile characteristics. A dense rock 
+formation with a high RQD value would be very difficult to excavate and probably would 
+require more arduous methods of excavation. 
+Final Design Submittal (IFC) - 10/29/2020
+A-0.1
+UNCONSOLIDATED UNDRAINED TRIAXIAL
+COMPRESSION (ksf)
+MORE THAN 50%
+OF COARSE
+FRACTION
+RETAINED ON
+NO. 4 SIEVE
+50% OR MORE OF
+COARSE FRACTION
+PASSING
+THROUGH NO. 4
+SIEVE
+MORE THAN 50%
+OF MATERIAL
+RETAINED ON NO.
+200  SIEVE
+50% OR MORE OF
+MATERIAL PASSING
+THROUGH NO. 200
+SIEVE
+TORVANE SHEAR (tsf)
+(2-INCH) O.D. STANDARD PENETRATION TEST
+(3-INCH) O.D. MODIFIED CALIFORNIA SAMPLE
+INORGANIC SILTS AND VERY FINE SANDS,
+ROCK FLOUR, SILTY OR CLAYEY FINE SANDS
+OR CLAYEY SILTS WITH SLIGHT PLASTICITY
+POORLY-GRADED GRAVELS, GRAVEL-SAND
+MIXTURES, LITTLE OR NO FINES
+CLAYEY GRAVELS, GRAVEL-SAND-CLAY
+MIXTURES
+WELL-GRADED SANDS, GRAVELLY SANDS,
+LITTLE OR NO FINES
+POORLY-GRADED SANDS, GRAVELLY
+SANDS, LITTLE OR NO FINES
+SILTY SANDS, SAND-SILT MIXTURES
+CLAYEY SANDS, SAND-CLAY MIXTURES
+LIQUID LIMIT
+50 OR MORE
+CH
+NOTE: DUAL SYMBOLS ARE USED TO INDICATE BORDERLINE SOIL CLASSIFICATIONS
+MH
+SILTS
+AND
+CLAYS
+SILTS
+AND
+CLAYS
+LIQUID LIMIT
+LESS THAN 50
+USCS
+TYPICAL
+DESCRIPTIONS
+GW
+MORE THAN 12%
+FINES
+WATER LEVEL OBSERVED IN BORING OVERNIGHT
+HIGHLY ORGANIC SOILS
+SILTY GRAVELS, GRAVEL-SAND-SILT
+MIXTURES
+OL
+PEAT, HUMUS, SWAMP SOILS WITH HIGH
+ORGANIC CONTENTS
+INORGANIC CLAYS OF LOW TO MEDIUM
+PLASTICITY, GRAVELLY CLAYS, SANDY
+CLAYS, SILTY CLAYS, LEAN CLAYS
+Soil Log Legend
+ORGANIC CLAYS OF MEDIUM TO HIGH
+PLASTICITY, ORGANIC SILTS
+SC
+Plate
+GM
+FINE-
+GRAINED
+SOILS
+COARSE-
+GRAINED
+SOILS
+CLEAN SANDS
+SANDS WITH
+FINES
+SP
+SANDS
+GRAVELS
+WELL-GRADED GRAVELS,  GRAVEL-SAND
+MIXTURES, LITTLE OR NO FINES
+ML
+CL
+OH
+LESS THAN 5%
+FINES
+GRAVELS WITH
+FINES
+CLEAN
+GRAVELS
+GRAB SAMPLE
+PLASTICITY INDEX (NP=NON-PLASTIC)
+TV
+LEGEND
+WATER LEVEL OBSERVED IN BORING AT TIME OF
+DRILLING
+WATER LEVEL OBSERVED IN BORING AFTER DRILLING
+SM
+MAJOR DIVISIONS
+GP
+MORE THAN 12%
+FINES
+PT
+LESS THAN 5%
+FINES
+UNIFIED SOIL CLASSIFICATION SYSTEM (USCS)
+ORGANIC SILTS AND ORGANIC SILTY
+CLAYS OF LOW PLASTICITY
+SW
+GC
+INORGANIC SILT, MICACEOUS OR
+DIATOMACEOUS FINE SAND OR SILTY
+SOILS
+INORGANIC CLAYS OF HIGH PLASTICITY
+PI
+LL
+TXUU
+UNCONFINED COMPRESSION
+OR UNIAXIAL COMPRESSIVE STRENGTH
+CORE SAMPLE
+SHELBY TUBE SAMPLE
+LIQUID LIMIT (NP=NON-PLASTIC)
+UC
+GEOLABS, INC.
+Geotechnical Engineering
+LOG LEGEND FOR SOIL  8055-00.GPJ  GEOLABS.GDT  3/9/20
+Final Design Submittal (IFC) - 10/29/2020
+A-0.2
+Medium Sand
+Fine Sand
+#4 to #200 (4.75-mm to 0.075-mm)
+#4 to #10 (4.75-mm to 2-mm)
+> 12 inches (305-mm)
+3-inch to #4 (75-mm to 4.75-mm)
+Sieve Number and / or Size
+Gravel
+#10 to #40 (2-mm to 0.425-mm)
+#40 to #200 (0.425-mm to 0.075-mm)
+3 to 12 inches (75-mm to 305-mm)
+Description
+PP Readings
+(tsf)
+2.0 - 4.0
+> 4.0
+N-Value (Blows/Foot)
+MCS
+0 - 4
+RELATIVE DENSITY / CONSISTENCY
+GRAIN SIZE DEFINITION
+ABBREVIATIONS
+N-Value (Blows/Foot)
+0 - 7
+WOH:  Weight of Hammer
+WOR:  Weight of Drill Rods
+SPT:    Standard Penetration Test Split-Spoon Sampler
+MCS:   Modified California Sampler
+PP:      Pocket Penetrometer
+4 - 7
+7 - 15
+15 - 27
+27 - 55
+SPT
+0 - 2
+> 55
+> 30
+4 - 8
+15 - 30
+MOISTURE CONTENT DEFINITIONS
+SPT
+0 - 4
+4 - 10
+10 - 30
+30 - 50
+> 50
+MCS
+Loose
+EXAMPLE: Soil Containing 60% Gravel, 25% Sand, 15% Fines. Described as: SILTY GRAVEL with some sand
+Plate
+GRANULAR SOIL (- #200 <50%)
+2 - 4
+8 - 15
+Relative
+Density
+Very Loose
+Dense
+Very Dense
+COHESIVE SOIL (- #200    50%)
+PRIMARY constituents are composed of the largest
+percent of the soil mass. Primary constituents are
+capitalized and bold (i.e., GRAVEL, SAND)
+PRIMARY constituents are based on plasticity. Primary
+constituents are capitalized and bold (i.e., CLAY, SILT)
+SECONDARY constituents are composed of a
+percentage less than the primary constituent. If the soil
+mass consists of 12 percent or more fines content, a
+cohesive constituent is used (SILTY or CLAYEY);
+otherwise, a granular constituent is used (GRAVELLY
+or SANDY) provided that the secondary constituent
+consists of 20 percent or more of the soil mass.
+Secondary constituents are capitalized and bold (i.e.,
+SANDY GRAVEL, CLAYEY SAND) and precede the
+primary constituent.
+SECONDARY constituents are composed of a
+percentage less than the primary constituent, but more
+than 20 percent of the soil mass. Secondary constituents
+are capitalized and bold (i.e., SANDY CLAY, SILTY
+CLAY, CLAYEY SILT) and precede the primary
+constituent.
+Sand
+Boulders
+Cobbles
+Coarse Gravel
+3-inch to 3/4-inch (75-mm to 19-mm)
+Fine Gravel
+3/4-inch to #4 (19-mm to 4.75-mm)
+GEOLABS, INC. CLASSIFICATION*
+Granular Soils
+Cohesive Soils
+Consistency
+accessory descriptions compose of the following:
+with some: >12%
+with a little: 5 - 12%
+with traces of: <5%
+accessory descriptions are lower cased and follow the
+Primary and Secondary Constituents
+(i.e., SILTY CLAY with some sand)
+Very Soft
+Soft
+Medium Stiff
+Stiff
+Very Stiff
+Hard
+< 0.5
+0.5 - 1.0
+1.0 - 2.0
+7 - 18
+18 - 55
+55 - 91
+> 91
+Medium Dense
+Coarse Sand
+(with deviations from ASTM D2488)
+Soil Classification Log Key
+*Soil descriptions are based on ASTM D2488-09a, Visual-Manual Procedure, with the
+above modifications by Geolabs, Inc. to the Unified Soil Classification System (USCS).
+accessory descriptions compose of the following:
+with some: >12%
+with a little: 5 - 12%
+with traces of: <5%
+accessory descriptions are lower cased and follow the
+Primary and Secondary Constituents
+(i.e., SILTY GRAVEL with a little sand)
+Dry:    Absence of moisture, dry to the touch
+Moist: Damp but no visible water
+Wet:   Visible free water
+SOIL_CLASS_LOG_KEY  8055-00.GPJ  GEOLABS.GDT  3/9/20
+GEOLABS, INC.
+Geotechnical Engineering
+Final Design Submittal (IFC) - 10/29/2020
+A-0.3
+ROCK DESCRIPTIONS
+Plate
+BRECCIA
+CLINKER
+COBBLES
+CORAL
+BASALT
+ROCK DESCRIPTION SYSTEM
+Greater than 24 inches apart
+12 to 24 inches apart
+6 to 12 inches apart
+3 to 6 inches apart
+Less than 3 inches apart
+Rock shows no sign of discoloration or loss of strength.
+Slight discoloration inwards from open fractures.
+Discoloration throughout and noticeably weakened though not able to break by hand.
+Most minerals decomposed with some corestones present in residual soil mass. Can be broken by hand.
+Saprolite. Mineral residue completely decomposed to soil but fabric and structure preserved.
+The following terms describe general fracture spacing of a rock:
+The following terms describe the chemical weathering of a rock:
+ROCK FRACTURE CHARACTERISTICS
+DEGREE OF WEATHERING
+HARDNESS
+BOULDERS
+VOID/CAVITY
+TUFF
+SILTSTONE
+LIMESTONE
+Unweathered:
+Slightly Weathered:
+Moderately Weathered:
+Highly Weathered:
+Extremely Weathered:
+Very Hard:
+Hard:
+Medium Hard:
+Soft:
+Very Soft:
+SANDSTONE
+Massive:
+Slightly Fractured:
+Moderately Fractured:
+Closely Fractured:
+Severely Fractured:
+Rock Log Legend
+The following terms describe the resistance of a rock to indentation or scratching:
+Specimen breaks with difficulty after several "pinging" hammer blows.
+Example: Dense, fine grain volcanic rock
+Specimen breaks with some difficulty after several hammer blows.
+Example: Vesicular, vugular, coarse-grained rock
+Specimen can be broked by one hammer blow. Cannot be scraped by knife. SPT may penetrate by
+~25 blows per inch with bounce.
+Example: Porous rock such as clinker, cinder, and coral reef
+Can be indented by one hammer blow. Can be scraped or peeled by knife. SPT can penetrate by
+~100 blows per foot.
+Example: Weathered rock, chalk-like coral reef
+Crumbles under hammer blow. Can be peeled and carved by knife. Can be indented by finger
+pressure.
+Example: Saprolite
+CONGLOMERATE
+GEOLABS, INC.
+Geotechnical Engineering
+LOG LEGEND FOR ROCK  8055-00.GPJ  GEOLABS.GDT  3/9/20
+Final Design Submittal (IFC) - 10/29/2020
+24
+32
+110
+57
+36
+39
+50
+84
+43
+79
+SM
+SM
+GC
+GP-
+GM
+SM
+ML
+SM
+ML
+LL=50
+PI=27
+Sieve
+- #200 =
+21.0%
+Sieve
+- #200 =
+8.7%
+Sieve
+- #200 =
+38.7%
+TXUU
+Su=2.7 ksf
+Sieve
+- #200 =
+71.8%
+4
+5
+WOR/
+24"
+3
+9
+40
+8
+0
+0
+0
+0
+48
+36
+3-inch ASPHALTIC CONCRETE
+Tannish white SILTY SAND (CORALLINE) with
+some gravel, loose, moist to wet (fill)
+grades with more gravel
+Light gray SILTY SAND (CORALLINE), loose
+(lagoonal deposit)
+Gray CLAYEY GRAVEL, very loose (lagoonal
+deposit)
+Gray SANDY GRAVEL with a little silt, very loose
+(lagoonal deposit)
+Light tannish white SILTY SAND (CORALLINE)
+with a little gravel, medium dense (coralline
+detritus)
+Brown with some gray SANDY SILT with some
+gravel (tuffaceous), very stiff (weathered
+volcanic tuff)
+Light gray SILTY SAND (CORALLINE) with a
+little gravel (limestone), loose to medium dense
+(coralline detritus)
+Brown GRAVELLY SILT with a little sand, stiff
+(recent alluvium)
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Dry Density
+(pcf)
+CME-75DG1
+4" Solid-Stem Auger & PQ Coring
+140 lb. wt., 30 in. drop
+Core
+Recovery (%)
+Laboratory
+USCS
+Depth (feet)
+5
+10
+15
+20
+25
+30
+35
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Moisture
+Content (%)
+RQD (%)
+Description
+Water Level:
+A - 1.1
+Log of
+Boring
+Penetration
+Resistance
+(blows/foot)
+Sample
+Field
+July 29, 2020
+July 29, 2020
+S. Latronic
+102 feet
+8120-00
+(Energy Transfer Ratio = 80.3%)
+101
+Latitude: 21.37085° N
+Longitude: 157.97036° W
+Approximate Ground Surface
+Elevation(feet MSL): 4.7 *
+BORING_LOG (W/ LAT AND LONG)  8120-00.GPJ  GEOLABS.GDT  10/18/20
+3.8 ft.   07/28/2020 1005 HRS
+3.3 ft.   07/29/2020 0750 HRS
+GEOLABS, INC.
+Geotechnical Engineering
+FY20 MILCON PROJECT P-463
+SOF UNDERSEA OPERATIONAL TRAINING FACILITY
+PEARL CITY PENINSULA, JBPHH, OAHU, HAWAII
+Final Design Submittal (IFC) - 10/29/2020
+31
+25
+35
+36
+29
+35
+46
+89
+83
+98
+76
+GM
+CL
+CH
+Sieve
+- #200 =
+25.0%
+LL=46
+PI=23
+TXUU
+Su=1.3 ksf
+2.5
+3.5
+1.8
+13
+9
+12
+6
+16
+11
+14
+43
+83
+71
+38
+31
+67
+36
+Light tannish white SILTY GRAVEL
+(CORALLINE) with some sand and cobbles
+(limestone), loose (coralline detritus)
+Light tannish brown SANDY CLAY with some
+gravel (siltstone), medium stiff (weathered
+siltstone)
+grades with cobbles (siltstone) locally
+grades to stiff
+Dark brown SILTY CLAY, stiff (older alluvium)
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Dry Density
+(pcf)
+CME-75DG1
+4" Solid-Stem Auger & PQ Coring
+140 lb. wt., 30 in. drop
+Core
+Recovery (%)
+(Continued from previous plate)
+Laboratory
+USCS
+Depth (feet)
+40
+45
+50
+55
+60
+65
+70
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Moisture
+Content (%)
+RQD (%)
+Description
+Water Level:
+A - 1.2
+Log of
+Boring
+Penetration
+Resistance
+(blows/foot)
+Sample
+Field
+July 29, 2020
+July 29, 2020
+S. Latronic
+102 feet
+8120-00
+(Energy Transfer Ratio = 80.3%)
+101
+BORING_LOG (W/ LAT AND LONG)  8120-00.GPJ  GEOLABS.GDT  10/18/20
+3.8 ft.   07/28/2020 1005 HRS
+3.3 ft.   07/29/2020 0750 HRS
+GEOLABS, INC.
+Geotechnical Engineering
+FY20 MILCON PROJECT P-463
+SOF UNDERSEA OPERATIONAL TRAINING FACILITY
+PEARL CITY PENINSULA, JBPHH, OAHU, HAWAII
+Final Design Submittal (IFC) - 10/29/2020
+47
+46
+41
+35
+38
+43
+41
+74
+90
+81
+CH
+MH
+CH
+LL=64
+PI=36
+TXUU
+Su=1.3 ksf
+1.8
+1.8
+3.0
+9
+18
+9
+27
+16
+28
+22
+29
+0
+26
+10
+14
+71
+Brown CLAYEY SILT, stiff (older alluvium)
+Dark brown SILTY CLAY, stiff (older alluvium)
+grades with clayey silt pockets locally
+grades to very stiff
+grades with cemented cobbles (claystone) locally
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Dry Density
+(pcf)
+CME-75DG1
+4" Solid-Stem Auger & PQ Coring
+140 lb. wt., 30 in. drop
+Core
+Recovery (%)
+(Continued from previous plate)
+Laboratory
+USCS
+Depth (feet)
+75
+80
+85
+90
+95
+100
+105
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Moisture
+Content (%)
+RQD (%)
+Description
+Water Level:
+A - 1.3
+Log of
+Boring
+Penetration
+Resistance
+(blows/foot)
+Sample
+Field
+July 29, 2020
+July 29, 2020
+S. Latronic
+102 feet
+8120-00
+(Energy Transfer Ratio = 80.3%)
+101
+BORING_LOG (W/ LAT AND LONG)  8120-00.GPJ  GEOLABS.GDT  10/18/20
+3.8 ft.   07/28/2020 1005 HRS
+3.3 ft.   07/29/2020 0750 HRS
+GEOLABS, INC.
+Geotechnical Engineering
+FY20 MILCON PROJECT P-463
+SOF UNDERSEA OPERATIONAL TRAINING FACILITY
+PEARL CITY PENINSULA, JBPHH, OAHU, HAWAII
+Final Design Submittal (IFC) - 10/29/2020
+ Boring terminated at 102 feet
+ * Elevations estimated from Grading Plan, Sheet
+CG101 contained in the RFP original solicitation
+documents.
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Dry Density
+(pcf)
+CME-75DG1
+4" Solid-Stem Auger & PQ Coring
+140 lb. wt., 30 in. drop
+Core
+Recovery (%)
+(Continued from previous plate)
+Laboratory
+USCS
+Depth (feet)
+110
+115
+120
+125
+130
+135
+140
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Moisture
+Content (%)
+RQD (%)
+Description
+Water Level:
+A - 1.4
+Log of
+Boring
+Penetration
+Resistance
+(blows/foot)
+Sample
+Field
+July 29, 2020
+July 29, 2020
+S. Latronic
+102 feet
+8120-00
+(Energy Transfer Ratio = 80.3%)
+101
+BORING_LOG (W/ LAT AND LONG)  8120-00.GPJ  GEOLABS.GDT  10/18/20
+3.8 ft.   07/28/2020 1005 HRS
+3.3 ft.   07/29/2020 0750 HRS
+GEOLABS, INC.
+Geotechnical Engineering
+FY20 MILCON PROJECT P-463
+SOF UNDERSEA OPERATIONAL TRAINING FACILITY
+PEARL CITY PENINSULA, JBPHH, OAHU, HAWAII
+Final Design Submittal (IFC) - 10/29/2020
+21
+60
+36
+39
+36
+37
+37
+68
+81
+87
+GW
+SM
+SM
+ML
+SM
+GM
+SM
+ML
+SM
+Sieve
+- #200 =
+18.2%
+Sieve
+- #200 =
+34.6%
+Consol.
+TXUU
+Su=0.8 ksf
+Sieve
+- #200 =
+26.5%
+0.8
+7
+6
+1
+8
+5
+11
+5
+0
+0
+0
+43
+45
+40
+4-inch ASPHALTIC CONCRETE
+Gray SANDY GRAVEL (BASALTIC), medium
+dense, moist (fill)
+Light tannish white SILTY SAND (CORALLINE)
+with some gravel, loose, moist (fill)
+Tan SILTY SAND (CORALLINE) with some
+gravel, loose, moist to wet (fill)
+Tan SANDY SILT, soft (lagoonal deposit)
+Gray SILTY SAND (CORALLINE) with a little
+gravel, loose (lagoonal deposit)
+Gray SILTY GRAVEL with some sand (coralline),
+very loose (lagoonal deposit)
+Light gray SILTY SAND (CORALLINE) with
+traces of gravel, loose (lagoonal deposit)
+grades with sandy silt
+Light gray SANDY SILT, medium stiff (lagoonal
+deposit)
+grades with gravel (siltstone) locally
+Light gray SILTY SAND (CORALLINE) with
+some gravel (siltstone), loose (weathered
+siltstone)
+grades with clayey silt
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Dry Density
+(pcf)
+CME-75DG1
+4" Solid-Stem Auger & PQ Coring
+140 lb. wt., 30 in. drop
+Core
+Recovery (%)
+Laboratory
+USCS
+Depth (feet)
+5
+10
+15
+20
+25
+30
+35
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Moisture
+Content (%)
+RQD (%)
+Description
+Water Level:
+A - 2.1
+Log of
+Boring
+Penetration
+Resistance
+(blows/foot)
+Sample
+Field
+July 29, 2020
+July 30, 2020
+S. Latronic
+111.5 feet
+8120-00
+(Energy Transfer Ratio = 80.3%)
+102
+Latitude: 21.37101° N
+Longitude: 157.96989° W
+Approximate Ground Surface
+Elevation(feet MSL): 4.2 *
+BORING_LOG (W/ LAT AND LONG)  8120-00.GPJ  GEOLABS.GDT  10/18/20
+3.5 ft.   07/29/2020 1135 HRS
+2.6 ft.   07/30/2020 0750 HRS
+GEOLABS, INC.
+Geotechnical Engineering
+FY20 MILCON PROJECT P-463
+SOF UNDERSEA OPERATIONAL TRAINING FACILITY
+PEARL CITY PENINSULA, JBPHH, OAHU, HAWAII
+Final Design Submittal (IFC) - 10/29/2020
+35
+40
+32
+37
+39
+49
+57
+84
+90
+83
+69
+GM
+CL
+ML
+CH
+ML
+Sieve
+- #200 =
+21.1%
+LL=33
+PI=16
+TXUU
+Su=1.3 ksf
+3.0
+3
+1
+14
+11
+33
+11
+8
+0
+21
+31
+31
+86
+29
+0
+Light gray SILTY GRAVEL (CORALLINE), very
+loose (lagoonal deposit)
+grades with some sand
+Light tannish gray SANDY CLAY with some
+gravel (siltstone), medium stiff (weathered
+siltstone)
+Tan SANDY SILT with a little gravel (siltstone),
+stiff (weathered siltstone)
+grades with cobbles (limestone)
+Brown SILTY CLAY, very stiff (older alluvium)
+Brown SANDY SILT, stiff (older alluvium)
+grades to medium stiff
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Dry Density
+(pcf)
+CME-75DG1
+4" Solid-Stem Auger & PQ Coring
+140 lb. wt., 30 in. drop
+Core
+Recovery (%)
+(Continued from previous plate)
+Laboratory
+USCS
+Depth (feet)
+40
+45
+50
+55
+60
+65
+70
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Moisture
+Content (%)
+RQD (%)
+Description
+Water Level:
+A - 2.2
+Log of
+Boring
+Penetration
+Resistance
+(blows/foot)
+Sample
+Field
+July 29, 2020
+July 30, 2020
+S. Latronic
+111.5 feet
+8120-00
+(Energy Transfer Ratio = 80.3%)
+102
+BORING_LOG (W/ LAT AND LONG)  8120-00.GPJ  GEOLABS.GDT  10/18/20
+3.5 ft.   07/29/2020 1135 HRS
+2.6 ft.   07/30/2020 0750 HRS
+GEOLABS, INC.
+Geotechnical Engineering
+FY20 MILCON PROJECT P-463
+SOF UNDERSEA OPERATIONAL TRAINING FACILITY
+PEARL CITY PENINSULA, JBPHH, OAHU, HAWAII
+Final Design Submittal (IFC) - 10/29/2020
+54
+55
+55
+60
+53
+52
+55
+65
+67
+70
+ML
+MH
+ML
+SM
+MH
+TXUU
+Su=1.9 ksf
+LL=59
+PI=24
+TXUU
+Su=1.7 ksf
+3.0
+1.0
+1.0
+8
+24
+13
+13
+22
+15
+16
+17
+14
+64
+24
+45
+31
+17
+grades with rounded cobbles (basaltic) locally
+grades to stiff
+Brown CLAYEY SILT, very stiff (older alluvium)
+Brown SANDY SILT, stiff (older alluvium)
+Brown SILTY SAND (BASALTIC) with a little
+gravel, medium dense (older alluvium)
+Brown CLAYEY SILT with a little sand, stiff to
+very stiff (older alluvium)
+grades to hard
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Dry Density
+(pcf)
+CME-75DG1
+4" Solid-Stem Auger & PQ Coring
+140 lb. wt., 30 in. drop
+Core
+Recovery (%)
+(Continued from previous plate)
+Laboratory
+USCS
+Depth (feet)
+75
+80
+85
+90
+95
+100
+105
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Moisture
+Content (%)
+RQD (%)
+Description
+Water Level:
+A - 2.3
+Log of
+Boring
+Penetration
+Resistance
+(blows/foot)
+Sample
+Field
+July 29, 2020
+July 30, 2020
+S. Latronic
+111.5 feet
+8120-00
+(Energy Transfer Ratio = 80.3%)
+102
+BORING_LOG (W/ LAT AND LONG)  8120-00.GPJ  GEOLABS.GDT  10/18/20
+3.5 ft.   07/29/2020 1135 HRS
+2.6 ft.   07/30/2020 0750 HRS
+GEOLABS, INC.
+Geotechnical Engineering
+FY20 MILCON PROJECT P-463
+SOF UNDERSEA OPERATIONAL TRAINING FACILITY
+PEARL CITY PENINSULA, JBPHH, OAHU, HAWAII
+Final Design Submittal (IFC) - 10/29/2020
+47
+70
+77
+MH
+CH
+3.0
+66
+16
+64
+Gray SILTY CLAY with a little gravel (coralline),
+very stiff (alluvium with coral debris)
+ Boring terminated at 111.5 feet
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Dry Density
+(pcf)
+CME-75DG1
+4" Solid-Stem Auger & PQ Coring
+140 lb. wt., 30 in. drop
+Core
+Recovery (%)
+(Continued from previous plate)
+Laboratory
+USCS
+Depth (feet)
+110
+115
+120
+125
+130
+135
+140
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Moisture
+Content (%)
+RQD (%)
+Description
+Water Level:
+A - 2.4
+Log of
+Boring
+Penetration
+Resistance
+(blows/foot)
+Sample
+Field
+July 29, 2020
+July 30, 2020
+S. Latronic
+111.5 feet
+8120-00
+(Energy Transfer Ratio = 80.3%)
+102
+BORING_LOG (W/ LAT AND LONG)  8120-00.GPJ  GEOLABS.GDT  10/18/20
+3.5 ft.   07/29/2020 1135 HRS
+2.6 ft.   07/30/2020 0750 HRS
+GEOLABS, INC.
+Geotechnical Engineering
+FY20 MILCON PROJECT P-463
+SOF UNDERSEA OPERATIONAL TRAINING FACILITY
+PEARL CITY PENINSULA, JBPHH, OAHU, HAWAII
+Final Design Submittal (IFC) - 10/29/2020
+24
+34
+49
+45
+47
+32
+40
+84
+91
+SM
+GM
+MH
+SM
+SM
+SM
+CH
+Sieve
+- #200 =
+31.7%
+Sieve
+- #200 =
+19.6%
+UC=
+1820 psi
+19
+0
+7
+5
+1
+3
+2
+33
+57
+0
+0
+0
+0
+60
+26
+3-inch ASPHALTIC CONCRETE
+Light tannish white SILTY SAND (CORALLINE)
+with some gravel, medium dense, moist (fill)
+Brownish gray SILTY GRAVEL (BASALTIC),
+medium dense, moist (fill)
+Tan CLAYEY SILT with some gravel (coralline),
+stiff (fill)
+Tan SILTY SAND (CORALLINE) with some
+gravel, very loose (fill)
+Gray SILTY SAND (CORALLINE) with some
+gravel, very loose (lagoonal deposit)
+grades with more gravel
+Brownish gray SILTY SAND (BASALTIC) with
+some gravel (tuffaceous), medium dense
+(weathered volcanic tuff)
+Gray and brown TUFF, moderately to closely
+fractured, slightly to moderately weathered,
+medium hard to hard (volcanic tuff)
+grades to severely fractured
+Light grayish white SILTY CLAY with some
+gravel (siltstone), medium stiff to stiff (weathered
+siltstone)
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Dry Density
+(pcf)
+CME-75DG1
+4" Solid-Stem Auger & PQ Coring
+140 lb. wt., 30 in. drop
+Core
+Recovery (%)
+Laboratory
+USCS
+Depth (feet)
+5
+10
+15
+20
+25
+30
+35
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Moisture
+Content (%)
+RQD (%)
+Description
+Water Level:
+A - 3.1
+Log of
+Boring
+Penetration
+Resistance
+(blows/foot)
+Sample
+Field
+July 30, 2020
+July 31, 2020
+S. Latronic
+111.5 feet
+8120-00
+(Energy Transfer Ratio = 80.3%)
+103
+Latitude: 21.37054° N
+Longitude: 157.96996° W
+Approximate Ground Surface
+Elevation(feet MSL): 4.2 *
+BORING_LOG (W/ LAT AND LONG)  8120-00.GPJ  GEOLABS.GDT  10/18/20
+2.8 ft.   07/30/2020 1335 HRS
+2.5 ft.   07/31/2020 0755 HRS
+GEOLABS, INC.
+Geotechnical Engineering
+FY20 MILCON PROJECT P-463
+SOF UNDERSEA OPERATIONAL TRAINING FACILITY
+PEARL CITY PENINSULA, JBPHH, OAHU, HAWAII
+Final Design Submittal (IFC) - 10/29/2020
+46
+41
+38
+37
+33
+25
+48
+74
+84
+89
+72
+CH
+MH
+TXUU
+Su=0.7 ksf
+LL=62
+PI=32
+TXUU
+Su=2.5 ksf
+4.0
+16
+5
+8
+4
+3
+7
+17
+38
+22
+0
+0
+29
+42
+14
+grades to soft
+grades with cobbles (siltstone) locally
+grades to tan, medium stiff
+grades with more gravel
+Brown CLAYEY SILT, stiff (older alluvium)
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Dry Density
+(pcf)
+CME-75DG1
+4" Solid-Stem Auger & PQ Coring
+140 lb. wt., 30 in. drop
+Core
+Recovery (%)
+(Continued from previous plate)
+Laboratory
+USCS
+Depth (feet)
+40
+45
+50
+55
+60
+65
+70
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Moisture
+Content (%)
+RQD (%)
+Description
+Water Level:
+A - 3.2
+Log of
+Boring
+Penetration
+Resistance
+(blows/foot)
+Sample
+Field
+July 30, 2020
+July 31, 2020
+S. Latronic
+111.5 feet
+8120-00
+(Energy Transfer Ratio = 80.3%)
+103
+BORING_LOG (W/ LAT AND LONG)  8120-00.GPJ  GEOLABS.GDT  10/18/20
+2.8 ft.   07/30/2020 1335 HRS
+2.5 ft.   07/31/2020 0755 HRS
+GEOLABS, INC.
+Geotechnical Engineering
+FY20 MILCON PROJECT P-463
+SOF UNDERSEA OPERATIONAL TRAINING FACILITY
+PEARL CITY PENINSULA, JBPHH, OAHU, HAWAII
+Final Design Submittal (IFC) - 10/29/2020
+48
+46
+46
+40
+50
+52
+39
+77
+79
+76
+MH
+ML
+SM
+CH
+LL=78
+PI=35
+TXUU
+Su=2.6 ksf
+2.5
+2.5
+10
+15
+9
+24
+9
+28
+22
+31
+76
+29
+71
+43
+26
+0
+grades with rounded gravel (basaltic) locally
+Brown SANDY SILT with a little gravel (basaltic),
+stiff (older alluvium)
+grades with pockets of medium dense silty sand
+Brown SILTY SAND (BASALTIC) with some
+rounded gravel (basaltic), medium dense (older
+alluvium)
+Gray SILTY CLAY with some sand (coralline),
+very stiff (alluvium with coral debris)
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Dry Density
+(pcf)
+CME-75DG1
+4" Solid-Stem Auger & PQ Coring
+140 lb. wt., 30 in. drop
+Core
+Recovery (%)
+(Continued from previous plate)
+Laboratory
+USCS
+Depth (feet)
+75
+80
+85
+90
+95
+100
+105
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Moisture
+Content (%)
+RQD (%)
+Description
+Water Level:
+A - 3.3
+Log of
+Boring
+Penetration
+Resistance
+(blows/foot)
+Sample
+Field
+July 30, 2020
+July 31, 2020
+S. Latronic
+111.5 feet
+8120-00
+(Energy Transfer Ratio = 80.3%)
+103
+BORING_LOG (W/ LAT AND LONG)  8120-00.GPJ  GEOLABS.GDT  10/18/20
+2.8 ft.   07/30/2020 1335 HRS
+2.5 ft.   07/31/2020 0755 HRS
+GEOLABS, INC.
+Geotechnical Engineering
+FY20 MILCON PROJECT P-463
+SOF UNDERSEA OPERATIONAL TRAINING FACILITY
+PEARL CITY PENINSULA, JBPHH, OAHU, HAWAII
+Final Design Submittal (IFC) - 10/29/2020
+32
+28
+87
+CH
+28
+15
+21
+grades with more sand locally
+grades to gray and tan
+ Boring terminated at 111.5 feet
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Dry Density
+(pcf)
+CME-75DG1
+4" Solid-Stem Auger & PQ Coring
+140 lb. wt., 30 in. drop
+Core
+Recovery (%)
+(Continued from previous plate)
+Laboratory
+USCS
+Depth (feet)
+110
+115
+120
+125
+130
+135
+140
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Moisture
+Content (%)
+RQD (%)
+Description
+Water Level:
+A - 3.4
+Log of
+Boring
+Penetration
+Resistance
+(blows/foot)
+Sample
+Field
+July 30, 2020
+July 31, 2020
+S. Latronic
+111.5 feet
+8120-00
+(Energy Transfer Ratio = 80.3%)
+103
+BORING_LOG (W/ LAT AND LONG)  8120-00.GPJ  GEOLABS.GDT  10/18/20
+2.8 ft.   07/30/2020 1335 HRS
+2.5 ft.   07/31/2020 0755 HRS
+GEOLABS, INC.
+Geotechnical Engineering
+FY20 MILCON PROJECT P-463
+SOF UNDERSEA OPERATIONAL TRAINING FACILITY
+PEARL CITY PENINSULA, JBPHH, OAHU, HAWAII
+Final Design Submittal (IFC) - 10/29/2020
+APPENDIX B  
+Final Design Submittal (IFC) - 10/29/2020
+W.O. 8120-00 
+GEOLABS, INC. 
+OCTOBER 2020    Page B-1 
+Hawaii • California 
+A P P E N D I X   B 
+Laboratory Tests 
+Moisture Content (ASTM D2216) and Unit Weight (ASTM D2937) determinations 
+were performed on selected soil samples as an aid in the classification and evaluation of 
+soil properties. The test results are presented on the Logs of Borings at the appropriate 
+sample depths. 
+Seven Atterberg Limits tests (ASTM D4318) were performed on selected soil 
+samples to evaluate the liquid and plastic limits and to aid in soil classification. The test 
+results are summarized on the Logs of Borings at the appropriate sample depths, and 
+graphic presentations of the test results are provided on Plate B-1. 
+Thirteen Sieve Analysis tests (ASTM D6913) were performed on selected soil 
+samples to evaluate the gradation characteristics of the soils and to aid in soil 
+classification. Graphic presentations of the grain size distributions are provided on 
+Plates B-2 through B-4. 
+One Uniaxial Compressive Strength test was performed on a selected rock core 
+to evaluate the unconfined compressive strength of the volcanic tuff in general 
+accordance with ASTM D7012 Method C. Uniaxial compressive strength test results for 
+the selected rock core is presented on the Logs of Borings at the appropriate sample 
+depth and presented on Plate B-5. 
+Ten Unconsolidated Undrained Triaxial Compression tests were performed on 
+selected in-situ soil samples in accordance with ASTM D2850. The approximate in-situ 
+effective overburden pressure was used as the applied confining pressure for the 
+“undisturbed” sample. The test results and the stress-strain curves are presented on 
+Plates B-6 through B-15. 
+One Consolidation test was performed on a selected soil sample to evaluate the 
+compressibility characteristics of the on-site soils. The test was performed in accordance 
+with ASTM D2435, and the test results are presented on Plate B-16. 
+Two laboratory California Bearing Ratio (CBR) tests (ASTM D1883) were 
+performed on bulk samples of the near-surface soils to evaluate the pavement support 
+characteristics of the soils. The test results are presented on Plates B-17 and B-18. 
+Two Modified Proctor compaction tests (ASTM D1557, Method C) were performed 
+on bulk samples of the near-surface soils to evaluate the dry density and moisture content 
+relationships. The test results are presented on Plates B-19 and B-20. 
+Five sets of pH (ASTM G51) and Minimum Resistivity (ASTM G57) tests were 
+performed by our office, and five sets of Chloride (EPA 300) and Sulfate Content (EPA 300) 
+tests were performed by Eurofins TestAmerica on selected soil samples obtained from our 
+field exploration.  The test results are presented on Plate B-21. 
+Final Design Submittal (IFC) - 10/29/2020
+0
+10
+20
+30
+40
+50
+60
+70
+80
+90
+100
+0
+20
+40
+60
+80
+100
+120
+ML or OL
+CL-ML
+CL or OL
+CH or OH
+B - 1
+MH or OH
+LIQUID LIMIT
+PLASTICITY INDEX
+ATTERBERG LIMITS TEST RESULTS - ASTM D4318
+PI
+Depth (ft)
+Sample
+LL
+PL
+Description
+B-101
+B-101
+B-101
+B-102
+B-102
+B-103
+B-103
+5.0-6.5
+45.5-47.0
+75.5-77.0
+45.0-46.5
+95.0-96.5
+40.0-42.0
+70.0-71.5
+50
+46
+64
+33
+59
+62
+78
+23
+23
+28
+17
+35
+30
+43
+27
+23
+36
+16
+24
+32
+35
+Gray clayey gravel (GC) with some sand
+Light tannish brown sandy clay (CL) with some gravel
+Dark brown silty clay (CH)
+Light tannish gray sandy clay (CL) with some gravel
+Brown clayey silt (MH) with a little sand
+Light grayish white silty clay (CH) with some gravel
+Brown clayey silt (MH)
+NP = NON-PLASTIC
+4
+7
+Plate
+W.O. 8120-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+FY20 MILCON PROJECT P-463
+SOF UNDERSEA OPERATIONAL TRAINING FACILITY
+PEARL CITY PENINSULA, JBPHH, OAHU, HAWAII
+G_ATTERBERG_PI-100_LL-120  8120-00.GPJ  GEOLABS.GDT  9/14/20
+Final Design Submittal (IFC) - 10/29/2020
+0
+5
+10
+15
+20
+25
+30
+35
+40
+45
+50
+55
+60
+65
+70
+75
+80
+85
+90
+95
+100
+0.001
+0.01
+0.1
+1
+10
+100
+8.543
+20.114
+0.357
+6.099
+B - 2
+coarse
+1
+1.5
+3
+2
+0.09
+40
+Depth (ft)
+%Gravel
+51.7
+70.4
+6.9
+22.0
+47.1
+27.3
+21.0
+54.4
+6.2
+27.9
+%Sand
+COBBLES
+Sample
+D30 (mm)
+140
+20
+13.0 223.9
+HYDROMETER
+3
+GRAIN SIZE IN MILLIMETERS
+PERCENT FINER BY WEIGHT
+100
+coarse
+1/2
+Sample
+0.166
+4.84
+0.422
+Cu
+GRAVEL
+U.S. SIEVE NUMBERS
+D10 (mm)
+16
+fine
+37.5
+62.5
+19
+37.5
+25
+Cc
+3/4
+fine
+SILT OR CLAY
+medium
+GRAIN SIZE DISTRIBUTION - ASTM D6913
+SAND
+%Fine
+60
+4
+30
+200
+4
+6
+21.0
+8.7
+38.7
+71.8
+25.0
+Depth (ft)
+LL
+Gray clayey gravel (GC) with some sand
+Gray sandy gravel (GP-GM) with a little silt
+Light tannish white silty sand (SM) with a little gravel
+Brown gravelly silt (ML) with a little sand
+Light tannish white silty gravel (GM) with some sand
+23
+50
+810 14
+50
+U.S. SIEVE OPENING IN INCHES
+6
+D60 (mm)
+D100 (mm)
+B-101
+B-101
+B-101
+B-101
+B-101
+5.0-6.5
+15.5-17.0
+20.5-22.5
+30.5-32.5
+40.5-42.5
+5.0-6.5
+15.5-17.0
+20.5-22.5
+30.5-32.5
+40.5-42.5
+B-101
+B-101
+B-101
+B-101
+B-101
+3/8
+PL PI
+Description
+27
+Plate
+W.O. 8120-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+FY20 MILCON PROJECT P-463
+SOF UNDERSEA OPERATIONAL TRAINING FACILITY
+PEARL CITY PENINSULA, JBPHH, OAHU, HAWAII
+G_GRAIN_SIZE_MOD  8120-00.GPJ  GEOLABS.GDT  9/14/20
+Final Design Submittal (IFC) - 10/29/2020
+0
+5
+10
+15
+20
+25
+30
+35
+40
+45
+50
+55
+60
+65
+70
+75
+80
+85
+90
+95
+100
+0.001
+0.01
+0.1
+1
+10
+100
+18.034
+0.142
+2.17
+5.706
+1.63
+B - 3
+coarse
+1
+1.5
+3
+2
+40
+Depth (ft)
+%Gravel
+49.4
+1.7
+27.0
+45.6
+22.7
+32.4
+63.7
+46.5
+33.3
+45.5
+%Sand
+COBBLES
+Sample
+D30 (mm)
+140
+20
+HYDROMETER
+3
+GRAIN SIZE IN MILLIMETERS
+PERCENT FINER BY WEIGHT
+100
+coarse
+1/2
+Sample
+0.184
+0.091
+0.517
+Cu
+GRAVEL
+U.S. SIEVE NUMBERS
+D10 (mm)
+16
+fine
+50
+19
+19
+25
+25
+Cc
+3/4
+fine
+SILT OR CLAY
+medium
+GRAIN SIZE DISTRIBUTION - ASTM D6913
+SAND
+%Fine
+60
+4
+30
+200
+4
+6
+18.2
+34.6
+26.5
+21.1
+31.7
+Depth (ft)
+LL
+Gray silty gravel (GM) with some sand
+Light gray silty sand (SM) with traces of gravel
+Light gray silty sand (SM) with some gravel
+Light gray silty gravel (GM) with some sand
+Gray silty sand (SM) with some gravel
+810 14
+50
+U.S. SIEVE OPENING IN INCHES
+6
+D60 (mm)
+D100 (mm)
+B-102
+B-102
+B-102
+B-102
+B-103
+10.0-12.0
+15.0-16.5
+30.0-31.5
+40.0-41.5
+5.0-6.5
+10.0-12.0
+15.0-16.5
+30.0-31.5
+40.0-41.5
+5.0-6.5
+B-102
+B-102
+B-102
+B-102
+B-103
+3/8
+PL PI
+Description
+Plate
+W.O. 8120-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+FY20 MILCON PROJECT P-463
+SOF UNDERSEA OPERATIONAL TRAINING FACILITY
+PEARL CITY PENINSULA, JBPHH, OAHU, HAWAII
+G_GRAIN_SIZE_MOD  8120-00.GPJ  GEOLABS.GDT  9/14/20
+Final Design Submittal (IFC) - 10/29/2020
+0
+5
+10
+15
+20
+25
+30
+35
+40
+45
+50
+55
+60
+65
+70
+75
+80
+85
+90
+95
+100
+0.001
+0.01
+0.1
+1
+10
+100
+1.501
+2.931
+1.696
+B - 4
+coarse
+1
+1.5
+3
+2
+40
+Depth (ft)
+%Gravel
+27.3
+31.7
+27.3
+53.1
+48.2
+38.9
+%Sand
+COBBLES
+Sample
+D30 (mm)
+140
+20
+HYDROMETER
+3
+GRAIN SIZE IN MILLIMETERS
+PERCENT FINER BY WEIGHT
+100
+coarse
+1/2
+Sample
+0.137
+0.266
+Cu
+GRAVEL
+U.S. SIEVE NUMBERS
+D10 (mm)
+16
+fine
+37.5
+37.5
+37.5
+Cc
+3/4
+fine
+SILT OR CLAY
+medium
+GRAIN SIZE DISTRIBUTION - ASTM D6913
+SAND
+%Fine
+60
+4
+30
+200
+4
+6
+19.6
+20.1
+33.8
+Depth (ft)
+LL
+Gray silty sand (SM) with some gravel
+Tannish brown silty sand (SM) with some gravel
+Tannish brown silty sand (SM) with some gravel
+810 14
+50
+U.S. SIEVE OPENING IN INCHES
+6
+D60 (mm)
+D100 (mm)
+B-103
+BULK-1
+BULK-2
+20.0-21.5
+0.0-2.0
+0.0-2.0
+20.0-21.5
+0.0-2.0
+0.0-2.0
+B-103
+BULK-1
+BULK-2
+3/8
+PL PI
+Description
+Plate
+W.O. 8120-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+FY20 MILCON PROJECT P-463
+SOF UNDERSEA OPERATIONAL TRAINING FACILITY
+PEARL CITY PENINSULA, JBPHH, OAHU, HAWAII
+G_GRAIN_SIZE_MOD  8120-00.GPJ  GEOLABS.GDT  9/14/20
+Final Design Submittal (IFC) - 10/29/2020
+B-103
+26.5 - 30
+6.594
+3.256
+2.03
+123.1
+15,150
+1,820
+B - 5
+Depth
+Location
+Length
+Diameter
+Length/
+Diameter
+Ratio
+(feet)
+(inches)
+(inches)
+(pcf)
+(psi)
+Density
+Compressive
+Strength
+Load
+UNIAXIAL COMPRESSIVE STRENGTH TEST
+ASTM D7012 (METHOD C)
+(lbs)
+Plate
+W.O. 8120-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+FY20 MILCON PROJECT P-463
+SOF UNDERSEA OPERATIONAL TRAINING FACILITY
+PEARL CITY PENINSULA, JBPHH, OAHU, HAWAII
+G_ROCK_UC_TEST_PORTRAIT  8120-00.GPJ  GEOLABS.GDT  9/14/20
+Final Design Submittal (IFC) - 10/29/2020
+0
+0.5
+1.0
+1.5
+2.0
+2.5
+3.0
+3.5
+4.0
+4.5
+5.0
+5.5
+6.0
+0
+4
+8
+12
+16
+Location:
+Sample Diameter (inches)
+Sample Height (inches)
+DEVIATOR STRESS, ksf
+Max. Deviator Stress (ksf):
+Confining Stress (ksf):
+AXIAL STRAIN, %
+1.4
+5.4
+Dry Density (pcf)
+Moisture (%)
+Axial Strain at Failure (%)
+Strain Rate (% / minute)
+38.7
+79.1
+15.0
+Brown with some gray sandy silt (ML) with some gravel
+25.5 - 27.0 feet
+Description:
+Depth:
+B-101
+TRIAXIAL UU COMPRESSION TEST - ASTM D2850
+Test Date:
+5.067
+2.413
+0.70
+B - 6
+8/18/2020
+Plate
+W.O. 8120-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+FY20 MILCON PROJECT P-463
+SOF UNDERSEA OPERATIONAL TRAINING FACILITY
+PEARL CITY PENINSULA, JBPHH, OAHU, HAWAII
+G_TXUU  8120-00.GPJ  GEOLABS.GDT  9/14/20
+Final Design Submittal (IFC) - 10/29/2020
+0
+0.2
+0.4
+0.6
+0.8
+1.0
+1.2
+1.4
+1.6
+1.8
+2.0
+2.2
+2.4
+2.6
+2.8
+0
+4
+8
+12
+16
+Location:
+Sample Diameter (inches)
+Sample Height (inches)
+DEVIATOR STRESS, ksf
+Max. Deviator Stress (ksf):
+Confining Stress (ksf):
+AXIAL STRAIN, %
+2.2
+2.7
+Dry Density (pcf)
+Moisture (%)
+Axial Strain at Failure (%)
+Strain Rate (% / minute)
+34.7
+83.1
+15.0
+Light tannish brown sandy clay (CL) with some gravel
+45.5 - 47.0 feet
+Description:
+Depth:
+B-101
+TRIAXIAL UU COMPRESSION TEST - ASTM D2850
+Test Date:
+5.167
+2.413
+0.71
+B - 7
+8/19/2020
+Plate
+W.O. 8120-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+FY20 MILCON PROJECT P-463
+SOF UNDERSEA OPERATIONAL TRAINING FACILITY
+PEARL CITY PENINSULA, JBPHH, OAHU, HAWAII
+G_TXUU  8120-00.GPJ  GEOLABS.GDT  9/14/20
+Final Design Submittal (IFC) - 10/29/2020
+0
+0.2
+0.4
+0.6
+0.8
+1.0
+1.2
+1.4
+1.6
+1.8
+2.0
+2.2
+2.4
+2.6
+2.8
+0
+4
+8
+12
+16
+Location:
+Sample Diameter (inches)
+Sample Height (inches)
+DEVIATOR STRESS, ksf
+Max. Deviator Stress (ksf):
+Confining Stress (ksf):
+AXIAL STRAIN, %
+3.5
+2.6
+Dry Density (pcf)
+Moisture (%)
+Axial Strain at Failure (%)
+Strain Rate (% / minute)
+46.3
+73.6
+15.0
+Dark brown silty clay (CH)
+75.5 - 77.0 feet
+Description:
+Depth:
+B-101
+TRIAXIAL UU COMPRESSION TEST - ASTM D2850
+Test Date:
+5.167
+2.417
+0.70
+B - 8
+8/19/2020
+Plate
+W.O. 8120-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+FY20 MILCON PROJECT P-463
+SOF UNDERSEA OPERATIONAL TRAINING FACILITY
+PEARL CITY PENINSULA, JBPHH, OAHU, HAWAII
+G_TXUU  8120-00.GPJ  GEOLABS.GDT  9/14/20
+Final Design Submittal (IFC) - 10/29/2020
+0
+0.2
+0.4
+0.6
+0.8
+1.0
+1.2
+1.4
+1.6
+1.8
+0
+4
+8
+12
+16
+Location:
+Sample Diameter (inches)
+Sample Height (inches)
+DEVIATOR STRESS, ksf
+Max. Deviator Stress (ksf):
+Confining Stress (ksf):
+AXIAL STRAIN, %
+1.3
+1.6
+Dry Density (pcf)
+Moisture (%)
+Axial Strain at Failure (%)
+Strain Rate (% / minute)
+37.0
+87.4
+15.1
+Light gray sandy silt (ML)
+25.0 - 26.5 feet
+Description:
+Depth:
+B-102
+TRIAXIAL UU COMPRESSION TEST - ASTM D2850
+Test Date:
+5.167
+2.417
+0.70
+B - 9
+8/19/2020
+Plate
+W.O. 8120-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+FY20 MILCON PROJECT P-463
+SOF UNDERSEA OPERATIONAL TRAINING FACILITY
+PEARL CITY PENINSULA, JBPHH, OAHU, HAWAII
+G_TXUU  8120-00.GPJ  GEOLABS.GDT  9/14/20
+Final Design Submittal (IFC) - 10/29/2020
+0
+0.2
+0.4
+0.6
+0.8
+1.0
+1.2
+1.4
+1.6
+1.8
+2.0
+2.2
+2.4
+2.6
+2.8
+0
+4
+8
+12
+16
+Location:
+Sample Diameter (inches)
+Sample Height (inches)
+DEVIATOR STRESS, ksf
+Max. Deviator Stress (ksf):
+Confining Stress (ksf):
+AXIAL STRAIN, %
+2.2
+2.6
+Dry Density (pcf)
+Moisture (%)
+Axial Strain at Failure (%)
+Strain Rate (% / minute)
+31.7
+89.8
+15.0
+Light tannish gray sandy clay (CL) with some gravel
+45.0 - 46.5 feet
+Description:
+Depth:
+B-102
+TRIAXIAL UU COMPRESSION TEST - ASTM D2850
+Test Date:
+5.167
+2.413
+0.70
+B - 10
+8/19/2020
+Plate
+W.O. 8120-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+FY20 MILCON PROJECT P-463
+SOF UNDERSEA OPERATIONAL TRAINING FACILITY
+PEARL CITY PENINSULA, JBPHH, OAHU, HAWAII
+G_TXUU  8120-00.GPJ  GEOLABS.GDT  9/14/20
+Final Design Submittal (IFC) - 10/29/2020
+0
+0.5
+1.0
+1.5
+2.0
+2.5
+3.0
+3.5
+4.0
+0
+4
+8
+12
+16
+Location:
+Sample Diameter (inches)
+Sample Height (inches)
+DEVIATOR STRESS, ksf
+Max. Deviator Stress (ksf):
+Confining Stress (ksf):
+AXIAL STRAIN, %
+3.4
+3.8
+Dry Density (pcf)
+Moisture (%)
+Axial Strain at Failure (%)
+Strain Rate (% / minute)
+57.6
+64.5
+15.0
+Brown sandy silt (ML)
+75.0 - 76.5 feet
+Description:
+Depth:
+B-102
+TRIAXIAL UU COMPRESSION TEST - ASTM D2850
+Test Date:
+5.133
+2.413
+0.70
+B - 11
+8/19/2020
+Plate
+W.O. 8120-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+FY20 MILCON PROJECT P-463
+SOF UNDERSEA OPERATIONAL TRAINING FACILITY
+PEARL CITY PENINSULA, JBPHH, OAHU, HAWAII
+G_TXUU  8120-00.GPJ  GEOLABS.GDT  9/14/20
+Final Design Submittal (IFC) - 10/29/2020
+0
+0.5
+1.0
+1.5
+2.0
+2.5
+3.0
+3.5
+0
+4
+8
+12
+16
+Location:
+Sample Diameter (inches)
+Sample Height (inches)
+DEVIATOR STRESS, ksf
+Max. Deviator Stress (ksf):
+Confining Stress (ksf):
+AXIAL STRAIN, %
+4.3
+3.4
+Dry Density (pcf)
+Moisture (%)
+Axial Strain at Failure (%)
+Strain Rate (% / minute)
+51.8
+70.0
+15.0
+Brown clayey silt (MH) with a little sand
+95.0 - 96.5 feet
+Description:
+Depth:
+B-102
+TRIAXIAL UU COMPRESSION TEST - ASTM D2850
+Test Date:
+5.133
+2.413
+0.70
+B - 12
+8/19/2020
+Plate
+W.O. 8120-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+FY20 MILCON PROJECT P-463
+SOF UNDERSEA OPERATIONAL TRAINING FACILITY
+PEARL CITY PENINSULA, JBPHH, OAHU, HAWAII
+G_TXUU  8120-00.GPJ  GEOLABS.GDT  9/14/20
+Final Design Submittal (IFC) - 10/29/2020
+0
+0.2
+0.4
+0.6
+0.8
+1.0
+1.2
+1.4
+1.6
+0
+4
+8
+12
+16
+Location:
+Sample Diameter (inches)
+Sample Height (inches)
+DEVIATOR STRESS, ksf
+Max. Deviator Stress (ksf):
+Confining Stress (ksf):
+AXIAL STRAIN, %
+1.7
+1.4
+Dry Density (pcf)
+Moisture (%)
+Axial Strain at Failure (%)
+Strain Rate (% / minute)
+46.0
+74.2
+15.0
+Light grayish white silty clay (CH) with some gravel
+35.0 - 36.5 feet
+Description:
+Depth:
+B-103
+TRIAXIAL UU COMPRESSION TEST - ASTM D2850
+Test Date:
+5.133
+2.413
+0.70
+B - 13
+8/20/2020
+Plate
+W.O. 8120-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+FY20 MILCON PROJECT P-463
+SOF UNDERSEA OPERATIONAL TRAINING FACILITY
+PEARL CITY PENINSULA, JBPHH, OAHU, HAWAII
+G_TXUU  8120-00.GPJ  GEOLABS.GDT  9/14/20
+Final Design Submittal (IFC) - 10/29/2020
+0
+0.5
+1.0
+1.5
+2.0
+2.5
+3.0
+3.5
+4.0
+4.5
+5.0
+0
+4
+8
+12
+16
+Location:
+Sample Diameter (inches)
+Sample Height (inches)
+DEVIATOR STRESS, ksf
+Max. Deviator Stress (ksf):
+Confining Stress (ksf):
+AXIAL STRAIN, %
+3.0
+5.0
+Dry Density (pcf)
+Moisture (%)
+Axial Strain at Failure (%)
+Strain Rate (% / minute)
+48.3
+72.2
+15.0
+Brown clayey silt (MH)
+65.0 - 66.5 feet
+Description:
+Depth:
+B-103
+TRIAXIAL UU COMPRESSION TEST - ASTM D2850
+Test Date:
+5.167
+2.413
+0.71
+B - 14
+8/20/2020
+Plate
+W.O. 8120-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+FY20 MILCON PROJECT P-463
+SOF UNDERSEA OPERATIONAL TRAINING FACILITY
+PEARL CITY PENINSULA, JBPHH, OAHU, HAWAII
+G_TXUU  8120-00.GPJ  GEOLABS.GDT  9/14/20
+Final Design Submittal (IFC) - 10/29/2020
+0
+0.5
+1.0
+1.5
+2.0
+2.5
+3.0
+3.5
+4.0
+4.5
+5.0
+5.5
+0
+4
+8
+12
+16
+Location:
+Sample Diameter (inches)
+Sample Height (inches)
+DEVIATOR STRESS, ksf
+Max. Deviator Stress (ksf):
+Confining Stress (ksf):
+AXIAL STRAIN, %
+3.9
+5.1
+Dry Density (pcf)
+Moisture (%)
+Axial Strain at Failure (%)
+Strain Rate (% / minute)
+40.1
+79.4
+15.0
+Brown clayey silt (MH)
+85.0 - 86.5 feet
+Description:
+Depth:
+B-103
+TRIAXIAL UU COMPRESSION TEST - ASTM D2850
+Test Date:
+5.067
+2.413
+0.70
+B - 15
+8/20/2020
+Plate
+W.O. 8120-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+FY20 MILCON PROJECT P-463
+SOF UNDERSEA OPERATIONAL TRAINING FACILITY
+PEARL CITY PENINSULA, JBPHH, OAHU, HAWAII
+G_TXUU  8120-00.GPJ  GEOLABS.GDT  9/14/20
+Final Design Submittal (IFC) - 10/29/2020
+0
+5
+10
+15
+20
+25
+30
+0.1
+1
+10
+100
+Initial
+Final
+Dry Density, pcf:
+96.4
+0.8200
+100.0
+1.224
+0.813
+Degree of Saturation, %
+Void Ratio
+Water Content, %
+Sample:
+B-102
+Depth:
+25.0 - 26.5 feet
+Description: Light gray sandy silt (ML)
+Liquid Limit =
+Plasticity Index =
+CONSOLIDATION %
+NORMAL PRESSURE, ksf
+B - 16
+37.0
+25.5
+109.8
+89.5
+Sample Height, inches
+N/A
+N/A
+CONSOLIDATION TEST -  ASTM D2435
+1.0000
+Plate
+W.O. 8120-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+FY20 MILCON PROJECT P-463
+SOF UNDERSEA OPERATIONAL TRAINING FACILITY
+PEARL CITY PENINSULA, JBPHH, OAHU, HAWAII
+G_CONSOL  8120-00.GPJ  GEOLABS.GDT  9/14/20
+Final Design Submittal (IFC) - 10/29/2020
+0
+200
+400
+600
+800
+1,000
+1,200
+1,400
+1,600
+1,800
+2,000
+2,200
+0
+0.10
+0.20
+0.30
+0.40
+0.50
+0.60
+Sample:
+Corr. CBR @ 0.1"
+Depth:
+Corr. CBR @ 0.2"
+No. of Layers
+CALIFORNIA BEARING RATIO - ASTM D1883
+Description:
+Days Soaked
+3
+BULK-1
+Swell (%)
+0.00
+56.0
+37.6
+Molding Dry Density (pcf)
+STRESS, psi
+0.0 - 2.0 feet
+No. of Blows
+14.3
+117.9
+Molding Moisture (%)
+Hammer Wt. (lbs)
+Hammer Drop (inches)
+PENETRATION, inches
+Tannish brown silty sand (SM) with some gravel
+18
+56
+10
+5
+Aggregate
+B - 17
+3/4 inch minus
+Plate
+W.O. 8120-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+FY20 MILCON PROJECT P-463
+SOF UNDERSEA OPERATIONAL TRAINING FACILITY
+PEARL CITY PENINSULA, JBPHH, OAHU, HAWAII
+G_CBR  8120-00.GPJ  GEOLABS.GDT  9/14/20
+Final Design Submittal (IFC) - 10/29/2020
+0
+200
+400
+600
+800
+1,000
+1,200
+1,400
+1,600
+1,800
+2,000
+2,200
+0
+0.10
+0.20
+0.30
+0.40
+0.50
+0.60
+Sample:
+Corr. CBR @ 0.1"
+Depth:
+Corr. CBR @ 0.2"
+No. of Layers
+CALIFORNIA BEARING RATIO - ASTM D1883
+Description:
+Days Soaked
+5
+BULK-2
+Swell (%)
+0.11
+94.2
+93.5
+Molding Dry Density (pcf)
+STRESS, psi
+0.0 - 2.0 feet
+No. of Blows
+13.3
+118.3
+Molding Moisture (%)
+Hammer Wt. (lbs)
+Hammer Drop (inches)
+PENETRATION, inches
+Tannish brown silty sand (SM) with some gravel
+18
+56
+10
+5
+Aggregate
+B - 18
+3/4 inch minus
+Plate
+W.O. 8120-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+FY20 MILCON PROJECT P-463
+SOF UNDERSEA OPERATIONAL TRAINING FACILITY
+PEARL CITY PENINSULA, JBPHH, OAHU, HAWAII
+G_CBR  8120-00.GPJ  GEOLABS.GDT  9/14/20
+Final Design Submittal (IFC) - 10/29/2020
+75
+80
+85
+90
+95
+100
+105
+110
+115
+120
+125
+130
+135
+0
+10
+20
+30
+40
+115.5
+12.5
+DRY DENSITY, pcf
+Optimum Moisture Content:
+Sample:
+Depth:
+TEST RESULTS
+MOISTURE CONTENT, %
+Description:
+pcf
+Maximum Dry Density:
+Tannish brown silty sand (SM) with some
+gravel
+B - 19
+3.20
+3.10
+3.00
+2.90
+2.80
+2.70
+2.60
+0.0 - 2.0 feet
+BULK-1
+MOISTURE-DENSITY RELATIONSHIP - ASTM D1557 C
+Test Date:
+August 11, 2020
+Plate
+W.O. 8120-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+FY20 MILCON PROJECT P-463
+SOF UNDERSEA OPERATIONAL TRAINING FACILITY
+PEARL CITY PENINSULA, JBPHH, OAHU, HAWAII
+G_COMPACTION  8120-00.GPJ  GEOLABS.GDT  9/14/20
+Final Design Submittal (IFC) - 10/29/2020
+75
+80
+85
+90
+95
+100
+105
+110
+115
+120
+125
+130
+135
+0
+10
+20
+30
+40
+122.0
+11.0
+DRY DENSITY, pcf
+Optimum Moisture Content:
+Sample:
+Depth:
+TEST RESULTS
+MOISTURE CONTENT, %
+Description:
+pcf
+Maximum Dry Density:
+Tannish brown silty sand (SM) with some
+gravel
+B - 20
+3.20
+3.10
+3.00
+2.90
+2.80
+2.70
+2.60
+0.0 - 2.0 feet
+BULK-2
+MOISTURE-DENSITY RELATIONSHIP - ASTM D1557 C
+Test Date:
+August 11, 2020
+Plate
+W.O. 8120-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+FY20 MILCON PROJECT P-463
+SOF UNDERSEA OPERATIONAL TRAINING FACILITY
+PEARL CITY PENINSULA, JBPHH, OAHU, HAWAII
+G_COMPACTION  8120-00.GPJ  GEOLABS.GDT  9/14/20
+Final Design Submittal (IFC) - 10/29/2020
+B-101
+2.0 - 4.0
+8.18
+330
+660
+180
+B-101
+10.5 - 12.5
+7.41
+66
+5900
+1300
+B-102
+2.0 - 4.0
+8.1
+140
+1100
+190
+B-102
+5.0 - 6.5
+8.02
+90
+2500
+390
+B-103
+2.0 - 3.5
+8.8
+600
+430
+100
+SUMMARY OF CORROSIVITY TESTS
+B - 21
+(ohm-cm)
+(mg/kg)
+(mg/kg)
+SM 2510B
+Minimum Resistivity
+pH Value
+EPA 300.0
+Minimum Resistivity
+ASTM G57
+pH Value
+Method 9045C
+ASTM G51
+TEST METHODS (by TestAmerica Laboratories, Inc.)
+TEST METHODS (by Geolabs, Inc.)*
+pH Value
+Minimum Resistivity Chloride Content
+Sulfate Content
+ND: Not Detected Within Reporting Limits
+Sulfate Content
+EPA 300.0
+Location
+Depth
+(feet)
+Sulfate Content
+N/A
+Chloride Content
+Chloride Content
+N/A
+Plate
+W.O. 8120-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+FY20 MILCON PROJECT P-463
+SOF UNDERSEA OPERATIONAL TRAINING FACILITY
+PEARL CITY PENINSULA, JBPHH, OAHU, HAWAII
+G_SUMMARY_OF_CORROSIVITY_TESTS  8120-00.GPJ  GEOLABS.GDT  9/14/20
+Final Design Submittal (IFC) - 10/29/2020
+APPENDIX C  
+Final Design Submittal (IFC) - 10/29/2020
+FY20 MILCON PROJECT P‐463 
+SOF UNDERSEA OPERATIONAL TRAINING FACILITY 
+PEARL CITY PENINSULA, JBPHH, OAHU, HAWAII  
+W.O. 8120‐00 
+GEOLABS, INC. 
+PLATE C‐1 
+Hawaii • California 
+                                                                                                          B‐101     27.0’ TO 100.5’ 
+                      27.0’ 
+42.5’ 
+52.0’ 
+67.0’ 
+97.0’ 
+                                         40.5’ 
+               50.5’ 
+            65.5’ 
+                        95.5’ 
+                   100.5’ 
+Final Design Submittal (IFC) - 10/29/2020
+FY20 MILCON PROJECT P‐463 
+SOF UNDERSEA OPERATIONAL TRAINING FACILITY 
+PEARL CITY PENINSULA, JBPHH, OAHU, HAWAII  
+W.O. 8120‐00 
+GEOLABS, INC. 
+PLATE C‐2 
+Hawaii • California 
+                                                                                                          B‐102     21.5’ TO 110.0’ 
+                      21.5’ 
+41.5’ 
+58.0’ 
+81.5’ 
+96.5’ 
+                                         35.0’ 
+               58.0’ 
+            80.0’ 
+                        95.0’ 
+                               110.0’ 
+Final Design Submittal (IFC) - 10/29/2020
+FY20 MILCON PROJECT P‐463 
+SOF UNDERSEA OPERATIONAL TRAINING FACILITY 
+PEARL CITY PENINSULA, JBPHH, OAHU, HAWAII  
+W.O. 8120‐00 
+GEOLABS, INC. 
+PLATE C‐3 
+Hawaii • California 
+                                                                                                          B‐103     26.5’ TO 110.0’ 
+26.5’ 
+42.0’ 
+71.5’ 
+86.5’ 
+106.5’ 
+                                          40.0’ 
+               70.0’ 
+            85.0’ 
+                  100.0’ 
+              110.0’ 
+Final Design Submittal (IFC) - 10/29/2020
+APPENDIX D  
+Final Design Submittal (IFC) - 10/29/2020
+2 inches of asphaltic concrete
+Light brown silty coralline sand, loose, with coralline gravel, and
+trace of basaltic sand, moist (fill)
+Yellowish brown clayey coralline gravel, loose, with coralline
+sand, moist (fill)
+(Water level at 1030 hours on 9/20/2018)
+grades dark yellowish brown and saturated
+Dark grayish brown well-graded coralline gravel, very loose, with
+silt and fine basaltic and coralline sand, and shells, saturated
+(lagoonal deposit)
+grades loose
+Dark gray lean clay, very soft to soft, with coralline gravel and
+shells, saturated (lagoonal deposit)
+Light brownish gray clayey coralline sand, medium dense, locally
+weakly cemented, with coralline gravel, and shells, saturated
+(lagoonal deposit)
+Mottled dark yellowish brown and dark gray elastic silt, stiff, with
+coralline gravel, saturated (water-laid tuff)
+Mottled grayish brown, brown, and dark yellowish brown elastic
+silt, very stiff, with coralline sand and gravel, saturated (lagoonal
+deposit)
+20
+62
+55
+30
+40
+94
+67
+63
+96
+83
+AC
+SM
+GC
+GW-GM
+CL
+SC
+MH
+MH
+39
+79
+17
+5
+5
+2
+12
+2
+46
+11
+36
+SURFACE
+Drilling Equipment Mobile B-59
+Drilling Method Rotary Wash
+Logged By F.C. Jr.
+Date Ended 9/21/2018
+Datum Mean Sea Level
+Date Started 9/20/2018
+± feet
+Water Level (depth) 3.5 ft
+Surface Elevation
++4.2
+Description
+BOREHOLE LOG TRUE SCALING - PACIFIC GEOTECHNICAL FINAL DATA TEMPLATE.GDT - 2/19/19 16:23 - J:\0044-001\ENGINEERING\GTGS OR GINT\0044-001 B-LOG_LAB DATA.GPJ
+Lab Data
+Moisture
+Content (%)
+Recovery
+(%)
+Dry
+Density
+(pcf)
+Core Type
+Core Info
+Samples
+Graphic Log
+Soil Class
+RQD (%)
+Plasticity
+Index
+Liquid
+Limit
+Blows/ft
+Depth (ft)
+Drawn By LML
+Job No. 0044-001
+Project SOF P-463 Undersea Operational Training Facility
+Location Pearl City Peninsula, Oahu, Hawaii
+BORING B-1 (Page 1 of 3)
+PLATE
+3.1.1
+Disturbed sample
+Notes:
+2-inch O.D. SPT (split-spoon sample)
+LOG OF BORING
+Sample lost during extraction
+Core run
+2-inch O.D. SPT (split-spoon sample)
+DRIVING ENERGY: 140 lb dropping 30 inches
+3.3-inch O.D. split barrel sample
+4
+8
+12
+16
+20
+24
+28
+Final Design Submittal (IFC) - 10/29/2020
+Dark brown elastic silt, stiff, saturated (water-laid tuff)
+Grayish brown and white fat clay, stiff, with coralline sand and
+gravel, saturated (lagoonal deposit)
+grades grayish brown and yellowish brown, and very soft
+grades light yellowish brown, stiff, and weakly cemented
+Light yellowish brown clayey coralline gravel, medium dense,
+saturated (lagoonal deposit)
+grades loose
+Light yellowish brown lean clay, stiff, with coralline sand and
+gravel, saturated (lagoonal deposit)
+54
+50
+84
+33
+37
+69
+73
+51
+89
+92
+MH
+MH
+CH
+GC
+CL
+37
+63
+30
+15
+1/18"
+12
+28
+16
+Description
+BOREHOLE LOG TRUE SCALING - PACIFIC GEOTECHNICAL FINAL DATA TEMPLATE.GDT - 2/19/19 16:23 - J:\0044-001\ENGINEERING\GTGS OR GINT\0044-001 B-LOG_LAB DATA.GPJ
+Lab Data
+Moisture
+Content (%)
+Recovery
+(%)
+Dry
+Density
+(pcf)
+Core Type
+Core Info
+Samples
+Graphic Log
+Soil Class
+RQD (%)
+Plasticity
+Index
+Liquid
+Limit
+Blows/ft
+Depth (ft)
+Drawn By LML
+Job No. 0044-001
+Project SOF P-463 Undersea Operational Training Facility
+Location Pearl City Peninsula, Oahu, Hawaii
+BORING B-1 (Page 2 of 3)
+PLATE
+3.1.2
+Disturbed sample
+Notes:
+2-inch O.D. SPT (split-spoon sample)
+LOG OF BORING
+Sample lost during extraction
+Core run
+2-inch O.D. SPT (split-spoon sample)
+DRIVING ENERGY: 140 lb dropping 30 inches
+3.3-inch O.D. split barrel sample
+32
+36
+40
+44
+48
+52
+56
+Final Design Submittal (IFC) - 10/29/2020
+grades dark yellowish brown and with completely weathered
+basaltic sand
+Dark brown fat clay, stiff, with trace of shells, saturated
+(alluvium)
+grades mottled dark brown and dark reddish yellow, and
+without shells
+grades very stiff
+grades with completely weathered basaltic sand and trace of
+coralline sand and shells
+Boring completed at 77.5 feet on 9/21/2018.
+29
+45
+45
+43
+96
+78
+78
+80
+CL
+CH
+21
+21
+25
+40
+Description
+BOREHOLE LOG TRUE SCALING - PACIFIC GEOTECHNICAL FINAL DATA TEMPLATE.GDT - 2/19/19 16:23 - J:\0044-001\ENGINEERING\GTGS OR GINT\0044-001 B-LOG_LAB DATA.GPJ
+Lab Data
+Moisture
+Content (%)
+Recovery
+(%)
+Dry
+Density
+(pcf)
+Core Type
+Core Info
+Samples
+Graphic Log
+Soil Class
+RQD (%)
+Plasticity
+Index
+Liquid
+Limit
+Blows/ft
+Depth (ft)
+Drawn By LML
+Job No. 0044-001
+Project SOF P-463 Undersea Operational Training Facility
+Location Pearl City Peninsula, Oahu, Hawaii
+BORING B-1 (Page 3 of 3)
+PLATE
+3.1.3
+Disturbed sample
+Notes:
+2-inch O.D. SPT (split-spoon sample)
+LOG OF BORING
+Sample lost during extraction
+Core run
+2-inch O.D. SPT (split-spoon sample)
+DRIVING ENERGY: 140 lb dropping 30 inches
+3.3-inch O.D. split barrel sample
+60
+64
+68
+72
+76
+Final Design Submittal (IFC) - 10/29/2020
+2 inches of asphaltic concrete
+Light brown silty coralline sand, loose, with coralline gravel,
+moist (fill)
+Brown clayey coralline gravel, medium dense, with coralline
+sand, moist (fill)
+grades loose to medium dense
+(Water level at 0900 hours on 9/17/2018)
+grades yellowish brown, loose, and saturated
+Brown lean clay, very soft to soft, with fine coralline sand and
+coralline gravel, saturated (fill)
+Dark grayish brown silt, soft, with fine basaltic and coralline
+gravel, saturated (fill)
+Dark grayish brown silty coralline gravel, very loose, with fine
+basaltic and coralline sand, and some shells, saturated (lagoonal
+deposit)
+Dark grayish brown clayey coralline gravel, very loose, with
+coralline sand, saturated (lagoonal deposit)
+Dark grayish brown fat clay, very soft to soft, with coralline
+gravel, saturated (lagoonal deposit)
+Mottled brown and light yellowish brown elastic silt, stiff, with
+trace of shells, saturated (water-laid tuff)
+grades dark brown
+18
+23
+51
+38
+104
+107
+63
+86
+AC
+SM
+GC
+CL
+ML
+GM
+GC
+CH
+MH
+31
+10
+14
+3
+7
+2
+5
+2
+18
+SURFACE
+Drilling Equipment Mobile B-59
+Drilling Method Rotary Wash
+Logged By F.C. Jr.
+Date Ended 9/18/2018
+Datum Mean Sea Level
+Date Started 9/17/2018
+± feet
+Water Level (depth) 4.9 ft
+Surface Elevation
++4.9
+Description
+BOREHOLE LOG TRUE SCALING - PACIFIC GEOTECHNICAL FINAL DATA TEMPLATE.GDT - 2/19/19 16:23 - J:\0044-001\ENGINEERING\GTGS OR GINT\0044-001 B-LOG_LAB DATA.GPJ
+Lab Data
+Moisture
+Content (%)
+Recovery
+(%)
+Dry
+Density
+(pcf)
+Core Type
+Core Info
+Samples
+Graphic Log
+Soil Class
+RQD (%)
+Plasticity
+Index
+Liquid
+Limit
+Blows/ft
+Depth (ft)
+Drawn By LML
+Job No. 0044-001
+Project SOF P-463 Undersea Operational Training Facility
+Location Pearl City Peninsula, Oahu, Hawaii
+BORING B-2 (Page 1 of 4)
+PLATE
+3.2.1
+Disturbed sample
+Notes:
+2-inch O.D. SPT (split-spoon sample)
+LOG OF BORING
+Sample lost during extraction
+Core run
+2-inch O.D. SPT (split-spoon sample)
+DRIVING ENERGY: 140 lb dropping 30 inches
+3.3-inch O.D. split barrel sample
+4
+8
+12
+16
+20
+24
+28
+Final Design Submittal (IFC) - 10/29/2020
+grades dark yellowish brown and light grayish brown, and
+locally weakly cemented
+Dark brown and light yellowish brown elastic silt, stiff, with
+coralline gravel, saturated (lagoonal deposit)
+Light grayish brown, dark brown, and yellowish brown fat clay,
+soft to medium stiff, with coralline gravel, saturated (lagoonal
+deposit)
+grades dark yellowish brown and dark brown, and very soft to
+soft
+Yellowish brown clayey coralline gravel, very loose, saturated
+(lagoonal deposit)
+48
+41
+41
+33
+28
+82
+83
+87
+MH
+MH
+CH
+GC
+40
+33
+79
+58
+13
+21
+14
+4
+2
+8
+Description
+BOREHOLE LOG TRUE SCALING - PACIFIC GEOTECHNICAL FINAL DATA TEMPLATE.GDT - 2/19/19 16:23 - J:\0044-001\ENGINEERING\GTGS OR GINT\0044-001 B-LOG_LAB DATA.GPJ
+Lab Data
+Moisture
+Content (%)
+Recovery
+(%)
+Dry
+Density
+(pcf)
+Core Type
+Core Info
+Samples
+Graphic Log
+Soil Class
+RQD (%)
+Plasticity
+Index
+Liquid
+Limit
+Blows/ft
+Depth (ft)
+Drawn By LML
+Job No. 0044-001
+Project SOF P-463 Undersea Operational Training Facility
+Location Pearl City Peninsula, Oahu, Hawaii
+BORING B-2 (Page 2 of 4)
+PLATE
+3.2.2
+Disturbed sample
+Notes:
+2-inch O.D. SPT (split-spoon sample)
+LOG OF BORING
+Sample lost during extraction
+Core run
+2-inch O.D. SPT (split-spoon sample)
+DRIVING ENERGY: 140 lb dropping 30 inches
+3.3-inch O.D. split barrel sample
+32
+36
+40
+44
+48
+52
+56
+Final Design Submittal (IFC) - 10/29/2020
+grades yellowish brown and dark brown, and loose
+Mottled dark brown and dark reddish yellow elastic silt, stiff, with
+seams of decomposed wood, saturated (alluvium)
+grades with trace of shells and without wood
+grades very stiff without shells
+Dark brown fat clay, stiff, with trace of shells, saturated
+(alluvium)
+28
+48
+40
+45
+45
+74
+84
+79
+78
+GC
+MH
+CH
+8
+12
+19
+24
+19
+28
+Description
+BOREHOLE LOG TRUE SCALING - PACIFIC GEOTECHNICAL FINAL DATA TEMPLATE.GDT - 2/19/19 16:23 - J:\0044-001\ENGINEERING\GTGS OR GINT\0044-001 B-LOG_LAB DATA.GPJ
+Lab Data
+Moisture
+Content (%)
+Recovery
+(%)
+Dry
+Density
+(pcf)
+Core Type
+Core Info
+Samples
+Graphic Log
+Soil Class
+RQD (%)
+Plasticity
+Index
+Liquid
+Limit
+Blows/ft
+Depth (ft)
+Drawn By LML
+Job No. 0044-001
+Project SOF P-463 Undersea Operational Training Facility
+Location Pearl City Peninsula, Oahu, Hawaii
+BORING B-2 (Page 3 of 4)
+PLATE
+3.2.3
+Disturbed sample
+Notes:
+2-inch O.D. SPT (split-spoon sample)
+LOG OF BORING
+Sample lost during extraction
+Core run
+2-inch O.D. SPT (split-spoon sample)
+DRIVING ENERGY: 140 lb dropping 30 inches
+3.3-inch O.D. split barrel sample
+60
+64
+68
+72
+76
+80
+84
+88
+Final Design Submittal (IFC) - 10/29/2020
+grades very stiff
+grades with trace of highly weathered, rounded basaltic
+gravel
+grades with increasing shell content and without basaltic
+gravel
+grades stiff to very stiff, and with coralline sand and gravel,
+and shells
+grades very stiff, with trace of shells, and without gravel
+grades mottled dark brown and dark reddish yellow
+grades with trace of highly weathered, rounded basaltic
+gravel and without shells
+Boring completed at 112.5 feet on 9/18/2018.
+44
+32
+41
+41
+37
+79
+92
+82
+81
+87
+CH
+30
+22
+40
+32
+42
+Description
+BOREHOLE LOG TRUE SCALING - PACIFIC GEOTECHNICAL FINAL DATA TEMPLATE.GDT - 2/19/19 16:23 - J:\0044-001\ENGINEERING\GTGS OR GINT\0044-001 B-LOG_LAB DATA.GPJ
+Lab Data
+Moisture
+Content (%)
+Recovery
+(%)
+Dry
+Density
+(pcf)
+Core Type
+Core Info
+Samples
+Graphic Log
+Soil Class
+RQD (%)
+Plasticity
+Index
+Liquid
+Limit
+Blows/ft
+Depth (ft)
+Drawn By LML
+Job No. 0044-001
+Project SOF P-463 Undersea Operational Training Facility
+Location Pearl City Peninsula, Oahu, Hawaii
+BORING B-2 (Page 4 of 4)
+PLATE
+3.2.4
+Disturbed sample
+Notes:
+2-inch O.D. SPT (split-spoon sample)
+LOG OF BORING
+Sample lost during extraction
+Core run
+2-inch O.D. SPT (split-spoon sample)
+DRIVING ENERGY: 140 lb dropping 30 inches
+3.3-inch O.D. split barrel sample
+92
+96
+100
+104
+108
+112
+Final Design Submittal (IFC) - 10/29/2020
+4 inches of asphaltic concrete
+Dark brown silty coralline gravel, loose, with coralline sand and
+some tuffaceous sand and gravel, moist (fill)
+grades medium dense
+(Water level at 0825 hours on 9/19/2018)
+Brown silty coralline sand, very loose, with basaltic gravel,
+tuffaceous sand and gravel, saturated (fill)
+Dark grayish brown silty coralline gravel, very loose, with coralline
+sand and shells, saturated (lagoonal deposit)
+Grayish brown clayey coralline gravel, very loose, with coralline
+sand and shells, saturated (lagoonal deposit)
+Grayish brown clayey coralline sand, very loose, with coralline
+gravel and shells, saturated (lagoonal deposit)
+Mottled grayish brown and dark yellowish brown fat clay, hard,
+weakly cemented, with completely weathered tuffaceous sand and
+trace of shells, saturated (water-laid tuff)
+27
+26
+49
+32
+95
+102
+73
+AC
+GM
+SM
+GM
+GC
+SC
+CH
+22
+16
+3
+2
+5
+1/18"
+6
+4
+59
+Datum Mean Sea Level
+Date Started 9/19/2018
+± feet
+Drilling Equipment Mobile B-59
+Date Ended 9/19/2018
+Drilling Method Rotary Wash
+Logged By F.C. Jr.
+Water Level (depth) 3.9 ft
+Surface Elevation
++4.1
+SURFACE
+Description
+B.H. LOG TRUE SCALING LL PI - PACIFIC GEOTECHNICAL FINAL DATA TEMPLATE.GDT - 2/4/19 18:26 - J:\0044-001\ENGINEERING\GTGS OR GINT\0044-001 B-LOG_LAB DATA.GPJ
+Drawn By LML
+Job No. 0044-001
+Project SOF P-463 Undersea Operational Training Facility
+Location Pearl City Peninsula, Oahu, Hawaii
+BORING B-3 (Page 1 of 3)
+PLATE
+3.3.1
+Disturbed sample
+Notes:
+2-inch O.D. SPT (split-spoon sample)
+LOG OF BORING
+Lab Data
+Moisture
+Content (%)
+Recovery
+(%)
+Dry
+Density
+(pcf)
+Core Type
+Core Info
+Samples
+Graphic Log
+Soil Class
+RQD (%)
+Plasticity
+Index
+Liquid
+Limit
+Blows/ft
+Depth (ft)
+Sample lost during extraction
+Core run
+2-inch O.D. SPT (split-spoon sample)
+DRIVING ENERGY: 140 lb dropping 30 inches
+3.3-inch O.D. split barrel sample
+4
+8
+12
+16
+20
+24
+28
+Final Design Submittal (IFC) - 10/29/2020
+grades mottled dark brown and black
+grades mottled grayish brown and dark yellowish brown
+grades very stiff and locally weakly cemented
+grades with coralline gravel
+Light yellowish brown clayey coralline gravel, loose, with coralline
+sand, saturated (lagoonal deposit)
+grades brown and yellowish brown
+grades light yellowish brown to light brownish gray and medium
+dense
+37
+43
+32
+32
+79
+91
+90
+CH
+GC
+34
+64
+18
+16
+12
+14
+24
+11
+Description
+B.H. LOG TRUE SCALING LL PI - PACIFIC GEOTECHNICAL FINAL DATA TEMPLATE.GDT - 2/4/19 18:26 - J:\0044-001\ENGINEERING\GTGS OR GINT\0044-001 B-LOG_LAB DATA.GPJ
+Drawn By LML
+Job No. 0044-001
+Project SOF P-463 Undersea Operational Training Facility
+Location Pearl City Peninsula, Oahu, Hawaii
+BORING B-3 (Page 2 of 3)
+PLATE
+3.3.2
+Disturbed sample
+Notes:
+2-inch O.D. SPT (split-spoon sample)
+LOG OF BORING
+Lab Data
+Moisture
+Content (%)
+Recovery
+(%)
+Dry
+Density
+(pcf)
+Core Type
+Core Info
+Samples
+Graphic Log
+Soil Class
+RQD (%)
+Plasticity
+Index
+Liquid
+Limit
+Blows/ft
+Depth (ft)
+Sample lost during extraction
+Core run
+2-inch O.D. SPT (split-spoon sample)
+DRIVING ENERGY: 140 lb dropping 30 inches
+3.3-inch O.D. split barrel sample
+32
+36
+40
+44
+48
+52
+56
+Final Design Submittal (IFC) - 10/29/2020
+grades yellowish brown
+Mottled dark brown and dark reddish yellow elastic silt, stiff,
+saturated (colluvium)
+grades very stiff
+grades with highly weathered, rounded basaltic gravel and trace
+of shells
+Boring completed at 77.5 feet on 9/19/2018.
+47
+47
+42
+77
+75
+82
+GC
+MH
+21
+11
+23
+36
+Description
+B.H. LOG TRUE SCALING LL PI - PACIFIC GEOTECHNICAL FINAL DATA TEMPLATE.GDT - 2/4/19 18:26 - J:\0044-001\ENGINEERING\GTGS OR GINT\0044-001 B-LOG_LAB DATA.GPJ
+Drawn By LML
+Job No. 0044-001
+Project SOF P-463 Undersea Operational Training Facility
+Location Pearl City Peninsula, Oahu, Hawaii
+BORING B-3 (Page 3 of 3)
+PLATE
+3.3.3
+Disturbed sample
+Notes:
+2-inch O.D. SPT (split-spoon sample)
+LOG OF BORING
+Lab Data
+Moisture
+Content (%)
+Recovery
+(%)
+Dry
+Density
+(pcf)
+Core Type
+Core Info
+Samples
+Graphic Log
+Soil Class
+RQD (%)
+Plasticity
+Index
+Liquid
+Limit
+Blows/ft
+Depth (ft)
+Sample lost during extraction
+Core run
+2-inch O.D. SPT (split-spoon sample)
+DRIVING ENERGY: 140 lb dropping 30 inches
+3.3-inch O.D. split barrel sample
+60
+64
+68
+72
+76
+Final Design Submittal (IFC) - 10/29/2020
+PLATE
+4.1
+Final Design Submittal (IFC) - 10/29/2020
+PLATE
+4.2
+Final Design Submittal (IFC) - 10/29/2020
+0
+10
+20
+30
+40
+50
+60
+70
+80
+90
+100
+110
+120
+130
+0
+20
+40
+60
+80
+100
+120
+140
+160
+180
+CL-ML
+CL or OL
+ML or OL
+MH or OH
+CH or OH
+A-LINE
+ATTERBERG LIMITS
+KEY
+LOCATION
+SAMPLE DEPTH (ft)
+LIQUID LIMIT
+PLASTICITY INDEX
+79
+63
+79
+58
+64
+39
+37
+40
+33
+34
+PLASTICITY INDEX
+LIQUID LIMITS
+26.2
+41.5
+31.0
+46.0
+31.0
+B-1
+B-1
+B-2
+B-2
+B-3
+JOB NUMBER    0044-001
+DATE    2/4/2019
+PLATE  5.1
+DRAWN BY    LML
+PROJECT    SOF P-463 Undersea Operational Training Facility
+LOCATION    Pearl City Peninsula, Oahu, Hawaii
+PACIFIC GEOTECHNICAL - ATTERBERG LIMITS - PACIFIC GEOTECHNICAL FINAL DATA TEMPLATE.GDT - 2/4/19 18:30 - J:\0044-001\ENGINEERING\GTGS OR GINT\0044-001 B-LOG_LAB DATA.GPJ
+Final Design Submittal (IFC) - 10/29/2020
+0
+10
+20
+30
+40
+50
+60
+70
+80
+90
+100
+0.001
+0.01
+0.1
+1
+10
+100
+NAT. WC
+LL
+PL
+PI
+20
+DEPTH (ft)
+60
+100
+10 14 16
+140
+1/2 3/8
+40
+B-1
+B-1
+B-1
+9.2
+19.2
+51.2
+GW-GM
+SC
+GC
+3
+2
+1.5
+U.S. STANDARD SIEVE OPENING IN INCHES
+4
+medium
+fine
+PERCENT FINER BY WEIGHT
+6
+GRAIN SIZE IN MILLIMETERS
+CLASSIFICATION
+3
+4
+8
+6
+200
+HYDROMETER
+SYMBOL
+U.S. STANDARD SIEVE SIZES
+COBBLES
+GRAVEL
+SAND
+SILT OR CLAY
+fine
+coarse
+Dark grayish brown well-graded coralline gravel with silt
+and fine basaltic and coralline sand
+Light brownish gray clayey coralline sand with coralline
+gravel
+Light yellowish brown clayey coralline gravel
+50
+LOCATION
+30
+1
+coarse
+55
+33
+37
+3/4
+GRADATION CURVE
+JOB NUMBER    0044-001
+DATE    2/4/2019
+PLATE  6.1
+DRAWN BY    LML
+PROJECT    SOF P-463 Undersea Operational Training Facility
+LOCATION    Pearl City Peninsula, Oahu, Hawaii
+PACIFIC GEOTECHNICAL - GRAIN SIZE - PACIFIC GEOTECHNICAL FINAL DATA TEMPLATE.GDT - 2/4/19 18:31 - J:\0044-001\ENGINEERING\GTGS OR GINT\0044-001 B-LOG_LAB DATA.GPJFinal Design Submittal (IFC) - 10/29/2020
+0
+10
+20
+30
+40
+50
+60
+70
+80
+90
+100
+0.001
+0.01
+0.1
+1
+10
+100
+NAT. WC
+LL
+PL
+PI
+20
+DEPTH (ft)
+60
+100
+10 14 16
+140
+1/2 3/8
+40
+B-2
+B-2
+B-3
+19.2
+56.2
+5.7
+GC
+GC
+SM
+3
+2
+1.5
+U.S. STANDARD SIEVE OPENING IN INCHES
+4
+medium
+fine
+PERCENT FINER BY WEIGHT
+6
+GRAIN SIZE IN MILLIMETERS
+CLASSIFICATION
+3
+4
+8
+6
+200
+HYDROMETER
+SYMBOL
+U.S. STANDARD SIEVE SIZES
+COBBLES
+GRAVEL
+SAND
+SILT OR CLAY
+fine
+coarse
+Dark grayish brown clayey coralline gravel with coralline
+sand
+Yellowish brown clayey coralline gravel
+Brown silty coralline sand with basaltic gravel and
+tuffaceous sand and gravel
+50
+LOCATION
+30
+1
+coarse
+53
+27
+28
+3/4
+GRADATION CURVE
+JOB NUMBER    0044-001
+DATE    2/4/2019
+PLATE  6.2
+DRAWN BY    LML
+PROJECT    SOF P-463 Undersea Operational Training Facility
+LOCATION    Pearl City Peninsula, Oahu, Hawaii
+PACIFIC GEOTECHNICAL - GRAIN SIZE - PACIFIC GEOTECHNICAL FINAL DATA TEMPLATE.GDT - 2/4/19 18:31 - J:\0044-001\ENGINEERING\GTGS OR GINT\0044-001 B-LOG_LAB DATA.GPJFinal Design Submittal (IFC) - 10/29/2020
+0
+10
+20
+30
+40
+50
+60
+70
+80
+90
+100
+0.001
+0.01
+0.1
+1
+10
+100
+NAT. WC
+LL
+PL
+PI
+20
+DEPTH (ft)
+60
+100
+10 14 16
+140
+1/2 3/8
+40
+B-3
+B-3
+B-4
+19.2
+41.2
+16.2
+GC
+GC
+GM
+3
+2
+1.5
+U.S. STANDARD SIEVE OPENING IN INCHES
+4
+medium
+fine
+PERCENT FINER BY WEIGHT
+6
+GRAIN SIZE IN MILLIMETERS
+CLASSIFICATION
+3
+4
+8
+6
+200
+HYDROMETER
+SYMBOL
+U.S. STANDARD SIEVE SIZES
+COBBLES
+GRAVEL
+SAND
+SILT OR CLAY
+fine
+coarse
+Grayish brown clayey coralline gravel with coralline sand
+Light yellowish brown clayey coralline gravel with coralline
+sand
+Dark yellowish brown silty coralline gravel with coralline
+sand
+50
+LOCATION
+30
+1
+coarse
+51
+31
+24
+3/4
+GRADATION CURVE
+JOB NUMBER    0044-001
+DATE    2/4/2019
+PLATE  6.3
+DRAWN BY    LML
+PROJECT    SOF P-463 Undersea Operational Training Facility
+LOCATION    Pearl City Peninsula, Oahu, Hawaii
+PACIFIC GEOTECHNICAL - GRAIN SIZE - PACIFIC GEOTECHNICAL FINAL DATA TEMPLATE.GDT - 2/4/19 18:31 - J:\0044-001\ENGINEERING\GTGS OR GINT\0044-001 B-LOG_LAB DATA.GPJFinal Design Submittal (IFC) - 10/29/2020
+PGE Job No.:
+0044-001
+PGE Job Name:
+Location: JBPHH, HI
+Boring No.:
+B - 1
+Depth (feet): 66.6
+Soil Description:
+Mottled dark brown and dark reddish yellow fat clay (CH)
+Sample 
+Height 
+(in)
+Moisture 
+Content 
+(%)
+Dry 
+Density 
+(pcf)
+Confining 
+Pressure 
+(psf)
+Axial 
+Strain 
+Rate 
+(%/min)
+Shear 
+Strength at 
+Failure 
+(psf)
+5.67
+44.5
+77.7
+1,000
+0.3
+1,735
+UNCONSOLIDATED UNDRAINED TRIAXIAL (TX/UU)
+COMPRESSION TEST RESULTS
+PLATE 
+7.1      
+Axial 
+Strain at 
+Failure     
+(%)
+15
+ASTM D2850
+Sample 
+Diameter 
+(in)
+2.42
+Undersea Operational Training Facility
+0
+500
+1,000
+1,500
+2,000
+2,500
+3,000
+3,500
+4,000
+0
+2
+4
+6
+8
+10
+12
+14
+16
+Deviator Stress (psf)
+Axial Strain (%)
+Pacific Geotechnical
+Engineers, Inc.
+Final Design Submittal (IFC) - 10/29/2020
+PGE Job No.:
+0044-001
+PGE Job Name:
+Location: JBPHH, HI
+Boring No.:
+B - 2
+Depth (feet): 71.2
+Soil Description:
+Mottled dark brown and dark reddish yellow elastic silt (MH)
+Sample 
+Height 
+(in)
+Moisture 
+Content 
+(%)
+Dry 
+Density 
+(pcf)
+Confining 
+Pressure 
+(psf)
+Axial 
+Strain 
+Rate 
+(%/min)
+Shear 
+Strength at 
+Failure 
+(psf)
+5.72
+48.2
+74.3
+800
+0.3
+1,040
+UNCONSOLIDATED UNDRAINED TRIAXIAL (TX/UU)
+COMPRESSION TEST RESULTS
+PLATE 
+7.2      
+Axial 
+Strain at 
+Failure     
+(%)
+12.3
+ASTM D2850
+Sample 
+Diameter 
+(in)
+2.42
+Undersea Operational Training Facility
+0
+500
+1,000
+1,500
+2,000
+2,500
+0
+2
+4
+6
+8
+10
+12
+14
+16
+Deviator Stress (psf)
+Axial Strain (%)
+Pacific Geotechnical
+Engineers, Inc.
+Final Design Submittal (IFC) - 10/29/2020
+PGE Job No.:
+0044-001
+PGE Job Name:
+Location: JBPHH, HI
+Boring No.:
+B - 2
+Depth (feet): 96.7
+Soil Description:
+Dark brown fat clay (CH)
+Sample 
+Height 
+(in)
+Moisture 
+Content 
+(%)
+Dry 
+Density 
+(pcf)
+Confining 
+Pressure 
+(psf)
+Axial 
+Strain 
+Rate 
+(%/min)
+Shear 
+Strength at 
+Failure 
+(psf)
+5.74
+31.6
+91.8
+1,200
+0.3
+1,370
+UNCONSOLIDATED UNDRAINED TRIAXIAL (TX/UU)
+COMPRESSION TEST RESULTS
+PLATE 
+7.3      
+Axial 
+Strain at 
+Failure     
+(%)
+15
+ASTM D2850
+Sample 
+Diameter 
+(in)
+2.42
+Undersea Operational Training Facility
+0
+500
+1,000
+1,500
+2,000
+2,500
+3,000
+0
+2
+4
+6
+8
+10
+12
+14
+16
+Deviator Stress (psf)
+Axial Strain (%)
+Pacific Geotechnical
+Engineers, Inc.
+Final Design Submittal (IFC) - 10/29/2020
+PGE Job No.:
+0044-001
+PGE Job Name:
+Location: JBPHH, HI
+Boring No.:
+B - 3
+Depth (feet): 46.2
+Soil Description:
+Brown and yellowish brown clayey coralline gravel (GC)
+Sample 
+Height 
+(in)
+Moisture 
+Content 
+(%)
+Dry 
+Density 
+(pcf)
+Confining 
+Pressure 
+(psf)
+Axial 
+Strain 
+Rate 
+(%/min)
+Shear 
+Strength at 
+Failure 
+(psf)
+5.82
+31.9
+89.7
+500
+0.3
+1,125
+UNCONSOLIDATED UNDRAINED TRIAXIAL (TX/UU)
+COMPRESSION TEST RESULTS
+PLATE 
+7.4      
+Axial 
+Strain at 
+Failure     
+(%)
+10
+ASTM D2850
+Sample 
+Diameter 
+(in)
+2.42
+Undersea Operational Training Facility
+0
+500
+1,000
+1,500
+2,000
+2,500
+3,000
+0
+2
+4
+6
+8
+10
+12
+14
+16
+Deviator Stress (psf)
+Axial Strain (%)
+Pacific Geotechnical
+Engineers, Inc.
+Final Design Submittal (IFC) - 10/29/2020
+FY20 SOF P-463 
+PGE Job No. 0044-001 
+Pacific Geotechnical
+Engineers, Inc.
+TABLE 1 
+UNCONSOLIDATED UNDRAINED TRIAXIAL COMPRESSION TEST 
+Boring 
+No. 
+Depth 
+(feet) 
+Soil 
+Type 
+Moisture 
+Content 
+(%) 
+Dry 
+Density 
+(pcf)  
+Confining 
+Pressure 
+(psf) 
+Shear 
+Strength 
+at Failure 
+(psf) 
+Axial 
+Strain at 
+Failure 
+(%) 
+B-1 
+66.6 
+CH 
+44.5 
+77.7 
+1,000 
+1,735 
+15.0 
+B-2 
+71.2 
+MH 
+48.2 
+74.3 
+800 
+1,040 
+12.3 
+B-2 
+96.7 
+CH 
+31.6 
+91.8 
+1,200 
+1,370 
+15.0 
+B-3 
+46.2 
+GC 
+31.9 
+89.7 
+500 
+1,125 
+10.0 
+B-4 
+61.2 
+MH 
+67.8 
+59.8 
+700 
+1,585 
+15.0 
+TABLE 2 
+UNCONFINED COMPRESSIVE STRENGTH TEST (SOIL) 
+Boring  
+No. 
+Depth 
+(feet) 
+Unified Soil  
+Classification 
+Moisture 
+Content 
+(%) 
+Dry 
+Density 
+(psf) 
+Shear 
+Strength 
+at failure 
+(psf) 
+Axial 
+Strain at 
+Failure 
+(%) 
+B-1 
+76.7 
+CH 
+43.1 
+79.5 
+1,545 
+15.0 
+B-2 
+86.7 
+CH 
+44.6 
+77.6 
+1,380 
+15.0 
+B-2 
+106.5 
+CH 
+41.2 
+80.9 
+1,855 
+15.0 
+B-3 
+71.2 
+MH 
+47.1 
+74.8 
+1,290 
+7.5 
+B-4 
+36.6 
+CH 
+40.5 
+81.9 
+3,010 
+12.0 
+B-4 
+66.7 
+MH 
+45.3 
+76.1 
+1,435 
+3.2 
+Final Design Submittal (IFC) - 10/29/2020

@@ -16,6 +16,7 @@ import DBAdmin from './components/DBAdmin';
 import DBViewer from './components/DBViewer';
 import S3Admin from './components/S3Admin';
 import S3Viewer from './components/S3Viewer';
+import RagCore from './components/RagCore';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/ask-ai" element={<AskAI />} />
             <Route path="/reports" element={<Reports />} />
+            <Route path="/rag-core" element={<RagCore />} />
             <Route path="/reports-binder" element={<ReportsBinder />} />
             <Route path="/core-box-inventory" element={<CoreBoxInventory />} />
             <Route path="/ocr-lookup" element={<OCRLookup />} />
@@ -38,6 +40,7 @@ function App() {
             <Route path="/db-viewer" element={<DBViewer />} />
             <Route path="/s3-admin" element={<S3Admin />} />
             <Route path="/s3-viewer" element={<S3Viewer />} />
+            
           </Routes>
         </main>
       </div>

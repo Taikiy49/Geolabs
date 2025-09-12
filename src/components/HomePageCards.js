@@ -143,6 +143,13 @@ const homepageCards = [
         path: "/reports-binder",
         description:
           "Browse & edit rows from OCR (WO, initials, billing, dates) and export CSV."
+      },
+      {
+        name: "Retrieval-Augmented Generation",
+        icon: <FaTable />,
+        path: "/rag-core",
+        description:
+          "Browse & edit rows from OCR (WO, initials, billing, dates) and export CSV."
       }
     ]
   },

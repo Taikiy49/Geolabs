@@ -1,0 +1,484 @@
+GEOLABS INC
+Geotechnical Engineering and Drilling Services
+2006 Kalihi Street Honolulu Hawaii 96819
+Hawaii California
+May 2 2011
+W O 6195 00
+Ms Sarie Uechi
+Hawaiian Electric Company Inc
+P O Box 2750
+Honolulu HI 96840
+GEOTECHNICAL ENGINEERING SERVICES
+NEW HECO POLE AT H 1 PALAILAI INTERCHANGE TO MAKAKILO
+Dear Ms Uechi
+In accordance with our fee proposal dated we present our
+geotechnical engineering recommendations for the project design The findings and
+recommendations presented herein are subject to the limitations noted at the end of this
+letter report
+PROJECT CONSIDERATIONS
+The project site is in the vicinity of the H 1 Palailai Interchange to Makakilo
+Interchange near the Wet n Wild Hawaii in the Kapolei area on the Island of Oahu A steel
+pole is being considered to replace the existing wooden pole Based on the information
+provided by the project structural engineer the new electric pole will be subject to the
+following loading combinations at the top of the pole foundation
+Case
+Axial
+Shear
+Moment
+kips
+kips
+kip ft
+Case I
+11 6
+39 4
+1639 9
+Case II
+11 8
+35 4
+1480 2
+PURPOSE AND SCOPE
+The purpose of our services was to provide an overview of the subsurface
+conditions at the site based on previous exploration to develop a soil rock data set to
+assess the feasibility of the project from a geotechnical engineering standpoint
+HECO
+Page 2
+W O 6195 00
+May 2 2011
+GEOLABS INC
+Hawaii California
+SUBSURFACE CONDITIONS
+Our previous field exploration disclosed that the site is underlain by dense to very
+dense silty gravel fill material extending to about 2 5 feet below the existing ground
+surface Alluvium consisting of stiff clay was encountered below the fill layer extending to
+a depth of about 15 feet below the existing ground surface Below the stiff clay our borings
+encountered very dense silty sand extending a depth of about 20 feet below the existing
+ground surface The silty sand was underlain by very stiff clayey silt extending to the
+maximum depth drilled of about 26 5 feet below the existing ground surface
+We did not encounter groundwater at the time of our field exploration However it
+should be noted that groundwater levels may vary due to seasonal precipitation and other
+factors
+FINDINGS AND RECOMMENDATIONS
+Based on the information provided a new electric pole will be installed to replace
+the existing wooden pole at the project site Based on the loading conditions provided by
+the project structural engineer and subsurface soil conditions encountered during our
+previous field exploration we recommend supporting the new electric pole on a single
+cast in place drilled shaft foundation Detailed discussions and recommendations for
+foundation designs are presented in the following sections
+Drilled Shaft Foundations
+Based on the information provided a drilled shaft diameter of 60 inches was
+considered in our foundation analyses for the single shaft foundations The primary
+geotechnical considerations in our foundation analyses included the lateral loads and
+ground line moments demands on the drilled shaft foundations
+In general lateral load resistance of drilled shafts is a function of the stiffness of the
+surrounding soil the stiffness of the shaft allowable deflection at the top of the shaft and
+induced moment in the shaft Based on a maximum allowed horizontal deflection of
+0 5 inches at the top of the drilled shaft subjected to ground line overturning moments and
+lateral forces we have evaluated the required drilled shaft lengths using the computer
+program LPILE Plus for Windows The results of our engineering analyses are
+summarized in the following table
+FOUNDATION ANALYSES FOR
+5 FOOT DIAMETER DRILLED SHAFT
+Case
+Shaft
+Length
+Axial
+Shear
+Moment
+Maximum
+Horizontal
+Deflection
+Maximum
+Moment
+Depth to Max
+Moment
+ft
+kips
+kips
+kip ft
+inches
+kip ft
+feet
+I
+25
+11 6
+39 4
+1639 9
+0 47
+296 8
+4 8
+II
+24
+11 8
+35 4
+1480 2
+0 44
+296 8
+4 5
+HECO
+Page 3
+W O 6195 00
+May 2 2011
+GEOLABS INC
+Hawaii California
+CONSTRUCTION CONSIDERATIONS
+Drilled shafts are desirable for the light pole foundations because of the significant
+increase in lateral and uplift load capacities when compared to shallow foundations
+However the performance of the drilled shafts will depend significantly upon the
+contractor s method of construction and construction procedures The construction
+workmanship has a substantial effect on the effectiveness and cost of the drilled shaft
+foundations
+The load bearing capacities of drilled shafts depend to a large extent on the
+contact between the drilled shafts and the surrounding soils Therefore proper
+construction techniques are important The contractor should exercise care in drilling the
+shaft holes and placing concrete into the holes Drilling by methods utilizing drilling fluids
+is not recommended
+During concrete placement a minimum of 5 feet of concrete head should be
+maintained above the bottom of the tremie pipe A low shrink high slump 7 to 9 inch
+slump range concrete mix should be used to provide close contact between the drilled
+shafts and the surrounding soils The concrete should be placed promptly after drilling to
+reduce the potential for softening and caving in of the sides of the drilled holes A Geolabs
+representative should be present to observe the drilled shaft installation during
+construction to confirm the subsoil conditions and embedment depths
+LIMITATIONS
+The analyses and recommendations submitted herein are based in part upon
+information obtained from the previous field borings Variations of subsurface conditions
+between and beyond the borings may occur and the nature and extent of these variations
+may not become evident until construction is underway If variations then appear evident it
+will be necessary to re evaluate the recommendations provided
+This report has been prepared for the exclusive use of HECO and other project
+consultants for specific application to the New HECO Pole at H 1 Palailai Interchange to
+Makakilo project in accordance with generally accepted geotechnical engineering
+principles and practices No warranty is expressed or implied
+This report has been prepared solely for the purpose of assisting the engineer in
+the project design Therefore this report may not contain sufficient data or the proper
+information to serve as the basis for construction cost estimates A contractor wishing to
+bid on this project is urged to retain a competent geotechnical engineer to assist in the
+interpretation of this report and or in the performance of additional site specific exploration
+for bid estimating purposes
+The owner client should be aware that unanticipated soil rock conditions are
+commonly encountered Unforeseen soil conditions such as perched groundwater soft
+deposits hard layers or cavities may occur in localized areas and may require additional
+probing or corrections in the field which may result in construction delays to attain a
+properly constructed project Therefore a sufficient contingency fund is recommended to
+accommodate these possible extra costs
+HECO Page 4
+W O 6195 00
+May 2 2011
+CLOSURE
+We appreciate the opportunity to provide our services to you on this project If you
+have questions or need additional information please contact our office
+Respectfully submitted
+GEOLABS INC LICENSED
+PROFESSIONAL
+ENGINEER
+No 4176 C
+President THIS WORK WAS PREPARED BY
+ME OR UNDER MY SUPERVISION
+EXPIRATION DATE
+OF THE LICENSE
+Attachment Analysis of Individual Piles and Drilled Shafts 12 Sheets
+6 Copies to Addressee
+GEOLABS INC
+Hawaii e California
+APPENDIX
+LATERAL LOAD ANALYSIS RESULTS
+LPILE Plus for Windows Version 0 39
+Analysis of Individual Piles and Drilled Shafts
+Subjected to Lateral Loading Using the p y Method
+c 1985 2007 by Ensoft Inc
+All Rights Reserved
+This program is licensed to
+TIM LIN
+GEOLABS INC
+Name of input data file Kapolei light pole Case I 25 lpd
+Name of output file Kapolei light pole Case I 25 lpo
+Name of plot output file Kapolei light pole Case I 25 lpp
+Name of runtime file Kapolei light pole Case I 25 lpr
+Time and Date of Analysis
+Date Time
+Problem Title
+Kapolei Light Pole Foundation Drilled Shaft Case I
+Program Options
+Units Used in Computations US Customary Units Inches Pounds
+Basic Program Options
+Analysis Type 1
+Computation of Lateral Pile Response Using User specified Constant EI
+Computation Options
+Only internally generated p y curves used in analysis
+Analysis does not use p y multipliers individual pile or shaft action only
+Analysis assumes no shear resistance at pile tip
+Analysis for fixed length pile or shaft only
+No computation of foundation stiffness matrix elements
+Output pile response for full length of pile
+Analysis assumes no soil movements acting on pile
+No additional p y curves to be computed at user specified depths
+Solution Control Parameters
+Number of pile increments 100
+Maximum number of iterations allowed 100
+Deflection tolerance for convergence in
+Maximum allowable deflection in
+CASE I 25 Feet
+Printing Options
+Values of pile head deflection bending moment shear force and
+soil reaction are printed for full length of pile
+Printing Increment spacing of output points 1
+Pile Structural Properties and Geometry
+Pile Length 300 00 in
+Depth of ground surface below top of pile 00 in
+Slope angle of ground surface 00 deg
+Structural properties of pile defined using 2 points
+Point Depth Pile Moment of Pile Modulus of
+X Diameter Inertia Area Elasticity
+Soil and Rock Layering Information
+The soil profile is modelled using 4 layers
+Layer 1 is sand p y criteria by Reese et al 1974
+Distance from top of pile to top of layer 000 in
+Distance from top of pile to bottom of layer 30 000 in
+Layer 2 is stiff clay without free water
+Distance from top of pile to top of layer 30 000 in
+Distance from top of pile to bottom of layer 180 000 in
+Layer 3 is sand p y criteria by Reese et al 1974
+Distance from top of pile to top of layer 180 000 in
+Distance from top of pile to bottom of layer 240 000 in
+Layer 4 is stiff clay without free water
+Distance from top of pile to top of layer 240 000 in
+Distance from top of pile to bottom of layer 600 000 in
+Depth of lowest layer extends 300 00 in below pile tip
+Effective Unit Weight of Soil vs Depth
+Effective unit weight of soil with depth defined using 8 points
+Point Depth X Eff Unit Weight
+No in lbs in 3
+CASE I 25 Feet
+06366
+06076
+06076
+06366
+06366
+06655
+06655
+Shear Strength of Soils
+Shear strength parameters with depth defined using 8 points
+Point Depth X Cohesion c Angle of Friction E50 or RQD
+No in lbs in
+40 00
+00500 0
+00500 0
+00200 0
+00200 0
+Notes
+1 Cohesion uniaxial compressive strength for rock materials
+2 Values of E50 are reported for clay strata
+3 Default values will be generated for E50 when input values are 0
+4 RQD and k_rm are reported only for weak rock strata
+Loading Type
+Static loading criteria was used for computation of p y curves
+Pile head Loading and Pile head Fixity Conditions
+Number of loads specified 1
+Load Case Number 1
+Pile head boundary conditions are Shear and Moment BC Type 1
+Shear force at pile head
+Bending moment at pile head 19679000 000 in lbs
+Axial load at pile head
+Non zero moment at pile head for this load case indicates the pile head
+may rotate under the applied pile head loading but is not a free head
+zero moment condition
+CASE I 25 Feet
+Computed Values of Load Distribution and Deflection
+for Lateral Loading for Load Case Number 1
+Pile head boundary conditions are Shear and Moment BC Type 1
+Specified shear force at pile head
+Specified moment at pile head 19679000 000 in lbs
+Specified axial load at pile head
+Non zero moment for this load case indicates the pile head may rotate under
+the applied pile head loading but is not a free head zero moment condition
+Depth Deflect Moment Shear Slope Total Soil Res Es h
+X y M V S Stress p F L
+CASE I 25 Feet
+8655 100070
+9863 102095
+9704 104120
+8144 106145
+4903 108170
+9574 110195
+6060 112220
+9840 410353
+8151 342954
+8786 297661
+3728 264900
+3822 239976
+8973 220307
+2825 204343
+5160 191098
+3244 179910
+Output Verification
+Computed forces and moments are within specified convergence limits
+Output Summary for Load Case No 1
+Pile head deflection 46638598 in
+Computed slope at pile head 00301050
+Maximum bending moment 21063520 lbs in
+Maximum shear force
+Depth of maximum bending moment 57 00000000 in
+Depth of maximum shear force 228 00000 in
+CASE I 25 Feet
+Number of iterations 34
+Number of zero deflection points 1
+Summary of Pile Response s
+Definition of Symbols for Pile Head Loading Conditions
+Type 1 Shear and Moment y pile head displacment in
+Type 2 Shear and Slope M Pile head Moment lbs in
+Type 3 Shear and Rot Stiffness V Pile head Shear Force lbs
+Type 4 Deflection and Moment S Pile head Slope radians
+Type 5 Deflection and Slope R Rot Stiffness of Pile head in lbs rad
+Load Pile Head Pile Head Axial Pile Head Maximum Maximum
+Type Condition Condition Load Deflection Moment Shear
+in in lbs lbs
+The analysis ended normally
+CASE I 25 Feet
+LPILE Plus for Windows Version 0 39
+Analysis of Individual Piles and Drilled Shafts
+Subjected to Lateral Loading Using the p y Method
+c 1985 2007 by Ensoft Inc
+All Rights Reserved
+This program is licensed to
+TIM LIN
+GEOLABS INC
+Name of input data file Kapolei light pole Case
+Name of output file Kapolei light pole Case
+Name of plot output file Kapolei light pole Case
+Name of runtime file Kapolei light pole Case
+Time and Date of Analysis
+Date Time
+Problem Title
+Kapolei Light Pole Foundation Drilled Shaft Case II
+Program Options
+Units Used in Computations US Customary Units Inches Pounds
+Basic Program Options
+Analysis Type 1
+Computation of Lateral Pile Response Using User specified Constant EI
+Computation Options
+Only internally generated p y curves used in analysis
+Analysis does not use p y multipliers individual pile or shaft action only
+Analysis assumes no shear resistance at pile tip
+Analysis for fixed length pile or shaft only
+No computation of foundation stiffness matrix elements
+Output pile response for full length of pile
+Analysis assumes no soil movements acting on pile
+No additional p y curves to be computed at user specified depths
+Solution Control Parameters
+Number of pile increments 96
+Maximum number of iterations allowed 100
+Deflection tolerance for convergence in
+Maximum allowable deflection in
+CASE II 24 Feet
+Printing Options
+Values of pile head deflection bending moment shear force and
+soil reaction are printed for full length of pile
+Printing Increment spacing of output points 1
+Pile Structural Properties and Geometry
+Pile Length 288 00 in
+Depth of ground surface below top of pile 00 in
+Slope angle of ground surface 00 deg
+Structural properties of pile defined using 2 points
+Point Depth Pile Moment of Pile Modulus of
+X Diameter Inertia Area Elasticity
+Soil and Rock Layering Information
+The soil profile is modelled using 4 layers
+Layer 1 is sand p y criteria by Reese et al 1974
+Distance from top of pile to top of layer 000 in
+Distance from top of pile to bottom of layer 30 000 in
+Layer 2 is stiff clay without free water
+Distance from top of pile to top of layer 30 000 in
+Distance from top of pile to bottom of layer 180 000 in
+Layer 3 is sand p y criteria by Reese et al 1974
+Distance from top of pile to top of layer 180 000 in
+Distance from top of pile to bottom of layer 240 000 in
+Layer 4 is stiff clay without free water
+Distance from top of pile to top of layer 240 000 in
+Distance from top of pile to bottom of layer 600 000 in
+Depth of lowest layer extends 312 00 in below pile tip
+Effective Unit Weight of Soil vs Depth
+Effective unit weight of soil with depth defined using 8 points
+Point Depth X Eff Unit Weight
+No in lbs in 3
+CASE II 24 Feet
+06366
+06076
+06076
+06366
+06366
+06655
+06655
+Shear Strength of Soils
+Shear strength parameters with depth defined using 8 points
+Point Depth X Cohesion c Angle of Friction E50 or RQD
+No in lbs in
+40 00
+00500 0
+00500 0
+00200 0
+00200 0
+Notes
+1 Cohesion uniaxial compressive strength for rock materials
+2 Values of E50 are reported for clay strata
+3 Default values will be generated for E50 when input values are 0
+4 RQD and k_rm are reported only for weak rock strata
+Loading Type
+Static loading criteria was used for computation of p y curves
+Pile head Loading and Pile head Fixity Conditions
+Number of loads specified 1
+Load Case Number 1
+Pile head boundary conditions are Shear and Moment BC Type 1
+Shear force at pile head
+Bending moment at pile head 17762000 000 in lbs
+Axial load at pile head
+Non zero moment at pile head for this load case indicates the pile head
+may rotate under the applied pile head loading but is not a free head
+zero moment condition
+CASE II 24 Feet
+Computed Values of Load Distribution and Deflection
+for Lateral Loading for Load Case Number 1
+Pile head boundary conditions are Shear and Moment BC Type 1
+Specified shear force at pile head
+Specified moment at pile head 17762000 000 in lbs
+Specified axial load at pile head
+Non zero moment for this load case indicates the pile head may rotate under
+the applied pile head loading but is not a free head zero moment condition
+Depth Deflect Moment Shear Slope Total Soil Res Es h
+X y M V S Stress p F L
+CASE II 24 Feet
+7365 100070
+4890 102095
+9570 104120
+1541 106145
+0976 108170
+8092 110195
+3142 112220
+1383 225794
+5263 206568
+4872 191078
+0845 178302
+1005 167563
+Output Verification
+Computed forces and moments are within specified convergence limits
+Output Summary for Load Case No 1
+Pile head deflection 44284504 in
+Computed slope at pile head 00286479
+Maximum bending moment 18930949 lbs in
+Maximum shear force
+Depth of maximum bending moment 54 00000000 in
+Depth of maximum shear force 219 00000 in
+Number of iterations 34
+Number of zero deflection points 1
+CASE II 24 Feet
+Summary of Pile Response s
+Definition of Symbols for Pile Head Loading Conditions
+Type 1 Shear and Moment y pile head displacment in
+Type 2 Shear and Slope M Pile head Moment lbs in
+Type 3 Shear and Rot Stiffness V Pile head Shear Force lbs
+Type 4 Deflection and Moment S Pile head Slope radians
+Type 5 Deflection and Slope R Rot Stiffness of Pile head in lbs rad
+Load Pile Head Pile Head Axial Pile Head Maximum Maximum
+Type Condition Condition Load Deflection Moment Shear
+in in lbs lbs
+The analysis ended normally
+CASE II 24 Feet

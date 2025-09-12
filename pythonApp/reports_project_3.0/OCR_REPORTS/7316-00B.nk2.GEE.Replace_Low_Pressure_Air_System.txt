@@ -1,0 +1,2383 @@
+GEOTECHNICAL ENGINEERING EXPLORATION 
+UMIG FY21 SPECIAL PROJECT RM09-2894 
+AMD 42 – REPLACE LOW PRESSURE AIR SYSTEM AT BUILDING 149 
+JOINT BASE PEARL HARBOR-HICKAM, OAHU, HAWAII 
+W.O. 7316-00(B)     MAY 10, 2021 
+Prepared for 
+MECHANICAL ENTERPRISES INC. 
+GEOLABS, INC. 
+Geotechnical Engineering and Drilling Services 
+GEOTECHNICAL ENGINEERING EXPLORATION
+UMIG FY21 SPECIAL PROJECT RMO09-2894
+AMD 42 — REPLACE LOW PRESSURE AIR SYSTEM AT BUILDING 149
+JOINT BASE PEARL HARBOR-HICKAM, OAHU, HAWAII
+W.O. 7316-00(B) MAY 10, 2021
+Prepared for
+MECHANICAL ENTERPRISES INC.
+LICENSED
+PROFESSIONAL
+ENGINEER
+No. 5635-C
+THIS WORK WAS PREPARED BY
+ME OR UNDER MY SUPERVISION.
+[Mn Va 4-30-22
+SIGNATURE EXPIRATION DATE
+OF THE LICENSE
+GEOLABS, INC.
+Geotechnical Engineering and Drilling Services
+94-429 Koaki Street, Suite 200 ¢ Waipahu, HI 96797
+Hawaii ¢ California
+GEOLABS, INC.
+Geotechnical Engineering and Drilling Services
+May 10, 2021
+W.O. 7316-00(B)
+Mr. Ross Tanaka, P.E.
+Mechanical Enterprises Inc.
+501 Sumner Street, Suite 503
+Honolulu, HI 96817
+Dear Mr. Tanaka:
+Geolabs, Inc. is pleased to submit our report entitled "Geotechnical Engineering
+Exploration, UMIG FY21 Special Project RM09-2894, Amd 42 — Replace Low Pressure
+Air System at Building 149, Joint Base Pearl Harbor-Hickam, Oahu, Hawaii” prepared for
+the design of the project.
+Our work was performed in general accordance with the scope of services outlined
+in our fee proposal dated January 28, 2019.
+Please note that the soil and rock samples collected during our field exploration
+(remaining after testing) will be stored for a period of two months from the date of this
+report. The samples will be discarded after that date unless arrangements are made for
+a longer sample storage period. Please contact our office for alternative sample storage
+requirements, if appropriate.
+Detailed discussion and specific design recommendations are contained in the
+body of this report. If there is any point that is not clear, please contact our office.
+Very truly yours,
+GEOLABS, INC.
+Gerald ¢ Seki, P.E.
+Vice President
+GS:NK:sh
+94-429 Koaki Street, Suite 200 * Waipahu, Hawaii 96797
+Telephone: (808) 841-5064 ° E-mail: hawaii@qgeolabs.net
+Hawaii ¢ California
+W.O. 7316-00(B) 
+GEOLABS, INC. 
+Page i 
+Hawaii • California 
+GEOTECHNICAL ENGINEERING EXPLORATION 
+UMIG FY21 SPECIAL PROJECT RM09-2894 
+AMD 42 – REPLACE LOW PRESSURE AIR SYSTEM AT BUILDING 149 
+JOINT BASE PEARL HARBOR-HICKAM, OAHU, HAWAII 
+W.O. 7316-00(B)     MAY 10, 2021 
+TABLE OF CONTENTS 
+                                                                                                                               Page 
+SUMMARY OF FINDINGS AND RECOMMENDATIONS .............................................. iii 
+1. 
+GENERAL ............................................................................................................ 1 
+1.1 
+Project Considerations ............................................................................... 1 
+1.2 
+Purpose and Scope ................................................................................... 2 
+2. 
+SITE CHARACTERIZATION ................................................................................ 4 
+2.1 
+Regional Geology ...................................................................................... 4 
+2.2 
+Existing Site Conditions ............................................................................. 5 
+2.3 
+Subsurface Conditions ............................................................................... 5 
+2.4 
+Seismic Design Considerations ................................................................. 6 
+2.4.1 Earthquakes and Seismicity ........................................................... 6 
+2.4.2 Liquefaction Potential ..................................................................... 7 
+2.4.3 Site Classification ........................................................................... 9 
+3. 
+DISCUSSION AND RECOMMENDATIONS ...................................................... 10 
+3.1 
+Cooling Tower and Equipment Pad Foundations ..................................... 10 
+3.2 
+Slabs-On-Grade ....................................................................................... 12 
+3.3 
+Site Grading ............................................................................................. 13 
+3.3.1 Site Preparation ............................................................................ 14 
+3.3.2 Fills and Backfills .......................................................................... 15 
+3.3.3 Fill Placement and Compaction Requirements............................. 15 
+3.3.4 Volcanic Tuff Excavation .............................................................. 16 
+3.4 
+Utility Trenches ........................................................................................ 16 
+3.5 
+Design Review ......................................................................................... 17 
+3.6 
+Services During Construction .................................................................. 18 
+4. 
+LIMITATIONS ..................................................................................................... 19 
+REFERENCES .............................................................................................................. 21 
+CLOSURE ..................................................................................................................... 22 
+PLATES 
+Project Location Map ................................................................................... Plate 1 
+Site Plan ...................................................................................................... Plate 2 
+TABLE OF CONTENTS 
+Page 
+W.O. 7316-00(B) 
+GEOLABS, INC. 
+Page ii 
+Hawaii • California 
+APPENDIX A 
+Field Exploration ....................................................................... Pages A-1 and A-2 
+Soil Log Legend  .................................................................................... Plate A-0.1 
+Soil Classification Log Key  ................................................................... Plate A-0.2 
+Rock Log Legend  ................................................................................. Plate A-0.3 
+Logs of Borings  ........................................................................ Plates A-1 thru A-3 
+APPENDIX B 
+Laboratory Tests ...................................................................................... Page B-1 
+Laboratory Test Data  ............................................................... Plates B-1 thru B-4 
+APPENDIX C 
+Photographs of Core Samples .................................................. Plates C-1 thru C-3 
+W.O. 7316-00(B) 
+GEOLABS, INC. 
+Page iii 
+Hawaii • California  
+GEOTECHNICAL ENGINEERING EXPLORATION 
+UMIG FY21 SPECIAL PROJECT RM09-2894 
+AMD 42 – REPLACE LOW PRESSURE AIR SYSTEM AT BUILDING 149 
+JOINT BASE PEARL HARBOR-HICKAM, OAHU, HAWAII 
+W.O. 7316-00(B)     MAY 10, 2021 
+SUMMARY OF FINDINGS AND RECOMMENDATIONS 
+Our field exploration generally encountered either a 3-inch thick layer of asphaltic 
+pavement or a 7-inch thick concrete slab-on-grade underlain by 9 to 15 inches of fill 
+consisting of silty gravel and gravelly sand. Beneath the fill, severely to moderately 
+fractured, moderately weathered, medium hard to hard volcanic tuff was encountered to 
+depths of about 10 to 11.5 feet below the existing ground surface. The volcanic tuff was 
+underlain by coralline deposits consisting of coralline detritus, coral formation, and 
+sandstone extending to depths of 22 to 25 feet below the existing ground surface. The 
+coralline detritus consisted of loose silty/clayey/sandy gravel. The coral formation and 
+sandstone were generally severely to moderately fractured, highly to moderately 
+weathered, and soft to medium hard. Underlying the coralline deposits, alluvium 
+consisting of medium stiff to very stiff elastic silt, lean clay, and fat clay was encountered 
+extending to about 68.5 feet below ground. Another layer of volcanic tuff was encountered 
+to a depth of about 93.5 feet followed by very soft coralline detritus and alluvium extending 
+to the maximum depth explored of about 102.5 feet below the existing ground surface.  
+We encountered groundwater at depths of approximately 10.2 to 10.3 feet below 
+the existing ground surface at the time of our field exploration. The groundwater levels 
+encountered generally correspond to elevations of approximately +2.7 to +2.8 feet MSL. 
+Due to the proximity of the project site to the Pacific Ocean, groundwater levels may 
+fluctuate depending on tidal fluctuations, storm surge conditions, seasonal precipitation, 
+groundwater withdrawal and/or injection, and other factors. 
+Based on the anticipated subsurface conditions and structural loads, we believe 
+that the new and temporary cooling towers and equipment pads may be supported on 
+shallow foundations. An allowable bearing pressure of up to 4,000 psf may be used for 
+the design of spread and/or continuous footings bearing on the volcanic tuff formation 
+and/or compacted select granular fill needed to achieve the design finished grades. The 
+bearing value recommended is for dead-plus-live loads and may be increased by 
+one-third (⅓) for transient loads, such as those caused by wind or seismic forces. 
+We understand that concrete slabs-on-grade will be required to support the new 
+equipment pads. Subgrade soils beneath the slabs should be moisture-conditioned to 
+above the optimum moisture content and compacted to at least 95 percent relative 
+compaction. In addition, we recommend placing the equipment pad that is subjected to 
+equipment vibration and/or vehicular traffic over 6 inches of aggregate subbase. The 
+aggregate subbase should consist of crushed basaltic aggregates compacted to a 
+minimum of 95 percent relative compaction. 
+SUMMARY OF FINDINGS AND RECOMMENDATIONS 
+W.O. 7316-00(B) 
+GEOLABS, INC. 
+Page iv 
+Hawaii • California 
+Our field exploration indicated that most of the project site may be underlain by 
+medium hard to hard volcanic tuff formation at relatively shallow depths. Therefore, we 
+anticipate that some difficult excavation conditions may arise during construction that will 
+require the use of hoerams or chipping. 
+The text of this report should be referred to for detailed discussion and specific 
+design recommendations. 
+END OF SUMMARY OF FINDINGS AND RECOMMENDATIONS 
+W.O. 7316-00(B) 
+GEOLABS, INC. 
+Page 1 
+Hawaii • California 
+SECTION 1.  GENERAL 
+This report presents the results of our geotechnical engineering exploration 
+performed for the proposed Replace Low Pressure Air System at Building 149 project 
+(UMIG FY21 Special Project RM09-2894) at Joint Base Pearl Harbor-Hickam on the 
+Island of Oahu, Hawaii. The project location and general vicinity are shown on the Project 
+Location Map, Plate 1. 
+This report presents our geotechnical recommendations derived from our field 
+exploration and engineering analyses for the proposed project. These recommendations 
+are intended for the design of foundations, floor slabs, earthwork, and utilities only. The 
+findings and recommendations presented herein are subject to the limitations noted at 
+the end of this report. 
+1.1 
+Project Considerations 
+The proposed project is located at Building 149 within the Controlled Industrial 
+Area (CIA) of Pearl Harbor Naval Shipyard and Intermediate Maintenance Facility (PHNS 
+& IMF) in Pearl Harbor on the Island of Oahu, Hawaii. 
+Based on the information provided, we understand that new cooling towers and 
+equipment pads will be required for the project. In addition, we understand that a 
+temporary cooling tower will be installed until the new cooling towers are constructed. 
+Once the existing cooling towers are replaced and operational, the temporary cooling 
+tower will be relocated to its permanent location adjacent to the other cooling towers. We 
+anticipate the new underground utility lines will be installed for the new cooling towers 
+and equipment pads.  
+Project drawings and grading information were not available at the time this report 
+was prepared. However, we anticipate grading work will primarily consist of excavations 
+for shallow foundations, preparing shallow foundation and slab-on-grade subgrades, 
+excavating utility trenches, and backfilling around shallow foundations and within utility 
+trenches.  
+SECTION 1. GENERAL 
+W.O. 7316-00(B) 
+GEOLABS, INC. 
+Page 2 
+Hawaii • California 
+1.2 
+Purpose and Scope 
+The purpose of our field exploration was to obtain an overview of the surface and 
+subsurface conditions at the project site to develop a soil and/or rock data set to formulate 
+geotechnical recommendations for design of foundations, floor slabs, earthwork 
+requirements, and underground utilities. In order to accomplish this scope, we conducted 
+an exploration program consisting of the following tasks and efforts: 
+1. 
+Research and review of the available plans, soils reports, and in-house soil 
+and geologic information related to the project area. 
+2. 
+Procurement of base passes for the field personnel for access to the CIA.  
+3. 
+Prepare and submit a Safety Plan/Accident Prevention Plan in support of 
+our field exploration activities and briefing our field personnel of the plan.  
+4. 
+Prepare and submit an excavation permit application prior to the 
+commencement of our field exploration program. 
+5. 
+Boring stakeout and coordination of underground utility toning by our 
+engineer. 
+6. 
+Provision of safety devices around the work area and safety flags for 
+vehicles. 
+7. 
+Provision of a dedicated Site Safety and Health Officer (SSHO) during our 
+field exploration work. 
+8. 
+Mobilization and demobilization of a truck-mounted drill rig, water truck, and 
+two operators to the project site and back. 
+9. 
+Drilling and sampling of three exploratory borings extending to depths of 
+about 22 to 102.5 feet below the existing ground surface for a total of about 
+146.6 linear feet of exploration. The boreholes were sealed with bentonite 
+and capped with concrete.  
+10. 
+Coordination of the field exploration and logging of the borings by our 
+geologist. 
+11. 
+Geotechnical laboratory testing of selected soil samples obtained during the 
+field exploration as an aid in classifying the materials and evaluating their 
+engineering properties. 
+12. 
+Analyses of the field and laboratory data to formulate geotechnical 
+recommendations for the design of the project. 
+SECTION 1. GENERAL 
+W.O. 7316-00(B) 
+GEOLABS, INC. 
+Page 3 
+Hawaii • California 
+13. 
+Preparation of this geotechnical engineering report summarizing our work 
+on 
+the 
+project 
+and 
+presenting 
+our 
+findings 
+and 
+geotechnical 
+recommendations for the design of the project. 
+14. 
+Miscellaneous work efforts, such as drafting, word processing, and clerical 
+support. 
+15. 
+Coordination of our overall work on the project by our engineer. 
+16. 
+Quality assurance of our work and client/design team consultation by our 
+principal engineer. 
+Detailed descriptions of our field exploration methodology and the Logs of Borings 
+are presented in Appendix A. Results of the laboratory tests performed on selected soil 
+samples obtained from our field exploration are presented in Appendix B. Photographs of 
+core samples are provided in Appendix C.  
+END OF GENERAL 
+W.O. 7316-00(B) 
+GEOLABS, INC. 
+Page 4 
+Hawaii • California 
+SECTION 2.  SITE CHARACTERIZATION 
+Of interest to our geotechnical engineering analysis are the subsurface materials 
+encountered at the project site, the engineering properties of the materials encountered, 
+and the variability of the subsurface conditions across the project site. Therefore, the 
+following sections provide a description of the geologic setting of the project site, the 
+surface and subsurface conditions encountered at the site, and a discussion on the items 
+needed for seismic design, such as seismicity, soil liquefaction, and the soil profile 
+characteristics for seismic analysis. 
+2.1 
+Regional Geology 
+The Island of Oahu was built by the extrusion of basaltic lavas from two shield 
+volcanoes, Waianae and Koolau. The older volcano, Waianae, is estimated to be middle 
+to late Pliocene in age and forms the bulk of the western one-third of the island. The 
+younger shield, Koolau, is estimated to be late Pliocene to early Pleistocene (Ice Age) in 
+age and forms the majority of the eastern two-thirds of the island. The Koolau shield 
+reached the end of its main shield-building phase about 2 million years ago. 
+The geologic conditions underlying the project site are the result of a complex 
+series of deposition and erosional events brought on by glacio-eustatic sea level changes 
+and post-erosional volcanic activities during the Pleistocene Epoch. Following the 
+cessation of volcanic activity of the Koolau Volcano, alluvial soil materials were deposited 
+in a deltaic or estuarine environment in the area of Pearl Harbor. 
+The sea level fluctuated several times, receding perhaps 300 feet below and rising 
+about 100 feet above the present sea level. Concurrent with a rise in sea level during the 
+late Pleistocene era, eruption of the Salt Lake-Makalapa member of the Honolulu 
+Volcanic Series mantled the older alluvium with thick deposits of volcanic ash, which 
+consolidated to form volcanic tuff (locally known as “mudrock”) layers. Subsequent 
+erosion dissected and thinned those mantles of volcanic tuff.  
+During the recent epoch, as sea level rose to its current stand, the area was 
+covered with soft and loose lagoonal marine deposits. These deposits were subsequently 
+covered with man-made fills placed during the middle portion of this century for land 
+SECTION 2. SITE CHARACTERIZATION  
+W.O. 7316-00(B) 
+GEOLABS, INC. 
+Page 5 
+Hawaii • California 
+reclamation projects during construction of the existing Pearl Harbor Naval Shipyard.  The 
+waterfront facility project site is located at the edge of the former Pearl Harbor shoreline. 
+The subsurface conditions of the project site generally consist of fill materials overlying 
+coralline deposits and highly weathered volcanic tuff materials. 
+2.2 
+Existing Site Conditions 
+The project site is located at Building 149 within the Controlled Industrial Area at 
+Joint Base Pearl Harbor-Hickam on the Island of Oahu, Hawaii. The project site is 
+bounded by Building 67 to the northeast, Seventh Street to the southeast, Avenue D to 
+the southwest, and Sixth Street to the northwest. Based on our site observations, the area 
+around Building 149 is paved with asphaltic concrete pavement. The existing cooling 
+towers are within this paved area near the northeast corner of Building 149. The existing 
+air compressors, air dryers, and mobile climate control units are located on the first floor 
+of Building 149. Raised concrete pads support each of these units.  
+Based on the topographic information provided, the project site is relatively level, 
+sloping gently downward from east to west at an average gradient of about 0.5 percent. 
+Existing ground surface elevations range from about +9 feet Mean Sea Level (MSL) on 
+the southwestern end of Building 149 to about +16 feet MSL near the northeastern corner 
+of the facility.  
+2.3 
+Subsurface Conditions 
+We explored the subsurface conditions at the project site by drilling and sampling 
+three borings, designated as Boring Nos. 1 through 3, extending to depths of about 22 to 
+102.5 feet below the existing ground surface. The approximate boring locations are 
+shown on the Site Plan, Plate 2. 
+Our borings generally encountered either a 3-inch thick layer of asphaltic 
+pavement or a 7-inch thick concrete slab-on-grade underlain by 9 to 15 inches of fill 
+consisting of silty gravel and gravelly sand. Beneath the fill, severely to moderately 
+fractured, moderately weathered, medium hard to hard volcanic tuff was encountered to 
+depths of about 10 to 11.5 feet below the existing ground surface. The volcanic tuff was 
+underlain by coralline deposits consisting of coralline detritus, coral formation, and 
+sandstone extending to depths of 22 to 35 feet below the existing ground surface. The 
+SECTION 2. SITE CHARACTERIZATION  
+W.O. 7316-00(B) 
+GEOLABS, INC. 
+Page 6 
+Hawaii • California 
+coralline detritus consisted of loose silty/clayey/sandy gravel. The coral formation and 
+calcareous sandstone were generally severely to moderately fractured, highly to 
+moderately weathered, and soft to medium hard. Underlying the sandstone, alluvium 
+consisting of medium stiff to very stiff elastic silt, lean clay, and fat clay was encountered 
+extending to about 68.5 feet below ground. Another layer of volcanic tuff was encountered 
+to a depth of about 93.5 feet followed by very soft coralline detritus and alluvium extending 
+to the maximum depth explored of about 102.5 feet below the existing ground surface. 
+The very soft coralline detritus and alluvium consisted of clayey silt and silty clay, 
+respectively.  
+We encountered groundwater at depths of approximately 10.2 to 10.3 feet below 
+the existing ground surface at the time of our field exploration. The groundwater levels 
+encountered generally correspond to elevations of approximately +2.7 to +2.8 feet MSL. 
+Due to the proximity of the project site to the Pacific Ocean, groundwater levels can 
+fluctuate depending on tidal fluctuations, storm surge conditions, seasonal precipitation, 
+groundwater withdrawal and/or injection, and other factors. 
+Detailed descriptions of our field exploration methodology and the Logs of Borings 
+are presented in Appendix A. Results of the laboratory tests performed on selected soil 
+samples are presented in Appendix B. Photographs of core samples are provided in 
+Appendix C. 
+2.4 
+Seismic Design Considerations 
+The project site will be subjected to seismic activity and should be evaluated for 
+potential soil liquefaction. Seismic design of the proposed project will be based on the 
+Unified Facilities Criteria “Seismic Design of Buildings” (UFC 3-301-01), which references 
+the 2018 International Building Code (IBC 2018) and American Society of Civil Engineers 
+(ASCE) 7-16, Minimum Design Loads for Buildings and Other Structures, 2016 Edition. 
+2.4.1 Earthquakes and Seismicity 
+In general, earthquakes throughout the world are caused by shifts in the tectonic 
+plates. In contrast, earthquake activity in Hawaii is linked primarily to volcanic 
+activity; therefore, earthquake activity in Hawaii generally occurs before or during 
+volcanic eruptions. In addition, earthquakes may result from the underground 
+SECTION 2. SITE CHARACTERIZATION  
+W.O. 7316-00(B) 
+GEOLABS, INC. 
+Page 7 
+Hawaii • California 
+movement of magma that comes close to the surface but does not erupt. The 
+Island of Hawaii experiences thousands of earthquakes each year, but most are 
+so small that only sensitive instruments can detect them. However, some of the 
+earthquakes are strong enough to be felt, and a few cause minor to moderate 
+damage. 
+In general, earthquakes associated with volcanic activity are most common on the 
+Island of Hawaii. Earthquakes that are directly associated with the movement of 
+magma are concentrated beneath the active Kilauea and Mauna Loa Volcanoes 
+on the Island of Hawaii. Because most earthquakes in Hawaii (over 90 percent) 
+are related to volcanic activity, the risk of seismic activity and degree of ground 
+shaking diminishes with increased distance from the Island of Hawaii. The Island 
+of Hawaii has experienced numerous earthquakes greater than Magnitude 5 
+(M5+); however, earthquakes are not confined only to the Island of Hawaii. 
+To a lesser degree, the Island of Maui has experienced several earthquakes 
+greater than Magnitude 5. Therefore, moderate to strong earthquakes have 
+occurred in the County of Maui. The effects of earthquakes occurring on the 
+Islands of Hawaii and Maui may be felt on the Island of Oahu. For example, small 
+landslides occurred on the Island of Oahu as a result of the Maui Earthquake of 
+1938 (M6.8). Some houses on the Island of Oahu were reportedly damaged 
+because of the Lanai Earthquake of 1871 (M7+). 
+In the last 150 years of recorded history, we are not aware of earthquakes greater 
+than Magnitude 6 that have occurred on the Island of Oahu. An earthquake of 
+Magnitude 4.8 to 5.0 occurred along the Diamond Head Fault in 1948 on the Island 
+of Oahu. The moderate tremor resulted in broken store windows, ruptured building 
+walls, and broken underground water mains. 
+2.4.2 Liquefaction Potential 
+Based on the International Building Code (2018 Edition), the project site may be 
+subjected to seismic activity and should be evaluated for potential soil liquefaction. 
+Soil liquefaction is a condition where saturated cohesionless soils near the ground 
+surface undergo a substantial loss of strength due to the build-up of excess pore 
+SECTION 2. SITE CHARACTERIZATION  
+W.O. 7316-00(B) 
+GEOLABS, INC. 
+Page 8 
+Hawaii • California 
+water pressures resulting from cyclic stress applications induced by earthquakes. In 
+this process, when the loose saturated sand deposit is subjected to vibration (such 
+as during an earthquake), the soil tends to densify and decrease in volume causing 
+an increase in pore water pressure. If drainage is unable to occur rapidly enough to 
+dissipate the build-up of pore water pressure, the effective stress (internal strength) 
+of the soil is reduced. Under sustained vibrations, the pore water pressure build-up 
+could equal the overburden pressure, essentially reducing the soil shear strength to 
+zero and causing it to behave as a viscous fluid. During liquefaction, the soil acquires 
+sufficient mobility to permit both horizontal and vertical movements, and if not 
+confined, will result in significant deformations. 
+Soils most susceptible to liquefaction are loose, uniformly graded, fine-grained sands 
+and loose silts with little cohesion. The major factors affecting the liquefaction 
+characteristics of a soil deposit are as follows: 
+FACTORS 
+LIQUEFACTION SUSCEPTIBILITY 
+Grain Size Distribution 
+Fine and uniform sands and silts are 
+more susceptible to liquefaction than 
+coarse or well-graded sands. 
+Initial Relative Density 
+Loose sands and silts are most 
+susceptible to liquefaction.  Liquefaction 
+potential is inversely proportional to 
+relative density. 
+Magnitude and Duration of Vibration 
+Liquefaction potential is directly 
+proportional to the magnitude and 
+duration of the earthquake. 
+We evaluated the liquefaction potential of the saturated granular soils at the building 
+site using the computer software program LiquefyPro (Version 5.8n) by CivilTech 
+Software. Our analyses were performed on the drilled borings based on a seismic 
+event of Magnitude 6 with an associated peak ground acceleration of 0.334g. Based 
+on our analysis, the loose coralline detritus encountered at the project site (between 
+depths of about 10.5 feet and 18.5 feet) are generally not susceptible to liquefaction 
+when subjected to a peak ground acceleration of 0.334g associated with a 
+Magnitude 6 earthquake.  
+SECTION 2. SITE CHARACTERIZATION  
+W.O. 7316-00(B) 
+GEOLABS, INC. 
+Page 9 
+Hawaii • California 
+2.4.3 Site Classification 
+In accordance with FC 1-300-09N Navy and Marine Corps Design Procedures, we 
+understand that NAVFAC shall be the ultimate authority on-site class 
+determination for design. We drilled one boring to a depth of about 102.5 feet 
+below the existing ground surface to determine the Site Class of the project site 
+using Sections 20.4.2 and 20.4.3 of ASCE 7-16 (Minimum Design Loads for 
+Buildings and Other Structures) referenced by the International Building Code, 
+2018 Edition. Based on the calculation procedures outlined in these two sections 
+and Table 20.3-1 (Site Classification), we believe the project site may be classified 
+as a “Stiff Soil” profile. Therefore, we believe the seismic design of the proposed 
+structures may be designed based on a Site Class D based on the International 
+Building Code, 2018 Edition. 
+Based on Site Class D, the following seismic design parameters were estimated 
+and may be used for the seismic analysis of this project. 
+SEISMIC DESIGN PARAMETERS (ASCE 7-16) 
+Parameter 
+Value 
+Peak Bedrock Acceleration, PBA (Site Class B) 
+0.261 
+Mapped MCE Spectral Response Acceleration, SS 
+0.567 
+Mapped MCE Spectral Response Acceleration, S1 
+0.162 
+Site Class 
+D 
+Site Coefficient, FPGA 
+1.277 
+Site Coefficient, Fa 
+1.347 
+Site Coefficient, Fv 
+2.151 
+Design Peak Ground Acceleration, PGA (Site Class D) 
+0.334 
+Design Spectral Response Acceleration, SDS 
+0.509 
+Design Spectral Response Acceleration, SD1 
+0.233 
+END OF SITE CHARACTERIZATION 
+W.O. 7316-00(B) 
+GEOLABS, INC. 
+Page 10 
+Hawaii • California 
+SECTION 3.  DISCUSSION AND RECOMMENDATIONS 
+Our borings generally encountered either a 3-inch thick layer of asphaltic 
+pavement or a 7-inch thick concrete slab on grade underlain by 9 to 15 inches of fill 
+consisting of silty gravel and gravelly sand. Beneath the fill, severely to moderately 
+fractured, moderately weathered, medium hard to hard volcanic tuff was encountered to 
+depths of about 10 to 11.5 feet below the existing ground surface. The volcanic tuff was 
+underlain by coralline deposits consisting of coralline detritus, coral and sandsone. 
+Underlying the coralline deposits, alluvium consisting of medium stiff to very stiff elastic 
+silt, lean clay, and fat clay was encountered extending to about 68.5 feet below ground. 
+Another layer of volcanic tuff was encountered to a depth of about 93.5 feet followed by 
+very soft coralline detritus and alluvium extending to the maximum depth explored of 
+about 102.5 feet below the existing ground surface.  
+We encountered groundwater at depths of approximately 10.2 to 10.3 feet below 
+the existing ground surface at the time of our field exploration. Due to the proximity of the 
+project site to the Pacific Ocean, groundwater levels may fluctuate depending on tidal 
+fluctuations, storm surge conditions, seasonal precipitation, groundwater withdrawal 
+and/or injection, and other factors. 
+Based on the anticipated subsurface conditions and structural loads, we believe 
+that the new and temporary cooling towers and equipment pads may be supported on 
+shallow foundations. An allowable bearing pressure of up to 4,000 psf may be used for 
+the design of spread and/or continuous footings bearing on the volcanic tuff formation 
+and/or compacted select granular fill needed to achieve the design finished grades. 
+Detailed discussions of our geotechnical recommendations for design of the 
+project are presented in the following sections of this report. 
+3.1 
+Cooling Tower and Equipment Pad Foundations 
+We understand that the new and temporary cooling towers and equipment pads 
+will be required for the project. Based on the anticipated subsurface conditions and 
+structural loads, we believe that the new and temporary cooling towers and equipment 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 7316-00(B) 
+GEOLABS, INC. 
+Page 11 
+Hawaii • California 
+pads may be supported on shallow foundations. An allowable bearing pressure of up to 
+4,000 psf may be used for the design of spread and/or continuous footings bearing on 
+the volcanic tuff formation and/or compacted select granular fill needed to achieve the 
+design finished grades. The bearing value recommended is for dead-plus-live loads and 
+may be increased by one-third (⅓) for transient loads, such as those caused by wind or 
+seismic forces. 
+Imported select granular fill should be compacted to at least 95 percent relative 
+compaction to provide a relatively firm and smooth bearing surface prior to the placement 
+of reinforcing steel and/or concrete. If soft and/or loose materials are encountered at the 
+bottom of the footing excavations, they should be over-excavated to expose the 
+underlying firm materials. The over-excavation may be backfilled with select granular 
+materials compacted to a minimum of 95 percent relative compaction, or the bottom of 
+footing may be extended down to bear directly on the underlying competent volcanic tuff 
+formation. 
+In general, the bottom of the cooling tower footings or equipment pads with 
+thickened edge footings should be embedded a minimum of 18 inches below the lowest 
+adjacent finished grade. Footings located adjacent to slopes or on slopes should be 
+embedded to a sufficient depth to provide a minimum horizontal setback distance of at 
+least 6 feet measured from the outside edge of the footing to the face of the slope. 
+Foundations located next to utility trenches or easements should be embedded below a 
+45-degree imaginary plane extending upward from the bottom edge of the utility trench, 
+or the footings should be extended to a depth as deep as the inverts of the utility lines. 
+If the foundations are designed and constructed as recommended herein, we 
+estimate total settlements of footings supported on the compacted select granular fill 
+and/or volcanic tuff formation to be on the order of about 1 inch or less. Differential 
+settlements between adjacent footings supported on similar materials should be on the 
+order of about 0.5 inches or less. 
+Lateral loads acting on the structure may be resisted by a combination of frictional 
+resistance between the base of the foundation and the bearing materials and by passive 
+earth pressure developed against the near-vertical faces of the embedded portion of the 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 7316-00(B) 
+GEOLABS, INC. 
+Page 12 
+Hawaii • California 
+footings. A coefficient of friction of 0.40 may be used for footings bearing on the 
+compacted select granular fill or volcanic tuff formation. Resistance due to passive earth 
+pressure may be estimated using an equivalent fluid pressure of 400 pounds per square 
+foot per foot of depth. The passive earth pressure value assumes the concrete for the 
+footings is cast neat against the new compacted fills and/or volcanic tuff formation. 
+Otherwise, the soils around the footings should be well-compacted (minimum of 
+95 percent relative compaction). Unless covered by pavements or slabs, the passive 
+pressure resistance in the upper 12 inches below the finished grade should be neglected. 
+3.2 
+Slabs-On-Grade 
+We understand that concrete slabs-on-grade will be required for the new 
+equipment pads. Subgrade soils should be moisture-conditioned to above the optimum 
+moisture content and compacted to at least 95 percent relative compaction. This 
+compaction requirement applies to slabs-on-grade that will be subjected to machinery 
+vibration and/or vehicular traffic. For other areas where the slabs will not be subjected to 
+machinery vibration and/or vehicular traffic, the compaction requirement for the subgrade 
+soils may be reduced to a minimum of 90 percent relative compaction. The subgrade soils 
+and the select granular fill should be wetted (if needed) and kept moist until the final 
+placement of slab concrete. Where shrinkage cracks are observed after compaction of 
+the subgrade, we recommend preparing the soils again as described above. Saturation 
+and subsequent yielding of the exposed subgrade due to inclement weather and poor 
+drainage may require over-excavation of the soft areas and replacement with engineered 
+fill. 
+For interior building slabs (not subjected to vehicular traffic or machinery vibration), 
+we recommend placing a minimum 4-inch thick layer of cushion fill consisting of 
+open-graded gravel (ASTM C33, No. 67 gradation) below the slabs. The open-graded 
+gravel cushion fill would provide uniform support of the slabs and would serve as a 
+capillary moisture break. To reduce the potential for future moisture infiltration through 
+the slab and subsequent damage to floor coverings, an impervious moisture barrier is 
+recommended on top of the gravel cushion fill layer. Flexible floor coverings, such as 
+carpet or sheet vinyl, should be considered because they can better mask minor slab 
+cracking. 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 7316-00(B) 
+GEOLABS, INC. 
+Page 13 
+Hawaii • California 
+Where slabs will be subjected to equipment vibration and/or vehicular traffic, we 
+recommend placing the floor slab over 6 inches of aggregate subbase in-lieu of the 4-inch 
+cushion layer. The aggregate subbase should consist of crushed basaltic aggregates 
+compacted to a minimum of 95 percent relative compaction. The impervious moisture 
+barrier may be omitted for these slabs. Where slabs are intended to function as rigid 
+pavements, a minimum slab thickness of 6 inches may be used for preliminary design 
+purposes. Provisions should be made for proper load transfer across the slab joints that 
+will be subject to vehicular traffic.  
+Exterior flatwork required for the project should be underlain by a minimum 6-inch 
+thick layer of non-expansive, select granular material or until the underlying volcanic tuff 
+formation is encountered. The subgrade soils below the flatwork should be scarified to a 
+depth of about 8 inches, moisture-conditioned to above the optimum moisture content, 
+and recompacted to a minimum of 90 percent relative compaction. The non-expansive, 
+select granular material should be compacted to a minimum of 90 percent relative 
+compaction. To reduce the potential for substantial shrinkage cracks developing in the 
+slabs, crack control joints should be provided at intervals equal to the width of the 
+walkways with expansion joints provided at right-angle intersections. 
+It should be emphasized that the areas adjacent to the slab edges should be 
+backfilled tightly against the edges of the slabs with relatively impervious soils. These areas 
+should also be graded to divert water away from the slabs and to reduce the potential for 
+water ponding around the slabs. 
+3.3 
+Site Grading 
+Project drawings and grading information were not available at the time this report 
+was prepared. However, we anticipate grading work will primarily consist of excavations for 
+shallow foundations, preparing shallow foundation and slab-on-grade subgrades, 
+excavating utility trenches, and backfilling around shallow foundations and within utility 
+trenches. Items of site grading that are addressed in the subsequent subsections include 
+the following: 
+1. 
+Site Preparation 
+2. 
+Fills and Backfills 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 7316-00(B) 
+GEOLABS, INC. 
+Page 14 
+Hawaii • California 
+3. 
+Fill Placement and Compaction Requirements 
+4. 
+Volcanic Tuff Excavations 
+A Geolabs representative should monitor site grading operations to observe 
+whether undesirable materials are encountered during the excavation and scarification 
+process and to confirm whether the exposed soil/rock conditions are similar to those 
+assumed in this report. 
+3.3.1 Site Preparation 
+At the on-set of earthwork, the area within the contract grading limits should be 
+thoroughly cleared. Demolished man-made debris and other unsuitable materials 
+should be removed and disposed of properly off-site. Soft and yielding areas 
+encountered during clearing below areas designated to receive fill and/or future 
+improvements should be over-excavated to expose firm material and the resulting 
+excavation should be backfilled with well-compacted fill. The excavated soft soils 
+should be properly disposed of off-site and/or used in landscape areas, where 
+appropriate. 
+Slabs and foundations of the existing structures to be demolished should be 
+completely removed.  The excavations resulting from the demolition work should 
+be backfilled with compacted fill materials. Existing utilities to be abandoned should 
+be removed, and the resulting excavation should be properly backfilled with select 
+granular fill material, placed in 8-inch level loose lifts, moisture-conditioned to 
+above the optimum moisture content, and compacted to a minimum of 90 percent 
+relative compaction. Utilities to be abandoned in-place under the proposed 
+structures (where appropriate) should be backfilled by pumping lean concrete (or 
+Controlled Low Strength Material [CLSM]) under low pressure. 
+After clearing and demolition, the exposed subgrades should be scarified to a depth 
+of about 8 inches (where possible), moisture-conditioned to above the optimum 
+moisture, and recompacted to a minimum of 90 percent relative compaction. The 
+compaction requirements for finished subgrades subjected to vehicular traffic or 
+below equipment pads should be increased to a minimum of 95 percent relative 
+compaction. Relative compaction refers to the in-place dry density of soil expressed 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 7316-00(B) 
+GEOLABS, INC. 
+Page 15 
+Hawaii • California 
+as a percentage of the maximum dry density of the same soil established in 
+accordance with ASTM D1557. Optimum moisture is the water content (percentage 
+by dry weight) corresponding to the maximum dry density.  
+Where shrinkage cracks are observed after the subgrade compaction, we 
+recommend preparing the subgrade soil again as described above. Saturation and 
+subsequent yielding of the exposed subgrade due to inclement weather and poor 
+drainage may require over-excavating the soft areas and replacing these areas 
+with engineered fill. A Geolabs field representative should evaluate the need for 
+over-excavation due to soft subgrade soil conditions. 
+3.3.2 Fills and Backfills 
+In general, the excavated on-site materials should be suitable for use as general fill 
+materials provided that the maximum particle size is less than 3 inches in largest 
+dimension. The on-site soils and volcanic tuff materials generated from the 
+excavations may be used as a source of general fill or backfill materials provided that 
+they are screened of the over-sized materials and/or processed to meet the above 
+gradation requirements (less than 3 inches in largest dimension). 
+Non-expansive, select granular fill materials required under foundations, concrete 
+slabs, and exterior flatwork should consist of crushed coral or basalt. Select granular 
+fills should be well-graded from coarse to fine with particles no greater than 3 inches 
+in largest dimension. The material should contain between 10 and 30 percent 
+particles passing the No. 200 sieve. In addition, the material should have a laboratory 
+California Bearing Ratio (CBR) value of 20 or higher and a swell potential of not more 
+than 1 percent when tested in accordance with ASTM D1883. Geolabs should test 
+imported fill materials a minimum of seven days prior to being transported to the 
+project site for the intended use.  
+3.3.3 Fill Placement and Compaction Requirements 
+Fill materials consisting of the on-site soils and/or excavated volcanic tuff materials 
+should be moisture-conditioned to above the optimum moisture, placed in level lifts 
+not exceeding 8 inches in loose thickness, and compacted to a minimum of 
+90 percent relative compaction. Relative compaction refers to the in-place dry density 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 7316-00(B) 
+GEOLABS, INC. 
+Page 16 
+Hawaii • California 
+of soil expressed as a percentage of the maximum dry density of the same soil 
+established in accordance with ASTM D1557. Optimum moisture is the water content 
+(percentage by weight) corresponding to the maximum dry density. 
+Imported fill materials should be moisture-conditioned to above the optimum moisture 
+content, placed in level lifts of about 8 inches in loose thickness, and compacted to a 
+minimum of 90 or 95 percent relative compaction as appropriate. Aggregate subbase 
+materials should be moisture-conditioned to above the optimum moisture content, 
+placed in level lifts not exceeding 8 inches in loose thickness, and compacted to a 
+minimum of 95 percent relative compaction. 
+Compaction should be accomplished by sheepsfoot rollers or other types of 
+acceptable compaction equipment. Water tamping, jetting, or ponding should not be 
+allowed to compact the fills. Where compaction is less than required, additional 
+compactive effort should be applied with adjustment of moisture content, as 
+necessary, to obtain the specified compaction. 
+3.3.4 Volcanic Tuff Excavation 
+Our field exploration indicated that the majority of the project site may be underlain 
+by medium hard to hard volcanic tuff formation at relatively shallow depths. 
+Therefore, we anticipate that some difficult excavation conditions may arise during 
+construction that will require the use of hoerams or chipping. It should be noted that 
+laboratory compression testing of the volcanic tuff core samples yielded unconfined 
+compressive strengths of up to about 2,800 pounds per square inch (psi).  
+The above discussions regarding the rippability of the materials are based on our 
+field and laboratory data from the drilled borings. We recommend encouraging 
+contractors to examine the site conditions and the subsurface data to make their own 
+reasonable and prudent interpretation.  
+3.4 
+Utility Trenches 
+We anticipate that underground utility connections will be required for the project. 
+In general, good construction practices should be utilized for the installation and 
+backfilling of the trenches for the new utilities. The contractor should determine the 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 7316-00(B) 
+GEOLABS, INC. 
+Page 17 
+Hawaii • California 
+method and equipment to be used for trench excavation, subject to practical limits and 
+safety considerations. In addition, the excavations should comply with the applicable 
+federal, state, and local safety requirements. The contractor should be responsible for 
+trench shoring design and installation. 
+In general, we recommend providing granular bedding consisting of 6 inches of 
+open-graded gravel (ASTM C33, No. 67 gradation) under the pipes for uniform support. 
+Free-draining granular materials, such as open-graded gravel (ASTM C33, No. 67 
+gradation), should also be used for the initial trench backfill up to about 12 inches above 
+the pipes to provide adequate support around the pipes. It is critical to use this 
+free-draining material to reduce the potential for formation of voids below the haunches 
+of pipes and to provide adequate support for the sides of the pipes. Improper trench 
+backfill could result in backfill settlement and pipe damage. 
+The upper portion of the trench backfill from the level 12 inches above the pipes to 
+the top of the subgrade or finished grade may consist of on-site soils or select granular fill 
+material. The backfill material should be moisture-conditioned to above the optimum 
+moisture content, placed in maximum 8-inch level loose lifts, and mechanically compacted 
+to at least 90 percent relative compaction. In areas where trenches will be in paved areas, 
+the upper 3 feet of the trench backfill below the pavement finished grade should be 
+compacted to no less than 95 percent relative compaction. Mechanical compaction 
+equipment should be used to compact the backfill materials. Compaction efforts by water 
+tamping, jetting, or ponding should not be allowed. 
+3.5 
+Design Review 
+Preliminary and final drawings and specifications for the project should be 
+forwarded to Geolabs for review and comments prior to construction. This review is 
+necessary to evaluate the conformance of the plans and specifications with the intent of 
+the geotechnical recommendations provided herein. If this review is not made, Geolabs 
+cannot be held responsible for misinterpretation of our recommendations. 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 7316-00(B) 
+GEOLABS, INC. 
+Page 18 
+Hawaii • California 
+3.6 
+Services During Construction 
+Geolabs should provide geotechnical engineering services during construction. 
+The critical items of construction monitoring that require "Special Inspection" in 
+accordance with Section 1705.7 of IBC 2015 include: 
+Observation of shallow foundation excavations; 
+Observation of subgrade preparation and proof-rolling; 
+Observation of fill placement and compaction; and 
+Observation of select granular fill placement and compaction. 
+In addition, a Geolabs representative should monitor the other aspects of 
+earthwork construction to observe compliance with the intent of the design concepts, 
+specifications, or recommendations and to expedite suggestions for design changes that 
+may be required in the event that subsurface conditions differ from those anticipated at 
+the time this report was prepared. The recommendations provided in this report are 
+contingent upon such observations. 
+If the actual exposed subsurface conditions encountered during construction are 
+different from those assumed or considered in this report, then appropriate modifications 
+to the design should be made. 
+END OF DISCUSSION AND RECOMMENDATIONS 
+W.O. 7316-00(B) 
+GEOLABS, INC. 
+Page 19 
+Hawaii • California 
+SECTION 4.  LIMITATIONS 
+The analyses and recommendations presented in this report are based, in part, 
+upon information obtained from our test borings. Variations of the subsurface conditions 
+between and beyond the field data points may occur and the nature and extent of these 
+variations may not become evident until construction is underway. If variations then 
+appear evident, it will be necessary to re-evaluate the recommendations presented 
+herein. 
+The field boring locations indicated herein are approximate, having been estimated 
+by taping from visible features. Elevations of the borings were estimated from spot 
+elevations shown on the Topographic Survey Map created by ControlPoint Surveying, 
+Inc. dated September 3, 2020. The field boring locations and elevations should be 
+considered accurate only to the degree implied by the methods used. 
+The stratification breaks shown on the graphic representations of the borings 
+depict the approximate boundaries between soil types and, as such, may denote a 
+gradual transition. Water level data from the borings were measured at the times shown 
+on the graphic representations and/or presented in the text herein. However, it must be 
+noted that fluctuation may occur due to tidal fluctuation, storm surge conditions, seasonal 
+precipitation, and other factors. This data has been reviewed and interpretations made in 
+the formulation of this report. 
+This report has been prepared for the exclusive use of Mechanical Enterprises Inc. 
+and their project consultants for specific application to the design of the Amd 42 – Replace 
+Low Pressure Air System at Building 149 (UMIG FY21 Special Project RM09-2894) 
+project in accordance with generally accepted geotechnical engineering principles and 
+practices. No warranty is expressed or implied. 
+This report has been prepared solely for the purpose of assisting the design 
+engineers in the design of the project. Therefore, this report may not contain sufficient 
+data, or the proper information, to serve as a basis for detailed construction cost 
+estimates.  
+SECTION 4. LIMITATIONS 
+W.O. 7316-00(B) 
+GEOLABS, INC. 
+Page 20 
+Hawaii • California 
+The owner/client should be aware that unanticipated soil conditions are commonly 
+encountered. Unforeseen subsurface conditions, such as soft deposits, hard layers, or 
+cavities may occur in localized areas and may require additional probing or corrections in 
+the field (which may result in construction delays) to attain a properly constructed project. 
+Therefore, a sufficient contingency fund is recommended to accommodate these possible 
+extra costs. 
+This geotechnical engineering exploration conducted at the project site was not 
+intended to investigate the potential presence of hazardous materials existing at the 
+project site. It should be noted that the equipment, techniques, and personnel used to 
+conduct a geo-environmental exploration differ substantially from those applied in 
+geotechnical engineering. 
+END OF LIMITATIONS
+W.O. 7316-00(B) 
+GEOLABS, INC. 
+Page 21 
+Hawaii • California 
+REFERENCES 
+American Society of Civil Engineers Standard ASCE 7-16 (2016), “Minimum Design 
+Loads for Buildings and Other Structures” 
+Andrews, D. C. A. and Martin, G. R. (2000), “Criteria for Liquefaction of Silty Soils,” 
+12th World Congress on Earthquake Engineering, Auckland, New Zealand 
+International Code Council (2018), International Building Code. 
+NCEER (1997), “Proceedings of the NCEER Workshop on Evaluation of Liquefaction 
+Resistance of Soils,” T.L. Youd and I.M. Idriss (Editors), Technical Report 
+NCEER-97-0022, NCEER, Buffalo, NY. 
+US Department of Defense (2012). Geotechnical Engineering, UFC 3-220-01, November. 
+US Department of Defense (2005).  Soil Mechanics, UFC 3-220-10N, June. 
+US Department of Defense (2019).  Seismic Design for Buildings, UFC 3-301-01, 
+October. 
+Youd, T.L. et al. (2001), “Liquefaction Resistance of Soils: Summary Report from the 1996 
+NCEER and 1998 NCEER/NSF Workshops on Evaluation of Liquefaction Resistance of 
+Soils,” Journal of Geotechnical and Geo-Environmental Engineering, ASCE, Vol. 127, No. 
+10, October. 
+CLOSURE
+The following plates and appendices are attached and complete this report:
+Project Lecation Mapes cau: seen aces anes mas mexnewesrw em anran come oninn oetes eons amaNRON eae CS ek a Plate 1
+Syd - sc Plate 2
+ag (=) (0 a =>.40) (0) c= 110) Appendix A
+LADOPAOrY TOSUS sists init tsssscctictssdsnenensscnenansacsesnnerenssenessnnnenne sees cone tesneneeneennennenens Appendix B
+Photographs of Core Samples ............ccccccceeeseessesseeeeeeeeeeeeeeeeesseestseeeeeeeeeeeeeeees Appendix C
+NDQQQQOOQOO-
+Respectfully submitted,
+GEOLABS, INC.
+Gerald Y. Seki, P.E.
+Vice President
+GS:NK:sh
+W.O. 7316-00(B) GEOLABS, INC. Page 22
+Hawaii ¢ California
+PLATES 
+AMD 42 - REPLACE LOW PRESSURE AIR SYSTEM AT BUILDING 149
+UMIG FY21 SPECIAL PROJECT RM09-2894
+PROJECT LOCATION MAP
+GRAPHIC SCALE
+1000
+2000
+2000
+0
+FT.
+PROJECT LOCATION
+GENERAL PROJECT LOCATION
+N
+WAHIAWA
+WAIKIKI
+HONOLULU
+AIEA
+PEARL CITY
+WAIPAHU
+EWA
+BARBERS POINT
+NANAKULI
+WAIANAE
+WAIALUA
+HALEIWA
+KAHUKU
+POINT
+DIAMOND
+HEAD
+HAWAII
+KAI
+WAIMANALO
+KAILUA
+KANEOHE
+KAHALUU
+PUNALUU
+HAUULA
+KAENA POINT
+ISLAND MAP
+NO SCALE
+JOINT BASE PEARL HARBOR-HICKAM, OAHU, HAWAII
+NOVEMBER 2020
+1" = 2,000'
+Geotechnical Engineering
+GEOLABS, INC.
+DATE
+SCALE
+1
+7316-00(B)
+DRAWN BY
+HYC
+W.O.
+PLATE
+N
+PACIFIC      OCEAN
+CAD User: HENRY  File Last Updated: November 17, 2020 11:20:38am  Plot Date:  November 17, 2020 - 11:21:10am
+File: A:\Drafting\Drafting\Working\7316-00(B)_Replace_Low_Pressure_Air_System_at_B149\7316-00(B)PLM.dwg\SP
+Plotter: DWG To PDF-GEO.pc3  Plotstyle: GEO-No-Dithering-Blue-Boring.ctb
+REFERENCE: MAP CREATED WITH TOPO!® ©2010 NATIONAL
+GEOGRAPHIC; ©2007 TELE ATLAS, REL. 1/2007.
+1571
+S1152
+1410
+S1167
+9A
+1567
+1539
+5A
+4
+S1108
+5
+44
+74
+S1066
+Tank
+S1065
+S1065
+149
+S1062
+Tank Tank
+9
+S1063
+8
+90
+1421
+45
+Tank
+Tank
+LOCATION OF WORK
+PARKING LOT
+PARKING
+200
+150
+450
+AVENUE D
+SIXTH STREET
+AVENUE E
+650
+56
+0
+500
+550
+600
+450
+300
+400
+350
+250
+100
+200
+150
+700
+50
+0
+SEVENTH STREET
+STATION B, BLDG 149
+APPROXIMATE BORING LOCATION
+LEGEND:
+N
+GEOLABS, INC.
+Geotechnical Engineering
+7316-00(B)
+DRAWN BY
+HYC
+1" = 100'
+NOVEMBER 2020
+SCALE
+DATE
+W.O.
+2
+PLATE
+GRAPHIC SCALE
+50
+0
+100
+200
+300 FT.
+CAD User: HENRY  File Last Updated: November 19, 2020 11:14:42am  Plot Date:  November 19, 2020 - 11:15:18am
+File: A:\Drafting\Drafting\Working\7316-00(B)_Replace_Low_Pressure_Air_System_at_B149\7316-00(B)SitePlan.dwg\Plate_2
+Plotter: DWG To PDF-GEO.pc3  Plotstyle: NavFacStnd-halfsize.ctb
+REFERENCE: SITE PLAN TRANSMITTED BY INSYNERGY ENGINEERING
+ON OCTOBER 15, 2020.
+AMD 42 - REPLACE LOW PRESSURE AIR SYSTEM AT BUILDING 149
+UMIG FY21 SPECIAL PROJECT RM09-2894
+SITE PLAN
+JOINT BASE PEARL HARBOR-HICKAM, OAHU, HAWAII
+B-1
+B-2
+B-3
+APPENDIX A  
+W.O. 7316-00(B) 
+GEOLABS, INC. 
+MAY 2021     Page A-1 
+Hawaii • California 
+A P P E N D I X   A 
+Field Exploration 
+We explored the subsurface conditions at the project site by drilling and sampling 
+three borings, designated as Boring Nos. 1 through 3, extending to depths of about 22 to 
+102.5 feet below the existing ground surface. The approximate boring locations are shown 
+on the Site Plan, Plate 2. The borings were drilled using a truck-mounted drill rig with 
+continuous flight augers and coring tools.  
+Our field engineer classified the materials encountered in the borings by visual and 
+textural examination in the field in general accordance with ASTM D2488, Standard Practice 
+for Description and Identification of Soils, and monitored the drilling operations on a 
+near-continuous (full-time) basis. These classifications were further reviewed visually and 
+by testing in the laboratory. Soils were classified in general accordance with ASTM D2487, 
+Standard Practice for Classification of Soils for Engineering Purposes (Unified Soil 
+Classification System), as shown on the Soil Log Legend, Plate A-0.1. Deviations made to 
+the soil classification in accordance with ASTM D2487 are described on the Soil 
+Classification Log Key, Plate A-0.2. Graphic representations of the materials encountered 
+are presented on the Logs of Borings, Plates A-1 through A-3. 
+Relatively “undisturbed” soil samples were obtained in general accordance with 
+ASTM D3550, Ring-Lined Barrel Sampling of Soils, by driving a 3-inch OD Modified 
+California sampler with a 140-pound hammer falling 30 inches. In addition, some samples 
+were obtained from the drilled borings in general accordance with ASTM D1586, 
+Penetration Test and Split-Barrel Sampling of Soils, by driving a 2-inch OD standard 
+penetration sampler using the same hammer and drop. The blow counts needed to drive 
+the sampler the second and third 6 inches of an 18-inch drive are shown as the 
+“Penetration Resistance” on the Logs of Borings at the appropriate sample depths. The 
+penetration resistance shown on the Logs of Borings indicates the number of blows 
+required for the specific sampler type used. The blow counts may need to be factored to 
+obtain the Standard Penetration Test (SPT) blow counts. 
+Core samples of the rock materials encountered at the project site were obtained 
+by using diamond core drilling techniques in general accordance with ASTM D2113, 
+Diamond Core Drilling for Site Investigation. Core drilling is a rotary drilling method that 
+uses a hollow bit to cut into the rock formation. The rock material left in the hollow core of 
+the bit is mechanically recovered for examination and description. Rock cores were 
+described in general accordance with the Rock Description System as shown on the Rock 
+Log Legend, Plate A-0.3. The Rock Description System is based on the publication 
+“Suggested Methods for the Quantitative Description of Discontinuities in Rock Masses” 
+by the International Society for Rock Mechanics (March 1977). 
+Recovery (REC) is used as a subjective guide to the interpretation of the relative 
+quality of rock masses. Recovery is defined as the actual length of material recovered 
+from a coring attempt versus the length of the core attempt. For example, if 3.7 feet of 
+Appendix A 
+Field Exploration 
+W.O. 7316-00B 
+GEOLABS, INC. 
+MAY 2021     Page A-2 
+Hawaii • California 
+material is recovered from a 5.0-foot core run, the recovery would be 74 percent and 
+would be shown on the Logs of Borings as REC = 74%. 
+The Rock Quality Designation (RQD) is also a subjective guide to the relative 
+quality of rock masses. RQD is defined as the percentage of the core run in rock that is 
+sound material in excess of 4 inches in length without any discontinuities, discounting any 
+drilling induced fractures or breaks. If 2.5 feet of sound material is recovered from a 
+5.0-foot core run in rock, the RQD would be 50 percent and would be shown on the Logs 
+of Borings as RQD = 50%. Generally, the following is used to describe the relative quality 
+of the rock based on the "Practical Handbook of Physical Properties of Rocks and 
+Minerals." 
+Rock Quality 
+RQD 
+(%) 
+Very Poor 
+0 – 25 
+Poor 
+25 – 50 
+Fair 
+50 – 75 
+Good 
+75 – 90 
+Excellent 
+90 – 100 
+The rippability (or excavation characteristics) of a rock mass is a function of the 
+relative hardness of the rock, its relative quality, brittleness, and fissile characteristics. 
+Dense basalt formations with high RQD values would be very difficult to rip and would 
+probably require more arduous methods of excavation. 
+A-0.1
+UNCONSOLIDATED UNDRAINED TRIAXIAL
+COMPRESSION (ksf)
+MORE THAN 50%
+OF COARSE
+FRACTION
+RETAINED ON
+NO. 4 SIEVE
+50% OR MORE OF
+COARSE FRACTION
+PASSING
+THROUGH NO. 4
+SIEVE
+MORE THAN 50%
+OF MATERIAL
+RETAINED ON NO.
+200  SIEVE
+50% OR MORE OF
+MATERIAL PASSING
+THROUGH NO. 200
+SIEVE
+TORVANE SHEAR (tsf)
+(2-INCH) O.D. STANDARD PENETRATION TEST
+(3-INCH) O.D. MODIFIED CALIFORNIA SAMPLE
+INORGANIC SILTS AND VERY FINE SANDS,
+ROCK FLOUR, SILTY OR CLAYEY FINE SANDS
+OR CLAYEY SILTS WITH SLIGHT PLASTICITY
+POORLY-GRADED GRAVELS, GRAVEL-SAND
+MIXTURES, LITTLE OR NO FINES
+CLAYEY GRAVELS, GRAVEL-SAND-CLAY
+MIXTURES
+WELL-GRADED SANDS, GRAVELLY SANDS,
+LITTLE OR NO FINES
+POORLY-GRADED SANDS, GRAVELLY
+SANDS, LITTLE OR NO FINES
+SILTY SANDS, SAND-SILT MIXTURES
+CLAYEY SANDS, SAND-CLAY MIXTURES
+LIQUID LIMIT
+50 OR MORE
+CH
+NOTE: DUAL SYMBOLS ARE USED TO INDICATE BORDERLINE SOIL CLASSIFICATIONS
+MH
+SILTS
+AND
+CLAYS
+SILTS
+AND
+CLAYS
+LIQUID LIMIT
+LESS THAN 50
+USCS
+TYPICAL
+DESCRIPTIONS
+GW
+MORE THAN 12%
+FINES
+WATER LEVEL OBSERVED IN BORING OVERNIGHT
+HIGHLY ORGANIC SOILS
+SILTY GRAVELS, GRAVEL-SAND-SILT
+MIXTURES
+OL
+PEAT, HUMUS, SWAMP SOILS WITH HIGH
+ORGANIC CONTENTS
+INORGANIC CLAYS OF LOW TO MEDIUM
+PLASTICITY, GRAVELLY CLAYS, SANDY
+CLAYS, SILTY CLAYS, LEAN CLAYS
+Soil Log Legend
+ORGANIC CLAYS OF MEDIUM TO HIGH
+PLASTICITY, ORGANIC SILTS
+SC
+Plate
+GM
+FINE-
+GRAINED
+SOILS
+COARSE-
+GRAINED
+SOILS
+CLEAN SANDS
+SANDS WITH
+FINES
+SP
+SANDS
+GRAVELS
+WELL-GRADED GRAVELS,  GRAVEL-SAND
+MIXTURES, LITTLE OR NO FINES
+ML
+CL
+OH
+LESS THAN 5%
+FINES
+GRAVELS WITH
+FINES
+CLEAN
+GRAVELS
+GRAB SAMPLE
+PLASTICITY INDEX (NP=NON-PLASTIC)
+TV
+LEGEND
+WATER LEVEL OBSERVED IN BORING AT TIME OF
+DRILLING
+WATER LEVEL OBSERVED IN BORING AFTER DRILLING
+SM
+MAJOR DIVISIONS
+GP
+MORE THAN 12%
+FINES
+PT
+LESS THAN 5%
+FINES
+UNIFIED SOIL CLASSIFICATION SYSTEM (USCS)
+ORGANIC SILTS AND ORGANIC SILTY
+CLAYS OF LOW PLASTICITY
+SW
+GC
+INORGANIC SILT, MICACEOUS OR
+DIATOMACEOUS FINE SAND OR SILTY
+SOILS
+INORGANIC CLAYS OF HIGH PLASTICITY
+PI
+LL
+TXUU
+UNCONFINED COMPRESSION
+OR UNIAXIAL COMPRESSIVE STRENGTH
+CORE SAMPLE
+SHELBY TUBE SAMPLE
+LIQUID LIMIT (NP=NON-PLASTIC)
+UC
+GEOLABS, INC.
+Geotechnical Engineering
+LOG LEGEND FOR SOIL  7316-00B.GPJ  GEOLABS.GDT  11/16/20
+A-0.2
+Soil Classification Log Key
+SECONDARY constituents are composed of either
+SAND or GRAVEL, depending on which one has the
+higher percentage. Secondary constituents are
+capitalized and bold (i.e., SANDY FAT CLAY,
+GRAVELLY ELASTIC SILT) and precede the primary
+constituent.
+Plate
+accessory descriptions compose of the following:
+with some: >12%
+with a little: 5 - 12%
+with traces of: <5%
+accessory descriptions are lower cased and follow the
+Primary and Secondary Constituents
+(i.e., FAT CLAY with some sand)
+ABBREVIATIONS
+WOH:  Weight of Hammer
+WOR:  Weight of Drill Rods
+SPT:    Standard Penetration Test Split-Spoon Sampler
+MCS:   Modified California Sampler
+PP:      Pocket Penetrometer
+GRANULAR SOIL (- #200 <50%)
+COHESIVE SOIL (- #200    50%)
+Granular Soils
+Cohesive Soils
+PRIMARY constituents are composed of the largest
+percent of the soil mass. Primary constituents are
+capitalized and bold (i.e., GRAVEL, SAND)
+PRIMARY constituents are based on plasticity. Primary
+constituents are capitalized and bold (i.e., FAT CLAY,
+ELASTIC SILT)
+SECONDARY constituents are composed of a
+percentage less than the primary constituent. If the soil
+mass consists of 12 percent or more fines content, a
+cohesive constituent is used (SILTY or CLAYEY).
+Secondary constituents are capitalized and bold (i.e.,
+SILTY GRAVEL, CLAYEY SAND) and precede the
+primary constituent.
+(with deviations from ASTM D2487 & ASTM D2488)
+accessory descriptions compose of the following:
+with some: >12%
+with a little: 5 - 12%
+with traces of: <5%
+accessory descriptions are lower cased and follow the
+Primary and Secondary Constituents
+(i.e., SILTY GRAVEL with a little sand)
+EXAMPLE: Soil Containing 60% Gravel, 25% Sand, 15% Fines. Described as: SILTY GRAVEL with some sand
+Consistency
+Very Soft
+Soft
+Medium Stiff
+Stiff
+Very Stiff
+Hard
+< 0.5
+0.5 - 1.0
+1.0 - 2.0
+7 - 18
+18 - 55
+55 - 91
+> 91
+Medium Dense
+Coarse Sand
+Dry:    Absence of moisture, dry to the touch
+Moist: Damp but no visible water
+Wet:   Visible free water
+Medium Sand
+Fine Sand
+#4 to #200 (4.75-mm to 0.075-mm)
+#4 to #10 (4.75-mm to 2-mm)
+> 12 inches (305-mm)
+3-inch to #4 (75-mm to 4.75-mm)
+Sieve Number and / or Size
+Gravel
+#10 to #40 (2-mm to 0.425-mm)
+#40 to #200 (0.425-mm to 0.075-mm)
+3 to 12 inches (75-mm to 305-mm)
+Description
+PP Readings
+(tsf)
+2.0 - 4.0
+> 4.0
+N-Value (Blows/Foot)
+MCS
+0 - 4
+RELATIVE DENSITY / CONSISTENCY
+GRAIN SIZE DEFINITION
+N-Value (Blows/Foot)
+0 - 7
+4 - 7
+7 - 15
+15 - 27
+27 - 55
+SPT
+0 - 2
+> 55
+> 30
+4 - 8
+15 - 30
+MOISTURE CONTENT DEFINITIONS
+SPT
+0 - 4
+4 - 10
+10 - 30
+30 - 50
+> 50
+MCS
+Loose
+2 - 4
+8 - 15
+Relative
+Density
+Very Loose
+Dense
+Very Dense
+Sand
+Boulders
+Cobbles
+Coarse Gravel
+3-inch to 3/4-inch (75-mm to 19-mm)
+Fine Gravel
+3/4-inch to #4 (19-mm to 4.75-mm)
+SOIL CLASSIFICATION AND DESCRIPTIONS*
+*Soil classification and descriptions are based on ASTM D2487 Unified Soil Classification System
+(USCS) and ASTM D2488, Visual-Manual Procedure, with the above modifications by Geolabs, Inc.
+SOIL_CLASS_LOG_KEY_NAVY  7316-00B.GPJ  GEOLABS.GDT  1/4/21
+GEOLABS, INC.
+Geotechnical Engineering
+A-0.3
+ROCK DESCRIPTIONS
+Plate
+BRECCIA
+CLINKER
+COBBLES
+CORAL
+BASALT
+ROCK DESCRIPTION SYSTEM
+Greater than 24 inches apart
+12 to 24 inches apart
+6 to 12 inches apart
+3 to 6 inches apart
+Less than 3 inches apart
+Rock shows no sign of discoloration or loss of strength.
+Slight discoloration inwards from open fractures.
+Discoloration throughout and noticeably weakened though not able to break by hand.
+Most minerals decomposed with some corestones present in residual soil mass. Can be broken by hand.
+Saprolite. Mineral residue completely decomposed to soil but fabric and structure preserved.
+The following terms describe general fracture spacing of a rock:
+The following terms describe the chemical weathering of a rock:
+ROCK FRACTURE CHARACTERISTICS
+DEGREE OF WEATHERING
+HARDNESS
+BOULDERS
+VOID/CAVITY
+TUFF
+SILTSTONE
+LIMESTONE
+Unweathered:
+Slightly Weathered:
+Moderately Weathered:
+Highly Weathered:
+Extremely Weathered:
+Very Hard:
+Hard:
+Medium Hard:
+Soft:
+Very Soft:
+SANDSTONE
+Massive:
+Slightly Fractured:
+Moderately Fractured:
+Closely Fractured:
+Severely Fractured:
+Rock Log Legend
+The following terms describe the resistance of a rock to indentation or scratching:
+Specimen breaks with difficulty after several "pinging" hammer blows.
+Example: Dense, fine grain volcanic rock
+Specimen breaks with some difficulty after several hammer blows.
+Example: Vesicular, vugular, coarse-grained rock
+Specimen can be broked by one hammer blow. Cannot be scraped by knife. SPT may penetrate by
+~25 blows per inch with bounce.
+Example: Porous rock such as clinker, cinder, and coral reef
+Can be indented by one hammer blow. Can be scraped or peeled by knife. SPT can penetrate by
+~100 blows per foot.
+Example: Weathered rock, chalk-like coral reef
+Crumbles under hammer blow. Can be peeled and carved by knife. Can be indented by finger
+pressure.
+Example: Saprolite
+CONGLOMERATE
+GEOLABS, INC.
+Geotechnical Engineering
+LOG LEGEND FOR ROCK  7316-00B.GPJ  GEOLABS.GDT  11/16/20
+41
+20
+16
+59
+100
+GM
+GM
+UC=
+2690 psi
+Sieve
+- #200 =
+22.5%
+100
+70
+0
+14
+49/6"
+ +50/2"
+25/1"
+25/1"
+10/0"
+ Ref.
+16
+50/6"
+ +25/1"
+100
+98
+68
+57
+7-inch CONCRETE
+Brown SILTY GRAVEL with some sand (fill)
+Grayish brown TUFF, moderately fractured,
+moderately weathered, hard (volcanic tuff)
+Grayish tan SILTY GRAVEL (CORALLINE) with
+some sand, loose (coralline detritus)
+Grayish tan CALCAREOUS SANDSTONE,
+closely fractured, moderately weathered,
+medium hard (calcareous sandstone)
+ Boring terminated at 22.08 feet
+ * Elevations estimated from Topographic Survey
+Map transmitted by SSFM International, Inc. on
+November 6, 2020.
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Dry Density
+(pcf)
+CME-75DG2
+4" Solid-Stem Auger & PQ Coring
+140 lb. wt., 30 in. drop
+Core
+Recovery (%)
+Laboratory
+USCS
+Depth (feet)
+5
+10
+15
+20
+25
+30
+35
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Moisture
+Content (%)
+RQD (%)
+Description
+Water Level:
+A - 1
+Log of
+Boring
+Penetration
+Resistance
+(blows/foot)
+Sample
+Field
+October 12, 2020
+October 12, 2020
+B. Aiu
+22.08 feet
+7316-00(B)
+(Energy Transfer Ratio = 89.5%)
+1
+Latitude: 21.352742° N
+Longitude: 157.955239° W
+Approximate Ground Surface
+Elevation(feet ): 13 *
+BORING_LOG (W/ LAT AND LONG)  7316-00B.GPJ  GEOLABS.GDT  5/7/21
+10.3 ft.   10/07/2020 1230 HRS
+GEOLABS, INC.
+Geotechnical Engineering
+UMIG FY21 SPECIAL PROJECT RM09-2894
+AMD 42 - REPLACE LOW PRESSURE AIR SYSTEM
+AT BUILDING 149
+JOINT BASE PEARL HARBOR-HICKAM, OAHU, HAWAII
+23
+21
+24
+19
+30
+25
+92
+100
+GM
+GC
+UC=
+1960 psi
+Sieve
+- #200 =
+17.1%
+UC=
+620 psi
+27
+32
+19
+45
+24
+0
+19
+75/4"
+50/4"
+25/1"
+66
+14
+30
+20
+27
+82
+78
+36
+93
+62
+0
+29
+3-inch ASPHALTIC CONCRETE
+Brown SILTY GRAVEL with some sand (fill)
+Brown TUFF, severely to moderately fractured,
+moderately weathered, medium hard to hard
+(volcanic tuff)
+Grayish tan CORAL, severely fractured,
+moderately weathered, medium hard (coral
+formation)
+Grayish tan CLAYEY GRAVEL with some sand,
+loose (coralline detritus)
+Tan cemented CALCAREOUS SANDSTONE,
+severely to moderately fractured, highly
+weathered, soft to medium hard (calcareous
+sandstone)
+grades to poorly cemented
+grades with some cobbles (coralline)
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Dry Density
+(pcf)
+CME-75DG2
+4" Solid-Stem Auger & PQ Coring
+140 lb. wt., 30 in. drop
+Core
+Recovery (%)
+Laboratory
+USCS
+Depth (feet)
+5
+10
+15
+20
+25
+30
+35
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Moisture
+Content (%)
+RQD (%)
+Description
+Water Level:
+A - 2.1
+Log of
+Boring
+Penetration
+Resistance
+(blows/foot)
+Sample
+Field
+October 5, 2020
+October 6, 2020
+B. Aiu
+102.5 feet
+7316-00(B)
+(Energy Transfer Ratio = 89.5%)
+2
+Latitude: 21.352743° N
+Longitude: 157.955236° W
+Approximate Ground Surface
+Elevation(feet ): 13 *
+BORING_LOG (W/ LAT AND LONG)  7316-00B.GPJ  GEOLABS.GDT  5/7/21
+10.2 ft.   10/06/2020 1415 HRS
+GEOLABS, INC.
+Geotechnical Engineering
+UMIG FY21 SPECIAL PROJECT RM09-2894
+AMD 42 - REPLACE LOW PRESSURE AIR SYSTEM
+AT BUILDING 149
+JOINT BASE PEARL HARBOR-HICKAM, OAHU, HAWAII
+52
+24
+34
+47
+50
+38
+79
+85
+73
+ML
+CH
+CL
+MH
+LL=NP
+PI=NP
+TXUU
+Su=2.0 ksf
+LL=57
+PI=32
+TXUU
+Su=0.8 ksf
+LL=48
+PI=26
+1.5
+39
+14
+16
+5
+17
+10
+15/0"
+ Ref.
+48
+0
+0
+0
+0
+0
+47
+Tan with some brown GRAVELLY SILT, very stiff
+(alluvium w/ coral debris)
+grades to stiff
+Tan with some brown FAT CLAY with some sand
+and gravel, medium stiff (alluvium w/ coral
+debris)
+grades to stiff
+Tan with some brown SANDY LEAN CLAY with
+some gravel, stiff (alluvium w/ coral debris)
+grades to hard locally
+Dark brownish gray ELASTIC SILT with a little
+sand, very stiff (weathered volcanic tuff)
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Dry Density
+(pcf)
+CME-75DG2
+4" Solid-Stem Auger & PQ Coring
+140 lb. wt., 30 in. drop
+Core
+Recovery (%)
+(Continued from previous plate)
+Laboratory
+USCS
+Depth (feet)
+40
+45
+50
+55
+60
+65
+70
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Moisture
+Content (%)
+RQD (%)
+Description
+Water Level:
+A - 2.2
+Log of
+Boring
+Penetration
+Resistance
+(blows/foot)
+Sample
+Field
+October 5, 2020
+October 6, 2020
+B. Aiu
+102.5 feet
+7316-00(B)
+(Energy Transfer Ratio = 89.5%)
+2
+BORING_LOG (W/ LAT AND LONG)  7316-00B.GPJ  GEOLABS.GDT  5/7/21
+10.2 ft.   10/06/2020 1415 HRS
+GEOLABS, INC.
+Geotechnical Engineering
+UMIG FY21 SPECIAL PROJECT RM09-2894
+AMD 42 - REPLACE LOW PRESSURE AIR SYSTEM
+AT BUILDING 149
+JOINT BASE PEARL HARBOR-HICKAM, OAHU, HAWAII
+91
+68
+35
+70
+77
+49
+61
+57
+59
+MH
+MH
+CH
+TXUU
+Su=6.0 ksf
+UC=
+2770 psi
+0
+88
+27
+0
+4.0
+34
+69/6"
+ +75/5"
+50/3"
+25/1"
+25/1"
+3
+0
+70
+100
+100
+59
+0
+grades to hard
+Dark grayish brown bedded TUFF, severely
+fractured, highly weathered, hard (volcanic tuff)
+grades to slightly fractured, moderately weathered
+grades to severely to closely fractured, moderately
+to highly weathered
+Tan ELASTIC SILT with a little sand, very soft
+(coralline detritus)
+Grayish brown FAT CLAY, very soft (alluvium)
+ Boring terminated at 102.5 feet
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Dry Density
+(pcf)
+CME-75DG2
+4" Solid-Stem Auger & PQ Coring
+140 lb. wt., 30 in. drop
+Core
+Recovery (%)
+(Continued from previous plate)
+Laboratory
+USCS
+Depth (feet)
+75
+80
+85
+90
+95
+100
+105
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Moisture
+Content (%)
+RQD (%)
+Description
+Water Level:
+A - 2.3
+Log of
+Boring
+Penetration
+Resistance
+(blows/foot)
+Sample
+Field
+October 5, 2020
+October 6, 2020
+B. Aiu
+102.5 feet
+7316-00(B)
+(Energy Transfer Ratio = 89.5%)
+2
+BORING_LOG (W/ LAT AND LONG)  7316-00B.GPJ  GEOLABS.GDT  5/7/21
+10.2 ft.   10/06/2020 1415 HRS
+GEOLABS, INC.
+Geotechnical Engineering
+UMIG FY21 SPECIAL PROJECT RM09-2894
+AMD 42 - REPLACE LOW PRESSURE AIR SYSTEM
+AT BUILDING 149
+JOINT BASE PEARL HARBOR-HICKAM, OAHU, HAWAII
+16
+19
+14
+91
+SP
+GW-
+GM
+Sieve
+- #200 =
+7.6%
+0
+7
+0
+63
+50/3"
+25/1"
+9
+21
+20/6"
+ +10/0"
+ Ref.
+93
+73
+95
+69
+3-inch ASPHALTIC CONCRETE
+Grayish brown poorly-graded SAND
+(BASALTIC), dense, moist (fill)
+Grayish brown TUFF, moderately fractured,
+moderately weathered, hard (volcanic tuff)
+Grayish tan well-graded GRAVEL (CORALLINE)
+with silt, loose (coralline detritus)
+grades to medium dense
+Grayish tan CALCAREOUS SANDSTONE,
+closely fractured, moderately weathered,
+medium hard (calcareous sandstone)
+ Boring terminated at 22 feet
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Dry Density
+(pcf)
+CME-75DG2
+4" Solid-Stem Auger & PQ Coring
+140 lb. wt., 30 in. drop
+Core
+Recovery (%)
+Laboratory
+USCS
+Depth (feet)
+5
+10
+15
+20
+25
+30
+35
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Moisture
+Content (%)
+RQD (%)
+Description
+Water Level:
+A - 3
+Log of
+Boring
+Penetration
+Resistance
+(blows/foot)
+Sample
+Field
+October 7, 2020
+October 8, 2020
+B. Aiu
+22 feet
+7316-00(B)
+(Energy Transfer Ratio = 89.5%)
+3
+Latitude: 21.352596° N
+Longitude: 157.95531° W
+Approximate Ground Surface
+Elevation(feet ): 12.5 *
+BORING_LOG (W/ LAT AND LONG)  7316-00B.GPJ  GEOLABS.GDT  5/7/21
+10.3 ft.   10/07/2020 1607 HRS
+GEOLABS, INC.
+Geotechnical Engineering
+UMIG FY21 SPECIAL PROJECT RM09-2894
+AMD 42 - REPLACE LOW PRESSURE AIR SYSTEM
+AT BUILDING 149
+JOINT BASE PEARL HARBOR-HICKAM, OAHU, HAWAII
+APPENDIX B  
+W.O. 7316-00(B) 
+GEOLABS, INC. 
+MAY 2021    Page B-1 
+Hawaii • California 
+A P P E N D I X   B 
+Laboratory Tests 
+Moisture Content (ASTM D2216) and Unit Weight (ASTM D2937) determinations 
+were performed on selected samples as an aid in the classification and evaluation of soil 
+properties. The test results are presented on the Logs of Borings at the appropriate 
+sample depths. 
+Three Atterberg Limits tests (ASTM D4318) were performed on selected soil 
+samples to evaluate the liquid and plastic limits. The test results are summarized on the 
+Logs of Borings at the appropriate sample depths. Graphic presentation of the test results 
+is provided on Plate B-1. 
+Three Sieve Analysis tests (ASTM C117 & C136) were performed on selected soil 
+samples to evaluate the gradation characteristics of the soils and to aid in soil 
+classification. Graphic presentations of the grain size distributions are provided on 
+Plate B-2. 
+One Unconsolidated Undrained Triaxial Compression test (ASTM D2850) was 
+performed on selected in-situ soil samples to evaluate the undrained shear strengths of 
+the soils.  The approximate in-situ effective overburden pressures were used as the 
+applied confining pressures for the relatively “undisturbed” soil samples.  The test results 
+and the stress-strain curves are presented on Plate B-3. 
+Four Uniaxial Compressive Strength tests (ASTM D7012, Method C) were performed 
+on coral core samples to evaluate the uniaxial compressive strength of the underlying 
+volcanic tuff and sandstone formation. The test results are presented on Plate B-4. 
+0
+10
+20
+30
+40
+50
+60
+70
+80
+90
+100
+0
+20
+40
+60
+80
+100
+120
+ML or OL
+CL-ML
+CL or OL
+CH or OH
+B - 1
+MH or OH
+LIQUID LIMIT
+PLASTICITY INDEX
+ATTERBERG LIMITS TEST RESULTS - ASTM D4318
+PI
+Depth (ft)
+Sample
+LL
+PL
+Description
+B-2
+B-2
+B-2
+41.0-42.5
+51.0-52.5
+61.0-62.5
+NP
+57
+48
+NP
+25
+22
+NP
+32
+26
+Tan with some brown gravelly silt (NP)
+Tan with some brown silty clay (CH) with some sand and gravel
+Tan with some brown sandy clay (CL) with some gravel
+NP = NON-PLASTIC
+4
+7
+Plate
+W.O. 7316-00(B)
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+UMIG FY21 SPECIAL PROJECT RM09-2894
+AMD 42 - REPLACE LOW PRESSURE AIR SYSTEM
+AT BUILDING 149
+JOINT BASE PEARL HARBOR-HICKAM, OAHU, HAWAII
+G_ATTERBERG_PI-100_LL-120  7316-00B.GPJ  GEOLABS.GDT  11/16/20
+0
+5
+10
+15
+20
+25
+30
+35
+40
+45
+50
+55
+60
+65
+70
+75
+80
+85
+90
+95
+100
+0.001
+0.01
+0.1
+1
+10
+100
+4.649
+8.58
+6.056
+B - 2
+coarse
+1
+1.5
+3
+2
+0.131
+40
+Depth (ft)
+%Gravel
+39.6
+56.2
+47.2
+37.9
+26.7
+45.2
+%Sand
+COBBLES
+Sample
+D30 (mm)
+140
+20
+2.6
+46.3
+HYDROMETER
+3
+GRAIN SIZE IN MILLIMETERS
+PERCENT FINER BY WEIGHT
+100
+coarse
+1/2
+Sample
+0.329
+0.539
+1.432
+Cu
+GRAVEL
+U.S. SIEVE NUMBERS
+D10 (mm)
+16
+fine
+25
+25
+25
+Cc
+3/4
+fine
+SILT OR CLAY
+medium
+GRAIN SIZE DISTRIBUTION - ASTM D6913
+SAND
+%Fine
+60
+4
+30
+200
+4
+6
+22.5
+17.1
+7.6
+Depth (ft)
+LL
+Grayish tan silty gravel (GM) with some sand
+Grayish tan clayey gravel (GC) with some sand
+Grayish tan well-graded gravel (GW-GM) with silt
+810 14
+50
+U.S. SIEVE OPENING IN INCHES
+6
+D60 (mm)
+D100 (mm)
+B-1
+B-2
+B-3
+16.0-17.5
+16.0-17.5
+16.0-17.5
+16.0-17.5
+16.0-17.5
+16.0-17.5
+B-1
+B-2
+B-3
+3/8
+PL PI
+Description
+Plate
+W.O. 7316-00(B)
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+UMIG FY21 SPECIAL PROJECT RM09-2894
+AMD 42 - REPLACE LOW PRESSURE AIR SYSTEM
+AT BUILDING 149
+JOINT BASE PEARL HARBOR-HICKAM, OAHU, HAWAII
+G_GRAIN_SIZE_MOD  7316-00B.GPJ  GEOLABS.GDT  5/7/21
+0
+0.5
+1.0
+1.5
+2.0
+2.5
+3.0
+3.5
+4.0
+0
+4
+8
+12
+16
+Location:
+Sample Diameter (inches)
+Sample Height (inches)
+DEVIATOR STRESS, ksf
+Max. Deviator Stress (ksf):
+Confining Stress (ksf):
+AXIAL STRAIN, %
+3.1
+3.9
+Dry Density (pcf)
+Moisture (%)
+Axial Strain at Failure (%)
+Strain Rate (% / minute)
+34.3
+84.7
+13.2
+Tan with some brown gravelly silt
+46.0 - 47.5 feet
+Description:
+Depth:
+B-2
+TRIAXIAL UU COMPRESSION TEST - ASTM D2850
+Test Date:
+5.133
+2.403
+0.70
+B - 3
+11/6/2020
+Plate
+W.O. 7316-00(B)
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+UMIG FY21 SPECIAL PROJECT RM09-2894
+AMD 42 - REPLACE LOW PRESSURE AIR SYSTEM
+AT BUILDING 149
+JOINT BASE PEARL HARBOR-HICKAM, OAHU, HAWAII
+G_TXUU  7316-00B.GPJ  GEOLABS.GDT  11/19/20
+B-1
+6 - 11
+6.760
+3.240
+2.09
+122.0
+22,170
+2,690
+B-2
+6 - 11
+6.740
+3.260
+2.07
+129.4
+16,360
+1,960
+B-2
+17.5 - 21
+6.710
+3.250
+2.06
+119.9
+5,130
+620
+B-2
+86.08 - 91
+6.730
+3.260
+2.06
+123.3
+23,100
+2,770
+B - 4
+Depth
+Location
+Length
+Diameter
+Length/
+Diameter
+Ratio
+(feet)
+(inches)
+(inches)
+(pcf)
+(psi)
+Density
+Compressive
+Strength
+Load
+UNIAXIAL COMPRESSIVE STRENGTH TEST
+(lbs)
+ASTM D7012 (METHOD C)
+Note: Samples were not prepared in accordance with ASTM D4543. Therefore, results reported may differ from results obtained from a test speciment that meets the requirements of
+Practice D4543
+Plate
+W.O. 7316-00(B)
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+UMIG FY21 SPECIAL PROJECT RM09-2894
+AMD 42 - REPLACE LOW PRESSURE AIR SYSTEM
+AT BUILDING 149
+JOINT BASE PEARL HARBOR-HICKAM, OAHU, HAWAII
+G_ROCK_UC_TEST_PORTRAIT  7316-00B.GPJ  GEOLABS.GDT  11/19/20
+APPENDIX C  
+UMIG FY21 SPECIAL PROJECT RM09‐2894 
+AMD 42 – REPLACE LOW PRESSURE AIR SYSTEM AT BUILDING 149  
+JOINT BASE PEARL HARBOR‐HICKAM, OAHU, HAWAII  
+W.O. 7316‐00(B) 
+GEOLABS, INC. 
+PLATE C‐1 
+Hawaii • California 
+                                                B‐1     5.08’ TO 21.0’ 
+5.08’ 
+ 6.0’ 
+  11.0’ 
+17.5’ 
+       6.0’          
+             11.0’                       
+   16.0’              21.0’ 
+UMIG FY21 SPECIAL PROJECT RM09‐2894 
+AMD 42 – REPLACE LOW PRESSURE AIR SYSTEM AT BUILDING 149  
+JOINT BASE PEARL HARBOR‐HICKAM, OAHU, HAWAII  
+W.O. 7316‐00(B) 
+GEOLABS, INC. 
+PLATE C‐2 
+Hawaii • California 
+                                                                                                                           B‐2     5.0’ TO 96.0’ 
+   5.0’ 
+ 12.5’ 
+   22.5’ 
+   66.0’ 
+ 81.75’ 
+ 86.08’ 
+91.08’ 
+                          11.0’                              21.0’ 
+                           41.0’  
+                        81.0’ 
+                           86.0’ 
+                          91.0’ 
+                           96.0’ 
+UMIG FY21 SPECIAL PROJECT RM09‐2894 
+AMD 42 – REPLACE LOW PRESSURE AIR SYSTEM AT BUILDING 149  
+JOINT BASE PEARL HARBOR‐HICKAM, OAHU, HAWAII  
+W.O. 7316‐00(B) 
+GEOLABS, INC. 
+PLATE C‐3 
+Hawaii • California 
+                                             B‐3     5.0’ TO 21.0’ 
+   5.0’ 
+12.5’ 
+  17.5’ 
+                           11.0’ 
+                         16.0’ 
+                          21.0’ 

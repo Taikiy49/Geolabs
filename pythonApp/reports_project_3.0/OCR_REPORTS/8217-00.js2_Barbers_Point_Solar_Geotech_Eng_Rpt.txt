@@ -1,0 +1,5484 @@
+GEOTECHNICAL ENGINEERING EXPLORATION 
+BARBERS POINT SOLAR PROJECT 
+KAPOLEI, OAHU, HAWAII 
+W.O. 8217-00     APRIL 25, 2023 
+Prepared for 
+BARBERS POINT SOLAR LLC 
+GEOLABS, INC. 
+Geotechnical Engineering and Drilling Services 
+Geotechnical Engineering Report - 04/25/2023
+GEOTECHNICAL ENGINEERING EXPLORATION 
+BARBERS POINT SOLAR 
+KAPOLEI, OAHU, HAWAII 
+W.O. 8217-00     APRIL 25, 2023 
+Prepared for 
+BARBERS POINT SOLAR LLC 
+GEOLABS, INC. 
+Geotechnical Engineering and Drilling Services 
+94-429 Koaki Street, Suite 200 • Waipahu, HI  96797 
+Hawaii • California 
+THIS WORK WAS PREPARED BY 
+ME OR UNDER MY SUPERVISION. 
+4-30-24 
+SIGNATURE 
+EXPIRATION DATE 
+OF THE LICENSE 
+Geotechnical Engineering Report - 04/25/2023
+GEOLABS, INC. 
+Geotechnical Engineering and Drilling Services 
+94-429 Koaki Street, Suite 200 • Waipahu, Hawaii 96797 
+Telephone: (808) 841-5064  •  E-mail: hawaii@geolabs.net 
+Hawaii • California 
+April 25, 2023 
+W.O. 8217-00 
+Mr. Muhammed Senay 
+Innergex 
+1225, rue Saint-Charles, 10e étage  
+Longueuil (Quebec) J4K 0B9, Canada 
+Dear Mr. Senay: 
+Geolabs, Inc. is pleased to submit our report entitled "Geotechnical Engineering 
+Exploration, Barbers Point Solar, Kapolei, Oahu, Hawaii” prepared in support of the 
+design of the project. 
+Our work was performed in general accordance with the scope of services 
+outlined in our revised fee proposal dated September 14, 2020 and authorized by the 
+services contract entered into on September 30, 2020. 
+Please note that the soil and rock core samples recovered during our field 
+exploration (remaining after testing) will be stored for a period of two months from the 
+date of this report. The samples will be discarded after that date unless arrangements 
+are made for a longer sample storage period. Please contact our office for alternative 
+sample storage requirements, if appropriate. 
+Detailed discussion and specific design recommendations are contained in the 
+body of this report. If there is any point that is unclear, please contact our office. 
+Very truly yours, 
+GEOLABS, INC. 
+       Robin M. Lim, P.E. 
+              President 
+RML:JS:rl 
+Geotechnical Engineering Report - 04/25/2023
+W.O. 8217-00 
+GEOLABS, INC. 
+Page i 
+Hawaii • California 
+GEOTECHNICAL ENGINEERING EXPLORATION 
+BARBERS POINT SOLAR PROJECT 
+KAPOLEI, OAHU, HAWAII 
+W.O. 8217-00     APRIL 25, 2023 
+TABLE OF CONTENTS 
+                                                                                                                                    Page 
+SUMMARY OF FINDINGS AND RECOMMENDATIONS .............................................. iii 
+1. 
+GENERAL ............................................................................................................ 1 
+1.1 
+Project Considerations ............................................................................... 1 
+1.2 
+Purpose and Scope ................................................................................... 2 
+2. 
+SITE CHARACTERIZATION ................................................................................ 5 
+2.1 
+Regional Geology ...................................................................................... 5 
+2.2 
+Site Description .......................................................................................... 6 
+2.3 
+Subsurface Conditions ............................................................................... 6 
+2.4 
+Seismic Design Considerations ................................................................. 8 
+2.4.1 Earthquakes and Seismicity ........................................................... 8 
+2.4.2 Liquefaction .................................................................................... 9 
+2.4.3 Soil Profile Type for Seismic Design ............................................ 10 
+3. 
+DISCUSSION AND RECOMMENDATIONS ...................................................... 12 
+3.1 
+Equipment and Structure Foundations..................................................... 13 
+3.2 
+Foundation Proof-Rolling ......................................................................... 15 
+3.3 
+Concrete Slabs-On-Grade ....................................................................... 15 
+3.4 
+Solar Array Foundations .......................................................................... 16 
+3.5 
+Alternate Solar Array Foundations ........................................................... 17 
+3.5.1 Lateral Load Resistance ............................................................... 19 
+3.5.2 Foundation Settlements ............................................................... 19 
+3.5.3 Pile Construction Considerations ................................................. 19 
+3.6 
+Substation Foundations ........................................................................... 20 
+3.6.1 Uplift Load Resistance ................................................................. 21 
+3.6.2 Lateral Load Resistance ............................................................... 22 
+3.6.3 Drilled Shaft Construction Considerations .................................... 23 
+3.7 
+Site Grading ............................................................................................. 24 
+3.7.1 Site Preparation ............................................................................ 24 
+3.7.2 Fills and Backfills .......................................................................... 25 
+3.7.3 Fill Placement and Compaction Requirements............................. 26 
+3.7.4 Coral Excavations ........................................................................ 26 
+3.8 
+Pavement Design .................................................................................... 26 
+3.9 
+Gravel Roadways .................................................................................... 28 
+3.10 
+Underground Utility Lines ......................................................................... 29 
+Geotechnical Engineering Report - 04/25/2023
+TABLE OF CONTENTS  
+Page 
+W.O. 8217-00 
+GEOLABS, INC. 
+Page ii 
+Hawaii • California 
+3.11 
+Corrosion Potential .................................................................................. 30 
+3.11.1 Field Resistivity Survey ................................................................ 30 
+3.11.2 Laboratory Corrosivity Testing...................................................... 31 
+3.11.3 Laboratory Thermal Resistivity Testing ........................................ 32 
+3.12 
+Design Review ......................................................................................... 32 
+3.11 
+Post-Design Services/Services During Construction ............................... 32 
+4. 
+LIMITATIONS ..................................................................................................... 34 
+CLOSURE ..................................................................................................................... 36 
+PLATES 
+Project Location Map ................................................................................... Plate 1 
+Site Plan ...................................................................................................... Plate 2 
+APPENDIX A 
+Field Exploration ....................................................................... Pages A-1 and A-2 
+Soil Log Legend ..................................................................................... Plate A-0.1 
+Soil Classification Log Key .................................................................... Plate A-0.2 
+Rock Log Legend .................................................................................. Plate A-0.3 
+Logs of Borings ....................................................................... Plates A-1 thru A-18 
+APPENDIX B 
+Laboratory Tests ...................................................................................... Page B-1 
+Laboratory Test Data .............................................................. Plates B-1 thru B-15 
+APPENDIX C 
+Photographs of Core Samples .................................................. Plates C-1 thru C-8 
+APPENDIX D 
+Field Resistivity Surveys .......................................................................... Page D-1 
+Field Resistivity Survey Data .................................................... Plates D-1 thru D-5 
+APPENDIX E 
+Thermal Resistivity Test Report ................................................................. 7 Pages 
+Geotechnical Engineering Report - 04/25/2023
+W.O. 8217-00 
+GEOLABS, INC. 
+Page iii 
+Hawaii • California 
+GEOTECHNICAL ENGINEERING EXPLORATION 
+BARBERS POINT SOLAR PROJECT 
+KAPOLEI, OAHU, HAWAII 
+W.O. 8217-00     APRIL 25, 2023 
+SUMMARY OF FINDINGS AND RECOMMENDATIONS 
+Our field exploration generally encountered 2 to 6 inches of asphaltic concrete 
+pavement (Boring Nos. 2, 4, 8 and 15 only) and 0.2 to 5 feet of surface fill at the 
+surface. The fills encountered consisted of medium dense silty sands, silty gravel, and 
+sandy gravel and very stiff to hard clayey silts, sandy silts, and gravelly silts. The 
+surface fills generally are underlain by coralline detritus and coral formation extending to 
+the maximum depth drilled of about 14.5 feet below the existing ground surface. In 
+general, the coralline detritus consisted of medium dense to very dense sands, silty 
+sands, and sandy gravel and very stiff sandy silts. The coral formation ranged from soft 
+to hard and from slightly to highly weathered. 
+We did not encounter groundwater in the borings drilled at the time of our field 
+exploration. However, groundwater levels likely will change in response to rainfall, 
+seasonal precipitation, surface water runoff, and other factors. 
+Based on the subsurface conditions encountered at the project site, we 
+recommend using shallow spread and/or continuous strip footings to support the new 
+structures planned. As an alternative, foundations for support of the new structures 
+planned also may consist of thickened-edge slab footings. An allowable bearing 
+pressure of up to 3,000 psf may be used for the design of footings bearing on the 
+recompacted on-site soils, new compacted fills needed to achieve the design finished 
+grades, or coral formation. Bottom of the footings should be embedded a minimum of 
+18 inches below the lowest adjacent exterior grade. 
+Due to the presence of hard coral formation at relatively shallow depths, we 
+envision the typical driven pile system may encounter difficult driving conditions in some 
+areas. In addition, the broken up coral formation from the pile installation would not 
+provide much frictional resistance to the pile element requiring the pile element to be 
+embedded deeper to provide the required resistance. As a result, we recommend 
+supporting the solar panel arrays on a ballasted ground mounting system. Alternatively, 
+consideration may be given to the implementation of predrilling the pile locations for the 
+installation of the driven pile foundation system, if elected for support of the solar panel 
+array.  
+Based on the information provided, we understand it is desired to support the 
+proposed substation for the project on a foundation system consisting of cast-in-place 
+concrete drilled shafts to develop the required bearing and lateral load resistances. The 
+cast-in-place concrete drilled shafts would derive vertical support principally from skin 
+friction between the shafts and the surrounding soils and/or coralline deposits. Based on 
+Geotechnical Engineering Report - 04/25/2023
+SUMMARY OF FINDINGS AND RECOMMENDATIONS 
+W.O. 8217-00 
+GEOLABS, INC. 
+Page iv 
+Hawaii • California 
+the subsurface conditions encountered, we recommend using an allowable skin friction 
+value of 500 psf to determine the allowable compressive load capacity of the cast-in-
+place concrete drilled shafts. 
+The text of this report should be referred to for detailed discussion and specific 
+design recommendations. 
+END OF SUMMARY OF FINDINGS AND RECOMMENDATIONS 
+Geotechnical Engineering Report - 04/25/2023
+W.O. 8217-00 
+GEOLABS, INC. 
+Page 1 
+Hawaii • California 
+SECTION 1.  GENERAL 
+This report presents the results of our geotechnical engineering exploration 
+conducted for the Barbers Point Solar Project located in Kapolei on the Island of Oahu, 
+Hawaii. The project location and general vicinity are shown on the Project Location 
+Map, Plate 1. 
+This report summarizes the findings and geotechnical recommendations resulting 
+from our field exploration, laboratory testing, and engineering analyses for the project. 
+These findings and geotechnical recommendations are intended for the design of 
+foundations, slabs-on-grade, site grading, and pavements only. The findings and 
+recommendations presented herein are subject to the limitations noted at the end of this 
+report. 
+1.1 
+Project Considerations 
+Barbers Point Solar LLC (Barbers Point Solar) is proposing to build and operate 
+the Barbers Point Solar Project (Project) located in east Kalaeloa, `Ewa District, on the 
+Island of O`ahu. The Project will consist of a 15-megawatt (MWac) solar photovoltaic 
+(PV) system coupled with a 15-MW, 4-hour (60 MWh) PV coupled battery energy 
+storage system (PV-Coupled ESS) as well as ancillary support infrastructure located 
+within an approximately 168-acre (68 hectares) Study Area. The Project will be located 
+primarily on Tax Map Keys (TMK): 9-1-013: 038 and 9-1-013: 040, owned by the State 
+of Hawaii, Department of Hawaiian Home Lands. The major components of the solar 
+farm infrastructure Project will include the following elements:  
+1. 
+The solar PV system; 
+2. 
+a network of AC and DC electrical collector lines; 
+3. 
+battery energy storage and inverter units; 
+4. 
+step-up transformers;  
+5. 
+a collector substation and transformer; 
+6. 
+an overhead generation-tie line; 
+7. 
+internal access roads; and 
+8. 
+temporary laydown (i.e., staging) areas for construction. 
+The solar arrays and associated infrastructure would be located primarily on 
+TMK: 9-1-013:038 and TMK: 9-1-013:040. The 49-kilovolt overhead generation-tie line 
+Geotechnical Engineering Report - 04/25/2023
+SECTION 1. GENERAL 
+W.O. 8217-00 
+GEOLABS, INC. 
+Page 2 
+Hawaii • California 
+would extend approximately 1,200 feet (369 meters) from the Project collector 
+substation to connect into the Hawaiian Electric Company grid on TMK: 9-1-103: 096. 
+The main access routes to the solar array areas would utilize the existing roads off of 
+Tripoli Road to the south, Coral Sea Road to the west, and Geiger Road on the north. A 
+network of existing (to be improved) and new on‐site access roads will be utilized within 
+the solar array areas on TMK: 9-1-013: 038 and TMK: 9-1-013: 040. 
+It is anticipated that the Project construction and commissioning would require 
+approximately 12 months. The power generated by the Project will be sold to Hawaiian 
+Electric under a 25-year Power Purchase Agreement (PPA). At that point in time, the 
+Project may be repowered under a renegotiated PPA or other contract (with subsequent 
+permits/approvals) or decommissioned. Decommissioning will involve removal of all 
+equipment associated with the Project and returning the area to substantially the same 
+condition as existed prior to Project development. Decommissioning will include the 
+recycling and reuse of materials demolished or removed from the site to the extent 
+feasible. 
+Based on the information provided, we understand that detailed foundation 
+support for the solar array and substation will be conducted by others. Detailed 
+information pertaining to the project layout were not available at the time this report was 
+prepared. However, it is anticipated that the new structures will consist of mainly 
+elevated solar panel arrays extending up to 8 feet above the existing grades with 
+associated support facilities.  
+1.2 
+Purpose and Scope 
+The purpose of our geotechnical engineering exploration was to obtain an 
+overview of the surface and subsurface conditions to develop an idealized soil and/or 
+rock data set to formulate geotechnical recommendations for the project design. The 
+scope of work for this exploration included the following tasks and work efforts: 
+1. 
+Site reconnaissance by our project engineer. 
+2. 
+Application for an FAA 7460 permit due to the site proximity to an active 
+public use airport. 
+Geotechnical Engineering Report - 04/25/2023
+SECTION 1. GENERAL 
+W.O. 8217-00 
+GEOLABS, INC. 
+Page 3 
+Hawaii • California 
+3. 
+Coordination of boring stakeout, underground utility toning, and site 
+access by our engineer. 
+4. 
+Mobilization and demobilization of a bulldozer, excavator, and mulcher to 
+conduct trail clearing to provide equipment access to the planned boring 
+and resistivity test locations. 
+5. 
+Mobilization and demobilization of a truck-mounted drill rig and water truck 
+and two operators to the project site and back. 
+6. 
+Drilling and sampling of 18 borings extending to depths of approximately 
+10.5 to 14.5 feet below the existing ground surface for a total of 
+approximately 221.5 linear feet of exploration. 
+7. 
+Performance of in-situ soil resistivity surveys at six locations along 
+orthogonal lines using the Wenner 4-Pin Method at 2.5, 5, 10, and 20-foot 
+electrode spacings in general accordance with ASTM G57 to evaluate the 
+subsurface resistivity characteristics for the design of grounding grids by 
+others. Additional electrode spacings of 30, 60, 100, 150, and 200 feet 
+were performed at the R-6 resistivity test location. 
+8. 
+Collection of five bulk samples of the near-surface soils for thermal 
+resistivity testing by our subcontractor, Geotherm USA. 
+9. 
+Coordination of the field exploration and logging of the borings by our 
+engineer and geologist. 
+10. 
+Laboratory testing of selected soil and rock core samples obtained during 
+the field exploration as an aid in classifying the materials and evaluating 
+their engineering properties. 
+11. 
+Analyses of the field and laboratory data to formulate geotechnical 
+recommendations for the design of the solar project. 
+12. 
+Preparation of this geotechnical engineering report summarizing our work 
+on the project and presenting our findings and recommendations. 
+13. 
+Coordination of our overall work on the project by our engineer. 
+14. 
+Quality assurance of our work and client/design team consultation by our 
+principal engineer. 
+15. 
+Miscellaneous work efforts, such as drafting, word processing, clerical 
+support, and reproductions. 
+Detailed descriptions of our field exploration methodology and the Logs of 
+Borings are presented in Appendix A. Results of the laboratory tests performed on 
+selected soil and rock core samples are presented in Appendix B. Photographs of the 
+Geotechnical Engineering Report - 04/25/2023
+SECTION 1. GENERAL 
+W.O. 8217-00 
+GEOLABS, INC. 
+Page 4 
+Hawaii • California 
+core samples retrieved from our field exploration are presented in Appendix C. Results 
+of the field resistivity surveys performed at selected locations are presented in 
+Appendix D, and results of the thermal resistivity tests performed by Geotherm USA are 
+presented in Appendix E. 
+END OF GENERAL 
+Geotechnical Engineering Report - 04/25/2023
+W.O. 8217-00 
+GEOLABS, INC. 
+Page 5 
+Hawaii • California 
+SECTION 2.  SITE CHARACTERIZATION 
+Of interest to our geotechnical analysis are the subsurface materials encountered 
+at the project site, the engineering properties of the materials encountered, and the 
+variability of the subsurface conditions across the project site. Therefore, the following 
+subsections provide a description of the geologic setting of the project site, the surface 
+and subsurface conditions encountered at the site, and a discussion of the items 
+needed for seismic design, such as the seismicity, soil liquefaction, and the soil profile 
+characteristics for seismic analysis. 
+2.1 
+Regional Geology 
+The Island of Oahu was built by the extrusion of basalt and basaltic lavas from 
+the Waianae and Koolau Shield Volcanoes. The older Waianae Volcano is estimated to 
+be middle to late Pliocene in age, and the younger Koolau Volcano is estimated to be 
+late Pliocene to early Pleistocene in age. 
+The project site is situated on the Ewa Coastal Plain, which extends seaward off 
+the southeastern flank of Waianae Volcano and the southwestern flank of Koolau 
+Volcano. This plain was formed by the accumulation of a thick wedge of sediments and 
+coral reef formations on the flanks of the two volcanoes.  
+During the Pleistocene Epoch, sea levels fluctuated in response to the cycles of 
+continental glaciation. As the glaciers grew and advanced, less water was available to 
+fill the oceanic basins such that sea levels fell below the present stands of the sea. 
+When the glaciers melted and receded, an excess of water became available such that 
+the sea levels rose to above the present sea level. 
+The higher sea level stands caused the formation of reef deposits at 
+correspondingly higher elevations. Subaerial exposure of the sediments and calcareous 
+materials caused consolidation of the lagoonal deposits and induration of the 
+calcareous reef materials. 
+Geotechnical Engineering Report - 04/25/2023
+SECTION 2. SITE CHARACTERIZATION 
+W.O. 8217-00 
+GEOLABS, INC. 
+Page 6 
+Hawaii • California 
+2.2 
+Site Description 
+Barbers Point Solar LLC (Barbers Point Solar) is proposing to build and operate 
+the Barbers Point Solar Project (Project) located in east Kalaeloa, `Ewa District, on the 
+Island of O`ahu. The Project will consist of a 15-MWac solar photovoltaic (PV) system 
+coupled with a 15-MW, 4-hour (60 MWh) PV coupled battery energy storage system 
+(PV-Coupled ESS) as well as ancillary support infrastructure located within an 
+approximately 168-acre (68 hectares) Study Area. The Project will be located on 
+primarily TMK: 9-1-013: 038 and 9-1-013: 040, owned by State of Hawaii, Department 
+of Hawaiian Home Lands. The approximate limits of the project and study areas are 
+shown on the Site Plan, Plate 2. 
+Generally, the project area consists of vacant land with the existing ground 
+surface covered with light to thick vegetation consisting of dried grasses, haole koa, and 
+keawe trees. An area within the project site in the vicinity of Long Island and 
+Casablanca Streets was cleared previously and at the time of our exploration was used 
+for ranching and equipment and container storage. Asphaltic concrete pavement was 
+observed at the ground surface at several areas throughout the project site. The 
+asphaltic concrete pavement was generally in poor conditions with alligator pattern and 
+block cracking. In addition, vegetation was observed to be growing through cracks in the 
+asphaltic concrete pavements. 
+Based on the available information, the existing ground surface generally slopes 
+down from north to south, with ground surface elevations ranging from approximately 
++38 to +14 feet Mean Sea Level (MSL). It should be noted that a topographic survey 
+map was not available at the time this report was prepared. Therefore, the ground 
+surface elevations provided herein are based on information obtained through Google 
+Earth Pro. 
+2.3 
+Subsurface Conditions 
+We explored the subsurface conditions at the project site by drilling and sampling 
+18 test borings, designated as Boring Nos. 1 through 18, extending to depths of about 
+10.5 to 14.5 feet below the existing ground surface. Five bulk samples of the 
+near-surface soils, designated as TR-1 through TR-5, were collected for laboratory 
+Geotechnical Engineering Report - 04/25/2023
+SECTION 2. SITE CHARACTERIZATION 
+W.O. 8217-00 
+GEOLABS, INC. 
+Page 7 
+Hawaii • California 
+California Bearing Ratio (CBR), Proctor, and thermal resistivity tests to evaluate the 
+pavement support and heat transfer characteristics of the near-surface soils. The 
+approximate boring and bulk sample locations are shown on the Site Plan, Plate 2. 
+Our field exploration at the project site generally encountered about 2 to 6 inches 
+of asphaltic concrete pavement (Boring Nos. 2, 4, 8 and 15 only) and 0.2 to 5 feet of 
+surface fills. The fill materials encountered consisted of medium dense silty sands, silty 
+gravel, and sandy gravel and very stiff to hard clayey silts, sandy silts, and gravelly silts. 
+The surface fills generally are underlain by coralline detritus and coral formation 
+extending to the maximum depth drilled of about 14.5 feet below the existing ground 
+surface. In general, the coralline detritus consisted of medium dense to very dense 
+sands, silty sands, and sandy gravel and very stiff sandy silts. The coral formation 
+ranged from soft to hard and from slightly to highly weathered. 
+It should be noted that the strength characteristics of the coralline deposits are 
+highly variable. In addition, the depositional nature of the coralline deposits may create 
+localized areas of hard, crystalline coral, limestone and/or sandstone formations 
+intermixed with soft, severely fractured detritus. Cavities or voids are commonly 
+encountered in the coralline deposits in the project vicinity. 
+We did not encounter groundwater in the drilled borings at the time of our field 
+exploration. However, groundwater levels likely will change in response to rainfall, 
+seasonal precipitation, surface water runoff, and other factors. 
+Detailed descriptions of the field exploration methodology are presented in 
+Appendix A. Descriptions and graphic representations of the materials encountered in 
+the borings are presented on the Logs of Borings in Appendix A. Laboratory tests were 
+performed on selected soil and/or rock core samples, and the test results are presented 
+in Appendix B. Photographs of the core samples retrieved during our field exploration 
+are presented in Appendix C. Results of the field resistivity surveys are presented in 
+Appendix D. Thermal resistivity tests were conducted on selected bulk samples of the 
+near-surface soils by Geotherm USA, and the thermal resistivity test results are 
+presented in Appendix E. 
+Geotechnical Engineering Report - 04/25/2023
+SECTION 2. SITE CHARACTERIZATION 
+W.O. 8217-00 
+GEOLABS, INC. 
+Page 8 
+Hawaii • California 
+2.4 
+Seismic Design Considerations 
+Based on the International Building Code (2018 Edition), the project site may be 
+subject to seismic activity, and seismic design considerations will need to be addressed. 
+The following sections provide discussions on the seismicity, soil profile type for seismic 
+design, and the potential for liquefaction at the project site. 
+2.4.1 Earthquakes and Seismicity 
+In general, earthquakes throughout the world are caused by shifts in the tectonic 
+plates. In contrast, earthquake activity in Hawaii is linked primarily to volcanic 
+activity; therefore, earthquake activity in Hawaii generally occurs before or during 
+volcanic eruptions. In addition, earthquakes may result from the underground 
+movement of magma that comes close to the surface but does not erupt. The 
+Island of Hawaii experiences thousands of earthquakes each year, but most are 
+so small that they can only be detected by sensitive instruments. However, some 
+of the earthquakes are strong enough to be felt, and a few cause minor to 
+moderate damage. 
+In general, earthquakes associated with volcanic activity are most common on 
+the Island of Hawaii. Earthquakes that are directly associated with the movement 
+of magma are concentrated beneath the active Kilauea and Mauna Loa 
+Volcanoes on the Island of Hawaii. Because the majority of earthquakes in 
+Hawaii (over 90 percent) are related to volcanic activity, the risk of seismic 
+activity and degree of ground shaking diminishes with increased distance from 
+the Island of Hawaii. The Island of Hawaii has experienced numerous 
+earthquakes greater than Magnitude 5 (M5+); however, earthquakes are not 
+confined only to the Island of Hawaii. 
+To a lesser degree, the Island of Maui has experienced several earthquakes 
+greater than Magnitude 5. Therefore, moderate to strong earthquakes have 
+occurred in the County of Maui. The effects of earthquakes occurring on the 
+Islands of Hawaii and Maui may be felt on the Island of Oahu. For example, small 
+landslides occurred on the Island of Oahu as a result of the Maui Earthquake of 
+Geotechnical Engineering Report - 04/25/2023
+SECTION 2. SITE CHARACTERIZATION 
+W.O. 8217-00 
+GEOLABS, INC. 
+Page 9 
+Hawaii • California 
+1938 (M6.8). Some houses on the Island of Oahu were reportedly damaged as a 
+result of the Lanai Earthquake of 1871 (M7+). 
+In the last 150 years of recorded history, we are not aware of earthquakes 
+greater than Magnitude 6 that have occurred on the Island of Oahu. An 
+earthquake of Magnitude 4.8 to 5.0 occurred along the Diamond Head Fault in 
+1948 on the Island of Oahu. The moderate tremor resulted in broken store 
+windows, ruptured building walls, and broken underground water mains. 
+2.4.2 Liquefaction 
+Based on the International Building Code (2018 Edition), the project site should 
+be evaluated for the potential for soil liquefaction. Soil liquefaction is a condition 
+where saturated cohesionless soils near the ground surface undergo a 
+substantial loss of strength due to the build-up of excess pore water pressures 
+resulting from cyclic stress applications induced by earthquakes. In this process, 
+when the loose saturated sand deposit is subjected to vibration (such as during 
+an earthquake), the soil tends to densify and decrease in volume causing an 
+increase in pore water pressure.  
+If drainage is unable to occur rapidly enough to dissipate the build-up of pore 
+water pressure, the effective stress (internal strength) of the soil is reduced. 
+Under sustained vibrations, the pore water pressure build-up could equal the 
+overburden pressure, essentially reducing the soil shear strength to zero and 
+causing it to behave as a viscous fluid. During liquefaction, the soil acquires a 
+mobility sufficient to permit both horizontal and vertical movements, and if not 
+confined, will result in significant deformations. 
+Soils most susceptible to liquefaction are loose, uniformly graded, fine-grained 
+sands and loose silts with little cohesion. The major factors affecting the 
+liquefaction characteristics of a soil deposit are as follows: 
+Geotechnical Engineering Report - 04/25/2023
+SECTION 2. SITE CHARACTERIZATION 
+W.O. 8217-00 
+GEOLABS, INC. 
+Page 10 
+Hawaii • California 
+FACTORS 
+LIQUEFACTION SUSCEPTIBILITY 
+Grain Size Distribution 
+Fine and uniform sands and silts are more 
+susceptible to liquefaction than coarse or well-
+graded sands. 
+Initial Relative Density 
+Loose sands and silts are most susceptible to 
+liquefaction. Liquefaction potential is inversely 
+proportional to relative density. 
+Magnitude and Duration 
+of Vibration 
+Liquefaction potential is directly proportional to the 
+magnitude and duration of the earthquake. 
+Based on the subsurface conditions encountered, the phenomenon of soil 
+liquefaction is not a design consideration for this project site. The risk for 
+potential liquefaction is non-existent at this project site based on the subsurface 
+conditions encountered (dense/stiff soils overlying coral formation at shallow 
+depths). 
+2.4.3 Soil Profile Type for Seismic Design 
+Based on the subsurface materials encountered and available data, the project 
+site may be classified from a seismic analysis standpoint as being a “Very Dense 
+Soil and Soft Rock” site corresponding to a Site Class C soil profile type based 
+on the ASCE Standard ASCE/SEI 7-16 (Table No. 20.3-1), referenced by the 
+International Building Code, 2018 Edition. Based on Site Class C, the following 
+seismic design parameters were estimated and may be used for seismic analysis 
+of the project. 
+SEISMIC DESIGN PARAMETERS (IBC 2018) 
+Parameter 
+Value 
+MCE Peak Bedrock Acceleration, PBA (Site Class B) 
+0.254g 
+Mapped MCE Spectral Response Acceleration, SS 
+0.552g 
+Mapped MCE Spectral Response Acceleration, S1 
+0.155g 
+Site Class 
+“C” 
+Site Coefficient, FPGA 
+1.2 
+Site Coefficient, Fa 
+1.279 
+Site Coefficient, Fv 
+1.5 
+Geotechnical Engineering Report - 04/25/2023
+SECTION 2. SITE CHARACTERIZATION 
+W.O. 8217-00 
+GEOLABS, INC. 
+Page 11 
+Hawaii • California 
+SEISMIC DESIGN PARAMETERS (IBC 2018) 
+Parameter 
+Value 
+MCE Peak Ground Acceleration, PGAM (Site Class C) 
+0.305g 
+Design Spectral Response Acceleration, SDS 
+0.471g 
+Design Spectral Response Acceleration, SD1 
+0.155g 
+Risk Category, RC =  
+III 
+Seismic Design Category, SDC = 
+“C” 
+END OF SITE CHARACTERIZATION 
+Geotechnical Engineering Report - 04/25/2023
+W.O. 8217-00 
+GEOLABS, INC. 
+Page 12 
+Hawaii • California 
+SECTION 3.  DISCUSSION AND RECOMMENDATIONS 
+Our field exploration generally encountered 2 to 6 inches of asphaltic concrete 
+pavement (Boring Nos. 2, 4, 8 and 15 only) and 0.2 to 5 feet of surface fill consisting of 
+medium dense silty sands, silty gravel, and sandy gravel, and very stiff to hard clayey 
+silts, sandy silts, and gravelly silts. The surface fills generally are underlain by coralline 
+detritus and coral formation extending to the maximum depth drilled of about 14.5 feet 
+below the existing ground surface. We did not encounter groundwater in the drilled 
+borings at the time of our field exploration. 
+Based on the subsurface conditions encountered at the site, we recommend 
+using shallow spread and/or continuous strip footings bearing on the coral formation, 
+recompacted on-site soils, and/or new compacted fills needed to achieve the design 
+finished grades to support the new equipment and structures planned. As an alternative, 
+thickened-edge slab footings also may be considered for support of the new equipment 
+and structures planned.  
+Due to the presence of hard coral formation at relatively shallow depths, we 
+envision the traditional driven pile system for solar panel array support may encounter 
+difficult driving conditions in some areas. In addition, the broken up coral formation from 
+the pile installation would not provide much frictional resistance to the pile foundation 
+element requiring the pile element to be embedded deeper to provide the required 
+resistance. As a result, we recommend supporting the solar panel arrays on a ballasted 
+ground mounting system. Alternatively, consideration may be given to predrilling the pile 
+locations for the installation of the driven pile foundation system, if elected for the 
+support of the solar array panels.  
+An allowable bearing pressure of up to 2,000 psf may be used for the design of 
+the ground mounting ballasted footings bearing on the on-grade materials consisting of 
+recompacted on-site soils, new compacted fills needed to achieve the design finished 
+grades, or coral formation. This bearing value is for supporting dead plus live loads and 
+may be increased by one third (⅓) when considering transient loads, such as those 
+caused by wind or seismic forces. 
+Geotechnical Engineering Report - 04/25/2023
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 8217-00 
+GEOLABS, INC. 
+Page 13 
+Hawaii • California 
+To develop the required bearing, uplift, and lateral load resistances, the solar 
+panel array structures also may be supported on a deep foundation system consisting 
+of driven piles with predrilling. Based on the subsurface conditions encountered, we 
+recommend using an allowable skin friction of 150 psf for piles driven into predrilled 
+and/or soil backfilled holes to determine the allowable compressive load capacity for the 
+driven pile foundations. 
+Based on the information provided, we understand it is desired to support the 
+proposed substation on a foundation system consisting of cast-in-place concrete drilled 
+shafts to develop the required bearing and lateral load resistances. The performance of 
+the drilled shafts depends significantly upon the contractor's method of construction, 
+construction procedures, and workmanship. Therefore, the contractor should follow the 
+recommendations and general guidelines presented in this report during the drilled shaft 
+foundation construction. 
+Detailed discussions and recommendations for the design of foundations, 
+slabs-on-grade, site grading, roadways, and other geotechnical aspects of the project 
+are presented in the following sections. 
+3.1 
+Equipment and Structure Foundations 
+We understand a new project substation to house various equipment and 
+appurtenances may be required for the project. Details of the new equipment and 
+structural loading information were not available at the time this report was prepared. 
+Generally, we anticipate these structures to be one story in height and lightly loaded 
+(less than 30 kips of concentrated loads). Based on the subsurface conditions 
+encountered at the project site, we recommend using shallow spread and/or continuous 
+strip footings to support the new structures planned. As an alternative, slab-on-grade 
+with thickened-edge slab footings also may be considered for support of the new 
+structures planned. 
+An allowable bearing pressure of up to 3,000 pounds per square foot (psf) may 
+be used for the design of footings bearing on the recompacted on-site materials, new 
+compacted fills needed to achieve the design finished grades, or coral formation. This 
+Geotechnical Engineering Report - 04/25/2023
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 8217-00 
+GEOLABS, INC. 
+Page 14 
+Hawaii • California 
+bearing value is for supporting dead plus live loads and may be increased by one third 
+(⅓) when considering transient loads, such as those caused by wind or seismic forces. 
+For footings bearing on the recompacted on-site soils and/or new compacted fills, the 
+bottom of the footing excavations should be recompacted to at least 90 percent relative 
+compaction to provide a relatively firm and smooth bearing surface prior to the 
+placement of reinforcing steel and/or concrete. 
+In general, the bottom of the footings should be embedded a minimum of 
+18 inches below the lowest adjacent exterior grade. For footings bearing directly on the 
+coral formation, the footing bottom should be relatively level and clear of sharp points 
+that may result in concentrated loading. Footings constructed near the tops of slopes or 
+on slopes should be embedded deep enough such that the horizontal distance 
+measured from the outside edge (at the base of the footing) to the face of the slope is 
+not less than 6 feet. 
+Foundations located next to retaining walls, other foundations, utility trenches, or 
+easements should be embedded below a 45-degree imaginary plane extending upward 
+from the bottom edge of the utility trench (or retaining wall). Alternatively, the footings 
+should be extended to a depth as deep as the inverts of the utility lines or bottom of the 
+retaining wall. 
+If the foundations are designed and constructed in strict accordance with our 
+recommendations, we estimate the total settlements of the foundations to be less than 
+0.5 inches. Differential settlements between adjacent footings supported on similar 
+materials may be about 0.5 inches or less. 
+Lateral loads acting on the structures may be resisted by friction developed 
+between the bottom of the foundation and the bearing material and by passive earth 
+pressure acting against the near-vertical faces of the foundation system. Coefficient of 
+friction of 0.35 may be used for footings bearing on the recompacted on-site materials, 
+new compacted fills needed to achieve the design finished grades, or coral formation. 
+Resistance due to passive earth pressure may be estimated using an equivalent fluid 
+pressure of 350 pounds per square foot per foot of depth (pcf) assuming the soils 
+Geotechnical Engineering Report - 04/25/2023
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 8217-00 
+GEOLABS, INC. 
+Page 15 
+Hawaii • California 
+around the footings are well-compacted. The passive pressure resistance in the upper 
+12 inches of the soil should be neglected unless covered by pavements or slabs. 
+A Geolabs representative should observe the footing excavations prior to the 
+placement of reinforcing steel and concrete to confirm the foundation bearing conditions 
+and the required embedment depths. 
+3.2 
+Foundation Proof-Rolling 
+Our experience in the area suggests that cavities and/or voids are commonly 
+encountered in the coral formations underlying the project site. Based on the relatively 
+light structural loads anticipated for the new structures, we believe the risk of potential 
+collapse of cavities below the foundations would be relatively low. Therefore, we believe 
+a foundation probing and grouting program generally required for structure foundations 
+may be omitted for the new structures planned at the site.  
+To provide a higher degree of assurance against potential collapse of near-
+surface cavities below foundations, we recommend proof-rolling within the structure 
+footprint (and a minimum of 5 feet beyond the perimeter of the structure) using a 10-ton 
+(minimum static weight) vibratory drum roller a minimum of eight times to help detect 
+and collapse near-surface cavities and/or voids. The vibratory drum roller should be 
+operated at a speed of about 300 feet per minute (3.5 miles per hour).  
+The proof-rolling operations should be performed in the presence of a Geolabs 
+representative to observe for yielding areas. Yielding areas, loose areas, or cavities 
+disclosed during the proof-rolling operations should be over-excavated and backfilled 
+with compacted fill materials. 
+3.3 
+Concrete Slabs-On-Grade 
+Concrete slabs-on-grade will be used for the equipment pads and ground floors 
+of the new structures. We anticipate the floor slabs to be like industrial slabs and likely 
+will be subjected to vibrations and/or wheel loads. Therefore, we recommend providing 
+a minimum 6 inches of compacted aggregate subbase below the slabs in lieu of the 
+typical 4-inch thick cushion fill layer. The aggregate subbase material layer should be 
+moisture-conditioned to above the optimum moisture content and compacted to a 
+Geotechnical Engineering Report - 04/25/2023
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 8217-00 
+GEOLABS, INC. 
+Page 16 
+Hawaii • California 
+minimum of 95 percent relative compaction. An impervious moisture barrier may be 
+considered on top of the compacted aggregate subbase if moisture infiltration through 
+the slab is of concern. 
+To reduce the potential for substantial shrinkage cracks in the concrete slabs, 
+crack control joints should be provided at intervals equal to the width of the walkways 
+(or slabs) with expansion joints at right-angle intersections. 
+3.4 
+Solar Array Foundations 
+Based on the information provided, we understand the solar panel arrays will be 
+supported on steel poles consisting of C-Pile or H-Pile sections. Details of the steel 
+poles and structural loading were not provided at the time this report was prepared. 
+In general, we believe that pile foundations consisting of C-Pile or H-Pile sections 
+driven into the ground may be difficult due to the coral formation encountered at 
+relatively shallow depths throughout the project site. In addition, coralline cobbles and 
+boulders likely are present in the coralline detritus layers. Therefore, we envision the 
+traditional driven pile system likely will encounter difficult driving conditions. 
+Furthermore, the pile driving operations likely will break up the coral formation from the 
+pile installation, and the broken up coralline materials would not provide much frictional 
+resistance to the pile element requiring the pile element to be embedded deeper to 
+provide the required resistance. As a result, we recommend supporting the solar panel 
+arrays on a ballasted ground mounting system. 
+In general, ballasted ground mounting system consists of a series of pre-cast or 
+cast-in-place concrete blocks set on-grade to serve as a foundation for the solar panel 
+arrays. The ballasted ground mounting system should be sized appropriately to develop 
+the required bearing, uplift, and lateral load resistance to resist loads imposed by the 
+solar panel arrays. 
+An allowable bearing pressure of up to 2,000 psf may be used for the design of 
+the ground mounted ballasted footings bearing on-grade consisting of the recompacted 
+on-site soils, new compacted fills needed to achieve the design finished grades, or coral 
+formation. This bearing value is for supporting dead plus live loads and may be 
+Geotechnical Engineering Report - 04/25/2023
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 8217-00 
+GEOLABS, INC. 
+Page 17 
+Hawaii • California 
+increased by one third (⅓) when considering transient loads, such as those caused by 
+wind or seismic forces. For footings bearing on the recompacted on-site soils and/or 
+new compacted fills, the bottom of the footing excavations should be recompacted to at 
+least 90 percent relative compaction to provide a relatively firm and smooth bearing 
+surface prior to the placement of reinforcing steel and/or concrete. 
+If the foundations are designed and constructed in strict accordance with our 
+recommendations, we estimate the total settlements of the foundations to be less than 
+0.5 inches. Differential settlements between adjacent footings supported on similar 
+materials may be about 0.5 inches or less. 
+Lateral loads acting on the structures may be resisted by friction developed 
+between the bottom of the foundation and the bearing material and by passive earth 
+pressure acting against the near-vertical faces of the foundation system. Coefficient of 
+friction of 0.35 may be used for footings bearing on the recompacted on-site soils, new 
+compacted fills needed to achieve the design finished grades, or coral formation. 
+3.5 
+Alternate Solar Array Foundations 
+As mentioned above, pile foundations consisting of C-Pile or H-Pile sections 
+driven into the ground may be difficult due to the coral formation encountered at 
+relatively shallow depths throughout the project site. As an alternative to a ballasted 
+ground mounting foundation system, consideration may be given to predrilling the pile 
+locations prior to driving the C-Pile or H-Pile sections for the installation of the driven 
+pile foundation system, if elected for the support of the solar array panels. 
+Generally, we envision predrilling to the approximate pile tip elevation using 
+continuous-flight augers, which would penetrate through the coralline deposits and then 
+be unscrewed out of the hole without removing the soil cutting materials. Then, the soil 
+cuttings should be tamped or densified before inserting the pile into the predrilled hole 
+and driving the pile to the final design pile tip elevation. In areas where hard coral 
+formation is encountered, air rotary percussion drilling techniques may need to be 
+implemented. Typically, this drilling method results in the loss of cuttings as the coral 
+formation is pulverized into small pieces and cleared out of the drilled hole using 
+Geotechnical Engineering Report - 04/25/2023
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 8217-00 
+GEOLABS, INC. 
+Page 18 
+Hawaii • California 
+compressed air. In general, on-site granular soils may be used as backfill within the 
+predrilled hole (prior to pile driving) provided they are screened of the over-sized 
+materials and/or processed to a maximum particle size of 3 inches or less and free of 
+the deleterious debris. However, if on-site material is not available, importing of select 
+granular material to backfill the predrilled holes will be required. In addition, the 
+pre-drilled holes should have a maximum diameter no greater than the largest 
+dimension of the C-Pile or H-Pile section. 
+The steel piles would derive vertical support primarily from skin friction between 
+the pile and the surrounding cuttings and/or backfilled soils. We recommend using an 
+allowable skin friction of 150 psf for the predrilled and/or backfilled holes to determine 
+the allowable compressive load capacity for the driven pile foundations. A factor of 
+safety of at least 2.0 has been used to determine the allowable skin friction value for 
+estimating the allowable compressive load capacity of the driven pile sections. 
+Uplift loads imposed on the piles may be resisted by a combination of the dead 
+weight of the pile and shear along the pile surface and the adjacent surrounding cuttings 
+and/or backfilled soils. An allowable skin friction of 100 psf for the predrilled and/or 
+backfilled holes may be used to estimate the allowable uplift load capacity. The 
+allowable uplift load capacity should not be further increased for transient load 
+applications. The project structural engineer should check the capacity of the pile in 
+tension. Additionally, we recommend ignoring the upper 1 foot of soil resistance when 
+calculating the compressive and uplift load capacities of the solar array pile system. 
+It should be noted that the actual pile capacity should be calculated and designed 
+by a qualified professional Civil Engineer specializing in geotechnical engineering, who 
+understands the soil bearing behavior developed by the impact hammer driving. 
+Calculation of the pile bearing capacity should consider the soil plug effects due to 
+closed or semi-closed pile section. The following subsections address the design and 
+construction of the driven pile foundations, which include the following: 
+1. 
+Lateral Load Resistance 
+2. 
+Foundation Settlements 
+3. 
+Construction Considerations 
+Geotechnical Engineering Report - 04/25/2023
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 8217-00 
+GEOLABS, INC. 
+Page 19 
+Hawaii • California 
+3.5.1 Lateral Load Resistance 
+Lateral loads imposed on the solar panel arrays may be resisted by the lateral 
+load capacity of the piles. The lateral load resistance of the pile foundations is a 
+function of the stiffness of the surrounding soil, the stiffness of the pile, allowable 
+deflection at the top of the pile, and the induced moment in the pile. Geotechnical 
+engineering properties for the predrilled and backfilled soils for lateral load 
+analysis of the embedded pile section are presented in the table below. 
+DESIGN SOIL PARAMETERS FOR DRIVEN PILES 
+Foundation 
+Material 
+Total  
+Unit Weight 
+(pcf) 
+Friction  
+Angle 
+(degrees) 
+Soil 
+Modulus, k 
+(pci) 
+Strain (50) 
+Predrilled 
+Coralline Detritus 
+and Coral 
+Formation 
+105 
+28 
+60 
+- 
+Note:  Neglect the contribution from the upper 1 foot of soils when calculating the 
+lateral load capacity of the predrilled and driven piles. 
+The finished grades at the project site should be sloped to shed water away from 
+foundations and to reduce the potential for ponding. This drainage requirement is 
+essential for the proper performance of the above foundation recommendations 
+because ponded water could cause subsurface soil saturation and subsequent 
+loss of strength. 
+3.5.2 Foundation Settlements 
+Settlements of the driven piles will result primarily from elastic compression of the 
+pile member and subgrade response. We estimate the total settlement of the 
+pile-supported foundations to be 0.5 inches or less with differential settlements 
+between columns supported on piles not exceeding about one-half of the total 
+settlement. We believe that these settlements are essentially elastic and should 
+occur as the loads are applied. 
+3.5.3 Pile Construction Considerations 
+As mentioned above, hard coral formation was encountered within our borings at 
+various locations throughout the project site. Therefore, the pile installation 
+subcontractor will need to have the appropriate equipment and tools to predrill 
+Geotechnical Engineering Report - 04/25/2023
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 8217-00 
+GEOLABS, INC. 
+Page 20 
+Hawaii • California 
+through these hard, cemented coralline deposits, where encountered. 
+Additionally, the performance of the predrilled and driven piles will depend on the 
+contactor’s methods of drilling and backfilling. To confirm the predrilled and 
+driven pile foundation design parameters, we recommend implementing a test 
+pile program consisting of predrilling and driving test piles and performing 
+compressive, tensile, and lateral load tests. 
+In general, the performance of piles will depend significantly upon the 
+contractor’s method of installation and construction procedures. It is imperative that a 
+Geolabs representative be present at the project site to observe the installation of the 
+piles during construction to confirm the assumed subsurface conditions and should be 
+designated as a “Special Inspection” item in accordance with Section 1705 of the 
+International Building Code (2018 Edition). 
+3.6 
+Substation Foundations 
+Based on the information provided, we understand that it is desired to utilize 
+drilled shaft foundations at the proposed substation. We understand the proposed 
+substation will be located in the vicinity of the intersection of Coral Sea Road and San 
+Juacinto Street. In addition, we understand that a detailed foundation support analysis 
+will be conducted by others. 
+The exact substation location was unknown at the time of our field exploration, 
+therefore, only one boring (Boring No. 5) extending to a depth of approximately 
+12.5 feet below the existing ground surface was available for use in the design of the 
+substation foundation. Based on our field exploration, the subsurface conditions at B-5 
+primarily consisted of loose to very dense silty sands (coralline detritus).  
+In order to develop the required bearing and lateral load resistances, the 
+proposed substation components may be supported by a foundation system consisting 
+of cast-in-place concrete drilled shafts. The cast-in-place concrete drilled shafts would 
+derive vertical support principally from skin friction between the shafts and the 
+surrounding fill soils and/or coralline detritus. Based on the subsurface conditions 
+encountered, we recommend using an allowable skin friction of 500 psf for the on-site 
+Geotechnical Engineering Report - 04/25/2023
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 8217-00 
+GEOLABS, INC. 
+Page 21 
+Hawaii • California 
+materials to determine the allowable compressive load capacity. In general, the 
+contribution to frictional resistance from the upper 1-foot of soils should be ignored when 
+calculating the compressive load capacities of the drilled shafts and anchor systems. A 
+factor of safety of at least 2.0 has been used to determine the allowable skin friction 
+values for estimating the allowable compressive load capacity of the cast-in-place 
+concrete drilled shafts. The concrete drilled shafts should be at least 6 feet in depth 
+below the ground surface.  
+Based on our evaluation of the subsurface conditions and anticipated structure 
+types, we anticipate drilled shafts with diameters of 24, 30, or 36 inches would provide 
+the necessary foundation support for the substation structures. Based on the 
+subsurface conditions encountered, we anticipate the drilled shaft installation will 
+require an experienced subcontractor to install the foundations. Therefore, 
+consideration should be given to requiring pre-qualification of the drilled shaft 
+subcontractor. The succeeding subsections address the design and construction of the 
+drilled shaft foundations: 
+1. 
+Uplift Load Resistance 
+2. 
+Lateral Load Resistance 
+3. 
+Drilled Shaft Construction Considerations 
+3.6.1 Uplift Load Resistance 
+Uplift loads imposed on the drilled shafts may be resisted by a combination of the 
+dead weight of the drilled shaft and shear along the shaft surface and the 
+adjacent soils. The allowable skin friction value in the table below may be used to 
+estimate the allowable uplift load capacity for transient loading. The allowable 
+uplift load capacities should not be further increased for transient load 
+applications. The project structural engineer should check the capacity of the 
+drilled shaft in tension. 
+Geotechnical Engineering Report - 04/25/2023
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 8217-00 
+GEOLABS, INC. 
+Page 22 
+Hawaii • California 
+ALLOWABLE SKIN FRICTION FOR UPLIFT LOADS 
+Foundation Material 
+Allowable Skin Friction 
+(pounds per square foot) 
+Coralline Detritus 
+300 
+Notes: 
+    1.  
+Neglect the contribution from the upper 1-foot of soils when calculating the 
+allowable uplift load capacity of the concrete drilled shaft. 
+    2. 
+It is assumed that the ground where the drilled shafts are embedded is 
+relatively level (6H:1V or flatter). 
+3.6.2 Lateral Load Resistance 
+Lateral loads imposed on the structures may be resisted by the lateral load 
+capacity of the drilled shaft. The lateral load resistance of the drilled shaft is a 
+function of the stiffness of the surrounding soil, the stiffness of the shaft, 
+allowable deflection at the top of the shaft, and the induced moment in the shaft. 
+Geotechnical engineering properties for the soil encountered for lateral load 
+analysis are presented in the table below.  
+SOIL DESIGN PARAMETERS FOR DRILLED SHAFTS 
+Foundation 
+Material 
+Total  
+Unit Weight 
+(pcf) 
+Friction 
+Angle 
+(degrees) 
+Undrained 
+Shear 
+(psf) 
+Soil 
+Modulus, k 
+(pci) 
+Coralline 
+Detritus 
+105 
+34 
+N/A 
+90 
+Note:  Neglect the contribution from the upper 1-foot of soils when calculating the 
+lateral load capacity of the concrete drilled shaft. 
+In general, the drilled shafts should have a minimum center-to center spacing of 
+8.0 times the shaft/pile diameter to avoid reduction in the lateral load capacity of 
+the shaft/pile due to group action. For pile groups with drilled shaft center-to-
+center spacings closer than 8.0 times the shaft/pile diameter, Geolabs should be 
+contacted to provide supplemental recommendations related to lateral load 
+design parameters. 
+The finished grades at the project site should be sloped to shed water away from 
+foundations and to reduce the potential for ponding. This drainage requirement is 
+essential for the proper performance of the above foundation recommendations 
+Geotechnical Engineering Report - 04/25/2023
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 8217-00 
+GEOLABS, INC. 
+Page 23 
+Hawaii • California 
+because ponded water could cause subsurface soil saturation and subsequent 
+loss of strength. 
+3.6.3 Drilled Shaft Construction Considerations 
+The performance of the drilled shafts will depend significantly upon the 
+contractor’s method of construction and construction procedures. As a result, a 
+Geolabs representative should be present to observe installation of the drilled 
+shafts during construction. In our opinion, the following may have a significant 
+impact on the effectiveness and cost of the drilled shaft foundation. 
+The load carrying capacity of the drilled shaft depends, to a large extent, on the 
+friction between the shaft and the surrounding soils/formation. Therefore, proper 
+construction techniques are important. The contractor should exercise care in 
+drilling or excavating the shaft hole and in placing concrete in the hole. 
+Based on our field exploration, difficult drilling conditions likely may be 
+encountered at the proposed substation site and should be expected. The drilled 
+shaft subcontractor will need to have the appropriate equipment and tools to drill 
+through potential coral formations. Some of the more common drilled shaft 
+diameters available locally include 18, 24, 30, 36, 42, 48, and 60 inches.  
+A low-shrink concrete mix with high slump (7 to 9-inch slump range) should be 
+used to provide close contact between the drilled shafts and the surrounding soil 
+and rock formation. Concrete should be placed in a suitable manner to reduce 
+the potential for segregation of the aggregates from the concrete mix. In addition, 
+concrete should be placed promptly after drilling (within 24 hours after drilling of 
+the holes) to reduce the potential for softening/unraveling of the sides of the 
+drilled holes. 
+A Geolabs representative should be present at the project sites to observe the 
+drilling and installation of drilled shafts during construction. Although the drilled 
+shafts are primarily designed based on skin friction, the bottom of the drilled hole 
+should be relatively free of loose materials prior to placement of concrete. 
+Therefore, Geolabs’ observation of the drilled shaft installation operations is 
+Geotechnical Engineering Report - 04/25/2023
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 8217-00 
+GEOLABS, INC. 
+Page 24 
+Hawaii • California 
+necessary to confirm the assumed subsurface conditions and should be 
+designated a “Special Inspection” item in accordance with Section 1705 of the 
+International Building Code (2018). 
+3.7 
+Site Grading 
+A grading plan was not available at the time this report was prepared. Items of 
+site grading that are addressed in the subsequent subsections include the following: 
+1. 
+Site Preparation 
+2. 
+Fills and Backfills 
+3. 
+Fill Placement and Compaction Requirements 
+4. 
+Coral Excavations 
+A Geolabs representative should monitor site grading operations to observe 
+whether undesirable materials are encountered during the excavation and scarification 
+process and to confirm whether the exposed soil and/or rock conditions are similar to 
+those assumed in this report. 
+3.7.1 Site Preparation 
+At the on-set of earthwork, the area within the contract grading limits should be 
+cleared and grubbed thoroughly. Surface vegetation, boulders, and other 
+unsuitable materials should be removed and disposed of properly off-site. Soft 
+and yielding areas encountered during clearing and grubbing below areas 
+designated to receive fill and/or future improvements should be over-excavated 
+to expose firm material and the resulting excavation should be backfilled with 
+well-compacted fill. The excavated soft soils should be properly disposed of 
+offsite and/or used in landscape areas, where appropriate. 
+After clearing and grubbing, the cut subgrades and areas to be filled should be 
+scarified to a depth of about 8 inches (where possible), moisture-conditioned to 
+above the optimum moisture content, and compacted to a minimum of 90 percent 
+relative compaction. The compaction requirement should be increased to a 
+minimum of 95 percent relative compaction under areas subjected to vehicular 
+traffic. Relative compaction refers to the in-place dry density of soil expressed as 
+a percentage of the maximum dry density as determined by ASTM D1557. 
+Geotechnical Engineering Report - 04/25/2023
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 8217-00 
+GEOLABS, INC. 
+Page 25 
+Hawaii • California 
+Optimum moisture is the water content (percentage by weight) corresponding to 
+the maximum dry density. 
+Where scarification is not practicable, such as in deeper cuts exposing hard coral 
+formation, the subgrade materials should be proof-rolled with a 10-ton (minimum 
+static weight) vibratory drum roller or similar construction equipment for a 
+minimum of eight passes. The drum roller should be operated at a speed of 
+about 300 feet per minute (3.5 miles per hour). Yielding areas, loose areas, or 
+cavities disclosed during the proof-rolling operation should be over-excavated 
+and backfilled with compacted fill materials. 
+3.7.2 Fills and Backfills 
+In general, the on-site granular materials generated from the excavations may be 
+reused as a source of general fill or backfill materials, provided they are screened 
+of the over-sized materials and/or processed to a maximum particle size of 
+3 inches or less and free of the deleterious debris. 
+Select granular fill should be non-expansive granular material, such as crushed 
+coral or basalt. The select granular fill should be well-graded from coarse to fine 
+with particles no larger than 3 inches in largest dimension. The material should 
+have a California Bearing Ratio (CBR) value of 20 or higher and a swell potential 
+of 1 percent or less when tested in accordance with ASTM D1883. The material 
+also should contain between 10 and 30 percent particles passing the No. 200 
+sieve.  
+Aggregate base and subbase course materials required for the project should 
+consist of crushed basaltic aggregates and should conform to Sections 31 and 
+30 of the City and County of Honolulu Standard Specifications (September 
+1986). respectively. 
+Imported fill materials should be free of organics, weeds, and deleterious 
+materials and should be suitable for the intended use. In addition, imported fill 
+materials should be observed and/or tested by Geolabs prior to being transported 
+to the site for the intended use. 
+Geotechnical Engineering Report - 04/25/2023
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 8217-00 
+GEOLABS, INC. 
+Page 26 
+Hawaii • California 
+3.7.3 Fill Placement and Compaction Requirements 
+General fills and backfills should be moisture-conditioned to above the optimum 
+moisture content, placed in level lifts not exceeding 8 inches in loose thickness, 
+and compacted to at least 90 percent relative compaction. The structural fill 
+material should be placed in level lifts not exceeding 8 inches in loose thickness, 
+moisture-conditioned to above the optimum moisture content, and compacted to 
+a minimum of 90 percent relative compaction. Relative compaction refers to the 
+in-place dry density of soil expressed as a percentage of the maximum dry 
+density as determined by ASTM D1557. Optimum moisture is the water content 
+(percentage by dry weight) corresponding to the maximum dry density. 
+Compaction should be accomplished by sheepsfoot rollers, vibratory rollers, or 
+other types of acceptable compaction equipment. Water tamping, jetting, or 
+ponding should not be allowed to compact the fills. 
+3.7.4 Coral Excavations 
+Based on our field exploration, the project site generally is underlain by coralline 
+detritus and coral formation. It is anticipated that the coral formation may be 
+excavated readily with heavy excavation equipment, such as a large backhoe 
+excavator or dozer, near the ground surface. However, some difficult excavation 
+conditions should be anticipated in the deeper excavations and localized areas 
+during construction that may require the use of hoerams or chipping. The 
+contractor must exercise care to avoid over-ripping, which would disrupt the 
+structure of the coral formation, resulting in a potential loss of bearing strength for 
+improvements in the vicinity. 
+The above discussions regarding the rippability of the materials are based on our 
+field and laboratory data from the borings. We recommend encouraging 
+contractors to examine the site conditions and the subsurface data to make their 
+own reasonable and prudent interpretation. 
+3.8 
+Pavement Design 
+Flexible and rigid pavements may be considered for the access roads planned to 
+serve the solar project. In general, we anticipate that after the initial heavy loading with 
+Geotechnical Engineering Report - 04/25/2023
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 8217-00 
+GEOLABS, INC. 
+Page 27 
+Hawaii • California 
+delivery truck loads of transformer and other heavy equipment, the vehicle loading will 
+consist of passenger vehicles, pick-up trucks, and occasional light maintenance trucks. 
+Details of design traffic loading conditions were not available at the time this report was 
+prepared. 
+We have assumed the pavement subgrade soils will be similar to the coralline 
+detritus and coral formation generally encountered during our field exploration. On this 
+basis, we recommend using the following pavement designs for this project. 
+Flexible Pavement 
+  2.0-Inch Asphaltic Concrete 
+  6.0-Inch Aggregate Base Course (95% Relative Compaction) 
+  6.0-Inch Aggregate Subbase Course (95% Relative Compaction)__ 
+14.0-Inch Total Pavement Thickness on Moist Compacted Subgrade 
+Rigid Pavement 
+  6.0-Inch Portland Cement Concrete 
+  6.0-Inch Aggregate Subbase Course (95% Relative Compaction) 
+12.0-Inch Total Pavement Thickness on Moist Compacted Subgrade 
+Where coral formation is exposed at the pavement subgrade elevations (or 
+bottom of the aggregate base course elevation), the 6-inch thick layer of aggregate 
+subbase course may be omitted for the flexible pavement. 
+The subgrade soils under the pavement areas should be scarified to a minimum 
+depth of 8 inches, where possible, moisture-conditioned to above the optimum moisture, 
+and compacted to at least 95 percent relative compaction. 
+Where scarification is not practicable, such as in areas exposing coral formation, 
+the subgrade materials should be proof-rolled with a minimum 10-ton vibratory drum 
+roller for a minimum of eight passes. The vibratory drum roller also should be operated 
+at a speed of about 300 feet per minute (3.5 miles per hour). 
+The aggregate base course and aggregate subbase materials should consist of 
+crushed basaltic aggregates meeting the material requirements for Base Course and 
+Subbase Course as specified in Sections 31 and 30, respectively, of the Standard 
+Specifications for Public Works Construction, City and County of Honolulu, 
+Geotechnical Engineering Report - 04/25/2023
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 8217-00 
+GEOLABS, INC. 
+Page 28 
+Hawaii • California 
+September 1986. The aggregate base course and subbase course materials should be 
+compacted to no less than 95 percent relative compaction. California Bearing Ratio and 
+field density tests should be performed on the actual subgrade soils encountered during 
+construction to confirm the adequacy of the above pavement sections.  
+Where minor shrinkage cracks are observed after subgrade preparation, we 
+recommend thoroughly moistening the soil to close the cracks prior to recompacting. 
+Saturation and subsequent yielding of the exposed subgrade due to inclement weather 
+and poor drainage may require over-excavation of the soft areas and replacement with 
+well-compacted fill. 
+Paved areas should be sloped and drainage gradients should be maintained to 
+carry surface water off-site. Surface water ponding should not be allowed on-site during 
+or after construction. 
+3.9 
+Gravel Roadways 
+Gravel roadways may be utilized for the project in lieu of flexible and rigid 
+pavements. In general, we recommend that the gravel roadway section consist of 
+8 inches of aggregate base course. Aggregate base course should be moisture-
+conditioned to above the optimum moisture and compacted to at least 95 percent 
+relative compaction.  
+The subgrade under the gravel roadway areas should be scarified to a minimum 
+depth of 8 inches, moisture-conditioned to above the optimum moisture, and compacted 
+to at least 95 percent relative compaction. Where scarification is not practicable, such 
+as in areas exposing hard coral formation, subgrade materials should be proof-rolled 
+with a minimum 10-ton vibratory drum roller for a minimum of eight passes. The 
+vibratory drum roller also should be operated at a speed of about 300 feet per minute 
+(3.5 miles per hour). 
+Adequate drainage should be provided to allow removal of the surface water and 
+to reduce infiltration and saturation of the gravel layer and subgrade, which could lead 
+to softening of the subgrade causing rapid deterioration of the pavement. It should be 
+noted that there is a higher potential for raveling and rutting of the gravel layer. 
+Geotechnical Engineering Report - 04/25/2023
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 8217-00 
+GEOLABS, INC. 
+Page 29 
+Hawaii • California 
+Therefore, periodic maintenance will be required for the gravel-surfaced road. The 
+majority of the maintenance will consist of periodic grading to remove the ruts and 
+potholes caused by the environment and traffic and to replace fines. In addition, the 
+surface layer may have to be scarified, provide additional surface course material to 
+increase the thickness back to the design thickness, and compacted to the specified 
+density. 
+A typical gravel road section should have a straight-line crown of about 4 percent 
+to divert surface water runoff away from the roadway. In addition, a shoulder and swale 
+should be provided along both sides of the roadway. The gravel section of the roadway 
+should be slightly elevated from the adjacent areas, as not to allow accumulation of 
+water under the gravel roadway. 
+3.10 Underground Utility Lines 
+We envision new underground utility lines will be required for the project. We 
+anticipate most of the trenches for the utility lines will be excavated in the compacted fill 
+and/or coralline detritus or coral formation encountered in our borings. In many areas, 
+excavation for the utilities likely will encounter coral formation. 
+In general, granular bedding consisting of 6 inches of open-graded gravel 
+(ASTM C33, No. 67 gradation) should be provided below the pipes for uniform bearing 
+support. Free-draining granular materials, such as open-graded gravel (ASTM C33, 
+No. 67 gradation), should be used for the initial trench backfill up to about 12 inches 
+above the top of the pipes. It is critical to use this free-draining material to reduce the 
+potential for the formation of voids below the haunches of pipes and to provide 
+adequate support for the sides of the pipes. Improper backfill material around the pipes 
+and improper placement of the backfill could result in backfill settlement and pipe 
+damage. 
+The upper portion of the trench backfill from the level 12 inches above the pipes 
+to the top of the subgrade or finished grade should consist of well-graded granular 
+materials less than 6 inches in maximum particle size. The backfill should be 
+moisture-conditioned to above the optimum moisture, placed in about 8-inch level loose 
+Geotechnical Engineering Report - 04/25/2023
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 8217-00 
+GEOLABS, INC. 
+Page 30 
+Hawaii • California 
+lifts, and mechanically compacted to at least 90 percent relative compaction. Where 
+trenches are located in paved areas, the upper 3 feet of the trench backfill below the 
+pavement grade should be compacted to no less than 95 percent relative compaction. 
+Because coral formation was encountered at relatively shallow depths during our 
+field exploration, it appears that the trench work for utility installation likely will involve 
+excavation in the coral formation and may require ripping or the use of hoerams. The 
+contractor must exercise care to avoid over-ripping, which would disrupt the structure of 
+the coral formation and result in a potential loss of bearing strength for footings in its 
+vicinity. 
+3.11 Corrosion Potential 
+Design of metallic substructures, such as electrical conduits or other metallic 
+piping, should consider the effects of the corrosive environment on the substructure.  
+Resistivity is generally recognized as one of the most significant soil characteristics 
+regarding the corrosivity of the soil to buried metallic objects. In general, the lower the 
+resistivity, the greater the potential for corrosion of the buried metallic structure. 
+Conversely, the higher the resistivity, the less likely the soil will contribute to the 
+corrosion of metallic objects. Items of corrosion potential that are addressed in the 
+subsequent subsections include the following: 
+Field Resistivity Survey 
+Laboratory Corrosivity Testing 
+Laboratory Thermal Resistivity Testing 
+3.11.1 Field Resistivity Survey 
+A total of 42 field resistivity tests were conducted at a maximum electrode 
+spacing of about 20 feet at six locations, designated as R-1 through R-6, using 
+the in-situ Wenner 4-Pin Method and an AEMC Model 4630 resistance meter 
+manufactured by AEMC Instruments. The approximate locations of the field 
+resistivity tests are presented on the Site Plan, Plate 2. 
+The method utilizes four surface probes or pins (electrodes) to evaluate the 
+average resistivity (an indication of corrosivity) of the underlying soil mass. The 
+Geotechnical Engineering Report - 04/25/2023
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 8217-00 
+GEOLABS, INC. 
+Page 31 
+Hawaii • California 
+field resistivity surveys were used to evaluate the average resistivity values of the 
+soil mass at the approximate survey locations. Results of the field resistivity 
+surveys are presented in Appendix D. It should be noted that the field resistivity 
+survey may be influenced by temperature, weather conditions, soil moisture, 
+existing underground utilities, and other factors. 
+Based on the results of our field resistivity surveys, the subsurface soils at the 
+project site generally exhibited resistivity values ranging from about 1,532 to 
+227,545 ohm-cm, corresponding to a corrosion rating of 2 to 5 (very corrosive to 
+mildly corrosive) using the Honolulu Board of Water Supply (BWS) guidelines. 
+3.11.2 Laboratory Corrosivity Testing 
+Six sets of corrosivity tests, including pH (ASTM G51), Minimum Resistivity 
+(ASTM G57), Chloride Content (EPA 300.0), and Sulfate Content (EPA 300.0), 
+were performed by our office and Eurofins TestAmerica Laboratories, Inc. on 
+selected near-surface soil samples obtained from our field exploration. A 
+summary of the corrosivity tests is presented in Plate B-15 of Appendix B. 
+Based on the results of laboratory corrosivity tests, the near-surface soils at the 
+project site exhibit minimum resistivity values ranging from approximately 880 to 
+11,000 ohm-cm, indicating that the near-surface soils are extremely to mildly 
+corrosive (Corrosion Ratings of 1 to 5) to buried metallic structures. Therefore, 
+we recommend properly designing near-surface metallic substructures (such as 
+piping) for protection against the potential for corrosion. 
+The method used to control the corrosion of underground concrete structures is 
+dependent on the pH, chloride content, and sulfate content found in the soil. In 
+general, soils with a chloride content of less than 500 parts per million (ppm), 
+sulfate content of less than 2,000 ppm, and a pH of greater than 5.0 may be 
+considered "non corrosive" to underground concrete pipelines and structures. 
+Based on the values of the chloride and sulfate content tests on the in-situ 
+near-surface soils, we believe that either Type I or Type II (Type I/II) cement may 
+be used for the concrete in contact with the ground planned. 
+Geotechnical Engineering Report - 04/25/2023
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 8217-00 
+GEOLABS, INC. 
+Page 32 
+Hawaii • California 
+3.11.3 Laboratory Thermal Resistivity Testing 
+We envision that electrical duct lines will be installed underground for the project. 
+Geotherm USA, our subcontractor, conducted laboratory soil thermal resistivity 
+testing to evaluate the thermal characteristics of the in-situ near-surface coralline 
+soils encountered at the site. Each sample was remolded to approximately 
+95 percent relative density according to ASTM D1557, Standard Test Methods 
+for Laboratory Compaction Characteristics of Soil Using Modified Effort. Detailed 
+discussions and test results are provided in the report entitled “Thermal Analysis 
+of Native Soil Samples, Barbers Point Solar – Kapolei, Hawaii (Project 
+No. 8217-00),” dated January 15, 2021, as included in Appendix E. 
+3.12 Design Review 
+Preliminary and final drawings and specifications for the project should be 
+forwarded to Geolabs for review and written comments prior to solicitation for 
+construction bids. This review is necessary to evaluate conformance of the plans and 
+specifications with the intent of the foundation and earthwork recommendations 
+provided herein. If this review is not made, Geolabs cannot be responsible for 
+misinterpretation of our recommendations. 
+3.11 Post-Design Services/Services During Construction 
+Geolabs should be retained to provide geotechnical services during construction. 
+The critical items of construction monitoring that require "Special Inspections" include 
+the following: 
+1. 
+Observation of foundation proof-rolling 
+2. 
+Observation of the shallow foundation excavations 
+3. 
+Observation of the solar array foundation installation 
+4. 
+Observation of fill and backfill placement and compaction 
+A Geolabs representative also should monitor other aspects of earthwork 
+construction to observe compliance with the design concepts, specifications, or 
+recommendations and to expedite suggestions for design changes that may be required 
+in the event that subsurface conditions differ from those anticipated at the time this 
+report was prepared. Geolabs should be accorded the opportunity to provide 
+Geotechnical Engineering Report - 04/25/2023
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 8217-00 
+GEOLABS, INC. 
+Page 33 
+Hawaii • California 
+geotechnical services during construction to confirm our assumptions in providing the 
+recommendations presented herein.  
+If the actual exposed subsurface conditions encountered during construction 
+differ from those assumed or considered herein, Geolabs should be contacted to review 
+and/or revise the geotechnical recommendations presented herein. 
+END OF DISCUSSION AND RECOMMENDATIONS 
+Geotechnical Engineering Report - 04/25/2023
+W.O. 8217-00 
+GEOLABS, INC. 
+Page 34 
+Hawaii • California 
+SECTION 4.  LIMITATIONS 
+The analyses and recommendations submitted herein are based in part upon 
+information obtained from our test borings, bulk samples, and field resistivity surveys. 
+Variations of the subsurface conditions between and beyond the field data points may 
+occur and the nature and extent of these variations may not become evident until 
+construction is underway. If variations then appear evident, it will be necessary to 
+re-evaluate the recommendations presented herein. 
+The test borings, bulk samples, and field resistivity survey locations indicated 
+herein have been estimated by obtaining coordinates using a hand-held Global 
+Positioning System (GPS) device. The coordinates obtained were overlaid on the 
+Project Study Area. Elevations of the field borings were obtained from Google Earth 
+Pro. These field sampling and testing locations and elevations should be considered 
+accurate only to the degree implied by the methods used. 
+The stratification breaks represented on the Logs of Borings show the 
+approximate boundaries between the soil and rock types and, as such, may denote a 
+gradual transition. These data have been reviewed and interpretations made in the 
+formulation of this report. We did not encounter groundwater in the borings at the time 
+of our field exploration. However, it must be noted that fluctuation may occur due to 
+variation in seasonal rainfall and other factors. 
+This report has been prepared for the exclusive use of Innergex for specific 
+application to the proposed Barbers Point Solar Project as described herein in 
+accordance with generally accepted geotechnical engineering principles and practices. 
+No warranty is expressed or implied. 
+This report has been prepared solely for the purpose of assisting the design 
+engineers for the project planning and design. Therefore, this report may not contain 
+sufficient data, or the proper information, to serve as a basis for detailed construction 
+cost estimates. 
+Geotechnical Engineering Report - 04/25/2023
+SECTION 4. LIMITATIONS 
+W.O. 8217-00 
+GEOLABS, INC. 
+Page 35 
+Hawaii • California 
+The owner/client should be aware that unanticipated subsurface conditions are 
+commonly encountered. Unforeseen subsurface conditions, such as perched 
+groundwater, soft deposits, or hard layers may occur in localized areas and may require 
+additional corrections in the field (which may result in construction delays) to attain a 
+properly constructed project. Therefore, a sufficient contingency fund is recommended 
+to accommodate these possible extra costs. 
+This geotechnical engineering exploration conducted at the project site was not 
+intended to investigate the potential for presence of hazardous materials existing at the 
+project site. It should be noted that the equipment, techniques, and personnel used to 
+conduct a geo-environmental exploration differ substantially from those applied in 
+geotechnical engineering. 
+END OF LIMITATIONS 
+Geotechnical Engineering Report - 04/25/2023
+W.O. 8217-00 
+GEOLABS, INC. 
+Page 36 
+Hawaii • California 
+CLOSURE 
+The following plates and appendices are attached and complete this report: 
+Project Location Map .............................................................................................. Plate 1 
+Site Plan ................................................................................................................. Plate 2 
+Field Exploration ............................................................................................. Appendix A 
+Laboratory Tests ............................................................................................. Appendix B 
+Photographs of Core Samples ........................................................................ Appendix C 
+Field Resistivity Surveys ................................................................................. Appendix D 
+Thermal Resistivity Tests ................................................................................ Appendix E 
+-- 
+Respectfully submitted, 
+GEOLABS, INC. 
+By ________________________ 
+           Jason Seidman, P.E. 
+               Project Engineer 
+By 
+              Robin M. Lim, P.E. 
+                     President 
+RML:JS:rl 
+h:\8200_Series\8217-00.js2.doc
+Geotechnical Engineering Report - 04/25/2023
+PLATES 
+Geotechnical Engineering Report - 04/25/2023
+BARBERS POINT SOLAR PROJECT
+PROJECT LOCATION MAP
+GRAPHIC SCALE
+1000
+2000
+2000
+0
+FT.
+STUDY AREA
+GENERAL PROJECT LOCATION
+N
+WAHIAWA
+WAIKIKI
+HONOLULU
+AIEA
+PEARL CITY
+WAIPAHU
+EWA
+BARBERS POINT
+NANAKULI
+WAIANAE
+WAIALUA
+HALEIWA
+KAHUKU
+POINT
+DIAMOND
+HEAD
+HAWAII
+KAI
+WAIMANALO
+KAILUA
+KANEOHE
+KAHALUU
+PUNALUU
+HAUULA
+KAENA POINT
+ISLAND MAP
+NO SCALE
+KAPOLEI, OAHU, HAWAII
+JANUARY 2021
+1" = 2,000'
+Geotechnical Engineering
+GEOLABS, INC.
+DATE
+SCALE
+1
+8217-00
+DRAWN BY
+KHN
+W.O.
+PLATE
+N
+PACIFIC      OCEAN
+CAD User: KIM  File Last Updated: February 08, 2021 5:56:35pm  Plot Date:  February 08, 2021 - 5:57:12pm
+File: T:\Drafting\Working\8217-00_Barbers_Point_Solar_Project\8217-00PLM.dwg\1
+Plotter: DWG To PDF-GEO.pc3  Plotstyle: GEO-No-Dither-RBGC-HEAVY.ctb
+REFERENCE: MAP CREATED WITH TOPO!® ©2010 NATIONAL
+GEOGRAPHIC; ©2007 TELE ATLAS, REL. 1/2007.
+AREA 1
+AREA 1X
+AREA 2
+AREA 3
+Geotechnical Engineering Report - 04/25/2023
+Long Island St
+Casablanca St
+N
+GEOLABS, INC.
+Geotechnical Engineering
+8217-00
+DRAWN BY
+KHN
+1" = 1,000'
+FEBRUARY 2021
+SCALE
+DATE
+W.O.
+2
+PLATE
+GRAPHIC SCALE
+500
+0
+1000
+2000
+3000 FT.
+CAD User: HENRY  File Last Updated: February 09, 2021 7:30:16pm  Plot Date:  February 09, 2021 - 7:31:51pm
+File: A:\Drafting\Drafting\Working\8217-00_Barbers_Point_Solar_Project\8217-00SitePlan.dwg\2
+Plotter: DWG To PDF-GEO.pc3  Plotstyle: GEO-No-Dither-RBGC-HEAVY.ctb
+BARBERS POINT SOLAR PROJECT
+SITE PLAN
+KAPOLEI, OAHU, HAWAII
+APPROXIMATE BORING LOCATION
+LEGEND:
+APPROXIMATE BULK SAMPLE LOCATION
+REFERENCE: FIGURE 1, STUDY AREA AND VICINITY MAP
+TRANSMITTED BY INNERGEX ON JANUARY 25, 2021
+APPROXIMATE FIELD RESISTIVITY SURVEY
+LOCATION
+TR-5
+B-1
+R-6
+B-2
+R-1
+B-4
+B-3
+TR-4
+TR-3
+TR-2
+TR-1
+B-7
+B-6
+B-9
+B-5
+R-2
+R-3
+B-8
+B-14
+B-13
+B-11
+B-12
+B-16
+B-15
+B-10
+R-4
+B-17
+B-18
+R-5
+Geotechnical Engineering Report - 04/25/2023
+APPENDIX  A 
+Geotechnical Engineering Report - 04/25/2023
+W.O. 8217-00 
+GEOLABS, INC. 
+APRIL 2023     Page A-1 
+Hawaii • California 
+A P P E N D I X   A 
+Field Exploration 
+We explored the subsurface conditions at the project site by drilling and sampling 
+18 test borings, designated as Boring Nos. 1 through 18, extending to depths of about 
+10.5 to 14.5 feet below the existing ground surface. The approximate boring locations 
+are shown on the Site Plan, Plate 2. The borings were drilled using a truck-mounted drill 
+rig equipped with continuous flight augers and coring tools. 
+Our geologist and/or engineer classified the materials encountered in the borings 
+by visual and textural examination in the field in general accordance with ASTM D2488, 
+Standard Practice for Description and Identification of Soils, and monitored the drilling 
+operations on a near-continuous (full-time) basis. These classifications were further 
+reviewed visually and by testing in the laboratory. Soils were classified in general 
+accordance with ASTM D2487, Standard Practice for Classification of Soils for 
+Engineering Purposes (Unified Soil Classification System), as shown on the Soil Log 
+Legend, Plate A-0.1. Deviations made to the soil classification in accordance with ASTM 
+D2487 are described on the Soil Classification Log Key, Plate A-0.2. Graphic 
+representations of the materials encountered are presented on the Logs of Borings, 
+Plates A-1 through A-18. 
+Relatively “undisturbed” soil samples were obtained in general accordance with 
+ASTM D3550, Ring-Lined Barrel Sampling of Soils, by driving a 3-inch OD Modified 
+California sampler with a 140-pound hammer falling 30 inches. In addition, some 
+samples were obtained from the drilled borings in general accordance with 
+ASTM D1586, Penetration Test and Split-Barrel Sampling of Soils, by driving a 
+2-inch OD standard penetration sampler using the same hammer and drop. The blow 
+counts needed to drive the sampler the second and third 6 inches of an 18-inch drive 
+are shown as the “Penetration Resistance” on the Logs of Borings at the appropriate 
+sample depths. The penetration resistance shown on the Logs of Borings indicates the 
+number of blows required for the specific sampler type used. The blow counts may need 
+to be factored to obtain the Standard Penetration Test (SPT) blow counts.  
+Core samples of the rock materials encountered at the project site were obtained 
+by using diamond core drilling techniques in general accordance with ASTM D2113, 
+Diamond Core Drilling for Site Investigation. Core drilling is a rotary drilling method that 
+uses a hollow bit to cut into the rock formation. The rock material left in the hollow core 
+of the bit is mechanically recovered for examination and description. Rock cores were 
+described in general accordance with the Rock Description System as shown on the 
+Rock Log Legend, Plate A-0.3. The Rock Description System is based on the 
+publication “Suggested Methods for the Quantitative Description of Discontinuities in 
+Rock Masses” by the International Society for Rock Mechanics (March 1977). 
+Recovery (REC) is used as a subjective guide to the interpretation of the relative 
+quality of rock masses. Recovery is defined as the actual length of material recovered 
+Geotechnical Engineering Report - 04/25/2023
+Appendix A 
+Field Exploration 
+W.O. 8217-00 
+GEOLABS, INC. 
+APRIL 2023     Page A-2 
+Hawaii • California 
+from a coring attempt versus the length of the core attempt. For example, if 3.7 feet of 
+material is recovered from a 5.0-foot core run, the recovery would be 74 percent and 
+would be shown on the Logs of Borings as REC = 74%. 
+The Rock Quality Designation (RQD) is also a subjective guide to the relative 
+quality of rock masses. RQD is defined as the percentage of the core run in rock that is 
+sound material in excess of 4 inches in length without any discontinuities, discounting 
+any drilling induced fractures or breaks. If 2.5 feet of sound material is recovered from a 
+5.0-foot core run in rock, the RQD would be 50 percent and would be shown on the 
+Logs of Borings as RQD = 50%. It should be noted that RQD does not apply to coral 
+material. However, the RQD values of the coral material are included in the boring logs 
+for rough characterization of the coral material. Generally, the following is used to 
+describe the relative quality of the rock based on the "Practical Handbook of Physical 
+Properties of Rocks and Minerals." 
+Rock Quality 
+RQD 
+(%) 
+Very Poor 
+0 – 25 
+Poor 
+25 – 50 
+Fair 
+50 – 75 
+Good 
+75 – 90 
+Excellent 
+90 – 100 
+The rippability (or excavation characteristics) of a rock mass is a function of the 
+relative hardness of the rock, its relative quality, brittleness, and fissile characteristics. 
+Dense coral formations with high RQD values would be very difficult to rip and would 
+probably require more arduous methods of excavation. 
+Geotechnical Engineering Report - 04/25/2023
+UNCONSOLIDATED UNDRAINED TRIAXIAL
+COMPRESSION (ksf)
+MORE THAN 50%
+OF COARSE
+FRACTION
+RETAINED ON
+NO. 4 SIEVE
+50% OR MORE OF
+COARSE FRACTION
+PASSING
+THROUGH NO. 4
+SIEVE
+A-0.1
+MORE THAN 50%
+OF MATERIAL
+RETAINED ON NO.
+200  SIEVE
+50% OR MORE OF
+MATERIAL PASSING
+THROUGH NO. 200
+SIEVE
+TORVANE SHEAR (tsf)
+(2-INCH) O.D. STANDARD PENETRATION TEST
+(3-INCH) O.D. MODIFIED CALIFORNIA SAMPLE
+MORE THAN 12%
+FINES
+WATER LEVEL OBSERVED IN BORING OVERNIGHT
+HIGHLY ORGANIC SOILS
+SILTY GRAVELS, GRAVEL-SAND-SILT
+MIXTURES
+OL
+PEAT, HUMUS, SWAMP SOILS WITH HIGH
+ORGANIC CONTENTS
+INORGANIC CLAYS OF LOW TO MEDIUM
+PLASTICITY, GRAVELLY CLAYS, SANDY
+CLAYS, SILTY CLAYS, LEAN CLAYS
+Soil Log Legend
+ORGANIC CLAYS OF MEDIUM TO HIGH
+PLASTICITY, ORGANIC SILTS
+SC
+Plate
+GM
+FINE-
+GRAINED
+SOILS
+COARSE-
+GRAINED
+SOILS
+CLEAN SANDS
+SANDS WITH
+FINES
+SP
+INORGANIC SILTS AND VERY FINE SANDS,
+ROCK FLOUR, SILTY OR CLAYEY FINE SANDS
+OR CLAYEY SILTS WITH SLIGHT PLASTICITY
+POORLY-GRADED GRAVELS, GRAVEL-SAND
+MIXTURES, LITTLE OR NO FINES
+CLAYEY GRAVELS, GRAVEL-SAND-CLAY
+MIXTURES
+WELL-GRADED SANDS, GRAVELLY SANDS,
+LITTLE OR NO FINES
+POORLY-GRADED SANDS, GRAVELLY
+SANDS, LITTLE OR NO FINES
+SILTY SANDS, SAND-SILT MIXTURES
+CLAYEY SANDS, SAND-CLAY MIXTURES
+LIQUID LIMIT
+50 OR MORE
+CH
+NOTE: DUAL SYMBOLS ARE USED TO INDICATE BORDERLINE SOIL CLASSIFICATIONS
+MH
+SILTS
+AND
+CLAYS
+SILTS
+AND
+CLAYS
+LIQUID LIMIT
+LESS THAN 50
+USCS
+TYPICAL
+DESCRIPTIONS
+GW
+SANDS
+GRAVELS
+WELL-GRADED GRAVELS,  GRAVEL-SAND
+MIXTURES, LITTLE OR NO FINES
+ML
+CL
+OH
+LESS THAN 5%
+FINES
+GRAVELS WITH
+FINES
+CLEAN
+GRAVELS
+GRAB SAMPLE
+PLASTICITY INDEX (NP=NON-PLASTIC)
+TV
+LEGEND
+WATER LEVEL OBSERVED IN BORING AT TIME OF
+DRILLING
+WATER LEVEL OBSERVED IN BORING AFTER DRILLING
+SM
+MAJOR DIVISIONS
+GP
+MORE THAN 12%
+FINES
+PT
+LESS THAN 5%
+FINES
+UNIFIED SOIL CLASSIFICATION SYSTEM (USCS)
+ORGANIC SILTS AND ORGANIC SILTY
+CLAYS OF LOW PLASTICITY
+SW
+GC
+INORGANIC SILT, MICACEOUS OR
+DIATOMACEOUS FINE SAND OR SILTY
+SOILS
+INORGANIC CLAYS OF HIGH PLASTICITY
+PI
+LL
+TXUU
+UNCONFINED COMPRESSION
+OR UNIAXIAL COMPRESSIVE STRENGTH
+CORE SAMPLE
+SHELBY TUBE SAMPLE
+LIQUID LIMIT (NP=NON-PLASTIC)
+UC
+GEOLABS, INC.
+Geotechnical Engineering
+LOG LEGEND FOR SOIL  8217-00.GPJ  GEOLABS.GDT  11/29/20
+Geotechnical Engineering Report - 04/25/2023
+A-0.2
+GEOLABS, INC. CLASSIFICATION*
+Granular Soils
+Cohesive Soils
+Consistency
+accessory descriptions compose of the following:
+with some: >12%
+with a little: 5 - 12%
+with traces of: <5%
+accessory descriptions are lower cased and follow the
+Primary and Secondary Constituents
+(i.e., SILTY CLAY with some sand)
+Very Soft
+Soft
+Medium Stiff
+Stiff
+Very Stiff
+Hard
+< 0.5
+0.5 - 1.0
+1.0 - 2.0
+7 - 18
+18 - 55
+55 - 91
+> 91
+Medium Dense
+Coarse Sand
+(with deviations from ASTM D2488)
+Soil Classification Log Key
+*Soil descriptions are based on ASTM D2488-09a, Visual-Manual Procedure, with the
+above modifications by Geolabs, Inc. to the Unified Soil Classification System (USCS).
+accessory descriptions compose of the following:
+with some: >12%
+with a little: 5 - 12%
+with traces of: <5%
+accessory descriptions are lower cased and follow the
+Primary and Secondary Constituents
+(i.e., SILTY GRAVEL with a little sand)
+Dry:    Absence of moisture, dry to the touch
+Moist: Damp but no visible water
+Wet:   Visible free water
+Medium Sand
+Fine Sand
+#4 to #200 (4.75-mm to 0.075-mm)
+#4 to #10 (4.75-mm to 2-mm)
+> 12 inches (305-mm)
+3-inch to #4 (75-mm to 4.75-mm)
+Sieve Number and / or Size
+Gravel
+#10 to #40 (2-mm to 0.425-mm)
+#40 to #200 (0.425-mm to 0.075-mm)
+3 to 12 inches (75-mm to 305-mm)
+Description
+PP Readings
+(tsf)
+2.0 - 4.0
+> 4.0
+N-Value (Blows/Foot)
+MCS
+0 - 4
+RELATIVE DENSITY / CONSISTENCY
+GRAIN SIZE DEFINITION
+ABBREVIATIONS
+N-Value (Blows/Foot)
+0 - 7
+WOH:  Weight of Hammer
+WOR:  Weight of Drill Rods
+SPT:    Standard Penetration Test Split-Spoon Sampler
+MCS:   Modified California Sampler
+PP:      Pocket Penetrometer
+4 - 7
+7 - 15
+15 - 27
+27 - 55
+SPT
+0 - 2
+> 55
+> 30
+4 - 8
+15 - 30
+MOISTURE CONTENT DEFINITIONS
+SPT
+0 - 4
+4 - 10
+10 - 30
+30 - 50
+> 50
+MCS
+Loose
+EXAMPLE: Soil Containing 60% Gravel, 25% Sand, 15% Fines. Described as: SILTY GRAVEL with some sand
+Plate
+GRANULAR SOIL (- #200 <50%)
+2 - 4
+8 - 15
+Relative
+Density
+Very Loose
+Dense
+Very Dense
+COHESIVE SOIL (- #200    50%)
+PRIMARY constituents are composed of the largest
+percent of the soil mass. Primary constituents are
+capitalized and bold (i.e., GRAVEL, SAND)
+PRIMARY constituents are based on plasticity. Primary
+constituents are capitalized and bold (i.e., CLAY, SILT)
+SECONDARY constituents are composed of a
+percentage less than the primary constituent. If the soil
+mass consists of 12 percent or more fines content, a
+cohesive constituent is used (SILTY or CLAYEY);
+otherwise, a granular constituent is used (GRAVELLY
+or SANDY) provided that the secondary constituent
+consists of 20 percent or more of the soil mass.
+Secondary constituents are capitalized and bold (i.e.,
+SANDY GRAVEL, CLAYEY SAND) and precede the
+primary constituent.
+SECONDARY constituents are composed of a
+percentage less than the primary constituent, but more
+than 20 percent of the soil mass. Secondary constituents
+are capitalized and bold (i.e., SANDY CLAY, SILTY
+CLAY, CLAYEY SILT) and precede the primary
+constituent.
+Sand
+Boulders
+Cobbles
+Coarse Gravel
+3-inch to 3/4-inch (75-mm to 19-mm)
+Fine Gravel
+3/4-inch to #4 (19-mm to 4.75-mm)
+SOIL_CLASS_LOG_KEY  8217-00.GPJ  GEOLABS.GDT  11/29/20
+GEOLABS, INC.
+Geotechnical Engineering
+Geotechnical Engineering Report - 04/25/2023
+A-0.3
+ROCK DESCRIPTIONS
+Plate
+BRECCIA
+CLINKER
+COBBLES
+CORAL
+BASALT
+ROCK DESCRIPTION SYSTEM
+Greater than 24 inches apart
+12 to 24 inches apart
+6 to 12 inches apart
+3 to 6 inches apart
+Less than 3 inches apart
+Rock shows no sign of discoloration or loss of strength.
+Slight discoloration inwards from open fractures.
+Discoloration throughout and noticeably weakened though not able to break by hand.
+Most minerals decomposed with some corestones present in residual soil mass. Can be broken by hand.
+Saprolite. Mineral residue completely decomposed to soil but fabric and structure preserved.
+The following terms describe general fracture spacing of a rock:
+The following terms describe the chemical weathering of a rock:
+ROCK FRACTURE CHARACTERISTICS
+DEGREE OF WEATHERING
+HARDNESS
+BOULDERS
+VOID/CAVITY
+TUFF
+SILTSTONE
+LIMESTONE
+Unweathered:
+Slightly Weathered:
+Moderately Weathered:
+Highly Weathered:
+Extremely Weathered:
+Very Hard:
+Hard:
+Medium Hard:
+Soft:
+Very Soft:
+SANDSTONE
+Massive:
+Slightly Fractured:
+Moderately Fractured:
+Closely Fractured:
+Severely Fractured:
+Rock Log Legend
+The following terms describe the resistance of a rock to indentation or scratching:
+Specimen breaks with difficulty after several "pinging" hammer blows.
+Example: Dense, fine grain volcanic rock
+Specimen breaks with some difficulty after several hammer blows.
+Example: Vesicular, vugular, coarse-grained rock
+Specimen can be broked by one hammer blow. Cannot be scraped by knife. SPT may penetrate by
+~25 blows per inch with bounce.
+Example: Porous rock such as clinker, cinder, and coral reef
+Can be indented by one hammer blow. Can be scraped or peeled by knife. SPT can penetrate by
+~100 blows per foot.
+Example: Weathered rock, chalk-like coral reef
+Crumbles under hammer blow. Can be peeled and carved by knife. Can be indented by finger
+pressure.
+Example: Saprolite
+CONGLOMERATE
+GEOLABS, INC.
+Geotechnical Engineering
+LOG LEGEND FOR ROCK  8217-00.GPJ  GEOLABS.GDT  11/29/20
+Geotechnical Engineering Report - 04/25/2023
+2
+91
+SM
+ML
+55
+57
+50/3"
+77
+87
+UC=
+260 psi
+UC=
+400 psi
+Brown SILTY SAND, dry (fill)
+Light tan SANDY SILT with some gravel
+(coralline), very stiff, dry (coralline detritus)
+Light tan CORAL, closely to moderately
+fractured, slightly weathered, medium hard (coral
+formation)
+ Boring terminated at 13 feet
+ * Elevations estimated from ©2021
+GOOGLE™EARTH. Imagery dated June 10,
+2019.
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-45C TRACK
+4" Auger & PQ Coring
+140 lb. wt., 30 in. drop
+5
+10
+15
+20
+25
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation (feet MSL): 36 *
+Sample
+Moisture
+Content (%)
+1
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+November 23, 2020
+November 23, 2020
+J. Cline
+13 feet
+8217-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 1
+(Energy Transfer Ratio = 74.3%)
+GEOLABS, INC.
+Geotechnical Engineering
+BARBERS POINT SOLAR PROJECT
+KAPOLEI, OAHU, HAWAII
+BORING_LOG  8217-00.GPJ  GEOLABS.GDT  2/10/21
+Not Encountered
+Geotechnical Engineering Report - 04/25/2023
+2
+8
+13
+SM
+GW-
+GM
+0
+0
+30
+58
+30
+23
+17
+Sieve
+- #200 =
+13.4%
+Sieve
+- #200 =
+9.1%
+5-inch ASPHALTIC CONCRETE
+Tan SILTY SAND with some gravel (coralline),
+medium dense to dense, dry (coralline detritus)
+Light tan CORAL, closely to severely fractured,
+moderately weathered, medium hard (coral
+formation)
+grades to white
+Tan SANDY GRAVEL (CORALLINE) with a little
+silt, medium dense to dense, moist (coralline
+detritus)
+ Boring terminated at 11.5 feet
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-45C TRACK
+4" Auger & PQ Coring
+140 lb. wt., 30 in. drop
+5
+10
+15
+20
+25
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation (feet MSL): 33 *
+Sample
+Moisture
+Content (%)
+2
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+November 23, 2020
+November 23, 2020
+J. Cline
+11.5 feet
+8217-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 2
+(Energy Transfer Ratio = 74.3%)
+GEOLABS, INC.
+Geotechnical Engineering
+BARBERS POINT SOLAR PROJECT
+KAPOLEI, OAHU, HAWAII
+BORING_LOG  8217-00.GPJ  GEOLABS.GDT  2/10/21
+Not Encountered
+Geotechnical Engineering Report - 04/25/2023
+2
+7
+15
+86
+GP
+SM
+SM
+GW-
+GM
+0
+50/3"
+27
+29
+11
+21
+Sieve
+- #200 =
+16.6%
+Sieve
+- #200 =
+7.3%
+Dark gray SANDY GRAVEL, dry (fill)
+Light white SILTY SAND with gravel (coralline),
+dense to very dense, dry (coralline detritus)
+Light white with tan mottling CORAL, closely to
+severely fractured, moderately weathered,
+medium hard (coral formation)
+Tannish white SILTY SAND (CORALLINE),
+medium dense, moist (coralline detritus)
+Tannish white SANDY GRAVEL (CORALLINE)
+with a little silt, medium dense, moist (coralline
+detritus)
+ Boring terminated at 13 feet
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-45C TRACK
+4" Auger & PQ Coring
+140 lb. wt., 30 in. drop
+5
+10
+15
+20
+25
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation (feet MSL): 33 *
+Sample
+Moisture
+Content (%)
+3
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+November 23, 2020
+November 23, 2020
+J. Cline
+13 feet
+8217-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 3
+(Energy Transfer Ratio = 74.3%)
+GEOLABS, INC.
+Geotechnical Engineering
+BARBERS POINT SOLAR PROJECT
+KAPOLEI, OAHU, HAWAII
+BORING_LOG  8217-00.GPJ  GEOLABS.GDT  2/10/21
+Not Encountered
+Geotechnical Engineering Report - 04/25/2023
+10
+5
+1
+16
+72
+SW-
+SM
+0
+64
+32
+22
+24
+19
+Sieve
+- #200 =
+9.1%
+3-inches ASPHALTIC CONCRETE
+Light tan well-graded SAND with a little silt and
+gravel (coralline), medium dense to very dense,
+mosit (coralline detritus)
+grades to dry
+Tannish white CORAL, closely fractured, slightly
+weathered, medium hard (coral formation)
+ Boring terminated at 11.5 feet
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-45C TRACK
+4" Auger & PQ Coring
+140 lb. wt., 30 in. drop
+5
+10
+15
+20
+25
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation (feet MSL): 31 *
+Sample
+Moisture
+Content (%)
+4
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+November 23, 2020
+November 23, 2020
+J. Cline
+11.5 feet
+8217-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 4
+(Energy Transfer Ratio = 74.3%)
+GEOLABS, INC.
+Geotechnical Engineering
+BARBERS POINT SOLAR PROJECT
+KAPOLEI, OAHU, HAWAII
+BORING_LOG  8217-00.GPJ  GEOLABS.GDT  2/10/21
+Not Encountered
+Geotechnical Engineering Report - 04/25/2023
+5
+5
+12
+17
+90
+ML
+SM
+SM
+13
+11/6"
+ +50/0"
+ Ref.
+28
+44
+0
+29
+Sieve
+- #200 =
+47.4%
+Sieve
+- #200 =
+17.4%
+Brown SANDY SILT, moist (fill)
+Light tan SILTY SAND with some gravel
+(coralline), loose to very dense, moist (coralline
+detritus)
+Orangish tan SILTY SAND with some gravel
+(coralline), medium dense to dense, moist
+(coralline detritus)
+ Boring terminated at 12.5 feet
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-45C TRACK
+4" Auger & PQ Coring
+140 lb. wt., 30 in. drop
+5
+10
+15
+20
+25
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation (feet MSL): 26 *
+Sample
+Moisture
+Content (%)
+5
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+November 24, 2020
+November 24, 2020
+J. Cline
+12.5 feet
+8217-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 5
+(Energy Transfer Ratio = 74.3%)
+GEOLABS, INC.
+Geotechnical Engineering
+BARBERS POINT SOLAR PROJECT
+KAPOLEI, OAHU, HAWAII
+BORING_LOG  8217-00.GPJ  GEOLABS.GDT  2/10/21
+Not Encountered
+Geotechnical Engineering Report - 04/25/2023
+ML
+87
+95
+50/3"
+100
+100
+UC=
+1790 psi
+UC=
+1630 psi
+Brown SANDY SILT, very stiff, moist (fill)
+Tan CORAL, closely fractured, slightly
+weathered, hard (coral formation)
+grades to moderately fractured
+ Boring terminated at 11.3 feet
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-45C TRACK
+4" Auger & PQ Coring
+140 lb. wt., 30 in. drop
+5
+10
+15
+20
+25
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation (feet MSL): 23 *
+Sample
+Moisture
+Content (%)
+6
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+November 24, 2020
+November 24, 2020
+J. Cline
+11.3 feet
+8217-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 6
+(Energy Transfer Ratio = 74.3%)
+GEOLABS, INC.
+Geotechnical Engineering
+BARBERS POINT SOLAR PROJECT
+KAPOLEI, OAHU, HAWAII
+BORING_LOG  8217-00.GPJ  GEOLABS.GDT  2/10/21
+Not Encountered
+Geotechnical Engineering Report - 04/25/2023
+37
+69
+ML
+47
+6
+100
+92
+20
+UC=
+240 psi
+UC=
+190 psi
+Brown SANDY SILT, very stiff to hard, moist (fill)
+Tan CORAL, closely to moderately fractured,
+highly weathered, medium hard (coral formation)
+Tannish white CORAL, moderately to severely
+fractured, slightly to moderately weathered, soft
+to medium hard (coral formation)
+ Boring terminated at 11.5 feet
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-75DG2
+4" Solid-Stem Auger & PQ Coring
+140 lb. wt., 30 in. drop
+5
+10
+15
+20
+25
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation (feet MSL): 20 *
+Sample
+Moisture
+Content (%)
+7
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+November 25, 2020
+November 25, 2020
+J. Cline
+11.5 feet
+8217-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 7
+(Energy Transfer Ratio = 91.5%)
+GEOLABS, INC.
+Geotechnical Engineering
+BARBERS POINT SOLAR PROJECT
+KAPOLEI, OAHU, HAWAII
+BORING_LOG  8217-00.GPJ  GEOLABS.GDT  2/10/21
+Not Encountered
+Geotechnical Engineering Report - 04/25/2023
+26
+19
+18
+75
+MH
+SM
+70
+53
+44
+50/0"
+ Ref.
+33
+70
+LL=57
+PI=22
+Sieve
+- #200 =
+52.1%
+UC=
+4300 psi
+2-inch ASPHALTIC CONCRETE
+Brown CLAYEY SILT with some sand (coralline),
+very stiff to hard, moist (fill)
+Brown with white mottling SILTY SAND with
+some gravel (coralline), dense, moist (coralline
+detritus)
+Tannish white CORAL, slightly to closely
+fractured, slightly weathered, hard (coral
+formation)
+ Boring terminated at 14.5 feet
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-45C TRACK
+4" Auger & PQ Coring
+140 lb. wt., 30 in. drop
+5
+10
+15
+20
+25
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation (feet MSL): 20 *
+Sample
+Moisture
+Content (%)
+8
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+November 24, 2020
+November 24, 2020
+J. Cline
+14.5 feet
+8217-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 8
+(Energy Transfer Ratio = 74.3%)
+GEOLABS, INC.
+Geotechnical Engineering
+BARBERS POINT SOLAR PROJECT
+KAPOLEI, OAHU, HAWAII
+BORING_LOG  8217-00.GPJ  GEOLABS.GDT  2/10/21
+Not Encountered
+Geotechnical Engineering Report - 04/25/2023
+4
+86
+SM
+52
+58
+28/6"
+ +50/0"
+ Ref.
+75
+75
+UC=
+640 psi
+UC=
+380 psi
+Brown SILTY SAND with some gravel (coralline),
+very stiff, dry (fill)
+Whitish tan CORAL, closely fractured, highly
+weathered, medium hard (coral formation)
+Whitish tan CORAL, moderately to severely
+fractured, moderately weathered, medium hard
+(coral formation)
+ Boring terminated at 12.3 feet
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-75DG2
+4" Solid-Stem Auger & PQ Coring
+140 lb. wt., 30 in. drop
+5
+10
+15
+20
+25
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation (feet MSL): 20 *
+Sample
+Moisture
+Content (%)
+9
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+November 25, 2020
+November 25, 2020
+J. Cline
+12.3 feet
+8217-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 9
+(Energy Transfer Ratio = 91.5%)
+GEOLABS, INC.
+Geotechnical Engineering
+BARBERS POINT SOLAR PROJECT
+KAPOLEI, OAHU, HAWAII
+BORING_LOG  8217-00.GPJ  GEOLABS.GDT  2/10/21
+Not Encountered
+Geotechnical Engineering Report - 04/25/2023
+5
+17
+17
+64
+SM
+SM
+45
+80
+25
+10/0"
+ Ref.
+17
+86
+100
+Sieve
+- #200 =
+17.9%
+UC=
+640 psi
+UC=
+820 psi
+Sieve
+- #200 =
+12.0%
+Tan SILTY SAND with some gravel (coralline),
+medium dense, dry to moist (fill)
+Light tan CORAL, moderately to closely
+fractured, slightly weathered, medium hard to
+hard (coral formation)
+Tan SILTY SAND with some gravel (coralline),
+medium dense, moist (coralline detritus)
+ Boring terminated at 13 feet
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-45C TRACK
+4" Solid-Stem Auger & PQ Coring
+140 lb. wt., 30 in. drop
+5
+10
+15
+20
+25
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation (feet MSL): 16 *
+Sample
+Moisture
+Content (%)
+10
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+November 30, 2020
+November 30, 2020
+J. Cline
+13 feet
+8217-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 10
+(Energy Transfer Ratio = 74.3%)
+GEOLABS, INC.
+Geotechnical Engineering
+BARBERS POINT SOLAR PROJECT
+KAPOLEI, OAHU, HAWAII
+BORING_LOG  8217-00.GPJ  GEOLABS.GDT  2/10/21
+Not Encountered
+Geotechnical Engineering Report - 04/25/2023
+18
+15
+54
+MH
+12
+0
+50/0"
+ Ref.
+50
+43
+Brown CLAYEY SILT with some gravel
+(coralline), very stiff, moist (fill)
+Grayish white CORAL, closely to severely
+fractured, highly weathered, medium hard (coral
+formation)
+ Boring terminated at 10.5 feet
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-45C TRACK
+4" Auger & PQ Coring
+140 lb. wt., 30 in. drop
+5
+10
+15
+20
+25
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation (feet MSL): 13 *
+Sample
+Moisture
+Content (%)
+11
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+November 24, 2020
+November 24, 2020
+J. Cline
+10.5 feet
+8217-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 11
+(Energy Transfer Ratio = 74.3%)
+GEOLABS, INC.
+Geotechnical Engineering
+BARBERS POINT SOLAR PROJECT
+KAPOLEI, OAHU, HAWAII
+BORING_LOG  8217-00.GPJ  GEOLABS.GDT  2/10/21
+Not Encountered
+Geotechnical Engineering Report - 04/25/2023
+11
+14
+15
+85
+ML
+GP-
+GM
+65
+19
+31/6"
+ +35/3"
+64
+39
+88
+67
+Sieve
+- #200 =
+50.2%
+UC=
+340 psi
+Brown SANDY SILT with some gravel, hard,
+moist (fill)
+Tannish white CORAL, moderately to severely
+fractured, moderately weathered, medium hard
+(coral formation)
+Tan SANDY GRAVEL with a little silt, dense,
+moist (coralline detritus)
+ Boring terminated at 13 feet
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-45C TRACK
+4" Solid-Stem Auger & PQ Coring
+140 lb. wt., 30 in. drop
+5
+10
+15
+20
+25
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation (feet MSL): 10 *
+Sample
+Moisture
+Content (%)
+12
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+November 30, 2020
+November 30, 2020
+J. Cline
+13 feet
+8217-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 12
+(Energy Transfer Ratio = 74.3%)
+GEOLABS, INC.
+Geotechnical Engineering
+BARBERS POINT SOLAR PROJECT
+KAPOLEI, OAHU, HAWAII
+BORING_LOG  8217-00.GPJ  GEOLABS.GDT  2/10/21
+Not Encountered
+Geotechnical Engineering Report - 04/25/2023
+22
+ML
+SM
+0
+69
+50/0"
+ Ref.
+25/5"
+39
+31
+98
+UC=
+1740 psi
+Tan SANDY SILT with some gravel, moist (fill)
+Light tan CORAL, moderately to closely
+fractured, moderately weathered, hard (coral
+formation)
+Tan SILTY SAND with some gravel (coralline),
+dense, moist (coralline detritus)
+ Boring terminated at 13 feet
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-45C TRACK
+4" Auger & PQ Coring
+140 lb. wt., 30 in. drop
+5
+10
+15
+20
+25
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation (feet MSL): 11 *
+Sample
+Moisture
+Content (%)
+13
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+November 30, 2020
+November 30, 2020
+J. Cline
+13 feet
+8217-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 13
+(Energy Transfer Ratio = 74.3%)
+GEOLABS, INC.
+Geotechnical Engineering
+BARBERS POINT SOLAR PROJECT
+KAPOLEI, OAHU, HAWAII
+BORING_LOG  8217-00.GPJ  GEOLABS.GDT  2/10/21
+Not Encountered
+Geotechnical Engineering Report - 04/25/2023
+14
+16
+105
+ML
+GP-
+GM
+50/0"
+ Ref.
+52
+20
+0
+0
+Sieve
+- #200 =
+11.2%
+Tan SANDY SILT with some gravel, very stiff,
+moist (fill)
+Tan SANDY GRAVEL (CORALLINE) with a little
+silt, medium dense, moist (coralline detritus)
+ Boring terminated at 13 feet
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-45C TRACK
+4" Auger & PQ Coring
+140 lb. wt., 30 in. drop
+5
+10
+15
+20
+25
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation (feet MSL): 13 *
+Sample
+Moisture
+Content (%)
+14
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+November 30, 2020
+November 30, 2020
+J. Cline
+13 feet
+8217-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 14
+(Energy Transfer Ratio = 74.3%)
+GEOLABS, INC.
+Geotechnical Engineering
+BARBERS POINT SOLAR PROJECT
+KAPOLEI, OAHU, HAWAII
+BORING_LOG  8217-00.GPJ  GEOLABS.GDT  2/10/21
+Not Encountered
+Geotechnical Engineering Report - 04/25/2023
+45
+35
+75
+75
+UC=
+710 psi
+UC=
+690 psi
+6-inch ASPHALTIC CONCRETE
+Tannish white CORAL, moderately to severely
+fractured, moderately weathered, soft to medium
+hard (coral formation)
+ Boring terminated at 11 feet
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-75DG2
+4" Solid-Stem Auger & PQ Coring
+140 lb. wt., 30 in. drop
+5
+10
+15
+20
+25
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation (feet MSL): 13 *
+Sample
+Moisture
+Content (%)
+15
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+November 25, 2020
+November 25, 2020
+J. Cline
+11 feet
+8217-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 15
+(Energy Transfer Ratio = 91.5%)
+GEOLABS, INC.
+Geotechnical Engineering
+BARBERS POINT SOLAR PROJECT
+KAPOLEI, OAHU, HAWAII
+BORING_LOG  8217-00.GPJ  GEOLABS.GDT  2/10/21
+Not Encountered
+Geotechnical Engineering Report - 04/25/2023
+16
+27
+17
+78
+114
+ML
+17
+10
+35/2"
+15
+65
+36
+50
+UC=
+2140 psi
+Brown SANDY SILT with gravel, very stiff to
+hard, moist (fill)
+Tannish white CORAL, moderately to severely
+fractured, slightly weathered, hard (coral
+formation)
+grades to soft
+grades to medium hard
+ Boring terminated at 13 feet
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-45C TRACK
+4" Solid-Stem Auger & PQ Coring
+140 lb. wt., 30 in. drop
+5
+10
+15
+20
+25
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation (feet MSL): 10 *
+Sample
+Moisture
+Content (%)
+16
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+November 30, 2020
+November 30, 2020
+J. Cline
+13 feet
+8217-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 16
+(Energy Transfer Ratio = 74.3%)
+GEOLABS, INC.
+Geotechnical Engineering
+BARBERS POINT SOLAR PROJECT
+KAPOLEI, OAHU, HAWAII
+BORING_LOG  8217-00.GPJ  GEOLABS.GDT  2/10/21
+Not Encountered
+Geotechnical Engineering Report - 04/25/2023
+9
+25
+GM
+33
+10
+50/1"
+39
+94
+40
+UC=
+650 psi
+Light brown SILTY GRAVEL (CORALLINE) with
+some cobbles, very dense, moist (fill)
+Light tannish white CORAL, closely to severely
+fractured, slightly weathered, soft to medium
+hard (coral formation)
+ Boring terminated at 12.5 feet
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-75DG2
+4" Solid-Stem Auger & PQ Coring
+140 lb. wt., 30 in. drop
+5
+10
+15
+20
+25
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation (feet MSL): 13 *
+Sample
+Moisture
+Content (%)
+17
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+November 25, 2020
+November 25, 2020
+M. Hassani
+12.5 feet
+8217-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 17
+(Energy Transfer Ratio = 91.5%)
+GEOLABS, INC.
+Geotechnical Engineering
+BARBERS POINT SOLAR PROJECT
+KAPOLEI, OAHU, HAWAII
+BORING_LOG  8217-00.GPJ  GEOLABS.GDT  2/10/21
+Not Encountered
+Geotechnical Engineering Report - 04/25/2023
+33
+31
+16
+ML
+15
+0
+30/5"
+27
+100/5"
+62
+38
+UC=
+1530 psi
+Light brown GRAVELLY (CORALLINE) SILT with
+some sand, hard, moist (fill)
+Light tannish white CORAL, closely to severely
+fractured, slightly weathered, soft to medium
+hard (coral formation)
+ Boring terminated at 11.4 feet
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-75DG2
+4" Solid-Stem Auger & PQ Coring
+140 lb. wt., 30 in. drop
+5
+10
+15
+20
+25
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation (feet MSL): 10 *
+Sample
+Moisture
+Content (%)
+18
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+November 25, 2020
+November 25, 2020
+M. Hassani
+11.4 feet
+8217-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 18
+(Energy Transfer Ratio = 91.5%)
+GEOLABS, INC.
+Geotechnical Engineering
+BARBERS POINT SOLAR PROJECT
+KAPOLEI, OAHU, HAWAII
+BORING_LOG  8217-00.GPJ  GEOLABS.GDT  2/10/21
+Not Encountered
+Geotechnical Engineering Report - 04/25/2023
+APPENDIX  B 
+Geotechnical Engineering Report - 04/25/2023
+W.O. 8217-00 
+GEOLABS, INC. 
+APRIL 2023     Page B-1 
+Hawaii • California 
+A P P E N D I X   B 
+Laboratory Tests 
+Moisture Content (ASTM D2216) and Unit Weight (ASTM D7263) determinations 
+were performed on selected samples as an aid in the classification and evaluation of 
+soil properties. The test results are presented on the Logs of Borings at the appropriate 
+sample depths. 
+One Atterberg Limits test (ASTM D4318) was performed on a selected soil 
+sample to evaluate the liquid and plastic limits and to aid in soil classification. The test 
+results are summarized on the Log of Boring at the appropriate sample depth, and 
+graphic presentation of the test results is provided on Plate B-1. 
+Twelve Sieve Analysis tests (ASTM D6913) were performed on selected samples 
+of the soils to evaluate the gradation characteristics of the soils and to aid in soil 
+classification. Graphic presentations of the grain size distributions are provided on 
+Plates B-2 through B-4. 
+Eighteen Uniaxial Compressive Strength tests (ASTM D7012) were performed on 
+selected rock core samples to evaluate the uniaxial compressive strength of the coral 
+formation encountered. The test results are presented on Plate B-5. 
+Four laboratory California Bearing Ratio tests (ASTM D1883) were performed on 
+bulk samples of the near-surface soils to evaluate the pavement support characteristics 
+of the soils. The test results are presented on Plates B-6 through B-9. 
+Five Modified Proctor compaction tests (ASTM D1557) were performed on bulk 
+samples of the near-surface soils to evaluate the relationship between the moisture 
+content and the dry density of the near-surface soils as fill materials. The test results are 
+presented on Plates B-10 and B-14. 
+Four sets of Corrosivity tests, including pH Value (ASTM G51), Minimum 
+Resistivity (ASTM G57), Chloride Content (EPA 300.0), and Sulfate Content 
+(EPA 300.0), were performed on selected soil samples obtained from our field 
+exploration. The test results are summarized on Plate B-15. 
+Geotechnical Engineering Report - 04/25/2023
+0
+10
+20
+30
+40
+50
+60
+70
+80
+90
+100
+0
+20
+40
+60
+80
+100
+120
+ML or OL
+CL-ML
+CL or OL
+CH or OH
+B - 1
+MH or OH
+LIQUID LIMIT
+PLASTICITY INDEX
+ATTERBERG LIMITS TEST RESULTS - ASTM D4318
+B-8
+57
+1.0-2.5
+35
+NP = NON-PLASTIC
+4
+7
+22
+Sample
+Depth (ft)
+LL
+PL
+PI
+Brown clayey silt (MH) with some sand and gravel
+Description
+Plate
+W.O. 8217-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+BARBERS POINT SOLAR PROJECT
+KAPOLEI, OAHU, HAWAII
+G_ATTERBERG_PI-100_LL-120  8217-00.GPJ  GEOLABS.GDT  1/26/21
+Geotechnical Engineering Report - 04/25/2023
+0
+5
+10
+15
+20
+25
+30
+35
+40
+45
+50
+55
+60
+65
+70
+75
+80
+85
+90
+95
+100
+0.001
+0.01
+0.1
+1
+10
+100
+1.796
+6.651
+2.263
+7.447
+1.273
+B - 2
+coarse
+1
+1.5
+3
+2
+0.095
+0.16
+0.105
+40
+Depth (ft)
+%Gravel
+20.8
+49.6
+25.7
+51.9
+6.0
+65.8
+41.3
+57.7
+40.9
+84.8
+%Sand
+COBBLES
+Sample
+D30 (mm)
+140
+20
+2.9
+2.9
+2.7
+70.3
+46.6
+12.1
+HYDROMETER
+3
+GRAIN SIZE IN MILLIMETERS
+PERCENT FINER BY WEIGHT
+100
+coarse
+1/2
+Sample
+0.437
+1.35
+0.293
+1.861
+0.599
+Cu
+GRAVEL
+U.S. SIEVE NUMBERS
+D10 (mm)
+16
+fine
+19
+37.5
+25
+37.5
+19
+Cc
+3/4
+fine
+SILT OR CLAY
+medium
+GRAIN SIZE DISTRIBUTION - ASTM D6913
+SAND
+%Fine
+60
+4
+30
+200
+4
+6
+13.4
+9.1
+16.6
+7.3
+9.1
+Depth (ft)
+LL
+Tan silty sand (SM) with some gravel
+Tan sandy gravel (GW-GM) with a little silt
+Tannish white silty sand (SM) with some gravel
+Tannish white sandy gravel (GW-GM) with a little silt
+Light tan well-graded sand (SW-SM) w/ a little silt & gravel
+810 14
+50
+U.S. SIEVE OPENING IN INCHES
+6
+D60 (mm)
+D100 (mm)
+B-2
+B-2
+B-3
+B-3
+B-4
+1.0-2.5
+10.0-11.5
+6.5-8.0
+11.5-13.0
+5.0-6.5
+1.0-2.5
+10.0-11.5
+6.5-8.0
+11.5-13.0
+5.0-6.5
+B-2
+B-2
+B-3
+B-3
+B-4
+3/8
+PL PI
+Description
+Plate
+W.O. 8217-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+BARBERS POINT SOLAR PROJECT
+KAPOLEI, OAHU, HAWAII
+G_GRAIN_SIZE_MOD  8217-00.GPJ  GEOLABS.GDT  1/26/21
+Geotechnical Engineering Report - 04/25/2023
+0
+5
+10
+15
+20
+25
+30
+35
+40
+45
+50
+55
+60
+65
+70
+75
+80
+85
+90
+95
+100
+0.001
+0.01
+0.1
+1
+10
+100
+0.409
+1.129
+0.468
+2.061
+2.775
+B - 3
+coarse
+1
+1.5
+3
+2
+40
+Depth (ft)
+%Gravel
+13.7
+19.2
+27.8
+28.8
+32.5
+38.9
+63.4
+20.1
+53.3
+55.4
+%Sand
+COBBLES
+Sample
+D30 (mm)
+140
+20
+0.8
+52.1
+HYDROMETER
+3
+GRAIN SIZE IN MILLIMETERS
+PERCENT FINER BY WEIGHT
+100
+coarse
+1/2
+Sample
+0.201
+0.224
+0.334
+Cu
+GRAVEL
+U.S. SIEVE NUMBERS
+D10 (mm)
+16
+fine
+19
+25
+25
+25
+25
+Cc
+3/4
+fine
+SILT OR CLAY
+medium
+GRAIN SIZE DISTRIBUTION - ASTM D6913
+SAND
+%Fine
+60
+4
+30
+200
+4
+6
+47.4
+17.4
+52.1
+17.9
+12.0
+Depth (ft)
+LL
+Light tan silty sand (SM) with some gravel
+Orangish tan silty sand (SM) with some gravel
+Brown clayey silt (MH) with some sand and gravel
+Tan silty sand (SM) with some gravel
+Tan silty sand (SM) with some gravel
+810 14
+50
+U.S. SIEVE OPENING IN INCHES
+6
+D60 (mm)
+D100 (mm)
+B-5
+B-5
+B-8
+B-10
+B-10
+1.0-2.5
+6.0-7.5
+2.5-4.0
+1.0-2.5
+11.5-13.0
+1.0-2.5
+6.0-7.5
+2.5-4.0
+1.0-2.5
+11.5-13.0
+B-5
+B-5
+B-8
+B-10
+B-10
+3/8
+PL PI
+Description
+Plate
+W.O. 8217-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+BARBERS POINT SOLAR PROJECT
+KAPOLEI, OAHU, HAWAII
+G_GRAIN_SIZE_MOD  8217-00.GPJ  GEOLABS.GDT  1/26/21
+Geotechnical Engineering Report - 04/25/2023
+0
+5
+10
+15
+20
+25
+30
+35
+40
+45
+50
+55
+60
+65
+70
+75
+80
+85
+90
+95
+100
+0.001
+0.01
+0.1
+1
+10
+100
+0.557
+7.556
+B - 4
+coarse
+1
+1.5
+3
+2
+40
+Depth (ft)
+%Gravel
+22.6
+51.1
+27.2
+37.7
+%Sand
+COBBLES
+Sample
+D30 (mm)
+140
+20
+3.3
+145.9
+HYDROMETER
+3
+GRAIN SIZE IN MILLIMETERS
+PERCENT FINER BY WEIGHT
+100
+coarse
+1/2
+Sample
+1.134
+Cu
+GRAVEL
+U.S. SIEVE NUMBERS
+D10 (mm)
+16
+fine
+37.5
+37.5
+Cc
+3/4
+fine
+SILT OR CLAY
+medium
+GRAIN SIZE DISTRIBUTION - ASTM D6913
+SAND
+%Fine
+60
+4
+30
+200
+4
+6
+50.2
+11.2
+Depth (ft)
+LL
+Brown sandy silt (ML) with some gravel
+Tan sandy gravel (GP-GM) with a little silt
+810 14
+50
+U.S. SIEVE OPENING IN INCHES
+6
+D60 (mm)
+D100 (mm)
+B-12
+B-14
+1.0-2.3
+11.5-13.0
+1.0-2.3
+11.5-13.0
+B-12
+B-14
+3/8
+PL PI
+Description
+Plate
+W.O. 8217-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+BARBERS POINT SOLAR PROJECT
+KAPOLEI, OAHU, HAWAII
+G_GRAIN_SIZE_MOD  8217-00.GPJ  GEOLABS.GDT  1/26/21
+Geotechnical Engineering Report - 04/25/2023
+B-1
+3 - 8
+6.670
+3.240
+2.06
+95.9
+2,180
+260
+B-1
+8 - 13
+5.340
+3.250
+1.64
+93.9
+3,350
+400
+B-6
+1.25 - 6.25
+6.560
+3.250
+2.02
+125.4
+14,810
+1,790
+B-6
+6.25 - 11.25
+6.740
+3.250
+2.07
+119.4
+13,510
+1,630
+B-7
+1.5 - 6.5
+6.780
+3.250
+2.09
+85.7
+1,950
+240
+B-7
+6.5 - 11.5
+5.670
+3.230
+1.76
+64.1
+1,590
+190
+B-8
+9.5 - 14.5
+6.620
+3.250
+2.04
+146.0
+35,690
+4,300
+B-9
+2.25 - 7.25
+6.130
+3.240
+1.89
+100.8
+5,240
+640
+B-9
+7.25 - 12.25
+6.640
+3.240
+2.05
+94.1
+3,170
+380
+B-10
+3 - 6.5
+5.200
+3.240
+1.60
+117.4
+5,240
+640
+B-10
+6.5 - 11.5
+6.610
+3.250
+2.03
+114.4
+6,840
+820
+B-12
+2.25 - 6.5
+6.680
+3.240
+2.06
+109.8
+2,810
+340
+B-13
+7 - 11.5
+6.750
+3.240
+2.08
+127.3
+14,330
+1,740
+B-15
+1 - 6
+6.260
+3.240
+1.93
+105.1
+5,850
+710
+B-15
+6 - 11
+5.460
+3.240
+1.69
+110.6
+5,720
+690
+B-16
+1.5 - 6.5
+6.750
+3.250
+2.08
+100.8
+17,770
+2,140
+B-17
+6 - 11
+5.610
+3.240
+1.73
+104.3
+5,380
+650
+B-18
+1.4 - 5.98
+5.540
+3.240
+1.71
+123.9
+12,620
+1,530
+B - 5
+Depth
+Location
+Length
+Diameter
+Length/
+Diameter
+Ratio
+(feet)
+(inches)
+(inches)
+(pcf)
+(psi)
+Density
+Compressive
+Strength
+Load
+UNIAXIAL COMPRESSIVE STRENGTH TEST
+(lbs)
+ASTM D7012 (METHOD C)
+Note: Samples were not prepared in accordance with ASTM D4543. Therefore, results reported may differ from results obtained from a test speciment that meets the requirements of
+Practice D4543
+Plate
+W.O. 8217-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+BARBERS POINT SOLAR PROJECT
+KAPOLEI, OAHU, HAWAII
+G_ROCK_UC_TEST_PORTRAIT  8217-00.GPJ  GEOLABS.GDT  2/8/21
+Geotechnical Engineering Report - 04/25/2023
+0
+200
+400
+600
+800
+1,000
+1,200
+1,400
+1,600
+1,800
+2,000
+2,200
+0
+0.10
+0.20
+0.30
+0.40
+0.50
+0.60
+Sample:
+Corr. CBR @ 0.1"
+Depth:
+Corr. CBR @ 0.2"
+No. of Layers
+CALIFORNIA BEARING RATIO - ASTM D1883
+Description:
+Days Soaked
+5
+TR-1
+Swell (%)
+0.13
+85.4
+84.6
+Molding Dry Density (pcf)
+STRESS, psi
+3.0 - 4.0 feet
+No. of Blows
+6.9
+131.7
+Molding Moisture (%)
+Hammer Wt. (lbs)
+Hammer Drop (inches)
+PENETRATION, inches
+Brownish gray gravelly sand
+18
+56
+10
+5
+Aggregate
+B - 6
+3/4 inch minus
+Plate
+W.O. 8217-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+BARBERS POINT SOLAR PROJECT
+KAPOLEI, OAHU, HAWAII
+G_CBR  8217-00.GPJ  GEOLABS.GDT  2/10/21
+Geotechnical Engineering Report - 04/25/2023
+0
+200
+400
+600
+800
+1,000
+1,200
+1,400
+1,600
+1,800
+2,000
+2,200
+0
+0.10
+0.20
+0.30
+0.40
+0.50
+0.60
+Sample:
+Corr. CBR @ 0.1"
+Depth:
+Corr. CBR @ 0.2"
+No. of Layers
+CALIFORNIA BEARING RATIO - ASTM D1883
+Description:
+Days Soaked
+5
+TR-2
+Swell (%)
+1.72
+30.8
+29.9
+Molding Dry Density (pcf)
+STRESS, psi
+3.0 - 4.0 feet
+No. of Blows
+15.0
+99.0
+Molding Moisture (%)
+Hammer Wt. (lbs)
+Hammer Drop (inches)
+PENETRATION, inches
+Brown gravelly sand with a little silt
+18
+56
+10
+5
+Aggregate
+B - 7
+3/4 inch minus
+Plate
+W.O. 8217-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+BARBERS POINT SOLAR PROJECT
+KAPOLEI, OAHU, HAWAII
+G_CBR  8217-00.GPJ  GEOLABS.GDT  2/10/21
+Geotechnical Engineering Report - 04/25/2023
+0
+200
+400
+600
+800
+1,000
+1,200
+1,400
+1,600
+1,800
+2,000
+2,200
+0
+0.10
+0.20
+0.30
+0.40
+0.50
+0.60
+Sample:
+Corr. CBR @ 0.1"
+Depth:
+Corr. CBR @ 0.2"
+No. of Layers
+CALIFORNIA BEARING RATIO - ASTM D1883
+Description:
+Days Soaked
+7
+TR-4
+Swell (%)
+0.76
+37.6
+39.7
+Molding Dry Density (pcf)
+STRESS, psi
+3.0 - 4.0 feet
+No. of Blows
+13.6
+104.2
+Molding Moisture (%)
+Hammer Wt. (lbs)
+Hammer Drop (inches)
+PENETRATION, inches
+Light brown silt with a little gravel
+18
+56
+10
+5
+Aggregate
+B - 8
+3/4 inch minus
+Plate
+W.O. 8217-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+BARBERS POINT SOLAR PROJECT
+KAPOLEI, OAHU, HAWAII
+G_CBR  8217-00.GPJ  GEOLABS.GDT  2/10/21
+Geotechnical Engineering Report - 04/25/2023
+0
+200
+400
+600
+800
+1,000
+1,200
+1,400
+1,600
+1,800
+2,000
+2,200
+0
+0.10
+0.20
+0.30
+0.40
+0.50
+0.60
+Sample:
+Corr. CBR @ 0.1"
+Depth:
+Corr. CBR @ 0.2"
+No. of Layers
+CALIFORNIA BEARING RATIO - ASTM D1883
+Description:
+Days Soaked
+7
+TR-5
+Swell (%)
+0.07
+39.7
+38.8
+Molding Dry Density (pcf)
+STRESS, psi
+3.0 - 4.0 feet
+No. of Blows
+7.7
+112.0
+Molding Moisture (%)
+Hammer Wt. (lbs)
+Hammer Drop (inches)
+PENETRATION, inches
+Tannish white gravelly sand
+18
+56
+10
+5
+Aggregate
+B - 9
+3/4 inch minus
+Plate
+W.O. 8217-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+BARBERS POINT SOLAR PROJECT
+KAPOLEI, OAHU, HAWAII
+G_CBR  8217-00.GPJ  GEOLABS.GDT  2/10/21
+Geotechnical Engineering Report - 04/25/2023
+75
+80
+85
+90
+95
+100
+105
+110
+115
+120
+125
+130
+135
+0
+10
+20
+30
+40
+132.0
+8.0
+DRY DENSITY, pcf
+Optimum Moisture Content:
+Sample:
+Depth:
+TEST RESULTS
+MOISTURE CONTENT, %
+Description:
+pcf
+Maximum Dry Density:
+Brownish gray gravelly sand
+B - 10
+3.20
+3.10
+3.00
+2.90
+2.80
+2.70
+2.60
+3.0 - 4.0 feet
+TR-1
+MOISTURE-DENSITY RELATIONSHIP - ASTM D1557 C
+Test Date:
+December 11, 2020
+Plate
+W.O. 8217-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+BARBERS POINT SOLAR PROJECT
+KAPOLEI, OAHU, HAWAII
+G_COMPACTION  8217-00.GPJ  GEOLABS.GDT  2/10/21
+Geotechnical Engineering Report - 04/25/2023
+75
+80
+85
+90
+95
+100
+105
+110
+115
+120
+125
+130
+135
+0
+10
+20
+30
+40
+104.0
+14.5
+DRY DENSITY, pcf
+Optimum Moisture Content:
+Sample:
+Depth:
+TEST RESULTS
+MOISTURE CONTENT, %
+Description:
+pcf
+Maximum Dry Density:
+Brown gravelly sand with a little silt
+B - 11
+3.20
+3.10
+3.00
+2.90
+2.80
+2.70
+2.60
+3.0 - 4.0 feet
+TR-2
+MOISTURE-DENSITY RELATIONSHIP - ASTM D1557 C
+Test Date:
+December 11, 2020
+Plate
+W.O. 8217-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+BARBERS POINT SOLAR PROJECT
+KAPOLEI, OAHU, HAWAII
+G_COMPACTION  8217-00.GPJ  GEOLABS.GDT  2/10/21
+Geotechnical Engineering Report - 04/25/2023
+75
+80
+85
+90
+95
+100
+105
+110
+115
+120
+125
+130
+135
+0
+10
+20
+30
+40
+100.0
+11.5
+DRY DENSITY, pcf
+Optimum Moisture Content:
+Sample:
+Depth:
+TEST RESULTS
+MOISTURE CONTENT, %
+Description:
+pcf
+Maximum Dry Density:
+Light tan silty sand
+B - 12
+3.20
+3.10
+3.00
+2.90
+2.80
+2.70
+2.60
+3.0 - 4.0 feet
+TR-3
+MOISTURE-DENSITY RELATIONSHIP - ASTM D1557 C
+Test Date:
+December 15, 2020
+Plate
+W.O. 8217-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+BARBERS POINT SOLAR PROJECT
+KAPOLEI, OAHU, HAWAII
+G_COMPACTION  8217-00.GPJ  GEOLABS.GDT  2/10/21
+Geotechnical Engineering Report - 04/25/2023
+75
+80
+85
+90
+95
+100
+105
+110
+115
+120
+125
+130
+135
+0
+10
+20
+30
+40
+112.0
+13.5
+DRY DENSITY, pcf
+Optimum Moisture Content:
+Sample:
+Depth:
+TEST RESULTS
+MOISTURE CONTENT, %
+Description:
+pcf
+Maximum Dry Density:
+Light brown silt with a little gravel
+B - 13
+3.20
+3.10
+3.00
+2.90
+2.80
+2.70
+2.60
+3.0 - 4.0 feet
+TR-4
+MOISTURE-DENSITY RELATIONSHIP - ASTM D1557 C
+Test Date:
+December 15, 2020
+Plate
+W.O. 8217-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+BARBERS POINT SOLAR PROJECT
+KAPOLEI, OAHU, HAWAII
+G_COMPACTION  8217-00.GPJ  GEOLABS.GDT  2/10/21
+Geotechnical Engineering Report - 04/25/2023
+75
+80
+85
+90
+95
+100
+105
+110
+115
+120
+125
+130
+135
+0
+10
+20
+30
+40
+117.0
+9.0
+DRY DENSITY, pcf
+Optimum Moisture Content:
+Sample:
+Depth:
+TEST RESULTS
+MOISTURE CONTENT, %
+Description:
+pcf
+Maximum Dry Density:
+Tannish white gravelly sand
+B - 14
+3.20
+3.10
+3.00
+2.90
+2.80
+2.70
+2.60
+3.0 - 4.0 feet
+TR-5
+MOISTURE-DENSITY RELATIONSHIP - ASTM D1557 C
+Test Date:
+December 16, 2020
+Plate
+W.O. 8217-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+BARBERS POINT SOLAR PROJECT
+KAPOLEI, OAHU, HAWAII
+G_COMPACTION  8217-00.GPJ  GEOLABS.GDT  2/10/21
+Geotechnical Engineering Report - 04/25/2023
+B-4
+1.0 - 2.5
+7.73
+10000
+21
+36
+TR-1
+3.0 - 4.0
+7.72
+4900
+ND
+25
+TR-2
+3.0 - 4.0
+7.59
+1300
+71
+61
+TR-3
+3.0 - 4.0
+7.57
+880
+340
+120
+TR-4
+3.0 - 4.0
+7.63
+3800
+27
+43
+TR-5
+3.0 - 4.0
+8.52
+11000
+12
+9
+SUMMARY OF CORROSIVITY TESTS
+B - 15
+(ohm-cm)
+(mg/kg)
+(mg/kg)
+SM 2510B
+Minimum Resistivity
+pH Value
+EPA 300.0
+Minimum Resistivity
+ASTM G57
+pH Value
+Method 9045C
+ASTM G51
+TEST METHODS (by Geolabs, Inc.)*
+pH Value
+Minimum Resistivity Chloride Content
+Sulfate Content
+ND: Not Detected Within Reporting Limits
+Sulfate Content
+EPA 300.0
+Location
+Depth
+(feet)
+Sulfate Content
+N/A
+TEST METHODS (by Eurofins TestAmerica Laboratories, Inc.)
+Chloride Content
+Chloride Content
+N/A
+Plate
+W.O. 8217-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+BARBERS POINT SOLAR PROJECT
+KAPOLEI, OAHU, HAWAII
+G_SUMMARY_OF_CORROSIVITY_TESTS  8217-00.GPJ  GEOLABS.GDT  2/8/21
+Geotechnical Engineering Report - 04/25/2023
+APPENDIX  C 
+Geotechnical Engineering Report - 04/25/2023
+BARBERS POINT SOLAR PROJCT  
+KAPOLEI, OAHU, HAWAII   
+W.O. 8217-00 
+GEOLABS, INC. 
+PLATE C-1 
+Hawaii • California 
+                     B-1     3.0’ TO 13.0’ 
+   3.0’ 
+     8.0’ 
+                                                                                                                             8.0’                              13.0’ 
+Geotechnical Engineering Report - 04/25/2023
+BARBERS POINT SOLAR PROJCT  
+KAPOLEI, OAHU, HAWAII   
+W.O. 8217-00 
+GEOLABS, INC. 
+PLATE C-2 
+Hawaii • California 
+B-2     2.5’ TO 10.0’         B-3     1.75’ TO 11.5’        B-4     6.5’ TO 10.0’           B-5     7.5’ TO 11.5’ 
+       2.5’ 
+               1.75’ 
+               6.5’ 
+                        7.5’ 
+                   10.0’                              11.5’                                       10.0’                                   11.5’ 
+Geotechnical Engineering Report - 04/25/2023
+BARBERS POINT SOLAR PROJCT  
+KAPOLEI, OAHU, HAWAII   
+W.O. 8217-00 
+GEOLABS, INC. 
+PLATE C-3 
+Hawaii • California 
+                          B-6     1.25’ TO 11.25’                                                 B-7     1.5’ TO 11.5’ 
+        1.25’ 
+           6.25’ 
+                       1.5’ 
+                       6.5’ 
+                               6.25’                              11.25’                                                 6.5’             11.5’ 
+Geotechnical Engineering Report - 04/25/2023
+BARBERS POINT SOLAR PROJCT  
+KAPOLEI, OAHU, HAWAII   
+W.O. 8217-00 
+GEOLABS, INC. 
+PLATE C-4 
+Hawaii • California 
+                      B-8     4.0’ TO 14.5’                                            B-9     2.25’ TO 12.25’ 
+                        4.0’                                                            2.25’                                 7.25’ 
+                                               14.5’                                                          7.25’               12.25’                                    
+Geotechnical Engineering Report - 04/25/2023
+BARBERS POINT SOLAR PROJCT  
+KAPOLEI, OAHU, HAWAII   
+W.O. 8217-00 
+GEOLABS, INC. 
+PLATE C-5 
+Hawaii • California 
+                                B-10     3.0’ TO 11.5’                                        B-11     1.5’ TO 10.5’ 
+                 3.0’ 
+                       6.5’ 
+                                 1.5’ 
+                                         6.5’                                    11.5’                                            10.5’              
+Geotechnical Engineering Report - 04/25/2023
+BARBERS POINT SOLAR PROJCT  
+KAPOLEI, OAHU, HAWAII   
+W.O. 8217-00 
+GEOLABS, INC. 
+PLATE C-6 
+Hawaii • California 
+                B-12     2.25’ TO 11.5’                                                         B-13     2.5’ TO 11.5’ 
+        2.25’ 
+            8.0’ 
+                       2.5’ 
+       7.0’ 
+                                  6.5’              11.5’                                                6.5’                                 11.5’ 
+Geotechnical Engineering Report - 04/25/2023
+BARBERS POINT SOLAR PROJCT  
+KAPOLEI, OAHU, HAWAII   
+W.O. 8217-00 
+GEOLABS, INC. 
+PLATE C-7 
+Hawaii • California 
+                            B-15     1.0’ TO 11.0’                                             B-16     1.67’ TO 11.5’ 
+                 1.0’ 
+                     6.0’ 
+                               1.67’ 
+                                           6.0’             11.0’                                                               11.5’              
+Geotechnical Engineering Report - 04/25/2023
+BARBERS POINT SOLAR PROJCT  
+KAPOLEI, OAHU, HAWAII   
+W.O. 8217-00 
+GEOLABS, INC. 
+PLATE C-8 
+Hawaii • California 
+                            B-17     2.0’ TO 11.0’                                             B-18     1.4’ TO 11.0’ 
+                 2.0’ 
+                     6.0’ 
+                               1.4’ 
+                                       6.0’                 11.0’                                                               11.0’              
+Geotechnical Engineering Report - 04/25/2023
+APPENDIX  D 
+Geotechnical Engineering Report - 04/25/2023
+W.O. 8217-00 
+GEOLABS, INC. 
+APRIL 2023     Page D-1 
+Hawaii • California 
+A P P E N D I X   D 
+Field Resistivity Surveys 
+Geophysical survey equipment (i.e. resistance meter) was mobilized to the 
+project site on November 24 through 29, 2020 and January 28, 2021 for the field 
+resistivity survey. Forty-two (42) field resistivity surveys were conducted at six locations, 
+designated as R-1 through R-6, using the in-situ Wenner 4-Pin Method and an AEMC 
+Model 4630 resistance meter manufactured by AEMC Instruments. The method utilizes 
+four surface probes or pins (electrodes) to evaluate the average resistivity of the 
+underlying soil mass. The average resistivity values of the soil mass, extending from the 
+existing ground surface to the test depth, was assessed by using this method at the 
+approximate survey locations shown on the Site Plan, Plate 2. 
+The soil resistivity surveys were performed along the existing ground surface at 
+the approximate survey locations shown on the site plan. The average soil resistance 
+along the proposed alignment was evaluated at each survey location with the electrodes 
+aligned at equal spacing of about 2.5, 5, 10, and 20 feet. Additional electrode spacings 
+of 30, 50, 100 and 200-foot were performed at resistivity location R-6. The depth of 
+penetration of a resistivity sounding is a function of the electrode spacing. 
+The resistance meter (AEMC Model 4630) provides a voltage between the outer 
+electrodes, causing an electrical current to flow between them. The voltage drop 
+between the inner electrodes is then measured by a sensitive, built-in voltmeter. As a 
+result, the soil resistance (in ohms) is obtained from the voltmeter reading. The soil 
+resistivity (in ohm-cm), which is directly related to both resistance and spacing, can then 
+be computed. The evaluated soil resistances and computed resistivity values are 
+presented on Plates D-1 through D-4. In addition, the computed resistivity values with 
+pin spacing at the test locations are presented in the graph on Plate D-5. At the time of 
+resistivity surveying, the temperature was about 75º to 84º F. The existing ground 
+surface was dry to damp. It should be noted that the soil resistivity may be influenced by 
+temperature, weather conditions, existing underground utilities, and other factors. 
+Geotechnical Engineering Report - 04/25/2023
+PROJECT:
+W.O.
+TEST DATE:
+BY:
+TEST 
+NO.
+Location 
+(Latitude
+Longitude)
+RESISTANCE      
+(OHMS)
+RESISTIVITY 
+(OHMS-CM)
+CORROSION 
+RATING
+2.5
+225.0
+119,796
+5
+5
+121.6
+119,963
+5
+10
+78.0
+150,533
+5
+20
+35.9
+137,497
+5
+2.5
+97.8
+52,072
+5
+5
+201.0
+198,295
+5
+10
+114.1
+220,202
+5
+20
+51.6
+197,628
+5
+2.5
+19.4
+10,829
+5
+5
+12.0
+12,016
+5
+10
+4.8
+9,206
+4
+20
+2.2
+8,503
+4
+2.5
+25.6
+14,290
+5
+5
+15.0
+14,992
+5
+10
+6.7
+13,063
+5
+20
+2.8
+10,571
+5
+BWS Corrosion Rating System
+APPROX. 
+SURFACE 
+ELEVATION 
+(FEET, MSL)
+PIN 
+SPACING    
+(FEET)
+Barbers Point Solar Project
+8217-00
+1/28/2021
+Elliott Haigh
+SOIL RESISTIVITY
+R-1
+(N-S)
+N/A
+21.321687 N, 
+158.04563 W
+R-1
+(E-W)
+N/A
+21.321687 N, 
+158.04563 W
+Resistivity Range
+(ohm-cm)
+Corrosion 
+Rating
+Anticipated Corrosion Activity
+0-1,000
+1
+Extremely Corrosive
+1,001-3,000
+2
+Very Corrosive
+3,001-5,000
+3
+Corrosive
+5,001-10,000
+4
+Moderately Corrosive
+Over 10,001
+5
+Mildly Corrosive
+R-2
+(N-S)
+N/A
+21.315073 N, 
+158.05243 W
+R-2
+(E-W)
+N/A
+21.315073 N, 
+158.05243 W
+W.O. 8217-00
+GEOLABS, INC.
+PLATE D-1
+Geotechnical Engineering Report - 04/25/2023
+PROJECT:
+W.O.
+TEST DATE:
+BY:
+TEST 
+NO.
+Location 
+(Latitude
+Longitude)
+RESISTANCE      
+(OHMS)
+RESISTIVITY 
+(OHMS-CM)
+CORROSION 
+RATING
+2.5
+51.5
+26,282
+5
+5
+28.2
+27,468
+5
+10
+47.7
+91,749
+5
+20
+14.4
+55,152
+5
+2.5
+94.1
+47,152
+5
+5
+39.6
+38,573
+5
+10
+17.2
+33,141
+5
+20
+5.7
+21,640
+5
+2.5
+17.2
+8,757
+4
+5
+8.5
+8,279
+4
+10
+5.0
+9,632
+4
+20
+1.7
+6,511
+4
+2.5
+9.6
+4,889
+3
+5
+7.6
+7,374
+4
+10
+3.6
+6,963
+4
+20
+1.9
+7,200
+4
+BWS Corrosion Rating System
+5,001-10,000
+4
+Moderately Corrosive
+Over 10,001
+5
+Mildly Corrosive
+1,001-3,000
+2
+Very Corrosive
+3,001-5,000
+3
+Corrosive
+Resistivity Range
+(ohm-cm)
+Corrosion 
+Rating
+Anticipated Corrosion Activity
+0-1,000
+1
+Extremely Corrosive
+R-4
+(N-S)
+N/A
+21.3088807 N,    
+158.0556964 W
+R-4
+(E-W)
+N/A
+21.3088807 N,    
+158.0556964 W
+R-3
+(N-S)
+N/A
+21.3149640 N, 
+158.0496148 W
+R-3
+(E-W)
+N/A
+21.3149640 N, 
+158.0496148 W
+APPROX. 
+SURFACE 
+ELEVATION 
+(FEET, MSL)
+PIN 
+SPACING    
+(FEET)
+Barbers Point Solar Project
+8217-00
+11/24/2020-11/29/2020
+Elliott Haigh
+SOIL RESISTIVITY
+W.O. 8217-00
+GEOLABS, INC.
+PLATE D-2
+Geotechnical Engineering Report - 04/25/2023
+PROJECT:
+W.O.
+TEST DATE:
+BY:
+TEST 
+NO.
+Location 
+(Latitude
+Longitude)
+RESISTANCE      
+(OHMS)
+RESISTIVITY 
+(OHMS-CM)
+CORROSION 
+RATING
+2.5
+65.7
+33,528
+5
+5
+14.7
+14,404
+5
+10
+5.7
+10,981
+5
+20
+1.5
+5,745
+4
+2.5
+14.0
+7,145
+4
+5
+8.0
+7,792
+4
+10
+3.7
+7,051
+4
+20
+1.7
+6,320
+4
+BWS Corrosion Rating System
+5,001-10,000
+4
+Moderately Corrosive
+Over 10,001
+5
+Mildly Corrosive
+1,001-3,000
+2
+Very Corrosive
+3,001-5,000
+3
+Corrosive
+Resistivity Range
+(ohm-cm)
+Corrosion 
+Rating
+Anticipated Corrosion Activity
+0-1,000
+1
+Extremely Corrosive
+R-5
+(N-S)
+N/A
+21.3087866 N,  
+158.0540871 W
+R-5
+(E-W)
+N/A
+21.3087866 N,  
+158.0540871 W
+APPROX. 
+SURFACE 
+ELEVATION 
+(FEET, MSL)
+PIN 
+SPACING    
+(FEET)
+Barbers Point Solar Project
+8217-00
+11/29/2020
+Elliott Haigh
+SOIL RESISTIVITY
+W.O. 8217-00
+GEOLABS, INC.
+PLATE D-3
+Geotechnical Engineering Report - 04/25/2023
+PROJECT:
+W.O.
+TEST DATE:
+BY:
+TEST 
+NO.
+Location 
+(Latitude,
+Longitude)
+RESISTANCE      
+(OHMS)
+RESISTIVITY 
+(OHMS-CM)
+CORROSION 
+RATING
+2.5
+82.3
+42,000
+5
+5
+61.1
+59,515
+5
+10
+65.7
+126,371
+5
+20
+24.6
+94,218
+5
+30
+18.4
+105,708
+5
+60
+6.0
+68,940
+5
+100
+0.8
+15,320
+5
+150
+0.1
+2,873
+2
+200
+0.04
+1,532
+2
+2.5
+249.0
+127,071
+5
+5
+210.0
+204,552
+5
+10
+118.3
+227,545
+5
+20
+2.0
+7,660
+4
+30
+5.3
+30,449
+5
+60
+5.3
+60,897
+5
+100
+1.1
+21,065
+5
+150
+0.5
+14,363
+5
+200
+1.3
+49,790
+5
+BWS Corrosion Rating System
+APPROX. 
+SURFACE 
+ELEVATION 
+(FEET, MSL)
+PIN 
+SPACING    
+(FEET)
+Barbers Point Solar Project
+8217-00
+11/25/2020 & 11/27/2020
+Elliott Haigh
+SOIL RESISTIVITY
+R-6
+(N-S)
+N/A
+21.3238767 N, 
+158.0458929 W
+21.3238767 N, 
+158.0458929 W
+N/A
+R-6
+(E-W)
+Resistivity Range
+(ohm-cm)
+Corrosion 
+Rating
+Anticipated Corrosion Activity
+0-1,000
+1
+Extremely Corrosive
+1,001-3,000
+2
+Very Corrosive
+3,001-5,000
+3
+Corrosive
+5,001-10,000
+4
+Moderately Corrosive
+Over 10,001
+5
+Mildly Corrosive
+W.O. 8217-00
+GEOLABS, INC.
+PLATE D-4
+Geotechnical Engineering Report - 04/25/2023
+PROJECT:
+W.O.
+TEST DATE:
+BY:
+Barbers Point Solar Project
+8217-00
+11/24 - 11/29/2020 & 1/28/2021
+Elliott Haigh
+Resistivity Range
+(ohm-cm)
+Corrosion 
+Rating
+Anticipated Corrosion Activity
+0-1,000
+1
+Extremely Corrosive
+1,001-3,000
+2
+Very Corrosive
+Over 10,001
+5
+Mildly Corrosive
+3,001-5,000
+3
+Corrosive
+5,001-10,000
+4
+Moderately Corrosive
+100
+1,000
+10,000
+100,000
+1,000,000
+R-0
+R-1
+R-2
+R-3
+R-4
+R-5
+R-6
+R-7
+SOIL RESISTIVITY (OHMS-CM)
+FIELD RESISTIVITY TEST LOCATION
+2.5' Pin Spacing
+5' Pin Spacing
+10' Pin Spacing
+20' Pin Spacing
+30' Pin Spacing
+60' Pin Spacing
+100' Pin Spacing
+150' Pin Spacing
+200' Pin Spacing
+W.O. 8217-00
+GEOLABS, INC.
+PLATE D-5
+Geotechnical Engineering Report - 04/25/2023
+APPENDIX  E 
+Geotechnical Engineering Report - 04/25/2023
+COOL SOLUTIONS FOR UNDERGROUND POWER CABLES 
+THERMAL SURVEYS, CORRECTIVE BACKFILLS & INSTRUMENTATION 
+Serving the electric power industry since 1978 
+21239 FM529 Rd., Bldg. F 
+Cypress, TX 77433 
+Tel:     281-985-9344 
+Fax:    832-427-1752 
+info@geothermusa.com 
+http://www.geothermusa.com 
+January 15, 2021 
+Geolabs, Inc.  
+2006 Kalihi Street 
+Honolulu, HI 96819 
+Attn: Jason Seidman 
+Re: Thermal Analysis of Native Soil Samples 
+Barbers Point Solar – Kapolei, HI (Project No. 8217-00) 
+The following is the report of thermal dryout characterization tests conducted on the five 
+(5) native soil samples sent to our laboratory. 
+Thermal Resistivity Tests:  The samples were tested at the ‘optimum’ moisture content 
+and 95% of the MDD provided by Geolabs.  The tests were conducted in accordance 
+with the IEEE standard 442-2017.  The results are tabulated below and the thermal dry 
+out curves are presented in Figures 1 to 5. 
+Sample ID, Description, Thermal Resistivity, Moisture Content and Density 
+Sample ID 
+(@ 3’-4’) 
+Description  
+(Geolabs) 
+Thermal Resistivity 
+(°C-cm/W) 
+Moisture 
+Content 
+(%) 
+Dry 
+Density 
+(lb/ft3) 
+Wet 
+Dry 
+TR-1 
+Brownish gray gravelly sand 
+81 
+165 
+9 
+124 
+TR-2 
+Brown gravelly sand with 
+some silt 
+112 
+290 
+18 
+96 
+TR-3 
+Light tan silty sand 
+137 
+372 
+16 
+87 
+TR-4 
+Light brown silt with little 
+gravel 
+94 
+237 
+17 
+101 
+TR-5 
+Tannish white gravelly sand 
+87 
+180 
+9 
+111 
+Geotechnical Engineering Report - 04/25/2023
+2 
+Comments:  The thermal characteristic depicted in the dryout curves apply for the 
+samples at their respective test dry density. 
+Please contact us if you have any questions or if we can be of further assistance. 
+Geotherm USA 
+Deepak Parmar 
+Geotechnical Engineering Report - 04/25/2023
+3 
+Geotechnical Engineering Report - 04/25/2023
+4 
+Geotechnical Engineering Report - 04/25/2023
+5 
+Geotechnical Engineering Report - 04/25/2023
+6 
+Geotechnical Engineering Report - 04/25/2023
+7 
+Geotechnical Engineering Report - 04/25/2023

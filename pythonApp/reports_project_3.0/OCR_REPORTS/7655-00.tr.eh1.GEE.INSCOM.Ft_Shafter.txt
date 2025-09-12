@@ -1,0 +1,3259 @@
+GEOTECHNICAL ENGINEERING EXPLORATION 
+INSCOM SCALABLE MODULAR DATA FACILITY 
+FORT SHAFTER, OAHU, HAWAII 
+W.O. 7655‐00    MARCH 15, 2018 
+Prepared for 
+M.A. MORTENSON COMPANY 
+GEOLABS, INC. 
+Geotechnical Engineering and Drilling Services 
+GEOTECHNICAL ENGINEERING EXPLORATION
+INSCOM SCALABLE MODULAR DATA FACILITY
+FORT SHAFTER, OAHU, HAWAII
+W.O. 7655-00 MARCH 15, 2018
+Prepared for
+M.A. MORTENSON COMPANY
+LICENSED
+PROFESSIONAL
+ENGINEER
+No. 10029-C
+THIS WORK WAS PREPARED BY
+ME OR UNDER MY SUPERVISION.
+y (i ahs 4-30-18
+SIGNAMORE
+EXPIRATION DATE
+OF THE LICENSE
+GEOLABS, INC.
+Geotechnical Engineering and Drilling Services
+2006 Kalihi Street ¢ Honolulu, HI 96819
+Hawaii @ California
+GEOLABS, INC.
+Geotechnical Engineering and Drilling Services
+March 15, 2018
+W.O. 7655-00
+Mr. Kris Carey
+M. A. Mortenson Company
+8280 Greensboro Drive, Suite 250
+McLean, VA 22102
+Dear Mr. Carey:
+Geolabs, Inc. is pleased to submit this report entitled "Geotechnical Engineering
+Exploration, INSCOM Scalable Modular Data Facility, Fort Shafter, Oahu, Hawaii”
+prepared in support of the design-build effort for the proposed project.
+Our work was performed in general accordance with the scope of services
+outlined in the fee proposal by Geolabs, Inc. dated September 8, 2017.
+Please note that the soil samples recovered during our field exploration (remaining
+after testing) will be stored for a period of two months from the date of this report. The
+samples will be discarded after that date unless special arrangements are made for a
+longer sample storage period. Please contact our office for alternative sample storage
+requirements, if appropriate.
+Detailed discussion and specific design recommendations are contained in the
+body of this report. If there are any questions regarding this report, please contact our
+office.
+Very truly yours,
+GEOLABS, INC.
+hn Y.L. Chen, P.E.
+Vice President
+JC:TR:EH:If
+2006 Kalihi Street e Honolulu, Hawaii 96819
+Phone: (808) 841-5064 © Facsimile: (808) 847-1749 e E-mail: hawaii @geolabs.net
+Hawaii ¢ California
+W.O. 7655-00 
+GEOLABS, INC. 
+Page i 
+Hawaii • California 
+GEOTECHNICAL ENGINEERING EXPLORATION 
+INSCOM SCALABLE MODULAR DATA FACILITY 
+FORT SHAFTER, OAHU, HAWAII 
+W.O. 7655-00     MARCH 15, 2018 
+TABLE OF CONTENTS 
+Page 
+SUMMARY OF FINDINGS AND RECOMMENDATIONS .............................................. iii 
+1. 
+GENERAL ............................................................................................................ 1 
+1.1 
+Project Considerations ............................................................................... 1 
+1.2 
+Purpose and Scope ................................................................................... 1 
+2. 
+SITE CHARACTERIZATION ................................................................................ 4 
+2.1 
+Existing Site Conditions ............................................................................. 4 
+2.2 
+Subsurface Conditions ............................................................................... 4 
+2.3 
+Seismic Design Considerations ................................................................. 5 
+2.3.1  Earthquakes and Seismicity ........................................................... 6 
+2.3.2  Soil Profile Type for Seismic Design .............................................. 7 
+2.3.3  Liquefaction Potential ..................................................................... 8 
+3. 
+DISCUSSION AND RECOMMENDATIONS ...................................................... 10 
+3.1 
+Shallow Foundations................................................................................ 10 
+3.2 
+Slabs-On-Grade ....................................................................................... 12 
+3.3 
+Retaining Structures ................................................................................ 14 
+3.3.1  Static Lateral Earth Pressures ...................................................... 14 
+3.3.2  Dynamic Lateral Earth Pressures ................................................. 15 
+3.3.3  Drainage ....................................................................................... 16 
+3.4 
+Earthwork ................................................................................................. 16 
+3.5 
+Utility Trenches ........................................................................................ 18 
+3.6 
+Subsurface Infiltration .............................................................................. 19 
+3.7 
+Design Review ......................................................................................... 20 
+3.8 
+Post-Design Services/Services During Construction ............................... 20 
+4. 
+LIMITATIONS ..................................................................................................... 22 
+CLOSURE ..................................................................................................................... 24 
+PLATES 
+Project Location Map ................................................................................... Plate 1 
+Site Plan ...................................................................................................... Plate 2 
+APPENDIX A 
+Field Exploration ....................................................................... Pages A-1 and A-2 
+Soil Log Legend  .................................................................................... Plate A-0.1 
+Soil Classification Log Key .................................................................... Plate A-0.2 
+Rock Log Legend  ................................................................................. Plate A-0.3 
+Logs of Borings  ........................................................................ Plates A-1 thru A-4 
+TABLE OF CONTENTS  
+Page 
+W.O. 7655-00 
+GEOLABS, INC. 
+Page ii 
+Hawaii • California 
+APPENDIX B 
+Laboratory Tests ...................................................................................... Page B-1 
+Laboratory Test Data  ............................................................... Plates B-1 thru B-6 
+APPENDIX C 
+Photographs of Core Samples ................................................................. Plate C-1 
+APPENDIX D 
+Field Infiltration Tests .............................................................................. Page D-1 
+Infiltration Test Records ............................................................ Plates D-1 and D-2 
+APPENDIX E 
+Dynamic Cone Penetrometer Tests ......................................................... Page E-1 
+Dynamic Cone Penetrometer Data ........................................... Plates E-1 and E-2 
+W.O. 7655-00 
+GEOLABS, INC. 
+Page iii 
+Hawaii • California  
+GEOTECHNICAL ENGINEERING EXPLORATION 
+INSCOM SCALABLE MODULAR DATA FACILITY 
+FORT SHAFTER, OAHU, HAWAII 
+W.O. 7655-00     MARCH 15, 2018 
+SUMMARY OF FINDINGS AND RECOMMENDATIONS 
+Our field exploration generally encountered near-surface fills and residual soils 
+overlying basalt rock formation and alluvium deposits. The near-surface fills consisted of 
+stiff to hard clayey and silty soils while residual soils were comprised of stiff clayey soils. 
+The basalt rock formation was moderately fractured and medium hard to very hard. 
+Below the basalt rock formation, alluvium deposits were encountered, and consisted of 
+very stiff clayey soil and extending to the maximum depth drilled of about 28 feet below 
+the ground surface. We encountered groundwater in our borings at about 18.0 and 21.5 
+feet below the ground surface, corresponding to an elevation of about 0 feet MSL. 
+Based on the subsurface materials encountered at the project site and the 
+geologic setting of the area, we believe the project site may be classified from a seismic 
+analysis standpoint as being a “Stiff Soil Profile” site corresponding to a Site Class “D” 
+soil profile type based on the International Building Code, 2015 Edition. Based on the 
+subsurface conditions encountered, the phenomenon of soil liquefaction is not a design 
+consideration for this project site.  
+We recommend using shallow spread footings and/or continuous strip footings 
+bearing on the recompacted residual soils supporting the new structures. An allowable 
+bearing pressure of up to 3,000 psf may be used for the design of shallow foundations. 
+The footings should be embedded a minimum of 18 inches below the lowest adjacent 
+finished grades. The bottom of the footing excavations should be recompacted to at 
+least 90 percent relative compaction. 
+To reduce the potential for future distress to the lightly loaded slabs-on-grade 
+resulting from shrinking and swelling of the clayey soils, we recommend properly 
+preparing the clayey subgrade soils and capping with a 12-inch thick layer of 
+non-expansive select granular fill materials. 
+Where the natural basalt formation is exposed at the foundation subgrade 
+elevation, the subgrade should be over-excavated at least 12 inches and proof rolled 
+with a vibratory drum roller (20,000 pounds minimum static weight) a minimum of six 
+passes before placement of fill materials. The over-excavation should be backfilled by 
+the select granular fill and compacted to a minimum of 90 percent relative compaction. 
+The text of this report should be referred to for detailed discussion and specific 
+design recommendations. 
+ END OF SUMMARY OF FINDINGS AND RECOMMENDATIONS 
+W.O. 7655-00 
+GEOLABS, INC. 
+Page 1 
+Hawaii • California 
+SECTION 1.  GENERAL 
+This report presents the results of our geotechnical engineering exploration 
+performed for the proposed INSCOM Scalable Modular Data Facility design-build 
+project, located at Fort Shafter on the Island of Oahu, Hawaii. The project location and 
+general site vicinity are shown on the Project Location Map, Plate 1.  
+This report summarizes our findings and geotechnical recommendations 
+resulting from our field exploration, laboratory testing, and engineering analyses. These 
+findings and geotechnical recommendations are intended to assist in the design of the 
+foundations, slabs-on-grade, retaining walls, site grading, utilities, and storm water 
+management improvements only. The findings and recommendations presented herein 
+are subject to the limitations noted at the end of this report.  
+1.1 
+Project Considerations 
+The U.S. Army Corps of Engineers, Baltimore District (CENAB) requires 
+Design/Build (D/B) services to de-assemble, transport, and assemble two re-locatable 
+trailer facilities and design and construct a structural slab in order to accommodate the 
+GISA-Pacific, U.S. Army Information Systems Engineering Command and INSCOM 
+requirements for a Scalable Data Center. The project involves a total of approximately 
+4,000 square feet of facility space currently programmed at Fort Shafter, Oahu, Hawaii 
+and trailer to be transported to Schofield Barracks, Oahu, Hawaii. The project requires 
+structural slab/footings, storm water drainage, grading, temporary/permanent fencing, 
+erosion control, and construction of site utilities/communications connections and 
+permitting. 
+1.2 
+Purpose and Scope 
+The purpose of our field exploration was to obtain an overview of the surface and 
+subsurface conditions at the project site to develop geotechnical recommendations for 
+design of foundations, slabs-on-grade, retaining walls, site grading, utilities, and storm 
+water management improvements. In order to accomplish this scope, we conducted an 
+exploration program consisting of the following tasks and work efforts: 
+SECTION 1. GENERAL 
+W.O. 7655-00 
+GEOLABS, INC. 
+Page 2 
+Hawaii • California 
+1. 
+Research and review available soils report and other subsurface 
+information in the general project vicinity. 
+2. 
+Prepare a site-specific activity hazard analysis in general accordance with 
+the U.S. Army Manual EM-385-1. 
+3. 
+Application for excavation permits and coordination of site access. 
+4. 
+Stakeout boring locations and perform utility clearance/toning by our field 
+personnel. 
+5. 
+Mobilization and demobilization of a truck-mounted drill rig, water truck, 
+dynamic cone penetrometer (DCP), and two operators to and from the site. 
+6. 
+Drilling and sampling of two borings extending to depths of about 27.5 and 
+28.0 feet below the existing ground surface. In addition, two shallow 
+borings (about 4 to 5 feet deep) also were drilled for the access of the 
+infiltration testing in support of the storm water Low Impact Development 
+(LID)  design. 
+7. 
+Coordination of the field exploration and logging of the borings by our 
+field engineer. 
+8. 
+Performance of two field infiltration tests to determine the permeability 
+characteristics of the near-surface materials in support of the LID design. 
+9. 
+Performance of DCP testing by our field geologist. 
+10. 
+Laboratory testing of selected samples obtained during the field 
+exploration as an aid in classifying the materials and evaluating their 
+engineering properties. 
+11. 
+Analyses of the field and laboratory data to formulate geotechnical 
+recommendations for the project design.   
+12. 
+Preparation of this report summarizing our work on the project and 
+presenting our findings and geotechnical recommendations for the design of 
+the project.  
+13. 
+Coordination of the overall work on the project by our engineer. 
+14. 
+Quality assurance of our work and client/design team consultation by our 
+principal engineer. 
+15. 
+Miscellaneous work efforts, such as drafting, word processing, and clerical 
+support. 
+SECTION 1. GENERAL 
+W.O. 7655-00 
+GEOLABS, INC. 
+Page 3 
+Hawaii • California 
+Detailed descriptions of our field exploration methodology and the Logs of 
+Borings are presented in Appendix A. Results of the laboratory tests performed on 
+selected soil samples obtained from our field exploration are presented in Appendix B. 
+Photographs of the recovered core samples are presented in Appendix C. The field 
+infiltration test methodology and results are presented in Appendix D. The Dynamic 
+Cone Penetrometer test methodology and results are presented in Appendix E.  
+END OF GENERAL 
+W.O. 7655-00 
+GEOLABS, INC. 
+Page 4 
+Hawaii • California 
+SECTION 2.  SITE CHARACTERIZATION 
+The Island of Oahu was built by the extrusion of basaltic lava from the Waianae 
+and Koolau shield volcanoes. The older Waianae Volcano is estimated to be middle to 
+late Pliocene in age (2.7 to 3.4 million years ago) and forms the bulk of the western 
+one-third of the island. The younger Koolau Volcano is estimated to be late Pliocene to 
+early Pleistocene (Ice Age) in age (2.2 to 2.5 million years ago) and forms the majority 
+of the eastern two-thirds of the island. 
+After a long period of volcanic inactivity, during which time erosion incised deep 
+valleys into the Koolau Shield, volcanic activity returned with a series of lava flows 
+followed by cinder and tuff cone formations. These series are referred to as the 
+Honolulu Volcanic Series. The Honolulu Volcanic Series, which began less than a 
+million years ago (MacDonald and Abbott, 1970), produced numerous cinder and tuff 
+cones and basalt flows, and inter-layered with the coastal plain deposits. 
+The project site is a low lined area mostly characterized by sedimentary deposits, 
+also known as recent alluvium. After long periods of erosion and deposit into this area, 
+relatively recent flows from the Honolulu Volcanic series, specifically the Kalihi flow, 
+overlies these sediments and created a basalt layer. 
+2.1 
+Existing Site Conditions 
+The project site is located at Fort Shafter on the Island of Oahu, Hawaii.  The 
+project site is located adjacent to Building 1543 in the Fort Shafter Flats area of Fort 
+Shafter. The project site is currently occupied by parking stalls, grassed areas, 
+underground utilities, fencing and two portable trailers that will be relocated to Schofield 
+Barracks. 
+2.2 
+Subsurface Conditions 
+The subsurface conditions at the project site were explored by drilling and 
+sampling two borings, designated as Boring Nos. 1 and 2 (B-1 and B-2), extending 
+down to depths of about 27.5 and 28 feet below the existing ground surface. In addition, 
+two shallow borings (P-1 and P-2) also were drilled to depths of about 4 to 5 feet below 
+SECTION 2. SITE CHARACTERIZATION  
+W.O. 7655-00 
+GEOLABS, INC. 
+Page 5 
+Hawaii • California 
+the ground surface for the access of the infiltration testing in support of the LID design. 
+To depict the rock surface contour, DCP tests were performed at two locations, 
+extending to depths of about 1.3 to 2.2 feet below the ground surface. The approximate 
+boring and DCP testing locations are shown on the Site Plan, Plate 2.  
+Our field exploration encountered near-surface fills and residual soils over basalt 
+rock formation and alluvium deposits. The near-surface fills consisted of stiff to hard 
+clayey and silty soils, extending to about 2 feet below the ground surface, overlying stiff 
+clayey residual soils to a depth of up to about 4 feet below the ground surface.  The 
+basalt rock formation was moderately fractured and medium hard to very hard, 
+extending to depths of about 18.0 to 21.5 feet below the ground surface. Below the 
+basalt rock formation, alluvium deposits were encountered, consisting of very stiff 
+clayey soils and extending to the maximum depth drilled of about 28 feet below the 
+ground surface. 
+We encountered groundwater in our borings at about 18.0 to 21.5 feet below the 
+ground surface, corresponding to an elevation of about 0 feet Mean Sea Level (MSL). It 
+should be noted that groundwater levels may change due to rainfall, seepage, time of 
+year, seasonal precipitation, and other factors.  
+Detailed descriptions of the materials encountered in the borings are presented on 
+the Logs of Borings in Appendix A. Results of the laboratory tests performed on selected 
+soil samples obtained from our field exploration are presented in Appendix B. Photographs 
+of core samples are presented in Appendix C. The results of the infiltration testing are 
+presented in Appendix D.  The Dynamic Cone Penetrometer test methodology and results 
+are presented in Appendix E.  
+2.3 
+Seismic Design Considerations 
+Based on the International Building Code (2015 Edition), the project site may be 
+subject to seismic activity, and seismic design considerations will need to be addressed. 
+The following sections provide discussions on the seismicity, soil profile type for seismic 
+design, and the potential for liquefaction at the project site. 
+SECTION 2. SITE CHARACTERIZATION  
+W.O. 7655-00 
+GEOLABS, INC. 
+Page 6 
+Hawaii • California 
+2.3.1 Earthquakes and Seismicity 
+In general, earthquakes that occur throughout the world are caused largely by shifts 
+in the tectonic plates. In contrast, earthquake activity in Hawaii is linked primarily to 
+volcanic activity. Therefore, earthquake activity in Hawaii generally occurs before or 
+during volcanic eruptions. In addition, earthquakes may result from the 
+underground movement of magma that comes close to the surface but does not 
+erupt. The Island of Hawaii experiences thousands of earthquakes each year, but 
+most of the earthquakes are so small that they can only be detected by sensitive 
+instruments. However, some of the earthquakes are strong enough to be felt, and a 
+few cause minor to moderate damage. 
+In general, earthquakes (associated with volcanic activity) are most common on the 
+Island of Hawaii. Earthquakes that are directly associated with the movement of 
+magma are concentrated beneath the active Kilauea and Mauna Loa Volcanoes on 
+the Island of Hawaii. Because majority of the earthquakes in Hawaii (over 
+90 percent of earthquakes) are related to volcanic activity, the risk of high seismic 
+activity and degree of ground shaking diminishes with increased distance from the 
+earthquake epicenter. The Island of Hawaii has experienced numerous 
+earthquakes greater than Magnitude 5 (M5+); however, earthquakes are not 
+confined only to the Island of Hawaii. 
+It should be noted that some earthquakes in Hawaii are caused by the burden of 
+the island masses overlying the lithosphere, which cause the lithosphere to sag 
+beneath the immense weight. The isostatic adjustment of the Pacific lithosphere 
+beneath the islands’ overburden causes some moderate to strong intensity 
+earthquakes. The 1973 Honomu Earthquake, Magnitude 6.2 (M6.2), beneath the 
+Hamakua Coast of the Island of Hawaii and the October 15, 2006 Kiholo Bay 
+earthquake, Magnitude 6.7 (M6.7), were a result of lithosphere adjustment. Both of 
+these earthquakes were widely felt throughout the Hawaiian Islands. 
+To a lesser degree, the Island of Maui has experienced numerous earthquakes 
+greater than Magnitude 5. Therefore, moderate to strong earthquakes have 
+occurred in the County of Maui. The effects of earthquakes occurring on the Islands 
+SECTION 2. SITE CHARACTERIZATION  
+W.O. 7655-00 
+GEOLABS, INC. 
+Page 7 
+Hawaii • California 
+of Hawaii and Maui may be felt on the Island of Oahu. For example, several small 
+landslides occurred on the Island of Oahu as a result of the Maui Earthquake of 
+1938 (M6.8). In addition, some houses on the Island of Oahu were reportedly 
+damaged as a result of the Lanai Earthquake of 1871 (M7+). 
+Due to the relatively short period of documented earthquake monitoring in the State 
+of Hawaii, information pertaining to earthquakes that were felt on the Island of Oahu 
+may not be complete. In general, over the last 150 years of recorded history, we 
+are not aware of reported earthquakes greater than Magnitude 6 occurring on the 
+Island of Oahu. Based on available information, we understand that an earthquake 
+of about Magnitude 5.6 occurred on June 28, 1948 in the vicinity of the Island of 
+Oahu, possibly along the hypothesized and controversial Diamond Head Fault 
+feature.  
+The Diamond Head Fault feature is believed to extend northeasterly away from the 
+southeastern tip of the Island of Oahu. The Diamond Head Fault feature may be 
+related to the widely documented Molokai Fracture Zone located on the sea floor in 
+the vicinity of the Hawaiian Islands. Despite only the moderate tremor intensity, the 
+resulting damage was reportedly widespread and included broken windows, 
+ruptured masonry building walls, and a broken underground water main. In addition, 
+some areas on the Island of Oahu, including the Tantalus, Iwilei, and Tripler areas, 
+reported more intense ground shaking, severe enough to have cracked reinforced 
+concrete. 
+2.3.2 Soil Profile Type for Seismic Design 
+Based on the subsurface materials encountered at the project site and the 
+geologic setting of the area, the project site may be classified from a seismic 
+analysis standpoint as being a “Stiff Soil Profile”. Therefore, the seismic design of 
+the building structure may be designed based on a Site Class “D” soil profile 
+based on the International Building Code, 2015 Edition.  
+When seismic waves propagate through a soil profile, the seismic shear waves 
+typically intensify and amplify (or attenuate) depending on the thickness and 
+properties of the soils. Based on a Site Class “D” soil profile, the following 
+SECTION 2. SITE CHARACTERIZATION  
+W.O. 7655-00 
+GEOLABS, INC. 
+Page 8 
+Hawaii • California 
+seismic design parameters may be used for the seismic analysis of the project 
+structures. 
+SEISMIC DESIGN PARAMETERS (IBC 2015) 
+Parameter 
+Value 
+Peak Bedrock Acceleration, PBA (Site Class B) 
+0.265g 
+Mapped MCE Spectral Response Acceleration, SS 
+0.575g 
+Mapped MCE Spectral Response Acceleration, S1 
+0.166g 
+Site Class 
+“D” 
+Site Coefficient, FPGA 
+1.270 
+Site Coefficient, Fa 
+1.340 
+Site Coefficient, Fv 
+2.135 
+Design Peak Ground Acceleration, PGA (Site Class D) 
+0.224g 
+Design Spectral Response Acceleration, SDS 
+0.513g 
+Design Spectral Response Acceleration, SD1 
+0.237g 
+2.3.3 Liquefaction Potential 
+Based on the International Building Code (2015 Edition), the project site should be 
+evaluated for the potential for soil liquefaction. Soil liquefaction is a condition where 
+saturated cohesionless soils near the ground surface undergo a substantial loss of 
+strength due to the build-up of excess pore water pressures resulting from cyclic 
+stress applications induced by earthquakes. When the loose saturated sand 
+deposit is subjected to vibration (such as during an earthquake), the soil tends to 
+densify and decrease in volume causing an increase in pore water pressure. If 
+drainage is unable to occur rapidly enough to dissipate the build-up of pore water 
+pressure, the effective stress (internal strength) of the soil is reduced. Under 
+sustained vibrations, the pore water pressure build-up could equal the overburden 
+pressure, essentially reducing the soil shear strength to zero and causing it to 
+behave as a viscous fluid. During liquefaction, the soil acquires a mobility sufficient 
+to permit both horizontal and vertical movements, and if not confined, will result in 
+significant deformations. 
+SECTION 2. SITE CHARACTERIZATION  
+W.O. 7655-00 
+GEOLABS, INC. 
+Page 9 
+Hawaii • California 
+Soils most susceptible to liquefaction are loose, uniformly graded, fine-grained 
+sands and loose silts with little cohesion. The major factors affecting the liquefaction 
+characteristics of a soil deposit are as follows: 
+FACTORS 
+LIQUEFACTION SUSCEPTIBILITY 
+Grain Size Distribution 
+Fine and uniform sands and silts are 
+more susceptible to liquefaction than 
+coarse or well-graded sands. 
+Initial Relative Density 
+Loose sands and silts are most 
+susceptible to liquefaction.  Liquefaction 
+potential is inversely proportional to 
+relative density. 
+Magnitude and Duration of Vibration 
+Liquefaction potential is directly 
+proportional to the magnitude and 
+duration of the earthquake. 
+Based on the subsurface conditions encountered, the phenomenon of soil 
+liquefaction is not a design consideration for this project site. The risk for potential 
+liquefaction is non-existent at this project site based on the subsurface conditions 
+encountered (stiff to very stiff clayey soils, and basalt rock formation). 
+END OF SITE CHARACTERIZATION 
+W.O. 7655-00 
+GEOLABS, INC. 
+Page 10 
+Hawaii • California 
+SECTION 3.  DISCUSSION AND RECOMMENDATIONS 
+Our field exploration generally encountered a thin near-surface stiff fills and 
+residual soils overlying hard basalt rock and stiff alluvium deposits. Groundwater was 
+encountered in our borings at about 18.0 to 21.5 feet below the ground surface, 
+corresponding to an elevation of about 0 feet MSL. 
+Based on the generally competent subsurface conditions encountered in the 
+borings, we recommend using shallow spread footings and/or continuous strip footings 
+bearing on the stiff clayey residual soils for support of the new structures, with an 
+allowable bearing pressure of up to 3,000 pounds per square foot (psf). Detailed 
+discussions of our findings and geotechnical recommendations for the project are 
+presented in the following sections. 
+3.1 
+Shallow Foundations 
+In general, we believe that proposed new structures may be supported on a 
+shallow foundation system consisting of spread and/or continuous strip footings bearing 
+on the recompacted in-situ residual soils. 
+An allowable bearing pressure of up to 3,000 pounds per square foot (psf) may 
+be used to design shallow foundations bearing on recompacted in-situ saprolite soils 
+overlying the weathered basalt rock formation. This bearing value is for supporting 
+dead-plus-live loads and may be increased by one-third (⅓) for transient loads, such as 
+those caused by wind or seismic forces. 
+In general, footings should be embedded a minimum of 18 inches below the 
+lowest adjacent grade. The bottom of footing excavations should be recompacted to at 
+least 90 percent relative compaction. Soft and/or loose materials encountered at the 
+bottom of footing excavations should be over-excavated to expose the underlying firm 
+materials. The over-excavation may be backfilled with the on-site soils compacted to a 
+minimum of 90 percent relative compaction, or the bottom of footing may be extended 
+down to bear directly on the underlying competent materials. In the event the natural 
+basalt formation is exposed at the footing subgrade elevation, the subgrade should be 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 7655-00 
+GEOLABS, INC. 
+Page 11 
+Hawaii • California 
+over-excavated at least 12 inches and backfilled with compacted select granular fills for 
+uniform support. 
+Relative compaction, in this report, refers to the in-place dry density of soil 
+expressed as a percentage of the maximum dry density of the same soil established in 
+accordance with ASTM D1557. Optimum moisture refers to the water content 
+(percentage by dry weight) corresponding to the maximum dry density. 
+Foundations next to retaining walls, other foundations, utility trenches or 
+easements should be embedded below a 45-degree imaginary plane extending upward 
+from the bottom edge of the structure or utility trench. Alternatively, footings should be 
+extended to a depth as deep as the inverts of the utility lines or bottom of the retaining 
+walls. This requirement is necessary to avoid surcharging adjacent below-grade 
+structures with additional structural loads and to reduce the potential for appreciable 
+foundation settlement. 
+If the foundations are designed and constructed in accordance with our 
+recommendations presented herein, we estimate that total settlements of footings may 
+be on the order of 1 inch or less, with differential settlements between adjacent 
+foundations to be on the order of about 0.5 inches or less. 
+Lateral loads acting on the structure may be resisted by friction developed 
+between the bottom of the foundation and the bearing soils and by passive earth 
+pressure acting against the near-vertical faces of the foundation system. The following 
+table presents coefficient of frictions and passive earth pressures (equivalent fluid 
+pressure) vs. loading conditions for footings bearing on compacted in-situ residual soils. 
+LATERAL LOAD RESISTANCE 
+Static 
+Condition 
+Seismic 
+Condition 
+Nominal 
+Value 
+Coefficient of Friction 
+0.31 
+0.48 
+0.62 
+Passive Earth Pressure 
+(pcf) 
+180 
+275 
+360 
+NOTE:  Factors of Safety of 2.0 and 1.3 required for the static and seismic condition, as stipulated in 
+UFC 3-220-01 (dated November 1, 2012). 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 7655-00 
+GEOLABS, INC. 
+Page 12 
+Hawaii • California 
+The above values assume that the backfill around the foundations is 
+well-compacted, or the concrete for footings is cast directly against the excavation 
+sidewalls. Unless covered by pavements or slabs, the passive resistance in the upper 
+12 inches of soil below finished grades should be neglected. 
+Resistance to uplift loads may be mobilized by the dead weight of the structure 
+and the footing.  In addition, the weight of the soil below the ground floor and above the 
+footing may be used to resist uplift loads.  Contribution of dead weight from the soil 
+above the footing may be estimated using a unit weight of 110 pounds per cubic foot 
+(pcf). 
+A Geolabs representative should observe the footing excavations prior to the 
+placement of reinforcing steel or concrete to confirm the foundation bearing conditions 
+and the required embedment depths. Observation of the foundation excavations and 
+preparation operations should be designated as a “Special Inspection” item in 
+accordance with Section 1704 of the International Building Code (2015 Edition). 
+3.2 
+Slabs-On-Grade 
+New slabs-on-grade are anticipated for the new building structure. Based on our 
+field exploration, the project site is generally underlain by near-surface clayey soils with 
+a moderate to high expansion potential when subjected to moisture fluctuations. To 
+reduce the potential for structural distress resulting from the swelling of the on-site 
+clayey soils, we recommend that the thickened-edge footings be embedded a minimum 
+of 18 inches below the lowest adjacent grade. Areas adjacent to the slab should be 
+backfilled tightly against the slab with the on-site soil and graded to divert water away 
+from the slab to reduce the potential for water ponding around the slabs. 
+To reduce the potential for future distress to the lightly loaded slabs-on-grade 
+resulting from shrinking and swelling of the clayey soils, we recommend properly 
+preparing the clayey subgrade soils and capping with a 12-inch thick layer of 
+non-expansive select granular fill materials.  
+We recommend properly preparing the foundation subgrades by scarifying to a 
+depth of about 8 inches, where possible, moisture-conditioning to at least 2 percent 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 7655-00 
+GEOLABS, INC. 
+Page 13 
+Hawaii • California 
+above the optimum moisture and compacting to a minimum of 90 percent relative 
+compaction. In the event the natural basalt formation is exposed at the subgrade 
+elevation, the subgrade should be over-excavated at least 12 inches and proof rolled 
+with a vibratory drum roller (20,000 pounds minimum static weight) a minimum of six 
+passes before placement of fill materials. The over-excavation should be backfilled by 
+the select granular fill and compacted to a minimum of 90 percent relative compaction. 
+Where shrinkage cracks are noted after compaction of the subgrade, we 
+recommend that the soils be thoroughly moistened to close the cracks, or the 
+subgrades should be prepared again. Saturation and subsequent yielding of the 
+exposed subgrade due to inclement weather and poor drainage may require 
+over-excavation of the soft areas and replacement with well-compacted fill. 
+For interior building slabs (not subjected to vehicular traffic or machinery 
+vibration), we recommend placing a minimum 4-inch layer of cushion fill below the 
+concrete slab. The cushion fill should consist of free-draining materials, such as 
+No. 3 Fine gravel (ASTM C33, No. 67 gradation), which would also serve as a capillary 
+moisture break. To reduce the potential for excessive moisture infiltration through the 
+slab and subsequent damage to floor coverings, we recommend placing an impervious 
+moisture barrier, such as a plastic membrane, on top of the open-graded gravel cushion 
+fill layer. Flexible floor coverings, such as carpet or sheet vinyl, should be considered on 
+the slab since they can better mask minor slab cracking.  
+Where the slabs will be subjected to equipment vibration and/or vehicular traffic, 
+we recommend placing the floor slab over 6 inches of aggregate subbase in lieu of the 
+4-inch thick layer of cushion fill mentioned above. The aggregate subbase should 
+consist of crushed basaltic aggregates compacted to a minimum of 95 percent relative 
+compaction. Where slabs are intended to function as rigid pavements, a minimum slab 
+thickness of 6 inches may be used for preliminary design purposes. Provisions should 
+be made for proper load transfer across the slab joints that will be subject to vehicular 
+traffic.  
+We anticipate exterior concrete walkways may be required for the project. We 
+recommend supporting concrete walkways on a minimum 6 inches of non-expansive 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 7655-00 
+GEOLABS, INC. 
+Page 14 
+Hawaii • California 
+select granular fill. The subgrade soils below the concrete walkways should be scarified 
+to a depth of about 8 inches, moisture-conditioned to at least 2 percent above the 
+optimum moisture content, and recompacted to a minimum of 90 percent relative 
+compaction. The non-expansive, select granular material or aggregate subbase should 
+be compacted to a minimum of 90 percent relative compaction.  To reduce the potential 
+for substantial shrinkage cracks developing in the concrete slabs, crack control joints 
+should be provided at intervals equal to the width of the walkways with expansion joints 
+provided at right-angle intersections. The thickened edges of slabs adjacent to unpaved 
+areas should be embedded at least 12 inches below the lowest adjacent grade. 
+3.3 
+Retaining Structures 
+Retaining wall foundations may be designed in accordance with the 
+recommendations and parameters presented in the “Shallow Foundations” section 
+herein.  In addition, retaining wall foundations should be at least 18 inches wide and 
+should be embedded a minimum of 24 inches below the lowest adjacent finished 
+grades.  For sloping ground conditions, the footing should extend deeper to obtain a 
+minimum 6-foot setback distance measured horizontally from the outside edge of the 
+footing to the face of the slope.  Wall footings oriented parallel to the direction of the 
+slope should be constructed in stepped footings. 
+3.3.1 Static Lateral Earth Pressures 
+Retaining structures should be designed to resist the lateral earth pressures due to 
+the adjacent soils and surcharge effects. The recommended lateral earth pressures 
+for design of retaining structures, expressed in equivalent fluid pressures of pounds 
+per square foot per foot of depth (pcf), are presented below. 
+The values provided in the table below assume the select granular fills will be used 
+to backfill behind the walls. It is assumed that the backfill behind retaining structures 
+will be compacted to between 90 and 95 percent relative compaction. 
+Over-compaction of the retaining structure backfill should be avoided. 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 7655-00 
+GEOLABS, INC. 
+Page 15 
+Hawaii • California 
+LATERAL EARTH PRESSURES FOR 
+DESIGN OF RETAINING STRUCTURES 
+Backfill 
+Condition 
+Earth Pressure 
+Component 
+Active 
+(pcf) 
+At-Rest 
+(pcf) 
+Level 
+Backfill 
+Horizontal 
+34 
+54 
+Vertical 
+None 
+None 
+Maximum 2H:1V 
+Sloping Backfill 
+Horizontal 
+44 
+60 
+Vertical 
+22 
+30 
+In general, an active condition may be used for gravity retaining walls and walls that 
+are free to deflect by as much as 0.5 percent of the wall height. If the tops of the 
+walls are not free to deflect beyond this degree, or are restrained, the walls should 
+be designed for the at-rest condition. The lateral earth pressures presented do not 
+include hydrostatic pressures that might be caused by groundwater trapped behind 
+the walls. 
+Surcharge stresses due to areal surcharges, line loads, and point loads within a 
+horizontal distance equal to the depth of the retaining structures should be 
+considered in the design.  For uniform surcharge stresses imposed on the loaded 
+side of the retaining structure, a rectangular distribution with a uniform pressure 
+equal to 44 percent of the vertical surcharge pressure acting on the entire height of 
+the structure, which is restrained, may be used in the design.  For retaining 
+structures that are free to deflect (cantilever), a rectangular distribution equal to 
+28 percent of the vertical surcharge pressure acting over the entire height of the 
+structure may be used for design.  
+3.3.2 Dynamic Lateral Earth Pressures 
+Based on Site Class “D” and design peak ground acceleration of about 0.23g, 
+dynamic lateral earth forces due to seismic loading (a = 0.23g) may be estimated 
+by using 3.0H2 pounds per linear foot of wall length for level backfill conditions, 
+where H is the height of the wall in feet. It should be noted that the dynamic lateral 
+earth forces provided assume that the wall will be allowed to move laterally by up to 
+about 1.5 to 2 inches in the event of an earthquake. The resultant force should be 
+assumed to act through the mid-height of the wall. An appropriately reduced factor 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 7655-00 
+GEOLABS, INC. 
+Page 16 
+Hawaii • California 
+of safety may be used when dynamic lateral earth forces are accounted for in the 
+design of the retaining structures. 
+3.3.3 Drainage 
+Retaining walls should be well drained to reduce the build-up of hydrostatic 
+pressures.  A typical drainage system would consist of a 12-inch wide zone of 
+permeable material, such as No. 3B Fine gravel (ASTM C33, No. 67 gradation), 
+placed directly around a perforated pipe (perforations facing down) at the base of 
+the wall discharging to an appropriate outlet or weepholes.  As an alternative, a 
+prefabricated drainage product, such as MiraDrain or EnkaDrain, may be used 
+instead of the drainage material.  The prefabricated drainage product should also 
+be connected hydraulically to a perforated pipe at the base of the wall. 
+The backfill from the bottom of the wall to the bottom of the weephole should 
+consist of relatively impervious materials to reduce the potential for significant water 
+infiltration into the subsurface.  In addition, the upper 12 inches of the retaining wall 
+backfill should consist of relatively impervious materials to reduce the potential for 
+significant water infiltration behind the retaining structure unless covered by 
+concrete slabs at the surface. 
+3.4 
+Earthwork 
+At the on-set of earthwork, the areas within the contract grading limits should be 
+thoroughly cleared and grubbed.  Vegetation, debris, deleterious material and other 
+unsuitable materials should be removed and disposed of properly off-site.  Soft and 
+yielding areas encountered during clearing and grubbing should be over-excavated to 
+expose firm or dense material, and the resulting excavation should be backfilled with 
+well-compacted engineered fill. The excavated soft and/or organic soils should be 
+properly disposed of off-site and/or used in landscape areas, where appropriate. 
+After clearing and grubbing, existing structures and pavements that are to be 
+demolished should be removed completely. Over-excavations resulting from demolition 
+should be backfilled with compacted on-site soils or select granular fill materials.  
+Existing utilities to be abandoned should be removed, and the resulting excavation 
+should be properly backfilled with excavated on-site soils or select granular fill materials 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 7655-00 
+GEOLABS, INC. 
+Page 17 
+Hawaii • California 
+placed in 8-inch loose lifts and compacted to a minimum of 90 percent relative 
+compaction. Utilities to be abandoned in-place under the proposed structures should be 
+backfilled by pumping lean concrete under low pressure. 
+Where scarification of the subgrade is not possible (subgrades of hard basalt 
+formation), we recommend proof-rolling the subgrades with a large vibratory drum roller 
+(minimum 20,000 lbs static weight) for a minimum of eight passes to help detect and 
+collapse near-surface cavities and/or voids. The vibratory drum roller should be 
+operated at a speed of about 300 feet per minute. Yielding areas, loose areas, or 
+cavities disclosed during the clearing and proof-rolling operations should be 
+over-excavated and backfilled with compacted fill materials. The depth of 
+over-excavation should extend until dense underlying materials are exposed, and the 
+resulting excavation should be backfilled with select granular fill materials compacted to 
+a minimum 90 percent relative compaction. Saturation and subsequent yielding of the 
+exposed subgrades due to inclement weather and poor drainage may require 
+over-excavation of the soft areas and replacement with compacted fill material. 
+Imported structural fills should consist of non-expansive, select granular fill 
+materials, such as crushed coral and basalt.  The materials should be well graded from 
+coarse to fine with particles no greater than 3 inches in largest dimension.  The materials 
+should have a California Bearing Ratio (CBR) value of 20 or higher and a swell potential of 
+1 percent or less when tested in accordance with ASTM D1883.  The materials also 
+should contain between 10 and 30 percent particles passing the No. 200 sieve.  The 
+structural fill material should be placed in level lifts not exceeding 8 inches in loose 
+thickness, moisture-conditioned to above the optimum moisture content, and compacted to 
+a minimum of 90 percent relative compaction. 
+General fill materials needed to fill the site may consist of materials with a low to 
+moderate expansion potential, such as the on-site soils generated from the cut areas.  
+Imported general fill materials should consist of materials with particle sizes of 6 inches or 
+less in maximum dimension and should be free of deleterious materials.  The material 
+should have a laboratory California Bearing Ratio (CBR) value of 12 or higher and a swell 
+potential of not more than 1 percent when tested in accordance with ASTM D1883.  
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 7655-00 
+GEOLABS, INC. 
+Page 18 
+Hawaii • California 
+General fill materials should be moisture-conditioned to at least 2 percent above the 
+optimum moisture, placed in level lifts not exceeding 8 inches in loose thickness, and 
+compacted to a minimum of 90 percent relative compaction.  Relative compaction refers to 
+the in-place dry density of soil expressed as a percentage of the maximum dry density of 
+the same soil established in accordance with ASTM D1557.  Optimum moisture is the 
+water content (percentage by dry weight) corresponding to the maximum dry density. 
+Aggregate base and aggregate subbase materials required for the project should 
+consist of crushed basaltic aggregates.  Aggregate base course and aggregate subbase 
+materials should be moisture-conditioned to above the optimum moisture content, 
+placed in level lifts not exceeding 8 inches in loose thickness, and compacted to a 
+minimum of 90 percent relative compaction.  Geolabs or an accredited commercial 
+testing laboratory should test the imported fill materials for conformance with these 
+recommendations prior to delivery to the project site for the intended use. 
+3.5 
+Utility Trenches 
+We envision new underground utility lines and utility connections will be required 
+for the project. In general, good construction practices should be utilized for the 
+installation and backfilling of the trenches for the proposed utilities. The contractor 
+should determine the method and equipment to be used for excavation, subject to 
+practical limits and safety considerations. The excavation should comply with the 
+applicable local, state, and federal safety requirements. The contractor should be 
+responsible for trench shoring design and installation. Trench shoring and bracing also 
+should conform to the appropriate health and safety requirements. 
+In general, we recommend using granular bedding consisting of 6 inches of open 
+graded gravel (such as ASTM C33, No. 67 gradation) for support of the utility lines. 
+Free-draining granular materials also should be used for the initial trench backfill (pipe 
+cover) up to about 12 inches above the crown of the pipes to provide adequate support 
+around the pipes and to reduce the potential for formation of voids below the haunches 
+of pipes and to provide adequate support for the sides of the pipes. Improper trench 
+backfill could result in backfill settlement and pipe damage. 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 7655-00 
+GEOLABS, INC. 
+Page 19 
+Hawaii • California 
+The trench backfill above the pipe cover to the finished subgrade or finished 
+grade may consist of the excavated on-site soils. The backfill should be moisture 
+conditioned to above the optimum moisture content, placed in maximum 8-inch level 
+loose lifts, and mechanically compacted to not less than 90 percent relative compaction 
+to reduce the potential for appreciable future ground subsidence. Where trenches are 
+located in the pavement areas, the upper 3 feet of the trench backfill below the 
+pavement grade should be compacted to at least 95 percent relative. 
+3.6 
+Subsurface Infiltration 
+In accordance with the storm water requirements, infiltration tests are required to 
+support the on-site storm water disposal design. To characterize the water infiltration 
+rates at the project site, we conducted cased borehole percolation tests in two shallow 
+borings (Boring Nos. P-1 and P-2) shown on the Site Plan, Plate 2. 
+The water infiltration rates into the subsurface soils were tested by performing 
+cased borehole percolation tests at the bottom of each boring in general accordance 
+with the procedures described in the Maryland Storm Water Management manual. 
+These procedures are consistent with other state’s procedures and generally may be 
+considered an industry standard. 
+Each boring was pre-soaked with water for at least 24 hours prior to testing.  
+Water was introduced into the boring to a depth of about 2 feet above the bottom of the 
+boring; and the drop of the water level in the boring was measured with respect to time 
+for a falling head test until the water level approaches the bottom of the borehole or for 
+one hour. 
+The tests were carried out in several increments until achieving a steady-state 
+with a relatively constant water infiltration rate.  Detailed testing data and results are 
+presented on Plates C-1 and C-2 of Appendix C and summarized in the following table. 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 7655-00 
+GEOLABS, INC. 
+Page 20 
+Hawaii • California 
+SUMMARY OF FIELD INFILTRATION TESTING 
+Test Location 
+Test Depth 
+Infiltration Rate 
+(feet) 
+(inches/hour) 
+P-1 
+5.0 
+0.05 
+P-2 
+4.0 
+11.20 
+The results of the percolation testing indicated that the infiltration rates at the site 
+may vary from 0 to 12 inches per hour. We anticipate that the overall fractured basalt rock 
+formation would have good infiltration capacity; however, zones of the hard, near-surface 
+basalt formation encountered at the site may provide a semi-impervious barrier that would 
+inhibit the rapid percolation of storm water into the substrata during a storm event in 
+localized areas. 
+It should be noted that each percolation test was conducted through a 4-inch 
+borehole, which may not represent the actual infiltration condition within the entire 
+infiltration basin footprint. Therefore, it is necessary to require the contractor to verify the 
+actual infiltration rate during construction. A Geolabs representative should observe the 
+excavation for the detention/infiltration basins to confirm the anticipated infiltration 
+substrata conditions.  
+3.7 
+Design Review 
+Preliminary and final drawings and specifications for the project should be 
+forwarded to Geolabs for review and written comments prior to construction. This review 
+is necessary to evaluate conformance of the plans and specifications with the intent of 
+the geotechnical recommendations provided herein. If this review is not made, Geolabs 
+cannot be held responsible for misinterpretation of our recommendations. 
+3.8 
+Post-Design Services/Services During Construction  
+It is recommended that Geolabs be retained to provide geotechnical engineering 
+services during construction.  The items of construction monitoring that are critical 
+requiring "Special Inspection" include the following: 
+Observation of the foundation excavations and over-excavations 
+Observation of general fill placement and compaction 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 7655-00 
+GEOLABS, INC. 
+Page 21 
+Hawaii • California 
+Observation of select granular fill placement and compaction 
+Observation of proof-rolling on the basalt rock subgrade 
+A Geolabs representative also should monitor the other aspects of earthwork 
+construction to observe compliance with the intent of the design concepts, 
+specifications, or recommendations and to expedite suggestions for design changes 
+that may be required in the event that subsurface conditions differ from those 
+anticipated at the time this report was prepared. Geolabs should be accorded the 
+opportunity to provide geotechnical engineering services during construction to confirm 
+our assumptions in providing the recommendations presented herein.  
+If the actual exposed subsurface conditions encountered during construction 
+differ from those assumed or considered in this report, Geolabs should be contacted to 
+review and/or revise the geotechnical recommendations presented herein. 
+END OF DISCUSSION AND RECOMMENDATIONS 
+W.O. 7655-00 
+GEOLABS, INC. 
+Page 22 
+Hawaii • California 
+SECTION 4.  LIMITATIONS 
+The analyses and recommendations submitted herein are based in part upon 
+information obtained from the field borings, infiltration tests, and DCP tests. Variations 
+of the subsurface conditions between and beyond the field borings, infiltration tests and 
+DCP tests may occur, and the nature and extent of these variations may not become 
+evident until construction is underway. If variations then appear evident, it will be 
+necessary to re-evaluate the recommendations presented in this report. 
+The field boring, infiltration test, and DCP test locations are approximate, having 
+been estimated from existing visible features on the Site Plan transmitted to our office 
+by  M. A. Mortenson Company on February 9, 2018. Elevations noted on the logs of 
+borings were obtained from Google Earth Pro. The locations and elevations should be 
+considered accurate only to the degree implied by the methods used. 
+The stratification breaks in the Logs of Borings depict the approximate 
+boundaries between the soil/rock types and, as such, may denote a gradual transition. 
+Water level data from the borings were measured at the times shown on the graphic 
+representations and/or presented in the text herein. These data have been reviewed 
+and interpretations made in the formulation of this report. However, it must be noted that 
+water level fluctuation may occur due to variations in seasonal rainfall, and other 
+factors. 
+This report has been prepared for the exclusive use of M.A. Mortenson 
+Company, their clients and their project consultants for specific application to the 
+INSCOM Scalable Modular Data Facility project in accordance with generally accepted 
+geotechnical engineering principles and practices. No warranty is expressed or implied. 
+This report has been prepared solely for the purpose of assisting the architect 
+and engineers in the design of the proposed project.  Therefore, this report may not 
+contain sufficient data, or the proper information, to serve as the basis for preparation of 
+construction cost estimates. 
+SECTION 4. LIMITATIONS 
+W.O. 7655-00 
+GEOLABS, INC. 
+Page 23 
+Hawaii • California 
+The owner/client should be aware that unanticipated soil/rock conditions are 
+commonly encountered. Unforeseen subsurface conditions, such as soft deposits, hard 
+layers, cavities, or perched groundwater, may occur in localized areas and may require 
+additional probing or corrections in the field (which may result in construction delays) to 
+attain a properly constructed project. Therefore, a sufficient contingency fund is 
+recommended to accommodate these possible extra costs. 
+This geotechnical engineering exploration conducted at the project site was not 
+intended to investigate the potential presence of hazardous materials existing at the 
+site. It should be noted that the equipment, techniques, and personnel used to conduct 
+a geo-environmental exploration differ substantially from those applied in geotechnical 
+engineering. 
+END OF LIMITATIONS
+CLOSURE
+The following plates and appendices are attached and complete this report:
+Project Location Map ............:ceceeeeeeeeeeetetere rnin neeeeeneeeeeseeeeeeeeeeeeeeeeeeee Plate 1
+Gite: PHAM ......nanenndias since ines es can MANE a St ME He NNR NONE MEM RTESIaRINE HRN DOORN oR GO Plate 2
+at (=)(0 Mt =>.4 ©) (0) - 11 (0) 9 een Appendix A
+Leberetory Tetras cs won came ce nea ss aR ome RRONTERTS MEERUT ME MENTORS GREE He Appendix B
+Photographs of Core Samples.............cceceeeee eee rere reer neenneeeeeeeeeeneees Appendix C
+Field Infiltration T@Sts..............ccccccccssseeeeeceeeeeeeeeeeeeceeeeeseaeeeeeeeerseseeaeeeeneeeeeeeeaaa Appendix D
+Dynamic Cone Penetrometer Test Sircecciscnss isis me sees mew ena exneanans enn awes crm anes ons exe Appendix E
+“QONOQQOQOQOOO-
+Respectfully submitted,
+GEOLABS, INC.
+Jahn Y.L. Chen, P.E.
+Vice President
+JC:TR:EH:If
+h:\7600 Series\GEE\7655-00.eh1.GEE.INSCOM.Ft_Shafter
+W.O. 7655-00 GEOLABS, INC. Page 24
+Hawaii ¢ California
+PLATES 
+INSCOM SCALABLE MODULAR DATA FACILITY
+PROJECT LOCATION MAP
+GRAPHIC SCALE
+1000
+2000
+2000
+0
+FT.
+PROJECT LOCATION
+GENERAL PROJECT LOCATION
+N
+WAHIAWA
+WAIKIKI
+HONOLULU
+AIEA
+PEARL CITY
+WAIPAHU
+EWA
+BARBERS POINT
+NANAKULI
+WAIANAE
+WAIALUA
+HALEIWA
+KAHUKU
+POINT
+DIAMOND
+HEAD
+HAWAII
+KAI
+WAIMANALO
+KAILUA
+KANEOHE
+KAHALUU
+PUNALUU
+HAUULA
+KAENA POINT
+ISLAND MAP
+NO SCALE
+FORT SHAFTER, OAHU, HAWAII
+JANUARY 2018
+1" = 2,000'
+Geotechnical Engineering
+GEOLABS, INC.
+DATE
+SCALE
+1
+7655-00
+DRAWN BY
+ASP
+W.O.
+PLATE
+N
+PACIFIC      OCEAN
+CAD User: ASPASIONJR  File Last Updated: January 04, 2018 11:12:10am  Plot Date:  January 04, 2018 - 11:12:55am
+File: T:\Drafting\Working\7655-00INSCOMScalableModularDataFacility\7655-00PLM.dwg\1.0 PLM
+Plotter: DWG To PDF.pc3  Plotstyle: GEO-No-Dithering.ctb
+REFERENCE: MAP CREATED WITH TOPO!® ©2010 NATIONAL
+GEOGRAPHIC; ©2007 TELE ATLAS, REL. 1/2007.
+RES OO1
+RES OO2
+RES OO3
+RES OO4
+RES OO5
+RES OO6
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+8" SAN
+UGE
+UGE
+UGE
+UGE
+UGE
+UGE
+UGE
+UGE
+UGE
+RES OO1
+RES OO2
+RES OO3
+RES OO4
+RES OO5
+RES OO6
+RES OO1
+RES OO2
+RES OO3
+RES OO4
+RES OO5
+RES OO6
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+8" SAN
+UGE
+UGE
+UGE
+UGE
+UGE
+UGE
+UGE
+UGE
+UGE
+RES OO1
+RES OO2
+RES OO3
+RES OO4
+RES OO5
+RES OO6
+RES OO1
+RES OO2
+RES OO3
+RES OO4
+RES OO5
+RES OO6
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+8" SAN
+UGE
+UGE
+UGE
+UGE
+UGE
+UGE
+UGE
+UGE
+UGE
+RES OO1
+RES OO2
+RES OO3
+RES OO4
+RES OO5
+RES OO6
+LEGEND:
+REFERENCE: SITE PLAN TRANSMITTED BY MORTENSON
+CONSTRUCTION ON SEPTEMBER 1, 2017.
+INSCOM SCALABLE MODULAR DATA FACILITY
+FORT SHAFTER, OAHU, HAWAII
+GEOLABS, INC.
+Geotechnical Engineering
+7655-00
+DRAWN BY
+ASP
+1" = 30'
+JANUARY 2018
+SCALE
+DATE
+W.O.
+SITE PLAN
+2
+PLATE
+CAD User: ASPASIONJR  File Last Updated: January 04, 2018 3:50:14pm  Plot Date:  March 05, 2018 - 11:18:33am
+File: T:\Drafting\Working\7655-00INSCOMScalableModularDataFacility\7655-00SitePlan.dwg\2.0 SitePlan (8.5x11)
+Plotter: DWG To PDF.pc3  Plotstyle: GEO-No-Dithering-Blue-Boring.ctb
+N
+GRAPHIC SCALE
+0
+30
+60
+90 FT.
+20
+10
+APPROXIMATE BORING LOCATION
+APPROXIMATE DCP LOCATION
+B-2
+B-1
+DCP-2
+DCP-1
+APPENDIX A 
+W.O. 7655-00 
+GEOLABS, INC. 
+MARCH 2018     Page A-1 
+Hawaii • California 
+A P P E N D I X   A 
+Field Exploration 
+The subsurface conditions at the project site were explored by drilling and sampling 
+two borings, designated as Boring Nos. 1 and 2, extending to depths of about 27.5 and 
+28.0 feet below the existing ground surface. The borings were drilled with a truck-mounted 
+drill rig equipped with 4-inch solid-stem augers and PQ coring tools. In addition, two 
+shallow borings (designated as P-1 and P-2) were drilled to evaluate and determine the 
+infiltration characteristics of the near-surface materials for design of storm water 
+management systems. The borings were drilled at the approximate locations shown on the 
+Site Plan, Plate 2. 
+Our geologist classified the materials encountered in the borings by visual and 
+textural examination in the field in general accordance with ASTM D2488, Standard 
+Practice for Description and Identification of Soils, and monitored the drilling operations 
+on a near-continuous (full-time) basis. These classifications were further reviewed 
+visually and by testing in the laboratory. Soils were classified in general accordance with 
+ASTM D2487, Standard Practice for Classification of Soils for Engineering Purposes 
+(Unified Soil Classification System), as shown on the Soil Log Legend, Plate A-0.1. 
+Deviations made to the soil classification in accordance with ASTM D2487 are 
+described onf the Soil Classification Log Key, Plate A-0.2. Graphic representations of 
+the materials encountered are presented on the Logs of Borings, Plates A-1 and A-2. 
+Some soil samples were obtained from the drilled borings in general accordance 
+with ASTM D1586, Penetration Test and Split-Barrel Sampling of Soils, by driving a 2-inch 
+O.D. standard penetration sampler using a 140-pound hammer falling 30 inches. In 
+addition, some relatively “undisturbed” soil samples were obtained in general accordance 
+with ASTM D3550, Ring-Lined Barrel Sampling of Soils, by driving a 3-inch O.D. modified 
+California sampler with the same hammer and drop. The blow counts needed to drive the 
+sampler the second and third 6 inches of an 18-inch drive are shown as the “Penetration 
+Resistance” on the Logs of Borings at the appropriate sample depths. The penetration 
+resistance shown on the Logs of Borings indicates the number of blows required for the 
+specific sampler type used. The blow counts may need to be factored to obtain the 
+Standard Penetration Test (SPT) blow counts. 
+Please note that the efficiencies of the safety hammers used for this project were 
+measured in May 2015 and the resulting energy transfer ratios are shown on the Logs of 
+Borings. The soil consistencies and densities presented in the boring logs have been 
+adjusted based on the energy transfer ratio, as appropriate.  
+Pocket penetrometer tests were performed on selected cohesive soil samples in 
+the field. The pocket penetrometer test provides an indication of the unconfined 
+compressive strength of the sample. The pocket penetrometer test results are summarized 
+on the Logs of Borings at the appropriate sample depths. 
+Appendix A 
+Field Exploration 
+W.O. 7655-00 
+GEOLABS, INC 
+MARCH 2018     Page A-2 
+Hawaii • California 
+Core samples of the rock materials encountered at the project site were obtained 
+by using diamond core drilling techniques in general accordance with ASTM D2113, 
+Diamond Core Drilling for Site Investigation. Core drilling is a rotary drilling method that 
+uses a hollow bit to cut into the rock formation. The rock material left in the hollow core of 
+the bit is mechanically recovered for examination and description. Rock cores were 
+described in general accordance with the Rock Description System, as shown on the 
+Rock Log Legend, Plate A-0.3. The Rock Description System is based on the publication 
+“Suggested Methods for the Quantitative Description of Discontinuities in Rock Masses” by 
+the International Society for Rock Mechanics (March 1977). 
+Core Recovery may be used as a subjective guide to the interpretation of the 
+relative quality of rock masses, where appropriate. Core Recovery is defined as the actual 
+length of material recovered from a coring attempt versus the length of the core attempt. 
+For example, if 3.7 feet of material is recovered from a 5.0-foot core run, the recovery 
+would be 74 percent and would be shown on the Logs of Borings as Core Recovery = 
+74%. 
+The Rock Quality Designation (RQD) is also a subjective guide to the relative 
+quality of rock masses.  RQD is defined as the percentage of the core run that is sound 
+material in excess of 4 inches in length without discontinuities, discounting 
+drilling-induced fractures or breaks.  If 2.5 feet of sound material is recovered from a 
+5.0-foot core run, the RQD would be 50 percent and would be shown on the Logs of 
+Borings as RQD = 50%.  Generally, the following is used to describe the relative quality 
+of the rock, based on the "Practical Handbook of Physical Properties of Rocks and 
+Minerals." 
+Rock Quality 
+RQD 
+(%) 
+Very Poor 
+0 – 25 
+Poor 
+25 – 50 
+Fair 
+50 – 75 
+Good 
+75 – 90 
+Excellent 
+90 – 100 
+The rippability of a rock mass is a function of the relative hardness of the rock, its 
+relative quality, brittleness, and fissile characteristics. A dense basalt with a high RQD 
+value would be very difficult to rip and would probably require more arduous methods of 
+excavation. 
+A-0.1
+UNCONSOLIDATED UNDRAINED TRIAXIAL
+COMPRESSION (ksf)
+MORE THAN 50%
+OF COARSE
+FRACTION
+RETAINED ON
+NO. 4 SIEVE
+50% OR MORE OF
+COARSE FRACTION
+PASSING
+THROUGH NO. 4
+SIEVE
+MORE THAN 50%
+OF MATERIAL
+RETAINED ON NO.
+200  SIEVE
+50% OR MORE OF
+MATERIAL PASSING
+THROUGH NO. 200
+SIEVE
+TORVANE SHEAR (tsf)
+(2-INCH) O.D. STANDARD PENETRATION TEST
+(3-INCH) O.D. MODIFIED CALIFORNIA SAMPLE
+INORGANIC SILTS AND VERY FINE SANDS,
+ROCK FLOUR, SILTY OR CLAYEY FINE SANDS
+OR CLAYEY SILTS WITH SLIGHT PLASTICITY
+POORLY-GRADED GRAVELS, GRAVEL-SAND
+MIXTURES, LITTLE OR NO FINES
+CLAYEY GRAVELS, GRAVEL-SAND-CLAY
+MIXTURES
+WELL-GRADED SANDS, GRAVELLY SANDS,
+LITTLE OR NO FINES
+POORLY-GRADED SANDS, GRAVELLY
+SANDS, LITTLE OR NO FINES
+SILTY SANDS, SAND-SILT MIXTURES
+CLAYEY SANDS, SAND-CLAY MIXTURES
+LIQUID LIMIT
+50 OR MORE
+CH
+NOTE: DUAL SYMBOLS ARE USED TO INDICATE BORDERLINE SOIL CLASSIFICATIONS
+MH
+SILTS
+AND
+CLAYS
+SILTS
+AND
+CLAYS
+LIQUID LIMIT
+LESS THAN 50
+USCS
+TYPICAL
+DESCRIPTIONS
+GW
+MORE THAN 12%
+FINES
+WATER LEVEL OBSERVED IN BORING OVERNIGHT
+HIGHLY ORGANIC SOILS
+SILTY GRAVELS, GRAVEL-SAND-SILT
+MIXTURES
+OL
+PEAT, HUMUS, SWAMP SOILS WITH HIGH
+ORGANIC CONTENTS
+INORGANIC CLAYS OF LOW TO MEDIUM
+PLASTICITY, GRAVELLY CLAYS, SANDY
+CLAYS, SILTY CLAYS, LEAN CLAYS
+Soil Log Legend
+ORGANIC CLAYS OF MEDIUM TO HIGH
+PLASTICITY, ORGANIC SILTS
+SC
+Plate
+GM
+FINE-
+GRAINED
+SOILS
+COARSE-
+GRAINED
+SOILS
+CLEAN SANDS
+SANDS WITH
+FINES
+SP
+SANDS
+GRAVELS
+WELL-GRADED GRAVELS,  GRAVEL-SAND
+MIXTURES, LITTLE OR NO FINES
+ML
+CL
+OH
+LESS THAN 5%
+FINES
+GRAVELS WITH
+FINES
+CLEAN
+GRAVELS
+GRAB SAMPLE
+PLASTICITY INDEX (NP=NON-PLASTIC)
+TV
+LEGEND
+WATER LEVEL OBSERVED IN BORING AT TIME OF
+DRILLING
+WATER LEVEL OBSERVED IN BORING AFTER DRILLING
+SM
+MAJOR DIVISIONS
+GP
+MORE THAN 12%
+FINES
+PT
+LESS THAN 5%
+FINES
+UNIFIED SOIL CLASSIFICATION SYSTEM (USCS)
+ORGANIC SILTS AND ORGANIC SILTY
+CLAYS OF LOW PLASTICITY
+SW
+GC
+INORGANIC SILT, MICACEOUS OR
+DIATOMACEOUS FINE SAND OR SILTY
+SOILS
+INORGANIC CLAYS OF HIGH PLASTICITY
+PI
+LL
+TXUU
+UNCONFINED COMPRESSION
+OR UNIAXIAL COMPRESSIVE STRENGTH
+CORE SAMPLE
+SHELBY TUBE SAMPLE
+LIQUID LIMIT (NP=NON-PLASTIC)
+UC
+GEOLABS, INC.
+Geotechnical Engineering
+LOG LEGEND FOR SOIL  7655-00.GPJ  GEOLABS.GDT  3/2/18
+A-0.2
+Medium Sand
+Fine Sand
+#4 to #200 (4.75-mm to 0.075-mm)
+#4 to #10 (4.75-mm to 2-mm)
+> 12 inches (305-mm)
+3-inch to #4 (75-mm to 4.75-mm)
+Sieve Number and / or Size
+Gravel
+#10 to #40 (2-mm to 0.425-mm)
+#40 to #200 (0.425-mm to 0.075-mm)
+3 to 12 inches (75-mm to 305-mm)
+Description
+PP Readings
+(tsf)
+2.0 - 4.0
+> 4.0
+N-Value (Blows/Foot)
+MCS
+0 - 4
+RELATIVE DENSITY / CONSISTENCY
+GRAIN SIZE DEFINITION
+ABBREVIATIONS
+N-Value (Blows/Foot)
+0 - 7
+Dry:    Absence of moisture, dry to the touch
+Moist: Damp but no visible water
+Wet:   Visible free water, usually soil is below water table
+WOH:  Weight of Hammer
+WOR:  Weight of Drill Rods
+SPT:    Standard Penetration Test Split-Spoon Sampler
+MCS:   Modified California Sampler
+PP:      Pocket Penetrometer
+4 - 7
+7 - 15
+15 - 27
+27 - 55
+SPT
+0 - 2
+> 55
+> 30
+4 - 8
+15 - 30
+MOISTURE CONTENT DEFINITIONS
+SPT
+0 - 4
+4 - 10
+10 - 30
+30 - 50
+> 50
+MCS
+Loose
+EXAMPLE: Soil Containing 60% Gravel, 25% Sand, 15% Fines. Described as: SILTY GRAVEL with some sand
+Plate
+GRANULAR SOIL (- #200 <50%)
+2 - 4
+8 - 15
+Relative
+Density
+Very Loose
+Dense
+Very Dense
+COHESIVE SOIL (- #200    50%)
+PRIMARY constituents are composed of the largest
+percent of the soil mass. Primary constituents are
+capitalized and bold (i.e., GRAVEL, SAND)
+PRIMARY constituents are based on plasticity. Primary
+constituents are capitalized and bold (i.e., CLAY, SILT)
+SECONDARY constituents are composed of a
+percentage less than the primary constituent. If the soil
+mass consists of 12 percent or more fines content, a
+cohesive constituent is used (SILTY or CLAYEY);
+otherwise, a granular constituent is used (GRAVELLY
+or SANDY) provided that the secondary constituent
+consists of 20 percent or more of the soil mass.
+Secondary constituents are capitalized and bold (i.e.,
+SANDY GRAVEL, CLAYEY SAND) and precede the
+primary constituent.
+SECONDARY constituents are composed of a
+percentage less than the primary constituent, but more
+than 20 percent of the soil mass. Secondary constituents
+are capitalized and bold (i.e., SANDY CLAY, SILTY
+CLAY, CLAYEY SILT) and precede the primary
+constituent.
+Sand
+Boulders
+Cobbles
+Coarse Gravel
+3-inch to 3/4-inch (75-mm to 19-mm)
+Fine Gravel
+3/4-inch to #4 (19-mm to 4.75-mm)
+GEOLABS, INC. CLASSIFICATION*
+Granular Soils
+Cohesive Soils
+Consistency
+accessory descriptions compose of the following:
+with some: >12%
+with a little: 5 - 12%
+with traces of: <5%
+accessory descriptions are lower cased and follow the
+Primary and Secondary Constituents
+(i.e., SILTY CLAY with some sand)
+Very Soft
+Soft
+Medium Stiff
+Stiff
+Very Stiff
+Hard
+< 0.5
+0.5 - 1.0
+1.0 - 2.0
+7 - 18
+18 - 55
+55 - 91
+> 91
+Medium Dense
+Coarse Sand
+(with deviations from ASTM D2488)
+Soil Classification Log Key
+*Soil descriptions are based on ASTM D2488-09a, Visual-Manual Procedure, with the
+above modifications by Geolabs, Inc. to the Unified Soil Classification System (USCS).
+accessory descriptions compose of the following:
+with some: >12%
+with a little: 5 - 12%
+with traces of: <5%
+accessory descriptions are lower cased and follow the
+Primary and Secondary Constituents
+(i.e., SILTY GRAVEL with a little sand)
+SOIL_CLASS_LOG_KEY  7655-00.GPJ  GEOLABS.GDT  3/2/18
+GEOLABS, INC.
+Geotechnical Engineering
+A-0.3
+ROCK DESCRIPTIONS
+Plate
+BRECCIA
+CLINKER
+COBBLES
+CORAL
+BASALT
+ROCK DESCRIPTION SYSTEM
+Greater than 24 inches apart
+12 to 24 inches apart
+6 to 12 inches apart
+3 to 6 inches apart
+Less than 3 inches apart
+Rock shows no sign of discoloration or loss of strength.
+Slight discoloration inwards from open fractures.
+Discoloration throughout and noticeably weakened though not able to break by hand.
+Most minerals decomposed with some corestones present in residual soil mass. Can be broken by hand.
+Saprolite. Mineral residue completely decomposed to soil but fabric and structure preserved.
+The following terms describe general fracture spacing of a rock:
+The following terms describe the chemical weathering of a rock:
+ROCK FRACTURE CHARACTERISTICS
+DEGREE OF WEATHERING
+HARDNESS
+BOULDERS
+VOID/CAVITY
+TUFF
+SILTSTONE
+LIMESTONE
+Unweathered:
+Slightly Weathered:
+Moderately Weathered:
+Highly Weathered:
+Extremely Weathered:
+Very Hard:
+Hard:
+Medium Hard:
+Soft:
+Very Soft:
+SANDSTONE
+Massive:
+Slightly Fractured:
+Moderately Fractured:
+Closely Fractured:
+Severely Fractured:
+Rock Log Legend
+The following terms describe the resistance of a rock to indentation or scratching:
+Specimen breaks with difficulty after several "pinging" hammer blows.
+Example: Dense, fine grain volcanic rock
+Specimen breaks with some difficulty after several hammer blows.
+Example: Vesicular, vugular, coarse-grained rock
+Specimen can be broked by one hammer blow. Cannot be scraped by knife. SPT may penetrate by
+~25 blows per inch with bounce.
+Example: Porous rock such as clinker, cinder, and coral reef
+Can be indented by one hammer blow. Can be scraped or peeled by knife. SPT can penetrate by
+~100 blows per foot.
+Example: Weathered rock, chalk-like coral reef
+Crumbles under hammer blow. Can be peeled and carved by knife. Can be indented by finger
+pressure.
+Example: Saprolite
+CONGLOMERATE
+GEOLABS, INC.
+Geotechnical Engineering
+LOG LEGEND FOR ROCK  7655-00.GPJ  GEOLABS.GDT  3/2/18
+31
+28
+20
+47
+78
+MH
+CH
+CH
+0
+20
+0
+0
+0
+2.0
+19
+55
+24/6"
++50/3"
+ Ref.
+20
+89
+50
+22
+57
+5
+LL=127
+PI=100
+TXUU
+SWELL
+Brown CLAYEY SILT with a little gravel, stiff,
+moist (fill)
+Brownish gray SILTY CLAY with some gravel
+(basaltic), stiff, moist (residual soil)
+Brownish gray BASALT, moderately to closely
+fractured, slightly to moderately weathered, hard
+(a'a basalt)
+grades with clay seams in fractures locally
+grades to severely fractured, moderately to highly
+weathered, medium hard
+grades to extremely weathered locally with hard
+sandy silt with cobble sized corestones
+Reddish brown SILTY CLAY, very stiff, moist
+(alluvium)
+ Boring terminated at 28 feet
+ * Elevations estimated from Google Earth™,
+©2017 Google, Inc.
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-45C TRUCK
+4" Solid Stem Auger & PQ Coring
+140 lb. wt., 30 in. drop
+5
+10
+15
+20
+25
+30
+35
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation (feet MSL): 21 *
+Sample
+Moisture
+Content (%)
+B-1
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+February 2, 2018
+February 2, 2018
+S. Latronic
+28 feet
+7655-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 1
+(Energy Transfer Ratio = 78%)
+GEOLABS, INC.
+Geotechnical Engineering
+INSCOM SCALABLE MODULAR DATA FACILITY
+FORT SHAFTER, OAHU, HAWAII
+BORING_LOG  7655-00.GPJ  GEOLABS.GDT  3/6/18
+21.5 ft.   02/02/2018 1640 HRS
+19
+16
+38
+44
+84
+84
+GP
+MH
+CH
+CH
+90
+95
+15
+7
+0
+2.5
+4.5
+76
+50/6"
++20/0"
+Ref.
+28
+14
+90
+95
+75
+38
+29
+LL=76
+PI=51
+UC
+UC
+LL=62
+PI=35
+2-inch ASPHALTIC CONCRETE
+Gray angular SANDY GRAVEL (BASALTIC),
+dense, moist (fill)
+Brown CLAYEY SILT with some gravel, very stiff,
+moist (fill)
+Brown with gray mottling SILTY CLAY with some
+cobbles (basaltic), hard, moist (residual soil)
+Brownish gray vugular BASALT, moderately
+fractured, slightly weathered, hard to very hard
+(a'a basalt)
+grades with clay seams in fractures locally
+grades to closely to severely fractured, moderately
+to highly weathered, medium hard to hard
+Reddish brown SILTY CLAY, very stiff (alluvium)
+ Boring terminated at 27.5 feet
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-45C TRUCK
+4" Solid Stem Auger & PQ Coring
+140 lb. wt., 30 in. drop
+5
+10
+15
+20
+25
+30
+35
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation (feet MSL): 18 *
+Sample
+Moisture
+Content (%)
+B-2
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+February 2, 2018
+February 2, 2018
+S. Latronic
+27.5 feet
+7655-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 2
+(Energy Transfer Ratio = 78%)
+GEOLABS, INC.
+Geotechnical Engineering
+INSCOM SCALABLE MODULAR DATA FACILITY
+FORT SHAFTER, OAHU, HAWAII
+BORING_LOG  7655-00.GPJ  GEOLABS.GDT  3/6/18
+18.0 ft.   02/02/2018 1230 HRS
+MH
+CH
+Brown CLAYEY SILT with a little gravel, stiff,
+moist (fill)
+Brownish gray SILTY CLAY with some gravel
+(basaltic), stiff, moist (residual soil)
+Brownish gray BASALT, moderately to closely
+fractured, slightly to moderately weathered, hard
+(a'a basalt)
+ Boring terminated at 5 feet
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-45C TRUCK
+4" Solid Stem Auger
+140 lb. wt., 30 in. drop
+5
+10
+15
+20
+25
+30
+35
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation (feet MSL): 21 *
+Sample
+Moisture
+Content (%)
+P-1
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+February 2, 2018
+February 2, 2018
+S. Latronic
+5 feet
+7655-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 3
+(Energy Transfer Ratio = 78%)
+GEOLABS, INC.
+Geotechnical Engineering
+INSCOM SCALABLE MODULAR DATA FACILITY
+FORT SHAFTER, OAHU, HAWAII
+BORING_LOG  7655-00.GPJ  GEOLABS.GDT  3/6/18
+Not Encountered.
+MH
+CH
+Brown CLAYEY SILT with a little gravel, stiff,
+moist (fill)
+Brownish gray SILTY CLAY with some gravel
+(basaltic), stiff, moist (residual soil)
+Brownish gray BASALT, moderately to closely
+fractured, slightly to moderately weathered, hard
+(a'a basalt)
+ Boring terminated at 4 feet
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-45C TRUCK
+4" Solid Stem Auger
+140 lb. wt., 30 in. drop
+5
+10
+15
+20
+25
+30
+35
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation (feet MSL): 21 *
+Sample
+Moisture
+Content (%)
+P-2
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+February 2, 2018
+February 2, 2018
+S. Latronic
+4 feet
+7655-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 4
+(Energy Transfer Ratio = 78%)
+GEOLABS, INC.
+Geotechnical Engineering
+INSCOM SCALABLE MODULAR DATA FACILITY
+FORT SHAFTER, OAHU, HAWAII
+BORING_LOG  7655-00.GPJ  GEOLABS.GDT  3/6/18
+Not Encountered.
+APPENDIX  B 
+W.O. 7655-00 
+GEOLABS, INC. 
+MARCH 2018     Page B-1 
+Hawaii • California 
+A P P E N D I X   B 
+Laboratory Tests 
+Moisture Content (ASTM D2216) and Unit Weight (ASTM D7263) determinations 
+were performed on selected soil samples as an aid in the classification and evaluation of 
+soil properties. The test results are presented on the Logs of Borings at the appropriate 
+sample depths. 
+One one-inch Ring Swell test was performed on a selected sample to evaluate 
+the swelling potential of the soils under surcharge pressures. The test was run on a 
+relatively undisturbed sample.  The test results are presented on Plate B-1.  
+Four Atterberg Limits tests (ASTM D4318) were performed on a selected soil 
+sample to evaluate the liquid and plastic limits and to aid in soil classification. The test 
+results are summarized on the Logs of Borings at the appropriate sample depths, and 
+graphic presentation of the test results are provided on Plate B-2. 
+One Unconsolidated Undrained Triaxial Compression test (ASTM D2850) was 
+performed on a selected soil sample to evaluate the undrained shear strength of the 
+materials. The approximate in-situ effective overburden pressure was used as the 
+applied confining pressure for the relatively “undisturbed” soil sample. The test results 
+and stress-strain curve are presented on Plate B-3. 
+Two Uniaxial Compression tests (ASTM D7012, Method C) were performed on 
+rock core samples to evaluate the uniaxial compressive strength of the underlying 
+basalt formation.  The test results are presented on Plate B-4. 
+One Modified Proctor compaction test (ASTM D1557, Method C) was performed 
+on a bulk soil sample to evaluate the relationship between the moisture content and the 
+dry density of the near-surface soils. The test results are presented Plate B-5.  
+One laboratory soaked California Bearing Ratio test (ASTM D1883) was 
+performed on a bulk soil sample of near-surface soils to evaluate the support 
+characteristics of the materials tested. The bulk soil sample was remolded to obtain a 
+relative compaction of approximately 100 percent (in accordance with ASTM D1557) at 
+about the optimum moisture content. The test results are presented on Plate B-6. 
+B-1
+1.5 - 3.0
+Brownish gray silty clay (CH) with some
+gravel
+78.6
+33.9
+30.1
+46.6
+8.9
+Moisture Contents
+Location
+SUMMARY OF RING SWELL TESTS
+B - 1
+NOTE:
+Relatively Undisturbed
+Remolded
+Samples tested were either relatively undisturbed or remolded in 2.4-inch diameter by 1-inch high rings.
+They were air-dried overnight and then saturated for 24 hours under a surcharge pressure of 55 psf.
+Depth
+(feet)
+Soil Description
+(%)
+Initial
+Air-Dried
+Final
+Ring
+Swell
+(pcf)
+(%)
+(%)
+(%)
+Dry
+Density
+Plate
+W.O. 7655-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+INSCOM SCALABLE MODULAR DATA FACILITY
+FORT SHAFTER, OAHU, HAWAII
+G_RING_SWELL_TEST  7655-00.GPJ  GEOLABS.GDT  3/5/18
+0
+10
+20
+30
+40
+50
+60
+70
+80
+90
+100
+110
+120
+130
+0
+20
+40
+60
+80
+100
+120
+140
+160
+B-1
+B-2
+B-2
+BULK-1
+1.5-3.0
+1.5-3.0
+26.0-27.5
+0.0-3.0
+127
+76
+62
+76
+27
+25
+27
+18
+100
+51
+35
+58
+Brownish gray silty clay (CH) with some gravel
+Brown with gray mottling silty clay (CH)
+Reddish brown silty clay (CH)
+Brown silty clay (CH) with a little gravel
+NP = NON-PLASTIC
+7
+4
+B - 2
+LIQUID LIMIT
+PLASTICITY INDEX
+ATTERBERG LIMITS TEST RESULTS - ASTM D4318
+PI
+Depth (ft)
+Sample
+LL
+PL
+Description
+Plate
+W.O. 7655-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+INSCOM SCALABLE MODULAR DATA FACILITY
+FORT SHAFTER, OAHU, HAWAII
+G_ATTERBERG_PI-130_LL-160  7655-00.GPJ  GEOLABS.GDT  3/5/18
+CH or OH
+CL-ML
+MH or OH
+ML or OL
+CL or OL
+0
+0.2
+0.4
+0.6
+0.8
+1.0
+1.2
+1.4
+1.6
+1.8
+2.0
+2.2
+2.4
+0
+2
+4
+6
+8
+Location:
+Sample Diameter (inches)
+Sample Height (inches)
+DEVIATOR STRESS, ksf
+Max. Deviator Stress (ksf):
+Confining Stress (ksf):
+AXIAL STRAIN, %
+0.2
+2.2
+Dry Density (pcf)
+Moisture (%)
+Axial Strain at Failure (%)
+Strain Rate (% / minute)
+34.9
+83.1
+3.8
+Brownish gray silty clay (CH) with some gravel
+1.5 - 3.0 feet
+Description:
+Depth:
+B-1
+TRIAXIAL UU COMPRESSION TEST - ASTM D2850
+Test Date:
+5.110
+2.360
+0.99
+B - 3
+2/15/2018
+Plate
+W.O. 7655-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+INSCOM SCALABLE MODULAR DATA FACILITY
+FORT SHAFTER, OAHU, HAWAII
+G_TXUU  7655-00.GPJ  GEOLABS.GDT  3/5/18
+B-2
+3.5 - 4
+6.680
+3.250
+2.06
+152.3
+79,860
+9,630
+B-2
+7 - 8.5
+6.630
+3.250
+2.04
+145.5
+66,210
+7,980
+B - 4
+Depth
+Location
+Length
+Diameter
+Length/
+Diameter
+Ratio
+(feet)
+(inches)
+(inches)
+(pcf)
+(psi)
+Density
+Compressive
+Strength
+Load
+UNIAXIAL COMPRESSIVE STRENGTH TEST
+ASTM D7012 (METHOD C)
+(lbs)
+Plate
+W.O. 7655-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+INSCOM SCALABLE MODULAR DATA FACILITY
+FORT SHAFTER, OAHU, HAWAII
+G_ROCK_UC_TEST_PORTRAIT  7655-00.GPJ  GEOLABS.GDT  3/5/18
+75
+80
+85
+90
+95
+100
+105
+110
+115
+120
+125
+130
+135
+0
+10
+20
+30
+40
+% Retained on 3/8" Sieve:
+Oversize Fraction (%):
+Brown silty clay (CH) with a little gravel
+Test Fraction (%):
+Specific Gravity:
+0.0 - 3.0 feet
+pcf
+pcf
+121.0
+115.0
+14.5
+17.0
+TEST RESULTS
+Uncorrected
+Corrected for Oversize Fraction
+16.5
+20.3
+79.7
+    -
+    -
+DRY DENSITY, pcf
+Sample:
+Depth:
+MOISTURE CONTENT, %
+B - 5
+2.50
+February 21, 2018
+As-Received Moisture Content (%):
+3.20
+3.10
+3.00
+2.90
+2.80
+2.70
+2.60
+BULK-1
+MOISTURE-DENSITY RELATIONSHIP - ASTM D1557 A
+Curves of 100%
+Saturation for
+Specific Gravilty
+Equal to:
+Test Date:
+Description:
+Corrected Maximum Dry Density:
+Corrected Optimum Moisture Content:
+Uncorrected Maximum Dry Density:
+Uncorrected Optimum Moisture Content:
+% Retained on 3/4" Sieve:
+% Retained on #4 Sieve:
+13.5
+Plate
+W.O. 7655-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+INSCOM SCALABLE MODULAR DATA FACILITY
+FORT SHAFTER, OAHU, HAWAII
+G_COMPACTION_CORR&UNCORR  7655-00.GPJ  GEOLABS.GDT  3/5/18
+N/A
+N/A
+0
+10
+20
+30
+40
+50
+60
+70
+80
+0
+0.10
+0.20
+0.30
+0.40
+0.50
+0.60
+Sample:
+Corr. CBR @ 0.1"
+Depth:
+Corr. CBR @ 0.2"
+No. of Layers
+CALIFORNIA BEARING RATIO - ASTM D1883
+Description:
+Days Soaked
+6
+BULK-1
+Swell (%)
+3.34
+3.9
+5.0
+Molding Dry Density (pcf)
+STRESS, psi
+0.0 - 3.0 feet
+No. of Blows
+19.3
+109.8
+Molding Moisture (%)
+Hammer Wt. (lbs)
+Hammer Drop (inches)
+PENETRATION, inches
+Brown silty clay (CH) with a little gravel
+18
+56
+10
+5
+Aggregate
+B - 6
+3/4 inch minus
+Plate
+W.O. 7655-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+INSCOM SCALABLE MODULAR DATA FACILITY
+FORT SHAFTER, OAHU, HAWAII
+G_CBR  7655-00.GPJ  GEOLABS.GDT  3/5/18
+APPENDIX  C 
+INSCOM SCALABLE MODULAR DATA FACILITY 
+FORT SHAFTER, OAHU, HAWAII 
+W.O. 7655-00 
+GEOLABS, INC. 
+PLATE C-1 
+Hawaii • California 
+B-1     4.5’ TO 26.0’
+B-2     3.5’ TO 26.0’
+4.5’ 
+11.0’ 
+3.5’ 
+8.5’
+15.0’ 
+11.0’ 
+26.0’ 
+8.5 
+15.0’ 
+26.0’ 
+APPENDIX  D 
+W.O. 7655-00 
+GEOLABS, INC. 
+MARCH 2018     Page D-1 
+Hawaii • California 
+A P P E N D I X   D 
+Field Infiltration Tests 
+To evaluate the infiltration of the subsurface materials for storm water runoff 
+disposal, infiltration testing was performed in general accordance with the procedures in 
+Appendix D of the State of Maryland Department of the Environment “Stormwater 
+Design Manual, Volumes I and II” (rev. 2009). These procedures are consistent with 
+other state’s procedures and generally may be considered an industry standard.  
+The field infiltration tests were performed by augering a boring to selected test 
+depths of about 4 and 5 feet below the existing ground surface for P-2 and P-1, 
+respectively. Upon reaching the test depth, a 4-inch inside diameter PVC solid casing 
+was set to the bottom of the drilled hole to allow infiltration only through the soil exposed 
+at the bottom of the boring. A falling head infiltration test was performed to determine 
+the infiltration rate of the underlying subsurface materials. The test consisted of four 
+trials of filling the casing with about 24 inches of water and taking periodic readings over 
+a 1 hour trial period or until the hole drains completely. The infiltration rates are then 
+calculated based on the results of the fourth and last trial. The field infiltration test 
+results are presented on Plates D-1 and D-2. 
+Project:
+W.O.:
+Test No.:
+Date of Testing:
+Method of Testing:
+(Flush Bottom)
+Source of Water:
+GW level, b (from ground):
+N/A
+feet
+Datum, a (above ground):
+0.5
+feet
+Depth of Boring:
+5
+feet
+Length, L (from datum):
+5.5
+feet
+Diameter of Casing, d (I.D.):
+4
+inches
+Elapsed Time
+Time
+(minutes)
+(hh:mm)
+Trial 1
+0
+7:39
+15
+7:54
+30
+8:09
+45
+8:24
+60
+8:39
+Trial 2
+0
+8:39
+15
+8:54
+30
+9:09
+45
+9:24
+60
+9:39
+Trial 3
+0
+9:39
+15
+9:54
+30
+10:09
+45
+10:24
+60
+10:39
+Trial 4
+0
+10:39
+15
+10:54
+30
+11:09
+45
+11:24
+60
+11:39
+Buckets
+Testing 
+Trial
+Depth to Water              
+(measured from datum)
+Percolation Rate
+(inches)
+(inches per hour)
+INFILTRATION TEST RECORD
+INSCOM
+Ft. Shafter, Oahu, Hawaii
+P-1
+2/5/2018
+BMP FALLING HEAD
+42.00
+42.00
+42.00
+0.00
+42.00
+42.00
+42.00
+42.00
+42.00
+42.00
+42.00
+42.00
+42.00
+42.00
+0.00
+42.10
+42.10
+42.00
+42.10
+0.10
+42.10
+42.10
+42.15
+0.05
+GW
+Ground
+Datum
+d
+a
+b
+L
+W.O. 7655-00
+GEOLABS, INC. 
+Hawaii ● California
+PLATE D-1
+Project:
+W.O.:
+Test No.:
+Date of Testing:
+Method of Testing:
+(Flush Bottom)
+Source of Water:
+GW level, b (from ground):
+N/A
+feet
+Datum, a (above ground):
+1.5
+feet
+Depth of Boring:
+4
+feet
+Length, L (from datum):
+5.5
+feet
+Diameter of Casing, d (I.D.):
+4
+inches
+Elapsed Time
+Time
+(minutes)
+(hh:mm)
+Trial 1
+0
+7:35
+15
+7:50
+30
+8:05
+45
+8:20
+60
+8:35
+Trial 2
+0
+8:36
+15
+8:51
+30
+9:06
+45
+9:21
+60
+9:36
+Trial 3
+0
+9:37
+15
+9:52
+30
+10:07
+45
+10:22
+60
+10:37
+Trial 4
+0
+10:38
+15
+10:53
+30
+11:08
+45
+11:23
+60
+11:38
+49.20
+51.80
+53.40
+11.20
+42.20
+46.25
+52.50
+54.50
+11.90
+42.60
+46.75
+50.00
+52.60
+10.00
+46.00
+48.50
+50.70
+42.60
+50.20
+51.30
+52.00
+10.75
+41.25
+47.75
+Buckets
+Testing 
+Trial
+Depth to Water              
+(measured from datum)
+Percolation Rate
+(inches)
+(inches per hour)
+INFILTRATION TEST RECORD
+INSCOM
+Ft. Shafter, Oahu, Hawaii
+P-2
+2/5/2018
+BMP FALLING HEAD
+GW
+Ground
+Datum
+d
+a
+b
+L
+W.O. 7655-00
+GEOLABS, INC. 
+Hawaii ● California
+PLATE D-2
+APPENDIX  E 
+W.O. 7655-00 
+GEOLABS, INC. 
+MARCH 2018     Page E-1 
+Hawaii • California 
+A P P E N D I X   E 
+Dynamic Cone Penetrometer Tests 
+In order to evaluate the consistency or relative density of the near-surface soils 
+and depict the top rock surface contour, Dynamic Cone Penetrometer (DCP) tests were 
+conducted at two locations, designated as DCP-1 and DCP-2, extending to depths of 
+about 16 to 27 inches below the existing ground surface, respectively. The approximate 
+DCP locations are shown on the Site Plan, Plate 2. 
+The procedures used in our DCP tests are in general accordance with 
+ASTM D6951, Standard Test Method for Use of the Dynamic Cone Penetrometer in 
+Shallow Pavement Applications. Correlations between DCP penetration and CBR are 
+based on the equation [CBR = 292 / (DCP1.12)] developed by the U.S. Army Corps of 
+Engineers and recommended in ASTM D6951. Correlations between DCP penetration 
+and SPT blow count was derived from the publication entitled “Application of Dynamic 
+Cone Penetrometer (DCP) for determination of the engineering parameters of sandy 
+soils” prepared by S.D. Mohammadi, et al, and is summarized in the table below. The 
+DCP field data is presented are presented on Plates E-1 and E-2. 
+CORRELATION BETWEEN SPT N-VALUES WITH DCP RESISTANCE, AND 
+APPARENT SOIL DENSITY 
+Apparent Soil Density 
+SPT N-Values 
+(blows per 300 millimeters) 
+DCP Resistance 
+(average penetration per blow) 
+Very Loose 
+< 4 
+> 42 mm 
+Loose 
+4 – 10 
+23 – 42 mm  
+Medium Dense 
+10 – 30 
+12 – 23 mm 
+Dense 
+30 – 50 
+5 – 12 mm 
+Very Dense 
+> 50 
+< 5 mm 
+Note: The correlation is based on “Application of Dynamic Cone Penetrometer (DCP) for determination 
+of the engineering parameters of sandy soils” prepared by S.D. Mohammadi, et al. 
+Log of 
+DCP       
+1
+No. of 
+Blows
+Penetration 
+Reading 
+(mm)
+Depth of 
+Penetration 
+(mm)
+Depth of 
+Penetration 
+(inches)
+Elevation of 
+Penetration 
+(feet MSL)
+Average 
+Penetration 
+(mm/blow)
+Correlated 
+CBR 
+(%)
+Correlated 
+SPT 
+(blow/foot)
+Initial
+0
+-
+-
+N/A
+-
+-
+-
+1
+22
+22
+1
+-
+22
+9
+13
+1
+41
+41
+2
+-
+19
+11
+17
+1
+59
+59
+2
+-
+18
+12
+20
+1
+78
+78
+3
+-
+20
+10
+16
+1
+93
+93
+4
+-
+15
+14
+25
+1
+120
+120
+5
+-
+27
+7
+9
+1
+145
+145
+6
+-
+25
+8
+9
+1
+170
+170
+7
+-
+25
+8
+9
+1
+199
+199
+8
+-
+29
+7
+8
+1
+228
+228
+9
+-
+30
+7
+8
+1
+258
+258
+10
+-
+29
+7
+8
+1
+286
+286
+11
+-
+29
+7
+8
+1
+314
+314
+12
+-
+28
+7
+8
+1
+344
+344
+14
+-
+30
+6
+8
+1
+364
+364
+14
+-
+19
+11
+17
+1
+379
+379
+15
+-
+16
+13
+23
+1
+396
+396
+16
+-
+16
+13
+22
+1
+401
+401
+16
+-
+5
+45
+49
+1
+403
+403
+16
+-
+2
+161
+>50
+1
+403
+403
+16
+-
+1
+375
+>50
+1
+405
+405
+16
+-
+2
+142
+>50
+1
+407
+407
+16
+-
+2
+151
+>50
+1
+408
+408
+16
+-
+1
+435
+>50
+1
+409
+409
+16
+-
+1
+262
+>50
+1
+410
+410
+16
+-
+1
+292
+>50
+1
+410
+410
+16
+-
+0
+1125
+>50
+Ref.
+Date Started:
+1/2/2018
+Water Level:
+N/A
+Date Completed:
+1/2/2018
+Logged By:
+B. Aiu
+Probing Equipment:
+DCP H-4219
+Total Depth:
+1.3'
+Size of Cone Tip:
+8 mm dia. with 60° cone
+Work Order:
+7655-00
+Driving Energy:
+8 kg weight 575 mm drop
+GEOLABS, INC.    
+INSCOM SCALABLE MODULAR DATA FACILITY
+FORT SHAFTER, OAHU, HAWAII
+Geotechnical Engineering  
+Plate       
+E-1
+Log of 
+DCP       
+2
+No. of 
+Blows
+Penetration 
+Reading 
+(mm)
+Depth of 
+Penetration 
+(mm)
+Depth of 
+Penetration 
+(inches)
+Elevation of 
+Penetration 
+(feet MSL)
+Average 
+Penetration 
+(mm/blow)
+Correlated 
+CBR 
+(%)
+Correlated 
+SPT 
+(blow/foot)
+Initial
+0
+-
+-
+N/A
+-
+-
+-
+1
+39
+39
+2
+-
+39
+5
+5
+1
+70
+70
+3
+-
+31
+6
+8
+1
+93
+93
+4
+-
+24
+8
+10
+1
+110
+110
+4
+-
+16
+13
+22
+1
+130
+130
+5
+-
+20
+10
+15
+1
+162
+162
+6
+-
+32
+6
+7
+1
+189
+189
+7
+-
+27
+7
+9
+1
+211
+211
+8
+-
+22
+9
+12
+1
+230
+230
+9
+-
+20
+10
+16
+1
+261
+261
+10
+-
+31
+6
+8
+1
+295
+295
+12
+-
+34
+6
+7
+1
+325
+325
+13
+-
+31
+6
+8
+1
+352
+352
+14
+-
+27
+7
+9
+1
+366
+366
+14
+-
+15
+15
+25
+1
+379
+379
+15
+-
+13
+17
+29
+1
+392
+392
+15
+-
+13
+17
+29
+1
+405
+405
+16
+-
+13
+16
+28
+1
+422
+422
+17
+-
+17
+12
+21
+1
+450
+450
+18
+-
+28
+7
+8
+1
+471
+471
+19
+-
+21
+10
+14
+1
+488
+488
+19
+-
+17
+12
+20
+1
+524
+524
+21
+-
+36
+5
+6
+1
+554
+554
+22
+-
+30
+6
+8
+1
+575
+575
+23
+-
+21
+10
+14
+1
+591
+591
+23
+-
+16
+13
+23
+1
+605
+605
+24
+-
+14
+15
+26
+1
+619
+619
+24
+-
+14
+15
+26
+1
+636
+636
+25
+-
+17
+12
+21
+1
+656
+656
+26
+-
+20
+10
+15
+1
+671
+671
+26
+-
+15
+15
+25
+1
+675
+675
+27
+-
+4
+57
+>50
+1
+677
+677
+27
+-
+2
+161
+>50
+1
+678
+678
+27
+-
+1
+375
+>50
+1
+679
+679
+27
+-
+2
+161
+>50
+1
+680
+680
+27
+-
+1
+635
+>50
+1
+681
+681
+27
+-
+2
+185
+>50
+Ref.
+Date Started:
+1/2/2018
+Water Level:
+N/A
+Date Completed:
+1/2/2018
+Logged By:
+B. Aiu
+Probing Equipment:
+DCP H-4219
+Total Depth:
+2.2'
+Size of Cone Tip:
+8 mm dia. with 60° cone
+Work Order:
+7655-00
+Driving Energy:
+8 kg weight 575 mm drop
+GEOLABS, INC.    
+INSCOM SCALABLE MODULAR DATA FACILITY
+FORT SHAFTER, OAHU, HAWAII
+Geotechnical Engineering  
+Plate       
+E-2

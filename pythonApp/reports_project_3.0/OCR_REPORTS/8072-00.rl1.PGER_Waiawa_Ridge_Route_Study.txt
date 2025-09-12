@@ -1,0 +1,2512 @@
+PRELIMINARY GEOTECHNICAL ENGINEERING REPORT 
+WAIAWA RIDGE ROUTE STUDY 
+WAIAWA, OAHU, HAWAII 
+W.O. 8072-00     SEPTEMBER 10, 2021 
+Prepared for 
+AECOM TECHNICAL SERVICES, INC. 
+and 
+CITY AND COUNTY OF HONOLULU 
+DEPARTMENT OF ENVIRONMENTAL SERVICES 
+GEOLABS, INC. 
+Geotechnical Engineering and Drilling Services 
+DRAFT #2 Prelim. Geotech. Engineering Report - 09/10/2021
+PRELIMIMARY GEOTECHNICAL ENGINEERING REPORT 
+WAIAWA RIDGE ROUTE STUDY 
+WAIAWA, OAHU, HAWAII 
+W.O. 8072-00     SEPTEMBER 10, 2021 
+Prepared for 
+AECOM TECHNICAL SERVICES, INC. 
+and 
+CITY AND COUNTY OF HONOLULU 
+DEPARTMENT OF ENVIRONMENTAL SERVICES 
+THIS WORK WAS PREPARED BY 
+ME OR UNDER MY SUPERVISION. 
+DRAFT 
+4-30-22
+SIGNATURE 
+EXPIRATION DATE 
+OF THE LICENSE
+GEOLABS, INC. 
+Geotechnical Engineering and Drilling Services 
+94-429 Koaki Street, Suite 200 • Waipahu, HI  96797
+Hawaii • California
+DRAFT #2 Prelim. Geotech. Engineering Report - 09/10/2021
+GEOLABS, INC. 
+Geotechnical Engineering and Drilling Services 
+94-429 Koaki Street, Suite 200 • Waipahu, Hawaii 96797 
+Telephone: (808) 841-5064  •  E-mail: hawaii@geolabs.net 
+Hawaii • California 
+September 10, 2021 
+W.O. 8072-00 
+Ms. Rae M. Loui, P.E. 
+AECOM Technical Services, Inc. 
+1001 Bishop Street, Suite 1600 
+Honolulu, HI  96813 
+Dear Ms. Loui: 
+This prelimimary geotechnical engineering report (PGER) presents the results of our 
+general assessment of the engineering properties of the anticipated geologic units and associated 
+geotechnical considerations in support of the Waiawa Ridge Route Study project. 
+Our work was performed in general accordance with the scope of services outlined in our 
+fee proposal dated November 5, 2019, and the Subcontract and Purchase Order dated 
+February 12, 2020. 
+If you have questions or need additional information, please contact our office. 
+Very truly yours, 
+GEOLABS, INC. 
+                        DRAFT 
+By ________________________ 
+                Robin M Lim, P.E. 
+                      President 
+RML:TK:cj 
+DRAFT #2 Prelim. Geotech. Engineering Report - 09/10/2021
+W.O. 8072-00 
+GEOLABS, INC. 
+Page i 
+Hawaii  California 
+PRELIMINARY GEOTECHNICAL ENGINEERING REPORT 
+WAIAWA RIDGE ROUTE STUDY 
+WAIAWA, OAHU, HAWAII 
+W.O. 8072-00     SEPTEMBER 10, 2021 
+TABLE OF CONTENTS 
+Page 
+1.
+PROJECT CONSIDERATIONS ..................................................................................... 1 
+2.
+SCOPE OF WORK .................................................................................................... 3 
+3.
+SITE CHARACTERIZATION ........................................................................................ 4 
+3.1 
+Regional Geology .......................................................................................................... 4 
+3.2 
+Site Description ............................................................................................................. 7 
+3.3 
+Subsurface Characteristics ........................................................................................... 7 
+3.3.1 Recent Fill (Rf) ............................................................................................ 8 
+3.3.2 Recent Alluvium (Ra) ................................................................................. 8 
+3.3.3 Older Alluvium (Qa) ................................................................................... 9 
+3.3.4 Tertiary Koolau Basalt (Tkb) ..................................................................... 10 
+3.3.5 Groundwater ........................................................................................... 11 
+3.3.6 Groundwater Level Rise due to Sea Level Rise ........................................ 12 
+4.
+MICROTUNNELING/DEEP TUNNEL BORING ............................................................ 13 
+4.1 
+Major Advantages or Benefits .................................................................................... 13 
+4.2 
+Construction Methodology ........................................................................................ 13 
+4.3 
+Anticipated Tunneling Condition ............................................................................... 15 
+4.4 
+Ground Behavior ........................................................................................................ 18 
+4.5 
+Groundwater Control ................................................................................................. 18 
+4.6 
+Settlement Due to Tunneling Operations .................................................................. 20 
+4.7 
+Jacking/Receiving Pits ................................................................................................. 21 
+4.7.1 Excavation Method .................................................................................. 22 
+4.7.2 Excavation Support .................................................................................. 22 
+4.7.3 Thrust Block Resistance ........................................................................... 23 
+4.7.4 Backfilling of Jacking/Receiving Pits ......................................................... 24 
+4.7.5 Other Considerations ............................................................................... 24 
+4.8 
+Dewatering ................................................................................................................. 25 
+4.8.1 Dewatering Considerations ..................................................................... 26 
+4.8.2 Dewatering Precaution and Monitoring .................................................. 27 
+4.9 
+Instrumentation and Monitoring ............................................................................... 28 
+4.9.1 Prior to Microtunneling/Deep Tunnel Boring .......................................... 28 
+4.9.2 During Tunneling and Open Trench Construction .................................... 29 
+4.9.3 Post-Construction Monitoring ................................................................. 29 
+DRAFT #2 Prelim. Geotech. Engineering Report - 09/10/2021
+TABLE OF CONTENTS 
+Page 
+W.O. 8072-00 
+GEOLABS, INC. 
+Page ii 
+Hawaii  California 
+5.
+OPEN TRENCH (CUT-AND-COVER) .......................................................................... 30 
+5.1 
+Earth Pressure Loads on Pipes ................................................................................... 30 
+5.2 
+Pipe Bedding ............................................................................................................... 30 
+5.3 
+Trench Backfill ............................................................................................................. 31 
+5.4 
+Trench Backfill Compaction and Placement Requirements ...................................... 32 
+5.5 
+Settlements ................................................................................................................. 33 
+5.6 
+Trench Excavation ....................................................................................................... 33 
+5.7 
+Excavation Support ..................................................................................................... 34 
+5.8 
+Manhole Structures .................................................................................................... 35 
+6.
+GEOTECHNICAL EXPLORATION PROGRAM .............................................................. 37 
+6.1 
+Soil Borings, Rock Coring, and Associated Field Testing ............................................ 37 
+6.2 
+Piezometric Water Level Monitoring ......................................................................... 38 
+6.3 
+Field Permeability Testing .......................................................................................... 38 
+6.4 
+Laboratory Testing ...................................................................................................... 38 
+7.
+LIMITATIONS ........................................................................................................ 40 
+REFERENCES.................................................................................................................... 41 
+PLATES 
+Project Location Map  ······························································································ Plate 1 
+General Site Plan – Alignment A ··············································································  Plate 2 
+Site Plans & Profiles – Alignment A  ······················································  Plates 3.1 thru 3.6 
+General Site Plan – Alignment G··············································································  Plate 4 
+Site Plans & Profiles – Alignment G  ······················································  Plates 5.1 thru 5.4 
+Geology Map ···········································································································  Plate 6 
+Categories of Ground Conditions for Soft Ground Tunnels ·····································  Plate 7 
+DRAFT #2 Prelim. Geotech. Engineering Report - 09/10/2021
+W.O. 8072-00 
+GEOLABS, INC. 
+Page 1 
+Hawaii • California 
+SECTION 1.  
+PROJECT CONSIDERATIONS 
+Based on the information provided, it is desired to identify a preferred route and general 
+requirements for the proposed Waiawa Ridge Route Study project. We understand that two 
+routes, designated as Alignments A and G, are selected for detailed study. The approximate 
+alignments of the two routes are shown on the Project Location Map, Plate 1. The following 
+descriptions of the two route alternatives are provided for information and reference: 
+Alignment A 
+Alignment A generally consists of approximately 10,700 linear feet of 48-inch and 60-inch 
+diameter pipe beginning at the Waiawa Ridge by Gentry development, following Waihona 
+Street to Kamehameha Highway, then intercepting Lehua Avenue to the Pearl City 
+Wastewater Pump Station (WWPS). The alignment will collect additional wastewater 
+flows from neighboring communities along Waihona Street, Kamehameha Highway, and 
+Lehua Avenue, including Waiawa Industrial Park WWPS, Waimano Home Road, Manana 
+and Pearl City, and the planned relief sewer along Kamehameha Highway starting from 
+the HECO Waiau Power Plant area and ending at the intersection of Kamehameha 
+Highway and Lehua Avenue. Waiawa Industrial Park WWPS will be removed from service 
+upon completion of the construction of Alignment A. 
+Based on the information provided, construction methods for each pipe span will be 
+determined by the location and the maximum depth of the pipe span. In areas where it is 
+not feasible or viable to install the new sewer line using open trench method (i.e. private 
+properties, major roads and highways, etc.) and where the maximum depth of the pipe 
+exceeded 25 feet, microtunneling is the suggested construction method. 
+Alignment G 
+Alignment G is a new alignment alternative that would use either microtunnel or deep 
+tunnel to collect wastewater at the Waiawa Ridge by Gentry development and transfer it 
+to the existing wastewater collection system. This alignment generally consists of 
+approximately 7,300 linear feet of 48-inch diameter pipe, beginning at the Waiawa Ridge 
+by Gentry development and traveling south to intercept the Proposed Conveyance Tunnel 
+DRAFT #2 Prelim. Geotech. Engineering Report - 09/10/2021
+SECTION 1. PROJECT CONSIDERATIONS 
+W.O. 8072-00 
+GEOLABS, INC. 
+Page 2 
+Hawaii  California 
+west of Pearl City WWPS. It will collect wastewater from the Waiawa Industrial Park 
+WWPS, allowing this WWPS to be removed from service upon completion of Alignment G. 
+The depths to the pipe invert along the majority of this alignment range from about 96 to 
+117 feet below the existing ground surface. Therefore, it is anticipated that deep tunnel 
+boring construction method will be used for this route alternative. 
+The scope of our work for this preliminary geotechnical engineering report is to conduct 
+a desktop study to evaluate the anticipated subsurface conditions and present preliminary 
+geotechnical considerations associated with the design and construction of the two route 
+alternatives. In addition to our research efforts, we understand that existing boring data from 
+the available files of the City and County of Honolulu will be provided by AECOM for our use. This 
+subsurface information will be supplemented with the boring data from our internal files and 
+from readily available geologic information. The subsurface information obtained will be 
+summarized, and generalized subsurface profiles will be developed. Based on the generalized 
+subsurface profiles, preliminary discussions of the geotechnical considerations associated with 
+the design and construction of the two route alternatives will be presented in support of the 
+proposed route study. 
+END OF PROJECT CONSIDERATIONS 
+DRAFT #2 Prelim. Geotech. Engineering Report - 09/10/2021
+W.O. 8072-00 
+GEOLABS, INC. 
+Page 3 
+Hawaii • California 
+SECTION 2.  
+SCOPE OF WORK 
+The purpose of our geotechnical consultation services is to obtain and summarize 
+available subsurface and geologic information along Alignments A and G of the Waiawa Ridge 
+Route Study to develop geotechnical considerations in support of the preparation of the Waiawa 
+Ridge Route Study project. 
+Our work was performed in general accordance with the scope of services outlined in our 
+fee proposal dated November 5, 2019, and the Subcontract and Purchase Order dated 
+February 12, 2020. In order to accomplish this, we conducted a consultation program consisting 
+of the following tasks and work efforts: 
+1. 
+Research and review of in-house geologic and soils information along 
+Alignments A and G of the Waiawa Ridge Route Study.  
+2. 
+Review of subsurface information from the files of the City and County of Honolulu 
+provided by AECOM. A list of the references used in the preparation of this 
+preliminary geotechnical engineering report is presented in the reference section. 
+3. 
+Compilation of the available subsurface data to evaluate the generalized 
+subsurface conditions anticipated along the two route alternatives. 
+4. 
+Preparation of this preliminary geotechnical engineering report summarizing the 
+subsurface information obtained and presenting a general assessment of the 
+engineering properties of the anticipated geologic units and associated 
+geotechnical considerations in support of the route study. 
+5. 
+Quality assurance of our overall work on the project by our principal engineer. 
+6. 
+Miscellaneous work efforts such as drafting, word processing, and clerical support. 
+END OF SCOPE OF WORK 
+DRAFT #2 Prelim. Geotech. Engineering Report - 09/10/2021
+W.O. 8072-00 
+GEOLABS, INC. 
+Page 4 
+Hawaii • California 
+SECTION 3.  
+SITE CHARACTERIZATION 
+Of interest to our geotechnical analysis are the subsurface materials anticipated along the 
+proposed microtunneling/deep tunnel boring alignments, the engineering properties of the 
+materials anticipated, and the variability of the subsurface conditions along the project 
+alignments considering the long, linear nature of the project site. Therefore, the following 
+subsections provide a description of the geologic setting of the project site, the surface and 
+subsurface conditions anticipated at the site, and a discussion on the general characteristics of 
+the anticipated geologic materials along the proposed microtunneling/deep tunnel boring 
+alignments. 
+3.1 
+Regional Geology 
+The Island of Oahu generally is composed of the weathered and dissected remnants of 
+two extinct shield (domed) volcanoes – Waianae and Koolau. The older Waianae Volcano forms 
+the bulk of the western third of Oahu’s landmass while the younger Koolau Volcano forms a major 
+portion of the eastern two-thirds of Oahu’s landmass. Generally, it is believed that the Waianae 
+and Koolau Shield Volcanoes began erupting on the order of about 20 to 25 million years ago as 
+deep ocean submarine volcanoes. Subaerial volcanic eruptions on the Island of Oahu ended 
+approximately 2.2 to 3.5 million years ago in the Pleistocene Epoch. Furthermore, the Waianae 
+Volcano became extinct while the Koolau Volcano remained active; therefore, the eastern flank 
+of Waianae Volcano is partially overlapped and buried below the younger Koolau Volcano lavas 
+near the central interior portions of the Island of Oahu. 
+The Koolau Volcanic Shield was built during the early Pleistocene Epoch by thinly-bedded 
+basaltic lava flows. The main shield-building activities ceased approximately 2.5 million years ago. 
+Evidence from drilled wells indicates that the Island of Oahu has subsided by as much as 
+1,200 feet since the cessation of this early volcanic activity (Macdonald and Abbott, 1970). 
+During that period of subsidence, coral-algal reefs began to grow on the southern coast 
+of the Island of Oahu, forming broad bays with barrier reefs across its mouth. The growth of the 
+reefs essentially kept pace with the rate of subsidence. A series of lagoons formed behind the 
+DRAFT #2 Prelim. Geotech. Engineering Report - 09/10/2021
+SECTION 3. SITE CHARACTERIZATION  
+W.O. 8072-00 
+GEOLABS, INC. 
+Page 5 
+Hawaii  California 
+barrier reefs and both terrigenous and marine sediments accumulated in the lagoons (Macdonald 
+and Abbott, 1970). 
+During the later Pleistocene Epoch (Ice Age), many sea level changes occurred as a result 
+of widespread glaciation in the continental areas of the world. As the great continental glaciers 
+advanced, the level of the ocean fell since there was less water available to fill the oceanic basins. 
+Conversely, as the glaciers receded or melted, global sea levels rose because more water was 
+available. The land mass of Oahu remained essentially stable during these changes, and the 
+fluctuations were eustatic in nature. These glacio-eustatic fluctuations resulted in stands of the 
+sea that were both higher and lower relative to the present sea level of Oahu. 
+The higher sea level stands caused the accumulation of deltas and fans of terrigenous 
+sediments in the heads of old bays, accumulation of reef deposits at correspondingly higher 
+elevations, and deposition of lagoonal/marine sediments in the quiet waters protected by 
+fringing reefs. The lower sea stands caused streams to carve valleys in the sediments and reef 
+deposits. Subaerial exposure of the sediments and calcareous materials caused desiccation of the 
+soft deltaic materials and lagoonal deposits and induration of the calcareous reef materials. In 
+addition, renewed subaerial erosion of the upper areas of the volcanic dome deposited 
+terrigenous alluvial soils under relatively high-energy conditions. 
+During periods of no significant sea level changes, continued stream action extended the 
+alluvial deltas and fans seaward and deposited alluvium over the lagoonal sediments. During 
+these stable periods, the growth of fringing coral/algal reefs formed distinct ledges of reef 
+limestone at elevations roughly conforming to the level of the sea during that period. About 
+15,000 years ago, a relatively rapid rise in sea level occurred. In the last 10,000 years or so, the 
+sea level has adjusted to its present stand. Terrigenous and marine sediments have continued to 
+accumulate in low-energy estuarine or lagoonal environments, resulting in thick deposits of soft 
+and/or loose sediments along the coast in areas that were formerly valleys and drainage ways. 
+The coastal plain is composed of interbedded alluvial, marine, and post-erosional volcanic 
+deposits. Extensive development of the plain and reclamation of the low-lying areas have given 
+the land its present shape. There is evidence that basaltic lava flows of the Honolulu Volcanic 
+DRAFT #2 Prelim. Geotech. Engineering Report - 09/10/2021
+SECTION 3. SITE CHARACTERIZATION  
+W.O. 8072-00 
+GEOLABS, INC. 
+Page 6 
+Hawaii  California 
+Series, possibly originating from the Makuku vent in Nuuanu or from Punchbowl, reached the 
+eastern portion of what is now Sand Island. During the Waipio stand of the sea at 
+Elevation -60 feet Mean Sea Level (MSL), this layer of basalt has provided a resistant surface, 
+which has diverted the flows of Nuuanu and Kapalama Streams to the west. The diversion of 
+these two streams has resulted in the deposition of extensive subaerial sediments consisting of 
+alluvial clays and silts. These exposed alluvial deposits have become consolidated due to seasonal 
+moisture changes. Subsequently, as the sea level rose to the Waimanalo stand of the sea at about 
+Elevation +25 feet MSL and then fell to its present level, the stream-laid alluvium was buried 
+beneath backreef deposits of sands as a fringing coral reef grew and emerged on the seaward 
+margin of the island. 
+The proposed Alignment A generally traverses lowland coastal alluvial plains along the 
+southern distal flank of the Koolau Mountain Range. The coastal plain surfaces traversed by 
+Alignment A are relatively flat to gently undulating in the easterly to the westerly direction. There 
+are five primary stream channels that discharge at the East Loch of Pearl Harbor. The meandering 
+streams have contributed significantly to the erosional evolution and deposition of the coastal 
+alluvial plains by incising into the underlying basaltic rock (Koolau Basalt) comprising the 
+basement rock formation of this portion of the Island of Oahu. Land reclamation projects in the 
+last 100 years have brought the area to its current form. Many of the resulting fills at the ground 
+surface are of poor quality in terms of supporting large structural loads. 
+The proposed Alignment G is along the southern flank of the Koolau Volcano. The 
+geomorphology and subsurface conditions at the site are related directly to the glacio-eustatic 
+fluctuations of the sea level during the Pleistocene Epoch and the genesis of Pearl Harbor and 
+the Honolulu Coastal Plain. The alignment is situated within a portion of the Schofield Plateau 
+geographic region that is comprised of an old alluvial terrace. Subsurface conditions along the 
+alignment are dominated by older (Pleistocene age) silty and clayey alluvial soil deposits. These 
+older alluvial soil deposits typically are locally intercalated with some other terrigenous deposits, 
+such as stream sands and gravel deposits and cobble and boulder deposits. 
+DRAFT #2 Prelim. Geotech. Engineering Report - 09/10/2021
+SECTION 3. SITE CHARACTERIZATION  
+W.O. 8072-00 
+GEOLABS, INC. 
+Page 7 
+Hawaii  California 
+3.2 
+Site Description 
+Alignment A generally consists of approximately 10,700 linear feet of 48-inch and 60-inch 
+diameter pipe beginning at the Waiawa Ridge by Gentry development, following Waihona Street 
+to Kamehameha Highway, then intercepting Lehua Avenue to the Pearl City WWPS. The 
+alignment will collect additional wastewater flows from the neighboring communities along 
+Waihona Street, Kamehameha Highway, and Lehua Avenue, including Waiawa Industrial Park 
+WWPS, Waimano Home Road, Manana and Pearl City, and the planned relief sewer along 
+Kamehameha Highway starting from the HECO Waiau Power Plant area and ending at the 
+intersection of Kamehameha Highway and Lehua Avenue.  
+The Waiawa Industrial Park WWPS will be removed from service upon completion of the 
+construction of Alignment A. The proposed alignment is shown on the General Site Plan (Plate 2) 
+and Site Plans & Profiles (Plates 3.1 through 3.6). Based on the plan and profile drawings 
+provided, the existing ground surface elevations along the alignment generally range from about 
++10 feet MSL at the Pearl City WWPS to about +50 feet MSL at SMH A-34 on Waihona Street. 
+Alignment G generally consists of approximately 7,300 linear feet of 48-inch diameter 
+pipe beginning at the Waiawa Ridge by Gentry development and traveling south to intercept the 
+Proposed Conveyance Tunnel west of Pearl City WWPS. The proposed alignment is shown on the 
+General Site Plan (Plate 4) and Site Plans & Profiles (Plates 5.1 through 5.4). Based on the plan 
+and profile drawings provided, the existing ground surface elevations generally range from a 
+topographic low of about +5 feet MSL at the Pearl Harbor Bike Path to a topographic high of 
+about +110 feet MSL at SMH G-7 near Kamehameha Highway. 
+3.3 
+Subsurface Characteristics 
+In general, we anticipate encountering four main stratigraphic units along the two 
+alignments selected for the Waiawa Ridge Route Study. The stratigraphic units consist of soil and 
+rock materials of varying character and engineering properties. The four main stratigraphic units 
+are listed below in the general order of geologic age, beginning with the youngest unit and ending 
+with the oldest unit: 
+1. 
+Recent Fill (Rf) 
+2. 
+Recent Alluvium (Ra) 
+DRAFT #2 Prelim. Geotech. Engineering Report - 09/10/2021
+SECTION 3. SITE CHARACTERIZATION  
+W.O. 8072-00 
+GEOLABS, INC. 
+Page 8 
+Hawaii  California 
+3. 
+Older Alluvium (Qa) 
+4. 
+Tertiary Koolau Basalt (Tkb) 
+The following subsections briefly describe the general characteristics of each of the above 
+stratigraphic units based on our literature research and experience with similar materials. The 
+approximate delineation of some of these stratigraphic units at or near the ground surface of the 
+project vicinity is presented on the Geology Map (Plate 6). 
+3.3.1 Recent Fill (Rf) 
+This stratigraphic unit represents low-lying areas that were filled during urbanization. The 
+majority of these low-lying areas is underlain by recent alluvium at relatively shallow 
+depths that were originally marsh areas. Some of the filled lands along the sewer 
+alignment are underlain by older alluvial soil deposits. In areas underlain by the recent 
+alluvium, the fill materials generally consist of clayey silts and silty clays with stiff to hard 
+consistencies. The fills only form a thin crust over the soft recent alluvial soils. 
+The quality and composition of the fill materials are variable. These fills were frequently 
+placed without proper compaction control. Therefore, it is difficult to make any general 
+statement regarding their engineering properties or construction in these areas. 
+3.3.2 Recent Alluvium (Ra) 
+These soils generally are the result of sedimentation in a very low energy environment, 
+such as an estuary or bay. Frequently, the soils assigned to this unit accumulated very 
+rapidly underwater and might not have been exposed to air. Therefore, there is a 
+tendency to encounter under-consolidated (OCR [Over Consolidation Ratio] < 1.0) 
+sediments, which settle under the weight of minimal overburden or structural loading. 
+Recent alluvium generally is found within some stream channels and bordering some 
+stream banks, at the mouths (outlets) of streams, and within broad valley floors and basin 
+features surrounded by hills. These soils also may be found in proximity to the swamp and 
+tidal flat environments. The soils assigned to this unit generally are considered to have 
+low in-situ permeability and have low strength characteristics and the tendency for 
+DRAFT #2 Prelim. Geotech. Engineering Report - 09/10/2021
+SECTION 3. SITE CHARACTERIZATION  
+W.O. 8072-00 
+GEOLABS, INC. 
+Page 9 
+Hawaii  California 
+excessive settlement to occur in structures overlying soils of this unit. The following 
+subunits are used in this preliminary geotechnical engineering report, where applicable. 
+Recent Alluvium 
+This subunit generally consists of tan to brown silty clays with varying amounts of 
+sands and infrequent pockets of gravel and cobbles. The consistency is generally 
+in the range of very soft to medium stiff. 
+Lagoonal Deposit 
+This subunit generally consists of light gray to medium gray sandy silts or silty 
+sands in a very soft to soft consistency and/or very loose to loose relative density. 
+Gravel-sized fragments are rare. Frequently, the silts are organic in origin and may 
+have a mild to strong organic odor. 
+Marsh Deposit 
+This subunit generally consists of dark gray and brown silts and clays with fibrous 
+organic materials in a very soft to soft consistency. This soil unit contains traces of 
+fine to medium grained sands. They are characterized by a moderate to strong 
+organic odor and may contain small fragile mollusk shells. 
+3.3.3 Older Alluvium (Qa) 
+Older alluvial deposits are generally very stiff to hard silty and clayey soils that were 
+originally deposited in alluvial environments, buried over long periods of time by more 
+recent deposits to become consolidated, and then subsequently uncovered at the ground 
+surface by erosion or other geologic processes. This unit generally overlies the Koolau 
+Basalt and consists of terrigenous sediments, which have been transported by stream 
+action from the upper reaches of the streams.  
+Gravel lenses representing buried stream channels sometimes are encountered. Portions 
+of the Older Alluvium unit may contain some weathered basaltic cobbles and boulders. 
+These coarse-grained parts of the unit also may contain artesian groundwater from the 
+basal freshwater system or as a sub-aquifer. The deposits may resemble saprolite soil 
+DRAFT #2 Prelim. Geotech. Engineering Report - 09/10/2021
+SECTION 3. SITE CHARACTERIZATION  
+W.O. 8072-00 
+GEOLABS, INC. 
+Page 10 
+Hawaii  California 
+deposits, but they are clearly differentiable by the layered characteristics. Frequently, 
+these materials show a moderate to high shrink/swell potential when subjected to 
+fluctuations in moisture. The following subunits are used in this preliminary geotechnical 
+engineering report, where applicable. 
+Older Alluvium 
+This subunit generally consists of tan to brown silty clays with varying amounts of 
+sands and infrequent pockets of gravel and cobbles. The consistency is generally 
+in the range of very stiff to hard.  
+Old Lagoonal Deposit 
+This subunit generally consists of light gray to medium gray sandy silts or silty 
+sands in stiff to very stiff consistency and/or medium dense to dense relative 
+density with various degrees of cementation. In some cases, strongly cemented 
+deposits form siltstones. Gravel sized fragments are rare. Frequently, the silts are 
+organic in origin and may have a mild to strong organic odor. 
+3.3.4 Tertiary Koolau Basalt (Tkb) 
+Koolau Basalt is the oldest geologic unit along the two route alternatives. Generally, it 
+consists of a’a and pahoehoe flows of basaltic lavas and may have a mantle of cobbles 
+and boulders, or residual soils, overlying the top of the basalt formation. In addition, it is 
+anticipated that various types of volcanic rock subcomponents, such as clinker layers and 
+lava tubes, also may be encountered within the basalt formation. The following subunits 
+are used in this preliminary geotechnical engineering report, where applicable. 
+Residual Soil 
+This subunit consists of soils produced from the in-situ chemical weathering of the 
+basic rock originating from Koolau Basalt. These soils generally consist of stiff to 
+very stiff, brownish red or reddish brown clayey silts and silty clays. The soils are 
+usually “structureless” and may have a blocky texture. 
+DRAFT #2 Prelim. Geotech. Engineering Report - 09/10/2021
+SECTION 3. SITE CHARACTERIZATION  
+W.O. 8072-00 
+GEOLABS, INC. 
+Page 11 
+Hawaii  California 
+Saprolite 
+Saprolite essentially is derived from the tropical weathering of volcanic 
+formations, which may contain intrusive rock bodies of variable composition, such 
+as basalt, andesite, etc. Saprolite is a form of residual soil that exhibits a relict 
+structure from the parent rock. Structural features, such as vesicles and joints, are 
+visible in saprolite. This subunit consists of predominantly clayey silt and silty clay 
+soils containing variations in color with varying degrees of mottling. 
+Clinker 
+Clinker is the fragmental basalt found on the top, and sometimes at the bottom, 
+of a’a lava flows. Clinker generally is gravel to cobble-sized fragments of 
+scoriaceous rock in a tightly packed but open-graded structure. 
+Basalt Formation 
+This subunit is used to designate the in-situ lava formation. This subunit occurs as 
+red, brown, or gray, severely fractured to massive, medium hard to very hard rock 
+formation. 
+3.3.5 Groundwater 
+In general, the groundwater level along the two proposed sewer alignments occurs as a 
+basal water table at or near sea level, typically ranging from about -1 to +2 feet MSL with 
+occasional fluctuations to +3 feet MSL due to extreme high tide conditions. This 
+groundwater is usually brackish or saline. In some isolated areas, perched groundwater 
+and/or subartesian groundwater may be encountered. It should be noted that portions 
+of the alignments may be located within the Pearl Harbor artesian aquifer basins. The 
+potentiometric head of this aquifer varies spatially, temporarily and in response to 
+pumpage. 
+Due to the proximity of portions of the proposed alignments to the Pearl Harbor West 
+Loch and the Pacific Ocean, groundwater levels also can fluctuate depending on tidal 
+fluctuations, storm surge conditions, seasonal precipitation, surface water runoff, 
+groundwater withdrawal and/or injection, and other factors. 
+DRAFT #2 Prelim. Geotech. Engineering Report - 09/10/2021
+SECTION 3. SITE CHARACTERIZATION  
+W.O. 8072-00 
+GEOLABS, INC. 
+Page 12 
+Hawaii  California 
+3.3.6 Groundwater Level Rise due to Sea Level Rise 
+Global mean sea level is expected to rise a few feet above the Year 2000 level by the Year 
+2100. Based on City and County of Honolulu (CCH) guidance and directive, sea level rise 
+of about 3.2 feet by mid-century (Year 2050) and 6 feet by the Year 2100 should be 
+accounted for in the wastewater infrastructure design. Both flood elevation and high 
+groundwater will be impacted by sea level rise. The addition of 3.2 and 6 feet to the 
+present high groundwater elevation of about +3 feet MSL will result in a mid-century 
+(Year 2050) design elevation of +6.2 feet MSL and Year 2100 design elevation of +9 feet 
+MSL, respectively. 
+END OF SITE CHARACTERIZATION 
+DRAFT #2 Prelim. Geotech. Engineering Report - 09/10/2021
+W.O. 8072-00 
+GEOLABS, INC. 
+Page 13 
+Hawaii • California 
+SECTION 4.  
+MICROTUNNELING/DEEP TUNNEL BORING 
+Microtunneling/deep tunnel boring is a trenchless process for installing underground 
+pipelines, ducts, culverts, and utilities. The technique involves the use of powerful hydraulic jacks 
+that push or jack successive pipe sections through the ground behind a remotely controlled 
+excavating unit or cutting disk head at the same time as the excavation is taking place within the 
+excavating unit. The following sections briefly describe the advantages and methods of 
+construction for microtunneling/deep tunneling boring. 
+4.1 
+Major Advantages or Benefits 
+In general, the use of microtunneling/deep tunnel boring techniques may offer the 
+following major advantages or benefits as compared to the conventional open trench 
+construction method. 
+1. 
+Reduced disturbance and potential damage to adjacent utilities, existing roads, 
+and surrounding structures 
+2. 
+Improved public and job site safety 
+3. 
+Reduced surface disruption to vehicular and pedestrian traffic 
+4. 
+Reduced disturbance to local residents and businesses 
+5. 
+Reduced air and noise pollution and vibration 
+6. 
+Greater flexibility in alignment selection and reduced need for utility relocations 
+7. 
+Reduced extensive shoring system 
+8. 
+Reduced need for significant dewatering 
+9. 
+Smaller volumes of spoils that require transportation and disposal 
+10. 
+Reduced potential for treatment of contaminated soil and groundwater 
+4.2 
+Construction Methodology 
+In general, tunneling methods would depend on the stability of the ground. Where 
+unstable conditions are likely to be encountered, the face of the tunnel must be made stable to 
+prevent ground loss and to enable mining to take place safely. This may be achieved by the 
+following methods: 
+DRAFT #2 Prelim. Geotech. Engineering Report - 09/10/2021
+SECTION 4. MICROTUNNELING/DEEP TUNNEL BORING 
+W.O. 8072-00 
+GEOLABS, INC. 
+Page 14 
+Hawaii  California 
+1. 
+Dewatering by well points or deep wells; 
+2. 
+Grouting by the use of cement, cement/bentonite, or chemicals; 
+3. 
+Ground freezing; and 
+4. 
+Using specialized tunneling methods such as the following: 
+a. 
+Compressed air; 
+b. 
+Full face earth pressure balancing machines; or 
+c. 
+Slurry/soft ground tunnel boring machines. 
+The choice of process is a function of the nature of the ground, the water content, and in 
+particular the particle size analysis of the subsoils encountered. In soft clay or saturated sand 
+deposits such as those anticipated along localized areas of the sewer alignments, pressurized face 
+microtunneling/deep tunnel boring equipment may be used to install the pipeline without 
+excessive loss of ground and significant surface settlement. 
+In order to install a pipeline using this technique, jacking and receiving pits will need to 
+be constructed. A concrete thrust block, constructed behind the jacking frame within the jacking 
+pit, provides the reaction to the hydraulic jacks. In weak/poor ground conditions, piling or other 
+arrangements, such as ground improvement technique using jet grouting, may need to be 
+employed to increase the reaction capability of the thrust block. The hydraulic jacks, pressing 
+against the back of the pipeline, advance the disk cutting head into the soil formation. To ensure 
+that the jacking forces are distributed around the circumference of a pipe being jacked, a thrust 
+ring is normally provided with the design depending on the number of jacks being used. The jacks 
+are interconnected hydraulically to ensure that the thrust from each jack is the same. The number 
+of jacks used may vary depending on the pipe size, the strength of the jacking pipes, the length 
+to be installed, and the anticipated frictional resistance. 
+The disk cutting head of the microtunneling or deep tunnel boring machine is controlled 
+via cables from a cabin on the surface where the operator monitors speed, pressure, and 
+tunneling accuracy. At the face of the tunnel, a rotating cutter head digs into the soil and rock 
+and mixes it with groundwater and water pumped from the surface. Rocky material is reduced 
+to a maximum ¾-inch size in a crushing chamber located directly behind the cutter disk. The 
+DRAFT #2 Prelim. Geotech. Engineering Report - 09/10/2021
+SECTION 4. MICROTUNNELING/DEEP TUNNEL BORING 
+W.O. 8072-00 
+GEOLABS, INC. 
+Page 15 
+Hawaii  California 
+excavated material is pumped out of the tunnel as slurry. The water introduced into the machine 
+is matched in pressure and volume to the material being displaced. This prevents over-excavation 
+of the tunnel face, thereby reducing the potential for cave-in of the soil surrounding the new 
+piping. 
+The cutting disk speed and direction of rotation, the hydraulic jacking system, as well as 
+the slurry system operations, can be controlled from one control panel located remotely at the 
+launch pit. The hydraulic steering cylinders located on the disk cutting head can be extended to 
+steer the head back on course should any deviation be detected. A laser guidance system 
+provides information, such as length of drive, vertical and horizontal heading, vertical, horizontal 
+and roll deviation from the programmed course, and steering cylinder status data, on a near-
+continuous basis so that adjustments can be made continuously to keep the disk cutting head-on 
+course. 
+General discussions pertaining to the microtunneling/deep tunnel boring technique are 
+presented in the following sections of this report. It should be noted that a design-level 
+geotechnical exploration program should be conducted to confirm and/or modify the preliminary 
+discussions presented herein and to formulate detailed recommendations in support of the 
+proposed microtunneling/deep tunnel boring project. 
+4.3 
+Anticipated Tunneling Condition 
+Site exploration in evaluating the subsurface conditions are important in assessing the 
+feasibility of microtunneling/deep tunnel boring techniques and in determining appropriate 
+construction methods. For the design and cost estimation pertaining to microtunneling/deep 
+tunnel boring, special attention should be given to the characteristics of the soils and rock likely 
+to be encountered together with details of the water table, such as its rate of inflow and any tidal 
+fluctuation or seasonal changes. There are several important factors relating to the soil/rock 
+conditions that may significantly influence project feasibility, construction planning, and 
+associated construction costs. These generally include face or heading stability, settlement 
+potential and magnitudes, friction along the pipeline, allowable passive pressures for providing 
+DRAFT #2 Prelim. Geotech. Engineering Report - 09/10/2021
+SECTION 4. MICROTUNNELING/DEEP TUNNEL BORING 
+W.O. 8072-00 
+GEOLABS, INC. 
+Page 16 
+Hawaii  California 
+thrust block resistance, groundwater control, muck characteristics and any special disposal 
+requirements. 
+It should be noted that the majority of the available boring data did not extend down to 
+the design invert elevations of the proposed sewer alignments. Therefore, the anticipated 
+tunneling conditions discussed below may need to be modified upon completion of a design-level 
+geotechnical exploration program. 
+Based on the anticipated subsurface conditions and the proposed depths of the sewer 
+alignments, it is anticipated that the microtunneling/deep tunnel boring alignments will run into 
+and out of the soft recent alluvial deposits, stiff older alluvial deposits, and hard basalt rock 
+formation as shown on the Site Plans & Profiles (Plates 3.1 through 3.6 and Plates 5.1 through 
+5.4). Due to the appreciable difference in the consistency/hardness of the various soil deposits 
+and rock formation, there may be a potential for deviation of the microtunneling or deep tunnel 
+boring machine from the planned lines and grades. Therefore, special attention should be given 
+and adjustments should be made continuously during microtunneling/deep tunnel boring to 
+keep the disk cutting head-on course. 
+Based on the anticipated subsurface conditions from the available boring data, we 
+envision that some portions of the proposed sewer alignments likely are underlain by recent 
+alluvial deposits consisting of dark gray, soft to very soft clayey silts with organic matter. Based 
+on the available boring data, relatively low blow counts (penetration resistance) on the order of 
+about one blow per 18 inches were obtained in driving a 3-inch O.D. Modified California sampler 
+with a 140-pound hammer falling 30 inches near the sewer invert elevations where the soft to 
+very soft lagoonal/marsh deposits were encountered. It should be noted that some localized 
+areas exhibit penetration resistance merely with the weight of the drill rods or with the weight 
+of the hammer only.   
+Due to the soft to very soft consistency of the recent alluvial deposits anticipated in 
+localized areas, there exists the potential for deviation of the microtunneling boring machine 
+(MTBM) from the planned lines and grades. Past microtunneling projects in similar soft soil 
+conditions have shown that the head of the MTBM sunk faster when the cutting head was rotated 
+DRAFT #2 Prelim. Geotech. Engineering Report - 09/10/2021
+SECTION 4. MICROTUNNELING/DEEP TUNNEL BORING 
+W.O. 8072-00 
+GEOLABS, INC. 
+Page 17 
+Hawaii  California 
+and the slurry systems were in operation. The very soft and submerged clayey silt soils were semi-
+liquefied, and, therefore, failed to support the front portion of the MTBM (the weight of the 
+MTBM was more concentrated at the front where the articulated head steers the MTBM was 
+located). Because of the potential for deviations from the stringent lines and grades for the sewer 
+alignments due to the soft ground conditions, we envision that the in-situ soft lagoonal/marsh 
+deposits around the sewer pipes may need to be improved with ground improvement 
+techniques, such as jet grouting, prior to the microtunneling process. 
+Based on the available boring data, we envision that a significant portion of Alignment A 
+along Kamehameha Highway and a portion of Alignment G along Waihona Street likely will 
+encounter hard basalt rock formation at the invert elevations of the sewer lines. The limits and 
+hardness of the basalt rock formation along the selected sewer line alignment should be further 
+evaluated after completion of the design-level geotechnical exploration program. 
+Groundwater levels are anticipated to be up to about Elevation +9 feet MSL, which 
+corresponds to approximately 20 to 30 feet of water head above the crown of certain segments 
+of the proposed sewer pipes. Localized subsurface conditions, which consist of clayey silt soils 
+under a soft and saturated state, indicate the potential for difficult tunneling conditions. The 
+contractor should carefully consider the expected subsurface conditions when selecting 
+appropriate equipment and methods for tunnel and shaft construction. 
+Another important consideration for pipe jacking is the amount of friction generated 
+when the pipe is pushed into the ground. This friction contributes to the jacking resistance and 
+is a major factor in determining the required capacity of the main thrust jacks. The magnitude of 
+the pipe friction depends on the pipe material, type of soil, its moisture content and the depth 
+of cover, as well as the details of the construction equipment and actual construction procedures 
+employed. Factors such as the amount of overcutting by the shield, misalignment of the pipes, 
+excavation methods, duration of work stoppages, and whether or not a bentonite injection 
+system is used will also affect the amount of friction developed along the pipes. This factor should 
+be further evaluated when the subsurface soil profile is better delineated upon completion of 
+the design-level geotechnical exploration program. 
+DRAFT #2 Prelim. Geotech. Engineering Report - 09/10/2021
+SECTION 4. MICROTUNNELING/DEEP TUNNEL BORING 
+W.O. 8072-00 
+GEOLABS, INC. 
+Page 18 
+Hawaii  California 
+4.4 
+Ground Behavior 
+Ground behavior for soft ground tunneling may be described according to six categories, 
+as summarized on Plate 7, Categories of Ground Conditions for Soft Ground Tunnels. Coarse-
+grained, granular cohesionless or predominantly sandy soils can be characterized as firm, 
+running, or flowing ground depending on the degree of cementation and on the groundwater 
+conditions. Above the groundwater level, these soils will not stand unsupported but tend to ravel 
+or run until a stable slope is formed that buttresses the tunnel face. If there are sufficient fines 
+present to give the soil some apparent cohesion, these soils may be able to stand unsupported 
+in the heading for short periods of time. Below the groundwater level, these soils may be flowing 
+ground unless the cohesion or cementation of the soil is high enough to resist the seepage forces.  
+Both running or flowing ground behavior indicates potentially unstable ground conditions with 
+low stand uptime. 
+An assessment of the ground conditions likely to be encountered along the 
+microtunneling/deep tunnel boring excavations should be conducted to evaluate the stability of 
+the excavations and to provide information on the selection of appropriate equipment and 
+methods for the tunnel and shaft construction. Based on our review of the subsurface conditions 
+anticipated along the proposed microtunneling/deep tunnel boring alignment, the significant 
+geotechnical engineering consideration is the presence of soft clayey silt soils at about the pipe 
+invert elevations along localized areas of the proposed sewer alignments. Under such conditions, 
+significant loss of ground due to flowing or squeezing ground behavior may occur at the heading 
+resulting in potential surface settlement unless the soils are stabilized or an appropriate 
+tunneling method is used. Therefore, the tunneling method selected should provide a face 
+support pressure high enough to resist the hydrostatic head associated with groundwater levels. 
+Special attention should also be given to the vertical and lateral extents and hardness of the 
+basalt rock formation anticipated along a significant portion of the sewer alignments. 
+4.5 
+Groundwater Control 
+As mentioned above, groundwater level may be anticipated at about Elevations -1 foot to 
++3 feet MSL. These depths correspond to approximately 20 to 30 feet of water above the crown 
+of certain segments of the proposed sewer pipes. The microtunneling/deep tunnel boring system 
+DRAFT #2 Prelim. Geotech. Engineering Report - 09/10/2021
+SECTION 4. MICROTUNNELING/DEEP TUNNEL BORING 
+W.O. 8072-00 
+GEOLABS, INC. 
+Page 19 
+Hawaii  California 
+must be capable of working under such hydrostatic head. Based on the groundwater levels 
+anticipated and the nature of the soils to be encountered during the tunnel excavations, positive 
+measures of groundwater control will be required for the excavation work. The applicability of 
+several methods of groundwater control is discussed below. 
+The available methods of groundwater control may include the following:  
+1. 
+predrainage or dewatering using a pumping well system,  
+2. 
+ground freezing methods, 
+3. 
+cement or chemical grouting, and 
+4. 
+balancing the hydrostatic pressure using compressed air or pressurized face 
+tunneling equipment. 
+Predrainage methods utilizing dewatering systems may cause consolidation of the 
+compressible deposits leading to significant settlement of the ground surface and is not 
+recommended. Surface constraints also could make it difficult to install the wells at the required 
+close spacing. Ground freezing, although technically feasible, would probably be very expensive 
+and less effective in the State of Hawaii. Compressed air tunneling techniques would be more 
+expensive than other options due to the high labor costs associated with compressed air working 
+environment. Cement or chemical grouting methods may be feasible depending on the 
+percentage of fines in the lagoonal/marsh deposits that may affect grout permeation. Pressurized 
+face tunneling equipment such as slurry shields can provide comparable face support to 
+compressed air, but more safely and less costly.  
+Therefore, the use of a pressurized, close face tunneling shield should be considered for 
+the subject project based on the anticipated subsurface conditions along the proposed gravity 
+sewer tunnel alignment. A tunneling shield with a pressurized face capability could be well-suited 
+for this project because it can control both flowing and squeezing ground without the need for 
+dewatering along the tunnel alignment. Face stability can be maintained by applying positive 
+pressure to the tunnel face using a recirculating slurry to balance soil and groundwater pressures, 
+thus minimizing surface settlement and potential damage to adjacent structures and utilities that 
+could result from dewatering and tunneling operations. 
+DRAFT #2 Prelim. Geotech. Engineering Report - 09/10/2021
+SECTION 4. MICROTUNNELING/DEEP TUNNEL BORING 
+W.O. 8072-00 
+GEOLABS, INC. 
+Page 20 
+Hawaii  California 
+Groundwater control also will be required to construct the shaft excavations at the jacking 
+and receiving pits. We envision that precast concrete caissons bearing on a tremie concrete plug 
+may be used for construction of the jacking/receiving pits where soft ground and shallow 
+groundwater conditions are encountered. Care should be exercised during the caisson excavation 
+to provide a properly constructed shaft with tight contact between the caissons and the 
+surrounding soils to reduce the potential for surface settlement. Positive groundwater control 
+measures should be provided where tunneling operations break out of or into the shafts. 
+If a groundwater cut-off system is utilized, the area where the cut-off is breached will 
+require groundwater control to prevent groundwater inflows, loss of ground, surface settlement, 
+and excavation instability. Alternatively, interlocking sheet piles may be considered as a 
+groundwater cut-off at the jacking/receiving pits. However, sumps will be needed to collect water 
+that percolates up into the base of the shaft or infiltrates through the sheet piles. In addition, the 
+sheet piles would need to be driven to a sufficient depth to reduce the potential for areal ground 
+subsidence and to reduce the amount of dewatering within the excavations due to the potential 
+for high permeability of the subsoils. 
+4.6 
+Settlement Due to Tunneling Operations 
+Surface settlement is usually considered to be the primary source of damage to adjacent 
+streets, 
+utilities, 
+and 
+other 
+surface 
+facilities 
+during 
+tunneling 
+operations. 
+For 
+microtunneling/deep tunnel boring techniques, loss of ground is generally associated with soil 
+flowing or squeezing into the heading, losses due to overcutting by the shield, shield steering 
+adjustments, and from construction dewatering. 
+Minor ground losses during the advance of the heading are unavoidable with normal 
+construction techniques, and the actual magnitudes of these losses are largely dependent on the 
+type of ground, groundwater conditions, overload factor (in cohesive soils), size and depth of the 
+tunnel, and the skill of the operator in steering the shield or machine. Use of an interlocking sheet 
+piling shoring support system (with dewatering) or precast concrete caissons with tremie 
+concrete plugs is relatively watertight, which should allow the groundwater levels outside the 
+DRAFT #2 Prelim. Geotech. Engineering Report - 09/10/2021
+SECTION 4. MICROTUNNELING/DEEP TUNNEL BORING 
+W.O. 8072-00 
+GEOLABS, INC. 
+Page 21 
+Hawaii  California 
+shafts to be maintained close to the original preconstruction levels. Therefore, dewatering at the 
+jacking and receiving pit locations should not cause significant settlement. 
+Empirical methods have been developed for estimating surface settlement due to soft 
+ground tunneling by the study of observed settlements on past projects. The typical settlement 
+pattern that develops above a soft ground tunnel is a trough-shaped depression resembling an 
+inverted normal probability curve with the maximum settlement occurring above the tunnel 
+centerline. The behavior of the ground is also influenced by the cover above the tunnel. When 
+the cover is greater than about two tunnel diameters, arching develops in the ground above the 
+tunnel reducing the potential for significant ground movement and surface settlement. It is 
+imperative that pressurized, close face tunneling equipment is utilized, such equipment is 
+operated properly, and that appropriate construction procedures are used to minimize loss of 
+ground. Depending on the actual construction procedures and workmanship of the contractor, 
+larger surface settlement may occur, particularly if the loss of ground is not monitored and 
+carefully controlled as the tunnel is excavated.  
+The available boring data suggest that some portions of the sewer pipe inverts are likely 
+underlain by soft organic clayey silt soils along localized areas of the proposed alignments. 
+Although the heavier in-situ soils will be replaced by the lighter sewer pipes, resulting in a net 
+decrease of downward pressure on the underlying subsoils, we believe that some amount of 
+sewer pipe settlement may occur during installation due to the relatively soft consistency of the 
+lagoonal/marsh deposits underlying the sewer line invert. Due to the stringent lines and grades 
+required for the sewer alignments, the potential for minor settlements of the sewer pipe due to 
+installation is likely not acceptable. Therefore, some type of ground stabilization measure, such 
+as cement or chemical grouting (jet grouting), should be implemented in order to reduce the 
+potential for settlement of the installed sewer pipes. 
+4.7 
+Jacking/Receiving Pits 
+As mentioned above, portions of the proposed sewer alignments are likely underlain by 
+soft to very soft lagoonal/marsh deposits extending to the pipe invert elevations. Shallow 
+groundwater conditions between depths of about 5 to 10 feet below the surface are anticipated 
+DRAFT #2 Prelim. Geotech. Engineering Report - 09/10/2021
+SECTION 4. MICROTUNNELING/DEEP TUNNEL BORING 
+W.O. 8072-00 
+GEOLABS, INC. 
+Page 22 
+Hawaii  California 
+along these portions of the sewer alignments. Based on the soft ground and shallow groundwater 
+conditions, we envision that it would be difficult and costly to construct some of the 
+jacking/receiving pits for the project. 
+4.7.1 Excavation Method 
+It is anticipated that conventional earthmoving equipment may be used to excavate the 
+shaft pits based on the subsurface conditions encountered. However, it should be noted 
+that existing abandoned underground utilities and other below-grade concrete structures 
+may exist at the site that would require heavy equipment for excavation. The method and 
+equipment to be used for excavation should be determined by the contractor, subject to 
+practical limits and safety considerations. The excavated soils should not be stockpiled 
+closer than a horizontal distance equal to the depth of the excavation from the edge of 
+the excavation in order to reduce the potential for ground movement. 
+4.7.2 Excavation Support 
+Based on the anticipated soft soil and relatively shallow groundwater conditions along 
+localized areas of the sewer alignments, shoring and dewatering of the jacking/receiving 
+pits in these areas would be very costly.  Therefore, we envision that the jacking/receiving 
+pits may be constructed by sinking precast concrete caissons into the soft soil deposits. 
+Care should be exercised during the installation of these precast concrete caissons to 
+provide a properly constructed shaft with tight contact between the caissons and the 
+surrounding soils to provide full load transfer at the sides. 
+Alternatively, temporary shoring of the jacking/receiving pits using sheet pile shoring, 
+especially where dewatering of the pits will be necessary, may be considered. The use of 
+sheet pile shoring will need to consider the depth to competent soils, which could be over 
+100 feet below the existing ground surface.  In addition, it should be noted that the 
+proposed sewer alignments may likely traverse other utility lines. Therefore, care should 
+be exercised to avoid truncating the existing utility lines if sheet piles are to be used as 
+shoring.  If sheet pile shoring is used, it would also serve as a cut-off wall for the 
+dewatering operations.  Therefore, the sheet piles should be driven to a sufficient depth 
+DRAFT #2 Prelim. Geotech. Engineering Report - 09/10/2021
+SECTION 4. MICROTUNNELING/DEEP TUNNEL BORING 
+W.O. 8072-00 
+GEOLABS, INC. 
+Page 23 
+Hawaii  California 
+to reduce the potential for areal ground subsidence and to reduce the amount of 
+dewatering within the excavations depending on the permeability of the subsoils. A 
+minimum factor of safety of 1.5 should be provided in evaluating the sliding stability and 
+bottom heave of the excavation. 
+4.7.3 Thrust Block Resistance 
+Thrust block provides the reaction for the main jacks when pushing the pipe forward. The 
+allowable passive resistance of the soil, which is a function of the strength of the soil, will 
+control the thrust resistance that can be developed.  It may seem reasonable to allow the 
+thrust block to develop the full passive resistance because this is a temporary 
+construction loading condition.  However, it must be recognized that relatively large 
+strains are required to develop the full maximum passive resistance. At jacking loads that 
+impose stresses approaching the maximum passive resistance, there will be large 
+movements of the thrust block in response to the strains required to develop full passive 
+resistance. These movements may result in damage to buried utilities or other facilities 
+behind the thrust block. 
+In addition, large movements of the thrust block are not desirable for pipe jacking because 
+the movements are usually not uniform, and it becomes difficult to maintain the thrust 
+block perpendicular to the pipe alignment. If the thrust block does not remain square, the 
+force applied to the pipe may not be uniform, resulting in eccentric loading, which could 
+damage the pipe. The design of the thrust block for this project should take into 
+consideration the presence of soft soils adjacent to the shaft excavations. These soft soil 
+deposits may limit the jacking forces that can be mobilized unless a rigid reinforced 
+concrete thrust block is constructed to distribute the jacking forces over a large enough 
+area to avoid overstressing these soils.   
+Movements of the thrust block can also be controlled by limiting the allowable passive 
+resistance to about one-half of the maximum passive resistance.  This corresponds to a 
+much lower level of strain and smaller soil movements. If the project requires higher 
+jacking forces than can be safely transferred to the soil mass behind the thrust block, then 
+DRAFT #2 Prelim. Geotech. Engineering Report - 09/10/2021
+SECTION 4. MICROTUNNELING/DEEP TUNNEL BORING 
+W.O. 8072-00 
+GEOLABS, INC. 
+Page 24 
+Hawaii  California 
+the soil should be improved or stabilized.  Based on the anticipated soft soil conditions at 
+the depths of the thrust blocks in localized areas, we believe the soft soils would not be 
+able to provide adequate passive resistance to the jacking forces. Therefore, we envision 
+the soft ground conditions behind the thrust blocks would need to be improved with jet 
+grouting where encountered.  
+4.7.4 Backfilling of Jacking/Receiving Pits 
+We envision that the jacking/receiving pits may be backfilled with the natural 
+groundwater level within the pit. If backfilling below the groundwater level is necessary, 
+we recommend using No. 2 Rock (ASTM C33, No. 4 gradation) from the bottom of the 
+jacking/receiving pits up to an elevation of about +2 feet MSL. The first 12 inches of 
+backfill above the No. 2 rock should consist of No. 3B Fine gravel (ASTM C 33, No. 67 
+gradation). After placement of the No. 3B Fine gravel, a layer of filter fabric, such as Mirafi 
+180N or equivalent, should be placed above the No. 3B Fine gravel prior to placement of 
+soil backfill to reduce the potential for migration of fines into the underlying open-graded 
+gravel fill.  
+The excavated on-site soils, excluding soft clays and/or particles exceeding 3 inches in the 
+largest dimension, may be used as backfill above the filter fabric up to about 2 feet below 
+the pavement subgrade elevation. The backfill should be placed in thin lifts (normally 
+8 inches in loose lift thickness) with each lift mechanically compacted to a minimum of 
+90 percent relative compaction. Relative compaction refers to the in-place dry density of 
+soil expressed as a percentage of the maximum dry density of the same soil established 
+in accordance with ASTM D1557. Optimum moisture is the water content (percentage by 
+dry weight) corresponding to the maximum dry density. The trench backfill from 2 feet 
+below the finished subgrade elevation up to the subgrade elevation should consist of 
+select borrow compacted to no less than 95 percent relative compaction. 
+4.7.5 Other Considerations 
+All excavation, dewatering, and construction works should conform to Federal, State, and 
+other safety requirements. The excavation support and shoring system used must comply 
+DRAFT #2 Prelim. Geotech. Engineering Report - 09/10/2021
+SECTION 4. MICROTUNNELING/DEEP TUNNEL BORING 
+W.O. 8072-00 
+GEOLABS, INC. 
+Page 25 
+Hawaii  California 
+with all applicable safety requirements. It is recommended that the contractor retain a 
+qualified geotechnical engineer to design and evaluate the shoring system used. The 
+adequacy and safety of the shoring installation should be made the sole responsibility of 
+the contractor. The contractor’s representative, who should be required to be 
+continuously present on-site during excavation and construction work, will have the best 
+opportunity to promptly observe any changing conditions during construction, such as 
+unforeseen subsurface conditions, unexpectedly high groundwater table, inappropriate 
+construction sequence or techniques, etc., which may affect shoring stability. 
+Even if good construction procedures are followed, some movement of the shoring 
+system and the adjacent ground may still occur due to changes in earth stresses during 
+excavation. Due to the complexity of the stress changes, it is difficult to estimate the 
+magnitude of ground movement accurately. The magnitude of ground movements also 
+depends greatly upon workmanship, such as how quickly and tightly the shoring supports 
+are installed, the subsoil conditions, the size of the excavation, and the rate of excavation. 
+Therefore, it is important to realize that the excavation shoring should be installed 
+properly and as early as practical, and if necessary, the adjacent ground should be 
+continuously monitored for cracks, dips and/or other indications of movements with 
+instruments. 
+4.8 
+Dewatering 
+Dewatering may be required at the jacking and receiving pits when launching the 
+tunneling machine and advancing into receiving pits. All shafts must include adequate bottom 
+seals to resist the high buoyancy uplift forces and bottom failures. Based on the anticipated 
+depths of the jacking/receiving pits and the relatively shallow groundwater table, dewatering 
+with a cut-off wall and/or tremie concrete plug is recommended. Therefore, we recommend that 
+dewatering provisions be included in the contract documents for the proposed construction. 
+Because the excavation dewatering will involve the discharge of groundwater from the 
+dewatering operation into the adjacent drainage system, a National Pollutant Discharge 
+Elimination System (NPDES) permit will be necessary. The contractor should consult their 
+DRAFT #2 Prelim. Geotech. Engineering Report - 09/10/2021
+SECTION 4. MICROTUNNELING/DEEP TUNNEL BORING 
+W.O. 8072-00 
+GEOLABS, INC. 
+Page 26 
+Hawaii  California 
+independent consultant or the State of Hawaii, Department of Health for the latest regulations 
+and information pertaining to the NPDES permit application. 
+Dewatering for construction is the responsibility of the contractor. The selection of 
+equipment and methods of dewatering should be left up to the contractor, and he/she should 
+be aware that modifications to the dewatering system may be required during construction, 
+depending on the conditions encountered. The dewatering method selected should have 
+minimal impact on the existing groundwater levels surrounding the proposed excavation. 
+Dewatering operations should be performed such that only clear water is pumped. Excessive 
+pumping, which removes soil fines, may result in a "blowing" or heaving of the excavation bottom 
+or sides. 
+It is our opinion that the definition of "Dewatering" in the contract documents should be 
+written to include all works or systems required to lower the natural groundwater table and/or 
+to exclude the water from the excavation to allow construction of the selected sewer alignment 
+under safe and dry conditions. These works or systems may include, but are not limited to, well 
+pumping, grouting, cut-off walls, tremie plugs or any combination of the above and/or other 
+possible methods. 
+It should be noted that the subsoil conditions could vary along the proposed sewer 
+alignments and some of the in-situ soils could be highly permeable. Because some portions of 
+the proposed sewer alignments are located in a developed area, the dewatering operation should 
+be conducted in such a manner that the dewatering will not cause areal ground subsidence, 
+which may cause potential damage to the existing structures and utilities. Therefore, 
+consideration should be given to a dewatering system that includes a cut-off wall and/or tremie 
+concrete plug. 
+4.8.1 Dewatering Considerations 
+We suggest that the following three basic criteria be considered in the selection of a 
+suitable method of dewatering: 
+DRAFT #2 Prelim. Geotech. Engineering Report - 09/10/2021
+SECTION 4. MICROTUNNELING/DEEP TUNNEL BORING 
+W.O. 8072-00 
+GEOLABS, INC. 
+Page 27 
+Hawaii  California 
+a. 
+The dewatering method should result in the least disturbance or damage 
+to existing buildings, roads, and the environment. 
+b. 
+The dewatering method should maintain the stability of and also provide 
+safe and dry working conditions in the excavation. 
+c. 
+The dewatering method should be sufficiently flexible to allow 
+modifications to accommodate various ground conditions. 
+4.8.2 Dewatering Precaution and Monitoring 
+The potential impact of the dewatering system selected on depressing the natural 
+groundwater table must be carefully evaluated by the contractor prior to dewatering. It 
+is recommended that a qualified geotechnical engineer be retained by the contractor to 
+design and evaluate the dewatering system used. 
+The impact and safety of the dewatering operations should be made the sole 
+responsibility of the contractor. The contractor’s qualified representative, who should be 
+required to be continuously present on-site during dewatering activities, will have the 
+best opportunity to promptly observe the effects of dewatering during construction and 
+to implement, as soon as possible, necessary precautionary or remedial measures 
+including, but not limited to, stopping or slowing down the dewatering operations. 
+Where encountered at the bottom of excavations, permeable granular subsoils may be 
+susceptible to piping and "quick" conditions.  The dewatering operations should be 
+carried out without creating a "quick" condition or softening at the excavation bottoms.  
+Therefore, the project dewatering operations should be done without pumping out soil 
+fines (pumping clear water only) and should be coordinated with shoring installation such 
+that the excavation stability is not affected. 
+Any groundwater drawdown outside the excavation will cause settlement resulting from 
+consolidation of the loose compressible soils.  Therefore, the use of a deep well system 
+outside the excavation to draw down the groundwater level should not be allowed. 
+Special caution should also be taken to avoid dewatering utility trenches connected to 
+excavations.  If this occurs, the granular bedding and/or backfill in the utility trenches 
+DRAFT #2 Prelim. Geotech. Engineering Report - 09/10/2021
+SECTION 4. MICROTUNNELING/DEEP TUNNEL BORING 
+W.O. 8072-00 
+GEOLABS, INC. 
+Page 28 
+Hawaii  California 
+could act as subdrains and cause significant areal groundwater drawdown resulting in 
+settlements and potential damage to utility lines and/or other existing adjacent 
+structures. 
+4.9 
+Instrumentation and Monitoring 
+As the project will involve microtunneling/deep tunnel boring in part of a developed 
+urban area, we believe that the importance of construction monitoring, including field 
+observation and engineering supervision, should be emphasized.  The extent of construction 
+monitoring may vary with individual contractors.  However, we believe that the following items 
+of work should be considered. 
+4.9.1 Prior to Microtunneling/Deep Tunnel Boring 
+a. 
+A damage survey of the existing buildings and structures adjacent to the 
+selected sewer alignment should be conducted by the contractor, 
+including photographs and crack surveys, prior to the commencement of 
+construction. 
+b. 
+Inclinometer casings, such as manufactured by the Slope Indicator 
+Company of Seattle, Washington, should be considered in front of critical 
+buildings or structures.  The casings are designed to allow a special 
+instrument to be lowered into the casing to measure the relative lateral 
+movement of the ground at various elevations.  The inclinometer casings 
+should penetrate through the soft lagoonal/marsh deposits into the 
+underlying stiff older alluvial deposits for at least 10 feet in order to 
+establish a reference for movement measurement. 
+c. 
+Settlement points should also be installed (as much as possible in a straight 
+line pattern) on the ground adjacent to the existing structures on both 
+sides of the selected sewer alignment. We recommend installing reference 
+points at approximately 50-foot intervals along the selected sewer 
+alignment. 
+d. 
+Sets of observation wells should be installed perpendicular to and on each 
+side of the selected sewer alignment at selected locations to study the 
+groundwater drawdown effect due to dewatering where groundwater 
+drawdown may be induced. One well of each set should be placed as close 
+to the existing adjacent structures as possible. The observation well sets 
+should be spaced no more than 100 feet apart and in front of existing 
+adjacent structures, which are identified as critical. 
+DRAFT #2 Prelim. Geotech. Engineering Report - 09/10/2021
+SECTION 4. MICROTUNNELING/DEEP TUNNEL BORING 
+W.O. 8072-00 
+GEOLABS, INC. 
+Page 29 
+Hawaii  California 
+4.9.2 During Tunneling and Open Trench Construction 
+a. 
+The contractor’s field engineer should frequently observe the conditions 
+of the existing adjacent structures and pavements for signs of distress and 
+obtain data from the installed field instruments (inclinometer, observation 
+wells, and settlement points) on a regular basis, such as daily or weekly. 
+The recorded data should be immediately reviewed and interpreted, and 
+any unusual findings should be immediately reported to the contractor’s 
+project superintendent who should inform the project geotechnical 
+engineer without delay. 
+b. 
+A qualified geotechnical engineer should be hired by the contractor to see 
+that the following critical items of work are performed properly. 
+i. 
+Steel sheeting and bracing should be installed in a timely fashion 
+during trench shoring operations to reduce the potential for 
+adjacent ground movement. The driving of steel sheet piles should 
+be observed to see that a suitable sheet pile hammer is used and 
+to record blow counts and depths of penetration of the sheeting in 
+order to see that adequate sheet pile embedment has been 
+attained. 
+ii. 
+Dewatering adjacent to trench excavations should not lower the 
+natural groundwater level below the existing adjacent structures 
+excessively and cause damages. 
+iii. 
+Recharging or pumping water back into the ground adjacent to the 
+existing structures should be considered if dewatering of the trench 
+excavations will create an excessive drawdown effect in the 
+vicinity. 
+iv. 
+All trench backfill should be placed, properly compacted, and 
+tested prior to removing of sheeting and shoring within the 
+completed area. 
+4.9.3 Post-Construction Monitoring 
+We suggest that all installed field instruments should be monitored on a weekly basis for 
+a period of two months after the project completion. Monitoring may be terminated if no 
+significant ground movement is detected during the two-month period. 
+END OF MICROTUNNELING/DEEP TUNNEL BORING
+DRAFT #2 Prelim. Geotech. Engineering Report - 09/10/2021
+W.O. 8072-00 
+GEOLABS, INC. 
+Page 30 
+Hawaii • California 
+SECTION 5.  
+OPEN TRENCH (CUT-AND-COVER) 
+We understand that some sections of the sewer lines for Alignment A will be installed 
+using a conventional open trench (cut-and-cover) method. We understand the invert depths of 
+these sections of the new sewer line range from about 15 to 25 feet below the existing ground 
+surface. 
+5.1 
+Earth Pressure Loads on Pipes 
+Loads on buried pipes are influenced by the width of the trench, the size of the pipes, the 
+unit weight of backfill material, and the friction resistance between the backfill material and the 
+trench walls. To calculate the vertical loads on the buried utility pipes, we recommend using an 
+average unit weight of 120 pounds per cubic foot (pcf) for the backfill material and a coefficient 
+of friction of 0.3. Earth forces acting upon the pipe generally increase rapidly with the width of 
+the trench. Therefore, the width of the trench should be kept to a minimum. Traffic loads on the 
+buried pipes should also be considered for the portion of the pipes located in roadway areas. 
+5.2 
+Pipe Bedding 
+In general, the first zone of backfill extending from the bedding material to at least 
+12 inches above the top of the pipes (or groundwater level) should consist of select free-draining 
+granular material (ASTM C33, No. 67 Gradation) to reduce the compaction effort required and 
+resulting stresses on the pipe. In addition, it is critical to use this free-draining material to reduce 
+the potential for the formation of voids below the haunches of pipes and to provide adequate 
+support for the sides of the pipes. Improper trench backfill could result in backfill settlement and 
+pipe damage. 
+We envision that soft lagoonal/marsh deposits will be encountered at or near the invert 
+elevations in localized areas of the selected sewer alignment. Therefore, we recommend 
+providing a subgrade stabilization layer consisting of at least 24 inches of No. 2 Rock (ASTM C33, 
+No. 4 gradation) wrapped in a non-woven filter fabric (Mirafi 180N or equivalent) below the 
+bedding layer for uniform support. The stabilization layer should extend beyond the sides of the 
+DRAFT #2 Prelim. Geotech. Engineering Report - 09/10/2021
+SECTION 5. OPEN TRENCH (CUT-AND-COVER) 
+W.O. 8072-00 
+GEOLABS, INC. 
+Page 31 
+Hawaii  California 
+pipe a minimum width of one-fourth (¼) the outside diameter of the pipe or 12 inches, whichever 
+is greater. 
+The upper portion of the trench backfill from a level of 12 inches above the pipes 
+(or 12 inches above the groundwater level) to the top of the subgrade or finished grade may 
+consist of the excavated granular materials with a maximum particle size of 6 inches or select 
+granular fill materials. The backfill material should be moisture-conditioned to above the 
+optimum moisture content, placed in maximum 8-inch level loose lifts, and mechanically 
+compacted to at least 90 percent relative compaction. In areas where trenches will be in paved 
+areas, the upper 3 feet of the trench backfill below the pavement finished grade should be 
+compacted to no less than 95 percent relative compaction. 
+Precautions should be taken against the occurrence of pipeline floatation before and 
+during trench backfilling due to possible influx of large quantities of groundwater into the 
+trenches. It should be noted that buoyant uplift forces due to groundwater influx may lift empty 
+or even partially filled pipes. 
+5.3 
+Trench Backfill 
+In general, the trench backfill should be placed in accordance with the Standard 
+Specifications for Public Works Construction (1986). The first zone of backfill extending from the 
+bedding material to at least 12 inches above the top of the pipes (or groundwater level) should 
+consist of select free-draining granular material (ASTM C33, No. 67 Gradation) to reduce the 
+compaction effort required and resulting stresses on the pipe. In addition, it is critical to use this 
+free-draining material to reduce the potential for the formation of voids below the haunches of 
+pipes and to provide adequate support for the sides of the pipes. Improper trench backfill could 
+result in backfill settlement and pipe damage. 
+The trench backfill from 12 inches above the top of the pipes (or groundwater level) to 
+finished subgrade may consist of the excavated on-site soils or imported fill materials that are 
+free of deleterious materials, organic material and clay lumps and rock fragments greater than 
+3 inches in maximum dimension. It should be noted that the fill requirements presented herein 
+DRAFT #2 Prelim. Geotech. Engineering Report - 09/10/2021
+SECTION 5. OPEN TRENCH (CUT-AND-COVER) 
+W.O. 8072-00 
+GEOLABS, INC. 
+Page 32 
+Hawaii  California 
+are intended as guidelines only and may be modified based on additional laboratory testing and 
+field observations on the available fill materials. 
+Imported fill materials used for trench backfill should be well-graded from coarse to fine 
+with particles no larger than 3 inches in the largest dimension. The material should have a 
+laboratory California Bearing Ratio (CBR) value of 20 or higher and a swell potential of 1 percent 
+or less when tested in accordance with ASTM D1883. Geolabs should test the imported fill 
+materials for conformance with these recommendations. 
+As an alternative, to facilitate the backfilling and reduce the time required for applying 
+compactive effort, Lightweight Cellular Concrete (LWCC) may be used to backfill the trenches. 
+The LWCC shall be Class III and have an in-place density between 65 and 85 pounds per cubic foot 
+(pcf), and strength between 150 and 250 pounds per square inch (psi). The use of LWCC would 
+also reduce the potential for future settlement of the trench backfill under the repeated wheel 
+loading from traffic on the roadway.  
+5.4 
+Trench Backfill Compaction and Placement Requirements 
+Backfill materials consisting of cohesive soils should be moisture-conditioned to at least 
+2 percent above the optimum moisture, placed in level lifts not exceeding 8 inches in loose 
+thickness, and compacted to a minimum of 90 percent relative compaction. Granular backfill 
+materials should be moisture-conditioned to above the optimum moisture. The upper 3 feet 
+below the finished grade in areas subjected to vehicular traffic should be compacted to a 
+minimum of 95 percent relative compaction.  
+Imported fill materials should be moisture-conditioned to above the optimum moisture, 
+placed in level lifts of about 8 inches in loose thickness, and compacted to a minimum of 
+95 percent compaction. Aggregate base course material should be moisture-conditioned to 
+above the optimum moisture content, placed in level lifts not exceeding 8 inches in loose 
+thickness, and compacted to a minimum of 95 percent relative compaction. Relative compaction 
+refers to the in-place dry density of soil expressed as a percentage of the maximum dry density 
+of the same soil determined in accordance with ASTM D1557. 
+DRAFT #2 Prelim. Geotech. Engineering Report - 09/10/2021
+SECTION 5. OPEN TRENCH (CUT-AND-COVER) 
+W.O. 8072-00 
+GEOLABS, INC. 
+Page 33 
+Hawaii  California 
+Compaction should be accomplished by sheepsfoot rollers, vibratory rollers, or other 
+types of acceptable compaction equipment. Water tamping, jetting, or ponding should not be 
+allowed to compact the excavated on-site fill soils or imported fill materials. 
+Observations and soil density tests should be performed during backfilling to assist the 
+contractor in obtaining the required degree of compaction and the proper moisture content. 
+Where compaction is less than required, additional compactive effort should be applied with 
+adjustment of moisture content, as necessary, to obtain the specified compaction. 
+5.5 
+Settlements 
+The primary settlement of the new waterlines is normally caused by the difference in unit 
+weight of the lighter excavated original earth and the heavier compacted backfill material placed 
+over the pipes. The net increase in loading will cause settlement of the underlying subsoils below 
+the trench invert. Based on our engineering analyses, the primary settlement on the order of less 
+than 0.5 inches is anticipated for the project. 
+The above estimate assumes that proper construction procedures and good workmanship 
+will be engaged during construction. Additional settlement could occur if improper trench 
+support is used. 
+5.6 
+Trench Excavation 
+In general, the contractor should determine the method and equipment to be used for 
+excavation, subject to practical limits and safety considerations. Based on the plan and profile 
+drawings provided, we anticipate that the inverts of the proposed sewer alignments could be 
+over 100 feet below the existing ground surface. Based on the available information, we envision 
+that the majority of the recent alluvium and older alluvium may be excavated with normal heavy 
+excavation equipment, such as a large backhoe excavator. 
+It should be noted that hard basalt rock formation may be encountered within the depths 
+of open trench excavation along Waihona Street for Alignment A. Excavations into the hard basalt 
+rock formation will likely require the use of hoerams and/or chipping. The contractor must 
+DRAFT #2 Prelim. Geotech. Engineering Report - 09/10/2021
+SECTION 5. OPEN TRENCH (CUT-AND-COVER) 
+W.O. 8072-00 
+GEOLABS, INC. 
+Page 34 
+Hawaii  California 
+exercise care to avoid over-ripping, which would disrupt the structure of the basalt formation, 
+resulting in a potential loss of bearing strength for improvements in the vicinity. 
+The above discussions regarding the rippability of the subsurface materials are based on 
+our experience in the project vicinity and the available data and information from our desktop 
+study.  Contractors should be encouraged to examine the site conditions and the subsurface data 
+to make their own reasonable and prudent interpretation. 
+The excavated soils should be stockpiled no closer than a horizontal distance equal to the 
+depth of the excavation measured from the outside edge of the excavation in order to reduce 
+the potential for appreciable ground movement. In addition, the excavated soils should be 
+stockpiled at least 15 feet away from underground utilities to reduce the potential for ground 
+movement or subsidence, which may damage the underground utility lines. 
+5.7 
+Excavation Support 
+We anticipate that excavation depths of up to about 30 feet below the ground surface 
+will be required for the installation of the new sewer alignment.  Where excavations greater than 
+5 feet in depth are planned, temporary shoring or sloping and benching should be used unless 
+stable rock formation is encountered. 
+For excavations into the soft/loose recent alluvium, it is our opinion that trench walls 
+should be cut vertically, requiring the use of shoring during construction. Where space is 
+available, an open-cut excavation with a slope inclination 0.75H:1V may be used for temporary 
+cut slopes into the very stiff to hard older alluvial soils. The hard basalt rock formation anticipated 
+at relatively shallow depths along a portion of Waihona Street may be excavated in a near-vertical 
+cut, if desired. 
+The excavation support and shoring system used must comply with applicable safety 
+requirements. The contractor should be solely responsible for the adequacy and safety of the 
+shoring installation. The contractor’s representative (i.e., competent person) should be on-site 
+at all times during excavation and construction work for the opportunity to promptly observe 
+DRAFT #2 Prelim. Geotech. Engineering Report - 09/10/2021
+SECTION 5. OPEN TRENCH (CUT-AND-COVER) 
+W.O. 8072-00 
+GEOLABS, INC. 
+Page 35 
+Hawaii  California 
+changing or unforeseen conditions, such as high groundwater, inappropriate construction 
+sequence or techniques, etc., which may affect the shoring stability. 
+It is important to install adequate shoring and to maintain it tight against the excavation 
+walls with proper bracing during construction. The properly braced shoring is essential to reduce 
+the potential for appreciable lateral movements of the adjacent ground into the excavation, 
+which may result in potential settlement or distress to adjacent structures or other 
+improvements. 
+It must be noted that some minor movements of the shoring system and the adjacent 
+ground may still occur due to changes in earth stresses during excavation. Due to the complexity 
+of the stress changes, it is difficult to accurately estimate the magnitude of movement. The 
+magnitude also depends greatly upon workmanship, such as how quickly and tightly the shoring 
+and bracing supports are installed, the subsurface conditions, the size of the excavation, and the 
+rate of excavation. 
+It is important to realize that the excavation shoring should be installed properly and as 
+early as practical. The adjacent ground should be continuously monitored for cracks, dips and/or 
+other indications of movements with instruments until the sewer line excavation is finally 
+backfilled. It should be noted that during and after installation of the shoring system, minor 
+settlements may be possible. Therefore, it is recommended that the contractor retains a qualified 
+geotechnical engineer to design and evaluate the shoring system used. 
+5.8 
+Manhole Structures 
+In general, we anticipate that the bottom of the manhole structures will be bearing on a 
+tremie concrete plug over the in-situ soft lagoonal/marsh deposits based on the anticipated 
+subsurface conditions from the available boring information. Based on our engineering analyses, 
+it is our opinion that the net increase in bearing pressure on the underlying soft soil deposits 
+resulting from the manhole construction would be minimal. Settlements on the order of less than 
+1 inch are anticipated for these structures. 
+DRAFT #2 Prelim. Geotech. Engineering Report - 09/10/2021
+SECTION 5. OPEN TRENCH (CUT-AND-COVER) 
+W.O. 8072-00 
+GEOLABS, INC. 
+Page 36 
+Hawaii  California 
+The lateral earth pressures acting on the proposed underground manhole structures will 
+depend on the type of backfill used, the extent of backfill, and the compactive effort on the 
+backfill material around the structures. Therefore, granular material with less than 10 percent 
+passing the No. 200 sieve is recommended for use as backfill around the structures to reduce the 
+compactive effort required, which may cause additional lateral earth pressures. For preliminary 
+design purposes, we recommend designing the new manhole structure for an equivalent fluid 
+pressure of 50 pounds per square foot per foot of depth (pcf) above the groundwater level and 
+85 pcf below the groundwater level. The above values assume that the backfill around the 
+manhole structures is properly placed and compacted. 
+Surcharge stresses due to areal surcharges, traffic loads, line loads, and point loads within 
+a horizontal distance equal to the depth of the structure should be considered in the design. For 
+uniform surcharge stresses imposed on the loaded side of the wall, a rectangular distribution 
+with uniform pressure equal to 45 percent of the vertical surcharge pressure acting over the 
+entire depth of the structure may be used in the design. Additional analyses during design may 
+be needed to evaluate the surcharge effects of point loads and line loads. 
+In order to resist hydrostatic uplift pressures, the dead weight of the structure (including 
+the tremie plug), the expected minimum weight of any contained fluid, and the backfill could be 
+used. If additional resistance is needed, resistance may be developed either from adhesion 
+between the concrete walls and the adjacent soils. A total unit weight of 110 pounds per cubic 
+foot (pcf) and an adhesion value of 100 pounds per square foot (psf) may be used for the 
+preliminary design. 
+END OF OPEN TRENCH (CUT-AND-COVER) 
+DRAFT #2 Prelim. Geotech. Engineering Report - 09/10/2021
+W.O. 8072-00 
+GEOLABS, INC. 
+Page 37 
+Hawaii • California 
+SECTION 6.  
+GEOTECHNICAL EXPLORATION PROGRAM 
+A design-level geotechnical exploration program consisting of the following field and 
+laboratory work components should be conducted in support of the detailed design of the 
+selected sewer alignment for the Waiawa Ridge Route Study project. A brief description of each 
+work component is presented below. 
+6.1 
+Soil Borings, Rock Coring, and Associated Field Testing 
+Based on the length of the proposed sewer alignments, the number of jacking/receiving 
+shafts, and the anticipated subsurface conditions, we believe a geotechnical exploration program 
+consisting of a minimum of 30 and 15 borings should be implemented for Alignments A and G, 
+respectively. Based on the plan and profile drawings provided, we envision that the borings 
+should extend to at least two tunnel diameters below the tunnel invert at the proposed boring 
+locations, which could vary from about 30 to over 100 feet below the existing ground surface. 
+Typically, soil borings should be advanced with 4-inch diameter continuous-flight 
+solid-stem augers (SSA) to the first encounter with groundwater and then continued with PQ-size 
+wireline coring methods to advance the PQ-size casing from the ground surface. In general, auger 
+drilling should be used in areas where stiff to hard cohesive soils (older alluvium) exist and in 
+locations where rock coring is not anticipated. Additionally, SSA drilling should be switched over 
+to the wireline coring method when hard clays, boulders, and/or rock formation are encountered 
+or when soft and/or loose soils that caved in are encountered. 
+Sampling of the soils should be performed at about 5-foot intervals. Drive samples should 
+be obtained using the modified California sampler (ASTM D3550) and the Standard Penetration 
+Test (SPT) split-spoon sampler (ASTM D1586). In the softer soils, relatively “undisturbed” samples 
+should be obtained by driving a ring-lined modified California sampler (ASTM D3550) and/or 
+hydraulically pushing a thin-walled Shelby tube (ASTM D1587) into the soil formation.  
+In-situ testing of the subsurface materials in the borings generally includes the SPT, which 
+is performed in accordance with ASTM D1586. Standard Penetration Test (SPT) sampling provides 
+a measure of the resistance or consistency of the soil and is reported as the uncorrected N-value, 
+DRAFT #2 Prelim. Geotech. Engineering Report - 09/10/2021
+SECTION 6. GEOTECHNICAL EXPLORATION PROGRAM  
+W.O. 8072-00 
+GEOLABS, INC. 
+Page 38 
+Hawaii  California 
+which is defined as the number of blows required to drive a standard split-spoon sampler 
+12 inches with a 140-lb hammer, after 6 inches of initial seating. The penetration resistance of 
+the modified California sampler is generally recorded in a similar manner, and the modified 
+California sampler blows per 12 inches can be approximately related to the SPT N-value through 
+correlation. Rock core recovery (REC) and rock quality designation (RQD) should be measured as 
+described in ASTM D6032 - Standard Test Method for Determining Rock Quality Designation 
+(RQD) of Rock Core. 
+6.2 
+Piezometric Water Level Monitoring 
+Selected borings should be converted to monitoring wells for groundwater level 
+monitoring. In addition, if artesian groundwater is encountered at the boring locations, 
+considerations should be given to the conversion of the borehole into a groundwater level 
+monitoring well with the installation of vibrating wire piezometers (such as Model 4500 
+manufactured by Geokon) to monitor piezometric water levels and their seasonal fluctuations 
+over a 12-month period. Each borehole should be backfilled with cement-bentonite grout with a 
+traffic rated hole cover over the monitoring point. Data should be recorded on a near-continuous 
+basis using a datalogger (such as Model LC-2 manufactured by Geokon) and transmitted via a 
+wireless system for processing.  After termination of the monitoring period, the monitoring well 
+should be left functional unless otherwise directed by the City and County of Honolulu. 
+6.3 
+Field Permeability Testing 
+Field permeability tests (both constant head and falling head methods) should be 
+performed within selected borings (preferably at the jacking/receiving shaft locations) to obtain 
+field data to evaluate the hydraulic conductivity of the subsurface soils in support of the 
+dewatering operations anticipated for the jacking/receiving shafts.  
+6.4 
+Laboratory Testing 
+Laboratory testing should be performed on soil and rock samples to determine the 
+physical and engineering properties. Laboratory tests should include moisture content, unit 
+weight, Atterberg Limits, grain size distribution, specific gravity, uniaxial compressive strength of 
+rock, Unconsolidated-Undrained (UU) Triaxial Compression, Direct Shear, laboratory California 
+DRAFT #2 Prelim. Geotech. Engineering Report - 09/10/2021
+SECTION 6. GEOTECHNICAL EXPLORATION PROGRAM  
+W.O. 8072-00 
+GEOLABS, INC. 
+Page 39 
+Hawaii  California 
+Bearing Ratio (CBR), Modified Proctor, and corrosion potential tests (pH, minimum resistivity, 
+chloride content, and sulfate content). 
+END OF GEOTECHNICAL EXPLORATION PROGRAM 
+DRAFT #2 Prelim. Geotech. Engineering Report - 09/10/2021
+W.O. 8072-00 
+GEOLABS, INC. 
+Page 40 
+Hawaii • California 
+SECTION 7.  
+LIMITATIONS 
+The findings and discussions presented in this preliminary geotechnical engineering 
+report are based upon information obtained from site reconnaissance, literature research, and 
+experience in the vicinity of the proposed sewer alignments. It should be noted that it is not 
+possible to observe and/or anticipate all the site conditions based on a brief reconnaissance of 
+the project site and review of the literature. Variations of the subsurface conditions from those 
+described in this report may occur, and the nature and extent of these variations may not become 
+evident until further design-level geotechnical engineering exploration is conducted at the 
+project site or construction is underway. 
+This report has been prepared for the exclusive use of AECOM Technical Services, Inc. and 
+their client, City and County of Honolulu – Department of Environmental Services/CIP Program 
+and Planning Section, for specific application to the Waiawa Ridge Route Study project in 
+accordance with generally accepted geotechnical engineering principles and practices. No 
+warranty is expressed or implied.  
+END OF LIMITATIONS 
+DRAFT #2 Prelim. Geotech. Engineering Report - 09/10/2021
+W.O. 8072-00 
+GEOLABS, INC. 
+Page 41 
+Hawaii • California 
+REFERENCES 
+ALIGNMENT A 
+A. 
+Geolabs-Hawaii (May 1999), Geotechnical Engineering Exploration, The Home Depot – 
+Pearl City Junction, Pearl City, Oahu, Hawaii 
+B. 
+Geolabs-Hawaii (November 1997), Geotechnical Engineering Exploration, Hawaii 
+Laborers Apprenticeship and Training Trust Fund Property, TMK: 9-6-03: 22, Waipahu, 
+Oahu, Hawaii 
+C. 
+Geolabs-Hawaii (April 1993), Geotechnical Engineering Exploration, Waiawa Army 
+National Guard Armory, Additions and Renovations, Pearl City, Oahu, Hawaii 
+D. 
+Geolabs-Hawaii (March 1991), Geotechnical Engineering Exploration, Honolulu Rapid 
+Transit System, Waiawa to Waikiki and Manoa, Ewa and Honolulu, Oahu, Hawaii 
+E. 
+Geolabs, Inc. (March 2009), Geotechnical Data Report, Honolulu High-Capacity Transit 
+Corridor Project, East Kapolei to Pearl Highlands, Ewa, Oahu, Hawaii 
+F. 
+Geolabs, Inc. (February 2010), Geotechnical Data Report, Honolulu High-Capacity 
+Transit Corridor Project, Kamehameha Highway Segment, Pearl City to Aiea, Ewa, Oahu, 
+Hawaii 
+G. 
+Geolabs-Hawaii (November 1997), Geotechnical Engineering Exploration, Interstate 
+Route H-1 (Waiawa to Keehi Interchange), Contraflow and Shoulder Lane Project, 
+Honolulu, Oahu, Hawaii 
+H. 
+Geolabs, Inc. (June 2014), Geotechnical Data Report, Honolulu Rail Transit Project, 
+Kamehameha Highway Station Group, Ramp H2R2, Pearl City, Oahu, Hawaii 
+I. 
+Geolabs, Inc. (June 2014), Geotechnical Data Report, Honolulu Rail Transit Project, 
+Kamehameha Highway Station Group, Pearl Highlands Station, Pearl City, Oahu, Hawaii 
+J. 
+Geolabs, Inc. (August 2015), Geotechnical Data Report, Interstate Route H-1, PM 
+Contraflow Lane, Phase 2, FAP No. NH-H1-1(260), Pearl City, Oahu, Hawaii 
+K. 
+City and County of Honolulu, Division of Sewers (Job No. 6-64), Waimano Home Road 
+Relief Sewer, Pearl City, Oahu, Hawaii 
+L. 
+City and County of Honolulu, Division of Sewers (Job No. 14-64), East Loch Interceptor 
+Sewer, Section 2, Pearl City, Oahu, Hawaii 
+M. 
+City and County of Honolulu, Wastewater Division (Job No. W6-14), Sewer Manhole and 
+Pipe Rehabilitation, Pearl City Wastewater Pump Station Junction Box, Pearl City, Oahu, 
+Hawaii, Tax Map Key: 9-7-16: 28 
+DRAFT #2 Prelim. Geotech. Engineering Report - 09/10/2021
+REFERENCES 
+W.O. 8072-00 
+GEOLABS, INC. 
+Page 42 
+Hawaii  California 
+N. 
+Department of the Navy, Naval Facilities Engineering Command, FY19 MCON Project, 
+P-169 Water Transmission Line, Waiawa, JBPHH, Oahu 
+O. 
+City and County of Honolulu, Division of Wastewater Management (Job No. S16-75), 
+Pearl City Sewage Pump Station Modification, Pearl City, Oahu, Hawaii 
+P. 
+Geolabs, Inc. (September 2010), Honouliuli/Waipahu/Pearl City Wastewater Facilities 
+Plan, Honouliuli to Pearl City, Oahu, Hawaii 
+ALIGNMENT G 
+A. 
+Geolabs, Inc. (November 2017), Geotechnical Engineering Exploration, Drafting and 
+Auto Building, University of Hawaii, Leeward Community College, Pearl City, Oahu, 
+Hawaii 
+B. 
+Geolabs, Inc. (July 2018), Geotechnical Engineering Exploration, Solar Parking Shade 
+Structures, Leeward Community College, Pearl City, Oahu, Hawaii 
+C. 
+Geolabs, Inc. (April 2008), Geotechnical Engineering Exploration, Temporary Nursing 
+Portables, Leeward Community College, Pearl City, Oahu, Hawaii 
+D. 
+Geolabs, Inc. (April 2011), Geotechnical Engineering Exploration, Education and 
+Innovation Instructional Facility, Leeward Community College, Pearl City, Oahu, Hawaii 
+E. 
+Geolabs, 
+Inc. 
+(January 
+2013), 
+Geotechnical 
+Engineering 
+Exploration, 
+Reconstruction/Rehabilitation of Existing Retaining Walls, Leeward Community College, 
+Pearl City, Oahu, Hawaii 
+F. 
+Geolabs, Inc. (September & July 2009), Addendum and Geotechnical Data Report, 
+Honolulu High-Capacity Transit Corridor Project, Maintenance and Storage Facility, 
+Waipahu, Oahu, Hawaii 
+G. 
+Geolabs-Hawaii (November 1997), Geotechnical Engineering Exploration, Interstate 
+Route H-1 (Waiawa to Keehi Interchange), Contraflow and Shoulder Lane Project, 
+Honolulu, Oahu, Hawaii 
+H. 
+City and County of Honolulu, Division of Wastewater Management (Job No. S15-75), 
+Pearl City Sewage Pump Station Force Main – Section 2, Ewa, Oahu, Hawaii 
+I. 
+Department of the Navy, Naval Facilities Engineering Command, FY19 MCON Project, 
+P-169 Water Transmission Line, Waiawa, JBPHH, Oahu 
+J. 
+Geolabs, Inc. (June 2014), Geotechnical Data Report, Honolulu Rail Transit Project, 
+Kamehameha Highway Station Group, Ramp H2R2, Pearl City, Oahu, Hawaii 
+DRAFT #2 Prelim. Geotech. Engineering Report - 09/10/2021
+PLATES 
+DRAFT #2 Prelim. Geotech. Engineering Report - 09/10/2021
+WAIAWA RIDGE ROUTE STUDY
+PROJECT LOCATION MAP
+GRAPHIC SCALE
+1000
+2000
+2000
+0
+FT.
+PROJECT LOCATIONS
+GENERAL PROJECT LOCATION
+N
+WAHIAWA
+WAIKIKI
+HONOLULU
+AIEA
+PEARL CITY
+WAIPAHU
+EWA
+BARBERS POINT
+NANAKULI
+WAIANAE
+WAIALUA
+HALEIWA
+KAHUKU
+POINT
+DIAMOND
+HEAD
+HAWAII
+KAI
+WAIMANALO
+KAILUA
+KANEOHE
+KAHALUU
+PUNALUU
+HAUULA
+KAENA POINT
+ISLAND MAP
+NO SCALE
+WAIAWA, OAHU, HAWAII
+SEPTEMBER 2021
+1" = 2,000'
+Geotechnical Engineering
+GEOLABS, INC.
+DATE
+SCALE
+1
+8072-00
+DRAWN BY
+KHN
+W.O.
+PLATE
+N
+PACIFIC      OCEAN
+CAD User: KIM  File Last Updated: September 05, 2021 7:33:23pm  Plot Date:  September 08, 2021 - 8:31:29pm
+File: T:\Drafting\Working\8072-00_Waiawa_Ridge_Route_Study\8072-00PLM.dwg\1
+Plotter: DWG To PDF-GEO.pc3  Plotstyle: GEO-No-Dither-RBGC-HEAVY.ctb
+REFERENCE: MAP CREATED WITH TOPO!® ©2010 NATIONAL
+GEOGRAPHIC; ©2007 TELE ATLAS, REL. 1/2007.
+ALIGNMENT A
+ALIGNMENT G
+DRAFT #2 Prelim. Geotech. Engineering Report - 09/10/2021
+N
+WAIAWA RIDGE ROUTE STUDY
+WAIAWA, OAHU, HAWAII
+Geotechnical Engineering
+B-1(M)
+B-1A(L)
+B-14(P) B-1(L)
+B-2A(L)
+B-1(K)
+B-17(N)
+B-2(K)
+B-114(F)
+B-228(F)
+B-116(A)
+B-227(F)
+B-11(N)
+B-226(F)
+KHSG-20(I)
+B-113(E)
+B-10(N)
+B-9(N)
+B-8(N)
+B-7(N)
+ALIGNMENT A
+GENERAL SITE PLAN
+ALIGNMENT A
+N
+SITE PLAN - 1
+PLATE 3.1
+SITE PLAN - 2
+PLATE 3.2
+SITE PLAN - 3
+PLATE 3.3
+SITE PLAN - 4
+PLATE 3.4
+SITE PLAN - 5
+PLATE 3.5
+SITE PLAN - 6
+PLATE 3.6
+B-1(M)
+B-1A(L)
+B-14(P) B-1(L)
+B-2A(L)
+B-1(K)
+B-17(N)
+B-2(K)
+B-114(F)
+B-228(F)
+B-116(A)
+B-227(F)
+B-11(N)
+B-226(F)
+KHSG-20(I)
+B-113(E)
+B-10(N)
+B-9(N)
+B-8(N)
+B-7(N)
+B-6(N)
+ALIGNMENT A
+GEOLABS, INC.
+Geotechnical Engineering
+8072-00
+DRAWN BY
+KHN
+1" = 800'
+SEPTEMBER 2021
+SCALE
+DATE
+W.O.
+2
+PLATE
+CAD User: KIM  File Last Updated: September 13, 2021 2:51:46am  Plot Date:  September 13, 2021 - 2:52:26am
+File: T:\Drafting\Working\8072-00_Waiawa_Ridge_Route_Study\8072-00SitePlan&Profile-Alignement_A.dwg\2
+Plotter: DWG To PDF-GEO.pc3  Plotstyle: Honouliuli_RouteStudy.ctb
+GRAPHIC SCALE
+400
+0
+800
+1600
+2400 FT.
+SEE REFERENCE SECTION OF REPORT
+(N)
+LEGEND:
+APPROXIMATE BORING LOCATION
+REFERENCE: PLAN TRANSMITTED BY AECOM ON AUGUST 20, 2021.
+DRAFT #2 Prelim. Geotech. Engineering Report - 09/10/2021
+GEOLABS, INC.
+Geotechnical Engineering
+DRAWN BY
+SCALE
+DATE
+W.O.
+PLATE
+CAD User: KIM  File Last Updated: September 13, 2021 2:53:07am  Plot Date:  September 13, 2021 - 2:54:24am
+File: T:\Drafting\Working\8072-00_Waiawa_Ridge_Route_Study\8072-00SitePlan&Profile-Alignement_A.dwg\3.1
+Plotter: DWG To PDF-GEO.pc3  Plotstyle: Honouliuli_RouteStudy.ctb
+APPROXIMATE BORING LOCATION
+LEGEND:
+WAIAWA RIDGE ROUTE STUDY
+WAIAWA, OAHU, HAWAII
+8072-00
+KHN
+SEPTEMBER 2021
+3.1
+GRAPHIC SCALE
+10
+0
+20
+40
+60 FT.
+NOTE: THE CONDITIONS ILLUSTRATED ARE BASED ON OUR BORINGS AND GEOLOGICAL INTERPRETATIONS.  WHILE
+THESE  ARE BELIEVED TO BE GENERALLY CORRECT, THE CONDITIONS MAY VARY LOCALLY FROM THOSE INDICATED.
+REFERENCE: PLAN AND PROFILE, SHEET NO. A1, TRANSMITTED BY AECOM ON AUGUST 20, 2021.
+SEE REFERENCE SECTION OF REPORT
+(N)
+GRAPHIC SCALE
+100
+0
+200
+400
+600 FT.
+HORIZ: 1" = 200'
+VERT: 1" = 20'
+FILL
+GEOLOGIC UNIT LEGEND:
+RECENT ALLUVIUM
+OLDER ALLUVIUM
+SAPROLITE
+BASALT FORMATION
+HORIZONTAL
+VERTICAL
+ALIGNMENT A
+SITE PLAN & PROFILE - 1
+ALIGNMENT A
+B-1(M)
+B-14(P)
+B-1A(I)
+B-1(I)
+B-2A(I)
+B-1(K)
+B-17(N)
+N
+B-1(M)
+B-14(P)
+B-1A(L)
+B-1(L)
+B-2A(L)
+B-1(K)
+B-17(N)
+DRAFT #2 Prelim. Geotech. Engineering Report - 09/10/2021
+GEOLABS, INC.
+Geotechnical Engineering
+DRAWN BY
+SCALE
+DATE
+W.O.
+PLATE
+CAD User: KIM  File Last Updated: September 13, 2021 2:53:07am  Plot Date:  September 13, 2021 - 2:55:16am
+File: T:\Drafting\Working\8072-00_Waiawa_Ridge_Route_Study\8072-00SitePlan&Profile-Alignement_A.dwg\3.2
+Plotter: DWG To PDF-GEO.pc3  Plotstyle: Honouliuli_RouteStudy.ctb
+APPROXIMATE BORING LOCATION
+LEGEND:
+NOTE: THE CONDITIONS ILLUSTRATED ARE BASED ON OUR BORINGS AND GEOLOGICAL INTERPRETATIONS.  WHILE
+THESE  ARE BELIEVED TO BE GENERALLY CORRECT, THE CONDITIONS MAY VARY LOCALLY FROM THOSE INDICATED.
+REFERENCE: PLAN AND PROFILE, SHEET NO. A2, TRANSMITTED BY AECOM ON AUGUST 20, 2021.
+SEE REFERENCE SECTION OF REPORT
+(N)
+ALIGNMENT A
+FILL
+GEOLOGIC UNIT LEGEND:
+RECENT ALLUVIUM
+OLDER ALLUVIUM
+SAPROLITE
+BASALT FORMATION
+RESIDUAL SOIL
+WAIAWA RIDGE ROUTE STUDY
+WAIAWA, OAHU, HAWAII
+8072-00
+KHN
+SEPTEMBER 2021
+3.2
+GRAPHIC SCALE
+10
+0
+20
+40
+60 FT.
+GRAPHIC SCALE
+100
+0
+200
+400
+600 FT.
+HORIZ: 1" = 200'
+VERT: 1" = 20'
+HORIZONTAL
+VERTICAL
+ALIGNMENT A
+SITE PLAN & PROFILE - 2
+B-2(K)
+B-114(F)
+B-228(F)
+N
+B-228(F)
+B-2(K)
+B-114(F)
+DRAFT #2 Prelim. Geotech. Engineering Report - 09/10/2021
+GEOLABS, INC.
+Geotechnical Engineering
+DRAWN BY
+SCALE
+DATE
+W.O.
+PLATE
+CAD User: KIM  File Last Updated: September 13, 2021 2:53:07am  Plot Date:  September 13, 2021 - 2:56:31am
+File: T:\Drafting\Working\8072-00_Waiawa_Ridge_Route_Study\8072-00SitePlan&Profile-Alignement_A.dwg\3.3
+Plotter: DWG To PDF-GEO.pc3  Plotstyle: Honouliuli_RouteStudy.ctb
+APPROXIMATE BORING LOCATION
+LEGEND:
+NOTE: THE CONDITIONS ILLUSTRATED ARE BASED ON OUR BORINGS AND GEOLOGICAL INTERPRETATIONS.  WHILE
+THESE  ARE BELIEVED TO BE GENERALLY CORRECT, THE CONDITIONS MAY VARY LOCALLY FROM THOSE INDICATED.
+REFERENCE: PLAN AND PROFILE, SHEET NO. A3, TRANSMITTED BY AECOM ON AUGUST 20, 2021.
+SEE REFERENCE SECTION OF REPORT
+(N)
+ALIGNMENT A
+FILL
+GEOLOGIC UNIT LEGEND:
+RECENT ALLUVIUM
+OLDER ALLUVIUM
+SAPROLITE
+BASALT FORMATION
+RESIDUAL SOIL
+WAIAWA RIDGE ROUTE STUDY
+WAIAWA, OAHU, HAWAII
+8072-00
+KHN
+SEPTEMBER 2021
+3.3
+GRAPHIC SCALE
+10
+0
+20
+40
+60 FT.
+GRAPHIC SCALE
+100
+0
+200
+400
+600 FT.
+HORIZ: 1" = 200'
+VERT: 1" = 20'
+HORIZONTAL
+VERTICAL
+ALIGNMENT A
+SITE PLAN & PROFILE - 3
+B-116(A)
+B-227(F)
+B-11(N)
+B-226(F)
+KHSG-201(I)
+N
+B-116(A)
+B-227(F)
+B-11(N)
+B-226(F)
+KHSG-201(I)
+DRAFT #2 Prelim. Geotech. Engineering Report - 09/10/2021
+GEOLABS, INC.
+Geotechnical Engineering
+DRAWN BY
+SCALE
+DATE
+W.O.
+PLATE
+CAD User: KIM  File Last Updated: September 13, 2021 2:53:07am  Plot Date:  September 13, 2021 - 2:57:09am
+File: T:\Drafting\Working\8072-00_Waiawa_Ridge_Route_Study\8072-00SitePlan&Profile-Alignement_A.dwg\3.4
+Plotter: DWG To PDF-GEO.pc3  Plotstyle: Honouliuli_RouteStudy.ctb
+APPROXIMATE BORING LOCATION
+LEGEND:
+NOTE: THE CONDITIONS ILLUSTRATED ARE BASED ON OUR BORINGS AND GEOLOGICAL INTERPRETATIONS.  WHILE
+THESE  ARE BELIEVED TO BE GENERALLY CORRECT, THE CONDITIONS MAY VARY LOCALLY FROM THOSE INDICATED.
+REFERENCE: PLAN AND PROFILE, SHEET NO. A4, TRANSMITTED BY AECOM ON AUGUST 20, 2021.
+SEE REFERENCE SECTION OF REPORT
+(N)
+ALIGNMENT A
+FILL
+GEOLOGIC UNIT LEGEND:
+RECENT ALLUVIUM
+OLDER ALLUVIUM
+SAPROLITE
+BASALT FORMATION
+RESIDUAL SOIL
+WAIAWA RIDGE ROUTE STUDY
+WAIAWA, OAHU, HAWAII
+8072-00
+KHN
+SEPTEMBER 2021
+3.4
+GRAPHIC SCALE
+10
+0
+20
+40
+60 FT.
+GRAPHIC SCALE
+100
+0
+200
+400
+600 FT.
+HORIZ: 1" = 200'
+VERT: 1" = 20'
+HORIZONTAL
+VERTICAL
+ALIGNMENT A
+SITE PLAN & PROFILE - 4
+B-10(N)
+B-113(E)
+B-9(N)
+N
+B-10(N)
+B-113(E)
+B-9(N)
+DRAFT #2 Prelim. Geotech. Engineering Report - 09/10/2021
+GEOLABS, INC.
+Geotechnical Engineering
+DRAWN BY
+SCALE
+DATE
+W.O.
+PLATE
+CAD User: KIM  File Last Updated: September 13, 2021 2:53:07am  Plot Date:  September 13, 2021 - 2:57:54am
+File: T:\Drafting\Working\8072-00_Waiawa_Ridge_Route_Study\8072-00SitePlan&Profile-Alignement_A.dwg\3.5
+Plotter: DWG To PDF-GEO.pc3  Plotstyle: Honouliuli_RouteStudy.ctb
+APPROXIMATE BORING LOCATION
+LEGEND:
+NOTE: THE CONDITIONS ILLUSTRATED ARE BASED ON OUR BORINGS AND GEOLOGICAL INTERPRETATIONS.  WHILE
+THESE  ARE BELIEVED TO BE GENERALLY CORRECT, THE CONDITIONS MAY VARY LOCALLY FROM THOSE INDICATED.
+REFERENCE: PLAN AND PROFILE, SHEET NO. A5, TRANSMITTED BY AECOM ON AUGUST 20, 2021.
+SEE REFERENCE SECTION OF REPORT
+(N)
+ALIGNMENT A
+FILL
+GEOLOGIC UNIT LEGEND:
+RECENT ALLUVIUM
+OLDER ALLUVIUM
+SAPROLITE
+BASALT FORMATION
+RESIDUAL SOIL
+WAIAWA RIDGE ROUTE STUDY
+WAIAWA, OAHU, HAWAII
+8072-00
+KHN
+SEPTEMBER 2021
+3.5
+GRAPHIC SCALE
+10
+0
+20
+40
+60 FT.
+GRAPHIC SCALE
+100
+0
+200
+400
+600 FT.
+HORIZ: 1" = 200'
+VERT: 1" = 20'
+HORIZONTAL
+VERTICAL
+ALIGNMENT A
+SITE PLAN & PROFILE - 5
+B-8(N)
+B-7(N)
+N
+B-8(N)
+B-7(N)
+DRAFT #2 Prelim. Geotech. Engineering Report - 09/10/2021
+GEOLABS, INC.
+Geotechnical Engineering
+DRAWN BY
+SCALE
+DATE
+W.O.
+PLATE
+CAD User: KIM  File Last Updated: September 13, 2021 2:53:07am  Plot Date:  September 13, 2021 - 2:58:33am
+File: T:\Drafting\Working\8072-00_Waiawa_Ridge_Route_Study\8072-00SitePlan&Profile-Alignement_A.dwg\3.6
+Plotter: DWG To PDF-GEO.pc3  Plotstyle: Honouliuli_RouteStudy.ctb
+B-6(N)
+APPROXIMATE BORING LOCATION
+LEGEND:
+NOTE: THE CONDITIONS ILLUSTRATED ARE BASED ON OUR BORINGS AND GEOLOGICAL INTERPRETATIONS.  WHILE
+THESE  ARE BELIEVED TO BE GENERALLY CORRECT, THE CONDITIONS MAY VARY LOCALLY FROM THOSE INDICATED.
+REFERENCE: PLAN AND PROFILE, SHEET NO. A6, TRANSMITTED BY AECOM ON AUGUST 20, 2021.
+SEE REFERENCE SECTION OF REPORT
+(N)
+ALIGNMENT A
+FILL
+GEOLOGIC UNIT LEGEND:
+RECENT ALLUVIUM
+OLDER ALLUVIUM
+SAPROLITE
+BASALT FORMATION
+RESIDUAL SOIL
+WAIAWA RIDGE ROUTE STUDY
+WAIAWA, OAHU, HAWAII
+8072-00
+KHN
+SEPTEMBER 2021
+3.6
+GRAPHIC SCALE
+10
+0
+20
+40
+60 FT.
+GRAPHIC SCALE
+100
+0
+200
+400
+600 FT.
+HORIZ: 1" = 200'
+VERT: 1" = 20'
+HORIZONTAL
+VERTICAL
+ALIGNMENT A
+SITE PLAN & PROFILE - 6
+N
+B-6(N)
+DRAFT #2 Prelim. Geotech. Engineering Report - 09/10/2021
+N
+SITE PLAN - 3
+PLATE 5.3
+SITE PLAN - 2
+PLATE 5.2
+SITE PLAN - 1
+PLATE 5.1
+B-13(H)
+B-410(F)
+B-414(F)
+B-242(F)
+B-2(F)
+B-108(G)
+KHSG-102(J)
+KHSG-101(J)
+B-9(I)
+B-8(I)
+B-7(I)
+ALIGNMENT G
+GEOLABS, INC.
+Geotechnical Engineering
+8072-00
+DRAWN BY
+KHN
+1" = 800'
+SEPTEMBER 2021
+SCALE
+DATE
+W.O.
+4
+PLATE
+CAD User: KIM  File Last Updated: September 13, 2021 12:59:58am  Plot Date:  September 13, 2021 - 2:59:47am
+File: T:\Drafting\Working\8072-00_Waiawa_Ridge_Route_Study\8072-00SitePlan&Profile-Alignement_G.dwg\4
+Plotter: DWG To PDF-GEO.pc3  Plotstyle: Honouliuli_RouteStudy.ctb
+WAIAWA RIDGE ROUTE STUDY
+WAIAWA, OAHU, HAWAII
+GENERAL SITE PLAN
+ALIGNMENT G
+SEE REFERENCE SECTION OF REPORT
+(J)
+LEGEND:
+APPROXIMATE BORING LOCATION
+GRAPHIC SCALE
+400
+0
+800
+1600
+2400 FT.
+B-6(I)
+REFERENCE: PLAN TRANSMITTED BY AECOM ON AUGUST 20, 2021.
+SITE PLAN - 4
+PLATE 5.4
+DRAFT #2 Prelim. Geotech. Engineering Report - 09/10/2021
+GEOLABS, INC.
+Geotechnical Engineering
+DRAWN BY
+SCALE
+DATE
+W.O.
+PLATE
+CAD User: KIM  File Last Updated: September 13, 2021 3:30:55am  Plot Date:  September 13, 2021 - 3:35:23am
+File: T:\Drafting\Working\8072-00_Waiawa_Ridge_Route_Study\8072-00SitePlan&Profile-Alignement_G.dwg\5.1
+Plotter: DWG To PDF-GEO.pc3  Plotstyle: Honouliuli_RouteStudy.ctb
+APPROXIMATE BORING LOCATION
+LEGEND:
+GRAPHIC SCALE
+0
+30
+60
+90 FT.
+20
+10
+NOTE: THE CONDITIONS ILLUSTRATED ARE BASED ON OUR BORINGS AND GEOLOGICAL INTERPRETATIONS.  WHILE
+THESE  ARE BELIEVED TO BE GENERALLY CORRECT, THE CONDITIONS MAY VARY LOCALLY FROM THOSE INDICATED.
+REFERENCE: PLAN AND PROFILE, SHEET NO. G1, TRANSMITTED BY AECOM ON AUGUST 20, 2021.
+SEE REFERENCE SECTION OF REPORT
+(J)
+GRAPHIC SCALE
+150
+0
+300
+600
+900 FT.
+FILL
+GEOLOGIC UNIT LEGEND:
+RECENT ALLUVIUM
+OLDER ALLUVIUM
+SAPROLITE
+BASALT FORMATION
+HORIZONTAL
+VERTICAL
+WAIAWA RIDGE ROUTE STUDY
+WAIAWA, OAHU, HAWAII
+8072-00
+KHN
+SEPTEMBER 2021
+5.1
+HORIZ: 1" = 300'
+VERT: 1" = 30'
+ALIGNMENT G
+SITE PLAN & PROFILE - 1
+ALIGNMENT G
+RESIDUAL SOIL
+B-242(F)
+B-414(F)
+B-410(F)
+B-13(H)
+N
+PLAN GRAPHIC SCALE
+100
+0
+200
+400
+600 FT.
+B-13(H)
+B-410(F)
+B-414(F)
+B-242(F)
+DRAFT #2 Prelim. Geotech. Engineering Report - 09/10/2021
+N
+GEOLABS, INC.
+Geotechnical Engineering
+DRAWN BY
+SCALE
+DATE
+W.O.
+PLATE
+CAD User: KIM  File Last Updated: September 13, 2021 3:30:55am  Plot Date:  September 13, 2021 - 3:34:28am
+File: T:\Drafting\Working\8072-00_Waiawa_Ridge_Route_Study\8072-00SitePlan&Profile-Alignement_G.dwg\5.2
+Plotter: DWG To PDF-GEO.pc3  Plotstyle: Honouliuli_RouteStudy.ctb
+APPROXIMATE BORING LOCATION
+LEGEND:
+NOTE: THE CONDITIONS ILLUSTRATED ARE BASED ON OUR BORINGS AND GEOLOGICAL INTERPRETATIONS.  WHILE
+THESE  ARE BELIEVED TO BE GENERALLY CORRECT, THE CONDITIONS MAY VARY LOCALLY FROM THOSE INDICATED.
+REFERENCE: PLAN AND PROFILE, SHEET NO. G2, TRANSMITTED BY AECOM ON AUGUST 20, 2021.
+SEE REFERENCE SECTION OF REPORT
+(J)
+ALIGNMENT G
+FILL
+GEOLOGIC UNIT LEGEND:
+RECENT ALLUVIUM
+OLDER ALLUVIUM
+SAPROLITE
+BASALT FORMATION
+RESIDUAL SOIL
+GRAPHIC SCALE
+0
+30
+60
+90 FT.
+20
+10
+GRAPHIC SCALE
+150
+0
+300
+600
+900 FT.
+HORIZONTAL
+VERTICAL
+WAIAWA RIDGE ROUTE STUDY
+WAIAWA, OAHU, HAWAII
+8072-00
+KHN
+SEPTEMBER 2021
+5.2
+HORIZ: 1" = 300'
+VERT: 1" = 30'
+ALIGNMENT G
+SITE PLAN & PROFILE - 2
+B-2(F)
+B-108(G)
+KHSG-102(J)
+KHSG-101(J)
+N
+PLAN GRAPHIC SCALE
+100
+0
+200
+400
+600 FT.
+B-2(F)
+B-108(G)
+KHSG-102(J)
+KHSJ-101(J)
+DRAFT #2 Prelim. Geotech. Engineering Report - 09/10/2021
+N
+GEOLABS, INC.
+Geotechnical Engineering
+DRAWN BY
+SCALE
+DATE
+W.O.
+PLATE
+CAD User: KIM  File Last Updated: September 13, 2021 3:30:55am  Plot Date:  September 13, 2021 - 3:33:08am
+File: T:\Drafting\Working\8072-00_Waiawa_Ridge_Route_Study\8072-00SitePlan&Profile-Alignement_G.dwg\5.3
+Plotter: DWG To PDF-GEO.pc3  Plotstyle: Honouliuli_RouteStudy.ctb
+APPROXIMATE BORING LOCATION
+LEGEND:
+NOTE: THE CONDITIONS ILLUSTRATED ARE BASED ON OUR BORINGS AND GEOLOGICAL INTERPRETATIONS.  WHILE
+THESE  ARE BELIEVED TO BE GENERALLY CORRECT, THE CONDITIONS MAY VARY LOCALLY FROM THOSE INDICATED.
+REFERENCE: PLAN AND PROFILE, SHEET NO. G3, TRANSMITTED BY AECOM ON AUGUST 20, 2021.
+SEE REFERENCE SECTION OF REPORT
+(J)
+ALIGNMENT G
+FILL
+GEOLOGIC UNIT LEGEND:
+RECENT ALLUVIUM
+OLDER ALLUVIUM
+SAPROLITE
+BASALT FORMATION
+RESIDUAL SOIL
+GRAPHIC SCALE
+10
+0
+20
+40
+60 FT.
+GRAPHIC SCALE
+100
+0
+200
+400
+600 FT.
+HORIZONTAL
+VERTICAL
+WAIAWA RIDGE ROUTE STUDY
+WAIAWA, OAHU, HAWAII
+8072-00
+KHN
+SEPTEMBER 2021
+5.3
+HORIZ: 1" = 200'
+VERT: 1" = 20'
+ALIGNMENT G
+SITE PLAN & PROFILE - 3
+B-9(I)
+B-8(I)
+B-7(I)
+N
+KHSJ-101(J)
+B-9(I)
+B-8(I)
+B-7(I)
+DRAFT #2 Prelim. Geotech. Engineering Report - 09/10/2021
+N
+GEOLABS, INC.
+Geotechnical Engineering
+DRAWN BY
+SCALE
+DATE
+W.O.
+PLATE
+CAD User: KIM  File Last Updated: September 13, 2021 3:30:55am  Plot Date:  September 13, 2021 - 3:31:58am
+File: T:\Drafting\Working\8072-00_Waiawa_Ridge_Route_Study\8072-00SitePlan&Profile-Alignement_G.dwg\5.4
+Plotter: DWG To PDF-GEO.pc3  Plotstyle: Honouliuli_RouteStudy.ctb
+B-6(I)
+APPROXIMATE BORING LOCATION
+LEGEND:
+NOTE: THE CONDITIONS ILLUSTRATED ARE BASED ON OUR BORINGS AND GEOLOGICAL INTERPRETATIONS.  WHILE
+THESE  ARE BELIEVED TO BE GENERALLY CORRECT, THE CONDITIONS MAY VARY LOCALLY FROM THOSE INDICATED.
+REFERENCE: PLAN AND PROFILE, SHEET NO. G4, TRANSMITTED BY AECOM ON AUGUST 20, 2021.
+SEE REFERENCE SECTION OF REPORT
+(J)
+ALIGNMENT G
+FILL
+GEOLOGIC UNIT LEGEND:
+RECENT ALLUVIUM
+OLDER ALLUVIUM
+SAPROLITE
+BASALT FORMATION
+RESIDUAL SOIL
+GRAPHIC SCALE
+10
+0
+20
+40
+60 FT.
+GRAPHIC SCALE
+100
+0
+200
+400
+600 FT.
+HORIZONTAL
+VERTICAL
+WAIAWA RIDGE ROUTE STUDY
+WAIAWA, OAHU, HAWAII
+8072-00
+KHN
+SEPTEMBER 2021
+5.4
+HORIZ: 1" = 200'
+VERT: 1" = 20'
+ALIGNMENT G
+SITE PLAN & PROFILE - 4
+N
+B-6(I)
+DRAFT #2 Prelim. Geotech. Engineering Report - 09/10/2021
+Qls
+Qa
+Ra
+Qa
+Ra
+Qa
+Tkb
+Ra
+Qa
+Ra
+Ra
+Ra
+Qa
+Ra
+Tkb
+Ra
+Tkb
+Tkb
+Qa
+Ra
+Qa
+Qa
+Qa
+Tkb
+Tkb
+Ra
+Qa
+Qa
+N
+GEOLABS, INC.
+Geotechnical Engineering
+DRAWN BY
+KHN
+1" = 1,000'
+SCALE
+DATE
+W.O.
+GEOLOGY MAP
+6
+PLATE
+REFERENCE: MAP CREATED WITH TOPO!® ©2001 NATIONAL GEOGRAPHIC (WWW.NATIONALGEOGRAPHIC.COM/TOPO)
+AND THE GEOLOGICAL SURVEY CONTROL BY USGS, USC&GS, AND HAWAIIAN TERRITORIAL SURVEY.
+LEGEND:
+Tkb
+Qa
+Qls
+Ra
+TERTIARY KOOLAU BASALT
+OLDER ALLUVIUM
+LIMESTONE (CORAL)
+RECENT ALLUVIUM
+CAD User: KIM  File Last Updated: September 05, 2021 7:56:05pm  Plot Date:  September 08, 2021 - 8:18:28pm
+File: T:\Drafting\Working\8072-00_Waiawa_Ridge_Route_Study\8072-00GeologicMap.dwg\6
+Plotter: DWG To PDF-GEO.pc3  Plotstyle: GEO-No-Dither-RBGC-HEAVY.ctb
+WAIAWA RIDGE ROUTE STUDY
+WAIAWA, OAHU, HAWAII
+SEPTEMBER 2021
+8072-00
+SEWER ALIGNMENT A
+GRAPHIC SCALE
+500
+0
+1000
+2000
+3000 FT.
+SEWER ALIGNMENT G
+DRAFT #2 Prelim. Geotech. Engineering Report - 09/10/2021
+W.O. 8072-00 
+GEOLABS, INC. 
+PLATE 7 
+Hawaii • California 
+Categories of Ground Conditions for Soft Ground Tunnels 
+(After Terzaghi, 1950) 
+Firm Ground - A heading may be advanced several feet or more without immediate support. Hard 
+clays and cemented sand or gravel generally fall into this category. 
+Raveling Ground - After excavation, the material above the tunnel or in the upper part of the 
+working face tends to flake off and fall into the heading.  Slightly cohesive sands, silts, and fine 
+sands gaining their strength from apparent cohesion typically exhibit this type of behavior. Very 
+stiff fissured clays may be raveling materials also. 
+Running Ground - Cohesionless, dry soils run from any unsupported vertical face until a stable 
+slope forms at the natural angle of repose (.i.e., approximately 3 degrees to 35 degrees). Running 
+ground consists of dry, cohesionless materials, such as clean loose sand or gravel. 
+Flowing Ground - If seepage develops at the working face, raveling or running ground is 
+transformed into flowing ground, which advances like a viscous fluid into the heading. Silt, sand, 
+or gravel below the water table without a high enough clay content to develop significant 
+cohesion will be flowing-type soils. 
+Swelling Ground - A condition where the ground absorbs water, increases in volume, and expands 
+slowly into the tunnel.  This may occur in highly over consolidated clays that exhibit high volume 
+change characteristics upon wetting. 
+Squeezing Ground - Squeezing ground conditions are analogous to plastic flow, and the soil is 
+observed to advance slowly into the tunnel excavation without any signs of fracturing. Squeezing 
+occurs without an increase in the water content or a volume change in the soil and is governed 
+by the soil strength in comparison to the overburden pressure. Squeezing ground may include 
+soft to medium stiff or stiff clays depending on the overburden pressure at the tunnel depth. 
+DRAFT #2 Prelim. Geotech. Engineering Report - 09/10/2021

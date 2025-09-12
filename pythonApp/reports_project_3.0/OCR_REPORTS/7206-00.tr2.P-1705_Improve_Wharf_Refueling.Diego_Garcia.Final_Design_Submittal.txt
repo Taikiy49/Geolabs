@@ -1,0 +1,14450 @@
+GEOTECHNICAL ENGINEERING EXPLORATION 
+P-1705, IMPROVE WHARF REFUELING CAPABILITY 
+NAVAL SUPPORT FACILITY, DIEGO GARCIA, B.I.O.T. 
+W.O. 7206-00     OCTOBER 13, 2016 
+Prepared for 
+BURNS & MCDONNELL 
+GEOLABS, INC. 
+Geotechnical Engineering and Drilling Services 
+Final Design Submittal - October 2016
+GEOTECHNICAL ENGINEERING EXPLORATION 
+P-1705, IMPROVE WHARF REFUELING CAPABILITY 
+NAVAL SUPPORT FACILITY, DIEGO GARCIA, B.I.O.T. 
+W.O. 7206-00    OCTOBER 13, 2016 
+Prepared for 
+BURNS & MCDONNELL 
+GEOLABS, INC. 
+Geotechnical Engineering and Drilling Services 
+2006 Kalihi Street • Honolulu, HI  96819 
+Hawaii • California 
+THIS WORK WAS PREPARED BY 
+ME OR UNDER MY SUPERVISION. 
+4-30-18 
+SIGNATURE 
+EXPIRATION DATE 
+OF THE LICENSE 
+Final Design Submittal - October 2016
+GEOTECHNICAL DATA REPORT 
+HONOLULU HIGH-CAPACITY TRANSIT CORRIDOR PROJECT 
+AIRPORT SEGMENT 
+AIEA TO MIDDLE STREET 
+HONOLULU, OAHU, HAWAII 
+W.O. 6000-30     FEBRUARY 8, 2010 
+Prepared for 
+PB AMERICAS, INC. 
+THIS WORK WAS PREPARED BY 
+ME OR UNDER MY SUPERVISION. 
+4-30-10
+SIGNATURE 
+EXPIRATION DATE 
+OF THE LICENSE
+GEOLABS, INC. 
+Geotechnical Engineering and Drilling Services 
+2006 Kalihi Street • Honolulu, HI  96819 
+Hawaii • California 
+GEOLABS, INC. 
+Geotechnical Engineering and Drilling Services 
+2006 Kalihi Street • Honolulu, Hawaii 96819 
+Phone: (808) 841-5064  •  Facsimile: (808) 847-1749  •  E-mail: hawaii@geolabs.net 
+Hawaii • California 
+October 13, 2016 
+W.O. 7206-00 
+Mr. Clinton D. Gallagher 
+Burns & McDonnell 
+9400 Ward Parkway 
+Kansas City, MO 64114 
+Dear Mr. Gallagher:  
+Geolabs, Inc. is pleased to submit this report entitled "Geotechnical Engineering 
+Exploration, P-1705, Improve Wharf Refueling Capability, Naval Support Facility, Diego 
+Garcia, B.I.O.T.” prepared in support of the design-bid-build effort for the proposed fuel 
+lines project at Diego Garcia, British Indian Ocean Territory. 
+Our work was performed in general accordance with the scope of services outlined 
+in our fee proposal dated April 22, 2015. 
+Please note that the soil samples recovered during our field exploration (remaining 
+after testing) will be stored for a period of two months from the date of this report. The 
+samples will be discarded after that date unless special arrangements are made for a 
+longer sample storage period. Please contact our office for alternative sample storage 
+requirements, if appropriate. 
+Detailed discussion and specific design recommendations are contained in the 
+body of this report. If there are any questions regarding this report, please contact our 
+office. 
+Very truly yours, 
+GEOLABS, INC. 
+          Robin M. Lim, P.E. 
+           President 
+RML:TR:as 
+Final Design Submittal - October 2016
+W.O. 7206-00 
+GEOLABS, INC. 
+Page i 
+Hawaii • California 
+GEOTECHNICAL ENGINEERING EXPLORATION 
+P-1705, IMPROVE WHARF REFUELING CAPABILITY 
+NAVAL SUPPORT FACILITY, DIEGO GARCIA, B.I.O.T. 
+W.O. 7206-00     OCTOBER 13, 2016 
+TABLE OF CONTENTS 
+                                                                                                                                       Page 
+SUMMARY OF FINDINGS AND RECOMMENDATIONS .............................................. iii 
+1. 
+GENERAL ............................................................................................................ 1 
+1.1 
+Project Considerations ............................................................................... 1 
+1.2 
+Purpose and Scope ................................................................................... 2 
+2. 
+SITE CHARACTERIZATION ................................................................................ 4 
+2.1 
+Existing Site Conditions ............................................................................. 5 
+2.2 
+Subsurface Conditions ............................................................................... 5 
+2.3 
+Seismic Design Considerations ................................................................. 7 
+2.3.1 Earthquakes and Seismicity ............................................................ 7 
+2.3.2 Liquefaction Potential ...................................................................... 8 
+2.3.3 Soil Profile ..................................................................................... 10 
+3. 
+DISCUSSION AND RECOMMENDATIONS ...................................................... 12 
+3.1 
+Shallow Foundations................................................................................ 13 
+3.2 
+Slabs-On-Grade ....................................................................................... 15 
+3.3 
+Site Preparation ....................................................................................... 16 
+3.4 
+Utility Trenches ........................................................................................ 17 
+3.5 
+Excavation ............................................................................................... 18 
+3.5.1 Excavation Method ........................................................................ 18 
+3.5.2 Excavation Support ....................................................................... 19 
+3.6 
+Dewatering ............................................................................................... 20 
+3.6.1 Subsurface Soil Permeability ........................................................ 21 
+3.6.2 Dewatering Considerations ........................................................... 21 
+3.6.3 Dewatering Precaution and Monitoring ......................................... 22 
+3.7 
+Foundations for Fuel Pits ......................................................................... 23 
+3.8 
+Dynamic Lateral Earth Pressures ............................................................ 24 
+3.9 
+Corrosion Potential and Chemical Attack to Concrete ............................. 24 
+3.10 
+Design Review ......................................................................................... 25 
+3.11 
+Construction Monitoring ........................................................................... 26 
+4. 
+LIMITATIONS ..................................................................................................... 27 
+5. 
+REFERENCES ................................................................................................... 29 
+CLOSURE ..................................................................................................................... 30 
+Final Design Submittal - October 2016
+TABLE OF CONTENTS 
+                                                                                                                                   Page 
+W.O. 7206-00 
+GEOLABS, INC. 
+Page ii 
+Hawaii • California 
+PLATES 
+Area Map ..................................................................................................... Plate 1 
+Project Location Map  .................................................................................. Plate 2 
+Overall Site Plan  ......................................................................................... Plate 3 
+Site Plans  ................................................................................. Plates 4.1 thru 4.5 
+APPENDIX  A 
+Field Exploration ...................................................................................... Page A-1 
+Soil Log Legend  .................................................................................... Plate A-0.1 
+Soil Classification Log Key .................................................................... Plate A-0.2 
+Logs of Test Pits  ...................................................................... Plates A-1 thru A-7 
+APPENDIX  B 
+Laboratory Tests ...................................................................................... Page B-1 
+Laboratory Test Data  ............................................................. Plates B-1 thru B-13 
+APPENDIX  C 
+Dynamic Cone Penetrometer Field Data  ........................... Plates C-1.1 thru C-7.3 
+Final Design Submittal - October 2016
+W.O. 7206-00 
+GEOLABS, INC. 
+Page iii 
+Hawaii • California 
+GEOTECHNICAL ENGINEERING EXPLORATION 
+P-1705, IMPROVE WHARF REFUELING CAPABILITY 
+NAVAL SUPPORT FACILITY, DIEGO GARCIA, B.I.O.T. 
+W.O. 7206-00     OCTOBER 13, 2016 
+SUMMARY OF FINDINGS AND RECOMMENDATIONS 
+Our field exploration generally encountered surface fills consisting of medium 
+dense to very dense granular materials with varying amounts of silt at the Improve 
+Wharf Refueling Capability project site. The surface fills extended down to depths of 
+about 0.9 to 2.1 meters below the ground surface, which often corresponded, with the 
+maximum depth explored. In some test pits, dune deposits, beach deposits, and 
+lagoonal deposits consisting of loose to dense granular materials and very soft to soft 
+sandy silts were encountered beneath the surface fills. The granular portions of the 
+submerged fill, beach, and dune deposits are susceptible to soil liquefaction when 
+subjected to a seismic event with a peak ground acceleration of 0.28g corresponding to 
+the Maximum Considered Earthquake. Groundwater was encountered at an elevation of 
+approximately +0.2 and +0.9 meters MSL at the time of our field exploration. 
+Based on discussions with the project mechanical engineer, we understand the 
+IFO fuel line will be designed to accommodate seismically-induced ground settlements. 
+The JP-5 fuel line will not be designed to accommodate liquefaction settlement; 
+however, the fuel line will not normally contain fuel and will be checked after each 
+seismic event. Therefore, the above ground portion of the proposed fuel line may be 
+supported on a shallow foundation system bearing on the re-compacted on-site soils 
+and/or new compacted fills with the understanding that some footing settlement may 
+occur due to soil liquefaction under seismic conditions. Based on this design concept, 
+we recommend using shallow isolated spread footings to support the fuel line. An 
+allowable bearing pressure of up to 120 kPa may be used for the design of shallow 
+foundations bearing on the re-compacted on-site soils and/or new compacted fills 
+needed to achieve the finished grades. This bearing pressure is for supporting dead-
+plus-live loads and may be increased by one-third (1/3) for transient loads, such as those 
+caused by wind or seismic forces. In general, the bottom of footings should be 
+embedded a minimum of 450 mm below the lowest adjacent finished grades. Bottom of 
+footing excavations should be re-compacted to at least 95 percent relative compaction. 
+Based on the relatively flat site topography, we anticipate relatively small cuts 
+and fills will be needed to achieve the finished grades. Conventional earthwork and 
+construction methods may be used for the proposed project grading. The text of this 
+report should be referred to for detailed discussion and specific design 
+recommendations. 
+END OF SUMMARY OF FINDINGS AND RECOMMENDATIONS 
+Final Design Submittal - October 2016
+W.O. 7206-00 
+GEOLABS, INC. 
+Page 1 
+Hawaii • California 
+SECTION 1.  GENERAL 
+This report presents the results of our geotechnical engineering exploration 
+performed for the proposed Improve Wharf Refueling Capability project (P-1705) at 
+Naval Support Facility, Diego Garcia in the British Indian Ocean Territory (B.I.OT.). The 
+approximate location of Diego Garcia is shown on the Area Map, Plate 1. 
+This report summarizes the findings from our literature review, field exploration, 
+and laboratory testing, and presents our geotechnical recommendations derived from 
+our analyses for the proposed project. These recommendations are intended for the 
+design of the fuel lines and associated appurtenances only. The findings and 
+recommendations presented herein are subject to the limitations noted at the end of this 
+report.  
+It should be noted that our recommendations presented herein are based, in part, 
+on a limited subsurface investigation program consisting of excavating test pits and 
+performing relatively shallow field-testing. Ideally, a more comprehensive field 
+investigation consisting of deeper borings would be preferred. However, due to the 
+remote location of Diego Garcia and the associated costs with mobilizing a drill rig and 
+crew to the project site, the Government determined a more comprehensive field 
+investigation was not economically viable for this project. 
+1.1 
+Project Considerations 
+The proposed design-bid-build project is located in the waterfront facilities area of 
+Diego Garcia. The project location and general vicinity are shown on the Project 
+Location Map, Plate 2. The project generally consists of constructing new fuel lines for 
+intermediate fuel oil (IFO) and jet fuel (JP-5) between the POL tank farm and the Deep 
+Draft Wharf to improve refueling capability. It has been proposed that the new fuel lines 
+will run along the same alignment and be constructed both above and below ground.  
+The new wharf fuel lines to be constructed for this project will be a 
+secondary/backup system for the primary IFO and JP-5 lines that go to the POL pier. 
+The new wharf JP-5 fuel line will remain empty except when actively used. After 
+construction or after use, the JP-5 fuel line will be flushed and cleaned, then drained 
+Final Design Submittal - October 2016
+SECTION 1. GENERAL 
+W.O. 7206-00 
+GEOLABS, INC. 
+Page 2 
+Hawaii • California 
+and charged with nitrogen and set aside for emergency use only. Due to the fuel quality 
+requirements to flush the lines every 30 days, the base does not plan on using the new 
+JP-5 fuel line except when absolutely necessary. Thus, the new JP-5 fuel line to the 
+wharf will not normally contain fuel. Conversely, the base plans to use the new IFO fuel 
+line periodically and it should be assumed that fuel will remain in the pipeline.  
+1.2 
+Purpose and Scope 
+The purpose of our field exploration was to obtain an overview of the surface and 
+subsurface conditions at the project site to develop a soil and/or rock data set to 
+formulate geotechnical recommendations for design of the proposed improvements. In 
+order to accomplish this scope, we conducted an exploration program consisting of the 
+following tasks and efforts: 
+1. 
+Obtaining proper clearances and training for our field personnel traveling 
+to Naval Support Facility, Diego Garcia.  
+2. 
+Preparation and submittal of an activity hazard analysis in support of our 
+field exploration activities. 
+3. 
+Mobilization of a dynamic cone penetrometer (DCP) and two operators to 
+the project site and back.  
+4. 
+Excavating and sampling seven test pits extending to depths of about 
+1.7 to 2.4 meters below the existing ground surface. 
+5. 
+Performance of DCP testing by our field engineer. 
+6. 
+Coordination of the field exploration and logging of the test pits by our 
+field engineer. 
+7. 
+Providing a Site Safety and Health Officer (SSHO) to oversee the field 
+work.  
+8. 
+Shipping samples to our laboratory on Oahu for testing of selected soil 
+samples obtained during the field exploration as an aid in classifying the 
+materials and evaluating their engineering properties. 
+9. 
+Preparation of this report summarizing our work on the project and 
+presenting our findings and geotechnical recommendations for the project. 
+10. 
+Coordination of our overall work on the project by our project engineer. 
+Final Design Submittal - October 2016
+SECTION 1. GENERAL 
+W.O. 7206-00 
+GEOLABS, INC. 
+Page 3 
+Hawaii • California 
+11. 
+Quality assurance of our work and client/design team consultation by our 
+principal engineer. 
+12. 
+Miscellaneous work efforts, such as drafting, word processing, and clerical 
+support. 
+Detailed descriptions of our field exploration methodology and the Logs of Test 
+Pits are presented in Appendix A. Results of the laboratory tests performed on selected 
+soil samples obtained from our field exploration are presented in Appendix B. Results of 
+the in-situ Dynamic Cone Penetrometer field tests are presented in Appendix C and 
+also are presented graphically on the Logs of Test Pits in Appendix A. 
+END OF GENERAL 
+Final Design Submittal - October 2016
+W.O. 7206-00 
+GEOLABS, INC. 
+Page 4 
+Hawaii • California 
+SECTION 2.  SITE CHARACTERIZATION 
+Diego Garcia, part of the British Indian Ocean Territory (B.I.O.T.), is a horseshoe-
+shaped atoll of the Chagos Archipelago located at 7 degrees south latitude, 
+approximately 1,368 kilometers south of India in the Indian Ocean. The atoll is at the 
+southern terminus of the Chagos-Maldive-Laccadive Ridge, a chain of submarine 
+mountains that extends south from India to the Indo-Australian tectonic plate. Current 
+theory suggests the ridge was built by a mantle hotspot that is presently active at 
+Reunion Island. 
+The origin of coral atolls was first postulated by Charles Darwin in 1842. His 
+theory was that an atoll began as a fringing reef around a volcanic island. The island 
+begins to subside tectonically at a slow rate so that the coral growth maintains a 
+reef-line. As the island subsides and becomes smaller, the reef grows larger and 
+becomes a barrier reef. When the island finally disappears below sea level, the upward-
+growing reef encloses only a lagoon and becomes an atoll. 
+This basic theory has been somewhat modified by other considerations such as 
+eustatic sea level changes and cooled waters brought on by glacial activity. Generally, 
+the ocean side of an atoll is built of larger pieces of rock that are ripped off of the hard 
+reef and worked up during storms while the lagoon side is composed of finer material. 
+The usual atoll island stands between 1.5 to 10 meters above the sea level and Diego 
+Garcia is no exception, with a maximum elevation of about 9 meters above Mean Low 
+Water.  
+The subsurface conditions in a coral atoll vary substantially in both the horizontal 
+and vertical dimensions. Much of the large-scale vertical variation is the result of 
+worldwide glacio-eustatic sea level changes that occurred during the Pleistocene Epoch 
+(Ice Age). One significant low stand of the sea was a stand of relatively long duration at 
+about 18 meters below the present sea level. Throughout the world, many of the coral 
+atolls were eroded to this low stand and the materials above this level are the result of 
+rapid growth and accumulation of coralline deposits since the mid to late-Pleistocene 
+Final Design Submittal - October 2016
+SECTION 2. SITE CHARACTERIZATION  
+W.O. 7206-00 
+GEOLABS, INC. 
+Page 5 
+Hawaii • California 
+Epoch. The horizontal variation is largely dependent upon the environment in which the 
+coralline materials grew or were deposited. 
+In recent time, significant grading and land reclamation have taken place on the 
+atoll. A majority of the new fuel lines (from roughly the DG-1 roadway to the Deep Draft 
+Wharf) would be constructed on reclaimed land that was originally a submerged reef 
+flat. According to available information, the original reef flat was relatively flat (in a 
+regional sense) with an approximate elevation of about -1 meter Mean Sea Level (MSL) 
+and sloped downward into the lagoon near the current location of the Deep Draft Wharf. 
+To bring the site up to current grade, the reef was filled over with dredged fill material. 
+2.1 
+Existing Site Conditions 
+The atoll is a roughly footprint shaped island of approximately 24 kilometers in 
+length with a central lagoon of up to about 11 kilometers in width. The proposed fuel line 
+alignment begins near the existing POL Tank Farm and terminates at the Deep Draft 
+Wharf within the Naval Support Facility. In general, the majority of the fuel line 
+alignment runs parallel with Portsmouth Road. We understand the proposed fuel line 
+alignment is located roughly 25 meters southeast of the roadway centerline.  
+Based on the topographic information provided, the ground elevations along the 
+alignment range from approximately +1.7 meters MSL near the POL Tank Farm to 
+about +3.4 meters MSL near the Deep Draft Wharf. In general, the alignment traverses 
+primarily grassed or vegetated areas except at roadway crossings and the Deep Draft 
+Wharf. At the time of our field exploration, heavy vegetation was observed to the 
+southeast of the proposed fuel line alignment and generally consisted of large trees and 
+shrubs. 
+2.2 
+Subsurface Conditions 
+The subsurface conditions at the project site were explored by excavating 
+seven test pits, designated as Test Pit Nos. 1 through 7, extending to depths between 
+about 1.7 and 2.4 meters below the existing ground surface. The approximate locations 
+of the test pits are shown on the Overall Site Plan (Plate 3) and Site Plans (Plates 4.1 
+through 4.5). In order to evaluate the consistency of the near-surface soils, Dynamic 
+Final Design Submittal - October 2016
+SECTION 2. SITE CHARACTERIZATION  
+W.O. 7206-00 
+GEOLABS, INC. 
+Page 6 
+Hawaii • California 
+Cone Penetrometer (DCP) tests were performed at the test pit locations in general 
+accordance with ASTM D6951. 
+Based on our field exploration, it appears that the project site is underlain 
+primarily by medium dense to very dense granular fills with varying amounts of silt. 
+Seaward of the DG-1 roadway, the fill materials extend to the maximum depths 
+explored of about 2.1 meters except in Test Pit No. 4 where lagoonal deposits 
+consisting of very soft to soft sandy silts were encountered at a depth of approximately 
+1.5 meters. Based on available subsurface information, the fill likely extends to the 
+original reef elevation of about -1 meter MSL (except near the Deep Draft Wharf). It is 
+anticipated that the buried reef consists of gravelly sands, sandy gravel, and coral with 
+pockets of sand and gravel extending down to about Elevation -25 meters MSL. In 
+general, the granular reef materials previously encountered were very loose to medium 
+dense with fines contents varying from a few percent to more than 30 percent. There 
+has been at least one previous soil exploration in the area (C.W. Associates, Inc., 1990) 
+that encountered weak cementation in the granular reef deposits. 
+Based on available subsurface information and concept drawings related to the 
+construction of the Deep Draft Wharf, it is believed that the area near the wharf was 
+dredged to an elevation of about -15 meters prior to construction of the cellular 
+cofferdams. Therefore, it is believed that fill placed underwater may be present 
+extending down to about Elevation -15 meters MSL and up to about 20 meters landward 
+of the cellular cofferdams (40 meters landward of the bulkhead). Based on construction 
+notes from the wharf, the fill materials placed within the cellular cofferdams were 
+surcharged to reduce their compressibility prior to completion of the wharf. 
+Landward of the DG-1 roadway, our field exploration encountered about 1 meter 
+of dense to very dense granular fill material overlying loose to medium dense granular 
+dune and beach deposits extending to the maximum depths explored of about 
+2.1 meters. Based on the available information, the beach deposits likely extend to an 
+elevation of about -3 meters MSL and overlie a coral reef formation consisting of 
+medium dense sandy gravel with some silt and weak cementation. 
+Final Design Submittal - October 2016
+SECTION 2. SITE CHARACTERIZATION  
+W.O. 7206-00 
+GEOLABS, INC. 
+Page 7 
+Hawaii • California 
+Groundwater was encountered at an elevation between approximately +0.2 and 
++0.9 meters MSL during our field exploration. Due to the porous nature of the 
+subsurface materials and the relative proximity of the lagoon, groundwater levels at the 
+project site likely are influenced by tidal variation. The amount of variation is expected to 
+decrease with increased distance from the lagoon or seaward shoreline. Additionally, it 
+is anticipated that the groundwater elevation will increase with increased distance from 
+the lagoon or seaward shoreline due to the presence of a freshwater lens. Therefore, 
+maximum groundwater elevation and minimum cyclic variation in response to tides 
+normally would occur near the center of the land rim (between the lagoon and ocean). 
+Groundwater levels also may be influenced by other factors such as rainfall, surface 
+water runoff, and seasonal precipitation. 
+Detailed descriptions of the subsurface materials encountered from our field 
+exploration are presented on the Logs of Test Pits, Plates A-1 through A-7 in 
+Appendix A. Results of the laboratory tests performed on selected soil samples 
+obtained from our field exploration are presented in Appendix B. Results from the in-situ 
+DCP field tests are presented in Appendix C and also are presented graphically on the 
+Logs of Test Pits in Appendix A. 
+2.3 
+Seismic Design Considerations 
+The project site will be subjected to seismic activity and should be evaluated for 
+the potential for soil liquefaction. Seismic design of the proposed project will be based 
+on the Unified Facilities Criteria “Seismic Design of Buildings” (UFC 3-310-04), which 
+references the 2012 International Building Code (IBC 2012) and UFC Structural 
+Engineering (UFC 3-301-01). 
+2.3.1 Earthquakes and Seismicity 
+The Central Indian Ridge, a divergent tectonic plate boundary between the 
+African Plate and the Indo-Australian Plate, lies just to the west of the Diego 
+Garcia atoll. This ridge is unusually active and several near-ridge earthquakes 
+have occurred within 200 kilometers of Diego Garcia in recent history. Our 
+literature research has identified four such earthquakes (greater than M6.0) that 
+have occurred since 1940. 
+Final Design Submittal - October 2016
+SECTION 2. SITE CHARACTERIZATION  
+W.O. 7206-00 
+GEOLABS, INC. 
+Page 8 
+Hawaii • California 
+Year 
+Date 
+Time 
+Latitude 
+Longitude 
+Magnitude 
+1984 
+Sep. 19 
+2149Z 
+7.0S 
+72.8E 
+6.0 
+1983 
+Dec. 03 
+1743Z 
+6.5S 
+71.4E 
+6.3 
+1983 
+Nov. 30 
+1746Z 
+6.9S 
+72.1E 
+7.3 
+1965 
+Sep. 12 
+2202Z 
+6.4S 
+70.7E 
+6.3 
+2.3.2 Liquefaction Potential 
+Liquefaction is a phenomenon during which loose, saturated, cohesionless soils 
+(such as sands and non-plastic silts) temporarily lose their shear strengths due to 
+the build-up of excess pore water pressures resulting from cyclic stress 
+applications induced by earthquakes. In this process, when the loose saturated 
+sand deposit is subjected to vibration (such as during an earthquake), the soil 
+tends to densify and decrease in volume causing an increase in pore water 
+pressure. If drainage is unable to occur rapidly enough to dissipate the build-up 
+of pore water pressure, the effective stress (internal strength) of the soil is 
+reduced. Under sustained vibrations, the pore water pressure build-up could 
+equal the overburden pressure, essentially reducing the soil shear strength to 
+zero and causing it to behave as a viscous fluid. During liquefaction, the soil 
+acquires sufficient mobility to permit both horizontal and vertical movements, and 
+if not confined, will result in significant deformations. 
+Significant factors known to affect the liquefaction potential of soils are the 
+characteristics of the materials such as grain size distribution and relative 
+density; the plasticity of the fine-grained soils, the degree of saturation; the initial 
+stresses (overburden pressures) acting on the soils; and the characteristics of 
+the earthquakes such as the intensity and duration of ground shaking. The major 
+factors affecting the liquefaction characteristics of soil deposits are as follows: 
+1. 
+Grain Size Distribution - Fine and uniform sands and silts are more 
+susceptible to liquefaction than coarse or well-graded sands. 
+2. 
+Initial Relative Density - Loose sands and silts are most susceptible to 
+liquefaction. Liquefaction potential is inversely proportional to relative 
+density. 
+Final Design Submittal - October 2016
+SECTION 2. SITE CHARACTERIZATION  
+W.O. 7206-00 
+GEOLABS, INC. 
+Page 9 
+Hawaii • California 
+3. 
+Magnitude and Duration of Vibration - Liquefaction potential is directly 
+proportional to the magnitude and duration of the earthquake. 
+Because the project site will be subjected to seismic activity, we have evaluated 
+the potential for soil liquefaction at the project site based on a peak ground 
+acceleration of 0.28g (corresponding to the Maximum Considered Earthquake 
+with a return period of 2,475 years) as specified in UFC 3-301-01 (Structural 
+Engineering) for Diego Garcia.  
+A detailed analysis for liquefaction settlements could not be performed with the 
+limited data obtained during our field exploration and the estimated seismically 
+induced settlements presented below should only be considered as a rough 
+estimate. A review of the subsurface information obtained from the deeper 
+borings previously drilled in the vicinity of the project site appear to indicate that 
+about 1 to 3.5 meters of submerged, loose granular material overlying reef 
+deposits may be encountered below the surface fills along the fuel line alignment 
+(except near the Deep Draft Wharf). These materials generally are susceptible to 
+liquefaction when subjected to a seismic event with peak ground acceleration of 
+0.28g. In the event of soil liquefaction caused by a seismic event with peak 
+ground acceleration of 0.28g, the estimated seismically induced ground 
+settlement due to soil liquefaction could be about 50 millimeters (mm) along the 
+new fuel line. However, surface manifestation of the liquefaction in this area is 
+unlikely due to the thickness of the non-liquefiable layer above the submerged 
+granular material, which translates to relatively uniform settlement for the above-
+ground portions of the new fuel line during a seismic event. 
+We have assumed the reef deposit (underlying the fill material) is weakly 
+cemented and, therefore, may be considered non-liquefiable. There has been at 
+least one previous geotechnical exploration in the area (C.W. Associates, Inc., 
+1990) that encountered weak cementation in the granular reef deposits to 
+support this assumption. However, if we assumed the reef deposit is liquefiable, 
+the estimated seismically induced ground settlement due to soil liquefaction 
+would be upwards of 250 mm along the new fuel line. 
+Final Design Submittal - October 2016
+SECTION 2. SITE CHARACTERIZATION  
+W.O. 7206-00 
+GEOLABS, INC. 
+Page 10 
+Hawaii • California 
+At the Deep Draft Wharf, the estimated 15 meters of submerged, loose granular 
+material landward of the cellular cofferdams generally are susceptible to 
+liquefaction when subjected to a seismic event with peak ground acceleration of 
+0.28g. In the event of soil liquefaction caused by a seismic event with peak 
+ground acceleration of 0.28g, the estimated seismically induced ground 
+settlement due to soil liquefaction in this area could be about 480 mm. Due to the 
+soil confinement and surcharging of the soils during the initial cofferdam 
+construction, we anticipate less than 25 mm of seismically induced settlement 
+within the cofferdams from a seismic event with an associated peak ground 
+acceleration of 0.28g. The surface fills above the water table are not susceptible 
+to liquefaction. 
+2.3.3 Soil Profile 
+In accordance with Chapter 20, Site Classification Procedure for Seismic Design 
+contained in ASCE 7-10 (Minimum Design Loads for Buildings and Other 
+Structures), a site-response analysis is not required to determine the spectral 
+accelerations for liquefiable soils for structures having fundamental periods of 
+vibration equal to or less than 0.5 seconds. Rather, a site class is permitted to be 
+determined in accordance with Section 20.3 and the corresponding values of Fa 
+and Fv determined from Tables 11.4-1 and 11.4-2. Based on these 
+considerations and a review of the subsurface information obtained from the 
+deeper borings previously drilled in the vicinity of the project site, Site Class D 
+may be assumed for the project site. Based on Site Class D, the following 
+seismic design parameters were estimated and may be used for the seismic 
+analysis of this project. 
+SEISMIC DESIGN PARAMETERS 
+Parameter 
+Value 
+MCE Peak Bedrock Acceleration, PBA (Site Class B) = 
+0.28g 
+Mapped MCE Spectral Response Acceleration, SS = 
+0.73g 
+Mapped MCE Spectral Response Acceleration, S1 = 
+0.35g 
+Site Class = 
+“D” 
+Final Design Submittal - October 2016
+SECTION 2. SITE CHARACTERIZATION  
+W.O. 7206-00 
+GEOLABS, INC. 
+Page 11 
+Hawaii • California 
+SEISMIC DESIGN PARAMETERS 
+Parameter 
+Value 
+Site Coefficient, Fa = 
+1.2 
+Site Coefficient, Fv = 
+1.7 
+Adjusted MCE Spectral Response Acceleration, SMS = 
+0.88g 
+Adjusted MCE Spectral Response Acceleration, SM1 = 
+0.60g 
+Design Spectral Response Acceleration, SDS = 
+0.58g 
+Design Spectral Response Acceleration, SD1 = 
+0.40g 
+END OF SITE CHARACTERIZATION 
+Final Design Submittal - October 2016
+W.O. 7206-00 
+GEOLABS, INC. 
+Page 12 
+Hawaii • California 
+SECTION 3.  DISCUSSION AND RECOMMENDATIONS 
+Our field exploration generally encountered surface fills consisting of medium 
+dense to very dense granular materials with varying amounts of silt at the Improve 
+Wharf Refueling Capability project site. The surface fills extended down to depths of 
+about 0.9 to 2.1 meters below the ground surface corresponding to the maximum depth 
+explored. Groundwater was encountered at an elevation of approximately +0.2 and 
++0.9 meters MSL at the time of our field exploration. 
+In some test pits, dune deposits, beach deposits, and lagoonal deposits 
+consisting of loose to dense granular materials and very soft to soft sandy silts were 
+encountered beneath the surface fills. The granular portions of the submerged fill, 
+beach, and dune deposits are susceptible to soil liquefaction when subjected to a 
+seismic event with a peak ground acceleration of 0.28g corresponding to the Maximum 
+Considered Earthquake.  
+Based on discussions with the project mechanical engineer, we understand the 
+IFO fuel line will be designed to accommodate seismically-induced settlements. The 
+JP-5 fuel line will not be designed to accommodate liquefaction settlement; however, 
+the fuel line will not normally contain fuel and will be checked after a seismic event. 
+Therefore, the above ground portion of the proposed fuel line may be supported 
+on a shallow foundation system bearing on the re-compacted on-site soils and/or new 
+compacted fills with the understanding that some footing settlement may occur due to 
+soil liquefaction under seismic conditions. Based on the grading concept, we 
+recommend using shallow isolated spread footings to support the fuel line. Footings 
+should be embedded a minimum of 450 mm below the lowest adjacent finished grades. 
+Bottom of footing excavations should be re-compacted to at least 95 percent relative 
+compaction. 
+Detailed discussions of our geotechnical recommendations for design of the 
+Improve Wharf Refueling Capability project are presented in the following sections. 
+Final Design Submittal - October 2016
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 7206-00 
+GEOLABS, INC. 
+Page 13 
+Hawaii • California 
+3.1 
+Shallow Foundations 
+In general, we understand the proposed new fuel line will be partially above 
+grade and thus may be supported on a shallow foundation system with the 
+understanding that some footing settlement may occur due to soil liquefaction under 
+seismic conditions. Based on this design philosophy and the near-surface soil 
+conditions anticipated at the project site, shallow isolated spread footings may be used 
+to support the above-ground portion of the fuel line.  
+An allowable bearing pressure of up to 120 kilopascals (kPa) may be used for the 
+design of shallow foundations bearing on the recompacted in-situ coralline materials or 
+new compacted fills. This bearing value is for supporting dead-plus-live loads and may 
+be increased by one-third (1/3) for transient loads, such as those caused by wind or 
+seismic forces. 
+For footings bearing on the in-situ granular materials, the bottom of footing 
+excavations should be recompacted to at least 95 percent relative compaction to 
+provide a relatively firm and smooth bearing surface prior to placement of reinforcing 
+steel and/or concrete. Relative compaction, in this report, refers to the in-place dry 
+density of soil expressed as a percentage of the maximum dry density of the same soil 
+established in accordance with ASTM D1557. Optimum moisture content, in this report, 
+is the water content (percentage by weight) corresponding to the maximum dry density. 
+Soft and/or loose materials (as determined by a Geotechnical QC Specialist) 
+encountered at the bottom of the footing excavations should be over-excavated to 
+expose the underlying firm materials. The over-excavation may be backfilled with 
+on-site coarse-grained soils (as defined per ASTM D2487) compacted to a minimum of 
+95 percent relative compaction, or the footing bottom may be extended down to bear on 
+the underlying competent materials.  
+In general, the bottom of footings should be embedded a minimum of 450 mm 
+below the lowest adjacent finished grades. Footings adjacent to planned (or existing) 
+retaining walls should be embedded deep enough to avoid surcharging the retaining 
+wall foundations, or the planned retaining walls should be designed to resist the 
+additional structural loads. 
+Final Design Submittal - October 2016
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 7206-00 
+GEOLABS, INC. 
+Page 14 
+Hawaii • California 
+Foundations that are located next to utility trenches or easements should be 
+embedded below a 45-degree imaginary plane extending upward from the bottom edge 
+of the utility trench or the footing should be embedded to a depth as deep as the inverts 
+of the utility lines. This requirement is necessary to avoid surcharging adjacent 
+below-grade structures with additional structural loads and to reduce the potential for 
+appreciable foundation settlement.  
+If the foundations are designed and constructed in strict accordance with our 
+recommendations, we estimate total static settlements of footings supported on the 
+recompacted in-situ granular materials or new compacted fills should be on the order of 
+about 25 mm under static loading conditions. We estimate differential static settlements 
+between adjacent foundations supported on similar materials would be on the order of 
+about 15 mm. 
+Lateral loads acting on the structure may be resisted by friction between the base 
+of the foundation and the bearing materials and by passive earth pressure developed 
+against the near-vertical faces of the embedded portion of footings. The following table 
+presents coefficient of frictions and passive earth pressures (equivalent fluid pressure) 
+versus loading conditions for footings bearing on compacted in-situ granular materials. 
+LATERAL LOAD RESISTANCE 
+Description 
+Static 
+Condition 
+Seismic 
+Condition 
+Nominal 
+Value 
+Coefficient of Friction 
+0.39 
+0.60 
+0.78 
+Passive Earth Pressure 
+(kN/m3) 
+55.0 
+82.5 
+110.0 
+NOTE:  Factors of Safety of 2.0 and 1.3 required for the static and seismic condition, as stipulated in 
+UFC 3-220-01 (dated November 1, 2012). 
+These values assume that the concrete for footings is cast directly against the 
+excavation sidewalls. Unless covered by pavements or slabs, the passive pressure 
+resistance in the upper 300 mm below finished grades should be neglected.  
+A Geolabs representative and/or a qualified Geotechnical QC Specialist should 
+observe footing excavations prior to the placement of reinforcing steel or concrete to 
+confirm the foundation bearing conditions and the required embedment depths. 
+Final Design Submittal - October 2016
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 7206-00 
+GEOLABS, INC. 
+Page 15 
+Hawaii • California 
+3.2 
+Slabs-On-Grade 
+Based on the subsurface conditions, new concrete slabs-on-grade likely will bear 
+on the on-site granular soils and/or select granular fill materials; therefore, a 
+conventional slab-on-grade design may be utilized for the on-grade structures. 
+However, if loose soils are encountered at the subgrade level, these soils should be 
+over-excavated and replaced with select granular fill materials compacted to a minimum 
+of 95 percent relative compaction. 
+Prior to placing fill material, the subgrade should be scarified to a depth of about 
+200 mm (8 inches), moisture-conditioned to above the optimum moisture content, and 
+recompacted to a minimum of 95 percent relative compaction. Slab subgrades should 
+be kept moist until covered by concrete. Saturation and subsequent yielding of the 
+exposed subgrade due to inclement weather and poor drainage may require over-
+excavation of the soft areas and replacement with well-compacted fill. 
+For slabs not subjected to vehicular traffic or machinery vibration, we recommend 
+placing a minimum 100-mm thick layer of cushion fill consisting of open-graded gravel 
+(ASTM C33, No. 67 gradation) below the slabs. The open-graded gravel cushion fill 
+would provide uniform support of the slabs and would serve as a capillary moisture 
+break. To reduce the potential for excessive future moisture infiltration through the slab 
+and subsequent damage to floor coverings, an impervious moisture barrier should be 
+provided on top of the open-graded gravel cushion fill layer for interior building slabs. 
+For the design of structural slabs supported on the open-graded gravel, a modulus of 
+subgrade reaction of about 40,000 kN/m3 (150 pci) may be used for the open-graded 
+gravel. 
+Where slabs will be subjected to equipment vibration and/or vehicular traffic, we 
+recommend placing the floor slab over 150 mm of aggregate subbase in lieu of the 
+open-graded gravel cushion fill. The aggregate subbase should consist of crushed 
+aggregates compacted to a minimum of 95 percent relative compaction. The aggregate 
+subbase should conform to the material guidelines of UFC 3-250-01FA, Chapter 5, 
+corresponding to a design CBR of 40 or 50. For the design of structural slabs supported 
+on the aggregate subbase, a modulus of subgrade reaction of about 95,000 kN/m3 
+Final Design Submittal - October 2016
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 7206-00 
+GEOLABS, INC. 
+Page 16 
+Hawaii • California 
+(350 pci) may be used for the compacted aggregate subbase. Where slabs are intended 
+to function as rigid pavements, a minimum slab thickness of 150 mm may be used. 
+Provisions should be made for proper load transfer across the slab joints that will be 
+subject to vehicular traffic.  
+3.3 
+Site Preparation 
+Based on the relatively flat topography at the project site, we anticipate the 
+majority of the site preparation work for the proposed project will consist of minor cuts 
+and fills to achieve the design finished grades. As mentioned above, the project site 
+generally is underlain by near-surface granular fills of varying quality with the potential 
+for localized loose zones. Therefore, special attention should be given to the subgrade 
+preparation for the project construction. 
+At the on-set of earthwork, the area within the contract grading limits should be 
+cleared and grubbed thoroughly. Vegetation, organic debris, and other unsuitable 
+materials, should be removed and disposed of properly off-site or in a designated area 
+to reduce the potential for contamination of the excavated materials with the cleared 
+and grubbed spoils. Soft and yielding areas encountered during clearing and grubbing 
+should be over-excavated to expose firm natural material, and the resulting excavation 
+should be backfilled with well-compacted fill. The excavated soft and/or organic soils 
+should be properly disposed of off-site. Contract documents should include additive and 
+deductive unit prices for over-excavation and engineered fill placement to account for 
+variations in the over-excavation quantities. 
+Existing underground utilities to be discontinued should be removed, and the 
+resulting excavation should be backfilled properly with the excavated on-site materials. 
+The on-site materials should be moisture-conditioned to above the optimum moisture 
+content, placed in 150 to 200-mm level loose lifts, and compacted to a minimum of 
+90 percent relative compaction. Utilities to be abandoned in-place under the proposed 
+structure should be backfilled by pumping lean concrete or CLSM (Controlled Low 
+Strength Material) under low to moderate pressures. 
+Fill materials required for the project construction should consist of 
+non-expansive select granular material, such as the on-site coralline sands or offsite 
+Final Design Submittal - October 2016
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 7206-00 
+GEOLABS, INC. 
+Page 17 
+Hawaii • California 
+crushed coral or dredged coralline sands. The material should be well-graded from 
+coarse to fine with particles no larger than 75 millimeters in largest dimension and 
+should contain between 10 and 30 percent particles passing the No. 200 sieve 
+(0.074 mm). The material should have a laboratory CBR value of 20 or more and should 
+have a maximum swell of one percent or less when tested in accordance with 
+ASTM D1883. The on-site coralline materials should be suitable for use as non-
+expansive select granular fill material if they are processed to meet the above 
+requirements.  
+Fill materials should be moisture-conditioned to above the optimum moisture 
+content, placed in level lifts not exceeding 200 mm in loose thickness, and compacted 
+to a minimum of 90 percent relative compaction. The compaction requirement should be 
+increased to a minimum of 95 percent relative compaction for fills placed within 1 meter 
+below the finished pavement grade. 
+A Geolabs representative and/or a qualified Geotechnical QC Specialist should 
+monitor site grading operations to observe whether undesirable materials are 
+encountered during the scarification process and to confirm whether the exposed soil 
+and/or rock conditions are similar to those presented and assumed. 
+3.4 
+Utility Trenches 
+In general, we recommend using granular bedding consisting of 150 mm of clean 
+sand conforming to ASTM C144 (masonry aggregate) or ASTM C33 (fine concrete 
+aggregate) with not more than 5 percent by weight passing the No. 200 sieve for 
+support under the pipes. The granular bedding should be moisture-conditioned and 
+compacted to no less than 90 percent relative compaction. If soft and/or loose soils (as 
+determined by a Geotechnical QC Specialist) are encountered at or near the invert of 
+the pipes, a stabilization layer consisting of additional 450 millimeters of the material 
+described above wrapped in a non-woven filter fabric (Mirafi 180N or equivalent) should 
+be provided below the bedding layer for uniform support. 
+Free draining granular materials, such as clean sand conforming to ASTM C144 
+(masonry aggregate) or ASTM C33 (fine concrete aggregate) with not more than 
+5 percent by weight passing the No. 200 sieve, also should be used for the initial trench 
+Final Design Submittal - October 2016
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 7206-00 
+GEOLABS, INC. 
+Page 18 
+Hawaii • California 
+backfill up to about 300 mm above the pipes (or 300 mm above the groundwater level) 
+to provide adequate support around the pipes. This material also may be used to 
+backfill around the pipe provided that all the sandy materials are properly compacted 
+(minimum 90 percent relative compaction). It is critical to use these free draining 
+materials to reduce the potential for formation of voids below the haunches of pipes and 
+to provide adequate support for the sides of the pipes. Improper trench backfill could 
+result in backfill settlement and pipe damage. 
+The upper portion of the trench backfill from the level 300 mm above the pipes 
+(or groundwater level) to the top of the subgrade or finished grade may consist of 
+excavated on-site soils having particles less than 75 mm in largest dimension or 
+imported select granular material. The backfill should be placed in maximum 200-mm 
+level loose lifts and mechanically compacted to no less than 90 percent relative 
+compaction to reduce the potential for appreciable future ground subsidence. Where 
+trenches are located below pavement areas, the upper 1 meter of the trench backfill 
+below the pavement grade should be compacted to at least 95 percent relative 
+compaction. 
+3.5 
+Excavation 
+In order to install the underground utility lines, excavations below the existing 
+ground surface will be required for the project construction. Based on the results of our 
+field exploration and available soil boring data, subsurface conditions at the project area 
+generally consist of 3 meters of medium dense to very dense surface fills overlying 
+loose to medium dense coralline sands and gravel extending to depths of over 
+30 meters below the existing ground surface.  
+3.5.1 Excavation Method 
+Based on our experience in the area, the surface fill soils and underlying loose to 
+medium dense coralline materials anticipated at greater depths may be 
+excavated with conventional earthmoving equipment. However, excavations into 
+localized dense zones or coral ledges may require the use of hoerams or 
+chipping. 
+Final Design Submittal - October 2016
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 7206-00 
+GEOLABS, INC. 
+Page 19 
+Hawaii • California 
+The above discussions regarding the rippability of the subsurface materials are 
+based on our experience and the available soils boring data. Sitework 
+subcontractors should be encouraged to examine the site conditions and the 
+subsurface data to make their own reasonable and prudent interpretation. 
+In general, the contractor should determine the method and equipment to be 
+used for excavation, subject to practical limits and safety considerations. The 
+excavated soils should not be stockpiled closer than a horizontal distance equal 
+to the depth of the excavation measured from the outside edge of the excavation 
+in order to reduce the potential for appreciable ground movement. In addition, the 
+excavated soils should be stockpiled at least 5 meters away from underground 
+utilities to reduce the potential for ground movement or subsidence, which may 
+damage the existing underground utility lines. 
+3.5.2 Excavation Support 
+We anticipate excavation depths up to about 4 meters may be required for the 
+project construction. In areas where open excavations are feasible, we believe 
+that a temporary cut slope inclination of one-and-one half horizontal to 
+one vertical (1½H:1V) or flatter may be used in areas exposing the dense surface 
+fills. 
+In areas where open excavations are not feasible, we believe shoring of the 
+sides of the excavations will be necessary to protect personnel working in the 
+excavations based on the subsurface conditions anticipated and the excavation 
+depths. Based on the competent subsurface soil conditions and the anticipated 
+depth of excavation, we believe steel plates with horizontal struts or hydraulic 
+speed shores may be considered for temporary shoring of the new utility lines 
+planned for the project. 
+It is important to install adequate shoring prior to the excavation and to maintain it 
+tightly against the excavation walls with proper bracing during excavation. The 
+properly braced shoring is essential to reduce the potential for appreciable lateral 
+movements of the adjacent ground into the excavation, which may result in 
+Final Design Submittal - October 2016
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 7206-00 
+GEOLABS, INC. 
+Page 20 
+Hawaii • California 
+potential settlements or distress to the adjacent structures or other 
+improvements, such as pavements or existing utilities. 
+The contractor should be solely responsible for the adequacy and safety of the 
+shoring installation. His/her representative, who should be required to be 
+continuously present on site during excavation and construction work, will have 
+the best opportunity to promptly observe changing conditions during construction, 
+such as unforeseen subsoils, unexpectedly high groundwater table, inappropriate 
+construction sequence or techniques, etc., which may affect shoring stability. 
+However, it must be noted that some minor movements of the shoring system 
+and the adjacent ground may still occur due to changes in earth stresses during 
+excavation. Due to the complexity of the stress changes, it is difficult to 
+accurately estimate the magnitude of movement. The magnitude also depends 
+greatly upon workmanship, such as how quickly and tightly the shoring and 
+bracing supports are installed, the subsoil conditions, the size of the excavation, 
+and the rate of excavation. Therefore, it is important to realize that the excavation 
+shoring should be installed properly and as early as practical, if necessary, and 
+that the adjacent ground should be continuously monitored for cracks, dips 
+and/or other indications of movements with instruments. 
+3.6 
+Dewatering 
+Based on the groundwater levels anticipated and the permeable nature of the 
+coralline deposits to be encountered during the excavations, dewatering of excavations 
+likely will be necessary where the existing groundwater level is above the bottom of the 
+proposed excavation. Groundwater is anticipated to be encountered at an elevation 
+between 0 to +1 meter MSL based on our field exploration program and available soils 
+boring data in the project vicinity.   
+Because of the granular nature of the subsoils, it is anticipated that the granular 
+soils encountered are relatively permeable. Therefore, dewatering of the excavation 
+may involve large volumes of water. Dewatering by means of a well point system along 
+the outside of the excavations generally is not recommended. The resultant areal 
+depression of the natural groundwater table could induce consolidation of the 
+Final Design Submittal - October 2016
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 7206-00 
+GEOLABS, INC. 
+Page 21 
+Hawaii • California 
+compressible subsoils resulting in potential ground settlements, which could affect the 
+existing structures. The contractor must carefully evaluate the potential impact of the 
+dewatering system selected on depressing the natural groundwater table. 
+The contractor is responsible for dewatering for construction. The selection of 
+equipment and methods of dewatering should be left up to the contractor, and the 
+contractor should be aware that modifications to the dewatering system may be 
+required during construction depending on the conditions encountered. The dewatering 
+method selected should have minimal impact on the groundwater level surrounding the 
+proposed excavation. These works or systems may include, but are not limited to, 
+pumping, grouting, cut-off walls, cofferdams, tremie plugs to resist buoyant forces, or 
+any combination of the above or other possible methods. The dewatering operations 
+should be coordinated with the trench shoring support such that the stability of the 
+excavations is not jeopardized. The operations should be carried-out without softening 
+the bottom of the excavations. 
+3.6.1 Subsurface Soil Permeability 
+Percolation tests were not conducted at the project site. However, based on the 
+soils encountered, we estimate that the subsurface permeability of the on-site 
+soils may be on the order of about 0.01 to 0.5 centimeters per second. 
+It is our opinion that the above estimated permeability values should be used with 
+caution due to the normally heterogeneous nature of the coralline subsurface 
+soils. The actual subsurface soil permeability may range broadly and also vary 
+locally in terms of the orders of magnitude. It should be noted that the 
+permeability of the subsurface soils at the site appears to be highly permeable 
+based on field observations and previous experience in the area. Therefore, the 
+contractor should give special attention to the site-specific dewatering plan for 
+the proposed project. 
+3.6.2 Dewatering Considerations 
+We suggest that the following three basic criteria be considered in selection of a 
+suitable method of dewatering: 
+Final Design Submittal - October 2016
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 7206-00 
+GEOLABS, INC. 
+Page 22 
+Hawaii • California 
+a. 
+The dewatering method should result in the least disturbance or 
+damage to existing buildings, roads, and environment. 
+b. 
+The dewatering method should maintain stability of, and also 
+provide safe and dry working conditions in, the excavation. 
+c. 
+The dewatering method should be sufficiently flexible to allow 
+modifications to accommodate various ground conditions. 
+3.6.3 Dewatering Precaution and Monitoring 
+The potential impact of the dewatering system selected on depressing the natural 
+groundwater table must be carefully evaluated by the contractor prior to 
+dewatering.  The contractor should be solely responsible for the impact and 
+safety of the dewatering operations. His/her qualified representative, who should 
+be continuously present on-site during dewatering activities, will have the best 
+opportunity to promptly observe the effects of dewatering during construction and 
+to implement, as soon as possible, necessary precautionary or remedial 
+measures including, but not limited to, slowing down or stopping the dewatering 
+operations. 
+Where encountered at the bottom of excavations, permeable granular subsoils 
+may be susceptible to piping and "quick" conditions. The dewatering operations 
+should be carried-out without creating a "quick" condition or softening at the 
+excavation bottoms. Therefore, the project dewatering operations should be 
+performed without pumping out soil fines (pumping clear water only) and should 
+be coordinated with the shoring installation such that the excavation stability is 
+not adversely affected. Excessive pumping, which removes soil fines, may result 
+in "blowing" or heaving of the excavation bottom or sides. 
+Groundwater drawdown outside the excavation will cause additional settlement 
+resulting from consolidation of the soft/loose compressible soils. Therefore, the 
+use of a deep well system outside the excavations to draw down the groundwater 
+level should not be allowed. 
+Special caution should also be taken to avoid dewatering utility trenches 
+connected to the excavations. If this occurs, the granular bedding and/or backfill 
+Final Design Submittal - October 2016
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 7206-00 
+GEOLABS, INC. 
+Page 23 
+Hawaii • California 
+in the utility trenches could act as subdrains and cause significant areal 
+groundwater drawdown. Significant areal groundwater drawdown would result in 
+ground settlements and potential damage to utility lines and/or other existing 
+adjacent structures. 
+3.7 
+Foundations for Fuel Pits 
+We understand new fuel pits will be constructed to support the project. Based on 
+the preliminary drawings provided, these structures will have bottom elevations likely 
+near or below the groundwater elevation. Based on these considerations, we 
+recommend placing a subgrade stabilization layer consisting of 600 mm of open-graded 
+gravel (ASTM C33, No. 57 or No. 67 gradation) wrapped in a non-woven filter fabric 
+(Mirafi 180N or equivalent). The stabilization layer also should extend beyond the sides 
+of the structures by a minimum of 500 mm. 
+The fuel pits should be designed to resist the lateral earth pressure due to 
+adjacent soil and surcharge effects. The recommended lateral earth pressures, 
+expressed in equivalent fluid pressures of kilonewtons per square meter per meter of 
+depth (kN/m3), are presented in the following table. 
+LATERAL EARTH PRESSURES FOR DESIGN OF FUEL PITS 
+Groundwater Condition 
+Active 
+At-Rest 
+(kN/m3) 
+(kN/m3) 
+Above  
+5.8 
+8.9 
+Below 
+12.6 
+14.1 
+The values provided assume that open-graded gravel (ASTM C33, No. 57 or 
+No. 67 gradation) wrapped in a non-woven filter fabric (below the groundwater level) 
+and on-site granular soils (above the groundwater level) will be used to backfill behind 
+the structure walls. It is assumed that the backfill (above the groundwater level) behind 
+walls will be compacted to between 90 and 95 percent relative compaction. 
+Over-compaction of the backfill should be avoided. 
+Surcharge stresses due to areal surcharges, line loads, and point loads within a 
+horizontal distance equal to the depth of the below-grade structures should be 
+Final Design Submittal - October 2016
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 7206-00 
+GEOLABS, INC. 
+Page 24 
+Hawaii • California 
+considered in the design. For uniform surcharge stresses imposed on the below-grade 
+structures, a rectangular distribution with uniform pressure equal to 47 percent of the 
+vertical surcharge pressure acting on the entire height of the structure may be used in 
+design. Additional analyses during design may be needed to evaluate the surcharge 
+effects of point loads and line loads. 
+3.8 
+Dynamic Lateral Earth Pressures 
+Dynamic lateral earth forces due to seismic loading will need to be considered in 
+the design of the fuel pits. An appropriately reduced safety factor may be used when 
+dynamic lateral earth forces are accounted for in the design of fuel pits. The table below 
+summarizes the dynamic lateral earth forces versus the estimated wall displacements. 
+Please note that the values provided in the table apply to level backfill conditions, where 
+H is the height of the wall in meters. The resultant force should be assumed to act 
+through the mid height of the wall. The dynamic lateral earth forces are in addition to the 
+static lateral earth pressures. 
+DYNAMIC LATERAL EARTH FORCES 
+FOR RETAINING STRUCTURES 
+Backfill 
+Condition 
+Lateral 
+Movement 
+Dynamic Lateral  
+Earth Forces 
+Dynamic Lateral  
+Earth Forces 
+(mm) 
+(Newtons/linear meter) 
+(lbs/linear foot) 
+Level Backfill 
+<12 
+1933 H2 
+12.3 H2 
+25 
+911 H2 
+5.8 H2 
+50 
+738 H2 
+4.7 H2 
+75 
+660 H2 
+4.2 H2 
+100 
+612 H2 
+3.9 H2 
+125 
+581 H2 
+3.7 H2 
+150 
+550 H2 
+3.5 H2 
+175 
+534 H2 
+3.4 H2 
+200 
+502 H2 
+3.2 H2 
+3.9 
+Corrosion Potential and Chemical Attack to Concrete 
+Minimum resistivity, pH, chloride content, and sulfate content tests were 
+performed to evaluate the corrosivity of the in-situ soils at the site. We performed the pH 
+and minimum resistivity tests on selected soil samples in general accordance with 
+Final Design Submittal - October 2016
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 7206-00 
+GEOLABS, INC. 
+Page 25 
+Hawaii • California 
+ASTM G51 and ASTM G57, respectively. TestAmerica Laboratories, Inc. tested the 
+selected soil samples to determine the chloride and sulfate contents of the in-situ soils. 
+The chloride and sulfate contents were determined in general accordance with the 
+EPA 300.0 test methods. Results of the corrosivity tests are presented on Plate B-13 in 
+Appendix B. 
+Resistivity generally is recognized as one of the most significant soil 
+characteristics with regard to the corrosivity of the soil to buried metallic objects. 
+Generally, a lower resistivity results in a greater potential for corrosion of buried metallic 
+objects. Conversely, a higher resistivity means the soil is less likely to contribute to 
+corrosion of metallic objects. Based on the resistivity values of the in-situ soils 
+encountered, the subsurface materials may be classified as mildly corrosive to 
+moderately corrosive for buried metallic structures. A corrosion engineer should be 
+consulted for detailed recommendations on corrosion protection of metallic 
+substructures, if appropriate. 
+The method used to control the corrosion of underground concrete pipelines and 
+structures is dependent on the pH and the chloride and sulfate contents found in the 
+soil. In general, soils with a chloride content of less than 500 parts per million (ppm), 
+sulfate content of less than 2,000 ppm, and a pH of greater than 5.0 may be considered 
+“non-corrosive” to underground concrete pipelines and structures. Based on the test 
+results, the in-situ soils may be considered “non-corrosive” to underground concrete 
+pipelines and structures; therefore, the typical Type I or Type II cement and a minimum 
+concrete cover of 75 mm over reinforcing steel should be adequate for concrete 
+substructures in contact with the on-site soils. 
+3.10 Design Review 
+Preliminary and final drawings and specifications for the project should be 
+forwarded to Geolabs for review and written comments prior to bid solicitation. This 
+review is necessary to evaluate conformance of the plans and specifications with the 
+intent of the geotechnical recommendations provided herein. If this review is not made, 
+Geolabs cannot be held responsible for misinterpretation of our recommendations. 
+Final Design Submittal - October 2016
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 7206-00 
+GEOLABS, INC. 
+Page 26 
+Hawaii • California 
+3.11 Construction Monitoring 
+Geolabs and/or a qualified Geotechnical QC Specialist should provide 
+geotechnical engineering services during construction. Some of the critical items of 
+construction monitoring include the following: 
+Observation of fill placement and compaction 
+Observation of shallow foundation excavations and subgrade preparation 
+A Geolabs representative and/or qualified Geotechnical QC Specialist should 
+monitor the other aspects of the earthwork construction to observe compliance with the 
+intent of the design concepts, specifications, or recommendations and to expedite 
+suggestions for design changes that may be required in the event that subsurface 
+conditions differ from those anticipated at the time this report was prepared. 
+Compaction test results should be forwarded to Geolabs for review and comment. The 
+recommendations provided herein are contingent upon such observations. 
+If the actual exposed subsurface conditions encountered during construction are 
+different from those assumed or considered herein, then appropriate design 
+modifications should be made. 
+END OF DISCUSSION AND RECOMMENDATIONS 
+Final Design Submittal - October 2016
+W.O. 7206-00 
+GEOLABS, INC. 
+Page 27 
+Hawaii • California 
+SECTION 4.  LIMITATIONS 
+The analyses and recommendations presented in this report are based, in part, 
+upon information obtained from the test pits from our limited site-specific field 
+investigation and from borings drilled in the vicinity of the project site by Geolabs and by 
+others for other projects. Variations of the subsurface conditions between and beyond 
+the excavated test pits may occur, and the nature and extent of these variations may 
+not become evident until construction is underway. If variations then appear evident, it 
+will be necessary to re-evaluate the recommendations provided in this report. 
+The test pit locations and elevations indicated in this report are approximate, 
+having been surveyed by Dueñas, Camacho & Associates, Inc. during the field 
+exploration. The physical location and elevation of the test pits should be considered 
+accurate only to the degree implied by the method used. 
+The stratification lines shown on the graphic representations of the test pits 
+depict the approximate boundaries between the soil and/or rock types and, as such, 
+may denote a gradual transition. Water level data from the test pits were measured at 
+the times shown on the graphic representations and/or presented in the text of this 
+report. These data have been reviewed and interpretations made in the formulation of 
+this report. It should be noted that groundwater fluctuations may occur due to variation 
+in tides, rainfall, temperature, and other factors. 
+This report has been prepared for the exclusive use of Burns & McDonnell for 
+specific application to the design of the proposed P-1705, Improve Wharf Refueling 
+Capability project located at Naval Support Facility, Diego Garcia in the British Indian 
+Ocean Territory in accordance with generally accepted geotechnical engineering 
+principles and practices. No warranty is expressed or implied. 
+The owner/client should be aware that unanticipated soil and/or rock conditions 
+are encountered commonly during construction. Unforeseen subsurface conditions, 
+such as soft deposits, hard layers, cavities, or perched groundwater, may occur in 
+localized areas and may require additional probing or corrections in the field (which may 
+result in construction delays) to attain a properly constructed project. Therefore, a 
+Final Design Submittal - October 2016
+SECTION 4. LIMITATIONS  
+W.O. 7371-20 
+GEOLABS, INC. 
+Page 28 
+Hawaii • California 
+sufficient contingency fund is recommended to accommodate these possible extra 
+costs. 
+This geotechnical engineering exploration conducted at the project site was not 
+intended to investigate the potential for presence of hazardous materials existing at the 
+site. It should be noted that the equipment, techniques, and personnel used to conduct 
+a geo-environmental exploration differ substantially from those applied in geotechnical 
+engineering. 
+END OF LIMITATIONS 
+Final Design Submittal - October 2016
+W.O. 7206-00 
+GEOLABS, INC. 
+Page 29 
+Hawaii • California 
+SECTION 5.  REFERENCES 
+American Society of Civil Engineers (2010), Minimum Design Loads for Buildings and 
+Other Structures. 
+Andrews, D. C. A. and Martin, G. R. (2000), “Criteria for Liquefaction of Silty Soils,” 
+12th World Congress on Earthquake Engineering, Auckland, New Zealand. 
+C.W. Associates Inc., dba Geolabs-Hawaii (January 1990), Supplemental Geotechnical 
+Engineering Exploration, FY92 DLA Project F-A16, (Formerly FY90 MCON Project 
+P-077), Fuel Storage Tanks, U.S. Naval Support Facility, Diego Garcia, B.I.O.T. 
+International Code Council (2012), International Building Code. 
+McClelland Engineers (June 1980), Geotechnical Investigation, U.S. Navy Support 
+Facility, Diego Garcia, B.I.O.T., Volume 1 – Field & Laboratory Phases. 
+Moffatt & Nichol, Engineers (November 1980), Appendix to Concept Study, Waterfront 
+Facilities, Diego Garcia, Contract N62742-80-R-0077. 
+Mohammadi, S.D., et al., “Application of Dynamic Cone Penetrometer (DCP) for 
+determination of the engineering parameters of sandy soils,” Engineering Geology 101, 
+2008. 
+NCEER (1997), “Proceedings of the NCEER Workshop on Evaluation of Liquefaction 
+Resistance of Soils,” T.L. Youd and I.M. Idriss (Editors), Technical Report 
+NCEER-97-0022, NCEER, Buffalo, NY. 
+US Department of Defense (2012).  Soil Mechanics, UFC 3-220-01, November. 
+US Department of Defense (2013).  Seismic Design for Buildings, UFC 3-310-04, June. 
+US Department of Defense (2014).  Structural Engineering, UFC 3-301-01, May. 
+Youd, T.L. et al. (2001), “Liquefaction Resistance of Soils: Summary Report from the 
+1996 NCEER and 1998 NCEER/NSF Workshops on Evaluation of Liquefaction 
+Resistance of Soils,” Journal of Geotechnical and Geo-Environmental Engineering, 
+ASCE, Vol. 127, No. 10, October. 
+Final Design Submittal - October 2016
+W.O. 7206-00 
+GEOLABS, INC. 
+Page 30 
+Hawaii • California 
+CLOSURE 
+The following plates and appendices are attached and complete this report: 
+Area Map ................................................................................................................ Plate 1 
+Project Location Map .............................................................................................. Plate 2 
+Overall Site Plan .................................................................................................... Plate 3 
+Site Plans ............................................................................................. Plates 4.1 thru 4.5 
+Field Exploration ............................................................................................. Appendix A 
+Laboratory Tests ............................................................................................. Appendix B 
+Dynamic Cone Penetrometer Field Data ......................................................... Appendix C 
+-- 
+Respectfully submitted, 
+GEOLABS, INC. 
+By ________________________ 
+              Robin M. Lim, P.E. 
+                    President 
+RML:TR:as 
+h:\7200Seires\7206-00.tr2 
+Final Design Submittal - October 2016
+AIRPORT SEGMENT 
+AIEA TO MIDDLE STREET 
+HONOLULU, OAHU, HAWAII 
+W.O. 6000-30     FEBRUARY 8, 2010 
+Prepared for 
+PB AMERICAS, INC. 
+THIS WORK WAS PREPARED BY 
+ME OR UNDER MY SUPERVISION. 
+4-30-10
+SIGNATURE 
+EXPIRATION DATE 
+OF THE LICENSE
+GEOLABS, INC. 
+Geotechnical Engineering and Drilling Services 
+2006 Kalihi Street • Honolulu, HI  96819 
+Hawaii • California 
+PLATES 
+Final Design Submittal - October 2016
+Final Design Submittal - October 2016
+Final Design Submittal - October 2016
+Final Design Submittal - October 2016
+Final Design Submittal - October 2016
+Final Design Submittal - October 2016
+Final Design Submittal - October 2016
+Final Design Submittal - October 2016
+Final Design Submittal - October 2016
+APPENDIX  A  
+Final Design Submittal - October 2016
+W.O. 7206-00 
+GEOLABS, INC. 
+OCTOBER 2016     Page A-1 
+Hawaii • California 
+A P P E N D I X   A 
+Field Exploration 
+Our field exploration program consisted of excavating and sampling seven test 
+pits, designated as Test Pit Nos. 1 through 7, extending to depths between about 
+1.7 and 2.4 meters below the existing ground surface. The approximate test pit 
+locations are shown on the Overall Site Plan (Plate 3) and Site Plans (Plates 4.1 
+through 4.5). An Airman AX 40 track-mounted excavator was used to excavate the test 
+pits. 
+Our engineer observed the excavation operations on a near-continuous basis 
+and classified the materials encountered in the test pits by visual and textural 
+examination in the field. These classifications were further refined by visual observation 
+and testing in the laboratory. Soils were classified in general conformance with the 
+Unified Soil Classification System, as shown on the Soil Log Legend, Plate A-0.1. 
+Deviations made to the soil classification in accordance with ASTM D2487 are 
+described on the Soil Classification Log Key, Plate A-0.2. Graphic representations of the 
+materials encountered are presented on the Logs of Test Pits (Plates A-1 through A-7). 
+In order to evaluate the consistency or relative density of the near-surface soils, 
+Dynamic Cone Penetrometer (DCP) tests were conducted at the test pit locations. The 
+procedures used in our DCP tests are in general accordance with ASTM D6951, 
+Standard Test Method for Use of the Dynamic Cone Penetrometer in Shallow 
+Pavement Applications. The procedures used in our data processing generally were 
+derived from the publication entitled “Application of Dynamic Cone Penetrometer (DCP) 
+for determination of the engineering parameters of sandy soils” prepared by 
+S.D. Mohammadi, et al. The DCP field data is presented in Appendix C and also is 
+presented graphically on the Logs of Test Pits in Appendix A. 
+CORRELATION BETWEEN SPT N-VALUES WITH DCP RESISTANCE, AND 
+APPARENT SOIL DENSITY 
+Apparent Soil Density 
+SPT N-Values 
+(blows per 300 millimeters) 
+DCP Resistance 
+(average penetration per blow) 
+Very Loose 
+< 4 
+> 42 mm 
+Loose 
+4 – 10 
+23 – 42 mm  
+Medium Dense 
+10 – 30 
+12 – 23 mm 
+Dense 
+30 – 50 
+5 – 12 mm 
+Very Dense 
+> 50 
+< 5 mm 
+Note: The correlation is based on “Application of Dynamic Cone Penetrometer (DCP) for determination 
+of the engineering parameters of sandy soils” prepared by S.D. Mohammadi, et al. 
+Final Design Submittal - October 2016
+A-0.1
+UNCONSOLIDATED UNDRAINED
+TRIAXIAL COMPRESSION (kPa)
+MORE THAN 50%
+OF COARSE
+FRACTION
+RETAINED ON
+NO. 4 (4.76 mm)
+SIEVE
+50% OR MORE OF
+COARSE FRACTION
+PASSING
+THROUGH NO. 4
+(4.76 mm) SIEVE
+MORE THAN 50%
+OF MATERIAL
+RETAINED ON NO.
+200 (0.074 mm)
+SIEVE
+50% OR MORE OF
+MATERIAL PASSING
+THROUGH NO. 200
+(0.074 mm) SIEVE
+TORVANE SHEAR (kPa)
+(50-mm) O.D. STANDARD PENETRATION TEST
+POCKET PENETROMETER (kPa)
+(75-mm) O.D. MODIFIED CALIFORNIA SAMPLE
+UNCONFINED COMPRESSION (kPa)
+INORGANIC SILTS AND VERY FINE SANDS,
+ROCK FLOUR, SILTY OR CLAYEY FINE SANDS
+OR CLAYEY SILTS WITH SLIGHT PLASTICITY
+POORLY-GRADED GRAVELS, GRAVEL-SAND
+MIXTURES, LITTLE OR NO FINES
+CLAYEY GRAVELS, GRAVEL-SAND-CLAY
+MIXTURES
+WELL-GRADED SANDS, GRAVELLY SANDS,
+LITTLE OR NO FINES
+POORLY-GRADED SANDS, GRAVELLY
+SANDS, LITTLE OR NO FINES
+SILTY SANDS, SAND-SILT MIXTURES
+CLAYEY SANDS, SAND-CLAY MIXTURES
+LIQUID LIMIT
+50 OR MORE
+CH
+NOTE: DUAL SYMBOLS ARE USED TO INDICATE BORDERLINE SOIL CLASSIFICATIONS
+MH
+SILTS
+AND
+CLAYS
+SILTS
+AND
+CLAYS
+LIQUID LIMIT
+LESS THAN 50
+USCS
+TYPICAL
+DESCRIPTIONS
+GW
+MORE THAN 12%
+FINES
+WATER LEVEL OBSERVED IN BORING OVERNIGHT
+HIGHLY ORGANIC SOILS
+SILTY GRAVELS, GRAVEL-SAND-SILT
+MIXTURES
+OL
+PEAT, HUMUS, SWAMP SOILS WITH HIGH
+ORGANIC CONTENTS
+INORGANIC CLAYS OF LOW TO MEDIUM
+PLASTICITY, GRAVELLY CLAYS, SANDY
+CLAYS, SILTY CLAYS, LEAN CLAYS
+Soil Log Legend
+ORGANIC CLAYS OF MEDIUM TO HIGH
+PLASTICITY, ORGANIC SILTS
+SC
+Plate
+GM
+FINE-
+GRAINED
+SOILS
+COARSE-
+GRAINED
+SOILS
+CLEAN SANDS
+SANDS WITH
+FINES
+SP
+SANDS
+GRAVELS
+WELL-GRADED GRAVELS,  GRAVEL-SAND
+MIXTURES, LITTLE OR NO FINES
+ML
+CL
+OH
+LESS THAN 5%
+FINES
+GRAVELS WITH
+FINES
+CLEAN
+GRAVELS
+GRAB SAMPLE
+PLASTICITY INDEX (NP=NON-PLASTIC)
+UC
+TV
+PEN
+LEGEND
+WATER LEVEL OBSERVED IN BORING AT TIME OF
+DRILLING
+WATER LEVEL OBSERVED IN BORING AFTER DRILLING
+SM
+MAJOR DIVISIONS
+GP
+MORE THAN 12%
+FINES
+PT
+LESS THAN 5%
+FINES
+UNIFIED SOIL CLASSIFICATION SYSTEM (USCS)
+ORGANIC SILTS AND ORGANIC SILTY
+CLAYS OF LOW PLASTICITY
+SW
+GC
+INORGANIC SILT, MICACEOUS OR
+DIATOMACEOUS FINE SAND OR SILTY
+SOILS
+INORGANIC CLAYS OF HIGH PLASTICITY
+PI
+LL
+CORE SAMPLE
+SHELBY TUBE SAMPLE
+LIQUID LIMIT (NP=NON-PLASTIC)
+TXUU
+GEOLABS, INC.
+Geotechnical Engineering
+LOG LEGEND FOR SOIL  7206-00.GPJ  GEOLABS.GDT  12/8/15
+Final Design Submittal - October 2016
+A-0.2
+Medium Sand
+Fine Sand
+#4 to #200 (4.75-mm to 0.075-mm)
+#4 to #10 (4.75-mm to 2-mm)
+> 12 inches (305-mm)
+3-inch to #4 (75-mm to 4.75-mm)
+Sieve Number and / or Size
+Gravel
+#10 to #40 (2-mm to 0.425-mm)
+#40 to #200 (0.425-mm to 0.075-mm)
+3 to 12 inches (75-mm to 305-mm)
+Description
+PP Readings
+(tsf)
+2.0 - 4.0
+> 4.0
+N-Value (Blows/Foot)
+MCS
+0 - 4
+RELATIVE DENSITY / CONSISTENCY
+GRAIN SIZE DEFINITION
+ABBREVIATIONS
+N-Value (Blows/Foot)
+0 - 7
+Dry:    Absence of moisture, dry to the touch
+Moist: Damp but no visible water
+Wet:   Visible free water, usually soil is below water table
+WOH:  Weight of Hammer
+WOR:  Weight of Drill Rods
+SPT:    Standard Penetration Test Split-Spoon Sampler
+MCS:   Modified California Sampler
+PP:      Pocket Penetrometer
+4 - 7
+7 - 15
+15 - 27
+27 - 55
+SPT
+0 - 2
+> 55
+> 30
+4 - 8
+15 - 30
+MOISTURE CONTENT DEFINITIONS
+SPT
+0 - 4
+4 - 10
+10 - 30
+30 - 50
+> 50
+MCS
+Loose
+EXAMPLE: Soil Containing 60% Gravel, 25% Sand, 15% Fines. Described as: SILTY GRAVEL with some sand
+Plate
+GRANULAR SOIL (- #200 <50%)
+2 - 4
+8 - 15
+Relative
+Density
+Very Loose
+Dense
+Very Dense
+COHESIVE SOIL (- #200    50%)
+PRIMARY constituents are composed of the largest
+percent of the soil mass. Primary constituents are
+capitalized and bold (i.e., GRAVEL, SAND)
+PRIMARY constituents are based on plasticity. Primary
+constituents are capitalized and bold (i.e., CLAY, SILT)
+SECONDARY constituents are composed of a
+percentage less than the primary constituent. If the soil
+mass consists of 12 percent or more fines content, a
+cohesive constituent is used (SILTY or CLAYEY);
+otherwise, a granular constituent is used (GRAVELLY
+or SANDY) provided that the secondary constituent
+consists of 20 percent or more of the soil mass.
+Secondary constituents are capitalized and bold (i.e.,
+SANDY GRAVEL, CLAYEY SAND) and precede the
+primary constituent.
+SECONDARY constituents are composed of a
+percentage less than the primary constituent, but more
+than 20 percent of the soil mass. Secondary constituents
+are capitalized and bold (i.e., SANDY CLAY, SILTY
+CLAY, CLAYEY SILT) and precede the primary
+constituent.
+Sand
+Boulders
+Cobbles
+Coarse Gravel
+3-inch to 3/4-inch (75-mm to 19-mm)
+Fine Gravel
+3/4-inch to #4 (19-mm to 4.75-mm)
+GEOLABS, INC. CLASSIFICATION*
+Granular Soils
+Cohesive Soils
+Consistency
+accessory descriptions compose of the following:
+with some: >12%
+with a little: 5 - 12%
+with traces of: <5%
+accessory descriptions are lower cased and follow the
+Primary and Secondary Constituents
+(i.e., SILTY CLAY with some sand)
+Very Soft
+Soft
+Medium Stiff
+Stiff
+Very Stiff
+Hard
+< 0.5
+0.5 - 1.0
+1.0 - 2.0
+7 - 18
+18 - 55
+55 - 91
+> 91
+Medium Dense
+Coarse Sand
+(with deviations from ASTM D2488)
+Soil Classification Log Key
+*Soil descriptions are based on ASTM D2488-09a, Visual-Manual Procedure, with the
+above modifications by Geolabs, Inc. to the Unified Soil Classification System (USCS).
+accessory descriptions compose of the following:
+with some: >12%
+with a little: 5 - 12%
+with traces of: <5%
+accessory descriptions are lower cased and follow the
+Primary and Secondary Constituents
+(i.e., SILTY GRAVEL with a little sand)
+SOIL_CLASS_LOG_KEY  7206-00.GPJ  GEOLABS.GDT  12/8/15
+GEOLABS, INC.
+Geotechnical Engineering
+Final Design Submittal - October 2016
+10
+SM
+GP
+Sieve
+- #200 =
+23.4%
+14
+11
+16
+50 to 75 mm of ORGANIC-LADEN TOPSOIL
+Very light tan SILTY SAND (CORALLINE) with
+some gravel and cobbles (coralline), very dense,
+moist (fill)
+Light tan with orange mottling GRAVEL AND
+COBBLES (CORALLINE) with traces of sand,
+medium dense to dense (fill)
+(caving conditions from 1.8 to 2.1 meters)
+ Test Pit terminated at 2.1 meters
+ * Elevations provided by Dueñas, Camacho &
+Associates, Inc. via email on October 18, 2015.
+Graphic
+Moisture
+Content (%)
+USCS
+AIRMAN AX 40 EXCAVATOR
+Depth (meters)
+Dynamic Cone Penetrometer
+Average Penetration
+Per Blow
+(mm)
+1.5-meter
+A - 1
+Laboratory
+Field
+Log of
+Test Pit
+Sample
+October 15, 2015
+October 15, 2015
+A. Felkel
+2.1 meters
+7206-00
+Water Level:
+Other Tests
+Description
+Plate
+1
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Pocket Pen.
+(kPa)
+Excavator Type:
+Bucket Width:
+1
+2
+3
+4
+5
+Latitude: 7.292477° S
+Longitude: 72.394957° E
+Approximate Ground Surface
+Elevation (meters MSL): 2.4 *
+4
+8
+12
+16
+TEST_PIT_DCP_LOG  7206-00.GPJ  GEOLABS.GDT  8/29/16
+1.83 m.   10/15/2015 0941 HRS
+GEOLABS, INC.
+Geotechnical Engineering
+P-1705, IMPROVE WHARF REFUELING CAPABILITY
+NAVAL SUPPORT FACILITY, DIEGO GARCIA
+Final Design Submittal - October 2016
+10
+SW
+Sieve
+- #200 =
+1.6%
+12
+11
+23
+50 mm of ORGANIC-LADEN TOPSOIL
+Light tan GRAVELLY SAND (CORALLINE) with
+traces of silt and some cobbles (coralline),
+medium dense to dense, moist (fill)
+grades with boulders
+(caving conditions from 1.1 to 1.7 meters)
+ Test Pit terminated at 1.7 meters
+Graphic
+Moisture
+Content (%)
+USCS
+AIRMAN AX 40 EXCAVATOR
+Depth (meters)
+Dynamic Cone Penetrometer
+Average Penetration
+Per Blow
+(mm)
+1.5-meter
+A - 2
+Laboratory
+Field
+Log of
+Test Pit
+Sample
+October 15, 2015
+October 15, 2015
+A. Felkel
+1.7 meters
+7206-00
+Water Level:
+Other Tests
+Description
+Plate
+2
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Pocket Pen.
+(kPa)
+Excavator Type:
+Bucket Width:
+1
+2
+3
+4
+5
+Latitude: 7.293307° S
+Longitude: 72.394365° E
+Approximate Ground Surface
+Elevation (meters MSL): 1.6 *
+4
+8
+12
+16
+TEST_PIT_DCP_LOG  7206-00.GPJ  GEOLABS.GDT  8/29/16
+0.98 m.   10/15/2015 1101 HRS
+GEOLABS, INC.
+Geotechnical Engineering
+P-1705, IMPROVE WHARF REFUELING CAPABILITY
+NAVAL SUPPORT FACILITY, DIEGO GARCIA
+Final Design Submittal - October 2016
+10
+SM
+GW
+Sieve
+- #200 =
+1.4%
+17
+17
+27
+50 mm of ORGANIC-LADEN TOPSOIL
+Light tan SILTY SAND (CORALLINE) with some
+gravel and cobbles (coralline), dense to very
+dense, moist (fill)
+Light tan SANDY GRAVEL (CORALLINE) with a
+little cobbles and traces of silt, medium dense to
+dense, moist (fill)
+(caving conditions from 1.1 to 1.7 meters)
+ Test Pit terminated at 1.7 meters
+Graphic
+Moisture
+Content (%)
+USCS
+AIRMAN AX 40 EXCAVATOR
+Depth (meters)
+Dynamic Cone Penetrometer
+Average Penetration
+Per Blow
+(mm)
+1.5-meter
+A - 3
+Laboratory
+Field
+Log of
+Test Pit
+Sample
+October 15, 2015
+October 15, 2015
+A. Felkel
+1.7 meters
+7206-00
+Water Level:
+Other Tests
+Description
+Plate
+3
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Pocket Pen.
+(kPa)
+Excavator Type:
+Bucket Width:
+1
+2
+3
+4
+5
+Latitude: 7.294357° S
+Longitude: 72.393543° E
+Approximate Ground Surface
+Elevation (meters MSL): 1.9 *
+4
+8
+12
+16
+TEST_PIT_DCP_LOG  7206-00.GPJ  GEOLABS.GDT  8/29/16
+1.19 m.   10/15/2015 1210 HRS
+GEOLABS, INC.
+Geotechnical Engineering
+P-1705, IMPROVE WHARF REFUELING CAPABILITY
+NAVAL SUPPORT FACILITY, DIEGO GARCIA
+Final Design Submittal - October 2016
+10
+SM
+SP-
+SM
+SM
+ML
+Sieve
+- #200 =
+18.5%
+Sieve
+- #200 =
+26.8%
+LL=NP
+PI=NP
+Sieve
+- #200 =
+63.9%
+14
+18
+40
+34
+50 mm of ORGANIC-LADEN TOPSOIL
+Light tan SILTY SAND (CORALLINE) with some
+gravel and cobbles (coralline), dense to very
+dense, moist (fill)
+Light tan GRAVELLY SAND (CORALLINE) with
+a little silt and cobbles, dense to very dense,
+moist (fill)
+Light orangish tan medium to fine grained SILTY
+SAND (CORALLINE) with traces of gravel,
+medium dense to dense, moist (fill)
+Light grayish tan SANDY SILT (CORALLINE),
+very soft to soft, moist (lagoonal deposit)
+(caving conditions from 1.7 to 2.4 meters)
+ Test Pit terminated at 2.4 meters
+Graphic
+Moisture
+Content (%)
+USCS
+AIRMAN AX 40 EXCAVATOR
+Depth (meters)
+Dynamic Cone Penetrometer
+Average Penetration
+Per Blow
+(mm)
+1.5-meter
+A - 4
+Laboratory
+Field
+Log of
+Test Pit
+Sample
+October 15, 2015
+October 15, 2015
+A. Felkel
+2.4 meters
+7206-00
+Water Level:
+Other Tests
+Description
+Plate
+4
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Pocket Pen.
+(kPa)
+Excavator Type:
+Bucket Width:
+1
+2
+3
+4
+5
+Latitude: 7.295298° S
+Longitude: 72.392834° E
+Approximate Ground Surface
+Elevation (meters MSL): 2.5 *
+4
+8
+12
+16
+TEST_PIT_DCP_LOG  7206-00.GPJ  GEOLABS.GDT  8/29/16
+1.62 m.   10/15/2015 1418 HRS
+GEOLABS, INC.
+Geotechnical Engineering
+P-1705, IMPROVE WHARF REFUELING CAPABILITY
+NAVAL SUPPORT FACILITY, DIEGO GARCIA
+Final Design Submittal - October 2016
+10
+SP-
+SM
+Sieve
+- #200 =
+6.2%
+Sieve
+- #200 =
+5.2%
+13
+19
+36
+50 mm of ORGANIC-LADEN TOPSOIL
+Light tan GRAVELLY SAND (CORALLINE) with
+a little silt and some cobbles (coralline), very
+dense, moist (fill)
+(caving conditions from 1.2 to 1.8 meters)
+ Test Pit terminated at 1.8 meters
+Graphic
+Moisture
+Content (%)
+USCS
+AIRMAN AX 40 EXCAVATOR
+Depth (meters)
+Dynamic Cone Penetrometer
+Average Penetration
+Per Blow
+(mm)
+1.5-meter
+A - 5
+Laboratory
+Field
+Log of
+Test Pit
+Sample
+October 16, 2015
+October 16, 2015
+J. Takimoto
+1.8 meters
+7206-00
+Water Level:
+Other Tests
+Description
+Plate
+5
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Pocket Pen.
+(kPa)
+Excavator Type:
+Bucket Width:
+1
+2
+3
+4
+5
+Latitude: 7.296017° S
+Longitude: 72.392405° E
+Approximate Ground Surface
+Elevation (meters MSL): 1.9 *
+4
+8
+12
+16
+TEST_PIT_DCP_LOG  7206-00.GPJ  GEOLABS.GDT  8/29/16
+1.28 m.   10/16/2015 0900 HRS
+GEOLABS, INC.
+Geotechnical Engineering
+P-1705, IMPROVE WHARF REFUELING CAPABILITY
+NAVAL SUPPORT FACILITY, DIEGO GARCIA
+Final Design Submittal - October 2016
+10
+SM
+GM
+GP-
+GM
+Sieve
+- #200 =
+13.5%
+14
+17
+27
+75 mm of ORGANIC-LADEN TOPSOIL
+Light brownish tan SILTY SAND (CORALLINE)
+with some gravel (coralline) and traces of
+cobbles (coralline), very dense, moist (fill)
+grades to very moist
+Brown SILTY GRAVEL (CORALLINE) with some
+sand, loose, moist (dune deposit)
+Light tan SANDY GRAVEL (CORALLINE) with a
+little silt, loose to medium dense, moist (beach
+deposit)
+(caving conditions from 1.5 to 1.8 meters)
+ Test Pit terminated at 1.8 meters
+Graphic
+Moisture
+Content (%)
+USCS
+AIRMAN AX 40 EXCAVATOR
+Depth (meters)
+Dynamic Cone Penetrometer
+Average Penetration
+Per Blow
+(mm)
+1.5-meter
+A - 6
+Laboratory
+Field
+Log of
+Test Pit
+Sample
+October 16, 2015
+October 16, 2015
+J. Takimoto
+1.8 meters
+7206-00
+Water Level:
+Other Tests
+Description
+Plate
+6
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Pocket Pen.
+(kPa)
+Excavator Type:
+Bucket Width:
+1
+2
+3
+4
+5
+Latitude: 7.296607° S
+Longitude: 72.392015° E
+Approximate Ground Surface
+Elevation (meters MSL): 1.7 *
+4
+8
+12
+16
+TEST_PIT_DCP_LOG  7206-00.GPJ  GEOLABS.GDT  8/29/16
+1.46 m.   10/16/2015 1030 HRS
+GEOLABS, INC.
+Geotechnical Engineering
+P-1705, IMPROVE WHARF REFUELING CAPABILITY
+NAVAL SUPPORT FACILITY, DIEGO GARCIA
+Final Design Submittal - October 2016
+10
+SP-
+SM
+SW-
+SM
+GP
+Sieve
+- #200 =
+6.7%
+10
+18
+26
+100 mm of ORGANIC-LADEN TOPSOIL
+Light tan GRAVELLY SAND (CORALLINE) with
+a little silt and traces of cobbles, dense, moist
+(fill)
+traces of asphaltic concrete gravel from 0.3 to 0.8
+meters
+Light brownish tan GRAVELLY SAND
+(CORALLINE) with a little silt, loose to medium
+dense, moist (dune deposit)
+Light brownish tan SANDY GRAVEL
+(CORALLINE) with traces of silt, loose to
+medium dense, moist (beach deposit)
+(caving conditions from 1.7 to 2.1 meters)
+grades with cobbles at 1.8 meters
+ Test Pit terminated at 2.1 meters
+Graphic
+Moisture
+Content (%)
+USCS
+AIRMAN AX 40 EXCAVATOR
+Depth (meters)
+Dynamic Cone Penetrometer
+Average Penetration
+Per Blow
+(mm)
+1.5-meter
+A - 7
+Laboratory
+Field
+Log of
+Test Pit
+Sample
+October 16, 2015
+October 16, 2015
+J. Takimoto
+2.1 meters
+7206-00
+Water Level:
+Other Tests
+Description
+Plate
+7
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Pocket Pen.
+(kPa)
+Excavator Type:
+Bucket Width:
+1
+2
+3
+4
+5
+Latitude: 7.296288° S
+Longitude: 72.390955° E
+Approximate Ground Surface
+Elevation (meters MSL): 2.0 *
+4
+8
+12
+16
+TEST_PIT_DCP_LOG  7206-00.GPJ  GEOLABS.GDT  8/29/16
+1.68 m.   10/16/2015 1340 HRS
+GEOLABS, INC.
+Geotechnical Engineering
+P-1705, IMPROVE WHARF REFUELING CAPABILITY
+NAVAL SUPPORT FACILITY, DIEGO GARCIA
+Final Design Submittal - October 2016
+APPENDIX  B  
+Final Design Submittal - October 2016
+W.O. 7206-00 
+GEOLABS, INC. 
+OCTOBER 2016     Page B-1 
+Hawaii • California 
+A P P E N D I X   B 
+Laboratory Tests 
+Moisture Content (ASTM D2216) determinations were performed on selected soil 
+samples as an aid in the classification and evaluation of soil properties. The test results 
+are presented on the Logs of Test Pits at the appropriate sample depths. 
+One Atterberg Limits test (ASTM D4318) was performed on a selected soil sample 
+to evaluate the liquid and plastic limits and to aid in soil classification. The test result is 
+summarized on the Logs of Test Pits at the appropriate sample depth, and graphic 
+presentation of the test result is provided on Plate B-1. 
+Ten Sieve Analysis tests (ASTM C117 & C136) were performed on selected 
+samples obtained from the test pits to evaluate the gradation characteristics of the near-
+surface soils and to aid in soil classification. The fines content of the samples tested 
+(percent particles passing the No. 200 sieve) are indicated on the Logs of Test Pits at the 
+appropriate sample depths. Graphic presentation of the grain size distribution is provided 
+on Plates B-2 and B-3. 
+Three Modified Proctor compaction tests (ASTM D1557) were performed on bulk 
+samples of the near-surface soils obtained from the test pits to evaluate the dry density 
+and moisture content relationships. The test results are presented on Plates B-4 through 
+B-6. 
+Six laboratory California Bearing Ratio tests (ASTM D1883) were performed on 
+bulk samples of the near-surface soils obtained from the test pits to evaluate the quality of 
+the materials tested for use as fills. The test results are presented on Plates B-7 through 
+B-12. 
+Three sets of pH (ASTM G51) and minimum resistivity (ASTM G57) tests were 
+performed by our office on selected soil samples obtained from our field exploration. In 
+addition, three sets of chloride (EPA 300.0) and sulfate (EPA 300.0) content tests were 
+performed by TestAmerica Laboratories, Inc. on selected soil samples obtained from our 
+field exploration. The test results are presented on Plate B-13. 
+Final Design Submittal - October 2016
+0
+10
+20
+30
+40
+50
+60
+70
+80
+90
+100
+0
+20
+40
+60
+80
+100
+120
+PI
+Depth (m)
+Sample
+LL
+PL
+Description
+NP
+1.8-2.1
+ML or OL
+CL-ML
+CL or OL
+CH or OH
+NP
+Light grayish tan sandy silt (ML)
+B - 1
+MH or OH
+NP
+LIQUID LIMIT
+PLASTICITY INDEX
+TP-4
+ATTERBERG LIMITS TEST RESULTS - ASTM D4318
+Plate
+W.O. 7206-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+P-1705, IMPROVE WHARF REFUELING CAPABILITY
+NAVAL SUPPORT FACILITY, DIEGO GARCIA
+G_ATTERBERG_PI-100_LL-120  7206-00.GPJ  GEOLABS.GDT  12/9/15
+Final Design Submittal - October 2016
+0
+5
+10
+15
+20
+25
+30
+35
+40
+45
+50
+55
+60
+65
+70
+75
+80
+85
+90
+95
+100
+0.001
+0.01
+0.1
+1
+10
+100
+0.734
+6.079
+24.278
+3.883
+0.146
+B - 2
+coarse
+1
+1.5
+3
+2
+0.506
+0.582
+40
+Depth (m)
+%Gravel
+18.5
+45.8
+71.2
+38.0
+3.0
+58.1
+52.6
+27.4
+43.5
+70.2
+%Sand
+COBBLES
+Sample
+D30 (mm)
+140
+20
+1.0
+1.9
+12.0
+41.7
+HYDROMETER
+3
+GRAIN SIZE IN MILLIMETERS
+PERCENT FINER BY WEIGHT
+100
+coarse
+1/2
+Sample
+0.131
+1.779
+5.119
+0.322
+0.08
+Cu
+GRAVEL
+U.S. SIEVE NUMBERS
+D10 (mm)
+16
+fine
+25
+50
+50
+50
+25
+Cc
+3/4
+fine
+SILT OR CLAY
+medium
+GRAIN SIZE DISTRIBUTION - ASTM C117 & C136
+SAND
+%Fine
+60
+4
+30
+200
+4
+6
+23.4
+1.6
+1.4
+18.5
+26.8
+Depth (m)
+LL
+Very light tan silty sand (SM) with some gravel
+Light tan gravelly sand (SW) with traces of silt
+Light tan sandy gravel (GW) with traces of silt
+Light tan silty sand (SM) with some gravel
+Light orangish tan silty sand (SM) with traces of gravel
+810 14
+50
+U.S. SIEVE OPENING IN INCHES
+6
+D60 (mm)
+D100 (mm)
+TP-1
+TP-2
+TP-3
+TP-4
+TP-4
+0.3-0.6
+0.6-1.2
+1.2-1.5
+0.2-0.5
+1.4-1.7
+0.3-0.6
+0.6-1.2
+1.2-1.5
+0.2-0.5
+1.4-1.7
+TP-1
+TP-2
+TP-3
+TP-4
+TP-4
+3/8
+PL PI
+Description
+Plate
+W.O. 7206-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+P-1705, IMPROVE WHARF REFUELING CAPABILITY
+NAVAL SUPPORT FACILITY, DIEGO GARCIA
+G_GRAIN_SIZE_MOD  7206-00.GPJ  GEOLABS.GDT  12/9/15
+Final Design Submittal - October 2016
+0
+5
+10
+15
+20
+25
+30
+35
+40
+45
+50
+55
+60
+65
+70
+75
+80
+85
+90
+95
+100
+0.001
+0.01
+0.1
+1
+10
+100
+4.623
+5.122
+4.619
+1.603
+B - 3
+coarse
+1
+1.5
+3
+2
+0.158
+0.174
+0.166
+40
+Depth (m)
+%Gravel
+0.3
+39.7
+41.2
+39.7
+23.4
+35.8
+54.1
+53.5
+46.7
+69.9
+%Sand
+COBBLES
+Sample
+D30 (mm)
+140
+20
+0.6
+0.5
+1.3
+29.2
+29.4
+9.7
+HYDROMETER
+3
+GRAIN SIZE IN MILLIMETERS
+PERCENT FINER BY WEIGHT
+100
+coarse
+1/2
+Sample
+0.635
+0.689
+0.388
+0.597
+Cu
+GRAVEL
+U.S. SIEVE NUMBERS
+D10 (mm)
+16
+fine
+19
+50
+37.5
+37.5
+25
+Cc
+3/4
+fine
+SILT OR CLAY
+medium
+GRAIN SIZE DISTRIBUTION - ASTM C117 & C136
+SAND
+%Fine
+60
+4
+30
+200
+4
+6
+63.9
+6.2
+5.2
+13.5
+6.7
+Depth (m)
+LL
+Light grayish tan sandy silt (ML)
+Light tan gravelly sand (SP-SM) with a little silt
+Light tan gravelly sand (SP-SM) with a little silt
+Light brownish tan silty sand (SM) with some gravel
+Light brownish tan gravelly sand (SW-SM) with a little silt
+NP
+NP
+810 14
+50
+U.S. SIEVE OPENING IN INCHES
+6
+D60 (mm)
+D100 (mm)
+TP-4
+TP-5
+TP-5
+TP-6
+TP-7
+1.8-2.1
+0.3-0.6
+0.9-1.2
+0.3-0.6
+0.9-1.2
+1.8-2.1
+0.3-0.6
+0.9-1.2
+0.3-0.6
+0.9-1.2
+TP-4
+TP-5
+TP-5
+TP-6
+TP-7
+3/8
+PL PI
+Description
+NP
+Plate
+W.O. 7206-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+P-1705, IMPROVE WHARF REFUELING CAPABILITY
+NAVAL SUPPORT FACILITY, DIEGO GARCIA
+G_GRAIN_SIZE_MOD  7206-00.GPJ  GEOLABS.GDT  12/9/15
+Final Design Submittal - October 2016
+1,220
+1,260
+1,300
+1,340
+1,380
+1,420
+1,460
+1,500
+1,540
+1,580
+1,620
+1,660
+1,700
+1,740
+1,780
+1,820
+1,860
+1,900
+1,940
+1,980
+2,020
+2,060
+2,100
+2,140
+2,180
+0
+10
+20
+30
+40
+1511
+18.2
+DRY DENSITY, kg/m
+3
+Optimum Moisture Content:
+Sample:
+Depth:
+TEST RESULTS
+MOISTURE CONTENT, %
+Description:
+kg/m
+3
+Maximum Dry Density:
+Light tan gravelly sand (SW) with traces of
+silt
+B - 4
+3.20
+3.10
+3.00
+2.90
+2.80
+2.70
+2.60
+0.0 - 0.6 m
+TP-2
+MOISTURE-DENSITY RELATIONSHIP - ASTM D1557 C
+Test Date:
+November 12, 2015
+Plate
+W.O. 7206-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+P-1705, IMPROVE WHARF REFUELING CAPABILITY
+NAVAL SUPPORT FACILITY, DIEGO GARCIA
+G_COMPACTION  7206-00.GPJ  GEOLABS.GDT  12/10/15
+Final Design Submittal - October 2016
+1,220
+1,260
+1,300
+1,340
+1,380
+1,420
+1,460
+1,500
+1,540
+1,580
+1,620
+1,660
+1,700
+1,740
+1,780
+1,820
+1,860
+1,900
+1,940
+1,980
+2,020
+2,060
+2,100
+2,140
+2,180
+0
+10
+20
+30
+40
+1658
+20.0
+DRY DENSITY, kg/m
+3
+Optimum Moisture Content:
+Sample:
+Depth:
+TEST RESULTS
+MOISTURE CONTENT, %
+Description:
+kg/m
+3
+Maximum Dry Density:
+Light tan silty sand (SM) with some gravel
+B - 5
+3.20
+3.10
+3.00
+2.90
+2.80
+2.70
+2.60
+0.3 - 0.6 m
+TP-3
+MOISTURE-DENSITY RELATIONSHIP - ASTM D1557 C
+Test Date:
+November 17, 2015
+Plate
+W.O. 7206-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+P-1705, IMPROVE WHARF REFUELING CAPABILITY
+NAVAL SUPPORT FACILITY, DIEGO GARCIA
+G_COMPACTION  7206-00.GPJ  GEOLABS.GDT  12/10/15
+Final Design Submittal - October 2016
+1,220
+1,260
+1,300
+1,340
+1,380
+1,420
+1,460
+1,500
+1,540
+1,580
+1,620
+1,660
+1,700
+1,740
+1,780
+1,820
+1,860
+1,900
+1,940
+1,980
+2,020
+2,060
+2,100
+2,140
+2,180
+0
+10
+20
+30
+40
+1874
+14.2
+DRY DENSITY, kg/m
+3
+Optimum Moisture Content:
+Sample:
+Depth:
+TEST RESULTS
+MOISTURE CONTENT, %
+Description:
+kg/m
+3
+Maximum Dry Density:
+Light brownish tan silty sand (SM) with some
+gravel
+B - 6
+3.20
+3.10
+3.00
+2.90
+2.80
+2.70
+2.60
+0.6 - 0.9 m
+TP-6
+MOISTURE-DENSITY RELATIONSHIP - ASTM D1557 C
+Test Date:
+November 20, 2015
+Plate
+W.O. 7206-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+P-1705, IMPROVE WHARF REFUELING CAPABILITY
+NAVAL SUPPORT FACILITY, DIEGO GARCIA
+G_COMPACTION  7206-00.GPJ  GEOLABS.GDT  12/10/15
+Final Design Submittal - October 2016
+0
+2,000
+4,000
+6,000
+8,000
+10,000
+12,000
+14,000
+16,000
+0
+2
+4
+6
+8
+10
+12
+14
+Very light tan silty sand (SM) with some gravel
+Description:
+Days Soaked
+3
+TP-1
+Swell (%)
+0.00
+86.8
+75.0
+Molding Dry Density (kg/m
+3)
+PENETRATION, millimeters
+STRESS, kPa
+0.1 - 0.6 m
+No. of Blows
+15.0
+1789
+Molding Moisture (%)
+Hammer Wt. (kg)
+Hammer Drop (mm)
+Sample:
+Corr. CBR @ 2.54 mm
+Depth:
+Corr. CBR @ 5.08 mm
+No. of Layers
+CALIFORNIA BEARING RATIO - ASTM D1883
+457.2
+56
+4.54
+5
+Aggregate
+B - 7
+19 mm minus
+Plate
+W.O. 7206-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+P-1705, IMPROVE WHARF REFUELING CAPABILITY
+NAVAL SUPPORT FACILITY, DIEGO GARCIA
+G_CBR  7206-00.GPJ  GEOLABS.GDT  12/10/15
+Final Design Submittal - October 2016
+0
+2,000
+4,000
+6,000
+8,000
+10,000
+12,000
+14,000
+16,000
+0
+2
+4
+6
+8
+10
+12
+14
+Light tan gravelly sand (SW) with traces of silt
+Description:
+Days Soaked
+3
+TP-2
+Swell (%)
+0.00
+29.2
+21.0
+Molding Dry Density (kg/m
+3)
+PENETRATION, millimeters
+STRESS, kPa
+0.0 - 0.6 m
+No. of Blows
+20.7
+1520
+Molding Moisture (%)
+Hammer Wt. (kg)
+Hammer Drop (mm)
+Sample:
+Corr. CBR @ 2.54 mm
+Depth:
+Corr. CBR @ 5.08 mm
+No. of Layers
+CALIFORNIA BEARING RATIO - ASTM D1883
+457.2
+56
+4.54
+5
+Aggregate
+B - 8
+19 mm minus
+Plate
+W.O. 7206-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+P-1705, IMPROVE WHARF REFUELING CAPABILITY
+NAVAL SUPPORT FACILITY, DIEGO GARCIA
+G_CBR  7206-00.GPJ  GEOLABS.GDT  12/10/15
+Final Design Submittal - October 2016
+0
+2,000
+4,000
+6,000
+8,000
+10,000
+12,000
+14,000
+16,000
+0
+2
+4
+6
+8
+10
+12
+14
+Light tan silty sand (SM) with some gravel
+Description:
+Days Soaked
+4
+TP-4
+Swell (%)
+0.00
+62.5
+46.0
+Molding Dry Density (kg/m
+3)
+PENETRATION, millimeters
+STRESS, kPa
+0.2 - 0.5 m
+No. of Blows
+17.9
+1786
+Molding Moisture (%)
+Hammer Wt. (kg)
+Hammer Drop (mm)
+Sample:
+Corr. CBR @ 2.54 mm
+Depth:
+Corr. CBR @ 5.08 mm
+No. of Layers
+CALIFORNIA BEARING RATIO - ASTM D1883
+457.2
+56
+4.54
+5
+Aggregate
+B - 9
+19 mm minus
+Plate
+W.O. 7206-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+P-1705, IMPROVE WHARF REFUELING CAPABILITY
+NAVAL SUPPORT FACILITY, DIEGO GARCIA
+G_CBR  7206-00.GPJ  GEOLABS.GDT  12/10/15
+Final Design Submittal - October 2016
+0
+2,000
+4,000
+6,000
+8,000
+10,000
+12,000
+14,000
+16,000
+0
+2
+4
+6
+8
+10
+12
+14
+Light tan gravelly sand (SP-SM) with a little silt
+Description:
+Days Soaked
+4
+TP-5
+Swell (%)
+0.00
+61.0
+53.0
+Molding Dry Density (kg/m
+3)
+PENETRATION, millimeters
+STRESS, kPa
+0.3 - 0.6 m
+No. of Blows
+14.3
+1656
+Molding Moisture (%)
+Hammer Wt. (kg)
+Hammer Drop (mm)
+Sample:
+Corr. CBR @ 2.54 mm
+Depth:
+Corr. CBR @ 5.08 mm
+No. of Layers
+CALIFORNIA BEARING RATIO - ASTM D1883
+457.2
+56
+4.54
+5
+Aggregate
+B - 10
+19 mm minus
+Plate
+W.O. 7206-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+P-1705, IMPROVE WHARF REFUELING CAPABILITY
+NAVAL SUPPORT FACILITY, DIEGO GARCIA
+G_CBR  7206-00.GPJ  GEOLABS.GDT  12/10/15
+Final Design Submittal - October 2016
+0
+2,000
+4,000
+6,000
+8,000
+10,000
+12,000
+14,000
+16,000
+0
+2
+4
+6
+8
+10
+12
+14
+Light brownish tan silty sand (SM) with some gravel
+Description:
+Days Soaked
+2
+TP-6
+Swell (%)
+0.00
+113.4
+99.0
+Molding Dry Density (kg/m
+3)
+PENETRATION, millimeters
+STRESS, kPa
+0.6 - 0.9 m
+No. of Blows
+14.1
+1863
+Molding Moisture (%)
+Hammer Wt. (kg)
+Hammer Drop (mm)
+Sample:
+Corr. CBR @ 2.54 mm
+Depth:
+Corr. CBR @ 5.08 mm
+No. of Layers
+CALIFORNIA BEARING RATIO - ASTM D1883
+457.2
+56
+4.54
+5
+Aggregate
+B - 11
+19 mm minus
+Plate
+W.O. 7206-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+P-1705, IMPROVE WHARF REFUELING CAPABILITY
+NAVAL SUPPORT FACILITY, DIEGO GARCIA
+G_CBR  7206-00.GPJ  GEOLABS.GDT  12/10/15
+Final Design Submittal - October 2016
+0
+2,000
+4,000
+6,000
+8,000
+10,000
+12,000
+14,000
+16,000
+0
+2
+4
+6
+8
+10
+12
+14
+Light tan gravelly sand (SP-SM) with a little silt
+Description:
+Days Soaked
+3
+TP-7
+Swell (%)
+0.00
+82.1
+69.0
+Molding Dry Density (kg/m
+3)
+PENETRATION, millimeters
+STRESS, kPa
+0.3 - 0.6 m
+No. of Blows
+13.1
+1852
+Molding Moisture (%)
+Hammer Wt. (kg)
+Hammer Drop (mm)
+Sample:
+Corr. CBR @ 2.54 mm
+Depth:
+Corr. CBR @ 5.08 mm
+No. of Layers
+CALIFORNIA BEARING RATIO - ASTM D1883
+457.2
+56
+4.54
+5
+Aggregate
+B - 12
+19 mm minus
+Plate
+W.O. 7206-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+P-1705, IMPROVE WHARF REFUELING CAPABILITY
+NAVAL SUPPORT FACILITY, DIEGO GARCIA
+G_CBR  7206-00.GPJ  GEOLABS.GDT  12/10/15
+Final Design Submittal - October 2016
+TP-1
+0.9 - 1.2
+7.67
+16500
+ND
+ND
+TP-3
+0.9 - 1.2
+7.61
+13500
+ND
+6
+TP-6
+1.5 - 1.8
+7.49
+7800
+ND
+15
+SUMMARY OF CORROSIVITY TESTS
+B - 13
+Location
+(m)
+Depth
+(ohm-cm)
+(mg/kg)
+(mg/kg)
+SM 2510B
+Minimum Resistivity
+pH Value
+EPA 300.0
+Minimum Resistivity
+ASTM G57
+pH Value
+Method 9045C
+ASTM G51
+TEST METHODS (by TestAmerica Laboratories, Inc.)
+TEST METHODS (by Geolabs, Inc.)*
+pH Value
+Minimum Resistivity Chloride Content
+Sulfate Content
+ND: Not Detected Within Reporting Limits
+Sulfate Content
+EPA 300.0
+Sulfate Content
+N/A
+Chloride Content
+Chloride Content
+N/A
+Plate
+W.O. 7206-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+P-1705, IMPROVE WHARF REFUELING CAPABILITY
+NAVAL SUPPORT FACILITY, DIEGO GARCIA
+G_SUMMARY_OF_CORROSIVITY_TESTS  7206-00.GPJ  GEOLABS.GDT  12/10/15
+Final Design Submittal - October 2016
+APPENDIX  C  
+Final Design Submittal - October 2016
+Project:
+P‐1705, Improve Wharf Refueling Capability
+Test Location:
+Test Pit No. 1
+Location:
+Naval Support Facility, Diego Garcia, B.I.O.T.
+Test by / Date:
+W.O.:
+7206‐00
+Test Start Depth:
+0"
+Number of  
+blows per 
+increment 
+(1)
+Accumulative 
+penetration 
+reading (2) 
+(mm)
+Accumulative 
+penetration 
+reading
+(in)
+Penetration 
+per 
+increment (3)  
+(mm)
+Penetration 
+per 
+increment 
+(in)
+Average 
+Penetration 
+per blow (4)    
+(mm)
+Average 
+Penetration 
+per blow 
+(in)
+Hammer 
+blow 
+factor (5)
+DCP   
+Index 
+(6)
+CBR (7)  
+(%)
+Depth 
+below 
+ground 
+surface 
+(mm)
+Depth 
+below 
+ground 
+surface    
+(in)
+Initial
+36
+1.42
+0
+0.00
+1
+60
+2.36
+24
+0.94
+24.0
+0.94
+1
+24.0
+8
+24
+0.94
+3
+87
+3.43
+27
+1.06
+9.0
+0.35
+1
+9.0
+25
+51
+2.01
+3
+111
+4.37
+24
+0.94
+8.0
+0.31
+1
+8.0
+28
+75
+2.95
+6
+135
+5.31
+24
+0.94
+4.0
+0.16
+1
+4.0
+62
+99
+3.90
+6
+169
+6.65
+34
+1.34
+5.7
+0.22
+1
+5.7
+42
+133
+5.24
+6
+195
+7.68
+26
+1.02
+4.3
+0.17
+1
+4.3
+57
+159
+6.26
+9
+233
+9.17
+38
+1.50
+4.2
+0.17
+1
+4.2
+58
+197
+7.76
+5
+259
+10.20
+26
+1.02
+5.2
+0.20
+1
+5.2
+46
+223
+8.78
+5
+285
+11.22
+26
+1.02
+5.2
+0.20
+1
+5.2
+46
+249
+9.80
+7
+312
+12.28
+27
+1.06
+3.9
+0.15
+1
+3.9
+64
+276
+10.87
+7
+340
+13.39
+28
+1.10
+4.0
+0.16
+1
+4.0
+62
+304
+11.97
+7
+365
+14.37
+25
+0.98
+3.6
+0.14
+1
+3.6
+70
+329
+12.95
+9
+393
+15.47
+28
+1.10
+3.1
+0.12
+1
+3.1
+82
+357
+14.06
+7
+417
+16.42
+24
+0.94
+3.4
+0.13
+1
+3.4
+73
+381
+15.00
+9
+440
+17.32
+23
+0.91
+2.6
+0.10
+1
+2.6
+102
+404
+15.91
+7
+465
+18.31
+25
+0.98
+3.6
+0.14
+1
+3.6
+70
+429
+16.89
+8
+493
+19.41
+28
+1.10
+3.5
+0.14
+1
+3.5
+72
+457
+17.99
+7
+515
+20.28
+22
+0.87
+3.1
+0.12
+1
+3.1
+81
+479
+18.86
+7
+545
+21.46
+30
+1.18
+4.3
+0.17
+1
+4.3
+57
+509
+20.04
+6
+572
+22.52
+27
+1.06
+4.5
+0.18
+1
+4.5
+54
+536
+21.10
+6
+603
+23.74
+31
+1.22
+5.2
+0.20
+1
+5.2
+46
+567
+22.32
+6
+631
+24.84
+28
+1.10
+4.7
+0.18
+1
+4.7
+52
+595
+23.43
+6
+661
+26.02
+30
+1.18
+5.0
+0.20
+1
+5.0
+48
+625
+24.61
+6
+687
+27.05
+26
+1.02
+4.3
+0.17
+1
+4.3
+57
+651
+25.63
+8
+717
+28.23
+30
+1.18
+3.8
+0.15
+1
+3.8
+66
+681
+26.81
+8
+742
+29.21
+25
+0.98
+3.1
+0.12
+1
+3.1
+81
+706
+27.80
+10
+767
+30.20
+25
+0.98
+2.5
+0.10
+1
+2.5
+105
+731
+28.78
+15
+795
+31.30
+28
+1.10
+1.9
+0.07
+1
+1.9
+145
+759
+29.88
+15
+821
+32.32
+26
+1.02
+1.7
+0.07
+1
+1.7
+158
+785
+30.91
+10
+846
+33.31
+25
+0.98
+2.5
+0.10
+1
+2.5
+105
+810
+31.89
+10
+871
+34.29
+25
+0.98
+2.5
+0.10
+1
+2.5
+105
+835
+32.87
+15
+897
+35.31
+26
+1.02
+1.7
+0.07
+1
+1.7
+158
+861
+33.90
+16
+922
+36.30
+25
+0.98
+1.6
+0.06
+1
+1.6
+177
+886
+34.88
+15
+962
+37.87
+40
+1.57
+2.7
+0.10
+1
+2.7
+97
+926
+36.46
+10
+986
+38.82
+24
+0.94
+2.4
+0.09
+1
+2.4
+110
+950
+37.40
+10
+1012
+39.84
+26
+1.02
+2.6
+0.10
+1
+2.6
+100
+976
+38.43
+13
+1037
+40.83
+25
+0.98
+1.9
+0.08
+1
+1.9
+140
+1001
+39.41
+15
+1067
+42.01
+30
+1.18
+2.0
+0.08
+1
+2.0
+134
+1031
+40.59
+13
+1094
+43.07
+27
+1.06
+2.1
+0.08
+1
+2.1
+129
+1058
+41.65
+13
+1124
+44.25
+30
+1.18
+2.3
+0.09
+1
+2.3
+114
+1088
+42.83
+12
+1158
+45.59
+34
+1.34
+2.8
+0.11
+1
+2.8
+91
+1122
+44.17
+13
+1185
+46.65
+27
+1.06
+2.1
+0.08
+1
+2.1
+129
+1149
+45.24
+13
+1213
+47.76
+28
+1.10
+2.2
+0.08
+1
+2.2
+124
+1177
+46.34
+13
+1245
+49.02
+32
+1.26
+2.5
+0.10
+1
+2.5
+106
+1209
+47.60
+1.  Number of hammer blows per increment
+5.  Enter "1" for 8‐kg hammer or "2" for 4.6‐kg hammer
+2.  Accumulative cone penetration after each increment
+6.  (4) x (5)
+3.  Difference in accumulative penetration (2) at start & end of each increment
+7.  From CBR vs. DCP correlation (CBR = 292 / (DCP1.12))
+4.  (3) divided by (1)
+JT, 10/14/2015
+DYNAMIC CONE PENETROMETER TEST DATA
+ASTM D6951
+GEOLABS, INC.
+W.O. 7206‐00
+GEOLABS, INC.
+Hawaii • California
+Plate C‐1.1
+Final Design Submittal - October 2016
+Project:
+P‐1705, Improve Wharf Refueling Capability
+Test Location:
+Test Pit No. 1
+Location:
+Naval Support Facility, Diego Garcia, B.I.O.T.
+Test by / Date:
+W.O.:
+7206‐00
+Test Start Depth:
+0"
+Number of  
+blows per 
+increment 
+(1)
+Accumulative 
+penetration 
+reading (2) 
+(mm)
+Accumulative 
+penetration 
+reading
+(in)
+Penetration 
+per 
+increment (3)  
+(mm)
+Penetration 
+per 
+increment 
+(in)
+Average 
+Penetration 
+per blow (4)    
+(mm)
+Average 
+Penetration 
+per blow 
+(in)
+Hammer 
+blow 
+factor (5)
+DCP   
+Index 
+(6)
+CBR (7)  
+(%)
+Depth 
+below 
+ground 
+surface 
+(mm)
+Depth 
+below 
+ground 
+surface    
+(in)
+10
+1272
+50.08
+27
+1.06
+2.7
+0.11
+1
+2.7
+96
+1236
+48.66
+10
+1297
+51.06
+25
+0.98
+2.5
+0.10
+1
+2.5
+105
+1261
+49.65
+10
+1324
+52.13
+27
+1.06
+2.7
+0.11
+1
+2.7
+96
+1288
+50.71
+10
+1357
+53.43
+33
+1.30
+3.3
+0.13
+1
+3.3
+77
+1321
+52.01
+8
+1381
+54.37
+24
+0.94
+3.0
+0.12
+1
+3.0
+85
+1345
+52.95
+9
+1415
+55.71
+34
+1.34
+3.8
+0.15
+1
+3.8
+66
+1379
+54.29
+8
+1445
+56.89
+30
+1.18
+3.8
+0.15
+1
+3.8
+66
+1409
+55.47
+8
+1470
+57.87
+25
+0.98
+3.1
+0.12
+1
+3.1
+81
+1434
+56.46
+7
+1495
+58.86
+25
+0.98
+3.6
+0.14
+1
+3.6
+70
+1459
+57.44
+7
+1527
+60.12
+32
+1.26
+4.6
+0.18
+1
+4.6
+53
+1491
+58.70
+7
+1554
+61.18
+27
+1.06
+3.9
+0.15
+1
+3.9
+64
+1518
+59.76
+9
+1579
+62.17
+25
+0.98
+2.8
+0.11
+1
+2.8
+93
+1543
+60.75
+13
+1664
+65.51
+85
+3.35
+6.5
+0.26
+1
+6.5
+36
+1628
+64.09
+20
+1689
+66.50
+25
+0.98
+1.3
+0.05
+1
+1.3
+227
+1653
+65.08
+10
+1727
+67.99
+38
+1.50
+3.8
+0.15
+1
+3.8
+65
+1691
+66.57
+8
+1752
+68.98
+25
+0.98
+3.1
+0.12
+1
+3.1
+81
+1716
+67.56
+8
+1782
+70.16
+30
+1.18
+3.8
+0.15
+1
+3.8
+66
+1746
+68.74
+8
+1812
+71.34
+30
+1.18
+3.8
+0.15
+1
+3.8
+66
+1776
+69.92
+4
+1842
+72.52
+30
+1.18
+7.5
+0.30
+1
+7.5
+31
+1806
+71.10
+4
+1872
+73.70
+30
+1.18
+7.5
+0.30
+1
+7.5
+31
+1836
+72.28
+3
+1902
+74.88
+30
+1.18
+10.0
+0.39
+1
+10.0
+22
+1866
+73.46
+3
+1932
+76.06
+30
+1.18
+10.0
+0.39
+1
+10.0
+22
+1896
+74.65
+3
+1972
+77.64
+40
+1.57
+13.3
+0.52
+1
+13.3
+16
+1936
+76.22
+2
+1997
+78.62
+25
+0.98
+12.5
+0.49
+1
+12.5
+17
+1961
+77.20
+2
+2025
+79.72
+28
+1.10
+14.0
+0.55
+1
+14.0
+15
+1989
+78.31
+2
+2057
+80.98
+32
+1.26
+16.0
+0.63
+1
+16.0
+13
+2021
+79.57
+3
+2082
+81.97
+25
+0.98
+8.3
+0.33
+1
+8.3
+27
+2046
+80.55
+10
+2107
+82.95
+25
+0.98
+2.5
+0.10
+1
+2.5
+105
+2071
+81.54
+10
+2140
+84.25
+33
+1.30
+3.3
+0.13
+1
+3.3
+77
+2104
+82.83
+10
+2177
+85.71
+37
+1.46
+3.7
+0.15
+1
+3.7
+67
+2141
+84.29
+8
+2220
+87.40
+43
+1.69
+5.4
+0.21
+1
+5.4
+44
+2184
+85.98
+6
+2274
+89.53
+54
+2.13
+9.0
+0.35
+1
+9.0
+25
+2238
+88.11
+4
+2307
+90.83
+33
+1.30
+8.3
+0.32
+1
+8.3
+27
+2271
+89.41
+4
+2326
+91.57
+19
+0.75
+4.8
+0.19
+1
+4.8
+51
+2290
+90.16
+5
+2362
+92.99
+36
+1.42
+7.2
+0.28
+1
+7.2
+32
+2326
+91.57
+5
+2384
+93.86
+22
+0.87
+4.4
+0.17
+1
+4.4
+56
+2348
+92.44
+5
+2427
+95.55
+43
+1.69
+8.6
+0.34
+1
+8.6
+26
+2391
+94.13
+4
+2452
+96.54
+25
+0.98
+6.3
+0.25
+1
+6.3
+37
+2416
+95.12
+5
+2480
+97.64
+28
+1.10
+5.6
+0.22
+1
+5.6
+42
+2444
+96.22
+3
+2517
+99.09
+37
+1.46
+12.3
+0.49
+1
+12.3
+18
+2481
+97.68
+2
+2542
+100.08
+25
+0.98
+12.5
+0.49
+1
+12.5
+17
+2506
+98.66
+2
+2567
+101.06
+25
+0.98
+12.5
+0.49
+1
+12.5
+17
+2531
+99.65
+2
+2592
+102.05
+25
+0.98
+12.5
+0.49
+1
+12.5
+17
+2556
+100.63
+4
+2615
+102.95
+23
+0.91
+5.8
+0.23
+1
+5.8
+41
+2579
+101.54
+4
+2647
+104.21
+32
+1.26
+8.0
+0.31
+1
+8.0
+28
+2611
+102.80
+1.  Number of hammer blows per increment
+5.  Enter "1" for 8‐kg hammer or "2" for 4.6‐kg hammer
+2.  Accumulative cone penetration after each increment
+6.  (4) x (5)
+3.  Difference in accumulative penetration (2) at start & end of each increment
+7.  From CBR vs. DCP correlation (CBR = 292 / (DCP1.12))
+4.  (3) divided by (1)
+DYNAMIC CONE PENETROMETER TEST DATA
+ASTM D6951
+JT, 10/14/2015
+GEOLABS, INC.
+W.O. 7206‐00
+GEOLABS, INC.
+Hawaii • California
+Plate C‐1.2
+Final Design Submittal - October 2016
+Project:
+P‐1705, Improve Wharf Refueling Capability
+Test Location:
+Test Pit No. 1
+Location:
+Naval Support Facility, Diego Garcia, B.I.O.T.
+Test by / Date:
+W.O.:
+7206‐00
+Test Start Depth:
+0"
+Number of  
+blows per 
+increment 
+(1)
+Accumulative 
+penetration 
+reading (2) 
+(mm)
+Accumulative 
+penetration 
+reading
+(in)
+Penetration 
+per 
+increment (3)  
+(mm)
+Penetration 
+per 
+increment 
+(in)
+Average 
+Penetration 
+per blow (4)    
+(mm)
+Average 
+Penetration 
+per blow 
+(in)
+Hammer 
+blow 
+factor (5)
+DCP   
+Index 
+(6)
+CBR (7)  
+(%)
+Depth 
+below 
+ground 
+surface 
+(mm)
+Depth 
+below 
+ground 
+surface    
+(in)
+4
+2677
+105.39
+30
+1.18
+7.5
+0.30
+1
+7.5
+31
+2641
+103.98
+4
+2720
+107.09
+43
+1.69
+10.8
+0.42
+1
+10.8
+20
+2684
+105.67
+4
+2775
+109.25
+55
+2.17
+13.8
+0.54
+1
+13.8
+16
+2739
+107.83
+2
+2805
+110.43
+30
+1.18
+15.0
+0.59
+1
+15.0
+14
+2769
+109.02
+2
+2840
+111.81
+35
+1.38
+17.5
+0.69
+1
+17.5
+12
+2804
+110.39
+2
+2870
+112.99
+30
+1.18
+15.0
+0.59
+1
+15.0
+14
+2834
+111.57
+2
+2910
+114.57
+40
+1.57
+20.0
+0.79
+1
+20.0
+10
+2874
+113.15
+2
+2950
+116.14
+40
+1.57
+20.0
+0.79
+1
+20.0
+10
+2914
+114.72
+12
+2975
+117.13
+25
+0.98
+2.1
+0.08
+1
+2.1
+128
+2939
+115.71
+2
+3000
+118.11
+25
+0.98
+12.5
+0.49
+1
+12.5
+17
+2964
+116.69
+3
+3020
+118.90
+20
+0.79
+6.7
+0.26
+1
+6.7
+35
+2984
+117.48
+12
+3045
+119.88
+25
+0.98
+2.1
+0.08
+1
+2.1
+128
+3009
+118.46
+8
+3071
+120.91
+26
+1.02
+3.3
+0.13
+1
+3.3
+78
+3035
+119.49
+6
+3096
+121.89
+25
+0.98
+4.2
+0.16
+1
+4.2
+59
+3060
+120.47
+5
+3125
+123.03
+29
+1.14
+5.8
+0.23
+1
+5.8
+41
+3089
+121.61
+3
+3153
+124.13
+28
+1.10
+9.3
+0.37
+1
+9.3
+24
+3117
+122.72
+2
+3178
+125.12
+25
+0.98
+12.5
+0.49
+1
+12.5
+17
+3142
+123.70
+2
+3205
+126.18
+27
+1.06
+13.5
+0.53
+1
+13.5
+16
+3169
+124.76
+2
+3234
+127.32
+29
+1.14
+14.5
+0.57
+1
+14.5
+15
+3198
+125.91
+1
+3270
+128.74
+36
+1.42
+36.0
+1.42
+1
+36.0
+5
+3234
+127.32
+2
+3295
+129.72
+25
+0.98
+12.5
+0.49
+1
+12.5
+17
+3259
+128.31
+2
+3325
+130.91
+30
+1.18
+15.0
+0.59
+1
+15.0
+14
+3289
+129.49
+2
+3366
+132.52
+41
+1.61
+20.5
+0.81
+1
+20.5
+10
+3330
+131.10
+2
+3400
+133.86
+34
+1.34
+17.0
+0.67
+1
+17.0
+12
+3364
+132.44
+1.  Number of hammer blows per increment
+5.  Enter "1" for 8‐kg hammer or "2" for 4.6‐kg hammer
+2.  Accumulative cone penetration after each increment
+6.  (4) x (5)
+3.  Difference in accumulative penetration (2) at start & end of each increment
+7.  From CBR vs. DCP correlation (CBR = 292 / (DCP1.12))
+4.  (3) divided by (1)
+DYNAMIC CONE PENETROMETER TEST DATA
+ASTM D6951
+JT, 10/14/2015
+GEOLABS, INC.
+W.O. 7206‐00
+GEOLABS, INC.
+Hawaii • California
+Plate C‐1.3
+Final Design Submittal - October 2016
+Project:
+P‐1705, Improve Wharf Refueling Capability
+Test Location:
+Test Pit No. 2
+Location:
+Naval Support Facility, Diego Garcia, B.I.O.T.
+Test by / Date:
+W.O.:
+7206‐00
+Test Start Depth:
+0"
+Number of  
+blows per 
+increment 
+(1)
+Accumulative 
+penetration 
+reading (2) 
+(mm)
+Accumulative 
+penetration 
+reading
+(in)
+Penetration 
+per 
+increment (3)  
+(mm)
+Penetration 
+per 
+increment 
+(in)
+Average 
+Penetration 
+per blow (4)    
+(mm)
+Average 
+Penetration 
+per blow 
+(in)
+Hammer 
+blow 
+factor (5)
+DCP   
+Index 
+(6)
+CBR (7)  
+(%)
+Depth 
+below 
+ground 
+surface 
+(mm)
+Depth 
+below 
+ground 
+surface    
+(in)
+Initial
+145
+5.71
+0
+0.00
+2
+173
+6.81
+28
+1.10
+14.0
+0.55
+1
+14.0
+15
+28
+1.10
+10
+203
+7.99
+30
+1.18
+3.0
+0.12
+1
+3.0
+85
+58
+2.28
+6
+225
+8.86
+22
+0.87
+3.7
+0.14
+1
+3.7
+68
+80
+3.15
+8
+257
+10.12
+32
+1.26
+4.0
+0.16
+1
+4.0
+62
+112
+4.41
+4
+285
+11.22
+28
+1.10
+7.0
+0.28
+1
+7.0
+33
+140
+5.51
+4
+320
+12.60
+35
+1.38
+8.8
+0.34
+1
+8.8
+26
+175
+6.89
+3
+353
+13.90
+33
+1.30
+11.0
+0.43
+1
+11.0
+20
+208
+8.19
+3
+385
+15.16
+32
+1.26
+10.7
+0.42
+1
+10.7
+21
+240
+9.45
+3
+405
+15.94
+20
+0.79
+6.7
+0.26
+1
+6.7
+35
+260
+10.24
+3
+445
+17.52
+40
+1.57
+13.3
+0.52
+1
+13.3
+16
+300
+11.81
+2
+470
+18.50
+25
+0.98
+12.5
+0.49
+1
+12.5
+17
+325
+12.80
+2
+493
+19.41
+23
+0.91
+11.5
+0.45
+1
+11.5
+19
+348
+13.70
+3
+525
+20.67
+32
+1.26
+10.7
+0.42
+1
+10.7
+21
+380
+14.96
+3
+565
+22.24
+40
+1.57
+13.3
+0.52
+1
+13.3
+16
+420
+16.54
+2
+592
+23.31
+27
+1.06
+13.5
+0.53
+1
+13.5
+16
+447
+17.60
+2
+620
+24.41
+28
+1.10
+14.0
+0.55
+1
+14.0
+15
+475
+18.70
+2
+645
+25.39
+25
+0.98
+12.5
+0.49
+1
+12.5
+17
+500
+19.69
+2
+675
+26.57
+30
+1.18
+15.0
+0.59
+1
+15.0
+14
+530
+20.87
+2
+700
+27.56
+25
+0.98
+12.5
+0.49
+1
+12.5
+17
+555
+21.85
+2
+725
+28.54
+25
+0.98
+12.5
+0.49
+1
+12.5
+17
+580
+22.83
+2
+760
+29.92
+35
+1.38
+17.5
+0.69
+1
+17.5
+12
+615
+24.21
+2
+790
+31.10
+30
+1.18
+15.0
+0.59
+1
+15.0
+14
+645
+25.39
+2
+810
+31.89
+20
+0.79
+10.0
+0.39
+1
+10.0
+22
+665
+26.18
+3
+837
+32.95
+27
+1.06
+9.0
+0.35
+1
+9.0
+25
+692
+27.24
+3
+864
+34.02
+27
+1.06
+9.0
+0.35
+1
+9.0
+25
+719
+28.31
+4
+889
+35.00
+25
+0.98
+6.3
+0.25
+1
+6.3
+37
+744
+29.29
+4
+922
+36.30
+33
+1.30
+8.3
+0.32
+1
+8.3
+27
+777
+30.59
+2
+949
+37.36
+27
+1.06
+13.5
+0.53
+1
+13.5
+16
+804
+31.65
+3
+985
+38.78
+36
+1.42
+12.0
+0.47
+1
+12.0
+18
+840
+33.07
+3
+1019
+40.12
+34
+1.34
+11.3
+0.45
+1
+11.3
+19
+874
+34.41
+2
+1047
+41.22
+28
+1.10
+14.0
+0.55
+1
+14.0
+15
+902
+35.51
+2
+1074
+42.28
+27
+1.06
+13.5
+0.53
+1
+13.5
+16
+929
+36.57
+2
+1104
+43.46
+30
+1.18
+15.0
+0.59
+1
+15.0
+14
+959
+37.76
+3
+1132
+44.57
+28
+1.10
+9.3
+0.37
+1
+9.3
+24
+987
+38.86
+2
+1158
+45.59
+26
+1.02
+13.0
+0.51
+1
+13.0
+17
+1013
+39.88
+3
+1181
+46.50
+23
+0.91
+7.7
+0.30
+1
+7.7
+30
+1036
+40.79
+3
+1211
+47.68
+30
+1.18
+10.0
+0.39
+1
+10.0
+22
+1066
+41.97
+3
+1240
+48.82
+29
+1.14
+9.7
+0.38
+1
+9.7
+23
+1095
+43.11
+3
+1270
+50.00
+30
+1.18
+10.0
+0.39
+1
+10.0
+22
+1125
+44.29
+3
+1298
+51.10
+28
+1.10
+9.3
+0.37
+1
+9.3
+24
+1153
+45.39
+3
+1323
+52.09
+25
+0.98
+8.3
+0.33
+1
+8.3
+27
+1178
+46.38
+3
+1345
+52.95
+22
+0.87
+7.3
+0.29
+1
+7.3
+31
+1200
+47.24
+4
+1373
+54.06
+28
+1.10
+7.0
+0.28
+1
+7.0
+33
+1228
+48.35
+3
+1399
+55.08
+26
+1.02
+8.7
+0.34
+1
+8.7
+26
+1254
+49.37
+1.  Number of hammer blows per increment
+5.  Enter "1" for 8‐kg hammer or "2" for 4.6‐kg hammer
+2.  Accumulative cone penetration after each increment
+6.  (4) x (5)
+3.  Difference in accumulative penetration (2) at start & end of each increment
+7.  From CBR vs. DCP correlation (CBR = 292 / (DCP1.12))
+4.  (3) divided by (1)
+JT, 10/14/2015
+DYNAMIC CONE PENETROMETER TEST DATA
+ASTM D6951
+GEOLABS, INC.
+W.O. 7206‐00
+GEOLABS, INC.
+Hawaii • California
+Plate C‐2.1
+Final Design Submittal - October 2016
+Project:
+P‐1705, Improve Wharf Refueling Capability
+Test Location:
+Test Pit No. 2
+Location:
+Naval Support Facility, Diego Garcia, B.I.O.T.
+Test by / Date:
+W.O.:
+7206‐00
+Test Start Depth:
+0"
+Number of  
+blows per 
+increment 
+(1)
+Accumulative 
+penetration 
+reading (2) 
+(mm)
+Accumulative 
+penetration 
+reading
+(in)
+Penetration 
+per 
+increment (3)  
+(mm)
+Penetration 
+per 
+increment 
+(in)
+Average 
+Penetration 
+per blow (4)    
+(mm)
+Average 
+Penetration 
+per blow 
+(in)
+Hammer 
+blow 
+factor (5)
+DCP   
+Index 
+(6)
+CBR (7)  
+(%)
+Depth 
+below 
+ground 
+surface 
+(mm)
+Depth 
+below 
+ground 
+surface    
+(in)
+2
+1415
+55.71
+16
+0.63
+8.0
+0.31
+1
+8.0
+28
+1270
+50.00
+2
+1443
+56.81
+28
+1.10
+14.0
+0.55
+1
+14.0
+15
+1298
+51.10
+6
+1469
+57.83
+26
+1.02
+4.3
+0.17
+1
+4.3
+57
+1324
+52.13
+4
+1501
+59.09
+32
+1.26
+8.0
+0.31
+1
+8.0
+28
+1356
+53.39
+3
+1530
+60.24
+29
+1.14
+9.7
+0.38
+1
+9.7
+23
+1385
+54.53
+3
+1554
+61.18
+24
+0.94
+8.0
+0.31
+1
+8.0
+28
+1409
+55.47
+3
+1574
+61.97
+20
+0.79
+6.7
+0.26
+1
+6.7
+35
+1429
+56.26
+4
+1603
+63.11
+29
+1.14
+7.3
+0.29
+1
+7.3
+32
+1458
+57.40
+4
+1637
+64.45
+34
+1.34
+8.5
+0.33
+1
+8.5
+27
+1492
+58.74
+4
+1659
+65.31
+22
+0.87
+5.5
+0.22
+1
+5.5
+43
+1514
+59.61
+5
+1678
+66.06
+19
+0.75
+3.8
+0.15
+1
+3.8
+65
+1533
+60.35
+5
+1717
+67.60
+39
+1.54
+7.8
+0.31
+1
+7.8
+29
+1572
+61.89
+4
+1751
+68.94
+34
+1.34
+8.5
+0.33
+1
+8.5
+27
+1606
+63.23
+4
+1782
+70.16
+31
+1.22
+7.8
+0.31
+1
+7.8
+29
+1637
+64.45
+4
+1817
+71.54
+35
+1.38
+8.8
+0.34
+1
+8.8
+26
+1672
+65.83
+3
+1842
+72.52
+25
+0.98
+8.3
+0.33
+1
+8.3
+27
+1697
+66.81
+4
+1867
+73.50
+25
+0.98
+6.3
+0.25
+1
+6.3
+37
+1722
+67.80
+5
+1896
+74.65
+29
+1.14
+5.8
+0.23
+1
+5.8
+41
+1751
+68.94
+5
+1932
+76.06
+36
+1.42
+7.2
+0.28
+1
+7.2
+32
+1787
+70.35
+4
+1962
+77.24
+30
+1.18
+7.5
+0.30
+1
+7.5
+31
+1817
+71.54
+4
+1986
+78.19
+24
+0.94
+6.0
+0.24
+1
+6.0
+39
+1841
+72.48
+5
+2016
+79.37
+30
+1.18
+6.0
+0.24
+1
+6.0
+39
+1871
+73.66
+5
+2047
+80.59
+31
+1.22
+6.2
+0.24
+1
+6.2
+38
+1902
+74.88
+3
+2072
+81.57
+25
+0.98
+8.3
+0.33
+1
+8.3
+27
+1927
+75.87
+4
+2099
+82.64
+27
+1.06
+6.8
+0.27
+1
+6.8
+34
+1954
+76.93
+4
+2127
+83.74
+28
+1.10
+7.0
+0.28
+1
+7.0
+33
+1982
+78.03
+3
+2147
+84.53
+20
+0.79
+6.7
+0.26
+1
+6.7
+35
+2002
+78.82
+4
+2166
+85.28
+19
+0.75
+4.8
+0.19
+1
+4.8
+51
+2021
+79.57
+4
+2192
+86.30
+26
+1.02
+6.5
+0.26
+1
+6.5
+36
+2047
+80.59
+4
+2220
+87.40
+28
+1.10
+7.0
+0.28
+1
+7.0
+33
+2075
+81.69
+4
+2247
+88.46
+27
+1.06
+6.8
+0.27
+1
+6.8
+34
+2102
+82.76
+4
+2282
+89.84
+35
+1.38
+8.8
+0.34
+1
+8.8
+26
+2137
+84.13
+4
+2312
+91.02
+30
+1.18
+7.5
+0.30
+1
+7.5
+31
+2167
+85.31
+4
+2350
+92.52
+38
+1.50
+9.5
+0.37
+1
+9.5
+23
+2205
+86.81
+3
+2374
+93.46
+24
+0.94
+8.0
+0.31
+1
+8.0
+28
+2229
+87.76
+4
+2400
+94.49
+26
+1.02
+6.5
+0.26
+1
+6.5
+36
+2255
+88.78
+3
+2432
+95.75
+32
+1.26
+10.7
+0.42
+1
+10.7
+21
+2287
+90.04
+2
+2458
+96.77
+26
+1.02
+13.0
+0.51
+1
+13.0
+17
+2313
+91.06
+3
+2483
+97.76
+25
+0.98
+8.3
+0.33
+1
+8.3
+27
+2338
+92.05
+3
+2506
+98.66
+23
+0.91
+7.7
+0.30
+1
+7.7
+30
+2361
+92.95
+4
+2533
+99.72
+27
+1.06
+6.8
+0.27
+1
+6.8
+34
+2388
+94.02
+4
+2562
+100.87
+29
+1.14
+7.3
+0.29
+1
+7.3
+32
+2417
+95.16
+3
+2588
+101.89
+26
+1.02
+8.7
+0.34
+1
+8.7
+26
+2443
+96.18
+3
+2617
+103.03
+29
+1.14
+9.7
+0.38
+1
+9.7
+23
+2472
+97.32
+3
+2647
+104.21
+30
+1.18
+10.0
+0.39
+1
+10.0
+22
+2502
+98.50
+1.  Number of hammer blows per increment
+5.  Enter "1" for 8‐kg hammer or "2" for 4.6‐kg hammer
+2.  Accumulative cone penetration after each increment
+6.  (4) x (5)
+3.  Difference in accumulative penetration (2) at start & end of each increment
+7.  From CBR vs. DCP correlation (CBR = 292 / (DCP1.12))
+4.  (3) divided by (1)
+DYNAMIC CONE PENETROMETER TEST DATA
+ASTM D6951
+JT, 10/14/2015
+GEOLABS, INC.
+W.O. 7206‐00
+GEOLABS, INC.
+Hawaii • California
+Plate C‐2.2
+Final Design Submittal - October 2016
+Project:
+P‐1705, Improve Wharf Refueling Capability
+Test Location:
+Test Pit No. 2
+Location:
+Naval Support Facility, Diego Garcia, B.I.O.T.
+Test by / Date:
+W.O.:
+7206‐00
+Test Start Depth:
+0"
+Number of  
+blows per 
+increment 
+(1)
+Accumulative 
+penetration 
+reading (2) 
+(mm)
+Accumulative 
+penetration 
+reading
+(in)
+Penetration 
+per 
+increment (3)  
+(mm)
+Penetration 
+per 
+increment 
+(in)
+Average 
+Penetration 
+per blow (4)    
+(mm)
+Average 
+Penetration 
+per blow 
+(in)
+Hammer 
+blow 
+factor (5)
+DCP   
+Index 
+(6)
+CBR (7)  
+(%)
+Depth 
+below 
+ground 
+surface 
+(mm)
+Depth 
+below 
+ground 
+surface    
+(in)
+3
+2677
+105.39
+30
+1.18
+10.0
+0.39
+1
+10.0
+22
+2532
+99.69
+3
+2702
+106.38
+25
+0.98
+8.3
+0.33
+1
+8.3
+27
+2557
+100.67
+3
+2729
+107.44
+27
+1.06
+9.0
+0.35
+1
+9.0
+25
+2584
+101.73
+3
+2762
+108.74
+33
+1.30
+11.0
+0.43
+1
+11.0
+20
+2617
+103.03
+2
+2790
+109.84
+28
+1.10
+14.0
+0.55
+1
+14.0
+15
+2645
+104.13
+2
+2818
+110.94
+28
+1.10
+14.0
+0.55
+1
+14.0
+15
+2673
+105.24
+3
+2850
+112.20
+32
+1.26
+10.7
+0.42
+1
+10.7
+21
+2705
+106.50
+3
+2886
+113.62
+36
+1.42
+12.0
+0.47
+1
+12.0
+18
+2741
+107.91
+3
+2921
+115.00
+35
+1.38
+11.7
+0.46
+1
+11.7
+19
+2776
+109.29
+2
+2950
+116.14
+29
+1.14
+14.5
+0.57
+1
+14.5
+15
+2805
+110.43
+2
+2981
+117.36
+31
+1.22
+15.5
+0.61
+1
+15.5
+14
+2836
+111.65
+2
+3021
+118.94
+40
+1.57
+20.0
+0.79
+1
+20.0
+10
+2876
+113.23
+2
+3066
+120.71
+45
+1.77
+22.5
+0.89
+1
+22.5
+9
+2921
+115.00
+2
+3117
+122.72
+51
+2.01
+25.5
+1.00
+1
+25.5
+8
+2972
+117.01
+2
+3149
+123.98
+32
+1.26
+16.0
+0.63
+1
+16.0
+13
+3004
+118.27
+2
+3184
+125.35
+35
+1.38
+17.5
+0.69
+1
+17.5
+12
+3039
+119.65
+2
+3218
+126.69
+34
+1.34
+17.0
+0.67
+1
+17.0
+12
+3073
+120.98
+2
+3264
+128.50
+46
+1.81
+23.0
+0.91
+1
+23.0
+9
+3119
+122.80
+1
+3295
+129.72
+31
+1.22
+31.0
+1.22
+1
+31.0
+6
+3150
+124.02
+2
+3322
+130.79
+27
+1.06
+13.5
+0.53
+1
+13.5
+16
+3177
+125.08
+2
+3347
+131.77
+25
+0.98
+12.5
+0.49
+1
+12.5
+17
+3202
+126.06
+1.  Number of hammer blows per increment
+5.  Enter "1" for 8‐kg hammer or "2" for 4.6‐kg hammer
+2.  Accumulative cone penetration after each increment
+6.  (4) x (5)
+3.  Difference in accumulative penetration (2) at start & end of each increment
+7.  From CBR vs. DCP correlation (CBR = 292 / (DCP1.12))
+4.  (3) divided by (1)
+DYNAMIC CONE PENETROMETER TEST DATA
+ASTM D6951
+JT, 10/14/2015
+GEOLABS, INC.
+W.O. 7206‐00
+GEOLABS, INC.
+Hawaii • California
+Plate C‐2.3
+Final Design Submittal - October 2016
+Project:
+P‐1705, Improve Wharf Refueling Capability
+Test Location:
+Test Pit No. 3
+Location:
+Naval Support Facility, Diego Garcia, B.I.O.T.
+Test by / Date:
+W.O.:
+7206‐00
+Test Start Depth:
+0"
+Number of  
+blows per 
+increment 
+(1)
+Accumulative 
+penetration 
+reading (2) 
+(mm)
+Accumulative 
+penetration 
+reading
+(in)
+Penetration 
+per 
+increment (3)  
+(mm)
+Penetration 
+per 
+increment 
+(in)
+Average 
+Penetration 
+per blow (4)    
+(mm)
+Average 
+Penetration 
+per blow 
+(in)
+Hammer 
+blow 
+factor (5)
+DCP   
+Index 
+(6)
+CBR (7)  
+(%)
+Depth 
+below 
+ground 
+surface 
+(mm)
+Depth 
+below 
+ground 
+surface    
+(in)
+Initial
+448
+17.64
+0
+0.00
+1
+470
+18.50
+22
+0.87
+22.0
+0.87
+1
+22.0
+9
+22
+0.87
+3
+495
+19.49
+25
+0.98
+8.3
+0.33
+1
+8.3
+27
+47
+1.85
+3
+515
+20.28
+20
+0.79
+6.7
+0.26
+1
+6.7
+35
+67
+2.64
+5
+540
+21.26
+25
+0.98
+5.0
+0.20
+1
+5.0
+48
+92
+3.62
+5
+565
+22.24
+25
+0.98
+5.0
+0.20
+1
+5.0
+48
+117
+4.61
+6
+587
+23.11
+22
+0.87
+3.7
+0.14
+1
+3.7
+68
+139
+5.47
+8
+607
+23.90
+20
+0.79
+2.5
+0.10
+1
+2.5
+105
+159
+6.26
+5
+630
+24.80
+23
+0.91
+4.6
+0.18
+1
+4.6
+53
+182
+7.17
+5
+655
+25.79
+25
+0.98
+5.0
+0.20
+1
+5.0
+48
+207
+8.15
+7
+677
+26.65
+22
+0.87
+3.1
+0.12
+1
+3.1
+81
+229
+9.02
+10
+700
+27.56
+23
+0.91
+2.3
+0.09
+1
+2.3
+115
+252
+9.92
+7
+725
+28.54
+25
+0.98
+3.6
+0.14
+1
+3.6
+70
+277
+10.91
+3
+750
+29.53
+25
+0.98
+8.3
+0.33
+1
+8.3
+27
+302
+11.89
+4
+775
+30.51
+25
+0.98
+6.3
+0.25
+1
+6.3
+37
+327
+12.87
+5
+800
+31.50
+25
+0.98
+5.0
+0.20
+1
+5.0
+48
+352
+13.86
+5
+827
+32.56
+27
+1.06
+5.4
+0.21
+1
+5.4
+44
+379
+14.92
+5
+860
+33.86
+33
+1.30
+6.6
+0.26
+1
+6.6
+35
+412
+16.22
+3
+895
+35.24
+35
+1.38
+11.7
+0.46
+1
+11.7
+19
+447
+17.60
+3
+925
+36.42
+30
+1.18
+10.0
+0.39
+1
+10.0
+22
+477
+18.78
+5
+958
+37.72
+33
+1.30
+6.6
+0.26
+1
+6.6
+35
+510
+20.08
+6
+984
+38.74
+26
+1.02
+4.3
+0.17
+1
+4.3
+57
+536
+21.10
+5
+1016
+40.00
+32
+1.26
+6.4
+0.25
+1
+6.4
+37
+568
+22.36
+5
+1044
+41.10
+28
+1.10
+5.6
+0.22
+1
+5.6
+42
+596
+23.46
+7
+1071
+42.17
+27
+1.06
+3.9
+0.15
+1
+3.9
+64
+623
+24.53
+7
+1099
+43.27
+28
+1.10
+4.0
+0.16
+1
+4.0
+62
+651
+25.63
+5
+1124
+44.25
+25
+0.98
+5.0
+0.20
+1
+5.0
+48
+676
+26.61
+6
+1149
+45.24
+25
+0.98
+4.2
+0.16
+1
+4.2
+59
+701
+27.60
+6
+1179
+46.42
+30
+1.18
+5.0
+0.20
+1
+5.0
+48
+731
+28.78
+5
+1208
+47.56
+29
+1.14
+5.8
+0.23
+1
+5.8
+41
+760
+29.92
+4
+1238
+48.74
+30
+1.18
+7.5
+0.30
+1
+7.5
+31
+790
+31.10
+4
+1268
+49.92
+30
+1.18
+7.5
+0.30
+1
+7.5
+31
+820
+32.28
+4
+1299
+51.14
+31
+1.22
+7.8
+0.31
+1
+7.8
+29
+851
+33.50
+5
+1326
+52.20
+27
+1.06
+5.4
+0.21
+1
+5.4
+44
+878
+34.57
+6
+1354
+53.31
+28
+1.10
+4.7
+0.18
+1
+4.7
+52
+906
+35.67
+6
+1381
+54.37
+27
+1.06
+4.5
+0.18
+1
+4.5
+54
+933
+36.73
+4
+1407
+55.39
+26
+1.02
+6.5
+0.26
+1
+6.5
+36
+959
+37.76
+5
+1431
+56.34
+24
+0.94
+4.8
+0.19
+1
+4.8
+50
+983
+38.70
+5
+1454
+57.24
+23
+0.91
+4.6
+0.18
+1
+4.6
+53
+1006
+39.61
+5
+1483
+58.39
+29
+1.14
+5.8
+0.23
+1
+5.8
+41
+1035
+40.75
+5
+1513
+59.57
+30
+1.18
+6.0
+0.24
+1
+6.0
+39
+1065
+41.93
+7
+1539
+60.59
+26
+1.02
+3.7
+0.15
+1
+3.7
+67
+1091
+42.95
+9
+1566
+61.65
+27
+1.06
+3.0
+0.12
+1
+3.0
+85
+1118
+44.02
+9
+1593
+62.72
+27
+1.06
+3.0
+0.12
+1
+3.0
+85
+1145
+45.08
+11
+1622
+63.86
+29
+1.14
+2.6
+0.10
+1
+2.6
+99
+1174
+46.22
+1.  Number of hammer blows per increment
+5.  Enter "1" for 8‐kg hammer or "2" for 4.6‐kg hammer
+2.  Accumulative cone penetration after each increment
+6.  (4) x (5)
+3.  Difference in accumulative penetration (2) at start & end of each increment
+7.  From CBR vs. DCP correlation (CBR = 292 / (DCP1.12))
+4.  (3) divided by (1)
+JT, 10/17/2015
+DYNAMIC CONE PENETROMETER TEST DATA
+ASTM D6951
+GEOLABS, INC.
+W.O. 7206‐00
+GEOLABS, INC.
+Hawaii • California
+Plate C‐3.1
+Final Design Submittal - October 2016
+Project:
+P‐1705, Improve Wharf Refueling Capability
+Test Location:
+Test Pit No. 3
+Location:
+Naval Support Facility, Diego Garcia, B.I.O.T.
+Test by / Date:
+W.O.:
+7206‐00
+Test Start Depth:
+0"
+Number of  
+blows per 
+increment 
+(1)
+Accumulative 
+penetration 
+reading (2) 
+(mm)
+Accumulative 
+penetration 
+reading
+(in)
+Penetration 
+per 
+increment (3)  
+(mm)
+Penetration 
+per 
+increment 
+(in)
+Average 
+Penetration 
+per blow (4)    
+(mm)
+Average 
+Penetration 
+per blow 
+(in)
+Hammer 
+blow 
+factor (5)
+DCP   
+Index 
+(6)
+CBR (7)  
+(%)
+Depth 
+below 
+ground 
+surface 
+(mm)
+Depth 
+below 
+ground 
+surface    
+(in)
+8
+1649
+64.92
+27
+1.06
+3.4
+0.13
+1
+3.4
+75
+1201
+47.28
+7
+1674
+65.91
+25
+0.98
+3.6
+0.14
+1
+3.6
+70
+1226
+48.27
+9
+1701
+66.97
+27
+1.06
+3.0
+0.12
+1
+3.0
+85
+1253
+49.33
+6
+1732
+68.19
+31
+1.22
+5.2
+0.20
+1
+5.2
+46
+1284
+50.55
+4
+1761
+69.33
+29
+1.14
+7.3
+0.29
+1
+7.3
+32
+1313
+51.69
+3
+1791
+70.51
+30
+1.18
+10.0
+0.39
+1
+10.0
+22
+1343
+52.87
+3
+1823
+71.77
+32
+1.26
+10.7
+0.42
+1
+10.7
+21
+1375
+54.13
+3
+1859
+73.19
+36
+1.42
+12.0
+0.47
+1
+12.0
+18
+1411
+55.55
+2
+1893
+74.53
+34
+1.34
+17.0
+0.67
+1
+17.0
+12
+1445
+56.89
+2
+1927
+75.87
+34
+1.34
+17.0
+0.67
+1
+17.0
+12
+1479
+58.23
+2
+1957
+77.05
+30
+1.18
+15.0
+0.59
+1
+15.0
+14
+1509
+59.41
+2
+1986
+78.19
+29
+1.14
+14.5
+0.57
+1
+14.5
+15
+1538
+60.55
+2
+2018
+79.45
+32
+1.26
+16.0
+0.63
+1
+16.0
+13
+1570
+61.81
+3
+2046
+80.55
+28
+1.10
+9.3
+0.37
+1
+9.3
+24
+1598
+62.91
+3
+2071
+81.54
+25
+0.98
+8.3
+0.33
+1
+8.3
+27
+1623
+63.90
+4
+2098
+82.60
+27
+1.06
+6.8
+0.27
+1
+6.8
+34
+1650
+64.96
+3
+2126
+83.70
+28
+1.10
+9.3
+0.37
+1
+9.3
+24
+1678
+66.06
+11
+2159
+85.00
+33
+1.30
+3.0
+0.12
+1
+3.0
+85
+1711
+67.36
+8
+2189
+86.18
+30
+1.18
+3.8
+0.15
+1
+3.8
+66
+1741
+68.54
+4
+2213
+87.13
+24
+0.94
+6.0
+0.24
+1
+6.0
+39
+1765
+69.49
+4
+2240
+88.19
+27
+1.06
+6.8
+0.27
+1
+6.8
+34
+1792
+70.55
+4
+2268
+89.29
+28
+1.10
+7.0
+0.28
+1
+7.0
+33
+1820
+71.65
+4
+2297
+90.43
+29
+1.14
+7.3
+0.29
+1
+7.3
+32
+1849
+72.80
+4
+2324
+91.50
+27
+1.06
+6.8
+0.27
+1
+6.8
+34
+1876
+73.86
+4
+2350
+92.52
+26
+1.02
+6.5
+0.26
+1
+6.5
+36
+1902
+74.88
+4
+2386
+93.94
+36
+1.42
+9.0
+0.35
+1
+9.0
+25
+1938
+76.30
+2
+2411
+94.92
+25
+0.98
+12.5
+0.49
+1
+12.5
+17
+1963
+77.28
+3
+2441
+96.10
+30
+1.18
+10.0
+0.39
+1
+10.0
+22
+1993
+78.46
+3
+2470
+97.24
+29
+1.14
+9.7
+0.38
+1
+9.7
+23
+2022
+79.61
+3
+2491
+98.07
+21
+0.83
+7.0
+0.28
+1
+7.0
+33
+2043
+80.43
+4
+2523
+99.33
+32
+1.26
+8.0
+0.31
+1
+8.0
+28
+2075
+81.69
+3
+2548
+100.31
+25
+0.98
+8.3
+0.33
+1
+8.3
+27
+2100
+82.68
+3
+2569
+101.14
+21
+0.83
+7.0
+0.28
+1
+7.0
+33
+2121
+83.50
+4
+2594
+102.13
+25
+0.98
+6.3
+0.25
+1
+6.3
+37
+2146
+84.49
+3
+2621
+103.19
+27
+1.06
+9.0
+0.35
+1
+9.0
+25
+2173
+85.55
+3
+2650
+104.33
+29
+1.14
+9.7
+0.38
+1
+9.7
+23
+2202
+86.69
+2
+2674
+105.28
+24
+0.94
+12.0
+0.47
+1
+12.0
+18
+2226
+87.64
+2
+2700
+106.30
+26
+1.02
+13.0
+0.51
+1
+13.0
+17
+2252
+88.66
+4
+2730
+107.48
+30
+1.18
+7.5
+0.30
+1
+7.5
+31
+2282
+89.84
+3
+2756
+108.50
+26
+1.02
+8.7
+0.34
+1
+8.7
+26
+2308
+90.87
+4
+2782
+109.53
+26
+1.02
+6.5
+0.26
+1
+6.5
+36
+2334
+91.89
+4
+2807
+110.51
+25
+0.98
+6.3
+0.25
+1
+6.3
+37
+2359
+92.87
+5
+2836
+111.65
+29
+1.14
+5.8
+0.23
+1
+5.8
+41
+2388
+94.02
+5
+2862
+112.68
+26
+1.02
+5.2
+0.20
+1
+5.2
+46
+2414
+95.04
+6
+2889
+113.74
+27
+1.06
+4.5
+0.18
+1
+4.5
+54
+2441
+96.10
+1.  Number of hammer blows per increment
+5.  Enter "1" for 8‐kg hammer or "2" for 4.6‐kg hammer
+2.  Accumulative cone penetration after each increment
+6.  (4) x (5)
+3.  Difference in accumulative penetration (2) at start & end of each increment
+7.  From CBR vs. DCP correlation (CBR = 292 / (DCP1.12))
+4.  (3) divided by (1)
+DYNAMIC CONE PENETROMETER TEST DATA
+ASTM D6951
+JT, 10/17/2015
+GEOLABS, INC.
+W.O. 7206‐00
+GEOLABS, INC.
+Hawaii • California
+Plate C‐3.2
+Final Design Submittal - October 2016
+Project:
+P‐1705, Improve Wharf Refueling Capability
+Test Location:
+Test Pit No. 3
+Location:
+Naval Support Facility, Diego Garcia, B.I.O.T.
+Test by / Date:
+W.O.:
+7206‐00
+Test Start Depth:
+0"
+Number of  
+blows per 
+increment 
+(1)
+Accumulative 
+penetration 
+reading (2) 
+(mm)
+Accumulative 
+penetration 
+reading
+(in)
+Penetration 
+per 
+increment (3)  
+(mm)
+Penetration 
+per 
+increment 
+(in)
+Average 
+Penetration 
+per blow (4)    
+(mm)
+Average 
+Penetration 
+per blow 
+(in)
+Hammer 
+blow 
+factor (5)
+DCP   
+Index 
+(6)
+CBR (7)  
+(%)
+Depth 
+below 
+ground 
+surface 
+(mm)
+Depth 
+below 
+ground 
+surface    
+(in)
+3
+2917
+114.84
+28
+1.10
+9.3
+0.37
+1
+9.3
+24
+2469
+97.20
+2
+2943
+115.87
+26
+1.02
+13.0
+0.51
+1
+13.0
+17
+2495
+98.23
+2
+2969
+116.89
+26
+1.02
+13.0
+0.51
+1
+13.0
+17
+2521
+99.25
+2
+2996
+117.95
+27
+1.06
+13.5
+0.53
+1
+13.5
+16
+2548
+100.31
+2
+3019
+118.86
+23
+0.91
+11.5
+0.45
+1
+11.5
+19
+2571
+101.22
+3
+3049
+120.04
+30
+1.18
+10.0
+0.39
+1
+10.0
+22
+2601
+102.40
+3
+3072
+120.94
+23
+0.91
+7.7
+0.30
+1
+7.7
+30
+2624
+103.31
+3
+3096
+121.89
+24
+0.94
+8.0
+0.31
+1
+8.0
+28
+2648
+104.25
+3
+3124
+122.99
+28
+1.10
+9.3
+0.37
+1
+9.3
+24
+2676
+105.35
+2
+3152
+124.09
+28
+1.10
+14.0
+0.55
+1
+14.0
+15
+2704
+106.46
+2
+3197
+125.87
+45
+1.77
+22.5
+0.89
+1
+22.5
+9
+2749
+108.23
+1
+3236
+127.40
+39
+1.54
+39.0
+1.54
+1
+39.0
+5
+2788
+109.76
+1
+3256
+128.19
+20
+0.79
+20.0
+0.79
+1
+20.0
+10
+2808
+110.55
+2
+3293
+129.65
+37
+1.46
+18.5
+0.73
+1
+18.5
+11
+2845
+112.01
+2
+3325
+130.91
+32
+1.26
+16.0
+0.63
+1
+16.0
+13
+2877
+113.27
+2
+3356
+132.13
+31
+1.22
+15.5
+0.61
+1
+15.5
+14
+2908
+114.49
+2
+3382
+133.15
+26
+1.02
+13.0
+0.51
+1
+13.0
+17
+2934
+115.51
+2
+3407
+134.13
+25
+0.98
+12.5
+0.49
+1
+12.5
+17
+2959
+116.50
+2
+3434
+135.20
+27
+1.06
+13.5
+0.53
+1
+13.5
+16
+2986
+117.56
+2
+3461
+136.26
+27
+1.06
+13.5
+0.53
+1
+13.5
+16
+3013
+118.62
+2
+3497
+137.68
+36
+1.42
+18.0
+0.71
+1
+18.0
+11
+3049
+120.04
+2
+3527
+138.86
+30
+1.18
+15.0
+0.59
+1
+15.0
+14
+3079
+121.22
+2
+3547
+139.65
+20
+0.79
+10.0
+0.39
+1
+10.0
+22
+3099
+122.01
+2
+3572
+140.63
+25
+0.98
+12.5
+0.49
+1
+12.5
+17
+3124
+122.99
+2
+3601
+141.77
+29
+1.14
+14.5
+0.57
+1
+14.5
+15
+3153
+124.13
+2
+3623
+142.64
+22
+0.87
+11.0
+0.43
+1
+11.0
+20
+3175
+125.00
+2
+3652
+143.78
+29
+1.14
+14.5
+0.57
+1
+14.5
+15
+3204
+126.14
+2
+3675
+144.69
+23
+0.91
+11.5
+0.45
+1
+11.5
+19
+3227
+127.05
+1.  Number of hammer blows per increment
+5.  Enter "1" for 8‐kg hammer or "2" for 4.6‐kg hammer
+2.  Accumulative cone penetration after each increment
+6.  (4) x (5)
+3.  Difference in accumulative penetration (2) at start & end of each increment
+7.  From CBR vs. DCP correlation (CBR = 292 / (DCP1.12))
+4.  (3) divided by (1)
+DYNAMIC CONE PENETROMETER TEST DATA
+ASTM D6951
+JT, 10/17/2015
+GEOLABS, INC.
+W.O. 7206‐00
+GEOLABS, INC.
+Hawaii • California
+Plate C‐3.3
+Final Design Submittal - October 2016
+Project:
+P‐1705, Improve Wharf Refueling Capability
+Test Location:
+Test Pit No. 4
+Location:
+Naval Support Facility, Diego Garcia, B.I.O.T.
+Test by / Date:
+W.O.:
+7206‐00
+Test Start Depth:
+0"
+Number of  
+blows per 
+increment 
+(1)
+Accumulative 
+penetration 
+reading (2) 
+(mm)
+Accumulative 
+penetration 
+reading
+(in)
+Penetration 
+per 
+increment (3)  
+(mm)
+Penetration 
+per 
+increment 
+(in)
+Average 
+Penetration 
+per blow (4)    
+(mm)
+Average 
+Penetration 
+per blow 
+(in)
+Hammer 
+blow 
+factor (5)
+DCP   
+Index 
+(6)
+CBR (7)  
+(%)
+Depth 
+below 
+ground 
+surface 
+(mm)
+Depth 
+below 
+ground 
+surface    
+(in)
+Initial
+418
+16.46
+0
+0.00
+2
+440
+17.32
+22
+0.87
+11.0
+0.43
+1
+11.0
+20
+22
+0.87
+5
+468
+18.43
+28
+1.10
+5.6
+0.22
+1
+5.6
+42
+50
+1.97
+5
+490
+19.29
+22
+0.87
+4.4
+0.17
+1
+4.4
+56
+72
+2.83
+5
+515
+20.28
+25
+0.98
+5.0
+0.20
+1
+5.0
+48
+97
+3.82
+4
+535
+21.06
+20
+0.79
+5.0
+0.20
+1
+5.0
+48
+117
+4.61
+5
+559
+22.01
+24
+0.94
+4.8
+0.19
+1
+4.8
+50
+141
+5.55
+5
+583
+22.95
+24
+0.94
+4.8
+0.19
+1
+4.8
+50
+165
+6.50
+4
+605
+23.82
+22
+0.87
+5.5
+0.22
+1
+5.5
+43
+187
+7.36
+4
+629
+24.76
+24
+0.94
+6.0
+0.24
+1
+6.0
+39
+211
+8.31
+4
+652
+25.67
+23
+0.91
+5.8
+0.23
+1
+5.8
+41
+234
+9.21
+4
+675
+26.57
+23
+0.91
+5.8
+0.23
+1
+5.8
+41
+257
+10.12
+5
+704
+27.72
+29
+1.14
+5.8
+0.23
+1
+5.8
+41
+286
+11.26
+4
+735
+28.94
+31
+1.22
+7.8
+0.31
+1
+7.8
+29
+317
+12.48
+4
+785
+30.91
+50
+1.97
+12.5
+0.49
+1
+12.5
+17
+367
+14.45
+3
+815
+32.09
+30
+1.18
+10.0
+0.39
+1
+10.0
+22
+397
+15.63
+3
+845
+33.27
+30
+1.18
+10.0
+0.39
+1
+10.0
+22
+427
+16.81
+2
+895
+35.24
+50
+1.97
+25.0
+0.98
+1
+25.0
+8
+477
+18.78
+2
+912
+35.91
+17
+0.67
+8.5
+0.33
+1
+8.5
+27
+494
+19.45
+5
+939
+36.97
+27
+1.06
+5.4
+0.21
+1
+5.4
+44
+521
+20.51
+7
+965
+37.99
+26
+1.02
+3.7
+0.15
+1
+3.7
+67
+547
+21.54
+8
+990
+38.98
+25
+0.98
+3.1
+0.12
+1
+3.1
+81
+572
+22.52
+9
+1008
+39.69
+18
+0.71
+2.0
+0.08
+1
+2.0
+134
+590
+23.23
+9
+1030
+40.55
+22
+0.87
+2.4
+0.10
+1
+2.4
+107
+612
+24.09
+9
+1057
+41.61
+27
+1.06
+3.0
+0.12
+1
+3.0
+85
+639
+25.16
+11
+1079
+42.48
+22
+0.87
+2.0
+0.08
+1
+2.0
+134
+661
+26.02
+9
+1111
+43.74
+32
+1.26
+3.6
+0.14
+1
+3.6
+71
+693
+27.28
+10
+1144
+45.04
+33
+1.30
+3.3
+0.13
+1
+3.3
+77
+726
+28.58
+8
+1175
+46.26
+31
+1.22
+3.9
+0.15
+1
+3.9
+64
+757
+29.80
+8
+1208
+47.56
+33
+1.30
+4.1
+0.16
+1
+4.1
+60
+790
+31.10
+4
+1236
+48.66
+28
+1.10
+7.0
+0.28
+1
+7.0
+33
+818
+32.20
+9
+1258
+49.53
+22
+0.87
+2.4
+0.10
+1
+2.4
+107
+840
+33.07
+8
+1285
+50.59
+27
+1.06
+3.4
+0.13
+1
+3.4
+75
+867
+34.13
+8
+1320
+51.97
+35
+1.38
+4.4
+0.17
+1
+4.4
+56
+902
+35.51
+6
+1353
+53.27
+33
+1.30
+5.5
+0.22
+1
+5.5
+43
+935
+36.81
+6
+1383
+54.45
+30
+1.18
+5.0
+0.20
+1
+5.0
+48
+965
+37.99
+7
+1410
+55.51
+27
+1.06
+3.9
+0.15
+1
+3.9
+64
+992
+39.06
+6
+1445
+56.89
+35
+1.38
+5.8
+0.23
+1
+5.8
+41
+1027
+40.43
+5
+1478
+58.19
+33
+1.30
+6.6
+0.26
+1
+6.6
+35
+1060
+41.73
+4
+1510
+59.45
+32
+1.26
+8.0
+0.31
+1
+8.0
+28
+1092
+42.99
+5
+1535
+60.43
+25
+0.98
+5.0
+0.20
+1
+5.0
+48
+1117
+43.98
+7
+1563
+61.54
+28
+1.10
+4.0
+0.16
+1
+4.0
+62
+1145
+45.08
+7
+1590
+62.60
+27
+1.06
+3.9
+0.15
+1
+3.9
+64
+1172
+46.14
+10
+1617
+63.66
+27
+1.06
+2.7
+0.11
+1
+2.7
+96
+1199
+47.20
+5
+1645
+64.76
+28
+1.10
+5.6
+0.22
+1
+5.6
+42
+1227
+48.31
+1.  Number of hammer blows per increment
+5.  Enter "1" for 8‐kg hammer or "2" for 4.6‐kg hammer
+2.  Accumulative cone penetration after each increment
+6.  (4) x (5)
+3.  Difference in accumulative penetration (2) at start & end of each increment
+7.  From CBR vs. DCP correlation (CBR = 292 / (DCP1.12))
+4.  (3) divided by (1)
+JT, 10/16/2015
+DYNAMIC CONE PENETROMETER TEST DATA
+ASTM D6951
+GEOLABS, INC.
+W.O. 7206‐00
+GEOLABS, INC.
+Hawaii • California
+Plate C‐4.1
+Final Design Submittal - October 2016
+Project:
+P‐1705, Improve Wharf Refueling Capability
+Test Location:
+Test Pit No. 4
+Location:
+Naval Support Facility, Diego Garcia, B.I.O.T.
+Test by / Date:
+W.O.:
+7206‐00
+Test Start Depth:
+0"
+Number of  
+blows per 
+increment 
+(1)
+Accumulative 
+penetration 
+reading (2) 
+(mm)
+Accumulative 
+penetration 
+reading
+(in)
+Penetration 
+per 
+increment (3)  
+(mm)
+Penetration 
+per 
+increment 
+(in)
+Average 
+Penetration 
+per blow (4)    
+(mm)
+Average 
+Penetration 
+per blow 
+(in)
+Hammer 
+blow 
+factor (5)
+DCP   
+Index 
+(6)
+CBR (7)  
+(%)
+Depth 
+below 
+ground 
+surface 
+(mm)
+Depth 
+below 
+ground 
+surface    
+(in)
+4
+1673
+65.87
+28
+1.10
+7.0
+0.28
+1
+7.0
+33
+1255
+49.41
+4
+1708
+67.24
+35
+1.38
+8.8
+0.34
+1
+8.8
+26
+1290
+50.79
+3
+1738
+68.43
+30
+1.18
+10.0
+0.39
+1
+10.0
+22
+1320
+51.97
+2
+1760
+69.29
+22
+0.87
+11.0
+0.43
+1
+11.0
+20
+1342
+52.83
+2
+1785
+70.28
+25
+0.98
+12.5
+0.49
+1
+12.5
+17
+1367
+53.82
+2
+1810
+71.26
+25
+0.98
+12.5
+0.49
+1
+12.5
+17
+1392
+54.80
+2
+1837
+72.32
+27
+1.06
+13.5
+0.53
+1
+13.5
+16
+1419
+55.87
+2
+1865
+73.43
+28
+1.10
+14.0
+0.55
+1
+14.0
+15
+1447
+56.97
+3
+1893
+74.53
+28
+1.10
+9.3
+0.37
+1
+9.3
+24
+1475
+58.07
+4
+1925
+75.79
+32
+1.26
+8.0
+0.31
+1
+8.0
+28
+1507
+59.33
+4
+1956
+77.01
+31
+1.22
+7.8
+0.31
+1
+7.8
+29
+1538
+60.55
+3
+1981
+77.99
+25
+0.98
+8.3
+0.33
+1
+8.3
+27
+1563
+61.54
+3
+2005
+78.94
+24
+0.94
+8.0
+0.31
+1
+8.0
+28
+1587
+62.48
+3
+2035
+80.12
+30
+1.18
+10.0
+0.39
+1
+10.0
+22
+1617
+63.66
+3
+2068
+81.42
+33
+1.30
+11.0
+0.43
+1
+11.0
+20
+1650
+64.96
+3
+2097
+82.56
+29
+1.14
+9.7
+0.38
+1
+9.7
+23
+1679
+66.10
+3
+2126
+83.70
+29
+1.14
+9.7
+0.38
+1
+9.7
+23
+1708
+67.24
+3
+2157
+84.92
+31
+1.22
+10.3
+0.41
+1
+10.3
+21
+1739
+68.46
+3
+2188
+86.14
+31
+1.22
+10.3
+0.41
+1
+10.3
+21
+1770
+69.69
+3
+2215
+87.20
+27
+1.06
+9.0
+0.35
+1
+9.0
+25
+1797
+70.75
+2
+2240
+88.19
+25
+0.98
+12.5
+0.49
+1
+12.5
+17
+1822
+71.73
+2
+2265
+89.17
+25
+0.98
+12.5
+0.49
+1
+12.5
+17
+1847
+72.72
+3
+2299
+90.51
+34
+1.34
+11.3
+0.45
+1
+11.3
+19
+1881
+74.06
+2
+2325
+91.54
+26
+1.02
+13.0
+0.51
+1
+13.0
+17
+1907
+75.08
+2
+2365
+93.11
+40
+1.57
+20.0
+0.79
+1
+20.0
+10
+1947
+76.65
+2
+2412
+94.96
+47
+1.85
+23.5
+0.93
+1
+23.5
+9
+1994
+78.50
+1
+2438
+95.98
+26
+1.02
+26.0
+1.02
+1
+26.0
+8
+2020
+79.53
+1
+2460
+96.85
+22
+0.87
+22.0
+0.87
+1
+22.0
+9
+2042
+80.39
+1
+2485
+97.83
+25
+0.98
+25.0
+0.98
+1
+25.0
+8
+2067
+81.38
+1
+2545
+100.20
+60
+2.36
+60.0
+2.36
+1
+60.0
+3
+2127
+83.74
+2
+2579
+101.54
+34
+1.34
+17.0
+0.67
+1
+17.0
+12
+2161
+85.08
+2
+2611
+102.80
+32
+1.26
+16.0
+0.63
+1
+16.0
+13
+2193
+86.34
+3
+2643
+104.06
+32
+1.26
+10.7
+0.42
+1
+10.7
+21
+2225
+87.60
+3
+2679
+105.47
+36
+1.42
+12.0
+0.47
+1
+12.0
+18
+2261
+89.02
+2
+2702
+106.38
+23
+0.91
+11.5
+0.45
+1
+11.5
+19
+2284
+89.92
+2
+2730
+107.48
+28
+1.10
+14.0
+0.55
+1
+14.0
+15
+2312
+91.02
+2
+2775
+109.25
+45
+1.77
+22.5
+0.89
+1
+22.5
+9
+2357
+92.80
+3
+2803
+110.35
+28
+1.10
+9.3
+0.37
+1
+9.3
+24
+2385
+93.90
+4
+2831
+111.46
+28
+1.10
+7.0
+0.28
+1
+7.0
+33
+2413
+95.00
+3
+2850
+112.20
+19
+0.75
+6.3
+0.25
+1
+6.3
+37
+2432
+95.75
+3
+2877
+113.27
+27
+1.06
+9.0
+0.35
+1
+9.0
+25
+2459
+96.81
+3
+2913
+114.69
+36
+1.42
+12.0
+0.47
+1
+12.0
+18
+2495
+98.23
+2
+2945
+115.94
+32
+1.26
+16.0
+0.63
+1
+16.0
+13
+2527
+99.49
+2
+2968
+116.85
+23
+0.91
+11.5
+0.45
+1
+11.5
+19
+2550
+100.39
+2
+2990
+117.72
+22
+0.87
+11.0
+0.43
+1
+11.0
+20
+2572
+101.26
+1.  Number of hammer blows per increment
+5.  Enter "1" for 8‐kg hammer or "2" for 4.6‐kg hammer
+2.  Accumulative cone penetration after each increment
+6.  (4) x (5)
+3.  Difference in accumulative penetration (2) at start & end of each increment
+7.  From CBR vs. DCP correlation (CBR = 292 / (DCP1.12))
+4.  (3) divided by (1)
+JT, 10/16/2015
+DYNAMIC CONE PENETROMETER TEST DATA
+ASTM D6951
+GEOLABS, INC.
+W.O. 7206‐00
+GEOLABS, INC.
+Hawaii • California
+Plate C‐4.2
+Final Design Submittal - October 2016
+Project:
+P‐1705, Improve Wharf Refueling Capability
+Test Location:
+Test Pit No. 4
+Location:
+Naval Support Facility, Diego Garcia, B.I.O.T.
+Test by / Date:
+W.O.:
+7206‐00
+Test Start Depth:
+0"
+Number of  
+blows per 
+increment 
+(1)
+Accumulative 
+penetration 
+reading (2) 
+(mm)
+Accumulative 
+penetration 
+reading
+(in)
+Penetration 
+per 
+increment (3)  
+(mm)
+Penetration 
+per 
+increment 
+(in)
+Average 
+Penetration 
+per blow (4)    
+(mm)
+Average 
+Penetration 
+per blow 
+(in)
+Hammer 
+blow 
+factor (5)
+DCP   
+Index 
+(6)
+CBR (7)  
+(%)
+Depth 
+below 
+ground 
+surface 
+(mm)
+Depth 
+below 
+ground 
+surface    
+(in)
+2
+3013
+118.62
+23
+0.91
+11.5
+0.45
+1
+11.5
+19
+2595
+102.17
+3
+3043
+119.80
+30
+1.18
+10.0
+0.39
+1
+10.0
+22
+2625
+103.35
+2
+3068
+120.79
+25
+0.98
+12.5
+0.49
+1
+12.5
+17
+2650
+104.33
+2
+3102
+122.13
+34
+1.34
+17.0
+0.67
+1
+17.0
+12
+2684
+105.67
+2
+3148
+123.94
+46
+1.81
+23.0
+0.91
+1
+23.0
+9
+2730
+107.48
+1
+3188
+125.51
+40
+1.57
+40.0
+1.57
+1
+40.0
+5
+2770
+109.06
+1
+3215
+126.57
+27
+1.06
+27.0
+1.06
+1
+27.0
+7
+2797
+110.12
+1
+3244
+127.72
+29
+1.14
+29.0
+1.14
+1
+29.0
+7
+2826
+111.26
+1
+3268
+128.66
+24
+0.94
+24.0
+0.94
+1
+24.0
+8
+2850
+112.20
+1
+3298
+129.84
+30
+1.18
+30.0
+1.18
+1
+30.0
+6
+2880
+113.39
+1
+3327
+130.98
+29
+1.14
+29.0
+1.14
+1
+29.0
+7
+2909
+114.53
+1
+3356
+132.13
+29
+1.14
+29.0
+1.14
+1
+29.0
+7
+2938
+115.67
+1
+3387
+133.35
+31
+1.22
+31.0
+1.22
+1
+31.0
+6
+2969
+116.89
+1
+3419
+134.61
+32
+1.26
+32.0
+1.26
+1
+32.0
+6
+3001
+118.15
+1
+3451
+135.87
+32
+1.26
+32.0
+1.26
+1
+32.0
+6
+3033
+119.41
+1
+3473
+136.73
+22
+0.87
+22.0
+0.87
+1
+22.0
+9
+3055
+120.28
+1
+3498
+137.72
+25
+0.98
+25.0
+0.98
+1
+25.0
+8
+3080
+121.26
+2
+3526
+138.82
+28
+1.10
+14.0
+0.55
+1
+14.0
+15
+3108
+122.36
+2
+3567
+140.43
+41
+1.61
+20.5
+0.81
+1
+20.5
+10
+3149
+123.98
+1
+3597
+141.61
+30
+1.18
+30.0
+1.18
+1
+30.0
+6
+3179
+125.16
+1
+3626
+142.76
+29
+1.14
+29.0
+1.14
+1
+29.0
+7
+3208
+126.30
+1
+3662
+144.17
+36
+1.42
+36.0
+1.42
+1
+36.0
+5
+3244
+127.72
+1
+3688
+145.20
+26
+1.02
+26.0
+1.02
+1
+26.0
+8
+3270
+128.74
+1.  Number of hammer blows per increment
+5.  Enter "1" for 8‐kg hammer or "2" for 4.6‐kg hammer
+2.  Accumulative cone penetration after each increment
+6.  (4) x (5)
+3.  Difference in accumulative penetration (2) at start & end of each increment
+7.  From CBR vs. DCP correlation (CBR = 292 / (DCP1.12))
+4.  (3) divided by (1)
+JT, 10/16/2015
+DYNAMIC CONE PENETROMETER TEST DATA
+ASTM D6951
+GEOLABS, INC.
+W.O. 7206‐00
+GEOLABS, INC.
+Hawaii • California
+Plate C‐4.3
+Final Design Submittal - October 2016
+Project:
+P‐1705, Improve Wharf Refueling Capability
+Test Location:
+Test Pit No. 5
+Location:
+Naval Support Facility, Diego Garcia, B.I.O.T.
+Test by / Date:
+W.O.:
+7206‐00
+Test Start Depth:
+0"
+Number of  
+blows per 
+increment 
+(1)
+Accumulative 
+penetration 
+reading (2) 
+(mm)
+Accumulative 
+penetration 
+reading
+(in)
+Penetration 
+per 
+increment (3)  
+(mm)
+Penetration 
+per 
+increment 
+(in)
+Average 
+Penetration 
+per blow (4)    
+(mm)
+Average 
+Penetration 
+per blow 
+(in)
+Hammer 
+blow 
+factor (5)
+DCP   
+Index 
+(6)
+CBR (7)  
+(%)
+Depth 
+below 
+ground 
+surface 
+(mm)
+Depth 
+below 
+ground 
+surface    
+(in)
+Initial
+409
+16.10
+0
+0.00
+2
+430
+16.93
+21
+0.83
+10.5
+0.41
+1
+10.5
+21
+21
+0.83
+4
+452
+17.80
+22
+0.87
+5.5
+0.22
+1
+5.5
+43
+43
+1.69
+4
+474
+18.66
+22
+0.87
+5.5
+0.22
+1
+5.5
+43
+65
+2.56
+5
+502
+19.76
+28
+1.10
+5.6
+0.22
+1
+5.6
+42
+93
+3.66
+5
+530
+20.87
+28
+1.10
+5.6
+0.22
+1
+5.6
+42
+121
+4.76
+5
+568
+22.36
+38
+1.50
+7.6
+0.30
+1
+7.6
+30
+159
+6.26
+4
+600
+23.62
+32
+1.26
+8.0
+0.31
+1
+8.0
+28
+191
+7.52
+4
+632
+24.88
+32
+1.26
+8.0
+0.31
+1
+8.0
+28
+223
+8.78
+3
+655
+25.79
+23
+0.91
+7.7
+0.30
+1
+7.7
+30
+246
+9.69
+3
+675
+26.57
+20
+0.79
+6.7
+0.26
+1
+6.7
+35
+266
+10.47
+5
+705
+27.76
+30
+1.18
+6.0
+0.24
+1
+6.0
+39
+296
+11.65
+4
+728
+28.66
+23
+0.91
+5.8
+0.23
+1
+5.8
+41
+319
+12.56
+2
+751
+29.57
+23
+0.91
+11.5
+0.45
+1
+11.5
+19
+342
+13.46
+3
+778
+30.63
+27
+1.06
+9.0
+0.35
+1
+9.0
+25
+369
+14.53
+2
+800
+31.50
+22
+0.87
+11.0
+0.43
+1
+11.0
+20
+391
+15.39
+5
+825
+32.48
+25
+0.98
+5.0
+0.20
+1
+5.0
+48
+416
+16.38
+20
+853
+33.58
+28
+1.10
+1.4
+0.06
+1
+1.4
+200
+444
+17.48
+11
+883
+34.76
+30
+1.18
+2.7
+0.11
+1
+2.7
+95
+474
+18.66
+6
+918
+36.14
+35
+1.38
+5.8
+0.23
+1
+5.8
+41
+509
+20.04
+3
+938
+36.93
+20
+0.79
+6.7
+0.26
+1
+6.7
+35
+529
+20.83
+7
+968
+38.11
+30
+1.18
+4.3
+0.17
+1
+4.3
+57
+559
+22.01
+2
+997
+39.25
+29
+1.14
+14.5
+0.57
+1
+14.5
+15
+588
+23.15
+6
+1024
+40.31
+27
+1.06
+4.5
+0.18
+1
+4.5
+54
+615
+24.21
+6
+1054
+41.50
+30
+1.18
+5.0
+0.20
+1
+5.0
+48
+645
+25.39
+3
+1079
+42.48
+25
+0.98
+8.3
+0.33
+1
+8.3
+27
+670
+26.38
+4
+1104
+43.46
+25
+0.98
+6.3
+0.25
+1
+6.3
+37
+695
+27.36
+3
+1129
+44.45
+25
+0.98
+8.3
+0.33
+1
+8.3
+27
+720
+28.35
+4
+1162
+45.75
+33
+1.30
+8.3
+0.32
+1
+8.3
+27
+753
+29.65
+4
+1189
+46.81
+27
+1.06
+6.8
+0.27
+1
+6.8
+34
+780
+30.71
+4
+1221
+48.07
+32
+1.26
+8.0
+0.31
+1
+8.0
+28
+812
+31.97
+5
+1251
+49.25
+30
+1.18
+6.0
+0.24
+1
+6.0
+39
+842
+33.15
+5
+1276
+50.24
+25
+0.98
+5.0
+0.20
+1
+5.0
+48
+867
+34.13
+5
+1310
+51.57
+34
+1.34
+6.8
+0.27
+1
+6.8
+34
+901
+35.47
+4
+1335
+52.56
+25
+0.98
+6.3
+0.25
+1
+6.3
+37
+926
+36.46
+4
+1361
+53.58
+26
+1.02
+6.5
+0.26
+1
+6.5
+36
+952
+37.48
+5
+1387
+54.61
+26
+1.02
+5.2
+0.20
+1
+5.2
+46
+978
+38.50
+5
+1415
+55.71
+28
+1.10
+5.6
+0.22
+1
+5.6
+42
+1006
+39.61
+4
+1440
+56.69
+25
+0.98
+6.3
+0.25
+1
+6.3
+37
+1031
+40.59
+5
+1468
+57.80
+28
+1.10
+5.6
+0.22
+1
+5.6
+42
+1059
+41.69
+5
+1496
+58.90
+28
+1.10
+5.6
+0.22
+1
+5.6
+42
+1087
+42.80
+6
+1522
+59.92
+26
+1.02
+4.3
+0.17
+1
+4.3
+57
+1113
+43.82
+11
+1547
+60.91
+25
+0.98
+2.3
+0.09
+1
+2.3
+116
+1138
+44.80
+9
+1580
+62.20
+33
+1.30
+3.7
+0.14
+1
+3.7
+68
+1171
+46.10
+6
+1615
+63.58
+35
+1.38
+5.8
+0.23
+1
+5.8
+41
+1206
+47.48
+1.  Number of hammer blows per increment
+5.  Enter "1" for 8‐kg hammer or "2" for 4.6‐kg hammer
+2.  Accumulative cone penetration after each increment
+6.  (4) x (5)
+3.  Difference in accumulative penetration (2) at start & end of each increment
+7.  From CBR vs. DCP correlation (CBR = 292 / (DCP1.12))
+4.  (3) divided by (1)
+JT, 10/16/2015
+DYNAMIC CONE PENETROMETER TEST DATA
+ASTM D6951
+GEOLABS, INC.
+W.O. 7206‐00
+GEOLABS, INC.
+Hawaii • California
+Plate C‐5.1
+Final Design Submittal - October 2016
+Project:
+P‐1705, Improve Wharf Refueling Capability
+Test Location:
+Test Pit No. 5
+Location:
+Naval Support Facility, Diego Garcia, B.I.O.T.
+Test by / Date:
+W.O.:
+7206‐00
+Test Start Depth:
+0"
+Number of  
+blows per 
+increment 
+(1)
+Accumulative 
+penetration 
+reading (2) 
+(mm)
+Accumulative 
+penetration 
+reading
+(in)
+Penetration 
+per 
+increment (3)  
+(mm)
+Penetration 
+per 
+increment 
+(in)
+Average 
+Penetration 
+per blow (4)    
+(mm)
+Average 
+Penetration 
+per blow 
+(in)
+Hammer 
+blow 
+factor (5)
+DCP   
+Index 
+(6)
+CBR (7)  
+(%)
+Depth 
+below 
+ground 
+surface 
+(mm)
+Depth 
+below 
+ground 
+surface    
+(in)
+5
+1645
+64.76
+30
+1.18
+6.0
+0.24
+1
+6.0
+39
+1236
+48.66
+5
+1681
+66.18
+36
+1.42
+7.2
+0.28
+1
+7.2
+32
+1272
+50.08
+3
+1711
+67.36
+30
+1.18
+10.0
+0.39
+1
+10.0
+22
+1302
+51.26
+2
+1736
+68.35
+25
+0.98
+12.5
+0.49
+1
+12.5
+17
+1327
+52.24
+2
+1761
+69.33
+25
+0.98
+12.5
+0.49
+1
+12.5
+17
+1352
+53.23
+5
+1791
+70.51
+30
+1.18
+6.0
+0.24
+1
+6.0
+39
+1382
+54.41
+4
+1816
+71.50
+25
+0.98
+6.3
+0.25
+1
+6.3
+37
+1407
+55.39
+3
+1840
+72.44
+24
+0.94
+8.0
+0.31
+1
+8.0
+28
+1431
+56.34
+2
+1865
+73.43
+25
+0.98
+12.5
+0.49
+1
+12.5
+17
+1456
+57.32
+2
+1893
+74.53
+28
+1.10
+14.0
+0.55
+1
+14.0
+15
+1484
+58.43
+2
+1931
+76.02
+38
+1.50
+19.0
+0.75
+1
+19.0
+11
+1522
+59.92
+1
+1955
+76.97
+24
+0.94
+24.0
+0.94
+1
+24.0
+8
+1546
+60.87
+1
+1975
+77.76
+20
+0.79
+20.0
+0.79
+1
+20.0
+10
+1566
+61.65
+2
+2003
+78.86
+28
+1.10
+14.0
+0.55
+1
+14.0
+15
+1594
+62.76
+2
+2040
+80.31
+37
+1.46
+18.5
+0.73
+1
+18.5
+11
+1631
+64.21
+2
+2065
+81.30
+25
+0.98
+12.5
+0.49
+1
+12.5
+17
+1656
+65.20
+2
+2085
+82.09
+20
+0.79
+10.0
+0.39
+1
+10.0
+22
+1676
+65.98
+2
+2110
+83.07
+25
+0.98
+12.5
+0.49
+1
+12.5
+17
+1701
+66.97
+2
+2142
+84.33
+32
+1.26
+16.0
+0.63
+1
+16.0
+13
+1733
+68.23
+2
+2167
+85.31
+25
+0.98
+12.5
+0.49
+1
+12.5
+17
+1758
+69.21
+2
+2190
+86.22
+23
+0.91
+11.5
+0.45
+1
+11.5
+19
+1781
+70.12
+2
+2217
+87.28
+27
+1.06
+13.5
+0.53
+1
+13.5
+16
+1808
+71.18
+2
+2245
+88.39
+28
+1.10
+14.0
+0.55
+1
+14.0
+15
+1836
+72.28
+2
+2270
+89.37
+25
+0.98
+12.5
+0.49
+1
+12.5
+17
+1861
+73.27
+2
+2295
+90.35
+25
+0.98
+12.5
+0.49
+1
+12.5
+17
+1886
+74.25
+2
+2320
+91.34
+25
+0.98
+12.5
+0.49
+1
+12.5
+17
+1911
+75.24
+2
+2342
+92.20
+22
+0.87
+11.0
+0.43
+1
+11.0
+20
+1933
+76.10
+3
+2368
+93.23
+26
+1.02
+8.7
+0.34
+1
+8.7
+26
+1959
+77.13
+3
+2394
+94.25
+26
+1.02
+8.7
+0.34
+1
+8.7
+26
+1985
+78.15
+3
+2422
+95.35
+28
+1.10
+9.3
+0.37
+1
+9.3
+24
+2013
+79.25
+2
+2448
+96.38
+26
+1.02
+13.0
+0.51
+1
+13.0
+17
+2039
+80.28
+2
+2473
+97.36
+25
+0.98
+12.5
+0.49
+1
+12.5
+17
+2064
+81.26
+2
+2500
+98.43
+27
+1.06
+13.5
+0.53
+1
+13.5
+16
+2091
+82.32
+2
+2522
+99.29
+22
+0.87
+11.0
+0.43
+1
+11.0
+20
+2113
+83.19
+2
+2546
+100.24
+24
+0.94
+12.0
+0.47
+1
+12.0
+18
+2137
+84.13
+3
+2578
+101.50
+32
+1.26
+10.7
+0.42
+1
+10.7
+21
+2169
+85.39
+3
+2617
+103.03
+39
+1.54
+13.0
+0.51
+1
+13.0
+17
+2208
+86.93
+2
+2648
+104.25
+31
+1.22
+15.5
+0.61
+1
+15.5
+14
+2239
+88.15
+2
+2670
+105.12
+22
+0.87
+11.0
+0.43
+1
+11.0
+20
+2261
+89.02
+3
+2698
+106.22
+28
+1.10
+9.3
+0.37
+1
+9.3
+24
+2289
+90.12
+3
+2725
+107.28
+27
+1.06
+9.0
+0.35
+1
+9.0
+25
+2316
+91.18
+3
+2750
+108.27
+25
+0.98
+8.3
+0.33
+1
+8.3
+27
+2341
+92.17
+1
+2775
+109.25
+25
+0.98
+25.0
+0.98
+1
+25.0
+8
+2366
+93.15
+3
+2805
+110.43
+30
+1.18
+10.0
+0.39
+1
+10.0
+22
+2396
+94.33
+3
+2837
+111.69
+32
+1.26
+10.7
+0.42
+1
+10.7
+21
+2428
+95.59
+1.  Number of hammer blows per increment
+5.  Enter "1" for 8‐kg hammer or "2" for 4.6‐kg hammer
+2.  Accumulative cone penetration after each increment
+6.  (4) x (5)
+3.  Difference in accumulative penetration (2) at start & end of each increment
+7.  From CBR vs. DCP correlation (CBR = 292 / (DCP1.12))
+4.  (3) divided by (1)
+JT, 10/16/2015
+DYNAMIC CONE PENETROMETER TEST DATA
+ASTM D6951
+GEOLABS, INC.
+W.O. 7206‐00
+GEOLABS, INC.
+Hawaii • California
+Plate C‐5.2
+Final Design Submittal - October 2016
+Project:
+P‐1705, Improve Wharf Refueling Capability
+Test Location:
+Test Pit No. 5
+Location:
+Naval Support Facility, Diego Garcia, B.I.O.T.
+Test by / Date:
+W.O.:
+7206‐00
+Test Start Depth:
+0"
+Number of  
+blows per 
+increment 
+(1)
+Accumulative 
+penetration 
+reading (2) 
+(mm)
+Accumulative 
+penetration 
+reading
+(in)
+Penetration 
+per 
+increment (3)  
+(mm)
+Penetration 
+per 
+increment 
+(in)
+Average 
+Penetration 
+per blow (4)    
+(mm)
+Average 
+Penetration 
+per blow 
+(in)
+Hammer 
+blow 
+factor (5)
+DCP   
+Index 
+(6)
+CBR (7)  
+(%)
+Depth 
+below 
+ground 
+surface 
+(mm)
+Depth 
+below 
+ground 
+surface    
+(in)
+5
+2860
+112.60
+23
+0.91
+4.6
+0.18
+1
+4.6
+53
+2451
+96.50
+5
+2885
+113.58
+25
+0.98
+5.0
+0.20
+1
+5.0
+48
+2476
+97.48
+5
+2930
+115.35
+45
+1.77
+9.0
+0.35
+1
+9.0
+25
+2521
+99.25
+3
+2960
+116.54
+30
+1.18
+10.0
+0.39
+1
+10.0
+22
+2551
+100.43
+3
+2990
+117.72
+30
+1.18
+10.0
+0.39
+1
+10.0
+22
+2581
+101.61
+2
+3015
+118.70
+25
+0.98
+12.5
+0.49
+1
+12.5
+17
+2606
+102.60
+2
+3040
+119.69
+25
+0.98
+12.5
+0.49
+1
+12.5
+17
+2631
+103.58
+2
+3060
+120.47
+20
+0.79
+10.0
+0.39
+1
+10.0
+22
+2651
+104.37
+2
+3080
+121.26
+20
+0.79
+10.0
+0.39
+1
+10.0
+22
+2671
+105.16
+2
+3105
+122.24
+25
+0.98
+12.5
+0.49
+1
+12.5
+17
+2696
+106.14
+2
+3130
+123.23
+25
+0.98
+12.5
+0.49
+1
+12.5
+17
+2721
+107.13
+2
+3153
+124.13
+23
+0.91
+11.5
+0.45
+1
+11.5
+19
+2744
+108.03
+4
+3179
+125.16
+26
+1.02
+6.5
+0.26
+1
+6.5
+36
+2770
+109.06
+4
+3203
+126.10
+24
+0.94
+6.0
+0.24
+1
+6.0
+39
+2794
+110.00
+5
+3220
+126.77
+17
+0.67
+3.4
+0.13
+1
+3.4
+74
+2811
+110.67
+5
+3247
+127.83
+27
+1.06
+5.4
+0.21
+1
+5.4
+44
+2838
+111.73
+5
+3275
+128.94
+28
+1.10
+5.6
+0.22
+1
+5.6
+42
+2866
+112.83
+5
+3300
+129.92
+25
+0.98
+5.0
+0.20
+1
+5.0
+48
+2891
+113.82
+6
+3325
+130.91
+25
+0.98
+4.2
+0.16
+1
+4.2
+59
+2916
+114.80
+6
+3350
+131.89
+25
+0.98
+4.2
+0.16
+1
+4.2
+59
+2941
+115.79
+6
+3373
+132.80
+23
+0.91
+3.8
+0.15
+1
+3.8
+65
+2964
+116.69
+7
+3399
+133.82
+26
+1.02
+3.7
+0.15
+1
+3.7
+67
+2990
+117.72
+6
+3425
+134.84
+26
+1.02
+4.3
+0.17
+1
+4.3
+57
+3016
+118.74
+5
+3450
+135.83
+25
+0.98
+5.0
+0.20
+1
+5.0
+48
+3041
+119.72
+5
+3480
+137.01
+30
+1.18
+6.0
+0.24
+1
+6.0
+39
+3071
+120.91
+5
+3508
+138.11
+28
+1.10
+5.6
+0.22
+1
+5.6
+42
+3099
+122.01
+5
+3530
+138.98
+22
+0.87
+4.4
+0.17
+1
+4.4
+56
+3121
+122.87
+5
+3555
+139.96
+25
+0.98
+5.0
+0.20
+1
+5.0
+48
+3146
+123.86
+3
+3585
+141.14
+30
+1.18
+10.0
+0.39
+1
+10.0
+22
+3176
+125.04
+3
+3620
+142.52
+35
+1.38
+11.7
+0.46
+1
+11.7
+19
+3211
+126.42
+1
+3640
+143.31
+20
+0.79
+20.0
+0.79
+1
+20.0
+10
+3231
+127.20
+7
+3662
+144.17
+22
+0.87
+3.1
+0.12
+1
+3.1
+81
+3253
+128.07
+4
+3679
+144.84
+17
+0.67
+4.3
+0.17
+1
+4.3
+58
+3270
+128.74
+1.  Number of hammer blows per increment
+5.  Enter "1" for 8‐kg hammer or "2" for 4.6‐kg hammer
+2.  Accumulative cone penetration after each increment
+6.  (4) x (5)
+3.  Difference in accumulative penetration (2) at start & end of each increment
+7.  From CBR vs. DCP correlation (CBR = 292 / (DCP1.12))
+4.  (3) divided by (1)
+JT, 10/16/2015
+DYNAMIC CONE PENETROMETER TEST DATA
+ASTM D6951
+GEOLABS, INC.
+W.O. 7206‐00
+GEOLABS, INC.
+Hawaii • California
+Plate C‐5.3
+Final Design Submittal - October 2016
+Project:
+P‐1705, Improve Wharf Refueling Capability
+Test Location:
+Test Pit No. 6
+Location:
+Naval Support Facility, Diego Garcia, B.I.O.T.
+Test by / Date:
+W.O.:
+7206‐00
+Test Start Depth:
+0"
+Number of  
+blows per 
+increment 
+(1)
+Accumulative 
+penetration 
+reading (2) 
+(mm)
+Accumulative 
+penetration 
+reading
+(in)
+Penetration 
+per 
+increment (3)  
+(mm)
+Penetration 
+per 
+increment 
+(in)
+Average 
+Penetration 
+per blow (4)    
+(mm)
+Average 
+Penetration 
+per blow 
+(in)
+Hammer 
+blow 
+factor (5)
+DCP   
+Index 
+(6)
+CBR (7)  
+(%)
+Depth 
+below 
+ground 
+surface 
+(mm)
+Depth 
+below 
+ground 
+surface    
+(in)
+Initial
+113
+4.45
+0
+0.00
+1
+139
+5.47
+26
+1.02
+26.0
+1.02
+1
+26.0
+8
+26
+1.02
+2
+162
+6.38
+23
+0.91
+11.5
+0.45
+1
+11.5
+19
+49
+1.93
+3
+185
+7.28
+23
+0.91
+7.7
+0.30
+1
+7.7
+30
+72
+2.83
+4
+209
+8.23
+24
+0.94
+6.0
+0.24
+1
+6.0
+39
+96
+3.78
+5
+230
+9.06
+21
+0.83
+4.2
+0.17
+1
+4.2
+59
+117
+4.61
+7
+254
+10.00
+24
+0.94
+3.4
+0.13
+1
+3.4
+73
+141
+5.55
+7
+280
+11.02
+26
+1.02
+3.7
+0.15
+1
+3.7
+67
+167
+6.57
+7
+304
+11.97
+24
+0.94
+3.4
+0.13
+1
+3.4
+73
+191
+7.52
+8
+323
+12.72
+19
+0.75
+2.4
+0.09
+1
+2.4
+111
+210
+8.27
+10
+343
+13.50
+20
+0.79
+2.0
+0.08
+1
+2.0
+134
+230
+9.06
+14
+365
+14.37
+22
+0.87
+1.6
+0.06
+1
+1.6
+176
+252
+9.92
+25
+385
+15.16
+20
+0.79
+0.8
+0.03
+1
+0.8
+375
+272
+10.71
+30
+409
+16.10
+24
+0.94
+0.8
+0.03
+1
+0.8
+375
+296
+11.65
+28
+440
+17.32
+31
+1.22
+1.1
+0.04
+1
+1.1
+261
+327
+12.87
+19
+465
+18.31
+25
+0.98
+1.3
+0.05
+1
+1.3
+215
+352
+13.86
+15
+490
+19.29
+25
+0.98
+1.7
+0.07
+1
+1.7
+165
+377
+14.84
+18
+515
+20.28
+25
+0.98
+1.4
+0.05
+1
+1.4
+202
+402
+15.83
+20
+543
+21.38
+28
+1.10
+1.4
+0.06
+1
+1.4
+200
+430
+16.93
+32
+581
+22.87
+38
+1.50
+1.2
+0.05
+1
+1.2
+241
+468
+18.43
+23
+611
+24.06
+30
+1.18
+1.3
+0.05
+1
+1.3
+217
+498
+19.61
+18
+637
+25.08
+26
+1.02
+1.4
+0.06
+1
+1.4
+193
+524
+20.63
+14
+665
+26.18
+28
+1.10
+2.0
+0.08
+1
+2.0
+134
+552
+21.73
+8
+687
+27.05
+22
+0.87
+2.8
+0.11
+1
+2.8
+94
+574
+22.60
+10
+712
+28.03
+25
+0.98
+2.5
+0.10
+1
+2.5
+105
+599
+23.58
+11
+742
+29.21
+30
+1.18
+2.7
+0.11
+1
+2.7
+95
+629
+24.76
+10
+777
+30.59
+35
+1.38
+3.5
+0.14
+1
+3.5
+72
+664
+26.14
+10
+809
+31.85
+32
+1.26
+3.2
+0.13
+1
+3.2
+79
+696
+27.40
+8
+837
+32.95
+28
+1.10
+3.5
+0.14
+1
+3.5
+72
+724
+28.50
+10
+859
+33.82
+22
+0.87
+2.2
+0.09
+1
+2.2
+121
+746
+29.37
+11
+888
+34.96
+29
+1.14
+2.6
+0.10
+1
+2.6
+99
+775
+30.51
+7
+914
+35.98
+26
+1.02
+3.7
+0.15
+1
+3.7
+67
+801
+31.54
+7
+943
+37.13
+29
+1.14
+4.1
+0.16
+1
+4.1
+59
+830
+32.68
+4
+968
+38.11
+25
+0.98
+6.3
+0.25
+1
+6.3
+37
+855
+33.66
+5
+996
+39.21
+28
+1.10
+5.6
+0.22
+1
+5.6
+42
+883
+34.76
+4
+1026
+40.39
+30
+1.18
+7.5
+0.30
+1
+7.5
+31
+913
+35.94
+3
+1060
+41.73
+34
+1.34
+11.3
+0.45
+1
+11.3
+19
+947
+37.28
+2
+1097
+43.19
+37
+1.46
+18.5
+0.73
+1
+18.5
+11
+984
+38.74
+1
+1124
+44.25
+27
+1.06
+27.0
+1.06
+1
+27.0
+7
+1011
+39.80
+1
+1159
+45.63
+35
+1.38
+35.0
+1.38
+1
+35.0
+5
+1046
+41.18
+1
+1197
+47.13
+38
+1.50
+38.0
+1.50
+1
+38.0
+5
+1084
+42.68
+2
+1238
+48.74
+41
+1.61
+20.5
+0.81
+1
+20.5
+10
+1125
+44.29
+2
+1280
+50.39
+42
+1.65
+21.0
+0.83
+1
+21.0
+10
+1167
+45.94
+1
+1310
+51.57
+30
+1.18
+30.0
+1.18
+1
+30.0
+6
+1197
+47.13
+1
+1339
+52.72
+29
+1.14
+29.0
+1.14
+1
+29.0
+7
+1226
+48.27
+1.  Number of hammer blows per increment
+5.  Enter "1" for 8‐kg hammer or "2" for 4.6‐kg hammer
+2.  Accumulative cone penetration after each increment
+6.  (4) x (5)
+3.  Difference in accumulative penetration (2) at start & end of each increment
+7.  From CBR vs. DCP correlation (CBR = 292 / (DCP1.12))
+4.  (3) divided by (1)
+JT, 10/17/2015
+DYNAMIC CONE PENETROMETER TEST DATA
+ASTM D6951
+GEOLABS, INC.
+W.O. 7206‐00
+GEOLABS, INC.
+Hawaii • California
+Plate C‐6.1
+Final Design Submittal - October 2016
+Project:
+P‐1705, Improve Wharf Refueling Capability
+Test Location:
+Test Pit No. 6
+Location:
+Naval Support Facility, Diego Garcia, B.I.O.T.
+Test by / Date:
+W.O.:
+7206‐00
+Test Start Depth:
+0"
+Number of  
+blows per 
+increment 
+(1)
+Accumulative 
+penetration 
+reading (2) 
+(mm)
+Accumulative 
+penetration 
+reading
+(in)
+Penetration 
+per 
+increment (3)  
+(mm)
+Penetration 
+per 
+increment 
+(in)
+Average 
+Penetration 
+per blow (4)    
+(mm)
+Average 
+Penetration 
+per blow 
+(in)
+Hammer 
+blow 
+factor (5)
+DCP   
+Index 
+(6)
+CBR (7)  
+(%)
+Depth 
+below 
+ground 
+surface 
+(mm)
+Depth 
+below 
+ground 
+surface    
+(in)
+1
+1372
+54.02
+33
+1.30
+33.0
+1.30
+1
+33.0
+6
+1259
+49.57
+1
+1410
+55.51
+38
+1.50
+38.0
+1.50
+1
+38.0
+5
+1297
+51.06
+1
+1450
+57.09
+40
+1.57
+40.0
+1.57
+1
+40.0
+5
+1337
+52.64
+1
+1483
+58.39
+33
+1.30
+33.0
+1.30
+1
+33.0
+6
+1370
+53.94
+1
+1510
+59.45
+27
+1.06
+27.0
+1.06
+1
+27.0
+7
+1397
+55.00
+2
+1561
+61.46
+51
+2.01
+25.5
+1.00
+1
+25.5
+8
+1448
+57.01
+1
+1589
+62.56
+28
+1.10
+28.0
+1.10
+1
+28.0
+7
+1476
+58.11
+1
+1613
+63.50
+24
+0.94
+24.0
+0.94
+1
+24.0
+8
+1500
+59.06
+1
+1638
+64.49
+25
+0.98
+25.0
+0.98
+1
+25.0
+8
+1525
+60.04
+1
+1665
+65.55
+27
+1.06
+27.0
+1.06
+1
+27.0
+7
+1552
+61.10
+2
+1704
+67.09
+39
+1.54
+19.5
+0.77
+1
+19.5
+10
+1591
+62.64
+2
+1740
+68.50
+36
+1.42
+18.0
+0.71
+1
+18.0
+11
+1627
+64.06
+2
+1763
+69.41
+23
+0.91
+11.5
+0.45
+1
+11.5
+19
+1650
+64.96
+3
+1805
+71.06
+42
+1.65
+14.0
+0.55
+1
+14.0
+15
+1692
+66.61
+2
+1835
+72.24
+30
+1.18
+15.0
+0.59
+1
+15.0
+14
+1722
+67.80
+3
+1863
+73.35
+28
+1.10
+9.3
+0.37
+1
+9.3
+24
+1750
+68.90
+3
+1892
+74.49
+29
+1.14
+9.7
+0.38
+1
+9.7
+23
+1779
+70.04
+3
+1922
+75.67
+30
+1.18
+10.0
+0.39
+1
+10.0
+22
+1809
+71.22
+31
+1948
+76.69
+26
+1.02
+0.8
+0.03
+1
+0.8
+356
+1835
+72.24
+47
+1973
+77.68
+25
+0.98
+0.5
+0.02
+1
+0.5
+592
+1860
+73.23
+27
+1996
+78.58
+23
+0.91
+0.9
+0.03
+1
+0.9
+349
+1883
+74.13
+12
+2022
+79.61
+26
+1.02
+2.2
+0.09
+1
+2.2
+123
+1909
+75.16
+9
+2048
+80.63
+26
+1.02
+2.9
+0.11
+1
+2.9
+89
+1935
+76.18
+7
+2076
+81.73
+28
+1.10
+4.0
+0.16
+1
+4.0
+62
+1963
+77.28
+5
+2105
+82.87
+29
+1.14
+5.8
+0.23
+1
+5.8
+41
+1992
+78.43
+8
+2133
+83.98
+28
+1.10
+3.5
+0.14
+1
+3.5
+72
+2020
+79.53
+5
+2158
+84.96
+25
+0.98
+5.0
+0.20
+1
+5.0
+48
+2045
+80.51
+6
+2182
+85.91
+24
+0.94
+4.0
+0.16
+1
+4.0
+62
+2069
+81.46
+8
+2205
+86.81
+23
+0.91
+2.9
+0.11
+1
+2.9
+89
+2092
+82.36
+22
+2228
+87.72
+23
+0.91
+1.0
+0.04
+1
+1.0
+278
+2115
+83.27
+50
+2253
+88.70
+25
+0.98
+0.5
+0.02
+1
+0.5
+635
+2140
+84.25
+76
+2285
+89.96
+32
+1.26
+0.4
+0.02
+1
+0.4
+769
+2172
+85.51
+38
+2328
+91.65
+43
+1.69
+1.1
+0.04
+1
+1.1
+254
+2215
+87.20
+20
+2356
+92.76
+28
+1.10
+1.4
+0.06
+1
+1.4
+200
+2243
+88.31
+13
+2382
+93.78
+26
+1.02
+2.0
+0.08
+1
+2.0
+134
+2269
+89.33
+14
+2411
+94.92
+29
+1.14
+2.1
+0.08
+1
+2.1
+129
+2298
+90.47
+11
+2439
+96.02
+28
+1.10
+2.5
+0.10
+1
+2.5
+103
+2326
+91.57
+9
+2458
+96.77
+19
+0.75
+2.1
+0.08
+1
+2.1
+126
+2345
+92.32
+10
+2490
+98.03
+32
+1.26
+3.2
+0.13
+1
+3.2
+79
+2377
+93.58
+12
+2517
+99.09
+27
+1.06
+2.3
+0.09
+1
+2.3
+118
+2404
+94.65
+12
+2553
+100.51
+36
+1.42
+3.0
+0.12
+1
+3.0
+85
+2440
+96.06
+12
+2571
+101.22
+18
+0.71
+1.5
+0.06
+1
+1.5
+185
+2458
+96.77
+12
+2598
+102.28
+27
+1.06
+2.3
+0.09
+1
+2.3
+118
+2485
+97.83
+12
+2624
+103.31
+26
+1.02
+2.2
+0.09
+1
+2.2
+123
+2511
+98.86
+15
+2649
+104.29
+25
+0.98
+1.7
+0.07
+1
+1.7
+165
+2536
+99.84
+1.  Number of hammer blows per increment
+5.  Enter "1" for 8‐kg hammer or "2" for 4.6‐kg hammer
+2.  Accumulative cone penetration after each increment
+6.  (4) x (5)
+3.  Difference in accumulative penetration (2) at start & end of each increment
+7.  From CBR vs. DCP correlation (CBR = 292 / (DCP1.12))
+4.  (3) divided by (1)
+JT, 10/17/2015
+DYNAMIC CONE PENETROMETER TEST DATA
+ASTM D6951
+GEOLABS, INC.
+W.O. 7206‐00
+GEOLABS, INC.
+Hawaii • California
+Plate C‐6.2
+Final Design Submittal - October 2016
+Project:
+P‐1705, Improve Wharf Refueling Capability
+Test Location:
+Test Pit No. 6
+Location:
+Naval Support Facility, Diego Garcia, B.I.O.T.
+Test by / Date:
+W.O.:
+7206‐00
+Test Start Depth:
+0"
+Number of  
+blows per 
+increment 
+(1)
+Accumulative 
+penetration 
+reading (2) 
+(mm)
+Accumulative 
+penetration 
+reading
+(in)
+Penetration 
+per 
+increment (3)  
+(mm)
+Penetration 
+per 
+increment 
+(in)
+Average 
+Penetration 
+per blow (4)    
+(mm)
+Average 
+Penetration 
+per blow 
+(in)
+Hammer 
+blow 
+factor (5)
+DCP   
+Index 
+(6)
+CBR (7)  
+(%)
+Depth 
+below 
+ground 
+surface 
+(mm)
+Depth 
+below 
+ground 
+surface    
+(in)
+18
+2668
+105.04
+19
+0.75
+1.1
+0.04
+1
+1.1
+275
+2555
+100.59
+5
+2697
+106.18
+29
+1.14
+5.8
+0.23
+1
+5.8
+41
+2584
+101.73
+5
+2722
+107.17
+25
+0.98
+5.0
+0.20
+1
+5.0
+48
+2609
+102.72
+4
+2757
+108.54
+35
+1.38
+8.8
+0.34
+1
+8.8
+26
+2644
+104.09
+3
+2789
+109.80
+32
+1.26
+10.7
+0.42
+1
+10.7
+21
+2676
+105.35
+3
+2818
+110.94
+29
+1.14
+9.7
+0.38
+1
+9.7
+23
+2705
+106.50
+3
+2850
+112.20
+32
+1.26
+10.7
+0.42
+1
+10.7
+21
+2737
+107.76
+3
+2884
+113.54
+34
+1.34
+11.3
+0.45
+1
+11.3
+19
+2771
+109.09
+3
+2913
+114.69
+29
+1.14
+9.7
+0.38
+1
+9.7
+23
+2800
+110.24
+4
+2937
+115.63
+24
+0.94
+6.0
+0.24
+1
+6.0
+39
+2824
+111.18
+5
+2966
+116.77
+29
+1.14
+5.8
+0.23
+1
+5.8
+41
+2853
+112.32
+5
+2990
+117.72
+24
+0.94
+4.8
+0.19
+1
+4.8
+50
+2877
+113.27
+5
+3018
+118.82
+28
+1.10
+5.6
+0.22
+1
+5.6
+42
+2905
+114.37
+5
+3050
+120.08
+32
+1.26
+6.4
+0.25
+1
+6.4
+37
+2937
+115.63
+4
+3080
+121.26
+30
+1.18
+7.5
+0.30
+1
+7.5
+31
+2967
+116.81
+3
+3104
+122.20
+24
+0.94
+8.0
+0.31
+1
+8.0
+28
+2991
+117.76
+4
+3131
+123.27
+27
+1.06
+6.8
+0.27
+1
+6.8
+34
+3018
+118.82
+4
+3161
+124.45
+30
+1.18
+7.5
+0.30
+1
+7.5
+31
+3048
+120.00
+4
+3191
+125.63
+30
+1.18
+7.5
+0.30
+1
+7.5
+31
+3078
+121.18
+3
+3217
+126.65
+26
+1.02
+8.7
+0.34
+1
+8.7
+26
+3104
+122.20
+3
+3248
+127.87
+31
+1.22
+10.3
+0.41
+1
+10.3
+21
+3135
+123.43
+3
+3282
+129.21
+34
+1.34
+11.3
+0.45
+1
+11.3
+19
+3169
+124.76
+3
+3319
+130.67
+37
+1.46
+12.3
+0.49
+1
+12.3
+18
+3206
+126.22
+3
+3360
+132.28
+41
+1.61
+13.7
+0.54
+1
+13.7
+16
+3247
+127.83
+1
+3375
+132.87
+15
+0.59
+15.0
+0.59
+1
+15.0
+14
+3262
+128.43
+1.  Number of hammer blows per increment
+5.  Enter "1" for 8‐kg hammer or "2" for 4.6‐kg hammer
+2.  Accumulative cone penetration after each increment
+6.  (4) x (5)
+3.  Difference in accumulative penetration (2) at start & end of each increment
+7.  From CBR vs. DCP correlation (CBR = 292 / (DCP1.12))
+4.  (3) divided by (1)
+JT, 10/17/2015
+DYNAMIC CONE PENETROMETER TEST DATA
+ASTM D6951
+GEOLABS, INC.
+W.O. 7206‐00
+GEOLABS, INC.
+Hawaii • California
+Plate C‐6.3
+Final Design Submittal - October 2016
+Project:
+P‐1705, Improve Wharf Refueling Capability
+Test Location:
+Test Pit No. 7
+Location:
+Naval Support Facility, Diego Garcia, B.I.O.T.
+Test by / Date:
+W.O.:
+7206‐00
+Test Start Depth:
+0"
+Number of  
+blows per 
+increment 
+(1)
+Accumulative 
+penetration 
+reading (2) 
+(mm)
+Accumulative 
+penetration 
+reading
+(in)
+Penetration 
+per 
+increment (3)  
+(mm)
+Penetration 
+per 
+increment 
+(in)
+Average 
+Penetration 
+per blow (4)    
+(mm)
+Average 
+Penetration 
+per blow 
+(in)
+Hammer 
+blow 
+factor (5)
+DCP   
+Index 
+(6)
+CBR (7)  
+(%)
+Depth 
+below 
+ground 
+surface 
+(mm)
+Depth 
+below 
+ground 
+surface    
+(in)
+Initial
+430
+16.93
+0
+0.00
+1
+460
+18.11
+30
+1.18
+30.0
+1.18
+1
+30.0
+6
+30
+1.18
+2
+492
+19.37
+32
+1.26
+16.0
+0.63
+1
+16.0
+13
+62
+2.44
+2
+515
+20.28
+23
+0.91
+11.5
+0.45
+1
+11.5
+19
+85
+3.35
+3
+535
+21.06
+20
+0.79
+6.7
+0.26
+1
+6.7
+35
+105
+4.13
+4
+559
+22.01
+24
+0.94
+6.0
+0.24
+1
+6.0
+39
+129
+5.08
+4
+585
+23.03
+26
+1.02
+6.5
+0.26
+1
+6.5
+36
+155
+6.10
+3
+611
+24.06
+26
+1.02
+8.7
+0.34
+1
+8.7
+26
+181
+7.13
+3
+643
+25.31
+32
+1.26
+10.7
+0.42
+1
+10.7
+21
+213
+8.39
+3
+672
+26.46
+29
+1.14
+9.7
+0.38
+1
+9.7
+23
+242
+9.53
+4
+699
+27.52
+27
+1.06
+6.8
+0.27
+1
+6.8
+34
+269
+10.59
+7
+730
+28.74
+31
+1.22
+4.4
+0.17
+1
+4.4
+55
+300
+11.81
+7
+755
+29.72
+25
+0.98
+3.6
+0.14
+1
+3.6
+70
+325
+12.80
+8
+780
+30.71
+25
+0.98
+3.1
+0.12
+1
+3.1
+81
+350
+13.78
+4
+809
+31.85
+29
+1.14
+7.3
+0.29
+1
+7.3
+32
+379
+14.92
+3
+830
+32.68
+21
+0.83
+7.0
+0.28
+1
+7.0
+33
+400
+15.75
+3
+865
+34.06
+35
+1.38
+11.7
+0.46
+1
+11.7
+19
+435
+17.13
+2
+889
+35.00
+24
+0.94
+12.0
+0.47
+1
+12.0
+18
+459
+18.07
+4
+912
+35.91
+23
+0.91
+5.8
+0.23
+1
+5.8
+41
+482
+18.98
+4
+935
+36.81
+23
+0.91
+5.8
+0.23
+1
+5.8
+41
+505
+19.88
+4
+958
+37.72
+23
+0.91
+5.8
+0.23
+1
+5.8
+41
+528
+20.79
+5
+983
+38.70
+25
+0.98
+5.0
+0.20
+1
+5.0
+48
+553
+21.77
+5
+1008
+39.69
+25
+0.98
+5.0
+0.20
+1
+5.0
+48
+578
+22.76
+6
+1032
+40.63
+24
+0.94
+4.0
+0.16
+1
+4.0
+62
+602
+23.70
+6
+1059
+41.69
+27
+1.06
+4.5
+0.18
+1
+4.5
+54
+629
+24.76
+6
+1090
+42.91
+31
+1.22
+5.2
+0.20
+1
+5.2
+46
+660
+25.98
+7
+1116
+43.94
+26
+1.02
+3.7
+0.15
+1
+3.7
+67
+686
+27.01
+6
+1143
+45.00
+27
+1.06
+4.5
+0.18
+1
+4.5
+54
+713
+28.07
+5
+1177
+46.34
+34
+1.34
+6.8
+0.27
+1
+6.8
+34
+747
+29.41
+2
+1203
+47.36
+26
+1.02
+13.0
+0.51
+1
+13.0
+17
+773
+30.43
+1
+1221
+48.07
+18
+0.71
+18.0
+0.71
+1
+18.0
+11
+791
+31.14
+1
+1243
+48.94
+22
+0.87
+22.0
+0.87
+1
+22.0
+9
+813
+32.01
+1
+1272
+50.08
+29
+1.14
+29.0
+1.14
+1
+29.0
+7
+842
+33.15
+1
+1300
+51.18
+28
+1.10
+28.0
+1.10
+1
+28.0
+7
+870
+34.25
+1
+1325
+52.17
+25
+0.98
+25.0
+0.98
+1
+25.0
+8
+895
+35.24
+1
+1350
+53.15
+25
+0.98
+25.0
+0.98
+1
+25.0
+8
+920
+36.22
+1
+1373
+54.06
+23
+0.91
+23.0
+0.91
+1
+23.0
+9
+943
+37.13
+2
+1400
+55.12
+27
+1.06
+13.5
+0.53
+1
+13.5
+16
+970
+38.19
+2
+1425
+56.10
+25
+0.98
+12.5
+0.49
+1
+12.5
+17
+995
+39.17
+2
+1450
+57.09
+25
+0.98
+12.5
+0.49
+1
+12.5
+17
+1020
+40.16
+2
+1475
+58.07
+25
+0.98
+12.5
+0.49
+1
+12.5
+17
+1045
+41.14
+2
+1500
+59.06
+25
+0.98
+12.5
+0.49
+1
+12.5
+17
+1070
+42.13
+4
+1527
+60.12
+27
+1.06
+6.8
+0.27
+1
+6.8
+34
+1097
+43.19
+5
+1552
+61.10
+25
+0.98
+5.0
+0.20
+1
+5.0
+48
+1122
+44.17
+5
+1580
+62.20
+28
+1.10
+5.6
+0.22
+1
+5.6
+42
+1150
+45.28
+1.  Number of hammer blows per increment
+5.  Enter "1" for 8‐kg hammer or "2" for 4.6‐kg hammer
+2.  Accumulative cone penetration after each increment
+6.  (4) x (5)
+3.  Difference in accumulative penetration (2) at start & end of each increment
+7.  From CBR vs. DCP correlation (CBR = 292 / (DCP1.12))
+4.  (3) divided by (1)
+JT, 10/17/2015
+DYNAMIC CONE PENETROMETER TEST DATA
+ASTM D6951
+GEOLABS, INC.
+W.O. 7206‐00
+GEOLABS, INC.
+Hawaii • California
+Plate C‐7.1
+Final Design Submittal - October 2016
+Project:
+P‐1705, Improve Wharf Refueling Capability
+Test Location:
+Test Pit No. 7
+Location:
+Naval Support Facility, Diego Garcia, B.I.O.T.
+Test by / Date:
+W.O.:
+7206‐00
+Test Start Depth:
+0"
+Number of  
+blows per 
+increment 
+(1)
+Accumulative 
+penetration 
+reading (2) 
+(mm)
+Accumulative 
+penetration 
+reading
+(in)
+Penetration 
+per 
+increment (3)  
+(mm)
+Penetration 
+per 
+increment 
+(in)
+Average 
+Penetration 
+per blow (4)    
+(mm)
+Average 
+Penetration 
+per blow 
+(in)
+Hammer 
+blow 
+factor (5)
+DCP   
+Index 
+(6)
+CBR (7)  
+(%)
+Depth 
+below 
+ground 
+surface 
+(mm)
+Depth 
+below 
+ground 
+surface    
+(in)
+5
+1610
+63.39
+30
+1.18
+6.0
+0.24
+1
+6.0
+39
+1180
+46.46
+5
+1637
+64.45
+27
+1.06
+5.4
+0.21
+1
+5.4
+44
+1207
+47.52
+4
+1663
+65.47
+26
+1.02
+6.5
+0.26
+1
+6.5
+36
+1233
+48.54
+4
+1690
+66.54
+27
+1.06
+6.8
+0.27
+1
+6.8
+34
+1260
+49.61
+6
+1715
+67.52
+25
+0.98
+4.2
+0.16
+1
+4.2
+59
+1285
+50.59
+7
+1740
+68.50
+25
+0.98
+3.6
+0.14
+1
+3.6
+70
+1310
+51.57
+8
+1767
+69.57
+27
+1.06
+3.4
+0.13
+1
+3.4
+75
+1337
+52.64
+8
+1794
+70.63
+27
+1.06
+3.4
+0.13
+1
+3.4
+75
+1364
+53.70
+6
+1822
+71.73
+28
+1.10
+4.7
+0.18
+1
+4.7
+52
+1392
+54.80
+9
+1860
+73.23
+38
+1.50
+4.2
+0.17
+1
+4.2
+58
+1430
+56.30
+3
+1888
+74.33
+28
+1.10
+9.3
+0.37
+1
+9.3
+24
+1458
+57.40
+3
+1913
+75.31
+25
+0.98
+8.3
+0.33
+1
+8.3
+27
+1483
+58.39
+3
+1941
+76.42
+28
+1.10
+9.3
+0.37
+1
+9.3
+24
+1511
+59.49
+3
+1978
+77.87
+37
+1.46
+12.3
+0.49
+1
+12.3
+18
+1548
+60.94
+2
+2015
+79.33
+37
+1.46
+18.5
+0.73
+1
+18.5
+11
+1585
+62.40
+2
+2041
+80.35
+26
+1.02
+13.0
+0.51
+1
+13.0
+17
+1611
+63.43
+2
+2068
+81.42
+27
+1.06
+13.5
+0.53
+1
+13.5
+16
+1638
+64.49
+2
+2096
+82.52
+28
+1.10
+14.0
+0.55
+1
+14.0
+15
+1666
+65.59
+2
+2122
+83.54
+26
+1.02
+13.0
+0.51
+1
+13.0
+17
+1692
+66.61
+4
+2144
+84.41
+22
+0.87
+5.5
+0.22
+1
+5.5
+43
+1714
+67.48
+8
+2178
+85.75
+34
+1.34
+4.3
+0.17
+1
+4.3
+58
+1748
+68.82
+6
+2215
+87.20
+37
+1.46
+6.2
+0.24
+1
+6.2
+38
+1785
+70.28
+4
+2243
+88.31
+28
+1.10
+7.0
+0.28
+1
+7.0
+33
+1813
+71.38
+5
+2271
+89.41
+28
+1.10
+5.6
+0.22
+1
+5.6
+42
+1841
+72.48
+5
+2293
+90.28
+22
+0.87
+4.4
+0.17
+1
+4.4
+56
+1863
+73.35
+14
+2323
+91.46
+30
+1.18
+2.1
+0.08
+1
+2.1
+124
+1893
+74.53
+8
+2348
+92.44
+25
+0.98
+3.1
+0.12
+1
+3.1
+81
+1918
+75.51
+8
+2374
+93.46
+26
+1.02
+3.3
+0.13
+1
+3.3
+78
+1944
+76.54
+9
+2404
+94.65
+30
+1.18
+3.3
+0.13
+1
+3.3
+76
+1974
+77.72
+8
+2434
+95.83
+30
+1.18
+3.8
+0.15
+1
+3.8
+66
+2004
+78.90
+7
+2461
+96.89
+27
+1.06
+3.9
+0.15
+1
+3.9
+64
+2031
+79.96
+7
+2486
+97.87
+25
+0.98
+3.6
+0.14
+1
+3.6
+70
+2056
+80.94
+7
+2513
+98.94
+27
+1.06
+3.9
+0.15
+1
+3.9
+64
+2083
+82.01
+5
+2543
+100.12
+30
+1.18
+6.0
+0.24
+1
+6.0
+39
+2113
+83.19
+5
+2573
+101.30
+30
+1.18
+6.0
+0.24
+1
+6.0
+39
+2143
+84.37
+4
+2598
+102.28
+25
+0.98
+6.3
+0.25
+1
+6.3
+37
+2168
+85.35
+4
+2628
+103.46
+30
+1.18
+7.5
+0.30
+1
+7.5
+31
+2198
+86.54
+4
+2653
+104.45
+25
+0.98
+6.3
+0.25
+1
+6.3
+37
+2223
+87.52
+36
+2681
+105.55
+28
+1.10
+0.8
+0.03
+1
+0.8
+387
+2251
+88.62
+3
+2708
+106.61
+27
+1.06
+9.0
+0.35
+1
+9.0
+25
+2278
+89.69
+4
+2728
+107.40
+20
+0.79
+5.0
+0.20
+1
+5.0
+48
+2298
+90.47
+5
+2753
+108.39
+25
+0.98
+5.0
+0.20
+1
+5.0
+48
+2323
+91.46
+4
+2778
+109.37
+25
+0.98
+6.3
+0.25
+1
+6.3
+37
+2348
+92.44
+4
+2803
+110.35
+25
+0.98
+6.3
+0.25
+1
+6.3
+37
+2373
+93.43
+4
+2830
+111.42
+27
+1.06
+6.8
+0.27
+1
+6.8
+34
+2400
+94.49
+1.  Number of hammer blows per increment
+5.  Enter "1" for 8‐kg hammer or "2" for 4.6‐kg hammer
+2.  Accumulative cone penetration after each increment
+6.  (4) x (5)
+3.  Difference in accumulative penetration (2) at start & end of each increment
+7.  From CBR vs. DCP correlation (CBR = 292 / (DCP1.12))
+4.  (3) divided by (1)
+JT, 10/17/2015
+DYNAMIC CONE PENETROMETER TEST DATA
+ASTM D6951
+GEOLABS, INC.
+W.O. 7206‐00
+GEOLABS, INC.
+Hawaii • California
+Plate C‐7.2
+Final Design Submittal - October 2016
+Project:
+P‐1705, Improve Wharf Refueling Capability
+Test Location:
+Test Pit No. 7
+Location:
+Naval Support Facility, Diego Garcia, B.I.O.T.
+Test by / Date:
+W.O.:
+7206‐00
+Test Start Depth:
+0"
+Number of  
+blows per 
+increment 
+(1)
+Accumulative 
+penetration 
+reading (2) 
+(mm)
+Accumulative 
+penetration 
+reading
+(in)
+Penetration 
+per 
+increment (3)  
+(mm)
+Penetration 
+per 
+increment 
+(in)
+Average 
+Penetration 
+per blow (4)    
+(mm)
+Average 
+Penetration 
+per blow 
+(in)
+Hammer 
+blow 
+factor (5)
+DCP   
+Index 
+(6)
+CBR (7)  
+(%)
+Depth 
+below 
+ground 
+surface 
+(mm)
+Depth 
+below 
+ground 
+surface    
+(in)
+4
+2861
+112.64
+31
+1.22
+7.8
+0.31
+1
+7.8
+29
+2431
+95.71
+4
+2885
+113.58
+24
+0.94
+6.0
+0.24
+1
+6.0
+39
+2455
+96.65
+5
+2903
+114.29
+18
+0.71
+3.6
+0.14
+1
+3.6
+70
+2473
+97.36
+7
+2927
+115.24
+24
+0.94
+3.4
+0.13
+1
+3.4
+73
+2497
+98.31
+6
+2958
+116.46
+31
+1.22
+5.2
+0.20
+1
+5.2
+46
+2528
+99.53
+3
+2982
+117.40
+24
+0.94
+8.0
+0.31
+1
+8.0
+28
+2552
+100.47
+4
+3012
+118.58
+30
+1.18
+7.5
+0.30
+1
+7.5
+31
+2582
+101.65
+3
+3038
+119.61
+26
+1.02
+8.7
+0.34
+1
+8.7
+26
+2608
+102.68
+3
+3067
+120.75
+29
+1.14
+9.7
+0.38
+1
+9.7
+23
+2637
+103.82
+3
+3091
+121.69
+24
+0.94
+8.0
+0.31
+1
+8.0
+28
+2661
+104.76
+3
+3118
+122.76
+27
+1.06
+9.0
+0.35
+1
+9.0
+25
+2688
+105.83
+4
+3143
+123.74
+25
+0.98
+6.3
+0.25
+1
+6.3
+37
+2713
+106.81
+4
+3163
+124.53
+20
+0.79
+5.0
+0.20
+1
+5.0
+48
+2733
+107.60
+4
+3188
+125.51
+25
+0.98
+6.3
+0.25
+1
+6.3
+37
+2758
+108.58
+4
+3223
+126.89
+35
+1.38
+8.8
+0.34
+1
+8.8
+26
+2793
+109.96
+3
+3248
+127.87
+25
+0.98
+8.3
+0.33
+1
+8.3
+27
+2818
+110.94
+3
+3273
+128.86
+25
+0.98
+8.3
+0.33
+1
+8.3
+27
+2843
+111.93
+3
+3298
+129.84
+25
+0.98
+8.3
+0.33
+1
+8.3
+27
+2868
+112.91
+3
+3323
+130.83
+25
+0.98
+8.3
+0.33
+1
+8.3
+27
+2893
+113.90
+3
+3348
+131.81
+25
+0.98
+8.3
+0.33
+1
+8.3
+27
+2918
+114.88
+3
+3373
+132.80
+25
+0.98
+8.3
+0.33
+1
+8.3
+27
+2943
+115.87
+7
+3398
+133.78
+25
+0.98
+3.6
+0.14
+1
+3.6
+70
+2968
+116.85
+6
+3441
+135.47
+43
+1.69
+7.2
+0.28
+1
+7.2
+32
+3011
+118.54
+4
+3478
+136.93
+37
+1.46
+9.3
+0.36
+1
+9.3
+24
+3048
+120.00
+3
+3513
+138.31
+35
+1.38
+11.7
+0.46
+1
+11.7
+19
+3083
+121.38
+3
+3543
+139.49
+30
+1.18
+10.0
+0.39
+1
+10.0
+22
+3113
+122.56
+2
+3563
+140.28
+20
+0.79
+10.0
+0.39
+1
+10.0
+22
+3133
+123.35
+3
+3588
+141.26
+25
+0.98
+8.3
+0.33
+1
+8.3
+27
+3158
+124.33
+3
+3613
+142.24
+25
+0.98
+8.3
+0.33
+1
+8.3
+27
+3183
+125.31
+3
+3638
+143.23
+25
+0.98
+8.3
+0.33
+1
+8.3
+27
+3208
+126.30
+4
+3663
+144.21
+25
+0.98
+6.3
+0.25
+1
+6.3
+37
+3233
+127.28
+3
+3689
+145.24
+26
+1.02
+8.7
+0.34
+1
+8.7
+26
+3259
+128.31
+1.  Number of hammer blows per increment
+5.  Enter "1" for 8‐kg hammer or "2" for 4.6‐kg hammer
+2.  Accumulative cone penetration after each increment
+6.  (4) x (5)
+3.  Difference in accumulative penetration (2) at start & end of each increment
+7.  From CBR vs. DCP correlation (CBR = 292 / (DCP1.12))
+4.  (3) divided by (1)
+JT, 10/17/2015
+DYNAMIC CONE PENETROMETER TEST DATA
+ASTM D6951
+GEOLABS, INC.
+W.O. 7206‐00
+GEOLABS, INC.
+Hawaii • California
+Plate C‐7.3
+Final Design Submittal - October 2016

@@ -1,0 +1,1046 @@
+GEOLABS, INC. 
+Geotechnical Engineering and Drilling Services 
+2006 Kalihi Street • Honolulu, Hawaii 96819 
+Phone: (808) 841-5064  •  Facsimile: (808) 847-1749  •  E-mail: hawaii@geolabs.net 
+Hawaii • California 
+February 4, 2015 
+W.O. 7028-00 
+Mr. Jay Stone 
+Belt Collins Hawaii LLC 
+2153 North King Street, Suite 200  
+Honolulu, HI  96819 
+ADDENDUM 
+GEOTECHNICAL ENGINEERING EXPLORATION 
+WILHELMINA RISE WATER SYSTEM IMPROVEMENTS, PART V 
+HONOLULU, OAHU, HAWAII 
+Dear Mr. Stone: 
+Geolabs, Inc. submits this addendum to our report entitled “Geotechnical 
+Engineering Exploration, Wilhelmina Rise Water System Improvements, Part V, 
+Honolulu, Oahu, Hawaii”, dated December 1, 2014.  This addendum corrects 
+information that was based on results provided by our subconsultant, TestAmerica.  
+During an internal quality control check, TestAmerica noted that the dilution 
+factor had been improperly applied to the resistivity tests for this project resulting in 
+erroneous resistivity data. Our report, as issued, reported resistivity values ranging from 
+about 5,500 to 59,000 ohm-cm, corresponding to corrosion ratings of 4 to 5, respectively.  
+Based on TestAmerica’s corrected laboratory report, it appears that the actual 
+resistivity values for soils at the project site range from 1,100 to 6,800 ohm-cm which 
+correspond to corrosion ratings of 2 to  4; and we believe that an average corrosion 
+rating of 2 may be used for the proposed project. Design of metallic substructures, such 
+as water line pipes or other metallic piping, should consider the effects of the corrosive 
+environment on the substructure. 
+Belt Collins Hawaii LLC Page 2
+W.O. 7028-00
+February 4, 2015
+We appreciate the opportunity to be of continued service to you on this project. If you
+have questions, please contact our office.
+Respectfully submitted,
+GEOLABS, INC.
+President
+CSM:DEF:mj~
+Attachment: TestAmerica Analytical Report (13 Sheets)
+h:\7000Series\7028-00.cm1
+GEOLABS, INC.
+Hawaii ¢ California
+ANALYTICAL REPORT
+TestAmerica Laboratories, Inc.
+TestAmerica Irvine
+17461 Derian Ave
+Suite 100
+Irvine, CA 92614-5817
+Tel: (949)261-1022
+TestAmerica Job ID: 440-93462-1
+TestAmerica Sample Delivery Group: 7028-00
+Client Project/Site: Wilhelmina Rise
+Revision: 1
+For:
+GeoLabs Inc
+2006 Kalihi St.
+Honolulu, Hawaii 96819
+Attn: Dayton Fraim
+Authorized for release by:
+1/23/2015 4:37:45 PM
+Heather Clark, Project Manager I
+heather.clark@testamericainc.com
+Designee for
+Jonathan Bousselaire, Project Manager I
+(949)261-1022
+jonathan.bousselaire@testamericainc.com
+The test results in this report meet all 2003 NELAC and 2009 TNI requirements for accredited
+parameters, exceptions are noted in this report. This report may not be reproduced except in full,
+and with written approval from the laboratory. For questions please contact the Project Manager
+at the e-mail address or telephone number listed on this page.
+This report has been electronically signed and authorized by the signatory. Electronic signature is
+intended to be the legally binding equivalent of a traditionally handwritten signature.
+Results relate only to the items tested and the sample(s) as received by the laboratory.
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+Table of Contents
+Client: GeoLabs Inc
+Project/Site: Wilhelmina Rise
+TestAmerica Job ID: 440-93462-1
+SDG: 7028-00
+Page 2 of 13
+TestAmerica Irvine
+1/23/2015
+Cover Page . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+1
+Table of Contents . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+2
+Sample Summary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+3
+Case Narrative . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+4
+Client Sample Results . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+5
+Method Summary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+6
+Lab Chronicle . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+7
+QC Sample Results . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+8
+QC Association Summary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+9
+Definitions/Glossary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+10
+Certification Summary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+11
+Chain of Custody . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+12
+Receipt Checklists . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+13
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+Sample Summary
+TestAmerica Job ID: 440-93462-1
+Client: GeoLabs Inc
+SDG: 7028-00
+Project/Site: Wilhelmina Rise
+Lab Sample ID
+Client Sample ID
+Received
+Collected
+Matrix
+440-93462-1
+B-01   RS3   S-6.5
+Solid
+10/15/14 00:01
+11/15/14 10:00
+440-93462-2
+B-07   RS1   1-2.5
+Solid
+10/15/14 00:01
+11/15/14 10:00
+440-93462-3
+B-08   SPT2   2.5-4
+Solid
+10/15/14 00:01
+11/15/14 10:00
+TestAmerica Irvine
+Page 3 of 13
+1/23/2015
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+Case Narrative
+Client: GeoLabs Inc
+TestAmerica Job ID: 440-93462-1
+Project/Site: Wilhelmina Rise
+SDG: 7028-00
+Job ID: 440-93462-1
+Laboratory: TestAmerica Irvine
+Narrative
+Job Narrative
+440-93462-1
+Comments
+No additional comments. 
+Receipt 
+The samples were received on 11/15/2014 10:00 AM; the samples arrived in good condition, properly preserved and, where required, on 
+ice.  The temperature of the cooler at receipt was 2.1º C.
+General Chemistry 
+Method(s) SM 2510B: The following sample(s) was received outside of holding time: B-01   RS3   S-6.5 (440-93462-1), B-07   RS1   1-2.5 
+(440-93462-2), B-08   SPT2   2.5-4 (440-93462-3).   2510B.
+Method(s) 9045C: The following samples were received outside of holding time: B-01   RS3   S-6.5 (440-93462-1), B-07   RS1   1-2.5 
+(440-93462-2), B-08   SPT2   2.5-4 (440-93462-3).
+Method(s) SM 2510B: This report is being revised to correct results for Resistivity by Standard Method 2510B.
+Through a series of internal checks, the laboratory recently discovered an error affecting the calculation of Resistivity for diluted samples.  
+Resistivity is calculated as the inverse of Conductivity, which is measured by the laboratory.  It was determined that the dilution factor was 
+being applied to the Resistivity result (post-calculation), whereas the dilution factor should have been applied to the Conductivity result 
+(pre-calculation).  As a consequence, diluted sample results for Resistivity were lower than originally reported.  The error has been 
+resolved and affected results have been re-calculated.  The following samples were affected: B-01   RS3   S-6.5 (440-93462-1), B-07   RS1   
+1-2.5 (440-93462-2), B-08   SPT2   2.5-4 (440-93462-3)
+No additional analytical or quality issues were noted, other than those described above or in the Definitions/Glossary page.
+TestAmerica Irvine
+Page 4 of 13
+1/23/2015
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+Client Sample Results
+TestAmerica Job ID: 440-93462-1
+Client: GeoLabs Inc
+SDG: 7028-00
+Project/Site: Wilhelmina Rise
+Lab Sample ID: 440-93462-1
+Client Sample ID: B-01   RS3   S-6.5
+Matrix: Solid
+Date Collected: 10/15/14 00:01
+Date Received: 11/15/14 10:00
+General Chemistry - Soluble
+RL
+RL
+pH
+4.78
+H
+0.100
+SU
+11/18/14 21:26
+1
+Analyte
+Dil Fac
+Analyzed
+Prepared
+Unit
+D
+Result
+Qualifier
+0.10
+ohm cm
+11/20/14 10:20
+1
+Resistivity
+1400
+H
+Lab Sample ID: 440-93462-2
+Client Sample ID: B-07   RS1   1-2.5
+Matrix: Solid
+Date Collected: 10/15/14 00:01
+Date Received: 11/15/14 10:00
+General Chemistry - Soluble
+RL
+RL
+pH
+8.05
+H
+0.100
+SU
+11/18/14 21:26
+1
+Analyte
+Dil Fac
+Analyzed
+Prepared
+Unit
+D
+Result
+Qualifier
+0.10
+ohm cm
+11/20/14 10:20
+1
+Resistivity
+1100
+H
+Lab Sample ID: 440-93462-3
+Client Sample ID: B-08   SPT2   2.5-4
+Matrix: Solid
+Date Collected: 10/15/14 00:01
+Date Received: 11/15/14 10:00
+General Chemistry - Soluble
+RL
+RL
+pH
+7.90
+H
+0.100
+SU
+11/18/14 21:26
+1
+Analyte
+Dil Fac
+Analyzed
+Prepared
+Unit
+D
+Result
+Qualifier
+0.10
+ohm cm
+11/20/14 10:20
+1
+Resistivity
+6600
+H
+TestAmerica Irvine
+Page 5 of 13
+1/23/2015
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+Method Summary
+TestAmerica Job ID: 440-93462-1
+Client: GeoLabs Inc
+SDG: 7028-00
+Project/Site: Wilhelmina Rise
+Method
+Method Description
+Laboratory
+Protocol
+SW846
+9045C
+pH
+TAL IRV
+SM
+SM 2510B
+Conductivity, Specific Conductance
+TAL IRV
+Protocol References:
+SM = "Standard Methods For The Examination Of Water And Wastewater",
+SW846 = "Test Methods For Evaluating Solid Waste, Physical/Chemical Methods", Third Edition, November 1986 And Its Updates.
+Laboratory References:
+TAL IRV = TestAmerica Irvine, 17461 Derian Ave, Suite 100, Irvine, CA 92614-5817, TEL (949)261-1022
+TestAmerica Irvine
+Page 6 of 13
+1/23/2015
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+Lab Chronicle
+Client: GeoLabs Inc
+TestAmerica Job ID: 440-93462-1
+Project/Site: Wilhelmina Rise
+SDG: 7028-00
+Client Sample ID: B-01   RS3   S-6.5
+Lab Sample ID: 440-93462-1
+Matrix: Solid
+Date Collected: 10/15/14 00:01
+Date Received: 11/15/14 10:00
+Leach
+DI Leach
+EN
+11/18/14 20:28
+TAL IRV
+219418
+Type
+Batch
+Method
+Batch
+Prep Type
+Lab
+Analyst
+Run
+Prepared
+or Analyzed
+Initial
+Amount
+Amount
+Final
+Batch
+Number
+Factor
+Dil
+Soluble
+19.95 g
+20 mL
+Analysis
+9045C
+1
+219426
+11/18/14 21:26
+EN
+TAL IRV
+Soluble
+20 mL
+Leach
+DI Leach
+219827
+11/20/14 09:00
+XL
+TAL IRV
+Soluble
+50.01 g
+50.01 mL
+Analysis
+SM 2510B
+1
+219828
+11/20/14 10:20
+XL
+TAL IRV
+Soluble
+Client Sample ID: B-07   RS1   1-2.5
+Lab Sample ID: 440-93462-2
+Matrix: Solid
+Date Collected: 10/15/14 00:01
+Date Received: 11/15/14 10:00
+Leach
+DI Leach
+EN
+11/18/14 20:28
+TAL IRV
+219418
+Type
+Batch
+Method
+Batch
+Prep Type
+Lab
+Analyst
+Run
+Prepared
+or Analyzed
+Initial
+Amount
+Amount
+Final
+Batch
+Number
+Factor
+Dil
+Soluble
+19.91 g
+20 mL
+Analysis
+9045C
+1
+219426
+11/18/14 21:26
+EN
+TAL IRV
+Soluble
+20 mL
+Leach
+DI Leach
+219827
+11/20/14 09:00
+XL
+TAL IRV
+Soluble
+50.05 g
+50.05 mL
+Analysis
+SM 2510B
+1
+219828
+11/20/14 10:20
+XL
+TAL IRV
+Soluble
+Client Sample ID: B-08   SPT2   2.5-4
+Lab Sample ID: 440-93462-3
+Matrix: Solid
+Date Collected: 10/15/14 00:01
+Date Received: 11/15/14 10:00
+Leach
+DI Leach
+EN
+11/18/14 20:28
+TAL IRV
+219418
+Type
+Batch
+Method
+Batch
+Prep Type
+Lab
+Analyst
+Run
+Prepared
+or Analyzed
+Initial
+Amount
+Amount
+Final
+Batch
+Number
+Factor
+Dil
+Soluble
+20.04 g
+20 mL
+Analysis
+9045C
+1
+219426
+11/18/14 21:26
+EN
+TAL IRV
+Soluble
+20 mL
+Leach
+DI Leach
+219827
+11/20/14 10:16
+XL
+TAL IRV
+Soluble
+40.05 g
+40.05 mL
+Analysis
+SM 2510B
+1
+219828
+11/20/14 10:20
+XL
+TAL IRV
+Soluble
+Laboratory References:
+TAL IRV = TestAmerica Irvine, 17461 Derian Ave, Suite 100, Irvine, CA 92614-5817, TEL (949)261-1022
+TestAmerica Irvine
+Page 7 of 13
+1/23/2015
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+QC Sample Results
+TestAmerica Job ID: 440-93462-1
+Client: GeoLabs Inc
+SDG: 7028-00
+Project/Site: Wilhelmina Rise
+Method: 9045C - pH
+Client Sample ID: B-01   RS3   S-6.5
+Lab Sample ID: 440-93462-1 DU
+Matrix: Solid
+Prep Type: Soluble
+Analysis Batch: 219426
+pH
+4.78
+H
+4.760
+SU
+0.4
+2
+Analyte
+DU
+DU
+D
+Unit
+Result
+Qualifier
+Sample
+Result
+Sample
+Qualifier
+Limit
+RPD
+RPD
+Method: SM 2510B - Conductivity, Specific Conductance
+Client Sample ID: B-08   SPT2   2.5-4
+Lab Sample ID: 440-93462-3 DU
+Matrix: Solid
+Prep Type: Soluble
+Analysis Batch: 219828
+Resistivity
+6600
+H
+5840
+ohm cm
+12
+20
+Analyte
+DU
+DU
+D
+Unit
+Result
+Qualifier
+Sample
+Result
+Sample
+Qualifier
+Limit
+RPD
+RPD
+TestAmerica Irvine
+Page 8 of 13
+1/23/2015
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+QC Association Summary
+TestAmerica Job ID: 440-93462-1
+Client: GeoLabs Inc
+SDG: 7028-00
+Project/Site: Wilhelmina Rise
+General Chemistry
+Leach Batch: 219418
+Lab Sample ID
+Client Sample ID
+Prep Type
+Matrix
+Method
+Prep Batch
+Solid
+DI Leach
+440-93462-1
+B-01   RS3   S-6.5
+Soluble
+Solid
+DI Leach
+440-93462-1 DU
+B-01   RS3   S-6.5
+Soluble
+Solid
+DI Leach
+440-93462-2
+B-07   RS1   1-2.5
+Soluble
+Solid
+DI Leach
+440-93462-3
+B-08   SPT2   2.5-4
+Soluble
+Analysis Batch: 219426
+Lab Sample ID
+Client Sample ID
+Prep Type
+Matrix
+Method
+Prep Batch
+Solid
+9045C
+219418
+440-93462-1
+B-01   RS3   S-6.5
+Soluble
+Solid
+9045C
+219418
+440-93462-1 DU
+B-01   RS3   S-6.5
+Soluble
+Solid
+9045C
+219418
+440-93462-2
+B-07   RS1   1-2.5
+Soluble
+Solid
+9045C
+219418
+440-93462-3
+B-08   SPT2   2.5-4
+Soluble
+Leach Batch: 219827
+Lab Sample ID
+Client Sample ID
+Prep Type
+Matrix
+Method
+Prep Batch
+Solid
+DI Leach
+440-93462-1
+B-01   RS3   S-6.5
+Soluble
+Solid
+DI Leach
+440-93462-2
+B-07   RS1   1-2.5
+Soluble
+Solid
+DI Leach
+440-93462-3
+B-08   SPT2   2.5-4
+Soluble
+Solid
+DI Leach
+440-93462-3 DU
+B-08   SPT2   2.5-4
+Soluble
+Solid
+DI Leach
+LCS 440-219827/2-A
+Lab Control Sample
+Soluble
+Analysis Batch: 219828
+Lab Sample ID
+Client Sample ID
+Prep Type
+Matrix
+Method
+Prep Batch
+Solid
+SM 2510B
+219827
+440-93462-1
+B-01   RS3   S-6.5
+Soluble
+Solid
+SM 2510B
+219827
+440-93462-2
+B-07   RS1   1-2.5
+Soluble
+Solid
+SM 2510B
+219827
+440-93462-3
+B-08   SPT2   2.5-4
+Soluble
+Solid
+SM 2510B
+219827
+440-93462-3 DU
+B-08   SPT2   2.5-4
+Soluble
+Solid
+SM 2510B
+219827
+LCS 440-219827/2-A
+Lab Control Sample
+Soluble
+TestAmerica Irvine
+Page 9 of 13
+1/23/2015
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+Definitions/Glossary
+TestAmerica Job ID: 440-93462-1
+Client: GeoLabs Inc
+SDG: 7028-00
+Project/Site: Wilhelmina Rise
+Qualifiers
+General Chemistry
+Qualifier Description
+H
+Sample was prepped or analyzed beyond the specified holding time
+Qualifier
+Glossary
+These commonly used abbreviations may or may not be present in this report.
+Listed under the "D" column to designate that the result is reported on a dry weight basis
+Abbreviation
+%R
+Percent Recovery
+CFL
+Contains Free Liquid
+CNF
+Contains no Free Liquid
+DER
+Duplicate error ratio (normalized absolute difference)
+Dil Fac
+Dilution Factor
+DL, RA, RE, IN
+Indicates a Dilution, Re-analysis, Re-extraction, or additional Initial metals/anion analysis of the sample
+DLC
+Decision level concentration
+MDA
+Minimum detectable activity
+EDL
+Estimated Detection Limit
+MDC
+Minimum detectable concentration
+MDL
+Method Detection Limit
+ML
+Minimum Level (Dioxin)
+NC
+Not Calculated
+ND
+Not detected at the reporting limit (or MDL or EDL if shown)
+PQL
+Practical Quantitation Limit
+QC
+Quality Control
+RER
+Relative error ratio
+RL
+Reporting Limit or Requested Limit (Radiochemistry)
+RPD
+Relative Percent Difference, a measure of the relative difference between two points
+TEF
+Toxicity Equivalent Factor (Dioxin)
+TEQ
+Toxicity Equivalent Quotient (Dioxin)
+TestAmerica Irvine
+Page 10 of 13
+1/23/2015
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+Certification Summary
+Client: GeoLabs Inc
+TestAmerica Job ID: 440-93462-1
+Project/Site: Wilhelmina Rise
+SDG: 7028-00
+Laboratory: TestAmerica Irvine
+All certifications held by this laboratory are listed.  Not all certifications are applicable to this report.
+Authority
+Program
+EPA Region
+Certification ID
+Expiration Date
+Alaska
+CA01531
+10
+State Program
+06-30-15
+Arizona
+State Program
+9
+AZ0671
+10-13-15
+California
+LA Cty Sanitation Districts
+9
+10256
+01-31-15 *
+California
+State Program
+9
+2706
+06-30-16
+Guam
+State Program
+9
+Cert. No. 12.002r
+01-23-15 *
+Hawaii
+State Program
+9
+N/A
+01-29-15 *
+Nevada
+State Program
+9
+CA015312007A
+07-31-15
+New Mexico
+State Program
+6
+N/A
+01-29-15 *
+Northern Mariana Islands
+State Program
+9
+MP0002
+01-29-15 *
+Oregon
+NELAP
+10
+4005
+01-29-15 *
+USDA
+Federal
+P330-09-00080
+06-06-15
+USEPA UCMR
+Federal
+1
+CA01531
+01-31-15
+TestAmerica Irvine
+* Certification renewal pending - certification considered valid.
+Page 11 of 13
+1/23/2015
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+Page 12 of 13
+1/23/2015
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+Login Sample Receipt Checklist
+Client: GeoLabs Inc
+Job Number: 440-93462-1
+SDG Number: 7028-00
+Login Number: 93462
+Question
+Answer
+Comment
+Creator: Soderblom, Tim
+List Source: TestAmerica Irvine
+List Number: 1
+True
+Radioactivity wasn't checked or is </= background as measured by a 
+survey meter.
+True
+The cooler's custody seal, if present, is intact.
+True
+Sample custody seals, if present, are intact.
+True
+The cooler or samples do not appear to have been compromised or 
+tampered with.
+True
+Samples were received on ice.
+True
+Cooler Temperature is acceptable.
+True
+Cooler Temperature is recorded.
+True
+COC is present.
+True
+COC is filled out in ink and legible.
+False
+COC is filled out with all pertinent information.
+No time
+True
+Is the Field Sampler's name present on COC?
+True
+There are no discrepancies between the containers received and the COC.
+True
+Samples are received within Holding Time.
+True
+Sample containers have legible labels.
+True
+Containers are not broken or leaking.
+False
+Sample collection date/times are provided.
+No time
+True
+Appropriate sample containers are used.
+True
+Sample bottles are completely filled.
+N/A
+Sample Preservation Verified.
+True
+There is sufficient vol. for all requested analyses, incl. any requested 
+MS/MSDs
+True
+Containers requiring zero headspace have no headspace or bubble is 
+<6mm (1/4").
+True
+Multiphasic samples are not present.
+True
+Samples do not require splitting or compositing.
+N/A
+Residual Chlorine Checked.
+TestAmerica Irvine
+Page 13 of 13
+1/23/2015
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13

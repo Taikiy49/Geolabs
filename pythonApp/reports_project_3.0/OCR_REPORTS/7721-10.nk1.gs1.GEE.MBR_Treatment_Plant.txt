@@ -1,0 +1,3339 @@
+GEOTECHNICAL ENGINEERING EXPLORATION 
+MBR TREATMENT PLANT 
+KAHULUI AIRPORT PUMP STATION 
+KAHULUI, MAUI, HAWAII 
+W.O. 7721-10     MARCH 18, 2020 
+Prepared for 
+AKINAKA & ASSOCIATES, LTD. 
+GEOLABS, INC. 
+Geotechnical Engineering and Drilling Services 
+GEOTECHNICAL ENGINEERING EXPLORATION
+MBR TREATMENT PLANT
+KAHULUI AIRPORT PUMP STATION
+KAHULUI, MAUI, HAWAII
+W.O. 7721-10 MARCH 18, 2020
+Prepared for
+AKINAKA & ASSOCIATES, LTD.
+LICENSED
+PROFESSIONAL
+ENGINEER
+No. 5635-C
+THIS WORK WAS PREPARED BY
+ME OR UNDER MY SUPERVISION.
+( (Ne Z - Lae 4-30-20
+SIGNATURE EXPIRATION DATE
+OF THE LICENSE
+GEOLABS, INC.
+Geotechnical Engineering and Drilling Services
+94-429 Koaki Street, Suite 200 ¢ Waipahu, HI 96797
+Hawaii ¢ California
+GEOLABS, INC.
+Geotechnical Engineering and Drilling Services
+March 18, 2020
+W.O. 7721-10
+Mr. Scott A. Kunioka, P.E.
+Akinaka & Associates, Ltd.
+1100 Alakea Street, Suite 1800
+Honolulu, HI 96813
+Dear Mr. Kunioka:
+Geolabs, Inc. is pleased to submit our report entitled "Geotechnical Engineering
+Exploration, MBR Treatment Plant, Kahului Airport Pump Station, Kahului, Maui,
+Hawaii”, prepared for the design of the project.
+Our work was performed in general accordance with the scope of services
+outlined in our fee proposals dated April 23, 2018 and October 28, 2019.
+Please note that the soil samples recovered during our field exploration
+(remaining after testing) will be stored for a period of two months from the date of this
+report. The samples will be discarded after that date unless arrangements are made for
+a longer sample storage period. Please contact our office for alternative sample storage
+requirements, if appropriate.
+Detailed discussion and specific design recommendations are contained in the
+body of this report. If there is any point that is unclear, please contact our office.
+Very truly yours,
+GEOLABS, INC.
+Lag Ly.
+Gerald Y. Seki, P.E.
+Vice President
+GS:NK:c¢j
+94-429 Koaki Street, Suite 200 * Waipahu, Hawaii 96797
+Telephone: (808) 841-5064 e E-mail: hawaii @geolabs.net
+Hawaii ° California
+W.O. 7721-10 
+GEOLABS, INC. 
+Page i 
+Hawaii • California 
+GEOTECHNICAL ENGINEERING EXPLORATION 
+MBR TREATMENT PLANT 
+KAHULUI AIRPORT PUMP STATION 
+KAHULUI, MAUI, HAWAII 
+W.O. 7721-10     MARCH 18, 2020 
+TABLE OF CONTENTS 
+                                                                                                                               Page 
+SUMMARY OF FINDINGS AND RECOMMENDATIONS .............................................. iii 
+1. 
+GENERAL ............................................................................................................ 1 
+1.1 
+Project Considerations ............................................................................... 1 
+1.2 
+Purpose and Scope ................................................................................... 2 
+2. 
+SITE CHARACTERIZATION ................................................................................ 4 
+2.1 
+Regional Geology ...................................................................................... 4 
+2.2 
+Site Description .......................................................................................... 5 
+2.3 
+Subsurface Conditions ............................................................................... 5 
+2.4 
+Seismic Design Considerations ................................................................. 6 
+2.4.1 Earthquakes and Seismicity ........................................................... 7 
+2.4.2 Liquefaction Potential ..................................................................... 7 
+2.4.3 Soil Profile Type for Seismic Design .............................................. 9 
+3. 
+DISCUSSION AND RECOMMENDATIONS ...................................................... 11 
+3.1 
+Treatment Plant Foundations ................................................................... 11 
+3.1.1 Downdrag Loads .......................................................................... 16 
+3.1.2 Uplift Load Resistance ................................................................. 17 
+3.1.3 Lateral Load Resistance ............................................................... 17 
+3.1.4 Micropile Foundation Settlement .................................................. 17 
+3.1.5 Micropile Load Test Program ....................................................... 18 
+3.1.6 Micropile Construction Considerations ......................................... 19 
+3.2 
+Slabs-On-Grade ....................................................................................... 20 
+3.3 
+Site Grading ............................................................................................. 22 
+3.3.1 Site Preparation ............................................................................ 22 
+3.3.2 Fills and Backfills .......................................................................... 23 
+3.3.3 Fill Placement and Compaction Requirements............................. 24 
+3.3.4 Excavations .................................................................................. 24 
+3.3.5 Drainage ....................................................................................... 25 
+3.4 
+Utility Trench ............................................................................................ 25 
+3.5 
+Design Review ......................................................................................... 26 
+3.6 
+Post-Design Services/Services During Construction ............................... 27 
+4. 
+LIMITATIONS ..................................................................................................... 28 
+CLOSURE ..................................................................................................................... 30 
+TABLE OF CONTENTS  
+Page 
+W.O. 7721-10 
+GEOLABS, INC. 
+Page ii 
+Hawaii • California 
+PLATES 
+Project Location Map  .................................................................................. Plate 1 
+Site Plan  ..................................................................................................... Plate 2 
+Preliminary Micropile Group Configuration Plan  ......................................... Plate 3 
+APPENDIX A 
+Field Exploration ....................................................................... Pages A-1 and A-2 
+Soil Log Legend ..................................................................................... Plate A-0.1 
+Soil Classification Log Key .................................................................... Plate A-0.2 
+Rock Log Legend .................................................................................. Plate A-0.3 
+Logs of Borings ...................................................................... Plates A-1 thru A-4.2 
+APPENDIX B 
+Laboratory Tests ...................................................................................... Page B-1 
+Laboratory Test Data .............................................................. Plates B-1 thru B-12 
+APPENDIX C 
+Photographs of Core Samples ................................................................. Plate C-1 
+W.O. 7721-10 
+GEOLABS, INC. 
+Page iii 
+Hawaii • California 
+GEOTECHNICAL ENGINEERING EXPLORATION 
+MBR TREATMENT PLANT 
+KAHULUI AIRPORT PUMP STATION 
+KAHULUI, MAUI, HAWAII 
+W.O. 7721-10     MARCH 18, 2020 
+SUMMARY OF FINDINGS AND RECOMMENDATIONS 
+Our field exploration generally encountered a thin surface fill and alluvium layer 
+overlying very loose to medium dense beach sand to depths of about 13 to 18 feet. 
+Underlying the beach sand, very soft to soft and very loose to loose coralline detritus, 
+and recent alluvium were encountered to depths of about 26.5 to 28 feet. Beneath these 
+deposits, alluvium consisting of medium stiff to very stiff sandy silt and silty clay was 
+encountered to depths of about 35.5 to 45 feet. In Boring No. 102, a cobbly alluvium 
+layer was encountered from approximately 28 to 42 feet followed by medium hard to 
+hard basalt rock formation extending to the maximum depth explored of approximately 
+51.5 feet below the existing pavement surface. 
+Groundwater was encountered in our drilled borings at a depth of about 6.5 feet 
+below the existing pavement surface at the time of our field exploration. 
+The groundwater 
+levels 
+encountered 
+generally 
+correspond 
+to 
+elevations 
+of 
+approximately +2.5 to +3.5 feet MSL. 
+Based on the structural loads provided, the subsurface conditions encountered at 
+the project site, and our liquefaction analyses, we recommend utilizing a deep 
+foundation system consisting of micropiles to support the MBR Treatment Plant 
+structures. Per the requirements of the IBC 2012, we recommend providing permanent 
+casing for the upper 28 feet of the micropiles. To achieve the allowable compressive 
+load capacity with a factor of safety of 2, the micropiles would need to extend a 
+minimum of about 5 to 20 feet into the competent alluvium and basalt formation. Overall 
+micropile lengths range from approximately 33 to 48 feet below the bottom of the cap 
+(including the 28 feet of permanent casing). 
+We anticipate that non-critical structures, such as the planned 12-foot by 12-foot 
+shed, may be supported on reinforced concrete slabs-on-grade. However, the 
+non-critical structures may experience significant statically and seismically induced 
+settlements due to soil consolidation and liquefaction, respectively. If the statically and 
+seismically induced settlements described herein are not acceptable for the planned 
+non-critical structures, we recommend structurally supporting the slabs on a micropile 
+foundation system. 
+SUMMARY OF FINDINGS AND RECOMMENDATIONS 
+W.O. 7721-10 
+GEOLABS, INC. 
+Page iv 
+Hawaii • California 
+The text of this report should be referred to for detailed discussion and specific 
+design recommendations. 
+END OF SUMMARY OF FINDINGS AND RECOMMENDATIONS 
+W.O. 7721-10 
+GEOLABS, INC. 
+Page 1 
+Hawaii • California 
+SECTION 1.  GENERAL 
+This report presents the results of our two geotechnical engineering explorations 
+conducted for the MBR Treatment Plant project, located in the existing Kahului Airport 
+Pump Station in Kahului on the Island of Maui, Hawaii. The project location and general 
+vicinity are shown on the Project Location Map, Plate 1. 
+This report summarizes the findings and geotechnical recommendations resulting 
+from our field explorations, laboratory testing, and engineering analyses for the project. 
+These findings and geotechnical recommendations are intended for the design of 
+foundations, slabs-on-grade, site grading, and underground utility installation only. The 
+findings and recommendations presented herein are subject to the limitations noted at 
+the end of this report. 
+1.1 
+Project Considerations 
+The project site is located within the existing Kahului Airport Pump Station in 
+Kahului on the Island of Maui, Hawaii. We understand that the initial design involved the 
+construction of a 30 feet by 100 feet concrete pad to support the new MBR treatment 
+package plant. Based on the initial design concept, we conducted our initial field 
+exploration in August 2018. We completed our initial field exploration and provided our 
+preliminary geotechnical recommendations in a technical memorandum entitled 
+“Preliminary Recommendations, MBR Treatment Plant, Kahului Airport Pump Station, 
+Kahului, Maui, Hawaii,” dated September 27, 2018.  
+After submitting our preliminary recommendations, we understand that the MBR 
+Treatment Plant location moved further west of the initial location. In addition, the size of 
+the proposed treatment plant (a.k.a. scalping site) increased. Based on the recent 
+information provided, the scalping plant will be about 120 feet by 60 feet in plan 
+dimensions. We also understand that two 15,500-gallon pre-loader tanks and 
+two 15,500-gallon storage tanks supported by two 18-foot by 33-foot concrete pads, a 
+34-foot by 16-foot Nereda Treatment System on a 45-foot by 27-foot concrete pad, a 
+Return Flow Pump Station supported on a 10-foot by 15-foot concrete pad, and other 
+smaller equipment pads are planned to support the new MBR treatment package plant. 
+SECTION 1. GENERAL 
+W.O. 7721-10 
+GEOLABS, INC. 
+Page 2 
+Hawaii • California 
+Due to the higher structural loading and revised location of the new system, 
+deeper exploratory borings were required to develop foundation recommendations for 
+the scalping plant. Therefore, a second field exploration was conducted in January 2020 
+to support the revised scalping plant design. 
+1.2 
+Purpose and Scope 
+The purpose of our geotechnical engineering explorations was to obtain an 
+overview of the surface and subsurface conditions to develop an idealized soil/rock data 
+set to formulate geotechnical engineering recommendations for the project. The work 
+was performed in general accordance with the scopes of services outlined in our fee 
+proposals dated April 23, 2018 and October 28, 2019. The scope of work for our 
+explorations included the following tasks and work efforts: 
+1. 
+Coordination of boring stakeout and utility clearance at the proposed 
+boring locations by our project geologist. 
+2. 
+Mobilization and demobilization of a truck-mounted drill rig presently on 
+the Island of Maui, and two operators from Honolulu to the project site and 
+back. 
+3. 
+Drilling and sampling of four borings to depths of approximately 26.5 to 
+51.5 feet below the existing ground surface. In addition, bulk soil samples 
+of the near-surface soils were collected for testing. 
+4. 
+Coordination of the field exploration and logging of the borings by our 
+field engineer/geologist. 
+5. 
+Laboratory testing of selected samples obtained during the field 
+exploration as an aid in classifying the materials and evaluating their 
+engineering properties. 
+6. 
+Analysis of the field and laboratory data to formulate geotechnical 
+engineering recommendations for the project. 
+7. 
+Preparation of this report summarizing our work on the project and 
+presenting our findings and recommendations. 
+8. 
+Coordination of our overall work on the project by our engineer. 
+9. 
+Quality assurance of our work and client/design team consultation by our 
+principal engineer. 
+10. 
+Miscellaneous work efforts, such as drafting, word processing, and clerical 
+support. 
+SECTION 1. GENERAL 
+W.O. 7721-10 
+GEOLABS, INC. 
+Page 3 
+Hawaii • California 
+Detailed descriptions of our field exploration methodology and the Logs of 
+Borings are presented in Appendix A. Results of the laboratory tests performed on 
+selected soil samples are presented in Appendix B. Photographs of the core samples 
+retrieved are presented in Appendix C. 
+END OF GENERAL 
+W.O. 7721-10 
+GEOLABS, INC. 
+Page 4 
+Hawaii • California 
+SECTION 2.  SITE CHARACTERIZATION 
+2.1 
+Regional Geology 
+The Island of Maui was built by two major volcanoes: the older West Maui 
+(Tertiary Epoch) and the more recent East Maui, also known as Haleakala 
+(Pleistocene Epoch). The Isthmus of Maui is a narrow, gently sloping plain between 
+these two volcanoes. The project site is at the northern portion of this gently sloping 
+plain. 
+The Isthmus of Maui was created by lava flows from Haleakala ponding on 
+West Maui. It is comprised of alluvium washed from the slopes of West Maui and 
+East Maui (Haleakala). The erosional processes are dominated by the detachment of 
+soil and rock masses from the mountain walls, and the soil materials are transported 
+downslope toward the isthmus primarily by gravity as colluvium. Once these materials 
+reach the stream in the central portion of a valley, alluvial processes become dominant, 
+and the sediments are transported and deposited as alluvium.  
+In general, stream flows in Hawaii are intermittent and flashy, such that the 
+stream flows transmit large volumes of water for a very short duration. Because of this, 
+the transport of sediments is intermittent, and the bulk of the stream's hydraulic load 
+consists of a poorly sorted mixture of boulders, cobbles, gravel, sands, and fines. When 
+the erosional base levels change, these sediment loads are left as deposits. 
+When deposits are left in-place for long periods of time, chemical processes 
+begin to alter the materials simultaneously causing a breakdown or weathering of the 
+materials. Chemical processes also cause induration, or cementation, of the 
+coarse-grained portion of the sediment into a poorly consolidated sedimentary rock or 
+conglomerate. Simultaneously, erosion continues in the areas above the valley floors 
+and upstream in headwaters. This continued erosion generates material, which is 
+transported downslope covering the older alluvial soil deposits. Depending on the local 
+base level and rate of transport, these newer sediments are generally transient in terms 
+of geologic time. In addition, their consistency and density are generally less than those 
+of the older, partially consolidated deposits.  
+SECTION 2. SITE CHARACTERIZATION 
+W.O. 7721-10 
+GEOLABS, INC. 
+Page 5 
+Hawaii • California 
+Underlying the alluvial soil deposits are overlapping lava from the West Maui and 
+East Maui Volcanoes. The bulk of the Haleakala Shield Volcano was built during the 
+late Pliocene and early Pleistocene Epoch by thinly bedded basaltic lava flows of the 
+Honomanu Volcanic Series. During the Pleistocene Epoch, the characteristics of the 
+lava changed to very hard, thickly bedded flows of andesitic composition. These lavas 
+have been grouped as the Kula Volcanic Series. Typically, the basalt rock formation 
+consists of thinly to thickly bedded a’a and pahoehoe type lava flows. Development of 
+areas surrounding Kahului in the past several decades has brought the project site to its 
+present conditions. 
+2.2 
+Site Description 
+The project site is located within the existing Kahului Airport Pump Station facility 
+in Kahului on the Island of Maui, Hawaii. The facility is approximately bounded by the 
+Kanaha Pond State Wildlife Sanctuary to the north, east, and west, and Keolani Place 
+to the south. The project location and general vicinity are presented on the Project 
+Location Map, Plate 1. 
+The proposed MBR Treatment Plant site is on the east side of the Kahului Airport 
+Pump Station facility in a paved, open lot. The existing pump station facility is fenced off 
+from the paved lot and sits at a finished grade about 6 to 7 feet higher than the lot. 
+Access to the project site is gained through a gated driveway located at the intersection 
+of Keolani Place and Aalele Street at the southern edge of the property. Based on our 
+field observations and the topographic information provided, the project site is relatively 
+flat with ground surface elevations ranging from about +9 to +10 feet Mean Sea Level 
+(MSL).  
+2.3 
+Subsurface Conditions  
+We explored the subsurface conditions at the project site by drilling and sampling 
+a total of four borings, designated as Boring Nos. 1, 2, 101, and 102, extending to 
+depths of about 26.5 to 51.5 feet below the existing ground surface. The approximate 
+boring locations are shown on the Site Plan, Plate 2. 
+SECTION 2. SITE CHARACTERIZATION 
+W.O. 7721-10 
+GEOLABS, INC. 
+Page 6 
+Hawaii • California 
+In general, the project site is underlain by a pavement structure consisting of 
+about 1 to 2 inches of asphaltic concrete over about 10 to 11 inches of aggregate base 
+material. Beneath the pavement structure, relatively thin layers of fill and alluvium, 
+consisting of medium stiff to very stiff sandy clay/silt and very soft to soft clayey silt and 
+sandy clay, respectively, were encountered to depths of approximately 4.5 to 7.5 feet. 
+Beach sand, consisting of very loose to medium dense sand and silty sand, was 
+encountered to depths of approximately 13 to 18 feet below the existing pavement 
+surface. Underlying the beach sand deposits, very soft to soft and very loose to loose 
+deposits of coralline detritus, and recent alluvium were encountered to depths of 
+approximately 26.5 to 28 feet below the existing pavement surface. Beneath these 
+deposits, residual soil consisting of medium stiff to very stiff sandy silt and silty clay was 
+encountered to depths of about 35.5 to 45 feet. In Boring No. 102, a cobbly alluvium 
+layer was encountered from approximately 28 to 42 feet followed by medium hard to 
+hard basalt rock formation extending to the maximum depth explored of approximately 
+51.5 feet below the existing pavement surface. 
+Groundwater was encountered in our drilled borings at a depth of about 6.5 feet 
+below the existing pavement surface at the time of our field exploration. 
+The groundwater 
+levels 
+encountered 
+generally 
+correspond 
+to 
+elevations 
+of 
+approximately +2.5 to +3.5 feet MSL. It should be noted that groundwater levels may 
+fluctuate depending on tidal fluctuations, storm surge conditions, seasonal precipitation, 
+surface water runoff, and other factors. 
+Detailed descriptions of the field exploration methodology are presented in 
+Appendix A. Descriptions and graphic representations of the materials encountered in 
+the borings are presented on the Logs of Borings in Appendix A. Results of the 
+laboratory tests performed on selected soil samples are presented in Appendix B. 
+Photographs of the core samples retrieved are presented in Appendix C. 
+2.4 
+Seismic Design Considerations 
+Based on the International Building Code (2012 Edition), the project site may be 
+subject to seismic activity, and seismic design considerations will need to be addressed. 
+SECTION 2. SITE CHARACTERIZATION 
+W.O. 7721-10 
+GEOLABS, INC. 
+Page 7 
+Hawaii • California 
+The following sections provide discussions on the seismicity, the potential for 
+liquefaction at the project site, and the soil profile for seismic design. 
+2.4.1 Earthquakes and Seismicity 
+In general, earthquakes that occur throughout the world are caused solely by 
+shifts in the tectonic plates. In contrast, earthquake activity in Hawaii is linked 
+primarily to volcanic activity. Therefore, earthquake activity in Hawaii generally 
+occurs before or during volcanic eruptions. In addition, earthquakes may result 
+from the underground movement of magma that comes close to the surface but 
+does not erupt. The Island of Hawaii experiences thousands of earthquakes each 
+year, but most of the earthquakes are so small that they can only be detected by 
+sensitive instruments. However, some of the earthquakes are strong enough to 
+be felt, and a few cause minor to moderate damage. 
+In general, earthquakes (associated with volcanic activity) are most common on 
+the Island of Hawaii. Earthquakes that are directly associated with the movement 
+of magma are concentrated beneath the active Kilauea and Mauna Loa 
+Volcanoes on the Island of Hawaii. Because the majority of earthquakes in 
+Hawaii (over 90 percent of earthquakes) are related to volcanic activity, the risk 
+of high seismic activity and degree of ground shaking diminishes with increased 
+distance from the Island of Hawaii. The Island of Hawaii has experienced 
+numerous earthquakes greater than Magnitude 5 (M5+); however, earthquakes 
+are not confined only to the Island of Hawaii. 
+To a lesser degree, the Island of Maui has experienced numerous earthquakes 
+greater than Magnitude 5. Therefore, moderate to strong earthquakes have 
+occurred in the County of Maui. 
+2.4.2 Liquefaction Potential 
+Based on the International Building Code (2012 Edition), the project site may be 
+subject to seismic activity, and the potential for soil liquefaction at the project site 
+will need to be evaluated. 
+SECTION 2. SITE CHARACTERIZATION 
+W.O. 7721-10 
+GEOLABS, INC. 
+Page 8 
+Hawaii • California 
+Soil liquefaction is a condition where saturated cohesionless soils located near 
+the ground surface undergo a substantial loss of strength due to the build-up of 
+excess pore water pressures resulting from cyclic stress applications induced by 
+earthquakes. In this process, when the loose saturated sand deposit is subjected 
+to vibration (such as during an earthquake), the soil tends to densify and 
+decrease in volume causing an increase in pore water pressure. If drainage is 
+unable to occur rapidly enough to dissipate the build-up of pore water pressure, 
+the effective stress (internal strength) of the soil is reduced. Under sustained 
+vibrations, the pore water pressure build-up could equal the overburden 
+pressure, essentially reducing the soil shear strength to zero and causing it to 
+behave as a viscous fluid. During liquefaction, the soil acquires sufficient mobility 
+to permit both horizontal and vertical movements, and if not confined, will result 
+in significant deformations. 
+Soils most susceptible to liquefaction are loose, uniformly graded, fine-grained 
+sands and loose silts with little cohesion. The major factors affecting the 
+liquefaction characteristics of a soil deposit are as follows: 
+FACTORS 
+LIQUEFACTION SUSCEPTIBILITY 
+Grain Size Distribution 
+Fine and uniform sands and silts are 
+more susceptible to liquefaction than 
+coarse or well-graded sands. 
+Initial Relative Density 
+Loose sands and silts are most 
+susceptible to liquefaction. Liquefaction 
+potential is inversely proportional to 
+relative density. 
+Magnitude and Duration of Vibration 
+Liquefaction potential is directly 
+proportional to the magnitude and 
+duration of the earthquake. 
+Our field exploration generally encountered thin surface fills over very soft to soft 
+and very loose to loose beach sand, coralline detritus, and alluvium extending to 
+depths of about 26.5 to 28 feet below the existing ground surface. Therefore, we 
+evaluated the potential for liquefaction during a moderate earthquake (M6+) with 
+an associated maximum considered earthquake (MCE) peak ground acceleration 
+of 0.367g.  
+SECTION 2. SITE CHARACTERIZATION 
+W.O. 7721-10 
+GEOLABS, INC. 
+Page 9 
+Hawaii • California 
+Based on our analysis, it appears that the loose granular soil deposits at the 
+project site have factors of safety of less than 1.0 against liquefaction based on 
+the design earthquake. Therefore, the weak granular layers are susceptible to 
+soil liquefaction during the design earthquake event. The project site could be 
+subjected to some seismically induced ground settlements (on the order of up to 
+about 7 inches) in the event of liquefaction during a moderate earthquake (M6+) 
+based on the intensity of the design earthquake ground motions. However, we 
+believe that lateral spreading associated with liquefaction would not be a 
+significant design consideration based on the relatively flat topography of the 
+project. 
+2.4.3 Soil Profile Type for Seismic Design 
+Based on the subsurface materials encountered and our engineering analyses, 
+the project site is underlain by potentially liquefiable soils. Therefore, the project 
+site would need to be classified as Site Class F type based on the ASCE 
+Standard ASCE/SEI 7-10 (Table No. 20.3-1), referenced by the International 
+Building Code, 2012 Edition, that may require a site-specific response analysis to 
+determine the spectral accelerations due to the potentially liquefiable soils. 
+However, based on the information provided, we understand that the 
+above-ground structures associated with the MBR Treatment Plant will be 
+relatively short. Therefore, we have assumed that the fundamental period of the 
+MBR Treatment Plant structures will be less than 0.5 seconds. In accordance 
+with Chapter 20, Site Classification Procedure for Seismic Design contained in 
+ASCE 7-10 (Minimum Design Loads for Buildings and Other Structures), a 
+site-specific response analysis will not be required to determine spectral 
+accelerations for liquefiable soils. Instead, the site class should be determined in 
+accordance with Section 20.3 and the corresponding values of Fa and Fv 
+determined from Tables 11.4-1 and 11.4-2. 
+Based on the subsurface materials encountered at the project site and the 
+geologic setting of the area, we believe the project site may be classified from a 
+seismic analysis standpoint as a “Soft Soil Profile”. Therefore, we believe that 
+seismic design may be based on a Site Class “E” soil profile in accordance with 
+SECTION 2. SITE CHARACTERIZATION 
+W.O. 7721-10 
+GEOLABS, INC. 
+Page 10 
+Hawaii • California 
+the ASCE Standard ASCE/SEI 7-10 (Table No. 20.3-1), referenced by the 
+International Building Code, 2012 Edition. 
+Based on a Site Class “E” soil profile, the following seismic design parameters 
+were estimated and may be used for the seismic analysis of the project site. 
+SEISMIC DESIGN PARAMETERS 
+INTERNATIONAL BUILDING CODE 
+2012 EDITION 
+Parameter 
+Value 
+Peak Bedrock Acceleration, PBA (Site Class B)  
+0.364 g 
+MCE Spectral Response Acceleration, SS 
+0.997 g 
+MCE Spectral Response Acceleration, S1 
+0.254 g 
+Site Class  
+“E” 
+Site Coefficient, Fa 
+0.904 
+Site Coefficient, Fv 
+2.984 
+Design Peak Ground Acceleration, PGA (Site Class E) 
+0.367 g 
+Design Spectral Response Acceleration, SDS 
+0.601 g 
+Design Spectral Response Acceleration, SD1 
+0.505 g 
+END OF SITE CHARACTERIZATION 
+W.O. 7721-10 
+GEOLABS, INC. 
+Page 11 
+Hawaii • California 
+SECTION 3.  DISCUSSION AND RECOMMENDATIONS 
+The subsurface conditions at the project site may be generalized as a thin 
+surface fill and alluvium layer overlying very loose to medium dense beach sand to 
+depths of about 13 to 18 feet. Underlying the beach sand, very soft to soft and very 
+loose to loose coralline detritus, and recent alluvium were encountered to depths of 
+about 26.5 to 28 feet. Beneath these deposits, alluvium consisting of medium stiff to 
+very stiff sandy silt and silty clay was encountered to depths of about 35.5 to 45 feet. In 
+Boring No. 102, a cobbly alluvium layer was encountered from approximately 28 to 42 
+feet followed by medium hard to hard basalt rock formation extending to the maximum 
+depth explored of approximately 51.5 feet below the existing pavement surface. 
+Groundwater was encountered in our drilled borings at a depth of about 6.5 feet below 
+the existing pavement surface at the time of our field exploration.  
+Based on the structural loads provided, the subsurface conditions encountered at 
+the project site, and our liquefaction analyses, we recommend utilizing a deep 
+foundation system consisting of micropiles to support the MBR Treatment Plant 
+structures. Per the requirements of the IBC 2012, we recommend providing permanent 
+casing for the upper 28 feet of the micropiles. To achieve the allowable compressive 
+load capacity with a factor of safety of 2, the micropiles would need to extend a 
+minimum of about 5 to 20 feet into the competent alluvium and basalt rock formation. 
+Overall micropile lengths range from approximately 33 to 48 feet below the bottom of 
+the cap (including the 28 feet of permanent casing). 
+Detailed discussions and recommendations for the design of foundations, 
+slabs-on-grade, site grading, and other geotechnical aspects of the project are 
+presented in the following sections.  
+3.1 
+Treatment Plant Foundations 
+Based on the information provided, we understand the scalping plant will consist of 
+two 15,500-gallon pre-loader tanks supported by an 18 feet by 33 feet concrete pad, a 
+34 feet by 16 feet Nereda treatment system on a 45 feet by 27 feet concrete pad, 
+two 15,500-gallon storage tanks supported by an 18 feet by 33 feet concrete pad, a return 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 7721-10 
+GEOLABS, INC. 
+Page 12 
+Hawaii • California 
+flow pump station, and other smaller equipment pads. The following structural loads were 
+provided by the project structural engineer for the treatment plant structures. 
+MBR TREATMENT PLANT – FOUNDATION LOADS 
+Equipment on Pad 
+Total Axial 
+Load 
+(kips) 
+Total Lateral 
+Load 
+(kips) 
+Total Bending 
+Moment 
+(kip-feet) 
+15,500 Gallon Pre-Loader 
+Tank x2 
+555 
+75 
+759 
+34’x16’ Nereda Treatment 
+System + MiniDisk 
+1117 
+155 
+1865 
+15,500 Gallon R-1 Storage 
+Tank x2 
+555 
+75 
+759 
+R-1 Distribution Pump Skid 
+11 
+1 
+1 
+12’x12’ Shed 
+34 
+1 
+3 
+Return Flow Pump Station 
+37 
+3 
+15 
+One Converting Scrubber 
+7 
+1 
+3 
+Muffin Monster 
+11 
+1 
+3 
+As previously mentioned, based on the subsurface conditions encountered, it is 
+likely the loose granular soil deposits will have factors of safety of less than 1.0 against 
+liquefaction based on the design earthquake. Based on the potentially liquefiable soil at 
+the project site and the structural loads provided, we recommend supporting the 
+treatment plant structures on a deep foundation system consisting of micropiles.  
+A micropile consists of a small diameter (usually less than 12 inches) drilled and 
+grouted pile with steel reinforcing. The micropile foundation typically is constructed by 
+drilling a borehole, placing reinforcing steel in the hole, and grouting the borehole. 
+Micropiles are desirable because they can be installed readily in access restrictive 
+environments and in numerous soil types and ground conditions. In addition, installation 
+of the micropiles generally causes minimal disturbance to adjacent structures, the 
+adjacent soils, and the environment. 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 7721-10 
+GEOLABS, INC. 
+Page 13 
+Hawaii • California 
+Based on the availability of equipment, we envision a micropile system with a 
+minimum grout bulb diameter of 7 inches may be used. The load supporting capacity of 
+the micropile foundation would be derived primarily from skin friction between the 
+micropile bonded zone and the underlying competent alluvium, residual soil, and basalt 
+formation. 
+Groups of micropiles will be required to support the MBR Treatment Plant 
+equipment based on the sizes of the concrete equipment pads. Therefore, we 
+coordinated with the project structural engineer to develop the micropile group 
+configurations. The layout of the micropiles used in our analyses is presented on the 
+Preliminary Micropile Group Configuration Plan, Plate 3. It should be noted that 
+two micropiles on each of the converting scrubber pads are battered at an inclination of 
+one horizontal to twelve vertical (1H:12V) to maintain the 30-inch minimum 
+center-to-center spacing of the micropile bonded zones.  
+Based on the structural loads and micropile group configurations provided, 
+three micropile lengths were developed for the MBR Treatment Plant equipment pads. 
+Details of the micropile foundations, including allowable compressive load capacities, 
+permanent casing depths, and center reinforcing steel bar size are presented in the 
+following tables.  
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 7721-10 
+GEOLABS, INC. 
+Page 14 
+Hawaii • California 
+CASED MICROPILE SYSTEM RECOMMENDATIONS 
+15,500 GALLON PRE-LOADER TANKS 
+34’ X 16’ NEREDA TREATMENT SYSTEM + MINIDISK 
+15,500 GALLON R-1 STORAGE TANKS 
+Micropile Outside Diameter of Casing 
+7 inches minimum 
+Micropile Casing Thickness 
+0.317 inches minimum 
+Micropile Casing Tip Depth 
+28 feet below the bottom of cap 
+Diameter of Micropile Bonded Length 
+7 inches minimum 
+Micropile Bonded Length 
+20 feet minimum 
+Micropile Total Length 
+48 feet from bottom of cap 
+Allowable Compressive Load Capacity 
+41 kips 
+Center Reinforcing Bar (Full Depth) 
+No. 10 (ASTM A615 Grade 75) 
+Grout Minimum Compressive Strength 
+5,000 psi 
+CASED MICROPILE SYSTEM RECOMMENDATIONS 
+RETURN FLOW PUMP STATION 
+Micropile Outside Diameter of Casing 
+7 inches minimum 
+Micropile Casing Thickness 
+0.317 inches minimum 
+Micropile Casing Tip Depth 
+28 feet below the bottom of cap 
+Diameter of Micropile Bonded Length 
+7 inches minimum 
+Micropile Bonded Length 
+10 feet minimum 
+Micropile Total Length 
+38 feet from bottom of cap 
+Allowable Compressive Load Capacity 
+12 kips 
+Center Reinforcing Bar (Full Depth) 
+No. 6 (ASTM A615 Grade 75) 
+Grout Minimum Compressive Strength 
+5,000 psi 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 7721-10 
+GEOLABS, INC. 
+Page 15 
+Hawaii • California 
+CASED MICROPILE SYSTEM RECOMMENDATIONS 
+R-1 DISTRIBUTION PUMP SKID 
+12’ X 12’ SHED 
+CONVERTING SCRUBBERS 
+MUFFIN MONSTER 
+Micropile Outside Diameter of Casing 
+7 inches minimum 
+Micropile Casing Thickness 
+0.317 inches minimum 
+Micropile Casing Tip Depth 
+28 feet below the bottom of cap 
+Diameter of Micropile Bonded Length 
+7 inches minimum 
+Micropile Bonded Length 
+5 feet minimum 
+Micropile Total Length 
+33 feet from bottom of cap 
+Allowable Compressive Load Capacity 
+3 kips 
+Center Reinforcing Bar (Full Depth) 
+No. 6 (ASTM A615 Grade 75) 
+Grout Minimum Compressive Strength 
+5,000 psi 
+The allowable compressive load capacities for the micropiles are for supporting 
+dead-plus-live loads and may be increased by one third (⅓) for transient loads, such as 
+wind or seismic forces.  
+Per the requirements of the IBC 2012, we recommend providing permanent 
+casing for the upper 28 feet of the micropiles. To achieve the allowable compressive 
+load capacity with a factor of safety of 2, each micropile would need to achieve the 
+minimum bonded zone lengths below the tip of the permanent casing presented in the 
+tables above. The permanent casing should have an outside diameter (OD) of at least 
+7 inches (same as the grout bulb size).  
+To facilitate the micropile drilling and grouting, we recommend advancing the 
+steel casing to the bottom of the micropile during the drilling operation. The steel casing 
+may be withdrawn during the grouting operation while maintaining a minimum 5-foot 
+grout head above the bottom of the casing at all times. The casing should be withdrawn 
+above the design casing depth (minimum 3 feet) and plunged back to the design casing 
+depth. 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 7721-10 
+GEOLABS, INC. 
+Page 16 
+Hawaii • California 
+In general, the micropiles should have a minimum center-to-center spacing of 
+about 30 inches to avoid reduction in vertical load capacity due to group action and to 
+facilitate drilling of the micropiles. The following items are addressed in the subsequent 
+subsections: 
+1. 
+Downdrag Loads 
+2. 
+Uplift Load Resistance 
+3. 
+Lateral Load Resistance 
+4. 
+Micropile Foundation Settlement 
+5. 
+Micropile Load Test Program 
+6. 
+Micropile Construction Considerations 
+3.1.1 Downdrag Loads 
+In the event of seismically induced liquefaction, settlement of the compressible 
+deposits will occur at the project site. When the loose soil deposits consolidate 
+(or move downward) relative to the micropiles, the consolidation or downward 
+movement will create negative skin friction forces (generally known as downdrag 
+forces) on the micropile shafts. The magnitude of the downdrag force depends 
+on the thickness of the liquefiable layer, the relative density of the potentially 
+liquefiable deposits, and the micropile size. 
+The allowable compressive load capacities of the micropiles have been reduced 
+by the expected downdrag loads in the micropile foundation analyses. Based on 
+our foundation analyses, we estimate the downdrag load imposed on the 
+micropiles due to the settlement of the very loose lagoonal and alluvial deposits 
+may be on the order of about 12 kips for each 7-inch diameter micropile. 
+In addition, placement of fill materials required to achieve design grades also 
+may induce settlement of the loose compressible deposits. The ground 
+settlement would result in downdrag forces acting on the micropile shaft 
+supporting the new structures. If additional fill is required to achieve design 
+grades, 
+the 
+micropile 
+recommendations 
+presented 
+herein 
+should 
+be 
+re-evaluated. 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 7721-10 
+GEOLABS, INC. 
+Page 17 
+Hawaii • California 
+3.1.2 Uplift Load Resistance 
+Uplift loads imposed on the micropiles may be resisted by shear along the grout 
+bulb (bonded zone) and the adjacent soils. In general, an uplift load capacity 
+equal to the compressive load capacities of the micropiles may be achieved with 
+the minimum bonded zone lengths presented in the tables above. The uplift load 
+capacities are intended for transient load applications only. Therefore, the uplift 
+load capacities should not be further increased for transient load applications. 
+For sustained uplift loads, we recommend reducing the uplift load capacities by 
+50 percent. The capacities of the pile members in tension should be checked by 
+the project structural engineer. 
+3.1.3 Lateral Load Resistance 
+The group action of the micropiles within each equipment pad will contribute to the 
+lateral load resistance of the foundation. The groups of micropiles were designed to 
+resist the static and dynamic lateral forces of the equipment pads provided by the 
+project structural engineer. Lateral load resistance due to passive earth pressure 
+acting against the near-vertical faces of the pile caps may be estimated using an 
+equivalent fluid pressure of 300 pounds per square foot per foot of depth (pcf) for 
+pile caps located above the groundwater level and 150 pcf below the groundwater 
+level. Additional resistance to lateral loads may be provided by shear resistance 
+between the sides of the pile caps and grade beams and the adjacent soils. A side 
+shear resistance of up to 100 pounds per square foot (psf) may be used for 
+transient loads such as wind or seismic forces only. 
+3.1.4 Micropile Foundation Settlement 
+Settlements of the micropile foundations will result primarily from elastic 
+compression of the pile member and subgrade response. We estimate the total 
+settlement of the micropile foundations to be less than 0.5 inches. We believe 
+that these settlements are essentially elastic and should occur as the loads are 
+applied. 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 7721-10 
+GEOLABS, INC. 
+Page 18 
+Hawaii • California 
+3.1.5 Micropile Load Test Program 
+It should be noted that the micropile load capacity is highly dependent on the 
+drilling procedures and the grouting methods employed by the contractor to 
+install the micropile. Therefore, the micropile load capacity may vary considerably 
+between different contractors and micropile foundation systems. In order to 
+determine whether the contractor’s methods of micropile installation are 
+adequate and to determine the ultimate load capacity, we recommend performing 
+one pre-production load test. In general, the purpose of the pre-production load 
+test on a sacrificial micropile is to fulfill the following objectives: 
+To examine the adequacy of the methods and equipment proposed 
+by the contractor to install the micropiles to the depths required 
+To assess the contractor’s method of drilling and grout injection 
+To develop criteria for determination of the bonded zone and 
+evaluate the ultimate bonded stress 
+In general, the pre-production load test should be performed in accordance with 
+ASTM D1143. Based on experience, we believe the load test should be 
+conducted no earlier than seven days after completion of the micropile 
+installation to allow the grout adequate time to cure. Two additional micropiles 
+may be used for reaction during the compressive load testing of the 
+pre-production load test micropile. The reaction micropiles may be installed to 
+depths as deep as the load test micropile to provide an adequate reaction in uplift 
+(to be determined by the contractor). In lieu of a compressive load test, a tensile 
+load test may be performed on the pre-production load test micropile. 
+The load test micropile should conform to the 15,500-gallon tanks and Nereda 
+Treatment System micropile design requirements. The load test micropile should 
+be gradually loaded to at least 200 percent of the allowable design load of 
+41 kips. We recommend holding the maximum test load (200 percent of the 
+design load, or 82 kips) for a minimum of four to eight hours depending on the 
+recorded movements of the load test micropile. After successfully holding 
+200 percent of the design load, we recommend testing the pre-production 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 7721-10 
+GEOLABS, INC. 
+Page 19 
+Hawaii • California 
+micropile to failure, to examine the ultimate micropile load capacity. In lieu of a 
+compression test, a tension test may be performed on the load test micropile. 
+The pre-production load test is an integral part of the design of the micropile 
+foundation system. Therefore, we recommend a Geolabs representative observe 
+the pre-production load test. 
+We recommend that the pre-production load test micropile consist of a 20-foot 
+bonded zone (grout bulb) and 28-foot unbonded zone with steel casing. Upon 
+completion of the load testing, the steel casing may be removed after the 
+unbonded zone is fully grouted. 
+In addition to the pre-production load test, we also recommend performing pullout 
+tests (proof tests) on selected micropiles during construction to confirm the load 
+carrying capacity of the installed micropiles. Based on the micropile drilling and 
+grouting records, Geolabs should select test micropiles after completion of the 
+production micropile installation. We recommend testing a minimum of 
+10 percent of the total number of micropiles or a minimum of two micropiles, 
+whichever is greater, for pullout. The pullout tests should consist of subjecting the 
+micropile to at least 150 percent of the design load. The micropile should be 
+loaded in 25 percent design load increments, and each load should be held for at 
+least 5 minutes. The maximum test load should be held for a minimum of 10 or 
+60 minutes. Pullout testing on selected micropiles is an integral part of the design 
+of the micropile foundation system. Therefore, we recommend conducting the 
+pullout tests under the observation of a Geolabs representative. 
+3.1.6 Micropile Construction Considerations 
+A specialty subcontractor, experienced in the construction of a cased micropile 
+foundation system (minimum five projects), should perform the micropile 
+installation. It should be noted that hard drilling through cobbles, boulders, and 
+basalt formation should be expected at the site. 
+It should be noted that the bond stress between the grout bulb and the soil is 
+highly dependent on the drilling procedures and the grouting methods employed 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 7721-10 
+GEOLABS, INC. 
+Page 20 
+Hawaii • California 
+by the contractor to install the micropile. Therefore, the bond stress between the 
+grout bulb and the soil may vary considerably between different contractors and 
+micropile foundation systems. 
+Due to the specialized nature of the micropile foundation construction, 
+observation of the micropile foundation installation system and testing of the 
+micropiles should be designated as a “Special Inspection” item. Therefore, 
+observation of the micropile installation operations by Geolabs (Special 
+Inspector) is necessary to confirm our design assumptions and should be 
+designated as a “Special Inspection” item in accordance with Section 1704 of 
+IBC 2012. 
+3.2 
+Slabs-On-Grade 
+We anticipate that non-critical structures, such as the planned 12-foot by 12-foot 
+shed, may be supported on a reinforced concrete slab-on-grade in lieu of a micropile 
+foundation system. Based on the existing topography and the anticipated finished 
+grades, we envision that the slabs-on-grade for the non-critical structures will either be 
+supported on recompacted subgrade (fill) materials or imported select granular fill. 
+An allowable bearing pressure of up to about 1,000 pounds per square foot (psf) 
+may be used for design of the slabs-on-grade foundations bearing on recompacted 
+subgrade soils or general fills placed in accordance with the recommendations 
+presented herein. This bearing value is for dead-plus-live loads and may be increased 
+by one-third (⅓) for transient loads, such as those caused by wind or seismic forces. 
+The subgrade beneath the slabs-on-grade should be re-compacted to at least 
+90 percent relative compaction. Soft and/or loose materials encountered at the slab 
+finished subgrade should be over-excavated to expose the underlying firm materials.  
+The foundation over-excavation may be backfilled with select granular fill material 
+compacted to a minimum of 90 percent relative compaction. 
+If the slab-on-grade foundations are designed and constructed as recommended 
+herein, we estimate footing settlements under the anticipated static design loads for 
+footings bearing on the recompacted on-site soils or select granular fill to be on the 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 7721-10 
+GEOLABS, INC. 
+Page 21 
+Hawaii • California 
+order of about 2.5 to 3 inches. Differential settlements of the slabs supported on similar 
+materials should be on the order of about 1.25 to 1.5 inches or less (static loading only). 
+As mentioned previously, the project site could be subjected to appreciable 
+ground settlements in the event of liquefaction caused by a moderate seismic event 
+(M6+).  Seismically induced ground settlements on the order of about 7 inches may be 
+anticipated, and the slabs-on-grade may sustain some damage.  Therefore, there exists 
+the potential for damage and distress to the slabs-on-grade (not structurally supported). 
+However, we believe that the potential for damage may be significantly reduced by 
+increasing the slab thickness and by incorporating steel reinforcement into the concrete 
+slab. If the static and seismically induced settlements presented above are not 
+acceptable for the planned non-critical structures, we recommend structurally 
+supporting the slabs on a micropile foundation system. 
+Lateral loads acting on the slabs-on-grade may be resisted by friction developed 
+between the bottom of the slab and the bearing soil and by passive earth pressure 
+acting against the near-vertical faces of the slab. A coefficient of friction of 0.3 may be 
+used for slabs bearing on the recompacted subgrade. Resistance due to passive earth 
+pressure may be estimated using an equivalent fluid pressure of 300 pcf. This assumes 
+that the soils around slabs are well compacted. Unless covered by pavements or slabs, 
+the passive pressure resistance in the upper 12 inches of soil should be neglected. 
+Based on our field exploration, we anticipate a low to moderate shrink/swell 
+potential of the on-site clayey soils. Therefore, we recommend providing a minimum 
+12-inch thick capping fill layer consisting of non-expansive, select granular materials or 
+select borrow subbase below the slabs. The non-expansive, select granular materials or 
+select borrow subbase should be placed in level lifts not exceeding 8 inches in loose 
+thickness, moisture-conditioned to above the optimum moisture content and compacted 
+to at least 90 percent relative compaction. To reduce the potential for significant slab 
+cracking due to concrete shrinkage, crack control joints should be provided at intervals 
+equal to the width of the walkways with expansion joints at right-angle intersections. 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 7721-10 
+GEOLABS, INC. 
+Page 22 
+Hawaii • California 
+It should be emphasized that the areas adjacent to the slabs should be backfilled 
+tightly against the edges of the slabs with relatively impervious soils. These areas 
+should also be graded to divert water away from the slabs and to reduce the potential 
+for water ponding around the slabs. 
+3.3 
+Site Grading 
+We anticipate that site grading work for the project will primarily consist of 
+excavation and backfill of the pile caps, slabs-on-grade, and underground utility 
+installation. Items of site grading that are addressed in the following subsections include 
+the following: 
+1. 
+Site Preparation 
+2. 
+Fills and Backfills 
+3. 
+Fill Placement and Compaction Requirements 
+4. 
+Excavations 
+5. 
+Drainage 
+A Geolabs representative should monitor site grading operations to observe 
+whether undesirable materials are encountered during the excavation and scarification 
+process and to confirm whether the exposed soil conditions are similar to those 
+assumed in this report. 
+3.3.1 Site Preparation 
+At the on-set of earthwork, the area within the contract grading limits should be 
+cleared thoroughly. Surface vegetation and other unsuitable materials should be 
+removed and disposed of properly off-site. Soft and yielding areas encountered 
+during clearing below areas designated to receive fill and/or future improvements 
+should be over-excavated to expose firm material and the resulting excavation 
+should be backfilled with well-compacted fill. The excavated soft soils should be 
+properly disposed of off-site. 
+In general, the on-site materials generated from the excavations may be reused 
+as a source of general fill and backfill materials, provided that the materials are 
+screened of over-sized materials (greater than 3 inches in maximum dimension) 
+and are free of deleterious materials. Where used as fill and backfill materials, 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 7721-10 
+GEOLABS, INC. 
+Page 23 
+Hawaii • California 
+the on-site soils should be properly moisture-conditioned to at least about 
+2 percent above the optimum moisture content, placed in level lifts not exceeding 
+8 inches in loose thickness, and compacted to a minimum of 90 percent relative 
+compaction. 
+After clearing, the exposed subgrades should be scarified to a depth of about 
+8 inches, moisture-conditioned to at least 2 percent above the optimum moisture, 
+and recompacted to a minimum of 90 percent relative compaction. The 
+compaction requirements for finished subgrades subjected to vehicular traffic 
+should be increased to a minimum of 95 percent relative compaction. Relative 
+compaction refers to the in-place dry density of soil expressed as a percentage of 
+the maximum dry density of the same soil established in accordance with 
+ASTM D1557. Optimum moisture is the water content (percentage by dry weight) 
+corresponding to the maximum dry density.  
+Where shrinkage cracks are observed after the subgrade compaction, we 
+recommend preparing the subgrade soil again as recommended above. 
+Saturation and subsequent yielding of the exposed subgrade due to inclement 
+weather and poor drainage may require over-excavating the soft areas and 
+replacing these areas with engineered fill. A Geolabs field representative should 
+evaluate the need for over-excavation due to soft subgrade soil conditions. 
+3.3.2 Fills and Backfills 
+In general, the on-site materials generated from the excavations may be reused 
+as a source of general fill and backfill materials, provided that the materials are 
+screened of over-sized materials (greater than 3 inches in maximum dimension) 
+and are free of deleterious materials. 
+Imported fill materials should consist of select granular fill material, such as 
+crushed coralline and/or basaltic materials. The materials should be well-graded 
+from coarse to fine with particles no greater than 3 inches in largest dimension. In 
+addition, the materials also should contain between 10 and 30 percent particles 
+passing the No. 200 sieve. The materials should have a California Bearing Ratio 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 7721-10 
+GEOLABS, INC. 
+Page 24 
+Hawaii • California 
+(CBR) value of 20 or higher, and a swell potential of 1 percent or less when 
+tested in accordance with ASTM D1883. Imported fill materials should be tested 
+for the above requirements prior to being transported to the project site for the 
+intended use.  
+Areas to receive fill should be scarified to a depth of 8 inches, 
+moisture-conditioned to about 2 percent above the optimum moisture and 
+compacted to at least 90 percent relative compaction.  
+3.3.3 Fill Placement and Compaction Requirements 
+Fill materials consisting of the on-site soils should be moisture-conditioned to at 
+least about 2 percent above the optimum moisture, placed in level lifts not 
+exceeding 8 inches in loose thickness, and compacted to a minimum of 
+90 percent relative compaction. 
+Imported fill materials should be moisture-conditioned to above the optimum 
+moisture content, placed in level lifts of about 8 inches in loose thickness, and 
+compacted to a minimum of 90 to 95 percent relative compaction, as appropriate. 
+Compaction should be accomplished by sheepsfoot rollers or other types of 
+acceptable compaction equipment. Water tamping, jetting, or ponding should not 
+be allowed to compact the fills. Where compaction is less than required, 
+additional compactive effort should be applied with adjustment of moisture 
+content, as necessary, to obtain the specified compaction. 
+3.3.4 Excavations 
+Based on our field exploration, the project site is generally underlain by very soft 
+to soft and medium stiff to very stiff fill and alluvium underlain by very loose to 
+medium dense beach sand. It is anticipated that the near-surface fill, alluvium, 
+and beach sand may be readily excavated with normal heavy excavation 
+equipment. However, hard cobbles, boulders, or man-made obstructions may be 
+encountered in the surface fills that may require the use of hoerams or chipping.  
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 7721-10 
+GEOLABS, INC. 
+Page 25 
+Hawaii • California 
+The previous discussions regarding the rippability of the surface materials are 
+based on the anticipated subsurface at the project site and our experience in the 
+project vicinity. Contractors bidding on this project should be encouraged to 
+review and understand the geologic environment of the project site and to 
+examine the site conditions and soil data to make their own interpretation. 
+3.3.5 Drainage 
+The finished grades around the pile caps and slabs-on-grade should be sloped to 
+shed water away from the foundations and to reduce the potential for ponding. 
+Excessive landscape watering near the foundations should also be avoided. 
+Planters next to foundations should also be avoided or have concrete bottoms 
+and drains to reduce the potential for water infiltration into the subsoils. 
+These drainage requirements are essential for the proper performance of the 
+above foundation recommendations since ponded water could cause subsurface 
+soil saturation and subsequent loss of strength and/or heaving of the 
+near-surface soils. The foundation excavations should be properly backfilled 
+against the footings immediately after setting of the concrete to reduce the 
+potential for water infiltration. In addition, drainage swales should be provided as 
+soon as possible and maintained to drain surface water runoff away from the 
+foundations and slabs. 
+3.4 
+Utility Trench 
+It is anticipated that the installation of underground utilities will be needed for the 
+project. In general, good construction practices should be utilized for the installation and 
+backfilling of the trenches for the proposed utilities. The contractor should determine the 
+method and equipment to be used for excavation, subject to practical limits and safety 
+considerations. The excavation should comply with all applicable local, state, and 
+federal safety requirements. The contractor should be responsible for trench shoring 
+design and installation. Trench shoring and bracing should conform to the appropriate 
+health and safety requirements. 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 7721-10 
+GEOLABS, INC. 
+Page 26 
+Hawaii • California 
+In general, we recommend using granular bedding consisting of 6 inches of 
+open-graded gravel (ASTM C33, No. 67 gradation) for support of the utility lines. The 
+initial trench backfill up to about 12 inches above the pipes should consist of free 
+draining backfills, such as open-graded gravel, to reduce the potential for damaging the 
+pipes from compaction of the backfill. It is critical to use a free-draining granular material 
+to reduce the potential for formation of voids below the haunches of pipes and to 
+provide adequate support for the sides of the pipes. Improper backfill material around 
+the pipes and improper placement of the backfill could result in settlement of the backfill 
+and damage to the pipes. Where groundwater is encountered, the bedding should be 
+wrapped on all sides by non-woven filter fabric (Mirafi 180N or equivalent). 
+We envision that soft to medium stiff fill and alluvium and/or loose to medium 
+dense beach sand deposits may be encountered at or near the invert elevations along 
+some of the utility lines planned for the project. Therefore, we recommend providing a 
+subgrade stabilization layer consisting of 24 inches of No. 2 Rock (ASTM C 33, No. 4 
+gradation) wrapped in a non-woven filter fabric (Mirafi 180N or equivalent) below the 
+bedding layer for uniform support. The stabilization layer should also extend beyond the 
+sides of the pipe a minimum width of one fourth the outside diameter of the pipe or 
+12 inches, whichever is greater. 
+The upper portion of the trench backfill from the level 12 inches above the pipes 
+to the finished subgrade may consist of approved on-site soils or select granular fill 
+material. The select granular fill and/or on-site backfill materials should be 
+moisture-conditioned to above the optimum moisture content, placed in level lifts not 
+exceeding 8 inches in loose thickness, and compacted to a minimum of 90 percent 
+relative compaction to reduce the potential for appreciable future ground subsidence. 
+The finished subgrade of the trench backfill below any slab or pavement grades should 
+be compacted to no less than 95 percent relative compaction. 
+3.5 
+Design Review 
+Preliminary and final drawings and specifications for the project should be 
+forwarded to Geolabs for review and written comments prior to bid solicitation for 
+construction. This review is necessary to evaluate the conformance of the plans and 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 7721-10 
+GEOLABS, INC. 
+Page 27 
+Hawaii • California 
+specifications with the intent of the foundation and earthwork recommendations 
+provided herein. If this review is not made, Geolabs cannot be responsible for 
+misinterpretation of our recommendations. 
+3.6 
+Post-Design Services/Services During Construction 
+Geolabs should be retained to provide geotechnical engineering services during 
+construction. The critical items of construction monitoring that require "Special 
+Inspections" include the following: 
+1. 
+Observation of the micropile installation and testing 
+2. 
+Observation of the pile cap and slab-on-grade excavation and backfill 
+3. 
+Observation of general fill placement and compaction 
+4. 
+Observation of utility trench excavation and compaction 
+A Geolabs representative also should monitor other aspects of earthwork 
+construction to observe compliance with the design concepts, specifications, or 
+recommendations and to expedite suggestions for design changes that may be required 
+in the event subsurface conditions differ from those anticipated at the time this report 
+was prepared. Geolabs should be accorded the opportunity to provide geotechnical 
+engineering services during construction to confirm our assumptions in providing the 
+recommendations presented herein.  
+If the actual exposed subsurface conditions encountered during construction 
+differ from those assumed or considered herein, Geolabs should be contacted to review 
+and/or revise the geotechnical recommendations presented herein. 
+END OF DISCUSSION AND RECOMMENDATIONS 
+W.O. 7721-10 
+GEOLABS, INC. 
+Page 28 
+Hawaii • California 
+SECTION 4.  LIMITATIONS 
+The analyses and recommendations submitted herein are based in part upon 
+information obtained from our borings and bulk samples. Variations of the subsurface 
+conditions between and beyond the borings and bulk samples may occur and the nature 
+and extent of these variations may not become evident until construction is underway. If 
+variations then appear evident, it will be necessary to re-evaluate the recommendations 
+presented herein. 
+The boring and bulk sample locations indicated herein are approximate, having 
+been taped from visible features shown on the Preliminary Revised Layout transmitted 
+by R.M. Towill Corporation on November 21, 2019. Elevations of the borings were 
+interpolated from the spot elevations shown on the same plan. The physical locations 
+and elevations of the field borings and bulk samples should be considered accurate only 
+to the degree implied by the methods used.  
+The stratification breaks represented on the Logs of Borings show the 
+approximate boundaries between soil types and, as such, may denote a gradual 
+transition. Water level data from the borings were measured at the times shown on the 
+graphic representations and/or presented in the text of this report. The data has been 
+reviewed and interpretations made in the formulation of this report. However, it must be 
+noted that fluctuation may occur due to variation in seasonal rainfall and other factors.  
+This report has been prepared for the exclusive use of Akinaka & Associates, 
+Ltd. for specific application to the proposed MBR Treatment Plant project in the Kahului 
+Airport Pump Station as described herein in accordance with generally accepted 
+geotechnical engineering principles and practices. No warranty is expressed or implied. 
+This report has been prepared solely for the purpose of assisting the architects 
+and engineers in the design of the proposed project. Therefore, this report may not 
+contain sufficient data or the proper information to serve as the basis for construction 
+cost estimates nor for bidding purposes. A contractor wishing to bid on this project 
+should retain a competent geotechnical engineer to assist in the interpretation of this 
+SECTION 4. LIMITATIONS 
+W.O. 7721-10 
+GEOLABS, INC. 
+Page 29 
+Hawaii • California 
+report and/or in the performance of additional site-specific exploration for bid estimating 
+purposes.  
+The owner/client should be aware that unanticipated soil conditions are 
+commonly encountered. Unforeseen subsurface conditions, such as perched 
+groundwater, soft deposits, or hard layers may occur in localized areas and may require 
+additional corrections in the field (which may result in construction delays) to attain a 
+properly constructed project. Therefore, a sufficient contingency fund is recommended 
+to accommodate these possible extra costs. 
+This geotechnical engineering exploration conducted at the project site was not 
+intended to investigate the potential presence of hazardous materials existing at the 
+project site. It should be noted that the equipment, techniques, and personnel used to 
+conduct a geo-environmental exploration differ substantially from those applied in 
+geotechnical engineering. 
+END OF LIMITATIONS 
+CLOSURE
+The following plates and appendices are attached and complete this report:
+PFOJECt LOCATION: MAP. ~~ 2... -nncccccnensen nnee sans nen son sane nana anes tens semen Sai Ean ONE MRONRTEG Plate 1
+Site PLAN... eee eneeeeeeeeeeegnneeeeseaaees Plate 2
+Preliminary Micropile Group Configuration Plains isis iiss css casa sawsccircons ons ces cnn ameowncnns Plate 3
+at (=) (0 Mt =b.4 ©) (0) ¢— 11 (0) eee EEE Appendix A
+LEDOPETONY TOStS us onscsssars cme acme cums amermemameren mane Sa Sime ona xD ae eM HNO vam MK me NN Appendix B
+Photographs of Core Samples ..0..........ceeeeee eee eee enneeeeeeeeseeeneeeeneeseeeeeneeeas Appendix C
+-QQQQQOONOO-
+Respectfully submitted,
+GEOLABS, INC.
+Gerald Y. Seki, P.E.
+Vice President
+GS:NK:¢j 7)
+h:\7700Series\7721-10.nk1
+W.O. 7721-10 GEOLABS, INC. Page 30
+Hawaii ¢ California
+PLATES 
+GRAPHIC SCALE
+1000
+2000
+2000
+0
+FT.
+PROJECT LOCATION
+GENERAL PROJECT LOCATION
+FEBRUARY 2020
+1" = 2,000'
+Geotechnical Engineering
+GEOLABS, INC.
+DATE
+SCALE
+1
+7721-10
+DRAWN BY
+HYC
+W.O.
+PLATE
+N
+N
+PROJECT LOCATION MAP
+ISLAND MAP
+NO SCALE
+LAHAINA
+LAHAINA
+WAILUKU
+KAHULUI
+WAILUKU
+PACIFIC      OCEAN
+PUKALANI
+MAKAWAO
+KIHEI
+HANA
+HANA
+CAD User: HENRY  File Last Updated: February 19, 2020 10:57:34am  Plot Date:  February 19, 2020 - 11:00:34am
+File: T:\Drafting\Working\7721-10_MBR_Treatment_Plant_Kahului\7721-10PLM.dwg\PLM
+Plotter: DWG To PDF-GEO.pc3  Plotstyle: GEO-No-Dithering-Blue-Boring.ctb
+REFERENCE: MAP CREATED WITH TOPO!® ©2010 NATIONAL
+GEOGRAPHIC; ©2007 TELE ATLAS, REL. 1/2007.
+MBR TREATMENT PLANT
+KAHULUI, MAUI, HAWAII
+KAHULUI AIRPORT PUMP STATION
+SAMPLE LOCATION
+APPROXIMATE BULK
+APPROXIMATE BORING
+LOCATION
+LEGEND:
+SITE PLAN
+FEBRUARY 2020
+1" = 20'
+MBR TREATMENT PLANT
+Geotechnical Engineering
+GEOLABS, INC.
+KAHULUI, MAUI, HAWAII
+KAHULUI AIRPORT PUMP STATION
+DATE
+SCALE
+2
+7721-10
+DRAWN BY
+HYC
+W.O.
+PLATE
+CAD User: HENRY  File Last Updated: February 27, 2020 9:43:02am  Plot Date:  February 27, 2020 - 9:43:26am
+File: T:\Drafting\Working\7721-10_MBR_Treatment_Plant_Kahului\7721-10SitePlan.dwg\SP
+Plotter: DWG To PDF-GEO.pc3  Plotstyle: RMTC Standard Laserjet Halfsize.ctb
+REFERENCE: PRELIMINARY REVISED
+LAYOUT TRANSMITTED BY R. M. TOWILL
+CORPORATION ON NOVEMBER 21, 2019.
+GRAPHIC SCALE
+10
+0
+20
+40
+60 FT.
+N
+B-101 & BULK-101
+B-1 & BULK-1
+B-2
+B-102
+MICROPILE LOCATION
+LEGEND:
+GEOLABS, INC.
+Geotechnical Engineering
+7721-10
+DRAWN BY
+KHN
+1" = 10'
+MARCH 2020
+SCALE
+DATE
+W.O.
+3
+PLATE
+GRAPHIC SCALE
+5
+0
+10
+20
+30 FT.
+CAD User: KIM  File Last Updated: March 06, 2020 7:11:50pm  Plot Date:  March 16, 2020 - 4:04:16pm
+File: T:\Drafting\Working\7721-10_MBR_Treatment_Plant_Kahului\7721-10PreliminaryMicropilePlan.dwg\3
+Plotter: DWG To PDF-GEO.pc3  Plotstyle: GEO-No-Dither-RBGC-HEAVY.ctb
+REFERENCE: PRELIMINARY MICROPILE CONFIGURATION TRANSMITTED
+BY KAI HAWAII, INC. ON MARCH 6, 2020.
+GROUP CONFIGURATION PLAN
+MBR TREATMENT PLANT
+KAHULUI, MAUI, HAWAII
+KAHULUI AIRPORT PUMP STATION
+PRELIMINARY MICROPILE
+MICROPILE BATTERED IN DIRECTION INDICATED AT AN INCLINATION OF 1H:12V
+APPENDIX A  
+W.O. 7721-10 
+GEOLABS, INC. 
+MARCH 2020     Page A-1 
+Hawaii • California 
+A P P E N D I X   A 
+Field Exploration 
+We explored the subsurface conditions at the project site by drilling and sampling 
+four borings, designated as Boring Nos. 1, 2, 101, and 102, extending to depths of 
+about 26.5 to 51.5 feet below the existing pavement surface. The approximate boring 
+locations are shown on the Site Plan, Plate 2. The borings were drilled using a 
+truck-mounted drill rig equipped with continuous flight augers and/or rotary coring tools.  
+Our geologist classified the materials encountered in the borings by visual and 
+textural examination in the field in general accordance with ASTM D2488, Standard 
+Practice for Description and Identification of Soils, and monitored the drilling operations 
+on a near-continuous basis. These classifications were further reviewed visually and by 
+testing in the laboratory. Soils were classified in general accordance with ASTM D2487, 
+Standard Practice for Classification of Soils for Engineering Purposes (Unified Soil 
+Classification System), as shown on the Soil Log Legend, Plate A-0.1. Deviations made 
+to the soil classification in accordance with ASTM D2487 are described on the Soil 
+Classification Log Key, Plate A-0.2. Graphic representations of the materials 
+encountered are presented on the Logs of Borings, Plates A-1 through A-4.2. 
+Relatively “undisturbed” soil samples were obtained in general accordance with 
+ASTM D3550, Ring-Lined Barrel Sampling of Soils, by driving a 3-inch OD Modified 
+California sampler with a 140-pound hammer falling 30 inches. In addition, some 
+samples were obtained from the drilled borings in general accordance with 
+ASTM D1586, Penetration Test and Split-Barrel Sampling of Soils, by driving a 
+2-inch OD standard penetration sampler using the same hammer and drop. The blow 
+counts needed to drive the sampler the second and third 6 inches of an 18-inch drive 
+are shown as the “Penetration Resistance” on the Logs of Borings at the appropriate 
+sample depths. The penetration resistance shown on the Logs of Borings indicates the 
+number of blows required for the specific sampler type used. The blow counts may need 
+to be factored to obtain the Standard Penetration Test (SPT) blow counts.  
+Core samples of the rock materials encountered at the project site were obtained 
+by using diamond core drilling techniques in general accordance with ASTM D2113, 
+Diamond Core Drilling for Site Investigation. Core drilling is a rotary drilling method that 
+uses a hollow bit to cut into the rock formation. The rock material left in the hollow core 
+of the bit is mechanically recovered for examination and description. Rock cores were 
+described in general accordance with the Rock Description System, as shown on the 
+Rock Log Legend, Plate A-0.3. The Rock Description System is based on the 
+publication “Suggested Methods for the Quantitative Description of Discontinuities in 
+Rock Masses” by the International Society for Rock Mechanics (March 1977). 
+Recovery (REC) may be used as a subjective guide to the interpretation of the 
+relative quality of rock masses, where appropriate. Recovery is defined as the actual 
+length of material recovered from a coring attempt versus the length of the core attempt. 
+Appendix A 
+Field Exploration 
+W.O. 7721-10 
+GEOLABS, INC. 
+MARCH 2020     Page A-2 
+Hawaii • California 
+For example, if 3.7 feet of material is recovered from a 5.0-foot core run, the recovery 
+would be 74 percent and would be shown on the Logs of Borings as REC = 74%. 
+The Rock Quality Designation (RQD) is also a subjective guide to the relative 
+quality of rock masses. RQD is defined as the percentage of the core run in rock that is 
+sound material in excess of 4 inches in length without any discontinuities, discounting 
+any drilling, mechanical, and handling-induced fractures or breaks. If 2.5 feet of sound 
+material is recovered from a 5.0-foot core run in rock, the RQD would be 50 percent and 
+would be shown on the Logs of Borings as RQD = 50%. Generally, the following is used 
+to describe the relative quality of the rock based on the "Practical Handbook of Physical 
+Properties of Rocks and Minerals” by Robert S. Carmichael (1989). 
+Rock Quality 
+RQD 
+(%) 
+Very Poor 
+0 – 25 
+Poor 
+25 – 50 
+Fair 
+50 – 75 
+Good 
+75 – 90 
+Excellent 
+90 – 100 
+The excavation characteristic of a rock mass is a function of the relative 
+hardness of the rock, its relative quality, brittleness, and fissile characteristics. A dense 
+rock formation with a high RQD value would be very difficult to excavate and probably 
+would require more arduous methods of excavation. 
+A-0.1
+UNCONSOLIDATED UNDRAINED TRIAXIAL
+COMPRESSION (ksf)
+MORE THAN 50%
+OF COARSE
+FRACTION
+RETAINED ON
+NO. 4 SIEVE
+50% OR MORE OF
+COARSE FRACTION
+PASSING
+THROUGH NO. 4
+SIEVE
+MORE THAN 50%
+OF MATERIAL
+RETAINED ON NO.
+200  SIEVE
+50% OR MORE OF
+MATERIAL PASSING
+THROUGH NO. 200
+SIEVE
+TORVANE SHEAR (tsf)
+(2-INCH) O.D. STANDARD PENETRATION TEST
+(3-INCH) O.D. MODIFIED CALIFORNIA SAMPLE
+INORGANIC SILTS AND VERY FINE SANDS,
+ROCK FLOUR, SILTY OR CLAYEY FINE SANDS
+OR CLAYEY SILTS WITH SLIGHT PLASTICITY
+POORLY-GRADED GRAVELS, GRAVEL-SAND
+MIXTURES, LITTLE OR NO FINES
+CLAYEY GRAVELS, GRAVEL-SAND-CLAY
+MIXTURES
+WELL-GRADED SANDS, GRAVELLY SANDS,
+LITTLE OR NO FINES
+POORLY-GRADED SANDS, GRAVELLY
+SANDS, LITTLE OR NO FINES
+SILTY SANDS, SAND-SILT MIXTURES
+CLAYEY SANDS, SAND-CLAY MIXTURES
+LIQUID LIMIT
+50 OR MORE
+CH
+NOTE: DUAL SYMBOLS ARE USED TO INDICATE BORDERLINE SOIL CLASSIFICATIONS
+MH
+SILTS
+AND
+CLAYS
+SILTS
+AND
+CLAYS
+LIQUID LIMIT
+LESS THAN 50
+USCS
+TYPICAL
+DESCRIPTIONS
+GW
+MORE THAN 12%
+FINES
+WATER LEVEL OBSERVED IN BORING OVERNIGHT
+HIGHLY ORGANIC SOILS
+SILTY GRAVELS, GRAVEL-SAND-SILT
+MIXTURES
+OL
+PEAT, HUMUS, SWAMP SOILS WITH HIGH
+ORGANIC CONTENTS
+INORGANIC CLAYS OF LOW TO MEDIUM
+PLASTICITY, GRAVELLY CLAYS, SANDY
+CLAYS, SILTY CLAYS, LEAN CLAYS
+Soil Log Legend
+ORGANIC CLAYS OF MEDIUM TO HIGH
+PLASTICITY, ORGANIC SILTS
+SC
+Plate
+GM
+FINE-
+GRAINED
+SOILS
+COARSE-
+GRAINED
+SOILS
+CLEAN SANDS
+SANDS WITH
+FINES
+SP
+SANDS
+GRAVELS
+WELL-GRADED GRAVELS,  GRAVEL-SAND
+MIXTURES, LITTLE OR NO FINES
+ML
+CL
+OH
+LESS THAN 5%
+FINES
+GRAVELS WITH
+FINES
+CLEAN
+GRAVELS
+GRAB SAMPLE
+PLASTICITY INDEX (NP=NON-PLASTIC)
+TV
+LEGEND
+WATER LEVEL OBSERVED IN BORING AT TIME OF
+DRILLING
+WATER LEVEL OBSERVED IN BORING AFTER DRILLING
+SM
+MAJOR DIVISIONS
+GP
+MORE THAN 12%
+FINES
+PT
+LESS THAN 5%
+FINES
+UNIFIED SOIL CLASSIFICATION SYSTEM (USCS)
+ORGANIC SILTS AND ORGANIC SILTY
+CLAYS OF LOW PLASTICITY
+SW
+GC
+INORGANIC SILT, MICACEOUS OR
+DIATOMACEOUS FINE SAND OR SILTY
+SOILS
+INORGANIC CLAYS OF HIGH PLASTICITY
+PI
+LL
+TXUU
+UNCONFINED COMPRESSION
+OR UNIAXIAL COMPRESSIVE STRENGTH
+CORE SAMPLE
+SHELBY TUBE SAMPLE
+LIQUID LIMIT (NP=NON-PLASTIC)
+UC
+GEOLABS, INC.
+Geotechnical Engineering
+LOG LEGEND FOR SOIL  7721-10.GPJ  GEOLABS.GDT  2/19/20
+A-0.2
+Medium Sand
+Fine Sand
+#4 to #200 (4.75-mm to 0.075-mm)
+#4 to #10 (4.75-mm to 2-mm)
+> 12 inches (305-mm)
+3-inch to #4 (75-mm to 4.75-mm)
+Sieve Number and / or Size
+Gravel
+#10 to #40 (2-mm to 0.425-mm)
+#40 to #200 (0.425-mm to 0.075-mm)
+3 to 12 inches (75-mm to 305-mm)
+Description
+PP Readings
+(tsf)
+2.0 - 4.0
+> 4.0
+N-Value (Blows/Foot)
+MCS
+0 - 4
+RELATIVE DENSITY / CONSISTENCY
+GRAIN SIZE DEFINITION
+ABBREVIATIONS
+N-Value (Blows/Foot)
+0 - 7
+WOH:  Weight of Hammer
+WOR:  Weight of Drill Rods
+SPT:    Standard Penetration Test Split-Spoon Sampler
+MCS:   Modified California Sampler
+PP:      Pocket Penetrometer
+4 - 7
+7 - 15
+15 - 27
+27 - 55
+SPT
+0 - 2
+> 55
+> 30
+4 - 8
+15 - 30
+MOISTURE CONTENT DEFINITIONS
+SPT
+0 - 4
+4 - 10
+10 - 30
+30 - 50
+> 50
+MCS
+Loose
+EXAMPLE: Soil Containing 60% Gravel, 25% Sand, 15% Fines. Described as: SILTY GRAVEL with some sand
+Plate
+GRANULAR SOIL (- #200 <50%)
+2 - 4
+8 - 15
+Relative
+Density
+Very Loose
+Dense
+Very Dense
+COHESIVE SOIL (- #200    50%)
+PRIMARY constituents are composed of the largest
+percent of the soil mass. Primary constituents are
+capitalized and bold (i.e., GRAVEL, SAND)
+PRIMARY constituents are based on plasticity. Primary
+constituents are capitalized and bold (i.e., CLAY, SILT)
+SECONDARY constituents are composed of a
+percentage less than the primary constituent. If the soil
+mass consists of 12 percent or more fines content, a
+cohesive constituent is used (SILTY or CLAYEY);
+otherwise, a granular constituent is used (GRAVELLY
+or SANDY) provided that the secondary constituent
+consists of 20 percent or more of the soil mass.
+Secondary constituents are capitalized and bold (i.e.,
+SANDY GRAVEL, CLAYEY SAND) and precede the
+primary constituent.
+SECONDARY constituents are composed of a
+percentage less than the primary constituent, but more
+than 20 percent of the soil mass. Secondary constituents
+are capitalized and bold (i.e., SANDY CLAY, SILTY
+CLAY, CLAYEY SILT) and precede the primary
+constituent.
+Sand
+Boulders
+Cobbles
+Coarse Gravel
+3-inch to 3/4-inch (75-mm to 19-mm)
+Fine Gravel
+3/4-inch to #4 (19-mm to 4.75-mm)
+GEOLABS, INC. CLASSIFICATION*
+Granular Soils
+Cohesive Soils
+Consistency
+accessory descriptions compose of the following:
+with some: >12%
+with a little: 5 - 12%
+with traces of: <5%
+accessory descriptions are lower cased and follow the
+Primary and Secondary Constituents
+(i.e., SILTY CLAY with some sand)
+Very Soft
+Soft
+Medium Stiff
+Stiff
+Very Stiff
+Hard
+< 0.5
+0.5 - 1.0
+1.0 - 2.0
+7 - 18
+18 - 55
+55 - 91
+> 91
+Medium Dense
+Coarse Sand
+(with deviations from ASTM D2488)
+Soil Classification Log Key
+*Soil descriptions are based on ASTM D2488-09a, Visual-Manual Procedure, with the
+above modifications by Geolabs, Inc. to the Unified Soil Classification System (USCS).
+accessory descriptions compose of the following:
+with some: >12%
+with a little: 5 - 12%
+with traces of: <5%
+accessory descriptions are lower cased and follow the
+Primary and Secondary Constituents
+(i.e., SILTY GRAVEL with a little sand)
+Dry:    Absence of moisture, dry to the touch
+Moist: Damp but no visible water
+Wet:   Visible free water
+SOIL_CLASS_LOG_KEY  7721-10.GPJ  GEOLABS.GDT  2/19/20
+GEOLABS, INC.
+Geotechnical Engineering
+A-0.3
+ROCK DESCRIPTIONS
+Plate
+BRECCIA
+CLINKER
+COBBLES
+CORAL
+BASALT
+ROCK DESCRIPTION SYSTEM
+Greater than 24 inches apart
+12 to 24 inches apart
+6 to 12 inches apart
+3 to 6 inches apart
+Less than 3 inches apart
+Rock shows no sign of discoloration or loss of strength.
+Slight discoloration inwards from open fractures.
+Discoloration throughout and noticeably weakened though not able to break by hand.
+Most minerals decomposed with some corestones present in residual soil mass. Can be broken by hand.
+Saprolite. Mineral residue completely decomposed to soil but fabric and structure preserved.
+The following terms describe general fracture spacing of a rock:
+The following terms describe the chemical weathering of a rock:
+ROCK FRACTURE CHARACTERISTICS
+DEGREE OF WEATHERING
+HARDNESS
+BOULDERS
+VOID/CAVITY
+TUFF
+SILTSTONE
+LIMESTONE
+Unweathered:
+Slightly Weathered:
+Moderately Weathered:
+Highly Weathered:
+Extremely Weathered:
+Very Hard:
+Hard:
+Medium Hard:
+Soft:
+Very Soft:
+SANDSTONE
+Massive:
+Slightly Fractured:
+Moderately Fractured:
+Closely Fractured:
+Severely Fractured:
+Rock Log Legend
+The following terms describe the resistance of a rock to indentation or scratching:
+Specimen breaks with difficulty after several "pinging" hammer blows.
+Example: Dense, fine grain volcanic rock
+Specimen breaks with some difficulty after several hammer blows.
+Example: Vesicular, vugular, coarse-grained rock
+Specimen can be broked by one hammer blow. Cannot be scraped by knife. SPT may penetrate by
+~25 blows per inch with bounce.
+Example: Porous rock such as clinker, cinder, and coral reef
+Can be indented by one hammer blow. Can be scraped or peeled by knife. SPT can penetrate by
+~100 blows per foot.
+Example: Weathered rock, chalk-like coral reef
+Crumbles under hammer blow. Can be peeled and carved by knife. Can be indented by finger
+pressure.
+Example: Saprolite
+CONGLOMERATE
+GEOLABS, INC.
+Geotechnical Engineering
+LOG LEGEND FOR ROCK  7721-10.GPJ  GEOLABS.GDT  2/19/20
+46
+92
+40
+28
+19
+57
+66
+78
+84
+106
+58
+GP
+MH
+MH
+SW-
+SM
+GC
+1.0
+1.0
+13
+3
+9
+14
+21
+13
+12
+Consol.
+Sieve
+- #200 =
+5.1%
+2-inch ASPHALTIC CONCRETE
+Gray SANDY GRAVEL, moist (fill)
+Brown SANDY CLAY with a little gravel, medium
+stiff, moist (fill)
+Brown with multi-color mottling CLAYEY SILT,
+soft, moist (alluvium)
+grades to medium stiff
+Tan SAND (CORALLINE) with a little silt and
+traces of gravel, medium dense (beach sand)
+Light brown CLAYEY GRAVEL (CORALLINE),
+medium dense (coralline detritus)
+grades to loose
+ Boring terminated at 26.5 feet
+ * Elevations estimated from Preliminary Revised
+Layout transmitted R.M. Towill Corporation on
+November 21, 2019.
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-75DG1
+6" Hollow-Stem Auger
+140 lb. wt., 30 in. drop
+5
+10
+15
+20
+25
+30
+35
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation (feet MSL): 9.5 *
+Sample
+Moisture
+Content (%)
+1
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+August 8, 2018
+August 8, 2018
+B. Aiu
+26.5 feet
+7721-10
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 1
+(Energy Transfer Ratio = 80.3%)
+GEOLABS, INC.
+Geotechnical Engineering
+MBR TREATMENT PLANT
+KAHULUI AIRPORT PUMP STATION
+KAHULUI, MAUI, HAWAII
+BORING_LOG  7721-10.GPJ  GEOLABS.GDT  3/16/20
+6.5 ft.   08/08/2018 1118 HRS
+53
+55
+14
+32
+50
+56
+35
+65
+104
+72
+GP
+CH
+MH
+SM
+SM
+MH
+2.0
+0.8
+11
+3
+3
+3
+4
+4
+4
+26
+39
+46
+LL=56
+PI=24
+Consol.
+Sieve
+- #200 =
+21.9%
+Sieve
+- #200 =
+15.6%
+2-inch ASPHALTIC CONCRETE
+Gray SANDY GRAVEL, medium dense, moist
+(fill)
+Brown SANDY CLAY with a little gravel, medium
+stiff, moist (fill)
+Brown with multi-color mottling CLAYEY SILT,
+very soft to soft, moist (alluvium)
+Tan SILTY SAND (CORALLINE) with some
+gravel, very loose (beach sand)
+Light brown SILTY SAND with some gravel and
+traces of cobbles, loose (coralline detritus)
+grades to very loose
+Brown with multi-color mottling SANDY SILT,
+very stiff (alluvium)
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-75DG1
+6" Hollow-Stem Auger
+140 lb. wt., 30 in. drop
+5
+10
+15
+20
+25
+30
+35
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation (feet MSL): 10 *
+Sample
+Moisture
+Content (%)
+2
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+August 8, 2018
+August 8, 2018
+B. Aiu
+35.5 feet
+7721-10
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 2.1
+(Energy Transfer Ratio = 80.3%)
+GEOLABS, INC.
+Geotechnical Engineering
+MBR TREATMENT PLANT
+KAHULUI AIRPORT PUMP STATION
+KAHULUI, MAUI, HAWAII
+BORING_LOG  7721-10.GPJ  GEOLABS.GDT  3/16/20
+6.5 ft.   08/08/2018 1408 HRS
+ Boring terminated at 35.5 feet
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-75DG1
+6" Hollow-Stem Auger
+140 lb. wt., 30 in. drop
+40
+45
+50
+55
+60
+65
+70
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Sample
+Moisture
+Content (%)
+2
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+(Continued from previous plate)
+August 8, 2018
+August 8, 2018
+B. Aiu
+35.5 feet
+7721-10
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 2.2
+(Energy Transfer Ratio = 80.3%)
+GEOLABS, INC.
+Geotechnical Engineering
+MBR TREATMENT PLANT
+KAHULUI AIRPORT PUMP STATION
+KAHULUI, MAUI, HAWAII
+BORING_LOG  7721-10.GPJ  GEOLABS.GDT  3/16/20
+6.5 ft.   08/08/2018 1408 HRS
+34
+23
+21
+30
+33
+67
+63
+82
+81
+80
+85
+62
+GP
+ML
+CL
+SM
+SW-
+SM
+GM
+CH
+3.3
+28
+4
+9
+15
+22
+3
+6
+5
+Sieve
+- #200 =
+5.2%
+Direct
+Shear
+Sieve
+- #200 =
+29.7%
+Sieve
+- #200 =
+22.3%
+LL=92
+PI=62
+1-inch ASPHALTIC CONCRETE
+Gray SANDY GRAVEL, dry (fill)
+Brown SANDY SILT with a little gravel, very stiff,
+moist (fill)
+Brown SANDY CLAY, soft, moist (alluvium)
+Brown SILTY SAND, loose, moist (beach sand)
+Tan SAND (CORALLINE) with a little silt and
+traces of gravel, medium dense (beach sand)
+grades with more gravel
+Gray SILTY GRAVEL with some sand, very
+loose (coralline detritus)
+Brown SILTY CLAY with a little gravel (coralline),
+medium stiff (alluvium)
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-45C TRUCK
+6" Hollow-Stem Auger
+140 lb. wt., 30 in. drop
+5
+10
+15
+20
+25
+30
+35
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation (feet MSL): 9 *
+Sample
+Moisture
+Content (%)
+101
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+January 7, 2020
+January 7, 2020
+B. Aiu
+45 feet
+7721-10
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 3.1
+(Energy Transfer Ratio = 78%)
+GEOLABS, INC.
+Geotechnical Engineering
+MBR TREATMENT PLANT
+KAHULUI AIRPORT PUMP STATION
+KAHULUI, MAUI, HAWAII
+BORING_LOG  7721-10.GPJ  GEOLABS.GDT  3/16/20
+6.5 ft.   01/07/2020 1418 HRS
+44
+CH
+7
+5
+15/0"
+ Ref.
+ Boring terminated at 45 feet
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-45C TRUCK
+6" Hollow-Stem Auger
+140 lb. wt., 30 in. drop
+40
+45
+50
+55
+60
+65
+70
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Sample
+Moisture
+Content (%)
+101
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+(Continued from previous plate)
+January 7, 2020
+January 7, 2020
+B. Aiu
+45 feet
+7721-10
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 3.2
+(Energy Transfer Ratio = 78%)
+GEOLABS, INC.
+Geotechnical Engineering
+MBR TREATMENT PLANT
+KAHULUI AIRPORT PUMP STATION
+KAHULUI, MAUI, HAWAII
+BORING_LOG  7721-10.GPJ  GEOLABS.GDT  3/16/20
+6.5 ft.   01/07/2020 1418 HRS
+52
+37
+47
+33
+55
+24
+8
+68
+75
+95
+GP
+ML
+CL
+SM
+SP
+CL
+GP-
+GM
+2.0
+9
+3
+4
+10
+2
+1/6"
++WOH/
+6"
+25
+39
+0
+0
+0
+81
+57
+Sieve
+- #200 =
+4.2%
+LL=NP
+PI=NP
+Sieve
+- #200 =
+6.0%
+1-inch ASPHALTIC CONCRETE
+Gray SANDY GRAVEL, dry (fill)
+Brown SANDY SILT with a little gravel, medium
+stiff, moist (fill)
+Brown SANDY CLAY, soft, moist (alluvium)
+Brown SILTY SAND, very loose, moist (beach
+sand)
+Tan SAND (CORALLINE) with traces of silt and
+a little gravel, medium dense (beach sand)
+Light brown SANDY CLAY, very soft (alluvium)
+Brown SANDY GRAVEL (CORALLINE) with a
+little silt, medium dense (alluvium with coral
+debris)
+Brown CLAYEY COBBLES (BASALTIC) with
+some gravel (basaltic), dense (alluvium)
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-45C TRUCK
+4" Solid-Stem Auger
+140 lb. wt., 30 in. drop
+5
+10
+15
+20
+25
+30
+35
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation (feet MSL): 9.5 *
+Sample
+Moisture
+Content (%)
+102
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+January 7, 2020
+January 8, 2020
+B. Aiu
+51.5 feet
+7721-10
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 4.1
+(Energy Transfer Ratio = 78%)
+GEOLABS, INC.
+Geotechnical Engineering
+MBR TREATMENT PLANT
+KAHULUI AIRPORT PUMP STATION
+KAHULUI, MAUI, HAWAII
+BORING_LOG  7721-10.GPJ  GEOLABS.GDT  3/16/20
+6.5 ft.   01/08/2020 0738 HRS
+41
+12
+25/1"
+25/1"
+51
+98
+100
+UC=
+8750 psi
+UC=
+3710 psi
+Gray BASALT, closely to moderately fractured,
+slightly weathered, medium hard to hard (basalt
+formation)
+Gray vesicular BASALT, severely fractured,
+slightly weathered, medium hard to hard (basalt
+formation)
+ Boring terminated at 51.5 feet
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-45C TRUCK
+4" Solid-Stem Auger
+140 lb. wt., 30 in. drop
+40
+45
+50
+55
+60
+65
+70
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Sample
+Moisture
+Content (%)
+102
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+(Continued from previous plate)
+January 7, 2020
+January 8, 2020
+B. Aiu
+51.5 feet
+7721-10
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 4.2
+(Energy Transfer Ratio = 78%)
+GEOLABS, INC.
+Geotechnical Engineering
+MBR TREATMENT PLANT
+KAHULUI AIRPORT PUMP STATION
+KAHULUI, MAUI, HAWAII
+BORING_LOG  7721-10.GPJ  GEOLABS.GDT  3/16/20
+6.5 ft.   01/08/2020 0738 HRS
+APPENDIX B  
+W.O. 7721-10 
+GEOLABS, INC. 
+MARCH 2020     Page B-1 
+Hawaii • California 
+A P P E N D I X   B 
+Laboratory Tests 
+Moisture Content (ASTM D2216) and Unit Weight (ASTM D2937) determinations 
+were performed on selected samples as an aid in the classification and evaluation of 
+soil properties. The test results are presented on the Logs of Borings at the appropriate 
+sample depths. 
+Four Atterberg Limits tests (ASTM D4318) were performed on selected soil 
+samples to evaluate the liquid and plastic limits and to aid in soil classification. The test 
+results are summarized on the Logs of Borings at the appropriate sample depths. 
+Graphic presentation of the test results is provided on Plate B-1. 
+Eight Sieve Analysis tests (ASTM C117 & ASTM C136) were performed on 
+selected soil samples to evaluate the gradation characteristics of the soils and to aid in 
+soil classification. Graphic presentations of the grain size distributions are provided on 
+Plates B-2 and B-3. 
+One Direct Shear test (ASTM D3080) was performed on a selected sample to 
+evaluate the shear strength characteristics of the material tested. Results of the direct 
+shear test are presented on Plate B-4. 
+Two Consolidation tests with time rates (ASTM D2435) were performed on 
+samples of the potentially compressible soils to evaluate the compressibility 
+characteristics of the materials encountered. Results of the consolidation tests are 
+presented on Plates B-5 and B-6. 
+Two Uniaxial Compression tests (ASTM D7012 Method C) were performed on 
+selected rock cores to evaluate the uniaxial compressive strength of the rock formation 
+encountered. Results of the uniaxial compression tests are presented on Plate B-7. 
+Two Moisture, Ash and Organic Matter tests (ASTM D2974) were performed on 
+selected soil samples to aid in soil classification.  The test results are presented on 
+Plate B-8. 
+Two Modified Proctor compaction tests (ASTM D1557A) were performed on bulk 
+samples of the near-surface soils to evaluate the dry density and moisture content 
+relationships. The test results are presented on Plates B-9 and B-10. 
+Two laboratory California Bearing Ratio Tests (ASTM D1883) were performed on 
+bulk samples of the near-surface soils to evaluate the pavement support characteristics 
+of the soils. The test results are presented on Plates B-11 and B-12. 
+0
+10
+20
+30
+40
+50
+60
+70
+80
+90
+100
+0
+20
+40
+60
+80
+100
+120
+ML or OL
+CL-ML
+CL or OL
+CH or OH
+B - 1
+MH or OH
+LIQUID LIMIT
+PLASTICITY INDEX
+ATTERBERG LIMITS TEST RESULTS - ASTM D4318
+PI
+Depth (ft)
+Sample
+LL
+PL
+Description
+B-2
+B-101
+B-102
+BULK-1
+5.0-6.5
+30.0-31.5
+26.5-28.0
+0.0-2.0
+56
+92
+NP
+59
+32
+30
+NP
+40
+24
+62
+NP
+19
+Brown with multi-color mottling clayey silt (MH)
+Brown silty clay (CH) with a little gravel
+Brown sandy gravel (GP-GM) with a little silt
+Brown clayey silt (MH) with some gravel
+NP = NON-PLASTIC
+4
+7
+Plate
+W.O. 7721-10
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+MBR TREATMENT PLANT
+KAHULUI AIRPORT PUMP STATION
+KAHULUI, MAUI, HAWAII
+G_ATTERBERG_PI-100_LL-120  7721-10.GPJ  GEOLABS.GDT  3/16/20
+0
+5
+10
+15
+20
+25
+30
+35
+40
+45
+50
+55
+60
+65
+70
+75
+80
+85
+90
+95
+100
+0.001
+0.01
+0.1
+1
+10
+100
+0.966
+1.194
+3.349
+1.029
+3.442
+B - 2
+coarse
+1
+1.5
+3
+2
+0.095
+0.103
+40
+Depth (ft)
+%Gravel
+2.0
+20.5
+36.4
+2.6
+36.8
+92.9
+57.6
+48.0
+92.2
+33.5
+%Sand
+COBBLES
+Sample
+D30 (mm)
+140
+20
+1.4
+2.2
+10.2
+9.9
+HYDROMETER
+3
+GRAIN SIZE IN MILLIMETERS
+PERCENT FINER BY WEIGHT
+100
+coarse
+1/2
+Sample
+0.359
+0.118
+0.216
+0.485
+0.078
+Cu
+GRAVEL
+U.S. SIEVE NUMBERS
+D10 (mm)
+16
+fine
+12.7
+25
+25
+12.7
+25
+Cc
+3/4
+fine
+SILT OR CLAY
+medium
+GRAIN SIZE DISTRIBUTION - ASTM C117 & C136
+SAND
+%Fine
+60
+4
+30
+200
+4
+6
+5.1
+21.9
+15.6
+5.2
+29.7
+Depth (ft)
+LL
+Tan sand (SW-SM) with a little silt and traces of gravel
+Tan silty sand (SM) with some gravel
+Light brown silty sand (SM) with some gravel
+Tan sand (SW-SM) with a little silt and traces of gravel
+Gray silty gravel (GM) with some sand
+810 14
+50
+U.S. SIEVE OPENING IN INCHES
+6
+D60 (mm)
+D100 (mm)
+B-1
+B-2
+B-2
+B-101
+B-101
+10.0-11.5
+15.0-16.5
+20.0-21.5
+10.0-11.5
+20.0-21.5
+10.0-11.5
+15.0-16.5
+20.0-21.5
+10.0-11.5
+20.0-21.5
+B-1
+B-2
+B-2
+B-101
+B-101
+3/8
+PL PI
+Description
+Plate
+W.O. 7721-10
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+MBR TREATMENT PLANT
+KAHULUI AIRPORT PUMP STATION
+KAHULUI, MAUI, HAWAII
+G_GRAIN_SIZE_MOD  7721-10.GPJ  GEOLABS.GDT  3/16/20
+0
+5
+10
+15
+20
+25
+30
+35
+40
+45
+50
+55
+60
+65
+70
+75
+80
+85
+90
+95
+100
+0.001
+0.01
+0.1
+1
+10
+100
+16.912
+0.888
+36.542
+B - 3
+coarse
+1
+1.5
+3
+2
+0.149
+0.127
+40
+Depth (ft)
+%Gravel
+54.5
+11.6
+69.0
+23.3
+84.2
+25.0
+%Sand
+COBBLES
+Sample
+D30 (mm)
+140
+20
+1.6
+3.5
+5.9
+288.1
+HYDROMETER
+3
+GRAIN SIZE IN MILLIMETERS
+PERCENT FINER BY WEIGHT
+100
+coarse
+1/2
+Sample
+0.223
+0.467
+4.04
+Cu
+GRAVEL
+U.S. SIEVE NUMBERS
+D10 (mm)
+16
+fine
+37.5
+25
+75
+Cc
+3/4
+fine
+SILT OR CLAY
+medium
+GRAIN SIZE DISTRIBUTION - ASTM C117 & C136
+SAND
+%Fine
+60
+4
+30
+200
+4
+6
+22.3
+4.2
+6.0
+Depth (ft)
+LL
+Gray silty gravel (GM) with some sand
+Tan sand (SP) with traces of silt and a little gravel
+Brown sandy gravel (GP-GM) with a little silt
+NP
+NP
+810 14
+50
+U.S. SIEVE OPENING IN INCHES
+6
+D60 (mm)
+D100 (mm)
+B-101
+B-102
+B-102
+25.0-26.5
+10.0-11.5
+26.5-28.0
+25.0-26.5
+10.0-11.5
+26.5-28.0
+B-101
+B-102
+B-102
+3/8
+PL PI
+Description
+NP
+Plate
+W.O. 7721-10
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+MBR TREATMENT PLANT
+KAHULUI AIRPORT PUMP STATION
+KAHULUI, MAUI, HAWAII
+G_GRAIN_SIZE_MOD  7721-10.GPJ  GEOLABS.GDT  3/16/20
+0
+1,000
+2,000
+3,000
+4,000
+0
+1,000
+2,000
+3,000
+4,000
+5,000
+NORMAL STRESS, psf
+SHEAR STRESS, psf
+INITIAL
+Moisture Content, %
+Moisture Content, %
+Dry Density, pcf
+0 psf
+54 degrees
+1040
+2117
+4652
+0.0024
+0.0020
+0.0023
+2.42
+2.42
+2.42
+91.8
+83.8
+83.9
+90.3
+81.9
+81.9
+Cohesion:
+0.43
+0.40
+0.40
+0.983
+0.978
+0.976
+Height, inches
+Diameter, inches
+Peak Shear Stress, psf
+Shear Displacement, inches
+Tan sand with a little silt and
+traces of gravel
+1.00
+1.00
+1.00
+Height, inches
+B - 4
+27.8
+30.3
+38.2
+FINAL
+Dry Density, pcf
+Normal Stress, psf
+Sample:
+B-101
+15.0 - 16.5 feet
+Depth:
+Description:
+21.4
+36.8
+41.3
+Sample
+#1
+Sample
+#2
+Sample
+#3
+Deformation Rate, inch/minute
+Friction Angle:
+1000
+2000
+3000
+DIRECT SHEAR TEST -  ASTM D3080
+Plate
+W.O. 7721-10
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+MBR TREATMENT PLANT
+KAHULUI AIRPORT PUMP STATION
+KAHULUI, MAUI, HAWAII
+G_DIRECT_SHEAR  7721-10.GPJ  GEOLABS.GDT  2/19/20
+0
+5
+10
+15
+20
+25
+30
+0.1
+1
+10
+100
+Initial
+Final
+Dry Density, pcf:
+97.0
+0.8608
+100.0
+1.522
+1.175
+Degree of Saturation, %
+Void Ratio
+Water Content, %
+Sample:
+B-1
+Depth:
+5.0 - 6.5 feet
+Description: Brown with multi-color mottling
+clayey silt
+Liquid Limit =
+Plasticity Index =
+CONSOLIDATION %
+NORMAL PRESSURE, ksf
+B - 5
+50.2
+40.0
+84.3
+72.7
+Sample Height, inches
+N/A
+N/A
+CONSOLIDATION TEST -  ASTM D2435
+1.0000
+Plate
+W.O. 7721-10
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+MBR TREATMENT PLANT
+KAHULUI AIRPORT PUMP STATION
+KAHULUI, MAUI, HAWAII
+G_CONSOL  7721-10.GPJ  GEOLABS.GDT  2/19/20
+0
+5
+10
+15
+20
+25
+30
+0.1
+1
+10
+100
+Initial
+Final
+Dry Density, pcf:
+82.8
+0.7943
+100.0
+0.638
+0.313
+Degree of Saturation, %
+Void Ratio
+Water Content, %
+Sample:
+B-2
+Depth:
+5.0 - 6.5 feet
+Description: Brown with multi-color mottling
+clayey silt (MH)
+Liquid Limit =
+Plasticity Index =
+CONSOLIDATION %
+NORMAL PRESSURE, ksf
+B - 6
+24.2
+14.3
+103.9
+83.3
+Sample Height, inches
+56
+24
+CONSOLIDATION TEST -  ASTM D2435
+1.0000
+Plate
+W.O. 7721-10
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+MBR TREATMENT PLANT
+KAHULUI AIRPORT PUMP STATION
+KAHULUI, MAUI, HAWAII
+G_CONSOL  7721-10.GPJ  GEOLABS.GDT  2/19/20
+B-102
+44.5 - 45.8
+7.000
+3.250
+2.15
+174.0
+72,590
+8,750
+B-102
+50.5 - 51.6
+6.750
+3.250
+2.08
+150.7
+30,780
+3,710
+B - 7
+Depth
+Location
+Length
+Diameter
+Length/
+Diameter
+Ratio
+(feet)
+(inches)
+(inches)
+(pcf)
+(psi)
+Density
+Compressive
+Strength
+Load
+UNIAXIAL COMPRESSIVE STRENGTH TEST
+ASTM D7012 (METHOD C)
+(lbs)
+Plate
+W.O. 7721-10
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+MBR TREATMENT PLANT
+KAHULUI AIRPORT PUMP STATION
+KAHULUI, MAUI, HAWAII
+G_ROCK_UC_TEST_PORTRAIT  7721-10.GPJ  GEOLABS.GDT  2/19/20
+B-1
+5 - 6.5
+36.5
+97.5
+2.5
+B-2
+5 - 6.5
+48.1
+90.6
+9.4
+(feet)
+(%)
+Boring Number
+Depth
+Organic Matter
+(%)
+(%)
+B - 8
+Ash Content**
+Moisture Content*
+*  DRY AT 105°C
+** DRY AT 440°C
+ASTM D2974 - MOISTURE, ASH & ORGANIC MATTER
+Plate
+W.O. 7721-10
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+MBR TREATMENT PLANT
+KAHULUI AIRPORT PUMP STATION
+KAHULUI, MAUI, HAWAII
+G_MOISTURE_ASH_ORGANIC_MATTER  7721-10.GPJ  GEOLABS.GDT  2/19/20
+75
+80
+85
+90
+95
+100
+105
+110
+115
+120
+125
+130
+135
+0
+10
+20
+30
+40
+105.0
+21.0
+DRY DENSITY, pcf
+Optimum Moisture Content:
+Sample:
+Depth:
+TEST RESULTS
+MOISTURE CONTENT, %
+Description:
+pcf
+Maximum Dry Density:
+Brown clayey silt (MH) with some gravel
+B - 9
+3.20
+3.10
+3.00
+2.90
+2.80
+2.70
+2.60
+0.0 - 2.0 feet
+BULK-1
+MOISTURE-DENSITY RELATIONSHIP - ASTM D1557 A
+Test Date:
+August 27, 2018
+Plate
+W.O. 7721-10
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+MBR TREATMENT PLANT
+KAHULUI AIRPORT PUMP STATION
+KAHULUI, MAUI, HAWAII
+G_COMPACTION  7721-10.GPJ  GEOLABS.GDT  3/16/20
+75
+80
+85
+90
+95
+100
+105
+110
+115
+120
+125
+130
+135
+0
+10
+20
+30
+40
+115.0
+16.5
+DRY DENSITY, pcf
+Optimum Moisture Content:
+Sample:
+Depth:
+TEST RESULTS
+MOISTURE CONTENT, %
+Description:
+pcf
+Maximum Dry Density:
+Brown clayey silt with some gravel
+B - 10
+3.20
+3.10
+3.00
+2.90
+2.80
+2.70
+2.60
+0.0 - 2.0 feet
+BULK-101
+MOISTURE-DENSITY RELATIONSHIP - ASTM D1557 A
+Test Date:
+January 14, 2020
+Plate
+W.O. 7721-10
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+MBR TREATMENT PLANT
+KAHULUI AIRPORT PUMP STATION
+KAHULUI, MAUI, HAWAII
+G_COMPACTION  7721-10.GPJ  GEOLABS.GDT  3/16/20
+75
+80
+85
+90
+95
+100
+105
+110
+115
+120
+125
+130
+135
+0
+10
+20
+30
+40
+115.0
+16.5
+DRY DENSITY, pcf
+Optimum Moisture Content:
+Sample:
+Depth:
+TEST RESULTS
+MOISTURE CONTENT, %
+Description:
+pcf
+Maximum Dry Density:
+Brown silt with some gravel
+B - 10
+3.20
+3.10
+3.00
+2.90
+2.80
+2.70
+2.60
+0.0 - 2.0 feet
+BULK-101
+MOISTURE-DENSITY RELATIONSHIP - ASTM D1557 A
+Test Date:
+January 14, 2020
+Plate
+W.O. 7721-10
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+MBR TREATMENT PLANT
+KAHULUI AIRPORT PUMP STATION
+KAHULUI, MAUI, HAWAII
+G_COMPACTION  7721-10.GPJ  GEOLABS.GDT  2/19/20
+0
+50
+100
+150
+200
+250
+300
+350
+400
+0
+0.10
+0.20
+0.30
+0.40
+0.50
+0.60
+Sample:
+Corr. CBR @ 0.1"
+Depth:
+Corr. CBR @ 0.2"
+No. of Layers
+CALIFORNIA BEARING RATIO - ASTM D1883
+Description:
+Days Soaked
+4
+BULK-1
+Swell (%)
+0.87
+18.5
+18.3
+Molding Dry Density (pcf)
+STRESS, psi
+0.0 - 2.0 feet
+No. of Blows
+19.2
+100.7
+Molding Moisture (%)
+Hammer Wt. (lbs)
+Hammer Drop (inches)
+PENETRATION, inches
+Brown clayey silt (MH) with some gravel
+18
+56
+10
+5
+Aggregate
+B - 11
+3/4 inch minus
+Plate
+W.O. 7721-10
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+MBR TREATMENT PLANT
+KAHULUI AIRPORT PUMP STATION
+KAHULUI, MAUI, HAWAII
+G_CBR  7721-10.GPJ  GEOLABS.GDT  3/16/20
+0
+50
+100
+150
+200
+250
+300
+350
+400
+0
+0.10
+0.20
+0.30
+0.40
+0.50
+0.60
+Sample:
+Corr. CBR @ 0.1"
+Depth:
+Corr. CBR @ 0.2"
+No. of Layers
+CALIFORNIA BEARING RATIO - ASTM D1883
+Description:
+Days Soaked
+4
+BULK-101
+Swell (%)
+0.72
+17.6
+17.6
+Molding Dry Density (pcf)
+STRESS, psi
+0.0 - 2.0 feet
+No. of Blows
+21.1
+102.4
+Molding Moisture (%)
+Hammer Wt. (lbs)
+Hammer Drop (inches)
+PENETRATION, inches
+Brown clayey silt with some gravel
+18
+56
+10
+5
+Aggregate
+B - 12
+3/4 inch minus
+Plate
+W.O. 7721-10
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+MBR TREATMENT PLANT
+KAHULUI AIRPORT PUMP STATION
+KAHULUI, MAUI, HAWAII
+G_CBR  7721-10.GPJ  GEOLABS.GDT  3/16/20
+APPENDIX C  
+MBR TREATMENT PLANT 
+KAHULUI AIRPORT PUMP STATION 
+KAHULUI, MAUI, HAWAII 
+B-102     28.0’ TO 51.5’ 
+W.O. 7721-10 
+GEOLABS, INC. 
+PLATE C-1 
+Hawaii• California 
+             28.0’ 
+     33.0’ 
+     41.5’ 
+     46.5’ 
+                                       31.5’                           41.5’                                        
+                   46.5’           
+                                 51.5’ 

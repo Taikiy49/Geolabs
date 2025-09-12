@@ -1,0 +1,4039 @@
+GEOTECHNICAL ENGINEERING EXPLORATION 
+FY14 MCON PROJECT P‐637 
+DEHUMIDIFIED SUPPLY STORAGE WAREHOUSE 
+POLARIS POINT, NAVAL BASE, GUAM 
+W.O. 7014‐00     AUGUST 19, 2014 
+Prepared for 
+BULLTRACK‐WATTS A JV 
+GEOLABS, INC. 
+Geotechnical Engineering and Drilling Services 
+100% Design Submittal Geotech Report - 08/19/2014
+GEOTECHNICAL ENGINEERING EXPLORATION 
+FY14 MCON PROJECT P-637 
+DEHUMIDIFIED SUPPLY STORAGE WAREHOUSE 
+POLARIS POINT, NAVAL BASE, GUAM 
+W.O. 7014-00    AUGUST 19, 2014 
+Prepared for 
+BULLTRACK-WATTS A JV 
+THIS WORK WAS PREPARED BY 
+ME OR UNDER MY SUPERVISION. 
+4-30-16
+SIGNATURE
+EXPIRATION DATE 
+OF THE LICENSE
+GEOLABS,INC.
+GeotechnicalEngineeringandDrillingServices
+2006KalihiStreet•Honolulu,HI96819
+Hawaii•California
+100% Design Submittal Geotech Report - 08/19/2014
+GEOLABS, INC. 
+Geotechnical Engineering and Drilling Services
+2006 Kalihi Street • Honolulu, Hawaii 96819 
+Phone: (808) 841-5064  •  Facsimile: (808) 847-1749  •  E-mail: hawaii@geolabs.net
+Hawaii • California 
+August 19, 2014 
+W.O. 7014-00 
+Ms. Jianping Johnson 
+Bulltrack-Watts A JV 
+674 Harmon Loop Road, Suite 212 
+Dededo, GU 96929 
+Dear Ms. Johnson:
+Geolabs, Inc. is pleased to submit this report entitled "Geotechnical Engineering 
+Exploration, FY14 MCON Project P-637, Dehumidified Supply Storage Warehouse, 
+Polaris Point, Naval Base, Guam” prepared in support of the design-build effort for the 
+proposed warehouse facility project at Polaris Point, Naval Base, Guam. 
+Our work was performed in general accordance with the scope of services 
+outlined in the fee proposal by Geolabs, Inc. dated January 29, 2014. 
+Please note that the soil samples recovered during our field exploration (remaining 
+after testing) will be stored for a period of two months from the date of this report. The 
+samples will be discarded after that date unless special arrangements are made for a 
+longer sample storage period. Please contact our office for alternative sample storage 
+requirements, if appropriate. 
+Detailed discussion and specific design recommendations are contained in the 
+body of this report. If there are any questions regarding this report, please contact our 
+office.
+Very truly yours, 
+GEOLABS, INC.
+       Robin M. Lim, P.E.
+          Vice President 
+RML:TR:as
+100% Design Submittal Geotech Report - 08/19/2014
+W.O. 7014-00 
+GEOLABS, INC. 
+Page i 
+Hawaii • California 
+GEOTECHNICAL ENGINEERING EXPLORATION 
+FY14 MCON PROJECT P-637 
+DEHUMIDIFIED SUPPLY STORAGE WAREHOUSE 
+POLARIS POINT, NAVAL BASE, GUAM 
+W.O. 7014-00     AUGUST 19, 2014 
+TABLE OF CONTENTS 
+                                                                                                                               Page 
+SUMMARY OF FINDINGS AND RECOMMENDATIONS .............................................. iii 
+1. 
+GENERAL ............................................................................................................ 1 
+1.1 
+Project Considerations ............................................................................... 1 
+1.2 
+Purpose and Scope ................................................................................... 2 
+2. 
+SITE CHARACTERIZATION ................................................................................ 4 
+2.1 
+Existing Site Conditions ............................................................................. 4 
+2.2 
+Subsurface Conditions ............................................................................... 5 
+2.3 
+Seismic Design Considerations ................................................................. 6 
+2.3.1  Earthquakes and Seismicity ........................................................... 6 
+2.3.2  Liquefaction Potential ..................................................................... 7 
+2.3.3  Soil Profile ...................................................................................... 8 
+3. 
+DISCUSSION AND RECOMMENDATIONS ...................................................... 10 
+3.1 
+Pile Foundations ...................................................................................... 11 
+3.2 
+Building Floor Slabs ................................................................................. 16 
+3.3 
+Transformer Pad and Other Slabs-On-Grade .......................................... 17 
+3.4 
+Sewer Lift Station ..................................................................................... 18 
+3.5 
+Earthwork ................................................................................................. 19 
+3.5.1  Site Preparation ............................................................................ 20 
+3.5.2  Fills and Backfills .......................................................................... 21 
+3.5.3  Fill Placement and Compaction Requirements ............................ 21 
+3.6 
+Utility Trenches ........................................................................................ 22 
+3.7 
+Pavement Design .................................................................................... 23 
+3.8 
+Percolation Tests ..................................................................................... 24 
+3.9 
+Design Review ......................................................................................... 24 
+3.10 
+Services During Construction .................................................................. 25 
+4. 
+LIMITATIONS ..................................................................................................... 26 
+REFERENCES .............................................................................................................. 28 
+CLOSURE ..................................................................................................................... 29 
+PLATES 
+Project Location Map ................................................................................... Plate 1 
+Site Plan ...................................................................................................... Plate 2 
+Geology Map ............................................................................................... Plate 3 
+100% Design Submittal Geotech Report - 08/19/2014
+TABLE OF CONTENTS  
+Page 
+W.O. 7014-00 
+GEOLABS, INC. 
+Page ii 
+Hawaii • California 
+APPENDIX A 
+Field Exploration ...................................................................................... Page A-1 
+Soil Log Legend  .................................................................................... Plate A-0.1 
+Rock Log Legend  ................................................................................. Plate A-0.2 
+Logs of Borings  ........................................................................ Plates A-1 thru A-6 
+APPENDIX B 
+Laboratory Tests ...................................................................................... Page B-1 
+Laboratory Test Data  ............................................................... Plates B-1 thru B-9 
+APPENDIX C 
+Geotechnical Information from the RFP Documents ............................... 13 Pages 
+100% Design Submittal Geotech Report - 08/19/2014
+W.O. 7014-00 
+GEOLABS, INC. 
+Page iii 
+Hawaii • California  
+GEOTECHNICAL ENGINEERING EXPLORATION 
+FY14 MCON PROJECT P-637 
+DEHUMIDIFIED SUPPLY STORAGE WAREHOUSE 
+POLARIS POINT, NAVAL BASE, GUAM 
+W.O. 7014-00     AUGUST 19, 2014 
+SUMMARY OF FINDINGS AND RECOMMENDATIONS 
+Our field exploration generally encountered surface fills over beach deposits and 
+lagoonal deposits followed by weathered limestone formation at the Dehumidified 
+Supply Storage Warehouse location. The surface fills generally consisted of medium 
+dense to dense sandy gravel and gravelly sands extending down to about 1.8 meters 
+below the surface. Beach deposits consisting of medium dense to dense sands with 
+occasional loose zones were encountered directly below the surface fills. Lagoonal 
+deposits consisting of loose silty sands and gravel with occasional cemented zones 
+were encountered below the beach deposits. The lagoonal deposits generally were 
+underlain by weathered limestone formation extending down to the maximum depth 
+explored of about 28.5 meters below the ground surface. The weathered limestone 
+formation encountered was generally soft to medium hard. The consistency and quality 
+of the weathered limestone formation encountered varied significantly with depth. 
+Groundwater was encountered in our borings at about 2.3 to 2.6 meters below the 
+ground surface at the time of our field exploration corresponding to about Elevation +0.6 
+to +0.9 meters. 
+Generally, we recommend using 406-mm square precast prestressed concrete 
+piles with an allowable compressive load capacity of 670 kN (150 kips) per pile to 
+support the proposed warehouse structure. To develop the recommended pile capacity 
+of 670 kN, a pile embedment of approximately 26 meters (85 feet) below the existing 
+ground surface may be required. Based on the subsurface conditions encountered, we 
+anticipate some minor predrilling of the surface materials may be needed to assist in 
+setting the piles. Therefore, we recommend predrilling the pile locations to a depth not 
+deeper than 6 meters to facilitate setting of the piles only. 
+In general, we recommend the test pile program consist of conducting a dynamic 
+load test using a Pile Driving Analyzer (PDA) on at least 16 test piles to monitor the 
+hammer and drive system performance, assess pile installation stresses and integrity, 
+as well as to evaluate pile capacity. The test piles may be incorporated into the actual 
+foundation system upon evaluation of the dynamic load test results. Test piles should be 
+cast at least 1.5 meters longer than the estimated pile length to account for potential 
+variation in the subsurface conditions. After initial driving of the test piles to the 
+approximate tip elevation, re-striking of the test piles should be conducted no earlier 
+than 72 hours after the initial driving. The text of this report should be referred to for 
+detailed discussion and specific design recommendations. 
+END OF SUMMARY OF FINDINGS AND RECOMMENDATIONS 
+100% Design Submittal Geotech Report - 08/19/2014
+W.O. 7014-00 
+GEOLABS, INC. 
+Page 1 
+Hawaii • California 
+SECTION 1.  GENERAL 
+This report presents the results of our geotechnical engineering exploration 
+performed for the proposed Dehumidified Supply Storage Warehouse facility project 
+(FY14 MCON Project P-637) at Polaris Point within the Apra Harbor Naval Base in 
+Guam. The project location and general site vicinity are shown on the Project Location 
+Map, Plate 1.  
+This report summarizes the findings from our field exploration and laboratory 
+testing, and presents our geotechnical recommendations derived from our analyses for 
+the proposed project. These recommendations are intended for the design of 
+foundations, floor slabs, lift station, earthwork, pavements, and storm water 
+management systems only. The findings and recommendations presented herein are 
+subject to the limitations noted at the end of this report.  
+1.1 
+Project Considerations 
+The proposed design-build project is located at Polaris Point within the Naval Base 
+in Apra Harbor, Guam. The project location and general vicinity are shown on the Project 
+Location Map, Plate 1. The project consists of construction of a Dehumidified Supply 
+Storage Warehouse facility. The project site is adjacent to the Submarine Learning 
+Center/Submarine Squadron 15 Headquarter (Project P-465). 
+Based on the project documents, the new Dehumidified Supply Storage 
+Warehouse will consist of a one-story warehouse building measuring approximately 
+3,716 square meters in area. The Dehumidified Supply Storage Warehouse will have a 
+finished floor elevation of about +3.4 meters. Based on the relatively level ground 
+surface conditions at the site, we envision only minor site grading consisting of cuts and 
+fills of less than about 0.5 meters will be required to achieve the design finished grades. 
+In addition, there will be a paved driveway around the warehouse building and a 
+paved parking lot to service the warehouse facility. Underground utilities, such as 
+sewer, drainage, water, and electrical lines, will be provided to service the facility. In 
+addition, two infiltration basins will be constructed for storm water management systems 
+as required by the Request for Proposal (RFP) documents. 
+100% Design Submittal Geotech Report - 08/19/2014
+SECTION 1. GENERAL 
+W.O. 7014-00 
+GEOLABS, INC. 
+Page 2 
+Hawaii • California 
+1.2 
+Purpose and Scope 
+The purpose of our field exploration was to obtain an overview of the surface and 
+subsurface conditions at the project site to develop a soil and rock data set to formulate 
+geotechnical recommendations for design of the proposed building and infrastructure. In 
+order to accomplish this scope, we conducted an exploration program consisting of the 
+following tasks and efforts: 
+1. 
+Application for a Guam EPA test boring permit. 
+2. 
+Preparation and submittal of an Activity Hazard Analysis in support of our 
+field exploration activities and briefing of our field personnel. 
+3. 
+Mobilization and demobilization of a truck-mounted drill rig and operators 
+to the project site and back. 
+4. 
+Drilling and sampling of four deep exploratory borings extending to depths 
+of about 20.9 to 28.5 meters below the existing ground surface. In 
+addition, two shallow borings (1.2 meters deep) also were performed to 
+conduct the percolation tests in support of the infiltration basin design. 
+5. 
+Coordination of the field exploration and logging of the borings by our 
+field engineer. 
+6. 
+Performance of two percolation tests to determine the infiltration 
+characteristics of the near-surface materials in support of the infiltration 
+basin design. 
+7. 
+Laboratory testing of selected soil samples obtained during the field 
+exploration as an aid in classifying the materials and evaluating their 
+engineering properties. 
+8. 
+Attendance at the Post Award Kickoff (PAK) Meeting by our principal 
+engineer. 
+9. 
+Analyses of the field and laboratory data to formulate geotechnical 
+recommendations for the project design, such as the design of 
+foundations, floor slabs, lift station, earthwork, pavements, and storm 
+water management systems. 
+10. 
+Preparation of this geotechnical engineering report summarizing our work 
+on 
+the 
+project 
+and 
+presenting 
+our 
+findings 
+and 
+geotechnical 
+recommendations for design of the project. 
+11. 
+Miscellaneous work efforts, such as drafting, word processing, and clerical 
+support. 
+100% Design Submittal Geotech Report - 08/19/2014
+SECTION 1. GENERAL 
+W.O. 7014-00 
+GEOLABS, INC. 
+Page 3 
+Hawaii • California 
+12. 
+Coordination of our overall work on the project by our engineers. 
+13. 
+Quality assurance of our work and client/design team consultation by our 
+principal engineer. 
+Detailed descriptions of our field exploration methodology and the Logs of 
+Borings are presented in Appendix A. Results of the laboratory tests performed on 
+selected soil samples obtained from our field exploration are presented in Appendix B. 
+The logs of borings and laboratory test results excerpted from the geotechnical data 
+report contained in the Request For Proposal (RFP) documents are included in 
+Appendix C for ease of reference. 
+END OF GENERAL 
+100% Design Submittal Geotech Report - 08/19/2014
+W.O. 7014-00 
+GEOLABS, INC. 
+Page 4 
+Hawaii • California 
+SECTION 2.  SITE CHARACTERIZATION 
+The Island of Guam is the largest and southernmost of the Mariana Island 
+archipelago, which is an island arc parallel to the trend of the subduction zone forming 
+the Mariana Trench. The Mariana Trench is part of a belt of trenches extending from 
+Japan to the Palau Islands including the Japan Trench, Mariana Trench, Yap Trench, 
+and Palau Trench. 
+The Island of Guam can be broadly divided into three geologic provinces: 
+the southern mountains, the central mountains, and the northern plateau. The island 
+formation started during the Eocene Epoch by the eruption of basaltic rhyolite lavas. 
+The mountainous central portion of the island is composed of these Eocene volcanic 
+rocks and conglomerates, tuffs, and limestones of the Eocene and Oligocene Epochs. 
+Lava flows and limestone formations of the Miocene Epoch make up the majority 
+of the southern one-third of the island. The plateaus of the northern portion of the island 
+were formed while this part of the island was still beneath the sea level. During the 
+Oligocene and Miocene Epochs, a complex series of coral and algal reefs formed an 
+elongated platform of limestones and related deposits. Tectonic activity has lifted these 
+coral-algal limestones above sea level to form the northern Guam Plateau. 
+The central portion of the island consists of the transition from the volcanic 
+materials of the southern mountains to the limestone formations of the northern plateau. 
+The project site at Apra Harbor is located in the south-central portion of the island. The 
+local geology is dominated by the volcanic materials and associated materials of the 
+southern mountains. Due to surface drainage courses of the southern mountain terrain, 
+the near surface soils in the area consist of Holocene age alluvium and associated 
+deposits, such as coralline detritus, alluvium, and lagoonal deposits. These younger 
+unconsolidated soil deposits generally are more susceptible to liquefaction and slope 
+stability issues, especially around the shoreline areas. 
+2.1 
+Existing Site Conditions 
+The project site is located on the north side of the Inner Apra Harbor within the 
+Naval Base in Apra Harbor, Guam. The Dehumidified Supply Storage Warehouse 
+100% Design Submittal Geotech Report - 08/19/2014
+SECTION 2. SITE CHARACTERIZATION  
+W.O. 7014-00 
+GEOLABS, INC. 
+Page 5 
+Hawaii • California 
+project site is located to the east of the existing Submarine Learning Center/Submarine 
+Squadron 15 Headquarter (Project P-465) at Polaris Point in Guam.  
+The Dehumidified Supply Storage Warehouse facility project site is to the south 
+of Polaris Point Drive, the main entry road to the Polaris Point area. The project site is 
+generally an open area with some grasses. The project site is generally level with 
+existing ground elevations ranging from about Elevation +3.0 to +3.3 meters. An 
+infiltration basin for the Submarine Learning Center/Submarine Squadron 15 
+Headquarter project is situated to the south of the new building. 
+2.2 
+Subsurface Conditions 
+The subsurface conditions at the Dehumidified Supply Storage Warehouse site 
+were explored by drilling and sampling four deep exploratory borings, designated as 
+Boring Nos. 101 through 104, extending down to depths of about 20.9 to 28.5 meters 
+below the existing ground surface. In addition, two shallow borings (1.2 meters deep) 
+also were drilled to conduct the percolation tests in support of the infiltration basin 
+design. The approximate locations of the borings drilled are shown on the Site Plan, 
+Plate 2. In addition, three borings drilled in support of the RFP documents also are 
+shown on the Site Plan for ease of reference.  
+Our field exploration generally encountered surface fills over beach deposits and 
+lagoonal deposits followed by weathered limestone formation at the new warehouse 
+location. The surface fills generally consisted of medium dense to dense sandy gravel 
+and gravelly sands extending down to about 1.8 meters below the surface. Beach 
+deposits consisting of medium dense to dense sands with occasional loose zones were 
+encountered directly below the surface fills. Lagoonal deposits consisting of loose silty 
+sands and gravel with occasional cemented zones were encountered below the beach 
+deposits. 
+The lagoonal deposits generally were underlain by weathered limestone 
+formation starting at a depth of about 13.4 meters extending down to the maximum 
+depth explored of about 28.5 meters below the ground surface. The weathered 
+limestone formation encountered was generally soft to medium hard. The consistency 
+100% Design Submittal Geotech Report - 08/19/2014
+SECTION 2. SITE CHARACTERIZATION  
+W.O. 7014-00 
+GEOLABS, INC. 
+Page 6 
+Hawaii • California 
+and quality of the weathered limestone formation encountered varied significantly with 
+depth.  
+Groundwater was encountered in our borings at about 2.3 to 2.6 meters below 
+the ground surface at the time of our field exploration corresponding to about Elevation 
++0.6 to +0.9 meters. However, groundwater levels likely will change due to tidal 
+fluctuations, seasonal precipitation, surface water runoff, and other factors. 
+Detailed descriptions of the subsurface materials encountered from our field 
+exploration are presented on the Logs of Borings, Plates A-1 through A-6 in Appendix A. 
+Results of the laboratory tests performed on selected soil samples obtained from our field 
+exploration are presented in Appendix B. The logs of borings and laboratory test results 
+from the geotechnical data report contained in the RFP documents are included in 
+Appendix C herein for ease of reference. 
+2.3 
+Seismic Design Considerations 
+The project site will be subjected to seismic activity and should be evaluated for 
+the potential for soil liquefaction. Seismic design of the proposed project will be based 
+on the Unified Facilities Criteria “Seismic Design of Buildings” (UFC 3-310-04), which 
+references the 2012 International Building Code (IBC 2012) and UFC Structural Load 
+Data (UFC 3-310-01). 
+2.3.1 Earthquakes and Seismicity 
+Guam is situated adjacent to the subduction zone that forms the Mariana Trench. 
+The island is tectonically active and has experienced approximately 
+20 earthquakes exceeding a magnitude of 7.0 since 1902. Of these events, 
+fifteen occurred prior to 1950 and five have occurred subsequent to that date. 
+Several of the larger faults and fault zones that traverse the Island of Guam 
+include the following:   
+Pago Bay - Adelup Point Fault,  
+Santa Rita - Talofofo River Valley Fault Zone, and 
+Tamuning - Barrigada Fault. 
+100% Design Submittal Geotech Report - 08/19/2014
+SECTION 2. SITE CHARACTERIZATION  
+W.O. 7014-00 
+GEOLABS, INC. 
+Page 7 
+Hawaii • California 
+In addition to the larger faults, several faults and fault zones within proximity to 
+the project site include the Cabras Fault and Cocos Fault. 
+2.3.2 Liquefaction Potential 
+Liquefaction is a phenomenon during which loose, saturated, cohesionless soils 
+(such as sands and non-plastic silts) temporarily lose their shear strengths due to 
+the build-up of excess pore water pressures resulting from cyclic stress 
+applications induced by earthquakes. In this process, when the loose saturated 
+sand deposit is subjected to vibration (such as during an earthquake), the soil 
+tends to densify and decrease in volume causing an increase in pore water 
+pressure. If drainage is unable to occur rapidly enough to dissipate the build-up 
+of pore water pressure, the effective stress (internal strength) of the soil is 
+reduced. Under sustained vibrations, the pore water pressure build-up could 
+equal the overburden pressure, essentially reducing the soil shear strength to 
+zero and causing it to behave as a viscous fluid. During liquefaction, the soil 
+acquires sufficient mobility to permit both horizontal and vertical movements, and 
+if not confined, will result in significant deformations. 
+Significant factors known to affect the liquefaction potential of soils are the 
+characteristics of the materials such as grain size distribution and relative 
+density; the plasticity of the fine-grained soils, the degree of saturation; the initial 
+stresses (overburden pressures) acting on the soils; and the characteristics of 
+the earthquakes such as the intensity and duration of ground shaking. The major 
+factors affecting the liquefaction characteristics of soil deposits are as follows: 
+1. 
+Grain Size Distribution - Fine and uniform sands and silts are more 
+susceptible to liquefaction than coarse or well-graded sands. 
+2. 
+Initial Relative Density - Loose sands and silts are most susceptible to 
+liquefaction. Liquefaction potential is inversely proportional to relative 
+density. 
+3. 
+Magnitude and Duration of Vibration - Liquefaction potential is directly 
+proportional to the magnitude and duration of the earthquake. 
+100% Design Submittal Geotech Report - 08/19/2014
+SECTION 2. SITE CHARACTERIZATION  
+W.O. 7014-00 
+GEOLABS, INC. 
+Page 8 
+Hawaii • California 
+Because the project site will be subjected to seismic activity, we have evaluated the 
+potential for soil liquefaction at the project site based on a peak ground acceleration 
+of 0.9g (corresponding to the Maximum Considered Earthquake with a return 
+period of 2,475 years). The subsurface conditions at the site generally consist of 
+surface fills over beach deposits, lagoonal deposits, and weathered limestone 
+formation. Based on the subsurface conditions encountered, the lagoonal deposits 
+encountered at the project site (between depths of about 3 meters and 15 meters 
+except for some more resistant zones with some cementation of the subsurface 
+materials) generally are susceptible to liquefaction when subjected to a peak 
+ground acceleration of 0.9g. In the event of soil liquefaction caused by a peak 
+ground acceleration of 0.9g, the estimated seismically induced ground settlement 
+due to soil liquefaction ranged from about 150 to 350 mm with an average of about 
+300 mm.  
+The other soil deposits (surface fills, beach deposits, and weathered limestone 
+formation) generally are not susceptible to soil liquefaction. The weathered 
+limestone encountered generally consists of soft to medium hard formation with 
+pockets of sandy and silty soils. The sandy and silty soils encountered in the 
+limestone formation generally occur in small pockets and generally do not appear 
+as continuously layered materials. Therefore, we believe the limestone formation 
+with pockets of the sandy and silty soils also are not susceptible to liquefaction. 
+2.3.3 Soil Profile 
+In accordance with Chapter 20, Site Classification Procedure for Seismic Design 
+contained in ASCE 7-10 (Minimum Design Loads for Buildings and Other 
+Structures), a site-response analysis is not required to determine the spectral 
+accelerations for liquefiable soils for structures having fundamental periods of 
+vibration equal to or less than 0.5 seconds. Rather, a site class is permitted to be 
+determined in accordance with Section 20.3 and the corresponding values of Fa 
+and Fv determined from Tables 11.4-1 and 11.4-2. For this project, the Project 
+Program contained in the RFP documents provided the corresponding values of 
+Fa (1.0) and Fv (2.4) to be used for Site Class F. Based on Site Class F, the 
+100% Design Submittal Geotech Report - 08/19/2014
+SECTION 2. SITE CHARACTERIZATION  
+W.O. 7014-00 
+GEOLABS, INC. 
+Page 9 
+Hawaii • California 
+following seismic design parameters were estimated and may be used for the 
+seismic analysis of this project. 
+SEISMIC DESIGN PARAMETERS 
+Parameter 
+Value 
+MCE Peak Bedrock Acceleration, PBA (Site Class B) = 
+0.90g 
+Mapped MCE Spectral Response Acceleration, SS = 
+2.79g 
+Mapped MCE Spectral Response Acceleration, S1 = 
+0.68g 
+Site Class = 
+“F” 
+Site Coefficient, Fa = 
+1.0 
+Site Coefficient, Fv = 
+2.4 
+Adjusted MCE Spectral Response Acceleration, SMS = 
+2.79g 
+Adjusted MCE Spectral Response Acceleration, SM1 = 
+1.63g 
+Design Spectral Response Acceleration, SDS = 
+1.86g 
+Design Spectral Response Acceleration, SD1 = 
+1.09g 
+END OF SITE CHARACTERIZATION 
+100% Design Submittal Geotech Report - 08/19/2014
+W.O. 7014-00 
+GEOLABS, INC. 
+Page 10 
+Hawaii • California 
+SECTION 3.  DISCUSSION AND RECOMMENDATIONS 
+Our field exploration generally encountered surface fills over beach deposits and 
+lagoonal deposits followed by weathered limestone formation at the Dehumidified 
+Supply Storage Warehouse location. The surface fills generally consisted of medium 
+dense to dense sandy gravel and gravelly sands extending down to about 1.8 meters 
+below the surface. Beach deposits consisting of medium dense to dense sands with 
+occasional loose zones were encountered directly below the surface fills. Lagoonal 
+deposits consisting of loose silty sands and gravel with occasional cemented zones 
+were encountered below the beach deposits. The loose lagoonal deposits are 
+susceptible to soil liquefaction when subjected to a peak ground acceleration of 0.9g 
+corresponding to the Maximum Considered Earthquake (2,475-Year return period). 
+The lagoonal deposits generally were underlain by weathered limestone 
+formation beginning at a depth of about 13.4 meters extending down to the maximum 
+depth explored of about 28.5 meters below the ground surface. The weathered 
+limestone formation encountered was generally soft to medium hard. The consistency 
+and quality of the weathered limestone formation encountered varied with depth. 
+Groundwater was encountered in our boring at about 2.3 to 2.6 meters below the 
+ground surface at the time of our field exploration corresponding to about Elevation +0.6 
+to +0.9 meters. 
+Based on the subsurface conditions encountered in our borings and the 
+presence of potentially liquefiable lagoonal deposits, we recommend using 406-mm 
+square precast prestressed concrete piles with an allowable compressive load capacity 
+of 670 kN per pile to support the proposed warehouse structure. To develop the 
+recommended pile capacity of 670 kN, a pile embedment of approximately 26 meters 
+below the existing ground surface may be required. In addition, we anticipate subjecting 
+each of the piles to a lateral load of approximately 135 kN with a corresponding moment 
+demand of about 244 kN-meters due to seismic loading. Therefore, the piles will need to 
+be structurally reinforced to provide the proper bending strength to withstand the lateral 
+load and moment demands acting on the foundation elements. 
+100% Design Submittal Geotech Report - 08/19/2014
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 7014-00 
+GEOLABS, INC. 
+Page 11 
+Hawaii • California 
+Detailed discussions of our geotechnical recommendations for design of the 
+Dehumidified Supply Storage Warehouse facility are presented in the following sections 
+of this report. 
+3.1 
+Pile Foundations 
+The Dehumidified Supply Storage Warehouse will consist of a one-story 
+warehouse structure with a finished floor elevation of about +3.4 meters. Based on the 
+moderately heavy column loads and the presence of potentially liquefiable, loose 
+lagoonal deposits, we recommend using driven pile foundations deriving support from a 
+combination of skin friction and/or end-bearing in the weathered limestone formation to 
+support the warehouse structure. Based on the anticipated subsurface conditions, piles 
+extending through the upper fill soils, beach deposits, and potentially liquefiable 
+lagoonal deposits and embedded in the weathered limestone formation to a depth of 
+approximately 26 meters below the ground surface will be required to develop the 
+recommended capacity to support the warehouse structure. 
+3.1.1 Vertical Pile Capacity 
+Generally, we recommend using 406-mm square precast prestressed concrete 
+piles with an allowable compressive load capacity of 670 kN per pile to support 
+the warehouse building structure. The allowable compressive load capacity is for 
+supporting dead-plus-live loads and may be increased by one-third (1/3) for 
+transient loads, such as those caused by wind or seismic forces. 
+The piles would derive load supporting capacity from friction and/or end-bearing 
+in the weathered limestone formation. To develop the recommended pile 
+capacity of 670 kN, a pile embedment of approximately 26 meters below the 
+existing ground surface may be required. The recommended embedment depth 
+correlates to an estimated pile tip of about Elevation -23 meters. A minimum pile 
+spacing of 2.5 times the pile width center-to-center is recommended to avoid 
+reduction in pile capacity due to group action and to facilitate installation of the 
+displacement piles in groups. The following table summarizes the pile foundation 
+recommendations for the new building. 
+100% Design Submittal Geotech Report - 08/19/2014
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 7014-00 
+GEOLABS, INC. 
+Page 12 
+Hawaii • California 
+SUMMARY OF PILE FOUNDATIONS 
+Pile Size 
+Estimated 
+Pile Length 
+(meters) 
+Estimated 
+Tip Elevation 
+(meters) 
+Allowable 
+Compressive 
+Load Capacity 
+(kN) 
+406-mm Square 
+Precast Prestressed 
+Concrete 
+26.0 
+-23.0 
+670 
+Uplift loads may be resisted by a combination of the dead weight of the driven 
+pile and shear along the pile surface and the adjacent soils. In general, an uplift 
+load capacity of up to 350 kN per pile may be achieved for the piles. The uplift 
+load capacity provided above includes the weight of the pile. The uplift load 
+capacity of the piles provided is intended for transient load applications. 
+Therefore, the uplift load capacities should not be further increased for transient 
+load applications. For sustained uplift loads, we recommend reducing the uplift 
+load capacity provided above by 50 percent to resist sustained uplift loads. The 
+capacity of the pile member in tension should be checked by the project 
+structural engineer. 
+As indicated previously, the loose lagoonal deposits at the project site are 
+susceptible to liquefaction during a seismic event at the project site. Due to the 
+potential for soil liquefaction of the loose lagoonal deposits at the project site, 
+settlement of the loose lagoonal deposits will result in downdrag loading of the deep 
+foundations extending through the potentially liquefiable materials. Therefore, the 
+allowable compressive load capacity of the driven piles has been reduced by the 
+expected downdrag load in the pile foundation analyses. Based on our foundation 
+analyses, we estimate the downdrag load imposed on the vertical driven piles due 
+to the potential for liquefaction of the lagoonal deposits may be on the order of 
+about 265 kN per pile. We believe the downdrag load imposed on the pile 
+foundations due to soil liquefaction may be considered a transient load. 
+3.1.2 Lateral Load Resistance 
+Lateral loads imposed on the foundations may be resisted by a combination of 
+the resistance of the pile-soil system to deflect and passive pressure resistance 
+100% Design Submittal Geotech Report - 08/19/2014
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 7014-00 
+GEOLABS, INC. 
+Page 13 
+Hawaii • California 
+on the front side of pile caps and grade beams. For passive pressure resistance 
+on the front face of pile caps and grade beams, an equivalent fluid pressure of 
+70.7 kN per square meter per meter of depth may be used. Due to the potential 
+for seismically induced ground settlement by an average of 300 mm, the passive 
+earth pressure contribution from the upper 300 mm of the ground should be 
+neglected in the calculations. 
+Lateral load analyses were performed using the program LPILE-plus for 
+Windows, which is a microcomputer adaptation of a finite difference, laterally 
+loaded pile program originally developed at the University of Texas at Austin. The 
+program solves for deflection and bending moment along a pile under lateral 
+loads as a function of depth. The analysis was carried out with the use of 
+non-linear “p-y” curves to represent soil moduli. The lateral deflection was then 
+computed using the appropriate soil moduli at various depths. 
+Lateral loads (135 kN) acting at the top of the pile, lateral deflections, the 
+maximum induced moments, and the depths at which the maximum moments 
+occur in the piles are presented below. The lateral load analyses were conducted 
+based on two boundary conditions, where the tops of the piles are either free or 
+fixed against rotation. 
+SUMMARY OF LATERAL LOAD ANALYSIS 
+Lateral Load 
+(kN) 
+Pile 
+Head 
+Connection 
+Lateral 
+Deflection at 
+Top of Pile 
+(mm) 
+Depth to 
+Maximum 
+Moment 
+(meters) 
+Maximum 
+Induced 
+Moment 
+(kN-meter) 
+135 
+Free 
+46 
+2.1 
+244 
+135 
+Fixed 
+22 
+0 
+240 
+Analysis based on 406-mm Square, 26 meter long concrete piles with axial compression load of 
+670 kN. Top of pile assumed to be 0.6 meters below finished floor. Group action in the direction 
+of loading was considered in the analyses. 
+3.1.3 Pile Foundation Settlements 
+Settlements of the pile foundations will result primarily from elastic compression 
+of the pile member and subgrade response. We estimate the total static 
+settlement of the pile-supported foundations to be less than 13 mm with 
+differential settlements between columns supported on piles not exceeding about 
+100% Design Submittal Geotech Report - 08/19/2014
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 7014-00 
+GEOLABS, INC. 
+Page 14 
+Hawaii • California 
+6 mm. We believe that these settlements are essentially elastic and should occur 
+as the loads are applied. 
+3.1.4 Predrilling 
+Based on the subsurface conditions encountered, we do not anticipate the need 
+for predrilling at the pile locations to install the piles to the design tip elevations. 
+However, we anticipate some minor predrilling of the surface materials may be 
+needed to assist in setting the piles. Therefore, we recommend predrilling the pile 
+locations (if necessary) to a depth not deeper than 6 meters to facilitate setting of 
+the piles only. The required predrilling depths should be verified and/or modified 
+by Geolabs during the pile installation program, depending on the subsurface 
+conditions encountered and pile driving equipment used. 
+We wish to emphasize that the diameter of the predrilled holes should be limited 
+to approximately 400 to 500 mm to provide the driven piles with sufficient soil 
+contact for lateral load resistance. If an over-sized predrilled hole is encountered 
+during construction, the annular space between the pile and predrilled hole 
+should be backfilled with pea gravel or grouted with tremie concrete (or flowable 
+fill) to provide the recommended lateral load capacity. 
+3.1.5 Pile Hammer Selection 
+Based on our experience, we recommend using a pile driving hammer having a 
+maximum rated energy of about 54,000 N-meters to 108,000 N-meters (about 
+40,000 to 80,000 foot-pounds), such as a Delmag D30 diesel hammer, or a 
+Junttan HHK 5A hydraulic impact hammer, or similar pile driving hammers, to install 
+the piles. Wave equation analysis should be performed to demonstrate that the 
+proposed pile driving hammer and systems are capable of driving the piles to the 
+design tip elevations without overstressing or damaging the piles. To avoid 
+overstressing the piles during driving, plywood cushions with an uncompacted 
+(fresh) thickness of about 200 to 300 mm or some other equivalent cushion blocks 
+should be used at all times. 
+100% Design Submittal Geotech Report - 08/19/2014
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 7014-00 
+GEOLABS, INC. 
+Page 15 
+Hawaii • California 
+The hammer should be equipped with an energy level control such that driving 
+within the loose and/or soft soils may be controlled at a lower energy to reduce 
+tensile stress development, which could damage or cause cracking of the piles. 
+Determination of driving equipment to be used for this project should take into 
+consideration the “matching” of the pile hammer with the weight of the piles to be 
+driven. This will result in the pile hammer efficiently delivering the required 
+energy to the top of the pile and also reducing damage to the piles. Geolabs 
+should review the pile driving equipment proposed to evaluate if the equipment is 
+capable of installing the piles to the recommended capacity. The contractor 
+should forward pile and driving equipment data forms to Geolabs prior to 
+construction for evaluation. Geolabs should review the information and assess 
+the driveability of piles with the use of the selected hammer. 
+3.1.6 Pile Driving Criteria 
+In general, the 406-mm square precast, prestressed concrete piles should be 
+driven full depth to the estimated tip elevation of about -23 meters or to a 
+termination criteria when the pile tip is within the weathered limestone formation. 
+Refusal criteria will be determined based on the pile driving conditions and the 
+actual hammer used for the project. The acceptability of piles reaching refusal 
+above the design tip elevations will need to be assessed on an individual basis 
+during the pile driving. 
+In general, each pile should be driven continuously without interruption. A pile may 
+be rejected or its design capacity may be reduced when the driving resistance is 
+interrupted for more than four hours and the pile cannot be driven to the required 
+depth and/or meeting the pile driving criteria. During soft driving, i.e., when the pile 
+tip is within loose and/or soft soils, the hammer stroke (or energy) should be 
+carefully controlled such that significant tensile stresses do not develop within the 
+pile. 
+Because variations in soil strength characteristics are likely to exist in the bearing 
+soils, the supporting capacity of each pile should be confirmed in the field by a 
+representative from our office during driving or a qualified field technician. It 
+100% Design Submittal Geotech Report - 08/19/2014
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 7014-00 
+GEOLABS, INC. 
+Page 16 
+Hawaii • California 
+should be noted that the pile design was developed from our pile analysis using 
+the field exploration data. A test pile program should be carried out to confirm our 
+pile design and to establish pile driving criteria. The production pile driving criteria 
+may be revised based on the test pile program. 
+3.1.7 Test Pile Program 
+Based on the project RFP documents, a test pile program will be required for the 
+project. In general, we recommend the test pile program consist of conducting 
+dynamic load testing using a Pile Driving Analyzer (PDA) to monitor the hammer 
+and drive system performance, assess pile installation stresses and integrity, as 
+well as to evaluate pile capacity.  
+Based on the foundation layout plan, we recommend performing dynamic load 
+testing using a PDA on the 16 test piles for the project. The test piles may be 
+incorporated into the actual foundation system upon the evaluation of the 
+dynamic load test results. When the final foundation plans are available, Geolabs 
+should be consulted for selection of the test pile locations. 
+Test piles should be cast at least 1.5 meters longer than the estimated pile length 
+to account for potential variation in the subsurface conditions. Therefore, the test 
+piles should be cast at a minimum length of 27.5 meters. In addition, the test pile 
+program should provide flexibility to allow for relocation of the test piles, as may 
+be deemed necessary by our office, to suit the conditions encountered during the 
+test pile driving. After the initial driving to the tip elevation, re-striking of the test 
+piles should be conducted as part of the test pile program. Re-striking of the test 
+piles using a PDA along with CAPWAP analyses should be conducted no earlier 
+than 72 hours after the initial driving. 
+3.2 
+Building Floor Slabs 
+Based on the potentially liquefiable lagoonal deposits encountered, seismically 
+induced ground settlements on the order of about 150 to 350 mm may be anticipated 
+due to a seismic event with an associated peak ground acceleration of 0.9g (Maximum 
+Considered Earthquake). Due to the potential for seismically induced ground 
+settlements, we recommend the ground floor slabs of the warehouse structure be 
+100% Design Submittal Geotech Report - 08/19/2014
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 7014-00 
+GEOLABS, INC. 
+Page 17 
+Hawaii • California 
+structurally supported on driven pile foundations to reduce the impact of the appreciable 
+seismically induced ground settlements on the ground floor slabs. 
+Because the warehouse structure floor slabs will be structurally supported, the 
+underlying slab subgrade below the ground floor slab would serve only as a form for 
+placement of the concrete slab. To provide a stable subgrade to serve as a form for the 
+reinforced concrete floor slab, we recommend the subgrade soil be scarified to a depth 
+of about 200 mm, moisture conditioned to above the optimum moisture content, and 
+recompacted to at least 95 percent relative compaction (per ASTM D1557). 
+For the underslab support, we recommend placing a minimum 100-mm thick 
+layer of cushion fill consisting of open-graded gravel (ASTM C33, No. 67 gradation) 
+below the slabs. The open-graded gravel cushion fill would serve as a capillary moisture 
+break. To reduce the potential for excess future moisture infiltration through the slab 
+and subsequent damage to floor coverings, an impervious moisture barrier should be 
+provided on top of the open-graded gravel cushion fill layer.  
+Exterior concrete walkways may be required for the proposed project. We 
+recommend providing a minimum 100-mm thick cushion layer of aggregate subbase 
+course below the slabs unless the slab subgrade exposes the existing granular fill. The 
+aggregate subbase course should consist of crushed aggregates compacted to at least 
+95 percent relative compaction. Construction joints should be provided at intervals equal 
+to the width of the walkways with expansion joints at right-angle intersections. 
+3.3 
+Transformer Pad and Other Slabs-On-Grade 
+Based on the subsurface conditions and the minimal grading work anticipated, 
+we envision the new concrete slabs-on-grade likely will bear on the on-site coralline 
+soils and/or select granular fill materials; therefore, we believe a conventional 
+slab-on-grade design may be utilized for the on-grade structures. However, if loose soils 
+are encountered at the subgrade level, these soils should be over-excavated and 
+replaced with select granular fill materials compacted to a minimum of 95 percent 
+relative compaction. 
+100% Design Submittal Geotech Report - 08/19/2014
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 7014-00 
+GEOLABS, INC. 
+Page 18 
+Hawaii • California 
+Where the slabs will be subjected to equipment vibration and/or vehicular traffic, 
+we recommend placing the floor slab over 150 mm of aggregate subbase. The 
+aggregate subbase should consist of crushed basaltic aggregates compacted to a 
+minimum of 95 percent relative compaction. For the design of structural slabs supported 
+on the aggregate subbase, a modulus of subgrade reaction of 95,000 kN/m3 (350 pci) 
+may be used for the compacted aggregate subbase. Where slabs are intended to 
+function as rigid pavements, a minimum slab thickness of 150 mm may be used for 
+preliminary design purposes. Provisions should be made for proper load transfer across 
+the slab joints that will be subjected to vehicular traffic. The thickened edges of slabs 
+adjacent to unpaved areas should be embedded at least 300 mm below the lowest 
+adjacent grade. 
+It should be emphasized that the areas adjacent to the slabs should be backfilled 
+tightly against the edges of the slabs with low expansion, relatively impervious soils. 
+These areas also should be graded to divert water away from the slabs and to reduce 
+the potential for water ponding around the slabs and foundations. 
+3.4 
+Sewer Lift Station 
+We understand the existing sewer lift station within the new warehouse building 
+footprint will need to be relocated to a new location. The sewer lift station will have a 
+bottom invert of about 2.5 meters below the existing ground level. Based on the borings 
+drilled for the project, loose lagoonal deposits and groundwater likely will be 
+encountered at or near the invert elevation of the sewer lift station. Due to the potential 
+for presence of loose soils at the bottom of the sewer lift station, we recommend placing 
+a subgrade stabilization layer consisting of 600 mm of open-graded gravel (ASTM C33, 
+No. 57 or No. 67 gradation) wrapped in a non-woven filter fabric (Mirafi 180N or 
+equivalent) to provide support for the sewer lift station base structure. The stabilization 
+layer also should extend beyond the sides of the sewer lift station base by a minimum of 
+500 mm.  
+An allowable bearing pressure of up to 95 kPa (kilopascals) may be used to 
+design the sewer lift station base foundation bearing on the stabilization layer. The 
+100% Design Submittal Geotech Report - 08/19/2014
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 7014-00 
+GEOLABS, INC. 
+Page 19 
+Hawaii • California 
+bearing value provided is for supporting dead-plus-live loads and may be increased by 
+one-third (1/3) for transient loads, such as those caused by seismic forces. 
+The sewer lift station structure should be designed to resist the lateral earth 
+pressure due to adjacent soil and surcharge effects. The recommended lateral earth 
+pressures, expressed in equivalent fluid pressures of kilonewtons per square meter per 
+meter of depth (kN/m3), are presented in the following table. 
+LATERAL EARTH PRESSURES FOR DESIGN OF SEWER LIFT STATION 
+Groundwater Condition 
+At-Rest 
+(kN/m3) 
+Above  
+9.4 
+Below 
+14.1 
+Note:  Static groundwater may be assumed at Elevation +0.9 meters for design purposes 
+The values provided assume that open-graded gravel (ASTM C33, No. 57 or 
+No. 67 gradation) wrapped in a non-woven filter fabric (below the groundwater level) 
+and on-site soils (above the groundwater level) will be used to backfill behind the lift 
+station walls. It is assumed that the backfill behind walls will be compacted to between 
+90 and 95 percent relative compaction. Over-compaction of the backfill should be 
+avoided. 
+Surcharge stresses due to areal surcharges, line loads, and point loads within a 
+horizontal distance equal to the depth of the sewer lift station should be considered in 
+the design. For uniform surcharge stresses imposed on the sewer lift station, a 
+rectangular distribution with uniform pressure equal to 50 percent of the vertical 
+surcharge pressure acting on the entire height of the structure may be used in design. 
+Additional analyses during design may be needed to evaluate the surcharge effects of 
+point loads and line loads. 
+3.5 
+Earthwork 
+Based on the current design concept and the existing topography, we anticipate 
+only minor site grading and earthwork consisting of cuts and fills of about 0.5 meters or 
+less would be required for construction of the project. In addition, utility trench 
+100% Design Submittal Geotech Report - 08/19/2014
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 7014-00 
+GEOLABS, INC. 
+Page 20 
+Hawaii • California 
+excavation and backfilling of up to about 2.5 meters may be required. Items of 
+earthwork that are addressed in the following subsections include the following: 
+Site Preparation;  
+Fills and Backfills; 
+Fill Placement and Compaction Requirements. 
+A Geolabs representative or a qualified geotechnical engineer experienced with 
+the local soil and/or rock materials should observe the earthwork construction for the 
+project. It is important that our representative or qualified geotechnical engineer observe 
+the site preparation to evaluate whether undesirable materials are encountered during 
+the excavation and filling process and whether the exposed soil and/or rock conditions 
+are similar to those encountered and assumed in the design. 
+3.5.1 Site Preparation 
+At the on-set of earthwork, areas within the contract grading limits should be 
+thoroughly cleared. Vegetation, debris, and other unsuitable materials should be 
+removed and disposed properly off-site to reduce the potential for contamination of 
+the excavated materials designated to be reused as fill and/or backfill. If soft or wet 
+soils are encountered during clearing, over-excavation may be required to remove 
+the soft or wet materials to expose firm and/or dense soils. The resulting over-
+excavation should be backfilled with compacted fill material. 
+Existing utilities to be abandoned should be removed, and the resulting excavation 
+should be properly backfilled with granular fill material placed in 200-mm loose lifts 
+and compacted to a minimum of 90 percent relative compaction. 
+After demolition and site clearing, the exposed subgrade should be scarified to a 
+minimum depth of 200 mm, moisture-conditioned to above the optimum moisture 
+content, and compacted to a minimum of 90 percent relative compaction. Relative 
+compaction refers to the in-place dry density of soil expressed as a percentage of 
+the maximum dry density of the same soil determined in accordance with 
+ASTM D1557. Optimum moisture is the water content (percentage by dry weight) 
+corresponding to the maximum dry density. 
+100% Design Submittal Geotech Report - 08/19/2014
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 7014-00 
+GEOLABS, INC. 
+Page 21 
+Hawaii • California 
+3.5.2 Fills and Backfills 
+In general, the excavated on-site granular soils may be re-used as a source of fill 
+materials above the groundwater level (Elevation +0.9 meters), provided they meet 
+the requirements stated below. Because of the relatively shallow groundwater and 
+the proximity to the shoreline, drying or aeration of the excavated materials may be 
+required prior to their use as compacted fills. Therefore, a drying area should be 
+designated for the stockpiling of the usable excavated granular materials. Due to 
+the porous nature of the coralline deposits, we believe that the time required for the 
+aeration of the excavated materials should be relatively short, on the order of about 
+3 to 5 days, depending on the weather conditions and the thickness of the 
+stockpile. Some aeration of the stockpile material likely will be necessary in order to 
+reuse the excavated materials as compacted fills. 
+Excavated on-site or imported materials to be used as fill and backfill should consist 
+of crushed limestone and/or coral. The material should be well-graded from coarse 
+to fine with particles no larger than 75 mm in largest dimension. In addition, the fill 
+material should contain 10 to 30 percent fines (particles passing the No. 200 sieve). 
+The material should have a CBR value of 20 or more and a swell value of 1 percent 
+or less when tested in accordance with ASTM D1883. 
+In general, drain rock fill consisting of relatively clean, free-draining granular fill 
+material (50 mm maximum size granular materials) may be used for backfill placed 
+below about Elevation +0.6 to +0.9 meters due to the presence of groundwater 
+unless efforts are made to dewater the excavations to enable compaction of 
+standard backfill materials. 
+Where imported fill material will be required, the imported fill material should 
+conform to the requirements presented above for fill and backfill and should be 
+tested to confirm that it is suitable for the intended purpose prior to delivery to the 
+site. 
+3.5.3 Fill Placement and Compaction Requirements 
+As indicated above, fills and/or backfills below the water level should consist of 
+free-draining granular materials, such as the surge rock or drain rock fill, as 
+100% Design Submittal Geotech Report - 08/19/2014
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 7014-00 
+GEOLABS, INC. 
+Page 22 
+Hawaii • California 
+recommended above. Mechanical compaction of these materials will not be 
+required during placement. However, densification by pounding the material with 
+the bucket of a backhoe, track-walking or by other acceptable means should be 
+done in a consistent manner during placement. The last lift of the material above 
+the water level should be proof-rolled a minimum of eight passes with the use of a 
+vibratory plate or similar equipment prior to the placement of the non-woven 
+geotextile fabric, such as Mirafi 180N or equivalent, and capping with compacted fill 
+to the finished subgrade. 
+Granular fills and backfills above the water level should be placed in relatively level 
+lifts not exceeding 200 mm in loose thickness, moisture-conditioned to above the 
+optimum moisture content, and compacted to a minimum of 95 percent relative 
+compaction. Relative compaction refers to the in-place dry density of soil expressed 
+as a percentage of the maximum dry density of the same soil determined in 
+accordance with ASTM D1557. Optimum moisture is the water content (percentage 
+by dry weight) corresponding to the maximum dry density. 
+3.6 
+Utility Trenches 
+We envision new underground utilities, such as sewer, drainage, water, and 
+electrical lines, will be required for the project. In general, we recommend providing 
+granular bedding consisting of 150 mm of free-draining materials, such as bedding sand 
+or open-graded gravel (ASTM C33, No. 67 gradation), below the pipes for uniform 
+support.  
+If loose and/or soft soils are encountered at the proposed inverts, an additional 
+300 to 450 mm of open-graded gravel (ASTM C33, No. 67 gradation) wrapped in a 
+non-woven geotextile fabric (Mirafi 180N or equivalent) may be necessary below the 
+bedding material to form a bridging layer. Free-draining granular materials, such as 
+bedding sand or open-graded gravel (ASTM C33, No. 67 gradation), also should be 
+used for the initial trench backfill (pipe cover) up to about 300 mm above the crown of 
+the pipes or the top of the groundwater level to provide adequate support around the 
+pipes and to reduce the need for substantial effort in compacting the backfill, thus 
+reducing the potential for damage to the pipes. 
+100% Design Submittal Geotech Report - 08/19/2014
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 7014-00 
+GEOLABS, INC. 
+Page 23 
+Hawaii • California 
+The trench backfill above the pipe cover or groundwater to the finished subgrade 
+or finished grade may consist of the excavated on-site soils. The backfill should be 
+moisture-conditioned to above the optimum moisture content, placed in maximum 
+200-mm level loose lifts, and mechanically compacted to not less than 90 percent 
+relative compaction to reduce the potential for appreciable future ground subsidence. 
+Where trenches are located in the pavement areas, the upper 0.9 meters of the trench 
+backfill below the pavement grade should be compacted to at least 95 percent relative 
+compaction. 
+3.7 
+Pavement Design 
+We understand new flexible pavements will be utilized for the driveway 
+surrounding the warehouse building and parking lot to the north of the warehouse 
+building. Based on Section G20 of the Project Program contained in the RFP 
+documents, the anticipated daily traffic for pavement design over a design life of 
+20 years is as follows: 
+30 Passenger Vehicles 
+10 Single Unit Trucks 
+10 HS-20 Trucks 
+Based on the daily traffic provided, we have determined a Design Index (DI) of 4 
+for the driveway surrounding the warehouse building and the parking lot. The pavement 
+analysis for this project was performed in general accordance with the U.S. Army Corps 
+of Engineer’s pavement design software, Pavement-Transportation Computer Assisted 
+Structural Engineering (PCASE). Results of the flexible pavement design are as follows: 
+Flexible Pavement Section 
+  50-mm Asphaltic Concrete 
+150-mm Aggregate Base Course (100 Percent Relative Compaction) 
+200-mm Total Pavement Thickness on Moist Compacted Subgrade 
+Generally, the pavement subgrades should be scarified to a depth of about 
+200 mm, moisture-conditioned to above the optimum moisture, and compacted to a 
+minimum of 95 percent relative compaction. The aggregate base course (minimum CBR 
+value of 80) should consist of crushed aggregates compacted to at least 100 percent 
+100% Design Submittal Geotech Report - 08/19/2014
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 7014-00 
+GEOLABS, INC. 
+Page 24 
+Hawaii • California 
+relative compaction. CBR and field density tests should be performed on the actual 
+subgrade soils encountered during construction to confirm the adequacy of the above 
+section. 
+Paved areas should be sloped, and drainage gradients should be maintained to 
+carry surface water off-site. Surface water ponding should not be allowed on-site during 
+or after construction. Where concrete curbs are used to isolate landscaping in or 
+adjacent to the pavement areas, we suggest the curbs extend a minimum of 50 mm into 
+the subgrade soil below the aggregate base course layer to reduce the potential for 
+migration of excessive landscape water into the pavement section. 
+3.8 
+Percolation Tests 
+We evaluated the in-situ infiltration characteristics of the near-surface materials 
+at the Dehumidified Supply Storage Warehouse project site by performing two field 
+percolation tests near the two proposed infiltration basin locations. The field percolation 
+test results are presented in the following table. 
+SUMMARY OF PERCOLATION TESTS 
+Boring No. 
+Ground 
+Elevation 
+(meters) 
+Test  
+Depth 
+(meters) 
+Infiltration 
+Rate 
+(inches/hour) 
+Infiltration 
+Rate 
+(mm/hour) 
+P-101 
++3.0 
+1.2 
+>2 
+>50 
+P-102 
++3.2 
+1.2 
+>2 
+>50 
+NOTES:  P-101 is located at Infiltration Basin No. 1 
+P-102 is located at Infiltration Basin No. 2 
+Based on the generally favorable infiltration characteristics of the near-surface 
+materials at the project site, an infiltration rate of 50 mm per hour may be used to design 
+the infiltration basins and the associated appurtenances.  
+3.9 
+Design Review 
+Preliminary and final drawings and specifications for the project should be 
+forwarded to Geolabs for review and written comments prior to construction. This review 
+is necessary to evaluate conformance of the plans and specifications with the intent of 
+100% Design Submittal Geotech Report - 08/19/2014
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 7014-00 
+GEOLABS, INC. 
+Page 25 
+Hawaii • California 
+the geotechnical recommendations provided herein. If this review is not made, Geolabs 
+cannot be held responsible for misinterpretation of our recommendations. 
+3.10 Services During Construction 
+Geolabs should provide geotechnical engineering services during construction. 
+The critical items of construction monitoring that require "Special Inspection" in 
+accordance with Section 1704.8 of the 2012 IBC include the following: 
+Observation of test pile installation program; and 
+Observation of production pile installation. 
+In addition, a Geolabs representative (or a qualified geotechnical engineer) 
+should monitor the other aspects of earthwork construction to observe compliance with 
+the intent of the design concepts, specifications, or recommendations and to expedite 
+suggestions for design changes that may be required in the event that subsurface 
+conditions differ from those anticipated at the time this report was prepared. The 
+recommendations provided in this report are contingent upon such observations. 
+If the actual exposed subsurface conditions encountered during construction are 
+different from those assumed or considered in this report, then appropriate 
+modifications to the design should be made. 
+END OF DISCUSSION AND RECOMMENDATIONS 
+100% Design Submittal Geotech Report - 08/19/2014
+W.O. 7014-00 
+GEOLABS, INC. 
+Page 26 
+Hawaii • California 
+SECTION 4.  LIMITATIONS 
+The analyses and recommendations presented in this report are based, in part, 
+upon information obtained from the borings drilled. Variations of the subsurface 
+conditions between and beyond the borings drilled may occur, and the nature and 
+extent of these variations may not become evident until construction is underway. If 
+variations then appear evident, it will be necessary to re-evaluate the recommendations 
+provided in this report. 
+The boring locations indicated in this report are approximate, having been taped 
+from existing visible features at the project site. Elevations noted on the borings were 
+based on interpolation between the contour lines shown on the topographic survey map. 
+The physical location and elevation of the borings should be considered accurate only 
+to the degree implied by the methods used. 
+The stratification lines shown on the graphic representations of the borings depict 
+the approximate boundaries between the soil and/or rock types and, as such, may 
+denote a gradual transition. Water level data from the boring were measured at the 
+times shown on the graphic representations and/or presented in the text of this report. 
+These data have been reviewed and interpretations made in the formulation of this 
+report. It should be noted that groundwater fluctuations may occur due to variation in 
+tides, rainfall, temperature, and other factors. 
+This report has been prepared for the exclusive use of Bulltrack-Watts A JV for 
+specific application to the design of the proposed Dehumidified Supply Storage 
+Warehouse project at Polaris Point within the Naval Base Guam at Apra Harbor in 
+accordance with generally accepted geotechnical engineering principles and practices. 
+No warranty is expressed or implied. 
+The owner/client should be aware that unanticipated soil and/or rock conditions 
+are encountered commonly during construction. Unforeseen subsurface conditions, 
+such as soft deposits, hard layers, cavities, or perched groundwater, may occur in 
+localized areas and may require additional probing or corrections in the field (which may 
+result in construction delays) to attain a properly constructed project. Therefore, a 
+100% Design Submittal Geotech Report - 08/19/2014
+SECTION 4. LIMITATIONS 
+W.O. 7014-00 
+GEOLABS, INC. 
+Page 27 
+Hawaii • California 
+sufficient contingency fund is recommended to accommodate these possible extra 
+costs. 
+This geotechnical engineering exploration conducted at the project site was not 
+intended to investigate the potential for presence of hazardous materials existing at the 
+site. It should be noted that the equipment, techniques, and personnel used to conduct 
+a geo-environmental exploration differ substantially from those applied in geotechnical 
+engineering. 
+END OF LIMITATIONS
+100% Design Submittal Geotech Report - 08/19/2014
+W.O. 7014-00 
+GEOLABS, INC. 
+Page 28 
+Hawaii • California 
+REFERENCES 
+Andrews, D. C. A. and Martin, G. R. (2000), “Criteria for Liquefaction of Silty Soils,” 
+12th World Congress on Earthquake Engineering, Auckland, New Zealand 
+Geo-Engineering & Testing Inc. Guam (2013), “Geotechnical Data Package, FY14 MCON 
+P-637, Dehumidified Supply Storage Facility, Polaris Point, U.S. Naval Base, Guam, Contract 
+No. N62742-09-D-0002, Task Order No. 34” September 6. 
+NCEER (1997), “Proceedings of the NCEER Workshop on Evaluation of Liquefaction 
+Resistance of Soils,” T.L. Youd and I.M. Idriss (Editors), Technical Report 
+NCEER-97-0022, NCEER, Buffalo, NY. 
+Reese, L.C., Wang, S.T., Isenhower, W.M., and Arrellaga, J.A. (2011).  LPILE Plus 
+6.0.19 for Windows:  A Program for the Analyzing Stress and Deformation of Individual 
+Piles and Drilled Shafts Under Lateral Loads.  Ensoft, Inc., Austin, Texas. 
+US Department of Defense (2005).  Soil Mechanics, UFC 3-220-10N, June. 
+US Department of Defense (2013).  Seismic Design for Buildings, UFC 3-310-04, June. 
+US Department of Defense (2013).  Structural Load Data, UFC 3-310-01, June. 
+International Code Council (2012), International Building Code. 
+US Army Construction Engineering Research Library (2007), Pavement-Transportation 
+Computer Assisted Structural Engineering (PCASE v2.09) 
+Youd, T.L. et al. (2001), “Liquefaction Resistance of Soils: Summary Report from the 
+1996 NCEER and 1998 NCEER/NSF Workshops on Evaluation of Liquefaction 
+Resistance of Soils,” Journal of Geotechnical and Geo-Environmental Engineering, 
+ASCE, Vol. 127, No. 10, October. 
+100% Design Submittal Geotech Report - 08/19/2014
+W.O. 7014-00 
+GEOLABS, INC. 
+Page 29 
+Hawaii • California 
+CLOSURE 
+The following plates and appendices are attached and complete this report: 
+Project Location Map .............................................................................................. Plate 1 
+Site Plan ................................................................................................................. Plate 2 
+Geology Map .......................................................................................................... Plate 3 
+Field Exploration ............................................................................................. Appendix A 
+Laboratory Tests ............................................................................................. Appendix B 
+Geotechnical Information from RFP Documents ............................................. Appendix C 
+--
+Respectfully submitted, 
+GEOLABS, INC. 
+By ______________________ 
+Robin M. Lim, P.E.
+   Vice President 
+RML:TR:as
+h:\7000_Series\7014-00.rl2.DSSW
+100% Design Submittal Geotech Report - 08/19/2014
+PLATES 
+100% Design Submittal Geotech Report - 08/19/2014
+DEHUMIDIFIED SUPPLY STORAGE WAREHOUSE 
+FY14 MCON PROJECT P-637 
+PROJECT LOCATION MAP
+PROJECT LOCATION
+GENERAL PROJECT LOCATION
+N
+ISLAND MAP
+NO SCALE
+POLARIS POINT, NAVAL BASE, GUAM
+JUNE 2014
+1: 24 000m
+DATE
+SCALE
+1
+7014-00
+DRAWN BY
+JRP
+W.O.
+PLATE
+N
+LOCKWOOD 
+TERRACE
+AGAT
+APRA HTS.
+YONA
+TALOFOFO
+INARAJAN
+MERIZO
+UMATAC
+PITI
+HAGATNA
+ORDOT
+MANGILAO
+BARRIGADA
+HAGATNA NAVAL AIR STA.
+DEDEDO
+YIGO
+OCEANVIEW
+ANDERSEN
+AIR FORCE
+BASE
+PHILIPPINE   SEA
+PACIFIC      OCEAN
+COCOS
+ISLAND
+SANTA 
+RITA
+CAD User: JJP  File Last Updated: June 27, 2014 3:22:16pm  Plot Date:  June 27, 2014 - 3:29:45pm
+File: T:\Drafting-9904\Working\7014-00DehumidifiedSupplyStorageWarehouse\7014-00PLM.dwg\PLM
+Plotter: DWG To PDF.pc3  Plotstyle: GEO-No-Dithering-Blue-Boring.ctb
+REFERENCE: U.S.G.S. MAP OF THE ISLAND OF GUAM(1968).
+km
+0
+1
+.5
+GRAPHIC SCALE
+km
+0
+1
+.5
+GRAPHIC SCALE
+km
+0
+1
+.5
+GRAPHIC SCALE
+km
+0
+1
+.5
+GRAPHIC SCALE
+100% Design Submittal Geotech Report - 08/19/2014
+SD-1
+SD-2
+SMH-5
+APPROXIMATE BORING LOCATION
+LEGEND:
+N
+7014-00
+DRAWN BY
+JRP
+1: 100m
+JUNE 2014
+SCALE
+DATE
+W.O.
+SITE PLAN
+2
+PLATE
+CAD User: JJP  File Last Updated: June 27, 2014 3:28:55pm  Plot Date:  June 30, 2014 - 11:52:21am
+File: T:\Drafting-9904\Working\7014-00DehumidifiedSupplyStorageWarehouse\7014-00SitePlan.dwg\SitePlan
+Plotter: DWG To PDF.pc3  Plotstyle: GEO-No-Dithering-RedBlue-Color.ctb
+REFERENCE: SITE PLAN AND TOPOGRAPHIC SURVEY MAP
+TRANSMITTED BY NAVFAC ON 6/27/14.
+DEHUMIDIFIED SUPPLY STORAGE WAREHOUSE 
+FY14 MCON PROJECT P-637 
+POLARIS POINT, NAVAL BASE, GUAM
+100 m
+0
+GRAPHIC SCALE
+50
+APPROXIMATE BORINGS IN RFP DOCUMENTS
+B-2
+B-3
+B-1
+B-101
+B-103
+B-102
+B-104
+P-102
+P-101
+100% Design Submittal Geotech Report - 08/19/2014
+GEOLOGY MAP
+AUGUST 2014
+1: 24 000
+DATE
+SCALE
+3
+7014-00
+DRAWN BY
+JRP
+W.O.
+PLATE
+CAD User: JJP  File Last Updated: August 18, 2014 2:00:54pm  Plot Date:  August 18, 2014 - 2:03:05pm
+File: T:\Drafting\Working\7014-00DehumidifiedSupplyStorageWarehouse\7014-00GeologyMap.dwg\GM
+Plotter: GEO-DWG To PDF.pc3  Plotstyle: GEO-No-Dithering.ctb
+LEGEND:
+REFERENCE: GEOLOGIC MAP OF APRA HARBOR QUADRANGLE, GUAM
+BY H.G. SIEGRIST, JR. AND MARK K. REAGAN (2007).
+Qaf          ARTIFICIAL FILL
+Qal          ALLUVIUM (QUATERNARY)
+QTmr      REEF FACIES (PLIOCENE AND PLEISTOCENE)
+QTma      HAGATNA ARGILLACEOUS MEMBER
+               (PLIOCENE AND PLEISTOCENE)
+km
+0
+1
+.5
+GRAPHIC SCALE
+DEHUMIDIFIED SUPPLY STORAGE WAREHOUSE
+FY14 MCON PROJECT P-637
+POLARIS POINT, NAVAL BASE, GUAM
+100% Design Submittal Geotech Report - 08/19/2014
+APPENDIX A 
+100% Design Submittal Geotech Report - 08/19/2014
+W.O. 7014-00 
+GEOLABS, INC. 
+AUGUST 2014     Page A-1 
+Hawaii • California 
+A P P E N D I X   A 
+Field Exploration 
+The subsurface conditions at the project site were explored by drilling and sampling 
+four borings, designated as Boring Nos. 101 through 104, extending to depths of about 
+20.9 to 28.5 meters below the existing ground surface. The borings were drilled with a 
+truck-mounted drill rig equipped with 200-mm hollow stem augers and rotary-wash 
+methods. In addition, two shallow borings (designated as P-101 and P-102) were drilled to 
+evaluate and determine the infiltration characteristics of the near-surface materials for 
+design of storm water management systems. The borings were drilled at the approximate 
+locations shown on the Site Plan, Plate 2. 
+Our engineer classified the materials encountered in the borings by visual and 
+textural examination in the field in general accordance with ASTM D2488, Standard 
+Practice for Description and Identification of Soils, and monitored the drilling operations on 
+a near-continuous (full-time) basis. These classifications were further reviewed visually 
+and by testing in the laboratory. Soils were classified in general accordance with 
+ASTM D2487, Standard Practice for Classification of Soils for Engineering Purposes 
+(Unified Soil Classification System), as shown on the Soil Log Legend, Plate A-0.1. 
+Graphic representations of the materials encountered are presented on the 
+Logs of Borings, Plates A-1 thru A-6. 
+The majority of the soil samples were obtained from the drilled borings in general 
+accordance with ASTM D1586, Penetration Test and Split-Barrel Sampling of Soils, by 
+driving a 50-mm (2-inch) OD standard penetration sampler using a 63.5-kg (140-pound) 
+hammer falling 460 mm (30 inches). In addition, some relatively “undisturbed” soil samples 
+were obtained in general accordance with ASTM D3550, Ring-Lined Barrel Sampling of 
+Soils, by driving a 75-mm (3-inch) OD modified California sampler with the same hammer 
+and drop. The blow counts needed to drive the sampler the second and third 152 mm 
+(6 inches) of a 460-mm (18-inch) drive are shown as the “Penetration Resistance” on the 
+Logs of Borings at the appropriate sample depths. The penetration resistance shown on 
+the logs of borings indicates the number of blows required for the specific sampler type 
+used. The blow counts may need to be factored to obtain the Standard Penetration Test 
+(SPT) blow counts. 
+Please note that the efficiency of the safety hammer used for this project was 
+measured recently. Hammer calibration tests were performed on the Mobile B-61 
+automatic trip safety hammer in March 2014 for another nearby project. The energy data 
+was analyzed, and the results indicate an energy transfer ratio of 88% (average of 87.1% 
+and 89.2%) may be used for the automatic trip safety hammer assembly. 
+100% Design Submittal Geotech Report - 08/19/2014
+A-0.1
+UNCONSOLIDATED UNDRAINED
+TRIAXIAL COMPRESSION (kPa)
+MORE THAN 50%
+OF COARSE
+FRACTION
+RETAINED ON
+NO. 4 (4.76 mm)
+SIEVE
+50% OR MORE OF
+COARSE FRACTION
+PASSING
+THROUGH NO. 4
+(4.76 mm) SIEVE
+MORE THAN 50%
+OF MATERIAL
+RETAINED ON NO.
+200 (0.074 mm)
+SIEVE
+50% OR MORE OF
+MATERIAL PASSING
+THROUGH NO. 200
+(0.074 mm) SIEVE
+TORVANE SHEAR (kPa)
+(50-mm) O.D. STANDARD PENETRATION TEST
+POCKET PENETROMETER (kPa)
+UNCONFINED COMPRESSION (kPa)
+(75-mm) O.D. MODIFIED CALIFORNIA SAMPLE
+INORGANIC SILTS AND VERY FINE SANDS,
+ROCK FLOUR, SILTY OR CLAYEY FINE SANDS
+OR CLAYEY SILTS WITH SLIGHT PLASTICITY
+POORLY-GRADED GRAVELS, GRAVEL-SAND
+MIXTURES, LITTLE OR NO FINES
+CLAYEY GRAVELS, GRAVEL-SAND-CLAY
+MIXTURES
+WELL-GRADED SANDS, GRAVELLY SANDS,
+LITTLE OR NO FINES
+POORLY-GRADED SANDS, GRAVELLY
+SANDS, LITTLE OR NO FINES
+SILTY SANDS, SAND-SILT MIXTURES
+CLAYEY SANDS, SAND-CLAY MIXTURES
+LIQUID LIMIT
+50 OR MORE
+CH
+NOTE: DUAL SYMBOLS ARE USED TO INDICATE BORDERLINE SOIL CLASSIFICATIONS
+MH
+SILTS
+AND
+CLAYS
+SILTS
+AND
+CLAYS
+LIQUID LIMIT
+LESS THAN 50
+USCS
+TYPICAL
+DESCRIPTIONS
+GW
+MORE THAN 12%
+FINES
+WATER LEVEL OBSERVED IN BORING OVERNIGHT
+HIGHLY ORGANIC SOILS
+SILTY GRAVELS, GRAVEL-SAND-SILT
+MIXTURES
+OL
+PEAT, HUMUS, SWAMP SOILS WITH HIGH
+ORGANIC CONTENTS
+INORGANIC CLAYS OF LOW TO MEDIUM
+PLASTICITY, GRAVELLY CLAYS, SANDY
+CLAYS, SILTY CLAYS, LEAN CLAYS
+Soil Log Legend
+ORGANIC CLAYS OF MEDIUM TO HIGH
+PLASTICITY, ORGANIC SILTS
+SC
+Plate
+GM
+FINE-
+GRAINED
+SOILS
+COARSE-
+GRAINED
+SOILS
+CLEAN SANDS
+SANDS WITH
+FINES
+SP
+SANDS
+GRAVELS
+WELL-GRADED GRAVELS,  GRAVEL-SAND
+MIXTURES, LITTLE OR NO FINES
+ML
+CL
+OH
+LESS THAN 5%
+FINES
+GRAVELS WITH
+FINES
+CLEAN
+GRAVELS
+GRAB SAMPLE
+PLASTICITY INDEX (NP=NON-PLASTIC)
+UC
+TV
+UU
+PEN
+LEGEND
+WATER LEVEL OBSERVED IN BORING AT TIME OF
+DRILLING
+WATER LEVEL OBSERVED IN BORING AFTER DRILLING
+SM
+MAJOR DIVISIONS
+GP
+MORE THAN 12%
+FINES
+PT
+LESS THAN 5%
+FINES
+UNIFIED SOIL CLASSIFICATION SYSTEM (USCS)
+ORGANIC SILTS AND ORGANIC SILTY
+CLAYS OF LOW PLASTICITY
+SW
+GC
+INORGANIC SILT, MICACEOUS OR
+DIATOMACEOUS FINE SAND OR SILTY
+SOILS
+INORGANIC CLAYS OF HIGH PLASTICITY
+PI
+LL
+CORE SAMPLE
+SHELBY TUBE SAMPLE
+LIQUID LIMIT (NP=NON-PLASTIC)
+GEOLABS, INC.
+Geotechnical Engineering
+LOG LEGEND FOR SOIL  7014-00.GPJ  GEOLABS.GDT  6/30/14
+100% Design Submittal Geotech Report - 08/19/2014
+A-0.2
+ROCK DESCRIPTIONS
+Plate
+BRECCIA
+CLINKER
+COBBLES
+CORAL
+BASALT
+ROCK DESCRIPTION SYSTEM
+Greater than 24 inches apart
+12 to 24 inches apart
+6 to 12 inches apart
+3 to 6 inches apart
+Less than 3 inches apart
+Rock shows no sign of discoloration or loss of strength.
+Slight discoloration inwards from open fractures.
+Discoloration throughout and noticeably weakened though not able to break by hand.
+Most minerals decomposed with some corestones present in residual soil mass. Can be broken by hand.
+Saprolite. Mineral residue completely decomposed to soil but fabric and structure preserved.
+The following terms describe general fracture spacing of a rock:
+The following terms describe the chemical weathering of a rock:
+ROCK FRACTURE CHARACTERISTICS
+DEGREE OF WEATHERING
+HARDNESS
+BOULDERS
+VOID/CAVITY
+TUFF
+SILTSTONE
+LIMESTONE
+FINGER CORAL
+Unweathered:
+Slightly Weathered:
+Moderately Weathered:
+Highly Weathered:
+Extremely Weathered:
+Very Hard:
+Hard:
+Medium Hard:
+Soft:
+Very Soft:
+SANDSTONE
+Massive:
+Slightly Fractured:
+Moderately Fractured:
+Closely Fractured:
+Severely Fractured:
+Rock Log Legend
+The following terms describe the resistance of a rock to indentation or scratching:
+Specimen breaks with difficulty after several "pinging" hammer blows.
+Example: Dense, fine grain volcanic rock
+Specimen breaks with some difficulty after several hammer blows.
+Example: Vesicular, vugular, coarse-grained rock
+Specimen can be broked by one hammer blow. Cannot be scraped by knife. SPT may penetrate by
+~25 blows per inch with bounce.
+Example: Porous rock such as clinker, cinder, and coral reef
+Can be indented by one hammer blow. Can be scraped or peeled by knife. SPT can penetrate by
+~100 blows per foot.
+Example: Weathered rock, chalk-like coral reef
+Crumbles under hammer blow. Can be peeled and carved by knife. Can be indented by finger
+pressure.
+Example: Saprolite
+GEOLABS, INC.
+Geotechnical Engineering
+LOG LEGEND FOR ROCK  7014-00.GPJ  GEOLABS.GDT  6/30/14
+100% Design Submittal Geotech Report - 08/19/2014
+36
+24
+13
+5
+7
+21
+25
+11
+98
+Sieve
+- #200 =
+10.7%
+- #200 =
+14.2%
+Sieve
+- #200 =
+13.8%
+Sieve
+- #200 =
+22.0%
+14
+9
+41
+37
+26
+17
+25
+16
+1423
+1521
+SP-
+SM
+SP
+SP-
+SM
+GM
+SM
+GM
+Light brown with white mottling GRAVELLY SAND
+(CORALLINE) with a little silt, medium dense,
+moist (fill)
+grades to dense
+Light tan with white mottling GRAVELLY SAND
+(CORALLINE), medium dense, moist (beach
+deposit)
+Light tan with white mottling GRAVELLY SAND
+(CORALLINE) with a little silt, loose (beach
+deposit)
+Light gray SILTY GRAVEL (CORALLINE) with
+some sand (coralline), loose (lagoonal deposit)
+grades to loose to medium dense
+grades to medium dense
+grades to dense, with weak cementation
+Light gray SILTY SAND with some gravel,
+uncemented medium dense (lagoonal deposit)
+Gray with white mottling SILTY GRAVEL
+(CORALLINE) with some sand  (coralline), very
+dense (lagoonal deposit)
+Field
+May 19, 2014
+May 16, 2014
+T. Roy
+20.9 meters
+7014-00
+USCS
+Depth (meters)
+Water Level:
+Penetration
+Resistance
+(blows/0.30m)
+Approximate Ground Surface
+Elevation : N/A
+Sample
+Dry Density
+(kg/m
+3)
+Description
+RQD (%)
+A - 1.1
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(kPa)
+B-101
+MOBILE B-61
+200-mm Hollow Stem Auger & Rotary Wash
+63.5 kg wt., 0.76 m drop
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Moisture
+Content (%)
+Core
+Recovery (%)
+Laboratory
+GEOLABS, INC.
+Geotechnical Engineering
+FY14 MCON PROJECT P-637
+DEHUMIDIFIED SUPPLY STORAGE WAREHOUSE
+POLARIS POINT, NAVAL BASE, GUAM
+BORING_LOG  7014-00.GPJ  GEOLABS.GDT  8/19/14
+2.35 m.   05/19/2014 1444 HRS
+100% Design Submittal Geotech Report - 08/19/2014
+13
+31
+22
+50/
+100-mm
+37
+69
+Sieve
+- #200 =
+12.0%
+- #200 =
+9.0%
+32
+19
+24
+54
+13
+12
+1456
+2049
+GM
+GP-
+GM
+SP-
+SM
+Light gray SANDY GRAVEL (CORALLINE) with a
+little silt, medium dense (coralline detritus)
+grades to dense
+Light gray GRAVELLY SAND (CORALLINE) with a
+little silt, medium dense (lagoonal deposit)
+White LIMESTONE, hard to very hard (coralline
+limestone)
+grades to grayish white with yellowish white
+mottling, and medium hard to hard
+grades to gray with white mottling
+Field
+May 19, 2014
+May 16, 2014
+T. Roy
+20.9 meters
+7014-00
+USCS
+Depth (meters)
+Water Level:
+Penetration
+Resistance
+(blows/0.30m)
+Sample
+Dry Density
+(kg/m
+3)
+Description
+RQD (%)
+A - 1.2
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(kPa)
+B-101
+MOBILE B-61
+200-mm Hollow Stem Auger & Rotary Wash
+63.5 kg wt., 0.76 m drop
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Moisture
+Content (%)
+Core
+Recovery (%)
+(Continued from previous plate)
+Laboratory
+GEOLABS, INC.
+Geotechnical Engineering
+FY14 MCON PROJECT P-637
+DEHUMIDIFIED SUPPLY STORAGE WAREHOUSE
+POLARIS POINT, NAVAL BASE, GUAM
+BORING_LOG  7014-00.GPJ  GEOLABS.GDT  8/19/14
+2.35 m.   05/19/2014 1444 HRS
+100% Design Submittal Geotech Report - 08/19/2014
+41
+15
+ Boring terminated at 20.9 meters
+Field
+May 19, 2014
+May 16, 2014
+T. Roy
+20.9 meters
+7014-00
+USCS
+Depth (meters)
+Water Level:
+Penetration
+Resistance
+(blows/0.30m)
+Sample
+Dry Density
+(kg/m
+3)
+Description
+RQD (%)
+A - 1.3
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(kPa)
+B-101
+MOBILE B-61
+200-mm Hollow Stem Auger & Rotary Wash
+63.5 kg wt., 0.76 m drop
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Moisture
+Content (%)
+Core
+Recovery (%)
+(Continued from previous plate)
+Laboratory
+GEOLABS, INC.
+Geotechnical Engineering
+FY14 MCON PROJECT P-637
+DEHUMIDIFIED SUPPLY STORAGE WAREHOUSE
+POLARIS POINT, NAVAL BASE, GUAM
+BORING_LOG  7014-00.GPJ  GEOLABS.GDT  8/19/14
+2.35 m.   05/19/2014 1444 HRS
+100% Design Submittal Geotech Report - 08/19/2014
+21
+11
+19
+6
+4
+8
+30
+2
+1
+Sieve
+- #200 =
+6.1%
+Sieve
+- #200 =
+5.8%
+Sieve
+- #200 =
+10.0%
+LL=NP
+PI=NP
+LL=NP
+PI=NP
+Sieve
+- #200 =
+18.4%
+Sieve
+4
+8
+20
+30
+33
+24
+24
+29
+36
+1213
+1660
+SP-
+SM
+SP
+SP-
+SM
+SW-
+SM
+SP-
+SM
+GM
+GP-
+GM
+Light brown with white mottling GRAVELLY SAND
+(CORALLINE) with a little silt and traces of roots,
+medium dense, moist (topsoil)
+Light tan with white mottling GRAVELLY SAND
+(CORALLINE), medium dense, moist (beach
+deposit)
+Light tan GRAVELLY SAND (CORALLINE) with a
+little silt, medium dense, moist (beach deposit)
+grades to loose
+Light gray GRAVELLY SAND with a little silt, loose
+(lagoonal deposit)
+Light gray GRAVELLY SAND with a little silt,
+medium dense (lagoonal deposit)
+Light gray SILTY GRAVEL with some sand, very
+loose
+Gray SANDY GRAVEL with a little silt, very loose
+(lagoonal deposit)
+Field
+May 16, 2014
+May 19, 2014
+T. Roy
+27.0 meters
+7014-00
+USCS
+Depth (meters)
+Water Level:
+Penetration
+Resistance
+(blows/0.30m)
+Approximate Ground Surface
+Elevation : N/A
+Sample
+Dry Density
+(kg/m
+3)
+Description
+RQD (%)
+A - 2.1
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(kPa)
+B-102
+MOBILE B-61
+200-mm Hollow Stem Auger & Rotary Wash
+63.5 kg wt., 0.76 m drop
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Moisture
+Content (%)
+Core
+Recovery (%)
+Laboratory
+GEOLABS, INC.
+Geotechnical Engineering
+FY14 MCON PROJECT P-637
+DEHUMIDIFIED SUPPLY STORAGE WAREHOUSE
+POLARIS POINT, NAVAL BASE, GUAM
+BORING_LOG  7014-00.GPJ  GEOLABS.GDT  8/19/14
+2.50 m.   05/16/2014 1348 HRS
+100% Design Submittal Geotech Report - 08/19/2014
+32
+10
+14
+42
+50/
+75-mm
+22
+- #200 =
+11.6%
+LL=NP
+PI=NP
+Sieve
+- #200 =
+18.0%
+40
+20
+39
+28
+GP-
+GM
+GM
+grades with cobbles (coralline), and to medium
+dense
+Gray SILTY GRAVEL with some sand, loose
+White LIMESTONE, medium hard to hard
+(coralline limestone)
+grades to hard to very hand
+grades to yellowish white, and soft to medium hard
+Field
+May 16, 2014
+May 19, 2014
+T. Roy
+27.0 meters
+7014-00
+USCS
+Depth (meters)
+Water Level:
+Penetration
+Resistance
+(blows/0.30m)
+Sample
+Dry Density
+(kg/m
+3)
+Description
+RQD (%)
+A - 2.2
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(kPa)
+B-102
+MOBILE B-61
+200-mm Hollow Stem Auger & Rotary Wash
+63.5 kg wt., 0.76 m drop
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Moisture
+Content (%)
+Core
+Recovery (%)
+(Continued from previous plate)
+Laboratory
+GEOLABS, INC.
+Geotechnical Engineering
+FY14 MCON PROJECT P-637
+DEHUMIDIFIED SUPPLY STORAGE WAREHOUSE
+POLARIS POINT, NAVAL BASE, GUAM
+BORING_LOG  7014-00.GPJ  GEOLABS.GDT  8/19/14
+2.50 m.   05/16/2014 1348 HRS
+100% Design Submittal Geotech Report - 08/19/2014
+38
+16
+22
+13
+28
+14
+17
+25
+28
+1825
+1551
+grades to very soft to soft
+ Boring terminated at 27.0 meters
+Field
+May 16, 2014
+May 19, 2014
+T. Roy
+27.0 meters
+7014-00
+USCS
+Depth (meters)
+Water Level:
+Penetration
+Resistance
+(blows/0.30m)
+Sample
+Dry Density
+(kg/m
+3)
+Description
+RQD (%)
+A - 2.3
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(kPa)
+B-102
+MOBILE B-61
+200-mm Hollow Stem Auger & Rotary Wash
+63.5 kg wt., 0.76 m drop
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Moisture
+Content (%)
+Core
+Recovery (%)
+(Continued from previous plate)
+Laboratory
+GEOLABS, INC.
+Geotechnical Engineering
+FY14 MCON PROJECT P-637
+DEHUMIDIFIED SUPPLY STORAGE WAREHOUSE
+POLARIS POINT, NAVAL BASE, GUAM
+BORING_LOG  7014-00.GPJ  GEOLABS.GDT  8/19/14
+2.50 m.   05/16/2014 1348 HRS
+100% Design Submittal Geotech Report - 08/19/2014
+36
+36
+41
+17
+6
+9
+25
+35
+2
+Sieve
+- #200 =
+4.9%
+Sieve
+- #200 =
+8.1%
+Sieve
+- #200 =
+5.5%
+- #200 =
+19.8%
+7
+7
+13
+21
+38
+28
+16
+20
+1282
+1123
+1277
+1702
+GP-
+GM
+SP
+SW
+CL
+SP-
+SM
+SM
+Gray with light brown mottling SANDY GRAVEL
+(CORALLINE) with a little silt, medium dense,
+moist (fill)
+Light tan with white mottling GRAVELLY SAND
+(CORALLINE) with cobbles (coralline), very
+dense, moist (beach deposit)
+grades to dense
+grades to medium dense
+Light tan SAND (CORALLINE) with traces of
+gravel (coralline) and silt, medium dense,
+saturated (beach deposit)
+grades to loose
+Bluish gray SANDY CLAY, medium stiff (lagoonal
+deposit)
+Bluish gray with white mottling GRAVELLY SAND
+(CORALLINE) with a little silt, loose (lagoonal
+deposit)
+grades to light gray, medium dense
+grades to dense
+Grayish tan SILTY SAND with some gravel,
+medium dense (coralline detritus)
+grades to very loose
+Field
+May 13, 2014
+May 14, 2014
+T. Roy
+28.5 meters
+7014-00
+USCS
+Depth (meters)
+Water Level:
+Penetration
+Resistance
+(blows/0.30m)
+Approximate Ground Surface
+Elevation : N/A
+Sample
+Dry Density
+(kg/m
+3)
+Description
+RQD (%)
+A - 3.1
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(kPa)
+B-103
+MOBILE B-61
+200-mm Hollow Stem Auger & Rotary Wash
+63.5 kg wt., 0.76 m drop
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Moisture
+Content (%)
+Core
+Recovery (%)
+Laboratory
+GEOLABS, INC.
+Geotechnical Engineering
+FY14 MCON PROJECT P-637
+DEHUMIDIFIED SUPPLY STORAGE WAREHOUSE
+POLARIS POINT, NAVAL BASE, GUAM
+BORING_LOG  7014-00.GPJ  GEOLABS.GDT  8/19/14
+2.50 m.   05/15/2014 1512 HRS
+100% Design Submittal Geotech Report - 08/19/2014
+9
+11
+14
+22
+37
+97
+Sieve
+- #200 =
+43.0%
+LL=NP
+PI=NP
+Sieve
+- #200 =
+19.0%
+- #200 =
+11.2%
+30
+29
+23
+16
+18
+11
+1703
+SM
+GM
+grades to medium dense
+Bluish gray SILTY GRAVEL (CORALLINE) with
+some sand  (coralline), loose (coral finger
+formation)
+grades to medium dense
+Light tannish white LIMESTONE, soft to medium
+hard (coralline limestone)
+grades to white, medium hard to hard
+Field
+May 13, 2014
+May 14, 2014
+T. Roy
+28.5 meters
+7014-00
+USCS
+Depth (meters)
+Water Level:
+Penetration
+Resistance
+(blows/0.30m)
+Sample
+Dry Density
+(kg/m
+3)
+Description
+RQD (%)
+A - 3.2
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(kPa)
+B-103
+MOBILE B-61
+200-mm Hollow Stem Auger & Rotary Wash
+63.5 kg wt., 0.76 m drop
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Moisture
+Content (%)
+Core
+Recovery (%)
+(Continued from previous plate)
+Laboratory
+GEOLABS, INC.
+Geotechnical Engineering
+FY14 MCON PROJECT P-637
+DEHUMIDIFIED SUPPLY STORAGE WAREHOUSE
+POLARIS POINT, NAVAL BASE, GUAM
+BORING_LOG  7014-00.GPJ  GEOLABS.GDT  8/19/14
+2.50 m.   05/15/2014 1512 HRS
+100% Design Submittal Geotech Report - 08/19/2014
+8
+15
+28
+22
+41
+30
+40
+22
+3
+12
+11
+16
+1134
+1862
+grades to light yellowish white, very soft to soft
+grades to very soft to soft
+grades to soft to medium hard
+ Boring terminated at 28.5 meters
+Field
+May 13, 2014
+May 14, 2014
+T. Roy
+28.5 meters
+7014-00
+USCS
+Depth (meters)
+Water Level:
+Penetration
+Resistance
+(blows/0.30m)
+Sample
+Dry Density
+(kg/m
+3)
+Description
+RQD (%)
+A - 3.3
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(kPa)
+B-103
+MOBILE B-61
+200-mm Hollow Stem Auger & Rotary Wash
+63.5 kg wt., 0.76 m drop
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Moisture
+Content (%)
+Core
+Recovery (%)
+(Continued from previous plate)
+Laboratory
+GEOLABS, INC.
+Geotechnical Engineering
+FY14 MCON PROJECT P-637
+DEHUMIDIFIED SUPPLY STORAGE WAREHOUSE
+POLARIS POINT, NAVAL BASE, GUAM
+BORING_LOG  7014-00.GPJ  GEOLABS.GDT  8/19/14
+2.50 m.   05/15/2014 1512 HRS
+100% Design Submittal Geotech Report - 08/19/2014
+17
+28
+12
+12
+3
+8
+30
+9
+1
+Sieve
+- #200 =
+12.2%
+- #200 =
+15.6%
+24
+9
+23
+21
+41
+26
+18
+19
+1154
+967
+1672
+GP-
+GM
+SP
+SM
+SM
+GM
+SM
+Light gray with brown mottling SANDY GRAVEL
+(CORALLINE) with a little silt, medium dense,
+moist (fill)
+Light brown with white mottling GRAVELLY SAND
+(CORALLINE), medium dense, moist (beach
+deposit)
+Light tan with white mottling SILTY
+SAND(CORALLINE) with some gravel
+(coralline), loose, saturated (beach deposit)
+Light gray SILTY SAND (CORALLINE) with some
+gravel  (coralline), very loose to loose (lagoonal
+deposit)
+grades to medium dense
+Light gray SILTY GRAVEL (CORALLINE) with
+some sand  (coralline), medium dense (lagoonal
+deposit)
+Tannish gray SILTY SAND (CORALLINE) with a
+little gravel  (coralline), very loose (lagoonal
+deposit)
+Field
+May 12, 2014
+May 13, 2014
+T. Roy
+28.5 meters
+7014-00
+USCS
+Depth (meters)
+Water Level:
+Penetration
+Resistance
+(blows/0.30m)
+Approximate Ground Surface
+Elevation : N/A
+Sample
+Dry Density
+(kg/m
+3)
+Description
+RQD (%)
+A - 4.1
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(kPa)
+B-104
+MOBILE B-61
+200-mm Hollow Stem Auger & Rotary Wash
+63.5 kg wt., 0.76 m drop
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Moisture
+Content (%)
+Core
+Recovery (%)
+Laboratory
+GEOLABS, INC.
+Geotechnical Engineering
+FY14 MCON PROJECT P-637
+DEHUMIDIFIED SUPPLY STORAGE WAREHOUSE
+POLARIS POINT, NAVAL BASE, GUAM
+BORING_LOG  7014-00.GPJ  GEOLABS.GDT  8/19/14
+2.53 m.   05/14/2014 0750 HRS
+100% Design Submittal Geotech Report - 08/19/2014
+2
+14
+26
+40
+16
+23
+Sieve
+- #200 =
+33.9%
+Sieve
+- #200 =
+3.2%
+41
+34
+13
+17
+21
+20
+1655
+1623
+SM
+GP
+Light tan SANDY GRAVEL (CORALLINE) with
+traces of silt and shells, medium dense (coral
+finger formation)
+Yellowish white LIMESTONE, soft to medium hard
+(coralline limestone)
+grades to very soft to soft
+Field
+May 12, 2014
+May 13, 2014
+T. Roy
+28.5 meters
+7014-00
+USCS
+Depth (meters)
+Water Level:
+Penetration
+Resistance
+(blows/0.30m)
+Sample
+Dry Density
+(kg/m
+3)
+Description
+RQD (%)
+A - 4.2
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(kPa)
+B-104
+MOBILE B-61
+200-mm Hollow Stem Auger & Rotary Wash
+63.5 kg wt., 0.76 m drop
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Moisture
+Content (%)
+Core
+Recovery (%)
+(Continued from previous plate)
+Laboratory
+GEOLABS, INC.
+Geotechnical Engineering
+FY14 MCON PROJECT P-637
+DEHUMIDIFIED SUPPLY STORAGE WAREHOUSE
+POLARIS POINT, NAVAL BASE, GUAM
+BORING_LOG  7014-00.GPJ  GEOLABS.GDT  8/19/14
+2.53 m.   05/14/2014 0750 HRS
+100% Design Submittal Geotech Report - 08/19/2014
+20
+29
+21
+34
+36
+51
+17
+14
+16
+26
+11
+17
+1458
+1825
+grades to light tannish white
+grades to soft to medium hard
+grades to yellowish white
+ Boring terminated at 28.5 meters
+Field
+May 12, 2014
+May 13, 2014
+T. Roy
+28.5 meters
+7014-00
+USCS
+Depth (meters)
+Water Level:
+Penetration
+Resistance
+(blows/0.30m)
+Sample
+Dry Density
+(kg/m
+3)
+Description
+RQD (%)
+A - 4.3
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(kPa)
+B-104
+MOBILE B-61
+200-mm Hollow Stem Auger & Rotary Wash
+63.5 kg wt., 0.76 m drop
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Moisture
+Content (%)
+Core
+Recovery (%)
+(Continued from previous plate)
+Laboratory
+GEOLABS, INC.
+Geotechnical Engineering
+FY14 MCON PROJECT P-637
+DEHUMIDIFIED SUPPLY STORAGE WAREHOUSE
+POLARIS POINT, NAVAL BASE, GUAM
+BORING_LOG  7014-00.GPJ  GEOLABS.GDT  8/19/14
+2.53 m.   05/14/2014 0750 HRS
+100% Design Submittal Geotech Report - 08/19/2014
+20
+43
+Sieve
+- #200 =
+2.1%
+6
+15
+SP-
+SM
+SP
+Light brown with white mottling GRAVELLY SAND
+(CORALLINE) with a little silt, medium dense,
+moist (topsoil)
+Tan GRAVELLY SAND (CORALLINE) with traces
+of silt and cobbles (coralline), and cobbles
+(coralline) medium dense to dense, moist (beach
+deposit)
+grades to very dense
+ Boring terminated at 1.2 meters
+Field
+May 15, 2014
+May 15, 2014
+T. Roy
+1.2 meters
+7014-00
+USCS
+Depth (meters)
+Water Level:
+Penetration
+Resistance
+(blows/0.30m)
+Approximate Ground Surface
+Elevation : N/A
+Sample
+Dry Density
+(kg/m
+3)
+Description
+RQD (%)
+A - 5
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(kPa)
+P-101
+MOBILE B-61
+200-mm Hollow Stem Auger
+63.5 kg wt., 0.76 m drop
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Moisture
+Content (%)
+Core
+Recovery (%)
+Laboratory
+GEOLABS, INC.
+Geotechnical Engineering
+FY14 MCON PROJECT P-637
+DEHUMIDIFIED SUPPLY STORAGE WAREHOUSE
+POLARIS POINT, NAVAL BASE, GUAM
+BORING_LOG  7014-00.GPJ  GEOLABS.GDT  8/19/14
+Not encountered.
+100% Design Submittal Geotech Report - 08/19/2014
+34
+33
+Sieve
+- #200 =
+12.2%
+17
+7
+SP-
+SM
+SP
+SM
+Grayish brown with white mottling GRAVELLY
+SAND (CORALLINE) with a little silt, dense,
+moist (fill)
+Light tan with white mottling GRAVELLY SAND
+(CORALLINE), dense to very dense, moist (fill)
+Grayish brown SILTY SAND (CORALLINE) with
+some gravel (coralline), dense, moist (fill)
+ Boring terminated at 1.2 meters
+Field
+May 15, 2014
+May 15, 2014
+T. Roy
+1.2 meters
+7014-00
+USCS
+Depth (meters)
+Water Level:
+Penetration
+Resistance
+(blows/0.30m)
+Approximate Ground Surface
+Elevation : N/A
+Sample
+Dry Density
+(kg/m
+3)
+Description
+RQD (%)
+A - 6
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(kPa)
+P-102
+MOBILE B-61
+200-mm Hollow Stem Auger
+63.5 kg wt., 0.76 m drop
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Moisture
+Content (%)
+Core
+Recovery (%)
+Laboratory
+GEOLABS, INC.
+Geotechnical Engineering
+FY14 MCON PROJECT P-637
+DEHUMIDIFIED SUPPLY STORAGE WAREHOUSE
+POLARIS POINT, NAVAL BASE, GUAM
+BORING_LOG  7014-00.GPJ  GEOLABS.GDT  8/19/14
+Not encountered
+100% Design Submittal Geotech Report - 08/19/2014
+APPENDIX  B 
+100% Design Submittal Geotech Report - 08/19/2014
+W.O. 7014-00 
+GEOLABS, INC. 
+AUGUST 2014     Page B-1 
+Hawaii • California 
+A P P E N D I X   B 
+Laboratory Tests 
+Moisture Content (ASTM D2216) and Unit Weight (ASTM D7263) determinations 
+were performed on selected soil samples as an aid in the classification and evaluation of 
+soil properties. The test results are presented on the Logs of Borings at the appropriate 
+sample depths. 
+Four Atterberg Limits tests (ASTM D4318) were performed on selected soil 
+samples to evaluate the liquid and plastic limits and to aid in soil classification. The test 
+results are summarized on the Logs of Borings at the appropriate sample depths, and 
+graphic presentation of the test results is provided on Plate B-1. 
+Twenty-one Sieve Analysis tests (ASTM C117 & C136) were performed on 
+selected soil samples to evaluate the gradation characteristics of the soils and to aid in 
+soil classification. The fines content of the sample tested (percent particles passing the 
+No. 200 sieve) is indicated on the Logs of Borings at the appropriate sample depths. 
+Graphic presentation of the grain size distribution is provided on Plates B-2 through B-6. 
+Five fines content tests (ASTM D1140) were performed on selected soil samples 
+to evaluate the percent of particles passing the No. 200 sieve and to aid in soil 
+classification. The fines content of the sample tested is indicated on the Logs of Borings 
+at the appropriate sample depths and summarized on Plate B-7. We also included the 
+fines content from the twenty-one sieve analysis tests on Plate B-7 for ease of 
+reference.  
+One laboratory compaction test was performed on a bulk sample obtained to 
+evaluate the relationship between the moisture content and the dry density of the 
+near-surface soils. The Modified Proctor test was performed in accordance with 
+ASTM D1557. The test results are presented on Plate B-8. 
+One laboratory California Bearing Ratio Test (ASTM D1883) was performed on a 
+bulk sample of the near-surface soils collected to evaluate the pavement support 
+characteristics of the soils. The test results are presented on Plate B-9. 
+100% Design Submittal Geotech Report - 08/19/2014
+0
+10
+20
+30
+40
+50
+60
+70
+80
+90
+100
+0
+20
+40
+60
+80
+100
+120
+PI
+Depth (m)
+Sample
+LL
+PL
+Description
+NP
+NP
+NP
+NP
+6.7-7.2
+8.2-8.7
+11.3-11.7
+12.8-13.3
+ML or OL
+CL-ML
+CL or OL
+CH or OH
+NP
+NP
+NP
+NP
+ATTERBERG LIMITS TEST RESULTS - ASTM D4318
+Light gray gravelly  (SP-SM) with a little silt (Non-Plastic)
+Light gray silty gravel (GM) with some sand (Non-Plastic)
+Gray sandy gravel (GP-GM) with a little silt (Non-Plastic)
+Bluish gray silty gravel (GM) with some sand (Non-Plastic)
+B - 1
+MH or OH
+NP
+NP
+NP
+NP
+LIQUID LIMIT
+PLASTICITY INDEX
+B-102
+B-102
+B-102
+B-103
+FY14 MCON PROJECT P-637
+DEHUMIDIFIED SUPPLY STORAGE WAREHOUSE
+POLARIS POINT, NAVAL BASE, GUAM
+Plate
+W.O. 7014-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+G_ATTERBERG_PI-100_LL-120  7014-00.GPJ  GEOLABS.GDT  8/19/14
+100% Design Submittal Geotech Report - 08/19/2014
+0
+5
+10
+15
+20
+25
+30
+35
+40
+45
+50
+55
+60
+65
+70
+75
+80
+85
+90
+95
+100
+0.001
+0.01
+0.1
+1
+10
+100
+3/8
+0.9
+0.5
+0.7
+7.3
+116.4
+9.6
+HYDROMETER
+3
+GRAIN SIZE IN MILLIMETERS
+PERCENT FINER BY WEIGHT
+100
+coarse
+1/2
+Sample
+0.186
+0.996
+0.235
+0.423
+0.293
+0.528
+8.251
+4.348
+6.175
+1.059
+B - 2
+PI
+LL
+PL
+coarse
+1
+1.5
+3
+2
+0.111
+40
+Depth (m)
+%Gravel
+16.0
+50.0
+38.9
+46.6
+22.4
+73.3
+36.2
+39.1
+41.4
+71.5
+%Sand
+COBBLES
+Sample
+D30 (mm)
+140
+20
+Description
+Cu
+GRAVEL
+U.S. SIEVE NUMBERS
+D10 (mm)
+Light tan GRAVELLY SAND (SP-SM) with a little silt
+Light gray SILTY GRAVEL (GM) with some sand
+Light gray SILTY SAND (SM) with some gravel
+Light gray SANDY GRAVEL (GP-GM) with a little silt
+Light tan GRAVELLY SAND (SP-SM) with a little silt
+16
+fine
+25
+50
+25
+37.5
+19
+Cc
+3/4
+fine
+SILT OR CLAY
+medium
+GRAIN SIZE DISTRIBUTION -
+SAND
+%Fine
+60
+4
+30
+200
+4
+6
+10.7
+13.8
+22.0
+12.0
+6.1
+Depth (m)
+810 14
+50
+U.S. SIEVE OPENING IN INCHES
+6
+D60 (mm)
+D100 (mm)
+B-101
+B-101
+B-101
+B-101
+B-102
+2.6-3.0
+6.7-7.2
+8.2-8.7
+11.3-11.7
+2.6-3.0
+2.6-3.0
+6.7-7.2
+8.2-8.7
+11.3-11.7
+2.6-3.0
+B-101
+B-101
+B-101
+B-101
+B-102
+FY14 MCON PROJECT P-637
+DEHUMIDIFIED SUPPLY STORAGE WAREHOUSE
+POLARIS POINT, NAVAL BASE, GUAM
+Plate
+W.O. 7014-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+G_GRAIN_SIZE  7014-00.GPJ  GEOLABS.GDT  8/19/14
+100% Design Submittal Geotech Report - 08/19/2014
+0
+5
+10
+15
+20
+25
+30
+35
+40
+45
+50
+55
+60
+65
+70
+75
+80
+85
+90
+95
+100
+0.001
+0.01
+0.1
+1
+10
+100
+3/8
+1.2
+0.6
+10.3
+9.5
+41.1
+186.1
+HYDROMETER
+3
+GRAIN SIZE IN MILLIMETERS
+PERCENT FINER BY WEIGHT
+100
+coarse
+1/2
+Sample
+0.371
+0.355
+0.286
+2.362
+0.236
+NP
+NP
+1.052
+3.071
+6.327
+10.02
+8.351
+B - 3
+PI
+LL
+PL
+coarse
+1
+1.5
+3
+2
+0.11
+40
+Depth (m)
+%Gravel
+14.9
+36.7
+50.4
+63.1
+47.2
+79.3
+53.2
+31.2
+25.3
+34.8
+%Sand
+COBBLES
+Sample
+D30 (mm)
+140
+20
+Description
+Cu
+GRAVEL
+U.S. SIEVE NUMBERS
+D10 (mm)
+Light gray GRAVELLY SAND (SW-SM) with a little silt
+Light gray GRAVELLY SAND (SP-SM) with a little silt
+Light gray SILTY GRAVEL (GM) with some sand
+Gray SANDY GRAVEL (GP-GM) with a little silt
+Gray SILTY GRAVEL (GM) with some sand
+16
+fine
+25
+25
+19
+25
+37.5
+Cc
+3/4
+fine
+SILT OR CLAY
+medium
+GRAIN SIZE DISTRIBUTION -
+SAND
+%Fine
+60
+4
+NP
+30
+200
+4
+6
+5.8
+10.0
+18.4
+11.6
+18.0
+Depth (m)
+810 14
+50
+U.S. SIEVE OPENING IN INCHES
+6
+D60 (mm)
+D100 (mm)
+B-102
+B-102
+B-102
+B-102
+B-102
+3.7-4.1
+5.2-5.6
+8.2-8.7
+9.8-10.2
+12.8-13.3
+3.7-4.1
+5.2-5.6
+8.2-8.7
+9.8-10.2
+12.8-13.3
+B-102
+B-102
+B-102
+B-102
+B-102
+FY14 MCON PROJECT P-637
+DEHUMIDIFIED SUPPLY STORAGE WAREHOUSE
+POLARIS POINT, NAVAL BASE, GUAM
+Plate
+W.O. 7014-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+G_GRAIN_SIZE  7014-00.GPJ  GEOLABS.GDT  8/19/14
+100% Design Submittal Geotech Report - 08/19/2014
+0
+5
+10
+15
+20
+25
+30
+35
+40
+45
+50
+55
+60
+65
+70
+75
+80
+85
+90
+95
+100
+0.001
+0.01
+0.1
+1
+10
+100
+3/8
+1.1
+0.9
+0.8
+8.0
+9.6
+13.4
+HYDROMETER
+3
+GRAIN SIZE IN MILLIMETERS
+PERCENT FINER BY WEIGHT
+100
+coarse
+1/2
+Sample
+0.357
+0.258
+0.423
+0.175
+NP
+NP
+0.945
+0.839
+1.766
+0.304
+9.931
+B - 4
+PI
+LL
+PL
+coarse
+1
+1.5
+3
+2
+0.117
+0.087
+0.132
+40
+Depth (m)
+%Gravel
+2.1
+13.7
+27.5
+18.7
+47.8
+93.0
+78.2
+67.0
+38.3
+33.2
+%Sand
+COBBLES
+Sample
+D30 (mm)
+140
+20
+Description
+Cu
+GRAVEL
+U.S. SIEVE NUMBERS
+D10 (mm)
+Light tan SAND (SW) with traces of gravel and silt
+Light tan GRAVELLY SAND (SP-SM) with a little silt
+Light gray GRAVELLY SAND (SP-SM) with a little silt
+Grayish tan SILTY SAND (SM) with some gravel
+Bluish gray SILTY GRAVEL (GM) with some sand
+16
+fine
+19
+19
+25
+37.5
+37.5
+Cc
+3/4
+fine
+SILT OR CLAY
+medium
+GRAIN SIZE DISTRIBUTION -
+SAND
+%Fine
+60
+4
+NP
+30
+200
+4
+6
+4.9
+8.1
+5.5
+43.0
+19.0
+Depth (m)
+810 14
+50
+U.S. SIEVE OPENING IN INCHES
+6
+D60 (mm)
+D100 (mm)
+B-103
+B-103
+B-103
+B-103
+B-103
+3.7-4.1
+5.2-5.6
+6.7-7.2
+11.3-11.7
+12.8-13.3
+3.7-4.1
+5.2-5.6
+6.7-7.2
+11.3-11.7
+12.8-13.3
+B-103
+B-103
+B-103
+B-103
+B-103
+FY14 MCON PROJECT P-637
+DEHUMIDIFIED SUPPLY STORAGE WAREHOUSE
+POLARIS POINT, NAVAL BASE, GUAM
+Plate
+W.O. 7014-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+G_GRAIN_SIZE  7014-00.GPJ  GEOLABS.GDT  8/19/14
+100% Design Submittal Geotech Report - 08/19/2014
+0
+5
+10
+15
+20
+25
+30
+35
+40
+45
+50
+55
+60
+65
+70
+75
+80
+85
+90
+95
+100
+0.001
+0.01
+0.1
+1
+10
+100
+3/8
+1.0
+4.2
+1.5
+0.5
+94.6
+46.1
+160.1
+28.8
+HYDROMETER
+3
+GRAIN SIZE IN MILLIMETERS
+PERCENT FINER BY WEIGHT
+100
+coarse
+1/2
+Sample
+0.504
+6.216
+0.869
+0.895
+4.859
+0.284
+20.693
+9.097
+6.847
+B - 5
+PI
+LL
+PL
+coarse
+1
+1.5
+3
+2
+0.449
+0.237
+40
+Depth (m)
+%Gravel
+40.4
+11.2
+75.0
+55.0
+46.2
+47.4
+54.9
+21.8
+33.0
+51.7
+%Sand
+COBBLES
+Sample
+D30 (mm)
+140
+20
+Description
+Cu
+GRAVEL
+U.S. SIEVE NUMBERS
+D10 (mm)
+Light gray SILTY SAND (SM) with some gravel
+Tannish gray SILTY SAND (SM) with a little gravel
+Light tan SANDY GRAVEL (GP) with traces of silt
+Light gray SANDY GRAVEL (GP-GM) w/a little silt
+Tan GRAVELLY SAND (SP) with traces of silt
+16
+fine
+50
+19
+37.5
+62.5
+37.5
+Cc
+3/4
+fine
+SILT OR CLAY
+medium
+GRAIN SIZE DISTRIBUTION -
+SAND
+%Fine
+60
+4
+30
+200
+4
+6
+12.2
+33.9
+3.2
+12.0
+2.1
+Depth (m)
+810 14
+50
+U.S. SIEVE OPENING IN INCHES
+6
+D60 (mm)
+D100 (mm)
+B-104
+B-104
+B-104
+Bulk 1
+P-101
+6.7-7.2
+11.3-11.7
+12.8-13.3
+0.0-0.9
+0.8-1.2
+6.7-7.2
+11.3-11.7
+12.8-13.3
+0.0-0.9
+0.8-1.2
+B-104
+B-104
+B-104
+Bulk 1
+P-101
+FY14 MCON PROJECT P-637
+DEHUMIDIFIED SUPPLY STORAGE WAREHOUSE
+POLARIS POINT, NAVAL BASE, GUAM
+Plate
+W.O. 7014-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+G_GRAIN_SIZE  7014-00.GPJ  GEOLABS.GDT  8/19/14
+100% Design Submittal Geotech Report - 08/19/2014
+0
+5
+10
+15
+20
+25
+30
+35
+40
+45
+50
+55
+60
+65
+70
+75
+80
+85
+90
+95
+100
+0.001
+0.01
+0.1
+1
+10
+100
+3/8
+1.5
+43.4
+HYDROMETER
+3
+GRAIN SIZE IN MILLIMETERS
+PERCENT FINER BY WEIGHT
+100
+coarse
+1/2
+Sample
+0.429
+2.342
+B - 6
+PI
+LL
+PL
+coarse
+1
+1.5
+3
+2
+40
+Depth (m)
+%Gravel
+27.1
+60.7
+%Sand
+COBBLES
+Sample
+D30 (mm)
+140
+20
+Description
+Cu
+GRAVEL
+U.S. SIEVE NUMBERS
+D10 (mm)
+Grayish brown SILTY SAND (SM) with some gravel
+16
+fine
+19
+Cc
+3/4
+fine
+SILT OR CLAY
+medium
+GRAIN SIZE DISTRIBUTION -
+SAND
+%Fine
+60
+4
+30
+200
+4
+6
+12.2
+Depth (m)
+810 14
+50
+U.S. SIEVE OPENING IN INCHES
+6
+D60 (mm)
+D100 (mm)
+P-102
+0.8-1.2
+0.8-1.2
+P-102
+FY14 MCON PROJECT P-637
+DEHUMIDIFIED SUPPLY STORAGE WAREHOUSE
+POLARIS POINT, NAVAL BASE, GUAM
+Plate
+W.O. 7014-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+G_GRAIN_SIZE  7014-00.GPJ  GEOLABS.GDT  8/19/14
+100% Design Submittal Geotech Report - 08/19/2014
+B-101
+2.6 - 3.0
+10.7
+B-101
+5.2 - 5.6
+14.2
+B-101
+6.7 - 7.2
+13.8
+B-101
+8.2 - 8.7
+22.0
+B-101
+11.3 - 11.7
+12.0
+B-101
+14.3 - 14.8
+9.0
+B-102
+2.6 - 3.0
+6.1
+B-102
+3.7 - 4.1
+5.8
+B-102
+5.2 - 5.6
+10.0
+B-102
+8.2 - 8.7
+18.4
+B-102
+9.8 - 10.2
+11.6
+B-102
+12.8 - 13.3
+18.0
+B-103
+3.7 - 4.1
+4.9
+B-103
+5.2 - 5.6
+8.1
+B-103
+6.7 - 7.2
+5.5
+B-103
+8.2 - 8.7
+19.8
+B-103
+11.3 - 11.7
+43.0
+B-103
+12.8 - 13.3
+19.0
+B-103
+14.3 - 14.8
+11.2
+B-104
+6.7 - 7.2
+12.2
+B-104
+8.2 - 8.7
+15.6
+B-104
+11.3 - 11.7
+33.9
+B-104
+12.8 - 13.3
+3.2
+Bulk 1 (Mixture of B-103 & B-104)
+0.0 - 0.9
+12.0
+P-101
+0.8 - 1.2
+2.1
+P-102
+0.8 - 1.2
+12.2
+Location
+Boring No.
+Depth
+Percent of Fines Passing
+No. 200 Sieve
+(%)
+(meters)
+B - 7
+ASTM D1140 - SOILS FINER THAN NO. 200 SIEVE
+FY14 MCON PROJECT P-637
+DEHUMIDIFIED SUPPLY STORAGE WAREHOUSE
+POLARIS POINT, NAVAL BASE, GUAM
+Plate
+W.O. 7014-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+G_% PASSING #200  7014-00.GPJ  GEOLABS.GDT  8/19/14
+100% Design Submittal Geotech Report - 08/19/2014
+1,220
+1,260
+1,300
+1,340
+1,380
+1,420
+1,460
+1,500
+1,540
+1,580
+1,620
+1,660
+1,700
+1,740
+1,780
+1,820
+1,860
+1,900
+1,940
+1,980
+2,020
+2,060
+2,100
+2,140
+2,180
+0
+10
+20
+30
+40
+1849
+10.0
+DRY DENSITY, kg/m
+3
+Optimum Moisture Content:
+Sample:
+Depth:
+TEST RESULTS
+MOISTURE CONTENT, %
+Description:
+kg/m
+3
+Maximum Dry Density:
+Light gray with brown mottling sandy gravel
+(GP-GM) with a little silt
+B - 8
+3.20
+3.10
+3.00
+2.90
+2.80
+2.70
+2.60
+0.0 - 0.9 m
+Bulk 1 (Mixture of B-103 & B-104)
+MOISTURE-DENSITY RELATIONSHIP - ASTM D1557 C
+Test Date:
+August 19, 2014
+FY14 MCON PROJECT P-637
+DEHUMIDIFIED SUPPLY STORAGE WAREHOUSE
+POLARIS POINT, NAVAL BASE, GUAM
+Plate
+W.O. 7014-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+G_COMPACTION  7014-00.GPJ  GEOLABS.GDT  8/19/14
+100% Design Submittal Geotech Report - 08/19/2014
+0
+1,000
+2,000
+3,000
+4,000
+5,000
+6,000
+7,000
+8,000
+9,000
+10,000
+11,000
+12,000
+0
+2
+4
+6
+8
+10
+12
+14
+Light gray with brown mottling sandy gravel (GP-GM) with a little silt
+Description:
+Days Soaked
+4
+Bulk 1 (Mixture of B-103 & B-104)
+Swell (%)
+8.00
+63.3
+54.6
+Molding Dry Density (kg/m
+3)
+PENETRATION, millimeters
+STRESS, kPa
+0.0 - 0.9 m
+No. of Blows
+9.9
+1648
+Molding Moisture (%)
+Hammer Wt. (kg)
+Hammer Drop (mm)
+Sample:
+Corr. CBR @ 2.54 mm
+Depth:
+Corr. CBR @ 5.08 mm
+No. of Layers
+CALIFORNIA BEARING RATIO - ASTM D1883
+Penetration
+(millimeters)
+Stress
+(kPa)
+0.00
+0.64
+1.27
+1.91
+2.54
+3.18
+3.81
+4.45
+5.08
+6.35
+7.62
+8.89
+10.16
+11.43
+12.70
+457.2
+25
+4.54
+5
+Aggregate
+B - 9
+19 mm minus
+0
+517
+1551
+2586
+3447
+4309
+4999
+5688
+6378
+7584
+8618
+9480
+10342
+11204
+11893
+FY14 MCON PROJECT P-637
+DEHUMIDIFIED SUPPLY STORAGE WAREHOUSE
+POLARIS POINT, NAVAL BASE, GUAM
+Plate
+W.O. 7014-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+LAB CBR  7014-00.GPJ  GEOLABS.GDT  8/19/14
+100% Design Submittal Geotech Report - 08/19/2014
+APPENDIX  C 
+100% Design Submittal Geotech Report - 08/19/2014
+100% Design Submittal Geotech Report - 08/19/2014
+100% Design Submittal Geotech Report - 08/19/2014
+100% Design Submittal Geotech Report - 08/19/2014
+100% Design Submittal Geotech Report - 08/19/2014
+100% Design Submittal Geotech Report - 08/19/2014
+100% Design Submittal Geotech Report - 08/19/2014
+100% Design Submittal Geotech Report - 08/19/2014
+100% Design Submittal Geotech Report - 08/19/2014
+100% Design Submittal Geotech Report - 08/19/2014
+100% Design Submittal Geotech Report - 08/19/2014
+100% Design Submittal Geotech Report - 08/19/2014
+100% Design Submittal Geotech Report - 08/19/2014
+100% Design Submittal Geotech Report - 08/19/2014

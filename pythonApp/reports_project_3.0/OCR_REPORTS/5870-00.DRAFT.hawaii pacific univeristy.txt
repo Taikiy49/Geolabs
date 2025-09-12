@@ -1,0 +1,3662 @@
+DRAFT
+GEOTECHNICAL ENGINEERING EXPLORATION
+AND BASIS OF DESIGN
+SEWER FORCE MAIN
+HAWAII PACIFIC UNIVERSITY
+KANEOHE, OAHU, HAWAII
+W.O. 5870-00 MAY 22, 2008
+Prepared for
+HAWAII PACIFIC UNIVERSITY
+LICENSED
+PROFESSIONAL
+ENGINEER
+No. 4176-C
+THIS WORK WAS PREPARED BY
+ME OR UNDER MY SUPERVISION.
+DRAFT
+4-30-10
+SIGNATURE EXPIRATION DATE
+OF THE LICENSE
+GEOLABS, INC.
+Geotechnical Engineering and Drilling Services
+2006 Kalihi Street * Honolulu, Hl 96819
+Hawaii ¢ California
+DRAFT
+May 22, 2008
+W.O. 5870-00
+Mr. E. Rick Septien, Vice President
+Hawaii Pacific University
+1166 Fort Street, Suite 203G
+Honolulu, Hl 96813
+Dear Mr. Septien:
+Geolabs, Inc. is pleased to submit our report entitled "Geotechnical Engineering
+Exploration and Basis of Design, Sewer Force Main, Hawaii Pacific University,
+Kaneohe, Oahu, Hawaii” prepared in support of the design of the proposed project.
+Our work was performed in general accordance with the scope of services outlined
+in our fee proposal of April 16, 2007.
+Please note that the samples recovered during our field exploration (remaining
+after testing) will be stored for a period of two months from the date of this report. The
+samples will be discarded after that date unless arrangements are made for a longer
+sample storage period. Please contact our office for alternative sample storage
+requirements, if appropriate.
+Detailed discussion and specific recommendations for design of the project
+infrastructure are contained in the body of this report. If there is any point that is not
+clear, please contact our office.
+Very truly yours,
+GEOLABS, INC.
+DRAFT
+Clayton S. Mimura, P.E.
+President
+CSM:GB:c¢j
+(h:\5800 Series\5870-00.gb1 — p2)
+DRAFT
+GEOTECHNICAL ENGINEERING EXPLORATION
+AND BASIS OF DESIGN
+SEWER FORCE MAIN
+HAWAII PACIFIC UNIVERSITY
+KANEOHE, OAHU, HAWAII
+W.O. 5870-00 MAY 21, 2008
+TABLE OF CONTENTS
+Page
+SUMMARY OF FINDINGS AND RECOMMENDATIONS .....00. eee ii
+1.0 GENERAL ...000...o. ec cccceeeeeeeteneeeeeeeeeceneeeseeaaesseseusananauseseeseesesseessecesaaeeen 1
+4.4 IMtrOCUCTION 00. ccc ceeeeeeeeesceeeeeeceeeeeeeeaaneeeenececaaeeeeeeesceeesaeaseeneensueeneeganes 1
+1.2 Project Considerations ............. cece eeeeeeee reece cecseeeesesuenennneeeesenseeeeseeees 1
+1.3 Purpose and SOC... eee eee cessnesseneneasecsseeeeusencaneeesseseseeesseeessenesaees 2
+2.0 SITE CHARACTERIZATION .............cc:ceecseeeeseeeeeseseereseeeceeesssaesseeueessneenenaes 4
+2.1 Regional Geology..........cceeseeeeeeees saceeeuaeeeeccaaeeeeeuaaeeeeeeeneeeeeeceeteeeaeeeneas 4
+2.2 Existing Site CONItIONS .... ee eee e eee teeeseeeeasereneeeeecerssessenteeeeseneeers 5
+2.3 Subsurface Conditions ......... eee eeeceeeeeeeceseeeee eres seeeeeeeeeesseseeeesaannsneaeees 6
+24  GeOlOGIC Units ...... ce cece ee ceeeeeeeeeeeeeceeeeeeeeeeceeeaeuenesesaueessserasenceeeesensaes 7
+2A Fils occ eee ecccseccssseeeceeeessseeesereeeeeeeseeeeeecaeeeeecnineeseseeeeessserenesaes 7
+2.4.2 Recent AIUVIUM ........... cc ccceeeeceeeeeneeeeeeeeceeeeeeeeeseeeeeueeeeeneceseaeeenas 7
+2.4.3 Old AMUVIUM 20.0... cecccetececeeeeteeeeeeeseeceeeaaeeeeeessnnneetecsesseneeeee® 8
+3.0 DISCUSSION AND RECOMMENDATIONS ...........0....:c:cccssseeeeeeectereeeeeeeeees 9
+3.1. Horizontal Directional Drilling Methods... cece eee eeesteeeeneneeeeeens 10
+3.1.1 HDD Geotechnical Considerations. ...........:.::ceesesseeeeeeeeeeeerteens 12
+3.1.2 Pipe Size and Material «00.2... eee seeeeeeceenseeeesecseeeessneeeenenenererees 13
+3.1.3 Construction Staging Areas... eesececsseeeeeesseeeeeeeseeeeeeanenenees 14
+3.1.4 Construction Considerations ...........ccccceecceseeeeeteeeeeeeeeeetsneeenees 15
+3.1.5 Type of Drilling FIUIC cece ec ceececr esses ccnsereesereeeerseeneeeneees 16
+3.1.6 Muck and Slurry Disposal... ccc eeeeeeeeeeeeeeeeeceeeeseseseeteneeenerees 16
+4.0 DESIGN CONSIDERATIONS ..............:::cccccceeeesseeeeeeneeeereeeeceeeeeseeseereeeneneeeeesy 18
+4.1 Installation Considerations ...........cccccccccccceceseeteeeeeeeeeseesaeeeeeeeseeeseseeeeaeens 18
+4.2 Service Life Considerations.........cccccccceseeccesssrceeeeeeeeeseaaseerseeseeeeeeeeeees 19
+5.0 DESIGN ANALYSES..........0000.. bececesnaeeccuanesensueecseceeeeesueeeeeccuueeeseneneessenineess 20
+5.1. HDD Design Data and ASSUMPTIONS «0.00... ec cee ceeeeeeeeeneeeeneneeteneentees 20
+5.2 HDD Design AnalySes.............cccccecceeeeeeeeteeesereeeeseeseesseeaseeeeneeatenseusesessees 20
+5.2.1. HDD Pull-Back Forces and StreSSe ..........cceccccseeeeesereeeeceeeseanes 21
+5.2.2 Drilling Fluid Pressure versus Hydraulic Fracture Pressure....... 22
+5.2.3 External Pressure Due to Hydrostatic Pressure of Drilling Slurry 22
+5.2.4 External Pressure Due to Earth and Live Loads... 23
+5.2.5 Ring Deflection Due to Buoyancy, and Earth and Live Loads... 23
+W.O. 5870-00 GEOLABS, INC. Page i
+TABLE OF CONTENTS
+DRAFT
+6.0 LIMITATIONS Loon. eee cccecceccnecceeeecceecceneeceeeeeneeceeeeeseeeseeaaeennaeeesnaaaseeaseanees 24
+LIST OF PLATES
+Plate 1 Project Location Map
+Plate 2 Site Plan
+Plate 3 HDD Vertical Alignment Plan
+LIST OF APPENDICES
+Appendix A_ Field Exploration
+Appendix B_ Laboratory Testing
+Appendix C Pipe Pullback Analysis
+Appendix D Hydraulic Fracture Analysis
+Appendix E Service Life Load Calculations
+W.O. 5870-00 GEOLABS, INC. Page ii
+DRAFT
+GEOTECHNICAL ENGINEERING EXPLORATION
+AND BASIS OF DESIGN
+SEWER FORCE MAIN
+HAWAII PACIFIC UNIVERSITY
+KANEOHE, OAHU, HAWAII
+W.O. 5870-00 MAY 21, 2008
+SUMMARY OF FINDINGS AND RECOMMENDATIONS
+The borings drilled on the north side of the H-3 Freeway generally encountered
+dense and stiff fill materials about 5 to 7 feet thick. Recent alluvium, which consisted of soft
+to medium stiff silt and clay, was encountered below the fill materials and extended to the
+maximum depths explored. The borings drilled on the south side of the H-3 Freeway
+generally encountered fills that extended to a depth of about 13.5 feet below the existing
+ground surface. Old alluvium, which consisted of hard clayey silt, was encountered below
+the fills and extended to the maximum depth explored. The boring drilled on the Hawaii
+Pacific University — Hawaii Loa campus generally encountered old alluvium (stiff clayey
+silt) that extended to the maximum depth explored of about 11.5 feet below the existing
+ground surface.
+The sewer force main will consist of a 9.05-inch outside diameter (O.D.) fusible
+PVC pipe with a SDR of 14 encased in a 13.20-inch O.D. fusible PVC pipe with a SDR of
+18. The State of Hawaii — Department of Transportation requires that an underground
+utility traversing below state highways/freeways will need to be encased. The encasement
+and sewer force main pipes will be installed by HDD methods.
+Due to soft soil conditions, it appears that the drilling slurry pressure in the borehole
+may exceed the hydraulic fracture pressure of the in-situ soil formation between about
+100 and 840 feet from the entry point for “HDD 1.” For “HDD 2,” the drilling slurry pressure
+in the borehole may exceed the hydraulic fracture pressure of the in-situ soil formation
+between the exit point and about 120 feet from the exit point during the reaming stage.
+The HDD Contractor should take the necessary precautions (such as drilling relief holes,
+using temporary casing, or controlling drilling slurry pressures) to reduce the potential for
+heave and/or blowout of the ground surface.
+W.O. 5870-00 GEOLABS, INC. Page ii
+SUMMARY OF FINDINGS AND RECOMMENDATIONS
+DRAFT
+Cobbles and boulders may be encountered in the recent and old alluvium. If
+encountered along the alignment, the cobbles and boulders may be problematic and are
+expected to cause some difficulty in drilling and steering the pilot hole as well as drilled
+hole stability problems, such as caving in of the pilot and reamed holes. The caved-in
+materials would obstruct or divert reaming tools or the pipe string during pipe pullback.
+This will substantially increase the pulling stresses on the pipe string and may impede pipe
+pulling or damage the pipeline. The text of this report should be referred to for detailed
+discussion and specific recommendations for installation of the sewer force main by HDD
+methods.
+END OF SUMMARY OF FINDINGS AND RECOMMENDATIONS
+W.O. 5870-00 GEOLABS, INC. Page iii
+DRAFT
+SECTION 1.0 - GENERAL
+1.1 Introduction
+This report presents the results of our geotechnical engineering exploration
+performed for the Sewer Force Main, Hawaii Pacific University project in the Kaneohe
+area on the Island of Oahu, Hawaii. The project location and general vicinity are shown
+on the Project Location Map, Plate 1.
+This report summarizes the findings from our field exploration and presents our
+geotechnical recommendations derived from our analyses for the design of the sewer
+force main project. The recommendations are intended to assist in the design of
+two sewer force main crossings installed by Horizontal Directional Drilling (HDD)
+methods. The findings and recommendations presented herein are subject to the
+limitations noted at the end of this report.
+1.2. Project Considerations
+The project site is near Kamehameha Highway, the Pali Golf Course, and Hawaii
+Pacific University - Hawaii Loa Campus in Kaneohe on the Island of Oahu, Hawaii.
+Based on the information provided, we understand that a new sewer force main is
+proposed for the project. The sewer force main will connect Hawaii Pacific University —
+Hawaii Loa Campus and Halekou Sewage Pump Station. The project location is shown
+on the Site Plan, Plate 2.
+In general, the alignment for the sewer force main will begin at the
+Halekou Sewage Pump Station and extend in a southeasterly direction to a grassy
+median about 260 feet from the pump station. This portion of the sewer force main will
+be installed using conventional cut and cover methods.
+From the grassy median, the sewer force main will extend about 1,900 feet in a
+southerly to southeasterly direction to near a comfort station on the Pali Golf Course.
+The sewer force main will cross below the H-3 Freeway. This portion of the sewer force
+main will be installed using trenchless methods consisting of horizontal directional
+drilling (HDD). We will refer to this portion of the sewer force main as “HDD 1.”
+W.O. 5870-00 GEOLABS, INC. Page 1
+SECTION 1 — GENERAL
+DRAFT
+The sewer force main will cross Kamehameha Highway onto the Hawaii Pacific
+University — Hawaii Loa Campus. The portion of the sewer force main crossing
+Kamehameha Highway will be installed using trenchless methods consisting of HDD
+methods. We will refer to the second HDD crossing as “HDD 2.” The remaining portion
+of the sewer force main will be installed by conventional cut and cover methods.
+We understand that a fusible Polyvinyl Chloride (PVC) pipe having a nominal
+outside diameter of 9.05 inches with a Standard Dimension Ration (SDR) of 14 will be
+utilized for the sewer force main. Due to State of Hawaii - Department of Transportation
+requirements, we understand that underground utilities traversing below state
+highways/freeways will have to be encased. To provide the required encasement, a
+43.20-inch outside diameter fusible PVC pipe with a SDR of 18 will be installed by HDD
+methods. After the encasement pipe is installed, the smaller sewer force main pipe will
+be pulled through the encasement pipe.
+1.3. Purpose and Scope
+The purpose of our exploration was to obtain an overview of the surface and
+subsurface conditions to develop a soil and/or rock data set to formulate geotechnical
+recommendations for installation of the sewer force main by HDD methods. In order to
+accomplish this, we conducted an exploration program consisting of the following tasks
+and efforts:
+1. Mobilization and demobilization of truck-mounted drill equipment and
+two operators to and from the project site.
+2. Drilling and sampling of four borings extending to depths of about 11.5 to
+86.5 feet below the existing ground surface.
+3. Coordination of the field exploration and logging of the borings by our field
+geologist.
+4. Laboratory testing of selected soil samples obtained during the field
+exploration to evaluate the engineering characteristics of the materials
+encountered at the project site.
+W.O. 5870-00 GEOLABS, INC. Page 2
+SECTION 1 —- GENERAL
+DRAFT
+5. Engineering analyses of the field and laboratory data to develop
+geotechnical recommendations pertaining to the design of sewer force
+main to be installed by HDD methods.
+6. Preparation of this formal report summarizing our work and presenting our
+findings and geotechnical recommendations pertaining to the design of the
+proposed project.
+7. Coordination of our overall work on the project by our engineer.
+8. Quality assurance of our work and client/design team consultation by our
+principal engineer.
+9. Miscellaneous work efforts such as drafting, word processing, and clerical
+support.
+Detailed descriptions of our field exploration methodology and the Logs of
+Borings are presented in Appendix A of this report. Results of the laboratory tests
+performed on selected samples retrieved from our field exploration are presented in
+Appendix B.
+END OF GENERAL
+W.O. 5870-00 GEOLABS, INC. Page 3
+DRAFT
+SECTION 2.0 - SITE CHARACTERIZATION
+2.1. Regional Geology
+The Island of Oahu was built by the extrusion of basaltic lavas from the Waianae
+and Koolau shield volcanoes. The older Waianae Volcano is estimated to be middle to
+late Pliocene in age and forms the bulk of the western one-third of the island. The
+younger Koolau Volcano is estimated to be late Pliocene to early Pleistocene (Ice Age)
+in age and forms the majority of the eastern two-thirds of the island. The Koolau
+Volcano reached the end of its main shield-building phase about 2 million years ago.
+During the later Pleistocene Epoch, sea levels fluctuated in response to the
+cycles of continental glaciation. As the continental glaciers advanced, less water was
+available to fill the oceanic basins such that the sea levels fell to below the present
+stand. When the glaciers melted and receded, an excess of water became available
+such that the sea levels rose to above the present level.
+The processes of erosion and deposition were affected by these glacio-eustatic
+sea level fluctuations. The higher sea level stands caused the accumulation of deltas
+and fans of terrigenous sediments in the heads of old bays, accumulation of reef
+deposits at correspondingly higher elevations, and deposition of lagoonal/marine
+sediments in the quiet waters protected by fringing reefs. The lower sea stands caused
+_ streams to carve valleys in the sediments and reef deposits. Subaerial exposure of the
+sediments and calcareous materials caused desiccation of the soft deltaic materials and
+lagoonal deposits and induration of the calcareous reef materials. In addition, renewed
+subaerial erosion of the upper areas of the volcanic dome deposited terrigenous alluvial
+soils under relatively high energy conditions.
+In some of the mountainous regions of Hawaii, chemical weathering has altered
+the basaltic flows/pyroclastic ejecta to a soil-like condition. Erosional processes,
+consisting of detachment of soil and rock masses from the valley walls and transport
+downslope toward the axis of a valley primarily by gravity as colluvium, have also
+altered the natural condition of the volcanic flows. Once these materials reach the
+W.O. 5870-00 GEOLABS, INC. Page 4
+SECTION 2 — SITE CHARACTERIZATION
+DRAFT
+stream in the central portion of a valley, alluvial processes become dominant, and the
+sediments are transported and deposited as alluvium.
+When alluvial/colluvial deposits are left in place for long periods of time, chemical
+processes begin to alter the materials simultaneously causing a breakdown or
+weathering of the material. Erosion continually deposits newer material covering the
+older alluvial/colluvial deposits. Depending on the rate of transport, the newer sediments
+are generally transient in terms of geologic time.
+The project area is generally underlain by these older and more recent alluvial
+soil deposits or by the soil-like, highly weathered basaltic lava flows/pyroclastic ejecta.
+Urban development has since altered the natural formation of the area to its present
+form.
+2.2 Existing Site Conditions
+The project site is located near Kamehameha Highway, Pali Golf Course, and
+Hawaii Pacific University (HPU) — Hawaii Loa Campus in Kaneohe on the Island of
+Oahu, Hawaii. The project location is shown on the Site Plan, Plate 2.
+The project limits are between Halekou Sewage Pump Station and the pump
+station on the HPU campus. “HDD 1” alignment begins on Kahiko Street near the
+Halekou Sewage Pump Station. The ground surface elevations in this area are on the
+order of about +250 feet Mean Sea Level (MSL). The alignment extends in a
+southeasterly direction where the existing ground surface slopes down at about a
+two and one-half horizontal to one vertical (2.5H:1V) inclination. At the bottom of the
+slope, the alignment crosses below an existing concrete-lined drainage channel, a
+211-inch by 125-inch elliptical plate drain line, and the H-3 Freeway. The area between
+the concrete-lined drainage channel and the H-3 Freeway is highly vegetated. After
+crossing below the H-3 Freeway, the alignment exits near a comfort station on the
+Pali Golf Course.
+“HDD 2” alignment begins on the HPU campus. The ground surface elevation at
+the entry point is on the order of about +228 feet MSL. The ground surface elevations
+W.O. 5870-00 GEOLABS, INC. Page 5
+SECTION 2 — SITE CHARACTERIZATION
+DRAFT
+increase along the alignment. The area within the HPU campus is highly vegetated with
+large trees. The ground surface levels off to an elevation of about +272 feet MSL. The
+alignment crosses below Kamehameha Highway and exits near “HDD 1” on the
+Pali Golf Course.
+2.3. Subsurface Conditions
+Our field exploration consisted of drilling and sampling four borings, designated
+as Boring Nos. 1 through 4, extending to depths of about 11.5 to 86.5 feet below the
+existing ground surface. The approximate boring locations are shown on the Site Plan,
+Plate 2.
+The borings drilled on the north side of the H-3 Freeway generally encountered
+2.5 to 4 inches of asphaltic concrete underlain by fill materials that extended to depths
+of about 5 to 7 feet below the existing ground surface. The fill materials consisted of
+dense sandy gravel and stiff silty clay. Recent alluvium, which consisted of soft to
+medium stiff silt and clay, was encountered below the fill materials and extended to the
+maximum depths explored of about 46 to 86.5 feet below the existing ground surface.
+The borings drilled on the south side of the H-3 Freeway generally encountered
+4 inches of asphaltic concrete underlain by dense sandy and gravelly fills to a depth of
+about 3.5 feet below the existing ground surface. The sandy and gravelly fills were
+underlain by very stiff silty clay fills that extended to a depth of about 13.5 feet below the
+existing ground surface. Old alluvium, which consisted of hard clayey silt, was
+encountered below the fills and extended to the maximum depth explored of about
+26 feet below the existing ground surface.
+The boring drilled near the HPU pump station generally encountered old alluvium
+that extended to the maximum depth explored of about 11.5 feet below the existing
+ground surface. The old alluvium consisted of stiff clayey silt.
+Groundwater was encountered at depths of about 75 to 19.4 feet below the
+ground surface in Boring Nos. 1 and 2, respectively, at the time of our field exploration.
+The groundwater levels measured in the borings correspond to about Elevations +188
+W.O. 5870-00 GEOLABS, INC. Page 6
+SECTION 2 — SITE CHARACTERIZATION
+DRAFT
+to +202.6 feet MSL. However, groundwater levels may change due to seasonal
+precipitation, surface water runoff, and other factors.
+Detailed descriptions of the materials encountered from our field exploration are
+presented on the Logs of Borings, Plates A-1 through A-4 of Appendix A. Results of the
+laboratory tests performed on selected samples obtained from our field exploration are
+presented in Appendix B.
+2.4 Geologic Units
+The various geologic deposits encountered along the sewer force main alignment
+may be grouped into the following three generalized types of geologic materials.
+e Fills
+° Recent Alluvium
+e Old Alluvium
+Further discussions on the general characteristics of the geologic units are
+presented in the following subsections.
+2.4.1 Fills
+The fill materials consist of variable soils, which were placed by man during the
+development of the area. The fill materials generally consist of silts and clays. The
+fills typically were placed to achieve the desired finished grades. The fill materials
+may be encountered as both unconsolidated and semi-consolidated deposits
+having variable density resulting from man induced compaction of the fill materials.
+2.4.2 Recent Alluvium
+Recent alluvial materials generally consist of unconsolidated, eroded, and
+transported terrestrial sediments including silts, clays, sands, and some gravel,
+which are deposited by flowing water. The soil materials are typically brownish,
+dark gray, or black in color. Dark gray to black colored silts and clays typically are
+derived from low depositional energy marsh settings containing low levels of
+oxygen and elevated organic matter. Recent alluvial deposits are encountered
+mainly adjacent to stream and estuary environments, but they also may be
+W.O. 5870-00 GEOLABS, INC. Page 7
+SECTION 2 — SITE CHARACTERIZATION
+DRAFT
+encountered where sediment laden runoff emanating from higher elevation terrain
+is deposited on adjacent lower elevation, flatter terrain. Recent alluvial deposits
+generally are encountered as soft and/or loose to medium stiff and/or medium
+dense deposits with occasional hard rock cobbles or boulders. The deposits may
+be encountered as wide spread valley fill deposits or as elongated channel filling
+deposits.
+2.4.3 Old Alluvium
+Old alluvium materials generally consist of semi-consolidated alluvial deposits
+generally consisting of brown with multi-colored mottling, terrestrial sediments of
+medium stiff to very stiff consistency containing clayey silts and clasts of highly
+weathered basalt rock fragments with some hard cobbles and boulders. The clasts
+of embedded highly weathered rock fragments generally are rounded in shape and
+resemble stream pebbles of varying geologic origin. These alluvial deposits are
+older in age and typically comprise the basement region of channel and/or valley
+infilling. Old alluvial deposits may be encountered buried deeper in the subsurface
+with a cover of recent alluvium or exposed at the ground surface by erosional
+processes. Furthermore, old alluvium materials may be crushed by mechanical
+force and reduced to clayey silts with sand and gravel components.
+END OF SITE CHARACTERIZATION
+W.O. 5870-00 GEOLABS, INC. Page 8
+DRAFT
+SECTION 3.0 - DISCUSSION AND RECOMMENDATIONS
+The sewer force main will be installed using HDD methods at two sections of the
+alignment (“HDD 1” and “HDD 2”). The sewer force main will consist of a 9.05-inch O.D.
+fusible PVC pipe with a SDR of 14. Due to State of Hawaii — Department of
+Transportation requirements, the sewer force main will have to be encased if the sewer
+force main traverses below state highways/freeways. To provide the required
+encasement, a 13.02-inch O.D. fusible PVC pipe with a SDR of 18 will be installed by
+HDD methods. After installation of the encasement pipe, the sewer force main will be
+pulled through the encasement pipe.
+The total length of the “HDD 1” alignment is approximately 7,930.5 feet. The
+“HDD 1” alignment would encounter fills near the entry point. Below the fills, the
+alignment would encounter soft to medium stiff alluvium. Near the exit point, the
+alignment would encounter hard old alluvium and fills above the old alluvium. The total
+length of the “HDD 2” alignment is approximately 633.8 feet. The majority of the
+“HDD 2” alignment would encounter old alluvium. The “HDD 2” alignment would
+encounter fills near the entry point.
+Due to soft soil conditions, it appears that the drilling slurry pressure in the
+borehole may exceed the hydraulic fracture pressure of the in-situ soil formation
+between about 100 and 840 feet from the entry point for “HDD 1.” The HDD contractor
+should take the necessary precautions (such as drilling relief holes, using temporary
+casing, or controlling drilling slurry pressures) to reduce the potential for heave and/or
+blowout of the ground surface.
+For “HDD 2,” there is potential for the drilling slurry pressure in the borehole to
+exceed the hydraulic fracture pressure of the in-situ soil formation between the exit point
+and about 120 feet from the exit point during the reaming stage. The HDD contractor
+should control excessive drilling slurry pressure to reduce the potential for the drilling
+slurry pressure to exceed the hydraulic fracture pressure of the in-situ soil formation.
+W.O. 5870-00 GEOLABS, INC. Page 9
+SECTION 3 — DISCUSSION AND RECOMMENDATIONS
+DRAFT
+Cobbles and boulders may be encountered in the recent and old alluvium. If
+encountered along the alignment, the cobbles and boulders may be problematic and are
+expected to cause some difficulty in drilling and steering the pilot hole as well as drilled
+hole stability problems, such as caving in of the pilot and reamed holes. The caved-in
+materials would obstruct or divert reaming tools or the pipe string during pipe pullback.
+This will substantially increase the pulling stresses on the pipe string and may impede
+pipe pulling or damage the pipeline.
+Detailed discussion of these items and our geotechnical recommendations for
+design of the sewer force main installed by HDD methods are presented in the following
+sections of this report.
+3.1. Horizontal Directional Drilling Methods
+Horizontal directional drilling (HDD) is a trenchless, steerable installation method
+using a multi-axis drilling machine to bore a small diameter pilot hole in the subsurface.
+The pilot hole is bored using either controlled fluid jetting or fluid-assisted mechanical
+cutting, or a combination of the two methods. Depending on the subsurface conditions,
+water only or water mixed with bentonite and/or polymer can be used as a drilling fluid
+in a directional drilling application. The pilot hole is reamed, as necessary, to
+accommodate the pipe to be installed. The pipe is pulled back into the reamed hole by
+the drilling machine. Most HDD systems use slurry to stabilize the walls of the borehole
+and to reduce the frictional drag on the pipeline being installed. Steering corrections are
+made in the subsurface materials by rotating the slanted cutter shoe to the desired
+orientation and then advancing the shoe and string without rotation.
+In general, the HDD pilot hole is drilled nearly horizontal with entry and exit
+angles between 8 and 15 degrees measured from horizontal. However, steeper entry
+angles (about 20 degrees) may be required to avoid underground utilities and/or
+obstructions. Shallow working pits may be required at each end of the bore to allow
+placement of the drill pipe and to allow transition to the conventional pipe trench
+installation. The product pipe should be installed in one continuous operation, preferably
+without pause, and should protrude a sufficient distance beyond the entry and exit
+W.O. 5870-00 GEOLABS, INC. Page 10
+SECTION 3 — DISCUSSION AND RECOMMENDATIONS
+DRAFT
+points to allow proper termination or connection at a later time. Typically, high-density
+polyethylene (HDPE), steel, and polyvinyl chloride (PVC) pipes may be installed by
+HDD methods.
+The vertical and horizontal alignments of the drill hole typically are monitored
+from the surface by a locator, which tracks signals from the transmitter contained inside
+the drill head housing. Other methods of tracking the cutting tool, such as in-hole
+steering, are generally recommended to provide more precise line and grade
+information. The contractor should carefully monitor the drilling operation, when
+approaching property boundaries, and existing underground utilities or structures to
+assure that proper clearances are maintained.
+Due to State of Hawaii - Department of Transportation requirements, the sewer
+force main consisting of a 9.05-inch O.D. fusible PVC pipe with a SDR of 14 will have to
+be encased if the sewer force main traverses below state highways/freeways. To
+provide the required encasement of the sewer force main, we understand that a larger
+fusible PVC pipe consisting of a 13.20-inch O.D. pipe with a SDR of 18 will be installed
+by HDD methods. After installation of the encasement pipe, the sewer force main pipe
+will be pulled through the encasement pipe using the same HDD drill rig used to pull the
+encasement pipe.
+In general, the HDD alignment for “HDD 1” is about 1,930.5 feet long with an
+entry angle of about 20 degrees and an exit angle of about 15 degrees. The entry point
+is on a grassy median near the Halekou Sewage Pump Station. A steep entry angle
+was used to provide enough clearance between the pipe and the existing concrete
+channel located down slope. The vertical alignment extends to about 94 feet from the
+entry point where it begins an 800-foot curvature. The curvature continues until the
+vertical alignment attains a 3 percent upward slope. The vertical alignment continues
+with the 3 percent upward slope until about 1,153 feet from the entry point where it
+begins another 800-foot curvature. The curvature ends at about 1,746 feet from the
+entry point. The exit point is within the Pali Golf Course. The deepest invert elevation of
+W.O. 5870-00 GEOLABS, INC. Page 11
+SECTION 3 — DISCUSSION AND RECOMMENDATIONS
+DRAFT
+the “HDD 1” alignment is about +169 feet MSL. The vertical alignment of “HDD 1” is
+shown on Plate 3.
+The HDD alignment for “HDD 2” is about 633.8 feet long with an entry angle of
+about 15 degrees and an exit angle of about 15 degrees. From the entry point (at the
+Pali Golf Course), the vertical alignment extends about 182 feet and begins an 800-foot
+curvature. The alignment levels off and continues upward with a curvature of about 800
+feet up to the exit point. The exit point is on the HPU campus. The deepest invert
+elevation of the “HDD 2” alignment is about +199 feet MSL. The vertical HDD alignment
+of “HDD 2” is shown on Plate 3.
+3.1.1 HDD Geotechnical Considerations
+The technical feasibility of the HDD method depends on the characteristics of the
+materials at and along the depth of the pipeline profile, as well as the length of the
+drill path, and diameter of the pipe to be installed (American Gas Association,
+1995).
+The subsurface conditions at the two HDD alignments generally consist of fills over
+recent and old alluvium. The fills generally consisted of a thin layer of dense sands
+and gravel underlain by stiff silty and clayey soils. The recent alluvium generally
+consisted of soft to medium stiff silt and clay
+Based on the vertical alignment of “HDD 1,” this alignment would encounter a thin
+layer of fills near the entry point. Below the entry point, the “HDD 1” alignment
+would encounter recent alluvium, which consists of soft to medium stiff silt and clay.
+The soils would transition from recent alluvium to hard old alluvium near the exit
+point of the alignment (Pali Golf Course). At the exit point, the alignment would
+encounter fills.
+The vertical alignment of “HDD 2” would encounter fill underlain by old alluvium,
+which consists of stiff silt clayey silt, at the entry point (Pali Golf Course). The old
+alluvium would grade to hard with depth and near the exit point (HPU — Hawaii Loa
+campus).
+W.O. 5870-00 GEOLABS, INC. Page 12
+SECTION 3 — DISCUSSION AND RECOMMENDATIONS
+DRAFT
+The soft alluvium encountered along “HDD 1” alignment would make steering a drill
+hole in these subsurface materials more difficult and complicated. There is also a
+potential that ground heave or hydraulic fracturing of the soft soils may occur during
+the drilling and/or pullback. The unconsolidated subsurface materials generally
+have short stand up times and tend to have viscous fluid properties when disturbed
+by vibrations (liquefaction). Therefore, proper drilling mud properties and/or casing
+of the hole will be required in order to maintain the open hole integrity of the pilot
+hole and/or reamed hole. Otherwise, ground heave or hydraulic fracturing of the soil
+formations may occur during pullback if the reamed hole is not properly flushed of
+debris and/or caved-in materials, or if excessive drilling slurry pressure conditions
+are not controlled during the HDD installation.
+It should be noted that cobbles and boulders may be encountered in the recent and
+old alluvium. If encountered along the alignment, the cobbles and boulders may be
+problematic and are expected to cause some difficulty in drilling and steering the
+pilot hole as well as drilled hole stability problems, such as caving in of the pilot and
+reamed holes. The caved-in materials would obstruct or divert reaming tools or the
+pipe string during pipe pullback. This will substantially increase the pulling stresses
+on the pipe string and may impede pipe pulling or damage the pipeline.
+3.1.2 Pipe Size and Material
+The most important design consideration for the pipe is the tensile stresses
+imposed on the pipe when it is pulled into place through the drilled hole. The
+magnitude of these tensile stresses is a function of the length of the installation as
+well as the subsurface conditions. Other important pipe design considerations are
+the internal and external pressures acting on the pipe during and after installation.
+Factors affecting the loads and stresses on the pipe include the following:
+Radius of curvature
+Modulus of the pipe material
+Thickness of the pipe (SDR)
+Diameter (ID and OD) of the pipe
+Temperature
+W.O. 5870-00 GEOLABS, INC. Page 13
+SECTION 3 — DISCUSSION AND RECOMMENDATIONS
+DRAFT
+° Tension
+e Operating pressure
+e Differential pressure
+In addition to the pipe design considerations mentioned above, the selected pipe
+material must have adequate corrosion resistance or be protected to resist internal
+and external corrosion.
+We understand that fusible PVC pipes will be used as the encasement and the
+sewer force main pipes installed by HDD methods. Based on our analyses, a
+13.20-inch O.D. fusible PVC pipe with a SDR of 18 may be installed by HDD
+methods. PVC pipes may be susceptible to failure during installation, unless they
+are properly designed. This failure mechanism of the pipe limits the length of
+installation that can be completed with an PVC pipe. Therefore, it is critical that the
+pipe be selected with an adequate allowable pulling (tensile) capacity.
+The PVC pipe should be selected to provide the maximum pipe thickness and
+strength for the proposed installation based on the results of the pipe stress
+analyses, considerations regarding HDD installation procedures, probable drill hole
+sizes, and materials in-filling the annulus between the HDD installed PVC pipeline
+and the drilled hole. The contractor should adequately and properly ballast the
+pipelines during installation into the HDD drill hole to reduce the pipe weight, the
+effect of buoyancy, and the corresponding reduction in the tensile loads on the pipe
+string during pullback. Finally, PVC pipes should conform to the requirements of
+AWWA C 900 Class 150, as a minimum.
+3.1.3 Construction Staging Areas
+Staging areas will be required at the entry and exit locations for the HDD installed
+pipelines. Staging area requirements at the entry locations will depend on the size
+of the drill rig to be utilized for the HDD installation. For Mini drill rigs, a typical area
+of about 15 feet by 40 feet would be required. Typical staging areas for Midi drill
+rigs require an ideal area of about 100 feet by 150 feet and a minimum area of
+about 60 feet by 100 feet. An ideal area of 200 feet by 300 feet and a minimum
+W.O. 5870-00 GEOLABS, INC. Page 14
+SECTION 3 — DISCUSSION AND RECOMMENDATIONS
+DRAFT
+area of 100 feet by 150 feet are typically used for Maxi drill rigs. A summary of the
+typical staging area requirements at the entry location is presented in the following
+table.
+eo
+It should be noted that these requirements are ideal and may be changed based on
+N/A
+60 feet x 100 feet
+100 feet x 150 feet
+the existing conditions at the site. Based on the size and length of the pipe being
+installed and the calculated pullback loads, we believe that a Midi or Maxi drill rig
+may be used to install the sewer force main planned for the proposed project.
+Additional staging areas are also needed for pipe storage and for laying-out the
+pipe when the pipe string is assembled for testing and pullback. The pipe string is
+positioned at the exit pit and can be laid on the ground or on rollers. The staging
+area for laying-out the pipe for testing and pulling back is not required throughout
+the duration of the HDD installation operation (usually a couple weeks prior to pipe
+pullback). Based on the length of the pipe, a staging area of about 2,100 feet long
+by about 30 feet wide would be required for pipe layout.
+3.1.4 Construction Considerations
+Buried underground hazards, such as electrical cables, telecommunication
+cables and water lines may be present within the limits of the drill path during the
+HDD operation. Therefore, the directional control of the pilot drill bit is critical to
+the success of the proposed HDD sewer force main installation. Underground
+utilities and structures should be accurately identified, located, and avoided. It is
+important that the HDD contractor utilize an “in-hole steering tool” in conjunction
+with a “surface tracking system” to provide reliable horizontal and _ vertical
+W.O. 5870-00 GEOLABS, INC. Page 15
+SECTION 3 — DISCUSSION AND RECOMMENDATIONS
+DRAFT
+directional control during the sewer force main installation. The location of all
+underground utilities that crosses the HDD alignment should be verified by
+potholing.
+3.1.5 Type of Drilling Fluid
+Depending on the subsurface conditions, water only or water mixed with bentonite
+and/or polymer may be used as a drilling fluid in a directional drilling application.
+Water alone is normally suitable for drilling in silty or clayey soils. For soft/loose
+soils, polymer mixed with water will improve the stability of the borehole.
+The amount of drilling additives (bentonite or polymer) depends on the subsurface
+conditions (and experience of the contractor). The water used in the drilling fluid
+should not be hard or salty because this will cause poor mixing or yield with the
+bentonite or polymer and the flocculated bentonite may tend to settle to the bottom
+of the tank. Hard water should be treated with soda ash, and salt water generally
+should be avoided.
+3.1.6 Muck and Slurry Disposal
+Special muck and slurry handling procedures may be required for the HDD
+installation method for the proposed sewer force main installation. The properties of
+the various geologic units anticipated along the drill path as indicated by the grain
+size distribution tests should be taken into account in selecting an appropriate slurry
+separation plant.
+In order to aid in a clean site and to more readily separate the materials, a solids
+control or slurry separation plant with shakers, screens, de-sanders, de-silter cones,
+and centrifuge may need to be considered. This will facilitate a more rapid
+separation and disposal process. Additives may need to be included to get the
+fine-grained materials to flocculate so that a clean slurry can be returned to the drill
+head.
+Muck resulting from the HDD operations should be removed from the site and
+should be disposed of properly at an acceptable facility or designated area.
+W.O. 5870-00 GEOLABS, INC. Page 16
+SECTION 3 —- DISCUSSION AND RECOMMENDATIONS
+DRAFT
+Slurry from the HDD operations should be pumped into trucks for disposal in
+accordance with the applicable governmental regulations and agencies.
+Contaminated soils and/or groundwater (if applicable) should be handled, tested,
+and disposed of in accordance with the project specifications, guidelines, and
+government requirements.
+END OF DISCUSSION AND RECOMMENDATIONS
+W.O. 5870-00 GEOLABS, INC. Page 17
+DRAFT
+SECTION 4.0 - DESIGN CONSIDERATIONS
+4.1 Installation Considerations
+The pipe must be able to safely handle the loads imposed on the pipe during
+installation. The following items will need to be considered during the installation of the
+pipe.
+Tension Force
+Tensile Stresses
+External Pressure Due to Drilling Fluid
+Hydraulic Fracturing of the Near-Surface Soils
+The tension (pull-back) force on the pipe must overcome several forms of
+resisting forces during the pullback sequence. The resisting forces during the pullback
+sequence include the friction between the pipe and the borehole, friction between the
+pipe and the ground surface, “capstan” effect force which develops around bends, and
+hydrokinetic drag force of the drilling fluid. The most important consideration during
+installation of the pipe by HDD methods is the tensile stresses imposed on the pipe
+when it is pulled into place through the drilled hole. Polyvinyl chloride pipes may be
+susceptible to failure during installation. Therefore, the tensile stresses acting on the
+pipe due to the pullback force should not exceed the safe tensile stress of the pipe that
+is being pulled back.
+During the drilling operations, water only or water mixed with bentonite and/or
+polymer may be used as a drilling fluid. During pullback, the pipe may be subjected to
+external pressure due to the fluid head of the drilling fluid, whether it is water or a
+mixture of water and bentonite and/or polymer slurry. The external pressure acting on
+the pipe due to the drilling fluid must not exceed the buckling pressure of the pipe during
+pullback.
+Another important consideration during the drilling operations is to determine if
+the drilling fluid pressure in the borehole will exceed the hydraulic fracture pressure of
+the in-situ soils. The drilling fluid pressure is the sum of the hydrostatic pressure and
+circulation pressure required to overcome friction losses during flow. If the drilling fluid
+W.O. 5870-00 GEOLABS, INC. Page 18
+SECTION 5 — DESIGN ANALYSES
+DRAFT
+pressure exceeds the hydraulic fracture pressure of the in-situ soil or rock formation,
+there is a potential for heave and/or blowout of the ground surface.
+4.2. Service Life Considerations
+During the service life of the pipe, long-term loads are imposed on the pipe. The
+following long-term loads were identified for the service life of the pipe and were
+considered in our analyses:
+° External Pressure Due to Earth and Live Loads
+e Ring Deflection Due to Pipe Buoyancy
+° Ring Deflection Due to Earth and Live Loads
+After installation of the pipe by HDD methods, the drilled hole may deform
+considerably or even collapse. Drilled hole deformation normally is limited when arching
+in the soil is mobilized. Where arching in the soil develops, the earth pressure applied to
+the pipe is less than the overburden pressure. Typically, a depth of cover of at least
+five pipe diameters above the top of the pipe would be sufficient to develop arching in
+the soil.
+Ring deflection is caused by the non-uniform pressure acting on the pipe due to
+buoyancy or from earth and live loads acting on the pipe. Ring deflection reduces the
+hydrostatic collapse resistance of the pipe and also produces tensile bending stresses
+in the pipe wall. When the pipe is submerged in drilling fluid, there is a pressure
+difference resulting from the difference in fluid head at the crown and invert of the pipe.
+The larger pressure acting at the invert of the pipe causes an upward deflection toward
+the crown causing ring deflection due to buoyancy. Ring deflection due to earth and live
+loads occurs when soil deforms near the crown of the pipe, causing load to be applied
+to the crown of the pipe. An opposite reaction occurs at the invert of the pipe. Because
+the drilling fluid does not provide side support for the pipe, there is no horizontal
+pressure to resist the vertical deflection of the pipe. The ring deflection of the pipe must
+be limited to reduce the potential for instability of the pipe.
+END OF DESIGN CONSIDERATIONS
+W.O. 5870-00 GEOLABS, INC. Page 19
+DRAFT
+SECTION 5.0 - DESIGN ANALYSES
+5.1 HDD Design Data and Assumptions
+Our engineering analyses to determine the feasibility of using a 13.20-inch
+outside diameter (O.D.) fusible PVC pipe with an SDR of 18 were based on our field
+exploration and laboratory test data. In addition, the following data and assumptions
+were used in our analyses.
+e The installation stresses on the pipe for the proposed HDD alignment
+were determined from the computer program DRILLPATH2.
+° A wet installation condition with water in the pipe was used in our analysis.
+° The existing ground elevations were determined from the available project
+plans.
+° Due to the depth of cover, mobilization of arching in the soil of the
+collapsed borehole was considered in our analyses.
+e The drilled hole for the pullback will have a diameter of about 1.5 times the
+diameter of the pipe being installed.
+° The drilling fluid pressure versus the hydraulic fracture pressure of the
+in-situ soil and/or rock formation along the HDD alignment was determined
+from the computer program DRILLMUD.
+5.2 HDD Design Analyses
+The following analyses were performed to determine whether a 13.20-inch O.D.
+fusible PVC pipe with an SDR of 18 is feasible for the proposed HDD drive.
+° HDD Pull-back Forces and Stresses
+° Drilling Fluid Pressure Versus the Hydraulic Fracture Pressure of the
+In-Situ Soil
+e External Pressure Due to Hydrostatic Pressure of Drilling Fluid
+° External Pressure Due to Earth and Live Loads
+e Ring Deflection Due to Buoyancy
+° Ring Deflection Due to Earth and Live Loads
+W.O. 5870-00 GEOLABS, INC. Page 20
+SECTION 5 — DESIGN ANALYSES
+DRAFT
+A summary of the maximum pullback forces and stresses, external pressures
+acting on the pipe, ring deflection of the pipe due to buoyancy, and ring deflection due
+to earth and live loads for “HDD 1” and “HDD 2” is presented in the following table. We
+also have included the pertinent data, such as the allowable pullback forces and
+stresses, external pressures, and maximum ring deflections for the pipe in the table for
+ease of reference.
+Short-Term Loading Long-Term Loading
+Ring
+Deflection
+Drive/ External | External Ring due to
+Pipe Max Max Pressure | Pressure | Deflection | Earth and
+Tension Tensile Open Closed due to Live
+Force Stress Hole Hole Buoyancy Loads
+(pounds) (psi) (psi) (psi) (%) (%)
+HDD 1 Drive | 9 789 1,350 20.5 18.8 0.2 2.6
+Requirement
+HDD 2 Drive 8,204 . 3.9
+Requirement
+PVC Pipe
+(SDR 18) 80,300 2,800 36.2 20.9 5.0 5.0
+Allowable
+Capacit
+5.2.1 HDD Pull-Back Forces and Stresses
+The pullback force and stress analyses were performed using the program
+DRILLPATH2. The program solves for the tensile forces, tensile stresses, and the
+internal and external pressures acting along the length of the pipe being installed by
+HDD methods. Determination of the tensile forces and stresses along the HDD
+installed pipe is based on a mathematical model developed by Exxon Production
+Research (Johanesik et al., 1984). The mathematical mode! was modified by
+considering the bending influence by using the “capstan effect” instead of the
+original bending influence included in the model. The computer output of the
+pullback forces and stresses for the proposed HDD drive are presented in
+Appendix C.
+W.O. 5870-00 GEOLABS, INC. Page 21
+SECTION 5 — DESIGN ANALYSES
+DRAFT
+5.2.2 Drilling Fluid Pressure versus Hydraulic Fracture Pressure
+During drilling operations, the drilling slurry exerts a pressure in the borehole. If this
+pressure exceeds the hydraulic fracture pressure of the in-situ soil, then heave
+and/or blowout of the ground surface may occur. Drilling fluid pressure is
+determined from the sum of the hydrostatic pressure and circulation pressure of the
+drilling fluid. The hydraulic fracture pressure of the soil is the sum of the horizontal
+in-situ stress of the soil and the shear strength of the soil.
+Based on our analyses, it appears that the drilling slurry pressure in the borehole
+may exceed the hydraulic fracture pressure of the in-situ soil formation between
+about 100 and 840 feet from the entry point for “HDD 1.” This is most likely due to
+the soft soil conditions in the area.
+For “HDD 2,” the drilling slurry pressure in the borehole may exceed the hydraulic
+fracture pressure of the in-situ soil formation between the exit point and about
+120 feet from the exit point during the reaming stage.
+The HDD Contractor should take the necessary precautions (such as relief holes,
+using temporary casing, or controlling mud pressures) to reduce the potential for
+heave and/or blowout of the ground surface, especially in these areas of the sewer
+force main alignment. The computer output of the bottom hole pressure versus
+hydraulic fracture pressure of the soil along the HDD alignment is presented in
+Appendix D.
+5.2.3 External Pressure Due to Hydrostatic Pressure of Drilling Slurry
+The drilling slurry within the annular space of the pipe and borehole exerts an
+external hydrostatic pressure on the pipe. This hydrostatic pressure is equal to the
+height of the slurry head multiplied by the density of the slurry. The maximum
+height of slurry corresponding to the maximum hydrostatic pressure was used in
+our analysis and is presented in Appendix E.
+W.O. 5870-00 GEOLABS, INC. Page 22
+SECTION 5 — DESIGN ANALYSES
+DRAFT
+5.2.4 External Pressure Due to Earth and Live Loads
+We are not aware of published reports that provide acceptable methods of
+calculating the earth loads imposed on HDD installed pipes. To estimate the earth
+pressure on an HDD pipe, a conservative method to estimate the earth pressure on
+a jack-and-bored pipe developed by Stein et al., 1989, may be used. This external
+pressure was compared to the critical buckling pressure of the pipe using a factor of
+safety of 2. These calculations are presented in Appendix E.
+5.2.5 Ring Deflection Due to Buoyancy, and Earth and Live Loads
+The percent vertical deflection due to buoyancy and due to earth and live loads was
+estimated for the pipe for the proposed HDD drive. The estimated percent vertical
+deflection was limited to 4 percent, as specified in Table 2 of Reference 1 or
+Table 3 of Reference 2. These calculations are presented in Appendix E.
+END OF DESIGN ANALYSES
+W.O. 5870-00 GEOLABS, INC. Page 23
+DRAFT
+SECTION 6.0 - LIMITATIONS
+The analyses and recommendations submitted herein are based, in part, upon
+information obtained from the field borings. Variations of subsurface conditions between
+and beyond the field borings may occur, and the nature and extent of these variations
+may not become evident until construction is underway. If variations then appear
+evident, it will be necessary to re-evaluate the recommendations provided in this report.
+The field boring locations indicated in this report are approximate, having been
+taped from features shown on the topographic survey map provided by Bills
+Engineering Inc. Elevations of the borings shown on the logs of borings were
+interpolated between the contour lines shown on the same plan. The physical locations
+and elevations of the borings should be considered accurate only to the degree implied
+by the methods used.
+The stratification lines shown on the graphic representations of the borings depict
+the approximate boundaries between soil/rock types and, as such, may denote a
+gradual transition. Water level data from the borings were measured at the times shown
+on the graphic representations and/or presented in the text of this report. These data
+have been reviewed and interpretations made in the formulation of this report. However,
+it must be noted that fluctuation may occur due to variation in tides, rainfall,
+temperature, and other factors.
+This report has been prepared for the exclusive use of Hawaii Pacific University
+and their consultants for specific application to the Sewer Force Main, Hawaii Pacific
+University project in accordance with generally accepted geotechnical engineering
+principles and practices. No warranty is expressed or implied.
+This report has been prepared solely for the purpose of assisting the engineer in
+the design evaluation of the project. Therefore, this report may not contain sufficient data,
+or the proper information, to serve as the basis for preparation of construction cost
+estimates. A contractor wishing to bid on this project is urged to retain a competent
+W.O. 5870-00 GEOLABS, INC. Page 24
+SECTION 6 — LIMITATIONS
+DRAFT
+geotechnical engineer to assist in the interpretation of this report and/or in the performance
+of additional site-specific exploration for bid estimating purposes.
+The owner/client should be aware that unanticipated subsurface conditions are
+commonly encountered. Unforeseen subsurface conditions, such as _ perched
+groundwater, soft deposits, hard layers, or cavities, may occur in localized areas and may
+require additional probing or corrections in the field (which may result in construction
+delays) to attain a properly constructed project. Therefore, a sufficient contingency fund is
+recommended to accommodate these possible extra costs.
+This geotechnical engineering exploration conducted at the project site was not
+intended to investigate the potential presence of hazardous materials existing at the
+site. The equipment, techniques, and personnel used to conduct a geo-environmental
+exploration differ substantially from those applied in geotechnical engineering.
+END OF LIMITATIONS
+W.O. 5870-00 GEOLABS, INC. Page 25
+DRAFT
+CLOSURE
+The following plates and appendices are attached and complete this report:
+Plate 1 - Project Location Map
+Plate 2 - Site Plan
+Plate 3 - HDD Vertical Alignment Plan
+Appendix A - Field Exploration
+Plate A - Log Legend
+Plates A-1 - Logs of Borings
+thru A-4
+Appendix B - Laboratory Testing
+Plates B-1 - Laboratory Test Data
+thru B-7
+Appendix C - Pipe Pullback Analysis
+Appendix D - Hydraulic Fracture Analysis
+Appendix E - Service Life Load Calculations
+-0000000000000000000-
+Respectfully submitted,
+GEOLABS, INC.
+DRAFT
+By
+Glenn G. Barut, P.E.
+Project Engineer
+DRAFT
+By
+Clayton S. Mimura, P.E.
+President
+47
+CSM:GB:cj (n:\5800 Series\5870-00.gb1 — p32)
+W.O. 5870-00 GEOLABS, INC. Page 26
+PLATES
+Seveago \ PACIFIC OCEAN
+Despasal é a
+Rs
+|} ISLAND MAP _ Sarsers pont
+NO SCALE
+GENERAL PROJECT LOCATION >:
+1! ; EN
+eNO | CHa
+He
+Se
+i Z
+ss as)
+é Ai
+“ On
+i Amt
+<2 fi
+setae
+i
+: es
+‘i:
+LISS,
+a
+3 Spee ce
+ae
+IT A)
+Sian
+SORES
+PROJECT LOCATION MAP
+SEWER FORCE MAIN
+HAWAII PACIFIC UNIVERSITY
+KANEOHE, OAHU, HAWAII
+GEOLABS, INC.
+Geotechnical Engineering
+DRAWN BY
+DATE PLATE
+FEBRUARY 2008]  KHN
+SCALE W.0.
+4" = 2,000' 5870-00 1
+PROJECT LOCATION
+0
+2000 1000
+GRAPHIC SCALE
+REFERENCE: MAP CREATED WITH TOPO!® ©2001 NATIONAL
+GEOGRAPHIC (WWW.NATIONALGEOGRAPHIC.COM/TOPO).
+User: KIM File Created: February 19, 2008 File Last Updated: February 20, 2008 9:03:01am
+File: TADrafting-S904\Working\5870-00HawaiiP acificUniversitySewerS870-00PLM.dwo\PLM
+User: KIM File Created: December 27, 2007 File Last Updated: February 25, 2008 12:21:36pm
+File: TADrafting-9904\Working\587 0-00HawaiiPacificUniversitySewen5870-00SitePlan.DWG\SitePlan
+or
+at
+: One
+6 2
+30898 320453, ee soe’ &
+x G00 rT ee se iS
+se A °° Kr
+5 TAS iS
+3 J. BURNS FREEWAY/H-3
+ff : / Nx
+HAWAII MEMORIAL PARK g at BEGINHDD2 ~~
+VETERANS CEMETERY ile oe
+a i HAWAII PACIFIC UNIVERSITY
+ve. 4 HAWAII LOA CAMPUS
+BEGIN HDD 1 SEWER FORCE MAIN
+J ALIGNMENT e
+23 —
+<2¢ 316°20'30" 9959"
+76.00
+316°20'30% 316:20'30" — 246.49
+$9.15 | _
+Pes =! rs ieee CE=yn
+= END HDD 1 & HDD 2
+TT 7
+A
+a \ es
+\ Lofosith ,
+~ TY
+ray? | bi? A Via
+s Ce (AG
+f i Hi ah vA
+i
+bal
+UT
+Ny
+Nh fa apnea pl
+edtyy)
+7 Ail
+HH ed, /f if
+Wh / Ha
+f / H | hiya) !
+6 HEH TE Mihai \
+PALI MUNICIPLE GOLF COURSE
+if
+URNS FREEWAY
+SITE PLAN
+SEWER FORCE MAIN
+HAWAII PACIFIC UNIVERSITY
+KANEOHE, OAHU, HAWAII
+GEOLABS, INC.
+Geotechnical Engineering
+DATE DRAWN BY PLATE
+FEBRUARY 2008 KHN
+SCALE wo.
+1" = 200° 5870-00 2
+LEGEND: *
+e APPROXIMATE BORING LOCATION
+0 100 = 200 400 600 FT. WN
+REFERENCE: SITE PLAN PROVIDED BY BILLS ENGINEERING GRAPHIC SCALE
+INC. ON FEBRUARY 7, 2008.
+HDD 1
+SFM PROFILE
+AE EEEEHEEEEEEE EEE REEL SERRE HEEEEEEH EEE RE HERE EEEREREEHE EEE E =z Lu
+EE TATRA, OME
+20°:
+4
+BeESREESEEEE PE Ed 2 Do
+BEL t9pES— za —_ had 4
+BaREEEE BeEREe aah hie anna Er Rana — =
+NN eh LL z@s 8) 2
+WT oo jsoeez| =“ ij
+SUEDE UPRAOREABRORGGDAGARARTRGRGGIGG EEE =|<uiz |O\5
+- - ~jq-]-}4- fd] f-] ted [ed fb fd} $1 = : -F. za i
+TT par} S @) 552 aAlis[ a
+UH PUAN ANERNDS cc CUR ARRARE Ts mi att, 2] 8] 8.
+\ {Sex |Olg) 8] fe
+ITT Hr TTT iit JU ts WW we) oe
+ozs S wy Ww 3] 2b
+lcovzce] o << tT w Ou
+i} LLL LEE BARAAAUGRARAVNRMBANE aneee N PLO Fa] ar>
+HEH ret SUACAHTITFARITTILie Elnsz
+aE “| =
+EL] TL | Jt} ti -]-! aan | | 4. Nw <x
+UTEP TTREETECTTECLICETEEE LTT TUTTLE ui] =
+ATTIRE PUTT TULLE FOCAL. >
+avesy O
+TTR, eT ATT Tah 1 prez Q
+Fecal J rf oO
+s
+§ ‘oy [ i eey ©
+3 ae foo s22| +
+rd my
+_|4]. i A a ELT LT Fb peeled bat ep ob ™
+: hal TT : I TECH I il TAT ‘sid 8
+Sail iss io0'9zz|
+ATT eit EET Ls
+3S &
+He | -|4- —}—-}-]—}—]—| TEL I-}+]-+ 4-4-4 -; ‘-j-|-] --t | bi- = =
+EAP] E MRE TENA EE ed
+ey zed O we LL
+2 feeze| + OQ Oo
+- ‘' san rrr rere eee “TT -] TEP ET IT TT ne N oO N
++ LEY HF BES fe ee ee eee eee) eee eee a LE i<e] —
+SanaRanae vane LORELEI pt. 8
+0°
+foo ree] 5
+Aft EEE REE LY) La ef Lg tl ff efelefele] dele daf . s
+SD SRSRRRRSESS 08 ft fl4}f]]. . TCT -
+ELE LEAL 4 ele fedel fedola |) aD. ROROROR ORG Ree °
+aah Somuw Saw
+WUT TT THLE RE HTTL SET - . < Fe
+| | rece] Q oO
+ROPER BOG RO ORR ee eee EEE EEL EEL) |) tee . LL = =r =
+tt SPOR ORRGGHEGGHD - HHH AE HE-HA-EEF-F I-Ie Pt oO a,
+rT ay S Oo Sao
+Sls iw'eca SD Qo oO
+s/s ae oO
+ETP PEEP LEED PSE EEL E LE Nd tet dS .
+te sete) co) °
+- aan apsfasf of. - | 4- IE —
+SS _ fe
+ebd-ff.l. Hed Sherbet Sle-H ttt SaBERRORVAERRR ana Ranene [@) ra
+te {| 9 2 23 BARR eReen rae _ yy _ N oc
+ae -osd 2 faa
+Ely, ‘OS: + Lu
+TET a TET LT Tesh PTET TTT TT] "4 2 Oo >
+3 Ir
+Tries ARRERRen Pe eeSR Ree ORO THHTL le
+= Bi EDDY
+-| -] j~ -| = jas] fm] f= Saas =|} | 14 -}-]-! — i! - -
+SRRRER Re AI > EE ETE. o
+z
+. J
+| || & yt BL. |. a a= -
+TTT CAAA ETAT il
+we x 8
+2 84 7 q Tee] +
+LLL LLL HHS <4) RSL ELL Alp ye
+eh Je |. BARR RO OO Ae mt or en -
+CERES EH
+3 S| I il i J ry
+are oo viz) +
+44 ELL | -B)-2y 4 an aaaane f an a
+St ele
+HHH | ft St Slew }-ff-1-NI- + 1) 4
+AD -] -f- [4 -E-T-E- | |] p= fff he. arn —< +4! -|+4 -|-}-4-|4-]-94-1-]-1. |
+2g siz) O
+* Tie}
++L}.]]4 an S44 yeee | BEE RERERERED . bea
+8
+s 201 S
+2
++5603 O
+PS Goch +
+ty EI 4-t dt PLE PEEL AE ELLE A
+| | zl =-i}++-(4 ++} a2 8 . .. Lit At
+a ZSe 6zud O
+She “Ss { Eat 5
+HH iat et ete _o LLG) ULL Gene RRReeee
+BEReRaee Jai chet ols LL T] 4 Je AP gt o a
+OE 5} St 8 2Z'1$7 O (ma)
+TEETES sll) af SETA LETT Esser EELS 5
+43s sities os
+_| - St Shekel BT TTT TTT TT chines LL Ht ro
+“|. ae 2 Orisa O an
+acne ‘| 8] Sly. nis orteees s a Zn
+ALLL {)su 2 FY MURR RRR PaaS GRORROROR aan w
+ty O. =
+HE EERE E-EEEEEEH St 4 ERE er ed eH --HFEE 3 a)
+j yisd O Zar
+za2se| + LU a
+Ad A ra “
+aanRaa LES AUC EEE EEE EEE EEE au
+3 és 3 z°
+-- Bhs} tt OAS LLL +} seen “Habe 4 < 22
+ahs
+He 6
+-¥. HIS 0040 3 > WwW
+TEESE ATTEUEEELETELEEEEEL? CATTTTLEL LET ELECT iz
+CUE HOE 29
+o [=}
+8 5 2 g A a 8 3 Li
+(1934) SNOLWARTa WwW =
+UE |d TUSLWUBYY EA GOH\SMp ue] UELUBKYACHOO-OZES EMSS AISIOAUN|DIIOe gEMEHOO-OZES\BUPHOAN\PORG-OUeIA\.L -Olld
+woo: 12:2 8002 ‘ez Aleniqe4 :payepdn ise ally 200z ‘22 Jequieseg :peyealg elt WIM ESN
+APPENDIX A
+Field Exploration
+DRAFT
+APPENDIX A
+Field Exploration
+The subsurface conditions were explored by drilling and sampling four test
+borings, designated as Boring Nos. 1 through 4, extending to depths of about 11.5 to
+86.5 feet below the existing ground surface. The test borings were drilled using a
+truck-mounted drill rig equipped with continuous flight augers. The approximate boring
+locations drilled are shown on the Site Plan, Plate 3.
+The materials encountered in the borings were classified by visual and textural
+examination in the field by our geologist, who monitored the drilling operations on a
+near-continuous basis. Soils were classified in general conformance with the Unified
+Soil Classification System, as shown on Plate A. Graphic representations of the
+materials encountered are presented on the Logs of Borings, Plates A-1 through A-4.
+Relatively “undisturbed” soil samples were obtained from the borings drilled in
+general accordance with ASTM D 3550, Ring-Lined Barrel Sampling of Soils, by driving
+a 3-inch OD modified California sampler with a 140-pound hammer falling 30 inches. In
+addition, some samples were obtained from the borings drilled in general accordance
+with ASTM D 1586, Penetration Test and Split-Barrel Sampling of Soils, by driving a
+2-inch OD standard penetration sampler using the same hammer and drop. The blow
+counts needed to drive the sampler the second and third 6 inches of an 18-inch drive
+are shown as the “Penetration Resistance” on the Logs of Borings at the appropriate
+sample depths.
+Pocket penetrometer tests were performed on selected cohesive soil samples in
+the field. The pocket penetrometer test provides an indication of the unconfined
+compressive strength of the sample. Results of the pocket penetrometer tests are
+summarized on the Logs of Borings at the appropriate sample depths.
+(h:\5800 Series\5870-00.gb1 — p35)
+W.O. 5870-00 GEOLABS, INC. MAY 2008 Page A-1
+GEOLABS, INC.
+Geotechnical Engineering
+Log Legend
+UNIFIED SOIL CLASSIFICATION SYSTEM (USCS)
+MAJOR DIVISIONS
+GRAVELS
+GRAVELS
+LESS THAN 5%
+COARSE- FINES
+GRAINED
+SOILS GRAVELS WITH
+MORE THAN 50%
+FINES
+OF COARSE
+FRACTION
+RETAINED ON
+NO. 4 SIEVE
+MORE THAN 12%
+CLEAN SANDS
+SANDS
+LESS THAN 5%
+MORE THAN 50% FINES
+OF MATERIAL
+RETAINED ON NO.
+200 SIEVE
+50% OR MORE OF
+COARSE FRACTION
+PASSING
+THROUGH NO. 4
+SIEVE
+SANDS WITH
+FINES
+MORE THAN 12%
+FINES
+LIQUID LIMIT
+LESS THAN 50
+§0% OR MORE OF
+MATERIAL PASSING
+THROUGH NO. 200
+SIEVE
+HIGHLY ORGANIC SOILS
+LIQUID LIMIT
+50 OR MORE
+TYPICAL
+DESCRIPTIONS
+WELL-GRADED GRAVELS, GRAVEL-SAND
+MIXTURES, LITTLE OR NO FINES
+POORLY-GRADED GRAVELS, GRAVEL-SAND
+MIXTURES, LITTLE OR NO FINES
+SILTY GRAVELS, GRAVEL-SAND-SILT
+MIXTURES
+ime © 0 . .
+CLAYEY GRAVELS, GRAVEL-SAND-CLAY
+MIXTURES
+WELL-GRADED SANDS, GRAVELLY SANDS,
+LITTLE OR NO FINES
+POORLY-GRADED SANDS, GRAVELLY
+SANDS, LITTLE OR NO FINES
+SILTY SANDS, SAND-SILT MIXTURES
+Cc CLAYEY SANDS, SAND-CLAY MIXTURES
+NN
+INORGANIC SILTS AND VERY FINE SANDS,
+ROCK FLOUR, SILTY OR CLAYEY FINE SANDS
+OR CLAYEY SILTS WITH SLIGHT PLASTICITY
+INORGANIC CLAYS OF LOW TO MEDIUM
+PLASTICITY, GRAVELLY CLAYS, SANDY
+CLAYS, SILTY CLAYS, LEAN CLAYS
+QO
+L
+ORGANIC SILTS AND ORGANIC SILTY
+CLAYS OF LOW PLASTICITY
+INORGANIC SILT, MICACEOUS OR
+DIATOMACEOUS FINE SAND OR SILTY
+SOILS
+ty
+4
+y
+Vrs
+hy
+i
+WV,
+Ww)
+l
+CH INORGANIC CLAYS OF HIGH PLASTICITY
+WY
+ORGANIC CLAYS OF MEDIUM TO HIGH
+PLASTICITY, ORGANIC SILTS
+iS\
+“a
+I:
+%-
+I
+PEAT, HUMUS, SWAMP SOILS WITH HIGH
+ORGANIC CONTENTS
+vu
+i
+Yon
+I~
+tn
+NOTE: DUAL SYMBOLS ARE USED TO INDICATE BORDERLINE SOIL CLASSIFICATIONS
+LEGEND
+(2-INCH) 0.D. STANDARD PENETRATION TEST
+(3-INCH) O.D. MODIFIED CALIFORNIA SAMPLE
+SHELBY TUBE SAMPLE
+GRAB SAMPLE
+CORE SAMPLE
+LOG LEGEND 5870-00,.GPJ GEOLABS.GDT 2/20/08
+ry i)
+coud
+r oF
+LIQUID LIMIT ) A ia
+PLASTICITY INDEX ) “
+TORVANE SHEAR (tsf}
+POCKET PENETROMETER (tsf)
+UNCONFINED COMPRESSION (psi)
+Plate
+A
+WATER LEVEL OBSERVED IN BORING
+GEOLABS, INC. SEWER FORCE MAIN
+HAWAII PACIFIC UNIVERSITY
+: : . KANEOHE, OAHU, HAWAII
+Geotechnical Engineering
+Laboratory
+Other Tests
+Sample
+Pan)
+5
+c
+Pa
+>S
+ae
+a
+war
+cS
+a
+w
+c
+co)
+O
+Resistance
+(blows/foot)
+Pocket Pen.
+Depth (feet)
+Cc
+2
+o =
+yy]
+s &
+bh o
+= c
+S a
+= oO
+MH | Orangish brown with black and gray mottling
+SSNS NAAN NAANANAANAANAAN™S
+KAN ANAAAAAAN
+> <a eee << > << >
+De Dae Sg De he She hee Dae he he eg he a ae ee ee he ee!
+75 ft. 7/26/07 1430 HRS
+Water Level:
+Drill Rig:
+Drilling Method: 6" Hollow-Stem Auger A-1.4
+Kl
+CME-75
+BORING LOG 5870-00.GPJ GEOLABS.GDT 2/25/08
+Approximate Ground Surface
+Elevation (feet MSL): 263 *
+Description
+Orangish brown CLAYEY SILT, stiff, dry (fill)
+Orangish brown CLAYEY SILT, soft, dry
+(alluvium)
+grades with black mottling and with sand, very
+stiff, damp
+CLAYEY SILT with sand and gravel (basaltic),
+very stiff, damp (alluvium)
+grades to stiff, wet
+grades to brown with saprolitic gravel
+[ bgue
+Plate
+GEOLABS, INC. SEWER FORCE MAIN
+HAWAII PACIFIC UNIVERSITY
+KANEOHE, OAHU, HAWAII
+Geotechnical Engineering
+(Continued from previous plate)
+Description
+grades to very soft
+phic
+Dry Density
+(pef)
+RQD (%)
+Depth (feet)
+ee eee << ee <a eee <P
+Penetration
+o> Resistance
+(blows/foot)
+Pocket Pen.
+(tsf)
+USCS
+~ | Moisture
+™! Content (%)
+grades to medium stiff
+grades to very soft
+grades to medium stiff
+grades with reddish orange mottling, soft
+MH | Reddish brown CLAYEY SILT with saprolitic
+sand and gravel, stiff, wet (alluvium)
+grades to brown with gray mottling, soft
+SANA SS SS CS CB CC CS OT
+KAS ANAS AAAAAS SSAA AAR ANAS A AASAANSAASAAAAA SS SAAS SS ASAAAASASASASASAASAAANSSAASSAS SAAN Gra
+RNS SSIS SERRATE
+BC _—
+gi
+Water Level: 2 75 ft. 7/26/07 1430 HRS
+Plate
+[ Total Depth: 86.5feet_—__—_—‘| Dring Method: 6"HollowSiemAuger——SSS«d:COA- 41.2
+BORING LOG 5870-00.GPJ GEOLABS.GDT 2/25/08
+Driving Energy: 140 Ib. wt., 30 in. drop
+Work Order: 5870-00
+2 212 Coes
+© c iad waEE
+5 R2ia on |a23
+s o5|eo go |S3e
+Oo Solas et lawl
+75 | 56 10
+Date Completed: July 26, 2007
+BORING LOG 5870-00.GPJ GEOLABS.GDT 2/25/08
+GEOLABS, INC.
+Geotechnical Engineering
+Laboratory
+Depth (feet)
+po “eT Sample
+Pocket Pen.
+Date Started: July 26, 2007 Water Level: Z 75 ft. 7/26/07 1430 HRS
+Logged By: D. Gremminger Drill Rig: CME-75
+Total Depth: 86.5 feet Drilling Method: 6" Hollow-Stem Auger A-1.3
+Work Order: 5870-00 Driving Energy: 140 Ib. wt., 30 in. drop
+SEWER FORCE MAIN
+HAWAII PACIFIC UNIVERSITY
+KANEOHE, OAHU, HAWAII
+(Continued from previous plate)
+Description
+phic
+USCS
+H | grades to stiff
+grades to soft
+RNS SSS Ss an agg hg he She Dh he Shee Shee eee a
+Ce BRAASAASASSAAASSASS SS ASS Gra
+EN IN ISIS SSS SSE NNR
+ML | Dark brown with black and orange mottling
+SANDY SILT with saprolitic gravel, medium stiff
+(alluvium)
+Boring terminated at 86.5 feet
+* Elevations estimated from Site Plan
+provided by Bills Engineering Inc. on
+February 7, 2008.
+GEOLABS, INC. SEWER FORCE MAIN
+HAWAII PACIFIC UNIVERSITY
+KANEOHE, OAHU, HAWAII
+Geotechnical Engineering
+Laboratory
+Content (%)
+3
+2
+6
+a)
+2
+7)
+i
+S
+Oo
+Water Level: Y 19.4 ft. 10/25/07 1049 HRS
+Plate
+Drill Rigs OME-78
+A-2.4
+[2]
+4
+w
+a
+a
+E
+ao
+pray
+a)
+a
+oO
+3
+2
+f=]
+i
+ao
+ire
+o
+4,
+9
+2
+oe
+9
+oO
+Approximate Ground Surface
+Elevation (feet MSL): 222 *
+Y
+oO
+a) Description
+Py} Sir )\2.5-inch ASPHALTIC CONCRETE
+Yj CH |\ Light gray SANDY GRAVEL (BASALTIC) with
+silt, medium dense, damp (base course)
+Dry Density
+(pef)
+Core
+Recovery (%)
+Depth (feet)
+> > <a eee << eee <C> SE
+(blows/foot)
+Pocket Pen.
+Penetration
+Resistance
+Graphic
+WG
+foe]
+NO
+Brown SILTY CLAY with some gravel and sand,
+medium stiff, damp to moist (fill)
+with silt, medium dense, moist (fill)
+Brown SILTY CLAY with gravel and sand,
+medium stiff, damp (fill)
+Brown with multi-color mottling SILTY CLAY with
+gravel, very stiff, damp (alluvium)
+Aja
+ge
+7
+88
+EE EE EEE ESE SE. EEE TE ET ES
+L } Orangish brown SANDY CLAY with some gravel,
+soft, wet (altuvium)
+66
+LE BEBE EER ER EEE EEE SESESE
+LAB BEBE EEBREBRESRBRESBSEEEY
+o i?) Qa
+La RREBAREEEEREREESBE™|’
+LE EE EE EE EEE EE OE OER"
+Brown with gray mottling SILTY CLAY with some
+gravel, medium stiff (alluvium)
+53
+4
+H | Tannish brown with multi-color mottling SILTY
+CLAY, medium stiff (alluvium)
+5870-00 Driving Energy: 140 Ib. wt., 30 in. drop
+SEWER FORCE MAIN
+HAWAII PACIFIC UNIVERSITY
+KANEOHE, OAHU, HAWAII
+Laboratory
+Approximate Ground Surface
+Elevation (feet MSL): 275 *
+Description
+qi\4-inch ASPHALTIC CONCRETE
+SW |\Gray SANDY GRAVEL (BASALTIC) with some i
+silt, dense, damp (base course)
+)
+Dry Density
+(pc)
+Recovery (%)
+Other Tests
+Moisture
+Content (%)
+Depth (feet)
+(blows/foot)
+Pocket Pen.
+Penetration
+Resistance
+a Graphic
+Gray GRAVELLY SAND (BASALTIC), dense,
+damp (fill
+Reddish brown with gray mottling SILTY CLAY
+with gravel and sand, very stiff, damp (fill)
+Yellowish tan with multi-color mottling SILTY
+CLAY with sand, very stiff, damp (fill)
+Water Level: Z Not Encountered
+Pat
+A-3
+Work Order: ___ 870-00
+-
+M
+JF Belluscs
+grades to orangish red with multi-color mottling
+Reddish brown with multi-color mottling CLAYEY
+SILT, hard, damp (residual soil}
+BS NS SSS a a ane Sa ae he ae hg he Shy he hg De ee he
+NA AAAANSSASSAASANSASAS SS ASS
+RAAAAAAASASAASewswsw““4
+Boring terminated at 26 feet
+BORING_LOG 5870-00,GP) GEOLABS.GDT 2/25/08
+GEOLABS, INC. SEWER FORCE MAIN
+HAWAII PACIFIC UNIVERSITY
+KANEOHE, OAHU, HAWAII
+Geotechnical Engineering
+Laboratory
+Approximate Ground Surface
+Elevation (feet MSL): 240 *
+[Sample
+phic
+USCS
+KAANSSASSAASASAASSSSSS AS] Gra
+RVAANIAASAASAAASSESASSSESEESEES
+3
+a)
+o
+a
+c
+2
+g
+oO
+c
+o
+a
+Other Tests
+Moisture
+2
+&
+fend
+8
+o
+a
+Content (%)
+~ Dry Density
+~ — [(pef)
+(=)
+2
+z
+2
+2
+Depth (feet)
+S]
+i}
+BS
+2
+w
+[4
+Description
+Reddish brown CLAYEY SILT, very stiff, dry
+(alluvium)
+Core
+25 | 4.0
+grades to medium stiff
+grades to very stiff, damp
+grades to stiff
+Ne Sic Se Shae ee ae he Shee ge ae age hee Shee Shee She She Shee Ss gee hee hel
+Boring terminated at 11.5 feet
+Yoh ia
+fl jaa {
+ok af ul of H
+ee ee
+Water Level: Y Not Encountered
+Pat
+Drilling Method: 4" Solid-Stem Auger A-4
+BORING _LOG 5870-00.GPJ GEOLABS.GDT 2/25/08
+APPENDIX B
+Laboratory Testing
+DRAFT
+APPENDIX B
+Laboratory Testing
+Moisture Content (ASTM D 2216) and Unit Weight (ASTM D 2937)
+determinations were performed on selected soil samples as an aid in the classification
+and evaluation of soil properties. The test results are presented on the Logs of Borings
+at the appropriate sample depths.
+Four Atterberg Limits tests (ASTM D 4318) were performed on selected soil
+samples to evaluate the liquid and plastic limits. The test results are summarized on the
+Logs of Borings at the appropriate sample depths. Graphic presentation test results is
+provided on Plate B-1.
+Four Sieve Analysis tests (ASTM C 117 & C 136), including four Hydrometer
+tests (ASTM D 422), were performed on selected soil samples to evaluate the gradation
+characteristics of the soils and to aid in soil classification. Graphic presentations of the
+grain size distribution are provided on Plate B-2.
+Three Direct Shear tests (ASTM D 3080) were performed on selected samples to
+evaluate the shear strength characteristics of the materials tested. The test results are
+presented on Plates B-3 through B-5
+Two Unconsolidated Undrained Triaxial compression tests (ASTM D 2850) were
+performed on selected samples of the soil to evaluate the undrained shear strength of
+the soils. The results of the unconsolidated undrained triaxial compression tests are
+presented on Plates B-6 and B-7.
+(h:\5800 Series\5870-00.gb1 — p37)
+W.O. 5870-00 GEOLABS, INC. MAY 2008 Page B-1
+PLASTICITY INDEX
+ERR
+CT
+[-
+oT
+[-
+BZ
+an
+Ct
+[-
+[-
+Ly
+aa eeNees
+LIQUID LIMIT
+To
+Brown with gray mottling clayey silt(MH)
+Yellowish tan with multi-color mottling silty clay (CH)
+4] B83 32 | Reddish brown with multi-color mottling clayey silt (MH)
+Reddish brown clayey silt (MH)
+ATTERBERG LIMITS TEST RESULTS - ASTM D 4318
+GEOLABS, INC.
+GEOTECHNICAL ENGINEERING SEWER FORCE MAIN
+HAWAII PACIFIC UNIVERSITY
+W.O. 5870-00 KANEOHE, OAHU, HAWAII
+G _ ATTERBERG 5870-00.GPJ GEOLAB8S.GDT 2/25/08
+G GRAIN SIZE _5870-00.GPJ ———— 2/25/08
+PERCENT FINER BY WEIGHT
+| | +|>| Ble]
+rm}rm] os
+eu)
+ne)
+U.S. SIEVE OPENING IN INCHES U.S. SIEVE NUMBERS | HYDROMETER
+314 V2e—_ 3 ay 50 co 100 . ,,, 200
+TCO Teh STAT ALT ET ET
+EAL TA MN EM
+| NAL UNE TITTY P|
+WENA WATT [ITT
+UNS PTT
+ON ll
+E
+a te NLT | TT
+A) RS aN
+Meeks Il
+Hom SU
+ULL UTNSNITN
+tS Th i
+oa AG
+ATT TM
+BS/RRERY
+ee ee ee ee 2 ee ee ee ee ee
+in
+i
+mi
+Z|
+FASE EF
+i
+i
+a
+i
+i
+i
+.
+J
+7]
+a
+E—| a ——
+jn === == CEXEEEE EXEEEE) EERE)
+a a ee es ee
+a
+| a
+a
+aa
+SY
+| is
+ee ee ee oe, 0 < oe ey, Sere ae
+a
+a
+a
+x
+J
+A
+TN
+N
+i
+a
+a
+GRAIN SIZE IN MILLIMETERS
+GRAVEL SAND
+cere [ease [fre [oars [mec [fe =e
+Sample Description
+52
+eee
+Sige Ospn  DTO0 Gm] DEO a [BROT OTE) | Gre
+B-1 0.88
+19.5-21.0
+195210)
+a
+GEOLABS, INC. a
+GEOTECHNICAL ENGINEERING SEWER FORCE MAIN
+HAWAIi PACIFIC UNIVERSITY
+KANEOHE, OAHU, HAWAII
+B-2
+B-2
+W.O. 5870-00
+4
+w
+2
+xr
+e
+9g
+Zz
+uw
+o
+-
+ir
+Lu
+7)
+NORMAL PRESSURE, psf
+Sample: B-1
+Friction angle (degrees): 40
+cohesion (psf): §39
+sf Depth: 70.0 - 71.5 feet
+Description: Brown with gray mottling clayey silt (MH) sy Al fos |
+Ld, x 3 _
+GEOLABS, INC. DIRECT SHEAR TEST - ASTM D 3080
+GEOTECHNICAL ENGINEERING SEWER FORCE MAIN
+HAWAII PACIFIC UNIVERSITY
+W.O. 5870-00 KANEOHE, OAHU, HAWAII
+-
+wu
+Q
+x
+ld
+Zz
+i
+va
+Ke
+w
+xe
+rd
+uw
+x=
+wo
+NORMAL PRESSURE, psf
+Sample: B-2
+Friction angle (degrees): 30
+cohesion (psf): 232
+Depth: 34.5 - 36.0 feet
+Description: Tannish brown with multi-color mottling silty clay L, | By A E T :
+GEOLABS, INC. DIRECT SHEAR TEST - ASTM D 3080
+GEOTECHNICAL ENGINEERING SEWER FORCE MAIN
+HAWAII PACIFIC UNIVERSITY
+W.O. 5870-00 KANEOHE, OAHU, HAWAII
+7
+/:
+a
+x
+Zz
+4
+or
+Fk
+oc
+uu
+0 3
+2,000
+NORMAL PRESSURE, psf
+Friction angle (degrees): 27
+cohesion (psf): 411
+Sample: B-4
+31 Depth: 5.0 - 6.5 feet rg"
+Description: Reddish brown clayey silt f ) [2) WY fics i
+Lou Baa
+GEOLABS, INC. DIRECT SHEAR TEST - ASTM D 3080
+GEOTECHNICAL ENGINEERING SEWER FORCE MAIN
+HAWAII PACIFIC UNIVERSITY
+W.O. 5870-00 KANEOHE, OAHU, HAWAII
+UNCONSOLIDATED UNDRAINED COMPRESSIVE STRENGTH OF COHESIVE SOILS
+IN TRIAXIAL COMPRESSION - ASTM D 2850
+3.5
+i)
+x
+wo
+a
+2
+7)
+&
+o
+a
+7 8 9
+Axial Strain, %
+LOCATION: B-1
+DEPTH : 80 - 81.5 feet
+DESCRIPTION: Dark brown with black and orange mottling sandy silt
+DRY DENSITY: 55.6 pcf SAMPLE DIAMETER: 2.385 inches
+MOISTURE CONTENT: 67.4 % SAMPLE HEIGHT: 5.678 inches
+AT FAILURE
+STRAIN RATE = 1.05 %/min.
+CONFINING PRESSURE = 4.0 ksf
+MAX. DEVIATOR STRESS = 3.1 ksf @ 2.5 % STRAIN
+UNCONSOLIDATED UNDRAINED
+TRIAXIAL COMPRESSION TEST
+GEOLABS, INC.
+Geotechnical Engineering
+DATE W.O.
+Aug 07 5870-00
+PLATE B-6
+PROJECT:
+SEWER FORCE MAIN
+HAWAII PACIFIC UNIVERSITY
+KANEOHE, OAHU, HAWAII
+UNCONSOLIDATED UNDRAINED COMPRESSIVE STRENGTH OF COHESIVE SOILS |
+IN TRIAXIAL COMPRESSION - ASTM D 2850
+1.2
+0.8
+0.6
+Deviator Stress, ksf
+0.4
+0.2
+Axial Strain, %
+LOCATION: B-2
+DEPTH : 44.5 - 46 feet
+DESCRIPTION: Orangish brown with multi-color mottling sandy clay 1) fS) HN Pm
+DRY DENSITY: 79.6 pef SAMPLE DIAMETER: 2.361 inches
+MOISTURE CONTENT: 95.7 % SAMPLE HEIGHT: 5.526 inches
+AT FAILURE
+STRAIN RATE = 1.01 %/min.
+CONFINING PRESSURE = 2.2 ksf
+MAX. DEVIATOR STRESS = 1.1 ksf @ 16.5 % STRAIN
+UNCONSOLIDATED UNDRAINED
+TRIAXIAL COMPRESSION TEST
+GEOLABS, INC.
+Geotechnical Engineering
+DATE W.O.
+Nov 07 5870-00
+PLATE B-7
+PROJECT:
+SEWER FORCE MAIN
+HAWAII PACIFIC UNIVERSITY
+KANEOHE, OAHU, HAWAII
+APPENDIX C
+Pipe Pullback Analysis
+4" | 4.80" | 18
+18 50 | 8.04
+25 36 | 8.33
+14S 209 | 9:51
+LOFTON pat S 62 | 9.87
+25 44 |10.21
+14 94 | 11.31
+42" |13.20"| 18 3 111.73
+25 53 | 12.14
+18 .85 | 13.60
+14" | 15.30") 21 3
+25 61
+18 97
+16" | 17.40"
+1.20 | 19.20] 52.5
+1.03 | 19.54] 45.3
+1
+53.8
+124.2
+35.94
+36.43
+25 19
+14 | 49 | 5.91] 65
+18 38 | 6.13
+25 .28 | 6.35.| 3.8
+7.76 | 11.2
+17.0
+13.6
+9.8
+24.1
+19.3
+13.8
+26.1
+22.5
+19.2
+13.84
+15.47| 34.0
+15.74| 29.2
+16.01] 25.0
+18 | 1.08 | 17.33] 43.2
+21 | 93 117.64] 368
+78 |17.94| 31.7
+Ea 86 | 19.87] 39.1
+65.3
+55.8
+1.28 |29.44| 86.4
+99 |30.03] 67.1
+78 | 30.44
+35.24
+97.0
+14.08
+1.43 | 22.93] 76.4
+1.23 | 23.34
+1.03 | 23.74
+UE,
+Fusible PVC™
+13,400
+27 | 4.27 | 25
+: 4.42 | 1.8
+10,600
+7,700
+27,700
+21,900
+16,000
+47,700
+37,800
+27,600
+71,800
+56,800
+41,600
+101,600
+80,300
+58,800
+108,000
+93,400
+79,000
+139,700
+120,800
+102,200
+175,400
+151,700
+128,400
+215,300
+186,100
+157,500
+307,100
+265,600
+224,800
+345,800
+268,700
+214,200
+495,400
+384,600
+306,900
+Blue for potable water
+DR
+Sch. 80
+6.63” | Sch. 40
+DR 26
+1078
+2
+2.
+00" |
+Sch. 80
+DR 26
+Sch. 40
+SDR 35
+1050" SOR 35
+15.30 | SDR 35
+18.70” | SDR 35
+43
+.28
+.26
+5
+Z
+9
+4
+3.0 |
+Ve
+5:5
+3.6
+3:5
+di.
+5 112.50] 20.9
+54 [12.92] 15.3
+44 |13.12| 12.1
+94
+69
+56
+1.22
+12
+ce
+Eo
+Es
+.36
+36 |
+Ea
+16.12
+16.62
+16.88
+33.5
+24.8
+20.8
+58.2
+44.7
+33.2
+21.56
+22.16
+22.62
+[5.92 | 2.3 |
+9.90 | 6.4 |
+13.8
+23,400
+15,600
+14,500
+52,700
+37,200
+33,700
+63,900
+52,400
+141,000
+105,000
+),700
+244,400
+186,700
+141,400
+4,300
+9,600
+17,200
+26,900
+38,400
+57,100
+85,600
+20.
+29. 119,000
+150,600
+191,300
+Green for wastewater
+x
+[ar |27.95"|sor 5] 0 [26.35
+Sewer pipe sizes also available in SDR 26.
+Purple for recycle, reclaim or reuse | 44.4 |
+Visit our website, www.undergroundsolutions.com,
+Specifications for other sizes available upon request. for additional technical details and specifications.
+Pipe is available in 20’, 30’ and 40’ lengths.
+Fusible C-900° e Fusible C-905° e FPVC™
+Fusible PVC™
+Pressure Ratings
+Rati si
+a te g Minimum Minimum
+Fusible C-900° Bend Radius Bend Radius
+|e" 144 ft
+| 8" | 189.
+ae
+E 236 275 ft.
+rar | 200 = 319 ft.
+363 ft.
+Dimension | Pressure
+Ratio (psi)
+PVC vs. HDPE
+Tensile Strength
+: ASTM D-
+2 Sdn OMe eo =] Safe PA a ta
+Sch. 80 250 (psi)
+Sch. 40 _ 160
+y{
+Dimension Pressure
+Ratio (psi)
+Bal Specific Gravity
+| _ Specie Gravity |
+Hydrostatic Design
+Basis at 73°F | “SM D-2837
+—_ Coefficient of
+Linear Expansion | ASTM D-696
+In./In. deg F
+_ aa 220
+130 eae EDs | 24” PVC DR 25 | 30” PE DR 11 | % Change
+| Volume/foot (ft*)
+165%
+— LD. (in)
+24” DR 25 Fusible
+C-905° vs. 30” DR 11
+HDPE
+Fusible C-900° e Fusible C-905° e FPVC™
+Drillpath Planning and Pipe Design Program (DrillPath 2)
+Project Information Data Input
+| Project File Name: | H:\S800SE~1\5870-0~1.HPU\TRIAL10.WPF
+Company Name: Geolabs, Inc.
+Project Name: HPU Sewer Connection
+Job Account No.: 5870-00
+Drawn By: GB
+Location: | Pali Golf Course
+City/State: Kaneohe, HI
+Date: 1/08/2008
+Comments: HDD 1 (12-inch PVC Pipe)
+Units: English
+Printed on 5/14/2008 using DrillPath 2 2008, Maurer Technology Inc.
+Drillpath Planning and Pipe Design Program (DrillPath 2)
+Pipe Design Data Input , fo) / fos ia
+Project File Name: H:\5800SE~1\5870-0~1 HPU\TRIAL10.WPF — |
+Pipe Selection: Poly Pipe |
+Temperature: 73. (°F)
+Mud Weight: 12. (ppg)
+Pipe Wall Thickness: 0.733 Gn)
+Pipe SDR (OD/t): 18.0
+Pipe O.D.:
+Dry Friction Factor:
+Wet Friction Factor:
+Extra Installation Section:
+Fluid Weight:
+Elastic Modulus:
+Poisson's Ratio:
+Temperature Correction Factor:
+Pipe Density:
+| Hydrostatic Strength:
+1.38 (gm/cm*3)
+4000. (psi)
+Printed on 5/14/2008 using DrillPath 2 2008, Maurer Technology Inc.
+Drillpath Planning and Pipe Design Program (DrillPath 2)
+Surface/Drill Path Profile Dy y A P ij
+Company Name: Geolabs, Inc.
+Project Name: HPU Sewer Connection
+Date: 1/08/2008
+Project File Name: H:\5800SE~1\5870-0~1.HPU\TRIAL10.WPF
+Surface/Drill Path Profile
+300
+A Surface
+Elevation
+(ft)
+al 9 Drillpath
+100
+0 500 1000 1500 2000
+Location (ft)
+Printed on 5/14/2008 using DrillPath 2 2008, Maurer Technology Inc.
+Drillpath Planning and Pipe Design Program (DrillPath 2)
+Surface Profile Data Input Pe () A [>
+Project File Name: | H:\S800SE~1\5870-0~1.HPU\TRIAL 10. WPF
+Surface Profile
+cI
+Lagan J
+if
+Station Location Elevation
+# (ft)
+. 251.4
+247.2
+246.
+212.
+204.
+204.
+211.6
+214.
+220.
+224,
+220.
+220.
+262.
+YO} H)—) NV] Gn BW) Dh]
+258.
+236.
+Minimum Cover Depth: None
+Elevation: Elevation referenced from sea level
+Obstacles to Avoid
+Obstacle Location Elevation
+# (ft) (ft)
+695.60 206.00
+Minimum Clearance = 0. (ft)
+Cover Depth Profile
+ia Location Surface Depth | Drillpath Depth | Cover Depth
+# (ft) (ft) (ft) (ft)
+Printed on 5/14/2008 using DriliPath 2 2008, Maurer Technology Inc.
+Printed on 5/14/2008 using DrillPath 2 2008, Maurer Technology Inc.
+58
+59
+1846.4 -24.4
+1910.1 -24.6
+Printed on 5/14/2008 using DrillPath 2 2008, Maurer Technology Inc.
+Drillpath Planning and Pipe Design Program (DrillPath 2)
+Drill Path Data Output PY # ia T
+Ls ‘uk AN f
+Project File Name: | H:\5800SE~1\5870-0~1.HPU\TRIAL10.WPF
+No. Inc Azi VD +-N/-S +E/-W [Cover Depth
+(Deg) (Deg) (ft) (ft) (ft) (ft)
+-20.00 0.00 0.0 0.0 0.0 0.0
+-20.00 0.00 3.4 9.4 0.0
+-20.00 0.00 6.8 18.8 0.0
+-20.00 0.00 10.3 28.2 0.0
+-20.00 0.00 13.7 37.6 0.0
+-20.00 0.00 17.1 47.0 0.0
+-20.00 0.00 20.5 56.4 0.0
+-20.00 0.00 23.9 65.8 0.0
+-20.00 0.00 27.4 75.2 0.0
+-20.00 0.00 30.8 84.6 0.0
+-20.00 0.00 34.2 94.0
+. -19.28 0.00 37.6
+13 -18.57 0.00 40.8
+14 130.0 -17.85 0.00 43.9
+15 140.0 -17.14 0.00 46.9
+16 150.0 -16.42 0.00 49.8 . ; .
+17 160.0 -15.70 0.00 52.6 151.1 0.0 23.1
+18 170.0 -14.99 0.00 55.2 160.7 0.0 21.6
+19 180.0 -14.27 0.00 57.8 170.4 0.0 20.2
+20 190.0 -13.55 0.00 60.2 180.1 0.0 12.7
+21 200.0 -12.84 0.00 0.0 15.0
+22 210.0 -12.12 0.00 64.6 199.6
+23 220.0 -11.41 0.00 66.6 209.4
+24 230.0 -10.69 0.00 68.6 219.2
+25 240.0 -9.97 0.00 70.4 229.0
+26 250.0 -9.26 0.00 72.0 238.9
+27 260.0 ~8.54 359.28 73.6 248.8
+28 270.0 -7.83 358.57 75.0 258.7
+| 29 280.0 -7.11 357.85 76.3 268.6
+30 290.0 -6.40 357.14 71.5 278.5
+300.0 -5.68 356.42 78.5 288.4
+310.0 -4.96 355.70 298.4
+320.0 -4.25 354,99 80.3 308.3
+318.2
+328.2
+338.1
+82.2 348.0
+82.4 357.9
+82.5 367.8
+82.4 377.6
+82.2 | 387.5 .
+82.1 | 391.1 -14.7 43.2
+81.8 400.9 -16.7 42.9
+81.5 410.7 -18.8 42.7
+81.2 420.4 -21.0 42.5
+443.7 1.75 346.13 80.9 430.1 -23.3 42.2
+Printed on 5/14/2008 using DrillPath 2 2008, Maurer Technology Inc.
+47 453.7 1.75 345.41 80.6 | 439.8 -25.8 42.0 |
+48 463.7 1.75 344.69 80.3 449.5 -28.3 41.8
+49 473.7 1.75 343.98 79.9 459.1 -31.0 41.5
+50 483.7 1.75 343.26 79.6 468.7 -33.9 41.3
+51 493.7 1.75 342.54 79.3 -36.8
+52 503.7 1.75 341.83 79.0 -39.9
+53 513.7 1.75 341.11 78.7 -43.0 40.6
+54 523.7 1.75 340.40 78.4 -46.3 40.3
+55 533.7 1.75 339.68 78.1 516.1 -49.7 40.1
+56 543.7 1.75 338.96 778 | 5254 |  -533 39.9
+57 553.7 1.75 338.25 775 534.7 -56.9 39.6
+58 563.7 1.75 337.53 77.2 544.0 -60.7 39.4
+59 573.7 1.75 336.81 76.9 553.2 -64.6 39.1
+60 583.7 1.75 76.6 562.4 -68.6 38.9
+61 593.7 1.75 335.38 76.3 571.5 -72.7 38.7
+334.67 76.0 580.5 -16.9 38.4
+333.95 75.7 589.5 -81.2 38.2
+333.50 75.5 595.2 -84.0 38.0
+333.50 75.2 604.1 -88.5 38.3
+333.50 74.9 613.1 -92.9 40.0
+333.50 74.6 622.0 -97.4 41.7
+. 333.50 74.3 631.0 -101.8 42.9
+1.75 639.9 -106.3 43.0
+1.75 . 648.9 -110.8 43.0
+1.75 657.8 -115.2
+666.7 -119.7
+. 675.7 -124.1
+74 720.0 1.75 684.6 -128.6
+75 730.0 1.75 693.6 -133.1
+76 740.0 1.75 71.8 702.5 -137.5
+71 750.0 71.5 711.5 -142.0
+78 760.0 71.2 720.4 -146.4
+79 770.0 . 70.9 729.4 -150.9
+80 780.0 70.6 738.3 -155.4
+81 790.0 70.3 747.2 -159.8
+82 800.0 . 70.0 756.2 -164.3
+83 810.0 69.7 765.1 -168.7
+84 820.0 69.4 774.1 -173.2
+85 830.0 1.75 333.50 69.1 783.0 -177.7
+86 840.0 1.75 333.50 68.8 792.0 -182.1
+87 850.0 1.75 333.50 68.5 800.9 -186.6
+88 860.0 1.75 333.50 68.1 809.9 -191.0 .
+89 870.0 1.75 333.50 67.8 818.8 -195.5
+90 1.75 333.50 67.5 827.8 -200.0 62.2
+91 1.75 333.50 67.2 836.7 -204.4 65.9
+92 66.9 845.6 -208.9 69.7
+93 910.0 1.75 333.50 66.6 854.6 -213.3 73.4
+94 920.0 1.75 333.50 66.3 863.5 -217.8 76.9
+95 66.0 872.5 -222.3 76.3
+96 940.0 1.75 333.50 65.7 881.4 -226.7 75.8
+97 950.0 1.75 333.50 65.4 890.4 -231.2 75.2
+98 960.0 1.75 333.50 65.1 899.3 -235.6 74.6
+99 970.0 1.75 333.50 64.8 908.3 -240.1 74.0
+100 980.0 1.75 333.50 64.5 917.2
+101 990.0 1.75 333.50 64.2 926.2
+102 1000.0 1.75 333.50 63.9 935.1
+103 1010.0 1.75 333.50 63.6 | 944.0 -257.9 71.7
+Printed on 5/14/2008 using DrillPath 2 2008, Maurer Technology Inc.
+x
+roy ea
+104 1020.0 1.75 | 333.50 63.3 | 953.0 | -2624 | 712 |
+105 1030.0 1.75 333.50 63.0 961.9 -266.9 70.6
+333.50 62.7
+107 1050.0 333.50 62.3
+108 1060.0 333.50 62.0
+109 1070.0 333.50 61.7
+. 333.50 61.4 1006.7
+333.50 61.1 1015.6 .
+333.50 60.8 1024.6 -298.1 56.3
+333.50 60.5 1033.5 -302.5 52.4
+60.2 1042.4 -307.0 48.6
+59.9 1051.4 311.5 44,7
+59.6 1060.3 -315.9 45.0
+59.3 1069.3 -320.4 45.6
+59.0 1078.2 -324.8 45.6
+. 58.7 1087.2 -329.3 45.3
+58.4 45.0
+121 58.1 44.7
+122 . 57.8 1114.0 -342.7 44.4
+123 333.50 57.5 1122.9 -347.1 44.1
+124 333.50 57.2 1131.9 -351.6 43.8
+125 333.50 56.8 -356.1 43.4
+126 333.50 56.5 -360.5 42.6
+127 333.50 56.2 1158.7 -365.0 41.4
+128 55.9 1167.7 -369.4 41.4
+129 333.50 55.6 1176.6 -373.9 41.6
+130 . 333.50 55.3 1185.6 -378.4 41.9
+131 1.75 333.50 55.0 1194.5 -382.8 42.1
+333.50 54.7 1203.5 -387.3 42.4
+1.75 333.50 54.4 1212.4 -391.7 42.6
+1.75 333.50 54.1 1221.3 -396.2 42.9
+1.75 333.50 53.8 1230.3 -400.7 43.1
+1.75 333.50 53.5 1239.2 -405.1 43.4
+333.50 53.2 1248.2 -409.6
+138 1360.0 333.50 52.9 1257.1 -414.0
+139 1370.0 1.75 333.50 52.6 1266.1 -418.5
+140 1380.0 1.75 333.50 52.3 1275.0 -423.0
+141 1390.0 1.75 | 333.50 52.0 1284.0 -427.4
+142 1400.0 1.75 333.50 51.7 1292.9 -431.9 47.8
+143 1410.0 1.75 333.50 51.4 1301.9 -436.3 | 51.0 |
+144 1420.0 1.75 333.50 51.0 1310.8 -440.8
+145 1430.0 1.75 333.50 50.7 1319.7 -445.3
+146 1440.0 1.75 333.50 50.4 1328.7 -449.7
+147 1450.0 1.75 333.50 50.1 1337.6 -454.2
+148 1455.0 1.75 333.50 50.0 1342.1 -456.4
+149 1465.0 1.75 333.50 49.7 1351.0 -460.9
+150 1475.0 1.75 333.50 49.4 1360.0 -465.3
+151 1485.0 1.75 333.50 49.1 1368.9 -469.8 49.8
+152 1495.0 1.75 333.50 48.8 1377.9 -474.2 51.9
+153 1505.0 1.75 333.50 48.5 1386.8 -478.7 54.0
+154 1515.0 1.75 333.50 48.1 1395.8 -483.2 56.1
+1,75 333.50 47.8 1404.7 -487.6 58.2
+156 1535.0 1.75 333.50 47.5 1413.7 -492.1 60.3
+157 1545.0 1.75 47.2 1422.6 -496.5
+158 1550.0 1.75 47.1 1427.1
+159 1560.0 1.75 46.8 1436.0 -503.2
+160 1570.0 1.75 46.5 1445.0 -507.7
+Printed on 5/14/2008 using DrillPath 2 2008, Maurer Technology Inc.
+AD MRT
+[161 1575.0 1.75 333.50 | 463 -509.9 65.6
+162 1575.5 1.75 333.50 | 46.3 -510.1 65.5
+163 1585.5 2.47 333.50 45.9 -514.6 65.4
+164 1595.5 3.18 333.50 45.4 -519.1 65.3
+165 1605.5 3.90 333.50 44.8 -523.5 65.1
+166 1615.5 4.61 333.50 44.1 -528.0 64.4
+167 1625.5 5.33 333.50 43.2 1494.5 -532.4 63.6
+168 1635.5 6.05 333.50 42.2 1503.5 |  -536.8 62.9
+169 1645.5 6.76 333.50 41.1 1512.3 -541.3 62.2
+170 1655.5 7.48 333.50 39.9 1521.2 -545.7 61.5
+171 1665.5 8.20 333.50 38.5 1530.1 -550.1 60.8
+172 1675.5 8.91 333.50 37.0 1538.9 -554.5 59.5
+173 1685.5 9.63 333.50 35.4 1547.8 -558.9 57.7
+174 1695.5 10.34 333.50 33.7 1556.6 -563.3 55.8
+175 1705.5 11.06 333.50 31.8 1565.4 -567.7
+176 1715.5 11.78 333.50 29.8 1574.2 -572.1 52.2
+177 1725.5 12.49 333.50 27.7 1582.9 -576.5 50.1
+178 1735.5 13.21 333.50 25.5 1591.6 -580.8 47.2
+179 1745.5 13.93 333.50 23.2 1600.3 -585.1 44.1
+180 1755.5 14.64 333.50 20.7 1609.0 -589.5 41.3
+181 1760.5 15.00 333.50 19.4 1613.3 -591.6 40.0
+182 1770.5 15.00 333.50 16.8 1622.0 -595.9 37.4
+183 1780.5 15.00 333.50 14.2 1630.6 -600.2 34.8
+184 1790.5 15.00 333.50 11.6 1639.3 -604.6 32.2
+185 1800.5 9.1 | 1647.9
+186 6.5 | __ 1656.5
+187 1820.5 . 1665.2 -617.5 25.3
+188 1830.5 1673.8 -621.8 23.7
+189 1840.5 -626.1 22.1
+190 -630.4 20.4
+191 1860.5 -634.7 18.0
+192 1870.5 333.50 -639.0 15.4
+193 1880.5 15.00 333.50 -643.3 12.8
+194 1890.5 15.00 333.50 -647.7 10.3
+195 1900.5 15.00 333.50 1734.3 -652.0 77
+196 1910.5 15.00 333.50 1743.0 -656.3 5.1
+197 1920.5 15.00 333.50 . 1751.6 -660.6 2.6
+198 1930.5 15.00 333.50 1760.3 | -664.9 0.0
+Printed on 5/14/2008 using DrillPath 2 2008, Maurer Technology Inc.
+Drillpath Planning and Pipe Design Program (DrillPath 2)
+pee PT os ieee Bis
+Pipe Design Output Table ONL) | Isa T
+Project File Name: H:\S800SE~1\5870-0~1.HPU\TRIAL10.WPF
+Internal pressure capacity = 237.4 (psi)
+External pressure capacity = 166.6 (psi)
+Tension capacity = 57959 (ib)
+Tensile stress capacity = 2018 (psi)
+No. Measured Length | Internal Pressure | External Pressure Tension | Tensile es |
+(ft) (psi) (psi) (Ib) (psi)
+| 0.0 0.0 0.0 27579 | 960
+10.0 1.5 . 27703 965
+2.9
+\O] 00}~a] ON} A] BR] Oo [bo] | FE
+14.9 28449 991
+16.5 28539 994
+17.1
+19.2
+20.6
+21.3
+23.4
+24.6 28731 1273
+25.4 28705 1272
+27.4 28642 1274
+28.4 28610 1269
+29.3 28576 1268
+31.1 28506 1269
+31.8 28475 1268
+32.8 28433 1266
+34.4 28357 1260
+35.0 28329 1263
+36.0 28277 1261
+37.5 28194 1258
+37.9 28169 1253
+38.9 28108 1251
+40.3 28020 1252
+40.6 27999
+41.5 27927
+42.7 27832
+42.9 27816 1245
+43.9 27733 1242
+. . 44.9 27633 1235
+| 39 45.0 27623 1350
+260.0 31.9 45.9 27485
+41 270.0 | 32.5 | 46.7 27332 1335
+Printed on 5/14/2008 using DrillPath 2 2008, Maurer Technology Inc.
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70 . . 24667
+71 463.3 34.8 50.0 24596
+72 463.7 50.0 24593
+73 473.7 49.8 24519
+74 482.6 34.6 49.7 24454
+15 483.7 34.5 49.6 24446
+76 493.7 34.4 49.4 24372 1125
+71 501.9 34.3 493 24311 1119
+78 503.7 34.3 49.3 24298 1118
+79 513.7 34.1 49.1 24223 1120
+80 521.2 34.0 48.9 24167 1114
+81 523.7 34.0 48.9 24149 1113
+82 533.7 33.9 48.7 24073 1114
+83 540.5 33.8 48.6 24022 1113
+84 543.7 33.7 48.5 23998 1112
+85 553.7 33.6 48.3 23923 1105
+86 559.8 33.5 48.2 23877 1108
+87 563.7 33.5 48.1 1107
+88 573.7 33.3 47.9 1104
+89 579.2 33.3 47.8 23731 1099
+90 583.7 33.2 47.7 1098
+91 593.7 33.1 47.5 1099
+92 598.5 33.0 47.5 23584 1094
+93 603.7 33.0 47.4 23544 1092
+94 613.7 32.8 47.2 23468 1093
+617.8 32.8 47.1 23437 1090
+| 96 620.0 32.7 47.0 23436 1090
+630.0 32.6 46.9 23432 816
+| 698 637.1 32.5 46.7 23429 816
+Printed on 5/14/2008 using DrillPath 2 2008, Maurer Technology Inc.
+42.7
+850.0 29.7 42.7
+860.0 29.6 42.5
+868.7 29.4 42.3
+870.0 29.4 42.3
+880.0 29.3 42.1
+888.0 29.2 41.9
+890.0 29,2 41.9
+900.0 29.0 41.7
+907.3 28.9 41.6
+910.0 28.9 41.5
+920.0 28.8 41.3
+926.6 28.7 41.2
+930.0 28.6 41.1
+940.0 28.5 41.0
+945.9 28.4 40.8
+950.0 28.4 40.8
+28.2 40.6
+28.2 40.5
+28.1 40.4
+40.2
+984.6 27.9 40.1
+990.0 27.8 40.0
+1000.0 27.7 39.8
+1003.9 27.7 39.7
+1010.0 27.6 39.6 23330
+Printed on 5/14/2008 using DrillPath 2 2008, Maurer Technology Inc.
+OE
+156 1020.0 27.4 39.4 |
+157 1023.2 39.4 23327 | 812
+Printed on 5/14/2008 using DrillPath 2 2008, Maurer Technology Inc.
+ia n
+809
+309
+809
+809
+808
+808
+808
+808
+808
+808
+808
+30.9
+30.8
+30.6
+30.6
+30.4
+30.2
+30.2
+30.0
+29.8
+29.6
+29.4
+29.4
+29.3
+29.2
+29.1 23184
+29.0 23146 806
+28.9 23116 805
+28.9 23113 805
+28.7 23068 1080
+28.6 23030 1078
+28.3 22881 1069
+28.1 22779 1070
+27.9 22730 1068
+27.5 22575 1059
+. . 27.2 22481 1059
+18.7 26.9 22419 1057
+1635.5 18.3 26.3 22261 1052
+251 1640.9 18.1 25.9 22175 1045
+252 1645.5 17.8 25.6 22100 1042
+253 1655.5 17.3 24.8 21937 1040
+254 1660.2 17.0 24.5 21860 1038
+255 1665.5 16.7 24.0 1035
+256 1675.5 16.1 23.1 1025
+257 1679.5 15.8 22.7 21538 1026
+258 1685.5 15.4 22.1 21437 1023
+14.6 21.0 21267 1013
+14.3 20.6 21210 1015
+13.8 19.8 21093 1011
+12.9 18.6 20919 1005
+263 1718.1 12.7 18.3 20873 999
+264 1725.5 12.0 17.3 20742 995
+265 1735.5 11.1 15.9 20564 992
+1737.5 10.9 15.6 20529 991
+1745.5 10.0 20384 986
+1755.5 9.0 12.9 20203 976
+8.8 12.7 20180 979
+Printed on 5/14/2008 using DrillPath 2 2008, Maurer Technology Inc.
+Printed on 5/14/2008 using DrillPath 2 2008, Maurer Technology Inc.
+Drillpath Planning and Pipe Design Program (DrillPath 2)
+Project Information Data Input
+Project File Name: H:\S800SE~1\5870-0~1.HPU\TRIAL13.WPF
+Geolabs, Inc.
+Project Name: HPU Sewer Connection
+Job Account No.: 5870-00
+GB
+Location: HPU to Pali Golf Course
+City/State: Kaneohe, HI
+Date: 1/29/2008
+Comments: HDD 2 (12-Inch PVC Pipe
+Units: English
+Printed on 5/14/2008 using DrillPath 2 2008, Maurer Technology Inc.
+Drillpath Planning and Pipe Design Program (DrillPath 2)
+Pipe Design Data Input ed ia = i i
+| Project File Name: H:\5800SE~1\5870-0~1.HPU\TRIAL13.WPF |
+[Pipe Selection: | Poly Pipe
+Temperature: 73. (°F)
+Mud Weight: 12. (ppg)
+Pipe Wall Thickness: 0.733 Gn)
+Pipe SDR (ODA): 18.0
+Pipe O.D.: 13.2 (in)
+Dry Friction Factor: 0.5
+Wet Friction Factor: 0.5
+Extra Installation Section: 20. (ft)
+Fluid Weight: 8.35 (ppg)
+Elastic Modulus: 400000. (psi)
+Poisson's Ratio: 0.42
+Design Safety Factor:
+Temperature Correction Factor: 1.009
+Pipe Density: 1.38 (gm/cm’3)
+Hydrostatic Strength: 4000. (psi) |
+Printed on 5/14/2008 using DrillPath 2 2008, Maurer Technology Inc.
+Drillpath Planning and Pipe Design Program (DrillPath 2)
+i | ms ft Je "uf
+Surface/Drill Path Profile Di yeul ob
+| Company Name: Geolabs, Inc.
+Project Name: HPU Sewer Connection
+Date: 1/29/2008
+Project File Name: H:\5800SE~1\5870-0~1.HPU\TRIAL13.WPF
+Surface/Drill Path Profile
+280-
+260
+4 Surface
+Elevation
+(ft) 240
+oe Vv Drillpath
+200
+200
+400
+Location (ft)
+Pi 800
+Printed on 5/14/2008 using DrillPath 2 2008, Maurer Technology Inc.
+Drillpath Planning and Pipe Design Program (DrillPath 2)
+Surface Profile Data Input baw AA
+Project File Name: H:\5800SE~1\5870-0~1.HPU\TRIAL13.WPF
+Surface Profile
+Station Location Elevation
+# (ft) (ft)
+1 0. 275.
+2 118. 275.
+3 187.6 252.
+4 192.2 252.
+5 236. 270.
+6 253. 272.
+7 404. 272.
+8 427. 270.
+9 507. 232.
+10 560. 230.
+11 624. 228.
+Minimum Cover Depth: None
+Elevation: Elevation referenced from sea level
+Cover Depth Profile
+No. Location Surface Depth Drillpath Depth Cover Depth
+# (ft) (ft) (ft) (ft)
+1 0.0 0.0 0.0 0.0
+2 20.8 0.0 5.6 5.6
+3 41.5 0.0 11.1 11.1
+4 62.3 0.0 16.7 16.7
+5 83.0 0.0 22.3 22.3
+6 103.8 0.0 27.8 27.8
+7 118.0 0.0 31.6 31.6
+8 124.6 2.2 33.4 31.2
+9 145.3 9.0 38.9 29.9
+10 166.1 15.9 44.5 28.6
+11 186.9 22.8 50.0 27.2
+12 187.6 23.0 50.2 27.2
+13 192.2 23.0 51.3 28.3
+14 207.6 16.7 54.9 38.3
+15 228.4 8.1 59.3 51.1
+16 236.0 5.0 60.7 55.7
+17 249.1 3.5 63.1 59.6
+18 253.0 3.0 63.7 60.7
+19 269.9 3.0 66.3 63.3
+20 290.7 3.0 69.0 66.0
+21 311.4 3.0 71.1 68.1
+22 332.2 3.0 72.7 69.7
+23 352.9 3.0 73.7 70.7
+24 373.7 3.0 74.2 71.2
+25 394.5 3.0 74.3 71.3
+26 404.0 3.0 74.3 71.3
+27 415.2 4.0 74.3 70.3
+Printed on 5/14/2008 using DrillPath 2 2008, Maurer Technology Inc.
+427.0 5.0 74.2
+436.0 9.3 74.0
+456.8 19.1 73.2
+477.5 29.0 71.9
+498.3 38.9 70.0
+507.0 43.0 69.0
+519.0 43.5 67.6
+539.8 44.2 64.6
+560.0 45.0 61.2
+560.6 45.0 61.1
+581.3 45.7 57.0
+602.1 46.3 52.3
+622.8 47.0 47.0
+Printed on 5/14/2008 using DrillPath 2 2008, Maurer Technology Inc.
+Drillpath Planning and Pipe Design Program (DrillPath 2)
+Drill Path Data Output
+Project File Name:
+H:\S5800SE~1\5870-0~1.HPU\TRIAL13.WPF
+No. ML Inc Azi VD +N/-S +E/-W Cover Depth
+# (ft) (Deg) (Deg) (ft) (ft) (ft) (ft)
+1 0.0 -15.00 0.00 0.0 0.0 0.0 0.0
+2 10.0 -15.00 0.00 2.6 9.7 0.0 2.6
+3 20.0 -15.00 0.00 5.2 19.3 0.0 5.2
+4 30.0 -15.00 0.00 7.8 29.0 0.0 7.8
+5 40.0 -15.00 0.00 10.4 38.6 0.0 10.4
+6 50.0 -15.00 0.00 12.9 48.3 0.0 12.9
+7 60.0 -15.00 0.00 15.5 58.0 0.0 15.5
+8 70.0 -15.00 0.00 18.1 67.6 0.0 18.1
+9 80.0 -15.00 0.00 20.7 77.3 0.0 20.7
+10 90.0 -15.00 0.00 23.3 86.9 0.0 23.3
+11 100.0 -15.00 0.00 25.9 96.6 0.0 25.9
+12 110.0 -15.00 0.00 28.5 106.3 0.0 28.5
+13 120.0 -15.00 0.00 31.1 115.9 0.0 31.1
+14 130.0 -15.00 0.00 33.6 125.6 0.0 31.1
+15 140.0 -15.00 0.00 36.2 135.2 0.0 30.5
+16 150.0 -15.00 0.00 38.8 144.9 0.0 29.9
+17 160.0 -15.00 0.00 41.4 154.5 0.0 29.3
+18 170.0 -15.00 0.00 44.0 164.2 0.0 28.7
+19 180.0 -15.00 0.00 46.6 173.9 0.0 28.1
+20 181.6 -15.00 0.00 47.0 175.4 0.0 28.0
+21 191.6 -14.28 0.00 49.5 185.1 0.0 27.3
+22 201.6 -13.57 0.00 51.9 194.8 0.0 30.0
+23 211.6 -12.85 0.00 54.2 204.5 0.0 36.3
+24 221.6 -12.14 0.00 56.4 214.3 0.0 42.4
+25 231.6 -11.42 0.00 58.4 224.1 0.0 48.5
+26 241.6 -10.70 0.00 60.3 233.9 0.0 54.5
+27 251.6 -9.99 0.00 62.1 243.7 0.0 58.0
+28 261.6 -9.27 0.00 63.8 253.6 0.0 60.8
+29 271.6 -8.55 0.00 65.4 263.5 0.0 62.3
+30 281.6 -7.84 0.00 66.8 273.4 0.0 63.7
+31 291.6 -7.12 0.00 68.1 283.3 0.0 65.0
+32 301.6 -6.41 0.00 69.3 293.2 0.0 66.2
+33 311.6 -5.69 0.00 70.3 303.2 0.0 67.3
+34 321.6 -4.97 0.00 71.2 313.1 0.0 68.2
+35 331.6 -4.26 0.00 72.1 323.1 0.0 69.0
+36 341.6 -3.54 0.00 72.7 333.1 0.0 69.7
+37 351.6 -2.82 0.00 73.3 343.0 0.0 70.2
+38 361.6 -2.11 0.00 73.7 353.0 0.0 70.7
+39 371.6 -1.39 0.00 74.0 363.0 0.0 71.0
+40 381.6 -0.68 0.00 74.2 373.0 0.0 71.2
+41 391.0 0.00 0.00 74.3 382.4 0.0 71.2
+42 401.0 0.00 0.00 74.3 392.4 0.0 71.3
+43 411.0 0.00 0.00 74.3 402.4 0.0 71.3
+44 421.0 0.00 0.00 74.3 412.4 0.0 70.5
+45 424.4 0.00 0.00 74.3 415.8 0.0 70.2
+46 434.4 0.72 0.00 74.2 425.8 0.0 69.3
+Printed on 5/14/2008 using DrillPath 2 2008, Maurer Technology Inc.
+47 444.4 1.43 0.00 74.0 435.8
+48 454.4 2.15 0.00 73.7 445.8 0.0 59.7
+49 464.4 2.86 0.00 73.3 455.8 0.0 54.6
+50 474.4 3.58 0.00 72.7 465.8 0.0 49.2
+51 484.4 4.30 0.00 72.0 475.8 0.0 43.8
+52 494.4 5.01 0.00 71.2 485.7 0.0 38.2
+53 504.4 5.73 0.00 70.3 495.7 0.0 32.6
+54 514.4 6.45 0.00 69.2 505.6 0.0 26.8
+55 524.4 7.16 0.00 68.0 515.6 0.0 24.7
+56 534.4 7.88 0.00 66.7 525.5 0.0 22.9
+57 544.4 8.59 0.00 65.3 535.4 0.0 21.2
+58 554.4 9.31 0.00 63.7 545.3 0.0 19.2
+59 564.4 10.03 0.00 62.0 555.1 0.0 17.2
+60 574.4 10.74 0.00 60.2 565.0 0.0 15.0
+61 584.4 11.46 0.00 58.3 574.8 0.0 12.8
+62 594.4 12.18 0.00 56.3 584.6 0.0 10.5
+63 604.4 12.89 0.00 54.1 594.3 0.0 8.0
+64 614.4 13.61 0.00 51.8 604.0 0.0 5.4
+65 624.4 14.32 0.00 49.4 613.8 0.0 2.6
+66 633.8 15.00 0.00 47.0 622.8 0.0 0.0
+Printed on 5/14/2008 using DrillPath 2 2008, Maurer Technology Inc.
+Drillpath Planning and Pipe Design Program (DrillPath 2) |. --s :
+Pipe Design Output Table °
+Project File Name: H:\5800SE~1\5870-0~1.HPU\TRIAL13.WPF
+Internal pressure capacity = 237.4 (psi)
+External pressure capacity = 166.6 (psi)
+Tension capacity = 57959 (Ib)
+Tensile stress capacity = 2018 (psi)
+No. Measured Length | Internal Pressure | External Pressure Tension Tensile Stress
+# (ft) (psi) (psi) (Ib) (psi)
+1 0.0 0.0 0.0 6646 231
+2 6.3 0.7 1.0 6696 233
+3 10.0 1.1 1.6 6725 234
+4 12.7 1.4 2.0 6746 235
+5 19.0 2.1 3.1 6797 237
+6 20.0 2.2 3.2 6805 237
+7 25.4 2.8 4.1 6847 238
+8 30.0 3.4 4.8 6884 240
+9 31.7 3.6 5.1 6898 240
+10 38.0 4.3 6.1 6948 242
+11 40.0 4.5 6.5 6964 242
+12 44.4 5.0 7.2 6999 244
+13 50.0 5.6 8.1 7044 245
+14 50.7 5.7 8.2 7049 245
+15 57.0 6.4 9.2 7100 247
+16 60.0 6.7 9.7 7123 248
+17 63.4 7.1 10.2 7150 249
+18 69.7 7.8 11.2 7201 251
+19 70.0 7.9 11.3 7203 251
+20 76.1 8.5 12.3 7251 252
+21 80.0 9.0 12.9 7282 254
+22 82.4 9.2 13.3 7302 254
+23 88.7 10.0 14.3 7352 256
+24 90.0 10.1 14.5 7362 256
+25 95.1 10.7 15.3 7402 258
+26 100.0 11.2 16.1 7442 259
+27 101.4 11.4 16.4 7453 259
+28 107.7 12.1 17.4 7503 261
+29 110.0 12.3 17.7 7521 262
+30 114.1 12.8 18.4 7554 263
+31 120.0 13.5 19.4 7601 265
+32 120.4 13.5 19.4 7604 265
+33 126.8 14.2 20.4 7655 267
+34 130.0 14.6 21.0 7681 267
+35 133.1 14.9 21.5 7705 268
+36 139.4 15.7 22.5 7756 270
+37 140.0 15.7 22.6 7760 270
+38 145.8 16.4 23.5 7806 272
+39 150.0 16.8 24.2 7840 273
+40 152.1 17.1 24.5 7857 274
+41 158.5 17.8 25.6 7907 275
+Printed on 5/14/2008 using DrillPath 2 2008, Maurer Technology Inc.
+42 160.0 18.0 25.8 7919
+43 164.8 18.5 26.6 7958
+44 170.0 19.1 27.4 7999
+45 171.1 19.2 27.6 8008
+46 177.5 19.9 28.6 8058
+47 180.0 20.2 29.0 8074
+48 181.6 20.4 29.3 8084
+49 183.8 20.6 29.6 8097 558
+50 190.1 21.3 30.6 8115 559
+51 191.6 21.5 30.9 8118 559
+52 196.5 22.0 31.6 8130 556
+53 201.6 22.5 32.4 8142 556
+54 202.8 22.6 32.5 8145 560
+55 209.2 23.3 33.5 8157 561
+56 211.6 23.5 33.8 8161 561
+57 215.5 23.9 34.3 8168 557
+58 221.6 24.5 35.1 8178 557
+59 221.8 24.5 35.2 8178 561
+60 228.2 25.0 36.0 8186 562
+61 231.6 25.3 36.4 8190 562
+62 234.5 25.6 36.8 8193 562
+63 240.8 26.1 37.5 8198 562
+64 241.6 26.2 37.6 8198 562
+65 247.2 26.6 38.2 8201 558
+66 251.6 26.9 38.7 8203 558
+67 253.5 27.1 38.9 8204 562
+68 259.9 27.6 39.6 8204 562
+69 261.6 27.7 39.8 8204 562
+70 266.2 28.0 40.2 8203 562
+71 271.6 28.3 40.7 8202 562
+72 272.5 28.4 40.8 8201 558
+73 278.9 28.8 41.4 8198 558
+74 281.6 29.0 41.6 8196 558
+715 285.2 29.2 41.9 8193 562
+76 291.5 29.5 42.4 8187 562
+77 297.9 29.9 42.9 8179 557
+78 301.6 30.0 43.2 8174 557
+79 304.2 30.2 43.4 8170 561
+80 310.6 30.5 43.8 8159 561
+81 311.6 30.5 43.8 8157 561
+82 316.9 30.7 44.1 8147 560
+83 321.6 30.9 44.4 8138 560
+84 323.2 31.0 44.5 8134 556
+85 329.6 31.2 44.8 8120 555
+86 331.6 31.2 44.9 8115 555
+87 335.9 31.4 45.1 8104 559
+88 341.6 31.5 45.3 8088 558
+89 342.3 31.6 45.4 8087 558
+90 348.6 31.7 45.6 8068 557
+91 351.6 31.8 45.7 8059 557
+92 354.9 31.9 45.8 8048 553
+93 361.3 32.0 45.9 8027 552
+94 361.6 32.0 45.9 8026 552
+95 367.6 32.1 46.1 8005 555
+96 371.6 32.1 46.1 7990 555
+97 373.9 32.1 46.2 7981 550
+98 380.3 32.2 46.2 7957 550
+Printed on 5/14/2008 using DrillPath 2 2008, Maurer Technology Inc.
+99 381.6 32.2 46.3 7951 549
+100 386.6 32.2 46.3 7930 554
+101 391.0 32.2 46.3 7918 553
+102 393.0 32.2 46.3 7912 275
+103 399.3 32.2 46.3 7916 276
+104 401.0 32.2 46.3 7917 276
+105 405.6 32.2 46.3 7919 276
+106 411.0 32.2 46.3 7922 276
+107 412.0 32.2 46.3 7923 276
+108 418.3 32.2 46.3 7926 276
+109 421.0 32.2 46.3 7927 276
+110 424.4 32.2 46.3 7928 276
+111 424.6 32.2 46.3 7929 553
+112 431.0 32.2 46.3 7900 552
+113 434.4 32.2 46.2 7884 551
+114 437.3 32.2 46.2 7870 547
+115 443.7 32.1 46.1 7840 546
+116 444.4 32.1 46.1 7836 545
+117 450.0 32.0 46.0 7808 548
+118 454.4 32.0 45.9 7785 548
+119 456.3 31.9 45.9 7774 543
+120 462.7 31.8 45.7 7740 542
+121 464.4 31.8 45.7 7731 542
+122 469.0 31.7 45.5 7705 545
+123 474.4 31.5 45.3 7673 544
+124 475.4 31.5 45.3 7668 543
+125 481.7 31.3 45.0 7630 542
+126 484.4 31.2 44.9 7613 542
+127 488.0 31.1 44.7 7591 537
+128 494.4 30.9 44.4 7551 536
+129 500.7 30.6 44.0 7510 538
+130 504.4 30.5 43.8 7485 537
+131 507.0 30.4 43.6 7467 536
+132 513.4 30.1 43.2 7423 535
+133 514.4 30.0 43.1 7416 535
+134 519.7 29.7 42.8 7379 530
+135 524.4 29.5 42.4 7345 528
+136 526.1 29.4 42.3 7334 532
+137 532.4 29.1 41.7 7287 530
+138 534.4 28.9 41.6 7272 530
+139 538.7 28.7 41.2 7239 525
+140 544.4 28.3 40.7 7196 523
+141 545.1 28.3 40.6 7190 527
+142 551.4 27.8 40.0 7140 525
+143 554.4 27.6 39.7 7116 524
+144 557.7 27.4 39.4 7089 523
+145 564.1 26.9 38.7 7037 522
+146 564.4 26.9 38.7 7035 521
+147 570.4 26.4 38.0 6985 516
+148 574.4 26.1 37.5 6951 515
+149 576.8 25.9 37.3 6931 518
+150 583.1 25.4 36.5 6876 516
+151 584.4 25.3 36.3 6864 515
+152 589.4 24.9 35.7 6820 514
+153 594.4 24.4 35.1 6775 512
+154 595.8 24.3 34.9 6763 508
+155 602.1 23.7 34.0 6705 506
+Printed on 5/14/2008 using DrillPath 2 2008, Maurer Technology Inc.
+156 604.4 23.5 33.7 6684 505
+157 608.4 23.1 33.1 6647 508
+158 614.4 22.5 32.3 6591 506
+159 614.8 22.4 32.2 6587 502
+160 621.1 21.8 31.3 6527 500
+161 624.4 21.4 30.8 6495 499
+162 627.5 21.1 30.3 6465 503
+163 633.8 20.4 29.3 5617 473
+Printed on 5/14/2008 using DrillPath 2 2008, Maurer Technology Inc.
+APPENDIX D
+Hydraulic Fracture Analysis
+Drillpath Hydraulics Program (DrillMud)
+Project Input Data
+DAA
+Project File Name:
+H:\5800 Series\5870-00.HPU Sewer Force Main\TRIAL10.mud
+Company Name:
+Geolabs, Inc.
+Project Name:
+Sewer Force Main, Hawaii Pacific University
+Job Account No.: 5870-00
+Drawn By: GB
+Location: Kaneohe
+City/State: Kaneohe, Hawaii
+Date: 4/24/08
+Comments: HDD 1
+Survey Data:
+Total Measured Length: 1930.5 (ft)
+Drilling Mud Data:
+Mud Type: Baroid - QUIK-GEL
+Concentration: 120.00 (1b/100gal)
+Reology Model: Newtonian
+Viscosity: 27.817 (cp)
+Soil/Rock Data:
+Current Formation Layer: 1
+Current Layer Start: 0.0
+Soil Selection: Cohesive Soil
+Density: 110.0 (1b/ft3)
+Earth Pressure Coefficient: 0.50
+Shear Strength: 20.83 (psi)
+Current Formation Layer: 2
+Current Layer Start: 6.0
+Soil Selection: Cohesive Soil
+Density: 90.0 (1b/ft3)
+Earth Pressure Coefficient: 0.50
+Shear Strength: 8.40 (psi)
+Current Formation Layer: 3
+Current Layer Start: 803.0
+Soil Selection: Cohesive Soil
+Density: 100.0 (1b/ft3)
+Earth Pressure Coefficient: 0.50
+Shear Strength:
+Current Formation Layer:
+20.83 (psi)
+4
+Current Layer Start:
+1930.5
+Soil Selection:
+Cohesive Soil
+Density: 105.0 (Ib/ft3)
+Earth Pressure Coefficient: 0.50
+Shear Strength: 20.83 (psi)
+Cuttings Transport:
+Cutting Size: 0.090 (in)
+Fluid Loss:
+Loss Factor: 0.20
+Pumping Factor: 60.00 (min/hr)
+Pilot Hole Data:
+Drilling Pilot Hole:
+Hole Size: 6.000 (in)
+Flow Rate: 50.00 (gpm)
+Drilling Rate: 30.0 (ft/h)
+Drilling Rod:
+Drilling Rod OD: 3.500 (in)
+Printed on Wednesday, May 14, 2008 using DrillMud 2008 by Maurer Technology Inc.
+LG
+Lae
+iy
+ES
+v
+Drilling Rod Wall Thickness: 0.375 (in)
+Drilling Rod Section Length: 15.0 (ft)
+Drilling Rod Thread ID: 2.750 (in)
+Drilling Rod Thread Length: 0.000 (in)
+Jet Head/Mud Motor:
+Drilling with Mud Motor
+Motor Pressure Loss: 500.0 (psi)
+Bit Nozzles:
+Ignore (wide open)
+Back-Reaming Data:
+Back-Reaming (in order of operation):
+Stage Description Diameter Flow Rate Reaming Rate Chase Pipe Chase Pipe OD
+(in) (gpm) (ft/h) (in)
+1 First Ream 12.000 50.00 30.0 Yes 3.500
+Final Ream 18.000 50.00 30.0 Yes 3.500
+Printed on Wednesday, May 14, 2008 using DrillMud 2008 by Maurer Technology Inc.
+L
+‘ouj ABojouyse, seunew Aq g00z PNWIIIIG Buisn go0z/pL/s UO pou
+Jeujwey z Sb vee 70°SL OSI LOL Lz vl os'eee S21 O'OrOL lz
+Jeujwey 6Sr 6'EE Z0°SL O'sLS UL 6'€9 v8 os'ese |SZ'L 0'0001 92
+Jeujwey Lov eve 00'S vrs Ord L'S9 s'6 os‘ece  [GZ1 0'096 Gz
+Jeujwey Lb Live 66'r1 S'ELS TLL €'99 601 os‘eee [SLL 0'0z6 vz
+Jeujwe] Crag Le L6¢1 ZELS €79 ¢'19 ZG os‘ece [SLL 0'088 €@
+Jeujwe] ele gcse S6'rL 9'ZLS ly "89 v'L2- os‘ece [SLL 0'0r8 zz
+Jeujwe 7 €'02 O'9€ v6'rl O'S o'ee 0'0L o'ze- os‘ece [S21 0'008 LZ
+Jeujwey 6LZ v'9E Z6't1 v'LLS Zep ZL 0'8z- os‘ece |SZ'L 0'092 0z
+Jeujwey 64 g'9e 06'r1 SOLS Ler v7 €'6c- os‘ece [SLL 0'0ZZ 6L
+Jeujwey S'LZ ZLE Se'rL Z'OLS 6 ty gel Z'0€- os‘eee  |GZ'L 0'089 SL
+Jeujwey 602 gE L8°v1 9°60 L'0r 6b S're- os‘ece [SLL 0'0r9 Lb
+Jeujwey 70% Lge Ser 0°60 9'8e LOL G'le- eevee |SL'L 0'009 OL
+Jeujwe] L002 gee ha 7'80S G'6e CLL glE- os'zee SLL 0'09s SL
+Jeujwey O'LZ 6'8e Ler 8'20S v'0r Gel Lee- 99°0PE S21 0'0¢S vb
+Jeujwey el e6E 08'rL z'Z0S Vly 8'6L ©'ee- esere [SLL 0'08r €L
+Jeujwe 7 9'1z L6E 8l'bL 9'90S ety yt) 9'ge- 6EOre |GLL 0'0rr ray
+Jeulwey 612 Z'0r 9L'bl 0'90S eer aa) 6'8e- 9z'6re |8r'l 0'00r LL
+Jeujwey 612 0'0r pl vl SOS Ler zz L'6€- Zl'ZSe |8e'L- 0'09¢€ OL
+Jeujwey ZL 0'6e eL'vl 8'v0S 60 €'08 v'6e- 66rse |Sz'r- ooze 6
+Jeujwey s'6L 6'9€ Lvl Z'v0S 9'9€ OL L'6¢- GeZse [LL Z- 0'08z 8
+JeulWwey Q'S} Ove 69'rL 9'€0S o'ez v'OL 7 Le- 00'0 16°6- 0'0vz Z
+Jeulwey lel L'0€ 29°v1 0'€0S O'sL vz ply 00'0 v8ZL- 0'002 9
+Jeujwey SSL €'SZz 99'rL v'Z0S LE? 9° 6'8e- 00'0 OL'SL- 0'091 S
+Jeujwey ZLL 9'6L v9'rL 8° L0S €'8z 8'0p GZL- 00'0 2S°81- 0021 v
+Jeujwe s'St ZEL z9'rl €'L0S Le le Le 00'0 00°0z- 0'08 €
+Jeujwe7y AN 99 09'rl 200 6'LL Let eh 00°0 00'02- 0'0r Zz
+Jeujwe7 8'0z 00 6S’ L'00S 0'0 00 00 00°0 00°0z- 00 |
+(80H JOlld) | (Isd) eunsseuq | (isd) aunsselq (dH) (isd) (4) (y) (y) (6ep) (6p) (4)
+usayed MO|4 aunjoei4 8/OH wWoyog | Jamo, dwng |einssalg ding} ydeq JaA09 | udeq jeonie, | UOWeAS|y | yNwIzy | UoReUlOU] | UOeD07 Tg
+(123) O'OT98E :OUNJOA ssOT PIN], —<([eB) |'99HZ :odIg pue s[oH MoUIN[OA pINjy
+(ut) 000°9 :(s)ezIg o[oH
+(wid8) 00'0S ‘IY MOLT
+10H If Suypuq :uoressdo Suryfud
+1 GH :s}usurwo09g
+80/b7/h 18d
+Temey “oyooury, :938)S/AqD
+ayosury :uoNe.07T
+qa) :Ag umeiq
+00-0L8$ *ON JUNOD.W gor
+AUSIOAIULE) OTLOV HEME “UIRP] 9910, Jomeg :oweN yolorg
+‘OUT ‘sqejoaH :owen Aueduiod,
+PNUEOTTVIAL\UI 9910, JOMOg dH'00-0L85\S9H9§ 0O8S\:H_ [ld Bed
+(Qoptd) ¥q jndjnO soy WO}0g pue dumg - 314k],
+(PHYA weis01g sonerpAy wedyqiig
+Zz
+‘ouj ABojouyoe Jeune Aq g00z PNG Buisn g00z/PL/s UO peyud
+Jeujwey 8'0z zr evs 8°8cS 00 o'pe- o'r os'eee |00°SL G'Oe6} os
+Jeujwey S'LZ 6z- Zr'sh L'°8@S Lz 6'LZ- 92 os‘eee |00°SL 0'0Z61 6b
+Jeujwey €'Sz SL Or'sl Lez O'eL S'LL- Sz OSes |00°SL 0'0881 8b
+Jeujwe7 sez G9 6e'S| G'LzS aaa ae €'€% OS'ee€ /00°SL 0'0r8L Ly
+Jeulwey ZLE ZL Lesh 69S 8'6Z Z6 9°02 os'eee 00'S) 0'0081 9p
+Jeujwe7 Sve 6'Sl GE's} €'9zS L'0v S6L 9°02 Os'eee 96'rL O'09ZL Sy
+Jeujwey Lee Z02 ve'sl L'Szs GIS 6'8z 9°27 os‘ece 01 ZL O'OZLL vy
+Jeujwey ely Gz zest L'Szs 68S EOE Lt os‘ece [£26 0'0891 ey
+Jeujwey ERA 6'SZ e's} S'pzs ee9 Li G'LZ os‘ece |ze9 O'Or9l rag
+Jeujwey Ser 7'lZ 8z'Sl 6'€ZS €g9 zSp L0z os‘ece |0s'e 0'0091 Ly
+Jeujwey Zev 0'8z AT ©eeS S79 8'or LZLb osece SZ 1 0'09S1 Ov
+Jeujwe7 L0v 7'8z Sz'Sl Leg zZS O'8b e6 os‘ece [SLL 0'0zS1 6€
+Jeujwe] SLE 8'8z €7'SL L'@zsg 88h Z'6b v'0- os‘ece SLL O'08rL 8c
+Jeulwey 9'8e Z'6Z LZS G'Lzs 01S v'0s 9'0 os‘ese |SZ'L 0'0rrl le
+Jeuiwey GLE 9°6z 0z'SL 6'0zS 0'8b LS Le os‘ece [SLL 0'00¢r1 ge
+Jeujwey L'9e LOE 8I'SL ©'0zS 6er 62S 0'6- os‘ece [SLL 0'09€1 Ge
+Jeujwey LSe soe OLS} L61S 62 LS Z LL os'ese |SZ'L O'0zEL ve
+Jeujwe vse 6'0€ vl'Sh L6LS 6 LY €'SS v'el- os‘ece [SLL 0'08Z1 ee
+Jeuiwey g'se ele elt G'eLs 9% G9 6'EL- os‘ece [SLL O'0rzL ze
+Jeujwe Z9E Le LL'SL 6LLS vv gs v'el- os‘ece [SLL 0'00Z1 Le
+Jeujwey L9E zze 60'S} LS O'S 06S vel- os‘ece |GZ1 O'09L1 o€
+Jeujwe LLe 9'ze LOSI SOLS Ser z'09 Libb- os‘ese |Sz'1 O'OZLL 6z
+JeuIWwey o'er o'ee 90'S] Z'OLS g'69 v'L9 ve os‘ece [SLL 0'0801 8z
+(910H }0}ld) | (isd) eunsseiq | (isd) eunsselq (dH) (isd) (4) (y) (y) (6ep) (6ep) (y)
+uJoyed MO} oaunyoel4 BjOH Woyog | JeMog dwnd |sinssejg dwind| yydeq JaAo0g | ujdoq jeoqse, | uoNeAg]y | ynwizy | uoVeuloU; | UOeD07 1g
+(Te8) O'OT9BE sOUMNJoA ssOT PINJY —‘([eB) ['99H7 :odIg pue s[oH WoUNJO,A pIn[y
+(ut) 000°9 :(S)ezIS e[OH
+(wd3) QO'0S IVY MOLT
+91H 10g Supuq :uoyesodo Surfud
+1 GCH :s}usurwo09g
+80/r7/p red
+Temep ‘oyooueyy :oy8)S/AIID
+ayoouey suoNe.0T
+—_ a) :Ag umeiq
+® 00-0L8¢ “ON JuNoD9y gor
+ASIOAIUL) OpLOe HeMeP “UIeYA] 9910,j Jomog :oweN pololg
+‘uy ‘sqejoen owen Aueduios
+PNULOTTVIALL\UIE 9910,] JOMOS NAH '00-0L8S\S9H98 0O8S\7H ‘THT Bed
+(optg) BV IndjNO sJoH{ Woyog pue dung - aquL,
+(PHYATAG wWeasorg soynerpAH wedyqLug
+b
+‘ou ABojouyse, saunew Aq g00z PNWill4d Buisn gooz/PL/s UO payuld
+Jeujwey Jeulwey ser Zep LZSh GL2s 0'99 Z29 ae os‘ece |Sz'b 0068 LZ
+Jeulwey Jeulwey ely 9% €z'Sl o'%zs¢ €OL 0'99 e'OL os‘eee |Sz2'1 0'0€6 9z
+Jeujwe] Jeulwe] Gor Lt vest ves Ord 8'79 Z6 os‘ece |SZb 0°06 Gz
+Jeulwe Jeulwey Lov Gly Gz'SL 622s Obl 9'¢9 zs os‘ece |SZb O'OLOL vz
+Jeulwey Jeujwey 6 rr 60r 27S} ©€zs v'69 79 VL osece |SZ'b O'0SOL €Z
+Jeujwey Jeujwey Liv € 0b 8z'SL Lt 0°09 LL9 Lh os‘ece |SZ'b O'0601 [ad
+Jeujwey Jeujwey e9c s'6e 6z'SL Zes o'r 66S eSL- os‘ece [S21 O'OELL LZ
+Jeujwe] Jeujwey 9'9¢ Z6E e's 9'7zS eS 28S vel- os‘ece [S21 O'OLLL 02
+Jeujwe] Jeujwe Loe 9'8e ze'St bse lbp Gls vel- os‘eee |SZ'L O'OLZL 6L
+Jeujwey Jeulwey ZSE ose ce'Sl S'SzS ely 79S 6vl- osece |SZ'b 0'0SZI SL
+Jeuwey Jeujwey g'se Gle yesh 6SzS Lp oss 6ZL- osece |SZ'b 0'06Z1 Zt
+Jeulwey Jeujwey ese 6'9¢ ges} v'9zS Ler g's Z01- os‘ece |S2'1 O'OeeL OL
+Jeujwe] Jeujwe] L9e e'9E Lesh g'9¢S by 9°%S s'8- osece |SZ1 O'OZEL GL
+Jeulwe Jeujwey 9'°8¢ Le ge'SL Leg Lbs vs €0- os‘ece |SZL O'OLrL vl
+Jeujwe Jeulwey SLE ZSE 6e'SL Les L'8v 0S vl os‘ece [SLL 0'0SrL €L
+Jeujwe] Jeulwe gsc Ove Lys L8zs 60S 6'8r oz os’ece |SZ'b 0'06rL ZL
+Jeulwe Jeulwey Sly O've Zs 9'8zS v'6S Lily Lue os‘ece [S21 O'OESL LL
+Jeujwey Jeuwe Ser vee ers} 0'6zS v's9 Gor 68L osece [Sz2'1 O'OLSL OL
+Jeujwey Jeulwe] ver gz Gps S'6zS oso Str ¢'0z OSs'eee |2@'v O'OLOL 6
+Jeujwe Jeulwe] St 9'°0€ or'Sl 6'6zS v7 9'°0b 8'1z OS'eee |80'Z 0'0S91 8
+Jeulwey Jeujwey Lb 6'2Z Lvs v'0es 7 LS ore 9% osece [G66 00691 Z
+Jeulwey Jeujwey gle Lv er'SL g'0€S 6'8r 192 ZU osece |L8°ZL O'OELL 9
+Jeujwey Jeujwey 6S S'6L oss} Z LES OLE OLL 9°02 osece |00°S1 O'OLLL S
+Jeulwe] Jeujwey €0€ Lvl LS°SL Lbes 712 99 9°02 os‘eee |00°SL O'OLSL v
+Jeujwey Jeujwe] 61z 86 zg°SL ze ¢'0z g'¢- eve OS'ese |00'SL O'OSsL €
+Jeulwey Jeulwe vz 6r vS'SL 9'Zes¢ v'OL Lvl- S72 os‘ece |00°SL 00681 Zz
+Jeulwey Jeujwe 8°02 00 SS°SL o'ees 0'0 9've- 9'rz OSes |00°SL S'Oc61 |
+(2}0H pawesy)| (910H }O}ld) | (isd) einssolq | (isd) eunssolq (dH) (isd) (y) (4) (4) (6ep) (6ep) (4)
+wayed Moj4 | Waeyed MOj4 ainjoel4 Q}OH WOYOg | JAMO dwn |ansseig duind} ydeq JaA0D | yjdeq jee, | uoHeAd|y | yNWIzy | UOHeU|OU] | UOReD07 Hg
+(J 98e}¢g - Suuvay-yoeg) vjeq jndjnGC sIjoH] Woyog pue dumg - aquy,
+(123) O'OL98E souNJoA ssoT pint]
+(POATAG wWeasso1g sanespAH wedypig
+*(Te8) pOLEOI :odig pue sjoH ulouNjo, pmnyy
+(Ut) 000°Z1 4 (UF) 000'9 -(S)9ZIS 90H
+(wd) 00'0S :A1eY MOLI
+] 98RIg - SuIWROY-yoeg :uoneiodg SulUg
+1 dGGH ‘s}uowuios
+80/PC/p :978C
+Hemey ‘oyoouryy :948}1¢/AIID
+ayooury :uoneo0]
+q) ‘Ag umeig
+O00-OL8S “ON JUNODDY qor
+AVSIOAIUL) OIFIO’ WEMeY “Uleyl 9910,J Jomeg :oweN yoflolg
+‘OU] ‘sqe[oon :owen Aueduros,
+PNUT'O | TVIAL\We 99104 IOMOS MdH'O0-OL8S\S9H9S OO8S\:H -AI}A Bed
+Z
+‘ouy ABojouyse, Jesnew Aq g00z PNWillG Buisn g00z/P1/S UO pajulid
+Jeulwey Jeujwe] 8:02 OLE Z6'vL OLLS 00 00 00 00°0 00°0z- 00 os
+Jeujwe] Jeujwey e6 ZeL e6'rl SLLS 6z ve s0- 00°0 00°0z- O'OL 6r
+Jeujwey Jeujwe] O'eL L6L v6'rl ZZLS Srl LLL ee: 00°0 00'0z- 0'0S 8b
+Jeulwe] Jeujwey LOL 192 96'r1 LZS 192 8:0 L'v- 00°0 00°0z- 0°06 Lv
+Jeujwe) Jeujwey 69L ez L6'vL LeLs lz 6eb 9'9L- 00°0 Ge'L1- O'OEL or
+Jeujwe] Jeulwey est OLE 86'rl QELS L'@ zgg Lee- 00°0 66'r1- O'OLL Sv
+Jeujwe] Jeujwey Sel 0'@r 00°S1 O'rlS zLh 9'r9 vile 00°0 ZL ZL 0012 vr
+Jeujwe] Jeulwe] LOL Scr LO'SL S'vLS 9'r~ O'zL vLb- 00'0 97'6- 0'0Sz er
+Jeujwe] Jeujwey Z0z L'8p ZO'SL 6 LS 6 LE FLL 9'6¢- vizse |0r'9- 0'06Z rad
+Jeujwe7y Jeulwe] v'L2 L6b €0°S/ v'SLs Oly 6:08 €'6€- L@'vse |eg'e- o'0ee Ly
+Jeuywe Jeulwe] 6LZ v'0S GO'SL SSIS eer aa) L'6€- Lybse |29'0- O'OLe Ov
+Jeujwey Jeujwe] 61z LOS 90'S Z'9LS Lev 618 9°8e- vS'ere |SZL O'OLr 6e
+Jeujwe Jeulwe] OL 9'6r 20°S/ L9OlS Let 2:08 'ge- g9'Spe |SZL 0'0Sr 8c
+Jeulwe] Jeujwey ele O'6r 60'S} LLL Llp v6 €'8e- Lezve |SZb 0'06r Ze
+Jeujwey Jeulwe] O1z 7'8V OLS OLLS Z'0r Z'8L 0'8e- Ge6Ee ISL L o'0es 9¢
+Jeulwey Jeulwe] 202 S Lb LE'SL O'sLS ©6e O'LL Lle- gO'Zee |SZL 002s Se
+Jeulwe] Jeujwey v'0z ely ZS v'8lS eee SL gle- Z7VEE |SL'b O'0L9 ve
+Jeulwe] Jeulwe] GL Lob viSL 6'81S Sly Ov 8'Ze- os‘ece {S21 0'0s9 ee
+Jeulwe] Jeulwe7 S'LZ Lor SLSL e'6LS o'er eel ©'0€- os’ece |SZ'b 0°069 ze
+Jeujwey Jeulwe 7 6'LZ SSP OSL s'6LS Ler Vel 0'6e- os‘ese |SZ'L O'0eZ Le
+Jeujwe] Jeujwey 61z 0'Sr SL'SL Z'0¢S Zev 602 LLe- os‘ece |SZ'b O'OLL oe
+Jeujwe] Jeujwey lve vbr 6L'SL L:0zS eee 269 vibe os‘ece  |SZL 0'0L8 6z
+Jeujwe] Jeulwe 9°8¢ ger 0z’SL LLes ZL $89 Ll os‘ece |SZ'L 0'0s8 9z
+(910H pawesy)| (2/0} }0lld) | (Isd) aunssesq | (Isd) aunsselq (dH) (isd) (4) (y) (4) (Bap) (6p) (4)
+usayed Moj4 | Weed MO} aunjoel4 9]OH Wo}Og | JOMOg dung |ainssajg dung} yjdeq aA09 | uydeq jeoe,A, | UOWeAD!A | yNWIZy | UOHeULOU] | UOWeD07 1g
+(123) O'OTOSE ‘OUINJOA ssoT pINjy —_ (TPB) HOLEOT ‘odid pue opoH MoUNJoA pInfy
+(at) 000°ZT % (UL) 000°9 :(S)ezIg 910
+(wid8) Q0'0S ‘ey MOLT
+] 98eI1¢ - SulURoy-yoeg :uoTeIedO Bulg
+1 ddH :SJUSUIUOD)
+80/P7/p :O1eC
+i Hemey “oyooury, :oy8}¢/A1D
+ae \ / ayooury :uones07]
+(J 9883¢ - SuTMIVaY-youg) ejeq jndjngC sjoH{ WoYog pue dumg - a[qu I],
+(PRAT wessorg sanerpAH wedyig
+qo) ‘Ag umeig
+O00-OL8S “ON JUNODSY Gor
+AUSIOATUL] DIF’ TeMeP “UleYA] 9dIO,J Jomag :oweRN yolog
+‘ouy ‘sqe[osH :oweN Aueduios,
+POUT TVIAL\UeA 9910] JOMIS MdH'00-O0L8S\S9H9S OO8S\:H ‘aT! Bed
+L
+‘oul ABojouyse, seunew Aq g00z PNWIIG Bulsn g00z/P7L/¢ UO peyulid
+Jeulwey yeulwe ser Zep LeSh G'Lz¢ 0'99 Z'29 ZL os‘ece |Szb 0'068 1Z
+Jeujwe 7 Jeulwe] ely Qt €z'Sh 6'1zS €9OL 0'99 €0L osece [S21 0'0e6 9z
+Jeujwe] Jeulwey S'OVr Oz@ vz'Sh v2 Ord 19 Z6 os‘ece |szb 0026 Gz
+Jeulwey Jeulwey Lov Sly Gz'SL 8'%zS SLL 9'¢9 ze os‘ece |SZ'b O'OLOL vz
+Jeujwe] Jeujwe] 6 vb 6'0r 9z'Sl ©'€ts v'69 79 VL os‘ece |SZb O'0SOL €Z
+Jeujwey Jeulwe) LW €'0v 9z'Sl Lets 0'09 mare) Mh os'ece |SZ'L 00601 rad
+Jeujwey Jeulwe] e'9c L6E 67'SL Lv2s o'r 66S eSt- os‘ece |SZ'1 O'OELL LZ
+Jeujwey Jeulwe] 9'9¢ Z6E oes 9'rzS e'Sp 28S vel os‘ece |SZ'L O'OLLL 0z
+seule] Jeujweq L'9€ 9'°8E ze'Sb o'szs by GZS vel- osece |SZL O'OLZL 6L
+Jeulwe] Jeujwey ZSE ose ees ¢'Szs ely Z9S 6'rL- os‘ece [S21 O'0SZL SL
+Jeujwey Jeulwey gce vile ve'sl 6'SzS A o'ss 6ZL- osece S21 0'06ZL Lb
+Jeujwe7y Jeulwe gcc 6'9€ Ges} v'9csS Lepr ges Z01- os‘ece S21 O'OeEL 91
+Jeujwe 7 Jeujwe L'9€ ee LESL 8'9cS Ly 9% g's os‘ece |SZ'1 O'OLEL SL
+Jeujwe] Jeulwey g'8e LSE BES} Z LS VLS v's €'0- os‘ece [Sz'L O'OLL vl
+Jeujwey Jeulwey SLE se 6e'SL Le L'8v L'0S vl os'eee |SZ'L 0'0Sr1 €L
+Jeujwey Jeulwey G'8e OVE Lys 87g 60S 68 oz os‘ece |Sz'1 0'06r1L ZL
+Jeujwe 7 Jeujwe] Gly Ove zp'sl 9'°8zS [6S Llp Lue osece |SZ°b O'0eS1 LL
+Jeujwey Jeujwey Sep vee er'sl 0'6zs v'S9 Gor 6.8L os‘ece |Sz2'1 O'OZS OL
+Jeulwe] Jeujwe] ver gz GP'S S'6zS 0's9 Stb $'0z os‘ese [@'p O'OL9L 6
+Jeulwe Jeulwe] St 9'0€ ors} 6'6zS v'z9 9'0r 8'1Z osece |80°2 0'0S91 8
+Jeujwe Jeujwey L'0b SLl2 Lvs} €0es ZLS Ove 9% os‘ece |s6'6 00691 Z
+Jeujwe Jeujwey SLE Lv SPS} g'0€S 68 1:92 Z2e os‘ece | L821 O'OELL 9
+Jeujwe Jeujwey 6c S6L os'S} Zz Les OLE OLL 9°02 os‘ece |00°SL O'OLLL S
+Jeujwe 7 Jeujwey €0€ Leb LS'GL Les 7 Le 99 9°02 OS'ESE |00°SL O'OLSL v
+Jeulwe Jeujwe7 61Z 86 zg°Sl Vzeg $02 ge- ev~ OS'eee 00'S) 0'0S8L €
+Jeulwe Jeulwey ada 6r vS'Sl 9'ze¢ v'OL Lvl Sr OS'eee 00°SL 0'0681 [4
+Jeujwey Jeujwey 8°02 00 Sg°SL o'ees 00 9'vz- o'r OS’eee 00°SL S'Oe6L L
+(9]0H pawesy)| (2]/0} }0lld) | (Isd) eunsseq | (Isd) sunsselg (dH) (isd) (4) (4) (y) (6ep) (6ap) (4)
+UJa}eq MOj4 | Weyeg MOj4 ounjoes4 8/OH WoOg | Jamo, dwind |einsselq dwnd} yydeq JaA09 | ujdaq jeonse, | uOeAS|y | yNwizy | UOReUOU| | UOWeD07 HIG
+([e3) O'OI98E OUNJOA SsOT pIN].y —*({eB) B'ZECpT :odig pue sJoH UloUINjoA pny
+(ar) 000°8T © (UE) 000'ZI_ :(S)9ZIS 90H
+(wid8) QO'0S sory MOLT
+Z9SRIC - SuTUROY-yoeg :uoreodO Surg
+I ddH :SJUSUIUOD)
+o> 80/P7/h :01eC
+Temey ‘oyooury :93e1¢/ATID
+ayoouey :uo1je00'T
+gq) :Ag umeiq
+00-0L85 “ON JUNos0Vy gor
+AVSIOAUL) SOV NEM] “UIRJA] 9910J Jomag soweRN ofolg
+‘OU ‘sqejosH ‘owen Aueduiog
+POULOTTVIA LUI 90104 I9M9g MdH'00-0L8S\S9H29S OOS\H THA Bed
+(Z 983g - SUTUIvAY-YOVg) B}eq jNndjnC x[OH{ WoyVog pue dung - a1qe],
+(PAATEG@ weiaso1g soneapAyH wedqiug
+Z
+‘ou ABojouyse! sesnew Aq g00z PNWIIG Bulsn g00z/P1/s UO payulid
+Jeujwe Jeulwe] 8°02 Ol Z6'vL OLLS 00 00 00 00°0 00°0z- os
+Jeulwey Jeujwie 7 6 ZEL e6'vL LULS 62 ve s‘0- 00°0 00°0z- O'OL 6r
+Jeujwe] Jeulwe 7 O'eL 96L ve'rl ZZLS Srl VLL €@- 00'0 00'0z- 0'0S er
+Jeujwe] Jeujwe7 Z9L 0'9z S6'rl 9721S 1:92 g°0€ be 00'0 00°0z- 0°06 Lv
+Jeujwe Jeulwe] 691 zz L6'vL VeLs ©lzZ 6 EY 9°91- 00'0 6e'L1- O'0EL or
+Jeulwe] Jeujwe 7 et GLE 86'rl GELS L'@ zg Lee- 00°0 66'r1- O'OLL Sb
+Jeujwe Jeujwe] SEL 6 LY 66'r1L 6BELS TLL 99 vLb- 00°0 Zl 2b- 0'01z vb
+Jeulwe Jeulwe] LOL v'Sp LO'SL vvls 9'vz Oe v Lby- 00'0 97'6- 0'0Sz ev
+Jeulwe Jeulwe] Z'02 0'8r ZO'SL SvLS 6LE SLL 9'6e- vLZSe |0v'9- 0'06z Aa
+Jeujwey Jeujwe 7 vb 9'6r €0'SL eSLs Ol 6°08 ©'6¢- L@vSe |€G'e- o'0ee ly
+Jeulwe] Jeulwe] 6'bZ ©0S v0'S} LSLS eer ve L'6e- LybSe |29'0- O'OLE Or
+Jeujwe7 Jeulwey 6'1z LOS 90'S} Z'OLS Ler 618 9'8e- vS'sre |SZL OOlr 6¢
+Jeujwe 7 Jeujwe 7 9°12 S'6b 20°SL 991g Ltr 2:08 G'ge- e9'Sre |SLL 0'0Sr ge
+Jeulwe] Jeujwe 7 lz 68r g0'SL L'ZLS ly v6 ©'8e- be'zpe |SLL 0'06r Le
+Jeulwe] Jeujwe7 O'1z eer OL'SL SLLS Z0r Z'8L o'se- G6'6ce |SZ'L 0'0eS Qe
+Jeujwey Jeulwe 7 2:02 Sly LE'SL 6LLS e'6E OLL LLe- go'zee |SZ'L 0'0zS ce
+Jeujwe Jeujwe 7 v'02 TLb ZS v'SLs eee g'SL Gle- zvee |SZb O'OL9 ve
+Jeujwe] Jeujwey Gz 9'°9r vis g'8Ls Sly Ov 8'Ze- os‘ece |SZb 0'0S9 ee
+Jeujwey Jeulwe7 gz 0'or SLSL e'6LS o'er eel ©'0€- os‘ece  |SZL 0'069 ze
+Jeulwey Jeulwe7 612 S'Sr QL'SL L6LS Lev Vl 0'6e- os‘ece [S21 o'0eZ Le
+Jeujwe7y Jeujwe7 612 6 bY LVGL z0zS Zev 60 LLe- os‘ece  |SZ'L O'OLL o€
+Jeulwey Jeulwe | ve ev 6L'SL 9°0zS ese L269 v'Le- os‘ece |SZ°b O'0L8 6zZ
+Jeujwe7 Jeujwey 9°8e Lev 0z'SL O'LzS ZS ¢’89 Ll osece  |SZ°b 0'0S8 9z
+(2}0H powesy)|) (98]0H 30}ld) | (isd) eunsselq | (isd) eunsseld (dH) (isd) (y) (4) (4) (Sep) (6ep) (y)
+usayed MO|4 | Way}ed MO|4 ounyoes4 B|OH WOYOg | JOMOd dung jainssaid dwind| ydeq 4aA0D | ujdeq jeoNeA | UOHeAD|A | yNWIZY | UOReUOU] | UOeD07 Wg
+(Z as¥Ig - SuTUIVAY-yoRg) vjVq JndjnOC s/o] Woyog pue dumg - 3[qu I],
+(183) O'OI98E sauINJOA sso7T pin
+(PATA wess01g sanerpAH wedyp4g
+*(Te8) g'zospz sodig pue o[oH WlouNJo,A pInyy
+(4F) 000'8T % (UF) OOO'ZT. :(8)8ZIS >IOH
+(wd) 000s :o1eY MOfY
+ZT os8RIS - SuIMROY-yoeg :uone1ody SulUg
+1 GGH :s}ueurutog
+80/P/p 91"
+Hemey ‘oyooury, :o181g/AD
+oyooury :u0le007T
+qo :Ag umeiqg
+OO-OL8S “ON JUnODDY gor
+AUSIOAU() DLV WEMeH] “UIRYA] 99IOJ James soweN yolorg
+‘Ou] ‘squijoen :ouen Aueduiod
+PNUt'd | TVTAL\ULeA, 9910,J JOMOS dH'O0-OL8S\S9H9§ OO8S\:H ‘THF Bed
+Drillpath Hydraulics Program (DrillMud)
+Project Input Data
+Project File Name: H:\5800 Series\5870-00.HPU Sewer Force Main\TRIAL13.mud
+Company Name: Geolabs, Inc.
+Project Name: Sewer Force Main, Hawaii Pacific University
+Job Account No.: 5870-00
+Drawn By: GB
+Location: Kaneohe
+City/State: Kaneohe, Hawaii
+Date: 4/24/08
+Comments: HDD 2
+Survey Data:
+Total Measured Length: 633.8 (ft)
+Drilling Mud Data:
+Mud Type: Baroid - QUIK-GEL
+Concentration: 120.00 (1b/100gal)
+Reology Model: Newtonian
+Viscosity: 27.817 (cp)
+Soil/Rock Data:
+Current Formation Layer: 1
+Current Layer Start: 0.0
+Soil Selection: Cohesive Soil
+Density: 110.0 (1b/ft3)
+Earth Pressure Coefficient: 0.44
+Shear Strength: 27.78 (psi)
+Cuttings Transport:
+Cutting Size: 0.090 (in)
+Fluid Loss:
+Loss Factor: 0.20
+Pumping Factor: 60.00 (min/hr)
+Pilot Hole Data:
+Drilling Pilot Hole:
+Hole Size: 6.000 (in)
+Flow Rate: 50.00 (gpm)
+Drilling Rate: 30.0 (ft/h)
+Drilling Rod:
+Drilling Rod OD: 3.500 (in)
+Drilling Rod Wall Thickness: 0.375 (in)
+Drilling Rod Section Length: 15.0 (ft)
+Drilling Rod Thread ID: 2.750 (in)
+Drilling Rod Thread Length: 0.000 (in)
+Jet Head/Mud Motor:
+Drilling with Mud Motor
+Motor Pressure Loss: 500.0 (psi)
+Bit Nozzles:
+Ignore (wide open)
+Back-Reaming Data:
+Back-Reaming (in order of operation):
+Stage Description Diameter Flow Rate Reaming Rate Chase Pipe Chase Pipe OD
+(in) (gpm) (ft/h) (in)
+1 First Ream 12.000 50.00 30.0 Yes 3.500
+Final Ream 18.000 50.00 30.0 Yes 3.500
+Printed on Wednesday, May 14, 2008 using DrillMud 2008 by Maurer Technology Inc.
+b
+"ou ABojouyse, sasnew Aq g00z PNWIILG Buisn g00z/P1/s UO payuLd
+Jeujwey v9e Zve L8'rL 8°Z0S 9'Sz 9°89 6'2y- 00'0 s8'9 0'0zs L@
+Jeulwey 96 L'Se 08'r1 ¢'Z0S ose L002 9'se- 000 Ly’s 0'00S 9z
+Jeuiwey eer 8'se 08'r1 z'20S zor 2 L'92- 00'0 86'€ 0'08r Gz
+Jeulwey 6'9r EOE 6L'vL 6'90S g'9S Gel Z9L- 00°0 soz 0'09r v2
+Jeuiwey zs g'9e 8l'vb 9'90S 299 Lvl vl 00°0 ZL'L 0'0rr €Z
+Jeuiwey sls G9 ZLvb €'90S 9'0L er Q'e- 00'0 00°0 0'0zr zz
+Jeujwey LS v'9e 9L'vL 0'90S EL ev O'e- 000 00'0 0'00r LZ
+Jeulwey LAS €9E GL'vl Z'SOS ZbL Zr O'e- 00'0 6L'0- o'0ge 0z
+Jeujwe SIS O'9E pL vl v'S0S LOL Lel O'e- 00'0 2e'e- 0'09€ 6L
+Jeulwey zs 7'Se vl'vh L°S0S 9°69 92 O'e- 00'0 99°e- Ove SL
+Jeujwe] Z0S Live ell 8'y0S L'89 VEL O'e- 00'0 60°S- o'0ze Zt
+Jeulwe] 0'0S 9'ee ZL'bb S'v0S 199 1°69 O'e- 00°0 zg°9- 0°00 ey
+Jeuiwey L'6b ze LL'bb Z'v0S 9'€9 9°99 O'e- 00°0 G6Z- 0'08z SI
+Jeuiwey Leb 6'0E OL'bL 6'€0S ‘09 9'€9 O'e- 00'0 6E°6- 0°09 vl
+Jeuwey LSv L'6z 69'rL 9'€0S ees 0°09 L9- 00°0 Z8'0L- 0'0rz €l
+Jeuiwey Lily [ar 89'rL €'€0S rly 0'9S 9'vL- 00'0 S7‘ZL- 0'0zz Zh
+Jeulwey “le 0'Sz Z9'vL 0'€0S 9'6Z OLS 6'LZ- 00'0 g9°EL- 0'00z LL
+Jeujwey zle 92% L9°vL 2°20 L'8z 9'9r G'eL- 00°0 00°S1- 0°08 OL
+Jeujwey OLE L0z 99'rL 20S €'62 v' ly VZb- 00°0 00'S}- 0'091 6
+Jeujwe O'se OLL o'r L'Z0S soe Z9E Lg 00°0 00°S1- 0'0rL 8
+Jeujwe7y Z8e VSL 9'rL 8'L0S be be 00 00'0 00°S1- 0021 Z
+JeuIWey G9e GZ €9'rL S'L0S 6'SZ 6'Sz 00 00'0 00°S1- 0'001 9
+Jeujwe7 Live 0'OL Z9'vl €L0S 202 202 00 000 00'S 1- 0°08 S
+Jeulwey o'ee GL Lor 0'LOS G'S} g's} 0'0 00°0 00°SL- 0°09 v
+Jeujwe ele o's 09'rL 200 vol v'0l 0'0 00'0 00'S L- 0'0r €
+Jeulwe S'6z sz 09'rl 7'00S zs zs 00 00°0 00'S 1- 0°02 z
+Jeulwe gz 00 6S'rL L00S 00 00 0'0 00°0 00'SL- L
+(910H Old) | (ISd) eunsselq | (ISd) eunsseld (dH) (isd) (4) (4) (4) (6p) (6p) (4)
+wsayed MOj4 ainyoel4 BJOH WOYOg | JOMOg dung jainssaid dwing| ydeq 4JaA0D | ujdeq jeonJeA | UOHeAS|A | yNWIZY | UOReUOU] | UOeD07 Hg
+(1e8) 0'9L971 :ouMNJoA ssoT pint
+Goptd) Bed ndjnQ sJoH Woyog pue dumg - aqV 1,
+(POATAG wWeassorg soMerpAH wedypaqg
+*(Te3) 9°608 ‘odig pue ofoH woumnjo, pmy.y
+(a1) 000°9 :(s)eztg 9,0H
+(wid8) QO'0S ‘Vey MOLT
+[OH 10d Suypuq :uoresodo surypud
+7 dGH :s}ueuui0g
+80/PC/p :978C
+Hemey ‘oyooury :3}81S/AIID
+syooury :woyes0'T
+q5) :Ag umeiq
+O0-OL8S “ON JUNODDY gor
+AVSIOAIUL) OIF1IO’_ HEMEY “UlRJAl 9910,J Jomeg :oweN y~ofolg
+‘ou ‘SqujooH ‘owen Aueduiog
+pour eT TVIALUle 99104 IOMIS MdH'00-0L8S\S9H9S OO8S\'H ‘etd Bed
+(4
+“oul ABojouyse, Jasnew Aq g00Z PNIWIIG Buisn g00z/PL/s UO peu
+Jeulwe] lz Sv 98'rl S60 00 OLb O'Lb- 00°0 00°SL g'ec9 ee
+Jeujwey L'6z L'9z 98'r1 €'60S 6e ‘0s 9'9r- 00°0 LO'vL 0'0z9 ze
+Jeulwey g'0e Z'8z Sel 0°60 ‘6 LSS 0'9r- 00°0 8°21 0'009 Le
+Jeujwe ve o'0e ve'rl 2°80 SEL Z6S v'Sb- 00°0 vl bh 0'08¢ oe
+Jeujwey GEE Lie eer v'30S Z'8L 8°79 O'rb- 00°0 LL'6 0'09¢ 6z
+Jeujwe ZSE ee zZ8'bL 180 0% 669 6 er- 00°0 878 0'0rS 8z
+(2}0H 30!) | (Isd) aunsseiq | (isd) ounsselq (dH) (isd) (y) (4) (4) (6ep) (6p) (4)
+usayed MO}4 aunjoel4 8]OH WOOg | Jamo, dwnd |einssaig dwnd} yjdeq JaA09 | ydeq jeonie,, | UOHeAS|A | y;NWIZY | UOReULOU] | UOeD07 Hg
+(te) O'9L9TI ‘oUN[OA ssoT pinyy
+Qoptd) Bed jndjnOC sJoH{ Woyog pue dung - aqe 1,
+(PNYATEAG) weaiso1g soynerpAH wedypig
+*(Te8) 9°608 :odig pue oJoH] wWoumyjo, pmny.y
+(ut) 000°9 :(s)ezIs 910
+(wid) 00'0S :o1eY MOLT
+10H 10d Suypuq :uoresodo Suryjud
+7 dGH :s}usurul0d
+80/bC/p :938C
+leMmeyH ‘oyooury :9381S/AID
+ayooury :uonRo0T
+q) :Ag umeiq
+00-0L8S -ON JUNODSY of
+AUSIOAUL) OO’ WeMeH “UIRJAY 99I0,J JoMES :oWeN yolo1g
+‘Uy ‘sqejoon :oumen Aueduog,
+Paul e TTVIAL\GIe 9010J IOMIS MdH'O0-OL8S\S9HO§ OO8S\:H “OLA Bed
+b
+“ouy ABojouyse, sesnew Aq g00z PNWIILG Buisn g00z/P71/¢ UO pazuld
+Jeujwe Jeulwe] ele vel Z9'vl €'L0S s'8z g'8z 00 00°0 00°SL- O'OLL lz
+Jeujwe 7 Jeulwe] Z'8E SSL €9'vL S'L0S LL gee ¢z- 00°0 00°S}- O'OEL 9z
+Jeujwe Jeulwe) SLE esl ro'rl 8'L0S 6'6z g'8e 63- 00°0 00°S1- 0'0SL Gz
+Jeujwey Jeujwe] le 2:02 vor} 0'Z0¢ L'82z O'rr e'St- 00°0 00°SL- O'OLL vz
+Jeulwey Jeulwe ole Lez Sor Z'Z0¢ vl 6b Lb2- 00°0 Or'vl- 0061 eZ
+Jeujwey Jeulwey 9'6E €'Sz 99'rL v'Z0S ZG 6S 9°8L- 00°0 16 °Z1- O'0Lz zz
+Jeujwey Jeulwe] Lev lz 99'rL 9°20 Sly Les 9'0L- 00°0 vS'LL- 0'0€z Lz
+Jeujwey Jeulwe] Vly L'6z L9°v1 6'Z0S v'8S 619 Ge 00°0 OLOL- 0'0Sz 0z
+Jeujwe 7 Jeujwey L'8v 9°0€ 89'rL L€0S V9 L's9 o'e- 00°0 29°8- 0022 6L
+Jeujwey Jeulwe 96 6 le 89'rL €'€0¢ 69 629 Oe 00°0 vol 0°06 gL
+Jeujwey Jeulwe] 70s oe 69'rl S’e0S 719 Z'02 O'e- 00°0 L9°¢- O'OLE LL
+Jeulwe] Jeujwe] 60S gee 69'rL Z€0S 6°89 6 LL O'e- 00°0 Le'r- o'0ee OL
+Jeulwey Jeujwe 7 vs vive OL'rL 0'v0S Z0L ZEL O'e- 00°0 v6'7- o'ose SL
+Jeujwe] Jeulwe] Q'LS Sve Waal Z'v0S OL Or 0'e- 00°0 LS'L- O'OLE vl
+Jeujwey Jeujwey LUs 6 VE LL'bL v'v0S CL er O'e- 00°0 20°0- 006 €L
+Jeulwey Jeujwey SLs 6 VE ZL'bl 9°70 LL er 6c- 00°0 00°0 O'OL ZL
+Jeulwey Jeujwe] ZLS 6 Ee eL'vl 8'70S L'69 Zr S‘r- 00°0 or'0 o'0er LL
+Jeulwe Jeujwey 9'8r Live el bh LSOS 6'L9 GEL 6 LI 00°0 eel 0'0Sr OL
+Jeujwe Jeujwey Sp eve vL'bl €'S0S s'Ls O'eL v'bLe- 00°0 97 0'0Lr 6
+Jeujwe] Jeujwey vl Lee SZ'vL ¢'SOS L'0¢ OL 6'0¢- 00°0 OL'v 0'06r 8
+Jeujwe] Jeulwey 9LE gz GL'bL 250 €6z L'69 €'0b- 00°0 €19 0'0LS Z
+Jeujwey Jeujwe ece Live orl 6'S0S g'ez 19 G'er- 00'0 9G'2 o'0es 9
+Jeulwey Jeujwey Gre ee LLL Z'90S 02 v9 ery 00°0 668 o'0ss S
+Jeujwe] Jeujwe] ZEe 182 LLL 7'90S O'oL O19 0'Sr- 00°0 er 0l 00S v
+Jeujwey Jeujwey Ole 6:92 8Z'vb 9°90 SLL ZLS LSb- 00°0 98'bL 0'06S €
+Jeujwey Jeujwey 0'0€e Sr SZ'rb 8'90¢ s9 8'zS €'9r- 00°0 6Z7'EL 0'0L9 Zz
+Jeujwe] Jeujwey lz ad 6Z'7L L206 00 OL O'Lb- 00°0 00'SL gee L
+(2}0}H poweey)| (2/0H }0}ld) | (isd) eunsselq | (isd) ounsseld (dH) (isd) (y) (4) (y) (6ep) (6ep) (4)
+uwayed MOj4 | Wayed MOj4 aunjoes4 80H WOYOg | Jemod dung |einsseig dwng| ujdeq Jan09g | u;deq jeonsa,, | UOeAg!A | UNWIzy | UOReUOU] | UOAeD07 Hg
+(123) O'9L9TI :OUNJOA ssOT PIN].
+*(1e3) L90rE :odig pue oJoH UrouINTOA PIN].
+(ur) 000°Z1 9 (Ut) 000'9 :(s)ezIS 910H
+(wd3) 000s ‘ey MOLT
+[ 9815 - SuTMROY-ypeg :uoneiody SuTUG
+7dGH :s}uoewwo0d
+80/P/p :91e0
+Temey “oyooury :oy84$/AID
+oyooury :u0le.0T
+gq) :Ag umeig
+00-OL8S -ON JUNODDY gor
+ASIOAIUL) Op1Oeg HeMBY “UIRPA] 9910,J JoMEG :oweN pololg
+“OU] ‘sqej[osn owen Auedwos
+pour’ [TVIAL\GIeL 29107 IOMOS (dH'00-0L8S\S9H9§ 008S\:H ‘OTA Bed
+(J 98e7g - SuTMVaYy-yoeg) ejeq jndjnGC s[oH{ WoYVog puv dumg - aIquy,
+(PHATIAG Weasorg soyneapéH wedypg
+Z
+‘ouy ABojouysa, saunew Aq g00z PNwiilG Buisn gooz/PL/S UO poyulid
+Jeujwe Jeujwe] 82 00 6S'bl L'00S 00 00 00 00°0 00°SI- 00 €€
+Jeujwe Jeujwey 9°82 ZL 6S" Z'00S 97 92 00 00°0 00°S1- O'OL ze
+Jeujwe] Jeujwe] v'0e Le 09" v'00S oL SL 00 00°0 00°St- o'0e Le
+Jeulwe7 Jeulwe] ze 9 09" 9°00 6ZL ZL 00 00°0 00°S1- 00s oe
+Jeujwey Jeujwey 6EE ‘8 Lov 6°00 SL SL 00 00°0 00°S}- 0'0L 6z
+Jeujwe Jeujwey 9'se OLE Z9'vL L'L0S ©'€7% €'€% 00 00°0 00°S1- 0°06 8z
+(2}0H paweey)| (210H }O}lq) | (isd) esnsselq | (Isd) eunssalq (dH) (isd) (y) (4) (4) (6ap) (Sep) (y)
+UJayeq MOl4 | Wayed MOj4 ounjoes4 8]OH WOYOg | JeMOg dwng /einsseig dwnd} ydeq JaA0D | ydeq jeonie,, | uOeAS|y | yNWIZy | UOHeUOU] | UO}eD07 11g
+(J 28v}g - SuTUIvOY-yoeG) ee JndjNC IO] WoYog pu dung - a[quI,
+(Te3) 0'9L9TI :ouIN[OA sso] pInyy
+(PRAT wWessorg soynerpAH wedyg
+*(e8) L90vE ‘odd pue s[oH WlowNOA PIN].
+(Ut) 000'Z1 94 (UF) 000'9 :(8)8ZIS 90H
+(wd) QOS :o1ey MOTY
+[ 98R1¢ - SurMeoy-yoeg :uoneiody SurUuq
+7dGH :s}usurwo0sd
+80/b7/p :91e
+Temey ‘ayoouey :033S/AID
+ayooury :u0e07T
+qd) :Ag umeig
+00-0285 “ON JUNODDV gor
+AJISIOATUL] DIJO’ HeMEH “ULeYA] 9910] Jamo :oWIeN yoloig
+‘OUT ‘sqejosH :oweN Auedwosg
+POUT ET TVIAL\ULEA 9940-4 JOMOS MAH OO-OL8S\S9H9§ OO8S\:H ‘Td Bed
+L
+“oul ABojouyse, seinew Aq g00z PNWIIG Bulsn g00z/PL/s UO peyuLd
+deujwe) deujwe) ele vel cO'VL €°L0S G82 G'8z 00 00°0 00°SL- OOLL RA
+deulwe) deulwe) 78E S'cL €O'vL G’LOS VLe gee Ge 00°0 00°SL- O'OEL 92
+deuwe) deujwe) SLE est v9OvlL 20S 662 8°SE 68- 00°0 00°SL- O'OSL GZ
+deu}we) Jeulwe) VLE 202 v9OvL 6° L0S L8¢ Ovry eSL- 00°0 00°SL- OOLL ve
+deujwe) deulwe) OLE Ve? So'VL f'20S VLe 6b Lbe- 00°0 Ov'vL- 0°061 €%
+deujwe) deulwe) 9'6E €°G?S 99°rL v'Z0S oGEe 6'eS 9'8L- 00°0 L6°CL- 0012 (ZA
+deulwe) deulwe) Lev e172 99°rL 9°20S Gly Les 9'0L- 00°0 VG LL 0'0€2 be
+deu}we) deulwe) vlv L'62 Z9'VL 8°20S vss 619 Ge- 00°0 OLOL- 0°0S2 02
+deulwe) deujwe) Lev 9°0€ L9'VL b’€0S L'Z9 bso oe- 00°0 29°8- 0022 6L
+deulwe) deulwe) 96 6 LE 89'rL €€0S 679 629 Oe- 00°0 voLl- 0062 SL
+deulwe) deulwe) v'0S oee 69'VL Geos ZL9 ZOOL Oe- 00°0 be"S- OOLE Lb
+deuiwe) Jeulwe) 60S sce 69'VL 2°€0S 689 BLL O'e- 00°0 Lev- O'Oee OL
+deujwe] Jeujwe) VLS vvE OL VL 6'€0S Z0L cel O'e- 00°0 v6'C- O'0SE SL
+deujwe) deulwe) OLS SVE LLVL 2 v0S Or Ovl oe- 00°0 LG'L- OOLE vb
+deulwe) dJeulwe7) Lbs 6 VE LL VL vvOS tom ev. O'e- 00°0 20°0- 0°06€ €L
+deulwe) dJeurwey] SLs 6 VE ZL VL 9°70S VILL vl 6'¢- 00°0 00°0 OOLY (Ab
+deulwe] deulwe) oLS 6 VE el vb 8'70S Z69 ol al 00°0 0v'0 o0er bL
+deulwe] deulwe) 987 Lye el'vb b°SOS 619 6el 6 LL- 00°0 es'b o'0Sr OL
+Jeujwe) deujwey LSv eve vL'vL e°GOS GLS O'eL VLC 00°0 97E 0'0Lr 6
+deulwe] deujwe) vl Lee GlvL G°GOS L0¢ ALL 6°0¢- 00'0 OL'V 0067 8
+Jeulwe’) deujwe) OLE See GlvL 2°GOS £62 2°69 ©0v- 00°0 €L'9 O'OLS Z
+Jeulwe) deulwe) g'ce OLE Ol'vL 6°SOS get? el9 Ger- 00°0 9g 0'0ES 9
+Jeulwe) Jeulwe] ove €0€ ZL v1 7290S L°02 v9 evb- 00°0 668 0'0SS S
+deuiwe) Jeulwe) eee L182 ZL YL y90S O'OL O19 O'Sb- 00°0 ev'oL 0°02S v
+deulwe) deulwe) OLE 6°92 8l'vL 9°90S Gb OLS LGv- 00°0 98'LL 0°06S €
+deujwe) deu!wie) 0'0€ 82 8l'vL 8790S G9 eS €Ov- 00°0 67 EL O'OL9 (4
+deujwe) deu!we) Ble Le? 6L'VL b' 20S 00 OLD OLb- 00°0 00°SL geeg L
+(9]0H pewesy)} (2|0H 10d) | (Isd) eunsselq | (Isd) aunsselq (dH) (isd) (4) (y) (y) (Bap) (6ap) (4)
+weyeg Moj4 | weyed Mo|4 eunjoes4 Q]0H Woyog | JeMOd dwing |einsseiq dwind| yjdeq Jan09 | yjdaq yeoman | uoHeAa|y | uNWIzy | UOHeUOU] | UOReD07 1g
+(Ie3) O'OLOTI :oUIN[OA SsoT pInyy
+*(Te8) 610908 :odig pue s[oH wouNoA pmny.]
+(at) 000'8T 1 (4) OOO'ZI. :(S)eZIS B10H
+(wd3) 00'0S ‘ey MOLT
+TaseIg - SulRsy-yorg :uonelody Burg
+7 dGH :s}ueuru0g
+80/b7/p :918C
+Hemey{ ‘oyooury :032}¢/AID)
+ayooury :uones0T
+aq) :Ag umeiq
+O00-OL8S “ON JUNOSSY gor
+AVSIOAIUL] OIFlO’ WeMeEP “UleJAl 9910,J Jameg :oweN yofolg
+‘oul
+‘sqejoon :owen Auedwod
+POUT ET TVIAL\UR 9910-4 OM9S 11dH'00-OL89\S9HO9§ 008S\:H ‘TFT Bed
+(Z a8} - SuTMIVaYy-yoeg) B)eq JndjnCO 20H WoyVog pur dung - 3qR 1,
+(PUATLIG weiaso1g soneapAH wedyiug
+(4
+“oul ABojouyse, seunew Aq g00Z PNWIIG Bulsn g00z/P1/S UO pazulid
+Jeulwey Jeujwey lz 0'0 6S'rh 100s 0'0 00 00 00°0 00°S1- 00 ce
+JeulWwe Jeujwey 9'8z Zh 6S'rL Z'00S 97 9% 00 00°0 00°S}- O'OL ze
+Jeulwe Jeujwey v'0e Le 09'rl v'00S SL SL 00 00°0 00°S}- 00g Le
+Jeujwe Jeujwey ze ‘9 09'rL 9'00¢ 6 ZL eZ 0'0 00'0 00°S1- o'0s oe
+Jeulwe Jeujwey 6'EE S's Lov 8'00S Vel Leh 00 00°0 00°SL- O'0L 6z
+Jeujwe7 Jeujwey 9's¢ OL zZ9'rl L'LOs €'€Z ee 00 00°0 00°S1- 0°06 8z
+(8]0H paweey)| (910H }0lld) | (!sd) ainssesq | (Isd) aunsselq (dH) (1sd) (4) (y) (y) (6ep) (6ep) (4)
+Ue MO|4 | Wayed MOj4 aunjoel4 9]OH WoHOg | JoMog dung jainssajg dung] ydeq JeA0D | ujdeq jeone, | UOHeAS!A | yNWIZzy | UOReUYOU] | UOWeD07 Hg
+(Z 88839 - SUIUITLAY-yoVg) e}eq JndjnC 30H WoYVog pue dung - a[qu J,
+(83) O'OLOTI ‘ouINJOA ssoT pInyy
+(PAYATILIG weisoi1g saneipéAy wedyqug
+*(1e8) 60908 :edig pue s[oH wlouNjoA piny.{
+(Ut) 000'8T 4 (UF) 000'ZT_ :(8)9ZIS 90H
+(wd) 00°0S :*1eY MOLT
+798g - SulMRoY-yorg 9 :uoyeiody Sulu
+7 CGH :s}usww0;
+80/Pe/p :91eC
+Temeyy ‘oyooury :oye1S/AyD)
+ayooury :u0ne07T
+qo) :Ag umeig
+O0-OL8S “ON WUNODSDV gor
+AUSIOALUL) SLOe_ WEMLPY “UTRJA] 9910,j Jomesg :oulen yofolg
+‘OU] ‘sqe[oon :owenN Aueduiod
+POUT CTV TVIAL\UIR 9910-4 1OM9$ 11dH'00-0L85\S9H9§ 008S\:H ‘Itt bed
+APPENDIX E
+Service Life Load Calculations
+Sewer Force Main a nope
+Hawaii Pacific University PON |= i
+Kaneohe, Oahu, Hawaii bi ad Vy f
+hi
+REFERENCE 1. Publication prepared by Plastic Pipe Institute entitled "Polyethylene Pipe for Horizontal
+Directional Drilling," dated August 1998.
+2. Publication prepared by Chevron Chemical Co. entitled "Technical Note: Horizontal
+Directional Drilling (Guided Boring) with PLEXCO Pipe," dated 1999
+PIPE Type: HDPE .D. = 11.7 _jinches
+DR =
+O.D. = inches
+TERMS E = modulus of elasticity of the pipe, psi 140000 |(50-year duration)
+400000 |(10-hour duration)
+1.5
+(Maximum cover depth)
+(Fig. 3 of Reference 2)
+(Typically value of 2 is used)
+ae 90
+B = borehole diameter, ft
+H, = cover depth of pipe, ft
+f, = ovality compensation factor
+FS = factor of safety
+Ymud = Unit weight of mud, pcf
+Ysoil = UNit weight of soil, pcf
+o = angle of internal friction, degrees
+u. = Poisson's ratio
+(Long-term loading)
+(Short-term loading)
+Elevation of Highest Point of Pipe, ft MSL
+Elevation of Lowest Point of Pipe, ft MSL
+CALCULATED k = arching factor
+TERMS K = earth pressure coefficient Pua = allowable net external collapse
+pressure, psi
+P,, = net external pressure, psi Pie = live loading, psi
+P, = external earth pressure, psi
+Pinugd = hydrostatic pressure of mud, psi
+P,, = hydrostatic pressure of water, psi
+P; = internal pressure, psi
+ALLOWABLE NET EXTERNAL COLLAPSE PRESSURE (Pua)
+Pua = ((2*E)/(1-u7)) x (4/(DR-1)° x (f./FS))
+P ya(short-term) = psi ; f, reduced by 0.65
+Pua(long-term) = psi
+CHECK EXTERNAL PRESSURE ACTING ON PIPE (OPEN BOREHOLE)
+Pa = P mud/water - P;
+P; = Ywater differential head of water
+Prnudiwater = Ymudiwater differential head of mud
+P,= 20.5 = ‘|psi < 36.2 —_|psi Consider Mud
+External pressure is less than the allowable net external collapse pressure; therefore, pipe will not
+collapse for an open hole condition.
+W.O. 5870-00 GEOLABS, INC. PLATE E-1
+Sewer Force Main )
+Hawaii Pacific University ive ALE
+Kaneohe, Oahu, Hawaii
+CHECK EXTERNAL PRESSURE ACTING ON PIPE (COLLAPSED BOREHOLE)
+P,, = P, + P,, - P;, assume no internal pressure (worst case condition)
+Pe = ((k X Ysoil X H.) + Pive) / 144
+k = (1-exp®? (H8)"an0/2)))/(2*(K*H_/B)*tan(/2))
+K = tan?(45-$/2)
+K= 0.3333
+k= 0.1090
+height of water from piezometric surface to bottom of pipe= [82 |feet
+P,(above H20) psi
+P,(below H20) : psi
+Pive = | 58 [psi
+P, = psi
+P, = psi < 20.9 psi Pua(long-term)
+External pressure is less than the allowable net external collapse pressure; therefore, pipe will not
+collapse for a collapsed hole condition.
+Note: Water pressure is included in P,.
+CHECK RING DEFLECTION DUE TO BUOYANCY (OPEN BOREHOLE)
+Deflection limit from Table 2 of Reference 2 or from Table 3 of Reference 1 = [FB |%
+AID = ((0.088*Ymuq*O.D.*(DR-1)*)/(E*DR))*100
+A/D = 0.20 % % deflection less than the deflection limit; therefore, it is OK.
+CHECK RING DEFLECTION DUE TO EARTH & LIVE LOADS (COLLAPSED BOREHOLE)
+AID = (0.0125*P,)/(E/(12*(DR-1)°)
+AID = % % deflection less than the deflection limit; therefore it is OK.
+Notes: 1. Yellow cells are for input only.
+2. Blue cells are for output only.
+W.O. 5870-00 GEOLABS, INC. PLATE E-2

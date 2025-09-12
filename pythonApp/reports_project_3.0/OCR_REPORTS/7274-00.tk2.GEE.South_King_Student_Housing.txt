@@ -1,0 +1,5227 @@
+GEOTECHNICAL ENGINEERING EXPLORATION 
+SOUTH KING STUDENT HOUSING 
+HONOLULU, OAHU, HAWAII 
+W.O. 7274-00     OCTOBER 10, 2016 
+Prepared for 
+LACONIA DEVELOPMENT LLC 
+GEOLABS, INC. 
+Geotechnical Engineering and Drilling Services 
+. GEOTECHNICAL ENGINEERING EXPLORATION
+SOUTH KING STUDENT HOUSING
+HONOLULU, OAHU, HAWAII
+W.O. 7274-00 OCTOBER 10, 2016
+Prepared for
+LACONIA DEVELOPMENT LLC
+LICENSED
+PROFESSIONAL
+ENGINEER
+No. 7951-C
+THIS WORK WAS PREPARED BY
+ME OR UNDER MY SUPERVISION.
+[ ed Aya 4-30-18
+SIGNATURE EXPIRATION DATE
+OF THE LICENSE
+GEOLABS, INC.
+Geotechnical Engineering and Drilling Services
+2006 Kalihi Street e Honolulu, HI 96819
+Hawaii ¢ California
+GEOLABS, INC.
+Geotechnical Engineering and Drilling Services
+October 10, 2016
+W.O. 7274-00
+Mr. Steven M. Heaton, SVP-Development
+Laconia Development LLC
+1981 North Broadway, Suite 415
+Walnut Creek, CA 94596
+Dear Mr. Heaton:
+Geolabs, Inc. is pleased to submit our report entitled "Geotechnical Engineering
+Exploration, South King Student Housing, Honolulu, Oahu, Hawaii" prepared for design
+of the housing project.
+Our work was performed in general accordance with the scope of work outlined in
+our revised fee proposal dated September 28, 2015.
+Please note that the soil and rock samples recovered during our field exploration
+(remaining after testing) will be stored for a period of two months from the date of this
+report. The samples will be discarded after that date unless arrangements are made for
+a longer sample storage period. Please contact our office for alternative sample storage
+requirements, if appropriate.
+Detailed discussion and specific design recommendations are contained in the
+body of this report. If there is any point that is not clear, please contact our office.
+Very truly yours,
+GEOLABS, INC.
+Robin M.-Lim, P.E.
+President
+RML:TK:mj
+2006 Kalihi Street e Honolulu, Hawaii 96819
+Phone: (808) 841-5064 ° Facsimile: (808) 847-1749 © E-mail: hawaii @geolabs.net
+Hawaii ¢ California
+W.O. 7274-00 
+GEOLABS, INC. 
+Page i 
+Hawaii • California 
+GEOTECHNICAL ENGINEERING EXPLORATION 
+SOUTH KING STUDENT HOUSING 
+HONOLULU, OAHU, HAWAII 
+W.O. 7274-00     OCTOBER 10, 2016 
+TABLE OF CONTENTS 
+Page 
+SUMMARY OF FINDINGS AND RECOMMENDATIONS .............................................. iii 
+1. 
+GENERAL ............................................................................................................ 1 
+1.1 
+Introduction ................................................................................................ 1 
+1.2 
+Project Considerations ............................................................................... 1 
+1.3 
+Purpose and Scope ................................................................................... 2 
+2. 
+SITE CHARACTERIZATION ................................................................................ 4 
+2.1 
+Regional Geology ...................................................................................... 4 
+2.2 
+Project Site Geology .................................................................................. 5 
+2.3 
+Moiliili Caves .............................................................................................. 6 
+2.4 
+Site Description .......................................................................................... 8 
+2.5 
+Subsurface Conditions ............................................................................... 9 
+2.6 
+Seismic Design Considerations ............................................................... 10 
+2.6.1 Earthquakes and Seismicity ......................................................... 10 
+2.6.2 Soil Profile .................................................................................... 11 
+2.6.3 Liquefaction Potential ................................................................... 13 
+3. 
+DISCUSSION AND RECOMMENDATIONS ...................................................... 15 
+3.1 
+Foundation System Evaluation ................................................................ 16 
+3.2 
+Drilled Shaft Foundations ......................................................................... 17 
+3.2.1 Uplift Load Resistance ................................................................. 21 
+3.2.2 Lateral Load Resistance ............................................................... 22 
+3.2.3 Foundation Settlements ............................................................... 23 
+3.2.4 Drilled Shaft Construction Considerations .................................... 23 
+3.2.5 Trial Shaft Program ...................................................................... 25 
+3.2.6 Bi-Directional Load Test ............................................................... 26 
+3.3 
+Shallow Foundations................................................................................ 27 
+3.4 
+Slabs-On-Grade ....................................................................................... 29 
+3.5 
+Retaining Structures ................................................................................ 30 
+3.5.1 Retaining Structure Foundations .................................................. 30 
+3.5.2 Static Lateral Earth Pressures ...................................................... 31 
+3.5.3 Drainage ....................................................................................... 32 
+TABLE OF CONTENTS 
+Page 
+W.O. 7274-00 
+GEOLABS, INC. 
+Page ii 
+Hawaii • California 
+3.6 
+Site Grading ............................................................................................. 32 
+3.7 
+Excavations ............................................................................................. 34 
+3.8 
+Dewatering ............................................................................................... 35 
+3.9 
+Pavement Design .................................................................................... 36 
+3.10 
+Underground Utility Lines ......................................................................... 37 
+3.11 
+Design Review ......................................................................................... 38 
+3.12 
+Post-Design Services/Services During Construction ............................... 38 
+4. 
+LIMITATIONS ..................................................................................................... 40 
+CLOSURE ..................................................................................................................... 42 
+PLATES 
+Project Location Map ................................................................................... Plate 1 
+Site Plan  ..................................................................................................... Plate 2 
+Moiliili Karst Location Map ........................................................................... Plate 3 
+Utility Line Installation Through Cavern ....................................................... Plate 4 
+Summary of Lateral Load Analyses for Drilled Shafts ................................. Plate 5 
+Drilled Shaft Load Test Detail ...................................................................... Plate 6 
+APPENDIX A 
+Field Exploration ...................................................................................... Page A-1 
+Soil Log Legend ..................................................................................... Plate A-0.1 
+Soil Classification Log Key .................................................................... Plate A-0.2 
+Rock Log Legend .................................................................................. Plate A-0.3 
+Logs of Borings ......................................................................... Plates A-1 thru A-5 
+APPENDIX B 
+Seismic Shear Wave Velocity Test .......................................................... Page B-1 
+Shear Wave Velocity Test Data ............................................. Plates B-1.1 thru B-2 
+APPENDIX C 
+Laboratory Tests ...................................................................................... Page C-1 
+Laboratory Test Data .............................................................. Plates C-1 thru C-12 
+APPENDIX D 
+Photographs of Core Samples .................................................. Plates D-1 thru D-3 
+W.O. 7274-00 
+GEOLABS, INC. 
+Page iii 
+Hawaii • California 
+GEOTECHNICAL ENGINEERING EXPLORATION 
+SOUTH KING STUDENT HOUSING 
+HONOLULU, OAHU, HAWAII 
+W.O. 7274-00     OCTOBER 10, 2016 
+SUMMARY OF FINDINGS AND RECOMMENDATIONS 
+Our borings generally encountered some relatively thin man-made fills placed over 
+a porous coralline-limestone reef structure of variable thickness and hardness at the site. 
+Below the coralline-limestone reef structure, older alluvial clays with localized sand layer 
+generally were encountered to depths of over 70 feet below the existing ground surface. 
+Finally, basalt formation, which comprises the basement rock formation representing the 
+Tertiary Koolau Basalt materials was encountered. One of the borings (Boring No. 4) 
+encountered the underground cave system that is known to exist in the project vicinity. 
+Based on the moderate to high building loads anticipated, we recommend using a 
+deep foundation system consisting of cast-in-place concrete drilled shafts to support the 
+proposed multi-story residential building and parking garage. We recommend supporting 
+the structure columns on a combination of drilled shafts with nominal diameters of 30 and 
+42 inches. The allowable compressive load capacities of the drilled shaft foundations 
+would range from about 100 to 1,250 kips per drilled shaft depending on the size, depth, 
+and location, as discussed further herein. 
+It should be noted that cavities and voids are commonly encountered in the 
+coralline materials in the project vicinity produced by the Moiliili Karst. Due to the known 
+presence of large caverns below the central portion of the site, permanent casing will be 
+required for the upper portion of the drilled shafts in this area to reduce the potential for 
+running off of the shaft concrete into the underground cave system, which could extend 
+laterally for a great distance. 
+Considering the diameters and structural load capacities of the drilled shafts for 
+this project, we recommend undertaking a trial shaft program. The trial shaft program 
+should consist of drilling one 42-inch diameter trial shaft extending to a depth of about 
+120 feet below the ground surface. Assuming the successful completion of the trial shaft 
+to the full depth, the trial shaft may be converted to serve as the load test shaft. Due to 
+the high capacities recommended for the drilled shafts, we recommend conducting a 
+bi-directional axial load test using an expandable load cell (Osterberg Load Cell). 
+The text of this report should be referred to for detailed discussion and specific 
+recommendations for the design of this project. 
+END OF SUMMARY OF FINDINGS AND RECOMMENDATIONS 
+W.O. 7274-00 
+GEOLABS, INC. 
+Page 1 
+Hawaii • California 
+SECTION 1.  GENERAL 
+1.1 
+Introduction 
+This report presents the results of our geotechnical engineering exploration 
+performed for the South King Student Housing project in Honolulu on the Island of Oahu, 
+Hawaii. The project location and general vicinity are shown on the Project Location Map, 
+Plate 1. 
+This report summarizes the findings from our field exploration and laboratory 
+testing and presents our geotechnical recommendations derived from our analyses for 
+the project. These recommendations are intended for the design of foundations, 
+slabs-on-grade, retaining structures, site grading, and pavements only. In addition, 
+discussions on the excavation and dewatering considerations of the project are included 
+in this report for information purposes only. The findings and recommendations presented 
+herein are subject to the limitations noted at the end of this report. 
+1.2 
+Project Considerations 
+The project site is at the existing University Square development situated at the 
+southeast corner of South King Street and University Avenue in Honolulu on the Island of 
+Oahu, Hawaii.  The site is bounded by South King Street to the north, Kahuna Lane to 
+the east, existing three-story buildings to the south, and University Avenue to the west as 
+shown on the Site Plan, Plate 2.  The site is currently occupied by three-story buildings 
+along the southern boundary and in the central portion of the site. The remaining areas 
+are asphalt paved parking. 
+We understand the project will involve the construction of a 14-story tower with 
+retail spaces and employee parking on the ground level.  Additional parking will be 
+provided on the second and third levels consisting of 190 parking stalls. Based on the 
+information provided by the project structural engineer, maximum column load may be on 
+the order of about 1,200 kips. 
+Based on our literature research and experience in the area, the geology of the 
+site is complex. Underground caves have been reported in the general vicinity. The 
+subsurface conditions are anticipated to include fills over coralline reef materials over 
+SECTION 1. GENERAL 
+W.O. 7274-00 
+GEOLABS, INC. 
+Page 2 
+Hawaii • California 
+alluvial soils. Basalt rock formation may be encountered at deeper depths. Based on our 
+previous work in the area, a natural branching subterranean cave system developed 
+within the subsurface coralline reef materials may reside at the central portion of the 
+project site. Therefore, special attention was given to the possible extent and effect the 
+buried cave system may have on the design and construction of the new building 
+foundation system. 
+We anticipate several minor below-grade structures, such as elevator pits, will 
+likely be required. Due to the presence of a relatively shallow groundwater table, we 
+anticipate excavation shoring and dewatering operations may be required for the deeper 
+excavations during construction. 
+1.3 
+Purpose and Scope 
+The purpose of our exploration was to obtain an overview of the subsurface 
+conditions to develop an idealized soil/rock data set to formulate geotechnical 
+recommendations for design of the South King Student Housing project. In order to 
+accomplish this, we conducted an exploration program consisting of the following tasks 
+and efforts: 
+1. 
+Review of available soil and geologic information for the project site and its 
+vicinity, including the following report: 
+“King Street Manhole Culvert Inspection, 2615 South King Street, Honolulu, 
+Hawaii 96825” dated January 22, 2016, prepared by Pacific Diving 
+Industries. 
+2. 
+Coordination of the boring stake-out by our engineer and underground utility 
+toning by various utility companies and government agencies. 
+3. 
+Coordination of our field exploration work with the property manager of the 
+existing development. 
+4. 
+Mobilization and demobilization of a truck-mounted drill rig and 
+two operators to and from the project site. 
+5. 
+Drilling and sampling five borings extending to depths ranging from about 
+80.5 to 102 feet below the existing pavement surface for a total of 
+approximately 474 lineal feet of exploration. 
+6. 
+Coordination of the field exploration and logging of the borings by our 
+geologist. 
+SECTION 1. GENERAL 
+W.O. 7274-00 
+GEOLABS, INC. 
+Page 3 
+Hawaii • California 
+7. 
+Performance of seismic shear wave velocity profiling using Seismic Cone 
+Penetration Test (SCPT) equipment within a selected drilled boring to more 
+closely 
+analyze 
+the 
+subsurface 
+conditions 
+for 
+seismic 
+design 
+considerations. 
+8. 
+Laboratory testing of selected soil samples and rock cores obtained during 
+the field exploration as an aid in classifying the materials and evaluating the 
+pertinent engineering properties. 
+9. 
+Engineering analyses of the field and laboratory data to develop 
+geotechnical recommendations for design of foundations, slabs-on-grade, 
+retaining structures, site grading, and pavements. 
+10. 
+Preparation of this report summarizing our work on the project and 
+presenting our findings and geotechnical recommendations. 
+11. 
+Coordination of our overall work on the project by our senior engineer. 
+12. 
+Quality assurance of our work and client/design team consultation by our 
+principal engineer. 
+13. 
+Miscellaneous work efforts such as drafting, word processing, and clerical 
+support. 
+Detailed descriptions of our field exploration and the Logs of Borings are presented 
+in Appendix A. Detailed descriptions of the seismic shear wave velocity test conducted 
+using seismic cone penetration testing equipment, and the results of the shear wave 
+velocity profiling are presented in Appendix B. Results of the laboratory tests performed 
+on selected soil and rock samples obtained from our field exploration are presented in 
+Appendix C. Photographs of the core samples are presented in Appendix D. 
+END OF GENERAL 
+W.O. 7274-00 
+GEOLABS, INC. 
+Page 4 
+Hawaii • California 
+SECTION 2.  SITE CHARACTERIZATION 
+2.1 
+Regional Geology 
+Extrusion of basalt and basaltic lavas from the Waianae and Koolau Shield 
+Volcanoes built the Island of Oahu. The older Waianae Volcano is estimated to be middle 
+to late Pliocene Epoch in age and forms the bulk of the western one-third of the Island of 
+Oahu. The younger Koolau Volcano is estimated to be late Pliocene to early Pleistocene 
+(latest Ice Age) in age and forms the bulk of the eastern two-thirds of the Island of Oahu.   
+Following the coalescence of the two volcanoes and after a long period of volcanic 
+inactivity, during which time erosion incised deep valleys into the Koolau Shield, volcanic 
+activity returned with a series of lava flows followed by cinder and tuff cone formations. 
+These late series of eruptions are referred to as the Honolulu Volcanic Series, which are 
+confined to scattered areas of the Koolau Volcano footprint. The Honolulu Volcanic 
+Series, which began approximately 700,000 years ago (MacDonald and Abbott, 1970), 
+produced several prominent cinder and tuff cone structures with some basaltic lava flows 
+that became inter-layered with the developing Southern Oahu coastal plain deposits. 
+The project site is on the lower southern flank of the Koolau Volcano. As a result, 
+the geomorphology and subsurface conditions of the area are directly related to glacio-
+eustatic fluctuations of the sea level during the Pleistocene Epoch and the genesis of the 
+Honolulu Coastal Plain. The subsurface conditions in the Moiliili area include various 
+marshland and alluvial soil deposits overlying fossil Pleistocene Age coral/algal limestone 
+reef and related marine/lagoonal deposits laid during higher stands of the sea. These 
+deeper marine deposits are intercalated with other terrigenous derived sediments. The 
+base of the stratigraphic section in this area is Koolau Basalt. 
+Most of the Honolulu Coastal Plain developed during the Pleistocene Epoch when 
+the sea level experienced significant fluctuations related to the continental glacial stages. 
+As the glaciers grew and advanced, less water was available to fill the oceanic basins 
+such that sea levels fell below the present stands of the sea. When the glaciers melted 
+and receded, an excess of water became available such that the sea levels rose to above 
+SECTION 2. SITE CHARACTERIZATION 
+W.O. 7274-00 
+GEOLABS, INC. 
+Page 5 
+Hawaii • California 
+the present sea level. The processes of landform erosion, sediment deposition, and reef 
+development were affected by these glacio-eustatic sea level fluctuations. 
+When the sea level was relatively lower, the erosional base level was 
+correspondingly lower and stream valleys were carved deeper into the island basaltic 
+rock, the fringing coastal sediments, and the offshore reef deposits. Also, during periods 
+of relatively lower sea level, the sub-aerial exposure of calcareous marine sediments 
+caused consolidation and cementation of the deposits to form hardened calcareous 
+deposits. In contrast, when the sea level was relatively higher, the erosional base level 
+was raised such that marine sediments and coral reef formations filled the pre-existing 
+depressions and accumulated as reef platforms at correspondingly higher elevations. The 
+higher sea levels also caused the formation of deltas and alluvial fans composed of 
+terrigenous sediment in the head region of old bays. 
+Finally, the placement of near-surface man-made fills associated with the 
+development of the urban area within the last 80 years has brought the Honolulu Coastal 
+Plain to its present form. In the early part of this century, much of the Moiliili area consisted 
+of low elevation marsh wetlands. As the City of Honolulu grew and the Waikiki/Moiliili 
+areas were urbanized, man-made fills were placed to reclaim the marshy areas and 
+lagoons for development. It should be noted that much of the resulting fill materials placed 
+are of poor quality in terms of supporting heavy structural loads. 
+2.2 
+Project Site Geology 
+The project site is situated near the mouth of Manoa Valley where the valley opens 
+onto the southeastern Oahu coastal plain. The coastal plain formed along the eroded 
+southern flank of the Koolau Volcano, which comprises the eastern portion of the Island 
+of Oahu. 
+Based on the findings from our field exploration, the project site generally is 
+underlain by some relatively thin man-made fills placed over a porous coralline reef 
+structure of variable thickness and hardness. Below the coralline reef structure, older 
+terrestrial alluvial clays with localized sand layers were generally encountered to depths 
+of over 70 feet below the existing ground surface. Finally, basalt formation, which 
+SECTION 2. SITE CHARACTERIZATION 
+W.O. 7274-00 
+GEOLABS, INC. 
+Page 6 
+Hawaii • California 
+comprised the basement rock formation representing the Tertiary Koolau Basalt 
+materials, was encountered. 
+Subsurface tunnel and cavern structures (Moiliili Caves), developed by 
+groundwater dissolution of the coralline-limestone materials (karst) within the buried fossil 
+reef structure have been encountered and documented by previous subsurface 
+explorations and construction projects in the Moiliili area. These branching and 
+interconnected subsurface drainage networks are identified as the Moiliili Karst. The 
+subsurface void and cavern network, where encountered, has been found to trend 
+primarily in the northeasterly (mauka) to southwesterly (makai) directions. Based on our 
+review of previous documentation pertaining to the Moilili Karst, the University Square 
+Redevelopment project site resides within a broadly defined land area believed to harbor 
+the Moiliili Karst. The approximate locations of the previously documented tunnel and 
+cave features produced by the Moiliili Karst are presented on Plate 3. 
+2.3 
+Moiliili Caves 
+Based on our review of available in-house soils and geologic data, the project site 
+is underlain by a buried layer of porous, medium hard to hard, coralline-limestone (fossil 
+reef), which is underlain further by stiff to very stiff silty and clayey alluvial soils extending 
+to depths of over 75 feet below the existing ground surface. The buried coralline-
+limestone reef formation generally was encountered by our current field exploration at 
+depths ranging between about 2 and 29 feet below the existing ground surface. 
+The Moiliili Caves are a naturally developed karstic drainage system that formed 
+within the near-surface coralline limestone materials residing within the University/Moiliili 
+area. The dendritic branching, subterranean karst was formed by the dissolution of the 
+coralline limestone by fresh groundwater flowage. The calcareous coralline limestone 
+materials are susceptible to slow dissolution (erosion) by percolating and flowing acidic 
+fresh groundwater. 
+The coralline limestone containing the Moiliili Karst features was deposited during 
+the Pleistocene Sangamon Interglacial Stage (+25 feet Waimanalo Sea Level Stand) 
+when the sea level was approximately 25 feet higher than the present day. It has been 
+suggested that the karst feature may have developed preferentially along an abandoned 
+SECTION 2. SITE CHARACTERIZATION 
+W.O. 7274-00 
+GEOLABS, INC. 
+Page 7 
+Hawaii • California 
+drainage path of the Manoa Stream. The subterranean Moiliili Karst encompasses the 
+highly urbanized area approximately centered about University Avenue extending from 
+about the Interstate H-1 Highway in a southwesterly direction toward Kapiolani Boulevard 
+as generally shown on the Moiliili Karst Location Map, Plate 3. It is postulated that the 
+cave system may extend all the way to the southern shoreline although it has not been 
+documented. 
+A history of literature documentation by area residents and the Board of Water 
+Supply personnel exists. Documentation includes a description of exploratory travel 
+through the underground tunnels that are partially filled with water. Although many of the 
+ground surface features related to the buried karst topography have been covered over 
+by progressive urban development, a few undisclosed entrances to the cave system 
+remain.  
+Previous exploratory observations performed by others indicate that some of the 
+interconnected tunnels have been partly filled with earth fill materials during the 
+development of the surrounding area. There are also reports of visible concrete pilings 
+associated with building construction and other underground support structures used for 
+waterline construction, which breach and traverse portions of the caves. The cave water 
+quality has been reported to be generally fresh in character and sustains aquatic life with 
+little discernable pollution from surface infiltration. Groundwater within the caves has been 
+reported to flow toward the south and southwest. Evidence of elevated discharges 
+occurring within the main karst conduits is evidenced by deleterious material having been 
+encountered periodically near the roof of the structure. 
+Based on our review of available published reports pertaining to the Moiliili Caves, 
+it appears that some of the larger branching networks of conduits and passages range 
+from several feet wide up to 20 to 40 feet in width locally where “caverns” were 
+encountered. The height of the passable conduits appears to range generally on the order 
+of about 5 to 10 feet. Estimates of the cave roof thicknesses are absent in the reviewed 
+literature; however, in some places the reported development of sinkholes at the ground 
+surface would indicate only limited overburden soil cover and cave roof thickness. Based 
+on our review of available literature, we anticipate the overburden roof thickness 
+SECTION 2. SITE CHARACTERIZATION 
+W.O. 7274-00 
+GEOLABS, INC. 
+Page 8 
+Hawaii • California 
+composed of thin surface soils and the underlying coralline limestone materials may 
+range from several feet to over 20 feet in height. 
+Based on our literature review, at approximately 1,500 feet makai of the 
+University Avenue and South King Street intersection, a 1934 construction excavation 
+encountered a large cavern at depths between about -21 and -30 feet Mean Sea Level 
+(MSL). Construction dewatering occurred continuously for 4 months and resulted in 
+significant regional up-gradient ground deformations including additional sinkhole 
+development, settled/broken utilities and house foundations, and the drainage of 
+pre-existing surface ponds. Other notable large cave breaches were reported just 
+southeast of the South King Street/University Avenue intersection where extensive 
+subsurface conduits were visible trending further above South King Street. 
+Based on our literature review, detailed investigation including precise survey 
+mapping of the underground karst system has not been performed. Therefore, the exact 
+location of the conduits and passages are not well defined. Some attempts have been 
+made by others to re-create the subsurface trend of some larger passable conduits. 
+Based on our review of the available drawings, it appears that a portion of the primary 
+cave network passes through the project site as shown on the Moiliili Karst Location Map, 
+Plate 3. Details related to the potential location of other smaller voids and conduits are 
+not available. 
+2.4 
+Site Description 
+The project site is at the existing University Square development situated at the 
+southeast corner of South King Street and University Avenue in Honolulu on the Island of 
+Oahu, Hawaii. The project site is bounded by South King Street to the north, Kahuna Lane 
+to the east, existing three-story buildings to the south, and University Avenue to the west 
+as shown on the Site Plan (Plate 2). 
+Currently, the project site is occupied by three-story buildings along the southern 
+boundary and in the central portion of the site. The remaining areas are asphaltic concrete 
+paved parking. Based on our field observations and the topographic survey map provided, 
+the project site is relatively flat with existing ground surface elevations between 
+approximately +8 and +10 feet MSL. 
+SECTION 2. SITE CHARACTERIZATION 
+W.O. 7274-00 
+GEOLABS, INC. 
+Page 9 
+Hawaii • California 
+2.5 
+Subsurface Conditions 
+Our field exploration program consisted of drilling and sampling five test borings, 
+designated as Boring Nos. 1 through 5, extending to depths ranging from about 80.5 to 
+102 feet below the existing pavement surface. The approximate locations of the borings 
+drilled are shown on the Site Plan, Plate 2. 
+Based on our field exploration results, the subsurface conditions at the project site 
+appear to be relatively uniform with respect to the geologic materials encountered across 
+the project site. The materials vary somewhat with respect to layer thickness and 
+depositional elevation but, in general, the materials appear to be laterally continuous. 
+The project site generally is underlain by asphaltic concrete pavements over near-
+surface man-made fills, on the order of about 2 to 4 feet thick, consisting of stiff to very 
+stiff clayey silts. Beneath the near-surface fill soils, coral formation with severe fracturing 
+and moderate weathering was encountered and extended to depths of about 20 to 29 feet 
+below the existing ground surface. The coral formation generally appears to be 
+continuous across the site but with variations in layer thickness and hardness. Boring 
+No. 4 encountered a void from about 7 to 10 feet and again from about 16 to 26.5 feet 
+below the existing ground surface within the coral formation. It should be noted that this 
+boring also encountered a possible void (or likely a very soft soil pocket) between about 
+71 and 84 feet below the existing ground surface. 
+Below the coralline-limestone reef strata, older alluvial deposits consisting of stiff 
+to very stiff clays and silts were encountered and extended to depths of about 72 to 
+100.5 feet below the existing ground surface. A fairly continuous 10 to 18-foot thick sand 
+layer was encountered embedded within the older alluvial soils at depths ranging between 
+about 65 and 83 feet below the existing ground surface. Below the alluvial clays, basalt 
+formation generally was encountered and extended to depths of about 100.5 feet below 
+the existing ground surface. 
+We encountered groundwater at depths ranging from about 6.7 to 8.8 feet below 
+the existing ground surface. The groundwater levels encountered generally correspond 
+to approximately Elevation +0.7 to +1.5 feet MSL. Due to the proximity of the project site 
+to the Pacific Ocean and the fact that subsurface groundwater streams have been 
+SECTION 2. SITE CHARACTERIZATION 
+W.O. 7274-00 
+GEOLABS, INC. 
+Page 10 
+Hawaii • California 
+encountered in the project site vicinity, water levels are expected to vary with storm events 
+and tidal fluctuations. It should be noted that water levels may also vary with seasonal 
+rainfall, time of the year, and other factors. 
+Detailed descriptions of the materials encountered during our field exploration are 
+presented on the Logs of Borings in Appendix A. Results of the laboratory tests performed 
+on selected soil samples and rock cores are presented in Appendix B. 
+2.6 
+Seismic Design Considerations 
+Based on the International Building Code, 2006 Edition (IBC 2006), the project site 
+may be subject to seismic activity, and seismic design considerations will need to be 
+addressed. The following subsections provide discussions on the seismicity and soil 
+profile type for seismic design. 
+2.6.1 Earthquakes and Seismicity 
+In general, earthquakes that occur throughout the world are caused solely by shifts 
+in the tectonic plates. In contrast, earthquake activity in Hawaii is linked primarily 
+to volcanic activity. Therefore, earthquake activity in Hawaii generally occurs 
+before or during volcanic eruptions. In addition, earthquakes may result from the 
+underground movement of magma that comes close to the surface but does not 
+erupt. The Island of Hawaii experiences thousands of earthquakes each year, but 
+most of the earthquakes are so small that they can only be detected by sensitive 
+instruments. However, some of the earthquakes are strong enough to be felt, and 
+a few cause minor to moderate damage. 
+In general, earthquakes (associated with volcanic activity) are most common on 
+the Island of Hawaii. Earthquakes that are directly associated with the movement 
+of magma are concentrated beneath the active Kilauea and Mauna Loa Volcanoes 
+on the Island of Hawaii. Because the majority of the earthquakes in Hawaii 
+(over 90 percent of earthquakes) are related to volcanic activity, the risk of high 
+seismic activity and degree of ground shaking diminishes with increased distance 
+from the Island of Hawaii. The Island of Hawaii has experienced numerous 
+earthquakes greater than Magnitude 5 (M5+); however, earthquakes are not 
+confined only to the Island of Hawaii. 
+SECTION 2. SITE CHARACTERIZATION 
+W.O. 7274-00 
+GEOLABS, INC. 
+Page 11 
+Hawaii • California 
+To a lesser degree, the Island of Maui has experienced numerous earthquakes 
+greater than Magnitude 5. Therefore, moderate to strong earthquakes have 
+occurred in the County of Maui. The effects of earthquakes occurring on the 
+Islands of Hawaii and Maui may be felt on the Island of Oahu. For example, several 
+small landslides occurred on the Island of Oahu as a result of the Maui Earthquake 
+of 1938 (M6.8). In addition, some houses on the Island of Oahu were reportedly 
+damaged as a result of the Lanai Earthquake of 1871 (M7+). 
+Due to the relatively short period of documented earthquake monitoring in the 
+State of Hawaii, information pertaining to earthquakes that were felt on the Island 
+of Oahu may not be complete. In general, over the last 150 years of recorded 
+history, we are not aware of reported earthquakes greater than Magnitude 6 
+occurring on the Island of Oahu. Based on available information, we understand 
+that an earthquake of about Magnitude 5.6 occurred on June 28, 1948 in the 
+vicinity of the Island of Oahu, possibly along the hypothesized and controversial 
+Diamond Head Fault feature.  
+The Diamond Head Fault feature is believed to extend northeasterly away from the 
+southeastern tip of the Island of Oahu. The Diamond Head Fault feature may be 
+related to the widely documented Molokai Fracture Zone located on the sea floor 
+in the vicinity of the Hawaiian Islands. Despite only the moderate tremor intensity, 
+the resulting damage was reportedly widespread and included broken windows, 
+ruptured masonry building walls, and a broken underground water main. In 
+addition, some areas on the Island of Oahu, including the Tantalus, Iwilei, and 
+Tripler areas, reported more intense ground shaking, severe enough to have 
+cracked reinforced concrete. 
+2.6.2 Soil Profile 
+Our field exploration generally encountered a thin near-surface fill layer placed 
+over coral formation extending to depths of about 20 to 29 feet below the existing 
+ground surface. Stiff to very stiff alluvial clays interbedded with a layer of loose to 
+medium dense sands overlying basalt rock were then generally encountered and 
+SECTION 2. SITE CHARACTERIZATION 
+W.O. 7274-00 
+GEOLABS, INC. 
+Page 12 
+Hawaii • California 
+extended to the maximum depth explored of about 102 feet below the ground 
+surface. 
+It should be noted that the strength characteristics of the coral formation are highly 
+variable. In addition, coral formation is frequently cavernous or contains pockets 
+of voids. Because of the variable subsurface conditions anticipated at the site, it 
+was desired to perform seismic shear wave velocity profiling at the project site in 
+an effort to more closely analyze the subsurface conditions for seismic design 
+considerations. 
+Shear wave velocity profiling was performed to a depth of about 104 feet below 
+the existing ground surface using seismic cone penetration test (SCPT) equipment 
+within Boring No. 5 [B-5(SW)] shown on the Site Plan, Plate 2. Based on the 
+subsurface conditions encountered in our field exploration, the weighted average 
+shear wave velocity for the materials within the upper 100 feet of the soil profile is 
+on the order of about 1,306 feet per second. Results of the seismic shear wave 
+velocity test are provided in Appendix B. 
+Based on the subsurface materials encountered at the project and the shear wave 
+velocity profiling performed, we believe the project site may be classified from a 
+seismic analysis standpoint as being a “Very Dense Soil and Soft Rock” site 
+corresponding to a Site Class C soil profile type based on the International Building 
+Code (Table No. 1613.5.2), 2006 Edition.   Based on Site Class C, the following 
+seismic design parameters were estimated and may be used for seismic analysis 
+for this project. 
+SEISMIC DESIGN PARAMETERS 
+Parameter 
+Value 
+Mapped MCE Spectral Response Acceleration, SS  
+0.617 
+Mapped MCE Spectral Response Acceleration, S1  
+0.180 
+Site Class  
+“C” 
+Site Coefficient, Fa  
+1.153 
+Site Coefficient, Fv  
+1.620 
+Adjusted MCE Spectral Response Acceleration, SMS  
+0.711 
+SECTION 2. SITE CHARACTERIZATION 
+W.O. 7274-00 
+GEOLABS, INC. 
+Page 13 
+Hawaii • California 
+SEISMIC DESIGN PARAMETERS 
+Parameter 
+Value 
+Adjusted MCE Spectral Response Acceleration, SM1  
+0.291 
+Design Spectral Response Acceleration, SDS  
+0.474 
+Design Spectral Response Acceleration, SD1  
+0.194 
+Peak Bedrock Acceleration, PBA (Site Class B)  
+0.267 
+Peak Ground Acceleration, PGA (Site Class C)  
+0.202 
+2.6.3 Liquefaction Potential 
+Based on the International Building Code, 2006 Edition, the project site may be 
+subjected to seismic activity, and the potential for soil liquefaction at the project 
+site will need to be evaluated. 
+Soil liquefaction is a condition where saturated cohesionless soils located near the 
+ground surface undergo a substantial loss of strength due to the build-up of excess 
+pore water pressures resulting from cyclic stress applications induced by 
+earthquakes. In this process, when the loose saturated sand deposit is subjected 
+to vibration (such as during an earthquake), the soil tends to densify and decrease 
+in volume causing an increase in pore water pressure. If drainage is unable to 
+occur rapidly enough to dissipate the build-up of pore water pressure, the effective 
+stress (internal strength) of the soil is reduced.  
+Under sustained vibrations, the pore water pressure build-up could equal the 
+overburden pressure, essentially reducing the soil shear strength to zero and 
+causing it to behave as a viscous fluid. During liquefaction, the soil acquires 
+sufficient mobility to permit both horizontal and vertical movements, and if not 
+confined, will result in significant deformations. 
+Soils most susceptible to liquefaction are loose, uniformly graded, fine-grained 
+sands and loose silts with little cohesion. The major factors affecting the 
+liquefaction characteristics of a soil deposit are as follows. 
+SECTION 2. SITE CHARACTERIZATION 
+W.O. 7274-00 
+GEOLABS, INC. 
+Page 14 
+Hawaii • California 
+FACTORS 
+LIQUEFACTION SUSCEPTIBILITY 
+Grain Size Distribution 
+Fine and uniform sands and silts are 
+more susceptible to liquefaction than 
+coarse or well-graded sands. 
+Initial Relative Density 
+Loose sands and silts are most 
+susceptible to liquefaction. Liquefaction 
+potential is inversely proportional to 
+relative density. 
+Magnitude and Duration of Vibration 
+Liquefaction potential is directly 
+proportional to the magnitude and 
+duration of the earthquake. 
+Based on the subsurface conditions encountered, the phenomenon of soil 
+liquefaction is not a design consideration for this project site. The risk for potential 
+liquefaction is non-existent at this project site based on the subsurface conditions 
+encountered. 
+END OF SITE CHARACTERIZATION 
+W.O. 7274-00 
+GEOLABS, INC. 
+Page 15 
+Hawaii • California 
+SECTION 3.  DISCUSSION AND RECOMMENDATIONS 
+Our borings generally encountered some relatively thin man-made fills placed over 
+a porous coralline-limestone reef structure of variable thickness and hardness. Below the 
+coralline-limestone reef structure, older alluvial clays with localized sand layer generally 
+were encountered to depths of over 70 feet below the existing ground surface. Finally, 
+basalt formation, which comprises the basement rock formation representing the Tertiary 
+Koolau Basalt materials, was encountered. One of the borings (Boring No. 4) encountered 
+the underground cave system that is known to exist in the project vicinity. 
+Based on the moderate to high building loads anticipated, we recommend using a 
+deep foundation system consisting of cast-in-place concrete drilled shafts to support the 
+proposed multi-story residential building and parking garage. We recommend supporting 
+the building structures on a combination of drilled shafts with diameters of 30 and 
+42 inches. The allowable compressive load capacities of the drilled shaft foundations 
+would range from about 100 to 1,250 kips per drilled shaft depending on the size, depth, 
+and location. 
+It should be noted that cavities and voids are commonly encountered in the 
+coralline materials in the project vicinity produced by the Moiliili Karst. Due to the known 
+presence of large caverns below the central portion of the site, permanent casing will be 
+required for the upper portion of the drilled shafts in this area to reduce the potential for 
+running off of the shaft concrete into the underground cave system, which could extend 
+laterally for a great distance. 
+Considering the diameters and structural load capacities of the drilled shafts for 
+this project, we recommend undertaking a trial shaft program. The trial shaft program 
+should consist of drilling one 42-inch diameter trial shaft extending to a depth of about 
+120 feet below the ground surface. Assuming the successful completion of the trial shaft 
+to the full depth, the trial shaft may be converted to serve as the load test shaft. Due to 
+the high capacities recommended for the drilled shafts, we recommend conducting a 
+bi-directional axial load test using an expandable load cell (Osterberg Load Cell). Detailed 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 7274-00 
+GEOLABS, INC. 
+Page 16 
+Hawaii • California 
+discussions and recommendations for design of foundations, slabs-on-grade, retaining 
+structures, site grading, and pavements are presented in the following sections. 
+3.1 
+Foundation System Evaluation 
+As mentioned above, the project site is underlain by surface fills placed over a 
+porous coralline-limestone reef formation. Subsurface tunnel and cavern structures 
+(Moiliili Caves) developed by groundwater dissolution of the coralline-limestone materials 
+(karst) within the buried fossil reef structure has been documented in the literature and 
+encountered in one of our drilled borings. Based on the relatively heavy column loads 
+anticipated for the building structures, we believe the near-surface cavern structures with 
+a relatively thin roof could collapse under the heavy column loads if the buildings are 
+supported on a shallow foundation system. Therefore, we recommend using a deep 
+foundation system to support the proposed residential building and parking garage. 
+Based on our evaluation, the deep foundation support system should consist of 
+cast-in-place concrete drilled shafts. 
+In addition to the drilled shaft foundation support system mentioned above, we also 
+have evaluated the use of augered cast-in-place (ACIP) piles and driven pile foundations 
+to support the new structures planned for the redevelopment project.  
+ACIP piles are constructed by rotating a continuous flight hollow-stem auger 
+(generally 10 to 24 inches in diameter) into the ground until either the planned pile tip 
+depth or termination (refusal) criterion is achieved. At the termination depth, grout of a 
+specified consistency is pumped into the augered hole through an orifice located in the 
+drilling bit at the tip of the hollow-stem auger. The auger is slowly withdrawn from the hole 
+and the pile shaft is formed as a continuous flow of grout replaces the soil removed by 
+the auger. After the auger stem is removed, the reinforcing steel cage is then inserted 
+inside the grouted hole (through the fluid grout) within the set-time window allowed by the 
+grout.  
+Because the pumped grout is in direct contact with the surroundings while the 
+auger is slowly withdrawn from the hole, there exists the potential for the pumped grout 
+to run off and travel a great distance into the underground cave system, if encountered. 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 7274-00 
+GEOLABS, INC. 
+Page 17 
+Hawaii • California 
+Therefore, it is our opinion that this deep foundation system is not a viable alternative for 
+this particular site.  
+We believe the use of a driven pile foundation may pose some significant design 
+and construction issues for the project development. Substantial predrilling depth through 
+the upper coralline-limestone reef formation may be required to facilitate the pile 
+installation to reduce the potential for the driven piles to “hang up” on the upper coral 
+formation. In addition, some of the existing structures in the neighborhood are likely 
+supported on shallow footings underlain by the coralline-limestone reef formation with 
+large tunnels and caverns. Vibrations generated from the pile driving operation could 
+weaken the coralline-limestone reef structure, resulting in the potential collapse of the 
+cavern roof and the shallow foundations on top. Therefore, we believe that use of a driven 
+pile foundation alternative may not be appropriate for the proposed redevelopment 
+project. 
+3.2 
+Drilled Shaft Foundations 
+Based on the moderate to high structural loading anticipated for the new building 
+structures, we believe a drilled shaft foundation system would be desired and highly 
+recommended for the new housing project. One of the primary advantages of the drilled 
+shaft foundation system is that construction of the drilled shafts would not generate the 
+noise and vibrations normally associated with other deep foundation systems, such as 
+driven pile foundations. Drilled shaft foundations are effective in soil formations that can 
+stay open after drilling until concrete placement. 
+In general, drilled shaft foundations are constructed by drilling a larger diameter 
+hole down into the bearing strata, placing reinforcing steel, and then pumping high slump 
+concrete to fill up the hole. The result is a larger diameter cast-in-place concrete drilled 
+shaft for foundation support. Based on the subsurface soil conditions generally 
+encountered at the project site, we envision that the drilled shaft foundations would derive 
+vertical support primarily from skin friction between the drilled shaft and the upper 
+coralline materials (where permanent casing is not required) and/or the underlying stiff to 
+very stiff alluvial clays starting at depths of about 20 to 29 feet below the existing ground 
+surface. In general, the end-bearing component of the drilled shafts has been discounted 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 7274-00 
+GEOLABS, INC. 
+Page 18 
+Hawaii • California 
+in our analysis due to difficulties associated with obtaining a clean bottom during 
+construction in the relatively deep drilled shafts. In addition, the anticipated shallow 
+groundwater level at the project site also may pose some construction difficulties because 
+proper observation of the sides and bottoms of the drilled shafts may not be possible.  
+It should be noted that the central portion of the project site could be traversed by 
+subsurface tunnel and cavern structures as documented in the literature and encountered 
+in one of our borings. Therefore, a permanent steel casing will be required for the upper 
+portion of the drilled shafts in this area to reduce the potential for avoid running off of the 
+shaft concrete into the underground cave system, which could extend laterally for a great 
+distance. The permanent casing also should be embedded a minimum of 3 feet into the 
+bottom of the cavern floor to serve as a seal to reduce the potential for concrete leakage 
+through the bottom of casing. In addition, the permanent casing should be constructed of 
+steel with a yield strength of at least 36 kips per square inch (ksi) and a nominal wall 
+thickness of at least 0.375 inches. 
+Based on the information provided by the project structural engineer, the new 
+residential building will have maximum column loads (dead-plus-live loads) of up to about 
+1,200 kips. In general, it would be ideal to support each building column with one single 
+drilled shaft. In order to achieve the design load resistances imposed on the drilled shaft 
+foundations, the drilled shafts would need to extend to about 15 to 115 feet below the 
+bottom of the foundation cap elevations. The allowable compressive load capacities of 
+the drilled shaft foundations would range from about 100 to 1,250 kips per drilled shaft 
+depending on the size, depth, and location.  
+For design purposes, our recommendations pertaining to the drilled shaft 
+capacities and estimated tip elevations are presented in the following tables. The 
+delineation of the approximate limits of the underground caverns based on our literature 
+research (information from Williams 1935 and Wolfe 1975), our current field exploration 
+results, and the diving report prepared by Pacific Diving Industries is shown on the Site 
+Plan (Plate 2). To better delineate the limits of the underground cavern structures, we 
+recommend implementing a foundation probing program at each of the drilled shaft 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 7274-00 
+GEOLABS, INC. 
+Page 19 
+Hawaii • California 
+locations to evaluate the potential presence of cavities for a customized individual drilled 
+shaft design.   
+COMPRESSIVE LOAD CAPACITIES 
+OF UNCASED DRILLED SHAFT FOUNDATIONS 
+(OUTSIDE LIMITS OF UNDERGROUND CAVERNS) 
+Allowable Compressive 
+Load Capacity 
+Per Drilled Shaft 
+(kips) 
+Drilled Shaft 
+Diameter 
+(inches) 
+Required 
+Drilled Shaft 
+Tip Elevation 
+(feet MSL) 
+Estimated 
+Drilled Shaft 
+Length 
+(feet) 
+300 
+30 
+-10 
+15 
+500 
+30 
+-30 
+35 
+750 
+30 
+-60 
+65 
+1,000 
+42 
+-55 
+60 
+1,250 
+42 
+-70 
+75 
+NOTE:  
+The estimated drilled shaft lengths shown are based on required drilled shaft tip elevations 
+and an assumed bottom of cap elevation of +5 feet MSL. 
+COMPRESSIVE LOAD CAPACITIES 
+OF CASED DRILLED SHAFT FOUNDATIONS 
+(WITHIN LIMITS OF UNDERGROUND CAVERNS) 
+Allowable Compressive 
+Load Capacity 
+Per Drilled Shaft 
+(kips) 
+Drilled Shaft 
+Diameter 
+(inches) 
+Required 
+Drilled Shaft 
+Tip Elevation 
+(feet MSL) 
+Estimated 
+Drilled Shaft 
+Length 
+(feet) 
+100 
+42 
+-28 
+33 
+300 
+42 
+-42 
+47 
+500 
+42 
+-57 
+62 
+750 
+42 
+-75 
+80 
+1,000 
+42 
+-95 
+100 
+1,250 
+42 
+-110 
+115 
+NOTE:  
+The estimated drilled shaft lengths shown are based on the following:  
+(1)  the upper portion of drilled shafts are permanently cased to Elevation -20 feet MSL;  
+(2)  required drilled shaft tip elevations; and  
+(3)  an assumed bottom of cap elevation of +5 feet MSL. 
+The allowable compressive load capacities for the drilled shafts presented above 
+are for supporting dead-plus-live loads. The compressive load capacities may be 
+increased by up to one-third (1/3) when considering transient loads, such as wind or 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 7274-00 
+GEOLABS, INC. 
+Page 20 
+Hawaii • California 
+seismic forces. A factor of safety of 2.0 was used in arriving at the allowable compressive 
+load capacities provided in the above tables.  
+It should be noted that the top of the hard basalt formation was encountered in 
+some of our drilled borings at depths ranging from about 72 to 95.5 feet below the existing 
+ground surface. Therefore, we believe some of the deeper drilled shafts shown in the 
+above tables could end up terminating shallower by socketing the drilled shafts into the 
+hard basalt rock formation. The socketing depth required will depend on the design drilled 
+shaft capacity and the quality of the materials encountered along the shaft length and 
+should be evaluated by a Geolabs field representative on a shaft specific basis during the 
+foundation installation work. 
+The load bearing capacities of the drilled shafts will depend largely on the relative 
+density of the soils and quality of the coral formation and/or alluvial soils within the bearing 
+strata. Because local variations in the subsurface materials likely will occur at the site, it 
+is imperative for a Geolabs representative to be present during the shaft drilling 
+operations to confirm the subsurface conditions encountered during the drilled shaft 
+construction and to observe the installation of the drilled shafts. In addition, contract 
+documents should include provisions (unit prices) for permanent casing, additional drilling 
+and extension of the drilled shaft during construction to account for unforeseen 
+subsurface conditions. 
+Based on our evaluation of the subsurface conditions and the foundation design 
+parameters, we anticipate the drilled shaft installation will require an experienced drilled 
+shaft subcontractor to install the drilled shaft foundations. Therefore, consideration should 
+be given to requiring pre-qualification of the drilled shaft subcontractor. The succeeding 
+subsections address the design and construction of the drilled shaft foundations: 
+1. 
+Uplift Load Resistance 
+2. 
+Lateral Load Resistance 
+3. 
+Foundation Settlements 
+4. 
+Drilled Shaft Construction Considerations 
+5. 
+Trial Shaft Program 
+6. 
+Bi-Directional Load Test 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 7274-00 
+GEOLABS, INC. 
+Page 21 
+Hawaii • California 
+3.2.1 Uplift Load Resistance 
+In general, uplift loads may be resisted by a combination of the dead weight of the 
+drilled shaft and by shear along the shaft surface and the adjacent soils. 
+Considering the drilled shafts are designed based on skin friction between the shaft 
+and the surrounding soils, we believe the uplift load capacities presented below 
+may be used in the design. The uplift load capacities for the drilled shafts are based 
+on the lengths of drilled shafts recommended and designed for the compressive 
+load capacities. The uplift load capacities provided include the weight of the drilled 
+shaft. 
+The uplift load capacity was computed assuming only the top 50 feet of the drilled 
+shafts will be reinforced to provide for proper load transfer to the surrounding coral 
+formation and/or coralline detritus. It is also assumed that each of the drilled shafts 
+will encounter a minimum of 15 feet of coral formation/dense coralline detritus 
+within the upper 50 feet of the drilled shaft. The uplift load capacities provided 
+below should be used for transient loads only. For sustained uplift loads acting on 
+the foundations, the uplift load capacities should be reduced further using a factor 
+of safety of 2.0. The project structural engineer should check the structural capacity 
+of the shaft member in tension. 
+UPLIFT LOAD CAPACITIES 
+(OUTSIDE LIMITS OF UNDERGROUND CAVERNS) 
+Uplift Load 
+Capacity 
+(kips) 
+Drilled Shaft 
+Diameter 
+(inches) 
+Drilled Shaft 
+Length 
+(feet) 
+600 
+30 
+15 to 65 
+900 
+42 
+60 and 75 
+NOTE: Uplift load capacity was computed assuming that only the top 50 feet of the drilled shafts 
+will be reinforced to provide for proper load transfer to the surrounding coral formation 
+and/or coralline detritus. In addition, each drilled shaft should encounter a minimum of 
+15 feet of coral formation/dense coralline detritus within the upper 50 feet of the drilled 
+shaft to provide the uplift load capacity. 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 7274-00 
+GEOLABS, INC. 
+Page 22 
+Hawaii • California 
+UPLIFT LOAD CAPACITIES 
+(WITHIN LIMITS OF UNDERGROUND CAVERNS) 
+Uplift Load 
+Capacity 
+(kips) 
+Drilled Shaft 
+Diameter 
+(inches) 
+Drilled Shaft 
+Length 
+(feet) 
+600 
+42 
+33 to 115 
+NOTE: Uplift load capacity was computed assuming that only the top 50 feet of the drilled shafts 
+will be reinforced to provide for proper load transfer to the surrounding alluvial clays 
+below the permanent casing. 
+3.2.2 Lateral Load Resistance 
+Lateral loads imposed on the building foundations may be resisted by a 
+combination of the passive pressure acting against the near-vertical faces of the 
+foundation caps and/or grade beams and the lateral load capacity of the drilled 
+shafts. Passive earth pressure against the near-vertical faces of the foundation 
+caps and/or grade beams may be estimated using an equivalent fluid pressure of 
+350 pounds per cubic foot (pcf) and 150 pcf for above and below groundwater 
+conditions, respectively. For the design of lateral load resistance of the new 
+structure, the normal high groundwater level may be assumed at an elevation of 
++3 feet MSL. 
+In general, lateral load resistance of the drilled shafts is a function of the stiffness 
+of the surrounding soil, the stiffness of the shaft, allowable deflection at the top of 
+the shaft, and induced moment in the shaft. In general, we recommend spacing 
+the drilled shafts at a minimum of three times the diameter of the shaft from 
+center-to-center. The lateral load analyses were performed using the program 
+LPILE-Plus for Windows, which is a microcomputer adaptation of a finite 
+difference, laterally loaded pile program originally developed at the University of 
+Texas at Austin. 
+The lateral loads acting at the top of the shaft, the maximum induced moments, 
+the depths at which the maximum moments occur, and the flexural length of the 
+drilled shaft are presented in the Summary of Lateral Load Analyses for Drilled 
+Shafts, Plate 5. The allowable lateral load is provided as one-half (½) of the lateral 
+load that produces a lateral deflection of 1 inch. The lateral load analyses were 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 7274-00 
+GEOLABS, INC. 
+Page 23 
+Hawaii • California 
+conducted based on two boundary conditions, where the tops of the shafts are 
+either free or fixed against rotation. 
+3.2.3 Foundation Settlements 
+Settlement of the drilled shaft foundation will result from elastic compression of the 
+shaft and subgrade response of the foundation embedded in the coral formation, 
+coralline deposits, alluvial clays, and basalt formation. Total settlements of the 
+drilled shafts are estimated to be on the order of 0.5 to 0.75 inches. Differential 
+settlements between adjacent drilled shafts may be on the order of about one-half 
+the amount of the total settlement. We believe that a significant portion of the 
+settlement is elastic and should occur as the loads are applied. 
+3.2.4 Drilled Shaft Construction Considerations 
+Based on our evaluation of the subsurface conditions and the foundation design 
+parameters, we anticipate the drilled shaft installation will require an experienced 
+drilled shaft subcontractor to install the drilled shaft foundations. Therefore, 
+consideration should be given to requiring pre-qualification of the drilled shaft 
+subcontractor. 
+In general, the performance of drilled shafts depends significantly upon the 
+contractor's method of installation and construction procedures. The following 
+conditions would have a significant effect on the effectiveness and cost of the 
+drilled shaft foundations. 
+The load bearing capacities of drilled shafts depend, to a significant extent, on the 
+friction between the drilled shaft and the coral formation and/or alluvial deposits. 
+Therefore, proper construction techniques especially during the drilling operations 
+are important. The contractor should exercise care in drilling the shaft holes and in 
+placing concrete into the drilled holes. 
+Localized zones of hard coral formation likely will be encountered at the project 
+site. In addition, the thickness and hardness of the coral formation may vary 
+significantly across the project site. Therefore, some difficult drilling conditions 
+likely will be encountered and should be expected. The drilled shaft subcontractor 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 7274-00 
+GEOLABS, INC. 
+Page 24 
+Hawaii • California 
+will need to have the appropriate equipment and tools to drill through these types 
+of natural obstructions, where encountered. 
+As mentioned above, permanent casing will be required in those drilled shafts 
+where underground tunnel or cavern structures are encountered in the drilled shaft 
+hole.  Based on our field exploration results, we anticipate the permanent casing 
+may need to extend to depths of about 20 to 30 feet below the existing ground 
+surface. 
+The drilled shafts are embedded in the upper coral formation (where the drilled 
+shafts are outside the limits of the cavern structures) and/or the underlying stiff 
+alluvial clay encountered in the borings. The drilled shaft subcontractor will need 
+to demonstrate that the proposed drilling equipment (and coring tools, where 
+appropriate) will be capable of installing the drilled shafts to the recommended 
+depths and dimensions. 
+Drilling by methods utilizing drilling fluids may have a significant effect on the 
+supporting capacity of the drilled shaft; additionally, the drilling fluids could enter 
+the subsurface cavern system. Therefore, drilling fluids should not be used for this 
+site. 
+Because of the shallow groundwater conditions anticipated within the depths of the 
+drilled shaft excavations, concrete placement by tremie methods will be required 
+during drilled shaft construction. The concrete should be placed in a suitable 
+manner by displacing the water in an upward fashion from the bottom of the drilled 
+hole. A low-shrink concrete mix with high slump (7 to 9-inch slump range) should 
+be used to provide close contact between the drilled shafts and the surrounding 
+soils. The concrete should be placed in a suitable manner to reduce the potential 
+for segregation of the aggregates from the concrete mix. 
+In addition, the concrete should be placed promptly after drilling (within 24 hours 
+after drilling of the holes) to reduce the potential for softening of the sides of the 
+drilled holes. Furthermore, drilling adjacent to a recently constructed shaft (within 
+five shaft diameters of the recently constructed drilled shaft) should not commence 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 7274-00 
+GEOLABS, INC. 
+Page 25 
+Hawaii • California 
+until the concrete for the recently constructed drilled shaft has cured for a minimum 
+of 24 hours. 
+It should be noted that cavities and voids are commonly encountered in the 
+coralline materials in the project vicinity. Therefore, the actual volume of concrete 
+required to fill the drilled shaft foundation may be appreciably more than the 
+theoretical concrete volume. Based on our experience, we envision that average 
+concrete overpour on the order up to about 50 to 60 percent over the theoretical 
+concrete volume may be required for the drilled shaft foundations. 
+It is imperative for a Geolabs representative to be present during construction to 
+observe the drilling and installation of drilled shafts. Although the drilled shaft 
+designs are primarily based on skin friction, the bottom of the drilled hole should 
+be relatively free of loose materials prior to placement of concrete. Therefore, 
+Geolabs observation of the drilled shaft installation operations is necessary to 
+confirm the assumed subsurface conditions and should be designated a “Special 
+Inspection” item in accordance with Section 1704 of the International Building 
+Code (2006). 
+3.2.5 Trial Shaft Program 
+A trial shaft program is recommended for this project, considering the high 
+structural loads at many of the column locations. Considering the diameters and 
+structural load capacities of the drilled shafts for this project, we recommend 
+undertaking a trial shaft program to fulfill the following objectives: 
+1. 
+Examine the adequacy of the methods and equipment proposed by the 
+contractor to install the drilled shafts into the coral formation and coralline 
+deposits. 
+2. 
+Confirm or modify the diameters and lengths of the drilled shafts. 
+3. 
+Assess the contractor’s method of placing and extracting the temporary 
+casing for the drilled shaft and/or the use of drilling fluids, if accepted by 
+Geolabs. 
+4. 
+Assess the contractor’s method of tremie concrete placement. 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 7274-00 
+GEOLABS, INC. 
+Page 26 
+Hawaii • California 
+To achieve these objectives, the trial shaft program should consist of drilling 
+one 42-inch diameter trial shaft extending to a depth of about 120 feet below the 
+ground surface. The location of the trial shaft should be near, but outside of, the 
+building column location. A Geolabs representative should be present during the 
+trial shaft program to evaluate the contractor’s method of drilled shaft installation 
+and to evaluate the subsurface materials encountered in the drilled hole.  
+3.2.6 Bi-Directional Load Test 
+As part of the pre-construction activities, we recommend conducting one static load 
+test. The load test should be conducted on a 42-inch diameter dedicated drilled 
+shaft extending to a depth of about 120 feet below the ground surface. The results 
+of the load test will be used to confirm or modify the estimated tip elevations of the 
+production drilled shafts. The load test shaft should be structurally reinforced and 
+instrumented with embedment strain gages for load testing purposes. As a 
+minimum, two embedment strain gages should be placed at each level, starting 
+near the load cell location at an elevation of about 5 feet above and below the load 
+cell and subsequently at about 10-foot intervals, as shown on the Drilled Shaft 
+Load Test Detail, Plate 6. 
+Due to the high capacities recommended for the drilled shafts, a conventional load 
+test would not be practical and would be costly to conduct. Therefore, we 
+recommend conducting bi-directional axial load test using an expandable load cell 
+(Osterberg Load Cell). The bi-directional load test separately tests the shear 
+resistance and end-bearing components of the drilled shaft by loading the shaft in 
+two directions (upward for shear resistance, and downward for end-bearing and 
+shear resistance). 
+The Osterberg Load Cell should be capable of applying a load of at least 2,250 kips 
+in each direction for the 42-inch load test shaft. The expandable load cell will need 
+to be attached to the reinforcing steel cage prior to lowering the cage into the drilled 
+hole. 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 7274-00 
+GEOLABS, INC. 
+Page 27 
+Hawaii • California 
+The drilled shaft load test should be performed in general accordance with the 
+Quick Load Test Method of ASTM D1143. The load test shaft should be loaded to 
+failure to evaluate the ultimate side shear resistance and end-bearing components 
+of the shaft. Installation of the expandable load cells, installation of the embedment 
+strain gages, performance of the bi-directional axial load tests, and presentation of 
+the load test data should be performed by a professional experienced in these 
+types of load testing procedures. The load test shaft should be loaded at 
+increments of about 100 to 150 kips and should be held for a minimum of 4 hours 
+(each hold) at the 600-kip, 900-kip, and 1,300-kip load intervals for the 42-inch 
+diameter test shaft to evaluate the potential for creep effects. The load test shaft 
+should then be loaded to failure to provide additional data and information for the 
+drilled shaft foundation design. 
+A Geolabs representative should observe the installation and performance of the 
+instrumented load test on the drilled shaft. It should be noted that the drilled shaft 
+design was developed from our analysis using the field exploration data. 
+Therefore, Geolabs observation of the drilled shaft installation operations is a vital 
+part of the foundation design to confirm the design assumptions. 
+3.3 
+Shallow Foundations 
+We envision that minor structures with relatively light structural loads (less than 
+40 kips) required for the project may be supported on shallow foundations consisting of 
+spread and/or continuous strip footings. In addition, structures supported on a shallow 
+foundation system should be structurally separated from the structures supported on 
+deep foundations. Adjacent structures with structural connections to the housing 
+development (supported on drilled shafts) should be supported on the same type of 
+foundation as the residential building and parking garage development. 
+An allowable bearing pressure of up to 2,000 pounds per square foot (psf) may be 
+used for the design of footings bearing on the re-compacted on-site materials (minimum 
+90 percent relative compaction). This bearing value is for supporting dead-plus-live loads 
+and may be increased by one-third (1/3) for transient loads, such as those caused by wind 
+or seismic forces. The bottom of footings should be embedded a minimum of 18 inches 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 7274-00 
+GEOLABS, INC. 
+Page 28 
+Hawaii • California 
+below the lowest adjacent finished grade. Foundations located next to utility trenches or 
+easements should be embedded below a 45-degree imaginary plane extending upward 
+from the bottom edge of the utility trench, or the footings should be extended to a depth 
+as deep as the inverts of the utility lines. 
+If the foundations are designed and constructed as recommended herein, we 
+estimate that footing settlements under the anticipated static design loads for footings 
+bearing on the recompacted in-situ soils to be less than 1 inch. Differential settlements 
+between adjacent footings supported on similar materials should be on the order of about 
+0.5 inches or less. 
+Lateral loads acting on the structures may be resisted by a combination of friction 
+between the base of the foundation and the bearing materials and by passive earth 
+pressure developed against the near-vertical faces of the embedded portion of the 
+footings. A coefficient of friction of 0.30 may be used for footings bearing on the 
+re-compacted on-site fill soils. Resistance due to passive pressure may be calculated 
+using an equivalent fluid pressure of 350 pcf for footings embedded in the on-site fill 
+materials. This value assumes that the concrete for the footings is cast neatly against 
+dense on-site materials. Otherwise, the soils around the footings should be well 
+compacted (minimum of 90 percent relative compaction). Unless covered by pavements 
+or slabs, the passive resistance in the upper 12 inches below the finished grade should 
+be neglected. 
+It is important that a Geolabs representative observes the footing excavations to 
+evaluate the competency of the bearing materials and the embedment depths. If 
+unsuitable materials are encountered in the footing excavations, these materials should 
+be over-excavated to expose the underlying firm materials and replaced with compacted 
+fill. Therefore, provisions should be made in the contract documents to over-excavate 
+below the footings and backfill with compacted select granular fill or lean concrete 
+(controlled low strength materials) in the event that soft and/or loose materials are 
+encountered at the footing subgrades. 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 7274-00 
+GEOLABS, INC. 
+Page 29 
+Hawaii • California 
+3.4 
+Slabs-On-Grade 
+We anticipate the ground floor slabs for the new building construction will consist 
+of reinforced concrete slabs-on-grade. Based on the existing topography and the 
+anticipated finished floor elevation, we envision the slabs-on-grade will be supported 
+either on new compacted fills placed to raise the existing ground surface to the finished 
+subgrades or on the existing ground conditions. 
+For the interior building slabs (not subjected to vehicular traffic), we recommend 
+providing a minimum 4-inch thick layer of cushion fill consisting of open-graded gravel 
+(ASTM C 33, No. 67 gradation) below the slabs. The open-graded gravel cushion fill 
+would serve as a capillary moisture break and would provide for uniform support of the 
+slabs. To reduce the potential for excessive future moisture infiltration through the slab 
+and subsequent damage to floor coverings, an impervious moisture barrier is 
+recommended on top of the open-graded gravel cushion layer. Interior walls should be 
+designed to incorporate some flexibility to accommodate a small amount of possible 
+ground movements. 
+Where the slabs will be subjected to vehicular traffic, we recommend providing a 
+6-inch layer of aggregate subbase below the slabs in lieu of the 4-inch thick gravel cushion 
+layer. The aggregate subbase should consist of crushed basaltic aggregates compacted 
+to a minimum of 95 percent relative compaction. 
+For design of slabs supported on 6 inches of aggregate subbase, a modulus of 
+subgrade reaction of about 200 pounds per square inch per inch of deflection (pci) may 
+be used for wheel loads acting on the slab resting on the compacted aggregate subbase. 
+Where slabs are intended to function as rigid pavements for trucks, such as at loading 
+dock areas, a minimum slab thickness of 6 inches may be used for preliminary design 
+purposes. In addition, provisions should be made for proper load transfer across the slab 
+joints that will be subject to vehicular traffic. 
+The thickened edges of slabs adjacent to unpaved areas should be embedded at 
+least 12 inches below the lowest adjacent grade. It should be emphasized that the areas 
+adjacent to the slab edges should be backfilled tightly against the edges of the slabs with 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 7274-00 
+GEOLABS, INC. 
+Page 30 
+Hawaii • California 
+relatively impervious soils. These areas should also be graded to divert water away from 
+the slabs and to reduce the potential for water ponding around the slabs. 
+3.5 
+Retaining Structures 
+Based on the information provided, we understand retaining structures, such as 
+the elevator pits, will be required. Therefore, the following general guidelines are provided 
+and may be used for design of retaining structures at the project site. 
+3.5.1 Retaining Structure Foundations 
+Parameters for design of foundations for retaining structures that are structurally 
+connected to (or abutting) the building structures should be designed in 
+accordance with the “Drilled Shaft Foundations” section herein. Design of 
+foundations for the other walls (not structurally connected to or abutting the 
+building structures) may be based on the parameters presented in “Shallow 
+Foundations” section herein. 
+Wall footings should have a minimum width of 18 inches. In addition, wall footings 
+on relatively flat areas should be embedded a minimum depth of 24 inches below 
+the lowest adjacent finished grade. In addition, embedment of the shallow footings 
+should be limited to a maximum of 30 inches below the lowest adjacent grade due 
+to the relatively shallow depth to the top of the cavern roof.  
+We understand a new CMU site wall will be constructed along the length of the 
+new service drive abutting the southern property line. If soft and/or loose soils are 
+encountered at the bottom of the footing, they should either be recompacted (if 
+less than 12 inches thick) or be removed and replaced with compacted fills (if more 
+than 12 inches thick). The excavation face should be adequately shored to reduce 
+the potential for unraveling of the adjacent soils underneath the existing slab-on-
+grade. In addition, we recommend constructing the new site wall in short sections 
+as much as practical to avoid exposing a long section of the adjacent slab-on-
+grade that could lead to a deteriorated condition over time and with inclement 
+weather. 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 7274-00 
+GEOLABS, INC. 
+Page 31 
+Hawaii • California 
+3.5.2 Static Lateral Earth Pressures 
+Retaining structures, such as the elevator pits and/or other retaining walls, should 
+be designed to resist the lateral earth pressures due to the adjacent soils and 
+surcharge effects. The recommended lateral earth pressures for design of 
+retaining structures, expressed in equivalent fluid pressures of pcf, are presented 
+in the following table. 
+LATERAL EARTH PRESSURES 
+FOR DESIGN OF RETAINING STRUCTURES 
+Level Backfill 
+Condition 
+Water 
+Condition 
+Active 
+(pcf) 
+At-Rest 
+(pcf) 
+Above 
+Groundwater 
+Without Hydrostatic 
+Pressure 
+40 
+60 
+Below 
+Groundwater 
+With Hydrostatic 
+Pressure 
+82 
+91 
+Without Hydrostatic 
+Pressure 
+19 
+29 
+The values provided above assume that the on-site granular soils with a maximum 
+particle size of 3 inches or less or select granular fill materials will be used to 
+backfill behind the walls. It is assumed that the backfill behind retaining structures 
+will be compacted to between 90 and 95 percent relative compaction. Over-
+compaction of the retaining structure backfill should be avoided. 
+In general, an active condition may be used for gravity walls and retaining walls 
+that are free to deflect by as much as 0.5 percent of the wall height. If the tops of 
+the walls are not free to deflect beyond this degree, or are restrained, the walls 
+should be designed for the at-rest condition. The lateral earth pressures presented 
+for the above groundwater conditions do not include hydrostatic pressures that 
+might be caused by groundwater trapped behind the walls. 
+Surcharge stresses due to areal surcharges, line loads, and point loads within a 
+horizontal distance equal to the depth of the wall should be considered in the 
+design. For uniform surcharge stresses imposed on the loaded side of the wall, a 
+rectangular distribution with a uniform pressure equal to 33 percent of the vertical 
+surcharge pressure acting over the entire height of the wall, which is free to deflect 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 7274-00 
+GEOLABS, INC. 
+Page 32 
+Hawaii • California 
+(cantilever), may be used in design. For walls that are restrained, a rectangular 
+distribution equal to 50 percent of the vertical surcharge pressure acting over the 
+entire height of the wall may be used for design. Additional analyses during design 
+may be needed to evaluate the surcharge effects of point loads and line loads. 
+3.5.3 Drainage 
+Retaining structures (above the groundwater) should be well drained to reduce the 
+potential for build-up of hydrostatic pressures. A typical drainage system for site 
+retaining walls would consist of 1 cubic foot of permeable material, such as open 
+graded gravel (ASTM C33, No. 67 gradation), wrapped with non-woven filter fabric 
+placed at each of the weephole locations. The weepholes should be spaced no 
+more than 6 feet apart. 
+The backfill from the bottom of the wall to the bottom of the weephole should 
+consist of relatively impervious material to reduce the potential for significant water 
+infiltration into the subsurface. In addition, the upper 12 inches of the retaining wall 
+backfill should consist of relatively impervious material to reduce the potential for 
+significant water infiltration behind the retaining structure unless covered by 
+concrete slabs at the surface. 
+3.6 
+Site Grading 
+We anticipate site grading consisting of fills on the order of about 1 foot thick or 
+less may be required to achieve the finished grades. In addition, foundation excavations 
+and subsequent backfills of up to about 5 feet deep will be required for construction of the 
+building foundations and elevator pits. It should be noted that placement of new fills at 
+this site likely will increase the overburden pressure on the existing relatively thin Karst 
+cavern roof underlying a portion of the site. Therefore, we recommend minimizing the 
+placement of new fills as much as possible to reduce the potential for collapse of the Karst 
+cavern roof due to the new fill loads. 
+At the on-set of earthwork, areas within the contract grading limits should be 
+cleared thoroughly. Vegetation, construction debris, and other deleterious materials 
+should be removed and disposed of properly off-site. Soft and/or yielding areas 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 7274-00 
+GEOLABS, INC. 
+Page 33 
+Hawaii • California 
+encountered during clearing below areas designated to receive fills should be 
+over-excavated to expose firm and/or dense materials, and the resulting excavation 
+should be backfilled with well-compacted fills. The excavated soft and/or organic soils 
+should be properly disposed of off-site and/or used in landscape areas, where 
+appropriate.  
+After clearing, existing structures and pavements that are to be demolished should 
+be removed completely. Over-excavations resulting from demolition should be backfilled 
+with compacted on-site soils or select granular fill materials. Existing utilities to be 
+abandoned should be removed, and the resulting excavation should be properly backfilled 
+with excavated on-site soils or select granular fill materials placed in 8-inch loose lifts and 
+compacted to a minimum of 90 percent relative compaction. Utilities to be abandoned in-
+place under the proposed structures should be backfilled by pumping lean concrete under 
+low pressure. 
+After clearing and demolition, areas at grade or areas designated to receive fills 
+should be scarified to a depth of about 8 inches, moisture-conditioned to above the 
+optimum moisture content, and compacted to a minimum of 90 percent relative 
+compaction. Relative compaction refers to the in-place dry density of soil expressed as a 
+percentage of the maximum dry density as determined by ASTM D1557. Optimum 
+moisture is the water content (percentage by weight) corresponding to the maximum dry 
+density. 
+Imported fill materials required for site filling should consist of select granular fill 
+materials, such as crushed coral and/or basaltic gravel. The material should be 
+well-graded from coarse to fine with particles no greater than 3 inches in largest 
+dimension. The material should have a California Bearing Ratio (CBR) value of 20 or 
+higher and a swell value of 1 percent or less when tested in accordance with 
+ASTM D1883. The material should also contain between 10 and 30 percent particles 
+passing the No. 200 sieve. 
+Fill and backfill materials required for the project construction should be placed in 
+level lifts not exceeding 8 inches in loose thickness, moisture-conditioned to above the 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 7274-00 
+GEOLABS, INC. 
+Page 34 
+Hawaii • California 
+optimum moisture content, and compacted to a minimum of 90 percent relative 
+compaction. Compaction requirements for the subgrades of improvements subjected to 
+vehicular traffic, such as the ground level of the parking podium and driveways, should 
+be increased to a minimum of 95 percent relative compaction. 
+Fill or backfill below the groundwater level should consist of free-draining granular 
+materials, such as open-graded gravel (ASTM C33, No. 4 or No. 67 gradation), up to a 
+minimum of 12 inches above the groundwater level. If fill or backfill below the water level 
+is placed on clayey materials, we recommend wrapping the open-graded gravel in a 
+non-woven filter fabric, such as Mirafi 180N or equivalent. 
+Aggregate base and subbase courses required for the project should consist of 
+crushed basaltic aggregates and should meet the requirements of Sections 30 and 31 of 
+the City and County Standard Specifications (September 1986). Aggregate base course 
+and aggregate subbase materials should be moisture-conditioned to above the optimum 
+moisture content, placed in level lifts not exceeding 8 inches in loose thickness, and 
+compacted to a minimum of 95 percent relative compaction. Imported fill materials should 
+be tested for conformance with these recommendations prior to delivery to the project site 
+for the intended use. 
+A Geolabs representative should monitor earthwork operations to observe whether 
+undesirable materials are encountered during the scarification process and to confirm 
+whether the exposed soil and/or rock conditions are similar to those encountered in our 
+field exploration. 
+3.7 
+Excavations 
+As mentioned above, we anticipate excavations up to about 4 to 7 feet below the 
+existing ground surface will be required for construction of the foundation caps and 
+elevator pits. Based on the subsurface conditions encountered and the limited working 
+space available, we envision that temporary shoring of the excavations may be required 
+for the project construction. 
+The field exploration encountered a surface fill layer underlain by coral formation 
+with severe fracturing and moderate weathering extending to depths of about 20 to 29 feet 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 7274-00 
+GEOLABS, INC. 
+Page 35 
+Hawaii • California 
+below the existing ground surface. The coral formation appears to be generally 
+continuous across the site but with variations in layer thickness and hardness. Boring 
+No. 4 located within the underground cavern system encountered a void from about 7 to 
+10 feet and again from about 16 to 26.5 feet below the existing ground surface within the 
+coral formations. 
+Based on the anticipated subsurface conditions, we envision that conventional 
+excavation techniques using a backhoe excavator may be used for the planned 
+excavations within the surface fill layer. However, excavations into the underlying coral 
+formation may require the use of hoerams or chipping. We understand the project has 
+been designed by taking into consideration the preservation of the integrity of the 
+underground cavern roof system as much as possible. Therefore, the contractor must 
+exercise care to avoid over-ripping, which would “punch through” the underground cavern 
+roof, resulting in a potential loss of bearing support for improvements on top. 
+3.8 
+Dewatering 
+During our field exploration, we encountered groundwater at depths ranging 
+between about 6.7 and 8.8 feet below the existing ground surface. Due to the relatively 
+shallow groundwater levels encountered at the project site, we anticipate some of the 
+off-site underground utility lines to be installed may extend below the groundwater level. 
+Therefore, dewatering of some of the excavations may be necessary for the utility line 
+installations. 
+In general, dewatering operations should be conducted in such a manner that 
+dewatering will not cause areal ground subsidence, which may cause potential damage 
+to the nearby existing structures. Therefore, consideration should be given to a 
+dewatering system that includes a cut-off wall to reduce the volume of water to be 
+removed within the excavation and to reduce the areal extent of groundwater drawdown 
+outside of the excavation. 
+Because the excavation dewatering may involve the discharge of groundwater 
+from the dewatering operation into adjacent drainage systems, a National Pollutant 
+Discharge Elimination System (NPDES) permit may be necessary. The contractor should 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 7274-00 
+GEOLABS, INC. 
+Page 36 
+Hawaii • California 
+consult their independent consultant or the State of Hawaii, Department of Health for the 
+latest regulations and information pertaining to the NPDES permit application. 
+Based on our borings, the near-surface fills were underlain by fractured coral 
+formation. Due to the heterogeneous nature of the coral formation, the actual subsurface 
+soil permeability may range broadly and also vary locally in terms of orders of magnitude. 
+The permeability of the subsurface materials at the site may be considered moderately to 
+highly permeable based on the materials encountered. In addition, the groundwater 
+encountered could be tied into the subterranean drainage in the area through the cavern 
+network. Therefore, the contractor should pay special attention to the site-specific 
+dewatering plan for the proposed excavations. 
+3.9 
+Pavement Design 
+We understand flexible and rigid pavements will be required for the project. In 
+general, we anticipate vehicle loading for the project primarily will consist of passenger 
+vehicles and light pick-up trucks. We have made our preliminary pavement design 
+assuming the pavement subgrade soil will consist of the medium dense sandy soils 
+encountered in the borings during our field explorations. Based on the above 
+assumptions, we recommend using the following pavement design sections for 
+preliminary design purposes: 
+Flexible Pavements for Parking Areas 
+ 2.0-Inch Asphaltic Concrete 
+ 6.0-Inch Aggregate Base Course (95 Percent Relative Compaction) 
+  6.0-Inch Aggregate Subbase Course (95 Percent Relative Compaction) 
+14.0-Inch Total Pavement Thickness on Moist Compacted Subgrade 
+Flexible Pavements for Access Driveways and Loading Zones 
+ 3.0-Inch Asphaltic Concrete 
+ 6.0-Inch Aggregate Base Course (95 Percent Relative Compaction) 
+  6.0-Inch Aggregate Subbase Course (95 Percent Relative Compaction) 
+15.0-Inch Total Pavement Thickness on Moist Compacted Subgrade 
+Rigid Pavement Section 
+ 6.0-Inch Portland Cement Concrete 
+  6.0-Inch Aggregate Subbase Course (95 Percent Relative Compaction) 
+12.0-Inch Total Pavement Thickness on Moist Compacted Subgrade 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 7274-00 
+GEOLABS, INC. 
+Page 37 
+Hawaii • California 
+In general, the pavement subgrades should be scarified to a depth of about 
+8 inches, moisture-conditioned to above the optimum moisture, and compacted to a 
+minimum of 95 percent relative compaction. The aggregate base course materials should 
+consist of crushed basaltic aggregates compacted to a minimum of 95 percent relative 
+compaction. CBR and field density tests should be performed on the actual subgrade 
+soils encountered during construction to evaluate the adequacy of the above pavement 
+sections. 
+In addition, paved areas should be sloped, and drainage gradients should be 
+maintained to carry the surface water off the site. Surface water ponding should not be 
+allowed on-site during or after construction. Concrete curbs used to isolate landscaping 
+in or adjacent to the pavement areas should extend a minimum of 2 inches into the soils 
+below the aggregate base course layer to reduce the potential for migration of excessive 
+landscape water into the pavement section. Alternatively, a subdrain system could be 
+constructed to collect the excess water from landscaping irrigation. For long-term 
+performance, we recommend constructing a subdrain system adjacent to the 
+paved/landscaped areas. 
+3.10 Underground Utility Lines 
+We envision utility line connections adjacent to the project site will be required for 
+the development. We anticipate most of the on-site utility line trenches will be excavated 
+in the near-surface fills as designed to preserve the integrity of the cavern roof. In general, 
+we recommend using granular bedding consisting of 6 inches of free-draining granular 
+materials (ASTM C33, No. 67 gradation) below the pipes for uniform support. 
+Free-draining granular materials, such as No. 3B Fine gravel (ASTM C33, No. 67 
+gradation), also should be used for the initial trench backfill up to about 12 inches above 
+the pipes.  
+It is critical to use this free-draining material to reduce the potential for formation 
+of voids below the haunches of the pipes and to provide adequate support for the sides 
+of the pipes. Improper backfill material around the pipes and improper placement of the 
+backfill could result in backfill settlement and pipe damage. Where groundwater is 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 7274-00 
+GEOLABS, INC. 
+Page 38 
+Hawaii • California 
+encountered, the bedding should be wrapped on all sides by non-woven filter fabric 
+(Mirafi 180N or equivalent). 
+The upper portion of the trench backfill from a level of 12 inches above the pipes 
+to the top of the subgrade or finished grade may consist of the excavated granular 
+materials with a maximum particle size of 6 inches or select granular fill materials. The 
+backfill material should be moisture-conditioned to above the optimum moisture content, 
+placed in maximum 8-inch level loose lifts, and mechanically compacted to at least 
+90 percent relative compaction. In areas where trenches will be in paved areas, the upper 
+3 feet of the trench backfill below the pavement finished grade should be compacted to 
+no less than 95 percent relative compaction. 
+We envision some of the off-site utility lines may need to extend through the near-
+surface fill layer and into the underlying coral formation in order to tie into the existing 
+utility lines and manholes. Where these utility lines are located within the underground 
+cavern limits, there exist the potential for the utility pipes to be hung up in the air. To 
+provide support for these utility pipes, we recommend creating a rock fill prism below the 
+pipes as shown in the Utility Line Installation Through Cavern, Plate 4. 
+3.11 Design Review 
+Final drawings and specifications for the proposed construction should be 
+forwarded to Geolabs for review and written comments prior to bid solicitation and/or 
+construction. This review is necessary to evaluate conformance of the plans and 
+specifications with the intent of the foundation and earthwork recommendations provided 
+herein. If this review is not made, Geolabs cannot assume responsibility for 
+misinterpretation of the recommendations presented herein.  
+3.12 Post-Design Services/Services During Construction 
+Geolabs should be retained to provide geotechnical engineering services during 
+construction of the proposed project. The critical items of construction monitoring that 
+require "Special Inspection" include the following: 
+1. 
+Review of drilled shaft foundation installation submittals 
+2. 
+Observation of the trial drilled shaft installation 
+3. 
+Observation of the drilled shaft load test 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 7274-00 
+GEOLABS, INC. 
+Page 39 
+Hawaii • California 
+4. 
+Observation of the production drilled shaft installation 
+5. 
+Observation of shallow foundation excavations 
+6. 
+Observation of subgrade preparation 
+7. 
+Observation and testing of the fill placement and compaction 
+In addition, a Geolabs representative should monitor the other aspects of 
+earthwork construction to observe compliance with the intent of the design concepts, 
+specifications, and/or recommendations, and to expedite suggestions for design changes 
+that may be required in the event that subsurface conditions differ from those anticipated 
+at the time this report was prepared. The recommendations presented herein are 
+contingent upon such observations.  
+If the actual exposed subsurface conditions encountered during construction differ 
+from those assumed or considered herein, Geolabs should be contacted to review and/or 
+revise the geotechnical recommendations presented herein. 
+END OF DISCUSSION AND RECOMMENDATIONS 
+W.O. 7274-00 
+GEOLABS, INC. 
+Page 40 
+Hawaii • California 
+SECTION 4.  LIMITATIONS 
+The analyses and recommendations submitted herein are based, in part, upon 
+information obtained from borings drilled at the project site. Variations of subsurface 
+conditions between and beyond the borings may occur, and the nature and extent of 
+these variations may not become evident until additional probing and/or construction is 
+underway. If variations then appear evident, it will be necessary to re-evaluate the 
+recommendations provided in this report. 
+The field boring locations indicated in this report are approximate, having been 
+estimated by taping from visible features shown on the Topographic Survey Map 
+transmitted by Wilson Okamoto Corporation on August 17, 2016. Boring elevations are 
+estimated based on interpolation between the spot elevations shown on the same plan. 
+The physical locations and elevations of the borings should be considered accurate only 
+to the degree implied by the methods used. 
+The stratification lines shown on the graphic representations of the borings depict 
+the approximate boundaries between the soil and/or rock types and, as such, may denote 
+a gradual transition. Water level data from the borings were measured at the times shown 
+on the graphic representations and/or presented in the text of this report. These data have 
+been reviewed and interpretations made in the formulation of this report. However, it must 
+be noted that fluctuation may occur due to variation in tides, rainfall, perched groundwater 
+conditions, groundwater withdrawal, and other factors. 
+This report has been prepared for the exclusive use of Laconia Development LLC, 
+and their design consultants, for specific application to the South King Student Housing 
+project in accordance with generally accepted geotechnical engineering principles and 
+practices. No warranty is expressed or implied. 
+This report has been prepared solely for the purpose of assisting the architect and 
+engineers in the design of the proposed project. Therefore, this report may not contain 
+sufficient data, or the proper information, to serve as the basis for preparation of 
+construction cost estimates.  
+SECTION 4.  LIMITATIONS 
+W.O. 7274-00 
+GEOLABS, INC. 
+Page 41 
+Hawaii • California 
+The owner/client should be aware that unanticipated soil and/or rock conditions 
+are commonly encountered. Unforeseen subsurface conditions, such as perched 
+groundwater, soft deposits, hard layers, or cavities, may occur in localized areas and may 
+require additional probing or corrections in the field (which may result in construction 
+delays) to attain a properly constructed project. Therefore, a sufficient contingency fund 
+is recommended to accommodate these possible extra costs. 
+This geotechnical engineering exploration conducted at the project site was not 
+intended to investigate the potential presence of hazardous materials existing at the site. 
+It should be noted that the equipment, techniques, and personnel used to make a geo-
+environmental exploration differ substantially from those applied in geotechnical 
+engineering. 
+END OF LIMITATIONS 
+CLOSURE
+The following plates and appendices are attached and complete this report:
+Project Location Map .......c:ccccccccceeeeeeeesereeessesseeeeseseeeesesseeessesseeeeessseeesssssaeeessssaaeees Plate 1
+Sg: Plate 2
+Moiliili Karst Location Map ......c.:ccccccceeeeeeeeseeeeeeereeseseeseseeeseneeessseesesseeseeeeseneeseneeess Plate 3
+Utility Line hastallation Thraugh Gaver sexncncssscesem ae vem eur cmasmnomr cen pee woes enews Plate 4
+Summary of Lateral Load Analyses for Drilled Shafts............::ccssceesseesseeesseeeeees Plate 5
+Drilled Shaft Load Test Detail ..........:: ccc cesses eeeeeeeeeesseseseaseeaaasaeeaaeeeeeeeeeeeeeeeeeeeees Plate 6
+Fidld EX IOPAUOR nsicei. sus ccs tone sane one ce Cons cer RRREROONRTONNNN nOM On eOMeNNERINN I et Appendix A
+Seismic Shear Wave Velocity TeSt..........:::::cccceeeeesessneeeeeeesssssseeeeeseesessaeeneees Appendix B
+Laboratory T@Sts ......ccccceceecceeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeseeseaeeeeeseeeesseeaseeeeeessessaaeeness Appendix C
+Photographs of Core Sarr ple isis cis ccs snes ones exes vos cen snancncampsanes cone ones cee enenmamannnnns Appendix D
+DOQQQOQOOO-
+Respectfully submitted,
+GEOLABS, INC.
+ay Tesaliy2T Kino By <
+Teddy S.T. Kwok, P.E. Robin M. Lim, P.E.
+Vice President President
+RML:TK:mj
+h:\7200 Series\7274-00.tk2
+W.O. 7274-00 GEOLABS, INC. Page 42
+Hawaii ¢ California
+PLATES 
+PACIFIC OCEAN
+PROJECT LOCATION >
+PROJECT LOCATION MAP
+SOUTH KING STUDENT HOUSING
+HONOLULU, OAHU, HAWAII
+2000 1000 0 2000 FT. QL GEOLABS, INC.
+EEE >
+Geotechnical Engineering
+GRAPHIC SCALE rR
+; ¥> k DATE DRAWN BY PLATE
+a AUGUST 2016 HYC
+REFERENCE: MAP CREATED WITH TOPO!® ©2010 NATIONAL | ss SCALE WO. 1
+GEOGRAPHIC; ©2007 TELE ATLAS, REL. 1/2007. oy 1" = 2,000! 7274-00
+CAD User: HENRY File Last Updated: August 18, 2016 9:26:24am Plot Date: August 18, 2016 - 9:27:29am
+File: T:\Drafting\Working\7274-00UniversitySquareRedevelopment\7274-O0PLM.dwg\PLM
+Plotter: DWG To PDF-GEO.pc3 Plotstyle: GEO-No-Dithering-Blue-Boring.ctb
+i
+k
+N hedge h=3.35"
+3
+‘india howse Yestadxant
+rhead sgn
+Ojtmh q = nc. \gut
+i S “COR. Curb.
+conc. curb
+ip we “speed lirnit P gw
+Up Jaa #68 25 mph” sign
+cut find. conc. s/w
+mtlox|
+= Ss )
+. "arrow fnd.
+‘ofessionol image:
+inex ovexhedd si
+KAWAMALU
+"30. migutes
+parking "sign
+. “no _parkin Sime
+Zz sigh 9 OE
+Stair
+Wel x
+Cone.
+metal oo =
+box drain Y gos meter? (SI
+92.07 3
+ofr
+steps and landing ey »
+parking
+conc. saw
+‘pay phon
+Ox
+edge ac ~
+. :
+= g
+&
+220:15'39*
+Z
+ac d/\ LEAL
+conc. 0/4,
+UNIVERS]
+"2 he parking”
+sign
+———..
+10 =
+parking
+edge ac
+parkin
+booth
+Vol wy ™~ ae
+4 B/p meta
+e
+“C.0, jate,
+tbs.
+‘ou
+“s” cut set
+AS4O
+7 UTS
+m VAN
+lire e
+‘a/c unit
+Zz
+LOT 10-A
+745,758 SQ. FT.
+Wick 7
+Ast -_
+ac parking
+——OHU——
+pp w/ riser _
+onl
+mag nail set ‘
+9 nae bo(2)
+15.5 feet
+roadway width
+{| \ am ve
+Toa @
+| siih Cy) % Coe,
+(a
+08
+‘varies
+right of woy width
+K
+‘piolani Boulevarg }
+— k
+le
+3
+Pi
+mog nail set
+\o
+metal. ‘iy
+box \ &/s card / @
+bo reader
+fo. : metal pipe
+“2? Men}
+oF
+ic
+cone 4 bo w/ volve
+1/2in. pipe
+set
+ip w/sl
+SITE PLAN
+SX . { , SOUTH KING STUDENT HOUSING
+HONOLULU, OAHU, HAWAII
+LEGEND:
+CAVERN EXPOSED Ql GEOLABS, INC.
+> Geotechnical Engineering
+@- APPROXIMATE BORING LOCATION ESS] (FROM WILLIANS 1935 AND WOLFE 1975)
+SW __ SEISMIC SHEAR WAVE VELOCITY TESTING PLATE
+80 AUGUST 2016 HYC
+SCALE W.O.
+LIMIT OF UNDERGROUND CAVERN BASED |
+ON DIVER SURVEY GRAPHIC SCALE
+UNDERGROUND CAVERN (APPROXIMATE)
+REFERENCE: ALTA/ACSM LAND SURVEY TRANSMITTED BY
+LACONIA DEVELOPMENT LLC ON OCTOBER 21, 2015.
+CAD User: HENRY File Last Updated: August 18, 2016 3:07:00pm Plot Date: August 31, 2016 - 11:54:46am
+File: T:\Drafting\Working\7274-00UniversitySquareRedevelopment\7274-00SitePlan.dwg\SitePlan
+Plotter: DWG To PDF-GEO.pc3 Plotstyle: GEO-No-Dithering-Blue-Boring.ctb
+LEGEND:
+SITE OF CATASTROPHIC 1934 EXCAVATION INTO MASTER CONDUIT BELOW
+SEA LEVEL, WITH UPSLOPE DEWATERING. CONDUIT CONTINUES SEAWARD,
+PRESUMABLY WEST OR SOUTHWEST.
+SHALLOW CLOSED DEPRESSION
+HAUSTEN (KUMULAE) SPRING AND FISH POND AT WILLOWS RESTAURANT.
+SOUTH KING STREET COMPLEX OF CAVE PASSAGES, COLLAPSES, AND
+SUBSIDENCES.
+KUILEI LANE COMPLEX OF SUBSIDENCE, CAVERNS DEMONSTRATED BY
+GEOPHYSICAL STUDIES, AND CAVE PASSAGE SHOWN ON 1935 BOARD OF
+WATER SUPPLY MAP.
+MOILIILI WATER CAVE
+UNIVERSITY OF HAWAII QUARRY CAVE
+AREA OF MAXIMUM SUBSIDENCE IN 1934
+REFERENCE: RE-CREATION OF MOILIILI KARST
+CONDUIT DRAINAGE FROM WILLIAM R. HALLIDAY -
+HISTORY AND STATUS OF THE MOILIILI KARST, HAWAII.
+Journal of Cave and Karst Studies 60(3): 141-145.
+File: T:\Drafting\Working\7274-00UniversitySquareRedevelopment\7274-00KarstLocationMap.dwg\KarstLocationMap
+CAD User: HENRY File Last Updated: August 18, 2016 10:57:33am Plot Date: August 18, 2016 - 10:58:51am
+0
+TS OF
+KARST DRAINAGE © ** * "7 yy,
+iN
+SFr KARST DRAINAGE
+ree « ¢ 39, CONDUIT
+Kan
+f
+a Fy
+APPROXIMATE PROJECT
+BOUNDARIES
+300 600 1200 1800 FT.
+GRAPHIC SCALE
+MOILIILI KARST LOCATION MAP
+SOUTH KING STUDENT HOUSING
+HONOLULU, OAHU, HAWAII
+GEOLABS, INC.
+Geotechnical Engineering
+DATE DRAWN BY PLATE
+AUGUST 2016 HYC
+SCALE W.O.
+1" = 600' 7274-00 3
+CAD User: HENRY File Last Updated: July 22, 2016 4:16:10pm Plot Date: July 22, 2016 - 4:16:57pm
+File: T:\Drafting\Working\7274-00UniversitySquareRedevelopment\7274-00UtilityLineInstallationThroughCavern.dwg\Layout1
+Plotter: DWG To PDF-GEO.pc3 Plotstyle: GEO-No-Dithering.ctb
+EXISTING PAVEMENT \ A.C. PAVEMENT
+BASE COURSE
+SUBBASE COURSE
+TO MATCH EXISTING
+<A TRENCH WIDTHS
+UCC CC: VOC CCA
+REINFORCED CONCRETE JACKET AIX TOP OF CAVERN
+UTILITY PIPE
+<a
+TOP OF CAVERN
+TYPICAL HALF SECTION
+TYPICAL HALF SECTION CONDITION 1
+CONDITION 2
+LOIS CRESS DOT ET ERG
+CAVERN _* cael resent
+INSTALL 18" R.C. DRAIN PIPE @ 3'-0" O.C.
+(LENGTH AND NO. TO BE GIVEN IN FIELD)
+CAVERN BOTTOM
+CONDITION 1: R.C. JACKET IS BELOW
+TOP OF CAVERN.
+CONDITION 2: R.C. JACKET IS ABOVE
+TOP OF CAVERN.
+LEGEND:
+A.C. PAVEMENT
+BASE COURSE GEOLABS, INC.
+SUBBASE COURSE UTILITY LINE INSTALLATION Geotechnical Engineering
+CLSM ae: DATE DRAWN BY
+No 280K THROUGH CAVERN | ure
+SOUTH KING STUDENT HOUSING , SCALE Wo.
+NO. $B FINE GRAVEL HONOLULU, OAHU, HAWAII ap 4
+SUMMARY OF LATERAL LOAD ANALSYES FOR DRILLED SHAFTS
+South King Student Housing
+Honolulu, Oahu, Hawaii
+W.O. 7274-00
+PLATE 5
+Concrete Compressive Strength:
+4,000
+psi
+Reinforcing Steel Content:
+1.0
+Case
+Shaft 
+Diameter 
+(inches)
+Shaft 
+Length 
+(feet)
+Axial Load 
+(kips)
+Lateral      
+Load          
+(kips)
+Pile             
+Head               
+Connection                         
+Lateral 
+Deflection 
+(inches)
+Maximum 
+Induced 
+Moment     
+(kip-feet)
+Depth to 
+Maximum 
+Moment    
+(feet)
+Flexural 
+Length    
+(feet)
+Notes
+20
+0.4
+355
+23
+32
+41
+1.0
+811
+23
+32
+69
+0.4
+1217
+0
+37
+138
+1.00
+2467
+0
+37
+20
+0.40
+355
+23
+32
+40
+1.00
+787
+23
+32
+55
+0.30
+908
+0
+36
+110
+1.00
+1742
+0
+36
+103
+0.30
+514
+10
+18
+206
+1.00
+1233
+11
+18
+185
+0.20
+1125
+0
+23
+371
+1.00
+2100
+0
+22
+79
+0.10
+208
+6
+11
+157
+1.00
+607
+7
+11
+115
+0.10
+384
+0
+15
+230
+1.00
+734
+0
+14
+163
+0.20
+558
+7
+14
+325
+1.00
+1500
+8
+15
+253
+0.20
+1133
+0
+20
+505
+1.00
+2100
+0
+19
+Note:
+A.1
+A.2
+48/42
+(with 
+casing)
+48/42
+(without 
+casing)
+42
+Allowable lateral load of drilled shafts is one-half of lateral load that produces lateral deflection of 1 inch and 
+are highlighted in yellow
+Free
+Fixed
+Free
+Fixed
+Free
+Fixed
+Free
+Fixed
+30
+C.2
+42
+Free
+Fixed
+100
+1,000
+100
+1,000
+60
+1,000
+35
+500
+60
+1,000
+B
+C.1
+Within cavern.  Void from 5 to 25 feet 
+below ground surface. Uses 48-inch 
+casing with 0.25 inch thick walls.
+Within cavern.  Void from 5 to 25 feet 
+below ground surface. Uses 48-inch 
+casing, but neglects casing thickness.
+Within cavern.  Colllapsed areas 
+backfilled with compacted soils.
+Outside cavern.  Coral formation from 
+5 to 25 feet (modelled as stiff clay 
+with an undrained shear strength of 4 
+ksf)
+Outside cavern.  Coral formation from 
+5 to 25 feet (modelled as stiff clay 
+with an undrained shear strength of 4 
+ksf)
+CAD User: HENRY File Created: April 23, 1998 File Last Updated: December 13, 2016 3:54:20pm
+File: T:\Drafting\Working\7274-00UniversitySquareRedevelopment\7274-00DrilledShaftDetail.dwg\Plate-6
+PRESSURE LINE TO
+BASE LOAD CELL
+APPROXIMATE GROUND ELEVATION
+DEPTH (FT.)
+i od RRR RRR.
+SPIRAL TO FULL
+LOAD TEST
+SHAFT LENGTH
+PROVIDE TEMPORARY
+CASING AS NEEDED
+REINFORCING STEEL
+8 - #9 BARS EQUALLY
+EMBEDMENT STRAIN SPACED
+GAUGES (TYP.)
+EMBEDMENT
+PRESSURE LINE STRAIN
+GAUGE
+TO LOAD CELL (22 TOTAL)
+65 FEET
+#4 SPIRAL
+@ 6" PITCH
+STRUCTURAL
+EXPANDABLE (e= 8 000 PSI MIN
+BASE LOAD 8D,
+CELL (GROUTED) @ 28 DAYS)
+AT 65 FEET
+a
+LL
+O.
+Q#
+LU
+—_/J =
+ao
+fa
+SECTION A-A'
+DRILLED SHAFT
+LOAD TEST DETAIL
+SOUTH KING STUDENT HOUSING
+HONOLULU, OAHU, HAWAII
+GEOLABS, INC.
+Geotechnical Engineering
+. DATE DRAWN BY PLATE
+DECEMBER 2016] — HYC
+42 INCHES SCALE W.0. 6
+oy NOT TO SCALE | 7274-00
+APPENDIX A  
+W.O. 7274-00 
+GEOLABS, INC. 
+     Page A-1 
+Hawaii • California  
+A P P E N D I X   A 
+Field Exploration 
+We explored the subsurface conditions at the project site by drilling and sampling 
+five borings, designated as Boring Nos. 1 through 5, extending to depths of about 80.5 to 
+102 feet below the existing pavement surface.  The approximate boring locations are 
+shown on the Site Plan, Plate 2. The borings were drilled using a truck-mounted drill rig 
+equipped with continuous flight augers and coring tools. 
+Our geologist classified the materials encountered in the borings by visual and 
+textural examination in the field in general accordance with ASTM D2488, Standard 
+Practice for Description and Identification of Soils, and monitored the drilling operations 
+on a near-continuous (full-time) basis. These classifications were further reviewed visually 
+and by testing in the laboratory. Soils were classified in general accordance with 
+ASTM D2487, Standard Practice for Classification of Soils for Engineering Purposes 
+(Unified Soil Classification System), as shown on the Soil Log Legend, Plate A-0.1. 
+Deviations made to the soil classification in accordance with ASTM D2487 are described 
+on the Soil Classification Log Key, Plate A-0.2. Graphic representations of the materials 
+encountered are presented on the Logs of Borings, Plates A-1 through A-5. 
+Relatively “undisturbed” soil samples were obtained in general accordance with 
+ASTM D3550-01(2007), Ring-Lined Barrel Sampling of Soils, by driving a 3-inch 
+OD Modified California sampler with a 140-pound hammer falling 30 inches. In addition, 
+some samples were obtained from the drilled borings in general accordance with 
+ASTM D1586, Penetration Test and Split-Barrel Sampling of Soils, by driving a 2-inch OD 
+standard penetration sampler using the same hammer and drop. The blow counts needed 
+to drive the sampler the second and third 6 inches of an 18-inch drive are shown as the 
+“Penetration Resistance” on the Logs of Boring at the appropriate sample depths. The 
+penetration resistance shown on the logs of boring indicates the number of blows required 
+for the specific sampler type used. The blow counts may need to be factored to obtain the 
+Standard Penetration Test (SPT) blow counts. 
+Pocket penetrometer tests were performed on selected cohesive soil samples in 
+the field. The pocket penetrometer test provides an indication of the unconfined 
+compressive strength of the sample. Results of the pocket penetrometer tests are 
+summarized on the Logs of Borings at the appropriate sample depths. 
+Core samples of the rock materials encountered at the project site were obtained 
+by using diamond core drilling techniques in general accordance with ASTM D2113, 
+Diamond Core Drilling for Site Investigation. Core drilling is a rotary drilling method that 
+uses a hollow bit to cut into the rock formation. The rock material left in the hollow core of 
+the bit is mechanically recovered for examination and description. Rock cores were 
+described in general accordance with the Rock Description System, as shown on the 
+Rock Log Legend, Plate A-0.3. The Rock Description System is based on the publication 
+Appendix A 
+Field Exploration 
+W.O. 7274-00 
+GEOLABS, INC. 
+     Page A-2 
+Hawaii • California 
+“Suggested Methods for the Quantitative Description of Discontinuities in Rock Masses” 
+by the International Society for Rock Mechanics (March 1977). 
+Recovery (REC) may be used as a subjective guide to the interpretation of the 
+relative quality of rock masses, where appropriate. Recovery is defined as the actual 
+length of material recovered from a coring attempt versus the length of the core attempt. 
+For example, if 3.7 feet of material is recovered from a 5.0-foot core run, the recovery 
+would be 74 percent and would be shown on the Logs of Borings as REC = 74%. 
+The Rock Quality Designation (RQD) is also a subjective guide to the relative 
+quality of rock masses. RQD is defined as the percentage of the core run in rock that is 
+sound material in excess of 4 inches in length without any discontinuities, discounting any 
+drilling, mechanical, and handling induced fractures or breaks. If 2.5 feet of sound material 
+is recovered from a 5.0-foot core run in rock, the RQD would be 50 percent and would be 
+shown on the Logs of Borings as RQD = 50%. Generally, the following is used to describe 
+the relative quality of the rock based on the "Practical Handbook of Physical Properties 
+of Rocks and Minerals” by Robert S. Carmichael (1989). 
+Rock Quality 
+RQD 
+(%) 
+Very Poor 
+0 – 25 
+Poor 
+25 – 50 
+Fair 
+50 – 75 
+Good 
+75 – 90 
+Excellent 
+90 – 100 
+The excavation characteristic of a rock mass is a function of the relative hardness 
+of the rock, its relative quality, brittleness, and fissile characteristics. A dense rock 
+formation with a high RQD value would be very difficult to excavate and probably would 
+require more arduous methods of excavation. 
+A-0.1
+UNCONSOLIDATED UNDRAINED
+TRIAXIAL COMPRESSION (ksf)
+MORE THAN 50%
+OF COARSE
+FRACTION
+RETAINED ON
+NO. 4 SIEVE
+50% OR MORE OF
+COARSE FRACTION
+PASSING
+THROUGH NO. 4
+SIEVE
+MORE THAN 50%
+OF MATERIAL
+RETAINED ON NO.
+200  SIEVE
+50% OR MORE OF
+MATERIAL PASSING
+THROUGH NO. 200
+SIEVE
+TORVANE SHEAR (tsf)
+(2-INCH) O.D. STANDARD PENETRATION TEST
+POCKET PENETROMETER (tsf)
+(3-INCH) O.D. MODIFIED CALIFORNIA SAMPLE
+UNCONFINED COMPRESSION (ksf)
+INORGANIC SILTS AND VERY FINE SANDS,
+ROCK FLOUR, SILTY OR CLAYEY FINE SANDS
+OR CLAYEY SILTS WITH SLIGHT PLASTICITY
+POORLY-GRADED GRAVELS, GRAVEL-SAND
+MIXTURES, LITTLE OR NO FINES
+CLAYEY GRAVELS, GRAVEL-SAND-CLAY
+MIXTURES
+WELL-GRADED SANDS, GRAVELLY SANDS,
+LITTLE OR NO FINES
+POORLY-GRADED SANDS, GRAVELLY
+SANDS, LITTLE OR NO FINES
+SILTY SANDS, SAND-SILT MIXTURES
+CLAYEY SANDS, SAND-CLAY MIXTURES
+LIQUID LIMIT
+50 OR MORE
+CH
+NOTE: DUAL SYMBOLS ARE USED TO INDICATE BORDERLINE SOIL CLASSIFICATIONS
+MH
+SILTS
+AND
+CLAYS
+SILTS
+AND
+CLAYS
+LIQUID LIMIT
+LESS THAN 50
+USCS
+TYPICAL
+DESCRIPTIONS
+GW
+MORE THAN 12%
+FINES
+WATER LEVEL OBSERVED IN BORING OVERNIGHT
+HIGHLY ORGANIC SOILS
+SILTY GRAVELS, GRAVEL-SAND-SILT
+MIXTURES
+OL
+PEAT, HUMUS, SWAMP SOILS WITH HIGH
+ORGANIC CONTENTS
+INORGANIC CLAYS OF LOW TO MEDIUM
+PLASTICITY, GRAVELLY CLAYS, SANDY
+CLAYS, SILTY CLAYS, LEAN CLAYS
+Soil Log Legend
+ORGANIC CLAYS OF MEDIUM TO HIGH
+PLASTICITY, ORGANIC SILTS
+SC
+Plate
+GM
+FINE-
+GRAINED
+SOILS
+COARSE-
+GRAINED
+SOILS
+CLEAN SANDS
+SANDS WITH
+FINES
+SP
+SANDS
+GRAVELS
+WELL-GRADED GRAVELS,  GRAVEL-SAND
+MIXTURES, LITTLE OR NO FINES
+ML
+CL
+OH
+LESS THAN 5%
+FINES
+GRAVELS WITH
+FINES
+CLEAN
+GRAVELS
+GRAB SAMPLE
+PLASTICITY INDEX (NP=NON-PLASTIC)
+UC
+TV
+PEN
+LEGEND
+WATER LEVEL OBSERVED IN BORING AT TIME OF
+DRILLING
+WATER LEVEL OBSERVED IN BORING AFTER DRILLING
+SM
+MAJOR DIVISIONS
+GP
+MORE THAN 12%
+FINES
+PT
+LESS THAN 5%
+FINES
+UNIFIED SOIL CLASSIFICATION SYSTEM (USCS)
+ORGANIC SILTS AND ORGANIC SILTY
+CLAYS OF LOW PLASTICITY
+SW
+GC
+INORGANIC SILT, MICACEOUS OR
+DIATOMACEOUS FINE SAND OR SILTY
+SOILS
+INORGANIC CLAYS OF HIGH PLASTICITY
+PI
+LL
+CORE SAMPLE
+SHELBY TUBE SAMPLE
+LIQUID LIMIT (NP=NON-PLASTIC)
+TXUU
+GEOLABS, INC.
+Geotechnical Engineering
+LOG LEGEND FOR SOIL  7274-00.GPJ  GEOLABS.GDT  10/27/15
+A-0.2
+Medium Sand
+Fine Sand
+#4 to #200 (4.75-mm to 0.075-mm)
+#4 to #10 (4.75-mm to 2-mm)
+> 12 inches (305-mm)
+3-inch to #4 (75-mm to 4.75-mm)
+Sieve Number and / or Size
+Gravel
+#10 to #40 (2-mm to 0.425-mm)
+#40 to #200 (0.425-mm to 0.075-mm)
+3 to 12 inches (75-mm to 305-mm)
+Description
+PP Readings
+(tsf)
+2.0 - 4.0
+> 4.0
+N-Value (Blows/Foot)
+MCS
+0 - 4
+RELATIVE DENSITY / CONSISTENCY
+GRAIN SIZE DEFINITION
+ABBREVIATIONS
+N-Value (Blows/Foot)
+0 - 7
+Dry:    Absence of moisture, dry to the touch
+Moist: Damp but no visible water
+Wet:   Visible free water, usually soil is below water table
+WOH:  Weight of Hammer
+WOR:  Weight of Drill Rods
+SPT:    Standard Penetration Test Split-Spoon Sampler
+MCS:   Modified California Sampler
+PP:      Pocket Penetrometer
+4 - 7
+7 - 15
+15 - 27
+27 - 55
+SPT
+0 - 2
+> 55
+> 30
+4 - 8
+15 - 30
+MOISTURE CONTENT DEFINITIONS
+SPT
+0 - 4
+4 - 10
+10 - 30
+30 - 50
+> 50
+MCS
+Loose
+EXAMPLE: Soil Containing 60% Gravel, 25% Sand, 15% Fines. Described as: SILTY GRAVEL with some sand
+Plate
+GRANULAR SOIL (- #200 <50%)
+2 - 4
+8 - 15
+Relative
+Density
+Very Loose
+Dense
+Very Dense
+COHESIVE SOIL (- #200    50%)
+PRIMARY constituents are composed of the largest
+percent of the soil mass. Primary constituents are
+capitalized and bold (i.e., GRAVEL, SAND)
+PRIMARY constituents are based on plasticity. Primary
+constituents are capitalized and bold (i.e., CLAY, SILT)
+SECONDARY constituents are composed of a
+percentage less than the primary constituent. If the soil
+mass consists of 12 percent or more fines content, a
+cohesive constituent is used (SILTY or CLAYEY);
+otherwise, a granular constituent is used (GRAVELLY
+or SANDY) provided that the secondary constituent
+consists of 20 percent or more of the soil mass.
+Secondary constituents are capitalized and bold (i.e.,
+SANDY GRAVEL, CLAYEY SAND) and precede the
+primary constituent.
+SECONDARY constituents are composed of a
+percentage less than the primary constituent, but more
+than 20 percent of the soil mass. Secondary constituents
+are capitalized and bold (i.e., SANDY CLAY, SILTY
+CLAY, CLAYEY SILT) and precede the primary
+constituent.
+Sand
+Boulders
+Cobbles
+Coarse Gravel
+3-inch to 3/4-inch (75-mm to 19-mm)
+Fine Gravel
+3/4-inch to #4 (19-mm to 4.75-mm)
+GEOLABS, INC. CLASSIFICATION*
+Granular Soils
+Cohesive Soils
+Consistency
+accessory descriptions compose of the following:
+with some: >12%
+with a little: 5 - 12%
+with traces of: <5%
+accessory descriptions are lower cased and follow the
+Primary and Secondary Constituents
+(i.e., SILTY CLAY with some sand)
+Very Soft
+Soft
+Medium Stiff
+Stiff
+Very Stiff
+Hard
+< 0.5
+0.5 - 1.0
+1.0 - 2.0
+7 - 18
+18 - 55
+55 - 91
+> 91
+Medium Dense
+Coarse Sand
+(with deviations from ASTM D2488)
+Soil Classification Log Key
+*Soil descriptions are based on ASTM D2488-09a, Visual-Manual Procedure, with the
+above modifications by Geolabs, Inc. to the Unified Soil Classification System (USCS).
+accessory descriptions compose of the following:
+with some: >12%
+with a little: 5 - 12%
+with traces of: <5%
+accessory descriptions are lower cased and follow the
+Primary and Secondary Constituents
+(i.e., SILTY GRAVEL with a little sand)
+SOIL_CLASS_LOG_KEY  7274-00.GPJ  GEOLABS.GDT  10/27/15
+GEOLABS, INC.
+Geotechnical Engineering
+A-0.3
+ROCK DESCRIPTIONS
+Plate
+BRECCIA
+CLINKER
+COBBLES
+CORAL
+BASALT
+ROCK DESCRIPTION SYSTEM
+Greater than 24 inches apart
+12 to 24 inches apart
+6 to 12 inches apart
+3 to 6 inches apart
+Less than 3 inches apart
+Rock shows no sign of discoloration or loss of strength.
+Slight discoloration inwards from open fractures.
+Discoloration throughout and noticeably weakened though not able to break by hand.
+Most minerals decomposed with some corestones present in residual soil mass. Can be broken by hand.
+Saprolite. Mineral residue completely decomposed to soil but fabric and structure preserved.
+The following terms describe general fracture spacing of a rock:
+The following terms describe the chemical weathering of a rock:
+ROCK FRACTURE CHARACTERISTICS
+DEGREE OF WEATHERING
+HARDNESS
+BOULDERS
+VOID/CAVITY
+TUFF
+SILTSTONE
+LIMESTONE
+FINGER CORAL
+Unweathered:
+Slightly Weathered:
+Moderately Weathered:
+Highly Weathered:
+Extremely Weathered:
+Very Hard:
+Hard:
+Medium Hard:
+Soft:
+Very Soft:
+SANDSTONE
+Massive:
+Slightly Fractured:
+Moderately Fractured:
+Closely Fractured:
+Severely Fractured:
+Rock Log Legend
+The following terms describe the resistance of a rock to indentation or scratching:
+Specimen breaks with difficulty after several "pinging" hammer blows.
+Example: Dense, fine grain volcanic rock
+Specimen breaks with some difficulty after several hammer blows.
+Example: Vesicular, vugular, coarse-grained rock
+Specimen can be broked by one hammer blow. Cannot be scraped by knife. SPT may penetrate by
+~25 blows per inch with bounce.
+Example: Porous rock such as clinker, cinder, and coral reef
+Can be indented by one hammer blow. Can be scraped or peeled by knife. SPT can penetrate by
+~100 blows per foot.
+Example: Weathered rock, chalk-like coral reef
+Crumbles under hammer blow. Can be peeled and carved by knife. Can be indented by finger
+pressure.
+Example: Saprolite
+GEOLABS, INC.
+Geotechnical Engineering
+LOG LEGEND FOR ROCK  7274-00.GPJ  GEOLABS.GDT  10/27/15
+41
+16
+15
+47
+25
+37
+50
+75
+72
+86
+GW
+MH
+SC
+MH
+17
+25
+3.0
+>4.5
+15
+30/6"
+ +50/4"
+65/3"
+42
+20
+4
+53
+26
+23
+48
+43
+67
+100
+LL=65
+PI=29
+3-inch ASPHALTIC CONCRETE
+Grayish brown SANDY GRAVEL (BASALTIC)
+with some clayey silt, medium dense, moist
+(base course)
+Brown CLAYEY SILT with a little sand and
+gravel, stiff to very stiff, moist (fill)
+Tan CORAL, severely fractured, highly to
+moderately weathered, medium hard to hard
+(coral formation)
+grades with pockets of clayey silt with gravel at 14
+to 16 feet
+Tannish brown CLAYEY SAND (CORALLINE)
+with some gravel (coralline), loose (alluvium w/
+coral debris)
+Brown CLAYEY SILT with a little sand, hard
+(older alluvium)
+grades to very stiff
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-75DG2
+4" Solid Stem Auger & PQ Coring
+140 lb. wt., 30 in. drop
+5
+10
+15
+20
+25
+30
+35
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation (feet ): 10 *
+Sample
+Moisture
+Content (%)
+1
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+October 20, 2015
+October 20, 2015
+D. Gremminger
+100.5 feet
+7274-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 1.1
+(Energy Transfer Ratio = 81%)
+GEOLABS, INC.
+Geotechnical Engineering
+SOUTH KING STUDENT HOUSING
+HONOLULU, OAHU, HAWAII
+BORING_LOG  7274-00.GPJ  GEOLABS.GDT  8/31/16
+8.8 ft.   10/20/2015 1001 HRS
+48
+54
+51
+58
+45
+48
+30
+73
+72
+74
+89
+MH
+CH
+MH
+SM
+3.0
+2.5
+24
+46
+18
+13
+24
+9
+22
+36
+100
+60
+45
+26
+0
+0
+TXUU
+Su=1.6 ksf
+TXUU
+Su=1.7 ksf
+grades to hard with angular gravel (tuff)
+grades with some angular cobbles (tuff)
+Brown with gray mottling SILTY CLAY, very stiff
+(older alluvium)
+grades to stiff
+grades with some sand and gravel (coralline), very
+stiff
+Brown CLAYEY SILT with some fine sand,
+medium stiff to stiff (older alluvium)
+Tan SILTY SAND (CORALLINE) with some
+gravel (coralline), loose (coralline detritus)
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-75DG2
+4" Solid Stem Auger & PQ Coring
+140 lb. wt., 30 in. drop
+40
+45
+50
+55
+60
+65
+70
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Sample
+Moisture
+Content (%)
+1
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+(Continued from previous plate)
+October 20, 2015
+October 20, 2015
+D. Gremminger
+100.5 feet
+7274-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 1.2
+(Energy Transfer Ratio = 81%)
+GEOLABS, INC.
+Geotechnical Engineering
+SOUTH KING STUDENT HOUSING
+HONOLULU, OAHU, HAWAII
+BORING_LOG  7274-00.GPJ  GEOLABS.GDT  8/31/16
+8.8 ft.   10/20/2015 1001 HRS
+32
+32
+89
+SM
+MH
+70
+9
+14
+31
+48
+10
+17
+8
+100
+Sieve
+- #200 =
+17.6%
+UC=
+15130 psi
+grades with some gravel and cobbles (coralline),
+medium dense
+Brown CLAYEY SILT (older alluvium)
+grades with traces of cobbles (basaltic)
+Gray vugular BASALT, severely to moderately
+fractured, moderately weathered, hard (basalt
+formation)
+ Boring terminated at 100.5 feet
+ * Elevations estimated from Topographic Survey
+Map transmitted by Wilson Okamoto
+Corporation on August 17, 2016.
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-75DG2
+4" Solid Stem Auger & PQ Coring
+140 lb. wt., 30 in. drop
+75
+80
+85
+90
+95
+100
+105
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Sample
+Moisture
+Content (%)
+1
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+(Continued from previous plate)
+October 20, 2015
+October 20, 2015
+D. Gremminger
+100.5 feet
+7274-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 1.3
+(Energy Transfer Ratio = 81%)
+GEOLABS, INC.
+Geotechnical Engineering
+SOUTH KING STUDENT HOUSING
+HONOLULU, OAHU, HAWAII
+BORING_LOG  7274-00.GPJ  GEOLABS.GDT  8/31/16
+8.8 ft.   10/20/2015 1001 HRS
+53
+12
+10
+23
+9
+23
+47
+52
+61
+88
+92
+72
+GW-
+GM
+MH
+MH
+15
+12
+2.5
+3.5
+12
+58
+50/3"
+46
+10/0"
+ Ref.
+19
+22
+14
+42
+71
+24
+81
+57
+4-inch CONCRETE
+Grayish brown SANDY GRAVEL (BASALTIC)
+with a little silt, medium dense, moist (base
+course)
+Brown CLAYEY SILT with a little sand and
+gravel, stiff, moist (fill)
+Tan CORAL, severely to closely fractured,
+moderately weathered, medium hard to hard
+(coral formation)
+Brown CLAYEY SILT with a little fine sand, very
+stiff to hard (older alluvium)
+grades to stiff
+grades with a little sand and gravel (coralline)
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-75DG2
+4" Solid Stem Auger & PQ Coring
+140 lb. wt., 30 in. drop
+5
+10
+15
+20
+25
+30
+35
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation (feet ): 10 *
+Sample
+Moisture
+Content (%)
+2
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+October 21, 2015
+October 21, 2015
+D. Gremminger
+90.5 feet
+7274-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 2.1
+(Energy Transfer Ratio = 81%)
+GEOLABS, INC.
+Geotechnical Engineering
+SOUTH KING STUDENT HOUSING
+HONOLULU, OAHU, HAWAII
+BORING_LOG  7274-00.GPJ  GEOLABS.GDT  8/31/16
+8.8 ft.   10/21/2015 0916 HRS
+57
+48
+47
+30
+42
+44
+25
+67
+75
+77
+96
+MH
+CH
+MH
+CH
+SM
+2.5
+>4.5
+3.5
+18
+24
+24
+17
+26
+24
+63
+0
+12
+0
+0
+48
+0
+0
+TXUU
+Su=2.7 ksf
+LL=90
+PI=55
+grades with some fine sand, very stiff
+Brown with gray mottling SILTY CLAY, very stiff
+(older alluvium)
+Brown CLAYEY SILT with some shells, very stiff
+(older alluvium)
+Brown with gray mottling SILTY CLAY with
+traces of sand, very stiff (older alluvium)
+grades with some sand
+grades with some sand and gravel (coralline)
+Tan SILTY SAND (CORALLINE) with some
+gravel, very dense to medium dense (weathered
+sandstone)
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-75DG2
+4" Solid Stem Auger & PQ Coring
+140 lb. wt., 30 in. drop
+40
+45
+50
+55
+60
+65
+70
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Sample
+Moisture
+Content (%)
+2
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+(Continued from previous plate)
+October 21, 2015
+October 21, 2015
+D. Gremminger
+90.5 feet
+7274-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 2.2
+(Energy Transfer Ratio = 81%)
+GEOLABS, INC.
+Geotechnical Engineering
+SOUTH KING STUDENT HOUSING
+HONOLULU, OAHU, HAWAII
+BORING_LOG  7274-00.GPJ  GEOLABS.GDT  8/31/16
+8.8 ft.   10/21/2015 0916 HRS
+24
+45
+71
+SM
+MH
+52
+24
+15
+0
+24
+33
+90
+Sieve
+- #200 =
+20.1%
+Brown CLAYEY SILT with some sand and
+gravel, stiff to very stiff (older alluvium)
+Gray vugular BASALT, severely to closely
+fractured, moderately weathered, hard (basalt
+formation)
+ Boring terminated at 90.5 feet
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-75DG2
+4" Solid Stem Auger & PQ Coring
+140 lb. wt., 30 in. drop
+75
+80
+85
+90
+95
+100
+105
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Sample
+Moisture
+Content (%)
+2
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+(Continued from previous plate)
+October 21, 2015
+October 21, 2015
+D. Gremminger
+90.5 feet
+7274-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 2.3
+(Energy Transfer Ratio = 81%)
+GEOLABS, INC.
+Geotechnical Engineering
+SOUTH KING STUDENT HOUSING
+HONOLULU, OAHU, HAWAII
+BORING_LOG  7274-00.GPJ  GEOLABS.GDT  8/31/16
+8.8 ft.   10/21/2015 0916 HRS
+36
+23
+17
+19
+48
+20
+44
+81
+96
+64
+96
+GW
+MH
+MH
+17
+71
+0
+0
+45/0"
+62
+51
+56
+93
+42
+12
+31
+88
+25
+33
+0
+3-inch ASPHALTIC CONCRETE
+Grayish brown SANDY GRAVEL (BASALTIC),
+moist (base course)
+Brown CLAYEY SILT with some sand and
+gravel, very stiff, moist (fill)
+Tan cemented CORAL, severely to closely
+fractured, moderately to highly weathered, hard
+to medium hard (coral formation)
+grades to severely fractured
+Brown CLAYEY SILT with a little sand and
+gravel, stiff (older alluvium)
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-75DG2
+4" Solid Stem Auger & PQ Coring
+140 lb. wt., 30 in. drop
+5
+10
+15
+20
+25
+30
+35
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation (feet ): 8 *
+Sample
+Moisture
+Content (%)
+3
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+October 26, 2015
+October 26, 2015
+D. Gremminger
+80.5 feet
+7274-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 3.1
+(Energy Transfer Ratio = 81%)
+GEOLABS, INC.
+Geotechnical Engineering
+SOUTH KING STUDENT HOUSING
+HONOLULU, OAHU, HAWAII
+BORING_LOG  7274-00.GPJ  GEOLABS.GDT  8/31/16
+6.7 ft.   10/26/2015 0848 HRS
+49
+45
+67
+69
+40
+27
+54
+73
+59
+79
+75
+MH
+MH
+MH
+2.5
+4.5
+3.0
+1.5
+23
+32
+32
+25
+23
+9
+12
+0
+0
+0
+0
+0
+0
+0
+LL=133
+PI=79
+TXUU
+Su=2.0 ksf
+grades to very stiff
+Brown with gray mottling CLAYEY SILT, hard to
+very stiff (older alluvium)
+grades with some sand
+grades with some sand and gravel (coralline),
+medium stiff
+Brown with orange mottling CLAYEY SILT, stiff
+(older alluvium)
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-75DG2
+4" Solid Stem Auger & PQ Coring
+140 lb. wt., 30 in. drop
+40
+45
+50
+55
+60
+65
+70
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Sample
+Moisture
+Content (%)
+3
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+(Continued from previous plate)
+October 26, 2015
+October 26, 2015
+D. Gremminger
+80.5 feet
+7274-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 3.2
+(Energy Transfer Ratio = 81%)
+GEOLABS, INC.
+Geotechnical Engineering
+SOUTH KING STUDENT HOUSING
+HONOLULU, OAHU, HAWAII
+BORING_LOG  7274-00.GPJ  GEOLABS.GDT  8/31/16
+6.7 ft.   10/26/2015 0848 HRS
+30
+7
+MH
+0
+55
+41
+60/5"
+29
+67
+UC=
+6540 psi
+grades with gravel and cobbles (basaltic), hard
+Gray vugular BASALT, severely to moderately
+fractured, moderately weathered, hard (basalt
+formation)
+ Boring terminated at 80.5 feet
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-75DG2
+4" Solid Stem Auger & PQ Coring
+140 lb. wt., 30 in. drop
+75
+80
+85
+90
+95
+100
+105
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Sample
+Moisture
+Content (%)
+3
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+(Continued from previous plate)
+October 26, 2015
+October 26, 2015
+D. Gremminger
+80.5 feet
+7274-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 3.3
+(Energy Transfer Ratio = 81%)
+GEOLABS, INC.
+Geotechnical Engineering
+SOUTH KING STUDENT HOUSING
+HONOLULU, OAHU, HAWAII
+BORING_LOG  7274-00.GPJ  GEOLABS.GDT  8/31/16
+6.7 ft.   10/26/2015 0848 HRS
+16
+14
+11
+13
+47
+80
+94
+76
+GW
+MH
+SM
+SM
+MH
+0
+>4.5
+69
+50
+83
+2
+2
+25
+33
+0
+0
+67
+0
+TXUU
+Su=1.3 ksf
+4-inch ASPHALTIC CONCRETE
+Grayish brown SANDY GRAVEL (BASALTIC)
+with some silt, moist (base course)
+Brown CLAYEY SILT with some sand and gravel
+(basaltic), hard, moist (fill)
+Tan SILTY SAND (CORALLINE) with some clay
+and gravel (coralline), very dense, moist (coral
+formation)
+VOID
+Grayish tan SILTY SAND (CORALLINE) with a
+little gravel (coralline), very loose (weathered
+coral)
+Tan CORAL, severely fractured, highly to
+moderately weathered, medium hard (coral
+formation)
+VOID
+Brown CLAYEY SILT with a little sand, hard
+(older alluvium)
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-75DG2
+4" Solid Stem Auger & PQ Coring
+140 lb. wt., 30 in. drop
+5
+10
+15
+20
+25
+30
+35
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation (feet ): 9.5 *
+Sample
+Moisture
+Content (%)
+4
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+October 19, 2015
+October 20, 2015
+D. Gremminger
+100.5 feet
+7274-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 4.1
+(Energy Transfer Ratio = 81%)
+GEOLABS, INC.
+Geotechnical Engineering
+SOUTH KING STUDENT HOUSING
+HONOLULU, OAHU, HAWAII
+BORING_LOG  7274-00.GPJ  GEOLABS.GDT  8/31/16
+8.5 ft.   10/19/2015 0832 HRS
+8.8 ft.   10/20/2015 0758 HRS
+55
+55
+45
+47
+57
+44
+59
+69
+72
+77
+MH
+MH
+2.5
+>4.5
+>4.5
+11
+23
+28
+38
+15
+33
+19
+0
+0
+0
+0
+0
+0
+0
+LL=59
+PI=22
+LL=74
+PI=32
+grades to stiff
+grades to very stiff
+Gray CLAYEY SILT with a little sand, hard (older
+alluvium)
+grades to brown
+grades with a little gravel and cobbles (basaltic),
+very stiff
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-75DG2
+4" Solid Stem Auger & PQ Coring
+140 lb. wt., 30 in. drop
+40
+45
+50
+55
+60
+65
+70
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Sample
+Moisture
+Content (%)
+4
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+(Continued from previous plate)
+October 19, 2015
+October 20, 2015
+D. Gremminger
+100.5 feet
+7274-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 4.2
+(Energy Transfer Ratio = 81%)
+GEOLABS, INC.
+Geotechnical Engineering
+SOUTH KING STUDENT HOUSING
+HONOLULU, OAHU, HAWAII
+BORING_LOG  7274-00.GPJ  GEOLABS.GDT  8/31/16
+8.5 ft.   10/19/2015 0832 HRS
+8.8 ft.   10/20/2015 0758 HRS
+75
+MH
+ML
+MH
+0
+6
+0
+0
+25
+19
+17
+7
+grades with a little gravel (coralline)
+Possible VOID OR VERY SOFT SOILS
+Reddish brown SANDY SILT with some clay and
+angular gravel (tuff), medium stiff (weathered
+volcanic tuff)
+Tan CLAYEY SILT with some sand and gravel
+(coralline), soft (volcanic ash)
+ Boring terminated at 100.5 feet
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-75DG2
+4" Solid Stem Auger & PQ Coring
+140 lb. wt., 30 in. drop
+75
+80
+85
+90
+95
+100
+105
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Sample
+Moisture
+Content (%)
+4
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+(Continued from previous plate)
+October 19, 2015
+October 20, 2015
+D. Gremminger
+100.5 feet
+7274-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 4.3
+(Energy Transfer Ratio = 81%)
+GEOLABS, INC.
+Geotechnical Engineering
+SOUTH KING STUDENT HOUSING
+HONOLULU, OAHU, HAWAII
+BORING_LOG  7274-00.GPJ  GEOLABS.GDT  8/31/16
+8.5 ft.   10/19/2015 0832 HRS
+8.8 ft.   10/20/2015 0758 HRS
+32
+17
+16
+16
+13
+20
+55
+46
+76
+79
+122
+77
+GW-
+GM
+MH
+MH
+0
+0
+0
+2.0
+2.5
+10
+52
+65/4"
+16
+63
+31
+17
+19
+0
+26
+0
+0
+0
+3-inch ASPHALTIC CONCRETE
+Grayish brown SANDY GRAVEL (BASALTIC)
+with a little silt, medium dense, moist (base
+course)
+Brown CLAYEY SILT with a little sand and
+gravel, hard, moist
+Tan CORAL, severely to closely fractured,
+moderately to highly weathered, hard to medium
+hard (coral formation)
+Brown CLAYEY SILT with some fine sand, very
+stiff (older alluvium)
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-75DG2
+4" Solid Stem Auger & PQ Coring
+140 lb. wt., 30 in. drop
+5
+10
+15
+20
+25
+30
+35
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation (feet ): 8.7 *
+Sample
+Moisture
+Content (%)
+5
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+October 22, 2015
+October 23, 2015
+D. Gremminger
+102 feet
+7274-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 5.1
+(Energy Transfer Ratio = 81%)
+GEOLABS, INC.
+Geotechnical Engineering
+SOUTH KING STUDENT HOUSING
+HONOLULU, OAHU, HAWAII
+BORING_LOG  7274-00.GPJ  GEOLABS.GDT  8/31/16
+7.5 ft.   10/22/2015 0929 HRS
+7.2 ft.   10/23/2015 0829 HRS
+48
+50
+35
+54
+67
+60
+57
+74
+95
+58
+69
+MH
+ML
+CH
+MH
+CH
+3.0
+4.0
+4.0
+24
+15
+26
+13
+21
+13
+38
+0
+0
+0
+0
+0
+0
+0
+TXUU
+Su=1.2 ksf
+Brown SANDY SILT with some clay and a little
+gravel, very stiff (older alluvium)
+Brown with gray mottling SILTY CLAY with a little
+sand, stiff (older alluvium)
+Brown CLAYEY SILT, hard to stiff (older
+alluvium)
+Brown with gray mottling SILTY CLAY, hard
+(older alluvium)
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-75DG2
+4" Solid Stem Auger & PQ Coring
+140 lb. wt., 30 in. drop
+40
+45
+50
+55
+60
+65
+70
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Sample
+Moisture
+Content (%)
+5
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+(Continued from previous plate)
+October 22, 2015
+October 23, 2015
+D. Gremminger
+102 feet
+7274-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 5.2
+(Energy Transfer Ratio = 81%)
+GEOLABS, INC.
+Geotechnical Engineering
+SOUTH KING STUDENT HOUSING
+HONOLULU, OAHU, HAWAII
+BORING_LOG  7274-00.GPJ  GEOLABS.GDT  8/31/16
+7.5 ft.   10/22/2015 0929 HRS
+7.2 ft.   10/23/2015 0829 HRS
+36
+27
+34
+12
+34
+CH
+GW-
+GM
+MH
+GW
+CL
+64
+68
+20
+8
+11
+18
+21
+19
+0
+0
+95
+77
+37
+10
+Sieve
+- #200 =
+10.9%
+Tan SANDY GRAVEL (CORALLINE) with a little
+silt, loose to medium dense (weathered
+sandstone)
+Brown CLAYEY SILT with a little sand and
+gravel, very stiff (older alluvium)
+Gray vugular BASALT, severely to moderately
+fractured, moderately weathered, hard (basalt
+formation)
+Brownish gray GRAVEL (BASALTIC) with traces
+of clayey sand, medium dense (clinker)
+Tan and brown SANDY CLAY with some gravel
+(coralline), very stiff (alluvium w/coral debris)
+ Boring terminated at 102 feet
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-75DG2
+4" Solid Stem Auger & PQ Coring
+140 lb. wt., 30 in. drop
+75
+80
+85
+90
+95
+100
+105
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Sample
+Moisture
+Content (%)
+5
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+(Continued from previous plate)
+October 22, 2015
+October 23, 2015
+D. Gremminger
+102 feet
+7274-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 5.3
+(Energy Transfer Ratio = 81%)
+GEOLABS, INC.
+Geotechnical Engineering
+SOUTH KING STUDENT HOUSING
+HONOLULU, OAHU, HAWAII
+BORING_LOG  7274-00.GPJ  GEOLABS.GDT  8/31/16
+7.5 ft.   10/22/2015 0929 HRS
+7.2 ft.   10/23/2015 0829 HRS
+APPENDIX B  
+W.O. 7274-00 
+GEOLABS, INC. 
+     Page B-1 
+Hawaii • California  
+A P P E N D I X   B 
+Seismic Shear Wave Velocity Test 
+Seismic shear wave velocity profiling of the subsurface materials at the project site 
+was performed using Seismic Cone Penetration Testing (SCPT) equipment. The purpose 
+of the seismic shear wave velocity profiling of the subsurface materials was to more 
+closely analyze the seismic design considerations for the project. Shear wave velocity 
+testing using seismic cone penetration test equipment was performed at a selected boring 
+location, designated as [B-5(SW)] on the Site Plan (Plate 2). The seismic shear wave 
+velocity profiling was performed to a depth of about 104 feet below the existing pavement 
+surface. 
+In order to conduct the seismic shear wave velocity test in the boring, the test 
+boring was advanced utilizing rotary coring methods to the maximum depth of the boring. 
+Log of the materials encountered in the boring are presented in the Logs of Borings in 
+Appendix A. After the boring was advanced to the maximum depth of the borehole, the 
+bored hole was backfilled with 0.25-inch diameter coated bentonite pellets. The temporary 
+casing from the coring operations was used as a tremie pipe to place the bentonite pellets 
+starting from the bottom and advancing upward. When the bentonite pellets are in contact 
+with the groundwater in the borehole, the pellets started to hydrate slowly. As the 
+bentonite pellets hydrate, they swell and soften. The probe was then pushed through the 
+softened bentonite extending to depth of about 150.5 feet below the existing pavement 
+surface using seismic piezocone testing equipment (SCPTU). 
+The seismic shear wave velocity test consists of hydraulically pushing a 10-ton 
+steel electronic subtraction cone with an apex angle of 60 degrees and a projected 
+surface area of 1.55 square inches (10 square centimeters) into the bored hole. The cone 
+carries a uniaxial horizontal accelerator geophone to detect the arrival of a shear wave 
+generated and propagated from the ground surface. The seismic measurements were 
+made when the SCPT had stopped and a shear wave was sent into the subsurface. A 
+shear wave was generated at the surface by striking a loaded plank with a switched 
+hammer. The propagation time of the wave from the hammer blow to the cone was 
+measured at each discrete depth interval. The vector difference of these depths divided 
+by the time difference for the shear wave to arrive at the various depths gave provided 
+the average shear wave velocity over the depth interval. 
+The seismic shear wave velocities measured and the weighted average seismic 
+shear wave velocity calculated for the top 100 feet of the soil profile at the boring location 
+are presented on Plates B-1.1 through B-2 in Appendix B. The weighted average shear 
+wave velocity was calculated based on the average shear wave velocity method 
+described in Section 1615.1.5 of the International Building Code (2006 Edition). 
+10
+52
+65/4"
+16
+63
+31
+17
+19
+2.0
+2.5
+GW-
+GM
+MH
+MH
+0
+26
+0
+0
+0
+750
+710
+2710
+1580
+3230
+1590
+1060
+3-inch ASPHALTIC CONCRETE
+Grayish brown SANDY GRAVEL (BASALTIC)
+with a little silt, medium dense, moist (base
+course)
+Brown CLAYEY SILT with a little sand and
+gravel, hard, moist
+Tan CORAL, severely to closely fractured,
+moderately to highly weathered, hard to medium
+hard (coral formation)
+Brown CLAYEY SILT with some fine sand, very
+stiff (older alluvium)
+Plate
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Drill Rig:
+Drilling Method:
+Driving Energy:
+October 22, 2015
+October 23, 2015
+D. Gremminger
+102 feet
+7274-00
+Water Level:
+Depth (feet)
+Pocket Pen.
+(tsf)
+SHEAR WAVE
+VELOCITY
+(feet/sec)
+Core
+Recovery (%)
+CME-75DG2
+4" Solid Stem Auger & PQ Coring
+140 lb. wt., 30 in. drop
+USCS
+5
+10
+15
+20
+25
+30
+35
+B - 1.1
+Approximate Ground Surface
+Elevation (feet ): 8.7 *
+Description
+Penetration
+Resistance
+(blows/foot)
+Sample
+Graphic
+1000
+2000
+3000
+4000
+Data Plot of
+Boring
+5
+SHEAR_WAVE_PLOT  7274-00.GPJ  GEOLABS.GDT  8/18/16
+7.5 ft.   10/22/2015 0929 HRS
+7.2 ft.   10/23/2015 0829 HRS
+GEOLABS, INC.
+Geotechnical Engineering
+SOUTH KING STUDENT HOUSING
+HONOLULU, OAHU, HAWAII
+24
+15
+26
+13
+21
+13
+38
+3.0
+4.0
+4.0
+MH
+ML
+CH
+MH
+CH
+0
+0
+0
+0
+0
+0
+0
+1180
+1050
+1130
+800
+830
+950
+1240
+Brown SANDY SILT with some clay and a little
+gravel, very stiff (older alluvium)
+Brown with gray mottling SILTY CLAY with a little
+sand, stiff (older alluvium)
+Brown CLAYEY SILT, hard to stiff (older
+alluvium)
+Brown with gray mottling SILTY CLAY, hard
+(older alluvium)
+Plate
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Drill Rig:
+Drilling Method:
+Driving Energy:
+October 22, 2015
+October 23, 2015
+D. Gremminger
+102 feet
+7274-00
+Water Level:
+Depth (feet)
+Pocket Pen.
+(tsf)
+SHEAR WAVE
+VELOCITY
+(feet/sec)
+Core
+Recovery (%)
+CME-75DG2
+4" Solid Stem Auger & PQ Coring
+140 lb. wt., 30 in. drop
+USCS
+40
+45
+50
+55
+60
+65
+70
+(Continued from previous plate)
+B - 1.2
+Description
+Penetration
+Resistance
+(blows/foot)
+Sample
+Graphic
+1000
+2000
+3000
+4000
+Data Plot of
+Boring
+5
+SHEAR_WAVE_PLOT  7274-00.GPJ  GEOLABS.GDT  8/18/16
+7.5 ft.   10/22/2015 0929 HRS
+7.2 ft.   10/23/2015 0829 HRS
+GEOLABS, INC.
+Geotechnical Engineering
+SOUTH KING STUDENT HOUSING
+HONOLULU, OAHU, HAWAII
+8
+11
+18
+21
+19
+CH
+GW-
+GM
+MH
+GW
+CL
+0
+0
+95
+77
+37
+10
+1780
+790
+3170
+1450
+2650
+2960
+1650
+2510
+Tan SANDY GRAVEL (CORALLINE) with a little
+silt, loose to medium dense (weathered
+sandstone)
+Brown CLAYEY SILT with a little sand and
+gravel, very stiff (older alluvium)
+Gray vugular BASALT, severely to moderately
+fractured, moderately weathered, hard (basalt
+formation)
+Brownish gray GRAVEL (BASALTIC) with traces
+of clayey sand, medium dense (clinker)
+Tan and brown SANDY CLAY with some gravel
+(coralline), very stiff (alluvium w/coral debris)
+ Boring terminated at 102 feet
+Plate
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Drill Rig:
+Drilling Method:
+Driving Energy:
+October 22, 2015
+October 23, 2015
+D. Gremminger
+102 feet
+7274-00
+Water Level:
+Depth (feet)
+Pocket Pen.
+(tsf)
+SHEAR WAVE
+VELOCITY
+(feet/sec)
+Core
+Recovery (%)
+CME-75DG2
+4" Solid Stem Auger & PQ Coring
+140 lb. wt., 30 in. drop
+USCS
+75
+80
+85
+90
+95
+100
+105
+(Continued from previous plate)
+B - 1.3
+Description
+Penetration
+Resistance
+(blows/foot)
+Sample
+Graphic
+1000
+2000
+3000
+4000
+Data Plot of
+Boring
+5
+SHEAR_WAVE_PLOT  7274-00.GPJ  GEOLABS.GDT  8/18/16
+7.5 ft.   10/22/2015 0929 HRS
+7.2 ft.   10/23/2015 0829 HRS
+GEOLABS, INC.
+Geotechnical Engineering
+SOUTH KING STUDENT HOUSING
+HONOLULU, OAHU, HAWAII
+SHEAR WAVE VELOCITY TEST RESULTS
+South King Student Housing
+Honolulu, Oahu, Hawaii
+Depth
+Depth
+Layer Thickness
+Wave Velocity
+Time
+(From)
+(To)
+(d i )
+(V si )
+(d i /V si )
+(feet)
+(feet)
+(feet)
+(feet/second)
+(milliseconds)
+0.0
+2.0
+2.0
+753
+2.70
+2.0
+5.1
+3.0
+714
+4.23
+5.1
+11.8
+6.7
+2,707
+2.48
+11.8
+18.7
+6.9
+1,580
+4.36
+18.7
+25.3
+6.6
+3,232
+2.04
+25.3
+28.6
+3.3
+1,590
+2.10
+28.6
+35.2
+6.6
+1,056
+6.21
+35.2
+41.7
+6.6
+1,183
+5.55
+41.7
+46.3
+4.6
+1,054
+4.33
+46.3
+50.8
+4.5
+1,132
+4.00
+50.8
+58.1
+7.3
+803
+9.03
+58.1
+61.3
+3.2
+828
+3.84
+61.3
+68.0
+6.8
+953
+7.09
+68.0
+71.2
+3.2
+1,235
+2.58
+71.2
+77.8
+6.6
+1,779
+3.69
+77.8
+81.1
+3.4
+786
+4.30
+81.1
+87.7
+6.6
+3,165
+2.07
+87.7
+91.0
+3.3
+1,446
+2.31
+91.0
+94.3
+3.2
+2,653
+1.21
+94.3
+97.6
+3.3
+2,958
+1.13
+97.6
+100.8
+3.2
+1,647
+1.95
+100.8
+104.2
+3.3
+2,513
+1.33
+TOTAL
+104.2
+78.55
+Standard Weighted Average
+1,679
+feet/second
+Computed Vs100' Using IBC Formula
+1,306
+feet/second
+W.O. 7274-00
+GEOLABS, INC.
+PLATE B-2
+Hawaii  California
+B-5 (SW)
+APPENDIX C  
+W.O. 7274-00 
+GEOLABS, INC. 
+     Page C-1 
+Hawaii • California  
+A P P E N D I X   C 
+Laboratory Tests 
+Moisture Content (ASTM D2216) and Unit Weight (ASTM D2937) determinations 
+were performed on selected samples as an aid in the classification and evaluation of soil 
+properties. The test results are presented on the Logs of Borings at the appropriate 
+sample depths. 
+Four one-inch ring swell tests were performed on relatively undisturbed samples 
+to evaluate the swelling potential of the near-surface soils. The test results are 
+summarized on Plate C-1. 
+Five Atterberg Limits tests (ASTM D4318) were performed on selected soil 
+samples to evaluate the liquid and plastic limits. The test results are summarized on the 
+Logs of Borings at the appropriate sample depths. Graphic presentations of the test 
+results are provided on Plate C-2. 
+Three Sieve Analysis tests (ASTM C117 & C136) were performed on selected soil 
+samples to evaluate the gradation characteristics of the soils and to aid in soil 
+classification. Graphic presentations of the test results are provided on Plate C-3. 
+Two Uniaxial Compressive Strength tests (ASTM D7012 Method C) were 
+performed on selected core samples to evaluate the unconfined compressive strength of 
+the basalt formation encountered. The test results are presented on Plate C-4. 
+Six Unconsolidated Undrained Triaxial Compression tests (ASTM D2850) were 
+performed on selected soil samples to evaluate the undrained shear strength of the 
+alluvial clay soils. The approximate in-situ effective overburden pressure was used as the 
+applied confining pressure for the relatively “undisturbed” soil sample. The test results 
+and the stress-strain curves are presented on Plates C-5 through C-10. 
+One set of Corrosion tests, including pH (Method 9045C), Minimum Resistivity (SM 
+2510B), Chloride Content (EPA 300.0), and Sulfate Content (EPA 300.0), were performed 
+by TestAmerica Laboratories, Inc. on a selected sample of the near-surface soils obtained 
+from our field exploration. The test results are summarized on Pate C-11.
+B-1
+1.0 - 2.5
+Brown clayey silt with a little sand and gravel
+77.6
+42.4
+32.6
+45.8
+1.0
+B-2
+1.0 - 2.5
+Brown clayey silt with a little sand and gravel
+63.8
+52.3
+39.9
+57.2
+0.0
+B-4
+1.0 - 2.5
+Brown clayey silt with some sand and gravel
+124.1
+17.0
+11.7
+23.0
+0.6
+B-5
+1.0 - 2.5
+Brown clayey silt with a little sand and gravel
+67.7
+46.5
+37.6
+54.0
+0.0
+Moisture Contents
+Location
+SUMMARY OF RING SWELL TESTS
+C - 1
+NOTE:
+Relatively Undisturbed
+Remolded
+Samples tested were either relatively undisturbed or remolded in 2.4-inch diameter by 1-inch high rings.
+They were air-dried overnight and then saturated for 24 hours under a surcharge pressure of 55 psf.
+Depth
+(feet)
+Soil Description
+(%)
+Initial
+Air-Dried
+Final
+Ring
+Swell
+(pcf)
+(%)
+(%)
+(%)
+Dry
+Density
+Plate
+W.O. 7274-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+SOUTH KING STUDENT HOUSING
+HONOLULU, OAHU, HAWAII
+G_RING_SWELL_TEST  7274-00.GPJ  GEOLABS.GDT  8/18/16
+0
+10
+20
+30
+40
+50
+60
+70
+80
+90
+100
+0
+20
+40
+60
+80
+100
+120
+PI
+Depth (ft)
+Sample
+LL
+PL
+Description
+65
+90
+133
+59
+74
+30.5-32.0
+60.5-62.0
+50.5-52.0
+35.5-37.0
+45.5-47.0
+ML or OL
+CL-ML
+CL or OL
+CH or OH
+36
+35
+54
+37
+42
+Brown clayey silt (MH) w/ a little sand
+Brown w/ gray mottling silty clay (CH) w/ some sand & gravel
+Brown w/ gray mottling clayey silt (MH) w/ some sand
+Brown clayey silt (MH) with a little sand
+Gray clayey silt (MH) w/ a little sand
+C - 2
+MH or OH
+29
+55
+79
+22
+32
+LIQUID LIMIT
+PLASTICITY INDEX
+B-1
+B-2
+B-3
+B-4
+B-4
+ATTERBERG LIMITS TEST RESULTS - ASTM D4318
+Plate
+W.O. 7274-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+SOUTH KING STUDENT HOUSING
+HONOLULU, OAHU, HAWAII
+G_ATTERBERG_PI-100_LL-120  7274-00.GPJ  GEOLABS.GDT  8/18/16
+0
+5
+10
+15
+20
+25
+30
+35
+40
+45
+50
+55
+60
+65
+70
+75
+80
+85
+90
+95
+100
+0.001
+0.01
+0.1
+1
+10
+100
+4.835
+1.743
+7.08
+C - 3
+coarse
+1
+1.5
+3
+2
+40
+Depth (ft)
+%Gravel
+40.3
+23.9
+51.2
+42.1
+55.9
+37.9
+%Sand
+COBBLES
+Sample
+D30 (mm)
+140
+20
+1.7
+120.9
+HYDROMETER
+3
+GRAIN SIZE IN MILLIMETERS
+PERCENT FINER BY WEIGHT
+100
+coarse
+1/2
+Sample
+0.279
+0.278
+0.837
+Cu
+GRAVEL
+U.S. SIEVE NUMBERS
+D10 (mm)
+16
+fine
+37.5
+25
+37.5
+Cc
+3/4
+fine
+SILT OR CLAY
+medium
+GRAIN SIZE DISTRIBUTION - ASTM C117 & C136
+SAND
+%Fine
+60
+4
+30
+200
+4
+6
+17.6
+20.1
+10.9
+Depth (ft)
+LL
+Tan silty sand (SM) with some gravel
+Tan silty sand (SM) with some gravel
+Tan sandy gravel (GW-GM) with a little silt
+810 14
+50
+U.S. SIEVE OPENING IN INCHES
+6
+D60 (mm)
+D100 (mm)
+B-1
+B-2
+B-5
+75.5-77.0
+70.5-72.0
+75.5-77.0
+75.5-77.0
+70.5-72.0
+75.5-77.0
+B-1
+B-2
+B-5
+3/8
+PL PI
+Description
+Plate
+W.O. 7274-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+SOUTH KING STUDENT HOUSING
+HONOLULU, OAHU, HAWAII
+G_GRAIN_SIZE_MOD  7274-00.GPJ  GEOLABS.GDT  8/18/16
+B-1
+95.5 - 100.5
+6.500
+3.250
+2.00
+176.3
+125,550
+15,130
+B-3
+75.9 - 80.5
+6.500
+3.250
+2.00
+157.0
+54,270
+6,540
+C - 4
+Depth
+Location
+Length
+Diameter
+Length/
+Diameter
+Ratio
+(feet)
+(inches)
+(inches)
+(pcf)
+(psi)
+Density
+Compressive
+Strength
+Load
+(lbs.)
+UNIAXIAL COMPRESSIVE STRENGTH TEST
+ASTM D7012 (METHOD C)
+Plate
+W.O. 7274-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+SOUTH KING STUDENT HOUSING
+HONOLULU, OAHU, HAWAII
+G_ROCK_UC_TEST_PORTRAIT  7274-00.GPJ  GEOLABS.GDT  8/18/16
+0
+0.5
+1.0
+1.5
+2.0
+2.5
+3.0
+3.5
+0
+4
+8
+12
+16
+20
+Max. Deviator Stress (ksf):
+Confining Stress (ksf):
+AXIAL STRAIN, %
+2.2
+3.2
+Dry Density (pcf)
+Moisture (%)
+Axial Strain at Failure (%)
+Strain Rate (% / minute)
+48.3
+72.7
+15.0
+Brown clayey silt with a little sand
+35.5 - 37.0 feet
+Description:
+Depth:
+B-1
+TRIAXIAL UU COMPRESSION TEST - ASTM D2850
+Location:
+Sample Diameter (inches)
+Sample Height (inches)
+DEVIATOR STRESS, ksf
+Test Date:
+5.171
+2.389
+1.05
+C - 5
+12/7/2015
+Plate
+W.O. 7274-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+SOUTH KING STUDENT HOUSING
+HONOLULU, OAHU, HAWAII
+G_TXUU  7274-00.GPJ  GEOLABS.GDT  8/31/16
+0
+0.5
+1.0
+1.5
+2.0
+2.5
+3.0
+3.5
+0
+4
+8
+12
+16
+Max. Deviator Stress (ksf):
+Confining Stress (ksf):
+AXIAL STRAIN, %
+2.6
+3.5
+Dry Density (pcf)
+Moisture (%)
+Axial Strain at Failure (%)
+Strain Rate (% / minute)
+51.0
+72.0
+15.0
+Brown clayey silt with a little sand
+45.5 - 47.0 feet
+Description:
+Depth:
+B-1
+TRIAXIAL UU COMPRESSION TEST - ASTM D2850
+Location:
+Sample Diameter (inches)
+Sample Height (inches)
+DEVIATOR STRESS, ksf
+Test Date:
+5.225
+2.416
+1.02
+C - 6
+12/14/2015
+Plate
+W.O. 7274-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+SOUTH KING STUDENT HOUSING
+HONOLULU, OAHU, HAWAII
+G_TXUU  7274-00.GPJ  GEOLABS.GDT  8/31/16
+0
+0.5
+1.0
+1.5
+2.0
+2.5
+3.0
+3.5
+4.0
+4.5
+5.0
+5.5
+0
+4
+8
+12
+16
+Max. Deviator Stress (ksf):
+Confining Stress (ksf):
+AXIAL STRAIN, %
+3.0
+5.3
+Dry Density (pcf)
+Moisture (%)
+Axial Strain at Failure (%)
+Strain Rate (% / minute)
+42.3
+77.1
+15.0
+Brown with gray mottling silty clay with traces of sand
+55.5 - 57.0 feet
+Description:
+Depth:
+B-2
+TRIAXIAL UU COMPRESSION TEST - ASTM D2850
+Location:
+Sample Diameter (inches)
+Sample Height (inches)
+DEVIATOR STRESS, ksf
+Test Date:
+5.491
+2.409
+1.02
+C - 7
+12/14/2015
+Plate
+W.O. 7274-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+SOUTH KING STUDENT HOUSING
+HONOLULU, OAHU, HAWAII
+G_TXUU  7274-00.GPJ  GEOLABS.GDT  8/31/16
+0
+0.5
+1.0
+1.5
+2.0
+2.5
+3.0
+3.5
+4.0
+4.5
+0
+4
+8
+12
+16
+20
+Max. Deviator Stress (ksf):
+Confining Stress (ksf):
+AXIAL STRAIN, %
+3.0
+4.0
+Dry Density (pcf)
+Moisture (%)
+Axial Strain at Failure (%)
+Strain Rate (% / minute)
+40.4
+79.2
+15.0
+Brown with gray mottling clayey silt with some sand
+55.5 - 57.0 feet
+Description:
+Depth:
+B-3
+TRIAXIAL UU COMPRESSION TEST - ASTM D2850
+Location:
+Sample Diameter (inches)
+Sample Height (inches)
+DEVIATOR STRESS, ksf
+Test Date:
+5.441
+2.412
+1.03
+C - 8
+12/14/2015
+Plate
+W.O. 7274-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+SOUTH KING STUDENT HOUSING
+HONOLULU, OAHU, HAWAII
+G_TXUU  7274-00.GPJ  GEOLABS.GDT  8/31/16
+0
+0.2
+0.4
+0.6
+0.8
+1.0
+1.2
+1.4
+1.6
+1.8
+2.0
+2.2
+2.4
+2.6
+2.8
+0
+2
+4
+6
+8
+10
+12
+14
+16
+Max. Deviator Stress (ksf):
+Confining Stress (ksf):
+AXIAL STRAIN, %
+1.3
+2.7
+Dry Density (pcf)
+Moisture (%)
+Axial Strain at Failure (%)
+Strain Rate (% / minute)
+46.9
+75.8
+12.8
+Brown clayey silt with a little sand
+30.5 - 32.0 feet
+Description:
+Depth:
+B-4
+TRIAXIAL UU COMPRESSION TEST - ASTM D2850
+Location:
+Sample Diameter (inches)
+Sample Height (inches)
+DEVIATOR STRESS, ksf
+Test Date:
+5.286
+2.400
+1.02
+C - 9
+11/17/2015
+Plate
+W.O. 7274-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+SOUTH KING STUDENT HOUSING
+HONOLULU, OAHU, HAWAII
+G_TXUU  7274-00.GPJ  GEOLABS.GDT  8/31/16
+0
+0.2
+0.4
+0.6
+0.8
+1.0
+1.2
+1.4
+1.6
+1.8
+2.0
+2.2
+2.4
+2.6
+0
+4
+8
+12
+16
+Max. Deviator Stress (ksf):
+Confining Stress (ksf):
+AXIAL STRAIN, %
+3.3
+2.4
+Dry Density (pcf)
+Moisture (%)
+Axial Strain at Failure (%)
+Strain Rate (% / minute)
+56.6
+69.0
+15.0
+Brown with gray mottling silty clay
+65.5 - 67.0 feet
+Description:
+Depth:
+B-5
+TRIAXIAL UU COMPRESSION TEST - ASTM D2850
+Location:
+Sample Diameter (inches)
+Sample Height (inches)
+DEVIATOR STRESS, ksf
+Test Date:
+5.184
+2.410
+1.02
+C - 10
+12/17/2015
+Plate
+W.O. 7274-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+SOUTH KING STUDENT HOUSING
+HONOLULU, OAHU, HAWAII
+G_TXUU  7274-00.GPJ  GEOLABS.GDT  8/31/16
+B-1
+10.0 - 11.5
+9.17
+1,100
+61
+24
+SUMMARY OF CORROSIVITY TESTS
+C - 11
+(ohm-cm)
+(mg/kg)
+(mg/kg)
+SM 2510B
+Minimum Resistivity
+pH Value
+EPA 300.0
+Minimum Resistivity
+ASTM G57
+pH Value
+Method 9045C
+ASTM G51
+TEST METHODS (by TestAmerica Laboratories, Inc.)
+TEST METHODS (by Geolabs, Inc.)*
+pH Value
+Minimum Resistivity Chloride Content
+Sulfate Content
+ND: Not Detected Within Reporting Limits
+Sulfate Content
+EPA 300.0
+Location
+Depth
+(feet)
+Sulfate Content
+N/A
+Chloride Content
+Chloride Content
+N/A
+Plate
+W.O. 7274-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+SOUTH KING STUDENT HOUSING
+HONOLULU, OAHU, HAWAII
+G_SUMMARY_OF_CORROSIVITY_TESTS  7274-00.GPJ  GEOLABS.GDT  8/31/16
+APPENDIX D  
+SOUTH KING STUDENT HOUSING 
+HONOLULU, OAHU, HAWAII 
+W.O. 7274‐00 
+GEOLABS, INC. 
+PLATE D‐1 
+Hawaii • California 
+B‐1     11.5’ TO 100.5’ 
+SOUTH KING STUDENT HOUSING 
+HONOLULU, OAHU, HAWAII 
+W.O. 7274‐00 
+GEOLABS, INC. 
+PLATE D‐2 
+Hawaii • California 
+B‐2     11.5’ TO 90.5’ 
+B‐3     11.5’ TO 80.5’ 
+SOUTH KING STUDENT HOUSING 
+HONOLULU, OAHU, HAWAII 
+W.O. 7274‐00 
+GEOLABS, INC. 
+PLATE D‐3 
+Hawaii • California 
+B‐4     11.5’ TO 100.5’ 
+B‐5     17.0’ TO 100.5’ 

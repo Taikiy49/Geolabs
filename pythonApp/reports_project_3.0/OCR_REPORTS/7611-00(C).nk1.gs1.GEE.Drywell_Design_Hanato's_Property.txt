@@ -1,0 +1,2065 @@
+GEOTECHNICAL ENGINEERING EXPLORATION 
+DRYWELL DESIGN FOR HANATO’S PROPERTY 
+GENERAL CIVIL ENGINEERING SERVICES STATEWIDE 
+PROJECT NO. HWY‐DS‐CE‐2017‐01 
+ISLAND OF HAWAII 
+W.O. 7611‐00(C)     SEPTEMBER 18, 2020 
+Prepared for 
+WSP 
+and 
+STATE OF HAWAII 
+DEPARTMENT OF TRANSPORTATION 
+HIGHWAYS DIVISION 
+GEOLABS, INC. 
+Geotechnical Engineering and Drilling Services 
+GEOTECHNICAL ENGINEERING EXPLORATION
+DRYWELL DESIGN FOR HANATO’S PROPERTY
+GENERAL CIVIL ENGINEERING SERVICES STATEWIDE
+PROJECT NO. HWY-DS-CE-2017-01
+ISLAND OF HAWAII
+W.O. 7611-00(C) SEPTEMBER 18, 2020
+Prepared for
+WSP
+and
+STATE OF HAWAII
+DEPARTMENT OF TRANSPORTATION
+HIGHWAYS DIVISION
+LICENSED
+PROFESSIONAL
+ENGINEER
+No. 5635-C
+THIS WORK WAS PREPARED BY
+ME OR UNDER MY SUPERVISION.
+SIGNATURE EXPIRATION DATE
+OF THE LICENSE
+GEOLABS, INC.
+Geotechnical Engineering and Drilling Services
+94-429 Koaki Street, Suite 200 * Waipahu, HI 96797
+Hawaii ¢ California
+GEOLABS, INC.
+Geotechnical Engineering and Drilling Services
+September 18, 2020
+W.O. 7611-00(C)
+Mr. Randall Urasaki
+WSP USA
+American Savings Bank Tower
+1001 Bishop Street, Suite 2400
+Honolulu, H! 96813
+Dear Mr. Urasaki:
+Geolabs, Inc. is pleased to submit our report entitled "Geotechnical Engineering
+Exploration, Drywell Design for Hanato’s Property, General Civil Engineering Services
+Statewide, Project No. HWY-DS-CE-2017-01, Island of Hawaii,” prepared for the design
+of the project.
+Our work was performed in general accordance with the scope of services
+outlined in our revised fee proposal dated June 6, 2019.
+Please note that the soil and rock samples recovered during our field exploration
+(remaining after testing) will be stored for a period of two months from the date of this
+report. The samples will be discarded after that date unless arrangements are made for
+a longer sample storage period. Please contact our office for alternative sample storage
+requirements, if appropriate.
+Detailed discussion and specific design recommendations are contained in the
+body of this report. If there is any point that is unclear, please contact our office.
+Very truly yours,
+GEOLABS, INC.
+Ln Lr
+Gerald Y. Seki, P.E.
+Vice President
+GS:NK:sh
+94-429 Koaki Street, Suite 200 ¢ Waipahu, Hawaii 96797
+Telephone: (808) 841-5064 ° E-mail: hawaii@geolabs.net
+Hawaii ¢ California
+W.O. 7611-00(C) 
+GEOLABS, INC. 
+Page i 
+Hawaii • California 
+GEOTECHNICAL ENGINEERING EXPLORATION 
+DRYWELL DESIGN FOR HANATO’S PROPERTY 
+GENERAL CIVIL ENGINEERING SERVICES STATEWIDE 
+PROJECT NO. HWY-DS-CE-2017-01 
+ISLAND OF HAWAII 
+W.O. 7611-00(C)     SEPTEMBER 18, 2020 
+TABLE OF CONTENTS 
+                                                                                                                               Page 
+SUMMARY OF FINDINGS AND RECOMMENDATIONS .............................................. iii 
+1. 
+GENERAL ............................................................................................................ 1 
+1.1 
+Introduction ................................................................................................ 1 
+1.2 
+Project Considerations ............................................................................... 1 
+1.3 
+Purpose and Scope ................................................................................... 1 
+2. 
+SITE CHARACTERIZATION ................................................................................ 4 
+2.1 
+Regional Geology ...................................................................................... 4 
+2.2 
+Site Description .......................................................................................... 4 
+2.3 
+Subsurface Conditions ............................................................................... 5 
+3. 
+DISCUSSION AND RECOMMENDATIONS ........................................................ 7 
+3.1 
+Percolation Test Methodology ................................................................... 7 
+3.2 
+Permeability Results .................................................................................. 8 
+3.3 
+Preliminary Well Capacity .......................................................................... 8 
+3.4 
+Storm Water Treatment ............................................................................. 9 
+3.5 
+Design Review ........................................................................................... 9 
+3.6 
+Construction Monitoring ........................................................................... 10 
+4. 
+LIMITATIONS ..................................................................................................... 11 
+CLOSURE ..................................................................................................................... 13 
+PLATES 
+Project Location Map ................................................................................... Plate 1 
+Site Plan ...................................................................................................... Plate 2 
+APPENDIX A 
+Field Exploration ....................................................................... Pages A-1 and A-2 
+Soil Log Legend ..................................................................................... Plate A-0.1 
+Soil Classification Log Key .................................................................... Plate A-0.2 
+Rock Log Legend .................................................................................. Plate A-0.3 
+Logs of Borings ................................................................... Plates A-1.1 thru A-2.2 
+TABLE OF CONTENTS  
+Page 
+W.O. 7611-00(C) 
+GEOLABS, INC. 
+Page ii 
+Hawaii • California 
+APPENDIX B 
+Laboratory Tests ...................................................................................... Page B-1 
+Laboratory Test Data ................................................................ Plates B-1 and B-2 
+APPENDIX C 
+Photograph of Core Samples ................................................... Plates C-1 thru C-4 
+APPENDIX D 
+Field Percolation Test Data and Calculations ........................... Plates D-1 thru D-4 
+W.O. 7611-00(C) 
+GEOLABS, INC. 
+Page iii 
+Hawaii • California 
+GEOTECHNICAL ENGINEERING EXPLORATION 
+DRYWELL DESIGN FOR HANATO’S PROPERTY 
+GENERAL CIVIL ENGINEERING SERVICES STATEWIDE 
+PROJECT NO. HWY-DS-CE-2017-01 
+ISLAND OF HAWAII 
+W.O. 7611-00(C)     SEPTEMBER 18, 2020 
+SUMMARY OF FINDINGS AND RECOMMENDATIONS 
+Our field exploration generally encountered a surficial fill layer approximately 4 to 
+4.5 feet thick underlain by alternating layers of basalt formation and clinker extending to 
+the maximum depth explored of about 40 feet below the existing ground surface. The 
+basalt formation generally graded from severely to slightly fractured, moderately 
+weathered to unweathered, and medium to very hard. The clinker generally consisted of 
+silty gravel. We did not encounter groundwater in the borings at the time of our field 
+exploration. However, it should be noted that groundwater levels are subject to change 
+due to rainfall, time of year, seasonal precipitation, surface water runoff, and other 
+factors. 
+Constant head percolation tests were performed in the borings drilled at the 
+project site to assess the average permeability within an open interval of subsurface 
+material. In both borings, constant head percolation tests were performed at open 
+rock/clinker depth intervals of about 10 to 20 feet and 20 to 40 feet below the existing 
+ground surface. It should be noted that after approximately 5 minutes of continual 
+pumping, a hydrostatic head could not be established in our constant head tests. 
+Therefore, the k-values for the selected test intervals may be greater than the values 
+presented herein. Due to site and equipment constraints, the pumping capacity could 
+not be increased. 
+Based on the information provided, we understand that the installation of two 
+30-inch diameter drywells is being considered for the project. The first drywell is 
+planned at the southwest end of the intersection of Hawaii Belt Road and Mamalahoa 
+Highway. The second drywell is planned further northwest along Hawaii Belt Road near 
+the southern boundary of the Hanato property. For the first and second drywells, we 
+recommend that the drywells be about 40 and 60 feet deep with the top 10 and 30 feet 
+of the well cased, respectively. The deeper casing in the second drywell is to reduce the 
+potential for stormwater flowing out of the existing slope below the roadway.  
+Based on our analysis, the estimated disposal rate of each drywell is 19 cubic 
+feet per second. The estimated capacity does not account for head losses through well 
+screens or gravel pack and do not allow for long term clogging. A suitable factor of 
+safety should be included in the drywell design. Drywells should have a minimum 
+spacing of 15 feet on-center.  
+SUMMARY OF FINDINGS AND RECOMMENDATIONS 
+W.O. 7611-00(C) 
+GEOLABS, INC. 
+Page iv 
+Hawaii • California 
+The text of this report should be referred to for detailed discussion and specific 
+design recommendations. 
+END OF SUMMARY OF FINDINGS AND RECOMMENDATIONS 
+W.O. 7611-00(C) 
+GEOLABS, INC. 
+Page 1 
+Hawaii • California 
+SECTION 1.  GENERAL 
+1.1 
+Introduction 
+This report presents the results of our geotechnical engineering exploration 
+conducted for the Drywell Design for Hanato’s Property project near the intersection of 
+Kuakini Highway and Mamalahoa Highway on the Island of Hawaii. The project location 
+and general vicinity are shown on the Project Location Map, Plate 1. 
+This report summarizes the findings and geotechnical recommendations resulting 
+from our field exploration, laboratory testing, and engineering analyses for the project. 
+These findings and geotechnical recommendations are intended for the design of 
+drywells only. The findings and recommendations presented herein are subject to the 
+limitations noted at the end of this report. 
+1.2 
+Project Considerations 
+The project site is located near the intersection of Hawaii Belt Road and 
+Mamalahoa Highway on the Island of Hawaii. We understand that due to excessive 
+stormwater runoff entering the Hanato Property, it is desired to install drywells on 
+Hawaii Belt Road and Mamalahoa Highway to drain the stormwater runoff. A layout of 
+the project site and the intersection of the two roadways are presented on the Site Plan, 
+Plate 2.  
+In order to estimate the disposal capacity of the proposed drywell system 
+planned at the site, in-situ permeability testing was conducted within two borings at 
+depth intervals of about 10 to 20 feet, and 20 to 40 feet below the existing ground 
+surface. One boring was drilled on the western shoulder of Hawaii Belt Road near 
+where stormwater runoff has been observed to flow into Hanato’s property. An 
+additional boring was drilled within Hanato’s property on an existing asphaltic concrete 
+road below Hawaii Belt Road. The approximate boring locations are presented on the 
+Site Plan, Plate 2. 
+1.3 
+Purpose and Scope 
+The purpose of our geotechnical engineering exploration was to obtain an 
+overview of the surface and subsurface conditions at the drywell sites to formulate a 
+SECTION 1. GENERAL 
+W.O. 7611-00(C) 
+GEOLABS, INC. 
+Page 2 
+Hawaii • California 
+summary of the soil/rock conditions for the drywell design. The work was performed in 
+general accordance with the scope of services outlined in our revised fee proposal 
+dated June 6, 2019. The scope of work for this exploration included the following tasks 
+and work efforts: 
+1. 
+Research and review of available in-house soil and geologic information 
+related to the project area. 
+2. 
+Boring stakeout and coordination of underground utility toning and site 
+access by our engineer.  
+3. 
+Application of the necessary excavation permits and utility clearance from 
+the One Call System, State of Hawaii DOT, and various utility companies 
+prior to drill crew mobilization.  
+4. 
+Mobilization and demobilization of a truck-mounted drill rig and water truck 
+on the Island of Hawaii, and two operators from Honolulu to the project 
+site and back. 
+5. 
+Drilling and sampling of two borings to a depth of approximately 40 feet 
+below the existing ground surface.  
+6. 
+Coordination of the field exploration and logging of the borings by our 
+geologist. 
+7. 
+Performance of in-situ permeability tests between about 10 to 20 feet and 
+20 to 40 feet deep in each boring to evaluate the subsurface material 
+infiltration characteristics.  
+8. 
+Laboratory testing of selected samples obtained during the field 
+exploration as an aid in classifying the materials and evaluating their 
+engineering properties. 
+9. 
+Analysis of the field and laboratory data to formulate preliminary 
+recommendations for the design of the proposed drywell systems planned 
+for the project.  
+10. 
+Preparation of this report summarizing our work on the project and 
+presenting our findings and recommendations. 
+11. 
+Coordination of our overall work on the project by our senior engineer. 
+12. 
+Quality assurance of our work and client/design team consultation by our 
+principal engineer. 
+13. 
+Miscellaneous work efforts, such as drafting, word processing, and clerical 
+support. 
+SECTION 1. GENERAL 
+W.O. 7611-00(C) 
+GEOLABS, INC. 
+Page 3 
+Hawaii • California 
+Detailed descriptions of our field exploration methodology and the Logs of 
+Borings are presented in Appendix A. Results of the laboratory tests performed on 
+selected soil samples are presented in Appendix B. Photographs of core samples 
+recovered from our field exploration are provided in Appendix C. The results of our field 
+percolation tests are presented in Appendix D. 
+END OF GENERAL 
+W.O. 7611-00(C) 
+GEOLABS, INC. 
+Page 4 
+Hawaii • California 
+SECTION 2.  SITE CHARACTERIZATION 
+2.1 
+Regional Geology 
+The Island of Hawaii is the largest island in the Hawaiian Archipelago and covers 
+an area of approximately 4,000 square miles. The island was formed by the activity of 
+the following five shield volcanoes: Kohala (long extinct), Mauna Kea (activity during 
+recent geologic time), Hualalai (last erupted in 1801 – 1803), Mauna Loa (active), and 
+Kilauea (active). 
+The project site is situated on the western flank of Mauna Loa Mountain, which 
+makes up the south-central portion of the island. The lava formation encountered at the 
+site appears to be of both a'a and pahoehoe flows, which spread and ponded as they 
+approached the ocean. A’a lava is typically characterized by a porous, rough, and 
+irregular flow surface resembling a jagged accumulation of rock fragments including 
+cobbles and boulders. Pahoehoe is characterized by a smooth, rope-like or billowy 
+surface and an internal structure of vesicular (porous) rock. 
+Cavities are commonly encountered in basaltic lavas, especially pahoehoe type 
+lava. Cavities form when lavas are still in a molten state, and they represent both lava 
+tubes (intra-flow cavities) and blisters and pockets (inter-flow cavities). Lava tubes form 
+when molten lava drains from the cooling flow, leaving a hollow tube-like structure which 
+may extend for a large longitudinal distance along the flow. Blisters and pockets 
+generally are smaller in horizontal extent. 
+Basalt is a relatively permeable rock and can transmit water quite readily in both 
+the horizontal and vertical directions. In general, water is transmitted through the porous 
+rock matrix, along joints, fractures and inter-flow contacts, cavities, and along clinker 
+layers. Clinker and cavities serve as the primary water transmission features because of 
+their high permeability. 
+2.2 
+Site Description 
+The project site is located near the intersection of Hawaii Belt Road and 
+Mamalahoa Highway on the Island of Hawaii. The Hanato Property is to the west of the 
+intersection, adjacent to Hawaii Belt Road, and is lower in elevation than the roadway. 
+SECTION 2. SITE CHARACTERIZATION 
+W.O. 7611-00(C) 
+GEOLABS, INC. 
+Page 5 
+Hawaii • California 
+Based on the information provided, we understand that most of the storm runoff water 
+travels down Mamalahoa Highway from the north and around the bend that merges 
+onto Hawaii Belt Road. Much of the runoff water then travels down into Hanato’s 
+property near the southeastern edge of the guardrail along Hawaii Belt Road. 
+Based on the topographic survey map provided, we understand that the section 
+of Hawaii Belt Road adjacent to Hanato’s property ranges in elevations from about +490 
+to about +520 feet Mean Sea Level (MSL). A relatively steep slope separates 
+Hawaii Belt Road from Hanato’s property, with an average slope inclination of about 
+one-and-a-half horizontal to one vertical (1.5H:1V). The average slope height measures 
+about 30 feet.  
+2.3 
+Subsurface Conditions  
+We explored the subsurface conditions at the project site by drilling and sampling 
+two borings, designated as Boring Nos. 1 and 2, extending to a depth of about 40 feet 
+below the existing ground surface. The approximate boring locations are shown on the 
+Site Plan, Plate 2.  
+Our borings generally encountered a surficial fill layer, consisting of medium to 
+very dense silty sand and gravel, extending to depths of about 4 to 4.5 feet below the 
+existing ground surface. Boring No. 1 on Hawaii Belt Road also encountered a 
+pavement structure consisting of 3 inches of asphaltic concrete. Beneath the fill, 
+alternating layers of basalt formation and clinker were encountered extending to the 
+maximum depth explored of about 40 feet below the existing ground surface. The basalt 
+formation generally graded from severely to slightly fractured, moderately weathered to 
+unweathered, and medium to very hard. The clinker generally consisted of silty gravel. It 
+should be noted that a moderately fractured, slightly to moderately weathered, and soft 
+to medium hard welded clinker layer was encountered from about 31 to 40 feet deep in 
+Boring No. 1.  
+We did not encounter groundwater in the borings at the time of our field 
+exploration. However, it should be noted that groundwater levels are subject to change 
+SECTION 2. SITE CHARACTERIZATION 
+W.O. 7611-00(C) 
+GEOLABS, INC. 
+Page 6 
+Hawaii • California 
+due to rainfall, time of year, seasonal precipitation, surface water runoff, and other 
+factors. 
+Detailed descriptions of the field exploration methodology are presented in 
+Appendix A. Descriptions and graphic representations of the materials encountered in 
+the borings are presented on the Logs of Borings in Appendix A. Results of the 
+laboratory tests performed on selected soil samples are presented in Appendix B. 
+Photographs of the core samples recovered from our field exploration are provided in 
+Appendix C. 
+END OF SITE CHARACTERIZATION 
+W.O. 7611-00(C) 
+GEOLABS, INC. 
+Page 7 
+Hawaii • California 
+SECTION 3.  DISCUSSION AND RECOMMENDATIONS 
+Our field exploration generally encountered a surficial fill layer approximately 4 to 
+4.5 feet thick underlain by alternating layers of basalt formation and clinker extending to 
+the maximum depth explored of about 40 feet below the existing ground surface. The 
+basalt formation generally graded from medium to very hard. The clinker generally 
+consisted of silty gravel. We did not encounter groundwater in the drilled borings at the 
+time of our field exploration. 
+Constant head percolation tests were performed in the borings drilled at the 
+project site to assess the average permeability within an open depth interval of 
+subsurface material. For both borings, constant head tests were performed at open 
+rock/clinker depth intervals of about 10 to 20 feet, and 20 to 40 feet below the existing 
+ground surface. Detailed discussions and recommendations from the results of the 
+percolation testing are presented in the following sections. 
+3.1 
+Percolation Test Methodology 
+Constant Head injection tests were performed in the borings drilled at the project 
+site to assess the average permeability within an open interval of rock material. 
+In general, the borings were drilled using HQ wireline coring tools advanced to 
+the scheduled test depths. Upon reaching the desired test depth, the HQ casing was 
+pulled up to expose an open interval of basalt rock formation and/or clinker. The 
+diameter of the open borehole was 3.5 inches. For Boring Nos. 1 and 2, constant head 
+tests were performed at open rock/clinker depth intervals of about 10 to 20 feet, and 20 
+to 40 feet below the existing ground surface. The constant head tests were conducted 
+using the discharge hose of a water truck, which could provide a flow rate of up to about 
+150 gallons per minute (gpm).  
+It should be noted that after approximately 5 minutes of continual pumping, a 
+hydrostatic head could not be established in the constant head tests. Therefore, the 
+k-values for the selected test intervals may be greater than the values presented herein. 
+Due to site and equipment constraints, the pumping capacity during the test could not 
+be increased.  
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 7611-00(C) 
+GEOLABS, INC. 
+Page 8 
+Hawaii • California 
+3.2 
+Permeability Results 
+The field data for the constant head tests were analyzed using the 
+Well Point - Filter in Uniform Soil equation presented in “Construction Dewatering and 
+Groundwater Control, New Methods and Applications,” 3rd Edition by Powers, Corwin, 
+Schmall, and Kaeck (2007). The following table summarizes the permeability values (k) 
+calculated from our field constant head tests. 
+CONSTANT HEAD PERCOLATION TEST RESULTS 
+Test Location 
+Test Interval 
+(feet) 
+Flow Rate 
+(gpm) 
+k 
+(ft/min) 
+B-1 
+10 to 20 
+147 
+0.05 
+20 to 40 
+125 
+0.13 
+B-2 
+10 to 21.5 
+96 
+0.03 
+20 to 40 
+102 
+0.11 
+3.3 
+Preliminary Well Capacity 
+Based on the initial information provided, we understand that the proposed 
+drywells will be installed on the southwest side of the intersection of Hawaii Belt Road 
+and Mamalahoa Highway near the existing residential lot in this area. The approximate 
+location of the proposed drywell area is shown on the Site Plan, Plate 2.  
+We understand that the use of two 20-inch diameter drywells are being 
+considered. The location of the first drywell is proposed at the southwest end of the 
+intersection of Hawaii Belt Road and Mamalahoa Highway.  The second drywell location 
+is proposed further northwest along Hawaii Belt Road near the southern boundary of the 
+Hanato property.  For the proposed first and second drywells, we recommend that the 
+drywells be about 40 and 60 feet in depth with the top 10 and 30 feet of the well cased, 
+respectively. The deeper casing in the second drywell is to reduce the potential for 
+stormwater flowing out of the existing slope below the roadway.   
+Using formula presented in “Groundwater and Wells, 2nd Edition”, Driscoll, 1986, 
+we have calculated the capacity for the planned 30-inch diameter wells. Based on our 
+analysis, the estimated disposal rate of each drywell is 19 cubic feet per second. The 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 7611-00(C) 
+GEOLABS, INC. 
+Page 9 
+Hawaii • California 
+estimated capacity does not account for head losses through well screens or gravel 
+pack and do not allow for long term clogging. A suitable factor of safety should be 
+included in the drywell design.  
+We understand that the design stormwater flow rate is 25 cubic feet per second 
+(cfs).  In addition, we understand that factors of safety of 1.5 and 2 are being 
+considered. For factors of safety of 1.5 and 2, the design flows are 37.5 and 50 cfs.  
+Based on the estimated disposal rate, the number of 30-inch diameter drywells needed 
+for factors of safety of 1.5 and 2 are 2 and 3 drywells, respectively. Drywells should 
+have a minimum spacing of 15 feet on-center. 
+It should be noted that there is a degree of uncertainty in the methods of calculation 
+as the methods assume a stable groundwater table within the test depth of the well. For 
+this project, the normal groundwater level is deep below the test depth; therefore, it was 
+necessary to assume a groundwater level elevation. Based on the ground surface 
+elevation of the project site and the geologic setting of the surrounding area, a 
+groundwater level approximately 150 feet below the bottoms of the proposed drywells was 
+assumed for our design.  
+3.4 
+Storm Water Treatment 
+Clogging can be a major factor in the loss of capacity and ultimate failure of dry 
+wells and similar disposal systems. Clogging can result from sediment and debris 
+entering the well and either blocking the permeable features, such as pores and 
+fractures, or filling the interior of the well. 
+To reduce clogging in the final drywells, we recommend including a stormwater 
+treatment system in the overall well system design. There are several commercially 
+available systems that could be incorporated into the stormwater disposal systems for the 
+new well sites. 
+3.5 
+Design Review 
+Preliminary and final drawings and specifications for the project should be 
+forwarded to Geolabs for review and written comments prior to bid solicitation for 
+construction. This review is necessary to evaluate the conformance of the plans and 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 7611-00(C) 
+GEOLABS, INC. 
+Page 10 
+Hawaii • California 
+specifications with the intent of the foundation and utility trench recommendations 
+provided herein. If this review is not made, Geolabs cannot be responsible for 
+misinterpretation of our recommendations. 
+3.6 
+Construction Monitoring 
+Geolabs should be retained to provide geotechnical engineering services during 
+construction of the project. The critical item of construction monitoring is that the Hawaii 
+Department of Health requires new drywells (a.k.a. injection wells) to be logged by a 
+geologist. If the actual exposed subsurface conditions encountered during construction are 
+different from those assumed or considered in this report, then appropriate design 
+modifications should be made. 
+END OF DISCUSSION AND RECOMMENDATIONS 
+W.O. 7611-00(C) 
+GEOLABS, INC. 
+Page 11 
+Hawaii • California 
+SECTION 4.  LIMITATIONS 
+The analyses and recommendations submitted herein are based, in part, upon 
+information obtained from our field exploration. Variations of the subsurface conditions 
+beyond the test borings may occur and the nature and extent of these variations may 
+not become evident until construction is underway. If variations then appear evident, it 
+will be necessary to re-evaluate the recommendations presented herein. 
+The test boring locations indicated herein is approximate, having been taped 
+from visible features shown on the topographic plans received from WSP on 
+August 3, 2020. The elevations of the borings were interpolated from the contour lines 
+shown on the same plan. The field boring locations and elevations should be 
+considered accurate only to the degree implied by the methods used.  
+The stratification breaks represented on the Logs of Borings show the 
+approximate boundaries between soil and/or rock types and, as such, may denote a 
+gradual transition. We did not encounter groundwater in the borings at the time of our 
+field exploration. However, it should be noted that groundwater levels are subject to 
+change due to rainfall, time of year, seasonal precipitation, surface water runoff, and 
+other factors. The data has been reviewed and interpretation made in the formulation of 
+this report.  
+This report has been prepared for the exclusive use of WSP and their client, the 
+State of Hawaii, Department of Transportation – Highways Division, for specific 
+application to the Drywell Design for Hanato’s Property project in accordance with 
+generally accepted geotechnical engineering principles and practices. No warranty is 
+expressed or implied. 
+This report has been prepared solely for the purpose of assisting the engineer in 
+the design of drywells for the project. Therefore, this report may not contain sufficient 
+data or the proper information to serve as the basis for construction cost estimates nor 
+for bidding purposes. A contractor wishing to bid on this project should retain a 
+competent geotechnical engineer to assist in the interpretation of this report and/or in 
+the performance of additional site-specific exploration for bid estimating purposes.  
+SECTION 4. LIMITATIONS 
+W.O. 7611-00(C) 
+GEOLABS, INC. 
+Page 12 
+Hawaii • California 
+The owner/client should be aware that unanticipated soil conditions are 
+commonly encountered. Unforeseen subsurface conditions, such as perched 
+groundwater, soft deposits, hard layers, or cavities may occur in localized areas and 
+may require additional corrections in the field (which may result in construction delays) 
+to attain a properly constructed project. Therefore, a sufficient contingency fund is 
+recommended to accommodate these possible extra costs. 
+This geotechnical engineering exploration conducted at the project site was not 
+intended to investigate the potential presence of hazardous materials existing at the 
+project site. It should be noted that the equipment, techniques, and personnel used to 
+conduct a geo-environmental exploration differ substantially from those applied in 
+geotechnical engineering. 
+END OF LIMITATIONS 
+CLOSURE
+The following plates and appendices are attached and complete this report:
+Project Location Map... et ere i ti ii inn i nenneneeeeneeeeeees Plate 1
+Site PAN .........ccccseeeseeeeeeeeeeeeeecceeseeeeeeeeeeeeeeeeeeeeceeeeceeaaaaeeeeeeeeeeeeceeeecsieaeeeeeeeeeeeereeneee Plate 2
+FGI EXQIOPATION 0. cs ue coe cons es enamenninemenemesnnes none sins hunt Raisins MAG Cau wha HOES Appendix A
+= oe) £-1 0) 6 Aad B= 5 >) > eee Appendix B
+Photographs of Core Samples ss sas sce mnssecrmemeruenseonen nome cemeneneeemesiemee anes snmm ame mia Appendix C
+Field Percolation T@Sts............ccccccceeeeeeeee eres ee eeeeeeeeeeeeeaaeeeeeeeeeeeeaaaaneeeeeeeeseaaaenees Appendix D
+-QQQQQ0000-
+Respectfully submitted,
+GEOLABS, INC.
+Gerald Y. Seki, P.E.
+Vice President
+GS:NK:shY)
+h:\7600Series\761 1-00(C).nk1
+W.O. 7611-00(C) GEOLABS, INC. Page 13
+Hawaii ¢ California
+PLATES 
+GRAPHIC SCALE
+1000
+2000
+2000
+0
+FT.
+PROJECT LOCATION
+GENERAL PROJECT LOCATION
+PROJECT LOCATION MAP
+SEPTEMBER 2020
+1" = 2,000'
+DRYWELL DESIGN FOR HANATO'S PROPERTY
+Geotechnical Engineering
+GEOLABS, INC.
+PROJECT NO. HWY-DS-CE-2017-01
+GENERAL CIVIL ENGINEERING SERVICES STATEWIDE
+N
+DATE
+SCALE
+1
+7611-00(C)
+DRAWN BY
+HYC
+W.O.
+PLATE
+N
+HONAUNAU
+KAILUA-KONA
+KALAOA
+KONA
+HOLUALOA
+CAPTAIN
+COOK
+KA'U
+MAUNA LOA
+PAHALA
+VOLCANO
+PUNA
+MOUNTAIN
+VIEW
+HILO
+HILO
+MAUNA KEA
+KAWAIHAE KOHALA
+HAWI
+HONOKAA
+WAIMEA
+HONOMU
+PAPAIKOU
+NAALEHU
+ISLAND MAP
+NO SCALE
+PACIFIC      OCEAN
+CAD User: HENRY  File Last Updated: September 08, 2020 3:52:51pm  Plot Date:  September 08, 2020 - 3:53:30pm
+File: A:\Drafting\Drafting\Working\7611-00(C)_Hanatos_Property\7611-00(C)PLM.dwg\PLATE_1
+Plotter: DWG To PDF-GEO.pc3  Plotstyle: GEO-No-Dithering-Blue-Boring.ctb
+REFERENCE: MAP CREATED WITH TOPO!® ©2010 NATIONAL
+GEOGRAPHIC; ©2007 TELE ATLAS, REL. 1/2007.
+ISLAND OF HAWAII
+APPROXIMATE BORING LOCATION
+LEGEND:
+GEOLABS, INC.
+Geotechnical Engineering
+7611-00(C)
+DRAWN BY
+HYC
+1" = 80'
+SEPTEMBER 2020
+SCALE
+DATE
+W.O.
+2
+PLATE
+GRAPHIC SCALE
+40
+0
+80
+160
+240 FT.
+CAD User: HENRY  File Last Updated: September 17, 2020 9:01:40pm  Plot Date:  September 17, 2020 - 9:02:56pm
+File: A:\Drafting\Drafting\Working\7611-00(C)_Hanatos_Property\7611-00(C)SitePlan.dwg\PLATE_2
+Plotter: DWG To PDF-GEO.pc3  Plotstyle: GEO-No-Dithering-Blue-Boring.ctb
+REFERENCE: TOPOGRAPHY PLANS RECEIVED FROM
+WSP ON AUGUST 3, 2020.
+SITE PLAN
+DRYWELL DESIGN FOR HANATO'S PROPERTY
+PROJECT NO. HWY-DS-CE-2017-01
+GENERAL CIVIL ENGINEERING SERVICES STATEWIDE
+ISLAND OF HAWAII
+B-1
+B-2
+MAMALAHOA  HIGHWAY
+NORTH  KONA  BELT  ROAD  (MAMALAHOA  HIGHWAY)
+HAWAII  BELT  ROAD
+HANATO'S
+PROPERTY
+APPROXIMATE LOCATION
+OF PROPOSED DRYWELLS
+APPENDIX A  
+W.O. 7611-00(C) 
+GEOLABS, INC. 
+SEPTEMBER 2020    Page A-1 
+Hawaii • California 
+A P P E N D I X   A 
+Field Exploration 
+We explored the subsurface conditions at the project site by drilling and sampling 
+two borings, designated as Boring Nos. 1 and 2, extending to a depth of about 40 feet 
+below the existing ground surface. The approximate boring locations are shown on the 
+Site Plan, Plate 2. The borings were drilled using a truck-mounted drill rig equipped with 
+continuous flight augers and rotary coring tools.  
+Our geologist classified the materials encountered in the boring by visual and 
+textural examination in the field in general accordance with ASTM D2488, Standard 
+Practice for Description and Identification of Soils, and monitored the drilling operations 
+on a near-continuous (full-time) basis. These classifications were further reviewed 
+visually and by testing in the laboratory. Soils were classified in general accordance with 
+ASTM D2487, Standard Practice for Classification of Soils for Engineering Purposes 
+(Unified Soil Classification System), as shown on the Soil Log Legend, Plate A-0.1. 
+Deviations made to the soil classification in accordance with ASTM D2487 are 
+described on the Soil Classification Log Key, Plate A-0.2. Graphic representation of the 
+materials encountered is presented on the Logs of Borings, Plates A-1.1 through A-2.2. 
+Relatively “undisturbed” soil samples were obtained in general accordance with 
+ASTM D3550, Ring-Lined Barrel Sampling of Soils, by driving a 3-inch OD Modified 
+California sampler with a 140-pound hammer falling 30 inches. In addition, some 
+samples were obtained from the drilled borings in general accordance with 
+ASTM D1586, Penetration Test and Split-Barrel Sampling of Soils, by driving a 
+2-inch OD standard penetration sampler using the same hammer and drop. The blow 
+counts needed to drive the sampler the second and third 6 inches of an 18-inch drive 
+are shown as the “Penetration Resistance” on the Logs of Borings at the appropriate 
+sample depths. The penetration resistance shown on the Logs of Borings indicates the 
+number of blows required for the specific sampler type used. The blow counts may need 
+to be factored to obtain the Standard Penetration Test (SPT) blow counts.  
+Core samples of the rock materials encountered at the project site were obtained 
+by using diamond core drilling techniques in general accordance with ASTM D2113, 
+Diamond Core Drilling for Site Investigation. Core drilling is a rotary drilling method that 
+uses a hollow bit to cut into the rock formation. The rock material left in the hollow core 
+of the bit is mechanically recovered for examination and description. Rock cores were 
+described in general accordance with the Rock Description System, as shown on the 
+Rock Log Legend, Plate A-0.3. The Rock Description System is based on the 
+publication “Suggested Methods for the Quantitative Description of Discontinuities in 
+Rock Masses” by the International Society for Rock Mechanics (March 1977). 
+Recovery (REC) may be used as a subjective guide to the interpretation of the 
+relative quality of rock masses, where appropriate. Recovery is defined as the actual 
+length of material recovered from a coring attempt versus the length of the core attempt. 
+Appendix A 
+Field Exploration 
+W.O. 7611-00(C) 
+GEOLABS, INC. 
+SEPTEMBER 2020    Page A-2 
+Hawaii • California 
+For example, if 3.7 feet of material is recovered from a 5.0-foot core run, the recovery 
+would be 74 percent and would be shown on the Logs of Borings as REC = 74%. 
+The Rock Quality Designation (RQD) is also a subjective guide to the relative 
+quality of rock masses. RQD is defined as the percentage of the core run in rock that is 
+sound material in excess of 4 inches in length without any discontinuities, discounting 
+any drilling, mechanical, and handling induced fractures or breaks. If 2.5 feet of sound 
+material is recovered from a 5.0-foot core run in rock, the RQD would be 50 percent and 
+would be shown on the Logs of Borings as RQD = 50%. Generally, the following is used 
+to describe the relative quality of the rock based on the "Practical Handbook of Physical 
+Properties of Rocks and Minerals” by Robert S. Carmichael (1989). 
+Rock Quality 
+RQD 
+(%) 
+Very Poor 
+0 – 25 
+Poor 
+25 – 50 
+Fair 
+50 – 75 
+Good 
+75 – 90 
+Excellent 
+90 – 100 
+The excavation characteristic of a rock mass is a function of the relative 
+hardness of the rock, its relative quality, brittleness, and fissile characteristics. A dense 
+rock formation with a high RQD value would be very difficult to excavate and probably 
+would require more arduous methods of excavation. 
+A-0.1
+UNCONSOLIDATED UNDRAINED TRIAXIAL
+COMPRESSION (ksf)
+MORE THAN 50%
+OF COARSE
+FRACTION
+RETAINED ON
+NO. 4 SIEVE
+50% OR MORE OF
+COARSE FRACTION
+PASSING
+THROUGH NO. 4
+SIEVE
+MORE THAN 50%
+OF MATERIAL
+RETAINED ON NO.
+200  SIEVE
+50% OR MORE OF
+MATERIAL PASSING
+THROUGH NO. 200
+SIEVE
+TORVANE SHEAR (tsf)
+(2-INCH) O.D. STANDARD PENETRATION TEST
+(3-INCH) O.D. MODIFIED CALIFORNIA SAMPLE
+INORGANIC SILTS AND VERY FINE SANDS,
+ROCK FLOUR, SILTY OR CLAYEY FINE SANDS
+OR CLAYEY SILTS WITH SLIGHT PLASTICITY
+POORLY-GRADED GRAVELS, GRAVEL-SAND
+MIXTURES, LITTLE OR NO FINES
+CLAYEY GRAVELS, GRAVEL-SAND-CLAY
+MIXTURES
+WELL-GRADED SANDS, GRAVELLY SANDS,
+LITTLE OR NO FINES
+POORLY-GRADED SANDS, GRAVELLY
+SANDS, LITTLE OR NO FINES
+SILTY SANDS, SAND-SILT MIXTURES
+CLAYEY SANDS, SAND-CLAY MIXTURES
+LIQUID LIMIT
+50 OR MORE
+CH
+NOTE: DUAL SYMBOLS ARE USED TO INDICATE BORDERLINE SOIL CLASSIFICATIONS
+MH
+SILTS
+AND
+CLAYS
+SILTS
+AND
+CLAYS
+LIQUID LIMIT
+LESS THAN 50
+USCS
+TYPICAL
+DESCRIPTIONS
+GW
+MORE THAN 12%
+FINES
+WATER LEVEL OBSERVED IN BORING OVERNIGHT
+HIGHLY ORGANIC SOILS
+SILTY GRAVELS, GRAVEL-SAND-SILT
+MIXTURES
+OL
+PEAT, HUMUS, SWAMP SOILS WITH HIGH
+ORGANIC CONTENTS
+INORGANIC CLAYS OF LOW TO MEDIUM
+PLASTICITY, GRAVELLY CLAYS, SANDY
+CLAYS, SILTY CLAYS, LEAN CLAYS
+Soil Log Legend
+ORGANIC CLAYS OF MEDIUM TO HIGH
+PLASTICITY, ORGANIC SILTS
+SC
+Plate
+GM
+FINE-
+GRAINED
+SOILS
+COARSE-
+GRAINED
+SOILS
+CLEAN SANDS
+SANDS WITH
+FINES
+SP
+SANDS
+GRAVELS
+WELL-GRADED GRAVELS,  GRAVEL-SAND
+MIXTURES, LITTLE OR NO FINES
+ML
+CL
+OH
+LESS THAN 5%
+FINES
+GRAVELS WITH
+FINES
+CLEAN
+GRAVELS
+GRAB SAMPLE
+PLASTICITY INDEX (NP=NON-PLASTIC)
+TV
+LEGEND
+WATER LEVEL OBSERVED IN BORING AT TIME OF
+DRILLING
+WATER LEVEL OBSERVED IN BORING AFTER DRILLING
+SM
+MAJOR DIVISIONS
+GP
+MORE THAN 12%
+FINES
+PT
+LESS THAN 5%
+FINES
+UNIFIED SOIL CLASSIFICATION SYSTEM (USCS)
+ORGANIC SILTS AND ORGANIC SILTY
+CLAYS OF LOW PLASTICITY
+SW
+GC
+INORGANIC SILT, MICACEOUS OR
+DIATOMACEOUS FINE SAND OR SILTY
+SOILS
+INORGANIC CLAYS OF HIGH PLASTICITY
+PI
+LL
+TXUU
+UNCONFINED COMPRESSION
+OR UNIAXIAL COMPRESSIVE STRENGTH
+CORE SAMPLE
+SHELBY TUBE SAMPLE
+LIQUID LIMIT (NP=NON-PLASTIC)
+UC
+GEOLABS, INC.
+Geotechnical Engineering
+LOG LEGEND FOR SOIL  7611-00C.GPJ  GEOLABS.GDT  9/3/20
+A-0.2
+Medium Sand
+Fine Sand
+#4 to #200 (4.75-mm to 0.075-mm)
+#4 to #10 (4.75-mm to 2-mm)
+> 12 inches (305-mm)
+3-inch to #4 (75-mm to 4.75-mm)
+Sieve Number and / or Size
+Gravel
+#10 to #40 (2-mm to 0.425-mm)
+#40 to #200 (0.425-mm to 0.075-mm)
+3 to 12 inches (75-mm to 305-mm)
+Description
+PP Readings
+(tsf)
+2.0 - 4.0
+> 4.0
+N-Value (Blows/Foot)
+MCS
+0 - 4
+RELATIVE DENSITY / CONSISTENCY
+GRAIN SIZE DEFINITION
+ABBREVIATIONS
+N-Value (Blows/Foot)
+0 - 7
+WOH:  Weight of Hammer
+WOR:  Weight of Drill Rods
+SPT:    Standard Penetration Test Split-Spoon Sampler
+MCS:   Modified California Sampler
+PP: 
+ Pocket Penetrometer
+4 - 7
+7 - 15
+15 - 27
+27 - 55
+SPT
+0 - 2
+> 55
+> 30
+4 - 8
+15 - 30
+MOISTURE CONTENT DEFINITIONS
+SPT
+0 - 4
+4 - 10
+10 - 30
+30 - 50
+> 50
+MCS
+Loose
+EXAMPLE: Soil Containing 60% Gravel, 25% Sand, 15% Fines. Described as: SILTY GRAVEL with some sand
+Plate
+GRANULAR SOIL (- #200 <50%)
+2 - 4
+8 - 15
+Relative
+Density
+Very Loose
+Dense
+Very Dense
+COHESIVE SOIL (- #200    50%)
+PRIMARY constituents are composed of the largest
+percent of the soil mass. Primary constituents are
+capitalized and bold (i.e., GRAVEL, SAND)
+PRIMARY constituents are based on plasticity. Primary
+constituents are capitalized and bold (i.e., CLAY, SILT)
+SECONDARY constituents are composed of a
+percentage less than the primary constituent. If the soil
+mass consists of 12 percent or more fines content, a
+cohesive constituent is used (SILTY or CLAYEY);
+otherwise, a granular constituent is used (GRAVELLY
+or SANDY) provided that the secondary constituent
+consists of 20 percent or more of the soil mass.
+Secondary constituents are capitalized and bold (i.e.,
+SANDY GRAVEL, CLAYEY SAND) and precede the
+primary constituent.
+SECONDARY constituents are composed of a
+percentage less than the primary constituent, but more
+than 20 percent of the soil mass. Secondary constituents
+are capitalized and bold (i.e., SANDY CLAY, SILTY
+CLAY, CLAYEY SILT) and precede the primary
+constituent.
+Sand
+Boulders
+Cobbles
+Coarse Gravel
+3-inch to 3/4-inch (75-mm to 19-mm)
+Fine Gravel
+3/4-inch to #4 (19-mm to 4.75-mm)
+GEOLABS, INC. CLASSIFICATION*
+Granular Soils
+Cohesive Soils
+Consistency
+accessory descriptions compose of the following:
+with some: >12%
+with a little: 5 - 12%
+with traces of: <5%
+accessory descriptions are lower cased and follow the
+Primary and Secondary Constituents
+(i.e., SILTY CLAY with some sand)
+Very Soft
+Soft
+Medium Stiff
+Stiff
+Very Stiff
+Hard
+< 0.5
+0.5 - 1.0
+1.0 - 2.0
+7 - 18
+18 - 55
+55 - 91
+> 91
+Medium Dense
+Coarse Sand
+(with deviations from ASTM D2488)
+Soil Classification Log Key
+*Soil descriptions are based on ASTM D2488-09a, Visual-Manual Procedure, with the
+above modifications by Geolabs, Inc. to the Unified Soil Classification System (USCS).
+accessory descriptions compose of the following:
+with some: >12%
+with a little: 5 - 12%
+with traces of: <5%
+accessory descriptions are lower cased and follow the
+Primary and Secondary Constituents
+(i.e., SILTY GRAVEL with a little sand)
+Dry:    Absence of moisture, dry to the touch
+Moist: Damp but no visible water
+Wet:   Visible free water
+SOIL_CLASS_LOG_KEY  7611-00C.GPJ  GEOLABS.GDT  9/3/20
+GEOLABS, INC.
+Geotechnical Engineering
+A-0.3
+ROCK DESCRIPTIONS
+Plate
+BRECCIA
+CLINKER
+COBBLES
+CORAL
+BASALT
+ROCK DESCRIPTION SYSTEM
+Greater than 24 inches apart
+12 to 24 inches apart
+6 to 12 inches apart
+3 to 6 inches apart
+Less than 3 inches apart
+Rock shows no sign of discoloration or loss of strength.
+Slight discoloration inwards from open fractures.
+Discoloration throughout and noticeably weakened though not able to break by hand.
+Most minerals decomposed with some corestones present in residual soil mass. Can be broken by hand.
+Saprolite. Mineral residue completely decomposed to soil but fabric and structure preserved.
+The following terms describe general fracture spacing of a rock:
+The following terms describe the chemical weathering of a rock:
+ROCK FRACTURE CHARACTERISTICS
+DEGREE OF WEATHERING
+HARDNESS
+BOULDERS
+VOID/CAVITY
+TUFF
+SILTSTONE
+LIMESTONE
+Unweathered:
+Slightly Weathered:
+Moderately Weathered:
+Highly Weathered:
+Extremely Weathered:
+Very Hard:
+Hard:
+Medium Hard:
+Soft:
+Very Soft:
+SANDSTONE
+Massive:
+Slightly Fractured:
+Moderately Fractured:
+Closely Fractured:
+Severely Fractured:
+Rock Log Legend
+The following terms describe the resistance of a rock to indentation or scratching:
+Specimen breaks with difficulty after several "pinging" hammer blows.
+Example: Dense, fine grain volcanic rock
+Specimen breaks with some difficulty after several hammer blows.
+Example: Vesicular, vugular, coarse-grained rock
+Specimen can be broked by one hammer blow. Cannot be scraped by knife. SPT may penetrate by
+~25 blows per inch with bounce.
+Example: Porous rock such as clinker, cinder, and coral reef
+Can be indented by one hammer blow. Can be scraped or peeled by knife. SPT can penetrate by
+~100 blows per foot.
+Example: Weathered rock, chalk-like coral reef
+Crumbles under hammer blow. Can be peeled and carved by knife. Can be indented by finger
+pressure.
+Example: Saprolite
+CONGLOMERATE
+GEOLABS, INC.
+Geotechnical Engineering
+LOG LEGEND FOR ROCK  7611-00C.GPJ  GEOLABS.GDT  9/3/20
+SM
+GM
+GM
+8
+43
+0
+7
+100
+100
+80
+9/6"
++50/0"
+Ref.
+44
+90
+30
+63
+100
+100
+80
+UC=
+4050 psi
+UC=
+19690 psi
+UC=
+5100 psi
+UC=
+4780 psi
+UC=
+1370 psi
+UC=
+2730 psi
+3-inch ASPHALTIC CONCRETE
+Brown to brownish gray SILTY SAND with gravel
+and a little clay, medium dense, moist (fill)
+Light gray SILTY GRAVEL AND COBBLES with
+sand, moist (fill)
+Dark gray vesicular BASALT, severely to closely
+fractured, slightly to moderately weathered,
+medium hard (basalt formation)
+Brown, red and dark gray SILTY GRAVEL with
+sand and cobbles, slightly cemented in places,
+dense to very dense, dry to moist (clinker)
+Gray vesicular BASALT, moderately to slightly
+fractured, unweathered to slightly weathered,
+hard to very hard (basalt formation)
+grades to massive
+Purple to bluish gray WELDED CLINKER with
+silty sand matrix, moderately fractured, slightly to
+moderately weathered, soft to medium hard
+(clinker)
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-45C TRUCK
+4" Auger & HQ Coring
+140 lb. wt., 30 in. drop
+5
+10
+15
+20
+25
+30
+35
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation (feet MSL): 511.5 *
+Sample
+Moisture
+Content (%)
+1
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+June 16, 2020
+June 17, 2020
+F. Sperberg
+40 feet
+7611-00(C)
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 1.1
+(Energy Transfer Ratio = 78%)
+GEOLABS, INC.
+Geotechnical Engineering
+DRYWELL DESIGN FOR HANATO'S PROPERTY 
+GENERAL CIVIL ENGINEERING SERVICES STATEWIDE 
+PROJECT NO. HWY-DS-CE-2017-01
+ISLAND OF HAWAII
+BORING_LOG  7611-00C.GPJ  GEOLABS.GDT  9/17/20
+Not Encountered
+11
+50
+grades to severely to closely fractued, moderately
+weathered
+ Boring terminated at 40 feet
+* Elevations estimated from Topography Plans
+received from WSP on August 3, 2020.
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-45C TRUCK
+4" Auger & HQ Coring
+140 lb. wt., 30 in. drop
+40
+45
+50
+55
+60
+65
+70
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Sample
+Moisture
+Content (%)
+1
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+(Continued from previous plate)
+June 16, 2020
+June 17, 2020
+F. Sperberg
+40 feet
+7611-00(C)
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 1.2
+(Energy Transfer Ratio = 78%)
+GEOLABS, INC.
+Geotechnical Engineering
+DRYWELL DESIGN FOR HANATO'S PROPERTY 
+GENERAL CIVIL ENGINEERING SERVICES STATEWIDE 
+PROJECT NO. HWY-DS-CE-2017-01
+ISLAND OF HAWAII
+BORING_LOG  7611-00C.GPJ  GEOLABS.GDT  9/17/20
+Not Encountered
+28
+12
+70
+GP-
+GM
+GM
+GM
+77
+68
+61
+53
+30
+92
+0
+61
+56
+80
+100
+80
+72
+48
+92
+27
+Sieve
+- #200 =
+9.0%
+UC=
+9610 psi
+UC=
+8620 psi
+UC=
+10480 psi
+UC=
+5910 psi
+UC=
+8360 psi
+UC=
+2500 psi
+Brownish gray to brown SANDY GRAVEL with a
+little silt, dense to very dense, moist (fill)
+Gray BASALT, slightly fractured, unweathered to
+slightly weathered, hard to very hard
+grades to moderately to slightly fractured
+Red and dark gray SILTY GRAVEL with sand,
+dry to moist (clinker)
+Dark gray vesicular BASALT, moderately
+fractured, slightly to moderately weathered, hard
+(basalt formation)
+grades to slightly fractured
+Red SILTY GRAVEL with sand, dry to moist
+(clinker)
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-45C TRUCK
+4" Auger & HQ Coring
+140 lb. wt., 30 in. drop
+5
+10
+15
+20
+25
+30
+35
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation (feet MSL): 455 *
+Sample
+Moisture
+Content (%)
+2
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+June 15, 2020
+June 16, 2020
+F. Sperberg
+40 feet
+7611-00(C)
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 2.1
+(Energy Transfer Ratio = 78%)
+GEOLABS, INC.
+Geotechnical Engineering
+DRYWELL DESIGN FOR HANATO'S PROPERTY 
+GENERAL CIVIL ENGINEERING SERVICES STATEWIDE 
+PROJECT NO. HWY-DS-CE-2017-01
+ISLAND OF HAWAII
+BORING_LOG  7611-00C.GPJ  GEOLABS.GDT  9/17/20
+Not Encountered
+GM
+0
+50/3"
+50/0"
+ Ref.
+100
+Dark gray BASALT, closely fractured, moderately
+to highly weathered, soft to medium hard (basalt
+formation)
+ Boring terminated at 40 feet
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-45C TRUCK
+4" Auger & HQ Coring
+140 lb. wt., 30 in. drop
+40
+45
+50
+55
+60
+65
+70
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Sample
+Moisture
+Content (%)
+2
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+(Continued from previous plate)
+June 15, 2020
+June 16, 2020
+F. Sperberg
+40 feet
+7611-00(C)
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 2.2
+(Energy Transfer Ratio = 78%)
+GEOLABS, INC.
+Geotechnical Engineering
+DRYWELL DESIGN FOR HANATO'S PROPERTY 
+GENERAL CIVIL ENGINEERING SERVICES STATEWIDE 
+PROJECT NO. HWY-DS-CE-2017-01
+ISLAND OF HAWAII
+BORING_LOG  7611-00C.GPJ  GEOLABS.GDT  9/17/20
+Not Encountered
+APPENDIX B  
+W.O. 7611-00(C) 
+GEOLABS, INC. 
+SEPTEMBER 2020    Page B-1 
+Hawaii • California 
+A P P E N D I X   B 
+Laboratory Tests 
+Moisture Content (ASTM D2216) and Unit Weight (ASTM D2937) determinations 
+were performed on selected samples as an aid in the classification and evaluation of 
+soil properties. The test results are presented on the Logs of Borings at the appropriate 
+sample depths. 
+One sieve analysis test (ASTM C117 & ASTM C136) was performed on a 
+selected soil sample to evaluate the gradation characteristics of the soil and to aid in 
+soil classification. Graphic presentation of the grain size distribution is provided on 
+Plate B-1. 
+Twelve uniaxial compression tests (ASTM D7012 Method C) were performed on 
+selected rock cores to evaluate their uniaxial compressive strengths of the rock 
+formation encountered. Results of the uniaxial compression tests are presented on 
+Plate B-2. 
+0
+5
+10
+15
+20
+25
+30
+35
+40
+45
+50
+55
+60
+65
+70
+75
+80
+85
+90
+95
+100
+0.001
+0.01
+0.1
+1
+10
+100
+9.22
+B - 1
+coarse
+1
+1.5
+3
+2
+0.091
+40
+Depth (ft)
+%Gravel
+64.6
+26.4
+%Sand
+COBBLES
+Sample
+D30 (mm)
+140
+20
+10.5 100.8
+HYDROMETER
+3
+GRAIN SIZE IN MILLIMETERS
+PERCENT FINER BY WEIGHT
+100
+coarse
+1/2
+Sample
+2.979
+Cu
+GRAVEL
+U.S. SIEVE NUMBERS
+D10 (mm)
+16
+fine
+25
+Cc
+3/4
+fine
+SILT OR CLAY
+medium
+GRAIN SIZE DISTRIBUTION - ASTM C117 & C136
+SAND
+%Fine
+60
+4
+30
+200
+4
+6
+9.0
+Depth (ft)
+LL
+Brownish gray to brown sandy gravel (GP-GM) with a little silt
+810 14
+50
+U.S. SIEVE OPENING IN INCHES
+6
+D60 (mm)
+D100 (mm)
+B-2
+1.0-2.5
+1.0-2.5
+B-2
+3/8
+PL PI
+Description
+Plate
+W.O. 7611-00(C)
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+DRYWELL DESIGN FOR HANATO'S PROPERTY 
+GENERAL CIVIL ENGINEERING SERVICES STATEWIDE 
+PROJECT NO. HWY-DS-CE-2017-01
+ISLAND OF HAWAII
+G_GRAIN_SIZE_MOD  7611-00C.GPJ  GEOLABS.GDT  9/17/20
+B-1
+6 - 11
+5.142
+2.411
+2.13
+122.1
+18,490
+4,050
+B-1
+21 - 26
+5.100
+2.399
+2.13
+160.5
+88,980
+19,690
+B-1
+26 - 28.5
+5.137
+2.422
+2.12
+149.5
+23,510
+5,100
+B-1
+28.5 - 31
+5.012
+2.401
+2.09
+154.1
+21,640
+4,780
+B-1
+31 - 33.5
+5.131
+2.399
+2.14
+140.4
+6,170
+1,370
+B-1
+33.5 - 36
+5.163
+2.415
+2.14
+137.8
+12,520
+2,730
+B-2
+11.5 - 14.5
+5.129
+2.403
+2.13
+169.2
+43,590
+9,610
+B-2
+14.5 - 17.5
+5.087
+2.404
+2.12
+169.5
+39,120
+8,620
+B-2
+17.5 - 22.5
+5.106
+2.408
+2.12
+164.7
+47,710
+10,480
+B-2
+22.5 - 27.5
+5.095
+2.401
+2.12
+165.1
+26,780
+5,910
+B-2
+27.5 - 32.3
+5.083
+2.401
+2.12
+155.4
+37,830
+8,360
+B-2
+27.6 - 32.4
+5.089
+2.400
+2.12
+163.7
+11,310
+2,500
+B - 2
+Depth
+Location
+Length
+Diameter
+Length/
+Diameter
+Ratio
+(feet)
+(inches)
+(inches)
+(pcf)
+(psi)
+Density
+Compressive
+Strength
+Load
+UNIAXIAL COMPRESSIVE STRENGTH TEST
+ASTM D7012 (METHOD C)
+(lbs)
+Plate
+W.O. 7611-00(C)
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+DRYWELL DESIGN FOR HANATO'S PROPERTY 
+GENERAL CIVIL ENGINEERING SERVICES STATEWIDE 
+PROJECT NO. HWY-DS-CE-2017-01
+ISLAND OF HAWAII
+G_ROCK_UC_TEST_PORTRAIT  7611-00C.GPJ  GEOLABS.GDT  9/8/20
+APPENDIX C  
+HANATO PROPERTY DRAINAGE IMPROVEMENTS 
+KONA, ISLAND OF HAWAII 
+W.O. 7611‐00(C) 
+GEOLABS, INC. 
+PLATE C‐1 
+Hawaii • California 
+B‐1     2.0’ TO 27.75’ 
+                  2.0’ 
+20.0’ 
+20.0’ 
+27.75’ 
+HANATO PROPERTY DRAINAGE IMPROVEMENTS 
+KONA, ISLAND OF HAWAII 
+W.O. 7611‐00(C) 
+GEOLABS, INC. 
+PLATE C‐2 
+Hawaii • California 
+B‐1     27.75’ TO 40.0’ 
+27.75 
+36.0 
+36.0’ 
+40.0’ 
+HANATO PROPERTY DRAINAGE IMPROVEMENTS 
+KONA, ISLAND OF HAWAII 
+W.O. 7611‐00(C) 
+GEOLABS, INC. 
+PLATE C‐3 
+Hawaii • California 
+B‐2    4.5’ TO 21.0’ 
+4.5’ 
+11.5’ 
+11.5’ 
+21.0’ 
+HANATO PROPERTY DRAINAGE IMPROVEMENTS 
+KONA, ISLAND OF HAWAII 
+W.O. 7611‐00(C) 
+GEOLABS, INC. 
+PLATE C‐4 
+Hawaii • California 
+B‐2     21.0’ TO 40.0’ 
+21.0’ 
+37.5’ 
+37.5’   
+40.0’ 
+APPENDIX D  
+B-1
+45.0
+feet
+0.0
+feet
+20.0
+feet
+10.0
+feet
+10.0
+feet
+3.5
+inches
+3.0
+inches
+147.0
+gpm
+20.0
+feet
+Factor of m (                  ) =
+1.0
+147.0
+gpm
+19.65
+feet³/min
+25.0
+feet
+5.29E-02
+ft/min
+2.69E-02
+cm/s
+PERCOLATION TEST CALCULATION SHEET
+(CONSTANT HEAD METHOD: WELL POINT-FILTER IN UNIFORM SOIL)
+Drywell Design for Hanato's Property
+General Civil Engineering Services Statewide
+Project No. HWY-DS-CE-2017-01
+Boring:
+Island of Hawaii
+GW table, b (from ground):
+Datum, a (above ground):
+Depth of Boring:
+Length, L (from datum):
+Open hole Length, l:
+Diameter of open hole (D):
+Diameter of casing (d):
+Constant flow rate, Q:
+Constant water level (Lw):
+Constant flow rate, Q    =
+Piezometer head, Hc=
+Coefficient of 
+Permeability
+GW
+GL
+Datum
+d
+a
+b
+L
+D=2rw
+l
+Lw
+c
+H
+I
+D
+mI
+D
+mI
+q
+k
+2
+)
+(
+1
+ln
+2
+v
+h
+k
+k
+W.O. 7611-00(C)
+GEOLABS, INC.
+Hawaii  California
+PLATE D-1
+B-1
+45.0
+feet
+0.0
+feet
+40.0
+feet
+20.0
+feet
+20.0
+feet
+3.5
+inches
+3.0
+inches
+125.0
+gpm
+40.0
+feet
+Factor of m (                  ) =
+1.0
+125.0
+gpm
+16.71
+feet³/min
+5.0
+feet
+1.31E-01
+ft/min
+6.65E-02
+cm/s
+PERCOLATION TEST CALCULATION SHEET
+(CONSTANT HEAD METHOD: WELL POINT-FILTER IN UNIFORM SOIL)
+Drywell Design for Hanato's Property
+General Civil Engineering Services Statewide
+Project No. HWY-DS-CE-2017-01
+Island of Hawaii
+Boring:
+GW table, b (from ground):
+Datum, a (above ground):
+Depth of Boring:
+Length, L (from datum):
+Open hole Length, l:
+Coefficient of 
+Permeability
+Diameter of open hole (D):
+Diameter of casing (d):
+Constant flow rate, Q:
+Constant water level (Lw):
+Constant flow rate, Q    =
+Piezometer head, Hc=
+GW
+GL
+Datum
+d
+a
+b
+L
+D=2rw
+l
+Lw
+c
+H
+I
+D
+mI
+D
+mI
+q
+k
+2
+)
+(
+1
+ln
+2
+v
+h
+k
+k
+W.O. 7611-00(C)
+GEOLABS, INC.
+Hawaii  California
+PLATE D-2
+B-2
+45.0
+feet
+0.0
+feet
+21.5
+feet
+10.0
+feet
+11.5
+feet
+3.5
+inches
+3.0
+inches
+96.0
+gpm
+21.5
+feet
+Factor of m (                  ) =
+1.0
+96.0
+gpm
+12.83
+feet³/min
+23.5
+feet
+3.30E-02
+ft/min
+1.68E-02
+cm/s
+PERCOLATION TEST CALCULATION SHEET
+(CONSTANT HEAD METHOD: WELL POINT-FILTER IN UNIFORM SOIL)
+Drywell Design for Hanato's Property
+General Civil Engineering Services Statewide
+Project No. HWY-DS-CE-2017-01
+Island of Hawaii
+Boring:
+GW table, b (from ground):
+Datum, a (above ground):
+Depth of Boring:
+Length, L (from datum):
+Open hole Length, l:
+Coefficient of 
+Permeability
+Diameter of open hole (D):
+Diameter of casing (d):
+Constant flow rate, Q:
+Constant water level (Lw):
+Constant flow rate, Q    =
+Piezometer head, Hc=
+GW
+GL
+Datum
+d
+a
+b
+L
+D=2rw
+l
+Lw
+c
+H
+I
+D
+mI
+D
+mI
+q
+k
+2
+)
+(
+1
+ln
+2
+v
+h
+k
+k
+W.O. 7611-00(C)
+GEOLABS, INC.
+Hawaii  California
+PLATE D-3
+B-2
+45.0
+feet
+0.0
+feet
+40.0
+feet
+20.0
+feet
+20.0
+feet
+3.5
+inches
+3.0
+inches
+102.0
+gpm
+40.0
+feet
+Factor of m (                  ) =
+1.0
+102.0
+gpm
+13.63
+feet³/min
+5.0
+feet
+1.07E-01
+ft/min
+5.43E-02
+cm/s
+PERCOLATION TEST CALCULATION SHEET
+(CONSTANT HEAD METHOD: WELL POINT-FILTER IN UNIFORM SOIL)
+Drywell Design for Hanato's Property
+General Civil Engineering Services Statewide
+Project No. HWY-DS-CE-2017-01
+Island of Hawaii
+Boring:
+GW table, b (from ground):
+Datum, a (above ground):
+Depth of Boring:
+Length, L (from datum):
+Open hole Length, l:
+Coefficient of 
+Permeability
+Diameter of open hole (D):
+Diameter of casing (d):
+Constant flow rate, Q:
+Constant water level (Lw):
+Constant flow rate, Q    =
+Piezometer head, Hc=
+GW
+GL
+Datum
+d
+a
+b
+L
+D=2rw
+l
+Lw
+c
+H
+I
+D
+mI
+D
+mI
+q
+k
+2
+)
+(
+1
+ln
+2
+v
+h
+k
+k
+W.O. 7611-00(C)
+GEOLABS, INC.
+Hawaii  California
+PLATE D-4

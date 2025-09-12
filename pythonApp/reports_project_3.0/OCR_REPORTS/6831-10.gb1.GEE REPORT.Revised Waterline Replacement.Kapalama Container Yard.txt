@@ -1,0 +1,3684 @@
+GEOTECHNICAL ENGINEERING EXPLORATION 
+NEW WATERLINE REPLACEMENT 
+KAPALAMA CONTAINER TERMINAL 
+HONOLULU, OAHU, HAWAII 
+W.O. 6831-10     FEBRUARY 1, 2018 
+Prepared for 
+MOFFATT & NICHOL 
+GEOLABS, INC. 
+Geotechnical Engineering and Drilling Services 
+GEOTECHNICAL ENGINEERING EXPLORATION
+NEW WATERLINE REPLACEMENT
+KAPALAMA CONTAINER TERMINAL
+HONOLULU, OAHU, HAWAII
+W.O. 6831-10 FEBRUARY 1, 2018
+Prepared for
+MOFFATT & NICHOL
+LICENSED
+PROFESSIONAL
+ENGINEER
+No. 10029-C
+THIS WORK WAS PREPARED BY
+ME OR UNDER MY SUPERVISION.
+Qu 4-30-18
+SIGNATU EXPIRATION DATE
+OF THE LICENSE
+GEOLABS, INC.
+Geotechnical Engineering and Drilling Services
+2006 Kalihi Street e Honolulu, HI] 96819
+Hawaii ¢ California
+GEOLABS, INC.
+Geotechnical Engineering and Drilling Services
+February 1, 2018
+W.O. 6831-10
+Mr. Ari Konyalian
+Moffatt & Nichol
+3780 Kilroy Airport Way
+Long Beach, CA 90806
+Dear Mr. Konyalian:
+Geolabs, Inc. is pleased to submit our report entitled "Geotechnical Engineering
+Exploration, New Waterline Replacement, Kapalama Container Terminal, Honolulu,
+Oahu, Hawaii," prepared in support of the design of the proposed project.
+Our work was performed in general accordance with the scope of services outlined
+in our revised fee proposal dated September 3, 2014 and our fee proposal of
+January 4, 2017.
+Detailed discussion and specific recommendations for the design of the project
+are contained in the body of this report. If there is any point that is not clear, please
+contact our office.
+Very truly yours,
+GEOLABS, INC.
+Qe,
+John Y.L. Chen, P.E.
+Vice President
+JC:GB:¢j
+2006 Kalihi Street e Honolulu, Hawaii 96819
+Phone: (808) 841-5064 ¢ Facsimile: (808) 847-1749 ° E-mail: hawaii@geolabs.net
+Hawaii ¢ California
+W.O. 6831-10 
+GEOLABS, INC. 
+Page i  
+Hawaii • California 
+GEOTECHNICAL ENGINEERING EXPLORATION 
+NEW WATERLINE REPLACEMENT 
+KAPALAMA CONTAINER TERMINAL 
+HONOLULU, OAHU, HAWAII 
+W.O. 6831-10    FEBRUARY 1, 2018 
+TABLE OF CONTENTS  
+Page 
+SUMMARY OF FINDINGS AND RECOMMENDATIONS .............................................. iii 
+1. 
+GENERAL ............................................................................................................ 1 
+1.1 
+Project Considerations ............................................................................... 1 
+1.2 
+Purpose and Scope ................................................................................... 2 
+2. 
+SITE CHARACTERIZATION ................................................................................ 4 
+2.1 
+Regional Geology ...................................................................................... 4 
+2.2 
+Existing Site Conditions ............................................................................. 5 
+2.3 
+Subsurface Conditions ............................................................................... 5 
+2.4 
+Geologic Units ........................................................................................... 7 
+2.4.1 Fills .................................................................................................. 7 
+2.4.2 Lagoonal/Estuarine Deposit ............................................................ 8 
+2.4.3 Alluvium .......................................................................................... 8 
+2.4.4 Coralline Materials .......................................................................... 9 
+3. 
+DISCUSSION AND RECOMMENDATIONS ...................................................... 11 
+3.1 
+Horizontal Directional Drilling Methods .................................................... 12 
+3.1.1 HDD Geotechnical Considerations ................................................ 13 
+3.1.2 Pipe Size and Material .................................................................. 14 
+3.1.3 Construction Staging Areas .......................................................... 15 
+3.1.4 Construction Considerations ......................................................... 16 
+3.1.5 Type of Drilling Fluid ..................................................................... 17 
+3.1.6 Muck and Slurry Disposal ............................................................. 18 
+3.2 
+Installation Considerations ....................................................................... 18 
+3.3 
+Service Life Considerations ..................................................................... 19 
+4. 
+DESIGN ANALYSES ......................................................................................... 21 
+4.1 
+HDD Pull-Back Forces and Stresses ....................................................... 22 
+4.2 
+Drilling Fluid Pressure versus Hydraulic Fracture Pressure ..................... 23 
+4.3 
+External Pressure Due to Hydrostatic Pressure of Drilling Slurry ............ 23 
+4.4 
+External Pressure Due to Earth and Live Loads ...................................... 23 
+4.5 
+Ring Deflection Due to Buoyancy, and Earth and Live Loads .................. 24 
+5. 
+LIMITATIONS ..................................................................................................... 25 
+CLOSURE ..................................................................................................................... 27 
+TABLE OF CONTENTS 
+Page  
+W.O. 6831-10 
+GEOLABS, INC. 
+Page ii  
+Hawaii • California 
+PLATES 
+Project Location Map ................................................................................... Plate 1 
+Site Plan ...................................................................................................... Plate 2 
+APPENDIX A 
+Field Exploration ....................................................................... Pages A-1 and A-2 
+Soil Log Legend ..................................................................................... Plate A-0.1 
+Soil Classification Log Key .................................................................... Plate A-0.2 
+Rock Log Legend .................................................................................. Plate A-0.3 
+Logs of Boring .................................................................... Plates A-1.1 and A-1.2 
+APPENDIX B 
+Laboratory Tests ...................................................................................... Page B-1 
+Laboratory Test Data ................................................................ Plates B-1 and B-2 
+APPENDIX C 
+Pipe Pullback Analyses .......................................................... Plates C-1 thru C-32 
+APPENDIX D 
+Hydraulic Fracture Analyses ................................................... Plates D-1 thru D-14 
+APPENDIX E 
+Service Life Load Calculations ................................................. Plates E-1 and E-2 
+APPENDIX F 
+Selected Logs of Borings from Previous Exploration ............................ (12 sheets) 
+APPENDIX G 
+Geophysical Survey Report .................................................................... (4 sheets) 
+W.O. 6831-10 
+GEOLABS, INC. 
+Page iii  
+Hawaii • California 
+GEOTECHNICAL ENGINEERING EXPLORATION 
+NEW WATERLINE REPLACEMENT 
+KAPALAMA CONTAINER TERMINAL 
+HONOLULU, OAHU, HAWAII 
+W.O. 6831-10     JANUARY 30, 2018 
+SUMMARY OF FINDINGS AND RECOMMENDATIONS 
+The HDD methods will be used to install the new waterlines from the proposed 
+Kapalama Container Terminal and across the Kapalama Channel to the existing Sand 
+Island Container Terminal. To evaluate the subsurface conditions along the waterline 
+alignments, we conducted an exploration program consisting of a literature review of 
+available soil boring data, drilling an additional land boring, and performance of a 
+geophysical survey within the channel.   
+Based on the available soil boring data and our field exploration program, the 
+subsurface conditions at the land sides of the waterline alignments generally consist of 
+surface fills placed over soft and/or loose estuarine/lagoonal deposits, extending to depths 
+of about 20 to 22 feet below the existing ground surface.  Below the estuarine/lagoonal 
+deposits, coralline materials consisting of coral and sandstone formations with variable 
+consistency and localized loose pockets were encountered and extended to the maximum 
+depths explored.  We encountered groundwater at depths of about 4.5 to 7.5 feet below 
+the existing ground surface at the time of our field explorations.  
+The subsurface conditions anticipated along the waterline alignments within the 
+Kapalama Channel may consist of fine soil materials, which are likely soft/loose estuarine, 
+lagoonal or alluvial deposits, below the mudline and extending to elevations of about -60 to 
+-75 feet MSL.  Anticipated below the fine soil materials are sands and gravel extending to 
+elevations of about -70 to -80 feet MSL.  These sands and gravel could be coralline 
+detritus.  The coral formation may be anticipated below the coralline detritus.   
+The 12-inch and 16-inch waterlines will be 20 feet apart and follow the same 
+vertical and plan alignments. In general, the waterlines extend about 1,460 feet long from 
+the entry to exit points.  The entry angle is about 15 degrees. The deepest invert elevation 
+of the waterlines is at about -105 feet MSL.  The radius of curvature of the alignments near 
+the entry and exit sides is about 500 feet.  Based on our analyses, a SDR of 9 should be 
+used for the HDPE pipes installed by HDD methods.  
+The unconfined compressive strength of the coral and sandstone formations 
+encountered in the project area may range from about 40 to 2,600 psi. Due to the relatively 
+hard coral and sandstone formations anticipated, it is imperative that the contractor select 
+the appropriate HDD equipment, drilling tools, and reamers to drill through the coral and 
+sandstone formations. In addition, zones of coralline detritus within the coral/sandstone 
+formations and the variable hardness of the coral and sandstone formations could cause 
+deflection and “skidding” of the pilot borehole when transitioning between a zone of 
+SUMMARY OF FINDINGS AND RECOMMENDATIONS 
+W.O. 6831-10 
+GEOLABS, INC. 
+Page iv  
+Hawaii • California 
+coralline detritus or soft coral/sandstone formations and a zone of harder coral/sandstone 
+formations.   
+The text of this report should be referred to for detailed discussion and specific 
+recommendations for installation of the new waterlines by HDD methods. 
+END OF SUMMARY OF FINDINGS AND RECOMMENDATIONS 
+W.O. 6831-10 
+GEOLABS, INC. 
+Page 1  
+Hawaii • California 
+SECTION 1.  GENERAL 
+This report presents the results of our geotechnical engineering exploration 
+performed for the New Waterline Replacement, Kapalama Container Terminal project in 
+Honolulu on the Island of Oahu, Hawaii. The project location and general vicinity are 
+shown on the Project Location Map, Plate 1. 
+This report summarizes the findings from our field exploration and presents our 
+geotechnical recommendations derived from our analyses for the design of the new 
+waterline replacement project. The recommendations are intended to assist in the 
+design of two new waterlines installed by Horizontal Directional Drilling (HDD) methods. 
+The findings and recommendations presented herein are subject to the limitations noted 
+at the end of this report. 
+1.1 
+Project Considerations 
+We understand that two existing waterlines (12-inch and 16-inch) crossing the 
+Kapalama Channel will be impacted by the construction of the new Kapalama Container 
+Terminal Wharf and Dredging project.  
+We understand that the existing waterlines will be abandoned and replaced with 
+two new 12-inch and 16-inch waterlines that will extend below the new wharf 
+foundations.  The new waterlines will be installed using HDD methods from the 
+proposed Kapalama Container Terminal across the Kapalama Channel to the existing 
+Sand Island Container Terminal near Pier 51. 
+Based on the information provided, we understand that new waterlines will be 
+installed for a distance of approximately 1,460 feet from the entry to exit points. The 
+waterline alignments will be located between the existing waterline easement and the 
+Hawaiian Electric Company (HECO) easement. The existing water and electrical 
+easements are about 80 feet apart from edge to edge across the Kapalama Channel. In 
+addition, the new waterline inverts will need to extend deep enough to clear the deep 
+foundation tip elevations planned for the future Kapalama Container Terminal wharf.  
+SECTION 1. GENERAL 
+W.O. 6831-10 
+GEOLABS, INC. 
+Page 2  
+Hawaii • California 
+Due to the proximity of the existing easements and the difficulty of toning and 
+locating the existing waterlines and electrical lines, drilling borings within the channel is 
+risky due to the potential of damaging these utility lines. To obtain an overview of the 
+surface and subsurface conditions along the new waterline alignments, our field 
+exploration consisted of drilling one land boring at the Sand Island Container Terminal 
+near Pier 51 and performance of a geophysical survey using the electrical resistivity 
+tomography (ERT) method within the channel.  In addition, information obtained from 
+the borings drilled previously at the Kapalama Military Reservation (KMR) site were also 
+used in our engineering analyses. 
+1.2 
+Purpose and Scope 
+The purpose of our exploration was to obtain an overview of the surface and 
+subsurface conditions to develop a soil and/or rock data set to formulate geotechnical 
+recommendations for installation of the two new waterlines by HDD methods. In order to 
+accomplish this, we conducted an exploration program consisting of the following tasks 
+and efforts: 
+1. 
+Research and review of available in-house geologic and boring 
+information. 
+2. 
+Application for excavation permits from the applicable agencies and 
+coordination of site access and underground utility toning. 
+3. 
+Mobilization and demobilization of a truck-mounted drill rig and 
+two operators to the project site and back. 
+4. 
+Drilling and sampling of one boring, extending to a depth of about 
+42.5 feet below the existing ground surface at the Sand Island Container 
+Terminal near Pier 51.  
+5. 
+Performance of a geophysical survey using the ERT method by Global 
+Geophysics to generate a 2-D geo-electric cross-section for the 
+delineation of a subsurface profile along the new waterline replacement 
+alignments within the Kapalama Channel.  
+6. 
+Coordination of the field exploration and logging of the boring by our 
+engineer. 
+7. 
+Laboratory testing of selected soil samples obtained during the field 
+exploration to evaluate the engineering characteristics of the materials 
+encountered at the project site. 
+SECTION 1. GENERAL 
+W.O. 6831-10 
+GEOLABS, INC. 
+Page 3  
+Hawaii • California 
+8. 
+Engineering analyses of the field and laboratory data to develop 
+geotechnical recommendations pertaining to the design of the waterlines 
+to be installed by HDD methods. 
+9. 
+Preparation of this report summarizing our work and presenting our 
+findings and geotechnical recommendations pertaining to the design of the 
+project. 
+10. 
+Coordination of our overall work on the project by our senior engineer. 
+11. 
+Quality assurance of our work and client/design team consultation by our 
+principal engineer. 
+12. 
+Miscellaneous work efforts such as drafting, word processing, and clerical 
+support. 
+Detailed descriptions of our field exploration methodology and the Logs of Boring 
+are presented in Appendix A of this report. Results of the laboratory tests performed on 
+selected soil samples retrieved from our field exploration are presented in Appendix B. 
+The results of the Pipe Pullback Analysis, Hydraulic Fracture Analysis, and Service Life 
+Load Calculations are presented in Appendices C, D, and E, respectively. Selected 
+Logs of Borings from our previous field explorations are presented in Appendix F, and 
+the Geophysical Survey Report is presented in Appendix G. 
+END OF GENERAL 
+W.O. 6831-10 
+GEOLABS, INC. 
+Page 4  
+Hawaii • California 
+SECTION 2.  SITE CHARACTERIZATION 
+2.1 
+Regional Geology 
+The Island of Oahu was built by the extrusion of basaltic lavas from the Waianae 
+and Koolau shield volcanoes. The older Waianae Volcano is estimated to be middle to 
+late Pliocene in age and forms the bulk of the western third of the island. The younger 
+Koolau Volcano is estimated to be late Pliocene to early Pleistocene (Ice Age) in age 
+and forms the majority of the eastern two-thirds of the island. The Waianae Volcano 
+became extinct while the Koolau Volcano was still active, and its eastern flank was 
+partially buried below Koolau lavas banking against its eastern flank. After a long period 
+of volcanic inactivity, during which time erosion incised deep valleys into the Koolau 
+Shield, volcanic activity returned with a series of lava flows followed by cinder and tuff 
+cone formations. These series are referred to as the Honolulu Volcanic Series. 
+The project site is on the coastal plain of Southern Oahu. The coastal plain was 
+built on the eroded flanks of the Koolau Volcano, which forms the eastern two-thirds of 
+the Island of Oahu. The coastal plain was built by extensive accumulation of alluvium 
+derived from erosion of the volcano, interbedded with coral reefs and associated 
+deposits. 
+During the Pleistocene Epoch (Ice Age), sea levels fluctuated in response to the 
+cycles of continental glaciation. Most of the coastal plains were developed during the 
+Pleistocene Epoch when the sea levels fluctuated significantly. As the glaciers grew and 
+advanced, less water was available to fill the oceanic basins such that sea levels fell 
+below the present stands of the sea. When the glaciers melted and receded, an excess 
+of water became available such that the sea levels rose to above the present sea. 
+The processes of erosion and deposition were affected by these glacio-eustatic 
+sea level fluctuations. When the sea level was low, the erosional base level was 
+correspondingly lower, and valleys were carved to depths below the present sea level. 
+When the sea level was high, the erosional base level was raised such that sediments 
+accumulated at higher elevations. 
+SECTION 2. SITE CHARACTERIZATION  
+W.O. 6831-10 
+GEOLABS, INC. 
+Page 5  
+Hawaii • California 
+The project site generally is underlain by deposits of calcareous sediments and 
+alluvium. The deposition of soils at the site is likely associated with the nearby 
+Kapalama Stream/Basin, lagoonal deposits from old fish ponds and Honolulu Harbor, 
+and coralline formation. A surface layer of man-made fill was placed over these deposits 
+to extend the shoreline for the development of Honolulu Harbor within the last century. 
+2.2 
+Existing Site Conditions 
+The waterline alignments begin at the existing KMR and extend in the southern 
+direction.  The waterline alignments cross the Kapalama Channel, along the east side of 
+John H. Slattery Bridge on Sand Island Access Road, and terminate at the Sand Island 
+Container Terminal near Pier 51. 
+The KMR is under the jurisdiction of the State of Hawaii - Department of 
+Transportation, Harbors Division. Currently, the KMR site is under development for a 
+new container terminal. Majority of the KMR site is covered by either asphaltic concrete 
+pavement or gravel for industrial access and parking.  Based on the available 
+topographic map, the project site is relatively flat. The existing ground surface 
+elevations at the KMR side of the alignment range between about +8 and +10 feet 
+Mean Sea Level (MSL). 
+The waterlines cross the Kapalama Channel. The width of the channel where the 
+waterlines cross is about 685 feet wide. Based on the available topographic map, the 
+bottom elevations (mudline) of the channel range between about -36 and -38 feet MSL. 
+The waterline alignments terminate at the Sand Island Container Terminal near 
+Pier 51.  In general, this portion of the site is relatively flat.  The area is generally 
+covered by asphaltic concrete pavement. 
+2.3 
+Subsurface Conditions 
+Our field exploration consisted of drilling and sampling one land boring at the 
+Sand Island Container Terminal, designated as Boring No. 301A. This boring extended 
+to a depth of about 42.5 feet below the existing ground surface. Three borings 
+(Boring Nos. 6, 16, and 115) previously drilled within the KMR site for the Kapalama 
+Container Terminal project and one over water boring (Boring No. 1) drilled at the north 
+SECTION 2. SITE CHARACTERIZATION  
+W.O. 6831-10 
+GEOLABS, INC. 
+Page 6  
+Hawaii • California 
+side of the channel were also used to determine the subsurface conditions along the 
+waterline alignments.  The approximate boring locations are shown on the Site Plan, 
+Plate 2. In addition to the borings drilled, a geophysical survey using the ERT method 
+was conducted by Global Geophysics to generate a 2-D geo-electric cross-section 
+mainly along the portion of alignments within the Kapalama Channel. The findings from 
+the geophysical survey is contained in the report prepared by Global Geophysics and is 
+provided in Appendix G of this report.  
+Based on the borings drilled at the south and north sides of the channel (land 
+portions), the subsurface conditions along the HDD alignments generally consist of 
+surface fills placed over soft and/or loose estuarine/lagoonal deposits extending to 
+depths of about 20 to 22 feet below the existing ground surface. The borings 
+encountered coralline materials below the estuarine/lagoonal deposits. The coralline 
+materials generally consist of soft to medium hard coral and sandstone formations 
+interbedded with loose to dense sands and gravel.  
+The over water boring generally encountered the mudline at about 40 feet below 
+the sea level.  Very soft silt about 2.5 feet thick was encountered below the sea level.  
+Below the soft silt, severely fractured coral was encountered and extended to a depth of 
+about 55 feet below the sea level.  The coral graded to closely fractured extending to 
+the maximum depth explored of about 72.5 feet below the sea level.  
+The laboratory test results from our previous explorations in the project vicinity 
+indicate that the consistency of the coralline materials may range from soft to medium 
+hard with highly variable unconfined compressive strength ranging from about 40 to 
+2,600 pounds per square inch (psi). 
+Based on the electrical resistivity tomography conducted by Global Geophysics, 
+the subsurface conditions anticipated along the waterline alignments within the channel 
+may consist of fine soil materials, which are likely soft/loose estuarine, lagoonal or 
+alluvial deposits, below the mudline and extending to elevations of about -60 to -75 feet 
+MSL. Anticipated below the fine soil materials are sands and gravel extending to 
+elevations of about -70 to -80 feet MSL.  These sands and gravels could be coralline 
+detritus material.  The coral formation may be anticipated below the coralline detritus. 
+SECTION 2. SITE CHARACTERIZATION  
+W.O. 6831-10 
+GEOLABS, INC. 
+Page 7  
+Hawaii • California 
+We encountered groundwater at depths of about 4.5 to 7.5 feet below the 
+existing ground surface at the time of our field explorations. It should be noted that 
+groundwater levels may change due to tidal fluctuations, seasonal precipitation, surface 
+water runoff, and other factors.  
+Detailed descriptions of the materials encountered from our field exploration at 
+the Sand Island Container Terminal is presented on the Logs of Boring, Plates A-1.1 
+and A-1.2 of Appendix A. Results of the laboratory tests performed on selected soil 
+samples obtained from our field exploration are presented in Appendix B. The results of 
+the Pipe Pullback Analysis, Hydraulic Fracture Analysis, and Service Life Load 
+Calculations are presented in Appendices C, D, and E, respectively. Selected Logs of 
+Borings from our previous exploration at the KMR site are presented in Appendix F, and 
+the Geophysical Survey Report is presented in Appendix G. 
+2.4 
+Geologic Units 
+The various geologic deposits encountered along the HDD alignments may be 
+grouped into the following four generalized types of geologic materials. 
+1. 
+Fills 
+2. 
+Lagoonal/Estuarine Deposits 
+3. 
+Alluvium 
+4. 
+Coralline Materials 
+Further discussions on the general characteristics of the geologic units are 
+presented in the following subsections. 
+2.4.1 Fills 
+The fills are located at the land portions of the waterline alignments.  The fills 
+generally consist of variable soils, which were placed during the development of the 
+area. The fills generally consist of clayey, sandy, and gravelly soils. The fills may be 
+encountered as both unconsolidated and semi-consolidated deposits having 
+variable density resulting from man-induced compaction of the fills. 
+SECTION 2. SITE CHARACTERIZATION  
+W.O. 6831-10 
+GEOLABS, INC. 
+Page 8  
+Hawaii • California 
+2.4.2 Lagoonal/Estuarine Deposit 
+Lagoonal and estuarine deposits generally consist of variable light gray calcareous 
+sediments (clays, silts, and sands) mixed with some consolidated coral reef 
+formation and broken granular fragments of coralline reef materials (gravelly 
+coralline detritus). The materials generally are deposited in low wave energy, 
+shallow marine environments such as bays, estuaries, and lagoons that are 
+commonly protected by an outer fringing coral reef and an inner shoreline 
+environment. The deposits are typically soft and/or loose and provide infill among 
+localized in-situ hard coral reef structures. The deposits are variable in type and 
+consistency as a result of changing depositional environments affected by 
+short-term storm wave action and long-term global fluctuations in sea level. 
+Lagoonal and estuarine deposits may be encountered interbedded within coralline 
+detritus deposits or as layers or void infilling within porous and cavernous coral reef 
+formation materials. 
+2.4.3 Alluvium 
+Alluvium generally consists of semi-consolidated, eroded, and transported 
+terrestrial sediments including silts, clays, sands, and some gravel, which are 
+deposited by flowing water. Alluvial deposits mainly are encountered adjacent to 
+stream and estuary environments, but they also may be encountered where 
+sediment laden runoff emanating from higher elevation terrain is deposited on 
+adjacent lower elevation, flatter terrain. The deposits may be encountered as wide 
+spread valley fill deposits or as elongated channel filling deposits. Alluvial deposits 
+can be categorized as recent or older alluvium. 
+Recent alluvium is the result of sedimentation in a very low energy environment 
+such as an estuary or bay. Frequently, the soils accumulated very rapidly under 
+water and might not have been exposed to air. Therefore, there is a tendency to 
+encounter under-consolidated sediments, which settle under the weight of minimal 
+overburden or structural loading. Recent alluvium is generally found within some 
+stream channels and bordering some stream banks at the mouths (outlets) of 
+streams and within broad valley floors and basin features surrounded by hills. 
+These soils also may be found in proximity to the swamp and tidal flat 
+SECTION 2. SITE CHARACTERIZATION  
+W.O. 6831-10 
+GEOLABS, INC. 
+Page 9  
+Hawaii • California 
+environments.  Recent alluvium generally is considered to have low in-situ 
+permeability and have low strength characteristics and the tendency for excessive 
+settlement to occur in structures overlying these soils.  
+Older alluvium is generally very stiff to hard silty and clayey soils that originally were 
+deposited in alluvial environments, buried over long periods of time by more recent 
+deposits to become somewhat consolidated, and then subsequently uncovered at 
+the ground surface by erosion or other geologic processes. This unit generally 
+overlies the Koolau Basalt and consists of terrigenous sediments, which have been 
+transported by stream action from the upper reaches of the streams.  
+Gravel lenses representing the buried stream channel are sometimes encountered. 
+Portions of these soils contain some weathered basaltic cobbles and boulders. The 
+coarse-grained parts of these soils may contain artesian groundwater from the 
+basal fresh water system or as a sub-aquifer. The deposits may resemble saprolite 
+soil deposits, but are clearly differentiable by the layered characteristics. Older 
+alluvium generally exhibits low permeability (with the exception of the 
+coarse-grained basaltic cobbles and boulders) and high strength with generally low 
+settlement characteristics. Frequently, these materials show a moderate to high 
+shrink/swell potential when subjected to fluctuations in moisture content. 
+2.4.4 Coralline Materials 
+Coralline materials at the site consist of fossil remnants of coral-algal reefs and their 
+related detritus deposits. Due to the granular nature of the majority of the coral-algal 
+reefs and detritus deposits and the variable degree of cementation frequently 
+present, this formation generally has high to moderate in-situ permeability and 
+strength characteristics. 
+Coralline detritus is one of the coralline material subunits consisting of granular 
+detritus broken from reef formations. It is generally medium dense to dense 
+sandy gravel and gravelly sands. Silts and clays are only present in minor or 
+trace amounts. Detritus also may be weakly cemented with occasional moderate 
+to strong cementation. 
+SECTION 2. SITE CHARACTERIZATION  
+W.O. 6831-10 
+GEOLABS, INC. 
+Page 10  
+Hawaii • California 
+Coral formation (or coral-algal reef) is another subunit that is composed of coral and 
+calcareous algae in their original growth positions, which have become cemented 
+with secreted calcium compounds during the growth and expansion of the marine 
+organisms.  The joined skeletons form a structural framework, often containing 
+variable interstices within the framework.  The interstices may be void space or 
+filled with other cemented or loose calcareous debris (detritus).  The coral formation 
+may range from loose to very dense in consistency depending on the type of 
+cemented coral and algal skeletons and the degree of cementation. The 
+consistency of the coral formation at the site is highly variable with unconfined 
+compressive strength ranging from 40 to 2,600 psi. 
+END OF SITE CHARACTERIZATION 
+W.O. 6831-10 
+GEOLABS, INC. 
+Page 11  
+Hawaii • California 
+SECTION 3.  DISCUSSION AND RECOMMENDATIONS 
+Based on the available soil boring data and on our field exploration program, the 
+subsurface conditions at the land portions of the waterline alignments consist of fill 
+underlain by soft estuarine and/or loose lagoonal deposits over the coralline materials.  
+The coralline materials consisted of soft to medium hard coral and sandstone 
+formations interbedded with loose to dense sandy and gravelly coralline detritus.   
+The subsurface conditions anticipated along the waterline alignments within the 
+Kapalama Channel may consist of fine soil material underlain by sands and gravel over 
+coral formation.  The coral formation may be anticipated at elevations ranging from 
+about -70 to -80 feet MSL.  It should be noted that the subsurface conditions within the 
+channel were evaluated by using the ERT method.   
+The HDD methods will be used to install the two new waterlines from the 
+proposed Kapalama Container Terminal to the existing Sand Island Container Terminal. 
+The 12-inch and 16-inch waterlines will be about 20 feet apart and follow the same 
+vertical and plan alignments. In general, the waterlines extend about 1,460 feet long 
+from the entry to exit points.  The entry and exit angles are about 15 degrees. The 
+deepest invert elevation of the waterlines is about -105 feet MSL.  The vertical 
+alignment extends to about 387 feet from the entry point where it begins a 500-foot 
+curvature to obtain the deep invert elevation.  The waterline will cross the channel and 
+require a 500-foot curvature to exit at the surface of the Sand Island Container 
+Terminal.  Based on our analyses, a standard dimension ratio (SDR) of 9 should be 
+used for the high-density polyethylene (HDPE) pipes installed by HDD methods.  
+A potential change in the drill path alignment could occur within the 
+coral/sandstone formations due to the potential presence of coralline detritus zones 
+within the coral and sandstone formations.  In addition, potential change in the drill path 
+alignment could occur within the coral/sandstone formations due to the variable 
+hardness of the coral and sandstone formations.  Deflection and “skidding” of the pilot 
+borehole could occur while drilling through a zone of coralline detritus or soft coral and 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 6831-10 
+GEOLABS, INC. 
+Page 12  
+Hawaii • California 
+sandstone formations and then encounter hard coral and sandstone formations. The 
+deflection and “skidding” may result in a deviation in alignment.   
+Detailed discussion of these items and our geotechnical recommendations for 
+design of the waterlines installed by HDD methods are presented in the following 
+sections. 
+3.1 
+Horizontal Directional Drilling Methods 
+Horizontal directional drilling (HDD) is a trenchless, steerable installation method 
+using a multi-axis drilling machine to bore a small diameter pilot hole in the subsurface. 
+The pilot hole is bored using either controlled fluid jetting or fluid-assisted mechanical 
+cutting, or a combination of the two methods. Depending on the subsurface conditions, 
+water only or water mixed with bentonite and/or polymer can be used as a drilling fluid 
+in a directional drilling application. The pilot hole is reamed, as necessary, to 
+accommodate the pipe(s) to be installed. The pipe is pulled back into the reamed hole 
+by the drilling machine. Most HDD systems use slurry to stabilize the walls of the 
+borehole and to reduce the frictional drag on the pipeline being installed. Steering 
+corrections are made in the subsurface materials by rotating the slanted cutter shoe to 
+the desired orientation and then advancing the shoe and string without rotation. 
+In general, the HDD pilot hole is drilled nearly horizontal with entry and exit 
+angles between 8 and 15 degrees measured from horizontal. However, steeper entry 
+angles (about 20 degrees) may be required to avoid underground utilities and/or 
+obstructions. Shallow working pits may be required at each end of the bore to allow 
+placement of the drill pipe and to allow the transition to the conventional pipe trench 
+installation. The product pipe should be installed in one continuous operation, preferably 
+without pause, and should protrude a sufficient distance beyond the entry and exit 
+points to allow proper termination or connection at a later time. Typically, HDPE, steel, 
+and polyvinyl chloride (PVC) pipes may be installed by HDD methods. 
+The vertical and horizontal alignments of the drill hole typically are monitored 
+from the surface by a locator, which tracks signals from the transmitter contained inside 
+the drill head housing. Other methods of tracking the cutting tool, such as in-hole 
+steering, generally are recommended to provide more precise line and grade 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 6831-10 
+GEOLABS, INC. 
+Page 13  
+Hawaii • California 
+information. The contractor should carefully monitor the drilling operation when 
+approaching property boundaries, and existing underground utilities or structures to 
+assure that proper clearances are maintained. 
+The 12-inch and 16-inch diameter pipes will be pulled back separately in 
+two different boreholes about 20 feet apart. In general, the waterlines will extend about 
+1,460 feet long from the entry to exit points. The waterlines will enter at an angle of 
+about 15 degrees at the proposed Kapalama Container Terminal side of the site and will 
+exit at an angle of about 15 degrees at the existing Sand Island Container Terminal 
+near Pier 51.  The waterlines will have 500-foot vertical curvatures.  The deepest invert 
+of the waterlines is at about -105 feet MSL. 
+3.1.1 HDD Geotechnical Considerations 
+The technical feasibility of the HDD method depends on the characteristics of the 
+subsurface materials at and along the depth of the pipeline profile, as well as the 
+length of the drill path, and diameter of the pipes to be installed (American Gas 
+Association, 1995). 
+The subsurface conditions encountered at the land portion of the waterline 
+alignments consist of surface fills placed over soft and/or loose estuarine/lagoonal 
+deposits, extending to depths of about 20 to 22 feet below the existing ground 
+surface. Below the estuarine/lagoonal deposits, coralline materials were 
+encountered to the maximum depths explored.  The coralline materials consist of 
+soft to medium hard coral and sandstone formations interbedded with loose to 
+dense sandy and gravelly coralline detritus.   
+Based on the ERT conducted by Global Geophysics, the subsurface materials 
+anticipated along the water alignments at an elevation of about -105 feet MSL 
+would likely consist of coral.  
+Due to the variable consistency of the coral and sandstone (unconfined 
+compressive strength as high as 2,600 psi) anticipated along the proposed 
+waterline alignments, it is imperative that the contractor selects the appropriate 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 6831-10 
+GEOLABS, INC. 
+Page 14  
+Hawaii • California 
+HDD equipment, drilling tools, and reamers to drill through the coral and sandstone 
+formations. 
+A potential change in the drill path alignment could occur within the coral and 
+sandstone formations.  If the pilot borehole drilling transition from a zone of coralline 
+detritus into hard coral and sandstone formations, deflection and “skidding” could 
+occur.  In addition, if the pilot borehole drilling transition from soft coral/sandstone 
+into hard coral/sandstone, deflection and “skidding” could also occur.  This would 
+result in a deviation of the waterline alignment.  The skidding of the pilot drill bit is 
+due to the difference in hardness between two subsurface materials of differing 
+consistency. 
+The coralline detritus, which may have relatively high gravel content of 50 percent 
+or more, will generally be problematic during the drilling operations.  These gravelly 
+soils are expected to cause difficulty in steering the pilot hole and borehole stability 
+problems during the pilot borehole drilling and reaming stages.  The instability of the 
+materials will result in caving in of the soils into the boreholes, which could obstruct 
+or divert the reaming tools and result in a meandering drill path.  The resulting kinks 
+in the drill path may substantially increase the pulling stresses on the HDPE pipes, 
+and may impede pipe pulling or damage the pipe and other tools during the 
+pullback stage. 
+3.1.2 Pipe Size and Material 
+The most important design consideration for the pipe is the tensile stresses 
+imposed on the pipe when it is being pulled into place through the drilled hole. The 
+magnitude of these tensile stresses is a function of the length of the installation, as 
+well as the subsurface conditions along the pipeline alignment. Other important 
+pipe design considerations are the internal and external pressures acting on the 
+pipe during and after installation. Factors affecting the loads and stresses on the 
+pipe include the following: 
+1. 
+Radius of Curvature 
+2. 
+Modulus of the Pipe Material 
+3. 
+Thickness of the Pipe (SDR) 
+4. 
+Diameter (ID and OD) of the Pipe 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 6831-10 
+GEOLABS, INC. 
+Page 15  
+Hawaii • California 
+5. 
+Temperature 
+6. 
+Tension 
+7. 
+Operating Pressure 
+8. 
+Differential Pressure 
+In addition to the pipe design considerations mentioned above, the selected pipe 
+material must have adequate corrosion resistance or be protected to resist internal 
+and external corrosion. 
+We understand that HDPE pipes will be used for the waterlines installed by HDD 
+methods. HDPE pipes may be susceptible to tensile failure during installation (pull 
+back), unless they are properly designed. This failure mechanism of the pipe limits 
+the length of installation that can be completed with HDPE pipe. Therefore, it is 
+critical to select a pipe with an adequate allowable pulling (tensile) capacity. 
+The HDPE pipes should be selected to provide the maximum pipe thickness and 
+strength for the proposed installation based on the results of the pipe stress 
+analyses, considerations regarding HDD installation procedures, probable drill hole 
+sizes, and materials in-filling the annulus between the HDD installed, HDPE 
+pipelines and the drilled hole. The contractor should adequately and properly 
+ballast the pipelines during installation into the HDD drill hole to reduce the pipe 
+weight, the effect of buoyancy, and the corresponding reduction in the tensile loads 
+on the pipe string during pullback. Based on our analyses, we believe that the 
+proposed 12 and 16-inch diameter waterlines installed by HDD method to an invert 
+elevation of -105 feet MSL may consist of HDPE pipe with a SDR of 9 or lower.  We 
+believe the HDPE pipe with a SDR of 9 or lower should be able to safely handle the 
+loads imposed onto the pipe during installation and over the service life of the pipe. 
+3.1.3 Construction Staging Areas 
+Staging areas will be required at the entry and exit locations for the HDD installed 
+pipelines. Staging area requirements at the entry locations will depend on the size 
+of the drill rig to be utilized for the HDD installation. For Mini drill rigs, a typical area 
+of about 15 feet by 40 feet would be required. Typical staging areas for Midi drill 
+rigs require an ideal area of about 100 feet by 150 feet and a minimum area of 
+about 60 feet by 100 feet. An ideal area of 200 feet by 300 feet and a minimum 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 6831-10 
+GEOLABS, INC. 
+Page 16  
+Hawaii • California 
+area of 100 feet by 150 feet typically are used for Maxi drill rigs. A summary of the 
+typical staging area requirements at the entry location is presented in the following 
+table. 
+STAGING AREA REQUIREMENTS AT ENTRY LOCATION 
+Drill Rig Type 
+Ideal Area 
+Minimum Area 
+Mini 
+15 feet x 40 feet 
+N/A 
+Midi 
+100 feet x 150 feet 
+60 feet x 100 feet 
+Maxi 
+200 feet x 300 feet 
+100 feet x 150 feet 
+It should be noted that these requirements are ideal and may be changed based on 
+the existing conditions at the site. Based on the size and lengths of the pipes being 
+installed and the calculated pullback loads, we believe that a Midi or Maxi drill rig 
+may be used to install the new waterlines planned for the proposed project.  
+Additional staging areas also are needed for pipe storage and for laying-out the 
+pipes when the pipe string is assembled for testing and pullback. The pipe string is 
+positioned at the exit pit and can be laid on the ground or on rollers. The staging 
+area for laying out the pipe for testing and pulling back is not required throughout 
+the duration of the HDD installation operation (usually a couple of weeks prior to 
+pipe pullback).  
+3.1.4 Construction Considerations 
+The equipment, tools, methods, and procedures selected by the contractor should 
+be capable of drilling, reaming, and installing the HDPE pipes within the anticipated 
+subsurface conditions described herein without damaging or over-stressing the 
+pipe. Accurate tracking and drilling of the pilot hole and proper reaming will be 
+required to complete the installation of the new waterlines using HDD methods. 
+The contractor should submit a detailed work plan and appropriate engineering 
+calculations demonstrating that the selected method, equipment, tools, and 
+procedures are capable of drilling, reaming, steering, tracking, and installing the 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 6831-10 
+GEOLABS, INC. 
+Page 17  
+Hawaii • California 
+HDPE pipes based on the subsurface conditions along the proposed HDD drill 
+path. The contractor shall demonstrate that the contractor’s means and methods 
+will not cause damage to the HDPE pipes, including exceeding the allowable pipe 
+strength properties. Contingency plans and procedures also should be submitted 
+for resolving obstruction problems during drilling, reaming, and pullback. 
+The soil conditions may be susceptible to hydraulic fracturing and discharge of 
+drilling mud if excessive slurry pressures are used during the HDD operations. To 
+prevent fracturing the ground and discharge of drilling fluids to the ground surface 
+or channel, the drilling mud pressures applied at the drilling and reaming tools, and 
+the slurry mud weight should be carefully monitored and controlled by the 
+contractor. The contractor should be made responsible to ensure that no discharge 
+of drilling fluids to the ground surface or into the channel will occur. The contractor 
+should submit calculations of the operating mud pressures based on the drill path. 
+Buried underground hazards, such as electrical cables, telecommunication 
+cables and waterlines may be present within the limits of the drill path during the 
+HDD operation. Therefore, the directional control of the pilot drill bit is critical to 
+the success of the proposed HDD installation. Underground utilities and 
+structures should be accurately identified, located, and avoided. The location of 
+all underground utilities that cross the HDD alignments in the land portion should 
+be verified by potholing. 
+During the pilot hole drilling, the location and position of the drill bit should be 
+tracked and documented in minimum 10-foot continuous increments along the drill 
+path. The minimum radius of curvature should be maintained during the pilot hole 
+drilling. The accuracy of the bore should be within a 5-foot radius of the approved 
+exit point location. 
+3.1.5 Type of Drilling Fluid 
+Depending on the subsurface conditions, water only or water mixed with bentonite 
+and/or polymer may be used as a drilling fluid in a directional drilling operation. 
+Water alone is normally suitable for drilling in silty or clayey soils. For soft and/or 
+loose soils, polymer mixed with water will improve the stability of the borehole. 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 6831-10 
+GEOLABS, INC. 
+Page 18  
+Hawaii • California 
+The amount of drilling additives (bentonite or polymer) depends on the subsurface 
+conditions (and experience of the contractor). The water used in the drilling fluid 
+should not be hard or salty because this will cause poor mixing or yield with the 
+bentonite or polymer and the flocculated bentonite may tend to settle to the bottom 
+of the tank. Hard water should be treated with soda ash, and salt water generally 
+should be avoided. 
+3.1.6 Muck and Slurry Disposal 
+Special muck and slurry handling procedures may be required for the HDD 
+installation method for the proposed waterlines. The properties of the various 
+geologic units anticipated along the drill path as indicated by the grain size 
+distribution tests should be taken into account in selecting an appropriate slurry 
+separation plant. 
+In order to aid in a clean site and to more readily separate the materials, a solids 
+control or slurry separation plant with shakers, screens, de-sanders, de-silter cones, 
+and centrifuge may need to be considered. This will facilitate a more rapid 
+separation and disposal process. Additives may need to be included to facilitate 
+flocculation of the fine-grained materials so that clean slurry can be returned to the 
+drill head. 
+Muck resulting from the HDD operations should be removed from the site and 
+should be disposed of properly at an acceptable facility or designated area. Slurry 
+from the HDD operations should be pumped into trucks for disposal in accordance 
+with the applicable governmental regulations and agencies. Contaminated soils 
+and/or groundwater (if applicable) should be handled, tested, and disposed of in 
+accordance with the project specifications, guidelines, and government 
+requirements. 
+3.2 
+Installation Considerations 
+The pipe must be able to safely handle the loads imposed on the pipe during 
+installation. The following items will need to be considered during the installation of the 
+pipe. 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 6831-10 
+GEOLABS, INC. 
+Page 19  
+Hawaii • California 
+Tension Force 
+Tensile Stresses 
+External Pressure Due to Drilling Fluid 
+Hydraulic Fracturing of the Near-Surface Soils 
+The tension (pull-back) force on the pipe must overcome several forms of 
+resisting forces during the pullback sequence. The resisting forces during the pullback 
+sequence include the friction between the pipe and the borehole, friction between the 
+pipe and the ground surface, “capstan” effect force which develops around bends, and 
+hydrokinetic drag force of the drilling fluid. The most important consideration during 
+installation of the pipe by HDD methods is the tensile stresses imposed on the pipe 
+when it is pulled into place through the drilled hole. The HDPE pipes may be susceptible 
+to failure during installation unless they are properly designed. Therefore, the tensile 
+stresses acting on the pipe due to the pullback force should not exceed the safe tensile 
+stress of the pipe that is being pulled back. 
+During the drilling operations, water only or water mixed with bentonite and/or 
+polymer may be used as a drilling fluid. During pullback, the pipe may be subjected to 
+external pressure due to the fluid head of the drilling fluid, whether it is water or a 
+mixture of water and bentonite and/or polymer slurry. The external pressure acting on 
+the pipe due to the drilling fluid must not exceed the buckling pressure of the pipe during 
+pullback. 
+Another important consideration during the drilling operations is to determine if 
+the drilling fluid pressure in the borehole will exceed the hydraulic fracture pressure of 
+the in-situ soils. The drilling fluid pressure is the sum of the hydrostatic pressure and 
+circulation pressure required to overcome friction losses during flow. If the drilling fluid 
+pressure exceeds the hydraulic fracture pressure of the in-situ soil or rock formation, 
+there is a potential for heave and/or blowout of the ground surface. 
+3.3 
+Service Life Considerations 
+During the service life of the pipe, long-term loads are imposed on the pipe. The 
+following long-term loads were identified for the service life of the HDPE pipes and were 
+considered in our analyses: 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS  
+W.O. 6831-10 
+GEOLABS, INC. 
+Page 20  
+Hawaii • California 
+External Pressure Due to Earth and Live Loads 
+Ring Deflection Due to Pipe Buoyancy 
+Ring Deflection Due to Earth and Live Loads 
+After installation of the pipes by HDD methods, the drilled hole may deform 
+considerably or even collapse. Drilled hole deformation normally is limited when arching 
+in the soil is mobilized. Where arching in the soil develops, the earth pressure applied to 
+the pipe is less than the overburden pressure. Typically, a depth of cover of at least 
+five pipe diameters above the top of the pipe would be sufficient to develop arching in 
+the soil.  
+Ring deflection is caused by the non-uniform pressure acting on the pipe due to 
+buoyancy or from earth and live loads acting on the pipe. Ring deflection reduces the 
+hydrostatic collapse resistance of the pipe and also produces tensile bending stresses 
+in the pipe wall. When the pipe is submerged in drilling fluid, there is a pressure 
+difference resulting from the difference in fluid head at the crown and invert of the pipe. 
+The larger pressure acting at the invert of the pipe causes an upward deflection toward 
+the crown causing ring deflection due to buoyancy. Ring deflection due to earth and live 
+loads occurs when soil deforms near the crown of the pipe, causing the load to be 
+applied to the crown of the pipe. An opposite reaction occurs at the invert of the pipe. 
+Because the drilling fluid does not provide side support for the pipe, there is no 
+horizontal pressure to resist the vertical deflection of the pipe. The ring deflection of the 
+pipe must be limited to reduce the potential for instability of the pipe. 
+END OF DISCUSSION AND RECOMMENDATIONS 
+W.O. 6831-10 
+GEOLABS, INC. 
+Page 21  
+Hawaii • California 
+SECTION 4.  DESIGN ANALYSES 
+Our engineering analyses to determine the feasibility of using a 13.2-inch OD 
+(outside diameter) (SDR 9) and 17.4-inch OD (SDR 9) HDPE pipes for HDD installation 
+were based on our field exploration and laboratory test data. In addition, the following 
+data and assumptions were used in our analyses. 
+1. 
+The installation stresses on the pipe for the proposed HDD alignments 
+were determined from the computer program DRILLPATH2. 
+2. 
+A wet installation condition with water in the pipes was used in our 
+analysis.  
+3. 
+The existing ground elevations were determined from the available project 
+plans. 
+4. 
+Due to the depth of cover, mobilization of arching in the soil above the 
+borehole was considered in our analyses. 
+5. 
+The drilled hole for the pullback will have a diameter of about 1.5 times the 
+diameter of the pipe(s) being installed. 
+6. 
+The drilling fluid pressure versus the hydraulic fracture pressure of the 
+in-situ soil and/or rock formation along the HDD alignments was 
+determined from the computer program DRILLMUD. 
+The following analyses were performed to determine whether the HDPE pipes 
+are feasible for the proposed HDD runs. 
+1. 
+HDD Pull-back Forces and Stresses 
+2. 
+Drilling Fluid Pressure Versus the Hydraulic Fracture Pressure of the 
+In-Situ Soil  
+3. 
+External Pressure Due to Hydrostatic Pressure of Drilling Fluid 
+4. 
+External Pressure Due to Earth and Live Loads 
+5. 
+Ring Deflection Due to Buoyancy 
+6. 
+Ring Deflection Due to Earth and Live Loads 
+A summary of the maximum pullback forces and stresses, external pressures 
+acting on the pipe, ring deflection of the pipe due to buoyancy, and ring deflection due 
+SECTION 4. DESIGN ANALYSES 
+W.O. 6831-10 
+GEOLABS, INC. 
+Page 22  
+Hawaii • California 
+to earth and live loads for the 12-inch and 16-inch waterlines installed by HDD methods 
+is presented in the following tables. We also have included the pertinent data, such as 
+the allowable pullback forces and stresses, external pressures, and maximum ring 
+deflections for the pipe in the following tables for ease of reference. 
+SHORT-TERM LOADING 
+Pipe Type 
+13.2-inch OD 
+(SDR 9) 
+17.4-inch OD 
+(SDR 9) 
+Maximum Tension Force (lbs.) 
+27,635 
+48,018 
+Allowable Tension Force (lbs.) 
+67,000 
+116,000 
+Maximum Tensile Stress (psi) 
+601 
+763 
+Allowable Tensile Stress (psi) 
+1,200 
+1,200 
+Maximum External Pressure 
+Open Hole (psi) 
+20.5 
+20.5 
+Allowable External Pressure 
+Open Hole (psi) 
+85.7 
+85.7 
+LONG-TERM LOADING 
+Maximum External Pressure 
+Closed Hole (psi) 
+48.9 
+48.9 
+Allowable External Pressure 
+Closed Hole (psi) 
+54.0 
+54.0 
+Ring Deflection 
+Due to Buoyancy (%) 
+0.1 
+0.1 
+Allowable Ring Deflection 
+Due to Buoyancy (%) 
+4.0 
+4.0 
+Ring Deflection 
+Due to Earth and Live Loads (%) 
+0.8 
+0.8 
+Allowable Ring Deflection 
+Due to Earth and Live Loads (%) 
+4.0 
+4.0 
+4.1 
+HDD Pull-Back Forces and Stresses 
+The pullback force and stress analyses were performed using the program 
+DRILLPATH2. The program solves for the tensile forces, tensile stresses, and the 
+internal and external pressures acting along the length of the pipe being installed by 
+HDD methods. Determination of the tensile forces and stresses along the HDD installed 
+pipe is based on a mathematical model developed by Exxon Production Research 
+(Johanesik et al., 1984). The mathematical model was modified by considering the 
+SECTION 4. DESIGN ANALYSES 
+W.O. 6831-10 
+GEOLABS, INC. 
+Page 23  
+Hawaii • California 
+bending influence by using the “capstan effect”. The computer output of the pullback 
+forces and stresses for the proposed HDD runs are presented in Appendix C. 
+4.2 
+Drilling Fluid Pressure versus Hydraulic Fracture Pressure 
+During drilling operations, the drilling slurry exerts a pressure in the borehole. If 
+this pressure exceeds the hydraulic fracture pressure of the in-situ soil, then heave 
+and/or blowout of the ground surface may occur. Drilling fluid pressure is determined 
+from the sum of the hydrostatic pressure and circulation pressure of the drilling fluid. 
+The hydraulic fracture pressure of the soil is the sum of the vertical in-situ stress of the 
+soil and the shear strength of the soil. 
+Based on our analyses, we believe that the anticipated drilling slurry pressure in 
+the borehole would not exceed the hydraulic fracture pressure of the in-situ soil 
+formation when the waterline invert is set at an elevation of about -105 feet MSL or 
+lower.  The computer output of the bottom hole pressure versus hydraulic fracture 
+pressure of the soil along the HDD runs is presented in Appendix D. 
+4.3 
+External Pressure Due to Hydrostatic Pressure of Drilling Slurry 
+The drilling slurry within the annular space of the pipe and borehole exerts an 
+external hydrostatic pressure on the pipe. This hydrostatic pressure is equal to the 
+height of the slurry head multiplied by the density of the slurry. The maximum height of 
+slurry corresponding to the maximum hydrostatic pressure was used in our analysis and 
+is presented in Appendix E. 
+4.4 
+External Pressure Due to Earth and Live Loads 
+We are not aware of published reports that provide acceptable methods of 
+calculating the earth loads imposed on HDD installed pipes. To estimate the earth 
+pressure on an HDD pipe, a conservative method to estimate the earth pressure on a 
+jack-and-bored pipe developed by Stein et al., 1989, may be used. This external 
+pressure was compared to the critical buckling pressure of the pipe using a factor of 
+safety of 2. These calculations are presented in Appendix E. 
+SECTION 4. DESIGN ANALYSES 
+W.O. 6831-10 
+GEOLABS, INC. 
+Page 24  
+Hawaii • California 
+4.5 
+Ring Deflection Due to Buoyancy, and Earth and Live Loads 
+The percent vertical deflection due to buoyancy and due to earth and live loads 
+were estimated for the pipe for the proposed HDD runs. The estimated percent vertical 
+deflection was limited to 4 percent for pressurized pipes as specified in Table 2 of the 
+publication prepared by Plastic Pipe Institute entitled "Handbook of Polyethylene Pipe," 
+dated March 2009 or Table 3 of the publication prepared by Chevron Chemical Co. 
+entitled "Technical Note: Horizontal Directional Drilling (Guided Boring) with PLEXCO 
+Pipe," dated 1999. These calculations are presented in Appendix E. 
+END OF DESIGN ANALYSES 
+W.O. 6831-10 
+GEOLABS, INC. 
+Page 25  
+Hawaii • California 
+SECTION 5.  LIMITATIONS 
+The analyses and recommendations submitted herein are based, in part, upon 
+information obtained from the field borings and the geophysical survey using electrical 
+resistivity tomography. Variations of subsurface conditions between and beyond the 
+field borings and survey area may occur, and the nature and extent of these variations 
+may not become evident until construction is underway. If variations then appear 
+evident, it will be necessary to re-evaluate the recommendations provided herein. 
+The field boring location (Boring No. 301A) indicated herein was taped with 
+reference to the features shown on the Water Main Plan and Profile 1, 16” & 12” HDPE 
+Pipes and Topographic Survey Plan and the Water Main Plan and Profile transmitted by 
+Moffatt & Nichol on August 27, 2013 and November 19, 2014, respectively. The Boring 
+elevation was obtained by interpolating between the spot elevations shown on the same 
+plan. The physical location and field boring elevation should be considered accurate 
+only to the degree implied by the method used. 
+The stratification lines shown on graphic representations of the boring depict the 
+approximate boundaries between soil/rock types and, as such, may denote a gradual 
+transition. Water level data from the boring was measured at the time shown on the 
+graphic representations and/or presented in the text of this report. These data have 
+been reviewed and interpretations made in the formulation of this report. However, it 
+must be noted that fluctuation is expected due to tides, variation in rainfall, temperature, 
+and other factors. 
+This report has been prepared for the exclusive use of Moffatt & Nichol and their 
+client, State of Hawaii - Department of Transportation, Harbors Division, for specific 
+application to the proposed New Waterline Replacement at the Kapalama Container 
+Terminal project in Honolulu in accordance with generally accepted geotechnical 
+engineering principles and practices. No warranty is expressed or implied. 
+This report has been prepared solely for the purpose of assisting the engineer in 
+the design of the proposed project. Therefore, this report may not contain sufficient 
+SECTION 5. LIMITATIONS  
+W.O. 6831-10 
+GEOLABS, INC. 
+Page 26  
+Hawaii • California 
+data, or the proper information, to serve as the basis for preparation of construction cost 
+estimates. A contractor wishing to bid on this project is urged to retain a competent 
+geotechnical engineer to assist in the interpretation of this report and/or in the 
+performance of additional site-specific exploration for bid estimating purposes. 
+The owner/client should be aware that unanticipated soil/rock conditions are 
+commonly encountered. Unforeseen soil conditions, such as perched groundwater, soft 
+deposits, hard layers, or cavities may occur in localized areas and may require 
+additional probing or corrections in the field (which may result in construction delays) to 
+attain a properly constructed project. Therefore, a sufficient contingency fund is 
+recommended to accommodate these possible extra costs. 
+The geotechnical engineering exploration conducted at the project site was not 
+intended to investigate the potential presence of hazardous materials existing at the 
+site. It should be noted that the equipment, techniques, and personnel used to conduct 
+a geoenvironmental exploration differ substantially from those applied in geotechnical 
+engineering. 
+END OF LIMITATIONS 
+CLOSURE
+The following plates and appendices are attached and complete this report:
+Project LOGation Ma w cmssnis nes anmmamcernme wei core ems ces ca at ns ous TRUER EEREO REAR REREERKNERS Plate 1
+Sits PUBIA sissies cas cms unin van iN MR ORIN OE GR A MU HEIR RG KEIO DRONA RR ATO Ra RI Plate 2
+t=) (6 =>.¢ 0) (0) £- 11 (0) 9 eee Appendix A
+=| oe) £-1 0) nV R=) | ee Appendix B
+Pipe Pullback Ana€lySIS............::cceeeceeeeee eee eeeeeeeee tees ee eaaaaaeeeeeeeeessaaaaeeeeeeeeeseaaaaaes Appendix C
+rycraulic Freciore ANGIYS)S sence on come OCKRARIE ce HORROR ACE Appendix D
+Services Life Load Caleul ation tS sca css ccs cons mmeseanscnamemsaeenewss exevanann eves aaes wets ante ant ae Appendix E
+Selected Logs of Borings from Previous Explorations ............::::::::esseeeeeeeeeeeees Appendix F
+Geophysical Survey Report ........... eee ee teen teeter ee teeeaaaeeeeeeeeeeeeeeeeeeeneeeaaaees Appendix G
+“QQQQQOQOOO-
+Respectfully submitted,
+GEOLABS, INC.
+By Nace Qe. By JLt_6—7>
+ohn Y.L. Chen, P.E
+Glenn G. Barut, P.E.
+Vice President Senior Project Engineer
+JC:GB:cj uf
+kU
+h:\6800 Series\6831-10.gb1
+W.O. 6831-10 GEOLABS, INC. Page 27
+Hawaii ¢ California
+PLATES 
+KAPALAMA CONTAINER TERMINAL
+NEW WATERLINE REPLACEMENT
+PROJECT LOCATION MAP
+GRAPHIC SCALE
+1000
+2000
+2000
+0
+FT.
+PROJECT LOCATION
+GENERAL PROJECT LOCATION
+N
+WAHIAWA
+WAIKIKI
+HONOLULU
+AIEA
+PEARL CITY
+WAIPAHU
+EWA
+BARBERS POINT
+NANAKULI
+WAIANAE
+WAIALUA
+HALEIWA
+KAHUKU
+POINT
+DIAMOND
+HEAD
+HAWAII
+KAI
+WAIMANALO
+KAILUA
+KANEOHE
+KAHALUU
+PUNALUU
+HAUULA
+KAENA POINT
+ISLAND MAP
+NO SCALE
+HONOLULU, OAHU, HAWAII
+JANUARY  2018
+1" = 2,000'
+Geotechnical Engineering
+GEOLABS, INC.
+DATE
+SCALE
+1
+6831-10
+DRAWN BY
+JRP
+W.O.
+PLATE
+N
+PACIFIC      OCEAN
+REFERENCE: MAP CREATED WITH TOPO!® ©2001 NATIONAL
+GEOGRAPHIC (WWW.NATIONALGEOGRAPHIC.COM/TOPO).
+CAD User: JJP  File Last Updated: January 25, 2018 4:27:45pm  Plot Date:  February 01, 2018 - 11:22:50am
+File: T:\Drafting\Working\6831-10KapalamaContainerTerminal\6831-10PLM.dwg\PLM
+Plotter: DWG To PDF.pc3  Plotstyle: GEO-No-Dithering-Blue-Boring.ctb
+N
+GRAPHIC SCALE
+0
+75
+0
+150
+300
+450 FT.
+CAD User: JJP  File Last Updated: February 01, 2018 9:56:07am  Plot Date:  February 01, 2018 - 11:22:13am
+File: T:\Drafting\Working\6831-10KapalamaContainerTerminal\6831-10.SITEPLAN.dwg\Site Plan
+Plotter: DWG To PDF.pc3  Plotstyle: GEO-No-Dithering-RedBlue-Color.ctb
+REFERENCE: WATER MAIN PLAN AND PROFILE TRANSMITTED BY MOFFATT & NICHOL ON
+NOVEMBER 11, 2014 AND OVERLAYED ON GOOGLE EARTH IMAGE © 2015 GOOGLE.
+APPROXIMATE BORING LOCATION
+LEGEND:
+KAPALAMA CONTAINER TERMINAL
+HONOLULU, OAHU, HAWAII
+GEOLABS, INC.
+Geotechnical Engineering
+6831-10
+DRAWN BY
+JRP
+NEW WATERLINE REPLACEMENT
+1" = 150'
+JANUARY  2018
+SCALE
+DATE
+W.O.
+SITE PLAN
+2
+PLATE
+APPROXIMATE PREVIOUS BORING LOCATION (W.O. 6831-00)
+APPROXIMATE PREVIOUS BORING LOCATION (W.O. 6826-00)
+B-115
+B-16
+B-6
+B-1
+B-301A
+APPENDIX A 
+W.O. 6831-10 
+GEOLABS, INC. 
+FEBRUARY 2018     Page A-1 
+Hawaii • California 
+A P P E N D I X   A 
+Field Exploration 
+We explored the subsurface conditions by drilling and sampling one land boring, 
+designated as Boring No. 301A, extending to a depth of about 42.5 feet below the 
+existing ground surface. The test boring was drilled using a truck-mounted drill rig 
+equipped with continuous flight augers and rotary coring tools.  The approximate boring 
+location is shown on the Site Plan, Plate 2. 
+Our engineer classified the materials encountered in the borings by visual and 
+textural examination in the field in general accordance with ASTM D2488, Standard 
+Practice for Description and Identification of Soils, and monitored the drilling operations 
+on a near-continuous basis. These classifications were further reviewed visually and by 
+testing in the laboratory. Soils were classified in general accordance with ASTM D2487, 
+Standard Practice for Classification of Soils for Engineering Purposes (Unified Soil 
+Classification System), as shown on the Soil Log Legend, Plate A-0.1. Deviations made 
+to the soil classification in accordance with ASTM D2487 are described on the Soil 
+Classification Log Key, Plate A-0.2. Graphic representations of the materials 
+encountered are presented on the Logs of Boring, Plates A-1.1 and A-1.2. 
+Relatively “undisturbed” soil samples were obtained in general accordance with 
+ASTM D3550, Ring-Lined Barrel Sampling of Soils, by driving a 3-inch OD modified 
+California sampler with a 140-pound hammer falling 30 inches. In addition, some 
+samples were obtained from the drilled borings in general accordance with 
+ASTM D1586, Penetration Test and Split-Barrel Sampling of Soils, by driving a 2-inch 
+OD standard penetration sampler using the same hammer and drop. The blow counts 
+needed to drive the sampler the second and third 6 inches of an 18-inch drive are 
+shown as the “Penetration Resistance” on the Logs of Boring at the appropriate sample 
+depths. The penetration resistance shown on the Logs of Boring indicate the number of 
+blows required for the specific sampler type used. The blow counts may need to be 
+factored to obtain the Standard Penetration Test (SPT) blow counts. 
+Core samples of the rock materials encountered at the project site were obtained 
+by using diamond core drilling techniques in general accordance with ASTM D2113, 
+Diamond Core Drilling for Site Investigation. Core drilling is a rotary drilling method that 
+uses a hollow bit to cut into the rock formation. The rock material left in the hollow core 
+of the bit is mechanically recovered for examination and description. Rock cores were 
+described in general accordance with the Rock Description System, as shown on the 
+Rock Log Legend, Plate A-0.3. The Rock Description System is based on the 
+publication “Suggested Methods for the Quantitative Description of Discontinuities in 
+Rock Masses” by the International Society for Rock Mechanics (March 1977). 
+Recovery (REC) is used as a subjective guide to the interpretation of the relative 
+quality of rock masses. Recovery is defined as the actual length of material recovered 
+from a coring attempt versus the length of the core attempt. For example, if 3.7 feet of 
+Appendix A 
+Field Exploration 
+W.O. 6831-10 
+GEOLABS, INC. 
+FEBRUARY 2018     Page A-2  
+Hawaii • California 
+material is recovered from a 5.0-foot core run, the recovery would be 74 percent and 
+would be shown on the Logs of Borings as REC = 74%. 
+The Rock Quality Designation (RQD) is also a subjective guide to the relative 
+quality of rock masses. RQD is defined as the percentage of the core run that is sound 
+material in excess of 4 inches in length without any discontinuities, discounting any drilling 
+induced fractures or breaks. If 2.5 feet of sound material is recovered from a 5.0-foot core 
+run, the RQD would be 50 percent and would be shown on the Logs of Borings as 
+RQD = 50%. Generally, the following is used to describe the relative quality of the rock 
+based on the "Practical Handbook of Physical Properties of Rocks and Minerals." 
+Rock Quality 
+RQD 
+(%) 
+Very Poor 
+0 – 25 
+Poor 
+25 – 50 
+Fair 
+50 – 75 
+Good 
+75 – 90 
+Excellent 
+90 – 100 
+The rippability (or excavation characteristics) of a rock mass is a function of the 
+relative hardness of the rock, its relative quality, brittleness, and fissile characteristics. 
+Dense basalt formations with high RQD values would be very difficult to rip and probably 
+would require more arduous methods of excavation. 
+A-0.1
+UNCONSOLIDATED UNDRAINED TRIAXIAL
+COMPRESSION (ksf)
+MORE THAN 50%
+OF COARSE
+FRACTION
+RETAINED ON
+NO. 4 SIEVE
+50% OR MORE OF
+COARSE FRACTION
+PASSING
+THROUGH NO. 4
+SIEVE
+MORE THAN 50%
+OF MATERIAL
+RETAINED ON NO.
+200  SIEVE
+50% OR MORE OF
+MATERIAL PASSING
+THROUGH NO. 200
+SIEVE
+TORVANE SHEAR (tsf)
+(2-INCH) O.D. STANDARD PENETRATION TEST
+(3-INCH) O.D. MODIFIED CALIFORNIA SAMPLE
+INORGANIC SILTS AND VERY FINE SANDS,
+ROCK FLOUR, SILTY OR CLAYEY FINE SANDS
+OR CLAYEY SILTS WITH SLIGHT PLASTICITY
+POORLY-GRADED GRAVELS, GRAVEL-SAND
+MIXTURES, LITTLE OR NO FINES
+CLAYEY GRAVELS, GRAVEL-SAND-CLAY
+MIXTURES
+WELL-GRADED SANDS, GRAVELLY SANDS,
+LITTLE OR NO FINES
+POORLY-GRADED SANDS, GRAVELLY
+SANDS, LITTLE OR NO FINES
+SILTY SANDS, SAND-SILT MIXTURES
+CLAYEY SANDS, SAND-CLAY MIXTURES
+LIQUID LIMIT
+50 OR MORE
+CH
+NOTE: DUAL SYMBOLS ARE USED TO INDICATE BORDERLINE SOIL CLASSIFICATIONS
+MH
+SILTS
+AND
+CLAYS
+SILTS
+AND
+CLAYS
+LIQUID LIMIT
+LESS THAN 50
+USCS
+TYPICAL
+DESCRIPTIONS
+GW
+MORE THAN 12%
+FINES
+WATER LEVEL OBSERVED IN BORING OVERNIGHT
+HIGHLY ORGANIC SOILS
+SILTY GRAVELS, GRAVEL-SAND-SILT
+MIXTURES
+OL
+PEAT, HUMUS, SWAMP SOILS WITH HIGH
+ORGANIC CONTENTS
+INORGANIC CLAYS OF LOW TO MEDIUM
+PLASTICITY, GRAVELLY CLAYS, SANDY
+CLAYS, SILTY CLAYS, LEAN CLAYS
+Soil Log Legend
+ORGANIC CLAYS OF MEDIUM TO HIGH
+PLASTICITY, ORGANIC SILTS
+SC
+Plate
+GM
+FINE-
+GRAINED
+SOILS
+COARSE-
+GRAINED
+SOILS
+CLEAN SANDS
+SANDS WITH
+FINES
+SP
+SANDS
+GRAVELS
+WELL-GRADED GRAVELS,  GRAVEL-SAND
+MIXTURES, LITTLE OR NO FINES
+ML
+CL
+OH
+LESS THAN 5%
+FINES
+GRAVELS WITH
+FINES
+CLEAN
+GRAVELS
+GRAB SAMPLE
+PLASTICITY INDEX (NP=NON-PLASTIC)
+TV
+LEGEND
+WATER LEVEL OBSERVED IN BORING AT TIME OF
+DRILLING
+WATER LEVEL OBSERVED IN BORING AFTER DRILLING
+SM
+MAJOR DIVISIONS
+GP
+MORE THAN 12%
+FINES
+PT
+LESS THAN 5%
+FINES
+UNIFIED SOIL CLASSIFICATION SYSTEM (USCS)
+ORGANIC SILTS AND ORGANIC SILTY
+CLAYS OF LOW PLASTICITY
+SW
+GC
+INORGANIC SILT, MICACEOUS OR
+DIATOMACEOUS FINE SAND OR SILTY
+SOILS
+INORGANIC CLAYS OF HIGH PLASTICITY
+PI
+LL
+TXUU
+UNCONFINED COMPRESSION
+OR UNIAXIAL COMPRESSIVE STRENGTH
+CORE SAMPLE
+SHELBY TUBE SAMPLE
+LIQUID LIMIT (NP=NON-PLASTIC)
+UC
+GEOLABS, INC.
+Geotechnical Engineering
+LOG LEGEND FOR SOIL  7478-00.GPJ  GEOLABS.GDT  6/27/17
+A-0.2
+Gravel
+#10 to #40 (2-mm to 0.425-mm)
+#40 to #200 (0.425-mm to 0.075-mm)
+3 to 12 inches (75-mm to 305-mm)
+Description
+PP Readings
+(tsf)
+2.0 - 4.0
+> 4.0
+N-Value (Blows/Foot)
+MCS
+0 - 4
+RELATIVE DENSITY / CONSISTENCY
+GRAIN SIZE DEFINITION
+ABBREVIATIONS
+N-Value (Blows/Foot)
+0 - 7
+Dry:    Absence of moisture, dry to the touch
+Moist: Damp but no visible water
+Wet:   Visible free water, usually soil is below water table
+WOH:  Weight of Hammer
+WOR:  Weight of Drill Rods
+SPT:    Standard Penetration Test Split-Spoon Sampler
+MCS:   Modified California Sampler
+PP:      Pocket Penetrometer
+4 - 7
+7 - 15
+15 - 27
+27 - 55
+SPT
+0 - 2
+> 55
+> 30
+4 - 8
+Medium Sand
+Fine Sand
+#4 to #200 (4.75-mm to 0.075-mm)
+#4 to #10 (4.75-mm to 2-mm)
+> 12 inches (305-mm)
+3-inch to #4 (75-mm to 4.75-mm)
+Sieve Number and / or Size
+15 - 30
+MOISTURE CONTENT DEFINITIONS
+SPT
+0 - 4
+4 - 10
+10 - 30
+30 - 50
+> 50
+MCS
+Loose
+EXAMPLE: Soil Containing 60% Gravel, 25% Sand, 15% Fines. Described as: SILTY GRAVEL with some sand
+Plate
+GRANULAR SOIL (- #200 <50%)
+2 - 4
+8 - 15
+Relative
+Density
+Very Loose
+Dense
+Very Dense
+COHESIVE SOIL (- #200    50%)
+PRIMARY constituents are composed of the largest
+percent of the soil mass. Primary constituents are
+capitalized and bold (i.e., GRAVEL, SAND)
+PRIMARY constituents are based on plasticity. Primary
+constituents are capitalized and bold (i.e., CLAY, SILT)
+SECONDARY constituents are composed of a
+percentage less than the primary constituent. If the soil
+mass consists of 12 percent or more fines content, a
+cohesive constituent is used (SILTY or CLAYEY);
+otherwise, a granular constituent is used (GRAVELLY
+or SANDY) provided that the secondary constituent
+consists of 20 percent or more of the soil mass.
+Secondary constituents are capitalized and bold (i.e.,
+SANDY GRAVEL, CLAYEY SAND) and precede the
+primary constituent.
+SECONDARY constituents are composed of a
+percentage less than the primary constituent, but more
+than 20 percent of the soil mass. Secondary constituents
+are capitalized and bold (i.e., SANDY CLAY, SILTY
+CLAY, CLAYEY SILT) and precede the primary
+constituent.
+Sand
+Boulders
+Cobbles
+Coarse Gravel
+3-inch to 3/4-inch (75-mm to 19-mm)
+Fine Gravel
+3/4-inch to #4 (19-mm to 4.75-mm)
+GEOLABS, INC. CLASSIFICATION*
+Granular Soils
+Cohesive Soils
+Consistency
+accessory descriptions compose of the following:
+with some: >12%
+with a little: 5 - 12%
+with traces of: <5%
+accessory descriptions are lower cased and follow the
+Primary and Secondary Constituents
+(i.e., SILTY CLAY with some sand)
+Very Soft
+Soft
+Medium Stiff
+Stiff
+Very Stiff
+Hard
+< 0.5
+0.5 - 1.0
+1.0 - 2.0
+7 - 18
+18 - 55
+55 - 91
+> 91
+Medium Dense
+Coarse Sand
+(with deviations from ASTM D2488)
+Soil Classification Log Key
+*Soil descriptions are based on ASTM D2488-09a, Visual-Manual Procedure, with the
+above modifications by Geolabs, Inc. to the Unified Soil Classification System (USCS).
+accessory descriptions compose of the following:
+with some: >12%
+with a little: 5 - 12%
+with traces of: <5%
+accessory descriptions are lower cased and follow the
+Primary and Secondary Constituents
+(i.e., SILTY GRAVEL with a little sand)
+SOIL_CLASS_LOG_KEY  7478-00.GPJ  GEOLABS.GDT  6/27/17
+GEOLABS, INC.
+Geotechnical Engineering
+A-0.3
+ROCK DESCRIPTIONS
+Plate
+BRECCIA
+CLINKER
+COBBLES
+CORAL
+BASALT
+ROCK DESCRIPTION SYSTEM
+Greater than 24 inches apart
+12 to 24 inches apart
+6 to 12 inches apart
+3 to 6 inches apart
+Less than 3 inches apart
+Rock shows no sign of discoloration or loss of strength.
+Slight discoloration inwards from open fractures.
+Discoloration throughout and noticeably weakened though not able to break by hand.
+Most minerals decomposed with some corestones present in residual soil mass. Can be broken by hand.
+Saprolite. Mineral residue completely decomposed to soil but fabric and structure preserved.
+The following terms describe general fracture spacing of a rock:
+The following terms describe the chemical weathering of a rock:
+ROCK FRACTURE CHARACTERISTICS
+DEGREE OF WEATHERING
+HARDNESS
+BOULDERS
+VOID/CAVITY
+TUFF
+SILTSTONE
+LIMESTONE
+Unweathered:
+Slightly Weathered:
+Moderately Weathered:
+Highly Weathered:
+Extremely Weathered:
+Very Hard:
+Hard:
+Medium Hard:
+Soft:
+Very Soft:
+SANDSTONE
+Massive:
+Slightly Fractured:
+Moderately Fractured:
+Closely Fractured:
+Severely Fractured:
+Rock Log Legend
+The following terms describe the resistance of a rock to indentation or scratching:
+Specimen breaks with difficulty after several "pinging" hammer blows.
+Example: Dense, fine grain volcanic rock
+Specimen breaks with some difficulty after several hammer blows.
+Example: Vesicular, vugular, coarse-grained rock
+Specimen can be broked by one hammer blow. Cannot be scraped by knife. SPT may penetrate by
+~25 blows per inch with bounce.
+Example: Porous rock such as clinker, cinder, and coral reef
+Can be indented by one hammer blow. Can be scraped or peeled by knife. SPT can penetrate by
+~100 blows per foot.
+Example: Weathered rock, chalk-like coral reef
+Crumbles under hammer blow. Can be peeled and carved by knife. Can be indented by finger
+pressure.
+Example: Saprolite
+CONGLOMERATE
+GEOLABS, INC.
+Geotechnical Engineering
+LOG LEGEND FOR ROCK  7478-00.GPJ  GEOLABS.GDT  6/27/17
+53
+15
+33
+3
+23/6"
+ +30/2"
+42
+0
+0
+0
+100
+50
+45
+101
+70
+70
+GM
+CH
+SM
+GP/
+GM
+GC
+GP/
+GM
+Sieve
+- #200 =
+27.2%
+Sieve
+- #200 =
+10.6%
+Direct
+Shear
+Sieve
+- #200 =
+9.2%
+Sieve
+- #200 =
+5.4%
+13
+12
+31
+40
+44
+30
+22
+4-inch ASPHALTIC CONCRETE
+Grayish brown SILTY GRAVEL (BASALTIC),
+WITH SAND, medium dense, damp (base
+course)
+Brown SILTY CLAY with some sand (coralline),
+stiff, moist (fill)
+Tan SILTY SAND with gravel (coralline), medium
+dense, damp (fill)
+Gray SANDY GRAVEL with little silt, very loose
+(lagoonal deposit)
+Gray CLAYEY GRAVEL with sand and shellc,
+very loose (lagoonal deposit)
+Tan SANDY GRAVEL (CORALLINE) with little
+silt, dense (coralline detritus)
+Field
+December 8, 2014
+December 8, 2014
+E. Shinsato
+42.5 feet
+6831-10
+USCS
+Depth (feet)
+Water Level:
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation (feet MSL): 17 *
+Sample
+Dry Density
+(pcf)
+Description
+RQD (%)
+Pocket Pen.
+(tsf)
+CME-75DR
+4" Auger & PQ Coring
+140 lb. wt., 30 in. drop
+5
+10
+15
+20
+25
+30
+35
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Moisture
+Content (%)
+301A
+Core
+Recovery (%)
+Laboratory
+A - 1.1
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+GEOLABS, INC.
+Geotechnical Engineering
+NEW WATERLINE REPLACEMENT
+KAPALAMA CONTAINER TERMINAL
+HONOLULU, OAHU, HAWAII
+BORING_LOG  6831-10.GPJ  GEOLABS.GDT  1/30/15
+7.4 ft.   12/08/2014 1130 HRS
+50/5"
+9
+0
+GP/
+GM
+GW
+16
+30
+Tannish brown SANDY GRAVEL with some silt,
+medium dense (coralline detritus)
+ Boring terminated at 42.5 feet
+ * Elevation is estimated based on Google Maps ©
+2013 Google
+Field
+December 8, 2014
+December 8, 2014
+E. Shinsato
+42.5 feet
+6831-10
+USCS
+Depth (feet)
+Water Level:
+Penetration
+Resistance
+(blows/foot)
+Sample
+Dry Density
+(pcf)
+Description
+RQD (%)
+Pocket Pen.
+(tsf)
+CME-75DR
+4" Auger & PQ Coring
+140 lb. wt., 30 in. drop
+40
+45
+50
+55
+60
+65
+70
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Moisture
+Content (%)
+301A
+Core
+Recovery (%)
+(Continued from previous plate)
+Laboratory
+A - 1.2
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+GEOLABS, INC.
+Geotechnical Engineering
+NEW WATERLINE REPLACEMENT
+KAPALAMA CONTAINER TERMINAL
+HONOLULU, OAHU, HAWAII
+BORING_LOG  6831-10.GPJ  GEOLABS.GDT  1/30/15
+7.4 ft.   12/08/2014 1130 HRS
+APPENDIX B 
+W.O. 6831-10 
+GEOLABS, INC. 
+FEBRUARY 2018     Page B-1  
+Hawaii • California 
+A P P E N D I X   B 
+Laboratory Tests 
+Moisture Content (ASTM D2216) and Unit Weight (ASTM D2937) determinations 
+were performed on selected soil samples as an aid in the classification and evaluation 
+of soil properties. The test results are presented on the Logs of Boring at the 
+appropriate sample depths. 
+Four Sieve Analysis tests (ASTM C117 & C136), including four hydrometer tests 
+(ASTM D422), were performed on selected soil samples to evaluate the gradation 
+characteristics of the soils and to aid in soil classification. Graphic presentations of the 
+grain size distribution are provided on Plate B-1. 
+One Direct Shear test (ASTM D3080) was performed on a selected soil sample 
+to evaluate the shear strength characteristics of the materials tested. The test results 
+are presented on Plate B-2. 
+0
+5
+10
+15
+20
+25
+30
+35
+40
+45
+50
+55
+60
+65
+70
+75
+80
+85
+90
+95
+100
+0.001
+0.01
+0.1
+1
+10
+100
+3/8
+0.3
+6.1
+1.6
+173.7
+132.5
+65.6
+HYDROMETER
+3
+GRAIN SIZE IN MILLIMETERS
+PERCENT FINER BY WEIGHT
+100
+coarse
+1/2
+Sample
+0.101
+0.293
+2.753
+2.279
+0.88
+7.543
+12.811
+14.423
+B - 1
+PI
+LL
+PL
+coarse
+1
+1.5
+3
+2
+0.043
+0.097
+0.22
+40
+Depth (ft)
+%Gravel
+25.6
+48.9
+63.4
+61.9
+47.2
+40.5
+27.3
+32.8
+%Sand
+COBBLES
+Sample
+D30 (mm)
+140
+20
+Description
+Cu
+GRAVEL
+U.S. SIEVE NUMBERS
+D10 (mm)
+Light gray silty sand (SM) with some gravel
+Light gray sandy gravel (GP-GM) with little silt
+Light gray sandy gravel (GP-GM) with little silt
+Light gray sandy gravel (GW-GM) with little silt
+16
+fine
+37.5
+37.5
+37.5
+37.5
+Cc
+3/4
+fine
+SILT OR CLAY
+medium
+GRAIN SIZE DISTRIBUTION - ASTM C 117 & C 136
+SAND
+%Fine
+60
+4
+30
+200
+4
+6
+27.2
+10.6
+9.2
+5.4
+Depth (ft)
+810 14
+50
+U.S. SIEVE OPENING IN INCHES
+6
+D60 (mm)
+D100 (mm)
+B-301A
+B-301A
+B-301A
+B-301A
+2.5-4.0
+10.5-12.0
+20.5-21.7
+30.5-32.0
+2.5-4.0
+10.5-12.0
+20.5-21.7
+30.5-32.0
+B-301A
+B-301A
+B-301A
+B-301A
+NEW WATERLINE REPLACEMENT
+KAPALAMA CONTAINER TERMINAL
+HONOLULU, OAHU, HAWAII
+Plate
+W.O. 6831-10
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+G_GRAIN_SIZE  6831-10.GPJ  GEOLABS.GDT  1/30/15
+0
+500
+1,000
+1,500
+2,000
+2,500
+3,000
+0
+500
+1,000
+1,500
+2,000
+2,500
+3,000
+NORMAL STRESS, psf
+SHEAR STRESS, psf
+INITIAL
+Moisture Content, %
+Moisture Content, %
+Dry Density, pcf
+0 psf
+832
+1061
+2796
+0.0024
+0.0025
+0.0023
+2.42
+2.42
+2.42
+57.3
+53.5
+56.8
+58.1
+53.2
+55.1
+Cohesion:
+0.44
+0.44
+0.42
+1.010
+0.990
+0.970
+Height, inches
+Diameter, inches
+Peak Shear Stress, psf
+Shear Displacement, inches
+Light gray clayey gravel
+1.00
+1.00
+1.00
+Height, inches
+B - 2
+60.1
+67.9
+51.9
+FINAL
+Dry Density, pcf
+Normal Stress, psf
+Sample:
+B-301A
+15.5 - 17.0 feet
+Depth:
+Description:
+67.8
+80.1
+77.4
+Sample
+#1
+Sample
+#2
+Sample
+#3
+Deformation Rate, inch/minute
+Friction Angle:
+1000
+2000
+3000
+DIRECT SHEAR TEST -  ASTM D3080
+NEW WATERLINE REPLACEMENT
+KAPALAMA CONTAINER TERMINAL
+HONOLULU, OAHU, HAWAII
+Plate
+W.O. 6831-10
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+G_DIRECT_SHEAR  6831-10.GPJ  GEOLABS.GDT  2/17/15
+   degrees
+APPENDIX C 
+New Waterline Replacement
+Kapalama Container Terminal
+Honolulu, Oahu, Hawaii
+REFERENCE
+SP = fYfTTY
+ATL = fYfTTYD2(1/DR-1/DR2)
+TERMS
+SP = Safe Pull Stress
+ATL = Allowable Tensile Load
+D = Pipe Outside Diameter
+fY= tensile yield design (safety) factor
+fT = Time under tension design (safety) factor
+TY = PE material tensile yield strength, psi
+DR = Dimension Ratio = O.D. / minimum wall thickness
+ASSUMPTION
+Duration of pipe pullback up to about 
+12
+hours
+INPUT
+TY = 
+3250
+psi
+fY =
+0.4
+fT =
+0.95
+D =
+13.2
+inches
+DR = 
+9.0
+OUTPUT
+SP = 
+1235
+psi
+ATL =
+67,072
+pounds
+Notes:
+1.  Yellow cells are for input only.
+2.  Blue cells are for output only.
+1.  Bulletin:  PP 803-TN Technical Note 803 - Pull In Applications prepared by Performance 
+Pipe A Division of Chevron Phillips Chemical Company LP
+CALCULATE ALLOWABLE TENSILE LOAD FOR HDPE PIPE
+W.O. 6831-10
+GEOLABS, INC.
+Hawaii • California
+PLATE C-1
+New Waterline Replacement
+Kapalama Container Terminal
+Honolulu, Oahu, Hawaii
+REFERENCE
+SP = fYfTTY
+ATL = fYfTTYD2(1/DR-1/DR2)
+TERMS
+SP = Safe Pull Stress
+ATL = Allowable Tensile Load
+D = Pipe Outside Diameter
+fY= tensile yield design (safety) factor
+fT = Time under tension design (safety) factor
+TY = PE material tensile yield strength, psi
+DR = Dimension Ratio = O.D. / minimum wall thickness
+ASSUMPTION
+Duration of pipe pullback up to about 
+12
+hours
+INPUT
+TY = 
+3250
+psi
+fY =
+0.4
+fT =
+0.95
+D =
+17.4
+inches
+DR = 
+9.0
+OUTPUT
+SP = 
+1235
+psi
+ATL =
+116,017
+pounds
+Notes:
+1.  Yellow cells are for input only.
+2.  Blue cells are for output only.
+1.  Bulletin:  PP 803-TN Technical Note 803 - Pull In Applications prepared by Performance 
+Pipe A Division of Chevron Phillips Chemical Company LP
+CALCULATE ALLOWABLE TENSILE LOAD FOR HDPE PIPE
+W.O. 6831-10
+GEOLABS, INC.
+Hawaii • California
+PLATE C-2
+W.O. 6831-10 
+PLATE C-3
+W.O. 6831-10 
+PLATE C-4
+W.O. 6831-10 
+PLATE C-5
+W.O. 6831-10 
+PLATE C-6
+W.O. 6831-10 
+PLATE C-7
+W.O. 6831-10 
+PLATE C-8
+W.O. 6831-10 
+PLATE C-9
+W.O. 6831-10 
+PLATE C-10
+W.O. 6831-10 
+PLATE C-11
+W.O. 6831-10 
+PLATE C-12
+W.O. 6831-10 
+PLATE C-13
+W.O. 6831-10 
+PLATE C-14
+W.O. 6831-10 
+PLATE C-15
+W.O. 6831-10 
+PLATE C-16
+W.O. 6831-10 
+PLATE C-17
+W.O. 6831-10 
+PLATE C-18
+W.O. 6831-10 
+PLATE C-19
+W.O. 6831-10 
+PLATE C-20
+W.O. 6831-10 
+PLATE C-21
+W.O. 6831-10 
+PLATE C-22
+W.O. 6831-10 
+PLATE C-23
+W.O. 6831-10 
+PLATE C-24
+W.O. 6831-10 
+PLATE C-25
+W.O. 6831-10 
+PLATE C-26
+W.O. 6831-10 
+PLATE C-27
+W.O. 6831-10 
+PLATE C-28
+W.O. 6831-10 
+PLATE C-29
+W.O. 6831-10 
+PLATE C-30
+W.O. 6831-10 
+PLATE C-31
+W.O. 6831-10 
+PLATE C-32
+APPENDIX D 
+W.O. 6831-10
+PLATE D-1
+W.O. 6831-10
+PLATE D-2
+W.O. 6831-10
+PLATE D-3
+W.O. 6831-10
+PLATE D-4
+W.O. 6831-10
+PLATE D-5
+W.O. 6831-10
+PLATE D-6
+W.O. 6831-10
+PLATE D-7
+W.O. 6831-10
+PLATE D-8
+W.O. 6831-10
+PLATE D-9
+W.O. 6831-10
+PLATE D-10
+W.O. 6831-10
+PLATE D-11
+W.O. 6831-10
+PLATE D-12
+W.O. 6831-10
+PLATE D-13
+W.O. 6831-10
+PLATE D-14
+APPENDIX E 
+New Waterline Replacement
+Kapalama Container Terminal
+Honolulu, Oahu, Hawaii
+(12-Inch Waterline)
+REFERENCE
+PIPE
+Type:
+HDPE
+I.D. =
+10.3
+inches
+DR =
+9.0
+O.D. =
+13.2
+inches
+TERMS
+E = modulus of elasticity of the pipe, psi
+31500
+(long-term)
+55000
+(100-hour)
+B = borehole diameter, ft
+2.1
+Hc = cover depth of pipe, ft
+115
+(Maximum cover depth)
+fo = ovality compensation factor
+0.7
+(Fig. 3 of Reference 2)
+FS = factor of safety
+2
+(Typically value of 2 is used)
+mud = unit weight of mud, pcf
+89.7
+soil = unit weight of soil, pcf
+100
+= angle of internal friction, degrees
+28
+= Poisson's ratio
+0.45
+(Long-term loading)
+= Poisson's ratio
+0.35
+(Short-term loading)
+Elevation of Highest Point of Pipe, ft MSL
+10
+Elevation of Lowest Point of Pipe, ft MSL
+-105
+CALCULATED k = arching factor
+TERMS
+K = earth pressure coefficient
+Pn = net external pressure, psi
+Plive = live loading, psi
+Pe = external earth pressure, psi
+Pmud = hydrostatic pressure of mud, psi
+Pw = hydrostatic pressure of water, psi
+Pi = internal pressure, psi
+ALLOWABLE NET EXTERNAL COLLAPSE PRESSURE (Pua)
+Pua = ((2*E)/(1-2)) x (1/(DR-1)3 x (fo/FS))
+Pua(short-term) =
+85.7
+psi
+CHECK EXTERNAL PRESSURE ACTING ON PIPE (OPEN BOREHOLE)
+Pn = Pmud/water - Pi
+Pi = water*differential head of water
+Pmud/water = mud/water*differential head of mud
+Pn = 
+20.5
+psi
+85.7
+psi
+1.  Publication prepared by Plastic Pipe Institute entitled "Handbook of Polyethylene Pipe," 
+dated March 2009.
+2.  Publication prepared by Chevron Chemical Co. entitled "Technical Note: Horizontal 
+Directional Drilling (Guided Boring) with PLEXCO Pipe," dated 1999
+Pua = allowable net external collapse 
+pressure, psi
+External pressure is less than the allowable net external collapse pressure; therefore, pipe will not 
+collapse for an open hole condition.
+W.O. 6831-10
+GEOLABS, INC.
+PLATE E-1.1
+New Waterline Replacement
+Kapalama Container Terminal
+Honolulu, Oahu, Hawaii
+(12-Inch Waterline)
+CHECK EXTERNAL PRESSURE ACTING ON PIPE (COLLAPSED BOREHOLE)
+Pn = Pe + Pw - Pi
+Pe = ((k x soil x Hc) + Plive) / 144
+k = (1-exp(-2*(K*Hc/B)*tan(/2)))/(2*(K*Hc/B)*tan(/2))
+K = tan2(45-/2)
+K =
+0.3610
+k =
+0.1014
+height of water from piezometric surface to bottom of pipe=
+105
+feet
+Pe(above H2O)
+0.7
+psi
+Pe(below H2O)
+2.7
+psi
+Plive =
+0.0
+psi
+Pe =
+3.4
+psi
+Pn =
+48.9
+psi
+54.0
+psi
+Pua(long-term)
+Note:  Water pressure is included in Pn.
+CHECK RING DEFLECTION DUE TO BUOYANCY (OPEN BOREHOLE)
+Deflection limit from Table 2 of Reference 2 or from Table 3 of Reference 1 =
+4
+/D = ((0.088*mud*O.D.*(DR-1)4)/(E*DR))*100
+/D = 
+0.09
+% deflection less than the deflection limit; therefore, it is OK.
+CHECK RING DEFLECTION DUE TO EARTH & LIVE LOADS (COLLAPSED BOREHOLE)
+/D = (0.0125*Pe)/(E/(12*(DR-1)3)
+/D = 
+0.8
+% deflection less than the deflection limit; therefore it is OK.
+Notes:
+1.  Yellow cells are for input only.
+2.  Blue cells are for output only.
+External pressure is less than the allowable net external collapse pressure; therefore, pipe will not 
+collapse for a collapsed hole condition.
+W.O. 6831-10
+GEOLABS, INC.
+PLATE E-1.2
+New Waterline Replacement
+Kapalama Container Terminal
+Honolulu, Oahu, Hawaii
+(16-Inch Waterline)
+REFERENCE
+PIPE
+Type:
+HDPE
+I.D. =
+13.5
+inches
+DR =
+9.0
+O.D. =
+17.4
+inches
+TERMS
+E = modulus of elasticity of the pipe, psi
+31500
+(long-term)
+55000
+(100-hour)
+B = borehole diameter, ft
+2.1
+Hc = cover depth of pipe, ft
+115
+(Maximum cover depth)
+fo = ovality compensation factor
+0.7
+(Fig. 3 of Reference 2)
+FS = factor of safety
+2
+(Typically value of 2 is used)
+mud = unit weight of mud, pcf
+89.7
+soil = unit weight of soil, pcf
+100
+= angle of internal friction, degrees
+28
+= Poisson's ratio
+0.45
+(Long-term loading)
+= Poisson's ratio
+0.35
+(Short-term loading)
+Elevation of Highest Point of Pipe, ft MSL
+10
+Elevation of Lowest Point of Pipe, ft MSL
+-105
+CALCULATED k = arching factor
+TERMS
+K = earth pressure coefficient
+Pn = net external pressure, psi
+Plive = live loading, psi
+Pe = external earth pressure, psi
+Pmud = hydrostatic pressure of mud, psi
+Pw = hydrostatic pressure of water, psi
+Pi = internal pressure, psi
+ALLOWABLE NET EXTERNAL COLLAPSE PRESSURE (Pua)
+Pua = ((2*E)/(1-2)) x (1/(DR-1)3 x (fo/FS))
+Pua(short-term) =
+85.7
+psi
+CHECK EXTERNAL PRESSURE ACTING ON PIPE (OPEN BOREHOLE)
+Pn = Pmud/water - Pi
+Pi = water*differential head of water
+Pmud/water = mud/water*differential head of mud
+Pn = 
+20.5
+psi
+85.7
+psi
+1.  Publication prepared by Plastic Pipe Institute entitled "Handbook of Polyethylene Pipe," 
+dated March 2009.
+2.  Publication prepared by Chevron Chemical Co. entitled "Technical Note: Horizontal 
+Directional Drilling (Guided Boring) with PLEXCO Pipe," dated 1999
+Pua = allowable net external collapse 
+pressure, psi
+External pressure is less than the allowable net external collapse pressure; therefore, pipe will not 
+collapse for an open hole condition.
+W.O. 6831-10
+GEOLABS, INC.
+PLATE E-2.1
+New Waterline Replacement
+Kapalama Container Terminal
+Honolulu, Oahu, Hawaii
+(16-Inch Waterline)
+CHECK EXTERNAL PRESSURE ACTING ON PIPE (COLLAPSED BOREHOLE)
+Pn = Pe + Pw - Pi
+Pe = ((k x soil x Hc) + Plive) / 144
+k = (1-exp(-2*(K*Hc/B)*tan(/2)))/(2*(K*Hc/B)*tan(/2))
+K = tan2(45-/2)
+K =
+0.3610
+k =
+0.1014
+height of water from piezometric surface to bottom of pipe=
+105
+feet
+Pe(above H2O)
+0.7
+psi
+Pe(below H2O)
+2.7
+psi
+Plive =
+0.0
+psi
+Pe =
+3.4
+psi
+Pn =
+48.9
+psi
+54.0
+psi
+Pua(long-term)
+Note:  Water pressure is included in Pn.
+CHECK RING DEFLECTION DUE TO BUOYANCY (OPEN BOREHOLE)
+Deflection limit from Table 2 of Reference 2 or from Table 3 of Reference 1 =
+4
+/D = ((0.088*mud*O.D.*(DR-1)4)/(E*DR))*100
+/D = 
+0.11
+% deflection less than the deflection limit; therefore, it is OK.
+CHECK RING DEFLECTION DUE TO EARTH & LIVE LOADS (COLLAPSED BOREHOLE)
+/D = (0.0125*Pe)/(E/(12*(DR-1)3)
+/D = 
+0.8
+% deflection less than the deflection limit; therefore it is OK.
+Notes:
+1.  Yellow cells are for input only.
+2.  Blue cells are for output only.
+External pressure is less than the allowable net external collapse pressure; therefore, pipe will not 
+collapse for a collapsed hole condition.
+W.O. 6831-10
+GEOLABS, INC.
+PLATE E-2.2
+APPENDIX F 
+WATER
+Field
+September 17, 2013
+September 17, 2013
+M. Gruver
+72.5 feet
+6831-00
+USCS
+Depth (feet)
+Water Level:
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation (feet ): 0 *
+Sample
+Dry Density
+(pcf)
+Description
+RQD (%)
+A - 1.1
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+1
+DIEDRICH D-25
+ & HQ Coring
+140 lb. wt., 30 in. drop
+5
+10
+15
+20
+25
+30
+35
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Moisture
+Content (%)
+Core
+Recovery (%)
+Laboratory
+GEOLABS, INC.
+Geotechnical Engineering
+KAPALAMA CONTAINER WHARF
+AND DREDGING DESIGN
+HONOLULU, OAHU, HAWAII
+BORING_LOG  6831-00.GPJ  GEOLABS.GDT  4/16/14
+0.0 feet (at sea level)
+0
+0
+38
+40
+0
+47
+37
+48
+40/3"
+0
+17
+81
+68
+20
+82
+UC
+UC
+UC
+19
+23
+16
+ML
+Mudline at 40 feet
+Dark greenish gray SILT, very soft (harbor
+deposit)
+Tannish white CORAL, severely fractured,
+moderately weathered, medium hard
+grades to closely fractured
+grades to severely fractured
+Field
+September 17, 2013
+September 17, 2013
+M. Gruver
+72.5 feet
+6831-00
+USCS
+Depth (feet)
+Water Level:
+Penetration
+Resistance
+(blows/foot)
+Sample
+Dry Density
+(pcf)
+Description
+RQD (%)
+A - 1.2
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+1
+DIEDRICH D-25
+ & HQ Coring
+140 lb. wt., 30 in. drop
+40
+45
+50
+55
+60
+65
+70
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Moisture
+Content (%)
+Core
+Recovery (%)
+(Continued from previous plate)
+Laboratory
+GEOLABS, INC.
+Geotechnical Engineering
+KAPALAMA CONTAINER WHARF
+AND DREDGING DESIGN
+HONOLULU, OAHU, HAWAII
+BORING_LOG  6831-00.GPJ  GEOLABS.GDT  4/16/14
+0.0 feet (at sea level)
+grades to closely to moderately fractured,
+unweathered, medium hard to hard
+grades to severely fractured, moderately
+weathered, medium hard
+ Boring terminated at 72.5 feet
+ * Elevations estimated from based on Sea Level.
+Field
+September 17, 2013
+September 17, 2013
+M. Gruver
+72.5 feet
+6831-00
+USCS
+Depth (feet)
+Water Level:
+Penetration
+Resistance
+(blows/foot)
+Sample
+Dry Density
+(pcf)
+Description
+RQD (%)
+A - 1.3
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+1
+DIEDRICH D-25
+ & HQ Coring
+140 lb. wt., 30 in. drop
+75
+80
+85
+90
+95
+100
+105
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Moisture
+Content (%)
+Core
+Recovery (%)
+(Continued from previous plate)
+Laboratory
+GEOLABS, INC.
+Geotechnical Engineering
+KAPALAMA CONTAINER WHARF
+AND DREDGING DESIGN
+HONOLULU, OAHU, HAWAII
+BORING_LOG  6831-00.GPJ  GEOLABS.GDT  4/16/14
+0.0 feet (at sea level)
+14
+31
+0
+1.5
+19
+29
+12
+15
+3
+3
+7
+46
+46
+12
+10
+48
+83
+5
+Sieve
+- #200 =
+7.2%
+Sieve
+- #200 =
+9.6%
+LL=69
+PI=47
+22
+15
+35
+21
+34
+83
+51
+26
+32
+85
+75
+85
+SP-
+SM
+CL
+SP-
+SM
+CH
+ML
+6-inch ASPHALTIC CONCRETE
+Tan GRAVELLY SAND with little silt, medium
+dense, moist (fill)
+Tannish brown SANDY CLAY with some gravel
+(coralline), stiff, moist (fill)
+Gray GRAVELLY SAND (CORALLINE) with little
+silt, loose to very loose (estuarine deposit)
+grades with more gravel
+Gray CLAY with some gravel (coralline), soft to
+very soft (estuarine deposit)
+Black SANDY SILT, soft (estuarine deposit)
+Tannish white SANDSTONE (CALCAREOUS)
+interbedded with coralline detritus, closely
+fractured, moderately weathered, medium hard
+(coralline sandstone)
+Field
+March 23, 2013
+March 24, 2013
+M. Gruver
+121.5 feet
+6831-00
+USCS
+Depth (feet)
+Water Level:
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation (feet ): 9 *
+Sample
+Dry Density
+(pcf)
+Description
+RQD (%)
+A - 6.1
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+6
+CME-75DR
+4" Solid Stem Auger & PQ Coring
+140 lb. wt., 30 in. drop
+5
+10
+15
+20
+25
+30
+35
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Moisture
+Content (%)
+Core
+Recovery (%)
+Laboratory
+GEOLABS, INC.
+Geotechnical Engineering
+KAPALAMA CONTAINER WHARF
+AND DREDGING DESIGN
+HONOLULU, OAHU, HAWAII
+BORING_LOG  6831-00.GPJ  GEOLABS.GDT  4/16/14
+7.5 ft.   03/23/2013 0916 HRS
+19
+0
+0
+12
+10
+14
+46
+20
+27
+20
+20
+29
+30
+74
+38
+48
+86
+31
+67
+60
+UC
+UC
+26
+35
+28
+28
+30
+29
+20
+93
+71
+GP-
+GM
+grades to severely fractured
+grades with cemented shell fragments
+Tannish white CORAL, closely to severely
+fractured, moderately weathered, hard
+Grayish tan SANDY GRAVEL (CORALLINE) with
+a little silt, dense (coralline detritus)
+Field
+March 23, 2013
+March 24, 2013
+M. Gruver
+121.5 feet
+6831-00
+USCS
+Depth (feet)
+Water Level:
+Penetration
+Resistance
+(blows/foot)
+Sample
+Dry Density
+(pcf)
+Description
+RQD (%)
+A - 6.2
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+6
+CME-75DR
+4" Solid Stem Auger & PQ Coring
+140 lb. wt., 30 in. drop
+40
+45
+50
+55
+60
+65
+70
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Moisture
+Content (%)
+Core
+Recovery (%)
+(Continued from previous plate)
+Laboratory
+GEOLABS, INC.
+Geotechnical Engineering
+KAPALAMA CONTAINER WHARF
+AND DREDGING DESIGN
+HONOLULU, OAHU, HAWAII
+BORING_LOG  6831-00.GPJ  GEOLABS.GDT  4/16/14
+7.5 ft.   03/23/2013 0916 HRS
+54
+0
+0
+35
+15
+6
+7
+26/6"
++20/3"
+Ref.
+30
+37
+38
+29
+10
+55
+90
+33
+29
+Sieve
+- #200 =
+6.3%
+UC
+- #200 =
+24.4%
+UC
+23
+48
+19
+29
+15
+18
+20
+47
+89
+85
+GP-
+GM
+grades to medium dense
+encountered voids
+grades with pockets of clay, loose
+Tannish white CORAL, moderately fractured,
+moderately weathered, hard
+encountered voids
+grades to severely fractured
+encountered voids
+Field
+March 23, 2013
+March 24, 2013
+M. Gruver
+121.5 feet
+6831-00
+USCS
+Depth (feet)
+Water Level:
+Penetration
+Resistance
+(blows/foot)
+Sample
+Dry Density
+(pcf)
+Description
+RQD (%)
+A - 6.3
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+6
+CME-75DR
+4" Solid Stem Auger & PQ Coring
+140 lb. wt., 30 in. drop
+75
+80
+85
+90
+95
+100
+105
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Moisture
+Content (%)
+Core
+Recovery (%)
+(Continued from previous plate)
+Laboratory
+GEOLABS, INC.
+Geotechnical Engineering
+KAPALAMA CONTAINER WHARF
+AND DREDGING DESIGN
+HONOLULU, OAHU, HAWAII
+BORING_LOG  6831-00.GPJ  GEOLABS.GDT  4/16/14
+7.5 ft.   03/23/2013 0916 HRS
+0
+0
+0
+23
+39
+12
+22
+29
+29
+29
+7
+12
+16
+16
+101
+encountered voids
+ Boring terminated at 121.5 feet
+Field
+March 23, 2013
+March 24, 2013
+M. Gruver
+121.5 feet
+6831-00
+USCS
+Depth (feet)
+Water Level:
+Penetration
+Resistance
+(blows/foot)
+Sample
+Dry Density
+(pcf)
+Description
+RQD (%)
+A - 6.4
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+6
+CME-75DR
+4" Solid Stem Auger & PQ Coring
+140 lb. wt., 30 in. drop
+110
+115
+120
+125
+130
+135
+140
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Moisture
+Content (%)
+Core
+Recovery (%)
+(Continued from previous plate)
+Laboratory
+GEOLABS, INC.
+Geotechnical Engineering
+KAPALAMA CONTAINER WHARF
+AND DREDGING DESIGN
+HONOLULU, OAHU, HAWAII
+BORING_LOG  6831-00.GPJ  GEOLABS.GDT  4/16/14
+7.5 ft.   03/23/2013 0916 HRS
+67
+40
+43
+25
+25
+21
+3
+7
+3
+0
+0
+83
+70
+73
+Sieve
+- #200 =
+11.8%
+Sieve
+- #200 =
+7.1%
+Sieve
+- #200 =
+10.7%
+UC
+UC
+12
+15
+28
+40
+30
+56
+88
+77
+SP-
+SM
+SP-
+SM
+SW-
+SM
+6.5-inch ASPHALTIC CONCRETE
+Tan SILTY SAND with some gravel (coralline),
+medium dense, dry (fill)
+grades to moist
+Gray SILTY SAND with some gravel (coralline),
+very loose (lagoonal deposit)
+Dark gray SILTY SAND with traces of gravel,
+very loose (estuarine deposit)
+Light tannish white CORAL, moderately to
+closely fractured, moderately weathered,
+medium hard
+grades to severely fractured
+Field
+June 8, 2013
+June 8, 2013
+T. Samilin
+75 feet
+6831-00
+USCS
+Depth (feet)
+Water Level:
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation (feet ): 8.5 *
+Sample
+Dry Density
+(pcf)
+Description
+RQD (%)
+A - 16.1
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+16
+CME-75DG2
+4" Auger & PQ Coring
+140 lb. wt., 30 in. drop
+5
+10
+15
+20
+25
+30
+35
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Moisture
+Content (%)
+Core
+Recovery (%)
+Laboratory
+GEOLABS, INC.
+Geotechnical Engineering
+KAPALAMA CONTAINER WHARF
+AND DREDGING DESIGN
+HONOLULU, OAHU, HAWAII
+BORING_LOG  6831-00.GPJ  GEOLABS.GDT  4/16/14
+7.5 ft.   06/08/2013 1100 HRS
+40
+53
+43
+25
+37
+40
+30
+67
+87
+83
+65
+60
+77
+80
+UC
+UC
+UC
+UC
+UC
+Tannish white SANDSTONE (CALCAREOUS)
+interbedded with cemented coralline detritus,
+closely fractured, moderately weathered,
+medium hard (coralline sandstone)
+grades to moderately to severely fractured at 40
+feet
+grades with shells
+Light tannish white CORAL, moderately to
+severely fractured, moderately weathered,
+medium hard
+Field
+June 8, 2013
+June 8, 2013
+T. Samilin
+75 feet
+6831-00
+USCS
+Depth (feet)
+Water Level:
+Penetration
+Resistance
+(blows/foot)
+Sample
+Dry Density
+(pcf)
+Description
+RQD (%)
+A - 16.2
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+16
+CME-75DG2
+4" Auger & PQ Coring
+140 lb. wt., 30 in. drop
+40
+45
+50
+55
+60
+65
+70
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Moisture
+Content (%)
+Core
+Recovery (%)
+(Continued from previous plate)
+Laboratory
+GEOLABS, INC.
+Geotechnical Engineering
+KAPALAMA CONTAINER WHARF
+AND DREDGING DESIGN
+HONOLULU, OAHU, HAWAII
+BORING_LOG  6831-00.GPJ  GEOLABS.GDT  4/16/14
+7.5 ft.   06/08/2013 1100 HRS
+37
+53
+grades to closely fractured
+ Boring terminated at 75 feet
+Field
+June 8, 2013
+June 8, 2013
+T. Samilin
+75 feet
+6831-00
+USCS
+Depth (feet)
+Water Level:
+Penetration
+Resistance
+(blows/foot)
+Sample
+Dry Density
+(pcf)
+Description
+RQD (%)
+A - 16.3
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+16
+CME-75DG2
+4" Auger & PQ Coring
+140 lb. wt., 30 in. drop
+75
+80
+85
+90
+95
+100
+105
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Moisture
+Content (%)
+Core
+Recovery (%)
+(Continued from previous plate)
+Laboratory
+GEOLABS, INC.
+Geotechnical Engineering
+KAPALAMA CONTAINER WHARF
+AND DREDGING DESIGN
+HONOLULU, OAHU, HAWAII
+BORING_LOG  6831-00.GPJ  GEOLABS.GDT  4/16/14
+7.5 ft.   06/08/2013 1100 HRS
+1.5-inch ASPHALTIC CONCRETE
+Brown SANDY GRAVEL (CORALLINE), dense,
+moist (fill)
+Brown SILTY CLAY with some sand and a little
+gravel (coralline), soft, moist (fill)
+Tannish white SILTY SAND with some gravel
+(coralline), dense, moist (fill)
+Dark gray SANDY SILT, soft (lagoonal deposit)
+Tannish gray SILTY GRAVEL (CORALLINE) with
+a little sand, loose (coralline detritus)
+Light grayish white CORAL, moderately
+fractured, slightly to moderately weathered,
+medium hard to hard
+Brownish tan SILTY SAND with some gravel and
+a little cobbles (coralline), dense (coralline
+detritus)
+12
+10
+31
+38
+100
+83
+GW
+CL
+SM
+ML
+GP-
+GM
+SM
+43
+20
+35
+47
+28
+4
+4
+1
+60/6"
+0
+100
+72
+23
+Sieve
+- #200 =
+5.3%
+UC
+Field
+February 16, 2013
+February 26, 2013
+S. Latronic
+37.5 feet
+6826-00
+USCS
+Depth (feet)
+Water Level:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+115
+CME-75GY
+6" HS Auger, 4" Casing & PQ Coring
+140 lb. wt., 30 in. drop
+5
+10
+15
+20
+25
+30
+35
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Moisture
+Content (%)
+Core
+Recovery (%)
+Laboratory
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation (feet ): 8 *
+Sample
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Dry Density
+(pcf)
+Description
+RQD (%)
+A - 15.1
+Log of
+Boring
+4.5 ft.   02/26/2013 0945 HRS
+GEOLABS, INC.
+Geotechnical Engineering
+NEW KAPALAMA TERMINAL
+HONOLULU, OAHU, HAWAII
+BORING_LOG  6826-00.GPJ  GEOLABS.GDT  5/17/13
+ Boring terminated at 37.5 feet
+13
+SM
+74
+Field
+February 16, 2013
+February 26, 2013
+S. Latronic
+37.5 feet
+6826-00
+USCS
+Depth (feet)
+Water Level:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+115
+CME-75GY
+6" HS Auger, 4" Casing & PQ Coring
+140 lb. wt., 30 in. drop
+40
+45
+50
+55
+60
+65
+70
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Moisture
+Content (%)
+Core
+Recovery (%)
+(Continued from previous plate)
+Laboratory
+Penetration
+Resistance
+(blows/foot)
+Sample
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Dry Density
+(pcf)
+Description
+RQD (%)
+A - 15.2
+Log of
+Boring
+4.5 ft.   02/26/2013 0945 HRS
+GEOLABS, INC.
+Geotechnical Engineering
+NEW KAPALAMA TERMINAL
+HONOLULU, OAHU, HAWAII
+BORING_LOG  6826-00.GPJ  GEOLABS.GDT  5/17/13
+APPENDIX G 
+Global Geophysics 
+P. O. Box 2229 
+Tel: 425-890-4321 
+Redmond, WA 98073-2229 
+Fax: 360-805-0259 
+Global Geophysics 
+January 15, 2018 
+Our Ref.:  107-1213.000 
+Geolabs, Inc. 
+2006 Kalihi Street 
+Honolulu, HI 96819 
+Attention:  Mr. John Chen 
+RE: 
+REPORT ON THE GEOPHYSICAL SURVEY AT A CHANNEL CROSSING, 
+SAND ISLAND, HONOLULU, HI  
+Dear Mr. Chen: 
+Global Geophysics conducted electrical resistivity tomography (ERT) for the New Kapalama 
+Container Terminal Wharf and Dredging Project on January 11, 2018. The proposed 
+objectives of the geophysical investigations are to evaluate the subsurface conditions at the 
+channel crossing. 
+METHODOLOGY AND INSTRUMENTATION 
+Electrical resistivity tomography (ERT) was used for this project. The following paragraphs 
+describe the method and field procedure.  
+Electrical Resistivity Tomography (ERT) 
+The electrical resistivity tomography technique maps differences in the electrical properties 
+of geologic materials.  These differences can result from variations in lithology, water 
+content, and pore-water chemistry.  The method involves transmitting an electric current into 
+the ground between two electrodes and measuring the voltage between two other electrodes.  
+The direct measurement is an apparent resistivity of the area beneath the electrodes that 
+includes deeper layers as the electrode spacing is increased.  Recent advances in technology 
+permit rapid collection of multiple soundings, using up to 56 electrodes for each spread.  The 
+data are modeled to create a 2-D geo-electric cross-section that is useful for mapping both 
+vertical and horizontal variations of the subsurface strata. 
+The data were acquired with an AGI SuperSting R8 using up to 56 electrodes spaced at a 10 
+feet interval.  Once the cable was installed in the ground/seabed, multiple soundings were 
+automatically carried out by the control unit.  Downloading and routine modeling of the data 
+was done on-site to provide preliminary analysis and QA/QC of the data. These results were 
+displayed on a color monitor as cross-section that highlight changes in resistivity with depths 
+along the transects.  
+Mr. John Chen 
+January 15, 2018 
+Geolabs, Inc. 
+-2- 
+107-1213.000 
+Global Geophysics 
+RESULTS 
+The approximate line locations are shown in Figure 1. The inverted resistivity profiles are 
+shown in Figure 2. Coarser and/or drier materials have higher resistivity values. Finer and/or 
+wetter materials have lower resistivity values.  
+The areas of resistivity values greater than 0.4 ohm-m are possible boulders, or dry coarse 
+materials, or coral.  
+The areas where the resistivity values are in the range of 0.16-0.4 ohm-m are interpreted as 
+sand/gravel.  
+The areas with resistivity less than 0.16 ohm-m are interpreted as fine materials.  
+The interpreted coral interface is shown in the dashed pink lines. 
+LIMITATIONS OF THE GEOPHYSICAL METHOD 
+Global geophysics services are conducted in a manner consistent with the level of care and 
+skill ordinarily exercised by other members of the geophysical community currently 
+practicing under similar conditions subject to the time limits and financial and physical 
+constraints applicable to the services. ERT is a remote sensing geophysical method that may 
+not detect all subsurface conditions due to the limitations of the method, soil conditions, size 
+of the features and their depths.   
+Sincerely, 
+Global Geophysics 
+John Liu, Ph.D., R.G. 
+Principal Geophysicist 
+Line 1
+Line 2
+0 ft
+70 ft
+140 ft
+Approximate scale
+Legend:
+Approximate line locations
+0.00 ohm-m
+0.03 ohm-m
+0.05 ohm-m
+0.07 ohm-m
+0.11 ohm-m
+0.16 ohm-m
+0.24 ohm-m
+0.36 ohm-m
+0.52 ohm-m
+0.78 ohm-m
+1.15 ohm-m
+1.70 ohm-m
+2.51 ohm-m
+3.70 ohm-m
+5.48 ohm-m
+8.09 ohm-m
+11.96 ohm-m
+21.60 ohm-m
+0 ft
+50 ft
+100 ft
+Coral (below water table)
+Sand/gravel (above water table)
+Sand/gravel
+(under water)
+Fine material
+(under water)
+0
+50
+100
+150
+200
+250
+300
+350
+400
+450
+500
+Distance (ft)
+-150
+-100
+-50
+0
+Elevation (ft)
+0
+50
+100
+150
+200
+250
+300
+350
+400
+450
+500
+Distance (ft)
+-150
+-100
+-50
+0
+Elevation (ft)
+Line 1
+Line 2
+Legend:
+Interpreted coral interface

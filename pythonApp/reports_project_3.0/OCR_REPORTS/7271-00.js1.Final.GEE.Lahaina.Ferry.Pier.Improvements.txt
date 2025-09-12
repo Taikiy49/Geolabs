@@ -1,0 +1,3858 @@
+GEOTECHNICAL ENGINEERING EXPLORATION 
+LAHAINA SMALL BOAT HARBOR 
+FERRY PIER IMPROVEMENTS 
+LAHAINA, MAUI, HAWAII 
+W.O. 7271-00     JANUARY 17, 2019 
+Prepared for 
+MITSUNAGA & ASSOCIATES, INC. 
+GEOLABS, INC. 
+Geotechnical Engineering and Drilling Services 
+FINAL SUBMITTAL - 1/17/2019
+GEOTECHNICAL ENGINEERING EXPLORATION
+LAHAINA SMALL BOAT HARBOR
+FERRY PIER IMPROVEMENTS
+LAHAINA, MAUI, HAWAII
+W.O. 7271-00 JANUARY 17, 2019
+Prepared for
+MITSUNAGA & ASSOCIATES, INC.
+LICENSED
+PROFESSIONAL
+ENGINEER
+No. 10029-C
+THIS WORK WAS PREPARED BY
+ME OR UNDER MY SUPERVISION.
+Lee, Qe, 4-30-20
+SIGNA
+RE EXPIRATION DATE
+OF THE LICENSE
+GEOLABS, INC.
+Geotechnical Engineering and Drilling Services
+2006 Kalihi Street * Honolulu, HI 96819
+Hawaii ¢ California
+GEOLABS, INC.
+Geotechnical Engineering and Drilling Services
+January 17, 2019
+W.O. 7271-00
+Mr. Chad McDonald
+Mitsunaga & Associates, Inc.
+747 Amana Street, Suite 216
+Honolulu, HI 96814
+Dear Mr. McDonald:
+Geolabs, Inc. is pleased to submit our report entitled "Geotechnical Engineering
+Exploration, Lahaina Small Boat Harbor, Ferry Pier Improvements, Lahaina Harbor,
+Maui, Hawaii,” prepared in support of the design of the waterfront improvements.
+Our work was performed in general accordance with the scope of services
+outlined in our fee proposal dated November 3, 2014.
+Please note that the soil and rock samples recovered during our field exploration
+(remaining after testing) will be stored for a period of two months from the date of this
+report. The samples will be discarded after that date unless arrangements are made for
+a longer sample storage period. Please contact our office for alternative sample storage
+requirements, if appropriate.
+Detailed discussion and specific recommendations for the design of the project
+are contained in the body of this report. If there is any point that is not clear, please
+contact our office.
+Very truly yours,
+GEOLABS, INC.
+os Y.L. Chen, P.E.
+Vice President
+JC:JS:mj
+2006 Kalihi Street * Honolulu, Hawaii 96819
+Phone: (808) 841-5064 * Facsimile: (808) 847-1749 » E-mail: hawaii@geolabs.net
+Hawaii ¢ California
+W.O. 7271-00 
+GEOLABS, INC. 
+Page i 
+Hawaii • California 
+GEOTECHNICAL ENGINEERING EXPLORATION 
+LAHAINA SMALL BOAT HARBOR 
+FERRY PIER IMPROVEMENTS 
+LAHAINA, MAUI, HAWAII 
+W.O. 7271-00      JANUARY 17, 2019 
+TABLE OF CONTENTS 
+Page 
+SUMMARY OF FINDINGS AND RECOMMENDATIONS .............................................. iii 
+1. 
+GENERAL ............................................................................................................ 1 
+1.1 
+Introduction ................................................................................................ 1 
+1.2 
+Project Considerations ............................................................................... 1 
+1.3 
+Purpose and Scope ................................................................................... 2 
+2. 
+SITE CHARACTERIZATION ................................................................................ 4 
+2.1 
+Regional Geology ...................................................................................... 4 
+2.2 
+Site Description .......................................................................................... 4 
+2.3 
+Subsurface Conditions ............................................................................... 5 
+2.4 
+Seismic Design Parameters ....................................................................... 6 
+2.4.1 Earthquakes and Seismicity ............................................................ 6 
+2.4.2 Liquefaction Potential ...................................................................... 7 
+2.4.3 Soil Profile Type for Seismic Design ............................................... 8 
+3. 
+DISCUSSION AND RECOMMENDATIONS ...................................................... 10 
+3.1 
+Drilled Shaft Foundations ......................................................................... 11 
+3.1.1 Lateral Load Resistance of Drilled Shaft Foundation .................... 13 
+3.1.2 Uplift Load Resistance .................................................................. 13 
+3.1.3 Downdrag Loads ........................................................................... 14 
+3.1.4 Foundation Settlements ................................................................ 14 
+3.1.5 Drilled Shaft Construction Considerations ..................................... 14 
+3.1.6 Non-Destructive Integrity Testing .................................................. 17 
+3.2 
+Micropile Foundations .............................................................................. 18 
+3.2.1 Micropile Installation ...................................................................... 19 
+3.2.2 Uplift Load Resistance .................................................................. 21 
+3.2.3 Lateral Load Resistance ............................................................... 21 
+3.2.4 Construction Consideration ........................................................... 21 
+3.3 
+Corrosion Potential and Chemical Attack to Concrete ............................. 22 
+3.4 
+Pavement Design .................................................................................... 22 
+3.4.1 Pavement Joints ............................................................................ 25 
+3.4.2 Pavement Drainage ...................................................................... 25 
+3.5 
+Design Review ......................................................................................... 26 
+3.6 
+Post-Design Services/Services During Construction ............................... 26 
+4. 
+LIMITATIONS ..................................................................................................... 27 
+FINAL SUBMITTAL - 1/17/2019
+TABLE OF CONTENTS 
+Page 
+W.O. 7271-00 
+GEOLABS, INC. 
+Page ii 
+Hawaii • California 
+CLOSURE ..................................................................................................................... 29 
+PLATES 
+Project Location Map ................................................................................... Plate 1 
+Site Plan ······················································································ Plate 2 
+Generalized Subsurface Profile A-A' ·················································· Plate 3 
+Lateral Load Analysis Results ··········································· Plates 4.1 and 4.2 
+APPENDIX A 
+Field Exploration ....................................................................... Pages A-1 and A-2 
+Soil Log Legend ..................................................................................... Plate A-0.1 
+Soil Log Classification Key .................................................................... Plate A-0.2 
+Rock Log Legend .................................................................................. Plate A-0.3 
+Logs of Borings  ........................................................................ Plates A-1 thru A-5 
+APPENDIX B 
+Laboratory Tests  ..................................................................................... Page B-1 
+Laboratory Test Data  ............................................................... Plates B-1 thru B-8 
+APPENDIX C 
+Photographs of Rock Cores .................................................................... Plate C-1 
+FINAL SUBMITTAL - 1/17/2019
+W.O. 7271-00 
+GEOLABS, INC. 
+Page iii 
+Hawaii • California 
+GEOTECHNICAL ENGINEERING EXPLORATION 
+LAHAINA SMALL BOAT HARBOR 
+FERRY PIER IMPROVEMENTS 
+LAHAINA, MAUI, HAWAII 
+W.O. 7271-00      JANUARY 17, 2019 
+SUMMARY OF FINDINGS AND RECOMMENDATIONS 
+Our on-land field exploration generally encountered 6 inches of asphaltic 
+concrete overlying a very stiff to dense surface fill layer. The surface fill was underlain 
+by loose to medium dense beach sand overlying coralline detritus extending to a depth 
+of about 16.5 feet below the existing ground surface. We encountered groundwater at 
+depths varying from approximately 4.5 to 4.8 feet below the existing ground surface at 
+the time of our field exploration. 
+Our off-shore exploration generally encountered loose to medium dense harbor 
+deposits and medium dense coralline deposit overlying alluvial and basalt formations 
+extending to depths of about 91.0 to 92.5 feet below the water surface. The alluvial 
+deposits consist of very soft to medium stiff sandy clay, sandy silt, silty gravel, and 
+boulders.  The mudline was encountered at depths between about 10.5 and 14.5 feet 
+below the water surface. 
+Based on the results of the off-shore exploration and structural load demands, 
+we believe that the new ferry pier and gangway may be supported on 30-inch diameter 
+drilled shafts. The drilled shafts would derive its vertical support primarily from skin 
+friction between the shaft and the surrounding soil. Based on our analysis, we 
+recommend extending the 30-inch diameter drilled shafts to a tip elevation of about 
+-71.5 feet Mean Lower Low Water (MLLW) to provide sufficient load resistance. 
+To reduce the potential for over-distress on the existing pier bulkhead structure, 
+we recommend supporting the new gangway structure landing at the existing pier on 
+micropile foundations. In addition, a new administration office building will also be 
+constructed on the existing pier. We recommend supporting the new administration 
+office building on micropiles. We recommend using a micropile system with a minimum 
+grout bulb diameter of 5.5 inches extending to a minimum depth of about 40 feet below 
+the bottom of cap elevation. The micropile should be installed with a “Casing Method” 
+consisting of a 25-foot unboned zone (neglected) within the bulkhead fills and loose 
+harbor deposits with a permanent steel casing, and a 15-foot bonded zone developed 
+within the coralline materials. 
+The text of this report should be referred to for detailed discussions and specific 
+recommendations for design of the project. 
+END OF SUMMARY OF FINDINGS AND RECOMMENDATIONS 
+FINAL SUBMITTAL - 1/17/2019
+W.O. 7271-00 
+GEOLABS, INC. 
+Page 1 
+Hawaii • California 
+SECTION 1.  GENERAL 
+1.1 
+Introduction 
+This report presents the results of our geotechnical engineering exploration 
+performed for the proposed Lahaina Small Boat Harbor, Ferry Pier Improvements 
+project in Lahaina on the Island of Maui, Hawaii.  The project location and general 
+vicinity are shown on the Project Location Map, Plate 1. 
+This report summarizes the findings and geotechnical recommendations derived 
+from our field exploration, laboratory testing, and engineering analyses for the project.  
+The recommendations presented herein are intended for the design of the new ferry 
+pier foundations and pavements only.  The findings and recommendations presented 
+herein are subject to the limitations noted at the end of this report. 
+1.2 
+Project Considerations 
+The proposed waterfront improvements project is located at the Lahaina Small 
+Boat Harbor on the Island of Maui, Hawaii.  It is proposed to construct a new ferry pier 
+adjacent to the existing pier to provide additional berthing capacity for the interisland 
+ferries, cruise ship tenders, and commercial vessels. A new gangway will be 
+constructed to connect the new ferry pier to the existing pier. A new administration office 
+building will also be constructed on the existing pier. Onshore improvements consisting 
+of new loading zones, barricade bollards, concrete pavement, and permeable 
+interlocking concrete pavement walkways are also planned for the project. 
+Based on the provided as-build information, we understand that the existing 
+sheetpile bulkheads were installed to support the pier structure. Concrete deadman 
+anchors about 4 feet wide by 6 feet long were installed and spaced in 20 feet 
+center-to-center, to provide lateral support to the sheetpile bulkhead structures. 
+Consideration was given to supporting the new gangway and a new 
+administration building on a new foundation system without transferring the structural 
+loads to over-stress the sheetpile bulkhead structures. 
+FINAL SUBMITTAL - 1/17/2019
+SECTION 1. GENERAL 
+W.O. 7271-00 
+GEOLABS, INC. 
+Page 2 
+Hawaii • California 
+1.3 
+Purpose and Scope 
+The purpose of our exploration was to obtain an overview of the surface and 
+subsurface conditions to develop an idealized soil/rock data set to formulate 
+geotechnical engineering recommendations for the design of the waterfront 
+improvements.  The work was performed in general accordance with our fee proposal 
+dated November 3, 2014.  In order to accomplish this, we conducted the following tasks 
+and work efforts: 
+1. 
+Research and review of available in-house geological information and 
+subsurface conditions in the project vicinity. 
+2. 
+Application for excavation permits from the applicable agencies and 
+coordination of site access and underground utility toning. 
+3. 
+Preparation of an accident prevention plan with activity hazard analysis in 
+support of our field exploration activities adjacent to and within open 
+waters. 
+4. 
+Mobilization and demobilization of a truck-mounted drill rig (for drilling the 
+on-land borings) and a truck-mounted drill rig on a barge (for drilling the 
+off-shore borings), and operators to and from the project site. 
+5. 
+Drilling and sampling three off-shore borings extending to depths ranging 
+from 91.0 to 92.5 feet below the existing water surface, and two on-land 
+borings extending to a depth of 16.5 feet below the existing ground 
+surface. 
+6. 
+Coordination of the field exploration and logging of the borings by our field 
+geologist. 
+7. 
+Laboratory testing of selected soil samples obtained during the field 
+exploration as an aid in classifying the materials and evaluating their 
+engineering properties. 
+8. 
+Engineering analyses of the field and laboratory data to develop 
+geotechnical recommendations for the design of foundations for the 
+proposed project. 
+9. 
+Preparation of this report summarizing our work on the project and 
+presenting our findings and recommendations. 
+10. 
+Coordination of our overall work on the project by our engineer. 
+FINAL SUBMITTAL - 1/17/2019
+SECTION 1. GENERAL 
+W.O. 7271-00 
+GEOLABS, INC. 
+Page 3 
+Hawaii • California 
+11. 
+Quality assurance of our work and client/design team consultation by our 
+principal engineer. 
+12. 
+Miscellaneous work efforts such as drafting, word processing, and clerical 
+support. 
+Detailed descriptions of our field exploration methodology and the Logs of 
+Borings are presented in Appendix A.  Results of the laboratory tests performed on 
+selected soil samples obtained from our field exploration are presented in Appendix B. 
+Photographs of the recovered core samples are presented in Appendix C. 
+END OF GENERAL 
+FINAL SUBMITTAL - 1/17/2019
+W.O. 7271-00 
+GEOLABS, INC. 
+Page 4 
+Hawaii • California 
+SECTION 2.  SITE CHARACTERIZATION 
+2.1 
+Regional Geology 
+The Island of Maui was built by two major volcanoes: the older West Maui 
+(Tertiary Epoch) and the more recent East Maui, also known as Haleakala 
+(Pleistocene Epoch). The Isthmus of Maui is a narrow, gently sloping plain between 
+these two volcanoes. 
+The Isthmus of Maui was created by lava flows from Haleakala ponding on 
+West Maui. It is comprised of alluvium washed from the slopes of West Maui and 
+East Maui (Haleakala). The erosional processes are dominated by the detachment of 
+soil and rock masses from the mountain walls, and the soil materials are transported 
+downslope toward the isthmus primarily by gravity as colluvium. Once these materials 
+reach the stream in the central portion of a valley, alluvial processes become dominant, 
+and the sediments are transported and deposited as alluvium.  
+The project site is located on the western flank of the West Maui Volcano, which 
+forms the west side of the Island of Maui. The West Maui Mountains have been deeply 
+incised by erosion depositing large quantities of unconsolidated recent sediments along 
+the coastal regions. In general, the project site is underlain by harbor deposits, 
+calcareous sediments, alluvial deposits, and basalt formations. 
+2.2 
+Site Description 
+The project site is located at the Lahaina Small Boat Harbor, off Wharf Street in 
+Lahaina, on the Island of Maui, Hawaii. The current harbor facility serves private as well 
+as commercial activities, including ferry services between Maui, Lanai, and Molokai. In 
+addition, the existing ferry pier is utilized by cruise ship tenders to load and unload 
+passengers. Due to the current and anticipated future traffic, a new ferry pier is planned 
+adjacent to the existing pier, as shown on the Site Plan, Plate 2. 
+The existing onshore improvement area is located on Wharf Street, between 
+Paelekane and Hotel Streets adjacent to Pioneer Inn. The existing onshore 
+improvement area is paved with asphaltic concrete. Based on our field observations and 
+the topographic survey map provided, the topography at the project site is relatively 
+FINAL SUBMITTAL - 1/17/2019
+SECTION 2. SITE CHARACTERIZATION 
+W.O. 7271-00 
+GEOLABS, INC. 
+Page 5 
+Hawaii • California 
+level with existing ground elevations between about +7 and +8 feet Mean Lower Low 
+Water (MLLW). 
+2.3 
+Subsurface Conditions 
+The subsurface conditions at the project site were explored by drilling and 
+sampling three off-shore borings (Boring Nos. 1 through 3) and two land borings 
+(Boring Nos. 4 and 5) to depths of approximately 91.0 to 92.5 feet below the water 
+surface (for the off-shore borings) and 16.5 feet below the existing ground surface 
+(for the land borings). The approximate drilled boring locations are summarized in the 
+following table and shown on the Site Plan, Plate 2. An idealized subsurface profile 
+depicting the anticipated subsurface conditions within the pier replacement project are 
+shown on the Generalized Subsurface Profile A-A’ on Plate 3. 
+SUMMARY OF BORINGS DRILLED 
+Boring 
+No. 
+Type 
+Ground/Datum 
+Elevation 
+Mudline 
+Elevation 
+Boring Depth 
+(feet below water surface) 
+(feet) 
+1 
+Off-Shore 
+0 
+-14.8 
+91.0 
+2 
+0 
+-10.8 
+92.0 
+3 
+0 
+-12.3 
+92.5 
+4 
+Land 
++7.5 feet MLLW 
+N/A 
+16.5 
+5 
++7.6 feet MLLW 
+N/A 
+16.5 
+In general, the subsurface conditions encountered in the land borings consist of 
+6 inches of asphaltic concrete overlying very stiff to dense, sandy silts, silty sands, and 
+boulder fills about 4.5 to 7 feet thick. The fills were underlain by loose to medium dense 
+beach sand overlying coralline detritus extending to a depth of about 16.5 feet below the 
+ground surface. We encountered groundwater at depths varying from approximately 
+4.5 to 4.8 feet below the existing ground surface, equivalent to approximately 
+Elevations +2.7 to +3.1 feet MLLW, during our field exploration. It should be noted that 
+the water levels are expected to vary with tidal fluctuation, seasonal rainfall and time of 
+the year. 
+FINAL SUBMITTAL - 1/17/2019
+SECTION 2. SITE CHARACTERIZATION 
+W.O. 7271-00 
+GEOLABS, INC. 
+Page 6 
+Hawaii • California 
+The ff-shore borings drilled generally encountered loose to medium dense harbor 
+deposits consisting of silty sands with various thicknesses of about 5 to 14 feet. The 
+water depths to mudline encountered ranged from 10.5 to 14.5 feet deep. Below the 
+harbor deposits, very loose to medium dense silty sands, silty gravels, and sandy 
+gravels (coralline detritus) were encountered extending to depths of about 64.5 to 
+69.5 feet below the water surface. Below the coralline detritus, alluvial deposits 
+consisting of very soft to medium stiff sandy clay, sandy silt, and silty gravel was 
+encountered to depths of about 81.0 to 88.5 feet below the water surface. Boulders 
+were encountered in Boring Nos. 1 and 2, extending to the maximum depths explored in 
+the respective borings of about 91.0 and 92.0 feet below the water surface.  Medium 
+hard to hard vesicular basalt rock formation was encountered in Boring No. 3, extending 
+to the maximum depth explored of about 92.5 feet below the existing ground surface. 
+Detailed descriptions of our field exploration methodology and the Logs of 
+Borings are presented on Plates A-1 through A-5 of Appendix A. Results of the 
+laboratory tests performed on selected soil and rock core samples retrieved from our 
+field exploration are presented in Appendix B. Photographs of the core samples are 
+presented in Appendix C. 
+2.4 
+Seismic Design Parameters 
+Based on the International Building Code, 2006 Edition (IBC 2006), the project 
+site may be subject to seismic activity, and seismic design considerations will need to 
+be addressed for the project. The following sections provide discussions on the 
+seismicity of the Island of Maui and the soil profile (site class) for seismic design. 
+2.4.1 Earthquakes and Seismicity 
+In general, earthquakes that occur throughout the world are caused by shifts in 
+the tectonic plates. In contrast, earthquake activity in Hawaii is primarily linked to 
+volcanic activity. Therefore, earthquake activity in Hawaii generally occurs before 
+or during volcanic eruptions. In addition, earthquakes may result from the 
+underground movement of magma that comes close to the surface but does not 
+erupt. The Island of Hawaii experiences thousands of earthquakes each year, but 
+most of the earthquakes are so small that they can only be detected by sensitive 
+FINAL SUBMITTAL - 1/17/2019
+SECTION 2. SITE CHARACTERIZATION 
+W.O. 7271-00 
+GEOLABS, INC. 
+Page 7 
+Hawaii • California 
+instruments. However, some of the earthquakes are strong enough to be felt, and 
+a few cause minor to moderate damage. 
+In general, earthquakes associated with volcanic activity are most common on 
+the Island of Hawaii. Earthquakes directly associated with the movement of 
+magma are concentrated beneath the active Kilauea and Mauna Loa Volcanoes 
+on the Island of Hawaii. Because the majority of the earthquakes in Hawaii 
+(over 90 percent) are related to volcanic activity, the risk of seismic activity and 
+degree of ground shaking diminishes with increased distance from the Island of 
+Hawaii.  
+The Island of Hawaii has experienced numerous earthquakes greater than 
+Magnitude 5 (M5+); however, earthquakes are not confined only to the Island of 
+Hawaii. To a lesser degree, the Island of Maui also has experienced earthquakes 
+greater than M5+. Therefore, moderate to strong earthquakes have occurred in 
+the County of Maui. 
+2.4.2 Liquefaction Potential 
+Based on the International Building Code, 2006 Edition, the project site may be 
+subject to seismic activity and the potential for soil liquefaction at the project site 
+will need to be evaluated. 
+Soil liquefaction is a condition where saturated cohesionless soils near the 
+ground surface undergo a substantial loss of strength due to the build-up of 
+excess pore water pressures resulting from cyclic stress applications induced by 
+earthquakes. In this process, when the loose saturated sand deposit is subjected 
+to vibration (such as during an earthquake), the soil tends to densify and 
+decrease in volume causing an increase in pore water pressure. If drainage is 
+unable to occur rapidly enough to dissipate the build-up of pore water pressure, 
+the effective stress (internal strength) of the soil is reduced. Under sustained 
+vibrations, the pore water pressure build-up could equal the overburden 
+pressure, essentially reducing the soil shear strength to zero and causing it to 
+behave as a viscous fluid. During liquefaction, the soil acquires a mobility 
+FINAL SUBMITTAL - 1/17/2019
+SECTION 2. SITE CHARACTERIZATION 
+W.O. 7271-00 
+GEOLABS, INC. 
+Page 8 
+Hawaii • California 
+sufficient to permit both horizontal and vertical movements, and if not confined, 
+will result in significant deformations. 
+Soils most susceptible to liquefaction are loose, uniformly graded, fine-grained 
+sands and loose silts with little cohesion. The major factors affecting the 
+liquefaction characteristics of a soil deposit are as follows: 
+FACTORS 
+LIQUEFACTION SUSCEPTIBILITY 
+Grain Size Distribution 
+Fine and uniform sands and silts are more 
+susceptible to liquefaction than coarse or 
+well-graded sands. 
+Initial Relative Density 
+Loose sands and silts are most susceptible 
+to liquefaction. Liquefaction potential is 
+inversely proportional to relative density. 
+Magnitude and Duration of 
+Vibration 
+Liquefaction 
+potential 
+is 
+directly 
+proportional to the magnitude and duration 
+of the earthquake. 
+Our soil boring data indicates loose harbor deposits with various thicknesses of 
+about 5 to 14 feet below the mudline. Below the harbor deposits, loose to 
+medium dense coralline detritus extends to greater depths. 
+Based on our preliminary geotechnical analysis, the loose granular harbor 
+deposits encountered at the site appear to have a factor of safety of less than 1.0 
+with regard to potential soil liquefaction. Due to the potential for soil liquefaction 
+of the loose harbor deposits at the project site, settlement of the loose harbor 
+deposits will result in downdrag loading of the deep foundations extending 
+through the potentially liquefiable materials. However, we believe that lateral 
+spreading associated with liquefaction would not be a significant design 
+consideration based on the relatively flat ocean floor topography anticipated at 
+the proposed new ferry pier area. 
+2.4.3 Soil Profile Type for Seismic Design 
+Based on the subsurface conditions encountered in our borings and our 
+engineering analyses, the project site is underlain by potentially liquefiable soils. 
+Therefore, the project site would need to be classified as Site Class “F” based on 
+IBC 2006 Section 1613.5.1. 
+FINAL SUBMITTAL - 1/17/2019
+SECTION 2. SITE CHARACTERIZATION 
+W.O. 7271-00 
+GEOLABS, INC. 
+Page 9 
+Hawaii • California 
+In accordance with Chapter 20, Site Classification Procedure for Seismic Design 
+contained in ASCE 7-10 (Minimum Design Loads for Buildings and Other 
+Structures), a site response analysis will not be required to determine the 
+spectral accelerations for liquefiable soils for structures having fundamental 
+periods of vibration equal to or less than 0.5 seconds. 
+We envision that the proposed new ferry pier structure has a fundamental period 
+of no greater than 0.5 seconds. Based on the subsurface materials anticipated at 
+the project site and the geologic setting of the area, we believe the project site 
+may be classified from a seismic analysis standpoint as a “Soft Soil Profile” type 
+based on the International Building Code (Table No. 1613.5.2), 2006 Edition. 
+Based on Site Class “E”, the following seismic design parameters are estimated 
+and may be used for seismic analysis of the project. 
+SEISMIC DESIGN PARAMETERS 
+Parameter 
+Value 
+Mapped MCE Spectral Response Acceleration, SS 
+0.908g 
+Mapped MCE Spectral Response Acceleration, S1 
+0.229g 
+Site Class 
+“E” 
+Site Coefficient, Fpga 
+1.066 
+Site Coefficient, Fa 
+1.010 
+Site Coefficient, Fv 
+3.083 
+Design Spectral Response Acceleration, SDS 
+0.612g 
+Design Spectral Response Acceleration, SD1 
+0.471g 
+Peak Bedrock Acceleration, PBA (Site Class B)  
+0.345g 
+Peak Ground Acceleration, PGA (Site Class E) 
+0.245g 
+END OF SITE CHARACTERIZATION 
+FINAL SUBMITTAL - 1/17/2019
+W.O. 7271-00 
+GEOLABS, INC. 
+Page 10 
+Hawaii • California 
+SECTION 3.  DISCUSSION AND RECOMMENDATIONS 
+Based on the anticipated structural loading for the new ferry pier, we believe a 
+deep foundation system may be used to support a new ferry pier structure. The project 
+environmental assessment report requires the new foundation system to be installed 
+without generating excessive noise and vibration that may adversely impact marine life. 
+Therefore, the drilled shaft foundation system was selected to support the new ferry 
+pier. One of the primary advantages of the drilled shaft foundation system is less noise 
+and vibration that is normally associated with other deep foundation systems, such as 
+driven pile foundations. Driven pile foundations were previously considered due to 
+economical and constructability considerations. 
+Based on the anticipated structural loads and the subsurface conditions 
+encountered at the project site, we recommend supporting the new ferry pier structure 
+by 30-inch diameter cast-in-place concrete drilled shafts. The cast-in-place concrete 
+drilled shafts would derive vertical support mainly from skin friction between the shafts 
+and the competent subsurface conditions, such as coralline materials. To provide 
+sufficient foundation support, we recommend extending the 30-inch drilled shafts to a tip 
+elevation of about -71.5 feet MLLW, to achieve a strength limit state compressive load 
+capacity of 465 kips per shaft. 
+Based on the current design concepts, a new aluminum gangway ramp will be 
+constructed to bridge the new ferry pier to the existing pier. To reduce the potential for 
+over-distressing the existing bulkhead structure, we recommend utilizing micropiles 
+providing vertical support to the new gangway landing, to accommodate existing fuel 
+lines and deadman anchor rods. To resist uplift forces imposed on the new 
+administration building during a tsunami event, we recommend supporting the new 
+building on micropiles. 
+Detailed discussions and specific recommendations for design of foundations 
+and pavement are presented in the following sections. 
+FINAL SUBMITTAL - 1/17/2019
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 7271-00 
+GEOLABS, INC. 
+Page 11 
+Hawaii • California 
+3.1 
+Drilled Shaft Foundations 
+Based on the structural loading demand and the soft/loose soils encountered in 
+the off-shore borings drilled, we recommend installing a deep foundation system 
+consisting of 30-inch diameter cast-in-place drilled shafts to support the new ferry pier 
+and gangway. 
+The cast-in-place concrete drilled shafts would derive vertical support primarily 
+from skin friction between the shafts and the competent subsurface conditions, such as 
+coralline materials.  The end-bearing component of the drilled shafts has been 
+discounted due to difficulties associated with obtaining a clean bottom below the water 
+level during construction. 
+The drilled shafts would need to extend up from the mudline through the water to 
+the proposed shaft cutoff elevation. Therefore, a permanent steel casing will be required 
+to create a column between the mudline and the bottom of the pier. We recommend 
+extending the permanent casing to an elevation of -28.0 feet MLLW through the 
+loose/soft harbor deposits to serve as a seal and to reduce the potential for concrete 
+leakage through the bottom of the casing. 
+Based on the subsurface conditions at the site and the geometry of the 
+foundation system, the drilled shaft compressive and uplift load capacities are estimated 
+and summarized in the following table for the preliminary design of the new ferry pier 
+foundations. The compressive and uplift load capacities of the drilled shafts were 
+computed generally based on the requirements contained in the AASHTO LRFD Bridge 
+Design Specifications (2010).  In order to arrive at the drilled shaft capacities for the 
+strength limit state, a resistance factor of 0.55 has been applied to the extreme event 
+limit state capacities for design of the drilled shaft foundations. 
+FINAL SUBMITTAL - 1/17/2019
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 7271-00 
+GEOLABS, INC. 
+Page 12 
+Hawaii • California 
+SUMMARY OF COMPRESSIVE AND UPLIFT LOAD CAPACITIES 
+Foundation Type 
+Extreme Event Limit State (kips) 
+Strength Limit State (kips) 
+Compressive 
+Uplift 
+Compressive 
+Uplift 
+30-Inch Diameter 
+840 
+740 
+460 
+400 
+To achieve the capacities in the table above, the 30-inch diameter drilled shafts 
+would be extended to about 70 feet below the bottom of the pier elevation. Assuming 
+the bottom of the pier elevation is at about -1.5 feet MLLW, the drilled shaft foundation 
+should extend to a tip elevation of about  -71.5 feet MLLW. 
+In general, the drilled shafts should be spaced a minimum of 2.5 times the 
+diameter of the drilled shaft (measured from center-to-center) to avoid further reduction 
+in vertical load capacity due to group action and to facilitate drilling of the shaft holes. 
+Due to the proximity of the drilled shafts, we recommend that drilling for the shafts within 
+a lateral distance of five  times the shaft diameter to the center of the hole being drilled 
+should not commence until a minimum of 24 hours after the concrete placement is 
+completed. 
+The load bearing capacities of the drilled shafts will depend largely on the relative 
+density of the soils and quality of the coralline materials within the bearing strata. 
+Because local variations in the subsurface materials likely will occur at the site, it is 
+imperative that a Geolabs representative is present during the shaft drilling operations 
+to confirm the subsurface conditions encountered during the drilled shaft construction 
+and to observe the installation of the drilled shafts. In addition, contract documents 
+should include provisions (unit prices) for additional drilling and extension of the drilled 
+shaft during construction to account for unforeseen subsurface conditions. 
+Based on our evaluation of the subsurface conditions and the foundation design 
+parameters, we anticipate the drilled shaft installation will require an experienced drilled 
+shaft subcontractor to install the drilled shaft foundations. Therefore, consideration 
+should be given to requiring pre-qualification of the drilled shaft subcontractor. The 
+subsequent subsections address the design and construction of the drilled shaft 
+foundations: 
+FINAL SUBMITTAL - 1/17/2019
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 7271-00 
+GEOLABS, INC. 
+Page 13 
+Hawaii • California 
+1. 
+Lateral Load Resistance of Drilled Shaft Foundation 
+2. 
+Uplift Load Resistance 
+3. 
+Downdrag Loads 
+4. 
+Foundation Settlements 
+5. 
+Drilled Shaft Construction Considerations 
+6. 
+Non-Destructive Integrity Testing 
+3.1.1 Lateral Load Resistance of Drilled Shaft Foundation 
+In general, lateral load resistance for the drilled shaft is a function of the stiffness 
+of the surrounding soil, the stiffness of the shaft, allowable deflection at the top of 
+the shaft, and induced moment in the shaft. To evaluate the lateral load 
+resistance of the new pier structure, stiffness modeling parameters were 
+estimated based on the subsurface conditions encountered in the borings drilled. 
+The stiffness modeling parameters were obtained using the program LPILE-plus 
+for Windows, which is a microcomputer adaptation of a finite difference, laterally 
+loaded pile program.  The program solves for a deflection and bending moment 
+along a pile under lateral loads as a function of the depth.  The analysis was 
+carried out to generate non-linear “p-y” curves to represent soil moduli at various 
+depths.  Results of the generated non-linear “p-y” curves are summarized and 
+presented on Plates 4.1 and 4.2. 
+3.1.2 Uplift Load Resistance 
+In general, uplift loads may be resisted by a combination of the dead weight of 
+the drilled shaft and by shear along the shaft surface and the adjacent soils.  The 
+uplift load capacities for the extreme event and strength limit states are 
+presented in the previous table. It should be noted that a resistance factor of 0.55 
+has been applied to the extreme event limit state capacity to arrive at the uplift 
+load capacities for the strength limit state for design of the drilled shaft 
+foundations. 
+In general, an uplift load capacity of up to 400 kips per shaft under strength limit 
+state may be used in the design of the 30-inch diameter drilled shafts. The 
+project structural engineer should check the capacity of the shaft member in 
+tension. 
+FINAL SUBMITTAL - 1/17/2019
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 7271-00 
+GEOLABS, INC. 
+Page 14 
+Hawaii • California 
+3.1.3 Downdrag Loads 
+As previously mentioned, the loose harbor deposits may be susceptible to 
+liquefaction in the case of a seismic event producing a peak horizontal ground 
+acceleration of about 0.245g at the site. In the event of seismically induced 
+liquefaction, settlement of the loose harbor deposits will occur at the site. When 
+the loose deposits move downward relative to the shaft, the downward 
+movement will result in negative skin friction forces, generally known as 
+downdrag forces, acting on the drilled shaft. The magnitude of the downdrag 
+force depends on the thickness of the liquefiable layer, relative density of the 
+potentially liquefiable loose deposits, and the shaft perimeter. 
+Due to the potential for liquefaction of the loose harbor deposits at the site, the 
+compressive load capacities of the drilled shafts will need to be reduced by the 
+expected downdrag loads in the drilled shaft foundation analyses. Based on our 
+foundation analyses, we estimate that the downdrag loads imposed on the 
+vertical shafts due to the potential for liquefaction of the loose deposits may be 
+on the order of about 20 kips per shaft for the 30-inch diameter drilled shafts. The 
+compressive load capacities recommended above has already taken into 
+account the downdrag reduction. 
+3.1.4 Foundation Settlements 
+Settlement of the drilled shaft foundations will result primarily from elastic 
+compression of the drilled shaft and the subgrade response.  We estimate that 
+the total settlement of the drilled shaft supported foundation to be less than 
+1 inch with differential settlements between drilled shafts not exceeding about 
+1/2-inch. We believe that these settlements are essentially elastic and should 
+occur as the loads are applied. 
+3.1.5 Drilled Shaft Construction Considerations 
+The performance of drilled shafts will depend significantly upon the contractor's 
+method of construction and construction procedures.  As a result of these 
+potential variations, a Geolabs representative should be present to observe the 
+installation of drilled shafts during construction.  In our opinion, the following may 
+FINAL SUBMITTAL - 1/17/2019
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 7271-00 
+GEOLABS, INC. 
+Page 15 
+Hawaii • California 
+have a significant impact on the effectiveness and cost of the drilled shaft 
+foundations. 
+The load-bearing capacity of drilled shafts depends, to a significant extent, on the 
+friction between the shaft and the bearing stratus. Therefore, proper construction 
+techniques, especially during the drilling operations, are important. The 
+contractor should exercise care in drilling and in placing concrete into the drilled 
+holes. 
+The drilled shafts are located offshore and will be embedded in the loose to 
+medium dense coralline materials encountered in the borings. The drilled shaft 
+subcontractor will need to have the appropriate drilling equipment (and coring 
+tools, where appropriate) and experience on similar projects, to demonstrate 
+his/her capability of installing the drilled shafts to the recommended depths and 
+dimensions. 
+As mentioned above, permanent steel casing will be required in all drilled shafts 
+extending from the shaft cutoff elevation to approximately -28.0 feet MLLW.  To 
+reduce the potential for concrete leakage through the bottom of the casing, the 
+drilled shaft contractor should ensure a tight seal between the casing and 
+subsurface walls. 
+Based on our field exploration, the project site is underlain by loose to medium 
+dense coralline materials extending to depths of approximately 64.5 to 69.5 feet 
+below the water surface. Caving-in and/or sloughing of these materials may 
+occur during the drilling operations. To reduce the potential for caving-in of the 
+drilled holes, temporary casing may be required during drilled shaft installation to 
+maintain the integrity of the drilled hole during drilled shaft installation. 
+Care should be exercised during removal of the temporary casing to reduce the 
+potential for "necking" of the drilled shaft. Therefore, a minimum 5-foot head of 
+concrete above the bottom of the casing or adequate concrete head to counter 
+the hydrostatic pressures due to the in-water installation conditions should be 
+maintained during removal of the casing. The groundwater conditions at the 
+FINAL SUBMITTAL - 1/17/2019
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 7271-00 
+GEOLABS, INC. 
+Page 16 
+Hawaii • California 
+project site may pose construction difficulties because proper observation of the 
+sides and bottoms of the drilled shaft may not be possible. 
+Because the drilled shaft excavations will be entirely underwater, concrete 
+placement by tremie methods will be required during drilled shaft construction. 
+The concrete should be placed in a suitable manner by displacing the water in an 
+upward fashion from the bottom of the drilled hole. A low-shrink concrete mix with 
+high slump (7 to 9-inch slump range) should be used to provide close contact 
+between the drilled shafts and the surrounding soils. The concrete should be 
+placed in a suitable manner to reduce the potential for segregation of the 
+aggregates from the concrete mix. 
+In addition, the concrete should be placed promptly after drilling (within 24 hours 
+after drilling of the holes) to reduce the potential for softening of the sides of the 
+drilled holes. Furthermore, drilling adjacent to a recently constructed shaft (within 
+five shaft diameters of the recently constructed drilled shaft) should not 
+commence until the concrete for the recently constructed drilled shaft has cured 
+for a minimum of 24 hours. 
+It should be noted that cavities and voids are commonly encountered in the 
+coralline materials. Therefore, the actual volume of concrete required to fill the 
+drilled shaft foundation may be appreciably more than the theoretical concrete 
+volume. Based on our experience with coralline materials, we envision that 
+average concrete overpours on the order of up to about 100 percent over the 
+theoretical concrete volume may be required for the drilled shaft foundations. 
+It is imperative for a Geolabs representative to be present during construction to 
+observe the drilling and installation of drilled shafts. Although the drilled shaft 
+designs are primarily based on skin friction, the bottom of the drilled hole should 
+be relatively free of loose materials prior to placement of concrete. Therefore, 
+Geolabs observation of the drilled shaft installation operations is necessary to 
+confirm the assumed subsurface conditions. 
+FINAL SUBMITTAL - 1/17/2019
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 7271-00 
+GEOLABS, INC. 
+Page 17 
+Hawaii • California 
+3.1.6 Non-Destructive Integrity Testing 
+We recommend conducting non-destructive integrity testing on the trial shaft and 
+production drilled shafts. One of the non-destructive integrity testing methods, 
+Crosshole Sonic Logging (CSL), has gained widespread use and acceptance for 
+integrity testing of drilled shafts. 
+Crosshole Sonic Logging techniques are based on the propagation of sound 
+waves through concrete. In general, the actual velocity of sound wave 
+propagation in concrete is dependent on the concrete material properties, 
+geometry of the element and wavelength of the sound waves. When ultrasonic 
+frequencies are generated, Pressure (P) waves and Shear (S) waves travel 
+though the concrete. If anomalies are contained in the concrete, the anomalies 
+will reduce the P-wave travel velocity in the concrete. Anomalies in the drilled 
+shaft concrete may include soil particles, gravel, water, voids, contaminated 
+concrete, and highly segregated constituent particles. 
+The transit time of an ultrasonic P-wave signal may be measured between an 
+ultrasonic transmitter and receiver in two parallel water-filled access tubes placed 
+into the concrete during construction. The P-wave velocity can be obtained by 
+dividing the measured transit time from the distance between the transmitter and 
+receiver. Therefore, anomalies may be detected (if they exist). 
+To reduce the potential de-bonding between the access tube and the 
+surrounding concrete, we recommend that the access tubes consist of standard 
+steel pipe with a minimum inside diameter of 2 inches. In addition, the access 
+tube should be equipped with watertight couplings. The access tubes should be 
+securely attached to the interior of the reinforcing cage as near to parallel as 
+possible in the drilled shaft. We recommend casting a minimum of three access 
+tubes into the concrete of each of the drilled shafts. 
+In addition, the access tubes should extend from the bottom of the drilled shaft 
+reinforcing cage to at least 3.5 feet above the top of the shaft. The bottom of the 
+access tube should be permanently capped. It is imperative that the joints 
+FINAL SUBMITTAL - 1/17/2019
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 7271-00 
+GEOLABS, INC. 
+Page 18 
+Hawaii • California 
+required to achieve the full length of the access tubes are watertight. It is the 
+contractor’s responsibility to take extra care to prevent damaging the access 
+tubes during the placement of the reinforcing cage into the drilled hole. The tubes 
+should be filled with potable water as soon as possible, but no later than 2 hours 
+after the concrete placement. Subsequently, the top of the access tubes should 
+be capped with watertight caps. 
+The Crosshole Sonic Logging (CSL) test of drilled shafts should be conducted 
+after at least 5 days of curing time, but no later than 28 days after concrete 
+placement. The CSL test of drilled shafts should be performed in general 
+accordance with ASTM D6760. In the event that a drilled shaft is found to have 
+significant anomalies and/or is suspected to be defective based on the CSL 
+testing and/or field observations, the drilled shaft should be cored to evaluate the 
+integrity of the concrete in the drilled shaft. The coring location within the drilled 
+shaft should be determined by a Geolabs representative who should be present 
+to observe the installation of the drilled shafts. After completion of the crosshole 
+sonic logging of the drilled shafts, the access tubes should be filled with grout of 
+the same strength as the drilled shaft concrete. The performance of drilled shafts 
+will depend significantly upon the contractor's method of construction and 
+construction procedures. 
+3.2 
+Micropile Foundations 
+As mentioned above, a new aluminum gangway ramp will be constructed to 
+bridge the new ferry pier to the existing pier. To reduce the potential for over-distressing 
+the existing bulkhead structure, we recommend utilizing micropiles providing vertical 
+support to the new gangway landing, to accommodate the site access, existing fuel 
+lines and deadman anchor rods. 
+In addition, a new administration office building will be constructed on the existing 
+pier. Based on the information provided, the new administration building may be 
+subjected to flooding during a tsunami event. To resist uplift forces during a tsunami 
+event, we recommend utilizing micropiles providing vertical support to the administration 
+office building. 
+FINAL SUBMITTAL - 1/17/2019
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 7271-00 
+GEOLABS, INC. 
+Page 19 
+Hawaii • California 
+In general, the micropile foundation system consists of a small diameter (usually 
+less than 12 inches) drilled and grouted pile with reinforcing steel. The micropile 
+foundation typically is constructed by drilling a borehole, placing reinforcing steel in the 
+hole, and grouting the borehole.  Micropiles are desirable because they can be readily 
+installed in access restrictive environments and in numerous soil types and ground 
+conditions.  In addition, installation of the micropiles generally causes minimal 
+disturbance to adjacent structures, the adjacent soils, and the environment. 
+Based on the anticipated structural loads, we recommend using a micropile 
+system with a minimum grout bulb diameter of 5.5 inches. We recommend designing 
+each micropile based on compressive load capacities of 45 and 25 kips for the extreme 
+event and strength limit states, respectively, as summarized in the table below. The load 
+capacity of the micropile foundation would be derived primarily from skin friction 
+between the micropile bonded zone and the coralline materials anticipated at depths 
+starting from about 25 feet below existing pier ground surface. 
+In order to arrive at the micropile capacity for the strength limit state, a resistance 
+factor of 0.55 has been applied to the extreme event limit state capacity for design of 
+the micropiles. 
+SUMMARY OF MICROPILE COMPRESSIVE LOAD CAPACITY 
+Unbonded Length 
+Bonded Length 
+Compressive Load Capacities 
+(kips) 
+(feet) 
+Extreme Event Limit 
+State 
+Strength Limit 
+State 
+25 
+15 
+45 
+25 
+3.2.1 Micropile Installation 
+In general, the micropiles should be spaced a minimum of 2.5 feet or 3 times the 
+micropile diameter (measured from center-to-center), whichever is greater, to 
+avoid further reduction in vertical load capacity due to group action and to 
+facilitate drilling of the micropile holes. 
+FINAL SUBMITTAL - 1/17/2019
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 7271-00 
+GEOLABS, INC. 
+Page 20 
+Hawaii • California 
+To achieve the compressive load capacity, we believe that each micropile would 
+need to extend to a minimum depth of about 40 feet below the bottom of the pile 
+cap, consisting of the 25-foot unboned zone (neglected) within bulkhead fill and 
+loose/soft harbor deposits, and 15-foot bonded zone within coralline materials.   
+Based on the information provided, the existing pier is supported by bulkhead 
+structures with a deadman anchoring system. We anticipate boulder fill will be 
+encountered below the existing pier within the bulkhead zone, therefore, we 
+recommend providing permanent steel casing within the bulkhead section. We 
+also recommend extending the casing through the loose/soft harbor deposits. 
+The permanent casing should have an outside diameter (OD) of at least 
+5.5 inches (same as the grout bulb size), and the permanent casing should 
+extend a minimum of 3 feet into the subsurface coralline materials. Actual 
+subsurface conditions should be verified during construction. 
+The following table provides a summary of the micropile recommendations for 
+ease of reference. 
+CASED MICROPILE SYSTEM RECOMMENDATIONS 
+Micropile Outside Diameter of Casing 
+5.5 inches minimum 
+Micropile Casing Thickness 
+0.361 inches minimum 
+Diameter of Micropile Bonded Length 
+5.5 inches minimum 
+Center Reinforcing Bar (Full Depth) 
+No. 9 (ASTM A615 Grade 75) 
+Grout Minimum Compressive Strength 
+4,000 psi 
+(water-cement ratio of 0.50 or less) 
+To facilitate the micropile drilling and ensure the quality of the grouting, we 
+recommend advancing steel casing to the bottom of the micropile, defined as 
+“Casing Method”, during the drilling operation. The steel casing should be 
+withdrawn during the grouting operation while a minimum of 5 feet grout is 
+maintained above the bottom of the casing at all times. To reduce the risk of 
+micropile “necking” within the loose/soft harbor deposits and boulder fill material 
+within the existing bulkhead, 25 feet of permanent steel casing should be left 
+in-place at the top of each micropile. In addition, the casing shall be withdrawn 
+FINAL SUBMITTAL - 1/17/2019
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 7271-00 
+GEOLABS, INC. 
+Page 21 
+Hawaii • California 
+above the design casing depth (minimum 3 feet), and plunged back to the design 
+depth. 
+3.2.2 Uplift Load Resistance 
+In general, uplift load may be resisted by shear along the micropile surface and 
+the adjacent soils. Considering that the micropiles are designed based on 
+adhesion between the micropile and the surrounding soils, we believe that an 
+uplift load capacity of 45 kips and 25 kips may be used for the extreme event limit 
+state and strength limit state, respectively. The project structural engineer should 
+check the structural capacity of the shaft member in tension. 
+3.2.3 Lateral Load Resistance 
+Lateral loads capacity from the micropile foundations should be ignored. In 
+addition, the passive resistance acting against the vertical faces of the micropile 
+cap should be discounted due to the potential for distress acting upon the 
+existing bulkhead structure. 
+3.2.4 Construction Consideration 
+It should be noted that the bond stress between the grout bulb and the soil is 
+highly dependent on the drilling procedures and the grouting methods employed 
+by the contractor to install the micropile.  Therefore, the bond stress between the 
+grout bulb and the soil may vary considerably between different contractors and 
+micropile foundation systems. 
+A specialty contractor experienced in the construction of a micropile foundation 
+system using the above defined “Casing Method” (minimum five projects) should 
+perform installation of the micropiles. Due to the specialized nature of the 
+micropile foundation construction, observation and testing of the micropile 
+foundation system should be designated as a “Special Inspection” item.  
+Therefore, a Geolabs representative (Special Inspector) should be present to 
+observe the geotechnical aspects of the micropile foundation construction and 
+testing. 
+FINAL SUBMITTAL - 1/17/2019
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 7271-00 
+GEOLABS, INC. 
+Page 22 
+Hawaii • California 
+It should be noted that borings were not drilled within the existing pier. We 
+envision boulder fill will be encountered below the existing pier. The contractor 
+should anticipate difficult drilling conditions during the micropile installation. The 
+micropile design parameters presented herein were based on the above 
+assumption and may be subjected to modifications in the event that actual 
+conditions are different than our assumptions.  
+3.3 
+Corrosion Potential and Chemical Attack to Concrete 
+One set of laboratory corrosion tests, including chloride content and sulfate 
+content, was performed by TestAmerica Laboratories, Inc. to evaluate the corrosivity of 
+the on-site soils encountered.  Results of the soil analyses conducted on the selected 
+soil sample are summarized on Plate B-7 of Appendix B. 
+Levels of the chloride and sulfate contents of the on-site soils encountered near 
+the existing mudline are moderately high on the order of 650 and 410 parts per million 
+(ppm), respectively. Based on the chloride and sulfate content tests performed on the 
+on-site soils, we believe that either Type I or Type II cement may be used for the 
+concrete in contact with the ground planned for the project.  However, considerations 
+should be given to increasing the concrete cover of the shaft and/or specifying a 28-day 
+concrete strength of 5,000 pounds per square inch (psi) with a water-cement ratio of 
+0.4 in accordance with ACI 318, since the drilled shaft foundation would be installed in 
+the sea water environment.  It may be appropriate to consult with a professional 
+corrosion engineer to review the test results and provide detailed recommendations for 
+corrosion protection. 
+3.4 
+Pavement Design 
+The design procedures for concrete pavements are based on “Thickness Design 
+for Concrete Highway and Street Pavements” by the Portland Cement Association. 
+Detailed traffic information was not available at the time this report was prepared. We 
+assume the traffic will consist of primarily passenger vehicles and pickup trucks with 
+occasional moderate trucks and fuel trucks approximately 2 to 3 times a week.  
+FINAL SUBMITTAL - 1/17/2019
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 7271-00 
+GEOLABS, INC. 
+Page 23 
+Hawaii • California 
+We assumed the new pavement will require a design life of 20 years. Traffic 
+assumptions are summarized in the table below. Based on the assumed traffic volume 
+and truck distribution information, a Traffic Index (TI) of 3.0 has been determined for the 
+pavement design of the project. 
+We anticipate that the pavement subgrade soils will likely consist of the select 
+granular fills or near-surface very stiff to dense, sandy and silty fills for the project. 
+Therefore, a design subgrade California Bearing Ratio (CBR) of 20.0 was adopted in 
+the pavement analyses for the subgrade materials. If site grading exposes soils other 
+than those assumed, additional tests should be performed to confirm and/or modify the 
+recommended pavement section for actual field conditions. 
+DESIGN TRAFFIC PARAMETERS 
+Design Period 
+20 Years 
+Average Daily Traffic 
+(ADT) 
+Year 2019 
+Year 2039 
+Vehicles per day per 
+direction 
+1,451 
+1,451 
+24-Hour Truck Traffic 
+0.72% 
+Type of Axle 
+Truck Traffic Distribution 
+2-axle 
+0.69% 
+3-axle (Fuel Truck) 
+0.03% 
+4-axle 
+0.00% 
+5-axle 
+0.00% 
+6-axle 
+0.00% 
+7-axle 
+0.00% 
+Total ESAL in 20 Years 
+132 
+Traffic Index (TI) 
+3.0 
+Based on a design CBR value of 20 adopted for the pavement subgrade soils as 
+described above, a corresponding K-value of 250 pounds per square inch per inch of 
+deflection (pci) is estimated.  The pavement sections were also evaluated with Portland 
+Cement Concrete minimum flexural strengths of 650 and 750 pounds per square inch 
+(psi) at 28 days in accordance with ASTM C78. 
+FINAL SUBMITTAL - 1/17/2019
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 7271-00 
+GEOLABS, INC. 
+Page 24 
+Hawaii • California 
+Based on the above pavement design parameters and anticipated subgrade 
+CBR value, we recommend using one of the following pavement sections for the 
+project. 
+  6.5 Inches Portland Cement Concrete (650 psi flexural strength) 
+  6.0 Inches Aggregate Subbase (95 Percent Relative Compaction)  
+12.5 Inches Total Pavement Thickness on Compacted Subgrade 
+or 
+  6.0 Inches Portland Cement Concrete (750 psi flexural strength) 
+  6.0 Inches Aggregate Subbase (95 Percent Relative Compaction)  
+12.0 Inches Total Pavement Thickness on Compacted Subgrade 
+The subgrade soils under the new pavement structural section should be 
+scarified to a minimum depth of 8 inches, moisture-conditioned to near the optimum 
+moisture, and compacted to a minimum of 95 percent relative compaction.  Relative 
+compaction refers to the in-place dry density of soil expressed as a percentage of the 
+maximum dry density of the same soil established in accordance with ASTM D1557. 
+Optimum moisture is the water content (percentage by dry weight) corresponding to the 
+maximum dry density. 
+Aggregate subbase course required for the project should consist of crushed 
+basaltic aggregates and should meet the requirements of Section 30 of the County of 
+Maui 
+Standard 
+Specifications 
+(September 
+1986). 
+The 
+materials 
+should 
+be 
+moisture-conditioned to above optimum moisture content, placed in 8-inch level loose 
+lifts, and compacted to a minimum of 95 percent relative compaction. 
+Imported fill materials below the subbase course layer should consist of 
+non-expansive select granular material, such as crushed coral or basalt. The material 
+should be well-graded from coarse to fine with particles no larger than 3 inches in 
+largest dimension. In addition, the material should contain between 10 and 30 percent 
+particles passing the No. 200 sieve. The material should have a laboratory CBR value 
+of 20 or more and should have a maximum swell of 1 percent or less when tested in 
+accordance with ASTM D1883. The materials should be moisture-conditioned to above 
+the optimum moisture content, placed in 8-inch level loose lifts, and compacted to a 
+FINAL SUBMITTAL - 1/17/2019
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 7271-00 
+GEOLABS, INC. 
+Page 25 
+Hawaii • California 
+minimum of 95 percent relative compaction. Geolabs should test imported fill materials 
+for conformance with these recommendations prior to delivery to the project site for the 
+intended use. 
+A Geolabs representative should monitor the pavement subgrade preparation to 
+observe whether undesirable materials are encountered during the excavation and 
+scarification process and to confirm whether the exposed soil conditions are similar to 
+those encountered in our field exploration.  Modification to the extent of the different 
+areas may be required. California Bearing Ratio (CBR) tests and/or field observations 
+should be performed on the actual subgrade soils during construction to confirm that the 
+above design section is adequate. 
+3.4.1 Pavement Joints 
+Considering the large areal extent of the concrete pavements for the project, an 
+adequate amount and pattern of joints should be provided.  In general, joints 
+should be provided in concrete pavements for the following reasons: 
+1. 
+To reduce potential curling and warping stresses in the pavement 
+caused by temperature and moisture gradients across the 
+pavement slabs. 
+2. 
+To reduce and control cracking due to volume changes in the 
+concrete. 
+3. 
+To reduce damage to immovable structures. 
+4. 
+To facilitate construction. 
+3.4.2 Pavement Drainage 
+One of the primary distress mechanisms in pavement structures is pumping due 
+to saturation of the subbase and/or subgrade soils. Therefore, the pavement 
+surface should be sloped and drainage gradients maintained to carry surface 
+water off the pavement to appropriate drainage structures. Surface water 
+ponding should not be allowed on the site during or after construction. 
+Where concrete curbs are used to isolate landscaping in or adjacent to the 
+pavement areas, we recommend extending the curbs a minimum of 2 inches 
+below the aggregate subbase layer to reduce the potential for migration of 
+excessive landscape water into the pavement section. We strongly recommend 
+FINAL SUBMITTAL - 1/17/2019
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 7271-00 
+GEOLABS, INC. 
+Page 26 
+Hawaii • California 
+development of good shoulder drainage, to reduce the potential for pavement 
+deterioration or premature failure of the pavements. 
+3.5 
+Design Review 
+Preliminary and final drawings and specifications for the proposed Lahaina Small 
+Boat Harbor Ferry Pier Improvements project should be forwarded to Geolabs for 
+review and written comments prior to construction.  This review is necessary to evaluate 
+conformance of the plans and specifications with the intent of the foundation 
+recommendations provided herein.  If this review is not made, Geolabs cannot be 
+responsible for misinterpretation of our recommendations. 
+3.6 
+Post-Design Services/Services During Construction 
+Geolabs should be retained to provide geotechnical engineering services during 
+construction.  The critical items of construction monitoring that require “Special 
+Inspection” include the following: 
+Review of the geotechnical aspects of the contractor submittals 
+Observation of the drilled shaft and micropile foundation installation 
+A Geolabs representative should monitor the construction to observe compliance 
+with the intent of the design concepts, specifications, or recommendations and to 
+expedite suggestions for design changes that may be required in the event that 
+subsurface conditions differ from those anticipated at the time this report was prepared. 
+The recommendations provided herein are contingent upon such observations. 
+END OF DISCUSSION AND RECOMMENDATIONS 
+FINAL SUBMITTAL - 1/17/2019
+W.O. 7271-00 
+GEOLABS, INC. 
+Page 27 
+Hawaii • California 
+SECTION 4.   LIMITATIONS 
+The analyses and recommendations submitted herein are based, in part, upon 
+information obtained from field borings drilled. Variations of subsurface conditions 
+between and beyond the borings may occur, and the nature and extent of these 
+variations may not become evident until construction is underway. If variations then 
+appear evident, it will be necessary to re-evaluate the recommendations provided 
+herein. 
+The field boring locations indicated in this report are approximate, having 
+been taped from features shown on the Site Plans provided by Mitsunaga & Associates, 
+Inc., dated December 24, 2015.  The site plan and boring logs represent an integral part 
+of this report and separating these figures may lead to misinterpretations of the variation 
+of the subsurface conditions encountered.  Elevations on the boring logs were obtained 
+based on interpolation between the spot elevations and contour lines shown on the 
+same plan. The physical locations and elevations of the borings should be considered 
+accurate only to the degree implied by the methods used. 
+The stratification lines shown on the graphic representations of the borings depict 
+the approximate boundaries between soil types and, as such, may denote a gradual 
+transition. Uncertainty and variability are inevitable and inherent to the highly varied 
+depositional environment, varied historical use of the site and, therefore, in the 
+geotechnical calculations and evaluations.  Water level data from the borings were 
+measured at the times shown on the graphic representations and/or presented in the 
+text of this report. These data have been reviewed and interpretations made in the 
+formulation of this report. However, it must be noted that fluctuation may occur due to 
+variation in tides, rainfall, temperature, and other factors. 
+This report has been prepared for the exclusive use of Mitsunaga & Associates, 
+Inc., for specific application to the proposed Lahaina Small Boat Harbor Ferry Pier 
+Improvements project in accordance with generally accepted geotechnical engineering 
+principles and practices. No warranty is expressed or implied. 
+FINAL SUBMITTAL - 1/17/2019
+SECTION 4. LIMITATIONS 
+W.O. 7271-00 
+GEOLABS, INC. 
+Page 28 
+Hawaii • California 
+This report has been prepared solely for the purpose of assisting the engineer in 
+the design of the proposed waterfront improvements project. Therefore, this report may 
+not contain sufficient data, or the proper information, to serve as the basis for 
+preparation of construction cost estimates. A contractor wishing to bid on this project is 
+urged to retain a competent geotechnical engineer to assist in the interpretation of this 
+report and/or in the performance of additional site-specific exploration for bid estimating 
+purposes. 
+The owner/client should be aware that unanticipated soil/rock conditions and/or 
+obstructions are commonly encountered. Unforeseen subsurface conditions, such as 
+soft deposits, hard layers, cavities or perched groundwater, may occur in localized 
+areas and may require additional probing or corrections in the field (which may result in 
+construction delays) to attain a properly constructed project. Therefore, a sufficient 
+contingency fund is recommended to accommodate these possible extra costs. 
+This geotechnical exploration conducted at the project site was not intended to 
+investigate the potential presence of hazardous materials and/or archeological features 
+existing at the site. It should be noted the equipment, techniques, and personnel used to 
+make a geo-environmental exploration differ substantially from those applied in 
+geotechnical engineering. 
+END OF LIMITATIONS 
+FINAL SUBMITTAL - 1/17/2019
+PEW Ve sv os
+CLOSURE
+The following plates and appendices are attached and complete this report:
+make) (= Xe, Moles 100 \\/(-| 0 ce Plate 1
+Site: PAM cacessccs sccm wean ones ceca mee onan Kana oan UWA tH ORE Sa KO GRD MA MAN Ea RA SR NTO EMER ae Plate 2
+Generalized Subsurface Profile A-A’ ............ccccccccccccceceeceeeeeeeeeeeeeeeeeeeeeeeeeeneeneneanaaes Plate 3
+Lateral Load Analysis RESUItS ...............cccccccceeeceeeeeeeeeeesaeeeeeeeeeeeeeeeeeaaee Plates 4.1 and 4.2
+Field Exploration .............ccccccccccceeeeeeeeeeeeeee eee eeeeeeeeeeeeeaaeeeseeeeeeeeeeeesaaeeneeeeeeeeeeees Appendix A
+=| oo) f= | (0) nV A — >) k eee Appendix B
+Photographs of ROCK Core ............ccceceeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeees Appendix C
+-QQQQQQQOQOQO-
+Respectfully submitted,
+GEOLABS, INC.
+Sa—
+By
+ason Seidman, P.E.
+Project Engineer
+John Y.L. Chen, P.E.
+Vice President
+JC:JS:mj')
+h:\7200Series\727 1-00.js1
+W.O. 7271-00 GEOLABS, INC. Page 29
+Hawaii ¢ California
+PLATES 
+FINAL SUBMITTAL - 1/17/2019
+FINAL SUBMITTAL - 1/17/2019
+FINAL SUBMITTAL - 1/17/2019
+FINAL SUBMITTAL - 1/17/2019
+LATERAL LOAD ANALYSIS
+Lahaina Small Boat Harbor
+Ferry Pier Improvements
+Lahaina, Maui, Hawaii
+y
+p
+y
+p
+y
+p
+y
+p
+y
+p
+(inch)
+(pounds/inch)
+(inch)
+(pounds/inch)
+(inch)
+(pounds/inch)
+(inch)
+(pounds/inch)
+(inch)
+(pounds/inch)
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.1
+0.0
+0.1
+0.2
+0.1
+396.8
+0.3
+1668.6
+0.5
+4176.5
+0.3
+0.0
+0.3
+0.8
+0.2
+471.5
+0.3
+1750.7
+0.5
+4214.0
+0.4
+0.1
+0.4
+1.8
+0.2
+536.2
+0.3
+1828.8
+0.5
+4251.1
+0.5
+0.2
+0.5
+3.1
+0.2
+594.1
+0.4
+1903.4
+0.5
+4287.9
+1.0
+1.7
+1.0
+12.1
+0.3
+647.0
+0.4
+1975.1
+0.5
+4324.4
+1.5
+5.4
+1.5
+26.8
+0.3
+696.1
+0.4
+2044.0
+0.5
+4360.5
+2.0
+12.3
+2.0
+46.9
+0.4
+741.9
+0.5
+2110.4
+0.6
+4396.3
+2.5
+23.3
+2.5
+72.5
+0.4
+785.2
+0.5
+2174.7
+0.6
+4431.8
+3.0
+39.1
+3.0
+103.5
+0.5
+826.3
+0.5
+2237.0
+0.6
+4467.0
+3.5
+60.7
+3.5
+139.8
+0.5
+865.5
+0.5
+2297.5
+0.6
+4501.8
+4.0
+88.9
+4.0
+181.3
+0.6
+903.1
+0.6
+2356.2
+0.6
+4536.4
+4.5
+124.3
+4.5
+228.1
+0.6
+939.2
+0.6
+2413.5
+0.6
+4570.8
+5.0
+167.8
+5.0
+280.2
+1.0
+1237.7
+1.0
+3137.5
+1.0
+5942.0
+5.5
+220.2
+5.5
+337.4
+1.4
+1536.2
+1.4
+3861.6
+1.4
+7313.2
+5.9
+269.7
+5.9
+387.6
+1.6
+1536.2
+1.6
+3861.6
+1.6
+7313.2
+6.2
+269.7
+6.2
+387.6
+1.9
+1536.2
+1.9
+3861.6
+1.9
+7313.2
+y
+p
+y
+p
+y
+p
+(inch)
+(pounds/inch)
+(inch)
+(pounds/inch)
+(inch)
+(pounds/inch)
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+Water 
+0-15 feet
+0.7
+7447.6
+0.7
+8983.2
+0.7
+10519.3
+Harbor Deposit
+15-30 feet
+0.7
+7748.8
+0.7
+9349.4
+0.7
+10950.8
+Loose Coral
+30-80 feet
+0.8
+8031.9
+0.8
+9697.7
+0.8
+11364.3
+0.8
+8315.0
+0.8
+10046.1
+0.8
+11777.9
+0.9
+8598.1
+0.9
+10394.5
+0.9
+12191.4
+0.9
+8881.2
+0.9
+10742.9
+0.9
+12605.0
+1.0
+9164.3
+1.0
+11091.2
+1.0
+13018.6
+1.0
+9447.5
+1.0
+11439.6
+1.0
+13432.1
+1.1
+9730.6
+1.1
+11788.0
+1.1
+13845.7
+1.1
+10013.7
+1.1
+12136.3
+1.1
+14259.2
+1.2
+10296.8
+1.2
+12484.7
+1.2
+14672.8
+1.2
+10579.9
+1.2
+12833.1
+1.2
+15086.4
+1.3
+10863.0
+1.3
+13181.4
+1.3
+15499.9
+1.4
+11146.1
+1.4
+13529.8
+1.4
+15913.5
+1.6
+11146.1
+1.6
+13529.8
+1.6
+15913.5
+1.9
+11146.1
+1.9
+13529.8
+1.9
+15913.5
+30 feet
+40 feet
+Soil Profile
+50 feet
+60 feet
+70 feet
+80 feet
+15 feet
+20 feet
+W.O. 7271-00
+GEOLABS, INC.
+Hawaii • California
+PLATE 4.1
+FINAL SUBMITTAL - 1/17/2019
+LATERAL LOAD ANALYSIS
+Lahaina Small Boat Harbor
+Ferry Pier Improvements
+Lahaina, Maui, Hawaii
+0
+2000
+4000
+6000
+8000
+10000
+12000
+14000
+16000
+18000
+0.0
+1.0
+2.0
+3.0
+4.0
+5.0
+6.0
+7.0
+p (pounds/inch)
+y (inch)
+P-Y Curves
+15 feet
+20 feet
+30 feet
+40 feet
+50 feet
+60 feet
+70 feet
+80 feet
+W.O. 7271-00
+GEOLABS, INC.
+Hawaii • California
+PLATE 4.2
+FINAL SUBMITTAL - 1/17/2019
+APPENDIX A  
+FINAL SUBMITTAL - 1/17/2019
+W.O. 7271-00 
+GEOLABS, INC. 
+JANUARY 2019     Page A-1 
+Hawaii • California 
+A P P E N D I X  A 
+Field Exploration 
+The subsurface conditions at the project site were explored by drilling and 
+sampling three off-shore boreholes (designated as Boring Nos. 1 through 3) and 
+two land boreholes (designated as Boring Nos. 4 and 5).  The off-shore boreholes were 
+extended to depths of about 91.0 and 92.5 feet below the water surface, while the land 
+boreholes were advanced to depths of about 16.5 feet below the existing ground 
+surface.  The approximate boring locations are shown on the Site Plan, Plate 2.  The 
+borings were drilled using a truck-mounted drill on a barge (for off-shore borings) and a 
+truck-mounted drill rig equipped with continuous flight augers and rotary wash 
+drilling/coring tools (for land borings). 
+Our geologist classified the materials encountered in the borings by visual and 
+textural examination in the field in general accordance with ASTM D2488, Standard 
+Practice for Description and Identification of Soils, and monitored the drilling operations 
+on a near-continuous (full-time) basis. These classifications were further reviewed 
+visually and by testing in the laboratory. Soils were classified in general accordance with 
+ASTM D2487, Standard Practice for Classification of Soils for Engineering Purposes 
+(Unified Soil Classification System), as shown on the Soil Log Legend, Plate A-0.1. 
+Deviations made to the soil classification in accordance with ASTM D2487 are 
+described on the Soil Classification Log Key, Plate A-0.2.  Graphic representations of 
+the materials encountered are presented on the Logs of Borings, Plates A-1 through 
+A-5. 
+Relatively “undisturbed” soil samples were obtained in general accordance with 
+ASTM D3550, Ring-Lined Barrel Sampling of Soils, by driving a 3-inch OD Modified 
+California sampler with a 140-pound hammer falling 30 inches. In addition, some 
+samples were obtained from the drilled borings in general accordance with 
+ASTM D1586, Penetration Test and Split-Barrel Sampling of Soils, by driving a 2-inch 
+OD standard penetration sampler using the same hammer and drop.  The blow counts 
+needed to drive the sampler the second and third 6 inches of an 18-inch drive are 
+shown as the “Penetration Resistance” on the Logs of Borings at the appropriate 
+sample depths. 
+Core samples of the rock materials encountered at the project site were obtained 
+by using diamond core drilling techniques in general accordance with ASTM D2113, 
+Diamond Core Drilling for Site Investigation. Core drilling is a rotary drilling method that 
+uses a hollow bit to cut into the rock formation. The rock material left in the hollow core 
+of the bit is mechanically recovered for examination and description. Rock cores were 
+described in general accordance with the Rock Description System, as shown on the 
+Rock Log Legend, Plate A-0.3. The Rock Description System is based on the 
+publication “Suggested Methods for the Quantitative Description of Discontinuities in 
+Rock Masses” by the International Society for Rock Mechanics (March 1977). 
+FINAL SUBMITTAL - 1/17/2019
+Appendix A 
+Field Exploration 
+W.O. 7271-00 
+GEOLABS, INC. 
+JANUARY 2019     Page A-2 
+Hawaii • California 
+Recovery (REC) may be used as a subjective guide to the interpretation of the 
+relative quality of rock masses, where appropriate. Recovery is defined as the actual 
+length of material recovered from a coring attempt versus the length of the core attempt. 
+For example, if 3.7 feet of material is recovered from a 5.0-foot core run, the recovery 
+would be 74 percent and would be shown on the Logs of Borings as REC = 74%. 
+The Rock Quality Designation (RQD) is also a subjective guide to the relative 
+quality of rock masses. RQD is defined as the percentage of the core run in rock that is 
+sound material in excess of 4 inches in length without any discontinuities, discounting 
+any drilling, mechanical, and handling-induced fractures or breaks. If 2.5 feet of sound 
+material is recovered from a 5.0-foot core run in rock, the RQD would be 50 percent and 
+would be shown on the Logs of Borings as RQD = 50%. Generally, the following is used 
+to describe the relative quality of the rock based on the "Practical Handbook of Physical 
+Properties of Rocks and Minerals” by Robert S. Carmichael (1989). 
+Rock Quality 
+RQD 
+(%) 
+Very Poor 
+0 – 25 
+Poor 
+25 – 50 
+Fair 
+50 – 75 
+Good 
+75 – 90 
+Excellent 
+90 – 100 
+The excavation characteristic of a rock mass is a function of the relative 
+hardness of the rock, its relative quality, brittleness, and fissile characteristics. A dense 
+rock formation with a high RQD value would be very difficult to excavate and probably 
+would require more arduous methods of excavation. 
+FINAL SUBMITTAL - 1/17/2019
+A-0.1
+UNCONSOLIDATED UNDRAINED
+TRIAXIAL COMPRESSION (ksf)
+MORE THAN 50%
+OF COARSE
+FRACTION
+RETAINED ON
+NO. 4 SIEVE
+50% OR MORE OF
+COARSE FRACTION
+PASSING
+THROUGH NO. 4
+SIEVE
+MORE THAN 50%
+OF MATERIAL
+RETAINED ON NO.
+200  SIEVE
+50% OR MORE OF
+MATERIAL PASSING
+THROUGH NO. 200
+SIEVE
+TORVANE SHEAR (tsf)
+(2-INCH) O.D. STANDARD PENETRATION TEST
+POCKET PENETROMETER (tsf)
+(3-INCH) O.D. MODIFIED CALIFORNIA SAMPLE
+UNCONFINED COMPRESSION (ksf)
+INORGANIC SILTS AND VERY FINE SANDS,
+ROCK FLOUR, SILTY OR CLAYEY FINE SANDS
+OR CLAYEY SILTS WITH SLIGHT PLASTICITY
+POORLY-GRADED GRAVELS, GRAVEL-SAND
+MIXTURES, LITTLE OR NO FINES
+CLAYEY GRAVELS, GRAVEL-SAND-CLAY
+MIXTURES
+WELL-GRADED SANDS, GRAVELLY SANDS,
+LITTLE OR NO FINES
+POORLY-GRADED SANDS, GRAVELLY
+SANDS, LITTLE OR NO FINES
+SILTY SANDS, SAND-SILT MIXTURES
+CLAYEY SANDS, SAND-CLAY MIXTURES
+LIQUID LIMIT
+50 OR MORE
+CH
+NOTE: DUAL SYMBOLS ARE USED TO INDICATE BORDERLINE SOIL CLASSIFICATIONS
+MH
+SILTS
+AND
+CLAYS
+SILTS
+AND
+CLAYS
+LIQUID LIMIT
+LESS THAN 50
+USCS
+TYPICAL
+DESCRIPTIONS
+GW
+MORE THAN 12%
+FINES
+WATER LEVEL OBSERVED IN BORING OVERNIGHT
+HIGHLY ORGANIC SOILS
+SILTY GRAVELS, GRAVEL-SAND-SILT
+MIXTURES
+OL
+PEAT, HUMUS, SWAMP SOILS WITH HIGH
+ORGANIC CONTENTS
+INORGANIC CLAYS OF LOW TO MEDIUM
+PLASTICITY, GRAVELLY CLAYS, SANDY
+CLAYS, SILTY CLAYS, LEAN CLAYS
+Soil Log Legend
+ORGANIC CLAYS OF MEDIUM TO HIGH
+PLASTICITY, ORGANIC SILTS
+SC
+Plate
+GM
+FINE-
+GRAINED
+SOILS
+COARSE-
+GRAINED
+SOILS
+CLEAN SANDS
+SANDS WITH
+FINES
+SP
+SANDS
+GRAVELS
+WELL-GRADED GRAVELS,  GRAVEL-SAND
+MIXTURES, LITTLE OR NO FINES
+ML
+CL
+OH
+LESS THAN 5%
+FINES
+GRAVELS WITH
+FINES
+CLEAN
+GRAVELS
+GRAB SAMPLE
+PLASTICITY INDEX (NP=NON-PLASTIC)
+UC
+TV
+PEN
+LEGEND
+WATER LEVEL OBSERVED IN BORING AT TIME OF
+DRILLING
+WATER LEVEL OBSERVED IN BORING AFTER DRILLING
+SM
+MAJOR DIVISIONS
+GP
+MORE THAN 12%
+FINES
+PT
+LESS THAN 5%
+FINES
+UNIFIED SOIL CLASSIFICATION SYSTEM (USCS)
+ORGANIC SILTS AND ORGANIC SILTY
+CLAYS OF LOW PLASTICITY
+SW
+GC
+INORGANIC SILT, MICACEOUS OR
+DIATOMACEOUS FINE SAND OR SILTY
+SOILS
+INORGANIC CLAYS OF HIGH PLASTICITY
+PI
+LL
+CORE SAMPLE
+SHELBY TUBE SAMPLE
+LIQUID LIMIT (NP=NON-PLASTIC)
+TXUU
+GEOLABS, INC.
+Geotechnical Engineering
+LOG LEGEND FOR SOIL  7271-00.GPJ  GEOLABS.GDT  8/26/16
+FINAL SUBMITTAL - 1/17/2019
+A-0.2
+Medium Sand
+Fine Sand
+#4 to #200 (4.75-mm to 0.075-mm)
+#4 to #10 (4.75-mm to 2-mm)
+> 12 inches (305-mm)
+3-inch to #4 (75-mm to 4.75-mm)
+Sieve Number and / or Size
+Gravel
+#10 to #40 (2-mm to 0.425-mm)
+#40 to #200 (0.425-mm to 0.075-mm)
+3 to 12 inches (75-mm to 305-mm)
+Description
+PP Readings
+(tsf)
+2.0 - 4.0
+> 4.0
+N-Value (Blows/Foot)
+MCS
+0 - 4
+RELATIVE DENSITY / CONSISTENCY
+GRAIN SIZE DEFINITION
+ABBREVIATIONS
+N-Value (Blows/Foot)
+0 - 7
+Dry:    Absence of moisture, dry to the touch
+Moist: Damp but no visible water
+Wet:   Visible free water, usually soil is below water table
+WOH:  Weight of Hammer
+WOR:  Weight of Drill Rods
+SPT:    Standard Penetration Test Split-Spoon Sampler
+MCS:   Modified California Sampler
+PP:      Pocket Penetrometer
+4 - 7
+7 - 15
+15 - 27
+27 - 55
+SPT
+0 - 2
+> 55
+> 30
+4 - 8
+15 - 30
+MOISTURE CONTENT DEFINITIONS
+SPT
+0 - 4
+4 - 10
+10 - 30
+30 - 50
+> 50
+MCS
+Loose
+EXAMPLE: Soil Containing 60% Gravel, 25% Sand, 15% Fines. Described as: SILTY GRAVEL with some sand
+Plate
+GRANULAR SOIL (- #200 <50%)
+2 - 4
+8 - 15
+Relative
+Density
+Very Loose
+Dense
+Very Dense
+COHESIVE SOIL (- #200    50%)
+PRIMARY constituents are composed of the largest
+percent of the soil mass. Primary constituents are
+capitalized and bold (i.e., GRAVEL, SAND)
+PRIMARY constituents are based on plasticity. Primary
+constituents are capitalized and bold (i.e., CLAY, SILT)
+SECONDARY constituents are composed of a
+percentage less than the primary constituent. If the soil
+mass consists of 12 percent or more fines content, a
+cohesive constituent is used (SILTY or CLAYEY);
+otherwise, a granular constituent is used (GRAVELLY
+or SANDY) provided that the secondary constituent
+consists of 20 percent or more of the soil mass.
+Secondary constituents are capitalized and bold (i.e.,
+SANDY GRAVEL, CLAYEY SAND) and precede the
+primary constituent.
+SECONDARY constituents are composed of a
+percentage less than the primary constituent, but more
+than 20 percent of the soil mass. Secondary constituents
+are capitalized and bold (i.e., SANDY CLAY, SILTY
+CLAY, CLAYEY SILT) and precede the primary
+constituent.
+Sand
+Boulders
+Cobbles
+Coarse Gravel
+3-inch to 3/4-inch (75-mm to 19-mm)
+Fine Gravel
+3/4-inch to #4 (19-mm to 4.75-mm)
+GEOLABS, INC. CLASSIFICATION*
+Granular Soils
+Cohesive Soils
+Consistency
+accessory descriptions compose of the following:
+with some: >12%
+with a little: 5 - 12%
+with traces of: <5%
+accessory descriptions are lower cased and follow the
+Primary and Secondary Constituents
+(i.e., SILTY CLAY with some sand)
+Very Soft
+Soft
+Medium Stiff
+Stiff
+Very Stiff
+Hard
+< 0.5
+0.5 - 1.0
+1.0 - 2.0
+7 - 18
+18 - 55
+55 - 91
+> 91
+Medium Dense
+Coarse Sand
+(with deviations from ASTM D2488)
+Soil Classification Log Key
+*Soil descriptions are based on ASTM D2488-09a, Visual-Manual Procedure, with the
+above modifications by Geolabs, Inc. to the Unified Soil Classification System (USCS).
+accessory descriptions compose of the following:
+with some: >12%
+with a little: 5 - 12%
+with traces of: <5%
+accessory descriptions are lower cased and follow the
+Primary and Secondary Constituents
+(i.e., SILTY GRAVEL with a little sand)
+SOIL_CLASS_LOG_KEY  7271-00.GPJ  GEOLABS.GDT  8/26/16
+GEOLABS, INC.
+Geotechnical Engineering
+FINAL SUBMITTAL - 1/17/2019
+A-0.3
+ROCK DESCRIPTIONS
+Plate
+BRECCIA
+CLINKER
+COBBLES
+CORAL
+BASALT
+ROCK DESCRIPTION SYSTEM
+Greater than 24 inches apart
+12 to 24 inches apart
+6 to 12 inches apart
+3 to 6 inches apart
+Less than 3 inches apart
+Rock shows no sign of discoloration or loss of strength.
+Slight discoloration inwards from open fractures.
+Discoloration throughout and noticeably weakened though not able to break by hand.
+Most minerals decomposed with some corestones present in residual soil mass. Can be broken by hand.
+Saprolite. Mineral residue completely decomposed to soil but fabric and structure preserved.
+The following terms describe general fracture spacing of a rock:
+The following terms describe the chemical weathering of a rock:
+ROCK FRACTURE CHARACTERISTICS
+DEGREE OF WEATHERING
+HARDNESS
+BOULDERS
+VOID/CAVITY
+TUFF
+SILTSTONE
+LIMESTONE
+FINGER CORAL
+Unweathered:
+Slightly Weathered:
+Moderately Weathered:
+Highly Weathered:
+Extremely Weathered:
+Very Hard:
+Hard:
+Medium Hard:
+Soft:
+Very Soft:
+SANDSTONE
+Massive:
+Slightly Fractured:
+Moderately Fractured:
+Closely Fractured:
+Severely Fractured:
+Rock Log Legend
+The following terms describe the resistance of a rock to indentation or scratching:
+Specimen breaks with difficulty after several "pinging" hammer blows.
+Example: Dense, fine grain volcanic rock
+Specimen breaks with some difficulty after several hammer blows.
+Example: Vesicular, vugular, coarse-grained rock
+Specimen can be broked by one hammer blow. Cannot be scraped by knife. SPT may penetrate by
+~25 blows per inch with bounce.
+Example: Porous rock such as clinker, cinder, and coral reef
+Can be indented by one hammer blow. Can be scraped or peeled by knife. SPT can penetrate by
+~100 blows per foot.
+Example: Weathered rock, chalk-like coral reef
+Crumbles under hammer blow. Can be peeled and carved by knife. Can be indented by finger
+pressure.
+Example: Saprolite
+GEOLABS, INC.
+Geotechnical Engineering
+LOG LEGEND FOR ROCK  7271-00.GPJ  GEOLABS.GDT  8/26/16
+FINAL SUBMITTAL - 1/17/2019
+31
+32
+25
+33
+34
+88
+96
+SM
+GM
+21
+14
+33
+7
+3
+0
+0
+0
+7
+0
+Direct
+Shear
+Sieve
+- #200 =
+15.4%
+WATER
+Mudline at 14.5 feet
+Gray SILTY SAND with traces of gravel
+(coralline), medium dense (harbor deposit)
+Gray SILTY GRAVEL with some sand (coralline),
+loose (coralline detritus)
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-75DG2
+4" Casing & PQ Coring
+140 lb. wt., 30 in. drop
+5
+10
+15
+20
+25
+30
+35
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Sample
+Moisture
+Content (%)
+1
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+April 7, 2016
+April 7, 2016
+B. Aiu
+91 feet
+7271-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 1.1
+(Energy Transfer Ratio = 81%)
+GEOLABS, INC.
+Geotechnical Engineering
+LAHAINA SMALL BOAT HARBOR
+FERRY PIER IMPROVEMENTS
+LAHAINA, MAUI, HAWAII
+BORING_LOG  7271-00.GPJ  GEOLABS.GDT  9/2/16
+0.0 ft.   04/07/2016 0830 HRS
+Approximate Water Surface
+Elevation (feet): 0.0
+FINAL SUBMITTAL - 1/17/2019
+23
+22
+30
+33
+41
+32
+26
+GM
+GM
+9
+13
+3
+3
+5
+9
+9
+0
+19
+0
+0
+0
+0
+0
+Sieve
+- #200 =
+18.5%
+Gray SILTY GRAVEL with some sand and shell
+fragments, medium dense (coralline detritus)
+grades to very loose
+grades with more shell fragments
+grades to loose
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-75DG2
+4" Casing & PQ Coring
+140 lb. wt., 30 in. drop
+40
+45
+50
+55
+60
+65
+70
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Sample
+Moisture
+Content (%)
+1
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+(Continued from previous plate)
+April 7, 2016
+April 7, 2016
+B. Aiu
+91 feet
+7271-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 1.2
+(Energy Transfer Ratio = 81%)
+GEOLABS, INC.
+Geotechnical Engineering
+LAHAINA SMALL BOAT HARBOR
+FERRY PIER IMPROVEMENTS
+LAHAINA, MAUI, HAWAII
+BORING_LOG  7271-00.GPJ  GEOLABS.GDT  9/2/16
+0.0 ft.   04/07/2016 0830 HRS
+FINAL SUBMITTAL - 1/17/2019
+45
+51
+48
+46
+14
+ML
+CL
+7
+4
+7
+3
+50
+14
+7
+7
+29
+Sieve
+- #200 =
+56.7%
+Blackish gray SANDY SILT with traces of gravel
+(basaltic), medium stiff (alluvium)
+grades to soft
+Brown SILTY CLAY with some sand, stiff
+(alluvium)
+Grayish black SANDY BOULDERS with a little
+gravel, dense to very dense (alluvium)
+ Boring terminated at 91 feet
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-75DG2
+4" Casing & PQ Coring
+140 lb. wt., 30 in. drop
+75
+80
+85
+90
+95
+100
+105
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Sample
+Moisture
+Content (%)
+1
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+(Continued from previous plate)
+April 7, 2016
+April 7, 2016
+B. Aiu
+91 feet
+7271-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 1.3
+(Energy Transfer Ratio = 81%)
+GEOLABS, INC.
+Geotechnical Engineering
+LAHAINA SMALL BOAT HARBOR
+FERRY PIER IMPROVEMENTS
+LAHAINA, MAUI, HAWAII
+BORING_LOG  7271-00.GPJ  GEOLABS.GDT  9/2/16
+0.0 ft.   04/07/2016 0830 HRS
+FINAL SUBMITTAL - 1/17/2019
+31
+36
+38
+36
+28
+22
+94
+87
+SM
+SM
+23
+4
+15
+6
+13
+9
+0
+0
+0
+0
+14
+0
+Sieve
+- #200 =
+13.8%
+Direct
+Shear
+Sieve
+- #200 =
+15.7%
+WATER
+Mudline at 10.5 feet
+Dark gray SILTY SAND with traces of gravel,
+loose to medium dense (harbor deposit)
+grades to loose
+Whitish tan SILTY SAND with some gravel
+(coralline), loose to medium dense (coralline
+detritus)
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-75DG2
+4" Casing & PQ Coring
+140 lb. wt., 30 in. drop
+5
+10
+15
+20
+25
+30
+35
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Sample
+Moisture
+Content (%)
+2
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+April 6, 2016
+April 6, 2016
+B. Aiu
+92 feet
+7271-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 2.1
+(Energy Transfer Ratio = 81%)
+GEOLABS, INC.
+Geotechnical Engineering
+LAHAINA SMALL BOAT HARBOR
+FERRY PIER IMPROVEMENTS
+LAHAINA, MAUI, HAWAII
+BORING_LOG  7271-00.GPJ  GEOLABS.GDT  9/2/16
+0.0 ft.   04/06/2016 0812 HRS
+Approximate Water Surface
+Elevation (feet): 0.0
+FINAL SUBMITTAL - 1/17/2019
+31
+26
+28
+27
+28
+34
+47
+GP-
+GM
+CL
+11
+5
+3
+8
+7
+4
+2
+0
+0
+0
+0
+0
+0
+0
+Sieve
+- #200 =
+11.3%
+LL=48
+PI=21
+Gray SANDY GRAVEL with a little silt, medium
+dense (coralline detritus)
+grades to loose
+grades to very loose
+grades to loose
+grades with a little clay
+Dark gray SANDY CLAY, very soft (alluvium)
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-75DG2
+4" Casing & PQ Coring
+140 lb. wt., 30 in. drop
+40
+45
+50
+55
+60
+65
+70
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Sample
+Moisture
+Content (%)
+2
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+(Continued from previous plate)
+April 6, 2016
+April 6, 2016
+B. Aiu
+92 feet
+7271-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 2.2
+(Energy Transfer Ratio = 81%)
+GEOLABS, INC.
+Geotechnical Engineering
+LAHAINA SMALL BOAT HARBOR
+FERRY PIER IMPROVEMENTS
+LAHAINA, MAUI, HAWAII
+BORING_LOG  7271-00.GPJ  GEOLABS.GDT  9/2/16
+0.0 ft.   04/06/2016 0812 HRS
+FINAL SUBMITTAL - 1/17/2019
+47
+44
+30
+56
+25
+ML
+14
+12
+11
+8
+75
+57
+7
+0
+43
+Sieve
+- #200 =
+83.9%
+Blackish gray SILT with some sand (basaltic),
+stiff (alluvium)
+Grayish black SANDY BOULDERS with a little
+gravel, very dense (alluvium)
+ Boring terminated at 92 feet
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-75DG2
+4" Casing & PQ Coring
+140 lb. wt., 30 in. drop
+75
+80
+85
+90
+95
+100
+105
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Sample
+Moisture
+Content (%)
+2
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+(Continued from previous plate)
+April 6, 2016
+April 6, 2016
+B. Aiu
+92 feet
+7271-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 2.3
+(Energy Transfer Ratio = 81%)
+GEOLABS, INC.
+Geotechnical Engineering
+LAHAINA SMALL BOAT HARBOR
+FERRY PIER IMPROVEMENTS
+LAHAINA, MAUI, HAWAII
+BORING_LOG  7271-00.GPJ  GEOLABS.GDT  9/2/16
+0.0 ft.   04/06/2016 0812 HRS
+FINAL SUBMITTAL - 1/17/2019
+24
+27
+23
+36
+28
+105
+91
+GM
+GP-
+GM
+GM
+22
+10
+36
+15
+6
+13
+0
+0
+29
+14
+0
+Sieve
+- #200 =
+12.6%
+Sieve
+- #200 =
+19.9%
+WATER
+Mudline at 12.5 feet
+Gray SILTY GRAVEL with some sand (coralline),
+medium dense (harbor deposit)
+Whitish gray GRAVELLY COBBLES, medium
+dense (coralline detritus)
+Gray SILTY GRAVEL with some sand (coralline),
+loose (coralline detritus)
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-75DG2
+4" Casing & PQ Coring
+140 lb. wt., 30 in. drop
+5
+10
+15
+20
+25
+30
+35
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Sample
+Moisture
+Content (%)
+3
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+April 5, 2016
+April 5, 2016
+B. Aiu
+92.5 feet
+7271-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 3.1
+(Energy Transfer Ratio = 81%)
+GEOLABS, INC.
+Geotechnical Engineering
+LAHAINA SMALL BOAT HARBOR
+FERRY PIER IMPROVEMENTS
+LAHAINA, MAUI, HAWAII
+BORING_LOG  7271-00.GPJ  GEOLABS.GDT  9/2/16
+0.0 ft.   04/05/2016 0730 HRS
+Approximate Water Surface
+Elevation (feet): 0.0
+FINAL SUBMITTAL - 1/17/2019
+25
+20
+38
+31
+30
+54
+50
+GM
+GM
+GM
+6
+5
+4
+4
+9
+7
+9
+14
+0
+0
+0
+0
+0
+0
+Sieve
+- #200 =
+37.8%
+Sieve
+- #200 =
+32.0%
+Dark gray SILTY GRAVEL with some sand,
+loose (coralline detritus)
+Blackish gray SILTY GRAVEL with a little sand
+(basaltic), loose to medium dense (alluvium)
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-75DG2
+4" Casing & PQ Coring
+140 lb. wt., 30 in. drop
+40
+45
+50
+55
+60
+65
+70
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Sample
+Moisture
+Content (%)
+3
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+(Continued from previous plate)
+April 5, 2016
+April 5, 2016
+B. Aiu
+92.5 feet
+7271-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 3.2
+(Energy Transfer Ratio = 81%)
+GEOLABS, INC.
+Geotechnical Engineering
+LAHAINA SMALL BOAT HARBOR
+FERRY PIER IMPROVEMENTS
+LAHAINA, MAUI, HAWAII
+BORING_LOG  7271-00.GPJ  GEOLABS.GDT  9/2/16
+0.0 ft.   04/05/2016 0730 HRS
+FINAL SUBMITTAL - 1/17/2019
+41
+26
+10
+GM
+0
+0
+9
+14
+18
+50/5"
+15/0"
+ Ref.
+0
+29
+29
+33
+65
+Sieve
+- #200 =
+20.5%
+Grayish black GRAVELLY BOULDERS, medium
+dense to very dense (alluvium)
+Gray vesicular BASALT, closely to severely
+fractured, moderately weathered, medium hard
+to hard (basalt formation)
+ Boring terminated at 92.5 feet
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-75DG2
+4" Casing & PQ Coring
+140 lb. wt., 30 in. drop
+75
+80
+85
+90
+95
+100
+105
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Sample
+Moisture
+Content (%)
+3
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+(Continued from previous plate)
+April 5, 2016
+April 5, 2016
+B. Aiu
+92.5 feet
+7271-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 3.3
+(Energy Transfer Ratio = 81%)
+GEOLABS, INC.
+Geotechnical Engineering
+LAHAINA SMALL BOAT HARBOR
+FERRY PIER IMPROVEMENTS
+LAHAINA, MAUI, HAWAII
+BORING_LOG  7271-00.GPJ  GEOLABS.GDT  9/2/16
+0.0 ft.   04/05/2016 0730 HRS
+FINAL SUBMITTAL - 1/17/2019
+28
+11
+13
+30
+84
+125
+ML
+GP
+SM
+2.0
+14
+12/6"
+ +25/1"
+25/0"
+ Ref.
+32
+9
+Sieve
+- #200 =
+14.3%
+6-inch ASPHALTIC CONCRETE
+Brown SANDY SILT with a little gravel, stiff,
+moist (fill)
+BOULDERS, dense, wet (fill)
+Gray and tan SANDY GRAVEL, medium dense
+(coralline detritus)
+Tannish gray SILTY SAND with some gravel,
+loose (coralline detritus)
+ Boring terminated at 16.5 feet
+ * Elevations estimated from Partial Site Plan
+transmitted by Mitsunaga & Associates on
+December 24, 2015.
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-75DG1
+4" Solid Stem Auger
+140 lb. wt., 30 in. drop
+5
+10
+15
+20
+25
+30
+35
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation (feet MLLW): 7.5 *
+Sample
+Moisture
+Content (%)
+4
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+April 14, 2016
+April 14, 2016
+B. Aiu
+16.5 feet
+7271-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 4
+(Energy Transfer Ratio = 80.3%)
+GEOLABS, INC.
+Geotechnical Engineering
+LAHAINA SMALL BOAT HARBOR
+FERRY PIER IMPROVEMENTS
+LAHAINA, MAUI, HAWAII
+BORING_LOG  7271-00.GPJ  GEOLABS.GDT  9/2/16
+4.8 ft.   04/14/2016 1510 HRS
+FINAL SUBMITTAL - 1/17/2019
+14
+15
+26
+34
+36
+110
+103
+105
+ML
+SM
+SP-
+SM
+GP-
+GM
+41
+24
+39
+13
+10
+24
+2
+Sieve
+- #200 =
+10.2%
+6-inch ASPHALTIC CONCRETE
+Brown SANDY SILT with some gravel, very stiff,
+moist (fill)
+Brown and tan SILTY SAND, dense, moist (fill)
+Tan SAND with a little silt, medium dense, wet
+(beach sand)
+Light gray GRAVELLY SAND with a little silt,
+loose to medium dense (coralline detritus)
+ Boring terminated at 16.5 feet
+Log of
+Boring
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+CME-75DG1
+4" Solid Stem Auger & PQ Coring
+140 lb. wt., 30 in. drop
+5
+10
+15
+20
+25
+30
+35
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation (feet MLLW): 7.6 *
+Sample
+Moisture
+Content (%)
+5
+Dry Density
+(pcf)
+Description
+Laboratory
+RQD (%)
+Core
+Recovery (%)
+April 14, 2016
+April 14, 2016
+B. Aiu
+16.5 feet
+7271-00
+USCS
+Depth (feet)
+Water Level:
+Field
+A - 5
+(Energy Transfer Ratio = 80.3%)
+GEOLABS, INC.
+Geotechnical Engineering
+LAHAINA SMALL BOAT HARBOR
+FERRY PIER IMPROVEMENTS
+LAHAINA, MAUI, HAWAII
+BORING_LOG  7271-00.GPJ  GEOLABS.GDT  9/2/16
+4.5 ft.   04/14/2016 1230 HRS
+FINAL SUBMITTAL - 1/17/2019
+APPENDIX B  
+FINAL SUBMITTAL - 1/17/2019
+W.O. 7271-00 
+GEOLABS, INC. 
+JANUARY 2019     Page B-1 
+Hawaii • California 
+A P P E N D I X   B 
+Laboratory Tests 
+Moisture Content and Unit Weight tests were performed on selected soil samples 
+to aid in defining the interface between the various soil layers encountered and 
+correlating the layers between the borings. The moisture content tests were performed 
+in general accordance with ASTM D2216. The unit weight tests were performed in 
+general accordance with ASTM D2937. The test results are presented on the Logs of 
+Borings at the appropriate sample depths in Appendix A. 
+One Atterberg Limits test (ASTM D4318) was performed on a selected soil 
+sample to evaluate the liquid and plastic limits and to aid in soil classification. The test 
+results are summarized on the Logs of Borings at the appropriate sample depth. 
+Graphic presentation of the test results is provided on Plate B-1. 
+Fourteen Sieve Analysis tests (ASTM C117 & C136) were performed on selected 
+soil sample to evaluate the gradation characteristics of the soils and to aid in soil 
+classification. Graphic presentations of the grain size distribution are provided on 
+Plates B-2 through B-4. 
+Two Direct Shear tests (ASTM D3080) were performed on selected soil samples 
+to evaluate the shear strength characteristics of the material tested. The test results are 
+presented on Plates B-5 and B-6. 
+One Set of Corrosivity tests, including Chloride Content (EPA 300.0) and Sulfate 
+Content (EPA 300.0), was performed by TestAmerica Laboratories, Inc. on selected soil 
+samples obtained from our field exploration. The test results are summarized on 
+Plate B-7. 
+One Modified Proctor compaction test (ASTM D1557A) was performed on a bulk 
+sample of the near-surface soils to evaluate the dry density and moisture content 
+relationships. The test results are presented on Plate B-8. 
+FINAL SUBMITTAL - 1/17/2019
+0
+10
+20
+30
+40
+50
+60
+70
+80
+90
+100
+0
+20
+40
+60
+80
+100
+120
+PI
+Depth (ft)
+Sample
+LL
+PL
+Description
+48
+65.5-67.0
+ML or OL
+CL-ML
+CL or OL
+CH or OH
+27
+Dark gray sandy clay (CL)
+B - 1
+MH or OH
+21
+LIQUID LIMIT
+PLASTICITY INDEX
+B-2
+ATTERBERG LIMITS TEST RESULTS - ASTM D4318
+Plate
+W.O. 7271-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+LAHAINA SMALL BOAT HARBOR
+FERRY PIER IMPROVEMENTS
+LAHAINA, MAUI, HAWAII
+G_ATTERBERG_PI-100_LL-120  7271-00.GPJ  GEOLABS.GDT  8/26/16
+FINAL SUBMITTAL - 1/17/2019
+0
+5
+10
+15
+20
+25
+30
+35
+40
+45
+50
+55
+60
+65
+70
+75
+80
+85
+90
+95
+100
+0.001
+0.01
+0.1
+1
+10
+100
+15.053
+5.453
+0.087
+0.229
+2.877
+B - 2
+coarse
+1
+1.5
+3
+2
+40
+Depth (ft)
+%Gravel
+61.8
+43.4
+0.5
+0.4
+31.6
+22.8
+38.1
+42.9
+85.8
+52.7
+%Sand
+COBBLES
+Sample
+D30 (mm)
+140
+20
+HYDROMETER
+3
+GRAIN SIZE IN MILLIMETERS
+PERCENT FINER BY WEIGHT
+100
+coarse
+1/2
+Sample
+1.776
+0.312
+0.129
+0.364
+Cu
+GRAVEL
+U.S. SIEVE NUMBERS
+D10 (mm)
+16
+fine
+37.5
+25
+19
+19
+37.5
+Cc
+3/4
+fine
+SILT OR CLAY
+medium
+GRAIN SIZE DISTRIBUTION - ASTM C117 & C136
+SAND
+%Fine
+60
+4
+30
+200
+4
+6
+15.4
+18.5
+56.7
+13.8
+15.7
+Depth (ft)
+LL
+Gray silty gravel (GM) w/ some sand
+Gray silty gravel (GM) w/ some sand
+Blackish gray sandy silt (ML) w/ traces of gravel
+Dark gray silty sand (SM) w/ traces of gravel
+Whitish tan silty sand (SM) w/ some gravel
+810 14
+50
+U.S. SIEVE OPENING IN INCHES
+6
+D60 (mm)
+D100 (mm)
+B-1
+B-1
+B-1
+B-2
+B-2
+29.5-31.0
+44.5-46.0
+74.5-76.0
+11.5-13.0
+25.5-27.0
+29.5-31.0
+44.5-46.0
+74.5-76.0
+11.5-13.0
+25.5-27.0
+B-1
+B-1
+B-1
+B-2
+B-2
+3/8
+PL PI
+Description
+Plate
+W.O. 7271-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+LAHAINA SMALL BOAT HARBOR
+FERRY PIER IMPROVEMENTS
+LAHAINA, MAUI, HAWAII
+G_GRAIN_SIZE_MOD  7271-00.GPJ  GEOLABS.GDT  8/26/16
+FINAL SUBMITTAL - 1/17/2019
+0
+5
+10
+15
+20
+25
+30
+35
+40
+45
+50
+55
+60
+65
+70
+75
+80
+85
+90
+95
+100
+0.001
+0.01
+0.1
+1
+10
+100
+6.237
+7
+7.612
+5.099
+B - 3
+coarse
+1
+1.5
+3
+2
+40
+Depth (ft)
+%Gravel
+45.7
+0.2
+44.8
+47.6
+41.2
+43.1
+15.8
+42.6
+32.5
+21.0
+%Sand
+COBBLES
+Sample
+D30 (mm)
+140
+20
+0.5
+102.9
+HYDROMETER
+3
+GRAIN SIZE IN MILLIMETERS
+PERCENT FINER BY WEIGHT
+100
+coarse
+1/2
+Sample
+0.448
+0.295
+0.186
+Cu
+GRAVEL
+U.S. SIEVE NUMBERS
+D10 (mm)
+16
+fine
+37.5
+19
+37.5
+37.5
+37.5
+Cc
+3/4
+fine
+SILT OR CLAY
+medium
+GRAIN SIZE DISTRIBUTION - ASTM C117 & C136
+SAND
+%Fine
+60
+4
+30
+200
+4
+6
+11.3
+83.9
+12.6
+19.9
+37.8
+Depth (ft)
+LL
+Gray sandy gravel (GP-GM) w/ a little silt
+Blackish gray silt (ML) w/ some sand
+Gray silty gravel (GM) w/ some sand
+Gray silty gravel (GM) w/ some sand
+Gray silty gravel (GM) w/ some sand
+810 14
+50
+U.S. SIEVE OPENING IN INCHES
+6
+D60 (mm)
+D100 (mm)
+B-2
+B-2
+B-3
+B-3
+B-3
+35.5-37.0
+70.5-72.0
+15.0-16.5
+28.5-30.0
+48.5-50.0
+35.5-37.0
+70.5-72.0
+15.0-16.5
+28.5-30.0
+48.5-50.0
+B-2
+B-2
+B-3
+B-3
+B-3
+3/8
+PL PI
+Description
+Plate
+W.O. 7271-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+LAHAINA SMALL BOAT HARBOR
+FERRY PIER IMPROVEMENTS
+LAHAINA, MAUI, HAWAII
+G_GRAIN_SIZE_MOD  7271-00.GPJ  GEOLABS.GDT  8/26/16
+FINAL SUBMITTAL - 1/17/2019
+0
+5
+10
+15
+20
+25
+30
+35
+40
+45
+50
+55
+60
+65
+70
+75
+80
+85
+90
+95
+100
+0.001
+0.01
+0.1
+1
+10
+100
+8.651
+19.643
+3.788
+3.346
+B - 4
+coarse
+1
+1.5
+3
+2
+40
+Depth (ft)
+%Gravel
+54.3
+43.8
+38.0
+35.8
+13.7
+11.1
+47.7
+54.0
+%Sand
+COBBLES
+Sample
+D30 (mm)
+140
+20
+0.2
+45.1
+HYDROMETER
+3
+GRAIN SIZE IN MILLIMETERS
+PERCENT FINER BY WEIGHT
+100
+coarse
+1/2
+Sample
+3.172
+0.178
+0.21
+Cu
+GRAVEL
+U.S. SIEVE NUMBERS
+D10 (mm)
+16
+fine
+37.5
+37.5
+37.5
+25
+Cc
+3/4
+fine
+SILT OR CLAY
+medium
+GRAIN SIZE DISTRIBUTION - ASTM C117 & C136
+SAND
+%Fine
+60
+4
+30
+200
+4
+6
+32.0
+20.5
+14.3
+10.2
+Depth (ft)
+LL
+Dark gray silty gravel (GM) w/ some sand
+Blackish gray silty gravel (GM) w/ a little sand
+Tannish gray silty sand (SM) w/ some gravel
+Light gray gravelly sand (SM) w/ a little silt
+810 14
+50
+U.S. SIEVE OPENING IN INCHES
+6
+D60 (mm)
+D100 (mm)
+B-3
+B-3
+B-4
+B-5
+63.5-65.5
+73.5-75.0
+15.0-16.5
+10.0-11.5
+63.5-65.5
+73.5-75.0
+15.0-16.5
+10.0-11.5
+B-3
+B-3
+B-4
+B-5
+3/8
+PL PI
+Description
+Plate
+W.O. 7271-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+LAHAINA SMALL BOAT HARBOR
+FERRY PIER IMPROVEMENTS
+LAHAINA, MAUI, HAWAII
+G_GRAIN_SIZE_MOD  7271-00.GPJ  GEOLABS.GDT  8/26/16
+FINAL SUBMITTAL - 1/17/2019
+0
+500
+1,000
+1,500
+2,000
+2,500
+3,000
+0
+500
+1,000
+1,500
+2,000
+2,500
+3,000
+NORMAL STRESS, psf
+SHEAR STRESS, psf
+INITIAL
+Moisture Content, %
+Moisture Content, %
+Dry Density, pcf
+527 psf
+34 degrees
+1117
+2052
+2469
+0.0025
+0.0023
+0.0022
+2.42
+2.42
+2.42
+87.0
+86.0
+86.0
+87.0
+86.0
+87.0
+Cohesion:
+0.43
+0.41
+0.43
+1.000
+1.000
+1.000
+Height, inches
+Diameter, inches
+Peak Shear Stress, psf
+Shear Displacement, inches
+Gray silty sand (SM) w/
+traces of gravel
+1.00
+1.00
+1.00
+Height, inches
+B - 5
+40.5
+37.8
+38.3
+FINAL
+Dry Density, pcf
+Normal Stress, psf
+Sample:
+B-1
+15.5 - 17.0 feet
+Depth:
+Description:
+31.0
+32.0
+31.0
+Sample
+#1
+Sample
+#2
+Sample
+#3
+Deformation Rate, inch/minute
+Friction Angle:
+1000
+2000
+3000
+DIRECT SHEAR TEST -  ASTM D3080
+Plate
+W.O. 7271-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+LAHAINA SMALL BOAT HARBOR
+FERRY PIER IMPROVEMENTS
+LAHAINA, MAUI, HAWAII
+G_DIRECT_SHEAR  7271-00.GPJ  GEOLABS.GDT  8/26/16
+FINAL SUBMITTAL - 1/17/2019
+0
+500
+1,000
+1,500
+2,000
+2,500
+3,000
+0
+500
+1,000
+1,500
+2,000
+2,500
+3,000
+NORMAL STRESS, psf
+SHEAR STRESS, psf
+INITIAL
+Moisture Content, %
+Moisture Content, %
+Dry Density, pcf
+150 psf
+39 degrees
+950
+1733
+2542
+0.0025
+0.0021
+0.0023
+2.42
+2.42
+2.42
+86.2
+94.3
+89.7
+86.6
+88.2
+82.0
+Cohesion:
+0.45
+0.43
+0.43
+1.005
+0.936
+0.914
+Height, inches
+Diameter, inches
+Peak Shear Stress, psf
+Shear Displacement, inches
+Dark gray silty sand (SM) w/
+traces of gravel
+1.00
+1.00
+1.00
+Height, inches
+B - 6
+34.5
+36.2
+37.9
+FINAL
+Dry Density, pcf
+Normal Stress, psf
+Sample:
+B-2
+15.5 - 17.0 feet
+Depth:
+Description:
+34.1
+36.5
+41.6
+Sample
+#1
+Sample
+#2
+Sample
+#3
+Deformation Rate, inch/minute
+Friction Angle:
+1000
+2000
+3000
+DIRECT SHEAR TEST -  ASTM D3080
+Plate
+W.O. 7271-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+LAHAINA SMALL BOAT HARBOR
+FERRY PIER IMPROVEMENTS
+LAHAINA, MAUI, HAWAII
+G_DIRECT_SHEAR  7271-00.GPJ  GEOLABS.GDT  8/26/16
+FINAL SUBMITTAL - 1/17/2019
+B-1
+15.5 - 17.0
+650
+410
+SUMMARY OF CORROSIVITY TESTS
+B - 7
+(ohm-cm)
+(mg/kg)
+(mg/kg)
+SM 2510B
+Minimum Resistivity
+pH Value
+EPA 300.0
+Minimum Resistivity
+ASTM G57
+pH Value
+Method 9045C
+ASTM G51
+TEST METHODS (by TestAmerica Laboratories, Inc.)
+TEST METHODS (by Geolabs, Inc.)*
+pH Value
+Minimum Resistivity Chloride Content
+Sulfate Content
+ND: Not Detected Within Reporting Limits
+Sulfate Content
+EPA 300.0
+Location
+Depth
+(feet)
+Sulfate Content
+N/A
+Chloride Content
+Chloride Content
+N/A
+Plate
+W.O. 7271-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+LAHAINA SMALL BOAT HARBOR
+FERRY PIER IMPROVEMENTS
+LAHAINA, MAUI, HAWAII
+G_SUMMARY_OF_CORROSIVITY_TESTS  7271-00.GPJ  GEOLABS.GDT  8/26/16
+FINAL SUBMITTAL - 1/17/2019
+75
+80
+85
+90
+95
+100
+105
+110
+115
+120
+125
+130
+135
+0
+10
+20
+30
+40
+124.0
+12.0
+DRY DENSITY, pcf
+Optimum Moisture Content:
+Sample:
+Depth:
+TEST RESULTS
+MOISTURE CONTENT, %
+Description:
+pcf
+Maximum Dry Density:
+Brown silty sand (SM)
+B - 8
+3.20
+3.10
+3.00
+2.90
+2.80
+2.70
+2.60
+0.0 - 1.0 feet
+BULK-1
+MOISTURE-DENSITY RELATIONSHIP - ASTM D1557A
+Test Date:
+May 12, 2016
+Plate
+W.O. 7271-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+LAHAINA SMALL BOAT HARBOR
+FERRY PIER IMPROVEMENTS
+LAHAINA, MAUI, HAWAII
+G_COMPACTION  7271-00.GPJ  GEOLABS.GDT  1/18/19
+FINAL SUBMITTAL - 1/17/2019
+APPENDIX C  
+FINAL SUBMITTAL - 1/17/2019
+LAHAINA SMALL BOAT HARBOR 
+FERRY PIER IMPROVEMENTS 
+LAHAINA, MAUI, HAWAII 
+W.O. 7271‐00 
+GEOLABS, INC. 
+PLATE C‐1 
+Hawaii • California 
+B‐1     27.5’ TO 91.0’ 
+B‐2     28.5’ TO 92.0’ 
+B‐3     21.5’ TO 92.5’ 
+27.5’ 
+28.25’ 
+21.5’ 
+81.5’ 
+91.0’ 
+92.0’ 
+80.0’ 
+92.5’ 
+92.5 
+FINAL SUBMITTAL - 1/17/2019

@@ -1,0 +1,2604 @@
+GEOTECHNICAL ENGINEERING EXPLORATION
+PIER 1 SHED MODIFICATIONS, PHASE II
+HILO HARBOR
+HILO, ISLAND OF HAWAII
+W.O. 6760-00 JANUARY 22, 2013
+Prepared for
+CARDNO TEC, INC.
+LICENSED
+PROFESSIONAL
+ENGINEER
+No. 4176-C
+THIS WORK WAS PREPARED BY
+ME OR UNDER MY SUPERVISION.
+-30-14
+SIGNATURE EXPIRATION DATE
+OF THE LICENSE
+GEOLABS, INC.
+Geotechnical Engineering and Drilling Services
+2006 Kalihi Street e Honolulu, Hl 96819
+Hawaii ¢ California
+GEOLABS, INC.
+Geotechnical Engineering and Drilling Services
+January 22, 2013
+W.O. 6760-00
+Mr. Wilfred T. Cassidy
+Cardno TEC, Inc.
+1003 Bishop Street, Suite 1550
+Honolulu, HI 96813
+Dear Mr. Cassidy:
+Geolabs, Inc. is pleased to submit our report entitled "Geotechnical Engineering
+Exploration, Pier 1 Shed Modifications, Phase II, Hilo Harbor, Hilo, Island of Hawaii"
+prepared in support of the design of the project.
+Our work was performed in general accordance with the scope of services
+outlined in our fee proposals dated August 20 and November 5, 2012.
+Please note that the soil samples recovered during our field exploration
+(remaining after testing) will be stored for a period of two months from the date of this
+report. The samples will be discarded after that date unless arrangements are made for
+a longer sample storage period. Please contact our office for alternative sample storage
+requirements, if appropriate.
+Detailed discussion and specific design recommendations are contained in the
+body of this report. If there is any point that is not clear, please contact our office.
+Very truly yours,
+GEOLABS, INC.
+By
+on S. Mimura, P.E.
+CSM:GB:mj President
+2006 Kalihi Street ¢ Honolulu, Hawaii 96819
+Phone: (808) 841-5064 © Facsimile: (808) 847-1749 ¢ E-mail: hawaii @geolabs.net
+Hawaii ¢ California
+W.O. 6760-00 
+GEOLABS, INC. 
+Page i 
+Hawaii  California 
+GEOTECHNICAL ENGINEERING EXPLORATION 
+PIER 1 SHED MODIFICATIONS, PHASE II 
+HILO HARBOR 
+HILO, ISLAND OF HAWAII 
+W.O. 6760-00     JANUARY 22, 2013 
+TABLE OF CONTENTS 
+                Page 
+SUMMARY OF FINDINGS AND RECOMMENDATIONS.............................................. iii 
+1. 
+GENERAL............................................................................................................ 1 
+1.1 
+Introduction................................................................................................ 1 
+1.2 
+Project Considerations............................................................................... 1 
+1.3 
+Purpose and Scope ................................................................................... 1 
+2. 
+SITE CHARACTERIZATION................................................................................ 3 
+2.1 
+Regional Geology ...................................................................................... 3 
+2.2 
+Site Description.......................................................................................... 3 
+2.3 
+Subsurface Conditions............................................................................... 4 
+2.4 
+Seismic Design Considerations ................................................................. 4 
+2.4.1 Earthquakes and Seismicity ........................................................... 5 
+2.4.2 Liquefaction.................................................................................... 6 
+2.4.3 Soil Profile ...................................................................................... 7 
+3. 
+DISCUSSION AND RECOMMENDATIONS ........................................................ 9 
+3.1 
+Foundation System Evaluation ................................................................ 10 
+3.2 
+Shallow Foundations................................................................................ 10 
+3.3 
+Deep Foundations ................................................................................... 11 
+3.3.1 Downdrag Loads .......................................................................... 13 
+3.3.2 Uplift Load Resistance ................................................................. 13 
+3.3.3 Lateral Load Resistance............................................................... 13 
+3.3.4 Pile Foundation Settlements ........................................................ 15 
+3.3.5 Pile Hammer Selection................................................................. 15 
+3.3.6 Pile Driving Criteria....................................................................... 15 
+3.4 
+Light Pole Foundations ............................................................................ 16 
+3.4.1 Lateral Load Resistance............................................................... 17 
+3.4.2 Foundation Settlements ............................................................... 18 
+3.5 
+Site Grading............................................................................................. 18 
+3.6 
+Pavements............................................................................................... 20 
+3.7 
+Underground Utilities ............................................................................... 22 
+3.8 
+Design Review......................................................................................... 23 
+3.9 
+Post-Design Services/Services During Construction ............................... 23 
+TABLE OF CONTENTS 
+   Page 
+W.O. 6760-00 
+GEOLABS, INC. 
+Page ii 
+Hawaii  California 
+4. 
+LIMITATIONS..................................................................................................... 24 
+PLATES 
+Project Location Map................................................................................... Plate 1 
+Site Plan ..................................................................................................... Plate 2 
+APPENDIX A 
+Field Exploration...................................................................................... Page A-1 
+Soil Log Legend ..........................................................................................Plate A 
+Logs of Borings ........................................................................ Plates A-1 thru A-4 
+APPENDIX B 
+Laboratory Tests.......................................................................................Plate B-1 
+Laboratory Test Data ............................................................... Plates B-1 thru B-4 
+W.O. 6760-00 
+GEOLABS, INC. 
+Page iii 
+Hawaii  California 
+GEOTECHNICAL ENGINEERING EXPLORATION 
+PIER 1 SHED MODIFICATIONS, PHASE II 
+HILO HARBOR 
+HILO, ISLAND OF HAWAII 
+W.O. 6760-00     JANUARY 22, 2013 
+SUMMARY OF FINDINGS AND RECOMMENDATIONS 
+Based on our field exploration, the subsurface conditions at the site generally 
+consist of 6 to 7 inches of asphaltic concrete underlain by fill.  The fill consists of coralline 
+gravel with some sand.  The relative density of the fill was generally dense to very dense 
+to depths of about 2 to 6 feet below the existing pavement surface.  The relative density of 
+the fill then changed to very loose to loose to depths of about 21.5 feet below the existing 
+pavement surface. Below the fill, loose to medium dense coralline detritus was 
+encountered to the maximum depth explored. Dense coralline detritus was encountered 
+between depths of about 43 and 61 feet below the existing ground surface. We 
+encountered groundwater at depths of about 6 to 8.5 feet below the existing pavement 
+surface.  
+Due to the relatively light column loads, we believe that shallow foundations 
+consisting of spread and/or continuous footings bearing on recompacted fill may be used 
+for support of the proposed structure planned at the project site.  An allowable bearing 
+pressure of up to 2,500 pounds per square foot (psf) may be used for the foundation 
+design.  The bearing value is for dead-plus-live loads and may be increased by one-third 
+(1/3) for transient loads, such as those caused by wind or seismic forces. 
+Based on our analyses, the loose soils encountered below the groundwater level 
+are potentially liquefiable during a seismic event of Magnitude 6 with an associated peak 
+ground acceleration of 0.36g.  Due to the potential liquefaction of the loose soils 
+encountered, the site could be subjected to appreciable ground settlement (on the order of 
+about 10 inches or more).  Therefore, a shallow foundation support system may 
+experience appreciable settlement, and the new structure may sustain significant damage. 
+Due to the potential structural damage that may occur due to ground settlement caused by 
+liquefaction, driven precast, prestressed concrete piles will be used to support the new 
+structure.  The concrete piles should consist of 16.5-inch octagonal piles with an allowable 
+compressive load capacity of up to 20 kips per pile.  The driven piles would derive its 
+support primarily from end bearing on the dense coralline detritus encountered at about 
+43 feet below the existing ground surface.  Since it is not practical to conduct a test pile 
+program for the project, we recommend casting the production piles at least 55 feet long to 
+account for potential variation in the subsurface conditions. 
+The text of this report should be referred to for detailed discussion and specific 
+design recommendations. 
+END OF SUMMARY OF FINDINGS AND RECOMMENDATIONS 
+W.O. 6760-00 
+GEOLABS, INC. 
+Page 1 
+Hawaii  California 
+SECTION 1.  GENERAL 
+1.1 
+Introduction 
+This report summarizes our geotechnical engineering exploration performed for 
+the Pier 1 Shed Modifications, Phase II project at Hilo Harbor on the Island of Hawaii. 
+The project location and general vicinity are shown on the Project Location Map, 
+Plate 1. 
+This report summarizes our findings and geotechnical recommendations derived 
+from our field exploration, laboratory testing, and engineering analyses. These 
+recommendations are intended for the design of foundations, site grading, and 
+pavements only. The findings and recommendations presented herein are subject to the 
+limitations noted at the end of this report. 
+1.2 
+Project Considerations 
+The project site is at the existing shed on Pier 1 at Hilo Harbor on the Island of 
+Hawaii. We understand that it is planned to demolish the north side of the existing shed.  
+The demolished portion will provide additional cargo operating area and storage space 
+to support Pasha’s projected arrival in the Fall of 2013.  Since the site will be used for 
+future cargo storage, we understand that the pavements will be subjected to relatively 
+heavy vehicle loads, such as the Hyster H1050-1150HD-CH. 
+A new wall will be constructed at the new end of the existing shed.  Columns will 
+be used to support the new end of the existing shed.  Based on the project structural 
+engineer, the estimated column load is on the order of about 12 kips.  In addition, the 
+new end wall will consist of concrete masonry units (CMU).  
+1.3 
+Purpose and Scope 
+The purpose of our exploration program was to obtain an overview of the surface 
+and subsurface conditions to develop an idealized subsurface data set to formulate 
+geotechnical recommendations for the design of the project. The work was performed in 
+general accordance with the scope of services outlined in our fee proposals dated 
+August 20 and November 12, 2012. Our scope of work included the following tasks and 
+work efforts: 
+SECTION 1. GENERAL 
+W.O. 6760-00 
+GEOLABS, INC. 
+Page 2 
+Hawaii  California 
+1. 
+Mobilization/demobilization of a truck-mounted drill rig on the Island of 
+Hawaii, and two operators from Honolulu to the project site and back. 
+2. 
+Coordinate staking of boring locations and verify presence and locations 
+of utilities. 
+3. 
+Drilling and sampling of four borings extending to depths of about 21.5  to 
+103 feet below the existing ground surface for a total of about 167.5 lineal 
+feet of field exploration. 
+4. 
+Coordination of the field exploration and logging of the borings by our 
+geologist. 
+5. 
+Laboratory testing of selected soil samples obtained during the field 
+exploration as an aid in classifying the materials and evaluating their 
+engineering properties. 
+6. 
+Analyses of the field and laboratory data to formulate geotechnical 
+recommendations for the design of the project. 
+7. 
+Preparation of this report summarizing our work and presenting our 
+findings and recommendations. 
+8. 
+Coordination of our work on the project by our project engineer. 
+9. 
+Quality assurance of our work and client/design team consultation by our 
+principal engineer. 
+10. 
+Miscellaneous work efforts such as drafting, word processing, and clerical 
+support. 
+Detailed descriptions of our field exploration methodology and the logs of borings 
+are presented in Appendix A. Results of the laboratory tests are presented in 
+Appendix B. 
+END OF GENERAL 
+W.O. 6760-00 
+GEOLABS, INC. 
+Page 3 
+Hawaii  California 
+SECTION 2.  SITE CHARACTERIZATION 
+2.1 
+Regional Geology 
+The Island of Hawaii is the largest in the Hawaiian Archipelago and covers an 
+area of approximately 4,030 square miles. The island was formed by the activity of the 
+following five shield volcanoes:  Kohala (long extinct), Mauna Kea (activity during recent 
+geologic time), Hualalai (last erupted in 1801 – 1803), and Mauna Loa and Kilauea 
+(both still active). 
+The project site is within the Hilo Harbor area. Hilo Harbor lies at the intersecting 
+slopes of the Mauna Loa and Mauna Kea Volcanoes. The lava flows of the Mauna Loa 
+Volcano are relatively “young” in terms of geologic time and may be on the order of only 
+750 to 1,500 years old. Below the basaltic lava flows of the Mauna Loa Volcano, the 
+underlying lava flows of the Mauna Kea Volcano are believed to be Pliocene to 
+Pleistocene in age and belong to the upper member of the Hamakua Volcanic Series. 
+The land surrounding the Hilo Harbor area was reclaimed from the bay by the 
+placement of fill over the lagoonal deposits and/or coralline detritus. The project site is 
+generally underlain by lagoonal deposits and deposits of calcareous sediments 
+(also known as coralline detritus). Alluvial deposits associated with the Wailuku River 
+underlie the lagoonal deposits and calcareous sediments. Basalt formation from the 
+recent Mauna Loa lava flows may be encountered at greater depths below the alluvial 
+deposits.  
+2.2 
+Site Description 
+The Pier 1 shed is on Pier 1 of Hilo Harbor on the Island of Hawaii.  Pier 1 is 
+bounded by Puhi Bay to the east and Kuhio Bay to the west.  We understand that it is 
+planned to demolish the north side of the existing shed. The project location is shown 
+on the Site Plan, Plate 2.   
+In general, Pier 1 shed is a steel-framed structure with corrugated sheet metal 
+sidings.  We understand that the existing steel columns are supported on a deep 
+foundation system consisting of driven precast concrete piles.  The ground surface of 
+SECTION 2. SITE CHARACTERIZATION 
+W.O. 6760-00 
+GEOLABS, INC. 
+Page 4 
+Hawaii  California 
+the shed consists of asphaltic concrete pavement.  At the time of our field exploration, 
+the site was being used as a storage area. 
+The shed is built on relatively flat ground with a ground elevation of approximately 
++8 to +9 feet Mean Sea Level (MSL). 
+2.3 
+Subsurface Conditions 
+Our field exploration program consisted of drilling and sampling four borings, 
+designated as Boring Nos. 1 through 4, extending to depths of about 21.5  and 103 feet 
+below the existing ground surface. The approximate boring locations are shown on the 
+Site Plan, Plate 2. 
+Based on the borings drilled, the project site consists of 6 to 7 inches of asphaltic 
+concrete.  Below the asphaltic concrete, we encountered fill consisting of coralline 
+gravel with some sand.  The relative density of the fill was generally dense to very 
+dense to depths of about 2 to 6 feet below the existing pavement surface.  The relative 
+density of the fill then changed to very loose to loose to a depth explored of about 
+21.5 feet below the existing pavement surface.  Below the fill, coralline detritus 
+consisting of gravel and sand was encountered extending to the maximum depth 
+explored of about 103 feet below the existing pavement surface.  The relative density of 
+the coralline detritus was generally loose to medium dense to a depth of about 43 feet 
+below the existing pavement surface.  The relative density of the coralline detritus was 
+generally dense between depths of about 43 and 61 feet below the existing pavement 
+surface.  The relative density of the coralline detritus changed to medium dense with 
+localized loose zones below 61 feet and extended to the maximum depth explored. 
+We encountered groundwater at depths of about 6 to 8.5 feet below the existing 
+pavement surface. It should be noted that the groundwater levels are subject to change 
+due to tidal fluctuations, seasonal precipitation, and other factors. 
+2.4 
+Seismic Design Considerations 
+Based on the International Building Code, 2006 Edition (2006 IBC), the project 
+site may be subject to seismic activity; therefore, seismic design considerations will 
+SECTION 2. SITE CHARACTERIZATION 
+W.O. 6760-00 
+GEOLABS, INC. 
+Page 5 
+Hawaii  California 
+need to be addressed. The following subsections provide discussions on the seismicity, 
+liquefaction potential, and soil profile type for seismic design. 
+2.4.1 Earthquakes and Seismicity 
+Earthquakes that occur throughout the world are caused by shifts in the tectonic 
+plates. In contrast, earthquake activity in Hawaii is linked primarily to volcanic 
+activity; therefore, earthquake activity in Hawaii generally occurs before or during 
+volcanic eruptions. In addition, earthquakes may result from the underground 
+movement of magma that comes close to the surface but does not erupt. The 
+Island of Hawaii experiences thousands of earthquakes each year, but most are so 
+small that they can only be detected by sensitive instruments. However, some of 
+the earthquakes are strong enough to be felt, and a few cause minor to moderate 
+damage. 
+Earthquakes associated with volcanic activity are most common on the Island of 
+Hawaii. Earthquakes directly associated with the movement of magma are 
+concentrated beneath the active Kilauea and Mauna Loa Volcanoes on the Island 
+of Hawaii. Because majority of the earthquakes in Hawaii (over 90 percent) are 
+related to volcanic activity, the risk of seismic activity and degree of ground shaking 
+diminishes with increased distance from the active volcanoes in the southern 
+portion of the Island of Hawaii. 
+The Island of Hawaii has experienced numerous earthquakes greater than 
+Magnitude 6 (M6+) including the October 15, 2006 earthquakes. Based on 
+information obtained from the United States Geological Survey (USGS) Bulletin 
+2006, the following is a list of some destructive earthquakes that occurred on the 
+Island of Hawaii since 1868. 
+DATE 
+LOCATION 
+MAGNITUDE 
+March 28, 1868 
+South Hawaii 
+7.0 
+April 2, 1868 
+South Hawaii 
+7.9 
+October 5, 1929 
+Hualalai 
+6.5 
+August 21, 1951 
+Kona 
+6.9 
+April 26, 1973 
+North Hilo 
+6.2 
+SECTION 2. SITE CHARACTERIZATION 
+W.O. 6760-00 
+GEOLABS, INC. 
+Page 6 
+Hawaii  California 
+DATE 
+LOCATION 
+MAGNITUDE 
+November 29, 1975 
+Kalapana 
+7.2 
+November 16, 1983 
+Kaoiki 
+6.7 
+June 25, 1989 
+Kalapana 
+6.2 
+October 15, 2006 
+Kiholo Bay/Hawi 
+6.7/6.0 
+Several large earthquakes have occurred around the Hilo area (near the volcanoes 
+to the south) throughout the last 150 years, including the Magnitude 7.9 event in 
+South Hawaii (April 2, 1868).  Therefore, the Hilo Harbor area is a seismically active 
+area, and the project site could experience relatively high magnitude earthquakes 
+with associated strong ground shaking depending on the location of the earthquake 
+origin. 
+2.4.2  Liquefaction 
+Based on the International Building Code, the project site may be subjected to 
+seismic activity and should be evaluated for soil liquefaction potential. Soil 
+liquefaction is a condition where saturated cohesionless soils near the ground 
+surface undergo a substantial loss of strength due to the build-up of excess pore 
+water pressures resulting from cyclic stress applications induced by earthquakes. In 
+this process, when the loose saturated sand deposit is subjected to vibration 
+(such as during an earthquake), the soil tends to densify and decrease in volume 
+causing an increase in pore water pressure. If drainage is unable to occur rapidly 
+enough to dissipate the build-up of pore water pressure, the effective stress 
+(internal strength) of the soil is reduced. Under sustained vibrations, the pore water 
+pressure build-up could equal the overburden pressure, essentially reducing the 
+soil shear strength to zero and causing it to behave as a viscous fluid. During 
+liquefaction, the soil acquires sufficient mobility to permit both horizontal and 
+vertical movements, and if not confined, will result in significant deformations. 
+Soils most susceptible to liquefaction are loose, uniformly graded, fine-grained 
+sands and loose silts with little cohesion. It is generally acknowledged that 
+liquefaction will not occur if the deposit is greater than 40 to 50 feet below the 
+ground surface. In deeper deposits, the greater overburden pressure is generally 
+SECTION 2. SITE CHARACTERIZATION 
+W.O. 6760-00 
+GEOLABS, INC. 
+Page 7 
+Hawaii  California 
+sufficient to prevent liquefaction from occurring. The major factors affecting the 
+liquefaction characteristics of a soil deposit are as follows: 
+1. 
+Grain Size Distribution - Fine and uniform sands and silts are more 
+susceptible to liquefaction than coarse or well-graded sands. 
+2. 
+Initial Relative Density - Loose sands and silts are most susceptible 
+to liquefaction. Liquefaction potential is inversely proportional to 
+relative density. 
+3. 
+Magnitude and Duration of Vibration - Liquefaction potential is 
+directly proportional to the magnitude and duration of the 
+earthquake. 
+In general, the subsurface information obtained from the boring indicates that the 
+site is underlain by loose to very loose fill and coralline detritus to a depth of about 
+43 feet below the existing pavement surface.  Based on our analyses, the loose to 
+very loose fill and coralline detritus are potentially liquefiable during a seismic event 
+of Magnitude 6 with an associated peak ground acceleration of 0.36g.  
+It appears that the very loose to loose fill and coralline detritus below the 
+groundwater level have a factor of safety of 0.3 to 1.0 against liquefaction. 
+Therefore, it is our opinion that the project site could be subjected to appreciable 
+ground settlements (on the order of about 10 inches or greater) in the event of 
+liquefaction during a moderate earthquake (M6+). The effects of potential 
+liquefaction at the site should be taken into consideration when designing the 
+proposed new structure.   
+2.4.3 Soil Profile 
+Our field exploration generally encountered very loose to loose gravelly fill at 
+about 6 feet below the existing pavement surface and extending to a depth 
+explored of approximately 21.5 feet below the existing ground surface. Below the 
+gravelly fill, loose to medium dense coralline detritus was encountered to the 
+maximum depth explored. Dense coralline detritus was encountered between 
+depths of 43 and 61 feet below the existing pavement surface. Based on the 
+subsurface materials anticipated below the foundation subgrade level and the 
+geologic setting of the area, we anticipate the project site may be classified from 
+SECTION 2. SITE CHARACTERIZATION 
+W.O. 6760-00 
+GEOLABS, INC. 
+Page 8 
+Hawaii  California 
+a seismic analysis standpoint as a “Soft Soil Profile” corresponding to a Site 
+Class 
+E 
+soil 
+profile 
+based 
+on 
+the 
+International 
+Building 
+Code 
+(Table No. 1613.5.2), 2006 Edition. 
+Based on Site Class E, the following seismic design parameters were estimated 
+and may be used for seismic analysis of the project. 
+SEISMIC DESIGN PARAMETERS 
+Parameter 
+Value 
+Mapped MCE Spectral Response Acceleration, SS = 
+1.50g 
+Mapped MCE Spectral Response Acceleration, S1 = 
+0.60g 
+Site Class = 
+“E” 
+Site Coefficient, Fa = 
+0.90 
+Site Coefficient, Fv = 
+2.40 
+Adjusted MCE Spectral Response Acceleration, SMS = 
+1.35g 
+Adjusted MCE Spectral Response Acceleration, SM1 = 
+1.44g 
+Design Spectral Response Acceleration, SDS = 
+0.90g 
+Design Spectral Response Acceleration, SD1 = 
+0.96g 
+Peak Bedrock Acceleration, PBA (Site Class B) =  
+0.40g 
+Peak Ground Acceleration, PGA (Site Class E) = 
+0.36g 
+END OF SITE CHARACTERIZATION 
+W.O. 6760-00 
+GEOLABS, INC. 
+Page 9 
+Hawaii  California 
+SECTION 3.  DISCUSSION AND RECOMMENDATIONS 
+The subsurface conditions at the site generally consist of 6 to 7 inches of 
+asphaltic concrete underlain by coralline gravel fill.  The relative density of the fill was 
+generally dense to very dense to depths of about 2 to 6 feet below the existing 
+pavement surface.  The relative density of the fill then changed to very loose to loose to 
+a depth of about 21.5 feet below the existing pavement surface. Coralline detritus was 
+encountered below the fill and extended to the maximum depth explored.  The coralline 
+detritus consisted of loose to medium dense sand and gravel.  A dense layer of coralline 
+detritus was encountered between depths of about 43 and 61 feet below the existing 
+pavement surface. We encountered groundwater at depths of about 6 to 8.5 feet below 
+the existing pavement surface.  
+Based on the subsurface conditions encountered, the end wall may be supported 
+on shallow spread footings.  The total footing settlements under the anticipated design 
+loads (static conditions) may be on the order of about 1 inch for footings supported on 
+shallow spread footings. Differential settlements between adjacent footings supported 
+on the recompacted fill under static loading conditions should be on the order of about 
+0.5 inches.   
+It should be noted that our engineering analyses indicates that the site could be 
+subjected to appreciable ground settlement (on the order of about 10 inches or more) in 
+the event of liquefaction during a moderate earthquake (M6+) with a peak ground 
+acceleration of 0.36g.  Therefore, the shallow foundation support system may 
+experience appreciable settlement, and the new end wall may sustain significant 
+damage.  Due to the potential structural damage that may occur due to ground 
+settlement caused by liquefaction, driven precast, prestressed concrete piles will be 
+used to support the new structure.  The concrete piles should consist of 16.5-inch 
+octagonal piles.  The driven piles would derive its support primarily from end bearing on 
+the dense coralline detritus encountered at about 43 feet below the existing ground 
+surface.  Since it is not practical to conduct a test pile program for the project, we 
+recommend casting the production piles at least 55 feet long to account for potential 
+variation in the subsurface conditions. 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 6760-00 
+GEOLABS, INC. 
+Page 10 
+Hawaii  California 
+Detailed discussion of these items and our geotechnical recommendations for 
+project design are presented in the following sections.  
+3.1 
+Foundation System Evaluation 
+Based on the information provided by the project structural engineer, the 
+maximum column load for the proposed new structure is approximately 12 kips.  Based 
+on our analyses, the total footing settlements under the anticipated design loads (static 
+conditions) may be on the order of about 1 inch for footings supported on shallow 
+spread footings. Differential settlements between adjacent footings supported on the 
+recompacted fill under static loading conditions should be on the order of about 
+0.5 inches. 
+However, our engineering analyses also indicates that the site could be 
+subjected to appreciable ground settlement (on the order of about 10 inches or more) in 
+the event of liquefaction during a moderate earthquake (M6+) with a peak ground 
+acceleration of 0.36g.  Therefore, the shallow foundation support system may 
+experience appreciable settlement, and the new structure may sustain significant 
+damage.  The structural engineer should check the integrity of the new structure against 
+collapse due to potential ground settlement in the event of liquefaction.  The owner 
+should assess the potential risks of a seismic event. If the risks associated with potential 
+ground settlements during a seismic event is not acceptable to the owner, the new 
+structure should be supported on a deep foundation system, such as driven precast, 
+prestressed concrete piles. 
+3.2 
+Shallow Foundations 
+As discussed above, we believe that shallow foundations consisting of spread 
+and/or continuous footings bearing on recompacted fill may be used for support of the 
+proposed structure planned at the project site.  An allowable bearing pressure of up to 
+2,500 pounds per square foot (psf) may be used for the foundation design.  The bearing 
+value is for dead-plus-live loads and may be increased by one-third (1/3) for transient 
+loads, such as those caused by wind or seismic forces.  
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 6760-00 
+GEOLABS, INC. 
+Page 11 
+Hawaii  California 
+In general, the bottom of footings should be embedded a minimum of 18 inches 
+below the lowest adjacent finished grades.  In addition, foundations next to other 
+foundations, utility trenches, easements or retaining walls should be embedded below a 
+45-degree imaginary plane extending upward from the bottom edge of the structure or 
+utility trench, or the footings should extend to a depth as deep as the inverts of the utility 
+lines. This requirement is necessary to avoid surcharging adjacent below-grade 
+structures with additional structural loads and to reduce the potential for appreciable 
+foundation settlement. 
+Soft and/or loose soils, if encountered at the bottom of footing elevation, should 
+be over-excavated to expose firm/dense materials and the resulting over-excavation 
+should be backfilled with well-compacted fill material. 
+Lateral loads acting on the structure may be resisted by friction developed 
+between the bottom of the foundation and the bearing soil and by passive earth 
+pressure acting against the near-vertical faces of the foundation system.  A coefficient 
+of friction of 0.35 may be used for footings bearing on the recompacted fill.  Resistance 
+due to passive earth pressure may be estimated using an equivalent fluid pressure of 
+350 pounds per square foot per foot of depth (pcf).  This assumes that the soils around 
+the footings are well compacted.  Unless covered by pavements or slabs, the passive 
+resistance in the upper 12 inches of soil should be neglected. 
+We estimate that footing settlements under the anticipated design loads (static 
+condition) for footings bearing on the recompacted fill as recommended herein to be on 
+the order of about one (1) inch total with differential settlements on the order of 
+one-half (½) inch.   
+We recommend that a Geolabs representative observe the footing excavations 
+prior to placement of reinforcement steel and concrete to confirm the foundation bearing 
+conditions and the required embedment depths. 
+3.3 
+Deep Foundations 
+As previously mentioned, our engineering analyses indicates that the site could 
+be subjected to appreciable ground settlement (on the order of about 10 inches or 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 6760-00 
+GEOLABS, INC. 
+Page 12 
+Hawaii  California 
+more) in the event of liquefaction during a moderate earthquake (M6+) with a peak 
+ground acceleration of 0.36g.  Therefore, the shallow foundation support system may 
+experience appreciable settlement, and the new structure may sustain significant 
+damage.  Due to the potential structural damage that may occur due to ground 
+settlement caused by liquefaction, the new structure should be supported on a deep 
+foundation system consisting of driven precast, prestressed concrete piles. 
+We recommend using 16.5-inch octagonal precast, prestressed concrete piles to 
+support the new structure.  The 16.5-inch octagonal concrete piles may be designed 
+with an allowable compressive load capacity of up to 20 kips per pile.  The allowable 
+compressive load capacity is for dead-plus-live loads and may be increased by 
+50 percent for transient loads, such as those caused by wind or seismic forces. 
+Our field exploration indicated that dense coralline detritus was present at about 
+43 feet below the existing pavement surface.  The driven piles would derive its support 
+primarily from end bearing on the dense coralline detritus encountered at about 43 feet 
+below the existing ground surface.   
+Due to the relatively low number of piles proposed to support the end wall 
+structure, we believe that it is not practical to conduct a test pile program for the project.  
+Since production piles will be cast without conducting a test pile program, we 
+recommend casting the production piles at least 55 feet long to account for potential 
+variation in the subsurface conditions.  Detailed recommendations pertaining to the 
+driven pile foundations are presented in the following table. 
+PRECAST, PRESTRESSED CONCRETE PILE FOUNDATIONS 
+Type 
+Allowable 
+Compressive Load 
+Capacity 
+(kips) 
+Approximate 
+Pile Length 
+(feet) 
+Minimum 
+Center-to-Center 
+Pile Spacing 
+(feet) 
+16.5-Inch 
+Octagonal 
+20 
+55 
+4 
+A Geolabs representative should be present during the pile driving operations to 
+observe the actual driving behavior and to further evaluate the field performance. It 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 6760-00 
+GEOLABS, INC. 
+Page 13 
+Hawaii  California 
+should be noted that the pile design and driving criteria provided in this report were 
+developed from our pile analysis using the field exploration data. Therefore, observation 
+of the pile driving operations by Geolabs is necessary to confirm our design 
+assumptions and should be designated a “Special Inspection” item. 
+3.3.1 Downdrag Loads 
+Due to the potential for liquefaction of the very loose to loose fill and coralline 
+detritus at the project site, settlement of the loose soils will result in downdrag 
+loading of the pile foundations extending through the potentially liquefiable 
+materials. Therefore, the allowable compressive load capacities of the piles have 
+been reduced by the expected downdrag loads in the pile foundation analyses. 
+Based on our foundation analyses, we estimate that the downdrag load imposed on 
+the piles due to the potential for liquefaction of the very loose to loose soils may be 
+on the order of about 40 kips for the 16.5-inch octagonal piles. The estimated 
+downdrag loads has been accounted for in the recommended allowable 
+compressive load capacity; therefore, the allowable compressive load capacity 
+does not need to be further reduced for the downdrag loads. 
+3.3.2 Uplift Load Resistance 
+Uplift loads may be resisted by a combination of the dead weight of the driven pile 
+and shear along the pile surface and the adjacent soils.  The recommended uplift 
+load capacity (ultimate capacity) for the 16.5-inch octagonal pile is 25 kips per pile. 
+The uplift load capacity provided above includes the weight of the pile.  The uplift 
+load capacity of the piles provided is intended for transient load applications. 
+Therefore, the uplift load capacity should not be further increased for transient load 
+applications.  For sustained uplift loads, we recommend reducing the uplift load 
+capacity provided above by 50 percent to resist sustained uplift loads.  The capacity 
+of the pile member in tension should be checked by the project structural engineer. 
+3.3.3 Lateral Load Resistance 
+Lateral loads imposed on the proposed structure may be resisted by a combination 
+of the lateral load capacity of the driven piles and the passive pressure acting 
+against the vertical faces of the pile caps and/or grade beams.  Passive earth 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 6760-00 
+GEOLABS, INC. 
+Page 14 
+Hawaii  California 
+pressure against the vertical faces of the pile cap/grade beam may be estimated 
+using an equivalent fluid pressure of 350 pcf. 
+The lateral load resistance of driven piles is a function of the stiffness of the 
+surrounding soil, the stiffness of the pile, allowable deflection at the top of the pile, 
+and the induced moment in the pile.  The lateral load analyses were performed 
+using the program LPILE-plus for Windows, which is a microcomputer adaptation of 
+a finite difference, laterally loaded pile program originally developed at the 
+University of Texas at Austin.  The program solves for deflection and bending 
+moment along a pile under lateral loads as a function of depth.  The analysis was 
+carried out with the use of non-linear “p-y” curves to represent soil moduli.  The 
+lateral deflection was then computed using the appropriate soil moduli at various 
+depths. 
+The lateral load capacities, the maximum induced moments, and the depths at 
+which the maximum moments occur for the piles, where the tops of piles are either 
+free or fixed against rotation, are presented in the following table.  The values 
+provided in the table are based on an associated horizontal deflection assumed at 
+the top of the precast prestressed concrete piles. 
+LATERAL LOAD CAPACITY AND MAXIMUM INDUCED MOMENT                  
+FOR CONCRETE PILES 
+Pile 
+Size 
+Pile 
+Condition 
+Lateral 
+Load 
+(kips) 
+Lateral 
+Deflection 
+(inches) 
+Maximum 
+Induced 
+Moment 
+(kip-feet) 
+Depth to 
+Maximum 
+Moment 
+(feet) 
+Free-Head 
+8.0 
+0.5 
+33.6 
+7 
+16.5-Inch 
+Octagonal  
+Fixed Head 
+19.0 
+0.5 
+94.3 
+0 
+The maximum induced moments for the fixed-head boundary condition should 
+occur near the top of the pile.  The depths at which the maximum moments occur 
+for the free-head boundary condition are shown in the table. 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 6760-00 
+GEOLABS, INC. 
+Page 15 
+Hawaii  California 
+3.3.4 Pile Foundation Settlements 
+Settlements of the pile foundations will result primarily from elastic compression of 
+the pile member and subgrade response.  We estimate the total settlement of the 
+pile-supported foundations to be less than 0.5 inch with differential settlements 
+between columns supported on piles not exceeding about 0.25 inches.  We believe 
+that these settlements are essentially elastic and should occur as the loads are 
+applied. 
+3.3.5 Pile Hammer Selection 
+The piles should be driven with a hammer capable of delivering energies in the 
+range of about 10,000 to 15,000 foot-pounds in the field.  The hammer should be 
+equipped with an energy level control such that driving within the loose soils may 
+be controlled at a lower energy to reduce tensile stress development, which could 
+damage or cause cracking of the piles. 
+Determination of driving equipment to be used for this project should take into 
+consideration the “matching” of the pile hammer with the weight of the piles to be 
+driven.  This will result in the pile hammer efficiently delivering the required energy 
+to the top of the pile and also reducing damage to the piles.  Geolabs should review 
+the proposed pile driving equipment to evaluate whether the equipment is capable 
+of installing the piles to the recommended capacity.  The contractor should forward 
+pile and driving equipment data forms to Geolabs for evaluation prior to 
+construction.  Geolabs should review the submittal and assess the driveability of 
+piles with the use of the selected hammer. 
+3.3.6 Pile Driving Criteria 
+For preliminary design purposes, pile driving may be terminated when aggregated 
+blow counts reach the following termination criteria.  These preliminary driving 
+criteria should be confirmed after the selection of the pile driving equipment and 
+during test pile driving to accommodate variations of subsurface conditions in the 
+field. 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 6760-00 
+GEOLABS, INC. 
+Page 16 
+Hawaii  California 
+PRELIMINARY PILE DRIVING CRITERIA 
+Pile 
+Type 
+Ultimate Pile 
+Capacity 
+(kips) 
+Resistance 
+(Blows per foot) 
+Resistance 
+(Blows per inch for 
+the last 3 inches) 
+16.5-inch octagonal 
+80 
+45 
+4 
+In general, each pile should be driven continuously without interruption.  A pile may 
+be rejected or its design capacity may be reduced when the driving resistance is 
+interrupted for more than four hours and the pile cannot be driven to the required 
+depth and/or meet the pile driving criteria.  During soft driving, (i.e., when the pile tip 
+is within soft/loose soils), the hammer stroke (or energy) should be carefully 
+controlled such that significant tensile stresses do not develop within the pile. 
+Because variations in soil strength characteristics are likely to exist in the bearing 
+soils, the supporting capacity of each pile must be confirmed in the field by our 
+representative during driving.  It should be noted that the pile design was developed 
+from our pile analysis using the field exploration data.   
+3.4 
+Light Pole Foundations 
+We understand that 80-foot high light poles will be constructed at the project site. 
+Based on the relatively high bending moments anticipated and the subsurface 
+conditions encountered, we recommend using a deep foundation system, consisting of 
+cast-in-place concrete drilled shafts, to support the proposed light poles.  The following 
+table summarizes the maximum structural loads provided at the top of the new light pole 
+foundations. 
+SUMMARY OF STRUCTURAL LOADS FOR LIGHT POLES 
+Pole Type 
+Axial Load          
+(kips) 
+Lateral Load        
+(kips) 
+Bending Moment    
+(kip-feet) 
+1 
+4.6 
+6.2 
+345.6 
+2 
+6.1 
+8.3 
+481.8 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 6760-00 
+GEOLABS, INC. 
+Page 17 
+Hawaii  California 
+Based on the subsurface conditions encountered and the structural load 
+demands provided above, we have performed engineering analyses to estimate the 
+shaft lengths required to support the proposed light poles. In general, lateral load 
+resistance governed the design of the light pole foundations. Based on our engineering 
+analyses and the above assumptions, we recommend supporting the new light poles on 
+a cast-in-place concrete shaft with a diameter of 5 feet. The following table summarizes 
+our light pole foundation recommendations. 
+SUMMARY OF LIGHT POLE FOUNDATIONS 
+Pole Type 
+Drilled Shaft Diameter   
+(feet) 
+Drilled Shaft Length       
+(feet) 
+1 
+5 
+15 
+2 
+5 
+17 
+The load bearing capacity of the shaft will depend largely on the relative density 
+of the soils. Because local variations in the subsurface materials may occur at the site, it 
+is imperative that a Geolabs representative is present during the shaft excavation 
+operations to confirm the subsurface conditions encountered during the cast-in-place 
+concrete shaft construction and to observe the shaft installation. 
+The subsequent subsections address the design and construction of the 
+cast-in-place concrete shaft foundation: 
+Lateral Load Resistance 
+Foundation Settlements 
+3.4.1 Lateral Load Resistance 
+Lateral loads imposed on the light pole foundation may be resisted by the lateral 
+load capacity of the cast-in-place concrete shaft. In general, lateral load resistance 
+of the shaft is a function of the stiffness of the surrounding soil, the stiffness of the 
+shaft, allowable deflection at the top of shaft, and induced moment in the shaft. 
+The lateral load analyses were performed using the program LPILE-plus for 
+Windows, which is a microcomputer adaptation of a finite difference, laterally 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 6760-00 
+GEOLABS, INC. 
+Page 18 
+Hawaii  California 
+loaded cast-in-place concrete shaft program originally developed at the University 
+of Texas at Austin. The program solves for deflection and bending moment along a 
+cast-in-place concrete shaft under lateral loads as a function of depth. The analysis 
+was carried out with the use of non-linear “p-y” curves to represent soil moduli. The 
+lateral deflection was then computed using the appropriate soil moduli at various 
+depths. 
+Based on the structural loads provided, the estimated lateral deflection, maximum 
+induced moment, and the depth at which the maximum moment occurs in the shaft 
+is presented in the following table. 
+SUMMARY OF LATERAL LOAD ANALYSIS 
+Pole        
+Type 
+Drilled Shaft    
+Depth          
+(feet) 
+Lateral  
+Deflection   
+(inches) 
+Maximum 
+Induced 
+Moment        
+(kip-feet) 
+Depth to 
+Maximum 
+Moment        
+(feet) 
+1 
+15 
+1.0 
+358 
+2.9 
+2 
+17 
+1.0 
+501 
+3.2 
+3.4.2 Foundation Settlements 
+Settlement of the cast-in-place concrete shaft foundation will result from elastic 
+compression of the shaft and subgrade response of the foundation embedded in 
+the subsurface materials. Total settlement (static condition) of the concrete shaft is 
+estimated to be less than 0.5 inches. We believe that a significant portion of the 
+settlement is elastic and should occur as the loads are applied. 
+3.5 
+Site Grading 
+At the on-set of earthwork, areas within the contract grading limits should be 
+cleared thoroughly. Construction debris, deleterious material, and other unsuitable 
+materials should be removed and disposed properly off-site. Materials generated from 
+the demolition should also be removed and disposed properly off-site. The excavated 
+on-site soils encountered in the cut areas may be stockpiled and re-used as a source of 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 6760-00 
+GEOLABS, INC. 
+Page 19 
+Hawaii  California 
+general fill materials, provided that the soils meet the requirements for general fills 
+presented later in this section.  Soft and yielding areas encountered during clearing 
+should be over-excavated to expose firm material. The excavated soft and/or organic 
+soils should be disposed properly off-site, and may not be used for fill materials. The 
+resulting excavation should then be backfilled with engineered fills.  Contract documents 
+should include additive and deductive unit prices for over-excavation and fill placement to 
+account for variations in the over-excavation quantities. 
+Existing utilities to be abandoned should be removed, and the resulting 
+excavation should be properly backfilled with general fill material moisture-conditioned 
+to above optimum moisture content, placed in 6 to 8-inch level loose lifts, and 
+compacted to a minimum of 90 percent relative compaction. Utilities to be abandoned 
+in-place under the proposed structures should be backfilled by pumping lean concrete 
+under low pressure. 
+After clearing and demolition, the areas designated to receive fills and finished 
+subgrades in cut areas should be scarified to a depth of about 8 inches, 
+moisture-conditioned to above the optimum moisture content, and compacted to a 
+minimum of 90 percent relative compaction. The compaction requirement should be 
+increased to a minimum of 95 percent relative compaction in areas subject to vehicular 
+traffic.  Relative compaction refers to the in-place dry density of soil expressed as a 
+percentage of the maximum dry density as determined by ASTM D 1557. Optimum 
+moisture is the water content (percentage by weight) corresponding to the maximum dry 
+density. 
+The on-site soils may be used as general fill materials provided that they are free of 
+vegetation, deleterious materials, and rock fragments greater than 3 inches in maximum 
+dimension. Imported fill should be structural fill that consists of crushed coral or basalt.  
+The structural fill should be well graded from coarse to fine with particles no larger than 
+3 inches in largest dimension and should contain between 10 and 30 percent particles 
+passing the No. 200 sieve. The material should have a laboratory CBR value of 20 or 
+more and should have a maximum swell of less than 1 percent. 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 6760-00 
+GEOLABS, INC. 
+Page 20 
+Hawaii  California 
+General and structural fill materials should be moisture-conditioned to above the 
+optimum moisture, placed in level lifts not exceeding 8 inches in loose thickness, and 
+compacted to a minimum of 90 percent relative compaction. The top 12 inches of fill 
+placed in areas subjected to vehicular traffic should be compacted to a minimum of 
+95 percent relative compaction.  Compaction should be accomplished by sheepsfoot 
+rollers, vibratory rollers, multiple-wheel pneumatic-tired rollers, or other types of acceptable 
+compaction equipment. Water tamping, jetting, or ponding should not be allowed for 
+compaction of the fills. 
+In general, a Geolabs representative should monitor site grading operations to 
+observe whether the exposed soil conditions during excavation are similar to those 
+encountered in our exploration. 
+3.6 
+Pavements 
+We understand demolished area of the shed will be used for cargo storage; 
+therefore, the pavements will be subjected to relatively heavy vehicle loads, such as the 
+Hyster H1050-1150HD-CH. The design procedure used in determining the flexible 
+pavement section is based on the “Thickness Design – Asphalt Pavements for Heavy 
+Wheel Loads” developed by The Asphalt Institute. The design procedures used in 
+determining the new Portland concrete pavement section is based on the “Design of 
+Heavy Industrial Concrete Pavements” developed by the Portland Cement Association. 
+Based on the available information, we used the following parameters for our pavement 
+analyses. 
+DESIGN TRAFFIC PARAMETERS 
+Pavement Classification 
+Heavy Industrial 
+Design Vehicle 
+Hyster H1050-1150HD-CH 
+Front Axle Load 
+232,995 pounds 
+Tire Ground Contact Pressure 
+98.2 psi 
+Design Life 
+20 years 
+Dual Tire Separation 
+26.8 inches 
+Dual Wheel Spacing 
+143 inches 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 6760-00 
+GEOLABS, INC. 
+Page 21 
+Hawaii  California 
+The number of load repetitions of the design vehicle throughout the design life of 
+the pavement was not provided; therefore, we have assumed 10,000 repetitions, 
+100,000 repetitions, and 1,000,000 repetitions throughout the design life of the 
+pavement.  Based on the above assumptions and a properly prepared subgrade, we 
+recommend using the following flexible pavement sections for preliminary design and 
+budgeting purposes.  
+Flexible Pavement - 10,000 Load Repetitions 
+  6.0-Inch Asphalt Concrete 
+  8.0-Inch Asphalt Concrete Base (91 Percent Relative Specific Gravity) 
+14.0-Inch Total Pavement Thickness on Compacted Structural Fill 
+Flexible Pavement - 100,000 Load Repetitions 
+  6.0-Inch Asphalt Concrete 
+17.0-Inch Asphalt Concrete Base (91 Percent Relative Specific Gravity) 
+23.0-Inch Total Pavement Thickness on Compacted Structural Fill 
+Flexible Pavement - 1,000,000 Load Repetitions 
+  6.0-Inch Asphalt Concrete 
+26.0-Inch Asphalt Concrete Base (91 Percent Relative Specific Gravity) 
+32.0-Inch Total Pavement Thickness on Compacted Structural Fill 
+For rigid pavements, we recommend using the following pavement sections for 
+preliminary design and budgeting purposes.  
+Heavy Rigid Pavement – 10,000 Load Repetitions 
+15.5-Inch Portland Cement Concrete (Minimum Flexural Strength of 650 psi) 
+  6.0-Inch Aggregate Subbase Course (95 Percent Relative Compaction) 
+21.5-Inch Total Pavement Thickness on Compacted Structural Fill 
+Heavy Rigid Pavement – 100,000 Load Repetitions 
+17.0-Inch Portland Cement Concrete (Minimum Flexural Strength of 650 psi) 
+  6.0-Inch Aggregate Subbase Course (95 Percent Relative Compaction) 
+23.0-Inch Total Pavement Thickness on Compacted Structural Fill 
+Heavy Rigid Pavement – 1,000,000 Load Repetitions 
+18.0-Inch Portland Cement Concrete (Minimum Flexural Strength of 650 psi) 
+  6.0-Inch Aggregate Subbase Course (95 Percent Relative Compaction) 
+24.0-Inch Total Pavement Thickness on Compacted Structural Fill 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 6760-00 
+GEOLABS, INC. 
+Page 22 
+Hawaii  California 
+The pavement subgrade soils should be scarified to a depth of at least 8 inches, 
+moisture-conditioned to above the optimum moisture content, and compacted to no less 
+than 95 percent relative compaction. Relative compaction refers to the in-place dry 
+density of soil expressed as a percentage of the maximum dry density of the same soil 
+determined in accordance with ASTM D 1557. Optimum moisture is the water content 
+(percentage by dry weight) corresponding to the maximum dry density. 
+In general, paved areas should be sloped, and drainage gradients should be 
+maintained to carry surface water off the site. Surface water ponding should not be 
+allowed on the site during or after construction. 
+3.7 
+Underground Utilities 
+In general, we recommend providing granular bedding consisting of 6 inches of 
+open-graded gravel (ASTM C 33, No. 67 gradation) below the pipes for uniform support. 
+Where soft and/or loose soils are encountered at or near the invert of the pipes, a 
+stabilization layer consisting of additional 18 inches of open-graded gravel wrapped in a 
+non-woven filter fabric (Mirafi 180N or equivalent) should be provided below the bedding 
+layer for uniform support. 
+Free-draining granular materials, such as open-graded gravel (ASTM C 33, 
+No. 67 gradation), also should be used for the initial trench backfill up to about 
+12 inches above the pipes to provide adequate support around the pipes.  It is critical to 
+use free-draining materials around the pipes to reduce the potential for formation of 
+voids below the haunches of pipes and to provide adequate support around the sides of 
+the pipes. Improper trench backfill around the pipe could result in backfill settlement and 
+pipe damage. 
+The upper portion of the trench backfill from the level 12 inches above the pipes 
+to the top of the subgrade may consist of the excavated on-site soils, provided that they 
+are free of deleterious materials and over-sized materials (greater than 6 inches in 
+maximum particle size).  
+The backfill should be moisture-conditioned to above the optimum moisture, 
+placed in maximum 8-inch level loose lifts, and mechanically compacted to a minimum 
+SECTION 3. DISCUSSION AND RECOMMENDATIONS 
+W.O. 6760-00 
+GEOLABS, INC. 
+Page 23 
+Hawaii  California 
+of 90 percent relative compaction to reduce the potential for appreciable future ground 
+subsidence.  Where trenches will be located below areas subjected to vehicular traffic, 
+the upper 3 feet of the trench backfill below the pavement grade should be compacted 
+to a minimum of 95 percent relative compaction. 
+3.8 
+Design Review 
+Preliminary and final drawings and specifications should be forwarded to 
+Geolabs for review and written comments prior to construction. This review is necessary 
+to evaluate conformance of the plans and specifications with the intent of the 
+geotechnical recommendations provided herein. If this review is not made, Geolabs 
+cannot be responsible for misinterpretation of our recommendations. 
+3.9 
+Post-Design Services/Services During Construction 
+Geolabs should be retained to provide geotechnical engineering services during 
+construction of the proposed project. The critical items of construction monitoring that 
+require "Special Inspection" include the following: 
+Observation of Foundation Excavation 
+Observation of Subgrade Preparation 
+Observation of Fill and Backfill Placement and Compaction 
+In addition, a Geolabs representative should monitor other aspects of earthwork 
+construction to observe compliance with the intent of the design concepts, 
+specifications, and/or recommendations, and to expedite suggestions for design 
+changes that may be required in the event that subsurface conditions differ from those 
+anticipated at the time this report was prepared. The recommendations presented 
+herein are contingent upon such observations. If the actual exposed soil conditions 
+encountered during construction differ from those assumed or considered herein, 
+Geolabs 
+should 
+be 
+contacted 
+to 
+review 
+and/or 
+revise 
+the 
+geotechnical 
+recommendations presented herein. 
+END OF DISCUSSION AND RECOMMENDATIONS 
+W.O. 6760-00 
+GEOLABS, INC. 
+Page 24 
+Hawaii  California 
+SECTION 4.  LIMITATIONS 
+The analyses and recommendations submitted herein are based, in part, upon 
+information obtained from our field borings, bulk samples, and laboratory test data. 
+Variations of subsurface conditions between and beyond our field borings and bulk 
+samples may occur, and the nature and extent of these variations may not become 
+evident until construction is underway. If variations then appear evident, it will be 
+necessary to re-evaluate the recommendations provided herein. 
+The boring locations indicated herein were measured by taping from the physical 
+features shown on the Existing/New Work Roof Plan dated August 2011. Elevations of 
+the borings were estimated by interpolation from the elevation points and contour lines 
+shown on the Topographic Survey Map provided by Wesley R. Segawa and Associates, 
+Inc. on November 2, 2012. The physical locations and elevations of the borings should 
+be considered accurate only to the degree implied by the methods used. 
+The stratification lines shown on graphic representations of the borings depict the 
+approximate boundaries between soil types and, as such, may denote a gradual 
+transition. Water level data from the borings were measured at the times shown on the 
+graphic representations and/or in the text herein. These data have been reviewed and 
+interpretations made in the formulation of this report. However, it must be noted that the 
+fluctuation may occur due to variation in tidal fluctuation, rainfall, temperature and other 
+factors. 
+This report has been prepared for the exclusive use of Cardno Tec, Inc. and their 
+project subconsultants for specific application to the proposed project in accordance 
+with generally accepted geotechnical engineering principles and practices. No warranty 
+is expressed or implied. 
+This report has been prepared solely for the purpose of assisting the architect 
+and engineer in the preparation of design drawings and specifications for the project. 
+Therefore, this report may not contain sufficient data, or proper information, to serve as 
+a basis for construction cost estimates.  
+SECTION 4.  LIMITATIONS 
+W.O. 6760-00 
+GEOLABS, INC. 
+Page 25 
+Hawaii  California 
+The owner/client should be aware that unanticipated soil conditions are 
+commonly encountered. Unforeseen soil conditions, such as soft deposits, hard layers, 
+undocumented fills, or cavities may occur in localized areas and may require additional 
+probing or corrections in the field (which may result in construction delays) to attain a 
+properly constructed project. Therefore, a sufficient contingency fund is recommended 
+to accommodate these possible extra costs. 
+This geotechnical engineering exploration conducted at the project site was not 
+intended to investigate the potential presence of hazardous materials existing at the 
+site. The equipment, techniques, and personnel used to conduct a geo-environmental 
+exploration differ substantially from those applied in geotechnical engineering. 
+END OF LIMITATIONS 
+CLOSURE
+The following plates and appendices are attached and complete this report:
+Project Location Map
+sie iid phiad shay raale pid bos beeeb Ak ceressnonerwseteawentas wracr cverenrnestarpsiesresreiies Plate 1
+RAGED HEME cose die yesh oui acaecnesa ecicsn esieraseaariss vac ers ateso-syrcwsemetae sssidboul osavidece cess t oabuascseithtottat tes Plate 2
+PEGI OO RAIGIA atti ceerdsecontsshdansnedenairenisianasie wan emcekesade ns wiseestenseakanceszeamaneimatal Appendix A
+ESREDS TALON WARE G vs sa Saeescsesns ee eenasesae orcs wal Sapreeiboee ecvbd abicbacsduehe nbs abe ceeaia: Mi tad sea bath eea! Appendix B
+-QOQQQQQOO-
+Respectfully submitted,
+GEOLABS, INC.
+Glenn Barut, P.E. on S. ura, P.E.
+Project Engineer President
+CSM:GB:mf~
+h:\6700Series\6760-00.gb1
+W.O. 6760-00 GEOLABS, INC. Page 26
+Hawaii e California
+PLATES 
+CAD User: JJP File Last Updated: November 14, 2012 11:04:42am Plot Date: January 30, 2013 - 10:50:49am
+File: T:\Drafting-9904\Working\6760-00Pier1 ShedModifications\6760-00PLM.dwg\PLM
+Plotter: CutePDF Writer Plotstyle: GEO-No-Dithering-Blue-Boring.ctb
+PACIFIC OCEAN
+HOLUALOA
+COOK
+ISLAND MAP
+NO SCALE
+OJECT LOCATION
+, eT Beach Park
+wif PE
+A 1A
+PROJECT LOCATION»:
+2000 1000 0
+GRAPHIC SCALE
+REFERENCE: MAP CREATED WITH TOPO!® ©2010 NATIONAL
+GEOGRAPHIC; ©2007 TELE ATLAS, REL. 1/2007.
+PROJECT LOCATION MAP
+PIER 1 SHED MODIFICATIONS, PHASE II
+HILO HARBOR
+HILO, ISLAND OF HAWAII
+GEOLABS, INC.
+Geotechnical Engineering
+DATE DRAWN BY
+SCALE W.O.
+PLATE
+Ag i— Ba. "PIER-2"
+3° 74°5)" 204.03
+8.1K Nail
+JRP
+DRAWN BY
+@)
+Geotechnical Engineering
+GEOLABS, INC.
+SITE PLAN
+PIER 1 SHED MODIFICATIONS, PHASE II
+HILO HARBOR
+HILO, ISLAND OF HAWAII
+P.K. nail is
+NOVEMBER 2012
+Tie down
+Hel OQ!
+8.52
+8.48
+@)
+@)
+8.11
+3.31
+(24)
+8.53
+229 - - a
+4.21
+@)
+@)
+@)
+@)
+GRAPHIC SCALE
+(8)
+@)
+@)
+3.12
+3.18
+9g .6Ge
+109)
+or 6.71
+2% (Sta. 'PIER-A" ©
+aja spike IF
+| Elev. =8.56
+e8 pipe
+me BB | Bb! B62
+3.31 |
+map nn a
+Sta."H-4"
+8.8l_}
+Paani “ —
+INC. ON NOVEMBER 2, 2012.
+e APPROXIMATE BORING LOCATION
+EFERENCE: SITE PLAN PROVIDED BY WESLEY R. SEGAWA &
+LEGEND:
+SSOCIATES
+R
+A
+quo" Buriog-an|g-BuLay}!q-ON-OAD “AIAJS}Olq JOM 40dAIND JOVYO|d
+Ue} JOHS\HMp' Ue] 4O"SO0-099\SUOHESYIPOPEYS 149!1400-09Z9\Surom\ro6e-Huryesq\:L :a!4
+WREL:GP:0L - E102 ‘OE Atenuep :9}8&q Old WEL:EE:01 ZL0Z ‘1Z JOqWOAON :payepdy seq Olly drr 4esN avo
+APPENDIX A 
+W.O. 6760-00 
+GEOLABS, INC. 
+JANUARY 2013     Page A-1 
+Hawaii  California 
+A P P E N D I X   A 
+Field Exploration 
+We explored the subsurface conditions at the site by drilling and sampling 
+four borings extending to depths of about 21.5 to 100 feet below the existing ground 
+surface. The approximate boring locations are shown on the Site Plan, Plate 2. The 
+borings were drilled using a truck-mounted drill rig equipped with augers and rotary coring 
+equipment. 
+The geologist classified materials encountered in the borings by visual and textural 
+examination in the field and monitored the drilling operations on a near-continuous basis. 
+These classifications were further reviewed visually and by testing in the laboratory. Soils 
+were classified in general conformance with the Unified Soil Classification System as 
+shown on the Soil Log Legend, Plate A. Graphic representations of the materials 
+encountered are presented on the Logs of Borings, Plates A-1 through A-4. 
+Relatively “undisturbed” soil samples were obtained in general accordance with 
+ASTM D 3550, Ring-Lined Barrel Sampling of Soils, by driving a 3-inch OD Modified 
+California sampler with a 140-pound hammer falling 30 inches. In addition, some samples 
+were obtained from the drilled borings in general accordance with ASTM D 1586, 
+Penetration Test and Split-Barrel Sampling of Soils, by driving a 2-inch OD standard 
+penetration sampler using the same hammer and drop. The blow counts needed to drive 
+the sampler the second and third 6 inches of an 18-inch drive are shown as the 
+“Penetration Resistance” on the Logs of Borings at the appropriate sample depths. 
+MORE THAN 50%
+OF COARSE
+FRACTION
+RETAINED ON
+NO. 4 SIEVE
+(2-INCH) O.D. STANDARD PENETRATION TEST
+POCKET PENETROMETER (tsf)
+UNCONFINED COMPRESSION (psi)
+50% OR MORE OF
+COARSE FRACTION
+PASSING
+THROUGH NO. 4
+SIEVE
+MORE THAN 50%
+OF MATERIAL
+RETAINED ON NO.
+200  SIEVE
+50% OR MORE OF
+MATERIAL PASSING
+THROUGH NO. 200
+SIEVE
+(3-INCH) O.D. MODIFIED CALIFORNIA SAMPLE
+TORVANE SHEAR (tsf)
+TRIAXIAL COMPRESSION (ksf)
+A
+SILTY GRAVELS, GRAVEL-SAND-SILT
+MIXTURES
+OL
+PEAT, HUMUS, SWAMP SOILS WITH HIGH
+ORGANIC CONTENTS
+INORGANIC CLAYS OF LOW TO MEDIUM
+PLASTICITY, GRAVELLY CLAYS, SANDY
+CLAYS, SILTY CLAYS, LEAN CLAYS
+Soil Log Legend
+UC
+TV
+ORGANIC CLAYS OF MEDIUM TO HIGH
+PLASTICITY, ORGANIC SILTS
+SC
+Plate
+GM
+FINE-
+GRAINED
+SOILS
+COARSE-
+GRAINED
+SOILS
+UNCONSOLIDATED UNDRAINED
+CLEAN SANDS
+SANDS WITH
+FINES
+SP
+SANDS
+GRAVELS
+WELL-GRADED GRAVELS,  GRAVEL-SAND
+MIXTURES, LITTLE OR NO FINES
+ML
+CL
+OH
+LESS THAN 5%
+FINES
+GRAVELS WITH
+FINES
+CLEAN
+GRAVELS
+UU
+PEN
+PI
+LL
+INORGANIC SILTS AND VERY FINE SANDS,
+ROCK FLOUR, SILTY OR CLAYEY FINE SANDS
+OR CLAYEY SILTS WITH SLIGHT PLASTICITY
+POORLY-GRADED GRAVELS, GRAVEL-SAND
+MIXTURES, LITTLE OR NO FINES
+CLAYEY GRAVELS, GRAVEL-SAND-CLAY
+MIXTURES
+WELL-GRADED SANDS, GRAVELLY SANDS,
+LITTLE OR NO FINES
+POORLY-GRADED SANDS, GRAVELLY
+SANDS, LITTLE OR NO FINES
+SILTY SANDS, SAND-SILT MIXTURES
+CLAYEY SANDS, SAND-CLAY MIXTURES
+CORE SAMPLE
+LIQUID LIMIT
+50 OR MORE
+CH
+NOTE: DUAL SYMBOLS ARE USED TO INDICATE BORDERLINE SOIL CLASSIFICATIONS
+MH
+SHELBY TUBE SAMPLE
+LIQUID LIMIT (NP=NON-PLASTIC)
+GRAB SAMPLE
+PLASTICITY INDEX (NP=NON-PLASTIC)
+SILTS
+AND
+CLAYS
+SILTS
+AND
+CLAYS
+LIQUID LIMIT
+LESS THAN 50
+USCS
+TYPICAL
+DESCRIPTIONS
+GW
+MORE THAN 12%
+FINES
+HIGHLY ORGANIC SOILS
+SM
+MAJOR DIVISIONS
+GP
+MORE THAN 12%
+FINES
+PT
+LESS THAN 5%
+FINES
+UNIFIED SOIL CLASSIFICATION SYSTEM (USCS)
+ORGANIC SILTS AND ORGANIC SILTY
+CLAYS OF LOW PLASTICITY
+SW
+GC
+INORGANIC SILT, MICACEOUS OR
+DIATOMACEOUS FINE SAND OR SILTY
+SOILS
+INORGANIC CLAYS OF HIGH PLASTICITY
+LEGEND
+WATER LEVEL OBSERVED IN BORING AT TIME OF
+DRILLING
+WATER LEVEL OBSERVED IN BORING AFTER DRILLING
+GEOLABS, INC.
+Geotechnical Engineering
+LOG LEGEND FOR SOIL  6760-00.GPJ  GEOLABS.GDT  1/30/13
+6-inch ASPHALTIC CONCRETE
+Gray coarse GRAVEL (CORALLINE) with some
+sand and traces of silt, very dense, moist (fill)
+Gray coarse GRAVEL (CORALLINE) with some
+sand and traces of silt, medium dense, moist to
+wet (fill)
+Gray SAND (CORALLINE) with some gravel and
+traces of silt, loose to medium dense
+Gray coarse GRAVEL (CORALLINE) with some
+sand and traces of silt, loose to very loose (fill)
+Gray coarse GRAVEL (CORALLINE) with some
+sand and traces of silt, very loose (fill)
+White GRAVEL (CORALLINE) with traces of
+sand, very loose (coralline detritus)
+12
+12
+28
+27
+22
+24
+20
+90
+69
+GP
+GP
+SP-
+SM
+GP
+GW
+GP
+50/.5'
+60
+20
+10
+6
+3
+4
+Sieve
+- #200 =
+8.0%
+Sieve
+- #200 =
+3.8%
+Sieve
+- #200 =
+4.8%
+Sieve
+- #200 =
+0.3%
+Field
+October 9, 2012
+December 28, 2012
+M. Gruver / G. Young
+103 feet
+6760-00
+USCS
+Depth (feet)
+Water Level:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+1
+MOBILE B-53
+4" Auger & 3" Casing
+140 lb. wt., 30 in. drop
+5
+10
+15
+20
+25
+30
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Moisture
+Content (%)
+Core
+Recovery (%)
+Laboratory
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation (feet MSL): 8.5 *
+Log of
+Boring
+Sample
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Dry Density
+(pcf)
+Description
+RQD (%)
+A - 1.1
+6.0 ft.   10/09/2012 1345 HRS
+8.5 ft.   12/28/2012 0800 HRS
+GEOLABS, INC.
+Geotechnical Engineering
+PIER 1 SHED MODIFICATIONS, PHASE II
+HILO HARBOR
+HILO, ISLAND OF HAWAII, HAWAII
+BORING_LOG  6760-00.GPJ  GEOLABS.GDT  1/30/13
+ grades to medium dense
+ grades to loose
+Gray GRAVELLY SAND (CORALLINE) with a
+little silt, loose (coralline detritus)
+Tan GRAVEL (CORALLINE) with some sand
+and a little silt, dense (coralline detritus)
+41
+19
+34
+20
+16
+15
+GP
+SP-
+SM
+GW-
+GM
+15
+6
+4
+39
+38
+42
+Sieve
+- #200 =
+0.2%
+Sieve
+- #200 =
+8.7%
+Sieve
+- #200 =
+5.6%
+Sieve
+- #200 =
+9.6%
+Field
+October 9, 2012
+December 28, 2012
+M. Gruver / G. Young
+103 feet
+6760-00
+USCS
+Depth (feet)
+Water Level:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+1
+MOBILE B-53
+4" Auger & 3" Casing
+140 lb. wt., 30 in. drop
+35
+40
+45
+50
+55
+60
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Moisture
+Content (%)
+Core
+Recovery (%)
+(Continued from previous plate)
+Laboratory
+Penetration
+Resistance
+(blows/foot)
+Log of
+Boring
+Sample
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Dry Density
+(pcf)
+Description
+RQD (%)
+A - 1.2
+6.0 ft.   10/09/2012 1345 HRS
+8.5 ft.   12/28/2012 0800 HRS
+GEOLABS, INC.
+Geotechnical Engineering
+PIER 1 SHED MODIFICATIONS, PHASE II
+HILO HARBOR
+HILO, ISLAND OF HAWAII, HAWAII
+BORING_LOG  6760-00.GPJ  GEOLABS.GDT  1/30/13
+Gray SILTY GRAVEL (CORALLINE), medium
+dense (coralline detritus)
+Tan SANDY GRAVEL (CORALLINE), medium
+dense (coralline detritus)
+ grades to loose
+Tan SILTY GRAVEL (CORALLINE), loose
+(coralline detritus)
+Tan GRAVELLY SAND (CORALLINE) with a
+little silt, medium dense (coralline detritus)
+22
+24
+31
+26
+40
+45
+GW-
+GM
+GM
+GW
+GM
+SP-
+SM
+12
+16
+13
+6
+4
+13
+Sieve
+- #200 =
+7.8%
+Field
+October 9, 2012
+December 28, 2012
+M. Gruver / G. Young
+103 feet
+6760-00
+USCS
+Depth (feet)
+Water Level:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+1
+MOBILE B-53
+4" Auger & 3" Casing
+140 lb. wt., 30 in. drop
+65
+70
+75
+80
+85
+90
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Moisture
+Content (%)
+Core
+Recovery (%)
+(Continued from previous plate)
+Laboratory
+Penetration
+Resistance
+(blows/foot)
+Log of
+Boring
+Sample
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Dry Density
+(pcf)
+Description
+RQD (%)
+A - 1.3
+6.0 ft.   10/09/2012 1345 HRS
+8.5 ft.   12/28/2012 0800 HRS
+GEOLABS, INC.
+Geotechnical Engineering
+PIER 1 SHED MODIFICATIONS, PHASE II
+HILO HARBOR
+HILO, ISLAND OF HAWAII, HAWAII
+BORING_LOG  6760-00.GPJ  GEOLABS.GDT  1/30/13
+Tan SILTY GRAVEL (CORALLINE), medium
+dense (coralline detritus)
+ Boring terminated at 103 feet
+ * Elevations estimated from Site Plan provided by
+Wesley R. Segawa & Associates, Inc. on
+November 2, 2012.  Drilled to a depth of
+approximately 21.5 feet on October 9, 2012.
+Resumed drilling on December 27, 2012.
+30
+29
+36
+SP-
+SM
+GM
+12
+19
+12
+Field
+October 9, 2012
+December 28, 2012
+M. Gruver / G. Young
+103 feet
+6760-00
+USCS
+Depth (feet)
+Water Level:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+1
+MOBILE B-53
+4" Auger & 3" Casing
+140 lb. wt., 30 in. drop
+95
+100
+105
+110
+115
+120
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Moisture
+Content (%)
+Core
+Recovery (%)
+(Continued from previous plate)
+Laboratory
+Penetration
+Resistance
+(blows/foot)
+Log of
+Boring
+Sample
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Dry Density
+(pcf)
+Description
+RQD (%)
+A - 1.4
+6.0 ft.   10/09/2012 1345 HRS
+8.5 ft.   12/28/2012 0800 HRS
+GEOLABS, INC.
+Geotechnical Engineering
+PIER 1 SHED MODIFICATIONS, PHASE II
+HILO HARBOR
+HILO, ISLAND OF HAWAII, HAWAII
+BORING_LOG  6760-00.GPJ  GEOLABS.GDT  1/30/13
+6in ASPHALTIC CONCRETE
+Gray coarse GRAVEL (CORALLINE) with some
+sand and traces of silt, medium dense to dense,
+moist (fill)
+Gray coarse GRAVEL (CORALLINE) with some
+sand and traces of silt, loose to very loose, wet
+(fill)
+ Boring terminated at 21.5 feet
+14
+10
+18
+33
+28
+21
+89
+79
+GP
+GP
+39
+9
+11
+9
+3
+5
+Sieve
+- #200 =
+3.7%
+Sieve
+- #200 =
+2.1%
+Sieve
+- #200 =
+0.7%
+Field
+October 9, 2012
+October 10, 2012
+M. Gruver
+21.5 feet
+6760-00
+USCS
+Depth (feet)
+Water Level:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+2
+MOBILE B-53
+4" Auger & HQ Coring
+140 lb. wt., 30 in. drop
+5
+10
+15
+20
+25
+30
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Moisture
+Content (%)
+Core
+Recovery (%)
+Laboratory
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation (feet MSL): 8.5 *
+Log of
+Boring
+Sample
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Dry Density
+(pcf)
+Description
+RQD (%)
+A - 2
+7.0 ft.   10/09/2012 1513 HRS
+GEOLABS, INC.
+Geotechnical Engineering
+PIER 1 SHED MODIFICATIONS, PHASE II
+HILO HARBOR
+HILO, ISLAND OF HAWAII, HAWAII
+BORING_LOG  6760-00.GPJ  GEOLABS.GDT  1/30/13
+7in ASPHALTIC CONCRETE
+Dark brown coarse GRAVEL (BASALTIC) with
+some sand, very dense, damp (fill)
+Gray coarse GRAVEL (CORALLINE) with some
+sand and traces of silt, very dense, moist (fill)
+Dark brown coarse GRAVEL (BASALTIC) with
+some sand, medium dense, wet (fill)
+Gray coarse GRAVEL (CORALLINE) some
+sand, medium dense to loose (fill)
+ Boring terminated at 21.5 feet
+6
+13
+11
+19
+19
+25
+21
+90
+90
+GP
+GP
+GP
+GP
+48/.4'
+71
+59
+23
+13
+5
+7
+Field
+October 10, 2012
+October 10, 2012
+M. Gruver
+21.5 feet
+6760-00
+USCS
+Depth (feet)
+Water Level:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+3
+MOBILE B-53
+4" Auger & HQ Coring
+140 lb. wt., 30 in. drop
+5
+10
+15
+20
+25
+30
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Moisture
+Content (%)
+Core
+Recovery (%)
+Laboratory
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation (feet MSL): 8 *
+Log of
+Boring
+Sample
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Dry Density
+(pcf)
+Description
+RQD (%)
+A - 3
+7.0 ft.   10/10/2012 1010 HRS
+GEOLABS, INC.
+Geotechnical Engineering
+PIER 1 SHED MODIFICATIONS, PHASE II
+HILO HARBOR
+HILO, ISLAND OF HAWAII, HAWAII
+BORING_LOG  6760-00.GPJ  GEOLABS.GDT  1/30/13
+7-inch ASPHALTIC CONCRETE
+Dark brown to gray coarse GRAVEL
+(CORALLINE AND BASALTIC) with some
+sand, very dense, damp (fill)
+grades with larger gravel (basaltic)
+Dark brown to gray coarse GRAVEL
+(CORALLINE AND BASALTIC) with some
+sand, loose, damp (fill)
+Gray coarse GRAVEL (CORALLINE) with some
+sand, loose (fill)
+ Boring terminated at 21.5 feet
+5
+6
+10
+26
+18
+21
+93
+98
+GW
+GW
+GW
+50/.4'
+9
+18
+8
+7
+Field
+October 10, 2012
+October 10, 2012
+M. Gruver
+21.5 feet
+6760-00
+USCS
+Depth (feet)
+Water Level:
+Other Tests
+Plate
+Pocket Pen.
+(tsf)
+4
+MOBILE B-53
+4" Auger & HQ Coring
+140 lb. wt., 30 in. drop
+5
+10
+15
+20
+25
+30
+Graphic
+Drill Rig:
+Drilling Method:
+Driving Energy:
+Moisture
+Content (%)
+Core
+Recovery (%)
+Laboratory
+Penetration
+Resistance
+(blows/foot)
+Approximate Ground Surface
+Elevation (feet MSL): 8.5 *
+Log of
+Boring
+Sample
+Date Started:
+Date Completed:
+Logged By:
+Total Depth:
+Work Order:
+Dry Density
+(pcf)
+Description
+RQD (%)
+A - 4
+7.0 ft.   10/10/2012 0800 HRS
+GEOLABS, INC.
+Geotechnical Engineering
+PIER 1 SHED MODIFICATIONS, PHASE II
+HILO HARBOR
+HILO, ISLAND OF HAWAII, HAWAII
+BORING_LOG  6760-00.GPJ  GEOLABS.GDT  1/30/13
+APPENDIX B 
+W.O. 6760-00 
+GEOLABS, INC. 
+JANUARY 2013     Page B-1 
+Hawaii  California 
+A P P E N D I X   B 
+Laboratory Tests 
+Moisture Content (ASTM D 2216) and Unit Weight (ASTM D 2937) determinations 
+were performed on selected soil samples as an aid in the classification and evaluation of 
+soil properties. The test results are presented on the Logs of Borings at the appropriate 
+sample depths. 
+Twelve Sieve Analysis tests (ASTM C 117 & C 136) were performed on selected 
+soil samples to evaluate the gradation characteristics of the soils and to aid in soil 
+classification. Graphic presentations of the grain size distribution are provided on 
+Plates B-1 through B-3. 
+One laboratory California Bearing Ratio (CBR) test (ASTM D 1883) was performed 
+on the near-surface soils to evaluate the pavement support characteristics of the soils. The 
+test results are presented on Plate B-4. 
+One Modified Proctor compaction test (ASTM D 1557) was performed on bulk 
+samples of the near-surface soils to evaluate the dry density and moisture content 
+relationships. The test results are presented on Plate B-5.  
+0
+5
+10
+15
+20
+25
+30
+35
+40
+45
+50
+55
+60
+65
+70
+75
+80
+85
+90
+95
+100
+0.001
+0.01
+0.1
+1
+10
+100
+0.9
+4.7
+2.4
+0.8
+0.8
+56.5
+34.7
+38.9
+2.6
+3.8
+HYDROMETER
+3
+GRAIN SIZE IN MILLIMETERS
+PERCENT FINER BY WEIGHT
+100
+coarse
+1/2
+Sample
+0.64
+4.634
+2.13
+7.484
+7.753
+5.174
+12.563
+8.656
+13.235
+16.537
+B - 1
+coarse
+1
+1.5
+3
+2
+0.092
+0.362
+0.223
+5.117
+4.39
+40
+Depth (ft)
+%Gravel
+42.4
+69.7
+58.0
+93.9
+89.4
+49.6
+26.5
+37.2
+5.8
+10.4
+%Sand
+COBBLES
+Sample
+D30 (mm)
+140
+20
+Cu
+GRAVEL
+U.S. SIEVE NUMBERS
+D10 (mm)
+16
+fine
+25
+25
+25
+25
+25
+Cc
+3/4
+fine
+SILT OR CLAY
+medium
+GRAIN SIZE DISTRIBUTION - ASTM C 117 & C 136
+SAND
+%Fine
+60
+4
+30
+200
+4
+6
+8.0
+3.8
+4.8
+0.3
+0.2
+Depth (ft)
+LL
+Gray sand (SP-SM) with some gravel and traces of silt
+Gray coarse gravel (GP) with some sand and traces of silt
+Gray coarse gravel (GW) with some sand and traces of silt
+White gravel (GP) with traces of sand
+White gravel (GP) with traces of sand
+810 14
+50
+U.S. SIEVE OPENING IN INCHES
+6
+D60 (mm)
+D100 (mm)
+B-1
+B-1
+B-1
+B-1
+B-1
+10.0-11.5
+15.0-16.5
+20.0-21.5
+26.5-28.0
+36.5-38.0
+10.0-11.5
+15.0-16.5
+20.0-21.5
+26.5-28.0
+36.5-38.0
+B-1
+B-1
+B-1
+B-1
+B-1
+3/8
+PL PI
+Description
+Plate
+W.O. 6760-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+PIER 1 SHED MODIFICATIONS, PHASE II
+HILO HARBOR
+HILO, ISLAND OF HAWAII, HAWAII
+G_GRAIN_SIZE_MOD  6760-00.GPJ  GEOLABS.GDT  1/30/13
+0
+5
+10
+15
+20
+25
+30
+35
+40
+45
+50
+55
+60
+65
+70
+75
+80
+85
+90
+95
+100
+0.001
+0.01
+0.1
+1
+10
+100
+0.1
+2.5
+1.3
+0.5
+2.1
+70.5
+46.8
+106.5
+57.2
+18.6
+HYDROMETER
+3
+GRAIN SIZE IN MILLIMETERS
+PERCENT FINER BY WEIGHT
+100
+coarse
+1/2
+Sample
+0.217
+1.936
+0.914
+0.542
+6.36
+5.613
+8.319
+8.293
+5.794
+19.054
+B - 2
+coarse
+1
+1.5
+3
+2
+0.08
+0.178
+0.078
+0.101
+1.022
+40
+Depth (ft)
+%Gravel
+41.8
+57.4
+54.9
+42.4
+77.9
+49.5
+37.0
+35.5
+49.7
+18.4
+%Sand
+COBBLES
+Sample
+D30 (mm)
+140
+20
+Cu
+GRAVEL
+U.S. SIEVE NUMBERS
+D10 (mm)
+16
+fine
+37.5
+37.5
+37.5
+37.5
+37.5
+Cc
+3/4
+fine
+SILT OR CLAY
+medium
+GRAIN SIZE DISTRIBUTION - ASTM C 117 & C 136
+SAND
+%Fine
+60
+4
+30
+200
+4
+6
+8.7
+5.6
+9.6
+7.8
+3.7
+Depth (ft)
+LL
+Gray gravelly sand (SP-SM) with a little silt
+Tan gravel (GW-GM) with some sand and a little silt
+Tan gravel (GW-GM) with some sand and a little silt
+Tan gravelly sand (SP-SM) with a little silt
+Brownish tan gravel (GW) with little sand and traces of silt
+810 14
+50
+U.S. SIEVE OPENING IN INCHES
+6
+D60 (mm)
+D100 (mm)
+B-1
+B-1
+B-1
+B-1
+B-2
+41.5-43.0
+46.5-48.0
+51.5-53.0
+86.5-88.0
+10.0-11.5
+41.5-43.0
+46.5-48.0
+51.5-53.0
+86.5-88.0
+10.0-11.5
+B-1
+B-1
+B-1
+B-1
+B-2
+3/8
+PL PI
+Description
+Plate
+W.O. 6760-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+PIER 1 SHED MODIFICATIONS, PHASE II
+HILO HARBOR
+HILO, ISLAND OF HAWAII, HAWAII
+G_GRAIN_SIZE_MOD  6760-00.GPJ  GEOLABS.GDT  1/30/13
+0
+5
+10
+15
+20
+25
+30
+35
+40
+45
+50
+55
+60
+65
+70
+75
+80
+85
+90
+95
+100
+0.001
+0.01
+0.1
+1
+10
+100
+1.7
+1.3
+19.6
+6.0
+HYDROMETER
+3
+GRAIN SIZE IN MILLIMETERS
+PERCENT FINER BY WEIGHT
+100
+coarse
+1/2
+Sample
+4.024
+5.804
+13.801
+12.347
+B - 3
+coarse
+1
+1.5
+3
+2
+0.703
+2.061
+40
+Depth (ft)
+%Gravel
+67.3
+78.0
+30.6
+21.3
+%Sand
+COBBLES
+Sample
+D30 (mm)
+140
+20
+Cu
+GRAVEL
+U.S. SIEVE NUMBERS
+D10 (mm)
+16
+fine
+37.5
+37.5
+Cc
+3/4
+fine
+SILT OR CLAY
+medium
+GRAIN SIZE DISTRIBUTION - ASTM C 117 & C 136
+SAND
+%Fine
+60
+4
+30
+200
+4
+6
+2.1
+0.7
+Depth (ft)
+LL
+Brownish tan gravel (GW) with little sand and traces of silt
+Brownish tan gravel (GW) with little sand and traces of silt
+810 14
+50
+U.S. SIEVE OPENING IN INCHES
+6
+D60 (mm)
+D100 (mm)
+B-2
+B-2
+15.0-16.5
+20.0-21.5
+15.0-16.5
+20.0-21.5
+B-2
+B-2
+3/8
+PL PI
+Description
+Plate
+W.O. 6760-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+PIER 1 SHED MODIFICATIONS, PHASE II
+HILO HARBOR
+HILO, ISLAND OF HAWAII, HAWAII
+G_GRAIN_SIZE_MOD  6760-00.GPJ  GEOLABS.GDT  1/30/13
+0
+200
+400
+600
+800
+1,000
+1,200
+1,400
+1,600
+1,800
+2,000
+2,200
+2,400
+2,600
+0
+0.10
+0.20
+0.30
+0.40
+0.50
+0.60
+Gray coarse gravel with some sand and traces of silt
+Description:
+Days Soaked
+3
+CALIFORNIA BEARING RATIO - ASTM D 1883
+BULK-1 (Composite of B-1 and B-2)
+Swell (%)
+0.00
+153.4
+140.4
+Molding Dry Density (pcf)
+PENETRATION, inches
+STRESS, psi
+1.0 - 3.0 feet
+No. of Blows
+12.0
+119.5
+Molding Moisture (%)
+Hammer Wt. (lbs)
+Hammer Drop (inches)
+Sample:
+Corr. CBR @ 0.1"
+Depth:
+Corr. CBR @ 0.2"
+No. of Layers
+18
+56
+10
+5
+Aggregate
+B - 4
+3/4 inch minus
+Plate
+W.O. 6760-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+PIER 1 SHED MODIFICATIONS, PHASE II
+HILO HARBOR
+HILO, ISLAND OF HAWAII, HAWAII
+G_CBR  6760-00.GPJ  GEOLABS.GDT  1/30/13
+75
+80
+85
+90
+95
+100
+105
+110
+115
+120
+125
+130
+135
+0
+10
+20
+30
+40
+123.0
+12.0
+DRY DENSITY, pcf
+Optimum Moisture Content:
+Sample:
+Depth:
+TEST RESULTS
+MOISTURE CONTENT, %
+Description:
+pcf
+Maximum Dry Density:
+Gray coarse gravel with some sand and
+trades of silt
+B - 5
+3.20
+3.10
+3.00
+2.90
+2.80
+2.70
+2.60
+1.0 - 3.0 feet
+BULK-2 (Composite of B-3 and B-4)
+MOISTURE-DENSITY RELATIONSHIP - ASTM D 1557 C
+Test Date:
+October 26, 2012
+Plate
+W.O. 6760-00
+GEOTECHNICAL ENGINEERING
+GEOLABS, INC.
+PIER 1 SHED MODIFICATIONS, PHASE II
+HILO HARBOR
+HILO, ISLAND OF HAWAII, HAWAII
+G_COMPACTION  6760-00.GPJ  GEOLABS.GDT  1/30/13
