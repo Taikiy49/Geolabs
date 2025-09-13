@@ -13,8 +13,8 @@
   /* Professional palette */
   --bg-primary: #0b111c;
   --bg-secondary: #0e1522;
-  --bg-card: rgba(16, 22, 34, 0.96);
-  --bg-card-2: rgba(18, 24, 36, 0.94);
+  --bg-card: rgba(16, 22, 34, 0.97);   /* slightly more solid */
+  --bg-card-2: rgba(18, 24, 36, 0.96); /* slightly more solid */
   --bg-hover: rgba(255, 255, 255, 0.06);
 
   /* Legibility */
@@ -41,8 +41,8 @@
   /* Consistent card tokens */
   --card-bg: var(--bg-card);
   --card-bg-alt: var(--bg-card-2);
-  --card-border: rgba(72, 234, 255, 0.22);
-  --card-border-hover: rgba(72, 234, 255, 0.35);
+  --card-border: rgba(72, 234, 255, 0.30);
+  --card-border-hover: rgba(72, 234, 255, 0.55);
   --card-radius: var(--radius-lg);
   --card-shadow: var(--shadow-md);
   --card-shadow-hover: var(--shadow-lg);
@@ -163,23 +163,27 @@
 }
 
 /* ---------- Search ---------- */
-.homepage-search{ margin: var(--space-2) 0 var(--space-3); }
+.homepage-search{ margin: var(--space-5) 0 var(--space-4); }
 .homepage-search.homepage-animate-on-scroll{ opacity:1; transform:none; }
 
 .homepage-search-container-lg{ position:relative; max-width: 620px; margin:0 auto; }
 .homepage-search-input-lg{
   width:100%; height: 34px;
   padding: 0 .6rem 0 2rem;
-  background: var(--bg-card-2);
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-lg);
-  box-shadow: none;
+  background: rgba(18, 24, 36, 0.98);
+  border: 1px solid var(--card-border);        /* same as cards */
+  border-radius: var(--card-radius);           /* same as cards */
+  caret-color: var(--color-primary);
+  transition: border-color var(--transition-fast), background var(--transition-fast);
 }
-.homepage-search-input-lg:hover { background: rgba(14, 20, 32, 0.98); }
+.homepage-search-input-lg:hover {
+  background: rgba(20, 28, 42, 0.98);
+  border-color: var(--card-border-hover);      /* same hover as cards */
+}
 .homepage-search-input-lg:focus{
-  border-color: var(--color-primary);
+  border-color: var(--card-border-hover);      /* same focus as cards */
+  /* optional: a subtle inner glow for parity, keep it light */
   box-shadow: 0 0 0 3px rgba(90, 167, 255, 0.18);
-  background: var(--bg-card);
 }
 .homepage-search-input-lg::placeholder { color: var(--text-muted); opacity: 0.9; }
 
@@ -203,9 +207,10 @@
   position:relative; display:grid; align-items:center;
   grid-template-columns: 32px 1fr auto; gap: var(--space-3);
   padding: var(--space-3);
-  border: 1px solid rgba(0, 212, 255, 0.28);
+  border: 1px solid rgba(72, 234, 255, 0.30);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-md);
+  background: rgba(16, 22, 34, 0.98);
 }
 .homepage-kpi-icon{
   width:32px; height:32px; border-radius: 8px;
@@ -319,7 +324,7 @@
 .homepage-qa-item{
   display:flex; align-items:center; gap: var(--space-3);
   padding: var(--space-4);
-  border: 1px solid rgba(0, 212, 255, 0.28);
+  border: 1px solid rgba(72, 234, 255, 0.30);
   box-shadow: 0 8px 22px rgba(0, 0, 0, 0.45), inset 0 0 0 1px rgba(255, 255, 255, 0.03);
   background: var(--bg-card-2);
   border-radius: 10px;
@@ -329,18 +334,19 @@
   position:relative; backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
 }
 .homepage-qa-item:hover{
-  background: var(--bg-hover); border-color: rgba(90, 167, 255, 0.35);
-  transform: translateY(-1px); box-shadow:
-    0 10px 24px rgba(0, 0, 0, 0.40);
+  background: rgba(24, 34, 52, 0.98);
+  border-color: var(--card-border-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.38);
 }
-.homepage-qa-icon{
-  width: 26px; height:26px; border-radius: 7px; display:grid; place-items:center;
-  background: linear-gradient(135deg, var(--color-primary), #4b7bcc);
-  color:#fff; font-size: .9rem; flex-shrink:0;
-  box-shadow: 0 2px 8px rgba(0,0,0,.35);
+.homepage-qa-item:active{
+  transform: translateY(0);
+  filter: brightness(0.98);
 }
-.homepage-qa-name{ font-weight:700; font-size:.9rem; color: var(--text-primary); line-height:1.2; }
-.homepage-qa-desc{ font-size: var(--font-size-xs); color: var(--text-muted); }
+.homepage-qa-item:focus-visible{
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
 
 /* ---------- Categories (cards) ---------- */
 .homepage-categories-grid{
@@ -354,7 +360,7 @@
   min-width: 320px;
   max-width: 400px;
   background: var(--bg-card);
-  border: 1px solid var(--border-color);
+  border: 1px solid var(--card-border);
   border-radius: var(--radius);
   padding: var(--card-pad);
   transition: transform var(--transition-normal), border-color var(--transition-fast), box-shadow var(--transition-normal), opacity .14s ease;
@@ -453,14 +459,23 @@
 .homepage-subpage-item{
   display:flex; flex-direction:column; gap: var(--space-2);
   padding: 9px; background: var(--bg-card-2);
-  border:1px solid var(--border-color); border-radius: 10px;
+  border:1px solid var(--card-border); border-radius: 10px;
   transition: transform var(--transition-fast), border-color var(--transition-fast), background var(--transition-fast), box-shadow var(--transition-fast);
   position:relative; backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
 }
 .homepage-subpage-item:hover{
-  background: var(--bg-hover); border-color: rgba(90, 167, 255, 0.35);
-  transform: translateY(-1px);
+  background: rgba(24, 34, 52, 0.98);
+  border-color: var(--card-border-hover);
+  transform: translateY(-2px);
   box-shadow: 0 6px 22px rgba(0,0,0,.38);
+}
+.homepage-subpage-item:active{
+  transform: translateY(0);
+  filter: brightness(0.98);
+}
+.homepage-subpage-item:focus-visible{
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
 }
 .homepage-subpage-header{ display:flex; align-items:center; gap: var(--space-3); }
 .homepage-subpage-icon{
@@ -544,7 +559,7 @@
 .homepage-top-right .homepage-quick-access { margin: 0; }
 
 /* Search sits right under the top grid */
-.homepage-search { margin: var(--space-3) 0 var(--space-4); }
+.homepage-search { margin: var(--space-5) 0 var(--space-4); }
 
 /* Responsive: stack columns on smaller screens */
 @media (max-width: 1100px){
@@ -568,6 +583,29 @@
   .homepage-search-container-lg{ max-width:none; margin: 0 1rem; }
   .homepage-search-input-lg{ height: 36px; font-size:.88rem; padding-left: 2rem; }
   .homepage-search-icon-lg{ left: .7rem; font-size: .95rem; }
+}
+
+/* Quick Access icon size (Favorites / Recently Used) */
+.homepage-qa-icon{
+  width: 30px;
+  height: 30px;
+  display: grid;
+  place-items: center;
+  border-radius: 8px;          /* matches other chips */
+  color: #fff;
+  font-size: 1.2rem;           /* scales react-icons (1em) */
+  flex-shrink: 0;
+  /* visual depth in line with other chips */
+  box-shadow: 0 2px 10px rgba(0,0,0,0.35), inset 0 1px 0 rgba(255,255,255,.08);
+}
+
+/* Optional: slightly tighter on very small screens */
+@media (max-width: 640px){
+  .homepage-qa-icon{
+    width: 28px;
+    height: 28px;
+    font-size: 1.1rem;
+  }
 }
 
 /* accessibility preferences */

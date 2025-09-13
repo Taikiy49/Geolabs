@@ -9,9 +9,9 @@
   --space-10: 1.35rem;
   --space-12: 1.60rem;
 
-  --font-size-base: 0.82rem;
-  --font-size-sm:   0.74rem;
-  --font-size-xs:   0.66rem;
+  --font-size-base: 0.92rem;
+  --font-size-sm:   0.84rem;
+  --font-size-xs:   0.76rem;
 
   --radius: 12px;
   --radius-lg: 14px;
@@ -129,6 +129,7 @@
   min-height: 0;           /* prevent overflow issues in flex container */
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px);
+  line-height: 1.65;
 }
 
 /* Responsive Adjustments */

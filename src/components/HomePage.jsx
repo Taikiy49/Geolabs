@@ -382,6 +382,13 @@ export default function HomePage() {
     );
   }
 
+  const onKeyActivate = (e, fn) => {
+    if (e.key === "Enter" || e.key === " ") {
+      e.preventDefault();
+      fn();
+    }
+  };
+
   return (
     <div className="homepage" ref={pageRef}>
       <div className="homepage-container homepage-compact">
@@ -606,6 +613,11 @@ export default function HomePage() {
                     opacity: card.disabled ? 0.6 : 1,
                     cursor: editMode ? "grab" : card.disabled ? "not-allowed" : "pointer",
                   }}
+                  role="button"
+                  tabIndex={editMode ? -1 : 0}
+                  aria-disabled={!!card.disabled}
+                  aria-label={`Open ${card.label}`}
+                  onKeyDown={(e) => !editMode && onKeyActivate(e, go)}
                   onClick={go}
                   draggable={editMode}
                   onDragStart={onCardDragStart(card.label)}
@@ -657,6 +669,11 @@ export default function HomePage() {
                         <div
                           key={subIndex}
                           className="homepage-subpage-item"
+                          role="button"
+                          tabIndex={subpage.disabled ? -1 : 0}
+                          aria-disabled={!!subpage.disabled}
+                          aria-label={`Open ${subpage.name}`}
+                          onKeyDown={(e) => !subpage.disabled && onKeyActivate(e, () => handleNavigation(subpage.path, subpage.disabled))}
                           onClick={() => handleNavigation(subpage.path, subpage.disabled)}
                           style={{
                             opacity: subpage.disabled ? 0.5 : 1,

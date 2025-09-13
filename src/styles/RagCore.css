@@ -129,7 +129,7 @@
 
 /* Panel */
 .rag-panel {
-  background: var(--bg-secondary, rgba(17,24,39,.8));
+  background: rgba(17,24,39,0.92);
   border: 1px solid var(--border-color, #334155);
   border-radius: var(--radius-xl, 14px);
   padding: var(--space-3, 12px);
@@ -206,7 +206,7 @@
   border: 1px solid var(--border-color, #334155);
   border-radius: var(--radius-xl, 14px);
   padding: var(--space-2_5, 10px);
-  background: var(--bg-card, rgba(17,24,39,.9));
+  background: rgba(17,24,39,0.95);
   box-shadow: 0 6px 14px -10px rgba(0,0,0,.8);
   transition: transform .12s ease, border-color .12s ease, box-shadow .12s ease;
 }
@@ -216,6 +216,11 @@
   box-shadow: 0 10px 20px -12px rgba(59,130,246,.18);
 }
 .rag-card:active { transform: translateY(0); filter: brightness(0.98); }
+.rag-card:focus-visible {
+  outline: 2px solid var(--color-primary, #48eaff);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 3px rgba(72,234,255,.18);
+}
 .rag-card-head { display: flex; justify-content: space-between; gap: 8px; align-items: baseline; margin-bottom: 4px; }
 .rag-file {
   display: inline-flex; align-items: center; gap: 8px;
@@ -304,7 +309,7 @@
 .rag-input:focus-visible,
 .rag-row input[type="text"]:focus-visible,
 .rag-row input[type="number"]:focus-visible {
-  outline: 2px solid var(--color-primary, #3b82f6);
+  outline: 2px solid var(--color-primary, #48eaff);
   outline-offset: 2px;
 }
 

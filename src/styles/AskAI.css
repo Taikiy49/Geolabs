@@ -178,12 +178,13 @@
   cursor: pointer;
   transition: all var(--transition-fast);
   line-height: 1.4;
+  will-change: transform, box-shadow, border-color;
 }
 .ask-ai-faq-button:hover {
   background: var(--bg-hover);
   border-color: var(--color-primary);
   color: var(--text-primary);
-  transform: translateY(-1px);
+  transform: translateY(-2px);
   box-shadow: var(--shadow-md);
 }
 .ask-ai-faq-toggle {
@@ -298,11 +299,17 @@
   color: var(--text-primary);
   border-color: var(--border-hover);
 }
+.ask-ai-message-action-btn:focus-visible,
+.ask-ai-input-action-btn:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 3px rgba(72, 234, 255, 0.18);
+}
 
 /* ---- Markdown Styling ---- */
 .ask-ai-message-content {
   color: var(--text-primary);
-  line-height: 1.6;
+  line-height: 1.7; /* easier reading in long answers */
   font-size: var(--font-size-base);
 }
 .ask-ai-message-content h1,
@@ -334,7 +341,7 @@
   font-size: var(--font-size-base);
 }
 .ask-ai-message-content code {
-  background: var(--bg-secondary);
+  background: rgba(20, 28, 42, 0.98);
   color: var(--color-primary);
   padding: var(--space-1) var(--space-2);
   border-radius: var(--radius-sm);
@@ -342,13 +349,14 @@
   font-size: var(--font-size-xs);
 }
 .ask-ai-message-content pre {
-  background: var(--bg-secondary);
+  background: rgba(16, 22, 34, 0.98);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-lg);
   padding: var(--space-3);
   margin: var(--space-3) 0;
   overflow-x: auto;
   position: relative;
+  box-shadow: 0 6px 18px rgba(0,0,0,.35) inset;
 }
 .ask-ai-message-content pre code {
   background: none;
