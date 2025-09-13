@@ -32,49 +32,53 @@ import {
  */
 
 const homepageCards = [
-  // 1 — AI & Knowledge
+  // 1 — AI & Insights (Ask + RAG)
   {
-    label: "AI & Knowledge",
-    sublabel: "Ask, compare, cite",
+    label: "AI & Insights",
+    sublabel: "Search, compare, and cite with AI",
     tag: "AI",
-    updated: "2025-08-13",
+    updated: "2025-09-12",
     icon: <FaRobot size={24} />,
     description:
-      "Ask questions across your documents and data. Get concise, sourced answers for faster research.",
+      "Ask questions across your knowledge base and generate citation-ready answers.",
     subpages: [
       {
         name: "Ask Geolabs AI",
         icon: <FaRobot />,
         path: "/ask-ai",
-        description:
-          "Query internal docs with AI and get citation-ready responses."
+        description: "Ask natural language questions and get sourced answers."
+      },
+      {
+        name: "RAG Workbench",
+        icon: <FaQuestionCircle />,
+        path: "/rag-core",
+        description: "Search, score, and cite snippets for precise responses."
       }
     ]
   },
 
-  // 2 — Data & Indexing
+  // 2 — Reports & Analytics
   {
-    label: "Data & Indexing",
-    sublabel: "Explore & manage datasets",
-    tag: "Data",
-    updated: "2025-08-13",
-    icon: <FaDatabase size={24} />,
+    label: "Reports & Analytics",
+    sublabel: "Dashboards and tabular review",
+    tag: "Analytics",
+    updated: "2025-09-12",
+    icon: <FaTable size={24} />,
     description:
-      "Browse database contents for audits and onboarding. Manage ingestion and indexing of new documents.",
+      "Review report tables, refine extracted rows, and export curated data.",
     subpages: [
       {
-        name: "Database Explorer",
-        icon: <FaTable />,
-        path: "/db-viewer",
-        description:
-          "Inspect tables and files quickly with filters and previews."
+        name: "Reports",
+        icon: <FaFileAlt />,
+        path: "/reports",
+        description: "Browse compiled geotechnical reports and dashboards."
       },
       {
-        name: "Index Manager",
-        icon: <FaCogs />,
-        path: "/db-admin",
+        name: "Report Binder",
+        icon: <FaTable />,
+        path: "/reports-binder",
         description:
-          "Upload PDFs, extract text, and refresh embeddings (authorized)."
+          "Filter and edit OCR rows (WO, initials, billing, dates) and export CSV."
       }
     ]
   },
@@ -84,129 +88,112 @@ const homepageCards = [
     label: "Projects & Files",
     sublabel: "Search, browse, upload",
     tag: "Ops",
-    updated: "2025-08-13",
+    updated: "2025-09-12",
     icon: <FaFolderOpen size={24} />,
     description:
-      "Find work orders via OCR, browse S3 repositories, and maintain core inventory.",
+      "Locate work orders via OCR, browse S3 repositories, and manage core inventory.",
     subpages: [
       {
-        name: "OCR Lookup",
+        name: "OCR Work Orders",
         icon: <FaSearch />,
         path: "/ocr-lookup",
-        description:
-          "Pull work orders and project data from scanned and handwritten docs."
+        description: "Find WOs and project data from scanned and handwritten docs."
       },
       {
-        name: "S3 Browser",
+        name: "File Browser (S3)",
         icon: <FaFileAlt />,
         path: "/s3-viewer",
-        description:
-          "Preview and open files stored in S3 with metadata at a glance."
+        description: "Preview and open files in S3 with metadata at a glance."
       },
       {
-        name: "S3 Uploader",
+        name: "Upload to S3",
         icon: <FaCloudUploadAlt />,
         path: "/s3-admin",
-        description:
-          "Upload and organize report archives in S3 (permissions required)."
+        description: "Upload and organize report archives (permissions required)."
       },
       {
         name: "Core Inventory",
         icon: <FaBoxOpen />,
         path: "/core-box-inventory",
-        description:
-          "Track core boxes by status, location, and age with quick filters."
+        description: "Track core boxes by status, location, and age with filters."
       }
     ]
   },
 
-  // 4 — Reports & Analytics
+  // 4 — Data & Indexing
   {
-    label: "Reports & Analytics",
-    sublabel: "Review & edit extracted data",
-    tag: "Analytics",
-    updated: "2025-08-13",
-    icon: <FaTable size={24} />,
+    label: "Data & Indexing",
+    sublabel: "Explore datasets and manage indexing",
+    tag: "Data",
+    updated: "2025-09-12",
+    icon: <FaDatabase size={24} />,
     description:
-      "Work with report tables and extracted rows. Filter, edit, and export data.",
+      "Explore database contents for audits and onboarding. Control ingestion and indexing.",
     subpages: [
       {
-        name: "Reports",
-        icon: <FaFileAlt />,
-        path: "/reports",
-        description:
-          "Access compiled geotechnical reports and dashboards."
+        name: "Database Explorer",
+        icon: <FaTable />,
+        path: "/db-viewer",
+        description: "Inspect tables and files with filters and quick previews."
       },
       {
-        name: "Reports Binder",
-        icon: <FaTable />,
-        path: "/reports-binder",
-        description:
-          "Browse & edit rows from OCR (WO, initials, billing, dates) and export CSV."
-      },
-      {
-        name: "Retrieval-Augmented Generation",
-        icon: <FaTable />,
-        path: "/rag-core",
-        description:
-          "Browse & edit rows from OCR (WO, initials, billing, dates) and export CSV."
+        name: "Ingestion & Indexing",
+        icon: <FaCogs />,
+        path: "/db-admin",
+        description: "Upload PDFs, extract text, and refresh embeddings."
       }
     ]
   },
 
-  // 5 — People & Admin
+  // 5 — People & Access
   {
-    label: "People & Admin",
-    sublabel: "Directory & controls",
+    label: "People & Access",
+    sublabel: "Directory and access controls",
     tag: "Admin",
-    updated: "2025-08-13",
-    icon: <FaShieldAlt size={24} />,
+    updated: "2025-09-12",
+    icon: <FaUserCheck size={24} />,
     description:
-      "Look up people and manage access, roles, and configuration.",
+      "Look up people and manage roles, permissions, and configuration.",
     subpages: [
       {
-        name: "Directory",
+        name: "People Directory",
         icon: <FaEnvelopeOpenText />,
         path: "/contacts",
-        description:
-          "Company directory + Outlook contacts with quick copy and CSV export."
+        description: "Company directory + Outlook contacts with quick copy/CSV."
       },
       {
-        name: "Admin Console",
+        name: "Access & Roles",
         icon: <FaCogs />,
         path: "/admin",
-        description:
-          "Roles, activity, and system settings (owners/admins only)."
+        description: "Manage roles, activity, and system settings."
       }
     ]
   },
 
-  // 6 — IT Administration
+  // 6 — IT Operations
   {
-    label: "IT Administration",
-    sublabel: "Onboarding, support & FAQs",
+    label: "IT Operations",
+    sublabel: "Onboarding, offboarding, tickets",
     tag: "IT",
-    updated: "2025-09-02",
+    updated: "2025-09-12",
     icon: <FaShieldAlt size={24} />,
     description:
-      "Manage IT tasks for employees: onboarding, offboarding, tickets, and support resources.",
+      "Handle employee onboarding/offboarding, support requests, and FAQs.",
     subpages: [
       {
         name: "Onboarded Accounts",
         icon: <FaUserCheck />,
         path: "/it-onboarded",
-        description:
-          "View and manage all currently onboarded employee accounts."
+        description: "View and manage all active onboarded accounts."
       },
       {
         name: "Terminated Accounts",
         icon: <FaUserTimes />,
         path: "/it-terminated",
-        description:
-          "Review terminated accounts and confirm offboarding steps."
+        description: "Review terminated accounts and confirm offboarding steps."
       },
       {
-        name: "Ticket Requests",
+        name: "Support Tickets",
         icon: <FaTicketAlt />,
         path: "/it-tickets",
         description:

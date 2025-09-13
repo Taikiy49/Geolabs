@@ -3,7 +3,6 @@ import {
   FaPlus,
   FaBell,
   FaChevronDown,
-  FaSearch,
   FaSignOutAlt,
   FaSignInAlt,
   FaCopy,
@@ -15,7 +14,7 @@ import {
   FaBars,
   FaTimes
 } from "react-icons/fa";
-import { NavLink, Link, useLocation, useNavigate } from "react-router-dom";
+import { NavLink, Link, useLocation } from "react-router-dom";
 import "../styles/Header.css";
 import axios from "axios";
 import API_URL from "../config";
@@ -37,7 +36,6 @@ function initialsFromEmailOrName(email, name) {
 export default function Header() {
   const isAuthed = useIsAuthenticated();
   const { instance, accounts } = useMsal();
-  const navigate = useNavigate();
   const location = useLocation();
 
   const userEmail =
@@ -51,13 +49,11 @@ export default function Header() {
   const userInitials = initialsFromEmailOrName(userEmail, displayName);
 
   const [apiHealthy, setApiHealthy] = useState("unknown");
-  const [searchQuery, setSearchQuery] = useState("");
   const [openDropdown, setOpenDropdown] = useState(null);
   const [copied, setCopied] = useState(false);
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   const headerRef = useRef(null);
-  const searchRef = useRef(null);
 
   useEffect(() => {
     if (userEmail) {
@@ -108,12 +104,6 @@ export default function Header() {
     }
     function handleKeyDown(event) {
       if (event.key === "Escape") setOpenDropdown(null);
-      if (event.key === "/" && !event.metaKey && !event.ctrlKey && !event.altKey) {
-        const ae = document.activeElement;
-        if (ae && (ae.tagName === "INPUT" || ae.tagName === "TEXTAREA")) return;
-        event.preventDefault();
-        searchRef.current?.focus();
-      }
     }
     document.addEventListener("mousedown", handleClickOutside);
     document.addEventListener("keydown", handleKeyDown);
@@ -135,13 +125,6 @@ export default function Header() {
       await instance.logoutPopup({ account: accounts[0] });
     } catch (error) {
       console.error("Logout failed:", error);
-    }
-  };
-
-  const handleSearch = (e) => {
-    e.preventDefault();
-    if (searchQuery.trim()) {
-      navigate(`/?search=${encodeURIComponent(searchQuery.trim())}`);
     }
   };
 
@@ -199,7 +182,7 @@ export default function Header() {
         </button>
 
         <Link to="/" className="header-brand header-no-wrap" title="Geolabs, Inc.">
-          <img src="/transparent_50th.png" alt="Geolabs" className="header-logo" />
+          <img src="/geolabs.png" alt="Geolabs" className="header-logo" />
           <span className="header-title header-no-wrap">Geolabs,&nbsp;Inc.</span>
         </Link>
 
@@ -214,22 +197,6 @@ export default function Header() {
             <span>Dashboard</span>
           </NavLink>
         </nav>
-      </div>
-
-      {/* CENTER: search */}
-      <div className="header-center">
-        <form className="header-search" onSubmit={handleSearch}>
-          <input
-            ref={searchRef}
-            type="text"
-            className="header-search-input"
-            placeholder="Search… ( / )"
-            value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
-            aria-label="Search"
-          />
-          <FaSearch className="header-search-icon" aria-hidden />
-        </form>
       </div>
 
       {/* RIGHT: env + api status + actions/profile */}
@@ -350,3 +317,4 @@ export default function Header() {
     </header>
   );
 }
+

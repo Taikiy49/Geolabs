@@ -149,6 +149,10 @@ export default function HomePage() {
   });
 
   const pageRef = useRef(null);
+  const topLeftRef = useRef(null);
+  const qaRef = useRef(null);
+  const [qaMaxHeight, setQaMaxHeight] = useState(null);
+  const [qaClamped, setQaClamped] = useState(false);
 
   const demoMetrics = useMemo(
     () => ({
@@ -198,7 +202,6 @@ export default function HomePage() {
       localStorage.setItem(CARD_SIZES_KEY, JSON.stringify(cardSizes));
     } catch {}
   }, [cardSizes]);
-
 
   const saveFavorites = (newFavorites) => {
     setFavorites(newFavorites);
@@ -347,6 +350,26 @@ export default function HomePage() {
     setCardSizes({});
   };
 
+  useEffect(() => {
+    const recompute = () => {
+      const isNarrow = window.matchMedia("(max-width: 1100px)").matches;
+      if (isNarrow) {
+        setQaClamped(false);
+        setQaMaxHeight(null);
+        return;
+      }
+      if (!topLeftRef.current || !qaRef.current) return;
+      const h = Math.max(0, Math.floor(topLeftRef.current.getBoundingClientRect().height));
+      setQaMaxHeight(h);
+      setQaClamped(true);
+    };
+    // initial + on resize
+    recompute();
+    window.addEventListener("resize", recompute);
+    return () => window.removeEventListener("resize", recompute);
+    // re-evaluate when lists change
+  }, [favorites.length, recents.length]);
+
   const currentTime = new Date();
   if (isLoading) {
     return (
@@ -362,106 +385,184 @@ export default function HomePage() {
   return (
     <div className="homepage" ref={pageRef}>
       <div className="homepage-container homepage-compact">
-        {/* Hero */}
-        <section className="homepage-hero homepage-compact homepage-visible">
-          <div className="homepage-hero-greeting">
-            <h1 className="homepage-hero-title">
-              {timeOfDay()}, {firstName}
-            </h1>
-            <p className="homepage-hero-subtitle">
-              Your geotechnical data platform — fast, consistent, and organized
-            </p>
-            <div className="homepage-hero-meta">
-              <div className="homepage-hero-meta-item">
-                <FaCalendarAlt />
-                <span>
-                  {currentTime.toLocaleDateString("en-US", {
-                    weekday: "long",
-                    year: "numeric",
-                    month: "long",
-                    day: "numeric",
-                  })}
-                </span>
+        {/* Top grid: Left = Hero + KPIs, Right = Quick Access */}
+        <section className="homepage-top-grid homepage-animate-on-scroll homepage-visible">
+          <div className="homepage-top-left" ref={topLeftRef}>
+            {/* Hero */}
+            <section className="homepage-hero homepage-compact">
+              <div className="homepage-hero-greeting">
+                <h1 className="homepage-hero-title">
+                  <span className="homepage-hero-greeting-text">{timeOfDay()},</span>
+                  <span className="homepage-hero-name">{firstName}</span>
+                </h1>
+                <p className="homepage-hero-subtitle">
+                  Your geotechnical data platform — fast, consistent, and organized
+                </p>
+                <div className="homepage-hero-meta">
+                  <div className="homepage-hero-meta-item">
+                    <FaCalendarAlt />
+                    <span>
+                      {currentTime.toLocaleDateString("en-US", {
+                        weekday: "long",
+                        year: "numeric",
+                        month: "long",
+                        day: "numeric",
+                      })}
+                    </span>
+                  </div>
+                  <div className="homepage-hero-meta-item">
+                    <span>Geolabs Team</span>
+                  </div>
+                  <div className="homepage-hero-meta-item">
+                    <FaChartLine />
+                    <span>Analytics Ready</span>
+                  </div>
+                </div>
+
+                {/* Edit layout controls */}
+                <div className="homepage-hero-actions">
+                  <button
+                    className={`homepage-btn-edit ${editMode ? "homepage-on" : ""}`}
+                    onClick={() => setEditMode((v) => !v)}
+                    title="Reorder and resize cards"
+                  >
+                    {editMode ? "Done editing" : "Edit layout"}
+                  </button>
+                  {editMode && (
+                    <button className="homepage-btn-reset" onClick={resetLayout} title="Reset order & sizes">
+                      Reset
+                    </button>
+                  )}
+                </div>
               </div>
-              <div className="homepage-hero-meta-item">
-                <span>Geolabs Team</span>
+            </section>
+
+            {/* KPIs */}
+            <div className="homepage-kpi-grid">
+              <div className="homepage-kpi-card">
+                <div className="homepage-kpi-icon">
+                  <FaFolderOpen />
+                </div>
+                <div className="homepage-kpi-meta">
+                  <div className="homepage-kpi-label">Documents Indexed</div>
+                  <div className="homepage-kpi-value">{demoMetrics.docsIndexed.toLocaleString()}</div>
+                </div>
+                <div className="homepage-kpi-trend">
+                  <div className="homepage-kpi-bars">
+                    {weeklyDocs.map((v, i) => (
+                      <span key={i} style={{ height: `${6 + v * 3}px` }} />
+                    ))}
+                  </div>
+                  <div className="homepage-kpi-hint">last 7 days</div>
+                </div>
               </div>
-              <div className="homepage-hero-meta-item">
-                <FaChartLine />
-                <span>Analytics Ready</span>
+              <div className="homepage-kpi-card">
+                <div className="homepage-kpi-icon">
+                  <FaBoxOpen />
+                </div>
+                <div className="homepage-kpi-meta">
+                  <div className="homepage-kpi-label">Core Boxes</div>
+                  <div className="homepage-kpi-value">{demoMetrics.coreBoxes.toLocaleString()}</div>
+                </div>
+                <div className="homepage-kpi-pill">Inventory</div>
+              </div>
+              <div className="homepage-kpi-card">
+                <div className="homepage-kpi-icon">
+                  <FaRobot />
+                </div>
+                <div className="homepage-kpi-meta">
+                  <div className="homepage-kpi-label">AI Answers (wk)</div>
+                  <div className="homepage-kpi-value">{demoMetrics.aiAnswersThisWeek}</div>
+                </div>
+                <div className="homepage-kpi-pill homepage-kpi-pill--glow">↑ healthy</div>
+              </div>
+              <div className="homepage-kpi-card">
+                <div className="homepage-kpi-icon">
+                  <FaCheckCircle />
+                </div>
+                <div className="homepage-kpi-meta">
+                  <div className="homepage-kpi-label">Open Tasks</div>
+                  <div className="homepage-kpi-value">{demoMetrics.openTasks}</div>
+                </div>
+                <div className="homepage-kpi-pill homepage-kpi-pill--warn">priority</div>
               </div>
             </div>
+          </div>
 
-            {/* Edit layout controls */}
-            <div className="homepage-hero-actions">
-              <button
-                className={`homepage-btn-edit ${editMode ? "homepage-on" : ""}`}
-                onClick={() => setEditMode((v) => !v)}
-                title="Reorder and resize cards"
+          <aside className="homepage-top-right">
+            {/* Quick Access */}
+            {(favorites.length > 0 || recents.length > 0) ? (
+              <section
+                ref={qaRef}
+                className={`homepage-quick-access homepage-compact homepage-visible ${qaClamped ? "homepage-qa-scroll" : ""}`}
+                style={qaClamped && qaMaxHeight ? { maxHeight: qaMaxHeight } : undefined}
               >
-                {editMode ? "Done editing" : "Edit layout"}
-              </button>
-              {editMode && (
-                <button className="homepage-btn-reset" onClick={resetLayout} title="Reset order & sizes">
-                  Reset
-                </button>
-              )}
-            </div>
-          </div>
+                {favorites.length > 0 && (
+                  <div className="homepage-qa-section">
+                    <h2 className="homepage-qa-title">
+                      <FaStar />
+                      Favorites
+                    </h2>
+                    <div className="homepage-qa-grid">
+                      {favorites.slice(0, 6).map((favorite) => {
+                        const metadata = findSubpageByPath(homepageCards, favorite.path);
+                        if (!metadata) return null;
+                        return (
+                          <button
+                            key={favorite.path}
+                            className="homepage-qa-item"
+                            onClick={() => handleNavigation(favorite.path)}
+                            title={`${metadata.parent.label} → ${favorite.name}`}
+                          >
+                            <div className="homepage-qa-icon">{metadata.subpage.icon}</div>
+                            <div className="homepage-qa-content">
+                              <div className="homepage-qa-name">{favorite.name}</div>
+                              <div className="homepage-qa-desc">{metadata.parent.label}</div>
+                            </div>
+                          </button>
+                        );
+                      })}
+                    </div>
+                  </div>
+                )}
+
+                {recents.length > 0 && (
+                  <div className="homepage-qa-section">
+                    <h2 className="homepage-qa-title">
+                      <FaClock />
+                      Recently Used
+                    </h2>
+                    <div className="homepage-qa-grid">
+                      {recents.slice(0, 6).map((recent) => {
+                        const metadata = findSubpageByPath(homepageCards, recent.path);
+                        if (!metadata) return null;
+                        return (
+                          <button
+                            key={recent.path}
+                            className="homepage-qa-item"
+                            onClick={() => handleNavigation(recent.path)}
+                            title={`${metadata.parent.label} → ${recent.name}`}
+                          >
+                            <div className="homepage-qa-icon">{metadata.subpage.icon}</div>
+                            <div className="homepage-qa-content">
+                              <div className="homepage-qa-name">{recent.name}</div>
+                              <div className="homepage-qa-desc">{metadata.parent.label}</div>
+                            </div>
+                          </button>
+                        );
+                      })}
+                    </div>
+                  </div>
+                )}
+              </section>
+            ) : (
+              // Optional: keep column balanced when empty
+              <div style={{ minHeight: '1px' }} />
+            )}
+          </aside>
         </section>
 
-        {/* KPIs */}
-        <section className="homepage-kpi-grid homepage-animate-on-scroll homepage-visible">
-          <div className="homepage-kpi-card">
-            <div className="homepage-kpi-icon">
-              <FaFolderOpen />
-            </div>
-            <div className="homepage-kpi-meta">
-              <div className="homepage-kpi-label">Documents Indexed</div>
-              <div className="homepage-kpi-value">{demoMetrics.docsIndexed.toLocaleString()}</div>
-            </div>
-            <div className="homepage-kpi-trend">
-              <div className="homepage-kpi-bars">
-                {weeklyDocs.map((v, i) => (
-                  <span key={i} style={{ height: `${6 + v * 3}px` }} />
-                ))}
-              </div>
-              <div className="homepage-kpi-hint">last 7 days</div>
-            </div>
-          </div>
-          <div className="homepage-kpi-card">
-            <div className="homepage-kpi-icon">
-              <FaBoxOpen />
-            </div>
-            <div className="homepage-kpi-meta">
-              <div className="homepage-kpi-label">Core Boxes</div>
-              <div className="homepage-kpi-value">{demoMetrics.coreBoxes.toLocaleString()}</div>
-            </div>
-            <div className="homepage-kpi-pill">Inventory</div>
-          </div>
-          <div className="homepage-kpi-card">
-            <div className="homepage-kpi-icon">
-              <FaRobot />
-            </div>
-            <div className="homepage-kpi-meta">
-              <div className="homepage-kpi-label">AI Answers (wk)</div>
-              <div className="homepage-kpi-value">{demoMetrics.aiAnswersThisWeek}</div>
-            </div>
-            <div className="homepage-kpi-pill homepage-kpi-pill--glow">↑ healthy</div>
-          </div>
-          <div className="homepage-kpi-card">
-            <div className="homepage-kpi-icon">
-              <FaCheckCircle />
-            </div>
-            <div className="homepage-kpi-meta">
-              <div className="homepage-kpi-label">Open Tasks</div>
-              <div className="homepage-kpi-value">{demoMetrics.openTasks}</div>
-            </div>
-            <div className="homepage-kpi-pill homepage-kpi-pill--warn">priority</div>
-          </div>
-        </section>
-
-        {/* Search */}
+        {/* Search — now below the top grid, full width */}
         <section className="homepage-search homepage-compact homepage-animate-on-scroll">
           <div className="homepage-search-container-lg">
             <FaSearch className="homepage-search-icon-lg" />
@@ -475,193 +576,136 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* Quick Access */}
-        {(favorites.length > 0 || recents.length > 0) && (
-          <section className="homepage-quick-access homepage-compact homepage-visible">
-            {favorites.length > 0 && (
-              <div className="homepage-qa-section">
-                <h2 className="homepage-qa-title">
-                  <FaStar />
-                  Favorites
-                </h2>
-                <div className="homepage-qa-grid">
-                  {favorites.slice(0, 6).map((favorite) => {
-                    const metadata = findSubpageByPath(homepageCards, favorite.path);
-                    if (!metadata) return null;
-                    return (
+        {/* Browse (Categories) */}
+        <section className="homepage-browse">
+          <h2 className="homepage-section-title">
+            <FaTag />
+            Browse tools
+          </h2>
+          <section className="homepage-categories-grid homepage-compact">
+            {orderedCards.map((card, index) => {
+              const size = cardSizes[card.label] || "n";
+              const sizeClass =
+                size === "w" ? "homepage-size-wide" : size === "t" ? "homepage-size-tall" : size === "b" ? "homepage-size-big" : "";
+              const editableClass = editMode ? "homepage-editable" : "";
+
+              const go = () => {
+                if (editMode) return;
+                if (!card.disabled && card.path) handleNavigation(card.path);
+              };
+
+              return (
+                <article
+                  key={card.label}
+                  data-id={card.label}
+                  className={`homepage-category-card homepage-animate-on-scroll ${sizeClass} ${editableClass} ${
+                    card.disabled ? "homepage-disabled" : ""
+                  }`}
+                  style={{
+                    animationDelay: `${index * 70}ms`,
+                    opacity: card.disabled ? 0.6 : 1,
+                    cursor: editMode ? "grab" : card.disabled ? "not-allowed" : "pointer",
+                  }}
+                  onClick={go}
+                  draggable={editMode}
+                  onDragStart={onCardDragStart(card.label)}
+                  onDragEnd={onCardDragEnd}
+                  onDragOver={onCardDragOver(card.label)}
+                  onDrop={(e) => e.preventDefault()}
+                >
+                  {editMode && (
+                    <div className="homepage-card-tools">
+                      <span className="homepage-drag-handle" title="Drag to reorder">
+                        <FaGripLines />
+                      </span>
                       <button
-                        key={favorite.path}
-                        className="homepage-qa-item"
-                        onClick={() => handleNavigation(favorite.path)}
-                        title={`${metadata.parent.label} → ${favorite.name}`}
-                      >
-                        <div className="homepage-qa-icon">{metadata.subpage.icon}</div>
-                        <div className="homepage-qa-content">
-                          <div className="homepage-qa-name">{favorite.name}</div>
-                          <div className="homepage-qa-desc">{metadata.parent.label}</div>
-                        </div>
-                      </button>
-                    );
-                  })}
-                </div>
-              </div>
-            )}
-
-            {recents.length > 0 && (
-              <div className="homepage-qa-section">
-                <h2 className="homepage-qa-title">
-                  <FaClock />
-                  Recently Used
-                </h2>
-                <div className="homepage-qa-grid">
-                  {recents.slice(0, 6).map((recent) => {
-                    const metadata = findSubpageByPath(homepageCards, recent.path);
-                    if (!metadata) return null;
-                    return (
-                      <button
-                        key={recent.path}
-                        className="homepage-qa-item"
-                        onClick={() => handleNavigation(recent.path)}
-                        title={`${metadata.parent.label} → ${recent.name}`}
-                      >
-                        <div className="homepage-qa-icon">{metadata.subpage.icon}</div>
-                        <div className="homepage-qa-content">
-                          <div className="homepage-qa-name">{recent.name}</div>
-                          <div className="homepage-qa-desc">{metadata.parent.label}</div>
-                        </div>
-                      </button>
-                    );
-                  })}
-                </div>
-              </div>
-            )}
-          </section>
-        )}
-
-        {/* Categories */}
-        <section className="homepage-categories-grid homepage-compact">
-          {orderedCards.map((card, index) => {
-            const size = cardSizes[card.label] || "n";
-            const sizeClass =
-              size === "w" ? "homepage-size-wide" : size === "t" ? "homepage-size-tall" : size === "b" ? "homepage-size-big" : "";
-            const editableClass = editMode ? "homepage-editable" : "";
-
-            const go = () => {
-              if (editMode) return;
-              if (!card.disabled && card.path) handleNavigation(card.path);
-            };
-
-            return (
-              <article
-                key={card.label}
-                data-id={card.label}
-                className={`homepage-category-card homepage-animate-on-scroll ${sizeClass} ${editableClass} ${
-                  card.disabled ? "homepage-disabled" : ""
-                }`}
-                style={{
-                  animationDelay: `${index * 70}ms`,
-                  opacity: card.disabled ? 0.6 : 1,
-                  cursor: editMode ? "grab" : card.disabled ? "not-allowed" : "pointer",
-                }}
-                onClick={go}
-                draggable={editMode}
-                onDragStart={onCardDragStart(card.label)}
-                onDragEnd={onCardDragEnd}
-                onDragOver={onCardDragOver(card.label)}
-                onDrop={(e) => e.preventDefault()}
-              >
-                {editMode && (
-                  <div className="homepage-card-tools">
-                    <span className="homepage-drag-handle" title="Drag to reorder">
-                      <FaGripLines />
-                    </span>
-                    <button
-                      className="homepage-size-btn"
-                      title="Resize (normal → wide → tall → big)"
-                      onClick={(e) => {
-                        e.stopPropagation();
-                        cycleSize(card.label);
-                      }}
-                    >
-                      <FaExpandArrowsAlt />
-                    </button>
-                  </div>
-                )}
-
-                <div className="homepage-category-header">
-                  <div className="homepage-category-icon">{card.icon}</div>
-                  <div className="homepage-category-content">
-                    <h3 className="homepage-category-title">
-                      {highlightText(card.label, searchQuery)}
-                      {card.tag && <span className="homepage-category-badge">{card.tag}</span>}
-                    </h3>
-                    {card.sublabel && (
-                      <p className="homepage-category-subtitle">
-                        {highlightText(card.sublabel, searchQuery)}
-                      </p>
-                    )}
-                    {card.description && (
-                      <p className="homepage-category-description">
-                        {highlightText(card.description, searchQuery)}
-                      </p>
-                    )}
-                  </div>
-                </div>
-
-                {card.subpages && card.subpages.length > 0 && (
-                  <div className="homepage-subpages-grid" onClick={(e) => e.stopPropagation()}>
-                    {card.subpages.map((subpage, subIndex) => (
-                      <div
-                        key={subIndex}
-                        className="homepage-subpage-item"
-                        onClick={() => handleNavigation(subpage.path, subpage.disabled)}
-                        style={{
-                          opacity: subpage.disabled ? 0.5 : 1,
-                          cursor: subpage.disabled ? "not-allowed" : "pointer",
+                        className="homepage-size-btn"
+                        title="Resize (normal → wide → tall → big)"
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          cycleSize(card.label);
                         }}
                       >
-                        <div className="homepage-subpage-header">
-                          <div className="homepage-subpage-icon">{subpage.icon}</div>
-                          <div className="homepage-subpage-name">
-                            {highlightText(subpage.name, searchQuery)}
-                          </div>
-                        </div>
-                        {subpage.description && (
-                          <p className="homepage-subpage-description">
-                            {highlightText(subpage.description, searchQuery)}
-                          </p>
-                        )}
+                        <FaExpandArrowsAlt />
+                      </button>
+                    </div>
+                  )}
 
-                        <button
-                          className={`homepage-favorite-btn ${
-                            isFavorited(subpage.path) ? "homepage-active" : ""
-                          }`}
-                          onClick={(e) => {
-                            e.stopPropagation();
-                            toggleFavorite(subpage.path);
-                          }}
-                          title={
-                            isFavorited(subpage.path)
-                              ? "Remove from favorites"
-                              : "Add to favorites"
-                          }
-                          aria-label={
-                            isFavorited(subpage.path)
-                              ? "Remove from favorites"
-                              : "Add to favorites"
-                          }
-                        >
-                          {isFavorited(subpage.path) ? <FaStar /> : <FaRegStar />}
-                        </button>
-                      </div>
-                    ))}
+                  <div className="homepage-category-header">
+                    <div className="homepage-category-icon">{card.icon}</div>
+                    <div className="homepage-category-content">
+                      <h3 className="homepage-category-title">
+                        {highlightText(card.label, searchQuery)}
+                        {card.tag && <span className="homepage-category-badge">{card.tag}</span>}
+                      </h3>
+                      {card.sublabel && (
+                        <p className="homepage-category-subtitle">
+                          {highlightText(card.sublabel, searchQuery)}
+                        </p>
+                      )}
+                      {card.description && (
+                        <p className="homepage-category-description">
+                          {highlightText(card.description, searchQuery)}
+                        </p>
+                      )}
+                    </div>
                   </div>
-                )}
 
-                <div className="homepage-category-updated">{getTimeAgo(card.updated)}</div>
-              </article>
-            );
-          })}
+                  {card.subpages && card.subpages.length > 0 && (
+                    <div className="homepage-subpages-grid" onClick={(e) => e.stopPropagation()}>
+                      {card.subpages.map((subpage, subIndex) => (
+                        <div
+                          key={subIndex}
+                          className="homepage-subpage-item"
+                          onClick={() => handleNavigation(subpage.path, subpage.disabled)}
+                          style={{
+                            opacity: subpage.disabled ? 0.5 : 1,
+                            cursor: subpage.disabled ? "not-allowed" : "pointer",
+                          }}
+                        >
+                          <div className="homepage-subpage-header">
+                            <div className="homepage-subpage-icon">{subpage.icon}</div>
+                            <div className="homepage-subpage-name">
+                              {highlightText(subpage.name, searchQuery)}
+                            </div>
+                          </div>
+                          {subpage.description && (
+                            <p className="homepage-subpage-description">
+                              {highlightText(subpage.description, searchQuery)}
+                            </p>
+                          )}
+
+                          <button
+                            className={`homepage-favorite-btn ${
+                              isFavorited(subpage.path) ? "homepage-active" : ""
+                            }`}
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              toggleFavorite(subpage.path);
+                            }}
+                            title={
+                              isFavorited(subpage.path)
+                                ? "Remove from favorites"
+                                : "Add to favorites"
+                            }
+                            aria-label={
+                              isFavorited(subpage.path)
+                                ? "Remove from favorites"
+                                : "Add to favorites"
+                            }
+                          >
+                            {isFavorited(subpage.path) ? <FaStar /> : <FaRegStar />}
+                          </button>
+                        </div>
+                      ))}
+                    </div>
+                  )}
+
+                  <div className="homepage-category-updated">{getTimeAgo(card.updated)}</div>
+                </article>
+              );
+            })}
+          </section>
         </section>
 
         {/* Empty State */}

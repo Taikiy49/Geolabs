@@ -15,6 +15,15 @@
     var(--bg-primary);
   position: relative;
   overflow: hidden; /* inner areas handle scroll */
+
+  /* Legibility */
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Accent overrides (brighter) */
+  --color-primary: #48eaff;
+  --color-primary-hover: #8af4ff;
 }
 
 /* ---- Header ---- */
