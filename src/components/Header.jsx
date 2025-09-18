@@ -183,7 +183,6 @@ export default function Header() {
 
         <Link to="/" className="header-brand header-no-wrap" title="Geolabs, Inc.">
           <img src="/geolabs.png" alt="Geolabs" className="header-logo" />
-          <span className="header-title header-no-wrap">Geolabs,&nbsp;Inc.</span>
         </Link>
 
         <nav className="header-nav">
