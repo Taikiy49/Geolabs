@@ -13,39 +13,47 @@
   --font-size-sm:   0.84rem;
   --font-size-xs:   0.76rem;
 
-  --radius: 12px;
-  --radius-lg: 14px;
+  --radius: 6px;
+  --radius-lg: 8px;
 
   --card-pad: var(--space-4);
   --grid-gap: var(--space-3);
 
+  /* Much darker blue-slate base */
   --bg-page:
-    radial-gradient(circle at 20% 80%, rgba(0, 212, 255, 0.06) 0%, transparent 50%),
-    radial-gradient(circle at 80% 20%, rgba(139, 92, 246, 0.06) 0%, transparent 50%),
-    radial-gradient(circle at 40% 40%, rgba(6, 255, 165, 0.03) 0%, transparent 50%),
-    radial-gradient(circle at 60% 10%, rgba(255, 0, 128, 0.02) 0%, transparent 50%),
-    linear-gradient(135deg, #0a0f1d 0%, #141d2b 50%, #1d2b3b 100%);
-  --bg-card: rgba(17, 24, 39, 0.94);
-  --bg-card-2: rgba(31, 41, 55, 0.9);
-  --bg-hover: rgba(0, 212, 255, 0.12);
+    linear-gradient(135deg, #01040a 0%, #06101a 50%, #0a1420 100%);
+  --bg-card: rgba(2, 4, 8, 0.992);
+  --bg-card-2: rgba(4, 7, 12, 0.988);
+  --bg-hover: rgba(0, 212, 255, 0.05);   /* a bit subtler */
+  /* NEW: absolute darkest base for page backdrops */
+  --bg-base: #000309;
 
-  --text-primary: #eaf4ff;
-  --text-secondary: #d9e7f7;
-  --text-muted: #93a6bf;
+  /* Brighter text for contrast */
+  --text-primary: #f5fbff;
+  --text-secondary: #e3efff;
+  --text-muted: #a9b9cf;
 
-  --color-primary: #00d4ff;
-  --color-secondary: #8b5cf6;
-  --color-tertiary: #06ffa5;
-  --color-success: #00ff88;
-  --color-warning: #ffaa00;
+  /* Accents slightly brighter to pop on darker bg */
+  --color-primary: #19d9ff;
+  --color-secondary: #9a6bff;
+  --color-tertiary: #1affb5;
+  --color-success: #33ffa0;
+  --color-warning: #ffbb33;
 
-  --border-color: rgba(59, 130, 246, 0.18);
+  /* Brighter neutral border for clarity on dark */
+  --border-color: rgba(255, 255, 255, 0.22);
 
-  --shadow-md: 0 6px 26px rgba(0,0,0,.34), 0 0 15px rgba(59,130,246,.12);
-  --shadow-lg: 0 10px 36px rgba(0,0,0,.38), 0 0 20px rgba(59,130,246,.15);
+  /* Shadows tuned for darker base */
+  --shadow-md: 0 6px 26px rgba(0,0,0,.44), 0 0 15px rgba(59,130,246,.10);
+  --shadow-lg: 0 10px 36px rgba(0,0,0,.56), 0 0 20px rgba(59,130,246,.12);
 
   --transition-fast: 140ms ease;
   --transition-normal: 220ms ease;
+
+  /* Global typography tokens */
+  --text-line-height: 0.875rem;
+  --text-letter-spacing: initial;
+  --text-weight: 400;
 }
 
 
@@ -93,11 +101,7 @@
   display: flex;           /* place Sidebar and main side-by-side */
   flex: 1 1 auto;          /* take the remaining height under Header */
   min-height: 0;           /* allow children to size/scroll correctly */
-  background:
-    radial-gradient(circle at 20% 80%, rgba(0, 212, 255, 0.06) 0%, transparent 60%),
-    radial-gradient(circle at 80% 20%, rgba(139, 92, 246, 0.06) 0%, transparent 60%),
-    radial-gradient(circle at 50% 0%, rgba(6, 255, 165, 0.03) 0%, transparent 70%),
-    linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 50%, var(--bg-tertiary) 100%);
+  background: var(--bg-base);
 }
 
 .app-container::before {
@@ -107,11 +111,11 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: 
-    radial-gradient(circle at 10% 90%, rgba(0, 212, 255, 0.08) 0%, transparent 60%),
-    radial-gradient(circle at 90% 10%, rgba(139, 92, 246, 0.08) 0%, transparent 60%),
-    radial-gradient(circle at 50% 50%, rgba(6, 255, 165, 0.05) 0%, transparent 80%),
-    radial-gradient(circle at 70% 30%, rgba(255, 0, 128, 0.03) 0%, transparent 50%);
+  background:
+    radial-gradient(circle at 10% 90%, rgba(72, 234, 255, 0.015) 0%, transparent 60%),
+    radial-gradient(circle at 90% 10%, rgba(192, 132, 252, 0.015) 0%, transparent 60%),
+    radial-gradient(circle at 50% 50%, rgba(6, 255, 165, 0.012) 0%, transparent 80%),
+    radial-gradient(circle at 70% 30%, rgba(255, 0, 128, 0.008) 0%, transparent 50%);
   pointer-events: none;
   z-index: -1;
   animation: backgroundShift 20s ease-in-out infinite;
@@ -127,9 +131,10 @@
   position: relative;
   flex: 1 1 auto;          /* fill remaining horizontal space and stretch vertically */
   min-height: 0;           /* prevent overflow issues in flex container */
-  backdrop-filter: blur(15px);
-  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   line-height: 1.65;
+  background: var(--bg-base);
 }
 
 /* Responsive Adjustments */
@@ -205,10 +210,10 @@
 
 /* Futuristic Utility Classes */
 .cyber-border {
-  border: 1px solid var(--color-primary);
-  box-shadow: 
-    inset 0 0 20px rgba(0, 212, 255, 0.1),
-    0 0 20px rgba(0, 212, 255, 0.2);
+  border: 1px solid var(--border-color);
+  box-shadow:
+    inset 0 0 20px rgba(72, 234, 255, 0.06),
+    0 0 20px rgba(72, 234, 255, 0.08);
 }
 
 .neon-glow {
@@ -229,6 +234,13 @@
   -webkit-backdrop-filter: blur(20px);
   border: 1px solid rgba(0, 212, 255, 0.3);
 }
+
+.matrix-text {
+  font-family: 'Courier New', monospace;
+  color: var(--color-tertiary);
+  text-shadow: 0 0 10px rgba(6, 255, 165, 0.5);
+}
+
 
 .matrix-text {
   font-family: 'Courier New', monospace;

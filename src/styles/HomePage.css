@@ -1,6 +1,5 @@
 /* =========================================================
    Geolabs – Compact Professional Homepage (Clean Rewrite)
-   (All classes prefixed with .homepage-)
    ========================================================= */
 
 /* ---------- Tokens ---------- */
@@ -10,29 +9,13 @@
   position: relative;
   z-index: 1;
   min-height: 100%;
-  /* Professional palette */
-  --bg-primary: #0b111c;
-  --bg-secondary: #0e1522;
-  --bg-card: rgba(16, 22, 34, 0.97);   /* slightly more solid */
-  --bg-card-2: rgba(18, 24, 36, 0.96); /* slightly more solid */
-  --bg-hover: rgba(255, 255, 255, 0.06);
 
-  /* Legibility */
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  line-height: 1.55;
-
-  --text-primary: #f3f6fb;
-  --text-secondary: #dbe2ee;
-  --text-muted: #a9b3c3;
-
-  --border-color: rgba(148, 163, 184, 0.24);
-
-  /* Neon accent set */
-  --color-primary: #48eaff;
-  --color-secondary: #c084fc;
-  --color-tertiary: #ff4fb6;
+  /* Inherit global palette from :root (App.css) */
+  /* Remove page-scoped overrides and map card tokens to globals */
+  --card-bg: var(--bg-card);
+  --card-bg-alt: var(--bg-card-2);
+  --card-border: var(--border-color);
+  --card-border-hover: var(--color-primary);
 
   /* Slightly stronger shadows for depth */
   --shadow-md: 0 8px 18px rgba(0, 0, 0, 0.45);
@@ -41,8 +24,8 @@
   /* Consistent card tokens */
   --card-bg: var(--bg-card);
   --card-bg-alt: var(--bg-card-2);
-  --card-border: rgba(72, 234, 255, 0.30);
-  --card-border-hover: rgba(72, 234, 255, 0.55);
+  --card-border: var(--border-color);
+  --card-border-hover: var(--color-primary);
   --card-radius: var(--radius-lg);
   --card-shadow: var(--shadow-md);
   --card-shadow-hover: var(--shadow-lg);
@@ -55,24 +38,25 @@
   --chip-amber:  linear-gradient(135deg, #f59e0b, #f97316);
   --chip-pink:   linear-gradient(135deg, #ff4fb6, #db2777);
   --chip-indigo: linear-gradient(135deg, #6366f1, #4338ca);
+  background: var(--bg-base); /* darkest underlay so cards/headers sit brighter */
 }
 
 .homepage::before{
   content:"";
   position:absolute; inset:0;
   background:
-    radial-gradient(1100px 700px at 15% 90%, rgba(72, 234, 255, 0.12), transparent 60%),
-    radial-gradient(900px 600px at 85% 10%, rgba(192, 132, 252, 0.12), transparent 60%),
-    radial-gradient(1000px 800px at 50% 50%, rgba(255, 79, 182, 0.06), transparent 70%);
+    radial-gradient(1100px 700px at 15% 90%, rgba(72, 234, 255, 0.03), transparent 60%),
+    radial-gradient(900px 600px at 85% 10%, rgba(192, 132, 252, 0.03), transparent 60%),
+    radial-gradient(1000px 800px at 50% 50%, rgba(255, 79, 182, 0.015), transparent 70%);
   pointer-events:none;
 }
 
 .homepage-container{
-  position:relative; z-index:1;
+  position:relative; z-index:1; 
   width: 100%;
   max-width: none;
   margin: 0; /* no centering */
-  padding: var(--space-6) var(--space-3) var(--space-5); /* tighter sides */
+  padding: var(--space-6) var(--space-6) var(--space-6); /* tighter sides */
   padding-bottom: var(--space-8);
 }
 .homepage-container.homepage-compact{ padding-top: var(--space-3); }
@@ -130,7 +114,6 @@
 .homepage-hero-subtitle{
   font-size: var(--font-size-base);
   color: var(--text-secondary);
-  margin:0 0 var(--space-3) 0;
 }
 
 .homepage-hero-meta{
@@ -147,8 +130,8 @@
   padding: 5px 9px;
   border-radius: 9px;
   border:1px solid var(--border-color);
-  background: rgba(30,41,59,.85);
-  color:var(--text-primary);
+  background: var(--bg-card);
+  color: var(--text-primary);
   font-size: 0.8rem;
   cursor:pointer;
   transition: transform .12s ease, border-color .12s ease, background .12s ease;
@@ -156,11 +139,7 @@
 .homepage-btn-edit:hover,.homepage-btn-reset:hover{
   transform: translateY(-1px);
   border-color: var(--color-primary);
-  background: rgba(51,65,85,.85);
-}
-.homepage-btn-edit.homepage-on{
-  border-color: var(--color-primary);
-  box-shadow: 0 0 0 3px rgba(59,130,246,.14) inset;
+  background: var(--bg-card-2);
 }
 
 /* ---------- Search ---------- */
@@ -171,14 +150,14 @@
 .homepage-search-input-lg{
   width:100%; height: 34px;
   padding: 0 .6rem 0 2rem;
-  background: rgba(18, 24, 36, 0.98);
+  background: var(--bg-card);
   border: 1px solid var(--card-border);        /* same as cards */
   border-radius: var(--card-radius);           /* same as cards */
   caret-color: var(--color-primary);
   transition: border-color var(--transition-fast), background var(--transition-fast);
 }
 .homepage-search-input-lg:hover {
-  background: rgba(20, 28, 42, 0.98);
+  background: var(--bg-card-2);
   border-color: var(--card-border-hover);      /* same hover as cards */
 }
 .homepage-search-input-lg:focus{
@@ -208,10 +187,10 @@
   position:relative; display:grid; align-items:center;
   grid-template-columns: 32px 1fr auto; gap: var(--space-3);
   padding: var(--space-6);
-  border: 1px solid rgba(72, 234, 255, 0.30);
+  border: 1px solid var(--card-border);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-md);
-  background: rgba(16, 22, 34, 0.98);
+  background: var(--card-bg);
 }
 .homepage-kpi-icon{
   width:32px; height:32px; border-radius: 8px;
@@ -262,17 +241,18 @@
   display:flex; align-items:center; justify-content:space-between;
   padding: 6px 10px;
   border-bottom:1px solid var(--border-color);
-  background: rgba(30,41,59,.55);
+  background: var(--bg-hover);
 }
 .homepage-spotlight-title{ font-weight:800; letter-spacing:.01em; color: var(--text-primary); font-size: 0.95rem; }
 .homepage-spotlight-open,.homepage-gh-open{
   width:28px; height:28px; display:grid; place-items:center;
   border-radius: 8px; border:1px solid var(--border-color);
-  background: rgba(30,41,59,.85); color: var(--text-primary);
+  background: var(--bg-card);
+  color: var(--text-primary);
   transition: transform .12s ease, border-color .12s ease, background .12s ease;
 }
 .homepage-spotlight-open:hover,.homepage-gh-open:hover{
-  transform: translateY(-1px); background: rgba(51,65,85,.85); border-color: var(--color-primary);
+  transform: translateY(-1px); background: var(--bg-card-2); border-color: var(--color-primary);
 }
 .homepage-spotlight-embed{ flex:1 1 auto; overflow:hidden; background:#fff; }
 .homepage-spotlight-embed .li-embed{
@@ -293,7 +273,7 @@
 .homepage-gh-release a{ color: var(--color-primary); text-decoration:none; }
 .homepage-gh-release a:hover{ text-decoration:underline; }
 .homepage-gh-langs{ margin-top: 8px; }
-.homepage-lang-bar{ display:flex; height:8px; border-radius:999px; overflow:hidden; background: rgba(255,255,255,.06); border:1px solid var(--border-color); }
+.homepage-lang-bar{ display:flex; height:8px; border-radius:999px; overflow:hidden; background: var(--bg-hover); border:1px solid var(--border-color); }
 .homepage-lang-chunk{ display:block; height:100%; }
 .homepage-lang-chunk:nth-child(5n+1){ background: linear-gradient(180deg, rgba(0,212,255,.9), rgba(0,212,255,.35)); }
 .homepage-lang-chunk:nth-child(5n+2){ background: linear-gradient(180deg, rgba(139,92,246,.9), rgba(139,92,246,.35)); }
@@ -335,7 +315,7 @@
   position:relative; backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
 }
 .homepage-qa-item:hover{
-  background: rgba(24, 34, 52, 0.98);
+  background: var(--bg-card-2);
   border-color: var(--card-border-hover);
   transform: translateY(-2px);
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.38);
@@ -351,15 +331,18 @@
 
 /* ---------- Categories (cards) ---------- */
 .homepage-categories-grid{
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;                          /* was flex-wrap */
+  grid-template-columns: repeat(3, minmax(0, 1fr));  /* big screen: 3 x 2 */
   gap: var(--grid-gap);
-  justify-content: flex-start;
+  width: 100%;                 /* ensure grid spans full container width */
+  align-items: stretch;        /* stretch cards vertically */
 }
 .homepage-category-card{
   flex: 1 1 320px;
-  min-width: 320px;
-  max-width: 400px;
+  min-width: 0;
+  max-width: none;
+  width: 100%;
+  height: 100%;
   background: var(--bg-card);
   border: 1px solid var(--card-border);
   border-radius: var(--radius);
@@ -376,15 +359,7 @@
   background: linear-gradient(90deg, transparent, var(--color-primary), var(--color-secondary), transparent);
   opacity:.35;
 }
-.homepage-category-card:hover{
-  box-shadow:
-    var(--shadow-lg),
-    0 0 0 1px var(--card-border-hover);
-  border-color: var(--color-primary);
-  background: rgba(16, 22, 34, 0.98);
-  z-index: 2;
-  position: relative;
-}
+
 .homepage-category-card.homepage-disabled{ pointer-events:none; opacity:.6; }
 
 /* Edit affordances */
@@ -422,8 +397,7 @@
 
 /* header + icon */
 .homepage-category-header{
-  display:grid; grid-template-columns: 40px 1fr; gap: var(--space-3);
-  margin-bottom: var(--space-3);
+  display: flex; gap: var(--space-5);
 }
 .homepage-category-icon{
   width:40px; height:40px; border-radius: 8px;
@@ -440,8 +414,8 @@
 }
 .homepage-category-title{
   font-size: 1.02rem; font-weight:800; color: var(--text-primary);
-  margin:0; display:inline-flex; align-items:center; gap: var(--space-2);
-  text-shadow: none;
+  display:inline-flex; align-items:center; gap: var(--space-4);
+  text-shadow: none; 
 }
 .homepage-category-badge{
   padding: 2px 8px; background: linear-gradient(135deg, var(--color-success), var(--color-tertiary));
@@ -453,19 +427,16 @@
 .homepage-category-updated{ font-size: var(--font-size-xs); color: var(--text-muted); margin-top: var(--space-3); }
 
 /* subpages */
-.homepage-subpages-grid{
-  display:grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: var(--grid-gap); margin-top: var(--space-3);
-}
 .homepage-subpage-item{
   display:flex; flex-direction:column; gap: var(--space-2);
-  padding: 9px; background: var(--bg-card-2);
+  padding: var(--space-1) var(--space-4) var(--space-2);
+  background: var(--bg-card-2);
   border:1px solid var(--card-border); border-radius: 10px;
   transition: transform var(--transition-fast), border-color var(--transition-fast), background var(--transition-fast), box-shadow var(--transition-fast);
   position:relative; backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
 }
 .homepage-subpage-item:hover{
-  background: rgba(24, 34, 52, 0.98);
+  background: var(--bg-card-2);
   border-color: var(--card-border-hover);
   transform: translateY(-2px);
   box-shadow: 0 6px 22px rgba(0,0,0,.38);
@@ -544,27 +515,49 @@
   display:inline-flex; align-items:center; gap: var(--space-2);
   font-size: 1.05rem; font-weight: 800;
   color: var(--text-primary);
-  margin: var(--space-5) 0 var(--space-3);
+  margin: var(--space-1) 0 0;
 }
 
 /* ---------- Top grid (Hero + KPIs | Quick Access) ---------- */
 .homepage-top-grid{
-  display:grid;
-  grid-template-columns: 1.3fr 1fr;
+  display: grid;                 /* ensure grid layout */
+  grid-template-columns: 1fr;    /* stack: hero on top, QA below */
   gap: var(--space-4);
-  align-items:start;
-  margin: var(--space-3) 0 var(--space-3);
+  align-items: start;
+  margin: var(--space-3) 0 var(--space-1);
 }
-.homepage-top-left .homepage-hero { margin: 0 0 var(--space-3) 0; }
-.homepage-top-left .homepage-kpi-grid { margin: 0; }
-.homepage-top-right .homepage-quick-access { margin: 0; }
 
-/* Search sits right under the top grid */
-.homepage-search { margin: var(--space-5) 0 var(--space-4); }
+/* Full-width area under hero for Quick Access */
+.homepage-top-bottom{
+  width: 100%;                   /* fill container width (avoid 100vw overflow) */
+  display: block;                /* let inner grid handle layout */
+}
 
-/* Responsive: stack columns on smaller screens */
-@media (max-width: 1100px){
-  .homepage-top-grid{ grid-template-columns: 1fr; }
+/* Quick Access: two sections side-by-side (Favorites | Recently Used) */
+.homepage-quick-access{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: calc(var(--grid-gap) * 2); /* increased space between the two sections */
+}
+
+/* Inside each QA section, show items in a 2x2 grid */
+.homepage-quick-access .homepage-qa-grid{
+  /* override auto-fit to fix 2 columns */
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-auto-rows: 1fr;                    /* consistent row height */
+}
+
+/* Make each QA item fill its grid cell for cleaner 2x2 layout */
+.homepage-quick-access .homepage-qa-item{
+  height: 100%;
+  cursor: pointer;
+}
+
+/* Responsive: collapse QA sections to one column on small screens */
+@media (max-width: 900px){
+  .homepage-quick-access{
+    grid-template-columns: 1fr;
+  }
 }
 
 /* ---------- Responsive ---------- */
@@ -575,9 +568,7 @@
 @media (max-width: 900px){
   .homepage-container{ padding: 14px 12px 22px; max-width: 100%; }
   .homepage-category-card{ padding: 12px; }
-  .homepage-category-header{ grid-template-columns: 32px 1fr; gap: var(--space-3); }
   .homepage-category-icon{ width:32px; height:32px; font-size:.85rem; }
-  .homepage-qa-grid,.homepage-subpages-grid{ grid-template-columns: 1fr; }
   .homepage-spotlight-embed{ min-height: 340px; }
 }
 @media (max-width: 640px){
@@ -614,7 +605,6 @@
   .homepage-animate-on-scroll,.homepage-category-card,.homepage-subpage-item,.homepage-qa-item,.homepage-search-input-lg,.homepage-kpi-card,.homepage-github-card,.homepage-spotlight-card{
     transition:none !important;
   }
-  .homepage-category-card:hover,.homepage-subpage-item:hover,.homepage-qa-item:hover{ transform:none !important; }
 }
 @media (prefers-contrast: high){
   .homepage-category-card,.homepage-subpage-item,.homepage-qa-item,.homepage-github-card,.homepage-spotlight-card{ border-width:2px; }
@@ -641,18 +631,6 @@
   border-color: var(--card-border);
 }
 
-/* Harmonized hover for all cards */
-.homepage-kpi-card:hover,
-.homepage-qa-item:hover,
-.homepage-category-card:hover,
-.homepage-subpage-item:hover,
-.homepage-spotlight-card:hover,
-.homepage-github-card:hover {
-  border-color: var(--card-border-hover);
-  box-shadow: var(--card-shadow-hover);
-  transform: translateY(-1px);
-}
-
 /* Category card: use unified padding and radius */
 .homepage-category-card {
   border: 1px solid var(--card-border);
@@ -660,12 +638,6 @@
   padding: var(--card-pad);
   background: var(--card-bg);
   box-shadow: var(--card-shadow);
-}
-.homepage-category-card:hover {
-  border-color: var(--card-border-hover);
-  box-shadow:
-    var(--shadow-lg),
-    0 0 0 1px var(--card-border-hover);
 }
 
 /* KPI card: align radius and border */
@@ -702,20 +674,71 @@
 .homepage-qa-icon,
 .homepage-category-icon,
 .homepage-subpage-icon {
-  background: linear-gradient(135deg, var(--color-primary), var(--color-secondary), var(--color-tertiary));
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.35), inset 0 1px 0 rgba(255,255,255,.08);
+  background: var(--bg-card-2);
+  box-shadow: none;
 }
 
-/* Subpages grid spacing tuned for consistency inside cards */
-.homepage-subpages-grid {
-  gap: var(--space-2);
-  margin-top: var(--space-2);
+/* Category cards grid: exact columns by viewport */
+.homepage-categories-grid{
+  display: grid;                          /* was flex-wrap */
+  grid-template-columns: repeat(3, minmax(0, 1fr));  /* big screen: 3 x 2 */
+  gap: var(--grid-gap);
+  width: 100%;                 /* ensure grid spans full container width */
+  align-items: stretch;        /* stretch cards vertically */
 }
 
-/* Harmonize category header spacing */
-.homepage-category-header {
-  margin-bottom: var(--space-2);
+/* Category card should fill its grid cell (remove width caps) */
+.homepage-categories-grid .homepage-category-card{
+  /* remove flex/min/max caps from earlier definitions and let grid handle sizing */
+  min-width: 0;
+  max-width: none;
+  width: 100%;
+  height: 100%;
+}
+
+/* Medium screens: 2 x 3 */
+@media (max-width: 1200px){
+  .homepage-categories-grid{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Small screens: 1 x 6 */
+@media (max-width: 640px){
+  .homepage-categories-grid{
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Subpages grid inside each card: fill available area and equal heights */
+.homepage-subpages-grid{
+  grid-auto-rows: 1fr;                                /* equal heights */
+  align-items: stretch;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* auto-fit columns */
+  gap: var(--grid-gap);
+}
+
+/* Exactly 2 subpages: stack vertically to avoid a half-empty bottom area */
+.homepage-subpages-grid:has(> :nth-child(2)):not(:has(> :nth-child(3))) {
+  grid-template-columns: 1fr;
+}
+
+/* Exactly 3 subpages: one per row */
+.homepage-subpages-grid:has(> :nth-child(3)):not(:has(> :nth-child(4))) {
+  grid-template-columns: 1fr;
+}
+
+/* Single subpage: full width */
+.homepage-subpages-grid:not(:has(> :nth-child(2))) {
+  grid-template-columns: 1fr;
+}
+
+/* Small screens: always single column for subpages */
+@media (max-width: 640px){
+  .homepage-subpages-grid{
+    grid-template-columns: 1fr;
+  }
 }
 
 /* Keep existing responsive and other rules below */
@@ -735,10 +758,14 @@
 .homepage-qa-scroll::-webkit-scrollbar-thumb:hover{
   background: rgba(148,163,184,.4);
 }
-.homepage-category-header {
-  /* ...existing code... */
-  margin-bottom: var(--space-2);
+
+/* Override: Quick Access should never be scroll-clamped */
+.homepage-qa-scroll{
+  overflow: visible !important;
+  max-height: none !important;
+  padding-right: 0;
 }
+.homepage-qa-scroll::-webkit-scrollbar{ display: none; }
 
 /* Keep existing responsive and other rules below */
 /* ...existing code... */
@@ -778,37 +805,86 @@
 /* Hero meta icons: alternate accents */
 .homepage-hero-meta .homepage-hero-meta-item:nth-of-type(1) svg{ color: var(--color-primary); }
 .homepage-hero-meta .homepage-hero-meta-item:nth-of-type(3) svg{ color: var(--color-secondary); }
+/* Quick Access titles: Favorites (pink), Recently Used (violet) */
+.homepage-quick-access .homepage-qa-section:nth-of-type(1) .homepage-qa-title svg{ color: var(--color-tertiary); }
+.homepage-quick-access .homepage-qa-section:nth-of-type(2) .homepage-qa-title svg{ color: var(--color-secondary); }
 
-/* Icon chip color cycle (6-color palette) */
-/* KPI cards */
-.homepage-kpi-card:nth-child(6n+1) .homepage-kpi-icon{ background: var(--chip-cyan); }
-.homepage-kpi-card:nth-child(6n+2) .homepage-kpi-icon{ background: var(--chip-violet); }
-.homepage-kpi-card:nth-child(6n+3) .homepage-kpi-icon{ background: var(--chip-green); }
-.homepage-kpi-card:nth-child(6n+4) .homepage-kpi-icon{ background: var(--chip-amber); }
-.homepage-kpi-card:nth-child(6n+5) .homepage-kpi-icon{ background: var(--chip-pink); }
-.homepage-kpi-card:nth-child(6n+6) .homepage-kpi-icon{ background: var(--chip-indigo); }
+/* Hero meta icons: alternate accents */
+.homepage-hero-meta .homepage-hero-meta-item:nth-of-type(1) svg{ color: var(--color-primary); }
+.homepage-hero-meta .homepage-hero-meta-item:nth-of-type(3) svg{ color: var(--color-secondary); }
 
-/* Category cards */
-.homepage-categories-grid > .homepage-category-card:nth-of-type(6n+1) .homepage-category-icon{ background: var(--chip-cyan); }
-.homepage-categories-grid > .homepage-category-card:nth-of-type(6n+2) .homepage-category-icon{ background: var(--chip-violet); }
-.homepage-categories-grid > .homepage-category-card:nth-of-type(6n+3) .homepage-category-icon{ background: var(--chip-green); }
-.homepage-categories-grid > .homepage-category-card:nth-of-type(6n+4) .homepage-category-icon{ background: var(--chip-amber); }
-.homepage-categories-grid > .homepage-category-card:nth-of-type(6n+5) .homepage-category-icon{ background: var(--chip-pink); }
-.homepage-categories-grid > .homepage-category-card:nth-of-type(6n+6) .homepage-category-icon{ background: var(--chip-indigo); }
+/* Make QA buttons clearly tappable (already added) */
+.homepage-quick-access .homepage-qa-item{
+  /* ...existing code... */
+  height: 100%;
+  cursor: pointer;
+}
 
-/* Quick Access */
-.homepage-qa-grid > .homepage-qa-item:nth-child(6n+1) .homepage-qa-icon{ background: var(--chip-cyan); }
-.homepage-qa-grid > .homepage-qa-item:nth-child(6n+2) .homepage-qa-icon{ background: var(--chip-violet); }
-.homepage-qa-grid > .homepage-qa-item:nth-child(6n+3) .homepage-qa-icon{ background: var(--chip-green); }
-.homepage-qa-grid > .homepage-qa-item:nth-child(6n+4) .homepage-qa-icon{ background: var(--chip-amber); }
-.homepage-qa-grid > .homepage-qa-item:nth-child(6n+5) .homepage-qa-icon{ background: var(--chip-pink); }
-.homepage-qa-grid > .homepage-qa-item:nth-child(6n+6) .homepage-qa-icon{ background: var(--chip-indigo); }
+/* 1) Neutral, high-contrast icon chips (remove flashy gradients) */
+.homepage-category-icon,
+.homepage-qa-icon,
+.homepage-kpi-icon,
+.homepage-subpage-icon{
+  background: var(--bg-card-2);       /* neutral dark chip */
+  color: var(--accent-color, var(--text-primary));
+  border: 1px solid var(--border-color);
+  box-shadow: none;                   /* remove glow */
+}
 
-/* Subpages */
-.homepage-subpages-grid > .homepage-subpage-item:nth-child(6n+1) .homepage-subpage-icon{ background: var(--chip-cyan); }
-.homepage-subpages-grid > .homepage-subpage-item:nth-child(6n+2) .homepage-subpage-icon{ background: var(--chip-violet); }
-.homepage-subpages-grid > .homepage-subpage-item:nth-child(6n+3) .homepage-subpage-icon{ background: var(--chip-green); }
-.homepage-subpages-grid > .homepage-subpage-item:nth-child(6n+4) .homepage-subpage-icon{ background: var(--chip-amber); }
-.homepage-subpages-grid > .homepage-subpage-item:nth-child(6n+5) .homepage-subpage-icon{ background: var(--chip-pink); }
-.homepage-subpages-grid > .homepage-subpage-item:nth-child(6n+6) .homepage-subpage-icon{ background: var(--chip-indigo); }
+/* 2) Per-category accent color (visually distinct cards) */
+.homepage-categories-grid > .homepage-category-card:nth-child(6n+1){ --accent-color:#48eaff; } /* cyan */
+.homepage-categories-grid > .homepage-category-card:nth-child(6n+2){ --accent-color:#c084fc; } /* violet */
+.homepage-categories-grid > .homepage-category-card:nth-child(6n+3){ --accent-color:#f59e0b; } /* amber */
+.homepage-categories-grid > .homepage-category-card:nth-child(6n+4){ --accent-color:#10b981; } /* emerald */
+.homepage-categories-grid > .homepage-category-card:nth-child(6n+5){ --accent-color:#ec4899; } /* pink */
+.homepage-categories-grid > .homepage-category-card:nth-child(6n+6){ --accent-color:#6366f1; } /* indigo */
+
+/* Make the category chip ring use its accent */
+.homepage-category-icon{
+  /* ...existing code... */
+  border-color: var(--accent-color);
+  color: var(--accent-color);         /* icon itself uses accent */
+}
+
+/* 3) Quick Access: per-item accents so icons differ at a glance */
+.homepage-qa-grid .homepage-qa-item:nth-child(4n+1){ --qa-accent:#48eaff; } /* cyan */
+.homepage-qa-grid .homepage-qa-item:nth-child(4n+2){ --qa-accent:#f59e0b; } /* amber */
+.homepage-qa-grid .homepage-qa-item:nth-child(4n+3){ --qa-accent:#10b981; } /* emerald */
+.homepage-qa-grid .homepage-qa-item:nth-child(4n+4){ --qa-accent:#c084fc; } /* violet */
+
+.homepage-qa-icon{
+  /* neutral chip, colored glyph */
+  background: var(--bg-card-2);
+  border: 1px solid var(--qa-accent, var(--border-color));
+  color: var(--qa-accent, var(--accent-color, var(--text-primary)));
+  box-shadow: none;
+}
+
+/* 4) KPI tiles: rotate accents for quick differentiation */
+.homepage-kpi-grid .homepage-kpi-card:nth-child(3n+1){ --accent-color:#48eaff; }
+.homepage-kpi-grid .homepage-kpi-card:nth-child(3n+2){ --accent-color:#f59e0b; }
+.homepage-kpi-grid .homepage-kpi-card:nth-child(3n+3){ --accent-color:#10b981; }
+
+.homepage-kpi-icon{
+  /* ...existing code... */
+  background: var(--bg-card-2);
+  border: 1px solid var(--accent-color);
+  color: var(--accent-color);
+  box-shadow: none;
+}
+
+/* Optional: reduce header chip highlight line to stay subtle */
+.homepage-category-card::before{
+  /* ...existing code... */
+  opacity:.25; /* slightly dimmer */
+}
+
+/* Remove the previous global gradient assignment for chips (override) */
+.homepage-kpi-icon,
+.homepage-qa-icon,
+.homepage-category-icon,
+.homepage-subpage-icon {
+  background: var(--bg-card-2);
+  box-shadow: none;
+}
 

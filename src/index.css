@@ -16,20 +16,16 @@ html {
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
-  line-height: 1.65; /* taller for long-form reading */
+  line-height: var(--text-line-height, 1.65);
+  letter-spacing: var(--text-letter-spacing, normal);
+  font-weight: var(--text-weight, 400);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 overflow-x: hidden;
 overflow-y: auto;
   padding-bottom: env(safe-area-inset-bottom);
-  background:
-    radial-gradient(circle at 20% 80%, rgba(0, 212, 255, 0.04) 0%, transparent 60%),
-    radial-gradient(circle at 80% 20%, rgba(139, 92, 246, 0.04) 0%, transparent 60%),
-    radial-gradient(circle at 50% 40%, rgba(6, 255, 165, 0.03) 0%, transparent 70%),
-    linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 50%, var(--bg-tertiary) 100%);
-  background-attachment: local; /* avoid iOS issues with fixed backgrounds */
+  background: var(--bg-base) !important; /* darkest base */
   color: var(--text-primary);
-  
 }
 
 html, body {
@@ -70,6 +66,7 @@ html, body {
   --bg-active: rgba(36, 48, 70, 0.7);
   --bg-glass: rgba(12, 16, 28, 0.88);
   --bg-glow: rgba(79, 143, 247, 0.04);
+  --bg-base: #000000; /* New base color */
   
   /* Text */
   --text-primary: #f8fafc;
@@ -119,6 +116,11 @@ html, body {
   --transition-fast: 150ms ease;
   --transition-normal: 250ms ease;
   --transition-slow: 350ms ease;
+
+  /* Scrollbar */
+  --scrollbar-size: 3px; /* was 8px */
+  --scrollbar-thumb-glow: rgba(79, 143, 247, 0.55);
+  --scrollbar-thumb-glow-hover: rgba(79, 143, 247, 0.8);
 }
 
 /* Dark mode adjustments */
@@ -169,9 +171,9 @@ html, body {
   z-index: 0;
   pointer-events: none;
   background:
-    radial-gradient(circle at 15% 85%, rgba(0, 212, 255, 0.06) 0%, transparent 55%),
-    radial-gradient(circle at 85% 15%, rgba(139, 92, 246, 0.06) 0%, transparent 55%),
-    radial-gradient(circle at 50% 50%, rgba(6, 255, 165, 0.03) 0%, transparent 70%);
+    radial-gradient(circle at 15% 85%, rgba(0, 212, 255, 0.015) 0%, transparent 55%),
+    radial-gradient(circle at 85% 15%, rgba(139, 92, 246, 0.015) 0%, transparent 55%),
+    radial-gradient(circle at 50% 50%, rgba(6, 255, 165, 0.01) 0%, transparent 70%);
 }
 
 .app-body {
@@ -186,7 +188,7 @@ html, body {
   flex: 1;
   overflow-x: hidden;
   overflow-y: auto;                 /* make main content the scroll container */
-  background: var(--bg-primary);
+  background: var(--bg-base); /* darker than header/cards */
   min-height: 0;
 
   position: relative;
@@ -570,34 +572,92 @@ html, body {
 }
 
 
-/* Final Blue Scrollbar (overrides earlier rules) */
+/* Futuristic neon scrollbar: global targets */
 body,
 .main-content {
-  scrollbar-width: thin; /* Firefox */ 
-  scrollbar-color: rgba(79,143,247,0.85) transparent;
+  scrollbar-width: thin;                     /* Firefox */
+  scrollbar-color: #48eaff transparent;      /* Firefox colors */
 }
+
+/* WebKit (Chrome/Edge/Safari) */
 body::-webkit-scrollbar,
-.main-content::-webkit-scrollbar { width: 8px; }
+.main-content::-webkit-scrollbar {
+  width: var(--scrollbar-size);
+  height: var(--scrollbar-size);
+}
 body::-webkit-scrollbar-track,
-.main-content::-webkit-scrollbar-track { background: transparent; }
+.main-content::-webkit-scrollbar-track {
+  /* visually shorten: inset both ends with transparent border */
+  border: 0 solid transparent;           /* override previous 10px */
+  background-clip: padding-box;                 /* keep gradient inside the inset */
+  border-radius: 999px;
+  /* recreate subtle border ring + inner depth */
+  box-shadow:
+    0 0 0 1px rgba(255,255,255,0.06),
+    inset 0 0 10px rgba(0,0,0,0.45);
+  /* ...existing background gradients... */
+  background:
+    linear-gradient(90deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02)) padding-box,
+    radial-gradient(120% 120% at 30% 30%, rgba(72,234,255,0.06), rgba(154,107,255,0.05), rgba(26,255,181,0.04), transparent) border-box;
+}
+
+/* Stronger visual shortening: inset only the usable edges */
+body::-webkit-scrollbar-track:vertical,
+.main-content::-webkit-scrollbar-track:vertical {
+  border-top: 24px solid transparent;
+  border-bottom: 24px solid transparent;
+}
+body::-webkit-scrollbar-track:horizontal,
+.main-content::-webkit-scrollbar-track:horizontal {
+  border-left: 24px solid transparent;
+  border-right: 24px solid transparent;
+}
+
 body::-webkit-scrollbar-thumb,
 .main-content::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, var(--color-primary), var(--color-cyber));
-  border-radius: 8px;
-  background-clip: padding-box; /* leaves transparent edges so thumb floats */
-  border-left: 3px solid transparent;
-  border-right: 3px solid transparent;
-  border-top: 16px solid transparent;   /* short visible bar effect */
-  border-bottom: 16px solid transparent;/* short visible bar effect */
-  box-shadow: 0 0 8px rgba(79,143,247,0.45);
+  border-radius: 999px;
+  /* thinner ring */
+  border: 0;                 /* remove ring to look thinner */
+  min-height: 16px; /* was 28px */
+  /* ...existing background, shadows, animation... */
+  background: linear-gradient(180deg, #48eaff, #9a6bff 50%, #1affb5);
+  background-size: 200% 200%;
+  background-position: 0% 0%;
+  background-clip: padding-box;
+  box-shadow:
+    0 0 10px var(--scrollbar-thumb-glow),
+    0 0 18px rgba(154,107,255,0.35),
+    inset 0 0 8px rgba(0,0,0,0.35);
+  animation: scrollGlow 6s linear infinite;
 }
 body::-webkit-scrollbar-thumb:hover,
 .main-content::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(180deg, var(--color-primary-hover), var(--color-cyber));
-  box-shadow: 0 0 10px rgba(79,143,247,0.6);
+  background: linear-gradient(180deg, #63f3ff, #b08cff 50%, #3cffc8);
+  background-size: 200% 200%;
+  box-shadow:
+    0 0 12px var(--scrollbar-thumb-glow-hover),
+    0 0 22px rgba(154,107,255,0.5),
+    inset 0 0 8px rgba(0,0,0,0.35);
 }
 body::-webkit-scrollbar-corner,
-.main-content::-webkit-scrollbar-corner { background: transparent; }
+.main-content::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+/* Smooth animated hue shift */
+@keyframes scrollGlow {
+  0%   { background-position: 0% 0%;   }
+  50%  { background-position: 0% 100%; }
+  100% { background-position: 0% 0%;   }
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce){
+  body::-webkit-scrollbar-thumb,
+  .main-content::-webkit-scrollbar-thumb {
+    animation: none;
+  }
+}
 
 /* Better text selection on dark surfaces */
 ::selection {
@@ -606,6 +666,11 @@ body::-webkit-scrollbar-corner,
 }
 
 /* Strong, consistent keyboard focus ring for interactive elements */
+:where(a, button, [role="button"], .header-nav-link, .homepage-category-card, .homepage-qa-item, .homepage-subpage-item, .rag-btn, .rag-card):focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 3px var(--border-glow);
+}
 :where(a, button, [role="button"], .header-nav-link, .homepage-category-card, .homepage-qa-item, .homepage-subpage-item, .rag-btn, .rag-card):focus-visible {
   outline: 2px solid var(--color-primary);
   outline-offset: 2px;

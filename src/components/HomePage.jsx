@@ -25,7 +25,7 @@ import {
 
 const FAVORITES_KEY = "geolabs_favorites_v2";
 const RECENTS_KEY = "geolabs_recents_v2";
-const RECENT_MAX = 8;
+const RECENT_MAX = 4; // was 8
 
 const LAYOUT_ORDER_KEY = "geolabs_layout_order_v1";
 const CARD_SIZES_KEY = "geolabs_card_sizes_v1";
@@ -351,23 +351,14 @@ export default function HomePage() {
   };
 
   useEffect(() => {
-    const recompute = () => {
-      const isNarrow = window.matchMedia("(max-width: 1100px)").matches;
-      if (isNarrow) {
-        setQaClamped(false);
-        setQaMaxHeight(null);
-        return;
-      }
-      if (!topLeftRef.current || !qaRef.current) return;
-      const h = Math.max(0, Math.floor(topLeftRef.current.getBoundingClientRect().height));
-      setQaMaxHeight(h);
-      setQaClamped(true);
+    // Disable clamping entirely; always let QA grow naturally
+    const disableClamp = () => {
+      setQaClamped(false);
+      setQaMaxHeight(null);
     };
-    // initial + on resize
-    recompute();
-    window.addEventListener("resize", recompute);
-    return () => window.removeEventListener("resize", recompute);
-    // re-evaluate when lists change
+    disableClamp();
+    window.addEventListener("resize", disableClamp);
+    return () => window.removeEventListener("resize", disableClamp);
   }, [favorites.length, recents.length]);
 
   const currentTime = new Date();
@@ -394,7 +385,7 @@ export default function HomePage() {
       <div className="homepage-container homepage-compact">
         {/* Top grid: Left = Hero + KPIs, Right = Quick Access */}
         <section className="homepage-top-grid homepage-animate-on-scroll homepage-visible">
-          <div className="homepage-top-left" ref={topLeftRef}>
+          <div className="homepage-top-top" ref={topLeftRef}>
             {/* Hero */}
             <section className="homepage-hero homepage-compact">
               <div className="homepage-hero-greeting">
@@ -443,67 +434,12 @@ export default function HomePage() {
                 </div>
               </div>
             </section>
-
-            {/* KPIs */}
-            <div className="homepage-kpi-grid">
-              <div className="homepage-kpi-card">
-                <div className="homepage-kpi-icon">
-                  <FaFolderOpen />
-                </div>
-                <div className="homepage-kpi-meta">
-                  <div className="homepage-kpi-label">Documents Indexed</div>
-                  <div className="homepage-kpi-value">{demoMetrics.docsIndexed.toLocaleString()}</div>
-                </div>
-                <div className="homepage-kpi-trend">
-                  <div className="homepage-kpi-bars">
-                    {weeklyDocs.map((v, i) => (
-                      <span key={i} style={{ height: `${6 + v * 3}px` }} />
-                    ))}
-                  </div>
-                  <div className="homepage-kpi-hint">last 7 days</div>
-                </div>
-              </div>
-              <div className="homepage-kpi-card">
-                <div className="homepage-kpi-icon">
-                  <FaBoxOpen />
-                </div>
-                <div className="homepage-kpi-meta">
-                  <div className="homepage-kpi-label">Core Boxes</div>
-                  <div className="homepage-kpi-value">{demoMetrics.coreBoxes.toLocaleString()}</div>
-                </div>
-                <div className="homepage-kpi-pill">Inventory</div>
-              </div>
-              <div className="homepage-kpi-card">
-                <div className="homepage-kpi-icon">
-                  <FaRobot />
-                </div>
-                <div className="homepage-kpi-meta">
-                  <div className="homepage-kpi-label">AI Answers (wk)</div>
-                  <div className="homepage-kpi-value">{demoMetrics.aiAnswersThisWeek}</div>
-                </div>
-                <div className="homepage-kpi-pill homepage-kpi-pill--glow">↑ healthy</div>
-              </div>
-              <div className="homepage-kpi-card">
-                <div className="homepage-kpi-icon">
-                  <FaCheckCircle />
-                </div>
-                <div className="homepage-kpi-meta">
-                  <div className="homepage-kpi-label">Open Tasks</div>
-                  <div className="homepage-kpi-value">{demoMetrics.openTasks}</div>
-                </div>
-                <div className="homepage-kpi-pill homepage-kpi-pill--warn">priority</div>
-              </div>
-            </div>
           </div>
 
-          <aside className="homepage-top-right">
+          <aside className="homepage-top-bottom"> 
             {/* Quick Access */}
             {(favorites.length > 0 || recents.length > 0) ? (
-              <section
-                ref={qaRef}
-                className={`homepage-quick-access homepage-compact homepage-visible ${qaClamped ? "homepage-qa-scroll" : ""}`}
-                style={qaClamped && qaMaxHeight ? { maxHeight: qaMaxHeight } : undefined}
-              >
+              <section className="homepage-quick-access homepage-compact homepage-visible">
                 {favorites.length > 0 && (
                   <div className="homepage-qa-section">
                     <h2 className="homepage-qa-title">
@@ -511,7 +447,7 @@ export default function HomePage() {
                       Favorites
                     </h2>
                     <div className="homepage-qa-grid">
-                      {favorites.slice(0, 6).map((favorite) => {
+                      {favorites.slice(0, 4).map((favorite) => {
                         const metadata = findSubpageByPath(homepageCards, favorite.path);
                         if (!metadata) return null;
                         return (
@@ -540,7 +476,7 @@ export default function HomePage() {
                       Recently Used
                     </h2>
                     <div className="homepage-qa-grid">
-                      {recents.slice(0, 6).map((recent) => {
+                      {recents.slice(0, 4).map((recent) => {
                         const metadata = findSubpageByPath(homepageCards, recent.path);
                         if (!metadata) return null;
                         return (
@@ -569,19 +505,6 @@ export default function HomePage() {
           </aside>
         </section>
 
-        {/* Search — now below the top grid, full width */}
-        <section className="homepage-search homepage-compact homepage-animate-on-scroll">
-          <div className="homepage-search-container-lg">
-            <FaSearch className="homepage-search-icon-lg" />
-            <input
-              type="text"
-              className="homepage-search-input-lg"
-              placeholder="Search tools, documents, and features…"
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-            />
-          </div>
-        </section>
 
         {/* Browse (Categories) */}
         <section className="homepage-browse">
@@ -609,8 +532,8 @@ export default function HomePage() {
                     card.disabled ? "homepage-disabled" : ""
                   }`}
                   style={{
-                    animationDelay: `${index * 70}ms`,
-                    opacity: card.disabled ? 0.6 : 1,
+                    animationDelay: `${index * 70}ms`,   // <- shows as element.style animation-delay
+                    opacity: card.disabled ? 0.6 : 1,    // <- element.style opacity
                     cursor: editMode ? "grab" : card.disabled ? "not-allowed" : "pointer",
                   }}
                   role="button"
@@ -646,19 +569,14 @@ export default function HomePage() {
                   <div className="homepage-category-header">
                     <div className="homepage-category-icon">{card.icon}</div>
                     <div className="homepage-category-content">
-                      <h3 className="homepage-category-title">
+                      <div className="homepage-category-title">
                         {highlightText(card.label, searchQuery)}
                         {card.tag && <span className="homepage-category-badge">{card.tag}</span>}
-                      </h3>
+                      </div>
                       {card.sublabel && (
-                        <p className="homepage-category-subtitle">
+                        <div className="homepage-category-subtitle">
                           {highlightText(card.sublabel, searchQuery)}
-                        </p>
-                      )}
-                      {card.description && (
-                        <p className="homepage-category-description">
-                          {highlightText(card.description, searchQuery)}
-                        </p>
+                        </div>
                       )}
                     </div>
                   </div>
@@ -676,12 +594,11 @@ export default function HomePage() {
                           onKeyDown={(e) => !subpage.disabled && onKeyActivate(e, () => handleNavigation(subpage.path, subpage.disabled))}
                           onClick={() => handleNavigation(subpage.path, subpage.disabled)}
                           style={{
-                            opacity: subpage.disabled ? 0.5 : 1,
-                            cursor: subpage.disabled ? "not-allowed" : "pointer",
+                            opacity: subpage.disabled ? 0.5 : 1,          // <- element.style opacity
+                            cursor: subpage.disabled ? "not-allowed" : "pointer", // <- element.style cursor
                           }}
                         >
                           <div className="homepage-subpage-header">
-                            <div className="homepage-subpage-icon">{subpage.icon}</div>
                             <div className="homepage-subpage-name">
                               {highlightText(subpage.name, searchQuery)}
                             </div>
