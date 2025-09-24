@@ -11,15 +11,13 @@ import {
   FaExternalLinkAlt,
   FaCog,
   FaHome,
-  FaBars,
-  FaTimes,
-  FaSearch,           // NEW
-  FaCommentDots,      // NEW
-  FaPaperPlane,       // NEW
-  FaStar,             // NEW
-  FaRegStar           // NEW
+  FaSearch,
+  FaCommentDots,
+  FaPaperPlane,
+  FaStar,
+  FaRegStar
 } from "react-icons/fa";
-import { NavLink, Link, useLocation, useNavigate } from "react-router-dom"; // NEW
+import { NavLink, Link, useLocation, useNavigate } from "react-router-dom";
 import "../styles/Header.css";
 import axios from "axios";
 import API_URL from "../config";
@@ -43,7 +41,7 @@ export default function Header() {
   const isAuthed = useIsAuthenticated();
   const { instance, accounts } = useMsal();
   const location = useLocation();
-  const navigate = useNavigate(); // NEW
+  const navigate = useNavigate();
 
   const userEmail =
     accounts?.[0]?.username ||
@@ -61,13 +59,18 @@ export default function Header() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [subnavOpen, setSubnavOpen] = useState(null);
 
-  // NEW: header search + feedback state
+  // Header search + feedback state
   const [searchText, setSearchText] = useState(() => {
     try {
       const params = new URLSearchParams(location.search);
       return params.get("search") || "";
-    } catch { return ""; }
+    } catch {
+      return "";
+    }
   });
+  const [showSearchMenu, setShowSearchMenu] = useState(false);
+  const [activeIdx, setActiveIdx] = useState(0);
+
   const [feedbackText, setFeedbackText] = useState("");
   const [feedbackRating, setFeedbackRating] = useState(0);
   const [feedbackSending, setFeedbackSending] = useState(false);
@@ -75,7 +78,7 @@ export default function Header() {
   const [feedbackError, setFeedbackError] = useState("");
 
   const headerRef = useRef(null);
-  const searchDebounceRef = useRef(null); // debounce timer
+  const searchDebounceRef = useRef(null);
 
   useEffect(() => {
     if (userEmail) {
@@ -107,7 +110,7 @@ export default function Header() {
 
   useEffect(() => {
     setOpenDropdown(null);
-    setSubnavOpen(null); // close bottom menus on route change
+    setSubnavOpen(null);
   }, [location.pathname]);
 
   useEffect(() => {
@@ -116,18 +119,29 @@ export default function Header() {
       setSidebarOpen(isOpen);
     };
     window.addEventListener("geolabs:sidebarChanged", onSidebarChanged);
-    return () => window.removeEventListener("geolabs:sidebarChanged", onSidebarChanged);
+    return () =>
+      window.removeEventListener("geolabs:sidebarChanged", onSidebarChanged);
   }, []);
 
   useEffect(() => {
     function handleClickOutside(event) {
       if (headerRef.current && !headerRef.current.contains(event.target)) {
         setOpenDropdown(null);
-        setSubnavOpen(null); // NEW: close bottom-row menus when clicking outside
+        setSubnavOpen(null);
+        setShowSearchMenu(false);
       }
     }
     function handleKeyDown(event) {
-      if (event.key === "Escape") setOpenDropdown(null);
+      if (event.key === "Escape") {
+        setOpenDropdown(null);
+        setShowSearchMenu(false);
+      }
+      // Global Cmd/Ctrl+K to focus search
+      if ((event.metaKey || event.ctrlKey) && event.key.toLowerCase() === "k") {
+        event.preventDefault();
+        document.querySelector(".header-searchbar-input")?.focus();
+        setShowSearchMenu(true);
+      }
     }
     document.addEventListener("mousedown", handleClickOutside);
     document.addEventListener("keydown", handleKeyDown);
@@ -139,7 +153,10 @@ export default function Header() {
 
   const handleSignIn = async () => {
     try {
-      await instance.loginPopup({ scopes: ["User.Read"], prompt: "select_account" });
+      await instance.loginPopup({
+        scopes: ["User.Read"],
+        prompt: "select_account",
+      });
     } catch (error) {
       console.error("Login failed:", error);
     }
@@ -185,7 +202,9 @@ export default function Header() {
   }, [apiHealthy]);
 
   const toggleSidebar = () => {
-    window.dispatchEvent(new CustomEvent("geolabs:toggleSidebar", { detail: "toggle" }));
+    window.dispatchEvent(
+      new CustomEvent("geolabs:toggleSidebar", { detail: "toggle" })
+    );
     setSidebarOpen((prev) => !prev);
   };
 
@@ -195,7 +214,7 @@ export default function Header() {
     const primary = src.filter((c) => c?.header?.asTab);
     const list = primary.length ? primary : src; // fallback: all cards
     return list
-      .filter((c) => c && ((c.subpages && c.subpages.length) || c.path)) // must have menu or direct path
+      .filter((c) => c && ((c.subpages && c.subpages.length) || c.path))
       .sort((a, b) => (a.header?.order ?? 0) - (b.header?.order ?? 0));
   }, []);
 
@@ -203,7 +222,9 @@ export default function Header() {
     const path = location.pathname || "/";
     const hit =
       tabs.find((card) =>
-        (card.subpages || []).some((sp) => path === sp.path || path.startsWith(sp.path + "/"))
+        (card.subpages || []).some(
+          (sp) => path === sp.path || path.startsWith(sp.path + "/")
+        )
       ) || null;
     if (hit) return hit;
     if (path === "/" && tabs.length) return null; // dashboard selected
@@ -225,27 +246,98 @@ export default function Header() {
     };
   }, []);
 
-  // NEW: update URL while typing (debounced)
+  // ---------- Command-palette data ----------
+  const quickItems = useMemo(() => {
+    const cards = Array.isArray(homepageCards) ? homepageCards : [];
+    const items = [];
+    for (const c of cards) {
+      if (!c) continue;
+      if (c.path)
+        items.push({
+          label: c.tabLabel || c.label,
+          path: c.path,
+          icon: c.icon,
+        });
+      (c.subpages || []).forEach((sp) =>
+        items.push({ label: sp.name, path: sp.path, icon: sp.icon })
+      );
+    }
+    // Useful quick actions
+    items.push(
+      { label: "Upload Documents", path: "/db-admin" },
+      { label: "Upload to S3", path: "/s3-admin" },
+      { label: "Add Core Box", path: "/core-box-inventory" }
+    );
+    // De-dupe by path
+    const seen = new Set();
+    return items.filter(
+      (i) => i?.label && i?.path && !seen.has(i.path) && seen.add(i.path)
+    );
+  }, []);
+
+  const filtered = useMemo(() => {
+    const q = (searchText || "").trim().toLowerCase();
+    if (!q) return quickItems.slice(0, 8);
+    return quickItems
+      .filter(
+        (i) =>
+          i.label?.toLowerCase().includes(q) ||
+          i.path?.toLowerCase().includes(q)
+      )
+      .slice(0, 8);
+  }, [searchText, quickItems]);
+
+  const highlight = (label) => {
+    const q = (searchText || "").trim();
+    if (!q) return label;
+    const i = label.toLowerCase().indexOf(q.toLowerCase());
+    if (i === -1) return label;
+    return (
+      <>
+        {label.slice(0, i)}
+        <mark className="search-hl">{label.slice(i, i + q.length)}</mark>
+        {label.slice(i + q.length)}
+      </>
+    );
+  };
+
+  // ---------- Search handlers ----------
   const onHeaderSearchChange = (e) => {
     const q = e.target.value;
     setSearchText(q);
+    setShowSearchMenu(true);
     if (searchDebounceRef.current) clearTimeout(searchDebounceRef.current);
     searchDebounceRef.current = setTimeout(() => {
       navigate(q ? `/?search=${encodeURIComponent(q)}` : "/");
     }, 250);
   };
 
-  // NEW: also allow Enter for immediate go
   const onHeaderSearchKeyDown = (e) => {
-    if (e.key === "Enter") {
+    if (e.key === "ArrowDown") {
+      e.preventDefault();
+      setActiveIdx((i) => (i + 1) % Math.max(filtered.length, 1));
+    } else if (e.key === "ArrowUp") {
+      e.preventDefault();
+      setActiveIdx(
+        (i) => (i - 1 + Math.max(filtered.length, 1)) % Math.max(filtered.length, 1)
+      );
+    } else if (e.key === "Enter") {
+      const item = filtered[activeIdx];
+      if (item) {
+        navigate(item.path);
+        setShowSearchMenu(false);
+        return;
+      }
       const q = (searchText || "").trim();
       if (searchDebounceRef.current) clearTimeout(searchDebounceRef.current);
       navigate(q ? `/?search=${encodeURIComponent(q)}` : "/");
-      setOpenDropdown(null);
+      setShowSearchMenu(false);
+    } else if (e.key === "Escape") {
+      setShowSearchMenu(false);
     }
   };
 
-  // NEW: send feedback
+  // ---------- Feedback ----------
   const sendFeedback = async () => {
     if (!feedbackText.trim() && feedbackRating === 0) return;
     setFeedbackSending(true);
@@ -256,7 +348,7 @@ export default function Header() {
         rating: feedbackRating,
         email: userEmail || null,
         path: location.pathname,
-        ts: new Date().toISOString()
+        ts: new Date().toISOString(),
       });
       setFeedbackSent(true);
       setFeedbackText("");
@@ -268,13 +360,19 @@ export default function Header() {
     } catch (err) {
       // fallback: open mailto
       const subject = `Geolabs feedback (${feedbackRating}/5)`;
-      const body = `From: ${displayName || userEmail || "Anonymous"}\nPath: ${location.pathname}\nRating: ${feedbackRating}/5\n\n${feedbackText}`;
+      const body = `From: ${displayName || userEmail || "Anonymous"}\nPath: ${
+        location.pathname
+      }\nRating: ${feedbackRating}/5\n\n${feedbackText}`;
       try {
-        window.location.href = `mailto:tyamashita@geolabs-software.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        window.location.href = `mailto:tyamashita@geolabs-software.com?subject=${encodeURIComponent(
+          subject
+        )}&body=${encodeURIComponent(body)}`;
         setOpenDropdown(null);
       } catch {
-          setFeedbackError("Could not send. Please email tyamashita@geolabs-software.com.");
-        }
+        setFeedbackError(
+          "Could not send. Please email tyamashita@geolabs-software.com."
+        );
+      }
     } finally {
       setFeedbackSending(false);
     }
@@ -291,7 +389,7 @@ export default function Header() {
           </Link>
         </div>
 
-        {/* NEW: CENTER — header search */}
+        {/* CENTER — header search */}
         <div className="header-center">
           <div className="header-searchbar">
             <FaSearch className="header-searchbar-icon" />
@@ -303,7 +401,7 @@ export default function Header() {
               onChange={onHeaderSearchChange}
               onKeyDown={onHeaderSearchKeyDown}
               onFocus={() => {
-                // ensure results show live even when not on home
+                setShowSearchMenu(true);
                 const q = (searchText || "").trim();
                 if (location.pathname !== "/") {
                   navigate(q ? `/?search=${encodeURIComponent(q)}` : "/");
@@ -311,13 +409,51 @@ export default function Header() {
               }}
               aria-label="Search"
             />
+
+            {showSearchMenu && (
+              <div
+                className="header-search-popover"
+                role="listbox"
+                aria-label="Search suggestions"
+              >
+                {filtered.length === 0 ? (
+                  <div className="search-empty">No matches. Press Enter to search.</div>
+                ) : (
+                  filtered.map((it, idx) => {
+                    const Icon = it.icon ? (
+                      React.cloneElement(it.icon, { size: 12 })
+                    ) : (
+                      <FaSearch size={12} />
+                    );
+                    return (
+                      <Link
+                        to={it.path}
+                        key={it.path}
+                        className={`search-item ${idx === activeIdx ? "active" : ""}`}
+                        role="option"
+                        onClick={() => setShowSearchMenu(false)}
+                      >
+                        <span className="search-item-icon">{Icon}</span>
+                        <span className="search-item-label">{highlight(it.label)}</span>
+                        <span className="search-item-path">{it.path}</span>
+                      </Link>
+                    );
+                  })
+                )}
+                <div className="search-hint">
+                  <kbd>↵</kbd> open • <kbd>Esc</kbd> close • <kbd>⌘/Ctrl</kbd>+<kbd>K</kbd> search
+                </div>
+              </div>
+            )}
           </div>
         </div>
 
         {/* RIGHT: env + api status + actions/profile */}
         <div className="header-right">
           <div className="header-status">
-            <div className="header-status-pill header-env"><span>{ENV}</span></div>
+            <div className="header-status-pill header-env">
+              <span>{ENV}</span>
+            </div>
             {apiStatusPill}
           </div>
 
@@ -336,13 +472,16 @@ export default function Header() {
               {openDropdown === "new" && (
                 <div className="header-dropdown-menu">
                   <Link to="/db-admin" className="header-dropdown-item">
-                    <FaPlus /><span>Upload Documents</span>
+                    <FaPlus />
+                    <span>Upload Documents</span>
                   </Link>
                   <Link to="/s3-admin" className="header-dropdown-item">
-                    <FaPlus /><span>Upload to S3</span>
+                    <FaPlus />
+                    <span>Upload to S3</span>
                   </Link>
                   <Link to="/core-box-inventory" className="header-dropdown-item">
-                    <FaPlus /><span>Add Core Box</span>
+                    <FaPlus />
+                    <span>Add Core Box</span>
                   </Link>
                 </div>
               )}
@@ -352,7 +491,11 @@ export default function Header() {
             <div className="header-profile-menu">
               <button
                 className="header-action-btn"
-                onClick={() => setOpenDropdown(openDropdown === "notifications" ? null : "notifications")}
+                onClick={() =>
+                  setOpenDropdown(
+                    openDropdown === "notifications" ? null : "notifications"
+                  )
+                }
                 aria-expanded={openDropdown === "notifications"}
                 aria-haspopup="menu"
                 title="Notifications"
@@ -367,17 +510,20 @@ export default function Header() {
                     <div className="header-dropdown-user-email">No new alerts</div>
                   </div>
                   <div className="header-dropdown-item">
-                    <FaCheckCircle /><span>All caught up</span>
+                    <FaCheckCircle />
+                    <span>All caught up</span>
                   </div>
                 </div>
               )}
             </div>
 
-            {/* NEW: Feedback */}
+            {/* Feedback */}
             <div className="header-profile-menu">
               <button
                 className="header-action-btn"
-                onClick={() => setOpenDropdown(openDropdown === "feedback" ? null : "feedback")}
+                onClick={() =>
+                  setOpenDropdown(openDropdown === "feedback" ? null : "feedback")
+                }
                 aria-expanded={openDropdown === "feedback"}
                 aria-haspopup="dialog"
                 title="Send feedback"
@@ -385,19 +531,28 @@ export default function Header() {
                 <FaCommentDots />
               </button>
               {openDropdown === "feedback" && (
-                <div className="header-dropdown-menu header-feedback-menu" role="dialog" aria-label="Feedback form">
+                <div
+                  className="header-dropdown-menu header-feedback-menu"
+                  role="dialog"
+                  aria-label="Feedback form"
+                >
                   <div className="header-dropdown-header header-feedback-header">
                     <div className="header-dropdown-user-name">Send feedback</div>
-                    <div className="header-dropdown-user-email">{displayName || userEmail || "Anonymous"}</div>
+                    <div className="header-dropdown-user-email">
+                      {displayName || userEmail || "Anonymous"}
+                    </div>
                   </div>
-                  <div className="header-feedback-stars" aria-label={`Rating: ${feedbackRating} out of 5`}>
-                    {[1,2,3,4,5].map((n) => (
+                  <div
+                    className="header-feedback-stars"
+                    aria-label={`Rating: ${feedbackRating} out of 5`}
+                  >
+                    {[1, 2, 3, 4, 5].map((n) => (
                       <button
                         key={n}
                         type="button"
                         className={`header-star ${feedbackRating >= n ? "on" : ""}`}
                         onClick={() => setFeedbackRating(n)}
-                        aria-label={`${n} star${n>1?"s":""}`}
+                        aria-label={`${n} star${n > 1 ? "s" : ""}`}
                       >
                         {feedbackRating >= n ? <FaStar /> : <FaRegStar />}
                       </button>
@@ -410,13 +565,21 @@ export default function Header() {
                     value={feedbackText}
                     onChange={(e) => setFeedbackText(e.target.value)}
                   />
-                  {feedbackError && <div className="header-feedback-error">{feedbackError}</div>}
-                  {feedbackSent && <div className="header-feedback-success">Thanks for the feedback!</div>}
+                  {feedbackError && (
+                    <div className="header-feedback-error">{feedbackError}</div>
+                  )}
+                  {feedbackSent && (
+                    <div className="header-feedback-success">
+                      Thanks for the feedback!
+                    </div>
+                  )}
                   <div className="header-feedback-actions">
                     <button
                       className="header-feedback-btn"
                       onClick={sendFeedback}
-                      disabled={feedbackSending || (!feedbackText.trim() && feedbackRating === 0)}
+                      disabled={
+                        feedbackSending || (!feedbackText.trim() && feedbackRating === 0)
+                      }
                     >
                       <FaPaperPlane />
                       {feedbackSending ? "Sending…" : "Send"}
@@ -430,7 +593,9 @@ export default function Header() {
             <div className="header-profile-menu">
               <button
                 className="header-profile-trigger"
-                onClick={() => setOpenDropdown(openDropdown === "profile" ? null : "profile")}
+                onClick={() =>
+                  setOpenDropdown(openDropdown === "profile" ? null : "profile")
+                }
                 aria-expanded={openDropdown === "profile"}
                 aria-haspopup="menu"
                 title="Profile"
@@ -444,17 +609,23 @@ export default function Header() {
                   {isAuthed ? (
                     <>
                       <div className="header-dropdown-header">
-                        <div className="header-dropdown-user-name">{displayName || userEmail}</div>
+                        <div className="header-dropdown-user-name">
+                          {displayName || userEmail}
+                        </div>
                         <div className="header-dropdown-user-email">{userEmail}</div>
                       </div>
 
                       <button className="header-dropdown-item" onClick={copyEmail}>
-                        <FaCopy /><span>Copy Email</span>
-                        {copied && <span className="header-copy-feedback">Copied!</span>}
+                        <FaCopy />
+                        <span>Copy Email</span>
+                        {copied && (
+                          <span className="header-copy-feedback">Copied!</span>
+                        )}
                       </button>
 
                       <Link to="/admin" className="header-dropdown-item">
-                        <FaCog /><span>Admin Settings</span>
+                        <FaCog />
+                        <span>Admin Settings</span>
                       </Link>
 
                       <a
@@ -463,18 +634,24 @@ export default function Header() {
                         rel="noopener noreferrer"
                         className="header-dropdown-item"
                       >
-                        <FaExternalLinkAlt /><span>Microsoft Account</span>
+                        <FaExternalLinkAlt />
+                        <span>Microsoft Account</span>
                       </a>
 
                       <div className="header-dropdown-divider" />
 
-                      <button className="header-dropdown-item header-danger" onClick={handleSignOut}>
-                        <FaSignOutAlt /><span>Sign Out</span>
+                      <button
+                        className="header-dropdown-item header-danger"
+                        onClick={handleSignOut}
+                      >
+                        <FaSignOutAlt />
+                        <span>Sign Out</span>
                       </button>
                     </>
                   ) : (
                     <button className="header-dropdown-item" onClick={handleSignIn}>
-                      <FaSignInAlt /><span>Sign In with Microsoft</span>
+                      <FaSignInAlt />
+                      <span>Sign In with Microsoft</span>
                     </button>
                   )}
                 </div>
@@ -506,7 +683,9 @@ export default function Header() {
           {tabs.map((card) => {
             const hasMenu = (card.subpages || []).length > 0;
             const label = card.tabLabel || card.label;
-            const tabIcon = card?.icon ? React.cloneElement(card.icon, { size: 12 }) : null;
+            const tabIcon = card?.icon
+              ? React.cloneElement(card.icon, { size: 12 })
+              : null;
 
             if (!hasMenu && card.path) {
               // simple link if no subpages
@@ -527,14 +706,18 @@ export default function Header() {
             }
 
             const isCardActive = (card.subpages || []).some(
-              (sp) => location.pathname === sp.path || location.pathname.startsWith(sp.path + "/")
+              (sp) =>
+                location.pathname === sp.path ||
+                location.pathname.startsWith(sp.path + "/")
             );
             const isOpen = subnavOpen === card.label;
 
             return (
               <div key={card.label} className="header-subnav-item">
                 <button
-                  className={`header-subnav-link header-subnav-trigger ${isCardActive ? "header-active" : ""}`}
+                  className={`header-subnav-link header-subnav-trigger ${
+                    isCardActive ? "header-active" : ""
+                  }`}
                   onClick={() => setSubnavOpen(isOpen ? null : card.label)}
                   aria-haspopup="menu"
                   aria-expanded={isOpen}
@@ -542,13 +725,18 @@ export default function Header() {
                 >
                   {tabIcon}
                   <span>{label}</span>
-                  <FaChevronDown className={`header-subnav-caret-icon ${isOpen ? "open" : ""}`} size={10} />
+                  <FaChevronDown
+                    className={`header-subnav-caret-icon ${isOpen ? "open" : ""}`}
+                    size={10}
+                  />
                 </button>
 
                 {isOpen && (
                   <div className="header-subnav-menu" role="menu">
                     {(card.subpages || []).map((sp) => {
-                      const spIcon = sp?.icon ? React.cloneElement(sp.icon, { size: 12 }) : null;
+                      const spIcon = sp?.icon
+                        ? React.cloneElement(sp.icon, { size: 12 })
+                        : null;
                       return (
                         <NavLink
                           key={sp.path}

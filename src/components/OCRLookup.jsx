@@ -3,9 +3,14 @@ import axios from 'axios';
 import API_URL from '../config';
 import '../styles/OCRLookup.css';
 import {
-  FiRotateCcw, FiUpload, FiCopy, FiDownload, FiSearch, FiArrowUp, FiArrowDown
+  FiRotateCcw, FiUpload, FiCopy, FiDownload, FiSearch, FiArrowUp, FiArrowDown,
+  FiZoomIn, FiZoomOut, FiRotateCw, FiSettings, FiX, FiEye, FiEyeOff, FiFilePlus, FiLayers
 } from 'react-icons/fi';
 import { FaPaperclip, FaImage, FaWrench } from 'react-icons/fa';
+
+/* -------------------------------------------------------
+   OCR Lookup – Enhanced for Eng Workflows
+   ------------------------------------------------------- */
 
 export default function OCRLookUp() {
   const [image, setImage] = useState(null);
@@ -17,25 +22,38 @@ export default function OCRLookUp() {
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
 
+  // Sorting / filters
   const [sortBy, setSortBy] = useState('original');
-  const [sortDir, setSortDir] = useState('asc'); // asc | desc
+  const [sortDir, setSortDir] = useState('asc');
   const [filter, setFilter] = useState('');
   const [showNotFound, setShowNotFound] = useState(false);
-  const [normalizeLetters, setNormalizeLetters] = useState(true);
 
+  // Normalization controls
+  const [normalizeLetters, setNormalizeLetters] = useState(true);
+  const [smartFixes, setSmartFixes] = useState(true);
+  const [forceUpper, setForceUpper] = useState(true);
+  const [stripSpaces, setStripSpaces] = useState(true);
+
+  // Image tools
+  const [zoom, setZoom] = useState(1);
+  const [rotate, setRotate] = useState(0);
+  const [showImagePanel, setShowImagePanel] = useState(true);
+
+  // UI
   const fileInputRef = useRef(null);
   const dropRef = useRef(null);
+  const [showBulkModal, setShowBulkModal] = useState(false);
+  const [bulkText, setBulkText] = useState('');
+  const [columns, setColumns] = useState({
+    project_wo: true, pr: true, client: true, project: true, date: true
+  });
+  const [groupBy, setGroupBy] = useState('none'); // none | client | pr
+  const [toast, setToast] = useState('');
 
   // ---------- Helpers ----------
-  const normalizeWO = (wo) => {
-    if (!normalizeLetters) return wo;
-    // e.g. 8292-05B -> 8292-05(B), or 8292B -> 8292(B)
-    if (/[A-Za-z]$/.test(wo)) {
-      const base = wo.slice(0, -1);
-      const letter = wo.slice(-1).toUpperCase();
-      return `${base}(${letter})`;
-    }
-    return wo;
+  const showToast = (msg) => {
+    setToast(msg);
+    setTimeout(() => setToast(''), 1600);
   };
 
   const dedupe = (arr) => Array.from(new Set(arr.filter(Boolean)));
@@ -45,6 +63,45 @@ export default function OCRLookUp() {
       .split('\n')
       .map(line => line.replace(/^[-•–*]\s*/, '').trim())
       .filter(Boolean);
+
+  const simpleValidate = (wo) => {
+    // Non-blocking hints: alnum + dashes + parens, ~3–30 chars
+    if (!wo) return 'empty';
+    const ok = /^[A-Za-z0-9()\-_/]{3,30}$/.test(wo);
+    return ok ? '' : 'suspicious';
+  };
+
+  const normalizeLetterSuffix = (wo) => {
+    // e.g. 8292-05B -> 8292-05(B) or 8292B -> 8292(B)
+    if (/[A-Za-z]$/.test(wo)) {
+      const base = wo.slice(0, -1);
+      const letter = wo.slice(-1).toUpperCase();
+      return `${base}(${letter})`;
+    }
+    return wo;
+  };
+
+  const smartOCRFixes = (wo) => {
+    // Heuristics: O↔0 and I↔1 swaps in numeric contexts, trim doubles, normalize dashes
+    let s = wo;
+    if (stripSpaces) s = s.replace(/\s+/g, '');
+    s = s.replace(/[–—]/g, '-'); // em/en to dash
+    if (smartFixes) {
+      // Only swap where it makes sense: letters inside mostly digits or adjacent to digits
+      s = s
+        .replace(/(?<=\d)O(?=\d)|(?<=\d)O(?![A-Za-z])/g, '0')
+        .replace(/(?<=\d)I(?=\d)|(?<=\d)I(?![A-Za-z])/g, '1')
+        .replace(/(?<=\d)l(?=\d)|(?<=\d)l(?![A-Za-z])/g, '1')
+        .replace(/(?<=\d)B(?=\d)/g, '8');
+      // collapse duplicate separators
+      s = s.replace(/[-_/]{2,}/g, '-');
+    }
+    if (forceUpper) s = s.toUpperCase();
+    if (normalizeLetters) s = normalizeLetterSuffix(s);
+    return s;
+  };
+
+  const normalizeWO = (wo) => smartOCRFixes(wo);
 
   const applyEditToIndex = (idx, value) => {
     setEditedWOs(prev => {
@@ -64,11 +121,12 @@ export default function OCRLookUp() {
     setProjectMatches([]);
     setStep(1);
     setError('');
+    setZoom(1);
+    setRotate(0);
   };
 
   const onInputChange = (e) => handleFileChange(e.target.files[0]);
 
-  // drag & drop
   useEffect(() => {
     const el = dropRef.current;
     if (!el) return;
@@ -90,7 +148,6 @@ export default function OCRLookUp() {
     };
   }, []);
 
-  // paste image from clipboard
   useEffect(() => {
     const onPaste = (e) => {
       const item = [...e.clipboardData.items].find(i => i.type.startsWith('image/'));
@@ -133,6 +190,7 @@ export default function OCRLookUp() {
       const normalized = workOrders.map(normalizeWO);
       setEditedWOs(normalized);
       setStep(2);
+      showToast('Extraction complete');
     } catch (err) {
       console.error('❌ Upload failed:', err);
       setError('Upload or extraction failed. Please try again.');
@@ -164,9 +222,12 @@ export default function OCRLookUp() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [editedWOs, step]);
 
-  const rerunLookup = () => fetchProjects(editedWOs);
+  const rerunLookup = () => {
+    fetchProjects(editedWOs);
+    showToast('Re-running lookup…');
+  };
 
-  // ---------- Sorting / Filtering ----------
+  // ---------- Sorting / Filtering / Grouping ----------
   const sortedFilteredMatches = useMemo(() => {
     let rows = [...projectMatches];
 
@@ -179,9 +240,7 @@ export default function OCRLookUp() {
       );
     }
 
-    if (showNotFound) {
-      rows = rows.filter(r => (r.project_wo || '').toLowerCase() === 'not found');
-    }
+    if (showNotFound) rows = rows.filter(r => (r.project_wo || '').toLowerCase() === 'not found');
 
     const val = (r, key) => {
       if (key === 'original') return 0;
@@ -198,8 +257,26 @@ export default function OCRLookUp() {
       });
     }
 
+    // Grouping (visual only)
+    if (groupBy !== 'none') {
+      const key = groupBy === 'client' ? 'client' : 'pr';
+      const groups = new Map();
+      for (const r of rows) {
+        const k = r[key] || '(none)';
+        if (!groups.has(k)) groups.set(k, []);
+        groups.get(k).push(r);
+      }
+      // Flatten with group headers
+      const flattened = [];
+      for (const [k, arr] of groups.entries()) {
+        flattened.push({ __group: true, label: `${groupBy.toUpperCase()}: ${k}`, count: arr.length });
+        flattened.push(...arr);
+      }
+      return flattened;
+    }
+
     return rows;
-  }, [projectMatches, filter, showNotFound, sortBy, sortDir]);
+  }, [projectMatches, filter, showNotFound, sortBy, sortDir, groupBy]);
 
   const foundCount = useMemo(
     () => projectMatches.filter(m => (m.project_wo || '').toLowerCase() !== 'not found').length,
@@ -210,19 +287,27 @@ export default function OCRLookUp() {
   const copyExtracted = async () => {
     const text = extractedWOs.join('\n');
     await navigator.clipboard.writeText(text);
-    alert('Copied extracted work orders to clipboard.');
+    showToast('Extracted WOs copied');
   };
 
   const copyMatches = async () => {
-    const lines = sortedFilteredMatches
+    const rows = sortedFilteredMatches.filter(r => !r.__group);
+    const lines = rows
       .map(m => `${m.project_wo || 'Not Found'}\t${m.client || ''}\t${m.project || ''}\t${m.pr || ''}\t${m.date || ''}`);
     await navigator.clipboard.writeText(lines.join('\n'));
-    alert('Copied matches to clipboard (tab-separated).');
+    showToast('Matches copied (TSV)');
+  };
+
+  const copyJSON = async () => {
+    const rows = sortedFilteredMatches.filter(r => !r.__group);
+    await navigator.clipboard.writeText(JSON.stringify(rows, null, 2));
+    showToast('Matches copied (JSON)');
   };
 
   const downloadCSV = () => {
+    const rows = sortedFilteredMatches.filter(r => !r.__group);
     const header = ['input_wo', 'project_wo', 'client', 'project', 'pr', 'date'];
-    const rows = sortedFilteredMatches.map(m => ([
+    const data = rows.map(m => ([
       m.work_order || '',
       m.project_wo || '',
       m.client || '',
@@ -230,7 +315,7 @@ export default function OCRLookUp() {
       m.pr || '',
       m.date || ''
     ]));
-    const csv = [header, ...rows]
+    const csv = [header, ...data]
       .map(r => r.map(x => `"${String(x).replace(/"/g, '""')}"`).join(','))
       .join('\n');
     const blob = new Blob([csv], { type: 'text/csv' });
@@ -244,6 +329,52 @@ export default function OCRLookUp() {
 
   const addManualWO = () => setEditedWOs(prev => [...prev, '']);
   const removeWO = (idx) => setEditedWOs(prev => prev.filter((_, i) => i !== idx));
+  const clearAllWOs = () => setEditedWOs([]);
+  const resetToExtracted = () => setEditedWOs(extractedWOs.map(normalizeWO));
+
+  const applyBulk = () => {
+    const lines = parseBullets(bulkText);
+    if (!lines.length) {
+      setShowBulkModal(false);
+      return;
+    }
+    const merged = dedupe([...editedWOs, ...lines.map(normalizeWO)]);
+    setEditedWOs(merged);
+    setShowBulkModal(false);
+    setBulkText('');
+    showToast('Bulk WOs added');
+  };
+
+  // ---------- Keyboard shortcuts ----------
+  useEffect(() => {
+    const onKey = (e) => {
+      // Ignore if typing in inputs/modals
+      const tag = (e.target?.tagName || '').toLowerCase();
+      const isTyping = tag === 'input' || tag === 'textarea' || e.target?.isContentEditable;
+      if (isTyping) return;
+
+      if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'u') {
+        e.preventDefault(); handleUpload();
+      }
+      if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'r') {
+        e.preventDefault(); rerunLookup();
+      }
+      if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'j') {
+        e.preventDefault(); copyJSON();
+      }
+      if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'c') {
+        e.preventDefault(); copyMatches();
+      }
+      if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 's') {
+        e.preventDefault(); downloadCSV();
+      }
+      if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'b') {
+        e.preventDefault(); setShowBulkModal(true);
+      }
+    };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, [handleUpload, rerunLookup, copyMatches, copyJSON]);
 
   const resetAll = () => {
     setStep(1);
@@ -255,6 +386,8 @@ export default function OCRLookUp() {
     setProjectMatches([]);
     setError('');
     setFilter('');
+    setZoom(1);
+    setRotate(0);
   };
 
   return (
@@ -294,10 +427,11 @@ export default function OCRLookUp() {
               className={`ocr-btn ${!image ? 'ocr-disabled' : 'ocr-primary'}`}
               onClick={handleUpload}
               disabled={!image}
+              title="Upload & Extract (Ctrl/Cmd+U)"
             >
               <FiUpload className="ocr-mr4" /> Upload & Extract
             </button>
-            <button className="ocr-btn" onClick={resetAll}>
+            <button className="ocr-btn" onClick={resetAll} title="Reset">
               <FiRotateCcw className="ocr-mr4" /> Reset
             </button>
           </div>
@@ -314,12 +448,18 @@ export default function OCRLookUp() {
       {/* STEP 2: results & editing */}
       {step >= 2 && (
         <>
-          <div className="ocr-toolbar">
+          <div className="ocr-toolbar ocr-sticky">
             <div className="ocr-left-tools">
-              <button className="ocr-btn" onClick={resetAll}><FiRotateCcw className="ocr-mr4" />New Image</button>
-              <button className="ocr-btn" onClick={rerunLookup}><FaWrench className="ocr-mr4" />Re-run Lookup</button>
-              <label className="ocr-lbl">
+              <button className="ocr-btn" onClick={resetAll} title="New Image">
+                <FiRotateCcw className="ocr-mr4" />New Image
+              </button>
+              <button className="ocr-btn" onClick={rerunLookup} title="Re-run Lookup (Ctrl/Cmd+R)">
+                <FaWrench className="ocr-mr4" />Re-run Lookup
+              </button>
+
+              <div className="ocr-toggle-chip">
                 <input
+                  id="norm-letter"
                   type="checkbox"
                   checked={normalizeLetters}
                   onChange={() => {
@@ -327,8 +467,47 @@ export default function OCRLookUp() {
                     setEditedWOs(prev => prev.map(p => normalizeWO(p)));
                   }}
                 />
-                Normalize letters → (A)
-              </label>
+                <label htmlFor="norm-letter">Suffix → (A)</label>
+              </div>
+
+              <div className="ocr-toggle-chip">
+                <input
+                  id="smart-fixes"
+                  type="checkbox"
+                  checked={smartFixes}
+                  onChange={() => {
+                    setSmartFixes(v => !v);
+                    setEditedWOs(prev => prev.map(p => normalizeWO(p)));
+                  }}
+                />
+                <label htmlFor="smart-fixes">Smart OCR Fixes</label>
+              </div>
+
+              <div className="ocr-toggle-chip">
+                <input
+                  id="force-upper"
+                  type="checkbox"
+                  checked={forceUpper}
+                  onChange={() => {
+                    setForceUpper(v => !v);
+                    setEditedWOs(prev => prev.map(p => normalizeWO(p)));
+                  }}
+                />
+                <label htmlFor="force-upper">UPPERCASE</label>
+              </div>
+
+              <div className="ocr-toggle-chip">
+                <input
+                  id="strip-space"
+                  type="checkbox"
+                  checked={stripSpaces}
+                  onChange={() => {
+                    setStripSpaces(v => !v);
+                    setEditedWOs(prev => prev.map(p => normalizeWO(p)));
+                  }}
+                />
+                <label htmlFor="strip-space">Strip spaces</label>
+              </div>
             </div>
 
             <div className="ocr-mid-tools">
@@ -347,9 +526,33 @@ export default function OCRLookUp() {
                 <input type="checkbox" checked={showNotFound} onChange={() => setShowNotFound(v => !v)} />
                 Show not found only
               </label>
+              <div className="ocr-group">
+                <FiLayers />
+                <select value={groupBy} onChange={e => setGroupBy(e.target.value)} title="Group rows">
+                  <option value="none">No Group</option>
+                  <option value="client">Group by Client</option>
+                  <option value="pr">Group by PR</option>
+                </select>
+              </div>
             </div>
 
             <div className="ocr-right-tools">
+              <div className="ocr-colvis">
+                <FiSettings />
+                <div className="ocr-colvis-menu">
+                  {Object.keys(columns).map(k => (
+                    <label key={k}>
+                      <input
+                        type="checkbox"
+                        checked={columns[k]}
+                        onChange={() => setColumns(prev => ({...prev, [k]: !prev[k]}))}
+                      />
+                      {k}
+                    </label>
+                  ))}
+                </div>
+              </div>
+
               <div className="ocr-sort-group">
                 <select value={sortBy} onChange={e => setSortBy(e.target.value)}>
                   <option value="original">Original</option>
@@ -363,28 +566,79 @@ export default function OCRLookUp() {
                   {sortDir === 'asc' ? <FiArrowUp /> : <FiArrowDown />}
                 </button>
               </div>
-              <button className="ocr-btn" onClick={copyExtracted}><FiCopy className="ocr-mr4" />Copy WOs</button>
-              <button className="ocr-btn" onClick={copyMatches}><FiCopy className="ocr-mr4" />Copy Matches</button>
-              <button className="ocr-btn" onClick={downloadCSV}><FiDownload className="ocr-mr4" />CSV</button>
+
+              <button className="ocr-btn" onClick={() => setShowBulkModal(true)} title="Bulk paste (Ctrl/Cmd+B)">
+                <FiFilePlus className="ocr-mr4" />Bulk Add
+              </button>
+              <button className="ocr-btn" onClick={copyExtracted} title="Copy extracted WOs">
+                <FiCopy className="ocr-mr4" />Copy WOs
+              </button>
+              <button className="ocr-btn" onClick={copyMatches} title="Copy matches (TSV)">
+                <FiCopy className="ocr-mr4" />Copy Matches
+              </button>
+              <button className="ocr-btn" onClick={copyJSON} title="Copy JSON (Ctrl/Cmd+J)">
+                <FiCopy className="ocr-mr4" />JSON
+              </button>
+              <button className="ocr-btn" onClick={downloadCSV} title="Download CSV (Ctrl/Cmd+S)">
+                <FiDownload className="ocr-mr4" />CSV
+              </button>
             </div>
           </div>
 
-          {/* Editable WO list */}
-          <div className="ocr-wo-editor">
-            <div className="ocr-section-title ocr-imp">Extracted / Edited Work Orders</div>
-            <div className="ocr-wo-grid">
-              {editedWOs.map((wo, i) => (
-                <div className="ocr-wo-chip" key={`wo-${i}`}>
-                  <input
-                    value={wo}
-                    onChange={(e) => applyEditToIndex(i, e.target.value)}
-                    className="ocr-wo-input"
-                    placeholder="Enter WO…"
-                  />
-                  <button className="ocr-chip-del" onClick={() => removeWO(i)}>✕</button>
+          {/* Editable WO + image panel */}
+          <div className="ocr-flex">
+            {showImagePanel && imagePreview && (
+              <div className="ocr-image-panel">
+                <div className="ocr-image-tools">
+                  <button className="ocr-iconbtn" onClick={() => setZoom(z => Math.min(3, +(z + 0.1).toFixed(2)))} title="Zoom In"><FiZoomIn /></button>
+                  <button className="ocr-iconbtn" onClick={() => setZoom(z => Math.max(0.4, +(z - 0.1).toFixed(2)))} title="Zoom Out"><FiZoomOut /></button>
+                  <button className="ocr-iconbtn" onClick={() => setRotate(r => (r + 90) % 360)} title="Rotate"><FiRotateCw /></button>
+                  <button className="ocr-iconbtn" onClick={() => { setZoom(1); setRotate(0); }} title="Reset"><FiRotateCcw /></button>
+                  <button className="ocr-iconbtn" onClick={() => setShowImagePanel(false)} title="Hide image"><FiEyeOff /></button>
                 </div>
-              ))}
-              <button className="ocr-btn ocr-add" onClick={addManualWO}>+ Add WO</button>
+                <div className="ocr-image-viewport">
+                  <img
+                    src={imagePreview}
+                    alt="source"
+                    style={{ transform: `scale(${zoom}) rotate(${rotate}deg)` }}
+                  />
+                </div>
+              </div>
+            )}
+
+            {!showImagePanel && imagePreview && (
+              <button className="ocr-btn ocr-image-reveal" onClick={() => setShowImagePanel(true)} title="Show image">
+                <FiEye className="ocr-mr4" />Show Image
+              </button>
+            )}
+
+            <div className="ocr-wo-editor ocr-flex-grow">
+              <div className="ocr-section-title ocr-imp ocr-row-between">
+                <span>Extracted / Edited Work Orders</span>
+                <span className="ocr-row-gap">
+                  <button className="ocr-btn ocr-add" onClick={addManualWO}><span>+ Add WO</span></button>
+                  <button className="ocr-btn" onClick={resetToExtracted} title="Reset to extracted">Reset</button>
+                  <button className="ocr-btn" onClick={clearAllWOs} title="Clear all">Clear</button>
+                </span>
+              </div>
+
+              <div className="ocr-wo-grid">
+                {editedWOs.map((wo, i) => {
+                  const hint = simpleValidate(wo);
+                  return (
+                    <div className={`ocr-wo-chip ${hint === 'suspicious' ? 'ocr-chip-warn' : ''}`} key={`wo-${i}`} title={hint === 'suspicious' ? 'Unusual format – check OCR' : ''}>
+                      <input
+                        value={wo}
+                        onChange={(e) => applyEditToIndex(i, e.target.value)}
+                        className="ocr-wo-input"
+                        placeholder="Enter WO…"
+                      />
+                      <button className="ocr-chip-del" onClick={() => removeWO(i)} aria-label="remove">✕</button>
+                    </div>
+                  );
+                })}
+                <button className="ocr-btn ocr-add" onClick={addManualWO}><span>+ Add WO</span></button>
+              </div>
             </div>
           </div>
 
@@ -393,39 +647,84 @@ export default function OCRLookUp() {
             <div className="ocr-section-title ocr-imp">Matches</div>
             <div className="ocr-match-list">
               {sortedFilteredMatches.map((m, idx) => {
+                if (m.__group) {
+                  return (
+                    <div key={`g-${idx}`} className="ocr-group-header">
+                      <span>{m.label}</span>
+                      <span className="ocr-badge">{m.count}</span>
+                    </div>
+                  );
+                }
                 const notFound = (m.project_wo || '').toLowerCase() === 'not found';
                 return (
                   <div className={`ocr-match-row ${notFound ? 'ocr-nf' : ''}`} key={`m-${idx}`}>
-                    <div className="ocr-col ocr-wo">
-                      <div className="ocr-k">Matched WO</div>
-                      <div className={`ocr-v ${notFound ? 'ocr-warn' : ''}`}>{m.project_wo || '—'}</div>
-                    </div>
-                    <div className="ocr-col ocr-pr">
-                      <div className="ocr-k">PR</div>
-                      <div className="ocr-v">{m.pr || '—'}</div>
-                    </div>
-                    <div className="ocr-col ocr-client">
-                      <div className="ocr-k">Client</div>
-                      <div className="ocr-v">{m.client || '—'}</div>
-                    </div>
-                    <div className="ocr-col ocr-project">
-                      <div className="ocr-k">Project</div>
-                      <div className="ocr-v">{m.project || '—'}</div>
-                    </div>
-                    <div className="ocr-col ocr-date">
-                      <div className="ocr-k">Date</div>
-                      <div className="ocr-v">{m.date || '—'}</div>
-                    </div>
+                    {columns.project_wo && (
+                      <div className="ocr-col ocr-wo">
+                        <div className="ocr-k">Matched WO</div>
+                        <div className={`ocr-v ${notFound ? 'ocr-warn' : ''}`}>{m.project_wo || '—'}</div>
+                      </div>
+                    )}
+                    {columns.pr && (
+                      <div className="ocr-col ocr-pr">
+                        <div className="ocr-k">PR</div>
+                        <div className="ocr-v">{m.pr || '—'}</div>
+                      </div>
+                    )}
+                    {columns.client && (
+                      <div className="ocr-col ocr-client">
+                        <div className="ocr-k">Client</div>
+                        <div className="ocr-v">{m.client || '—'}</div>
+                      </div>
+                    )}
+                    {columns.project && (
+                      <div className="ocr-col ocr-project">
+                        <div className="ocr-k">Project</div>
+                        <div className="ocr-v">{m.project || '—'}</div>
+                      </div>
+                    )}
+                    {columns.date && (
+                      <div className="ocr-col ocr-date">
+                        <div className="ocr-k">Date</div>
+                        <div className="ocr-v">{m.date || '—'}</div>
+                      </div>
+                    )}
                   </div>
                 );
               })}
-              {!sortedFilteredMatches.length && (
+              {!sortedFilteredMatches.filter(r => !r.__group).length && (
                 <div className="ocr-empty">No results. Adjust filters or try Re-run Lookup.</div>
-              )} 
+              )}
             </div>
           </div>
         </>
       )}
+
+      {/* Bulk add modal */}
+      {showBulkModal && (
+        <div className="ocr-modal">
+          <div className="ocr-modal-card">
+            <div className="ocr-modal-head">
+              <div className="ocr-modal-title"><FiFilePlus /> Bulk Add Work Orders</div>
+              <button className="ocr-iconbtn" onClick={() => setShowBulkModal(false)} aria-label="Close"><FiX /></button>
+            </div>
+            <div className="ocr-modal-body">
+              <p className="ocr-subtle">Paste multiple WOs (one per line). We’ll apply your normalization options automatically.</p>
+              <textarea
+                value={bulkText}
+                onChange={e => setBulkText(e.target.value)}
+                placeholder="e.g.\n8292-05B\n1130 A\nWO-7781O"
+              />
+            </div>
+            <div className="ocr-modal-foot">
+              <button className="ocr-btn" onClick={() => setShowBulkModal(false)}>Cancel</button>
+              <button className="ocr-btn ocr-primary" onClick={applyBulk}>Add</button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Toast */}
+      {!!toast && <div className="ocr-toast">{toast}</div>}
     </div>
   );
 }
