@@ -1,583 +1,279 @@
 # reports.py
-import os, io, re, hashlib, sqlite3, tempfile
-from datetime import datetime
-
-from flask import Blueprint, request, jsonify
-from flask_cors import CORS
+import os
+import re
+import json
+import time
+from pathlib import Path
+from typing import Dict, List, Optional, Tuple
 
 import fitz  # PyMuPDF
-from PIL import Image
-import pytesseract
+from flask import (
+    Blueprint,
+    current_app,
+    jsonify,
+    request,
+    send_file,
+    abort,
+    Response,
+)
 
-import nltk
-from nltk.tokenize.punkt import PunktSentenceTokenizer, PunktParameters
+# -------------------------------
+# Configuration
+# -------------------------------
 
-import torch
-from transformers import AutoTokenizer, AutoModel
-import numpy as np
+# Default to local OCR output beside this file:
+DEFAULT_BASE = Path(__file__).resolve().parent / "OCRed_reports"
+REPORTS_BASE_DIR = Path(os.environ.get("REPORTS_BASE_DIR", str(DEFAULT_BASE))).resolve()
 
-import boto3
-from botocore.exceptions import ClientError
+# How many bytes of the .txt to keep as excerpt (kept small for fast client-side search)
+TXT_EXCERPT_BYTES = int(os.environ.get("TXT_EXCERPT_BYTES", "20000"))  # ~20KB
 
-# ---------------------- CONFIG ----------------------
-BASE_DIR = os.path.abspath(os.path.dirname(__file__))
-UPLOAD_DIR = os.path.join(BASE_DIR, "uploads")
-os.makedirs(UPLOAD_DIR, exist_ok=True)
-
-REPORTS_DB = os.path.join(UPLOAD_DIR, "reports.db")
-S3_BUCKET = os.environ.get("S3_PDF_BUCKET", "geolabs-db-pdfs")
-S3 = boto3.client("s3")
-
-FIXED_PREFIX = "reports"  # 🔒 always use this
-
-# pytesseract.pytesseract.tesseract_cmd = r"C:\Path\To\Tesseract-OCR\tesseract.exe"
-
-MODEL_NAME = "BAAI/bge-base-en-v1.5"
-_tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
-_model = AutoModel.from_pretrained(MODEL_NAME)
-_model.eval()
-DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
-_model.to(DEVICE)
-
-try:
-    nltk.data.find("tokenizers/punkt")
-except LookupError:
-    nltk.download("punkt")
-_punkt = PunktSentenceTokenizer(PunktParameters())
+# Cache the index in-memory to avoid rescans on every call
+_INDEX_CACHE: Dict[str, Dict] = {
+    # "data": [...],
+    # "built_at": epoch,
+    # "etag": "...",
+    # "base_mtime": float,
+}
 
 reports_bp = Blueprint("reports", __name__)
-CORS(reports_bp, resources={r"/api/*": {"origins": "*"}})
 
-# ---------------------- SCHEMA ----------------------
-def ensure_schema(db_path: str):
-    with sqlite3.connect(db_path) as conn:
-        c = conn.cursor()
-        c.execute("""
-        CREATE TABLE IF NOT EXISTS reports (
-            file_id     INTEGER PRIMARY KEY AUTOINCREMENT,
-            file_name   TEXT,
-            s3_key      TEXT UNIQUE,
-            work_order  TEXT,
-            project     TEXT,
-            location    TEXT,
-            report_date TEXT,
-            pages       INTEGER,
-            sha256      TEXT UNIQUE,
-            created_at  TEXT,
-            updated_at  TEXT
-        );
-        """)
-        c.execute("CREATE UNIQUE INDEX IF NOT EXISTS idx_reports_s3key ON reports(s3_key);")
-        c.execute("""
-        CREATE TABLE IF NOT EXISTS chunks (
-            file_id    INT,
-            page       INT,
-            chunk_id   INT,
-            start_char INT,
-            end_char   INT,
-            text       TEXT,
-            embedding  BLOB,
-            PRIMARY KEY(file_id, page, chunk_id)
-        );
-        """)
-        c.execute("""
-        CREATE VIRTUAL TABLE IF NOT EXISTS chunks_fts USING fts5(
-            text,
-            file_id UNINDEXED,
-            page UNINDEXED,
-            chunk_id UNINDEXED,
-            content=''
-        );
-        """)
-        c.execute("CREATE INDEX IF NOT EXISTS idx_chunks_file_page ON chunks(file_id, page);")
-        c.execute("CREATE INDEX IF NOT EXISTS idx_reports_sha ON reports(sha256);")
-        conn.commit()
+# Regex helpers (best-effort extraction from file/folder names)
+RE_WO = re.compile(r"\b(?:WO[-_ ]?)?(\d{3,6}(?:[-_]\d+)?(?:\([A-Z]\))?)\b", re.IGNORECASE)
+RE_YEAR = re.compile(r"(^|[\\/])([12]\d{3})([\\/]|$)")
 
 
-# ---------------------- HELPERS ----------------------
-def safe_sent_tokenize(text: str): return _punkt.tokenize(text)
+# -------------------------------
+# Utilities
+# -------------------------------
 
-def sha256_of_file(path: str) -> str:
-    h = hashlib.sha256()
-    with open(path, "rb") as f:
-        for block in iter(lambda: f.read(65536), b""): h.update(block)
-    return h.hexdigest()
-
-def s3_key_exists(key: str) -> bool:
+def _safe_within(base: Path, target: Path) -> bool:
+    """Ensure target is inside base (prevent path traversal)."""
     try:
-        S3.head_object(Bucket=S3_BUCKET, Key=key)
-        return True
-    except ClientError as e:
-        if e.response["Error"]["Code"] in ("404", "NoSuchKey"):
-            return False
-        raise
+        target = target.resolve()
+        base = base.resolve()
+        return str(target).startswith(str(base))
+    except Exception:
+        return False
 
-def extract_pages_with_ocr(pdf_path: str, track=print):
-    doc = fitz.open(pdf_path)
-    pages = []
-    for i, page in enumerate(doc):
-        txt = page.get_text().strip()
-        if txt:
-            track(f"✅ p.{i+1}: native text ({len(txt.split())} words)")
-            pages.append(txt)
-            continue
-        try:
-            pix = page.get_pixmap(dpi=300)
-            img = Image.open(io.BytesIO(pix.tobytes("ppm")))
-            ocr_text = pytesseract.image_to_string(img, config="--psm 6").strip()
-            track(f"🔍 p.{i+1}: OCR extracted {len(ocr_text.split())} words")
-            pages.append(ocr_text)
-        except Exception as e:
-            track(f"❌ p.{i+1}: OCR error: {e}")
-            pages.append("")
-    doc.close()
-    return pages
 
-def chunk_page_text(text: str, max_tokens=420, overlap=140):
-    sents = safe_sent_tokenize(text)
-    chunks, offsets = [], []
-    cursor = 0
-    sent_spans = []
-    for s in sents:
-        start = text.find(s, cursor)
-        if start < 0: start = cursor
-        end = start + len(s)
-        sent_spans.append((s, start, end))
-        cursor = end
+def _guess_year_from_path(rel: str) -> Optional[str]:
+    m = RE_YEAR.search(rel)
+    if m:
+        return m.group(2)
+    return None
 
-    win, win_len, win_spans = [], 0, []
-    for s, st, en in sent_spans:
-        t = len(s.split())
-        if win_len + t > max_tokens and win:
-            chunk_text = " ".join([x[0] for x in win])
-            chunks.append(chunk_text)
-            offsets.append((win_spans[0][1], win_spans[-1][2]))
-            # overlap
-            ov, ov_len, ov_spans = [], 0, []
-            for s2, st2, en2 in reversed(win):
-                ov_len += len(s2.split())
-                ov.insert(0, (s2, st2, en2))
-                ov_spans.insert(0, (s2, st2, en2))
-                if ov_len >= overlap: break
-            win, win_len, win_spans = ov, ov_len, ov_spans
 
-        win.append((s, st, en))
-        win_spans.append((s, st, en))
-        win_len += t
+def _extract_wo(text: str) -> Optional[str]:
+    m = RE_WO.search(text or "")
+    if m:
+        # Normalize letter like 8292-05B -> 8292-05(B)
+        wo = m.group(1)
+        if re.match(r".*[A-Za-z]$", wo):
+            return f"{wo[:-1]}({wo[-1].upper()})"
+        return wo
+    return None
 
-    if win:
-        chunk_text = " ".join([x[0] for x in win])
-        chunks.append(chunk_text)
-        offsets.append((win_spans[0][1], win_spans[-1][2]))
-    return chunks, offsets
 
-def encode_passages_bge(texts, batch_size=32):
-    out = []
-    with torch.no_grad():
-        for i in range(0, len(texts), batch_size):
-            batch = [f"passage: {t}" for t in texts[i:i+batch_size]]
-            inputs = _tokenizer(batch, padding=True, truncation=True, max_length=512, return_tensors="pt").to(DEVICE)
-            outputs = _model(**inputs)
-            vecs = outputs.pooler_output if hasattr(outputs, "pooler_output") and outputs.pooler_output is not None else outputs.last_hidden_state[:, 0]
-            vecs = torch.nn.functional.normalize(vecs, p=2, dim=1)
-            out.append(vecs.cpu().numpy())
-    return np.concatenate(out, axis=0)
+def _title_from_filename(name: str) -> str:
+    # "WO-8292-05B_Report_Final.pdf" -> "WO-8292-05B Report Final"
+    base = name.rsplit(".", 1)[0]
+    base = base.replace("_", " ").replace("-", " ").strip()
+    base = re.sub(r"\s+", " ", base)
+    return base
 
-def s3_upload_if_missing(local_path: str, file_name: str, track=print):
-    key = "/".join(x for x in [FIXED_PREFIX, file_name] if x).replace("//", "/")
-    if s3_key_exists(key):
-        track(f"ℹ️ S3 already has {key} — skipping upload")
-        url = S3.generate_presigned_url("get_object", Params={"Bucket": S3_BUCKET, "Key": key}, ExpiresIn=3600)
-        return key, url, False
+
+def _scan_txt_excerpt(txt_path: Path, max_bytes: int) -> str:
     try:
-        S3.upload_file(Filename=local_path, Bucket=S3_BUCKET, Key=key, ExtraArgs={"ContentType": "application/pdf"})
-        url = S3.generate_presigned_url("get_object", Params={"Bucket": S3_BUCKET, "Key": key}, ExpiresIn=3600)
-        return key, url, True
-    except Exception as e:
-        track(f"❌ S3 upload failed: {e}")
-        return None, None, False
+        with open(txt_path, "rb") as f:
+            raw = f.read(max_bytes)
+        # best-effort decode
+        return raw.decode("utf-8", errors="ignore")
+    except Exception:
+        return ""
 
-def db_has_sha_or_key(sha: str, key: str | None) -> bool:
-    with sqlite3.connect(REPORTS_DB) as conn:
-        cur = conn.cursor()
-        if key:
-            cur.execute("SELECT 1 FROM reports WHERE sha256 = ? OR s3_key = ? LIMIT 1", (sha, key))
-        else:
-            cur.execute("SELECT 1 FROM reports WHERE sha256 = ? LIMIT 1", (sha,))
-        return cur.fetchone() is not None
 
-# ---------------------- INDEX CORE ----------------------
-def index_pdf_at_path(local_pdf_path: str, file_name: str, *, work_order="", project="", location="", report_date="", s3_key: str | None, replace_if_exists=False, track=print):
-    ensure_schema(REPORTS_DB)
+def _page_count(pdf_path: Path) -> int:
+    try:
+        doc = fitz.open(str(pdf_path))
+        n = doc.page_count
+        doc.close()
+        return n
+    except Exception:
+        return 0
 
-    digest = sha256_of_file(local_pdf_path)
-    track(f"🔏 SHA256: {digest}")
 
-    if not replace_if_exists and db_has_sha_or_key(digest, s3_key):
-        track("⛔ Already indexed (sha256 or s3_key). Skipping.")
-        return {"skipped": True, "reason": "already-indexed"}
+def _build_index(base_dir: Path) -> Tuple[List[Dict], float, str]:
+    """
+    Walk `base_dir`, collect *.pdf, and emit index rows:
+    {
+      id, title, client, project, wo, date, pages, size_bytes,
+      pdf_path (API link), txt_path (internal), keywords, text_excerpt
+    }
+    """
+    rows: List[Dict] = []
+    base_dir = base_dir.resolve()
 
-    track("🔍 Extracting text by page…")
-    pages = extract_pages_with_ocr(local_pdf_path, track)
-    nonempty = sum(1 for p in pages if (p or "").strip())
-    track(f"📑 Pages: {len(pages)} (non-empty: {nonempty})")
+    if not base_dir.exists():
+        base_dir.mkdir(parents=True, exist_ok=True)
 
-    flat_chunks, page_map, offset_map = [], [], []
-    for page_idx, ptext in enumerate(pages, start=1):
-        if not (ptext or "").strip():
+    newest_mtime: float = 0.0
+
+    for pdf in base_dir.rglob("*.pdf"):
+        # gather paths
+        if not _safe_within(base_dir, pdf):
             continue
-        chunks, offsets = chunk_page_text(ptext, max_tokens=420, overlap=140)
-        for j, ch in enumerate(chunks):
-            flat_chunks.append(ch)
-            page_map.append((page_idx, j))
-            start_char, end_char = offsets[j]
-            offset_map.append((page_idx, start_char, end_char))
 
-    track(f"✂️ Chunked → {len(flat_chunks)} chunks")
-    if not flat_chunks:
-        track("⚠️ No text extracted; nothing to index.")
-        return {"skipped": True, "reason": "no-text"}
+        rel = str(pdf.relative_to(base_dir)).replace("\\", "/")
+        size_bytes = pdf.stat().st_size if pdf.exists() else 0
+        newest_mtime = max(newest_mtime, pdf.stat().st_mtime)
 
-    track("🧠 Embedding chunks…")
-    embs = encode_passages_bge(flat_chunks, batch_size=32)
+        # Adjacent TXT (optional)
+        txt = pdf.with_suffix(".txt")
+        text_excerpt = _scan_txt_excerpt(txt, TXT_EXCERPT_BYTES) if txt.exists() else ""
 
-    with sqlite3.connect(REPORTS_DB) as conn:
-        cur = conn.cursor()
+        # Derive metadata (best effort)
+        parts = rel.split("/")
+        filename = pdf.name
+        title = _title_from_filename(filename)
 
-        if replace_if_exists:
-            if s3_key:
-                cur.execute("SELECT file_id FROM reports WHERE s3_key = ?", (s3_key,))
+        # Try to infer year, client, project from path convention like: year/client/project/filename.pdf
+        year = _guess_year_from_path(rel)
+        client = None
+        project = None
+        if len(parts) >= 3:
+            # Heuristic: .../<year>/<client>/<project>/file.pdf  (or without year)
+            # If the first part looks like a year, shift
+            if re.fullmatch(r"[12]\d{3}", parts[0]):
+                year = parts[0]
+                client = parts[1] if len(parts) > 1 else None
+                project = parts[2] if len(parts) > 2 else None
             else:
-                cur.execute("SELECT file_id FROM reports WHERE sha256 = ?", (digest,))
-            row = cur.fetchone()
-            if row:
-                old_id = row[0]
-                cur.execute("DELETE FROM chunks WHERE file_id = ?", (old_id,))
-                cur.execute("DELETE FROM chunks_fts WHERE file_id = ?", (old_id,))
-                cur.execute("DELETE FROM reports WHERE file_id = ?", (old_id,))
+                client = parts[0]
+                project = parts[1]
 
-        cur.execute("""
-            INSERT INTO reports (file_name, s3_key, work_order, project, location, report_date, pages, sha256, created_at, updated_at)
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-        """, (file_name, s3_key, work_order, project, location, report_date or None, len(pages), digest, datetime.now().isoformat(), datetime.now().isoformat()))
-        file_id = cur.lastrowid
+        # Work order from file or path text
+        wo = _extract_wo(rel) or _extract_wo(title)
 
-        for row_idx, (vec, (page, local_idx), (page2, start_char, end_char)) in enumerate(zip(embs, page_map, offset_map)):
-            assert page == page2
-            text = flat_chunks[row_idx]
-            cur.execute("""INSERT INTO chunks (file_id, page, chunk_id, start_char, end_char, text, embedding) VALUES (?, ?, ?, ?, ?, ?, ?)""",
-                        (file_id, page, local_idx, start_char, end_char, text, vec.tobytes()))
-            cur.execute("""INSERT INTO chunks_fts (text, file_id, page, chunk_id) VALUES (?, ?, ?, ?)""",
-                        (text, file_id, page, local_idx))
+        # Basic keyword seeds from path chunks (fine to leave empty)
+        keywords = list({*(wo or "").split(), *(client or "").split(), *(project or "").split()})
+        keywords = [k for k in keywords if k]
 
-        conn.commit()
+        # Build a stable API link to stream the PDF from disk (no TXT exposed)
+        pdf_api_href = f"/api/reports/pdf?rel={rel}"
 
-    track(f"🎉 Indexed: {file_name} ({len(flat_chunks)} chunks)")
-    return {"skipped": False, "file_id": file_id, "sha256": sha256_of_file(local_pdf_path)}
+        # Optional ISO date from file mtime (if not derivable from path)
+        iso_date = time.strftime("%Y-%m-%d", time.localtime(pdf.stat().st_mtime)) if pdf.exists() else None
 
-# ---------------------- ROUTES ----------------------
-@reports_bp.route("/api/reports/index", methods=["POST"])
-def index_report_upload():
-    steps = []; track = lambda m: (steps.append(m), print(m))
-    try:
-        ensure_schema(REPORTS_DB)
+        row = {
+            "id": rel,                          # unique within this index
+            "title": title or rel,
+            "client": client,
+            "project": project,
+            "wo": wo,
+            "date": iso_date,                   # UI displays only the year by default
+            "pages": _page_count(pdf),
+            "size_bytes": size_bytes,
+            "pdf_path": pdf_api_href,           # <--- this is what the React app opens
+            "txt_path": str(txt) if txt.exists() else None,  # not used by UI, helpful for debugging
+            "keywords": keywords,
+            "text_excerpt": text_excerpt,
+        }
+        rows.append(row)
 
-        f = request.files.get("file")
-        if not f:
-            return jsonify({"error": "Missing file"}), 400
+    # Sort newest first by mtime (just for determinism if not searching)
+    rows.sort(key=lambda r: r["date"] or "", reverse=True)
 
-        location = ""
-        report_date = ""
-        file_name = f.filename
-        # derive from filename: "XXXX-XX(.suffix).ProjectName.pdf"
-        work_order, project = parse_filename(file_name)
-        upload_to_s3 = (request.form.get("upload_to_s3") or "true").lower() == "true"
-        replace_if_exists = (request.form.get("replace_if_exists") or "false").lower() == "true"
+    # ETag can be a simple digest of count + newest_mtime
+    etag = f'W/"{len(rows)}-{int(newest_mtime)}"'
+    return rows, newest_mtime, etag
 
-        file_name = f.filename
-        tmp_path = os.path.join(UPLOAD_DIR, file_name)
-        f.save(tmp_path)
-        track(f"📄 Saved upload → {tmp_path}")
 
-        s3_key = None
-        if upload_to_s3:
-          key, url, uploaded = s3_upload_if_missing(tmp_path, file_name, track)
-          s3_key = key
-          if uploaded:
-              track(f"☁️ Uploaded to s3://{S3_BUCKET}/{key}")
-        else:
-          track("ℹ️ Skipping S3 upload by request.")
+def _get_cached_index(force: bool = False):
+    base = REPORTS_BASE_DIR
+    base_mtime = base.stat().st_mtime if base.exists() else 0.0
 
-        res = index_pdf_at_path(
-            tmp_path, file_name,
-            work_order=work_order, project=project, location=location,
-            report_date=report_date, s3_key=s3_key, replace_if_exists=replace_if_exists, track=track
-        )
+    if (
+        not force
+        and _INDEX_CACHE.get("data") is not None
+        and _INDEX_CACHE.get("base_mtime") == base_mtime
+    ):
+        return _INDEX_CACHE["data"], _INDEX_CACHE["etag"]
 
-        try: os.remove(tmp_path)
-        except: pass
+    data, newest, etag = _build_index(base)
+    _INDEX_CACHE["data"] = data
+    _INDEX_CACHE["built_at"] = time.time()
+    _INDEX_CACHE["etag"] = etag
+    _INDEX_CACHE["base_mtime"] = base_mtime
+    return data, etag
 
-        if res.get("skipped"):
-            return jsonify({"message": f"Skipped: {res['reason']}", "steps": steps})
-        return jsonify({"message": "Indexed", "file_id": res.get("file_id"), "steps": steps})
 
-    except Exception as e:
-        steps.append(f"❌ Error: {e}")
-        return jsonify({"error": str(e), "steps": steps}), 500
+# -------------------------------
+# API Endpoints
+# -------------------------------
 
-@reports_bp.after_request
-def add_cors_headers(resp):
-    resp.headers["Access-Control-Allow-Origin"] = "*"
-    resp.headers["Access-Control-Allow-Headers"] = "Content-Type, Authorization"
-    resp.headers["Access-Control-Allow-Methods"] = "GET, POST, OPTIONS"
+@reports_bp.get("/reports-index")
+def get_reports_index_json():
+    """
+    Returns the JSON index the React Reports.jsx consumes.
+    URL used by the frontend (primary):    /api/reports-index
+    Also mapped at app-level to:           /reports-index.json   (fallback path)
+    Query params:
+      - force=1   → rebuild index (bypass in-memory cache)
+    """
+    force = request.args.get("force") in ("1", "true", "yes")
+    data, etag = _get_cached_index(force=force)
+
+    # ETag support (basic)
+    inm = request.headers.get("If-None-Match")
+    if inm and inm == etag and not force:
+        return Response(status=304)
+
+    resp = jsonify(data)
+    resp.headers["ETag"] = etag
+    resp.headers["Cache-Control"] = "no-store"
     return resp
 
-@reports_bp.route("/api/reports/bulk-index", methods=["POST"])
-def bulk_index_reports():
+
+@reports_bp.post("/reports-reindex")
+def post_reports_reindex():
     """
-    Accept multiple PDFs in one request.
-    FormData:
-      - files: (repeated) PDFs
-      - work_order, project, location, report_date
-      - upload_to_s3 (true/false)
-      - replace_if_exists (true/false)
+    Manually rebuild the index (for admin buttons or CI hooks).
     """
-    steps = []; track = lambda m: (steps.append(m), print(m))
-    try:
-        ensure_schema(REPORTS_DB)
-
-        upload_to_s3 = (request.form.get("upload_to_s3") or "true").lower() == "true"
-        replace_if_exists = (request.form.get("replace_if_exists") or "false").lower() == "true"
-
-        files = request.files.getlist("files")
-        if not files:
-            return jsonify({"error": "No files provided"}), 400
-
-        track(f"📦 Bulk indexing {len(files)} file(s)")
-
-        for f in files:
-            file_name = f.filename
-            tmp_path = os.path.join(UPLOAD_DIR, file_name)
-            f.save(tmp_path)
-            track(f"— ▶ {file_name}")
-
-            # derive from filename per your rule
-            work_order, project = parse_filename(file_name)
-            location, report_date = "", ""
-
-            s3_key = None
-            if upload_to_s3:
-                key, url, uploaded = s3_upload_if_missing(tmp_path, file_name, track)
-                s3_key = key
-                if uploaded:
-                    track(f"   ☁️ Uploaded to s3://{S3_BUCKET}/{key}")
-            else:
-                track("   ℹ️ Skipping S3 upload by request.")
-
-            res = index_pdf_at_path(
-                tmp_path, file_name,
-                work_order=work_order, project=project, location=location,
-                report_date=report_date, s3_key=s3_key, replace_if_exists=replace_if_exists, track=track
-            )
+    data, etag = _get_cached_index(force=True)
+    resp = jsonify({"ok": True, "count": len(data), "etag": etag})
+    resp.headers["Cache-Control"] = "no-store"
+    return resp
 
 
-
-            try: os.remove(tmp_path)
-            except: pass
-
-            if res.get("skipped"):
-                track(f"   ⏭️ Skipped: {res['reason']}")
-            else:
-                track(f"   ✅ Indexed (file_id={res.get('file_id')})")
-
-        return jsonify({"message": "Bulk done", "steps": steps})
-
-    except Exception as e:
-        steps.append(f"❌ Error: {e}")
-        return jsonify({"error": str(e), "steps": steps}), 500
-
-# Minimal stats/files for UI
-@reports_bp.route("/api/reports/stats", methods=["GET"])
-def reports_stats():
-    ensure_schema(REPORTS_DB)
-    with sqlite3.connect(REPORTS_DB) as conn:
-        cur = conn.cursor()
-        cur.execute("SELECT COUNT(*), IFNULL(SUM(pages),0) FROM reports")
-        files, pages = cur.fetchone()
-        cur.execute("SELECT COUNT(*) FROM chunks")
-        chunks = cur.fetchone()[0]
-    return jsonify({"files": files or 0, "pages": pages or 0, "chunks": chunks or 0})
-
-@reports_bp.route("/api/reports/files", methods=["GET"])
-def reports_files():
-    ensure_schema(REPORTS_DB)
-    with sqlite3.connect(REPORTS_DB) as conn:
-        cur = conn.cursor()
-        cur.execute("""
-        SELECT r.file_id, r.file_name, r.work_order, r.pages,
-               (SELECT COUNT(*) FROM chunks c WHERE c.file_id = r.file_id) AS chunks_cnt
-        FROM reports r
-        ORDER BY r.file_id DESC
-        LIMIT 300
-        """)
-        rows = cur.fetchall()
-    files = [
-        {
-            "file_id": row[0],
-            "file_name": row[1],
-            "work_order": row[2],
-            "pages": row[3],
-            "chunks": row[4],
-        } for row in rows
-    ]
-    return jsonify({"files": files})
-
-
-def parse_filename(file_name: str):
+@reports_bp.get("/reports/pdf")
+def get_report_pdf():
     """
-    Example: '8482-00A.ProjectName.pdf'
-    → work_order = '8482-00A'
-    → project = 'ProjectName'
+    Streams a PDF from local disk by relative path inside OCRed_reports.
+    Query:
+      - rel=<relative/path/to/file.pdf>  (as provided in index id)
     """
-    base = os.path.basename(file_name)
-    if base.lower().endswith(".pdf"):
-        base = base[:-4]  # strip .pdf
+    rel = request.args.get("rel")
+    if not rel:
+        abort(400, "Missing 'rel' parameter")
 
-    parts = base.split(".", 1)
-    if len(parts) == 2:
-        work_order, project = parts
-    else:
-        work_order, project = parts[0], ""
-    return work_order.strip(), project.strip()
+    pdf_path = (REPORTS_BASE_DIR / rel).resolve()
+    if not _safe_within(REPORTS_BASE_DIR, pdf_path):
+        abort(403, "Forbidden path")
 
-# --- Add near top (after BGE model loads) ---
-from typing import List, Dict, Any
-import math
+    if not pdf_path.exists() or not pdf_path.is_file() or not str(pdf_path).lower().endswith(".pdf"):
+        abort(404, "PDF not found")
 
-def encode_queries_bge(texts, batch_size=16):
-    out = []
-    with torch.no_grad():
-        for i in range(0, len(texts), batch_size):
-            batch = [f"query: {t}" for t in texts[i:i+batch_size]]  # <-- query prefix for BGE
-            inputs = _tokenizer(batch, padding=True, truncation=True, max_length=128, return_tensors="pt").to(DEVICE)
-            outputs = _model(**inputs)
-            vecs = outputs.last_hidden_state[:, 0]
-            vecs = torch.nn.functional.normalize(vecs, p=2, dim=1)
-            out.append(vecs.cpu().numpy())
-    return np.concatenate(out, axis=0)
-
-def cosine(a, b):
-    return float(np.dot(a, b))  # both already L2-normalized
-
-# --- Add new routes ---
-@reports_bp.route("/api/reports/search", methods=["GET"])
-def search_reports():
-    """
-    q: query string
-    k: top results (default 8)
-    """
-    q = (request.args.get("q") or "").strip()
-    k = int(request.args.get("k") or 8)
-    if not q:
-        return jsonify({"matches": []})
-
-    ensure_schema(REPORTS_DB)
-    # 1) grab FTS candidates (cheap & broad)
-    with sqlite3.connect(REPORTS_DB) as conn:
-        conn.row_factory = sqlite3.Row
-        cur = conn.cursor()
-        cur.execute("""
-            SELECT f.text, f.file_id, f.page, f.chunk_id, bm25(chunks_fts) AS bm25
-            FROM chunks_fts f
-            WHERE chunks_fts MATCH ?
-            ORDER BY bm25 LIMIT 200
-        """, (q,))
-        fts_rows = cur.fetchall()
-
-        # 2) fetch embeddings for those candidates
-        if not fts_rows:
-            return jsonify({"matches": []})
-
-        # Build in-memory candidate table
-        keys = [(r["file_id"], r["page"], r["chunk_id"]) for r in fts_rows]
-        cur.execute(f"""
-            SELECT c.file_id, c.page, c.chunk_id, c.start_char, c.end_char, c.text, c.embedding,
-                   r.file_name, r.work_order, r.pages, r.s3_key
-            FROM chunks c
-            JOIN reports r ON r.file_id = c.file_id
-            WHERE ({' OR '.join(['(c.file_id=? AND c.page=? AND c.chunk_id=?)']*len(keys))})
-        """, [x for triple in keys for x in triple])
-        cand_rows = cur.fetchall()
-
-    # 3) vector score with BGE (query)
-    qvec = encode_queries_bge([q])[0]
-    scored: List[Dict[str, Any]] = []
-    for row in cand_rows:
-        emb = np.frombuffer(row["embedding"], dtype=np.float32)
-        sim = cosine(qvec, emb)
-        # bm25 from fts_rows: map by (file_id, page, chunk_id)
-        bm = next((fr["bm25"] for fr in fts_rows if fr["file_id"]==row["file_id"] and fr["page"]==row["page"] and fr["chunk_id"]==row["chunk_id"]), None)
-        # normalize bm25: smaller is better; turn into [0..1] score
-        bm_norm = 0.0
-        if bm is not None:
-            # crude normalization
-            bm_min = min(fr["bm25"] for fr in fts_rows)
-            bm_max = max(fr["bm25"] for fr in fts_rows)
-            bm_norm = 1.0 - ((bm - bm_min) / (bm_max - bm_min + 1e-9))
-
-        final = 0.65 * sim + 0.35 * bm_norm
-        scored.append({
-            "score": final,
-            "vector": float(sim),
-            "bm25": float(bm_norm),
-            "file_id": row["file_id"],
-            "file_name": row["file_name"],
-            "work_order": row["work_order"],
-            "page": row["page"],
-            "text": row["text"],
-            "start_char": row["start_char"],
-            "end_char": row["end_char"],
-            "s3_key": row["s3_key"],
-        })
-
-    scored.sort(key=lambda x: x["score"], reverse=True)
-    return jsonify({"matches": scored[:k]})
-
-@reports_bp.route("/api/reports/ask", methods=["POST"])
-def ask_reports():
-    """
-    JSON: { "q": "question", "k": 8 }
-    Returns: { answer, matches: [...] }
-    """
-    data = request.get_json(force=True, silent=True) or {}
-    q = (data.get("q") or "").strip()
-    k = int(data.get("k") or 8)
-    if not q:
-        return jsonify({"answer": "", "matches": []})
-
-    # reuse search
-    with reports_bp.test_request_context(f"/api/reports/search?q={q}&k={k}"):
-        search_resp = search_reports().json
-    ctx = search_resp.get("matches", [])
-
-    # --- Compose an answer with strict citations (LLM call stub) ---
-    # You can plug any LLM provider here. Keep prompt short & grounded.
-    context_blocks = []
-    for i, m in enumerate(ctx, 1):
-        context_blocks.append(f"[{i}] {m['file_name']} p.{m['page']}\n{m['text']}\n")
-    prompt = (
-        "You are a helpful technical assistant. Answer the question using ONLY the context snippets.\n"
-        "Cite sources like [1], [2] that map to the numbered snippets.\n"
-        f"Question: {q}\n\n"
-        "Context:\n" + "\n".join(context_blocks) + "\n"
-        "Answer:"
+    # Flask will set application/pdf automatically for pdf files
+    # Disable aggressive caching for correctness while iterating
+    response = send_file(
+        str(pdf_path),
+        mimetype="application/pdf",
+        as_attachment=False,
+        conditional=True,  # supports If-Modified-Since / ranges
+        last_modified=time.gmtime(pdf_path.stat().st_mtime),
+        etag=True,
+        download_name=pdf_path.name,
     )
-
-    # TODO: replace with actual LLM call
-    # answer = call_llm(prompt)
-    # For now, return top snippets as a pseudo-answer:
-    answer = "Here are the most relevant excerpts:\n" + "\n".join(
-        [f"[{i+1}] {m['file_name']} p.{m['page']}: {m['text'][:300]}..." for i, m in enumerate(ctx)]
-    )
-
-    return jsonify({"answer": answer, "matches": ctx})
+    response.headers["Cache-Control"] = "private, max-age=0, no-store"
+    return response

@@ -33,12 +33,6 @@ const homepageCards = [
         path: "/ask-ai",
         description: "Ask natural language questions and get sourced answers."
       },
-      {
-        name: "RAG Workbench",
-        icon: <FaQuestionCircle />,
-        path: "/rag-core",
-        description: "Search, score, and cite snippets for precise responses."
-      }
     ]
   },
 
