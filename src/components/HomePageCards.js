@@ -12,24 +12,9 @@ import {
   FaEnvelopeOpenText,
   FaShieldAlt,
   FaUserCheck,
-  FaUserTimes,
   FaTicketAlt,
   FaQuestionCircle
 } from "react-icons/fa";
-
-/**
- * Grouping logic:
- * 1) AI & Knowledge — Ask + explore knowledge
- * 2) Data & Indexing — DB explorer + ingest/index
- * 3) Projects & Files — OCR, S3, Core inventory
- * 4) Reports & Analytics — reports & binder
- * 5) People & Admin — directory + admin console
- *
- * Notes:
- * - Kept all routes unchanged
- * - Names avoid “chatbot”; “Ask Geolabs AI” reads professional
- * - Consistent, concise descriptions and tags
- */
 
 const homepageCards = [
   // 1 — AI & Insights (Ask + RAG)
@@ -100,18 +85,6 @@ const homepageCards = [
         description: "Find WOs and project data from scanned and handwritten docs."
       },
       {
-        name: "File Browser (S3)",
-        icon: <FaFileAlt />,
-        path: "/s3-viewer",
-        description: "Preview and open files in S3 with metadata at a glance."
-      },
-      {
-        name: "Upload to S3",
-        icon: <FaCloudUploadAlt />,
-        path: "/s3-admin",
-        description: "Upload and organize report archives (permissions required)."
-      },
-      {
         name: "Core Inventory",
         icon: <FaBoxOpen />,
         path: "/core-box-inventory",
@@ -169,8 +142,17 @@ const homepageCards = [
       }
     ]
   },
-
-  // 6 — IT Operations
+ {
+    label: "S3 Bucket",
+    sublabel: "Bucket, offboarding, tickets",
+    tag: "IT",
+    updated: "2025-09-12",
+    icon: <FaShieldAlt size={24} />,
+    description:
+      "Handle employee onboarding/offboarding, support requests, and FAQs.",
+    path: "/s3-bucket",
+  },
+  // 6 — IT Operations (single entry → tabs inside /it-operations)
   {
     label: "IT Operations",
     sublabel: "Onboarding, offboarding, tickets",
@@ -179,27 +161,7 @@ const homepageCards = [
     icon: <FaShieldAlt size={24} />,
     description:
       "Handle employee onboarding/offboarding, support requests, and FAQs.",
-    subpages: [
-      {
-        name: "Onboarded Accounts",
-        icon: <FaUserCheck />,
-        path: "/it-onboarded",
-        description: "View and manage all active onboarded accounts."
-      },
-      {
-        name: "Terminated Accounts",
-        icon: <FaUserTimes />,
-        path: "/it-terminated",
-        description: "Review terminated accounts and confirm offboarding steps."
-      },
-      {
-        name: "Support Tickets",
-        icon: <FaTicketAlt />,
-        path: "/it-tickets",
-        description:
-          "Submit and track IT support requests for hardware, software, and access."
-      }
-    ]
+    path: "/it-operations",
   }
 ];
 

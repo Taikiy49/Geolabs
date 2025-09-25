@@ -10,12 +10,11 @@ import ReportsBinder from './components/ReportsBinder';
 import CoreBoxInventory from './components/CoreBoxInventory';
 import OCRLookup from './components/OCRLookup';
 import Contacts from './components/Contacts';
-import ITTickets from './components/ITTickets';
+import ITOperations from './components/ITOperations/ITOperations';
 import Admin from './components/Admin';
 import DBAdmin from './components/DBAdmin';
 import DBViewer from './components/DBViewer';
-import S3Admin from './components/S3Admin';
-import S3Viewer from './components/S3Viewer';
+import S3Bucket from './components/S3/S3Bucket';
 import RagCore from './components/RagCore';
 
 function App() {
@@ -34,12 +33,11 @@ function App() {
             <Route path="/core-box-inventory" element={<CoreBoxInventory />} />
             <Route path="/ocr-lookup" element={<OCRLookup />} />
             <Route path="/contacts" element={<Contacts />} />
-            <Route path="/it-tickets" element={<ITTickets />} />
+            <Route path="/it-operations" element={<ITOperations />} />
             <Route path="/admin" element={<Admin />} />
             <Route path="/db-admin" element={<DBAdmin />} />
             <Route path="/db-viewer" element={<DBViewer />} />
-            <Route path="/s3-admin" element={<S3Admin />} />
-            <Route path="/s3-viewer" element={<S3Viewer />} />
+            <Route path="/s3-bucket" element={<S3Bucket />} />
             
           </Routes>
         </main>
