@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
 """
-S3 PDFs -> Local Searchable PDFs + TXT sidecars
-(Tesseract-only, PARALLEL, Idempotent, Robust I/O, Skips OCR for text-native PDFs)
+S3 PDFs -> (Same bucket) OCRed_reports/* : Searchable PDFs + TXT sidecars
+(Tesseract-only, Parallel, Idempotent, Robust I/O, Skips OCR for text-native PDFs)
 
-- Uses local Tesseract EXE to produce image+text PDF + .txt sidecar.
-- Each worker has its own temp dir; atomic writes; verified downloads.
-- If a PDF already has embedded text, we SKIP OCR: copy PDF and extract text to .txt.
-- Resumable with .done sentinel; parallel workers; graceful Ctrl+C.
+- Scans s3://<bucket>/reports/**.pdf
+- For each source PDF, writes to s3://<bucket>/OCRed_reports/<same subpath>.pdf + .txt + .done
+- Skips work if outputs already exist (.done OR both .pdf and .txt)
+- For text-native PDFs: copies original PDF and extracts embedded text (no OCR)
+- For image PDFs: renders via PyMuPDF, runs local Tesseract EXE to produce PDF+TXT
 """
 
 import os
@@ -17,8 +18,7 @@ import uuid
 import shutil
 import tempfile
 import subprocess
-import signal
-from typing import Iterable, Tuple, Dict, Optional, List
+from typing import Iterable, Tuple, Optional, List
 
 import boto3
 from botocore.exceptions import ClientError
@@ -33,18 +33,20 @@ ImageFile.LOAD_TRUNCATED_IMAGES = True
 # =========================
 # SETTINGS (edit if needed)
 # =========================
-S3_BUCKET     = "geolabs-s3-bucket"
-BASE_PREFIX   = "reports/"            # must end with '/'
-RENDER_DPI    = 300                   # 240–300 is a good balance
-OCR_LANGS     = "eng"                 # e.g., "eng+jpn"
-TESSERACT_EXE = r"C:\Users\tyamashita\AppData\Local\Programs\Tesseract-OCR\tesseract.exe"
+S3_BUCKET      = os.getenv("S3_BUCKET", "geolabs-s3-bucket")
+SRC_PREFIX     = os.getenv("SRC_PREFIX", "reports/")   # must end with '/'
+DST_PREFIX     = os.getenv("DST_PREFIX", "OCRed_reports/")  # must end with '/'
 
-# Output folder
-LOCAL_OUTDIR  = os.path.join(os.path.dirname(__file__), "OCRed_reports")
+RENDER_DPI     = int(os.getenv("RENDER_DPI", "300"))  # 240–300 is a good balance
+OCR_LANGS      = os.getenv("OCR_LANGS", "eng")        # e.g., "eng+jpn"
+TESSERACT_EXE  = os.getenv("TESSERACT_EXE", r"C:\Users\tyamashita\AppData\Local\Programs\Tesseract-OCR\tesseract.exe")
 
-# Workers
+# Parallelism
 DEFAULT_WORKERS = max(1, (os.cpu_count() or 4) - 1)
-WORKERS = int(os.environ.get("WORKERS", DEFAULT_WORKERS))
+WORKERS         = int(os.getenv("WORKERS", str(DEFAULT_WORKERS)))
+
+# Optional limit (e.g. LIMIT=5 to test first 5)
+LIMIT           = int(os.getenv("LIMIT", "10"))  # 0 => no limit
 
 # Region override (optional)
 REGION_OVERRIDE = os.getenv("AWS_REGION") or os.getenv("AWS_DEFAULT_REGION") or None
@@ -52,13 +54,13 @@ REGION_OVERRIDE = os.getenv("AWS_REGION") or os.getenv("AWS_DEFAULT_REGION") or 
 
 
 def banner():
-    print("🚀 S3 PDFs → Local Searchable PDFs + TXT (Tesseract-only, PARALLEL, Idempotent, native-text skip)")
+    print("🚀 S3 → S3 (same bucket) OCR pipeline (Tesseract-only, Parallel, Idempotent)")
     print(f"   Bucket   : {S3_BUCKET}")
-    print(f"   Prefix   : {BASE_PREFIX}")
-    print(f"   OutDir   : {LOCAL_OUTDIR}")
-    print(f"   Workers  : {WORKERS}")
+    print(f"   Source   : {SRC_PREFIX}")
+    print(f"   Dest     : {DST_PREFIX}")
+    print(f"   Workers  : {WORKERS}  |  Limit: {LIMIT or 'ALL'}")
     print(f"   Tesseract: {TESSERACT_EXE} (exists={os.path.exists(TESSERACT_EXE)})")
-    print(f"   DPI      : {RENDER_DPI} | langs={OCR_LANGS}")
+    print(f"   DPI/Lang : {RENDER_DPI} / {OCR_LANGS}")
 
 
 def human_err(e: ClientError) -> Tuple[str, str]:
@@ -77,7 +79,7 @@ def make_s3(region: str):
     cfg = Config(
         region_name=region,
         retries={"max_attempts": 10, "mode": "standard"},
-        user_agent_extra="geolabs-tesseract-ocr/2.5"
+        user_agent_extra="geolabs-tesseract-ocr/3.0"
     )
     return boto3.client("s3", config=cfg)
 
@@ -95,6 +97,46 @@ def list_pdfs(s3, bucket: str, prefix: str) -> Iterable[str]:
             yield key
     print(f"✅ Found {total} PDF(s).")
 
+
+# ---------- Key mapping & existence checks on S3 ----------
+
+def out_key_base(src_key: str) -> str:
+    """
+    Map: reports/path/file.pdf  ->  OCRed_reports/path/file   (no extension)
+    """
+    assert SRC_PREFIX.endswith("/")
+    assert DST_PREFIX.endswith("/")
+    rel = src_key[len(SRC_PREFIX):] if src_key.startswith(SRC_PREFIX) else src_key
+    if rel.lower().endswith(".pdf"):
+        rel = rel[:-4]  # drop .pdf
+    return f"{DST_PREFIX}{rel}"
+
+
+def s3_key_exists(s3, bucket: str, key: str) -> bool:
+    try:
+        s3.head_object(Bucket=bucket, Key=key)
+        return True
+    except ClientError as e:
+        code = e.response.get("Error", {}).get("Code", "")
+        if code in ("404", "NoSuchKey", "NotFound"):
+            return False
+        raise
+
+
+def outputs_already_done(s3, bucket: str, out_base_key: str) -> bool:
+    """
+    Consider it "done" if:
+      - .done exists OR
+      - both .pdf and .txt exist
+    """
+    if s3_key_exists(s3, bucket, out_base_key + ".done"):
+        return True
+    pdf_ok = s3_key_exists(s3, bucket, out_base_key + ".pdf")
+    txt_ok = s3_key_exists(s3, bucket, out_base_key + ".txt")
+    return pdf_ok and txt_ok
+
+
+# ---------- Source sanity checks ----------
 
 def preflight_pdf(s3, bucket: str, key: str) -> Tuple[bool, Optional[int]]:
     try:
@@ -114,17 +156,7 @@ def preflight_pdf(s3, bucket: str, key: str) -> Tuple[bool, Optional[int]]:
     return True, int(clen)
 
 
-def out_base_for(pdf_key: str) -> str:
-    """Base path (without extension) under LOCAL_OUTDIR that mirrors S3 path."""
-    assert BASE_PREFIX.endswith("/")
-    rel = pdf_key[len(BASE_PREFIX):] if pdf_key.startswith(BASE_PREFIX) else pdf_key
-    base = os.path.join(LOCAL_OUTDIR, os.path.splitext(rel)[0])  # drop .pdf
-    return base
-
-
-def ensure_parent_dir(path: str):
-    os.makedirs(os.path.dirname(path), exist_ok=True)
-
+# ---------- Local PDF helpers ----------
 
 def is_probably_pdf(path: str) -> bool:
     try:
@@ -136,7 +168,6 @@ def is_probably_pdf(path: str) -> bool:
 
 
 def safe_open_pdf(path: str) -> fitz.Document:
-    """Open a PDF with PyMuPDF; raise if unreadable."""
     try:
         return fitz.open(path)
     except Exception as e:
@@ -144,10 +175,8 @@ def safe_open_pdf(path: str) -> fitz.Document:
 
 
 def download_with_verification(s3, bucket: str, key: str, dest_path: str, expected_len: Optional[int], retries: int = 2):
-    """Download with size + header verification; retry a couple times."""
     for attempt in range(retries + 1):
         try:
-            ensure_parent_dir(dest_path)
             s3.download_file(bucket, key, dest_path)
             if expected_len is not None:
                 actual = os.path.getsize(dest_path)
@@ -160,7 +189,7 @@ def download_with_verification(s3, bucket: str, key: str, dest_path: str, expect
             doc.close()
             if pc <= 0:
                 raise RuntimeError("PDF has 0 pages")
-            return  # success
+            return
         except Exception as e:
             if attempt < retries:
                 print(f"   ⚠️ download verify failed (attempt {attempt+1}/{retries+1}): {e} — retrying …")
@@ -176,10 +205,6 @@ def download_with_verification(s3, bucket: str, key: str, dest_path: str, expect
 
 
 def pdf_has_embedded_text(pdf_path: str, sample_pages: int = 5, min_chars: int = 40, threshold_ratio: float = 0.6) -> bool:
-    """
-    Sample up to `sample_pages` pages; if >= threshold_ratio of sampled pages have
-    >= min_chars of extractable text, treat as text-native (skip OCR).
-    """
     doc = fitz.open(pdf_path)
     try:
         n = doc.page_count
@@ -197,7 +222,6 @@ def pdf_has_embedded_text(pdf_path: str, sample_pages: int = 5, min_chars: int =
 
 
 def extract_embedded_text_to_txt(pdf_path: str) -> str:
-    """Extract embedded text (no OCR) from all pages and return a single string."""
     doc = fitz.open(pdf_path)
     try:
         parts: List[str] = []
@@ -209,10 +233,6 @@ def extract_embedded_text_to_txt(pdf_path: str) -> str:
 
 
 def render_pdf_to_multipage_tif(pdf_path: str, tif_path: str, dpi: int) -> int:
-    """
-    Render all pages to a single multi-page TIF for Tesseract input. Returns page count.
-    Writes to tif_path + ".part" first; renames atomically.
-    """
     doc = safe_open_pdf(pdf_path)
     images = []
     try:
@@ -245,20 +265,20 @@ def render_pdf_to_multipage_tif(pdf_path: str, tif_path: str, dpi: int) -> int:
         os.replace(tmp, tif_path)
     finally:
         for im in images:
-            try:
-                im.close()
-            except Exception:
-                pass
+            try: im.close()
+            except Exception: pass
 
     if not os.path.exists(tif_path):
         raise RuntimeError("Failed to create TIF")
     return page_count
 
 
+# ---------- Tesseract & Upload ----------
+
 def run_tesseract(tif_path: str, out_base_no_ext: str, langs: str, mode: str, verbose_tag: str):
     """
     mode in {"pdf", "txt"}; writes out_base_no_ext + ".pdf" or ".txt".
-    IMPORTANT: out_base_no_ext has NO '.tmp' in its name to avoid Tesseract confusion.
+    out_base_no_ext must NOT include ".tmp" (tesseract doesn't like odd bases).
     """
     assert mode in ("pdf", "txt")
     cmd = [TESSERACT_EXE, tif_path, out_base_no_ext, "-l", langs, mode]
@@ -271,78 +291,46 @@ def run_tesseract(tif_path: str, out_base_no_ext: str, langs: str, mode: str, ve
         )
 
 
-def finalize_output(out_base: str, out_base_tmp_no_ext: str, mode: str):
-    r"""
-    Move temp output to final name, normalizing .PDF capitalization; re-open to verify PDF.
-
-    - out_base: final base path WITHOUT extension (e.g., C:\...\OCRed_reports\foo\bar)
-    - out_base_tmp_no_ext: temp base path WITHOUT extension (e.g., C:\Temp\ocrw_xxx\out_UUID)
-    """
-    if mode == "pdf":
-        src = out_base_tmp_no_ext + ".pdf"
-        if not os.path.exists(src):
-            alt = out_base_tmp_no_ext + ".PDF"
-            if os.path.exists(alt):
-                src = alt
-            else:
-                raise RuntimeError("Expected PDF not found after Tesseract.")
-        dst = out_base + ".pdf"
-    else:
-        src = out_base_tmp_no_ext + ".txt"
-        dst = out_base + ".txt"
-
-    ensure_parent_dir(dst)
-    os.replace(src, dst)
-
-    # Verify produced PDF opens (catch corrupt outputs early)
-    if mode == "pdf":
-        try:
-            d = fitz.open(dst)
-            _ = d.page_count
-            d.close()
-        except Exception:
-            try:
-                os.remove(dst)
-            except Exception:
-                pass
-            raise RuntimeError("Produced PDF failed to open; removed corrupt output.")
+def s3_upload_file(s3, bucket: str, local_path: str, key: str):
+    """Upload a local file to S3 (final key)."""
+    s3.upload_file(local_path, bucket, key)
 
 
-def write_done_sentinel(out_base: str):
-    with open(out_base + ".done", "w", encoding="utf-8") as f:
-        f.write("ok\n")
+def s3_put_text(s3, bucket: str, key: str, text: str):
+    s3.put_object(Bucket=bucket, Key=key, Body=text.encode("utf-8"), ContentType="text/plain; charset=utf-8")
 
 
-def have_done(out_base: str) -> bool:
-    return os.path.exists(out_base + ".done")
+def s3_put_done(s3, bucket: str, base_key: str):
+    s3.put_object(Bucket=bucket, Key=base_key + ".done", Body=b"ok\n", ContentType="text/plain")
 
+
+# ---------- Worker ----------
 
 def worker(pdf_key: str) -> str:
     """
-    Child process entry. Every worker uses a unique temp dir and filenames.
-    No filenames with '.tmp' are passed to Tesseract.
+    Runs in a child process: downloads src, decides native vs OCR, produces outputs,
+    uploads to S3 under OCRed_reports/, and writes .done.
     """
     s3 = make_s3(REGION_OVERRIDE or bucket_region(S3_BUCKET))
-    base = out_base_for(pdf_key)
-    pdf_out = base + ".pdf"
-    txt_out = base + ".txt"
 
-    # Idempotency
-    if have_done(base):
+    out_base_key = out_key_base(pdf_key)       # s3 key base for outputs (no extension)
+    pdf_key_out  = out_base_key + ".pdf"
+    txt_key_out  = out_base_key + ".txt"
+
+    # Idempotency: skip if already done
+    if outputs_already_done(s3, S3_BUCKET, out_base_key):
         return f"skip(done): {pdf_key}"
 
     ok, expected_len = preflight_pdf(s3, S3_BUCKET, pdf_key)
     if not ok:
         return f"skip(preflight): {pdf_key}"
 
-    ensure_parent_dir(pdf_out)
-
-    # Private temp dir + unique names
+    # Private temp dir
     workdir = tempfile.mkdtemp(prefix="ocrw_")
     uid = uuid.uuid4().hex
-    tmp_pdf = os.path.join(workdir, f"in_{uid}.pdf")
-    tif_path = os.path.join(workdir, f"pages_{uid}.tif")   # .tif (not .tiff/.tmp)
-    out_base_tmp_no_ext = os.path.join(workdir, f"out_{uid}")  # no .tmp here
+    tmp_pdf  = os.path.join(workdir, f"in_{uid}.pdf")
+    tif_path = os.path.join(workdir, f"pages_{uid}.tif")
+    out_base_local = os.path.join(workdir, f"out_{uid}")  # local tesseract base (no extension)
 
     t0 = time.time()
     try:
@@ -352,55 +340,52 @@ def worker(pdf_key: str) -> str:
 
         # Fast path: skip OCR if embedded text is present
         if pdf_has_embedded_text(tmp_pdf):
-            print("    🔎 Embedded text detected → skipping OCR")
-            need_pdf = not os.path.exists(pdf_out)
-            need_txt = not os.path.exists(txt_out)
+            print("    🔎 Embedded text detected → no OCR")
+            # PDF: copy original to dest (upload original bytes)
+            s3.upload_file(tmp_pdf, S3_BUCKET, pdf_key_out)
+            print(f"    ✅ uploaded PDF → s3://{S3_BUCKET}/{pdf_key_out}")
 
-            if need_pdf:
-                shutil.copyfile(tmp_pdf, pdf_out)
-                d = fitz.open(pdf_out); _ = d.page_count; d.close()
-                print(f"    ✅ Copied native-text PDF → {os.path.relpath(pdf_out)}")
+            # TXT: extract embedded text and upload
+            embedded = extract_embedded_text_to_txt(tmp_pdf)
+            s3_put_text(s3, S3_BUCKET, txt_key_out, embedded)
+            print(f"    ✅ uploaded TXT → s3://{S3_BUCKET}/{txt_key_out}")
 
-            if need_txt:
-                embedded = extract_embedded_text_to_txt(tmp_pdf)
-                ensure_parent_dir(txt_out)
-                with open(txt_out, "w", encoding="utf-8") as f:
-                    f.write(embedded)
-                print(f"    ✅ Wrote TXT from embedded text → {os.path.relpath(txt_out)}")
-
-            write_done_sentinel(base)
+            s3_put_done(s3, S3_BUCKET, out_base_key)
             dt = time.time() - t0
-            print(f"    ✔ DONE (no OCR) {pdf_key} in {dt:.1f}s")
             return f"done(native): {pdf_key} ({dt:.1f}s)"
 
-        # Otherwise, render and OCR
+        # Otherwise, render once → run tesseract twice (pdf + txt)
         print(f"    🖼 rendering @ {RENDER_DPI} DPI …")
         pages = render_pdf_to_multipage_tif(tmp_pdf, tif_path, RENDER_DPI)
         print(f"    📄 pages: {pages}")
 
-        need_pdf = not os.path.exists(pdf_out)
-        need_txt = not os.path.exists(txt_out)
+        # OCR → PDF
+        print(f"    🧠 OCR → PDF …")
+        run_tesseract(tif_path, out_base_local, OCR_LANGS, "pdf", "PDF")
+        local_pdf = out_base_local + ".pdf"
+        if not os.path.exists(local_pdf):
+            alt = out_base_local + ".PDF"
+            if os.path.exists(alt):
+                local_pdf = alt
+        if not os.path.exists(local_pdf):
+            raise RuntimeError("Tesseract did not produce a PDF")
+        # sanity open
+        d = fitz.open(local_pdf); _ = d.page_count; d.close()
+        s3_upload_file(s3, S3_BUCKET, local_pdf, pdf_key_out)
+        print(f"    ✅ uploaded PDF → s3://{S3_BUCKET}/{pdf_key_out}")
 
-        if not need_pdf and not need_txt:
-            write_done_sentinel(base)
-            dt = time.time() - t0
-            return f"skip(already both exist; restored .done): {pdf_key} ({dt:.1f}s)"
+        # OCR → TXT
+        print(f"    🧠 OCR → TXT …")
+        run_tesseract(tif_path, out_base_local, OCR_LANGS, "txt", "TXT")
+        local_txt = out_base_local + ".txt"
+        if not os.path.exists(local_txt):
+            raise RuntimeError("Tesseract did not produce a TXT")
+        s3_upload_file(s3, S3_BUCKET, local_txt, txt_key_out)
+        print(f"    ✅ uploaded TXT → s3://{S3_BUCKET}/{txt_key_out}")
 
-        if need_pdf:
-            print(f"    🧠 OCR → PDF …")
-            run_tesseract(tif_path, out_base_tmp_no_ext, OCR_LANGS, "pdf", "PDF")
-            finalize_output(base, out_base_tmp_no_ext, "pdf")
-            print(f"    ✅ PDF ready: {os.path.relpath(pdf_out)}")
-
-        if need_txt:
-            print(f"    🧠 OCR → TXT …")
-            run_tesseract(tif_path, out_base_tmp_no_ext, OCR_LANGS, "txt", "TXT")
-            finalize_output(base, out_base_tmp_no_ext, "txt")
-            print(f"    ✅ TXT ready: {os.path.relpath(txt_out)}")
-
-        write_done_sentinel(base)
+        # Mark done
+        s3_put_done(s3, S3_BUCKET, out_base_key)
         dt = time.time() - t0
-        print(f"    ✔ DONE {pdf_key} in {dt:.1f}s")
         return f"done: {pdf_key} ({dt:.1f}s)"
     except Exception as e:
         return f"ERROR {pdf_key}: {e}"
@@ -411,83 +396,98 @@ def worker(pdf_key: str) -> str:
             pass
 
 
+# ---------- Main ----------
+
 def main():
     banner()
 
     if not os.path.exists(TESSERACT_EXE):
-        print("❌ Tesseract EXE not found. Update TESSERACT_EXE at the top.")
+        print("❌ Tesseract EXE not found. Update TESSERACT_EXE (or set env).")
         sys.exit(1)
 
-    if not BASE_PREFIX.endswith("/"):
-        print("❌ BASE_PREFIX must end with '/'.")
+    if not SRC_PREFIX.endswith("/") or not DST_PREFIX.endswith("/"):
+        print("❌ SRC_PREFIX and DST_PREFIX must end with '/'.")
         sys.exit(2)
 
     region = REGION_OVERRIDE or bucket_region(S3_BUCKET)
-    print(f"   Region : {region}")
+    print(f"   Region   : {region}")
 
     s3 = make_s3(region)
-    os.makedirs(LOCAL_OUTDIR, exist_ok=True)
 
-    keys = list(list_pdfs(s3, S3_BUCKET, BASE_PREFIX))
-    total = len(keys)
+    # List all source PDFs
+    all_keys = list(list_pdfs(s3, S3_BUCKET, SRC_PREFIX))
+    if LIMIT and LIMIT > 0:
+        all_keys = all_keys[:LIMIT]
+        print(f"   Limiting to first {LIMIT} file(s) …")
+
+    total = len(all_keys)
     if total == 0:
         print("No PDFs found. Exiting.")
         return
 
-    # Ctrl+C handling (let running tasks finish)
+    # Pre-filter: skip items already done to avoid submitting unnecessary jobs
+    todo = []
+    skipped = 0
+    for k in all_keys:
+        if outputs_already_done(s3, S3_BUCKET, out_key_base(k)):
+            skipped += 1
+        else:
+            todo.append(k)
+
+    print(f"📋 To process: {len(todo)}  |  Already done: {skipped}")
+
+    # Ctrl+C handling: let running tasks finish, no new submissions
     interrupted = {"flag": False}
+
     def _sigint(_sig, _frm):
-        print("\n🛑 Ctrl+C — finishing running tasks (no new submissions) …")
+        print("\n🛑 Ctrl+C — letting running tasks finish; not submitting more …")
         interrupted["flag"] = True
-    signal.signal(signal.SIGINT, _sigint)
 
-    print(f"📨 Submitting {total} job(s) to {WORKERS} worker(s) …")
+    import signal as _signal
+    _signal.signal(_signal.SIGINT, _sigint)
 
-    from concurrent.futures import ProcessPoolExecutor
+    from concurrent.futures import ProcessPoolExecutor, as_completed
 
+    counters = {"done": 0, "skip_done": skipped, "skip_pre": 0, "errors": 0}
     start = time.time()
-    counters: Dict[str, int] = {"done": 0, "skip_done": 0, "skip_pre": 0, "skip_exist": 0, "errors": 0}
 
     try:
         with ProcessPoolExecutor(max_workers=WORKERS) as ex:
-            futures = [ex.submit(worker, k) for k in keys]
-            for i, fut in enumerate(futures, 1):
+            futures = {ex.submit(worker, k): k for k in todo}
+            done_ct = skipped
+            for fut in as_completed(futures):
+                k = futures[fut]
                 try:
-                    msg = fut.result()  # no timeout -> no TimeoutError floods
-                except KeyboardInterrupt:
-                    print("\n🛑 Ctrl+C — stopping collection …")
-                    raise
+                    msg = fut.result()
                 except Exception as e:
-                    msg = f"ERROR {e}"
+                    msg = f"ERROR {k}: {e}"
 
-                print(f"[{i}/{total}] {msg}")
+                done_ct += 1
+                print(f"[{done_ct}/{total}] {msg}")
                 if msg.startswith("done(native):") or msg.startswith("done:"):
                     counters["done"] += 1
-                elif msg.startswith("skip(done):"):
-                    counters["skip_done"] += 1
                 elif msg.startswith("skip(preflight):"):
                     counters["skip_pre"] += 1
-                elif msg.startswith("skip(already both exist"):
-                    counters["skip_exist"] += 1
+                elif msg.startswith("skip(done):"):
+                    counters["skip_done"] += 1
                 elif msg.startswith("ERROR"):
                     counters["errors"] += 1
+
                 if interrupted["flag"]:
-                    # Still let already-submitted futures finish; we’re just not submitting new ones anyway.
+                    # We aren't submitting new work anyway; just draining
                     pass
     except KeyboardInterrupt:
-        # Best-effort graceful exit; work already running will keep going until Python terminates.
+        # Main process interrupted; already-running workers may still be working.
         pass
 
     elapsed = time.time() - start
     print("\n================ SUMMARY ================")
-    print(f"✅ done        : {counters['done']}")
-    print(f"⏭  skip(done) : {counters['skip_done']}")
-    print(f"⏭  skip(exist): {counters['skip_exist']}")
-    print(f"⏭  skip(pre)  : {counters['skip_pre']}")
-    print(f"💥 errors     : {counters['errors']}")
-    print(f"⏱  elapsed    : {elapsed:.1f}s")
-    print(f"📁 Output dir : {LOCAL_OUTDIR}")
-
+    print(f"✅ done         : {counters['done']}")
+    print(f"⏭  skip(done)  : {counters['skip_done']}")
+    print(f"⏭  skip(pre)   : {counters['skip_pre']}")
+    print(f"💥 errors      : {counters['errors']}")
+    print(f"⏱  elapsed     : {elapsed:.1f}s")
+    print(f"📦 output base : s3://{S3_BUCKET}/{DST_PREFIX}")
 
 if __name__ == "__main__":
     main()
