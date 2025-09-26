@@ -1,134 +1,119 @@
-import os, sqlite3, pathlib, re
-from typing import List
-import fitz  # PyMuPDF
+#!/usr/bin/env python3
+"""
+Build / update SQLite FTS5 index for reports.
 
-# --- Base paths (use pathlib everywhere) ---
-BASE = pathlib.Path(__file__).parent.resolve()
+Usage:
+  python build_index.py --jsonl-dir ./processed_reports --db ../data/reports_index.db
+  python build_index.py --jsonl latest
+  python build_index.py --rebuild
+"""
+import argparse, hashlib, json, os, sqlite3, sys, time
+from pathlib import Path
 
-# Point these at your actual folders/files. Using Path + resolve() avoids surprises.
-OCR_DIR = (BASE / ".." / "uploads" / "OCRed_reports").resolve()
-DB_PATH  = (BASE / ".." / "uploads" / "reports.db").resolve()
-
-CHUNK_SIZE = 1400
-CHUNK_OVERLAP = 200
-
-def read_text_for_pdf(pdf_path: pathlib.Path) -> str:
-    txt_path = pdf_path.with_suffix(".txt")
-    if txt_path.exists():
-        return txt_path.read_text(encoding="utf-8", errors="ignore")
-    # fallback: extract quickly from PDF (already OCRed)
-    doc = fitz.open(str(pdf_path))
-    parts = []
-    for i in range(doc.page_count):
-        parts.append(doc.load_page(i).get_text("text") or "")
-    doc.close()
-    return "\n".join(parts)
-
-def chunk_text(t: str, size=CHUNK_SIZE, overlap=CHUNK_OVERLAP) -> List[str]:
-    t = re.sub(r"\s+\n", "\n", t)
-    t = re.sub(r"\n{3,}", "\n\n", t)
-    tokens = list(t)
-    chunks = []
-    i = 0
-    while i < len(tokens):
-        j = min(len(tokens), i + size)
-        chunk = "".join(tokens[i:j]).strip()
-        if chunk:
-            chunks.append(chunk)
-        i = j - overlap
-        if i < 0: i = 0
-        if i >= len(tokens): break
-    return chunks
-
-def init_db():
-    DB_PATH.parent.mkdir(parents=True, exist_ok=True)
-    conn = sqlite3.connect(DB_PATH)
-    conn.execute("PRAGMA journal_mode=WAL")
-    conn.execute("PRAGMA synchronous=NORMAL")
-    conn.executescript("""
-CREATE TABLE IF NOT EXISTS documents (
-  id INTEGER PRIMARY KEY,
-  rel_path TEXT UNIQUE,
-  abs_pdf_path TEXT,
-  title TEXT,
-  client TEXT,
+SCHEMA = """
+CREATE TABLE IF NOT EXISTS reports (
+  id TEXT PRIMARY KEY,
+  filename TEXT,
+  s3_key TEXT,
   project TEXT,
-  pages INTEGER DEFAULT NULL
+  date TEXT,
+  title TEXT,
+  content_hash TEXT,
+  created_ts INTEGER
 );
-CREATE TABLE IF NOT EXISTS chunks (
-  id INTEGER PRIMARY KEY,
-  doc_id INTEGER,
-  chunk_ix INTEGER,
-  content TEXT,
-  FOREIGN KEY(doc_id) REFERENCES documents(id) ON DELETE CASCADE
+CREATE VIRTUAL TABLE IF NOT EXISTS reports_fts USING fts5(
+  id UNINDEXED,
+  title,
+  body,
+  content='',
+  tokenize='unicode61'
 );
-CREATE VIRTUAL TABLE IF NOT EXISTS chunks_fts USING fts5(
-  content,
-  doc_id UNINDEXED,
-  chunk_ix UNINDEXED,
-  tokenize='porter'
-);
-CREATE INDEX IF NOT EXISTS idx_chunks_doc ON chunks(doc_id);
-""")
-    conn.commit()
+CREATE INDEX IF NOT EXISTS idx_reports_project ON reports(project);
+"""
+
+def connect(db_path: Path):
+    db_path.parent.mkdir(parents=True, exist_ok=True)
+    conn = sqlite3.connect(str(db_path))
+    conn.execute("PRAGMA journal_mode=WAL;")
+    conn.executescript(SCHEMA)
     return conn
 
-def upsert_document(conn, rel_path: str, abs_pdf: str) -> int:
-    parts = pathlib.Path(rel_path).parts
-    title = pathlib.Path(rel_path).name
-    client = parts[1] if len(parts) > 2 else None
-    project = parts[2] if len(parts) > 3 else None
+def content_hash(text: str):
+    return hashlib.sha256(text.encode("utf-8")).hexdigest()[:40]
 
-    conn.execute("""
-INSERT INTO documents(rel_path, abs_pdf_path, title, client, project)
-VALUES(?,?,?,?,?)
-ON CONFLICT(rel_path) DO UPDATE SET abs_pdf_path=excluded.abs_pdf_path
-""", (rel_path, abs_pdf, title, client, project))
-    doc_id = conn.execute(
-        "SELECT id FROM documents WHERE rel_path=?",
-        (rel_path,)
-    ).fetchone()[0]
-    return doc_id
+def ingest_jsonl(conn, jsonl: Path, verbose=False):
+    added = 0
+    with jsonl.open("r", encoding="utf-8") as f:
+        for line in f:
+            if not line.strip():
+                continue
+            rec = json.loads(line)
+            rid = rec["id"]
+            ch = content_hash(rec.get("text") or "")
+            cur = conn.execute("SELECT content_hash FROM reports WHERE id=?", (rid,)).fetchone()
+            if cur and cur[0] == ch:
+                continue  # unchanged
+            conn.execute(
+                "REPLACE INTO reports (id, filename, s3_key, project, date, title, content_hash, created_ts) VALUES (?,?,?,?,?,?,?,?)",
+                (
+                    rid,
+                    rec.get("filename"),
+                    rec.get("s3_key"),
+                    rec.get("project"),
+                    rec.get("date"),
+                    rec.get("title"),
+                    ch,
+                    int(time.time()),
+                ),
+            )
+            conn.execute("DELETE FROM reports_fts WHERE id=?", (rid,))
+            conn.execute(
+                "INSERT INTO reports_fts (rowid, id, title, body) VALUES ((SELECT rowid FROM reports WHERE id=?),?,?,?)",
+                (rid, rec.get("title") or "", rec.get("title") or "", rec.get("text") or ""),
+            )
+            added += 1
+    conn.commit()
+    if verbose:
+        print(f"Ingested {added} new/updated rows from {jsonl.name}")
+    return added
 
-def index_pdf(conn, rel_pdf: str):
-    abs_pdf = str((OCR_DIR / rel_pdf).resolve())
-    doc_id = upsert_document(conn, rel_pdf, abs_pdf)
-    # clear old chunks for idempotency
-    conn.execute("DELETE FROM chunks WHERE doc_id=?", (doc_id,))
-    conn.execute("DELETE FROM chunks_fts WHERE doc_id=?", (doc_id,))
-
-    text = read_text_for_pdf((OCR_DIR / rel_pdf))
-    chunks = chunk_text(text)
-    for i, ch in enumerate(chunks):
-        cur = conn.execute(
-            "INSERT INTO chunks(doc_id, chunk_ix, content) VALUES(?,?,?)",
-            (doc_id, i, ch)
-        )
-        chunk_id = cur.lastrowid
-        conn.execute(
-            "INSERT INTO chunks_fts(rowid, content, doc_id, chunk_ix) VALUES(?,?,?,?)",
-            (chunk_id, ch, doc_id, i)
-        )
-
-def walk_reports() -> List[str]:
-    rels = []
-    for p in OCR_DIR.rglob("*.pdf"):
-        rels.append(str(p.relative_to(OCR_DIR)).replace("\\","/"))
-    return rels
+def rebuild(conn):
+    conn.execute("DELETE FROM reports_fts;")
+    # Reinsert from stored content (not stored full text -> can't, so recommend full rebuild from JSONL)
+    # Implement full purge only.
+    conn.commit()
 
 def main():
-    print(f"📁 OCR_DIR : {OCR_DIR}")
-    print(f"🗄️  DB_PATH: {DB_PATH}")
-    assert OCR_DIR.exists(), f"{OCR_DIR} not found"
-    conn = init_db()
-    rels = walk_reports()
-    print(f"🔎 Found {len(rels)} PDFs to index")
-    for rel in rels:
-        print("Indexing:", rel)
-        index_pdf(conn, rel)
-        conn.commit()
-    conn.close()
-    print("✅ Done. DB at", DB_PATH)
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--jsonl-dir", default="./processed_reports")
+    ap.add_argument("--db", default="../data/reports_index.db")
+    ap.add_argument("--jsonl", help="'latest' or explicit file", default=None)
+    ap.add_argument("--rebuild", action="store_true")
+    ap.add_argument("--verbose", action="store_true")
+    args = ap.parse_args()
+
+    db_path = Path(args.db).resolve()
+    conn = connect(db_path)
+
+    if args.rebuild:
+        rebuild(conn)
+
+    jsonl_dir = Path(args.jsonl_dir)
+    if args.jsonl == "latest":
+        files = sorted(jsonl_dir.glob("reports_*.jsonl"))
+        if not files:
+            print("No JSONL files.", file=sys.stderr)
+            return
+        ingest_jsonl(conn, files[-1], verbose=args.verbose)
+    elif args.jsonl:
+        ingest_jsonl(conn, Path(args.jsonl), verbose=args.verbose)
+    else:
+        for f in sorted(jsonl_dir.glob("reports_*.jsonl")):
+            ingest_jsonl(conn, f, verbose=args.verbose)
+
+    total = conn.execute("SELECT COUNT(*) FROM reports").fetchone()[0]
+    print(f"Index ready: {total} documents")
 
 if __name__ == "__main__":
     main()
+     

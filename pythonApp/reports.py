@@ -1,279 +1,192 @@
 # reports.py
-import os
-import re
-import json
-import time
-from pathlib import Path
-from typing import Dict, List, Optional, Tuple
+import os, sqlite3, boto3
+from botocore.config import Config
+from urllib.parse import quote
+from flask import Blueprint, jsonify, request, Response, stream_with_context
+from flask_cors import CORS
 
-import fitz  # PyMuPDF
-from flask import (
-    Blueprint,
-    current_app,
-    jsonify,
-    request,
-    send_file,
-    abort,
-    Response,
-)
+REPORTS_BUCKET = os.getenv("REPORTS_BUCKET", "geolabs-s3-bucket")
+OCR_PREFIX     = os.getenv("OCR_PREFIX", "OCRed_reports/")
+AWS_REGION     = os.getenv("AWS_REGION") or os.getenv("AWS_DEFAULT_REGION") or "us-east-1"
+PRESIGN_TTL    = int(os.getenv("REPORTS_PRESIGN_TTL", "3600"))
+FTS_DB_PATH    = os.getenv("FTS_DB_PATH", os.path.join(os.path.dirname(__file__), "uploads", "reports_fts.db"))
 
-# -------------------------------
-# Configuration
-# -------------------------------
+reports_bp = Blueprint("reports", __name__, url_prefix="/api/reports")
+CORS(reports_bp, resources={r"/api/*": {"origins": "*"}})
 
-# Default to local OCR output beside this file:
-DEFAULT_BASE = Path(__file__).resolve().parent / "OCRed_reports"
-REPORTS_BASE_DIR = Path(os.environ.get("REPORTS_BASE_DIR", str(DEFAULT_BASE))).resolve()
+def _s3():
+    cfg = Config(region_name=AWS_REGION, retries={"max_attempts": 10, "mode": "standard"})
+    return boto3.client("s3", config=cfg)
 
-# How many bytes of the .txt to keep as excerpt (kept small for fast client-side search)
-TXT_EXCERPT_BYTES = int(os.environ.get("TXT_EXCERPT_BYTES", "20000"))  # ~20KB
-
-# Cache the index in-memory to avoid rescans on every call
-_INDEX_CACHE: Dict[str, Dict] = {
-    # "data": [...],
-    # "built_at": epoch,
-    # "etag": "...",
-    # "base_mtime": float,
-}
-
-reports_bp = Blueprint("reports", __name__)
-
-# Regex helpers (best-effort extraction from file/folder names)
-RE_WO = re.compile(r"\b(?:WO[-_ ]?)?(\d{3,6}(?:[-_]\d+)?(?:\([A-Z]\))?)\b", re.IGNORECASE)
-RE_YEAR = re.compile(r"(^|[\\/])([12]\d{3})([\\/]|$)")
-
-
-# -------------------------------
-# Utilities
-# -------------------------------
-
-def _safe_within(base: Path, target: Path) -> bool:
-    """Ensure target is inside base (prevent path traversal)."""
-    try:
-        target = target.resolve()
-        base = base.resolve()
-        return str(target).startswith(str(base))
-    except Exception:
-        return False
-
-
-def _guess_year_from_path(rel: str) -> Optional[str]:
-    m = RE_YEAR.search(rel)
-    if m:
-        return m.group(2)
-    return None
-
-
-def _extract_wo(text: str) -> Optional[str]:
-    m = RE_WO.search(text or "")
-    if m:
-        # Normalize letter like 8292-05B -> 8292-05(B)
-        wo = m.group(1)
-        if re.match(r".*[A-Za-z]$", wo):
-            return f"{wo[:-1]}({wo[-1].upper()})"
-        return wo
-    return None
-
-
-def _title_from_filename(name: str) -> str:
-    # "WO-8292-05B_Report_Final.pdf" -> "WO-8292-05B Report Final"
-    base = name.rsplit(".", 1)[0]
-    base = base.replace("_", " ").replace("-", " ").strip()
-    base = re.sub(r"\s+", " ", base)
-    return base
-
-
-def _scan_txt_excerpt(txt_path: Path, max_bytes: int) -> str:
-    try:
-        with open(txt_path, "rb") as f:
-            raw = f.read(max_bytes)
-        # best-effort decode
-        return raw.decode("utf-8", errors="ignore")
-    except Exception:
-        return ""
-
-
-def _page_count(pdf_path: Path) -> int:
-    try:
-        doc = fitz.open(str(pdf_path))
-        n = doc.page_count
-        doc.close()
-        return n
-    except Exception:
-        return 0
-
-
-def _build_index(base_dir: Path) -> Tuple[List[Dict], float, str]:
-    """
-    Walk `base_dir`, collect *.pdf, and emit index rows:
-    {
-      id, title, client, project, wo, date, pages, size_bytes,
-      pdf_path (API link), txt_path (internal), keywords, text_excerpt
-    }
-    """
-    rows: List[Dict] = []
-    base_dir = base_dir.resolve()
-
-    if not base_dir.exists():
-        base_dir.mkdir(parents=True, exist_ok=True)
-
-    newest_mtime: float = 0.0
-
-    for pdf in base_dir.rglob("*.pdf"):
-        # gather paths
-        if not _safe_within(base_dir, pdf):
-            continue
-
-        rel = str(pdf.relative_to(base_dir)).replace("\\", "/")
-        size_bytes = pdf.stat().st_size if pdf.exists() else 0
-        newest_mtime = max(newest_mtime, pdf.stat().st_mtime)
-
-        # Adjacent TXT (optional)
-        txt = pdf.with_suffix(".txt")
-        text_excerpt = _scan_txt_excerpt(txt, TXT_EXCERPT_BYTES) if txt.exists() else ""
-
-        # Derive metadata (best effort)
-        parts = rel.split("/")
-        filename = pdf.name
-        title = _title_from_filename(filename)
-
-        # Try to infer year, client, project from path convention like: year/client/project/filename.pdf
-        year = _guess_year_from_path(rel)
-        client = None
-        project = None
-        if len(parts) >= 3:
-            # Heuristic: .../<year>/<client>/<project>/file.pdf  (or without year)
-            # If the first part looks like a year, shift
-            if re.fullmatch(r"[12]\d{3}", parts[0]):
-                year = parts[0]
-                client = parts[1] if len(parts) > 1 else None
-                project = parts[2] if len(parts) > 2 else None
-            else:
-                client = parts[0]
-                project = parts[1]
-
-        # Work order from file or path text
-        wo = _extract_wo(rel) or _extract_wo(title)
-
-        # Basic keyword seeds from path chunks (fine to leave empty)
-        keywords = list({*(wo or "").split(), *(client or "").split(), *(project or "").split()})
-        keywords = [k for k in keywords if k]
-
-        # Build a stable API link to stream the PDF from disk (no TXT exposed)
-        pdf_api_href = f"/api/reports/pdf?rel={rel}"
-
-        # Optional ISO date from file mtime (if not derivable from path)
-        iso_date = time.strftime("%Y-%m-%d", time.localtime(pdf.stat().st_mtime)) if pdf.exists() else None
-
-        row = {
-            "id": rel,                          # unique within this index
-            "title": title or rel,
-            "client": client,
-            "project": project,
-            "wo": wo,
-            "date": iso_date,                   # UI displays only the year by default
-            "pages": _page_count(pdf),
-            "size_bytes": size_bytes,
-            "pdf_path": pdf_api_href,           # <--- this is what the React app opens
-            "txt_path": str(txt) if txt.exists() else None,  # not used by UI, helpful for debugging
-            "keywords": keywords,
-            "text_excerpt": text_excerpt,
-        }
-        rows.append(row)
-
-    # Sort newest first by mtime (just for determinism if not searching)
-    rows.sort(key=lambda r: r["date"] or "", reverse=True)
-
-    # ETag can be a simple digest of count + newest_mtime
-    etag = f'W/"{len(rows)}-{int(newest_mtime)}"'
-    return rows, newest_mtime, etag
-
-
-def _get_cached_index(force: bool = False):
-    base = REPORTS_BASE_DIR
-    base_mtime = base.stat().st_mtime if base.exists() else 0.0
-
-    if (
-        not force
-        and _INDEX_CACHE.get("data") is not None
-        and _INDEX_CACHE.get("base_mtime") == base_mtime
-    ):
-        return _INDEX_CACHE["data"], _INDEX_CACHE["etag"]
-
-    data, newest, etag = _build_index(base)
-    _INDEX_CACHE["data"] = data
-    _INDEX_CACHE["built_at"] = time.time()
-    _INDEX_CACHE["etag"] = etag
-    _INDEX_CACHE["base_mtime"] = base_mtime
-    return data, etag
-
-
-# -------------------------------
-# API Endpoints
-# -------------------------------
-
-@reports_bp.get("/reports-index")
-def get_reports_index_json():
-    """
-    Returns the JSON index the React Reports.jsx consumes.
-    URL used by the frontend (primary):    /api/reports-index
-    Also mapped at app-level to:           /reports-index.json   (fallback path)
-    Query params:
-      - force=1   → rebuild index (bypass in-memory cache)
-    """
-    force = request.args.get("force") in ("1", "true", "yes")
-    data, etag = _get_cached_index(force=force)
-
-    # ETag support (basic)
-    inm = request.headers.get("If-None-Match")
-    if inm and inm == etag and not force:
-        return Response(status=304)
-
-    resp = jsonify(data)
-    resp.headers["ETag"] = etag
-    resp.headers["Cache-Control"] = "no-store"
-    return resp
-
-
-@reports_bp.post("/reports-reindex")
-def post_reports_reindex():
-    """
-    Manually rebuild the index (for admin buttons or CI hooks).
-    """
-    data, etag = _get_cached_index(force=True)
-    resp = jsonify({"ok": True, "count": len(data), "etag": etag})
-    resp.headers["Cache-Control"] = "no-store"
-    return resp
-
-
-@reports_bp.get("/reports/pdf")
-def get_report_pdf():
-    """
-    Streams a PDF from local disk by relative path inside OCRed_reports.
-    Query:
-      - rel=<relative/path/to/file.pdf>  (as provided in index id)
-    """
-    rel = request.args.get("rel")
-    if not rel:
-        abort(400, "Missing 'rel' parameter")
-
-    pdf_path = (REPORTS_BASE_DIR / rel).resolve()
-    if not _safe_within(REPORTS_BASE_DIR, pdf_path):
-        abort(403, "Forbidden path")
-
-    if not pdf_path.exists() or not pdf_path.is_file() or not str(pdf_path).lower().endswith(".pdf"):
-        abort(404, "PDF not found")
-
-    # Flask will set application/pdf automatically for pdf files
-    # Disable aggressive caching for correctness while iterating
-    response = send_file(
-        str(pdf_path),
-        mimetype="application/pdf",
-        as_attachment=False,
-        conditional=True,  # supports If-Modified-Since / ranges
-        last_modified=time.gmtime(pdf_path.stat().st_mtime),
-        etag=True,
-        download_name=pdf_path.name,
+def _presign_inline(key: str) -> str:
+    s3 = _s3()
+    filename = key.split("/")[-1]
+    return s3.generate_presigned_url(
+        "get_object",
+        Params={
+            "Bucket": REPORTS_BUCKET,
+            "Key": key,
+            "ResponseContentDisposition": f'inline; filename="{filename}"',
+            "ResponseContentType": "application/pdf",
+        },
+        ExpiresIn=PRESIGN_TTL,
     )
-    response.headers["Cache-Control"] = "private, max-age=0, no-store"
-    return response
+
+@reports_bp.route("/health", methods=["GET"])
+def health():
+    return jsonify({"ok": os.path.exists(FTS_DB_PATH), "bucket": REPORTS_BUCKET, "prefix": OCR_PREFIX, "fts_db": FTS_DB_PATH})
+
+@reports_bp.route("/file", methods=["GET"])
+def presign_file():
+    key = request.args.get("key")
+    if not key: return jsonify({"error": "Missing key"}), 400
+    return jsonify({"key": key, "url": _presign_inline(key)})
+
+@reports_bp.route("/proxy", methods=["GET"])
+def proxy_file():
+    key = request.args.get("key")
+    if not key: return jsonify({"error": "Missing key"}), 400
+    s3 = _s3()
+    try:
+        obj = s3.get_object(Bucket=REPORTS_BUCKET, Key=key)
+    except Exception as e:
+        return jsonify({"error": f"Cannot fetch object: {e}"}), 404
+    filename = key.split("/")[-1]
+    headers = {
+        "Content-Type": "application/pdf",
+        "Content-Disposition": f'inline; filename="{filename}"',
+        "Cache-Control": "private, max-age=3600",
+        "X-Frame-Options": "SAMEORIGIN",
+    }
+    def generate():
+        for chunk in iter(lambda: obj["Body"].read(8192), b""): yield chunk
+    return Response(stream_with_context(generate()), headers=headers)
+
+@reports_bp.route("/search", methods=["GET"])
+def search_reports():
+    q = (request.args.get("q") or "").strip()
+    limit = int(request.args.get("limit", "50"))
+    prefix = (request.args.get("prefix") or "").strip()
+    if not q: return jsonify({"q": "", "hits": []})
+    if not os.path.exists(FTS_DB_PATH):
+        return jsonify({"error": "Index DB not found. Run build_index.py"}), 500
+
+    conn = sqlite3.connect(FTS_DB_PATH)
+    conn.row_factory = sqlite3.Row
+    sql = """
+SELECT m.key AS pdf_key, m.name, m.size, m.last_modified,
+       snippet(docs_fts, 0, '<mark>', '</mark>', ' … ', 24) AS snip
+FROM docs_fts
+JOIN docs_meta m ON m.key = docs_fts.key
+WHERE docs_fts MATCH ?
+"""
+    params = [q]
+    if prefix:
+        sql += " AND m.key LIKE ? "
+        params.append(prefix + "%")
+    sql += " LIMIT ? "
+    params.append(limit)
+    rows = conn.execute(sql, params).fetchall()
+    conn.close()
+
+    qfrag = f"#search={quote(q)}"
+    hits = []
+    for r in rows:
+        key = r["pdf_key"]
+        url = _presign_inline(key) + qfrag
+        hits.append({
+            "pdfKey": key,
+            "name": r["name"] or key.split("/")[-1],
+            "size": r["size"] or 0,
+            "lastModified": r["last_modified"],
+            "snippet": r["snip"] or "",
+            "pdfUrl": url,
+        })
+    return jsonify({"q": q, "hits": hits})
+
+@reports_bp.route("/list", methods=["GET"])
+def list_reports():
+    """
+    Paginated listing from docs_meta (no S3 listing).
+    Query:
+      - prefix: optional LIKE filter: '2024/ClientA/' to scope
+      - page:   1-based page (default 1)
+      - page_size: items per page (default 200, max 1000)
+      - order:  'lm_desc' (default), 'lm_asc', 'name_asc', 'name_desc'
+    Returns: { page, page_size, total, items: [{key,name,size,lastModified,pdfUrl}] }
+    """
+    if not os.path.exists(FTS_DB_PATH):
+        return jsonify({"error": "Index DB not found. Run build_index.py"}), 500
+
+    prefix = (request.args.get("prefix") or "").strip()
+    page = max(1, int(request.args.get("page", "1")))
+    page_size = min(1000, max(1, int(request.args.get("page_size", "200"))))
+    order = (request.args.get("order") or "lm_desc").lower()
+
+    order_sql = {
+        "lm_desc": "ORDER BY COALESCE(last_modified,'') DESC",
+        "lm_asc":  "ORDER BY COALESCE(last_modified,'') ASC",
+        "name_asc": "ORDER BY name COLLATE NOCASE ASC",
+        "name_desc":"ORDER BY name COLLATE NOCASE DESC",
+    }.get(order, "ORDER BY COALESCE(last_modified,'') DESC")
+
+    where = ""
+    params = []
+    if prefix:
+        where = "WHERE key LIKE ?"
+        params.append(prefix + "%")
+
+    off = (page - 1) * page_size
+
+    conn = sqlite3.connect(FTS_DB_PATH)
+    conn.row_factory = sqlite3.Row
+
+    total = conn.execute(f"SELECT COUNT(*) AS c FROM docs_meta {where}", params).fetchone()["c"]
+
+    rows = conn.execute(
+        f"""
+        SELECT key, name, size, last_modified
+        FROM docs_meta
+        {where}
+        {order_sql}
+        LIMIT ? OFFSET ?
+        """,
+        params + [page_size, off]
+    ).fetchall()
+    conn.close()
+
+    items = [{
+        "key": r["key"],
+        "name": r["name"] or r["key"].split("/")[-1],
+        "size": r["size"] or 0,
+        "lastModified": r["last_modified"],
+        "pdfUrl": _presign_inline(r["key"]),
+    } for r in rows]
+
+    return jsonify({
+        "page": page,
+        "page_size": page_size,
+        "total": total,
+        "items": items,
+    })
+
+@reports_bp.route("/suggest", methods=["GET"])
+def suggest_recent():
+    limit = int(request.args.get("limit", "25"))
+    prefix = (request.args.get("prefix") or "").strip()
+    if not os.path.exists(FTS_DB_PATH): return jsonify({"items": []})
+    conn = sqlite3.connect(FTS_DB_PATH); conn.row_factory = sqlite3.Row
+    sql = "SELECT key, name, size, last_modified FROM docs_meta"
+    params = []
+    if prefix:
+        sql += " WHERE key LIKE ? "; params.append(prefix + "%")
+    sql += " ORDER BY COALESCE(last_modified, '') DESC LIMIT ? "; params.append(limit)
+    rows = conn.execute(sql, params).fetchall(); conn.close()
+    items = [{
+        "key": r["key"],
+        "name": r["name"] or r["key"].split("/")[-1],
+        "size": r["size"] or 0,
+        "lastModified": r["last_modified"],
+        "pdfUrl": _presign_inline(r["key"]),
+    } for r in rows]
+    return jsonify({"items": items})

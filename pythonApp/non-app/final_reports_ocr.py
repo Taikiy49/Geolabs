@@ -491,3 +491,183 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+"""
+OCR / text extraction pipeline for project reports.
+
+Usage:
+  python final_reports_ocr.py --src ./reports_pdfs --out ./processed_reports
+  python final_reports_ocr.py --s3-bucket YOUR_BUCKET --s3-prefix reports/ --out ./processed_reports
+
+Outputs one JSONL per run:
+  processed_reports/reports_YYYYmmdd_HHMMSS.jsonl
+Each line:
+  {
+    "id": "<stable id>",
+    "filename": "...pdf",
+    "s3_key": ".../file.pdf" | null,
+    "project": "...",
+    "date": "YYYY-MM-DD" | null,
+    "title": "...",
+    "text": "... (raw full text) ..."
+  }
+"""
+import argparse, hashlib, json, os, re, sys, datetime, io
+from pathlib import Path
+
+try:
+    import boto3
+except ImportError:
+    boto3 = None
+
+try:
+    import PyPDF2
+except ImportError:
+    PyPDF2 = None
+
+# Optional Tesseract (only used if --force-ocr and no extractable text)
+USE_TESSERACT = os.getenv("USE_TESSERACT", "0") == "1"
+if USE_TESSERACT:
+    try:
+        import fitz  # pymupdf
+        import pytesseract
+        from PIL import Image
+    except ImportError:
+        USE_TESSERACT = False
+
+FILENAME_META_RE = re.compile(
+    r"^(?P<project>[A-Za-z0-9_-]{2,20})[_\- ](?P<date>\d{4}[._-]?\d{2}[._-]?\d{2})[_\- ]?(?P<title>.+)?\.pdf$",
+    re.IGNORECASE,
+)
+
+def parse_filename_metadata(fname: str):
+    m = FILENAME_META_RE.match(fname)
+    if not m:
+        return {"project": None, "date": None, "title": os.path.splitext(fname)[0]}
+    raw_date = re.sub(r"[._-]", "", m.group("date"))
+    date_fmt = None
+    try:
+        date_fmt = datetime.datetime.strptime(raw_date, "%Y%m%d").date().isoformat()
+    except Exception:
+        pass
+    title = (m.group("title") or "").replace("_", " ").strip() or os.path.splitext(fname)[0]
+    return {
+        "project": m.group("project"),
+        "date": date_fmt,
+        "title": title,
+    }
+
+def hash_bytes(b: bytes):
+    return hashlib.sha256(b).hexdigest()[:40]
+
+def extract_pdf_text(raw: bytes):
+    if not PyPDF2:
+        return ""
+    try:
+        reader = PyPDF2.PdfReader(io.BytesIO(raw))
+        parts = []
+        for page in reader.pages:
+            try:
+                t = page.extract_text() or ""
+                if t.strip():
+                    parts.append(t)
+            except Exception:
+                pass
+        text = "\n".join(parts).strip()
+        if text or not USE_TESSERACT:
+            return text
+    except Exception:
+        pass
+    # Fallback OCR (slow)
+    if USE_TESSERACT:
+        try:
+            doc = fitz.open(stream=raw, filetype="pdf")
+            pages = []
+            for page in doc:
+                pix = page.get_pixmap(dpi=200)
+                img = Image.frombytes("RGB", [pix.width, pix.height], pix.samples)
+                pages.append(pytesseract.image_to_string(img))
+            return "\n".join(pages)
+        except Exception:
+            return ""
+    return ""
+
+def iter_local_pdfs(src_dir: Path):
+    for p in src_dir.rglob("*.pdf"):
+        if p.is_file():
+            yield p.name, p.read_bytes(), None  # (filename, bytes, s3_key)
+
+def iter_s3_pdfs(bucket: str, prefix: str):
+    if not boto3:
+        print("boto3 not installed; cannot read S3.", file=sys.stderr)
+        return
+    s3 = boto3.client("s3")
+    paginator = s3.get_paginator("list_objects_v2")
+    for page in paginator.paginate(Bucket=bucket, Prefix=prefix or ""):
+        for obj in page.get("Contents", []) or []:
+            key = obj["Key"]
+            if key.lower().endswith(".pdf") and not key.endswith("/"):
+                b = s3.get_object(Bucket=bucket, Key=key)["Body"].read()
+                fname = key.split("/")[-1]
+                yield fname, b, key
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--src", help="Local directory of PDFs")
+    ap.add_argument("--s3-bucket")
+    ap.add_argument("--s3-prefix", default="")
+    ap.add_argument("--out", required=True)
+    ap.add_argument("--limit", type=int)
+    args = ap.parse_args()
+
+    out_dir = Path(args.out)
+    out_dir.mkdir(parents=True, exist_ok=True)
+    stamp = datetime.datetime.utcnow().strftime("%Y%m%d_%H%M%S")
+    out_file = out_dir / f"reports_{stamp}.jsonl"
+
+    count = 0
+    rows = 0
+    with out_file.open("w", encoding="utf-8") as f:
+        if args.src:
+            for fname, data, s3_key in iter_local_pdfs(Path(args.src)):
+                if args.limit and count >= args.limit:
+                    break
+                meta = parse_filename_metadata(fname)
+                text = extract_pdf_text(data)
+                rid = hash_bytes(fname.encode() + data[:200])
+                rec = {
+                    "id": rid,
+                    "filename": fname,
+                    "s3_key": s3_key,
+                    "project": meta["project"],
+                    "date": meta["date"],
+                    "title": meta["title"],
+                    "text": text,
+                }
+                f.write(json.dumps(rec, ensure_ascii=False) + "\n")
+                count += 1
+        elif args.s3_bucket:
+            for fname, data, s3_key in iter_s3_pdfs(args.s3_bucket, args.s3_prefix):
+                if args.limit and count >= args.limit:
+                    break
+                meta = parse_filename_metadata(fname)
+                text = extract_pdf_text(data)
+                rid = hash_bytes(fname.encode() + data[:200])
+                rec = {
+                    "id": rid,
+                    "filename": fname,
+                    "s3_key": s3_key,
+                    "project": meta["project"],
+                    "date": meta["date"],
+                    "title": meta["title"],
+                    "text": text,
+                }
+                f.write(json.dumps(rec, ensure_ascii=False) + "\n")
+                count += 1
+        else:
+            print("Provide --src OR --s3-bucket", file=sys.stderr)
+            return
+    print(f"Wrote {count} records to {out_file}")
+
+if __name__ == "__main__":
+    main()

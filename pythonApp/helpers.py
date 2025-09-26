@@ -184,3 +184,46 @@ def ask_gemini_single_file(query, file_name, snippets, user='guest', use_cache=T
         traceback.print_exc()
         return f"Gemini SDK error: {str(e)}"
 
+import os, sqlite3, threading, re
+
+_DB_LOCK = threading.Lock()
+_DB_CONN = None
+
+REPORTS_DB = os.getenv("REPORTS_INDEX_DB", os.path.join(os.path.dirname(__file__), "data", "reports_index.db"))
+S3_BUCKET = os.getenv("S3_BUCKET")
+
+def get_reports_conn():
+    global _DB_CONN
+    if _DB_CONN is None:
+        with _DB_LOCK:
+            if _DB_CONN is None:
+                os.makedirs(os.path.dirname(REPORTS_DB), exist_ok=True)
+                _DB_CONN = sqlite3.connect(REPORTS_DB, check_same_thread=False)
+                _DB_CONN.execute("PRAGMA journal_mode=WAL;")
+    return _DB_CONN
+
+SNIP_RE = re.compile(r"\s+")
+
+def make_snippet(body: str, q: str, length=240):
+    if not body:
+        return ""
+    ql = (q or "").strip().lower()
+    if not ql:
+        return body[:length].strip()
+    idx = body.lower().find(ql)
+    if idx == -1:
+        return body[:length].strip()
+    start = max(0, idx - length // 4)
+    end = min(len(body), idx + len(ql) + length // 2)
+    snippet = body[start:end]
+    snippet = SNIP_RE.sub(" ", snippet)
+    return snippet.strip()
+
+def highlight(text: str, q: str):
+    if not q or not text:
+        return text
+    try:
+        return re.sub(f"({re.escape(q)})", r"<mark>\1</mark>", text, flags=re.IGNORECASE)
+    except re.error:
+        return text
+

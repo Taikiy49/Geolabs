@@ -1,0 +1,110 @@
+.reports-wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 14px;
+}
+
+.reports-header {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-md);
+  border-radius: 12px;
+  padding: 12px;
+  margin-bottom: 12px;
+}
+
+.reports-title-row {
+  display: flex; align-items: center; justify-content: space-between; gap: 8px;
+}
+.reports-title {
+  display: flex; align-items: center; gap: 10px;
+  font-weight: 800; font-size: 1.2rem;
+  background: linear-gradient(135deg, var(--color-primary), var(--color-secondary), var(--color-tertiary));
+  -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
+}
+
+.reports-controls {
+  margin-top: 10px;
+  display: flex; flex-wrap: wrap; gap: 8px; align-items: center;
+}
+
+.r-group { display: flex; align-items: center; gap: 6px; background: rgba(30,41,59,.7);
+  border: 1px solid var(--border-color); border-radius: 10px; padding: 6px 8px; }
+.r-group label { color: var(--text-secondary); font-size: .9rem; }
+.r-group select, .r-group input {
+  background: transparent; border: none; color: var(--text-primary); outline: none;
+}
+.r-search { flex: 1; }
+.r-search form { display: flex; align-items: center; gap: 8px; }
+.r-search input { width: 100%; }
+
+.r-btn {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: rgba(0,212,255,.12);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 6px 10px; color: var(--text-primary); cursor: pointer;
+}
+.r-btn:hover { border-color: var(--color-primary); box-shadow: var(--shadow-md); }
+
+.r-subtitle { margin: 10px 2px; font-weight: 800; color: var(--text-primary); }
+
+.r-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 10px;
+}
+
+.r-card {
+  display: grid; gap: 6px;
+  background: rgba(31,41,55,.55);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 10px;
+  text-decoration: none;
+  color: inherit;
+}
+.r-card:hover { border-color: var(--color-primary); box-shadow: var(--shadow-md); }
+
+.r-card-top { display: flex; align-items: center; gap: 8px; }
+.r-pdf { color: var(--color-primary); font-size: 1.2rem; }
+.r-name { font-weight: 700; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+.r-snippet {
+  color: var(--text-secondary); font-size: .9rem; line-height: 1.2rem;
+  max-height: 3.6rem; overflow: hidden;
+}
+.mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+
+.r-meta { color: var(--text-muted); font-size: .82rem; }
+.r-empty { color: var(--text-secondary); text-align: center; padding: 16px; }
+
+@media (max-width: 640px) {
+  .r-grid { grid-template-columns: 1fr; }
+}
+
+.reports-wrap { padding: 16px; }
+.reports-header { margin-bottom: 12px; }
+.reports-title { display:flex; align-items:center; gap:8px; }
+.reports-title-row { display:flex; align-items:center; justify-content:space-between; }
+.r-btn { display:inline-flex; align-items:center; gap:6px; padding:6px 10px; border:1px solid var(--border, #ddd); border-radius:8px; background:#fff; cursor:pointer; }
+.r-group { margin-top:8px; }
+.r-search form { display:flex; align-items:center; gap:8px; }
+.r-search .r-icn { opacity:0.6; }
+.r-search input { flex:1; padding:8px 10px; border:1px solid #ddd; border-radius:8px; }
+.r-warning { margin-top:10px; padding:8px 10px; border-radius:8px; background:#fff3cd; color:#856404; border:1px solid #ffeeba; }
+
+.r-subtitle { margin:16px 0 8px; font-weight:600; opacity:0.9; }
+.r-empty { padding:20px; text-align:center; color:#777; }
+
+.r-grid { display:grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap:12px; }
+.r-card { display:block; border:1px solid #e5e7eb; border-radius:12px; padding:12px; background:#fff; text-decoration:none; color:inherit; }
+.r-card:hover { box-shadow: 0 4px 14px rgba(0,0,0,0.08); }
+
+.r-card-top { display:flex; align-items:center; gap:10px; margin-bottom:8px; }
+.r-pdf { font-size:22px; color:#c81e1e; }
+.r-name { font-weight:600; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+
+.r-snippet { font-size:0.92rem; line-height:1.35; color:#333; max-height:5.4em; overflow:hidden; }
+.r-snippet mark { background: #fffa9e; padding:0 2px; border-radius:3px; }
+.mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; opacity:0.9; }
+
+.r-meta { margin-top:8px; font-size:0.85rem; color:#666; display:flex; align-items:center; gap:6px; }

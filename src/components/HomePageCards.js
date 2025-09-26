@@ -12,151 +12,91 @@ import {
   FaEnvelopeOpenText,
   FaShieldAlt,
   FaUserCheck,
-  FaTicketAlt,
-  FaQuestionCircle
 } from "react-icons/fa";
 
 const homepageCards = [
-  // 1 — AI & Insights (Ask + RAG)
+  // AI
   {
-    label: "AI & Insights",
-    sublabel: "Search, compare, and cite with AI",
+    label: "Ask Geolabs AI",
     tag: "AI",
     updated: "2025-09-12",
     icon: <FaRobot size={24} />,
-    description:
-      "Ask questions across your knowledge base and generate citation-ready answers.",
-    subpages: [
-      {
-        name: "Ask Geolabs AI",
-        icon: <FaRobot />,
-        path: "/ask-ai",
-        description: "Ask natural language questions and get sourced answers."
-      },
-    ]
+    description: "Ask natural language questions and get sourced answers.",
+    path: "/ask-ai",
   },
 
-  // 2 — Reports & Analytics
+  // Reports & Analytics
   {
-    label: "Reports & Analytics",
-    sublabel: "Dashboards and tabular review",
+    label: "Reports",
+    tag: "Analytics",
+    updated: "2025-09-12",
+    icon: <FaFileAlt size={24} />,
+    description: "Browse compiled geotechnical reports and dashboards.",
+    path: "/reports",
+  },
+  {
+    label: "Report Binder",
     tag: "Analytics",
     updated: "2025-09-12",
     icon: <FaTable size={24} />,
     description:
-      "Review report tables, refine extracted rows, and export curated data.",
-    subpages: [
-      {
-        name: "Reports",
-        icon: <FaFileAlt />,
-        path: "/reports",
-        description: "Browse compiled geotechnical reports and dashboards."
-      },
-      {
-        name: "Report Binder",
-        icon: <FaTable />,
-        path: "/reports-binder",
-        description:
-          "Filter and edit OCR rows (WO, initials, billing, dates) and export CSV."
-      }
-    ]
+      "Filter and edit OCR rows (WO, initials, billing, dates) and export CSV.",
+    path: "/reports-binder",
   },
 
-  // 3 — Projects & Files
+  // Projects & Files
   {
-    label: "Projects & Files",
-    sublabel: "Search, browse, upload",
+    label: "OCR Work Orders",
     tag: "Ops",
     updated: "2025-09-12",
-    icon: <FaFolderOpen size={24} />,
-    description:
-      "Locate work orders via OCR, browse S3 repositories, and manage core inventory.",
-    subpages: [
-      {
-        name: "OCR Work Orders",
-        icon: <FaSearch />,
-        path: "/ocr-lookup",
-        description: "Find WOs and project data from scanned and handwritten docs."
-      },
-      {
-        name: "Core Inventory",
-        icon: <FaBoxOpen />,
-        path: "/core-box-inventory",
-        description: "Track core boxes by status, location, and age with filters."
-      }
-    ]
+    icon: <FaSearch size={24} />,
+    description: "Find WOs and project data from scanned and handwritten docs.",
+    path: "/ocr-lookup",
   },
-
-  // 4 — Data & Indexing
   {
-    label: "Data & Indexing",
-    sublabel: "Explore datasets and manage indexing",
-    tag: "Data",
+    label: "Core Inventory",
+    tag: "Ops",
     updated: "2025-09-12",
-    icon: <FaDatabase size={24} />,
-    description:
-      "Explore database contents for audits and onboarding. Control ingestion and indexing.",
-    subpages: [
-      {
-        name: "Database Explorer",
-        icon: <FaTable />,
-        path: "/db-viewer",
-        description: "Inspect tables and files with filters and quick previews."
-      },
-      {
-        name: "Ingestion & Indexing",
-        icon: <FaCogs />,
-        path: "/db-admin",
-        description: "Upload PDFs, extract text, and refresh embeddings."
-      }
-    ]
+    icon: <FaBoxOpen size={24} />,
+    description: "Track core boxes by status, location, and age with filters.",
+    path: "/core-box-inventory",
   },
 
-  // 5 — People & Access
+  // People & Access
   {
-    label: "People & Access",
-    sublabel: "Directory and access controls",
+    label: "People Directory",
+    tag: "Admin",
+    updated: "2025-09-12",
+    icon: <FaEnvelopeOpenText size={24} />,
+    description: "Company directory + Outlook contacts with quick copy/CSV.",
+    path: "/contacts",
+  },
+  {
+    label: "Access & Roles",
     tag: "Admin",
     updated: "2025-09-12",
     icon: <FaUserCheck size={24} />,
-    description:
-      "Look up people and manage roles, permissions, and configuration.",
-    subpages: [
-      {
-        name: "People Directory",
-        icon: <FaEnvelopeOpenText />,
-        path: "/contacts",
-        description: "Company directory + Outlook contacts with quick copy/CSV."
-      },
-      {
-        name: "Access & Roles",
-        icon: <FaCogs />,
-        path: "/admin",
-        description: "Manage roles, activity, and system settings."
-      }
-    ]
+    description: "Manage roles, activity, and system settings.",
+    path: "/admin",
   },
- {
+
+  // S3 + IT
+  {
     label: "S3 Bucket",
-    sublabel: "Bucket, offboarding, tickets",
     tag: "IT",
     updated: "2025-09-12",
     icon: <FaShieldAlt size={24} />,
-    description:
-      "Handle employee onboarding/offboarding, support requests, and FAQs.",
+    description: "View and manage S3 bucket contents.",
     path: "/s3-bucket",
   },
-  // 6 — IT Operations (single entry → tabs inside /it-operations)
   {
     label: "IT Operations",
-    sublabel: "Onboarding, offboarding, tickets",
     tag: "IT",
     updated: "2025-09-12",
     icon: <FaShieldAlt size={24} />,
-    description:
-      "Handle employee onboarding/offboarding, support requests, and FAQs.",
+    description: "Onboarding, offboarding, support requests, and FAQs.",
     path: "/it-operations",
-  }
+  },
 ];
 
 export default homepageCards;
