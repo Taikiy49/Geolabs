@@ -71,15 +71,6 @@ const homepageCards = [
     description: "Company directory + Outlook contacts with quick copy/CSV.",
     path: "/contacts",
   },
-  {
-    label: "Access & Roles",
-    tag: "Admin",
-    updated: "2025-09-12",
-    icon: <FaUserCheck size={24} />,
-    description: "Manage roles, activity, and system settings.",
-    path: "/admin",
-  },
-
   // S3 + IT
   {
     label: "S3 Bucket",

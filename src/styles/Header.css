@@ -28,7 +28,7 @@
   white-space: nowrap;
 }
 .hlite-logo { width: 25px; height: 25px; border-radius: var(--radius); object-fit: contain; }
-.hlite-name { font-weight: 800; font-size: 0.9rem; letter-spacing: .02em; }
+.hlite-name { font-weight: 700; font-size: 0.9rem; letter-spacing: .02em; }
 
 /* Search (center) */
 .hlite-searchbar {
