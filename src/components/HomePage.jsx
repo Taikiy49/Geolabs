@@ -1,16 +1,55 @@
-import React, { useMemo, useState } from "react";
+import React, { useMemo, useRef, useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import homepageCards from "../components/HomePageCards";
 import "../styles/HomePage.css";
 
 const TAGS = ["All", "AI", "Analytics", "Ops", "Data", "Admin", "IT"];
 
+// Resizer constraints
+const MIN_WIDTH = 200;  // <-- sidebar can't go smaller than this
+const MAX_WIDTH = 560;  // optional cap
+
 export default function HomePage() {
   const navigate = useNavigate();
   const [activeTag, setActiveTag] = useState("All");
   const [sortMode, setSortMode] = useState("recent"); // "recent" | "az"
 
-  // Filter + sort for the grid
+  // === NEW: sidebar width + drag state ===
+  const [railWidth, setRailWidth] = useState(() => {
+    const saved = Number(localStorage.getItem("hp_rail_w"));
+    return Number.isFinite(saved) && saved > 0 ? saved : 240;
+  });
+  const [dragging, setDragging] = useState(false);
+  const dragStart = useRef({ x: 0, w: 240 });
+
+  useEffect(() => {
+    localStorage.setItem("hp_rail_w", String(railWidth));
+  }, [railWidth]);
+
+  useEffect(() => {
+    if (!dragging) return;
+    const onMove = (e) => {
+      const dx = e.clientX - dragStart.current.x;
+      const raw = dragStart.current.w + dx;
+      const clamped = Math.max(MIN_WIDTH, Math.min(MAX_WIDTH, raw));
+      setRailWidth(clamped);
+    };
+    const onUp = () => setDragging(false);
+
+    window.addEventListener("mousemove", onMove);
+    window.addEventListener("mouseup", onUp);
+    return () => {
+      window.removeEventListener("mousemove", onMove);
+      window.removeEventListener("mouseup", onUp);
+    };
+  }, [dragging]);
+
+  const beginDrag = (e) => {
+    setDragging(true);
+    dragStart.current = { x: e.clientX, w: railWidth };
+  };
+
+  // Filter + sort for the grid (unchanged)
   const filteredSorted = useMemo(() => {
     let items = homepageCards;
     if (activeTag !== "All") {
@@ -36,8 +75,12 @@ export default function HomePage() {
   };
 
   return (
-    <div className="hp">
-      <div className="hp-shell">
+    <div className={`hp ${dragging ? "is-dragging" : ""}`}>
+      {/* IMPORTANT: we add a middle 6px resizer column; your CSS grid stays intact */}
+      <div
+        className="hp-shell"
+        style={{ gridTemplateColumns: `${railWidth}px 6px 1fr` }}
+      >
         {/* LEFT RAIL */}
         <aside className="hp-rail">
           {/* Filters */}
@@ -132,6 +175,24 @@ export default function HomePage() {
             </div>
           </section>
         </aside>
+
+        {/* RESIZER (new middle column) */}
+        <div
+          className="hp-resizer"
+          role="separator"
+          aria-orientation="vertical"
+          aria-label="Resize sidebar"
+          onMouseDown={beginDrag}
+          tabIndex={0}
+          onKeyDown={(e) => {
+            if (e.key === "ArrowLeft") {
+              setRailWidth((w) => Math.max(MIN_WIDTH, w - 16));
+            } else if (e.key === "ArrowRight") {
+              setRailWidth((w) => Math.min(MAX_WIDTH, w + 16));
+            }
+          }}
+          title="Drag to resize (Arrow keys work too)"
+        />
 
         {/* RIGHT: MAIN (cards) */}
         <section className="hp-main">

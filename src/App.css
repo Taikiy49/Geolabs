@@ -122,3 +122,125 @@
 @keyframes spin {
   to { transform: rotate(360deg); }
 }
+
+
+/* ==========================
+   Light mode overrides
+   (toggle via <html data-theme="light">)
+   ========================== */
+:root[data-theme="light"]{
+  /* Surfaces */
+  --bg-page: linear-gradient(135deg, #f7fbff 0%, #f3f6fb 50%, #eef2f7 100%);
+  --bg-card: #ffffff;
+  --bg-card-2: #fafbfe;
+  --bg-hover: rgba(0, 0, 0, 0.04);
+  --bg-base: #ffffff;
+
+  /* Text */
+  --text-primary: #0b1220;
+  --text-secondary: #1a2233;
+  --text-muted: #5a6a84;
+
+  /* Accents (keep brand, tweak contrast where needed) */
+  --color-primary: #0078d4;      /* Azure-ish blue works well on light */
+  --color-secondary: #6b4eff;
+  --color-tertiary: #0bbf8a;
+  --color-success: #10b981;
+  --color-warning: #f59e0b;
+
+  /* Borders & shadows */
+  --border-color: rgba(12, 18, 32, 0.12);
+  --shadow-md: 0 6px 24px rgba(0,0,0,.10), 0 0 8px rgba(0,0,0,.05);
+  --shadow-lg: 0 12px 36px rgba(0,0,0,.12), 0 0 10px rgba(0,0,0,.06);
+}
+
+/* Make the page background actually use the token */
+body, .app-container, .main-content {
+  background: var(--bg-page);
+}
+
+/* Cards still use bg-card/bg-card-2 */
+
+/* ==========================
+   Auth redirect UI
+   ========================== */
+.auth-redirect {
+  min-height: calc(100dvh - 64px);
+  display: grid;
+  place-items: center;
+  padding: var(--space-10);
+  background: var(--bg-page);
+}
+
+.auth-card {
+  width: min(720px, 92vw);
+  background: var(--bg-card);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  padding: clamp(1.25rem, 2.5vw, 2rem);
+  text-align: center;
+}
+
+.auth-logo {
+  height: 44px;
+  width: auto;
+  margin-bottom: var(--space-6);
+  filter: drop-shadow(0 1px 0 rgba(0,0,0,.05));
+}
+
+.auth-title {
+  margin: 0 0 var(--space-3);
+  font-size: 1.35rem;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  color: var(--text-secondary);
+}
+
+.auth-sub {
+  margin: 0 0 var(--space-6);
+  color: var(--text-muted);
+  font-size: var(--font-size-sm);
+}
+
+.auth-spinner {
+  width: 28px;
+  height: 28px;
+  margin: 0 auto var(--space-6);
+  border: 3px solid rgba(59,130,246,.18);
+  border-top: 3px solid var(--color-primary);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+.auth-hint {
+  margin: 0 0 var(--space-4);
+  color: var(--text-muted);
+  font-size: var(--font-size-sm);
+}
+
+.auth-actions {
+  display: flex;
+  gap: var(--space-4);
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: var(--space-6);
+}
+
+/* Reuse your button style; add a "ghost" variant */
+.hlite-btn.ghost {
+  background: transparent;
+  color: var(--text-secondary);
+  border: 1px solid var(--border-color);
+}
+.hlite-btn.ghost:hover {
+  background: var(--bg-hover);
+}
+
+.auth-footnote {
+  color: var(--text-muted);
+  font-size: var(--font-size-xs);
+  border-top: 1px dashed var(--border-color);
+  padding-top: var(--space-4);
+}
