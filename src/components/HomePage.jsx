@@ -1,20 +1,26 @@
+// src/pages/HomePage.jsx
 import React, { useMemo, useRef, useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import homepageCards from "../components/HomePageCards";
 import "../styles/HomePage.css";
 
+// Visible filter labels (what the user sees)
 const TAGS = ["All", "AI", "Analytics", "Ops", "Data", "Admin", "IT"];
 
-// Resizer constraints
-const MIN_WIDTH = 200;  // <-- sidebar can't go smaller than this
-const MAX_WIDTH = 560;  // optional cap
+// Sidebar resizer constraints
+const MIN_WIDTH = 200;
+const MAX_WIDTH = 560;
+
+const norm = (s = "") => String(s).trim().toLowerCase();
 
 export default function HomePage() {
   const navigate = useNavigate();
+
+  // UI state
   const [activeTag, setActiveTag] = useState("All");
   const [sortMode, setSortMode] = useState("recent"); // "recent" | "az"
 
-  // === NEW: sidebar width + drag state ===
+  // Sidebar width + dragging
   const [railWidth, setRailWidth] = useState(() => {
     const saved = Number(localStorage.getItem("hp_rail_w"));
     return Number.isFinite(saved) && saved > 0 ? saved : 240;
@@ -35,7 +41,6 @@ export default function HomePage() {
       setRailWidth(clamped);
     };
     const onUp = () => setDragging(false);
-
     window.addEventListener("mousemove", onMove);
     window.addEventListener("mouseup", onUp);
     return () => {
@@ -49,17 +54,18 @@ export default function HomePage() {
     dragStart.current = { x: e.clientX, w: railWidth };
   };
 
-  // Filter + sort for the grid (unchanged)
+  // Filter + sort
   const filteredSorted = useMemo(() => {
-    let items = homepageCards;
-    if (activeTag !== "All") {
-      items = items.filter(
-        (c) => (c.tag || "").toLowerCase() === activeTag.toLowerCase()
-      );
-    }
+    const tag = norm(activeTag);
+    let items =
+      tag === "all"
+        ? homepageCards
+        : homepageCards.filter((c) => norm(c.tag) === tag);
+
     if (sortMode === "az") {
       return [...items].sort((a, b) => a.label.localeCompare(b.label));
     }
+    // default: recent
     return [...items].sort((a, b) => {
       const da = a.updated ? new Date(a.updated).getTime() : 0;
       const db = b.updated ? new Date(b.updated).getTime() : 0;
@@ -67,6 +73,7 @@ export default function HomePage() {
     });
   }, [activeTag, sortMode]);
 
+  // a11y helper for activating cards via keyboard
   const onKeyActivate = (e, fn) => {
     if (e.key === "Enter" || e.key === " ") {
       e.preventDefault();
@@ -76,7 +83,7 @@ export default function HomePage() {
 
   return (
     <div className={`hp ${dragging ? "is-dragging" : ""}`}>
-      {/* IMPORTANT: we add a middle 6px resizer column; your CSS grid stays intact */}
+      {/* Middle 6px resizer column; CSS media query will collapse on mobile */}
       <div
         className="hp-shell"
         style={{ gridTemplateColumns: `${railWidth}px 6px 1fr` }}
@@ -87,17 +94,23 @@ export default function HomePage() {
           <section className="hp-rail-section">
             <h3 className="hp-rail-title">Filters</h3>
             <div className="hp-filter">
-              {TAGS.map((t) => (
-                <button
-                  key={t}
-                  type="button"
-                  className={`hp-chip-btn ${activeTag === t ? "is-active" : ""}`}
-                  onClick={() => setActiveTag(t)}
-                  aria-pressed={activeTag === t}
-                >
-                  {t}
-                </button>
-              ))}
+              {TAGS.map((t) => {
+                const isActive = activeTag === t;
+                return (
+                  <button
+                    key={t}
+                    type="button"
+                    className={`hp-chip-btn ${isActive ? "is-active" : ""}`}
+                    data-tag={norm(t)}              // ← drives accent color
+                    onClick={() => setActiveTag(t)}
+                    aria-pressed={isActive}
+                    aria-label={`Filter by ${t}`}
+                    title={`Filter: ${t}`}
+                  >
+                    {t}
+                  </button>
+                );
+              })}
             </div>
           </section>
 
@@ -108,49 +121,15 @@ export default function HomePage() {
               className="hp-sort-select"
               value={sortMode}
               onChange={(e) => setSortMode(e.target.value)}
-              aria-label="Sort"
+              aria-label="Sort cards"
+              title="Sort cards"
             >
               <option value="recent">Recently Updated</option>
               <option value="az">A–Z</option>
             </select>
           </section>
 
-          {/* Quick Links */}
-          <section className="hp-rail-section">
-            <h3 className="hp-rail-title">Quick Links</h3>
-            <div className="hp-ql">
-              <button
-                type="button"
-                className="hp-ql-item"
-                onClick={() => navigate("/ask-ai")}
-              >
-                Ask Geolabs AI
-              </button>
-              <button
-                type="button"
-                className="hp-ql-item"
-                onClick={() => navigate("/reports")}
-              >
-                Reports
-              </button>
-              <button
-                type="button"
-                className="hp-ql-item"
-                onClick={() => navigate("/ocr-lookup")}
-              >
-                OCR Work Orders
-              </button>
-              <button
-                type="button"
-                className="hp-ql-item"
-                onClick={() => navigate("/s3-bucket")}
-              >
-                S3 Bucket
-              </button>
-            </div>
-          </section>
-
-          {/* Status */}
+          {/* Status (example) */}
           <section className="hp-rail-section">
             <h3 className="hp-rail-title">Status</h3>
             <div className="hp-status">
@@ -176,7 +155,7 @@ export default function HomePage() {
           </section>
         </aside>
 
-        {/* RESIZER (new middle column) */}
+        {/* RESIZER */}
         <div
           className="hp-resizer"
           role="separator"
@@ -199,8 +178,7 @@ export default function HomePage() {
           <div className="hp-grid">
             {filteredSorted.map((card) => {
               const go = () => card.path && navigate(card.path);
-              const tag = (card.tag || "").toLowerCase();
-
+              const tagLC = norm(card.tag);
               return (
                 <button
                   key={card.label}
@@ -208,8 +186,8 @@ export default function HomePage() {
                   className={`hp-card ${card.path ? "is-clickable" : ""}`}
                   onClick={go}
                   onKeyDown={(e) => card.path && onKeyActivate(e, go)}
-                  aria-label={`Open ${card.label}`}
-                  data-tag={tag}
+                  aria-label={card.path ? `Open ${card.label}` : card.label}
+                  data-tag={tagLC}           // ← drives card accent color
                 >
                   <div className="hp-head">
                     <div className="hp-chip" aria-hidden>

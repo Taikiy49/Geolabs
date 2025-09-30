@@ -9,15 +9,18 @@
   height: 100%;
   display: grid;
   grid-template-columns: 240px 1fr; /* left rail | main */
+  grid-template-rows: 1fr;          /* allow vertical fill */
 }
 
-/* ===== Left Rail (no box, just right divider) ===== */
+/* ===== Left Rail (divider only) ===== */
 .hp-rail {
   border-right: 1px solid var(--border-color);
   display: flex;
   flex-direction: column;
   gap: var(--space-2);
   overflow-y: auto;
+  overflow-x: hidden;
+  box-sizing: border-box;
 }
 
 .hp-rail-title {
@@ -28,7 +31,9 @@
   margin-bottom: var(--space-2);
 }
 
-.hp-rail-section + .hp-rail-section {
+.hp-rail-section {
+  display: flex;
+  flex-direction: column;
   margin-top: var(--space-2);
 }
 
@@ -39,6 +44,7 @@
   gap: var(--space-2);
 }
 
+/* Base chip */
 .hp-chip-btn {
   height: 22px;
   padding: 0 var(--space-3);
@@ -48,33 +54,79 @@
   color: var(--text-secondary);
   cursor: pointer;
   font-size: var(--font-size-xs);
-  transition: background var(--transition-fast), border-color var(--transition-fast), transform var(--transition-fast);
+  transition: background var(--transition-fast), border-color var(--transition-fast),
+              transform var(--transition-fast), box-shadow var(--transition-fast);
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  position: relative;
+  --chip-accent: var(--border-color); /* default until mapped via data-tag */
 }
+
+/* tiny accent dot */
+.hp-chip-btn::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--chip-accent);
+  box-shadow: 0 0 0 1px rgba(255,255,255,.10);
+}
+
 .hp-chip-btn:hover {
   background: var(--bg-card-2);
-  border-color: var(--color-primary);
+  border-color: var(--chip-accent);
   transform: translateY(-1px);
+  box-shadow: 0 0 0 1px color-mix(in oklab, var(--chip-accent) 22%, transparent) inset;
 }
+
 .hp-chip-btn.is-active {
   color: var(--text-primary);
-  border-color: var(--color-primary);
-  box-shadow: 0 0 0 1px rgba(25,217,255,.12) inset;
+  border-color: var(--chip-accent);
+  background: linear-gradient(
+    180deg,
+    color-mix(in oklab, var(--chip-accent) 12%, transparent),
+    transparent 60%
+  );
+  box-shadow:
+    0 0 0 1px color-mix(in oklab, var(--chip-accent) 28%, transparent) inset,
+    0 2px 10px color-mix(in oklab, var(--chip-accent) 12%, transparent);
 }
+
+.hp-chip-btn:focus-visible{
+  outline: 2px solid var(--chip-accent);
+  outline-offset: 2px;
+  border-color: var(--chip-accent);
+}
+
+/* tag → accent mapping for chips (uses App.css accents) */
+.hp-chip-btn[data-tag="ai"]         { --chip-accent: var(--color-cerulean); }
+.hp-chip-btn[data-tag="analytics"]  { --chip-accent: var(--color-violet); }
+.hp-chip-btn[data-tag="ops"]        { --chip-accent: var(--color-mint); }
+.hp-chip-btn[data-tag="data"]       { --chip-accent: var(--color-amber); }
+.hp-chip-btn[data-tag="admin"]      { --chip-accent: var(--color-rose); }
+.hp-chip-btn[data-tag="it"]         { --chip-accent: var(--color-cyan); }
+
+/* extra categories leveraging full 8-color palette */
+.hp-chip-btn[data-tag="security"]   { --chip-accent: var(--color-fuchsia); }
+.hp-chip-btn[data-tag="eng"]        { --chip-accent: var(--color-lime); }
 
 .hp-sort-select {
   height: 22px;
-  padding: 0 var(--space-3);
+  padding: 0 var(--space-2);
   font-size: var(--font-size-xs);
   border-radius: var(--radius);
   border: 1px solid var(--border-color);
   background: var(--bg-card);
-  color: var(--text-primary);}
+  color: var(--text-primary);
+}
 
 /* ===== Quick Links ===== */
 .hp-ql {
   display: grid;
   gap: var(--space-2);
 }
+
 .hp-ql-item {
   height: 22px;
   padding: 0 var(--space-3);
@@ -85,7 +137,8 @@
   color: var(--text-secondary);
   text-align: left;
   cursor: pointer;
-  transition: background var(--transition-fast), border-color var(--transition-fast), transform var(--transition-fast);
+  transition: background var(--transition-fast), border-color var(--transition-fast),
+              transform var(--transition-fast);
 }
 .hp-ql-item:hover {
   background: var(--bg-card-2);
@@ -99,6 +152,7 @@
   flex-direction: column;
   gap: var(--space-3);
 }
+
 .hp-status-row {
   display: grid;
   grid-template-columns: auto 1fr auto;
@@ -107,8 +161,11 @@
   color: var(--text-secondary);
   font-size: var(--font-size-xs);
 }
+
 .hp-dot {
-  width: 8px; height: 8px; border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
   background: var(--text-muted);
   box-shadow: 0 0 0 1px rgba(255,255,255,.06);
 }
@@ -124,6 +181,7 @@
   height: 22px;
   padding: 0 var(--space-3);
 }
+
 .hp-meter {
   grid-column: 2 / span 1;
   height: 6px;
@@ -143,7 +201,8 @@
   display: flex;
   flex-direction: column;
   overflow-y: auto;
-  padding-top: var(--space-3); padding-bottom: var(--space-3);
+  padding-top: var(--space-3);
+  padding-bottom: var(--space-3);
 }
 
 /* Grid */
@@ -154,7 +213,7 @@
   gap: var(--space-3);
 }
 
-/* 3 → 2 columns on narrower screens (mobile still 2, scroll allowed) */
+/* responsive columns */
 @media (max-width: 1200px) { .hp-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 640px)  { .hp-grid { grid-template-columns: repeat(1, minmax(0, 1fr)); } }
 
@@ -178,7 +237,7 @@
   transform: translateY(-2px);
 }
 .hp-card:focus-visible {
-  outline: 2px solid var(--color-primary);
+  outline: 2px solid var(--tag-accent, var(--color-primary));
   outline-offset: 2px;
 }
 
@@ -189,7 +248,7 @@
   gap: var(--space-4);
 }
 
-/* Icon chip */
+/* Icon chip on card */
 .hp-chip {
   width: 40px;
   height: 40px;
@@ -205,11 +264,13 @@
 
 /* Title + badge + desc */
 .hp-txt { min-width: 0; }
+
 .hp-title-row {
   display: inline-flex;
   align-items: center;
   gap: var(--space-5);
 }
+
 .hp-title {
   margin: 0;
   font-weight: 800;
@@ -217,6 +278,7 @@
   font-size: var(--font-size-base);
   color: var(--text-primary);
 }
+
 .hp-badge {
   font-size: var(--font-size-xs);
   padding: 2px 8px;
@@ -227,6 +289,7 @@
   color: #fff;
   background: var(--tag-accent, var(--color-secondary));
 }
+
 .hp-desc {
   margin: var(--space-2) 0 0;
   color: var(--text-secondary);
@@ -243,13 +306,21 @@
   color: var(--text-muted);
 }
 
-/* Tag → accent mapping */
-.hp-card[data-tag="ai"]        { --tag-accent: var(--color-primary); }
-.hp-card[data-tag="analytics"] { --tag-accent: var(--color-secondary); }
-.hp-card[data-tag="ops"]       { --tag-accent: var(--color-warning); }
-.hp-card[data-tag="data"]      { --tag-accent: var(--color-tertiary); }
-.hp-card[data-tag="admin"]     { --tag-accent: var(--color-success); }
-.hp-card[data-tag="it"]        { --tag-accent: var(--color-secondary); }
+/* Tag → accent mapping (cards) */
+.hp-card[data-tag="ai"]         { --tag-accent: var(--color-cerulean); }
+.hp-card[data-tag="analytics"]  { --tag-accent: var(--color-violet); }
+.hp-card[data-tag="ops"]        { --tag-accent: var(--color-mint); }
+.hp-card[data-tag="data"]       { --tag-accent: var(--color-amber); }
+.hp-card[data-tag="admin"]      { --tag-accent: var(--color-rose); }
+.hp-card[data-tag="it"]         { --tag-accent: var(--color-cyan); } /* rose */
+
+
+
+
+/* extra categories leveraging full 8-color palette */
+.hp-card[data-tag="security"]   { --tag-accent: var(--color-fuchsia); }
+.hp-card[data-tag="eng"]        { --tag-accent: var(--color-lime); }
+
 
 /* ===== Thin white scrollbars (both columns) ===== */
 .hp-rail,
@@ -278,33 +349,12 @@
   background: rgba(255,255,255,0.9);
 }
 
-/* Add a middle resizer column without breaking your existing grid/flex */
-.hp-shell {
-  /* grid-template-columns is overridden inline by the component
-     to: [sidebar px] [6px resizer] [1fr main] */
-  grid-template-rows: 1fr;
-}
-
-/* Prevent accidental text selection while dragging */
-.hp.is-dragging {
-  user-select: none;
-  cursor: col-resize;
-}
-
-/* Sidebar should scroll normally and respect min width set in JS */
-.hp-rail {
-  min-width: 0;        /* allow content to shrink within its column */
-  overflow-y: auto;
-  overflow-x: hidden;
-  box-sizing: border-box;
-}
-
 /* Resizer strip */
 .hp-resizer {
   width: 6px;
   cursor: col-resize;
   position: relative;
-  background: transparent;   /* keep it unobtrusive */
+  background: transparent;
 }
 .hp-resizer::after {
   content: "";
@@ -328,18 +378,13 @@
 
 /* ===== Collapse side menu on small screens ===== */
 @media (max-width: 900px) {
-  /* Hide the rail and the resizer strip */
   .hp-rail,
   .hp-resizer {
     display: none !important;
   }
-
-  /* Make the shell a single column (override inline style) */
   .hp-shell {
     grid-template-columns: 1fr !important;
   }
-
-  /* Ensure main fills and scrolls normally */
   .hp-main {
     overflow-y: auto;
   }

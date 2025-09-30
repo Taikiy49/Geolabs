@@ -1,6 +1,7 @@
 /* ==========================
-   App.css — Lean core tokens
+   App.css — Core design tokens & app shell
    ========================== */
+
 :root{
   /* Spacing (slightly smaller) */
   --space-1: 0.13rem;  /* was 0.15 */
@@ -18,58 +19,120 @@
   --font-size-sm:   0.74rem;  /* was 0.84 */
   --font-size-xs:   0.72rem;  /* was 0.76 */
 
-  /* Radii (unchanged) */
+  /* Radii */
   --radius: 6px;
   --radius-lg: 8px;
 
-  /* Card/grid defaults (inherit new spacing) */
+  /* Card/grid defaults */
   --card-pad: var(--space-4);
   --grid-gap: var(--space-3);
 
-  /* Surfaces (unchanged) */
+  /* Surfaces */
   --bg-page: linear-gradient(135deg, #01040a 0%, #06101a 50%, #0a1420 100%);
   --bg-card: rgba(2, 4, 8, 0.992);
   --bg-card-2: rgba(4, 7, 12, 0.988);
   --bg-hover: rgba(0, 212, 255, 0.05);
   --bg-base: #000309;
 
-  /* Text (unchanged) */
+  /* Text */
   --text-primary: #f5fbff;
   --text-secondary: #e3efff;
   --text-muted: #a9b9cf;
 
-  /* Accents (unchanged) */
-  --color-primary: #19d9ff;
-  --color-secondary: #9a6bff;
-  --color-tertiary: #1affb5;
-  --color-success: #33ffa0;
-  --color-warning: #ffbb33;
+  /* ===== Vibrant accent palette (8 hues) ===== */
+  --color-cerulean: #19d9ff; /* bright sky blue */
+  --color-violet:   #9a6bff; /* electric violet */
+  --color-mint:     #1affb5; /* neon mint */
+  --color-amber:    #ffbb33; /* warm amber */
+  --color-rose:     #ff61a6; /* hot rose */
+  --color-lime:     #a6ff3a; /* citrus lime */
+  --color-cyan:     #30e8ff; /* crisp cyan */
+  --color-fuchsia:  #ff5df1; /* vivid fuchsia */
 
-  /* Borders & shadows (unchanged) */
+  /* Semantic aliases (keep your original names wired to the palette) */
+  --color-primary:   var(--color-cerulean);
+  --color-secondary: var(--color-violet);
+  --color-tertiary:  var(--color-mint);
+  --color-quaternary:var(--color-rose);
+  --color-quinary:   var(--color-cyan);
+
+  --color-success:   var(--color-mint);
+  --color-warning:   var(--color-amber);
+
+  /* Borders & shadows */
   --border-color: rgba(255, 255, 255, 0.22);
   --shadow-md: 0 6px 26px rgba(0,0,0,.44), 0 0 15px rgba(59,130,246,.10);
   --shadow-lg: 0 10px 36px rgba(0,0,0,.56), 0 0 20px rgba(59,130,246,.12);
 
-  /* Motion (unchanged) */
+  /* Motion */
   --transition-fast: 140ms ease;
   --transition-normal: 220ms ease;
 
-  /* Global type tokens (slightly smaller line-height) */
+  /* Global type tokens */
   --text-line-height: 0.82rem; /* was 0.875rem */
   --text-letter-spacing: initial;
   --text-weight: 400;
 
-  /* Sidebar widths (unchanged) */
+  /* Sidebar widths */
   --sidebar-width: 280px;
   --sidebar-width-collapsed: 80px;
+
+  /* Misc helpers */
+  --focus-ring: 2px solid var(--color-primary);
 }
 
-
-/* Sidebar state mapping (kept because some components read this var) */
+/* Sidebar state mapping (some components read this var) */
 :root { --sidebar-w: var(--sidebar-width); }
 :root[data-sidebar="collapsed"] { --sidebar-w: var(--sidebar-width-collapsed); }
 
-/* ============== App layout shell ============== */
+/* ==========================
+   Light mode overrides
+   (toggle via <html data-theme="light">)
+   ========================== */
+
+:root[data-theme="light"]{
+  /* Surfaces */
+  --bg-page: linear-gradient(135deg, #f7fbff 0%, #f3f6fb 50%, #eef2f7 100%);
+  --bg-card: #ffffff;
+  --bg-card-2: #fafbfe;
+  --bg-hover: rgba(0, 0, 0, 0.04);
+  --bg-base: #ffffff;
+
+  /* Text */
+  --text-primary: #0b1220;
+  --text-secondary: #1a2233;
+  --text-muted: #5a6a84;
+
+  /* Accents (slightly deeper for contrast on light) */
+  --color-cerulean: #0078d4;
+  --color-violet:   #6b4eff;
+  --color-mint:     #0bbf8a;
+  --color-amber:    #f59e0b;
+  --color-rose:     #e23838;
+  --color-lime:     #62c400;
+  --color-cyan:     #68c6d6;
+  --color-fuchsia:  #c81ecf;
+
+  /* Keep semantic aliases pointing to the adjusted hues */
+  --color-primary:   var(--color-cerulean);
+  --color-secondary: var(--color-violet);
+  --color-tertiary:  var(--color-mint);
+  --color-quaternary:var(--color-rose);
+  --color-quinary:   var(--color-cyan);
+
+  --color-success:   var(--color-mint);
+  --color-warning:   var(--color-amber);
+
+  /* Borders & shadows */
+  --border-color: rgba(12, 18, 32, 0.12);
+  --shadow-md: 0 6px 24px rgba(0,0,0,.10), 0 0 8px rgba(0,0,0,.05);
+  --shadow-lg: 0 12px 36px rgba(0,0,0,.12), 0 0 10px rgba(0,0,0,.06);
+}
+
+/* ==========================
+   Base app layout
+   ========================== */
+
 .App {
   display: flex;
   flex-direction: column;
@@ -91,16 +154,42 @@
   background: var(--bg-base);
   line-height: 1.65;
   overflow-x: hidden;
-  overflow-y: hidden;   /* main scroll area by default */
+  overflow-y: hidden;   /* page-level sections do their own scroll */
 }
 
-/* ============== Utilities kept minimal ============== */
+/* Make the page background actually use the token */
+body, .app-container, .main-content {
+  background: var(--bg-page);
+}
+
+/* ==========================
+   Utilities
+   ========================== */
+
 .focus-visible {
-  outline: 2px solid var(--color-primary);
+  outline: var(--focus-ring);
   outline-offset: 2px;
 }
 
-/* Loading helpers (used across pages) */
+.visually-hidden {
+  position: absolute !important;
+  height: 1px; width: 1px;
+  overflow: hidden; clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
+}
+
+/* Lightweight link styling that respects themes */
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+a:hover { text-decoration: underline; }
+
+/* ==========================
+   Loading helpers
+   ========================== */
+
 .loading {
   display: flex;
   align-items: center;
@@ -123,47 +212,15 @@
   to { transform: rotate(360deg); }
 }
 
-
-/* ==========================
-   Light mode overrides
-   (toggle via <html data-theme="light">)
-   ========================== */
-:root[data-theme="light"]{
-  /* Surfaces */
-  --bg-page: linear-gradient(135deg, #f7fbff 0%, #f3f6fb 50%, #eef2f7 100%);
-  --bg-card: #ffffff;
-  --bg-card-2: #fafbfe;
-  --bg-hover: rgba(0, 0, 0, 0.04);
-  --bg-base: #ffffff;
-
-  /* Text */
-  --text-primary: #0b1220;
-  --text-secondary: #1a2233;
-  --text-muted: #5a6a84;
-
-  /* Accents (keep brand, tweak contrast where needed) */
-  --color-primary: #0078d4;      /* Azure-ish blue works well on light */
-  --color-secondary: #6b4eff;
-  --color-tertiary: #0bbf8a;
-  --color-success: #10b981;
-  --color-warning: #f59e0b;
-
-  /* Borders & shadows */
-  --border-color: rgba(12, 18, 32, 0.12);
-  --shadow-md: 0 6px 24px rgba(0,0,0,.10), 0 0 8px rgba(0,0,0,.05);
-  --shadow-lg: 0 12px 36px rgba(0,0,0,.12), 0 0 10px rgba(0,0,0,.06);
+/* Prefer reduced motion: tone down transitions where possible */
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; animation: none !important; }
 }
-
-/* Make the page background actually use the token */
-body, .app-container, .main-content {
-  background: var(--bg-page);
-}
-
-/* Cards still use bg-card/bg-card-2 */
 
 /* ==========================
    Auth redirect UI
    ========================== */
+
 .auth-redirect {
   min-height: calc(100dvh - 64px);
   display: grid;
@@ -233,9 +290,11 @@ body, .app-container, .main-content {
   background: transparent;
   color: var(--text-secondary);
   border: 1px solid var(--border-color);
+  transition: background var(--transition-fast), border-color var(--transition-fast), transform var(--transition-fast);
 }
 .hlite-btn.ghost:hover {
   background: var(--bg-hover);
+  transform: translateY(-1px);
 }
 
 .auth-footnote {
@@ -243,4 +302,41 @@ body, .app-container, .main-content {
   font-size: var(--font-size-xs);
   border-top: 1px dashed var(--border-color);
   padding-top: var(--space-4);
+}
+
+/* ==========================
+   Nice global scrollbars (optional, light touch)
+   ========================== */
+
+* {
+  scrollbar-width: thin;                         /* Firefox */
+  scrollbar-color: rgba(255,255,255,0.35) transparent;
+}
+
+:root[data-theme="light"] * {
+  scrollbar-color: rgba(12,18,32,0.35) transparent;
+}
+
+*::-webkit-scrollbar {
+  width: 8px; height: 8px;
+}
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+*::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.18);
+  border-radius: 8px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+  transition: background var(--transition-fast), opacity var(--transition-fast);
+}
+*::-webkit-scrollbar-thumb:hover {
+  background: rgba(255,255,255,0.28);
+}
+
+:root[data-theme="light"] *::-webkit-scrollbar-thumb {
+  background: rgba(12,18,32,0.22);
+}
+:root[data-theme="light"] *::-webkit-scrollbar-thumb:hover {
+  background: rgba(12,18,32,0.34);
 }
