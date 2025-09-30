@@ -1,0 +1,56 @@
+/* Dark page base */
+html, body, #root {
+  background: var(--bg-base); /* darkest */
+  color: var(--text-primary, #ecf3fb);
+  min-height: 100%;
+}
+
+/* Generic card surfaces (homepage cards, tiles, etc.) */
+.card,
+.homepage-card,
+.home-card,
+.grid-card,
+.tile,
+.panel {
+  background: var(--bg-card, rgba(10,12,16,0.96)) !important;
+  border: 1px solid var(--border-color, rgba(255,255,255,0.06)) !important;
+  color: var(--text-primary, #ecf3fb);
+}
+.card:hover,
+.homepage-card:hover,
+.home-card:hover,
+.grid-card:hover,
+.tile:hover,
+.panel:hover {
+  background: var(--bg-card-2, rgba(14,16,22,0.94)) !important;
+}
+
+/* Dark search bars and inputs */
+input[type="search"],
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea,
+.search,
+.search-bar,
+.search-input {
+  background: rgba(9, 11, 16, 0.96) !important;
+  color: var(--text-primary, #ecf3fb) !important;
+  border: 1px solid var(--border-color, rgba(255,255,255,0.06)) !important;
+  border-radius: 10px;
+}
+input::placeholder,
+textarea::placeholder {
+  color: var(--text-muted, #8a9ab2);
+  opacity: 0.8;
+}
+
+/* Subtle focus ring on dark bg */
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 2px solid rgba(0, 212, 255, 0.3);
+  outline-offset: 2px;
+  box-shadow: none;
+}

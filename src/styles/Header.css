@@ -1,0 +1,141 @@
+/* Minimal Top Bar: Left (logo/title) • Center (search) • Right (theme + MS auth) */
+.hlite-header {
+  position: sticky;
+  top: 0;
+  z-index: 3000;
+  background: var(--bg-card-2);
+  border-bottom: 1px solid var(--border-color);
+  box-shadow: 0 6px 16px rgba(0,0,0,.32);
+}
+
+/* Single row, compact */
+.hlite-row {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  column-gap: var(--space-2);
+  padding: var(--space-2) var(--space-4);
+  min-height: 35px; /* smaller overall bar */
+}
+
+/* Brand */
+.hlite-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  text-decoration: none;
+  color: var(--text-primary);
+  white-space: nowrap;
+}
+.hlite-logo { width: 22px; height: 22px; border-radius: var(--radius); object-fit: contain; }
+.hlite-name { font-weight: 700; font-size: var(--font-size-xs); letter-spacing: .02em; }
+
+/* Search (center) */
+.hlite-searchbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hlite-search-input {
+  width: min(640px, 96%);
+  height: 22px;                 /* slimmer field */
+  padding: 0 var(--space-4);
+  background: var(--bg-card);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  outline: none;
+  transition: background var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast);
+  line-height: 26px;            /* vertically center */
+  font-size: var(--font-size-xs);
+}
+.hlite-search-input::placeholder { color: var(--text-muted); }
+.hlite-search-input:hover {
+  background: var(--bg-card-2);
+  border-color: var(--color-primary);
+}
+.hlite-search-input:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(25,217,255,.18);
+}
+
+/* Right side */
+.hlite-auth {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+/* Buttons */
+.hlite-btn {
+  height: 22px;                 /* match search */
+  padding: 0 var(--space-4);
+  border-radius: var(--radius);
+  border: 1px solid var(--border-color);
+  background: var(--bg-card);
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: transform var(--transition-fast), border-color var(--transition-fast), background var(--transition-fast);
+  font-size: var(--font-size-xs);
+}
+.hlite-btn:hover {
+  border-color: var(--color-primary);
+  background: var(--bg-card-2);
+  transform: translateY(-1px);
+}
+
+/* Theme button just reuses .hlite-btn; give it a fixed min width for label changes */
+.hlite-theme { min-width: 54px; }
+
+/* Profile pill */
+.hlite-profile {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: 0 var(--space-3);
+  height: 22px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  background: var(--bg-card);
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: transform var(--transition-fast), border-color var(--transition-fast), background var(--transition-fast);
+  font-size: var(--font-size-xs);
+}
+.hlite-profile:hover {
+  border-color: var(--color-primary);
+  background: var(--bg-card-2);
+  transform: translateY(-1px);
+}
+
+.hlite-avatar {
+  width: 18px;
+  height: 18px;
+  border-radius: var(--radius);
+  background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+  color: #fff;
+  display: grid;
+  place-items: center;
+  font-size: 0.62rem;
+  font-weight: 800;
+  line-height: 1;
+}
+.hlite-user {
+  max-width: 160px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: var(--text-secondary);
+  font-size: var(--font-size-xs);
+}
+
+/* Responsive */
+@media (max-width: 720px) {
+  .hlite-name { display: none; }
+  .hlite-search-input { width: 100%; }
+  .hlite-user { display: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hlite-btn, .hlite-profile, .hlite-search-input { transition: none; }
+}

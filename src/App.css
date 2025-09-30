@@ -1,0 +1,246 @@
+/* ==========================
+   App.css — Lean core tokens
+   ========================== */
+:root{
+  /* Spacing (slightly smaller) */
+  --space-1: 0.13rem;  /* was 0.15 */
+  --space-2: 0.22rem;  /* was 0.25 */
+  --space-3: 0.36rem;  /* was 0.40 */
+  --space-4: 0.50rem;  /* was 0.55 */
+  --space-5: 0.64rem;  /* was 0.70 */
+  --space-6: 0.78rem;  /* was 0.85 */
+  --space-8: 1.00rem;  /* was 1.10 */
+  --space-10: 1.22rem; /* was 1.35 */
+  --space-12: 1.44rem; /* was 1.60 */
+
+  /* Type scale (slightly smaller) */
+  --font-size-base: 0.80rem;  /* was 0.92 */
+  --font-size-sm:   0.74rem;  /* was 0.84 */
+  --font-size-xs:   0.72rem;  /* was 0.76 */
+
+  /* Radii (unchanged) */
+  --radius: 6px;
+  --radius-lg: 8px;
+
+  /* Card/grid defaults (inherit new spacing) */
+  --card-pad: var(--space-4);
+  --grid-gap: var(--space-3);
+
+  /* Surfaces (unchanged) */
+  --bg-page: linear-gradient(135deg, #01040a 0%, #06101a 50%, #0a1420 100%);
+  --bg-card: rgba(2, 4, 8, 0.992);
+  --bg-card-2: rgba(4, 7, 12, 0.988);
+  --bg-hover: rgba(0, 212, 255, 0.05);
+  --bg-base: #000309;
+
+  /* Text (unchanged) */
+  --text-primary: #f5fbff;
+  --text-secondary: #e3efff;
+  --text-muted: #a9b9cf;
+
+  /* Accents (unchanged) */
+  --color-primary: #19d9ff;
+  --color-secondary: #9a6bff;
+  --color-tertiary: #1affb5;
+  --color-success: #33ffa0;
+  --color-warning: #ffbb33;
+
+  /* Borders & shadows (unchanged) */
+  --border-color: rgba(255, 255, 255, 0.22);
+  --shadow-md: 0 6px 26px rgba(0,0,0,.44), 0 0 15px rgba(59,130,246,.10);
+  --shadow-lg: 0 10px 36px rgba(0,0,0,.56), 0 0 20px rgba(59,130,246,.12);
+
+  /* Motion (unchanged) */
+  --transition-fast: 140ms ease;
+  --transition-normal: 220ms ease;
+
+  /* Global type tokens (slightly smaller line-height) */
+  --text-line-height: 0.82rem; /* was 0.875rem */
+  --text-letter-spacing: initial;
+  --text-weight: 400;
+
+  /* Sidebar widths (unchanged) */
+  --sidebar-width: 280px;
+  --sidebar-width-collapsed: 80px;
+}
+
+
+/* Sidebar state mapping (kept because some components read this var) */
+:root { --sidebar-w: var(--sidebar-width); }
+:root[data-sidebar="collapsed"] { --sidebar-w: var(--sidebar-width-collapsed); }
+
+/* ============== App layout shell ============== */
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+}
+
+.app-container {
+  position: relative;
+  display: flex;      /* sidebar + main */
+  flex: 1 1 auto;
+  min-height: 0;      /* allow children to scroll correctly */
+  background: var(--bg-base);
+}
+
+.main-content {
+  position: relative;
+  flex: 1 1 auto;
+  min-height: 0;
+  background: var(--bg-base);
+  line-height: 1.65;
+  overflow-x: hidden;
+  overflow-y: hidden;   /* main scroll area by default */
+}
+
+/* ============== Utilities kept minimal ============== */
+.focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+/* Loading helpers (used across pages) */
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-8);
+  color: var(--text-muted);
+}
+
+.spinner {
+  width: 20px;
+  height: 20px;
+  border: 2px solid rgba(0, 212, 255, 0.2);
+  border-top: 2px solid var(--color-primary);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+/* Only animation we keep (spinner) */
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+
+/* ==========================
+   Light mode overrides
+   (toggle via <html data-theme="light">)
+   ========================== */
+:root[data-theme="light"]{
+  /* Surfaces */
+  --bg-page: linear-gradient(135deg, #f7fbff 0%, #f3f6fb 50%, #eef2f7 100%);
+  --bg-card: #ffffff;
+  --bg-card-2: #fafbfe;
+  --bg-hover: rgba(0, 0, 0, 0.04);
+  --bg-base: #ffffff;
+
+  /* Text */
+  --text-primary: #0b1220;
+  --text-secondary: #1a2233;
+  --text-muted: #5a6a84;
+
+  /* Accents (keep brand, tweak contrast where needed) */
+  --color-primary: #0078d4;      /* Azure-ish blue works well on light */
+  --color-secondary: #6b4eff;
+  --color-tertiary: #0bbf8a;
+  --color-success: #10b981;
+  --color-warning: #f59e0b;
+
+  /* Borders & shadows */
+  --border-color: rgba(12, 18, 32, 0.12);
+  --shadow-md: 0 6px 24px rgba(0,0,0,.10), 0 0 8px rgba(0,0,0,.05);
+  --shadow-lg: 0 12px 36px rgba(0,0,0,.12), 0 0 10px rgba(0,0,0,.06);
+}
+
+/* Make the page background actually use the token */
+body, .app-container, .main-content {
+  background: var(--bg-page);
+}
+
+/* Cards still use bg-card/bg-card-2 */
+
+/* ==========================
+   Auth redirect UI
+   ========================== */
+.auth-redirect {
+  min-height: calc(100dvh - 64px);
+  display: grid;
+  place-items: center;
+  padding: var(--space-10);
+  background: var(--bg-page);
+}
+
+.auth-card {
+  width: min(720px, 92vw);
+  background: var(--bg-card);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  padding: clamp(1.25rem, 2.5vw, 2rem);
+  text-align: center;
+}
+
+.auth-logo {
+  height: 44px;
+  width: auto;
+  margin-bottom: var(--space-6);
+  filter: drop-shadow(0 1px 0 rgba(0,0,0,.05));
+}
+
+.auth-title {
+  margin: 0 0 var(--space-3);
+  font-size: 1.35rem;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  color: var(--text-secondary);
+}
+
+.auth-sub {
+  margin: 0 0 var(--space-6);
+  color: var(--text-muted);
+  font-size: var(--font-size-sm);
+}
+
+.auth-spinner {
+  width: 28px;
+  height: 28px;
+  margin: 0 auto var(--space-6);
+  border: 3px solid rgba(59,130,246,.18);
+  border-top: 3px solid var(--color-primary);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+.auth-hint {
+  margin: 0 0 var(--space-4);
+  color: var(--text-muted);
+  font-size: var(--font-size-sm);
+}
+
+.auth-actions {
+  display: flex;
+  gap: var(--space-4);
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: var(--space-6);
+}
+
+/* Reuse your button style; add a "ghost" variant */
+.hlite-btn.ghost {
+  background: transparent;
+  color: var(--text-secondary);
+  border: 1px solid var(--border-color);
+}
+.hlite-btn.ghost:hover {
+  background: var(--bg-hover);
+}
+
+.auth-footnote {
+  color: var(--text-muted);
+  font-size: var(--font-size-xs);
+  border-top: 1px dashed var(--border-color);
+  padding-top: var(--space-4);
+}

@@ -1,0 +1,10 @@
+.colors{
+    color: #3ac0fa;
+    color: #b6e9ff;
+    border: 1px solid rgb(50, 50, 50);
+    background-color: rgb(10, 10, 10);
+    border-bottom: 1px solid rgb(80, 80, 80); /* for header border */
+    color: rgb(240, 240, 240);
+    color: rgb(210, 210, 210);
+}
+

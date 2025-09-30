@@ -1,0 +1,346 @@
+/* ===== Page & Shell ===== */
+.hp {
+  background: var(--bg-base);
+  height: calc(100dvh - 40px); /* below your compact header (~40px) */
+  overflow: hidden;            /* columns scroll, not the page */
+}
+
+.hp-shell {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 240px 1fr; /* left rail | main */
+}
+
+/* ===== Left Rail (no box, just right divider) ===== */
+.hp-rail {
+  border-right: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  overflow-y: auto;
+}
+
+.hp-rail-title {
+  color: var(--text-muted);
+  font-size: var(--font-size-sm);
+  font-weight: 800;
+  letter-spacing: .02em;
+  margin-bottom: var(--space-2);
+}
+
+.hp-rail-section + .hp-rail-section {
+  margin-top: var(--space-2);
+}
+
+/* ===== Filter & Sort ===== */
+.hp-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.hp-chip-btn {
+  height: 22px;
+  padding: 0 var(--space-3);
+  border-radius: var(--radius);
+  border: 1px solid var(--border-color);
+  background: var(--bg-card);
+  color: var(--text-secondary);
+  cursor: pointer;
+  font-size: var(--font-size-xs);
+  transition: background var(--transition-fast), border-color var(--transition-fast), transform var(--transition-fast);
+}
+.hp-chip-btn:hover {
+  background: var(--bg-card-2);
+  border-color: var(--color-primary);
+  transform: translateY(-1px);
+}
+.hp-chip-btn.is-active {
+  color: var(--text-primary);
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 1px rgba(25,217,255,.12) inset;
+}
+
+.hp-sort-select {
+  height: 22px;
+  padding: 0 var(--space-3);
+  font-size: var(--font-size-xs);
+  border-radius: var(--radius);
+  border: 1px solid var(--border-color);
+  background: var(--bg-card);
+  color: var(--text-primary);}
+
+/* ===== Quick Links ===== */
+.hp-ql {
+  display: grid;
+  gap: var(--space-2);
+}
+.hp-ql-item {
+  height: 22px;
+  padding: 0 var(--space-3);
+  font-size: var(--font-size-xs);
+  border-radius: var(--radius);
+  border: 1px solid var(--border-color);
+  background: var(--bg-card);
+  color: var(--text-secondary);
+  text-align: left;
+  cursor: pointer;
+  transition: background var(--transition-fast), border-color var(--transition-fast), transform var(--transition-fast);
+}
+.hp-ql-item:hover {
+  background: var(--bg-card-2);
+  border-color: var(--color-primary);
+  transform: translateY(-1px);
+}
+
+/* ===== Status (in rail) ===== */
+.hp-status {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+.hp-status-row {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: var(--space-3);
+  color: var(--text-secondary);
+  font-size: var(--font-size-xs);
+}
+.hp-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: var(--text-muted);
+  box-shadow: 0 0 0 1px rgba(255,255,255,.06);
+}
+.hp-dot.ok { background: var(--color-tertiary); }
+
+.hp-status-pill {
+  border-radius: 999px;
+  border: 1px solid var(--border-color);
+  background: var(--bg-card-2);
+  color: var(--text-primary);
+  font-size: var(--font-size-xs);
+  font-weight: 600;
+  height: 22px;
+  padding: 0 var(--space-3);
+}
+.hp-meter {
+  grid-column: 2 / span 1;
+  height: 6px;
+  border-radius: 999px;
+  border: 1px solid var(--border-color);
+  background: var(--bg-card-2);
+  overflow: hidden;
+}
+.hp-meter > span {
+  display: block;
+  height: 100%;
+  background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+}
+
+/* ===== Main (cards) ===== */
+.hp-main {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  padding-top: var(--space-3); padding-bottom: var(--space-3);
+}
+
+/* Grid */
+.hp-grid {
+  flex: 1 1 auto;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-3);
+}
+
+/* 3 → 2 columns on narrower screens (mobile still 2, scroll allowed) */
+@media (max-width: 1200px) { .hp-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 640px)  { .hp-grid { grid-template-columns: repeat(1, minmax(0, 1fr)); } }
+
+/* Cards */
+.hp-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: var(--space-4);
+  box-shadow: var(--shadow-md);
+  transition: border-color var(--transition-fast), transform var(--transition-fast);
+}
+.hp-card.is-clickable { cursor: pointer; }
+.hp-card:hover,
+.hp-card:focus-visible {
+  border-color: var(--tag-accent, var(--color-primary));
+  transform: translateY(-2px);
+}
+.hp-card:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+/* Head */
+.hp-head {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+/* Icon chip */
+.hp-chip {
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  border-radius: var(--radius);
+  background: var(--bg-card-2);
+  border: 1px solid var(--tag-accent, var(--border-color));
+  color: var(--tag-accent, var(--text-primary));
+  box-shadow: 0 1px 0 rgba(255,255,255,.04), 0 6px 14px rgba(0,0,0,.28);
+  padding: var(--space-1);
+}
+
+/* Title + badge + desc */
+.hp-txt { min-width: 0; }
+.hp-title-row {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-5);
+}
+.hp-title {
+  margin: 0;
+  font-weight: 800;
+  line-height: 1.15;
+  font-size: var(--font-size-base);
+  color: var(--text-primary);
+}
+.hp-badge {
+  font-size: var(--font-size-xs);
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .03em;
+  color: #fff;
+  background: var(--tag-accent, var(--color-secondary));
+}
+.hp-desc {
+  margin: var(--space-2) 0 0;
+  color: var(--text-secondary);
+  font-size: var(--font-size-xs);
+  line-height: 1.3;
+}
+
+/* Updated line */
+.hp-updated {
+  margin-top: var(--space-2);
+  padding-top: var(--space-3);
+  border-top: 1px solid var(--border-color);
+  font-size: var(--font-size-xs);
+  color: var(--text-muted);
+}
+
+/* Tag → accent mapping */
+.hp-card[data-tag="ai"]        { --tag-accent: var(--color-primary); }
+.hp-card[data-tag="analytics"] { --tag-accent: var(--color-secondary); }
+.hp-card[data-tag="ops"]       { --tag-accent: var(--color-warning); }
+.hp-card[data-tag="data"]      { --tag-accent: var(--color-tertiary); }
+.hp-card[data-tag="admin"]     { --tag-accent: var(--color-success); }
+.hp-card[data-tag="it"]        { --tag-accent: var(--color-secondary); }
+
+/* ===== Thin white scrollbars (both columns) ===== */
+.hp-rail,
+.hp-main {
+  scrollbar-width: thin;                           /* Firefox */
+  scrollbar-color: rgba(255,255,255,0.7) transparent;
+  scrollbar-gutter: stable both-edges;
+}
+
+.hp-rail::-webkit-scrollbar,
+.hp-main::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+.hp-rail::-webkit-scrollbar-track,
+.hp-main::-webkit-scrollbar-track {
+  background: transparent;
+}
+.hp-rail::-webkit-scrollbar-thumb,
+.hp-main::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.75);
+  border-radius: 999px;
+}
+.hp-rail::-webkit-scrollbar-thumb:hover,
+.hp-main::-webkit-scrollbar-thumb:hover {
+  background: rgba(255,255,255,0.9);
+}
+
+/* Add a middle resizer column without breaking your existing grid/flex */
+.hp-shell {
+  /* grid-template-columns is overridden inline by the component
+     to: [sidebar px] [6px resizer] [1fr main] */
+  grid-template-rows: 1fr;
+}
+
+/* Prevent accidental text selection while dragging */
+.hp.is-dragging {
+  user-select: none;
+  cursor: col-resize;
+}
+
+/* Sidebar should scroll normally and respect min width set in JS */
+.hp-rail {
+  min-width: 0;        /* allow content to shrink within its column */
+  overflow-y: auto;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+/* Resizer strip */
+.hp-resizer {
+  width: 6px;
+  cursor: col-resize;
+  position: relative;
+  background: transparent;   /* keep it unobtrusive */
+}
+.hp-resizer::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: 1;
+  transition: opacity var(--transition-fast, 120ms);
+  background: linear-gradient(
+    to right,
+    transparent 0%,
+    rgba(255,255,255,0.06) 45%,
+    rgba(255,255,255,0.18) 50%,
+    rgba(255,255,255,0.06) 55%,
+    transparent 100%
+  );
+}
+.hp-resizer:hover::after,
+.hp.is-dragging .hp-resizer::after {
+  opacity: 1;
+}
+
+/* ===== Collapse side menu on small screens ===== */
+@media (max-width: 900px) {
+  /* Hide the rail and the resizer strip */
+  .hp-rail,
+  .hp-resizer {
+    display: none !important;
+  }
+
+  /* Make the shell a single column (override inline style) */
+  .hp-shell {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Ensure main fills and scrolls normally */
+  .hp-main {
+    overflow-y: auto;
+  }
+}

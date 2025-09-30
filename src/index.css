@@ -1,0 +1,58 @@
+/* ========= Minimal global reset ========= */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* ========= Root sizing ========= */
+html, body, #root {
+  height: 100%;
+}
+
+/* ========= Base html/body ========= */
+html {
+  /* keep default zoom behavior consistent */
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+               Ubuntu, Cantarell, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* these rely on tokens defined in App.css; includes safe fallbacks */
+  background: var(--bg-base, #000); 
+  color: var(--text-primary, #f5fbff);
+
+  /* let the main app decide what scrolls; most pages will let .main-content scroll */
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  /* safe area support on iOS */
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+/* ========= App root layout ========= */
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ========= Accessibility niceties (tiny but useful) ========= */
+:focus-visible {
+  outline: 2px solid var(--color-primary, #19d9ff);
+  outline-offset: 2px;
+}
+
+/* better selection contrast on dark */
+::selection {
+  background: rgba(25, 217, 255, 0.35);
+  color: #fff;
+}
