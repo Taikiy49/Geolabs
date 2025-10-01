@@ -5,13 +5,34 @@ import homepageCards from "../components/HomePageCards";
 import "../styles/HomePage.css";
 
 // Visible filter labels (what the user sees)
-const TAGS = ["All", "AI", "Analytics", "Ops", "Data", "Admin", "IT"];
+const TAGS = ["All", "AI", "Analytics", "Ops", "Admin", "IT"];
 
 // Sidebar resizer constraints
 const MIN_WIDTH = 200;
 const MAX_WIDTH = 560;
 
 const norm = (s = "") => String(s).trim().toLowerCase();
+
+// --- NEW: simple media query hook to switch descriptions on wide screens ---
+function useMedia(query) {
+  const getMatch = () =>
+    typeof window !== "undefined" && "matchMedia" in window
+      ? window.matchMedia(query).matches
+      : false;
+  const [matches, setMatches] = useState(getMatch);
+  useEffect(() => {
+    const m = window.matchMedia(query);
+    const onChange = () => setMatches(m.matches);
+    if (m.addEventListener) m.addEventListener("change", onChange);
+    else m.addListener(onChange); // Safari fallback
+    setMatches(m.matches);
+    return () => {
+      if (m.removeEventListener) m.removeEventListener("change", onChange);
+      else m.removeListener(onChange);
+    };
+  }, [query]);
+  return matches;
+}
 
 export default function HomePage() {
   const navigate = useNavigate();
@@ -81,6 +102,9 @@ export default function HomePage() {
     }
   };
 
+  // NEW: decide when to show long descriptions
+  const isWide = useMedia("(min-width: 1200px)");
+
   return (
     <div className={`hp ${dragging ? "is-dragging" : ""}`}>
       {/* Middle 6px resizer column; CSS media query will collapse on mobile */}
@@ -101,7 +125,7 @@ export default function HomePage() {
                     key={t}
                     type="button"
                     className={`hp-chip-btn ${isActive ? "is-active" : ""}`}
-                    data-tag={norm(t)}              // ← drives accent color
+                    data-tag={norm(t)} // ← drives accent color
                     onClick={() => setActiveTag(t)}
                     aria-pressed={isActive}
                     aria-label={`Filter by ${t}`}
@@ -129,30 +153,6 @@ export default function HomePage() {
             </select>
           </section>
 
-          {/* Status (example) */}
-          <section className="hp-rail-section">
-            <h3 className="hp-rail-title">Status</h3>
-            <div className="hp-status">
-              <div className="hp-status-row">
-                <span className="hp-dot ok" aria-hidden />
-                <span>AI Service</span>
-                <span className="hp-status-pill">OK</span>
-              </div>
-              <div className="hp-status-row">
-                <span className="hp-dot" aria-hidden />
-                <span>Indexer</span>
-                <span className="hp-status-pill">Idle</span>
-              </div>
-              <div className="hp-status-row">
-                <span className="hp-dot ok" aria-hidden />
-                <span>Storage</span>
-                <span className="hp-status-pill">Healthy</span>
-              </div>
-              <div className="hp-meter" aria-label="Storage usage">
-                <span style={{ width: "48%" }} />
-              </div>
-            </div>
-          </section>
         </aside>
 
         {/* RESIZER */}
@@ -179,6 +179,11 @@ export default function HomePage() {
             {filteredSorted.map((card) => {
               const go = () => card.path && navigate(card.path);
               const tagLC = norm(card.tag);
+              const desc =
+                isWide && card.descriptionLong
+                  ? card.descriptionLong
+                  : card.description;
+
               return (
                 <button
                   key={card.label}
@@ -187,7 +192,7 @@ export default function HomePage() {
                   onClick={go}
                   onKeyDown={(e) => card.path && onKeyActivate(e, go)}
                   aria-label={card.path ? `Open ${card.label}` : card.label}
-                  data-tag={tagLC}           // ← drives card accent color
+                  data-tag={tagLC} // ← drives card accent color
                 >
                   <div className="hp-head">
                     <div className="hp-chip" aria-hidden>
@@ -200,9 +205,7 @@ export default function HomePage() {
                         {card.tag && <span className="hp-badge">{card.tag}</span>}
                       </div>
 
-                      {card.description && (
-                        <p className="hp-desc">{card.description}</p>
-                      )}
+                      {desc && <p className="hp-desc">{desc}</p>}
                     </div>
                   </div>
 

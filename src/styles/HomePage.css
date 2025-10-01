@@ -46,7 +46,7 @@
 
 /* Base chip */
 .hp-chip-btn {
-  height: 22px;
+  height: 22px; 
   padding: 0 var(--space-3);
   border-radius: var(--radius);
   border: 1px solid var(--border-color);
@@ -102,10 +102,9 @@
 /* tag → accent mapping for chips (uses App.css accents) */
 .hp-chip-btn[data-tag="ai"]         { --chip-accent: var(--color-cerulean); }
 .hp-chip-btn[data-tag="analytics"]  { --chip-accent: var(--color-violet); }
-.hp-chip-btn[data-tag="ops"]        { --chip-accent: var(--color-mint); }
-.hp-chip-btn[data-tag="data"]       { --chip-accent: var(--color-amber); }
+.hp-chip-btn[data-tag="ops"]        { --chip-accent: var(--color-amber); }
 .hp-chip-btn[data-tag="admin"]      { --chip-accent: var(--color-rose); }
-.hp-chip-btn[data-tag="it"]         { --chip-accent: var(--color-cyan); }
+.hp-chip-btn[data-tag="it"]         { --chip-accent: var(--color-mint); }
 
 /* extra categories leveraging full 8-color palette */
 .hp-chip-btn[data-tag="security"]   { --chip-accent: var(--color-fuchsia); }
@@ -209,7 +208,7 @@
 .hp-grid {
   flex: 1 1 auto;
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: var(--space-3);
 }
 
@@ -243,9 +242,10 @@
 
 /* Head */
 .hp-head {
+  margin-top: auto; margin-bottom: auto;
   display: flex;
   align-items: center;
-  gap: var(--space-4);
+  gap: var(--space-5);
 }
 
 /* Icon chip on card */
@@ -263,7 +263,7 @@
 }
 
 /* Title + badge + desc */
-.hp-txt { min-width: 0; }
+.hp-txt { min-width: 0; margin: 0 auto;}
 
 .hp-title-row {
   display: inline-flex;
@@ -309,10 +309,9 @@
 /* Tag → accent mapping (cards) */
 .hp-card[data-tag="ai"]         { --tag-accent: var(--color-cerulean); }
 .hp-card[data-tag="analytics"]  { --tag-accent: var(--color-violet); }
-.hp-card[data-tag="ops"]        { --tag-accent: var(--color-mint); }
-.hp-card[data-tag="data"]       { --tag-accent: var(--color-amber); }
+.hp-card[data-tag="ops"]        { --tag-accent: var(--color-amber); }
 .hp-card[data-tag="admin"]      { --tag-accent: var(--color-rose); }
-.hp-card[data-tag="it"]         { --tag-accent: var(--color-cyan); } /* rose */
+.hp-card[data-tag="it"]         { --tag-accent: var(--color-mint); } /* rose */
 
 
 
