@@ -5,7 +5,6 @@
   z-index: 3000;
   background: var(--bg-card-2);
   border-bottom: 1px solid var(--border-color);
-  box-shadow: 0 6px 16px rgba(0,0,0,.32);
 }
 
 /* Single row, compact */

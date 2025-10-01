@@ -501,9 +501,7 @@ export default function ReportsBinder() {
               <th className="rb-th">
                 <input type="checkbox" checked={allChecked} onChange={toggleSelectAll} />
               </th>
-              <th className="rb-th" onClick={() => toggleSort("date")}>
-                Date {sortBy === "date" ? (sortDir === "ASC" ? "▲" : "▼") : ""}
-              </th>
+  
               <th className="rb-th" onClick={() => toggleSort("work_order")}>
                 W.O. {sortBy === "work_order" ? (sortDir === "ASC" ? "▲" : "▼") : ""}
               </th>
@@ -532,20 +530,6 @@ export default function ReportsBinder() {
                       onChange={() => toggleRow(r.id)}
                     />
                   </td>
-
-                  {/* Date */}
-                  <td>
-                    {isEdit ? (
-                      <EditableCell
-                        type="date"
-                        value={editDraft.date}
-                        onChange={(v) => setEditDraft({ ...editDraft, date: v })}
-                      />
-                    ) : (
-                      formatDate(r.date)
-                    )}
-                  </td>
-
                   {/* Work Order */}
                   <td className="rb-mono">
                     {isEdit ? (

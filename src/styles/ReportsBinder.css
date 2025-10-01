@@ -1,74 +1,279 @@
-/* -------------------------------
+/* --------------------------------------------
    src/styles/ReportsBinder.css
-   Compact, token-only styling
--------------------------------- */
+   Compact XS layout with full-width scrollable list
+--------------------------------------------- */
 
-/* Layout shell */
-.rb-wrap{display:flex;flex-direction:column;min-height:100%;color:var(--text-primary);}
+/* ===== Layout shell ===== */
+.rb-wrap{
+  display:flex;
+  flex-direction:column;
+  height:100%;
+  min-height:0;                  /* so the inner scroller can shrink */
+  color:var(--text-primary);
+  padding:0 var(--space-3);      /* subtle gutters */
+}
 
-/* Top bar */
-.rb-topbar{display:flex;align-items:center;justify-content:space-between;gap:var(--space-2);padding:var(--space-3);background:var(--bg-card);border-bottom:1px solid var(--border-color);} 
-.rb-filters,.rb-meta{display:flex;align-items:center;gap:var(--space-2);flex-wrap:wrap}
+/* ===== Top bar ===== */
+.rb-topbar{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:var(--space-2);
+  padding:var(--space-2) var(--space-3);
+  background:var(--bg-card);
+  border:1px solid var(--border-color);
+  border-radius:var(--radius);
+  margin:var(--space-2) 0;
+}
 
-/* Inputs / Selects */
-.rb-input,.rb-select{height:28px;padding:0 var(--space-3);background:var(--bg-card-2);color:var(--text-primary);border:1px solid var(--border-color);border-radius:var(--radius);font-size:var(--font-size-sm);}
-.rb-input::placeholder{color:var(--text-muted)}
-.rb-select{min-width:fit-content}
-.rb-checkbox{display:inline-flex;align-items:center;gap:var(--space-2);color:var(--text-secondary);font-size:var(--font-size-xs)}
+.rb-filters,
+.rb-meta{
+  display:flex;
+  align-items:center;
+  gap:var(--space-2);
+  flex-wrap:wrap;
+}
 
-/* Buttons */
-.rb-btn{height:28px;padding:0 var(--space-3);border-radius:var(--radius);border:1px solid var(--border-color);background:var(--bg-card-2);color:var(--text-primary);font-size:var(--font-size-sm);cursor:pointer}
-.rb-btn:hover{background:var(--bg-hover)}
-.rb-btn-ghost{background:transparent}
-.rb-btn.danger{color:var(--color-warning)}
+/* ===== Controls (XS) ===== */
+.rb-input,
+.rb-select{
+  height:24px;                                   /* compact */
+  padding:0 var(--space-2);
+  background:var(--bg-card-2);
+  color:var(--text-primary);
+  border:1px solid var(--border-color);
+  border-radius:var(--radius);
+  font-size:var(--font-size-xs);
+  line-height:1;
+}
+.rb-input::placeholder{ color:var(--text-muted); }
+.rb-select{ min-width:fit-content; }
 
-/* Health banners */
-.rb-health{margin:var(--space-3);padding:var(--space-3);border-radius:var(--radius);border:1px dashed var(--border-color);background:var(--bg-card-2);font-size:var(--font-size-xs)}
-.rb-health-warn{color:var(--color-warning)}
-.rb-health-bad{color:var(--color-warning)}
+.rb-checkbox{
+  display:inline-flex;
+  align-items:center;
+  gap:var(--space-2);
+  color:var(--text-secondary);
+  font-size:var(--font-size-xs);
+}
 
-/* Inline New Row */
-.rb-newrow{display:grid;grid-template-columns:repeat(7,minmax(120px,1fr)) auto auto;gap:var(--space-2);padding:var(--space-3);background:var(--bg-card);border-top:1px solid var(--border-color);border-bottom:1px solid var(--border-color)}
-.rb-input-inline{height:26px;font-size:var(--font-size-sm);padding:0 var(--space-2)}
+/* ===== Buttons (XS) ===== */
+.rb-btn{
+  height:24px;
+  padding:0 var(--space-2);
+  border-radius:var(--radius);
+  border:1px solid var(--border-color);
+  background:var(--bg-card-2);
+  color:var(--text-primary);
+  font-size:var(--font-size-xs);
+  cursor:pointer;
+  transition:background var(--transition-fast), transform var(--transition-fast), border-color var(--transition-fast);
+}
+.rb-btn:hover{
+  background:var(--bg-hover);
+  transform:translateY(-1px);
+  border-color:color-mix(in oklab, var(--color-primary) 24%, var(--border-color));
+}
+.rb-btn-ghost{ background:transparent; }
+.rb-btn.danger{ color:var(--color-warning); }
 
-/* Table */
-.rb-table-wrap{flex:1 1 auto;overflow:auto;margin:var(--space-3);background:var(--bg-card);border:1px solid var(--border-color);border-radius:var(--radius)}
-.rb-table{width:100%;min-width:760px;border-collapse:collapse;table-layout:fixed;font-size:var(--font-size-sm)}
-.rb-th{position:sticky;top:0;background:var(--bg-card-2);color:var(--text-secondary);padding:var(--space-2);text-align:left;border-bottom:1px solid var(--border-color);white-space:nowrap}
-.rb-table td{padding:var(--space-2);border-bottom:1px dashed var(--border-color);color:var(--text-primary);vertical-align:middle;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.rb-editing td{background:var(--bg-hover)}
-.rb-mono{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace}
+/* ===== Health banners ===== */
+.rb-health{
+  margin:0 0 var(--space-2);
+  padding:var(--space-2) var(--space-3);
+  border-radius:var(--radius);
+  border:1px dashed var(--border-color);
+  background:var(--bg-card-2);
+  font-size:var(--font-size-xs);
+}
+.rb-health-warn{ color:var(--color-warning); }
+.rb-health-bad{ color:var(--color-warning); }
+
+/* ===== Inline New Row (XS) ===== */
+.rb-newrow{
+  display:grid;
+  grid-template-columns:repeat(7, minmax(120px, 1fr)) auto auto;
+  gap:var(--space-2);
+  padding:var(--space-2) var(--space-3);
+  background:var(--bg-card);
+  border:1px solid var(--border-color);
+  border-radius:var(--radius);
+  margin-bottom:var(--space-2);
+}
+.rb-input-inline{
+  height:22px;
+  font-size:var(--font-size-xs);
+  padding:0 var(--space-2);
+}
+
+/* ===== Table container (the scroller) ===== */
+.rb-table-wrap{
+  flex:1 1 auto;                 /* fill remaining space */
+  min-height:0;                  /* allow to shrink -> enables scrolling */
+  overflow:auto;                 /* the ONLY vertical scroller */
+  width:100%;                    /* full width */
+  background:var(--bg-card);
+  border:1px solid var(--border-color);
+  border-radius:var(--radius);
+}
+
+/* ===== Table ===== */
+.rb-table{
+  width:100%;
+  font-size:var(--font-size-xs); /* XS everywhere */
+}
+
+.rb-th{
+  position:sticky; top:0; z-index:1;
+  background:var(--bg-card-2);
+  color:var(--text-secondary);
+  padding:var(--space-2);
+  text-align:left;
+  border-bottom:1px solid var(--border-color);
+  white-space:nowrap;
+  user-select:none;
+  cursor:pointer;
+}
+.rb-th:first-child{ width:30px; cursor:default; }
+
+.rb-table td{
+  padding:var(--space-2);
+  border-bottom:1px dashed var(--border-color);
+  color:var(--text-primary);
+  vertical-align:middle;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+
+.rb-editing td{ background:var(--bg-hover); }
+
+.rb-mono{
+  font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+}
 
 /* Row actions */
-.rb-actions{display:inline-flex;gap:var(--space-2);white-space:nowrap}
-.rb-iconbtn{height:24px;padding:0 var(--space-2);border-radius:var(--radius);border:1px solid var(--border-color);background:var(--bg-card-2);color:var(--text-primary);font-size:var(--font-size-xs);cursor:pointer}
-.rb-iconbtn:hover{background:var(--bg-hover)}
-.rb-iconbtn.danger{color:var(--color-warning)}
-
-/* Empty */
-.rb-empty{text-align:center;color:var(--text-muted);padding:var(--space-4) 0}
-
-/* Pager */
-.rb-pager{display:flex;align-items:center;justify-content:center;gap:var(--space-2);padding:var(--space-4) 0}
-.rb-page{color:var(--text-secondary);font-weight:600}
-
-/* Modal */
-.rb-modal{position:fixed;inset:0;background:rgba(0,0,0,.35);display:grid;place-items:center;z-index:10}
-.rb-modal-card{width:min(520px,92vw);background:var(--bg-card);border:1px solid var(--border-color);border-radius:var(--radius);padding:var(--space-4)}
-.rb-modal-title{font-weight:700;margin-bottom:var(--space-2);color:var(--text-primary)}
-.rb-modal-body{color:var(--text-secondary);font-size:var(--font-size-sm)}
-.rb-modal-actions{display:flex;justify-content:flex-end;gap:var(--space-2);margin-top:var(--space-3)}
-
-/* Toast */
-.rb-toast{position:fixed;left:50%;transform:translateX(-50%);bottom:var(--space-6);background:var(--bg-card-2);border:1px solid var(--border-color);color:var(--text-primary);border-radius:var(--radius);padding:var(--space-2) var(--space-3);display:inline-flex;align-items:center;gap:var(--space-2)}
-
-/* Compact density hook */
-body.density-compact .rb-input,body.density-compact .rb-select,body.density-compact .rb-btn{height:26px}
-body.density-compact .rb-iconbtn{height:22px}
-
-/* Responsive */
-@media (max-width: 900px){
-  .rb-topbar{padding:var(--space-2)}
-  .rb-newrow{grid-template-columns:repeat(2,minmax(120px,1fr))}
-  .rb-table-wrap{margin:var(--space-2)}
+.rb-actions{
+  display:inline-flex;
+  gap:var(--space-2);
+  white-space:nowrap;
 }
+.rb-iconbtn{
+  height:22px;
+  padding:0 var(--space-2);
+  border-radius:var(--radius);
+  border:1px solid var(--border-color);
+  background:var(--bg-card-2);
+  color:var(--text-primary);
+  font-size:var(--font-size-xs);
+  cursor:pointer;
+  transition:background var(--transition-fast), transform var(--transition-fast), border-color var(--transition-fast);
+}
+.rb-iconbtn:hover{
+  background:var(--bg-hover);
+  transform:translateY(-1px);
+  border-color:color-mix(in oklab, var(--color-primary) 24%, var(--border-color));
+}
+.rb-iconbtn.danger{ color:var(--color-warning); }
+
+/* Empty state */
+.rb-empty{
+  text-align:center;
+  color:var(--text-muted);
+  padding:var(--space-4) 0;
+  font-size:var(--font-size-xs);
+}
+
+/* ===== Pager (XS) ===== */
+.rb-pager{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:var(--space-2);
+  padding:var(--space-2)  var(--space-4);
+}
+.rb-page{
+  color:var(--text-secondary);
+  font-weight:600;
+  font-size:var(--font-size-xs);
+}
+
+/* ===== Modal ===== */
+.rb-modal{
+  position:fixed; inset:0;
+  background:rgba(0,0,0,.35);
+  display:grid; place-items:center;
+  z-index:10;
+}
+.rb-modal-card{
+  width:min(520px,92vw);
+  background:var(--bg-card);
+  border:1px solid var(--border-color);
+  border-radius:var(--radius);
+  padding:var(--space-4);
+  box-shadow:var(--shadow-lg);
+}
+.rb-modal-title{
+  font-weight:700;
+  margin-bottom:var(--space-2);
+  color:var(--text-primary);
+  font-size:var(--font-size-sm);
+}
+.rb-modal-body{
+  color:var(--text-secondary);
+  font-size:var(--font-size-xs);
+}
+.rb-modal-actions{
+  display:flex;
+  justify-content:flex-end;
+  gap:var(--space-2);
+  margin-top:var(--space-3);
+}
+
+/* ===== Toast ===== */
+.rb-toast{
+  position:fixed;
+  left:50%; transform:translateX(-50%);
+  bottom:var(--space-6);
+  background:var(--bg-card-2);
+  border:1px solid var(--border-color);
+  color:var(--text-primary);
+  border-radius:var(--radius);
+  padding:var(--space-2) var(--space-3);
+  display:inline-flex;
+  align-items:center;
+  gap:var(--space-2);
+  font-size:var(--font-size-xs);
+  box-shadow:var(--shadow-md);
+}
+
+/* ===== Compact density hook ===== */
+body.density-compact .rb-input,
+body.density-compact .rb-select,
+body.density-compact .rb-btn{ height:22px; }
+body.density-compact .rb-iconbtn{ height:20px; }
+
+/* ===== Nice thin scrollbars for the list ===== */
+.rb-table-wrap{
+  scrollbar-width:thin;                                  /* Firefox */
+  scrollbar-color:rgba(255,255,255,0.35) transparent;
+}
+.rb-table-wrap::-webkit-scrollbar{ width:8px; height:8px; }
+.rb-table-wrap::-webkit-scrollbar-track{ background:transparent; }
+.rb-table-wrap::-webkit-scrollbar-thumb{
+  background:rgba(255,255,255,0.18);
+  border-radius:8px;
+  border:2px solid transparent;
+  background-clip:padding-box;
+}
+.rb-table-wrap::-webkit-scrollbar-thumb:hover{ background:rgba(255,255,255,0.28); }
+
+/* ===== Responsive ===== */
+@media (max-width: 900px){
+  .rb-topbar{ padding:var(--space-2) var(--space-2); }
+  .rb-newrow{
+    grid-template-columns:repeat(2, minmax(120px, 1fr));
+    padding:var(--space-2);
+  }
+}
+

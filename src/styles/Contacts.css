@@ -1,225 +1,242 @@
 /* =========================================================
-   Contacts (contacts-): Futuristic, aligned with App.css
-   Uses global tokens from App.css (no local :root here)
-   ========================================================= */
+   Contacts — Compact XXS UI (token-only)
+   - No title header (hidden)
+   - One scroll area: the table wrapper
+   - Uses only tokens from App.css
+========================================================= */
 
-/* ---------- Wrapper ---------- */
-.contacts-wrap {
+/* ---------- Wrapper & page structure ---------- */
+.contacts-wrap{
+  /* derive an xxs size from your xs token */
+  --fs-xxs: calc(var(--font-size-xs) * 0.92);
+
   position: relative;
-  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 0;                /* allow inner scroller to shrink */
   color: var(--text-primary);
 }
-.contacts-wrap::before {
-  content: "";
-  position: absolute; inset: 0; z-index: 0;
-  background: var(--bg-page, linear-gradient(135deg,#0a0f1d,#141d2b,#1d2b3b));
-  pointer-events: none;
+
+/* Soft page background */
+.contacts-wrap::before{
+  content:"";
+  position:absolute; inset:0; z-index:0;
+  background: var(--bg-page);
+  pointer-events:none;
 }
 
+/* keep content above the bg overlay */
 .contacts-topbar,
 .contacts-meta,
 .contacts-tablewrap,
-.contacts-pager { position: relative; z-index: 1; }
+.contacts-pager{ position:relative; z-index:1; }
 
-/* ---------- Topbar ---------- */
-.contacts-topbar {
-  display: flex; align-items: center; justify-content: space-between;
-  gap: var(--space-3);
-  padding: var(--space-3) var(--space-4);
+/* ---------- Topbar (filters/actions) ---------- */
+.contacts-topbar{
+  display:flex; align-items:center; justify-content:space-between;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-3);
   background: var(--bg-card);
   border-bottom: 1px solid var(--border-color);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  font-size: var(--fs-xxs);
+}
+.contacts-left,
+.contacts-right{
+  display:flex; align-items:center; gap: var(--space-2); flex-wrap:wrap;
 }
 
-.contacts-left { display: flex; align-items: center; gap: var(--space-3); flex-wrap: wrap; }
-.contacts-right { display: flex; align-items: center; gap: var(--space-3); flex-wrap: wrap; }
+/* Hide the header text entirely */
+.contacts-heading{ display:none !important; }
 
-.contacts-heading {
-  font-weight: 850; letter-spacing: .02em;
-  background: linear-gradient(135deg, var(--color-primary), var(--color-secondary), var(--color-tertiary));
-  -webkit-background-clip: text; background-clip: text;
-  -webkit-text-fill-color: transparent;
-  filter: drop-shadow(0 0 10px rgba(0,212,255,.28));
-  font-size: var(--font-size-base);
-}
-
-.contacts-controls { display: flex; align-items: center; gap: var(--space-3); }
-
-/* ---------- Inputs / Selects / Buttons ---------- */
+/* ---------- Controls: inputs / selects / buttons ---------- */
 .contacts-input,
-.contacts-select {
-  height: 32px;
-  padding: 0 var(--space-3);
-  background: rgba(17,24,39,.92);
+.contacts-select{
+  height: 22px;
+  padding: 0 var(--space-2);
+  background: var(--bg-card-2);
   color: var(--text-primary);
   border: 1px solid var(--border-color);
   border-radius: var(--radius);
-  font-size: var(--font-size-sm);
+  font-size: var(--fs-xxs);
   outline: none;
-  transition: border-color .15s ease, box-shadow .15s ease, background .15s ease;
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast), background var(--transition-fast);
 }
-.contacts-input::placeholder { color: var(--text-muted); }
+.contacts-input::placeholder{ color: var(--text-muted); }
 .contacts-input:focus,
-.contacts-select:focus {
+.contacts-select:focus{
   border-color: var(--color-primary);
-  box-shadow: 0 0 0 3px rgba(0,212,255,.18);
-  background: rgba(17,24,39,.98);
+  box-shadow: 0 0 0 2px color-mix(in oklab, var(--color-primary) 24%, transparent);
+  background: var(--bg-card);
 }
-.contacts-select.right { margin-left: auto; }
+.contacts-select.right{ margin-left:auto; }
 
-.contacts-btn {
-  height: 32px; padding: 0 var(--space-3);
+.contacts-btn{
+  height: 22px;
+  padding: 0 var(--space-2);
   border-radius: var(--radius);
   border: 1px solid var(--border-color);
-  background: rgba(30,41,59,.85);
+  background: var(--bg-card-2);
   color: var(--text-primary);
-  font-size: var(--font-size-sm);
+  font-size: var(--fs-xxs);
   cursor: pointer;
-  display: inline-flex; align-items: center; gap: var(--space-2);
-  transition: transform .12s ease, border-color .12s ease, background .12s ease, box-shadow .12s ease;
+  display:inline-flex; align-items:center; gap: var(--space-2);
+  transition: transform var(--transition-fast), border-color var(--transition-fast), background var(--transition-fast), box-shadow var(--transition-fast);
 }
-.contacts-btn:hover {
+.contacts-btn:hover{
   transform: translateY(-1px);
   border-color: var(--color-primary);
-  background: rgba(51,65,85,.9);
-  box-shadow: 0 0 12px rgba(0,212,255,.18);
+  background: var(--bg-hover);
+  box-shadow: var(--shadow-md);
 }
-.contacts-btn.ghost { background: transparent; }
+.contacts-btn.ghost{ background: transparent; }
 
-/* ---------- Column menu ---------- */
-.contacts-colmenu {
-  position: relative;
-  display: grid; place-items: center;
-  width: 32px; height: 32px;
+/* ---------- Column visibility popover ---------- */
+.contacts-colmenu{
+  position:relative; display:grid; place-items:center;
+  width: 22px; height: 22px;
   border: 1px solid var(--border-color);
   border-radius: var(--radius);
-  background: rgba(30,41,59,.85);
+  background: var(--bg-card-2);
   color: var(--text-primary);
-  cursor: pointer;
-  outline: none;
+  cursor:pointer;
+  outline:none;
 }
 .contacts-colmenu:hover,
-.contacts-colmenu:focus-within { border-color: var(--color-primary); }
+.contacts-colmenu:focus-within{ border-color: var(--color-primary); }
+.contacts-colicon{ font-size: .9rem; opacity:.9; }
 
-.contacts-colicon { font-size: .9rem; opacity: .9; }
-
-.contacts-colpanel {
-  position: absolute; right: 0; top: calc(100% + var(--space-2));
-  width: 220px; max-height: 260px; overflow: auto;
+.contacts-colpanel{
+  position:absolute; right:0; top: calc(100% + var(--space-2));
+  width: 220px; max-height: 240px; overflow:auto;
   background: var(--bg-card);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-lg);
   padding: var(--space-2);
   box-shadow: var(--shadow-md);
-  opacity: 0; transform: translateY(-6px);
-  pointer-events: none;
-  transition: opacity .14s ease, transform .14s ease;
-  z-index: 10;
+  opacity:0; transform: translateY(-4px);
+  pointer-events:none;
+  transition: opacity var(--transition-fast), transform var(--transition-fast);
+  z-index:10;
 }
 .contacts-colmenu:hover .contacts-colpanel,
-.contacts-colmenu:focus-within .contacts-colpanel {
-  opacity: 1; transform: translateY(0);
-  pointer-events: auto;
+.contacts-colmenu:focus-within .contacts-colpanel{
+  opacity:1; transform: translateY(0);
+  pointer-events:auto;
 }
-.contacts-colrow {
-  display: flex; align-items: center; gap: var(--space-2);
-  font-size: var(--font-size-sm);
+.contacts-colrow{
+  display:flex; align-items:center; gap: var(--space-2);
+  font-size: var(--fs-xxs);
   color: var(--text-secondary);
   padding: var(--space-1) var(--space-1);
   border-radius: calc(var(--radius) - 2px);
 }
-.contacts-colrow:hover { background: rgba(0,212,255,.08); }
+.contacts-colrow:hover{ background: color-mix(in oklab, var(--color-primary) 10%, transparent); }
 
-/* ---------- Meta / Load more ---------- */
-.contacts-meta {
-  display: flex; align-items: center; justify-content: space-between;
-  padding: var(--space-2) var(--space-4);
+/* ---------- Meta & load-more ---------- */
+.contacts-meta{
+  display:flex; align-items:center; justify-content:space-between;
+  padding: var(--space-2) var(--space-3);
   color: var(--text-secondary);
+  font-size: var(--fs-xxs);
 }
-.contacts-loadmore { display: flex; gap: var(--space-2); flex-wrap: wrap; }
+.contacts-loadmore{ display:flex; gap: var(--space-2); flex-wrap:wrap; }
 
-/* ---------- Table ---------- */
-.contacts-tablewrap {
-  margin: var(--space-3) var(--space-4);
+/* ---------- Table area (THE scroller) ---------- */
+.contacts-tablewrap{
+  flex: 1 1 auto;        /* fill remaining height */
+  min-height: 0;         /* allow to shrink */
+  overflow: auto;        /* the ONLY vertical scroller */
+  margin: var(--space-2) var(--space-3);
   background: var(--bg-card);
   border: 1px solid var(--border-color);
   border-radius: var(--radius);
   box-shadow: var(--shadow-md);
-  overflow: auto; /* horizontal safety */
 }
 
-.contacts-table {
+/* Table */
+.contacts-table{
   width: 100%;
-  min-width: 860px; /* keep structure; scroll if narrow */
+  min-width: 820px;      /* horizontal scroll safety */
   border-collapse: collapse;
   table-layout: fixed;
-  font-size: var(--font-size-sm);
+  font-size: var(--fs-xxs);
 }
 
-.contacts-th {
+.contacts-th{
   position: sticky; top: 0; z-index: 2;
-  background: linear-gradient(180deg, rgba(30,41,59,.92), rgba(17,24,39,.92));
+  background: var(--bg-card-2);
   color: var(--text-secondary);
-  padding: var(--space-4) var(--space-2);
+  padding: var(--space-2) var(--space-2);
   text-align: left;
   border-bottom: 1px solid var(--border-color);
   font-weight: 800; letter-spacing: .01em;
   white-space: nowrap;
   cursor: default;
 }
-.contacts-th.sortable { cursor: pointer; }
-.contacts-th::after {
-  content: "";
-  position: absolute; left: var(--space-2); right: var(--space-2); top: 0; height: 1px;
-  background: linear-gradient(90deg, transparent, var(--color-primary), var(--color-secondary), var(--color-primary), transparent);
-  opacity: .45;
-}
+.contacts-th.sortable{ cursor: pointer; }
 
-.contacts-table td {
-  padding: var(--space-3) var(--space-2);
-  border-bottom: 1px dashed rgba(120,140,170,.25);
+.contacts-table td{
+  padding: var(--space-2) var(--space-2);
+  border-bottom: 1px dashed color-mix(in oklab, var(--text-muted) 30%, transparent);
   color: var(--text-primary);
   vertical-align: middle;
   white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
 }
 
-/* cells */
-.contacts-namecell { display: flex; align-items: center; gap: var(--space-2); }
-.contacts-miniicon { opacity: .85; }
-.contacts-flex { display: flex; align-items: center; gap: var(--space-2); }
-.contacts-nowrap { white-space: nowrap; }
-.contacts-mono {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+/* cells & helpers */
+.contacts-namecell{ display:flex; align-items:center; gap: var(--space-2); }
+.contacts-miniicon{ opacity:.85; }
+.contacts-flex{ display:flex; align-items:center; gap: var(--space-2); }
+.contacts-nowrap{ white-space: nowrap; }
+.contacts-mono{
+  font-family: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
 }
 
-.contacts-empty {
-  text-align: center;
+.contacts-empty{
+  text-align:center;
   color: var(--text-muted);
-  padding: var(--space-6) 0;
+  padding: var(--space-5) 0;
+  font-size: var(--fs-xxs);
 }
 
 /* ---------- Pager ---------- */
-.contacts-pager {
-  display: flex; align-items: center; justify-content: center; gap: var(--space-2);
-  padding: var(--space-5) 0 var(--space-6);
+.contacts-pager{
+  display:flex; align-items:center; justify-content:center; gap: var(--space-2);
+  padding: var(--space-2) 0 var(--space-4);
+  margin: 0 var(--space-3);
+  font-size: var(--fs-xxs);
 }
-.contacts-page { color: var(--text-secondary); font-weight: 800; }
+.contacts-page{ color: var(--text-secondary); font-weight: 800; }
 
 /* ---------- Focus rings ---------- */
 .contacts-input:focus-visible,
 .contacts-select:focus-visible,
 .contacts-btn:focus-visible,
-.contacts-colmenu:focus-visible {
-  outline: none;
-  box-shadow: 0 0 0 3px rgba(0,212,255,.22), 0 0 18px rgba(0,212,255,.18);
-  border-color: var(--color-primary);
+.contacts-colmenu:focus-visible{
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
 }
 
+/* ---------- Nice thin scrollbars on the scroller ---------- */
+.contacts-tablewrap{
+  scrollbar-width: thin;                                /* Firefox */
+  scrollbar-color: rgba(255,255,255,0.35) transparent;
+}
+.contacts-tablewrap::-webkit-scrollbar{ width: 8px; height: 8px; }
+.contacts-tablewrap::-webkit-scrollbar-track{ background: transparent; }
+.contacts-tablewrap::-webkit-scrollbar-thumb{
+  background: rgba(255,255,255,0.18);
+  border-radius: 8px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+.contacts-tablewrap::-webkit-scrollbar-thumb:hover{ background: rgba(255,255,255,0.28); }
+
 /* ---------- Responsive ---------- */
-@media (max-width: 900px) {
-  .contacts-topbar { padding: var(--space-3); gap: var(--space-2); }
-  .contacts-left { gap: var(--space-2); }
-  .contacts-right { gap: var(--space-2); }
-  .contacts-tablewrap { margin: var(--space-3); }
+@media (max-width: 900px){
+  .contacts-topbar{ padding: var(--space-2); gap: var(--space-2); }
+  .contacts-tablewrap{ margin: var(--space-2); }
 }

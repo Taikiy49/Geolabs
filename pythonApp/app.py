@@ -9,6 +9,7 @@ from reports import reports_bp               # has its own url_prefix="/api/repo
 from reports_binder import reports_binder_bp # keep if you need it
 from core_box_inventory import corebox_bp
 from askai import askai_bp                  # <-- file is ask_ai.py, import askai_bp
+from s3 import s3_bp
 
 BASE_DIR = os.path.abspath(os.path.dirname(__file__))
 DB_FILE  = os.path.join(BASE_DIR, "uploads", "chat_history.db")
@@ -59,6 +60,7 @@ def create_app():
         return jsonify({"ok": True})
 
     # ---------- register blueprints ----------
+    app.register_blueprint(s3_bp)
     app.register_blueprint(reports_bp)                 # url_prefix comes from reports.py
     app.register_blueprint(reports_binder_bp)          # if it defines its own prefix, fine
     app.register_blueprint(corebox_bp)                 # if it defines its own prefix, fine
