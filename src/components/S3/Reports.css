@@ -165,24 +165,24 @@
   color: var(--text-primary);
   transform: translateY(-1px);
 }
-.logic-and.active { background: color-mix(in oklab, var(--color-primary) 18%, transparent); }
-.logic-or.active  { background: color-mix(in oklab, var(--color-quaternary) 18%, transparent); }
+.logic-and.active { background: color-mix(in oklab, var(--color-quaternary) 18%, transparent); }
+.logic-or.active  { background: color-mix(in oklab, var(--color-primary) 18%, transparent); }
 
 /* Add button accents to match operator */
 .add-btn.add-and {
-  border-color: color-mix(in oklab, var(--color-primary) 45%, var(--border-color));
-  box-shadow: 0 0 0 1px color-mix(in oklab, var(--color-primary) 22%, transparent) inset;
-}
-.add-btn.add-and:hover {
-  background: color-mix(in oklab, var(--color-primary) 12%, var(--bg-hover));
-}
-
-.add-btn.add-or {
   border-color: color-mix(in oklab, var(--color-quaternary) 45%, var(--border-color));
   box-shadow: 0 0 0 1px color-mix(in oklab, var(--color-quaternary) 22%, transparent) inset;
 }
-.add-btn.add-or:hover {
+.add-btn.add-and:hover {
   background: color-mix(in oklab, var(--color-quaternary) 12%, var(--bg-hover));
+}
+
+.add-btn.add-or {
+  border-color: color-mix(in oklab, var(--color-primary) 45%, var(--border-color));
+  box-shadow: 0 0 0 1px color-mix(in oklab, var(--color-primary) 22%, transparent) inset;
+}
+.add-btn.add-or:hover {
+  background: color-mix(in oklab, var(--color-primary) 12%, var(--bg-hover));
 }
 
 /* -------- Phrase chips -------- */
