@@ -1,5 +1,5 @@
 // src/components/Reports.jsx
-import React, { useEffect, useState, useCallback } from "react";
+import React, { useEffect, useState, useCallback, useMemo } from "react";
 import axios from "axios";
 import {
   FaSearch,
@@ -10,6 +10,7 @@ import {
   FaBookOpen,
   FaChevronDown,
   FaChevronUp,
+  FaPlus,
 } from "react-icons/fa";
 import "./Reports.css";
 
@@ -19,8 +20,30 @@ const API = "/api/reports";
 const cleanTitle = (s = "") =>
   (s.split("/").pop() || s).replace(/\.(pdf|txt|docx?|xlsx?|pptx?|json|csv)$/i, "");
 
+// numeric coercion helper (handles "12" -> 12, ignores NaN)
+const num = (v) => {
+  if (v === null || v === undefined) return null;
+  const n = Number(v);
+  return Number.isFinite(n) ? n : null;
+};
+
+// SQLite FTS-safe phrase quoting: wrap in "..." and double any inner quotes.
+const quotePhrase = (p) => `"${String(p).trim().replace(/"/g, '""')}"`;
+
+// Build a query string from an array of phrases with a boolean operator
+const buildQuery = (arr, op = "AND") =>
+  arr && arr.length ? arr.map(quotePhrase).join(` ${op} `) : "";
+
+// UI helpers
+const stripTxt = (s = "") => String(s).replace(/\.txt$/i, "");
+const truncate = (s = "", n = 50) => (s.length > n ? s.slice(0, n) + "…" : s);
+
 export default function Reports() {
-  const [q, setQ] = useState("");
+  // Phrase builder state
+  const [termInput, setTermInput] = useState("");
+  const [terms, setTerms] = useState([]); // array of phrases
+  const [logicOp, setLogicOp] = useState("AND"); // "AND" | "OR"
+
   const [project, setProject] = useState("");
   const [projects, setProjects] = useState([]);
   const [results, setResults] = useState([]);
@@ -36,19 +59,37 @@ export default function Reports() {
   const [pdfError, setPdfError] = useState("");
 
   // MULTI-PEEK: track open keys and per-key peek data
-  // openKeys: Set of s3_keys that are currently expanded
   const [openKeys, setOpenKeys] = useState(() => new Set());
   /**
-   * peekMap[key] = {
-   *   status: 'idle'|'loading'|'ok'|'error',
-   *   windows: string[],       // HTML per window (already highlighted)
-   *   totalHits: number,       // total occurrences of all terms
-   *   totalWindows: number,    // total windows available (merged)
-   *   nextOffset: number|null, // next window offset for pagination
-   *   err?: string
-   * }
+   * peekMap[key] = { status, windows: string[], totalHits, totalWindows, nextOffset, err? }
    */
   const [peekMap, setPeekMap] = useState({});
+
+  // Build the final FTS query; include pending input automatically, using logicOp
+  const qBuilt = useMemo(() => {
+    const pending = termInput.trim();
+    const all = pending ? [...terms, pending] : terms;
+    return buildQuery(all, logicOp);
+  }, [terms, termInput, logicOp]);
+
+  // compute match count for a row (prefer API hits; fallback to peek totals)
+  const getMatches = useCallback(
+    (r, peek = peekMap) => {
+      const api =
+        num(r.hits) ??
+        num(r.match_count) ??
+        num(r.matches) ??
+        num(r.score) ??
+        num(r.rank);
+      if (api !== null) return api;
+
+      const pk = peek?.[r.s3Key];
+      if (pk && num(pk.totalHits) !== null) return num(pk.totalHits);
+
+      return 0;
+    },
+    [peekMap]
+  );
 
   // Lock background scroll while modal is open
   useEffect(() => {
@@ -68,39 +109,115 @@ export default function Reports() {
     })();
   }, []);
 
-  // Search
-  const search = useCallback(async () => {
-    if (!q.trim()) {
-      setResults([]);
-      setPages(1);
-      setTotal(0);
-      return;
-    }
-    setLoading(true);
-    try {
-      const { data } = await axios.get(`${API}/search`, {
-        params: { q, project, page, page_size: 99999 },
-      });
-      const rows = (data.results || []).map((r) => ({
-        ...r,
-        displayName: cleanTitle(r.filename || r.s3_key || ""),
-      }));
-      setResults(rows);
-      setPages(data.pages || 1);
-      setTotal(data.total || rows.length || 0);
-      // reset peeks when result set changes
-      setOpenKeys(new Set());
-      setPeekMap({});
-    } catch {
-      setResults([]);
-      setPages(1);
-      setTotal(0);
-    } finally {
-      setLoading(false);
-    }
-  }, [q, project, page]);
+  // ---------- define search FIRST (so addTerm can call it) ----------
+  const search = useCallback(
+    async (overrideQ) => {
+      const qToUse = (overrideQ ?? qBuilt).trim();
+      if (!qToUse) {
+        setResults([]);
+        setPages(1);
+        setTotal(0);
+        return;
+      }
+      setLoading(true);
+      try {
+        const { data } = await axios.get(`${API}/search`, {
+          params: { q: qToUse, project, page, page_size: 99999 },
+        });
 
-  const onEnter = (e) => e.key === "Enter" && search();
+        // Normalize each row to always include both s3_key and s3Key
+        const rows = (data.results || []).map((r) => {
+          const s3Key = r.s3_key || r.key || r.s3Key || "";
+          return {
+            ...r,
+            s3_key: s3Key, // compatibility
+            s3Key,         // camelCase for UI
+            displayName: cleanTitle(r.filename || s3Key || ""),
+          };
+        });
+
+        // order by most matches (numeric)
+        rows.sort((a, b) => getMatches(b) - getMatches(a));
+
+        setResults(rows);
+        setPages(data.pages || 1);
+        setTotal(data.total || rows.length || 0);
+
+        // reset peeks when result set changes
+        setOpenKeys(new Set());
+        setPeekMap({});
+      } catch {
+        setResults([]);
+        setPages(1);
+        setTotal(0);
+      } finally {
+        setLoading(false);
+      }
+    },
+    [qBuilt, project, page, getMatches]
+  );
+
+  // Add a phrase (from termInput) to terms and IMMEDIATELY run search
+  const addTerm = useCallback(() => {
+    const t = termInput.trim();
+    if (!t) return;
+
+    if (!terms.includes(t)) {
+      const next = [...terms, t];
+      setTerms(next);
+      setPage(1);
+      const qNext = buildQuery(next, logicOp);
+      search(qNext);
+    } else {
+      setPage(1);
+      search(buildQuery(terms, logicOp));
+    }
+
+    setTermInput("");
+  }, [termInput, terms, logicOp, search]);
+
+  // Remove a phrase
+  const removeTerm = useCallback(
+    (t) => {
+      const next = terms.filter((x) => x !== t);
+      setTerms(next);
+      setPage(1);
+      const qNext = buildQuery(next, logicOp);
+      if (qNext) search(qNext);
+      else {
+        setResults([]);
+        setPages(1);
+        setTotal(0);
+      }
+    },
+    [terms, logicOp, search]
+  );
+
+  // When the logic operator changes, re-run the current search if we have terms
+  useEffect(() => {
+    if (terms.length > 0 || termInput.trim()) {
+      search(buildQuery(terms.concat(termInput.trim() ? [termInput.trim()] : []), logicOp));
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [logicOp]);
+
+  // Re-rank when peek totals arrive
+  useEffect(() => {
+    if (!results?.length) return;
+    setResults((prev) => {
+      const arr = [...prev];
+      arr.sort((a, b) => getMatches(b, peekMap) - getMatches(a, peekMap));
+      return arr;
+    });
+  }, [peekMap, getMatches, results?.length]);
+
+  // Enter in the phrase input: add the phrase (and search)
+  const onPhraseKeyDown = (e) => {
+    if (e.key === "Enter") {
+      e.preventDefault();
+      addTerm();
+    }
+  };
 
   // Helper: get presigned URL for an S3 key
   const getPresignedUrl = async (s3Key) => {
@@ -118,12 +235,9 @@ export default function Reports() {
 
     try {
       const presigned = await getPresignedUrl(s3Key);
-
-      // Use browser PDF viewer options; page-fit avoids “zoomed in”
       const frag = `#page=1&zoom=page-fit${
-        q.trim() ? `&search=${encodeURIComponent(q.trim())}` : ""
+        qBuilt.trim() ? `&search=${encodeURIComponent(qBuilt.trim())}` : ""
       }`;
-
       setViewerUrl(`${presigned}${frag}`);
     } catch {
       setPdfError("Failed to open PDF.");
@@ -143,6 +257,21 @@ export default function Reports() {
 
   // Fetch peek windows (paged)
   const fetchPeek = async (s3Key, opts = {}) => {
+    if (!s3Key) {
+      setPeekMap((m) => ({
+        ...m,
+        __missing__: {
+          status: "error",
+          windows: [],
+          totalHits: 0,
+          totalWindows: 0,
+          nextOffset: 0,
+          err: "Preview unavailable: missing file key.",
+        },
+      }));
+      return;
+    }
+
     const state = peekMap[s3Key] || {};
     const limit = 3; // always load 3 at a time
     const offset = opts.offset ?? state.nextOffset ?? 0;
@@ -158,7 +287,7 @@ export default function Reports() {
 
     try {
       const { data } = await axios.get(`${API}/peek`, {
-        params: { key: s3Key, q, offset, limit },
+        params: { key: s3Key, q: qBuilt, offset, limit },
       });
 
       const windows = data?.windows || [];
@@ -204,7 +333,6 @@ export default function Reports() {
 
     const entry = peekMap[s3Key];
     if (!entry || (entry.status !== "ok" && entry.status !== "loading")) {
-      // first open -> fetch first 3
       fetchPeek(s3Key, { offset: 0 });
     }
   };
@@ -222,25 +350,86 @@ export default function Reports() {
     setPdfError("");
   };
 
+  // Pretty preview of the boolean query for the meta bar
+  const prettyQuery = useMemo(() => {
+    const pending = termInput.trim();
+    const all = pending ? [...terms, pending] : terms;
+    if (!all.length) return "";
+    return all.map((t) => `“${t}”`).join(` ${logicOp} `);
+  }, [terms, termInput, logicOp]);
+
   return (
     <div className="reports-container">
-      {/* Controls */}
+      {/* Sticky controls */}
       <div className="reports-controls">
-        <div className="reports-controls-left">
-          <div className="reports-input-wrap">
+        {/* LEFT: phrase builder */}
+        <div className="controls-left">
+          <div className="term-row">
             <input
               className="reports-input"
-              value={q}
-              placeholder="Search reports…"
-              onChange={(e) => {
-                setQ(e.target.value);
-                setPage(1);
-              }}
-              onKeyDown={onEnter}
+              value={termInput}
+              placeholder='Type a word or phrase…'
+              onChange={(e) => setTermInput(e.target.value)}
+              onKeyDown={onPhraseKeyDown}
               spellCheck={false}
             />
+
+            {/* Logic segmented control */}
+            <div className="logic-toggle" role="group" aria-label="Match operator">
+              <button
+                type="button"
+                className={`logic-chip ${logicOp === "AND" ? "active logic-and" : ""}`}
+                onClick={() => setLogicOp("AND")}
+                title="Match all phrases (AND)"
+                aria-pressed={logicOp === "AND"}
+              >
+                AND
+              </button>
+              <button
+                type="button"
+                className={`logic-chip ${logicOp === "OR" ? "active logic-or" : ""}`}
+                onClick={() => setLogicOp("OR")}
+                title="Match any phrase (OR)"
+                aria-pressed={logicOp === "OR"}
+              >
+                OR
+              </button>
+            </div>
+
+            {/* Add button reflects the selected operator */}
+            <button
+              className={`reports-btn add-btn ${logicOp === "AND" ? "add-and" : "add-or"}`}
+              type="button"
+              onClick={addTerm}
+              title={`Add phrase (${logicOp})`}
+              aria-label={`Add phrase with ${logicOp}`}
+            >
+              <FaPlus style={{ marginRight: 4 }} /> Add ({logicOp})
+            </button>
           </div>
 
+          {terms.length > 0 && (
+            <div className="chip-row">
+              {terms.map((t) => (
+                <span key={t} className={`chip ${logicOp === "AND" ? "chip-and" : "chip-or"}`} title={t}>
+                  <span className="chip-label">{t}</span>
+                  <button
+                    type="button"
+                    className="chip-x"
+                    onClick={() => removeTerm(t)}
+                    aria-label={`Remove ${t}`}
+                    title="Remove phrase"
+                  >
+                    ×
+                  </button>
+                </span>
+              ))}
+            </div>
+          )}
+        </div>
+
+        {/* RIGHT: project filter + search (search to the right of All Projects) */}
+        <div className="controls-right">
           <select
             className="reports-select"
             value={project}
@@ -248,55 +437,94 @@ export default function Reports() {
               setProject(e.target.value);
               setPage(1);
             }}
+            title={stripTxt(project)}
           >
             <option value="">All Projects</option>
-            {projects.map((p) => (
-              <option key={p.project || "(none)"} value={p.project}>
-                {(p.project || "(none)")} ({p.count})
-              </option>
-            ))}
+            {projects.map((p) => {
+              const raw = p.project || "(none)";
+              const full = stripTxt(raw);
+              const shown = truncate(full, 50);
+              return (
+                <option key={raw} value={raw} title={full}>
+                  {shown} ({p.count})
+                </option>
+              );
+            })}
           </select>
-        </div>
 
-        <div className="reports-controls-right">
-          <button className="reports-btn reports-primary" type="button" onClick={search}>
+          <button
+            className="reports-btn reports-primary"
+            type="button"
+            onClick={() => search()}
+            disabled={!qBuilt.trim()}
+            title={qBuilt || "No phrases yet"}
+          >
             <FaSearch style={{ marginRight: 6 }} />
             Search
           </button>
         </div>
       </div>
 
-      {/* Results */}
-      {loading && <div className="reports-loading">Searching…</div>}
-      {!loading && results.length === 0 && q.trim() && (
-        <div className="reports-empty">No results.</div>
-      )}
+      {/* Meta row: left=Query / right=Totals */}
+      {(prettyQuery || (!loading && results.length > 0)) && (
+        <div className="reports-meta-bar">
+          <div className="reports-meta-left">
+            {prettyQuery ? (
+              <>
+                <span className="reports-meta-label">Query:</span>{" "}
+                <span className="reports-meta-query">{prettyQuery}</span>
+                {project && (
+                  <>
+                    <span className="reports-meta-sep">•</span>
+                    <span className="reports-meta-label">Project:</span>{" "}
+                    <span className="reports-meta-project" title={stripTxt(project)}>
+                      {truncate(stripTxt(project), 50)}
+                    </span>
+                  </>
+                )}
+              </>
+            ) : (
+              <span className="reports-meta-placeholder">&nbsp;</span>
+            )}
+          </div>
 
-      {/* Total count */}
-      {!loading && results.length > 0 && (
-        <div className="reports-meta">
-          <span className="reports-total">
-            {total.toLocaleString()} results • Page {page} of {pages}
-          </span>
+          <div className="reports-meta-right">
+            {!loading && results.length > 0 && (
+              <span className="reports-total">
+                {total.toLocaleString()} results
+              </span>
+            )}
+          </div>
         </div>
       )}
 
-      {/* Scrollable list wrapper */}
+      {/* Results */}
+      {loading && <div className="reports-loading">Searching…</div>}
+      {!loading && results.length === 0 && qBuilt.trim() && (
+        <div className="reports-empty">No results.</div>
+      )}
+
+      {/* Results list */}
       <div className="reports-results">
         <div className="reports-grid" role="list">
           {results.map((r) => {
-            const entry = peekMap[r.s3_key];
-            const isOpen = openKeys.has(r.s3_key);
+            const entry = peekMap[r.s3Key];
+            const isOpen = openKeys.has(r.s3Key);
             const totalHits = entry?.totalHits ?? null;
             const canLoadMore = entry?.nextOffset != null;
 
+            const fullTitle = r.displayName;
+            const shortTitle = truncate(fullTitle, 50);
+
             return (
-              <div key={r.s3_key} className="reports-card" role="listitem">
+              <div key={r.s3Key} className="reports-card" role="listitem">
                 <div className="reports-row">
-                  <div className="reports-left" title={r.displayName}>
+                  <div className="reports-left" title={fullTitle}>
                     <FaFilePdf className="reports-icon" aria-hidden="true" />
                     <div className="reports-title-col">
-                      <div className="reports-title-line">{r.displayName}</div>
+                      <div className="reports-title-line" title={fullTitle}>
+                        {shortTitle}
+                      </div>
                     </div>
                   </div>
 
@@ -304,7 +532,7 @@ export default function Reports() {
                     <button
                       className="reports-btn"
                       type="button"
-                      onClick={() => togglePeek(r.s3_key)}
+                      onClick={() => togglePeek(r.s3Key)}
                       title="Peek text (no PDF)"
                       aria-label="Peek text"
                     >
@@ -320,7 +548,7 @@ export default function Reports() {
                     <button
                       className="reports-icon-btn"
                       type="button"
-                      onClick={() => openInline(r.s3_key, r.displayName)}
+                      onClick={() => openInline(r.s3Key, r.displayName)}
                       title="View inline"
                       aria-label="View inline"
                     >
@@ -329,7 +557,7 @@ export default function Reports() {
                     <button
                       className="reports-icon-btn"
                       type="button"
-                      onClick={() => openInNewTab(r.s3_key)}
+                      onClick={() => openInNewTab(r.s3Key)}
                       title="Open"
                       aria-label="Open"
                     >
@@ -341,11 +569,8 @@ export default function Reports() {
                 {/* Collapsible multi-peek area */}
                 {isOpen && (
                   <div className="reports-peek">
-                    {/* Header row with total match count (if known) */}
                     <div className="reports-peek-header">
-                      <span className="reports-peek-title text-xs">
-                        {r.displayName} — Peek
-                      </span>
+                      <span className="reports-peek-title"> {shortTitle} — Peek</span>
                       {totalHits !== null && (
                         <span className="reports-badge" title="Total matches">
                           {totalHits} matches
@@ -353,8 +578,7 @@ export default function Reports() {
                       )}
                     </div>
 
-                    {/* Body: windows list (scrollable) */}
-                    <div className="reports-peek-body text-xs">
+                    <div className="reports-peek-body">
                       {!entry || entry.status === "loading" ? (
                         <div className="reports-peek-loading">Loading preview…</div>
                       ) : entry.status === "error" ? (
@@ -375,13 +599,12 @@ export default function Reports() {
                       )}
                     </div>
 
-                    {/* Footer: load more if available */}
                     <div className="reports-peek-footer">
                       <button
                         className="reports-btn"
                         type="button"
                         disabled={!canLoadMore || entry?.status === "loading"}
-                        onClick={() => loadMorePeek(r.s3_key)}
+                        onClick={() => loadMorePeek(r.s3Key)}
                         title="Load 3 more windows"
                       >
                         Load more
@@ -395,32 +618,8 @@ export default function Reports() {
         </div>
       </div>
 
-      {/* Pager */}
-      {pages > 1 && (
-        <div className="reports-pager">
-          <button
-            className="reports-btn"
-            type="button"
-            disabled={page === 1}
-            onClick={() => setPage((p) => Math.max(1, p - 1))}
-          >
-            Prev
-          </button>
-          <span className="reports-page-indicator">
-            {page}/{pages}
-          </span>
-          <button
-            className="reports-btn"
-            type="button"
-            disabled={page === pages}
-            onClick={() => setPage((p) => Math.min(pages, p + 1))}
-          >
-            Next
-          </button>
-        </div>
-      )}
-
-      {/* Modal viewer (full-viewport) */}
+      
+      {/* Modal viewer */}
       {modalOpen && (
         <div className="reports-modal" onClick={closeModal}>
           <div className="reports-modal-content" onClick={(e) => e.stopPropagation()}>

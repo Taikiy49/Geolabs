@@ -154,12 +154,6 @@
   background: var(--bg-base);
   line-height: 1.65;
   overflow-x: hidden;
-  overflow-y: hidden;   /* page-level sections do their own scroll */
-}
-
-/* Make the page background actually use the token */
-body, .app-container, .main-content {
-  background: var(--bg-page);
 }
 
 /* ==========================
