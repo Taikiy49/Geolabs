@@ -39,7 +39,7 @@ const homepageCards = [
     path: "/reports",
   },
   {
-    label: "Report Binder",
+    label: "Reports Binder",
     tag: "Analytics",
     updated: "2025-09-14", // +2 days
     icon: <FaTable size={24} />,

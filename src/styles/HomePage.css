@@ -1,7 +1,7 @@
 /* ===== Page & Shell ===== */
 .hp {
   background: var(--bg-base);
-  height: calc(100dvh - 40px); /* below your compact header (~40px) */
+  height: calc(100dvh - 40px); /* below the compact header (~40px) */
   overflow: hidden;            /* columns scroll, not the page */
 }
 
@@ -9,18 +9,20 @@
   height: 100%;
   display: grid;
   grid-template-columns: 240px 1fr; /* left rail | main */
-  grid-template-rows: 1fr;          /* allow vertical fill */
+  grid-template-rows: 1fr;
 }
 
-/* ===== Left Rail (divider only) ===== */
+/* ===== Left Rail (same white as cards) ===== */
 .hp-rail {
-  border-right: 1px solid var(--border-color);
+  background: var(--bg-card);                     /* same surface as cards */
+  border-right: 1px solid var(--border-color);    /* hairline chrome */
   display: flex;
   flex-direction: column;
-  gap: var(--space-2);
+  gap: var(--space-3);
   overflow-y: auto;
   overflow-x: hidden;
   box-sizing: border-box;
+  box-shadow: var(--shadow-surface);
 }
 
 .hp-rail-title {
@@ -46,11 +48,11 @@
 
 /* Base chip */
 .hp-chip-btn {
-  height: 22px; 
+  height: 24px;
   padding: 0 var(--space-3);
   border-radius: var(--radius);
   border: 1px solid var(--border-color);
-  background: var(--bg-card);
+  background: var(--bg-card-2);                   /* softer than card */
   color: var(--text-secondary);
   cursor: pointer;
   font-size: var(--font-size-xs);
@@ -74,10 +76,10 @@
 }
 
 .hp-chip-btn:hover {
-  background: var(--bg-card-2);
+  background: color-mix(in oklab, var(--bg-card-2) 80%, var(--chip-accent) 20%);
   border-color: var(--chip-accent);
   transform: translateY(-1px);
-  box-shadow: 0 0 0 1px color-mix(in oklab, var(--chip-accent) 22%, transparent) inset;
+  box-shadow: 0 0 0 1px color-mix(in oklab, var(--chip-accent) 18%, transparent) inset;
 }
 
 .hp-chip-btn.is-active {
@@ -85,12 +87,12 @@
   border-color: var(--chip-accent);
   background: linear-gradient(
     180deg,
-    color-mix(in oklab, var(--chip-accent) 12%, transparent),
+    color-mix(in oklab, var(--chip-accent) 10%, transparent),
     transparent 60%
   );
   box-shadow:
-    0 0 0 1px color-mix(in oklab, var(--chip-accent) 28%, transparent) inset,
-    0 2px 10px color-mix(in oklab, var(--chip-accent) 12%, transparent);
+    0 0 0 1px color-mix(in oklab, var(--chip-accent) 24%, transparent) inset,
+    0 2px 10px color-mix(in oklab, var(--chip-accent) 10%, transparent);
 }
 
 .hp-chip-btn:focus-visible{
@@ -105,34 +107,32 @@
 .hp-chip-btn[data-tag="ops"]        { --chip-accent: var(--color-amber); }
 .hp-chip-btn[data-tag="admin"]      { --chip-accent: var(--color-rose); }
 .hp-chip-btn[data-tag="it"]         { --chip-accent: var(--color-mint); }
-
-/* extra categories leveraging full 8-color palette */
 .hp-chip-btn[data-tag="security"]   { --chip-accent: var(--color-fuchsia); }
 .hp-chip-btn[data-tag="eng"]        { --chip-accent: var(--color-lime); }
 
 .hp-sort-select {
-  height: 22px;
+  height: 24px;
   padding: 0 var(--space-2);
   font-size: var(--font-size-xs);
   border-radius: var(--radius);
   border: 1px solid var(--border-color);
-  background: var(--bg-card);
+  background: var(--bg-card-2);
   color: var(--text-primary);
 }
 
-/* ===== Quick Links ===== */
+/* ===== Quick Links (optional) ===== */
 .hp-ql {
   display: grid;
   gap: var(--space-2);
 }
 
 .hp-ql-item {
-  height: 22px;
+  height: 24px;
   padding: 0 var(--space-3);
   font-size: var(--font-size-xs);
   border-radius: var(--radius);
   border: 1px solid var(--border-color);
-  background: var(--bg-card);
+  background: var(--bg-card-2);                   /* matches chips */
   color: var(--text-secondary);
   text-align: left;
   cursor: pointer;
@@ -140,68 +140,75 @@
               transform var(--transition-fast);
 }
 .hp-ql-item:hover {
-  background: var(--bg-card-2);
+  background: color-mix(in oklab, var(--bg-card-2) 84%, var(--color-primary) 16%);
   border-color: var(--color-primary);
   transform: translateY(-1px);
 }
 
-/* ===== Status (in rail) ===== */
-.hp-status {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-3);
-}
-
-.hp-status-row {
-  display: grid;
-  grid-template-columns: auto 1fr auto;
-  align-items: center;
-  gap: var(--space-3);
-  color: var(--text-secondary);
-  font-size: var(--font-size-xs);
-}
-
-.hp-dot {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: var(--text-muted);
-  box-shadow: 0 0 0 1px rgba(255,255,255,.06);
-}
-.hp-dot.ok { background: var(--color-tertiary); }
-
-.hp-status-pill {
-  border-radius: 999px;
-  border: 1px solid var(--border-color);
-  background: var(--bg-card-2);
-  color: var(--text-primary);
-  font-size: var(--font-size-xs);
-  font-weight: 600;
-  height: 22px;
-  padding: 0 var(--space-3);
-}
-
-.hp-meter {
-  grid-column: 2 / span 1;
-  height: 6px;
-  border-radius: 999px;
-  border: 1px solid var(--border-color);
-  background: var(--bg-card-2);
-  overflow: hidden;
-}
-.hp-meter > span {
-  display: block;
-  height: 100%;
-  background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
-}
-
-/* ===== Main (cards) ===== */
+/* ===== Main (banner + cards) ===== */
 .hp-main {
   display: flex;
   flex-direction: column;
   overflow-y: auto;
-  padding-top: var(--space-3);
-  padding-bottom: var(--space-3);
+  padding: var(--space-3) 0;                         /* roomier page gutters */
+  gap: var(--space-4);
+}
+
+/* ✨ Welcome Banner */
+.hp-welcome {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: var(--space-5);
+  border: 1px solid var(--border-color);
+  background: var(--bg-card);                      /* same white as cards */
+  border-radius: var(--radius-lg);
+  padding: var(--card-pad);
+  box-shadow: var(--shadow-surface);
+}
+
+.hp-welcome-left { min-width: 0; }
+.hp-welcome-greet {
+  margin: 0 0 var(--space-2);
+  font-weight: 800;
+  letter-spacing: .01em;
+  color: var(--text-primary);
+  font-size: calc(var(--font-size-lg) + 0.08rem);
+  line-height: 1.15;
+}
+.hp-welcome-name {
+  color: var(--color-primary);
+  text-shadow: 0 0 10px color-mix(in oklab, var(--color-primary) 20%, transparent);
+}
+.hp-welcome-sub {
+  margin-top: var(--space-1);
+  color: var(--text-muted);
+  font-size: var(--font-size-sm);
+}
+
+.hp-welcome-right {
+  display: grid;
+  gap: var(--space-2);
+  justify-items: end;
+}
+.hp-welcome-date {
+  color: var(--text-secondary);
+  font-size: var(--font-size-sm);
+  padding: 2px 8px;
+  border-radius: 999px;
+  border: 1px solid var(--border-color);
+  background: var(--bg-card-2);
+}
+.hp-welcome-badges {
+  display: flex;
+  gap: var(--space-2);
+}
+.hp-welcome-pill {
+  font-size: var(--font-size-xs);
+  padding: 2px 8px;
+  border-radius: 999px;
+  letter-spacing: .03em;
+  color: var(--text-muted);
 }
 
 /* Grid */
@@ -209,31 +216,34 @@
   flex: 1 1 auto;
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: var(--space-3);
+  gap: var(--grid-gap);
 }
 
 /* responsive columns */
 @media (max-width: 1200px) { .hp-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-@media (max-width: 640px)  { .hp-grid { grid-template-columns: repeat(1, minmax(0, 1fr)); } }
+@media (max-width: 640px)  {
+  .hp-grid { grid-template-columns: repeat(1, minmax(0, 1fr)); }
+  .hp-welcome { grid-template-columns: 1fr; justify-items: start; }
+  .hp-welcome-right { justify-items: start; }
+}
 
-/* Cards */
+/* ===== Cards ===== */
 .hp-card {
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: var(--space-3);
-  background: var(--bg-card);
+  background: var(--bg-card);                      /* white */
   border: 1px solid var(--border-color);
-  border-radius: var(--radius-lg);
-  padding: var(--space-4);
-  box-shadow: var(--shadow-md);
-  transition: border-color var(--transition-fast), transform var(--transition-fast);
+  border-radius: var(--radius-lg);                 /* 6px from tokens */
+  padding: var(--card-pad);
+  box-shadow: var(--shadow-surface);
+  transition: box-shadow var(--transition-fast), transform var(--transition-fast), border-color var(--transition-fast);
 }
 .hp-card.is-clickable { cursor: pointer; }
-.hp-card:hover,
-.hp-card:focus-visible {
-  border-color: var(--tag-accent, var(--color-primary));
+.hp-card:hover {
+  box-shadow: var(--shadow-float);
   transform: translateY(-2px);
+  border-color: var(--tag-accent, var(--color-primary));
 }
 .hp-card:focus-visible {
   outline: 2px solid var(--tag-accent, var(--color-primary));
@@ -242,28 +252,29 @@
 
 /* Head */
 .hp-head {
-  margin-top: auto; margin-bottom: auto;
+  margin-top: auto; margin-bottom: var(--space-5);
   display: flex;
+  flex-direction: column;
   align-items: center;
   gap: var(--space-5);
 }
 
-/* Icon chip on card */
+/* Icon chip on card (subtle tint so icons don't pop too hard) */
 .hp-chip {
-  width: 40px;
-  height: 40px;
-  display: grid;
+  margin-left: auto; margin-bottom: auto;
+  display: flex;
+  gap: var(--space-3);
   place-items: center;
   border-radius: var(--radius);
-  background: var(--bg-card-2);
-  border: 1px solid var(--tag-accent, var(--border-color));
-  color: var(--tag-accent, var(--text-primary));
-  box-shadow: 0 1px 0 rgba(255,255,255,.04), 0 6px 14px rgba(0,0,0,.28);
-  padding: var(--space-1);
+  background: color-mix(in oklab, var(--bg-card-2) 85%, var(--tag-accent, var(--border-color)) 15%);
+  border: 1px solid color-mix(in oklab, var(--tag-accent, var(--border-color)) 35%, transparent);
+  color: color-mix(in oklab, var(--tag-accent, var(--text-primary)) 80%, var(--text-primary) 20%);
+  box-shadow: 0 1px 0 rgba(255,255,255,.04), 0 4px 10px rgba(0,0,0,.08);
+  padding: var(--space-1) var(--space-4);
 }
 
 /* Title + badge + desc */
-.hp-txt { min-width: 0; margin: 0 auto;}
+.hp-txt { min-width: 0; margin: 0 auto; }
 
 .hp-title-row {
   display: inline-flex;
@@ -275,17 +286,16 @@
   margin: 0;
   font-weight: 800;
   line-height: 1.15;
-  font-size: var(--font-size-base);
+  font-size: var(--font-size-lg);                              /* slightly larger for readability */
   color: var(--text-primary);
 }
 
 .hp-badge {
   font-size: var(--font-size-xs);
-  padding: 2px 8px;
+  padding: 2px 6px;
   border-radius: 999px;
-  font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: .03em;
+  letter-spacing: .01em;
   color: #fff;
   background: var(--tag-accent, var(--color-secondary));
 }
@@ -294,16 +304,16 @@
   margin: var(--space-2) 0 0;
   color: var(--text-secondary);
   font-size: var(--font-size-xs);
-  line-height: 1.3;
+  line-height: 1.5;
 }
 
 /* Updated line */
 .hp-updated {
-  margin-top: var(--space-2);
-  padding-top: var(--space-3);
-  border-top: 1px solid var(--border-color);
+  margin-top: var(--space-3);
+  padding-top: var(--space-2);
   font-size: var(--font-size-xs);
   color: var(--text-muted);
+  margin-left: auto;
 }
 
 /* Tag → accent mapping (cards) */
@@ -311,42 +321,28 @@
 .hp-card[data-tag="analytics"]  { --tag-accent: var(--color-violet); }
 .hp-card[data-tag="ops"]        { --tag-accent: var(--color-amber); }
 .hp-card[data-tag="admin"]      { --tag-accent: var(--color-rose); }
-.hp-card[data-tag="it"]         { --tag-accent: var(--color-mint); } /* rose */
-
-
-
-
-/* extra categories leveraging full 8-color palette */
+.hp-card[data-tag="it"]         { --tag-accent: var(--color-mint); }
 .hp-card[data-tag="security"]   { --tag-accent: var(--color-fuchsia); }
 .hp-card[data-tag="eng"]        { --tag-accent: var(--color-lime); }
 
-
-/* ===== Thin white scrollbars (both columns) ===== */
+/* ===== Scrollbars (columns) ===== */
 .hp-rail,
 .hp-main {
   scrollbar-width: thin;                           /* Firefox */
-  scrollbar-color: rgba(255,255,255,0.7) transparent;
+  scrollbar-color: rgba(12,18,32,0.35) transparent;/* looks good on light */
   scrollbar-gutter: stable both-edges;
 }
-
 .hp-rail::-webkit-scrollbar,
-.hp-main::-webkit-scrollbar {
-  width: 4px;
-  height: 4px;
-}
+.hp-main::-webkit-scrollbar { width: 4px; height: 4px; }
 .hp-rail::-webkit-scrollbar-track,
-.hp-main::-webkit-scrollbar-track {
-  background: transparent;
-}
+.hp-main::-webkit-scrollbar-track { background: transparent; }
 .hp-rail::-webkit-scrollbar-thumb,
 .hp-main::-webkit-scrollbar-thumb {
-  background: rgba(255,255,255,0.75);
+  background: rgba(12,18,32,0.30);
   border-radius: 999px;
 }
 .hp-rail::-webkit-scrollbar-thumb:hover,
-.hp-main::-webkit-scrollbar-thumb:hover {
-  background: rgba(255,255,255,0.9);
-}
+.hp-main::-webkit-scrollbar-thumb:hover { background: rgba(12,18,32,0.45); }
 
 /* Resizer strip */
 .hp-resizer {
@@ -364,27 +360,19 @@
   background: linear-gradient(
     to right,
     transparent 0%,
-    rgba(255,255,255,0.06) 45%,
-    rgba(255,255,255,0.18) 50%,
-    rgba(255,255,255,0.06) 55%,
+    rgba(0,0,0,0.04) 45%,
+    rgba(0,0,0,0.10) 50%,
+    rgba(0,0,0,0.04) 55%,
     transparent 100%
   );
 }
 .hp-resizer:hover::after,
-.hp.is-dragging .hp-resizer::after {
-  opacity: 1;
-}
+.hp.is-dragging .hp-resizer::after { opacity: 1; }
 
 /* ===== Collapse side menu on small screens ===== */
 @media (max-width: 900px) {
   .hp-rail,
-  .hp-resizer {
-    display: none !important;
-  }
-  .hp-shell {
-    grid-template-columns: 1fr !important;
-  }
-  .hp-main {
-    overflow-y: auto;
-  }
+  .hp-resizer { display: none !important; }
+  .hp-shell { grid-template-columns: 1fr !important; }
+  .hp-main { overflow-y: auto; }
 }

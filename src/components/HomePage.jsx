@@ -1,6 +1,7 @@
 // src/pages/HomePage.jsx
 import React, { useMemo, useRef, useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import { useMsal } from "@azure/msal-react";
 import homepageCards from "../components/HomePageCards";
 import "../styles/HomePage.css";
 
@@ -13,7 +14,7 @@ const MAX_WIDTH = 560;
 
 const norm = (s = "") => String(s).trim().toLowerCase();
 
-// --- NEW: simple media query hook to switch descriptions on wide screens ---
+// --- simple media query hook to switch descriptions on wide screens ---
 function useMedia(query) {
   const getMatch = () =>
     typeof window !== "undefined" && "matchMedia" in window
@@ -34,10 +35,58 @@ function useMedia(query) {
   return matches;
 }
 
+// --- MSAL helper: acquire a Graph token for given scopes
+function useGraphToken(scopes) {
+  const { instance, accounts } = useMsal();
+  const account = accounts?.[0];
+  return async () => {
+    const request = { scopes, account };
+    try {
+      const res = await instance.acquireTokenSilent(request);
+      return res.accessToken;
+    } catch {
+      const res = await instance.acquireTokenPopup(request);
+      return res.accessToken;
+    }
+  };
+}
+
 export default function HomePage() {
   const navigate = useNavigate();
+  const { accounts } = useMsal();
 
-  // UI state
+  // ======= USER: first name (from id token) & job title (from Graph /me) =======
+  const idClaims = accounts?.[0]?.idTokenClaims || {};
+  const givenName =
+    idClaims?.given_name ||
+    (idClaims?.name ? String(idClaims.name).split(" ")[0] : "") ||
+    "";
+
+  // Fetch /me for jobTitle (and department as fallback) using Graph
+  const getToken = useGraphToken(["User.Read"]);
+  const [me, setMe] = useState({ jobTitle: "", department: "" });
+  useEffect(() => {
+    let alive = true;
+    (async () => {
+      try {
+        const token = await getToken();
+        const res = await fetch(
+          "https://graph.microsoft.com/v1.0/me?$select=jobTitle,department",
+          { headers: { Authorization: `Bearer ${token}` } }
+        );
+        if (!res.ok) throw new Error(`Graph /me ${res.status}`);
+        const data = await res.json();
+        if (alive) setMe({ jobTitle: data.jobTitle || "", department: data.department || "" });
+      } catch {
+        // ignore; banner gracefully falls back
+      }
+    })();
+    return () => { alive = false; };
+  }, [getToken]);
+
+  const bannerTitle = me.jobTitle || me.department || "Team Member";
+
+  // ======= UI state =======
   const [activeTag, setActiveTag] = useState("All");
   const [sortMode, setSortMode] = useState("recent"); // "recent" | "az"
 
@@ -102,8 +151,23 @@ export default function HomePage() {
     }
   };
 
-  // NEW: decide when to show long descriptions
+  // decide when to show long descriptions
   const isWide = useMedia("(min-width: 1200px)");
+
+  // Welcome banner state (time/greeting)
+  const [now, setNow] = useState(() => new Date());
+  useEffect(() => {
+    const t = setInterval(() => setNow(new Date()), 60_000);
+    return () => clearInterval(t);
+  }, []);
+  const hours = now.getHours();
+  const greeting =
+    hours < 12 ? "Good morning" : hours < 18 ? "Good afternoon" : "Good evening";
+  const niceDate = now.toLocaleDateString(undefined, {
+    weekday: "short",
+    month: "short",
+    day: "numeric",
+  });
 
   return (
     <div className={`hp ${dragging ? "is-dragging" : ""}`}>
@@ -125,7 +189,7 @@ export default function HomePage() {
                     key={t}
                     type="button"
                     className={`hp-chip-btn ${isActive ? "is-active" : ""}`}
-                    data-tag={norm(t)} // ← drives accent color
+                    data-tag={norm(t)} /* drives accent color */
                     onClick={() => setActiveTag(t)}
                     aria-pressed={isActive}
                     aria-label={`Filter by ${t}`}
@@ -152,7 +216,6 @@ export default function HomePage() {
               <option value="az">A–Z</option>
             </select>
           </section>
-
         </aside>
 
         {/* RESIZER */}
@@ -173,8 +236,34 @@ export default function HomePage() {
           title="Drag to resize (Arrow keys work too)"
         />
 
-        {/* RIGHT: MAIN (cards) */}
+        {/* RIGHT: MAIN (banner + cards) */}
         <section className="hp-main">
+          {/* Welcome Banner */}
+          <div className="hp-welcome" role="region" aria-label="Welcome">
+            <div className="hp-welcome-left">
+              <div className="hp-welcome-greet">
+                {greeting}
+                {givenName ? (
+                  <>
+                    , <span className="hp-welcome-name">{givenName}</span>
+                  </>
+                ) : (
+                  ""
+                )}
+              </div>
+              <div className="hp-welcome-sub">
+                Here’s your workspace — filter by category or jump into a tool.
+              </div>
+            </div>
+            <div className="hp-welcome-right">
+              <div className="hp-welcome-date">{niceDate}</div>
+              <div className="hp-welcome-badges">
+                <span className="hp-welcome-pill">{bannerTitle}</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Cards */}
           <div className="hp-grid">
             {filteredSorted.map((card) => {
               const go = () => card.path && navigate(card.path);
@@ -192,22 +281,25 @@ export default function HomePage() {
                   onClick={go}
                   onKeyDown={(e) => card.path && onKeyActivate(e, go)}
                   aria-label={card.path ? `Open ${card.label}` : card.label}
-                  data-tag={tagLC} // ← drives card accent color
+                  data-tag={tagLC} /* drives card accent color */
                 >
                   <div className="hp-head">
-                    <div className="hp-chip" aria-hidden>
-                      {card.icon}
-                    </div>
-
+                
                     <div className="hp-txt">
                       <div className="hp-title-row">
                         <span className="hp-title">{card.label}</span>
-                        {card.tag && <span className="hp-badge">{card.tag}</span>}
                       </div>
+                      
 
                       {desc && <p className="hp-desc">{desc}</p>}
                     </div>
                   </div>
+                  <div className="hp-chip" aria-hidden>
+                      {card.icon}
+                        {card.tag && <span className="hp-badge">{card.tag}</span>}
+
+                    </div>
+
 
                   <div className="hp-updated">
                     {card.updated ? `Updated ${card.updated}` : "Recently updated"}

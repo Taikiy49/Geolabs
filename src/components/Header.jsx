@@ -88,9 +88,12 @@ export default function Header() {
       <div className="hlite-row">
         {/* Left: brand */}
         <Link to="/" className="hlite-brand" title="Geolabs, Inc.">
-          <img src="/geolabs.png" alt="Geolabs" className="hlite-logo" />
-          <span className="hlite-name">Geolabs, Inc.</span>
-        </Link>
+  <img src="/geolabs.png" alt="Geolabs" className="hlite-logo" />
+  <span className="hlite-name">
+    <span className="hlite-name-strong">Geolabs, Inc.</span>
+  </span>
+</Link>
+
 
         {/* Center: search */}
         <div className="hlite-searchbar">
