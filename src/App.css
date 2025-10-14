@@ -3,22 +3,22 @@
    ========================== */
 
 :root{
-  /* Spacing (slightly smaller) */
-  --space-1: 0.13rem;  /* was 0.15 */
-  --space-2: 0.22rem;  /* was 0.25 */
-  --space-3: 0.36rem;  /* was 0.40 */
-  --space-4: 0.50rem;  /* was 0.55 */
-  --space-5: 0.64rem;  /* was 0.70 */
-  --space-6: 0.78rem;  /* was 0.85 */
-  --space-8: 1.00rem;  /* was 1.10 */
-  --space-10: 1.22rem; /* was 1.35 */
-  --space-12: 1.44rem; /* was 1.60 */
+  /* Spacing (keep) */
+  --space-1: 0.13rem;
+  --space-2: 0.22rem;
+  --space-3: 0.36rem;
+  --space-4: 0.50rem;
+  --space-5: 0.64rem;
+  --space-6: 0.78rem;
+  --space-8: 1.00rem;
+  --space-10: 1.22rem;
+  --space-12: 1.44rem;
 
-  /* Type scale (slightly smaller) */
-  --font-size-lg: 1.0rem;  /* was 1.75 */
-  --font-size-base: 0.80rem;  /* was 0.92 */
-  --font-size-sm:   0.74rem;  /* was 0.84 */
-  --font-size-xs:   0.72rem;  /* was 0.76 */
+  /* Type scale (keep) */
+  --font-size-lg: 1.0rem;
+  --font-size-base: 0.80rem;
+  --font-size-sm:   0.74rem;
+  --font-size-xs:   0.72rem;
 
   /* Radii */
   --radius: 4px;
@@ -28,96 +28,31 @@
   --card-pad: var(--space-6);
   --grid-gap: var(--space-3);
 
-  /* Surfaces */
-  --bg-page: linear-gradient(135deg, #01040a 0%, #06101a 50%, #0a1420 100%);
-  --bg-card: rgba(2, 4, 8, 0.992);
-  --bg-card-2: rgba(4, 7, 12, 0.988);
-  --bg-hover: rgba(0, 212, 255, 0.05);
-  --bg-base: #000309;
+  /* ===== Refined DARK theme surfaces ===== */
+  --bg-page: linear-gradient(135deg, #09121f 0%, #0b1828 50%, #0f1f33 100%);
+  --bg-base: #0a1424;
+  --bg-card: #111d32;
+  --bg-card-2: #14243d;
+  --bg-hover: rgba(0, 162, 255, 0.1);
+
+  /* Header & Sidebar blues */
+  --header-bg: linear-gradient(90deg, #002d5e 0%, #004080 100%);
+  --sidebar-bg: linear-gradient(180deg, #002c59 0%, #003b73 100%);
 
   /* Text */
-  --text-primary: #f5fbff;
-  --text-secondary: #e3efff;
-  --text-muted: #a9b9cf;
+  --text-primary:   #f5f8ff;
+  --text-secondary: #cfdcf0;
+  --text-muted:     #8fa4c2;
 
-  /* ===== Vibrant accent palette (8 hues) ===== */
-  --color-cerulean: #19d9ff; /* bright sky blue */
-  --color-violet:   #9a6bff; /* electric violet */
-  --color-mint:     #1affb5; /* neon mint */
-  --color-amber:    #ffbb33; /* warm amber */
-  --color-rose:     #ff61a6; /* hot rose */
-  --color-lime:     #a6ff3a; /* citrus lime */
-  --color-cyan:     #30e8ff; /* crisp cyan */
-  --color-fuchsia:  #ff5df1; /* vivid fuchsia */
-
-  /* Semantic aliases (keep your original names wired to the palette) */
-  --color-primary:   var(--color-cerulean);
-  --color-secondary: var(--color-violet);
-  --color-tertiary:  var(--color-mint);
-  --color-quaternary:var(--color-rose);
-  --color-quinary:   var(--color-cyan);
-
-  --color-success:   var(--color-mint);
-  --color-warning:   var(--color-amber);
-
-  /* Borders & shadows */
-  --border-color: rgba(255, 255, 255, 0.22);
-  --shadow-md: 0 6px 26px rgba(0,0,0,.44), 0 0 15px rgba(59,130,246,.10);
-  --shadow-lg: 0 10px 36px rgba(0,0,0,.56), 0 0 20px rgba(59,130,246,.12);
-
-  /* Motion */
-  --transition-fast: 140ms ease;
-  --transition-normal: 220ms ease;
-
-  /* Global type tokens */
-  --text-line-height: 0.82rem; /* was 0.875rem */
-  --text-letter-spacing: initial;
-  --text-weight: 400;
-
-  /* Sidebar widths */
-  --sidebar-width: 280px;
-  --sidebar-width-collapsed: 80px;
-
-  /* Misc helpers */
-  --focus-ring: 2px solid var(--color-primary);
-    /* Shadows (dark) */
-  --shadow-header: 0 2px 10px rgba(0,0,0,.45), 0 1px 0 rgba(255,255,255,.02) inset;
-  --shadow-surface: 0 6px 26px rgba(0,0,0,.44), 0 0 15px rgba(59,130,246,.10); /* matches --shadow-md */
-  --shadow-float: 0 12px 36px rgba(0,0,0,.55), 0 2px 12px rgba(59,130,246,.10); /* dialogs/menus */
-
-}
-
-/* Sidebar state mapping (some components read this var) */
-:root { --sidebar-w: var(--sidebar-width); }
-:root[data-sidebar="collapsed"] { --sidebar-w: var(--sidebar-width-collapsed); }
-
-/* ==========================
-   Light mode overrides
-   (toggle via <html data-theme="light">)
-   ========================== */
-
-:root[data-theme="light"]{
-  /* Surfaces (neutral & airy) */
-  --bg-page: linear-gradient(135deg, #f8fbff 0%, #f4f7fb 50%, #eef2f7 100%);
-  --bg-base: #f7f9fc;      /* app canvas behind cards */
-  --bg-card: #ffffff;      /* cards / banner */
-  --bg-card-2: #f9fafc;    /* subtle inset / chip backgrounds */
-  --bg-hover: rgba(12, 18, 32, 0.04);
-
-  /* Text */
-  --text-primary:   #0b1220; /* titles */
-  --text-secondary: #22304a; /* body */
-  --text-muted:     #6a7790; /* meta/timestamps */
-
-  /* Accents (kept from your palette, tuned for light contrast) */
-  --color-cerulean: #0078d4;
-  --color-violet:   #6b4eff;
-  --color-mint:     #0bbf8a;
-  --color-amber:    #f59e0b;
-  --color-rose:     #e23838;
-  --color-lime:     #62c400;
-  --color-cyan:     #68c6d6;
-  --color-fuchsia:  #c81ecf;
+  /* Accents */
+  --color-cerulean: #28b7ff;
+  --color-violet:   #8a6cff;
+  --color-mint:     #16ffc6;
+  --color-amber:    #ffb84a;
+  --color-rose:     #ff5b8f;
+  --color-lime:     #a4ff4d;
+  --color-cyan:     #36e0ff;
+  --color-fuchsia:  #ff5df1;
 
   /* Semantic aliases */
   --color-primary:    var(--color-cerulean);
@@ -128,22 +63,86 @@
   --color-success:    var(--color-mint);
   --color-warning:    var(--color-amber);
 
-  /* Borders & shadows (subtle, professional) */
-  --border-color: rgba(12, 18, 32, 0.10);  /* lighter than before */
-  --shadow-md: 0 1px 3px rgba(16,24,40,.06), 0 1px 2px rgba(16,24,40,.04);
-  --shadow-lg: 0 8px 24px rgba(16,24,40,.10), 0 2px 8px rgba(16,24,40,.06);
+  /* Borders & shadows */
+  --border-color: rgba(255, 255, 255, 0.12);
+  --shadow-md: 0 4px 20px rgba(0,0,0,.45), 0 0 10px rgba(40,183,255,.08);
+  --shadow-lg: 0 8px 32px rgba(0,0,0,.55), 0 0 16px rgba(40,183,255,.10);
 
-  /* Motion (unchanged) */
-  --transition-fast:   140ms ease;
+  /* Motion */
+  --transition-fast: 140ms ease;
   --transition-normal: 220ms ease;
 
-    /* Shadows (light) */
-  --shadow-header: 0 2px 8px rgba(16,24,40,.08);
-  --shadow-surface: 0 1px 3px rgba(16,24,40,.06), 0 1px 2px rgba(16,24,40,.04);  /* matches --shadow-md */
-  --shadow-float: 0 12px 24px rgba(16,24,40,.12), 0 4px 8px rgba(16,24,40,.06);  /* dialogs/menus */
+  /* Global type tokens */
+  --text-line-height: 0.82rem;
+  --text-letter-spacing: initial;
+  --text-weight: 400;
 
+  /* Sidebar widths */
+  --sidebar-width: 280px;
+  --sidebar-width-collapsed: 80px;
+
+  /* Misc */
+  --focus-ring: 2px solid var(--color-primary);
+
+  /* Shadows (component-specific, dark) */
+  --shadow-header: 0 2px 10px rgba(0,0,0,.45), 0 1px 0 rgba(255,255,255,.02) inset;
+  --shadow-surface: 0 4px 20px rgba(0,0,0,.45), 0 0 10px rgba(40,183,255,.08);
+  --shadow-float: 0 12px 36px rgba(0,0,0,.55), 0 2px 12px rgba(40,183,255,.10);
 }
 
+/* Sidebar state mapping */
+:root { --sidebar-w: var(--sidebar-width); }
+:root[data-sidebar="collapsed"] { --sidebar-w: var(--sidebar-width-collapsed); }
+
+/* ==========================
+   Light mode overrides
+   ========================== */
+
+:root[data-theme="light"]{
+  --bg-page: linear-gradient(135deg, #e7f1ff 0%, #f2f7fd 50%, #f9fbff 100%);
+  --bg-base: #f4f8fd;
+  --bg-card: #ffffff;
+  --bg-card-2: #f3f6fa;
+  --bg-hover: rgba(0, 102, 255, 0.08);
+
+  /* Header & Sidebar blues (bright + cool) */
+  --header-bg: linear-gradient(90deg, #0072ff 0%, #00a1ff 100%);
+  --sidebar-bg: linear-gradient(180deg, #0076e3 0%, #0090ff 100%);
+
+  /* Text */
+  --text-primary:   #0c1424;
+  --text-secondary: #1e2d46;
+  --text-muted:     #637290;
+
+  /* Accents */
+  --color-cerulean: #0078d7;
+  --color-violet:   #6d5cff;
+  --color-mint:     #00bfa6;
+  --color-amber:    #f59e0b;
+  --color-rose:     #e84855;
+  --color-lime:     #69c943;
+  --color-cyan:     #24b9d7;
+  --color-fuchsia:  #c71ed6;
+
+  /* Aliases */
+  --color-primary:    var(--color-cerulean);
+  --color-secondary:  var(--color-violet);
+  --color-tertiary:   var(--color-mint);
+  --color-quaternary: var(--color-rose);
+  --color-quinary:    var(--color-cyan);
+  --color-success:    var(--color-mint);
+  --color-warning:    var(--color-amber);
+
+  /* Borders & shadows */
+  --border-color: rgba(12, 18, 32, 0.08);
+  --shadow-md: 0 2px 6px rgba(16,24,40,.08);
+  --shadow-lg: 0 8px 24px rgba(16,24,40,.12);
+
+  /* Shadows (light) */
+  --shadow-header: 0 2px 8px rgba(16,24,40,.08);
+  --shadow-surface: 0 1px 3px rgba(16,24,40,.06), 0 1px 2px rgba(16,24,40,.04);
+  --shadow-float: 0 12px 24px rgba(16,24,40,.12), 0 4px 8px rgba(16,24,40,.06);
+}
 
 /* ==========================
    Base app layout
