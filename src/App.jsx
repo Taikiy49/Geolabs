@@ -11,6 +11,7 @@ import OCRLookup from './components/OCRLookup';
 import Contacts from './components/Contacts';
 import ITOperations from './components/ITOperations/ITOperations';
 import S3Bucket from './components/S3/S3Bucket';
+import ServerSearch from './components/ServerSearch'; 
 
 
 import { useMsal, useIsAuthenticated } from '@azure/msal-react';
@@ -161,7 +162,17 @@ function App() {
                 </RequireMsalAuth>
               }
             />
+
+
+            <Route path="/server-search" element={
+              <RequireMsalAuth>
+                <ServerSearch />
+              </RequireMsalAuth>
+            } />
           </Routes>
+
+    
+          
         </main>
       </div>
     </div>

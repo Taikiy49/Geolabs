@@ -1,3 +1,4 @@
+// src/components/Header.jsx
 import React, { useEffect, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useMsal, useIsAuthenticated } from "@azure/msal-react";
@@ -31,6 +32,14 @@ export default function Header() {
     "";
   const initials = initialsFrom(userEmail, displayName);
 
+  // Force LIGHT theme (no toggle)
+  useEffect(() => {
+    const root = document.documentElement;
+    root.setAttribute("data-theme", "light");
+    // optional: persist, so other pages pick it up
+    try { localStorage.setItem("geolabs_theme", "light"); } catch {}
+  }, []);
+
   // search ↔ URL
   const [searchText, setSearchText] = useState(() => {
     try {
@@ -61,17 +70,6 @@ export default function Header() {
     }
   };
 
-  // theme toggle
-  const [theme, setTheme] = useState(() => {
-    return localStorage.getItem("geolabs_theme") || "dark";
-  });
-  useEffect(() => {
-    const root = document.documentElement;
-    if (theme === "light") root.setAttribute("data-theme", "light");
-    else root.removeAttribute("data-theme");
-    localStorage.setItem("geolabs_theme", theme);
-  }, [theme]);
-
   const handleSignIn = async () => {
     try {
       await instance.loginPopup({ scopes: ["User.Read"], prompt: "select_account" });
@@ -88,12 +86,10 @@ export default function Header() {
       <div className="hlite-row">
         {/* Left: brand */}
         <Link to="/" className="hlite-brand" title="Geolabs, Inc.">
-  <img src="/geolabs.png" alt="Geolabs" className="hlite-logo" />
-  <span className="hlite-name">
-    <span className="hlite-name-strong">Geolabs, Inc.</span>
-  </span>
-</Link>
-
+          <span className="hlite-name">
+            <span className="hlite-name-strong">Geolabs, Inc.</span>
+          </span>
+        </Link>
 
         {/* Center: search */}
         <div className="hlite-searchbar">
@@ -109,18 +105,8 @@ export default function Header() {
           />
         </div>
 
-        {/* Right: theme toggle + Microsoft auth */}
+        {/* Right: Microsoft auth (no theme toggle) */}
         <div className="hlite-auth">
-          <button
-            type="button"
-            className="hlite-btn hlite-theme"
-            onClick={() => setTheme((t) => (t === "light" ? "dark" : "light"))}
-            title={`Switch to ${theme === "light" ? "Dark" : "Light"} mode`}
-            aria-label="Toggle color theme"
-          >
-            {theme === "light" ? "Dark" : "Light"}
-          </button>
-
           {isAuthed ? (
             <>
               <button
@@ -139,7 +125,12 @@ export default function Header() {
               </button>
             </>
           ) : (
-            <button type="button" className="hlite-btn" onClick={handleSignIn} title="Sign in with Microsoft">
+            <button
+              type="button"
+              className="hlite-btn"
+              onClick={handleSignIn}
+              title="Sign in with Microsoft"
+            >
               Sign in
             </button>
           )}

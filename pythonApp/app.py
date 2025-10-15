@@ -10,11 +10,13 @@ from reports_binder import reports_binder_bp # keep if you need it
 from core_box_inventory import corebox_bp
 from askai import askai_bp                  # <-- file is ask_ai.py, import askai_bp
 from s3 import s3_bp
+from server_search import server_search_bp
 
 BASE_DIR = os.path.abspath(os.path.dirname(__file__))
 DB_FILE  = os.path.join(BASE_DIR, "uploads", "chat_history.db")
 USER_DB  = os.path.join(BASE_DIR, "uploads", "users.db")
 PR_DB    = os.path.join(BASE_DIR, "uploads", "pr_data.db")
+SERVER_SEARCH_DB = os.path.join(BASE_DIR, "uploads", "server_search.db")
 TABLE_NAME = "pr_data"
 
 def init_db():
@@ -65,7 +67,9 @@ def create_app():
     app.register_blueprint(reports_binder_bp)          # if it defines its own prefix, fine
     app.register_blueprint(corebox_bp)                 # if it defines its own prefix, fine
     app.register_blueprint(askai_bp, url_prefix="/api")# <-- important: mount under /api
-
+    app.register_blueprint(server_search_bp)           # url_prefix comes from server_search.py
+    os.environ["SERVER_SEARCH_DB"] = SERVER_SEARCH_DB
+    os.environ.setdefault("SERVER_SEARCH_ROOT", r"\\geolabs.lan\fs")
     # ---------- keep your non-AskAI routes here ----------
     # Example: OCR, S3, PR lookup, users endpoints
     import traceback

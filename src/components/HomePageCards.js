@@ -105,6 +105,16 @@ const homepageCards = [
       "Onboarding/offboarding checklists, support request intake, asset tracking, and FAQs for common IT workflows and policies.",
     path: "/it-operations",
   },
+  {
+    label: "Server Search",
+    tag: "IT",
+    updated: "2025-09-14", // +2 days
+    icon: <FaFolderOpen size={24} />,
+    description: "Search internal file servers by name, type, size, and date.",
+    descriptionLong:
+      "Search internal file servers by name, type, size, and date; preview files, copy paths, and export results for audits and clean-up.",
+    path: "/server-search"
+  },
 ];
 
 export default homepageCards;

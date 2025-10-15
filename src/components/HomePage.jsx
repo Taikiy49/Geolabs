@@ -1,269 +1,128 @@
-// src/pages/HomePage.jsx
-import React, { useMemo, useRef, useState, useEffect } from "react";
+import React, { useMemo, useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useMsal } from "@azure/msal-react";
+import {
+  FaHome,
+  FaRobot,
+  FaChartBar,
+  FaTools,
+  FaUserShield,
+  FaServer,
+  FaShieldAlt,
+} from "react-icons/fa";
 import homepageCards from "../components/HomePageCards";
 import "../styles/HomePage.css";
 
-// Visible filter labels (what the user sees)
-const TAGS = ["All", "AI", "Analytics", "Ops", "Admin", "IT"];
-
-// Sidebar resizer constraints
-const MIN_WIDTH = 200;
-const MAX_WIDTH = 560;
+const FILTERS = [
+  { key: "All", tag: "all", Icon: FaHome },
+  { key: "AI", tag: "ai", Icon: FaRobot },
+  { key: "Analytics", tag: "analytics", Icon: FaChartBar },
+  { key: "Ops", tag: "ops", Icon: FaTools },
+  { key: "Admin", tag: "admin", Icon: FaUserShield },
+  { key: "IT", tag: "it", Icon: FaServer },
+  { key: "Security", tag: "security", Icon: FaShieldAlt },
+];
 
 const norm = (s = "") => String(s).trim().toLowerCase();
 
-// --- simple media query hook to switch descriptions on wide screens ---
 function useMedia(query) {
-  const getMatch = () =>
-    typeof window !== "undefined" && "matchMedia" in window
-      ? window.matchMedia(query).matches
-      : false;
-  const [matches, setMatches] = useState(getMatch);
+  const [matches, setMatches] = useState(
+    typeof window !== "undefined" && window.matchMedia(query).matches
+  );
   useEffect(() => {
-    const m = window.matchMedia(query);
-    const onChange = () => setMatches(m.matches);
-    if (m.addEventListener) m.addEventListener("change", onChange);
-    else m.addListener(onChange); // Safari fallback
-    setMatches(m.matches);
-    return () => {
-      if (m.removeEventListener) m.removeEventListener("change", onChange);
-      else m.removeListener(onChange);
-    };
+    const media = window.matchMedia(query);
+    const listener = () => setMatches(media.matches);
+    media.addEventListener("change", listener);
+    return () => media.removeEventListener("change", listener);
   }, [query]);
   return matches;
-}
-
-// --- MSAL helper: acquire a Graph token for given scopes
-function useGraphToken(scopes) {
-  const { instance, accounts } = useMsal();
-  const account = accounts?.[0];
-  return async () => {
-    const request = { scopes, account };
-    try {
-      const res = await instance.acquireTokenSilent(request);
-      return res.accessToken;
-    } catch {
-      const res = await instance.acquireTokenPopup(request);
-      return res.accessToken;
-    }
-  };
 }
 
 export default function HomePage() {
   const navigate = useNavigate();
   const { accounts } = useMsal();
-
-  // ======= USER: first name (from id token) & job title (from Graph /me) =======
   const idClaims = accounts?.[0]?.idTokenClaims || {};
   const givenName =
     idClaims?.given_name ||
     (idClaims?.name ? String(idClaims.name).split(" ")[0] : "") ||
     "";
 
-  // Fetch /me for jobTitle (and department as fallback) using Graph
-  const getToken = useGraphToken(["User.Read"]);
-  const [me, setMe] = useState({ jobTitle: "", department: "" });
-  useEffect(() => {
-    let alive = true;
-    (async () => {
-      try {
-        const token = await getToken();
-        const res = await fetch(
-          "https://graph.microsoft.com/v1.0/me?$select=jobTitle,department",
-          { headers: { Authorization: `Bearer ${token}` } }
-        );
-        if (!res.ok) throw new Error(`Graph /me ${res.status}`);
-        const data = await res.json();
-        if (alive) setMe({ jobTitle: data.jobTitle || "", department: data.department || "" });
-      } catch {
-        // ignore; banner gracefully falls back
-      }
-    })();
-    return () => { alive = false; };
-  }, [getToken]);
-
-  const bannerTitle = me.jobTitle || me.department || "Team Member";
-
-  // ======= UI state =======
   const [activeTag, setActiveTag] = useState("All");
-  const [sortMode, setSortMode] = useState("recent"); // "recent" | "az"
+  const [sortMode] = useState("recent");
 
-  // Sidebar width + dragging
-  const [railWidth, setRailWidth] = useState(() => {
-    const saved = Number(localStorage.getItem("hp_rail_w"));
-    return Number.isFinite(saved) && saved > 0 ? saved : 240;
-  });
-  const [dragging, setDragging] = useState(false);
-  const dragStart = useRef({ x: 0, w: 240 });
-
-  useEffect(() => {
-    localStorage.setItem("hp_rail_w", String(railWidth));
-  }, [railWidth]);
-
-  useEffect(() => {
-    if (!dragging) return;
-    const onMove = (e) => {
-      const dx = e.clientX - dragStart.current.x;
-      const raw = dragStart.current.w + dx;
-      const clamped = Math.max(MIN_WIDTH, Math.min(MAX_WIDTH, raw));
-      setRailWidth(clamped);
-    };
-    const onUp = () => setDragging(false);
-    window.addEventListener("mousemove", onMove);
-    window.addEventListener("mouseup", onUp);
-    return () => {
-      window.removeEventListener("mousemove", onMove);
-      window.removeEventListener("mouseup", onUp);
-    };
-  }, [dragging]);
-
-  const beginDrag = (e) => {
-    setDragging(true);
-    dragStart.current = { x: e.clientX, w: railWidth };
-  };
-
-  // Filter + sort
   const filteredSorted = useMemo(() => {
     const tag = norm(activeTag);
     let items =
       tag === "all"
         ? homepageCards
         : homepageCards.filter((c) => norm(c.tag) === tag);
+    return [...items].sort(
+      (a, b) =>
+        (b.updated ? new Date(b.updated).getTime() : 0) -
+        (a.updated ? new Date(a.updated).getTime() : 0)
+    );
+  }, [activeTag]);
 
-    if (sortMode === "az") {
-      return [...items].sort((a, b) => a.label.localeCompare(b.label));
-    }
-    // default: recent
-    return [...items].sort((a, b) => {
-      const da = a.updated ? new Date(a.updated).getTime() : 0;
-      const db = b.updated ? new Date(b.updated).getTime() : 0;
-      return db - da;
-    });
-  }, [activeTag, sortMode]);
-
-  // a11y helper for activating cards via keyboard
-  const onKeyActivate = (e, fn) => {
-    if (e.key === "Enter" || e.key === " ") {
-      e.preventDefault();
-      fn();
-    }
-  };
-
-  // decide when to show long descriptions
-  const isWide = useMedia("(min-width: 1200px)");
-
-  // Welcome banner state (time/greeting)
-  const [now, setNow] = useState(() => new Date());
-  useEffect(() => {
-    const t = setInterval(() => setNow(new Date()), 60_000);
-    return () => clearInterval(t);
-  }, []);
-  const hours = now.getHours();
+  const now = new Date();
   const greeting =
-    hours < 12 ? "Good morning" : hours < 18 ? "Good afternoon" : "Good evening";
+    now.getHours() < 12
+      ? "Good morning"
+      : now.getHours() < 18
+      ? "Good afternoon"
+      : "Good evening";
   const niceDate = now.toLocaleDateString(undefined, {
     weekday: "short",
     month: "short",
     day: "numeric",
   });
 
+  const isWide = useMedia("(min-width: 1200px)");
+
   return (
-    <div className={`hp ${dragging ? "is-dragging" : ""}`}>
-      {/* Middle 6px resizer column; CSS media query will collapse on mobile */}
-      <div
-        className="hp-shell"
-        style={{ gridTemplateColumns: `${railWidth}px 6px 1fr` }}
-      >
+    <div className="hp">
+      <div className="hp-shell">
         {/* LEFT RAIL */}
         <aside className="hp-rail">
-          {/* Filters */}
-          <section className="hp-rail-section">
-            <h3 className="hp-rail-title">Filters</h3>
-            <div className="hp-filter">
-              {TAGS.map((t) => {
-                const isActive = activeTag === t;
-                return (
-                  <button
-                    key={t}
-                    type="button"
-                    className={`hp-chip-btn ${isActive ? "is-active" : ""}`}
-                    data-tag={norm(t)} /* drives accent color */
-                    onClick={() => setActiveTag(t)}
-                    aria-pressed={isActive}
-                    aria-label={`Filter by ${t}`}
-                    title={`Filter: ${t}`}
-                  >
-                    {t}
-                  </button>
-                );
-              })}
-            </div>
-          </section>
-
-          {/* Sort */}
-          <section className="hp-rail-section">
-            <h3 className="hp-rail-title">Sort</h3>
-            <select
-              className="hp-sort-select"
-              value={sortMode}
-              onChange={(e) => setSortMode(e.target.value)}
-              aria-label="Sort cards"
-              title="Sort cards"
-            >
-              <option value="recent">Recently Updated</option>
-              <option value="az">A–Z</option>
-            </select>
-          </section>
+          <div className="hp-filter-icons">
+            {FILTERS.map(({ key, tag, Icon }) => {
+              const isActive = norm(activeTag) === tag;
+              return (
+                <button
+                  key={key}
+                  type="button"
+                  className={`hp-chip-icon ${isActive ? "is-active" : ""}`}
+                  data-tag={tag}
+                  onClick={() => setActiveTag(key)}
+                  title={key}
+                >
+                  <Icon />
+                </button>
+              );
+            })}
+          </div>
         </aside>
 
-        {/* RESIZER */}
-        <div
-          className="hp-resizer"
-          role="separator"
-          aria-orientation="vertical"
-          aria-label="Resize sidebar"
-          onMouseDown={beginDrag}
-          tabIndex={0}
-          onKeyDown={(e) => {
-            if (e.key === "ArrowLeft") {
-              setRailWidth((w) => Math.max(MIN_WIDTH, w - 16));
-            } else if (e.key === "ArrowRight") {
-              setRailWidth((w) => Math.min(MAX_WIDTH, w + 16));
-            }
-          }}
-          title="Drag to resize (Arrow keys work too)"
-        />
-
-        {/* RIGHT: MAIN (banner + cards) */}
+        {/* MAIN */}
         <section className="hp-main">
-          {/* Welcome Banner */}
-          <div className="hp-welcome" role="region" aria-label="Welcome">
+          <div className="hp-welcome">
             <div className="hp-welcome-left">
               <div className="hp-welcome-greet">
                 {greeting}
-                {givenName ? (
+                {givenName && (
                   <>
                     , <span className="hp-welcome-name">{givenName}</span>
                   </>
-                ) : (
-                  ""
                 )}
               </div>
               <div className="hp-welcome-sub">
-                Here’s your workspace — filter by category or jump into a tool.
+                Here’s your workspace — filter with the icons.
               </div>
             </div>
             <div className="hp-welcome-right">
               <div className="hp-welcome-date">{niceDate}</div>
-              <div className="hp-welcome-badges">
-                <span className="hp-welcome-pill">{bannerTitle}</span>
-              </div>
             </div>
           </div>
 
-          {/* Cards */}
           <div className="hp-grid">
             {filteredSorted.map((card) => {
               const go = () => card.path && navigate(card.path);
@@ -272,35 +131,24 @@ export default function HomePage() {
                 isWide && card.descriptionLong
                   ? card.descriptionLong
                   : card.description;
-
+              const TagIcon =
+                FILTERS.find((f) => f.tag === tagLC)?.Icon || FaRobot;
               return (
                 <button
                   key={card.label}
-                  type="button"
-                  className={`hp-card ${card.path ? "is-clickable" : ""}`}
+                  className="hp-card is-clickable"
+                  data-tag={tagLC}
                   onClick={go}
-                  onKeyDown={(e) => card.path && onKeyActivate(e, go)}
-                  aria-label={card.path ? `Open ${card.label}` : card.label}
-                  data-tag={tagLC} /* drives card accent color */
                 >
-                  <div className="hp-head">
-                
-                    <div className="hp-txt">
-                      <div className="hp-title-row">
-                        <span className="hp-title">{card.label}</span>
-                      </div>
-                      
-
-                      {desc && <p className="hp-desc">{desc}</p>}
-                    </div>
+                  <div className="hp-title-row">
+                    <span className="hp-title">{card.label}</span>
+                    <span className="hp-title-spacer" />
+                    <span className="hp-tagchip">
+                      <TagIcon size={14} />
+                      {card.tag}
+                    </span>
                   </div>
-                  <div className="hp-chip" aria-hidden>
-                      {card.icon}
-                        {card.tag && <span className="hp-badge">{card.tag}</span>}
-
-                    </div>
-
-
+                  {desc && <p className="hp-desc">{desc}</p>}
                   <div className="hp-updated">
                     {card.updated ? `Updated ${card.updated}` : "Recently updated"}
                   </div>

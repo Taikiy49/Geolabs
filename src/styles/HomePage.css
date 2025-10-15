@@ -1,187 +1,122 @@
+/* =========================================
+   HomePage.css — enterprise polish to match Header.css
+   Relies on App.css tokens (colors, radii, shadows)
+   ========================================= */
+
 /* ===== Page & Shell ===== */
 .hp {
   background: var(--bg-base);
-  height: calc(100dvh - 40px); /* below the compact header (~40px) */
+  height: calc(100dvh - 44px); /* header ~44px */
   overflow: hidden;            /* columns scroll, not the page */
 }
 
 .hp-shell {
+  width: 100%;
   height: 100%;
   display: grid;
-  grid-template-columns: 240px 1fr; /* left rail | main */
+  grid-template-columns: auto 1fr; /* compact sidebar + main */
   grid-template-rows: 1fr;
+  gap: 0;
 }
 
-/* ===== Left Rail (same white as cards) ===== */
+/* =========================================
+   Sidebar — neutral, compact, icons near top
+   ========================================= */
 .hp-rail {
-  background: var(--bg-card);                     /* same surface as cards */
-  border-right: 1px solid var(--border-color);    /* hairline chrome */
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-3);
-  overflow-y: auto;
-  overflow-x: hidden;
-  box-sizing: border-box;
+  background: var(--bg-card);
   box-shadow: var(--shadow-surface);
-}
-
-.hp-rail-title {
-  color: var(--text-muted);
-  font-size: var(--font-size-sm);
-  font-weight: 800;
-  letter-spacing: .02em;
-  margin-bottom: var(--space-2);
-}
-
-.hp-rail-section {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;           /* icons toward the top */
+  padding: var(--space-3);
+}
+
+/* icon column */
+.hp-filter-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-5);
   margin-top: var(--space-2);
 }
 
-/* ===== Filter & Sort ===== */
-.hp-filter {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--space-2);
-}
-
-/* Base chip */
-.hp-chip-btn {
-  height: 24px;
-  padding: 0 var(--space-3);
-  border-radius: var(--radius);
-  border: 1px solid var(--border-color);
-  background: var(--bg-card-2);                   /* softer than card */
-  color: var(--text-secondary);
+/* icon-only buttons — neutral by default, primary on hover/active */
+.hp-chip-icon {
+  -webkit-tap-highlight-color: transparent;
+  background: none;
+  border: none;
   cursor: pointer;
-  font-size: var(--font-size-xs);
-  transition: background var(--transition-fast), border-color var(--transition-fast),
-              transform var(--transition-fast), box-shadow var(--transition-fast);
-  display: inline-flex;
-  align-items: center;
-  gap: var(--space-2);
-  position: relative;
-  --chip-accent: var(--border-color); /* default until mapped via data-tag */
+  color: var(--color-primary);
+  line-height: 1;
+  padding: 4px;
+  font-size: var(--font-size-xl);                   /* small hit-area padding */
+  transition:
+    color var(--transition-fast),
+    transform var(--transition-fast),
+    opacity var(--transition-fast);
+  opacity: .92;
 }
-
-/* tiny accent dot */
-.hp-chip-btn::before {
-  content: "";
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background: var(--chip-accent);
-  box-shadow: 0 0 0 1px rgba(255,255,255,.10);
+.hp-chip-icon:hover {
+  color: var(--color-primary);
+  transform: scale(1.08);
+  opacity: 1;
 }
-
-.hp-chip-btn:hover {
-  background: color-mix(in oklab, var(--bg-card-2) 80%, var(--chip-accent) 20%);
-  border-color: var(--chip-accent);
-  transform: translateY(-1px);
-  box-shadow: 0 0 0 1px color-mix(in oklab, var(--chip-accent) 18%, transparent) inset;
+.hp-chip-icon.is-active {
+  color: var(--color-primary);
+  transform: scale(1.12);
+  opacity: 1;
 }
-
-.hp-chip-btn.is-active {
-  color: var(--text-primary);
-  border-color: var(--chip-accent);
-  background: linear-gradient(
-    180deg,
-    color-mix(in oklab, var(--chip-accent) 10%, transparent),
-    transparent 60%
-  );
-  box-shadow:
-    0 0 0 1px color-mix(in oklab, var(--chip-accent) 24%, transparent) inset,
-    0 2px 10px color-mix(in oklab, var(--chip-accent) 10%, transparent);
-}
-
-.hp-chip-btn:focus-visible{
-  outline: 2px solid var(--chip-accent);
-  outline-offset: 2px;
-  border-color: var(--chip-accent);
-}
-
-/* tag → accent mapping for chips (uses App.css accents) */
-.hp-chip-btn[data-tag="ai"]         { --chip-accent: var(--color-cerulean); }
-.hp-chip-btn[data-tag="analytics"]  { --chip-accent: var(--color-violet); }
-.hp-chip-btn[data-tag="ops"]        { --chip-accent: var(--color-amber); }
-.hp-chip-btn[data-tag="admin"]      { --chip-accent: var(--color-rose); }
-.hp-chip-btn[data-tag="it"]         { --chip-accent: var(--color-mint); }
-.hp-chip-btn[data-tag="security"]   { --chip-accent: var(--color-fuchsia); }
-.hp-chip-btn[data-tag="eng"]        { --chip-accent: var(--color-lime); }
-
-.hp-sort-select {
-  height: 24px;
-  padding: 0 var(--space-2);
-  font-size: var(--font-size-xs);
+.hp-chip-icon:focus-visible {
+  
+  outline: var(--focus-ring);
   border-radius: var(--radius);
-  border: 1px solid var(--border-color);
-  background: var(--bg-card-2);
-  color: var(--text-primary);
 }
+.hp-chip-icon::before { content: none; } /* keep the icon clean */
 
-/* ===== Quick Links (optional) ===== */
-.hp-ql {
-  display: grid;
-  gap: var(--space-2);
-}
-
-.hp-ql-item {
-  height: 24px;
-  padding: 0 var(--space-3);
-  font-size: var(--font-size-xs);
-  border-radius: var(--radius);
-  border: 1px solid var(--border-color);
-  background: var(--bg-card-2);                   /* matches chips */
-  color: var(--text-secondary);
-  text-align: left;
-  cursor: pointer;
-  transition: background var(--transition-fast), border-color var(--transition-fast),
-              transform var(--transition-fast);
-}
-.hp-ql-item:hover {
-  background: color-mix(in oklab, var(--bg-card-2) 84%, var(--color-primary) 16%);
-  border-color: var(--color-primary);
-  transform: translateY(-1px);
-}
-
-/* ===== Main (banner + cards) ===== */
+/* =========================================
+   Main column
+   ========================================= */
 .hp-main {
   display: flex;
   flex-direction: column;
+  gap: var(--space-5);
+  padding-inline: clamp(var(--space-4), 2.2vw, var(--grid-gap));
+  padding-block: var(--space-4);
   overflow-y: auto;
-  padding: var(--space-3) 0;                         /* roomier page gutters */
-  gap: var(--space-4);
+  overflow-x: hidden;
+  min-width: 0;   /* avoid clipping at right edge */
+  min-height: 0;
 }
 
-/* ✨ Welcome Banner */
+/* =========================================
+   Welcome Banner — mirrors header surface/border/shadow
+   ========================================= */
 .hp-welcome {
   display: grid;
   grid-template-columns: 1fr auto;
   align-items: center;
   gap: var(--space-5);
+  background: var(--bg-card);
   border: 1px solid var(--border-color);
-  background: var(--bg-card);                      /* same white as cards */
   border-radius: var(--radius-lg);
   padding: var(--card-pad);
   box-shadow: var(--shadow-surface);
 }
 
 .hp-welcome-left { min-width: 0; }
+
 .hp-welcome-greet {
   margin: 0 0 var(--space-2);
+  color: var(--text-primary);
   font-weight: 800;
   letter-spacing: .01em;
-  color: var(--text-primary);
-  font-size: calc(var(--font-size-lg) + 0.08rem);
+  font-size: calc(var(--font-size-lg) + 0.1rem);
   line-height: 1.15;
 }
-.hp-welcome-name {
-  color: var(--color-primary);
-  text-shadow: 0 0 10px color-mix(in oklab, var(--color-primary) 20%, transparent);
-}
+.hp-welcome-name { color: var(--color-primary); }
+
 .hp-welcome-sub {
-  margin-top: var(--space-1);
   color: var(--text-muted);
   font-size: var(--font-size-sm);
 }
@@ -194,24 +129,15 @@
 .hp-welcome-date {
   color: var(--text-secondary);
   font-size: var(--font-size-sm);
-  padding: 2px 8px;
+  padding: 2px 10px;
   border-radius: 999px;
   border: 1px solid var(--border-color);
   background: var(--bg-card-2);
 }
-.hp-welcome-badges {
-  display: flex;
-  gap: var(--space-2);
-}
-.hp-welcome-pill {
-  font-size: var(--font-size-xs);
-  padding: 2px 8px;
-  border-radius: 999px;
-  letter-spacing: .03em;
-  color: var(--text-muted);
-}
 
-/* Grid */
+/* =========================================
+   Card grid
+   ========================================= */
 .hp-grid {
   flex: 1 1 auto;
   display: grid;
@@ -219,30 +145,35 @@
   gap: var(--grid-gap);
 }
 
-/* responsive columns */
-@media (max-width: 1200px) { .hp-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 1280px) { .hp-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (max-width: 1040px) { .hp-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 640px)  {
-  .hp-grid { grid-template-columns: repeat(1, minmax(0, 1fr)); }
+  .hp-grid { grid-template-columns: 1fr; }
+  .hp-rail { display: none; }           /* compact on small screens */
   .hp-welcome { grid-template-columns: 1fr; justify-items: start; }
   .hp-welcome-right { justify-items: start; }
 }
 
-/* ===== Cards ===== */
+/* =========================================
+   Cards — same visual language as header
+   ========================================= */
 .hp-card {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  background: var(--bg-card);                      /* white */
+  background: var(--bg-card);
   border: 1px solid var(--border-color);
-  border-radius: var(--radius-lg);                 /* 6px from tokens */
+  border-radius: var(--radius-lg);
   padding: var(--card-pad);
   box-shadow: var(--shadow-surface);
-  transition: box-shadow var(--transition-fast), transform var(--transition-fast), border-color var(--transition-fast);
+  display: flex;
+  flex-direction: column;
+  transition:
+    transform var(--transition-fast),
+    box-shadow var(--transition-fast),
+    border-color var(--transition-fast);
 }
 .hp-card.is-clickable { cursor: pointer; }
 .hp-card:hover {
-  box-shadow: var(--shadow-float);
   transform: translateY(-2px);
+  box-shadow: var(--shadow-float);
   border-color: var(--tag-accent, var(--color-primary));
 }
 .hp-card:focus-visible {
@@ -250,87 +181,69 @@
   outline-offset: 2px;
 }
 
-/* Head */
-.hp-head {
-  margin-top: auto; margin-bottom:auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: var(--space-5);
-}
-
-/* Icon chip on card (subtle tint so icons don't pop too hard) */
-.hp-chip {
-  margin-left: auto; 
-  display: flex;
-  gap: var(--space-3);
-  place-items: center;
-  border-radius: var(--radius);
-  background: color-mix(in oklab, var(--bg-card-2) 85%, var(--tag-accent, var(--border-color)) 15%);
-  border: 1px solid color-mix(in oklab, var(--tag-accent, var(--border-color)) 35%, transparent);
-  color: color-mix(in oklab, var(--tag-accent, var(--text-primary)) 80%, var(--text-primary) 20%);
-  box-shadow: 0 1px 0 rgba(255,255,255,.04), 0 4px 10px rgba(0,0,0,.08);
-  padding: var(--space-1) var(--space-4);
-}
-
-/* Title + badge + desc */
-.hp-txt { min-width: 0; margin: 0 auto; }
-
+/* header: title left, tag chip right */
 .hp-title-row {
-  display: inline-flex;
+  display: flex;
   align-items: center;
-  gap: var(--space-5);
+  gap: var(--space-4);
 }
-
 .hp-title {
   margin: 0;
   font-weight: 800;
-  line-height: 1.15;
-  font-size: var(--font-size-lg);                              /* slightly larger for readability */
   color: var(--text-primary);
+  font-size: var(--font-size-lg);
+  line-height: 1.15;
 }
+.hp-title-spacer { flex: 1 1 auto; min-width: 0; }
 
-.hp-badge {
-  font-size: var(--font-size-xs);
-  padding: 2px 6px;
+/* tag chip (icon+label) — subtle, professional */
+.hp-tagchip {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: 2px 10px;
   border-radius: 999px;
-  text-transform: uppercase;
-  letter-spacing: .01em;
-  color: #fff;
-  background: var(--tag-accent, var(--color-secondary));
+  background:
+    color-mix(in oklab, var(--bg-card-2) 84%, var(--tag-accent, var(--border-color)) 16%);
+  color:
+    color-mix(in oklab, var(--tag-accent, var(--text-primary)) 70%, var(--text-primary) 30%);
+  font-size: var(--font-size-xs);
+  box-shadow: 0 1px 0 rgba(0,0,0,.02), 0 4px 10px rgba(0,0,0,.08);
 }
 
+/* body */
 .hp-desc {
-  margin: var(--space-2) 0 0;
+  margin-top: var(--space-2);
   color: var(--text-secondary);
   font-size: var(--font-size-xs);
-  line-height: 1.5;
+  line-height: 1.55;
 }
 
-/* Updated line */
+/* meta */
 .hp-updated {
-  margin-top: var(--space-31);
-  padding-top: var(--space-2);
-  font-size: var(--font-size-xs);
+  margin-top: var(--space-6);
   color: var(--text-muted);
-  margin-left: auto;
+  font-size: var(--font-size-xs);
+  align-self: flex-end;
 }
 
-/* Tag → accent mapping (cards) */
-.hp-card[data-tag="ai"]         { --tag-accent: var(--color-cerulean); }
-.hp-card[data-tag="analytics"]  { --tag-accent: var(--color-violet); }
-.hp-card[data-tag="ops"]        { --tag-accent: var(--color-amber); }
-.hp-card[data-tag="admin"]      { --tag-accent: var(--color-rose); }
-.hp-card[data-tag="it"]         { --tag-accent: var(--color-mint); }
-.hp-card[data-tag="security"]   { --tag-accent: var(--color-fuchsia); }
-.hp-card[data-tag="eng"]        { --tag-accent: var(--color-lime); }
+/* Tag → accent color mapping (palette from App.css) */
+.hp-card[data-tag="ai"]        { --tag-accent: var(--color-cerulean); }
+.hp-card[data-tag="analytics"] { --tag-accent: var(--color-violet); }
+.hp-card[data-tag="ops"]       { --tag-accent: var(--color-amber); }
+.hp-card[data-tag="admin"]     { --tag-accent: var(--color-rose); }
+.hp-card[data-tag="it"]        { --tag-accent: var(--color-mint); }
+.hp-card[data-tag="security"]  { --tag-accent: var(--color-fuchsia); }
+.hp-card[data-tag="eng"]       { --tag-accent: var(--color-lime); }
 
-/* ===== Scrollbars (columns) ===== */
+/* =========================================
+   Column scrollbars — same light touch everywhere
+   ========================================= */
 .hp-rail,
 .hp-main {
-  scrollbar-width: thin;                           /* Firefox */
-  scrollbar-color: rgba(12,18,32,0.35) transparent;/* looks good on light */
-  scrollbar-gutter: stable both-edges;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(12,18,32,0.35) transparent;
+  scrollbar-gutter: stable;
 }
 .hp-rail::-webkit-scrollbar,
 .hp-main::-webkit-scrollbar { width: 4px; height: 4px; }
@@ -344,35 +257,10 @@
 .hp-rail::-webkit-scrollbar-thumb:hover,
 .hp-main::-webkit-scrollbar-thumb:hover { background: rgba(12,18,32,0.45); }
 
-/* Resizer strip */
-.hp-resizer {
-  width: 6px;
-  cursor: col-resize;
-  position: relative;
-  background: transparent;
-}
-.hp-resizer::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  opacity: 1;
-  transition: opacity var(--transition-fast, 120ms);
-  background: linear-gradient(
-    to right,
-    transparent 0%,
-    rgba(0,0,0,0.04) 45%,
-    rgba(0,0,0,0.10) 50%,
-    rgba(0,0,0,0.04) 55%,
-    transparent 100%
-  );
-}
-.hp-resizer:hover::after,
-.hp.is-dragging .hp-resizer::after { opacity: 1; }
-
-/* ===== Collapse side menu on small screens ===== */
-@media (max-width: 900px) {
-  .hp-rail,
-  .hp-resizer { display: none !important; }
-  .hp-shell { grid-template-columns: 1fr !important; }
-  .hp-main { overflow-y: auto; }
+/* =========================================
+   Reduced motion — stay classy
+   ========================================= */
+@media (prefers-reduced-motion: reduce) {
+  .hp-chip-icon,
+  .hp-card { transition: none !important; }
 }
