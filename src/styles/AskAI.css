@@ -2,11 +2,11 @@
 
 /* Replace your current .askai height rule with this */
 .askai {
-  position: fixed;
-  inset: calc(var(--header-h, 48px) - 12px) 0 0 0; /* <- tweak this nudge */
-  display: grid;
-  grid-template-rows: auto 1fr; /* header, then content */
-  background: var(--bg-base);
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   color: var(--text-primary);
 }
 
@@ -34,7 +34,7 @@
 .askai-search input,
 .askai-text {
   font-family: inherit; /* <- match your global font */
-  font-size: var(--font-size-xs);
+  font-size: var(--font-size-xxs);
   color: var(--text-primary);
 }
 
@@ -133,7 +133,7 @@
 .askai-toast {
   position:absolute; right: var(--space-3); bottom: calc(40px + var(--space-3));
   background: var(--bg-card); border:1px solid var(--border-color);
-  padding: 2px 8px; border-radius: var(--radius); font-size: var(--font-size-xs); color: var(--text-secondary);
+  padding: 2px 8px; border-radius: var(--radius); font-size: var(--font-size-xxs); color: var(--text-secondary);
 }
 
 /* handle */
@@ -162,8 +162,8 @@
   transition: border-color var(--transition-fast), transform var(--transition-fast);
 }
 .h-item:hover { border-color: var(--text-secondary); transform: translateY(-1px); }
-.h-q { font-size: var(--font-size-sm); color: var(--text-primary); font-weight:700; margin-bottom: var(--space-1); }
-.h-a { font-size: var(--font-size-xs); color: var(--text-secondary); }
+.h-q { font-size: var(--font-size-xs); color: var(--text-primary); font-weight:700; margin-bottom: var(--space-1); }
+.h-a { font-size: var(--font-size-xxs); color: var(--text-secondary); }
 .h-actions { display:inline-flex; gap:var(--space-2); float:right; margin-top:-22px; }
 
 /* thin white scrollbars */
@@ -205,7 +205,7 @@
 
 /* --- XS sizing for both question & answer bubbles --- */
 .msg {
-  font-size: var(--font-size-xs);       /* text to xs */
+  font-size: var(--font-size-xxs);       /* text to xs */
   line-height: 1.35;
   padding: var(--space-2) var(--space-3); /* tighter padding */
 }
@@ -226,7 +226,7 @@
 
 /* Tighten the composer text to xs as well */
 .askai-text {
-  font-size: var(--font-size-xs);
+  font-size: var(--font-size-xxs);
   line-height: 1.35;
   resize: none;
 }

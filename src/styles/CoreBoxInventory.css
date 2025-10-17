@@ -8,7 +8,7 @@
 /* ---------- Container / page ---------- */
 .cbi-wrap{
   /* derive xs base from your tokens */
-  --fs-xs: var(--font-size-xs);
+  --fs-xs: var(--font-size-xxs);
 
   display:flex;
   flex-direction:column;

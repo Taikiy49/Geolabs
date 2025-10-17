@@ -8,7 +8,6 @@
   top: 0;
   z-index: 3000;
   background: var(--header-bg, linear-gradient(90deg, #0b63ce 0%, #0a56b5 100%));
-  /* On a blue header, a subtle bottom divider helps against white content */
   border-bottom: 1px solid color-mix(in oklab, #000 18%, transparent);
   box-shadow: var(--shadow-header);
 }
@@ -18,10 +17,10 @@
   display: grid;
   grid-template-columns: auto 1fr auto;
   align-items: center;
-  gap: var(--space-4);
+  gap: var(--space-6);
   padding: var(--space-3) var(--space-5);
   min-height: 44px;
-  color: #fff;                    /* default foreground on blue */
+  color: #fff; /* default foreground on blue */
 }
 
 /* ===== Brand ===== */
@@ -37,7 +36,7 @@
 .hlite-logo {
   width: 22px; height: 22px; border-radius: var(--radius);
   object-fit: contain;
-  box-shadow: 0 0 0 1px rgba(255,255,255,.25) inset; /* visible on blue */
+  box-shadow: 0 0 0 1px rgba(255,255,255,.25) inset;
 }
 
 .hlite-name {
@@ -53,11 +52,7 @@
 
 /* ===== Search (center) ===== */
 .hlite-searchbar { display:flex; align-items:center; justify-content:center; }
-
-.hlite-search-wrap {
-  position: relative;
-  width: min(760px, 96%);
-}
+.hlite-search-wrap { position: relative; width: min(760px, 96%); }
 
 .hlite-search-icon {
   position: absolute;
@@ -72,12 +67,11 @@
 /* Translucent, high-contrast field for blue headers */
 .hlite-search-input {
   width: 100%;
-  height: 32px;
-  padding: 0 12px 0 32px;
-  font-size: var(--font-size-sm);
-  color: #0c1424; /* dark text on light/translucent field */
-  background:
-    linear-gradient(0deg, rgba(255,255,255,.92), rgba(255,255,255,.92));
+  height: 28px;
+  padding: 0 var(--space-4);
+  font-size: var(--font-size-xs);
+  color: #0c1424;
+  background: linear-gradient(0deg, rgba(255,255,255,.92), rgba(255,255,255,.92));
   border: 1px solid rgba(255,255,255,.55);
   border-radius: var(--radius);
   box-shadow:
@@ -103,20 +97,27 @@
 }
 
 /* ===== Actions (right) ===== */
+.hlite-auth {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-3);
+  /* keep controls from hugging the right edge on narrow viewports */
+  padding-inline-end: 2px;
+}
+
 .hlite-actions { display: inline-flex; align-items: center; gap: var(--space-3); }
 
-/* Ghost buttons on blue background */
+/* (existing) Ghost button — used for "Sign in" only */
 .hlite-btn,
 .hlite-profile {
   padding: 0 var(--space-4);
   color: #fff;
   cursor: pointer;
-  font-size: var(--font-size-xs);
+  font-size: var(--font-size-xxs);
   font-weight: 700;
   letter-spacing: .01em;
   background: none;
   border: none;
-
 }
 .hlite-btn:hover,
 .hlite-profile:hover {
@@ -130,24 +131,63 @@
   background: rgba(255,255,255,.14);
 }
 
-/* theme toggle keeps a stable width */
-.hlite-theme { min-width: 72px; }
-
-/* Profile pill */
-.hlite-profile { display: inline-flex; align-items: center; gap: var(--space-2); }
-.hlite-avatar {
-  width: 18px; height: 18px; border-radius: 50%;
-  background: linear-gradient(135deg, #ffffff 0%, color-mix(in oklab, #ffffff 0%, var(--color-primary) 100%) 100%);
-  color: #0c1424;
-  display: grid; place-items: center;
-  font-size: 0.64rem; font-weight: 800; line-height: 1;
-  box-shadow: 0 0 0 1px rgba(0,0,0,.1) inset;
+/* ===== Avatar-only button (opens Microsoft Account) ===== */
+.hlite-avatarbtn {
+  -webkit-tap-highlight-color: transparent;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  border-radius: 999px;
+  display: inline-grid;
+  place-items: center;
+  transition: transform var(--transition-fast), background var(--transition-fast);
 }
-.hlite-user {
-  max-width: 170px;
-  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
-  color: rgba(255,255,255,.85);
-  font-size: var(--font-size-xs);
+.hlite-avatarbtn:hover { transform: translateY(-1px); }
+.hlite-avatarbtn:active { transform: translateY(0); }
+
+.hlite-avatar {
+  width: 28px;
+  height: 28px;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  font-size: 0.72rem;
+  font-weight: 800;
+  color: #0b2a58;
+  background:
+    radial-gradient(120% 120% at 30% 20%, #ffffff 0%, #e9f2ff 60%, #dbeaff 100%);
+  box-shadow:
+    0 0 0 2px rgba(255,255,255,.65),
+    0 2px 10px rgba(0,0,0,.18);
+}
+
+/* ===== Icon-only sign out button ===== */
+.hlite-iconbtn {
+  -webkit-tap-highlight-color: transparent;
+  display: inline-grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: #fff;
+  border: 1px solid rgba(255,255,255,.22);
+  cursor: pointer;
+  transition: background var(--transition-fast),
+              border-color var(--transition-fast),
+              transform var(--transition-fast),
+              color var(--transition-fast);
+}
+.hlite-iconbtn:hover {
+  background: rgba(255,255,255,.18);
+  border-color: rgba(255,255,255,.45);
+  transform: translateY(-1px);
+}
+.hlite-iconbtn:active {
+  transform: translateY(0);
+  background: rgba(255,255,255,.14);
 }
 
 /* ===== Responsive ===== */
@@ -161,5 +201,6 @@
 
 /* Reduced motion */
 @media (prefers-reduced-motion: reduce) {
-  .hlite-btn, .hlite-profile, .hlite-search-input { transition: none; }
+  .hlite-btn, .hlite-profile, .hlite-search-input,
+  .hlite-avatarbtn, .hlite-iconbtn { transition: none; }
 }

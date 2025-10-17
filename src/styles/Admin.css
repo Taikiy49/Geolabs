@@ -49,7 +49,7 @@
   border: 1px solid var(--border-color);
   background: rgba(30,41,59,.6);
   color: var(--text-secondary);
-  font-size: var(--font-size-xs); font-weight: 800; letter-spacing: .03em; text-transform: uppercase;
+  font-size: var(--font-size-xxs); font-weight: 800; letter-spacing: .03em; text-transform: uppercase;
 }
 .admin-pill.admin-owner { background: rgba(139,92,246,.14); color: #dcd1ff; border-color: rgba(139,92,246,.35); }
 .admin-pill.admin-admin { background: rgba(0,212,255,.14); color: #bff3ff; border-color: rgba(0,212,255,.35); }
@@ -66,7 +66,7 @@
   color: var(--text-primary);
   border: 1px solid var(--border-color);
   border-radius: var(--radius);
-  font-size: var(--font-size-sm);
+  font-size: var(--font-size-xs);
   outline: none;
   transition: border-color .15s ease, box-shadow .15s ease, background .15s ease;
 }
@@ -86,7 +86,7 @@
   border: 1px solid var(--border-color);
   background: rgba(30,41,59,.85);
   color: var(--text-primary);
-  font-size: var(--font-size-sm);
+  font-size: var(--font-size-xs);
   cursor: pointer;
   display: inline-flex; align-items: center; gap: var(--space-2);
   transition: transform .12s ease, border-color .12s ease, background .12s ease, box-shadow .12s ease;
@@ -120,7 +120,7 @@
 .admin-status {
   margin-left: auto; display: inline-flex; align-items: center; gap: var(--space-2);
   color: var(--text-secondary);
-  font-size: var(--font-size-sm);
+  font-size: var(--font-size-xs);
 }
 .admin-ok { color: var(--color-success); }
 
@@ -138,7 +138,7 @@
   min-width: 860px;
   border-collapse: collapse;
   table-layout: fixed;
-  font-size: var(--font-size-sm);
+  font-size: var(--font-size-xs);
 }
 
 /* Header */
@@ -154,7 +154,7 @@
   border-bottom: 1px solid var(--border-color);
   font-weight: 800; letter-spacing: .01em;
   white-space: nowrap;
-  font-size: var(--font-size-sm);
+  font-size: var(--font-size-xs);
 }
 .admin-sort { cursor: pointer; }
 .admin-sort:hover { color: var(--text-primary); }
@@ -165,7 +165,7 @@
   border-bottom: 1px dashed rgba(120,140,170,.25);
   color: var(--text-primary);
   white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
-  font-size: var(--font-size-sm);
+  font-size: var(--font-size-xs);
 }
 
 /* Row highlights */
@@ -175,13 +175,13 @@
 .admin-user-row  td { box-shadow: inset 2px 0 0 rgba(148,163,184,.35); }
 
 .admin-email { font-weight: 600; }
-.admin-you   { margin-left: var(--space-2); color: var(--text-muted); font-size: var(--font-size-xs); }
+.admin-you   { margin-left: var(--space-2); color: var(--text-muted); font-size: var(--font-size-xxs); }
 
 .admin-badge {
   padding: calc(var(--space-1) - 1px) var(--space-3);
   border-radius: 999px;
   border: 1px solid var(--border-color);
-  font-size: var(--font-size-xs); font-weight: 800; letter-spacing: .03em; text-transform: uppercase;
+  font-size: var(--font-size-xxs); font-weight: 800; letter-spacing: .03em; text-transform: uppercase;
 }
 .admin-badge.admin-owner { background: rgba(139,92,246,.14); color: #decfff; border-color: rgba(139,92,246,.35); }
 .admin-badge.admin-admin { background: rgba(0,212,255,.14); color: #bff3ff; border-color: rgba(0,212,255,.35); }
@@ -198,7 +198,7 @@
   display: flex; align-items: center; justify-content: center; gap: var(--space-2);
   padding: var(--space-4) 0 var(--space-5);
 }
-.admin-page { color: var(--text-secondary); font-weight: 800; font-size: var(--font-size-sm); }
+.admin-page { color: var(--text-secondary); font-weight: 800; font-size: var(--font-size-xs); }
 
 /* ---------- Responsive ---------- */
 @media (max-width: 900px) {

@@ -20,6 +20,7 @@
   --font-size-base: 0.875rem;
   --font-size-sm: 0.78rem;
   --font-size-xs: 0.72rem;
+  --font-size-xxs: 0.64rem;
 
   /* Radii */
   --radius: 4px;
@@ -114,7 +115,7 @@
   min-height: 0;
   background: var(--bg-base);
   line-height: 1.65;
-  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 /* ==========================

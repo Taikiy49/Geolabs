@@ -8,7 +8,6 @@
 /* ---------- Wrapper & page structure ---------- */
 .contacts-wrap{
   /* derive an xxs size from your xs token */
-  --fs-xxs: calc(var(--font-size-xs) * 0.92);
 
   position: relative;
   display: flex;
@@ -41,7 +40,7 @@
   border-bottom: 1px solid var(--border-color);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  font-size: var(--fs-xxs);
+  font-size: var(--font-size-xxs);
 }
 .contacts-left,
 .contacts-right{
@@ -51,16 +50,22 @@
 /* Hide the header text entirely */
 .contacts-heading{ display:none !important; }
 
+.contacts-controls{
+  display:flex; align-items:center;
+  gap: var(--space-2);
+}
+
 /* ---------- Controls: inputs / selects / buttons ---------- */
 .contacts-input,
 .contacts-select{
   height: 22px;
+  min-width: 180px;
   padding: 0 var(--space-2);
   background: var(--bg-card-2);
   color: var(--text-primary);
   border: 1px solid var(--border-color);
   border-radius: var(--radius);
-  font-size: var(--fs-xxs);
+  font-size: var(--font-size-xxs);
   outline: none;
   transition: border-color var(--transition-fast), box-shadow var(--transition-fast), background var(--transition-fast);
 }
@@ -80,7 +85,7 @@
   border: 1px solid var(--border-color);
   background: var(--bg-card-2);
   color: var(--text-primary);
-  font-size: var(--fs-xxs);
+  font-size: var(--font-size-xxs);
   cursor: pointer;
   display:inline-flex; align-items:center; gap: var(--space-2);
   transition: transform var(--transition-fast), border-color var(--transition-fast), background var(--transition-fast), box-shadow var(--transition-fast);
@@ -128,7 +133,7 @@
 }
 .contacts-colrow{
   display:flex; align-items:center; gap: var(--space-2);
-  font-size: var(--fs-xxs);
+  font-size: var(--font-size-xxs);
   color: var(--text-secondary);
   padding: var(--space-1) var(--space-1);
   border-radius: calc(var(--radius) - 2px);
@@ -138,9 +143,9 @@
 /* ---------- Meta & load-more ---------- */
 .contacts-meta{
   display:flex; align-items:center; justify-content:space-between;
-  padding: var(--space-2) var(--space-3);
+  padding: var(--space-1) var(--space-3);
   color: var(--text-secondary);
-  font-size: var(--fs-xxs);
+  font-size: var(--font-size-xxs);
 }
 .contacts-loadmore{ display:flex; gap: var(--space-2); flex-wrap:wrap; }
 
@@ -149,7 +154,7 @@
   flex: 1 1 auto;        /* fill remaining height */
   min-height: 0;         /* allow to shrink */
   overflow: auto;        /* the ONLY vertical scroller */
-  margin: var(--space-2) var(--space-3);
+  margin: var(--space-1) var(--space-2);
   background: var(--bg-card);
   border: 1px solid var(--border-color);
   border-radius: var(--radius);
@@ -162,7 +167,7 @@
   min-width: 820px;      /* horizontal scroll safety */
   border-collapse: collapse;
   table-layout: fixed;
-  font-size: var(--fs-xxs);
+  font-size: var(--font-size-xxs);
 }
 
 .contacts-th{
@@ -199,7 +204,7 @@
   text-align:center;
   color: var(--text-muted);
   padding: var(--space-5) 0;
-  font-size: var(--fs-xxs);
+  font-size: var(--font-size-xxs);
 }
 
 /* ---------- Pager ---------- */
@@ -207,7 +212,7 @@
   display:flex; align-items:center; justify-content:center; gap: var(--space-2);
   padding: var(--space-2) 0 var(--space-4);
   margin: 0 var(--space-3);
-  font-size: var(--fs-xxs);
+  font-size: var(--font-size-xxs);
 }
 .contacts-page{ color: var(--text-secondary); font-weight: 800; }
 

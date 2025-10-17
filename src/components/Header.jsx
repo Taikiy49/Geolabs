@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useMsal, useIsAuthenticated } from "@azure/msal-react";
+import { FiLogOut } from "react-icons/fi";   // ⬅ icon-only sign-out
 import "../styles/Header.css";
 
 function initialsFrom(email, name) {
@@ -36,7 +37,6 @@ export default function Header() {
   useEffect(() => {
     const root = document.documentElement;
     root.setAttribute("data-theme", "light");
-    // optional: persist, so other pages pick it up
     try { localStorage.setItem("geolabs_theme", "light"); } catch {}
   }, []);
 
@@ -105,23 +105,30 @@ export default function Header() {
           />
         </div>
 
-        {/* Right: Microsoft auth (no theme toggle) */}
+        {/* Right: Microsoft auth (avatar-only + icon-only sign out) */}
         <div className="hlite-auth">
           {isAuthed ? (
             <>
               <button
                 type="button"
-                className="hlite-profile"
+                className="hlite-avatarbtn"
                 title={displayName || userEmail || "Account"}
+                aria-label="Open Microsoft Account"
                 onClick={() =>
                   window.open("https://myaccount.microsoft.com/", "_blank", "noopener,noreferrer")
                 }
               >
                 <span className="hlite-avatar">{initials}</span>
-                <span className="hlite-user">{displayName || userEmail}</span>
               </button>
-              <button type="button" className="hlite-btn" onClick={handleSignOut} title="Sign out">
-                Sign out
+
+              <button
+                type="button"
+                className="hlite-iconbtn"
+                onClick={handleSignOut}
+                title="Sign out"
+                aria-label="Sign out"
+              >
+                <FiLogOut size={18} />
               </button>
             </>
           ) : (
