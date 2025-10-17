@@ -67,7 +67,7 @@
 /* Translucent, high-contrast field for blue headers */
 .hlite-search-input {
   width: 100%;
-  height: 28px;
+  height: 26px;
   padding: 0 var(--space-4);
   font-size: var(--font-size-xs);
   color: #0c1424;

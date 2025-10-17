@@ -159,7 +159,7 @@
   background: var(--bg-card);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-lg);
-  padding: var(--card-pad);
+  padding: var(--space-6);
   box-shadow: var(--shadow-surface);
   display: flex;
   flex-direction: column;
@@ -193,20 +193,24 @@
 }
 .hp-title-spacer { flex: 1 1 auto; min-width: 0; }
 
-/* tag chip (icon+label) — subtle, professional */
 .hp-tagchip {
   display: inline-flex;
   align-items: center;
   gap: var(--space-2);
-  padding: 2px 10px;
+  padding: var(--space-2) var(--space-4);
   border-radius: 999px;
-  background:
-    color-mix(in oklab, var(--bg-card-2) 84%, var(--tag-accent, var(--border-color)) 16%);
-  color:
-    color-mix(in oklab, var(--tag-accent, var(--text-primary)) 70%, var(--text-primary) 30%);
+
+  /* translucent primary */
+  background: color-mix(in oklab, var(--color-primary) 20%, transparent);
+
+  /* text tinted toward primary but readable */
+  color: color-mix(in oklab, var(--text-primary) 80%, var(--color-primary) 40%);
+
   font-size: var(--font-size-xxs);
   box-shadow: 0 1px 0 rgba(0,0,0,.02), 0 4px 10px rgba(0,0,0,.08);
 }
+
+
 
 /* body */
 .hp-desc {
