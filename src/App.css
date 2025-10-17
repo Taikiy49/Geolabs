@@ -23,8 +23,8 @@
   --font-size-xxs: 0.64rem;
 
   /* Radii */
-  --radius: 4px;
-  --radius-lg: 8px;
+  --radius: 2px;
+  --radius-lg: 4px;
 
   /* Layout defaults */
   --card-pad: var(--space-6);
