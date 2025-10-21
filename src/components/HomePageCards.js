@@ -38,17 +38,6 @@ const homepageCards = [
       "Browse compiled geotechnical reports, slice dashboards by client/project/date, and jump into related files with one click.",
     path: "/reports",
   },
-  {
-    label: "Reports Binder",
-    tag: "Analytics",
-    updated: "2025-09-14", // +2 days
-    icon: <FaTable size={24} />,
-    description:
-      "Filter and edit OCR rows (WO, initials, billing, dates) and export CSV.",
-    descriptionLong:
-      "Filter and edit OCR rows (WO, initials, billing, dates), validate against rules, track changes, and export curated CSVs for billing.",
-    path: "/reports-binder",
-  },
 
   // Projects & Files
   {

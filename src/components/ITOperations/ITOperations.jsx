@@ -38,7 +38,6 @@ export default function ITOperations() {
     () => [
       { key: "onboarded",  label: "Onboarded Accounts",  icon: <FaUserPlus />,  count: counts.onboarded },
       { key: "terminated", label: "Terminated Accounts", icon: <FaUserSlash />, count: counts.terminated },
-      { key: "tickets",    label: "IT Tickets",          icon: <FaTicketAlt />, count: counts.tickets },
     ],
     [counts]
   );
@@ -74,7 +73,6 @@ export default function ITOperations() {
       <main className="ops-main">
         {tab === "onboarded" && <OnboardedAccounts onCount={(n) => handleCounts("onboarded", n)} />}
         {tab === "terminated" && <TerminatedAccounts onCount={(n) => handleCounts("terminated", n)} />}
-        {tab === "tickets" && <ITTickets onCount={(n) => handleCounts("tickets", n)} />}
       </main>
     </div>
   );
