@@ -1,0 +1,217 @@
+/* src/styles/FileAudit.css
+   XS-only tokens from :root. Sticky toolbar, sticky table header, scrollable body,
+   zero row/header vertical padding, per-page selector, infinite scroll.
+*/
+
+/* Shell */
+.fa-wrap {
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+  background: var(--bg-base);
+  font-size: var(--font-size-xxs);
+  color: var(--text-primary);
+}
+
+/* Sticky top toolbar — full width, no side padding */
+.fa-header {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background: var(--bg-card);
+  border-bottom: 1px solid var(--border-color);
+  padding: var(--space-2) 0; /* no side padding */
+}
+
+.fa-actions {
+  display: flex;
+  gap: var(--space-2);
+  align-items: center;
+  width: 100%;
+  padding: 0 var(--space-1); /* micro breathing without real side padding */
+}
+
+.fa-label {
+  color: var(--text-muted);
+}
+
+/* Inputs / buttons — XS only */
+.fa-search,
+.fa-filter,
+.fa-notes,
+.fa-form input,
+.fa-form textarea,
+.fa-form select {
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  padding: var(--space-2) var(--space-2);
+  font-size: var(--font-size-xxs);
+  background: var(--bg-card);
+  color: var(--text-primary);
+  min-width: 0;
+}
+
+.fa-search { flex: 1; }
+
+.fa-btn {
+  cursor: pointer;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  padding: var(--space-2) var(--space-2);
+  background: var(--bg-card);
+  font-size: var(--font-size-xxs);
+  box-shadow: var(--shadow-surface);
+  transition: background var(--transition-fast);
+}
+.fa-btn:hover { background: var(--bg-hover); }
+
+.fa-link {
+  background: transparent;
+  border: 0;
+  color: var(--color-primary);
+  cursor: pointer;
+  padding: var(--space-1) var(--space-2);
+  font-size: var(--font-size-xxs);
+}
+.fa-link.danger { color: var(--color-danger); }
+
+/* Upload label mimics button */
+.fa-upload-btn { position: relative; display: inline-flex; align-items: center; }
+.fa-upload-btn .fa-upload-input {
+  position: absolute; inset: 0; opacity: 0; cursor: pointer;
+}
+.fa-upload-btn.is-busy { pointer-events: none; opacity: 0.7; }
+
+/* Main scroll area (infinite scroll target) */
+.fa-main {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow: auto;
+  padding: 0;
+}
+
+/* Table */
+.fa-table { border-top: 1px solid var(--border-color); }
+
+/* Grid rows/headers: no padding on containers */
+.fa-thead,
+.fa-row {
+  display: grid;
+  grid-template-columns: 1.2fr 0.9fr 0.7fr 0.8fr 1fr 1.2fr 0.4fr;
+  gap: 0;
+  padding: 0;
+  font-size: var(--font-size-xxs);
+}
+
+/* Cell padding (tiny) so text isn’t glued to the borders) */
+.fa-thead > div,
+.fa-row > div {
+  padding: var(--space-1) var(--space-2);
+}
+
+/* Sticky header inside scroll */
+.fa-thead {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: var(--bg-card-2);
+  color: var(--text-muted);
+  font-weight: 600;
+  border-bottom: 1px solid var(--border-color);
+}
+
+/* Body rows */
+.fa-row {
+  border-bottom: 1px solid var(--border-color);
+  align-items: center;
+}
+.fa-row.is-saving { opacity: 0.6; }
+
+/* Zebra (subtle) */
+.fa-tbody .fa-row:nth-child(odd) { background: var(--bg-base); }
+
+.fa-empty {
+  padding: var(--space-3);
+  color: var(--text-muted);
+}
+
+/* Status select — light color wash by status via data-attr */
+.fa-status {
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  padding: var(--space-1) var(--space-2);
+  font-size: var(--font-size-xxs);
+  background: var(--bg-card);
+  color: var(--text-primary);
+}
+
+.fa-status[data-status="DONE"]        { background: color-mix(in oklab, var(--color-success) 12%, var(--bg-card) 88%); }
+.fa-status[data-status="IN PROGRESS"]{ background: color-mix(in oklab, var(--color-primary) 10%, var(--bg-card) 90%); }
+.fa-status[data-status="ON HOLD"]    { background: color-mix(in oklab, var(--color-warning) 14%, var(--bg-card) 86%); }
+.fa-status[data-status="ARCHIVED"]   { background: color-mix(in oklab, var(--text-muted) 14%, var(--bg-card) 86%); }
+.fa-status[data-status="NEW"]        { background: color-mix(in oklab, var(--color-cyan) 10%, var(--bg-card) 90%); }
+
+/* Notes input in-row */
+.fa-notes { width: 100%; min-width: 12ch; }
+
+/* Footer (progress + manual load more) */
+.fa-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-2) var(--space-1);
+  color: var(--text-muted);
+  font-size: var(--font-size-xxs);
+  background: var(--bg-card);
+  border-top: 1px solid var(--border-color);
+  position: sticky;
+  bottom: 0;
+}
+
+/* Errors */
+.fa-error {
+  margin: var(--space-2) var(--space-1);
+  color: var(--color-danger);
+}
+
+/* Modal */
+.fa-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.25);
+  display: grid;
+  place-items: center;
+  padding: var(--space-3);
+}
+.fa-card {
+  width: min(720px, 92vw);
+  background: var(--bg-card);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-surface);
+}
+.fa-card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-2) var(--space-2);
+  border-bottom: 1px solid var(--border-color);
+}
+.fa-card-title { font-weight: 600; color: var(--text-secondary); }
+.fa-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-2);
+  padding: var(--space-3);
+}
+.fa-form label {
+  display: grid;
+  gap: var(--space-1);
+  color: var(--text-secondary);
+}
+.fa-notes-area { grid-column: 1 / -1; }
+.fa-form-actions {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--space-2);
+}

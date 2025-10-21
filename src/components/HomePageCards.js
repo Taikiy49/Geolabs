@@ -21,9 +21,9 @@ const homepageCards = [
     tag: "AI",
     updated: "2025-09-14", // +2 days
     icon: <FaRobot size={24} />,
-    description: "Ask natural language questions and get sourced answers.", // short (mobile)
+    description: "Ask natural language questions and get sourced answers.",
     descriptionLong:
-      "Ask natural language questions and get sourced answers with citations, inline previews, and exportable summaries for quick sharing.", // long (desktop)
+      "Ask natural language questions and get sourced answers with citations, inline previews, and exportable summaries for quick sharing.",
     path: "/ask-ai",
   },
 
@@ -51,6 +51,16 @@ const homepageCards = [
   },
 
   // Projects & Files
+  {
+    label: "File Audit",
+    tag: "Ops",
+    updated: "2025-09-14", // +2 days
+    icon: <FaDatabase size={24} />,
+    description: "Edit file folders, status, notes; auto-updates timestamps.",
+    descriptionLong:
+      "Audit and manage file records: edit FILE FOLDER, LOCATION, ENGR, set STATUS, add NOTES, and view LAST UPDATED. Search, filter by status, CSV import/export.",
+    path: "/file-audit",
+  },
   {
     label: "OCR Work Orders",
     tag: "Ops",
@@ -113,7 +123,7 @@ const homepageCards = [
     description: "Search internal file servers by name, type, size, and date.",
     descriptionLong:
       "Search internal file servers by name, type, size, and date; preview files, copy paths, and export results for audits and clean-up.",
-    path: "/server-search"
+    path: "/server-search",
   },
 ];
 

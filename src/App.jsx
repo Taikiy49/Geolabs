@@ -12,6 +12,7 @@ import Contacts from './components/Contacts';
 import ITOperations from './components/ITOperations/ITOperations';
 import S3Bucket from './components/S3/S3Bucket';
 import ServerSearch from './components/ServerSearch'; 
+import FileAudit from './components/FileAudit';
 
 
 import { useMsal, useIsAuthenticated } from '@azure/msal-react';
@@ -167,6 +168,12 @@ function App() {
             <Route path="/server-search" element={
               <RequireMsalAuth>
                 <ServerSearch />
+              </RequireMsalAuth>
+            } />
+
+            <Route path="/file-audit" element={
+              <RequireMsalAuth>
+                <FileAudit />
               </RequireMsalAuth>
             } />
           </Routes>
