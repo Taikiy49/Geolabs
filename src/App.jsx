@@ -1,31 +1,38 @@
-import React, { useEffect } from 'react';
-import { Routes, Route, Navigate, useLocation, useNavigate } from 'react-router-dom';
-import './App.css';
-import Header from './components/Header';
-import HomePage from './components/HomePage';
-import AskAI from './components/AskAI';
-import Reports from './components/S3/Reports';
-import ReportsBinder from './components/ReportsBinder';
-import CoreBoxInventory from './components/CoreBoxInventory';
-import OCRLookup from './components/OCRLookup';
-import Contacts from './components/Contacts';
-import ITOperations from './components/ITOperations/ITOperations';
-import S3Bucket from './components/S3/S3Bucket';
-import ServerSearch from './components/ServerSearch'; 
-import FileAudit from './components/FileAudit';
+// src/App.jsx
+import React, { useEffect } from "react";
+import { Routes, Route, Navigate, useLocation, useNavigate } from "react-router-dom";
+import "./App.css";
 
+import Header from "./components/Header";
+import Sidebar from "./components/Sidebar"; // sticky left rail
 
-import { useMsal, useIsAuthenticated } from '@azure/msal-react';
-import { InteractionStatus } from '@azure/msal-browser';
+// Pages
+import HomePage from "./components/HomePage";
+import AskAI from "./components/AskAI";
+import Reports from "./components/S3/Reports";
+import ReportsBinder from "./components/ReportsBinder";
+import CoreBoxInventory from "./components/CoreBoxInventory";
+import OCRLookup from "./components/OCRLookup";
+import Contacts from "./components/Contacts";
+import ITOperations from "./components/ITOperations/ITOperations";
+import S3Bucket from "./components/S3/S3Bucket";
+import ServerSearch from "./components/ServerSearch";
+import FileAudit from "./components/FileAudit";
 
+// MSAL
+import { useMsal, useIsAuthenticated } from "@azure/msal-react";
+import { InteractionStatus } from "@azure/msal-browser";
+
+/* -------------------------
+   Route guard (MSAL)
+   ------------------------- */
 function RequireMsalAuth({ children }) {
   const isAuthed = useIsAuthenticated();
-  const { inProgress } = useMsal(); // login/handleRedirect/none
+  const { inProgress } = useMsal();
   const location = useLocation();
 
-  // Don't redirect while MSAL is busy finishing the redirect
   if (inProgress !== InteractionStatus.None) {
-    return <div style={{ padding: 24 }}>Finishing sign-in…</div>;
+    return <div className="loading">Finishing sign-in…</div>;
   }
   if (!isAuthed) {
     return <Navigate to="/login" state={{ from: location }} replace />;
@@ -33,28 +40,31 @@ function RequireMsalAuth({ children }) {
   return children;
 }
 
+/* -------------------------
+   Microsoft Login screen
+   ------------------------- */
 function MsLogin() {
   const isAuthed = useIsAuthenticated();
   const { instance, inProgress } = useMsal();
   const navigate = useNavigate();
   const location = useLocation();
-  const from = location.state?.from?.pathname || '/';
+  const from = location.state?.from?.pathname || "/";
 
   useEffect(() => {
     if (isAuthed) {
       navigate(from, { replace: true });
       return;
     }
-    if (inProgress === 'none') {
-      instance.loginRedirect({ scopes: ['User.Read'], prompt: 'select_account' });
+    if (inProgress === InteractionStatus.None) {
+      instance.loginRedirect({ scopes: ["User.Read"], prompt: "select_account" });
     }
   }, [isAuthed, inProgress, instance, navigate, from]);
 
   const tryAgain = () =>
-    instance.loginRedirect({ scopes: ['User.Read'], prompt: 'select_account' });
+    instance.loginRedirect({ scopes: ["User.Read"], prompt: "select_account" });
 
   const tryPopup = () =>
-    instance.loginPopup({ scopes: ['User.Read'], prompt: 'select_account' });
+    instance.loginPopup({ scopes: ["User.Read"], prompt: "select_account" });
 
   return (
     <div className="auth-redirect">
@@ -79,111 +89,42 @@ function MsLogin() {
   );
 }
 
-
-function App() {
+/* -------------------------
+   App layout + routes
+   ------------------------- */
+export default function App() {
   return (
     <div className="App">
       <Header />
-      <div className="app-container">
-        <main className="main-content">
+
+      {/* Two-column layout: fixed 260px sidebar + flexible main.
+          This coexists with your older .app-container/.main-content,
+          but App.jsx now uses .app-layout/.app-main. */}
+      <div className="app-layout">
+        <Sidebar />
+        <main className="app-main">
           <Routes>
-            {/* Public: the only public page is the auto-login redirect */}
+            {/* Public */}
             <Route path="/login" element={<MsLogin />} />
 
-            {/* Everything else requires Microsoft sign-in */}
-            <Route
-              path="/"
-              element={
-                <RequireMsalAuth>
-                  <HomePage />
-                </RequireMsalAuth>
-              }
-            />
-            <Route
-              path="/ask-ai"
-              element={
-                <RequireMsalAuth>
-                  <AskAI />
-                </RequireMsalAuth>
-              }
-            />
-            <Route
-              path="/reports"
-              element={
-                <RequireMsalAuth>
-                  <Reports />
-                </RequireMsalAuth>
-              }
-            />
-            <Route
-              path="/reports-binder"
-              element={
-                <RequireMsalAuth>
-                  <ReportsBinder />
-                </RequireMsalAuth>
-              }
-            />
-            <Route
-              path="/core-box-inventory"
-              element={
-                <RequireMsalAuth>
-                  <CoreBoxInventory />
-                </RequireMsalAuth>
-              }
-            />
-            <Route
-              path="/ocr-lookup"
-              element={
-                <RequireMsalAuth>
-                  <OCRLookup />
-                </RequireMsalAuth>
-              }
-            />
-            <Route
-              path="/contacts"
-              element={
-                <RequireMsalAuth>
-                  <Contacts />
-                </RequireMsalAuth>
-              }
-            />
-            <Route
-              path="/it-operations"
-              element={
-                <RequireMsalAuth>
-                  <ITOperations />
-                </RequireMsalAuth>
-              }
-            />
-            <Route
-              path="/s3-bucket"
-              element={
-                <RequireMsalAuth>
-                  <S3Bucket />
-                </RequireMsalAuth>
-              }
-            />
+            {/* Protected */}
+            <Route path="/" element={<RequireMsalAuth><HomePage /></RequireMsalAuth>} />
+            <Route path="/ask-ai" element={<RequireMsalAuth><AskAI /></RequireMsalAuth>} />
+            <Route path="/reports" element={<RequireMsalAuth><Reports /></RequireMsalAuth>} />
+            <Route path="/reports-binder" element={<RequireMsalAuth><ReportsBinder /></RequireMsalAuth>} />
+            <Route path="/core-box-inventory" element={<RequireMsalAuth><CoreBoxInventory /></RequireMsalAuth>} />
+            <Route path="/ocr-lookup" element={<RequireMsalAuth><OCRLookup /></RequireMsalAuth>} />
+            <Route path="/contacts" element={<RequireMsalAuth><Contacts /></RequireMsalAuth>} />
+            <Route path="/it-operations" element={<RequireMsalAuth><ITOperations /></RequireMsalAuth>} />
+            <Route path="/s3-bucket" element={<RequireMsalAuth><S3Bucket /></RequireMsalAuth>} />
+            <Route path="/server-search" element={<RequireMsalAuth><ServerSearch /></RequireMsalAuth>} />
+            <Route path="/file-audit" element={<RequireMsalAuth><FileAudit /></RequireMsalAuth>} />
 
-
-            <Route path="/server-search" element={
-              <RequireMsalAuth>
-                <ServerSearch />
-              </RequireMsalAuth>
-            } />
-
-            <Route path="/file-audit" element={
-              <RequireMsalAuth>
-                <FileAudit />
-              </RequireMsalAuth>
-            } />
+            {/* Fallback */}
+            <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
-
-    
-          
         </main>
       </div>
     </div>
   );
 }
-
-export default App;

@@ -37,7 +37,8 @@ const homepageCards = [
     descriptionLong:
       "Browse compiled geotechnical reports, slice dashboards by client/project/date, and jump into related files with one click.",
     path: "/reports",
-  },
+  }, 
+
 
   // Projects & Files
   {

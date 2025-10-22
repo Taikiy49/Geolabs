@@ -33,11 +33,11 @@
 
   /* ===== Outlook-like LIGHT palette ===== */
   /* Surfaces */
-  --bg-page: #f3f6fc;              /* app backdrop */
-  --bg-base: #f6f8fd;              /* main area */
-  --bg-card: #ffffff;              /* cards/panels */
-  --bg-card-2: #f2f5fb;            /* subtle surface */
-  --bg-hover: rgba(0, 120, 212, 0.10); /* blue hover tint */
+  --bg-page: #f3f6fc;
+  --bg-base: #f6f8fd;
+  --bg-card: #ffffff;
+  --bg-card-2: #f2f5fb;
+  --bg-hover: rgba(0, 120, 212, 0.10);
 
   /* Header & Sidebar (Microsoft blue family) */
   --header-bg: linear-gradient(90deg, #0b64d8 0%, #0a5ed0 100%);
@@ -49,8 +49,8 @@
   --text-muted:     #6a7a96;
 
   /* Accents */
-  --color-primary:   #0a5ed0;  /* Outlook/Microsoft blue */
-  --color-secondary: #1266f1;  /* brighter blue */
+  --color-primary:   #0a5ed0;
+  --color-secondary: #1266f1;
   --color-cerulean:  #0a5ed0;
   --color-violet:    #6d5cff;
   --color-mint:      #00bfa6;
@@ -65,7 +65,7 @@
   --color-warning:   #f59e0b;
   --color-danger:    #e84855;
 
-  /* Icons (so your sidebar icons are white) */
+  /* Icons */
   --icon-on-sidebar: #ffffff;
   --icon-on-header:  #ffffff;
 
@@ -84,12 +84,11 @@
   --text-letter-spacing: normal;
   --text-weight: 400;
 
-  /* Sidebar widths (if needed) */
-  --sidebar-width: 100px;
+  /* Sidebar widths */
+  --sidebar-width: 130px;                 /* <- updated default */
   --sidebar-width-collapsed: 80px;
   --sidebar-w: var(--sidebar-width);
 }
-
 
 /* ==========================
    Base app layout
@@ -101,14 +100,14 @@
   min-height: 100dvh;
 }
 
+/* (Old) container + main if used elsewhere */
 .app-container {
   position: relative;
-  display: flex;      /* sidebar + main */
+  display: flex;
   flex: 1 1 auto;
-  min-height: 0;      /* allow children to scroll correctly */
+  min-height: 0;
   background: var(--bg-base);
 }
-
 .main-content {
   position: relative;
   flex: 1 1 auto;
@@ -122,10 +121,7 @@
    Utilities
    ========================== */
 
-.focus-visible {
-  outline: var(--focus-ring);
-  outline-offset: 2px;
-}
+.focus-visible { outline: var(--focus-ring); outline-offset: 2px; }
 
 .visually-hidden {
   position: absolute !important;
@@ -134,7 +130,6 @@
   white-space: nowrap;
 }
 
-/* Lightweight link styling that respects themes */
 a {
   color: var(--color-primary);
   text-decoration: none;
@@ -155,20 +150,15 @@ a:hover { text-decoration: underline; }
 }
 
 .spinner {
-  width: 20px;
-  height: 20px;
+  width: 20px; height: 20px;
   border: 2px solid rgba(0, 212, 255, 0.2);
   border-top: 2px solid var(--color-primary);
   border-radius: 50%;
   animation: spin 1s linear infinite;
 }
 
-/* Only animation we keep (spinner) */
-@keyframes spin {
-  to { transform: rotate(360deg); }
-}
+@keyframes spin { to { transform: rotate(360deg); } }
 
-/* Prefer reduced motion: tone down transitions where possible */
 @media (prefers-reduced-motion: reduce) {
   * { transition: none !important; animation: none !important; }
 }
@@ -196,12 +186,7 @@ a:hover { text-decoration: underline; }
   text-align: center;
 }
 
-.auth-logo {
-  height: 44px;
-  width: auto;
-  margin-bottom: var(--space-6);
-  filter: drop-shadow(0 1px 0 rgba(0,0,0,.05));
-}
+.auth-logo { height: 44px; width: auto; margin-bottom: var(--space-6); filter: drop-shadow(0 1px 0 rgba(0,0,0,.05)); }
 
 .auth-title {
   margin: 0 0 var(--space-3);
@@ -210,48 +195,30 @@ a:hover { text-decoration: underline; }
   letter-spacing: 0.2px;
   color: var(--text-secondary);
 }
-
-.auth-sub {
-  margin: 0 0 var(--space-6);
-  color: var(--text-muted);
-  font-size: var(--font-size-sm);
-}
+.auth-sub { margin: 0 0 var(--space-6); color: var(--text-muted); font-size: var(--font-size-sm); }
 
 .auth-spinner {
-  width: 28px;
-  height: 28px;
-  margin: 0 auto var(--space-6);
+  width: 28px; height: 28px; margin: 0 auto var(--space-6);
   border: 3px solid rgba(59,130,246,.18);
   border-top: 3px solid var(--color-primary);
   border-radius: 50%;
   animation: spin 1s linear infinite;
 }
 
-.auth-hint {
-  margin: 0 0 var(--space-4);
-  color: var(--text-muted);
-  font-size: var(--font-size-sm);
-}
+.auth-hint { margin: 0 0 var(--space-4); color: var(--text-muted); font-size: var(--font-size-sm); }
 
 .auth-actions {
-  display: flex;
-  gap: var(--space-4);
-  justify-content: center;
-  flex-wrap: wrap;
+  display: flex; gap: var(--space-4);
+  justify-content: center; flex-wrap: wrap;
   margin-bottom: var(--space-6);
 }
 
-/* Reuse your button style; add a "ghost" variant */
 .hlite-btn.ghost {
-  background: transparent;
-  color: var(--text-secondary);
+  background: transparent; color: var(--text-secondary);
   border: 1px solid var(--border-color);
   transition: background var(--transition-fast), border-color var(--transition-fast), transform var(--transition-fast);
 }
-.hlite-btn.ghost:hover {
-  background: var(--bg-hover);
-  transform: translateY(-1px);
-}
+.hlite-btn.ghost:hover { background: var(--bg-hover); transform: translateY(-1px); }
 
 .auth-footnote {
   color: var(--text-muted);
@@ -261,38 +228,63 @@ a:hover { text-decoration: underline; }
 }
 
 /* ==========================
-   Nice global scrollbars (optional, light touch)
+   Nice global scrollbars
    ========================== */
 
-* {
-  scrollbar-width: thin;                         /* Firefox */
-  scrollbar-color: rgba(255,255,255,0.35) transparent;
-}
+* { scrollbar-width: thin; scrollbar-color: rgba(255,255,255,0.35) transparent; }
+:root[data-theme="light"] * { scrollbar-color: rgba(12,18,32,0.35) transparent; }
 
-:root[data-theme="light"] * {
-  scrollbar-color: rgba(12,18,32,0.35) transparent;
-}
-
-*::-webkit-scrollbar {
-  width: 8px; height: 8px;
-}
-*::-webkit-scrollbar-track {
-  background: transparent;
-}
+*::-webkit-scrollbar { width: 8px; height: 8px; }
+*::-webkit-scrollbar-track { background: transparent; }
 *::-webkit-scrollbar-thumb {
   background: rgba(255,255,255,0.18);
-  border-radius: 8px;
-  border: 2px solid transparent;
-  background-clip: padding-box;
+  border-radius: 8px; border: 2px solid transparent; background-clip: padding-box;
   transition: background var(--transition-fast), opacity var(--transition-fast);
 }
-*::-webkit-scrollbar-thumb:hover {
-  background: rgba(255,255,255,0.28);
+*::-webkit-scrollbar-thumb:hover { background: rgba(255,255,255,0.28); }
+:root[data-theme="light"] *::-webkit-scrollbar-thumb { background: rgba(12,18,32,0.22); }
+:root[data-theme="light"] *::-webkit-scrollbar-thumb:hover { background: rgba(12,18,32,0.34); }
+
+/* =======================================================
+   NEW: App two-column layout (Sidebar + Main)
+   ======================================================= */
+
+.app-layout {
+  display: grid;
+  grid-template-columns: var(--sidebar-w) minmax(0, 1fr);
+  height: calc(100dvh - 44px); /* header height */
+  background: var(--bg-base);
 }
 
-:root[data-theme="light"] *::-webkit-scrollbar-thumb {
-  background: rgba(12,18,32,0.22);
+/* Ensure the Sidebar never stretches to full width */
+.app-layout > .sb {
+  width: var(--sidebar-w);
+  flex: 0 0 var(--sidebar-w); /* safety if a parent becomes flex */
 }
-:root[data-theme="light"] *::-webkit-scrollbar-thumb:hover {
-  background: rgba(12,18,32,0.34);
+
+/* Main scrolls; sidebar stays sticky (handled in Sidebar.css) */
+.app-main {
+  min-width: 0;
+  overflow: auto;
 }
+
+/* Responsive: single column under 860px */
+@media (max-width: 860px) {
+  .app-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =======================================================
+   Buttons used on login screen (keep simple)
+   ======================================================= */
+
+.hlite-btn {
+  background: var(--color-primary);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.55rem 0.85rem;
+  cursor: pointer;
+}
+.hlite-btn:hover { filter: brightness(1.05); }

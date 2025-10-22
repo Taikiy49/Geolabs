@@ -1,0 +1,122 @@
+/* ===== Compact Sidebar (small paddings + XS fonts only) ===== */
+
+/* Sticky global sidebar */
+.sb {
+  position: sticky;
+  top: 0;                          /* .app-layout already accounts for header height */
+  height: 100%;
+  background: var(--bg-card);
+  border-right: 1px solid var(--border-color);
+  box-shadow: var(--shadow-surface);
+  z-index: 3;
+  min-width: var(--sidebar-w);
+}
+
+/* Layout: nav scroll + footer pinned */
+.sb-inner {
+  height: 100%;
+  display: grid;
+  grid-template-rows: 1fr auto;    /* nav (scroll) / footer */
+  padding: var(--space-2);         /* compact */
+  overflow: hidden;
+}
+
+/* NAV */
+.sb-nav {
+  overflow-y: auto;
+  padding-right: var(--space-2);
+  scrollbar-width: thin;
+  scrollbar-color: var(--text-muted) transparent;
+}
+
+/* Sections */
+.sb-sec + .sb-sec { margin-top: var(--space-2); } /* tighter stack */
+
+.sb-sec-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--text-muted);
+  font-size: var(--font-size-xxs); /* tiny label */
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  padding: 0 var(--space-1);       /* compact */
+}
+
+/* Collapse button */
+.sb-collapse {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  color: var(--text-secondary);
+  padding: var(--space-1);         /* compact */
+  display: inline-flex;
+  align-items: center;
+  border-radius: var(--radius);
+  transition: color var(--transition-fast);
+}
+sb-collapse:focus-visible { outline: var(--focus-ring); }
+
+/* Lists & links */
+.sb-list {
+  margin-top: var(--space-2);
+  display: grid;
+  gap: var(--space-2);             /* tight gap */
+}
+.sb-list.is-closed { display: none; }
+
+.sb-link {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);             /* small icon/text gap */
+  padding: var(--space-3) var(--space-4);  /* compact link padding */
+  border-radius: var(--radius-lg);
+  color: var(--text-primary);
+  text-decoration: none;
+  transition:
+    background var(--transition-fast),
+    color var(--transition-fast),
+    transform var(--transition-fast),
+    border-color var(--transition-fast);
+}
+.sb-link:hover {
+  background: color-mix(in oklab, var(--bg-card) 70%, var(--border-color) 30%);
+}
+.sb-link.is-active {
+  background: color-mix(in oklab, var(--color-primary) 18%, var(--bg-card) 82%);
+  color: color-mix(in oklab, var(--text-primary) 85%, var(--color-primary) 15%);
+  border: 1px solid color-mix(in oklab, var(--color-primary) 40%, var(--border-color) 60%);
+}
+
+/* Icon + label sizes (compact) */
+.sb-ico   { flex: 0 0 auto; font-size: var(--font-size-xs); opacity: .9; }
+.sb-label { font-size: var(--font-size-xxs); }
+
+/* Footer links (compact) */
+.sb-foot {
+  padding-top: var(--space-2);
+  border-top: 1px dashed var(--border-color);
+  display: grid;
+  gap: var(--space-2);
+}
+.sb-foot-link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-3);
+  font-size: var(--font-size-xxs);
+  color: var(--text-secondary);
+  text-decoration: none;
+  padding: var(--space-2) var(--space-3); /* compact */
+  border-radius: var(--radius);
+  transition: background var(--transition-fast), color var(--transition-fast);
+}
+.sb-foot-link:hover {
+  background: var(--bg-card-2);
+  color: var(--text-primary);
+}
+
+/* If you later add a token like --bp-sidebar-collapse to :root, you can enable:
+@media (max-width: var(--bp-sidebar-collapse)) {
+  .sb { display: none; }
+}
+*/

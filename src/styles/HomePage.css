@@ -1,267 +1,120 @@
-/* =========================================
-   HomePage.css — enterprise polish to match Header.css
-   Relies on App.css tokens (colors, radii, shadows)
-   ========================================= */
+/* ===== Compact Home (small paddings + XS fonts only) ===== */
 
-/* ===== Page & Shell ===== */
-.hp {
-  background: var(--bg-base);
-  height: calc(100dvh - 44px); /* header ~44px */
-  overflow: hidden;            /* columns scroll, not the page */
-}
-
-.hp-shell {
-  width: 100%;
-  height: 100%;
+/* Base container */
+.hp3 {
   display: grid;
-  grid-template-columns: auto 1fr; /* compact sidebar + main */
-  grid-template-rows: 1fr;
-  gap: 0;
-}
-
-/* =========================================
-   Sidebar — neutral, compact, icons near top
-   ========================================= */
-.hp-rail {
-  background: var(--bg-card);
-  box-shadow: var(--shadow-surface);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;           /* icons toward the top */
-  padding: var(--space-3);
-}
-
-/* icon column */
-.hp-filter-icons {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: var(--space-5);
-  margin-top: var(--space-2);
-}
-
-/* icon-only buttons — neutral by default, primary on hover/active */
-.hp-chip-icon {
-  -webkit-tap-highlight-color: transparent;
-  background: none;
-  border: none;
-  cursor: pointer;
-  color: var(--color-primary);
-  line-height: 1;
-  padding: 4px;
-  font-size: var(--font-size-xl);                   /* small hit-area padding */
-  transition:
-    color var(--transition-fast),
-    transform var(--transition-fast),
-    opacity var(--transition-fast);
-  opacity: .92;
-}
-.hp-chip-icon:hover {
-  color: var(--color-primary);
-  transform: scale(1.08);
-  opacity: 1;
-}
-.hp-chip-icon.is-active {
-  color: var(--color-primary);
-  transform: scale(1.12);
-  opacity: 1;
-}
-.hp-chip-icon:focus-visible {
-  
-  outline: var(--focus-ring);
-  border-radius: var(--radius);
-}
-.hp-chip-icon::before { content: none; } /* keep the icon clean */
-
-/* =========================================
-   Main column
-   ========================================= */
-.hp-main {
-  display: flex;
-  flex-direction: column;
   gap: var(--space-2);
-  padding: var(--space-2);
-  min-width: 0;   /* avoid clipping at right edge */
-  min-height: 0;
-  overflow-y: auto;
+  padding-bottom: var(--space-3);
 }
 
-/* =========================================
-   Welcome Banner — mirrors header surface/border/shadow
-   ========================================= */
-.hp-welcome {
+/* Name card at top */
+.hp3-welcome {
   display: grid;
   grid-template-columns: 1fr auto;
   align-items: center;
-  gap: var(--space-5);
   background: var(--bg-card);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-lg);
-  padding: var(--card-pad);
+  padding: var(--space-3);                /* small padding */
   box-shadow: var(--shadow-surface);
 }
 
-.hp-welcome-left { min-width: 0; }
+.hp3-greet { font-weight: 800; font-size: var(--font-size-xs); color: var(--text-primary); }
+.hp3-name  { color: var(--color-primary); }
+.hp3-sub   { color: var(--text-muted); font-size: var(--font-size-xxs); margin-top: var(--space-1); }
 
-.hp-welcome-greet {
-  margin: 0 0 var(--space-2);
-  color: var(--text-primary);
-  font-weight: 800;
-  letter-spacing: .01em;
-  font-size: var(--font-size-lg);
-  line-height: 1.15;
-}
-.hp-welcome-name { color: var(--color-primary); }
-
-.hp-welcome-sub {
-  color: var(--text-muted);
-  font-size: var(--font-size-xxs);
-}
-
-.hp-welcome-right {
-  display: grid;
-  gap: var(--space-2);
-  justify-items: end;
-}
-.hp-welcome-date {
+.hp3-date {
   color: var(--text-secondary);
-  font-size: var(--font-size-xs);
-  padding: 2px 10px;
-  border-radius: 999px;
+  font-size: var(--font-size-xxs);
+  padding: 2px 8px;                       /* tiny pill */
   border: 1px solid var(--border-color);
+  border-radius: 999px;
   background: var(--bg-card-2);
 }
 
-/* =========================================
-   Card grid
-   ========================================= */
-.hp-grid {
-  flex: 1 1 auto;
+/* Center hero (dead center) */
+.hp3-hero {
+  min-height: clamp(40vh, 60vh, 68vh);
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: var(--space-2);
+  place-items: center;
+  padding: var(--space-4) 0;              /* small vertical space */
 }
 
-@media (max-width: 1280px) { .hp-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
-@media (max-width: 1040px) { .hp-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-@media (max-width: 640px)  {
-  .hp-grid { grid-template-columns: 1fr; }
-  .hp-rail { display: none; }           /* compact on small screens */
-  .hp-welcome { grid-template-columns: 1fr; justify-items: start; }
-  .hp-welcome-right { justify-items: start; }
-}
-
-/* =========================================
-   Cards — same visual language as header
-   ========================================= */
-.hp-card {
-  background: var(--bg-card);
+/* Search card (wider but compact spacing) */
+.hp3-searchCard {
+  width: min(880px, 96vw);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-lg);
-  padding: var(--space-6);
-  box-shadow: var(--shadow-surface);
-  display: flex;
-  flex-direction: column;
-  transition:
-    transform var(--transition-fast),
-    box-shadow var(--transition-fast),
-    border-color var(--transition-fast);
-}
-.hp-card.is-clickable { cursor: pointer; }
-.hp-card:hover {
   box-shadow: var(--shadow-float);
-  border-color: var(--tag-accent, var(--color-primary));
-}
-.hp-card:focus-visible {
-  outline: 2px solid var(--tag-accent, var(--color-primary));
-  outline-offset: 2px;
+  padding: var(--space-4);                /* small padding */
 }
 
-/* header: title left, tag chip right */
-.hp-title-row {
-  display: flex;
-  align-items: center;
-  gap: var(--space-4);
-}
-.hp-title {
-  margin: 0;
+.hp3-searchTitle {
   font-weight: 800;
   color: var(--text-primary);
-  font-size: var(--font-size-sm);
-  line-height: 1.15;
+  text-align: center;
+  font-size: var(--font-size-xs);         /* XS title */
+  margin-bottom: var(--space-3);
 }
-.hp-title-spacer { flex: 1 1 auto; min-width: 0; }
 
-.hp-tagchip {
-  display: inline-flex;
+/* Input row */
+.hp3-searchWrap {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: var(--space-3);                    /* tight gap */
   align-items: center;
-  gap: var(--space-2);
-  padding: var(--space-2) var(--space-4);
+  background: var(--bg-card-2);
+  border: 1px solid var(--border-color);
   border-radius: 999px;
-
-  /* translucent primary */
-  background: color-mix(in oklab, var(--color-primary) 20%, transparent);
-
-  /* text tinted toward primary but readable */
-  color: color-mix(in oklab, var(--text-primary) 80%, var(--color-primary) 40%);
-
-  font-size: var(--font-size-xxs);
-  box-shadow: 0 1px 0 rgba(0,0,0,.02), 0 4px 10px rgba(0,0,0,.08);
+  padding: var(--space-3) var(--space-3); /* small padding */
 }
 
+.hp3-searchIcon { margin-left: var(--space-1); opacity: .7; font-size: var(--font-size-xs); }
 
-
-/* body */
-.hp-desc {
-  margin-top: var(--space-6);
-  color: var(--text-secondary);
-  font-size: var(--font-size-xxs);
-  line-height: 1.55;
+.hp3-searchInput {
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: var(--space-2) var(--space-1); /* tight input padding */
+  font-size: var(--font-size-xs);         /* XS font */
+  color: var(--text-primary);
 }
 
-/* meta */
-.hp-updated {
-  margin-top: var(--space-6);
+.hp3-searchBtn {
+  border: 1px solid var(--border-color);
+  background: color-mix(in oklab, var(--color-primary) 16%, var(--bg-card) 84%);
+  color: color-mix(in oklab, var(--text-primary) 85%, var(--color-primary) 15%);
+  padding: var(--space-2) var(--space-3); /* compact button */
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: var(--font-size-xxs);        /* XXS button text */
+}
+.hp3-searchBtn:hover { border-color: var(--color-primary); }
+
+/* Single rotating tip (tiny) */
+.hp3-tipline {
+  margin-top: var(--space-2);
+  text-align: center;
+  font-size: var(--font-size-xxs);        /* XXS tip text */
   color: var(--text-muted);
-  font-size: var(--font-size-xxs);
-  align-self: flex-end;
+  min-height: 1.1em;
+  opacity: .9;
 }
 
-/* Tag → accent color mapping (palette from App.css) */
-.hp-card[data-tag="ai"]        { --tag-accent: var(--color-cerulean); }
-.hp-card[data-tag="analytics"] { --tag-accent: var(--color-violet); }
-.hp-card[data-tag="ops"]       { --tag-accent: var(--color-amber); }
-.hp-card[data-tag="admin"]     { --tag-accent: var(--color-rose); }
-.hp-card[data-tag="it"]        { --tag-accent: var(--color-mint); }
-.hp-card[data-tag="security"]  { --tag-accent: var(--color-fuchsia); }
-.hp-card[data-tag="eng"]       { --tag-accent: var(--color-lime); }
+/* Responsive tweaks */
+@media (max-width: 720px) {
+  .hp3-hero { min-height: 52vh; }
+  .hp3-searchCard { width: 98vw; }
+  .hp3-searchWrap { gap: var(--space-2); padding: var(--space-2) var(--space-2); }
+}
 
-/* =========================================
-   Column scrollbars — same light touch everywhere
-   ========================================= */
-.hp-rail,
-.hp-main {
+/* Token-only scrollbars */
+.hp3 * {
   scrollbar-width: thin;
-  scrollbar-color: rgba(12,18,32,0.35) transparent;
-  scrollbar-gutter: stable;
+  scrollbar-color: var(--text-muted) transparent;
 }
-.hp-rail::-webkit-scrollbar,
-.hp-main::-webkit-scrollbar { width: 4px; height: 4px; }
-.hp-rail::-webkit-scrollbar-track,
-.hp-main::-webkit-scrollbar-track { background: transparent; }
-.hp-rail::-webkit-scrollbar-thumb,
-.hp-main::-webkit-scrollbar-thumb {
-  background: rgba(12,18,32,0.30);
+.hp3 *::-webkit-scrollbar { width: 4px; height: 4px; }
+.hp3 *::-webkit-scrollbar-thumb {
+  background: color-mix(in oklab, var(--text-secondary) 35%, transparent);
   border-radius: 999px;
-}
-.hp-rail::-webkit-scrollbar-thumb:hover,
-.hp-main::-webkit-scrollbar-thumb:hover { background: rgba(12,18,32,0.45); }
-
-/* =========================================
-   Reduced motion — stay classy
-   ========================================= */
-@media (prefers-reduced-motion: reduce) {
-  .hp-chip-icon,
-  .hp-card { transition: none !important; }
 }
