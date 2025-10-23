@@ -1,41 +1,42 @@
-/* src/styles/FileAudit.css
-   XS-only tokens from :root. Sticky toolbar, sticky table header, scrollable body,
-   zero row/header vertical padding, per-page selector, infinite scroll.
-*/
+/* ============================================
+   src/styles/FileAudit.css
+   Compact (XXS) UI using tokens from :root
+   One true scroller = .fa-table (the file list)
+   Header + Footer remain visible; white surfaces
+============================================ */
 
-/* Shell */
+/* ===== App section shell ===== */
 .fa-wrap {
   display: flex;
   flex-direction: column;
-  min-height: 100dvh;
-  background: var(--bg-base);
-  font-size: var(--font-size-xxs);
+  height: 100%;               /* fills .app-main */
+  min-height: 0;              /* allow inner scroller to shrink */
+  background: var(--bg-card); /* white */
   color: var(--text-primary);
+  font-size: var(--font-size-xxs);
 }
 
-/* Sticky top toolbar — full width, no side padding */
+/* ===== Sticky top toolbar ===== */
 .fa-header {
   position: sticky;
   top: 0;
   z-index: 2;
-  background: var(--bg-card);
+  background: var(--bg-card);             /* white */
   border-bottom: 1px solid var(--border-color);
-  padding: var(--space-2) 0; /* no side padding */
+  padding: var(--space-2) 0;              /* no side padding */
 }
 
 .fa-actions {
   display: flex;
-  gap: var(--space-2);
   align-items: center;
+  gap: var(--space-2);
   width: 100%;
-  padding: 0 var(--space-1); /* micro breathing without real side padding */
+  padding: 0 var(--space-1);              /* micro gutter */
 }
 
-.fa-label {
-  color: var(--text-muted);
-}
+.fa-label { color: var(--text-muted); font-size: var(--font-size-xxs); }
 
-/* Inputs / buttons — XS only */
+/* ===== Inputs / Controls (XXS) ===== */
 .fa-search,
 .fa-filter,
 .fa-notes,
@@ -46,7 +47,7 @@
   border-radius: var(--radius);
   padding: var(--space-2) var(--space-2);
   font-size: var(--font-size-xxs);
-  background: var(--bg-card);
+  background: var(--bg-card);             /* white controls */
   color: var(--text-primary);
   min-width: 0;
 }
@@ -58,12 +59,13 @@
   border: 1px solid var(--border-color);
   border-radius: var(--radius);
   padding: var(--space-2) var(--space-2);
-  background: var(--bg-card);
+  background: var(--bg-card);             /* white */
+  color: var(--text-primary);
   font-size: var(--font-size-xxs);
   box-shadow: var(--shadow-surface);
-  transition: background var(--transition-fast);
+  transition: background var(--transition-fast), transform var(--transition-fast), border-color var(--transition-fast);
 }
-.fa-btn:hover { background: var(--bg-hover); }
+.fa-btn:hover { background: var(--bg-hover); transform: translateY(-1px); }
 
 .fa-link {
   background: transparent;
@@ -75,106 +77,121 @@
 }
 .fa-link.danger { color: var(--color-danger); }
 
-/* Upload label mimics button */
 .fa-upload-btn { position: relative; display: inline-flex; align-items: center; }
-.fa-upload-btn .fa-upload-input {
-  position: absolute; inset: 0; opacity: 0; cursor: pointer;
-}
-.fa-upload-btn.is-busy { pointer-events: none; opacity: 0.7; }
+.fa-upload-input { position: absolute; inset: 0; opacity: 0; cursor: pointer; }
+.fa-upload-btn.is-busy { pointer-events: none; opacity: .7; }
 
-/* Main scroll area (infinite scroll target) */
+/* ===== Main area (table scroller + footer) ===== */
 .fa-main {
   flex: 1 1 auto;
   min-height: 0;
-  overflow: auto;
-  padding: 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;                        /* prevent page scroll here */
+  background: var(--bg-card);              /* white */
 }
 
-/* Table */
-.fa-table { border-top: 1px solid var(--border-color); }
+/* ===== The ONLY scroll container ===== */
+.fa-table {
+  flex: 1 1 auto;                          /* take remaining height above footer */
+  min-height: 0;
+  overflow: auto;                           /* ← sole vertical scrollbar */
+  background: var(--bg-card);               /* white */
+  border-top: 1px solid var(--border-color);
+  scrollbar-width: thin;
+  scrollbar-color: rgba(12,18,32,.25) transparent;
+}
+.fa-table::-webkit-scrollbar { width: 6px; height: 6px; }
+.fa-table::-webkit-scrollbar-thumb { background: rgba(12,18,32,.25); border-radius: 999px; }
+.fa-table::-webkit-scrollbar-track { background: transparent; }
 
-/* Grid rows/headers: no padding on containers */
+/* ===== Table structure ===== */
 .fa-thead,
 .fa-row {
   display: grid;
-  grid-template-columns: 1.2fr 0.9fr 0.7fr 0.8fr 1fr 1.2fr 0.4fr;
+  grid-template-columns: 1.2fr 0.9fr 0.7fr 0.8fr 1fr 1.2fr 0.4fr; /* matches JSX order */
   gap: 0;
   padding: 0;
   font-size: var(--font-size-xxs);
 }
 
-/* Cell padding (tiny) so text isn’t glued to the borders) */
-.fa-thead > div,
-.fa-row > div {
-  padding: var(--space-1) var(--space-2);
-}
-
-/* Sticky header inside scroll */
+/* Sticky header inside the scroller */
 .fa-thead {
   position: sticky;
   top: 0;
   z-index: 1;
-  background: var(--bg-card-2);
+  background: var(--bg-card);               /* white header */
   color: var(--text-muted);
   font-weight: 600;
   border-bottom: 1px solid var(--border-color);
 }
+.fa-thead > div { padding: var(--space-1) var(--space-2); }
 
-/* Body rows */
+/* Body list wrapper */
+.fa-tbody { background: var(--bg-card); }   /* white */
+
+/* Rows */
 .fa-row {
-  border-bottom: 1px solid var(--border-color);
   align-items: center;
+  border-bottom: 1px solid var(--border-color);
+  background: var(--bg-card);               /* white rows */
 }
-.fa-row.is-saving { opacity: 0.6; }
+.fa-row > div { padding: var(--space-1) var(--space-2); }
+.fa-row.is-saving { opacity: .6; }
 
-/* Zebra (subtle) */
-.fa-tbody .fa-row:nth-child(odd) { background: var(--bg-base); }
-
+/* Empty states */
 .fa-empty {
   padding: var(--space-3);
   color: var(--text-muted);
+  text-align: center;
 }
 
-/* Status select — light color wash by status via data-attr */
+/* Status select with light washes */
 .fa-status {
   border: 1px solid var(--border-color);
   border-radius: var(--radius);
   padding: var(--space-1) var(--space-2);
   font-size: var(--font-size-xxs);
-  background: var(--bg-card);
+  background: var(--bg-card);               /* white */
   color: var(--text-primary);
 }
-
-.fa-status[data-status="DONE"]        { background: color-mix(in oklab, var(--color-success) 12%, var(--bg-card) 88%); }
-.fa-status[data-status="IN PROGRESS"]{ background: color-mix(in oklab, var(--color-primary) 10%, var(--bg-card) 90%); }
-.fa-status[data-status="ON HOLD"]    { background: color-mix(in oklab, var(--color-warning) 14%, var(--bg-card) 86%); }
-.fa-status[data-status="ARCHIVED"]   { background: color-mix(in oklab, var(--text-muted) 14%, var(--bg-card) 86%); }
-.fa-status[data-status="NEW"]        { background: color-mix(in oklab, var(--color-cyan) 10%, var(--bg-card) 90%); }
+.fa-status[data-status="DONE"]         { background: color-mix(in oklab, var(--color-success) 12%, var(--bg-card) 88%); }
+.fa-status[data-status="IN PROGRESS"]  { background: color-mix(in oklab, var(--color-primary) 10%, var(--bg-card) 90%); }
+.fa-status[data-status="ON HOLD"]      { background: color-mix(in oklab, var(--color-warning) 14%, var(--bg-card) 86%); }
+.fa-status[data-status="ARCHIVED"]     { background: color-mix(in oklab, var(--text-muted) 14%, var(--bg-card) 86%); }
+.fa-status[data-status="NEW"]          { background: color-mix(in oklab, var(--color-cyan) 10%, var(--bg-card) 90%); }
 
 /* Notes input in-row */
 .fa-notes { width: 100%; min-width: 12ch; }
 
-/* Footer (progress + manual load more) */
+/* ===== Footer (progress + load more) — always visible ===== */
 .fa-footer {
+  flex: 0 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: var(--space-2) var(--space-1);
   color: var(--text-muted);
   font-size: var(--font-size-xxs);
-  background: var(--bg-card);
+  background: var(--bg-card);               /* white */
   border-top: 1px solid var(--border-color);
-  position: sticky;
-  bottom: 0;
 }
 
-/* Errors */
+/* Footer right-side button group (from JSX .fa-pages) */
+.fa-pages {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+/* ===== Errors ===== */
 .fa-error {
   margin: var(--space-2) var(--space-1);
   color: var(--color-danger);
+  font-size: var(--font-size-xxs);
 }
 
-/* Modal */
+/* ===== Modal (Add Record) ===== */
 .fa-modal {
   position: fixed;
   inset: 0;
@@ -182,10 +199,12 @@
   display: grid;
   place-items: center;
   padding: var(--space-3);
+  z-index: 10;
 }
 .fa-card {
   width: min(720px, 92vw);
-  background: var(--bg-card);
+  background: var(--bg-card);               /* white */
+  border: 1px solid var(--border-color);
   border-radius: var(--radius);
   box-shadow: var(--shadow-surface);
 }
@@ -196,7 +215,7 @@
   padding: var(--space-2) var(--space-2);
   border-bottom: 1px solid var(--border-color);
 }
-.fa-card-title { font-weight: 600; color: var(--text-secondary); }
+.fa-card-title { font-weight: 600; color: var(--text-secondary); font-size: var(--font-size-xs); }
 .fa-form {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -207,6 +226,7 @@
   display: grid;
   gap: var(--space-1);
   color: var(--text-secondary);
+  font-size: var(--font-size-xxs);
 }
 .fa-notes-area { grid-column: 1 / -1; }
 .fa-form-actions {
@@ -214,4 +234,30 @@
   display: flex;
   justify-content: flex-end;
   gap: var(--space-2);
+}
+
+/* ===== Health banners ===== */
+.fa-health {
+  margin: 0 var(--space-1);
+  margin-bottom: var(--space-2);
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--radius);
+  border: 1px dashed var(--border-color);
+  background: var(--bg-card);
+  font-size: var(--font-size-xxs);
+}
+.fa-health-warn { color: var(--color-warning); }
+.fa-health-bad  { color: var(--color-warning); }
+
+/* ===== Thin scrollbars (consistent with app) ===== */
+.fa-table {
+  scrollbar-width: thin;                     /* already set above; keep here for clarity */
+}
+.fa-table::-webkit-scrollbar { width: 6px; height: 6px; }
+.fa-table::-webkit-scrollbar-thumb { background: rgba(12,18,32,.25); border-radius: 999px; }
+
+/* ===== Responsive tweaks ===== */
+@media (max-width: 900px) {
+  .fa-actions { flex-wrap: wrap; }
+  .fa-table { border-left: 0; border-right: 0; }
 }

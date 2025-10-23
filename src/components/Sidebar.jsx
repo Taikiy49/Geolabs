@@ -1,40 +1,17 @@
+// src/components/Sidebar.jsx
 import React, { useState, useMemo } from "react";
-import { NavLink, useLocation } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import {
-  FaChevronDown,
-  FaChevronRight,
-  FaRobot,
-  FaChartBar,
-  FaTools,
-  FaUserShield,
-  FaServer,
-  FaShieldAlt,
-  FaHome,
-  FaDatabase,
-  FaFolderOpen,
-  FaBoxOpen,
-  FaSearch,
-  FaFileAlt,
-  FaEnvelopeOpenText,
+  FaChevronDown, FaChevronRight, FaRobot, FaChartBar, FaTools, FaUserShield,
+  FaServer, FaShieldAlt, FaHome, FaDatabase, FaFolderOpen, FaBoxOpen, FaSearch,
+  FaFileAlt, FaEnvelopeOpenText,
 } from "react-icons/fa";
 import "../styles/Sidebar.css";
 
 const SECTIONS = [
-  {
-    key: "home",
-    title: "Home",
-    items: [{ label: "Overview", to: "/", icon: FaHome }],
-  },
-  {
-    key: "ai",
-    title: "AI",
-    items: [{ label: "Ask AI", to: "/ask-ai", icon: FaRobot }],
-  },
-  {
-    key: "analytics",
-    title: "Analytics",
-    items: [{ label: "Reports", to: "/reports", icon: FaFileAlt }],
-  },
+  { key: "home", title: "Home", items: [{ label: "Overview", to: "/", icon: FaHome }] },
+  { key: "ai", title: "AI", items: [{ label: "Ask AI", to: "/ask-ai", icon: FaRobot }] },
+  { key: "analytics", title: "Analytics", items: [{ label: "Reports", to: "/reports", icon: FaFileAlt }] },
   {
     key: "ops",
     title: "Ops",
@@ -64,16 +41,14 @@ const SECTIONS = [
 ];
 
 export default function Sidebar() {
-  const location = useLocation();
-
+  // OPEN EVERYTHING by default; user can still collapse
   const defaultOpen = useMemo(() => {
-    const open = {};
+    const o = {};
     SECTIONS.forEach((sec) => {
-      if (!sec.collapsible) return;
-      open[sec.key] = sec.items.some((i) => location.pathname.startsWith(i.to));
+      if (sec.collapsible) o[sec.key] = true;
     });
-    return open;
-  }, [location.pathname]);
+    return o;
+  }, []);
 
   const [open, setOpen] = useState(defaultOpen);
   const toggle = (k) => setOpen((o) => ({ ...o, [k]: !o[k] }));
@@ -81,8 +56,6 @@ export default function Sidebar() {
   return (
     <aside className="sb">
       <div className="sb-inner">
-        {/* NOTE: org/logo header removed per your request */}
-
         <nav className="sb-nav" aria-label="Primary">
           {SECTIONS.map((sec) => (
             <div className="sb-sec" key={sec.key}>
@@ -111,9 +84,7 @@ export default function Sidebar() {
                     <li key={item.to}>
                       <NavLink
                         to={item.to}
-                        className={({ isActive }) =>
-                          "sb-link" + (isActive ? " is-active" : "")
-                        }
+                        className={({ isActive }) => "sb-link" + (isActive ? " is-active" : "")}
                       >
                         <Icon className="sb-ico" />
                         <span className="sb-label">{item.label}</span>
@@ -127,20 +98,11 @@ export default function Sidebar() {
         </nav>
 
         <div className="sb-foot">
-          <a
-            className="sb-foot-link"
-            href="https://intranet/"
-            target="_blank"
-            rel="noreferrer"
-          >
+          <a className="sb-foot-link" href="https://intranet/" target="_blank" rel="noreferrer">
             <FaServer className="sb-ico" />
             Intranet
           </a>
-          <a
-            className="sb-foot-link"
-            href="mailto:it@geolabs.com"
-            rel="noreferrer"
-          >
+          <a className="sb-foot-link" href="mailto:it@geolabs.com" rel="noreferrer">
             <FaShieldAlt className="sb-ico" />
             IT Support
           </a>

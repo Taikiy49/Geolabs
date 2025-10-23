@@ -1,111 +1,91 @@
-/* ===== Compact Home (small paddings + XS fonts only) ===== */
+/* ===== Compact Home (centered; small paddings + XS fonts) ===== */
 
-/* Base container */
+/* Safe box model + prevent stray horizontal scroll */
+*, *::before, *::after { box-sizing: border-box; }
+html, body { overflow-x: hidden; }
+
+/* Root fills the viewport under the app header (44px)
+   and centers its content */
 .hp3 {
+  /* height under header */
+  min-height: calc(100svh - 44px);
   display: grid;
+  place-items: center;                /* <-- perfect center */
+  padding-inline: var(--space-3);
+  padding-block: var(--space-3);
   gap: var(--space-2);
-  padding-bottom: var(--space-3);
+  overflow: hidden;                   /* no stray scrollbars */
+  color: var(--text-primary);
 }
 
-/* Name card at top */
-.hp3-welcome {
+/* Fallbacks if svh unsupported */
+@supports not (height: 100svh) {
+  .hp3 { min-height: calc(100dvh - 44px); }
+}
+@supports not (height: 100dvh) {
+  .hp3 { min-height: calc(100vh - 44px); }
+}
+
+/* Center hero just acts as a wrapper; it stretches to hp3 and centers too */
+.hp3-hero {
+  width: 100%;
+  height: 100%;
   display: grid;
-  grid-template-columns: 1fr auto;
-  align-items: center;
+  place-items: center;                /* belt + suspenders */
+  padding: var(--space-4) 0;
+}
+
+/* Centered card */
+.hp3-card {
+  width: min(640px, 96vw);
   background: var(--bg-card);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-lg);
-  padding: var(--space-3);                /* small padding */
   box-shadow: var(--shadow-surface);
+  padding: clamp(0.75rem, 2.5vw, 1rem);
+  text-align: center;
 }
 
-.hp3-greet { font-weight: 800; font-size: var(--font-size-xs); color: var(--text-primary); }
-.hp3-name  { color: var(--color-primary); }
-.hp3-sub   { color: var(--text-muted); font-size: var(--font-size-xxs); margin-top: var(--space-1); }
+/* Greeting */
+.hp3-greet {
+  font-weight: 800;
+  font-size: var(--font-size-lg);
+  color: var(--text-primary);
+}
+.hp3-name { color: var(--color-primary); }
 
+/* Updated subline */
+.hp3-sub {
+  color: var(--text-muted);
+  font-size: var(--font-size-xxs);
+  margin-top: var(--space-2);
+}
+
+/* Date pill (centered) */
 .hp3-date {
+  display: inline-block;
+  margin-top: var(--space-3);
   color: var(--text-secondary);
   font-size: var(--font-size-xxs);
-  padding: 2px 8px;                       /* tiny pill */
+  padding: 2px 8px;
   border: 1px solid var(--border-color);
   border-radius: 999px;
   background: var(--bg-card-2);
 }
-
-/* Center hero (dead center) */
-.hp3-hero {
-  min-height: clamp(40vh, 60vh, 68vh);
-  display: grid;
-  place-items: center;
-  padding: var(--space-4) 0;              /* small vertical space */
-}
-
-/* Search card (wider but compact spacing) */
-.hp3-searchCard {
-  width: min(880px, 96vw);
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-float);
-  padding: var(--space-4);                /* small padding */
-}
-
-.hp3-searchTitle {
-  font-weight: 800;
-  color: var(--text-primary);
-  text-align: center;
-  font-size: var(--font-size-xs);         /* XS title */
-  margin-bottom: var(--space-3);
-}
-
-/* Input row */
-.hp3-searchWrap {
-  display: grid;
-  grid-template-columns: auto 1fr auto;
-  gap: var(--space-3);                    /* tight gap */
-  align-items: center;
-  background: var(--bg-card-2);
-  border: 1px solid var(--border-color);
-  border-radius: 999px;
-  padding: var(--space-3) var(--space-3); /* small padding */
-}
-
-.hp3-searchIcon { margin-left: var(--space-1); opacity: .7; font-size: var(--font-size-xs); }
-
-.hp3-searchInput {
-  background: transparent;
-  border: none;
-  outline: none;
-  padding: var(--space-2) var(--space-1); /* tight input padding */
-  font-size: var(--font-size-xs);         /* XS font */
-  color: var(--text-primary);
-}
-
-.hp3-searchBtn {
-  border: 1px solid var(--border-color);
-  background: color-mix(in oklab, var(--color-primary) 16%, var(--bg-card) 84%);
-  color: color-mix(in oklab, var(--text-primary) 85%, var(--color-primary) 15%);
-  padding: var(--space-2) var(--space-3); /* compact button */
-  border-radius: 999px;
-  font-weight: 700;
-  font-size: var(--font-size-xxs);        /* XXS button text */
-}
-.hp3-searchBtn:hover { border-color: var(--color-primary); }
 
 /* Single rotating tip (tiny) */
 .hp3-tipline {
-  margin-top: var(--space-2);
+  margin-top: var(--space-3);
   text-align: center;
-  font-size: var(--font-size-xxs);        /* XXS tip text */
+  font-size: var(--font-size-xxs);
   color: var(--text-muted);
   min-height: 1.1em;
-  opacity: .9;
+  opacity: .95;
 }
 
 /* Responsive tweaks */
 @media (max-width: 720px) {
-  .hp3-hero { min-height: 52vh; }
-  .hp3-searchCard { width: 98vw; }
-  .hp3-searchWrap { gap: var(--space-2); padding: var(--space-2) var(--space-2); }
+  .hp3-card { width: 98vw; }
 }
 
 /* Token-only scrollbars */

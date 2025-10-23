@@ -1,39 +1,53 @@
-/* compact + neutral — all fonts inherit from App.css */
+/* =========================================
+   AskAI.css — history-only scrolling,
+   everything in XXS type scale,
+   all classnames covered.
+   ========================================= */
 
-/* Replace your current .askai height rule with this */
+/* Lock the page scrollbar ONLY when AskAI is mounted */
+body:has(.askai) { overflow: hidden; }
+.app-layout:has(.askai),
+.app-main:has(.askai) { overflow: hidden; }
+
+/* ===== Root ===== */
 .askai {
-
   position: relative;
   display: flex;
   flex-direction: column;
   color: var(--text-primary);
+  height: 100%;              /* fill .app-main */
+  min-height: 0;             /* let children shrink */
+  background: var(--bg-base);
+  font-size: var(--font-size-xxs); /* base font size for entire app */
+  line-height: var(--text-line-height);
 }
 
-/* Keep .askai-main able to shrink inside */
-.askai-main {
-  min-height: 0;      /* already present, keep it */
-  display: grid;      /* you already use grid here for columns */
-  grid-template-columns: 1fr 6px auto;
-  flex: initial;      /* ensure flex settings don't fight grid */
-}
+/* Make absolutely everything inside AskAI use XXS by default */
+.askai * { font-size: var(--font-size-xxs); }
 
-/* header */
+/* ===== Header ===== */
 .askai-h {
-  display:flex; align-items:center; justify-content:space-between; gap:var(--space-2);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-2);
   padding: var(--space-2) var(--space-3);
   background: var(--bg-card);
   border-bottom: 1px solid var(--border-color);
+  flex: 0 0 auto;
 }
-.askai-hl { display:flex; align-items:center; gap:var(--space-2); }
-.askai-hr { display:flex; align-items:center; gap:var(--space-2); }
+.askai-hl { display: flex; align-items: center; gap: var(--space-2); }
+.askai-hr { display: flex; align-items: center; gap: var(--space-2); }
 
-/* controls */
-/* these are the controls this needs to be worked on */
+/* Controls */
 .askai-db,
 .askai-search input,
-.askai-text {
-  font-family: inherit; /* <- match your global font */
-  font-size: var(--font-size-xxs);
+.askai-text,
+.askai-toggle,
+.askai-icon,
+.askai-send,
+.h-actions .askai-icon {
+  font-family: inherit;
   color: var(--text-primary);
 }
 
@@ -47,151 +61,148 @@
 
 .askai-toggle,
 .askai-icon {
-  width:24px; height:22px; display:grid; place-items:center;
+  width: 24px;
+  height: 22px;
+  display: grid;
+  place-items: center;
   background: var(--bg-card-2);
   color: var(--text-secondary);
-  border:1px solid var(--border-color);
+  border: 1px solid var(--border-color);
   border-radius: var(--radius);
-  cursor:pointer;
-  transition: transform var(--transition-fast), border-color var(--transition-fast), background var(--transition-fast);
+  cursor: pointer;
+  transition: transform var(--transition-fast),
+              border-color var(--transition-fast),
+              background var(--transition-fast);
 }
-.askai-toggle.on { background: var(--bg-card); color: var(--text-primary); border-color: var(--border-color); }
-.askai-icon:hover, .askai-toggle:hover { transform: translateY(-1px); border-color: var(--text-secondary); }
+.askai-toggle.on {
+  background: var(--bg-card);
+  color: var(--text-primary);
+  border-color: var(--border-color);
+}
+.askai-icon:hover,
+.askai-toggle:hover { transform: translateY(-1px); border-color: var(--text-secondary); }
 .askai-icon.danger:hover { border-color: var(--color-warning); }
 
-/* layout */
-.askai-chat { min-width:0; display:flex; flex-direction:column; border-right:1px solid var(--border-color); }
-
-/* messages */
-.askai-msgs { flex:1 1 auto; min-height:0; overflow-y:auto; padding: var(--space-2); background: var(--bg-base); }
-.askai-empty { display:grid; place-items:center; gap:var(--space-2); color:var(--text-muted); height:100%; }
-
-.msg {
-  max-width:80%;
-  padding: var(--space-2) var(--space-3);
-  border:1px solid var(--border-color);
-  border-radius: var(--radius-lg);
-  margin: var(--space-2) 0;
-  background: var(--bg-card);
-  position:relative;
-}
-.msg-u { margin-left:auto; background: var(--bg-card-2); font-weight: 600;}
-.msg-a { margin-right:auto; margin-bottom: var(--space-6); color: var(--text-secondary);}
-
-.msg-actions { position:absolute; top:var(--space-2); right:var(--space-2); display:inline-flex; gap:var(--space-2); opacity:0; transition:opacity var(--transition-fast); }
-.msg:hover .msg-actions { opacity:1; }
-
-.askai-thinking { display:inline-flex; align-items:center; gap:var(--space-2); color:var(--text-muted); }
-
-/* input */
-.askai-input { display:grid; grid-template-columns: 1fr auto; gap:var(--space-2); padding: var(--space-3) var(--space-4); border-top:1px solid var(--border-color); background: var(--bg-card);}
-.askai-text {
-  padding: var(--space-2) var(--space-3);
-  background: var(--bg-card-2);
-  border:1px solid var(--border-color);
-  border-radius: var(--radius-lg);
+/* ===== Main split (Chat | Handle | History) ===== */
+.askai-main {
+  flex: 1 1 auto;
+  min-height: 0; /* critical for contained layouts */
+  display: grid;
+  grid-template-columns: 1fr 6px auto;
+  background: var(--bg-base);
+  overflow: hidden; /* prevent page scroll here */
 }
 
-
-
-.askai-send {
-  width:26px; height:26px; display:grid; place-items:center;
-  background: var(--bg-card-2);
-  color: var(--text-primary);
-  border:1px solid var(--border-color);
-  border-radius: var(--radius-lg);
-  cursor:pointer;
-}
-
-.askai-send:hover { border-color: var(--text-secondary); }
-.askai-text:hover { border-color: var(--text-secondary); }
-.askai-send.stop { opacity:.9; }
-
-/* Remove the blue glow and keep your own subtle focus style */
-.askai-text:focus {
-  outline: none;
-  box-shadow: none;
-  border-color: var(--text-secondary);  /* or var(--color-primary) */
-  background: var(--bg-card-2);
-}
-
-/* Optional: customize selected text color inside the textarea */
-.askai-text::selection {
-  background: rgba(128, 128, 255, 0.25);   /* pick your color */
-  color: inherit;
-}
-
-/* If you also want hover/active to be consistent */
-.askai-text:hover,
-.askai-text:active {
-  border-color: var(--text-secondary);
-}
-
-
-/* toast */
-.askai-toast {
-  position:absolute; right: var(--space-3); bottom: calc(40px + var(--space-3));
-  background: var(--bg-card); border:1px solid var(--border-color);
-  padding: 2px 8px; border-radius: var(--radius); font-size: var(--font-size-xxs); color: var(--text-secondary);
-}
-
-/* handle */
-.askai-handle { background: var(--bg-card); border-left:1px solid var(--border-color); border-right:1px solid var(--border-color); cursor: col-resize; }
-
-/* history */
-.askai-history {overflow: auto; display:flex; flex-direction:column; min-width:240px; max-width:520px; background: var(--bg-card); }
-.askai-h-row { padding: var(--space-2); border-bottom:1px solid var(--border-color); }
-.askai-search {
-  display:grid; grid-template-columns: 16px 1fr; gap: var(--space-2); align-items:center;
-  background: var(--bg-card-2); border:1px solid var(--border-color); border-radius: var(--radius); padding: 4px 8px;
-  color: var(--text-muted);
-}
-.askai-search input { background:transparent; border:0; outline:0; padding: 2px 0; }
-
-.askai-h-list { flex:1 1 auto; min-height:0; overflow-y:auto; padding: var(--space-2); }
-.askai-empty-h { color: var(--text-muted); text-align:center; padding: var(--space-4) 0; }
-
-.h-item {
-  border:1px solid var(--border-color);
-  border-radius: var(--radius);
-  padding: var(--space-2);
-  margin-bottom: var(--space-2);
-  background: var(--bg-card-2);
-  cursor:pointer;
-  transition: border-color var(--transition-fast), transform var(--transition-fast);
-}
-.h-item:hover { border-color: var(--text-secondary); transform: translateY(-1px); }
-.h-q { font-size: var(--font-size-xs); color: var(--text-primary); font-weight:700; margin-bottom: var(--space-1); }
-.h-a { font-size: var(--font-size-xxs); color: var(--text-secondary); }
-.h-actions { display:inline-flex; gap:var(--space-2); float:right; margin-top:-22px; }
-
-/* thin white scrollbars */
-.askai-msgs, .askai-h-list { scrollbar-width: thin; scrollbar-color: rgba(255,255,255,.75) transparent; }
-.askai-msgs::-webkit-scrollbar, .askai-h-list::-webkit-scrollbar { width:4px; }
-.askai-msgs::-webkit-scrollbar-thumb, .askai-h-list::-webkit-scrollbar-thumb { background: rgba(255,255,255,.8); border-radius:999px; }
-
-/* responsive */
-@media (max-width:1024px){
-  .askai-main { grid-template-columns: 1fr; }
-  .askai-handle, .askai-history { display:none; }
-  .msg { max-width:90%; }
-}
-/* --- Chat area: only messages scroll, input stays put --- */
+/* ===== Chat column (no vertical scrolling) ===== */
 .askai-chat {
-  min-height: 0;
+  min-width: 0;
   display: flex;
   flex-direction: column;
   border-right: 1px solid var(--border-color);
-  overflow: hidden;                 /* prevent the whole section from growing */
+  overflow: hidden; /* contain its children; no scroll */
 }
+
+/* Messages container (no scroll) */
 .askai-msgs {
   flex: 1 1 auto;
   min-height: 0;
-  overflow-y: auto;                 /* scroll here only */
+  overflow: hidden; /* keep chat area from scrolling */
   padding: var(--space-2) var(--space-2) 0;
+  background: var(--bg-base);
 }
 
-/* Keep composer fixed height */
+/* Empty chat state */
+.askai-empty {
+  display: grid;
+  place-items: center;
+  gap: var(--space-2);
+  color: var(--text-muted);
+  height: 100%;
+}
+
+/* ===== Individual messages ===== */
+.msg {
+  max-width: 80%;
+  padding: var(--space-2) var(--space-3);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  margin: var(--space-2) 0;
+  background: var(--bg-card);
+  position: relative;
+  color: var(--text-primary);
+  overflow-wrap: anywhere;
+}
+
+/* Ensure all markdown inside bubbles uses the bubble's font sizing */
+.msg p,
+.msg li,
+.msg code,
+.msg pre,
+.msg blockquote { font-size: inherit; }
+
+/* --- FIX: Keep list bullets inside the bubble --- */
+.msg ul,
+.msg ol {
+  margin: var(--space-2) 0 var(--space-2) 0;  /* reset default large left margin */
+  padding-left: var(--space-4);               /* small left padding within bubble */
+  list-style-position: inside;                /* bullets/numbers render inside */
+}
+.msg ul { list-style-type: disc; }
+.msg ol { list-style-type: decimal; }
+
+/* Optional: slightly tighter nested lists */
+.msg ul ul,
+.msg ul ol,
+.msg ol ul,
+.msg ol ol {
+  margin: var(--space-1) 0 var(--space-1) 0;
+  padding-left: var(--space-4);
+  list-style-position: inside;
+}
+
+.msg pre {
+  padding: var(--space-2);
+  border-radius: var(--radius);
+  overflow: auto;
+  background: var(--bg-card-2);
+  border: 1px solid var(--border-color);
+}
+
+.msg-u {
+  margin-left: auto;
+  background: var(--bg-card-2);
+  font-weight: 600;
+}
+.msg-a {
+  margin-right: auto;
+  margin-bottom: var(--space-6);
+  color: var(--text-secondary);
+}
+
+.msg > :first-child { margin-top: 0; }
+.msg > :last-child  { margin-bottom: 0; }
+
+.msg .askai-icon { width: 26px; height: 26px; }
+
+.msg-actions {
+  position: absolute;
+  top: var(--space-2);
+  right: var(--space-2);
+  display: inline-flex;
+  gap: var(--space-2);
+  opacity: 0;
+  transition: opacity var(--transition-fast);
+}
+.msg:hover .msg-actions { opacity: 1; }
+
+.askai-thinking {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  color: var(--text-muted);
+}
+
+/* ===== Composer (bottom of chat column) ===== */
 .askai-input {
   flex: 0 0 auto;
   display: grid;
@@ -201,63 +212,176 @@
   border-top: 1px solid var(--border-color);
   background: var(--bg-card);
 }
-
-/* --- XS sizing for both question & answer bubbles --- */
-.msg {
-  font-size: var(--font-size-xxs);       /* text to xs */
-  line-height: 1.35;
-  padding: var(--space-2) var(--space-3); /* tighter padding */
-}
-.msg p,
-.msg li,
-.msg code,
-.msg pre,
-.msg blockquote {
-  font-size: inherit;                  /* keep everything xs in bubbles */
-}
-
-/* Optional: compact code blocks too */
-.msg pre {
-  padding: var(--space-2);
-  border-radius: var(--radius);
-  overflow: auto;
-}
-
-/* Tighten the composer text to xs as well */
 .askai-text {
-  font-size: var(--font-size-xxs);
+  padding: var(--space-2) var(--space-3);
+  background: var(--bg-card-2);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
   line-height: 1.35;
   resize: none;
 }
+.askai-text:hover { border-color: var(--text-secondary); }
+.askai-text:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: var(--text-secondary);
+  background: var(--bg-card-2);
+}
+.askai-text::selection { background: rgba(128,128,255,.25); color: inherit; }
 
-/* Slightly smaller action buttons inside message bubbles */
-.msg .askai-icon {
+.askai-send {
   width: 26px;
   height: 26px;
+  display: grid;
+  place-items: center;
+  background: var(--bg-card-2);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  cursor: pointer;
+  transition: border-color var(--transition-fast), transform var(--transition-fast);
+}
+.askai-send:hover { border-color: var(--text-secondary); transform: translateY(-1px); }
+.askai-send.stop { opacity: .9; }
+
+/* Small toast (copy feedback) */
+.askai-toast {
+  position: absolute;
+  right: var(--space-3);
+  bottom: calc(40px + var(--space-3));
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  padding: 2px 8px;
+  border-radius: var(--radius);
+  color: var(--text-secondary);
 }
 
-
-/* keep markdown lists inside the chat bubble and tighten spacing */
-.msg ul,
-.msg ol {
-  /* make bullets/nums render inside the padded box */
-  list-style-position: inside;
-
-  /* ensure there's room and no weird negative gutter */
-  padding-left: var(--space-2);
-  margin: var(--space-1) 0; /* compact top/bottom */
+/* ===== Resize handle ===== */
+.askai-handle {
+  background: var(--bg-card);
+  border-left: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color);
+  cursor: col-resize;
 }
 
-/* consistent spacing for list items */
-.msg li {
-  margin: 0.25rem 0;
-  /* if long lines wrap, indent a touch so they don't crash the bullet */
-  text-indent: 0;
+/* ===== HISTORY COLUMN — the ONLY place that scrolls ===== */
+.askai-history {
+  min-width: 240px;
+  max-width: 520px;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;        /* allow the list to take leftover height */
+  background: var(--bg-card);
+  overflow: hidden;     /* list handles its own scroll */
+  border-left: 1px solid var(--border-color);
 }
 
-/* remove extra outer space from first/last block in a bubble */
-.msg > :first-child { margin-top: 0; }
-.msg > :last-child  { margin-bottom: 0; }
+/* Search row: fixed at top of history */
+.askai-h-row {
+  flex: 0 0 auto;
+  padding: var(--space-2);
+  border-bottom: 1px solid var(--border-color);
+  background: var(--bg-card);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
 
-/* optional: improve wrapping of long words/URLs inside bubbles */
-.msg { overflow-wrap: anywhere; }
+.askai-search {
+  display: grid;
+  grid-template-columns: 16px 1fr;
+  gap: var(--space-2);
+  align-items: center;
+  background: var(--bg-card-2);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  padding: 4px 8px;
+  color: var(--text-muted);
+}
+.askai-search input {
+  background: transparent;
+  border: 0;
+  outline: 0;
+  padding: 2px 0;
+  color: var(--text-primary);
+}
+
+/* History list: the ONLY vertical scrollbar */
+.askai-h-list {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow-y: auto;  /* <-- the sole vertical scrollbar on the page */
+  padding: var(--space-2);
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255,255,255,.75) transparent;
+}
+.askai-h-list::-webkit-scrollbar { width: 4px; }
+.askai-h-list::-webkit-scrollbar-thumb { background: rgba(255,255,255,.8); border-radius: 999px; }
+
+/* Empty state in history */
+.askai-empty-h {
+  color: var(--text-muted);
+  text-align: center;
+  padding: var(--space-4) 0;
+}
+
+/* History items */
+.h-item {
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  padding: var(--space-2);
+  margin-bottom: var(--space-2);
+  background: var(--bg-card-2);
+  cursor: pointer;
+  transition: border-color var(--transition-fast), transform var(--transition-fast);
+}
+.h-item:hover { border-color: var(--text-secondary); transform: translateY(-1px); }
+
+.h-q {
+  color: var(--text-primary);
+  font-weight: 700;
+  margin-bottom: var(--space-1);
+}
+.h-a { color: var(--text-secondary); }
+
+.h-actions {
+  display: inline-flex;
+  gap: var(--space-2);
+  float: right;
+  margin-top: -22px;
+}
+.h-actions .askai-icon {
+  width: 22px;
+  height: 20px;
+  border-radius: var(--radius);
+  background: var(--bg-card);
+}
+
+/* ===== Thin scrollbars everywhere inside AskAI (optional, subtle) ===== */
+.askai * {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(12,18,32,0.35) transparent;
+}
+.askai *::-webkit-scrollbar { width: 8px; height: 8px; }
+.askai *::-webkit-scrollbar-track { background: transparent; }
+.askai *::-webkit-scrollbar-thumb {
+  background: rgba(12,18,32,0.22);
+  border-radius: 8px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+  transition: background var(--transition-fast), opacity var(--transition-fast);
+}
+.askai *::-webkit-scrollbar-thumb:hover { background: rgba(12,18,32,0.34); }
+
+/* ===== Responsive ===== */
+@media (max-width: 1024px) {
+  .askai-main { grid-template-columns: 1fr; }
+  .askai-handle,
+  .askai-history { display: none; } /* hide history on narrow screens */
+  .msg { max-width: 90%; }
+}
+
+/* ===== iOS stable viewport units (optional) ===== */
+@supports (height: 100svh) {
+  body:has(.askai) .app-layout { height: calc(100svh - 44px); }
+}

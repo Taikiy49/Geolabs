@@ -1,10 +1,13 @@
-/* ===== Compact Sidebar (small paddings + XS fonts only) ===== */
-
 /* Sticky global sidebar */
 .sb {
   position: sticky;
-  top: 0;                          /* .app-layout already accounts for header height */
+  top: 0;
+
+  /* Fill the full grid track height */
   height: 100%;
+  min-height: 0;           /* <-- allow shrinking */
+  align-self: stretch;     /* <-- stretch in CSS Grid */
+
   background: var(--bg-card);
   border-right: 1px solid var(--border-color);
   box-shadow: var(--shadow-surface);
@@ -15,69 +18,64 @@
 /* Layout: nav scroll + footer pinned */
 .sb-inner {
   height: 100%;
+  min-height: 0;                  /* <-- critical so nav can shrink/scroll */
   display: grid;
-  grid-template-rows: 1fr auto;    /* nav (scroll) / footer */
-  padding: var(--space-2);         /* compact */
-  overflow: hidden;
+  grid-template-rows: 1fr auto;   /* nav (scroll) / footer (pinned) */
+  padding: var(--space-2);
+  overflow: hidden;               /* contain the nav scroller */
 }
 
-/* NAV */
+/* NAV: the only scroller */
 .sb-nav {
+  min-height: 0;                  /* <-- allow this region to become the scroller */
   overflow-y: auto;
   padding-right: var(--space-2);
   scrollbar-width: thin;
   scrollbar-color: var(--text-muted) transparent;
 }
 
-/* Sections */
-.sb-sec + .sb-sec { margin-top: var(--space-2); } /* tighter stack */
-
+/* Sections etc. (unchanged) */
+.sb-sec + .sb-sec { margin-top: var(--space-2); }
 .sb-sec-title {
   display: flex;
   align-items: center;
   justify-content: space-between;
   color: var(--text-muted);
-  font-size: var(--font-size-xxs); /* tiny label */
+  font-size: var(--font-size-xxs);
   letter-spacing: .06em;
   text-transform: uppercase;
-  padding: 0 var(--space-1);       /* compact */
+  padding: 0 var(--space-1);
 }
-
-/* Collapse button */
 .sb-collapse {
   border: none;
   background: transparent;
   cursor: pointer;
   color: var(--text-secondary);
-  padding: var(--space-1);         /* compact */
+  padding: var(--space-1);
   display: inline-flex;
   align-items: center;
   border-radius: var(--radius);
   transition: color var(--transition-fast);
 }
-sb-collapse:focus-visible { outline: var(--focus-ring); }
+.sb-collapse:focus-visible { outline: var(--focus-ring); }
 
-/* Lists & links */
 .sb-list {
   margin-top: var(--space-2);
   display: grid;
-  gap: var(--space-2);             /* tight gap */
+  gap: var(--space-2);
 }
 .sb-list.is-closed { display: none; }
 
 .sb-link {
   display: flex;
   align-items: center;
-  gap: var(--space-3);             /* small icon/text gap */
-  padding: var(--space-3) var(--space-4);  /* compact link padding */
+  gap: var(--space-3);
+  padding: var(--space-3) var(--space-4);
   border-radius: var(--radius-lg);
   color: var(--text-primary);
   text-decoration: none;
-  transition:
-    background var(--transition-fast),
-    color var(--transition-fast),
-    transform var(--transition-fast),
-    border-color var(--transition-fast);
+  transition: background var(--transition-fast), color var(--transition-fast),
+              transform var(--transition-fast), border-color var(--transition-fast);
 }
 .sb-link:hover {
   background: color-mix(in oklab, var(--bg-card) 70%, var(--border-color) 30%);
@@ -88,11 +86,9 @@ sb-collapse:focus-visible { outline: var(--focus-ring); }
   border: 1px solid color-mix(in oklab, var(--color-primary) 40%, var(--border-color) 60%);
 }
 
-/* Icon + label sizes (compact) */
 .sb-ico   { flex: 0 0 auto; font-size: var(--font-size-xs); opacity: .9; }
 .sb-label { font-size: var(--font-size-xxs); }
 
-/* Footer links (compact) */
 .sb-foot {
   padding-top: var(--space-2);
   border-top: 1px dashed var(--border-color);
@@ -106,7 +102,7 @@ sb-collapse:focus-visible { outline: var(--focus-ring); }
   font-size: var(--font-size-xxs);
   color: var(--text-secondary);
   text-decoration: none;
-  padding: var(--space-2) var(--space-3); /* compact */
+  padding: var(--space-2) var(--space-3);
   border-radius: var(--radius);
   transition: background var(--transition-fast), color var(--transition-fast);
 }
@@ -115,8 +111,11 @@ sb-collapse:focus-visible { outline: var(--focus-ring); }
   color: var(--text-primary);
 }
 
-/* If you later add a token like --bp-sidebar-collapse to :root, you can enable:
-@media (max-width: var(--bp-sidebar-collapse)) {
-  .sb { display: none; }
+/* Extra robustness (Safari/iOS) */
+@supports (block-size: 100%) {
+  .sb { block-size: 100%; }
+  .sb-inner { block-size: 100%; }
 }
-*/
+@supports (height: 100svh) {
+  .app-layout { height: calc(100svh - 44px); }
+}
