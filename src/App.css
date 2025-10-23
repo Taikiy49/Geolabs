@@ -1,3 +1,10 @@
+/* ==========================
+   App.css — Civil (burnt orange) theme + full-height layout
+   ========================== */
+
+/* ==========================
+   Design tokens (:root)
+   ========================== */
 :root {
   /* Spacing */
   --space-1: 0.125rem;
@@ -29,24 +36,24 @@
 
   /* ===== Light palette (burnt-orange / civil) ===== */
   /* Surfaces (warmed) */
-  --bg-page: #efe7dc;   /* warm page backdrop */
-  --bg-base: #f5f1ea;   /* app base */
-  --bg-card: #fffaf3;   /* cards/sidebar: soft parchment, not stark white */
-  --bg-card-2: #f2ebe2; /* secondary card */
+  --bg-page: #efe7dc;    /* warm page backdrop */
+  --bg-base: #f5f1ea;    /* app base */
+  --bg-card: #fffaf3;    /* cards/sidebar: soft parchment */
+  --bg-card-2: #f2ebe2;  /* secondary card */
   --bg-hover: rgba(195, 90, 0, 0.10); /* orange wash for hovers */
 
-  /* Header & Sidebar gradient */
+  /* Header & Sidebar gradient (if used) */
   --header-bg: linear-gradient(90deg, #b64900 0%, #d96600 100%);
   --sidebar-bg: linear-gradient(180deg, #b64900 0%, #9a4100 100%);
 
   /* Text */
-  --text-primary:   #0c1a33;  /* keeps strong legibility on warm backgrounds */
+  --text-primary:   #0c1a33;
   --text-secondary: #243654;
   --text-muted:     #6a7a96;
 
   /* Accents (orange-forward) */
   --color-primary:   #c35a00; /* burnt orange */
-  --color-secondary: #e07200; /* brighter orange accent */
+  --color-secondary: #e07200; /* bright orange */
   --color-cerulean:  #c35a00; /* alias to primary */
   --color-violet:    #6d5cff;
   --color-mint:      #00bfa6;
@@ -65,7 +72,7 @@
   --icon-on-sidebar: #ffffff;
   --icon-on-header:  #ffffff;
 
-  /* Borders & shadows (slightly warmer border tint) */
+  /* Borders & shadows (warmer border tint) */
   --border-color: rgba(64, 40, 16, 0.12);
   --shadow-surface: 0 1px 3px rgba(16,24,40,.06), 0 1px 2px rgba(16,24,40,.04);
   --shadow-float:   0 10px 24px rgba(16,24,40,.14), 0 3px 8px rgba(16,24,40,.10);
@@ -86,18 +93,17 @@
   --sidebar-w: var(--sidebar-width);
 }
 
-
 /* ==========================
    Minimal reset + base
    ========================== */
-
 *,
 *::before,
 *::after { box-sizing: border-box; }
 
 * { margin: 0; padding: 0; }
 
-html, body, #root { height: 100%; }
+/* Full-height canvas */
+html, body, #root { height: 100%; min-height: 100vh; min-height: 100dvh; }
 
 html { -webkit-text-size-adjust: 100%; }
 
@@ -105,19 +111,20 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: var(--bg-base, #000);
+  background: var(--bg-base, #f5f1ea);
   color: var(--text-primary, #0c1a33);
-  overflow-x: hidden; /* vertical scrolling handled below */
+  overflow-x: hidden; /* vertical overflow handled by .app-main */
 }
 
+/* Root container flex column */
 #root {
   display: flex;
   flex-direction: column;
 }
 
-:focus-visible { outline: 2px solid var(--color-primary, #19d9ff); outline-offset: 2px; }
+:focus-visible { outline: 2px solid var(--color-primary, #c35a00); outline-offset: 2px; }
 
-::selection { background: rgba(25, 217, 255, 0.35); color: #fff; }
+::selection { background: rgba(195, 90, 0, 0.25); color: #000; }
 
 a {
   color: var(--color-primary);
@@ -129,7 +136,6 @@ a:hover { text-decoration: underline; }
 /* ==========================
    Loading helpers
    ========================== */
-
 .loading {
   display: flex;
   align-items: center;
@@ -140,7 +146,7 @@ a:hover { text-decoration: underline; }
 
 .spinner {
   width: 20px; height: 20px;
-  border: 2px solid rgba(0, 212, 255, 0.2);
+  border: 2px solid rgba(195, 90, 0, 0.20);
   border-top: 2px solid var(--color-primary);
   border-radius: 50%;
   animation: spin 1s linear infinite;
@@ -154,7 +160,6 @@ a:hover { text-decoration: underline; }
 /* ==========================
    Auth redirect UI
    ========================== */
-
 .auth-redirect {
   min-height: calc(100dvh - 64px);
   display: grid;
@@ -187,7 +192,7 @@ a:hover { text-decoration: underline; }
 
 .auth-spinner {
   width: 28px; height: 28px; margin: 0 auto var(--space-6);
-  border: 3px solid rgba(59,130,246,.18);
+  border: 3px solid rgba(230, 120, 0, .18);
   border-top: 3px solid var(--color-primary);
   border-radius: 50%;
   animation: spin 1s linear infinite;
@@ -228,37 +233,37 @@ a:hover { text-decoration: underline; }
 /* ==========================
    Nice global scrollbars
    ========================== */
-
-* { scrollbar-width: thin; scrollbar-color: rgba(255,255,255,0.35) transparent; }
-:root[data-theme="light"] * { scrollbar-color: rgba(12,18,32,0.35) transparent; }
-
+* { scrollbar-width: thin; scrollbar-color: rgba(12,18,32,0.35) transparent; }
 *::-webkit-scrollbar { width: 8px; height: 8px; }
 *::-webkit-scrollbar-track { background: transparent; }
 *::-webkit-scrollbar-thumb {
-  background: rgba(255,255,255,0.18);
+  background: rgba(12,18,32,0.22);
   border-radius: 8px;
   border: 2px solid transparent;
   background-clip: padding-box;
   transition: background var(--transition-fast), opacity var(--transition-fast);
 }
-*::-webkit-scrollbar-thumb:hover { background: rgba(255,255,255,0.28); }
-:root[data-theme="light"] *::-webkit-scrollbar-thumb { background: rgba(12,18,32,0.22); }
-:root[data-theme="light"] *::-webkit-scrollbar-thumb:hover { background: rgba(12,18,32,0.34); }
+*::-webkit-scrollbar-thumb:hover { background: rgba(12,18,32,0.34); }
 
 /* ==========================
    App layout (Header + Sidebar + Main)
    ========================== */
 
+/* App root fills viewport; .app-layout will fill remaining height under any header */
 .App {
+  min-height: 100%;
+  min-height: 100dvh;
   display: flex;
   flex-direction: column;
+  background: var(--bg-base);
 }
 
-/* Two-column app body (under a 44px header) */
+/* Two-column app body under header (if any). This grid consumes the leftover height */
 .app-layout {
+  flex: 1 1 auto;                /* fill remaining vertical space */
+  min-height: 0;                 /* allow children to shrink/scroll */
   display: grid;
   grid-template-columns: var(--sidebar-w) minmax(0, 1fr);
-  min-height: 0;                 /* allow children to shrink/scroll */
   background: var(--bg-base);
 }
 
@@ -268,10 +273,12 @@ a:hover { text-decoration: underline; }
   flex: 0 0 var(--sidebar-w);
 }
 
-/* === ONE TRUE SCROLL CONTAINER === */
+/* ONE TRUE SCROLL CONTAINER: main content column */
 .app-main {
   min-width: 0;
-  min-height: 0;
+  min-height: 0;                 /* critical so inner scrollers work */
+  overflow: auto;                /* vertical scrolling happens here */
+  background: var(--bg-base);
 }
 
 /* Responsive: single column under 860px */
@@ -282,7 +289,6 @@ a:hover { text-decoration: underline; }
 /* ==========================================
    No-rounded-corners + overflow safety (fix)
    ========================================== */
-
 html, body, #root, .App, .app-layout, .app-main {
   border-radius: 0 !important;
   background: var(--bg-base);
@@ -295,11 +301,6 @@ html, body, #root, .App, .app-layout, .app-main {
    Page-level helpers (e.g., AskAI page)
    ========================================== */
 
-/* Lock the viewport; delegate scrolling to .app-main */
-html, body, .App {
-  overflow: hidden;              /* disables browser’s own scrollbar */
-}
-
 /* If a page needs full height inside .app-main */
 .fill-parent {
   height: 100%;
@@ -307,14 +308,16 @@ html, body, .App {
   overflow: hidden;
 }
 
-/* Example: AskAI root fills .app-main, not the viewport */
+/* Example: AskAI root fills .app-main; its inner areas manage scroll */
 .askai {
   height: 100%;
   min-height: 0;
-  overflow: hidden;              /* its inner areas manage scroll */
+  overflow: hidden;
 }
 
 /* iOS stable viewport units (optional) */
 @supports (height: 100svh) {
-  .app-layout { height: calc(100svh - 44px); }
+  html, body, #root { min-height: 100svh; }
+  .App { min-height: 100svh; }
 }
+

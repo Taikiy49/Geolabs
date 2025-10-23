@@ -9,7 +9,6 @@
 .cbi-wrap{
   /* derive xs base from your tokens */
   --fs-xs: var(--font-size-xxs);
-  padding-top: var(--space-1);
   display:flex;
   flex-direction:column;
   height:100%;
@@ -34,12 +33,11 @@
   display:flex; align-items:center; justify-content:space-between;
   gap: var(--space-2);
   padding: var(--space-2) var(--space-3);
-  border:1px solid var(--border-color);
+  border-radius: var(--radius);
   background: var(--bg-card);
   box-shadow: var(--shadow-md);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  margin-bottom: var(--space-3);
   position:relative;
 }
 .cbi-topbar::before{
@@ -246,7 +244,7 @@ tr.cbi-editing td{
 .cbi-pager{
   display:flex; align-items:center; justify-content:center;
   gap: var(--space-2);
-  padding-top: var(--space-2);
+  padding: var(--space-2);
   font-size: var(--fs-xs);
 }
 .cbi-page{ color: var(--text-muted); }
