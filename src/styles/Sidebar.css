@@ -1,24 +1,24 @@
-/* Sticky global sidebar */
+/* Sticky global sidebar (left on desktop) */
 .sb {
   position: sticky;
   top: 0;
 
   /* Fill the full grid track height */
   height: 100%;
-  min-height: 0;           /* <-- allow shrinking */
-  align-self: stretch;     /* <-- stretch in CSS Grid */
+  min-height: 0;           /* allow shrinking */
+  align-self: stretch;     /* stretch in CSS Grid */
 
   background: var(--bg-card);
   border-right: 1px solid var(--border-color);
   box-shadow: var(--shadow-surface);
   z-index: 3;
-  min-width: var(--sidebar-w);
+  min-width: var(--sidebar-w);  /* e.g., 260px */
 }
 
 /* Layout: nav scroll + footer pinned */
 .sb-inner {
   height: 100%;
-  min-height: 0;                  /* <-- critical so nav can shrink/scroll */
+  min-height: 0;                  /* critical so nav can shrink/scroll */
   display: grid;
   grid-template-rows: 1fr auto;   /* nav (scroll) / footer (pinned) */
   padding: var(--space-2);
@@ -27,15 +27,16 @@
 
 /* NAV: the only scroller */
 .sb-nav {
-  min-height: 0;                  /* <-- allow this region to become the scroller */
+  min-height: 0;                  /* allow this region to become the scroller */
   overflow-y: auto;
   padding-right: var(--space-2);
   scrollbar-width: thin;
   scrollbar-color: var(--text-muted) transparent;
 }
 
-/* Sections etc. (unchanged) */
+/* Sections */
 .sb-sec + .sb-sec { margin-top: var(--space-2); }
+
 .sb-sec-title {
   display: flex;
   align-items: center;
@@ -46,6 +47,7 @@
   text-transform: uppercase;
   padding: 0 var(--space-1);
 }
+
 .sb-collapse {
   border: none;
   background: transparent;
@@ -59,6 +61,7 @@
 }
 .sb-collapse:focus-visible { outline: var(--focus-ring); }
 
+/* Items */
 .sb-list {
   margin-top: var(--space-2);
   display: grid;
@@ -89,6 +92,7 @@
 .sb-ico   { flex: 0 0 auto; font-size: var(--font-size-xs); opacity: .9; }
 .sb-label { font-size: var(--font-size-xxs); }
 
+/* Footer links */
 .sb-foot {
   padding-top: var(--space-2);
   border-top: 1px dashed var(--border-color);
@@ -109,6 +113,74 @@
 .sb-foot-link:hover {
   background: var(--bg-card-2);
   color: var(--text-primary);
+}
+
+/* ---------- RESPONSIVE: move sidebar to TOP on small screens ---------- */
+/* Use 900px as a general breakpoint; adjust for your layout */
+@media (max-width: 900px) {
+  .sb {
+    position: sticky;
+    top: 0;
+
+    /* Break out of any centered container and span the real device width */
+    width: 100dvw;
+    margin-inline: calc(50% - 50dvw);
+
+    min-width: 0;            /* no fixed sidebar width */
+    height: auto;            /* bar height adapts to content */
+    border-right: none;
+    border-bottom: 1px solid var(--border-color);
+    z-index: 5;              /* stay above page content */
+  }
+
+  .sb-inner {
+    display: block;
+    padding: var(--space-2) var(--space-3);
+    height: auto;
+    min-height: 0;
+    overflow: visible;
+  }
+
+  /* Horizontal scroll pills */
+  .sb-nav {
+    display: flex;
+    gap: var(--space-2);
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-right: 0;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch; /* iOS smooth scroll */
+    scrollbar-width: thin;
+  }
+
+  /* Hide section headings to save room */
+  .sb-sec-title { display: none; }
+
+  /* Each section becomes inline; lists become horizontal pill rows */
+  .sb-sec { display: inline-block; }
+
+  .sb-list {
+    display: inline-flex;
+    gap: var(--space-2);
+    margin: 0;
+    vertical-align: top;
+  }
+
+  /* force collapsed sections open on mobile */
+  .sb-list.is-closed { display: inline-flex; }
+
+  /* Compact pills */
+  .sb-link {
+    padding: 6px 10px;
+    border-radius: 999px;
+    border: 1px solid transparent;
+  }
+  .sb-link.is-active {
+    border-color: color-mix(in oklab, var(--color-primary) 40%, var(--border-color) 60%);
+  }
+
+  /* Hide the footer on mobile to keep the bar slim */
+  .sb-foot { display: none; }
 }
 
 /* Extra robustness (Safari/iOS) */

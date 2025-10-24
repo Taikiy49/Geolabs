@@ -1,20 +1,26 @@
+/* src/styles/ServerSearch.css */
+
+/* Page fills viewport; results area uses remaining space */
 .serversearch {
   color: var(--text-primary);
-  padding: var(--main-pad);
   display: flex;
   flex-direction: column;
-  gap: var(--space-4);
+  height: 100vh;
+  min-height: 0; /* allow inner flex children to scroll */
 }
 
-/* form row */
+/* Top form row */
 .serversearch-form { width: 100%; }
 .serversearch-inputs {
+  padding: var(--space-2);
   display: flex;
   gap: var(--space-3);
   align-items: center;
+  flex-wrap: wrap;
+  flex: 0 0 auto; /* do not grow */
 }
 
-/* inputs */
+/* Inputs */
 .serversearch-box,
 .serversearch-select {
   padding: var(--space-3) var(--space-4);
@@ -25,14 +31,16 @@
   font-size: var(--font-size-xxs);
   transition: border-color var(--transition-fast), background var(--transition-fast);
 }
-.serversearch-box { flex: 1; }
+.serversearch-box { flex: 1; min-width: 220px; }
 .serversearch-select { width: 160px; }
-.serversearch-pagesize { width: 120px; }
 
-/* search button */
+/* Search button */
 .serversearch-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
   background: var(--color-primary);
-  color: var(--text-primary);
+  color: var(--text-on-primary, #fff);
   border: none;
   border-radius: var(--radius);
   padding: 0 var(--space-5);
@@ -45,102 +53,174 @@
   transform: translateY(-1px);
 }
 
-/* table */
+/* Content area (table + summary) */
+.serversearch-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  min-height: 0;
+  gap: var(--space-3);
+}
+
+/* Scrollable table wrapper */
+.serversearch-tablewrap {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow: auto;              /* scroll only results */
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+/* Table */
 .serversearch-table {
   width: 100%;
   border-collapse: collapse;
   font-size: var(--font-size-xxs);
-  table-layout: fixed; /* keeps columns predictable */
+  table-layout: fixed;
 }
 .serversearch-table th,
 .serversearch-table td {
-  padding: var(--space-1) var(--space-2); /* smaller per request */
+  padding: var(--space-1) var(--space-2);
   border-bottom: 1px solid var(--border-color);
   text-align: left;
-  vertical-align: middle; /* centers content in the cell vertically */
+  vertical-align: top;
 }
 .serversearch-table th {
   color: var(--text-secondary);
   background: var(--bg-card-2);
 }
 
-/* give columns sensible widths */
+/* Sticky header */
+.serversearch-table thead th {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: var(--bg-card-2);
+}
+
+/* Suggested column widths (no separate Actions col) */
 .serversearch-table th:nth-child(1),
-.serversearch-table td:nth-child(1) { /* Filename */
-  width: 70%;
+.serversearch-table td:nth-child(1) { /* Name + path + icons */
+  width: 52%;
+}
+.serversearch-table th:nth-child(2),
+.serversearch-table td:nth-child(2) { /* Kind */
+  width: 11%;
+}
+.serversearch-table th:nth-child(3),
+.serversearch-table td:nth-child(3) { /* Area */
+  width: 14%;
+}
+.serversearch-table th:nth-child(4),
+.serversearch-table td:nth-child(4) { /* Type */
+  width: 8%;
+}
+.serversearch-table th:nth-child(5),
+.serversearch-table td:nth-child(5) { /* Modified */
+  width: 15%;
 }
 
+/* Header sort buttons */
+.serversearch-thbtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: transparent;
+  border: none;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  padding: 4px 6px;
+}
+.serversearch-thbtn:hover { text-decoration: underline; }
+.sort-arrow { vertical-align: middle; }
 
-/* result row adornments */
-.serversearch-fn {
-  font-weight: 600;
+/* Name cell layout */
+.serversearch-fn .serversearch-fn-title {
+  font-weight: 700;
   color: var(--text-primary);
-  line-height: 1.35;
-  word-break: break-word;
-  overflow-wrap: anywhere; /* long paths won’t force overflow */
-}
-.serversearch-path-sub {
-  color: var(--text-muted);
-  font-size: var(--font-size-xxs);
-  margin-top: var(--space-1);
   word-break: break-word;
   overflow-wrap: anywhere;
 }
 
-/* action chips — center inside the cell */
-.serversearch-actions {
+/* Path row: path text + inline icon buttons on the same line */
+.serversearch-path-row {
+  margin-top: 2px;
   display: flex;
   align-items: center;
-  justify-content: center;   /* ⬅ center in the cell */
-  gap: var(--space-2);
-  flex-wrap: wrap;           /* wrap on small screens */
+  gap: 6px;
+  flex-wrap: nowrap;
 }
-.serversearch-link {
+.serversearch-path-sub {
+  color: var(--text-muted);
+  font-size: var(--font-size-xxs);
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+
+/* Minimal icon-only buttons inline with the path */
+.serversearch-inline-icons { display: inline-flex; gap: 4px; }
+.serversearch-iconbtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;          /* small, but still tappable */
+  height: 22px;
+  border: none;         /* no border */
+  padding: 0;           /* no padding */
+  border-radius: 4px;   /* soft corners for the hover fill */
+  background: transparent;                 /* default: no fill */
+  color: var(--text-muted);                /* light gray icon */
+  cursor: pointer;
+  transition: background var(--transition-fast), color var(--transition-fast), transform var(--transition-fast);
+}
+.serversearch-iconbtn:hover {
+  background: var(--bg-card-2);            /* subtle gray fill on hover */
+  color: var(--text-primary);              /* brighten icon on hover */
+  transform: translateY(-1px);
+}
+.serversearch-iconbtn:active { transform: translateY(0); }
+.serversearch-iconbtn svg { font-size: 12px; pointer-events: none; }
+
+/* Kind badges */
+.serversearch-badge {
   display: inline-flex;
   align-items: center;
   gap: var(--space-2);
-  padding: var(--space-1) var(--space-3);
-  border-radius: var(--radius);
+  padding: 2px 6px;
+  border-radius: 999px;
+  font-size: var(--font-size-xxs);
   border: 1px solid var(--border-color);
-  background: var(--bg-card-2);
-  cursor: pointer;
-  font-size: var(--font-size-xxs);
-  color: var(--text-primary);
-  transition: background var(--transition-fast), border-color var(--transition-fast);
-  white-space: nowrap;
+  background: var(--bg-card);
 }
-.serversearch-link:disabled {
-  opacity: .5;
-  cursor: not-allowed;
+.serversearch-badge.folder {
+  background: color-mix(in oklab, var(--bg-card) 85%, var(--color-primary) 15%);
 }
-.serversearch-link:hover:not(:disabled) {
-  background: var(--bg-hover);
-  border-color: var(--color-primary);
+.serversearch-badge.file {
+  background: color-mix(in oklab, var(--bg-card) 85%, var(--color-tertiary, #6aa) 15%);
 }
 
-/* pager */
-.serversearch-pager {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: var(--space-3);
+/* Messages & summary */
+.serversearch-loading {
+  text-align: center;
+  color: var(--text-muted);
+  font-style: italic;
+  font-size: var(--font-size-xxs); /* ensure the small size */
 }
-.serversearch-pageinfo {
-  color: var(--text-secondary);
+.serversearch-error   { color: var(--color-quaternary); text-align: center; }
+.serversearch-summary { color: var(--text-secondary); font-size: var(--font-size-xxs); text-align: center; }
+
+.serversearch-empty {
+  text-align: center;
+  color: var(--text-muted);
   font-size: var(--font-size-xxs);
 }
 
-/* messages */
-.serversearch-loading { text-align: center; color: var(--text-muted); font-style: italic; }
-.serversearch-error { color: var(--color-quaternary); text-align: center; }
-.serversearch-summary { color: var(--text-secondary); font-size: var(--font-size-xxs); text-align: center; margin-top: var(--space-2); }
-.serversearch-empty { text-align: center; color: var(--text-muted); font-size: var(--font-size-xxs); }
-
-/* retry button */
+/* Retry button */
 .serversearch-retry {
   margin-left: var(--space-2);
   background: var(--color-primary);
-  color: var(--text-primary);
+  color: var(--text-on-primary, #fff);
   border: none;
   border-radius: var(--radius);
   padding: var(--space-2) var(--space-4);
@@ -152,7 +232,7 @@
 }
 .serversearch-retry:hover { background: var(--color-secondary); transform: translateY(-1px); }
 
-/* toast */
+/* Toast */
 .serversearch-toast {
   position: fixed;
   bottom: var(--space-6);

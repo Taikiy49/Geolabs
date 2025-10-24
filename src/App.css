@@ -277,8 +277,8 @@ a:hover { text-decoration: underline; }
 .app-main {
   min-width: 0;
   min-height: 0;                 /* critical so inner scrollers work */
-  overflow: auto;                /* vertical scrolling happens here */
   background: var(--bg-base);
+  overflow: hidden;
 }
 
 /* Responsive: single column under 860px */

@@ -1,4 +1,3 @@
-// src/components/Sidebar.jsx
 import React, { useState, useMemo } from "react";
 import { NavLink } from "react-router-dom";
 import {
@@ -41,7 +40,7 @@ const SECTIONS = [
 ];
 
 export default function Sidebar() {
-  // OPEN EVERYTHING by default; user can still collapse
+  // open collapsible sections by default
   const defaultOpen = useMemo(() => {
     const o = {};
     SECTIONS.forEach((sec) => {
@@ -54,7 +53,7 @@ export default function Sidebar() {
   const toggle = (k) => setOpen((o) => ({ ...o, [k]: !o[k] }));
 
   return (
-    <aside className="sb">
+    <aside className="sb" aria-label="Primary sidebar">
       <div className="sb-inner">
         <nav className="sb-nav" aria-label="Primary">
           {SECTIONS.map((sec) => (
