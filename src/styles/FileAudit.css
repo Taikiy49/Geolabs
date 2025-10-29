@@ -1,43 +1,102 @@
 /* ============================================
-   src/styles/FileAudit.css
-   Compact (XXS) UI using tokens from :root
-   One true scroller = .fa-table (the file list)
-   Header + Footer remain visible; white surfaces
-============================================ */
+   FileAudit.css — AskAI-matched, ultra-compact
+   - Every class has explicit font-size: var(--font-size-xxs)
+   - Micro paddings (var(--space-2)) and small radii (--radius)
+   - One true scroller (.fa-table)
+   ============================================ */
 
-/* ===== App section shell ===== */
+/* Base: keep everything small inside this page */
+.fa-wrap,
+.fa-wrap * { font-size: var(--font-size-xxs); line-height: var(--text-line-height); }
+
+/* ===== Shell ===== */
 .fa-wrap {
   display: flex;
   flex-direction: column;
-  height: 100%;               /* fills .app-main */
-  min-height: 0;              /* allow inner scroller to shrink */
-  background: var(--bg-card); /* white */
+  height: 100%;
+  min-height: 0;
+  background: var(--bg-base);
   color: var(--text-primary);
-  font-size: var(--font-size-xxs);
 }
 
-/* ===== Sticky top toolbar ===== */
+/* ===== Header (sticky) ===== */
 .fa-header {
   position: sticky;
   top: 0;
   z-index: 2;
-  background: var(--bg-card);             /* white */
+  background: var(--bg-card);
   border-bottom: 1px solid var(--border-color);
-  padding: var(--space-2) 0;              /* no side padding */
+  padding: var(--space-2);
+  box-shadow: var(--shadow-surface);
+  font-size: var(--font-size-xxs);
 }
-
 .fa-actions {
   display: flex;
   align-items: center;
   gap: var(--space-2);
   width: 100%;
-  padding: 0 var(--space-1);              /* micro gutter */
+  padding: 0 var(--space-1);
+  font-size: var(--font-size-xxs);
 }
 
+/* ===== Search group ===== */
+.fa-searchwrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex: 1;
+  min-width: 200px;
+  font-size: var(--font-size-xxs);
+}
+.fa-search-icon {
+  position: absolute;
+  left: 8px;
+  opacity: .75;
+  font-size: var(--font-size-xxs);
+}
+.fa-search {
+  width: 100%;
+  padding: var(--space-2) var(--space-3) var(--space-2) 26px; /* room for icon */
+  background: var(--bg-card-2);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  transition: border-color var(--transition-fast), background var(--transition-fast);
+  font-size: var(--font-size-xxs);
+}
+.fa-search:hover { border-color: var(--text-secondary); }
+.fa-search:focus { outline: none; border-color: var(--text-secondary); }
+
+.fa-clear {
+  position: absolute;
+  right: 6px;
+  width: 22px;
+  height: 22px;
+  display: grid;
+  place-items: center;
+  border-radius: var(--radius);
+  border: 1px solid var(--border-color);
+  background: var(--bg-card);
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: transform var(--transition-fast), border-color var(--transition-fast), background var(--transition-fast);
+  font-size: var(--font-size-xxs);
+}
+.fa-clear:hover { transform: translateY(-1px); border-color: var(--text-secondary); }
+
+.fa-wait-dot {
+  position: absolute;
+  right: 34px;
+  width: 6px; height: 6px;
+  border-radius: 999px;
+  background: var(--color-primary);
+  animation: faPulse .9s ease-in-out infinite;
+}
+@keyframes faPulse { 0%,100%{opacity:.25; transform:scale(.85)} 50%{opacity:1; transform:scale(1)} }
+
+/* ===== Labels & controls ===== */
 .fa-label { color: var(--text-muted); font-size: var(--font-size-xxs); }
 
-/* ===== Inputs / Controls (XXS) ===== */
-.fa-search,
 .fa-filter,
 .fa-notes,
 .fa-form input,
@@ -45,27 +104,40 @@
 .fa-form select {
   border: 1px solid var(--border-color);
   border-radius: var(--radius);
-  padding: var(--space-2) var(--space-2);
-  font-size: var(--font-size-xxs);
-  background: var(--bg-card);             /* white controls */
+  padding: var(--space-2);
+  background: var(--bg-card-2);
   color: var(--text-primary);
   min-width: 0;
+  transition: border-color var(--transition-fast), background var(--transition-fast);
+  font-size: var(--font-size-xxs);
 }
+.fa-filter:hover,
+.fa-form input:hover,
+.fa-form textarea:hover,
+.fa-form select:hover { border-color: var(--text-secondary); }
+.fa-filter:focus,
+.fa-form input:focus,
+.fa-form textarea:focus,
+.fa-form select:focus { outline: none; border-color: var(--text-secondary); }
 
-.fa-search { flex: 1; }
-
+/* ===== Buttons ===== */
 .fa-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
   cursor: pointer;
   border: 1px solid var(--border-color);
   border-radius: var(--radius);
-  padding: var(--space-2) var(--space-2);
-  background: var(--bg-card);             /* white */
+  padding: var(--space-2) var(--space-3);
+  background: var(--bg-card-2);
   color: var(--text-primary);
-  font-size: var(--font-size-xxs);
   box-shadow: var(--shadow-surface);
   transition: background var(--transition-fast), transform var(--transition-fast), border-color var(--transition-fast);
+  font-size: var(--font-size-xxs);
 }
 .fa-btn:hover { background: var(--bg-hover); transform: translateY(-1px); }
+.fa-btn .fa-btn-text { font-size: var(--font-size-xxs); }
+.fa-btn svg { width: 12px; height: 12px; }
 
 .fa-link {
   background: transparent;
@@ -73,33 +145,37 @@
   color: var(--color-primary);
   cursor: pointer;
   padding: var(--space-1) var(--space-2);
+  transition: color var(--transition-fast);
   font-size: var(--font-size-xxs);
 }
+.fa-link:hover { color: var(--color-secondary); }
 .fa-link.danger { color: var(--color-danger); }
 
-.fa-upload-btn { position: relative; display: inline-flex; align-items: center; }
+.fa-upload-btn { position: relative; display: inline-flex; align-items: center; font-size: var(--font-size-xxs); }
 .fa-upload-input { position: absolute; inset: 0; opacity: 0; cursor: pointer; }
 .fa-upload-btn.is-busy { pointer-events: none; opacity: .7; }
 
-/* ===== Main area (table scroller + footer) ===== */
+/* ===== Main (container) ===== */
 .fa-main {
   flex: 1 1 auto;
   min-height: 0;
   display: flex;
   flex-direction: column;
-  overflow: hidden;                        /* prevent page scroll here */
-  background: var(--bg-card);              /* white */
+  overflow: hidden;
+  background: var(--bg-base);
+  font-size: var(--font-size-xxs);
 }
 
-/* ===== The ONLY scroll container ===== */
+/* ===== One true scroller ===== */
 .fa-table {
-  flex: 1 1 auto;                          /* take remaining height above footer */
+  flex: 1 1 auto;
   min-height: 0;
-  overflow: auto;                           /* ← sole vertical scrollbar */
-  background: var(--bg-card);               /* white */
+  overflow: auto;
+  background: var(--bg-card);
   border-top: 1px solid var(--border-color);
   scrollbar-width: thin;
   scrollbar-color: rgba(12,18,32,.25) transparent;
+  font-size: var(--font-size-xxs);
 }
 .fa-table::-webkit-scrollbar { width: 6px; height: 6px; }
 .fa-table::-webkit-scrollbar-thumb { background: rgba(12,18,32,.25); border-radius: 999px; }
@@ -109,62 +185,93 @@
 .fa-thead,
 .fa-row {
   display: grid;
-  grid-template-columns: 1.2fr 0.9fr 0.7fr 0.8fr 1fr 1.2fr 0.4fr; /* matches JSX order */
+  grid-template-columns: 1.2fr 0.9fr 0.7fr 0.8fr 1fr 1.2fr 0.4fr;
   gap: 0;
   padding: 0;
   font-size: var(--font-size-xxs);
 }
 
-/* Sticky header inside the scroller */
+/* Sticky header */
 .fa-thead {
   position: sticky;
   top: 0;
   z-index: 1;
-  background: var(--bg-card);               /* white header */
+  background: var(--bg-card);
   color: var(--text-muted);
   font-weight: 600;
   border-bottom: 1px solid var(--border-color);
 }
-.fa-thead > div { padding: var(--space-1) var(--space-2); }
+.fa-thead > div { padding: var(--space-1) var(--space-2); font-size: var(--font-size-xxs); }
 
-/* Body list wrapper */
-.fa-tbody { background: var(--bg-card); }   /* white */
+/* Body wrapper */
+.fa-tbody { background: var(--bg-card); font-size: var(--font-size-xxs); }
 
 /* Rows */
 .fa-row {
   align-items: center;
   border-bottom: 1px solid var(--border-color);
-  background: var(--bg-card);               /* white rows */
+  background: var(--bg-card);
+  transition: background var(--transition-fast);
+  font-size: var(--font-size-xxs);
 }
-.fa-row > div { padding: var(--space-1) var(--space-2); }
+.fa-row:hover { background: var(--bg-hover); }
+.fa-row > div { padding: var(--space-1) var(--space-2); font-size: var(--font-size-xxs); }
 .fa-row.is-saving { opacity: .6; }
 
-/* Empty states */
+/* Empty & skeleton */
 .fa-empty {
   padding: var(--space-3);
   color: var(--text-muted);
   text-align: center;
+  font-size: var(--font-size-xxs);
 }
+.fa-skeleton-row {
+  height: 12px;
+  margin: 8px auto;
+  width: min(660px, 80%);
+  border-radius: var(--radius);
+  background: linear-gradient(90deg,
+    color-mix(in oklab, var(--bg-card-2) 85%, transparent) 25%,
+    color-mix(in oklab, var(--bg-hover) 85%, transparent) 37%,
+    color-mix(in oklab, var(--bg-card-2) 85%, transparent) 63%);
+  background-size: 200% 100%;
+  animation: faShimmer 1.2s infinite linear;
+}
+.fa-skeleton-row.short { width: min(420px, 60%); }
+@keyframes faShimmer { 0% { background-position: -200% 0; } 100% { background-position: 200% 0; } }
 
 /* Status select with light washes */
 .fa-status {
   border: 1px solid var(--border-color);
   border-radius: var(--radius);
   padding: var(--space-1) var(--space-2);
-  font-size: var(--font-size-xxs);
-  background: var(--bg-card);               /* white */
+  background: var(--bg-card-2);
   color: var(--text-primary);
+  transition: border-color var(--transition-fast), background var(--transition-fast);
+  font-size: var(--font-size-xxs);
 }
-.fa-status[data-status="DONE"]         { background: color-mix(in oklab, var(--color-success) 12%, var(--bg-card) 88%); }
-.fa-status[data-status="IN PROGRESS"]  { background: color-mix(in oklab, var(--color-primary) 10%, var(--bg-card) 90%); }
-.fa-status[data-status="ON HOLD"]      { background: color-mix(in oklab, var(--color-warning) 14%, var(--bg-card) 86%); }
-.fa-status[data-status="ARCHIVED"]     { background: color-mix(in oklab, var(--text-muted) 14%, var(--bg-card) 86%); }
-.fa-status[data-status="NEW"]          { background: color-mix(in oklab, var(--color-cyan) 10%, var(--bg-card) 90%); }
+.fa-status:hover { border-color: var(--text-secondary); }
+.fa-status[data-status="DONE"]         { background: color-mix(in oklab, var(--color-success) 12%, var(--bg-card-2) 88%); }
+.fa-status[data-status="IN PROGRESS"]  { background: color-mix(in oklab, var(--color-primary) 12%, var(--bg-card-2) 88%); }
+.fa-status[data-status="ON HOLD"]      { background: color-mix(in oklab, var(--color-warning) 14%, var(--bg-card-2) 86%); }
+.fa-status[data-status="ARCHIVED"]     { background: color-mix(in oklab, var(--text-muted) 14%, var(--bg-card-2) 86%); }
+.fa-status[data-status="NEW"]          { background: color-mix(in oklab, var(--color-cyan) 10%, var(--bg-card-2) 90%); }
 
-/* Notes input in-row */
-.fa-notes { width: 100%; min-width: 12ch; }
+/* Notes input */
+.fa-notes {
+  width: 100%;
+  min-width: 12ch;
+  background: var(--bg-card-2);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  padding: var(--space-2);
+  color: var(--text-primary);
+  font-size: var(--font-size-xxs);
+}
+.fa-notes:hover { border-color: var(--text-secondary); }
+.fa-notes:focus { outline: none; border-color: var(--text-secondary); }
 
-/* ===== Footer (progress + load more) — always visible ===== */
+/* ===== Footer ===== */
 .fa-footer {
   flex: 0 0 auto;
   display: flex;
@@ -172,16 +279,15 @@
   justify-content: space-between;
   padding: var(--space-2) var(--space-1);
   color: var(--text-muted);
-  font-size: var(--font-size-xxs);
-  background: var(--bg-card);               /* white */
+  background: var(--bg-card);
   border-top: 1px solid var(--border-color);
+  font-size: var(--font-size-xxs);
 }
-
-/* Footer right-side button group (from JSX .fa-pages) */
 .fa-pages {
   display: inline-flex;
   align-items: center;
   gap: var(--space-2);
+  font-size: var(--font-size-xxs);
 }
 
 /* ===== Errors ===== */
@@ -200,13 +306,15 @@
   place-items: center;
   padding: var(--space-3);
   z-index: 10;
+  font-size: var(--font-size-xxs);
 }
 .fa-card {
   width: min(720px, 92vw);
-  background: var(--bg-card);               /* white */
+  background: var(--bg-card);
   border: 1px solid var(--border-color);
   border-radius: var(--radius);
   box-shadow: var(--shadow-surface);
+  font-size: var(--font-size-xxs);
 }
 .fa-card-head {
   display: flex;
@@ -214,13 +322,15 @@
   justify-content: space-between;
   padding: var(--space-2) var(--space-2);
   border-bottom: 1px solid var(--border-color);
+  font-size: var(--font-size-xxs);
 }
-.fa-card-title { font-weight: 600; color: var(--text-secondary); font-size: var(--font-size-xs); }
+.fa-card-title { font-weight: 600; color: var(--text-secondary); font-size: var(--font-size-xxs); }
 .fa-form {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: var(--space-2);
   padding: var(--space-3);
+  font-size: var(--font-size-xxs);
 }
 .fa-form label {
   display: grid;
@@ -228,35 +338,28 @@
   color: var(--text-secondary);
   font-size: var(--font-size-xxs);
 }
-.fa-notes-area { grid-column: 1 / -1; }
+.fa-notes-area { grid-column: 1 / -1; font-size: var(--font-size-xxs); }
 .fa-form-actions {
   grid-column: 1 / -1;
   display: flex;
   justify-content: flex-end;
   gap: var(--space-2);
+  font-size: var(--font-size-xxs);
 }
 
-/* ===== Health banners ===== */
+/* ===== Health banners (kept) ===== */
 .fa-health {
-  margin: 0 var(--space-1);
-  margin-bottom: var(--space-2);
+  margin: 0 var(--space-1) var(--space-2);
   padding: var(--space-2) var(--space-3);
   border-radius: var(--radius);
   border: 1px dashed var(--border-color);
   background: var(--bg-card);
   font-size: var(--font-size-xxs);
 }
-.fa-health-warn { color: var(--color-warning); }
-.fa-health-bad  { color: var(--color-warning); }
+.fa-health-warn { color: var(--color-warning); font-size: var(--font-size-xxs); }
+.fa-health-bad  { color: var(--color-warning); font-size: var(--font-size-xxs); }
 
-/* ===== Thin scrollbars (consistent with app) ===== */
-.fa-table {
-  scrollbar-width: thin;                     /* already set above; keep here for clarity */
-}
-.fa-table::-webkit-scrollbar { width: 6px; height: 6px; }
-.fa-table::-webkit-scrollbar-thumb { background: rgba(12,18,32,.25); border-radius: 999px; }
-
-/* ===== Responsive tweaks ===== */
+/* ===== Responsive ===== */
 @media (max-width: 900px) {
   .fa-actions { flex-wrap: wrap; }
   .fa-table { border-left: 0; border-right: 0; }

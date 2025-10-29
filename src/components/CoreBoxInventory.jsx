@@ -1,22 +1,26 @@
+// src/pages/CoreBoxInventory.jsx
 import React, { useEffect, useMemo, useRef, useState } from "react";
 import axios from "axios";
 import API_URL from "../config";
 import "../styles/CoreBoxInventory.css";
 
+/* =========================
+   Helpers & micro-components
+   ========================= */
 const pageSizes = [10, 25, 50, 100];
 
 function Badge({ children, tone = "neutral" }) {
   return <span className={`cbi-badge cbi-badge--${tone}`}>{children}</span>;
 }
 
-function IconBtn({ title, onClick, children, danger, disabled }) {
+function IconBtn({ title, onClick, children, danger, disabled, type = "button" }) {
   return (
     <button
       title={title}
       onClick={onClick}
       className={`cbi-iconbtn ${danger ? "cbi-iconbtn--danger" : ""}`}
       disabled={disabled}
-      type="button"
+      type={type}
     >
       {children}
     </button>
@@ -36,11 +40,13 @@ const emptyDraft = {
 };
 
 export default function CoreBoxInventory() {
+  // data
   const [rows, setRows] = useState([]);
   const [count, setCount] = useState(0);
 
   // filters
   const [q, setQ] = useState("");
+  const [debouncedQ, setDebouncedQ] = useState(""); // debounced search
   const [island, setIsland] = useState("");
   const [year, setYear] = useState("");
   const [complete, setComplete] = useState("");
@@ -57,28 +63,35 @@ export default function CoreBoxInventory() {
   const [years, setYears] = useState([]);
   const [islands, setIslands] = useState([]);
 
-  // create / edit / selection / history
+  // UI state
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
+
+  // create / edit
   const [showNew, setShowNew] = useState(false);
   const [draft, setDraft] = useState(emptyDraft);
   const [editingId, setEditingId] = useState(null);
   const [editDraft, setEditDraft] = useState(emptyDraft);
 
+  // selection / confirm / toast
   const [selected, setSelected] = useState(new Set());
   const allChecked = rows.length > 0 && rows.every(r => selected.has(r.id));
   const [confirming, setConfirming] = useState(null);
   const [toast, setToast] = useState(null);
   const toastTimer = useRef(null);
 
+  // history drawer
   const [historyOpen, setHistoryOpen] = useState(false);
   const [changes, setChanges] = useState([]);
   const [changesLoading, setChangesLoading] = useState(false);
 
+  // paging calc
   const totalPages = useMemo(
     () => Math.max(1, Math.ceil(count / pageSize)),
     [count, pageSize]
   );
 
-  // lock body scroll whenever a blocking UI is open
+  // lock body scroll when blocking UI open
   useEffect(() => {
     const lock = confirming || historyOpen;
     const prev = document.body.style.overflow;
@@ -86,7 +99,7 @@ export default function CoreBoxInventory() {
     return () => { document.body.style.overflow = prev || ""; };
   }, [confirming, historyOpen]);
 
-  // global ESC to close layers
+  // global ESC
   useEffect(() => {
     const onKey = (e) => {
       if (e.key === "Escape") {
@@ -100,6 +113,22 @@ export default function CoreBoxInventory() {
     return () => window.removeEventListener("keydown", onKey);
   }, [confirming, historyOpen, editingId, showNew]);
 
+  // keyboard shortcuts: Ctrl/Cmd+N (new), Ctrl/Cmd+S (CSV), Ctrl/Cmd+F (focus search)
+  const searchRef = useRef(null);
+  useEffect(() => {
+    const onHotkey = (e) => {
+      const k = e.key.toLowerCase();
+      const mod = e.ctrlKey || e.metaKey;
+      if (!mod) return;
+      if (k === "n") { e.preventDefault(); onNew(); }
+      if (k === "s") { e.preventDefault(); exportCSV(); }
+      if (k === "f") { e.preventDefault(); searchRef.current?.focus(); }
+    };
+    window.addEventListener("keydown", onHotkey);
+    return () => window.removeEventListener("keydown", onHotkey);
+  }, [rows, draft]);
+
+  // fetch options (islands / years)
   const fetchOptions = async () => {
     try {
       const [y, i] = await Promise.all([
@@ -114,9 +143,16 @@ export default function CoreBoxInventory() {
     }
   };
 
+  // debounce search
+  useEffect(() => {
+    const t = setTimeout(() => setDebouncedQ(q.trim()), 250);
+    return () => clearTimeout(t);
+  }, [q]);
+
+  // fetch table rows
   const fetchRows = async () => {
     const params = {
-      q: q || undefined,
+      q: debouncedQ || undefined,
       island: island || undefined,
       year: year || undefined,
       complete: complete || undefined,
@@ -128,6 +164,8 @@ export default function CoreBoxInventory() {
       page_size: pageSize,
     };
     try {
+      setLoading(true);
+      setError("");
       const res = await axios.get(`${API_URL}/api/core-boxes`, { params });
       setRows(res.data.rows || []);
       setCount(res.data.total || 0);
@@ -136,6 +174,9 @@ export default function CoreBoxInventory() {
       console.error("Failed to fetch core boxes", e);
       setRows([]);
       setCount(0);
+      setError(e.response?.data?.error || "Failed to load records.");
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -155,7 +196,7 @@ export default function CoreBoxInventory() {
   };
 
   useEffect(() => { fetchOptions(); }, []);
-  useEffect(() => { fetchRows(); /* eslint-disable-next-line */ }, [q, island, year, complete, keepOrDump, expiredOnly, sortBy, sortDir, page, pageSize]);
+  useEffect(() => { fetchRows(); /* eslint-disable-next-line */ }, [debouncedQ, island, year, complete, keepOrDump, expiredOnly, sortBy, sortDir, page, pageSize]);
   useEffect(() => { if (historyOpen) fetchChanges(); }, [historyOpen]);
 
   const toggleSort = (col) => {
@@ -164,11 +205,13 @@ export default function CoreBoxInventory() {
     setPage(1);
   };
 
+  const clearSort = () => { setSortBy("report_submission_date"); setSortDir("DESC"); setPage(1); };
+
   const resetFilters = () => {
     setQ(""); setIsland(""); setYear(""); setComplete(""); setKeepOrDump("");
     setExpiredOnly(false);
-    setSortBy("report_submission_date"); setSortDir("DESC");
-    setPage(1); setPageSize(25);
+    clearSort();
+    setPageSize(25);
   };
 
   const formatDate = (s) => {
@@ -283,6 +326,7 @@ export default function CoreBoxInventory() {
     toastTimer.current = setTimeout(() => setToast(null), 6000);
   }
 
+  // selection
   const toggleSelectAll = () => {
     if (allChecked) setSelected(new Set());
     else setSelected(new Set(rows.map(r => r.id)));
@@ -293,6 +337,7 @@ export default function CoreBoxInventory() {
     setSelected(n);
   };
 
+  // small inline input
   const EditableCell = ({ value, onChange, type="text", placeholder }) => (
     <input
       className="cbi-input cbi-input-inline"
@@ -304,15 +349,42 @@ export default function CoreBoxInventory() {
     />
   );
 
+  // export
+  const exportCSV = () => {
+    const header = [
+      "year","island","work_order","project","engineer",
+      "report_submission_date","storage_expiry_date","complete","keep_or_dump","status"
+    ];
+    const lines = rows.map(r => {
+      const expired = r.storage_expiry_date && new Date(r.storage_expiry_date) < new Date();
+      const status = expired ? "Expired" : "Active";
+      const vals = [
+        r.year||"", r.island||"", r.work_order||"", r.project||"", r.engineer||"",
+        r.report_submission_date||"", r.storage_expiry_date||"", r.complete||"", r.keep_or_dump||"", status
+      ];
+      return vals.map(x => `"${String(x).replace(/"/g,'""')}"`).join(",");
+    });
+    const csv = [header.join(","), ...lines].join("\n");
+    const url = URL.createObjectURL(new Blob([csv], { type: "text/csv" }));
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = `core-boxes_page${page}_${new Date().toISOString().slice(0,10)}.csv`;
+    a.click();
+    URL.revokeObjectURL(url);
+  };
+
   return (
     <div className={`cbi-wrap ${historyOpen ? "cbi-drawer-open" : ""}`}>
+      {/* Top bar */}
       <div className="cbi-topbar">
         <div className="cbi-filters">
           <input
+            ref={searchRef}
             className="cbi-input"
             placeholder="Search (WO / Project / Engineer)…"
             value={q}
             onChange={(e) => { setQ(e.target.value); setPage(1); }}
+            title="Find records (Ctrl/Cmd+F)"
           />
 
           <select className="cbi-select" value={island} onChange={(e) => { setIsland(e.target.value); setPage(1); }}>
@@ -354,12 +426,14 @@ export default function CoreBoxInventory() {
           <button className="cbi-btn" onClick={() => setHistoryOpen(v => !v)}>
             {historyOpen ? "Hide History" : "Show History"}
           </button>
-          <button className="cbi-btn" onClick={onNew}>+ New</button>
+          <button className="cbi-btn" onClick={onNew} title="New (Ctrl/Cmd+N)">+ New</button>
           <button className="cbi-btn cbi-btn--danger" onClick={bulkDelete} disabled={!selected.size}>
-            Delete Selected
+            Delete Selected {selected.size ? `(${selected.size})` : ""}
           </button>
 
-          <span className="cbi-count">{count} results</span>
+          <button className="cbi-btn" onClick={exportCSV} title="Export CSV (Ctrl/Cmd+S)">Export</button>
+
+          <span className="cbi-count">{loading ? "Loading…" : `${count} results`}</span>
           <select
             className="cbi-select"
             value={pageSize}
@@ -370,7 +444,7 @@ export default function CoreBoxInventory() {
         </div>
       </div>
 
-      {/* New row inline */}
+      {/* Inline create */}
       {showNew && (
         <div className="cbi-newrow">
           <input className="cbi-input" placeholder="Work Order *" value={draft.work_order} onChange={e=>setDraft({...draft, work_order:e.target.value})}/>
@@ -388,7 +462,7 @@ export default function CoreBoxInventory() {
             <option value="Keep">Keep</option>
             <option value="Dump">Dump</option>
             <option value="Save">Save</option>
-          </select> 
+          </select>
           <input className="cbi-input" placeholder="Island" value={draft.island} onChange={e=>setDraft({...draft, island:e.target.value})}/>
           <input className="cbi-input" placeholder="Year" value={draft.year} onChange={e=>setDraft({...draft, year:e.target.value})}/>
           <button className="cbi-btn" onClick={saveNew}>Save</button>
@@ -396,11 +470,15 @@ export default function CoreBoxInventory() {
         </div>
       )}
 
+      {/* Errors (non-blocking) */}
+      {!!error && <div className="cbi-inline-error">{error}</div>}
+
+      {/* Table */}
       <div className="cbi-table-wrap">
         <table className="cbi-table">
           <thead>
             <tr>
-              <th className="cbi-th">
+              <th className="cbi-th" aria-label="Select all">
                 <input type="checkbox" checked={allChecked} onChange={toggleSelectAll} />
               </th>
               <th onClick={() => toggleSort("year")} className="cbi-th">Year {sortBy === "year" ? (sortDir === "ASC" ? "▲" : "▼") : ""}</th>
@@ -413,7 +491,9 @@ export default function CoreBoxInventory() {
               <th className="cbi-th">Complete</th>
               <th className="cbi-th">Disposition</th>
               <th className="cbi-th">Status</th>
-              <th className="cbi-th">Actions</th>
+              <th className="cbi-th">
+                <button className="cbi-btn cbi-btn--ghost" onClick={clearSort} title="Clear sorting">Clear</button>
+              </th>
             </tr>
           </thead>
           <tbody>
@@ -428,6 +508,7 @@ export default function CoreBoxInventory() {
                       type="checkbox"
                       checked={selected.has(r.id)}
                       onChange={() => toggleRow(r.id)}
+                      aria-label={`Select row for ${r.work_order || "WO"}`}
                     />
                   </td>
 
@@ -454,7 +535,7 @@ export default function CoreBoxInventory() {
                   </td>
 
                   {/* WO */}
-                  <td className="cbi-mono">
+                  <td className="cbi-mono" title={r.work_order}>
                     {isEdit ? (
                       <EditableCell
                         value={editDraft.work_order}
@@ -476,7 +557,7 @@ export default function CoreBoxInventory() {
                   </td>
 
                   {/* Engineer */}
-                  <td>
+                  <td title={r.engineer}>
                     {isEdit ? (
                       <EditableCell
                         value={editDraft.engineer}
@@ -562,15 +643,21 @@ export default function CoreBoxInventory() {
                 </tr>
               );
             })}
-            {rows.length === 0 && (
+            {(!loading && rows.length === 0) && (
               <tr>
                 <td colSpan="12" className="cbi-empty">No results.</td>
+              </tr>
+            )}
+            {loading && (
+              <tr>
+                <td colSpan="12" className="cbi-loading">Loading…</td>
               </tr>
             )}
           </tbody>
         </table>
       </div>
 
+      {/* Pager */}
       <div className="cbi-pager">
         <button className="cbi-btn" onClick={() => setPage(1)} disabled={page === 1}>⏮</button>
         <button className="cbi-btn" onClick={() => setPage((p) => Math.max(1, p - 1))} disabled={page === 1}>◀</button>
@@ -579,7 +666,7 @@ export default function CoreBoxInventory() {
         <button className="cbi-btn" onClick={() => setPage(totalPages)} disabled={page === totalPages}>⏭</button>
       </div>
 
-      {/* Backdrop for history drawer (click to close) */}
+      {/* Backdrop for history drawer */}
       {historyOpen && <div className="cbi-backdrop" onClick={() => setHistoryOpen(false)} />}
 
       {/* Confirm delete modal */}

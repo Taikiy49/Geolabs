@@ -1,18 +1,18 @@
+/* src/styles/CoreBoxInventory.css */
 /* =========================================================
    CoreBoxInventory — Compact XS UI (App.css tokens only)
-   - XS typography, smaller paddings/heights
-   - One vertical scroller: .cbi-table-wrap
-   - Drawer-safe layout (doesn't push page wider)
+   - Single inner scroller (.cbi-table-wrap)
+   - Sticky header, drawer-safe layout
+   - Minimal heights/spacing for dense data
    ========================================================= */
 
 /* ---------- Container / page ---------- */
 .cbi-wrap{
-  /* derive xs base from your tokens */
   --fs-xs: var(--font-size-xxs);
   display:flex;
   flex-direction:column;
   height:100%;
-  min-height:0;                 /* allow inner scroller to shrink */
+  min-height:0;
   width:100%;
   margin:0 auto;
   color:var(--text-primary);
@@ -20,7 +20,7 @@
   line-height:1.3;
   position:relative;
   z-index:1;
-  overflow-x: clip;             /* never cause page-wide horiz overflow */
+  overflow-x: clip;
 }
 
 /* When drawer opens, keep table visible without pushing layout wider */
@@ -51,7 +51,7 @@
 }
 .cbi-count{ color:var(--text-muted); }
 
-/* ---------- Controls (inputs/selects) ---------- */
+/* ---------- Controls ---------- */
 .cbi-input,
 .cbi-select{
   background: var(--bg-card-2);
@@ -161,10 +161,20 @@
   margin-bottom: var(--space-3);
 }
 
+/* ---------- Inline error ---------- */
+.cbi-inline-error{
+  margin: var(--space-2) 0;
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--radius);
+  border: 1px solid var(--border-color);
+  color: var(--color-warning);
+  background: color-mix(in oklab, var(--color-warning) 12%, transparent);
+}
+
 /* ---------- Table scroller ---------- */
 .cbi-table-wrap{
-  flex:1 1 auto;              /* fill remaining vertical space */
-  min-height:0;               /* enable vertical scrolling */
+  flex:1 1 auto;
+  min-height:0;
   overflow-y: auto;
   overflow-x: hidden;
   border:1px solid var(--border-color);
@@ -174,9 +184,9 @@
   position:relative;
 }
 
-/* smooth scrollbars to match app */
+/* smooth scrollbars */
 .cbi-table-wrap{
-  scrollbar-width: thin;                                /* Firefox */
+  scrollbar-width: thin;
   scrollbar-color: rgba(255,255,255,0.35) transparent;
 }
 .cbi-table-wrap::-webkit-scrollbar{ width:8px; height:8px; }
@@ -193,9 +203,9 @@
 .cbi-table{
   width:100%;
   border-collapse:collapse;
-  table-layout: fixed;       /* stable widths in edit mode */
+  table-layout: fixed;
   font-size: var(--fs-xs);
-  min-width: 880px;          /* inner horizontal scroll safety */
+  min-width: 880px;
 }
 
 .cbi-th{
@@ -232,12 +242,18 @@ tr.cbi-editing td{
 /* Status / expired */
 .cbi-expired{ color: var(--color-warning); }
 
-/* Empty state */
+/* States */
 .cbi-empty{
   text-align:center;
   padding: var(--space-3);
   color: var(--text-muted);
   font-size: var(--fs-xs);
+}
+.cbi-loading{
+  text-align:center;
+  padding: var(--space-3);
+  color: var(--text-secondary);
+  font-weight:700;
 }
 
 /* ---------- Pager ---------- */

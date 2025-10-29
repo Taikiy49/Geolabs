@@ -1,5 +1,5 @@
 // src/components/Reports.jsx
-import React, { useEffect, useState, useCallback, useMemo } from "react";
+import React, { useEffect, useState, useCallback, useMemo, useRef } from "react";
 import axios from "axios";
 import {
   FaSearch,
@@ -37,6 +37,22 @@ const buildQuery = (arr, op = "AND") =>
 // UI helpers
 const stripTxt = (s = "") => String(s).replace(/\.txt$/i, "");
 const truncate = (s = "", n = 50) => (s.length > n ? s.slice(0, n) + "…" : s);
+
+// --- Quick-start content for empty state ---
+const SAMPLE_QUERIES = [
+  "boring holes",
+  'Mililani “bearing capacity”',
+  '"Kaluanui Ridge" 2021..2023',
+  'SOILS-LOG +("N= blow count")',
+  'H-PILE OR "SPT"',
+];
+
+const TIP_LINES = [
+  'Use quotes for exact phrases (e.g., "shear strength").',
+  "Use AND/OR to combine multiple phrases.",
+  "Project filter narrows to a single job/work order.",
+  "Peek shows text hits without opening the PDF.",
+];
 
 export default function Reports() {
   // Phrase builder state
@@ -131,7 +147,7 @@ export default function Reports() {
           return {
             ...r,
             s3_key: s3Key, // compatibility
-            s3Key,         // camelCase for UI
+            s3Key, // camelCase for UI
             displayName: cleanTitle(r.filename || s3Key || ""),
           };
         });
@@ -175,6 +191,23 @@ export default function Reports() {
 
     setTermInput("");
   }, [termInput, terms, logicOp, search]);
+
+  // Quick-add from sample suggestions
+  const addQuickTerm = useCallback(
+    (t) => {
+      if (!t) return;
+      if (!terms.includes(t)) {
+        const next = [...terms, t];
+        setTerms(next);
+        setPage(1);
+        search(buildQuery(next, logicOp));
+      } else {
+        setPage(1);
+        search(buildQuery(terms, logicOp));
+      }
+    },
+    [terms, logicOp, search]
+  );
 
   // Remove a phrase
   const removeTerm = useCallback(
@@ -294,8 +327,7 @@ export default function Reports() {
       const merged = (state.windows || []).concat(windows);
       const totalHits = data?.total_hits ?? state.totalHits ?? 0;
       const totalWindows = data?.total_windows ?? state.totalWindows ?? merged.length;
-      const nextOffset =
-        typeof data?.next_offset === "number" ? data.next_offset : null;
+      const nextOffset = typeof data?.next_offset === "number" ? data.next_offset : null;
 
       setPeekMap((m) => ({
         ...m,
@@ -358,6 +390,12 @@ export default function Reports() {
     return all.map((t) => `“${t}”`).join(` ${logicOp} `);
   }, [terms, termInput, logicOp]);
 
+  // Focus input on mount
+  const inputRef = useRef(null);
+  useEffect(() => {
+    inputRef.current?.focus();
+  }, []);
+
   return (
     <div className="reports-container">
       {/* Sticky controls */}
@@ -366,9 +404,10 @@ export default function Reports() {
         <div className="controls-left">
           <div className="term-row">
             <input
+              ref={inputRef}
               className="reports-input"
               value={termInput}
-              placeholder='Type a word or phrase…'
+              placeholder="Type a word or phrase…"
               onChange={(e) => setTermInput(e.target.value)}
               onKeyDown={onPhraseKeyDown}
               spellCheck={false}
@@ -490,18 +529,120 @@ export default function Reports() {
 
           <div className="reports-meta-right">
             {!loading && results.length > 0 && (
-              <span className="reports-total">
-                {total.toLocaleString()} results
-              </span>
+              <span className="reports-total">{total.toLocaleString()} results</span>
             )}
           </div>
         </div>
       )}
 
-      {/* Results */}
-      {loading && <div className="reports-loading">Searching…</div>}
+      {/* ---------- Empty state / Skeletons / No-results ---------- */}
+      {!loading && results.length === 0 && !qBuilt.trim() && (
+        <div className="reports-empty-hero">
+          <div className="reports-empty-hero-head">
+            <div className="reports-empty-hero-title">Find reports faster</div>
+            <div className="reports-empty-hero-sub">Build a query or try a suggestion below.</div>
+          </div>
+
+          <div className="reports-empty-quick">
+            {SAMPLE_QUERIES.map((q) => (
+              <button
+                key={q}
+                type="button"
+                className="reports-chip-btn"
+                onClick={() => addQuickTerm(q)}
+                title={`Search: ${q}`}
+              >
+                {q}
+              </button>
+            ))}
+          </div>
+
+          <ul className="reports-empty-tips">
+            {TIP_LINES.map((t, i) => (
+              <li key={i}>{t}</li>
+            ))}
+          </ul>
+
+          {/* Decorative skeleton grid so the page isn’t visually empty */}
+          <div className="reports-grid" role="list" aria-hidden="true">
+            {Array.from({ length: 6 }).map((_, i) => (
+              <div key={i} className="reports-card">
+                <div className="skeleton-row">
+                  <span className="skeleton-icon" />
+                  <span className="skeleton-title" />
+                </div>
+                <div className="skeleton-lines">
+                  <span className="skeleton-line" />
+                  <span className="skeleton-line short" />
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {loading && (
+        <div className="reports-grid" role="list" aria-busy="true">
+          {Array.from({ length: 8 }).map((_, i) => (
+            <div key={i} className="reports-card">
+              <div className="skeleton-row">
+                <span className="skeleton-icon" />
+                <span className="skeleton-title" />
+              </div>
+              <div className="skeleton-lines">
+                <span className="skeleton-line" />
+                <span className="skeleton-line" />
+                <span className="skeleton-line short" />
+              </div>
+            </div>
+          ))}
+        </div>
+      )}
+
       {!loading && results.length === 0 && qBuilt.trim() && (
-        <div className="reports-empty">No results.</div>
+        <div className="reports-empty results-empty">
+          <div className="results-empty-title">No matches found</div>
+          <div className="results-empty-sub">Try removing a term, switching OR, or clearing filters.</div>
+
+          <div className="results-empty-actions">
+            <button
+              className="reports-btn"
+              type="button"
+              onClick={() => {
+                setTerms([]);
+                setTermInput("");
+                setResults([]);
+                setTotal(0);
+                setPages(1);
+              }}
+              title="Clear all terms"
+            >
+              Clear terms
+            </button>
+            <button
+              className="reports-btn"
+              type="button"
+              onClick={() => setLogicOp((op) => (op === "AND" ? "OR" : "AND"))}
+              title="Toggle AND/OR"
+            >
+              Switch to {logicOp === "AND" ? "OR" : "AND"}
+            </button>
+          </div>
+
+          <div className="reports-empty-quick">
+            {SAMPLE_QUERIES.slice(0, 4).map((q) => (
+              <button
+                key={q}
+                type="button"
+                className="reports-chip-btn"
+                onClick={() => addQuickTerm(q)}
+                title={`Search: ${q}`}
+              >
+                {q}
+              </button>
+            ))}
+          </div>
+        </div>
       )}
 
       {/* Results list */}
@@ -618,7 +759,6 @@ export default function Reports() {
         </div>
       </div>
 
-      
       {/* Modal viewer */}
       {modalOpen && (
         <div className="reports-modal" onClick={closeModal}>

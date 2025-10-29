@@ -1,6 +1,7 @@
 // src/pages/FileAudit.jsx
-import React, { useEffect, useMemo, useRef, useState } from "react";
+import React, { useEffect, useMemo, useRef, useState, useCallback } from "react";
 import "../styles/FileAudit.css";
+import { FaSearch, FaTimes, FaUpload, FaPlus, FaDownload } from "react-icons/fa";
 
 const API = (import.meta?.env?.VITE_API_BASE || "").replace(/\/+$/, "");
 const STATUS_OPTIONS = ["NEW", "IN PROGRESS", "ON HOLD", "DONE", "ARCHIVED"];
@@ -44,6 +45,7 @@ export default function FileAudit() {
   const mainRef = useRef(null);
 
   const canLoadMore = useMemo(() => rows.length < total, [rows.length, total]);
+  const debouncing = q !== dq;
 
   async function fetchRows({ append = false } = {}) {
     if (busy) return;
@@ -68,41 +70,25 @@ export default function FileAudit() {
       const items = data.items || [];
       setRows((prev) => (append ? [...prev, ...items] : items));
     } catch (e) {
-      if (!append) {
-        setRows([]);
-        setTotal(0);
-      }
+      if (!append) { setRows([]); setTotal(0); }
       setError(String(e.message || e));
     } finally {
       setBusy(false);
     }
   }
 
-  // Load on filters/page changes
-  useEffect(() => {
-    // whenever q/status/pageSize changes, reset to page 1
-    setPage(1);
-  }, [dq, status, pageSize]);
+  useEffect(() => { setPage(1); }, [dq, status, pageSize]);
+  useEffect(() => { fetchRows({ append: page > 1 }); /* eslint-disable-line */ }, [dq, status, page, pageSize]);
 
-  useEffect(() => {
-    fetchRows({ append: page > 1 });
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [dq, status, page, pageSize]);
-
-  // Infinite scroll handler
   useEffect(() => {
     const el = mainRef.current;
     if (!el) return;
-
     function onScroll() {
       if (busy || !canLoadMore) return;
-      const threshold = 3 * 24; // ~72px using small rows (pure px avoided elsewhere)
+      const threshold = 72;
       const nearBottom = el.scrollHeight - el.scrollTop - el.clientHeight < threshold;
-      if (nearBottom) {
-        setPage((p) => p + 1);
-      }
+      if (nearBottom) setPage((p) => p + 1);
     }
-
     el.addEventListener("scroll", onScroll, { passive: true });
     return () => el.removeEventListener("scroll", onScroll);
   }, [busy, canLoadMore]);
@@ -121,7 +107,7 @@ export default function FileAudit() {
       setRows((prev) => prev.map((r) => (r.id === id ? { ...r, ...data, _saving: false } : r)));
     } catch (e) {
       setError(String(e.message || e));
-      fetchRows(); // revert to server truth
+      fetchRows();
     }
   }
 
@@ -133,7 +119,6 @@ export default function FileAudit() {
       const res = await fetch(url, { method: "DELETE" });
       const data = await res.json().catch(() => ({}));
       if (!res.ok) throw new Error(data?.error || "Delete failed");
-      // Reload page 1 to avoid empty tail glitches
       setPage(1);
     } catch (e) {
       setError(String(e.message || e));
@@ -155,7 +140,7 @@ export default function FileAudit() {
       if (!res.ok) throw new Error(data?.error || "Create failed");
       setAdding(false);
       setForm({ file_folder: "", location: "", engr: "", status: "NEW", notes: "" });
-      setPage(1); // refresh from top
+      setPage(1);
     } catch (e2) {
       setError(String(e2.message || e2));
     } finally {
@@ -195,22 +180,35 @@ export default function FileAudit() {
     await addRow(fakeEvent);
   }
 
+  const clearSearch = useCallback(() => setQ(""), []);
+
   return (
     <div className="fa-wrap">
-      {/* Sticky toolbar — full width, no side padding */}
       <header className="fa-header">
         <div className="fa-actions">
-          <input
-            className="fa-search"
-            placeholder="Search file folder, location, engr…"
-            value={q}
-            onChange={(e) => { setQ(e.target.value); }}
-          />
+          <div className={`fa-searchwrap ${debouncing ? "is-waiting" : ""}`}>
+            <FaSearch className="fa-search-icon" aria-hidden="true" />
+            <input
+              className="fa-search"
+              placeholder="Search file folder, location, engr…"
+              value={q}
+              onChange={(e) => { setQ(e.target.value); }}
+              aria-label="Search"
+            />
+            {q && (
+              <button className="fa-clear" title="Clear" onClick={clearSearch} aria-label="Clear search">
+                <FaTimes />
+              </button>
+            )}
+            {debouncing && <span className="fa-wait-dot" aria-hidden="true" />}
+          </div>
+
           <select
             className="fa-filter"
             value={status}
             onChange={(e) => { setStatus(e.target.value); }}
             title="Filter by status"
+            aria-label="Filter by status"
           >
             <option value="">All Statuses</option>
             {STATUS_OPTIONS.map((s) => (
@@ -218,24 +216,39 @@ export default function FileAudit() {
             ))}
           </select>
 
-          <label className="fa-label">Rows:</label>
+          <label className="fa-label" htmlFor="fa-rows">Rows:</label>
           <select
+            id="fa-rows"
             className="fa-filter"
             value={pageSize}
             onChange={(e) => setPageSize(Number(e.target.value))}
             title="Rows per page"
+            aria-label="Rows per page"
           >
             {PAGE_SIZE_OPTIONS.map((n) => (
               <option key={n} value={n}>{n}</option>
             ))}
           </select>
 
-          <button className="fa-btn" onClick={() => setAdding(true)}>+ Add</button>
-          <button className="fa-btn" type="button" onClick={addDemoRow}>+ Demo Row</button>
-          <a className="fa-btn" href={apiUrl("/api/file-audit/export")} target="_blank" rel="noreferrer">Export CSV</a>
+          <button className="fa-btn" onClick={() => setAdding(true)} title="Add" aria-label="Add row">
+            <FaPlus /> <span className="fa-btn-text">Add</span>
+          </button>
+          <button className="fa-btn" type="button" onClick={addDemoRow} title="Add demo" aria-label="Add demo row">
+            <FaPlus /> <span className="fa-btn-text">Demo</span>
+          </button>
+          <a
+            className="fa-btn"
+            href={apiUrl("/api/file-audit/export")}
+            target="_blank"
+            rel="noreferrer"
+            title="Export CSV"
+            aria-label="Export CSV"
+          >
+            <FaDownload /> <span className="fa-btn-text">Export</span>
+          </a>
 
-          <label className={`fa-btn fa-upload-btn${importBusy ? " is-busy" : ""}`}>
-            {importBusy ? "Importing…" : "Import CSV"}
+          <label className={`fa-btn fa-upload-btn${importBusy ? " is-busy" : ""}`} title="Import CSV" aria-label="Import CSV">
+            <FaUpload /> <span className="fa-btn-text">{importBusy ? "Importing…" : "Import"}</span>
             <input
               ref={importRef}
               type="file"
@@ -248,7 +261,6 @@ export default function FileAudit() {
         </div>
       </header>
 
-      {/* Scrollable main area (infinite scroll) */}
       <main className="fa-main" ref={mainRef}>
         {error && <div className="fa-error">{error}</div>}
 
@@ -264,7 +276,13 @@ export default function FileAudit() {
           </div>
 
           <div className="fa-tbody">
-            {busy && rows.length === 0 && <div className="fa-empty">Loading…</div>}
+            {busy && rows.length === 0 && (
+              <div className="fa-empty">
+                <div className="fa-skeleton-row" />
+                <div className="fa-skeleton-row" />
+                <div className="fa-skeleton-row short" />
+              </div>
+            )}
             {!busy && rows.length === 0 && <div className="fa-empty">No records</div>}
 
             {rows.map((r) => (
@@ -278,6 +296,8 @@ export default function FileAudit() {
                     data-status={r.status || "NEW"}
                     value={r.status || "NEW"}
                     onChange={(e) => updateRow(r.id, { status: e.target.value })}
+                    title="Update status"
+                    aria-label="Update status"
                   >
                     {STATUS_OPTIONS.map((s) => (
                       <option key={s} value={s}>{s}</option>
@@ -291,10 +311,14 @@ export default function FileAudit() {
                     defaultValue={r.notes || ""}
                     placeholder="Add note…"
                     onBlur={(e) => e.target.value !== (r.notes || "") && updateRow(r.id, { notes: e.target.value })}
+                    title="Click to edit note"
+                    aria-label="Edit notes"
                   />
                 </div>
                 <div>
-                  <button className="fa-link danger" onClick={() => deleteRow(r.id)}>Delete</button>
+                  <button className="fa-link danger" onClick={() => deleteRow(r.id)} title="Delete row" aria-label="Delete row">
+                    Delete
+                  </button>
                 </div>
               </div>
             ))}
@@ -309,6 +333,7 @@ export default function FileAudit() {
               onClick={() => setPage((p) => p + 1)}
               disabled={!canLoadMore || busy}
               title="Load more"
+              aria-label="Load more"
             >
               {busy ? "Loading…" : (canLoadMore ? "Load more" : "All loaded")}
             </button>

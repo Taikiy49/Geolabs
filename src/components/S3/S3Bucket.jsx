@@ -1,3 +1,4 @@
+// src/pages/S3Bucket.jsx (XS compact, token-only)
 import React, { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import axios from "axios";
 import API_URL from "../../config";
@@ -63,7 +64,7 @@ export default function S3Bucket() {
   const toast = (msg) => {
     setToastMsg(msg);
     if (toastTimer.current) clearTimeout(toastTimer.current);
-    toastTimer.current = setTimeout(() => setToastMsg(null), 2500);
+    toastTimer.current = setTimeout(() => setToastMsg(null), 2400);
   };
 
   // Search (two modes)
@@ -133,13 +134,8 @@ export default function S3Bucket() {
     }
   }, []);
 
-  useEffect(() => {
-    fetchFiles();
-  }, [fetchFiles]);
-
-  useEffect(() => {
-    if (historyOpen) fetchHistory();
-  }, [historyOpen, fetchHistory]);
+  useEffect(() => { fetchFiles(); }, [fetchFiles]);
+  useEffect(() => { if (historyOpen) fetchHistory(); }, [historyOpen, fetchHistory]);
 
   // Viewer computed
   const folders = useMemo(() => {
@@ -208,9 +204,7 @@ export default function S3Bucket() {
   }, [queue]);
 
   const enqueueFiles = (fileList) => {
-    const pdfs = Array.from(fileList).filter((f) =>
-      f.name.toLowerCase().endsWith(".pdf")
-    );
+    const pdfs = Array.from(fileList).filter((f) => f.name.toLowerCase().endsWith(".pdf"));
     if (!pdfs.length) return;
     setQueue((q) => [
       ...q,
@@ -261,8 +255,7 @@ export default function S3Bucket() {
     }
   };
 
-  const clearQueueFinished = () =>
-    setQueue((q) => q.filter((x) => x.status !== "done"));
+  const clearQueueFinished = () => setQueue((q) => q.filter((x) => x.status !== "done"));
 
   // Per-file actions
   const deleteKey = async (key) => {
@@ -320,10 +313,7 @@ export default function S3Bucket() {
     } catch {}
   };
   const bulkCopy = async () => {
-    const urls = files
-      .filter((f) => selected.has(f.Key))
-      .map((f) => f.url)
-      .join("\n");
+    const urls = files.filter((f) => selected.has(f.Key)).map((f) => f.url).join("\n");
     if (!urls) return;
     try {
       await navigator.clipboard.writeText(urls);
@@ -332,9 +322,7 @@ export default function S3Bucket() {
   };
   const bulkOpen = () => {
     const sels = files.filter((f) => selected.has(f.Key)).slice(0, 10);
-    sels.forEach((f) =>
-      window.open(f.url, "_blank", "noopener,noreferrer")
-    );
+    sels.forEach((f) => window.open(f.url, "_blank", "noopener,noreferrer"));
   };
 
   const openPreview = (f) => {
@@ -355,7 +343,7 @@ export default function S3Bucket() {
         file: f.Key.split("/").pop(),
         s3_key: f.Key,
         url: f.url,
-        preview: "", // name/key search doesn't include preview
+        preview: "",
       }));
       setSearchResults(items);
     } catch (e) {
@@ -378,7 +366,7 @@ export default function S3Bucket() {
         file: f.Key.split("/").pop(),
         s3_key: f.Key,
         url: f.url,
-        preview: f.preview || "", // backend may send highlighted snippet
+        preview: f.preview || "",
       }));
       setSearchResults(items);
     } catch (e) {
@@ -390,118 +378,52 @@ export default function S3Bucket() {
   }, [searchQ, searchLimit]);
 
   const runSearch = useCallback(() => {
-    if (!searchQ.trim()) {
-      setSearchResults([]);
-      return;
-    }
+    if (!searchQ.trim()) { setSearchResults([]); return; }
     if (searchTab === "key") return runKeySearch();
     return runContentSearch();
   }, [searchQ, searchTab, runKeySearch, runContentSearch]);
 
   return (
-    <div className="s3b-page" style={{ padding: "var(--space-4)" }}>
+    <div className="s3b-page">
       {/* Tabs */}
-      <div
-        className="s3b-tabs"
-        style={{
-          display: "flex",
-          gap: "var(--space-2)",
-          marginBottom: "var(--space-3)",
-        }}
-      >
-        <button
-          className="btn btn-secondary"
-          onClick={() => setTab("browse")}
-          aria-pressed={tab === "browse"}
-        >
-          Browse
-        </button>
-        <button
-          className="btn btn-secondary"
-          onClick={() => setTab("upload")}
-          aria-pressed={tab === "upload"}
-        >
-          Upload
-        </button>
-        <button
-          className="btn btn-secondary"
-          onClick={() => setTab("search")}
-          aria-pressed={tab === "search"}
-        >
-          Search
-        </button>
-        <div style={{ marginLeft: "auto", display: "flex", gap: "var(--space-2)" }}>
-          <button className="btn btn-secondary" onClick={fetchFiles} disabled={loadingList}>
-            {loadingList ? "Loading…" : "Refresh"}
-          </button>
-          <button className="btn btn-secondary" onClick={() => setHistoryOpen((v) => !v)}>
-            {historyOpen ? "Hide History" : "Show History"}
-          </button>
+      <div className="s3b-tabs">
+        <button className="btn" onClick={() => setTab("browse")} aria-pressed={tab === "browse"}>Browse</button>
+        <button className="btn" onClick={() => setTab("upload")} aria-pressed={tab === "upload"}>Upload</button>
+        <button className="btn" onClick={() => setTab("search")} aria-pressed={tab === "search"}>Search</button>
+        <div className="s3b-tabs-right">
+          <button className="btn" onClick={fetchFiles} disabled={loadingList}>{loadingList ? "Loading…" : "Refresh"}</button>
+          <button className="btn" onClick={() => setHistoryOpen((v) => !v)}>{historyOpen ? "Hide History" : "Show History"}</button>
         </div>
       </div>
 
       {/* Upload tab */}
       {tab === "upload" && (
-        <div className="s3a-topbar" style={{ marginBottom: "var(--space-3)" }}>
+        <div className="s3a-topbar">
           <div className="s3a-left">
             <div className="s3a-row">
               <label className="s3a-label">Subfolder</label>
-              <input
-                className="s3a-input"
-                placeholder="optional/prefix"
-                value={prefix}
-                onChange={(e) => setPrefix(e.target.value)}
-              />
+              <input className="s3a-input" placeholder="optional/prefix" value={prefix} onChange={(e) => setPrefix(e.target.value)} />
             </div>
 
-            <div
-              className="s3a-dropzone"
-              onDragOver={(e) => e.preventDefault()}
-              onDrop={(e) => {
-                e.preventDefault();
-                enqueueFiles(e.dataTransfer.files);
-              }}
-              onClick={() => document.getElementById("s3a-fileinput").click()}
-            >
-              <input
-                id="s3a-fileinput"
-                type="file"
-                accept=".pdf"
-                multiple
-                style={{ display: "none" }}
-                onChange={(e) => enqueueFiles(e.target.files)}
-              />
+            <div className="s3a-dropzone" onDragOver={(e) => e.preventDefault()} onDrop={(e) => { e.preventDefault(); enqueueFiles(e.dataTransfer.files); }} onClick={() => document.getElementById("s3a-fileinput").click()}>
+              <input id="s3a-fileinput" type="file" accept=".pdf" multiple style={{ display: "none" }} onChange={(e) => enqueueFiles(e.target.files)} />
               {queue.length ? (
                 <div className="s3a-queue">
                   {queue.map((q, i) => (
                     <div key={i} className={`s3a-chip ${q.status}`}>
                       <span className="s3a-chip-name">{q.file.name}</span>
-                      <span className="s3a-chip-bar">
-                        <span
-                          className="s3a-chip-fill"
-                          style={{ width: `${q.progress || 0}%` }}
-                        />
-                      </span>
+                      <span className="s3a-chip-bar"><span className="s3a-chip-fill" style={{ width: `${q.progress || 0}%` }} /></span>
                       <span className="s3a-chip-status">{q.status}</span>
                     </div>
                   ))}
-                  <button
-                    className="s3a-btn s3a-btn-ghost"
-                    onClick={clearQueueFinished}
-                    disabled={!queue.some((x) => x.status === "done")}
-                  >
-                    Clear finished
-                  </button>
+                  <button className="s3a-btn s3a-btn-ghost" onClick={clearQueueFinished} disabled={!queue.some((x) => x.status === "done")}>Clear finished</button>
                 </div>
               ) : (
-                <span className="s3a-drop-hint">
-                  Click or drag & drop <b>.pdf</b> files to upload
-                </span>
+                <span className="s3a-drop-hint">Click or drag & drop <b>.pdf</b> files to upload</span>
               )}
             </div>
           </div>
-
-          <div className="s3a-right">{/* spacer */}</div>
+          <div className="s3a-right" />
         </div>
       )}
 
@@ -512,99 +434,37 @@ export default function S3Bucket() {
             <div className="s3-viewer-filters">
               <div className="s3-viewer-search">
                 <span className="s3-viewer-search-icon">🔎</span>
-                <input
-                  className="s3-viewer-input"
-                  placeholder="Search name / key / folder…"
-                  value={q}
-                  onChange={(e) => {
-                    setQ(e.target.value);
-                    setPage(1);
-                  }}
-                />
+                <input className="s3-viewer-input" placeholder="Search name / key / folder…" value={q} onChange={(e) => { setQ(e.target.value); setPage(1); }} />
               </div>
 
-              <select
-                className="s3-viewer-select"
-                value={folder}
-                onChange={(e) => {
-                  setFolder(e.target.value);
-                  setPage(1);
-                }}
-              >
+              <select className="s3-viewer-select" value={folder} onChange={(e) => { setFolder(e.target.value); setPage(1); }}>
                 <option value="">Folder: All</option>
-                {folders.map((f) => (
-                  <option key={f} value={f}>
-                    {f}
-                  </option>
-                ))}
+                {folders.map((f) => (<option key={f} value={f}>{f}</option>))}
               </select>
 
-              <select
-                className="s3-viewer-select"
-                value={ext}
-                onChange={(e) => {
-                  setExt(e.target.value);
-                  setPage(1);
-                }}
-              >
+              <select className="s3-viewer-select" value={ext} onChange={(e) => { setExt(e.target.value); setPage(1); }}>
                 <option value="">Type: All</option>
-                {extensions.map((e) => (
-                  <option key={e} value={e}>
-                    {e.toUpperCase()}
-                  </option>
-                ))}
+                {extensions.map((e) => (<option key={e} value={e}>{e.toUpperCase()}</option>))}
               </select>
 
-              <button
-                className="s3-viewer-btn"
-                onClick={() => {
-                  setQ("");
-                  setFolder("");
-                  setExt("");
-                  setSortBy("name");
-                  setSortDir("ASC");
-                  setPage(1);
-                  setPageSize(25);
-                }}
-              >
-                Reset
-              </button>
+              <button className="s3-viewer-btn" onClick={() => { setQ(""); setFolder(""); setExt(""); setSortBy("name"); setSortDir("ASC"); setPage(1); setPageSize(25); }}>Reset</button>
             </div>
 
             <div className="s3-viewer-meta">
               <span>{total} files</span>
-              <select
-                className="s3-viewer-select"
-                value={pageSize}
-                onChange={(e) => {
-                  setPageSize(Number(e.target.value));
-                  setPage(1);
-                }}
-              >
-                {[10, 25, 50, 100].map((n) => (
-                  <option key={n} value={n}>
-                    {n}/page
-                  </option>
-                ))}
+              <select className="s3-viewer-select" value={pageSize} onChange={(e) => { setPageSize(Number(e.target.value)); setPage(1); }}>
+                {[10, 25, 50, 100].map((n) => (<option key={n} value={n}>{n}/page</option>))}
               </select>
             </div>
           </div>
 
           <div className="s3-viewer-actions">
             <label className="s3-viewer-checkrow">
-              <input
-                type="checkbox"
-                checked={paged.every((f) => selected.has(f.Key)) && paged.length > 0}
-                onChange={(e) => selectAllOnPage(e.target.checked)}
-              />
+              <input type="checkbox" checked={paged.every((f) => selected.has(f.Key)) && paged.length > 0} onChange={(e) => selectAllOnPage(e.target.checked)} />
               <span>Select page</span>
             </label>
-            <button className="s3-viewer-btn" onClick={bulkCopy} disabled={selected.size === 0}>
-              Copy URLs
-            </button>
-            <button className="s3-viewer-btn" onClick={bulkOpen} disabled={selected.size === 0}>
-              Open (max 10)
-            </button>
+            <button className="s3-viewer-btn" onClick={bulkCopy} disabled={selected.size === 0}>Copy URLs</button>
+            <button className="s3-viewer-btn" onClick={bulkOpen} disabled={selected.size === 0}>Open (max 10)</button>
           </div>
 
           <div className="s3-viewer-table-wrap">
@@ -619,111 +479,28 @@ export default function S3Bucket() {
                 <thead>
                   <tr>
                     <th className="s3-viewer-th s3-viewer-th-check"></th>
-                    <th
-                      className="s3-viewer-th"
-                      onClick={() => {
-                        if (sortBy === "name") setSortDir((d) => (d === "ASC" ? "DESC" : "ASC"));
-                        else {
-                          setSortBy("name");
-                          setSortDir("ASC");
-                        }
-                      }}
-                    >
-                      Name {sortBy === "name" ? (sortDir === "ASC" ? "▲" : "▼") : ""}
-                    </th>
-                    <th
-                      className="s3-viewer-th"
-                      onClick={() => {
-                        if (sortBy === "folder") setSortDir((d) => (d === "ASC" ? "DESC" : "ASC"));
-                        else {
-                          setSortBy("folder");
-                          setSortDir("ASC");
-                        }
-                      }}
-                    >
-                      Folder {sortBy === "folder" ? (sortDir === "ASC" ? "▲" : "▼") : ""}
-                    </th>
-                    <th
-                      className="s3-viewer-th"
-                      onClick={() => {
-                        if (sortBy === "ext") setSortDir((d) => (d === "ASC" ? "DESC" : "ASC"));
-                        else {
-                          setSortBy("ext");
-                          setSortDir("ASC");
-                        }
-                      }}
-                    >
-                      Type {sortBy === "ext" ? (sortDir === "ASC" ? "▲" : "▼") : ""}
-                    </th>
+                    <th className="s3-viewer-th" onClick={() => { if (sortBy === "name") setSortDir((d) => (d === "ASC" ? "DESC" : "ASC")); else { setSortBy("name"); setSortDir("ASC"); } }}>Name {sortBy === "name" ? (sortDir === "ASC" ? "▲" : "▼") : ""}</th>
+                    <th className="s3-viewer-th" onClick={() => { if (sortBy === "folder") setSortDir((d) => (d === "ASC" ? "DESC" : "ASC")); else { setSortBy("folder"); setSortDir("ASC"); } }}>Folder {sortBy === "folder" ? (sortDir === "ASC" ? "▲" : "▼") : ""}</th>
+                    <th className="s3-viewer-th" onClick={() => { if (sortBy === "ext") setSortDir((d) => (d === "ASC" ? "DESC" : "ASC")); else { setSortBy("ext"); setSortDir("ASC"); } }}>Type {sortBy === "ext" ? (sortDir === "ASC" ? "▲" : "▼") : ""}</th>
                     <th className="s3-viewer-th s3-viewer-th-actions">Actions</th>
                   </tr>
                 </thead>
                 <tbody>
                   {paged.map((f) => (
                     <tr key={f.Key}>
-                      <td className="s3-viewer-td-check">
-                        <input
-                          type="checkbox"
-                          checked={selected.has(f.Key)}
-                          onChange={() => toggleSelect(f.Key)}
-                        />
-                      </td>
+                      <td className="s3-viewer-td-check"><input type="checkbox" checked={selected.has(f.Key)} onChange={() => toggleSelect(f.Key)} /></td>
                       <td title={f.Key}>
-                        <div className="s3-viewer-name">
-                          <span className="s3-viewer-ic">📁</span>
-                          <span className="s3-viewer-ellipsis">{f.name}</span>
-                        </div>
+                        <div className="s3-viewer-name"><span className="s3-viewer-ic">📁</span><span className="s3-viewer-ellipsis">{f.name}</span></div>
                       </td>
-                      <td className="s3-viewer-ellipsis" title={f.folder}>
-                        {f.folder}
-                      </td>
+                      <td className="s3-viewer-ellipsis" title={f.folder}>{f.folder}</td>
                       <td className="s3-viewer-type">{f.ext ? f.ext.toUpperCase() : "-"}</td>
                       <td className="s3-viewer-actions-cell">
-                        <button
-                          className="s3-viewer-iconbtn"
-                          title="Preview"
-                          onClick={() => openPreview(f)}
-                        >
-                          👁
-                        </button>
-                        <a
-                          className="s3-viewer-iconbtn"
-                          href={f.url}
-                          target="_blank"
-                          rel="noreferrer"
-                          title="Open"
-                        >
-                          ↗
-                        </a>
-                        <a
-                          className="s3-viewer-iconbtn"
-                          href={f.url}
-                          download={f.name}
-                          title="Download"
-                        >
-                          ⤓
-                        </a>
-                        <button
-                          className="s3-viewer-iconbtn"
-                          title="Copy URL"
-                          onClick={() => copyUrl(f.url)}
-                        >
-                          📋
-                        </button>
-                        <button
-                          className="s3-viewer-iconbtn"
-                          title="Move/Rename"
-                          onClick={() => moveKey(f.Key)}
-                        >
-                          ✎
-                        </button>
-                        <button
-                          className="s3-viewer-iconbtn"
-                          title="Delete"
-                          onClick={() => deleteKey(f.Key)}
-                        >
-                          🗑
-                        </button>
+                        <button className="s3-viewer-iconbtn" title="Preview" onClick={() => openPreview(f)}>👁</button>
+                        <a className="s3-viewer-iconbtn" href={f.url} target="_blank" rel="noreferrer" title="Open">↗</a>
+                        <a className="s3-viewer-iconbtn" href={f.url} download={f.name} title="Download">⤓</a>
+                        <button className="s3-viewer-iconbtn" title="Copy URL" onClick={() => copyUrl(f.url)}>📋</button>
+                        <button className="s3-viewer-iconbtn" title="Move/Rename" onClick={() => moveKey(f.Key)}>✎</button>
+                        <button className="s3-viewer-iconbtn" title="Delete" onClick={() => deleteKey(f.Key)}>🗑</button>
                       </td>
                     </tr>
                   ))}
@@ -733,33 +510,11 @@ export default function S3Bucket() {
           </div>
 
           <div className="s3-viewer-pager">
-            <button className="s3-viewer-btn" onClick={() => setPage(1)} disabled={page === 1}>
-              ⏮
-            </button>
-            <button
-              className="s3-viewer-btn"
-              onClick={() => setPage((p) => Math.max(1, p - 1))}
-              disabled={page === 1}
-            >
-              ◀
-            </button>
-            <span className="s3-viewer-page">
-              {page} / {totalPages}
-            </span>
-            <button
-              className="s3-viewer-btn"
-              onClick={() => setPage((p) => Math.min(totalPages, p + 1))}
-              disabled={page === totalPages}
-            >
-              ▶
-            </button>
-            <button
-              className="s3-viewer-btn"
-              onClick={() => setPage(totalPages)}
-              disabled={page === totalPages}
-            >
-              ⏭
-            </button>
+            <button className="s3-viewer-btn" onClick={() => setPage(1)} disabled={page === 1}>⏮</button>
+            <button className="s3-viewer-btn" onClick={() => setPage((p) => Math.max(1, p - 1))} disabled={page === 1}>◀</button>
+            <span className="s3-viewer-page">{page} / {totalPages}</span>
+            <button className="s3-viewer-btn" onClick={() => setPage((p) => Math.min(totalPages, p + 1))} disabled={page === totalPages}>▶</button>
+            <button className="s3-viewer-btn" onClick={() => setPage(totalPages)} disabled={page === totalPages}>⏭</button>
           </div>
         </>
       )}
@@ -767,64 +522,22 @@ export default function S3Bucket() {
       {/* Search tab */}
       {tab === "search" && (
         <div className="s3-search-wrap">
-          <div className="s3a-topbar" style={{ marginBottom: "var(--space-3)" }}>
-            <div className="s3a-row" style={{ flexWrap: "wrap", gap: "var(--space-2)" }}>
+          <div className="s3a-topbar">
+            <div className="s3a-row s3a-row-wrap">
               <div className="s3a-segtabs">
-                <button
-                  className={`s3a-segtab ${searchTab === "key" ? "active" : ""}`}
-                  onClick={() => setSearchTab("key")}
-                >
-                  File name / key
-                </button>
-                <button
-                  className={`s3a-segtab ${searchTab === "content" ? "active" : ""}`}
-                  onClick={() => setSearchTab("content")}
-                >
-                  Inside PDFs
-                </button>
+                <button className={`s3a-segtab ${searchTab === "key" ? "active" : ""}`} onClick={() => setSearchTab("key")}>File name / key</button>
+                <button className={`s3a-segtab ${searchTab === "content" ? "active" : ""}`} onClick={() => setSearchTab("content")}>Inside PDFs</button>
               </div>
 
-              <input
-                className="s3a-input"
-                placeholder={
-                  searchTab === "key"
-                    ? 'Search in key/path (e.g., "Mililani" or "reports/2024")'
-                    : 'Search PDF text (e.g., borehole AND basalt)'
-                }
-                value={searchQ}
-                onChange={(e) => setSearchQ(e.target.value)}
-                onKeyDown={(e) => {
-                  if (e.key === "Enter") runSearch();
-                }}
-                style={{ minWidth: 360 }}
-              />
+              <input className="s3a-input s3a-input-wide" placeholder={searchTab === "key" ? 'Search in key/path (e.g., "Mililani" or "reports/2024")' : 'Search PDF text (e.g., borehole AND basalt)'} value={searchQ} onChange={(e) => setSearchQ(e.target.value)} onKeyDown={(e) => { if (e.key === "Enter") runSearch(); }} />
 
               <label className="s3a-label">Limit</label>
-              <select
-                className="s3a-select"
-                value={searchLimit}
-                onChange={(e) => setSearchLimit(Number(e.target.value))}
-              >
-                {[20, 50, 100, 200].map((n) => (
-                  <option key={n} value={n}>
-                    {n}
-                  </option>
-                ))}
+              <select className="s3a-select" value={searchLimit} onChange={(e) => setSearchLimit(Number(e.target.value))}>
+                {[20, 50, 100, 200].map((n) => (<option key={n} value={n}>{n}</option>))}
               </select>
 
-              <button className="s3a-btn" onClick={runSearch} disabled={searchLoading}>
-                {searchLoading ? "Searching…" : "Search"}
-              </button>
-              <button
-                className="s3a-btn s3a-btn-ghost"
-                onClick={() => {
-                  setSearchQ("");
-                  setSearchResults([]);
-                  setSearchError("");
-                }}
-              >
-                Clear
-              </button>
+              <button className="s3a-btn" onClick={runSearch} disabled={searchLoading}>{searchLoading ? "Searching…" : "Search"}</button>
+              <button className="s3a-btn s3a-btn-ghost" onClick={() => { setSearchQ(""); setSearchResults([]); setSearchError(""); }}>Clear</button>
             </div>
           </div>
 
@@ -840,9 +553,7 @@ export default function S3Bucket() {
                 <thead>
                   <tr>
                     <th className="s3-viewer-th">File</th>
-                    <th className="s3-viewer-th" style={{ width: "70%" }}>
-                      {searchTab === "content" ? "Text preview" : "—"}
-                    </th>
+                    <th className="s3-viewer-th th-wide">{searchTab === "content" ? "Text preview" : "—"}</th>
                     <th className="s3-viewer-th s3-viewer-th-actions">Actions</th>
                   </tr>
                 </thead>
@@ -850,41 +561,19 @@ export default function S3Bucket() {
                   {searchResults.map((r, i) => (
                     <tr key={`${r.s3_key || r.file}-${i}`}>
                       <td title={r.s3_key || r.file}>
-                        <div className="s3-viewer-name">
-                          <span className="s3-viewer-ic">📄</span>
-                          <span className="s3-viewer-ellipsis">{r.file}</span>
-                        </div>
-                        {r.s3_key && (
-                          <div className="s3-viewer-sub s3a-mono">{r.s3_key}</div>
-                        )}
+                        <div className="s3-viewer-name"><span className="s3-viewer-ic">📄</span><span className="s3-viewer-ellipsis">{r.file}</span></div>
+                        {r.s3_key && (<div className="s3-viewer-sub s3a-mono">{r.s3_key}</div>)}
                       </td>
                       <td>
                         {searchTab === "content" ? (
-                          <div
-                            className="s3-viewer-snippet"
-                            dangerouslySetInnerHTML={{ __html: r.preview || "" }}
-                          />
+                          <div className="s3-viewer-snippet" dangerouslySetInnerHTML={{ __html: r.preview || "" }} />
                         ) : (
-                          <span style={{ color: "var(--text-muted)" }}>—</span>
+                          <span className="muted">—</span>
                         )}
                       </td>
                       <td className="s3-viewer-actions-cell">
-                        <a
-                          className="s3-viewer-iconbtn"
-                          href={r.url}
-                          target="_blank"
-                          rel="noreferrer"
-                          title="Open"
-                        >
-                          ↗
-                        </a>
-                        <button
-                          className="s3-viewer-iconbtn"
-                          title="Copy URL"
-                          onClick={() => copyUrl(r.url)}
-                        >
-                          📋
-                        </button>
+                        <a className="s3-viewer-iconbtn" href={r.url} target="_blank" rel="noreferrer" title="Open">↗</a>
+                        <button className="s3-viewer-iconbtn" title="Copy URL" onClick={() => copyUrl(r.url)}>📋</button>
                       </td>
                     </tr>
                   ))}
@@ -901,9 +590,7 @@ export default function S3Bucket() {
           <div className="s3-viewer-modal-card" onClick={(e) => e.stopPropagation()}>
             <div className="s3-viewer-modal-header">
               <div className="s3-viewer-title">{previewMeta.name}</div>
-              <button className="s3-viewer-iconbtn" onClick={() => setPreviewUrl(null)} title="Close">
-                ✖
-              </button>
+              <button className="s3-viewer-iconbtn" onClick={() => setPreviewUrl(null)} title="Close">✖</button>
             </div>
             <div className="s3-viewer-modal-body">
               {previewMeta.ext === "pdf" ? (
@@ -926,12 +613,8 @@ export default function S3Bucket() {
             <div className="s3a-history-head">
               <div className="s3a-history-title">Upload History</div>
               <div className="s3a-history-actions">
-                <button className="s3a-btn s3a-btn-ghost" onClick={fetchHistory} disabled={historyLoading}>
-                  {historyLoading ? "Loading…" : "Refresh"}
-                </button>
-                <button className="s3a-btn" onClick={() => setHistoryOpen(false)}>
-                  Close
-                </button>
+                <button className="s3a-btn s3a-btn-ghost" onClick={fetchHistory} disabled={historyLoading}>{historyLoading ? "Loading…" : "Refresh"}</button>
+                <button className="s3a-btn" onClick={() => setHistoryOpen(false)}>Close</button>
               </div>
             </div>
             <div className="s3a-history-list">
@@ -955,3 +638,4 @@ export default function S3Bucket() {
     </div>
   );
 }
+
