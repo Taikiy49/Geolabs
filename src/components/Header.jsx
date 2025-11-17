@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useMsal, useIsAuthenticated } from "@azure/msal-react";
-import { FiLogOut } from "react-icons/fi";   // ⬅ icon-only sign-out
+import { FiLogOut } from "react-icons/fi";
 import "../styles/Header.css";
 
 function initialsFrom(email, name) {
@@ -27,20 +27,20 @@ export default function Header() {
     accounts?.[0]?.username ||
     accounts?.[0]?.idTokenClaims?.preferred_username ||
     "";
+
   const displayName =
     accounts?.[0]?.idTokenClaims?.name ||
     accounts?.[0]?.idTokenClaims?.given_name ||
     "";
+
   const initials = initialsFrom(userEmail, displayName);
 
-  // Force LIGHT theme (no toggle)
   useEffect(() => {
     const root = document.documentElement;
     root.setAttribute("data-theme", "light");
     try { localStorage.setItem("geolabs_theme", "light"); } catch {}
   }, []);
 
-  // search ↔ URL
   const [searchText, setSearchText] = useState(() => {
     try {
       const params = new URLSearchParams(location.search);
@@ -49,6 +49,7 @@ export default function Header() {
       return "";
     }
   });
+
   useEffect(() => {
     try {
       const params = new URLSearchParams(location.search);
@@ -56,25 +57,12 @@ export default function Header() {
     } catch {}
   }, [location.search]);
 
-  const onChange = (e) => setSearchText(e.target.value);
-  const onKeyDown = (e) => {
-    if (e.key === "Enter") {
-      const q = (searchText || "").trim();
-      navigate(q ? `/?search=${encodeURIComponent(q)}` : "/");
-      e.currentTarget.blur();
-    }
-  };
-  const onFocus = () => {
-    if (location.pathname !== "/") {
-      navigate(searchText ? `/?search=${encodeURIComponent(searchText)}` : "/");
-    }
-  };
-
   const handleSignIn = async () => {
     try {
       await instance.loginPopup({ scopes: ["User.Read"], prompt: "select_account" });
     } catch {}
   };
+
   const handleSignOut = async () => {
     try {
       await instance.logoutPopup({ account: accounts?.[0] });
@@ -84,28 +72,36 @@ export default function Header() {
   return (
     <header className="hlite-header" role="banner">
       <div className="hlite-row">
-        {/* Left: brand */}
+
+        {/* Left: Brand */}
         <Link to="/" className="hlite-brand" title="Geolabs, Inc.">
           <span className="hlite-name">
             <span className="hlite-name-strong">Geolabs, Inc.</span>
           </span>
         </Link>
 
-        {/* Center: search */}
+        {/* Center: Search */}
         <div className="hlite-searchbar">
-          <input
-            className="hlite-search-input"
-            type="search"
-            placeholder="Search tools, documents, and features…"
-            value={searchText}
-            onChange={onChange}
-            onKeyDown={onKeyDown}
-            onFocus={onFocus}
-            aria-label="Search"
-          />
+          <form
+            className="hlite-search-wrap"
+            onSubmit={(e) => {
+              e.preventDefault();
+              const q = (searchText || "").trim();
+              navigate(q ? `/?search=${encodeURIComponent(q)}` : "/");
+            }}
+          >
+            <input
+              className="hlite-search-input"
+              type="search"
+              placeholder="Search tools, documents, and features…"
+              value={searchText}
+              onChange={(e) => setSearchText(e.target.value)}
+              aria-label="Search"
+            />
+          </form>
         </div>
 
-        {/* Right: Microsoft auth (avatar-only + icon-only sign out) */}
+        {/* Right: Account */}
         <div className="hlite-auth">
           {isAuthed ? (
             <>
@@ -142,6 +138,7 @@ export default function Header() {
             </button>
           )}
         </div>
+
       </div>
     </header>
   );

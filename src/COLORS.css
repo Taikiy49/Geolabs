@@ -3,6 +3,7 @@
 
 
 ssh -i Galena4pileus.pem ec2-user@13.56.211.75
+rm -rf pythonApp
 
 --- MAKE SURE TO MOVE reports.db before running below! ---
 scp -i Galena4pileus.pem -r FS_Geolabs/pythonApp ec2-user@13.56.211.75:/home/ec2-user/
